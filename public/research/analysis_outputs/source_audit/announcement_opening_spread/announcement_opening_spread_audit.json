@@ -1,0 +1,26 @@
+{
+  "createdAt": "2026-05-20T04:09:27",
+  "scope": "source/provenance visual audit; no key derivation",
+  "announcementImage": "analysis_outputs/external_clues/max_thread_media/01_FqZGAb7aYAEdnKL.jpg",
+  "magazinePdf": "magazine.pdf",
+  "reviewSheet": "analysis_outputs/source_audit/announcement_opening_spread/announcement_opening_spread_sheet.jpg",
+  "savedImages": {
+    "whole_magazine": "analysis_outputs/source_audit/announcement_opening_spread/announcement01_whole_magazine.jpg",
+    "left_opener_page": "analysis_outputs/source_audit/announcement_opening_spread/announcement01_left_opener_page.jpg",
+    "right_opener_page": "analysis_outputs/source_audit/announcement_opening_spread/announcement01_right_opener_page.jpg",
+    "overdose_title": "analysis_outputs/source_audit/announcement_opening_spread/announcement01_overdose_title.jpg",
+    "pdf_p73_opener_left": "analysis_outputs/source_audit/announcement_opening_spread/pdf_p73_opener_left.jpg",
+    "pdf_p74_opener_right": "analysis_outputs/source_audit/announcement_opening_spread/pdf_p74_opener_right.jpg",
+    "pdf_p75_article_start": "analysis_outputs/source_audit/announcement_opening_spread/pdf_p75_article_start.jpg",
+    "pdf_p76_corridor": "analysis_outputs/source_audit/announcement_opening_spread/pdf_p76_corridor.jpg",
+    "pdf_p73_p74_opener_spread": "analysis_outputs/source_audit/announcement_opening_spread/pdf_p73_p74_opener_spread.jpg"
+  },
+  "findings": [
+    "The first announcement image shows the physical OVERDOSE opener spread.",
+    "That spread corresponds to magazine.pdf PDF pages 1-2, which precede the article body pages previously mapped as 75-80.",
+    "The visible spread is not the page-76 Bukele/IMF corridor; it is the opener/title art with pills, cash, and a field illustration.",
+    "Therefore the article source has an overlooked visual/provenance layer: opener pages 73-74 should be tracked separately from the page-75-to-80 body geometry.",
+    "The announcement photo is too low-resolution and perspective-skewed to use as geometry truth, but it proves the opener spread is part of the public puzzle presentation."
+  ],
+  "nextMove": "Add opener pages 73-74 to the active source model and inspect their pill/cash/field imagery only as a possible source-layer/orientation clue, not as direct key material."
+}

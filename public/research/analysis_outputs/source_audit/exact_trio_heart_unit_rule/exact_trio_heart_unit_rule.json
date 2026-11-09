@@ -1,0 +1,108 @@
+{
+  "createdAt": "2026-05-20T10:55:10",
+  "scope": "literal heart/middle-unit test on repaired exact-edge trio; no key derivation",
+  "sourcePath": "repaired p78 exact-edge trio",
+  "trio": [
+    "should sell",
+    "Volcano Bonds",
+    "shitcoiner at heart"
+  ],
+  "rows": [
+    {
+      "phrase": "should sell",
+      "words": [
+        "should",
+        "sell"
+      ],
+      "letters": "shouldsell",
+      "letterCount": 10,
+      "middleWordOrWords": [
+        "should",
+        "sell"
+      ],
+      "heartCharsWidth1": "ld",
+      "heartCharsWidth3": "lds",
+      "heartCharsWidth4": "ulds",
+      "heartWidth4Variants": {
+        "leftBiased": "ulds",
+        "rightBiased": "ldse"
+      },
+      "perWordHearts": [
+        "ou",
+        "el"
+      ]
+    },
+    {
+      "phrase": "Volcano Bonds",
+      "words": [
+        "Volcano",
+        "Bonds"
+      ],
+      "letters": "volcanobonds",
+      "letterCount": 12,
+      "middleWordOrWords": [
+        "Volcano",
+        "Bonds"
+      ],
+      "heartCharsWidth1": "no",
+      "heartCharsWidth3": "nob",
+      "heartCharsWidth4": "anob",
+      "heartWidth4Variants": {
+        "leftBiased": "anob",
+        "rightBiased": "nobo"
+      },
+      "perWordHearts": [
+        "c",
+        "n"
+      ]
+    },
+    {
+      "phrase": "shitcoiner at heart",
+      "words": [
+        "shitcoiner",
+        "at",
+        "heart"
+      ],
+      "letters": "shitcoineratheart",
+      "letterCount": 17,
+      "middleWordOrWords": [
+        "at"
+      ],
+      "heartCharsWidth1": "e",
+      "heartCharsWidth3": "ner",
+      "heartCharsWidth4": "iner",
+      "heartWidth4Variants": {
+        "leftBiased": "iner",
+        "rightBiased": "iner"
+      },
+      "perWordHearts": [
+        "co",
+        "at",
+        "a"
+      ]
+    }
+  ],
+  "streams": {
+    "middleWordsForward": "should sell Volcano Bonds at",
+    "middleWordsReverse": "at Volcano Bonds should sell",
+    "phraseHeartWidth1Forward": "ldnoe",
+    "phraseHeartWidth1Reverse": "enold",
+    "phraseHeartWidth3Forward": "ldsnobner",
+    "phraseHeartWidth3Reverse": "nernoblds",
+    "phraseHeartWidth4Forward": "uldsanobiner",
+    "phraseHeartWidth4Reverse": "ineranobulds",
+    "perWordHeartsForward": "ou el c n co at a",
+    "perWordHeartsReverse": "co at a c n ou el",
+    "shitcoinerHeartLeftBiased4": "tcoi",
+    "shitcoinerHeartRightBiased4": "coin"
+  },
+  "instructionHits": {},
+  "assessment": [
+    "The literal `heart` unit is locally justified only because the exact-edge trio contains `shitcoiner at heart`.",
+    "Middle/heart extraction from the exact trio produces fragments such as `ldnoe`, `ldsnobner`, and `uldsanobiner`, plus ambiguous center windows from `shitcoiner`.",
+    "A right-biased 4-letter heart of `shitcoiner` gives `coin`, while the left-biased 4-letter heart gives `tcoi`; that ambiguity makes it thematic support, not a defensible selector.",
+    "The rule does not supply the missing extraction unit for page-76 key material; it only explains why O5 keeps acting as semantic support."
+  ],
+  "decision": "Close literal heart extraction from the exact trio as a selector. Preserve the ambiguous `coin`/`tcoi` heart of `shitcoiner` as thematic support only.",
+  "nextMove": "The closest local path remains blocked on a source-backed unit. Continue with source/original-layout/physical evidence or a new explicit rule, not local key candidates."
+}

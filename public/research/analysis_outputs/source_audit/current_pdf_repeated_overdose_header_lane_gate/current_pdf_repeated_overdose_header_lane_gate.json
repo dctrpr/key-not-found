@@ -1,0 +1,844 @@
+{
+  "createdAt": "2026-05-24T14:31:12",
+  "scope": {
+    "articlePages": [
+      73,
+      80
+    ],
+    "headerWord": "OVERDOSE",
+    "laneHalfWidthPt": 10.0,
+    "variants": [
+      "normal",
+      "reverse_labels",
+      "x_mirror",
+      "x_mirror_reverse_labels"
+    ],
+    "excluded": [
+      "OCR-to-key extraction",
+      "private-key candidate generation",
+      "hash-to-key checks",
+      "seed/WIF/address checks",
+      "BIP39 checks",
+      "broad brute force"
+    ]
+  },
+  "inputs": {
+    "pdfs": [
+      "magazine.pdf",
+      "keyser bitcoin .pdf",
+      "analysis_outputs/external_clues/google_drive_article_download.pdf"
+    ],
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json",
+    "visualHeaderFooterBandSequence": "analysis_outputs/source_audit/current_pdf_visual_header_footer_band_sequence_gate/current_pdf_visual_header_footer_band_sequence_gate.json",
+    "visualHeaderFooterFingerprint": "pdfs=3|pages=24|bands=48|p76TopNear=15|p76BottomNear=5|ocrOverdoseStarts=6|candidates=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "summary": {
+    "pdfCount": 3,
+    "overdoseHeaderRowCount": 6,
+    "laneRowsChecked": 24,
+    "targetLaneRowCount": 0,
+    "strictLaneRowCount": 0,
+    "allFourLaneRowCount": 0,
+    "activeOrderLaneRowCount": 0,
+    "page76TargetLaneRowCount": 0,
+    "headerLaneCandidateCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "fingerprint": "pdfs=3|overdoseHeaders=6|laneRows=24|targetRows=0|strictRows=0|allFourRows=0|activeOrderRows=0|page76TargetRows=0|candidates=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "records": [
+    {
+      "pdf": "magazine.pdf",
+      "overdoseHeaderPageCount": 0,
+      "overdoseHeaderRows": [],
+      "laneRows": []
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "overdoseHeaderPageCount": 3,
+      "overdoseHeaderRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "pageWidth": 612.0,
+          "pageHeight": 792.0,
+          "headerText": "OVERDOSE",
+          "headerBbox": [
+            504.239990234375,
+            35.91998291015625,
+            537.750244140625,
+            41.92598342895508
+          ],
+          "headerCenter": [
+            520.9951171875,
+            38.922983169555664
+          ],
+          "wordCount": 1
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "pageWidth": 612.0,
+          "pageHeight": 792.0,
+          "headerText": "OVERDOSE",
+          "headerBbox": [
+            514.3200073242188,
+            29.4000244140625,
+            547.8141479492188,
+            36.40702438354492
+          ],
+          "headerCenter": [
+            531.0670776367188,
+            32.90352439880371
+          ],
+          "wordCount": 265
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "pageWidth": 612.0,
+          "pageHeight": 792.0,
+          "headerText": "OVERDOSE",
+          "headerBbox": [
+            502.0799865722656,
+            30.8800048828125,
+            535.3598022460938,
+            36.88600540161133
+          ],
+          "headerCenter": [
+            518.7198944091797,
+            33.883005142211914
+          ],
+          "wordCount": 202
+        }
+      ],
+      "laneRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 74,
+          "variant": "normal",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            504.239990234375,
+            35.91998291015625,
+            537.750244140625,
+            41.92598342895508
+          ],
+          "headerCenter": [
+            520.9951171875,
+            38.922983169555664
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 74,
+          "variant": "reverse_labels",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            504.239990234375,
+            35.91998291015625,
+            537.750244140625,
+            41.92598342895508
+          ],
+          "headerCenter": [
+            520.9951171875,
+            38.922983169555664
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 74,
+          "variant": "x_mirror",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            504.239990234375,
+            35.91998291015625,
+            537.750244140625,
+            41.92598342895508
+          ],
+          "headerCenter": [
+            520.9951171875,
+            38.922983169555664
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 74,
+          "variant": "x_mirror_reverse_labels",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            504.239990234375,
+            35.91998291015625,
+            537.750244140625,
+            41.92598342895508
+          ],
+          "headerCenter": [
+            520.9951171875,
+            38.922983169555664
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "variant": "normal",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            514.3200073242188,
+            29.4000244140625,
+            547.8141479492188,
+            36.40702438354492
+          ],
+          "headerCenter": [
+            531.0670776367188,
+            32.90352439880371
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "variant": "reverse_labels",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            514.3200073242188,
+            29.4000244140625,
+            547.8141479492188,
+            36.40702438354492
+          ],
+          "headerCenter": [
+            531.0670776367188,
+            32.90352439880371
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "variant": "x_mirror",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            514.3200073242188,
+            29.4000244140625,
+            547.8141479492188,
+            36.40702438354492
+          ],
+          "headerCenter": [
+            531.0670776367188,
+            32.90352439880371
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "variant": "x_mirror_reverse_labels",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            514.3200073242188,
+            29.4000244140625,
+            547.8141479492188,
+            36.40702438354492
+          ],
+          "headerCenter": [
+            531.0670776367188,
+            32.90352439880371
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "variant": "normal",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            502.0799865722656,
+            30.8800048828125,
+            535.3598022460938,
+            36.88600540161133
+          ],
+          "headerCenter": [
+            518.7198944091797,
+            33.883005142211914
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "variant": "reverse_labels",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            502.0799865722656,
+            30.8800048828125,
+            535.3598022460938,
+            36.88600540161133
+          ],
+          "headerCenter": [
+            518.7198944091797,
+            33.883005142211914
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "variant": "x_mirror",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            502.0799865722656,
+            30.8800048828125,
+            535.3598022460938,
+            36.88600540161133
+          ],
+          "headerCenter": [
+            518.7198944091797,
+            33.883005142211914
+          ],
+          "laneWordCount": 13,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "variant": "x_mirror_reverse_labels",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            502.0799865722656,
+            30.8800048828125,
+            535.3598022460938,
+            36.88600540161133
+          ],
+          "headerCenter": [
+            518.7198944091797,
+            33.883005142211914
+          ],
+          "laneWordCount": 13,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        }
+      ]
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "overdoseHeaderPageCount": 3,
+      "overdoseHeaderRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "pageWidth": 612.0,
+          "pageHeight": 792.0,
+          "headerText": "OVERDOSE",
+          "headerBbox": [
+            504.239990234375,
+            35.91998291015625,
+            537.750244140625,
+            41.92598342895508
+          ],
+          "headerCenter": [
+            520.9951171875,
+            38.922983169555664
+          ],
+          "wordCount": 1
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "pageWidth": 612.0,
+          "pageHeight": 792.0,
+          "headerText": "OVERDOSE",
+          "headerBbox": [
+            514.3200073242188,
+            29.4000244140625,
+            547.8141479492188,
+            36.40702438354492
+          ],
+          "headerCenter": [
+            531.0670776367188,
+            32.90352439880371
+          ],
+          "wordCount": 265
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "pageWidth": 612.0,
+          "pageHeight": 792.0,
+          "headerText": "OVERDOSE",
+          "headerBbox": [
+            502.0799865722656,
+            30.8800048828125,
+            535.3598022460938,
+            36.88600540161133
+          ],
+          "headerCenter": [
+            518.7198944091797,
+            33.883005142211914
+          ],
+          "wordCount": 202
+        }
+      ],
+      "laneRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 74,
+          "variant": "normal",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            504.239990234375,
+            35.91998291015625,
+            537.750244140625,
+            41.92598342895508
+          ],
+          "headerCenter": [
+            520.9951171875,
+            38.922983169555664
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 74,
+          "variant": "reverse_labels",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            504.239990234375,
+            35.91998291015625,
+            537.750244140625,
+            41.92598342895508
+          ],
+          "headerCenter": [
+            520.9951171875,
+            38.922983169555664
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 74,
+          "variant": "x_mirror",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            504.239990234375,
+            35.91998291015625,
+            537.750244140625,
+            41.92598342895508
+          ],
+          "headerCenter": [
+            520.9951171875,
+            38.922983169555664
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 74,
+          "variant": "x_mirror_reverse_labels",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            504.239990234375,
+            35.91998291015625,
+            537.750244140625,
+            41.92598342895508
+          ],
+          "headerCenter": [
+            520.9951171875,
+            38.922983169555664
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "variant": "normal",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            514.3200073242188,
+            29.4000244140625,
+            547.8141479492188,
+            36.40702438354492
+          ],
+          "headerCenter": [
+            531.0670776367188,
+            32.90352439880371
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "variant": "reverse_labels",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            514.3200073242188,
+            29.4000244140625,
+            547.8141479492188,
+            36.40702438354492
+          ],
+          "headerCenter": [
+            531.0670776367188,
+            32.90352439880371
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "variant": "x_mirror",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            514.3200073242188,
+            29.4000244140625,
+            547.8141479492188,
+            36.40702438354492
+          ],
+          "headerCenter": [
+            531.0670776367188,
+            32.90352439880371
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "variant": "x_mirror_reverse_labels",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            514.3200073242188,
+            29.4000244140625,
+            547.8141479492188,
+            36.40702438354492
+          ],
+          "headerCenter": [
+            531.0670776367188,
+            32.90352439880371
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "variant": "normal",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            502.0799865722656,
+            30.8800048828125,
+            535.3598022460938,
+            36.88600540161133
+          ],
+          "headerCenter": [
+            518.7198944091797,
+            33.883005142211914
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "variant": "reverse_labels",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            502.0799865722656,
+            30.8800048828125,
+            535.3598022460938,
+            36.88600540161133
+          ],
+          "headerCenter": [
+            518.7198944091797,
+            33.883005142211914
+          ],
+          "laneWordCount": 0,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "variant": "x_mirror",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            502.0799865722656,
+            30.8800048828125,
+            535.3598022460938,
+            36.88600540161133
+          ],
+          "headerCenter": [
+            518.7198944091797,
+            33.883005142211914
+          ],
+          "laneWordCount": 13,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "variant": "x_mirror_reverse_labels",
+          "laneHalfWidthPt": 10.0,
+          "headerBbox": [
+            502.0799865722656,
+            30.8800048828125,
+            535.3598022460938,
+            36.88600540161133
+          ],
+          "headerCenter": [
+            518.7198944091797,
+            33.883005142211914
+          ],
+          "laneWordCount": 13,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "laneTargetStream": "",
+          "candidate": false
+        }
+      ]
+    }
+  ],
+  "decision": {
+    "currentPdfRepeatedOverdoseHeaderLaneGate": "current_pdf_repeated_overdose_header_lane_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Repeated OVERDOSE page-start lanes do not carry strict unit/order wording with all-four or active-order target structure, and source-backed R3 remains absent.",
+    "nextMove": "Treat repeated OVERDOSE lane mechanics as context only unless new source material supplies unit/order evidence."
+  },
+  "sheet": "analysis_outputs/source_audit/current_pdf_repeated_overdose_header_lane_gate/current_pdf_repeated_overdose_header_lane_gate_sheet.jpg"
+}

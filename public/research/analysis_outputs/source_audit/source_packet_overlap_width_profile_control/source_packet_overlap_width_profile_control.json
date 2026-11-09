@@ -1,0 +1,3831 @@
+{
+  "createdAt": "2026-05-21T09:00:14",
+  "scope": "OVERDOSE overlap-width profile control; no extraction or candidate generation",
+  "inputs": {
+    "c9_mirrored_header_glyph_gate": "analysis_outputs/source_audit/c9_mirrored_header_glyph_gate/c9_mirrored_header_glyph_gate.json",
+    "source_packet_dominant_overlap_slot_control": "analysis_outputs/source_audit/source_packet_dominant_overlap_slot_control/source_packet_dominant_overlap_slot_control.json",
+    "source_packet_span_edge_slot_control": "analysis_outputs/source_audit/source_packet_span_edge_slot_control/source_packet_span_edge_slot_control.json",
+    "source_packet_color_split_span_control": "analysis_outputs/source_audit/source_packet_color_split_span_control/source_packet_color_split_span_control.json",
+    "source_packet_active_format_stream_control": "analysis_outputs/source_audit/source_packet_active_format_stream_control/source_packet_active_format_stream_control.json",
+    "source_packet_reopen_trigger_matrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json",
+    "missing_rule_frontier": "analysis_outputs/source_audit/missing_rule_frontier/missing_rule_frontier.json",
+    "canonical_plain_article_body": "analysis_outputs/plain_text_transcript/canonical_plain_article_body.txt",
+    "user_markdown_transcript": "analysis_outputs/3d_article_map/user_markdown_transcript.md",
+    "user_annotated_transcript": "analysis_outputs/3d_article_map/user_annotated_transcript.txt",
+    "plain_article_correction_report": "analysis_outputs/plain_text_transcript/plain_article_correction_report.json"
+  },
+  "streamRows": [
+    {
+      "variant": "p76_normal_labels_original_geometry",
+      "mode": "active_profile_line_order",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "slotCountStream": "3-2-2-3",
+      "fullishCountStream": "1-0-1-2",
+      "dominantPositionStream": "MRLM",
+      "edgeBiasStream": "LRLL",
+      "widthBucketStream": "MNMW",
+      "profileCodeStream": "S3F1DMEL|S2F0DRER|S2F1DLEL|S3F2DMEL",
+      "totalOverlapStreamPx": "467-263-401-621",
+      "profiles": [
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "DOS",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "spanSlotOverlapsPx": [
+            182.57,
+            244.43,
+            40.0
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.0,
+          "maxOverlapPx": 244.43,
+          "dominanceRatio": 0.5234,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 142.57,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMEL",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "OV",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "spanSlotOverlapsPx": [
+            110.57,
+            152.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.43,
+          "dominanceRatio": 0.5796,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -41.86,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DRER",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "N"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "ER",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            232.57,
+            168.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.57,
+          "dominanceRatio": 0.58,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 64.14,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DLEL",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "RDO",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            232.0,
+            244.57,
+            144.43
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.57,
+          "dominanceRatio": 0.3938,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 87.57,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMEL",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "W"
+        }
+      ]
+    },
+    {
+      "variant": "p76_normal_labels_original_geometry",
+      "mode": "active_profile_x_order",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "slotCountStream": "2-2-3-3",
+      "fullishCountStream": "0-1-2-1",
+      "dominantPositionStream": "RLMM",
+      "edgeBiasStream": "RLLL",
+      "widthBucketStream": "NMWM",
+      "profileCodeStream": "S2F0DRER|S2F1DLEL|S3F2DMEL|S3F1DMEL",
+      "totalOverlapStreamPx": "263-401-621-467",
+      "profiles": [
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "OV",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "spanSlotOverlapsPx": [
+            110.57,
+            152.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.43,
+          "dominanceRatio": 0.5796,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -41.86,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DRER",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "N"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "ER",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            232.57,
+            168.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.57,
+          "dominanceRatio": 0.58,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 64.14,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DLEL",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "RDO",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            232.0,
+            244.57,
+            144.43
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.57,
+          "dominanceRatio": 0.3938,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 87.57,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMEL",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "W"
+        },
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "DOS",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "spanSlotOverlapsPx": [
+            182.57,
+            244.43,
+            40.0
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.0,
+          "maxOverlapPx": 244.43,
+          "dominanceRatio": 0.5234,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 142.57,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMEL",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "M"
+        }
+      ]
+    },
+    {
+      "variant": "p76_normal_labels_original_geometry",
+      "mode": "active_black_profile_x_order",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "slotCountStream": "2-2",
+      "fullishCountStream": "0-1",
+      "dominantPositionStream": "RL",
+      "edgeBiasStream": "RL",
+      "widthBucketStream": "NM",
+      "profileCodeStream": "S2F0DRER|S2F1DLEL",
+      "totalOverlapStreamPx": "263-401",
+      "profiles": [
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "OV",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "spanSlotOverlapsPx": [
+            110.57,
+            152.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.43,
+          "dominanceRatio": 0.5796,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -41.86,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DRER",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "N"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "ER",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            232.57,
+            168.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.57,
+          "dominanceRatio": 0.58,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 64.14,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DLEL",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "M"
+        }
+      ]
+    },
+    {
+      "variant": "p76_normal_labels_original_geometry",
+      "mode": "active_orange_profile_x_order",
+      "targetOrder": [
+        "O5",
+        "O4"
+      ],
+      "slotCountStream": "3-3",
+      "fullishCountStream": "2-1",
+      "dominantPositionStream": "MM",
+      "edgeBiasStream": "LL",
+      "widthBucketStream": "WM",
+      "profileCodeStream": "S3F2DMEL|S3F1DMEL",
+      "totalOverlapStreamPx": "621-467",
+      "profiles": [
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "RDO",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            232.0,
+            244.57,
+            144.43
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.57,
+          "dominanceRatio": 0.3938,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 87.57,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMEL",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "W"
+        },
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "DOS",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "spanSlotOverlapsPx": [
+            182.57,
+            244.43,
+            40.0
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.0,
+          "maxOverlapPx": 244.43,
+          "dominanceRatio": 0.5234,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 142.57,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMEL",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "M"
+        }
+      ]
+    },
+    {
+      "variant": "p76_normal_labels_original_geometry",
+      "mode": "p75_control_profile",
+      "targetOrder": [
+        "p75_grey_3"
+      ],
+      "slotCountStream": "4",
+      "fullishCountStream": "2",
+      "dominantPositionStream": "T23",
+      "edgeBiasStream": "R",
+      "widthBucketStream": "W",
+      "profileCodeStream": "S4F2DT23ER",
+      "totalOverlapStreamPx": "718",
+      "profiles": [
+        {
+          "shortId": "p75_grey_3",
+          "visualState": null,
+          "spanSlotLetters": "OVER",
+          "spanSlotIndexes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            92.88,
+            244.43,
+            244.57,
+            136.16
+          ],
+          "slotCount": 4,
+          "fullishCount": 2,
+          "totalOverlapPx": 718.04,
+          "maxOverlapPx": 244.57,
+          "dominanceRatio": 0.3406,
+          "dominantPosition": "T23",
+          "edgeBias": "R",
+          "edgeBalancePx": -43.28,
+          "widthBucket": "wide",
+          "profileCode": "S4F2DT23ER",
+          "countCode": "4",
+          "fullishCode": "2",
+          "dominantCode": "T23",
+          "biasCode": "R",
+          "bucketCode": "W"
+        }
+      ]
+    },
+    {
+      "variant": "p76_normal_labels_mirror_x_geometry",
+      "mode": "active_profile_line_order",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "slotCountStream": "3-2-2-3",
+      "fullishCountStream": "1-0-1-2",
+      "dominantPositionStream": "MLRM",
+      "edgeBiasStream": "RLRR",
+      "widthBucketStream": "MNMW",
+      "profileCodeStream": "S3F1DMER|S2F0DLEL|S2F1DRER|S3F2DMER",
+      "totalOverlapStreamPx": "467-263-401-621",
+      "profiles": [
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "VER",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            40.0,
+            244.57,
+            182.43
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.0,
+          "maxOverlapPx": 244.57,
+          "dominanceRatio": 0.5237,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -142.43,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMER",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "SE",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "spanSlotOverlapsPx": [
+            152.57,
+            110.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.57,
+          "dominanceRatio": 0.5801,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 42.14,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DLEL",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "N"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "DO",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            168.57,
+            232.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.43,
+          "dominanceRatio": 0.5796,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -63.86,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DRER",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "ERD",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "spanSlotOverlapsPx": [
+            144.57,
+            244.43,
+            232.0
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.43,
+          "dominanceRatio": 0.3936,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -87.43,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMER",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "W"
+        }
+      ]
+    },
+    {
+      "variant": "p76_normal_labels_mirror_x_geometry",
+      "mode": "active_profile_x_order",
+      "targetOrder": [
+        "O4",
+        "O5",
+        "G5",
+        "B4"
+      ],
+      "slotCountStream": "3-3-2-2",
+      "fullishCountStream": "1-2-1-0",
+      "dominantPositionStream": "MMRL",
+      "edgeBiasStream": "RRRL",
+      "widthBucketStream": "MWMN",
+      "profileCodeStream": "S3F1DMER|S3F2DMER|S2F1DRER|S2F0DLEL",
+      "totalOverlapStreamPx": "467-621-401-263",
+      "profiles": [
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "VER",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            40.0,
+            244.57,
+            182.43
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.0,
+          "maxOverlapPx": 244.57,
+          "dominanceRatio": 0.5237,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -142.43,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMER",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "ERD",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "spanSlotOverlapsPx": [
+            144.57,
+            244.43,
+            232.0
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.43,
+          "dominanceRatio": 0.3936,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -87.43,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMER",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "W"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "DO",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            168.57,
+            232.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.43,
+          "dominanceRatio": 0.5796,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -63.86,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DRER",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "SE",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "spanSlotOverlapsPx": [
+            152.57,
+            110.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.57,
+          "dominanceRatio": 0.5801,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 42.14,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DLEL",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "N"
+        }
+      ]
+    },
+    {
+      "variant": "p76_normal_labels_mirror_x_geometry",
+      "mode": "active_black_profile_x_order",
+      "targetOrder": [
+        "G5",
+        "B4"
+      ],
+      "slotCountStream": "2-2",
+      "fullishCountStream": "1-0",
+      "dominantPositionStream": "RL",
+      "edgeBiasStream": "RL",
+      "widthBucketStream": "MN",
+      "profileCodeStream": "S2F1DRER|S2F0DLEL",
+      "totalOverlapStreamPx": "401-263",
+      "profiles": [
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "DO",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            168.57,
+            232.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.43,
+          "dominanceRatio": 0.5796,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -63.86,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DRER",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "SE",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "spanSlotOverlapsPx": [
+            152.57,
+            110.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.57,
+          "dominanceRatio": 0.5801,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 42.14,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DLEL",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "N"
+        }
+      ]
+    },
+    {
+      "variant": "p76_normal_labels_mirror_x_geometry",
+      "mode": "active_orange_profile_x_order",
+      "targetOrder": [
+        "O4",
+        "O5"
+      ],
+      "slotCountStream": "3-3",
+      "fullishCountStream": "1-2",
+      "dominantPositionStream": "MM",
+      "edgeBiasStream": "RR",
+      "widthBucketStream": "MW",
+      "profileCodeStream": "S3F1DMER|S3F2DMER",
+      "totalOverlapStreamPx": "467-621",
+      "profiles": [
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "VER",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            40.0,
+            244.57,
+            182.43
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.0,
+          "maxOverlapPx": 244.57,
+          "dominanceRatio": 0.5237,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -142.43,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMER",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "ERD",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "spanSlotOverlapsPx": [
+            144.57,
+            244.43,
+            232.0
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.43,
+          "dominanceRatio": 0.3936,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -87.43,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMER",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "W"
+        }
+      ]
+    },
+    {
+      "variant": "p76_normal_labels_mirror_x_geometry",
+      "mode": "p75_control_profile",
+      "targetOrder": [
+        "p75_grey_3"
+      ],
+      "slotCountStream": "4",
+      "fullishCountStream": "2",
+      "dominantPositionStream": "T23",
+      "edgeBiasStream": "L",
+      "widthBucketStream": "W",
+      "profileCodeStream": "S4F2DT23EL",
+      "totalOverlapStreamPx": "718",
+      "profiles": [
+        {
+          "shortId": "p75_grey_3",
+          "visualState": null,
+          "spanSlotLetters": "DOSE",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "spanSlotOverlapsPx": [
+            136.3,
+            244.43,
+            244.57,
+            92.74
+          ],
+          "slotCount": 4,
+          "fullishCount": 2,
+          "totalOverlapPx": 718.04,
+          "maxOverlapPx": 244.57,
+          "dominanceRatio": 0.3406,
+          "dominantPosition": "T23",
+          "edgeBias": "L",
+          "edgeBalancePx": 43.56,
+          "widthBucket": "wide",
+          "profileCode": "S4F2DT23EL",
+          "countCode": "4",
+          "fullishCode": "2",
+          "dominantCode": "T23",
+          "biasCode": "L",
+          "bucketCode": "W"
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_original_geometry",
+      "mode": "active_profile_line_order",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "slotCountStream": "3-2-2-3",
+      "fullishCountStream": "1-0-1-2",
+      "dominantPositionStream": "MRLM",
+      "edgeBiasStream": "LRLL",
+      "widthBucketStream": "MNMW",
+      "profileCodeStream": "S3F1DMEL|S2F0DRER|S2F1DLEL|S3F2DMEL",
+      "totalOverlapStreamPx": "467-263-401-621",
+      "profiles": [
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "REV",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "spanSlotOverlapsPx": [
+            182.57,
+            244.43,
+            40.0
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.0,
+          "maxOverlapPx": 244.43,
+          "dominanceRatio": 0.5234,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 142.57,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMEL",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "ES",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "spanSlotOverlapsPx": [
+            110.57,
+            152.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.43,
+          "dominanceRatio": 0.5796,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -41.86,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DRER",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "N"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "OD",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            232.57,
+            168.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.57,
+          "dominanceRatio": 0.58,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 64.14,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DLEL",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "DRE",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            232.0,
+            244.57,
+            144.43
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.57,
+          "dominanceRatio": 0.3938,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 87.57,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMEL",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "W"
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_original_geometry",
+      "mode": "active_profile_x_order",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "slotCountStream": "2-2-3-3",
+      "fullishCountStream": "0-1-2-1",
+      "dominantPositionStream": "RLMM",
+      "edgeBiasStream": "RLLL",
+      "widthBucketStream": "NMWM",
+      "profileCodeStream": "S2F0DRER|S2F1DLEL|S3F2DMEL|S3F1DMEL",
+      "totalOverlapStreamPx": "263-401-621-467",
+      "profiles": [
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "ES",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "spanSlotOverlapsPx": [
+            110.57,
+            152.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.43,
+          "dominanceRatio": 0.5796,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -41.86,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DRER",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "N"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "OD",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            232.57,
+            168.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.57,
+          "dominanceRatio": 0.58,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 64.14,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DLEL",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "DRE",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            232.0,
+            244.57,
+            144.43
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.57,
+          "dominanceRatio": 0.3938,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 87.57,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMEL",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "W"
+        },
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "REV",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "spanSlotOverlapsPx": [
+            182.57,
+            244.43,
+            40.0
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.0,
+          "maxOverlapPx": 244.43,
+          "dominanceRatio": 0.5234,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 142.57,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMEL",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "M"
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_original_geometry",
+      "mode": "active_black_profile_x_order",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "slotCountStream": "2-2",
+      "fullishCountStream": "0-1",
+      "dominantPositionStream": "RL",
+      "edgeBiasStream": "RL",
+      "widthBucketStream": "NM",
+      "profileCodeStream": "S2F0DRER|S2F1DLEL",
+      "totalOverlapStreamPx": "263-401",
+      "profiles": [
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "ES",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "spanSlotOverlapsPx": [
+            110.57,
+            152.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.43,
+          "dominanceRatio": 0.5796,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -41.86,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DRER",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "N"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "OD",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            232.57,
+            168.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.57,
+          "dominanceRatio": 0.58,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 64.14,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DLEL",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "M"
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_original_geometry",
+      "mode": "active_orange_profile_x_order",
+      "targetOrder": [
+        "O5",
+        "O4"
+      ],
+      "slotCountStream": "3-3",
+      "fullishCountStream": "2-1",
+      "dominantPositionStream": "MM",
+      "edgeBiasStream": "LL",
+      "widthBucketStream": "WM",
+      "profileCodeStream": "S3F2DMEL|S3F1DMEL",
+      "totalOverlapStreamPx": "621-467",
+      "profiles": [
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "DRE",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            232.0,
+            244.57,
+            144.43
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.57,
+          "dominanceRatio": 0.3938,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 87.57,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMEL",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "W"
+        },
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "REV",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "spanSlotOverlapsPx": [
+            182.57,
+            244.43,
+            40.0
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.0,
+          "maxOverlapPx": 244.43,
+          "dominanceRatio": 0.5234,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 142.57,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMEL",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "M"
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_original_geometry",
+      "mode": "p75_control_profile",
+      "targetOrder": [
+        "p75_grey_3"
+      ],
+      "slotCountStream": "4",
+      "fullishCountStream": "2",
+      "dominantPositionStream": "T23",
+      "edgeBiasStream": "R",
+      "widthBucketStream": "W",
+      "profileCodeStream": "S4F2DT23ER",
+      "totalOverlapStreamPx": "718",
+      "profiles": [
+        {
+          "shortId": "p75_grey_3",
+          "visualState": null,
+          "spanSlotLetters": "ESOD",
+          "spanSlotIndexes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            92.88,
+            244.43,
+            244.57,
+            136.16
+          ],
+          "slotCount": 4,
+          "fullishCount": 2,
+          "totalOverlapPx": 718.04,
+          "maxOverlapPx": 244.57,
+          "dominanceRatio": 0.3406,
+          "dominantPosition": "T23",
+          "edgeBias": "R",
+          "edgeBalancePx": -43.28,
+          "widthBucket": "wide",
+          "profileCode": "S4F2DT23ER",
+          "countCode": "4",
+          "fullishCode": "2",
+          "dominantCode": "T23",
+          "biasCode": "R",
+          "bucketCode": "W"
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_mirror_x_geometry",
+      "mode": "active_profile_line_order",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "slotCountStream": "3-2-2-3",
+      "fullishCountStream": "1-0-1-2",
+      "dominantPositionStream": "MLRM",
+      "edgeBiasStream": "RLRR",
+      "widthBucketStream": "MNMW",
+      "profileCodeStream": "S3F1DMER|S2F0DLEL|S2F1DRER|S3F2DMER",
+      "totalOverlapStreamPx": "467-263-401-621",
+      "profiles": [
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "SOD",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            40.0,
+            244.57,
+            182.43
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.0,
+          "maxOverlapPx": 244.57,
+          "dominanceRatio": 0.5237,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -142.43,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMER",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "VO",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "spanSlotOverlapsPx": [
+            152.57,
+            110.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.57,
+          "dominanceRatio": 0.5801,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 42.14,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DLEL",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "N"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "RE",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            168.57,
+            232.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.43,
+          "dominanceRatio": 0.5796,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -63.86,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DRER",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "ODR",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "spanSlotOverlapsPx": [
+            144.57,
+            244.43,
+            232.0
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.43,
+          "dominanceRatio": 0.3936,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -87.43,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMER",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "W"
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_mirror_x_geometry",
+      "mode": "active_profile_x_order",
+      "targetOrder": [
+        "O4",
+        "O5",
+        "G5",
+        "B4"
+      ],
+      "slotCountStream": "3-3-2-2",
+      "fullishCountStream": "1-2-1-0",
+      "dominantPositionStream": "MMRL",
+      "edgeBiasStream": "RRRL",
+      "widthBucketStream": "MWMN",
+      "profileCodeStream": "S3F1DMER|S3F2DMER|S2F1DRER|S2F0DLEL",
+      "totalOverlapStreamPx": "467-621-401-263",
+      "profiles": [
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "SOD",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            40.0,
+            244.57,
+            182.43
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.0,
+          "maxOverlapPx": 244.57,
+          "dominanceRatio": 0.5237,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -142.43,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMER",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "ODR",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "spanSlotOverlapsPx": [
+            144.57,
+            244.43,
+            232.0
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.43,
+          "dominanceRatio": 0.3936,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -87.43,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMER",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "W"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "RE",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            168.57,
+            232.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.43,
+          "dominanceRatio": 0.5796,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -63.86,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DRER",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "VO",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "spanSlotOverlapsPx": [
+            152.57,
+            110.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.57,
+          "dominanceRatio": 0.5801,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 42.14,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DLEL",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "N"
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_mirror_x_geometry",
+      "mode": "active_black_profile_x_order",
+      "targetOrder": [
+        "G5",
+        "B4"
+      ],
+      "slotCountStream": "2-2",
+      "fullishCountStream": "1-0",
+      "dominantPositionStream": "RL",
+      "edgeBiasStream": "RL",
+      "widthBucketStream": "MN",
+      "profileCodeStream": "S2F1DRER|S2F0DLEL",
+      "totalOverlapStreamPx": "401-263",
+      "profiles": [
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "RE",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            168.57,
+            232.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.43,
+          "dominanceRatio": 0.5796,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -63.86,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DRER",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "VO",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "spanSlotOverlapsPx": [
+            152.57,
+            110.43
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.57,
+          "dominanceRatio": 0.5801,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 42.14,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DLEL",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "N"
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_mirror_x_geometry",
+      "mode": "active_orange_profile_x_order",
+      "targetOrder": [
+        "O4",
+        "O5"
+      ],
+      "slotCountStream": "3-3",
+      "fullishCountStream": "1-2",
+      "dominantPositionStream": "MM",
+      "edgeBiasStream": "RR",
+      "widthBucketStream": "MW",
+      "profileCodeStream": "S3F1DMER|S3F2DMER",
+      "totalOverlapStreamPx": "467-621",
+      "profiles": [
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "SOD",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            40.0,
+            244.57,
+            182.43
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.0,
+          "maxOverlapPx": 244.57,
+          "dominanceRatio": 0.5237,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -142.43,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMER",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "ODR",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "spanSlotOverlapsPx": [
+            144.57,
+            244.43,
+            232.0
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.43,
+          "dominanceRatio": 0.3936,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -87.43,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMER",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "W"
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_mirror_x_geometry",
+      "mode": "p75_control_profile",
+      "targetOrder": [
+        "p75_grey_3"
+      ],
+      "slotCountStream": "4",
+      "fullishCountStream": "2",
+      "dominantPositionStream": "T23",
+      "edgeBiasStream": "L",
+      "widthBucketStream": "W",
+      "profileCodeStream": "S4F2DT23EL",
+      "totalOverlapStreamPx": "718",
+      "profiles": [
+        {
+          "shortId": "p75_grey_3",
+          "visualState": null,
+          "spanSlotLetters": "REVO",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "spanSlotOverlapsPx": [
+            136.3,
+            244.43,
+            244.57,
+            92.74
+          ],
+          "slotCount": 4,
+          "fullishCount": 2,
+          "totalOverlapPx": 718.04,
+          "maxOverlapPx": 244.57,
+          "dominanceRatio": 0.3406,
+          "dominantPosition": "T23",
+          "edgeBias": "L",
+          "edgeBalancePx": 43.56,
+          "widthBucket": "wide",
+          "profileCode": "S4F2DT23EL",
+          "countCode": "4",
+          "fullishCode": "2",
+          "dominantCode": "T23",
+          "biasCode": "L",
+          "bucketCode": "W"
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_original_geometry",
+      "mode": "active_profile_line_order",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "slotCountStream": "3-2-2-3",
+      "fullishCountStream": "1-0-1-2",
+      "dominantPositionStream": "MRLM",
+      "edgeBiasStream": "LRLL",
+      "widthBucketStream": "MNMW",
+      "profileCodeStream": "S3F1DMEL|S2F0DRER|S2F1DLEL|S3F2DMEL",
+      "totalOverlapStreamPx": "467-263-401-621",
+      "profiles": [
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "DOS",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "spanSlotOverlapsPx": [
+            182.45,
+            244.52,
+            40.04
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.01,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.5236,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 142.41,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMEL",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "OV",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "spanSlotOverlapsPx": [
+            110.52,
+            152.48
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.48,
+          "dominanceRatio": 0.5798,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -41.96,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DRER",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "N"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "ER",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            232.41,
+            168.59
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.41,
+          "dominanceRatio": 0.5796,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 63.82,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DLEL",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "RDO",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            231.93,
+            244.52,
+            144.55
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.3938,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 87.38,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMEL",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "W"
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_original_geometry",
+      "mode": "active_profile_x_order",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "slotCountStream": "2-2-3-3",
+      "fullishCountStream": "0-1-2-1",
+      "dominantPositionStream": "RLMM",
+      "edgeBiasStream": "RLLL",
+      "widthBucketStream": "NMWM",
+      "profileCodeStream": "S2F0DRER|S2F1DLEL|S3F2DMEL|S3F1DMEL",
+      "totalOverlapStreamPx": "263-401-621-467",
+      "profiles": [
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "OV",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "spanSlotOverlapsPx": [
+            110.52,
+            152.48
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.48,
+          "dominanceRatio": 0.5798,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -41.96,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DRER",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "N"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "ER",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            232.41,
+            168.59
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.41,
+          "dominanceRatio": 0.5796,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 63.82,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DLEL",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "RDO",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            231.93,
+            244.52,
+            144.55
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.3938,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 87.38,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMEL",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "W"
+        },
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "DOS",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "spanSlotOverlapsPx": [
+            182.45,
+            244.52,
+            40.04
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.01,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.5236,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 142.41,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMEL",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "M"
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_original_geometry",
+      "mode": "active_black_profile_x_order",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "slotCountStream": "2-2",
+      "fullishCountStream": "0-1",
+      "dominantPositionStream": "RL",
+      "edgeBiasStream": "RL",
+      "widthBucketStream": "NM",
+      "profileCodeStream": "S2F0DRER|S2F1DLEL",
+      "totalOverlapStreamPx": "263-401",
+      "profiles": [
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "OV",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "spanSlotOverlapsPx": [
+            110.52,
+            152.48
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.48,
+          "dominanceRatio": 0.5798,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -41.96,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DRER",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "N"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "ER",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            232.41,
+            168.59
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.41,
+          "dominanceRatio": 0.5796,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 63.82,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DLEL",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "M"
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_original_geometry",
+      "mode": "active_orange_profile_x_order",
+      "targetOrder": [
+        "O5",
+        "O4"
+      ],
+      "slotCountStream": "3-3",
+      "fullishCountStream": "2-1",
+      "dominantPositionStream": "MM",
+      "edgeBiasStream": "LL",
+      "widthBucketStream": "WM",
+      "profileCodeStream": "S3F2DMEL|S3F1DMEL",
+      "totalOverlapStreamPx": "621-467",
+      "profiles": [
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "RDO",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            231.93,
+            244.52,
+            144.55
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.3938,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 87.38,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMEL",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "W"
+        },
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "DOS",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "spanSlotOverlapsPx": [
+            182.45,
+            244.52,
+            40.04
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.01,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.5236,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 142.41,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMEL",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "M"
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_original_geometry",
+      "mode": "p75_control_profile",
+      "targetOrder": [
+        "p75_grey_3"
+      ],
+      "slotCountStream": "4",
+      "fullishCountStream": "2",
+      "dominantPositionStream": "T23",
+      "edgeBiasStream": "R",
+      "widthBucketStream": "W",
+      "profileCodeStream": "S4F2DT23ER",
+      "totalOverlapStreamPx": "718",
+      "profiles": [
+        {
+          "shortId": "p75_grey_3",
+          "visualState": null,
+          "spanSlotLetters": "OVER",
+          "spanSlotIndexes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            92.83,
+            244.52,
+            244.38,
+            136.32
+          ],
+          "slotCount": 4,
+          "fullishCount": 2,
+          "totalOverlapPx": 718.05,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.3405,
+          "dominantPosition": "T23",
+          "edgeBias": "R",
+          "edgeBalancePx": -43.49,
+          "widthBucket": "wide",
+          "profileCode": "S4F2DT23ER",
+          "countCode": "4",
+          "fullishCode": "2",
+          "dominantCode": "T23",
+          "biasCode": "R",
+          "bucketCode": "W"
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_mirror_x_geometry",
+      "mode": "active_profile_line_order",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "slotCountStream": "3-2-2-3",
+      "fullishCountStream": "1-0-1-2",
+      "dominantPositionStream": "MLRM",
+      "edgeBiasStream": "RLRR",
+      "widthBucketStream": "MNMW",
+      "profileCodeStream": "S3F1DMER|S2F0DLEL|S2F1DRER|S3F2DMER",
+      "totalOverlapStreamPx": "467-263-401-621",
+      "profiles": [
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "VER",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            40.04,
+            244.38,
+            182.59
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.01,
+          "maxOverlapPx": 244.38,
+          "dominanceRatio": 0.5233,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -142.55,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMER",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "SE",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "spanSlotOverlapsPx": [
+            152.48,
+            110.52
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.48,
+          "dominanceRatio": 0.5798,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 41.96,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DLEL",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "N"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "DO",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            168.45,
+            232.55
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.55,
+          "dominanceRatio": 0.5799,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -64.1,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DRER",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "ERD",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "spanSlotOverlapsPx": [
+            144.41,
+            244.52,
+            232.07
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.3938,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -87.66,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMER",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "W"
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_mirror_x_geometry",
+      "mode": "active_profile_x_order",
+      "targetOrder": [
+        "O4",
+        "O5",
+        "G5",
+        "B4"
+      ],
+      "slotCountStream": "3-3-2-2",
+      "fullishCountStream": "1-2-1-0",
+      "dominantPositionStream": "MMRL",
+      "edgeBiasStream": "RRRL",
+      "widthBucketStream": "MWMN",
+      "profileCodeStream": "S3F1DMER|S3F2DMER|S2F1DRER|S2F0DLEL",
+      "totalOverlapStreamPx": "467-621-401-263",
+      "profiles": [
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "VER",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            40.04,
+            244.38,
+            182.59
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.01,
+          "maxOverlapPx": 244.38,
+          "dominanceRatio": 0.5233,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -142.55,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMER",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "ERD",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "spanSlotOverlapsPx": [
+            144.41,
+            244.52,
+            232.07
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.3938,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -87.66,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMER",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "W"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "DO",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            168.45,
+            232.55
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.55,
+          "dominanceRatio": 0.5799,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -64.1,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DRER",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "SE",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "spanSlotOverlapsPx": [
+            152.48,
+            110.52
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.48,
+          "dominanceRatio": 0.5798,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 41.96,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DLEL",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "N"
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_mirror_x_geometry",
+      "mode": "active_black_profile_x_order",
+      "targetOrder": [
+        "G5",
+        "B4"
+      ],
+      "slotCountStream": "2-2",
+      "fullishCountStream": "1-0",
+      "dominantPositionStream": "RL",
+      "edgeBiasStream": "RL",
+      "widthBucketStream": "MN",
+      "profileCodeStream": "S2F1DRER|S2F0DLEL",
+      "totalOverlapStreamPx": "401-263",
+      "profiles": [
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "DO",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            168.45,
+            232.55
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.55,
+          "dominanceRatio": 0.5799,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -64.1,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DRER",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "SE",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "spanSlotOverlapsPx": [
+            152.48,
+            110.52
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.48,
+          "dominanceRatio": 0.5798,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 41.96,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DLEL",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "N"
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_mirror_x_geometry",
+      "mode": "active_orange_profile_x_order",
+      "targetOrder": [
+        "O4",
+        "O5"
+      ],
+      "slotCountStream": "3-3",
+      "fullishCountStream": "1-2",
+      "dominantPositionStream": "MM",
+      "edgeBiasStream": "RR",
+      "widthBucketStream": "MW",
+      "profileCodeStream": "S3F1DMER|S3F2DMER",
+      "totalOverlapStreamPx": "467-621",
+      "profiles": [
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "VER",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            40.04,
+            244.38,
+            182.59
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.01,
+          "maxOverlapPx": 244.38,
+          "dominanceRatio": 0.5233,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -142.55,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMER",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "ERD",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "spanSlotOverlapsPx": [
+            144.41,
+            244.52,
+            232.07
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.3938,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -87.66,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMER",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "W"
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_mirror_x_geometry",
+      "mode": "p75_control_profile",
+      "targetOrder": [
+        "p75_grey_3"
+      ],
+      "slotCountStream": "4",
+      "fullishCountStream": "2",
+      "dominantPositionStream": "T23",
+      "edgeBiasStream": "L",
+      "widthBucketStream": "W",
+      "profileCodeStream": "S4F2DT23EL",
+      "totalOverlapStreamPx": "718",
+      "profiles": [
+        {
+          "shortId": "p75_grey_3",
+          "visualState": null,
+          "spanSlotLetters": "DOSE",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "spanSlotOverlapsPx": [
+            136.18,
+            244.52,
+            244.52,
+            92.83
+          ],
+          "slotCount": 4,
+          "fullishCount": 2,
+          "totalOverlapPx": 718.05,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.3405,
+          "dominantPosition": "T23",
+          "edgeBias": "L",
+          "edgeBalancePx": 43.35,
+          "widthBucket": "wide",
+          "profileCode": "S4F2DT23EL",
+          "countCode": "4",
+          "fullishCode": "2",
+          "dominantCode": "T23",
+          "biasCode": "L",
+          "bucketCode": "W"
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_original_geometry",
+      "mode": "active_profile_line_order",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "slotCountStream": "3-2-2-3",
+      "fullishCountStream": "1-0-1-2",
+      "dominantPositionStream": "MRLM",
+      "edgeBiasStream": "LRLL",
+      "widthBucketStream": "MNMW",
+      "profileCodeStream": "S3F1DMEL|S2F0DRER|S2F1DLEL|S3F2DMEL",
+      "totalOverlapStreamPx": "467-263-401-621",
+      "profiles": [
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "REV",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "spanSlotOverlapsPx": [
+            182.45,
+            244.52,
+            40.04
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.01,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.5236,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 142.41,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMEL",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "ES",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "spanSlotOverlapsPx": [
+            110.52,
+            152.48
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.48,
+          "dominanceRatio": 0.5798,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -41.96,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DRER",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "N"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "OD",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            232.41,
+            168.59
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.41,
+          "dominanceRatio": 0.5796,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 63.82,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DLEL",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "DRE",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            231.93,
+            244.52,
+            144.55
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.3938,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 87.38,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMEL",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "W"
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_original_geometry",
+      "mode": "active_profile_x_order",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "slotCountStream": "2-2-3-3",
+      "fullishCountStream": "0-1-2-1",
+      "dominantPositionStream": "RLMM",
+      "edgeBiasStream": "RLLL",
+      "widthBucketStream": "NMWM",
+      "profileCodeStream": "S2F0DRER|S2F1DLEL|S3F2DMEL|S3F1DMEL",
+      "totalOverlapStreamPx": "263-401-621-467",
+      "profiles": [
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "ES",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "spanSlotOverlapsPx": [
+            110.52,
+            152.48
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.48,
+          "dominanceRatio": 0.5798,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -41.96,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DRER",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "N"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "OD",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            232.41,
+            168.59
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.41,
+          "dominanceRatio": 0.5796,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 63.82,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DLEL",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "DRE",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            231.93,
+            244.52,
+            144.55
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.3938,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 87.38,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMEL",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "W"
+        },
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "REV",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "spanSlotOverlapsPx": [
+            182.45,
+            244.52,
+            40.04
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.01,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.5236,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 142.41,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMEL",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "M"
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_original_geometry",
+      "mode": "active_black_profile_x_order",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "slotCountStream": "2-2",
+      "fullishCountStream": "0-1",
+      "dominantPositionStream": "RL",
+      "edgeBiasStream": "RL",
+      "widthBucketStream": "NM",
+      "profileCodeStream": "S2F0DRER|S2F1DLEL",
+      "totalOverlapStreamPx": "263-401",
+      "profiles": [
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "ES",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "spanSlotOverlapsPx": [
+            110.52,
+            152.48
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.48,
+          "dominanceRatio": 0.5798,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -41.96,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DRER",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "N"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "OD",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            232.41,
+            168.59
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.41,
+          "dominanceRatio": 0.5796,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 63.82,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DLEL",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "M"
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_original_geometry",
+      "mode": "active_orange_profile_x_order",
+      "targetOrder": [
+        "O5",
+        "O4"
+      ],
+      "slotCountStream": "3-3",
+      "fullishCountStream": "2-1",
+      "dominantPositionStream": "MM",
+      "edgeBiasStream": "LL",
+      "widthBucketStream": "WM",
+      "profileCodeStream": "S3F2DMEL|S3F1DMEL",
+      "totalOverlapStreamPx": "621-467",
+      "profiles": [
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "DRE",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            231.93,
+            244.52,
+            144.55
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.3938,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 87.38,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMEL",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "W"
+        },
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "REV",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "spanSlotOverlapsPx": [
+            182.45,
+            244.52,
+            40.04
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.01,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.5236,
+          "dominantPosition": "M",
+          "edgeBias": "L",
+          "edgeBalancePx": 142.41,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMEL",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "L",
+          "bucketCode": "M"
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_original_geometry",
+      "mode": "p75_control_profile",
+      "targetOrder": [
+        "p75_grey_3"
+      ],
+      "slotCountStream": "4",
+      "fullishCountStream": "2",
+      "dominantPositionStream": "T23",
+      "edgeBiasStream": "R",
+      "widthBucketStream": "W",
+      "profileCodeStream": "S4F2DT23ER",
+      "totalOverlapStreamPx": "718",
+      "profiles": [
+        {
+          "shortId": "p75_grey_3",
+          "visualState": null,
+          "spanSlotLetters": "ESOD",
+          "spanSlotIndexes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            92.83,
+            244.52,
+            244.38,
+            136.32
+          ],
+          "slotCount": 4,
+          "fullishCount": 2,
+          "totalOverlapPx": 718.05,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.3405,
+          "dominantPosition": "T23",
+          "edgeBias": "R",
+          "edgeBalancePx": -43.49,
+          "widthBucket": "wide",
+          "profileCode": "S4F2DT23ER",
+          "countCode": "4",
+          "fullishCode": "2",
+          "dominantCode": "T23",
+          "biasCode": "R",
+          "bucketCode": "W"
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_mirror_x_geometry",
+      "mode": "active_profile_line_order",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "slotCountStream": "3-2-2-3",
+      "fullishCountStream": "1-0-1-2",
+      "dominantPositionStream": "MLRM",
+      "edgeBiasStream": "RLRR",
+      "widthBucketStream": "MNMW",
+      "profileCodeStream": "S3F1DMER|S2F0DLEL|S2F1DRER|S3F2DMER",
+      "totalOverlapStreamPx": "467-263-401-621",
+      "profiles": [
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "SOD",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            40.04,
+            244.38,
+            182.59
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.01,
+          "maxOverlapPx": 244.38,
+          "dominanceRatio": 0.5233,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -142.55,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMER",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "VO",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "spanSlotOverlapsPx": [
+            152.48,
+            110.52
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.48,
+          "dominanceRatio": 0.5798,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 41.96,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DLEL",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "N"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "RE",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            168.45,
+            232.55
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.55,
+          "dominanceRatio": 0.5799,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -64.1,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DRER",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "ODR",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "spanSlotOverlapsPx": [
+            144.41,
+            244.52,
+            232.07
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.3938,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -87.66,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMER",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "W"
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_mirror_x_geometry",
+      "mode": "active_profile_x_order",
+      "targetOrder": [
+        "O4",
+        "O5",
+        "G5",
+        "B4"
+      ],
+      "slotCountStream": "3-3-2-2",
+      "fullishCountStream": "1-2-1-0",
+      "dominantPositionStream": "MMRL",
+      "edgeBiasStream": "RRRL",
+      "widthBucketStream": "MWMN",
+      "profileCodeStream": "S3F1DMER|S3F2DMER|S2F1DRER|S2F0DLEL",
+      "totalOverlapStreamPx": "467-621-401-263",
+      "profiles": [
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "SOD",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            40.04,
+            244.38,
+            182.59
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.01,
+          "maxOverlapPx": 244.38,
+          "dominanceRatio": 0.5233,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -142.55,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMER",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "ODR",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "spanSlotOverlapsPx": [
+            144.41,
+            244.52,
+            232.07
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.3938,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -87.66,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMER",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "W"
+        },
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "RE",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            168.45,
+            232.55
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.55,
+          "dominanceRatio": 0.5799,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -64.1,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DRER",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "VO",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "spanSlotOverlapsPx": [
+            152.48,
+            110.52
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.48,
+          "dominanceRatio": 0.5798,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 41.96,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DLEL",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "N"
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_mirror_x_geometry",
+      "mode": "active_black_profile_x_order",
+      "targetOrder": [
+        "G5",
+        "B4"
+      ],
+      "slotCountStream": "2-2",
+      "fullishCountStream": "1-0",
+      "dominantPositionStream": "RL",
+      "edgeBiasStream": "RL",
+      "widthBucketStream": "MN",
+      "profileCodeStream": "S2F1DRER|S2F0DLEL",
+      "totalOverlapStreamPx": "401-263",
+      "profiles": [
+        {
+          "shortId": "G5",
+          "visualState": "K",
+          "spanSlotLetters": "RE",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "spanSlotOverlapsPx": [
+            168.45,
+            232.55
+          ],
+          "slotCount": 2,
+          "fullishCount": 1,
+          "totalOverlapPx": 401.0,
+          "maxOverlapPx": 232.55,
+          "dominanceRatio": 0.5799,
+          "dominantPosition": "R",
+          "edgeBias": "R",
+          "edgeBalancePx": -64.1,
+          "widthBucket": "medium",
+          "profileCode": "S2F1DRER",
+          "countCode": "2",
+          "fullishCode": "1",
+          "dominantCode": "R",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "B4",
+          "visualState": "K",
+          "spanSlotLetters": "VO",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "spanSlotOverlapsPx": [
+            152.48,
+            110.52
+          ],
+          "slotCount": 2,
+          "fullishCount": 0,
+          "totalOverlapPx": 263.0,
+          "maxOverlapPx": 152.48,
+          "dominanceRatio": 0.5798,
+          "dominantPosition": "L",
+          "edgeBias": "L",
+          "edgeBalancePx": 41.96,
+          "widthBucket": "narrow",
+          "profileCode": "S2F0DLEL",
+          "countCode": "2",
+          "fullishCode": "0",
+          "dominantCode": "L",
+          "biasCode": "L",
+          "bucketCode": "N"
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_mirror_x_geometry",
+      "mode": "active_orange_profile_x_order",
+      "targetOrder": [
+        "O4",
+        "O5"
+      ],
+      "slotCountStream": "3-3",
+      "fullishCountStream": "1-2",
+      "dominantPositionStream": "MM",
+      "edgeBiasStream": "RR",
+      "widthBucketStream": "MW",
+      "profileCodeStream": "S3F1DMER|S3F2DMER",
+      "totalOverlapStreamPx": "467-621",
+      "profiles": [
+        {
+          "shortId": "O4",
+          "visualState": "Y",
+          "spanSlotLetters": "SOD",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "spanSlotOverlapsPx": [
+            40.04,
+            244.38,
+            182.59
+          ],
+          "slotCount": 3,
+          "fullishCount": 1,
+          "totalOverlapPx": 467.01,
+          "maxOverlapPx": 244.38,
+          "dominanceRatio": 0.5233,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -142.55,
+          "widthBucket": "medium",
+          "profileCode": "S3F1DMER",
+          "countCode": "3",
+          "fullishCode": "1",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "M"
+        },
+        {
+          "shortId": "O5",
+          "visualState": "Y",
+          "spanSlotLetters": "ODR",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "spanSlotOverlapsPx": [
+            144.41,
+            244.52,
+            232.07
+          ],
+          "slotCount": 3,
+          "fullishCount": 2,
+          "totalOverlapPx": 621.0,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.3938,
+          "dominantPosition": "M",
+          "edgeBias": "R",
+          "edgeBalancePx": -87.66,
+          "widthBucket": "wide",
+          "profileCode": "S3F2DMER",
+          "countCode": "3",
+          "fullishCode": "2",
+          "dominantCode": "M",
+          "biasCode": "R",
+          "bucketCode": "W"
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_mirror_x_geometry",
+      "mode": "p75_control_profile",
+      "targetOrder": [
+        "p75_grey_3"
+      ],
+      "slotCountStream": "4",
+      "fullishCountStream": "2",
+      "dominantPositionStream": "T23",
+      "edgeBiasStream": "L",
+      "widthBucketStream": "W",
+      "profileCodeStream": "S4F2DT23EL",
+      "totalOverlapStreamPx": "718",
+      "profiles": [
+        {
+          "shortId": "p75_grey_3",
+          "visualState": null,
+          "spanSlotLetters": "REVO",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "spanSlotOverlapsPx": [
+            136.18,
+            244.52,
+            244.52,
+            92.83
+          ],
+          "slotCount": 4,
+          "fullishCount": 2,
+          "totalOverlapPx": 718.05,
+          "maxOverlapPx": 244.52,
+          "dominanceRatio": 0.3405,
+          "dominantPosition": "T23",
+          "edgeBias": "L",
+          "edgeBalancePx": 43.35,
+          "widthBucket": "wide",
+          "profileCode": "S4F2DT23EL",
+          "countCode": "4",
+          "fullishCode": "2",
+          "dominantCode": "T23",
+          "biasCode": "L",
+          "bucketCode": "W"
+        }
+      ]
+    }
+  ],
+  "sourceWidthProfileCueRows": [],
+  "summary": {
+    "variantCount": 8,
+    "streamRowCount": 40,
+    "activeProfileStreamCount": 16,
+    "slotWidthReferencePx": 244.57,
+    "activeSlotCountStreams": [
+      "2-2-3-3",
+      "3-2-2-3",
+      "3-3-2-2"
+    ],
+    "activeFullishCountStreams": [
+      "0-1-2-1",
+      "1-0-1-2",
+      "1-2-1-0"
+    ],
+    "activeDominantPositionStreams": [
+      "MLRM",
+      "MMRL",
+      "MRLM",
+      "RLMM"
+    ],
+    "activeEdgeBiasStreams": [
+      "LRLL",
+      "RLLL",
+      "RLRR",
+      "RRRL"
+    ],
+    "activeSlotCounts": [
+      2,
+      3
+    ],
+    "p75SlotCounts": [
+      4
+    ],
+    "blackProfileStreams": [
+      "S2F0DRER|S2F1DLEL",
+      "S2F1DRER|S2F0DLEL"
+    ],
+    "orangeProfileStreams": [
+      "S3F1DMER|S3F2DMER",
+      "S3F2DMEL|S3F1DMEL"
+    ],
+    "p75SlotCountStreams": [
+      "4"
+    ],
+    "p75ProfileStreams": [
+      "S4F2DT23EL",
+      "S4F2DT23ER"
+    ],
+    "activeSharesP75SlotCount": false,
+    "sourceWidthProfileCueHitCount": 0,
+    "dominantMatchesCenterStreamCount": 16,
+    "spanEdgeLayoutHitRowCount": 0,
+    "colorSplitSourceCueHitCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "overlapWidthFingerprint": "variants=8|streams=40|activeStreams=16|slotWidth=244.57|activeSlots=2-2-3-3,3-2-2-3,3-3-2-2|fullish=0-1-2-1,1-0-1-2,1-2-1-0|dom=MLRM,MMRL,MRLM,RLMM|bias=LRLL,RLLL,RLRR,RRRL|p75Slots=4|shareP75Slots=0|widthCueHits=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "decision": {
+    "sourcePacketOverlapWidthProfileControl": "overlap_width_profiles_controlled_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Measured overlap-width profiles are geometry scaffolding only: active profiles are two/three-slot phrase-width measurements, p75 is a separate four-slot control, mirror variants flip edge bias, and no checked source witness names an overlap-width, ratio, or coverage-profile rule.",
+    "nextMove": "Keep overlap-width profiles as a registration diagnostic only. Reopen extraction only with distinct source-backed wording that names measuring overlap width, coverage ratio, or profile order."
+  },
+  "sheet": "analysis_outputs/source_audit/source_packet_overlap_width_profile_control/source_packet_overlap_width_profile_control_sheet.jpg"
+}

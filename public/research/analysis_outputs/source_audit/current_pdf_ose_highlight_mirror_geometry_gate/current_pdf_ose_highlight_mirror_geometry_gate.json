@@ -1,0 +1,279 @@
+{
+  "createdAt": "2026-05-24T17:19:28",
+  "scope": "valid 75->76 mirrored page-75 orange highlight geometry against page-76 highlights, active targets, and OVERDOSE slots; no extraction/key derivation",
+  "inputs": {
+    "articleMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "activeTargets": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "c9HeaderGlyphSlotGate": "analysis_outputs/source_audit/c9_header_glyph_slot_gate/c9_header_glyph_slot_gate.json",
+    "oseHighlightPhraseGate": "analysis_outputs/source_audit/current_pdf_ose_source_highlight_phrase_gate/current_pdf_ose_source_highlight_phrase_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "summary": {
+    "p75HighlightCount": 8,
+    "oseSourceHighlightIds": [
+      "p75_orange_7",
+      "p75_orange_8"
+    ],
+    "oseSourceHighlightCount": 2,
+    "oseRowsWithP76HighlightContact": 0,
+    "oseRowsWithActiveTargetContact": 0,
+    "oseRowsWithOverdoseSlotContact": 2,
+    "nonOseRowsWithActiveTargetContact": 0,
+    "selectorCandidateCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "fingerprint": "p75Hi=8|oseHi=2|oseP76Hi=0/2|oseActive=0/2|oseSlots=2/2|nonOseActive=0/6|candidates=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "rows": [
+    {
+      "sourceId": "p75_orange_1",
+      "sourceKind": "orange",
+      "sourceBox": [
+        1572.0,
+        984.0,
+        2076.0,
+        1032.0
+      ],
+      "mirroredBox": [
+        468.0,
+        984.0,
+        972.0,
+        1032.0
+      ],
+      "isOseSourceHighlight": false,
+      "p76HighlightContacts": [],
+      "activeTargetContacts": [],
+      "overdoseSlotContacts": [],
+      "p76HighlightContactCount": 0,
+      "activeTargetContactCount": 0,
+      "overdoseSlotContactCount": 0,
+      "overdoseSlotStream": ""
+    },
+    {
+      "sourceId": "p75_orange_2",
+      "sourceKind": "orange",
+      "sourceBox": [
+        368.0,
+        1050.0,
+        812.0,
+        1099.0
+      ],
+      "mirroredBox": [
+        1732.0,
+        1050.0,
+        2176.0,
+        1099.0
+      ],
+      "isOseSourceHighlight": false,
+      "p76HighlightContacts": [],
+      "activeTargetContacts": [],
+      "overdoseSlotContacts": [],
+      "p76HighlightContactCount": 0,
+      "activeTargetContactCount": 0,
+      "overdoseSlotContactCount": 0,
+      "overdoseSlotStream": ""
+    },
+    {
+      "sourceId": "p75_orange_3",
+      "sourceKind": "orange",
+      "sourceBox": [
+        870.0,
+        1833.0,
+        1076.0,
+        1880.0
+      ],
+      "mirroredBox": [
+        1468.0,
+        1833.0,
+        1674.0,
+        1880.0
+      ],
+      "isOseSourceHighlight": false,
+      "p76HighlightContacts": [],
+      "activeTargetContacts": [],
+      "overdoseSlotContacts": [],
+      "p76HighlightContactCount": 0,
+      "activeTargetContactCount": 0,
+      "overdoseSlotContactCount": 0,
+      "overdoseSlotStream": ""
+    },
+    {
+      "sourceId": "p75_orange_4",
+      "sourceKind": "orange",
+      "sourceBox": [
+        455.0,
+        1904.0,
+        1689.0,
+        1956.0
+      ],
+      "mirroredBox": [
+        855.0,
+        1904.0,
+        2089.0,
+        1956.0
+      ],
+      "isOseSourceHighlight": false,
+      "p76HighlightContacts": [],
+      "activeTargetContacts": [],
+      "overdoseSlotContacts": [],
+      "p76HighlightContactCount": 0,
+      "activeTargetContactCount": 0,
+      "overdoseSlotContactCount": 0,
+      "overdoseSlotStream": ""
+    },
+    {
+      "sourceId": "p75_orange_5",
+      "sourceKind": "orange",
+      "sourceBox": [
+        455.0,
+        1977.0,
+        1715.0,
+        2029.0
+      ],
+      "mirroredBox": [
+        829.0,
+        1977.0,
+        2089.0,
+        2029.0
+      ],
+      "isOseSourceHighlight": false,
+      "p76HighlightContacts": [],
+      "activeTargetContacts": [],
+      "overdoseSlotContacts": [],
+      "p76HighlightContactCount": 0,
+      "activeTargetContactCount": 0,
+      "overdoseSlotContactCount": 0,
+      "overdoseSlotStream": ""
+    },
+    {
+      "sourceId": "p75_orange_6",
+      "sourceKind": "orange",
+      "sourceBox": [
+        1271.0,
+        2200.0,
+        1608.0,
+        2248.0
+      ],
+      "mirroredBox": [
+        936.0,
+        2200.0,
+        1273.0,
+        2248.0
+      ],
+      "isOseSourceHighlight": false,
+      "p76HighlightContacts": [],
+      "activeTargetContacts": [],
+      "overdoseSlotContacts": [
+        {
+          "id": "R3",
+          "label": "R3",
+          "overlapArea": 11732.654,
+          "sourceAreaShare": 0.725312,
+          "targetAreaShare": 0.056676
+        },
+        {
+          "id": "E2",
+          "label": "E2",
+          "overlapArea": 4395.346,
+          "sourceAreaShare": 0.27172,
+          "targetAreaShare": 0.02122
+        },
+        {
+          "id": "D4",
+          "label": "D4",
+          "overlapArea": 48.0,
+          "sourceAreaShare": 0.002967,
+          "targetAreaShare": 0.000232
+        }
+      ],
+      "p76HighlightContactCount": 0,
+      "activeTargetContactCount": 0,
+      "overdoseSlotContactCount": 3,
+      "overdoseSlotStream": "R3E2D4"
+    },
+    {
+      "sourceId": "p75_orange_7",
+      "sourceKind": "orange",
+      "sourceBox": [
+        452.0,
+        2415.0,
+        925.0,
+        2464.0
+      ],
+      "mirroredBox": [
+        1619.0,
+        2415.0,
+        2092.0,
+        2464.0
+      ],
+      "isOseSourceHighlight": true,
+      "p76HighlightContacts": [],
+      "activeTargetContacts": [],
+      "overdoseSlotContacts": [
+        {
+          "id": "S6",
+          "label": "S6",
+          "overlapArea": 11983.916,
+          "sourceAreaShare": 0.517061,
+          "targetAreaShare": 0.057857
+        },
+        {
+          "id": "O5",
+          "label": "O5",
+          "overlapArea": 6958.0,
+          "sourceAreaShare": 0.300211,
+          "targetAreaShare": 0.033611
+        },
+        {
+          "id": "E7",
+          "label": "E7",
+          "overlapArea": 4235.084,
+          "sourceAreaShare": 0.182728,
+          "targetAreaShare": 0.020458
+        }
+      ],
+      "p76HighlightContactCount": 0,
+      "activeTargetContactCount": 0,
+      "overdoseSlotContactCount": 3,
+      "overdoseSlotStream": "S6O5E7"
+    },
+    {
+      "sourceId": "p75_orange_8",
+      "sourceKind": "orange",
+      "sourceBox": [
+        544.0,
+        2553.0,
+        735.0,
+        2600.0
+      ],
+      "mirroredBox": [
+        1809.0,
+        2553.0,
+        2000.0,
+        2600.0
+      ],
+      "isOseSourceHighlight": true,
+      "p76HighlightContacts": [],
+      "activeTargetContacts": [],
+      "overdoseSlotContacts": [
+        {
+          "id": "S6",
+          "label": "S6",
+          "overlapArea": 8977.0,
+          "sourceAreaShare": 1.0,
+          "targetAreaShare": 0.04334
+        }
+      ],
+      "p76HighlightContactCount": 0,
+      "activeTargetContactCount": 0,
+      "overdoseSlotContactCount": 1,
+      "overdoseSlotStream": "S6"
+    }
+  ],
+  "decision": "pdf_ose_highlight_mirror_geometry_no_selector",
+  "reason": "The OSE source highlights mirror into OVERDOSE slot bands, explaining the OSE support, but they do not mirror onto any active target boxes and do not form a page-76 highlight selector.",
+  "nextMove": "Treat OSE highlight geometry as slot-band provenance only. Continue only with new source/clue material or a distinct physical/original-layout feature that supplies unit and read order.",
+  "sheet": "analysis_outputs/source_audit/current_pdf_ose_highlight_mirror_geometry_gate/current_pdf_ose_highlight_mirror_geometry_gate_sheet.jpg"
+}

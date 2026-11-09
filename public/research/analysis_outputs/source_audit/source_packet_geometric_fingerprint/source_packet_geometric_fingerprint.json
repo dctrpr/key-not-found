@@ -1,0 +1,371 @@
+{
+  "createdAt": "2026-05-21T06:06:41",
+  "scope": "source-packet active-quartet geometric fingerprint; no OCR, extraction, key derivation, hashing, seed/WIF checks, address checks, BIP39 checks, or broad candidate generation",
+  "inputs": {
+    "nativeBenchmarkBridge": "analysis_outputs/source_audit/source_packet_native_benchmark_bridge/source_packet_native_benchmark_bridge.json",
+    "alignmentTolerance": "analysis_outputs/source_audit/source_packet_alignment_tolerance/source_packet_alignment_tolerance.json",
+    "uprightImage": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+    "nativeImage": "analysis_outputs/source_images/magazine_page_76.jpg"
+  },
+  "imageSize": [
+    2544,
+    3264
+  ],
+  "activeRows": [
+    {
+      "id": "buying_dip",
+      "label": "O4 buying the dip",
+      "visualState": "Y",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "uprightBox": [
+        1334,
+        2177,
+        1801,
+        2225
+      ],
+      "nativeBox": [
+        743,
+        1039,
+        1210,
+        1087
+      ],
+      "uprightCenter": [
+        1567.5,
+        2201.0
+      ],
+      "nativeCenter": [
+        976.5,
+        1063.0
+      ],
+      "boxSize": [
+        467.0,
+        48.0
+      ],
+      "roundtripUprightCenterFromNative": [
+        1567.5,
+        2201.0
+      ],
+      "roundtripUprightBoxFromNative": [
+        1334,
+        2177,
+        1801,
+        2225
+      ],
+      "roundtripCenterErrorPx": 0.0,
+      "roundtripBoxMaxErrorPx": 0.0
+    },
+    {
+      "id": "one_billion",
+      "label": "B4 $1 billion",
+      "visualState": "K",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "uprightBox": [
+        428,
+        2398,
+        691,
+        2445
+      ],
+      "nativeBox": [
+        1853,
+        819,
+        2116,
+        866
+      ],
+      "uprightCenter": [
+        559.5,
+        2421.5
+      ],
+      "nativeCenter": [
+        1984.5,
+        842.5
+      ],
+      "boxSize": [
+        263.0,
+        47.0
+      ],
+      "roundtripUprightCenterFromNative": [
+        559.5,
+        2421.5
+      ],
+      "roundtripUprightBoxFromNative": [
+        428,
+        2398,
+        691,
+        2445
+      ],
+      "roundtripCenterErrorPx": 0.0,
+      "roundtripBoxMaxErrorPx": 0.0
+    },
+    {
+      "id": "volcano_bonds",
+      "label": "G5 Volcano Bonds",
+      "visualState": "K",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "uprightBox": [
+        795,
+        2544,
+        1196,
+        2592
+      ],
+      "nativeBox": [
+        1348,
+        672,
+        1749,
+        720
+      ],
+      "uprightCenter": [
+        995.5,
+        2568.0
+      ],
+      "nativeCenter": [
+        1548.5,
+        696.0
+      ],
+      "boxSize": [
+        401.0,
+        48.0
+      ],
+      "roundtripUprightCenterFromNative": [
+        995.5,
+        2568.0
+      ],
+      "roundtripUprightBoxFromNative": [
+        795,
+        2544,
+        1196,
+        2592
+      ],
+      "roundtripCenterErrorPx": 0.0,
+      "roundtripBoxMaxErrorPx": 0.0
+    },
+    {
+      "id": "shitcoiner_heart",
+      "label": "O5 shitcoiner at heart",
+      "visualState": "Y",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "uprightBox": [
+        1040,
+        2932,
+        1661,
+        2982
+      ],
+      "nativeBox": [
+        883,
+        282,
+        1504,
+        332
+      ],
+      "uprightCenter": [
+        1350.5,
+        2957.0
+      ],
+      "nativeCenter": [
+        1193.5,
+        307.0
+      ],
+      "boxSize": [
+        621.0,
+        50.0
+      ],
+      "roundtripUprightCenterFromNative": [
+        1350.5,
+        2957.0
+      ],
+      "roundtripUprightBoxFromNative": [
+        1040,
+        2932,
+        1661,
+        2982
+      ],
+      "roundtripCenterErrorPx": 0.0,
+      "roundtripBoxMaxErrorPx": 0.0
+    }
+  ],
+  "pairwise": [
+    {
+      "from": "buying_dip",
+      "to": "one_billion",
+      "orderIndexPair": [
+        0,
+        1
+      ],
+      "visualPair": "YK",
+      "lineGap": 3,
+      "corridorGap": 3,
+      "dx": -1008.0,
+      "dy": 220.5,
+      "dxSign": "-",
+      "dySign": "+",
+      "distancePx": 1031.835,
+      "distancePageDiagonalRatio": 0.249337,
+      "angleDegreesImageYDown": 167.661
+    },
+    {
+      "from": "buying_dip",
+      "to": "volcano_bonds",
+      "orderIndexPair": [
+        0,
+        2
+      ],
+      "visualPair": "YK",
+      "lineGap": 5,
+      "corridorGap": 5,
+      "dx": -572.0,
+      "dy": 367.0,
+      "dxSign": "-",
+      "dySign": "+",
+      "distancePx": 679.612,
+      "distancePageDiagonalRatio": 0.164224,
+      "angleDegreesImageYDown": 147.315
+    },
+    {
+      "from": "buying_dip",
+      "to": "shitcoiner_heart",
+      "orderIndexPair": [
+        0,
+        3
+      ],
+      "visualPair": "YY",
+      "lineGap": 10,
+      "corridorGap": 10,
+      "dx": -217.0,
+      "dy": 756.0,
+      "dxSign": "-",
+      "dySign": "+",
+      "distancePx": 786.527,
+      "distancePageDiagonalRatio": 0.19006,
+      "angleDegreesImageYDown": 106.015
+    },
+    {
+      "from": "one_billion",
+      "to": "volcano_bonds",
+      "orderIndexPair": [
+        1,
+        2
+      ],
+      "visualPair": "KK",
+      "lineGap": 2,
+      "corridorGap": 2,
+      "dx": 436.0,
+      "dy": 146.5,
+      "dxSign": "+",
+      "dySign": "+",
+      "distancePx": 459.955,
+      "distancePageDiagonalRatio": 0.111146,
+      "angleDegreesImageYDown": 18.573
+    },
+    {
+      "from": "one_billion",
+      "to": "shitcoiner_heart",
+      "orderIndexPair": [
+        1,
+        3
+      ],
+      "visualPair": "KY",
+      "lineGap": 7,
+      "corridorGap": 7,
+      "dx": 791.0,
+      "dy": 535.5,
+      "dxSign": "+",
+      "dySign": "+",
+      "distancePx": 955.218,
+      "distancePageDiagonalRatio": 0.230823,
+      "angleDegreesImageYDown": 34.098
+    },
+    {
+      "from": "volcano_bonds",
+      "to": "shitcoiner_heart",
+      "orderIndexPair": [
+        2,
+        3
+      ],
+      "visualPair": "KY",
+      "lineGap": 5,
+      "corridorGap": 5,
+      "dx": 355.0,
+      "dy": 389.0,
+      "dxSign": "+",
+      "dySign": "+",
+      "distancePx": 526.636,
+      "distancePageDiagonalRatio": 0.127259,
+      "angleDegreesImageYDown": 47.617
+    }
+  ],
+  "summary": {
+    "activeOrder": [
+      "buying_dip",
+      "one_billion",
+      "volcano_bonds",
+      "shitcoiner_heart"
+    ],
+    "visualStateOrder": "YKKY",
+    "activePageLines": "22 25 27 32",
+    "activeCorridorIndexes": "4 7 9 14",
+    "pageLineGaps": [
+      3,
+      2,
+      5
+    ],
+    "corridorGaps": [
+      3,
+      2,
+      5
+    ],
+    "dxSignStream": "-++",
+    "dySignStream": "+++",
+    "clusterBox": [
+      428,
+      2177,
+      1801,
+      2982
+    ],
+    "clusterSize": [
+      1373,
+      805
+    ],
+    "clusterCentroid": [
+      1118.25,
+      2536.875
+    ],
+    "clusterAspectWidthOverHeight": 1.70559,
+    "clusterAreaPx": 1105265,
+    "c9FrameBox": [
+      294,
+      2177,
+      2250,
+      3024
+    ],
+    "c9FrameCoverageWidthRatio": 0.701943,
+    "c9FrameCoverageHeightRatio": 0.950413,
+    "c9FrameCoverageAreaRatio": 0.667136,
+    "maxNativeRoundtripCenterErrorPx": 0.0,
+    "maxNativeRoundtripBoxErrorPx": 0.0,
+    "pairwiseRecordCount": 6,
+    "overdoseHeaderGlyphSequence": "OVERDOSE",
+    "overdoseHeaderGlyphSlotCount": 8,
+    "overdoseHeaderCenter": [
+      2221.12,
+      168.645
+    ],
+    "overdoseHeaderToClusterCentroid": {
+      "dx": -1102.87,
+      "dy": 2368.23,
+      "distancePx": 2612.439,
+      "angleDegreesImageYDown": 114.971
+    },
+    "alignmentCommonOutwardPadAllTargetsPassPx": 4,
+    "alignmentCommonFullEightDirectionShiftAllTargetsPassPx": 4,
+    "selectorUnlocked": false,
+    "sourceRegistrationFingerprint": "order=buying_dip/one_billion/volcano_bonds/shitcoiner_heart|states=YKKY|lines=22-25-27-32|corr=4-7-9-14|lineGaps=3-2-5|corrGaps=3-2-5|dxSigns=-++|dySigns=+++|cluster=1373x805|nativeRoundtripCenter=0.0"
+  },
+  "decision": {
+    "sourcePacketGeometricFingerprint": "source-validation-only",
+    "reason": "The active quartet now has a compact geometric fingerprint in readable/upright and native rotate180 coordinates. It stabilizes future source/original-layout comparison, but supplies no extraction unit, order rule, or selector permission."
+  },
+  "sheet": "analysis_outputs/source_audit/source_packet_geometric_fingerprint/source_packet_geometric_fingerprint_sheet.jpg",
+  "nextMove": "Use this fingerprint with the native bridge and alignment tolerance when comparing a physical scan, original export, or fresh PDF extraction; extraction remains blocked until R3 unit/order wording appears."
+}

@@ -1,0 +1,313 @@
+{
+  "createdAt": "2026-05-20T22:55:10",
+  "scope": "comparison/OVERDOSE layout synthesis against source-reopen gate; no extraction/key derivation",
+  "inputs": {
+    "comparison_layout_audit": "analysis_outputs/comparison_articles/comparison_layout_audit.json",
+    "overdose_style_uniqueness": "analysis_outputs/comparison_articles/overdose_style_uniqueness/overdose_style_uniqueness.json",
+    "body_highlighter_grammar": "analysis_outputs/comparison_articles/body_highlighter_grammar/body_highlighter_grammar.json",
+    "comparison_pdf_source_gate": "analysis_outputs/source_audit/comparison_pdf_source_gate/comparison_pdf_source_gate.json",
+    "capsule_motif_recurrence": "analysis_outputs/source_audit/capsule_motif_recurrence/capsule_motif_recurrence.json",
+    "bitcoin4_geometry_witness": "analysis_outputs/source_audit/bitcoin4_issue24_geometry_witness/bitcoin4_issue24_geometry_witness.json",
+    "priority_crops_bitcoin4": "analysis_outputs/source_audit/priority_crops_bitcoin4_comparison/priority_crops_bitcoin4_comparison.json",
+    "source_reopen": "analysis_outputs/source_audit/source_reopen_requirements/source_reopen_requirements.json"
+  },
+  "sheet": "analysis_outputs/comparison_articles/overdose_layout_r3_gate_synthesis/overdose_layout_r3_gate_synthesis_sheet.jpg",
+  "sheetPanels": [
+    {
+      "title": "OVERDOSE style comparison",
+      "path": "analysis_outputs/comparison_articles/overdose_style_uniqueness/overdose_style_uniqueness_contact_sheet.jpg"
+    },
+    {
+      "title": "Body highlighter grammar",
+      "path": "analysis_outputs/comparison_articles/body_highlighter_grammar/body_highlighter_grammar_sheet.jpg"
+    },
+    {
+      "title": "Capsule motif recurrence",
+      "path": "analysis_outputs/source_audit/capsule_motif_recurrence/capsule_motif_recurrence_sheet.jpg"
+    },
+    {
+      "title": "bitcoin4 geometry witness",
+      "path": "analysis_outputs/source_audit/bitcoin4_issue24_geometry_witness/bitcoin4_issue24_geometry_witness_overlay.jpg"
+    },
+    {
+      "title": "priority crop comparison",
+      "path": "analysis_outputs/source_audit/priority_crops_bitcoin4_comparison/priority_crops_bitcoin4_comparison_sheet.jpg"
+    }
+  ],
+  "layoutSources": [
+    {
+      "slug": "issue24_toxic_af",
+      "label": "Issue 24 / BITCOIN IS TOXIC AF",
+      "path": "magazine.pdf",
+      "pageCount": 8
+    },
+    {
+      "slug": "issue26",
+      "label": "Issue_26.pdf",
+      "path": "private_inputs/Desktop/Issue_26.pdf",
+      "pageCount": 5
+    },
+    {
+      "slug": "bitcoin3",
+      "label": "bitcoin3.pdf",
+      "path": "private_inputs/Desktop/bitcoin3.pdf",
+      "pageCount": 8
+    }
+  ],
+  "styleSummary": {
+    "issue24": {
+      "maxHighlightScore": 69,
+      "highlighterLikePages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "orangeBandPages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "darkOrGreyBandPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "smallCapsuleLikePages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "veryColorfulPages": [
+        8
+      ]
+    },
+    "issue26": {
+      "maxHighlightScore": 29,
+      "highlighterLikePages": [
+        4,
+        5
+      ],
+      "orangeBandPages": [
+        4,
+        5
+      ],
+      "darkOrGreyBandPages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "smallCapsuleLikePages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "veryColorfulPages": []
+    },
+    "issue27": {
+      "maxHighlightScore": 32,
+      "highlighterLikePages": [
+        1
+      ],
+      "orangeBandPages": [
+        1
+      ],
+      "darkOrGreyBandPages": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "smallCapsuleLikePages": [
+        1,
+        5,
+        8
+      ],
+      "veryColorfulPages": []
+    },
+    "bitcoin3": {
+      "maxHighlightScore": 63,
+      "highlighterLikePages": [
+        7,
+        8
+      ],
+      "orangeBandPages": [
+        7,
+        8
+      ],
+      "darkOrGreyBandPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "smallCapsuleLikePages": [
+        4,
+        6,
+        7,
+        8
+      ],
+      "veryColorfulPages": [
+        7,
+        8
+      ]
+    },
+    "bitcoin4": {
+      "maxHighlightScore": 111,
+      "highlighterLikePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "orangeBandPages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "darkOrGreyBandPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "smallCapsuleLikePages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "veryColorfulPages": [
+        8
+      ]
+    }
+  },
+  "bodyHighlighterSummary": {
+    "bitcoin3": {
+      "orangeLineBands": 4,
+      "darkLineBands": 4,
+      "sustainedGrammarPages": [
+        8
+      ],
+      "maxGrammarScore": 7
+    },
+    "issue24_toxic_af": {
+      "orangeLineBands": 28,
+      "darkLineBands": 14,
+      "sustainedGrammarPages": [
+        3,
+        4,
+        6,
+        7
+      ],
+      "maxGrammarScore": 19
+    },
+    "issue26": {
+      "orangeLineBands": 11,
+      "darkLineBands": 4,
+      "sustainedGrammarPages": [
+        3,
+        4
+      ],
+      "maxGrammarScore": 14
+    },
+    "issue27": {
+      "orangeLineBands": 2,
+      "darkLineBands": 3,
+      "sustainedGrammarPages": [],
+      "maxGrammarScore": 3
+    }
+  },
+  "sourceGate": {
+    "decision": "No comparison PDF passes the source gate for Issue 24 extraction geometry. bitcoin4 remains a low-res Issue 24 fidelity witness; bitcoin3, Issue_26, and Issue_27 remain style-only comparison articles.",
+    "promotedForExtractionGeometry": 0,
+    "styleOnlyComparisonCount": 3
+  },
+  "capsuleRecurrence": {
+    "assessment": [
+      "Individual red/orange blobs in the comparison articles can look capsule-like, so single-component matching is too permissive.",
+      "The five-point zigzag sequence check recovers the Issue 24 p73/p79 capsule motif and finds no strong five-point sequence recurrence in the independent comparison articles Issue_26, Issue_27, or bitcoin3 at the current threshold.",
+      "bitcoin4 is a lower-resolution Issue 24 witness, so its matches validate the duplicate/witness role rather than proving the motif is generic.",
+      "This supports treating the five-capsule chain as Issue-24-specific provenance/order evidence, but it still does not make the capsules a direct selector."
+    ],
+    "comparisonStrongFivePointSequenceMatches": 0,
+    "lowResWitnessStrongFivePointSequenceMatches": 2
+  },
+  "bitcoin4Witness": {
+    "decision": "bitcoin4.pdf does not repair the p78 -> p76 G5/O5 registration. In its own low-res geometry, the reflected p78 frame still clips O5, but it sits farther from trusted G5 than the current best scan.",
+    "o5OverlapVsTarget": 0.43908,
+    "g5HorizontalGapPx": 84.098,
+    "nextMove": "Keep bitcoin4.pdf as a source-fidelity witness only. Do not use it as geometry truth unless a separate rule explains why G5 should be ignored or re-registered."
+  },
+  "priorityCropsBitcoin4": {
+    "conclusion": "bitcoin4 preserves the same priority regions well enough for rough visual source-fidelity checks, but its lower resolution and page-specific distortion keep it unsuitable as geometry truth or extraction material.",
+    "nextMove": "Use the crop pack as the future-source baseline, and only revisit bitcoin4 if a new external clue names the lower-quality scan or says to compare source differences directly."
+  },
+  "gateRows": [
+    {
+      "gate": "R1 source identity",
+      "status": "FAIL/PARTIAL",
+      "evidence": "Independent comparison PDFs are different Max/OVERDOSE articles; bitcoin4 is a lower-resolution Issue 24 witness, not a better geometry source."
+    },
+    {
+      "gate": "R2 target preservation",
+      "status": "PASS as provenance",
+      "evidence": "Issue 24 body-highlighter grammar and five-capsule sequence remain distinctive against independent controls, supporting the target surface as puzzle-specific."
+    },
+    {
+      "gate": "R3 unit/order evidence",
+      "status": "FAIL",
+      "evidence": "No comparison report or source gate names a word/letter/line/font/edge/fold order; comparison layouts give style/provenance only."
+    },
+    {
+      "gate": "R4 orientation/source discipline",
+      "status": "PASS as audited",
+      "evidence": "Comparison PDFs are classified as style-only or low-res witness before use; Issue 24 extraction geometry remains tied to the locked high-res scan and rotate180 source-image discipline."
+    },
+    {
+      "gate": "R5 controlled improvement",
+      "status": "FAIL",
+      "evidence": "comparison PDFs promoted for Issue 24 geometry=0; independent strong five-point capsule sequences=0; bitcoin4 keeps O5 partial overlap but leaves G5 gap=84.098 px."
+    }
+  ],
+  "decision": "comparison_overdose_layout_closed_for_current_scan_as_r3_selector",
+  "nextMove": "Keep comparison PDFs as style controls, provenance checks, and source-validation witnesses only. Reopen only if a raw clue explicitly references another issue/article/layout motif, or if a materially better source passes R1-R5 and names/supplies the extraction unit/order."
+}

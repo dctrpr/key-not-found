@@ -1,0 +1,305 @@
+{
+  "createdAt": "2026-05-20T19:56:24",
+  "scope": "3D fold non-boundary ordering audit; no text extraction/key derivation",
+  "sources": {
+    "mapData": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "anchorData": "analysis_outputs/source_audit/page76_anchor_adjacency_units/page76_anchor_adjacency_units.json",
+    "viewer": "analysis_outputs/3d_article_map/viewer.js"
+  },
+  "foldPositionsFromViewer": {
+    "75": [
+      -280.0,
+      320.0,
+      -130.0,
+      0.42
+    ],
+    "79": [
+      280.0,
+      320.0,
+      -130.0,
+      -0.42
+    ],
+    "76": [
+      -280.0,
+      -380.0,
+      130.0,
+      0.42
+    ],
+    "78": [
+      280.0,
+      -380.0,
+      130.0,
+      -0.42
+    ],
+    "77": [
+      0.0,
+      -20.0,
+      330.0,
+      0.0
+    ],
+    "80": [
+      610.0,
+      -20.0,
+      420.0,
+      -0.2
+    ]
+  },
+  "overlay": "analysis_outputs/3d_article_map/fold_nonboundary_ordering/fold_nonboundary_ordering_plan.jpg",
+  "activeAnchors": [
+    {
+      "id": "buying_dip",
+      "label": "buying the dip",
+      "color": "orange",
+      "box": [
+        1328,
+        2160,
+        1760,
+        2226
+      ],
+      "center": [
+        1544.0,
+        2193.0
+      ],
+      "world": [
+        -225.36,
+        -503.42,
+        105.6
+      ]
+    },
+    {
+      "id": "one_billion",
+      "label": "$1 billion",
+      "color": "black",
+      "box": [
+        430,
+        2400,
+        690,
+        2447
+      ],
+      "center": [
+        560.0,
+        2423.5
+      ],
+      "world": [
+        -423.03,
+        -554.13,
+        193.87
+      ]
+    },
+    {
+      "id": "volcano_bonds",
+      "label": "Volcano Bonds",
+      "color": "black",
+      "box": [
+        795,
+        2544,
+        1196,
+        2592
+      ],
+      "center": [
+        995.5,
+        2568.0
+      ],
+      "world": [
+        -335.54,
+        -585.92,
+        154.8
+      ]
+    },
+    {
+      "id": "shitcoiner_heart",
+      "label": "shitcoiner at heart",
+      "color": "orange",
+      "box": [
+        1040,
+        2932,
+        1661,
+        2982
+      ],
+      "center": [
+        1350.5,
+        2957.0
+      ],
+      "world": [
+        -264.23,
+        -671.5,
+        122.96
+      ]
+    }
+  ],
+  "orders": {
+    "page76VisualTopToBottom": [
+      "buying_dip",
+      "one_billion",
+      "volcano_bonds",
+      "shitcoiner_heart"
+    ],
+    "foldDepthFrontToBackZLowToHigh": [
+      "buying_dip",
+      "shitcoiner_heart",
+      "volcano_bonds",
+      "one_billion"
+    ],
+    "foldXLeftToRight": [
+      "one_billion",
+      "volcano_bonds",
+      "shitcoiner_heart",
+      "buying_dip"
+    ]
+  },
+  "pairSymmetry": [
+    {
+      "pair": [
+        75,
+        79
+      ],
+      "sameFoldRow": true,
+      "sameFoldDepth": true,
+      "rotations": [
+        0.42,
+        -0.42
+      ]
+    },
+    {
+      "pair": [
+        76,
+        78
+      ],
+      "sameFoldRow": true,
+      "sameFoldDepth": true,
+      "rotations": [
+        0.42,
+        -0.42
+      ]
+    },
+    {
+      "pair": [
+        79,
+        76
+      ],
+      "sameFoldRow": false,
+      "sameFoldDepth": false,
+      "rotations": [
+        -0.42,
+        0.42
+      ]
+    }
+  ],
+  "originalP79Pills": [
+    {
+      "id": "p79_pill_1_original",
+      "point": [
+        171.0,
+        2408.0
+      ],
+      "world": [
+        41.71,
+        149.28,
+        -190.42
+      ]
+    },
+    {
+      "id": "p79_pill_2_original",
+      "point": [
+        421.5,
+        2454.5
+      ],
+      "world": [
+        92.03,
+        139.05,
+        -167.95
+      ]
+    },
+    {
+      "id": "p79_pill_3_original",
+      "point": [
+        606.0,
+        2608.5
+      ],
+      "world": [
+        129.09,
+        105.17,
+        -151.4
+      ]
+    },
+    {
+      "id": "p79_pill_4_original",
+      "point": [
+        437.0,
+        2780.5
+      ],
+      "world": [
+        95.14,
+        67.33,
+        -166.56
+      ]
+    },
+    {
+      "id": "p79_pill_5_original",
+      "point": [
+        183.5,
+        2968.0
+      ],
+      "world": [
+        44.22,
+        26.08,
+        -189.3
+      ]
+    }
+  ],
+  "closeReflectionRows": [
+    {
+      "id": "79_76_5",
+      "source": 79,
+      "target": 76,
+      "textPreview": "trolling the International Monetary Fund (IMF) on Twitter? taunting them, telling them he'",
+      "sourceWorld": [
+        245.72,
+        210.88,
+        -121.22
+      ],
+      "targetWorld": [
+        -282.97,
+        -491.01,
+        155.42
+      ],
+      "sourceToTargetFoldDistance": 921.25,
+      "bestActiveAnchor": {
+        "anchor": "buying_dip",
+        "overlapArea": 7270.56,
+        "targetWorldDistance": 77.17
+      }
+    },
+    {
+      "id": "79_76_4",
+      "source": 79,
+      "target": 76,
+      "textPreview": "Have you seen the president of El Salvador",
+      "sourceWorld": [
+        283.99,
+        227.05,
+        -104.13
+      ],
+      "targetWorld": [
+        -282.97,
+        -474.0,
+        155.42
+      ],
+      "sourceToTargetFoldDistance": 938.23,
+      "bestActiveAnchor": {
+        "anchor": "buying_dip",
+        "overlapArea": 0.0,
+        "targetWorldDistance": 81.65
+      }
+    }
+  ],
+  "assessment": [
+    "The viewer's fold layout itself pairs pages 75/79 and 76/78 as symmetric rows; page 79 and page 76 are diagonal in the fold display, not a direct folded pair.",
+    "Within page 76, the active O-B-B-O anchors keep ordinary page order top-to-bottom. The alternative depth ordering is just a yaw artifact of the page-76 plane, not an independent clue.",
+    "Original p79 pill markers sit on the top-row p79 plane in the fold layout; their mirrored copies on page 76 are already an overlay hypothesis, not a new fold-view order.",
+    "Reflected rectangles that land near the active lower corridor remain far apart from their source rectangles in fold-world distance; the 3D fold view does not create a new physical contact or ordering cue.",
+    "This keeps the 3D fold view useful as orientation/provenance evidence only. A new selector must come from source/physical instruction, not another fold-display order."
+  ],
+  "decision": "Do not promote 3D fold display ordering to extraction evidence; it is an orientation view.",
+  "nextMove": "Stop deriving selectors from display geometry; the next bounded pass should audit source/provenance clues for an explicit extraction instruction or compare physical/source images if available."
+}

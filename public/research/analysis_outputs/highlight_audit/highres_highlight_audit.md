@@ -1,0 +1,167 @@
+# High-Resolution Highlight Audit
+
+Scope: treat the high-resolution magazine page images as the visual source of truth for highlight locations. Text is extracted from the mapped OCR word layer, so every crop needs manual visual confirmation where OCR is noisy.
+
+## Contact Sheets
+- visual orange crops: `analysis_outputs/highlight_audit/visual_orange_contact_sheet.jpg`
+- annotated orange/grey phrase crops: `analysis_outputs/highlight_audit/annotated_color_contact_sheet.jpg`
+
+## Visual Orange Boxes From High-Res Source
+- p75_orange_1 p75 words=[59] OCR=`RSyiERSitieisumios` crop=`analysis_outputs/highlight_audit/p75_orange_1_crop.jpg`
+- p75_orange_2 p75 words=[60] OCR=`aiaourmieurosess` crop=`analysis_outputs/highlight_audit/p75_orange_2_crop.jpg`
+- p75_orange_3 p75 words=[163] OCR=`B¥SR—Mof` crop=`analysis_outputs/highlight_audit/p75_orange_3_crop.jpg`
+- p75_orange_4 p75 words=[] OCR=`` crop=`analysis_outputs/highlight_audit/p75_orange_4_crop.jpg`
+- p75_orange_5 p75 words=[] OCR=`` crop=`analysis_outputs/highlight_audit/p75_orange_5_crop.jpg`
+- p75_orange_6 p75 words=[194] OCR=`(MRERREIGStY` crop=`analysis_outputs/highlight_audit/p75_orange_6_crop.jpg`
+- p75_orange_7 p75 words=[210, 211, 212] OCR=`Keep your dignity.` crop=`analysis_outputs/highlight_audit/p75_orange_7_crop.jpg`
+- p75_orange_8 p75 words=[217, 218] OCR=`the BSR` crop=`analysis_outputs/highlight_audit/p75_orange_8_crop.jpg`
+- p76_orange_1 p76 words=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] OCR=`Get some toxicity. Get some bitcoin. Open your heart to` crop=`analysis_outputs/highlight_audit/p76_orange_1_crop.jpg`
+- p76_orange_2 p76 words=[11] OCR=`Biteoiny` crop=`analysis_outputs/highlight_audit/p76_orange_2_crop.jpg`
+- p76_orange_3 p76 words=[] OCR=`` crop=`analysis_outputs/highlight_audit/p76_orange_3_crop.jpg`
+- p76_orange_4 p76 words=[182] OCR=`ByiiREeraipy"` crop=`analysis_outputs/highlight_audit/p76_orange_4_crop.jpg`
+- p76_orange_5 p76 words=[264] OCR=`siukbeodmensertslveaarty` crop=`analysis_outputs/highlight_audit/p76_orange_5_crop.jpg`
+- p77_orange_1 p77 words=[67, 68, 69] OCR=`este) stat rat` crop=`analysis_outputs/highlight_audit/p77_orange_1_crop.jpg`
+- p77_orange_2 p77 words=[116, 117, 118, 119, 120] OCR=`harass old women and chil` crop=`analysis_outputs/highlight_audit/p77_orange_2_crop.jpg`
+- p78_orange_1 p78 words=[64, 65] OCR=`B mb` crop=`analysis_outputs/highlight_audit/p78_orange_1_crop.jpg`
+- p78_orange_2 p78 words=[105] OCR=`AijeriCaulertyssom` crop=`analysis_outputs/highlight_audit/p78_orange_2_crop.jpg`
+- p78_orange_3 p78 words=[106, 107, 108, 112, 113, 114, 115, 116] OCR=`any for gnample: that some estimate cost Suez` crop=`analysis_outputs/highlight_audit/p78_orange_3_crop.jpg`
+- p78_orange_4 p78 words=[168, 169] OCR=`@ nrot` crop=`analysis_outputs/highlight_audit/p78_orange_4_crop.jpg`
+- p79_orange_1 p79 words=[1, 2, 3, 4, 5, 6, 7, 8, 30, 31, 32, 33, 34, 35, 36, 37] OCR=`love — because bitcoin is infinitely more efficient: ORMBONG — the overall energy consumption, even while` crop=`analysis_outputs/highlight_audit/p79_orange_1_crop.jpg`
+- p79_orange_2 p79 words=[52, 53, 54, 55, 59, 60, 61, 62] OCR=`IAs inteba toons Iebaices doing, our energy consumption` crop=`analysis_outputs/highlight_audit/p79_orange_2_crop.jpg`
+- p79_orange_3 p79 words=[56, 57, 58] OCR=`SlhSIeneREY In so` crop=`analysis_outputs/highlight_audit/p79_orange_3_crop.jpg`
+- p79_orange_4 p79 words=[174, 175, 176, 177, 178, 179, 180, 181, 182, 183] OCR=`Everyone will Live their own experience in the rabbit holer` crop=`analysis_outputs/highlight_audit/p79_orange_4_crop.jpg`
+- p79_orange_5 p79 words=[] OCR=`` crop=`analysis_outputs/highlight_audit/p79_orange_5_crop.jpg`
+- p79_orange_6 p79 words=[] OCR=`` crop=`analysis_outputs/highlight_audit/p79_orange_6_crop.jpg`
+- p79_orange_7 p79 words=[] OCR=`` crop=`analysis_outputs/highlight_audit/p79_orange_7_crop.jpg`
+- p79_orange_8 p79 words=[] OCR=`` crop=`analysis_outputs/highlight_audit/p79_orange_8_crop.jpg`
+- p79_orange_9 p79 words=[] OCR=`` crop=`analysis_outputs/highlight_audit/p79_orange_9_crop.jpg`
+- p79_orange_10 p79 words=[] OCR=`` crop=`analysis_outputs/highlight_audit/p79_orange_10_crop.jpg`
+- p80_orange_1 p80 words=[] OCR=`` crop=`analysis_outputs/highlight_audit/p80_orange_1_crop.jpg`
+- p80_orange_2 p80 words=[] OCR=`` crop=`analysis_outputs/highlight_audit/p80_orange_2_crop.jpg`
+
+## Annotated Color Phrase Crops
+- annotated_01_orange p75 annotated-orange status=text-mismatch-check-crop expected=`They are the sum of all our neuroses` OCR=`system of the global economy. RSyiERSitieisumios aiaourmieurosess The` crop=`analysis_outputs/highlight_audit/annotated_01_orange_crop.jpg`
+- annotated_02_grey p75 annotated-grey status=text-mismatch-check-crop expected=`money printers, banking terrorists, stock traders, central bank arsonists` OCR=`of errorists, stock traders, central bank arsonists, MERBESiad- 1` crop=`analysis_outputs/highlight_audit/annotated_02_grey_crop.jpg`
+- annotated_03_orange p75 annotated-orange status=text-mismatch-check-crop expected=`Layer 1` OCR=`B¥SR—Mof the` crop=`analysis_outputs/highlight_audit/annotated_03_orange_crop.jpg`
+- annotated_04 p75 annotated-orange status=unmatched-in-canonical-model expected=`Fact: It's Layer 1 for every great thing that's ever been invented or discovered` OCR=`` crop=``
+- annotated_05_orange p75 annotated-orange status=text-mismatch-check-crop expected=`Maximalist` OCR=`Keep` crop=`analysis_outputs/highlight_audit/annotated_05_orange_crop.jpg`
+- annotated_06 p75 annotated-grey status=unmatched-in-canonical-model expected=`Don't fall for shitcoinery` OCR=`` crop=``
+- annotated_07_orange p75 annotated-orange status=text-mismatch-check-crop expected=`Keep your dignity` OCR=`be digging blindly` crop=`analysis_outputs/highlight_audit/annotated_07_orange_crop.jpg`
+- annotated_08_orange p75 annotated-orange status=text-mismatch-check-crop expected=`Layer 1` OCR=`B¥SR—Mof the` crop=`analysis_outputs/highlight_audit/annotated_08_orange_crop.jpg`
+- annotated_09_orange p76 annotated-orange status=text-mismatch-check-crop expected=`Get some toxicity. Get some bitcoin. Open your heart to Bitcoin` OCR=`OVERDOSE Get some toxicity. Get some bitcoin. Open your heart to` crop=`analysis_outputs/highlight_audit/annotated_09_orange_crop.jpg`
+- annotated_10_grey p76 annotated-grey status=text-mismatch-check-crop expected=`Gotta be this way. Forty years of dumb post-1971 fiat money nonsense` OCR=`stake. Gotta be S way. Forty years of dumb post-1971 flat money RRECECy` crop=`analysis_outputs/highlight_audit/annotated_10_grey_crop.jpg`
+- annotated_11_orange p76 annotated-orange status=text-mismatch-check-crop expected=`by the rancid catnip of fiat money` OCR=`puts an end to the paper chase` crop=`analysis_outputs/highlight_audit/annotated_11_orange_crop.jpg`
+- annotated_12 p76 annotated-grey status=unmatched-in-canonical-model expected=`It's a stun gun to the genitals` OCR=`` crop=``
+- annotated_13_orange p76 annotated-orange status=text-mismatch-check-crop expected=`buying the dip` OCR=`Bukele when he` crop=`analysis_outputs/highlight_audit/annotated_13_orange_crop.jpg`
+- annotated_14_grey p76 annotated-grey status=text-mismatch-check-crop expected=`$1 billion` OCR=`sell billions` crop=`analysis_outputs/highlight_audit/annotated_14_grey_crop.jpg`
+- annotated_15_grey p76 annotated-grey status=text-mismatch-check-crop expected=`Volcano Bonds` OCR=`get rid` crop=`analysis_outputs/highlight_audit/annotated_15_grey_crop.jpg`
+- annotated_17_orange p77 annotated-orange status=text-mismatch-check-crop expected=`Toxic Bitcoin Maximalists within six months` OCR=`toa mind-bending 100,000 and se Se)` crop=`analysis_outputs/highlight_audit/annotated_17_orange_crop.jpg`
+- annotated_18 p77 annotated-grey status=unmatched-in-canonical-model expected=`Sorry Bhutan, you fell for that snake oil salesman over at XRP. Get ready to experience shitcoin hell` OCR=`` crop=``
+- annotated_19_grey p77 annotated-grey status=text-mismatch-check-crop expected=`Faketoshi` OCR=`downhill` crop=`analysis_outputs/highlight_audit/annotated_19_grey_crop.jpg`
+- annotated_20_orange p77 annotated-orange status=text-mismatch-check-crop expected=`harass old women and children` OCR=`London legal hacks who harass` crop=`analysis_outputs/highlight_audit/annotated_20_orange_crop.jpg`
+- annotated_21_grey p77 annotated-grey status=text-mismatch-check-crop expected=`shitcoiners, useless Royals` OCR=`and protects demented` crop=`analysis_outputs/highlight_audit/annotated_21_grey_crop.jpg`
+- annotated_22_grey p77 annotated-grey status=text-mismatch-check-crop expected=`it does this by monetizing` OCR=`war, violence, hatred and Leta` crop=`analysis_outputs/highlight_audit/annotated_22_grey_crop.jpg`
+- annotated_23 p78 annotated-orange status=unmatched-in-canonical-model expected=`The number don't lie` OCR=`` crop=``
+- annotated_24_grey p78 annotated-grey status=text-mismatch-check-crop expected=`gargantuanly wasteful` OCR=`ms) Cargantuanly` crop=`analysis_outputs/highlight_audit/annotated_24_grey_crop.jpg`
+- annotated_25_grey p78 annotated-grey status=text-mismatch-check-crop expected=`money printing` OCR=`printing Ememwars` crop=`analysis_outputs/highlight_audit/annotated_25_grey_crop.jpg`
+- annotated_26_grey p78 annotated-grey status=text-mismatch-check-crop expected=`wars to keep it going` OCR=`eeeeNg — all in the` crop=`analysis_outputs/highlight_audit/annotated_26_grey_crop.jpg`
+- annotated_27 p78 annotated-orange status=unmatched-in-canonical-model expected=`America left $85 BILLION worth of hate toy in Afghanistan` OCR=`` crop=``
+- annotated_28_orange p78 annotated-orange status=text-mismatch-check-crop expected=`$2 trillion fiat cuck-bucks` OCR=`money with perfect bitcoin. Remove` crop=`analysis_outputs/highlight_audit/annotated_28_orange_crop.jpg`
+- annotated_29_grey p79 annotated-grey status=text-mismatch-check-crop expected=`war and violence economy` OCR=`To wrap this up,` crop=`analysis_outputs/highlight_audit/annotated_29_grey_crop.jpg`
+- annotated_30 p79 annotated-orange status=unmatched-in-canonical-model expected=`infinitely more efficient to transact and store wealth in than fiat, shitcoin or gold` OCR=`` crop=``
+- annotated_31 p79 annotated-orange status=unmatched-in-canonical-model expected=`That's right, Bitcoin will take all the energy` OCR=`` crop=``
+- annotated_32_orange p79 annotated-orange status=text-mismatch-check-crop expected=`Everyone will live their own experience in the rabbit hole. We are getting our souls back and our minds` OCR=`Amsterdam during their 1969 bed-in. Everyone will Live their own experience in the rabbit holer Stacy and I have` crop=`analysis_outputs/highlight_audit/annotated_32_orange_crop.jpg`
+
+## Visual Orange To Annotated Matches
+- p75_orange_1 p75 OCR=`RSyiERSitieisumios` -> annotated_01_orange annotated-orange overlap=0.852 textHit=False expected=`They are the sum of all our neuroses`
+- p75_orange_2 p75 OCR=`aiaourmieurosess` -> annotated_01_orange annotated-orange overlap=0.758 textHit=False expected=`They are the sum of all our neuroses`
+- p75_orange_3 p75 OCR=`B¥SR—Mof` -> annotated_03_orange annotated-orange overlap=0.709 textHit=False expected=`Layer 1`; annotated_08_orange annotated-orange overlap=0.709 textHit=False expected=`Layer 1`
+- p75_orange_4 p75 OCR=`` -> no annotated match
+- p75_orange_5 p75 OCR=`` -> no annotated match
+- p75_orange_6 p75 OCR=`(MRERREIGStY` -> no annotated match
+- p75_orange_7 p75 OCR=`Keep your dignity.` -> annotated_05_orange annotated-orange overlap=0.846 textHit=False expected=`Maximalist`; annotated_07_orange annotated-orange overlap=0.0 textHit=True expected=`Keep your dignity`
+- p75_orange_8 p75 OCR=`the BSR` -> no annotated match
+- p76_orange_1 p76 OCR=`Get some toxicity. Get some bitcoin. Open your heart to` -> annotated_09_orange annotated-orange overlap=0.999 textHit=True expected=`Get some toxicity. Get some bitcoin. Open your heart to Bitcoin`
+- p76_orange_2 p76 OCR=`Biteoiny` -> no annotated match
+- p76_orange_3 p76 OCR=`` -> no annotated match
+- p76_orange_4 p76 OCR=`ByiiREeraipy"` -> no annotated match
+- p76_orange_5 p76 OCR=`siukbeodmensertslveaarty` -> no annotated match
+- p77_orange_1 p77 OCR=`este) stat rat` -> no annotated match
+- p77_orange_2 p77 OCR=`harass old women and chil` -> annotated_20_orange annotated-orange overlap=0.104 textHit=True expected=`harass old women and children`
+- p78_orange_1 p78 OCR=`B mb` -> no annotated match
+- p78_orange_2 p78 OCR=`AijeriCaulertyssom` -> no annotated match
+- p78_orange_3 p78 OCR=`any for gnample: that some estimate cost Suez` -> no annotated match
+- p78_orange_4 p78 OCR=`@ nrot` -> no annotated match
+- p79_orange_1 p79 OCR=`love — because bitcoin is infinitely more efficient: ORMBONG — the overall energy consumption, even while` -> no annotated match
+- p79_orange_2 p79 OCR=`IAs inteba toons Iebaices doing, our energy consumption` -> no annotated match
+- p79_orange_3 p79 OCR=`SlhSIeneREY In so` -> no annotated match
+- p79_orange_4 p79 OCR=`Everyone will Live their own experience in the rabbit holer` -> annotated_32_orange annotated-orange overlap=0.939 textHit=False expected=`Everyone will live their own experience in the rabbit hole. We are getting our souls back and our minds`
+- p79_orange_5 p79 OCR=`` -> annotated_32_orange annotated-orange overlap=0.959 textHit=False expected=`Everyone will live their own experience in the rabbit hole. We are getting our souls back and our minds`
+- p79_orange_6 p79 OCR=`` -> no annotated match
+- p79_orange_7 p79 OCR=`` -> no annotated match
+- p79_orange_8 p79 OCR=`` -> no annotated match
+- p79_orange_9 p79 OCR=`` -> no annotated match
+- p79_orange_10 p79 OCR=`` -> no annotated match
+- p80_orange_1 p80 OCR=`` -> no annotated match
+- p80_orange_2 p80 OCR=`` -> no annotated match
+
+## Needs Manual Attention
+- annotated_01_orange p75 annotated-orange: text-mismatch-check-crop expected=`They are the sum of all our neuroses` OCR=`system of the global economy. RSyiERSitieisumios aiaourmieurosess The`
+- annotated_02_grey p75 annotated-grey: text-mismatch-check-crop expected=`money printers, banking terrorists, stock traders, central bank arsonists` OCR=`of errorists, stock traders, central bank arsonists, MERBESiad- 1`
+- annotated_03_orange p75 annotated-orange: text-mismatch-check-crop expected=`Layer 1` OCR=`B¥SR—Mof the`
+- annotated_04 p75 annotated-orange: unmatched-in-canonical-model expected=`Fact: It's Layer 1 for every great thing that's ever been invented or discovered` OCR=``
+- annotated_05_orange p75 annotated-orange: text-mismatch-check-crop expected=`Maximalist` OCR=`Keep`
+- annotated_06 p75 annotated-grey: unmatched-in-canonical-model expected=`Don't fall for shitcoinery` OCR=``
+- annotated_07_orange p75 annotated-orange: text-mismatch-check-crop expected=`Keep your dignity` OCR=`be digging blindly`
+- annotated_08_orange p75 annotated-orange: text-mismatch-check-crop expected=`Layer 1` OCR=`B¥SR—Mof the`
+- annotated_09_orange p76 annotated-orange: text-mismatch-check-crop expected=`Get some toxicity. Get some bitcoin. Open your heart to Bitcoin` OCR=`OVERDOSE Get some toxicity. Get some bitcoin. Open your heart to`
+- annotated_10_grey p76 annotated-grey: text-mismatch-check-crop expected=`Gotta be this way. Forty years of dumb post-1971 fiat money nonsense` OCR=`stake. Gotta be S way. Forty years of dumb post-1971 flat money RRECECy`
+- annotated_11_orange p76 annotated-orange: text-mismatch-check-crop expected=`by the rancid catnip of fiat money` OCR=`puts an end to the paper chase`
+- annotated_12 p76 annotated-grey: unmatched-in-canonical-model expected=`It's a stun gun to the genitals` OCR=``
+- annotated_13_orange p76 annotated-orange: text-mismatch-check-crop expected=`buying the dip` OCR=`Bukele when he`
+- annotated_14_grey p76 annotated-grey: text-mismatch-check-crop expected=`$1 billion` OCR=`sell billions`
+- annotated_15_grey p76 annotated-grey: text-mismatch-check-crop expected=`Volcano Bonds` OCR=`get rid`
+- annotated_17_orange p77 annotated-orange: text-mismatch-check-crop expected=`Toxic Bitcoin Maximalists within six months` OCR=`toa mind-bending 100,000 and se Se)`
+- annotated_18 p77 annotated-grey: unmatched-in-canonical-model expected=`Sorry Bhutan, you fell for that snake oil salesman over at XRP. Get ready to experience shitcoin hell` OCR=``
+- annotated_19_grey p77 annotated-grey: text-mismatch-check-crop expected=`Faketoshi` OCR=`downhill`
+- annotated_20_orange p77 annotated-orange: text-mismatch-check-crop expected=`harass old women and children` OCR=`London legal hacks who harass`
+- annotated_21_grey p77 annotated-grey: text-mismatch-check-crop expected=`shitcoiners, useless Royals` OCR=`and protects demented`
+- annotated_22_grey p77 annotated-grey: text-mismatch-check-crop expected=`it does this by monetizing` OCR=`war, violence, hatred and Leta`
+- annotated_23 p78 annotated-orange: unmatched-in-canonical-model expected=`The number don't lie` OCR=``
+- annotated_24_grey p78 annotated-grey: text-mismatch-check-crop expected=`gargantuanly wasteful` OCR=`ms) Cargantuanly`
+- annotated_25_grey p78 annotated-grey: text-mismatch-check-crop expected=`money printing` OCR=`printing Ememwars`
+- annotated_26_grey p78 annotated-grey: text-mismatch-check-crop expected=`wars to keep it going` OCR=`eeeeNg — all in the`
+- annotated_27 p78 annotated-orange: unmatched-in-canonical-model expected=`America left $85 BILLION worth of hate toy in Afghanistan` OCR=``
+- annotated_28_orange p78 annotated-orange: text-mismatch-check-crop expected=`$2 trillion fiat cuck-bucks` OCR=`money with perfect bitcoin. Remove`
+- annotated_29_grey p79 annotated-grey: text-mismatch-check-crop expected=`war and violence economy` OCR=`To wrap this up,`
+- annotated_30 p79 annotated-orange: unmatched-in-canonical-model expected=`infinitely more efficient to transact and store wealth in than fiat, shitcoin or gold` OCR=``
+- annotated_31 p79 annotated-orange: unmatched-in-canonical-model expected=`That's right, Bitcoin will take all the energy` OCR=``
+- annotated_32_orange p79 annotated-orange: text-mismatch-check-crop expected=`Everyone will live their own experience in the rabbit hole. We are getting our souls back and our minds` OCR=`Amsterdam during their 1969 bed-in. Everyone will Live their own experience in the rabbit holer Stacy and I have`
+- p75_orange_4 p75: high-res orange box has no matched annotation; OCR=``
+- p75_orange_5 p75: high-res orange box has no matched annotation; OCR=``
+- p75_orange_6 p75: high-res orange box has no matched annotation; OCR=`(MRERREIGStY`
+- p75_orange_8 p75: high-res orange box has no matched annotation; OCR=`the BSR`
+- p76_orange_2 p76: high-res orange box has no matched annotation; OCR=`Biteoiny`
+- p76_orange_3 p76: high-res orange box has no matched annotation; OCR=``
+- p76_orange_4 p76: high-res orange box has no matched annotation; OCR=`ByiiREeraipy"`
+- p76_orange_5 p76: high-res orange box has no matched annotation; OCR=`siukbeodmensertslveaarty`
+- p77_orange_1 p77: high-res orange box has no matched annotation; OCR=`este) stat rat`
+- p78_orange_1 p78: high-res orange box has no matched annotation; OCR=`B mb`
+- p78_orange_2 p78: high-res orange box has no matched annotation; OCR=`AijeriCaulertyssom`
+- p78_orange_3 p78: high-res orange box has no matched annotation; OCR=`any for gnample: that some estimate cost Suez`
+- p78_orange_4 p78: high-res orange box has no matched annotation; OCR=`@ nrot`
+- p79_orange_1 p79: high-res orange box has no matched annotation; OCR=`love — because bitcoin is infinitely more efficient: ORMBONG — the overall energy consumption, even while`
+- p79_orange_2 p79: high-res orange box has no matched annotation; OCR=`IAs inteba toons Iebaices doing, our energy consumption`
+- p79_orange_3 p79: high-res orange box has no matched annotation; OCR=`SlhSIeneREY In so`
+- p79_orange_6 p79: high-res orange box has no matched annotation; OCR=``
+- p79_orange_7 p79: high-res orange box has no matched annotation; OCR=``
+- p79_orange_8 p79: high-res orange box has no matched annotation; OCR=``
+- p79_orange_9 p79: high-res orange box has no matched annotation; OCR=``
+- p79_orange_10 p79: high-res orange box has no matched annotation; OCR=``
+- p80_orange_1 p80: high-res orange box has no matched annotation; OCR=``
+- p80_orange_2 p80: high-res orange box has no matched annotation; OCR=``
+
+## Assessment
+- The high-res orange boxes are now individually cropped and indexed. Use the crop sheets for exact visual confirmation before treating any highlighted phrase as canonical.
+- OCR text remains imperfect in several highlighted regions, especially page 79 and page 80. The manually supplied transcript should override OCR only after visually checking the crop.
+- Grey/black highlights are represented through annotated phrase crops, because automatic black-box detection is not reliable enough to be a source of truth without manual confirmation.

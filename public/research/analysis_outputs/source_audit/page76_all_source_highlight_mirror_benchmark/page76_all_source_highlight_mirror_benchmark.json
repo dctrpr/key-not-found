@@ -1,0 +1,1265 @@
+{
+  "createdAt": "2026-05-20T09:55:38",
+  "scope": "Raw hflip all non-76 Issue 24 orange/grey highlight boxes onto page 76; geometry benchmark only; no OCR/key derivation.",
+  "targetPage": 76,
+  "targetCount": 10,
+  "targets": [
+    {
+      "id": "O1",
+      "kind": "orange",
+      "index": 1,
+      "label": "Get some toxicity. Get some bitcoin. Open your heart to",
+      "box": [
+        808,
+        373,
+        2215,
+        425
+      ]
+    },
+    {
+      "id": "O2",
+      "kind": "orange",
+      "index": 2,
+      "label": "Bitcoin.",
+      "box": [
+        813,
+        451,
+        1020,
+        498
+      ]
+    },
+    {
+      "id": "O3",
+      "kind": "orange",
+      "index": 3,
+      "label": "by the rancid catnip of fiat money.",
+      "box": [
+        429,
+        1351,
+        1306,
+        1400
+      ]
+    },
+    {
+      "id": "O4",
+      "kind": "orange",
+      "index": 4,
+      "label": "“buying the dip.”",
+      "box": [
+        1334,
+        2177,
+        1801,
+        2225
+      ]
+    },
+    {
+      "id": "O5",
+      "kind": "orange",
+      "index": 5,
+      "label": "shitcoiner at heart.",
+      "box": [
+        1040,
+        2932,
+        1661,
+        2982
+      ]
+    },
+    {
+      "id": "G1",
+      "kind": "grey",
+      "index": 1,
+      "label": "Gotta be this way... post-1971 fiat money",
+      "box": [
+        449,
+        827,
+        2233,
+        890
+      ]
+    },
+    {
+      "id": "G2",
+      "kind": "grey",
+      "index": 2,
+      "label": "nonsense",
+      "box": [
+        374,
+        890,
+        701,
+        959
+      ]
+    },
+    {
+      "id": "G3",
+      "kind": "grey",
+      "index": 3,
+      "label": "It's a stun gun to the genitals",
+      "box": [
+        1002,
+        1487,
+        1875,
+        1556
+      ]
+    },
+    {
+      "id": "G4",
+      "kind": "grey",
+      "index": 4,
+      "label": "$1 billion",
+      "box": [
+        412,
+        2769,
+        814,
+        2838
+      ]
+    },
+    {
+      "id": "G5",
+      "kind": "grey",
+      "index": 5,
+      "label": "Volcano Bonds",
+      "box": [
+        1040,
+        2920,
+        1674,
+        2995
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "sourcePage": 79,
+      "sourceCount": 11,
+      "rawMeaningfulEdges": 5,
+      "strongEdges": 5,
+      "hitTargets": [
+        "G1",
+        "G2",
+        "O1",
+        "O2"
+      ],
+      "strongHitTargets": [
+        "G1",
+        "G2",
+        "O1",
+        "O2"
+      ],
+      "targetPattern": "G1O2G1O1G2",
+      "strongTargetPattern": "G1O2G1O1G2",
+      "score": 183.829,
+      "edges": [
+        {
+          "sourcePage": 79,
+          "sourceKind": "orange",
+          "sourceIndex": 2,
+          "sourceLabel": "That’s right, Bitcoin will take",
+          "sourceBox": [
+            1097.0,
+            830.0,
+            1904.0,
+            915.0
+          ],
+          "reflectedBox": [
+            640.0,
+            830.0,
+            1447.0,
+            915.0
+          ],
+          "targetId": "G1",
+          "targetKind": "grey",
+          "targetIndex": 1,
+          "targetLabel": "Gotta be this way... post-1971 fiat money",
+          "targetBox": [
+            449.0,
+            827.0,
+            2233.0,
+            890.0
+          ],
+          "intersection": [
+            640.0,
+            830.0,
+            1447.0,
+            890.0
+          ],
+          "overlapArea": 48420.0,
+          "overlapVsSource": 0.70588,
+          "overlapVsTarget": 0.43081,
+          "centerDistance": 297.83,
+          "score": 73.61
+        },
+        {
+          "sourcePage": 79,
+          "sourceKind": "grey",
+          "sourceIndex": 1,
+          "sourceLabel": "war and violence economy",
+          "sourceBox": [
+            1362.0,
+            402.0,
+            1831.0,
+            471.0
+          ],
+          "reflectedBox": [
+            713.0,
+            402.0,
+            1182.0,
+            471.0
+          ],
+          "targetId": "O2",
+          "targetKind": "orange",
+          "targetIndex": 2,
+          "targetLabel": "Bitcoin.",
+          "targetBox": [
+            813.0,
+            451.0,
+            1020.0,
+            498.0
+          ],
+          "intersection": [
+            813.0,
+            451.0,
+            1020.0,
+            471.0
+          ],
+          "overlapArea": 4140.0,
+          "overlapVsSource": 0.12793,
+          "overlapVsTarget": 0.42553,
+          "centerDistance": 49.04,
+          "score": 48.063
+        },
+        {
+          "sourcePage": 79,
+          "sourceKind": "orange",
+          "sourceIndex": 3,
+          "sourceLabel": "all the energy.",
+          "sourceBox": [
+            592.0,
+            873.0,
+            979.0,
+            939.0
+          ],
+          "reflectedBox": [
+            1565.0,
+            873.0,
+            1952.0,
+            939.0
+          ],
+          "targetId": "G1",
+          "targetKind": "grey",
+          "targetIndex": 1,
+          "targetLabel": "Gotta be this way... post-1971 fiat money",
+          "targetBox": [
+            449.0,
+            827.0,
+            2233.0,
+            890.0
+          ],
+          "intersection": [
+            1565.0,
+            873.0,
+            1952.0,
+            890.0
+          ],
+          "overlapArea": 6579.0,
+          "overlapVsSource": 0.25758,
+          "overlapVsTarget": 0.05854,
+          "centerDistance": 420.19,
+          "score": 27.556
+        },
+        {
+          "sourcePage": 79,
+          "sourceKind": "grey",
+          "sourceIndex": 1,
+          "sourceLabel": "war and violence economy",
+          "sourceBox": [
+            1362.0,
+            402.0,
+            1831.0,
+            471.0
+          ],
+          "reflectedBox": [
+            713.0,
+            402.0,
+            1182.0,
+            471.0
+          ],
+          "targetId": "O1",
+          "targetKind": "orange",
+          "targetIndex": 1,
+          "targetLabel": "Get some toxicity. Get some bitcoin. Open your heart to",
+          "targetBox": [
+            808.0,
+            373.0,
+            2215.0,
+            425.0
+          ],
+          "intersection": [
+            808.0,
+            402.0,
+            1182.0,
+            425.0
+          ],
+          "overlapArea": 8602.0,
+          "overlapVsSource": 0.26581,
+          "overlapVsTarget": 0.11757,
+          "centerDistance": 565.25,
+          "score": 26.928
+        },
+        {
+          "sourcePage": 79,
+          "sourceKind": "orange",
+          "sourceIndex": 2,
+          "sourceLabel": "That’s right, Bitcoin will take",
+          "sourceBox": [
+            1097.0,
+            830.0,
+            1904.0,
+            915.0
+          ],
+          "reflectedBox": [
+            640.0,
+            830.0,
+            1447.0,
+            915.0
+          ],
+          "targetId": "G2",
+          "targetKind": "grey",
+          "targetIndex": 2,
+          "targetLabel": "nonsense",
+          "targetBox": [
+            374.0,
+            890.0,
+            701.0,
+            959.0
+          ],
+          "intersection": [
+            640.0,
+            890.0,
+            701.0,
+            915.0
+          ],
+          "overlapArea": 1525.0,
+          "overlapVsSource": 0.02223,
+          "overlapVsTarget": 0.06759,
+          "centerDistance": 508.66,
+          "score": 7.672
+        }
+      ],
+      "topEdges": [
+        {
+          "sourcePage": 79,
+          "sourceKind": "orange",
+          "sourceIndex": 2,
+          "sourceLabel": "That’s right, Bitcoin will take",
+          "sourceBox": [
+            1097.0,
+            830.0,
+            1904.0,
+            915.0
+          ],
+          "reflectedBox": [
+            640.0,
+            830.0,
+            1447.0,
+            915.0
+          ],
+          "targetId": "G1",
+          "targetKind": "grey",
+          "targetIndex": 1,
+          "targetLabel": "Gotta be this way... post-1971 fiat money",
+          "targetBox": [
+            449.0,
+            827.0,
+            2233.0,
+            890.0
+          ],
+          "intersection": [
+            640.0,
+            830.0,
+            1447.0,
+            890.0
+          ],
+          "overlapArea": 48420.0,
+          "overlapVsSource": 0.70588,
+          "overlapVsTarget": 0.43081,
+          "centerDistance": 297.83,
+          "score": 73.61
+        },
+        {
+          "sourcePage": 79,
+          "sourceKind": "grey",
+          "sourceIndex": 1,
+          "sourceLabel": "war and violence economy",
+          "sourceBox": [
+            1362.0,
+            402.0,
+            1831.0,
+            471.0
+          ],
+          "reflectedBox": [
+            713.0,
+            402.0,
+            1182.0,
+            471.0
+          ],
+          "targetId": "O2",
+          "targetKind": "orange",
+          "targetIndex": 2,
+          "targetLabel": "Bitcoin.",
+          "targetBox": [
+            813.0,
+            451.0,
+            1020.0,
+            498.0
+          ],
+          "intersection": [
+            813.0,
+            451.0,
+            1020.0,
+            471.0
+          ],
+          "overlapArea": 4140.0,
+          "overlapVsSource": 0.12793,
+          "overlapVsTarget": 0.42553,
+          "centerDistance": 49.04,
+          "score": 48.063
+        },
+        {
+          "sourcePage": 79,
+          "sourceKind": "orange",
+          "sourceIndex": 3,
+          "sourceLabel": "all the energy.",
+          "sourceBox": [
+            592.0,
+            873.0,
+            979.0,
+            939.0
+          ],
+          "reflectedBox": [
+            1565.0,
+            873.0,
+            1952.0,
+            939.0
+          ],
+          "targetId": "G1",
+          "targetKind": "grey",
+          "targetIndex": 1,
+          "targetLabel": "Gotta be this way... post-1971 fiat money",
+          "targetBox": [
+            449.0,
+            827.0,
+            2233.0,
+            890.0
+          ],
+          "intersection": [
+            1565.0,
+            873.0,
+            1952.0,
+            890.0
+          ],
+          "overlapArea": 6579.0,
+          "overlapVsSource": 0.25758,
+          "overlapVsTarget": 0.05854,
+          "centerDistance": 420.19,
+          "score": 27.556
+        },
+        {
+          "sourcePage": 79,
+          "sourceKind": "grey",
+          "sourceIndex": 1,
+          "sourceLabel": "war and violence economy",
+          "sourceBox": [
+            1362.0,
+            402.0,
+            1831.0,
+            471.0
+          ],
+          "reflectedBox": [
+            713.0,
+            402.0,
+            1182.0,
+            471.0
+          ],
+          "targetId": "O1",
+          "targetKind": "orange",
+          "targetIndex": 1,
+          "targetLabel": "Get some toxicity. Get some bitcoin. Open your heart to",
+          "targetBox": [
+            808.0,
+            373.0,
+            2215.0,
+            425.0
+          ],
+          "intersection": [
+            808.0,
+            402.0,
+            1182.0,
+            425.0
+          ],
+          "overlapArea": 8602.0,
+          "overlapVsSource": 0.26581,
+          "overlapVsTarget": 0.11757,
+          "centerDistance": 565.25,
+          "score": 26.928
+        },
+        {
+          "sourcePage": 79,
+          "sourceKind": "orange",
+          "sourceIndex": 2,
+          "sourceLabel": "That’s right, Bitcoin will take",
+          "sourceBox": [
+            1097.0,
+            830.0,
+            1904.0,
+            915.0
+          ],
+          "reflectedBox": [
+            640.0,
+            830.0,
+            1447.0,
+            915.0
+          ],
+          "targetId": "G2",
+          "targetKind": "grey",
+          "targetIndex": 2,
+          "targetLabel": "nonsense",
+          "targetBox": [
+            374.0,
+            890.0,
+            701.0,
+            959.0
+          ],
+          "intersection": [
+            640.0,
+            890.0,
+            701.0,
+            915.0
+          ],
+          "overlapArea": 1525.0,
+          "overlapVsSource": 0.02223,
+          "overlapVsTarget": 0.06759,
+          "centerDistance": 508.66,
+          "score": 7.672
+        }
+      ],
+      "reflectedSources": [
+        {
+          "kind": "grey",
+          "index": 1,
+          "label": "war and violence economy",
+          "reflectedBox": [
+            713.0,
+            402.0,
+            1182.0,
+            471.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 1,
+          "label": "infinitely more efficient to transact and store wealth in than fiat, shitcoins or gold",
+          "reflectedBox": [
+            624.0,
+            552.0,
+            1965.0,
+            716.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 2,
+          "label": "That’s right, Bitcoin will take",
+          "reflectedBox": [
+            640.0,
+            830.0,
+            1447.0,
+            915.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 3,
+          "label": "all the energy.",
+          "reflectedBox": [
+            1565.0,
+            873.0,
+            1952.0,
+            939.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 4,
+          "label": "Everyone will live their own experience in the rabbit hole.",
+          "reflectedBox": [
+            503.0,
+            2030.0,
+            1912.0,
+            2079.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 5,
+          "label": "We are getting our souls back and our minds.",
+          "reflectedBox": [
+            884.0,
+            2104.0,
+            1912.0,
+            2152.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 6,
+          "label": "orange 6",
+          "reflectedBox": [
+            2348.0,
+            2370.0,
+            2398.0,
+            2446.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 7,
+          "label": "orange 7",
+          "reflectedBox": [
+            2088.0,
+            2429.0,
+            2157.0,
+            2480.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 8,
+          "label": "orange 8",
+          "reflectedBox": [
+            1909.0,
+            2576.0,
+            1967.0,
+            2641.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 9,
+          "label": "orange 9",
+          "reflectedBox": [
+            2078.0,
+            2746.0,
+            2136.0,
+            2815.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 10,
+          "label": "orange 10",
+          "reflectedBox": [
+            2338.0,
+            2935.0,
+            2383.0,
+            3001.0
+          ]
+        }
+      ]
+    },
+    {
+      "sourcePage": 77,
+      "sourceCount": 5,
+      "rawMeaningfulEdges": 2,
+      "strongEdges": 2,
+      "hitTargets": [
+        "G1",
+        "O3"
+      ],
+      "strongHitTargets": [
+        "G1",
+        "O3"
+      ],
+      "targetPattern": "O3G1",
+      "strongTargetPattern": "O3G1",
+      "score": 119.689,
+      "edges": [
+        {
+          "sourcePage": 77,
+          "sourceKind": "grey",
+          "sourceIndex": 2,
+          "sourceLabel": "shitcoiners, useless Royals",
+          "sourceBox": [
+            1065.0,
+            1348.0,
+            1987.0,
+            1440.0
+          ],
+          "reflectedBox": [
+            557.0,
+            1348.0,
+            1479.0,
+            1440.0
+          ],
+          "targetId": "O3",
+          "targetKind": "orange",
+          "targetIndex": 3,
+          "targetLabel": "by the rancid catnip of fiat money.",
+          "targetBox": [
+            429.0,
+            1351.0,
+            1306.0,
+            1400.0
+          ],
+          "intersection": [
+            557.0,
+            1351.0,
+            1306.0,
+            1400.0
+          ],
+          "overlapArea": 36701.0,
+          "overlapVsSource": 0.43267,
+          "overlapVsTarget": 0.85405,
+          "centerDistance": 151.63,
+          "score": 89.889
+        },
+        {
+          "sourcePage": 77,
+          "sourceKind": "grey",
+          "sourceIndex": 1,
+          "sourceLabel": "Sorry Bhutan... shitcoin hell",
+          "sourceBox": [
+            281.0,
+            717.0,
+            1886.0,
+            845.0
+          ],
+          "reflectedBox": [
+            658.0,
+            717.0,
+            2263.0,
+            845.0
+          ],
+          "targetId": "G1",
+          "targetKind": "grey",
+          "targetIndex": 1,
+          "targetLabel": "Gotta be this way... post-1971 fiat money",
+          "targetBox": [
+            449.0,
+            827.0,
+            2233.0,
+            890.0
+          ],
+          "intersection": [
+            658.0,
+            827.0,
+            2233.0,
+            845.0
+          ],
+          "overlapArea": 28350.0,
+          "overlapVsSource": 0.138,
+          "overlapVsTarget": 0.25224,
+          "centerDistance": 142.43,
+          "score": 29.8
+        }
+      ],
+      "topEdges": [
+        {
+          "sourcePage": 77,
+          "sourceKind": "grey",
+          "sourceIndex": 2,
+          "sourceLabel": "shitcoiners, useless Royals",
+          "sourceBox": [
+            1065.0,
+            1348.0,
+            1987.0,
+            1440.0
+          ],
+          "reflectedBox": [
+            557.0,
+            1348.0,
+            1479.0,
+            1440.0
+          ],
+          "targetId": "O3",
+          "targetKind": "orange",
+          "targetIndex": 3,
+          "targetLabel": "by the rancid catnip of fiat money.",
+          "targetBox": [
+            429.0,
+            1351.0,
+            1306.0,
+            1400.0
+          ],
+          "intersection": [
+            557.0,
+            1351.0,
+            1306.0,
+            1400.0
+          ],
+          "overlapArea": 36701.0,
+          "overlapVsSource": 0.43267,
+          "overlapVsTarget": 0.85405,
+          "centerDistance": 151.63,
+          "score": 89.889
+        },
+        {
+          "sourcePage": 77,
+          "sourceKind": "grey",
+          "sourceIndex": 1,
+          "sourceLabel": "Sorry Bhutan... shitcoin hell",
+          "sourceBox": [
+            281.0,
+            717.0,
+            1886.0,
+            845.0
+          ],
+          "reflectedBox": [
+            658.0,
+            717.0,
+            2263.0,
+            845.0
+          ],
+          "targetId": "G1",
+          "targetKind": "grey",
+          "targetIndex": 1,
+          "targetLabel": "Gotta be this way... post-1971 fiat money",
+          "targetBox": [
+            449.0,
+            827.0,
+            2233.0,
+            890.0
+          ],
+          "intersection": [
+            658.0,
+            827.0,
+            2233.0,
+            845.0
+          ],
+          "overlapArea": 28350.0,
+          "overlapVsSource": 0.138,
+          "overlapVsTarget": 0.25224,
+          "centerDistance": 142.43,
+          "score": 29.8
+        }
+      ],
+      "reflectedSources": [
+        {
+          "kind": "orange",
+          "index": 1,
+          "label": "Toxic Bitcoin Maximalists within six months.",
+          "reflectedBox": [
+            582.0,
+            663.0,
+            1776.0,
+            710.0
+          ]
+        },
+        {
+          "kind": "grey",
+          "index": 1,
+          "label": "Sorry Bhutan... shitcoin hell",
+          "reflectedBox": [
+            658.0,
+            717.0,
+            2263.0,
+            845.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 2,
+          "label": "harass old women and children",
+          "reflectedBox": [
+            312.0,
+            1225.0,
+            1104.0,
+            1273.0
+          ]
+        },
+        {
+          "kind": "grey",
+          "index": 2,
+          "label": "shitcoiners, useless Royals",
+          "reflectedBox": [
+            557.0,
+            1348.0,
+            1479.0,
+            1440.0
+          ]
+        },
+        {
+          "kind": "grey",
+          "index": 3,
+          "label": "It does this by monetizing",
+          "reflectedBox": [
+            607.0,
+            3054.0,
+            1505.0,
+            3134.0
+          ]
+        }
+      ]
+    },
+    {
+      "sourcePage": 78,
+      "sourceCount": 7,
+      "rawMeaningfulEdges": 1,
+      "strongEdges": 1,
+      "hitTargets": [
+        "O3"
+      ],
+      "strongHitTargets": [
+        "O3"
+      ],
+      "targetPattern": "O3",
+      "strongTargetPattern": "O3",
+      "score": 65.424,
+      "edges": [
+        {
+          "sourcePage": 78,
+          "sourceKind": "orange",
+          "sourceIndex": 3,
+          "sourceLabel": "BILLION worth of hate toys in Afghanistan, / $2 trillion fiat cuck-bucks.",
+          "sourceBox": [
+            431.0,
+            1321.0,
+            1808.0,
+            1445.0
+          ],
+          "reflectedBox": [
+            736.0,
+            1321.0,
+            2113.0,
+            1445.0
+          ],
+          "targetId": "O3",
+          "targetKind": "orange",
+          "targetIndex": 3,
+          "targetLabel": "by the rancid catnip of fiat money.",
+          "targetBox": [
+            429.0,
+            1351.0,
+            1306.0,
+            1400.0
+          ],
+          "intersection": [
+            736.0,
+            1351.0,
+            1306.0,
+            1400.0
+          ],
+          "overlapArea": 27930.0,
+          "overlapVsSource": 0.16357,
+          "overlapVsTarget": 0.64994,
+          "centerDistance": 557.05,
+          "score": 65.424
+        }
+      ],
+      "topEdges": [
+        {
+          "sourcePage": 78,
+          "sourceKind": "orange",
+          "sourceIndex": 3,
+          "sourceLabel": "BILLION worth of hate toys in Afghanistan, / $2 trillion fiat cuck-bucks.",
+          "sourceBox": [
+            431.0,
+            1321.0,
+            1808.0,
+            1445.0
+          ],
+          "reflectedBox": [
+            736.0,
+            1321.0,
+            2113.0,
+            1445.0
+          ],
+          "targetId": "O3",
+          "targetKind": "orange",
+          "targetIndex": 3,
+          "targetLabel": "by the rancid catnip of fiat money.",
+          "targetBox": [
+            429.0,
+            1351.0,
+            1306.0,
+            1400.0
+          ],
+          "intersection": [
+            736.0,
+            1351.0,
+            1306.0,
+            1400.0
+          ],
+          "overlapArea": 27930.0,
+          "overlapVsSource": 0.16357,
+          "overlapVsTarget": 0.64994,
+          "centerDistance": 557.05,
+          "score": 65.424
+        }
+      ],
+      "reflectedSources": [
+        {
+          "kind": "orange",
+          "index": 1,
+          "label": "The numbers don’t lie.",
+          "reflectedBox": [
+            854.0,
+            956.0,
+            1407.0,
+            1006.0
+          ]
+        },
+        {
+          "kind": "grey",
+          "index": 1,
+          "label": "gargantuanly wasteful",
+          "reflectedBox": [
+            380.0,
+            1024.0,
+            1053.0,
+            1087.0
+          ]
+        },
+        {
+          "kind": "grey",
+          "index": 2,
+          "label": "money printing",
+          "reflectedBox": [
+            1342.0,
+            1087.0,
+            1776.0,
+            1162.0
+          ]
+        },
+        {
+          "kind": "grey",
+          "index": 3,
+          "label": "wars to keep it going",
+          "reflectedBox": [
+            644.0,
+            1087.0,
+            1242.0,
+            1162.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 2,
+          "label": "America left $85",
+          "reflectedBox": [
+            375.0,
+            1244.0,
+            866.0,
+            1294.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 3,
+          "label": "BILLION worth of hate toys in Afghanistan, / $2 trillion fiat cuck-bucks.",
+          "reflectedBox": [
+            736.0,
+            1321.0,
+            2113.0,
+            1445.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 4,
+          "label": "the game-theorized Bitcoin protocol,",
+          "reflectedBox": [
+            342.0,
+            1997.0,
+            1544.0,
+            2052.0
+          ]
+        }
+      ]
+    },
+    {
+      "sourcePage": 75,
+      "sourceCount": 11,
+      "rawMeaningfulEdges": 0,
+      "strongEdges": 0,
+      "hitTargets": [],
+      "strongHitTargets": [],
+      "targetPattern": "",
+      "strongTargetPattern": "",
+      "score": 0,
+      "edges": [],
+      "topEdges": [],
+      "reflectedSources": [
+        {
+          "kind": "orange",
+          "index": 1,
+          "label": "They are the sum of",
+          "reflectedBox": [
+            468.0,
+            984.0,
+            972.0,
+            1032.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 2,
+          "label": "all our neuroses.",
+          "reflectedBox": [
+            1732.0,
+            1050.0,
+            2176.0,
+            1099.0
+          ]
+        },
+        {
+          "kind": "grey",
+          "index": 1,
+          "label": "money printers, banking",
+          "reflectedBox": [
+            656.0,
+            1192.0,
+            1330.0,
+            1255.0
+          ]
+        },
+        {
+          "kind": "grey",
+          "index": 2,
+          "label": "terrorists, stock traders, central bank arsonists",
+          "reflectedBox": [
+            788.0,
+            1261.0,
+            2199.0,
+            1330.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 3,
+          "label": "Layer 1",
+          "reflectedBox": [
+            1468.0,
+            1833.0,
+            1674.0,
+            1880.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 4,
+          "label": "Fact: It’s Layer 1 for every great thing",
+          "reflectedBox": [
+            855.0,
+            1904.0,
+            2089.0,
+            1956.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 5,
+          "label": "that’s ever been invented or discovered.",
+          "reflectedBox": [
+            829.0,
+            1977.0,
+            2089.0,
+            2029.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 6,
+          "label": "“Maximalist”",
+          "reflectedBox": [
+            936.0,
+            2200.0,
+            1273.0,
+            2248.0
+          ]
+        },
+        {
+          "kind": "grey",
+          "index": 3,
+          "label": "Don't fall for shitcoinery",
+          "reflectedBox": [
+            1380.0,
+            2332.0,
+            2098.0,
+            2400.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 7,
+          "label": "Keep your dignity.",
+          "reflectedBox": [
+            1619.0,
+            2415.0,
+            2092.0,
+            2464.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 8,
+          "label": "Layer 1",
+          "reflectedBox": [
+            1809.0,
+            2553.0,
+            2000.0,
+            2600.0
+          ]
+        }
+      ]
+    },
+    {
+      "sourcePage": 80,
+      "sourceCount": 2,
+      "rawMeaningfulEdges": 0,
+      "strongEdges": 0,
+      "hitTargets": [],
+      "strongHitTargets": [],
+      "targetPattern": "",
+      "strongTargetPattern": "",
+      "score": 0,
+      "edges": [],
+      "topEdges": [],
+      "reflectedSources": [
+        {
+          "kind": "orange",
+          "index": 1,
+          "label": "5 SYMPTOM RELIEF / NAUSEA / HEARTBURN / INDIGESTION / UPSET STOMACH / SHITCOINS",
+          "reflectedBox": [
+            888.0,
+            1713.0,
+            1216.0,
+            2098.0
+          ]
+        },
+        {
+          "kind": "orange",
+          "index": 2,
+          "label": "6 FL OZ (473 mL)",
+          "reflectedBox": [
+            1344.0,
+            1939.0,
+            1627.0,
+            2099.0
+          ]
+        }
+      ]
+    }
+  ],
+  "p78p79StrongTargets": [
+    "G1",
+    "G2",
+    "O1",
+    "O2",
+    "O3"
+  ],
+  "otherStrongTargets": [
+    "G1",
+    "O3"
+  ],
+  "sheet": "analysis_outputs/source_audit/page76_all_source_highlight_mirror_benchmark/page76_all_source_highlight_mirror_benchmark_sheet.jpg",
+  "decision": "Raw page-center highlight mirroring to page 76 does not produce a final selector. It makes p79 the strongest uniform source and leaves p75/p80 empty, but p77 also creates mid-page contacts; therefore raw mirrored highlight boxes alone are too permissive. The useful contacts remain regional, not a word/letter extraction unit.",
+  "nextMove": "Keep p78/p79-to-page76 highlight mirror evidence as orientation/target evidence only; the next useful move is a source/physical transform or an external rule naming exact unit/order."
+}

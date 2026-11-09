@@ -1,0 +1,54 @@
+{
+  "createdAt": "2026-05-20T09:26:00+02:00",
+  "scope": "Inspect local 3D article map in the in-app browser; no key derivation.",
+  "urls": {
+    "base": "http://127.0.0.1:8765/analysis_outputs/3d_article_map/index.html",
+    "foldPage76": "http://127.0.0.1:8765/analysis_outputs/3d_article_map/index.html?layout=fold&focus=76"
+  },
+  "initialState": {
+    "title": "Max Keiser Puzzle 3D Article Map",
+    "effectiveViewportNote": "Hidden/default in-app browser measurement initially reported a tiny viewport and near-zero canvas height. Treat this as browser inspection state, not puzzle evidence."
+  },
+  "foldPage76State": {
+    "activeLayout": "Fold",
+    "focus": "76",
+    "canvasRectPx": {
+      "x": 360,
+      "y": 0,
+      "width": 1155,
+      "height": 1066
+    },
+    "canvasBackingPx": {
+      "width": 1155,
+      "height": 2112
+    },
+    "enabledLayers": [
+      "page scans",
+      "letters",
+      "important words",
+      "highlights",
+      "mirror boxes",
+      "anchors",
+      "rays"
+    ],
+    "counts": {
+      "letters": "5,966",
+      "words": "1,243",
+      "anchors": "16",
+      "mirrorBoxes": "29"
+    },
+    "consoleErrors": []
+  },
+  "viewerFindings": [
+    "Page 76 has the densest clue concentration.",
+    "The strongest ray pull lands on President/Nayib/volcano language.",
+    "Reflected highlights select readable phrases, but direct key/index derivations are clean.",
+    "The 3D fold view treats the 76/79 visual system as orientation evidence and still needs a stricter selector."
+  ],
+  "assessment": [
+    "The viewer is useful for manual orientation and correction review.",
+    "The viewer did not expose a new selector, hidden UI state, or contradiction with the current ledger.",
+    "Use generated geometry reports as measurement truth; use the viewer for visual review only."
+  ],
+  "nextMove": "Continue with source/physical registration or a new source-level instruction. If the viewer is used again, start with layout=fold&focus=76 and verify normal canvas size first."
+}

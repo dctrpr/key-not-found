@@ -1,0 +1,164 @@
+{
+  "createdAt": "2026-05-20T23:57:33",
+  "scope": "page-76 active target order/orientation guardrail; no extraction, no key derivation, no hashing, no OCR, no address checks",
+  "inputs": {
+    "crop_completion": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "orientation_guardrail": "analysis_outputs/source_audit/page76_active_crop_orientation_guardrail/page76_active_crop_orientation_guardrail.json",
+    "format_authority": "analysis_outputs/docm_format_sources/page76_target_format_authority_lock/page76_target_format_authority_lock.json",
+    "line_corridor": "analysis_outputs/3d_article_map/page76_line_level_corridor.json"
+  },
+  "summary": {
+    "targetCount": 4,
+    "uprightOrderIds": [
+      "buying_dip",
+      "one_billion",
+      "volcano_bonds",
+      "shitcoiner_heart"
+    ],
+    "nativeUnnormalizedOrderIds": [
+      "shitcoiner_heart",
+      "volcano_bonds",
+      "one_billion",
+      "buying_dip"
+    ],
+    "nativeNormalizedOrderIds": [
+      "buying_dip",
+      "one_billion",
+      "volcano_bonds",
+      "shitcoiner_heart"
+    ],
+    "colorPattern": "OBBO",
+    "visualStatePattern": "YKKY",
+    "colorPatternIsPalindrome": true,
+    "visualStatePatternIsPalindrome": true,
+    "uprightPageLines": "22 25 27 32",
+    "nativeUnnormalizedPageLines": "32 27 25 22",
+    "formatAuthorityPageLines": "22 25 27 32",
+    "uprightCorridorIndexes": "4 7 9 14",
+    "nativeUnnormalizedCorridorIndexes": "14 9 7 4",
+    "formatAuthorityCorridorIndexes": "4 7 9 14",
+    "lineOrderDetectsFlip": true,
+    "corridorOrderDetectsFlip": true,
+    "lineCorridorHighlightedPositions": "4,7,9,10,11,13,14",
+    "lineCorridorHighlightedPageLines": "22,25,27,28,29,31,32",
+    "selectorUnlocked": false
+  },
+  "orders": {
+    "uprightTopToBottom": {
+      "labels": [
+        "O4 buying the dip",
+        "B4 $1 billion",
+        "G5 Volcano Bonds",
+        "O5 shitcoiner at heart"
+      ],
+      "codes": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "ids": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "colorPattern": "OBBO",
+      "visualStatePattern": "YKKY",
+      "pageLines": "22 25 27 32",
+      "corridorIndexes": "4 7 9 14",
+      "centerY": [
+        2201.0,
+        2421.5,
+        2568.0,
+        2957.0
+      ],
+      "centerX": [
+        1567.5,
+        559.5,
+        995.5,
+        1350.5
+      ]
+    },
+    "nativeUnnormalizedTopToBottom": {
+      "labels": [
+        "O5 shitcoiner at heart",
+        "G5 Volcano Bonds",
+        "B4 $1 billion",
+        "O4 buying the dip"
+      ],
+      "codes": [
+        "O5",
+        "G5",
+        "B4",
+        "O4"
+      ],
+      "ids": [
+        "shitcoiner_heart",
+        "volcano_bonds",
+        "one_billion",
+        "buying_dip"
+      ],
+      "colorPattern": "OBBO",
+      "visualStatePattern": "YKKY",
+      "pageLines": "32 27 25 22",
+      "corridorIndexes": "14 9 7 4",
+      "centerY": [
+        307.0,
+        696.0,
+        842.5,
+        1063.0
+      ],
+      "centerX": [
+        1193.5,
+        1548.5,
+        1984.5,
+        976.5
+      ]
+    },
+    "nativeNormalizedTopToBottom": {
+      "labels": [
+        "O4 buying the dip",
+        "B4 $1 billion",
+        "G5 Volcano Bonds",
+        "O5 shitcoiner at heart"
+      ],
+      "codes": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "ids": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "colorPattern": "OBBO",
+      "visualStatePattern": "YKKY",
+      "pageLines": "22 25 27 32",
+      "corridorIndexes": "4 7 9 14",
+      "centerY": [
+        2201.0,
+        2421.5,
+        2568.0,
+        2957.0
+      ],
+      "centerX": [
+        1567.5,
+        559.5,
+        995.5,
+        1350.5
+      ]
+    }
+  },
+  "interpretation": {
+    "trap": "OBBO and YKKY are palindromes, so an upside-down/native ordering error preserves the same color/visual signature.",
+    "orientationCheck": "Use line order 22 25 27 32 and corridor order 4 7 9 14, plus the recorded 180-degree image transform.",
+    "selectorUnlocked": false
+  },
+  "sheet": "analysis_outputs/source_audit/page76_active_order_orientation_trap/page76_active_order_orientation_trap_sheet.jpg",
+  "decision": "page76_active_order_orientation_trap_guardrail_no_selector",
+  "nextMove": "For future source comparisons, accept color/visual-state matching only after line/corridor order also matches the readable/upright O4->B4->G5->O5 order."
+}

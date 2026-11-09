@@ -1,0 +1,1220 @@
+{
+  "createdAt": "2026-05-20T08:26:00",
+  "scope": "p78 frame contact-order stability under tri-contact repair; no key derivation",
+  "sourceReports": {
+    "edgeReconciliation": "analysis_outputs/source_audit/p78_graphic_edge_reconciliation/p78_graphic_edge_reconciliation.json",
+    "triContact": "analysis_outputs/source_audit/p78_frame_tricontact_signature/p78_frame_tricontact_signature.json"
+  },
+  "baseFrame": [
+    1234.0,
+    2398.0,
+    2250.0,
+    2950.0
+  ],
+  "scenarios": [
+    {
+      "name": "current",
+      "frame": [
+        1234.0,
+        2398.0,
+        2250.0,
+        2950.0
+      ],
+      "eventCount": 8,
+      "events": [
+        {
+          "id": "should_sell",
+          "label": "should sell",
+          "kind": "word-sequence",
+          "box": [
+            1201.11,
+            2393.42,
+            1439.33,
+            2433.53
+          ],
+          "intersection": [
+            1234.0,
+            2398.0,
+            1439.33,
+            2433.53
+          ],
+          "overlapVsTarget": 0.76351,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "cuts",
+              "distancePx": 0.0,
+              "alongOverlapPx": 35.53
+            },
+            {
+              "edge": "top",
+              "relation": "cuts",
+              "distancePx": 0.0,
+              "alongOverlapPx": 205.33
+            }
+          ],
+          "primaryContact": {
+            "edge": "top",
+            "relation": "cuts",
+            "distancePx": 0.0,
+            "alongOverlapPx": 205.33
+          },
+          "top": 2393.42,
+          "left": 1201.11
+        },
+        {
+          "id": "earnings",
+          "label": "earnings",
+          "kind": "word",
+          "box": [
+            1222.22,
+            2467.15,
+            1398.23,
+            2507.26
+          ],
+          "intersection": [
+            1234.0,
+            2467.15,
+            1398.23,
+            2507.26
+          ],
+          "overlapVsTarget": 0.93307,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "cuts",
+              "distancePx": 0.0,
+              "alongOverlapPx": 40.11
+            },
+            {
+              "edge": "top",
+              "relation": "above-adjacent",
+              "distancePx": 69.15,
+              "alongOverlapPx": 164.23
+            }
+          ],
+          "primaryContact": {
+            "edge": "left",
+            "relation": "cuts",
+            "distancePx": 0.0,
+            "alongOverlapPx": 40.11
+          },
+          "top": 2467.15,
+          "left": 1222.22
+        },
+        {
+          "id": "pay_imf",
+          "label": "pay off the IMF",
+          "kind": "word-sequence",
+          "box": [
+            1278.51,
+            2535.36,
+            1607.19,
+            2579.93
+          ],
+          "intersection": [
+            1278.51,
+            2535.36,
+            1607.19,
+            2579.93
+          ],
+          "overlapVsTarget": 1.0,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "left-adjacent",
+              "distancePx": 44.51,
+              "alongOverlapPx": 44.57
+            }
+          ],
+          "primaryContact": {
+            "edge": "left",
+            "relation": "left-adjacent",
+            "distancePx": 44.51,
+            "alongOverlapPx": 44.57
+          },
+          "top": 2535.36,
+          "left": 1278.51
+        },
+        {
+          "id": "G5",
+          "label": "Volcano Bonds",
+          "kind": "trusted-grey",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "intersection": null,
+          "overlapVsTarget": 0.0,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "right-adjacent",
+              "distancePx": 38.0,
+              "alongOverlapPx": 48.0
+            }
+          ],
+          "primaryContact": {
+            "edge": "left",
+            "relation": "right-adjacent",
+            "distancePx": 38.0,
+            "alongOverlapPx": 48.0
+          },
+          "top": 2544.0,
+          "left": 795.0
+        },
+        {
+          "id": "tagged_mike",
+          "label": "I tagged Mike",
+          "kind": "word-sequence",
+          "box": [
+            1258.41,
+            2609.09,
+            1542.06,
+            2653.65
+          ],
+          "intersection": [
+            1258.41,
+            2609.09,
+            1542.06,
+            2653.65
+          ],
+          "overlapVsTarget": 1.0,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "left-adjacent",
+              "distancePx": 24.41,
+              "alongOverlapPx": 44.56
+            }
+          ],
+          "primaryContact": {
+            "edge": "left",
+            "relation": "left-adjacent",
+            "distancePx": 24.41,
+            "alongOverlapPx": 44.56
+          },
+          "top": 2609.09,
+          "left": 1258.41
+        },
+        {
+          "id": "could_sell",
+          "label": "could sell",
+          "kind": "word-sequence",
+          "box": [
+            1285.54,
+            2686.2,
+            1531.3,
+            2726.31
+          ],
+          "intersection": [
+            1285.54,
+            2686.2,
+            1531.3,
+            2726.31
+          ],
+          "overlapVsTarget": 1.0,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "left-adjacent",
+              "distancePx": 51.54,
+              "alongOverlapPx": 40.11
+            }
+          ],
+          "primaryContact": {
+            "edge": "left",
+            "relation": "left-adjacent",
+            "distancePx": 51.54,
+            "alongOverlapPx": 40.11
+          },
+          "top": 2686.2,
+          "left": 1285.54
+        },
+        {
+          "id": "trust_guy",
+          "label": "trust that guy",
+          "kind": "word-sequence",
+          "box": [
+            1245.34,
+            2827.07,
+            1563.72,
+            2871.64
+          ],
+          "intersection": [
+            1245.34,
+            2827.07,
+            1563.72,
+            2871.64
+          ],
+          "overlapVsTarget": 1.0,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "left-adjacent",
+              "distancePx": 11.34,
+              "alongOverlapPx": 44.57
+            },
+            {
+              "edge": "bottom",
+              "relation": "below-adjacent",
+              "distancePx": 78.36,
+              "alongOverlapPx": 318.38
+            }
+          ],
+          "primaryContact": {
+            "edge": "left",
+            "relation": "left-adjacent",
+            "distancePx": 11.34,
+            "alongOverlapPx": 44.57
+          },
+          "top": 2827.07,
+          "left": 1245.34
+        },
+        {
+          "id": "O5",
+          "label": "shitcoiner at heart",
+          "kind": "orange",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "intersection": [
+            1234.0,
+            2932.0,
+            1661.0,
+            2950.0
+          ],
+          "overlapVsTarget": 0.24754,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "cuts",
+              "distancePx": 0.0,
+              "alongOverlapPx": 18.0
+            },
+            {
+              "edge": "bottom",
+              "relation": "cuts",
+              "distancePx": 0.0,
+              "alongOverlapPx": 427.0
+            }
+          ],
+          "primaryContact": {
+            "edge": "bottom",
+            "relation": "cuts",
+            "distancePx": 0.0,
+            "alongOverlapPx": 427.0
+          },
+          "top": 2932.0,
+          "left": 1040.0
+        }
+      ],
+      "streams": {
+        "topDownLabels": "should sell | earnings | pay off the IMF | Volcano Bonds | I tagged Mike | could sell | trust that guy | shitcoiner at heart",
+        "topDownCompact": "should sell | earnings | pay/IMF | G5 Volcano Bonds | tagged Mike | could sell | trust that guy | O5 heart",
+        "topDownInitials": "sepVIcts",
+        "topDownLasts": "lsFselyt",
+        "cutLabels": "should sell | earnings | pay off the IMF | I tagged Mike | could sell | trust that guy | shitcoiner at heart",
+        "cutInitials": "sepIcts",
+        "exactEdgeLabels": "should sell | earnings | shitcoiner at heart",
+        "leftEdgeLabels": "should sell | earnings | pay off the IMF | Volcano Bonds | I tagged Mike | could sell | trust that guy | shitcoiner at heart",
+        "bottomEdgeLabels": "trust that guy | shitcoiner at heart"
+      },
+      "instructionTermHits": {}
+    },
+    {
+      "name": "g5_edge_touch_dx_minus_38",
+      "frame": [
+        1196.0,
+        2398.0,
+        2212.0,
+        2950.0
+      ],
+      "eventCount": 8,
+      "events": [
+        {
+          "id": "should_sell",
+          "label": "should sell",
+          "kind": "word-sequence",
+          "box": [
+            1201.11,
+            2393.42,
+            1439.33,
+            2433.53
+          ],
+          "intersection": [
+            1201.11,
+            2398.0,
+            1439.33,
+            2433.53
+          ],
+          "overlapVsTarget": 0.88581,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "left-adjacent",
+              "distancePx": 5.11,
+              "alongOverlapPx": 35.53
+            },
+            {
+              "edge": "top",
+              "relation": "cuts",
+              "distancePx": 0.0,
+              "alongOverlapPx": 238.22
+            }
+          ],
+          "primaryContact": {
+            "edge": "top",
+            "relation": "cuts",
+            "distancePx": 0.0,
+            "alongOverlapPx": 238.22
+          },
+          "top": 2393.42,
+          "left": 1201.11
+        },
+        {
+          "id": "earnings",
+          "label": "earnings",
+          "kind": "word",
+          "box": [
+            1222.22,
+            2467.15,
+            1398.23,
+            2507.26
+          ],
+          "intersection": [
+            1222.22,
+            2467.15,
+            1398.23,
+            2507.26
+          ],
+          "overlapVsTarget": 1.0,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "left-adjacent",
+              "distancePx": 26.22,
+              "alongOverlapPx": 40.11
+            },
+            {
+              "edge": "top",
+              "relation": "above-adjacent",
+              "distancePx": 69.15,
+              "alongOverlapPx": 176.01
+            }
+          ],
+          "primaryContact": {
+            "edge": "left",
+            "relation": "left-adjacent",
+            "distancePx": 26.22,
+            "alongOverlapPx": 40.11
+          },
+          "top": 2467.15,
+          "left": 1222.22
+        },
+        {
+          "id": "pay_imf",
+          "label": "pay off the IMF",
+          "kind": "word-sequence",
+          "box": [
+            1278.51,
+            2535.36,
+            1607.19,
+            2579.93
+          ],
+          "intersection": [
+            1278.51,
+            2535.36,
+            1607.19,
+            2579.93
+          ],
+          "overlapVsTarget": 1.0,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "left-adjacent",
+              "distancePx": 82.51,
+              "alongOverlapPx": 44.57
+            }
+          ],
+          "primaryContact": {
+            "edge": "left",
+            "relation": "left-adjacent",
+            "distancePx": 82.51,
+            "alongOverlapPx": 44.57
+          },
+          "top": 2535.36,
+          "left": 1278.51
+        },
+        {
+          "id": "G5",
+          "label": "Volcano Bonds",
+          "kind": "trusted-grey",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "intersection": null,
+          "overlapVsTarget": 0.0,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "cuts",
+              "distancePx": 0.0,
+              "alongOverlapPx": 48.0
+            }
+          ],
+          "primaryContact": {
+            "edge": "left",
+            "relation": "cuts",
+            "distancePx": 0.0,
+            "alongOverlapPx": 48.0
+          },
+          "top": 2544.0,
+          "left": 795.0
+        },
+        {
+          "id": "tagged_mike",
+          "label": "I tagged Mike",
+          "kind": "word-sequence",
+          "box": [
+            1258.41,
+            2609.09,
+            1542.06,
+            2653.65
+          ],
+          "intersection": [
+            1258.41,
+            2609.09,
+            1542.06,
+            2653.65
+          ],
+          "overlapVsTarget": 1.0,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "left-adjacent",
+              "distancePx": 62.41,
+              "alongOverlapPx": 44.56
+            }
+          ],
+          "primaryContact": {
+            "edge": "left",
+            "relation": "left-adjacent",
+            "distancePx": 62.41,
+            "alongOverlapPx": 44.56
+          },
+          "top": 2609.09,
+          "left": 1258.41
+        },
+        {
+          "id": "could_sell",
+          "label": "could sell",
+          "kind": "word-sequence",
+          "box": [
+            1285.54,
+            2686.2,
+            1531.3,
+            2726.31
+          ],
+          "intersection": [
+            1285.54,
+            2686.2,
+            1531.3,
+            2726.31
+          ],
+          "overlapVsTarget": 1.0,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "left-adjacent",
+              "distancePx": 89.54,
+              "alongOverlapPx": 40.11
+            }
+          ],
+          "primaryContact": {
+            "edge": "left",
+            "relation": "left-adjacent",
+            "distancePx": 89.54,
+            "alongOverlapPx": 40.11
+          },
+          "top": 2686.2,
+          "left": 1285.54
+        },
+        {
+          "id": "trust_guy",
+          "label": "trust that guy",
+          "kind": "word-sequence",
+          "box": [
+            1245.34,
+            2827.07,
+            1563.72,
+            2871.64
+          ],
+          "intersection": [
+            1245.34,
+            2827.07,
+            1563.72,
+            2871.64
+          ],
+          "overlapVsTarget": 1.0,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "left-adjacent",
+              "distancePx": 49.34,
+              "alongOverlapPx": 44.57
+            },
+            {
+              "edge": "bottom",
+              "relation": "below-adjacent",
+              "distancePx": 78.36,
+              "alongOverlapPx": 318.38
+            }
+          ],
+          "primaryContact": {
+            "edge": "left",
+            "relation": "left-adjacent",
+            "distancePx": 49.34,
+            "alongOverlapPx": 44.57
+          },
+          "top": 2827.07,
+          "left": 1245.34
+        },
+        {
+          "id": "O5",
+          "label": "shitcoiner at heart",
+          "kind": "orange",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "intersection": [
+            1196.0,
+            2932.0,
+            1661.0,
+            2950.0
+          ],
+          "overlapVsTarget": 0.26957,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "cuts",
+              "distancePx": 0.0,
+              "alongOverlapPx": 18.0
+            },
+            {
+              "edge": "bottom",
+              "relation": "cuts",
+              "distancePx": 0.0,
+              "alongOverlapPx": 465.0
+            }
+          ],
+          "primaryContact": {
+            "edge": "bottom",
+            "relation": "cuts",
+            "distancePx": 0.0,
+            "alongOverlapPx": 465.0
+          },
+          "top": 2932.0,
+          "left": 1040.0
+        }
+      ],
+      "streams": {
+        "topDownLabels": "should sell | earnings | pay off the IMF | Volcano Bonds | I tagged Mike | could sell | trust that guy | shitcoiner at heart",
+        "topDownCompact": "should sell | earnings | pay/IMF | G5 Volcano Bonds | tagged Mike | could sell | trust that guy | O5 heart",
+        "topDownInitials": "sepVIcts",
+        "topDownLasts": "lsFselyt",
+        "cutLabels": "should sell | earnings | pay off the IMF | I tagged Mike | could sell | trust that guy | shitcoiner at heart",
+        "cutInitials": "sepIcts",
+        "exactEdgeLabels": "should sell | Volcano Bonds | shitcoiner at heart",
+        "leftEdgeLabels": "should sell | earnings | pay off the IMF | Volcano Bonds | I tagged Mike | could sell | trust that guy | shitcoiner at heart",
+        "bottomEdgeLabels": "trust that guy | shitcoiner at heart"
+      },
+      "instructionTermHits": {}
+    },
+    {
+      "name": "nearest_grid_dx_minus_40",
+      "frame": [
+        1194.0,
+        2398.0,
+        2210.0,
+        2950.0
+      ],
+      "eventCount": 8,
+      "events": [
+        {
+          "id": "should_sell",
+          "label": "should sell",
+          "kind": "word-sequence",
+          "box": [
+            1201.11,
+            2393.42,
+            1439.33,
+            2433.53
+          ],
+          "intersection": [
+            1201.11,
+            2398.0,
+            1439.33,
+            2433.53
+          ],
+          "overlapVsTarget": 0.88581,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "left-adjacent",
+              "distancePx": 7.11,
+              "alongOverlapPx": 35.53
+            },
+            {
+              "edge": "top",
+              "relation": "cuts",
+              "distancePx": 0.0,
+              "alongOverlapPx": 238.22
+            }
+          ],
+          "primaryContact": {
+            "edge": "top",
+            "relation": "cuts",
+            "distancePx": 0.0,
+            "alongOverlapPx": 238.22
+          },
+          "top": 2393.42,
+          "left": 1201.11
+        },
+        {
+          "id": "earnings",
+          "label": "earnings",
+          "kind": "word",
+          "box": [
+            1222.22,
+            2467.15,
+            1398.23,
+            2507.26
+          ],
+          "intersection": [
+            1222.22,
+            2467.15,
+            1398.23,
+            2507.26
+          ],
+          "overlapVsTarget": 1.0,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "left-adjacent",
+              "distancePx": 28.22,
+              "alongOverlapPx": 40.11
+            },
+            {
+              "edge": "top",
+              "relation": "above-adjacent",
+              "distancePx": 69.15,
+              "alongOverlapPx": 176.01
+            }
+          ],
+          "primaryContact": {
+            "edge": "left",
+            "relation": "left-adjacent",
+            "distancePx": 28.22,
+            "alongOverlapPx": 40.11
+          },
+          "top": 2467.15,
+          "left": 1222.22
+        },
+        {
+          "id": "pay_imf",
+          "label": "pay off the IMF",
+          "kind": "word-sequence",
+          "box": [
+            1278.51,
+            2535.36,
+            1607.19,
+            2579.93
+          ],
+          "intersection": [
+            1278.51,
+            2535.36,
+            1607.19,
+            2579.93
+          ],
+          "overlapVsTarget": 1.0,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "left-adjacent",
+              "distancePx": 84.51,
+              "alongOverlapPx": 44.57
+            }
+          ],
+          "primaryContact": {
+            "edge": "left",
+            "relation": "left-adjacent",
+            "distancePx": 84.51,
+            "alongOverlapPx": 44.57
+          },
+          "top": 2535.36,
+          "left": 1278.51
+        },
+        {
+          "id": "G5",
+          "label": "Volcano Bonds",
+          "kind": "trusted-grey",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "intersection": [
+            1194.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "overlapVsTarget": 0.00499,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "cuts",
+              "distancePx": 0.0,
+              "alongOverlapPx": 48.0
+            }
+          ],
+          "primaryContact": {
+            "edge": "left",
+            "relation": "cuts",
+            "distancePx": 0.0,
+            "alongOverlapPx": 48.0
+          },
+          "top": 2544.0,
+          "left": 795.0
+        },
+        {
+          "id": "tagged_mike",
+          "label": "I tagged Mike",
+          "kind": "word-sequence",
+          "box": [
+            1258.41,
+            2609.09,
+            1542.06,
+            2653.65
+          ],
+          "intersection": [
+            1258.41,
+            2609.09,
+            1542.06,
+            2653.65
+          ],
+          "overlapVsTarget": 1.0,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "left-adjacent",
+              "distancePx": 64.41,
+              "alongOverlapPx": 44.56
+            }
+          ],
+          "primaryContact": {
+            "edge": "left",
+            "relation": "left-adjacent",
+            "distancePx": 64.41,
+            "alongOverlapPx": 44.56
+          },
+          "top": 2609.09,
+          "left": 1258.41
+        },
+        {
+          "id": "could_sell",
+          "label": "could sell",
+          "kind": "word-sequence",
+          "box": [
+            1285.54,
+            2686.2,
+            1531.3,
+            2726.31
+          ],
+          "intersection": [
+            1285.54,
+            2686.2,
+            1531.3,
+            2726.31
+          ],
+          "overlapVsTarget": 1.0,
+          "contacts": [],
+          "primaryContact": null,
+          "top": 2686.2,
+          "left": 1285.54
+        },
+        {
+          "id": "trust_guy",
+          "label": "trust that guy",
+          "kind": "word-sequence",
+          "box": [
+            1245.34,
+            2827.07,
+            1563.72,
+            2871.64
+          ],
+          "intersection": [
+            1245.34,
+            2827.07,
+            1563.72,
+            2871.64
+          ],
+          "overlapVsTarget": 1.0,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "left-adjacent",
+              "distancePx": 51.34,
+              "alongOverlapPx": 44.57
+            },
+            {
+              "edge": "bottom",
+              "relation": "below-adjacent",
+              "distancePx": 78.36,
+              "alongOverlapPx": 318.38
+            }
+          ],
+          "primaryContact": {
+            "edge": "left",
+            "relation": "left-adjacent",
+            "distancePx": 51.34,
+            "alongOverlapPx": 44.57
+          },
+          "top": 2827.07,
+          "left": 1245.34
+        },
+        {
+          "id": "O5",
+          "label": "shitcoiner at heart",
+          "kind": "orange",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "intersection": [
+            1194.0,
+            2932.0,
+            1661.0,
+            2950.0
+          ],
+          "overlapVsTarget": 0.27072,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "cuts",
+              "distancePx": 0.0,
+              "alongOverlapPx": 18.0
+            },
+            {
+              "edge": "bottom",
+              "relation": "cuts",
+              "distancePx": 0.0,
+              "alongOverlapPx": 467.0
+            }
+          ],
+          "primaryContact": {
+            "edge": "bottom",
+            "relation": "cuts",
+            "distancePx": 0.0,
+            "alongOverlapPx": 467.0
+          },
+          "top": 2932.0,
+          "left": 1040.0
+        }
+      ],
+      "streams": {
+        "topDownLabels": "should sell | earnings | pay off the IMF | Volcano Bonds | I tagged Mike | could sell | trust that guy | shitcoiner at heart",
+        "topDownCompact": "should sell | earnings | pay/IMF | G5 Volcano Bonds | tagged Mike | could sell | trust that guy | O5 heart",
+        "topDownInitials": "sepVIcts",
+        "topDownLasts": "lsFselyt",
+        "cutLabels": "should sell | earnings | pay off the IMF | Volcano Bonds | I tagged Mike | could sell | trust that guy | shitcoiner at heart",
+        "cutInitials": "sepVIcts",
+        "exactEdgeLabels": "should sell | Volcano Bonds | shitcoiner at heart",
+        "leftEdgeLabels": "should sell | earnings | pay off the IMF | Volcano Bonds | I tagged Mike | trust that guy | shitcoiner at heart",
+        "bottomEdgeLabels": "trust that guy | shitcoiner at heart"
+      },
+      "instructionTermHits": {}
+    },
+    {
+      "name": "best_overlap_dx_minus_160_dy_35",
+      "frame": [
+        1074.0,
+        2433.0,
+        2090.0,
+        2985.0
+      ],
+      "eventCount": 8,
+      "events": [
+        {
+          "id": "should_sell",
+          "label": "should sell",
+          "kind": "word-sequence",
+          "box": [
+            1201.11,
+            2393.42,
+            1439.33,
+            2433.53
+          ],
+          "intersection": [
+            1201.11,
+            2433.0,
+            1439.33,
+            2433.53
+          ],
+          "overlapVsTarget": 0.01321,
+          "contacts": [
+            {
+              "edge": "top",
+              "relation": "cuts",
+              "distancePx": 0.0,
+              "alongOverlapPx": 238.22
+            }
+          ],
+          "primaryContact": {
+            "edge": "top",
+            "relation": "cuts",
+            "distancePx": 0.0,
+            "alongOverlapPx": 238.22
+          },
+          "top": 2393.42,
+          "left": 1201.11
+        },
+        {
+          "id": "earnings",
+          "label": "earnings",
+          "kind": "word",
+          "box": [
+            1222.22,
+            2467.15,
+            1398.23,
+            2507.26
+          ],
+          "intersection": [
+            1222.22,
+            2467.15,
+            1398.23,
+            2507.26
+          ],
+          "overlapVsTarget": 1.0,
+          "contacts": [
+            {
+              "edge": "top",
+              "relation": "above-adjacent",
+              "distancePx": 34.15,
+              "alongOverlapPx": 176.01
+            }
+          ],
+          "primaryContact": {
+            "edge": "top",
+            "relation": "above-adjacent",
+            "distancePx": 34.15,
+            "alongOverlapPx": 176.01
+          },
+          "top": 2467.15,
+          "left": 1222.22
+        },
+        {
+          "id": "pay_imf",
+          "label": "pay off the IMF",
+          "kind": "word-sequence",
+          "box": [
+            1278.51,
+            2535.36,
+            1607.19,
+            2579.93
+          ],
+          "intersection": [
+            1278.51,
+            2535.36,
+            1607.19,
+            2579.93
+          ],
+          "overlapVsTarget": 1.0,
+          "contacts": [],
+          "primaryContact": null,
+          "top": 2535.36,
+          "left": 1278.51
+        },
+        {
+          "id": "G5",
+          "label": "Volcano Bonds",
+          "kind": "trusted-grey",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "intersection": [
+            1074.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "overlapVsTarget": 0.30424,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "cuts",
+              "distancePx": 0.0,
+              "alongOverlapPx": 48.0
+            }
+          ],
+          "primaryContact": {
+            "edge": "left",
+            "relation": "cuts",
+            "distancePx": 0.0,
+            "alongOverlapPx": 48.0
+          },
+          "top": 2544.0,
+          "left": 795.0
+        },
+        {
+          "id": "tagged_mike",
+          "label": "I tagged Mike",
+          "kind": "word-sequence",
+          "box": [
+            1258.41,
+            2609.09,
+            1542.06,
+            2653.65
+          ],
+          "intersection": [
+            1258.41,
+            2609.09,
+            1542.06,
+            2653.65
+          ],
+          "overlapVsTarget": 1.0,
+          "contacts": [],
+          "primaryContact": null,
+          "top": 2609.09,
+          "left": 1258.41
+        },
+        {
+          "id": "could_sell",
+          "label": "could sell",
+          "kind": "word-sequence",
+          "box": [
+            1285.54,
+            2686.2,
+            1531.3,
+            2726.31
+          ],
+          "intersection": [
+            1285.54,
+            2686.2,
+            1531.3,
+            2726.31
+          ],
+          "overlapVsTarget": 1.0,
+          "contacts": [],
+          "primaryContact": null,
+          "top": 2686.2,
+          "left": 1285.54
+        },
+        {
+          "id": "trust_guy",
+          "label": "trust that guy",
+          "kind": "word-sequence",
+          "box": [
+            1245.34,
+            2827.07,
+            1563.72,
+            2871.64
+          ],
+          "intersection": [
+            1245.34,
+            2827.07,
+            1563.72,
+            2871.64
+          ],
+          "overlapVsTarget": 1.0,
+          "contacts": [],
+          "primaryContact": null,
+          "top": 2827.07,
+          "left": 1245.34
+        },
+        {
+          "id": "O5",
+          "label": "shitcoiner at heart",
+          "kind": "orange",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "intersection": [
+            1074.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "overlapVsTarget": 0.94525,
+          "contacts": [
+            {
+              "edge": "left",
+              "relation": "cuts",
+              "distancePx": 0.0,
+              "alongOverlapPx": 50.0
+            },
+            {
+              "edge": "bottom",
+              "relation": "below-adjacent",
+              "distancePx": 3.0,
+              "alongOverlapPx": 587.0
+            }
+          ],
+          "primaryContact": {
+            "edge": "left",
+            "relation": "cuts",
+            "distancePx": 0.0,
+            "alongOverlapPx": 50.0
+          },
+          "top": 2932.0,
+          "left": 1040.0
+        }
+      ],
+      "streams": {
+        "topDownLabels": "should sell | earnings | pay off the IMF | Volcano Bonds | I tagged Mike | could sell | trust that guy | shitcoiner at heart",
+        "topDownCompact": "should sell | earnings | pay/IMF | G5 Volcano Bonds | tagged Mike | could sell | trust that guy | O5 heart",
+        "topDownInitials": "sepVIcts",
+        "topDownLasts": "lsFselyt",
+        "cutLabels": "should sell | earnings | pay off the IMF | Volcano Bonds | I tagged Mike | could sell | trust that guy | shitcoiner at heart",
+        "cutInitials": "sepVIcts",
+        "exactEdgeLabels": "should sell | Volcano Bonds | shitcoiner at heart",
+        "leftEdgeLabels": "Volcano Bonds | shitcoiner at heart",
+        "bottomEdgeLabels": "shitcoiner at heart"
+      },
+      "instructionTermHits": {}
+    }
+  ],
+  "currentVsDxMinus38TopDownStable": true,
+  "allInstructionTermHits": {},
+  "overlay": "analysis_outputs/source_audit/tricontact_frame_contact_stability/tricontact_frame_contact_stability_overlay.jpg",
+  "assessment": [
+    "The exact dx=-38 tri-contact repair preserves the same top-down corridor ladder as the current frame.",
+    "Current compact stream: `should sell | earnings | pay/IMF | G5 Volcano Bonds | tagged Mike | could sell | trust that guy | O5 heart`.",
+    "dx=-38 compact stream: `should sell | earnings | pay/IMF | G5 Volcano Bonds | tagged Mike | could sell | trust that guy | O5 heart`.",
+    "The relation changes are geometric, not semantic: #4 words become slightly more edge-adjacent while G5 becomes exact edge contact and O5 remains bottom-clipped.",
+    "No read/take/fold/mirror/word/letter/key instruction appears in the repaired contact streams.",
+    "The heavier dx=-160/dy=35 fit changes contacts more aggressively and remains less source-like because it breaks the M3 tri-contact signature."
+  ],
+  "nextMove": "Use dx=-38/-40 as a source-registration acceptance test only. The next high-value move is still obtaining or inspecting a higher-resolution Canva/original-layout image or a physical scan/photo that naturally explains the same contacts."
+}

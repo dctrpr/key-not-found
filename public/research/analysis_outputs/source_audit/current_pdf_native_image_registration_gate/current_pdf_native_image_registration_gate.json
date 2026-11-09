@@ -1,0 +1,1134 @@
+{
+  "createdAt": "2026-05-24T07:07:47",
+  "scope": "Embedded PDF page image placement, exact page 75 -> page 76 mirror registration, active boxes, and C9/OVERDOSE projected slots.",
+  "inputs": {
+    "pdfs": [
+      "magazine.pdf",
+      "keyser bitcoin .pdf",
+      "analysis_outputs/external_clues/google_drive_article_download.pdf"
+    ],
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "c9HeaderGlyphSlotGate": "analysis_outputs/source_audit/c9_header_glyph_slot_gate/c9_header_glyph_slot_gate.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "decision": "current_pdf_native_image_registration_no_selector",
+  "summary": {
+    "decision": "current_pdf_native_image_registration_no_selector",
+    "pdfCount": 3,
+    "pairCount": 3,
+    "activeRowCount": 12,
+    "overdoseSlotRowCount": 24,
+    "sameImageRectPairCount": 3,
+    "placementOffsetPairCount": 0,
+    "sideMarginPairCount": 2,
+    "totalActiveAboveControlP95Count": 2,
+    "totalActiveAtLeast10Count": 2,
+    "totalActiveAtLeast25Count": 2,
+    "allFourAboveControlP95PdfCount": 0,
+    "allFourAtLeast10PdfCount": 0,
+    "maxActiveSourceOnlyCoverage": 0.579953046,
+    "meanActiveSourceOnlyCoverage": 0.118712224,
+    "maxControlSourceOnlyCoverage": 0.879467997,
+    "maxOverdoseSlotSourceOnlyCoverage": 0.634145829,
+    "overdoseSlotAtLeast25Count": 2,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0,
+    "fingerprint": "pdfs=3|pairs=3|activeRows=12|slots=24|sameRects=3|offsetPairs=0|sideMargins=2|activeMax=0.5800|activeMean=0.1187|activeP95=2|active10=2|active25=2|allFourP95=0|allFour10=0|controlMax=0.8795|slotMax=0.6341|slot25=2|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "fingerprint": "pdfs=3|pairs=3|activeRows=12|slots=24|sameRects=3|offsetPairs=0|sideMargins=2|activeMax=0.5800|activeMean=0.1187|activeP95=2|active10=2|active25=2|allFourP95=0|allFour10=0|controlMax=0.8795|slotMax=0.6341|slot25=2|sourceR3=0|triggers=0/9|selectors=0",
+  "pdfRows": [
+    {
+      "pdf": "magazine.pdf",
+      "imageSize": [
+        2544,
+        3264
+      ],
+      "pair": {
+        "pdf": "magazine.pdf",
+        "page75": {
+          "pdf": "magazine.pdf",
+          "pdfPage": 3,
+          "articlePage": 75,
+          "rotation": 180,
+          "pageRect": [
+            0.0,
+            0.0,
+            610.56,
+            783.36
+          ],
+          "cropBox": [
+            0.0,
+            0.0,
+            610.56,
+            783.36
+          ],
+          "imageXref": 30,
+          "imageSize": [
+            2544,
+            3264
+          ],
+          "rawImageSize": [
+            2544,
+            3264
+          ],
+          "imageRect": [
+            0.0,
+            0.0,
+            610.56,
+            783.36
+          ],
+          "imageCoverage": 1.0,
+          "leftMarginPt": 0.0,
+          "rightMarginPt": 0.0,
+          "topMarginPt": 0.0,
+          "bottomMarginPt": 0.0,
+          "orientationMode": "rotate180",
+          "orientationChosenDiff": 0.2991,
+          "orientationOtherDiff": 87.2052
+        },
+        "page76": {
+          "pdf": "magazine.pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "rotation": 180,
+          "pageRect": [
+            0.0,
+            0.0,
+            610.56,
+            783.36
+          ],
+          "cropBox": [
+            0.0,
+            0.0,
+            610.56,
+            783.36
+          ],
+          "imageXref": 37,
+          "imageSize": [
+            2544,
+            3264
+          ],
+          "rawImageSize": [
+            2544,
+            3264
+          ],
+          "imageRect": [
+            0.0,
+            0.0,
+            610.56,
+            783.36
+          ],
+          "imageCoverage": 1.0,
+          "leftMarginPt": 0.0,
+          "rightMarginPt": 0.0,
+          "topMarginPt": 0.0,
+          "bottomMarginPt": 0.0,
+          "orientationMode": "rotate180",
+          "orientationChosenDiff": 0.279,
+          "orientationOtherDiff": 75.6642
+        },
+        "sameImageRect": true,
+        "sameImageSize": true,
+        "sameRotation": true,
+        "sameOrientationMode": true,
+        "sideMarginsPresent": false,
+        "imageRectDeltaPt": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "activeRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "nativeBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceOnlyCoverage": 0.004238044,
+          "controlCount": 156,
+          "controlP95SourceOnlyCoverage": 0.503758476,
+          "controlMaxSourceOnlyCoverage": 0.868352962,
+          "controlPercentile": 0.269230769,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "nativeBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceOnlyCoverage": 0.0,
+          "controlCount": 321,
+          "controlP95SourceOnlyCoverage": 0.477145862,
+          "controlMaxSourceOnlyCoverage": 0.856160505,
+          "controlPercentile": 0.345794393,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "nativeBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceOnlyCoverage": 0.005766833,
+          "controlCount": 181,
+          "controlP95SourceOnlyCoverage": 0.530496675,
+          "controlMaxSourceOnlyCoverage": 0.879467997,
+          "controlPercentile": 0.320441989,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "nativeBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceOnlyCoverage": 0.003188406,
+          "controlCount": 106,
+          "controlP95SourceOnlyCoverage": 0.435909823,
+          "controlMaxSourceOnlyCoverage": 0.654009662,
+          "controlPercentile": 0.254716981,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false
+        }
+      ],
+      "slotRows": [
+        {
+          "target": "slot0_O",
+          "slotIndex": 0,
+          "slotLetter": "O",
+          "referenceBox": [
+            294.0,
+            2176.81,
+            538.5697177074414,
+            3023.73
+          ],
+          "nativeBox": [
+            294.0,
+            2176.81,
+            538.57,
+            3023.73
+          ],
+          "sourceOnlyCoverage": 0.0,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot1_V",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "referenceBox": [
+            538.5697177074414,
+            2176.81,
+            783.0000000000016,
+            3023.73
+          ],
+          "nativeBox": [
+            538.57,
+            2176.81,
+            783.0,
+            3023.73
+          ],
+          "sourceOnlyCoverage": 0.003116109,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot2_E",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "referenceBox": [
+            783.0000000000016,
+            2176.81,
+            1027.569717707443,
+            3023.73
+          ],
+          "nativeBox": [
+            783.0,
+            2176.81,
+            1027.57,
+            3023.73
+          ],
+          "sourceOnlyCoverage": 0.074871696,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot3_R",
+          "slotIndex": 3,
+          "slotLetter": "R",
+          "referenceBox": [
+            1027.569717707443,
+            2176.81,
+            1271.9999999999968,
+            3023.73
+          ],
+          "nativeBox": [
+            1027.57,
+            2176.81,
+            1272.0,
+            3023.73
+          ],
+          "sourceOnlyCoverage": 0.113820233,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot4_D",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "referenceBox": [
+            1271.9999999999968,
+            2176.81,
+            1516.5697177074383,
+            3023.73
+          ],
+          "nativeBox": [
+            1272.0,
+            2176.81,
+            1516.57,
+            3023.73
+          ],
+          "sourceOnlyCoverage": 0.107322362,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot5_O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "referenceBox": [
+            1516.5697177074383,
+            2176.81,
+            1760.9999999999984,
+            3023.73
+          ],
+          "nativeBox": [
+            1516.57,
+            2176.81,
+            1761.0,
+            3023.73
+          ],
+          "sourceOnlyCoverage": 0.165923123,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot6_S",
+          "slotIndex": 6,
+          "slotLetter": "S",
+          "referenceBox": [
+            1760.9999999999984,
+            2176.81,
+            2005.5697177074398,
+            3023.73
+          ],
+          "nativeBox": [
+            1761.0,
+            2176.81,
+            2005.57,
+            3023.73
+          ],
+          "sourceOnlyCoverage": 0.248729008,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot7_E",
+          "slotIndex": 7,
+          "slotLetter": "E",
+          "referenceBox": [
+            2005.5697177074398,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "nativeBox": [
+            2005.57,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "sourceOnlyCoverage": 0.078473687,
+          "isAtLeast25": false
+        }
+      ],
+      "activeAboveControlP95Count": 0,
+      "activeAtLeast10Count": 0,
+      "activeAtLeast25Count": 0,
+      "maxActiveSourceOnlyCoverage": 0.005766833,
+      "meanActiveSourceOnlyCoverage": 0.003298321,
+      "maxControlSourceOnlyCoverage": 0.879467997,
+      "maxOverdoseSlotSourceOnlyCoverage": 0.248729008,
+      "overdoseSlotAtLeast25Count": 0
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "pair": {
+        "pdf": "keyser bitcoin .pdf",
+        "page75": {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 3,
+          "articlePage": 75,
+          "rotation": 0,
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "cropBox": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageXref": 57,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "rawImageSize": [
+            2040,
+            2805
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "imageCoverage": 0.941176,
+          "leftMarginPt": 18.0,
+          "rightMarginPt": 18.0,
+          "topMarginPt": 0.0,
+          "bottomMarginPt": 0.0,
+          "orientationMode": "identity",
+          "orientationChosenDiff": 138.8351,
+          "orientationOtherDiff": 144.0346
+        },
+        "page76": {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "rotation": 0,
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "cropBox": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageXref": 59,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "rawImageSize": [
+            2040,
+            2805
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "imageCoverage": 0.941176,
+          "leftMarginPt": 18.0,
+          "rightMarginPt": 18.0,
+          "topMarginPt": 0.0,
+          "bottomMarginPt": 0.0,
+          "orientationMode": "identity",
+          "orientationChosenDiff": 164.4675,
+          "orientationOtherDiff": 166.8108
+        },
+        "sameImageRect": true,
+        "sameImageSize": true,
+        "sameRotation": true,
+        "sameOrientationMode": true,
+        "sideMarginsPresent": true,
+        "imageRectDeltaPt": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "activeRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "nativeBox": [
+            1069.72,
+            1870.86,
+            1444.2,
+            1912.11
+          ],
+          "sourceOnlyCoverage": 0.579953046,
+          "controlCount": 156,
+          "controlP95SourceOnlyCoverage": 0.467748355,
+          "controlMaxSourceOnlyCoverage": 0.533463415,
+          "controlPercentile": 1.0,
+          "isAboveControlP95": true,
+          "isAtLeast10": true,
+          "isAtLeast25": true
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "nativeBox": [
+            343.21,
+            2060.78,
+            554.1,
+            2101.17
+          ],
+          "sourceOnlyCoverage": 0.055924171,
+          "controlCount": 321,
+          "controlP95SourceOnlyCoverage": 0.719801179,
+          "controlMaxSourceOnlyCoverage": 0.862096867,
+          "controlPercentile": 0.507788162,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "nativeBox": [
+            637.5,
+            2186.25,
+            959.06,
+            2227.5
+          ],
+          "sourceOnlyCoverage": 0.069425901,
+          "controlCount": 181,
+          "controlP95SourceOnlyCoverage": 0.562263293,
+          "controlMaxSourceOnlyCoverage": 0.623356888,
+          "controlPercentile": 0.397790055,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "nativeBox": [
+            833.96,
+            2519.69,
+            1331.93,
+            2562.66
+          ],
+          "sourceOnlyCoverage": 0.000373587,
+          "controlCount": 106,
+          "controlP95SourceOnlyCoverage": 0.359519473,
+          "controlMaxSourceOnlyCoverage": 0.397450266,
+          "controlPercentile": 0.122641509,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false
+        }
+      ],
+      "slotRows": [
+        {
+          "target": "slot0_O",
+          "slotIndex": 0,
+          "slotLetter": "O",
+          "referenceBox": [
+            294.0,
+            2176.81,
+            538.5697177074414,
+            3023.73
+          ],
+          "nativeBox": [
+            235.75,
+            1870.7,
+            431.87,
+            2598.52
+          ],
+          "sourceOnlyCoverage": 0.634145829,
+          "isAtLeast25": true
+        },
+        {
+          "target": "slot1_V",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "referenceBox": [
+            538.5697177074414,
+            2176.81,
+            783.0000000000016,
+            3023.73
+          ],
+          "nativeBox": [
+            431.87,
+            1870.7,
+            627.88,
+            2598.52
+          ],
+          "sourceOnlyCoverage": 0.000420498,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot2_E",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "referenceBox": [
+            783.0000000000016,
+            2176.81,
+            1027.569717707443,
+            3023.73
+          ],
+          "nativeBox": [
+            627.88,
+            1870.7,
+            823.99,
+            2598.52
+          ],
+          "sourceOnlyCoverage": 0.049002018,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot3_R",
+          "slotIndex": 3,
+          "slotLetter": "R",
+          "referenceBox": [
+            1027.569717707443,
+            2176.81,
+            1271.9999999999968,
+            3023.73
+          ],
+          "nativeBox": [
+            823.99,
+            1870.7,
+            1020.0,
+            2598.52
+          ],
+          "sourceOnlyCoverage": 0.085585333,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot4_D",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "referenceBox": [
+            1271.9999999999968,
+            2176.81,
+            1516.5697177074383,
+            3023.73
+          ],
+          "nativeBox": [
+            1020.0,
+            1870.7,
+            1216.12,
+            2598.52
+          ],
+          "sourceOnlyCoverage": 0.115882205,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot5_O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "referenceBox": [
+            1516.5697177074383,
+            2176.81,
+            1760.9999999999984,
+            3023.73
+          ],
+          "nativeBox": [
+            1216.12,
+            1870.7,
+            1412.12,
+            2598.52
+          ],
+          "sourceOnlyCoverage": 0.176405865,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot6_S",
+          "slotIndex": 6,
+          "slotLetter": "S",
+          "referenceBox": [
+            1760.9999999999984,
+            2176.81,
+            2005.5697177074398,
+            3023.73
+          ],
+          "nativeBox": [
+            1412.12,
+            1870.7,
+            1608.24,
+            2598.52
+          ],
+          "sourceOnlyCoverage": 0.237861628,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot7_E",
+          "slotIndex": 7,
+          "slotLetter": "E",
+          "referenceBox": [
+            2005.5697177074398,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "nativeBox": [
+            1608.24,
+            1870.7,
+            1804.25,
+            2598.52
+          ],
+          "sourceOnlyCoverage": 0.108138035,
+          "isAtLeast25": false
+        }
+      ],
+      "activeAboveControlP95Count": 1,
+      "activeAtLeast10Count": 1,
+      "activeAtLeast25Count": 1,
+      "maxActiveSourceOnlyCoverage": 0.579953046,
+      "meanActiveSourceOnlyCoverage": 0.176419176,
+      "maxControlSourceOnlyCoverage": 0.862096867,
+      "maxOverdoseSlotSourceOnlyCoverage": 0.634145829,
+      "overdoseSlotAtLeast25Count": 1
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "pair": {
+        "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "page75": {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 3,
+          "articlePage": 75,
+          "rotation": 0,
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "cropBox": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageXref": 57,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "rawImageSize": [
+            2040,
+            2805
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "imageCoverage": 0.941176,
+          "leftMarginPt": 18.0,
+          "rightMarginPt": 18.0,
+          "topMarginPt": 0.0,
+          "bottomMarginPt": 0.0,
+          "orientationMode": "identity",
+          "orientationChosenDiff": 138.8351,
+          "orientationOtherDiff": 144.0346
+        },
+        "page76": {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "rotation": 0,
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "cropBox": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageXref": 59,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "rawImageSize": [
+            2040,
+            2805
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "imageCoverage": 0.941176,
+          "leftMarginPt": 18.0,
+          "rightMarginPt": 18.0,
+          "topMarginPt": 0.0,
+          "bottomMarginPt": 0.0,
+          "orientationMode": "identity",
+          "orientationChosenDiff": 164.4675,
+          "orientationOtherDiff": 166.8108
+        },
+        "sameImageRect": true,
+        "sameImageSize": true,
+        "sameRotation": true,
+        "sameOrientationMode": true,
+        "sideMarginsPresent": true,
+        "imageRectDeltaPt": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "activeRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "nativeBox": [
+            1069.72,
+            1870.86,
+            1444.2,
+            1912.11
+          ],
+          "sourceOnlyCoverage": 0.579953046,
+          "controlCount": 156,
+          "controlP95SourceOnlyCoverage": 0.467748355,
+          "controlMaxSourceOnlyCoverage": 0.533463415,
+          "controlPercentile": 1.0,
+          "isAboveControlP95": true,
+          "isAtLeast10": true,
+          "isAtLeast25": true
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "nativeBox": [
+            343.21,
+            2060.78,
+            554.1,
+            2101.17
+          ],
+          "sourceOnlyCoverage": 0.055924171,
+          "controlCount": 321,
+          "controlP95SourceOnlyCoverage": 0.719801179,
+          "controlMaxSourceOnlyCoverage": 0.862096867,
+          "controlPercentile": 0.507788162,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "nativeBox": [
+            637.5,
+            2186.25,
+            959.06,
+            2227.5
+          ],
+          "sourceOnlyCoverage": 0.069425901,
+          "controlCount": 181,
+          "controlP95SourceOnlyCoverage": 0.562263293,
+          "controlMaxSourceOnlyCoverage": 0.623356888,
+          "controlPercentile": 0.397790055,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "nativeBox": [
+            833.96,
+            2519.69,
+            1331.93,
+            2562.66
+          ],
+          "sourceOnlyCoverage": 0.000373587,
+          "controlCount": 106,
+          "controlP95SourceOnlyCoverage": 0.359519473,
+          "controlMaxSourceOnlyCoverage": 0.397450266,
+          "controlPercentile": 0.122641509,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false
+        }
+      ],
+      "slotRows": [
+        {
+          "target": "slot0_O",
+          "slotIndex": 0,
+          "slotLetter": "O",
+          "referenceBox": [
+            294.0,
+            2176.81,
+            538.5697177074414,
+            3023.73
+          ],
+          "nativeBox": [
+            235.75,
+            1870.7,
+            431.87,
+            2598.52
+          ],
+          "sourceOnlyCoverage": 0.634145829,
+          "isAtLeast25": true
+        },
+        {
+          "target": "slot1_V",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "referenceBox": [
+            538.5697177074414,
+            2176.81,
+            783.0000000000016,
+            3023.73
+          ],
+          "nativeBox": [
+            431.87,
+            1870.7,
+            627.88,
+            2598.52
+          ],
+          "sourceOnlyCoverage": 0.000420498,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot2_E",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "referenceBox": [
+            783.0000000000016,
+            2176.81,
+            1027.569717707443,
+            3023.73
+          ],
+          "nativeBox": [
+            627.88,
+            1870.7,
+            823.99,
+            2598.52
+          ],
+          "sourceOnlyCoverage": 0.049002018,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot3_R",
+          "slotIndex": 3,
+          "slotLetter": "R",
+          "referenceBox": [
+            1027.569717707443,
+            2176.81,
+            1271.9999999999968,
+            3023.73
+          ],
+          "nativeBox": [
+            823.99,
+            1870.7,
+            1020.0,
+            2598.52
+          ],
+          "sourceOnlyCoverage": 0.085585333,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot4_D",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "referenceBox": [
+            1271.9999999999968,
+            2176.81,
+            1516.5697177074383,
+            3023.73
+          ],
+          "nativeBox": [
+            1020.0,
+            1870.7,
+            1216.12,
+            2598.52
+          ],
+          "sourceOnlyCoverage": 0.115882205,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot5_O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "referenceBox": [
+            1516.5697177074383,
+            2176.81,
+            1760.9999999999984,
+            3023.73
+          ],
+          "nativeBox": [
+            1216.12,
+            1870.7,
+            1412.12,
+            2598.52
+          ],
+          "sourceOnlyCoverage": 0.176405865,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot6_S",
+          "slotIndex": 6,
+          "slotLetter": "S",
+          "referenceBox": [
+            1760.9999999999984,
+            2176.81,
+            2005.5697177074398,
+            3023.73
+          ],
+          "nativeBox": [
+            1412.12,
+            1870.7,
+            1608.24,
+            2598.52
+          ],
+          "sourceOnlyCoverage": 0.237861628,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot7_E",
+          "slotIndex": 7,
+          "slotLetter": "E",
+          "referenceBox": [
+            2005.5697177074398,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "nativeBox": [
+            1608.24,
+            1870.7,
+            1804.25,
+            2598.52
+          ],
+          "sourceOnlyCoverage": 0.108138035,
+          "isAtLeast25": false
+        }
+      ],
+      "activeAboveControlP95Count": 1,
+      "activeAtLeast10Count": 1,
+      "activeAtLeast25Count": 1,
+      "maxActiveSourceOnlyCoverage": 0.579953046,
+      "meanActiveSourceOnlyCoverage": 0.176419176,
+      "maxControlSourceOnlyCoverage": 0.862096867,
+      "maxOverdoseSlotSourceOnlyCoverage": 0.634145829,
+      "overdoseSlotAtLeast25Count": 1
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/current_pdf_native_image_registration_gate/current_pdf_native_image_registration_gate_sheet.jpg"
+}

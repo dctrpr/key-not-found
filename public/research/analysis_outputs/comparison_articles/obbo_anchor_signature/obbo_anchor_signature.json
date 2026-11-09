@@ -1,0 +1,319 @@
+{
+  "createdAt": "2026-05-20T19:24:39",
+  "scope": "visual recurrence audit for the page-76 O-B-B-O anchor signature using existing comparison body-highlighter boxes; no key derivation",
+  "sources": {
+    "bodyHighlighterGrammar": "analysis_outputs/comparison_articles/body_highlighter_grammar/body_highlighter_grammar.json",
+    "anchorAdjacency": "analysis_outputs/source_audit/page76_anchor_adjacency_units/page76_anchor_adjacency_units.json"
+  },
+  "template": [
+    {
+      "id": "buying_dip",
+      "color": "O",
+      "box": [
+        1328,
+        2160,
+        1760,
+        2226
+      ]
+    },
+    {
+      "id": "one_billion",
+      "color": "B",
+      "box": [
+        430,
+        2400,
+        690,
+        2447
+      ]
+    },
+    {
+      "id": "volcano_bonds",
+      "color": "B",
+      "box": [
+        795,
+        2544,
+        1196,
+        2592
+      ]
+    },
+    {
+      "id": "shitcoiner_heart",
+      "color": "O",
+      "box": [
+        1040,
+        2932,
+        1661,
+        2982
+      ]
+    }
+  ],
+  "templateCompactStreams": {
+    "visualOrderColors": "OBBO",
+    "visualOrderPhraseInitials": "btd 1b vb sah",
+    "visualOrderPhraseEdges": "bp 1n vs st",
+    "visualOrderRightBoundaryWords": "- | in | to | -",
+    "visualOrderLeftBoundaryWords": "he's | - | collateralized | a",
+    "visualOrderAboveCenterWords": "on | was | future | trust",
+    "visualOrderBelowCenterWords": "announced | billions | those | -",
+    "blackThenOrangeInitials": "1b vb btd sah",
+    "orangeThenBlackInitials": "btd sah 1b vb"
+  },
+  "summary": {
+    "pagesWithObbo": 3,
+    "issue24PagesWithObbo": 3,
+    "independentPagesWithObbo": 0,
+    "page76BestScore": 0.015,
+    "bestIndependentScore": null,
+    "bestIndependent": null
+  },
+  "closestMatches": [
+    {
+      "source": "issue24_toxic_af",
+      "page": 4,
+      "path": "analysis_outputs/comparison_articles/issue24_toxic_af/page_04.jpg",
+      "grammarScore": 15,
+      "orangeLineBands": 5,
+      "darkLineBands": 5,
+      "obboCount": 32,
+      "bestObbo": {
+        "score": 0.015,
+        "scoreBreakdown": {
+          "score": 0.015,
+          "positionDistance": 0.0109,
+          "widthPenalty": 0.0165,
+          "lowerPenalty": 0.0
+        },
+        "boxes": [
+          [
+            1334,
+            2176,
+            1803,
+            2227
+          ],
+          [
+            430,
+            2399,
+            690,
+            2447
+          ],
+          [
+            794,
+            2543,
+            1196,
+            2591
+          ],
+          [
+            1037,
+            2931,
+            1662,
+            2984
+          ]
+        ],
+        "centers": [
+          [
+            1568.5,
+            2201.5
+          ],
+          [
+            560.0,
+            2423.0
+          ],
+          [
+            995.0,
+            2567.0
+          ],
+          [
+            1349.5,
+            2957.5
+          ]
+        ],
+        "normalizedCenters": [
+          [
+            0.617,
+            0.674
+          ],
+          [
+            0.22,
+            0.742
+          ],
+          [
+            0.391,
+            0.786
+          ],
+          [
+            0.53,
+            0.906
+          ]
+        ]
+      }
+    },
+    {
+      "source": "issue24_toxic_af",
+      "page": 3,
+      "path": "analysis_outputs/comparison_articles/issue24_toxic_af/page_03.jpg",
+      "grammarScore": 19,
+      "orangeLineBands": 8,
+      "darkLineBands": 3,
+      "obboCount": 20,
+      "bestObbo": {
+        "score": 1.7,
+        "scoreBreakdown": {
+          "score": 1.7,
+          "positionDistance": 1.1794,
+          "widthPenalty": 0.6423,
+          "lowerPenalty": 0.36
+        },
+        "boxes": [
+          [
+            1572,
+            983,
+            2078,
+            1034
+          ],
+          [
+            367,
+            1269,
+            1747,
+            1323
+          ],
+          [
+            452,
+            2343,
+            1150,
+            2391
+          ],
+          [
+            449,
+            2413,
+            927,
+            2464
+          ]
+        ],
+        "centers": [
+          [
+            1825.0,
+            1008.5
+          ],
+          [
+            1057.0,
+            1296.0
+          ],
+          [
+            801.0,
+            2367.0
+          ],
+          [
+            688.0,
+            2438.5
+          ]
+        ],
+        "normalizedCenters": [
+          [
+            0.717,
+            0.309
+          ],
+          [
+            0.415,
+            0.397
+          ],
+          [
+            0.315,
+            0.725
+          ],
+          [
+            0.27,
+            0.747
+          ]
+        ]
+      }
+    },
+    {
+      "source": "issue24_toxic_af",
+      "page": 6,
+      "path": "analysis_outputs/comparison_articles/issue24_toxic_af/page_06.jpg",
+      "grammarScore": 13,
+      "orangeLineBands": 5,
+      "darkLineBands": 3,
+      "obboCount": 12,
+      "bestObbo": {
+        "score": 2.3305,
+        "scoreBreakdown": {
+          "score": 2.3305,
+          "positionDistance": 1.6867,
+          "widthPenalty": 0.4151,
+          "lowerPenalty": 0.54
+        },
+        "boxes": [
+          [
+            1136,
+            955,
+            1693,
+            1009
+          ],
+          [
+            1306,
+            1099,
+            1885,
+            1150
+          ],
+          [
+            766,
+            1105,
+            1196,
+            1153
+          ],
+          [
+            998,
+            1995,
+            2202,
+            2054
+          ]
+        ],
+        "centers": [
+          [
+            1414.5,
+            982.0
+          ],
+          [
+            1595.5,
+            1124.5
+          ],
+          [
+            981.0,
+            1129.0
+          ],
+          [
+            1600.0,
+            2024.5
+          ]
+        ],
+        "normalizedCenters": [
+          [
+            0.556,
+            0.301
+          ],
+          [
+            0.627,
+            0.345
+          ],
+          [
+            0.386,
+            0.346
+          ],
+          [
+            0.629,
+            0.62
+          ]
+        ]
+      }
+    }
+  ],
+  "assessment": [
+    "The active page-76 anchor order is O-B-B-O, but OBBO as a color sequence is not unique by itself.",
+    "When normalized position is included, Issue 24 page 4 is the expected closest match because it contains the trusted page-76 anchors.",
+    "Independent comparison pages can produce OBBO only when they have enough colored body bands, but their best matches are weak layout/style recurrences rather than the lower page-76 amount/bond/action/identity corridor.",
+    "OBBO should remain a local page-76 signature, not an extraction rule. It is useful for future source comparison only if the same four semantic anchors are present."
+  ],
+  "decision": "Do not use OBBO alone as a selector; keep it as a source-comparison signature tied to the four page-76 semantic anchors.",
+  "nextMove": "Inspect p80/package or pill-count mechanics only where they can choose among the four page-76 anchors; do not compare broad colored layout metrics further."
+}

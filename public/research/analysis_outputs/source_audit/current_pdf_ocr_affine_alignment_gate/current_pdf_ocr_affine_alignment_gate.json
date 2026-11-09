@@ -1,0 +1,1353 @@
+{
+  "createdAt": "2026-05-21T15:33:03",
+  "scope": "Current PDF OCR affine alignment gate. Fits page-76 PDF OCR word coordinates to the high-resolution 3D word map and tests aligned OCR words against O4/B4/G5/O5. No key/hash/seed/WIF/address/BIP39/candidate work.",
+  "inputs": {
+    "pdfs": [
+      "magazine.pdf",
+      "keyser bitcoin .pdf",
+      "analysis_outputs/external_clues/google_drive_article_download.pdf"
+    ],
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "articleMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "summary": {
+    "pdfCount": 3,
+    "fitAvailableCount": 2,
+    "totalTokenPairCount": 268,
+    "totalInlierCount": 268,
+    "targetWordHitRowCount": 6,
+    "targetExactComponentRowCount": 0,
+    "targetStrictInstructionRowCount": 0,
+    "strictInstructionTermsAfterAlignment": [],
+    "minimumComponentDistanceToOwnTargetBoxPx": 42.205,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "pdfOcrAffineAlignmentFingerprint": "pdfs=3|fits=2|pairs=268|inliers=268|targetWordRows=6|targetComponentRows=0|targetStrictRows=0|strictAfter=-|minCompDist=42.205|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "records": [
+    {
+      "pdfRecord": {
+        "pdf": "magazine.pdf",
+        "sha256": "a0714dcbe503ecdff846f0f77334e2d1d259937d7fe5130258212f24c137716e",
+        "rotation": 180,
+        "imageRect": [
+          0.0,
+          0.0,
+          610.56,
+          783.36
+        ],
+        "imageSize": [
+          2544,
+          3264
+        ]
+      },
+      "wordCount": 239,
+      "pairSamples": [],
+      "fit": {
+        "fitAvailable": false,
+        "reason": "too_few_token_pairs",
+        "pairCount": 0,
+        "inlierCount": 0
+      },
+      "evaluation": {
+        "targetRows": [],
+        "componentRows": [],
+        "strictInstructionRows": [],
+        "targetWordHitRowCount": 0,
+        "targetExactComponentRowCount": 0,
+        "targetStrictInstructionRowCount": 0
+      }
+    },
+    {
+      "pdfRecord": {
+        "pdf": "keyser bitcoin .pdf",
+        "sha256": "0078fe23401fab4882303ae038df0de6b439f498acb852d3b226c366caf5ab5c",
+        "rotation": 0,
+        "imageRect": [
+          18.0,
+          0.0,
+          594.0,
+          792.0
+        ],
+        "imageSize": [
+          2040,
+          2805
+        ]
+      },
+      "wordCount": 263,
+      "pairSamples": [
+        {
+          "token": "2011",
+          "pdfText": "2011)",
+          "mapText": "2011)",
+          "source": [
+            2139.700654347738,
+            904.9543789950283
+          ],
+          "target": [
+            2101.315,
+            999.7950000000001
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "aehbbelelnabetomolomomea",
+          "pdfText": "AE-hbbelel-nabetomolomomea",
+          "mapText": "AE-hbbelel-nabetomolomomea",
+          "source": [
+            791.1537475585938,
+            1379.717939897017
+          ],
+          "target": [
+            822.54,
+            1512.6950000000002
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "announced",
+          "pdfText": "announced",
+          "mapText": "announced",
+          "source": [
+            1588.3038533528645,
+            2076.946651574337
+          ],
+          "target": [
+            1578.4450000000002,
+            2265.9300000000003
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "back",
+          "pdfText": "back",
+          "mapText": "back",
+          "source": [
+            1944.8878199259439,
+            904.9543789950283
+          ],
+          "target": [
+            1916.58,
+            999.7950000000001
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "bank",
+          "pdfText": "Bank",
+          "mapText": "Bank",
+          "source": [
+            1626.675801595052,
+            1312.4597278941762
+          ],
+          "target": [
+            1614.835,
+            1440.0349999999999
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "bankers",
+          "pdfText": "bankers",
+          "mapText": "bankers",
+          "source": [
+            1515.5345929463704,
+            681.419873786695
+          ],
+          "target": [
+            1509.445,
+            758.3050000000001
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "because",
+          "pdfText": "because",
+          "mapText": "because",
+          "source": [
+            714.577356338501,
+            2700.339599609375
+          ],
+          "target": [
+            749.925,
+            2939.3999999999996
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "been",
+          "pdfText": "been",
+          "mapText": "been",
+          "source": [
+            1508.3795471191406,
+            1176.9543789950285
+          ],
+          "target": [
+            1502.655,
+            1293.645
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "being",
+          "pdfText": "being",
+          "mapText": "being",
+          "source": [
+            2125.6529235839844,
+            613.1726111209754
+          ],
+          "target": [
+            2087.99,
+            684.575
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "believe",
+          "pdfText": "believe",
+          "mapText": "believe",
+          "source": [
+            647.0651531219482,
+            1804.9466515743372
+          ],
+          "target": [
+            685.9100000000001,
+            1972.08
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "billions",
+          "pdfText": "billions",
+          "mapText": "billions",
+          "source": [
+            522.2264887491862,
+            2281.768931995739
+          ],
+          "target": [
+            567.53,
+            2487.205
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "biteoiny",
+          "pdfText": "Biteoiny",
+          "mapText": "Biteoiny",
+          "source": [
+            891.2265345255533,
+            406.29183127663356
+          ],
+          "target": [
+            917.44,
+            461.08
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "brown",
+          "pdfText": "Brown",
+          "mapText": "Brown",
+          "source": [
+            1487.181151072184,
+            546.9034497810133
+          ],
+          "target": [
+            1482.5549999999998,
+            612.9849999999999
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "bukele",
+          "pdfText": "Bukele",
+          "mapText": "Bukele",
+          "source": [
+            1163.7288564046225,
+            2076.946651574337
+          ],
+          "target": [
+            1175.84,
+            2265.9300000000003
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "bunch",
+          "pdfText": "bunch",
+          "mapText": "bunch",
+          "source": [
+            493.9616012573242,
+            2551.7908306699815
+          ],
+          "target": [
+            540.725,
+            2778.915
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "burning",
+          "pdfText": "burning",
+          "mapText": "burning",
+          "source": [
+            1937.4145444234214,
+            681.419873786695
+          ],
+          "target": [
+            1909.495,
+            758.3050000000001
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "buying",
+          "pdfText": "buying",
+          "mapText": "buying",
+          "source": [
+            1925.1120223999023,
+            832.5095621744791
+          ],
+          "target": [
+            1897.8249999999998,
+            921.53
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "byiireeraipy",
+          "pdfText": "ByiiREeraipy\"",
+          "mapText": "ByiiREeraipy\"",
+          "source": [
+            1547.4871571858725,
+            2007.629845821496
+          ],
+          "target": [
+            1539.74,
+            2191.045
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "cats",
+          "pdfText": "cats,",
+          "mapText": "cats,",
+          "source": [
+            720.0930341084797,
+            1109.6961669921875
+          ],
+          "target": [
+            755.155,
+            1220.9850000000001
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "central",
+          "pdfText": "central",
+          "mapText": "central",
+          "source": [
+            1315.3930625915527,
+            681.419873786695
+          ],
+          "target": [
+            1319.655,
+            758.3050000000001
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "chase",
+          "pdfText": "chase",
+          "mapText": "chase",
+          "source": [
+            1219.2655283610027,
+            1312.4597278941762
+          ],
+          "target": [
+            1228.505,
+            1440.0349999999999
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "chest",
+          "pdfText": "chest.",
+          "mapText": "chest.",
+          "source": [
+            1770.805404663086,
+            1446.8958481297348
+          ],
+          "target": [
+            1751.505,
+            1585.27
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "clinton",
+          "pdfText": "Clinton",
+          "mapText": "Clinton",
+          "source": [
+            1062.0545088450115,
+            546.9034497810133
+          ],
+          "target": [
+            1079.43,
+            612.9849999999999
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "clones",
+          "pdfText": "clones.",
+          "mapText": "clones.",
+          "source": [
+            1657.0446980794272,
+            546.9034497810133
+          ],
+          "target": [
+            1643.63,
+            612.9849999999999
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "collateralized",
+          "pdfText": "collateralized",
+          "mapText": "collateralized",
+          "source": [
+            595.4405765533447,
+            2346.9684244791665
+          ],
+          "target": [
+            636.955,
+            2557.645
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "collective",
+          "pdfText": "collective",
+          "mapText": "collective",
+          "source": [
+            730.3412831624349,
+            1042.4379549893465
+          ],
+          "target": [
+            764.875,
+            1148.325
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "controlled",
+          "pdfText": "controlled",
+          "mapText": "controlled",
+          "source": [
+            1307.9437789916992,
+            1042.4379549893465
+          ],
+          "target": [
+            1312.595,
+            1148.325
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "could",
+          "pdfText": "could",
+          "mapText": "could",
+          "source": [
+            1332.419765472412,
+            2484.5323671283145
+          ],
+          "target": [
+            1335.8,
+            2706.255
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "crony",
+          "pdfText": "crony",
+          "mapText": "crony",
+          "source": [
+            1086.499797821045,
+            2551.7908306699815
+          ],
+          "target": [
+            1102.605,
+            2778.915
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "defibrillator",
+          "pdfText": "defibrillator",
+          "mapText": "defibrillator",
+          "source": [
+            1156.1560077667236,
+            1446.8958481297348
+          ],
+          "target": [
+            1168.6599999999999,
+            1585.27
+          ],
+          "matchType": "unique"
+        }
+      ],
+      "fit": {
+        "fitAvailable": true,
+        "pairCount": 134,
+        "inlierCount": 134,
+        "inlierFraction": 1.0,
+        "medianResidualPx": 0.002,
+        "p90ResidualPx": 0.003,
+        "maxInlierResidualPx": 0.005,
+        "matrix": [
+          [
+            0.94825771,
+            -2.8e-07,
+            72.32504451
+          ],
+          [
+            -5e-08,
+            1.08032587,
+            22.15102116
+          ]
+        ],
+        "inlierTokens": [
+          "2011",
+          "aehbbelelnabetomolomomea",
+          "announced",
+          "back",
+          "bank",
+          "bankers",
+          "because",
+          "been",
+          "being",
+          "believe",
+          "billions",
+          "biteoiny",
+          "brown",
+          "bukele",
+          "bunch",
+          "burning",
+          "buying",
+          "byiireeraipy",
+          "cats",
+          "central",
+          "chase",
+          "chest",
+          "clinton",
+          "clones",
+          "collateralized",
+          "collective",
+          "controlled",
+          "could",
+          "crony",
+          "defibrillator",
+          "dulled",
+          "dumb",
+          "earnings",
+          "euthanized",
+          "figuring",
+          "flat",
+          "forty",
+          "freaking",
+          "full",
+          "fund",
+          "funkier",
+          "future",
+          "genitals",
+          "george",
+          "ghetto",
+          "going",
+          "gotta",
+          "hasnt",
+          "heads",
+          "heart",
+          "here",
+          "honybadgering",
+          "imaginations",
+          "international",
+          "inventiveness",
+          "iriends",
+          "james",
+          "leeches",
+          "live",
+          "loan",
+          "loyears",
+          "luther",
+          "magazine",
+          "manhattan",
+          "martin",
+          "maybe",
+          "mike",
+          "minds",
+          "mine",
+          "miss",
+          "moved",
+          "nailing",
+          "nations",
+          "nayib",
+          "nocoiners",
+          "nothing",
+          "novogratz",
+          "open",
+          "ortunately",
+          "overdose"
+        ]
+      },
+      "evaluation": {
+        "targetRows": [
+          {
+            "target": "O4",
+            "label": "buying the dip",
+            "alignedWordCount": 1,
+            "alignedText": "ByiiREeraipy\"",
+            "componentHitWords": [],
+            "strictInstructionWords": []
+          },
+          {
+            "target": "B4",
+            "label": "$1 billion",
+            "alignedWordCount": 1,
+            "alignedText": "eis",
+            "componentHitWords": [],
+            "strictInstructionWords": []
+          },
+          {
+            "target": "G5",
+            "label": "Volcano Bonds",
+            "alignedWordCount": 0,
+            "alignedText": "",
+            "componentHitWords": [],
+            "strictInstructionWords": []
+          },
+          {
+            "target": "O5",
+            "label": "shitcoiner at heart",
+            "alignedWordCount": 1,
+            "alignedText": "siukbeodmensertslveaarty",
+            "componentHitWords": [],
+            "strictInstructionWords": []
+          }
+        ],
+        "componentRows": [
+          {
+            "target": "O4",
+            "term": "buying",
+            "word": "buying",
+            "alignedCenter": [
+              1897.827,
+              921.533
+            ],
+            "distanceToTargetBoxPx": 1259.195,
+            "insideTarget": false
+          },
+          {
+            "target": "B4",
+            "term": "billion",
+            "word": "billions",
+            "alignedCenter": [
+              567.53,
+              2487.205
+            ],
+            "distanceToTargetBoxPx": 42.205,
+            "insideTarget": false
+          },
+          {
+            "target": "G5",
+            "term": "volcano",
+            "word": "volcanoes",
+            "alignedCenter": [
+              1304.843,
+              2340.815
+            ],
+            "distanceToTargetBoxPx": 230.502,
+            "insideTarget": false
+          },
+          {
+            "target": "O5",
+            "term": "shitcoiner",
+            "word": "shitcoiners'",
+            "alignedCenter": [
+              1504.513,
+              1071.215
+            ],
+            "distanceToTargetBoxPx": 1860.785,
+            "insideTarget": false
+          },
+          {
+            "target": "O5",
+            "term": "heart",
+            "word": "heart",
+            "alignedCenter": [
+              1993.76,
+              394.569
+            ],
+            "distanceToTargetBoxPx": 2559.157,
+            "insideTarget": false
+          }
+        ],
+        "strictInstructionRows": [],
+        "targetWordHitRowCount": 3,
+        "targetExactComponentRowCount": 0,
+        "targetStrictInstructionRowCount": 0
+      }
+    },
+    {
+      "pdfRecord": {
+        "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "sha256": "0078fe23401fab4882303ae038df0de6b439f498acb852d3b226c366caf5ab5c",
+        "rotation": 0,
+        "imageRect": [
+          18.0,
+          0.0,
+          594.0,
+          792.0
+        ],
+        "imageSize": [
+          2040,
+          2805
+        ]
+      },
+      "wordCount": 263,
+      "pairSamples": [
+        {
+          "token": "2011",
+          "pdfText": "2011)",
+          "mapText": "2011)",
+          "source": [
+            2139.700654347738,
+            904.9543789950283
+          ],
+          "target": [
+            2101.315,
+            999.7950000000001
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "aehbbelelnabetomolomomea",
+          "pdfText": "AE-hbbelel-nabetomolomomea",
+          "mapText": "AE-hbbelel-nabetomolomomea",
+          "source": [
+            791.1537475585938,
+            1379.717939897017
+          ],
+          "target": [
+            822.54,
+            1512.6950000000002
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "announced",
+          "pdfText": "announced",
+          "mapText": "announced",
+          "source": [
+            1588.3038533528645,
+            2076.946651574337
+          ],
+          "target": [
+            1578.4450000000002,
+            2265.9300000000003
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "back",
+          "pdfText": "back",
+          "mapText": "back",
+          "source": [
+            1944.8878199259439,
+            904.9543789950283
+          ],
+          "target": [
+            1916.58,
+            999.7950000000001
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "bank",
+          "pdfText": "Bank",
+          "mapText": "Bank",
+          "source": [
+            1626.675801595052,
+            1312.4597278941762
+          ],
+          "target": [
+            1614.835,
+            1440.0349999999999
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "bankers",
+          "pdfText": "bankers",
+          "mapText": "bankers",
+          "source": [
+            1515.5345929463704,
+            681.419873786695
+          ],
+          "target": [
+            1509.445,
+            758.3050000000001
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "because",
+          "pdfText": "because",
+          "mapText": "because",
+          "source": [
+            714.577356338501,
+            2700.339599609375
+          ],
+          "target": [
+            749.925,
+            2939.3999999999996
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "been",
+          "pdfText": "been",
+          "mapText": "been",
+          "source": [
+            1508.3795471191406,
+            1176.9543789950285
+          ],
+          "target": [
+            1502.655,
+            1293.645
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "being",
+          "pdfText": "being",
+          "mapText": "being",
+          "source": [
+            2125.6529235839844,
+            613.1726111209754
+          ],
+          "target": [
+            2087.99,
+            684.575
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "believe",
+          "pdfText": "believe",
+          "mapText": "believe",
+          "source": [
+            647.0651531219482,
+            1804.9466515743372
+          ],
+          "target": [
+            685.9100000000001,
+            1972.08
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "billions",
+          "pdfText": "billions",
+          "mapText": "billions",
+          "source": [
+            522.2264887491862,
+            2281.768931995739
+          ],
+          "target": [
+            567.53,
+            2487.205
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "biteoiny",
+          "pdfText": "Biteoiny",
+          "mapText": "Biteoiny",
+          "source": [
+            891.2265345255533,
+            406.29183127663356
+          ],
+          "target": [
+            917.44,
+            461.08
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "brown",
+          "pdfText": "Brown",
+          "mapText": "Brown",
+          "source": [
+            1487.181151072184,
+            546.9034497810133
+          ],
+          "target": [
+            1482.5549999999998,
+            612.9849999999999
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "bukele",
+          "pdfText": "Bukele",
+          "mapText": "Bukele",
+          "source": [
+            1163.7288564046225,
+            2076.946651574337
+          ],
+          "target": [
+            1175.84,
+            2265.9300000000003
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "bunch",
+          "pdfText": "bunch",
+          "mapText": "bunch",
+          "source": [
+            493.9616012573242,
+            2551.7908306699815
+          ],
+          "target": [
+            540.725,
+            2778.915
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "burning",
+          "pdfText": "burning",
+          "mapText": "burning",
+          "source": [
+            1937.4145444234214,
+            681.419873786695
+          ],
+          "target": [
+            1909.495,
+            758.3050000000001
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "buying",
+          "pdfText": "buying",
+          "mapText": "buying",
+          "source": [
+            1925.1120223999023,
+            832.5095621744791
+          ],
+          "target": [
+            1897.8249999999998,
+            921.53
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "byiireeraipy",
+          "pdfText": "ByiiREeraipy\"",
+          "mapText": "ByiiREeraipy\"",
+          "source": [
+            1547.4871571858725,
+            2007.629845821496
+          ],
+          "target": [
+            1539.74,
+            2191.045
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "cats",
+          "pdfText": "cats,",
+          "mapText": "cats,",
+          "source": [
+            720.0930341084797,
+            1109.6961669921875
+          ],
+          "target": [
+            755.155,
+            1220.9850000000001
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "central",
+          "pdfText": "central",
+          "mapText": "central",
+          "source": [
+            1315.3930625915527,
+            681.419873786695
+          ],
+          "target": [
+            1319.655,
+            758.3050000000001
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "chase",
+          "pdfText": "chase",
+          "mapText": "chase",
+          "source": [
+            1219.2655283610027,
+            1312.4597278941762
+          ],
+          "target": [
+            1228.505,
+            1440.0349999999999
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "chest",
+          "pdfText": "chest.",
+          "mapText": "chest.",
+          "source": [
+            1770.805404663086,
+            1446.8958481297348
+          ],
+          "target": [
+            1751.505,
+            1585.27
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "clinton",
+          "pdfText": "Clinton",
+          "mapText": "Clinton",
+          "source": [
+            1062.0545088450115,
+            546.9034497810133
+          ],
+          "target": [
+            1079.43,
+            612.9849999999999
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "clones",
+          "pdfText": "clones.",
+          "mapText": "clones.",
+          "source": [
+            1657.0446980794272,
+            546.9034497810133
+          ],
+          "target": [
+            1643.63,
+            612.9849999999999
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "collateralized",
+          "pdfText": "collateralized",
+          "mapText": "collateralized",
+          "source": [
+            595.4405765533447,
+            2346.9684244791665
+          ],
+          "target": [
+            636.955,
+            2557.645
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "collective",
+          "pdfText": "collective",
+          "mapText": "collective",
+          "source": [
+            730.3412831624349,
+            1042.4379549893465
+          ],
+          "target": [
+            764.875,
+            1148.325
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "controlled",
+          "pdfText": "controlled",
+          "mapText": "controlled",
+          "source": [
+            1307.9437789916992,
+            1042.4379549893465
+          ],
+          "target": [
+            1312.595,
+            1148.325
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "could",
+          "pdfText": "could",
+          "mapText": "could",
+          "source": [
+            1332.419765472412,
+            2484.5323671283145
+          ],
+          "target": [
+            1335.8,
+            2706.255
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "crony",
+          "pdfText": "crony",
+          "mapText": "crony",
+          "source": [
+            1086.499797821045,
+            2551.7908306699815
+          ],
+          "target": [
+            1102.605,
+            2778.915
+          ],
+          "matchType": "unique"
+        },
+        {
+          "token": "defibrillator",
+          "pdfText": "defibrillator",
+          "mapText": "defibrillator",
+          "source": [
+            1156.1560077667236,
+            1446.8958481297348
+          ],
+          "target": [
+            1168.6599999999999,
+            1585.27
+          ],
+          "matchType": "unique"
+        }
+      ],
+      "fit": {
+        "fitAvailable": true,
+        "pairCount": 134,
+        "inlierCount": 134,
+        "inlierFraction": 1.0,
+        "medianResidualPx": 0.002,
+        "p90ResidualPx": 0.003,
+        "maxInlierResidualPx": 0.005,
+        "matrix": [
+          [
+            0.94825771,
+            -2.8e-07,
+            72.32504451
+          ],
+          [
+            -5e-08,
+            1.08032587,
+            22.15102116
+          ]
+        ],
+        "inlierTokens": [
+          "2011",
+          "aehbbelelnabetomolomomea",
+          "announced",
+          "back",
+          "bank",
+          "bankers",
+          "because",
+          "been",
+          "being",
+          "believe",
+          "billions",
+          "biteoiny",
+          "brown",
+          "bukele",
+          "bunch",
+          "burning",
+          "buying",
+          "byiireeraipy",
+          "cats",
+          "central",
+          "chase",
+          "chest",
+          "clinton",
+          "clones",
+          "collateralized",
+          "collective",
+          "controlled",
+          "could",
+          "crony",
+          "defibrillator",
+          "dulled",
+          "dumb",
+          "earnings",
+          "euthanized",
+          "figuring",
+          "flat",
+          "forty",
+          "freaking",
+          "full",
+          "fund",
+          "funkier",
+          "future",
+          "genitals",
+          "george",
+          "ghetto",
+          "going",
+          "gotta",
+          "hasnt",
+          "heads",
+          "heart",
+          "here",
+          "honybadgering",
+          "imaginations",
+          "international",
+          "inventiveness",
+          "iriends",
+          "james",
+          "leeches",
+          "live",
+          "loan",
+          "loyears",
+          "luther",
+          "magazine",
+          "manhattan",
+          "martin",
+          "maybe",
+          "mike",
+          "minds",
+          "mine",
+          "miss",
+          "moved",
+          "nailing",
+          "nations",
+          "nayib",
+          "nocoiners",
+          "nothing",
+          "novogratz",
+          "open",
+          "ortunately",
+          "overdose"
+        ]
+      },
+      "evaluation": {
+        "targetRows": [
+          {
+            "target": "O4",
+            "label": "buying the dip",
+            "alignedWordCount": 1,
+            "alignedText": "ByiiREeraipy\"",
+            "componentHitWords": [],
+            "strictInstructionWords": []
+          },
+          {
+            "target": "B4",
+            "label": "$1 billion",
+            "alignedWordCount": 1,
+            "alignedText": "eis",
+            "componentHitWords": [],
+            "strictInstructionWords": []
+          },
+          {
+            "target": "G5",
+            "label": "Volcano Bonds",
+            "alignedWordCount": 0,
+            "alignedText": "",
+            "componentHitWords": [],
+            "strictInstructionWords": []
+          },
+          {
+            "target": "O5",
+            "label": "shitcoiner at heart",
+            "alignedWordCount": 1,
+            "alignedText": "siukbeodmensertslveaarty",
+            "componentHitWords": [],
+            "strictInstructionWords": []
+          }
+        ],
+        "componentRows": [
+          {
+            "target": "O4",
+            "term": "buying",
+            "word": "buying",
+            "alignedCenter": [
+              1897.827,
+              921.533
+            ],
+            "distanceToTargetBoxPx": 1259.195,
+            "insideTarget": false
+          },
+          {
+            "target": "B4",
+            "term": "billion",
+            "word": "billions",
+            "alignedCenter": [
+              567.53,
+              2487.205
+            ],
+            "distanceToTargetBoxPx": 42.205,
+            "insideTarget": false
+          },
+          {
+            "target": "G5",
+            "term": "volcano",
+            "word": "volcanoes",
+            "alignedCenter": [
+              1304.843,
+              2340.815
+            ],
+            "distanceToTargetBoxPx": 230.502,
+            "insideTarget": false
+          },
+          {
+            "target": "O5",
+            "term": "shitcoiner",
+            "word": "shitcoiners'",
+            "alignedCenter": [
+              1504.513,
+              1071.215
+            ],
+            "distanceToTargetBoxPx": 1860.785,
+            "insideTarget": false
+          },
+          {
+            "target": "O5",
+            "term": "heart",
+            "word": "heart",
+            "alignedCenter": [
+              1993.76,
+              394.569
+            ],
+            "distanceToTargetBoxPx": 2559.157,
+            "insideTarget": false
+          }
+        ],
+        "strictInstructionRows": [],
+        "targetWordHitRowCount": 3,
+        "targetExactComponentRowCount": 0,
+        "targetStrictInstructionRowCount": 0
+      }
+    }
+  ],
+  "decision": {
+    "currentPdfOcrAffineAlignmentGate": "do_not_reopen_pdf_ocr_alignment",
+    "selectorUnlocked": false,
+    "reason": "Affine realignment can fit the low-resolution duplicate OCR layer to the page map, but aligned target boxes still contain no exact target components or source-side unit/order words. The high-resolution magazine OCR layer cannot produce a useful fit from unique word tokens.",
+    "nextMove": "Keep PDF OCR alignment as a closed provenance layer. Future local work should be source-intake/reopen-gate validation, not text-layer coordinate repair."
+  },
+  "sheet": "analysis_outputs/source_audit/current_pdf_ocr_affine_alignment_gate/current_pdf_ocr_affine_alignment_gate_sheet.jpg"
+}

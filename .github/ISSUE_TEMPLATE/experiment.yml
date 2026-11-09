@@ -1,0 +1,31 @@
+name: Propose or report an experiment
+description: A source-motivated, reproducible way to advance the case.
+title: "[Experiment] "
+labels: [experiment]
+body:
+  - type: textarea
+    id: source
+    attributes:
+      label: Source and hypothesis
+      description: Link the public source and exact page/line or data record. What claim are you testing?
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Method and falsification criterion
+      description: Specify unit, order, operation, expected output, and what would rule it out. Link the old test if this improves one.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction and result
+      description: Commands, source hashes, intermediate output, result, limits. Leave pending if this is a proposal. Do not publish a funded private key or seed.
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Publication check
+      options:
+        - label: This contains no private personal data, credentials, funded key, seed, or private chat record.
+          required: true

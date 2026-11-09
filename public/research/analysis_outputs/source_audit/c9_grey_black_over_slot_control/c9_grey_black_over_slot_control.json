@@ -1,0 +1,753 @@
+{
+  "createdAt": "2026-05-21T03:06:31",
+  "scope": "C9 grey/black OVER slot control; no OCR, no extraction, no key derivation, no hashing",
+  "inputs": {
+    "c9OverdoseLetterSlotGate": "analysis_outputs/source_audit/c9_overdose_letter_slot_gate/c9_overdose_letter_slot_gate.json",
+    "manualGreyHighresCrops": "analysis_outputs/highlight_audit/manual_grey_highres_crops.json",
+    "manualGreyReading": "analysis_outputs/highlight_audit/highres_manual_grey_reading.json",
+    "activeCropCompletion": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json"
+  },
+  "c9Frame": [
+    294.0,
+    2176.81,
+    2250.0,
+    3023.73
+  ],
+  "slots": [
+    {
+      "index": 0,
+      "letter": "O",
+      "left": 294.0,
+      "right": 538.5,
+      "width": 244.5
+    },
+    {
+      "index": 1,
+      "letter": "V",
+      "left": 538.5,
+      "right": 783.0,
+      "width": 244.5
+    },
+    {
+      "index": 2,
+      "letter": "E",
+      "left": 783.0,
+      "right": 1027.5,
+      "width": 244.5
+    },
+    {
+      "index": 3,
+      "letter": "R",
+      "left": 1027.5,
+      "right": 1272.0,
+      "width": 244.5
+    },
+    {
+      "index": 4,
+      "letter": "D",
+      "left": 1272.0,
+      "right": 1516.5,
+      "width": 244.5
+    },
+    {
+      "index": 5,
+      "letter": "O",
+      "left": 1516.5,
+      "right": 1761.0,
+      "width": 244.5
+    },
+    {
+      "index": 6,
+      "letter": "S",
+      "left": 1761.0,
+      "right": 2005.5,
+      "width": 244.5
+    },
+    {
+      "index": 7,
+      "letter": "E",
+      "left": 2005.5,
+      "right": 2250.0,
+      "width": 244.5
+    }
+  ],
+  "greyBlackRows": [
+    {
+      "id": "p75_grey_1",
+      "page": 75,
+      "expected": "money printers, banking",
+      "box": [
+        1214.12,
+        1191.71,
+        1888.07,
+        1254.52
+      ],
+      "source": "manual_grey_highres_crops.highresBox",
+      "isActiveCorrectedBlack": false,
+      "centerX": 1551.09,
+      "centerSlotLetter": "O",
+      "centerSlotIndex": 5,
+      "spanSlotLetters": "RDOS",
+      "spanSlotIndexes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "spanSlotOverlapsPx": [
+        57.88,
+        244.5,
+        244.5,
+        127.07
+      ],
+      "overlapAreaWithC9": 0.0,
+      "overlapVsBox": 0.0,
+      "singleRowLayoutHits": [],
+      "strictInstructionHitsInText": []
+    },
+    {
+      "id": "p75_grey_2",
+      "page": 75,
+      "expected": "terrorists, stock traders, central bank arsonists",
+      "box": [
+        344.91,
+        1260.8,
+        1755.8,
+        1329.88
+      ],
+      "source": "manual_grey_highres_crops.highresBox",
+      "isActiveCorrectedBlack": false,
+      "centerX": 1050.36,
+      "centerSlotLetter": "R",
+      "centerSlotIndex": 3,
+      "spanSlotLetters": "OVERDO",
+      "spanSlotIndexes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "spanSlotOverlapsPx": [
+        193.59,
+        244.5,
+        244.5,
+        244.5,
+        244.5,
+        239.3
+      ],
+      "overlapAreaWithC9": 0.0,
+      "overlapVsBox": 0.0,
+      "singleRowLayoutHits": [
+        "OVER"
+      ],
+      "strictInstructionHitsInText": []
+    },
+    {
+      "id": "p75_grey_3",
+      "page": 75,
+      "expected": "Don't fall for shitcoinery",
+      "box": [
+        445.69,
+        2332.24,
+        1163.73,
+        2400.07
+      ],
+      "source": "manual_grey_highres_crops.highresBox",
+      "isActiveCorrectedBlack": false,
+      "centerX": 804.71,
+      "centerSlotLetter": "E",
+      "centerSlotIndex": 2,
+      "spanSlotLetters": "OVER",
+      "spanSlotIndexes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "spanSlotOverlapsPx": [
+        92.81,
+        244.5,
+        244.5,
+        136.23
+      ],
+      "overlapAreaWithC9": 48704.65,
+      "overlapVsBox": 1.0,
+      "singleRowLayoutHits": [
+        "OVER"
+      ],
+      "strictInstructionHitsInText": []
+    },
+    {
+      "id": "p76_grey_1",
+      "page": 76,
+      "expected": "Gotta be this way... post-1971 fiat money",
+      "box": [
+        449.26,
+        826.7,
+        2233.4,
+        889.55
+      ],
+      "source": "manual_grey_highres_crops.highresBox",
+      "isActiveCorrectedBlack": false,
+      "centerX": 1341.33,
+      "centerSlotLetter": "D",
+      "centerSlotIndex": 4,
+      "spanSlotLetters": "OVERDOSE",
+      "spanSlotIndexes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "spanSlotOverlapsPx": [
+        89.24,
+        244.5,
+        244.5,
+        244.5,
+        244.5,
+        244.5,
+        244.5,
+        227.9
+      ],
+      "overlapAreaWithC9": 0.0,
+      "overlapVsBox": 0.0,
+      "singleRowLayoutHits": [
+        "OVER",
+        "DOSE",
+        "OVERDOSE"
+      ],
+      "strictInstructionHitsInText": []
+    },
+    {
+      "id": "p76_grey_2",
+      "page": 76,
+      "expected": "nonsense",
+      "box": [
+        373.87,
+        889.55,
+        700.55,
+        958.7
+      ],
+      "source": "manual_grey_highres_crops.highresBox",
+      "isActiveCorrectedBlack": false,
+      "centerX": 537.21,
+      "centerSlotLetter": "O",
+      "centerSlotIndex": 0,
+      "spanSlotLetters": "OV",
+      "spanSlotIndexes": [
+        0,
+        1
+      ],
+      "spanSlotOverlapsPx": [
+        164.63,
+        162.05
+      ],
+      "overlapAreaWithC9": 0.0,
+      "overlapVsBox": 0.0,
+      "singleRowLayoutHits": [],
+      "strictInstructionHitsInText": []
+    },
+    {
+      "id": "p76_grey_3",
+      "page": 76,
+      "expected": "It's a stun gun to the genitals",
+      "box": [
+        1002.09,
+        1486.68,
+        1875.32,
+        1555.82
+      ],
+      "source": "manual_grey_highres_crops.highresBox",
+      "isActiveCorrectedBlack": false,
+      "centerX": 1438.7,
+      "centerSlotLetter": "D",
+      "centerSlotIndex": 4,
+      "spanSlotLetters": "ERDOS",
+      "spanSlotIndexes": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "spanSlotOverlapsPx": [
+        25.41,
+        244.5,
+        244.5,
+        244.5,
+        114.32
+      ],
+      "overlapAreaWithC9": 0.0,
+      "overlapVsBox": 0.0,
+      "singleRowLayoutHits": [],
+      "strictInstructionHitsInText": []
+    },
+    {
+      "id": "p76_grey_4",
+      "page": 76,
+      "expected": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "source": "page76_active_target_crop_completion.one_billion",
+      "isActiveCorrectedBlack": true,
+      "centerX": 559.5,
+      "centerSlotLetter": "V",
+      "centerSlotIndex": 1,
+      "spanSlotLetters": "OV",
+      "spanSlotIndexes": [
+        0,
+        1
+      ],
+      "spanSlotOverlapsPx": [
+        110.5,
+        152.5
+      ],
+      "overlapAreaWithC9": 12361.0,
+      "overlapVsBox": 1.0,
+      "singleRowLayoutHits": [],
+      "strictInstructionHitsInText": []
+    },
+    {
+      "id": "p76_grey_5",
+      "page": 76,
+      "expected": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "source": "page76_active_target_crop_completion.volcano_bonds",
+      "isActiveCorrectedBlack": true,
+      "centerX": 995.5,
+      "centerSlotLetter": "E",
+      "centerSlotIndex": 2,
+      "spanSlotLetters": "ER",
+      "spanSlotIndexes": [
+        2,
+        3
+      ],
+      "spanSlotOverlapsPx": [
+        232.5,
+        168.5
+      ],
+      "overlapAreaWithC9": 19248.0,
+      "overlapVsBox": 1.0,
+      "singleRowLayoutHits": [],
+      "strictInstructionHitsInText": []
+    },
+    {
+      "id": "p77_grey_1",
+      "page": 77,
+      "expected": "Sorry Bhutan... shitcoin hell",
+      "box": [
+        280.74,
+        716.53,
+        1886.19,
+        845.36
+      ],
+      "source": "manual_grey_highres_crops.highresBox",
+      "isActiveCorrectedBlack": false,
+      "centerX": 1083.47,
+      "centerSlotLetter": "R",
+      "centerSlotIndex": 3,
+      "spanSlotLetters": "OVERDOS",
+      "spanSlotIndexes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "spanSlotOverlapsPx": [
+        244.5,
+        244.5,
+        244.5,
+        244.5,
+        244.5,
+        244.5,
+        125.19
+      ],
+      "overlapAreaWithC9": 0.0,
+      "overlapVsBox": 0.0,
+      "singleRowLayoutHits": [
+        "OVER"
+      ],
+      "strictInstructionHitsInText": []
+    },
+    {
+      "id": "p77_grey_2",
+      "page": 77,
+      "expected": "shitcoiners, useless Royals",
+      "box": [
+        1064.51,
+        1348.42,
+        1987.33,
+        1440.44
+      ],
+      "source": "manual_grey_highres_crops.highresBox",
+      "isActiveCorrectedBlack": false,
+      "centerX": 1525.92,
+      "centerSlotLetter": "O",
+      "centerSlotIndex": 5,
+      "spanSlotLetters": "RDOS",
+      "spanSlotIndexes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "spanSlotOverlapsPx": [
+        207.49,
+        244.5,
+        244.5,
+        226.33
+      ],
+      "overlapAreaWithC9": 0.0,
+      "overlapVsBox": 0.0,
+      "singleRowLayoutHits": [],
+      "strictInstructionHitsInText": []
+    },
+    {
+      "id": "p77_grey_3",
+      "page": 77,
+      "expected": "It does this by monetizing",
+      "box": [
+        1039.22,
+        3053.93,
+        1936.76,
+        3133.68
+      ],
+      "source": "manual_grey_highres_crops.highresBox",
+      "isActiveCorrectedBlack": false,
+      "centerX": 1487.99,
+      "centerSlotLetter": "D",
+      "centerSlotIndex": 4,
+      "spanSlotLetters": "RDOS",
+      "spanSlotIndexes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "spanSlotOverlapsPx": [
+        232.78,
+        244.5,
+        244.5,
+        175.76
+      ],
+      "overlapAreaWithC9": 0.0,
+      "overlapVsBox": 0.0,
+      "singleRowLayoutHits": [],
+      "strictInstructionHitsInText": []
+    },
+    {
+      "id": "p78_grey_1",
+      "page": 78,
+      "expected": "gargantuanly wasteful",
+      "box": [
+        1490.95,
+        1023.87,
+        2163.8,
+        1086.55
+      ],
+      "source": "manual_grey_highres_crops.highresBox",
+      "isActiveCorrectedBlack": false,
+      "centerX": 1827.38,
+      "centerSlotLetter": "S",
+      "centerSlotIndex": 6,
+      "spanSlotLetters": "DOSE",
+      "spanSlotIndexes": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "spanSlotOverlapsPx": [
+        25.55,
+        244.5,
+        244.5,
+        158.3
+      ],
+      "overlapAreaWithC9": 0.0,
+      "overlapVsBox": 0.0,
+      "singleRowLayoutHits": [
+        "DOSE"
+      ],
+      "strictInstructionHitsInText": []
+    },
+    {
+      "id": "p78_grey_2",
+      "page": 78,
+      "expected": "money printing",
+      "box": [
+        767.8,
+        1086.55,
+        1201.69,
+        1161.77
+      ],
+      "source": "manual_grey_highres_crops.highresBox",
+      "isActiveCorrectedBlack": false,
+      "centerX": 984.75,
+      "centerSlotLetter": "E",
+      "centerSlotIndex": 2,
+      "spanSlotLetters": "VER",
+      "spanSlotIndexes": [
+        1,
+        2,
+        3
+      ],
+      "spanSlotOverlapsPx": [
+        15.2,
+        244.5,
+        174.19
+      ],
+      "overlapAreaWithC9": 0.0,
+      "overlapVsBox": 0.0,
+      "singleRowLayoutHits": [],
+      "strictInstructionHitsInText": []
+    },
+    {
+      "id": "p78_grey_3",
+      "page": 78,
+      "expected": "wars to keep it going",
+      "box": [
+        1302.3,
+        1086.55,
+        1899.69,
+        1161.77
+      ],
+      "source": "manual_grey_highres_crops.highresBox",
+      "isActiveCorrectedBlack": false,
+      "centerX": 1600.99,
+      "centerSlotLetter": "O",
+      "centerSlotIndex": 5,
+      "spanSlotLetters": "DOS",
+      "spanSlotIndexes": [
+        4,
+        5,
+        6
+      ],
+      "spanSlotOverlapsPx": [
+        214.2,
+        244.5,
+        138.69
+      ],
+      "overlapAreaWithC9": 0.0,
+      "overlapVsBox": 0.0,
+      "singleRowLayoutHits": [],
+      "strictInstructionHitsInText": []
+    },
+    {
+      "id": "p79_grey_1",
+      "page": 79,
+      "expected": "war and violence economy",
+      "box": [
+        1362.18,
+        402.18,
+        1831.3,
+        471.44
+      ],
+      "source": "manual_grey_highres_crops.highresBox",
+      "isActiveCorrectedBlack": false,
+      "centerX": 1596.74,
+      "centerSlotLetter": "O",
+      "centerSlotIndex": 5,
+      "spanSlotLetters": "DOS",
+      "spanSlotIndexes": [
+        4,
+        5,
+        6
+      ],
+      "spanSlotOverlapsPx": [
+        154.32,
+        244.5,
+        70.3
+      ],
+      "overlapAreaWithC9": 0.0,
+      "overlapVsBox": 0.0,
+      "singleRowLayoutHits": [],
+      "strictInstructionHitsInText": []
+    }
+  ],
+  "c9GreyBlackRows": [
+    {
+      "id": "p75_grey_3",
+      "page": 75,
+      "expected": "Don't fall for shitcoinery",
+      "box": [
+        445.69,
+        2332.24,
+        1163.73,
+        2400.07
+      ],
+      "source": "manual_grey_highres_crops.highresBox",
+      "isActiveCorrectedBlack": false,
+      "centerX": 804.71,
+      "centerSlotLetter": "E",
+      "centerSlotIndex": 2,
+      "spanSlotLetters": "OVER",
+      "spanSlotIndexes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "spanSlotOverlapsPx": [
+        92.81,
+        244.5,
+        244.5,
+        136.23
+      ],
+      "overlapAreaWithC9": 48704.65,
+      "overlapVsBox": 1.0,
+      "singleRowLayoutHits": [
+        "OVER"
+      ],
+      "strictInstructionHitsInText": []
+    },
+    {
+      "id": "p76_grey_4",
+      "page": 76,
+      "expected": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "source": "page76_active_target_crop_completion.one_billion",
+      "isActiveCorrectedBlack": true,
+      "centerX": 559.5,
+      "centerSlotLetter": "V",
+      "centerSlotIndex": 1,
+      "spanSlotLetters": "OV",
+      "spanSlotIndexes": [
+        0,
+        1
+      ],
+      "spanSlotOverlapsPx": [
+        110.5,
+        152.5
+      ],
+      "overlapAreaWithC9": 12361.0,
+      "overlapVsBox": 1.0,
+      "singleRowLayoutHits": [],
+      "strictInstructionHitsInText": []
+    },
+    {
+      "id": "p76_grey_5",
+      "page": 76,
+      "expected": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "source": "page76_active_target_crop_completion.volcano_bonds",
+      "isActiveCorrectedBlack": true,
+      "centerX": 995.5,
+      "centerSlotLetter": "E",
+      "centerSlotIndex": 2,
+      "spanSlotLetters": "ER",
+      "spanSlotIndexes": [
+        2,
+        3
+      ],
+      "spanSlotOverlapsPx": [
+        232.5,
+        168.5
+      ],
+      "overlapAreaWithC9": 19248.0,
+      "overlapVsBox": 1.0,
+      "singleRowLayoutHits": [],
+      "strictInstructionHitsInText": []
+    }
+  ],
+  "adjacentPairRows": [
+    {
+      "page": 76,
+      "pairIds": [
+        "p76_grey_4",
+        "p76_grey_5"
+      ],
+      "pairText": [
+        "$1 billion",
+        "Volcano Bonds"
+      ],
+      "stream": "OVER",
+      "layoutHits": [
+        "OVER"
+      ],
+      "strictInstructionHitsInTexts": [],
+      "containsActiveCorrectedBlack": true,
+      "bothActiveCorrectedBlack": true
+    }
+  ],
+  "summary": {
+    "totalGreyBlackRows": 15,
+    "c9GreyBlackRowCount": 3,
+    "singleRowOverCount": 1,
+    "controlSingleRowOverCount": 1,
+    "singleRowOverIds": [
+      "p75_grey_3"
+    ],
+    "pairOverCount": 1,
+    "activeCorrectedPairOverCount": 1,
+    "pairOverIds": [
+      [
+        "p76_grey_4",
+        "p76_grey_5"
+      ]
+    ],
+    "activeCorrectedPairOverStream": "OVER",
+    "activeCorrectedPairOverSource": [
+      "p76_grey_4",
+      "p76_grey_5"
+    ],
+    "controlSingleOverTexts": [
+      "Don't fall for shitcoinery"
+    ],
+    "strictInstructionHitCount": 0,
+    "selectorUnlocked": false
+  },
+  "sourceText": {
+    "greyReadingSource": "manual visual read from high-res page images and projected grey/black crop sheet",
+    "greyReadingCaveats": [
+      "p76 $1 billion and “Volcano Bonds” were verified from the full high-res page because projected old manual boxes landed on the wrong lower-page text.",
+      "p77 Faketoshi was verified from the full high-res page, not from the projected contact sheet."
+    ],
+    "greyReadingCorrections": [
+      "p76 high-res shows 10years with no space in the parenthetical after grey nonsense.",
+      "p77 high-res reads salesmen, not salesman, in the Bhutan/XRP grey span.",
+      "p77 high-res includes an opening parenthesis before Sorry Bhutan.",
+      "p76 high-res includes quotes around “Volcano Bonds”.",
+      "p77 splits shitcoiners, and useless Royals, into two adjacent white-highlight fields."
+    ]
+  },
+  "assessment": [
+    "The active corrected black B4/G5 pair does produce OVER as `OV` + `ER` in x-order.",
+    "A non-active p75 grey row, `Don't fall for shitcoinery`, spans OVER as a single C9 slot row in the same lower-frame geometry.",
+    "The OVER slot signal is therefore not unique to the active black pair under the current C9/equal-slot rule.",
+    "No grey/black row or adjacent pair supplies strict unit/order wording."
+  ],
+  "decision": {
+    "c9GreyBlackOverSlotControl": "active_over_controlled_no_selector",
+    "selectorUnlocked": false,
+    "nextMove": "Keep B4/G5 OVER as a source-comparison curiosity only. Reopen only if a source clue explicitly names grey/black OVER slots or supplies an 8-column reading rule."
+  },
+  "sheet": "analysis_outputs/source_audit/c9_grey_black_over_slot_control/c9_grey_black_over_slot_control_sheet.jpg"
+}

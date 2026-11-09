@@ -1,0 +1,547 @@
+{
+  "createdAt": "2026-05-21T05:34:54",
+  "scope": "source-packet native coordinate benchmark bridge; no OCR, extraction, key derivation, hashing, seed/WIF checks, address checks, or broad candidate generation",
+  "inputs": {
+    "activeTargets": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "priorityCropPack": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_pack.json",
+    "c9FrameOverdosePageControl": "analysis_outputs/source_audit/c9_frame_overdose_page_control/c9_frame_overdose_page_control.json",
+    "c9HeaderGlyphSlotGate": "analysis_outputs/source_audit/c9_header_glyph_slot_gate/c9_header_glyph_slot_gate.json",
+    "article3dMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "uprightImage": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+    "nativeImage": "analysis_outputs/source_images/magazine_page_76.jpg"
+  },
+  "transform": "rotate180",
+  "imageSize": [
+    2544,
+    3264
+  ],
+  "imageDiff": {
+    "directMeanAbsDiff": 27.6479,
+    "directMaxDiff": 255,
+    "rot180MeanAbsDiff": 0.2859,
+    "rot180MaxDiff": 31,
+    "rot180NonzeroPct": 12.1415
+  },
+  "rows": [
+    {
+      "id": "buying_dip",
+      "label": "O4 buying the dip",
+      "kind": "active_target",
+      "visualState": "Y",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "uprightBox": [
+        1334,
+        2177,
+        1801,
+        2225
+      ],
+      "nativeBox": [
+        743,
+        1039,
+        1210,
+        1087
+      ],
+      "uprightCenter": [
+        1567.5,
+        2201.0
+      ],
+      "nativeCenter": [
+        976.5,
+        1063.0
+      ],
+      "boxSize": [
+        467,
+        48
+      ],
+      "uprightInBounds": true,
+      "nativeInBounds": true
+    },
+    {
+      "id": "one_billion",
+      "label": "B4 $1 billion",
+      "kind": "active_target",
+      "visualState": "K",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "uprightBox": [
+        428,
+        2398,
+        691,
+        2445
+      ],
+      "nativeBox": [
+        1853,
+        819,
+        2116,
+        866
+      ],
+      "uprightCenter": [
+        559.5,
+        2421.5
+      ],
+      "nativeCenter": [
+        1984.5,
+        842.5
+      ],
+      "boxSize": [
+        263,
+        47
+      ],
+      "uprightInBounds": true,
+      "nativeInBounds": true
+    },
+    {
+      "id": "volcano_bonds",
+      "label": "G5 Volcano Bonds",
+      "kind": "active_target",
+      "visualState": "K",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "uprightBox": [
+        795,
+        2544,
+        1196,
+        2592
+      ],
+      "nativeBox": [
+        1348,
+        672,
+        1749,
+        720
+      ],
+      "uprightCenter": [
+        995.5,
+        2568.0
+      ],
+      "nativeCenter": [
+        1548.5,
+        696.0
+      ],
+      "boxSize": [
+        401,
+        48
+      ],
+      "uprightInBounds": true,
+      "nativeInBounds": true
+    },
+    {
+      "id": "shitcoiner_heart",
+      "label": "O5 shitcoiner at heart",
+      "kind": "active_target",
+      "visualState": "Y",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "uprightBox": [
+        1040,
+        2932,
+        1661,
+        2982
+      ],
+      "nativeBox": [
+        883,
+        282,
+        1504,
+        332
+      ],
+      "uprightCenter": [
+        1350.5,
+        2957.0
+      ],
+      "nativeCenter": [
+        1193.5,
+        307.0
+      ],
+      "boxSize": [
+        621,
+        50
+      ],
+      "uprightInBounds": true,
+      "nativeInBounds": true
+    },
+    {
+      "id": "c9_yk_frame",
+      "label": "C9/Y-K full frame",
+      "kind": "source_frame",
+      "uprightBox": [
+        294,
+        2177,
+        2250,
+        3024
+      ],
+      "xMirrorInvariant": true,
+      "nativeBox": [
+        294,
+        240,
+        2250,
+        1087
+      ],
+      "uprightCenter": [
+        1272.0,
+        2600.5
+      ],
+      "nativeCenter": [
+        1272.0,
+        663.5
+      ],
+      "boxSize": [
+        1956,
+        847
+      ],
+      "uprightInBounds": true,
+      "nativeInBounds": true
+    },
+    {
+      "id": "p78_reflected_frame_on_p76",
+      "label": "reflected p78 frame on p76",
+      "kind": "source_frame",
+      "uprightBox": [
+        1234,
+        2398,
+        2250,
+        2950
+      ],
+      "nativeBox": [
+        294,
+        314,
+        1310,
+        866
+      ],
+      "uprightCenter": [
+        1742.0,
+        2674.0
+      ],
+      "nativeCenter": [
+        802.0,
+        590.0
+      ],
+      "boxSize": [
+        1016,
+        552
+      ],
+      "uprightInBounds": true,
+      "nativeInBounds": true
+    },
+    {
+      "id": "p76_overdose_header",
+      "label": "p76 OVERDOSE header word",
+      "kind": "overdose_header",
+      "uprightBox": [
+        2150.98,
+        153.05,
+        2291.26,
+        184.24
+      ],
+      "text": "OVERDOSE",
+      "center": [
+        2221.12,
+        168.64
+      ],
+      "nativeBox": [
+        253,
+        3080,
+        393,
+        3111
+      ],
+      "uprightCenter": [
+        2221.12,
+        168.645
+      ],
+      "nativeCenter": [
+        323.0,
+        3095.5
+      ],
+      "boxSize": [
+        140,
+        31
+      ],
+      "uprightInBounds": true,
+      "nativeInBounds": true
+    },
+    {
+      "id": "overdose_glyph_1_O",
+      "label": "OVERDOSE glyph 1 O",
+      "kind": "overdose_glyph",
+      "uprightBox": [
+        2150.98,
+        153.05,
+        2168.52,
+        184.24
+      ],
+      "letter": "O",
+      "slotIndex": 0,
+      "nativeBox": [
+        375,
+        3080,
+        393,
+        3111
+      ],
+      "uprightCenter": [
+        2159.75,
+        168.645
+      ],
+      "nativeCenter": [
+        384.0,
+        3095.5
+      ],
+      "boxSize": [
+        18,
+        31
+      ],
+      "uprightInBounds": true,
+      "nativeInBounds": true
+    },
+    {
+      "id": "overdose_glyph_2_V",
+      "label": "OVERDOSE glyph 2 V",
+      "kind": "overdose_glyph",
+      "uprightBox": [
+        2168.52,
+        153.05,
+        2186.05,
+        184.24
+      ],
+      "letter": "V",
+      "slotIndex": 1,
+      "nativeBox": [
+        358,
+        3080,
+        375,
+        3111
+      ],
+      "uprightCenter": [
+        2177.285,
+        168.645
+      ],
+      "nativeCenter": [
+        366.5,
+        3095.5
+      ],
+      "boxSize": [
+        18,
+        31
+      ],
+      "uprightInBounds": true,
+      "nativeInBounds": true
+    },
+    {
+      "id": "overdose_glyph_3_E",
+      "label": "OVERDOSE glyph 3 E",
+      "kind": "overdose_glyph",
+      "uprightBox": [
+        2186.05,
+        153.05,
+        2203.59,
+        184.24
+      ],
+      "letter": "E",
+      "slotIndex": 2,
+      "nativeBox": [
+        340,
+        3080,
+        358,
+        3111
+      ],
+      "uprightCenter": [
+        2194.82,
+        168.645
+      ],
+      "nativeCenter": [
+        349.0,
+        3095.5
+      ],
+      "boxSize": [
+        18,
+        31
+      ],
+      "uprightInBounds": true,
+      "nativeInBounds": true
+    },
+    {
+      "id": "overdose_glyph_4_R",
+      "label": "OVERDOSE glyph 4 R",
+      "kind": "overdose_glyph",
+      "uprightBox": [
+        2203.59,
+        153.05,
+        2221.12,
+        184.24
+      ],
+      "letter": "R",
+      "slotIndex": 3,
+      "nativeBox": [
+        323,
+        3080,
+        340,
+        3111
+      ],
+      "uprightCenter": [
+        2212.355,
+        168.645
+      ],
+      "nativeCenter": [
+        331.5,
+        3095.5
+      ],
+      "boxSize": [
+        18,
+        31
+      ],
+      "uprightInBounds": true,
+      "nativeInBounds": true
+    },
+    {
+      "id": "overdose_glyph_5_D",
+      "label": "OVERDOSE glyph 5 D",
+      "kind": "overdose_glyph",
+      "uprightBox": [
+        2221.12,
+        153.05,
+        2238.66,
+        184.24
+      ],
+      "letter": "D",
+      "slotIndex": 4,
+      "nativeBox": [
+        305,
+        3080,
+        323,
+        3111
+      ],
+      "uprightCenter": [
+        2229.89,
+        168.645
+      ],
+      "nativeCenter": [
+        314.0,
+        3095.5
+      ],
+      "boxSize": [
+        18,
+        31
+      ],
+      "uprightInBounds": true,
+      "nativeInBounds": true
+    },
+    {
+      "id": "overdose_glyph_6_O",
+      "label": "OVERDOSE glyph 6 O",
+      "kind": "overdose_glyph",
+      "uprightBox": [
+        2238.66,
+        153.05,
+        2256.19,
+        184.24
+      ],
+      "letter": "O",
+      "slotIndex": 5,
+      "nativeBox": [
+        288,
+        3080,
+        305,
+        3111
+      ],
+      "uprightCenter": [
+        2247.425,
+        168.645
+      ],
+      "nativeCenter": [
+        296.5,
+        3095.5
+      ],
+      "boxSize": [
+        18,
+        31
+      ],
+      "uprightInBounds": true,
+      "nativeInBounds": true
+    },
+    {
+      "id": "overdose_glyph_7_S",
+      "label": "OVERDOSE glyph 7 S",
+      "kind": "overdose_glyph",
+      "uprightBox": [
+        2256.19,
+        153.05,
+        2273.73,
+        184.24
+      ],
+      "letter": "S",
+      "slotIndex": 6,
+      "nativeBox": [
+        270,
+        3080,
+        288,
+        3111
+      ],
+      "uprightCenter": [
+        2264.96,
+        168.645
+      ],
+      "nativeCenter": [
+        279.0,
+        3095.5
+      ],
+      "boxSize": [
+        18,
+        31
+      ],
+      "uprightInBounds": true,
+      "nativeInBounds": true
+    },
+    {
+      "id": "overdose_glyph_8_E",
+      "label": "OVERDOSE glyph 8 E",
+      "kind": "overdose_glyph",
+      "uprightBox": [
+        2273.73,
+        153.05,
+        2291.26,
+        184.24
+      ],
+      "letter": "E",
+      "slotIndex": 7,
+      "nativeBox": [
+        253,
+        3080,
+        270,
+        3111
+      ],
+      "uprightCenter": [
+        2282.495,
+        168.645
+      ],
+      "nativeCenter": [
+        261.5,
+        3095.5
+      ],
+      "boxSize": [
+        18,
+        31
+      ],
+      "uprightInBounds": true,
+      "nativeInBounds": true
+    }
+  ],
+  "summary": {
+    "benchmarkBoxCount": 15,
+    "activeTargetCount": 4,
+    "sourceFrameCount": 2,
+    "overdoseGlyphBoxCount": 8,
+    "allUprightBoxesInBounds": true,
+    "allNativeBoxesInBounds": true,
+    "activePageLines": "22 25 27 32",
+    "activeCorridorIndexes": "4 7 9 14",
+    "activeVisualStateOrder": "YKKY",
+    "c9FrameXMirrorInvariant": true,
+    "headerGlyphSequence": "OVERDOSE",
+    "headerGlyphMaxEdgeDeltaVsEqualSlotPx": 0.087628,
+    "selectorUnlocked": false
+  },
+  "decision": {
+    "sourcePacketNativeBenchmarkBridge": "source-registration-only",
+    "reason": "The active quartet, C9/Y-K frame, reflected p78 frame, and OVERDOSE header glyph boxes all have clean native-source coordinates after rotate180, but this adds only future source-comparison scaffolding, not an extraction unit or order."
+  },
+  "sheet": "analysis_outputs/source_audit/source_packet_native_benchmark_bridge/source_packet_native_benchmark_bridge_sheet.jpg",
+  "nextMove": "Use this bridge when comparing any physical scan, original layout export, or fresh PDF extraction: first normalize orientation, then require R3 unit/order wording before any selector/key test."
+}

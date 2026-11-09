@@ -1,0 +1,137 @@
+{
+  "createdAt": "2026-05-20T11:51:11",
+  "scope": "p78 source-side fit of current and dx=-38/-40 repaired frames; no OCR extraction or key derivation",
+  "sourceReports": {
+    "bridge": "analysis_outputs/source_audit/p78_frame_source_native_bridge/p78_frame_source_native_bridge.json"
+  },
+  "detectedP78GraphicBox": [
+    294,
+    2398,
+    1310,
+    2950
+  ],
+  "graphicMaskPixels": 233509,
+  "rows": [
+    {
+      "name": "current",
+      "p78UprightBox": [
+        294,
+        2398,
+        1310,
+        2950
+      ],
+      "p76ReflectedUprightBox": [
+        1234,
+        2398,
+        2250,
+        2950
+      ],
+      "dx": 0.0,
+      "dy": 0.0,
+      "color": "#55d6ff",
+      "intersectionWithDetectedGraphicBox": [
+        294,
+        2398,
+        1310,
+        2950
+      ],
+      "bboxOverlapVsGraphicBox": 1.0,
+      "graphicMaskPixelsInsideFrame": 233509,
+      "graphicMaskPixelsOutsideFrame": 0,
+      "graphicMaskCapture": 1.0,
+      "frameMaskDensity": 0.416362,
+      "sourceFrameOffsetFromDetectedGraphicBox": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "g5_edge_touch_dx_-38",
+      "p78UprightBox": [
+        332,
+        2398,
+        1348,
+        2950
+      ],
+      "p76ReflectedUprightBox": [
+        1196,
+        2398,
+        2212,
+        2950
+      ],
+      "dx": -38.0,
+      "dy": 0.0,
+      "color": "#ff5ebc",
+      "intersectionWithDetectedGraphicBox": [
+        332,
+        2398,
+        1310,
+        2950
+      ],
+      "bboxOverlapVsGraphicBox": 0.962598,
+      "graphicMaskPixelsInsideFrame": 231590,
+      "graphicMaskPixelsOutsideFrame": 1919,
+      "graphicMaskCapture": 0.991782,
+      "frameMaskDensity": 0.41294,
+      "sourceFrameOffsetFromDetectedGraphicBox": {
+        "left": 38,
+        "top": 0,
+        "right": 38,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "nearest_grid_dx_-40",
+      "p78UprightBox": [
+        334,
+        2398,
+        1350,
+        2950
+      ],
+      "p76ReflectedUprightBox": [
+        1194,
+        2398,
+        2210,
+        2950
+      ],
+      "dx": -40.0,
+      "dy": 0.0,
+      "color": "#ff9b2e",
+      "intersectionWithDetectedGraphicBox": [
+        334,
+        2398,
+        1310,
+        2950
+      ],
+      "bboxOverlapVsGraphicBox": 0.96063,
+      "graphicMaskPixelsInsideFrame": 231445,
+      "graphicMaskPixelsOutsideFrame": 2064,
+      "graphicMaskCapture": 0.991161,
+      "frameMaskDensity": 0.412682,
+      "sourceFrameOffsetFromDetectedGraphicBox": {
+        "left": 40,
+        "top": 0,
+        "right": 40,
+        "bottom": 0
+      }
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/p78_frame_source_side_fit/p78_frame_source_side_fit_sheet.jpg",
+  "summary": {
+    "sourceSideFitFavorsCurrentDetectedBox": true,
+    "currentCapture": 1.0,
+    "repairedCaptures": {
+      "g5_edge_touch_dx_-38": 0.991782,
+      "nearest_grid_dx_-40": 0.991161
+    }
+  },
+  "assessment": [
+    "The current p78 source frame is the detected graphic bounding box and captures the full detected dark graphic mask.",
+    "The dx=-38/-40 repaired frames shift the p78 source box right by 38-40 px, losing a small amount of left-side source graphic while adding right-side whitespace.",
+    "Therefore dx=-38/-40 is better described as a target-side/source-registration repair that improves the p76 G5/M3/O5 tri-contact, not as a better p78 source-object bounding box.",
+    "This does not weaken the repaired frame as a validation signature; it narrows what the repair means."
+  ],
+  "nextMove": "Keep current p78 box for source-object detection and dx=-38/-40 for p76 registration validation; do not treat the repair itself as an extraction instruction."
+}

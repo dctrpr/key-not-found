@@ -1,0 +1,706 @@
+{
+  "createdAt": "2026-05-20T08:29:19",
+  "scope": "DOCM Typeka/font-state cross-check for repaired p78 frame contacts; no key derivation",
+  "sourceReports": {
+    "fontStates": "analysis_outputs/docm_format_sources/lower_corridor_font_state_selector/lower_corridor_font_state_selector.json",
+    "contactStability": "analysis_outputs/source_audit/tricontact_frame_contact_stability/tricontact_frame_contact_stability.json"
+  },
+  "summaries": [
+    {
+      "name": "current",
+      "rows": [
+        {
+          "id": "should_sell",
+          "label": "should sell",
+          "edgeClass": "exact",
+          "edges": "left:cuts,top:cuts",
+          "overlapVsTarget": 0.76351,
+          "dominantStyle": "R",
+          "styleRun": "R",
+          "variantCounts": {
+            "TYPEKA": 11
+          },
+          "highlightCounts": {
+            "none": 1
+          },
+          "wordInitials": "ss",
+          "wordLasts": "dl"
+        },
+        {
+          "id": "earnings",
+          "label": "earnings",
+          "edgeClass": "exact",
+          "edges": "left:cuts,top:above-adjacent",
+          "overlapVsTarget": 0.93307,
+          "dominantStyle": "R",
+          "styleRun": "R",
+          "variantCounts": {
+            "TYPEKA": 8
+          },
+          "highlightCounts": {
+            "none": 1
+          },
+          "wordInitials": "e",
+          "wordLasts": "s"
+        },
+        {
+          "id": "pay_imf",
+          "label": "pay off the IMF",
+          "edgeClass": "adjacent",
+          "edges": "left:left-adjacent",
+          "overlapVsTarget": 1.0,
+          "dominantStyle": "R",
+          "styleRun": "RB",
+          "variantCounts": {
+            "TYPEKA": 12,
+            "TYPEKA_BOLD": 3
+          },
+          "highlightCounts": {
+            "none": 2
+          },
+          "wordInitials": "potI",
+          "wordLasts": "yfeF"
+        },
+        {
+          "id": "G5",
+          "label": "Volcano Bonds",
+          "edgeClass": "adjacent",
+          "edges": "left:right-adjacent",
+          "overlapVsTarget": 0.0,
+          "dominantStyle": "K",
+          "styleRun": "K",
+          "variantCounts": {
+            "TYPEKA_BOLD": 13
+          },
+          "highlightCounts": {
+            "black": 1
+          },
+          "wordInitials": "VB",
+          "wordLasts": "os"
+        },
+        {
+          "id": "tagged_mike",
+          "label": "I tagged Mike",
+          "edgeClass": "adjacent",
+          "edges": "left:left-adjacent",
+          "overlapVsTarget": 1.0,
+          "dominantStyle": "R",
+          "styleRun": "RM",
+          "variantCounts": {
+            "TYPEKA": 9,
+            "MIX": 4
+          },
+          "highlightCounts": {
+            "none": 2
+          },
+          "wordInitials": "ItM",
+          "wordLasts": "Ide"
+        },
+        {
+          "id": "could_sell",
+          "label": "could sell",
+          "edgeClass": "adjacent",
+          "edges": "left:left-adjacent",
+          "overlapVsTarget": 1.0,
+          "dominantStyle": "R",
+          "styleRun": "R",
+          "variantCounts": {
+            "TYPEKA": 10
+          },
+          "highlightCounts": {
+            "none": 1
+          },
+          "wordInitials": "cs",
+          "wordLasts": "dl"
+        },
+        {
+          "id": "trust_guy",
+          "label": "trust that guy",
+          "edgeClass": "adjacent",
+          "edges": "left:left-adjacent,bottom:below-adjacent",
+          "overlapVsTarget": 1.0,
+          "dominantStyle": "M",
+          "styleRun": "M",
+          "variantCounts": {
+            "MIX": 14
+          },
+          "highlightCounts": {
+            "none": 1
+          },
+          "wordInitials": "ttg",
+          "wordLasts": "tty"
+        },
+        {
+          "id": "O5",
+          "label": "shitcoiner at heart",
+          "edgeClass": "exact",
+          "edges": "left:cuts,bottom:cuts",
+          "overlapVsTarget": 0.24754,
+          "dominantStyle": "Y",
+          "styleRun": "Y",
+          "variantCounts": {
+            "TYPEKA_BOLD": 19
+          },
+          "highlightCounts": {
+            "yellow": 1
+          },
+          "wordInitials": "sah",
+          "wordLasts": "rtt"
+        }
+      ],
+      "styleCounts": {
+        "R": 5,
+        "K": 1,
+        "M": 1,
+        "Y": 1
+      },
+      "edgeClassCounts": {
+        "exact": 3,
+        "adjacent": 5
+      },
+      "streams": {
+        "topDownLabels": "should sell | earnings | pay off the IMF | Volcano Bonds | I tagged Mike | could sell | trust that guy | shitcoiner at heart",
+        "topDownStyles": "RRRKRRMY",
+        "topDownStyleRuns": "R|R|RB|K|RM|R|M|Y",
+        "topDownInitials": "sepVIcts",
+        "topDownLasts": "lsFselyt",
+        "exactEdgeLabels": "should sell | earnings | shitcoiner at heart",
+        "exactEdgeStyles": "RRY",
+        "exactEdgeStyleRuns": "R|R|Y",
+        "exactEdgeInitials": "ses",
+        "exactEdgeLasts": "lst",
+        "adjacentLabels": "pay off the IMF | Volcano Bonds | I tagged Mike | could sell | trust that guy",
+        "adjacentStyles": "RKRRM",
+        "contactClassCodes": "XXAAAAAX",
+        "cutOrAdjacentStyles": "RRRKRRMY",
+        "cutOrAdjacentInitials": "sepVIcts"
+      },
+      "instructionTermHits": {}
+    },
+    {
+      "name": "g5_edge_touch_dx_minus_38",
+      "rows": [
+        {
+          "id": "should_sell",
+          "label": "should sell",
+          "edgeClass": "exact",
+          "edges": "left:left-adjacent,top:cuts",
+          "overlapVsTarget": 0.88581,
+          "dominantStyle": "R",
+          "styleRun": "R",
+          "variantCounts": {
+            "TYPEKA": 11
+          },
+          "highlightCounts": {
+            "none": 1
+          },
+          "wordInitials": "ss",
+          "wordLasts": "dl"
+        },
+        {
+          "id": "earnings",
+          "label": "earnings",
+          "edgeClass": "adjacent",
+          "edges": "left:left-adjacent,top:above-adjacent",
+          "overlapVsTarget": 1.0,
+          "dominantStyle": "R",
+          "styleRun": "R",
+          "variantCounts": {
+            "TYPEKA": 8
+          },
+          "highlightCounts": {
+            "none": 1
+          },
+          "wordInitials": "e",
+          "wordLasts": "s"
+        },
+        {
+          "id": "pay_imf",
+          "label": "pay off the IMF",
+          "edgeClass": "adjacent",
+          "edges": "left:left-adjacent",
+          "overlapVsTarget": 1.0,
+          "dominantStyle": "R",
+          "styleRun": "RB",
+          "variantCounts": {
+            "TYPEKA": 12,
+            "TYPEKA_BOLD": 3
+          },
+          "highlightCounts": {
+            "none": 2
+          },
+          "wordInitials": "potI",
+          "wordLasts": "yfeF"
+        },
+        {
+          "id": "G5",
+          "label": "Volcano Bonds",
+          "edgeClass": "exact",
+          "edges": "left:cuts",
+          "overlapVsTarget": 0.0,
+          "dominantStyle": "K",
+          "styleRun": "K",
+          "variantCounts": {
+            "TYPEKA_BOLD": 13
+          },
+          "highlightCounts": {
+            "black": 1
+          },
+          "wordInitials": "VB",
+          "wordLasts": "os"
+        },
+        {
+          "id": "tagged_mike",
+          "label": "I tagged Mike",
+          "edgeClass": "adjacent",
+          "edges": "left:left-adjacent",
+          "overlapVsTarget": 1.0,
+          "dominantStyle": "R",
+          "styleRun": "RM",
+          "variantCounts": {
+            "TYPEKA": 9,
+            "MIX": 4
+          },
+          "highlightCounts": {
+            "none": 2
+          },
+          "wordInitials": "ItM",
+          "wordLasts": "Ide"
+        },
+        {
+          "id": "could_sell",
+          "label": "could sell",
+          "edgeClass": "adjacent",
+          "edges": "left:left-adjacent",
+          "overlapVsTarget": 1.0,
+          "dominantStyle": "R",
+          "styleRun": "R",
+          "variantCounts": {
+            "TYPEKA": 10
+          },
+          "highlightCounts": {
+            "none": 1
+          },
+          "wordInitials": "cs",
+          "wordLasts": "dl"
+        },
+        {
+          "id": "trust_guy",
+          "label": "trust that guy",
+          "edgeClass": "adjacent",
+          "edges": "left:left-adjacent,bottom:below-adjacent",
+          "overlapVsTarget": 1.0,
+          "dominantStyle": "M",
+          "styleRun": "M",
+          "variantCounts": {
+            "MIX": 14
+          },
+          "highlightCounts": {
+            "none": 1
+          },
+          "wordInitials": "ttg",
+          "wordLasts": "tty"
+        },
+        {
+          "id": "O5",
+          "label": "shitcoiner at heart",
+          "edgeClass": "exact",
+          "edges": "left:cuts,bottom:cuts",
+          "overlapVsTarget": 0.26957,
+          "dominantStyle": "Y",
+          "styleRun": "Y",
+          "variantCounts": {
+            "TYPEKA_BOLD": 19
+          },
+          "highlightCounts": {
+            "yellow": 1
+          },
+          "wordInitials": "sah",
+          "wordLasts": "rtt"
+        }
+      ],
+      "styleCounts": {
+        "R": 5,
+        "K": 1,
+        "M": 1,
+        "Y": 1
+      },
+      "edgeClassCounts": {
+        "exact": 3,
+        "adjacent": 5
+      },
+      "streams": {
+        "topDownLabels": "should sell | earnings | pay off the IMF | Volcano Bonds | I tagged Mike | could sell | trust that guy | shitcoiner at heart",
+        "topDownStyles": "RRRKRRMY",
+        "topDownStyleRuns": "R|R|RB|K|RM|R|M|Y",
+        "topDownInitials": "sepVIcts",
+        "topDownLasts": "lsFselyt",
+        "exactEdgeLabels": "should sell | Volcano Bonds | shitcoiner at heart",
+        "exactEdgeStyles": "RKY",
+        "exactEdgeStyleRuns": "R|K|Y",
+        "exactEdgeInitials": "sVs",
+        "exactEdgeLasts": "lst",
+        "adjacentLabels": "earnings | pay off the IMF | I tagged Mike | could sell | trust that guy",
+        "adjacentStyles": "RRRRM",
+        "contactClassCodes": "XAAXAAAX",
+        "cutOrAdjacentStyles": "RRRKRRMY",
+        "cutOrAdjacentInitials": "sepVIcts"
+      },
+      "instructionTermHits": {}
+    },
+    {
+      "name": "nearest_grid_dx_minus_40",
+      "rows": [
+        {
+          "id": "should_sell",
+          "label": "should sell",
+          "edgeClass": "exact",
+          "edges": "left:left-adjacent,top:cuts",
+          "overlapVsTarget": 0.88581,
+          "dominantStyle": "R",
+          "styleRun": "R",
+          "variantCounts": {
+            "TYPEKA": 11
+          },
+          "highlightCounts": {
+            "none": 1
+          },
+          "wordInitials": "ss",
+          "wordLasts": "dl"
+        },
+        {
+          "id": "earnings",
+          "label": "earnings",
+          "edgeClass": "adjacent",
+          "edges": "left:left-adjacent,top:above-adjacent",
+          "overlapVsTarget": 1.0,
+          "dominantStyle": "R",
+          "styleRun": "R",
+          "variantCounts": {
+            "TYPEKA": 8
+          },
+          "highlightCounts": {
+            "none": 1
+          },
+          "wordInitials": "e",
+          "wordLasts": "s"
+        },
+        {
+          "id": "pay_imf",
+          "label": "pay off the IMF",
+          "edgeClass": "adjacent",
+          "edges": "left:left-adjacent",
+          "overlapVsTarget": 1.0,
+          "dominantStyle": "R",
+          "styleRun": "RB",
+          "variantCounts": {
+            "TYPEKA": 12,
+            "TYPEKA_BOLD": 3
+          },
+          "highlightCounts": {
+            "none": 2
+          },
+          "wordInitials": "potI",
+          "wordLasts": "yfeF"
+        },
+        {
+          "id": "G5",
+          "label": "Volcano Bonds",
+          "edgeClass": "exact",
+          "edges": "left:cuts",
+          "overlapVsTarget": 0.00499,
+          "dominantStyle": "K",
+          "styleRun": "K",
+          "variantCounts": {
+            "TYPEKA_BOLD": 13
+          },
+          "highlightCounts": {
+            "black": 1
+          },
+          "wordInitials": "VB",
+          "wordLasts": "os"
+        },
+        {
+          "id": "tagged_mike",
+          "label": "I tagged Mike",
+          "edgeClass": "adjacent",
+          "edges": "left:left-adjacent",
+          "overlapVsTarget": 1.0,
+          "dominantStyle": "R",
+          "styleRun": "RM",
+          "variantCounts": {
+            "TYPEKA": 9,
+            "MIX": 4
+          },
+          "highlightCounts": {
+            "none": 2
+          },
+          "wordInitials": "ItM",
+          "wordLasts": "Ide"
+        },
+        {
+          "id": "could_sell",
+          "label": "could sell",
+          "edgeClass": "overlap",
+          "edges": "-",
+          "overlapVsTarget": 1.0,
+          "dominantStyle": "R",
+          "styleRun": "R",
+          "variantCounts": {
+            "TYPEKA": 10
+          },
+          "highlightCounts": {
+            "none": 1
+          },
+          "wordInitials": "cs",
+          "wordLasts": "dl"
+        },
+        {
+          "id": "trust_guy",
+          "label": "trust that guy",
+          "edgeClass": "adjacent",
+          "edges": "left:left-adjacent,bottom:below-adjacent",
+          "overlapVsTarget": 1.0,
+          "dominantStyle": "M",
+          "styleRun": "M",
+          "variantCounts": {
+            "MIX": 14
+          },
+          "highlightCounts": {
+            "none": 1
+          },
+          "wordInitials": "ttg",
+          "wordLasts": "tty"
+        },
+        {
+          "id": "O5",
+          "label": "shitcoiner at heart",
+          "edgeClass": "exact",
+          "edges": "left:cuts,bottom:cuts",
+          "overlapVsTarget": 0.27072,
+          "dominantStyle": "Y",
+          "styleRun": "Y",
+          "variantCounts": {
+            "TYPEKA_BOLD": 19
+          },
+          "highlightCounts": {
+            "yellow": 1
+          },
+          "wordInitials": "sah",
+          "wordLasts": "rtt"
+        }
+      ],
+      "styleCounts": {
+        "R": 5,
+        "K": 1,
+        "M": 1,
+        "Y": 1
+      },
+      "edgeClassCounts": {
+        "exact": 3,
+        "adjacent": 4,
+        "overlap": 1
+      },
+      "streams": {
+        "topDownLabels": "should sell | earnings | pay off the IMF | Volcano Bonds | I tagged Mike | could sell | trust that guy | shitcoiner at heart",
+        "topDownStyles": "RRRKRRMY",
+        "topDownStyleRuns": "R|R|RB|K|RM|R|M|Y",
+        "topDownInitials": "sepVIcts",
+        "topDownLasts": "lsFselyt",
+        "exactEdgeLabels": "should sell | Volcano Bonds | shitcoiner at heart",
+        "exactEdgeStyles": "RKY",
+        "exactEdgeStyleRuns": "R|K|Y",
+        "exactEdgeInitials": "sVs",
+        "exactEdgeLasts": "lst",
+        "adjacentLabels": "earnings | pay off the IMF | I tagged Mike | trust that guy",
+        "adjacentStyles": "RRRM",
+        "contactClassCodes": "XAAXAOAX",
+        "cutOrAdjacentStyles": "RRRKRMY",
+        "cutOrAdjacentInitials": "sepVIts"
+      },
+      "instructionTermHits": {}
+    },
+    {
+      "name": "best_overlap_dx_minus_160_dy_35",
+      "rows": [
+        {
+          "id": "should_sell",
+          "label": "should sell",
+          "edgeClass": "exact",
+          "edges": "top:cuts",
+          "overlapVsTarget": 0.01321,
+          "dominantStyle": "R",
+          "styleRun": "R",
+          "variantCounts": {
+            "TYPEKA": 11
+          },
+          "highlightCounts": {
+            "none": 1
+          },
+          "wordInitials": "ss",
+          "wordLasts": "dl"
+        },
+        {
+          "id": "earnings",
+          "label": "earnings",
+          "edgeClass": "adjacent",
+          "edges": "top:above-adjacent",
+          "overlapVsTarget": 1.0,
+          "dominantStyle": "R",
+          "styleRun": "R",
+          "variantCounts": {
+            "TYPEKA": 8
+          },
+          "highlightCounts": {
+            "none": 1
+          },
+          "wordInitials": "e",
+          "wordLasts": "s"
+        },
+        {
+          "id": "pay_imf",
+          "label": "pay off the IMF",
+          "edgeClass": "overlap",
+          "edges": "-",
+          "overlapVsTarget": 1.0,
+          "dominantStyle": "R",
+          "styleRun": "RB",
+          "variantCounts": {
+            "TYPEKA": 12,
+            "TYPEKA_BOLD": 3
+          },
+          "highlightCounts": {
+            "none": 2
+          },
+          "wordInitials": "potI",
+          "wordLasts": "yfeF"
+        },
+        {
+          "id": "G5",
+          "label": "Volcano Bonds",
+          "edgeClass": "exact",
+          "edges": "left:cuts",
+          "overlapVsTarget": 0.30424,
+          "dominantStyle": "K",
+          "styleRun": "K",
+          "variantCounts": {
+            "TYPEKA_BOLD": 13
+          },
+          "highlightCounts": {
+            "black": 1
+          },
+          "wordInitials": "VB",
+          "wordLasts": "os"
+        },
+        {
+          "id": "tagged_mike",
+          "label": "I tagged Mike",
+          "edgeClass": "overlap",
+          "edges": "-",
+          "overlapVsTarget": 1.0,
+          "dominantStyle": "R",
+          "styleRun": "RM",
+          "variantCounts": {
+            "TYPEKA": 9,
+            "MIX": 4
+          },
+          "highlightCounts": {
+            "none": 2
+          },
+          "wordInitials": "ItM",
+          "wordLasts": "Ide"
+        },
+        {
+          "id": "could_sell",
+          "label": "could sell",
+          "edgeClass": "overlap",
+          "edges": "-",
+          "overlapVsTarget": 1.0,
+          "dominantStyle": "R",
+          "styleRun": "R",
+          "variantCounts": {
+            "TYPEKA": 10
+          },
+          "highlightCounts": {
+            "none": 1
+          },
+          "wordInitials": "cs",
+          "wordLasts": "dl"
+        },
+        {
+          "id": "trust_guy",
+          "label": "trust that guy",
+          "edgeClass": "overlap",
+          "edges": "-",
+          "overlapVsTarget": 1.0,
+          "dominantStyle": "M",
+          "styleRun": "M",
+          "variantCounts": {
+            "MIX": 14
+          },
+          "highlightCounts": {
+            "none": 1
+          },
+          "wordInitials": "ttg",
+          "wordLasts": "tty"
+        },
+        {
+          "id": "O5",
+          "label": "shitcoiner at heart",
+          "edgeClass": "exact",
+          "edges": "left:cuts,bottom:below-adjacent",
+          "overlapVsTarget": 0.94525,
+          "dominantStyle": "Y",
+          "styleRun": "Y",
+          "variantCounts": {
+            "TYPEKA_BOLD": 19
+          },
+          "highlightCounts": {
+            "yellow": 1
+          },
+          "wordInitials": "sah",
+          "wordLasts": "rtt"
+        }
+      ],
+      "styleCounts": {
+        "R": 5,
+        "K": 1,
+        "M": 1,
+        "Y": 1
+      },
+      "edgeClassCounts": {
+        "exact": 3,
+        "adjacent": 1,
+        "overlap": 4
+      },
+      "streams": {
+        "topDownLabels": "should sell | earnings | pay off the IMF | Volcano Bonds | I tagged Mike | could sell | trust that guy | shitcoiner at heart",
+        "topDownStyles": "RRRKRRMY",
+        "topDownStyleRuns": "R|R|RB|K|RM|R|M|Y",
+        "topDownInitials": "sepVIcts",
+        "topDownLasts": "lsFselyt",
+        "exactEdgeLabels": "should sell | Volcano Bonds | shitcoiner at heart",
+        "exactEdgeStyles": "RKY",
+        "exactEdgeStyleRuns": "R|K|Y",
+        "exactEdgeInitials": "sVs",
+        "exactEdgeLasts": "lst",
+        "adjacentLabels": "earnings",
+        "adjacentStyles": "R",
+        "contactClassCodes": "XAOXOOOX",
+        "cutOrAdjacentStyles": "RRKY",
+        "cutOrAdjacentInitials": "seVs"
+      },
+      "instructionTermHits": {}
+    }
+  ],
+  "allInstructionTermHits": {},
+  "sheet": "analysis_outputs/docm_format_sources/repaired_frame_font_contact_states/repaired_frame_font_contact_states_sheet.jpg",
+  "assessment": [
+    "The top-down font/style ladder is stable under repair: current and dx=-38 both give `RRRKRRMY`.",
+    "The repair does change the exact-edge subset from current `should sell | earnings | shitcoiner at heart` (`RRY`) to dx=-38 `should sell | Volcano Bonds | shitcoiner at heart` (`RKY`).",
+    "That cleaner exact-edge trio is good registration evidence, but its initials (`sVs`), last letters (`lst`), and style code (`RKY`) do not name a word/letter/line/key operation.",
+    "dx=-40 matches the same exact-edge trio as dx=-38: `should sell | Volcano Bonds | shitcoiner at heart`.",
+    "Typeka Mix still appears as semantic prose (`trust that guy`, plus Mike in a mixed run), not as an independent selector."
+  ],
+  "nextMove": "Keep the repaired exact-edge trio as a compact registration signature: `should sell | Volcano Bonds | shitcoiner at heart` with styles `R K Y`. Do not use it as key material unless a source clue names font/style extraction."
+}

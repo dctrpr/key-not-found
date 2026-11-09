@@ -1,0 +1,397 @@
+{
+  "createdAt": "2026-05-24T17:26:46",
+  "scope": "single-translation rescue feasibility for mirrored OSE source highlights against locked O4/B4/G5/O5 targets; no extraction/key derivation",
+  "inputs": {
+    "oseHighlightMirrorGeometryGate": "analysis_outputs/source_audit/current_pdf_ose_highlight_mirror_geometry_gate/current_pdf_ose_highlight_mirror_geometry_gate.json",
+    "activeTargets": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "summary": {
+    "sourceHighlightCount": 2,
+    "activeTargetCount": 4,
+    "naturalActiveCoverageCount": 0,
+    "naturalActiveCoverageIds": [],
+    "smallShiftLimitPx": 160.0,
+    "smallShiftBestCoverageCount": 0,
+    "moderateShiftLimitPx": 320.0,
+    "moderateShiftBestCoverageCount": 1,
+    "minimumOneTargetShift": {
+      "targetIds": [
+        "O4"
+      ],
+      "assignment": [
+        {
+          "sourceId": "p75_orange_7",
+          "targetId": "O4"
+        }
+      ],
+      "dxInterval": [
+        -758.0,
+        182.0
+      ],
+      "dyInterval": [
+        -287.0,
+        -190.0
+      ],
+      "dx": 0.0,
+      "dy": -190.0,
+      "lInf": 190.0,
+      "euclidean": 190.0,
+      "actualCoverageAtClosestShift": [
+        "O4"
+      ],
+      "actualCoverageCountAtClosestShift": 1
+    },
+    "minimumTwoTargetShift": {
+      "targetIds": [
+        "B4",
+        "G5"
+      ],
+      "assignment": [
+        {
+          "sourceId": "p75_orange_7",
+          "targetId": "B4"
+        },
+        {
+          "sourceId": "p75_orange_8",
+          "targetId": "G5"
+        }
+      ],
+      "dxInterval": [
+        -1205.0,
+        -928.0
+      ],
+      "dyInterval": [
+        -56.0,
+        30.0
+      ],
+      "dx": -928.0,
+      "dy": 0.0,
+      "lInf": 928.0,
+      "euclidean": 928.0,
+      "actualCoverageAtClosestShift": [
+        "B4",
+        "G5"
+      ],
+      "actualCoverageCountAtClosestShift": 2
+    },
+    "threeTargetTranslationPossible": false,
+    "fourTargetTranslationPossible": false,
+    "selectorCandidateCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "fingerprint": "sources=2|targets=4|natural=0|small160=0|moderate320=1|oneLinf=190.0|twoLinf=928.0|threePossible=0|fourPossible=0|candidates=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "sourceHighlights": [
+    {
+      "id": "p75_orange_7",
+      "mirroredBox": [
+        1619.0,
+        2415.0,
+        2092.0,
+        2464.0
+      ],
+      "naturalSlotContacts": [
+        "S6",
+        "O5",
+        "E7"
+      ],
+      "naturalActiveContacts": []
+    },
+    {
+      "id": "p75_orange_8",
+      "mirroredBox": [
+        1809.0,
+        2553.0,
+        2000.0,
+        2600.0
+      ],
+      "naturalSlotContacts": [
+        "S6"
+      ],
+      "naturalActiveContacts": []
+    }
+  ],
+  "activeTargets": [
+    {
+      "id": "O4",
+      "targetId": "buying_dip",
+      "label": "O4 buying the dip",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "visualState": "Y"
+    },
+    {
+      "id": "B4",
+      "targetId": "one_billion",
+      "label": "B4 $1 billion",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "visualState": "K"
+    },
+    {
+      "id": "G5",
+      "targetId": "volcano_bonds",
+      "label": "G5 Volcano Bonds",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "visualState": "K"
+    },
+    {
+      "id": "O5",
+      "targetId": "shitcoiner_heart",
+      "label": "O5 shitcoiner at heart",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "visualState": "Y"
+    }
+  ],
+  "pairRows": [
+    {
+      "sourceId": "p75_orange_7",
+      "targetId": "O4",
+      "targetLabel": "O4 buying the dip",
+      "dxInterval": [
+        -758.0,
+        182.0
+      ],
+      "dyInterval": [
+        -287.0,
+        -190.0
+      ],
+      "possible": true,
+      "closestDx": 0.0,
+      "closestDy": -190.0,
+      "closestLInf": 190.0,
+      "closestEuclidean": 190.0
+    },
+    {
+      "sourceId": "p75_orange_8",
+      "targetId": "O4",
+      "targetLabel": "O4 buying the dip",
+      "dxInterval": [
+        -666.0,
+        -8.0
+      ],
+      "dyInterval": [
+        -423.0,
+        -328.0
+      ],
+      "possible": true,
+      "closestDx": -8.0,
+      "closestDy": -328.0,
+      "closestLInf": 328.0,
+      "closestEuclidean": 328.098
+    },
+    {
+      "sourceId": "p75_orange_8",
+      "targetId": "O5",
+      "targetLabel": "O5 shitcoiner at heart",
+      "dxInterval": [
+        -960.0,
+        -148.0
+      ],
+      "dyInterval": [
+        332.0,
+        429.0
+      ],
+      "possible": true,
+      "closestDx": -148.0,
+      "closestDy": 332.0,
+      "closestLInf": 332.0,
+      "closestEuclidean": 363.494
+    },
+    {
+      "sourceId": "p75_orange_7",
+      "targetId": "G5",
+      "targetLabel": "G5 Volcano Bonds",
+      "dxInterval": [
+        -1297.0,
+        -423.0
+      ],
+      "dyInterval": [
+        80.0,
+        177.0
+      ],
+      "possible": true,
+      "closestDx": -423.0,
+      "closestDy": 80.0,
+      "closestLInf": 423.0,
+      "closestEuclidean": 430.499
+    },
+    {
+      "sourceId": "p75_orange_7",
+      "targetId": "O5",
+      "targetLabel": "O5 shitcoiner at heart",
+      "dxInterval": [
+        -1052.0,
+        42.0
+      ],
+      "dyInterval": [
+        468.0,
+        567.0
+      ],
+      "possible": true,
+      "closestDx": 0.0,
+      "closestDy": 468.0,
+      "closestLInf": 468.0,
+      "closestEuclidean": 468.0
+    },
+    {
+      "sourceId": "p75_orange_8",
+      "targetId": "G5",
+      "targetLabel": "G5 Volcano Bonds",
+      "dxInterval": [
+        -1205.0,
+        -613.0
+      ],
+      "dyInterval": [
+        -56.0,
+        39.0
+      ],
+      "possible": true,
+      "closestDx": -613.0,
+      "closestDy": 0.0,
+      "closestLInf": 613.0,
+      "closestEuclidean": 613.0
+    },
+    {
+      "sourceId": "p75_orange_7",
+      "targetId": "B4",
+      "targetLabel": "B4 $1 billion",
+      "dxInterval": [
+        -1664.0,
+        -928.0
+      ],
+      "dyInterval": [
+        -66.0,
+        30.0
+      ],
+      "possible": true,
+      "closestDx": -928.0,
+      "closestDy": 0.0,
+      "closestLInf": 928.0,
+      "closestEuclidean": 928.0
+    },
+    {
+      "sourceId": "p75_orange_8",
+      "targetId": "B4",
+      "targetLabel": "B4 $1 billion",
+      "dxInterval": [
+        -1572.0,
+        -1118.0
+      ],
+      "dyInterval": [
+        -202.0,
+        -108.0
+      ],
+      "possible": true,
+      "closestDx": -1118.0,
+      "closestDy": -108.0,
+      "closestLInf": 1118.0,
+      "closestEuclidean": 1123.204
+    }
+  ],
+  "bestSubsetSolutions": [
+    {
+      "subsetSize": 1,
+      "best": {
+        "targetIds": [
+          "O4"
+        ],
+        "assignment": [
+          {
+            "sourceId": "p75_orange_7",
+            "targetId": "O4"
+          }
+        ],
+        "dxInterval": [
+          -758.0,
+          182.0
+        ],
+        "dyInterval": [
+          -287.0,
+          -190.0
+        ],
+        "dx": 0.0,
+        "dy": -190.0,
+        "lInf": 190.0,
+        "euclidean": 190.0,
+        "actualCoverageAtClosestShift": [
+          "O4"
+        ],
+        "actualCoverageCountAtClosestShift": 1
+      }
+    },
+    {
+      "subsetSize": 2,
+      "best": {
+        "targetIds": [
+          "B4",
+          "G5"
+        ],
+        "assignment": [
+          {
+            "sourceId": "p75_orange_7",
+            "targetId": "B4"
+          },
+          {
+            "sourceId": "p75_orange_8",
+            "targetId": "G5"
+          }
+        ],
+        "dxInterval": [
+          -1205.0,
+          -928.0
+        ],
+        "dyInterval": [
+          -56.0,
+          30.0
+        ],
+        "dx": -928.0,
+        "dy": 0.0,
+        "lInf": 928.0,
+        "euclidean": 928.0,
+        "actualCoverageAtClosestShift": [
+          "B4",
+          "G5"
+        ],
+        "actualCoverageCountAtClosestShift": 2
+      }
+    },
+    {
+      "subsetSize": 3,
+      "best": null
+    },
+    {
+      "subsetSize": 4,
+      "best": null
+    }
+  ],
+  "decision": "pdf_ose_highlight_translation_rescue_no_selector",
+  "reason": "No <=160px physical-style translation makes the OSE source highlights hit active targets. The first possible active hit needs a 190px vertical shift, two-target coverage needs a 928px horizontal shift, and three/four-target coverage is impossible for these two boxes.",
+  "nextMove": "Do not use OSE highlight translation rescue as a selector. Treat OSE as slot-band provenance unless a new source/clue supplies a non-arbitrary transform and read order.",
+  "sheet": "analysis_outputs/source_audit/current_pdf_ose_highlight_translation_rescue_gate/current_pdf_ose_highlight_translation_rescue_gate_sheet.jpg"
+}

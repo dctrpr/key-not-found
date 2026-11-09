@@ -1,0 +1,1096 @@
+{
+  "createdAt": "2026-05-24T09:31:16",
+  "scope": "current page-76 scan RGB channel-registration gate over active boxes, shifted controls, and projected OVERDOSE slots; no extraction or candidate generation",
+  "inputs": {
+    "page76Upright": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "c9HeaderGlyphSlotGate": "analysis_outputs/source_audit/c9_header_glyph_slot_gate/c9_header_glyph_slot_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "summary": {
+    "activeBoxCount": 4,
+    "shiftedControlBoxCount": 16,
+    "overdoseSlotBoxCount": 8,
+    "searchRadiusPx": 3,
+    "reliableEdgeStdThreshold": 2.0,
+    "reliableActiveBoxCount": 4,
+    "controlShiftMagnitudeP95": 0.0,
+    "controlConfidenceGainP95": 0.0,
+    "activeNonzeroRegistrationRowCount": 0,
+    "activeNonzeroRegistrationRowIds": [],
+    "activeConfidenceOutlierCount": 0,
+    "activeConfidenceOutlierIds": [],
+    "allFourActiveNonzeroRegistration": false,
+    "allFourActiveConfidenceOutlier": false,
+    "activeShiftSignatures": [
+      "RG+0,+0|BG+0,+0",
+      "RG+0,+0|BG+0,+0",
+      "RG+0,+0|BG+0,+0",
+      "RG+0,+0|BG+0,+0"
+    ],
+    "activeCommonShiftSignature": "RG+0,+0|BG+0,+0",
+    "controlCommonShiftSignatureMatchCount": 16,
+    "overdoseSlotCommonShiftSignatureMatchCount": 8,
+    "maxActiveShiftMagnitude": 0.0,
+    "maxControlShiftMagnitude": 0.0,
+    "maxOverdoseSlotShiftMagnitude": 0.0,
+    "maxActiveConfidenceGain": 0.0,
+    "maxControlConfidenceGain": 0.0,
+    "maxOverdoseSlotConfidenceGain": 0.0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "rgbRegistrationFingerprint": "active=4|controls=16|slots=8|radius=3|reliableActive=4|activeNonzero=0|activeGainOutliers=0|allFourNonzero=0|allFourGain=0|commonSig=RG+0,+0|BG+0,+0|controlCommon=16|slotCommon=8|shiftMax=0.0/0.0/0.0|gainMax=0.000/0.000/0.000|controlP95=0.0/0.000|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "regionRows": [
+    {
+      "shortId": "O4",
+      "phrase": "buying the dip",
+      "visualState": "Y",
+      "kind": "active",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "edgeStd": 23.05208,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.885049,
+        "zeroCorr": 0.885049,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.834913,
+        "zeroCorr": 0.834913,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "B4",
+      "phrase": "$1 billion",
+      "visualState": "K",
+      "kind": "active",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "edgeStd": 45.106476,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999998,
+        "zeroCorr": 0.999998,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "G5",
+      "phrase": "Volcano Bonds",
+      "visualState": "K",
+      "kind": "active",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "edgeStd": 50.076214,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999994,
+        "zeroCorr": 0.999994,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999975,
+        "zeroCorr": 0.999975,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "O5",
+      "phrase": "shitcoiner at heart",
+      "visualState": "Y",
+      "kind": "active",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "width": 621.0,
+      "height": 50.0,
+      "edgeStd": 22.074875,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.878803,
+        "zeroCorr": 0.878803,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.798214,
+        "zeroCorr": 0.798214,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "O4_dy-292",
+      "phrase": "O4 shifted -292px",
+      "kind": "shifted_control",
+      "box": [
+        1334.0,
+        1885.0,
+        1801.0,
+        1933.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "edgeStd": 0.638023,
+      "reliableEdge": false,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "O4_dy-146",
+      "phrase": "O4 shifted -146px",
+      "kind": "shifted_control",
+      "box": [
+        1334.0,
+        2031.0,
+        1801.0,
+        2079.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "edgeStd": 25.687796,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999996,
+        "zeroCorr": 0.999996,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "O4_dy+146",
+      "phrase": "O4 shifted +146px",
+      "kind": "shifted_control",
+      "box": [
+        1334.0,
+        2323.0,
+        1801.0,
+        2371.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "edgeStd": 35.515324,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999995,
+        "zeroCorr": 0.999995,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "O4_dy+292",
+      "phrase": "O4 shifted +292px",
+      "kind": "shifted_control",
+      "box": [
+        1334.0,
+        2469.0,
+        1801.0,
+        2517.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "edgeStd": 24.178865,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999996,
+        "zeroCorr": 0.999996,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "B4_dy-292",
+      "phrase": "B4 shifted -292px",
+      "kind": "shifted_control",
+      "box": [
+        428.0,
+        2106.0,
+        691.0,
+        2153.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "edgeStd": 44.231373,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "B4_dy-146",
+      "phrase": "B4 shifted -146px",
+      "kind": "shifted_control",
+      "box": [
+        428.0,
+        2252.0,
+        691.0,
+        2299.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "edgeStd": 43.607449,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999985,
+        "zeroCorr": 0.999985,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "B4_dy+146",
+      "phrase": "B4 shifted +146px",
+      "kind": "shifted_control",
+      "box": [
+        428.0,
+        2544.0,
+        691.0,
+        2591.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "edgeStd": 44.949249,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999987,
+        "zeroCorr": 0.999987,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "B4_dy+292",
+      "phrase": "B4 shifted +292px",
+      "kind": "shifted_control",
+      "box": [
+        428.0,
+        2690.0,
+        691.0,
+        2737.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "edgeStd": 45.854168,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "G5_dy-292",
+      "phrase": "G5 shifted -292px",
+      "kind": "shifted_control",
+      "box": [
+        795.0,
+        2252.0,
+        1196.0,
+        2300.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "edgeStd": 43.466145,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999996,
+        "zeroCorr": 0.999996,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "G5_dy-146",
+      "phrase": "G5 shifted -146px",
+      "kind": "shifted_control",
+      "box": [
+        795.0,
+        2398.0,
+        1196.0,
+        2446.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "edgeStd": 42.010223,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999999,
+        "zeroCorr": 0.999999,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999986,
+        "zeroCorr": 0.999986,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "G5_dy+146",
+      "phrase": "G5 shifted +146px",
+      "kind": "shifted_control",
+      "box": [
+        795.0,
+        2690.0,
+        1196.0,
+        2738.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "edgeStd": 45.883961,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999999,
+        "zeroCorr": 0.999999,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999983,
+        "zeroCorr": 0.999983,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "G5_dy+292",
+      "phrase": "G5 shifted +292px",
+      "kind": "shifted_control",
+      "box": [
+        795.0,
+        2836.0,
+        1196.0,
+        2884.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "edgeStd": 40.969872,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "O5_dy-292",
+      "phrase": "O5 shifted -292px",
+      "kind": "shifted_control",
+      "box": [
+        1040.0,
+        2640.0,
+        1661.0,
+        2690.0
+      ],
+      "width": 621.0,
+      "height": 50.0,
+      "edgeStd": 29.92598,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999999,
+        "zeroCorr": 0.999999,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999983,
+        "zeroCorr": 0.999983,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "O5_dy-146",
+      "phrase": "O5 shifted -146px",
+      "kind": "shifted_control",
+      "box": [
+        1040.0,
+        2786.0,
+        1661.0,
+        2836.0
+      ],
+      "width": 621.0,
+      "height": 50.0,
+      "edgeStd": 30.569342,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "O5_dy+146",
+      "phrase": "O5 shifted +146px",
+      "kind": "shifted_control",
+      "box": [
+        1040.0,
+        3078.0,
+        1661.0,
+        3128.0
+      ],
+      "width": 621.0,
+      "height": 50.0,
+      "edgeStd": 0.67956,
+      "reliableEdge": false,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "O5_dy+292",
+      "phrase": "O5 shifted +292px",
+      "kind": "shifted_control",
+      "box": [
+        1040.0,
+        3224.0,
+        1661.0,
+        3264.0
+      ],
+      "width": 621.0,
+      "height": 40.0,
+      "edgeStd": 0.728392,
+      "reliableEdge": false,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "slot0_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "kind": "overdose_slot",
+      "box": [
+        294.0,
+        2176.81,
+        538.5697177074414,
+        3023.73
+      ],
+      "width": 244.569718,
+      "height": 846.92,
+      "edgeStd": 25.888899,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999999,
+        "zeroCorr": 0.999999,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999991,
+        "zeroCorr": 0.999991,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "slot1_V",
+      "phrase": "C9 projected OVERDOSE slot V",
+      "kind": "overdose_slot",
+      "box": [
+        538.5697177074414,
+        2176.81,
+        783.0000000000016,
+        3023.73
+      ],
+      "width": 244.430282,
+      "height": 846.92,
+      "edgeStd": 37.169998,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999995,
+        "zeroCorr": 0.999995,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "slot2_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "kind": "overdose_slot",
+      "box": [
+        783.0000000000016,
+        2176.81,
+        1027.569717707443,
+        3023.73
+      ],
+      "width": 244.569718,
+      "height": 846.92,
+      "edgeStd": 36.410236,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999998,
+        "zeroCorr": 0.999998,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.999987,
+        "zeroCorr": 0.999987,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "slot3_R",
+      "phrase": "C9 projected OVERDOSE slot R",
+      "kind": "overdose_slot",
+      "box": [
+        1027.569717707443,
+        2176.81,
+        1271.9999999999968,
+        3023.73
+      ],
+      "width": 244.430282,
+      "height": 846.92,
+      "edgeStd": 36.018353,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.995426,
+        "zeroCorr": 0.995426,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.995806,
+        "zeroCorr": 0.995806,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "slot4_D",
+      "phrase": "C9 projected OVERDOSE slot D",
+      "kind": "overdose_slot",
+      "box": [
+        1271.9999999999968,
+        2176.81,
+        1516.5697177074383,
+        3023.73
+      ],
+      "width": 244.569718,
+      "height": 846.92,
+      "edgeStd": 34.035065,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.99147,
+        "zeroCorr": 0.99147,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.992254,
+        "zeroCorr": 0.992254,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "slot5_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "kind": "overdose_slot",
+      "box": [
+        1516.5697177074383,
+        2176.81,
+        1760.9999999999984,
+        3023.73
+      ],
+      "width": 244.430282,
+      "height": 846.92,
+      "edgeStd": 22.282532,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.9841,
+        "zeroCorr": 0.9841,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.982191,
+        "zeroCorr": 0.982191,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "slot6_S",
+      "phrase": "C9 projected OVERDOSE slot S",
+      "kind": "overdose_slot",
+      "box": [
+        1760.9999999999984,
+        2176.81,
+        2005.5697177074398,
+        3023.73
+      ],
+      "width": 244.569718,
+      "height": 846.92,
+      "edgeStd": 5.552765,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.979958,
+        "zeroCorr": 0.979958,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 0.974019,
+        "zeroCorr": 0.974019,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    },
+    {
+      "shortId": "slot7_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "kind": "overdose_slot",
+      "box": [
+        2005.5697177074398,
+        2176.81,
+        2250.0,
+        3023.73
+      ],
+      "width": 244.430282,
+      "height": 846.92,
+      "edgeStd": 4.873632,
+      "reliableEdge": true,
+      "rAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "bAgainstG": {
+        "dx": 0,
+        "dy": 0,
+        "magnitude": 0.0,
+        "bestCorr": 1.0,
+        "zeroCorr": 1.0,
+        "confidenceGain": 0.0,
+        "nonzero": false
+      },
+      "maxShiftMagnitude": 0.0,
+      "maxConfidenceGain": 0.0,
+      "nonzeroPairCount": 0,
+      "shiftSignature": "RG+0,+0|BG+0,+0"
+    }
+  ],
+  "decision": {
+    "currentScanRgbRegistrationGate": "current_scan_rgb_registration_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Active target boxes and projected OVERDOSE slots do not show a unique RGB channel-displacement carrier against shifted controls. Any local channel differences are ordinary scan/color content effects and do not supply source-backed unit/order/transform evidence.",
+    "nextMove": "Keep current-scan RGB channel registration as a closed source-quality artifact path. Continue only with distinct physical/original-layout source validation or raw clue wording that names extraction unit, order, or transform."
+  },
+  "sheet": "analysis_outputs/source_audit/current_scan_rgb_registration_gate/current_scan_rgb_registration_gate_sheet.jpg",
+  "fingerprint": "active=4|controls=16|slots=8|radius=3|reliableActive=4|activeNonzero=0|activeGainOutliers=0|allFourNonzero=0|allFourGain=0|commonSig=RG+0,+0|BG+0,+0|controlCommon=16|slotCommon=8|shiftMax=0.0/0.0/0.0|gainMax=0.000/0.000/0.000|controlP95=0.0/0.000|sourceR3=0|triggers=0/9|selectors=0"
+}

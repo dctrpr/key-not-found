@@ -1,0 +1,126 @@
+{
+  "createdAt": "2026-05-21T08:06:18",
+  "scope": "terminal source-packet coverage inspection; no extraction, hashing, WIF, seed phrase, address, or key checks",
+  "inputs": {
+    "investigation_log": "INVESTIGATION_LOG.md",
+    "clue_ledger": "CLUE_LEDGER.md",
+    "article_3d_map_summary": "analysis_outputs/3d_article_map/article_3d_map_data_summary.md",
+    "user_annotated_transcript": "analysis_outputs/3d_article_map/user_annotated_transcript.txt",
+    "user_markdown_transcript": "analysis_outputs/3d_article_map/user_markdown_transcript.md",
+    "plain_correction_report": "analysis_outputs/plain_text_transcript/plain_article_correction_report.json",
+    "missing_rule_frontier": "analysis_outputs/source_audit/missing_rule_frontier/missing_rule_frontier.json",
+    "source_packet_source_review_gate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "source_packet_reopen_trigger_matrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json",
+    "source_packet_false_positive_guardrail": "analysis_outputs/source_audit/source_packet_false_positive_guardrail/source_packet_false_positive_guardrail.json",
+    "source_packet_orientation_control_quartets": "analysis_outputs/source_audit/source_packet_orientation_control_quartets/source_packet_orientation_control_quartets.json",
+    "source_packet_fold_format_intersection_control": "analysis_outputs/source_audit/source_packet_fold_format_intersection_control/source_packet_fold_format_intersection_control.json",
+    "source_packet_overdose_transform_control": "analysis_outputs/source_audit/source_packet_overdose_transform_control/source_packet_overdose_transform_control.json",
+    "source_packet_r3_bridge_audit": "analysis_outputs/source_audit/source_packet_r3_bridge_audit/source_packet_r3_bridge_audit.json"
+  },
+  "sourceFileStatus": {
+    "investigation_log": {
+      "present": true,
+      "bytes": 679241
+    },
+    "clue_ledger": {
+      "present": true,
+      "bytes": 488628
+    },
+    "article_3d_map_summary": {
+      "present": true,
+      "bytes": 606
+    },
+    "user_annotated_transcript": {
+      "present": true,
+      "bytes": 12039
+    },
+    "user_markdown_transcript": {
+      "present": true,
+      "bytes": 8658
+    },
+    "plain_correction_report": {
+      "present": true,
+      "bytes": 6323
+    }
+  },
+  "coverageRows": [
+    {
+      "focusArea": "latest log, ledger, transcript, correction, and generated reports",
+      "guardrailPresent": true,
+      "extractionReady": false,
+      "evidence": "6 source/check files present; frontier loaded",
+      "blocker": "orientation/source review still requires R1-R5 and R3 before extraction"
+    },
+    {
+      "focusArea": "page-76 active target cluster O4/B4/G5/O5",
+      "guardrailPresent": true,
+      "extractionReady": false,
+      "evidence": "source-review paths 7, ready 0, R3 fails 7",
+      "blocker": "cluster is a validation surface; no source-backed unit/order"
+    },
+    {
+      "focusArea": "orange/black highlights and Y/K readable orientation",
+      "guardrailPresent": true,
+      "extractionReady": false,
+      "evidence": "YKKY 11/70; exact line-gap matches 1",
+      "blocker": "visual state alone is non-unique and supplies no extraction order"
+    },
+    {
+      "focusArea": "folded/mirrored 3D geometry plus bold/highlight state",
+      "guardrailPresent": true,
+      "extractionReady": false,
+      "evidence": "gates 8, pass 2, singleShiftAll4 0, non-target words 69",
+      "blocker": "per-target shifts and broad row context; no fold/format unit/order"
+    },
+    {
+      "focusArea": "OVERDOSE layout mechanics",
+      "guardrailPresent": true,
+      "extractionReady": false,
+      "evidence": "glyph delta 0.087628; center OVED/VEDO; p75 mirrors 8/8",
+      "blocker": "active black OVER is controlled by p75/mirror/tolerance variants"
+    },
+    {
+      "focusArea": "false-positive guardrail and reopen triggers",
+      "guardrailPresent": true,
+      "extractionReady": false,
+      "evidence": "hard rejects 9; triggers satisfied 0/9",
+      "blocker": "no current visual/source-packet trigger is satisfied"
+    },
+    {
+      "focusArea": "source-backed R3 bridge",
+      "guardrailPresent": true,
+      "extractionReady": false,
+      "evidence": "authority sources 4; target windows 31; sourceR3 0",
+      "blocker": "local authoritative layers contain target words but no unit/order instruction"
+    },
+    {
+      "focusArea": "next move and handoff discipline",
+      "guardrailPresent": true,
+      "extractionReady": false,
+      "evidence": "source/physical/original-layout validation against readable/upright 3D crop geometry or source_images/fresh PDF extraction rotated 180 degrees",
+      "blocker": "next work is source/physical/original-layout validation, not local permutations"
+    }
+  ],
+  "summary": {
+    "coverageAreaCount": 8,
+    "coveredGuardrailCount": 8,
+    "uncoveredGuardrailCount": 0,
+    "extractionReadyAreaCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "selectorUnlockedCount": 0,
+    "currentFocusedLocalChecksBeforeThisReport": 103,
+    "sourceFilesPresentCount": 6,
+    "sourceFilesCheckedCount": 6,
+    "recommendedNextMove": "source/physical/original-layout validation against readable/upright 3D crop geometry or source_images/fresh PDF extraction rotated 180 degrees",
+    "sourceReopenGate": "use analysis_outputs/source_audit/source_reopen_requirements/source_reopen_requirements.md; require R1-R5 before selector/key checks resume",
+    "terminalCoverageFingerprint": "areas=8|covered=8|ready=0|sourceR3=0|triggers=0/9|selectors=0|next=source-validation"
+  },
+  "decision": {
+    "sourcePacketTerminalCoverageMatrix": "covered_not_extraction_ready",
+    "selectorUnlocked": false,
+    "reason": "Every requested focus area now has an explicit guardrail, but zero areas are extraction-ready because source-backed R3 and satisfied reopen triggers remain absent.",
+    "nextMove": "Stop local selector/key permutations. Future work should inspect only a distinct source/photo/original export/clue through the R1-R5 source-review gate."
+  },
+  "sheet": "analysis_outputs/source_audit/source_packet_terminal_coverage_matrix/source_packet_terminal_coverage_matrix_sheet.jpg"
+}

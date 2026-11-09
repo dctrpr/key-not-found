@@ -1,0 +1,209 @@
+{
+  "createdAt": "2026-05-21T06:51:18",
+  "scope": "source-packet handoff integrity matrix; no OCR, extraction, key derivation, hashing, seed/WIF/address checks, BIP39 checks, or broad candidate generation",
+  "inputs": {
+    "orientation": "analysis_outputs/source_audit/page76_active_crop_orientation_guardrail/page76_active_crop_orientation_guardrail.json",
+    "order_trap": "analysis_outputs/source_audit/page76_active_order_orientation_trap/page76_active_order_orientation_trap.json",
+    "crop_completion": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "crop_sync": "analysis_outputs/source_audit/source_packet_crop_authority_sync/source_packet_crop_authority_sync.json",
+    "yk_sync": "analysis_outputs/source_audit/source_packet_yk_frame_benchmark_sync/source_packet_yk_frame_benchmark_sync.json",
+    "native_bridge": "analysis_outputs/source_audit/source_packet_native_benchmark_bridge/source_packet_native_benchmark_bridge.json",
+    "visual_roundtrip": "analysis_outputs/source_audit/source_packet_visual_state_roundtrip/source_packet_visual_state_roundtrip.json",
+    "alignment": "analysis_outputs/source_audit/source_packet_alignment_tolerance/source_packet_alignment_tolerance.json",
+    "geometric_fingerprint": "analysis_outputs/source_audit/source_packet_geometric_fingerprint/source_packet_geometric_fingerprint.json",
+    "frame_normalized": "analysis_outputs/source_audit/source_packet_frame_normalized_geometry/source_packet_frame_normalized_geometry.json",
+    "color_profile": "analysis_outputs/source_audit/source_packet_color_profile_manifest/source_packet_color_profile_manifest.json",
+    "repaired_residual": "analysis_outputs/source_audit/source_packet_repaired_p78_frame_residual/source_packet_repaired_p78_frame_residual.json",
+    "expansion_leakage": "analysis_outputs/source_audit/source_packet_repaired_frame_expansion_leakage/source_packet_repaired_frame_expansion_leakage.json",
+    "format_witness": "analysis_outputs/source_audit/c9_active_format_witness_reconciliation/c9_active_format_witness_reconciliation.json",
+    "header_glyph": "analysis_outputs/source_audit/c9_header_glyph_slot_gate/c9_header_glyph_slot_gate.json",
+    "mirrored_header": "analysis_outputs/source_audit/c9_mirrored_header_glyph_gate/c9_mirrored_header_glyph_gate.json",
+    "box_ocr": "analysis_outputs/3d_article_map/active_quartet_box_ocr_gate/active_quartet_box_ocr_gate.json"
+  },
+  "gateRows": [
+    {
+      "gate": "orientation_transform",
+      "layer": "3d/source image geometry",
+      "status": "pass_guardrail",
+      "metric": "rot180 mean 0.2859 vs direct 27.6479",
+      "interpretation": "Use readable/upright coordinates for 3D and crop-pack work; rotate native source images 180 degrees before comparison.",
+      "selectorUnlocked": false,
+      "contradiction": false
+    },
+    {
+      "gate": "order_orientation_trap",
+      "layer": "page 76 target cluster",
+      "status": "pass_guardrail",
+      "metric": "line order 22 25 27 32 vs native raw 32 27 25 22",
+      "interpretation": "YKKY/OBBO are palindromes, so future source matches must use line/corridor order, not color order alone.",
+      "selectorUnlocked": false,
+      "contradiction": false
+    },
+    {
+      "gate": "crop_completion",
+      "layer": "page 76 target cluster",
+      "status": "pass_source_handoff",
+      "metric": "crop coverage 4/4",
+      "interpretation": "All four active target crops are present for future visual comparison.",
+      "selectorUnlocked": false,
+      "contradiction": false
+    },
+    {
+      "gate": "authority_sync",
+      "layer": "text and format authority",
+      "status": "pass_with_appendix",
+      "metric": "PASS_WITH_SUPPLEMENTAL_APPENDIX; text=canonical_plain + docm_text + markdown_transcript",
+      "interpretation": "Canonical text, DOCM text, Markdown transcript, DOCM runs, high-res visuals, and crop-pack/manual boxes remain the authority stack.",
+      "selectorUnlocked": false,
+      "contradiction": false
+    },
+    {
+      "gate": "visual_state_roundtrip",
+      "layer": "orange/black highlights",
+      "status": "pass_source_profile",
+      "metric": "YKKY active; max mean diff 2.9794",
+      "interpretation": "Active visual states round-trip as YKKY and all active targets remain DOCM Typeka bold; this validates source matching only.",
+      "selectorUnlocked": false,
+      "contradiction": false
+    },
+    {
+      "gate": "color_profile_controls",
+      "layer": "orange/black vs OVERDOSE",
+      "status": "pass_control",
+      "metric": "Y margin 0.4354; K margin 0.6592",
+      "interpretation": "Active orange/black boxes remain separated from OVERDOSE header/glyph controls.",
+      "selectorUnlocked": false,
+      "contradiction": false
+    },
+    {
+      "gate": "alignment_tolerance",
+      "layer": "source registration",
+      "status": "pass_bounded_window",
+      "metric": "common shift 4px; first pad failure 8px",
+      "interpretation": "Future source comparisons get a narrow tolerance window; loose fitting should be rejected.",
+      "selectorUnlocked": false,
+      "contradiction": false
+    },
+    {
+      "gate": "native_bridge",
+      "layer": "source geometry",
+      "status": "pass_source_handoff",
+      "metric": "15 boxes; OVERDOSE glyphs OVERDOSE",
+      "interpretation": "Readable/upright active boxes, C9 frame, p78 frame, and OVERDOSE glyph boxes bridge cleanly into native coordinates.",
+      "selectorUnlocked": false,
+      "contradiction": false
+    },
+    {
+      "gate": "geometric_fingerprint",
+      "layer": "page 76 target cluster",
+      "status": "pass_source_profile",
+      "metric": "gaps [3, 2, 5]; signs -++/+++",
+      "interpretation": "The target cluster has a stable source-registration fingerprint, not an extraction unit.",
+      "selectorUnlocked": false,
+      "contradiction": false
+    },
+    {
+      "gate": "c9_frame_normalized",
+      "layer": "OVERDOSE/C9 layout",
+      "status": "pass_as_benchmark_reject_selector",
+      "metric": "C9 inside 4/4; p78 inside 0/4",
+      "interpretation": "C9/Y-K is a stable frame benchmark, while simple C9-frame mirrors do not re-hit all four active targets.",
+      "selectorUnlocked": false,
+      "contradiction": false
+    },
+    {
+      "gate": "yk_frame_order",
+      "layer": "bold/highlight unit order",
+      "status": "reject_as_selector",
+      "metric": "frame Y/K YKKY; bounded streams 20; hard hits 0",
+      "interpretation": "Y/K inside the frame isolates the quartet, but no source-backed unit/order rule is present and full-page Y/K has controls.",
+      "selectorUnlocked": false,
+      "contradiction": false
+    },
+    {
+      "gate": "format_witness",
+      "layer": "bold letters and annotations",
+      "status": "pass_authority_reject_selector",
+      "metric": "format pass 4; line-bold exact 2/4; conflicts 2",
+      "interpretation": "DOCM/high-res/crop-pack remain authority; line-level bold and witness notes are not extraction permission.",
+      "selectorUnlocked": false,
+      "contradiction": false
+    },
+    {
+      "gate": "overdose_header_slots",
+      "layer": "OVERDOSE layout",
+      "status": "pass_control_reject_selector",
+      "metric": "active black OVER 2; p75 control OVER 2; hits 0",
+      "interpretation": "Header glyph slots reproduce active B4/G5 OVER, but the p75 control reproduces it too and no instruction wording appears.",
+      "selectorUnlocked": false,
+      "contradiction": false
+    },
+    {
+      "gate": "mirrored_overdose_slots",
+      "layer": "folded/mirrored OVERDOSE",
+      "status": "pass_control_reject_selector",
+      "metric": "variants 8; p75 matches active 8/8; hits 0",
+      "interpretation": "Mirrored/reversed OVERDOSE slot variants are controlled by p75 and remain non-instructional.",
+      "selectorUnlocked": false,
+      "contradiction": false
+    },
+    {
+      "gate": "p78_repaired_residual",
+      "layer": "folded/mirrored p78 frame",
+      "status": "pass_reject_selector",
+      "metric": "full 0/4; partial 2/4; B4/O4 touch 503/173px",
+      "interpretation": "Repaired p78 dx variants improve source-registration residuals but do not explain the active quartet as a selector.",
+      "selectorUnlocked": false,
+      "contradiction": false
+    },
+    {
+      "gate": "p78_expansion_leakage",
+      "layer": "folded/mirrored p78 frame",
+      "status": "pass_reject_selector",
+      "metric": "full cover 102 words; non-target 92; hits 0",
+      "interpretation": "Forcing full coverage takes the L22-L32 context band, so repaired-frame expansion is not selective.",
+      "selectorUnlocked": false,
+      "contradiction": false
+    },
+    {
+      "gate": "active_box_ocr",
+      "layer": "3d OCR text authority",
+      "status": "reject_as_text_source",
+      "metric": "exact matches 0/4; corrupted 4/4",
+      "interpretation": "Do not use 3D map OCR inside active boxes as extraction text.",
+      "selectorUnlocked": false,
+      "contradiction": false
+    }
+  ],
+  "summary": {
+    "gateCount": 17,
+    "passGateCount": 15,
+    "rejectGateCount": 8,
+    "contradictionCount": 0,
+    "selectorUnlockedCount": 0,
+    "extractionReadyGateCount": 0,
+    "activeVisualStateOrder": "YKKY",
+    "activePageLines": "22 25 27 32",
+    "activeCorridorIndexes": "4 7 9 14",
+    "orientationDecision": "use_upright_boxes_after_rot180_for_native_source_images",
+    "commonShiftTolerancePx": 4,
+    "fullCoverLeakageWords": 102,
+    "fullCoverLeakageNonTargetWords": 92,
+    "integrityFingerprint": "gates=17|pass=15|reject=8|contradictions=0|selectors=0|states=YKKY|lines=22-25-27-32|corr=4-7-9-14|shift=4|leakWords=102/92",
+    "selectorUnlocked": false
+  },
+  "decision": {
+    "sourcePacketHandoffIntegrityMatrix": "consistent-source-validation-stack",
+    "reason": "The current source-packet handoff is internally consistent and has no selector unlocks. Orientation, line/corridor order, YKKY visual state, crop completeness, C9/Y-K benchmarking, OVERDOSE controls, repaired p78 residuals, and expansion leakage all agree that the stack is for future source comparison only."
+  },
+  "candidateSourceAcceptanceChecklist": [
+    "Rotate native source images 180 degrees before comparing to readable/upright target boxes.",
+    "Require active order buying_dip/one_billion/volcano_bonds/shitcoiner_heart with page lines 22/25/27/32 and corridors 4/7/9/14.",
+    "Require active visual-state stream YKKY and the documented orange/black separation against OVERDOSE controls.",
+    "Require all four active crop boxes to land within the current +/-4px common shift tolerance unless a new source explains the shift.",
+    "Reject matches that only recreate C9 OVER, p78 partial contacts, or full-cover frame leakage without source-backed unit/order wording.",
+    "Do not resume selector/key checks until the same new source/clue passes R1-R5 with R3 naming the unit and order."
+  ],
+  "sheet": "analysis_outputs/source_audit/source_packet_handoff_integrity_matrix/source_packet_handoff_integrity_matrix_sheet.jpg",
+  "nextMove": "Use this integrity matrix as the compact source-comparison checklist. Further local selector work should wait for a new source/clue with source-backed unit/order wording."
+}

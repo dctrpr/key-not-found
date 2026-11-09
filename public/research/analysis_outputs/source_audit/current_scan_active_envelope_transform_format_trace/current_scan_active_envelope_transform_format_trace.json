@@ -1,0 +1,925 @@
+{
+  "createdAt": "2026-05-24T19:51:47",
+  "scope": "trace active-envelope fold/mirror projected boxes against page-76 active and highlight-control format boxes; no OCR-to-key/key/hash/seed/WIF/address/BIP39/brute force",
+  "inputs": {
+    "activeEnvelopeTransformGate": "analysis_outputs/source_audit/current_scan_active_envelope_transform_gate/current_scan_active_envelope_transform_gate.json",
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "page76HighlightBenchmark": "analysis_outputs/source_audit/page76_all_source_highlight_mirror_benchmark/page76_all_source_highlight_mirror_benchmark.json",
+    "textTrace": "analysis_outputs/source_audit/current_scan_active_envelope_transform_text_trace/current_scan_active_envelope_transform_text_trace.json",
+    "page76Upright": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "summary": {
+    "transformCount": 5,
+    "transformNames": [
+      "hmirror",
+      "vmirror",
+      "rot180",
+      "diag_main",
+      "diag_anti"
+    ],
+    "traceRowCount": 20,
+    "activeOverlapRows": 11,
+    "controlOverlapRows": 1,
+    "allFourActiveOverlapModes": [
+      "diag_anti"
+    ],
+    "allFourControlOverlapModes": [],
+    "activeFormatStreams": {
+      "hmirror": ".-.-G5-O5",
+      "vmirror": "O5-.-G5-O4",
+      "rot180": ".-.-G5-.",
+      "diag_main": "G4-.-G5-.",
+      "diag_anti": "O4-O5-G5-B4"
+    },
+    "activeKindStreams": {
+      "hmirror": ".-.-black-orange",
+      "vmirror": "orange-.-black-orange",
+      "rot180": ".-.-black-.",
+      "diag_main": "grey-.-black-.",
+      "diag_anti": "orange-orange-black-black"
+    },
+    "diagAntiMinOverlapVsProjected": 0.129087,
+    "diagAntiMaxOverlapVsProjected": 0.324257,
+    "strictInstructionRows": 0,
+    "contextTermRows": 1,
+    "targetTermRows": 1,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorCandidateCount": 0
+  },
+  "rows": [
+    {
+      "transform": "hmirror",
+      "slotStream": "VORE",
+      "sourceShortId": "O4",
+      "sourcePhrase": "buying the dip",
+      "projectedSlotLetter": "V",
+      "projectedSlotIndex": 1,
+      "projectedBox": [
+        428.0,
+        2177.0,
+        895.0,
+        2225.0
+      ],
+      "projectedCenter": [
+        661.5,
+        2201.0
+      ],
+      "activeOverlapCount": 0,
+      "controlOverlapCount": 0,
+      "bestOverlapId": null,
+      "bestOverlapKind": null,
+      "bestOverlapActive": false,
+      "bestOverlapVsProjected": 0.0,
+      "bestOverlapVsTarget": 0.0,
+      "overlapHits": [],
+      "textPreview": "He's taunting them,",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetTermHitCount": 0
+    },
+    {
+      "transform": "hmirror",
+      "slotStream": "VORE",
+      "sourceShortId": "B4",
+      "sourcePhrase": "$1 billion",
+      "projectedSlotLetter": "O",
+      "projectedSlotIndex": 5,
+      "projectedBox": [
+        1538.0,
+        2398.0,
+        1801.0,
+        2445.0
+      ],
+      "projectedCenter": [
+        1669.5,
+        2421.5
+      ],
+      "activeOverlapCount": 0,
+      "controlOverlapCount": 0,
+      "bestOverlapId": null,
+      "bestOverlapKind": null,
+      "bestOverlapActive": false,
+      "bestOverlapVsProjected": 0.0,
+      "bestOverlapVsTarget": 0.0,
+      "overlapHits": [],
+      "textPreview": "",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetTermHitCount": 0
+    },
+    {
+      "transform": "hmirror",
+      "slotStream": "VORE",
+      "sourceShortId": "G5",
+      "sourcePhrase": "Volcano Bonds",
+      "projectedSlotLetter": "R",
+      "projectedSlotIndex": 3,
+      "projectedBox": [
+        1033.0,
+        2544.0,
+        1434.0,
+        2592.0
+      ],
+      "projectedCenter": [
+        1233.5,
+        2568.0
+      ],
+      "activeOverlapCount": 1,
+      "controlOverlapCount": 0,
+      "bestOverlapId": "G5",
+      "bestOverlapKind": "black",
+      "bestOverlapActive": true,
+      "bestOverlapVsProjected": 0.406484,
+      "bestOverlapVsTarget": 0.406484,
+      "overlapHits": [
+        {
+          "id": "G5",
+          "kind": "black",
+          "label": "Volcano Bonds",
+          "active": true,
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "intersection": [
+            1033.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "overlapAreaPx": 7824.0,
+          "overlapVsProjected": 0.406484,
+          "overlapVsTarget": 0.406484
+        }
+      ],
+      "textPreview": "to pay off",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetTermHitCount": 0
+    },
+    {
+      "transform": "hmirror",
+      "slotStream": "VORE",
+      "sourceShortId": "O5",
+      "sourcePhrase": "shitcoiner at heart",
+      "projectedSlotLetter": "E",
+      "projectedSlotIndex": 2,
+      "projectedBox": [
+        568.0,
+        2932.0,
+        1189.0,
+        2982.0
+      ],
+      "projectedCenter": [
+        878.5,
+        2957.0
+      ],
+      "activeOverlapCount": 1,
+      "controlOverlapCount": 0,
+      "bestOverlapId": "O5",
+      "bestOverlapKind": "orange",
+      "bestOverlapActive": true,
+      "bestOverlapVsProjected": 0.239936,
+      "bestOverlapVsTarget": 0.239936,
+      "overlapHits": [
+        {
+          "id": "O5",
+          "kind": "orange",
+          "label": "shitcoiner at heart",
+          "active": true,
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "intersection": [
+            1040.0,
+            2932.0,
+            1189.0,
+            2982.0
+          ],
+          "overlapAreaPx": 7450.0,
+          "overlapVsProjected": 0.239936,
+          "overlapVsTarget": 0.239936
+        }
+      ],
+      "textPreview": "Maybe because he's a siukbeodmensertslveaarty",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetTermHitCount": 0
+    },
+    {
+      "transform": "vmirror",
+      "slotStream": "OVED",
+      "sourceShortId": "O4",
+      "sourcePhrase": "buying the dip",
+      "projectedSlotLetter": "O",
+      "projectedSlotIndex": 5,
+      "projectedBox": [
+        1334.0,
+        2934.0,
+        1801.0,
+        2982.0
+      ],
+      "projectedCenter": [
+        1567.5,
+        2958.0
+      ],
+      "activeOverlapCount": 1,
+      "controlOverlapCount": 0,
+      "bestOverlapId": "O5",
+      "bestOverlapKind": "orange",
+      "bestOverlapActive": true,
+      "bestOverlapVsProjected": 0.700214,
+      "bestOverlapVsTarget": 0.505507,
+      "overlapHits": [
+        {
+          "id": "O5",
+          "kind": "orange",
+          "label": "shitcoiner at heart",
+          "active": true,
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "intersection": [
+            1334.0,
+            2934.0,
+            1661.0,
+            2982.0
+          ],
+          "overlapAreaPx": 15696.0,
+          "overlapVsProjected": 0.700214,
+          "overlapVsTarget": 0.505507
+        }
+      ],
+      "textPreview": "siukbeodmensertslveaarty",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetTermHitCount": 0
+    },
+    {
+      "transform": "vmirror",
+      "slotStream": "OVED",
+      "sourceShortId": "B4",
+      "sourcePhrase": "$1 billion",
+      "projectedSlotLetter": "V",
+      "projectedSlotIndex": 1,
+      "projectedBox": [
+        428.0,
+        2714.0,
+        691.0,
+        2761.0
+      ],
+      "projectedCenter": [
+        559.5,
+        2737.5
+      ],
+      "activeOverlapCount": 0,
+      "controlOverlapCount": 0,
+      "bestOverlapId": null,
+      "bestOverlapKind": null,
+      "bestOverlapActive": false,
+      "bestOverlapVsProjected": 0.0,
+      "bestOverlapVsTarget": 0.0,
+      "overlapHits": [],
+      "textPreview": "Novogratz bunch to",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetTermHitCount": 0
+    },
+    {
+      "transform": "vmirror",
+      "slotStream": "OVED",
+      "sourceShortId": "G5",
+      "sourcePhrase": "Volcano Bonds",
+      "projectedSlotLetter": "E",
+      "projectedSlotIndex": 2,
+      "projectedBox": [
+        795.0,
+        2567.0,
+        1196.0,
+        2615.0
+      ],
+      "projectedCenter": [
+        995.5,
+        2591.0
+      ],
+      "activeOverlapCount": 1,
+      "controlOverlapCount": 0,
+      "bestOverlapId": "G5",
+      "bestOverlapKind": "black",
+      "bestOverlapActive": true,
+      "bestOverlapVsProjected": 0.520833,
+      "bestOverlapVsTarget": 0.520833,
+      "overlapHits": [
+        {
+          "id": "G5",
+          "kind": "black",
+          "label": "Volcano Bonds",
+          "active": true,
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "intersection": [
+            795.0,
+            2567.0,
+            1196.0,
+            2592.0
+          ],
+          "overlapAreaPx": 10025.0,
+          "overlapVsProjected": 0.520833,
+          "overlapVsTarget": 0.520833
+        }
+      ],
+      "textPreview": "rid of those leeches.",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetTermHitCount": 0
+    },
+    {
+      "transform": "vmirror",
+      "slotStream": "OVED",
+      "sourceShortId": "O5",
+      "sourcePhrase": "shitcoiner at heart",
+      "projectedSlotLetter": "D",
+      "projectedSlotIndex": 4,
+      "projectedBox": [
+        1040.0,
+        2177.0,
+        1661.0,
+        2227.0
+      ],
+      "projectedCenter": [
+        1350.5,
+        2202.0
+      ],
+      "activeOverlapCount": 1,
+      "controlOverlapCount": 0,
+      "bestOverlapId": "O4",
+      "bestOverlapKind": "orange",
+      "bestOverlapActive": true,
+      "bestOverlapVsProjected": 0.505507,
+      "bestOverlapVsTarget": 0.700214,
+      "overlapHits": [
+        {
+          "id": "O4",
+          "kind": "orange",
+          "label": "buying the dip",
+          "active": true,
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "intersection": [
+            1334.0,
+            2177.0,
+            1661.0,
+            2225.0
+          ],
+          "overlapAreaPx": 15696.0,
+          "overlapVsProjected": 0.505507,
+          "overlapVsTarget": 0.700214
+        }
+      ],
+      "textPreview": "telling them he's ByiiREeraipy\"",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetTermHitCount": 0
+    },
+    {
+      "transform": "rot180",
+      "slotStream": "VORE",
+      "sourceShortId": "O4",
+      "sourcePhrase": "buying the dip",
+      "projectedSlotLetter": "V",
+      "projectedSlotIndex": 1,
+      "projectedBox": [
+        428.0,
+        2934.0,
+        895.0,
+        2982.0
+      ],
+      "projectedCenter": [
+        661.5,
+        2958.0
+      ],
+      "activeOverlapCount": 0,
+      "controlOverlapCount": 0,
+      "bestOverlapId": null,
+      "bestOverlapKind": null,
+      "bestOverlapActive": false,
+      "bestOverlapVsProjected": 0.0,
+      "bestOverlapVsTarget": 0.0,
+      "overlapHits": [],
+      "textPreview": "Maybe because he's",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetTermHitCount": 0
+    },
+    {
+      "transform": "rot180",
+      "slotStream": "VORE",
+      "sourceShortId": "B4",
+      "sourcePhrase": "$1 billion",
+      "projectedSlotLetter": "O",
+      "projectedSlotIndex": 5,
+      "projectedBox": [
+        1538.0,
+        2714.0,
+        1801.0,
+        2761.0
+      ],
+      "projectedCenter": [
+        1669.5,
+        2737.5
+      ],
+      "activeOverlapCount": 0,
+      "controlOverlapCount": 0,
+      "bestOverlapId": null,
+      "bestOverlapKind": null,
+      "bestOverlapActive": false,
+      "bestOverlapVsProjected": 0.0,
+      "bestOverlapVsTarget": 0.0,
+      "overlapHits": [],
+      "textPreview": "he",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetTermHitCount": 0
+    },
+    {
+      "transform": "rot180",
+      "slotStream": "VORE",
+      "sourceShortId": "G5",
+      "sourcePhrase": "Volcano Bonds",
+      "projectedSlotLetter": "R",
+      "projectedSlotIndex": 3,
+      "projectedBox": [
+        1033.0,
+        2567.0,
+        1434.0,
+        2615.0
+      ],
+      "projectedCenter": [
+        1233.5,
+        2591.0
+      ],
+      "activeOverlapCount": 1,
+      "controlOverlapCount": 0,
+      "bestOverlapId": "G5",
+      "bestOverlapKind": "black",
+      "bestOverlapActive": true,
+      "bestOverlapVsProjected": 0.21171,
+      "bestOverlapVsTarget": 0.21171,
+      "overlapHits": [
+        {
+          "id": "G5",
+          "kind": "black",
+          "label": "Volcano Bonds",
+          "active": true,
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "intersection": [
+            1033.0,
+            2567.0,
+            1196.0,
+            2592.0
+          ],
+          "overlapAreaPx": 4075.0,
+          "overlapVsProjected": 0.21171,
+          "overlapVsTarget": 0.21171
+        }
+      ],
+      "textPreview": "to pay off leeches. I tagged",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetTermHitCount": 0
+    },
+    {
+      "transform": "rot180",
+      "slotStream": "VORE",
+      "sourceShortId": "O5",
+      "sourcePhrase": "shitcoiner at heart",
+      "projectedSlotLetter": "E",
+      "projectedSlotIndex": 2,
+      "projectedBox": [
+        568.0,
+        2177.0,
+        1189.0,
+        2227.0
+      ],
+      "projectedCenter": [
+        878.5,
+        2202.0
+      ],
+      "activeOverlapCount": 0,
+      "controlOverlapCount": 0,
+      "bestOverlapId": null,
+      "bestOverlapKind": null,
+      "bestOverlapActive": false,
+      "bestOverlapVsProjected": 0.0,
+      "bestOverlapVsTarget": 0.0,
+      "overlapHits": [],
+      "textPreview": "taunting them, telling them",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetTermHitCount": 0
+    },
+    {
+      "transform": "diag_main",
+      "slotStream": "OERO",
+      "sourceShortId": "O4",
+      "sourcePhrase": "buying the dip",
+      "projectedSlotLetter": "O",
+      "projectedSlotIndex": 0,
+      "projectedBox": [
+        428.0,
+        2708.194465,
+        509.868323,
+        2982.0
+      ],
+      "projectedCenter": [
+        468.934161,
+        2845.097232
+      ],
+      "activeOverlapCount": 0,
+      "controlOverlapCount": 1,
+      "bestOverlapId": "G4",
+      "bestOverlapKind": "grey",
+      "bestOverlapActive": false,
+      "bestOverlapVsProjected": 0.252004,
+      "bestOverlapVsTarget": 0.203653,
+      "overlapHits": [
+        {
+          "id": "G4",
+          "kind": "grey",
+          "label": "$1 billion",
+          "active": false,
+          "box": [
+            412.0,
+            2769.0,
+            814.0,
+            2838.0
+          ],
+          "intersection": [
+            428.0,
+            2769.0,
+            509.868323,
+            2838.0
+          ],
+          "overlapAreaPx": 5648.914,
+          "overlapVsProjected": 0.252004,
+          "overlapVsTarget": 0.203653
+        }
+      ],
+      "textPreview": "Novogratz bunch hasn't Maybe",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetTermHitCount": 0
+    },
+    {
+      "transform": "diag_main",
+      "slotStream": "OERO",
+      "sourceShortId": "B4",
+      "sourcePhrase": "$1 billion",
+      "projectedSlotLetter": "E",
+      "projectedSlotIndex": 2,
+      "projectedBox": [
+        804.935404,
+        2177.0,
+        885.098137,
+        2331.198835
+      ],
+      "projectedCenter": [
+        845.01677,
+        2254.099417
+      ],
+      "activeOverlapCount": 0,
+      "controlOverlapCount": 0,
+      "bestOverlapId": null,
+      "bestOverlapKind": null,
+      "bestOverlapActive": false,
+      "bestOverlapVsProjected": 0.0,
+      "bestOverlapVsTarget": 0.0,
+      "overlapHits": [],
+      "textPreview": "them, President to tap",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetTermHitCount": 0
+    },
+    {
+      "transform": "diag_main",
+      "slotStream": "OERO",
+      "sourceShortId": "G5",
+      "sourcePhrase": "Volcano Bonds",
+      "projectedSlotLetter": "R",
+      "projectedSlotIndex": 3,
+      "projectedBox": [
+        1053.951553,
+        2392.1748,
+        1135.819876,
+        2627.28405
+      ],
+      "projectedCenter": [
+        1094.885714,
+        2509.729425
+      ],
+      "activeOverlapCount": 1,
+      "controlOverlapCount": 0,
+      "bestOverlapId": "G5",
+      "bestOverlapKind": "black",
+      "bestOverlapActive": true,
+      "bestOverlapVsProjected": 0.20416,
+      "bestOverlapVsTarget": 0.20416,
+      "overlapHits": [
+        {
+          "id": "G5",
+          "kind": "black",
+          "label": "Volcano Bonds",
+          "active": true,
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "intersection": [
+            1053.951553,
+            2544.0,
+            1135.819876,
+            2592.0
+          ],
+          "overlapAreaPx": 3929.68,
+          "overlapVsProjected": 0.20416,
+          "overlapVsTarget": 0.20416
+        }
+      ],
+      "textPreview": "that he bitcoin leeches.",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "targetTermHitCount": 0
+    },
+    {
+      "transform": "diag_main",
+      "slotStream": "OERO",
+      "sourceShortId": "O5",
+      "sourcePhrase": "shitcoiner at heart",
+      "projectedSlotLetter": "O",
+      "projectedSlotIndex": 5,
+      "projectedBox": [
+        1715.720497,
+        2535.820102,
+        1801.0,
+        2899.91697
+      ],
+      "projectedCenter": [
+        1758.360248,
+        2717.868536
+      ],
+      "activeOverlapCount": 0,
+      "controlOverlapCount": 0,
+      "bestOverlapId": null,
+      "bestOverlapKind": null,
+      "bestOverlapActive": false,
+      "bestOverlapVsProjected": 0.0,
+      "bestOverlapVsTarget": 0.0,
+      "overlapHits": [],
+      "textPreview": "",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetTermHitCount": 0
+    },
+    {
+      "transform": "diag_anti",
+      "slotStream": "ODRO",
+      "sourceShortId": "O4",
+      "sourcePhrase": "buying the dip",
+      "projectedSlotLetter": "O",
+      "projectedSlotIndex": 5,
+      "projectedBox": [
+        1719.131677,
+        2177.0,
+        1801.0,
+        2450.805535
+      ],
+      "projectedCenter": [
+        1760.065839,
+        2313.902768
+      ],
+      "activeOverlapCount": 1,
+      "controlOverlapCount": 0,
+      "bestOverlapId": "O4",
+      "bestOverlapKind": "orange",
+      "bestOverlapActive": true,
+      "bestOverlapVsProjected": 0.175307,
+      "bestOverlapVsTarget": 0.175307,
+      "overlapHits": [
+        {
+          "id": "O4",
+          "kind": "orange",
+          "label": "buying the dip",
+          "active": true,
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "intersection": [
+            1719.131677,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "overlapAreaPx": 3929.68,
+          "overlapVsProjected": 0.175307,
+          "overlapVsTarget": 0.175307
+        }
+      ],
+      "textPreview": "ByiiREeraipy\"",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetTermHitCount": 0
+    },
+    {
+      "transform": "diag_anti",
+      "slotStream": "ODRO",
+      "sourceShortId": "B4",
+      "sourcePhrase": "$1 billion",
+      "projectedSlotLetter": "D",
+      "projectedSlotIndex": 4,
+      "projectedBox": [
+        1343.901863,
+        2827.801165,
+        1424.064596,
+        2982.0
+      ],
+      "projectedCenter": [
+        1383.98323,
+        2904.900583
+      ],
+      "activeOverlapCount": 1,
+      "controlOverlapCount": 0,
+      "bestOverlapId": "O5",
+      "bestOverlapKind": "orange",
+      "bestOverlapActive": true,
+      "bestOverlapVsProjected": 0.324257,
+      "bestOverlapVsTarget": 0.129087,
+      "overlapHits": [
+        {
+          "id": "O5",
+          "kind": "orange",
+          "label": "shitcoiner at heart",
+          "active": true,
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "intersection": [
+            1343.901863,
+            2932.0,
+            1424.064596,
+            2982.0
+          ],
+          "overlapAreaPx": 4008.137,
+          "overlapVsProjected": 0.324257,
+          "overlapVsTarget": 0.129087
+        }
+      ],
+      "textPreview": "trust that siukbeodmensertslveaarty",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetTermHitCount": 0
+    },
+    {
+      "transform": "diag_anti",
+      "slotStream": "ODRO",
+      "sourceShortId": "G5",
+      "sourcePhrase": "Volcano Bonds",
+      "projectedSlotLetter": "R",
+      "projectedSlotIndex": 3,
+      "projectedBox": [
+        1093.180124,
+        2531.71595,
+        1175.048447,
+        2766.8252
+      ],
+      "projectedCenter": [
+        1134.114286,
+        2649.270575
+      ],
+      "activeOverlapCount": 1,
+      "controlOverlapCount": 0,
+      "bestOverlapId": "G5",
+      "bestOverlapKind": "black",
+      "bestOverlapActive": true,
+      "bestOverlapVsProjected": 0.20416,
+      "bestOverlapVsTarget": 0.20416,
+      "overlapHits": [
+        {
+          "id": "G5",
+          "kind": "black",
+          "label": "Volcano Bonds",
+          "active": true,
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "intersection": [
+            1093.180124,
+            2544.0,
+            1175.048447,
+            2592.0
+          ],
+          "overlapAreaPx": 3929.68,
+          "overlapVsProjected": 0.20416,
+          "overlapVsTarget": 0.20416
+        }
+      ],
+      "textPreview": "leeches. figuring crony",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetTermHitCount": 0
+    },
+    {
+      "transform": "diag_anti",
+      "slotStream": "ODRO",
+      "sourceShortId": "O5",
+      "sourcePhrase": "shitcoiner at heart",
+      "projectedSlotLetter": "O",
+      "projectedSlotIndex": 0,
+      "projectedBox": [
+        428.0,
+        2259.08303,
+        513.279503,
+        2623.179898
+      ],
+      "projectedCenter": [
+        470.639752,
+        2441.131464
+      ],
+      "activeOverlapCount": 1,
+      "controlOverlapCount": 0,
+      "bestOverlapId": "B4",
+      "bestOverlapKind": "black",
+      "bestOverlapActive": true,
+      "bestOverlapVsProjected": 0.129087,
+      "bestOverlapVsTarget": 0.324257,
+      "overlapHits": [
+        {
+          "id": "B4",
+          "kind": "black",
+          "label": "$1 billion",
+          "active": true,
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "intersection": [
+            428.0,
+            2398.0,
+            513.279503,
+            2445.0
+          ],
+          "overlapAreaPx": 4008.137,
+          "overlapVsProjected": 0.129087,
+          "overlapVsTarget": 0.324257
+        }
+      ],
+      "textPreview": "I he billions collateralized loan",
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetTermHitCount": 1
+    }
+  ],
+  "decision": {
+    "selectorUnlocked": false,
+    "reason": "Partial diag-anti all-four active overlap is self-overlap inside the active envelope; the paired text trace has zero strict instruction rows and no source-backed R3.",
+    "nextMove": "Keep active-envelope fold/mirror mechanics closed unless new source/raw clue evidence names this fold and a unit/order."
+  },
+  "sheet": "analysis_outputs/source_audit/current_scan_active_envelope_transform_format_trace/current_scan_active_envelope_transform_format_trace_sheet.jpg",
+  "fingerprint": "transforms=5|rows=20|activeRows=11|controlRows=1|allFourActive=1|diagAntiMinMax=0.129087/0.324257|strictRows=0|sourceR3=0|triggers=0/9|selectors=0"
+}

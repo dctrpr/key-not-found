@@ -1,0 +1,137 @@
+{
+  "createdAt": "2026-05-20T10:51:00",
+  "scope": "active-path readiness gate; no OCR/key derivation",
+  "inputs": {
+    "page76TargetConvergence": "analysis_outputs/source_audit/page76_target_convergence/page76_target_convergence.json",
+    "selectorGapMap": "analysis_outputs/source_audit/selector_gap_map.json",
+    "sourceRegistrationAcceptance": "analysis_outputs/source_audit/source_registration_acceptance_test/source_registration_acceptance_test.json",
+    "sourceValidationGate": "analysis_outputs/source_audit/source_validation_gate/source_validation_gate.json",
+    "comparisonPdfSourceGate": "analysis_outputs/source_audit/comparison_pdf_source_gate/comparison_pdf_source_gate.json",
+    "bodyHighlighterGrammar": "analysis_outputs/comparison_articles/body_highlighter_grammar/body_highlighter_grammar.json",
+    "typographySourceProvenance": "analysis_outputs/source_audit/typography_source_provenance.json",
+    "xxWireSimilarityOverfit": "analysis_outputs/source_audit/xx_wire_similarity_overfit/xx_wire_similarity_overfit.json",
+    "repairedFrameFontStates": "analysis_outputs/docm_format_sources/repaired_frame_font_contact_states/repaired_frame_font_contact_states.json"
+  },
+  "topConvergenceTargets": [
+    {
+      "id": "O5",
+      "label": "shitcoiner at heart",
+      "score": 15,
+      "independentLayers": 5
+    },
+    {
+      "id": "G5",
+      "label": "Volcano Bonds",
+      "score": 11,
+      "independentLayers": 4
+    },
+    {
+      "id": "CORRIDOR",
+      "label": "lower El Salvador / IMF / Bukele / Mike / trust corridor",
+      "score": 6,
+      "independentLayers": 4
+    }
+  ],
+  "paths": [
+    {
+      "name": "G5/O5 lower-corridor pair",
+      "sourceLayer": "page-76 self-mirror + p78 frame/graphic + p80 dosage/symptom support",
+      "targetRegion": "G5 Volcano Bonds / O5 shitcoiner at heart",
+      "ordering": "partial: top-down frame and G5/O5 pair order exist, but no source says which to read first",
+      "extractionUnit": "missing",
+      "hasSource": true,
+      "hasTarget": true,
+      "hasOrder": false,
+      "hasUnit": false,
+      "evidence": "Strongest convergence target pair; still lacks word/letter/edge/font-state rule.",
+      "status": "blocked_on_order_and_unit"
+    },
+    {
+      "name": "repaired p78 frame exact-edge trio",
+      "sourceLayer": "p78 reflected frame, dx -38/-40 registration signature",
+      "targetRegion": "should sell | Volcano Bonds | shitcoiner at heart",
+      "ordering": "top-down exact-edge order exists",
+      "extractionUnit": "missing",
+      "hasSource": true,
+      "hasTarget": true,
+      "hasOrder": true,
+      "hasUnit": false,
+      "evidence": "Clean R-K-Y signature, initials sVs and lasts lst; instruction hits remain empty.",
+      "status": "blocked_on_unit"
+    },
+    {
+      "name": "body orange/grey highlight grammar",
+      "sourceLayer": "Issue 24 visible orange/grey body highlights",
+      "targetRegion": "page 76 highlighted corridor",
+      "ordering": "partial: print reading order exists, reflected-hit order exists, neither is named by clue",
+      "extractionUnit": "missing",
+      "hasSource": true,
+      "hasTarget": true,
+      "hasOrder": false,
+      "hasUnit": false,
+      "evidence": "Issue 27 control weakens house-style explanation: issue27 max score 3 with sustained pages [].",
+      "status": "blocked_on_order_and_unit"
+    },
+    {
+      "name": "Typeka / Typeka Mix font state",
+      "sourceLayer": "Article with Fonts.docm formatting witness",
+      "targetRegion": "only after page-76 geometry selects text",
+      "ordering": "DOCM run order exists but no clue selects it",
+      "extractionUnit": "font state exists, but no rule says to use it",
+      "hasSource": true,
+      "hasTarget": false,
+      "hasOrder": false,
+      "hasUnit": false,
+      "evidence": "Article with Fonts records Typeka states {'Typeka': 6568, 'Typeka Mix': 883}; PDFs do not expose usable Typeka metadata.",
+      "status": "support_only"
+    },
+    {
+      "name": "comparison PDFs",
+      "sourceLayer": "style-only controls",
+      "targetRegion": "none for Issue 24 extraction",
+      "ordering": "none",
+      "extractionUnit": "none",
+      "hasSource": false,
+      "hasTarget": false,
+      "hasOrder": false,
+      "hasUnit": false,
+      "blocked": true,
+      "evidence": "Promoted for extraction geometry: 0.",
+      "status": "closed"
+    },
+    {
+      "name": "XX / barbed-wire / FUCK spill geometry",
+      "sourceLayer": "Canva note + p78/p79 graphic objects",
+      "targetRegion": "orientation/source registration only",
+      "ordering": "none after local tests",
+      "extractionUnit": "none",
+      "hasSource": true,
+      "hasTarget": false,
+      "hasOrder": false,
+      "hasUnit": false,
+      "blocked": true,
+      "evidence": "Forced-fit decision: Forced XX-to-wire similarity alignment is an overfit under the current scan and does not unlock extraction.",
+      "status": "closed"
+    },
+    {
+      "name": "future physical/original-layout source",
+      "sourceLayer": "not yet acquired",
+      "targetRegion": "must validate O5/G5, zero/#0, p79 pills, and repaired p78 frame",
+      "ordering": "unknown",
+      "extractionUnit": "unknown",
+      "hasSource": false,
+      "hasTarget": true,
+      "hasOrder": false,
+      "hasUnit": false,
+      "evidence": "Only path that can change geometry/source truth without another local overfit.",
+      "externalDependency": true,
+      "status": "external_dependency"
+    }
+  ],
+  "readyCount": 0,
+  "blockedOnUnitCount": 1,
+  "openSupportCount": 3,
+  "sourceAcceptanceDecision": "Do not promote new local geometry streams unless they pass C2 and C3; current local sources fail the extraction-unit requirement.",
+  "decision": "No current path has all four requirements for extraction. The closest path is the repaired p78 exact-edge trio, but it is still blocked on the extraction unit.",
+  "nextMove": "Do not generate key candidates. Either acquire better source/physical/original-layout evidence, or test only a new explicit human rule that names source layer, target, order, and unit before running."
+}

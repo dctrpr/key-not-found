@@ -1,0 +1,171 @@
+{
+  "createdAt": "2026-05-20T22:05:33",
+  "scope": "p75->p76 valid same-leaf hold-to-light recheck under locked current scan; no key derivation",
+  "inputs": {
+    "frontBackRegistration": "analysis_outputs/source_audit/front_back_leaf_box_registration.json",
+    "physicalModelValidation": "analysis_outputs/source_audit/physical_model_o5_g5_validation/physical_model_o5_g5_validation.json",
+    "holdToLightSheet": "analysis_outputs/source_audit/leaf_hold_to_light_sheet.md"
+  },
+  "topology": {
+    "sourcePage": 75,
+    "targetPage": 76,
+    "relationship": "same physical leaf",
+    "reason": "magazine page 75 is recto/right/odd; page 76 is verso/left/even on the same leaf"
+  },
+  "rawHflip": {
+    "dx": 0,
+    "dy": 0,
+    "score": 0.0,
+    "edgeCount": 0,
+    "edges": []
+  },
+  "bestBoundedTranslation": {
+    "dx": 0,
+    "dy": -180,
+    "score": 1.10606,
+    "edgeCount": 2,
+    "edges": [
+      {
+        "sourceId": "p75_orange_1",
+        "sourceLabel": "They are the sum of",
+        "mappedBox": [
+          468.0,
+          804.0,
+          972.0,
+          852.0
+        ],
+        "targetId": "p76_grey_1",
+        "targetKind": "grey",
+        "targetIndex": 1,
+        "targetLabel": "Gotta be this way... post-1971 fiat money",
+        "targetBox": [
+          449.26,
+          826.7,
+          2233.4,
+          889.55
+        ],
+        "overlapVsSource": 0.52708,
+        "overlapVsTarget": 0.11371,
+        "centerDistance": 622.06
+      },
+      {
+        "sourceId": "p75_orange_2",
+        "sourceLabel": "all our neuroses.",
+        "mappedBox": [
+          1732.0,
+          870.0,
+          2176.0,
+          919.0
+        ],
+        "targetId": "p76_grey_1",
+        "targetKind": "grey",
+        "targetIndex": 1,
+        "targetLabel": "Gotta be this way... post-1971 fiat money",
+        "targetBox": [
+          449.26,
+          826.7,
+          2233.4,
+          889.55
+        ],
+        "overlapVsSource": 0.39898,
+        "overlapVsTarget": 0.07741,
+        "centerDistance": 613.75
+      }
+    ]
+  },
+  "holdToLightImageScores": {
+    "balanced": 0.104,
+    "jaccard": 0.05479,
+    "highlightBalanced": 0.00319,
+    "highlightJaccard": 0.00158
+  },
+  "trustedLowerCorridorValidation": {
+    "checkedTargets": [
+      "O5",
+      "G5"
+    ],
+    "overlapCount": 0,
+    "nearestItemSummary": {
+      "id": "p75_orange_6",
+      "sourcePage": 75,
+      "kind": "orange",
+      "label": "“Maximalist”",
+      "box": [
+        1271.0,
+        2200.0,
+        1608.0,
+        2248.0
+      ],
+      "mappedBoxOnP76": [
+        936.0,
+        2200.0,
+        1273.0,
+        2248.0
+      ],
+      "targetChecks": [
+        {
+          "sourceLabel": "“Maximalist”",
+          "mappedBox": [
+            936.0,
+            2200.0,
+            1273.0,
+            2248.0
+          ],
+          "targetId": "O5",
+          "targetLabel": "shitcoiner at heart",
+          "targetBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "intersection": null,
+          "overlapArea": 0.0,
+          "overlapVsSource": 0.0,
+          "overlapVsTarget": 0.0,
+          "centerDistance": 773.18,
+          "horizontalGapPx": 0,
+          "verticalGapPx": 684.0
+        },
+        {
+          "sourceLabel": "“Maximalist”",
+          "mappedBox": [
+            936.0,
+            2200.0,
+            1273.0,
+            2248.0
+          ],
+          "targetId": "G5_trusted",
+          "targetLabel": "Volcano Bonds",
+          "targetBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "intersection": null,
+          "overlapArea": 0.0,
+          "overlapVsSource": 0.0,
+          "overlapVsTarget": 0.0,
+          "centerDistance": 360.86,
+          "horizontalGapPx": 0,
+          "verticalGapPx": 296.0
+        }
+      ],
+      "bestTargetDistance": 360.86,
+      "hasOverlap": false
+    }
+  },
+  "sheet": "analysis_outputs/source_audit/p75_p76_valid_leaf_recheck/p75_p76_valid_leaf_recheck_sheet.jpg",
+  "assessment": [
+    "The only current-scan same-leaf path into page 76 is p75->p76.",
+    "Raw horizontal flip gives zero meaningful page-76 target intersections.",
+    "The best bounded translation is dx=0 dy=-180 and only maps p75 orange O1/O2 into p76 upper grey G1.",
+    "The same-leaf model has zero overlap with trusted lower O5/G5 targets.",
+    "This does not explain the lower page-76 corridor; keep it only as a physical/source benchmark if a new scan appears."
+  ],
+  "decision": {
+    "p75P76ValidLeafAsCurrentScanSelector": "closed",
+    "nextMove": "Return to non-physical registration/orientation sources for the lower page-76 corridor, especially p78 frame/O5 adjacency and explicit source ordering cues."
+  }
+}

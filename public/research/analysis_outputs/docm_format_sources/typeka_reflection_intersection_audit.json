@@ -1,0 +1,994 @@
+{
+  "sourceRuns": "analysis_outputs/docm_format_sources/article_with_fonts_runs.json",
+  "sourceGraph": "analysis_outputs/3d_article_map/reflected_highlight_graph.json",
+  "summary": [
+    {
+      "targetId": "orange_7",
+      "targetText": "Get some toxicity. Get some bitcoin. Open your heart to Bitcoin.",
+      "targetColor": "orange",
+      "targetVariantCounts": {
+        "TYPEKA_BOLD": 53
+      },
+      "edgeCount": 3,
+      "reflectionMatchStatus": {
+        "exact": 2,
+        "fuzzy": 1
+      },
+      "reflectionVariantCounts": {
+        "TYPEKA": 132,
+        "MIX": 38,
+        "TYPEKA_BOLD": 44
+      },
+      "reflectionEdgesWithMix": 1
+    },
+    {
+      "targetId": "orange_8",
+      "targetText": "by the rancid catnip of fiat money.",
+      "targetColor": "orange",
+      "targetVariantCounts": {
+        "TYPEKA_BOLD": 26
+      },
+      "edgeCount": 2,
+      "reflectionMatchStatus": {
+        "exact": 1,
+        "fuzzy": 1
+      },
+      "reflectionVariantCounts": {
+        "TYPEKA": 86,
+        "MIX": 10
+      },
+      "reflectionEdgesWithMix": 1
+    },
+    {
+      "targetId": "orange_9",
+      "targetText": "“buying the dip.”",
+      "targetColor": "orange",
+      "targetVariantCounts": {
+        "TYPEKA_BOLD": 12
+      },
+      "edgeCount": 3,
+      "reflectionMatchStatus": {
+        "exact": 2,
+        "fuzzy": 1
+      },
+      "reflectionVariantCounts": {
+        "TYPEKA": 35,
+        "TYPEKA_BOLD": 44
+      },
+      "reflectionEdgesWithMix": 0
+    },
+    {
+      "targetId": "grey_black_4",
+      "targetText": "It’s a stun gun to the genitals.",
+      "targetColor": "grey_black",
+      "targetVariantCounts": {
+        "TYPEKA_BOLD": 25
+      },
+      "edgeCount": 4,
+      "reflectionMatchStatus": {
+        "exact": 2,
+        "fuzzy": 2
+      },
+      "reflectionVariantCounts": {
+        "TYPEKA": 194,
+        "TYPEKA_BOLD": 44,
+        "MIX": 38
+      },
+      "reflectionEdgesWithMix": 1
+    },
+    {
+      "targetId": "grey_black_5",
+      "targetText": "$1 billion",
+      "targetColor": "grey_black",
+      "targetVariantCounts": {
+        "TYPEKA_BOLD": 9
+      },
+      "edgeCount": 5,
+      "reflectionMatchStatus": {
+        "fuzzy": 2,
+        "exact": 3
+      },
+      "reflectionVariantCounts": {
+        "TYPEKA": 209,
+        "TYPEKA_BOLD": 7,
+        "MIX": 20
+      },
+      "reflectionEdgesWithMix": 2
+    }
+  ],
+  "targets": [
+    {
+      "targetId": "orange_7",
+      "targetText": "Get some toxicity. Get some bitcoin. Open your heart to Bitcoin.",
+      "targetColor": "orange",
+      "match": {
+        "status": "fuzzy",
+        "score": 0.9917,
+        "text": "Get some toxicity. Get some bitcoin. Open your heart toBitcoin",
+        "variantCounts": {
+          "TYPEKA_BOLD": 53
+        },
+        "highlightCounts": {
+          "yellow": 53
+        },
+        "runs": [
+          {
+            "runIndex": 80,
+            "variant": "TYPEKA_BOLD",
+            "font": "Typeka",
+            "bold": true,
+            "highlight": "yellow",
+            "sizeHalfPoints": null,
+            "text": "Get some toxicity. Get some bitcoin. Open your heart to"
+          },
+          {
+            "runIndex": 81,
+            "variant": "TYPEKA_BOLD",
+            "font": "Typeka",
+            "bold": true,
+            "highlight": "yellow",
+            "sizeHalfPoints": null,
+            "text": "Bitcoin."
+          }
+        ]
+      },
+      "edges": [
+        {
+          "sourcePage": 79,
+          "reflectionId": "79_76_1",
+          "strength": "strong",
+          "overlapVsSpan": 0.2967,
+          "overlapVsReflection": 0.9566,
+          "reflectionText": "but George Clinton and James Brown clones. It's Martin Luther nailing the Vatican with ultimatums. It's the sound of skin being ripped off live central bankers tied to a burning stake.",
+          "reflectionMatch": {
+            "status": "exact",
+            "score": 1.0,
+            "text": "but George Clinton and James Brown clones. It's Martin Luther nailing the Vatican with ultimatums. It's the sound of skin being ripped off live central bankers tied to a burning stake",
+            "variantCounts": {
+              "TYPEKA": 115,
+              "MIX": 38
+            },
+            "highlightCounts": {
+              "none": 153
+            },
+            "runs": [
+              {
+                "runIndex": 86,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "but "
+              },
+              {
+                "runIndex": 87,
+                "variant": "MIX",
+                "font": "Typeka Mix",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "George Clinton"
+              },
+              {
+                "runIndex": 88,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": " and James Brown clones. It's Martin Luther "
+              },
+              {
+                "runIndex": 89,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "nailing the Vatican with ultimatums. It's the sound of skin "
+              },
+              {
+                "runIndex": 90,
+                "variant": "MIX",
+                "font": "Typeka Mix",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "being "
+              },
+              {
+                "runIndex": 91,
+                "variant": "MIX",
+                "font": "Typeka Mix",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "ripped "
+              },
+              {
+                "runIndex": 92,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "off live"
+              },
+              {
+                "runIndex": 93,
+                "variant": "MIX",
+                "font": "Typeka Mix",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": " central bankers"
+              },
+              {
+                "runIndex": 94,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": " tied to a burning stake."
+              }
+            ]
+          }
+        },
+        {
+          "sourcePage": 79,
+          "reflectionId": "79_76_2",
+          "strength": "strong",
+          "overlapVsSpan": 0.056,
+          "overlapVsReflection": 0.9374,
+          "reflectionText": "Gotta be S way. Forty years of (and loyears of watching Peter",
+          "reflectionMatch": {
+            "status": "fuzzy",
+            "score": 0.6847,
+            "text": "Gotta be this way. Forty years of dumb post-1971 fiat",
+            "variantCounts": {
+              "TYPEKA_BOLD": 44
+            },
+            "highlightCounts": {
+              "black": 44
+            },
+            "runs": [
+              {
+                "runIndex": 95,
+                "variant": "TYPEKA_BOLD",
+                "font": "Typeka",
+                "bold": true,
+                "highlight": "black",
+                "sizeHalfPoints": null,
+                "text": "Gotta be this way. Forty years of dumb post-1971 fiat money"
+              }
+            ]
+          }
+        },
+        {
+          "sourcePage": 79,
+          "reflectionId": "79_76_3",
+          "strength": "medium",
+          "overlapVsSpan": 0.0123,
+          "overlapVsReflection": 0.5185,
+          "reflectionText": "miss buying bitcoin",
+          "reflectionMatch": {
+            "status": "exact",
+            "score": 1.0,
+            "text": "miss buying bitcoin",
+            "variantCounts": {
+              "TYPEKA": 17
+            },
+            "highlightCounts": {
+              "none": 17
+            },
+            "runs": [
+              {
+                "runIndex": 98,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "(and 10 years of watching Peter Schiff miss buying bitcoin"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "targetId": "orange_8",
+      "targetText": "by the rancid catnip of fiat money.",
+      "targetColor": "orange",
+      "match": {
+        "status": "fuzzy",
+        "score": 0.9538,
+        "text": "the rancid catnip of fiat money",
+        "variantCounts": {
+          "TYPEKA_BOLD": 26
+        },
+        "highlightCounts": {
+          "yellow": 26
+        },
+        "runs": [
+          {
+            "runIndex": 109,
+            "variant": "TYPEKA_BOLD",
+            "font": "Typeka",
+            "bold": true,
+            "highlight": "yellow",
+            "sizeHalfPoints": null,
+            "text": "by the rancid catnip of fiat money."
+          }
+        ]
+      },
+      "edges": [
+        {
+          "sourcePage": 78,
+          "reflectionId": "78_76_4",
+          "strength": "medium",
+          "overlapVsSpan": 0.0548,
+          "overlapVsReflection": 0.525,
+          "reflectionText": "Have you seen the president of El Salvador",
+          "reflectionMatch": {
+            "status": "exact",
+            "score": 1.0,
+            "text": "Have you seen the president of El Salvador",
+            "variantCounts": {
+              "TYPEKA": 25,
+              "MIX": 10
+            },
+            "highlightCounts": {
+              "none": 35
+            },
+            "runs": [
+              {
+                "runIndex": 119,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "Have you seen the president of "
+              },
+              {
+                "runIndex": 120,
+                "variant": "MIX",
+                "font": "Typeka Mix",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "El Salvador"
+              }
+            ]
+          }
+        },
+        {
+          "sourcePage": 78,
+          "reflectionId": "78_76_3",
+          "strength": "medium",
+          "overlapVsSpan": 0.1349,
+          "overlapVsReflection": 0.4583,
+          "reflectionText": "¥ortunately, bitcoin end to the paper chase Manhattan Bank money",
+          "reflectionMatch": {
+            "status": "fuzzy",
+            "score": 0.9474,
+            "text": "Fortunately, bitcoinputs an end to the paper chase Manhattan Bank money",
+            "variantCounts": {
+              "TYPEKA": 61
+            },
+            "highlightCounts": {
+              "none": 61
+            },
+            "runs": [
+              {
+                "runIndex": 112,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "Fortunately, bitcoin"
+              },
+              {
+                "runIndex": 113,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "puts an end to the paper chase Manhattan Bank money "
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "targetId": "orange_9",
+      "targetText": "“buying the dip.”",
+      "targetColor": "orange",
+      "match": {
+        "status": "exact",
+        "score": 1.0,
+        "text": "buying the dip",
+        "variantCounts": {
+          "TYPEKA_BOLD": 12
+        },
+        "highlightCounts": {
+          "yellow": 12
+        },
+        "runs": [
+          {
+            "runIndex": 124,
+            "variant": "TYPEKA_BOLD",
+            "font": "Typeka",
+            "bold": true,
+            "highlight": "yellow",
+            "sizeHalfPoints": null,
+            "text": "\"buying the dip"
+          }
+        ]
+      },
+      "edges": [
+        {
+          "sourcePage": 78,
+          "reflectionId": "78_76_1",
+          "strength": "strong",
+          "overlapVsSpan": 0.0692,
+          "overlapVsReflection": 1.0,
+          "reflectionText": "honéy-badgering him",
+          "reflectionMatch": {
+            "status": "exact",
+            "score": 1.0,
+            "text": "honey-badgering him",
+            "variantCounts": {
+              "TYPEKA": 18
+            },
+            "highlightCounts": {
+              "none": 18
+            },
+            "runs": [
+              {
+                "runIndex": 100,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "since I started honey-badgering him to buy some at $1 back in 2011)"
+              }
+            ]
+          }
+        },
+        {
+          "sourcePage": 79,
+          "reflectionId": "79_76_3",
+          "strength": "strong",
+          "overlapVsSpan": 0.0347,
+          "overlapVsReflection": 0.7133,
+          "reflectionText": "miss buying bitcoin",
+          "reflectionMatch": {
+            "status": "exact",
+            "score": 1.0,
+            "text": "miss buying bitcoin",
+            "variantCounts": {
+              "TYPEKA": 17
+            },
+            "highlightCounts": {
+              "none": 17
+            },
+            "runs": [
+              {
+                "runIndex": 98,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "(and 10 years of watching Peter Schiff miss buying bitcoin"
+              }
+            ]
+          }
+        },
+        {
+          "sourcePage": 79,
+          "reflectionId": "79_76_2",
+          "strength": "medium",
+          "overlapVsSpan": 0.0554,
+          "overlapVsReflection": 0.4529,
+          "reflectionText": "Gotta be S way. Forty years of (and loyears of watching Peter",
+          "reflectionMatch": {
+            "status": "fuzzy",
+            "score": 0.6847,
+            "text": "Gotta be this way. Forty years of dumb post-1971 fiat",
+            "variantCounts": {
+              "TYPEKA_BOLD": 44
+            },
+            "highlightCounts": {
+              "black": 44
+            },
+            "runs": [
+              {
+                "runIndex": 95,
+                "variant": "TYPEKA_BOLD",
+                "font": "Typeka",
+                "bold": true,
+                "highlight": "black",
+                "sizeHalfPoints": null,
+                "text": "Gotta be this way. Forty years of dumb post-1971 fiat money"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "targetId": "grey_black_4",
+      "targetText": "It’s a stun gun to the genitals.",
+      "targetColor": "grey_black",
+      "match": {
+        "status": "exact",
+        "score": 1.0,
+        "text": "It's a stun gun to the genitals",
+        "variantCounts": {
+          "TYPEKA_BOLD": 25
+        },
+        "highlightCounts": {
+          "black": 25
+        },
+        "runs": [
+          {
+            "runIndex": 115,
+            "variant": "TYPEKA_BOLD",
+            "font": "Typeka",
+            "bold": true,
+            "highlight": "black",
+            "sizeHalfPoints": null,
+            "text": "It's a stun gun to the genitals."
+          }
+        ]
+      },
+      "edges": [
+        {
+          "sourcePage": 78,
+          "reflectionId": "78_76_1",
+          "strength": "strong",
+          "overlapVsSpan": 0.0249,
+          "overlapVsReflection": 0.7905,
+          "reflectionText": "honéy-badgering him",
+          "reflectionMatch": {
+            "status": "exact",
+            "score": 1.0,
+            "text": "honey-badgering him",
+            "variantCounts": {
+              "TYPEKA": 18
+            },
+            "highlightCounts": {
+              "none": 18
+            },
+            "runs": [
+              {
+                "runIndex": 100,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "since I started honey-badgering him to buy some at $1 back in 2011)"
+              }
+            ]
+          }
+        },
+        {
+          "sourcePage": 79,
+          "reflectionId": "79_76_2",
+          "strength": "medium",
+          "overlapVsSpan": 0.0362,
+          "overlapVsReflection": 0.6508,
+          "reflectionText": "Gotta be S way. Forty years of (and loyears of watching Peter",
+          "reflectionMatch": {
+            "status": "fuzzy",
+            "score": 0.6847,
+            "text": "Gotta be this way. Forty years of dumb post-1971 fiat",
+            "variantCounts": {
+              "TYPEKA_BOLD": 44
+            },
+            "highlightCounts": {
+              "black": 44
+            },
+            "runs": [
+              {
+                "runIndex": 95,
+                "variant": "TYPEKA_BOLD",
+                "font": "Typeka",
+                "bold": true,
+                "highlight": "black",
+                "sizeHalfPoints": null,
+                "text": "Gotta be this way. Forty years of dumb post-1971 fiat money"
+              }
+            ]
+          }
+        },
+        {
+          "sourcePage": 79,
+          "reflectionId": "79_76_1",
+          "strength": "medium",
+          "overlapVsSpan": 0.1651,
+          "overlapVsReflection": 0.571,
+          "reflectionText": "but George Clinton and James Brown clones. It's Martin Luther nailing the Vatican with ultimatums. It's the sound of skin being ripped off live central bankers tied to a burning stake.",
+          "reflectionMatch": {
+            "status": "exact",
+            "score": 1.0,
+            "text": "but George Clinton and James Brown clones. It's Martin Luther nailing the Vatican with ultimatums. It's the sound of skin being ripped off live central bankers tied to a burning stake",
+            "variantCounts": {
+              "TYPEKA": 115,
+              "MIX": 38
+            },
+            "highlightCounts": {
+              "none": 153
+            },
+            "runs": [
+              {
+                "runIndex": 86,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "but "
+              },
+              {
+                "runIndex": 87,
+                "variant": "MIX",
+                "font": "Typeka Mix",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "George Clinton"
+              },
+              {
+                "runIndex": 88,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": " and James Brown clones. It's Martin Luther "
+              },
+              {
+                "runIndex": 89,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "nailing the Vatican with ultimatums. It's the sound of skin "
+              },
+              {
+                "runIndex": 90,
+                "variant": "MIX",
+                "font": "Typeka Mix",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "being "
+              },
+              {
+                "runIndex": 91,
+                "variant": "MIX",
+                "font": "Typeka Mix",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "ripped "
+              },
+              {
+                "runIndex": 92,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "off live"
+              },
+              {
+                "runIndex": 93,
+                "variant": "MIX",
+                "font": "Typeka Mix",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": " central bankers"
+              },
+              {
+                "runIndex": 94,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": " tied to a burning stake."
+              }
+            ]
+          }
+        },
+        {
+          "sourcePage": 78,
+          "reflectionId": "78_76_3",
+          "strength": "medium",
+          "overlapVsSpan": 0.1158,
+          "overlapVsReflection": 0.5554,
+          "reflectionText": "¥ortunately, bitcoin end to the paper chase Manhattan Bank money",
+          "reflectionMatch": {
+            "status": "fuzzy",
+            "score": 0.9474,
+            "text": "Fortunately, bitcoinputs an end to the paper chase Manhattan Bank money",
+            "variantCounts": {
+              "TYPEKA": 61
+            },
+            "highlightCounts": {
+              "none": 61
+            },
+            "runs": [
+              {
+                "runIndex": 112,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "Fortunately, bitcoin"
+              },
+              {
+                "runIndex": 113,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "puts an end to the paper chase Manhattan Bank money "
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "targetId": "grey_black_5",
+      "targetText": "$1 billion",
+      "targetColor": "grey_black",
+      "match": {
+        "status": "exact",
+        "score": 1.0,
+        "text": "$1 billion",
+        "variantCounts": {
+          "TYPEKA_BOLD": 9
+        },
+        "highlightCounts": {
+          "black": 9
+        },
+        "runs": [
+          {
+            "runIndex": 131,
+            "variant": "TYPEKA_BOLD",
+            "font": "Typeka",
+            "bold": true,
+            "highlight": "black",
+            "sizeHalfPoints": null,
+            "text": "$1 billion"
+          }
+        ]
+      },
+      "edges": [
+        {
+          "sourcePage": 79,
+          "reflectionId": "79_76_5",
+          "strength": "strong",
+          "overlapVsSpan": 0.0517,
+          "overlapVsReflection": 0.9489,
+          "reflectionText": "trolling the International Monetary Fund (IMF) on Twitter? taunting them, telling them he's ByiiREeraipy\"",
+          "reflectionMatch": {
+            "status": "fuzzy",
+            "score": 0.9146,
+            "text": "trolling the International Monetary Fund (IMF) on Twitter? He's taunting them, telling them he's \"buying",
+            "variantCounts": {
+              "TYPEKA": 83,
+              "TYPEKA_BOLD": 7
+            },
+            "highlightCounts": {
+              "none": 83,
+              "yellow": 7
+            },
+            "runs": [
+              {
+                "runIndex": 122,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "trolling the International Monetary Fund (IMF) on Twitter? "
+              },
+              {
+                "runIndex": 123,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "He's taunting them, telling them he's "
+              },
+              {
+                "runIndex": 124,
+                "variant": "TYPEKA_BOLD",
+                "font": "Typeka",
+                "bold": true,
+                "highlight": "yellow",
+                "sizeHalfPoints": null,
+                "text": "\"buying the dip"
+              }
+            ]
+          }
+        },
+        {
+          "sourcePage": 79,
+          "reflectionId": "79_76_4",
+          "strength": "strong",
+          "overlapVsSpan": 0.0477,
+          "overlapVsReflection": 0.9489,
+          "reflectionText": "Have you seen the president of El Salvador",
+          "reflectionMatch": {
+            "status": "exact",
+            "score": 1.0,
+            "text": "Have you seen the president of El Salvador",
+            "variantCounts": {
+              "TYPEKA": 25,
+              "MIX": 10
+            },
+            "highlightCounts": {
+              "none": 35
+            },
+            "runs": [
+              {
+                "runIndex": 119,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "Have you seen the president of "
+              },
+              {
+                "runIndex": 120,
+                "variant": "MIX",
+                "font": "Typeka Mix",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "El Salvador"
+              }
+            ]
+          }
+        },
+        {
+          "sourcePage": 78,
+          "reflectionId": "78_76_4",
+          "strength": "strong",
+          "overlapVsSpan": 0.0282,
+          "overlapVsReflection": 0.9477,
+          "reflectionText": "Have you seen the president of El Salvador",
+          "reflectionMatch": {
+            "status": "exact",
+            "score": 1.0,
+            "text": "Have you seen the president of El Salvador",
+            "variantCounts": {
+              "TYPEKA": 25,
+              "MIX": 10
+            },
+            "highlightCounts": {
+              "none": 35
+            },
+            "runs": [
+              {
+                "runIndex": 119,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "Have you seen the president of "
+              },
+              {
+                "runIndex": 120,
+                "variant": "MIX",
+                "font": "Typeka Mix",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "El Salvador"
+              }
+            ]
+          }
+        },
+        {
+          "sourcePage": 78,
+          "reflectionId": "78_76_2",
+          "strength": "medium",
+          "overlapVsSpan": 0.0105,
+          "overlapVsReflection": 0.9282,
+          "reflectionText": "Our imaginations",
+          "reflectionMatch": {
+            "status": "exact",
+            "score": 1.0,
+            "text": "Our imaginations",
+            "variantCounts": {
+              "TYPEKA": 15
+            },
+            "highlightCounts": {
+              "none": 15
+            },
+            "runs": [
+              {
+                "runIndex": 108,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "Our imaginations and inventiveness have been euthanized"
+              }
+            ]
+          }
+        },
+        {
+          "sourcePage": 78,
+          "reflectionId": "78_76_3",
+          "strength": "strong",
+          "overlapVsSpan": 0.0632,
+          "overlapVsReflection": 0.7513,
+          "reflectionText": "¥ortunately, bitcoin end to the paper chase Manhattan Bank money",
+          "reflectionMatch": {
+            "status": "fuzzy",
+            "score": 0.9474,
+            "text": "Fortunately, bitcoinputs an end to the paper chase Manhattan Bank money",
+            "variantCounts": {
+              "TYPEKA": 61
+            },
+            "highlightCounts": {
+              "none": 61
+            },
+            "runs": [
+              {
+                "runIndex": 112,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "Fortunately, bitcoin"
+              },
+              {
+                "runIndex": 113,
+                "variant": "TYPEKA",
+                "font": "Typeka",
+                "bold": false,
+                "highlight": null,
+                "sizeHalfPoints": null,
+                "text": "puts an end to the paper chase Manhattan Bank money "
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "assessment": [
+    "All page-76 reflected-hit target spans resolve to Typeka-bold runs, usually with orange/yellow or black highlight.",
+    "Typeka Mix appears mostly in the reflected snippet windows around semantic anchors such as George Clinton and El Salvador, not as a one-character selector inside the target spans.",
+    "The Typeka intersection is explanatory but not selective enough: it does not reduce the five/six page-76 target spans to one ordered key stream.",
+    "Next move should combine Typeka states with a stricter visual registration rule, not rerun font-state strings through key derivation."
+  ]
+}

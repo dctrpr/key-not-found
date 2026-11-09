@@ -1,0 +1,2728 @@
+{
+  "createdAt": "2026-05-24T09:50:54",
+  "scope": "current page-76 scan luminance bit/threshold-plane gate over active boxes, shifted controls, and projected OVERDOSE slots; no extraction or candidate generation",
+  "inputs": {
+    "page76Upright": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "c9HeaderGlyphSlotGate": "analysis_outputs/source_audit/c9_header_glyph_slot_gate/c9_header_glyph_slot_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "summary": {
+    "activeBoxCount": 4,
+    "shiftedControlBoxCount": 16,
+    "overdoseSlotBoxCount": 8,
+    "lowBitPlanesChecked": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "thresholdPlanesChecked": [
+      64,
+      96,
+      128,
+      160,
+      192
+    ],
+    "outlierAbsZThreshold": 3.0,
+    "activeLowBitOutlierCount": 4,
+    "activeLowBitOutlierIds": [
+      "O4",
+      "B4",
+      "G5",
+      "O5"
+    ],
+    "activeThresholdOutlierCount": 4,
+    "activeThresholdOutlierIds": [
+      "O4",
+      "B4",
+      "G5",
+      "O5"
+    ],
+    "allFourActiveLowBitOutlier": true,
+    "allFourActiveThresholdOutlier": true,
+    "activeLowBitSignatures": [
+      "b0=0.50|b1=0.50|b2=0.51|b3=0.49",
+      "b0=0.51|b1=0.53|b2=0.52|b3=0.53",
+      "b0=0.50|b1=0.50|b2=0.50|b3=0.51",
+      "b0=0.50|b1=0.50|b2=0.49|b3=0.49"
+    ],
+    "activeCommonLowBitSignature": null,
+    "activeThresholdSignatures": [
+      "t64=0.22|t96=0.24|t128=0.26|t160=0.64|t192=0.97",
+      "t64=0.65|t96=0.66|t128=0.67|t160=0.68|t192=0.71",
+      "t64=0.69|t96=0.70|t128=0.71|t160=0.73|t192=0.76",
+      "t64=0.26|t96=0.28|t128=0.31|t160=0.62|t192=0.94"
+    ],
+    "activeCommonThresholdSignature": null,
+    "controlCommonLowBitSignatureMatchCount": 0,
+    "overdoseSlotCommonLowBitSignatureMatchCount": 0,
+    "sharedActiveLowBitCarrier": false,
+    "hiddenBitplaneCandidate": false,
+    "maxActiveLowBitAbsZ": 4.624376,
+    "maxControlLowBitAbsZ": 1.808131,
+    "maxOverdoseSlotLowBitAbsZ": 1.495359,
+    "maxActiveThresholdAbsZ": 10.152917,
+    "maxControlThresholdAbsZ": 2.170575,
+    "maxOverdoseSlotThresholdAbsZ": 1.288273,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "luminanceBitplaneFingerprint": "active=4|controls=16|slots=8|bits=0,1,2,3|thresholds=64,96,128,160,192|activeLowBitOutliers=4|activeThresholdOutliers=4|allFourLowBit=1|allFourThreshold=1|sharedCarrier=0|hiddenCandidate=0|commonLowBit=mixed|controlCommon=0|slotCommon=0|maxLowBitZ=4.62/1.81/1.50|maxThresholdZ=10.15/2.17/1.29|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "controlStats": {
+    "bitDensityStats": {
+      "0": {
+        "mean": 0.8367178125,
+        "std": 0.10623794604755095
+      },
+      "1": {
+        "mean": 0.8432166249999999,
+        "std": 0.1035055362733529
+      },
+      "2": {
+        "mean": 0.855659,
+        "std": 0.09637914208349231
+      },
+      "3": {
+        "mean": 0.8757295,
+        "std": 0.08419568367870767
+      }
+    },
+    "bitEntropyStats": {
+      "0": {
+        "mean": 0.5687644375,
+        "std": 0.2979886019271477
+      },
+      "1": {
+        "mean": 0.553708875,
+        "std": 0.29935571755394014
+      },
+      "2": {
+        "mean": 0.526424,
+        "std": 0.29500133845459076
+      },
+      "3": {
+        "mean": 0.4811554375,
+        "std": 0.27796457813113723
+      }
+    },
+    "bitHorizontalTransitionStats": {
+      "0": {
+        "mean": 0.1788251875,
+        "std": 0.1155169925347667
+      },
+      "1": {
+        "mean": 0.1748360625,
+        "std": 0.11527109848226741
+      },
+      "2": {
+        "mean": 0.161521625,
+        "std": 0.10825567259032838
+      },
+      "3": {
+        "mean": 0.127054125,
+        "std": 0.08583391349349845
+      }
+    },
+    "bitVerticalTransitionStats": {
+      "0": {
+        "mean": 0.184385125,
+        "std": 0.11996926395793789
+      },
+      "1": {
+        "mean": 0.1789295,
+        "std": 0.11784992995224901
+      },
+      "2": {
+        "mean": 0.1654741875,
+        "std": 0.11085056528961566
+      },
+      "3": {
+        "mean": 0.13173212499999998,
+        "std": 0.08966577820500626
+      }
+    },
+    "thresholdDarkRatioStats": {
+      "64": {
+        "mean": 0.086007875,
+        "std": 0.06415909439615225
+      },
+      "96": {
+        "mean": 0.0903204375,
+        "std": 0.06693100170134983
+      },
+      "128": {
+        "mean": 0.09560025,
+        "std": 0.07017167423674242
+      },
+      "160": {
+        "mean": 0.10435675,
+        "std": 0.07562199781602903
+      },
+      "192": {
+        "mean": 0.1184575,
+        "std": 0.08392657210621675
+      }
+    }
+  },
+  "regionRows": [
+    {
+      "shortId": "O4",
+      "phrase": "buying the dip",
+      "visualState": "Y",
+      "kind": "active",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "meanLuminance": 131.442452,
+      "stdLuminance": 54.607836,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.499197,
+          "entropy": 0.999998,
+          "horizontalTransition": 0.497273,
+          "verticalTransition": 0.496606
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.503837,
+          "entropy": 0.999958,
+          "horizontalTransition": 0.499151,
+          "verticalTransition": 0.504169
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.506022,
+          "entropy": 0.999895,
+          "horizontalTransition": 0.48167,
+          "verticalTransition": 0.493553
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.48742,
+          "entropy": 0.999543,
+          "horizontalTransition": 0.428201,
+          "verticalTransition": 0.480204
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.217434,
+          "entropy": 0.755454,
+          "horizontalTransition": 0.057046,
+          "verticalTransition": 0.050708
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.241792,
+          "entropy": 0.798007,
+          "horizontalTransition": 0.055526,
+          "verticalTransition": 0.050298
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.263517,
+          "entropy": 0.832008,
+          "horizontalTransition": 0.058119,
+          "verticalTransition": 0.056403
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.644049,
+          "entropy": 0.939271,
+          "horizontalTransition": 0.202432,
+          "verticalTransition": 0.32211
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.970557,
+          "entropy": 0.191592,
+          "horizontalTransition": 0.006527,
+          "verticalTransition": 0.029751
+        }
+      ],
+      "lowBitSignature": "b0=0.50|b1=0.50|b2=0.51|b3=0.49",
+      "thresholdSignature": "t64=0.22|t96=0.24|t128=0.26|t160=0.64|t192=0.97",
+      "maxLowBitDensityAbsZ": 4.611988,
+      "maxLowBitEntropyAbsZ": 1.864941,
+      "maxLowBitTransitionAbsZ": 3.886342,
+      "maxThresholdDarkRatioAbsZ": 10.152917,
+      "lowBitOutlier": true,
+      "thresholdOutlier": true
+    },
+    {
+      "shortId": "B4",
+      "phrase": "$1 billion",
+      "visualState": "K",
+      "kind": "active",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "meanLuminance": 88.887954,
+      "stdLuminance": 105.624202,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.513712,
+          "entropy": 0.999457,
+          "horizontalTransition": 0.470684,
+          "verticalTransition": 0.486361
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.526576,
+          "entropy": 0.997961,
+          "horizontalTransition": 0.465649,
+          "verticalTransition": 0.488758
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.521964,
+          "entropy": 0.998608,
+          "horizontalTransition": 0.425857,
+          "verticalTransition": 0.469168
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.530216,
+          "entropy": 0.997364,
+          "horizontalTransition": 0.364869,
+          "verticalTransition": 0.420648
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.650837,
+          "entropy": 0.933318,
+          "horizontalTransition": 0.066104,
+          "verticalTransition": 0.064969
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.659332,
+          "entropy": 0.925457,
+          "horizontalTransition": 0.067241,
+          "verticalTransition": 0.065135
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.668473,
+          "entropy": 0.916478,
+          "horizontalTransition": 0.067403,
+          "verticalTransition": 0.065961
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.682954,
+          "entropy": 0.90114,
+          "horizontalTransition": 0.069352,
+          "verticalTransition": 0.067449
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.707467,
+          "entropy": 0.871971,
+          "horizontalTransition": 0.070976,
+          "verticalTransition": 0.067119
+        }
+      ],
+      "lowBitSignature": "b0=0.51|b1=0.53|b2=0.52|b3=0.53",
+      "thresholdSignature": "t64=0.65|t96=0.66|t128=0.67|t160=0.68|t192=0.71",
+      "maxLowBitDensityAbsZ": 4.103696,
+      "maxLowBitEntropyAbsZ": 1.857102,
+      "maxLowBitTransitionAbsZ": 3.222142,
+      "maxThresholdDarkRatioAbsZ": 8.803571,
+      "lowBitOutlier": true,
+      "thresholdOutlier": true
+    },
+    {
+      "shortId": "G5",
+      "phrase": "Volcano Bonds",
+      "visualState": "K",
+      "kind": "active",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "meanLuminance": 77.367415,
+      "stdLuminance": 99.678118,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.503117,
+          "entropy": 0.999972,
+          "horizontalTransition": 0.491198,
+          "verticalTransition": 0.4987
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.499896,
+          "entropy": 1.0,
+          "horizontalTransition": 0.479167,
+          "verticalTransition": 0.488619
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.495636,
+          "entropy": 0.999945,
+          "horizontalTransition": 0.445312,
+          "verticalTransition": 0.463204
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.512157,
+          "entropy": 0.999574,
+          "horizontalTransition": 0.36875,
+          "verticalTransition": 0.41874
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.690098,
+          "entropy": 0.893061,
+          "horizontalTransition": 0.06224,
+          "verticalTransition": 0.085531
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.699969,
+          "entropy": 0.881329,
+          "horizontalTransition": 0.06224,
+          "verticalTransition": 0.084682
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.711866,
+          "entropy": 0.866298,
+          "horizontalTransition": 0.062292,
+          "verticalTransition": 0.084629
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.729998,
+          "entropy": 0.841468,
+          "horizontalTransition": 0.063385,
+          "verticalTransition": 0.083568
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.76091,
+          "entropy": 0.793523,
+          "horizontalTransition": 0.063646,
+          "verticalTransition": 0.075237
+        }
+      ],
+      "lowBitSignature": "b0=0.50|b1=0.50|b2=0.50|b3=0.51",
+      "thresholdSignature": "t64=0.69|t96=0.70|t128=0.71|t160=0.73|t192=0.76",
+      "maxLowBitDensityAbsZ": 4.318185,
+      "maxLowBitEntropyAbsZ": 1.865053,
+      "maxLowBitTransitionAbsZ": 3.200863,
+      "maxThresholdDarkRatioAbsZ": 9.415503,
+      "lowBitOutlier": true,
+      "thresholdOutlier": true
+    },
+    {
+      "shortId": "O5",
+      "phrase": "shitcoiner at heart",
+      "visualState": "Y",
+      "kind": "active",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "width": 621.0,
+      "height": 50.0,
+      "meanLuminance": 127.091014,
+      "stdLuminance": 62.903568,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.503961,
+          "entropy": 0.999955,
+          "horizontalTransition": 0.498613,
+          "verticalTransition": 0.499688
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.500741,
+          "entropy": 0.999998,
+          "horizontalTransition": 0.489774,
+          "verticalTransition": 0.503467
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.494235,
+          "entropy": 0.999904,
+          "horizontalTransition": 0.475581,
+          "verticalTransition": 0.496927
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.486377,
+          "entropy": 0.999464,
+          "horizontalTransition": 0.41629,
+          "verticalTransition": 0.482303
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.26132,
+          "entropy": 0.828732,
+          "horizontalTransition": 0.050452,
+          "verticalTransition": 0.051957
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.284928,
+          "entropy": 0.862078,
+          "horizontalTransition": 0.05,
+          "verticalTransition": 0.05153
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.305282,
+          "entropy": 0.887652,
+          "horizontalTransition": 0.052452,
+          "verticalTransition": 0.055013
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.62306,
+          "entropy": 0.955852,
+          "horizontalTransition": 0.186677,
+          "verticalTransition": 0.279766
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.941868,
+          "entropy": 0.319985,
+          "horizontalTransition": 0.005645,
+          "verticalTransition": 0.036117
+        }
+      ],
+      "lowBitSignature": "b0=0.50|b1=0.50|b2=0.49|b3=0.49",
+      "thresholdSignature": "t64=0.26|t96=0.28|t128=0.31|t160=0.62|t192=0.94",
+      "maxLowBitDensityAbsZ": 4.624376,
+      "maxLowBitEntropyAbsZ": 1.864657,
+      "maxLowBitTransitionAbsZ": 3.909751,
+      "maxThresholdDarkRatioAbsZ": 9.811082,
+      "lowBitOutlier": true,
+      "thresholdOutlier": true
+    },
+    {
+      "shortId": "O4_dy-292",
+      "phrase": "O4 shifted -292px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        1334.0,
+        1885.0,
+        1801.0,
+        1933.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "meanLuminance": 254.949411,
+      "stdLuminance": 0.760034,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.990096,
+          "entropy": 0.080154,
+          "horizontalTransition": 0.011847,
+          "verticalTransition": 0.011253
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.994022,
+          "entropy": 0.052752,
+          "horizontalTransition": 0.006393,
+          "verticalTransition": 0.006834
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.99719,
+          "entropy": 0.027868,
+          "horizontalTransition": 0.004068,
+          "verticalTransition": 0.004146
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.998528,
+          "entropy": 0.015972,
+          "horizontalTransition": 0.001609,
+          "verticalTransition": 0.001822
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.0,
+          "entropy": 0.0,
+          "horizontalTransition": 0.0,
+          "verticalTransition": 0.0
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.0,
+          "entropy": 0.0,
+          "horizontalTransition": 0.0,
+          "verticalTransition": 0.0
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.0,
+          "entropy": 0.0,
+          "horizontalTransition": 0.0,
+          "verticalTransition": 0.0
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.0,
+          "entropy": 0.0,
+          "horizontalTransition": 0.0,
+          "verticalTransition": 0.0
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.0,
+          "entropy": 0.0,
+          "horizontalTransition": 0.0,
+          "verticalTransition": 0.0
+        }
+      ],
+      "lowBitSignature": "b0=0.99|b1=0.99|b2=1.00|b3=1.00",
+      "thresholdSignature": "t64=0.00|t96=0.00|t128=0.00|t160=0.00|t192=0.00",
+      "maxLowBitDensityAbsZ": 1.468482,
+      "maxLowBitEntropyAbsZ": 1.690013,
+      "maxLowBitTransitionAbsZ": 1.461487,
+      "maxThresholdDarkRatioAbsZ": 1.411442,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "O4_dy-146",
+      "phrase": "O4 shifted -146px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        1334.0,
+        2031.0,
+        1801.0,
+        2079.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "meanLuminance": 241.820664,
+      "stdLuminance": 51.433066,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.922912,
+          "entropy": 0.391834,
+          "horizontalTransition": 0.083199,
+          "verticalTransition": 0.087384
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.928444,
+          "entropy": 0.371704,
+          "horizontalTransition": 0.08007,
+          "verticalTransition": 0.081279
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.933931,
+          "entropy": 0.351079,
+          "horizontalTransition": 0.069385,
+          "verticalTransition": 0.073807
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.942675,
+          "entropy": 0.316734,
+          "horizontalTransition": 0.055302,
+          "verticalTransition": 0.054854
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.043719,
+          "entropy": 0.25909,
+          "horizontalTransition": 0.016273,
+          "verticalTransition": 0.017131
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.045369,
+          "entropy": 0.266391,
+          "horizontalTransition": 0.016497,
+          "verticalTransition": 0.017222
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.048091,
+          "entropy": 0.27823,
+          "horizontalTransition": 0.016407,
+          "verticalTransition": 0.01704
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.052552,
+          "entropy": 0.297139,
+          "horizontalTransition": 0.01681,
+          "verticalTransition": 0.01786
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.059957,
+          "entropy": 0.327275,
+          "horizontalTransition": 0.017167,
+          "verticalTransition": 0.018315
+        }
+      ],
+      "lowBitSignature": "b0=0.92|b1=0.93|b2=0.93|b3=0.94",
+      "thresholdSignature": "t64=0.04|t96=0.05|t128=0.05|t160=0.05|t192=0.06",
+      "maxLowBitDensityAbsZ": 0.823409,
+      "maxLowBitEntropyAbsZ": 0.607989,
+      "maxLowBitTransitionAbsZ": 0.857385,
+      "maxThresholdDarkRatioAbsZ": 0.697044,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "O4_dy+146",
+      "phrase": "O4 shifted +146px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        1334.0,
+        2323.0,
+        1801.0,
+        2371.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "meanLuminance": 231.881736,
+      "stdLuminance": 65.18425,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.836858,
+          "entropy": 0.641774,
+          "horizontalTransition": 0.182627,
+          "verticalTransition": 0.184109
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.843817,
+          "entropy": 0.6251,
+          "horizontalTransition": 0.178335,
+          "verticalTransition": 0.182195
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.858494,
+          "entropy": 0.58817,
+          "horizontalTransition": 0.161436,
+          "verticalTransition": 0.165201
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.880755,
+          "entropy": 0.527187,
+          "horizontalTransition": 0.125358,
+          "verticalTransition": 0.125336
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.071467,
+          "entropy": 0.371374,
+          "horizontalTransition": 0.034603,
+          "verticalTransition": 0.034261
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.07566,
+          "entropy": 0.3867,
+          "horizontalTransition": 0.03505,
+          "verticalTransition": 0.034717
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.080657,
+          "entropy": 0.404489,
+          "horizontalTransition": 0.03581,
+          "verticalTransition": 0.035537
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.088999,
+          "entropy": 0.43312,
+          "horizontalTransition": 0.036615,
+          "verticalTransition": 0.036266
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.105817,
+          "entropy": 0.487169,
+          "horizontalTransition": 0.037643,
+          "verticalTransition": 0.036995
+        }
+      ],
+      "lowBitSignature": "b0=0.84|b1=0.84|b2=0.86|b3=0.88",
+      "thresholdSignature": "t64=0.07|t96=0.08|t128=0.08|t160=0.09|t192=0.11",
+      "maxLowBitDensityAbsZ": 0.059688,
+      "maxLowBitEntropyAbsZ": 0.245008,
+      "maxLowBitTransitionAbsZ": 0.071333,
+      "maxThresholdDarkRatioAbsZ": 0.226638,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "O4_dy+292",
+      "phrase": "O4 shifted +292px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        1334.0,
+        2469.0,
+        1801.0,
+        2517.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "meanLuminance": 246.563615,
+      "stdLuminance": 41.383054,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.950482,
+          "entropy": 0.284347,
+          "horizontalTransition": 0.054229,
+          "verticalTransition": 0.055766
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.951017,
+          "entropy": 0.28206,
+          "horizontalTransition": 0.052083,
+          "verticalTransition": 0.055492
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.953292,
+          "entropy": 0.272243,
+          "horizontalTransition": 0.051055,
+          "verticalTransition": 0.051665
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.959761,
+          "entropy": 0.243387,
+          "horizontalTransition": 0.040415,
+          "verticalTransition": 0.04474
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.027659,
+          "entropy": 0.182511,
+          "horizontalTransition": 0.012205,
+          "verticalTransition": 0.015582
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.028997,
+          "entropy": 0.189337,
+          "horizontalTransition": 0.01225,
+          "verticalTransition": 0.015764
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.030112,
+          "entropy": 0.194955,
+          "horizontalTransition": 0.01225,
+          "verticalTransition": 0.016128
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.032878,
+          "entropy": 0.208627,
+          "horizontalTransition": 0.012876,
+          "verticalTransition": 0.016311
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.037964,
+          "entropy": 0.232878,
+          "horizontalTransition": 0.013323,
+          "verticalTransition": 0.016948
+        }
+      ],
+      "lowBitSignature": "b0=0.95|b1=0.95|b2=0.95|b3=0.96",
+      "thresholdSignature": "t64=0.03|t96=0.03|t128=0.03|t160=0.03|t192=0.04",
+      "maxLowBitDensityAbsZ": 1.070843,
+      "maxLowBitEntropyAbsZ": 0.954457,
+      "maxLowBitTransitionAbsZ": 1.078596,
+      "maxThresholdDarkRatioAbsZ": 0.959094,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "B4_dy-292",
+      "phrase": "B4 shifted -292px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        428.0,
+        2106.0,
+        691.0,
+        2153.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "meanLuminance": 217.827198,
+      "stdLuminance": 78.656966,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.735054,
+          "entropy": 0.834119,
+          "horizontalTransition": 0.303476,
+          "verticalTransition": 0.306745
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.741849,
+          "entropy": 0.823943,
+          "horizontalTransition": 0.295517,
+          "verticalTransition": 0.293106
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.759324,
+          "entropy": 0.796163,
+          "horizontalTransition": 0.274403,
+          "verticalTransition": 0.276823
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.801311,
+          "entropy": 0.719299,
+          "horizontalTransition": 0.213416,
+          "verticalTransition": 0.220946
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.11245,
+          "entropy": 0.507263,
+          "horizontalTransition": 0.0618,
+          "verticalTransition": 0.061167
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.118761,
+          "entropy": 0.525788,
+          "horizontalTransition": 0.062693,
+          "verticalTransition": 0.061994
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.129116,
+          "entropy": 0.555008,
+          "horizontalTransition": 0.063343,
+          "verticalTransition": 0.063647
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.145296,
+          "entropy": 0.597941,
+          "horizontalTransition": 0.065129,
+          "verticalTransition": 0.066953
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.172559,
+          "entropy": 0.663525,
+          "horizontalTransition": 0.066591,
+          "verticalTransition": 0.06778
+        }
+      ],
+      "lowBitSignature": "b0=0.74|b1=0.74|b2=0.76|b3=0.80",
+      "thresholdSignature": "t64=0.11|t96=0.12|t128=0.13|t160=0.15|t192=0.17",
+      "maxLowBitDensityAbsZ": 0.999542,
+      "maxLowBitEntropyAbsZ": 0.914365,
+      "maxLowBitTransitionAbsZ": 1.079069,
+      "maxThresholdDarkRatioAbsZ": 0.644629,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "B4_dy-146",
+      "phrase": "B4 shifted -146px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        428.0,
+        2252.0,
+        691.0,
+        2299.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "meanLuminance": 214.515654,
+      "stdLuminance": 83.022023,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.749778,
+          "entropy": 0.811631,
+          "horizontalTransition": 0.264821,
+          "verticalTransition": 0.277732
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.760942,
+          "entropy": 0.793471,
+          "horizontalTransition": 0.26279,
+          "verticalTransition": 0.276244
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.77785,
+          "entropy": 0.764075,
+          "horizontalTransition": 0.238022,
+          "verticalTransition": 0.248306
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.810129,
+          "entropy": 0.701202,
+          "horizontalTransition": 0.189134,
+          "verticalTransition": 0.192429
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.129682,
+          "entropy": 0.556566,
+          "horizontalTransition": 0.055384,
+          "verticalTransition": 0.061167
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.137772,
+          "entropy": 0.578374,
+          "horizontalTransition": 0.056521,
+          "verticalTransition": 0.061994
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.146995,
+          "entropy": 0.602268,
+          "horizontalTransition": 0.058795,
+          "verticalTransition": 0.061994
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.160828,
+          "entropy": 0.636288,
+          "horizontalTransition": 0.059607,
+          "verticalTransition": 0.06282
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.182024,
+          "entropy": 0.684485,
+          "horizontalTransition": 0.061718,
+          "verticalTransition": 0.064308
+        }
+      ],
+      "lowBitSignature": "b0=0.75|b1=0.76|b2=0.78|b3=0.81",
+      "thresholdSignature": "t64=0.13|t96=0.14|t128=0.15|t160=0.16|t192=0.18",
+      "maxLowBitDensityAbsZ": 0.81835,
+      "maxLowBitEntropyAbsZ": 0.81502,
+      "maxLowBitTransitionAbsZ": 0.825749,
+      "maxThresholdDarkRatioAbsZ": 0.757406,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "B4_dy+146",
+      "phrase": "B4 shifted +146px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        428.0,
+        2544.0,
+        691.0,
+        2591.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "meanLuminance": 213.291481,
+      "stdLuminance": 82.924895,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.720492,
+          "entropy": 0.85478,
+          "horizontalTransition": 0.303963,
+          "verticalTransition": 0.3184
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.733355,
+          "entropy": 0.836609,
+          "horizontalTransition": 0.30648,
+          "verticalTransition": 0.314019
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.752285,
+          "entropy": 0.807636,
+          "horizontalTransition": 0.284067,
+          "verticalTransition": 0.295338
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.791603,
+          "entropy": 0.738408,
+          "horizontalTransition": 0.219425,
+          "verticalTransition": 0.230534
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.129925,
+          "entropy": 0.557232,
+          "horizontalTransition": 0.059769,
+          "verticalTransition": 0.067119
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.13761,
+          "entropy": 0.577946,
+          "horizontalTransition": 0.060094,
+          "verticalTransition": 0.067945
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.147723,
+          "entropy": 0.604112,
+          "horizontalTransition": 0.062368,
+          "verticalTransition": 0.068276
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.163579,
+          "entropy": 0.642803,
+          "horizontalTransition": 0.06383,
+          "verticalTransition": 0.068606
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.191247,
+          "entropy": 0.704072,
+          "horizontalTransition": 0.067322,
+          "verticalTransition": 0.07307
+        }
+      ],
+      "lowBitSignature": "b0=0.72|b1=0.73|b2=0.75|b3=0.79",
+      "thresholdSignature": "t64=0.13|t96=0.14|t128=0.15|t160=0.16|t192=0.19",
+      "maxLowBitDensityAbsZ": 1.094014,
+      "maxLowBitEntropyAbsZ": 0.95982,
+      "maxLowBitTransitionAbsZ": 1.171521,
+      "maxThresholdDarkRatioAbsZ": 0.8673,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "B4_dy+292",
+      "phrase": "B4 shifted +292px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        428.0,
+        2690.0,
+        691.0,
+        2737.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "meanLuminance": 203.892404,
+      "stdLuminance": 91.708837,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.709328,
+          "entropy": 0.869588,
+          "horizontalTransition": 0.31785,
+          "verticalTransition": 0.328153
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.720411,
+          "entropy": 0.85489,
+          "horizontalTransition": 0.315251,
+          "verticalTransition": 0.317656
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.741688,
+          "entropy": 0.824189,
+          "horizontalTransition": 0.298197,
+          "verticalTransition": 0.303108
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.77154,
+          "entropy": 0.775318,
+          "horizontalTransition": 0.233149,
+          "verticalTransition": 0.247644
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.172802,
+          "entropy": 0.664074,
+          "horizontalTransition": 0.063749,
+          "verticalTransition": 0.066292
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.180568,
+          "entropy": 0.681318,
+          "horizontalTransition": 0.064561,
+          "verticalTransition": 0.066788
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.189143,
+          "entropy": 0.699676,
+          "horizontalTransition": 0.065535,
+          "verticalTransition": 0.068606
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.204514,
+          "entropy": 0.730865,
+          "horizontalTransition": 0.065292,
+          "verticalTransition": 0.07059
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.226762,
+          "entropy": 0.772323,
+          "horizontalTransition": 0.066104,
+          "verticalTransition": 0.072905
+        }
+      ],
+      "lowBitSignature": "b0=0.71|b1=0.72|b2=0.74|b3=0.77",
+      "thresholdSignature": "t64=0.17|t96=0.18|t128=0.19|t160=0.20|t192=0.23",
+      "maxLowBitDensityAbsZ": 1.237468,
+      "maxLowBitEntropyAbsZ": 1.058274,
+      "maxLowBitTransitionAbsZ": 1.29271,
+      "maxThresholdDarkRatioAbsZ": 1.352795,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "G5_dy-292",
+      "phrase": "G5 shifted -292px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        795.0,
+        2252.0,
+        1196.0,
+        2300.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "meanLuminance": 192.313331,
+      "stdLuminance": 100.239205,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.707658,
+          "entropy": 0.871727,
+          "horizontalTransition": 0.305052,
+          "verticalTransition": 0.313843
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.71701,
+          "entropy": 0.859494,
+          "horizontalTransition": 0.302031,
+          "verticalTransition": 0.306574
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.735453,
+          "entropy": 0.833531,
+          "horizontalTransition": 0.282292,
+          "verticalTransition": 0.286465
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.758988,
+          "entropy": 0.796719,
+          "horizontalTransition": 0.230104,
+          "verticalTransition": 0.238128
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.22527,
+          "entropy": 0.769675,
+          "horizontalTransition": 0.060781,
+          "verticalTransition": 0.054651
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.232544,
+          "entropy": 0.782419,
+          "horizontalTransition": 0.060365,
+          "verticalTransition": 0.053642
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.240025,
+          "entropy": 0.795082,
+          "horizontalTransition": 0.060052,
+          "verticalTransition": 0.054385
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.253169,
+          "entropy": 0.816263,
+          "horizontalTransition": 0.060469,
+          "verticalTransition": 0.055075
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.271924,
+          "entropy": 0.844212,
+          "horizontalTransition": 0.060885,
+          "verticalTransition": 0.055606
+        }
+      ],
+      "lowBitSignature": "b0=0.71|b1=0.72|b2=0.74|b3=0.76",
+      "thresholdSignature": "t64=0.23|t96=0.23|t128=0.24|t160=0.25|t192=0.27",
+      "maxLowBitDensityAbsZ": 1.38655,
+      "maxLowBitEntropyAbsZ": 1.135265,
+      "maxLowBitTransitionAbsZ": 1.200573,
+      "maxThresholdDarkRatioAbsZ": 2.170575,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "G5_dy-146",
+      "phrase": "G5 shifted -146px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        795.0,
+        2398.0,
+        1196.0,
+        2446.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "meanLuminance": 223.472724,
+      "stdLuminance": 74.788721,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.79681,
+          "entropy": 0.728262,
+          "horizontalTransition": 0.221771,
+          "verticalTransition": 0.229161
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.805019,
+          "entropy": 0.711776,
+          "horizontalTransition": 0.210208,
+          "verticalTransition": 0.222688
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.823514,
+          "entropy": 0.672329,
+          "horizontalTransition": 0.194427,
+          "verticalTransition": 0.202154
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.845438,
+          "entropy": 0.621139,
+          "horizontalTransition": 0.15599,
+          "verticalTransition": 0.160981
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.099231,
+          "entropy": 0.466553,
+          "horizontalTransition": 0.049688,
+          "verticalTransition": 0.052316
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.105881,
+          "entropy": 0.487366,
+          "horizontalTransition": 0.050625,
+          "verticalTransition": 0.05221
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.114038,
+          "entropy": 0.511976,
+          "horizontalTransition": 0.051927,
+          "verticalTransition": 0.053165
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.12552,
+          "entropy": 0.545021,
+          "horizontalTransition": 0.053073,
+          "verticalTransition": 0.053483
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.143807,
+          "entropy": 0.594123,
+          "horizontalTransition": 0.053229,
+          "verticalTransition": 0.055818
+        }
+      ],
+      "lowBitSignature": "b0=0.80|b1=0.81|b2=0.82|b3=0.85",
+      "thresholdSignature": "t64=0.10|t96=0.11|t128=0.11|t160=0.13|t192=0.14",
+      "maxLowBitDensityAbsZ": 0.375646,
+      "maxLowBitEntropyAbsZ": 0.535247,
+      "maxLowBitTransitionAbsZ": 0.373228,
+      "maxThresholdDarkRatioAbsZ": 0.302044,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "G5_dy+146",
+      "phrase": "G5 shifted +146px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        795.0,
+        2690.0,
+        1196.0,
+        2738.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "meanLuminance": 214.364609,
+      "stdLuminance": 82.995949,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.725998,
+          "entropy": 0.84715,
+          "horizontalTransition": 0.303906,
+          "verticalTransition": 0.318884
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.733167,
+          "entropy": 0.836883,
+          "horizontalTransition": 0.296719,
+          "verticalTransition": 0.309333
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.757325,
+          "entropy": 0.79946,
+          "horizontalTransition": 0.277708,
+          "verticalTransition": 0.288587
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.790108,
+          "entropy": 0.741276,
+          "horizontalTransition": 0.221198,
+          "verticalTransition": 0.232981
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.130923,
+          "entropy": 0.559963,
+          "horizontalTransition": 0.060781,
+          "verticalTransition": 0.064944
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.136378,
+          "entropy": 0.574673,
+          "horizontalTransition": 0.061094,
+          "verticalTransition": 0.065475
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.144379,
+          "entropy": 0.595592,
+          "horizontalTransition": 0.061719,
+          "verticalTransition": 0.066324
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.158614,
+          "entropy": 0.630983,
+          "horizontalTransition": 0.062448,
+          "verticalTransition": 0.068552
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.179187,
+          "entropy": 0.678296,
+          "horizontalTransition": 0.064792,
+          "verticalTransition": 0.07285
+        }
+      ],
+      "lowBitSignature": "b0=0.73|b1=0.73|b2=0.76|b3=0.79",
+      "thresholdSignature": "t64=0.13|t96=0.14|t128=0.14|t160=0.16|t192=0.18",
+      "maxLowBitDensityAbsZ": 1.063225,
+      "maxLowBitEntropyAbsZ": 0.945945,
+      "maxLowBitTransitionAbsZ": 1.129181,
+      "maxThresholdDarkRatioAbsZ": 0.723603,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "G5_dy+292",
+      "phrase": "G5 shifted +292px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        795.0,
+        2836.0,
+        1196.0,
+        2884.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "meanLuminance": 214.911212,
+      "stdLuminance": 83.333489,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.773847,
+          "entropy": 0.771245,
+          "horizontalTransition": 0.249688,
+          "verticalTransition": 0.258715
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.777743,
+          "entropy": 0.764267,
+          "horizontalTransition": 0.245,
+          "verticalTransition": 0.25203
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.795303,
+          "entropy": 0.731222,
+          "horizontalTransition": 0.228802,
+          "verticalTransition": 0.228047
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.822527,
+          "entropy": 0.674518,
+          "horizontalTransition": 0.17875,
+          "verticalTransition": 0.184114
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.131806,
+          "entropy": 0.56237,
+          "horizontalTransition": 0.051823,
+          "verticalTransition": 0.049504
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.139339,
+          "entropy": 0.582505,
+          "horizontalTransition": 0.052031,
+          "verticalTransition": 0.049504
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.147184,
+          "entropy": 0.602748,
+          "horizontalTransition": 0.051927,
+          "verticalTransition": 0.048761
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.160796,
+          "entropy": 0.63621,
+          "horizontalTransition": 0.052552,
+          "verticalTransition": 0.050406
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.182616,
+          "entropy": 0.685767,
+          "horizontalTransition": 0.053958,
+          "verticalTransition": 0.05083
+        }
+      ],
+      "lowBitSignature": "b0=0.77|b1=0.78|b2=0.80|b3=0.82",
+      "thresholdSignature": "t64=0.13|t96=0.14|t128=0.15|t160=0.16|t192=0.18",
+      "maxLowBitDensityAbsZ": 0.632562,
+      "maxLowBitEntropyAbsZ": 0.703371,
+      "maxLowBitTransitionAbsZ": 0.621495,
+      "maxThresholdDarkRatioAbsZ": 0.76446,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "O5_dy-292",
+      "phrase": "O5 shifted -292px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        1040.0,
+        2640.0,
+        1661.0,
+        2690.0
+      ],
+      "width": 621.0,
+      "height": 50.0,
+      "meanLuminance": 239.459646,
+      "stdLuminance": 54.693252,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.892754,
+          "entropy": 0.491554,
+          "horizontalTransition": 0.118774,
+          "verticalTransition": 0.120707
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.896651,
+          "entropy": 0.479524,
+          "horizontalTransition": 0.116613,
+          "verticalTransition": 0.116139
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.904702,
+          "entropy": 0.453911,
+          "horizontalTransition": 0.106065,
+          "verticalTransition": 0.108745
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.921095,
+          "entropy": 0.398309,
+          "horizontalTransition": 0.081129,
+          "verticalTransition": 0.085215
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.048921,
+          "entropy": 0.281796,
+          "horizontalTransition": 0.018774,
+          "verticalTransition": 0.025469
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.051659,
+          "entropy": 0.293401,
+          "horizontalTransition": 0.018903,
+          "verticalTransition": 0.025666
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.055072,
+          "entropy": 0.307566,
+          "horizontalTransition": 0.019419,
+          "verticalTransition": 0.026225
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.060934,
+          "entropy": 0.331141,
+          "horizontalTransition": 0.020903,
+          "verticalTransition": 0.026586
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.070853,
+          "entropy": 0.369101,
+          "horizontalTransition": 0.021419,
+          "verticalTransition": 0.027507
+        }
+      ],
+      "lowBitSignature": "b0=0.89|b1=0.90|b2=0.90|b3=0.92",
+      "thresholdSignature": "t64=0.05|t96=0.05|t128=0.06|t160=0.06|t192=0.07",
+      "maxLowBitDensityAbsZ": 0.53881,
+      "maxLowBitEntropyAbsZ": 0.298047,
+      "maxLowBitTransitionAbsZ": 0.535046,
+      "maxThresholdDarkRatioAbsZ": 0.578045,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "O5_dy-146",
+      "phrase": "O5 shifted -146px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        1040.0,
+        2786.0,
+        1661.0,
+        2836.0
+      ],
+      "width": 621.0,
+      "height": 50.0,
+      "meanLuminance": 239.010435,
+      "stdLuminance": 55.907069,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.890435,
+          "entropy": 0.498603,
+          "horizontalTransition": 0.122,
+          "verticalTransition": 0.121463
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.898776,
+          "entropy": 0.472863,
+          "horizontalTransition": 0.117645,
+          "verticalTransition": 0.115811
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.905089,
+          "entropy": 0.452654,
+          "horizontalTransition": 0.107839,
+          "verticalTransition": 0.108778
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.919517,
+          "entropy": 0.403879,
+          "horizontalTransition": 0.084742,
+          "verticalTransition": 0.084755
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.052271,
+          "entropy": 0.295965,
+          "horizontalTransition": 0.02171,
+          "verticalTransition": 0.023399
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.054589,
+          "entropy": 0.305581,
+          "horizontalTransition": 0.021774,
+          "verticalTransition": 0.023596
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.057069,
+          "entropy": 0.315699,
+          "horizontalTransition": 0.022032,
+          "verticalTransition": 0.023957
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.061997,
+          "entropy": 0.335321,
+          "horizontalTransition": 0.022516,
+          "verticalTransition": 0.024253
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.070531,
+          "entropy": 0.367904,
+          "horizontalTransition": 0.023161,
+          "verticalTransition": 0.024812
+        }
+      ],
+      "lowBitSignature": "b0=0.89|b1=0.90|b2=0.91|b3=0.92",
+      "thresholdSignature": "t64=0.05|t96=0.05|t128=0.06|t160=0.06|t192=0.07",
+      "maxLowBitDensityAbsZ": 0.536777,
+      "maxLowBitEntropyAbsZ": 0.278008,
+      "maxLowBitTransitionAbsZ": 0.535584,
+      "maxThresholdDarkRatioAbsZ": 0.571053,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "O5_dy+146",
+      "phrase": "O5 shifted +146px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        1040.0,
+        3078.0,
+        1661.0,
+        3128.0
+      ],
+      "width": 621.0,
+      "height": 50.0,
+      "meanLuminance": 254.97723,
+      "stdLuminance": 0.739214,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.99694,
+          "entropy": 0.029962,
+          "horizontalTransition": 0.003484,
+          "verticalTransition": 0.002859
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.997617,
+          "entropy": 0.024199,
+          "horizontalTransition": 0.002968,
+          "verticalTransition": 0.002695
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.998969,
+          "entropy": 0.011712,
+          "horizontalTransition": 0.001419,
+          "verticalTransition": 0.00138
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.999549,
+          "entropy": 0.005662,
+          "horizontalTransition": 0.000645,
+          "verticalTransition": 0.000592
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.0,
+          "entropy": 0.0,
+          "horizontalTransition": 0.0,
+          "verticalTransition": 0.0
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.0,
+          "entropy": 0.0,
+          "horizontalTransition": 0.0,
+          "verticalTransition": 0.0
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.0,
+          "entropy": 0.0,
+          "horizontalTransition": 0.0,
+          "verticalTransition": 0.0
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 3.2e-05,
+          "entropy": 0.000527,
+          "horizontalTransition": 6.5e-05,
+          "verticalTransition": 6.6e-05
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 3.2e-05,
+          "entropy": 0.000527,
+          "horizontalTransition": 6.5e-05,
+          "verticalTransition": 6.6e-05
+        }
+      ],
+      "lowBitSignature": "b0=1.00|b1=1.00|b2=1.00|b3=1.00",
+      "thresholdSignature": "t64=0.00|t96=0.00|t128=0.00|t160=0.00|t192=0.00",
+      "maxLowBitDensityAbsZ": 1.508145,
+      "maxLowBitEntropyAbsZ": 1.808131,
+      "maxLowBitTransitionAbsZ": 1.517882,
+      "maxThresholdDarkRatioAbsZ": 1.411061,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "O5_dy+292",
+      "phrase": "O5 shifted +292px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        1040.0,
+        3224.0,
+        1661.0,
+        3264.0
+      ],
+      "width": 621.0,
+      "height": 40.0,
+      "meanLuminance": 254.929428,
+      "stdLuminance": 0.869997,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.988043,
+          "entropy": 0.093501,
+          "horizontalTransition": 0.014516,
+          "verticalTransition": 0.014988
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.991626,
+          "entropy": 0.069807,
+          "horizontalTransition": 0.009274,
+          "verticalTransition": 0.010777
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.996135,
+          "entropy": 0.036542,
+          "horizontalTransition": 0.005161,
+          "verticalTransition": 0.005037
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.998148,
+          "entropy": 0.019478,
+          "horizontalTransition": 0.0025,
+          "verticalTransition": 0.002643
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.0,
+          "entropy": 0.0,
+          "horizontalTransition": 0.0,
+          "verticalTransition": 0.0
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.0,
+          "entropy": 0.0,
+          "horizontalTransition": 0.0,
+          "verticalTransition": 0.0
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.0,
+          "entropy": 0.0,
+          "horizontalTransition": 0.0,
+          "verticalTransition": 0.0
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.0,
+          "entropy": 0.0,
+          "horizontalTransition": 0.0,
+          "verticalTransition": 0.0
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 4e-05,
+          "entropy": 0.000646,
+          "horizontalTransition": 8.1e-05,
+          "verticalTransition": 8.3e-05
+        }
+      ],
+      "lowBitSignature": "b0=0.99|b1=0.99|b2=1.00|b3=1.00",
+      "thresholdSignature": "t64=0.00|t96=0.00|t128=0.00|t160=0.00|t192=0.00",
+      "maxLowBitDensityAbsZ": 1.457535,
+      "maxLowBitEntropyAbsZ": 1.660922,
+      "maxLowBitTransitionAbsZ": 1.451106,
+      "maxThresholdDarkRatioAbsZ": 1.410966,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "slot0_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "visualState": "N",
+      "kind": "overdose_slot",
+      "box": [
+        294.0,
+        2176.81,
+        538.5697177074414,
+        3023.73
+      ],
+      "width": 244.569718,
+      "height": 846.92,
+      "meanLuminance": 239.788757,
+      "stdLuminance": 55.104444,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.91763,
+          "entropy": 0.410475,
+          "horizontalTransition": 0.089056,
+          "verticalTransition": 0.090973
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.92068,
+          "entropy": 0.399777,
+          "horizontalTransition": 0.086496,
+          "verticalTransition": 0.08804
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.926979,
+          "entropy": 0.377098,
+          "horizontalTransition": 0.078837,
+          "verticalTransition": 0.080682
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.936303,
+          "entropy": 0.341948,
+          "horizontalTransition": 0.061688,
+          "verticalTransition": 0.065041
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.051042,
+          "entropy": 0.290807,
+          "horizontalTransition": 0.016916,
+          "verticalTransition": 0.017041
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.053567,
+          "entropy": 0.301361,
+          "horizontalTransition": 0.017206,
+          "verticalTransition": 0.017253
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.056584,
+          "entropy": 0.313732,
+          "horizontalTransition": 0.017705,
+          "verticalTransition": 0.017455
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.0612,
+          "entropy": 0.332192,
+          "horizontalTransition": 0.018174,
+          "verticalTransition": 0.01789
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.068858,
+          "entropy": 0.361646,
+          "horizontalTransition": 0.018735,
+          "verticalTransition": 0.018565
+        }
+      ],
+      "lowBitSignature": "b0=0.92|b1=0.92|b2=0.93|b3=0.94",
+      "thresholdSignature": "t64=0.05|t96=0.05|t128=0.06|t160=0.06|t192=0.07",
+      "maxLowBitDensityAbsZ": 0.761613,
+      "maxLowBitEntropyAbsZ": 0.531193,
+      "maxLowBitTransitionAbsZ": 0.778634,
+      "maxThresholdDarkRatioAbsZ": 0.590987,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "slot1_V",
+      "phrase": "C9 projected OVERDOSE slot V",
+      "visualState": "N",
+      "kind": "overdose_slot",
+      "box": [
+        538.5697177074414,
+        2176.81,
+        783.0000000000016,
+        3023.73
+      ],
+      "width": 244.430282,
+      "height": 846.92,
+      "meanLuminance": 225.797511,
+      "stdLuminance": 73.608486,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.826727,
+          "entropy": 0.665138,
+          "horizontalTransition": 0.188751,
+          "verticalTransition": 0.191291
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.834638,
+          "entropy": 0.646984,
+          "horizontalTransition": 0.185443,
+          "verticalTransition": 0.187701
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.849251,
+          "entropy": 0.611712,
+          "horizontalTransition": 0.167242,
+          "verticalTransition": 0.169743
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.869883,
+          "entropy": 0.557759,
+          "horizontalTransition": 0.132606,
+          "verticalTransition": 0.135692
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.097867,
+          "entropy": 0.462198,
+          "horizontalTransition": 0.03676,
+          "verticalTransition": 0.037389
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.102174,
+          "entropy": 0.475848,
+          "horizontalTransition": 0.037188,
+          "verticalTransition": 0.03767
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.107278,
+          "entropy": 0.491652,
+          "horizontalTransition": 0.037688,
+          "verticalTransition": 0.038067
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.116119,
+          "entropy": 0.5181,
+          "horizontalTransition": 0.038407,
+          "verticalTransition": 0.038842
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.129836,
+          "entropy": 0.556989,
+          "horizontalTransition": 0.039529,
+          "verticalTransition": 0.040073
+        }
+      ],
+      "lowBitSignature": "b0=0.83|b1=0.83|b2=0.85|b3=0.87",
+      "thresholdSignature": "t64=0.10|t96=0.10|t128=0.11|t160=0.12|t192=0.13",
+      "maxLowBitDensityAbsZ": 0.094042,
+      "maxLowBitEntropyAbsZ": 0.323414,
+      "maxLowBitTransitionAbsZ": 0.092017,
+      "maxThresholdDarkRatioAbsZ": 0.184839,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "slot2_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "visualState": "N",
+      "kind": "overdose_slot",
+      "box": [
+        783.0000000000016,
+        2176.81,
+        1027.569717707443,
+        3023.73
+      ],
+      "width": 244.569718,
+      "height": 846.92,
+      "meanLuminance": 222.844411,
+      "stdLuminance": 77.587457,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.831718,
+          "entropy": 0.653759,
+          "horizontalTransition": 0.18235,
+          "verticalTransition": 0.185705
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.836287,
+          "entropy": 0.64312,
+          "horizontalTransition": 0.177023,
+          "verticalTransition": 0.179582
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.848748,
+          "entropy": 0.612964,
+          "horizontalTransition": 0.164268,
+          "verticalTransition": 0.165808
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.866101,
+          "entropy": 0.568034,
+          "horizontalTransition": 0.130577,
+          "verticalTransition": 0.133396
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.111683,
+          "entropy": 0.504973,
+          "horizontalTransition": 0.034238,
+          "verticalTransition": 0.035529
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.11551,
+          "entropy": 0.516314,
+          "horizontalTransition": 0.034432,
+          "verticalTransition": 0.035567
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.120256,
+          "entropy": 0.530097,
+          "horizontalTransition": 0.034742,
+          "verticalTransition": 0.03605
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.128256,
+          "entropy": 0.552635,
+          "horizontalTransition": 0.035409,
+          "verticalTransition": 0.036995
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.141151,
+          "entropy": 0.587246,
+          "horizontalTransition": 0.036353,
+          "verticalTransition": 0.037931
+        }
+      ],
+      "lowBitSignature": "b0=0.83|b1=0.84|b2=0.85|b3=0.87",
+      "thresholdSignature": "t64=0.11|t96=0.12|t128=0.12|t160=0.13|t192=0.14",
+      "maxLowBitDensityAbsZ": 0.114359,
+      "maxLowBitEntropyAbsZ": 0.312553,
+      "maxLowBitTransitionAbsZ": 0.041043,
+      "maxThresholdDarkRatioAbsZ": 0.400179,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "slot3_R",
+      "phrase": "C9 projected OVERDOSE slot R",
+      "visualState": "N",
+      "kind": "overdose_slot",
+      "box": [
+        1027.569717707443,
+        2176.81,
+        1271.9999999999968,
+        3023.73
+      ],
+      "width": 244.430282,
+      "height": 846.92,
+      "meanLuminance": 218.880301,
+      "stdLuminance": 78.128047,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.802417,
+          "entropy": 0.717067,
+          "horizontalTransition": 0.208477,
+          "verticalTransition": 0.214292
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.812995,
+          "entropy": 0.695164,
+          "horizontalTransition": 0.199246,
+          "verticalTransition": 0.205252
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.827714,
+          "entropy": 0.662908,
+          "horizontalTransition": 0.182892,
+          "verticalTransition": 0.188946
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.846319,
+          "entropy": 0.618977,
+          "horizontalTransition": 0.147638,
+          "verticalTransition": 0.155873
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.112993,
+          "entropy": 0.508878,
+          "horizontalTransition": 0.036197,
+          "verticalTransition": 0.038067
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.118688,
+          "entropy": 0.525578,
+          "horizontalTransition": 0.036503,
+          "verticalTransition": 0.038368
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.124925,
+          "entropy": 0.543354,
+          "horizontalTransition": 0.037081,
+          "verticalTransition": 0.038823
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.15086,
+          "entropy": 0.611989,
+          "horizontalTransition": 0.045117,
+          "verticalTransition": 0.051477
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.180879,
+          "entropy": 0.681997,
+          "horizontalTransition": 0.035754,
+          "verticalTransition": 0.039375
+        }
+      ],
+      "lowBitSignature": "b0=0.80|b1=0.81|b2=0.83|b3=0.85",
+      "thresholdSignature": "t64=0.11|t96=0.12|t128=0.12|t160=0.15|t192=0.18",
+      "maxLowBitDensityAbsZ": 0.349311,
+      "maxLowBitEntropyAbsZ": 0.497679,
+      "maxLowBitTransitionAbsZ": 0.269232,
+      "maxThresholdDarkRatioAbsZ": 0.743763,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "slot4_D",
+      "phrase": "C9 projected OVERDOSE slot D",
+      "visualState": "N",
+      "kind": "overdose_slot",
+      "box": [
+        1271.9999999999968,
+        2176.81,
+        1516.5697177074383,
+        3023.73
+      ],
+      "width": 244.569718,
+      "height": 846.92,
+      "meanLuminance": 222.835299,
+      "stdLuminance": 70.482541,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.804939,
+          "entropy": 0.711939,
+          "horizontalTransition": 0.202005,
+          "verticalTransition": 0.210339
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.81823,
+          "entropy": 0.683934,
+          "horizontalTransition": 0.192686,
+          "verticalTransition": 0.198668
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.832827,
+          "entropy": 0.651198,
+          "horizontalTransition": 0.178571,
+          "verticalTransition": 0.183563
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.849789,
+          "entropy": 0.610368,
+          "horizontalTransition": 0.143573,
+          "verticalTransition": 0.151749
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.085526,
+          "entropy": 0.421358,
+          "horizontalTransition": 0.033764,
+          "verticalTransition": 0.034047
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.091218,
+          "entropy": 0.440521,
+          "horizontalTransition": 0.033924,
+          "verticalTransition": 0.034028
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.097434,
+          "entropy": 0.460808,
+          "horizontalTransition": 0.034679,
+          "verticalTransition": 0.035017
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.140139,
+          "entropy": 0.584603,
+          "horizontalTransition": 0.049393,
+          "verticalTransition": 0.059792
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.183924,
+          "entropy": 0.688587,
+          "horizontalTransition": 0.031945,
+          "verticalTransition": 0.035374
+        }
+      ],
+      "lowBitSignature": "b0=0.80|b1=0.82|b2=0.83|b3=0.85",
+      "thresholdSignature": "t64=0.09|t96=0.09|t128=0.10|t160=0.14|t192=0.18",
+      "maxLowBitDensityAbsZ": 0.308098,
+      "maxLowBitEntropyAbsZ": 0.48047,
+      "maxLowBitTransitionAbsZ": 0.223239,
+      "maxThresholdDarkRatioAbsZ": 0.780045,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "slot5_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "visualState": "N",
+      "kind": "overdose_slot",
+      "box": [
+        1516.5697177074383,
+        2176.81,
+        1760.9999999999984,
+        3023.73
+      ],
+      "width": 244.430282,
+      "height": 846.92,
+      "meanLuminance": 235.744537,
+      "stdLuminance": 54.985265,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.890839,
+          "entropy": 0.497379,
+          "horizontalTransition": 0.10787,
+          "verticalTransition": 0.113683
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.899404,
+          "entropy": 0.470882,
+          "horizontalTransition": 0.10309,
+          "verticalTransition": 0.107497
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.907151,
+          "entropy": 0.44591,
+          "horizontalTransition": 0.094961,
+          "verticalTransition": 0.098448
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.914007,
+          "entropy": 0.422952,
+          "horizontalTransition": 0.078389,
+          "verticalTransition": 0.083648
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.047264,
+          "entropy": 0.27466,
+          "horizontalTransition": 0.015139,
+          "verticalTransition": 0.014824
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.050472,
+          "entropy": 0.2884,
+          "horizontalTransition": 0.015032,
+          "verticalTransition": 0.014858
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.053424,
+          "entropy": 0.300767,
+          "horizontalTransition": 0.015421,
+          "verticalTransition": 0.015362
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.088132,
+          "entropy": 0.430203,
+          "horizontalTransition": 0.029103,
+          "verticalTransition": 0.038251
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.121693,
+          "entropy": 0.534207,
+          "horizontalTransition": 0.011947,
+          "verticalTransition": 0.01384
+        }
+      ],
+      "lowBitSignature": "b0=0.89|b1=0.90|b2=0.91|b3=0.91",
+      "thresholdSignature": "t64=0.05|t96=0.05|t128=0.05|t160=0.09|t192=0.12",
+      "maxLowBitDensityAbsZ": 0.542844,
+      "maxLowBitEntropyAbsZ": 0.276684,
+      "maxLowBitTransitionAbsZ": 0.622412,
+      "maxThresholdDarkRatioAbsZ": 0.603872,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "slot6_S",
+      "phrase": "C9 projected OVERDOSE slot S",
+      "visualState": "N",
+      "kind": "overdose_slot",
+      "box": [
+        1760.9999999999984,
+        2176.81,
+        2005.5697177074398,
+        3023.73
+      ],
+      "width": 244.569718,
+      "height": 846.92,
+      "meanLuminance": 253.033761,
+      "stdLuminance": 17.912079,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.982604,
+          "entropy": 0.126561,
+          "horizontalTransition": 0.017714,
+          "verticalTransition": 0.018044
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.985558,
+          "entropy": 0.108979,
+          "horizontalTransition": 0.014695,
+          "verticalTransition": 0.014435
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.989316,
+          "entropy": 0.085291,
+          "horizontalTransition": 0.010853,
+          "verticalTransition": 0.011029
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.990815,
+          "entropy": 0.07534,
+          "horizontalTransition": 0.007664,
+          "verticalTransition": 0.008593
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.004217,
+          "entropy": 0.039338,
+          "horizontalTransition": 0.002071,
+          "verticalTransition": 0.001944
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.004694,
+          "entropy": 0.043061,
+          "horizontalTransition": 0.001877,
+          "verticalTransition": 0.001785
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.0052,
+          "entropy": 0.046933,
+          "horizontalTransition": 0.001732,
+          "verticalTransition": 0.001636
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.008578,
+          "entropy": 0.071209,
+          "horizontalTransition": 0.003155,
+          "verticalTransition": 0.004004
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.01305,
+          "entropy": 0.100392,
+          "horizontalTransition": 0.001263,
+          "verticalTransition": 0.001172
+        }
+      ],
+      "lowBitSignature": "b0=0.98|b1=0.99|b2=0.99|b3=0.99",
+      "thresholdSignature": "t64=0.00|t96=0.00|t128=0.01|t160=0.01|t192=0.01",
+      "maxLowBitDensityAbsZ": 1.386783,
+      "maxLowBitEntropyAbsZ": 1.495359,
+      "maxLowBitTransitionAbsZ": 1.395796,
+      "maxThresholdDarkRatioAbsZ": 1.288273,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    },
+    {
+      "shortId": "slot7_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "visualState": "N",
+      "kind": "overdose_slot",
+      "box": [
+        2005.5697177074398,
+        2176.81,
+        2250.0,
+        3023.73
+      ],
+      "width": 244.430282,
+      "height": 846.92,
+      "meanLuminance": 251.366278,
+      "stdLuminance": 28.678597,
+      "lowBitPlanes": [
+        {
+          "bit": 0,
+          "oneRatio": 0.980887,
+          "entropy": 0.13643,
+          "horizontalTransition": 0.020945,
+          "verticalTransition": 0.020351
+        },
+        {
+          "bit": 1,
+          "oneRatio": 0.983723,
+          "entropy": 0.119994,
+          "horizontalTransition": 0.017063,
+          "verticalTransition": 0.017047
+        },
+        {
+          "bit": 2,
+          "oneRatio": 0.987216,
+          "entropy": 0.098729,
+          "horizontalTransition": 0.012219,
+          "verticalTransition": 0.013225
+        },
+        {
+          "bit": 3,
+          "oneRatio": 0.988571,
+          "entropy": 0.090124,
+          "horizontalTransition": 0.008668,
+          "verticalTransition": 0.009161
+        }
+      ],
+      "thresholdPlanes": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.013379,
+          "entropy": 0.102441,
+          "horizontalTransition": 0.001108,
+          "verticalTransition": 0.001327
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.01379,
+          "entropy": 0.104984,
+          "horizontalTransition": 0.000904,
+          "verticalTransition": 0.001192
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.014148,
+          "entropy": 0.107183,
+          "horizontalTransition": 0.000913,
+          "verticalTransition": 0.001134
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.014748,
+          "entropy": 0.110838,
+          "horizontalTransition": 0.001108,
+          "verticalTransition": 0.00125
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.015561,
+          "entropy": 0.115733,
+          "horizontalTransition": 0.000996,
+          "verticalTransition": 0.001356
+        }
+      ],
+      "lowBitSignature": "b0=0.98|b1=0.98|b2=0.99|b3=0.99",
+      "thresholdSignature": "t64=0.01|t96=0.01|t128=0.01|t160=0.01|t192=0.02",
+      "maxLowBitDensityAbsZ": 1.364995,
+      "maxLowBitEntropyAbsZ": 1.450842,
+      "maxLowBitTransitionAbsZ": 1.379247,
+      "maxThresholdDarkRatioAbsZ": 1.22603,
+      "lowBitOutlier": false,
+      "thresholdOutlier": false
+    }
+  ],
+  "decision": {
+    "currentScanLuminanceBitplaneGate": "current_scan_luminance_bitplane_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Low-order luminance bit planes and simple threshold planes show active-box contrast, but the active low-bit signatures are mixed and do not form a shared carrier. Threshold-plane contrast is visible ink/highlight behavior, and no source-backed R3 unit/order/transform cue licenses this as a selector.",
+    "nextMove": "Do not pursue current-scan low-bit or threshold-plane tuning. Continue with original-layout/physical source validation or raw clue wording that names the missing unit, order, or transform."
+  },
+  "sheet": "analysis_outputs/source_audit/current_scan_luminance_bitplane_gate/current_scan_luminance_bitplane_gate_sheet.jpg",
+  "fingerprint": "active=4|controls=16|slots=8|bits=0,1,2,3|thresholds=64,96,128,160,192|activeLowBitOutliers=4|activeThresholdOutliers=4|allFourLowBit=1|allFourThreshold=1|sharedCarrier=0|hiddenCandidate=0|commonLowBit=mixed|controlCommon=0|slotCommon=0|maxLowBitZ=4.62/1.81/1.50|maxThresholdZ=10.15/2.17/1.29|sourceR3=0|triggers=0/9|selectors=0"
+}

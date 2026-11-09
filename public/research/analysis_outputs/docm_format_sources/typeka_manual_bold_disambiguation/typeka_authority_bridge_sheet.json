@@ -1,0 +1,209 @@
+{
+  "createdAt": "2026-05-20T14:11:05",
+  "scope": "visual bridge from page-76 priority crops to DOCM Typeka/bold/highlight authority; no key derivation",
+  "sheet": "analysis_outputs/docm_format_sources/typeka_manual_bold_disambiguation/typeka_authority_bridge_sheet.jpg",
+  "sourceAudit": "analysis_outputs/docm_format_sources/typeka_manual_bold_disambiguation/typeka_manual_bold_disambiguation.json",
+  "panels": [
+    {
+      "id": "L25_should_sell",
+      "crop": "analysis_outputs/source_audit/page76_priority_crop_pack/L25_should_sell.jpg",
+      "title": "L25: $1 billion / should sell",
+      "targetIds": [
+        "one_billion",
+        "should_sell"
+      ],
+      "summary": "$1 billion is DOCM-bold + black-highlighted; Markdown missed it. should sell is regular.",
+      "targets": [
+        {
+          "id": "one_billion",
+          "phrase": "$1 billion",
+          "docmDominantFont": "Typeka",
+          "docmBoldFraction": 1.0,
+          "docmMixFraction": 0.0,
+          "docmHighlights": {
+            "black": 10
+          },
+          "markdownBoldFraction": 0.0
+        },
+        {
+          "id": "should_sell",
+          "phrase": "should sell",
+          "docmDominantFont": "Typeka",
+          "docmBoldFraction": 0.0,
+          "docmMixFraction": 0.0,
+          "docmHighlights": {
+            "none": 11
+          },
+          "markdownBoldFraction": 0.0
+        }
+      ]
+    },
+    {
+      "id": "L27_G5_pair",
+      "crop": "analysis_outputs/source_audit/page76_priority_crop_pack/L27_G5_pair.jpg",
+      "title": "L27/G5: Volcano Bonds / IMF loan",
+      "targetIds": [
+        "volcano_bonds",
+        "imf_loan"
+      ],
+      "summary": "Volcano Bonds is DOCM-bold + black-highlighted; Markdown missed it.",
+      "targets": [
+        {
+          "id": "volcano_bonds",
+          "phrase": "Volcano Bonds",
+          "docmDominantFont": "Typeka",
+          "docmBoldFraction": 1.0,
+          "docmMixFraction": 0.0,
+          "docmHighlights": {
+            "black": 13
+          },
+          "markdownBoldFraction": 0.0
+        },
+        {
+          "id": "imf_loan",
+          "phrase": "IMF loan",
+          "docmDominantFont": "Typeka",
+          "docmBoldFraction": 0.889,
+          "docmMixFraction": 0.0,
+          "docmHighlights": {
+            "none": 8
+          },
+          "markdownBoldFraction": 0.7
+        }
+      ]
+    },
+    {
+      "id": "L26_L29_source_band",
+      "crop": "analysis_outputs/source_audit/page76_priority_crop_pack/L26_L29_source_band.jpg",
+      "title": "L26-L29: source band",
+      "targetIds": [
+        "future_bitcoin_earnings",
+        "tagged_mike",
+        "novogratz"
+      ],
+      "summary": "Future earnings is regular; Mike/Novogratz contains Typeka Mix nearby context.",
+      "targets": [
+        {
+          "id": "future_bitcoin_earnings",
+          "phrase": "future bitcoin earnings",
+          "docmDominantFont": "Typeka",
+          "docmBoldFraction": 0.0,
+          "docmMixFraction": 0.0,
+          "docmHighlights": {
+            "none": 23
+          },
+          "markdownBoldFraction": 0.0
+        },
+        {
+          "id": "tagged_mike",
+          "phrase": "I tagged Mike",
+          "docmDominantFont": "Typeka",
+          "docmBoldFraction": 0.0,
+          "docmMixFraction": 0.308,
+          "docmHighlights": {
+            "none": 13
+          },
+          "markdownBoldFraction": 0.154
+        },
+        {
+          "id": "novogratz",
+          "phrase": "Novogratz",
+          "docmDominantFont": "Typeka Mix",
+          "docmBoldFraction": 0.0,
+          "docmMixFraction": 1.0,
+          "docmHighlights": {
+            "none": 9
+          },
+          "markdownBoldFraction": 0.333
+        }
+      ]
+    },
+    {
+      "id": "L32_O5_primary",
+      "crop": "analysis_outputs/source_audit/page76_priority_crop_pack/L32_O5_primary.jpg",
+      "title": "L32/O5: shitcoiner at heart",
+      "targetIds": [
+        "shitcoiner_heart"
+      ],
+      "summary": "O5 is DOCM-bold + yellow-highlighted and also Markdown-bold.",
+      "targets": [
+        {
+          "id": "shitcoiner_heart",
+          "phrase": "shitcoiner at heart",
+          "docmDominantFont": "Typeka",
+          "docmBoldFraction": 1.0,
+          "docmMixFraction": 0.0,
+          "docmHighlights": {
+            "yellow": 19
+          },
+          "markdownBoldFraction": 1.0
+        }
+      ]
+    },
+    {
+      "id": "L25_L32_frame_context",
+      "crop": "analysis_outputs/source_audit/page76_priority_crop_pack/L25_L32_frame_context.jpg",
+      "title": "Frame context: should sell -> Volcano Bonds -> O5",
+      "targetIds": [
+        "should_sell",
+        "volcano_bonds",
+        "shitcoiner_heart",
+        "trust_that_guy"
+      ],
+      "summary": "The compact p78-frame benchmark is R-K-Y; Typeka Mix lands nearby, not on the G5/O5 pair.",
+      "targets": [
+        {
+          "id": "should_sell",
+          "phrase": "should sell",
+          "docmDominantFont": "Typeka",
+          "docmBoldFraction": 0.0,
+          "docmMixFraction": 0.0,
+          "docmHighlights": {
+            "none": 11
+          },
+          "markdownBoldFraction": 0.0
+        },
+        {
+          "id": "volcano_bonds",
+          "phrase": "Volcano Bonds",
+          "docmDominantFont": "Typeka",
+          "docmBoldFraction": 1.0,
+          "docmMixFraction": 0.0,
+          "docmHighlights": {
+            "black": 13
+          },
+          "markdownBoldFraction": 0.0
+        },
+        {
+          "id": "shitcoiner_heart",
+          "phrase": "shitcoiner at heart",
+          "docmDominantFont": "Typeka",
+          "docmBoldFraction": 1.0,
+          "docmMixFraction": 0.0,
+          "docmHighlights": {
+            "yellow": 19
+          },
+          "markdownBoldFraction": 1.0
+        },
+        {
+          "id": "trust_that_guy",
+          "phrase": "I don't really trust that guy",
+          "docmDominantFont": "Typeka Mix",
+          "docmBoldFraction": 0.0,
+          "docmMixFraction": 1.0,
+          "docmHighlights": {
+            "none": 29
+          },
+          "markdownBoldFraction": 0.31
+        }
+      ]
+    }
+  ],
+  "assessment": [
+    "The active visual targets should be inspected with DOCM font/highlight states, not the old Markdown-bold layer.",
+    "$1 billion and Volcano Bonds are bold/black in DOCM even though Markdown did not mark them bold.",
+    "Typeka Mix is real but appears as nearby contextual styling, not as the G5/O5 target style."
+  ],
+  "decision": "Use this sheet next to the 3D viewer and page-76 crop pack when checking typography around the lower corridor.",
+  "nextMove": "Continue source-gated geometry validation; do not reopen font extraction without a clue naming font or selected units."
+}

@@ -1,0 +1,588 @@
+{
+  "createdAt": "2026-05-24T08:11:16",
+  "scope": "Target-side context words in the valid 75->76 line-band trace classified against extraction grammar.",
+  "inputs": {
+    "validLeafLineBandTrace": "analysis_outputs/source_audit/current_scan_valid_leaf_line_band_trace/current_scan_valid_leaf_line_band_trace.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "decision": "valid_leaf_target_context_instruction_no_selector",
+  "summary": {
+    "decision": "valid_leaf_target_context_instruction_no_selector",
+    "traceRowCount": 8,
+    "targetContextCarrierRowCount": 6,
+    "targetContextTerms": [
+      "bitcoin",
+      "bukele",
+      "imf",
+      "mine",
+      "sell",
+      "volcano"
+    ],
+    "phraseContextTerms": [
+      "billion",
+      "bond",
+      "dip",
+      "heart",
+      "shitcoiner",
+      "volcano"
+    ],
+    "targetContextTargets": [
+      "O4",
+      "B4",
+      "G5"
+    ],
+    "targetOnlyContextCarrierRowCount": 6,
+    "sourceBackedContextCarrierRowCount": 1,
+    "sourceBackedContextTerms": [
+      "bitcoin"
+    ],
+    "actionCarrierCount": 0,
+    "unitCarrierCount": 0,
+    "orderCarrierCount": 0,
+    "instructionCandidateCount": 0,
+    "sourceBackedInstructionCandidateCount": 0,
+    "allFourActiveTargetsCoveredByTargetContext": false,
+    "allFourActiveTargetsCoveredByInstructionCandidates": false,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0,
+    "fingerprint": "rows=8|ctxRows=6|lineTerms=bitcoin,bukele,imf,mine,sell,volcano|phraseTerms=billion,bond,dip,heart,shitcoiner,volcano|targetOnly=6|sourceCtx=1|sourceCtxTerms=bitcoin|action=0|unit=0|order=0|instr=0|sourceInstr=0|all4ctx=0|all4instr=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "fingerprint": "rows=8|ctxRows=6|lineTerms=bitcoin,bukele,imf,mine,sell,volcano|phraseTerms=billion,bond,dip,heart,shitcoiner,volcano|targetOnly=6|sourceCtx=1|sourceCtxTerms=bitcoin|action=0|unit=0|order=0|instr=0|sourceInstr=0|all4ctx=0|all4instr=0|sourceR3=0|triggers=0/9|selectors=0",
+  "targetContextRows": [
+    {
+      "mode": "valid_75_to_76_natural",
+      "target": "O4",
+      "phrase": "buying the dip",
+      "phraseContextTerms": [
+        "dip"
+      ],
+      "targetLineIndexes": [
+        23,
+        24,
+        25
+      ],
+      "targetText": "trolling the International Monetary Fund (IMF) on Twitter? / He's taunting them, telling them he's ByiiREeraipy\" / I tweeted President Nayib Bukele when he announced",
+      "sourceLineIndexes": [
+        19,
+        20,
+        21
+      ],
+      "sourceText": "to cash in by riding Bitcoins coattails that give it a bad name. / Vitalik Buterin came up with the (MRERREIGStY epithet. / Now he's slinging proof of stake at the mEthereum lab.",
+      "targetContextTerms": [
+        "bukele",
+        "imf"
+      ],
+      "targetOnlyContextTerms": [
+        "bukele",
+        "imf"
+      ],
+      "sourceContextTerms": [
+        "bitcoin"
+      ],
+      "sourceBackedContextTerms": [],
+      "actionTerms": [],
+      "unitTerms": [],
+      "orderTerms": [],
+      "instructionCandidate": false,
+      "sourceBackedInstructionCandidate": false,
+      "targetLineHitCount": 3,
+      "sourceLineHitCount": 3
+    },
+    {
+      "mode": "valid_75_to_76_natural",
+      "target": "B4",
+      "phrase": "$1 billion",
+      "phraseContextTerms": [
+        "billion"
+      ],
+      "targetLineIndexes": [
+        26,
+        27,
+        28
+      ],
+      "targetText": "he was going to tap his nation's volcanoes to mine / eis in bitcoin that he should sell / billions worth of future bitcoin earnings",
+      "sourceLineIndexes": [],
+      "sourceText": "",
+      "targetContextTerms": [
+        "bitcoin",
+        "mine",
+        "sell",
+        "volcano"
+      ],
+      "targetOnlyContextTerms": [
+        "bitcoin",
+        "mine",
+        "sell",
+        "volcano"
+      ],
+      "sourceContextTerms": [],
+      "sourceBackedContextTerms": [],
+      "actionTerms": [],
+      "unitTerms": [],
+      "orderTerms": [],
+      "instructionCandidate": false,
+      "sourceBackedInstructionCandidate": false,
+      "targetLineHitCount": 3,
+      "sourceLineHitCount": 0
+    },
+    {
+      "mode": "valid_75_to_76_natural",
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "phraseContextTerms": [
+        "bond",
+        "volcano"
+      ],
+      "targetLineIndexes": [
+        28,
+        29,
+        30
+      ],
+      "targetText": "billions worth of future bitcoin earnings / collateralized to pay off the IMF / loan and get rid of those leeches. I tagged Mike",
+      "sourceLineIndexes": [
+        25,
+        26
+      ],
+      "sourceText": "the BSR of the whole Satoshi experience. / You wouldn't be digging blindly with your bare",
+      "targetContextTerms": [
+        "bitcoin",
+        "imf"
+      ],
+      "targetOnlyContextTerms": [
+        "bitcoin",
+        "imf"
+      ],
+      "sourceContextTerms": [
+        "satoshi"
+      ],
+      "sourceBackedContextTerms": [],
+      "actionTerms": [],
+      "unitTerms": [],
+      "orderTerms": [],
+      "instructionCandidate": false,
+      "sourceBackedInstructionCandidate": false,
+      "targetLineHitCount": 3,
+      "sourceLineHitCount": 2
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "target": "O4",
+      "phrase": "buying the dip",
+      "phraseContextTerms": [
+        "dip"
+      ],
+      "targetLineIndexes": [
+        23,
+        24,
+        25
+      ],
+      "targetText": "trolling the International Monetary Fund (IMF) on Twitter? / He's taunting them, telling them he's ByiiREeraipy\" / I tweeted President Nayib Bukele when he announced",
+      "sourceLineIndexes": [
+        19,
+        20,
+        21
+      ],
+      "sourceText": "to cash in by riding Bitcoins coattails that give it a bad name. / Vitalik Buterin came up with the (MRERREIGStY epithet. / Now he's slinging proof of stake at the mEthereum lab.",
+      "targetContextTerms": [
+        "bukele",
+        "imf"
+      ],
+      "targetOnlyContextTerms": [
+        "bukele",
+        "imf"
+      ],
+      "sourceContextTerms": [
+        "bitcoin"
+      ],
+      "sourceBackedContextTerms": [],
+      "actionTerms": [],
+      "unitTerms": [],
+      "orderTerms": [],
+      "instructionCandidate": false,
+      "sourceBackedInstructionCandidate": false,
+      "targetLineHitCount": 3,
+      "sourceLineHitCount": 3
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "target": "B4",
+      "phrase": "$1 billion",
+      "phraseContextTerms": [
+        "billion"
+      ],
+      "targetLineIndexes": [
+        26,
+        27,
+        28
+      ],
+      "targetText": "he was going to tap his nation's volcanoes to mine / eis in bitcoin that he should sell / billions worth of future bitcoin earnings",
+      "sourceLineIndexes": [],
+      "sourceText": "",
+      "targetContextTerms": [
+        "bitcoin",
+        "mine",
+        "sell",
+        "volcano"
+      ],
+      "targetOnlyContextTerms": [
+        "bitcoin",
+        "mine",
+        "sell",
+        "volcano"
+      ],
+      "sourceContextTerms": [],
+      "sourceBackedContextTerms": [],
+      "actionTerms": [],
+      "unitTerms": [],
+      "orderTerms": [],
+      "instructionCandidate": false,
+      "sourceBackedInstructionCandidate": false,
+      "targetLineHitCount": 3,
+      "sourceLineHitCount": 0
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "phraseContextTerms": [
+        "bond",
+        "volcano"
+      ],
+      "targetLineIndexes": [
+        28,
+        29,
+        30
+      ],
+      "targetText": "billions worth of future bitcoin earnings / collateralized to pay off the IMF / loan and get rid of those leeches. I tagged Mike",
+      "sourceLineIndexes": [
+        24,
+        25,
+        26
+      ],
+      "sourceText": "Go Bitcoin Toxic Maximalist, / the BSR of the whole Satoshi experience. / You wouldn't be digging blindly with your bare",
+      "targetContextTerms": [
+        "bitcoin",
+        "imf"
+      ],
+      "targetOnlyContextTerms": [
+        "imf"
+      ],
+      "sourceContextTerms": [
+        "bitcoin",
+        "maximalist",
+        "satoshi",
+        "toxic"
+      ],
+      "sourceBackedContextTerms": [
+        "bitcoin"
+      ],
+      "actionTerms": [],
+      "unitTerms": [],
+      "orderTerms": [],
+      "instructionCandidate": false,
+      "sourceBackedInstructionCandidate": false,
+      "targetLineHitCount": 3,
+      "sourceLineHitCount": 3
+    }
+  ],
+  "allRows": [
+    {
+      "mode": "valid_75_to_76_natural",
+      "target": "O4",
+      "phrase": "buying the dip",
+      "phraseContextTerms": [
+        "dip"
+      ],
+      "targetLineIndexes": [
+        23,
+        24,
+        25
+      ],
+      "targetText": "trolling the International Monetary Fund (IMF) on Twitter? / He's taunting them, telling them he's ByiiREeraipy\" / I tweeted President Nayib Bukele when he announced",
+      "sourceLineIndexes": [
+        19,
+        20,
+        21
+      ],
+      "sourceText": "to cash in by riding Bitcoins coattails that give it a bad name. / Vitalik Buterin came up with the (MRERREIGStY epithet. / Now he's slinging proof of stake at the mEthereum lab.",
+      "targetContextTerms": [
+        "bukele",
+        "imf"
+      ],
+      "targetOnlyContextTerms": [
+        "bukele",
+        "imf"
+      ],
+      "sourceContextTerms": [
+        "bitcoin"
+      ],
+      "sourceBackedContextTerms": [],
+      "actionTerms": [],
+      "unitTerms": [],
+      "orderTerms": [],
+      "instructionCandidate": false,
+      "sourceBackedInstructionCandidate": false,
+      "targetLineHitCount": 3,
+      "sourceLineHitCount": 3
+    },
+    {
+      "mode": "valid_75_to_76_natural",
+      "target": "B4",
+      "phrase": "$1 billion",
+      "phraseContextTerms": [
+        "billion"
+      ],
+      "targetLineIndexes": [
+        26,
+        27,
+        28
+      ],
+      "targetText": "he was going to tap his nation's volcanoes to mine / eis in bitcoin that he should sell / billions worth of future bitcoin earnings",
+      "sourceLineIndexes": [],
+      "sourceText": "",
+      "targetContextTerms": [
+        "bitcoin",
+        "mine",
+        "sell",
+        "volcano"
+      ],
+      "targetOnlyContextTerms": [
+        "bitcoin",
+        "mine",
+        "sell",
+        "volcano"
+      ],
+      "sourceContextTerms": [],
+      "sourceBackedContextTerms": [],
+      "actionTerms": [],
+      "unitTerms": [],
+      "orderTerms": [],
+      "instructionCandidate": false,
+      "sourceBackedInstructionCandidate": false,
+      "targetLineHitCount": 3,
+      "sourceLineHitCount": 0
+    },
+    {
+      "mode": "valid_75_to_76_natural",
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "phraseContextTerms": [
+        "bond",
+        "volcano"
+      ],
+      "targetLineIndexes": [
+        28,
+        29,
+        30
+      ],
+      "targetText": "billions worth of future bitcoin earnings / collateralized to pay off the IMF / loan and get rid of those leeches. I tagged Mike",
+      "sourceLineIndexes": [
+        25,
+        26
+      ],
+      "sourceText": "the BSR of the whole Satoshi experience. / You wouldn't be digging blindly with your bare",
+      "targetContextTerms": [
+        "bitcoin",
+        "imf"
+      ],
+      "targetOnlyContextTerms": [
+        "bitcoin",
+        "imf"
+      ],
+      "sourceContextTerms": [
+        "satoshi"
+      ],
+      "sourceBackedContextTerms": [],
+      "actionTerms": [],
+      "unitTerms": [],
+      "orderTerms": [],
+      "instructionCandidate": false,
+      "sourceBackedInstructionCandidate": false,
+      "targetLineHitCount": 3,
+      "sourceLineHitCount": 2
+    },
+    {
+      "mode": "valid_75_to_76_natural",
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "phraseContextTerms": [
+        "heart",
+        "shitcoiner"
+      ],
+      "targetLineIndexes": [
+        34
+      ],
+      "targetText": "Maybe because he's a siukbeodmensertslveaarty",
+      "sourceLineIndexes": [
+        29,
+        30
+      ],
+      "sourceText": "to. Nice, pleasant words from con men and shitcoiners / are easy listening for the gullible and unloved.",
+      "targetContextTerms": [],
+      "targetOnlyContextTerms": [],
+      "sourceContextTerms": [
+        "shitcoiner"
+      ],
+      "sourceBackedContextTerms": [],
+      "actionTerms": [],
+      "unitTerms": [],
+      "orderTerms": [],
+      "instructionCandidate": false,
+      "sourceBackedInstructionCandidate": false,
+      "targetLineHitCount": 1,
+      "sourceLineHitCount": 2
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "target": "O4",
+      "phrase": "buying the dip",
+      "phraseContextTerms": [
+        "dip"
+      ],
+      "targetLineIndexes": [
+        23,
+        24,
+        25
+      ],
+      "targetText": "trolling the International Monetary Fund (IMF) on Twitter? / He's taunting them, telling them he's ByiiREeraipy\" / I tweeted President Nayib Bukele when he announced",
+      "sourceLineIndexes": [
+        19,
+        20,
+        21
+      ],
+      "sourceText": "to cash in by riding Bitcoins coattails that give it a bad name. / Vitalik Buterin came up with the (MRERREIGStY epithet. / Now he's slinging proof of stake at the mEthereum lab.",
+      "targetContextTerms": [
+        "bukele",
+        "imf"
+      ],
+      "targetOnlyContextTerms": [
+        "bukele",
+        "imf"
+      ],
+      "sourceContextTerms": [
+        "bitcoin"
+      ],
+      "sourceBackedContextTerms": [],
+      "actionTerms": [],
+      "unitTerms": [],
+      "orderTerms": [],
+      "instructionCandidate": false,
+      "sourceBackedInstructionCandidate": false,
+      "targetLineHitCount": 3,
+      "sourceLineHitCount": 3
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "target": "B4",
+      "phrase": "$1 billion",
+      "phraseContextTerms": [
+        "billion"
+      ],
+      "targetLineIndexes": [
+        26,
+        27,
+        28
+      ],
+      "targetText": "he was going to tap his nation's volcanoes to mine / eis in bitcoin that he should sell / billions worth of future bitcoin earnings",
+      "sourceLineIndexes": [],
+      "sourceText": "",
+      "targetContextTerms": [
+        "bitcoin",
+        "mine",
+        "sell",
+        "volcano"
+      ],
+      "targetOnlyContextTerms": [
+        "bitcoin",
+        "mine",
+        "sell",
+        "volcano"
+      ],
+      "sourceContextTerms": [],
+      "sourceBackedContextTerms": [],
+      "actionTerms": [],
+      "unitTerms": [],
+      "orderTerms": [],
+      "instructionCandidate": false,
+      "sourceBackedInstructionCandidate": false,
+      "targetLineHitCount": 3,
+      "sourceLineHitCount": 0
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "phraseContextTerms": [
+        "bond",
+        "volcano"
+      ],
+      "targetLineIndexes": [
+        28,
+        29,
+        30
+      ],
+      "targetText": "billions worth of future bitcoin earnings / collateralized to pay off the IMF / loan and get rid of those leeches. I tagged Mike",
+      "sourceLineIndexes": [
+        24,
+        25,
+        26
+      ],
+      "sourceText": "Go Bitcoin Toxic Maximalist, / the BSR of the whole Satoshi experience. / You wouldn't be digging blindly with your bare",
+      "targetContextTerms": [
+        "bitcoin",
+        "imf"
+      ],
+      "targetOnlyContextTerms": [
+        "imf"
+      ],
+      "sourceContextTerms": [
+        "bitcoin",
+        "maximalist",
+        "satoshi",
+        "toxic"
+      ],
+      "sourceBackedContextTerms": [
+        "bitcoin"
+      ],
+      "actionTerms": [],
+      "unitTerms": [],
+      "orderTerms": [],
+      "instructionCandidate": false,
+      "sourceBackedInstructionCandidate": false,
+      "targetLineHitCount": 3,
+      "sourceLineHitCount": 3
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "phraseContextTerms": [
+        "heart",
+        "shitcoiner"
+      ],
+      "targetLineIndexes": [
+        34
+      ],
+      "targetText": "Maybe because he's a siukbeodmensertslveaarty",
+      "sourceLineIndexes": [
+        30
+      ],
+      "sourceText": "are easy listening for the gullible and unloved.",
+      "targetContextTerms": [],
+      "targetOnlyContextTerms": [],
+      "sourceContextTerms": [],
+      "sourceBackedContextTerms": [],
+      "actionTerms": [],
+      "unitTerms": [],
+      "orderTerms": [],
+      "instructionCandidate": false,
+      "sourceBackedInstructionCandidate": false,
+      "targetLineHitCount": 1,
+      "sourceLineHitCount": 1
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/valid_leaf_target_context_instruction_gate/valid_leaf_target_context_instruction_gate_sheet.jpg"
+}

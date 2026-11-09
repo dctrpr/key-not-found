@@ -1,0 +1,52 @@
+{
+  "createdAt": "2026-05-20T10:26:46",
+  "scope": "dry-run source validation gate on current canonical magazine.pdf baseline; no key derivation",
+  "gateSource": "analysis_outputs/source_audit/source_validation_gate/source_validation_gate.json",
+  "pdf": {
+    "project": "magazine.pdf",
+    "desktop": "private_inputs/Desktop/magazine.pdf",
+    "projectMd5": "2c454d800cf2971c1f86fd016f64b7a0",
+    "desktopMd5": "2c454d800cf2971c1f86fd016f64b7a0",
+    "byteIdentical": true
+  },
+  "results": [
+    {
+      "gate": "source_quality",
+      "status": "pass_baseline",
+      "evidence": "Project magazine.pdf md5=2c454d800cf2971c1f86fd016f64b7a0; desktop copy md5=2c454d800cf2971c1f86fd016f64b7a0; byte-identical=True. PDF placement report says full-bleed single 2544x3264 image per page.",
+      "block": null
+    },
+    {
+      "gate": "page76_priority_crops",
+      "status": "pass_baseline",
+      "evidence": "5/5 priority crops exist; O5/G5/frame context are baseline-visible.",
+      "block": null
+    },
+    {
+      "gate": "zero_hash0_hotspots",
+      "status": "pass_baseline",
+      "evidence": "8/8 trusted high-res zero/#0 crops exist; p77 baseline reads 100,000.",
+      "block": null
+    },
+    {
+      "gate": "p79_pill_geometry",
+      "status": "pass_baseline",
+      "evidence": "Trusted p79 lower-left pill-fragment count is 5; alternate OCR/PDF witness also normalizes to five fragments but is not geometry truth.",
+      "block": null
+    },
+    {
+      "gate": "p78_frame_exact_edge",
+      "status": "pass_baseline",
+      "evidence": "Repaired signature `should sell | Volcano Bonds | shitcoiner at heart` / `RKY`; exact+tri-contact stable dx=[-78, -38] dy=[-4, 20]; edge-touch frame=[1196.0, 2398.0, 2212.0, 2950.0].",
+      "block": null
+    },
+    {
+      "gate": "extraction_permission",
+      "status": "blocked",
+      "evidence": "No current-source or raw external clue names the extraction unit/order.",
+      "block": "Need explicit unit/order such as word, letter, line, edge, font state, first/last, or a new source geometry change that supplies one."
+    }
+  ],
+  "decision": "Current scan passes as canonical baseline, but extraction remains blocked. A future source must change/confirm benchmark geometry or name the extraction unit before key checks resume.",
+  "nextMove": "Use this dry-run as the expected baseline comparison for any future physical/original-layout/source material."
+}

@@ -1,0 +1,934 @@
+{
+  "createdAt": "2026-05-20T08:54:01",
+  "scope": "p78/p79/p80 graphic spill alignment inventory; no key derivation",
+  "manualObjectNote": "Object boxes are approximate visual annotations on the current high-res magazine scan.",
+  "objects": {
+    "p78": [
+      {
+        "id": "p78_x_left",
+        "label": "left X beside FUCK graphic",
+        "kind": "x",
+        "box": [
+          265,
+          2795,
+          370,
+          2898
+        ]
+      },
+      {
+        "id": "p78_x_right",
+        "label": "right X beside FUCK graphic",
+        "kind": "x",
+        "box": [
+          1070,
+          2775,
+          1170,
+          2870
+        ]
+      },
+      {
+        "id": "p78_fuck_spill",
+        "label": "FUCK / black spill graphic",
+        "kind": "spill",
+        "box": [
+          340,
+          2685,
+          985,
+          2905
+        ]
+      },
+      {
+        "id": "p78_pullquote_blob",
+        "label": "black pull-quote blob",
+        "kind": "blob",
+        "box": [
+          345,
+          2775,
+          1110,
+          3135
+        ]
+      }
+    ],
+    "p79": [
+      {
+        "id": "p79_wire_left_knot",
+        "label": "barbed-wire left knot",
+        "kind": "wire",
+        "box": [
+          55,
+          360,
+          190,
+          470
+        ]
+      },
+      {
+        "id": "p79_wire_right_knot",
+        "label": "barbed-wire right knot",
+        "kind": "wire",
+        "box": [
+          455,
+          120,
+          650,
+          275
+        ]
+      },
+      {
+        "id": "p79_wire_span",
+        "label": "barbed-wire diagonal span",
+        "kind": "wire-line",
+        "box": [
+          35,
+          0,
+          830,
+          500
+        ]
+      },
+      {
+        "id": "p79_pill_1",
+        "label": "pill 1",
+        "kind": "pill",
+        "box": [
+          145,
+          2370,
+          200,
+          2448
+        ]
+      },
+      {
+        "id": "p79_pill_2",
+        "label": "pill 2",
+        "kind": "pill",
+        "box": [
+          385,
+          2425,
+          460,
+          2482
+        ]
+      },
+      {
+        "id": "p79_pill_3",
+        "label": "pill 3",
+        "kind": "pill",
+        "box": [
+          575,
+          2575,
+          640,
+          2645
+        ]
+      },
+      {
+        "id": "p79_pill_4",
+        "label": "pill 4",
+        "kind": "pill",
+        "box": [
+          405,
+          2745,
+          470,
+          2818
+        ]
+      },
+      {
+        "id": "p79_pill_5",
+        "label": "pill 5",
+        "kind": "pill",
+        "box": [
+          158,
+          2930,
+          210,
+          3005
+        ]
+      },
+      {
+        "id": "p79_max_signature",
+        "label": "MAX KEISER signature",
+        "kind": "signature",
+        "box": [
+          930,
+          2790,
+          1460,
+          3175
+        ]
+      }
+    ],
+    "p80": [
+      {
+        "id": "p80_cap_5_symptom",
+        "label": "cap 5 SYMPTOM RELIEF",
+        "kind": "package",
+        "box": [
+          1580,
+          655,
+          1985,
+          1085
+        ]
+      },
+      {
+        "id": "p80_100_proof",
+        "label": "100% Proof of Work Liquid",
+        "kind": "package-text",
+        "box": [
+          970,
+          1845,
+          1395,
+          1990
+        ]
+      },
+      {
+        "id": "p80_volume_16",
+        "label": "16 FL OZ (473 mL)",
+        "kind": "package-text",
+        "box": [
+          870,
+          2470,
+          1305,
+          2575
+        ]
+      },
+      {
+        "id": "p80_symptoms",
+        "label": "NAUSEA/HEARTBURN/INDIGESTION/UPSET STOMACH/SHITCOINS",
+        "kind": "package-text",
+        "box": [
+          1470,
+          2315,
+          1910,
+          2625
+        ]
+      },
+      {
+        "id": "p80_shitcoins",
+        "label": "SHITCOINS",
+        "kind": "package-text",
+        "box": [
+          1540,
+          2548,
+          1865,
+          2622
+        ]
+      }
+    ]
+  },
+  "p78ToP79": {
+    "wireLine": {
+      "leftKnotCenter": [
+        122.5,
+        415.0
+      ],
+      "rightKnotCenter": [
+        552.5,
+        197.5
+      ],
+      "angleDeg": -26.83
+    },
+    "rows": [
+      {
+        "mode": "identity",
+        "xPairAngleDeg": -1.71,
+        "wireAngleDeg": -26.83,
+        "angleDeltaDeg": 25.12,
+        "leftXToWireLinePx": 2257.7,
+        "rightXToWireLinePx": 2598.5,
+        "fuckCenterToWireLinePx": 2367.5,
+        "nearestP79ForLeftX": [
+          {
+            "targetId": "p79_pill_4",
+            "targetLabel": "pill 4",
+            "targetKind": "pill",
+            "distancePx": 136.5
+          },
+          {
+            "targetId": "p79_pill_5",
+            "targetLabel": "pill 5",
+            "targetKind": "pill",
+            "distancePx": 180.2
+          },
+          {
+            "targetId": "p79_pill_3",
+            "targetLabel": "pill 3",
+            "targetKind": "pill",
+            "distancePx": 374.2
+          }
+        ],
+        "nearestP79ForRightX": [
+          {
+            "targetId": "p79_max_signature",
+            "targetLabel": "MAX KEISER signature",
+            "targetKind": "signature",
+            "distancePx": 176.7
+          },
+          {
+            "targetId": "p79_pill_3",
+            "targetLabel": "pill 3",
+            "targetKind": "pill",
+            "distancePx": 554.8
+          },
+          {
+            "targetId": "p79_pill_4",
+            "targetLabel": "pill 4",
+            "targetKind": "pill",
+            "distancePx": 683.7
+          }
+        ],
+        "nearestP79ForFuck": [
+          {
+            "targetId": "p79_pill_3",
+            "targetLabel": "pill 3",
+            "targetKind": "pill",
+            "distancePx": 193.0
+          },
+          {
+            "targetId": "p79_pill_4",
+            "targetLabel": "pill 4",
+            "targetKind": "pill",
+            "distancePx": 225.4
+          },
+          {
+            "targetId": "p79_pill_2",
+            "targetLabel": "pill 2",
+            "targetKind": "pill",
+            "distancePx": 417.4
+          }
+        ]
+      },
+      {
+        "mode": "hflip",
+        "xPairAngleDeg": -178.29,
+        "wireAngleDeg": -26.83,
+        "angleDeltaDeg": 28.54,
+        "leftXToWireLinePx": 3119.4,
+        "rightXToWireLinePx": 2735.8,
+        "fuckCenterToWireLinePx": 2917.7,
+        "nearestP79ForLeftX": [
+          {
+            "targetId": "p79_max_signature",
+            "targetLabel": "MAX KEISER signature",
+            "targetKind": "signature",
+            "distancePx": 1040.4
+          },
+          {
+            "targetId": "p79_pill_3",
+            "targetLabel": "pill 3",
+            "targetKind": "pill",
+            "distancePx": 1636.2
+          },
+          {
+            "targetId": "p79_pill_4",
+            "targetLabel": "pill 4",
+            "targetKind": "pill",
+            "distancePx": 1790.2
+          }
+        ],
+        "nearestP79ForRightX": [
+          {
+            "targetId": "p79_max_signature",
+            "targetLabel": "MAX KEISER signature",
+            "targetKind": "signature",
+            "distancePx": 279.4
+          },
+          {
+            "targetId": "p79_pill_3",
+            "targetLabel": "pill 3",
+            "targetKind": "pill",
+            "distancePx": 843.7
+          },
+          {
+            "targetId": "p79_pill_4",
+            "targetLabel": "pill 4",
+            "targetKind": "pill",
+            "distancePx": 987.4
+          }
+        ],
+        "nearestP79ForFuck": [
+          {
+            "targetId": "p79_max_signature",
+            "targetLabel": "MAX KEISER signature",
+            "targetKind": "signature",
+            "distancePx": 711.6
+          },
+          {
+            "targetId": "p79_pill_3",
+            "targetLabel": "pill 3",
+            "targetKind": "pill",
+            "distancePx": 1287.4
+          },
+          {
+            "targetId": "p79_pill_4",
+            "targetLabel": "pill 4",
+            "targetKind": "pill",
+            "distancePx": 1444.1
+          }
+        ]
+      },
+      {
+        "mode": "vflip",
+        "xPairAngleDeg": 1.71,
+        "wireAngleDeg": -26.83,
+        "angleDeltaDeg": 28.54,
+        "leftXToWireLinePx": 90.2,
+        "rightXToWireLinePx": 473.9,
+        "fuckCenterToWireLinePx": 291.9,
+        "nearestP79ForLeftX": [
+          {
+            "targetId": "p79_wire_left_knot",
+            "targetLabel": "barbed-wire left knot",
+            "targetKind": "wire",
+            "distancePx": 195.0
+          },
+          {
+            "targetId": "p79_wire_span",
+            "targetLabel": "barbed-wire diagonal span",
+            "targetKind": "wire-line",
+            "distancePx": 203.2
+          },
+          {
+            "targetId": "p79_wire_right_knot",
+            "targetLabel": "barbed-wire right knot",
+            "targetKind": "wire",
+            "distancePx": 321.9
+          }
+        ],
+        "nearestP79ForRightX": [
+          {
+            "targetId": "p79_wire_right_knot",
+            "targetLabel": "barbed-wire right knot",
+            "targetKind": "wire",
+            "distancePx": 617.7
+          },
+          {
+            "targetId": "p79_wire_span",
+            "targetLabel": "barbed-wire diagonal span",
+            "targetKind": "wire-line",
+            "distancePx": 713.7
+          },
+          {
+            "targetId": "p79_wire_left_knot",
+            "targetLabel": "barbed-wire left knot",
+            "targetKind": "wire",
+            "distancePx": 997.9
+          }
+        ],
+        "nearestP79ForFuck": [
+          {
+            "targetId": "p79_wire_right_knot",
+            "targetLabel": "barbed-wire right knot",
+            "targetKind": "wire",
+            "distancePx": 292.9
+          },
+          {
+            "targetId": "p79_wire_span",
+            "targetLabel": "barbed-wire diagonal span",
+            "targetKind": "wire-line",
+            "distancePx": 317.6
+          },
+          {
+            "targetId": "p79_wire_left_knot",
+            "targetLabel": "barbed-wire left knot",
+            "targetKind": "wire",
+            "distancePx": 542.7
+          }
+        ]
+      },
+      {
+        "mode": "rot180",
+        "xPairAngleDeg": 178.29,
+        "wireAngleDeg": -26.83,
+        "angleDeltaDeg": 25.12,
+        "leftXToWireLinePx": 951.9,
+        "rightXToWireLinePx": 611.1,
+        "fuckCenterToWireLinePx": 842.1,
+        "nearestP79ForLeftX": [
+          {
+            "targetId": "p79_wire_right_knot",
+            "targetLabel": "barbed-wire right knot",
+            "targetKind": "wire",
+            "distancePx": 1688.4
+          },
+          {
+            "targetId": "p79_wire_span",
+            "targetLabel": "barbed-wire diagonal span",
+            "targetKind": "wire-line",
+            "distancePx": 1801.8
+          },
+          {
+            "targetId": "p79_wire_left_knot",
+            "targetLabel": "barbed-wire left knot",
+            "targetKind": "wire",
+            "distancePx": 2104.0
+          }
+        ],
+        "nearestP79ForRightX": [
+          {
+            "targetId": "p79_wire_right_knot",
+            "targetLabel": "barbed-wire right knot",
+            "targetKind": "wire",
+            "distancePx": 905.0
+          },
+          {
+            "targetId": "p79_wire_span",
+            "targetLabel": "barbed-wire diagonal span",
+            "targetKind": "wire-line",
+            "distancePx": 1009.8
+          },
+          {
+            "targetId": "p79_wire_left_knot",
+            "targetLabel": "barbed-wire left knot",
+            "targetKind": "wire",
+            "distancePx": 1301.8
+          }
+        ],
+        "nearestP79ForFuck": [
+          {
+            "targetId": "p79_wire_right_knot",
+            "targetLabel": "barbed-wire right knot",
+            "targetKind": "wire",
+            "distancePx": 1356.4
+          },
+          {
+            "targetId": "p79_wire_span",
+            "targetLabel": "barbed-wire diagonal span",
+            "targetKind": "wire-line",
+            "distancePx": 1465.5
+          },
+          {
+            "targetId": "p79_wire_left_knot",
+            "targetLabel": "barbed-wire left knot",
+            "targetKind": "wire",
+            "distancePx": 1759.8
+          }
+        ]
+      }
+    ]
+  },
+  "p80ToP79": {
+    "rows": [
+      {
+        "sourceId": "p80_symptoms",
+        "sourceLabel": "NAUSEA/HEARTBURN/INDIGESTION/UPSET STOMACH/SHITCOINS",
+        "mode": "hflip",
+        "mappedCenter": [
+          854.0,
+          2470.0
+        ],
+        "nearestP79": [
+          {
+            "targetId": "p79_pill_3",
+            "targetLabel": "pill 3",
+            "targetKind": "pill",
+            "distancePx": 283.5
+          },
+          {
+            "targetId": "p79_pill_2",
+            "targetLabel": "pill 2",
+            "targetKind": "pill",
+            "distancePx": 431.8
+          },
+          {
+            "targetId": "p79_pill_4",
+            "targetLabel": "pill 4",
+            "targetKind": "pill",
+            "distancePx": 520.1
+          },
+          {
+            "targetId": "p79_max_signature",
+            "targetLabel": "MAX KEISER signature",
+            "targetKind": "signature",
+            "distancePx": 615.6
+          }
+        ]
+      },
+      {
+        "sourceId": "p80_symptoms",
+        "sourceLabel": "NAUSEA/HEARTBURN/INDIGESTION/UPSET STOMACH/SHITCOINS",
+        "mode": "rot180",
+        "mappedCenter": [
+          854.0,
+          794.0
+        ],
+        "nearestP79": [
+          {
+            "targetId": "p79_wire_right_knot",
+            "targetLabel": "barbed-wire right knot",
+            "targetKind": "wire",
+            "distancePx": 668.4
+          },
+          {
+            "targetId": "p79_wire_span",
+            "targetLabel": "barbed-wire diagonal span",
+            "targetKind": "wire-line",
+            "distancePx": 688.2
+          },
+          {
+            "targetId": "p79_wire_left_knot",
+            "targetLabel": "barbed-wire left knot",
+            "targetKind": "wire",
+            "distancePx": 823.9
+          },
+          {
+            "targetId": "p79_pill_2",
+            "targetLabel": "pill 2",
+            "targetKind": "pill",
+            "distancePx": 1714.7
+          }
+        ]
+      },
+      {
+        "sourceId": "p80_symptoms",
+        "sourceLabel": "NAUSEA/HEARTBURN/INDIGESTION/UPSET STOMACH/SHITCOINS",
+        "mode": "vflip",
+        "mappedCenter": [
+          1690.0,
+          794.0
+        ],
+        "nearestP79": [
+          {
+            "targetId": "p79_wire_right_knot",
+            "targetLabel": "barbed-wire right knot",
+            "targetKind": "wire",
+            "distancePx": 1284.4
+          },
+          {
+            "targetId": "p79_wire_span",
+            "targetLabel": "barbed-wire diagonal span",
+            "targetKind": "wire-line",
+            "distancePx": 1370.1
+          },
+          {
+            "targetId": "p79_wire_left_knot",
+            "targetLabel": "barbed-wire left knot",
+            "targetKind": "wire",
+            "distancePx": 1612.7
+          },
+          {
+            "targetId": "p79_pill_2",
+            "targetLabel": "pill 2",
+            "targetKind": "pill",
+            "distancePx": 2088.2
+          }
+        ]
+      },
+      {
+        "sourceId": "p80_shitcoins",
+        "sourceLabel": "SHITCOINS",
+        "mode": "hflip",
+        "mappedCenter": [
+          841.5,
+          2585.0
+        ],
+        "nearestP79": [
+          {
+            "targetId": "p79_pill_3",
+            "targetLabel": "pill 3",
+            "targetKind": "pill",
+            "distancePx": 235.3
+          },
+          {
+            "targetId": "p79_pill_2",
+            "targetLabel": "pill 2",
+            "targetKind": "pill",
+            "distancePx": 439.2
+          },
+          {
+            "targetId": "p79_pill_4",
+            "targetLabel": "pill 4",
+            "targetKind": "pill",
+            "distancePx": 449.3
+          },
+          {
+            "targetId": "p79_max_signature",
+            "targetLabel": "MAX KEISER signature",
+            "targetKind": "signature",
+            "distancePx": 531.9
+          }
+        ]
+      },
+      {
+        "sourceId": "p80_shitcoins",
+        "sourceLabel": "SHITCOINS",
+        "mode": "rot180",
+        "mappedCenter": [
+          841.5,
+          679.0
+        ],
+        "nearestP79": [
+          {
+            "targetId": "p79_wire_right_knot",
+            "targetLabel": "barbed-wire right knot",
+            "targetKind": "wire",
+            "distancePx": 561.6
+          },
+          {
+            "targetId": "p79_wire_span",
+            "targetLabel": "barbed-wire diagonal span",
+            "targetKind": "wire-line",
+            "distancePx": 592.7
+          },
+          {
+            "targetId": "p79_wire_left_knot",
+            "targetLabel": "barbed-wire left knot",
+            "targetKind": "wire",
+            "distancePx": 765.9
+          },
+          {
+            "targetId": "p79_pill_2",
+            "targetLabel": "pill 2",
+            "targetKind": "pill",
+            "distancePx": 1823.3
+          }
+        ]
+      },
+      {
+        "sourceId": "p80_shitcoins",
+        "sourceLabel": "SHITCOINS",
+        "mode": "vflip",
+        "mappedCenter": [
+          1702.5,
+          679.0
+        ],
+        "nearestP79": [
+          {
+            "targetId": "p79_wire_right_knot",
+            "targetLabel": "barbed-wire right knot",
+            "targetKind": "wire",
+            "distancePx": 1246.7
+          },
+          {
+            "targetId": "p79_wire_span",
+            "targetLabel": "barbed-wire diagonal span",
+            "targetKind": "wire-line",
+            "distancePx": 1340.5
+          },
+          {
+            "targetId": "p79_wire_left_knot",
+            "targetLabel": "barbed-wire left knot",
+            "targetKind": "wire",
+            "distancePx": 1601.9
+          },
+          {
+            "targetId": "p79_pill_2",
+            "targetLabel": "pill 2",
+            "targetKind": "pill",
+            "distancePx": 2188.0
+          }
+        ]
+      },
+      {
+        "sourceId": "p80_volume_16",
+        "sourceLabel": "16 FL OZ (473 mL)",
+        "mode": "hflip",
+        "mappedCenter": [
+          1456.5,
+          2522.5
+        ],
+        "nearestP79": [
+          {
+            "targetId": "p79_max_signature",
+            "targetLabel": "MAX KEISER signature",
+            "targetKind": "signature",
+            "distancePx": 529.1
+          },
+          {
+            "targetId": "p79_pill_3",
+            "targetLabel": "pill 3",
+            "targetKind": "pill",
+            "distancePx": 853.5
+          },
+          {
+            "targetId": "p79_pill_2",
+            "targetLabel": "pill 2",
+            "targetKind": "pill",
+            "distancePx": 1036.3
+          },
+          {
+            "targetId": "p79_pill_4",
+            "targetLabel": "pill 4",
+            "targetKind": "pill",
+            "distancePx": 1051.4
+          }
+        ]
+      },
+      {
+        "sourceId": "p80_volume_16",
+        "sourceLabel": "16 FL OZ (473 mL)",
+        "mode": "rot180",
+        "mappedCenter": [
+          1456.5,
+          741.5
+        ],
+        "nearestP79": [
+          {
+            "targetId": "p79_wire_right_knot",
+            "targetLabel": "barbed-wire right knot",
+            "targetKind": "wire",
+            "distancePx": 1055.1
+          },
+          {
+            "targetId": "p79_wire_span",
+            "targetLabel": "barbed-wire diagonal span",
+            "targetKind": "wire-line",
+            "distancePx": 1135.8
+          },
+          {
+            "targetId": "p79_wire_left_knot",
+            "targetLabel": "barbed-wire left knot",
+            "targetKind": "wire",
+            "distancePx": 1373.4
+          },
+          {
+            "targetId": "p79_pill_2",
+            "targetLabel": "pill 2",
+            "targetKind": "pill",
+            "distancePx": 2000.0
+          }
+        ]
+      },
+      {
+        "sourceId": "p80_volume_16",
+        "sourceLabel": "16 FL OZ (473 mL)",
+        "mode": "vflip",
+        "mappedCenter": [
+          1087.5,
+          741.5
+        ],
+        "nearestP79": [
+          {
+            "targetId": "p79_wire_right_knot",
+            "targetLabel": "barbed-wire right knot",
+            "targetKind": "wire",
+            "distancePx": 763.0
+          },
+          {
+            "targetId": "p79_wire_span",
+            "targetLabel": "barbed-wire diagonal span",
+            "targetKind": "wire-line",
+            "distancePx": 818.9
+          },
+          {
+            "targetId": "p79_wire_left_knot",
+            "targetLabel": "barbed-wire left knot",
+            "targetKind": "wire",
+            "distancePx": 1018.7
+          },
+          {
+            "targetId": "p79_pill_2",
+            "targetLabel": "pill 2",
+            "targetKind": "pill",
+            "distancePx": 1836.6
+          }
+        ]
+      },
+      {
+        "sourceId": "p80_cap_5_symptom",
+        "sourceLabel": "cap 5 SYMPTOM RELIEF",
+        "mode": "hflip",
+        "mappedCenter": [
+          761.5,
+          870.0
+        ],
+        "nearestP79": [
+          {
+            "targetId": "p79_wire_span",
+            "targetLabel": "barbed-wire diagonal span",
+            "targetKind": "wire-line",
+            "distancePx": 701.9
+          },
+          {
+            "targetId": "p79_wire_right_knot",
+            "targetLabel": "barbed-wire right knot",
+            "targetKind": "wire",
+            "distancePx": 704.2
+          },
+          {
+            "targetId": "p79_wire_left_knot",
+            "targetLabel": "barbed-wire left knot",
+            "targetKind": "wire",
+            "distancePx": 784.4
+          },
+          {
+            "targetId": "p79_pill_2",
+            "targetLabel": "pill 2",
+            "targetKind": "pill",
+            "distancePx": 1619.4
+          }
+        ]
+      },
+      {
+        "sourceId": "p80_cap_5_symptom",
+        "sourceLabel": "cap 5 SYMPTOM RELIEF",
+        "mode": "rot180",
+        "mappedCenter": [
+          761.5,
+          2394.0
+        ],
+        "nearestP79": [
+          {
+            "targetId": "p79_pill_3",
+            "targetLabel": "pill 3",
+            "targetKind": "pill",
+            "distancePx": 265.3
+          },
+          {
+            "targetId": "p79_pill_2",
+            "targetLabel": "pill 2",
+            "targetKind": "pill",
+            "distancePx": 344.2
+          },
+          {
+            "targetId": "p79_pill_4",
+            "targetLabel": "pill 4",
+            "targetKind": "pill",
+            "distancePx": 505.1
+          },
+          {
+            "targetId": "p79_pill_1",
+            "targetLabel": "pill 1",
+            "targetKind": "pill",
+            "distancePx": 589.2
+          }
+        ]
+      },
+      {
+        "sourceId": "p80_cap_5_symptom",
+        "sourceLabel": "cap 5 SYMPTOM RELIEF",
+        "mode": "vflip",
+        "mappedCenter": [
+          1782.5,
+          2394.0
+        ],
+        "nearestP79": [
+          {
+            "targetId": "p79_max_signature",
+            "targetLabel": "MAX KEISER signature",
+            "targetKind": "signature",
+            "distancePx": 831.6
+          },
+          {
+            "targetId": "p79_pill_3",
+            "targetLabel": "pill 3",
+            "targetKind": "pill",
+            "distancePx": 1194.7
+          },
+          {
+            "targetId": "p79_pill_2",
+            "targetLabel": "pill 2",
+            "targetKind": "pill",
+            "distancePx": 1361.3
+          },
+          {
+            "targetId": "p79_pill_4",
+            "targetLabel": "pill 4",
+            "targetKind": "pill",
+            "distancePx": 1399.7
+          }
+        ]
+      }
+    ]
+  },
+  "sheet": "analysis_outputs/source_audit/graphic_spill_alignment_inventory/graphic_spill_alignment_inventory_sheet.jpg",
+  "assessment": [
+    "The obvious p78 `XX` pair does not become collinear with the p79 barbed-wire line under identity, hflip, vflip, or 180-degree rotation.",
+    "The best simple p78 transform for keeping both X marks near the p79 wire is `vflip`, but its worst X-to-wire distance is 473.9 px and the angle delta is 28.54 degrees.",
+    "p80 `SHITCOINS` and symptom text continue to map only as broad package/provenance evidence under simple flips; they do not pick a page-79 or page-76 unit.",
+    "This supports the Canva note as an orientation/source-registration warning, not as a solved selector in the current high-res scan."
+  ],
+  "nextMove": "Do not derive key material from `XX`/wire/SHIT spill geometry in the current scan. Reopen this branch only with a higher-resolution Canva/original-layout/physical overlay, or if a new source rule names which graphic object pair is meant."
+}

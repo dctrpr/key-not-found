@@ -1,0 +1,160 @@
+{
+  "createdAt": "2026-05-21T00:23:42",
+  "scope": "3D active quartet target-box OCR gate; no OCR run, no extraction, no key derivation, no hashing, no seed/WIF/address checks",
+  "inputs": {
+    "article3dMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "activeTargetCropCompletion": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "orderOrientationTrap": "analysis_outputs/source_audit/page76_active_order_orientation_trap/page76_active_order_orientation_trap.json",
+    "pageImage": "analysis_outputs/3d_article_map/page_76_upright.jpg"
+  },
+  "summary": {
+    "targetCount": 4,
+    "exactBoxMatchCount": 0,
+    "corruptedOrMisreadBoxCount": 4,
+    "blankBoxCount": 1,
+    "usableForTextExtraction": false,
+    "readableOrder": "buying_dip -> one_billion -> volcano_bonds -> shitcoiner_heart",
+    "lineOrder": "22 25 27 32",
+    "corridorOrder": "4 7 9 14",
+    "orientationGuardrail": "page76_active_order_orientation_trap_guardrail_no_selector",
+    "selectorUnlocked": false
+  },
+  "rows": [
+    {
+      "id": "buying_dip",
+      "label": "O4 buying the dip",
+      "phrase": "buying the dip",
+      "box": [
+        1334,
+        2177,
+        1801,
+        2225
+      ],
+      "crop": [
+        1120,
+        2125,
+        1910,
+        2265
+      ],
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "visualState": "Y",
+      "ocrCharsBox": "ByiiREeraipy\"",
+      "ocrCharsMargin25": "ByiiREeraipy\"",
+      "ocrWordsBox": [
+        "ByiiREeraipy\""
+      ],
+      "ocrWordsBoxText": "ByiiREeraipy\"",
+      "ocrWordsMargin25": [
+        "ByiiREeraipy\""
+      ],
+      "ocrWordsMargin25Text": "ByiiREeraipy\"",
+      "boxCharSimilarity": 0.5,
+      "margin25CharSimilarity": 0.5,
+      "boxWordSimilarity": 0.5,
+      "exactBoxMatch": false
+    },
+    {
+      "id": "one_billion",
+      "label": "B4 $1 billion",
+      "phrase": "$1 billion",
+      "box": [
+        428,
+        2398,
+        691,
+        2445
+      ],
+      "crop": [
+        250,
+        2350,
+        1520,
+        2460
+      ],
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "visualState": "K",
+      "ocrCharsBox": "eis",
+      "ocrCharsMargin25": "eis",
+      "ocrWordsBox": [
+        "eis"
+      ],
+      "ocrWordsBoxText": "eis",
+      "ocrWordsMargin25": [
+        "eis"
+      ],
+      "ocrWordsMargin25Text": "eis",
+      "boxCharSimilarity": 0.1667,
+      "margin25CharSimilarity": 0.1667,
+      "boxWordSimilarity": 0.1667,
+      "exactBoxMatch": false
+    },
+    {
+      "id": "volcano_bonds",
+      "label": "G5 Volcano Bonds",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795,
+        2544,
+        1196,
+        2592
+      ],
+      "crop": [
+        720,
+        2505,
+        1650,
+        2625
+      ],
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "visualState": "K",
+      "ocrCharsBox": "",
+      "ocrCharsMargin25": "d",
+      "ocrWordsBox": [],
+      "ocrWordsBoxText": "",
+      "ocrWordsMargin25": [],
+      "ocrWordsMargin25Text": "",
+      "boxCharSimilarity": 0.0,
+      "margin25CharSimilarity": 0.1538,
+      "boxWordSimilarity": 0.0,
+      "exactBoxMatch": false
+    },
+    {
+      "id": "shitcoiner_heart",
+      "label": "O5 shitcoiner at heart",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040,
+        2932,
+        1661,
+        2982
+      ],
+      "crop": [
+        850,
+        2860,
+        1770,
+        3038
+      ],
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "visualState": "Y",
+      "ocrCharsBox": "siukbeodmensertslveaarty",
+      "ocrCharsMargin25": "a siukbeodmensertslveaarty",
+      "ocrWordsBox": [
+        "siukbeodmensertslveaarty"
+      ],
+      "ocrWordsBoxText": "siukbeodmensertslveaarty",
+      "ocrWordsMargin25": [
+        "a",
+        "siukbeodmensertslveaarty"
+      ],
+      "ocrWordsMargin25Text": "a siukbeodmensertslveaarty",
+      "boxCharSimilarity": 0.4878,
+      "margin25CharSimilarity": 0.4762,
+      "boxWordSimilarity": 0.4878,
+      "exactBoxMatch": false
+    }
+  ],
+  "decision": "3d_target_box_ocr_not_text_authority",
+  "sheet": "analysis_outputs/3d_article_map/active_quartet_box_ocr_gate/active_quartet_box_ocr_gate_sheet.jpg",
+  "nextMove": "Keep 3D target boxes as geometry/source-registration aids only; exact wording must be resolved through DOCM/plain text/crop review before any future selector is evaluated."
+}

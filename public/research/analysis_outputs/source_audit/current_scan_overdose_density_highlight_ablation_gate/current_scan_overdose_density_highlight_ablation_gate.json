@@ -1,0 +1,614 @@
+{
+  "createdAt": "2026-05-24T12:38:15",
+  "scope": "current-scan OVERDOSE source-highlight ablation gate; tests whether density-calibrated page-76 slot outliers survive removal of mirrored page-75 source-highlight rectangles",
+  "inputs": {
+    "densityCalibrationGate": "analysis_outputs/source_audit/current_scan_light_table_density_calibration_gate/current_scan_light_table_density_calibration_gate.json",
+    "outlierProvenanceGate": "analysis_outputs/source_audit/current_scan_overdose_density_outlier_provenance_gate/current_scan_overdose_density_outlier_provenance_gate.json",
+    "articleMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "c9HeaderGlyphSlotGate": "analysis_outputs/source_audit/c9_header_glyph_slot_gate/c9_header_glyph_slot_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "sourcePage": 75,
+  "targetPage": 76,
+  "originalPageInkDensity": 0.094023,
+  "originalPageFeatureDensity": 0.085919,
+  "outlierSourceHighlights": [
+    {
+      "id": "p75_orange_6",
+      "kind": "orange",
+      "sourceBox": [
+        1271.0,
+        2200.0,
+        1608.0,
+        2248.0
+      ],
+      "mirroredBox": [
+        936.0,
+        2200.0,
+        1273.0,
+        2248.0
+      ]
+    },
+    {
+      "id": "p75_orange_7",
+      "kind": "orange",
+      "sourceBox": [
+        452.0,
+        2415.0,
+        925.0,
+        2464.0
+      ],
+      "mirroredBox": [
+        1619.0,
+        2415.0,
+        2092.0,
+        2464.0
+      ]
+    },
+    {
+      "id": "p75_orange_8",
+      "kind": "orange",
+      "sourceBox": [
+        544.0,
+        2553.0,
+        735.0,
+        2600.0
+      ],
+      "mirroredBox": [
+        1809.0,
+        2553.0,
+        2000.0,
+        2600.0
+      ]
+    }
+  ],
+  "slotRows": [
+    {
+      "slotId": "slot_0_O",
+      "slotIndex": 0,
+      "letter": "O",
+      "box": [
+        294.0,
+        2176.81,
+        538.57,
+        3023.73
+      ],
+      "otherLeafInkOverPageDensityMax": 1.021533,
+      "baselineInkOverPageDensity": 0.000359,
+      "baselineOutlier": false,
+      "inkOverOriginalPageDensityAfterOutlierHighlightAblation": 0.000359,
+      "inkOverOriginalPageDensityAfterAllHighlightAblation": 0.000359,
+      "inkOverOriginalPageDensityAfterNonOutlierHighlightAblation": 0.000359,
+      "outlierHighlightAblationDrop": 0.0,
+      "outlierHighlightAblationDropPct": 0.0,
+      "survivesOutlierHighlightAblation": false,
+      "survivesAllHighlightAblation": false,
+      "controlNonOutlierAblationChangesStatus": false,
+      "variants": {
+        "baseline": {
+          "sourceInkRatio": 3.4e-05,
+          "sourceFeatureRatio": 0.0,
+          "inkOverOriginalPageDensity": 0.000359,
+          "featureOverOriginalPageDensity": 0.0,
+          "inkOverVariantPageDensity": 0.000359,
+          "featureOverVariantPageDensity": 0.0,
+          "variantPageInkDensity": 0.094023,
+          "variantPageFeatureDensity": 0.085919
+        },
+        "outlier_highlights_ablated": {
+          "sourceInkRatio": 3.4e-05,
+          "sourceFeatureRatio": 0.0,
+          "inkOverOriginalPageDensity": 0.000359,
+          "featureOverOriginalPageDensity": 0.0,
+          "inkOverVariantPageDensity": 0.000382,
+          "featureOverVariantPageDensity": 0.0,
+          "variantPageInkDensity": 0.088242,
+          "variantPageFeatureDensity": 0.080243
+        },
+        "all_highlights_ablated": {
+          "sourceInkRatio": 3.4e-05,
+          "sourceFeatureRatio": 0.0,
+          "inkOverOriginalPageDensity": 0.000359,
+          "featureOverOriginalPageDensity": 0.0,
+          "inkOverVariantPageDensity": 0.000503,
+          "featureOverVariantPageDensity": 0.0,
+          "variantPageInkDensity": 0.06705,
+          "variantPageFeatureDensity": 0.059516
+        },
+        "non_outlier_highlights_ablated": {
+          "sourceInkRatio": 3.4e-05,
+          "sourceFeatureRatio": 0.0,
+          "inkOverOriginalPageDensity": 0.000359,
+          "featureOverOriginalPageDensity": 0.0,
+          "inkOverVariantPageDensity": 0.000463,
+          "featureOverVariantPageDensity": 0.0,
+          "variantPageInkDensity": 0.072831,
+          "variantPageFeatureDensity": 0.065192
+        }
+      }
+    },
+    {
+      "slotId": "slot_1_V",
+      "slotIndex": 1,
+      "letter": "V",
+      "box": [
+        538.57,
+        2176.81,
+        783.0,
+        3023.73
+      ],
+      "otherLeafInkOverPageDensityMax": 1.004983,
+      "baselineInkOverPageDensity": 0.038906,
+      "baselineOutlier": false,
+      "inkOverOriginalPageDensityAfterOutlierHighlightAblation": 0.038906,
+      "inkOverOriginalPageDensityAfterAllHighlightAblation": 0.038906,
+      "inkOverOriginalPageDensityAfterNonOutlierHighlightAblation": 0.038906,
+      "outlierHighlightAblationDrop": 0.0,
+      "outlierHighlightAblationDropPct": 0.0,
+      "survivesOutlierHighlightAblation": false,
+      "survivesAllHighlightAblation": false,
+      "controlNonOutlierAblationChangesStatus": false,
+      "variants": {
+        "baseline": {
+          "sourceInkRatio": 0.003658,
+          "sourceFeatureRatio": 0.003169,
+          "inkOverOriginalPageDensity": 0.038906,
+          "featureOverOriginalPageDensity": 0.036887,
+          "inkOverVariantPageDensity": 0.038906,
+          "featureOverVariantPageDensity": 0.036887,
+          "variantPageInkDensity": 0.094023,
+          "variantPageFeatureDensity": 0.085919
+        },
+        "outlier_highlights_ablated": {
+          "sourceInkRatio": 0.003658,
+          "sourceFeatureRatio": 0.003169,
+          "inkOverOriginalPageDensity": 0.038906,
+          "featureOverOriginalPageDensity": 0.036887,
+          "inkOverVariantPageDensity": 0.041455,
+          "featureOverVariantPageDensity": 0.039497,
+          "variantPageInkDensity": 0.088242,
+          "variantPageFeatureDensity": 0.080243
+        },
+        "all_highlights_ablated": {
+          "sourceInkRatio": 0.003658,
+          "sourceFeatureRatio": 0.003169,
+          "inkOverOriginalPageDensity": 0.038906,
+          "featureOverOriginalPageDensity": 0.036887,
+          "inkOverVariantPageDensity": 0.054557,
+          "featureOverVariantPageDensity": 0.053252,
+          "variantPageInkDensity": 0.06705,
+          "variantPageFeatureDensity": 0.059516
+        },
+        "non_outlier_highlights_ablated": {
+          "sourceInkRatio": 0.003658,
+          "sourceFeatureRatio": 0.003169,
+          "inkOverOriginalPageDensity": 0.038906,
+          "featureOverOriginalPageDensity": 0.036887,
+          "inkOverVariantPageDensity": 0.050226,
+          "featureOverVariantPageDensity": 0.048615,
+          "variantPageInkDensity": 0.072831,
+          "variantPageFeatureDensity": 0.065192
+        }
+      }
+    },
+    {
+      "slotId": "slot_2_E",
+      "slotIndex": 2,
+      "letter": "E",
+      "box": [
+        783.0,
+        2176.81,
+        1027.57,
+        3023.73
+      ],
+      "otherLeafInkOverPageDensityMax": 0.993657,
+      "baselineInkOverPageDensity": 0.990051,
+      "baselineOutlier": false,
+      "inkOverOriginalPageDensityAfterOutlierHighlightAblation": 0.763975,
+      "inkOverOriginalPageDensityAfterAllHighlightAblation": 0.763975,
+      "inkOverOriginalPageDensityAfterNonOutlierHighlightAblation": 0.990051,
+      "outlierHighlightAblationDrop": 0.226076,
+      "outlierHighlightAblationDropPct": 22.835,
+      "survivesOutlierHighlightAblation": false,
+      "survivesAllHighlightAblation": false,
+      "controlNonOutlierAblationChangesStatus": false,
+      "variants": {
+        "baseline": {
+          "sourceInkRatio": 0.093087,
+          "sourceFeatureRatio": 0.08317,
+          "inkOverOriginalPageDensity": 0.990051,
+          "featureOverOriginalPageDensity": 0.968004,
+          "inkOverVariantPageDensity": 0.990051,
+          "featureOverVariantPageDensity": 0.968004,
+          "variantPageInkDensity": 0.094023,
+          "variantPageFeatureDensity": 0.085919
+        },
+        "outlier_highlights_ablated": {
+          "sourceInkRatio": 0.071831,
+          "sourceFeatureRatio": 0.062092,
+          "inkOverOriginalPageDensity": 0.763975,
+          "featureOverOriginalPageDensity": 0.72268,
+          "inkOverVariantPageDensity": 0.814025,
+          "featureOverVariantPageDensity": 0.773801,
+          "variantPageInkDensity": 0.088242,
+          "variantPageFeatureDensity": 0.080243
+        },
+        "all_highlights_ablated": {
+          "sourceInkRatio": 0.071831,
+          "sourceFeatureRatio": 0.062092,
+          "inkOverOriginalPageDensity": 0.763975,
+          "featureOverOriginalPageDensity": 0.72268,
+          "inkOverVariantPageDensity": 1.071305,
+          "featureOverVariantPageDensity": 1.043277,
+          "variantPageInkDensity": 0.06705,
+          "variantPageFeatureDensity": 0.059516
+        },
+        "non_outlier_highlights_ablated": {
+          "sourceInkRatio": 0.093087,
+          "sourceFeatureRatio": 0.08317,
+          "inkOverOriginalPageDensity": 0.990051,
+          "featureOverOriginalPageDensity": 0.968004,
+          "inkOverVariantPageDensity": 1.278128,
+          "featureOverVariantPageDensity": 1.27576,
+          "variantPageInkDensity": 0.072831,
+          "variantPageFeatureDensity": 0.065192
+        }
+      }
+    },
+    {
+      "slotId": "slot_3_R",
+      "slotIndex": 3,
+      "letter": "R",
+      "box": [
+        1027.57,
+        2176.81,
+        1272.0,
+        3023.73
+      ],
+      "otherLeafInkOverPageDensityMax": 1.44358,
+      "baselineInkOverPageDensity": 1.616861,
+      "baselineOutlier": true,
+      "inkOverOriginalPageDensityAfterOutlierHighlightAblation": 1.014488,
+      "inkOverOriginalPageDensityAfterAllHighlightAblation": 1.014488,
+      "inkOverOriginalPageDensityAfterNonOutlierHighlightAblation": 1.616861,
+      "outlierHighlightAblationDrop": 0.602373,
+      "outlierHighlightAblationDropPct": 37.256,
+      "survivesOutlierHighlightAblation": false,
+      "survivesAllHighlightAblation": false,
+      "controlNonOutlierAblationChangesStatus": false,
+      "variants": {
+        "baseline": {
+          "sourceInkRatio": 0.152022,
+          "sourceFeatureRatio": 0.139107,
+          "inkOverOriginalPageDensity": 1.616861,
+          "featureOverOriginalPageDensity": 1.619051,
+          "inkOverVariantPageDensity": 1.616861,
+          "featureOverVariantPageDensity": 1.619051,
+          "variantPageInkDensity": 0.094023,
+          "variantPageFeatureDensity": 0.085919
+        },
+        "outlier_highlights_ablated": {
+          "sourceInkRatio": 0.095385,
+          "sourceFeatureRatio": 0.083404,
+          "inkOverOriginalPageDensity": 1.014488,
+          "featureOverOriginalPageDensity": 0.970732,
+          "inkOverVariantPageDensity": 1.08095,
+          "featureOverVariantPageDensity": 1.0394,
+          "variantPageInkDensity": 0.088242,
+          "variantPageFeatureDensity": 0.080243
+        },
+        "all_highlights_ablated": {
+          "sourceInkRatio": 0.095385,
+          "sourceFeatureRatio": 0.083404,
+          "inkOverOriginalPageDensity": 1.014488,
+          "featureOverOriginalPageDensity": 0.970732,
+          "inkOverVariantPageDensity": 1.422594,
+          "featureOverVariantPageDensity": 1.40137,
+          "variantPageInkDensity": 0.06705,
+          "variantPageFeatureDensity": 0.059516
+        },
+        "non_outlier_highlights_ablated": {
+          "sourceInkRatio": 0.152022,
+          "sourceFeatureRatio": 0.139107,
+          "inkOverOriginalPageDensity": 1.616861,
+          "featureOverOriginalPageDensity": 1.619051,
+          "inkOverVariantPageDensity": 2.087322,
+          "featureOverVariantPageDensity": 2.133793,
+          "variantPageInkDensity": 0.072831,
+          "variantPageFeatureDensity": 0.065192
+        }
+      }
+    },
+    {
+      "slotId": "slot_4_D",
+      "slotIndex": 4,
+      "letter": "D",
+      "box": [
+        1272.0,
+        2176.81,
+        1516.57,
+        3023.73
+      ],
+      "otherLeafInkOverPageDensityMax": 1.672578,
+      "baselineInkOverPageDensity": 1.587506,
+      "baselineOutlier": false,
+      "inkOverOriginalPageDensityAfterOutlierHighlightAblation": 1.585097,
+      "inkOverOriginalPageDensityAfterAllHighlightAblation": 1.585097,
+      "inkOverOriginalPageDensityAfterNonOutlierHighlightAblation": 1.587506,
+      "outlierHighlightAblationDrop": 0.002409,
+      "outlierHighlightAblationDropPct": 0.152,
+      "survivesOutlierHighlightAblation": false,
+      "survivesAllHighlightAblation": false,
+      "controlNonOutlierAblationChangesStatus": false,
+      "variants": {
+        "baseline": {
+          "sourceInkRatio": 0.149261,
+          "sourceFeatureRatio": 0.133484,
+          "inkOverOriginalPageDensity": 1.587506,
+          "featureOverOriginalPageDensity": 1.553607,
+          "inkOverVariantPageDensity": 1.587506,
+          "featureOverVariantPageDensity": 1.553607,
+          "variantPageInkDensity": 0.094023,
+          "variantPageFeatureDensity": 0.085919
+        },
+        "outlier_highlights_ablated": {
+          "sourceInkRatio": 0.149035,
+          "sourceFeatureRatio": 0.133316,
+          "inkOverOriginalPageDensity": 1.585097,
+          "featureOverOriginalPageDensity": 1.551644,
+          "inkOverVariantPageDensity": 1.688941,
+          "featureOverVariantPageDensity": 1.661404,
+          "variantPageInkDensity": 0.088242,
+          "variantPageFeatureDensity": 0.080243
+        },
+        "all_highlights_ablated": {
+          "sourceInkRatio": 0.149035,
+          "sourceFeatureRatio": 0.133316,
+          "inkOverOriginalPageDensity": 1.585097,
+          "featureOverOriginalPageDensity": 1.551644,
+          "inkOverVariantPageDensity": 2.222746,
+          "featureOverVariantPageDensity": 2.239988,
+          "variantPageInkDensity": 0.06705,
+          "variantPageFeatureDensity": 0.059516
+        },
+        "non_outlier_highlights_ablated": {
+          "sourceInkRatio": 0.149261,
+          "sourceFeatureRatio": 0.133484,
+          "inkOverOriginalPageDensity": 1.587506,
+          "featureOverOriginalPageDensity": 1.553607,
+          "inkOverVariantPageDensity": 2.049425,
+          "featureOverVariantPageDensity": 2.047543,
+          "variantPageInkDensity": 0.072831,
+          "variantPageFeatureDensity": 0.065192
+        }
+      }
+    },
+    {
+      "slotId": "slot_5_O",
+      "slotIndex": 5,
+      "letter": "O",
+      "box": [
+        1516.57,
+        2176.81,
+        1761.0,
+        3023.73
+      ],
+      "otherLeafInkOverPageDensityMax": 1.025745,
+      "baselineInkOverPageDensity": 2.1248,
+      "baselineOutlier": true,
+      "inkOverOriginalPageDensityAfterOutlierHighlightAblation": 1.773875,
+      "inkOverOriginalPageDensityAfterAllHighlightAblation": 1.773875,
+      "inkOverOriginalPageDensityAfterNonOutlierHighlightAblation": 2.1248,
+      "outlierHighlightAblationDrop": 0.350925,
+      "outlierHighlightAblationDropPct": 16.516,
+      "survivesOutlierHighlightAblation": true,
+      "survivesAllHighlightAblation": true,
+      "controlNonOutlierAblationChangesStatus": false,
+      "variants": {
+        "baseline": {
+          "sourceInkRatio": 0.199779,
+          "sourceFeatureRatio": 0.182152,
+          "inkOverOriginalPageDensity": 2.1248,
+          "featureOverOriginalPageDensity": 2.120045,
+          "inkOverVariantPageDensity": 2.1248,
+          "featureOverVariantPageDensity": 2.120045,
+          "variantPageInkDensity": 0.094023,
+          "variantPageFeatureDensity": 0.085919
+        },
+        "outlier_highlights_ablated": {
+          "sourceInkRatio": 0.166784,
+          "sourceFeatureRatio": 0.14968,
+          "inkOverOriginalPageDensity": 1.773875,
+          "featureOverOriginalPageDensity": 1.742103,
+          "inkOverVariantPageDensity": 1.890087,
+          "featureOverVariantPageDensity": 1.865336,
+          "variantPageInkDensity": 0.088242,
+          "variantPageFeatureDensity": 0.080243
+        },
+        "all_highlights_ablated": {
+          "sourceInkRatio": 0.166784,
+          "sourceFeatureRatio": 0.14968,
+          "inkOverOriginalPageDensity": 1.773875,
+          "featureOverOriginalPageDensity": 1.742103,
+          "inkOverVariantPageDensity": 2.487465,
+          "featureOverVariantPageDensity": 2.514938,
+          "variantPageInkDensity": 0.06705,
+          "variantPageFeatureDensity": 0.059516
+        },
+        "non_outlier_highlights_ablated": {
+          "sourceInkRatio": 0.199779,
+          "sourceFeatureRatio": 0.182152,
+          "inkOverOriginalPageDensity": 2.1248,
+          "featureOverOriginalPageDensity": 2.120045,
+          "inkOverVariantPageDensity": 2.743057,
+          "featureOverVariantPageDensity": 2.794067,
+          "variantPageInkDensity": 0.072831,
+          "variantPageFeatureDensity": 0.065192
+        }
+      }
+    },
+    {
+      "slotId": "slot_6_S",
+      "slotIndex": 6,
+      "letter": "S",
+      "box": [
+        1761.0,
+        2176.81,
+        2005.57,
+        3023.73
+      ],
+      "otherLeafInkOverPageDensityMax": 1.01647,
+      "baselineInkOverPageDensity": 2.868161,
+      "baselineOutlier": true,
+      "inkOverOriginalPageDensityAfterOutlierHighlightAblation": 1.796976,
+      "inkOverOriginalPageDensityAfterAllHighlightAblation": 1.796976,
+      "inkOverOriginalPageDensityAfterNonOutlierHighlightAblation": 2.868161,
+      "outlierHighlightAblationDrop": 1.071185,
+      "outlierHighlightAblationDropPct": 37.347,
+      "survivesOutlierHighlightAblation": true,
+      "survivesAllHighlightAblation": true,
+      "controlNonOutlierAblationChangesStatus": false,
+      "variants": {
+        "baseline": {
+          "sourceInkRatio": 0.269672,
+          "sourceFeatureRatio": 0.250883,
+          "inkOverOriginalPageDensity": 2.868161,
+          "featureOverOriginalPageDensity": 2.919997,
+          "inkOverVariantPageDensity": 2.868161,
+          "featureOverVariantPageDensity": 2.919997,
+          "variantPageInkDensity": 0.094023,
+          "variantPageFeatureDensity": 0.085919
+        },
+        "outlier_highlights_ablated": {
+          "sourceInkRatio": 0.168956,
+          "sourceFeatureRatio": 0.152278,
+          "inkOverOriginalPageDensity": 1.796976,
+          "featureOverOriginalPageDensity": 1.772346,
+          "inkOverVariantPageDensity": 1.914701,
+          "featureOverVariantPageDensity": 1.897718,
+          "variantPageInkDensity": 0.088242,
+          "variantPageFeatureDensity": 0.080243
+        },
+        "all_highlights_ablated": {
+          "sourceInkRatio": 0.168956,
+          "sourceFeatureRatio": 0.152278,
+          "inkOverOriginalPageDensity": 1.796976,
+          "featureOverOriginalPageDensity": 1.772346,
+          "inkOverVariantPageDensity": 2.51986,
+          "featureOverVariantPageDensity": 2.558598,
+          "variantPageInkDensity": 0.06705,
+          "variantPageFeatureDensity": 0.059516
+        },
+        "non_outlier_highlights_ablated": {
+          "sourceInkRatio": 0.269672,
+          "sourceFeatureRatio": 0.250883,
+          "inkOverOriginalPageDensity": 2.868161,
+          "featureOverOriginalPageDensity": 2.919997,
+          "inkOverVariantPageDensity": 3.702714,
+          "featureOverVariantPageDensity": 3.848346,
+          "variantPageInkDensity": 0.072831,
+          "variantPageFeatureDensity": 0.065192
+        }
+      }
+    },
+    {
+      "slotId": "slot_7_E",
+      "slotIndex": 7,
+      "letter": "E",
+      "box": [
+        2005.57,
+        2176.81,
+        2250.0,
+        3023.73
+      ],
+      "otherLeafInkOverPageDensityMax": 1.058731,
+      "baselineInkOverPageDensity": 0.904049,
+      "baselineOutlier": false,
+      "inkOverOriginalPageDensityAfterOutlierHighlightAblation": 0.69197,
+      "inkOverOriginalPageDensityAfterAllHighlightAblation": 0.69197,
+      "inkOverOriginalPageDensityAfterNonOutlierHighlightAblation": 0.904049,
+      "outlierHighlightAblationDrop": 0.212079,
+      "outlierHighlightAblationDropPct": 23.459,
+      "survivesOutlierHighlightAblation": false,
+      "survivesAllHighlightAblation": false,
+      "controlNonOutlierAblationChangesStatus": false,
+      "variants": {
+        "baseline": {
+          "sourceInkRatio": 0.085001,
+          "sourceFeatureRatio": 0.078464,
+          "inkOverOriginalPageDensity": 0.904049,
+          "featureOverOriginalPageDensity": 0.913233,
+          "inkOverVariantPageDensity": 0.904049,
+          "featureOverVariantPageDensity": 0.913233,
+          "variantPageInkDensity": 0.094023,
+          "variantPageFeatureDensity": 0.085919
+        },
+        "outlier_highlights_ablated": {
+          "sourceInkRatio": 0.065061,
+          "sourceFeatureRatio": 0.058921,
+          "inkOverOriginalPageDensity": 0.69197,
+          "featureOverOriginalPageDensity": 0.685769,
+          "inkOverVariantPageDensity": 0.737303,
+          "featureOverVariantPageDensity": 0.734279,
+          "variantPageInkDensity": 0.088242,
+          "variantPageFeatureDensity": 0.080243
+        },
+        "all_highlights_ablated": {
+          "sourceInkRatio": 0.065061,
+          "sourceFeatureRatio": 0.058921,
+          "inkOverOriginalPageDensity": 0.69197,
+          "featureOverOriginalPageDensity": 0.685769,
+          "inkOverVariantPageDensity": 0.970334,
+          "featureOverVariantPageDensity": 0.989992,
+          "variantPageInkDensity": 0.06705,
+          "variantPageFeatureDensity": 0.059516
+        },
+        "non_outlier_highlights_ablated": {
+          "sourceInkRatio": 0.085001,
+          "sourceFeatureRatio": 0.078464,
+          "inkOverOriginalPageDensity": 0.904049,
+          "featureOverOriginalPageDensity": 0.913233,
+          "inkOverVariantPageDensity": 1.167101,
+          "featureOverVariantPageDensity": 1.203575,
+          "variantPageInkDensity": 0.072831,
+          "variantPageFeatureDensity": 0.065192
+        }
+      }
+    }
+  ],
+  "summary": {
+    "slotCount": 8,
+    "baselineOutlierSlotCount": 3,
+    "baselineOutlierSlotIds": [
+      "slot_3_R",
+      "slot_5_O",
+      "slot_6_S"
+    ],
+    "baselineOutlierLetters": "ROS",
+    "outlierSourceHighlightIds": [
+      "p75_orange_6",
+      "p75_orange_7",
+      "p75_orange_8"
+    ],
+    "outlierSurvivorCountAfterOutlierHighlightAblation": 2,
+    "outlierSurvivorLettersAfterOutlierHighlightAblation": "OS",
+    "outlierSurvivorCountAfterAllHighlightAblation": 2,
+    "meanOutlierHighlightAblationDropPct": 30.373,
+    "nonOutlierHighlightControlFlipCount": 0,
+    "hiddenHighlightAblationCandidate": false,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "highlightAblationFingerprint": "slots=8|baselineOutliers=3|letters=ROS|outlierHighlightIds=p75_orange_6,p75_orange_7,p75_orange_8|surviveOutlierAblation=2|surviveLetters=OS|surviveAllAblation=2|meanDropPct=30.4|nonOutlierControlFlips=0|hiddenCandidate=0|sourceR3=0|triggers=0/9|selectors=0",
+    "priorOutlierProvenanceFingerprint": "slots=8|outliers=3|letters=ROS|byInk=SOR|contiguousRun=2|activeContacts=3/4|B4=0|instr=0|targetHighlights=2|sourceHighlights=3|hiddenCandidate=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "decision": {
+    "currentScanOverdoseDensityHighlightAblationGate": "current_scan_overdose_density_highlight_ablation_no_selector",
+    "selectorUnlocked": false,
+    "reason": "The normalized OVERDOSE slot outliers do not survive source-highlight ablation as a source-backed selector; their signal is dependent on mirrored page-75 highlight regions and still has no R3 unit/order cue.",
+    "nextMove": "Keep current-scan OVERDOSE density as provenance noise unless a raw clue specifically names highlighted source bleed-through, slots, density, or a reading order."
+  },
+  "sheet": "analysis_outputs/source_audit/current_scan_overdose_density_highlight_ablation_gate/current_scan_overdose_density_highlight_ablation_gate_sheet.jpg",
+  "fingerprint": "slots=8|baselineOutliers=3|letters=ROS|outlierHighlightIds=p75_orange_6,p75_orange_7,p75_orange_8|surviveOutlierAblation=2|surviveLetters=OS|surviveAllAblation=2|meanDropPct=30.4|nonOutlierControlFlips=0|hiddenCandidate=0|sourceR3=0|triggers=0/9|selectors=0"
+}

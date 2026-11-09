@@ -1,0 +1,172 @@
+{
+  "createdAt": "2026-05-20T13:11:03",
+  "scope": "page-80 `5 SYMPTOM RELIEF` literal relief/removal test; no key derivation",
+  "symptoms": [
+    "NAUSEA",
+    "HEARTBURN",
+    "INDIGESTION",
+    "UPSET STOMACH",
+    "SHITCOINS"
+  ],
+  "packageTermAudit": {
+    "possibleActionTerms": [
+      "relief",
+      "reliever",
+      "fixes",
+      "proof",
+      "work",
+      "anti",
+      "fake"
+    ],
+    "explicitExtractionTerms": [],
+    "numbers": "5,100,5,16,473,6,473,80"
+  },
+  "p76UnitCount": 9,
+  "directMatches": [
+    {
+      "symptom": "HEARTBURN",
+      "unitId": "O1_2",
+      "unitKind": "orange",
+      "unitText": "Get some toxicity. Get some bitcoin. Open your heart to Bitcoin.",
+      "literalHits": [
+        "heart"
+      ],
+      "semanticHits": [],
+      "relievedLiteral": "Get some toxicity. Get some bitcoin. Open your to Bitcoin.",
+      "relievedAll": "Get some toxicity. Get some bitcoin. Open your to Bitcoin.",
+      "relievedLiteralInitials": "GstGsbOytB",
+      "relievedAllInitials": "GstGsbOytB",
+      "instructionHits": []
+    },
+    {
+      "symptom": "HEARTBURN",
+      "unitId": "O5",
+      "unitKind": "orange",
+      "unitText": "shitcoiner at heart.",
+      "literalHits": [
+        "heart"
+      ],
+      "semanticHits": [],
+      "relievedLiteral": "shitcoiner at.",
+      "relievedAll": "shitcoiner at.",
+      "relievedLiteralInitials": "sa",
+      "relievedAllInitials": "sa",
+      "instructionHits": []
+    },
+    {
+      "symptom": "UPSET STOMACH",
+      "unitId": "B3",
+      "unitKind": "grey",
+      "unitText": "It's a stun gun to the genitals",
+      "literalHits": [],
+      "semanticHits": [
+        "genitals"
+      ],
+      "relievedLiteral": "It's a stun gun to the genitals",
+      "relievedAll": "It's a stun gun to the",
+      "relievedLiteralInitials": "Iasgttg",
+      "relievedAllInitials": "Iasgtt",
+      "instructionHits": []
+    },
+    {
+      "symptom": "SHITCOINS",
+      "unitId": "O5",
+      "unitKind": "orange",
+      "unitText": "shitcoiner at heart.",
+      "literalHits": [
+        "shitcoiner",
+        "shitcoin"
+      ],
+      "semanticHits": [],
+      "relievedLiteral": "at heart.",
+      "relievedAll": "at heart.",
+      "relievedLiteralInitials": "ah",
+      "relievedAllInitials": "ah",
+      "instructionHits": []
+    }
+  ],
+  "orderedAssignment": [
+    {
+      "symptom": "NAUSEA",
+      "unitId": "O1_2",
+      "unitText": "Get some toxicity. Get some bitcoin. Open your heart to Bitcoin.",
+      "literalRoots": [
+        "nausea",
+        "sick",
+        "vomit"
+      ],
+      "relieved": "Get some toxicity. Get some bitcoin. Open your heart to Bitcoin.",
+      "changed": false,
+      "relievedInitials": "GstGsbOyhtB"
+    },
+    {
+      "symptom": "HEARTBURN",
+      "unitId": "O3",
+      "unitText": "by the rancid catnip of fiat money.",
+      "literalRoots": [
+        "heart",
+        "burn"
+      ],
+      "relieved": "by the rancid catnip of fiat money.",
+      "changed": false,
+      "relievedInitials": "btrcofm"
+    },
+    {
+      "symptom": "INDIGESTION",
+      "unitId": "O4",
+      "unitText": "“buying the dip.”",
+      "literalRoots": [
+        "indigestion",
+        "indigest",
+        "digest"
+      ],
+      "relieved": "“buying the dip.”",
+      "changed": false,
+      "relievedInitials": "btd"
+    },
+    {
+      "symptom": "UPSET STOMACH",
+      "unitId": "B3",
+      "unitText": "It's a stun gun to the genitals",
+      "literalRoots": [
+        "upset",
+        "stomach"
+      ],
+      "relieved": "It's a stun gun to the genitals",
+      "changed": false,
+      "relievedInitials": "Iasgttg"
+    },
+    {
+      "symptom": "SHITCOINS",
+      "unitId": "B4",
+      "unitText": "$1 billion",
+      "literalRoots": [
+        "shitcoins",
+        "shitcoiners",
+        "shitcoiner",
+        "shitcoin"
+      ],
+      "relieved": "$1 billion",
+      "changed": false,
+      "relievedInitials": "$b"
+    }
+  ],
+  "streams": {
+    "directLiteralRelief": "Get some toxicity. Get some bitcoin. Open your to Bitcoin. | shitcoiner at. | It's a stun gun to the genitals | at heart.",
+    "directAllRelief": "Get some toxicity. Get some bitcoin. Open your to Bitcoin. | shitcoiner at. | It's a stun gun to the | at heart.",
+    "orderedForcedRelief": "Get some toxicity. Get some bitcoin. Open your heart to Bitcoin. | by the rancid catnip of fiat money. | “buying the dip.” | It's a stun gun to the genitals | $1 billion",
+    "directLiteralInitials": "GstGsbOytBsaIasgttgah",
+    "directAllInitials": "GstGsbOytBsaIasgttah",
+    "orderedForcedInitials": "GstGsbOyhtBbtrcofmbtdIasgttg$b"
+  },
+  "streamInstructionHits": {},
+  "assessment": [
+    "`5 SYMPTOM RELIEF` is real count/theme evidence, and `relief` is the cleanest action word on the package.",
+    "Literal symptom removal has no complete five-of-five mapping into the ordered page-76 targets; in the forced printed order, none of the five target texts changes.",
+    "Direct literal matches cluster on `heart` and `shitcoiner at heart`, but relieving HEARTBURN and SHITCOINS from O5 collapses to short leftovers like `shitcoiner at` / `at heart` / `at`, not an instruction.",
+    "Instruction hits in relief streams: none.",
+    "This keeps p80 as a five-count locator and theme validator, not the missing extraction-unit rule."
+  ],
+  "decision": "do_not_promote_relief_to_selector",
+  "nextMove": "Keep p80 package copy in the C6 locator evidence. Reopen only if source geometry places the bottle/package copy onto page 76 or an external clue explicitly says to relieve/remove symptoms."
+}

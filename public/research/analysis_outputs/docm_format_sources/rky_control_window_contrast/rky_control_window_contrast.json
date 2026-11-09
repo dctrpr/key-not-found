@@ -1,0 +1,63 @@
+{
+  "createdAt": "2026-05-20T10:12:44",
+  "scope": "contrast adjacent R-K-Y style control with repaired lower-corridor R-K-Y geometry; no key derivation",
+  "sourceReports": {
+    "rkyRarity": "analysis_outputs/docm_format_sources/repaired_rky_signature_rarity/repaired_rky_signature_rarity.json",
+    "page76TargetConvergence": "analysis_outputs/source_audit/page76_target_convergence/page76_target_convergence.json"
+  },
+  "records": [
+    {
+      "name": "adjacent_RKY_control",
+      "page": 75,
+      "source": "only adjacent R-K-Y style window in DOCM pages 75-79",
+      "texts": [
+        "epithet.Now he's slinging proof of stake at the mEthereum lab.",
+        "Don't fall for shitcoinery.",
+        "Keep your dignity."
+      ],
+      "joined": "epithet.Now he's slinging proof of stake at the mEthereum lab. | Don't fall for shitcoinery. | Keep your dignity.",
+      "wordCount": 18,
+      "initials": "eNhsposatmlDffsKyd",
+      "lasts": "twsgffetembtlrypry",
+      "reversedWords": "dignity your Keep shitcoinery for fall Don't lab mEthereum the at stake of proof slinging he's Now epithet",
+      "proceduralHits": [],
+      "contentCommandHits": [
+        "don't",
+        "keep",
+        "fall"
+      ],
+      "page76TargetHits": []
+    },
+    {
+      "name": "repaired_RKY_geometry_signature",
+      "page": 76,
+      "source": "p78-frame exact-edge geometry at dx=-38",
+      "texts": [
+        "should sell",
+        "Volcano Bonds",
+        "shitcoiner at heart"
+      ],
+      "joined": "should sell | Volcano Bonds | shitcoiner at heart",
+      "wordCount": 7,
+      "initials": "ssVBsah",
+      "lasts": "dlosrtt",
+      "reversedWords": "heart at shitcoiner Bonds Volcano sell should",
+      "proceduralHits": [],
+      "contentCommandHits": [
+        "sell"
+      ],
+      "page76TargetHits": [
+        "O5",
+        "G5"
+      ]
+    }
+  ],
+  "sheet": "analysis_outputs/docm_format_sources/rky_control_window_contrast/rky_control_window_contrast_sheet.jpg",
+  "assessment": [
+    "The page-75 adjacent R-K-Y window has content commands (`Don't`, `Keep`) but no extraction terms such as read, mirror, fold, word, letter, key, line, or take.",
+    "The repaired page-76 R-K-Y trio has the relevant target terms (`Volcano Bonds`, `shitcoiner at heart`) but still no procedural extraction terms.",
+    "This contrast makes the page-75 adjacent R-K-Y useful as a control/decoy check, not as an instruction source.",
+    "The lower-corridor R-K-Y remains valuable only because geometry selects the exact target trio; it still needs an external/source rule for the extraction unit."
+  ],
+  "nextMove": "Do not follow the page-75 adjacent R-K-Y window unless a new clue points back to `Don't fall` / `Keep your dignity`. Keep priority on lower-corridor source registration and a rule naming the unit to extract."
+}

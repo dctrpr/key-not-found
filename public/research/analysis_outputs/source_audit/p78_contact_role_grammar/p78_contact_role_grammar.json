@@ -1,0 +1,168 @@
+{
+  "createdAt": "2026-05-20T19:38:34",
+  "scope": "bounded p78 frame contact-role grammar audit; no key derivation",
+  "sources": {
+    "triContact": "analysis_outputs/source_audit/p78_frame_tricontact_signature/p78_frame_tricontact_signature.json",
+    "edgeAdjacent": "analysis_outputs/source_audit/p78_frame_edge_adjacent_units/p78_frame_edge_adjacent_units.json",
+    "g5O5": "analysis_outputs/source_audit/g5_o5_local_unit_rules/g5_o5_local_unit_rules.json",
+    "m3M4": "analysis_outputs/source_audit/m3_m4_obbo_order/m3_m4_obbo_order.json"
+  },
+  "overlay": "analysis_outputs/source_audit/p78_contact_role_grammar/p78_contact_role_grammar_overlay.jpg",
+  "contacts": [
+    {
+      "edge": "T",
+      "id": "T-cut",
+      "label": "should sell",
+      "kind": "text",
+      "role": "top edge text cut",
+      "box": [
+        1196.0,
+        2398.0,
+        1416.0,
+        2453.0
+      ],
+      "evidence": "edge-adjacent audit top_cut_inside"
+    },
+    {
+      "edge": "L",
+      "id": "G5_trusted",
+      "label": "Volcano Bonds",
+      "kind": "black_text",
+      "role": "left edge touches G5 after dx=-38 repair",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "evidence": "left edge gap 0.0 px, vertical overlap 48.0 px"
+    },
+    {
+      "edge": "R",
+      "id": "M3",
+      "label": "standalone mark",
+      "kind": "visual_mark",
+      "role": "right edge cuts M3 and M3 axis remains in the mark",
+      "box": [
+        2172.0,
+        2619.0,
+        2544.0,
+        2884.0
+      ],
+      "evidence": "right-edge M3 overlap 265.0 px, axis in mark True"
+    },
+    {
+      "edge": "B",
+      "id": "O5",
+      "label": "shitcoiner at heart",
+      "kind": "orange_text",
+      "role": "bottom edge clips O5",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "evidence": "bottom O5 width 465.0 px, O5 overlap 0.26957"
+    }
+  ],
+  "structural": {
+    "chosenFrame": "g5_edge_touch",
+    "chosenFrameBox": [
+      1196.0,
+      2398.0,
+      2212.0,
+      2950.0
+    ],
+    "triContactPass": true,
+    "g5O5LineGap": 5,
+    "g5LinePlus5MatchesO5": true,
+    "m3M4WedgeSelectedAnchors": [
+      "shitcoiner at heart"
+    ]
+  },
+  "streams": [
+    {
+      "name": "clockwise_top_start",
+      "edgeCode": "TRBL",
+      "ids": "T-cut | M3 | O5 | G5_trusted",
+      "labels": "should sell | standalone mark | shitcoiner at heart | Volcano Bonds",
+      "initials": "ss sm sah VB",
+      "instructionHits": []
+    },
+    {
+      "name": "counterclockwise_top_start",
+      "edgeCode": "TLBR",
+      "ids": "T-cut | G5_trusted | O5 | M3",
+      "labels": "should sell | Volcano Bonds | shitcoiner at heart | standalone mark",
+      "initials": "ss VB sah sm",
+      "instructionHits": []
+    },
+    {
+      "name": "tri_contact_edges_left_right_bottom",
+      "edgeCode": "LRB",
+      "ids": "G5_trusted | M3 | O5",
+      "labels": "Volcano Bonds | standalone mark | shitcoiner at heart",
+      "initials": "VB sm sah",
+      "instructionHits": []
+    },
+    {
+      "name": "tri_contact_clockwise_left_start",
+      "edgeCode": "LRB",
+      "ids": "G5_trusted | M3 | O5",
+      "labels": "Volcano Bonds | standalone mark | shitcoiner at heart",
+      "initials": "VB sm sah",
+      "instructionHits": []
+    },
+    {
+      "name": "tri_contact_counterclockwise_left_start",
+      "edgeCode": "LBR",
+      "ids": "G5_trusted | O5 | M3",
+      "labels": "Volcano Bonds | shitcoiner at heart | standalone mark",
+      "initials": "VB sah sm",
+      "instructionHits": []
+    },
+    {
+      "name": "text_contacts_only",
+      "edgeCode": "LB",
+      "ids": "G5_trusted | O5",
+      "labels": "Volcano Bonds | shitcoiner at heart",
+      "initials": "VB sah",
+      "instructionHits": []
+    },
+    {
+      "name": "color_or_medium_black_mark_orange",
+      "edgeCode": "LRB",
+      "ids": "G5_trusted | M3 | O5",
+      "labels": "Volcano Bonds | standalone mark | shitcoiner at heart",
+      "initials": "VB sm sah",
+      "instructionHits": []
+    },
+    {
+      "name": "top_then_text_contacts",
+      "edgeCode": "TLB",
+      "ids": "T-cut | G5_trusted | O5",
+      "labels": "should sell | Volcano Bonds | shitcoiner at heart",
+      "initials": "ss VB sah",
+      "instructionHits": []
+    },
+    {
+      "name": "bottom_then_left_then_right",
+      "edgeCode": "BLR",
+      "ids": "O5 | G5_trusted | M3",
+      "labels": "shitcoiner at heart | Volcano Bonds | standalone mark",
+      "initials": "sah VB sm",
+      "instructionHits": []
+    }
+  ],
+  "instructionHits": {},
+  "assessment": [
+    "The dx=-38 p78 frame has a stable three-object contact grammar: left touches G5, right cuts M3, and bottom clips O5.",
+    "Adding the top edge gives ordinary nearby article text ('should sell'), not an instruction.",
+    "Clockwise, counterclockwise, edge-role, medium/color, and text-only readings produce labels/initials only; no instruction-like terms appear in the content streams.",
+    "The grammar reconfirms registration and the G5/O5 five-line structure, but it still does not name a word, letter, line, direction, or key unit.",
+    "This closes p78 contact-role ordering as a standalone selector under the current scan."
+  ],
+  "decision": "Do not promote p78 contact-role grammar to extraction evidence; use it only as source-registration validation.",
+  "nextMove": "Use the Typeka/font layer and comparison articles to ask whether the three fonts regular/mix/bold provide the missing extraction unit around the page-76 G5/O5 corridor."
+}

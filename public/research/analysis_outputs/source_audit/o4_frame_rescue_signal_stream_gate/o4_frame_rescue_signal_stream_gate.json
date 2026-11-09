@@ -1,0 +1,179 @@
+{
+  "createdAt": "2026-05-21T01:52:00",
+  "scope": "styled signal stream inside 3-up/1-down O4 frame-rescue envelope; no OCR, key derivation, hashing, WIF, seed, or address checks",
+  "inputs": {
+    "contentGate": "analysis_outputs/source_audit/o4_frame_rescue_content_gate/o4_frame_rescue_content_gate.json",
+    "fontOrderAudit": "analysis_outputs/docm_format_sources/page76_corridor_font_order_audit.json",
+    "activeTargets": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json"
+  },
+  "fullCoverageFrame": [
+    294.0,
+    2176.81,
+    2250.0,
+    3023.73
+  ],
+  "activeTargets": [
+    {
+      "id": "buying_dip",
+      "phrase": "buying the dip",
+      "visualState": "Y"
+    },
+    {
+      "id": "one_billion",
+      "phrase": "$1 billion",
+      "visualState": "K"
+    },
+    {
+      "id": "volcano_bonds",
+      "phrase": "Volcano Bonds",
+      "visualState": "K"
+    },
+    {
+      "id": "shitcoiner_heart",
+      "phrase": "shitcoiner at heart",
+      "visualState": "Y"
+    }
+  ],
+  "frameSignalGroups": [
+    {
+      "groupIndex": 12,
+      "layerCode": "Y",
+      "text": "\"buying the dip.\"",
+      "letters": "buyingthedip",
+      "initial": "b",
+      "lastInitial": "p",
+      "length": 12,
+      "lengthMod10": 2,
+      "targetId": "buying_dip",
+      "isActiveTarget": true,
+      "hardInstructionHits": []
+    },
+    {
+      "groupIndex": 13,
+      "layerCode": "B",
+      "text": "President Nayib Bukele",
+      "letters": "PresidentNayibBukele",
+      "initial": "P",
+      "lastInitial": "e",
+      "length": 20,
+      "lengthMod10": 0,
+      "targetId": null,
+      "isActiveTarget": false,
+      "hardInstructionHits": []
+    },
+    {
+      "groupIndex": 14,
+      "layerCode": "K",
+      "text": "$1 billion",
+      "letters": "billion",
+      "initial": "$",
+      "lastInitial": "n",
+      "length": 8,
+      "lengthMod10": 8,
+      "targetId": "one_billion",
+      "isActiveTarget": true,
+      "hardInstructionHits": []
+    },
+    {
+      "groupIndex": 15,
+      "layerCode": "K",
+      "text": "“Volcano Bonds”",
+      "letters": "VolcanoBonds",
+      "initial": "V",
+      "lastInitial": "s",
+      "length": 12,
+      "lengthMod10": 2,
+      "targetId": "volcano_bonds",
+      "isActiveTarget": true,
+      "hardInstructionHits": []
+    },
+    {
+      "groupIndex": 16,
+      "layerCode": "B",
+      "text": "IMF loan",
+      "letters": "IMFloan",
+      "initial": "I",
+      "lastInitial": "n",
+      "length": 7,
+      "lengthMod10": 7,
+      "targetId": null,
+      "isActiveTarget": false,
+      "hardInstructionHits": []
+    },
+    {
+      "groupIndex": 17,
+      "layerCode": "M",
+      "text": "Mike Novogratz",
+      "letters": "MikeNovogratz",
+      "initial": "M",
+      "lastInitial": "z",
+      "length": 13,
+      "lengthMod10": 3,
+      "targetId": null,
+      "isActiveTarget": false,
+      "hardInstructionHits": []
+    },
+    {
+      "groupIndex": 18,
+      "layerCode": "M",
+      "text": "I don't really trust that guy.",
+      "letters": "Idontreallytrustthatguy",
+      "initial": "I",
+      "lastInitial": "y",
+      "length": 23,
+      "lengthMod10": 3,
+      "targetId": null,
+      "isActiveTarget": false,
+      "hardInstructionHits": []
+    },
+    {
+      "groupIndex": 19,
+      "layerCode": "Y",
+      "text": "shitcoiner at heart.",
+      "letters": "shitcoineratheart",
+      "initial": "s",
+      "lastInitial": "t",
+      "length": 17,
+      "lengthMod10": 7,
+      "targetId": "shitcoiner_heart",
+      "isActiveTarget": true,
+      "hardInstructionHits": []
+    }
+  ],
+  "streams": {
+    "frameLayerCodes": "YBKKBMMY",
+    "frameInitials": "bP$VIMIs",
+    "frameLastInitials": "pensnzyt",
+    "frameLengthMod10": "20827337",
+    "activeLayerCodes": "YKKY",
+    "activeInitials": "b$Vs",
+    "activeLastInitials": "pnst",
+    "nonActiveLayerCodes": "BBMM",
+    "nonActiveInitials": "PIMI",
+    "nonActiveLastInitials": "enzy"
+  },
+  "summary": {
+    "frameSignalGroupCount": 8,
+    "activeSignalGroupCount": 4,
+    "nonActiveSignalGroupCount": 4,
+    "frameLayerCodes": "YBKKBMMY",
+    "activeLayerCodes": "YKKY",
+    "nonActiveLayerCodes": "BBMM",
+    "nonActiveSignalTexts": [
+      "President Nayib Bukele",
+      "IMF loan",
+      "Mike Novogratz",
+      "I don't really trust that guy."
+    ],
+    "hardInstructionHits": [],
+    "hardInstructionHitCount": 0,
+    "selectorUnlocked": false
+  },
+  "decision": {
+    "o4FrameRescueSignalStreamGate": "fails_isolation_selector",
+    "selectorUnlocked": false,
+    "reason": "The styled stream inside the full-coverage frame is YBKKBMMY: it contains the active YKKY quartet but also four non-active styled groups, with zero hard instruction hits.",
+    "nextMove": "Keep the styled stream as source-validation/context only; reopen only if source wording names a style-layer filter or exact group order."
+  },
+  "sheet": "analysis_outputs/source_audit/o4_frame_rescue_signal_stream_gate/o4_frame_rescue_signal_stream_gate_sheet.jpg"
+}

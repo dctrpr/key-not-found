@@ -1,0 +1,1410 @@
+{
+  "createdAt": "2026-05-21T15:00:51",
+  "scope": "Current-scan page-76 target highlight-edge and crop-window boundary probe for O4/B4/G5/O5; no key derivation, hashing, WIF, seed, address checks, OCR-to-key extraction, or broad candidate generation.",
+  "inputs": {
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "articleMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "sourcePage": "analysis_outputs/source_images/magazine_page_76.jpg",
+    "uprightPage": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "parameters": {
+    "targetEdgeWidthPx": 28,
+    "cropEdgeWidthPx": 24,
+    "cropPadX": 180,
+    "cropPadY": 120,
+    "strictInstructionTerms": [
+      "above",
+      "below",
+      "bottom",
+      "boundary",
+      "count",
+      "crop",
+      "edge",
+      "end",
+      "first",
+      "fold",
+      "inside",
+      "key",
+      "last",
+      "left",
+      "letter",
+      "line",
+      "mirror",
+      "order",
+      "outside",
+      "private",
+      "read",
+      "reverse",
+      "right",
+      "seed",
+      "side",
+      "slot",
+      "start",
+      "take",
+      "top",
+      "turn",
+      "window",
+      "word"
+    ],
+    "contextTerms": [
+      "billion",
+      "bitcoin",
+      "bond",
+      "bonds",
+      "buying",
+      "dip",
+      "heart",
+      "over",
+      "overdose",
+      "sell",
+      "shitcoiner",
+      "volcano"
+    ]
+  },
+  "boundaryRows": [
+    {
+      "target": "O4",
+      "id": "buying_dip",
+      "phrase": "buying the dip",
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "kind": "target_edge",
+      "side": "left",
+      "region": [
+        1306.0,
+        2167.0,
+        1362.0,
+        2235.0
+      ],
+      "wordCount": 0,
+      "wordText": "",
+      "wordTokens": [],
+      "wordIds": [],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 1,
+      "charStream": "B",
+      "pixelStats": {
+        "areaPx": 3808,
+        "featureRatio": 0.390231,
+        "orangeRatio": 0.305935,
+        "darkRatio": 0.372374,
+        "greyRatio": 0.064601
+      }
+    },
+    {
+      "target": "O4",
+      "id": "buying_dip",
+      "phrase": "buying the dip",
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "kind": "target_edge",
+      "side": "right",
+      "region": [
+        1773.0,
+        2167.0,
+        1829.0,
+        2235.0
+      ],
+      "wordCount": 0,
+      "wordText": "",
+      "wordTokens": [],
+      "wordIds": [],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 0,
+      "charStream": "",
+      "pixelStats": {
+        "areaPx": 3808,
+        "featureRatio": 0.349265,
+        "orangeRatio": 0.271534,
+        "darkRatio": 0.344275,
+        "greyRatio": 0.045693
+      }
+    },
+    {
+      "target": "O4",
+      "id": "buying_dip",
+      "phrase": "buying the dip",
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "kind": "target_edge",
+      "side": "top",
+      "region": [
+        1324.0,
+        2149.0,
+        1811.0,
+        2205.0
+      ],
+      "wordCount": 1,
+      "wordText": "ByiiREeraipy\"",
+      "wordTokens": [
+        "byiireeraipy"
+      ],
+      "wordIds": [
+        "p76w182"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 13,
+      "charStream": "ByiiREeraipy\"",
+      "pixelStats": {
+        "areaPx": 27272,
+        "featureRatio": 0.470739,
+        "orangeRatio": 0.326855,
+        "darkRatio": 0.466962,
+        "greyRatio": 0.058265
+      }
+    },
+    {
+      "target": "O4",
+      "id": "buying_dip",
+      "phrase": "buying the dip",
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "kind": "target_edge",
+      "side": "bottom",
+      "region": [
+        1324.0,
+        2197.0,
+        1811.0,
+        2253.0
+      ],
+      "wordCount": 4,
+      "wordText": "ByiiREeraipy\" when he announced",
+      "wordTokens": [
+        "byiireeraipy",
+        "when",
+        "he",
+        "announced"
+      ],
+      "wordIds": [
+        "p76w182",
+        "p76w188",
+        "p76w189",
+        "p76w190"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 27,
+      "charStream": "ByiiREeraipy\"henheannounced",
+      "pixelStats": {
+        "areaPx": 27272,
+        "featureRatio": 0.476129,
+        "orangeRatio": 0.383214,
+        "darkRatio": 0.467842,
+        "greyRatio": 0.033001
+      }
+    },
+    {
+      "target": "O4",
+      "id": "buying_dip",
+      "phrase": "buying the dip",
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "kind": "crop_window_edge",
+      "side": "left",
+      "region": [
+        1154.0,
+        2057.0,
+        1178.0,
+        2345.0
+      ],
+      "wordCount": 3,
+      "wordText": "Monetary them Bukele",
+      "wordTokens": [
+        "monetary",
+        "them",
+        "bukele"
+      ],
+      "wordIds": [
+        "p76w171",
+        "p76w180",
+        "p76w187"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 8,
+      "charStream": "Eneemkes",
+      "pixelStats": {
+        "areaPx": 6912,
+        "featureRatio": 0.166667,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.145255,
+        "greyRatio": 0.166667
+      }
+    },
+    {
+      "target": "O4",
+      "id": "buying_dip",
+      "phrase": "buying the dip",
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "kind": "crop_window_edge",
+      "side": "right",
+      "region": [
+        1957.0,
+        2057.0,
+        1981.0,
+        2345.0
+      ],
+      "wordCount": 0,
+      "wordText": "",
+      "wordTokens": [],
+      "wordIds": [],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 0,
+      "charStream": "",
+      "pixelStats": {
+        "areaPx": 6912,
+        "featureRatio": 0.0,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.0,
+        "greyRatio": 0.0
+      }
+    },
+    {
+      "target": "O4",
+      "id": "buying_dip",
+      "phrase": "buying the dip",
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "kind": "crop_window_edge",
+      "side": "top",
+      "region": [
+        1154.0,
+        2057.0,
+        1981.0,
+        2081.0
+      ],
+      "wordCount": 2,
+      "wordText": "El Salvador",
+      "wordTokens": [
+        "el",
+        "salvador"
+      ],
+      "wordIds": [
+        "p76w166",
+        "p76w167"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 10,
+      "charStream": "ElSalvador",
+      "pixelStats": {
+        "areaPx": 19848,
+        "featureRatio": 0.065901,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.057739,
+        "greyRatio": 0.065901
+      }
+    },
+    {
+      "target": "O4",
+      "id": "buying_dip",
+      "phrase": "buying the dip",
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "kind": "crop_window_edge",
+      "side": "bottom",
+      "region": [
+        1154.0,
+        2321.0,
+        1981.0,
+        2345.0
+      ],
+      "wordCount": 3,
+      "wordText": "volcanoes to mine",
+      "wordTokens": [
+        "volcanoes",
+        "to",
+        "mine"
+      ],
+      "wordIds": [
+        "p76w198",
+        "p76w199",
+        "p76w200"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 16,
+      "charStream": "svolcanoestomine",
+      "pixelStats": {
+        "areaPx": 19848,
+        "featureRatio": 0.103083,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.085198,
+        "greyRatio": 0.103083
+      }
+    },
+    {
+      "target": "B4",
+      "id": "one_billion",
+      "phrase": "$1 billion",
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "kind": "target_edge",
+      "side": "left",
+      "region": [
+        400.0,
+        2388.0,
+        456.0,
+        2455.0
+      ],
+      "wordCount": 0,
+      "wordText": "",
+      "wordTokens": [],
+      "wordIds": [],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 0,
+      "charStream": "",
+      "pixelStats": {
+        "areaPx": 3752,
+        "featureRatio": 0.1871,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.166311,
+        "greyRatio": 0.1871
+      }
+    },
+    {
+      "target": "B4",
+      "id": "one_billion",
+      "phrase": "$1 billion",
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "kind": "target_edge",
+      "side": "right",
+      "region": [
+        663.0,
+        2388.0,
+        719.0,
+        2455.0
+      ],
+      "wordCount": 0,
+      "wordText": "",
+      "wordTokens": [],
+      "wordIds": [],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 0,
+      "charStream": "",
+      "pixelStats": {
+        "areaPx": 3752,
+        "featureRatio": 0.303305,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.279051,
+        "greyRatio": 0.303305
+      }
+    },
+    {
+      "target": "B4",
+      "id": "one_billion",
+      "phrase": "$1 billion",
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "kind": "target_edge",
+      "side": "top",
+      "region": [
+        418.0,
+        2370.0,
+        701.0,
+        2426.0
+      ],
+      "wordCount": 1,
+      "wordText": "eis",
+      "wordTokens": [
+        "eis"
+      ],
+      "wordIds": [
+        "p76w201"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 3,
+      "charStream": "eis",
+      "pixelStats": {
+        "areaPx": 15848,
+        "featureRatio": 0.317264,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.29663,
+        "greyRatio": 0.317264
+      }
+    },
+    {
+      "target": "B4",
+      "id": "one_billion",
+      "phrase": "$1 billion",
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "kind": "target_edge",
+      "side": "bottom",
+      "region": [
+        418.0,
+        2417.0,
+        701.0,
+        2473.0
+      ],
+      "wordCount": 2,
+      "wordText": "eis billions",
+      "wordTokens": [
+        "eis",
+        "billions"
+      ],
+      "wordIds": [
+        "p76w201",
+        "p76w209"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 12,
+      "charStream": "eisbillionsw",
+      "pixelStats": {
+        "areaPx": 15848,
+        "featureRatio": 0.395886,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.382067,
+        "greyRatio": 0.395886
+      }
+    },
+    {
+      "target": "B4",
+      "id": "one_billion",
+      "phrase": "$1 billion",
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "kind": "crop_window_edge",
+      "side": "left",
+      "region": [
+        248.0,
+        2278.0,
+        272.0,
+        2565.0
+      ],
+      "wordCount": 0,
+      "wordText": "",
+      "wordTokens": [],
+      "wordIds": [],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 0,
+      "charStream": "",
+      "pixelStats": {
+        "areaPx": 6888,
+        "featureRatio": 0.0,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.0,
+        "greyRatio": 0.0
+      }
+    },
+    {
+      "target": "B4",
+      "id": "one_billion",
+      "phrase": "$1 billion",
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "kind": "crop_window_edge",
+      "side": "right",
+      "region": [
+        847.0,
+        2278.0,
+        871.0,
+        2565.0
+      ],
+      "wordCount": 3,
+      "wordText": "tap bitcoin of",
+      "wordTokens": [
+        "tap",
+        "bitcoin",
+        "of"
+      ],
+      "wordIds": [
+        "p76w195",
+        "p76w203",
+        "p76w211"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [
+        "bitcoin"
+      ],
+      "charCount": 7,
+      "charStream": "entatcf",
+      "pixelStats": {
+        "areaPx": 6888,
+        "featureRatio": 0.16507,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.145325,
+        "greyRatio": 0.16507
+      }
+    },
+    {
+      "target": "B4",
+      "id": "one_billion",
+      "phrase": "$1 billion",
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "kind": "crop_window_edge",
+      "side": "top",
+      "region": [
+        248.0,
+        2278.0,
+        871.0,
+        2302.0
+      ],
+      "wordCount": 3,
+      "wordText": "I tweeted President",
+      "wordTokens": [
+        "i",
+        "tweeted",
+        "president"
+      ],
+      "wordIds": [
+        "p76w183",
+        "p76w184",
+        "p76w185"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 16,
+      "charStream": "ItweetedPresiden",
+      "pixelStats": {
+        "areaPx": 14952,
+        "featureRatio": 0.124866,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.108815,
+        "greyRatio": 0.124866
+      }
+    },
+    {
+      "target": "B4",
+      "id": "one_billion",
+      "phrase": "$1 billion",
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "kind": "crop_window_edge",
+      "side": "bottom",
+      "region": [
+        248.0,
+        2541.0,
+        871.0,
+        2565.0
+      ],
+      "wordCount": 1,
+      "wordText": "collateralized",
+      "wordTokens": [
+        "collateralized"
+      ],
+      "wordIds": [
+        "p76w215"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 14,
+      "charStream": "collateralized",
+      "pixelStats": {
+        "areaPx": 14952,
+        "featureRatio": 0.168673,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.145198,
+        "greyRatio": 0.168673
+      }
+    },
+    {
+      "target": "G5",
+      "id": "volcano_bonds",
+      "phrase": "Volcano Bonds",
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "kind": "target_edge",
+      "side": "left",
+      "region": [
+        767.0,
+        2534.0,
+        823.0,
+        2602.0
+      ],
+      "wordCount": 0,
+      "wordText": "",
+      "wordTokens": [],
+      "wordIds": [],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 1,
+      "charStream": "d",
+      "pixelStats": {
+        "areaPx": 3808,
+        "featureRatio": 0.336134,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.310137,
+        "greyRatio": 0.336134
+      }
+    },
+    {
+      "target": "G5",
+      "id": "volcano_bonds",
+      "phrase": "Volcano Bonds",
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "kind": "target_edge",
+      "side": "right",
+      "region": [
+        1168.0,
+        2534.0,
+        1224.0,
+        2602.0
+      ],
+      "wordCount": 1,
+      "wordText": "to",
+      "wordTokens": [
+        "to"
+      ],
+      "wordIds": [
+        "p76w216"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 1,
+      "charStream": "t",
+      "pixelStats": {
+        "areaPx": 3808,
+        "featureRatio": 0.327731,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.308561,
+        "greyRatio": 0.327731
+      }
+    },
+    {
+      "target": "G5",
+      "id": "volcano_bonds",
+      "phrase": "Volcano Bonds",
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "kind": "target_edge",
+      "side": "top",
+      "region": [
+        785.0,
+        2516.0,
+        1206.0,
+        2572.0
+      ],
+      "wordCount": 0,
+      "wordText": "",
+      "wordTokens": [],
+      "wordIds": [],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 1,
+      "charStream": "d",
+      "pixelStats": {
+        "areaPx": 23576,
+        "featureRatio": 0.34726,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.325967,
+        "greyRatio": 0.34726
+      }
+    },
+    {
+      "target": "G5",
+      "id": "volcano_bonds",
+      "phrase": "Volcano Bonds",
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "kind": "target_edge",
+      "side": "bottom",
+      "region": [
+        785.0,
+        2564.0,
+        1206.0,
+        2620.0
+      ],
+      "wordCount": 4,
+      "wordText": "rid of those leeches.",
+      "wordTokens": [
+        "rid",
+        "of",
+        "those",
+        "leeches"
+      ],
+      "wordIds": [
+        "p76w224",
+        "p76w225",
+        "p76w226",
+        "p76w227"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 19,
+      "charStream": "dridofthoseleeches.",
+      "pixelStats": {
+        "areaPx": 23576,
+        "featureRatio": 0.400322,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.381659,
+        "greyRatio": 0.400322
+      }
+    },
+    {
+      "target": "G5",
+      "id": "volcano_bonds",
+      "phrase": "Volcano Bonds",
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "kind": "crop_window_edge",
+      "side": "left",
+      "region": [
+        615.0,
+        2424.0,
+        639.0,
+        2712.0
+      ],
+      "wordCount": 3,
+      "wordText": "billions collateralized and",
+      "wordTokens": [
+        "billions",
+        "collateralized",
+        "and"
+      ],
+      "wordIds": [
+        "p76w209",
+        "p76w215",
+        "p76w222"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 9,
+      "charStream": "nsteranra",
+      "pixelStats": {
+        "areaPx": 6912,
+        "featureRatio": 0.176794,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.159578,
+        "greyRatio": 0.176794
+      }
+    },
+    {
+      "target": "G5",
+      "id": "volcano_bonds",
+      "phrase": "Volcano Bonds",
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "kind": "crop_window_edge",
+      "side": "right",
+      "region": [
+        1352.0,
+        2424.0,
+        1376.0,
+        2712.0
+      ],
+      "wordCount": 4,
+      "wordText": "earnings off tagged could",
+      "wordTokens": [
+        "earnings",
+        "off",
+        "tagged",
+        "could"
+      ],
+      "wordIds": [
+        "p76w214",
+        "p76w218",
+        "p76w229",
+        "p76w237"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 8,
+      "charStream": "sngoggld",
+      "pixelStats": {
+        "areaPx": 6912,
+        "featureRatio": 0.114439,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.094184,
+        "greyRatio": 0.114439
+      }
+    },
+    {
+      "target": "G5",
+      "id": "volcano_bonds",
+      "phrase": "Volcano Bonds",
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "kind": "crop_window_edge",
+      "side": "top",
+      "region": [
+        615.0,
+        2424.0,
+        1376.0,
+        2448.0
+      ],
+      "wordCount": 6,
+      "wordText": "in bitcoin \u2014 that he should",
+      "wordTokens": [
+        "in",
+        "bitcoin",
+        "",
+        "that",
+        "he",
+        "should"
+      ],
+      "wordIds": [
+        "p76w202",
+        "p76w203",
+        "p76w204",
+        "p76w205",
+        "p76w206",
+        "p76w207"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [
+        "bitcoin"
+      ],
+      "charCount": 23,
+      "charStream": "inbitcoin\u2014thatheshoulds",
+      "pixelStats": {
+        "areaPx": 18264,
+        "featureRatio": 0.189553,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.17143,
+        "greyRatio": 0.189553
+      }
+    },
+    {
+      "target": "G5",
+      "id": "volcano_bonds",
+      "phrase": "Volcano Bonds",
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "kind": "crop_window_edge",
+      "side": "bottom",
+      "region": [
+        615.0,
+        2688.0,
+        1376.0,
+        2712.0
+      ],
+      "wordCount": 7,
+      "wordText": "Novogratz in the tweet, figuring he could",
+      "wordTokens": [
+        "novogratz",
+        "in",
+        "the",
+        "tweet",
+        "figuring",
+        "he",
+        "could"
+      ],
+      "wordIds": [
+        "p76w231",
+        "p76w232",
+        "p76w233",
+        "p76w234",
+        "p76w235",
+        "p76w236",
+        "p76w237"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 30,
+      "charStream": "ratzinthetweet,figuringhecould",
+      "pixelStats": {
+        "areaPx": 18264,
+        "featureRatio": 0.189006,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.162067,
+        "greyRatio": 0.189006
+      }
+    },
+    {
+      "target": "O5",
+      "id": "shitcoiner_heart",
+      "phrase": "shitcoiner at heart",
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "kind": "target_edge",
+      "side": "left",
+      "region": [
+        1012.0,
+        2922.0,
+        1068.0,
+        2992.0
+      ],
+      "wordCount": 1,
+      "wordText": "a",
+      "wordTokens": [
+        "a"
+      ],
+      "wordIds": [
+        "p76w263"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 2,
+      "charStream": "as",
+      "pixelStats": {
+        "areaPx": 3920,
+        "featureRatio": 0.366327,
+        "orangeRatio": 0.204337,
+        "darkRatio": 0.354337,
+        "greyRatio": 0.091582
+      }
+    },
+    {
+      "target": "O5",
+      "id": "shitcoiner_heart",
+      "phrase": "shitcoiner at heart",
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "kind": "target_edge",
+      "side": "right",
+      "region": [
+        1633.0,
+        2922.0,
+        1689.0,
+        2992.0
+      ],
+      "wordCount": 0,
+      "wordText": "",
+      "wordTokens": [],
+      "wordIds": [],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 0,
+      "charStream": "",
+      "pixelStats": {
+        "areaPx": 3920,
+        "featureRatio": 0.340816,
+        "orangeRatio": 0.289286,
+        "darkRatio": 0.332398,
+        "greyRatio": 0.026276
+      }
+    },
+    {
+      "target": "O5",
+      "id": "shitcoiner_heart",
+      "phrase": "shitcoiner at heart",
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "kind": "target_edge",
+      "side": "top",
+      "region": [
+        1030.0,
+        2904.0,
+        1671.0,
+        2960.0
+      ],
+      "wordCount": 1,
+      "wordText": "siukbeodmensertslveaarty",
+      "wordTokens": [
+        "siukbeodmensertslveaarty"
+      ],
+      "wordIds": [
+        "p76w264"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 24,
+      "charStream": "siukbeodmensertslveaarty",
+      "pixelStats": {
+        "areaPx": 35896,
+        "featureRatio": 0.475095,
+        "orangeRatio": 0.285937,
+        "darkRatio": 0.468437,
+        "greyRatio": 0.102602
+      }
+    },
+    {
+      "target": "O5",
+      "id": "shitcoiner_heart",
+      "phrase": "shitcoiner at heart",
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "kind": "target_edge",
+      "side": "bottom",
+      "region": [
+        1030.0,
+        2954.0,
+        1671.0,
+        3010.0
+      ],
+      "wordCount": 1,
+      "wordText": "siukbeodmensertslveaarty",
+      "wordTokens": [
+        "siukbeodmensertslveaarty"
+      ],
+      "wordIds": [
+        "p76w264"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 24,
+      "charStream": "siukbeodmensertslveaarty",
+      "pixelStats": {
+        "areaPx": 35896,
+        "featureRatio": 0.464397,
+        "orangeRatio": 0.363606,
+        "darkRatio": 0.458519,
+        "greyRatio": 0.04708
+      }
+    },
+    {
+      "target": "O5",
+      "id": "shitcoiner_heart",
+      "phrase": "shitcoiner at heart",
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "kind": "crop_window_edge",
+      "side": "left",
+      "region": [
+        860.0,
+        2812.0,
+        884.0,
+        3102.0
+      ],
+      "wordCount": 1,
+      "wordText": "it.",
+      "wordTokens": [
+        "it"
+      ],
+      "wordIds": [
+        "p76w253"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 3,
+      "charStream": "it.",
+      "pixelStats": {
+        "areaPx": 6960,
+        "featureRatio": 0.05546,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.048994,
+        "greyRatio": 0.05546
+      }
+    },
+    {
+      "target": "O5",
+      "id": "shitcoiner_heart",
+      "phrase": "shitcoiner at heart",
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "kind": "crop_window_edge",
+      "side": "right",
+      "region": [
+        1817.0,
+        2812.0,
+        1841.0,
+        3102.0
+      ],
+      "wordCount": 0,
+      "wordText": "",
+      "wordTokens": [],
+      "wordIds": [],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 0,
+      "charStream": "",
+      "pixelStats": {
+        "areaPx": 6960,
+        "featureRatio": 0.0,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.0,
+        "greyRatio": 0.0
+      }
+    },
+    {
+      "target": "O5",
+      "id": "shitcoiner_heart",
+      "phrase": "shitcoiner at heart",
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "kind": "crop_window_edge",
+      "side": "top",
+      "region": [
+        860.0,
+        2812.0,
+        1841.0,
+        2836.0
+      ],
+      "wordCount": 7,
+      "wordText": "it. I don't really trust that guy",
+      "wordTokens": [
+        "it",
+        "i",
+        "dont",
+        "really",
+        "trust",
+        "that",
+        "guy"
+      ],
+      "wordIds": [
+        "p76w253",
+        "p76w254",
+        "p76w255",
+        "p76w256",
+        "p76w257",
+        "p76w258",
+        "p76w259"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 27,
+      "charStream": "it.Idon'treallytrustthatguy",
+      "pixelStats": {
+        "areaPx": 23544,
+        "featureRatio": 0.000467,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.000382,
+        "greyRatio": 0.000467
+      }
+    },
+    {
+      "target": "O5",
+      "id": "shitcoiner_heart",
+      "phrase": "shitcoiner at heart",
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "kind": "crop_window_edge",
+      "side": "bottom",
+      "region": [
+        860.0,
+        3078.0,
+        1841.0,
+        3102.0
+      ],
+      "wordCount": 0,
+      "wordText": "",
+      "wordTokens": [],
+      "wordIds": [],
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "charCount": 0,
+      "charStream": "",
+      "pixelStats": {
+        "areaPx": 23544,
+        "featureRatio": 0.0,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.0,
+        "greyRatio": 0.0
+      }
+    }
+  ],
+  "streamRows": [
+    {
+      "name": "target_edge_left",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "firstTokenInitials": "...A",
+      "lastTokenInitials": "...A",
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "wordText": "a"
+    },
+    {
+      "name": "target_edge_right",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "firstTokenInitials": "..T.",
+      "lastTokenInitials": "..T.",
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "wordText": "to"
+    },
+    {
+      "name": "target_edge_top",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "firstTokenInitials": "BE.S",
+      "lastTokenInitials": "BE.S",
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "wordText": "ByiiREeraipy\" eis siukbeodmensertslveaarty"
+    },
+    {
+      "name": "target_edge_bottom",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "firstTokenInitials": "BERS",
+      "lastTokenInitials": "ABLS",
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "wordText": "ByiiREeraipy\" when he announced eis billions rid of those leeches. siukbeodmensertslveaarty"
+    },
+    {
+      "name": "crop_window_edge_left",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "firstTokenInitials": "M.BI",
+      "lastTokenInitials": "B.AI",
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "wordText": "Monetary them Bukele billions collateralized and it."
+    },
+    {
+      "name": "crop_window_edge_right",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "firstTokenInitials": ".TE.",
+      "lastTokenInitials": ".OC.",
+      "strictInstructionHits": [],
+      "contextTermHits": [
+        "bitcoin"
+      ],
+      "wordText": "tap bitcoin of earnings off tagged could"
+    },
+    {
+      "name": "crop_window_edge_top",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "firstTokenInitials": "EIII",
+      "lastTokenInitials": "SPSG",
+      "strictInstructionHits": [],
+      "contextTermHits": [
+        "bitcoin"
+      ],
+      "wordText": "El Salvador I tweeted President in bitcoin \u2014 that he should it. I don't really trust that guy"
+    },
+    {
+      "name": "crop_window_edge_bottom",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "firstTokenInitials": "VCN.",
+      "lastTokenInitials": "MCC.",
+      "strictInstructionHits": [],
+      "contextTermHits": [],
+      "wordText": "volcanoes to mine collateralized Novogratz in the tweet, figuring he could"
+    }
+  ],
+  "summary": {
+    "activeTargetCount": 4,
+    "boundaryRegionCount": 32,
+    "targetEdgeRegionCount": 16,
+    "cropWindowEdgeRegionCount": 16,
+    "regionWithWordCount": 21,
+    "strictInstructionRegionCount": 0,
+    "targetEdgeStrictInstructionRegionCount": 0,
+    "cropWindowStrictInstructionRegionCount": 0,
+    "strictInstructionTermHits": [],
+    "contextTermRegionCount": 2,
+    "contextTermHits": [
+      "bitcoin"
+    ],
+    "streamCount": 8,
+    "streamStrictInstructionHitCount": 0,
+    "streamContextTermHitCount": 1,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "boundaryInstructionProbeFingerprint": "targets=4|regions=32|wordRegions=21|strictRegions=0|targetStrict=0|cropStrict=0|contextRegions=2|strictTerms=-|contextTerms=bitcoin|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "decision": {
+    "currentScanHighlightBoundaryInstructionProbe": "boundary_edges_no_source_instruction_selector",
+    "selectorUnlocked": false,
+    "reason": "Neither active highlight edges nor the current light-table crop-window boundaries expose source-backed unit/order wording. Nearby OCR words are ordinary article context or noisy active-box text.",
+    "nextMove": "Stop tuning boundary strips on the current scan. The next useful move is either a manual review of the generated boundary sheet for visual anomalies or a distinct physical/original-layout source that can satisfy R1/R3."
+  },
+  "sheet": "analysis_outputs/source_audit/current_scan_highlight_boundary_instruction_probe/current_scan_highlight_boundary_instruction_probe_sheet.jpg",
+  "cropPanels": [
+    "analysis_outputs/source_audit/current_scan_highlight_boundary_instruction_probe/O4_boundary_probe.jpg",
+    "analysis_outputs/source_audit/current_scan_highlight_boundary_instruction_probe/B4_boundary_probe.jpg",
+    "analysis_outputs/source_audit/current_scan_highlight_boundary_instruction_probe/G5_boundary_probe.jpg",
+    "analysis_outputs/source_audit/current_scan_highlight_boundary_instruction_probe/O5_boundary_probe.jpg"
+  ]
+}

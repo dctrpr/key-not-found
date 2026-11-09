@@ -1,0 +1,140 @@
+{
+  "createdAt": "2026-05-20T12:07:07",
+  "scope": "source-registration acceptance benchmark; no key derivation",
+  "constraints": [
+    {
+      "id": "C1",
+      "name": "trusted source boxes",
+      "requirement": "Use trusted high-res O5 and corrected trusted G5, not stale projected p76_grey_5 geometry.",
+      "currentStatus": "PASS",
+      "evidence": "Trusted O5/G5 are now fixed: O5 [1040,2932,1661,2982], G5 [795,2544,1196,2592].",
+      "acceptance": "Any future source transform must report target boxes against these trusted units or a clearly better manual source."
+    },
+    {
+      "id": "C2",
+      "name": "p78 frame signature",
+      "requirement": "Explain current O5 bottom/left clip, trusted G5 38px near-edge relation, and the dx=-40 repair without arbitrary local fitting.",
+      "currentStatus": "PARTIAL",
+      "evidence": "Current O5 overlap=0.24754; G5 gap=38.0px; nearest simultaneous repair dx=-40, dy=0.",
+      "acceptance": "A valid source registration should naturally make this signature coherent while preserving the same corridor."
+    },
+    {
+      "id": "C3",
+      "name": "extraction unit",
+      "requirement": "Name a word, letter, line, edge, pixel, font-state, or ordering unit before any key derivation.",
+      "currentStatus": "FAIL",
+      "evidence": "Gap-repaired p78 streams produce instruction hits: none.",
+      "acceptance": "Must produce a human-readable instruction or checksum-valid compact key-like unit from a rule that follows from source/clue evidence."
+    },
+    {
+      "id": "C4",
+      "name": "physical leaf/spread support",
+      "requirement": "True physical page relationships should improve, not degrade, O5/G5 targeting.",
+      "currentStatus": "FAIL",
+      "evidence": "Current best-scan physical models have total trusted O5/G5 direct overlaps=0.",
+      "acceptance": "A physical scan/photo should show real front/back, spread, bleed-through, or fold behavior that selects the corridor."
+    },
+    {
+      "id": "C5",
+      "name": "opener capsule provenance",
+      "requirement": "Preserve the real p73->p79 five-capsule artwork reuse while avoiding loose forced M3/M4 assignment.",
+      "currentStatus": "PARTIAL",
+      "evidence": "Current endpoint sequence=M3M3M4M4M4; tight <=75px assigns 1/5, <=150px assigns 2/5.",
+      "acceptance": "A new transform should place all five ordered capsules tightly on text/selector units, or provide an explicit clue for M3/M4 binary/index use."
+    },
+    {
+      "id": "C6",
+      "name": "five-index locator",
+      "requirement": "Preserve the repeated five system without treating five, RRLL, or 1100 as key material by itself.",
+      "currentStatus": "PARTIAL",
+      "evidence": "Five repeats across p73/p79/p80/p76; p73/p79 step signature=RRLL / RRLL; p79-p73 offsets=[5, 5, 5, 5, 5]; instruction hits=none.",
+      "acceptance": "A future source/clue must explain how five selects a unit such as word/letter/edge/font before extraction resumes."
+    },
+    {
+      "id": "C7",
+      "name": "announcement media coverage",
+      "requirement": "Use public media sequence as target confirmation, not overclaim it as exact order.",
+      "currentStatus": "PARTIAL",
+      "evidence": "Media order unique page-76 initials=PpvV; missing units=buying_dip, one_billion, imf_loan.",
+      "acceptance": "Future use of media must add a new exact unit/order not already covered by page-76 Bukele/volcano targeting."
+    },
+    {
+      "id": "C8",
+      "name": "Canva/source image quality",
+      "requirement": "Do not use the 668x376 Canva thumbnail as geometry truth.",
+      "currentStatus": "FAIL",
+      "evidence": "Current Canva witness is thumbnail-scale ([668, 376]) and documented as an investigator note board.",
+      "acceptance": "Need original embedded assets, higher-resolution export, browser screenshot, or physical source image."
+    },
+    {
+      "id": "C9",
+      "name": "orientation/source cache bridge",
+      "requirement": "Compare future source images in the correct orientation before judging geometry.",
+      "currentStatus": "PASS",
+      "evidence": "Current 3D/readable layer matches source/PDF after `rotate180`; priority crop RMS range=1.132865 to 2.070533.",
+      "acceptance": "Use readable/upright geometry or rotate native source/PDF images 180 degrees before applying page-76 crop coordinates."
+    }
+  ],
+  "witnesses": [
+    {
+      "name": "current best high-res magazine.pdf",
+      "status": "PARTIAL",
+      "passes": [
+        "C1",
+        "C2-partial",
+        "C5-provenance",
+        "C6-locator",
+        "C7-targeting",
+        "C9"
+      ],
+      "fails": [
+        "C3",
+        "C4",
+        "C8"
+      ],
+      "verdict": "Good for target discovery and source provenance; insufficient for precise extraction."
+    },
+    {
+      "name": "current p78 dx=-40 local repair",
+      "status": "FAIL_AS_SELECTOR",
+      "passes": [
+        "C2-partial"
+      ],
+      "fails": [
+        "C3"
+      ],
+      "verdict": "Useful only as a future registration signature; it does not change the instruction-free phrase stream."
+    },
+    {
+      "name": "Canva 668x376 note board",
+      "status": "FAIL_GEOMETRY_TRUTH",
+      "passes": [
+        "C7-targeting"
+      ],
+      "fails": [
+        "C8"
+      ],
+      "verdict": "Orientation/provenance clue only; too small and secondary for measurement."
+    },
+    {
+      "name": "announcement media sequence",
+      "status": "PARTIAL",
+      "passes": [
+        "C7-targeting"
+      ],
+      "fails": [
+        "C3"
+      ],
+      "verdict": "Confirms page 76/Bukele/volcano area, but not exact order or unit."
+    },
+    {
+      "name": "future physical/source scan",
+      "status": "REQUIRED_NEXT",
+      "passes": [],
+      "fails": [],
+      "verdict": "Highest-value missing evidence: must be tested against C1-C9 before new extraction."
+    }
+  ],
+  "decision": "Do not promote new local geometry streams unless they pass C2/C3 and explain C6; current local sources fail the extraction-unit requirement.",
+  "nextMove": "Acquire or inspect a better source image/physical scan, then score it against this benchmark before extracting words/letters."
+}

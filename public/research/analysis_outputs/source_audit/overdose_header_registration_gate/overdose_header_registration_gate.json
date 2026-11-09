@@ -1,0 +1,538 @@
+{
+  "createdAt": "2026-05-21T01:04:43",
+  "scope": "OVERDOSE header/layout registration test for p78 source graphic against page-76 active targets; no OCR or key derivation",
+  "inputs": {
+    "article3dMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "activeTargets": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "p78SourceGraphic": "analysis_outputs/source_audit/p78_source_graphic_instruction_surface/p78_source_graphic_instruction_surface.json",
+    "p78FrameOrderRead": "analysis_outputs/source_audit/p78_frame_order_read/p78_frame_order_read.json"
+  },
+  "overdoseWords": {
+    "page76": {
+      "box": [
+        2150.98,
+        153.05,
+        2291.26,
+        184.24
+      ],
+      "center": [
+        2221.12,
+        168.645
+      ],
+      "text": "OVERDOSE"
+    },
+    "page78": {
+      "box": [
+        2162.04,
+        151.8,
+        2301.55,
+        178.47
+      ],
+      "center": [
+        2231.795,
+        165.135
+      ],
+      "text": "OVERDOSE"
+    }
+  },
+  "headerRegistration": {
+    "dx": -10.675,
+    "dy": 3.51
+  },
+  "p78SourceGraphicBox": [
+    294.0,
+    2398.0,
+    1310.0,
+    2950.0
+  ],
+  "activeTargets": [
+    {
+      "id": "O4",
+      "sourceId": "buying_dip",
+      "label": "O4 buying the dip",
+      "kind": "active-target",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "visualState": "Y",
+      "source": "page76_active_target_crop_completion"
+    },
+    {
+      "id": "B4_text",
+      "sourceId": "one_billion",
+      "label": "B4 $1 billion",
+      "kind": "active-target",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "visualState": "K",
+      "source": "page76_active_target_crop_completion"
+    },
+    {
+      "id": "G5",
+      "sourceId": "volcano_bonds",
+      "label": "G5 Volcano Bonds",
+      "kind": "active-target",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "visualState": "K",
+      "source": "page76_active_target_crop_completion"
+    },
+    {
+      "id": "O5",
+      "sourceId": "shitcoiner_heart",
+      "label": "O5 shitcoiner at heart",
+      "kind": "active-target",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "visualState": "Y",
+      "source": "page76_active_target_crop_completion"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "current_horizontal_mirror",
+      "label": "current p78 horizontal mirror",
+      "p76Box": [
+        1234.0,
+        2398.0,
+        2250.0,
+        2950.0
+      ],
+      "transform": "p78 source box mirrored horizontally onto p76",
+      "rows": [
+        {
+          "id": "could_sell",
+          "label": "could sell",
+          "kind": "left-edge phrase",
+          "isActiveTarget": false,
+          "overlapVsTarget": 1.0,
+          "edgeGapPx": 0.0,
+          "relation": "full",
+          "unitTermHits": []
+        },
+        {
+          "id": "pay_imf",
+          "label": "pay off the IMF",
+          "kind": "left-edge phrase",
+          "isActiveTarget": false,
+          "overlapVsTarget": 1.0,
+          "edgeGapPx": 0.0,
+          "relation": "full",
+          "unitTermHits": []
+        },
+        {
+          "id": "tagged_mike",
+          "label": "I tagged Mike",
+          "kind": "left-edge phrase",
+          "isActiveTarget": false,
+          "overlapVsTarget": 1.0,
+          "edgeGapPx": 0.0,
+          "relation": "full",
+          "unitTermHits": []
+        },
+        {
+          "id": "trust_guy",
+          "label": "trust that guy",
+          "kind": "left-edge phrase",
+          "isActiveTarget": false,
+          "overlapVsTarget": 1.0,
+          "edgeGapPx": 0.0,
+          "relation": "full",
+          "unitTermHits": []
+        },
+        {
+          "id": "earnings",
+          "label": "earnings",
+          "kind": "left-edge word",
+          "isActiveTarget": false,
+          "overlapVsTarget": 0.933072,
+          "edgeGapPx": 0.0,
+          "relation": "full",
+          "unitTermHits": []
+        },
+        {
+          "id": "should_sell",
+          "label": "should sell",
+          "kind": "top-edge article phrase",
+          "isActiveTarget": false,
+          "overlapVsTarget": 0.763514,
+          "edgeGapPx": 0.0,
+          "relation": "full",
+          "unitTermHits": []
+        },
+        {
+          "id": "O5",
+          "label": "O5 shitcoiner at heart",
+          "kind": "active-target",
+          "isActiveTarget": true,
+          "overlapVsTarget": 0.247536,
+          "edgeGapPx": 0.0,
+          "relation": "partial",
+          "unitTermHits": []
+        },
+        {
+          "id": "O4",
+          "label": "O4 buying the dip",
+          "kind": "active-target",
+          "isActiveTarget": true,
+          "overlapVsTarget": 0.0,
+          "edgeGapPx": 197.0,
+          "relation": "miss",
+          "unitTermHits": []
+        },
+        {
+          "id": "G5",
+          "label": "G5 Volcano Bonds",
+          "kind": "active-target",
+          "isActiveTarget": true,
+          "overlapVsTarget": 0.0,
+          "edgeGapPx": 238.5,
+          "relation": "miss",
+          "unitTermHits": []
+        },
+        {
+          "id": "B4_text",
+          "label": "B4 $1 billion",
+          "kind": "active-target",
+          "isActiveTarget": true,
+          "overlapVsTarget": 0.0,
+          "edgeGapPx": 674.5,
+          "relation": "miss",
+          "unitTermHits": []
+        }
+      ],
+      "summary": {
+        "activeFullHitCount": 0,
+        "activePartialHitCount": 1,
+        "activeMissCount": 3,
+        "activeHitIds": [
+          "O5"
+        ],
+        "allFullHitLabels": [
+          "should sell",
+          "earnings",
+          "pay off the IMF",
+          "I tagged Mike",
+          "could sell",
+          "trust that guy"
+        ],
+        "allPartialHitLabels": [
+          "O5 shitcoiner at heart"
+        ],
+        "strictUnitTermHitCount": 0,
+        "strictUnitTermHits": []
+      }
+    },
+    {
+      "id": "same_layout_slot",
+      "label": "same layout slot / no mirror",
+      "p76Box": [
+        294.0,
+        2398.0,
+        1310.0,
+        2950.0
+      ],
+      "transform": "p78 source box placed at same page coordinates on p76",
+      "rows": [
+        {
+          "id": "B4_text",
+          "label": "B4 $1 billion",
+          "kind": "active-target",
+          "isActiveTarget": true,
+          "overlapVsTarget": 1.0,
+          "edgeGapPx": 0.0,
+          "relation": "full",
+          "unitTermHits": []
+        },
+        {
+          "id": "G5",
+          "label": "G5 Volcano Bonds",
+          "kind": "active-target",
+          "isActiveTarget": true,
+          "overlapVsTarget": 1.0,
+          "edgeGapPx": 0.0,
+          "relation": "full",
+          "unitTermHits": []
+        },
+        {
+          "id": "earnings",
+          "label": "earnings",
+          "kind": "left-edge word",
+          "isActiveTarget": false,
+          "overlapVsTarget": 0.498722,
+          "edgeGapPx": 0.0,
+          "relation": "partial",
+          "unitTermHits": []
+        },
+        {
+          "id": "should_sell",
+          "label": "should sell",
+          "kind": "top-edge article phrase",
+          "isActiveTarget": false,
+          "overlapVsTarget": 0.404904,
+          "edgeGapPx": 0.0,
+          "relation": "partial",
+          "unitTermHits": []
+        },
+        {
+          "id": "trust_guy",
+          "label": "trust that guy",
+          "kind": "left-edge phrase",
+          "isActiveTarget": false,
+          "overlapVsTarget": 0.203091,
+          "edgeGapPx": 0.0,
+          "relation": "partial",
+          "unitTermHits": []
+        },
+        {
+          "id": "tagged_mike",
+          "label": "I tagged Mike",
+          "kind": "left-edge phrase",
+          "isActiveTarget": false,
+          "overlapVsTarget": 0.181879,
+          "edgeGapPx": 0.0,
+          "relation": "partial",
+          "unitTermHits": []
+        },
+        {
+          "id": "O5",
+          "label": "O5 shitcoiner at heart",
+          "kind": "active-target",
+          "isActiveTarget": true,
+          "overlapVsTarget": 0.156522,
+          "edgeGapPx": 0.0,
+          "relation": "partial",
+          "unitTermHits": []
+        },
+        {
+          "id": "could_sell",
+          "label": "could sell",
+          "kind": "left-edge phrase",
+          "isActiveTarget": false,
+          "overlapVsTarget": 0.099528,
+          "edgeGapPx": 0.0,
+          "relation": "partial",
+          "unitTermHits": []
+        },
+        {
+          "id": "pay_imf",
+          "label": "pay off the IMF",
+          "kind": "left-edge phrase",
+          "isActiveTarget": false,
+          "overlapVsTarget": 0.095807,
+          "edgeGapPx": 0.0,
+          "relation": "partial",
+          "unitTermHits": []
+        },
+        {
+          "id": "O4",
+          "label": "O4 buying the dip",
+          "kind": "active-target",
+          "isActiveTarget": true,
+          "overlapVsTarget": 0.0,
+          "edgeGapPx": 324.21,
+          "relation": "miss",
+          "unitTermHits": []
+        }
+      ],
+      "summary": {
+        "activeFullHitCount": 2,
+        "activePartialHitCount": 1,
+        "activeMissCount": 1,
+        "activeHitIds": [
+          "B4_text",
+          "G5",
+          "O5"
+        ],
+        "allFullHitLabels": [
+          "B4 $1 billion",
+          "G5 Volcano Bonds"
+        ],
+        "allPartialHitLabels": [
+          "O5 shitcoiner at heart",
+          "should sell",
+          "earnings",
+          "pay off the IMF",
+          "I tagged Mike",
+          "could sell",
+          "trust that guy"
+        ],
+        "strictUnitTermHitCount": 0,
+        "strictUnitTermHits": []
+      }
+    },
+    {
+      "id": "overdose_header_translation",
+      "label": "OVERDOSE header translation",
+      "p76Box": [
+        283.3249999999998,
+        2401.51,
+        1299.3249999999998,
+        2953.51
+      ],
+      "transform": "p78 source box translated by p78->p76 OVERDOSE header center delta",
+      "rows": [
+        {
+          "id": "G5",
+          "label": "G5 Volcano Bonds",
+          "kind": "active-target",
+          "isActiveTarget": true,
+          "overlapVsTarget": 1.0,
+          "edgeGapPx": 0.0,
+          "relation": "full",
+          "unitTermHits": []
+        },
+        {
+          "id": "B4_text",
+          "label": "B4 $1 billion",
+          "kind": "active-target",
+          "isActiveTarget": true,
+          "overlapVsTarget": 0.925319,
+          "edgeGapPx": 0.0,
+          "relation": "full",
+          "unitTermHits": []
+        },
+        {
+          "id": "earnings",
+          "label": "earnings",
+          "kind": "left-edge word",
+          "isActiveTarget": false,
+          "overlapVsTarget": 0.438072,
+          "edgeGapPx": 0.0,
+          "relation": "partial",
+          "unitTermHits": []
+        },
+        {
+          "id": "should_sell",
+          "label": "should sell",
+          "kind": "top-edge article phrase",
+          "isActiveTarget": false,
+          "overlapVsTarget": 0.329131,
+          "edgeGapPx": 0.0,
+          "relation": "partial",
+          "unitTermHits": []
+        },
+        {
+          "id": "O5",
+          "label": "O5 shitcoiner at heart",
+          "kind": "active-target",
+          "isActiveTarget": true,
+          "overlapVsTarget": 0.179648,
+          "edgeGapPx": 0.0,
+          "relation": "partial",
+          "unitTermHits": []
+        },
+        {
+          "id": "trust_guy",
+          "label": "trust that guy",
+          "kind": "left-edge phrase",
+          "isActiveTarget": false,
+          "overlapVsTarget": 0.169562,
+          "edgeGapPx": 0.0,
+          "relation": "partial",
+          "unitTermHits": []
+        },
+        {
+          "id": "tagged_mike",
+          "label": "I tagged Mike",
+          "kind": "left-edge phrase",
+          "isActiveTarget": false,
+          "overlapVsTarget": 0.144245,
+          "edgeGapPx": 0.0,
+          "relation": "partial",
+          "unitTermHits": []
+        },
+        {
+          "id": "pay_imf",
+          "label": "pay off the IMF",
+          "kind": "left-edge phrase",
+          "isActiveTarget": false,
+          "overlapVsTarget": 0.063329,
+          "edgeGapPx": 0.0,
+          "relation": "partial",
+          "unitTermHits": []
+        },
+        {
+          "id": "could_sell",
+          "label": "could sell",
+          "kind": "left-edge phrase",
+          "isActiveTarget": false,
+          "overlapVsTarget": 0.056091,
+          "edgeGapPx": 0.0,
+          "relation": "partial",
+          "unitTermHits": []
+        },
+        {
+          "id": "O4",
+          "label": "O4 buying the dip",
+          "kind": "active-target",
+          "isActiveTarget": true,
+          "overlapVsTarget": 0.0,
+          "edgeGapPx": 334.85,
+          "relation": "miss",
+          "unitTermHits": []
+        }
+      ],
+      "summary": {
+        "activeFullHitCount": 2,
+        "activePartialHitCount": 1,
+        "activeMissCount": 1,
+        "activeHitIds": [
+          "B4_text",
+          "G5",
+          "O5"
+        ],
+        "allFullHitLabels": [
+          "B4 $1 billion",
+          "G5 Volcano Bonds"
+        ],
+        "allPartialHitLabels": [
+          "O5 shitcoiner at heart",
+          "should sell",
+          "earnings",
+          "pay off the IMF",
+          "I tagged Mike",
+          "could sell",
+          "trust that guy"
+        ],
+        "strictUnitTermHitCount": 0,
+        "strictUnitTermHits": []
+      }
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/overdose_header_registration_gate/overdose_header_registration_gate_sheet.jpg",
+  "assessment": [
+    "The repeated OVERDOSE header placement gives only a tiny p78->p76 translation and is effectively a same-layout-slot test, not a fold/mirror instruction.",
+    "The same-layout/header-translation frame fully covers B4 and G5 and partially clips O5, but it misses O4 and supplies no strict unit/order term.",
+    "The current horizontal mirror frame preserves the known p78 registration benchmark, but it only clips O5 among the four active targets and also supplies no unit/order term.",
+    "Therefore OVERDOSE header/layout registration is useful as a source-comparison benchmark only; it does not unlock extraction under the current scan."
+  ],
+  "decision": {
+    "overdoseHeaderRegistrationAsSelector": "closed_current_scan",
+    "selectorUnlocked": false,
+    "nextMove": "Use same-layout-slot contacts as a secondary validation check only if a future original-layout/source item explicitly points to repeated OVERDOSE page layout; otherwise keep the source/physical R1-R5 gate."
+  }
+}

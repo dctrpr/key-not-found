@@ -1,0 +1,31 @@
+[
+  {
+    "name": "quoted_oembed",
+    "status": 404,
+    "url": "https://publish.x.com/oembed?url=https://twitter.com/realPRIVATE_CONTRIBUTOR/status/1741133781321523668"
+  },
+  {
+    "name": "quoted_syndication",
+    "status": 200,
+    "data": {
+      "__typename": "TweetTombstone",
+      "tombstone": {
+        "text": {
+          "entities": [
+            {
+              "from_index": 42,
+              "ref": {
+                "__typename": "TimelineUrl",
+                "url": "https://help.x.com/rules-and-policies/notices-on-x",
+                "url_type": "ExternalUrl"
+              },
+              "to_index": 52
+            }
+          ],
+          "rtl": false,
+          "text": "This Post was deleted by the Post author. Learn more"
+        }
+      }
+    }
+  }
+]

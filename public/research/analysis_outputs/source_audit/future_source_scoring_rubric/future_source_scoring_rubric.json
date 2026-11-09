@@ -1,0 +1,162 @@
+{
+  "createdAt": "2026-05-20T23:16:30",
+  "scope": "future source scoring rubric; no extraction, no key derivation, no hashing, no OCR, no address checks",
+  "inputs": {
+    "source_acquisition_packet": "analysis_outputs/source_audit/source_acquisition_target_packet/source_acquisition_target_packet.json",
+    "source_acquisition_integrity": "analysis_outputs/source_audit/source_acquisition_packet_integrity/source_acquisition_packet_integrity.json",
+    "source_reopen": "analysis_outputs/source_audit/source_reopen_requirements/source_reopen_requirements.json",
+    "future_packet": "analysis_outputs/source_audit/future_source_validation_packet/future_source_validation_packet.json",
+    "priority_crops": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_pack.json",
+    "p78_tricontact": "analysis_outputs/source_audit/p78_frame_tricontact_signature/p78_frame_tricontact_signature.json",
+    "p77_one_line": "analysis_outputs/source_audit/p77_one_line_near_miss/p77_one_line_near_miss.json",
+    "active_unlock_matrix": "analysis_outputs/source_audit/active_evidence_unlock_matrix/active_evidence_unlock_matrix.json"
+  },
+  "sheet": "analysis_outputs/source_audit/future_source_scoring_rubric/future_source_scoring_rubric_sheet.jpg",
+  "rubricRows": [
+    {
+      "id": "R1",
+      "name": "source identity",
+      "blocking": true,
+      "requirement": "Material must be physically/original-layout distinct from the byte-locked current scan or duplicate exports.",
+      "currentBaseline": "Current workspace and Desktop magazine.pdf are byte-identical; current local source set has zero actionable unknowns.",
+      "passThreshold": "Physical scan/photo, native layout export, browser/source asset, or raw clue source with provenance that is not only a resave of the current PDF.",
+      "evidenceToRecord": [
+        "source path",
+        "capture/source type",
+        "timestamp/provenance",
+        "whether derived from current scan"
+      ]
+    },
+    {
+      "id": "R2",
+      "name": "target preservation",
+      "blocking": true,
+      "requirement": "Must preserve or explain the active page-76 lower corridor: O5, G5, L26-L29, and O-B-B-O anchors.",
+      "currentBaseline": "Active targets: O5 'shitcoiner at heart', G5 'Volcano Bonds', L26 future bitcoin earnings; crop pack has five line/context panels.",
+      "passThreshold": "O5 and G5 are readable/locatable, plus at least one context band from L25-L32 is visible enough to compare against the crop pack.",
+      "evidenceToRecord": [
+        "L32_O5_primary",
+        "L27_G5_pair",
+        "L25_should_sell",
+        "L26_L29_source_band",
+        "L25_L32_frame_context"
+      ]
+    },
+    {
+      "id": "R3",
+      "name": "unit/order evidence",
+      "blocking": true,
+      "requirement": "Must name or visibly supply an extraction unit/order before selector/key checks resume.",
+      "currentBaseline": "Active unlock matrix checks 8 paths; all 8 fail R3. Existing raw-like clue intake has zero R3 passes.",
+      "passThreshold": "Source-backed wording or layer metadata names word, letter, line, edge, font, first/last, left/right, fold, mirror read direction, page/order, key/private format, or equivalent.",
+      "evidenceToRecord": [
+        "exact quote/screenshot/source",
+        "unit term",
+        "order term",
+        "why it points to page 76 or redirects"
+      ]
+    },
+    {
+      "id": "R4",
+      "name": "orientation discipline",
+      "blocking": true,
+      "requirement": "Coordinates must use the correct orientation before comparison.",
+      "currentBaseline": "3D/crop layer is readable/upright; source_images and fresh PDF extraction are native upside-down and need rotate180.",
+      "passThreshold": "New material states/readably shows orientation; comparisons are made in upright coordinates or with documented 180-degree rotation.",
+      "evidenceToRecord": [
+        "native orientation",
+        "upright conversion",
+        "page numbers/edges visible",
+        "rotation applied"
+      ]
+    },
+    {
+      "id": "R5",
+      "name": "controlled improvement",
+      "blocking": true,
+      "requirement": "Must improve a compact benchmark without inventing a new arbitrary transform.",
+      "currentBaseline": "C2 is partial: p78 frame clips O5, cuts M3, and is 38px from G5; dx -38/-40 repairs tri-contact but remains registration evidence only.",
+      "passThreshold": "Natural source registration preserves/explains O5 bottom contact, M3 right-edge cut, and G5 edge repair, or creates repeated direct O5/G5 physical contacts.",
+      "evidenceToRecord": [
+        "O5 overlap",
+        "G5 gap/overlap",
+        "M3 right-edge contact",
+        "p77 near-miss change",
+        "same transform repeated"
+      ]
+    }
+  ],
+  "numericBenchmarks": {
+    "page76Targets": {
+      "primaryManualTarget": {
+        "lineIndex": 32,
+        "corridorIndex": 14,
+        "text": "Maybe because he's a shitcoiner at heart.",
+        "score": 32.75
+      },
+      "pairedTarget": {
+        "lineIndex": 27,
+        "corridorIndex": 9,
+        "text": "collateralized “Volcano Bonds” to pay off the IMF",
+        "score": 16.75
+      },
+      "sourceBandTarget": {
+        "lineIndex": 26,
+        "corridorIndex": 8,
+        "text": "billions worth of future bitcoin earnings",
+        "score": 10.0
+      }
+    },
+    "priorityCropSheet": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_sheet.jpg",
+    "p78Frame": {
+      "currentFrame": [
+        1234.0,
+        2398.0,
+        2250.0,
+        2950.0
+      ],
+      "currentG5GapPx": 38.0,
+      "currentM3RightEdgeOverlapPx": 265.0,
+      "currentO5OverlapVsTarget": 0.24754,
+      "repairFrame": [
+        1194.0,
+        2398.0,
+        2210.0,
+        2950.0
+      ],
+      "repairDx": -40.0,
+      "repairDy": 0.0,
+      "repairTriContactPass": true,
+      "repairG5OverlapVsTarget": 0.00499,
+      "repairO5OverlapVsTarget": 0.27072
+    },
+    "p77NearMiss": {
+      "baselineVerticalGapPx": 71.93,
+      "contentBoxVerticalGapPx": 65.49,
+      "medianLinePitchPx": 73.73,
+      "oneLineUpO5HitCount": 1
+    },
+    "currentBlockers": {
+      "activeEvidenceDecision": "current_evidence_stack_not_sufficient_to_resume_extraction",
+      "allPathsBlockedOnR3": true,
+      "integrityStatus": "PASS",
+      "integrityDecision": "source_acquisition_packet_integrity_pass_no_selector_unlocked"
+    }
+  },
+  "extractionGate": {
+    "allowExtractionOnlyIf": "R1, R2, R3, R4, and R5 all pass on the same new source/clue item, with R3 providing a source-backed unit/order.",
+    "blockIf": [
+      "R3 is absent, even if target geometry improves.",
+      "material is only a duplicate/resaved current scan.",
+      "orientation is ambiguous or mixed between upright/native coordinates.",
+      "geometry requires arbitrary shifts not explained by source/physical evidence."
+    ],
+    "firstAllowedActionsAfterPass": [
+      "transcribe exact selected unit/order",
+      "run one low-parameter extraction following the source-backed rule",
+      "only then test checksum-valid key-like output or address activity"
+    ]
+  },
+  "decision": "future_source_scoring_rubric_created_no_selector_unlocked",
+  "nextMove": "Use this rubric together with the source-acquisition packet when new physical/original-layout/raw clue material appears. Do not resume extraction from the current scan."
+}

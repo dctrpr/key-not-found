@@ -1,0 +1,695 @@
+{
+  "createdAt": "2026-05-24T20:13:41",
+  "scope": "Bounded active phrase count-to-OVERDOSE slot permutation control. Uses existing source-packet bold/highlight phrase count metrics only. No OCR-to-key extraction, key candidates, hash search, seed/WIF/address checks, BIP39 checks, or broad brute force.",
+  "decision": "source_packet_highlight_count_slot_permutation_no_selector",
+  "inputs": {
+    "lengthControl": "analysis_outputs/source_audit/source_packet_bold_phrase_length_slot_control/source_packet_bold_phrase_length_slot_control.json",
+    "foldOrderControl": "analysis_outputs/source_audit/source_packet_fold_world_overdose_order_control/source_packet_fold_world_overdose_order_control.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json",
+    "metrics": [
+      "wordCount",
+      "spanSlotCount",
+      "alnumCount",
+      "glyphNoSpaceCount",
+      "docmHighlightCount",
+      "firstWordLen",
+      "lastWordLen",
+      "minWordLen",
+      "maxWordLen",
+      "sumWordLengths"
+    ],
+    "indexModes": [
+      "zero_based_mod8",
+      "one_based_mod8"
+    ],
+    "activeOrder": [
+      "O4",
+      "B4",
+      "G5",
+      "O5"
+    ],
+    "knownFoldWorldStreams": [
+      "DEVO",
+      "ODEV",
+      "OEVD",
+      "OVED",
+      "VEDO"
+    ]
+  },
+  "summary": {
+    "metricCount": 10,
+    "indexModeCount": 2,
+    "canonicalStreamCount": 20,
+    "interestingPermutationRowCount": 5,
+    "canonicalLayoutHitCount": 0,
+    "canonicalInstructionHitCount": 0,
+    "canonicalFoldWorldHitCount": 0,
+    "permutationFoldWorldHitCount": 5,
+    "permutationLayoutHitCount": 0,
+    "allActiveCenterFitMetricCount": 0,
+    "maxActiveCenterFit": 2,
+    "sourceCountCueHitCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorCandidateCount": 0,
+    "fingerprint": "metrics=10|indexModes=2|canonical=20|permRows=5|canonLayout=0|canonInstr=0|canonFold=0|permFold=5|permLayout=0|allCenterFit=0|maxCenterFit=2/4|sourceCountCues=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "canonicalRows": [
+    {
+      "metric": "wordCount",
+      "indexMode": "zero_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 3,
+        "B4": 2,
+        "G5": 2,
+        "O5": 3
+      },
+      "stream": "REER",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    },
+    {
+      "metric": "wordCount",
+      "indexMode": "one_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 3,
+        "B4": 2,
+        "G5": 2,
+        "O5": 3
+      },
+      "stream": "EVVE",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    },
+    {
+      "metric": "spanSlotCount",
+      "indexMode": "zero_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 3,
+        "B4": 2,
+        "G5": 2,
+        "O5": 3
+      },
+      "stream": "REER",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    },
+    {
+      "metric": "spanSlotCount",
+      "indexMode": "one_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 3,
+        "B4": 2,
+        "G5": 2,
+        "O5": 3
+      },
+      "stream": "EVVE",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    },
+    {
+      "metric": "alnumCount",
+      "indexMode": "zero_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 12,
+        "B4": 8,
+        "G5": 12,
+        "O5": 17
+      },
+      "stream": "DODV",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    },
+    {
+      "metric": "alnumCount",
+      "indexMode": "one_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 12,
+        "B4": 8,
+        "G5": 12,
+        "O5": 17
+      },
+      "stream": "RERO",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    },
+    {
+      "metric": "glyphNoSpaceCount",
+      "indexMode": "zero_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 12,
+        "B4": 9,
+        "G5": 12,
+        "O5": 17
+      },
+      "stream": "DVDV",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    },
+    {
+      "metric": "glyphNoSpaceCount",
+      "indexMode": "one_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 12,
+        "B4": 9,
+        "G5": 12,
+        "O5": 17
+      },
+      "stream": "RORO",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    },
+    {
+      "metric": "docmHighlightCount",
+      "indexMode": "zero_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 14,
+        "B4": 10,
+        "G5": 13,
+        "O5": 19
+      },
+      "stream": "SEOR",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    },
+    {
+      "metric": "docmHighlightCount",
+      "indexMode": "one_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 14,
+        "B4": 10,
+        "G5": 13,
+        "O5": 19
+      },
+      "stream": "OVDE",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    },
+    {
+      "metric": "firstWordLen",
+      "indexMode": "zero_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 6,
+        "B4": 2,
+        "G5": 7,
+        "O5": 10
+      },
+      "stream": "SEEE",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    },
+    {
+      "metric": "firstWordLen",
+      "indexMode": "one_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 6,
+        "B4": 2,
+        "G5": 7,
+        "O5": 10
+      },
+      "stream": "OVSV",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    },
+    {
+      "metric": "lastWordLen",
+      "indexMode": "zero_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 3,
+        "B4": 7,
+        "G5": 5,
+        "O5": 5
+      },
+      "stream": "REOO",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    },
+    {
+      "metric": "lastWordLen",
+      "indexMode": "one_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 3,
+        "B4": 7,
+        "G5": 5,
+        "O5": 5
+      },
+      "stream": "ESDD",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    },
+    {
+      "metric": "minWordLen",
+      "indexMode": "zero_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 3,
+        "B4": 2,
+        "G5": 5,
+        "O5": 2
+      },
+      "stream": "REOE",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    },
+    {
+      "metric": "minWordLen",
+      "indexMode": "one_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 3,
+        "B4": 2,
+        "G5": 5,
+        "O5": 2
+      },
+      "stream": "EVDV",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    },
+    {
+      "metric": "maxWordLen",
+      "indexMode": "zero_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 6,
+        "B4": 7,
+        "G5": 7,
+        "O5": 10
+      },
+      "stream": "SEEE",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    },
+    {
+      "metric": "maxWordLen",
+      "indexMode": "one_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 6,
+        "B4": 7,
+        "G5": 7,
+        "O5": 10
+      },
+      "stream": "OSSV",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    },
+    {
+      "metric": "sumWordLengths",
+      "indexMode": "zero_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 12,
+        "B4": 9,
+        "G5": 12,
+        "O5": 17
+      },
+      "stream": "DVDV",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    },
+    {
+      "metric": "sumWordLengths",
+      "indexMode": "one_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "values": {
+        "O4": 12,
+        "B4": 9,
+        "G5": 12,
+        "O5": 17
+      },
+      "stream": "RORO",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": false
+    }
+  ],
+  "interestingPermutationRows": [
+    {
+      "metric": "docmHighlightCount",
+      "indexMode": "one_based_mod8",
+      "order": [
+        "O4",
+        "B4",
+        "O5",
+        "G5"
+      ],
+      "stream": "OVED",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": true
+    },
+    {
+      "metric": "docmHighlightCount",
+      "indexMode": "one_based_mod8",
+      "order": [
+        "O4",
+        "G5",
+        "O5",
+        "B4"
+      ],
+      "stream": "ODEV",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": true
+    },
+    {
+      "metric": "docmHighlightCount",
+      "indexMode": "one_based_mod8",
+      "order": [
+        "O4",
+        "O5",
+        "B4",
+        "G5"
+      ],
+      "stream": "OEVD",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": true
+    },
+    {
+      "metric": "docmHighlightCount",
+      "indexMode": "one_based_mod8",
+      "order": [
+        "B4",
+        "O5",
+        "G5",
+        "O4"
+      ],
+      "stream": "VEDO",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": true
+    },
+    {
+      "metric": "docmHighlightCount",
+      "indexMode": "one_based_mod8",
+      "order": [
+        "G5",
+        "O5",
+        "B4",
+        "O4"
+      ],
+      "stream": "DEVO",
+      "layoutHits": [],
+      "instructionHits": [],
+      "foldWorldStreamHit": true
+    }
+  ],
+  "metricFitSummary": [
+    {
+      "metric": "wordCount",
+      "indexMode": "zero_based_mod8",
+      "activeHits": 1,
+      "activeTotal": 4,
+      "greyHits": 2,
+      "greyTotal": 13
+    },
+    {
+      "metric": "wordCount",
+      "indexMode": "one_based_mod8",
+      "activeHits": 1,
+      "activeTotal": 4,
+      "greyHits": 3,
+      "greyTotal": 13
+    },
+    {
+      "metric": "spanSlotCount",
+      "indexMode": "zero_based_mod8",
+      "activeHits": 1,
+      "activeTotal": 4,
+      "greyHits": 1,
+      "greyTotal": 13
+    },
+    {
+      "metric": "spanSlotCount",
+      "indexMode": "one_based_mod8",
+      "activeHits": 1,
+      "activeTotal": 4,
+      "greyHits": 2,
+      "greyTotal": 13
+    },
+    {
+      "metric": "alnumCount",
+      "indexMode": "zero_based_mod8",
+      "activeHits": 0,
+      "activeTotal": 4,
+      "greyHits": 3,
+      "greyTotal": 13
+    },
+    {
+      "metric": "alnumCount",
+      "indexMode": "one_based_mod8",
+      "activeHits": 0,
+      "activeTotal": 4,
+      "greyHits": 1,
+      "greyTotal": 13
+    },
+    {
+      "metric": "glyphNoSpaceCount",
+      "indexMode": "zero_based_mod8",
+      "activeHits": 1,
+      "activeTotal": 4,
+      "greyHits": 4,
+      "greyTotal": 13
+    },
+    {
+      "metric": "glyphNoSpaceCount",
+      "indexMode": "one_based_mod8",
+      "activeHits": 0,
+      "activeTotal": 4,
+      "greyHits": 3,
+      "greyTotal": 13
+    },
+    {
+      "metric": "docmHighlightCount",
+      "indexMode": "zero_based_mod8",
+      "activeHits": 0,
+      "activeTotal": 4,
+      "greyHits": 0,
+      "greyTotal": 0
+    },
+    {
+      "metric": "docmHighlightCount",
+      "indexMode": "one_based_mod8",
+      "activeHits": 2,
+      "activeTotal": 4,
+      "greyHits": 0,
+      "greyTotal": 0
+    },
+    {
+      "metric": "firstWordLen",
+      "indexMode": "zero_based_mod8",
+      "activeHits": 1,
+      "activeTotal": 4,
+      "greyHits": 3,
+      "greyTotal": 13
+    },
+    {
+      "metric": "firstWordLen",
+      "indexMode": "one_based_mod8",
+      "activeHits": 2,
+      "activeTotal": 4,
+      "greyHits": 1,
+      "greyTotal": 13
+    },
+    {
+      "metric": "lastWordLen",
+      "indexMode": "zero_based_mod8",
+      "activeHits": 0,
+      "activeTotal": 4,
+      "greyHits": 2,
+      "greyTotal": 13
+    },
+    {
+      "metric": "lastWordLen",
+      "indexMode": "one_based_mod8",
+      "activeHits": 1,
+      "activeTotal": 4,
+      "greyHits": 5,
+      "greyTotal": 13
+    },
+    {
+      "metric": "minWordLen",
+      "indexMode": "zero_based_mod8",
+      "activeHits": 0,
+      "activeTotal": 4,
+      "greyHits": 2,
+      "greyTotal": 13
+    },
+    {
+      "metric": "minWordLen",
+      "indexMode": "one_based_mod8",
+      "activeHits": 1,
+      "activeTotal": 4,
+      "greyHits": 4,
+      "greyTotal": 13
+    },
+    {
+      "metric": "maxWordLen",
+      "indexMode": "zero_based_mod8",
+      "activeHits": 1,
+      "activeTotal": 4,
+      "greyHits": 4,
+      "greyTotal": 13
+    },
+    {
+      "metric": "maxWordLen",
+      "indexMode": "one_based_mod8",
+      "activeHits": 1,
+      "activeTotal": 4,
+      "greyHits": 3,
+      "greyTotal": 13
+    },
+    {
+      "metric": "sumWordLengths",
+      "indexMode": "zero_based_mod8",
+      "activeHits": 1,
+      "activeTotal": 4,
+      "greyHits": 4,
+      "greyTotal": 13
+    },
+    {
+      "metric": "sumWordLengths",
+      "indexMode": "one_based_mod8",
+      "activeHits": 0,
+      "activeTotal": 4,
+      "greyHits": 1,
+      "greyTotal": 13
+    }
+  ],
+  "nextMove": "Keep active phrase count-to-slot mechanics as validation descriptors only. Reopen only with source-backed wording that names count/length/highlight-count plus target order."
+}

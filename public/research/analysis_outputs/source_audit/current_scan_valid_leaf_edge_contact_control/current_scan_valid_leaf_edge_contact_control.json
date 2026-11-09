@@ -1,0 +1,502 @@
+{
+  "createdAt": "2026-05-24T02:45:15",
+  "scope": "valid page 75 -> page 76 same-leaf edge-contact control; no key derivation",
+  "inputs": {
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "bleedthroughControlGrid": "analysis_outputs/source_audit/current_scan_valid_leaf_bleedthrough_control_grid/current_scan_valid_leaf_bleedthrough_control_grid.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json",
+    "sourcePage75": "analysis_outputs/source_images/magazine_page_75.jpg",
+    "sourcePage76": "analysis_outputs/source_images/magazine_page_76.jpg"
+  },
+  "decision": "valid_leaf_edge_contact_no_active_quartet_selector",
+  "summary": {
+    "modeCount": 2,
+    "targetRowCount": 8,
+    "naturalMeanRingSourceOnlyCoverage": 0.0417831441057675,
+    "naturalMinRingSourceOnlyCoverage": 0.0,
+    "naturalTargetCountAtLeast10": 1,
+    "naturalTargetCountAtLeast25": 0,
+    "naturalHighPercentileCount": 0,
+    "jitterShift": [
+      -80,
+      -20
+    ],
+    "jitterMeanRingSourceOnlyCoverage": 0.025241441107796404,
+    "jitterMinRingSourceOnlyCoverage": 0.0,
+    "jitterTargetCountAtLeast10": 0,
+    "jitterTargetCountAtLeast25": 0,
+    "jitterHighPercentileCount": 0,
+    "allFourAtLeast10Modes": [],
+    "allFourAtLeast25Modes": [],
+    "allFourHighPercentileModes": [],
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0
+  },
+  "fingerprint": "modes=2|targets=8|natMean=0.0418|natMin=0.0000|nat10=1|nat25=0|natPctl75=0|jit=-80,-20|jitMean=0.0252|jitMin=0.0000|jit10=0|jit25=0|jitPctl75=0|sourceR3=0|triggers=0/9|selectors=0",
+  "modeRows": [
+    {
+      "mode": "valid_75_to_76_natural",
+      "dx": 0,
+      "dy": 0,
+      "meanRingSourceOnlyCoverage": 0.0417831441057675,
+      "minRingSourceOnlyCoverage": 0.0,
+      "targetCountAtLeast10": 1,
+      "targetCountAtLeast25": 0,
+      "highPercentileCount": 0,
+      "minControlPercentile": 0.2073170731707317,
+      "meanControlPercentile": 0.42359134674265947
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "dx": -80,
+      "dy": -20,
+      "meanRingSourceOnlyCoverage": 0.025241441107796404,
+      "minRingSourceOnlyCoverage": 0.0,
+      "targetCountAtLeast10": 0,
+      "targetCountAtLeast25": 0,
+      "highPercentileCount": 0,
+      "minControlPercentile": 0.18518518518518517,
+      "meanControlPercentile": 0.28703088018374645
+    }
+  ],
+  "targetRows": [
+    {
+      "mode": "valid_75_to_76_natural",
+      "target": "O4",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "area": 31976,
+      "sourceCoverage": 0.12055916937703277,
+      "sourceOnlyCoverage": 0.11980860645484114,
+      "overlapCoverage": 0.0007505629221916438,
+      "sourceOnlyShareOfSource": 0.9937743190661479,
+      "maxSideSourceOnlyCoverage": 0.1397981033955338,
+      "bestSide": "top",
+      "sideMetrics": {
+        "top": {
+          "area": 13076,
+          "sourceCoverage": 0.1397981033955338,
+          "sourceOnlyCoverage": 0.1397981033955338,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 1.0
+        },
+        "bottom": {
+          "area": 13076,
+          "sourceCoverage": 0.1035484857754665,
+          "sourceOnlyCoverage": 0.10178953808504129,
+          "overlapCoverage": 0.0017589476904252064,
+          "sourceOnlyShareOfSource": 0.98301329394387
+        },
+        "left": {
+          "area": 1344,
+          "sourceCoverage": 0.09598214285714286,
+          "sourceOnlyCoverage": 0.09523809523809523,
+          "overlapCoverage": 0.000744047619047619,
+          "sourceOnlyShareOfSource": 0.9922480620155039
+        },
+        "right": {
+          "area": 1344,
+          "sourceCoverage": 0.11235119047619048,
+          "sourceOnlyCoverage": 0.11235119047619048,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 1.0
+        }
+      },
+      "controlCount": 135,
+      "controlMedianSourceOnlyCoverage": 0.040905679259444584,
+      "controlP90SourceOnlyCoverage": 0.2772516887665751,
+      "controlMaxSourceOnlyCoverage": 0.7610708031023268,
+      "sourceOnlyControlPercentile": 0.7481481481481481
+    },
+    {
+      "mode": "valid_75_to_76_natural",
+      "target": "B4",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "area": 20496,
+      "sourceCoverage": 0.0,
+      "sourceOnlyCoverage": 0.0,
+      "overlapCoverage": 0.0,
+      "sourceOnlyShareOfSource": 0.0,
+      "maxSideSourceOnlyCoverage": 0.0,
+      "bestSide": "top",
+      "sideMetrics": {
+        "top": {
+          "area": 7364,
+          "sourceCoverage": 0.0,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 0.0
+        },
+        "bottom": {
+          "area": 7364,
+          "sourceCoverage": 0.0,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 0.0
+        },
+        "left": {
+          "area": 1316,
+          "sourceCoverage": 0.0,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 0.0
+        },
+        "right": {
+          "area": 1316,
+          "sourceCoverage": 0.0,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 0.0
+        }
+      },
+      "controlCount": 273,
+      "controlMedianSourceOnlyCoverage": 0.03093286494925839,
+      "controlP90SourceOnlyCoverage": 0.21250000000000002,
+      "controlMaxSourceOnlyCoverage": 0.8396272443403591,
+      "sourceOnlyControlPercentile": 0.29304029304029305
+    },
+    {
+      "mode": "valid_75_to_76_natural",
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "area": 28280,
+      "sourceCoverage": 0.03129420084865629,
+      "sourceOnlyCoverage": 0.03094059405940594,
+      "overlapCoverage": 0.0003536067892503536,
+      "sourceOnlyShareOfSource": 0.9887005649717514,
+      "maxSideSourceOnlyCoverage": 0.15922619047619047,
+      "bestSide": "right",
+      "sideMetrics": {
+        "top": {
+          "area": 11228,
+          "sourceCoverage": 0.0,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 0.0
+        },
+        "bottom": {
+          "area": 11228,
+          "sourceCoverage": 0.05130032062700392,
+          "sourceOnlyCoverage": 0.05130032062700392,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 1.0
+        },
+        "left": {
+          "area": 1344,
+          "sourceCoverage": 0.0,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 0.0
+        },
+        "right": {
+          "area": 1344,
+          "sourceCoverage": 0.16666666666666666,
+          "sourceOnlyCoverage": 0.15922619047619047,
+          "overlapCoverage": 0.00744047619047619,
+          "sourceOnlyShareOfSource": 0.9553571428571429
+        }
+      },
+      "controlCount": 157,
+      "controlMedianSourceOnlyCoverage": 0.04236209335219236,
+      "controlP90SourceOnlyCoverage": 0.26375530410183895,
+      "controlMaxSourceOnlyCoverage": 0.817079207920792,
+      "sourceOnlyControlPercentile": 0.445859872611465
+    },
+    {
+      "mode": "valid_75_to_76_natural",
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "area": 40712,
+      "sourceCoverage": 0.017415012772646885,
+      "sourceOnlyCoverage": 0.016383375908822953,
+      "overlapCoverage": 0.0010316368638239339,
+      "sourceOnlyShareOfSource": 0.9407616361071932,
+      "maxSideSourceOnlyCoverage": 0.23714285714285716,
+      "bestSide": "right",
+      "sideMetrics": {
+        "top": {
+          "area": 17388,
+          "sourceCoverage": 0.007246376811594203,
+          "sourceOnlyCoverage": 0.006096158270071313,
+          "overlapCoverage": 0.0011502185415228894,
+          "sourceOnlyShareOfSource": 0.8412698412698413
+        },
+        "bottom": {
+          "area": 17388,
+          "sourceCoverage": 0.0,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 0.0
+        },
+        "left": {
+          "area": 1400,
+          "sourceCoverage": 0.1792857142857143,
+          "sourceOnlyCoverage": 0.16357142857142856,
+          "overlapCoverage": 0.015714285714285715,
+          "sourceOnlyShareOfSource": 0.9123505976095617
+        },
+        "right": {
+          "area": 1400,
+          "sourceCoverage": 0.23714285714285716,
+          "sourceOnlyCoverage": 0.23714285714285716,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 1.0
+        }
+      },
+      "controlCount": 82,
+      "controlMedianSourceOnlyCoverage": 0.09438249164865396,
+      "controlP90SourceOnlyCoverage": 0.28932747101591677,
+      "controlMaxSourceOnlyCoverage": 0.4705492238160739,
+      "sourceOnlyControlPercentile": 0.2073170731707317
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "target": "O4",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "area": 31976,
+      "sourceCoverage": 0.012259194395796848,
+      "sourceOnlyCoverage": 0.010226419814861146,
+      "overlapCoverage": 0.0020327745809357017,
+      "sourceOnlyShareOfSource": 0.8341836734693877,
+      "maxSideSourceOnlyCoverage": 0.13988095238095238,
+      "bestSide": "left",
+      "sideMetrics": {
+        "top": {
+          "area": 13076,
+          "sourceCoverage": 0.0003059039461609055,
+          "sourceOnlyCoverage": 0.0003059039461609055,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 1.0
+        },
+        "bottom": {
+          "area": 13076,
+          "sourceCoverage": 0.00420617925971245,
+          "sourceOnlyCoverage": 0.00420617925971245,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 1.0
+        },
+        "left": {
+          "area": 1344,
+          "sourceCoverage": 0.18824404761904762,
+          "sourceOnlyCoverage": 0.13988095238095238,
+          "overlapCoverage": 0.04836309523809524,
+          "sourceOnlyShareOfSource": 0.7430830039525692
+        },
+        "right": {
+          "area": 1344,
+          "sourceCoverage": 0.05654761904761905,
+          "sourceOnlyCoverage": 0.05654761904761905,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 1.0
+        }
+      },
+      "controlCount": 135,
+      "controlMedianSourceOnlyCoverage": 0.09435201401050788,
+      "controlP90SourceOnlyCoverage": 0.23905429071803858,
+      "controlMaxSourceOnlyCoverage": 0.3186139604703528,
+      "sourceOnlyControlPercentile": 0.18518518518518517
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "target": "B4",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "area": 20496,
+      "sourceCoverage": 0.0,
+      "sourceOnlyCoverage": 0.0,
+      "overlapCoverage": 0.0,
+      "sourceOnlyShareOfSource": 0.0,
+      "maxSideSourceOnlyCoverage": 0.0,
+      "bestSide": "top",
+      "sideMetrics": {
+        "top": {
+          "area": 7364,
+          "sourceCoverage": 0.0,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 0.0
+        },
+        "bottom": {
+          "area": 7364,
+          "sourceCoverage": 0.0,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 0.0
+        },
+        "left": {
+          "area": 1316,
+          "sourceCoverage": 0.0,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 0.0
+        },
+        "right": {
+          "area": 1316,
+          "sourceCoverage": 0.0,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 0.0
+        }
+      },
+      "controlCount": 273,
+      "controlMedianSourceOnlyCoverage": 0.0704527712724434,
+      "controlP90SourceOnlyCoverage": 0.23390905542544896,
+      "controlMaxSourceOnlyCoverage": 0.49824355971896955,
+      "sourceOnlyControlPercentile": 0.25274725274725274
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "area": 28280,
+      "sourceCoverage": 0.012977369165487977,
+      "sourceOnlyCoverage": 0.012482319660537483,
+      "overlapCoverage": 0.0004950495049504951,
+      "sourceOnlyShareOfSource": 0.9618528610354223,
+      "maxSideSourceOnlyCoverage": 0.19642857142857142,
+      "bestSide": "right",
+      "sideMetrics": {
+        "top": {
+          "area": 11228,
+          "sourceCoverage": 0.0,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 0.0
+        },
+        "bottom": {
+          "area": 11228,
+          "sourceCoverage": 0.008015675097969362,
+          "sourceOnlyCoverage": 0.007926612041325259,
+          "overlapCoverage": 8.906305664410402e-05,
+          "sourceOnlyShareOfSource": 0.9888888888888889
+        },
+        "left": {
+          "area": 1344,
+          "sourceCoverage": 0.0,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 0.0
+        },
+        "right": {
+          "area": 1344,
+          "sourceCoverage": 0.20610119047619047,
+          "sourceOnlyCoverage": 0.19642857142857142,
+          "overlapCoverage": 0.009672619047619048,
+          "sourceOnlyShareOfSource": 0.9530685920577617
+        }
+      },
+      "controlCount": 157,
+      "controlMedianSourceOnlyCoverage": 0.09236209335219236,
+      "controlP90SourceOnlyCoverage": 0.24919377652050922,
+      "controlMaxSourceOnlyCoverage": 0.3410891089108911,
+      "sourceOnlyControlPercentile": 0.21019108280254778
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "area": 40712,
+      "sourceCoverage": 0.08002554529377087,
+      "sourceOnlyCoverage": 0.07825702495578699,
+      "overlapCoverage": 0.0017685203379838867,
+      "sourceOnlyShareOfSource": 0.9779005524861878,
+      "maxSideSourceOnlyCoverage": 0.15527950310559005,
+      "bestSide": "top",
+      "sideMetrics": {
+        "top": {
+          "area": 17388,
+          "sourceCoverage": 0.15942028985507245,
+          "sourceOnlyCoverage": 0.15527950310559005,
+          "overlapCoverage": 0.004140786749482402,
+          "sourceOnlyShareOfSource": 0.974025974025974
+        },
+        "bottom": {
+          "area": 17388,
+          "sourceCoverage": 0.0,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 0.0
+        },
+        "left": {
+          "area": 1400,
+          "sourceCoverage": 0.10428571428571429,
+          "sourceOnlyCoverage": 0.10428571428571429,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 1.0
+        },
+        "right": {
+          "area": 1400,
+          "sourceCoverage": 0.07571428571428572,
+          "sourceOnlyCoverage": 0.07571428571428572,
+          "overlapCoverage": 0.0,
+          "sourceOnlyShareOfSource": 1.0
+        }
+      },
+      "controlCount": 82,
+      "controlMedianSourceOnlyCoverage": 0.07771664374140302,
+      "controlP90SourceOnlyCoverage": 0.2270067793279623,
+      "controlMaxSourceOnlyCoverage": 0.31791609353507566,
+      "sourceOnlyControlPercentile": 0.5
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/current_scan_valid_leaf_edge_contact_control/current_scan_valid_leaf_edge_contact_control_sheet.jpg",
+  "panelPaths": [
+    "analysis_outputs/source_audit/current_scan_valid_leaf_edge_contact_control/valid_75_to_76_natural_O4.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_edge_contact_control/valid_75_to_76_natural_B4.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_edge_contact_control/valid_75_to_76_natural_G5.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_edge_contact_control/valid_75_to_76_natural_O5.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_edge_contact_control/valid_75_to_76_small_jitter_best_O4.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_edge_contact_control/valid_75_to_76_small_jitter_best_B4.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_edge_contact_control/valid_75_to_76_small_jitter_best_G5.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_edge_contact_control/valid_75_to_76_small_jitter_best_O5.jpg"
+  ],
+  "nextMove": "Do not extract from valid same-leaf edge contacts; require a new source/clue naming transform, unit, and order."
+}

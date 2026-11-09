@@ -1,0 +1,132 @@
+{
+  "createdAt": "2026-05-20T10:23:55",
+  "scope": "source-validation gate for future physical/original-layout/source material; no key derivation",
+  "inputs": {
+    "priorityCropPack": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_pack.json",
+    "zeroVisualCrops": "analysis_outputs/source_audit/zero_visual_crops/zero_visual_crops.json",
+    "pillGeometry": "analysis_outputs/source_audit/alternate_pdf_pill_geometry/alternate_pdf_pill_geometry.json",
+    "triContact": "analysis_outputs/source_audit/p78_frame_tricontact_signature/p78_frame_tricontact_signature.json",
+    "stabilityWindow": "analysis_outputs/source_audit/repaired_exact_edge_stability_window/repaired_exact_edge_stability_window.json"
+  },
+  "sheet": "analysis_outputs/source_audit/source_validation_gate/source_validation_gate_sheet.jpg",
+  "gates": [
+    {
+      "id": "source_quality",
+      "accept": "Native/original-layout export, source image, or physical scan/photo with enough resolution to inspect the benchmark crops.",
+      "reject": "Connector thumbnail, OCR PDF coordinates, low-res screenshot, or derived analysis image only."
+    },
+    {
+      "id": "page76_priority_crops",
+      "accept": "O5, G5, and L25-L32 crop regions are visible and can be compared against the baseline sheet.",
+      "baseline": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_sheet.jpg",
+      "activeTargets": {
+        "primaryManualTarget": {
+          "lineIndex": 32,
+          "corridorIndex": 14,
+          "text": "Maybe because he's a shitcoiner at heart.",
+          "score": 32.75
+        },
+        "pairedTarget": {
+          "lineIndex": 27,
+          "corridorIndex": 9,
+          "text": "collateralized “Volcano Bonds” to pay off the IMF",
+          "score": 16.75
+        },
+        "sourceBandTarget": {
+          "lineIndex": 26,
+          "corridorIndex": 8,
+          "text": "billions worth of future bitcoin earnings",
+          "score": 10.0
+        }
+      }
+    },
+    {
+      "id": "zero_hash0_hotspots",
+      "accept": "New source visibly confirms or changes one of the zero/#0 hotspots.",
+      "baseline": "analysis_outputs/source_audit/zero_visual_crops/zero_visual_crops_sheet.jpg",
+      "hotspotOrder": [
+        "100,000",
+        "20,000",
+        "12,000",
+        "2008",
+        "2011",
+        "2017",
+        "10",
+        "10"
+      ]
+    },
+    {
+      "id": "p79_pill_geometry",
+      "accept": "New source changes or confirms the five-fragment count/order/placement.",
+      "baseline": "analysis_outputs/source_audit/alternate_pdf_pill_geometry/alternate_pdf_pill_geometry_sheet.jpg",
+      "trustedFragmentCount": 5,
+      "trustedFragmentCenters": [
+        [
+          171.0,
+          2408.0
+        ],
+        [
+          421.5,
+          2454.5
+        ],
+        [
+          606.0,
+          2608.5
+        ],
+        [
+          437.0,
+          2780.5
+        ],
+        [
+          183.5,
+          2968.0
+        ]
+      ]
+    },
+    {
+      "id": "p78_frame_exact_edge",
+      "accept": "New source supports or changes the repaired exact-edge signature and M3/O5/G5 tri-contact.",
+      "signature": {
+        "labels": [
+          "should sell",
+          "Volcano Bonds",
+          "shitcoiner at heart"
+        ],
+        "styles": "RKY"
+      },
+      "triContactFrame": [
+        1196.0,
+        2398.0,
+        2212.0,
+        2950.0
+      ],
+      "stableDxRange": [
+        -78,
+        -38
+      ],
+      "stableDyRange": [
+        -4,
+        20
+      ]
+    },
+    {
+      "id": "extraction_permission",
+      "accept": "Only proceed to key checks if the new source/clue names the extraction unit/order.",
+      "blockedWithout": [
+        "word",
+        "letter",
+        "line",
+        "edge",
+        "font state",
+        "first/last",
+        "explicit ordering"
+      ]
+    }
+  ],
+  "decision": [
+    "A new source is promoted only if it changes/validates source geometry in a benchmark region or reveals instruction/layer text.",
+    "If benchmark regions are unchanged and no unit is named, treat the source as a witness only.",
+    "Do not run key candidates until the extraction unit/order is named."
+  ],
+  "nextMove": "When a new source arrives, run this gate first: source quality, page-76 priority crops, zero/#0 hotspots, p79 pill geometry, repaired p78 frame, then extraction permission."
+}

@@ -1,0 +1,205 @@
+{
+  "createdAt": "2026-05-20T19:52:11",
+  "scope": "O-B-B-O high-res boundary coincidence audit; no text extraction/key derivation",
+  "sources": {
+    "anchors": "analysis_outputs/source_audit/page76_anchor_adjacency_units/page76_anchor_adjacency_units.json",
+    "triContact": "analysis_outputs/source_audit/p78_frame_tricontact_signature/p78_frame_tricontact_signature.json",
+    "m3m4": "analysis_outputs/source_audit/m3_m4_obbo_order/m3_m4_obbo_order.json"
+  },
+  "overlay": "analysis_outputs/source_audit/obbo_highres_boundary_coincidences/obbo_highres_boundary_coincidences_overlay.jpg",
+  "thresholds": {
+    "exactPx": 6.0,
+    "nearPx": 20.0
+  },
+  "anchors": [
+    {
+      "id": "buying_dip",
+      "label": "buying the dip",
+      "color": "orange",
+      "box": [
+        1328.0,
+        2160.0,
+        1760.0,
+        2226.0
+      ]
+    },
+    {
+      "id": "one_billion",
+      "label": "$1 billion",
+      "color": "black",
+      "box": [
+        430.0,
+        2400.0,
+        690.0,
+        2447.0
+      ]
+    },
+    {
+      "id": "volcano_bonds",
+      "label": "Volcano Bonds",
+      "color": "black",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ]
+    },
+    {
+      "id": "shitcoiner_heart",
+      "label": "shitcoiner at heart",
+      "color": "orange",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ]
+    }
+  ],
+  "frame": {
+    "id": "frame_dx_minus_38",
+    "label": "p78 frame dx=-38",
+    "box": [
+      1196.0,
+      2398.0,
+      2212.0,
+      2950.0
+    ]
+  },
+  "marks": [
+    {
+      "id": "M3",
+      "label": "standalone mark M3",
+      "box": [
+        2172.0,
+        2619.0,
+        2544.0,
+        2884.0
+      ]
+    },
+    {
+      "id": "M4",
+      "label": "standalone mark M4",
+      "box": [
+        1827.0,
+        3003.0,
+        2120.0,
+        3182.0
+      ]
+    }
+  ],
+  "exactBoundaryHits": [
+    {
+      "a": "one_billion",
+      "aLabel": "$1 billion",
+      "aBoundary": "top",
+      "b": "frame_dx_minus_38",
+      "bLabel": "p78 frame dx=-38",
+      "bBoundary": "top",
+      "axis": "y",
+      "deltaPx": 2.0,
+      "class": "exact"
+    },
+    {
+      "a": "volcano_bonds",
+      "aLabel": "Volcano Bonds",
+      "aBoundary": "right",
+      "b": "frame_dx_minus_38",
+      "bLabel": "p78 frame dx=-38",
+      "bBoundary": "left",
+      "axis": "x",
+      "deltaPx": 0.0,
+      "class": "exact"
+    }
+  ],
+  "nearBoundaryHits": [
+    {
+      "a": "shitcoiner_heart",
+      "aLabel": "shitcoiner at heart",
+      "aBoundary": "top",
+      "b": "frame_dx_minus_38",
+      "bLabel": "p78 frame dx=-38",
+      "bBoundary": "bottom",
+      "axis": "y",
+      "deltaPx": 18.0,
+      "class": "near"
+    },
+    {
+      "a": "shitcoiner_heart",
+      "aLabel": "shitcoiner at heart",
+      "aBoundary": "centerY",
+      "b": "frame_dx_minus_38",
+      "bLabel": "p78 frame dx=-38",
+      "bBoundary": "bottom",
+      "axis": "y",
+      "deltaPx": 7.0,
+      "class": "near"
+    }
+  ],
+  "frameContacts": [
+    {
+      "anchor": "buying_dip",
+      "label": "buying the dip",
+      "insideFrame": false,
+      "horizontalOverlapWithFrame": 432.0,
+      "verticalOverlapWithFrame": 0.0,
+      "rightToFrameLeftDelta": 564.0,
+      "leftToFrameRightDelta": 884.0,
+      "bottomToFrameTopDelta": 172.0,
+      "topToFrameBottomDelta": 790.0,
+      "isExactBoundaryContact": false,
+      "isNearBoundaryContact": false
+    },
+    {
+      "anchor": "one_billion",
+      "label": "$1 billion",
+      "insideFrame": false,
+      "horizontalOverlapWithFrame": 0.0,
+      "verticalOverlapWithFrame": 47.0,
+      "rightToFrameLeftDelta": 506.0,
+      "leftToFrameRightDelta": 1782.0,
+      "bottomToFrameTopDelta": 49.0,
+      "topToFrameBottomDelta": 550.0,
+      "isExactBoundaryContact": false,
+      "isNearBoundaryContact": false
+    },
+    {
+      "anchor": "volcano_bonds",
+      "label": "Volcano Bonds",
+      "insideFrame": false,
+      "horizontalOverlapWithFrame": 0.0,
+      "verticalOverlapWithFrame": 48.0,
+      "rightToFrameLeftDelta": 0.0,
+      "leftToFrameRightDelta": 1417.0,
+      "bottomToFrameTopDelta": 194.0,
+      "topToFrameBottomDelta": 406.0,
+      "isExactBoundaryContact": true,
+      "isNearBoundaryContact": true
+    },
+    {
+      "anchor": "shitcoiner_heart",
+      "label": "shitcoiner at heart",
+      "insideFrame": false,
+      "horizontalOverlapWithFrame": 465.0,
+      "verticalOverlapWithFrame": 18.0,
+      "rightToFrameLeftDelta": 465.0,
+      "leftToFrameRightDelta": 1172.0,
+      "bottomToFrameTopDelta": 584.0,
+      "topToFrameBottomDelta": 18.0,
+      "isExactBoundaryContact": false,
+      "isNearBoundaryContact": true
+    }
+  ],
+  "assessment": [
+    "Two exact boundary coincidences appear in the active O-B-B-O field: B4/$1 billion top aligns with the repaired frame top within 2 px, and G5/Volcano Bonds right edge equals the repaired frame left edge.",
+    "The B4/frame-top hit is only a row/guide alignment because B4 is horizontally outside the repaired frame; it is not a frame contact.",
+    "The G5/frame-left hit is the only exact contact-style boundary coincidence.",
+    "O5 is a near frame contact because the frame bottom crosses the O5 band, but it is not an exact top/bottom boundary coincidence.",
+    "The other O-B-B-O anchors do not provide exact shared contact boundaries with each other, the repaired frame, or M3/M4 mark boxes under the current high-res coordinates.",
+    "This means the four-anchor O-B-B-O structure is a corridor/signature, not a complete geometric boundary selector.",
+    "Do not extract text from O-B-B-O boundary sides unless a new source clue supplies a boundary side/order."
+  ],
+  "decision": "Close O-B-B-O boundary coincidence as a standalone selector under the current scan.",
+  "nextMove": "Use the four-anchor O-B-B-O only as a corridor signature; next bounded pass should inspect whether the 3D folded view reveals a non-boundary visual ordering cue, not another text/key stream."
+}

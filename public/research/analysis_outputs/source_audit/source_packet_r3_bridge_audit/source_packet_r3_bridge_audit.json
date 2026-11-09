@@ -1,0 +1,430 @@
+{
+  "createdAt": "2026-05-21T07:06:22",
+  "scope": "source-packet R3 bridge audit; no OCR, extraction, key derivation, hashing, seed/WIF/address checks, BIP39 checks, or broad candidate generation",
+  "inputs": {
+    "source_reopen_requirements": "analysis_outputs/source_audit/source_reopen_requirements/source_reopen_requirements.json",
+    "future_source_validation_packet": "analysis_outputs/source_audit/future_source_validation_packet/future_source_validation_packet.json",
+    "source_packet_handoff_integrity_matrix": "analysis_outputs/source_audit/source_packet_handoff_integrity_matrix/source_packet_handoff_integrity_matrix.json",
+    "source_packet_false_positive_guardrail": "analysis_outputs/source_audit/source_packet_false_positive_guardrail/source_packet_false_positive_guardrail.json",
+    "external_clue_unit_order_intake": "analysis_outputs/external_clues/external_clue_unit_order_intake/external_clue_unit_order_intake.json"
+  },
+  "r3Gate": {
+    "id": "R3",
+    "name": "unit/order evidence",
+    "passCondition": "must name or visibly supply the extraction unit/order before any key checks resume"
+  },
+  "c3Condition": {
+    "condition": "C3 extraction unit",
+    "requiredEvidence": "source/clue text or source-visible layout must name a unit/order such as word, letter, line, edge, font, first/last, left/right, or equivalent",
+    "why": "Without this, local geometry only repeats target discovery."
+  },
+  "authorityRows": [
+    {
+      "sourceId": "canonical_plain_article_body",
+      "authority": "canonical_plain_text",
+      "path": "analysis_outputs/plain_text_transcript/canonical_plain_article_body.txt",
+      "exists": true,
+      "sourceBackedEligible": true,
+      "tokenCount": 1281,
+      "activeTargetMentionCount": 7,
+      "visualOnlyTargetWindowCount": 0,
+      "hardR3BridgeWindowCount": 0,
+      "hardPhraseGlobalHits": [],
+      "bridgeWindows": [],
+      "sampleVisualOnlyWindows": [],
+      "sourceBackedR3Bridge": false
+    },
+    {
+      "sourceId": "user_annotated_transcript",
+      "authority": "user_annotation_witness",
+      "path": "analysis_outputs/3d_article_map/user_annotated_transcript.txt",
+      "exists": true,
+      "sourceBackedEligible": true,
+      "tokenCount": 2157,
+      "activeTargetMentionCount": 12,
+      "visualOnlyTargetWindowCount": 12,
+      "hardR3BridgeWindowCount": 0,
+      "hardPhraseGlobalHits": [],
+      "bridgeWindows": [],
+      "sampleVisualOnlyWindows": [
+        {
+          "phrase": "$1 billion",
+          "tokenIndex": 827,
+          "actionHits": [],
+          "unitHits": [],
+          "visualHits": [
+            "bold",
+            "grey",
+            "highlighted"
+          ],
+          "hardPhraseHits": [],
+          "bridgeHit": false,
+          "contextPreview": "i tweeted president nayib bukele president nayib bukele all in bold when he announced he was going to tap his nation s colvanoes to mine $1 billion $1 billion in bold and highlighted grey in bitcoin that he should sell billions worth of future bitcoin earnings collateralized volcano bonds volcano bonds all"
+        },
+        {
+          "phrase": "$1 billion",
+          "tokenIndex": 829,
+          "actionHits": [],
+          "unitHits": [],
+          "visualHits": [
+            "bold",
+            "grey",
+            "highlighted"
+          ],
+          "hardPhraseHits": [],
+          "bridgeHit": false,
+          "contextPreview": "president nayib bukele president nayib bukele all in bold when he announced he was going to tap his nation s colvanoes to mine $1 billion $1 billion in bold and highlighted grey in bitcoin that he should sell billions worth of future bitcoin earnings collateralized volcano bonds volcano bonds all in bold"
+        },
+        {
+          "phrase": "Volcano Bonds",
+          "tokenIndex": 849,
+          "actionHits": [],
+          "unitHits": [],
+          "visualHits": [
+            "bold",
+            "grey",
+            "highlighted"
+          ],
+          "hardPhraseHits": [],
+          "bridgeHit": false,
+          "contextPreview": "colvanoes to mine $1 billion $1 billion in bold and highlighted grey in bitcoin that he should sell billions worth of future bitcoin earnings collateralized volcano bonds volcano bonds all in bold and highlighted grey to pay off the imf loan imf loan in bold and get rid of those leeches i"
+        },
+        {
+          "phrase": "Volcano Bonds",
+          "tokenIndex": 851,
+          "actionHits": [],
+          "unitHits": [],
+          "visualHits": [
+            "bold",
+            "grey",
+            "highlighted"
+          ],
+          "hardPhraseHits": [],
+          "bridgeHit": false,
+          "contextPreview": "mine $1 billion $1 billion in bold and highlighted grey in bitcoin that he should sell billions worth of future bitcoin earnings collateralized volcano bonds volcano bonds all in bold and highlighted grey to pay off the imf loan imf loan in bold and get rid of those leeches i tagged mike"
+        }
+      ],
+      "sourceBackedR3Bridge": false
+    },
+    {
+      "sourceId": "user_markdown_transcript",
+      "authority": "markdown_markup_witness",
+      "path": "analysis_outputs/3d_article_map/user_markdown_transcript.md",
+      "exists": true,
+      "sourceBackedEligible": true,
+      "tokenCount": 1526,
+      "activeTargetMentionCount": 6,
+      "visualOnlyTargetWindowCount": 6,
+      "hardR3BridgeWindowCount": 0,
+      "hardPhraseGlobalHits": [],
+      "bridgeWindows": [],
+      "sampleVisualOnlyWindows": [
+        {
+          "phrase": "$1 billion",
+          "tokenIndex": 589,
+          "actionHits": [],
+          "unitHits": [],
+          "visualHits": [],
+          "hardPhraseHits": [],
+          "bridgeHit": false,
+          "contextPreview": "them telling them he's buying the dip i tweeted president nayib bukele when he announced he was going to tap his nation's volcanoes to mine $1 billion in bitcoin that he should sell billions worth of future bitcoin earnings collateralized volcano bonds to pay off the imf loan and get rid of"
+        },
+        {
+          "phrase": "Volcano Bonds",
+          "tokenIndex": 604,
+          "actionHits": [],
+          "unitHits": [],
+          "visualHits": [],
+          "hardPhraseHits": [],
+          "bridgeHit": false,
+          "contextPreview": "he was going to tap his nation's volcanoes to mine $1 billion in bitcoin that he should sell billions worth of future bitcoin earnings collateralized volcano bonds to pay off the imf loan and get rid of those leeches i tagged m i k e n o v ograt z in the"
+        },
+        {
+          "phrase": "IMF loan",
+          "tokenIndex": 610,
+          "actionHits": [],
+          "unitHits": [],
+          "visualHits": [],
+          "hardPhraseHits": [],
+          "bridgeHit": false,
+          "contextPreview": "nation's volcanoes to mine $1 billion in bitcoin that he should sell billions worth of future bitcoin earnings collateralized volcano bonds to pay off the imf loan and get rid of those leeches i tagged m i k e n o v ograt z in the tweet figuring he could sell a"
+        },
+        {
+          "phrase": "shitcoiner at heart",
+          "tokenIndex": 673,
+          "actionHits": [],
+          "unitHits": [],
+          "visualHits": [],
+          "hardPhraseHits": [],
+          "bridgeHit": false,
+          "contextPreview": "hasn't moved on it i d on't r e a ll y tr u st t h at g u y maybe because he's a shitcoiner at heart meanwhile back in el salvador 42% of the country is now hyperbitcoinized at the time of writing jack ma lle rs' strike app nas gone"
+        }
+      ],
+      "sourceBackedR3Bridge": false
+    },
+    {
+      "sourceId": "plain_article_correction_report",
+      "authority": "derived_correction_markup",
+      "path": "analysis_outputs/plain_text_transcript/plain_article_correction_report.md",
+      "exists": true,
+      "sourceBackedEligible": false,
+      "tokenCount": 666,
+      "activeTargetMentionCount": 6,
+      "visualOnlyTargetWindowCount": 5,
+      "hardR3BridgeWindowCount": 1,
+      "hardPhraseGlobalHits": [],
+      "bridgeWindows": [
+        {
+          "phrase": "Volcano Bonds",
+          "tokenIndex": 501,
+          "actionHits": [
+            "count"
+          ],
+          "unitHits": [
+            "first",
+            "line",
+            "word"
+          ],
+          "visualHits": [],
+          "hardPhraseHits": [],
+          "bridgeHit": true,
+          "contextPreview": "text should replace the latest raw plain copy for exact text word count and line level selector work the highest impact raw copy omissions were volcano bonds money the $ in $2 trillion and the extra and in gets monetized for the first time keep both fixed variants body only for docm"
+        }
+      ],
+      "sampleVisualOnlyWindows": [
+        {
+          "phrase": "Volcano Bonds",
+          "tokenIndex": 203,
+          "actionHits": [],
+          "unitHits": [],
+          "visualHits": [
+            "highlighted"
+          ],
+          "hardPhraseHits": [],
+          "bridgeHit": false,
+          "contextPreview": "on an end buying the dip buying the dip found docm witness places the period inside the quote collateralized to pay off the imf collateralized volcano bonds to pay off the imf found the raw plain text omitted the highlighted volcano bonds phrase at this rate the whole at this rate the"
+        },
+        {
+          "phrase": "Volcano Bonds",
+          "tokenIndex": 218,
+          "actionHits": [],
+          "unitHits": [],
+          "visualHits": [
+            "highlighted"
+          ],
+          "hardPhraseHits": [],
+          "bridgeHit": false,
+          "contextPreview": "inside the quote collateralized to pay off the imf collateralized volcano bonds to pay off the imf found the raw plain text omitted the highlighted volcano bonds phrase at this rate the whole at this rate the whole found docm witness includes the comma big blockers big blockers found docm witness capitalizes"
+        },
+        {
+          "phrase": "Volcano Bonds",
+          "tokenIndex": 631,
+          "actionHits": [],
+          "unitHits": [],
+          "visualHits": [],
+          "hardPhraseHits": [],
+          "bridgeHit": false,
+          "contextPreview": "muck 488 5 492 5 bitcoin puts and an end to 550 6 554 6 the dip i tweeted 586 4 590 8 earnings collateralized volcano bonds to pay 696 4 704 5 this rate the whole 708 4 717 5 months sorry bhutan 737 5 747 5 lately big big blockers"
+        },
+        {
+          "phrase": "buying the dip",
+          "tokenIndex": 181,
+          "actionHits": [],
+          "unitHits": [
+            "lines",
+            "word"
+          ],
+          "visualHits": [],
+          "hardPhraseHits": [],
+          "bridgeHit": false,
+          "contextPreview": "the raw plain text split the word in across lines incorrectly puts and end puts an end found docm markdown witness agree on an end buying the dip buying the dip found docm witness places the period inside the quote collateralized to pay off the imf collateralized volcano bonds to pay off the"
+        }
+      ],
+      "sourceBackedR3Bridge": false
+    }
+  ],
+  "generatedReportRows": [
+    {
+      "sourceId": "missing_rule_frontier",
+      "path": "analysis_outputs/source_audit/missing_rule_frontier/missing_rule_frontier.md",
+      "exists": true,
+      "hardPhraseHits": [
+        "bitcoin key",
+        "take first",
+        "extract",
+        "encoded",
+        "unit/order"
+      ],
+      "unitOrderPhraseCount": 21,
+      "sourceBacked": false
+    },
+    {
+      "sourceId": "source_reopen_requirements",
+      "path": "analysis_outputs/source_audit/source_reopen_requirements/source_reopen_requirements.md",
+      "exists": true,
+      "hardPhraseHits": [
+        "extract",
+        "unit/order"
+      ],
+      "unitOrderPhraseCount": 5,
+      "sourceBacked": false
+    },
+    {
+      "sourceId": "source_packet_handoff_integrity_matrix",
+      "path": "analysis_outputs/source_audit/source_packet_handoff_integrity_matrix/source_packet_handoff_integrity_matrix.md",
+      "exists": true,
+      "hardPhraseHits": [
+        "extract",
+        "unit/order"
+      ],
+      "unitOrderPhraseCount": 3,
+      "sourceBacked": false
+    },
+    {
+      "sourceId": "source_packet_false_positive_guardrail",
+      "path": "analysis_outputs/source_audit/source_packet_false_positive_guardrail/source_packet_false_positive_guardrail.md",
+      "exists": true,
+      "hardPhraseHits": [
+        "extract",
+        "unit/order"
+      ],
+      "unitOrderPhraseCount": 8,
+      "sourceBacked": false
+    }
+  ],
+  "guardrailRows": [
+    {
+      "guardrailId": "color_or_state_only",
+      "temptingMatch": "OBBO/YKKY color-state match: color palindrome=True, visual palindrome=True",
+      "requiredToReopen": [
+        "line order 22/25/27/32",
+        "corridor order 4/7/9/14",
+        "source-backed unit/order wording"
+      ],
+      "r3BridgeAvailable": false,
+      "missingR3Reason": "No authoritative local text or raw external clue supplies source-backed unit/order wording for this visual match.",
+      "decision": "still_hard_reject_without_r3"
+    },
+    {
+      "guardrailId": "native_unrotated_order",
+      "temptingMatch": "Native raw order 32 27 25 22 or 14 9 7 4",
+      "requiredToReopen": [
+        "rotate native source images 180 degrees",
+        "recover readable/upright active order",
+        "reject raw-native reversed order as orientation error"
+      ],
+      "r3BridgeAvailable": false,
+      "missingR3Reason": "No authoritative local text or raw external clue supplies source-backed unit/order wording for this visual match.",
+      "decision": "still_hard_reject_without_r3"
+    },
+    {
+      "guardrailId": "c9_frame_only",
+      "temptingMatch": "C9/Y-K frame contains active targets 4/4",
+      "requiredToReopen": [
+        "source wording that names the frame as a reading boundary",
+        "unit/order wording inside or tied to the frame",
+        "controls must fail under the same rule"
+      ],
+      "r3BridgeAvailable": false,
+      "missingR3Reason": "No authoritative local text or raw external clue supplies source-backed unit/order wording for this visual match.",
+      "decision": "still_hard_reject_without_r3"
+    },
+    {
+      "guardrailId": "overdose_black_over",
+      "temptingMatch": "Active black OVER projections=2",
+      "requiredToReopen": [
+        "raw/source instruction tying OVERDOSE glyph slots to active boxes",
+        "control pages must not reproduce the same slot stream",
+        "explicit unit/order extraction wording"
+      ],
+      "r3BridgeAvailable": false,
+      "missingR3Reason": "No authoritative local text or raw external clue supplies source-backed unit/order wording for this visual match.",
+      "decision": "still_hard_reject_without_r3"
+    },
+    {
+      "guardrailId": "p78_contact_or_dx_repair",
+      "temptingMatch": "repaired p78 max partial=2/4; max full=0/4",
+      "requiredToReopen": [
+        "source-backed reason for dx repair",
+        "all four active boxes inside without context-band leakage",
+        "unit/order wording"
+      ],
+      "r3BridgeAvailable": false,
+      "missingR3Reason": "No authoritative local text or raw external clue supplies source-backed unit/order wording for this visual match.",
+      "decision": "still_hard_reject_without_r3"
+    },
+    {
+      "guardrailId": "p78_full_cover_leakage",
+      "temptingMatch": "full-cover repair spans 102 words",
+      "requiredToReopen": [
+        "new source must avoid L22-L32 context-band leakage",
+        "new source must isolate target units",
+        "hard instruction wording must be present"
+      ],
+      "r3BridgeAvailable": false,
+      "missingR3Reason": "No authoritative local text or raw external clue supplies source-backed unit/order wording for this visual match.",
+      "decision": "still_hard_reject_without_r3"
+    },
+    {
+      "guardrailId": "bold_or_annotation_only",
+      "temptingMatch": "format pass=4; line-bold exact=2/4",
+      "requiredToReopen": [
+        "DOCM/high-res/crop-pack agreement",
+        "source-backed unit/order wording",
+        "do not rely on Markdown bold or annotated notes alone"
+      ],
+      "r3BridgeAvailable": false,
+      "missingR3Reason": "No authoritative local text or raw external clue supplies source-backed unit/order wording for this visual match.",
+      "decision": "still_hard_reject_without_r3"
+    },
+    {
+      "guardrailId": "active_box_ocr_text",
+      "temptingMatch": "active box exact OCR matches=0/4",
+      "requiredToReopen": [
+        "use canonical plain text + DOCM text + Markdown transcript",
+        "use 3D OCR only as geometry witness",
+        "do not extract key text from corrupted target-box OCR"
+      ],
+      "r3BridgeAvailable": false,
+      "missingR3Reason": "No authoritative local text or raw external clue supplies source-backed unit/order wording for this visual match.",
+      "decision": "still_hard_reject_without_r3"
+    },
+    {
+      "guardrailId": "loose_alignment",
+      "temptingMatch": "common shift tolerance=4 px",
+      "requiredToReopen": [
+        "explain any shift larger than current tolerance",
+        "preserve line/corridor order and visual state",
+        "pass all R1-R5 source-reopen gates"
+      ],
+      "r3BridgeAvailable": false,
+      "missingR3Reason": "No authoritative local text or raw external clue supplies source-backed unit/order wording for this visual match.",
+      "decision": "still_hard_reject_without_r3"
+    }
+  ],
+  "summary": {
+    "authoritySourceCount": 4,
+    "authorityActiveTargetMentionCount": 31,
+    "authorityVisualOnlyTargetWindowCount": 23,
+    "sourceBackedR3BridgeHitCount": 0,
+    "derivedCorrectionBridgeWindowCount": 1,
+    "externalRawLikeR3PassCount": 0,
+    "externalDerivedR3PassCount": 0,
+    "generatedUnitOrderPhraseCount": 37,
+    "guardrailCount": 9,
+    "guardrailStillBlockedCount": 9,
+    "activeVisualStateOrder": "YKKY",
+    "activePageLines": "22 25 27 32",
+    "activeCorridorIndexes": "4 7 9 14",
+    "handoffSelectorUnlockedCount": 0,
+    "handoffExtractionReadyGateCount": 0,
+    "r3BridgeFingerprint": "authority=4|targetWindows=31|visualOnly=23|sourceR3=0|derivedR3=1|externalRawR3=0|generatedUnitOrder=37|guardrails=9|selectorUnlocks=0",
+    "sourceBackedR3BridgeUnlocked": false
+  },
+  "decision": {
+    "sourcePacketR3BridgeAudit": "no_source_backed_r3_bridge_found",
+    "reason": "Authoritative local text layers contain active target wording and visual witness markup, but no source-backed unit/order instruction tied to the active quartet or visual/layout mechanics. Generated reports mention unit/order as a requirement only, not as evidence."
+  },
+  "sheet": "analysis_outputs/source_audit/source_packet_r3_bridge_audit/source_packet_r3_bridge_audit_sheet.jpg",
+  "nextMove": "Keep using the source-packet handoff and false-positive guardrail. Reopen extraction only after new source/provenance text supplies R3 unit/order wording and passes R1-R5."
+}

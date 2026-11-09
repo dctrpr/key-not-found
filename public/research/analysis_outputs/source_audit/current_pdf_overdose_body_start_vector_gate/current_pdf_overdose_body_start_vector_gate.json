@@ -1,0 +1,511 @@
+{
+  "createdAt": "2026-05-24T15:17:19",
+  "scope": {
+    "articlePages": [
+      73,
+      80
+    ],
+    "rayWidthsPt": [
+      10.0,
+      20.0
+    ],
+    "method": "Measure header-to-first-body-line vector on repeated OVERDOSE pages; check fixed-width rays through page OCR words.",
+    "excluded": [
+      "OCR-to-key extraction",
+      "private-key candidate generation",
+      "hash-to-key checks",
+      "seed/WIF/address checks",
+      "BIP39 checks",
+      "broad brute force"
+    ]
+  },
+  "inputs": {
+    "pdfs": [
+      "magazine.pdf",
+      "keyser bitcoin .pdf",
+      "analysis_outputs/external_clues/google_drive_article_download.pdf"
+    ],
+    "headerDeltaTransfer": "analysis_outputs/source_audit/current_pdf_overdose_header_delta_transfer_gate/current_pdf_overdose_header_delta_transfer_gate.json",
+    "headerDeltaTransferFingerprint": "pdfs=3|headers=6|variants=12|boxRows=48|textRows=0|targetRows=0|strictRows=0|allFourVariants=0|activeOrderVariants=0|candidates=0|sourceR3=0|triggers=0/9|selectors=0",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "summary": {
+    "pdfCount": 3,
+    "overdoseHeaderRowCount": 6,
+    "bodyStartRowCount": 4,
+    "bodyVectorRowCount": 8,
+    "targetVectorRowCount": 0,
+    "strictVectorRowCount": 0,
+    "allFourVectorRowCount": 0,
+    "activeOrderVectorRowCount": 0,
+    "bodyStartVectorCandidateCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "fingerprint": "pdfs=3|headers=6|bodyRows=4|vectorRows=8|targetRows=0|strictRows=0|allFourRows=0|activeOrderRows=0|candidates=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "records": [
+    {
+      "pdf": "magazine.pdf",
+      "overdoseHeaderRows": [],
+      "bodyStartRows": [],
+      "bodyVectorRows": []
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "overdoseHeaderRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "headerBbox": [
+            504.239990234375,
+            35.91998291015625,
+            537.750244140625,
+            41.92598342895508
+          ],
+          "headerCenter": [
+            520.9951,
+            38.923
+          ],
+          "wordCount": 1,
+          "hasBodyLine": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "headerBbox": [
+            514.3200073242188,
+            29.4000244140625,
+            547.8141479492188,
+            36.40702438354492
+          ],
+          "headerCenter": [
+            531.0671,
+            32.9035
+          ],
+          "wordCount": 265,
+          "hasBodyLine": true
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "headerBbox": [
+            502.0799865722656,
+            30.8800048828125,
+            535.3598022460938,
+            36.88600540161133
+          ],
+          "headerCenter": [
+            518.7199,
+            33.883
+          ],
+          "wordCount": 202,
+          "hasBodyLine": true
+        }
+      ],
+      "bodyStartRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "block": 2,
+          "line": 0,
+          "bbox": [
+            194.16,
+            76.64,
+            509.52,
+            90.654
+          ],
+          "center": [
+            351.84,
+            83.647
+          ],
+          "wordCount": 10,
+          "text": "Get some toxicity. Get some bitcoin. Open your heart to",
+          "firstWordIndex": 1
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "block": 2,
+          "line": 0,
+          "bbox": [
+            104.3999,
+            79.0,
+            306.7817,
+            90.0319
+          ],
+          "center": [
+            205.5908,
+            84.5159
+          ],
+          "wordCount": 8,
+          "text": "We've never had an economy and a money",
+          "firstWordIndex": 1
+        }
+      ],
+      "bodyVectorRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "widthPt": 10.0,
+          "headerCenter": [
+            531.0671,
+            32.9035
+          ],
+          "bodyLineCenter": [
+            351.84,
+            83.647
+          ],
+          "bodyLineText": "Get some toxicity. Get some bitcoin. Open your heart to",
+          "bodyVector": [
+            -179.2271,
+            50.7435
+          ],
+          "bodyVectorLength": 186.272,
+          "bodyVectorAngleDegrees": 164.1919,
+          "rayWordCount": 8,
+          "rayWordsPreview": "some bitcoin. the freaking It's funkier than but",
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "candidate": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "widthPt": 20.0,
+          "headerCenter": [
+            531.0671,
+            32.9035
+          ],
+          "bodyLineCenter": [
+            351.84,
+            83.647
+          ],
+          "bodyLineText": "Get some toxicity. Get some bitcoin. Open your heart to",
+          "bodyVector": [
+            -179.2271,
+            50.7435
+          ],
+          "bodyVectorLength": 186.272,
+          "bodyVectorAngleDegrees": 164.1919,
+          "rayWordCount": 15,
+          "rayWordsPreview": "Get some bitcoin. Open It's the freaking UTXO It's funkier than a but George nailing",
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "candidate": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "widthPt": 10.0,
+          "headerCenter": [
+            518.7199,
+            33.883
+          ],
+          "bodyLineCenter": [
+            205.5908,
+            84.5159
+          ],
+          "bodyLineText": "We've never had an economy and a money",
+          "bodyVector": [
+            -313.1291,
+            50.6329
+          ],
+          "bodyVectorLength": 317.1963,
+          "bodyVectorAngleDegrees": 170.8148,
+          "rayWordCount": 7,
+          "rayWordsPreview": "never had an economy and that incentivizes",
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "candidate": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "widthPt": 20.0,
+          "headerCenter": [
+            518.7199,
+            33.883
+          ],
+          "bodyLineCenter": [
+            205.5908,
+            84.5159
+          ],
+          "bodyLineText": "We've never had an economy and a money",
+          "bodyVector": [
+            -313.1291,
+            50.6329
+          ],
+          "bodyVectorLength": 317.1963,
+          "bodyVectorAngleDegrees": 170.8148,
+          "rayWordCount": 12,
+          "rayWordsPreview": "We've never had an economy and a money that incentivizes love Love",
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "candidate": false
+        }
+      ]
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "overdoseHeaderRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "headerBbox": [
+            504.239990234375,
+            35.91998291015625,
+            537.750244140625,
+            41.92598342895508
+          ],
+          "headerCenter": [
+            520.9951,
+            38.923
+          ],
+          "wordCount": 1,
+          "hasBodyLine": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "headerBbox": [
+            514.3200073242188,
+            29.4000244140625,
+            547.8141479492188,
+            36.40702438354492
+          ],
+          "headerCenter": [
+            531.0671,
+            32.9035
+          ],
+          "wordCount": 265,
+          "hasBodyLine": true
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "headerBbox": [
+            502.0799865722656,
+            30.8800048828125,
+            535.3598022460938,
+            36.88600540161133
+          ],
+          "headerCenter": [
+            518.7199,
+            33.883
+          ],
+          "wordCount": 202,
+          "hasBodyLine": true
+        }
+      ],
+      "bodyStartRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "block": 2,
+          "line": 0,
+          "bbox": [
+            194.16,
+            76.64,
+            509.52,
+            90.654
+          ],
+          "center": [
+            351.84,
+            83.647
+          ],
+          "wordCount": 10,
+          "text": "Get some toxicity. Get some bitcoin. Open your heart to",
+          "firstWordIndex": 1
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "block": 2,
+          "line": 0,
+          "bbox": [
+            104.3999,
+            79.0,
+            306.7817,
+            90.0319
+          ],
+          "center": [
+            205.5908,
+            84.5159
+          ],
+          "wordCount": 8,
+          "text": "We've never had an economy and a money",
+          "firstWordIndex": 1
+        }
+      ],
+      "bodyVectorRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "widthPt": 10.0,
+          "headerCenter": [
+            531.0671,
+            32.9035
+          ],
+          "bodyLineCenter": [
+            351.84,
+            83.647
+          ],
+          "bodyLineText": "Get some toxicity. Get some bitcoin. Open your heart to",
+          "bodyVector": [
+            -179.2271,
+            50.7435
+          ],
+          "bodyVectorLength": 186.272,
+          "bodyVectorAngleDegrees": 164.1919,
+          "rayWordCount": 8,
+          "rayWordsPreview": "some bitcoin. the freaking It's funkier than but",
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "candidate": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "widthPt": 20.0,
+          "headerCenter": [
+            531.0671,
+            32.9035
+          ],
+          "bodyLineCenter": [
+            351.84,
+            83.647
+          ],
+          "bodyLineText": "Get some toxicity. Get some bitcoin. Open your heart to",
+          "bodyVector": [
+            -179.2271,
+            50.7435
+          ],
+          "bodyVectorLength": 186.272,
+          "bodyVectorAngleDegrees": 164.1919,
+          "rayWordCount": 15,
+          "rayWordsPreview": "Get some bitcoin. Open It's the freaking UTXO It's funkier than a but George nailing",
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "candidate": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "widthPt": 10.0,
+          "headerCenter": [
+            518.7199,
+            33.883
+          ],
+          "bodyLineCenter": [
+            205.5908,
+            84.5159
+          ],
+          "bodyLineText": "We've never had an economy and a money",
+          "bodyVector": [
+            -313.1291,
+            50.6329
+          ],
+          "bodyVectorLength": 317.1963,
+          "bodyVectorAngleDegrees": 170.8148,
+          "rayWordCount": 7,
+          "rayWordsPreview": "never had an economy and that incentivizes",
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "candidate": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "widthPt": 20.0,
+          "headerCenter": [
+            518.7199,
+            33.883
+          ],
+          "bodyLineCenter": [
+            205.5908,
+            84.5159
+          ],
+          "bodyLineText": "We've never had an economy and a money",
+          "bodyVector": [
+            -313.1291,
+            50.6329
+          ],
+          "bodyVectorLength": 317.1963,
+          "bodyVectorAngleDegrees": 170.8148,
+          "rayWordCount": 12,
+          "rayWordsPreview": "We've never had an economy and a money that incentivizes love Love",
+          "targetHitCount": 0,
+          "targetHits": [],
+          "targetIds": [],
+          "targetOrder": [],
+          "allFourTargets": false,
+          "activeOrderTargets": false,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "candidate": false
+        }
+      ]
+    }
+  ],
+  "decision": {
+    "currentPdfOverdoseBodyStartVectorGate": "current_pdf_overdose_body_start_vector_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Repeated OVERDOSE header-to-body-start vectors do not carry strict unit/order wording with all-four or active-order target structure.",
+    "nextMove": "Treat OVERDOSE body-start vectors as layout context only unless source material names this unit/order rule."
+  },
+  "sheet": "analysis_outputs/source_audit/current_pdf_overdose_body_start_vector_gate/current_pdf_overdose_body_start_vector_gate_sheet.jpg"
+}

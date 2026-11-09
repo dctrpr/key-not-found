@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "date": "2026-11-09",
+  "scope": "Curated public corpus bytes; hosting/repository account surfaces require a separate publication review.",
+  "findings": {
+    "configuredPrivateIdentities": 0,
+    "personalHomePaths": 0,
+    "privateServiceUrls": 0,
+    "contactAddresses": 0,
+    "credentialPatterns": 0,
+    "forbiddenFiles": 0,
+    "sourceImageMetadata": 0,
+    "pdfMetadata": 0
+  },
+  "structuredJsonFilesParsed": 483,
+  "sourceJpegFilesInspected": 29,
+  "pdfFilesInspected": 3,
+  "syntaxReview": {
+    "pythonVersion": "3.12",
+    "pythonFiles": 472,
+    "pythonErrors": 0,
+    "javascriptFiles": 25,
+    "javascriptErrors": 0
+  },
+  "pixelVerification": "Every metadata-stripped PDF/runtime JPEG and the announcement photograph decoded byte-identically before and after metadata removal. Upright website previews are separately recompressed.",
+  "reproductionChecks": [
+    "The released numeric-rule script reproduced all four declared256-bit scalars in an isolated relative-path copy.",
+    "The released phrase-box audit reproduced the same34-row /17-invalid-edge statistics in an isolated copy."
+  ],
+  "exclusions": "Private identity patterns themselves are not written into this public audit. See release-build-summary.json for exclusion categories and redacted relative-file list."
+}

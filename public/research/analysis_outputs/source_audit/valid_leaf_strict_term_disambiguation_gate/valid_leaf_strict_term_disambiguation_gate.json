@@ -1,0 +1,75 @@
+{
+  "createdAt": "2026-05-24T08:02:57",
+  "scope": "Lone strict term in valid 75->76 line-band trace disambiguated against instruction grammar.",
+  "inputs": {
+    "validLeafLineBandTrace": "analysis_outputs/source_audit/current_scan_valid_leaf_line_band_trace/current_scan_valid_leaf_line_band_trace.json",
+    "articleMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "decision": "valid_leaf_strict_term_disambiguation_no_instruction",
+  "summary": {
+    "decision": "valid_leaf_strict_term_disambiguation_no_instruction",
+    "strictCarrierRowCount": 1,
+    "strictTerms": [
+      "words"
+    ],
+    "strictCarrierTargets": [
+      "O5"
+    ],
+    "actionCarrierCount": 0,
+    "unitOnlyCarrierCount": 1,
+    "orderCarrierCount": 0,
+    "instructionCandidateCount": 0,
+    "allFourActiveTargetsCoveredByStrictCarriers": false,
+    "page75StrictLikeLineCount": 1,
+    "page75StrictLikeTerms": [
+      "words"
+    ],
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0,
+    "fingerprint": "strictRows=1|terms=words|targets=O5|action=0|unitOnly=1|order=0|instr=0|all4=0|p75StrictLines=1|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "fingerprint": "strictRows=1|terms=words|targets=O5|action=0|unitOnly=1|order=0|instr=0|all4=0|p75StrictLines=1|sourceR3=0|triggers=0/9|selectors=0",
+  "strictCarrierRows": [
+    {
+      "mode": "valid_75_to_76_natural",
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "sourceLineIndex": 29,
+      "sourceText": "to. Nice, pleasant words from con men and shitcoiners",
+      "targetTextPreview": "Maybe because he's a siukbeodmensertslveaarty",
+      "sourceTargetLineOverlapArea": 25889.676,
+      "sourceTargetLineOverlapCount": 1,
+      "strictTerms": [
+        "words"
+      ],
+      "actionTerms": [],
+      "unitTerms": [
+        "words"
+      ],
+      "orderTerms": [],
+      "hasActionAndUnit": false,
+      "hasUnitAndOrder": false,
+      "instructionCandidate": false,
+      "ordinaryProseReason": "unit-only noun in ordinary sentence"
+    }
+  ],
+  "page75StrictLikeLines": [
+    {
+      "lineIndex": 29,
+      "text": "to. Nice, pleasant words from con men and shitcoiners",
+      "strictTerms": [
+        "words"
+      ],
+      "actionTerms": [],
+      "unitTerms": [
+        "words"
+      ],
+      "orderTerms": []
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/valid_leaf_strict_term_disambiguation_gate/valid_leaf_strict_term_disambiguation_gate_sheet.jpg"
+}

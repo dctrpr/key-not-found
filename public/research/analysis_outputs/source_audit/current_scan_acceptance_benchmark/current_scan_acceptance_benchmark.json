@@ -1,0 +1,88 @@
+{
+  "createdAt": "2026-05-20T12:09:59",
+  "scope": "current canonical scan scored against refreshed C1-C9 source-registration benchmark; no key derivation",
+  "acceptanceBenchmark": "analysis_outputs/source_audit/source_registration_acceptance_test/source_registration_acceptance_test.json",
+  "statusCounts": {
+    "PASS": 2,
+    "PARTIAL": 4,
+    "FAIL": 3
+  },
+  "blockingConstraints": [
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8"
+  ],
+  "witnessSequenceHits": 2,
+  "independentComparisonSequenceHits": 0,
+  "rows": [
+    {
+      "id": "C1",
+      "status": "PASS",
+      "currentScanEvidence": "Trusted page-76 O5/G5 crop geometry is available and source-faithful.",
+      "blocksExtraction": false,
+      "futureImprovementNeeded": "Only if a future source gives cleaner manual boxes."
+    },
+    {
+      "id": "C2",
+      "status": "PARTIAL",
+      "currentScanEvidence": "p78 frame signature exists, including G5 near-edge and O5 bottom/left clip, but remains a registration signature.",
+      "blocksExtraction": true,
+      "futureImprovementNeeded": "Independent physical/source layer should explain the same p78->p76 contact naturally."
+    },
+    {
+      "id": "C3",
+      "status": "FAIL",
+      "currentScanEvidence": "No source-backed word/letter/line/edge/font unit or ordering rule has been found.",
+      "blocksExtraction": true,
+      "futureImprovementNeeded": "A clue/source must name the extraction unit before any key checks resume."
+    },
+    {
+      "id": "C4",
+      "status": "FAIL",
+      "currentScanEvidence": "Current physical leaf/spread models produce total direct trusted O5/G5 overlaps=0.",
+      "blocksExtraction": true,
+      "futureImprovementNeeded": "A true physical scan/photo should improve front/back, spread, fold, or bleed-through behavior."
+    },
+    {
+      "id": "C5",
+      "status": "PARTIAL",
+      "currentScanEvidence": "Issue 24 and bitcoin4 witness preserve the five-capsule sequence; independent comparison sequence hits=0.",
+      "blocksExtraction": true,
+      "futureImprovementNeeded": "Need a source rule that maps the capsule chain to a text/selector unit."
+    },
+    {
+      "id": "C6",
+      "status": "PARTIAL",
+      "currentScanEvidence": "Five repeats across p73/p79/p80/p76; p73/p79 step signature is RRLL and p79-p73 offsets are [5, 5, 5, 5, 5]; instruction hits=none.",
+      "blocksExtraction": true,
+      "futureImprovementNeeded": "Need source/clue wording that explains how five selects a word, letter, edge, or font state."
+    },
+    {
+      "id": "C7",
+      "status": "PARTIAL",
+      "currentScanEvidence": "Announcement/media evidence points to page-76 Bukele/volcano/IMF corridor, but does not add unit/order.",
+      "blocksExtraction": true,
+      "futureImprovementNeeded": "Need exact media-order or source instruction beyond target confirmation."
+    },
+    {
+      "id": "C8",
+      "status": "FAIL",
+      "currentScanEvidence": "Canva remains a low-resolution investigator note board, not geometry truth.",
+      "blocksExtraction": true,
+      "futureImprovementNeeded": "Need original embedded Canva assets, higher-resolution export, browser capture, or physical source image."
+    },
+    {
+      "id": "C9",
+      "status": "PASS",
+      "currentScanEvidence": "Desktop/project PDF are byte-identical=True; source-to-3D transform is rotate180; priority crop RMS range=1.132865 to 2.070533.",
+      "blocksExtraction": false,
+      "futureImprovementNeeded": "Always compare future source material in matching orientation."
+    }
+  ],
+  "decision": "The current scan is a valid baseline and target/provenance witness, but extraction remains blocked by C3/C4/C8 and partial C2/C5/C6/C7.",
+  "nextMove": "Future sources must improve at least one blocked constraint, especially C3 extraction unit or C4/C8 source quality, before any key-candidate work resumes."
+}

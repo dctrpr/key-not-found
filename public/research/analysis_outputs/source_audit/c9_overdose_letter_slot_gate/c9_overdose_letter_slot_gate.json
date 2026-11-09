@@ -1,0 +1,593 @@
+{
+  "createdAt": "2026-05-21T02:59:53",
+  "scope": "C9 OVERDOSE 8-letter slot geometry gate; no OCR, no extraction, no key derivation, no hashing",
+  "inputs": {
+    "c9FramePageControl": "analysis_outputs/source_audit/c9_frame_overdose_page_control/c9_frame_overdose_page_control.json",
+    "c9HighlightEdgeContactControl": "analysis_outputs/source_audit/c9_highlight_edge_contact_control/c9_highlight_edge_contact_control.json",
+    "activeCropCompletion": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "formatAuthorityLock": "analysis_outputs/docm_format_sources/page76_target_format_authority_lock/page76_target_format_authority_lock.json",
+    "userMarkdownTranscript": "analysis_outputs/3d_article_map/user_markdown_transcript.md",
+    "userAnnotatedTranscript": "analysis_outputs/3d_article_map/user_annotated_transcript.txt",
+    "plainArticleCorrectionReport": "analysis_outputs/plain_text_transcript/plain_article_correction_report.md"
+  },
+  "c9Frame": [
+    294.0,
+    2176.81,
+    2250.0,
+    3023.73
+  ],
+  "slots": [
+    {
+      "index": 0,
+      "letter": "O",
+      "left": 294.0,
+      "right": 538.5,
+      "width": 244.5
+    },
+    {
+      "index": 1,
+      "letter": "V",
+      "left": 538.5,
+      "right": 783.0,
+      "width": 244.5
+    },
+    {
+      "index": 2,
+      "letter": "E",
+      "left": 783.0,
+      "right": 1027.5,
+      "width": 244.5
+    },
+    {
+      "index": 3,
+      "letter": "R",
+      "left": 1027.5,
+      "right": 1272.0,
+      "width": 244.5
+    },
+    {
+      "index": 4,
+      "letter": "D",
+      "left": 1272.0,
+      "right": 1516.5,
+      "width": 244.5
+    },
+    {
+      "index": 5,
+      "letter": "O",
+      "left": 1516.5,
+      "right": 1761.0,
+      "width": 244.5
+    },
+    {
+      "index": 6,
+      "letter": "S",
+      "left": 1761.0,
+      "right": 2005.5,
+      "width": 244.5
+    },
+    {
+      "index": 7,
+      "letter": "E",
+      "left": 2005.5,
+      "right": 2250.0,
+      "width": 244.5
+    }
+  ],
+  "activeRows": [
+    {
+      "id": "buying_dip",
+      "shortId": "O4",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "visualState": "Y",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "docmBoldFraction": 1.0,
+      "docmHighlightSummary": "yellow:14",
+      "centerX": 1567.5,
+      "centerSlotIndex": 5,
+      "centerSlotLetter": "O",
+      "spanSlotIndexes": [
+        4,
+        5,
+        6
+      ],
+      "spanSlotLetters": "DOS",
+      "spanSlotOverlapsPx": [
+        182.5,
+        244.5,
+        40.0
+      ]
+    },
+    {
+      "id": "one_billion",
+      "shortId": "B4",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "visualState": "K",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "docmBoldFraction": 1.0,
+      "docmHighlightSummary": "black:10",
+      "centerX": 559.5,
+      "centerSlotIndex": 1,
+      "centerSlotLetter": "V",
+      "spanSlotIndexes": [
+        0,
+        1
+      ],
+      "spanSlotLetters": "OV",
+      "spanSlotOverlapsPx": [
+        110.5,
+        152.5
+      ]
+    },
+    {
+      "id": "volcano_bonds",
+      "shortId": "G5",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "visualState": "K",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "docmBoldFraction": 1.0,
+      "docmHighlightSummary": "black:13",
+      "centerX": 995.5,
+      "centerSlotIndex": 2,
+      "centerSlotLetter": "E",
+      "spanSlotIndexes": [
+        2,
+        3
+      ],
+      "spanSlotLetters": "ER",
+      "spanSlotOverlapsPx": [
+        232.5,
+        168.5
+      ]
+    },
+    {
+      "id": "shitcoiner_heart",
+      "shortId": "O5",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "visualState": "Y",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "docmBoldFraction": 1.0,
+      "docmHighlightSummary": "yellow:19",
+      "centerX": 1350.5,
+      "centerSlotIndex": 4,
+      "centerSlotLetter": "D",
+      "spanSlotIndexes": [
+        3,
+        4,
+        5
+      ],
+      "spanSlotLetters": "RDO",
+      "spanSlotOverlapsPx": [
+        232.0,
+        244.5,
+        144.5
+      ]
+    }
+  ],
+  "activeStreams": [
+    {
+      "name": "active_center_line_order",
+      "stream": "OVED",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "strictInstructionHits": [],
+      "layoutTermHits": []
+    },
+    {
+      "name": "active_center_x_order",
+      "stream": "VEDO",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "strictInstructionHits": [],
+      "layoutTermHits": []
+    },
+    {
+      "name": "active_span_line_order",
+      "stream": "DOSOVERRDO",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "strictInstructionHits": [],
+      "layoutTermHits": [
+        "OVER"
+      ]
+    },
+    {
+      "name": "active_span_x_order",
+      "stream": "OVERRDODOS",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "strictInstructionHits": [],
+      "layoutTermHits": [
+        "OVER"
+      ]
+    },
+    {
+      "name": "active_orange_only_span_x_order",
+      "stream": "RDODOS",
+      "targetOrder": [
+        "O5",
+        "O4"
+      ],
+      "strictInstructionHits": [],
+      "layoutTermHits": []
+    },
+    {
+      "name": "active_black_only_span_x_order",
+      "stream": "OVER",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "strictInstructionHits": [],
+      "layoutTermHits": [
+        "OVER"
+      ]
+    },
+    {
+      "name": "active_center_line_order_reverse",
+      "stream": "DEVO",
+      "targetOrder": [
+        "O5",
+        "G5",
+        "B4",
+        "O4"
+      ],
+      "strictInstructionHits": [],
+      "layoutTermHits": []
+    },
+    {
+      "name": "active_center_x_order_reverse",
+      "stream": "ODEV",
+      "targetOrder": [
+        "O4",
+        "O5",
+        "G5",
+        "B4"
+      ],
+      "strictInstructionHits": [],
+      "layoutTermHits": []
+    },
+    {
+      "name": "active_span_line_order_reverse",
+      "stream": "ODRREVOSOD",
+      "targetOrder": [
+        "O5",
+        "G5",
+        "B4",
+        "O4"
+      ],
+      "strictInstructionHits": [],
+      "layoutTermHits": []
+    },
+    {
+      "name": "active_span_x_order_reverse",
+      "stream": "SODODRREVO",
+      "targetOrder": [
+        "O4",
+        "O5",
+        "G5",
+        "B4"
+      ],
+      "strictInstructionHits": [],
+      "layoutTermHits": []
+    },
+    {
+      "name": "active_orange_only_span_x_order_reverse",
+      "stream": "SODODR",
+      "targetOrder": [
+        "O4",
+        "O5"
+      ],
+      "strictInstructionHits": [],
+      "layoutTermHits": []
+    },
+    {
+      "name": "active_black_only_span_x_order_reverse",
+      "stream": "REVO",
+      "targetOrder": [
+        "G5",
+        "B4"
+      ],
+      "strictInstructionHits": [],
+      "layoutTermHits": []
+    }
+  ],
+  "highlightRows": [
+    {
+      "page": 76,
+      "id": "p76_orange_4",
+      "kind": "orange",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "shortId": "p76_orange_4",
+      "centerX": 1567.5,
+      "centerSlotIndex": 5,
+      "centerSlotLetter": "O",
+      "spanSlotIndexes": [
+        4,
+        5,
+        6
+      ],
+      "spanSlotLetters": "DOS",
+      "spanSlotOverlapsPx": [
+        182.5,
+        244.5,
+        40.0
+      ],
+      "isActiveOrange": true
+    },
+    {
+      "page": 75,
+      "id": "p75_orange_6",
+      "kind": "orange",
+      "box": [
+        1271.0,
+        2200.0,
+        1608.0,
+        2248.0
+      ],
+      "shortId": "p75_orange_6",
+      "centerX": 1439.5,
+      "centerSlotIndex": 4,
+      "centerSlotLetter": "D",
+      "spanSlotIndexes": [
+        4,
+        5
+      ],
+      "spanSlotLetters": "DO",
+      "spanSlotOverlapsPx": [
+        244.5,
+        91.5
+      ],
+      "isActiveOrange": false
+    },
+    {
+      "page": 76,
+      "id": "p76_orange_5",
+      "kind": "orange",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "shortId": "p76_orange_5",
+      "centerX": 1350.5,
+      "centerSlotIndex": 4,
+      "centerSlotLetter": "D",
+      "spanSlotIndexes": [
+        3,
+        4,
+        5
+      ],
+      "spanSlotLetters": "RDO",
+      "spanSlotOverlapsPx": [
+        232.0,
+        244.5,
+        144.5
+      ],
+      "isActiveOrange": true
+    },
+    {
+      "page": 79,
+      "id": "p79_orange_7",
+      "kind": "orange",
+      "box": [
+        387.0,
+        2429.0,
+        456.0,
+        2480.0
+      ],
+      "shortId": "p79_orange_7",
+      "centerX": 421.5,
+      "centerSlotIndex": 0,
+      "centerSlotLetter": "O",
+      "spanSlotIndexes": [
+        0
+      ],
+      "spanSlotLetters": "O",
+      "spanSlotOverlapsPx": [
+        69.0
+      ],
+      "isActiveOrange": false
+    },
+    {
+      "page": 79,
+      "id": "p79_orange_9",
+      "kind": "orange",
+      "box": [
+        408.0,
+        2746.0,
+        466.0,
+        2815.0
+      ],
+      "shortId": "p79_orange_9",
+      "centerX": 437.0,
+      "centerSlotIndex": 0,
+      "centerSlotLetter": "O",
+      "spanSlotIndexes": [
+        0
+      ],
+      "spanSlotLetters": "O",
+      "spanSlotOverlapsPx": [
+        58.0
+      ],
+      "isActiveOrange": false
+    },
+    {
+      "page": 75,
+      "id": "p75_orange_7",
+      "kind": "orange",
+      "box": [
+        452.0,
+        2415.0,
+        925.0,
+        2464.0
+      ],
+      "shortId": "p75_orange_7",
+      "centerX": 688.5,
+      "centerSlotIndex": 1,
+      "centerSlotLetter": "V",
+      "spanSlotIndexes": [
+        0,
+        1,
+        2
+      ],
+      "spanSlotLetters": "OVE",
+      "spanSlotOverlapsPx": [
+        86.5,
+        244.5,
+        142.0
+      ],
+      "isActiveOrange": false
+    },
+    {
+      "page": 75,
+      "id": "p75_orange_8",
+      "kind": "orange",
+      "box": [
+        544.0,
+        2553.0,
+        735.0,
+        2600.0
+      ],
+      "shortId": "p75_orange_8",
+      "centerX": 639.5,
+      "centerSlotIndex": 1,
+      "centerSlotLetter": "V",
+      "spanSlotIndexes": [
+        1
+      ],
+      "spanSlotLetters": "V",
+      "spanSlotOverlapsPx": [
+        191.0
+      ],
+      "isActiveOrange": false
+    },
+    {
+      "page": 79,
+      "id": "p79_orange_8",
+      "kind": "orange",
+      "box": [
+        577.0,
+        2576.0,
+        635.0,
+        2641.0
+      ],
+      "shortId": "p79_orange_8",
+      "centerX": 606.0,
+      "centerSlotIndex": 1,
+      "centerSlotLetter": "V",
+      "spanSlotIndexes": [
+        1
+      ],
+      "spanSlotLetters": "V",
+      "spanSlotOverlapsPx": [
+        58.0
+      ],
+      "isActiveOrange": false
+    }
+  ],
+  "controlStreams": [
+    {
+      "name": "p75_control_orange_span_x_order",
+      "stream": "VOVEDO",
+      "targetOrder": [
+        "p75_orange_8",
+        "p75_orange_7",
+        "p75_orange_6"
+      ],
+      "strictInstructionHits": [],
+      "layoutTermHits": []
+    },
+    {
+      "name": "p79_control_orange_span_x_order",
+      "stream": "OOV",
+      "targetOrder": [
+        "p79_orange_7",
+        "p79_orange_9",
+        "p79_orange_8"
+      ],
+      "strictInstructionHits": [],
+      "layoutTermHits": []
+    }
+  ],
+  "summary": {
+    "slotCount": 8,
+    "slotWidthPx": 244.5,
+    "activeCenterLineOrderStream": "OVED",
+    "activeCenterXOrderStream": "VEDO",
+    "activeSpanLineOrderStream": "DOSOVERRDO",
+    "activeSpanXOrderStream": "OVERRDODOS",
+    "activeBlackOnlySpanXOrderStream": "OVER",
+    "activeOrangeOnlySpanXOrderStream": "RDODOS",
+    "activeSpanXOrderLayoutTermHits": [
+      "OVER"
+    ],
+    "activeStrictInstructionHitCount": 0,
+    "controlOrangeStreamCount": 2,
+    "controlOrangeLayoutHitStreams": [],
+    "overPrefixRequiresBlackTargets": true,
+    "selectorUnlocked": false
+  },
+  "assessment": [
+    "Equal 8-slot C9 mapping gives active center streams OVED and VEDO, not an instruction or target order.",
+    "The active x-order span stream starts OVERRDODOS and contains a superficial OVER prefix, but that depends on adding the manually completed black B4/G5 boxes to the orange O4/O5 boxes.",
+    "Orange-only active controls do not produce OVER, and same-slot control highlights on pages 75/79 produce comparable partial slot fragments without selector wording.",
+    "No stream contains a strict unit/order instruction such as take/read/word/letter/line, and the slot rule is not source-backed."
+  ],
+  "decision": {
+    "c9OverdoseLetterSlotGate": "layout_coincidence_no_selector",
+    "selectorUnlocked": false,
+    "nextMove": "Keep OVERDOSE letter slots as a visual/source-comparison note only. Reopen only if a source clue explicitly names OVERDOSE letters, slots, or an 8-column reading order."
+  },
+  "sheet": "analysis_outputs/source_audit/c9_overdose_letter_slot_gate/c9_overdose_letter_slot_gate_sheet.jpg"
+}

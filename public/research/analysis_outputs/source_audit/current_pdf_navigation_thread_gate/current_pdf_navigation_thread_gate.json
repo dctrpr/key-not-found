@@ -1,0 +1,121 @@
+{
+  "createdAt": "2026-05-24T20:44:06",
+  "scope": "current PDF navigation/article-thread original-layout order carrier audit; no extraction or key checks",
+  "inputs": [
+    "magazine.pdf",
+    "keyser bitcoin .pdf",
+    "analysis_outputs/external_clues/google_drive_article_download.pdf"
+  ],
+  "summary": {
+    "pdfCount": 3,
+    "pageCount": 24,
+    "tocCount": 0,
+    "outlineXrefCount": 0,
+    "pageLabelCount": 0,
+    "namedDestinationCount": 0,
+    "embeddedFileNameCount": 0,
+    "linkCount": 0,
+    "catalogSignalPdfCount": 2,
+    "pageSignalRowCount": 0,
+    "pageBeadCount": 0,
+    "rawStructuralTokenMentionCount": 6,
+    "strictHitCount": 0,
+    "contextHitCount": 0,
+    "sourceBackedR3": 0,
+    "satisfiedTriggers": 0,
+    "selectors": 0
+  },
+  "pdfRows": [
+    {
+      "pdf": "magazine.pdf",
+      "pageCount": 8,
+      "catalogSignals": {},
+      "tocCount": 0,
+      "outlineXrefCount": 0,
+      "pageLabelCount": 0,
+      "namedDestinationCount": 0,
+      "embeddedFileNameCount": 0,
+      "linkCount": 0,
+      "pageSignalRows": [],
+      "pageBeadCount": 0,
+      "rawTokenCounts": {
+        "/Outlines": 0,
+        "/PageLabels": 0,
+        "/Names": 0,
+        "/Dests": 0,
+        "/Threads": 0,
+        "/OpenAction": 0,
+        "/PageMode": 0,
+        "/B": 0,
+        "/Bead": 0
+      },
+      "strictHits": [],
+      "contextHits": []
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "pageCount": 8,
+      "catalogSignals": {
+        "Names": {
+          "kind": "xref",
+          "value": "3 0 R"
+        }
+      },
+      "tocCount": 0,
+      "outlineXrefCount": 0,
+      "pageLabelCount": 0,
+      "namedDestinationCount": 0,
+      "embeddedFileNameCount": 0,
+      "linkCount": 0,
+      "pageSignalRows": [],
+      "pageBeadCount": 0,
+      "rawTokenCounts": {
+        "/Outlines": 0,
+        "/PageLabels": 0,
+        "/Names": 2,
+        "/Dests": 1,
+        "/Threads": 0,
+        "/OpenAction": 0,
+        "/PageMode": 0,
+        "/B": 0,
+        "/Bead": 0
+      },
+      "strictHits": [],
+      "contextHits": []
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "pageCount": 8,
+      "catalogSignals": {
+        "Names": {
+          "kind": "xref",
+          "value": "3 0 R"
+        }
+      },
+      "tocCount": 0,
+      "outlineXrefCount": 0,
+      "pageLabelCount": 0,
+      "namedDestinationCount": 0,
+      "embeddedFileNameCount": 0,
+      "linkCount": 0,
+      "pageSignalRows": [],
+      "pageBeadCount": 0,
+      "rawTokenCounts": {
+        "/Outlines": 0,
+        "/PageLabels": 0,
+        "/Names": 2,
+        "/Dests": 1,
+        "/Threads": 0,
+        "/OpenAction": 0,
+        "/PageMode": 0,
+        "/B": 0,
+        "/Bead": 0
+      },
+      "strictHits": [],
+      "contextHits": []
+    }
+  ],
+  "decision": "current_pdf_navigation_thread_no_source_order_carrier",
+  "fingerprint": "pdfs=3|pages=24|toc=0|outlines=0|labels=0|dests=0|catalogSignalPdfs=2|pageSignals=0|beads=0|links=0|rawTokens=6|strict=0|context=0|sourceR3=0|triggers=0/9|selectors=0",
+  "report": "analysis_outputs/source_audit/current_pdf_navigation_thread_gate/current_pdf_navigation_thread_gate.md"
+}

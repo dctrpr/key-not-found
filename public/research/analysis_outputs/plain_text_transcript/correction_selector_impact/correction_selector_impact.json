@@ -1,0 +1,543 @@
+{
+  "createdAt": "2026-05-20T21:01:13",
+  "scope": "Plain-text correction impact audit focused on selector/instruction terms. No key derivation.",
+  "sources": {
+    "correctionReport": "analysis_outputs/plain_text_transcript/plain_article_correction_report.json",
+    "activeCorridorWitness": "analysis_outputs/plain_text_transcript/active_corridor_witness_consistency/active_corridor_witness_consistency.md",
+    "activeTextAuthority": "analysis_outputs/source_audit/active_text_authority_drift/active_text_authority_drift.md"
+  },
+  "correctionCount": 21,
+  "activeCorridorCorrectionCount": 3,
+  "selectorPermissionCorrectionCount": 0,
+  "addedTargetCorrectionCount": 3,
+  "rows": [
+    {
+      "index": 1,
+      "raw": "Bitcoin is toxic af",
+      "fixed": "BITCOIN IS TOXIC AF",
+      "reason": "Article title is uppercase in the scan and DOCM witness.",
+      "rawPatternPresent": true,
+      "removedTokens": [
+        "Bitcoin",
+        "is",
+        "toxic",
+        "af"
+      ],
+      "addedTokens": [
+        "BITCOIN",
+        "IS",
+        "TOXIC",
+        "AF"
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": false,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 2,
+      "raw": "Really? Yes",
+      "fixed": "Really? Yes.",
+      "reason": "DOCM witness includes the period after Yes.",
+      "rawPatternPresent": true,
+      "removedTokens": [],
+      "addedTokens": [
+        "."
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": false,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 3,
+      "raw": "hands I\\nn the muck",
+      "fixed": "hands in the muck",
+      "reason": "The raw plain text split the word `in` across lines incorrectly.",
+      "rawPatternPresent": true,
+      "removedTokens": [
+        "I",
+        "nn"
+      ],
+      "addedTokens": [
+        "in"
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": false,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 4,
+      "raw": "puts and end",
+      "fixed": "puts an end",
+      "reason": "DOCM/Markdown witness agree on `an end`.",
+      "rawPatternPresent": true,
+      "removedTokens": [
+        "and"
+      ],
+      "addedTokens": [
+        "an"
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": false,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 5,
+      "raw": "\"buying the dip\".",
+      "fixed": "\"buying the dip.\"",
+      "reason": "DOCM witness places the period inside the quote.",
+      "rawPatternPresent": true,
+      "removedTokens": [
+        "."
+      ],
+      "addedTokens": [
+        "."
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [
+        "buying",
+        "dip"
+      ],
+      "fixedTargetHits": [
+        "buying",
+        "dip"
+      ],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [
+        "O4"
+      ],
+      "activePhraseHitsFixed": [
+        "O4"
+      ],
+      "affectsActiveCorridor": true,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 6,
+      "raw": "collateralized to pay off the IMF",
+      "fixed": "collateralized \u201cVolcano Bonds\u201d to pay off the IMF",
+      "reason": "The raw plain text omitted the highlighted `Volcano Bonds` phrase.",
+      "rawPatternPresent": true,
+      "removedTokens": [],
+      "addedTokens": [
+        "\u201c",
+        "Volcano",
+        "Bonds",
+        "\u201d"
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [
+        "imf"
+      ],
+      "fixedTargetHits": [
+        "volcano",
+        "bonds",
+        "imf"
+      ],
+      "addedTargetHits": [
+        "volcano",
+        "bonds"
+      ],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [
+        "G5"
+      ],
+      "affectsActiveCorridor": true,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 7,
+      "raw": "At this rate the whole",
+      "fixed": "At this rate, the whole",
+      "reason": "DOCM witness includes the comma.",
+      "rawPatternPresent": true,
+      "removedTokens": [],
+      "addedTokens": [
+        ","
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": false,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 8,
+      "raw": "big blockers",
+      "fixed": "Big blockers",
+      "reason": "DOCM witness capitalizes the sentence start.",
+      "rawPatternPresent": true,
+      "removedTokens": [
+        "big"
+      ],
+      "addedTokens": [
+        "Big"
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": false,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 9,
+      "raw": "Full stop.",
+      "fixed": "Full Stop.",
+      "reason": "DOCM witness capitalizes both words.",
+      "rawPatternPresent": true,
+      "removedTokens": [
+        "stop"
+      ],
+      "addedTokens": [
+        "Stop"
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": false,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 10,
+      "raw": "Every single one of the bitcoin wannabes- ...",
+      "fixed": "EVERY SINGLE ONE OF THE BITCOIN WANNABES - ...",
+      "reason": "This block is all uppercase in the scan and DOCM witness.",
+      "rawPatternPresent": false,
+      "removedTokens": [
+        "Every",
+        "single",
+        "one",
+        "of",
+        "the",
+        "bitcoin",
+        "wannabes"
+      ],
+      "addedTokens": [
+        "EVERY",
+        "SINGLE",
+        "ONE",
+        "OF",
+        "THE",
+        "BITCOIN",
+        "WANNABES"
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": false,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 11,
+      "raw": "It's guaranteed, mathematical certainty.",
+      "fixed": "It's a guaranteed, mathematical certainty.",
+      "reason": "DOCM witness includes `a`.",
+      "rawPatternPresent": true,
+      "removedTokens": [],
+      "addedTokens": [
+        "a"
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": false,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 12,
+      "raw": "bitcoin was designed",
+      "fixed": "Bitcoin was designed",
+      "reason": "DOCM witness capitalizes Bitcoin at this sentence position.",
+      "rawPatternPresent": true,
+      "removedTokens": [
+        "bitcoin"
+      ],
+      "addedTokens": [
+        "Bitcoin"
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": false,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 13,
+      "raw": "gargantually wasteful",
+      "fixed": "gargantuanly wasteful",
+      "reason": "DOCM witness has `gargantuanly`.",
+      "rawPatternPresent": true,
+      "removedTokens": [
+        "gargantually"
+      ],
+      "addedTokens": [
+        "gargantuanly"
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": false,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 14,
+      "raw": "requires printing and wars",
+      "fixed": "requires money printing and wars",
+      "reason": "The raw plain text omitted `money`.",
+      "rawPatternPresent": true,
+      "removedTokens": [],
+      "addedTokens": [
+        "money"
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [
+        "money"
+      ],
+      "addedTargetHits": [
+        "money"
+      ],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": true,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 15,
+      "raw": "cost 2 trillion fiat cuck bucks",
+      "fixed": "cost $2 trillion fiat cuck-bucks",
+      "reason": "DOCM witness includes the dollar sign and hyphenated `cuck-bucks`.",
+      "rawPatternPresent": true,
+      "removedTokens": [
+        "2"
+      ],
+      "addedTokens": [
+        "$2",
+        "-"
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": false,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 16,
+      "raw": "Bitcoin fixes all this",
+      "fixed": "BITCOIN FIXES ALL THIS",
+      "reason": "This lead phrase is all uppercase in the scan and DOCM witness.",
+      "rawPatternPresent": true,
+      "removedTokens": [
+        "Bitcoin",
+        "fixes",
+        "all",
+        "this"
+      ],
+      "addedTokens": [
+        "BITCOIN",
+        "FIXES",
+        "ALL",
+        "THIS"
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": false,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 17,
+      "raw": "Remove the war incentive and you remove",
+      "fixed": "Remove the war incentive, and you remove",
+      "reason": "DOCM witness includes the comma.",
+      "rawPatternPresent": true,
+      "removedTokens": [],
+      "addedTokens": [
+        ","
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": false,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 18,
+      "raw": "It's fact baked",
+      "fixed": "It's a fact baked",
+      "reason": "DOCM witness includes `a`.",
+      "rawPatternPresent": true,
+      "removedTokens": [],
+      "addedTokens": [
+        "a"
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": false,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 19,
+      "raw": "In so doing our energy consumption",
+      "fixed": "In so doing, our energy consumption",
+      "reason": "DOCM witness includes the comma.",
+      "rawPatternPresent": true,
+      "removedTokens": [],
+      "addedTokens": [
+        ","
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": false,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 20,
+      "raw": "gets monetized and for the first time in our existence",
+      "fixed": "gets monetized for the first time in our existence",
+      "reason": "The raw plain text inserted an extra `and`.",
+      "rawPatternPresent": false,
+      "removedTokens": [
+        "and"
+      ],
+      "addedTokens": [],
+      "rawInstructionHits": [
+        "first"
+      ],
+      "fixedInstructionHits": [
+        "first"
+      ],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": false,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 21,
+      "raw": "smile- virtually nothing",
+      "fixed": "smile - virtually nothing",
+      "reason": "DOCM witness uses spaced hyphen.",
+      "rawPatternPresent": true,
+      "removedTokens": [],
+      "addedTokens": [],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": false,
+      "addsSelectorPermission": false
+    }
+  ],
+  "assessment": [
+    "The correction layer repairs exact wording but does not add a source-backed extraction instruction.",
+    "No correction-added token is a procedural unit/order term such as read/take/select/word/letter/line/edge/font/mirror/key.",
+    "The important page-76 correction is the restored G5 phrase `Volcano Bonds`; it repairs a missing active target in the latest raw plain text rather than creating a new selector.",
+    "The O4 correction only moves the period inside the quote for `buying the dip.`; this matters for exact text but not for geometry/order.",
+    "Other target-adjacent corrections (`money`, `$2 trillion`, capitalization/punctuation) are text-authority guardrails, not extraction permission."
+  ],
+  "decision": "Use the corrected/DOCM text as wording authority, but do not treat the correction list itself as a selector or instruction stream.",
+  "nextMove": "Continue to require an external/source rule naming unit and order before extraction; correction markup only locks exact wording."
+}

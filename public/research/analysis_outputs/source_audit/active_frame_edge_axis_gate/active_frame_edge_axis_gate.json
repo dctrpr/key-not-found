@@ -1,0 +1,901 @@
+{
+  "createdAt": "2026-05-21T01:28:56",
+  "scope": "p78 same-layout/current-mirror frame edge and centerline selector audit; no OCR, key derivation, hashing, WIF, seed, or address checks",
+  "inputs": {
+    "activeTargets": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "article3dMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "p78SourceInstructionSurface": "analysis_outputs/source_audit/p78_source_graphic_instruction_surface/p78_source_graphic_instruction_surface.json",
+    "futureSourceScoringRubric": "analysis_outputs/source_audit/future_source_scoring_rubric/future_source_scoring_rubric.json"
+  },
+  "frames": {
+    "sameLayoutFrame": [
+      294.0,
+      2398.0,
+      1310.0,
+      2950.0
+    ],
+    "currentMirrorFrame": [
+      1234.0,
+      2398.0,
+      2250.0,
+      2950.0
+    ]
+  },
+  "targets": [
+    {
+      "id": "buying_dip",
+      "label": "O4 buying the dip",
+      "phrase": "buying the dip",
+      "box": [
+        1334,
+        2177,
+        1801,
+        2225
+      ],
+      "visualState": "Y",
+      "pageLine": 22,
+      "corridorIndex": 4
+    },
+    {
+      "id": "one_billion",
+      "label": "B4 $1 billion",
+      "phrase": "$1 billion",
+      "box": [
+        428,
+        2398,
+        691,
+        2445
+      ],
+      "visualState": "K",
+      "pageLine": 25,
+      "corridorIndex": 7
+    },
+    {
+      "id": "volcano_bonds",
+      "label": "G5 Volcano Bonds",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795,
+        2544,
+        1196,
+        2592
+      ],
+      "visualState": "K",
+      "pageLine": 27,
+      "corridorIndex": 9
+    },
+    {
+      "id": "shitcoiner_heart",
+      "label": "O5 shitcoiner at heart",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040,
+        2932,
+        1661,
+        2982
+      ],
+      "visualState": "Y",
+      "pageLine": 32,
+      "corridorIndex": 14
+    }
+  ],
+  "lines": [
+    {
+      "id": "same_layout_left",
+      "frame": "same_layout",
+      "role": "left",
+      "orientation": "vertical",
+      "value": 294.0,
+      "span": [
+        2398.0,
+        2950.0
+      ],
+      "activeTargetHitCount": 0,
+      "activeTargetHits": [],
+      "strongActiveTargetHitCount": 0,
+      "nearestActiveDistances": [
+        {
+          "id": "one_billion",
+          "distancePx": 134.0,
+          "crosses": false
+        },
+        {
+          "id": "volcano_bonds",
+          "distancePx": 501.0,
+          "crosses": false
+        },
+        {
+          "id": "shitcoiner_heart",
+          "distancePx": 746.0,
+          "crosses": false
+        },
+        {
+          "id": "buying_dip",
+          "distancePx": 1040.0,
+          "crosses": false
+        }
+      ],
+      "wordHitCount": 0,
+      "wordPreview": "",
+      "focusWordCount": 0,
+      "hardInstructionHitCount": 0,
+      "hardInstructionHits": [],
+      "wordRows": []
+    },
+    {
+      "id": "same_layout_right",
+      "frame": "same_layout",
+      "role": "right",
+      "orientation": "vertical",
+      "value": 1310.0,
+      "span": [
+        2398.0,
+        2950.0
+      ],
+      "activeTargetHitCount": 1,
+      "activeTargetHits": [
+        {
+          "id": "shitcoiner_heart",
+          "label": "O5 shitcoiner at heart",
+          "visualState": "Y",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "contactFraction": 0.36
+        }
+      ],
+      "strongActiveTargetHitCount": 0,
+      "nearestActiveDistances": [
+        {
+          "id": "shitcoiner_heart",
+          "distancePx": 0.0,
+          "crosses": true
+        },
+        {
+          "id": "buying_dip",
+          "distancePx": 24.0,
+          "crosses": false
+        },
+        {
+          "id": "volcano_bonds",
+          "distancePx": 114.0,
+          "crosses": false
+        },
+        {
+          "id": "one_billion",
+          "distancePx": 619.0,
+          "crosses": false
+        }
+      ],
+      "wordHitCount": 7,
+      "wordPreview": "should earnings pay tagged could trust siukbeodmensertslveaarty",
+      "focusWordCount": 2,
+      "hardInstructionHitCount": 0,
+      "hardInstructionHits": [],
+      "wordRows": [
+        {
+          "id": "p76w207",
+          "text": "should",
+          "importance": 8,
+          "contactFraction": 0.885814,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w214",
+          "text": "earnings",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w217",
+          "text": "pay",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w229",
+          "text": "tagged",
+          "importance": 4,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w237",
+          "text": "could",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w257",
+          "text": "trust",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w264",
+          "text": "siukbeodmensertslveaarty",
+          "importance": 0,
+          "contactFraction": 0.625177,
+          "hardInstructionHits": []
+        }
+      ]
+    },
+    {
+      "id": "same_layout_center_x",
+      "frame": "same_layout",
+      "role": "center_x",
+      "orientation": "vertical",
+      "value": 802.0,
+      "span": [
+        2398.0,
+        2950.0
+      ],
+      "activeTargetHitCount": 1,
+      "activeTargetHits": [
+        {
+          "id": "volcano_bonds",
+          "label": "G5 Volcano Bonds",
+          "visualState": "K",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "contactFraction": 1.0
+        }
+      ],
+      "strongActiveTargetHitCount": 1,
+      "nearestActiveDistances": [
+        {
+          "id": "volcano_bonds",
+          "distancePx": 0.0,
+          "crosses": true
+        },
+        {
+          "id": "one_billion",
+          "distancePx": 111.0,
+          "crosses": false
+        },
+        {
+          "id": "shitcoiner_heart",
+          "distancePx": 238.0,
+          "crosses": false
+        },
+        {
+          "id": "buying_dip",
+          "distancePx": 532.0,
+          "crosses": false
+        }
+      ],
+      "wordHitCount": 5,
+      "wordPreview": "rid the Wall on because",
+      "focusWordCount": 1,
+      "hardInstructionHitCount": 0,
+      "hardInstructionHits": [],
+      "wordRows": [
+        {
+          "id": "p76w224",
+          "text": "rid",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w233",
+          "text": "the",
+          "importance": 4,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w242",
+          "text": "Wall",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w252",
+          "text": "on",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w261",
+          "text": "because",
+          "importance": 0,
+          "contactFraction": 0.625177,
+          "hardInstructionHits": []
+        }
+      ]
+    },
+    {
+      "id": "same_layout_top",
+      "frame": "same_layout",
+      "role": "top",
+      "orientation": "horizontal",
+      "value": 2398.0,
+      "span": [
+        294.0,
+        1310.0
+      ],
+      "activeTargetHitCount": 1,
+      "activeTargetHits": [
+        {
+          "id": "one_billion",
+          "label": "B4 $1 billion",
+          "visualState": "K",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "contactFraction": 1.0
+        }
+      ],
+      "strongActiveTargetHitCount": 1,
+      "nearestActiveDistances": [
+        {
+          "id": "one_billion",
+          "distancePx": 0.0,
+          "crosses": true
+        },
+        {
+          "id": "volcano_bonds",
+          "distancePx": 146.0,
+          "crosses": false
+        },
+        {
+          "id": "buying_dip",
+          "distancePx": 173.0,
+          "crosses": false
+        },
+        {
+          "id": "shitcoiner_heart",
+          "distancePx": 534.0,
+          "crosses": false
+        }
+      ],
+      "wordHitCount": 7,
+      "wordPreview": "eis in bitcoin — that he should",
+      "focusWordCount": 2,
+      "hardInstructionHitCount": 0,
+      "hardInstructionHits": [],
+      "wordRows": [
+        {
+          "id": "p76w201",
+          "text": "eis",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w202",
+          "text": "in",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w203",
+          "text": "bitcoin",
+          "importance": 3,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w204",
+          "text": "—",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w205",
+          "text": "that",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w206",
+          "text": "he",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w207",
+          "text": "should",
+          "importance": 8,
+          "contactFraction": 0.853972,
+          "hardInstructionHits": []
+        }
+      ]
+    },
+    {
+      "id": "same_layout_bottom",
+      "frame": "same_layout",
+      "role": "bottom",
+      "orientation": "horizontal",
+      "value": 2950.0,
+      "span": [
+        294.0,
+        1310.0
+      ],
+      "activeTargetHitCount": 1,
+      "activeTargetHits": [
+        {
+          "id": "shitcoiner_heart",
+          "label": "O5 shitcoiner at heart",
+          "visualState": "Y",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "contactFraction": 0.434783
+        }
+      ],
+      "strongActiveTargetHitCount": 0,
+      "nearestActiveDistances": [
+        {
+          "id": "shitcoiner_heart",
+          "distancePx": 0.0,
+          "crosses": true
+        },
+        {
+          "id": "volcano_bonds",
+          "distancePx": 358.0,
+          "crosses": false
+        },
+        {
+          "id": "one_billion",
+          "distancePx": 505.0,
+          "crosses": false
+        },
+        {
+          "id": "buying_dip",
+          "distancePx": 725.0,
+          "crosses": false
+        }
+      ],
+      "wordHitCount": 5,
+      "wordPreview": "Maybe because he's a siukbeodmensertslveaarty",
+      "focusWordCount": 0,
+      "hardInstructionHitCount": 0,
+      "hardInstructionHits": [],
+      "wordRows": [
+        {
+          "id": "p76w260",
+          "text": "Maybe",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w261",
+          "text": "because",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w262",
+          "text": "he's",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w263",
+          "text": "a",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w264",
+          "text": "siukbeodmensertslveaarty",
+          "importance": 0,
+          "contactFraction": 0.446251,
+          "hardInstructionHits": []
+        }
+      ]
+    },
+    {
+      "id": "same_layout_center_y",
+      "frame": "same_layout",
+      "role": "center_y",
+      "orientation": "horizontal",
+      "value": 2674.0,
+      "span": [
+        294.0,
+        1310.0
+      ],
+      "activeTargetHitCount": 0,
+      "activeTargetHits": [],
+      "strongActiveTargetHitCount": 0,
+      "nearestActiveDistances": [
+        {
+          "id": "volcano_bonds",
+          "distancePx": 82.0,
+          "crosses": false
+        },
+        {
+          "id": "one_billion",
+          "distancePx": 229.0,
+          "crosses": false
+        },
+        {
+          "id": "shitcoiner_heart",
+          "distancePx": 258.0,
+          "crosses": false
+        },
+        {
+          "id": "buying_dip",
+          "distancePx": 449.0,
+          "crosses": false
+        }
+      ],
+      "wordHitCount": 0,
+      "wordPreview": "",
+      "focusWordCount": 0,
+      "hardInstructionHitCount": 0,
+      "hardInstructionHits": [],
+      "wordRows": []
+    },
+    {
+      "id": "current_mirror_left",
+      "frame": "current_mirror",
+      "role": "left",
+      "orientation": "vertical",
+      "value": 1234.0,
+      "span": [
+        2398.0,
+        2950.0
+      ],
+      "activeTargetHitCount": 1,
+      "activeTargetHits": [
+        {
+          "id": "shitcoiner_heart",
+          "label": "O5 shitcoiner at heart",
+          "visualState": "Y",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "contactFraction": 0.36
+        }
+      ],
+      "strongActiveTargetHitCount": 0,
+      "nearestActiveDistances": [
+        {
+          "id": "shitcoiner_heart",
+          "distancePx": 0.0,
+          "crosses": true
+        },
+        {
+          "id": "volcano_bonds",
+          "distancePx": 38.0,
+          "crosses": false
+        },
+        {
+          "id": "buying_dip",
+          "distancePx": 100.0,
+          "crosses": false
+        },
+        {
+          "id": "one_billion",
+          "distancePx": 543.0,
+          "crosses": false
+        }
+      ],
+      "wordHitCount": 6,
+      "wordPreview": "should earnings to he pals, siukbeodmensertslveaarty",
+      "focusWordCount": 1,
+      "hardInstructionHitCount": 0,
+      "hardInstructionHits": [],
+      "wordRows": [
+        {
+          "id": "p76w207",
+          "text": "should",
+          "importance": 8,
+          "contactFraction": 0.885814,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w214",
+          "text": "earnings",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w216",
+          "text": "to",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w236",
+          "text": "he",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w245",
+          "text": "pals,",
+          "importance": 0,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w264",
+          "text": "siukbeodmensertslveaarty",
+          "importance": 0,
+          "contactFraction": 0.625177,
+          "hardInstructionHits": []
+        }
+      ]
+    },
+    {
+      "id": "current_mirror_right",
+      "frame": "current_mirror",
+      "role": "right",
+      "orientation": "vertical",
+      "value": 2250.0,
+      "span": [
+        2398.0,
+        2950.0
+      ],
+      "activeTargetHitCount": 0,
+      "activeTargetHits": [],
+      "strongActiveTargetHitCount": 0,
+      "nearestActiveDistances": [
+        {
+          "id": "buying_dip",
+          "distancePx": 449.0,
+          "crosses": false
+        },
+        {
+          "id": "shitcoiner_heart",
+          "distancePx": 589.0,
+          "crosses": false
+        },
+        {
+          "id": "volcano_bonds",
+          "distancePx": 1054.0,
+          "crosses": false
+        },
+        {
+          "id": "one_billion",
+          "distancePx": 1559.0,
+          "crosses": false
+        }
+      ],
+      "wordHitCount": 0,
+      "wordPreview": "",
+      "focusWordCount": 0,
+      "hardInstructionHitCount": 0,
+      "hardInstructionHits": [],
+      "wordRows": []
+    },
+    {
+      "id": "current_mirror_center_x",
+      "frame": "current_mirror",
+      "role": "center_x",
+      "orientation": "vertical",
+      "value": 1742.0,
+      "span": [
+        2398.0,
+        2950.0
+      ],
+      "activeTargetHitCount": 0,
+      "activeTargetHits": [],
+      "strongActiveTargetHitCount": 0,
+      "nearestActiveDistances": [
+        {
+          "id": "buying_dip",
+          "distancePx": 0.0,
+          "crosses": false
+        },
+        {
+          "id": "shitcoiner_heart",
+          "distancePx": 81.0,
+          "crosses": false
+        },
+        {
+          "id": "volcano_bonds",
+          "distancePx": 546.0,
+          "crosses": false
+        },
+        {
+          "id": "one_billion",
+          "distancePx": 1051.0,
+          "crosses": false
+        }
+      ],
+      "wordHitCount": 0,
+      "wordPreview": "",
+      "focusWordCount": 0,
+      "hardInstructionHitCount": 0,
+      "hardInstructionHits": [],
+      "wordRows": []
+    },
+    {
+      "id": "current_mirror_top",
+      "frame": "current_mirror",
+      "role": "top",
+      "orientation": "horizontal",
+      "value": 2398.0,
+      "span": [
+        1234.0,
+        2250.0
+      ],
+      "activeTargetHitCount": 0,
+      "activeTargetHits": [],
+      "strongActiveTargetHitCount": 0,
+      "nearestActiveDistances": [
+        {
+          "id": "one_billion",
+          "distancePx": 0.0,
+          "crosses": false
+        },
+        {
+          "id": "volcano_bonds",
+          "distancePx": 146.0,
+          "crosses": false
+        },
+        {
+          "id": "buying_dip",
+          "distancePx": 173.0,
+          "crosses": false
+        },
+        {
+          "id": "shitcoiner_heart",
+          "distancePx": 534.0,
+          "crosses": false
+        }
+      ],
+      "wordHitCount": 2,
+      "wordPreview": "should sell",
+      "focusWordCount": 2,
+      "hardInstructionHitCount": 0,
+      "hardInstructionHits": [],
+      "wordRows": [
+        {
+          "id": "p76w207",
+          "text": "should",
+          "importance": 8,
+          "contactFraction": 0.742059,
+          "hardInstructionHits": []
+        },
+        {
+          "id": "p76w208",
+          "text": "sell",
+          "importance": 8,
+          "contactFraction": 1.0,
+          "hardInstructionHits": []
+        }
+      ]
+    },
+    {
+      "id": "current_mirror_bottom",
+      "frame": "current_mirror",
+      "role": "bottom",
+      "orientation": "horizontal",
+      "value": 2950.0,
+      "span": [
+        1234.0,
+        2250.0
+      ],
+      "activeTargetHitCount": 1,
+      "activeTargetHits": [
+        {
+          "id": "shitcoiner_heart",
+          "label": "O5 shitcoiner at heart",
+          "visualState": "Y",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "contactFraction": 0.687601
+        }
+      ],
+      "strongActiveTargetHitCount": 1,
+      "nearestActiveDistances": [
+        {
+          "id": "shitcoiner_heart",
+          "distancePx": 0.0,
+          "crosses": true
+        },
+        {
+          "id": "volcano_bonds",
+          "distancePx": 358.0,
+          "crosses": false
+        },
+        {
+          "id": "one_billion",
+          "distancePx": 505.0,
+          "crosses": false
+        },
+        {
+          "id": "buying_dip",
+          "distancePx": 725.0,
+          "crosses": false
+        }
+      ],
+      "wordHitCount": 1,
+      "wordPreview": "siukbeodmensertslveaarty",
+      "focusWordCount": 0,
+      "hardInstructionHitCount": 0,
+      "hardInstructionHits": [],
+      "wordRows": [
+        {
+          "id": "p76w264",
+          "text": "siukbeodmensertslveaarty",
+          "importance": 0,
+          "contactFraction": 0.689079,
+          "hardInstructionHits": []
+        }
+      ]
+    },
+    {
+      "id": "current_mirror_center_y",
+      "frame": "current_mirror",
+      "role": "center_y",
+      "orientation": "horizontal",
+      "value": 2674.0,
+      "span": [
+        1234.0,
+        2250.0
+      ],
+      "activeTargetHitCount": 0,
+      "activeTargetHits": [],
+      "strongActiveTargetHitCount": 0,
+      "nearestActiveDistances": [
+        {
+          "id": "volcano_bonds",
+          "distancePx": 82.0,
+          "crosses": false
+        },
+        {
+          "id": "one_billion",
+          "distancePx": 229.0,
+          "crosses": false
+        },
+        {
+          "id": "shitcoiner_heart",
+          "distancePx": 258.0,
+          "crosses": false
+        },
+        {
+          "id": "buying_dip",
+          "distancePx": 449.0,
+          "crosses": false
+        }
+      ],
+      "wordHitCount": 0,
+      "wordPreview": "",
+      "focusWordCount": 0,
+      "hardInstructionHitCount": 0,
+      "hardInstructionHits": [],
+      "wordRows": []
+    }
+  ],
+  "summary": {
+    "frameCount": 2,
+    "lineCount": 12,
+    "totalActiveTargetHitCount": 6,
+    "totalStrongActiveTargetHitCount": 3,
+    "strongActiveTargetLines": [
+      "same_layout_center_x",
+      "same_layout_top",
+      "current_mirror_bottom"
+    ],
+    "lineHitStream": "same_layout_left=>- | same_layout_right=>shitcoiner_heart | same_layout_center_x=>volcano_bonds | same_layout_top=>one_billion | same_layout_bottom=>shitcoiner_heart | same_layout_center_y=>- | current_mirror_left=>shitcoiner_heart | current_mirror_right=>- | current_mirror_center_x=>- | current_mirror_top=>- | current_mirror_bottom=>shitcoiner_heart | current_mirror_center_y=>-",
+    "totalHardInstructionHitCount": 0,
+    "totalHardInstructionHits": [],
+    "selectorUnlocked": false
+  },
+  "decision": {
+    "activeFrameEdgeAxis": "closed_current_scan",
+    "selectorUnlocked": false,
+    "nextMove": "Keep p78 frame edges/centerlines as layout/source-comparison landmarks only; reopen only if source wording names frame edge, centerline, axis, or boundary reading."
+  },
+  "sheet": "analysis_outputs/source_audit/active_frame_edge_axis_gate/active_frame_edge_axis_gate_sheet.jpg"
+}

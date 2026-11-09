@@ -1,0 +1,4193 @@
+{
+  "createdAt": "2026-05-24T07:01:59",
+  "scope": "trace current-scan valid page 75->76 local-warp source-only pixels back to page-75 words; no OCR-to-key/key/hash/seed/WIF/address/BIP39/brute force",
+  "inputs": {
+    "localWarpGate": "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_gate/current_scan_valid_leaf_local_warp_gate.json",
+    "articleMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "decision": "valid_leaf_local_warp_source_trace_no_instruction_source",
+  "summary": {
+    "traceRowCount": 12,
+    "activeTraceRowCount": 4,
+    "overdoseSlotTraceRowCount": 8,
+    "componentRows": 12,
+    "totalComponentCount": 115,
+    "totalComponentPixelCount": 136876,
+    "totalSourceOnlyPixelCount": 236995,
+    "wordHitRows": 12,
+    "strictInstructionRows": 0,
+    "contextTermRows": 3,
+    "activeStrictInstructionRows": 0,
+    "overdoseSlotStrictInstructionRows": 0,
+    "totalSourceWordHits": 143,
+    "totalStrictInstructionHits": 0,
+    "totalContextTermHits": 3,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0
+  },
+  "fingerprint": "rows=12|active=4|slots=8|componentRows=12|components=115|pixels=136876|sourceOnly=236995|wordRows=12|strictRows=0|contextRows=3|activeStrict=0|slotStrict=0|words=143|strict=0|context=3|sourceR3=0|triggers=0/9|selectors=0",
+  "traceRows": [
+    {
+      "kind": "active",
+      "target": "O4",
+      "phrase": "buying the dip",
+      "slotIndex": null,
+      "slotLetter": null,
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "bestDx": 0,
+      "bestDy": -120,
+      "localWarpBestSourceOnlyCoverage": 0.011821913,
+      "sourceOnlyCoverage": 0.011821912919343326,
+      "sourceOnlyPixelCount": 265,
+      "componentCount": 3,
+      "componentPixelCount": 150,
+      "largestComponentPixelCount": 99,
+      "targetContactBox": [
+        1578,
+        2190,
+        1829,
+        2259
+      ],
+      "sourceTraceBox": [
+        715,
+        2310,
+        966,
+        2379
+      ],
+      "components": [
+        {
+          "pixelCount": 99,
+          "targetBox": [
+            1696,
+            2224,
+            1795,
+            2225
+          ]
+        },
+        {
+          "pixelCount": 31,
+          "targetBox": [
+            1657,
+            2224,
+            1688,
+            2225
+          ]
+        },
+        {
+          "pixelCount": 20,
+          "targetBox": [
+            1612,
+            2224,
+            1632,
+            2225
+          ]
+        }
+      ],
+      "componentSourceBoxes": [
+        [
+          749,
+          2344,
+          848,
+          2345
+        ],
+        [
+          856,
+          2344,
+          887,
+          2345
+        ],
+        [
+          912,
+          2344,
+          932,
+          2345
+        ]
+      ],
+      "sourceWordHitCount": 2,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "or shitcoinery.",
+      "sourceWords": [
+        {
+          "text": "or",
+          "token": "or",
+          "box": [
+            787.83,
+            2335.57,
+            820.08,
+            2380.1
+          ],
+          "index": 208,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "shitcoinery.",
+          "token": "shitcoinery",
+          "box": [
+            855.35,
+            2335.57,
+            1126.05,
+            2380.1
+          ],
+          "index": 209,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/active_O4_local_warp_source_trace.jpg"
+    },
+    {
+      "kind": "active",
+      "target": "B4",
+      "phrase": "$1 billion",
+      "slotIndex": null,
+      "slotLetter": null,
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "bestDx": -120,
+      "bestDy": 120,
+      "localWarpBestSourceOnlyCoverage": 0.003802281,
+      "sourceOnlyCoverage": 0.0038022813688212928,
+      "sourceOnlyPixelCount": 47,
+      "componentCount": 2,
+      "componentPixelCount": 41,
+      "largestComponentPixelCount": 21,
+      "targetContactBox": [
+        633,
+        2377,
+        719,
+        2462
+      ],
+      "sourceTraceBox": [
+        1705,
+        2257,
+        1791,
+        2342
+      ],
+      "components": [
+        {
+          "pixelCount": 21,
+          "targetBox": [
+            682,
+            2411,
+            685,
+            2424
+          ]
+        },
+        {
+          "pixelCount": 20,
+          "targetBox": [
+            667,
+            2419,
+            673,
+            2428
+          ]
+        }
+      ],
+      "componentSourceBoxes": [
+        [
+          1739,
+          2291,
+          1742,
+          2304
+        ],
+        [
+          1751,
+          2299,
+          1757,
+          2308
+        ]
+      ],
+      "sourceWordHitCount": 1,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "lab.",
+      "sourceWords": [
+        {
+          "text": "lab.",
+          "token": "lab",
+          "box": [
+            1653.51,
+            2267.42,
+            1720.43,
+            2307.5
+          ],
+          "index": 205,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/active_B4_local_warp_source_trace.jpg"
+    },
+    {
+      "kind": "active",
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "slotIndex": null,
+      "slotLetter": null,
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "bestDx": -80,
+      "bestDy": -100,
+      "localWarpBestSourceOnlyCoverage": 0.069253948,
+      "sourceOnlyCoverage": 0.06925394846217789,
+      "sourceOnlyPixelCount": 1333,
+      "componentCount": 12,
+      "componentPixelCount": 922,
+      "largestComponentPixelCount": 131,
+      "targetContactBox": [
+        763,
+        2512,
+        1200,
+        2610
+      ],
+      "sourceTraceBox": [
+        1264,
+        2612,
+        1701,
+        2710
+      ],
+      "components": [
+        {
+          "pixelCount": 131,
+          "targetBox": [
+            831,
+            2546,
+            849,
+            2572
+          ]
+        },
+        {
+          "pixelCount": 99,
+          "targetBox": [
+            1151,
+            2552,
+            1166,
+            2565
+          ]
+        },
+        {
+          "pixelCount": 91,
+          "targetBox": [
+            805,
+            2547,
+            813,
+            2561
+          ]
+        },
+        {
+          "pixelCount": 78,
+          "targetBox": [
+            899,
+            2555,
+            905,
+            2571
+          ]
+        },
+        {
+          "pixelCount": 74,
+          "targetBox": [
+            959,
+            2554,
+            967,
+            2572
+          ]
+        },
+        {
+          "pixelCount": 70,
+          "targetBox": [
+            859,
+            2554,
+            869,
+            2571
+          ]
+        },
+        {
+          "pixelCount": 68,
+          "targetBox": [
+            936,
+            2555,
+            946,
+            2571
+          ]
+        },
+        {
+          "pixelCount": 68,
+          "targetBox": [
+            1028,
+            2569,
+            1043,
+            2576
+          ]
+        },
+        {
+          "pixelCount": 66,
+          "targetBox": [
+            797,
+            2548,
+            804,
+            2561
+          ]
+        },
+        {
+          "pixelCount": 65,
+          "targetBox": [
+            973,
+            2554,
+            980,
+            2572
+          ]
+        },
+        {
+          "pixelCount": 56,
+          "targetBox": [
+            1121,
+            2553,
+            1130,
+            2571
+          ]
+        },
+        {
+          "pixelCount": 56,
+          "targetBox": [
+            1062,
+            2554,
+            1070,
+            2571
+          ]
+        }
+      ],
+      "componentSourceBoxes": [
+        [
+          1615,
+          2646,
+          1633,
+          2672
+        ],
+        [
+          1298,
+          2652,
+          1313,
+          2665
+        ],
+        [
+          1651,
+          2647,
+          1659,
+          2661
+        ],
+        [
+          1559,
+          2655,
+          1565,
+          2671
+        ],
+        [
+          1497,
+          2654,
+          1505,
+          2672
+        ],
+        [
+          1595,
+          2654,
+          1605,
+          2671
+        ],
+        [
+          1518,
+          2655,
+          1528,
+          2671
+        ],
+        [
+          1421,
+          2669,
+          1436,
+          2676
+        ],
+        [
+          1660,
+          2648,
+          1667,
+          2661
+        ],
+        [
+          1484,
+          2654,
+          1491,
+          2672
+        ],
+        [
+          1334,
+          2653,
+          1343,
+          2671
+        ],
+        [
+          1394,
+          2654,
+          1402,
+          2671
+        ]
+      ],
+      "sourceWordHitCount": 7,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "with your bare rabbit hole if this",
+      "sourceWords": [
+        {
+          "text": "with",
+          "token": "with",
+          "box": [
+            1299.78,
+            2629.18,
+            1385.24,
+            2673.71
+          ],
+          "index": 229,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "your",
+          "token": "your",
+          "box": [
+            1422.73,
+            2629.18,
+            1509.8,
+            2673.71
+          ],
+          "index": 230,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "bare",
+          "token": "bare",
+          "box": [
+            1546.69,
+            2629.18,
+            1633.76,
+            2673.71
+          ],
+          "index": 231,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "rabbit",
+          "token": "rabbit",
+          "box": [
+            1254.43,
+            2701.78,
+            1382.27,
+            2746.32
+          ],
+          "index": 238,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "hole",
+          "token": "hole",
+          "box": [
+            1419.7,
+            2701.78,
+            1501.94,
+            2746.32
+          ],
+          "index": 239,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "if",
+          "token": "if",
+          "box": [
+            1539.63,
+            2701.78,
+            1571.21,
+            2746.32
+          ],
+          "index": 240,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "this",
+          "token": "this",
+          "box": [
+            1602.11,
+            2701.78,
+            1681.93,
+            2746.32
+          ],
+          "index": 241,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/active_G5_local_warp_source_trace.jpg"
+    },
+    {
+      "kind": "active",
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "slotIndex": null,
+      "slotLetter": null,
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "bestDx": -120,
+      "bestDy": 120,
+      "localWarpBestSourceOnlyCoverage": 0.014428341,
+      "sourceOnlyCoverage": 0.014428341384863125,
+      "sourceOnlyPixelCount": 448,
+      "componentCount": 10,
+      "componentPixelCount": 272,
+      "largestComponentPixelCount": 46,
+      "targetContactBox": [
+        1012,
+        2898,
+        1456,
+        2969
+      ],
+      "sourceTraceBox": [
+        968,
+        2778,
+        1412,
+        2849
+      ],
+      "components": [
+        {
+          "pixelCount": 46,
+          "targetBox": [
+            1046,
+            2932,
+            1068,
+            2935
+          ]
+        },
+        {
+          "pixelCount": 33,
+          "targetBox": [
+            1309,
+            2932,
+            1326,
+            2934
+          ]
+        },
+        {
+          "pixelCount": 30,
+          "targetBox": [
+            1101,
+            2932,
+            1120,
+            2935
+          ]
+        },
+        {
+          "pixelCount": 29,
+          "targetBox": [
+            1129,
+            2932,
+            1145,
+            2935
+          ]
+        },
+        {
+          "pixelCount": 29,
+          "targetBox": [
+            1331,
+            2932,
+            1348,
+            2934
+          ]
+        },
+        {
+          "pixelCount": 23,
+          "targetBox": [
+            1279,
+            2932,
+            1293,
+            2934
+          ]
+        },
+        {
+          "pixelCount": 21,
+          "targetBox": [
+            1087,
+            2932,
+            1098,
+            2934
+          ]
+        },
+        {
+          "pixelCount": 21,
+          "targetBox": [
+            1201,
+            2932,
+            1213,
+            2934
+          ]
+        },
+        {
+          "pixelCount": 21,
+          "targetBox": [
+            1401,
+            2932,
+            1422,
+            2933
+          ]
+        },
+        {
+          "pixelCount": 19,
+          "targetBox": [
+            1152,
+            2932,
+            1163,
+            2934
+          ]
+        }
+      ],
+      "componentSourceBoxes": [
+        [
+          1356,
+          2812,
+          1378,
+          2815
+        ],
+        [
+          1098,
+          2812,
+          1115,
+          2814
+        ],
+        [
+          1304,
+          2812,
+          1323,
+          2815
+        ],
+        [
+          1279,
+          2812,
+          1295,
+          2815
+        ],
+        [
+          1076,
+          2812,
+          1093,
+          2814
+        ],
+        [
+          1131,
+          2812,
+          1145,
+          2814
+        ],
+        [
+          1326,
+          2812,
+          1337,
+          2814
+        ],
+        [
+          1211,
+          2812,
+          1223,
+          2814
+        ],
+        [
+          1002,
+          2812,
+          1023,
+          2813
+        ],
+        [
+          1261,
+          2812,
+          1272,
+          2814
+        ]
+      ],
+      "sourceWordHitCount": 4,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "Anything worth hearing is",
+      "sourceWords": [
+        {
+          "text": "Anything",
+          "token": "anything",
+          "box": [
+            842.25,
+            2774.39,
+            1027.68,
+            2818.92
+          ],
+          "index": 244,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "worth",
+          "token": "worth",
+          "box": [
+            1064.97,
+            2774.39,
+            1171.63,
+            2818.92
+          ],
+          "index": 245,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "hearing",
+          "token": "hearing",
+          "box": [
+            1209.08,
+            2774.39,
+            1363.4,
+            2818.92
+          ],
+          "index": 246,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "is",
+          "token": "is",
+          "box": [
+            1401.56,
+            2774.39,
+            1429.11,
+            2818.92
+          ],
+          "index": 247,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/active_O5_local_warp_source_trace.jpg"
+    },
+    {
+      "kind": "overdose_slot",
+      "target": "slot0_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "slotIndex": 0,
+      "slotLetter": "O",
+      "box": [
+        294.0,
+        2176.81,
+        538.5697177074414,
+        3023.73
+      ],
+      "bestDx": -120,
+      "bestDy": 100,
+      "localWarpBestSourceOnlyCoverage": 0.002727514,
+      "sourceOnlyCoverage": 0.002727513673710334,
+      "sourceOnlyPixelCount": 566,
+      "componentCount": 4,
+      "componentPixelCount": 565,
+      "largestComponentPixelCount": 248,
+      "targetContactBox": [
+        450,
+        2151,
+        573,
+        2297
+      ],
+      "sourceTraceBox": [
+        1851,
+        2051,
+        1974,
+        2197
+      ],
+      "components": [
+        {
+          "pixelCount": 248,
+          "targetBox": [
+            498,
+            2239,
+            519,
+            2263
+          ]
+        },
+        {
+          "pixelCount": 191,
+          "targetBox": [
+            523,
+            2239,
+            539,
+            2262
+          ]
+        },
+        {
+          "pixelCount": 86,
+          "targetBox": [
+            484,
+            2252,
+            494,
+            2263
+          ]
+        },
+        {
+          "pixelCount": 40,
+          "targetBox": [
+            532,
+            2185,
+            539,
+            2197
+          ]
+        }
+      ],
+      "componentSourceBoxes": [
+        [
+          1905,
+          2139,
+          1926,
+          2163
+        ],
+        [
+          1885,
+          2139,
+          1901,
+          2162
+        ],
+        [
+          1930,
+          2152,
+          1940,
+          2163
+        ],
+        [
+          1885,
+          2085,
+          1892,
+          2097
+        ]
+      ],
+      "sourceWordHitCount": 1,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "name.",
+      "sourceWords": [
+        {
+          "text": "name.",
+          "token": "name",
+          "box": [
+            1788.55,
+            2122.21,
+            1889.33,
+            2162.29
+          ],
+          "index": 187,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/overdose_slot_slot0_O_local_warp_source_trace.jpg"
+    },
+    {
+      "kind": "overdose_slot",
+      "target": "slot1_V",
+      "phrase": "C9 projected OVERDOSE slot V",
+      "slotIndex": 1,
+      "slotLetter": "V",
+      "box": [
+        538.5697177074414,
+        2176.81,
+        783.0000000000016,
+        3023.73
+      ],
+      "bestDx": -120,
+      "bestDy": 100,
+      "localWarpBestSourceOnlyCoverage": 0.044240037,
+      "sourceOnlyCoverage": 0.04424003716105057,
+      "sourceOnlyPixelCount": 9143,
+      "componentCount": 12,
+      "componentPixelCount": 3786,
+      "largestComponentPixelCount": 425,
+      "targetContactBox": [
+        523,
+        2204,
+        817,
+        3026
+      ],
+      "sourceTraceBox": [
+        1607,
+        2104,
+        1901,
+        2926
+      ],
+      "components": [
+        {
+          "pixelCount": 425,
+          "targetBox": [
+            757,
+            2811,
+            783,
+            2845
+          ]
+        },
+        {
+          "pixelCount": 410,
+          "targetBox": [
+            757,
+            2747,
+            780,
+            2773
+          ]
+        },
+        {
+          "pixelCount": 399,
+          "targetBox": [
+            708,
+            2820,
+            731,
+            2846
+          ]
+        },
+        {
+          "pixelCount": 319,
+          "targetBox": [
+            733,
+            2811,
+            755,
+            2845
+          ]
+        },
+        {
+          "pixelCount": 315,
+          "targetBox": [
+            706,
+            2968,
+            728,
+            2992
+          ]
+        },
+        {
+          "pixelCount": 304,
+          "targetBox": [
+            708,
+            2895,
+            729,
+            2919
+          ]
+        },
+        {
+          "pixelCount": 280,
+          "targetBox": [
+            660,
+            2895,
+            681,
+            2919
+          ]
+        },
+        {
+          "pixelCount": 277,
+          "targetBox": [
+            757,
+            2967,
+            778,
+            2992
+          ]
+        },
+        {
+          "pixelCount": 268,
+          "targetBox": [
+            725,
+            2238,
+            751,
+            2261
+          ]
+        },
+        {
+          "pixelCount": 265,
+          "targetBox": [
+            557,
+            2239,
+            583,
+            2262
+          ]
+        },
+        {
+          "pixelCount": 265,
+          "targetBox": [
+            681,
+            2302,
+            710,
+            2334
+          ]
+        },
+        {
+          "pixelCount": 259,
+          "targetBox": [
+            754,
+            2311,
+            778,
+            2343
+          ]
+        }
+      ],
+      "componentSourceBoxes": [
+        [
+          1641,
+          2711,
+          1667,
+          2745
+        ],
+        [
+          1644,
+          2647,
+          1667,
+          2673
+        ],
+        [
+          1693,
+          2720,
+          1716,
+          2746
+        ],
+        [
+          1669,
+          2711,
+          1691,
+          2745
+        ],
+        [
+          1696,
+          2868,
+          1718,
+          2892
+        ],
+        [
+          1695,
+          2795,
+          1716,
+          2819
+        ],
+        [
+          1743,
+          2795,
+          1764,
+          2819
+        ],
+        [
+          1646,
+          2867,
+          1667,
+          2892
+        ],
+        [
+          1673,
+          2138,
+          1699,
+          2161
+        ],
+        [
+          1841,
+          2139,
+          1867,
+          2162
+        ],
+        [
+          1714,
+          2202,
+          1743,
+          2234
+        ],
+        [
+          1646,
+          2211,
+          1670,
+          2243
+        ]
+      ],
+      "sourceWordHitCount": 12,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "it a bad name. epithet. mEthereum lab. bare this to listen shitcoiners",
+      "sourceWords": [
+        {
+          "text": "it",
+          "token": "it",
+          "box": [
+            1605.14,
+            2122.21,
+            1629.32,
+            2162.29
+          ],
+          "index": 184,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "a",
+          "token": "a",
+          "box": [
+            1656.53,
+            2122.21,
+            1669.13,
+            2162.29
+          ],
+          "index": 185,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "bad",
+          "token": "bad",
+          "box": [
+            1695.84,
+            2122.21,
+            1754.04,
+            2162.29
+          ],
+          "index": 186,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "name.",
+          "token": "name",
+          "box": [
+            1788.55,
+            2122.21,
+            1889.33,
+            2162.29
+          ],
+          "index": 187,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "epithet.",
+          "token": "epithet",
+          "box": [
+            1610.18,
+            2186.99,
+            1763.36,
+            2235.97
+          ],
+          "index": 195,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "mEthereum",
+          "token": "methereum",
+          "box": [
+            1394.51,
+            2267.42,
+            1613.1,
+            2307.5
+          ],
+          "index": 204,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "lab.",
+          "token": "lab",
+          "box": [
+            1653.51,
+            2267.42,
+            1720.43,
+            2307.5
+          ],
+          "index": 205,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "bare",
+          "token": "bare",
+          "box": [
+            1546.69,
+            2629.18,
+            1633.76,
+            2673.71
+          ],
+          "index": 231,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "this",
+          "token": "this",
+          "box": [
+            1602.11,
+            2701.78,
+            1681.93,
+            2746.32
+          ],
+          "index": 241,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "to",
+          "token": "to",
+          "box": [
+            1577.93,
+            2774.39,
+            1608.16,
+            2818.92
+          ],
+          "index": 249,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "listen",
+          "token": "listen",
+          "box": [
+            1637.39,
+            2774.39,
+            1756.6,
+            2818.92
+          ],
+          "index": 250,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "shitcoiners",
+          "token": "shitcoiners",
+          "box": [
+            1449.94,
+            2851.44,
+            1683.66,
+            2891.51
+          ],
+          "index": 259,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/overdose_slot_slot1_V_local_warp_source_trace.jpg"
+    },
+    {
+      "kind": "overdose_slot",
+      "target": "slot2_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "slotIndex": 2,
+      "slotLetter": "E",
+      "box": [
+        783.0000000000016,
+        2176.81,
+        1027.569717707443,
+        3023.73
+      ],
+      "bestDx": -120,
+      "bestDy": 100,
+      "localWarpBestSourceOnlyCoverage": 0.12312363,
+      "sourceOnlyCoverage": 0.1231236296171361,
+      "sourceOnlyPixelCount": 25550,
+      "componentCount": 12,
+      "componentPixelCount": 13300,
+      "largestComponentPixelCount": 8972,
+      "targetContactBox": [
+        750,
+        2265,
+        1062,
+        2879
+      ],
+      "sourceTraceBox": [
+        1362,
+        2165,
+        1674,
+        2779
+      ],
+      "components": [
+        {
+          "pixelCount": 8972,
+          "targetBox": [
+            816,
+            2299,
+            1028,
+            2348
+          ]
+        },
+        {
+          "pixelCount": 494,
+          "targetBox": [
+            976,
+            2810,
+            1007,
+            2844
+          ]
+        },
+        {
+          "pixelCount": 442,
+          "targetBox": [
+            974,
+            2746,
+            1003,
+            2780
+          ]
+        },
+        {
+          "pixelCount": 433,
+          "targetBox": [
+            917,
+            2746,
+            947,
+            2772
+          ]
+        },
+        {
+          "pixelCount": 427,
+          "targetBox": [
+            844,
+            2737,
+            872,
+            2772
+          ]
+        },
+        {
+          "pixelCount": 394,
+          "targetBox": [
+            898,
+            2820,
+            922,
+            2845
+          ]
+        },
+        {
+          "pixelCount": 362,
+          "targetBox": [
+            784,
+            2745,
+            810,
+            2772
+          ]
+        },
+        {
+          "pixelCount": 362,
+          "targetBox": [
+            830,
+            2811,
+            856,
+            2844
+          ]
+        },
+        {
+          "pixelCount": 360,
+          "targetBox": [
+            889,
+            2745,
+            914,
+            2772
+          ]
+        },
+        {
+          "pixelCount": 352,
+          "targetBox": [
+            949,
+            2820,
+            973,
+            2845
+          ]
+        },
+        {
+          "pixelCount": 351,
+          "targetBox": [
+            999,
+            2383,
+            1028,
+            2406
+          ]
+        },
+        {
+          "pixelCount": 351,
+          "targetBox": [
+            949,
+            2747,
+            973,
+            2772
+          ]
+        }
+      ],
+      "componentSourceBoxes": [
+        [
+          1396,
+          2199,
+          1608,
+          2248
+        ],
+        [
+          1417,
+          2710,
+          1448,
+          2744
+        ],
+        [
+          1421,
+          2646,
+          1450,
+          2680
+        ],
+        [
+          1477,
+          2646,
+          1507,
+          2672
+        ],
+        [
+          1552,
+          2637,
+          1580,
+          2672
+        ],
+        [
+          1502,
+          2720,
+          1526,
+          2745
+        ],
+        [
+          1614,
+          2645,
+          1640,
+          2672
+        ],
+        [
+          1568,
+          2711,
+          1594,
+          2744
+        ],
+        [
+          1510,
+          2645,
+          1535,
+          2672
+        ],
+        [
+          1451,
+          2720,
+          1475,
+          2745
+        ],
+        [
+          1396,
+          2283,
+          1425,
+          2306
+        ],
+        [
+          1451,
+          2647,
+          1475,
+          2672
+        ]
+      ],
+      "sourceWordHitCount": 17,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "(MRERREIGStY epithet. mEthereum lab. experience. with your bare rabbit hole if this hearing is hard to listen",
+      "sourceWords": [
+        {
+          "text": "(MRERREIGStY",
+          "token": "mrerreigsty",
+          "box": [
+            1277.61,
+            2186.99,
+            1571.57,
+            2235.97
+          ],
+          "index": 194,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "epithet.",
+          "token": "epithet",
+          "box": [
+            1610.18,
+            2186.99,
+            1763.36,
+            2235.97
+          ],
+          "index": 195,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "mEthereum",
+          "token": "methereum",
+          "box": [
+            1394.51,
+            2267.42,
+            1613.1,
+            2307.5
+          ],
+          "index": 204,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "lab.",
+          "token": "lab",
+          "box": [
+            1653.51,
+            2267.42,
+            1720.43,
+            2307.5
+          ],
+          "index": 205,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "experience.",
+          "token": "experience",
+          "box": [
+            1257.45,
+            2552.13,
+            1492.1,
+            2601.12
+          ],
+          "index": 223,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "with",
+          "token": "with",
+          "box": [
+            1299.78,
+            2629.18,
+            1385.24,
+            2673.71
+          ],
+          "index": 229,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "your",
+          "token": "your",
+          "box": [
+            1422.73,
+            2629.18,
+            1509.8,
+            2673.71
+          ],
+          "index": 230,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "bare",
+          "token": "bare",
+          "box": [
+            1546.69,
+            2629.18,
+            1633.76,
+            2673.71
+          ],
+          "index": 231,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "rabbit",
+          "token": "rabbit",
+          "box": [
+            1254.43,
+            2701.78,
+            1382.27,
+            2746.32
+          ],
+          "index": 238,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "hole",
+          "token": "hole",
+          "box": [
+            1419.7,
+            2701.78,
+            1501.94,
+            2746.32
+          ],
+          "index": 239,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "if",
+          "token": "if",
+          "box": [
+            1539.63,
+            2701.78,
+            1571.21,
+            2746.32
+          ],
+          "index": 240,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "this",
+          "token": "this",
+          "box": [
+            1602.11,
+            2701.78,
+            1681.93,
+            2746.32
+          ],
+          "index": 241,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "hearing",
+          "token": "hearing",
+          "box": [
+            1209.08,
+            2774.39,
+            1363.4,
+            2818.92
+          ],
+          "index": 246,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "is",
+          "token": "is",
+          "box": [
+            1401.56,
+            2774.39,
+            1429.11,
+            2818.92
+          ],
+          "index": 247,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "hard",
+          "token": "hard",
+          "box": [
+            1460.02,
+            2774.39,
+            1542.25,
+            2818.92
+          ],
+          "index": 248,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "to",
+          "token": "to",
+          "box": [
+            1577.93,
+            2774.39,
+            1608.16,
+            2818.92
+          ],
+          "index": 249,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "listen",
+          "token": "listen",
+          "box": [
+            1637.39,
+            2774.39,
+            1756.6,
+            2818.92
+          ],
+          "index": 250,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/overdose_slot_slot2_E_local_warp_source_trace.jpg"
+    },
+    {
+      "kind": "overdose_slot",
+      "target": "slot3_R",
+      "phrase": "C9 projected OVERDOSE slot R",
+      "slotIndex": 3,
+      "slotLetter": "R",
+      "box": [
+        1027.569717707443,
+        2176.81,
+        1271.9999999999968,
+        3023.73
+      ],
+      "bestDx": 0,
+      "bestDy": 100,
+      "localWarpBestSourceOnlyCoverage": 0.130586254,
+      "sourceOnlyCoverage": 0.13058625428223045,
+      "sourceOnlyPixelCount": 26988,
+      "componentCount": 12,
+      "componentPixelCount": 14519,
+      "largestComponentPixelCount": 9976,
+      "targetContactBox": [
+        994,
+        2265,
+        1306,
+        2879
+      ],
+      "sourceTraceBox": [
+        1238,
+        2165,
+        1550,
+        2779
+      ],
+      "components": [
+        {
+          "pixelCount": 9976,
+          "targetBox": [
+            1028,
+            2299,
+            1272,
+            2348
+          ]
+        },
+        {
+          "pixelCount": 508,
+          "targetBox": [
+            1140,
+            2736,
+            1171,
+            2771
+          ]
+        },
+        {
+          "pixelCount": 494,
+          "targetBox": [
+            1096,
+            2810,
+            1127,
+            2844
+          ]
+        },
+        {
+          "pixelCount": 433,
+          "targetBox": [
+            1037,
+            2746,
+            1067,
+            2772
+          ]
+        },
+        {
+          "pixelCount": 419,
+          "targetBox": [
+            1192,
+            2810,
+            1220,
+            2844
+          ]
+        },
+        {
+          "pixelCount": 416,
+          "targetBox": [
+            1094,
+            2746,
+            1123,
+            2779
+          ]
+        },
+        {
+          "pixelCount": 413,
+          "targetBox": [
+            1221,
+            2810,
+            1249,
+            2844
+          ]
+        },
+        {
+          "pixelCount": 409,
+          "targetBox": [
+            1220,
+            2745,
+            1253,
+            2771
+          ]
+        },
+        {
+          "pixelCount": 387,
+          "targetBox": [
+            1247,
+            2820,
+            1272,
+            2844
+          ]
+        },
+        {
+          "pixelCount": 361,
+          "targetBox": [
+            1174,
+            2737,
+            1198,
+            2772
+          ]
+        },
+        {
+          "pixelCount": 352,
+          "targetBox": [
+            1069,
+            2820,
+            1093,
+            2845
+          ]
+        },
+        {
+          "pixelCount": 351,
+          "targetBox": [
+            1069,
+            2747,
+            1093,
+            2772
+          ]
+        }
+      ],
+      "componentSourceBoxes": [
+        [
+          1272,
+          2199,
+          1516,
+          2248
+        ],
+        [
+          1373,
+          2636,
+          1404,
+          2671
+        ],
+        [
+          1417,
+          2710,
+          1448,
+          2744
+        ],
+        [
+          1477,
+          2646,
+          1507,
+          2672
+        ],
+        [
+          1324,
+          2710,
+          1352,
+          2744
+        ],
+        [
+          1421,
+          2646,
+          1450,
+          2679
+        ],
+        [
+          1295,
+          2710,
+          1323,
+          2744
+        ],
+        [
+          1291,
+          2645,
+          1324,
+          2671
+        ],
+        [
+          1272,
+          2720,
+          1297,
+          2744
+        ],
+        [
+          1346,
+          2637,
+          1370,
+          2672
+        ],
+        [
+          1451,
+          2720,
+          1475,
+          2745
+        ],
+        [
+          1451,
+          2647,
+          1475,
+          2672
+        ]
+      ],
+      "sourceWordHitCount": 17,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "the (MRERREIGStY at the mEthereum Maximalist, experience. blindly with your bare rabbit hole if hearing is hard",
+      "sourceWords": [
+        {
+          "text": "the",
+          "token": "the",
+          "box": [
+            1189.93,
+            2186.99,
+            1244.35,
+            2235.97
+          ],
+          "index": 193,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "(MRERREIGStY",
+          "token": "mrerreigsty",
+          "box": [
+            1277.61,
+            2186.99,
+            1571.57,
+            2235.97
+          ],
+          "index": 194,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "at",
+          "token": "at",
+          "box": [
+            1248.38,
+            2267.42,
+            1276.6,
+            2307.5
+          ],
+          "index": 202,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "the",
+          "token": "the",
+          "box": [
+            1304.82,
+            2267.42,
+            1359.99,
+            2307.5
+          ],
+          "index": 203,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "mEthereum",
+          "token": "methereum",
+          "box": [
+            1394.51,
+            2267.42,
+            1613.1,
+            2307.5
+          ],
+          "index": 204,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Maximalist,",
+          "token": "maximalist",
+          "box": [
+            969.23,
+            2478.46,
+            1274.08,
+            2527.45
+          ],
+          "index": 216,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "experience.",
+          "token": "experience",
+          "box": [
+            1257.45,
+            2552.13,
+            1492.1,
+            2601.12
+          ],
+          "index": 223,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "blindly",
+          "token": "blindly",
+          "box": [
+            1099.23,
+            2629.18,
+            1260.61,
+            2673.71
+          ],
+          "index": 228,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "with",
+          "token": "with",
+          "box": [
+            1299.78,
+            2629.18,
+            1385.24,
+            2673.71
+          ],
+          "index": 229,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "your",
+          "token": "your",
+          "box": [
+            1422.73,
+            2629.18,
+            1509.8,
+            2673.71
+          ],
+          "index": 230,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "bare",
+          "token": "bare",
+          "box": [
+            1546.69,
+            2629.18,
+            1633.76,
+            2673.71
+          ],
+          "index": 231,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "rabbit",
+          "token": "rabbit",
+          "box": [
+            1254.43,
+            2701.78,
+            1382.27,
+            2746.32
+          ],
+          "index": 238,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "hole",
+          "token": "hole",
+          "box": [
+            1419.7,
+            2701.78,
+            1501.94,
+            2746.32
+          ],
+          "index": 239,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "if",
+          "token": "if",
+          "box": [
+            1539.63,
+            2701.78,
+            1571.21,
+            2746.32
+          ],
+          "index": 240,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "hearing",
+          "token": "hearing",
+          "box": [
+            1209.08,
+            2774.39,
+            1363.4,
+            2818.92
+          ],
+          "index": 246,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "is",
+          "token": "is",
+          "box": [
+            1401.56,
+            2774.39,
+            1429.11,
+            2818.92
+          ],
+          "index": 247,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "hard",
+          "token": "hard",
+          "box": [
+            1460.02,
+            2774.39,
+            1542.25,
+            2818.92
+          ],
+          "index": 248,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/overdose_slot_slot3_R_local_warp_source_trace.jpg"
+    },
+    {
+      "kind": "overdose_slot",
+      "target": "slot4_D",
+      "phrase": "C9 projected OVERDOSE slot D",
+      "slotIndex": 4,
+      "slotLetter": "D",
+      "box": [
+        1271.9999999999968,
+        2176.81,
+        1516.5697177074383,
+        3023.73
+      ],
+      "bestDx": -120,
+      "bestDy": 20,
+      "localWarpBestSourceOnlyCoverage": 0.144389562,
+      "sourceOnlyCoverage": 0.14438956220032287,
+      "sourceOnlyPixelCount": 29963,
+      "componentCount": 12,
+      "componentPixelCount": 14174,
+      "largestComponentPixelCount": 8339,
+      "targetContactBox": [
+        1238,
+        2330,
+        1551,
+        2796
+      ],
+      "sourceTraceBox": [
+        873,
+        2310,
+        1186,
+        2776
+      ],
+      "components": [
+        {
+          "pixelCount": 8339,
+          "targetBox": [
+            1272,
+            2364,
+            1517,
+            2412
+          ]
+        },
+        {
+          "pixelCount": 885,
+          "targetBox": [
+            1498,
+            2437,
+            1517,
+            2484
+          ]
+        },
+        {
+          "pixelCount": 754,
+          "targetBox": [
+            1300,
+            2515,
+            1338,
+            2544
+          ]
+        },
+        {
+          "pixelCount": 549,
+          "targetBox": [
+            1448,
+            2664,
+            1475,
+            2698
+          ]
+        },
+        {
+          "pixelCount": 501,
+          "targetBox": [
+            1361,
+            2664,
+            1389,
+            2698
+          ]
+        },
+        {
+          "pixelCount": 488,
+          "targetBox": [
+            1478,
+            2664,
+            1504,
+            2698
+          ]
+        },
+        {
+          "pixelCount": 471,
+          "targetBox": [
+            1399,
+            2729,
+            1429,
+            2762
+          ]
+        },
+        {
+          "pixelCount": 465,
+          "targetBox": [
+            1370,
+            2515,
+            1406,
+            2544
+          ]
+        },
+        {
+          "pixelCount": 452,
+          "targetBox": [
+            1342,
+            2503,
+            1367,
+            2544
+          ]
+        },
+        {
+          "pixelCount": 450,
+          "targetBox": [
+            1317,
+            2655,
+            1346,
+            2690
+          ]
+        },
+        {
+          "pixelCount": 433,
+          "targetBox": [
+            1392,
+            2664,
+            1419,
+            2689
+          ]
+        },
+        {
+          "pixelCount": 387,
+          "targetBox": [
+            1445,
+            2728,
+            1471,
+            2762
+          ]
+        }
+      ],
+      "componentSourceBoxes": [
+        [
+          907,
+          2344,
+          1152,
+          2392
+        ],
+        [
+          907,
+          2417,
+          926,
+          2464
+        ],
+        [
+          1086,
+          2495,
+          1124,
+          2524
+        ],
+        [
+          949,
+          2644,
+          976,
+          2678
+        ],
+        [
+          1035,
+          2644,
+          1063,
+          2678
+        ],
+        [
+          920,
+          2644,
+          946,
+          2678
+        ],
+        [
+          995,
+          2709,
+          1025,
+          2742
+        ],
+        [
+          1018,
+          2495,
+          1054,
+          2524
+        ],
+        [
+          1057,
+          2483,
+          1082,
+          2524
+        ],
+        [
+          1078,
+          2635,
+          1107,
+          2670
+        ],
+        [
+          1005,
+          2644,
+          1032,
+          2669
+        ],
+        [
+          953,
+          2708,
+          979,
+          2742
+        ]
+      ],
+      "sourceWordHitCount": 14,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "shitcoinery. dignity. Toxic Maximalist, the whole Satoshi digging blindly muck of Bitcoin's Anything worth",
+      "sourceWords": [
+        {
+          "text": "shitcoinery.",
+          "token": "shitcoinery",
+          "box": [
+            855.35,
+            2335.57,
+            1126.05,
+            2380.1
+          ],
+          "index": 209,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "dignity.",
+          "token": "dignity",
+          "box": [
+            739.45,
+            2408.71,
+            932.05,
+            2466.6
+          ],
+          "index": 212,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Toxic",
+          "token": "toxic",
+          "box": [
+            802.94,
+            2478.46,
+            924.72,
+            2527.45
+          ],
+          "index": 215,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Maximalist,",
+          "token": "maximalist",
+          "box": [
+            969.23,
+            2478.46,
+            1274.08,
+            2527.45
+          ],
+          "index": 216,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "the",
+          "token": "the",
+          "box": [
+            846.28,
+            2552.13,
+            900.7,
+            2601.12
+          ],
+          "index": 220,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "whole",
+          "token": "whole",
+          "box": [
+            934.96,
+            2552.13,
+            1037.42,
+            2601.12
+          ],
+          "index": 221,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Satoshi",
+          "token": "satoshi",
+          "box": [
+            1074.04,
+            2552.13,
+            1221.3,
+            2601.12
+          ],
+          "index": 222,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "digging",
+          "token": "digging",
+          "box": [
+            898.68,
+            2629.18,
+            1060.94,
+            2673.71
+          ],
+          "index": 227,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "blindly",
+          "token": "blindly",
+          "box": [
+            1099.23,
+            2629.18,
+            1260.61,
+            2673.71
+          ],
+          "index": 228,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "muck",
+          "token": "muck",
+          "box": [
+            824.11,
+            2701.78,
+            916.82,
+            2746.32
+          ],
+          "index": 235,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "of",
+          "token": "of",
+          "box": [
+            957.13,
+            2701.78,
+            990.05,
+            2746.32
+          ],
+          "index": 236,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Bitcoin's",
+          "token": "bitcoins",
+          "box": [
+            1021.63,
+            2701.78,
+            1215.73,
+            2746.32
+          ],
+          "index": 237,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Anything",
+          "token": "anything",
+          "box": [
+            842.25,
+            2774.39,
+            1027.68,
+            2818.92
+          ],
+          "index": 244,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "worth",
+          "token": "worth",
+          "box": [
+            1064.97,
+            2774.39,
+            1171.63,
+            2818.92
+          ],
+          "index": 245,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/overdose_slot_slot4_D_local_warp_source_trace.jpg"
+    },
+    {
+      "kind": "overdose_slot",
+      "target": "slot5_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "slotIndex": 5,
+      "slotLetter": "O",
+      "box": [
+        1516.5697177074383,
+        2176.81,
+        1760.9999999999984,
+        3023.73
+      ],
+      "bestDx": -120,
+      "bestDy": 20,
+      "localWarpBestSourceOnlyCoverage": 0.221417926,
+      "sourceOnlyCoverage": 0.22141792633595914,
+      "sourceOnlyPixelCount": 45760,
+      "componentCount": 12,
+      "componentPixelCount": 28301,
+      "largestComponentPixelCount": 11511,
+      "targetContactBox": [
+        1483,
+        2329,
+        1795,
+        2869
+      ],
+      "sourceTraceBox": [
+        629,
+        2309,
+        941,
+        2849
+      ],
+      "components": [
+        {
+          "pixelCount": 11511,
+          "targetBox": [
+            1517,
+            2435,
+            1761,
+            2484
+          ]
+        },
+        {
+          "pixelCount": 8967,
+          "targetBox": [
+            1517,
+            2363,
+            1761,
+            2411
+          ]
+        },
+        {
+          "pixelCount": 3382,
+          "targetBox": [
+            1689,
+            2572,
+            1761,
+            2621
+          ]
+        },
+        {
+          "pixelCount": 679,
+          "targetBox": [
+            1625,
+            2502,
+            1658,
+            2542
+          ]
+        },
+        {
+          "pixelCount": 538,
+          "targetBox": [
+            1605,
+            2737,
+            1638,
+            2762
+          ]
+        },
+        {
+          "pixelCount": 487,
+          "targetBox": [
+            1681,
+            2727,
+            1713,
+            2761
+          ]
+        },
+        {
+          "pixelCount": 463,
+          "targetBox": [
+            1530,
+            2502,
+            1556,
+            2543
+          ]
+        },
+        {
+          "pixelCount": 461,
+          "targetBox": [
+            1559,
+            2514,
+            1595,
+            2543
+          ]
+        },
+        {
+          "pixelCount": 457,
+          "targetBox": [
+            1713,
+            2501,
+            1738,
+            2542
+          ]
+        },
+        {
+          "pixelCount": 457,
+          "targetBox": [
+            1517,
+            2729,
+            1544,
+            2762
+          ]
+        },
+        {
+          "pixelCount": 450,
+          "targetBox": [
+            1721,
+            2654,
+            1748,
+            2688
+          ]
+        },
+        {
+          "pixelCount": 449,
+          "targetBox": [
+            1681,
+            2809,
+            1711,
+            2835
+          ]
+        }
+      ],
+      "componentSourceBoxes": [
+        [
+          663,
+          2415,
+          907,
+          2464
+        ],
+        [
+          663,
+          2343,
+          907,
+          2391
+        ],
+        [
+          663,
+          2552,
+          735,
+          2601
+        ],
+        [
+          766,
+          2482,
+          799,
+          2522
+        ],
+        [
+          786,
+          2717,
+          819,
+          2742
+        ],
+        [
+          711,
+          2707,
+          743,
+          2741
+        ],
+        [
+          868,
+          2482,
+          894,
+          2523
+        ],
+        [
+          829,
+          2494,
+          865,
+          2523
+        ],
+        [
+          686,
+          2481,
+          711,
+          2522
+        ],
+        [
+          880,
+          2709,
+          907,
+          2742
+        ],
+        [
+          676,
+          2634,
+          703,
+          2668
+        ],
+        [
+          713,
+          2789,
+          743,
+          2815
+        ]
+      ],
+      "sourceWordHitCount": 20,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "strictInstructionTerms": [],
+      "contextTerms": [
+        "bitcoin"
+      ],
+      "sourceTextPreview": "fa or shitcoinery. your dignity. Bitcoin Toxic BSR of the whole wouldn't be digging in the muck weren't true. Anything",
+      "sourceWords": [
+        {
+          "text": "fa",
+          "token": "fa",
+          "box": [
+            672.94,
+            2335.57,
+            689.06,
+            2380.1
+          ],
+          "index": 207,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "or",
+          "token": "or",
+          "box": [
+            787.83,
+            2335.57,
+            820.08,
+            2380.1
+          ],
+          "index": 208,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "shitcoinery.",
+          "token": "shitcoinery",
+          "box": [
+            855.35,
+            2335.57,
+            1126.05,
+            2380.1
+          ],
+          "index": 209,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "your",
+          "token": "your",
+          "box": [
+            617.51,
+            2408.71,
+            711.04,
+            2466.6
+          ],
+          "index": 211,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "dignity.",
+          "token": "dignity",
+          "box": [
+            739.45,
+            2408.71,
+            932.05,
+            2466.6
+          ],
+          "index": 212,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Bitcoin",
+          "token": "bitcoin",
+          "box": [
+            586.27,
+            2478.46,
+            758.23,
+            2527.45
+          ],
+          "index": 214,
+          "strictInstruction": false,
+          "contextTerm": true
+        },
+        {
+          "text": "Toxic",
+          "token": "toxic",
+          "box": [
+            802.94,
+            2478.46,
+            924.72,
+            2527.45
+          ],
+          "index": 215,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "BSR",
+          "token": "bsr",
+          "box": [
+            594.33,
+            2552.13,
+            728.87,
+            2601.12
+          ],
+          "index": 218,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "of",
+          "token": "of",
+          "box": [
+            786.82,
+            2552.13,
+            817.05,
+            2601.12
+          ],
+          "index": 219,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "the",
+          "token": "the",
+          "box": [
+            846.28,
+            2552.13,
+            900.7,
+            2601.12
+          ],
+          "index": 220,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "whole",
+          "token": "whole",
+          "box": [
+            934.96,
+            2552.13,
+            1037.42,
+            2601.12
+          ],
+          "index": 221,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "wouldn't",
+          "token": "wouldnt",
+          "box": [
+            605.42,
+            2629.18,
+            790.85,
+            2673.71
+          ],
+          "index": 225,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "be",
+          "token": "be",
+          "box": [
+            829.15,
+            2629.18,
+            864.08,
+            2673.71
+          ],
+          "index": 226,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "digging",
+          "token": "digging",
+          "box": [
+            898.68,
+            2629.18,
+            1060.94,
+            2673.71
+          ],
+          "index": 227,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "in",
+          "token": "in",
+          "box": [
+            662.86,
+            2701.78,
+            695.78,
+            2746.32
+          ],
+          "index": 233,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "the",
+          "token": "the",
+          "box": [
+            728.37,
+            2701.78,
+            787.32,
+            2746.32
+          ],
+          "index": 234,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "muck",
+          "token": "muck",
+          "box": [
+            824.11,
+            2701.78,
+            916.82,
+            2746.32
+          ],
+          "index": 235,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "weren't",
+          "token": "werent",
+          "box": [
+            506.66,
+            2774.39,
+            664.5,
+            2818.92
+          ],
+          "index": 242,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "true.",
+          "token": "true",
+          "box": [
+            703.17,
+            2774.39,
+            804.8,
+            2818.92
+          ],
+          "index": 243,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Anything",
+          "token": "anything",
+          "box": [
+            842.25,
+            2774.39,
+            1027.68,
+            2818.92
+          ],
+          "index": 244,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/overdose_slot_slot5_O_local_warp_source_trace.jpg"
+    },
+    {
+      "kind": "overdose_slot",
+      "target": "slot6_S",
+      "phrase": "C9 projected OVERDOSE slot S",
+      "slotIndex": 6,
+      "slotLetter": "S",
+      "box": [
+        1760.9999999999984,
+        2176.81,
+        2005.5697177074398,
+        3023.73
+      ],
+      "bestDx": 0,
+      "bestDy": 60,
+      "localWarpBestSourceOnlyCoverage": 0.257470544,
+      "sourceOnlyCoverage": 0.25747054429800253,
+      "sourceOnlyPixelCount": 53429,
+      "componentCount": 12,
+      "componentPixelCount": 34006,
+      "largestComponentPixelCount": 11500,
+      "targetContactBox": [
+        1727,
+        2222,
+        2040,
+        2909
+      ],
+      "sourceTraceBox": [
+        504,
+        2162,
+        817,
+        2849
+      ],
+      "components": [
+        {
+          "pixelCount": 11500,
+          "targetBox": [
+            1761,
+            2475,
+            2006,
+            2524
+          ]
+        },
+        {
+          "pixelCount": 9140,
+          "targetBox": [
+            1761,
+            2402,
+            2006,
+            2450
+          ]
+        },
+        {
+          "pixelCount": 8995,
+          "targetBox": [
+            1809,
+            2612,
+            2000,
+            2661
+          ]
+        },
+        {
+          "pixelCount": 681,
+          "targetBox": [
+            1972,
+            2542,
+            2006,
+            2581
+          ]
+        },
+        {
+          "pixelCount": 487,
+          "targetBox": [
+            1801,
+            2767,
+            1833,
+            2801
+          ]
+        },
+        {
+          "pixelCount": 473,
+          "targetBox": [
+            1955,
+            2701,
+            1988,
+            2728
+          ]
+        },
+        {
+          "pixelCount": 463,
+          "targetBox": [
+            1859,
+            2256,
+            1888,
+            2289
+          ]
+        },
+        {
+          "pixelCount": 460,
+          "targetBox": [
+            1943,
+            2541,
+            1969,
+            2582
+          ]
+        },
+        {
+          "pixelCount": 457,
+          "targetBox": [
+            1833,
+            2541,
+            1858,
+            2582
+          ]
+        },
+        {
+          "pixelCount": 451,
+          "targetBox": [
+            1971,
+            2767,
+            1999,
+            2801
+          ]
+        },
+        {
+          "pixelCount": 450,
+          "targetBox": [
+            1841,
+            2694,
+            1868,
+            2728
+          ]
+        },
+        {
+          "pixelCount": 449,
+          "targetBox": [
+            1801,
+            2849,
+            1831,
+            2875
+          ]
+        }
+      ],
+      "componentSourceBoxes": [
+        [
+          538,
+          2415,
+          783,
+          2464
+        ],
+        [
+          538,
+          2342,
+          783,
+          2390
+        ],
+        [
+          544,
+          2552,
+          735,
+          2601
+        ],
+        [
+          538,
+          2482,
+          572,
+          2521
+        ],
+        [
+          711,
+          2707,
+          743,
+          2741
+        ],
+        [
+          556,
+          2641,
+          589,
+          2668
+        ],
+        [
+          656,
+          2196,
+          685,
+          2229
+        ],
+        [
+          575,
+          2481,
+          601,
+          2522
+        ],
+        [
+          686,
+          2481,
+          711,
+          2522
+        ],
+        [
+          545,
+          2707,
+          573,
+          2741
+        ],
+        [
+          676,
+          2634,
+          703,
+          2668
+        ],
+        [
+          713,
+          2789,
+          743,
+          2815
+        ]
+      ],
+      "sourceWordHitCount": 29,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "strictInstructionTerms": [],
+      "contextTerms": [
+        "bitcoin"
+      ],
+      "sourceTextPreview": "to cash in by riding Vitalik Buterin Now he's slinging Don't fa or Keep your dignity. Go Bitcoin Toxic the BSR of You wouldn't hands in the weren't true.",
+      "sourceWords": [
+        {
+          "text": "to",
+          "token": "to",
+          "box": [
+            504.64,
+            2122.21,
+            534.2,
+            2162.29
+          ],
+          "index": 175,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "cash",
+          "token": "cash",
+          "box": [
+            565.11,
+            2122.21,
+            645.73,
+            2162.29
+          ],
+          "index": 176,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "in",
+          "token": "in",
+          "box": [
+            682.01,
+            2122.21,
+            711.57,
+            2162.29
+          ],
+          "index": 177,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "by",
+          "token": "by",
+          "box": [
+            741.47,
+            2122.21,
+            775.06,
+            2162.29
+          ],
+          "index": 178,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "riding",
+          "token": "riding",
+          "box": [
+            806.98,
+            2122.21,
+            928.77,
+            2162.29
+          ],
+          "index": 179,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Vitalik",
+          "token": "vitalik",
+          "box": [
+            505.65,
+            2186.99,
+            657.32,
+            2235.97
+          ],
+          "index": 188,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Buterin",
+          "token": "buterin",
+          "box": [
+            696.12,
+            2186.99,
+            853.08,
+            2235.97
+          ],
+          "index": 189,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Now",
+          "token": "now",
+          "box": [
+            506.66,
+            2267.42,
+            566.37,
+            2307.5
+          ],
+          "index": 196,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "he's",
+          "token": "hes",
+          "box": [
+            602.4,
+            2267.42,
+            671.74,
+            2307.5
+          ],
+          "index": 197,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "slinging",
+          "token": "slinging",
+          "box": [
+            706.2,
+            2267.42,
+            879.09,
+            2307.5
+          ],
+          "index": 198,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Don't",
+          "token": "dont",
+          "box": [
+            518.75,
+            2335.57,
+            580.06,
+            2380.1
+          ],
+          "index": 206,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "fa",
+          "token": "fa",
+          "box": [
+            672.94,
+            2335.57,
+            689.06,
+            2380.1
+          ],
+          "index": 207,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "or",
+          "token": "or",
+          "box": [
+            787.83,
+            2335.57,
+            820.08,
+            2380.1
+          ],
+          "index": 208,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Keep",
+          "token": "keep",
+          "box": [
+            484.49,
+            2408.71,
+            586.88,
+            2466.6
+          ],
+          "index": 210,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "your",
+          "token": "your",
+          "box": [
+            617.51,
+            2408.71,
+            711.04,
+            2466.6
+          ],
+          "index": 211,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "dignity.",
+          "token": "dignity",
+          "box": [
+            739.45,
+            2408.71,
+            932.05,
+            2466.6
+          ],
+          "index": 212,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Go",
+          "token": "go",
+          "box": [
+            506.66,
+            2478.46,
+            546.97,
+            2527.45
+          ],
+          "index": 213,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Bitcoin",
+          "token": "bitcoin",
+          "box": [
+            586.27,
+            2478.46,
+            758.23,
+            2527.45
+          ],
+          "index": 214,
+          "strictInstruction": false,
+          "contextTerm": true
+        },
+        {
+          "text": "Toxic",
+          "token": "toxic",
+          "box": [
+            802.94,
+            2478.46,
+            924.72,
+            2527.45
+          ],
+          "index": 215,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "the",
+          "token": "the",
+          "box": [
+            506.66,
+            2552.13,
+            560.32,
+            2601.12
+          ],
+          "index": 217,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "BSR",
+          "token": "bsr",
+          "box": [
+            594.33,
+            2552.13,
+            728.87,
+            2601.12
+          ],
+          "index": 218,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "of",
+          "token": "of",
+          "box": [
+            786.82,
+            2552.13,
+            817.05,
+            2601.12
+          ],
+          "index": 219,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "You",
+          "token": "you",
+          "box": [
+            506.66,
+            2629.18,
+            568.64,
+            2673.71
+          ],
+          "index": 224,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "wouldn't",
+          "token": "wouldnt",
+          "box": [
+            605.42,
+            2629.18,
+            790.85,
+            2673.71
+          ],
+          "index": 225,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "hands",
+          "token": "hands",
+          "box": [
+            506.66,
+            2701.78,
+            623.39,
+            2746.32
+          ],
+          "index": 232,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "in",
+          "token": "in",
+          "box": [
+            662.86,
+            2701.78,
+            695.78,
+            2746.32
+          ],
+          "index": 233,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "the",
+          "token": "the",
+          "box": [
+            728.37,
+            2701.78,
+            787.32,
+            2746.32
+          ],
+          "index": 234,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "weren't",
+          "token": "werent",
+          "box": [
+            506.66,
+            2774.39,
+            664.5,
+            2818.92
+          ],
+          "index": 242,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "true.",
+          "token": "true",
+          "box": [
+            703.17,
+            2774.39,
+            804.8,
+            2818.92
+          ],
+          "index": 243,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/overdose_slot_slot6_S_local_warp_source_trace.jpg"
+    },
+    {
+      "kind": "overdose_slot",
+      "target": "slot7_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "slotIndex": 7,
+      "slotLetter": "E",
+      "box": [
+        2005.5697177074398,
+        2176.81,
+        2250.0,
+        3023.73
+      ],
+      "bestDx": 120,
+      "bestDy": 60,
+      "localWarpBestSourceOnlyCoverage": 0.210497029,
+      "sourceOnlyCoverage": 0.21049702905142548,
+      "sourceOnlyPixelCount": 43503,
+      "componentCount": 12,
+      "componentPixelCount": 26840,
+      "largestComponentPixelCount": 9661,
+      "targetContactBox": [
+        1972,
+        2222,
+        2248,
+        2908
+      ],
+      "sourceTraceBox": [
+        416,
+        2162,
+        692,
+        2848
+      ],
+      "components": [
+        {
+          "pixelCount": 9661,
+          "targetBox": [
+            2006,
+            2475,
+            2213,
+            2523
+          ]
+        },
+        {
+          "pixelCount": 7287,
+          "targetBox": [
+            2006,
+            2401,
+            2213,
+            2450
+          ]
+        },
+        {
+          "pixelCount": 5378,
+          "targetBox": [
+            2006,
+            2612,
+            2120,
+            2660
+          ]
+        },
+        {
+          "pixelCount": 692,
+          "targetBox": [
+            2092,
+            2542,
+            2128,
+            2581
+          ]
+        },
+        {
+          "pixelCount": 609,
+          "targetBox": [
+            2178,
+            2542,
+            2211,
+            2582
+          ]
+        },
+        {
+          "pixelCount": 484,
+          "targetBox": [
+            2181,
+            2848,
+            2214,
+            2874
+          ]
+        },
+        {
+          "pixelCount": 473,
+          "targetBox": [
+            2075,
+            2701,
+            2108,
+            2728
+          ]
+        },
+        {
+          "pixelCount": 460,
+          "targetBox": [
+            2063,
+            2541,
+            2089,
+            2582
+          ]
+        },
+        {
+          "pixelCount": 451,
+          "targetBox": [
+            2177,
+            2256,
+            2210,
+            2289
+          ]
+        },
+        {
+          "pixelCount": 451,
+          "targetBox": [
+            2091,
+            2767,
+            2119,
+            2801
+          ]
+        },
+        {
+          "pixelCount": 450,
+          "targetBox": [
+            2181,
+            2692,
+            2213,
+            2726
+          ]
+        },
+        {
+          "pixelCount": 444,
+          "targetBox": [
+            2125,
+            2701,
+            2156,
+            2727
+          ]
+        }
+      ],
+      "componentSourceBoxes": [
+        [
+          451,
+          2415,
+          658,
+          2463
+        ],
+        [
+          451,
+          2341,
+          658,
+          2390
+        ],
+        [
+          544,
+          2552,
+          658,
+          2600
+        ],
+        [
+          536,
+          2482,
+          572,
+          2521
+        ],
+        [
+          453,
+          2482,
+          486,
+          2522
+        ],
+        [
+          450,
+          2788,
+          483,
+          2814
+        ],
+        [
+          556,
+          2641,
+          589,
+          2668
+        ],
+        [
+          575,
+          2481,
+          601,
+          2522
+        ],
+        [
+          454,
+          2196,
+          487,
+          2229
+        ],
+        [
+          545,
+          2707,
+          573,
+          2741
+        ],
+        [
+          451,
+          2632,
+          483,
+          2666
+        ],
+        [
+          508,
+          2641,
+          539,
+          2667
+        ]
+      ],
+      "sourceWordHitCount": 19,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "strictInstructionTerms": [],
+      "contextTerms": [
+        "bitcoin"
+      ],
+      "sourceTextPreview": "to cash in Vitalik Now he's Don't fa Keep your Go Bitcoin the BSR You wouldn't hands in weren't",
+      "sourceWords": [
+        {
+          "text": "to",
+          "token": "to",
+          "box": [
+            504.64,
+            2122.21,
+            534.2,
+            2162.29
+          ],
+          "index": 175,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "cash",
+          "token": "cash",
+          "box": [
+            565.11,
+            2122.21,
+            645.73,
+            2162.29
+          ],
+          "index": 176,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "in",
+          "token": "in",
+          "box": [
+            682.01,
+            2122.21,
+            711.57,
+            2162.29
+          ],
+          "index": 177,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Vitalik",
+          "token": "vitalik",
+          "box": [
+            505.65,
+            2186.99,
+            657.32,
+            2235.97
+          ],
+          "index": 188,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Now",
+          "token": "now",
+          "box": [
+            506.66,
+            2267.42,
+            566.37,
+            2307.5
+          ],
+          "index": 196,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "he's",
+          "token": "hes",
+          "box": [
+            602.4,
+            2267.42,
+            671.74,
+            2307.5
+          ],
+          "index": 197,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Don't",
+          "token": "dont",
+          "box": [
+            518.75,
+            2335.57,
+            580.06,
+            2380.1
+          ],
+          "index": 206,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "fa",
+          "token": "fa",
+          "box": [
+            672.94,
+            2335.57,
+            689.06,
+            2380.1
+          ],
+          "index": 207,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Keep",
+          "token": "keep",
+          "box": [
+            484.49,
+            2408.71,
+            586.88,
+            2466.6
+          ],
+          "index": 210,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "your",
+          "token": "your",
+          "box": [
+            617.51,
+            2408.71,
+            711.04,
+            2466.6
+          ],
+          "index": 211,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Go",
+          "token": "go",
+          "box": [
+            506.66,
+            2478.46,
+            546.97,
+            2527.45
+          ],
+          "index": 213,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Bitcoin",
+          "token": "bitcoin",
+          "box": [
+            586.27,
+            2478.46,
+            758.23,
+            2527.45
+          ],
+          "index": 214,
+          "strictInstruction": false,
+          "contextTerm": true
+        },
+        {
+          "text": "the",
+          "token": "the",
+          "box": [
+            506.66,
+            2552.13,
+            560.32,
+            2601.12
+          ],
+          "index": 217,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "BSR",
+          "token": "bsr",
+          "box": [
+            594.33,
+            2552.13,
+            728.87,
+            2601.12
+          ],
+          "index": 218,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "You",
+          "token": "you",
+          "box": [
+            506.66,
+            2629.18,
+            568.64,
+            2673.71
+          ],
+          "index": 224,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "wouldn't",
+          "token": "wouldnt",
+          "box": [
+            605.42,
+            2629.18,
+            790.85,
+            2673.71
+          ],
+          "index": 225,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "hands",
+          "token": "hands",
+          "box": [
+            506.66,
+            2701.78,
+            623.39,
+            2746.32
+          ],
+          "index": 232,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "in",
+          "token": "in",
+          "box": [
+            662.86,
+            2701.78,
+            695.78,
+            2746.32
+          ],
+          "index": 233,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "weren't",
+          "token": "werent",
+          "box": [
+            506.66,
+            2774.39,
+            664.5,
+            2818.92
+          ],
+          "index": 242,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/overdose_slot_slot7_E_local_warp_source_trace.jpg"
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/current_scan_valid_leaf_local_warp_source_trace_sheet.jpg",
+  "panelPaths": [
+    "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/active_O4_local_warp_source_trace.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/active_B4_local_warp_source_trace.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/active_G5_local_warp_source_trace.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/active_O5_local_warp_source_trace.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/overdose_slot_slot0_O_local_warp_source_trace.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/overdose_slot_slot1_V_local_warp_source_trace.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/overdose_slot_slot2_E_local_warp_source_trace.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/overdose_slot_slot3_R_local_warp_source_trace.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/overdose_slot_slot4_D_local_warp_source_trace.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/overdose_slot_slot5_O_local_warp_source_trace.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/overdose_slot_slot6_S_local_warp_source_trace.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_source_trace/overdose_slot_slot7_E_local_warp_source_trace.jpg"
+  ],
+  "nextMove": "Do not extract from local-warp source traces; require a new source/raw clue that names transform, unit, and order."
+}

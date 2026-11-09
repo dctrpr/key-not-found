@@ -1,0 +1,353 @@
+{
+  "createdAt": "2026-05-20T05:52:24",
+  "scope": "Cross-evidence audit for page-76 line-offset landing lines; no key derivation.",
+  "graphicTermLayers": {
+    "p78_bbox_words": [
+      "could",
+      "earnings",
+      "mike",
+      "pals",
+      "sell",
+      "sella",
+      "should",
+      "siukbeodmensertslveaarty",
+      "tagged",
+      "that",
+      "trust"
+    ],
+    "p78_dark_words": [
+      "could",
+      "earnings",
+      "mike",
+      "pals",
+      "sella",
+      "siukbeodmensertslveaarty",
+      "tagged",
+      "trust"
+    ],
+    "p78_hole_words": [
+      "could",
+      "mike",
+      "pals",
+      "sella",
+      "siukbeodmensertslveaarty",
+      "tagged",
+      "trust"
+    ]
+  },
+  "scoredLandings": [
+    {
+      "sourceId": "O1",
+      "sourceIndex": 1,
+      "targetLine": 1,
+      "targetUnits": [
+        "O2"
+      ],
+      "targetText": "Bitcoin. It's the freaking UTXO ghetto up in here, y'all.",
+      "score": 5,
+      "layers": [
+        "highlight target",
+        "reflected highlight graph"
+      ],
+      "evidence": [
+        "line lands on highlighted unit(s) O2",
+        "orange_7 strong terms=bitcoin; orange_7 strong terms=bitcoin; orange_7 medium terms=bitcoin"
+      ]
+    },
+    {
+      "sourceId": "O2",
+      "sourceIndex": 2,
+      "targetLine": 3,
+      "targetUnits": [],
+      "targetText": "but George Clinton and James Brown clones. It's Martin Luther",
+      "score": 0,
+      "layers": [],
+      "evidence": []
+    },
+    {
+      "sourceId": "B1",
+      "sourceIndex": 1,
+      "targetLine": 7,
+      "targetUnits": [
+        "B2"
+      ],
+      "targetText": "nonsense (and 10 years of watching Peter Schiff miss buying bitcoin",
+      "score": 5,
+      "layers": [
+        "highlight target",
+        "reflected highlight graph"
+      ],
+      "evidence": [
+        "line lands on highlighted unit(s) B2",
+        "orange_7 strong terms=bitcoin; orange_7 strong terms=bitcoin; orange_7 medium terms=bitcoin"
+      ]
+    },
+    {
+      "sourceId": "B2",
+      "sourceIndex": 2,
+      "targetLine": 9,
+      "targetUnits": [],
+      "targetText": "have dulled shitcoiners' and nocoiners' minds.",
+      "score": 0,
+      "layers": [],
+      "evidence": []
+    },
+    {
+      "sourceId": "O3",
+      "sourceIndex": 3,
+      "targetLine": 16,
+      "targetUnits": [
+        "B3"
+      ],
+      "targetText": "laundering lobotomy. It’s a stun gun to the genitals.",
+      "score": 5,
+      "layers": [
+        "highlight target",
+        "reflected highlight graph"
+      ],
+      "evidence": [
+        "line lands on highlighted unit(s) B3",
+        "grey_black_4 strong terms=genitals,stun; grey_black_4 medium terms=genitals,stun; grey_black_4 medium terms=genitals,stun"
+      ]
+    },
+    {
+      "sourceId": "B3",
+      "sourceIndex": 3,
+      "targetLine": 19,
+      "targetUnits": [],
+      "targetText": "Don't believe me?",
+      "score": 0,
+      "layers": [],
+      "evidence": []
+    },
+    {
+      "sourceId": "O4",
+      "sourceIndex": 4,
+      "targetLine": 26,
+      "targetUnits": [],
+      "targetText": "billions worth of future bitcoin earnings",
+      "score": 6,
+      "layers": [
+        "p78_bbox_words",
+        "p78_dark_words",
+        "reflected highlight graph"
+      ],
+      "evidence": [
+        "p78_bbox_words terms: earnings",
+        "p78_dark_words terms: earnings",
+        "orange_7 strong terms=bitcoin; orange_7 strong terms=bitcoin; orange_7 medium terms=bitcoin"
+      ]
+    },
+    {
+      "sourceId": "B4",
+      "sourceIndex": 4,
+      "targetLine": 29,
+      "targetUnits": [],
+      "targetText": "Novogratz in the tweet, figuring he could sell a",
+      "score": 5,
+      "layers": [
+        "p78_bbox_words",
+        "p78_dark_words",
+        "p78_hole_words"
+      ],
+      "evidence": [
+        "p78_bbox_words terms: could, sell",
+        "p78_dark_words terms: could",
+        "p78_hole_words terms: could"
+      ]
+    },
+    {
+      "sourceId": "B5",
+      "sourceIndex": 5,
+      "targetLine": 32,
+      "targetUnits": [
+        "O5"
+      ],
+      "targetText": "Maybe because he's a shitcoiner at heart.",
+      "score": 8,
+      "layers": [
+        "highlight target",
+        "reflected highlight graph",
+        "target convergence"
+      ],
+      "evidence": [
+        "line lands on highlighted unit(s) O5",
+        "O5 convergence score 15",
+        "orange_7 strong terms=heart; orange_7 strong terms=heart; orange_7 medium terms=heart"
+      ]
+    },
+    {
+      "sourceId": "O5",
+      "sourceIndex": 5,
+      "targetLine": 37,
+      "targetUnits": [],
+      "targetText": "",
+      "score": 0,
+      "layers": [],
+      "evidence": []
+    }
+  ],
+  "highlightHits": [
+    {
+      "sourceId": "O1",
+      "sourceIndex": 1,
+      "targetLine": 1,
+      "targetUnits": [
+        "O2"
+      ],
+      "targetText": "Bitcoin. It's the freaking UTXO ghetto up in here, y'all.",
+      "score": 5,
+      "layers": [
+        "highlight target",
+        "reflected highlight graph"
+      ],
+      "evidence": [
+        "line lands on highlighted unit(s) O2",
+        "orange_7 strong terms=bitcoin; orange_7 strong terms=bitcoin; orange_7 medium terms=bitcoin"
+      ]
+    },
+    {
+      "sourceId": "B1",
+      "sourceIndex": 1,
+      "targetLine": 7,
+      "targetUnits": [
+        "B2"
+      ],
+      "targetText": "nonsense (and 10 years of watching Peter Schiff miss buying bitcoin",
+      "score": 5,
+      "layers": [
+        "highlight target",
+        "reflected highlight graph"
+      ],
+      "evidence": [
+        "line lands on highlighted unit(s) B2",
+        "orange_7 strong terms=bitcoin; orange_7 strong terms=bitcoin; orange_7 medium terms=bitcoin"
+      ]
+    },
+    {
+      "sourceId": "O3",
+      "sourceIndex": 3,
+      "targetLine": 16,
+      "targetUnits": [
+        "B3"
+      ],
+      "targetText": "laundering lobotomy. It’s a stun gun to the genitals.",
+      "score": 5,
+      "layers": [
+        "highlight target",
+        "reflected highlight graph"
+      ],
+      "evidence": [
+        "line lands on highlighted unit(s) B3",
+        "grey_black_4 strong terms=genitals,stun; grey_black_4 medium terms=genitals,stun; grey_black_4 medium terms=genitals,stun"
+      ]
+    },
+    {
+      "sourceId": "B5",
+      "sourceIndex": 5,
+      "targetLine": 32,
+      "targetUnits": [
+        "O5"
+      ],
+      "targetText": "Maybe because he's a shitcoiner at heart.",
+      "score": 8,
+      "layers": [
+        "highlight target",
+        "reflected highlight graph",
+        "target convergence"
+      ],
+      "evidence": [
+        "line lands on highlighted unit(s) O5",
+        "O5 convergence score 15",
+        "orange_7 strong terms=heart; orange_7 strong terms=heart; orange_7 medium terms=heart"
+      ]
+    }
+  ],
+  "supportedMisses": [
+    {
+      "sourceId": "O4",
+      "sourceIndex": 4,
+      "targetLine": 26,
+      "targetUnits": [],
+      "targetText": "billions worth of future bitcoin earnings",
+      "score": 6,
+      "layers": [
+        "p78_bbox_words",
+        "p78_dark_words",
+        "reflected highlight graph"
+      ],
+      "evidence": [
+        "p78_bbox_words terms: earnings",
+        "p78_dark_words terms: earnings",
+        "orange_7 strong terms=bitcoin; orange_7 strong terms=bitcoin; orange_7 medium terms=bitcoin"
+      ]
+    },
+    {
+      "sourceId": "B4",
+      "sourceIndex": 4,
+      "targetLine": 29,
+      "targetUnits": [],
+      "targetText": "Novogratz in the tweet, figuring he could sell a",
+      "score": 5,
+      "layers": [
+        "p78_bbox_words",
+        "p78_dark_words",
+        "p78_hole_words"
+      ],
+      "evidence": [
+        "p78_bbox_words terms: could, sell",
+        "p78_dark_words terms: could",
+        "p78_hole_words terms: could"
+      ]
+    }
+  ],
+  "unsupportedMisses": [
+    {
+      "sourceId": "O2",
+      "sourceIndex": 2,
+      "targetLine": 3,
+      "targetUnits": [],
+      "targetText": "but George Clinton and James Brown clones. It's Martin Luther",
+      "score": 0,
+      "layers": [],
+      "evidence": []
+    },
+    {
+      "sourceId": "B2",
+      "sourceIndex": 2,
+      "targetLine": 9,
+      "targetUnits": [],
+      "targetText": "have dulled shitcoiners' and nocoiners' minds.",
+      "score": 0,
+      "layers": [],
+      "evidence": []
+    },
+    {
+      "sourceId": "B3",
+      "sourceIndex": 3,
+      "targetLine": 19,
+      "targetUnits": [],
+      "targetText": "Don't believe me?",
+      "score": 0,
+      "layers": [],
+      "evidence": []
+    },
+    {
+      "sourceId": "O5",
+      "sourceIndex": 5,
+      "targetLine": 37,
+      "targetUnits": [],
+      "targetText": "",
+      "score": 0,
+      "layers": [],
+      "evidence": []
+    }
+  ],
+  "assessment": [
+    "The #4 miss-lines are supported by the p78 graphic reflection band: O4+4 lands on `billions worth of future bitcoin earnings`, and B4+4 lands on the Novogratz/could-sell line.",
+    "The #2 miss-lines are weak: O2+2 (`George Clinton...Martin Luther`) and B2+2 (`have dulled shitcoiners...`) do not receive the same cross-layer support in the currently logged evidence.",
+    "This suggests the line-offset operation may select landing lines, not only highlighted boxes, but it still lacks a rule for which words or letters to extract.",
+    "Do not promote the supported #4 misses into key material without a source rule specifying the unit."
+  ],
+  "nextMove": "Inspect whether source/provenance layers around p78/p79/p80 explain why #4 lands in the p78 graphic band while #2 remains weak."
+}

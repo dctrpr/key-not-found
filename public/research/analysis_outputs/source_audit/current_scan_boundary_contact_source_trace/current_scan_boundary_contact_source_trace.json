@@ -1,0 +1,483 @@
+{
+  "createdAt": "2026-05-21T15:15:25",
+  "scope": "Trace the two weak all-four boundary light-table contacts back to their source-page regions. No key derivation, hashing, WIF, seed, address, BIP39, OCR-to-key extraction, or broad candidate generation.",
+  "inputs": {
+    "boundaryAnomaly": "analysis_outputs/source_audit/current_scan_boundary_light_table_anomaly_probe/current_scan_boundary_light_table_anomaly_probe.json",
+    "articleMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "weakGroups": [
+    {
+      "scenarioId": "valid_75_to_76_forced_best",
+      "scenarioClass": "physical_forced_shift",
+      "kind": "target_outer_edge",
+      "side": "right",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "coverageByTarget": {
+        "O4": 0.691176,
+        "B4": 0.148721,
+        "G5": 0.527836,
+        "O5": 0.135204
+      },
+      "coverageCsv": "0.6912,0.1487,0.5278,0.1352",
+      "meanSourceCoverage": 0.375734,
+      "minSourceCoverage": 0.135204,
+      "maxSourceCoverage": 0.691176,
+      "intersectionCsv": "0.0016,0.0075,0.0646,0.0000",
+      "allFourAt10": true,
+      "allFourAt25": false,
+      "allFourAt50": false,
+      "dominantSignalByTarget": {
+        "O4": "orange",
+        "B4": "dark",
+        "G5": "grey",
+        "O5": "grey"
+      },
+      "weakGroupName": "valid_75_to_76_forced_best:target_outer_edge:right"
+    },
+    {
+      "scenarioId": "benchmark_79_to_76_best",
+      "scenarioClass": "nonphysical_benchmark",
+      "kind": "target_outer_edge",
+      "side": "top",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "coverageByTarget": {
+        "O4": 0.355896,
+        "B4": 0.215674,
+        "G5": 0.249576,
+        "O5": 0.206318
+      },
+      "coverageCsv": "0.3559,0.2157,0.2496,0.2063",
+      "meanSourceCoverage": 0.256866,
+      "minSourceCoverage": 0.206318,
+      "maxSourceCoverage": 0.355896,
+      "intersectionCsv": "0.0000,0.0000,0.0003,0.0079",
+      "allFourAt10": true,
+      "allFourAt25": false,
+      "allFourAt50": false,
+      "dominantSignalByTarget": {
+        "O4": "orange",
+        "B4": "grey",
+        "G5": "grey",
+        "O5": "grey"
+      },
+      "weakGroupName": "benchmark_79_to_76_best:target_outer_edge:top"
+    }
+  ],
+  "traceRows": [
+    {
+      "weakGroupName": "valid_75_to_76_forced_best:target_outer_edge:right",
+      "scenarioId": "valid_75_to_76_forced_best",
+      "scenarioClass": "physical_forced_shift",
+      "sourcePage": 75,
+      "dx": -220,
+      "dy": 200,
+      "target": "O4",
+      "phrase": "buying the dip",
+      "kind": "target_outer_edge",
+      "side": "right",
+      "targetRegion": [
+        1801,
+        2167,
+        1829,
+        2235
+      ],
+      "sourceRegion": [
+        495.0,
+        1967.0,
+        523.0,
+        2035.0
+      ],
+      "targetBoundaryCoverage": 0.691176,
+      "sourceFeatureCoverage": 0.691176,
+      "sourceDominantSignal": "orange",
+      "sourcePixelStats": {
+        "areaPx": 1904,
+        "featureCoverage": 0.691176,
+        "orangeCoverage": 0.691176,
+        "darkCoverage": 0.688025,
+        "greyCoverage": 0.0,
+        "dominantSignal": "orange",
+        "dominantOrangeShare": 1.0,
+        "dominantDarkShare": 0.995441,
+        "dominantGreyShare": 0.0
+      },
+      "sourceWordCount": 0,
+      "sourceWordText": "",
+      "sourceWordTokens": [],
+      "sourceWordIds": [],
+      "strictInstructionHits": [],
+      "contextTermHits": []
+    },
+    {
+      "weakGroupName": "valid_75_to_76_forced_best:target_outer_edge:right",
+      "scenarioId": "valid_75_to_76_forced_best",
+      "scenarioClass": "physical_forced_shift",
+      "sourcePage": 75,
+      "dx": -220,
+      "dy": 200,
+      "target": "B4",
+      "phrase": "$1 billion",
+      "kind": "target_outer_edge",
+      "side": "right",
+      "targetRegion": [
+        691,
+        2388,
+        719,
+        2455
+      ],
+      "sourceRegion": [
+        1605.0,
+        2188.0,
+        1633.0,
+        2255.0
+      ],
+      "targetBoundaryCoverage": 0.148721,
+      "sourceFeatureCoverage": 0.148721,
+      "sourceDominantSignal": "dark",
+      "sourcePixelStats": {
+        "areaPx": 1876,
+        "featureCoverage": 0.148721,
+        "orangeCoverage": 0.074627,
+        "darkCoverage": 0.139126,
+        "greyCoverage": 0.074094,
+        "dominantSignal": "dark",
+        "dominantOrangeShare": 0.501792,
+        "dominantDarkShare": 0.935484,
+        "dominantGreyShare": 0.498208
+      },
+      "sourceWordCount": 1,
+      "sourceWordText": "epithet.",
+      "sourceWordTokens": [
+        "epithet"
+      ],
+      "sourceWordIds": [
+        "p75w195"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": []
+    },
+    {
+      "weakGroupName": "valid_75_to_76_forced_best:target_outer_edge:right",
+      "scenarioId": "valid_75_to_76_forced_best",
+      "scenarioClass": "physical_forced_shift",
+      "sourcePage": 75,
+      "dx": -220,
+      "dy": 200,
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "kind": "target_outer_edge",
+      "side": "right",
+      "targetRegion": [
+        1196,
+        2534,
+        1224,
+        2602
+      ],
+      "sourceRegion": [
+        1100.0,
+        2334.0,
+        1128.0,
+        2402.0
+      ],
+      "targetBoundaryCoverage": 0.527836,
+      "sourceFeatureCoverage": 0.527836,
+      "sourceDominantSignal": "grey",
+      "sourcePixelStats": {
+        "areaPx": 1904,
+        "featureCoverage": 0.527836,
+        "orangeCoverage": 0.0,
+        "darkCoverage": 0.509454,
+        "greyCoverage": 0.527836,
+        "dominantSignal": "grey",
+        "dominantOrangeShare": 0.0,
+        "dominantDarkShare": 0.965174,
+        "dominantGreyShare": 1.0
+      },
+      "sourceWordCount": 0,
+      "sourceWordText": "",
+      "sourceWordTokens": [],
+      "sourceWordIds": [],
+      "strictInstructionHits": [],
+      "contextTermHits": []
+    },
+    {
+      "weakGroupName": "valid_75_to_76_forced_best:target_outer_edge:right",
+      "scenarioId": "valid_75_to_76_forced_best",
+      "scenarioClass": "physical_forced_shift",
+      "sourcePage": 75,
+      "dx": -220,
+      "dy": 200,
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "kind": "target_outer_edge",
+      "side": "right",
+      "targetRegion": [
+        1661,
+        2922,
+        1689,
+        2992
+      ],
+      "sourceRegion": [
+        635.0,
+        2722.0,
+        663.0,
+        2792.0
+      ],
+      "targetBoundaryCoverage": 0.135204,
+      "sourceFeatureCoverage": 0.135204,
+      "sourceDominantSignal": "grey",
+      "sourcePixelStats": {
+        "areaPx": 1960,
+        "featureCoverage": 0.135204,
+        "orangeCoverage": 0.0,
+        "darkCoverage": 0.128571,
+        "greyCoverage": 0.135204,
+        "dominantSignal": "grey",
+        "dominantOrangeShare": 0.0,
+        "dominantDarkShare": 0.950943,
+        "dominantGreyShare": 1.0
+      },
+      "sourceWordCount": 0,
+      "sourceWordText": "",
+      "sourceWordTokens": [],
+      "sourceWordIds": [],
+      "strictInstructionHits": [],
+      "contextTermHits": []
+    },
+    {
+      "weakGroupName": "benchmark_79_to_76_best:target_outer_edge:top",
+      "scenarioId": "benchmark_79_to_76_best",
+      "scenarioClass": "nonphysical_benchmark",
+      "sourcePage": 79,
+      "dx": 40,
+      "dy": 80,
+      "target": "O4",
+      "phrase": "buying the dip",
+      "kind": "target_outer_edge",
+      "side": "top",
+      "targetRegion": [
+        1324,
+        2149,
+        1811,
+        2177
+      ],
+      "sourceRegion": [
+        773.0,
+        2069.0,
+        1260.0,
+        2097.0
+      ],
+      "targetBoundaryCoverage": 0.355896,
+      "sourceFeatureCoverage": 0.355896,
+      "sourceDominantSignal": "orange",
+      "sourcePixelStats": {
+        "areaPx": 13636,
+        "featureCoverage": 0.355896,
+        "orangeCoverage": 0.355896,
+        "darkCoverage": 0.339616,
+        "greyCoverage": 0.0,
+        "dominantSignal": "orange",
+        "dominantOrangeShare": 1.0,
+        "dominantDarkShare": 0.954255,
+        "dominantGreyShare": 0.0
+      },
+      "sourceWordCount": 0,
+      "sourceWordText": "",
+      "sourceWordTokens": [],
+      "sourceWordIds": [],
+      "strictInstructionHits": [],
+      "contextTermHits": []
+    },
+    {
+      "weakGroupName": "benchmark_79_to_76_best:target_outer_edge:top",
+      "scenarioId": "benchmark_79_to_76_best",
+      "scenarioClass": "nonphysical_benchmark",
+      "sourcePage": 79,
+      "dx": 40,
+      "dy": 80,
+      "target": "B4",
+      "phrase": "$1 billion",
+      "kind": "target_outer_edge",
+      "side": "top",
+      "targetRegion": [
+        418,
+        2370,
+        701,
+        2398
+      ],
+      "sourceRegion": [
+        1883.0,
+        2290.0,
+        2166.0,
+        2318.0
+      ],
+      "targetBoundaryCoverage": 0.215674,
+      "sourceFeatureCoverage": 0.215674,
+      "sourceDominantSignal": "grey",
+      "sourcePixelStats": {
+        "areaPx": 7924,
+        "featureCoverage": 0.215674,
+        "orangeCoverage": 0.0,
+        "darkCoverage": 0.193841,
+        "greyCoverage": 0.215674,
+        "dominantSignal": "grey",
+        "dominantOrangeShare": 0.0,
+        "dominantDarkShare": 0.898771,
+        "dominantGreyShare": 1.0
+      },
+      "sourceWordCount": 3,
+      "sourceWordText": "you with all",
+      "sourceWordTokens": [
+        "you",
+        "with",
+        "all"
+      ],
+      "sourceWordIds": [
+        "p79w205",
+        "p79w204",
+        "p79w203"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": []
+    },
+    {
+      "weakGroupName": "benchmark_79_to_76_best:target_outer_edge:top",
+      "scenarioId": "benchmark_79_to_76_best",
+      "scenarioClass": "nonphysical_benchmark",
+      "sourcePage": 79,
+      "dx": 40,
+      "dy": 80,
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "kind": "target_outer_edge",
+      "side": "top",
+      "targetRegion": [
+        785,
+        2516,
+        1206,
+        2544
+      ],
+      "sourceRegion": [
+        1378.0,
+        2436.0,
+        1799.0,
+        2464.0
+      ],
+      "targetBoundaryCoverage": 0.249576,
+      "sourceFeatureCoverage": 0.249576,
+      "sourceDominantSignal": "grey",
+      "sourcePixelStats": {
+        "areaPx": 11788,
+        "featureCoverage": 0.249576,
+        "orangeCoverage": 0.0,
+        "darkCoverage": 0.229386,
+        "greyCoverage": 0.249576,
+        "dominantSignal": "grey",
+        "dominantOrangeShare": 0.0,
+        "dominantDarkShare": 0.919103,
+        "dominantGreyShare": 1.0
+      },
+      "sourceWordCount": 4,
+      "sourceWordText": "peace with it replaces",
+      "sourceWordTokens": [
+        "peace",
+        "with",
+        "it",
+        "replaces"
+      ],
+      "sourceWordIds": [
+        "p79w222",
+        "p79w221",
+        "p79w220",
+        "p79w219"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": []
+    },
+    {
+      "weakGroupName": "benchmark_79_to_76_best:target_outer_edge:top",
+      "scenarioId": "benchmark_79_to_76_best",
+      "scenarioClass": "nonphysical_benchmark",
+      "sourcePage": 79,
+      "dx": 40,
+      "dy": 80,
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "kind": "target_outer_edge",
+      "side": "top",
+      "targetRegion": [
+        1030,
+        2904,
+        1671,
+        2932
+      ],
+      "sourceRegion": [
+        913.0,
+        2824.0,
+        1554.0,
+        2852.0
+      ],
+      "targetBoundaryCoverage": 0.206318,
+      "sourceFeatureCoverage": 0.206318,
+      "sourceDominantSignal": "grey",
+      "sourcePixelStats": {
+        "areaPx": 17948,
+        "featureCoverage": 0.206318,
+        "orangeCoverage": 0.0,
+        "darkCoverage": 0.195955,
+        "greyCoverage": 0.206318,
+        "dominantSignal": "grey",
+        "dominantOrangeShare": 0.0,
+        "dominantDarkShare": 0.94977,
+        "dominantGreyShare": 1.0
+      },
+      "sourceWordCount": 1,
+      "sourceWordText": "ore",
+      "sourceWordTokens": [
+        "ore"
+      ],
+      "sourceWordIds": [
+        "p79w225"
+      ],
+      "strictInstructionHits": [],
+      "contextTermHits": []
+    }
+  ],
+  "summary": {
+    "weakGroupCount": 2,
+    "traceRowCount": 8,
+    "sourceWordHitRowCount": 4,
+    "sourceStrictInstructionRowCount": 0,
+    "sourceContextTermRowCount": 0,
+    "sourceStrictInstructionHits": [],
+    "sourceContextTermHits": [],
+    "p75TraceRowCount": 4,
+    "p79TraceRowCount": 4,
+    "p75WordHitRowCount": 1,
+    "p79WordHitRowCount": 3,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "boundaryContactSourceTraceFingerprint": "weakGroups=2|rows=8|wordRows=4|strictRows=0|contextRows=0|strictTerms=-|contextTerms=-|p75Words=1/4|p79Words=3/4|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "decision": {
+    "currentScanBoundaryContactSourceTrace": "weak_contacts_trace_to_source_prose_or_noise_no_selector",
+    "selectorUnlocked": false,
+    "reason": "The weak all-four boundary contacts do not trace to source-side instruction wording. They are explained by ordinary source-page print, blank/noisy regions, and a forced or non-physical transform.",
+    "nextMove": "Stop following the weak boundary contacts. Future work should start from a new source/original-layout clue or from source-review gates, not another threshold or boundary-side variant."
+  },
+  "sheet": "analysis_outputs/source_audit/current_scan_boundary_contact_source_trace/current_scan_boundary_contact_source_trace_sheet.jpg"
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Current-Scan Held-To-Light Simulator</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#111;color:#eee}
+header{padding:16px 22px;background:#1f2633}
+main{display:grid;grid-template-columns:320px 1fr;gap:18px;padding:18px}
+button{display:block;width:100%;margin:4px 0;padding:8px;border:0;background:#2f3a4d;color:#fff;text-align:left;cursor:pointer}
+button:hover{background:#43516a}
+img{max-width:100%;height:auto;border:1px solid #333}
+.meta{font-size:13px;line-height:1.4;color:#ccc}
+</style>
+</head>
+<body>
+<header><h1>Current-Scan Held-To-Light Simulator</h1><div>Back pages are horizontally mirrored over PDF-extracted pages normalized to readable/upright orientation.</div></header>
+<main><section id="buttons"></section><section><h2 id="label"></h2><img id="view"><p id="meta" class="meta"></p></section></main>
+<script>
+const images = [{"label": "same_leaf_75_to_76 / natural_hflip", "src": "same_leaf_75_to_76_natural_hflip.jpg", "targetPage": 76, "dx": 0, "dy": 0, "activeOverTarget": 0.1003187699231202}, {"label": "same_leaf_75_to_76 / best_global_feature", "src": "same_leaf_75_to_76_best_global_feature.jpg", "targetPage": 76, "dx": -220, "dy": 200, "activeOverTarget": 0.32420776298518655}, {"label": "same_leaf_75_to_76 / best_page76_active_boxes", "src": "same_leaf_75_to_76_best_page76_active_boxes.jpg", "targetPage": 76, "dx": -220, "dy": 200, "activeOverTarget": 0.32420776298518655}, {"label": "same_leaf_76_to_75 / natural_hflip", "src": "same_leaf_76_to_75_natural_hflip.jpg", "targetPage": 75, "dx": 0, "dy": 0, "activeOverTarget": 0.0}, {"label": "same_leaf_76_to_75 / best_global_feature", "src": "same_leaf_76_to_75_best_global_feature.jpg", "targetPage": 75, "dx": -220, "dy": -200, "activeOverTarget": 0.0}, {"label": "same_leaf_77_to_78 / natural_hflip", "src": "same_leaf_77_to_78_natural_hflip.jpg", "targetPage": 78, "dx": 0, "dy": 0, "activeOverTarget": 0.0}, {"label": "same_leaf_77_to_78 / best_global_feature", "src": "same_leaf_77_to_78_best_global_feature.jpg", "targetPage": 78, "dx": -180, "dy": 120, "activeOverTarget": 0.0}, {"label": "same_leaf_78_to_77 / natural_hflip", "src": "same_leaf_78_to_77_natural_hflip.jpg", "targetPage": 77, "dx": 0, "dy": 0, "activeOverTarget": 0.0}, {"label": "same_leaf_78_to_77 / best_global_feature", "src": "same_leaf_78_to_77_best_global_feature.jpg", "targetPage": 77, "dx": -180, "dy": -120, "activeOverTarget": 0.0}, {"label": "same_leaf_79_to_80 / natural_hflip", "src": "same_leaf_79_to_80_natural_hflip.jpg", "targetPage": 80, "dx": 0, "dy": 0, "activeOverTarget": 0.0}, {"label": "same_leaf_79_to_80 / best_global_feature", "src": "same_leaf_79_to_80_best_global_feature.jpg", "targetPage": 80, "dx": 220, "dy": -180, "activeOverTarget": 0.0}, {"label": "same_leaf_80_to_79 / natural_hflip", "src": "same_leaf_80_to_79_natural_hflip.jpg", "targetPage": 79, "dx": 0, "dy": 0, "activeOverTarget": 0.0}, {"label": "same_leaf_80_to_79 / best_global_feature", "src": "same_leaf_80_to_79_best_global_feature.jpg", "targetPage": 79, "dx": 60, "dy": 180, "activeOverTarget": 0.0}, {"label": "nonphysical_78_to_76 / natural_hflip", "src": "nonphysical_78_to_76_natural_hflip.jpg", "targetPage": 76, "dx": 0, "dy": 0, "activeOverTarget": 0.004687792987061692}, {"label": "nonphysical_78_to_76 / best_global_feature", "src": "nonphysical_78_to_76_best_global_feature.jpg", "targetPage": 76, "dx": 220, "dy": 180, "activeOverTarget": 0.22257641102568912}, {"label": "nonphysical_78_to_76 / best_page76_active_boxes", "src": "nonphysical_78_to_76_best_page76_active_boxes.jpg", "targetPage": 76, "dx": -220, "dy": 180, "activeOverTarget": 0.2921432589536846}, {"label": "nonphysical_79_to_76 / natural_hflip", "src": "nonphysical_79_to_76_natural_hflip.jpg", "targetPage": 76, "dx": 0, "dy": 0, "activeOverTarget": 0.08494280892555785}, {"label": "nonphysical_79_to_76 / best_global_feature", "src": "nonphysical_79_to_76_best_global_feature.jpg", "targetPage": 76, "dx": 40, "dy": 80, "activeOverTarget": 0.38402400150009375}, {"label": "nonphysical_79_to_76 / best_page76_active_boxes", "src": "nonphysical_79_to_76_best_page76_active_boxes.jpg", "targetPage": 76, "dx": 40, "dy": 80, "activeOverTarget": 0.38402400150009375}, {"label": "facing_spread_78_to_79 / natural_hflip", "src": "facing_spread_78_to_79_natural_hflip.jpg", "targetPage": 79, "dx": 0, "dy": 0, "activeOverTarget": 0.0}, {"label": "facing_spread_78_to_79 / best_global_feature", "src": "facing_spread_78_to_79_best_global_feature.jpg", "targetPage": 79, "dx": 40, "dy": 100, "activeOverTarget": 0.0}];
+const buttons = document.getElementById('buttons');
+const view = document.getElementById('view');
+const label = document.getElementById('label');
+const meta = document.getElementById('meta');
+function show(i){
+  const item = images[i];
+  view.src = item.src;
+  label.textContent = item.label;
+  meta.textContent = `target page ${item.targetPage}; dx=${item.dx}, dy=${item.dy}; active page-76 coverage=${item.activeOverTarget.toFixed(4)}`;
+}
+images.forEach((item,i)=>{const b=document.createElement('button');b.textContent=item.label;b.onclick=()=>show(i);buttons.appendChild(b);});
+show(0);
+</script>
+</body>
+</html>

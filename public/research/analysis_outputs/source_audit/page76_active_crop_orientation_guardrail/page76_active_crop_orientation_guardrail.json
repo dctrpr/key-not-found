@@ -1,0 +1,132 @@
+{
+  "createdAt": "2026-05-20T23:53:24",
+  "scope": "page-76 active crop orientation guardrail; no extraction, no key derivation, no hashing, no OCR, no address checks",
+  "inputs": {
+    "crop_completion": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "packet_sync": "analysis_outputs/source_audit/source_packet_crop_authority_sync/source_packet_crop_authority_sync.json",
+    "source_reopen": "analysis_outputs/source_audit/source_reopen_requirements/source_reopen_requirements.json"
+  },
+  "summary": {
+    "uprightImage": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+    "nativeImage": "analysis_outputs/source_images/magazine_page_76.jpg",
+    "uprightSize": "2544x3264",
+    "nativeSize": "2544x3264",
+    "rot180MeanAbsDiff": 0.2859,
+    "rot180MaxDiff": 31,
+    "rot180NonzeroPct": 12.1415,
+    "directMeanAbsDiff": 27.6479,
+    "directMaxDiff": 255,
+    "directNonzeroPct": 26.766,
+    "allUprightBoxesInBounds": true,
+    "allNativeTransformBoxesInBounds": true,
+    "orientationDecision": "use_upright_boxes_after_rot180_for_native_source_images",
+    "selectorUnlocked": false
+  },
+  "targetRows": [
+    {
+      "id": "buying_dip",
+      "label": "O4 buying the dip",
+      "color": "#ff9b2e",
+      "uprightBox": [
+        1334,
+        2177,
+        1801,
+        2225
+      ],
+      "nativeRot180Box": [
+        743,
+        1039,
+        1210,
+        1087
+      ],
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "visualState": "Y",
+      "withinUprightBounds": true,
+      "withinNativeBounds": true
+    },
+    {
+      "id": "one_billion",
+      "label": "B4 $1 billion",
+      "color": "#8f98a5",
+      "uprightBox": [
+        428,
+        2398,
+        691,
+        2445
+      ],
+      "nativeRot180Box": [
+        1853,
+        819,
+        2116,
+        866
+      ],
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "visualState": "K",
+      "withinUprightBounds": true,
+      "withinNativeBounds": true
+    },
+    {
+      "id": "volcano_bonds",
+      "label": "G5 Volcano Bonds",
+      "color": "#8f98a5",
+      "uprightBox": [
+        795,
+        2544,
+        1196,
+        2592
+      ],
+      "nativeRot180Box": [
+        1348,
+        672,
+        1749,
+        720
+      ],
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "visualState": "K",
+      "withinUprightBounds": true,
+      "withinNativeBounds": true
+    },
+    {
+      "id": "shitcoiner_heart",
+      "label": "O5 shitcoiner at heart",
+      "color": "#ff9b2e",
+      "uprightBox": [
+        1040,
+        2932,
+        1661,
+        2982
+      ],
+      "nativeRot180Box": [
+        883,
+        282,
+        1504,
+        332
+      ],
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "visualState": "Y",
+      "withinUprightBounds": true,
+      "withinNativeBounds": true
+    }
+  ],
+  "overlays": {
+    "upright": "analysis_outputs/source_audit/page76_active_crop_orientation_guardrail/page76_active_targets_upright_overlay.jpg",
+    "nativeSourceImages": "analysis_outputs/source_audit/page76_active_crop_orientation_guardrail/page76_active_targets_native_overlay.jpg",
+    "nativeRot180": "analysis_outputs/source_audit/page76_active_crop_orientation_guardrail/page76_active_targets_rot180_overlay.jpg"
+  },
+  "handoffContext": {
+    "packetCropSyncDecision": "source_packet_crop_authority_synced_with_supplemental_appendix_no_selector",
+    "sourceReopenDecision": {
+      "doNotResumeExtractionFrom": "current scan or duplicate/resaved derivatives alone",
+      "resumeOnlyAfter": "a source/clue passes R1-R5 and names or materially supplies the extraction unit/order",
+      "nextBestMove": "obtain or inspect physical/original-layout/source provenance, then score it against this checklist before any selector/key test"
+    },
+    "r4StillRequired": true
+  },
+  "sheet": "analysis_outputs/source_audit/page76_active_crop_orientation_guardrail/page76_active_crop_orientation_guardrail_sheet.jpg",
+  "decision": "page76_active_crop_orientation_guardrail_pass_no_selector",
+  "nextMove": "For any future source comparison, first normalize orientation to the readable/upright frame or transform O4/B4/G5/O5 boxes with the recorded 180-degree formula. R3 unit/order evidence is still required before extraction."
+}

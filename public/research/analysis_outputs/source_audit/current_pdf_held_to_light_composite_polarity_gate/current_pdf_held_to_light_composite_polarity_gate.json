@@ -1,0 +1,4400 @@
+{
+  "createdAt": "2026-05-24T07:23:07",
+  "scope": "Exact PDF-native held-to-light simulator using embedded page 75 and page 76 images, fixed physical orientation/polarity variants, active boxes, and C9/OVERDOSE slots.",
+  "inputs": {
+    "pdfs": [
+      "magazine.pdf",
+      "keyser bitcoin .pdf",
+      "analysis_outputs/external_clues/google_drive_article_download.pdf"
+    ],
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "decision": "current_pdf_held_to_light_composite_polarity_no_selector",
+  "summary": {
+    "decision": "current_pdf_held_to_light_composite_polarity_no_selector",
+    "pdfCount": 3,
+    "transformCount": 4,
+    "variantCount": 12,
+    "activeRowCount": 48,
+    "overdoseSlotRowCount": 96,
+    "bestPdf": "keyser bitcoin .pdf",
+    "bestTransform": "back_mirror_rotate180",
+    "bestActiveAtLeast10Count": 3,
+    "bestActiveAboveControlP95Count": 0,
+    "bestActiveCleanThrough10Count": 3,
+    "allFourAtLeast10VariantCount": 0,
+    "allFourAboveControlP95VariantCount": 0,
+    "allFourCleanThrough10VariantCount": 0,
+    "bestMeanActiveSourceOnlyCoverage": 0.143054807,
+    "magazinePhysicalActiveAtLeast10Count": 0,
+    "magazinePhysicalAboveControlP95Count": 0,
+    "magazinePhysicalMeanActiveSourceOnlyCoverage": 0.003298321,
+    "maxActiveSourceOnlyCoverage": 0.579953046,
+    "maxControlSourceOnlyCoverage": 0.999768813,
+    "maxOverdoseSlotSourceOnlyCoverage": 0.634145829,
+    "overdoseSlotAtLeast25Count": 8,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0,
+    "fingerprint": "pdfs=3|transforms=4|variants=12|activeRows=48|slots=96|best10=3|bestP95=0|all10=0|allP95=0|magPhys10=0|magPhysMean=0.0033|activeMax=0.5800|controlMax=0.9998|slotMax=0.6341|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "fingerprint": "pdfs=3|transforms=4|variants=12|activeRows=48|slots=96|best10=3|bestP95=0|all10=0|allP95=0|magPhys10=0|magPhysMean=0.0033|activeMax=0.5800|controlMax=0.9998|slotMax=0.6341|sourceR3=0|triggers=0/9|selectors=0",
+  "pairRows": [
+    {
+      "pdf": "magazine.pdf",
+      "page75": {
+        "pdf": "magazine.pdf",
+        "pdfPage": 3,
+        "articlePage": 75,
+        "rotation": 180,
+        "pageRect": [
+          0.0,
+          0.0,
+          610.56,
+          783.36
+        ],
+        "cropBox": [
+          0.0,
+          0.0,
+          610.56,
+          783.36
+        ],
+        "imageXref": 30,
+        "imageSize": [
+          2544,
+          3264
+        ],
+        "rawImageSize": [
+          2544,
+          3264
+        ],
+        "imageRect": [
+          0.0,
+          0.0,
+          610.56,
+          783.36
+        ],
+        "imageCoverage": 1.0,
+        "leftMarginPt": 0.0,
+        "rightMarginPt": 0.0,
+        "topMarginPt": 0.0,
+        "bottomMarginPt": 0.0,
+        "orientationMode": "rotate180",
+        "orientationChosenDiff": 0.2991,
+        "orientationOtherDiff": 87.2052
+      },
+      "page76": {
+        "pdf": "magazine.pdf",
+        "pdfPage": 4,
+        "articlePage": 76,
+        "rotation": 180,
+        "pageRect": [
+          0.0,
+          0.0,
+          610.56,
+          783.36
+        ],
+        "cropBox": [
+          0.0,
+          0.0,
+          610.56,
+          783.36
+        ],
+        "imageXref": 37,
+        "imageSize": [
+          2544,
+          3264
+        ],
+        "rawImageSize": [
+          2544,
+          3264
+        ],
+        "imageRect": [
+          0.0,
+          0.0,
+          610.56,
+          783.36
+        ],
+        "imageCoverage": 1.0,
+        "leftMarginPt": 0.0,
+        "rightMarginPt": 0.0,
+        "topMarginPt": 0.0,
+        "bottomMarginPt": 0.0,
+        "orientationMode": "rotate180",
+        "orientationChosenDiff": 0.279,
+        "orientationOtherDiff": 75.6642
+      },
+      "sameImageSize": true,
+      "sameImageRect": true,
+      "imageRectDeltaPt": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "page75": {
+        "pdf": "keyser bitcoin .pdf",
+        "pdfPage": 3,
+        "articlePage": 75,
+        "rotation": 0,
+        "pageRect": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "cropBox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "imageXref": 57,
+        "imageSize": [
+          2040,
+          2805
+        ],
+        "rawImageSize": [
+          2040,
+          2805
+        ],
+        "imageRect": [
+          18.0,
+          0.0,
+          594.0,
+          792.0
+        ],
+        "imageCoverage": 0.941176,
+        "leftMarginPt": 18.0,
+        "rightMarginPt": 18.0,
+        "topMarginPt": 0.0,
+        "bottomMarginPt": 0.0,
+        "orientationMode": "identity",
+        "orientationChosenDiff": 138.8351,
+        "orientationOtherDiff": 144.0346
+      },
+      "page76": {
+        "pdf": "keyser bitcoin .pdf",
+        "pdfPage": 4,
+        "articlePage": 76,
+        "rotation": 0,
+        "pageRect": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "cropBox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "imageXref": 59,
+        "imageSize": [
+          2040,
+          2805
+        ],
+        "rawImageSize": [
+          2040,
+          2805
+        ],
+        "imageRect": [
+          18.0,
+          0.0,
+          594.0,
+          792.0
+        ],
+        "imageCoverage": 0.941176,
+        "leftMarginPt": 18.0,
+        "rightMarginPt": 18.0,
+        "topMarginPt": 0.0,
+        "bottomMarginPt": 0.0,
+        "orientationMode": "identity",
+        "orientationChosenDiff": 164.4675,
+        "orientationOtherDiff": 166.8108
+      },
+      "sameImageSize": true,
+      "sameImageRect": true,
+      "imageRectDeltaPt": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "page75": {
+        "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "pdfPage": 3,
+        "articlePage": 75,
+        "rotation": 0,
+        "pageRect": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "cropBox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "imageXref": 57,
+        "imageSize": [
+          2040,
+          2805
+        ],
+        "rawImageSize": [
+          2040,
+          2805
+        ],
+        "imageRect": [
+          18.0,
+          0.0,
+          594.0,
+          792.0
+        ],
+        "imageCoverage": 0.941176,
+        "leftMarginPt": 18.0,
+        "rightMarginPt": 18.0,
+        "topMarginPt": 0.0,
+        "bottomMarginPt": 0.0,
+        "orientationMode": "identity",
+        "orientationChosenDiff": 138.8351,
+        "orientationOtherDiff": 144.0346
+      },
+      "page76": {
+        "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "pdfPage": 4,
+        "articlePage": 76,
+        "rotation": 0,
+        "pageRect": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "cropBox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "imageXref": 59,
+        "imageSize": [
+          2040,
+          2805
+        ],
+        "rawImageSize": [
+          2040,
+          2805
+        ],
+        "imageRect": [
+          18.0,
+          0.0,
+          594.0,
+          792.0
+        ],
+        "imageCoverage": 0.941176,
+        "leftMarginPt": 18.0,
+        "rightMarginPt": 18.0,
+        "topMarginPt": 0.0,
+        "bottomMarginPt": 0.0,
+        "orientationMode": "identity",
+        "orientationChosenDiff": 164.4675,
+        "orientationOtherDiff": 166.8108
+      },
+      "sameImageSize": true,
+      "sameImageRect": true,
+      "imageRectDeltaPt": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "variantRows": [
+    {
+      "pdf": "magazine.pdf",
+      "transform": "physical_back_mirror",
+      "transformDescription": "Back side seen through page 76, page 75 mirrored left-right.",
+      "imageSize": [
+        2544,
+        3264
+      ],
+      "activeRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "nativeBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceCoverage": 0.12232334,
+          "targetCoverage": 0.977159172,
+          "sourceOnlyCoverage": 0.004238044,
+          "overlapCoverage": 0.118085296,
+          "unionCoverage": 0.981397216,
+          "cleanThroughScore": -0.113847252,
+          "controlCount": 156,
+          "controlP95SourceOnlyCoverage": 0.503758476,
+          "controlMaxSourceOnlyCoverage": 0.868352962,
+          "controlPercentile": 0.269230769,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "nativeBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.729633525,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "unionCoverage": 0.729633525,
+          "cleanThroughScore": 0.0,
+          "controlCount": 321,
+          "controlP95SourceOnlyCoverage": 0.477145862,
+          "controlMaxSourceOnlyCoverage": 0.856160505,
+          "controlPercentile": 0.345794393,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "nativeBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceCoverage": 0.052576891,
+          "targetCoverage": 0.78584788,
+          "sourceOnlyCoverage": 0.005766833,
+          "overlapCoverage": 0.046810058,
+          "unionCoverage": 0.791614713,
+          "cleanThroughScore": -0.041043225,
+          "controlCount": 181,
+          "controlP95SourceOnlyCoverage": 0.530496675,
+          "controlMaxSourceOnlyCoverage": 0.879467997,
+          "controlPercentile": 0.320441989,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "nativeBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceCoverage": 0.16547504,
+          "targetCoverage": 0.951626409,
+          "sourceOnlyCoverage": 0.003188406,
+          "overlapCoverage": 0.162286634,
+          "unionCoverage": 0.954814815,
+          "cleanThroughScore": -0.159098229,
+          "controlCount": 106,
+          "controlP95SourceOnlyCoverage": 0.435909823,
+          "controlMaxSourceOnlyCoverage": 0.654009662,
+          "controlPercentile": 0.254716981,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        }
+      ],
+      "slotRows": [
+        {
+          "target": "slot0_O",
+          "slotIndex": 0,
+          "slotLetter": "O",
+          "referenceBox": [
+            294.0,
+            2176.81,
+            538.5697177074414,
+            3023.73
+          ],
+          "nativeBox": [
+            294.0,
+            2176.81,
+            538.57,
+            3023.73
+          ],
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.074842782,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "unionCoverage": 0.074842782,
+          "cleanThroughScore": 0.0,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot1_V",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "referenceBox": [
+            538.5697177074414,
+            2176.81,
+            783.0000000000016,
+            3023.73
+          ],
+          "nativeBox": [
+            538.57,
+            2176.81,
+            783.0,
+            3023.73
+          ],
+          "sourceCoverage": 0.00318385,
+          "targetCoverage": 0.141424894,
+          "sourceOnlyCoverage": 0.003116109,
+          "overlapCoverage": 6.7741e-05,
+          "unionCoverage": 0.144541003,
+          "cleanThroughScore": 0.003048367,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot2_E",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "referenceBox": [
+            783.0000000000016,
+            2176.81,
+            1027.569717707443,
+            3023.73
+          ],
+          "nativeBox": [
+            783.0,
+            2176.81,
+            1027.57,
+            3023.73
+          ],
+          "sourceCoverage": 0.083208443,
+          "targetCoverage": 0.152095029,
+          "sourceOnlyCoverage": 0.074871696,
+          "overlapCoverage": 0.008336747,
+          "unionCoverage": 0.226966725,
+          "cleanThroughScore": 0.066534949,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot3_R",
+          "slotIndex": 3,
+          "slotLetter": "R",
+          "referenceBox": [
+            1027.569717707443,
+            2176.81,
+            1271.9999999999968,
+            3023.73
+          ],
+          "nativeBox": [
+            1027.57,
+            2176.81,
+            1272.0,
+            3023.73
+          ],
+          "sourceCoverage": 0.139068458,
+          "targetCoverage": 0.19116167,
+          "sourceOnlyCoverage": 0.113820233,
+          "overlapCoverage": 0.025248224,
+          "unionCoverage": 0.304981903,
+          "cleanThroughScore": 0.088572009,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot4_D",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "referenceBox": [
+            1271.9999999999968,
+            2176.81,
+            1516.5697177074383,
+            3023.73
+          ],
+          "nativeBox": [
+            1272.0,
+            2176.81,
+            1516.57,
+            3023.73
+          ],
+          "sourceCoverage": 0.133503602,
+          "targetCoverage": 0.194414862,
+          "sourceOnlyCoverage": 0.107322362,
+          "overlapCoverage": 0.02618124,
+          "unionCoverage": 0.301737224,
+          "cleanThroughScore": 0.081141122,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot5_O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "referenceBox": [
+            1516.5697177074383,
+            2176.81,
+            1760.9999999999984,
+            3023.73
+          ],
+          "nativeBox": [
+            1516.57,
+            2176.81,
+            1761.0,
+            3023.73
+          ],
+          "sourceCoverage": 0.182011729,
+          "targetCoverage": 0.125766931,
+          "sourceOnlyCoverage": 0.165923123,
+          "overlapCoverage": 0.016088606,
+          "unionCoverage": 0.291690054,
+          "cleanThroughScore": 0.149834517,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot6_S",
+          "slotIndex": 6,
+          "slotLetter": "S",
+          "referenceBox": [
+            1760.9999999999984,
+            2176.81,
+            2005.5697177074398,
+            3023.73
+          ],
+          "nativeBox": [
+            1761.0,
+            2176.81,
+            2005.57,
+            3023.73
+          ],
+          "sourceCoverage": 0.250777052,
+          "targetCoverage": 0.013497819,
+          "sourceOnlyCoverage": 0.248729008,
+          "overlapCoverage": 0.002048045,
+          "unionCoverage": 0.262226827,
+          "cleanThroughScore": 0.246680963,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot7_E",
+          "slotIndex": 7,
+          "slotLetter": "E",
+          "referenceBox": [
+            2005.5697177074398,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "nativeBox": [
+            2005.57,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "sourceCoverage": 0.078473687,
+          "targetCoverage": 0.016117638,
+          "sourceOnlyCoverage": 0.078473687,
+          "overlapCoverage": 0.0,
+          "unionCoverage": 0.094591325,
+          "cleanThroughScore": 0.078473687,
+          "isAtLeast25": false
+        }
+      ],
+      "activeAboveControlP95Count": 0,
+      "activeAtLeast10Count": 0,
+      "activeAtLeast25Count": 0,
+      "activeCleanThrough10Count": 0,
+      "allFourAboveControlP95": false,
+      "allFourAtLeast10": false,
+      "allFourCleanThrough10": false,
+      "maxActiveSourceOnlyCoverage": 0.005766833,
+      "meanActiveSourceOnlyCoverage": 0.003298321,
+      "minActiveSourceOnlyCoverage": 0.0,
+      "maxActiveOverlapCoverage": 0.162286634,
+      "maxControlSourceOnlyCoverage": 0.879467997,
+      "maxOverdoseSlotSourceOnlyCoverage": 0.248729008,
+      "overdoseSlotAtLeast25Count": 0
+    },
+    {
+      "pdf": "magazine.pdf",
+      "transform": "same_side_no_mirror",
+      "transformDescription": "Unmirrored page 75 over page 76, included as a non-backside control.",
+      "imageSize": [
+        2544,
+        3264
+      ],
+      "activeRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "nativeBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceCoverage": 0.345645967,
+          "targetCoverage": 0.977159172,
+          "sourceOnlyCoverage": 0.003435046,
+          "overlapCoverage": 0.342210921,
+          "unionCoverage": 0.980594218,
+          "cleanThroughScore": -0.338775874,
+          "controlCount": 156,
+          "controlP95SourceOnlyCoverage": 0.227649893,
+          "controlMaxSourceOnlyCoverage": 0.648331549,
+          "controlPercentile": 0.288461538,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "nativeBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceCoverage": 0.569533209,
+          "targetCoverage": 0.729633525,
+          "sourceOnlyCoverage": 0.111803252,
+          "overlapCoverage": 0.457729957,
+          "unionCoverage": 0.841436777,
+          "cleanThroughScore": -0.345926705,
+          "controlCount": 321,
+          "controlP95SourceOnlyCoverage": 0.22037052,
+          "controlMaxSourceOnlyCoverage": 0.588706415,
+          "controlPercentile": 0.728971963,
+          "isAboveControlP95": false,
+          "isAtLeast10": true,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "nativeBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceCoverage": 0.140274314,
+          "targetCoverage": 0.78584788,
+          "sourceOnlyCoverage": 0.021508728,
+          "overlapCoverage": 0.118765586,
+          "unionCoverage": 0.807356608,
+          "cleanThroughScore": -0.097256858,
+          "controlCount": 181,
+          "controlP95SourceOnlyCoverage": 0.230673317,
+          "controlMaxSourceOnlyCoverage": 0.653678304,
+          "controlPercentile": 0.35359116,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "nativeBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceCoverage": 0.154911433,
+          "targetCoverage": 0.951626409,
+          "sourceOnlyCoverage": 0.003285024,
+          "overlapCoverage": 0.151626409,
+          "unionCoverage": 0.954911433,
+          "cleanThroughScore": -0.148341385,
+          "controlCount": 106,
+          "controlP95SourceOnlyCoverage": 0.237584541,
+          "controlMaxSourceOnlyCoverage": 0.600933977,
+          "controlPercentile": 0.235849057,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        }
+      ],
+      "slotRows": [
+        {
+          "target": "slot0_O",
+          "slotIndex": 0,
+          "slotLetter": "O",
+          "referenceBox": [
+            294.0,
+            2176.81,
+            538.5697177074414,
+            3023.73
+          ],
+          "nativeBox": [
+            294.0,
+            2176.81,
+            538.57,
+            3023.73
+          ],
+          "sourceCoverage": 0.078784666,
+          "targetCoverage": 0.074842782,
+          "sourceOnlyCoverage": 0.056314001,
+          "overlapCoverage": 0.022470665,
+          "unionCoverage": 0.131156784,
+          "cleanThroughScore": 0.033843337,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot1_V",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "referenceBox": [
+            538.5697177074414,
+            2176.81,
+            783.0000000000016,
+            3023.73
+          ],
+          "nativeBox": [
+            538.57,
+            2176.81,
+            783.0,
+            3023.73
+          ],
+          "sourceCoverage": 0.25117096,
+          "targetCoverage": 0.141424894,
+          "sourceOnlyCoverage": 0.197892272,
+          "overlapCoverage": 0.053278689,
+          "unionCoverage": 0.339317166,
+          "cleanThroughScore": 0.144613583,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot2_E",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "referenceBox": [
+            783.0000000000016,
+            2176.81,
+            1027.569717707443,
+            3023.73
+          ],
+          "nativeBox": [
+            783.0,
+            2176.81,
+            1027.57,
+            3023.73
+          ],
+          "sourceCoverage": 0.181731441,
+          "targetCoverage": 0.152095029,
+          "sourceOnlyCoverage": 0.152345614,
+          "overlapCoverage": 0.029385828,
+          "unionCoverage": 0.304440643,
+          "cleanThroughScore": 0.122959786,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot3_R",
+          "slotIndex": 3,
+          "slotLetter": "R",
+          "referenceBox": [
+            1027.569717707443,
+            2176.81,
+            1271.9999999999968,
+            3023.73
+          ],
+          "nativeBox": [
+            1027.57,
+            2176.81,
+            1272.0,
+            3023.73
+          ],
+          "sourceCoverage": 0.133586235,
+          "targetCoverage": 0.19116167,
+          "sourceOnlyCoverage": 0.104157393,
+          "overlapCoverage": 0.029428842,
+          "unionCoverage": 0.295319062,
+          "cleanThroughScore": 0.07472855,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot4_D",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "referenceBox": [
+            1271.9999999999968,
+            2176.81,
+            1516.5697177074383,
+            3023.73
+          ],
+          "nativeBox": [
+            1272.0,
+            2176.81,
+            1516.57,
+            3023.73
+          ],
+          "sourceCoverage": 0.139079103,
+          "targetCoverage": 0.194414862,
+          "sourceOnlyCoverage": 0.101279426,
+          "overlapCoverage": 0.037799677,
+          "unionCoverage": 0.295694287,
+          "cleanThroughScore": 0.063479748,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot5_O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "referenceBox": [
+            1516.5697177074383,
+            2176.81,
+            1760.9999999999984,
+            3023.73
+          ],
+          "nativeBox": [
+            1516.57,
+            2176.81,
+            1761.0,
+            3023.73
+          ],
+          "sourceCoverage": 0.08296882,
+          "targetCoverage": 0.125766931,
+          "sourceOnlyCoverage": 0.063981845,
+          "overlapCoverage": 0.018986974,
+          "unionCoverage": 0.189748776,
+          "cleanThroughScore": 0.044994871,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot6_S",
+          "slotIndex": 6,
+          "slotLetter": "S",
+          "referenceBox": [
+            1760.9999999999984,
+            2176.81,
+            2005.5697177074398,
+            3023.73
+          ],
+          "nativeBox": [
+            1761.0,
+            2176.81,
+            2005.57,
+            3023.73
+          ],
+          "sourceCoverage": 0.003170855,
+          "targetCoverage": 0.013497819,
+          "sourceOnlyCoverage": 0.002433559,
+          "overlapCoverage": 0.000737296,
+          "unionCoverage": 0.015931378,
+          "cleanThroughScore": 0.001696263,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot7_E",
+          "slotIndex": 7,
+          "slotLetter": "E",
+          "referenceBox": [
+            2005.5697177074398,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "nativeBox": [
+            2005.57,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.016117638,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "unionCoverage": 0.016117638,
+          "cleanThroughScore": 0.0,
+          "isAtLeast25": false
+        }
+      ],
+      "activeAboveControlP95Count": 0,
+      "activeAtLeast10Count": 1,
+      "activeAtLeast25Count": 0,
+      "activeCleanThrough10Count": 0,
+      "allFourAboveControlP95": false,
+      "allFourAtLeast10": false,
+      "allFourCleanThrough10": false,
+      "maxActiveSourceOnlyCoverage": 0.111803252,
+      "meanActiveSourceOnlyCoverage": 0.035008012,
+      "minActiveSourceOnlyCoverage": 0.003285024,
+      "maxActiveOverlapCoverage": 0.457729957,
+      "maxControlSourceOnlyCoverage": 0.653678304,
+      "maxOverdoseSlotSourceOnlyCoverage": 0.197892272,
+      "overdoseSlotAtLeast25Count": 0
+    },
+    {
+      "pdf": "magazine.pdf",
+      "transform": "back_mirror_rotate180",
+      "transformDescription": "Mirrored back side with 180-degree turn, testing page-turn ambiguity.",
+      "imageSize": [
+        2544,
+        3264
+      ],
+      "activeRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "nativeBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceCoverage": 0.152748037,
+          "targetCoverage": 0.977159172,
+          "sourceOnlyCoverage": 0.007940757,
+          "overlapCoverage": 0.144807281,
+          "unionCoverage": 0.985099929,
+          "cleanThroughScore": -0.136866524,
+          "controlCount": 156,
+          "controlP95SourceOnlyCoverage": 0.183139276,
+          "controlMaxSourceOnlyCoverage": 0.362821199,
+          "controlPercentile": 0.33974359,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "nativeBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceCoverage": 0.192460157,
+          "targetCoverage": 0.729633525,
+          "sourceOnlyCoverage": 0.064315185,
+          "overlapCoverage": 0.128144972,
+          "unionCoverage": 0.79394871,
+          "cleanThroughScore": -0.063829787,
+          "controlCount": 321,
+          "controlP95SourceOnlyCoverage": 0.241970714,
+          "controlMaxSourceOnlyCoverage": 0.507159615,
+          "controlPercentile": 0.632398754,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "nativeBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.78584788,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "unionCoverage": 0.78584788,
+          "cleanThroughScore": 0.0,
+          "controlCount": 181,
+          "controlP95SourceOnlyCoverage": 0.195864505,
+          "controlMaxSourceOnlyCoverage": 0.381650042,
+          "controlPercentile": 0.325966851,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "nativeBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceCoverage": 0.023091787,
+          "targetCoverage": 0.951626409,
+          "sourceOnlyCoverage": 0.007407407,
+          "overlapCoverage": 0.01568438,
+          "unionCoverage": 0.959033816,
+          "cleanThroughScore": -0.008276973,
+          "controlCount": 106,
+          "controlP95SourceOnlyCoverage": 0.240064412,
+          "controlMaxSourceOnlyCoverage": 0.43394525,
+          "controlPercentile": 0.396226415,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        }
+      ],
+      "slotRows": [
+        {
+          "target": "slot0_O",
+          "slotIndex": 0,
+          "slotLetter": "O",
+          "referenceBox": [
+            294.0,
+            2176.81,
+            538.5697177074414,
+            3023.73
+          ],
+          "nativeBox": [
+            294.0,
+            2176.81,
+            538.57,
+            3023.73
+          ],
+          "sourceCoverage": 0.122236947,
+          "targetCoverage": 0.074842782,
+          "sourceOnlyCoverage": 0.10530805,
+          "overlapCoverage": 0.016928897,
+          "unionCoverage": 0.180150832,
+          "cleanThroughScore": 0.088379153,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot1_V",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "referenceBox": [
+            538.5697177074414,
+            2176.81,
+            783.0000000000016,
+            3023.73
+          ],
+          "nativeBox": [
+            538.57,
+            2176.81,
+            783.0,
+            3023.73
+          ],
+          "sourceCoverage": 0.142455533,
+          "targetCoverage": 0.141424894,
+          "sourceOnlyCoverage": 0.112242824,
+          "overlapCoverage": 0.030212708,
+          "unionCoverage": 0.253667718,
+          "cleanThroughScore": 0.082030116,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot2_E",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "referenceBox": [
+            783.0000000000016,
+            2176.81,
+            1027.569717707443,
+            3023.73
+          ],
+          "nativeBox": [
+            783.0,
+            2176.81,
+            1027.57,
+            3023.73
+          ],
+          "sourceCoverage": 0.119596174,
+          "targetCoverage": 0.152095029,
+          "sourceOnlyCoverage": 0.101317977,
+          "overlapCoverage": 0.018278197,
+          "unionCoverage": 0.253413006,
+          "cleanThroughScore": 0.08303978,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot3_R",
+          "slotIndex": 3,
+          "slotLetter": "R",
+          "referenceBox": [
+            1027.569717707443,
+            2176.81,
+            1271.9999999999968,
+            3023.73
+          ],
+          "nativeBox": [
+            1027.57,
+            2176.81,
+            1272.0,
+            3023.73
+          ],
+          "sourceCoverage": 0.105178354,
+          "targetCoverage": 0.19116167,
+          "sourceOnlyCoverage": 0.089113941,
+          "overlapCoverage": 0.016064412,
+          "unionCoverage": 0.280275611,
+          "cleanThroughScore": 0.073049529,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot4_D",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "referenceBox": [
+            1271.9999999999968,
+            2176.81,
+            1516.5697177074383,
+            3023.73
+          ],
+          "nativeBox": [
+            1272.0,
+            2176.81,
+            1516.57,
+            3023.73
+          ],
+          "sourceCoverage": 0.077459461,
+          "targetCoverage": 0.194414862,
+          "sourceOnlyCoverage": 0.058752379,
+          "overlapCoverage": 0.018707081,
+          "unionCoverage": 0.253167241,
+          "cleanThroughScore": 0.040045298,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot5_O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "referenceBox": [
+            1516.5697177074383,
+            2176.81,
+            1760.9999999999984,
+            3023.73
+          ],
+          "nativeBox": [
+            1516.57,
+            2176.81,
+            1761.0,
+            3023.73
+          ],
+          "sourceCoverage": 0.092099406,
+          "targetCoverage": 0.125766931,
+          "sourceOnlyCoverage": 0.075522093,
+          "overlapCoverage": 0.016577312,
+          "unionCoverage": 0.201289024,
+          "cleanThroughScore": 0.058944781,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot6_S",
+          "slotIndex": 6,
+          "slotLetter": "S",
+          "referenceBox": [
+            1760.9999999999984,
+            2176.81,
+            2005.5697177074398,
+            3023.73
+          ],
+          "nativeBox": [
+            1761.0,
+            2176.81,
+            2005.57,
+            3023.73
+          ],
+          "sourceCoverage": 0.076466761,
+          "targetCoverage": 0.013497819,
+          "sourceOnlyCoverage": 0.0753054,
+          "overlapCoverage": 0.001161362,
+          "unionCoverage": 0.088803219,
+          "cleanThroughScore": 0.074144038,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot7_E",
+          "slotIndex": 7,
+          "slotLetter": "E",
+          "referenceBox": [
+            2005.5697177074398,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "nativeBox": [
+            2005.57,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "sourceCoverage": 0.016049896,
+          "targetCoverage": 0.016117638,
+          "sourceOnlyCoverage": 0.016049896,
+          "overlapCoverage": 0.0,
+          "unionCoverage": 0.032167534,
+          "cleanThroughScore": 0.016049896,
+          "isAtLeast25": false
+        }
+      ],
+      "activeAboveControlP95Count": 0,
+      "activeAtLeast10Count": 0,
+      "activeAtLeast25Count": 0,
+      "activeCleanThrough10Count": 0,
+      "allFourAboveControlP95": false,
+      "allFourAtLeast10": false,
+      "allFourCleanThrough10": false,
+      "maxActiveSourceOnlyCoverage": 0.064315185,
+      "meanActiveSourceOnlyCoverage": 0.019915837,
+      "minActiveSourceOnlyCoverage": 0.0,
+      "maxActiveOverlapCoverage": 0.144807281,
+      "maxControlSourceOnlyCoverage": 0.507159615,
+      "maxOverdoseSlotSourceOnlyCoverage": 0.112242824,
+      "overdoseSlotAtLeast25Count": 0
+    },
+    {
+      "pdf": "magazine.pdf",
+      "transform": "front_rotate180",
+      "transformDescription": "Unmirrored 180-degree turn, included as an orientation control.",
+      "imageSize": [
+        2544,
+        3264
+      ],
+      "activeRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "nativeBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceCoverage": 0.254594932,
+          "targetCoverage": 0.977159172,
+          "sourceOnlyCoverage": 0.003524268,
+          "overlapCoverage": 0.251070664,
+          "unionCoverage": 0.98068344,
+          "cleanThroughScore": -0.247546395,
+          "controlCount": 156,
+          "controlP95SourceOnlyCoverage": 0.20763071,
+          "controlMaxSourceOnlyCoverage": 0.353542113,
+          "controlPercentile": 0.33974359,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "nativeBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.729633525,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "unionCoverage": 0.729633525,
+          "cleanThroughScore": 0.0,
+          "controlCount": 321,
+          "controlP95SourceOnlyCoverage": 0.267211391,
+          "controlMaxSourceOnlyCoverage": 0.481999838,
+          "controlPercentile": 0.395638629,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "nativeBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.78584788,
+          "sourceOnlyCoverage": 0.0,
+          "overlapCoverage": 0.0,
+          "unionCoverage": 0.78584788,
+          "cleanThroughScore": 0.0,
+          "controlCount": 181,
+          "controlP95SourceOnlyCoverage": 0.222932253,
+          "controlMaxSourceOnlyCoverage": 0.357855362,
+          "controlPercentile": 0.348066298,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "nativeBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceCoverage": 0.023091787,
+          "targetCoverage": 0.951626409,
+          "sourceOnlyCoverage": 0.006666667,
+          "overlapCoverage": 0.016425121,
+          "unionCoverage": 0.958293076,
+          "cleanThroughScore": -0.009758454,
+          "controlCount": 106,
+          "controlP95SourceOnlyCoverage": 0.276360709,
+          "controlMaxSourceOnlyCoverage": 0.498808374,
+          "controlPercentile": 0.377358491,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        }
+      ],
+      "slotRows": [
+        {
+          "target": "slot0_O",
+          "slotIndex": 0,
+          "slotLetter": "O",
+          "referenceBox": [
+            294.0,
+            2176.81,
+            538.5697177074414,
+            3023.73
+          ],
+          "nativeBox": [
+            294.0,
+            2176.81,
+            538.57,
+            3023.73
+          ],
+          "sourceCoverage": 0.016244609,
+          "targetCoverage": 0.074842782,
+          "sourceOnlyCoverage": 0.013868877,
+          "overlapCoverage": 0.002375732,
+          "unionCoverage": 0.088711659,
+          "cleanThroughScore": 0.011493145,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot1_V",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "referenceBox": [
+            538.5697177074414,
+            2176.81,
+            783.0000000000016,
+            3023.73
+          ],
+          "nativeBox": [
+            538.57,
+            2176.81,
+            783.0,
+            3023.73
+          ],
+          "sourceCoverage": 0.076518861,
+          "targetCoverage": 0.141424894,
+          "sourceOnlyCoverage": 0.063396365,
+          "overlapCoverage": 0.013122496,
+          "unionCoverage": 0.204821259,
+          "cleanThroughScore": 0.050273869,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot2_E",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "referenceBox": [
+            783.0000000000016,
+            2176.81,
+            1027.569717707443,
+            3023.73
+          ],
+          "nativeBox": [
+            783.0,
+            2176.81,
+            1027.57,
+            3023.73
+          ],
+          "sourceCoverage": 0.091906609,
+          "targetCoverage": 0.152095029,
+          "sourceOnlyCoverage": 0.075083729,
+          "overlapCoverage": 0.01682288,
+          "unionCoverage": 0.227178758,
+          "cleanThroughScore": 0.058260849,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot3_R",
+          "slotIndex": 3,
+          "slotLetter": "R",
+          "referenceBox": [
+            1027.569717707443,
+            2176.81,
+            1271.9999999999968,
+            3023.73
+          ],
+          "nativeBox": [
+            1027.57,
+            2176.81,
+            1272.0,
+            3023.73
+          ],
+          "sourceCoverage": 0.077593048,
+          "targetCoverage": 0.19116167,
+          "sourceOnlyCoverage": 0.062641531,
+          "overlapCoverage": 0.014951516,
+          "unionCoverage": 0.253803201,
+          "cleanThroughScore": 0.047690015,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot4_D",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "referenceBox": [
+            1271.9999999999968,
+            2176.81,
+            1516.5697177074383,
+            3023.73
+          ],
+          "nativeBox": [
+            1272.0,
+            2176.81,
+            1516.57,
+            3023.73
+          ],
+          "sourceCoverage": 0.105163482,
+          "targetCoverage": 0.194414862,
+          "sourceOnlyCoverage": 0.084191504,
+          "overlapCoverage": 0.020971978,
+          "unionCoverage": 0.278606366,
+          "cleanThroughScore": 0.063219526,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot5_O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "referenceBox": [
+            1516.5697177074383,
+            2176.81,
+            1760.9999999999984,
+            3023.73
+          ],
+          "nativeBox": [
+            1516.57,
+            2176.81,
+            1761.0,
+            3023.73
+          ],
+          "sourceCoverage": 0.119670196,
+          "targetCoverage": 0.125766931,
+          "sourceOnlyCoverage": 0.100702576,
+          "overlapCoverage": 0.01896762,
+          "unionCoverage": 0.226469507,
+          "cleanThroughScore": 0.081734957,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot6_S",
+          "slotIndex": 6,
+          "slotLetter": "S",
+          "referenceBox": [
+            1760.9999999999984,
+            2176.81,
+            2005.5697177074398,
+            3023.73
+          ],
+          "nativeBox": [
+            1761.0,
+            2176.81,
+            2005.57,
+            3023.73
+          ],
+          "sourceCoverage": 0.142654748,
+          "targetCoverage": 0.013497819,
+          "sourceOnlyCoverage": 0.135874515,
+          "overlapCoverage": 0.006780233,
+          "unionCoverage": 0.149372335,
+          "cleanThroughScore": 0.129094282,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot7_E",
+          "slotIndex": 7,
+          "slotLetter": "E",
+          "referenceBox": [
+            2005.5697177074398,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "nativeBox": [
+            2005.57,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "sourceCoverage": 0.121954052,
+          "targetCoverage": 0.016117638,
+          "sourceOnlyCoverage": 0.11961697,
+          "overlapCoverage": 0.002337082,
+          "unionCoverage": 0.135734608,
+          "cleanThroughScore": 0.117279889,
+          "isAtLeast25": false
+        }
+      ],
+      "activeAboveControlP95Count": 0,
+      "activeAtLeast10Count": 0,
+      "activeAtLeast25Count": 0,
+      "activeCleanThrough10Count": 0,
+      "allFourAboveControlP95": false,
+      "allFourAtLeast10": false,
+      "allFourCleanThrough10": false,
+      "maxActiveSourceOnlyCoverage": 0.006666667,
+      "meanActiveSourceOnlyCoverage": 0.002547734,
+      "minActiveSourceOnlyCoverage": 0.0,
+      "maxActiveOverlapCoverage": 0.251070664,
+      "maxControlSourceOnlyCoverage": 0.498808374,
+      "maxOverdoseSlotSourceOnlyCoverage": 0.135874515,
+      "overdoseSlotAtLeast25Count": 0
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "physical_back_mirror",
+      "transformDescription": "Back side seen through page 76, page 75 mirrored left-right.",
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "activeRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "nativeBox": [
+            1069.72,
+            1870.86,
+            1444.2,
+            1912.11
+          ],
+          "sourceCoverage": 0.598017478,
+          "targetCoverage": 0.087974436,
+          "sourceOnlyCoverage": 0.579953046,
+          "overlapCoverage": 0.018064432,
+          "unionCoverage": 0.667927481,
+          "cleanThroughScore": 0.561888614,
+          "controlCount": 156,
+          "controlP95SourceOnlyCoverage": 0.467748355,
+          "controlMaxSourceOnlyCoverage": 0.533463415,
+          "controlPercentile": 1.0,
+          "isAboveControlP95": true,
+          "isAtLeast10": true,
+          "isAtLeast25": true,
+          "isCleanThrough10": true
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "nativeBox": [
+            343.21,
+            2060.78,
+            554.1,
+            2101.17
+          ],
+          "sourceCoverage": 0.075118483,
+          "targetCoverage": 0.291350711,
+          "sourceOnlyCoverage": 0.055924171,
+          "overlapCoverage": 0.019194313,
+          "unionCoverage": 0.347274882,
+          "cleanThroughScore": 0.036729858,
+          "controlCount": 321,
+          "controlP95SourceOnlyCoverage": 0.719801179,
+          "controlMaxSourceOnlyCoverage": 0.862096867,
+          "controlPercentile": 0.507788162,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "nativeBox": [
+            637.5,
+            2186.25,
+            959.06,
+            2227.5
+          ],
+          "sourceCoverage": 0.072021955,
+          "targetCoverage": 0.23164219,
+          "sourceOnlyCoverage": 0.069425901,
+          "overlapCoverage": 0.002596054,
+          "unionCoverage": 0.301068091,
+          "cleanThroughScore": 0.066829847,
+          "controlCount": 181,
+          "controlP95SourceOnlyCoverage": 0.562263293,
+          "controlMaxSourceOnlyCoverage": 0.623356888,
+          "controlPercentile": 0.397790055,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "nativeBox": [
+            833.96,
+            2519.69,
+            1331.93,
+            2562.66
+          ],
+          "sourceCoverage": 0.000373587,
+          "targetCoverage": 0.000140095,
+          "sourceOnlyCoverage": 0.000373587,
+          "overlapCoverage": 0.0,
+          "unionCoverage": 0.000513683,
+          "cleanThroughScore": 0.000373587,
+          "controlCount": 106,
+          "controlP95SourceOnlyCoverage": 0.359519473,
+          "controlMaxSourceOnlyCoverage": 0.397450266,
+          "controlPercentile": 0.122641509,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        }
+      ],
+      "slotRows": [
+        {
+          "target": "slot0_O",
+          "slotIndex": 0,
+          "slotLetter": "O",
+          "referenceBox": [
+            294.0,
+            2176.81,
+            538.5697177074414,
+            3023.73
+          ],
+          "nativeBox": [
+            235.75,
+            1870.7,
+            431.87,
+            2598.52
+          ],
+          "sourceCoverage": 0.646024893,
+          "targetCoverage": 0.070426385,
+          "sourceOnlyCoverage": 0.634145829,
+          "overlapCoverage": 0.011879065,
+          "unionCoverage": 0.704572214,
+          "cleanThroughScore": 0.622266764,
+          "isAtLeast25": true
+        },
+        {
+          "target": "slot1_V",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "referenceBox": [
+            538.5697177074414,
+            2176.81,
+            783.0000000000016,
+            3023.73
+          ],
+          "nativeBox": [
+            431.87,
+            1870.7,
+            627.88,
+            2598.52
+          ],
+          "sourceCoverage": 0.000476564,
+          "targetCoverage": 0.139086679,
+          "sourceOnlyCoverage": 0.000420498,
+          "overlapCoverage": 5.6066e-05,
+          "unionCoverage": 0.139507176,
+          "cleanThroughScore": 0.000364431,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot2_E",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "referenceBox": [
+            783.0000000000016,
+            2176.81,
+            1027.569717707443,
+            3023.73
+          ],
+          "nativeBox": [
+            627.88,
+            1870.7,
+            823.99,
+            2598.52
+          ],
+          "sourceCoverage": 0.051651155,
+          "targetCoverage": 0.148064308,
+          "sourceOnlyCoverage": 0.049002018,
+          "overlapCoverage": 0.002649137,
+          "unionCoverage": 0.197066327,
+          "cleanThroughScore": 0.046352882,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot3_R",
+          "slotIndex": 3,
+          "slotLetter": "R",
+          "referenceBox": [
+            1027.569717707443,
+            2176.81,
+            1271.9999999999968,
+            3023.73
+          ],
+          "nativeBox": [
+            823.99,
+            1870.7,
+            1020.0,
+            2598.52
+          ],
+          "sourceCoverage": 0.099524837,
+          "targetCoverage": 0.187927506,
+          "sourceOnlyCoverage": 0.085585333,
+          "overlapCoverage": 0.013939504,
+          "unionCoverage": 0.273512839,
+          "cleanThroughScore": 0.071645829,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot4_D",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "referenceBox": [
+            1271.9999999999968,
+            2176.81,
+            1516.5697177074383,
+            3023.73
+          ],
+          "nativeBox": [
+            1020.0,
+            1870.7,
+            1216.12,
+            2598.52
+          ],
+          "sourceCoverage": 0.131034144,
+          "targetCoverage": 0.16152024,
+          "sourceOnlyCoverage": 0.115882205,
+          "overlapCoverage": 0.01515194,
+          "unionCoverage": 0.277402444,
+          "cleanThroughScore": 0.100730265,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot5_O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "referenceBox": [
+            1516.5697177074383,
+            2176.81,
+            1760.9999999999984,
+            3023.73
+          ],
+          "nativeBox": [
+            1216.12,
+            1870.7,
+            1412.12,
+            2598.52
+          ],
+          "sourceCoverage": 0.185740917,
+          "targetCoverage": 0.062191635,
+          "sourceOnlyCoverage": 0.176405865,
+          "overlapCoverage": 0.009335053,
+          "unionCoverage": 0.238597499,
+          "cleanThroughScore": 0.167070812,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot6_S",
+          "slotIndex": 6,
+          "slotLetter": "S",
+          "referenceBox": [
+            1760.9999999999984,
+            2176.81,
+            2005.5697177074398,
+            3023.73
+          ],
+          "nativeBox": [
+            1412.12,
+            1870.7,
+            1608.24,
+            2598.52
+          ],
+          "sourceCoverage": 0.238856806,
+          "targetCoverage": 0.063018614,
+          "sourceOnlyCoverage": 0.237861628,
+          "overlapCoverage": 0.000995178,
+          "unionCoverage": 0.300880242,
+          "cleanThroughScore": 0.23686645,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot7_E",
+          "slotIndex": 7,
+          "slotLetter": "E",
+          "referenceBox": [
+            2005.5697177074398,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "nativeBox": [
+            1608.24,
+            1870.7,
+            1804.25,
+            2598.52
+          ],
+          "sourceCoverage": 0.108222135,
+          "targetCoverage": 0.06669797,
+          "sourceOnlyCoverage": 0.108138035,
+          "overlapCoverage": 8.41e-05,
+          "unionCoverage": 0.174836006,
+          "cleanThroughScore": 0.108053936,
+          "isAtLeast25": false
+        }
+      ],
+      "activeAboveControlP95Count": 1,
+      "activeAtLeast10Count": 1,
+      "activeAtLeast25Count": 1,
+      "activeCleanThrough10Count": 1,
+      "allFourAboveControlP95": false,
+      "allFourAtLeast10": false,
+      "allFourCleanThrough10": false,
+      "maxActiveSourceOnlyCoverage": 0.579953046,
+      "meanActiveSourceOnlyCoverage": 0.176419176,
+      "minActiveSourceOnlyCoverage": 0.000373587,
+      "maxActiveOverlapCoverage": 0.019194313,
+      "maxControlSourceOnlyCoverage": 0.862096867,
+      "maxOverdoseSlotSourceOnlyCoverage": 0.634145829,
+      "overdoseSlotAtLeast25Count": 1
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "same_side_no_mirror",
+      "transformDescription": "Unmirrored page 75 over page 76, included as a non-backside control.",
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "activeRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "nativeBox": [
+            1069.72,
+            1870.86,
+            1444.2,
+            1912.11
+          ],
+          "sourceCoverage": 0.002412939,
+          "targetCoverage": 0.087974436,
+          "sourceOnlyCoverage": 0.002347724,
+          "overlapCoverage": 6.5215e-05,
+          "unionCoverage": 0.09032216,
+          "cleanThroughScore": 0.002282509,
+          "controlCount": 156,
+          "controlP95SourceOnlyCoverage": 0.638286301,
+          "controlMaxSourceOnlyCoverage": 0.711556019,
+          "controlPercentile": 0.166666667,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "nativeBox": [
+            343.21,
+            2060.78,
+            554.1,
+            2101.17
+          ],
+          "sourceCoverage": 0.191943128,
+          "targetCoverage": 0.291350711,
+          "sourceOnlyCoverage": 0.174526066,
+          "overlapCoverage": 0.017417062,
+          "unionCoverage": 0.465876777,
+          "cleanThroughScore": 0.157109005,
+          "controlCount": 321,
+          "controlP95SourceOnlyCoverage": 0.930924171,
+          "controlMaxSourceOnlyCoverage": 0.999768813,
+          "controlPercentile": 0.760124611,
+          "isAboveControlP95": false,
+          "isAtLeast10": true,
+          "isAtLeast25": false,
+          "isCleanThrough10": true
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "nativeBox": [
+            637.5,
+            2186.25,
+            959.06,
+            2227.5
+          ],
+          "sourceCoverage": 0.079587598,
+          "targetCoverage": 0.23164219,
+          "sourceOnlyCoverage": 0.079513425,
+          "overlapCoverage": 7.4173e-05,
+          "unionCoverage": 0.311155615,
+          "cleanThroughScore": 0.079439252,
+          "controlCount": 181,
+          "controlP95SourceOnlyCoverage": 0.588698682,
+          "controlMaxSourceOnlyCoverage": 0.669368278,
+          "controlPercentile": 0.464088398,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "nativeBox": [
+            833.96,
+            2519.69,
+            1331.93,
+            2562.66
+          ],
+          "sourceCoverage": 0.001074064,
+          "targetCoverage": 0.000140095,
+          "sourceOnlyCoverage": 0.001074064,
+          "overlapCoverage": 0.0,
+          "unionCoverage": 0.001214159,
+          "cleanThroughScore": 0.001074064,
+          "controlCount": 106,
+          "controlP95SourceOnlyCoverage": 0.41951527,
+          "controlMaxSourceOnlyCoverage": 0.446063323,
+          "controlPercentile": 0.169811321,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        }
+      ],
+      "slotRows": [
+        {
+          "target": "slot0_O",
+          "slotIndex": 0,
+          "slotLetter": "O",
+          "referenceBox": [
+            294.0,
+            2176.81,
+            538.5697177074414,
+            3023.73
+          ],
+          "nativeBox": [
+            235.75,
+            1870.7,
+            431.87,
+            2598.52
+          ],
+          "sourceCoverage": 0.108222135,
+          "targetCoverage": 0.070426385,
+          "sourceOnlyCoverage": 0.092880971,
+          "overlapCoverage": 0.015341164,
+          "unionCoverage": 0.163307356,
+          "cleanThroughScore": 0.077539807,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot1_V",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "referenceBox": [
+            538.5697177074414,
+            2176.81,
+            783.0000000000016,
+            3023.73
+          ],
+          "nativeBox": [
+            431.87,
+            1870.7,
+            627.88,
+            2598.52
+          ],
+          "sourceCoverage": 0.238856806,
+          "targetCoverage": 0.139086679,
+          "sourceOnlyCoverage": 0.210340043,
+          "overlapCoverage": 0.028516764,
+          "unionCoverage": 0.349426721,
+          "cleanThroughScore": 0.181823279,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot2_E",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "referenceBox": [
+            783.0000000000016,
+            2176.81,
+            1027.569717707443,
+            3023.73
+          ],
+          "nativeBox": [
+            627.88,
+            1870.7,
+            823.99,
+            2598.52
+          ],
+          "sourceCoverage": 0.185740917,
+          "targetCoverage": 0.148064308,
+          "sourceOnlyCoverage": 0.162080904,
+          "overlapCoverage": 0.023660013,
+          "unionCoverage": 0.310145212,
+          "cleanThroughScore": 0.13842089,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot3_R",
+          "slotIndex": 3,
+          "slotLetter": "R",
+          "referenceBox": [
+            1027.569717707443,
+            2176.81,
+            1271.9999999999968,
+            3023.73
+          ],
+          "nativeBox": [
+            823.99,
+            1870.7,
+            1020.0,
+            2598.52
+          ],
+          "sourceCoverage": 0.131034144,
+          "targetCoverage": 0.187927506,
+          "sourceOnlyCoverage": 0.111677226,
+          "overlapCoverage": 0.019356919,
+          "unionCoverage": 0.299604732,
+          "cleanThroughScore": 0.092320307,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot4_D",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "referenceBox": [
+            1271.9999999999968,
+            2176.81,
+            1516.5697177074383,
+            3023.73
+          ],
+          "nativeBox": [
+            1020.0,
+            1870.7,
+            1216.12,
+            2598.52
+          ],
+          "sourceCoverage": 0.099524837,
+          "targetCoverage": 0.16152024,
+          "sourceOnlyCoverage": 0.085711482,
+          "overlapCoverage": 0.013813355,
+          "unionCoverage": 0.247231722,
+          "cleanThroughScore": 0.071898127,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot5_O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "referenceBox": [
+            1516.5697177074383,
+            2176.81,
+            1760.9999999999984,
+            3023.73
+          ],
+          "nativeBox": [
+            1216.12,
+            1870.7,
+            1412.12,
+            2598.52
+          ],
+          "sourceCoverage": 0.051651155,
+          "targetCoverage": 0.062191635,
+          "sourceOnlyCoverage": 0.050340603,
+          "overlapCoverage": 0.001310552,
+          "unionCoverage": 0.112532238,
+          "cleanThroughScore": 0.049030052,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot6_S",
+          "slotIndex": 6,
+          "slotLetter": "S",
+          "referenceBox": [
+            1760.9999999999984,
+            2176.81,
+            2005.5697177074398,
+            3023.73
+          ],
+          "nativeBox": [
+            1412.12,
+            1870.7,
+            1608.24,
+            2598.52
+          ],
+          "sourceCoverage": 0.000476564,
+          "targetCoverage": 0.063018614,
+          "sourceOnlyCoverage": 0.000462548,
+          "overlapCoverage": 1.4017e-05,
+          "unionCoverage": 0.063481162,
+          "cleanThroughScore": 0.000448531,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot7_E",
+          "slotIndex": 7,
+          "slotLetter": "E",
+          "referenceBox": [
+            2005.5697177074398,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "nativeBox": [
+            1608.24,
+            1870.7,
+            1804.25,
+            2598.52
+          ],
+          "sourceCoverage": 0.646024893,
+          "targetCoverage": 0.06669797,
+          "sourceOnlyCoverage": 0.617494113,
+          "overlapCoverage": 0.02853078,
+          "unionCoverage": 0.684192083,
+          "cleanThroughScore": 0.588963333,
+          "isAtLeast25": true
+        }
+      ],
+      "activeAboveControlP95Count": 0,
+      "activeAtLeast10Count": 1,
+      "activeAtLeast25Count": 0,
+      "activeCleanThrough10Count": 1,
+      "allFourAboveControlP95": false,
+      "allFourAtLeast10": false,
+      "allFourCleanThrough10": false,
+      "maxActiveSourceOnlyCoverage": 0.174526066,
+      "meanActiveSourceOnlyCoverage": 0.06436532,
+      "minActiveSourceOnlyCoverage": 0.001074064,
+      "maxActiveOverlapCoverage": 0.017417062,
+      "maxControlSourceOnlyCoverage": 0.999768813,
+      "maxOverdoseSlotSourceOnlyCoverage": 0.617494113,
+      "overdoseSlotAtLeast25Count": 1
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "back_mirror_rotate180",
+      "transformDescription": "Mirrored back side with 180-degree turn, testing page-turn ambiguity.",
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "activeRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "nativeBox": [
+            1069.72,
+            1870.86,
+            1444.2,
+            1912.11
+          ],
+          "sourceCoverage": 0.285639755,
+          "targetCoverage": 0.087974436,
+          "sourceOnlyCoverage": 0.271944698,
+          "overlapCoverage": 0.013695057,
+          "unionCoverage": 0.359919134,
+          "cleanThroughScore": 0.258249641,
+          "controlCount": 156,
+          "controlP95SourceOnlyCoverage": 0.47472936,
+          "controlMaxSourceOnlyCoverage": 0.572192513,
+          "controlPercentile": 0.814102564,
+          "isAboveControlP95": false,
+          "isAtLeast10": true,
+          "isAtLeast25": true,
+          "isCleanThrough10": true
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "nativeBox": [
+            343.21,
+            2060.78,
+            554.1,
+            2101.17
+          ],
+          "sourceCoverage": 0.155924171,
+          "targetCoverage": 0.291350711,
+          "sourceOnlyCoverage": 0.107701422,
+          "overlapCoverage": 0.048222749,
+          "unionCoverage": 0.399052133,
+          "cleanThroughScore": 0.059478673,
+          "controlCount": 321,
+          "controlP95SourceOnlyCoverage": 0.721419489,
+          "controlMaxSourceOnlyCoverage": 0.999653219,
+          "controlPercentile": 0.629283489,
+          "isAboveControlP95": false,
+          "isAtLeast10": true,
+          "isAtLeast25": false,
+          "isCleanThrough10": true
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "nativeBox": [
+            637.5,
+            2186.25,
+            959.06,
+            2227.5
+          ],
+          "sourceCoverage": 0.107105771,
+          "targetCoverage": 0.23164219,
+          "sourceOnlyCoverage": 0.080403501,
+          "overlapCoverage": 0.02670227,
+          "unionCoverage": 0.312045691,
+          "cleanThroughScore": 0.053701231,
+          "controlCount": 181,
+          "controlP95SourceOnlyCoverage": 0.429253143,
+          "controlMaxSourceOnlyCoverage": 0.513634298,
+          "controlPercentile": 0.502762431,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "nativeBox": [
+            833.96,
+            2519.69,
+            1331.93,
+            2562.66
+          ],
+          "sourceCoverage": 0.112169609,
+          "targetCoverage": 0.000140095,
+          "sourceOnlyCoverage": 0.112169609,
+          "overlapCoverage": 0.0,
+          "unionCoverage": 0.112309704,
+          "cleanThroughScore": 0.112169609,
+          "controlCount": 106,
+          "controlP95SourceOnlyCoverage": 0.352117773,
+          "controlMaxSourceOnlyCoverage": 0.476790884,
+          "controlPercentile": 0.452830189,
+          "isAboveControlP95": false,
+          "isAtLeast10": true,
+          "isAtLeast25": false,
+          "isCleanThrough10": true
+        }
+      ],
+      "slotRows": [
+        {
+          "target": "slot0_O",
+          "slotIndex": 0,
+          "slotLetter": "O",
+          "referenceBox": [
+            294.0,
+            2176.81,
+            538.5697177074414,
+            3023.73
+          ],
+          "nativeBox": [
+            235.75,
+            1870.7,
+            431.87,
+            2598.52
+          ],
+          "sourceCoverage": 0.187373851,
+          "targetCoverage": 0.070426385,
+          "sourceOnlyCoverage": 0.173805786,
+          "overlapCoverage": 0.013568065,
+          "unionCoverage": 0.244232171,
+          "cleanThroughScore": 0.160237721,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot1_V",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "referenceBox": [
+            538.5697177074414,
+            2176.81,
+            783.0000000000016,
+            3023.73
+          ],
+          "nativeBox": [
+            431.87,
+            1870.7,
+            627.88,
+            2598.52
+          ],
+          "sourceCoverage": 0.173392296,
+          "targetCoverage": 0.139086679,
+          "sourceOnlyCoverage": 0.155191747,
+          "overlapCoverage": 0.018200549,
+          "unionCoverage": 0.294278426,
+          "cleanThroughScore": 0.136991198,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot2_E",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "referenceBox": [
+            783.0000000000016,
+            2176.81,
+            1027.569717707443,
+            3023.73
+          ],
+          "nativeBox": [
+            627.88,
+            1870.7,
+            823.99,
+            2598.52
+          ],
+          "sourceCoverage": 0.164288518,
+          "targetCoverage": 0.148064308,
+          "sourceOnlyCoverage": 0.146207109,
+          "overlapCoverage": 0.018081408,
+          "unionCoverage": 0.294271417,
+          "cleanThroughScore": 0.128125701,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot3_R",
+          "slotIndex": 3,
+          "slotLetter": "R",
+          "referenceBox": [
+            1027.569717707443,
+            2176.81,
+            1271.9999999999968,
+            3023.73
+          ],
+          "nativeBox": [
+            823.99,
+            1870.7,
+            1020.0,
+            2598.52
+          ],
+          "sourceCoverage": 0.143607031,
+          "targetCoverage": 0.187927506,
+          "sourceOnlyCoverage": 0.126801133,
+          "overlapCoverage": 0.016805898,
+          "unionCoverage": 0.314728639,
+          "cleanThroughScore": 0.109995234,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot4_D",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "referenceBox": [
+            1271.9999999999968,
+            2176.81,
+            1516.5697177074383,
+            3023.73
+          ],
+          "nativeBox": [
+            1020.0,
+            1870.7,
+            1216.12,
+            2598.52
+          ],
+          "sourceCoverage": 0.107521305,
+          "targetCoverage": 0.16152024,
+          "sourceOnlyCoverage": 0.091458287,
+          "overlapCoverage": 0.016063019,
+          "unionCoverage": 0.252978527,
+          "cleanThroughScore": 0.075395268,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot5_O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "referenceBox": [
+            1516.5697177074383,
+            2176.81,
+            1760.9999999999984,
+            3023.73
+          ],
+          "nativeBox": [
+            1216.12,
+            1870.7,
+            1412.12,
+            2598.52
+          ],
+          "sourceCoverage": 0.127277697,
+          "targetCoverage": 0.062191635,
+          "sourceOnlyCoverage": 0.117199765,
+          "overlapCoverage": 0.010077932,
+          "unionCoverage": 0.179391399,
+          "cleanThroughScore": 0.107121832,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot6_S",
+          "slotIndex": 6,
+          "slotLetter": "S",
+          "referenceBox": [
+            1760.9999999999984,
+            2176.81,
+            2005.5697177074398,
+            3023.73
+          ],
+          "nativeBox": [
+            1412.12,
+            1870.7,
+            1608.24,
+            2598.52
+          ],
+          "sourceCoverage": 0.0837842,
+          "targetCoverage": 0.063018614,
+          "sourceOnlyCoverage": 0.083482844,
+          "overlapCoverage": 0.000301357,
+          "unionCoverage": 0.146501458,
+          "cleanThroughScore": 0.083181487,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot7_E",
+          "slotIndex": 7,
+          "slotLetter": "E",
+          "referenceBox": [
+            2005.5697177074398,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "nativeBox": [
+            1608.24,
+            1870.7,
+            1804.25,
+            2598.52
+          ],
+          "sourceCoverage": 0.312514017,
+          "targetCoverage": 0.06669797,
+          "sourceOnlyCoverage": 0.292288069,
+          "overlapCoverage": 0.020225948,
+          "unionCoverage": 0.358986039,
+          "cleanThroughScore": 0.272062122,
+          "isAtLeast25": true
+        }
+      ],
+      "activeAboveControlP95Count": 0,
+      "activeAtLeast10Count": 3,
+      "activeAtLeast25Count": 1,
+      "activeCleanThrough10Count": 3,
+      "allFourAboveControlP95": false,
+      "allFourAtLeast10": false,
+      "allFourCleanThrough10": false,
+      "maxActiveSourceOnlyCoverage": 0.271944698,
+      "meanActiveSourceOnlyCoverage": 0.143054807,
+      "minActiveSourceOnlyCoverage": 0.080403501,
+      "maxActiveOverlapCoverage": 0.048222749,
+      "maxControlSourceOnlyCoverage": 0.999653219,
+      "maxOverdoseSlotSourceOnlyCoverage": 0.292288069,
+      "overdoseSlotAtLeast25Count": 1
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "front_rotate180",
+      "transformDescription": "Unmirrored 180-degree turn, included as an orientation control.",
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "activeRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "nativeBox": [
+            1069.72,
+            1870.86,
+            1444.2,
+            1912.11
+          ],
+          "sourceCoverage": 0.246511021,
+          "targetCoverage": 0.087974436,
+          "sourceOnlyCoverage": 0.229555237,
+          "overlapCoverage": 0.016955785,
+          "unionCoverage": 0.317529673,
+          "cleanThroughScore": 0.212599452,
+          "controlCount": 156,
+          "controlP95SourceOnlyCoverage": 0.335984774,
+          "controlMaxSourceOnlyCoverage": 0.468943089,
+          "controlPercentile": 0.724358974,
+          "isAboveControlP95": false,
+          "isAtLeast10": true,
+          "isAtLeast25": false,
+          "isCleanThrough10": true
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "nativeBox": [
+            343.21,
+            2060.78,
+            554.1,
+            2101.17
+          ],
+          "sourceCoverage": 0.048815166,
+          "targetCoverage": 0.291350711,
+          "sourceOnlyCoverage": 0.043838863,
+          "overlapCoverage": 0.004976303,
+          "unionCoverage": 0.335189573,
+          "cleanThroughScore": 0.038862559,
+          "controlCount": 321,
+          "controlP95SourceOnlyCoverage": 0.515995261,
+          "controlMaxSourceOnlyCoverage": 0.625592417,
+          "controlPercentile": 0.330218069,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "nativeBox": [
+            637.5,
+            2186.25,
+            959.06,
+            2227.5
+          ],
+          "sourceCoverage": 0.000593384,
+          "targetCoverage": 0.23164219,
+          "sourceOnlyCoverage": 0.000148346,
+          "overlapCoverage": 0.000445038,
+          "unionCoverage": 0.231790536,
+          "cleanThroughScore": -0.000296692,
+          "controlCount": 181,
+          "controlP95SourceOnlyCoverage": 0.360109776,
+          "controlMaxSourceOnlyCoverage": 0.475761248,
+          "controlPercentile": 0.093922652,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "nativeBox": [
+            833.96,
+            2519.69,
+            1331.93,
+            2562.66
+          ],
+          "sourceCoverage": 0.186420099,
+          "targetCoverage": 0.000140095,
+          "sourceOnlyCoverage": 0.186420099,
+          "overlapCoverage": 0.0,
+          "unionCoverage": 0.186560194,
+          "cleanThroughScore": 0.186420099,
+          "controlCount": 106,
+          "controlP95SourceOnlyCoverage": 0.326106753,
+          "controlMaxSourceOnlyCoverage": 0.38876436,
+          "controlPercentile": 0.660377358,
+          "isAboveControlP95": false,
+          "isAtLeast10": true,
+          "isAtLeast25": false,
+          "isCleanThrough10": true
+        }
+      ],
+      "slotRows": [
+        {
+          "target": "slot0_O",
+          "slotIndex": 0,
+          "slotLetter": "O",
+          "referenceBox": [
+            294.0,
+            2176.81,
+            538.5697177074414,
+            3023.73
+          ],
+          "nativeBox": [
+            235.75,
+            1870.7,
+            431.87,
+            2598.52
+          ],
+          "sourceCoverage": 0.312514017,
+          "targetCoverage": 0.070426385,
+          "sourceOnlyCoverage": 0.312240693,
+          "overlapCoverage": 0.000273324,
+          "unionCoverage": 0.382667078,
+          "cleanThroughScore": 0.311967369,
+          "isAtLeast25": true
+        },
+        {
+          "target": "slot1_V",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "referenceBox": [
+            538.5697177074414,
+            2176.81,
+            783.0000000000016,
+            3023.73
+          ],
+          "nativeBox": [
+            431.87,
+            1870.7,
+            627.88,
+            2598.52
+          ],
+          "sourceCoverage": 0.0837842,
+          "targetCoverage": 0.139086679,
+          "sourceOnlyCoverage": 0.071512671,
+          "overlapCoverage": 0.012271529,
+          "unionCoverage": 0.21059935,
+          "cleanThroughScore": 0.059241142,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot2_E",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "referenceBox": [
+            783.0000000000016,
+            2176.81,
+            1027.569717707443,
+            3023.73
+          ],
+          "nativeBox": [
+            627.88,
+            1870.7,
+            823.99,
+            2598.52
+          ],
+          "sourceCoverage": 0.127277697,
+          "targetCoverage": 0.148064308,
+          "sourceOnlyCoverage": 0.100863422,
+          "overlapCoverage": 0.026414275,
+          "unionCoverage": 0.24892773,
+          "cleanThroughScore": 0.074449148,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot3_R",
+          "slotIndex": 3,
+          "slotLetter": "R",
+          "referenceBox": [
+            1027.569717707443,
+            2176.81,
+            1271.9999999999968,
+            3023.73
+          ],
+          "nativeBox": [
+            823.99,
+            1870.7,
+            1020.0,
+            2598.52
+          ],
+          "sourceCoverage": 0.107521305,
+          "targetCoverage": 0.187927506,
+          "sourceOnlyCoverage": 0.088458735,
+          "overlapCoverage": 0.01906257,
+          "unionCoverage": 0.276386241,
+          "cleanThroughScore": 0.069396165,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot4_D",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "referenceBox": [
+            1271.9999999999968,
+            2176.81,
+            1516.5697177074383,
+            3023.73
+          ],
+          "nativeBox": [
+            1020.0,
+            1870.7,
+            1216.12,
+            2598.52
+          ],
+          "sourceCoverage": 0.143607031,
+          "targetCoverage": 0.16152024,
+          "sourceOnlyCoverage": 0.128672348,
+          "overlapCoverage": 0.014934683,
+          "unionCoverage": 0.290192588,
+          "cleanThroughScore": 0.113737665,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot5_O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "referenceBox": [
+            1516.5697177074383,
+            2176.81,
+            1760.9999999999984,
+            3023.73
+          ],
+          "nativeBox": [
+            1216.12,
+            1870.7,
+            1412.12,
+            2598.52
+          ],
+          "sourceCoverage": 0.164288518,
+          "targetCoverage": 0.062191635,
+          "sourceOnlyCoverage": 0.157434402,
+          "overlapCoverage": 0.006854115,
+          "unionCoverage": 0.219626037,
+          "cleanThroughScore": 0.150580287,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot6_S",
+          "slotIndex": 6,
+          "slotLetter": "S",
+          "referenceBox": [
+            1760.9999999999984,
+            2176.81,
+            2005.5697177074398,
+            3023.73
+          ],
+          "nativeBox": [
+            1412.12,
+            1870.7,
+            1608.24,
+            2598.52
+          ],
+          "sourceCoverage": 0.173392296,
+          "targetCoverage": 0.063018614,
+          "sourceOnlyCoverage": 0.168977069,
+          "overlapCoverage": 0.004415228,
+          "unionCoverage": 0.231995683,
+          "cleanThroughScore": 0.164561841,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot7_E",
+          "slotIndex": 7,
+          "slotLetter": "E",
+          "referenceBox": [
+            2005.5697177074398,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "nativeBox": [
+            1608.24,
+            1870.7,
+            1804.25,
+            2598.52
+          ],
+          "sourceCoverage": 0.187373851,
+          "targetCoverage": 0.06669797,
+          "sourceOnlyCoverage": 0.173560496,
+          "overlapCoverage": 0.013813355,
+          "unionCoverage": 0.240258466,
+          "cleanThroughScore": 0.159747141,
+          "isAtLeast25": false
+        }
+      ],
+      "activeAboveControlP95Count": 0,
+      "activeAtLeast10Count": 2,
+      "activeAtLeast25Count": 0,
+      "activeCleanThrough10Count": 2,
+      "allFourAboveControlP95": false,
+      "allFourAtLeast10": false,
+      "allFourCleanThrough10": false,
+      "maxActiveSourceOnlyCoverage": 0.229555237,
+      "meanActiveSourceOnlyCoverage": 0.114990636,
+      "minActiveSourceOnlyCoverage": 0.000148346,
+      "maxActiveOverlapCoverage": 0.016955785,
+      "maxControlSourceOnlyCoverage": 0.625592417,
+      "maxOverdoseSlotSourceOnlyCoverage": 0.312240693,
+      "overdoseSlotAtLeast25Count": 1
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "physical_back_mirror",
+      "transformDescription": "Back side seen through page 76, page 75 mirrored left-right.",
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "activeRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "nativeBox": [
+            1069.72,
+            1870.86,
+            1444.2,
+            1912.11
+          ],
+          "sourceCoverage": 0.598017478,
+          "targetCoverage": 0.087974436,
+          "sourceOnlyCoverage": 0.579953046,
+          "overlapCoverage": 0.018064432,
+          "unionCoverage": 0.667927481,
+          "cleanThroughScore": 0.561888614,
+          "controlCount": 156,
+          "controlP95SourceOnlyCoverage": 0.467748355,
+          "controlMaxSourceOnlyCoverage": 0.533463415,
+          "controlPercentile": 1.0,
+          "isAboveControlP95": true,
+          "isAtLeast10": true,
+          "isAtLeast25": true,
+          "isCleanThrough10": true
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "nativeBox": [
+            343.21,
+            2060.78,
+            554.1,
+            2101.17
+          ],
+          "sourceCoverage": 0.075118483,
+          "targetCoverage": 0.291350711,
+          "sourceOnlyCoverage": 0.055924171,
+          "overlapCoverage": 0.019194313,
+          "unionCoverage": 0.347274882,
+          "cleanThroughScore": 0.036729858,
+          "controlCount": 321,
+          "controlP95SourceOnlyCoverage": 0.719801179,
+          "controlMaxSourceOnlyCoverage": 0.862096867,
+          "controlPercentile": 0.507788162,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "nativeBox": [
+            637.5,
+            2186.25,
+            959.06,
+            2227.5
+          ],
+          "sourceCoverage": 0.072021955,
+          "targetCoverage": 0.23164219,
+          "sourceOnlyCoverage": 0.069425901,
+          "overlapCoverage": 0.002596054,
+          "unionCoverage": 0.301068091,
+          "cleanThroughScore": 0.066829847,
+          "controlCount": 181,
+          "controlP95SourceOnlyCoverage": 0.562263293,
+          "controlMaxSourceOnlyCoverage": 0.623356888,
+          "controlPercentile": 0.397790055,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "nativeBox": [
+            833.96,
+            2519.69,
+            1331.93,
+            2562.66
+          ],
+          "sourceCoverage": 0.000373587,
+          "targetCoverage": 0.000140095,
+          "sourceOnlyCoverage": 0.000373587,
+          "overlapCoverage": 0.0,
+          "unionCoverage": 0.000513683,
+          "cleanThroughScore": 0.000373587,
+          "controlCount": 106,
+          "controlP95SourceOnlyCoverage": 0.359519473,
+          "controlMaxSourceOnlyCoverage": 0.397450266,
+          "controlPercentile": 0.122641509,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        }
+      ],
+      "slotRows": [
+        {
+          "target": "slot0_O",
+          "slotIndex": 0,
+          "slotLetter": "O",
+          "referenceBox": [
+            294.0,
+            2176.81,
+            538.5697177074414,
+            3023.73
+          ],
+          "nativeBox": [
+            235.75,
+            1870.7,
+            431.87,
+            2598.52
+          ],
+          "sourceCoverage": 0.646024893,
+          "targetCoverage": 0.070426385,
+          "sourceOnlyCoverage": 0.634145829,
+          "overlapCoverage": 0.011879065,
+          "unionCoverage": 0.704572214,
+          "cleanThroughScore": 0.622266764,
+          "isAtLeast25": true
+        },
+        {
+          "target": "slot1_V",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "referenceBox": [
+            538.5697177074414,
+            2176.81,
+            783.0000000000016,
+            3023.73
+          ],
+          "nativeBox": [
+            431.87,
+            1870.7,
+            627.88,
+            2598.52
+          ],
+          "sourceCoverage": 0.000476564,
+          "targetCoverage": 0.139086679,
+          "sourceOnlyCoverage": 0.000420498,
+          "overlapCoverage": 5.6066e-05,
+          "unionCoverage": 0.139507176,
+          "cleanThroughScore": 0.000364431,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot2_E",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "referenceBox": [
+            783.0000000000016,
+            2176.81,
+            1027.569717707443,
+            3023.73
+          ],
+          "nativeBox": [
+            627.88,
+            1870.7,
+            823.99,
+            2598.52
+          ],
+          "sourceCoverage": 0.051651155,
+          "targetCoverage": 0.148064308,
+          "sourceOnlyCoverage": 0.049002018,
+          "overlapCoverage": 0.002649137,
+          "unionCoverage": 0.197066327,
+          "cleanThroughScore": 0.046352882,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot3_R",
+          "slotIndex": 3,
+          "slotLetter": "R",
+          "referenceBox": [
+            1027.569717707443,
+            2176.81,
+            1271.9999999999968,
+            3023.73
+          ],
+          "nativeBox": [
+            823.99,
+            1870.7,
+            1020.0,
+            2598.52
+          ],
+          "sourceCoverage": 0.099524837,
+          "targetCoverage": 0.187927506,
+          "sourceOnlyCoverage": 0.085585333,
+          "overlapCoverage": 0.013939504,
+          "unionCoverage": 0.273512839,
+          "cleanThroughScore": 0.071645829,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot4_D",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "referenceBox": [
+            1271.9999999999968,
+            2176.81,
+            1516.5697177074383,
+            3023.73
+          ],
+          "nativeBox": [
+            1020.0,
+            1870.7,
+            1216.12,
+            2598.52
+          ],
+          "sourceCoverage": 0.131034144,
+          "targetCoverage": 0.16152024,
+          "sourceOnlyCoverage": 0.115882205,
+          "overlapCoverage": 0.01515194,
+          "unionCoverage": 0.277402444,
+          "cleanThroughScore": 0.100730265,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot5_O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "referenceBox": [
+            1516.5697177074383,
+            2176.81,
+            1760.9999999999984,
+            3023.73
+          ],
+          "nativeBox": [
+            1216.12,
+            1870.7,
+            1412.12,
+            2598.52
+          ],
+          "sourceCoverage": 0.185740917,
+          "targetCoverage": 0.062191635,
+          "sourceOnlyCoverage": 0.176405865,
+          "overlapCoverage": 0.009335053,
+          "unionCoverage": 0.238597499,
+          "cleanThroughScore": 0.167070812,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot6_S",
+          "slotIndex": 6,
+          "slotLetter": "S",
+          "referenceBox": [
+            1760.9999999999984,
+            2176.81,
+            2005.5697177074398,
+            3023.73
+          ],
+          "nativeBox": [
+            1412.12,
+            1870.7,
+            1608.24,
+            2598.52
+          ],
+          "sourceCoverage": 0.238856806,
+          "targetCoverage": 0.063018614,
+          "sourceOnlyCoverage": 0.237861628,
+          "overlapCoverage": 0.000995178,
+          "unionCoverage": 0.300880242,
+          "cleanThroughScore": 0.23686645,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot7_E",
+          "slotIndex": 7,
+          "slotLetter": "E",
+          "referenceBox": [
+            2005.5697177074398,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "nativeBox": [
+            1608.24,
+            1870.7,
+            1804.25,
+            2598.52
+          ],
+          "sourceCoverage": 0.108222135,
+          "targetCoverage": 0.06669797,
+          "sourceOnlyCoverage": 0.108138035,
+          "overlapCoverage": 8.41e-05,
+          "unionCoverage": 0.174836006,
+          "cleanThroughScore": 0.108053936,
+          "isAtLeast25": false
+        }
+      ],
+      "activeAboveControlP95Count": 1,
+      "activeAtLeast10Count": 1,
+      "activeAtLeast25Count": 1,
+      "activeCleanThrough10Count": 1,
+      "allFourAboveControlP95": false,
+      "allFourAtLeast10": false,
+      "allFourCleanThrough10": false,
+      "maxActiveSourceOnlyCoverage": 0.579953046,
+      "meanActiveSourceOnlyCoverage": 0.176419176,
+      "minActiveSourceOnlyCoverage": 0.000373587,
+      "maxActiveOverlapCoverage": 0.019194313,
+      "maxControlSourceOnlyCoverage": 0.862096867,
+      "maxOverdoseSlotSourceOnlyCoverage": 0.634145829,
+      "overdoseSlotAtLeast25Count": 1
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "same_side_no_mirror",
+      "transformDescription": "Unmirrored page 75 over page 76, included as a non-backside control.",
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "activeRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "nativeBox": [
+            1069.72,
+            1870.86,
+            1444.2,
+            1912.11
+          ],
+          "sourceCoverage": 0.002412939,
+          "targetCoverage": 0.087974436,
+          "sourceOnlyCoverage": 0.002347724,
+          "overlapCoverage": 6.5215e-05,
+          "unionCoverage": 0.09032216,
+          "cleanThroughScore": 0.002282509,
+          "controlCount": 156,
+          "controlP95SourceOnlyCoverage": 0.638286301,
+          "controlMaxSourceOnlyCoverage": 0.711556019,
+          "controlPercentile": 0.166666667,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "nativeBox": [
+            343.21,
+            2060.78,
+            554.1,
+            2101.17
+          ],
+          "sourceCoverage": 0.191943128,
+          "targetCoverage": 0.291350711,
+          "sourceOnlyCoverage": 0.174526066,
+          "overlapCoverage": 0.017417062,
+          "unionCoverage": 0.465876777,
+          "cleanThroughScore": 0.157109005,
+          "controlCount": 321,
+          "controlP95SourceOnlyCoverage": 0.930924171,
+          "controlMaxSourceOnlyCoverage": 0.999768813,
+          "controlPercentile": 0.760124611,
+          "isAboveControlP95": false,
+          "isAtLeast10": true,
+          "isAtLeast25": false,
+          "isCleanThrough10": true
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "nativeBox": [
+            637.5,
+            2186.25,
+            959.06,
+            2227.5
+          ],
+          "sourceCoverage": 0.079587598,
+          "targetCoverage": 0.23164219,
+          "sourceOnlyCoverage": 0.079513425,
+          "overlapCoverage": 7.4173e-05,
+          "unionCoverage": 0.311155615,
+          "cleanThroughScore": 0.079439252,
+          "controlCount": 181,
+          "controlP95SourceOnlyCoverage": 0.588698682,
+          "controlMaxSourceOnlyCoverage": 0.669368278,
+          "controlPercentile": 0.464088398,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "nativeBox": [
+            833.96,
+            2519.69,
+            1331.93,
+            2562.66
+          ],
+          "sourceCoverage": 0.001074064,
+          "targetCoverage": 0.000140095,
+          "sourceOnlyCoverage": 0.001074064,
+          "overlapCoverage": 0.0,
+          "unionCoverage": 0.001214159,
+          "cleanThroughScore": 0.001074064,
+          "controlCount": 106,
+          "controlP95SourceOnlyCoverage": 0.41951527,
+          "controlMaxSourceOnlyCoverage": 0.446063323,
+          "controlPercentile": 0.169811321,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        }
+      ],
+      "slotRows": [
+        {
+          "target": "slot0_O",
+          "slotIndex": 0,
+          "slotLetter": "O",
+          "referenceBox": [
+            294.0,
+            2176.81,
+            538.5697177074414,
+            3023.73
+          ],
+          "nativeBox": [
+            235.75,
+            1870.7,
+            431.87,
+            2598.52
+          ],
+          "sourceCoverage": 0.108222135,
+          "targetCoverage": 0.070426385,
+          "sourceOnlyCoverage": 0.092880971,
+          "overlapCoverage": 0.015341164,
+          "unionCoverage": 0.163307356,
+          "cleanThroughScore": 0.077539807,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot1_V",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "referenceBox": [
+            538.5697177074414,
+            2176.81,
+            783.0000000000016,
+            3023.73
+          ],
+          "nativeBox": [
+            431.87,
+            1870.7,
+            627.88,
+            2598.52
+          ],
+          "sourceCoverage": 0.238856806,
+          "targetCoverage": 0.139086679,
+          "sourceOnlyCoverage": 0.210340043,
+          "overlapCoverage": 0.028516764,
+          "unionCoverage": 0.349426721,
+          "cleanThroughScore": 0.181823279,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot2_E",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "referenceBox": [
+            783.0000000000016,
+            2176.81,
+            1027.569717707443,
+            3023.73
+          ],
+          "nativeBox": [
+            627.88,
+            1870.7,
+            823.99,
+            2598.52
+          ],
+          "sourceCoverage": 0.185740917,
+          "targetCoverage": 0.148064308,
+          "sourceOnlyCoverage": 0.162080904,
+          "overlapCoverage": 0.023660013,
+          "unionCoverage": 0.310145212,
+          "cleanThroughScore": 0.13842089,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot3_R",
+          "slotIndex": 3,
+          "slotLetter": "R",
+          "referenceBox": [
+            1027.569717707443,
+            2176.81,
+            1271.9999999999968,
+            3023.73
+          ],
+          "nativeBox": [
+            823.99,
+            1870.7,
+            1020.0,
+            2598.52
+          ],
+          "sourceCoverage": 0.131034144,
+          "targetCoverage": 0.187927506,
+          "sourceOnlyCoverage": 0.111677226,
+          "overlapCoverage": 0.019356919,
+          "unionCoverage": 0.299604732,
+          "cleanThroughScore": 0.092320307,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot4_D",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "referenceBox": [
+            1271.9999999999968,
+            2176.81,
+            1516.5697177074383,
+            3023.73
+          ],
+          "nativeBox": [
+            1020.0,
+            1870.7,
+            1216.12,
+            2598.52
+          ],
+          "sourceCoverage": 0.099524837,
+          "targetCoverage": 0.16152024,
+          "sourceOnlyCoverage": 0.085711482,
+          "overlapCoverage": 0.013813355,
+          "unionCoverage": 0.247231722,
+          "cleanThroughScore": 0.071898127,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot5_O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "referenceBox": [
+            1516.5697177074383,
+            2176.81,
+            1760.9999999999984,
+            3023.73
+          ],
+          "nativeBox": [
+            1216.12,
+            1870.7,
+            1412.12,
+            2598.52
+          ],
+          "sourceCoverage": 0.051651155,
+          "targetCoverage": 0.062191635,
+          "sourceOnlyCoverage": 0.050340603,
+          "overlapCoverage": 0.001310552,
+          "unionCoverage": 0.112532238,
+          "cleanThroughScore": 0.049030052,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot6_S",
+          "slotIndex": 6,
+          "slotLetter": "S",
+          "referenceBox": [
+            1760.9999999999984,
+            2176.81,
+            2005.5697177074398,
+            3023.73
+          ],
+          "nativeBox": [
+            1412.12,
+            1870.7,
+            1608.24,
+            2598.52
+          ],
+          "sourceCoverage": 0.000476564,
+          "targetCoverage": 0.063018614,
+          "sourceOnlyCoverage": 0.000462548,
+          "overlapCoverage": 1.4017e-05,
+          "unionCoverage": 0.063481162,
+          "cleanThroughScore": 0.000448531,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot7_E",
+          "slotIndex": 7,
+          "slotLetter": "E",
+          "referenceBox": [
+            2005.5697177074398,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "nativeBox": [
+            1608.24,
+            1870.7,
+            1804.25,
+            2598.52
+          ],
+          "sourceCoverage": 0.646024893,
+          "targetCoverage": 0.06669797,
+          "sourceOnlyCoverage": 0.617494113,
+          "overlapCoverage": 0.02853078,
+          "unionCoverage": 0.684192083,
+          "cleanThroughScore": 0.588963333,
+          "isAtLeast25": true
+        }
+      ],
+      "activeAboveControlP95Count": 0,
+      "activeAtLeast10Count": 1,
+      "activeAtLeast25Count": 0,
+      "activeCleanThrough10Count": 1,
+      "allFourAboveControlP95": false,
+      "allFourAtLeast10": false,
+      "allFourCleanThrough10": false,
+      "maxActiveSourceOnlyCoverage": 0.174526066,
+      "meanActiveSourceOnlyCoverage": 0.06436532,
+      "minActiveSourceOnlyCoverage": 0.001074064,
+      "maxActiveOverlapCoverage": 0.017417062,
+      "maxControlSourceOnlyCoverage": 0.999768813,
+      "maxOverdoseSlotSourceOnlyCoverage": 0.617494113,
+      "overdoseSlotAtLeast25Count": 1
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "back_mirror_rotate180",
+      "transformDescription": "Mirrored back side with 180-degree turn, testing page-turn ambiguity.",
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "activeRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "nativeBox": [
+            1069.72,
+            1870.86,
+            1444.2,
+            1912.11
+          ],
+          "sourceCoverage": 0.285639755,
+          "targetCoverage": 0.087974436,
+          "sourceOnlyCoverage": 0.271944698,
+          "overlapCoverage": 0.013695057,
+          "unionCoverage": 0.359919134,
+          "cleanThroughScore": 0.258249641,
+          "controlCount": 156,
+          "controlP95SourceOnlyCoverage": 0.47472936,
+          "controlMaxSourceOnlyCoverage": 0.572192513,
+          "controlPercentile": 0.814102564,
+          "isAboveControlP95": false,
+          "isAtLeast10": true,
+          "isAtLeast25": true,
+          "isCleanThrough10": true
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "nativeBox": [
+            343.21,
+            2060.78,
+            554.1,
+            2101.17
+          ],
+          "sourceCoverage": 0.155924171,
+          "targetCoverage": 0.291350711,
+          "sourceOnlyCoverage": 0.107701422,
+          "overlapCoverage": 0.048222749,
+          "unionCoverage": 0.399052133,
+          "cleanThroughScore": 0.059478673,
+          "controlCount": 321,
+          "controlP95SourceOnlyCoverage": 0.721419489,
+          "controlMaxSourceOnlyCoverage": 0.999653219,
+          "controlPercentile": 0.629283489,
+          "isAboveControlP95": false,
+          "isAtLeast10": true,
+          "isAtLeast25": false,
+          "isCleanThrough10": true
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "nativeBox": [
+            637.5,
+            2186.25,
+            959.06,
+            2227.5
+          ],
+          "sourceCoverage": 0.107105771,
+          "targetCoverage": 0.23164219,
+          "sourceOnlyCoverage": 0.080403501,
+          "overlapCoverage": 0.02670227,
+          "unionCoverage": 0.312045691,
+          "cleanThroughScore": 0.053701231,
+          "controlCount": 181,
+          "controlP95SourceOnlyCoverage": 0.429253143,
+          "controlMaxSourceOnlyCoverage": 0.513634298,
+          "controlPercentile": 0.502762431,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "nativeBox": [
+            833.96,
+            2519.69,
+            1331.93,
+            2562.66
+          ],
+          "sourceCoverage": 0.112169609,
+          "targetCoverage": 0.000140095,
+          "sourceOnlyCoverage": 0.112169609,
+          "overlapCoverage": 0.0,
+          "unionCoverage": 0.112309704,
+          "cleanThroughScore": 0.112169609,
+          "controlCount": 106,
+          "controlP95SourceOnlyCoverage": 0.352117773,
+          "controlMaxSourceOnlyCoverage": 0.476790884,
+          "controlPercentile": 0.452830189,
+          "isAboveControlP95": false,
+          "isAtLeast10": true,
+          "isAtLeast25": false,
+          "isCleanThrough10": true
+        }
+      ],
+      "slotRows": [
+        {
+          "target": "slot0_O",
+          "slotIndex": 0,
+          "slotLetter": "O",
+          "referenceBox": [
+            294.0,
+            2176.81,
+            538.5697177074414,
+            3023.73
+          ],
+          "nativeBox": [
+            235.75,
+            1870.7,
+            431.87,
+            2598.52
+          ],
+          "sourceCoverage": 0.187373851,
+          "targetCoverage": 0.070426385,
+          "sourceOnlyCoverage": 0.173805786,
+          "overlapCoverage": 0.013568065,
+          "unionCoverage": 0.244232171,
+          "cleanThroughScore": 0.160237721,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot1_V",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "referenceBox": [
+            538.5697177074414,
+            2176.81,
+            783.0000000000016,
+            3023.73
+          ],
+          "nativeBox": [
+            431.87,
+            1870.7,
+            627.88,
+            2598.52
+          ],
+          "sourceCoverage": 0.173392296,
+          "targetCoverage": 0.139086679,
+          "sourceOnlyCoverage": 0.155191747,
+          "overlapCoverage": 0.018200549,
+          "unionCoverage": 0.294278426,
+          "cleanThroughScore": 0.136991198,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot2_E",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "referenceBox": [
+            783.0000000000016,
+            2176.81,
+            1027.569717707443,
+            3023.73
+          ],
+          "nativeBox": [
+            627.88,
+            1870.7,
+            823.99,
+            2598.52
+          ],
+          "sourceCoverage": 0.164288518,
+          "targetCoverage": 0.148064308,
+          "sourceOnlyCoverage": 0.146207109,
+          "overlapCoverage": 0.018081408,
+          "unionCoverage": 0.294271417,
+          "cleanThroughScore": 0.128125701,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot3_R",
+          "slotIndex": 3,
+          "slotLetter": "R",
+          "referenceBox": [
+            1027.569717707443,
+            2176.81,
+            1271.9999999999968,
+            3023.73
+          ],
+          "nativeBox": [
+            823.99,
+            1870.7,
+            1020.0,
+            2598.52
+          ],
+          "sourceCoverage": 0.143607031,
+          "targetCoverage": 0.187927506,
+          "sourceOnlyCoverage": 0.126801133,
+          "overlapCoverage": 0.016805898,
+          "unionCoverage": 0.314728639,
+          "cleanThroughScore": 0.109995234,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot4_D",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "referenceBox": [
+            1271.9999999999968,
+            2176.81,
+            1516.5697177074383,
+            3023.73
+          ],
+          "nativeBox": [
+            1020.0,
+            1870.7,
+            1216.12,
+            2598.52
+          ],
+          "sourceCoverage": 0.107521305,
+          "targetCoverage": 0.16152024,
+          "sourceOnlyCoverage": 0.091458287,
+          "overlapCoverage": 0.016063019,
+          "unionCoverage": 0.252978527,
+          "cleanThroughScore": 0.075395268,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot5_O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "referenceBox": [
+            1516.5697177074383,
+            2176.81,
+            1760.9999999999984,
+            3023.73
+          ],
+          "nativeBox": [
+            1216.12,
+            1870.7,
+            1412.12,
+            2598.52
+          ],
+          "sourceCoverage": 0.127277697,
+          "targetCoverage": 0.062191635,
+          "sourceOnlyCoverage": 0.117199765,
+          "overlapCoverage": 0.010077932,
+          "unionCoverage": 0.179391399,
+          "cleanThroughScore": 0.107121832,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot6_S",
+          "slotIndex": 6,
+          "slotLetter": "S",
+          "referenceBox": [
+            1760.9999999999984,
+            2176.81,
+            2005.5697177074398,
+            3023.73
+          ],
+          "nativeBox": [
+            1412.12,
+            1870.7,
+            1608.24,
+            2598.52
+          ],
+          "sourceCoverage": 0.0837842,
+          "targetCoverage": 0.063018614,
+          "sourceOnlyCoverage": 0.083482844,
+          "overlapCoverage": 0.000301357,
+          "unionCoverage": 0.146501458,
+          "cleanThroughScore": 0.083181487,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot7_E",
+          "slotIndex": 7,
+          "slotLetter": "E",
+          "referenceBox": [
+            2005.5697177074398,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "nativeBox": [
+            1608.24,
+            1870.7,
+            1804.25,
+            2598.52
+          ],
+          "sourceCoverage": 0.312514017,
+          "targetCoverage": 0.06669797,
+          "sourceOnlyCoverage": 0.292288069,
+          "overlapCoverage": 0.020225948,
+          "unionCoverage": 0.358986039,
+          "cleanThroughScore": 0.272062122,
+          "isAtLeast25": true
+        }
+      ],
+      "activeAboveControlP95Count": 0,
+      "activeAtLeast10Count": 3,
+      "activeAtLeast25Count": 1,
+      "activeCleanThrough10Count": 3,
+      "allFourAboveControlP95": false,
+      "allFourAtLeast10": false,
+      "allFourCleanThrough10": false,
+      "maxActiveSourceOnlyCoverage": 0.271944698,
+      "meanActiveSourceOnlyCoverage": 0.143054807,
+      "minActiveSourceOnlyCoverage": 0.080403501,
+      "maxActiveOverlapCoverage": 0.048222749,
+      "maxControlSourceOnlyCoverage": 0.999653219,
+      "maxOverdoseSlotSourceOnlyCoverage": 0.292288069,
+      "overdoseSlotAtLeast25Count": 1
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "front_rotate180",
+      "transformDescription": "Unmirrored 180-degree turn, included as an orientation control.",
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "activeRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "nativeBox": [
+            1069.72,
+            1870.86,
+            1444.2,
+            1912.11
+          ],
+          "sourceCoverage": 0.246511021,
+          "targetCoverage": 0.087974436,
+          "sourceOnlyCoverage": 0.229555237,
+          "overlapCoverage": 0.016955785,
+          "unionCoverage": 0.317529673,
+          "cleanThroughScore": 0.212599452,
+          "controlCount": 156,
+          "controlP95SourceOnlyCoverage": 0.335984774,
+          "controlMaxSourceOnlyCoverage": 0.468943089,
+          "controlPercentile": 0.724358974,
+          "isAboveControlP95": false,
+          "isAtLeast10": true,
+          "isAtLeast25": false,
+          "isCleanThrough10": true
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "nativeBox": [
+            343.21,
+            2060.78,
+            554.1,
+            2101.17
+          ],
+          "sourceCoverage": 0.048815166,
+          "targetCoverage": 0.291350711,
+          "sourceOnlyCoverage": 0.043838863,
+          "overlapCoverage": 0.004976303,
+          "unionCoverage": 0.335189573,
+          "cleanThroughScore": 0.038862559,
+          "controlCount": 321,
+          "controlP95SourceOnlyCoverage": 0.515995261,
+          "controlMaxSourceOnlyCoverage": 0.625592417,
+          "controlPercentile": 0.330218069,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "nativeBox": [
+            637.5,
+            2186.25,
+            959.06,
+            2227.5
+          ],
+          "sourceCoverage": 0.000593384,
+          "targetCoverage": 0.23164219,
+          "sourceOnlyCoverage": 0.000148346,
+          "overlapCoverage": 0.000445038,
+          "unionCoverage": 0.231790536,
+          "cleanThroughScore": -0.000296692,
+          "controlCount": 181,
+          "controlP95SourceOnlyCoverage": 0.360109776,
+          "controlMaxSourceOnlyCoverage": 0.475761248,
+          "controlPercentile": 0.093922652,
+          "isAboveControlP95": false,
+          "isAtLeast10": false,
+          "isAtLeast25": false,
+          "isCleanThrough10": false
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "nativeBox": [
+            833.96,
+            2519.69,
+            1331.93,
+            2562.66
+          ],
+          "sourceCoverage": 0.186420099,
+          "targetCoverage": 0.000140095,
+          "sourceOnlyCoverage": 0.186420099,
+          "overlapCoverage": 0.0,
+          "unionCoverage": 0.186560194,
+          "cleanThroughScore": 0.186420099,
+          "controlCount": 106,
+          "controlP95SourceOnlyCoverage": 0.326106753,
+          "controlMaxSourceOnlyCoverage": 0.38876436,
+          "controlPercentile": 0.660377358,
+          "isAboveControlP95": false,
+          "isAtLeast10": true,
+          "isAtLeast25": false,
+          "isCleanThrough10": true
+        }
+      ],
+      "slotRows": [
+        {
+          "target": "slot0_O",
+          "slotIndex": 0,
+          "slotLetter": "O",
+          "referenceBox": [
+            294.0,
+            2176.81,
+            538.5697177074414,
+            3023.73
+          ],
+          "nativeBox": [
+            235.75,
+            1870.7,
+            431.87,
+            2598.52
+          ],
+          "sourceCoverage": 0.312514017,
+          "targetCoverage": 0.070426385,
+          "sourceOnlyCoverage": 0.312240693,
+          "overlapCoverage": 0.000273324,
+          "unionCoverage": 0.382667078,
+          "cleanThroughScore": 0.311967369,
+          "isAtLeast25": true
+        },
+        {
+          "target": "slot1_V",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "referenceBox": [
+            538.5697177074414,
+            2176.81,
+            783.0000000000016,
+            3023.73
+          ],
+          "nativeBox": [
+            431.87,
+            1870.7,
+            627.88,
+            2598.52
+          ],
+          "sourceCoverage": 0.0837842,
+          "targetCoverage": 0.139086679,
+          "sourceOnlyCoverage": 0.071512671,
+          "overlapCoverage": 0.012271529,
+          "unionCoverage": 0.21059935,
+          "cleanThroughScore": 0.059241142,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot2_E",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "referenceBox": [
+            783.0000000000016,
+            2176.81,
+            1027.569717707443,
+            3023.73
+          ],
+          "nativeBox": [
+            627.88,
+            1870.7,
+            823.99,
+            2598.52
+          ],
+          "sourceCoverage": 0.127277697,
+          "targetCoverage": 0.148064308,
+          "sourceOnlyCoverage": 0.100863422,
+          "overlapCoverage": 0.026414275,
+          "unionCoverage": 0.24892773,
+          "cleanThroughScore": 0.074449148,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot3_R",
+          "slotIndex": 3,
+          "slotLetter": "R",
+          "referenceBox": [
+            1027.569717707443,
+            2176.81,
+            1271.9999999999968,
+            3023.73
+          ],
+          "nativeBox": [
+            823.99,
+            1870.7,
+            1020.0,
+            2598.52
+          ],
+          "sourceCoverage": 0.107521305,
+          "targetCoverage": 0.187927506,
+          "sourceOnlyCoverage": 0.088458735,
+          "overlapCoverage": 0.01906257,
+          "unionCoverage": 0.276386241,
+          "cleanThroughScore": 0.069396165,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot4_D",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "referenceBox": [
+            1271.9999999999968,
+            2176.81,
+            1516.5697177074383,
+            3023.73
+          ],
+          "nativeBox": [
+            1020.0,
+            1870.7,
+            1216.12,
+            2598.52
+          ],
+          "sourceCoverage": 0.143607031,
+          "targetCoverage": 0.16152024,
+          "sourceOnlyCoverage": 0.128672348,
+          "overlapCoverage": 0.014934683,
+          "unionCoverage": 0.290192588,
+          "cleanThroughScore": 0.113737665,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot5_O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "referenceBox": [
+            1516.5697177074383,
+            2176.81,
+            1760.9999999999984,
+            3023.73
+          ],
+          "nativeBox": [
+            1216.12,
+            1870.7,
+            1412.12,
+            2598.52
+          ],
+          "sourceCoverage": 0.164288518,
+          "targetCoverage": 0.062191635,
+          "sourceOnlyCoverage": 0.157434402,
+          "overlapCoverage": 0.006854115,
+          "unionCoverage": 0.219626037,
+          "cleanThroughScore": 0.150580287,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot6_S",
+          "slotIndex": 6,
+          "slotLetter": "S",
+          "referenceBox": [
+            1760.9999999999984,
+            2176.81,
+            2005.5697177074398,
+            3023.73
+          ],
+          "nativeBox": [
+            1412.12,
+            1870.7,
+            1608.24,
+            2598.52
+          ],
+          "sourceCoverage": 0.173392296,
+          "targetCoverage": 0.063018614,
+          "sourceOnlyCoverage": 0.168977069,
+          "overlapCoverage": 0.004415228,
+          "unionCoverage": 0.231995683,
+          "cleanThroughScore": 0.164561841,
+          "isAtLeast25": false
+        },
+        {
+          "target": "slot7_E",
+          "slotIndex": 7,
+          "slotLetter": "E",
+          "referenceBox": [
+            2005.5697177074398,
+            2176.81,
+            2250.0,
+            3023.73
+          ],
+          "nativeBox": [
+            1608.24,
+            1870.7,
+            1804.25,
+            2598.52
+          ],
+          "sourceCoverage": 0.187373851,
+          "targetCoverage": 0.06669797,
+          "sourceOnlyCoverage": 0.173560496,
+          "overlapCoverage": 0.013813355,
+          "unionCoverage": 0.240258466,
+          "cleanThroughScore": 0.159747141,
+          "isAtLeast25": false
+        }
+      ],
+      "activeAboveControlP95Count": 0,
+      "activeAtLeast10Count": 2,
+      "activeAtLeast25Count": 0,
+      "activeCleanThrough10Count": 2,
+      "allFourAboveControlP95": false,
+      "allFourAtLeast10": false,
+      "allFourCleanThrough10": false,
+      "maxActiveSourceOnlyCoverage": 0.229555237,
+      "meanActiveSourceOnlyCoverage": 0.114990636,
+      "minActiveSourceOnlyCoverage": 0.000148346,
+      "maxActiveOverlapCoverage": 0.016955785,
+      "maxControlSourceOnlyCoverage": 0.625592417,
+      "maxOverdoseSlotSourceOnlyCoverage": 0.312240693,
+      "overdoseSlotAtLeast25Count": 1
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/current_pdf_held_to_light_composite_polarity_gate/current_pdf_held_to_light_composite_polarity_gate_sheet.jpg",
+  "simulatorImages": [
+    "analysis_outputs/source_audit/current_pdf_held_to_light_composite_polarity_gate/magazine_physical_back_mirror_held_to_light_full.jpg",
+    "analysis_outputs/source_audit/current_pdf_held_to_light_composite_polarity_gate/magazine_physical_back_mirror_held_to_light_active_crop.jpg"
+  ]
+}

@@ -1,0 +1,1864 @@
+{
+  "createdAt": "2026-05-24T14:36:50",
+  "scope": {
+    "articlePages": [
+      73,
+      80
+    ],
+    "sourceArticlePage": 76,
+    "destinationArticlePages": [
+      74,
+      78
+    ],
+    "variants": [
+      "direct_delta",
+      "x_mirror_about_header_delta",
+      "x_mirror_about_page_center_delta"
+    ],
+    "excluded": [
+      "OCR-to-key extraction",
+      "private-key candidate generation",
+      "hash-to-key checks",
+      "seed/WIF/address checks",
+      "BIP39 checks",
+      "broad brute force"
+    ]
+  },
+  "inputs": {
+    "pdfs": [
+      "magazine.pdf",
+      "keyser bitcoin .pdf",
+      "analysis_outputs/external_clues/google_drive_article_download.pdf"
+    ],
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "repeatedHeaderLane": "analysis_outputs/source_audit/current_pdf_repeated_overdose_header_lane_gate/current_pdf_repeated_overdose_header_lane_gate.json",
+    "repeatedHeaderLaneFingerprint": "pdfs=3|overdoseHeaders=6|laneRows=24|targetRows=0|strictRows=0|allFourRows=0|activeOrderRows=0|page76TargetRows=0|candidates=0|sourceR3=0|triggers=0/9|selectors=0",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "summary": {
+    "pdfCount": 3,
+    "overdoseHeaderRowCount": 6,
+    "transferVariantRowCount": 12,
+    "transferBoxRowCount": 48,
+    "textHitBoxRowCount": 0,
+    "targetTermBoxRowCount": 0,
+    "strictTermBoxRowCount": 0,
+    "allFourTransferVariantCount": 0,
+    "activeOrderTransferVariantCount": 0,
+    "headerDeltaTransferCandidateCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "fingerprint": "pdfs=3|headers=6|variants=12|boxRows=48|textRows=0|targetRows=0|strictRows=0|allFourVariants=0|activeOrderVariants=0|candidates=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "records": [
+    {
+      "pdf": "magazine.pdf",
+      "overdoseHeaderRows": [],
+      "transferRows": [],
+      "variantSummaryRows": []
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "overdoseHeaderRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "pageWidth": 612.0,
+          "pageHeight": 792.0,
+          "headerBbox": [
+            504.239990234375,
+            35.91998291015625,
+            537.750244140625,
+            41.92598342895508
+          ],
+          "headerCenter": [
+            520.9951171875,
+            38.922983169555664
+          ],
+          "wordCount": 1
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "pageWidth": 612.0,
+          "pageHeight": 792.0,
+          "headerBbox": [
+            514.3200073242188,
+            29.4000244140625,
+            547.8141479492188,
+            36.40702438354492
+          ],
+          "headerCenter": [
+            531.0670776367188,
+            32.90352439880371
+          ],
+          "wordCount": 265
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "pageWidth": 612.0,
+          "pageHeight": 792.0,
+          "headerBbox": [
+            502.0799865722656,
+            30.8800048828125,
+            535.3598022460938,
+            36.88600540161133
+          ],
+          "headerCenter": [
+            518.7198944091797,
+            33.883005142211914
+          ],
+          "wordCount": 202
+        }
+      ],
+      "transferRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "O4",
+          "targetLabel": "buying the dip",
+          "sourceRect": [
+            320.0377,
+            528.2426,
+            425.7736,
+            539.8897
+          ],
+          "transferredRect": [
+            309.9658,
+            534.2621,
+            415.7016,
+            545.9092
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "B4",
+          "targetLabel": "$1 billion",
+          "sourceRect": [
+            114.9057,
+            581.8676,
+            174.4528,
+            593.2721
+          ],
+          "transferredRect": [
+            104.8337,
+            587.8871,
+            164.3809,
+            599.2915
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "G5",
+          "targetLabel": "Volcano Bonds",
+          "sourceRect": [
+            198.0,
+            617.2941,
+            288.7925,
+            628.9412
+          ],
+          "transferredRect": [
+            187.928,
+            623.3136,
+            278.7205,
+            634.9606
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "O5",
+          "targetLabel": "shitcoiner at heart",
+          "sourceRect": [
+            253.4717,
+            711.4412,
+            394.0755,
+            723.5735
+          ],
+          "transferredRect": [
+            243.3997,
+            717.4606,
+            384.0035,
+            729.593
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "O4",
+          "targetLabel": "buying the dip",
+          "sourceRect": [
+            320.0377,
+            528.2426,
+            425.7736,
+            539.8897
+          ],
+          "transferredRect": [
+            626.2886,
+            534.2621,
+            732.0245,
+            545.9092
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "B4",
+          "targetLabel": "$1 billion",
+          "sourceRect": [
+            114.9057,
+            581.8676,
+            174.4528,
+            593.2721
+          ],
+          "transferredRect": [
+            877.6094,
+            587.8871,
+            937.1565,
+            599.2915
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "G5",
+          "targetLabel": "Volcano Bonds",
+          "sourceRect": [
+            198.0,
+            617.2941,
+            288.7925,
+            628.9412
+          ],
+          "transferredRect": [
+            763.2697,
+            623.3136,
+            854.0622,
+            634.9606
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "O5",
+          "targetLabel": "shitcoiner at heart",
+          "sourceRect": [
+            253.4717,
+            711.4412,
+            394.0755,
+            723.5735
+          ],
+          "transferredRect": [
+            657.9867,
+            717.4606,
+            798.5905,
+            729.593
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "O4",
+          "targetLabel": "buying the dip",
+          "sourceRect": [
+            320.0377,
+            528.2426,
+            425.7736,
+            539.8897
+          ],
+          "transferredRect": [
+            176.1545,
+            534.2621,
+            281.8903,
+            545.9092
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "B4",
+          "targetLabel": "$1 billion",
+          "sourceRect": [
+            114.9057,
+            581.8676,
+            174.4528,
+            593.2721
+          ],
+          "transferredRect": [
+            427.4752,
+            587.8871,
+            487.0224,
+            599.2915
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "G5",
+          "targetLabel": "Volcano Bonds",
+          "sourceRect": [
+            198.0,
+            617.2941,
+            288.7925,
+            628.9412
+          ],
+          "transferredRect": [
+            313.1356,
+            623.3136,
+            403.928,
+            634.9606
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "O5",
+          "targetLabel": "shitcoiner at heart",
+          "sourceRect": [
+            253.4717,
+            711.4412,
+            394.0755,
+            723.5735
+          ],
+          "transferredRect": [
+            207.8526,
+            717.4606,
+            348.4563,
+            729.593
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "O4",
+          "targetLabel": "buying the dip",
+          "sourceRect": [
+            320.0377,
+            528.2426,
+            425.7736,
+            539.8897
+          ],
+          "transferredRect": [
+            307.6906,
+            529.2221,
+            413.4264,
+            540.8692
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "B4",
+          "targetLabel": "$1 billion",
+          "sourceRect": [
+            114.9057,
+            581.8676,
+            174.4528,
+            593.2721
+          ],
+          "transferredRect": [
+            102.5585,
+            582.8471,
+            162.1056,
+            594.2515
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "G5",
+          "targetLabel": "Volcano Bonds",
+          "sourceRect": [
+            198.0,
+            617.2941,
+            288.7925,
+            628.9412
+          ],
+          "transferredRect": [
+            185.6528,
+            618.2736,
+            276.4453,
+            629.9207
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "O5",
+          "targetLabel": "shitcoiner at heart",
+          "sourceRect": [
+            253.4717,
+            711.4412,
+            394.0755,
+            723.5735
+          ],
+          "transferredRect": [
+            241.1245,
+            712.4207,
+            381.7283,
+            724.553
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "O4",
+          "targetLabel": "buying the dip",
+          "sourceRect": [
+            320.0377,
+            528.2426,
+            425.7736,
+            539.8897
+          ],
+          "transferredRect": [
+            624.0134,
+            529.2221,
+            729.7492,
+            540.8692
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "B4",
+          "targetLabel": "$1 billion",
+          "sourceRect": [
+            114.9057,
+            581.8676,
+            174.4528,
+            593.2721
+          ],
+          "transferredRect": [
+            875.3341,
+            582.8471,
+            934.8813,
+            594.2515
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "G5",
+          "targetLabel": "Volcano Bonds",
+          "sourceRect": [
+            198.0,
+            617.2941,
+            288.7925,
+            628.9412
+          ],
+          "transferredRect": [
+            760.9945,
+            618.2736,
+            851.787,
+            629.9207
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "O5",
+          "targetLabel": "shitcoiner at heart",
+          "sourceRect": [
+            253.4717,
+            711.4412,
+            394.0755,
+            723.5735
+          ],
+          "transferredRect": [
+            655.7115,
+            712.4207,
+            796.3153,
+            724.553
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "O4",
+          "targetLabel": "buying the dip",
+          "sourceRect": [
+            320.0377,
+            528.2426,
+            425.7736,
+            539.8897
+          ],
+          "transferredRect": [
+            173.8792,
+            529.2221,
+            279.6151,
+            540.8692
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "B4",
+          "targetLabel": "$1 billion",
+          "sourceRect": [
+            114.9057,
+            581.8676,
+            174.4528,
+            593.2721
+          ],
+          "transferredRect": [
+            425.2,
+            582.8471,
+            484.7472,
+            594.2515
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "G5",
+          "targetLabel": "Volcano Bonds",
+          "sourceRect": [
+            198.0,
+            617.2941,
+            288.7925,
+            628.9412
+          ],
+          "transferredRect": [
+            310.8604,
+            618.2736,
+            401.6528,
+            629.9207
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "O5",
+          "targetLabel": "shitcoiner at heart",
+          "sourceRect": [
+            253.4717,
+            711.4412,
+            394.0755,
+            723.5735
+          ],
+          "transferredRect": [
+            205.5773,
+            712.4207,
+            346.1811,
+            724.553
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        }
+      ],
+      "variantSummaryRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "boxRows": 4,
+          "textHitRows": 0,
+          "targetTermRows": 0,
+          "strictTermRows": 0,
+          "targetIds": [],
+          "targetOrder": [],
+          "candidate": false,
+          "allFourTargets": false,
+          "activeOrderTargets": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "boxRows": 4,
+          "textHitRows": 0,
+          "targetTermRows": 0,
+          "strictTermRows": 0,
+          "targetIds": [],
+          "targetOrder": [],
+          "candidate": false,
+          "allFourTargets": false,
+          "activeOrderTargets": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "boxRows": 4,
+          "textHitRows": 0,
+          "targetTermRows": 0,
+          "strictTermRows": 0,
+          "targetIds": [],
+          "targetOrder": [],
+          "candidate": false,
+          "allFourTargets": false,
+          "activeOrderTargets": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "boxRows": 4,
+          "textHitRows": 0,
+          "targetTermRows": 0,
+          "strictTermRows": 0,
+          "targetIds": [],
+          "targetOrder": [],
+          "candidate": false,
+          "allFourTargets": false,
+          "activeOrderTargets": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "boxRows": 4,
+          "textHitRows": 0,
+          "targetTermRows": 0,
+          "strictTermRows": 0,
+          "targetIds": [],
+          "targetOrder": [],
+          "candidate": false,
+          "allFourTargets": false,
+          "activeOrderTargets": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "boxRows": 4,
+          "textHitRows": 0,
+          "targetTermRows": 0,
+          "strictTermRows": 0,
+          "targetIds": [],
+          "targetOrder": [],
+          "candidate": false,
+          "allFourTargets": false,
+          "activeOrderTargets": false
+        }
+      ]
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "overdoseHeaderRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "pageWidth": 612.0,
+          "pageHeight": 792.0,
+          "headerBbox": [
+            504.239990234375,
+            35.91998291015625,
+            537.750244140625,
+            41.92598342895508
+          ],
+          "headerCenter": [
+            520.9951171875,
+            38.922983169555664
+          ],
+          "wordCount": 1
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "pageWidth": 612.0,
+          "pageHeight": 792.0,
+          "headerBbox": [
+            514.3200073242188,
+            29.4000244140625,
+            547.8141479492188,
+            36.40702438354492
+          ],
+          "headerCenter": [
+            531.0670776367188,
+            32.90352439880371
+          ],
+          "wordCount": 265
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "pageWidth": 612.0,
+          "pageHeight": 792.0,
+          "headerBbox": [
+            502.0799865722656,
+            30.8800048828125,
+            535.3598022460938,
+            36.88600540161133
+          ],
+          "headerCenter": [
+            518.7198944091797,
+            33.883005142211914
+          ],
+          "wordCount": 202
+        }
+      ],
+      "transferRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "O4",
+          "targetLabel": "buying the dip",
+          "sourceRect": [
+            320.0377,
+            528.2426,
+            425.7736,
+            539.8897
+          ],
+          "transferredRect": [
+            309.9658,
+            534.2621,
+            415.7016,
+            545.9092
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "B4",
+          "targetLabel": "$1 billion",
+          "sourceRect": [
+            114.9057,
+            581.8676,
+            174.4528,
+            593.2721
+          ],
+          "transferredRect": [
+            104.8337,
+            587.8871,
+            164.3809,
+            599.2915
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "G5",
+          "targetLabel": "Volcano Bonds",
+          "sourceRect": [
+            198.0,
+            617.2941,
+            288.7925,
+            628.9412
+          ],
+          "transferredRect": [
+            187.928,
+            623.3136,
+            278.7205,
+            634.9606
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "O5",
+          "targetLabel": "shitcoiner at heart",
+          "sourceRect": [
+            253.4717,
+            711.4412,
+            394.0755,
+            723.5735
+          ],
+          "transferredRect": [
+            243.3997,
+            717.4606,
+            384.0035,
+            729.593
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "O4",
+          "targetLabel": "buying the dip",
+          "sourceRect": [
+            320.0377,
+            528.2426,
+            425.7736,
+            539.8897
+          ],
+          "transferredRect": [
+            626.2886,
+            534.2621,
+            732.0245,
+            545.9092
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "B4",
+          "targetLabel": "$1 billion",
+          "sourceRect": [
+            114.9057,
+            581.8676,
+            174.4528,
+            593.2721
+          ],
+          "transferredRect": [
+            877.6094,
+            587.8871,
+            937.1565,
+            599.2915
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "G5",
+          "targetLabel": "Volcano Bonds",
+          "sourceRect": [
+            198.0,
+            617.2941,
+            288.7925,
+            628.9412
+          ],
+          "transferredRect": [
+            763.2697,
+            623.3136,
+            854.0622,
+            634.9606
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "O5",
+          "targetLabel": "shitcoiner at heart",
+          "sourceRect": [
+            253.4717,
+            711.4412,
+            394.0755,
+            723.5735
+          ],
+          "transferredRect": [
+            657.9867,
+            717.4606,
+            798.5905,
+            729.593
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "O4",
+          "targetLabel": "buying the dip",
+          "sourceRect": [
+            320.0377,
+            528.2426,
+            425.7736,
+            539.8897
+          ],
+          "transferredRect": [
+            176.1545,
+            534.2621,
+            281.8903,
+            545.9092
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "B4",
+          "targetLabel": "$1 billion",
+          "sourceRect": [
+            114.9057,
+            581.8676,
+            174.4528,
+            593.2721
+          ],
+          "transferredRect": [
+            427.4752,
+            587.8871,
+            487.0224,
+            599.2915
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "G5",
+          "targetLabel": "Volcano Bonds",
+          "sourceRect": [
+            198.0,
+            617.2941,
+            288.7925,
+            628.9412
+          ],
+          "transferredRect": [
+            313.1356,
+            623.3136,
+            403.928,
+            634.9606
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "target": "O5",
+          "targetLabel": "shitcoiner at heart",
+          "sourceRect": [
+            253.4717,
+            711.4412,
+            394.0755,
+            723.5735
+          ],
+          "transferredRect": [
+            207.8526,
+            717.4606,
+            348.4563,
+            729.593
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "O4",
+          "targetLabel": "buying the dip",
+          "sourceRect": [
+            320.0377,
+            528.2426,
+            425.7736,
+            539.8897
+          ],
+          "transferredRect": [
+            307.6906,
+            529.2221,
+            413.4264,
+            540.8692
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "B4",
+          "targetLabel": "$1 billion",
+          "sourceRect": [
+            114.9057,
+            581.8676,
+            174.4528,
+            593.2721
+          ],
+          "transferredRect": [
+            102.5585,
+            582.8471,
+            162.1056,
+            594.2515
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "G5",
+          "targetLabel": "Volcano Bonds",
+          "sourceRect": [
+            198.0,
+            617.2941,
+            288.7925,
+            628.9412
+          ],
+          "transferredRect": [
+            185.6528,
+            618.2736,
+            276.4453,
+            629.9207
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "O5",
+          "targetLabel": "shitcoiner at heart",
+          "sourceRect": [
+            253.4717,
+            711.4412,
+            394.0755,
+            723.5735
+          ],
+          "transferredRect": [
+            241.1245,
+            712.4207,
+            381.7283,
+            724.553
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "O4",
+          "targetLabel": "buying the dip",
+          "sourceRect": [
+            320.0377,
+            528.2426,
+            425.7736,
+            539.8897
+          ],
+          "transferredRect": [
+            624.0134,
+            529.2221,
+            729.7492,
+            540.8692
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "B4",
+          "targetLabel": "$1 billion",
+          "sourceRect": [
+            114.9057,
+            581.8676,
+            174.4528,
+            593.2721
+          ],
+          "transferredRect": [
+            875.3341,
+            582.8471,
+            934.8813,
+            594.2515
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "G5",
+          "targetLabel": "Volcano Bonds",
+          "sourceRect": [
+            198.0,
+            617.2941,
+            288.7925,
+            628.9412
+          ],
+          "transferredRect": [
+            760.9945,
+            618.2736,
+            851.787,
+            629.9207
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "O5",
+          "targetLabel": "shitcoiner at heart",
+          "sourceRect": [
+            253.4717,
+            711.4412,
+            394.0755,
+            723.5735
+          ],
+          "transferredRect": [
+            655.7115,
+            712.4207,
+            796.3153,
+            724.553
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "O4",
+          "targetLabel": "buying the dip",
+          "sourceRect": [
+            320.0377,
+            528.2426,
+            425.7736,
+            539.8897
+          ],
+          "transferredRect": [
+            173.8792,
+            529.2221,
+            279.6151,
+            540.8692
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "B4",
+          "targetLabel": "$1 billion",
+          "sourceRect": [
+            114.9057,
+            581.8676,
+            174.4528,
+            593.2721
+          ],
+          "transferredRect": [
+            425.2,
+            582.8471,
+            484.7472,
+            594.2515
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "G5",
+          "targetLabel": "Volcano Bonds",
+          "sourceRect": [
+            198.0,
+            617.2941,
+            288.7925,
+            628.9412
+          ],
+          "transferredRect": [
+            310.8604,
+            618.2736,
+            401.6528,
+            629.9207
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "target": "O5",
+          "targetLabel": "shitcoiner at heart",
+          "sourceRect": [
+            253.4717,
+            711.4412,
+            394.0755,
+            723.5735
+          ],
+          "transferredRect": [
+            205.5773,
+            712.4207,
+            346.1811,
+            724.553
+          ],
+          "wordHitCount": 0,
+          "wordText": "",
+          "targetTermHits": [],
+          "targetTermHitCount": 0,
+          "strictTermHits": [],
+          "strictTermHitCount": 0
+        }
+      ],
+      "variantSummaryRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "boxRows": 4,
+          "textHitRows": 0,
+          "targetTermRows": 0,
+          "strictTermRows": 0,
+          "targetIds": [],
+          "targetOrder": [],
+          "candidate": false,
+          "allFourTargets": false,
+          "activeOrderTargets": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "boxRows": 4,
+          "textHitRows": 0,
+          "targetTermRows": 0,
+          "strictTermRows": 0,
+          "targetIds": [],
+          "targetOrder": [],
+          "candidate": false,
+          "allFourTargets": false,
+          "activeOrderTargets": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 74,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -10.072,
+            6.0195
+          ],
+          "boxRows": 4,
+          "textHitRows": 0,
+          "targetTermRows": 0,
+          "strictTermRows": 0,
+          "targetIds": [],
+          "targetOrder": [],
+          "candidate": false,
+          "allFourTargets": false,
+          "activeOrderTargets": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "direct_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "boxRows": 4,
+          "textHitRows": 0,
+          "targetTermRows": 0,
+          "strictTermRows": 0,
+          "targetIds": [],
+          "targetOrder": [],
+          "candidate": false,
+          "allFourTargets": false,
+          "activeOrderTargets": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_header_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "boxRows": 4,
+          "textHitRows": 0,
+          "targetTermRows": 0,
+          "strictTermRows": 0,
+          "targetIds": [],
+          "targetOrder": [],
+          "candidate": false,
+          "allFourTargets": false,
+          "activeOrderTargets": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "destArticlePage": 78,
+          "variant": "x_mirror_about_page_center_delta",
+          "headerDelta": [
+            -12.3472,
+            0.9795
+          ],
+          "boxRows": 4,
+          "textHitRows": 0,
+          "targetTermRows": 0,
+          "strictTermRows": 0,
+          "targetIds": [],
+          "targetOrder": [],
+          "candidate": false,
+          "allFourTargets": false,
+          "activeOrderTargets": false
+        }
+      ]
+    }
+  ],
+  "decision": {
+    "currentPdfOverdoseHeaderDeltaTransferGate": "current_pdf_overdose_header_delta_transfer_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Measured repeated-OVERDOSE header offsets do not transfer active target boxes onto strict unit/order wording, all-four target coverage, or active-order target structure.",
+    "nextMove": "Treat repeated OVERDOSE header offsets as layout context only unless new source material supplies unit/order evidence."
+  },
+  "sheet": "analysis_outputs/source_audit/current_pdf_overdose_header_delta_transfer_gate/current_pdf_overdose_header_delta_transfer_gate_sheet.jpg"
+}

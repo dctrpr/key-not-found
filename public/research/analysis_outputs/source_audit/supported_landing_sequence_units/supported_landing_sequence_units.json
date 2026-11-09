@@ -1,0 +1,252 @@
+{
+  "createdAt": "2026-05-20T05:55:30",
+  "scope": "Supported page-76 landing-line sequence unit audit; no key derivation.",
+  "supportedRows": [
+    {
+      "sourceId": "O1",
+      "sourceColor": "O",
+      "sourceIndex": 1,
+      "targetLine0": 1,
+      "targetLine1": 2,
+      "score": 5,
+      "layers": [
+        "highlight target",
+        "reflected highlight graph"
+      ],
+      "targetUnits": [
+        "O2"
+      ],
+      "targetText": "Bitcoin. It's the freaking UTXO ghetto up in here, y'all.",
+      "lineFirstWord": "Bitcoin",
+      "lineLastWord": "all",
+      "interestingLineWords": [
+        "Bitcoin",
+        "freaking",
+        "UTXO",
+        "ghetto"
+      ],
+      "evidenceTerms": [
+        "bitcoin",
+        "bitcoin",
+        "bitcoin"
+      ],
+      "preferredTerm": "bitcoin"
+    },
+    {
+      "sourceId": "B1",
+      "sourceColor": "B",
+      "sourceIndex": 1,
+      "targetLine0": 7,
+      "targetLine1": 8,
+      "score": 5,
+      "layers": [
+        "highlight target",
+        "reflected highlight graph"
+      ],
+      "targetUnits": [
+        "B2"
+      ],
+      "targetText": "nonsense (and 10 years of watching Peter Schiff miss buying bitcoin",
+      "lineFirstWord": "nonsense",
+      "lineLastWord": "bitcoin",
+      "interestingLineWords": [
+        "nonsense",
+        "years",
+        "watching",
+        "Peter",
+        "Schiff",
+        "miss",
+        "buying",
+        "bitcoin"
+      ],
+      "evidenceTerms": [
+        "bitcoin",
+        "bitcoin",
+        "bitcoin"
+      ],
+      "preferredTerm": "bitcoin"
+    },
+    {
+      "sourceId": "O3",
+      "sourceColor": "O",
+      "sourceIndex": 3,
+      "targetLine0": 16,
+      "targetLine1": 17,
+      "score": 5,
+      "layers": [
+        "highlight target",
+        "reflected highlight graph"
+      ],
+      "targetUnits": [
+        "B3"
+      ],
+      "targetText": "laundering lobotomy. It’s a stun gun to the genitals.",
+      "lineFirstWord": "laundering",
+      "lineLastWord": "genitals",
+      "interestingLineWords": [
+        "laundering",
+        "lobotomy",
+        "stun",
+        "genitals"
+      ],
+      "evidenceTerms": [
+        "genitals",
+        "stun",
+        "genitals",
+        "stun",
+        "genitals",
+        "stun"
+      ],
+      "preferredTerm": "genitals"
+    },
+    {
+      "sourceId": "O4",
+      "sourceColor": "O",
+      "sourceIndex": 4,
+      "targetLine0": 26,
+      "targetLine1": 27,
+      "score": 6,
+      "layers": [
+        "p78_bbox_words",
+        "p78_dark_words",
+        "reflected highlight graph"
+      ],
+      "targetUnits": [],
+      "targetText": "billions worth of future bitcoin earnings",
+      "lineFirstWord": "billions",
+      "lineLastWord": "earnings",
+      "interestingLineWords": [
+        "billions",
+        "bitcoin",
+        "earnings"
+      ],
+      "evidenceTerms": [
+        "earnings",
+        "earnings",
+        "bitcoin",
+        "bitcoin",
+        "bitcoin"
+      ],
+      "preferredTerm": "earnings"
+    },
+    {
+      "sourceId": "B4",
+      "sourceColor": "B",
+      "sourceIndex": 4,
+      "targetLine0": 29,
+      "targetLine1": 30,
+      "score": 5,
+      "layers": [
+        "p78_bbox_words",
+        "p78_dark_words",
+        "p78_hole_words"
+      ],
+      "targetUnits": [],
+      "targetText": "Novogratz in the tweet, figuring he could sell a",
+      "lineFirstWord": "Novogratz",
+      "lineLastWord": "a",
+      "interestingLineWords": [
+        "Novogratz",
+        "tweet",
+        "figuring",
+        "sell"
+      ],
+      "evidenceTerms": [
+        "sell"
+      ],
+      "preferredTerm": "sell"
+    },
+    {
+      "sourceId": "B5",
+      "sourceColor": "B",
+      "sourceIndex": 5,
+      "targetLine0": 32,
+      "targetLine1": 33,
+      "score": 8,
+      "layers": [
+        "highlight target",
+        "reflected highlight graph",
+        "target convergence"
+      ],
+      "targetUnits": [
+        "O5"
+      ],
+      "targetText": "Maybe because he's a shitcoiner at heart.",
+      "lineFirstWord": "Maybe",
+      "lineLastWord": "heart",
+      "interestingLineWords": [
+        "Maybe",
+        "shitcoiner",
+        "heart"
+      ],
+      "evidenceTerms": [
+        "heart",
+        "heart",
+        "heart"
+      ],
+      "preferredTerm": "heart"
+    }
+  ],
+  "unsupportedRows": [
+    {
+      "sourceId": "O2",
+      "sourceIndex": 2,
+      "targetLine": 3,
+      "targetUnits": [],
+      "targetText": "but George Clinton and James Brown clones. It's Martin Luther",
+      "score": 0,
+      "layers": [],
+      "evidence": []
+    },
+    {
+      "sourceId": "B2",
+      "sourceIndex": 2,
+      "targetLine": 9,
+      "targetUnits": [],
+      "targetText": "have dulled shitcoiners' and nocoiners' minds.",
+      "score": 0,
+      "layers": [],
+      "evidence": []
+    },
+    {
+      "sourceId": "B3",
+      "sourceIndex": 3,
+      "targetLine": 19,
+      "targetUnits": [],
+      "targetText": "Don't believe me?",
+      "score": 0,
+      "layers": [],
+      "evidence": []
+    }
+  ],
+  "streams": {
+    "sourceIds": "O1 B1 O3 O4 B4 B5",
+    "sourceColors": "OBOOBB",
+    "sourceIndices": "113445",
+    "targetLines0": "1 7 16 26 29 32",
+    "targetLines1": "2 8 17 27 30 33",
+    "lineFirstWords": "Bitcoin nonsense laundering billions Novogratz Maybe",
+    "lineFirstInitials": "BnlbNM",
+    "lineLastWords": "all bitcoin genitals earnings a heart",
+    "lineLastLetters": "lnssat",
+    "preferredTerms": "bitcoin bitcoin genitals earnings sell heart",
+    "preferredTermInitials": "bbgesh",
+    "evidenceTerms": "bitcoin bitcoin bitcoin bitcoin bitcoin bitcoin genitals stun genitals stun genitals stun earnings earnings bitcoin bitcoin bitcoin sell heart heart heart",
+    "evidenceTermInitials": "bbbbbbgsgsgseebbbshhh",
+    "scores": "555658",
+    "unsupportedFirstWords": "but have Don",
+    "unsupportedFirstInitials": "bhD",
+    "unsupportedLastWords": "Luther minds me",
+    "unsupportedLastLetters": "rse"
+  },
+  "instructionTermHits": [
+    "up"
+  ],
+  "assessment": [
+    "The supported landing sequence is O1, B1, O3, O4, B4, B5 with source-color stream OBOOBB and index stream 113445.",
+    "The obvious landing-line streams are not instruction-like: first-word initials BnlbNM, preferred-term initials Bbgecs, and evidence-term initials bbbsebbbecc.",
+    "The supported #4 lines add real p78-graphic evidence, but they still do not define whether to extract a word, letter, line number, color, or adjacent unit.",
+    "Treat supported landing lines as target-location evidence only."
+  ],
+  "nextMove": "Look for a source/provenance rule outside the landing-line text, especially in p78/p79/p80 graphics or physical registration, that names the extraction unit."
+}

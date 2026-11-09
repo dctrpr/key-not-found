@@ -1,0 +1,227 @@
+{
+  "createdAt": "2026-05-20T20:24:05",
+  "scope": "Active O4/B4/G5/O5 label/index provenance audit; no key derivation.",
+  "sources": {
+    "map": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "obboAnchors": "analysis_outputs/source_audit/obbo_highres_boundary_coincidences/obbo_highres_boundary_coincidences.json",
+    "authority": "analysis_outputs/source_audit/active_text_authority_drift/active_text_authority_drift.json",
+    "typography": "analysis_outputs/source_audit/page76_typography_overlay/page76_typography_overlay.json"
+  },
+  "page76OrangeHighlightCount": 5,
+  "recordsTopToBottom": [
+    {
+      "label": "O4",
+      "prefix": "O",
+      "number": 4,
+      "phrase": "buying the dip.",
+      "center": [
+        1544.0,
+        2193.0
+      ],
+      "box": [
+        1328.0,
+        2160.0,
+        1760.0,
+        2226.0
+      ],
+      "docmHighlightCounts": {
+        "yellow": 13
+      },
+      "docmFontCounts": {
+        "Typeka": 13
+      },
+      "docmRunIndexes": [
+        124,
+        125
+      ],
+      "docmParagraphIndexes": [
+        63
+      ],
+      "viewerOcrFound": false,
+      "obboAnchorId": "buying_dip",
+      "typographyTargetId": "buying_dip",
+      "bestOrangeMatch": {
+        "highlightId": "p76_orange_4",
+        "ordinal": 4,
+        "box": [
+          1334.0,
+          2177.0,
+          1801.0,
+          2225.0
+        ],
+        "iou": 0.6709
+      },
+      "indexStatus": "source-backed orange ordinal",
+      "indexExplanation": "O4 matches p76_orange_4 with IoU 0.6709; the number is a reliable local orange-highlight order handle.",
+      "recommendedUse": "handle only"
+    },
+    {
+      "label": "B4",
+      "prefix": "B",
+      "number": 4,
+      "phrase": "$1 billion",
+      "center": [
+        560.0,
+        2423.5
+      ],
+      "box": [
+        430.0,
+        2400.0,
+        690.0,
+        2447.0
+      ],
+      "docmHighlightCounts": {
+        "black": 9
+      },
+      "docmFontCounts": {
+        "Typeka": 9
+      },
+      "docmRunIndexes": [
+        131
+      ],
+      "docmParagraphIndexes": [
+        66
+      ],
+      "viewerOcrFound": false,
+      "obboAnchorId": "one_billion",
+      "typographyTargetId": "one_billion",
+      "bestOrangeMatch": {
+        "highlightId": "p76_orange_1",
+        "ordinal": 1,
+        "box": [
+          808.0,
+          373.0,
+          2215.0,
+          425.0
+        ],
+        "iou": 0.0
+      },
+      "indexStatus": "analysis alias, not source-backed global index",
+      "indexExplanation": "B4 is confirmed as a black/grey DOCM-highlight target, but article_3d_map_data.json has no canonical black/grey highlight list or printed B/G numbering that derives this numeric suffix.",
+      "recommendedUse": "do not use as puzzle index"
+    },
+    {
+      "label": "G5",
+      "prefix": "G",
+      "number": 5,
+      "phrase": "Volcano Bonds",
+      "center": [
+        995.5,
+        2568.0
+      ],
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "docmHighlightCounts": {
+        "black": 12
+      },
+      "docmFontCounts": {
+        "Typeka": 12
+      },
+      "docmRunIndexes": [
+        137
+      ],
+      "docmParagraphIndexes": [
+        68
+      ],
+      "viewerOcrFound": false,
+      "obboAnchorId": "volcano_bonds",
+      "typographyTargetId": "volcano_bonds",
+      "bestOrangeMatch": {
+        "highlightId": "p76_orange_1",
+        "ordinal": 1,
+        "box": [
+          808.0,
+          373.0,
+          2215.0,
+          425.0
+        ],
+        "iou": 0.0
+      },
+      "indexStatus": "analysis alias, not source-backed global index",
+      "indexExplanation": "G5 is confirmed as a black/grey DOCM-highlight target, but article_3d_map_data.json has no canonical black/grey highlight list or printed B/G numbering that derives this numeric suffix.",
+      "recommendedUse": "do not use as puzzle index"
+    },
+    {
+      "label": "O5",
+      "prefix": "O",
+      "number": 5,
+      "phrase": "shitcoiner at heart.",
+      "center": [
+        1350.5,
+        2957.0
+      ],
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "docmHighlightCounts": {
+        "yellow": 18
+      },
+      "docmFontCounts": {
+        "Typeka": 18
+      },
+      "docmRunIndexes": [
+        151
+      ],
+      "docmParagraphIndexes": [
+        73
+      ],
+      "viewerOcrFound": false,
+      "obboAnchorId": "shitcoiner_heart",
+      "typographyTargetId": "shitcoiner_heart",
+      "bestOrangeMatch": {
+        "highlightId": "p76_orange_5",
+        "ordinal": 5,
+        "box": [
+          1040.0,
+          2932.0,
+          1661.0,
+          2982.0
+        ],
+        "iou": 1.0
+      },
+      "indexStatus": "source-backed orange ordinal",
+      "indexExplanation": "O5 matches p76_orange_5 with IoU 1.0; the number is a reliable local orange-highlight order handle.",
+      "recommendedUse": "handle only"
+    }
+  ],
+  "streams": {
+    "activeLabelStream": "O4B4G5O5",
+    "activeNumberStream": "4455",
+    "activeColorStream": "OBBO",
+    "docmParagraphStream": "63 66 68 73",
+    "docmRunStream": "124 131 137 151",
+    "phraseInitialStream": "b1vs"
+  },
+  "streamInstructionHits": {
+    "activeLabelStream": [],
+    "activeNumberStream": [],
+    "activeColorStream": [],
+    "docmParagraphStream": [],
+    "docmRunStream": [],
+    "phraseInitialStream": []
+  },
+  "orangeIndexRecords": [
+    "O4",
+    "O5"
+  ],
+  "nonOrangeIndexRecords": [
+    "B4",
+    "G5"
+  ],
+  "assessment": [
+    "O4 and O5 are source-backed only as orange-highlight ordinals on page 76.",
+    "B4 and G5 are confirmed target handles, but their numeric suffixes are not derived from a canonical source-side B/G highlight index in the current files.",
+    "The active visual order is O4 -> B4 -> G5 -> O5, but this is a report order, not an independent instruction.",
+    "No compact stream from labels, digits, colors, DOCM paragraph indexes, DOCM run indexes, or phrase initials contains instruction terms.",
+    "Therefore 4455, O4B4G5O5, and mixed B/G/O numbering should not be promoted into key material or selectors without a new clue naming numbers/indexes."
+  ],
+  "decision": "Use O4/B4/G5/O5 as report handles only. The only source-backed numeric part is the orange local order for O4/O5; the mixed label stream is not a puzzle rule under current evidence.",
+  "nextMove": "Stop local label-number inference. Future progress should come from a new source/original-layout/physical witness or a clue that names an extraction unit and order."
+}

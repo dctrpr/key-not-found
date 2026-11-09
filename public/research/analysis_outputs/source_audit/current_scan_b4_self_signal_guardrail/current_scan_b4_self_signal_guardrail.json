@@ -1,0 +1,599 @@
+{
+  "createdAt": "2026-05-24T09:11:52",
+  "scope": "valid page-75-to-76 average-blend B4 self-signal guardrail; no extraction or candidate generation",
+  "inputs": {
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "sourceInkLanding": "analysis_outputs/source_audit/current_scan_valid_leaf_source_ink_landing_gate/current_scan_valid_leaf_source_ink_landing_gate.json",
+    "lightTableBlendMode": "analysis_outputs/source_audit/current_scan_light_table_blend_mode_gate/current_scan_light_table_blend_mode_gate.json",
+    "jitterRescue": "analysis_outputs/source_audit/current_scan_valid_leaf_jitter_source_ink_rescue_gate/current_scan_valid_leaf_jitter_source_ink_rescue_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "summary": {
+    "scenarioId": "valid_75_to_76_natural",
+    "sourcePage": 75,
+    "targetPage": 76,
+    "heldToLightMode": "natural_hflip",
+    "dx": 0,
+    "dy": 0,
+    "blendMode": "average",
+    "alpha": 0.7,
+    "targetCount": 4,
+    "controlBoxCount": 24,
+    "estimatedLinePitchPx": 74.55,
+    "sourceInkLumaThreshold": 238.0,
+    "targetInkLumaThreshold": 238.0,
+    "sourceSupportedOutlierTargets": [
+      "O4",
+      "G5",
+      "O5"
+    ],
+    "zeroSourceSelfSignalTargets": [
+      "B4"
+    ],
+    "allFourSourceSupportedOutlier": false,
+    "b4SourceInkRatio": 0.0,
+    "b4TargetInkRatio": 0.763045,
+    "b4TargetDarkRatio": 0.676968,
+    "b4AverageDelta": 115.832322,
+    "b4MatchedControlP95AverageDelta": 30.777021,
+    "b4DeltaAboveMatchedControlP95": 85.055301,
+    "b4TargetOnlyDeltaShare": 0.995667,
+    "b4WhiteSourceDeltaShare": 1.0,
+    "b4SourceSupportedDeltaShare": 0.0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "b4SelfSignalFingerprint": "scenario=valid_75_to_76_natural|alpha=0.70|targets=4|controls=24|B4src=0.0000|B4targetOnly=0.9957|B4srcDelta=0.0000|B4dCtl=85.06|srcOutliers=3/4|selfZero=B4|all4Src=0|sourceR3=0|triggers=0/9|selectors=0",
+    "priorSourceInkLandingFingerprint": "scenario=valid_75_to_76_natural|targets=4|controls=24|activeGe05=3|activeGe01=3|all4Ge05=0|all4Ge01=0|zeroTargets=B4|ratios=O4:0.1402,B4:0.0000,G5:0.0596,O5:0.1940|sourceR3=0|triggers=0/9|selectors=0",
+    "priorBlendModeFingerprint": "scenarios=4|modes=5|alphas=3|blendRows=60|controls=24|naturalAll4Outlier=3|controlAll4Outlier=0|naturalAll4Source=0|controlAll4Source=0|bestNatural=4/4:3/4src:average@0.70:29.55|bestControl=3/4:3/4src:nonphysical_79_to_76_forced_active:average@0.35:-10.50|preR3=0|sourceR3=0|triggers=0/9|selectors=0",
+    "priorJitterRescueFingerprint": "credible=+-4|extended=+-8|credibleRows=81|extendedRows=289|credAll4=0|extAll4=0|credB4Pos=0|extB4Pos=0|bestCred=0,0:3/4:B4=0.0000:min=0.0000|bestExt=0,0:3/4:B4=0.0000:min=0.0000|bestCredRatios=O4:0.1402,B4:0.0000,G5:0.0596,O5:0.1940|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "activeMetricRows": [
+    {
+      "id": "buying_dip",
+      "shortId": "O4",
+      "phrase": "buying the dip",
+      "visualState": "Y",
+      "pageLine": 22,
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "averageDelta": 93.322166,
+      "targetInkRatio": 0.994647,
+      "targetDarkRatio": 0.47417,
+      "sourceInkRatio": 0.140212,
+      "sourceSupportedDeltaShare": 0.114705,
+      "targetOnlyDeltaShare": 0.884764,
+      "whiteSourceDeltaShare": 0.885295,
+      "matchedControlP95AverageDelta": 63.773729,
+      "deltaAboveMatchedControlP95": 29.548437,
+      "sourceSupportedOutlier": true,
+      "zeroSourceSelfSignal": false
+    },
+    {
+      "id": "one_billion",
+      "shortId": "B4",
+      "phrase": "$1 billion",
+      "visualState": "K",
+      "pageLine": 25,
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "averageDelta": 115.832322,
+      "targetInkRatio": 0.763045,
+      "targetDarkRatio": 0.676968,
+      "sourceInkRatio": 0.0,
+      "sourceSupportedDeltaShare": 0.0,
+      "targetOnlyDeltaShare": 0.995667,
+      "whiteSourceDeltaShare": 1.0,
+      "matchedControlP95AverageDelta": 30.777021,
+      "deltaAboveMatchedControlP95": 85.055301,
+      "sourceSupportedOutlier": false,
+      "zeroSourceSelfSignal": true
+    },
+    {
+      "id": "volcano_bonds",
+      "shortId": "G5",
+      "phrase": "Volcano Bonds",
+      "visualState": "K",
+      "pageLine": 27,
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "averageDelta": 118.949778,
+      "targetInkRatio": 0.817643,
+      "targetDarkRatio": 0.722205,
+      "sourceInkRatio": 0.059643,
+      "sourceSupportedDeltaShare": 0.032702,
+      "targetOnlyDeltaShare": 0.963742,
+      "whiteSourceDeltaShare": 0.967298,
+      "matchedControlP95AverageDelta": 50.123852,
+      "deltaAboveMatchedControlP95": 68.825926,
+      "sourceSupportedOutlier": true,
+      "zeroSourceSelfSignal": false
+    },
+    {
+      "id": "shitcoiner_heart",
+      "shortId": "O5",
+      "phrase": "shitcoiner at heart",
+      "visualState": "Y",
+      "pageLine": 32,
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "averageDelta": 87.761922,
+      "targetInkRatio": 0.978422,
+      "targetDarkRatio": 0.466699,
+      "sourceInkRatio": 0.194042,
+      "sourceSupportedDeltaShare": 0.14959,
+      "targetOnlyDeltaShare": 0.849008,
+      "whiteSourceDeltaShare": 0.85041,
+      "matchedControlP95AverageDelta": 42.721548,
+      "deltaAboveMatchedControlP95": 45.040374,
+      "sourceSupportedOutlier": true,
+      "zeroSourceSelfSignal": false
+    }
+  ],
+  "controlMetricRows": [
+    {
+      "id": "O4_line_-3",
+      "sourceTarget": "O4",
+      "lineOffset": -3,
+      "box": [
+        1334.0,
+        1953.35,
+        1801.0,
+        2001.35
+      ],
+      "averageDelta": 49.247353,
+      "targetInkRatio": 0.000134,
+      "targetDarkRatio": 0.0,
+      "sourceInkRatio": 0.492148,
+      "sourceSupportedDeltaShare": 0.983512,
+      "targetOnlyDeltaShare": 3e-05,
+      "whiteSourceDeltaShare": 0.016488
+    },
+    {
+      "id": "O4_line_-2",
+      "sourceTarget": "O4",
+      "lineOffset": -2,
+      "box": [
+        1334.0,
+        2027.9,
+        1801.0,
+        2075.9
+      ],
+      "averageDelta": 22.74026,
+      "targetInkRatio": 0.073831,
+      "targetDarkRatio": 0.050455,
+      "sourceInkRatio": 0.119602,
+      "sourceSupportedDeltaShare": 0.583557,
+      "targetOnlyDeltaShare": 0.374346,
+      "whiteSourceDeltaShare": 0.416443
+    },
+    {
+      "id": "O4_line_-1",
+      "sourceTarget": "O4",
+      "lineOffset": -1,
+      "box": [
+        1334.0,
+        2102.45,
+        1801.0,
+        2150.45
+      ],
+      "averageDelta": 36.084092,
+      "targetInkRatio": 0.222029,
+      "targetDarkRatio": 0.141149,
+      "sourceInkRatio": 0.11581,
+      "sourceSupportedDeltaShare": 0.335254,
+      "targetOnlyDeltaShare": 0.634795,
+      "whiteSourceDeltaShare": 0.664746
+    },
+    {
+      "id": "O4_line_+1",
+      "sourceTarget": "O4",
+      "lineOffset": 1,
+      "box": [
+        1334.0,
+        2251.55,
+        1801.0,
+        2299.55
+      ],
+      "averageDelta": 37.683336,
+      "targetInkRatio": 0.179515,
+      "targetDarkRatio": 0.116301,
+      "sourceInkRatio": 0.159127,
+      "sourceSupportedDeltaShare": 0.469252,
+      "targetOnlyDeltaShare": 0.504056,
+      "whiteSourceDeltaShare": 0.530748
+    },
+    {
+      "id": "O4_line_+2",
+      "sourceTarget": "O4",
+      "lineOffset": 2,
+      "box": [
+        1334.0,
+        2326.1,
+        1801.0,
+        2374.1
+      ],
+      "averageDelta": 68.615855,
+      "targetInkRatio": 0.135082,
+      "targetDarkRatio": 0.085564,
+      "sourceInkRatio": 0.419433,
+      "sourceSupportedDeltaShare": 0.844532,
+      "targetOnlyDeltaShare": 0.145013,
+      "whiteSourceDeltaShare": 0.155468
+    },
+    {
+      "id": "O4_line_+3",
+      "sourceTarget": "O4",
+      "lineOffset": 3,
+      "box": [
+        1334.0,
+        2400.65,
+        1801.0,
+        2448.65
+      ],
+      "averageDelta": 35.205463,
+      "targetInkRatio": 0.057504,
+      "targetDarkRatio": 0.038901,
+      "sourceInkRatio": 0.27012,
+      "sourceSupportedDeltaShare": 0.798989,
+      "targetOnlyDeltaShare": 0.194252,
+      "whiteSourceDeltaShare": 0.201011
+    },
+    {
+      "id": "B4_line_-3",
+      "sourceTarget": "B4",
+      "lineOffset": -3,
+      "box": [
+        428.0,
+        2174.35,
+        691.0,
+        2221.35
+      ],
+      "averageDelta": 27.855028,
+      "targetInkRatio": 0.226276,
+      "targetDarkRatio": 0.151768,
+      "sourceInkRatio": 0.0,
+      "sourceSupportedDeltaShare": 0.0,
+      "targetOnlyDeltaShare": 0.967605,
+      "whiteSourceDeltaShare": 1.0
+    },
+    {
+      "id": "B4_line_-2",
+      "sourceTarget": "B4",
+      "lineOffset": -2,
+      "box": [
+        428.0,
+        2248.9,
+        691.0,
+        2295.9
+      ],
+      "averageDelta": 28.097133,
+      "targetInkRatio": 0.231939,
+      "targetDarkRatio": 0.15557,
+      "sourceInkRatio": 0.0,
+      "sourceSupportedDeltaShare": 0.0,
+      "targetOnlyDeltaShare": 0.97646,
+      "whiteSourceDeltaShare": 1.0
+    },
+    {
+      "id": "B4_line_-1",
+      "sourceTarget": "B4",
+      "lineOffset": -1,
+      "box": [
+        428.0,
+        2323.45,
+        691.0,
+        2370.45
+      ],
+      "averageDelta": 25.715773,
+      "targetInkRatio": 0.22846,
+      "targetDarkRatio": 0.138419,
+      "sourceInkRatio": 0.0,
+      "sourceSupportedDeltaShare": 0.0,
+      "targetOnlyDeltaShare": 0.975338,
+      "whiteSourceDeltaShare": 1.0
+    },
+    {
+      "id": "B4_line_+1",
+      "sourceTarget": "B4",
+      "lineOffset": 1,
+      "box": [
+        428.0,
+        2472.55,
+        691.0,
+        2519.55
+      ],
+      "averageDelta": 25.577057,
+      "targetInkRatio": 0.215355,
+      "targetDarkRatio": 0.140118,
+      "sourceInkRatio": 0.0,
+      "sourceSupportedDeltaShare": 0.0,
+      "targetOnlyDeltaShare": 0.971284,
+      "whiteSourceDeltaShare": 1.0
+    },
+    {
+      "id": "B4_line_+2",
+      "sourceTarget": "B4",
+      "lineOffset": 2,
+      "box": [
+        428.0,
+        2547.1,
+        691.0,
+        2594.1
+      ],
+      "averageDelta": 28.777931,
+      "targetInkRatio": 0.244479,
+      "targetDarkRatio": 0.157835,
+      "sourceInkRatio": 0.0,
+      "sourceSupportedDeltaShare": 0.0,
+      "targetOnlyDeltaShare": 0.973872,
+      "whiteSourceDeltaShare": 1.0
+    },
+    {
+      "id": "B4_line_+3",
+      "sourceTarget": "B4",
+      "lineOffset": 3,
+      "box": [
+        428.0,
+        2621.65,
+        691.0,
+        2668.65
+      ],
+      "averageDelta": 31.443384,
+      "targetInkRatio": 0.255643,
+      "targetDarkRatio": 0.176766,
+      "sourceInkRatio": 0.0,
+      "sourceSupportedDeltaShare": 0.0,
+      "targetOnlyDeltaShare": 0.976893,
+      "whiteSourceDeltaShare": 1.0
+    },
+    {
+      "id": "G5_line_-3",
+      "sourceTarget": "G5",
+      "lineOffset": -3,
+      "box": [
+        795.0,
+        2320.35,
+        1196.0,
+        2368.35
+      ],
+      "averageDelta": 24.645608,
+      "targetInkRatio": 0.212126,
+      "targetDarkRatio": 0.135547,
+      "sourceInkRatio": 0.0,
+      "sourceSupportedDeltaShare": 0.0,
+      "targetOnlyDeltaShare": 0.975527,
+      "whiteSourceDeltaShare": 1.0
+    },
+    {
+      "id": "G5_line_-2",
+      "sourceTarget": "G5",
+      "lineOffset": -2,
+      "box": [
+        795.0,
+        2394.9,
+        1196.0,
+        2442.9
+      ],
+      "averageDelta": 21.867519,
+      "targetInkRatio": 0.182409,
+      "targetDarkRatio": 0.121103,
+      "sourceInkRatio": 0.0,
+      "sourceSupportedDeltaShare": 0.0,
+      "targetOnlyDeltaShare": 0.974525,
+      "whiteSourceDeltaShare": 1.0
+    },
+    {
+      "id": "G5_line_-1",
+      "sourceTarget": "G5",
+      "lineOffset": -1,
+      "box": [
+        795.0,
+        2469.45,
+        1196.0,
+        2517.45
+      ],
+      "averageDelta": 26.311409,
+      "targetInkRatio": 0.215295,
+      "targetDarkRatio": 0.144379,
+      "sourceInkRatio": 0.000571,
+      "sourceSupportedDeltaShare": 0.001274,
+      "targetOnlyDeltaShare": 0.97475,
+      "whiteSourceDeltaShare": 0.998726
+    },
+    {
+      "id": "G5_line_+1",
+      "sourceTarget": "G5",
+      "lineOffset": 1,
+      "box": [
+        795.0,
+        2618.55,
+        1196.0,
+        2666.55
+      ],
+      "averageDelta": 45.625087,
+      "targetInkRatio": 0.220179,
+      "targetDarkRatio": 0.141937,
+      "sourceInkRatio": 0.184227,
+      "sourceSupportedDeltaShare": 0.505163,
+      "targetOnlyDeltaShare": 0.474492,
+      "whiteSourceDeltaShare": 0.494837
+    },
+    {
+      "id": "G5_line_+2",
+      "sourceTarget": "G5",
+      "lineOffset": 2,
+      "box": [
+        795.0,
+        2693.1,
+        1196.0,
+        2741.1
+      ],
+      "averageDelta": 51.623441,
+      "targetInkRatio": 0.232855,
+      "targetDarkRatio": 0.152016,
+      "sourceInkRatio": 0.219451,
+      "sourceSupportedDeltaShare": 0.539741,
+      "targetOnlyDeltaShare": 0.44064,
+      "whiteSourceDeltaShare": 0.460259
+    },
+    {
+      "id": "G5_line_+3",
+      "sourceTarget": "G5",
+      "lineOffset": 3,
+      "box": [
+        795.0,
+        2767.65,
+        1196.0,
+        2815.65
+      ],
+      "averageDelta": 42.518495,
+      "targetInkRatio": 0.209944,
+      "targetDarkRatio": 0.139963,
+      "sourceInkRatio": 0.174304,
+      "sourceSupportedDeltaShare": 0.461151,
+      "targetOnlyDeltaShare": 0.511973,
+      "whiteSourceDeltaShare": 0.538849
+    },
+    {
+      "id": "O5_line_-3",
+      "sourceTarget": "O5",
+      "lineOffset": -3,
+      "box": [
+        1040.0,
+        2708.35,
+        1661.0,
+        2758.35
+      ],
+      "averageDelta": 45.284262,
+      "targetInkRatio": 0.106055,
+      "targetDarkRatio": 0.06963,
+      "sourceInkRatio": 0.278293,
+      "sourceSupportedDeltaShare": 0.797281,
+      "targetOnlyDeltaShare": 0.185349,
+      "whiteSourceDeltaShare": 0.202719
+    },
+    {
+      "id": "O5_line_-2",
+      "sourceTarget": "O5",
+      "lineOffset": -2,
+      "box": [
+        1040.0,
+        2782.9,
+        1661.0,
+        2832.9
+      ],
+      "averageDelta": 32.691079,
+      "targetInkRatio": 0.105894,
+      "targetDarkRatio": 0.069855,
+      "sourceInkRatio": 0.196039,
+      "sourceSupportedDeltaShare": 0.662984,
+      "targetOnlyDeltaShare": 0.308244,
+      "whiteSourceDeltaShare": 0.337016
+    },
+    {
+      "id": "O5_line_-1",
+      "sourceTarget": "O5",
+      "lineOffset": -1,
+      "box": [
+        1040.0,
+        2857.45,
+        1661.0,
+        2907.45
+      ],
+      "averageDelta": 35.033408,
+      "targetInkRatio": 0.113333,
+      "targetDarkRatio": 0.077842,
+      "sourceInkRatio": 0.199259,
+      "sourceSupportedDeltaShare": 0.642365,
+      "targetOnlyDeltaShare": 0.330585,
+      "whiteSourceDeltaShare": 0.357635
+    },
+    {
+      "id": "O5_line_+1",
+      "sourceTarget": "O5",
+      "lineOffset": 1,
+      "box": [
+        1040.0,
+        3006.55,
+        1661.0,
+        3056.55
+      ],
+      "averageDelta": 0.028599,
+      "targetInkRatio": 0.000161,
+      "targetDarkRatio": 0.0,
+      "sourceInkRatio": 0.0,
+      "sourceSupportedDeltaShare": 0.0,
+      "targetOnlyDeltaShare": 0.097973,
+      "whiteSourceDeltaShare": 1.0
+    },
+    {
+      "id": "O5_line_+2",
+      "sourceTarget": "O5",
+      "lineOffset": 2,
+      "box": [
+        1040.0,
+        3081.1,
+        1661.0,
+        3131.1
+      ],
+      "averageDelta": 0.010467,
+      "targetInkRatio": 0.000129,
+      "targetDarkRatio": 0.0,
+      "sourceInkRatio": 0.0,
+      "sourceSupportedDeltaShare": 0.0,
+      "targetOnlyDeltaShare": 0.427692,
+      "whiteSourceDeltaShare": 1.0
+    },
+    {
+      "id": "O5_line_+3",
+      "sourceTarget": "O5",
+      "lineOffset": 3,
+      "box": [
+        1040.0,
+        3155.65,
+        1661.0,
+        3205.65
+      ],
+      "averageDelta": 0.016039,
+      "targetInkRatio": 0.000193,
+      "targetDarkRatio": 0.0,
+      "sourceInkRatio": 0.0,
+      "sourceSupportedDeltaShare": 0.0,
+      "targetOnlyDeltaShare": 0.222892,
+      "whiteSourceDeltaShare": 1.0
+    }
+  ],
+  "controlP95ByTarget": {
+    "O4": 63.773729,
+    "B4": 30.777021,
+    "G5": 50.123852,
+    "O5": 42.721548
+  },
+  "decision": {
+    "currentScanB4SelfSignalGuardrail": "current_scan_b4_self_signal_no_selector",
+    "selectorUnlocked": false,
+    "reason": "B4's average-blend pop is target-only: no valid page-75 source ink lands in B4, and its blend delta is carried by page-76 black target ink against a white/blank source area. This explains the visual all-four blend without promoting it as physical back-page evidence.",
+    "nextMove": "Stop treating B4 average-blend contrast as a source carrier. Continue only with true original-layout/physical source comparison or raw clue wording that supplies transform, unit, and order."
+  },
+  "overlay": "analysis_outputs/source_audit/current_scan_b4_self_signal_guardrail/b4_self_signal_delta_overlay.jpg",
+  "sheet": "analysis_outputs/source_audit/current_scan_b4_self_signal_guardrail/current_scan_b4_self_signal_guardrail_sheet.jpg",
+  "fingerprint": "scenario=valid_75_to_76_natural|alpha=0.70|targets=4|controls=24|B4src=0.0000|B4targetOnly=0.9957|B4srcDelta=0.0000|B4dCtl=85.06|srcOutliers=3/4|selfZero=B4|all4Src=0|sourceR3=0|triggers=0/9|selectors=0"
+}

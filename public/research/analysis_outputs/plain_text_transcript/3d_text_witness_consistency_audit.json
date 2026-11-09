@@ -1,0 +1,199 @@
+{
+  "createdAt": "2026-05-20T05:11:41",
+  "scope": "Compare corrected DOCM-derived text against 3D map internal text; no key derivation.",
+  "sources": {
+    "canonical": "analysis_outputs/plain_text_transcript/canonical_plain_article_body.txt",
+    "model": "analysis_outputs/3d_article_map/canonical_char_model.json"
+  },
+  "tokenCounts": {
+    "canonical": 1477,
+    "model": 1460
+  },
+  "sequenceMatchRatio": 0.987813,
+  "knownChecks": [
+    {
+      "canonicalPhrase": "puts an end",
+      "suspectPhrase": "puts and end",
+      "canonicalHasCanonical": true,
+      "modelHasCanonical": true,
+      "modelHasSuspect": false,
+      "modelContextCanonical": "s have been euthanized by the rancid catnip of fiat money. fortunately, bitcoin puts an end to the paper chase manhattan bank money laundering lobotomy. it's a stun gun to",
+      "modelContextSuspect": ""
+    },
+    {
+      "canonicalPhrase": "Volcano Bonds",
+      "suspectPhrase": "collateralized to pay off the IMF",
+      "canonicalHasCanonical": true,
+      "modelHasCanonical": true,
+      "modelHasSuspect": false,
+      "modelContextCanonical": "- that he should sell billions worth of future bitcoin earnings collateralized \"volcano bonds\" to pay off the imf loan and get rid of those leeches. i tagged mike novogratz ",
+      "modelContextSuspect": ""
+    },
+    {
+      "canonicalPhrase": "has gone",
+      "suspectPhrase": "nas gone",
+      "canonicalHasCanonical": true,
+      "modelHasCanonical": false,
+      "modelHasSuspect": true,
+      "modelContextCanonical": "",
+      "modelContextSuspect": "untry is now hyperbitcoinized (at the time of writing) jack mallers' strike app nas gone from 20,000 new sign-ups a day to a mind-bending 100,000 and growing. at this r"
+    },
+    {
+      "canonicalPhrase": "100,000",
+      "suspectPhrase": "1000,000",
+      "canonicalHasCanonical": true,
+      "modelHasCanonical": true,
+      "modelHasSuspect": false,
+      "modelContextCanonical": "k mallers' strike app nas gone from 20,000 new sign-ups a day to a mind-bending 100,000 and growing. at this rate, the whole country will be toxic bitcoin maximalists ",
+      "modelContextSuspect": ""
+    },
+    {
+      "canonicalPhrase": "salesmen",
+      "suspectPhrase": "salesman",
+      "canonicalHasCanonical": true,
+      "modelHasCanonical": true,
+      "modelHasSuspect": false,
+      "modelContextCanonical": "tcoin maximalists within six months. (sorry bhutan, you fell for that snake oil salesmen over at xrp. get ready to experience shitcoin hell. has anyone heard from roger",
+      "modelContextSuspect": ""
+    },
+    {
+      "canonicalPhrase": "gargantuanly",
+      "suspectPhrase": "gargantually",
+      "canonicalHasCanonical": true,
+      "modelHasCanonical": true,
+      "modelHasSuspect": false,
+      "modelContextCanonical": "ced espresso. the numbers don't lie. the energy industry in its current form is gargantuanly wasteful and requires money printing and wars to keep it going - all in the ser",
+      "modelContextSuspect": ""
+    },
+    {
+      "canonicalPhrase": "money printing",
+      "suspectPhrase": "requires printing",
+      "canonicalHasCanonical": true,
+      "modelHasCanonical": true,
+      "modelHasSuspect": false,
+      "modelContextCanonical": ". the energy industry in its current form is gargantuanly wasteful and requires money printing and wars to keep it going - all in the service of an uber class of banksters wh",
+      "modelContextSuspect": ""
+    },
+    {
+      "canonicalPhrase": "$2 trillion fiat cuck-bucks",
+      "suspectPhrase": "2 trillion fiat cuck bucks",
+      "canonicalHasCanonical": true,
+      "modelHasCanonical": true,
+      "modelHasSuspect": false,
+      "modelContextCanonical": "rth of hate toys in afghanistan, for example, for a war that some estimate cost $2 trillion fiat cuck-bucks. bitcoin fixes all this by replacing oil-dripping, corpse-ridden, poppy-harvest",
+      "modelContextSuspect": ""
+    },
+    {
+      "canonicalPhrase": "Bitcoin fills in the gap",
+      "suspectPhrase": "Bitcoin fills the gap",
+      "canonicalHasCanonical": true,
+      "modelHasCanonical": false,
+      "modelHasSuspect": true,
+      "modelContextCanonical": "",
+      "modelContextSuspect": "h perfect bitcoin. remove the war incentive, and you remove the hate incentive. bitcoin fills the gap with love; our most natural tendency if given a chance. the warmongers will sta"
+    },
+    {
+      "canonicalPhrase": "The economy of love is infinitely more efficient than hate and war.",
+      "suspectPhrase": "right there in the Genesis Block.\n\nTo wrap this up",
+      "canonicalHasCanonical": true,
+      "modelHasCanonical": true,
+      "modelHasSuspect": true,
+      "modelContextCanonical": "oin. love opens up the collective unconscious and our joint inner cosmic being. the economy of love is infinitely more efficient than hate and war. i listen to these eggheads - michael saylor, nic carter, marty bent - who spend",
+      "modelContextSuspect": "o the game-theorized bitcoin protocol, observable by anyone choosing to see it, right there in the genesis block. to wrap this up, as we move from a war and violence economy to a peace and love economy, the ef"
+    },
+    {
+      "canonicalPhrase": "gets monetized for the first time",
+      "suspectPhrase": "gets monetized and for the first time",
+      "canonicalHasCanonical": true,
+      "modelHasCanonical": true,
+      "modelHasSuspect": false,
+      "modelContextCanonical": "nsumption drops to near zero because our natural tendency toward love and peace gets monetized for the first time in our existence. poverty disappears because the fear of being poor disappears ",
+      "modelContextSuspect": ""
+    }
+  ],
+  "diffWindows": [
+    {
+      "tag": "delete",
+      "canonicalRange": [
+        670,
+        671
+      ],
+      "modelRange": [
+        670,
+        670
+      ],
+      "canonical": "hyperbitcoinized ( at the time of writing ) . jack mallers' strike app has gone from 20",
+      "model": "hyperbitcoinized ( at the time of writing ) jack mallers' strike app nas gone from 20"
+    },
+    {
+      "tag": "replace",
+      "canonicalRange": [
+        675,
+        676
+      ],
+      "modelRange": [
+        674,
+        675
+      ],
+      "canonical": "of writing ) . jack mallers' strike app has gone from 20 , 000 new sign -",
+      "model": "time of writing ) jack mallers' strike app nas gone from 20 , 000 new sign -"
+    },
+    {
+      "tag": "delete",
+      "canonicalRange": [
+        1161,
+        1162
+      ],
+      "modelRange": [
+        1160,
+        1160
+      ],
+      "canonical": "you remove the hate incentive . bitcoin fills in the gap with love ; our most natural",
+      "model": "you remove the hate incentive . bitcoin fills the gap with love ; our most natural"
+    },
+    {
+      "tag": "delete",
+      "canonicalRange": [
+        1211,
+        1224
+      ],
+      "modelRange": [
+        1209,
+        1209
+      ],
+      "canonical": "it , right there in the genesis block . the economy of love is infinitely more efficient than hate and war . to wrap this up , as we",
+      "model": "it , right there in the genesis block . to wrap this up , as we"
+    },
+    {
+      "tag": "delete",
+      "canonicalRange": [
+        1295,
+        1296
+      ],
+      "modelRange": [
+        1280,
+        1280
+      ],
+      "canonical": "drops by 95% or more . that's right , bitcoin will take all the energy . in",
+      "model": "drops by 95% or more . that's right bitcoin will take all the energy . in"
+    },
+    {
+      "tag": "delete",
+      "canonicalRange": [
+        1444,
+        1445
+      ],
+      "modelRange": [
+        1428,
+        1428
+      ],
+      "canonical": "have been living in here for 10 years . we've seen some shit . happy to share",
+      "model": "have been living in here for 10 years we've seen some shit . happy to share"
+    }
+  ],
+  "assessment": [
+    "The 3D map text is close enough for visual labels, but it is not exact wording truth.",
+    "Use the corrected DOCM-derived plain text for phrase/word selectors after a visual region is selected.",
+    "Do not derive key material from the 3D map OCR/Markdown text without reconciling the affected span first."
+  ]
+}

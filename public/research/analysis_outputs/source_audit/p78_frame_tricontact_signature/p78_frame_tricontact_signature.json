@@ -1,0 +1,226 @@
+{
+  "createdAt": "2026-05-20T08:14:47",
+  "scope": "p78 frame tri-contact geometry signature; no key derivation",
+  "frame": [
+    1234.0,
+    2398.0,
+    2250.0,
+    2950.0
+  ],
+  "targets": {
+    "O5": {
+      "id": "O5",
+      "label": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ]
+    },
+    "G5": {
+      "id": "G5_trusted",
+      "label": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ]
+    }
+  },
+  "m3": {
+    "box": [
+      2172.0,
+      2619.0,
+      2544.0,
+      2884.0
+    ],
+    "center": [
+      2358.0,
+      2751.5
+    ],
+    "axisVector": [
+      -0.994052,
+      0.108906
+    ]
+  },
+  "overlay": "analysis_outputs/source_audit/p78_frame_tricontact_signature/p78_frame_tricontact_signature_overlay.jpg",
+  "records": [
+    {
+      "name": "current",
+      "dx": 0.0,
+      "dy": 0.0,
+      "frame": [
+        1234.0,
+        2398.0,
+        2250.0,
+        2950.0
+      ],
+      "leftEdgeToG5RightPx": 38.0,
+      "leftEdgeG5VerticalOverlapPx": 48.0,
+      "g5Intersection": null,
+      "g5OverlapVsTarget": 0.0,
+      "rightEdgeInsideM3X": true,
+      "rightEdgeM3VerticalOverlapPx": 265.0,
+      "m3Intersection": [
+        2172.0,
+        2619.0,
+        2250.0,
+        2884.0
+      ],
+      "m3OverlapVsMark": 0.20968,
+      "m3AxisAtRightEdge": [
+        2250.0,
+        2763.33
+      ],
+      "m3AxisRightInsideFrame": true,
+      "m3AxisRightInsideM3": true,
+      "bottomEdgeInsideO5Y": true,
+      "bottomEdgeO5HorizontalOverlapPx": 427.0,
+      "o5Intersection": [
+        1234.0,
+        2932.0,
+        1661.0,
+        2950.0
+      ],
+      "o5OverlapVsTarget": 0.24754,
+      "triContactPass": false
+    },
+    {
+      "name": "g5_edge_touch",
+      "dx": -38.0,
+      "dy": 0.0,
+      "frame": [
+        1196.0,
+        2398.0,
+        2212.0,
+        2950.0
+      ],
+      "leftEdgeToG5RightPx": 0.0,
+      "leftEdgeG5VerticalOverlapPx": 48.0,
+      "g5Intersection": null,
+      "g5OverlapVsTarget": 0.0,
+      "rightEdgeInsideM3X": true,
+      "rightEdgeM3VerticalOverlapPx": 265.0,
+      "m3Intersection": [
+        2172.0,
+        2619.0,
+        2212.0,
+        2884.0
+      ],
+      "m3OverlapVsMark": 0.10753,
+      "m3AxisAtRightEdge": [
+        2212.0,
+        2767.5
+      ],
+      "m3AxisRightInsideFrame": true,
+      "m3AxisRightInsideM3": true,
+      "bottomEdgeInsideO5Y": true,
+      "bottomEdgeO5HorizontalOverlapPx": 465.0,
+      "o5Intersection": [
+        1196.0,
+        2932.0,
+        1661.0,
+        2950.0
+      ],
+      "o5OverlapVsTarget": 0.26957,
+      "triContactPass": true
+    },
+    {
+      "name": "nearest_grid_dx_-40",
+      "dx": -40.0,
+      "dy": 0.0,
+      "frame": [
+        1194.0,
+        2398.0,
+        2210.0,
+        2950.0
+      ],
+      "leftEdgeToG5RightPx": -2.0,
+      "leftEdgeG5VerticalOverlapPx": 48.0,
+      "g5Intersection": [
+        1194.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "g5OverlapVsTarget": 0.00499,
+      "rightEdgeInsideM3X": true,
+      "rightEdgeM3VerticalOverlapPx": 265.0,
+      "m3Intersection": [
+        2172.0,
+        2619.0,
+        2210.0,
+        2884.0
+      ],
+      "m3OverlapVsMark": 0.10215,
+      "m3AxisAtRightEdge": [
+        2210.0,
+        2767.71
+      ],
+      "m3AxisRightInsideFrame": true,
+      "m3AxisRightInsideM3": true,
+      "bottomEdgeInsideO5Y": true,
+      "bottomEdgeO5HorizontalOverlapPx": 467.0,
+      "o5Intersection": [
+        1194.0,
+        2932.0,
+        1661.0,
+        2950.0
+      ],
+      "o5OverlapVsTarget": 0.27072,
+      "triContactPass": true
+    },
+    {
+      "name": "best_overlap_dx_-160_dy_35",
+      "dx": -160.0,
+      "dy": 35.0,
+      "frame": [
+        1074.0,
+        2433.0,
+        2090.0,
+        2985.0
+      ],
+      "leftEdgeToG5RightPx": -122.0,
+      "leftEdgeG5VerticalOverlapPx": 48.0,
+      "g5Intersection": [
+        1074.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "g5OverlapVsTarget": 0.30424,
+      "rightEdgeInsideM3X": false,
+      "rightEdgeM3VerticalOverlapPx": 0.0,
+      "m3Intersection": null,
+      "m3OverlapVsMark": 0.0,
+      "m3AxisAtRightEdge": [
+        2090.0,
+        2780.86
+      ],
+      "m3AxisRightInsideFrame": true,
+      "m3AxisRightInsideM3": false,
+      "bottomEdgeInsideO5Y": false,
+      "bottomEdgeO5HorizontalOverlapPx": 0.0,
+      "o5Intersection": [
+        1074.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "o5OverlapVsTarget": 0.94525,
+      "triContactPass": false
+    }
+  ],
+  "edgeTouchDx": -38.0,
+  "edgeTouchTriContactPass": true,
+  "assessment": [
+    "The G5 repair is not just an arbitrary loose shift: the exact edge-touch shift is dx=-38, matching the previously observed ~40px repair.",
+    "At dx=-38, the frame's left edge touches trusted G5, the right edge still cuts M3 with the full vertical mark overlap, and the bottom edge still clips O5.",
+    "The heavier best-overlap shift dx=-160, dy=35 improves G5/O5 area overlap but breaks the M3 right-edge contact, so it looks less source-like.",
+    "This promotes dx≈-38/-40 as a three-object source-registration signature, not as an extraction rule.",
+    "No word, letter, line, or key unit is created by this contact geometry."
+  ],
+  "nextMove": "Use dx≈-38/-40 as a source-registration validation signature for any new scan/source image. Do not read it as key material unless a source clue names the extraction unit."
+}

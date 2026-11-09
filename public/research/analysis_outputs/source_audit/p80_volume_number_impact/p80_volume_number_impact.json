@@ -1,0 +1,95 @@
+{
+  "createdAt": "2026-05-20T06:02:38",
+  "scope": "Impact audit for p80 volume number ambiguity; no key derivation.",
+  "source": "analysis_outputs/3d_article_map/p80_package_copy_audit.json",
+  "packageAssessment": [
+    "The package copy is useful as an unresolved visual layer, but it does not contain a direct instruction.",
+    "The strongest low-parameter link is count-based: '5 SYMPTOM RELIEF' appears twice and the label lists exactly five symptoms: nausea, heartburn, indigestion, upset stomach, and shitcoins. This matches the five page-76 target groups from the reflected graph.",
+    "The volume is visually and semantically likely '16 FL OZ (473 mL)'; an existing crop-only source records '6 FL OZ' because the left edge is clipped. If using p80 numbers, keep this ambiguity registered.",
+    "The number 16 lands on the page-76 line containing 'It's a stun gun to the genitals.', but this is not enough by itself because other package numbers do not produce a coherent index stream.",
+    "Treat p80 as thematic/count support unless a source/physical alignment shows the bottle copy lining up with another page."
+  ],
+  "numberChecks": [
+    {
+      "label": "5_symptom_relief",
+      "number": 5,
+      "page76LineZeroBased": "ripped off live central bankers tied to a burning stake.",
+      "page76LineOneBased": "nailing the Vatican with ultimatums. It's the sound of skin being",
+      "page76WordOneBased": "some",
+      "lineOffsetLandingsAtZeroBasedLine": [],
+      "lineOffsetLandingsAtOneBasedLine": []
+    },
+    {
+      "label": "16_fl_oz_likely",
+      "number": 16,
+      "page76LineZeroBased": "laundering lobotomy. It’s a stun gun to the genitals.",
+      "page76LineOneBased": "Fortunately, bitcoin puts an end to the paper chase Manhattan Bank money",
+      "page76WordOneBased": "ghetto",
+      "lineOffsetLandingsAtZeroBasedLine": [
+        {
+          "sourceId": "O3",
+          "sourceIndex": 3,
+          "targetLine": 16,
+          "targetUnits": [
+            "B3"
+          ],
+          "targetText": "laundering lobotomy. It’s a stun gun to the genitals.",
+          "score": 5,
+          "layers": [
+            "highlight target",
+            "reflected highlight graph"
+          ],
+          "evidence": [
+            "line lands on highlighted unit(s) B3",
+            "grey_black_4 strong terms=genitals,stun; grey_black_4 medium terms=genitals,stun; grey_black_4 medium terms=genitals,stun"
+          ]
+        }
+      ],
+      "lineOffsetLandingsAtOneBasedLine": []
+    },
+    {
+      "label": "6_fl_oz_clipped_crop",
+      "number": 6,
+      "page76LineZeroBased": "Gotta be this way. Forty years of dumb post-1971 fiat money",
+      "page76LineOneBased": "ripped off live central bankers tied to a burning stake.",
+      "page76WordOneBased": "bitcoin",
+      "lineOffsetLandingsAtZeroBasedLine": [],
+      "lineOffsetLandingsAtOneBasedLine": []
+    },
+    {
+      "label": "100_percent_pow",
+      "number": 100,
+      "page76LineZeroBased": "",
+      "page76LineOneBased": "",
+      "page76WordOneBased": "dulled",
+      "lineOffsetLandingsAtZeroBasedLine": [],
+      "lineOffsetLandingsAtOneBasedLine": []
+    },
+    {
+      "label": "473_ml",
+      "number": 473,
+      "page76LineZeroBased": "",
+      "page76LineOneBased": "",
+      "page76WordOneBased": "",
+      "lineOffsetLandingsAtZeroBasedLine": [],
+      "lineOffsetLandingsAtOneBasedLine": []
+    },
+    {
+      "label": "page_number",
+      "number": 80,
+      "page76LineZeroBased": "",
+      "page76LineOneBased": "",
+      "page76WordOneBased": "Peter",
+      "lineOffsetLandingsAtZeroBasedLine": [],
+      "lineOffsetLandingsAtOneBasedLine": []
+    }
+  ],
+  "assessment": [
+    "`16 FL OZ (473 mL)` should be treated as the canonical package volume; `6 FL OZ` is a clipped-crop reading.",
+    "Using 16 as a zero-based page-76 line selector lands exactly on `laundering lobotomy. It’s a stun gun to the genitals.`, the O3+3 -> B3 line-offset hit.",
+    "Using 6 instead lands on the B1/Gotta line and does not explain the p80 volume/metric pair.",
+    "This strengthens p80 as provenance support for the B3/stun-gun line, but it does not explain #2/#4 or name an extraction unit.",
+    "Future p80 audits should record the volume as `16 FL OZ (473 mL)` while noting the old cropped `6` reading as a source-fidelity artifact."
+  ],
+  "nextMove": "Preserve p80 `16` as support for the B3 line-offset hit, then look for physical/source evidence that connects the full package layer to the remaining landing set."
+}

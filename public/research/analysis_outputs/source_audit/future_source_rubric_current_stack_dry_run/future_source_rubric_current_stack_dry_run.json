@@ -1,0 +1,252 @@
+{
+  "createdAt": "2026-05-20T23:19:55",
+  "scope": "dry-run future-source rubric against current known evidence; no extraction, no key derivation, no hashing, no OCR, no address checks",
+  "inputs": {
+    "rubric": "analysis_outputs/source_audit/future_source_scoring_rubric/future_source_scoring_rubric.json",
+    "active_matrix": "analysis_outputs/source_audit/active_evidence_unlock_matrix/active_evidence_unlock_matrix.json",
+    "source_packet": "analysis_outputs/source_audit/source_acquisition_target_packet/source_acquisition_target_packet.json",
+    "source_packet_integrity": "analysis_outputs/source_audit/source_acquisition_packet_integrity/source_acquisition_packet_integrity.json",
+    "missing_frontier": "analysis_outputs/source_audit/missing_rule_frontier/missing_rule_frontier.json"
+  },
+  "sheet": "analysis_outputs/source_audit/future_source_rubric_current_stack_dry_run/future_source_rubric_current_stack_dry_run_sheet.jpg",
+  "rows": [
+    {
+      "path": "current local sources",
+      "role": "source/physical",
+      "gates": {
+        "R1": "FAIL",
+        "R2": "PARTIAL",
+        "R3": "FAIL",
+        "R4": "PARTIAL",
+        "R5": "FAIL"
+      },
+      "strictPasses": [],
+      "softPasses": [],
+      "failedStrictGates": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "r3Pass": false,
+      "r3SoftPass": false,
+      "extractionReady": false,
+      "blocker": "No local candidate passes R1-R5; source-delta actionable unknowns are 0.",
+      "next": "Only score materially new physical/original-layout/source evidence."
+    },
+    {
+      "path": "archived/raw clues",
+      "role": "provenance wording",
+      "gates": {
+        "R1": "PARTIAL",
+        "R2": "PARTIAL",
+        "R3": "FAIL",
+        "R4": "PASS",
+        "R5": "FAIL"
+      },
+      "strictPasses": [
+        "R4"
+      ],
+      "softPasses": [
+        "R4"
+      ],
+      "failedStrictGates": [
+        "R1",
+        "R2",
+        "R3",
+        "R5"
+      ],
+      "r3Pass": false,
+      "r3SoftPass": false,
+      "extractionReady": false,
+      "blocker": "Raw-like R3 passes are 0; no source-backed unit/order phrase is present.",
+      "next": "Search only for raw wording that names word/letter/line/edge/font/order."
+    },
+    {
+      "path": "page-76 target surface",
+      "role": "locator",
+      "gates": {
+        "R1": "FAIL",
+        "R2": "PASS",
+        "R3": "FAIL",
+        "R4": "PASS",
+        "R5": "PARTIAL"
+      },
+      "strictPasses": [
+        "R2",
+        "R4"
+      ],
+      "softPasses": [
+        "R2",
+        "R4"
+      ],
+      "failedStrictGates": [
+        "R1",
+        "R3",
+        "R5"
+      ],
+      "r3Pass": false,
+      "r3SoftPass": false,
+      "extractionReady": false,
+      "blocker": "O5/G5 are strong targets, not extraction permission.",
+      "next": "Use O5/G5 as validation targets for any new source/clue."
+    },
+    {
+      "path": "3D fold/mirror geometry",
+      "role": "locator/orientation",
+      "gates": {
+        "R1": "FAIL/PARTIAL",
+        "R2": "PASS as locator",
+        "R3": "FAIL",
+        "R4": "PASS as review layer",
+        "R5": "FAIL"
+      },
+      "strictPasses": [],
+      "softPasses": [
+        "R2",
+        "R4"
+      ],
+      "failedStrictGates": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "r3Pass": false,
+      "r3SoftPass": false,
+      "extractionReady": false,
+      "blocker": "3d_fold_mirror_geometry_closed_for_current_scan_as_r3_selector; no unit/order unlock.",
+      "next": "Keep 3D fold/mirror geometry as orientation, target-location, and source-validation evidence only. Reopen extraction only if new physical/original-layout material changes G5/O5 registration or a raw clue names a specific geometry unit/order such as reflection id, anchor order, fold contact, word, line, or letter."
+    },
+    {
+      "path": "page-76 O-B-B-O highlights",
+      "role": "target cluster",
+      "gates": {
+        "R1": "FAIL/PARTIAL",
+        "R2": "PASS as locator",
+        "R3": "FAIL",
+        "R4": "PASS as audited",
+        "R5": "FAIL"
+      },
+      "strictPasses": [],
+      "softPasses": [
+        "R2",
+        "R4"
+      ],
+      "failedStrictGates": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "r3Pass": false,
+      "r3SoftPass": false,
+      "extractionReady": false,
+      "blocker": "page76_highlight_cluster_closed_for_current_scan_as_r3_selector; no unit/order unlock.",
+      "next": "Keep O4/B4/G5/O5, especially G5/O5, as page-76 target and future-source validation evidence only. Reopen highlight-cluster extraction only if a raw clue names a unit/order such as side, edge, fill, spill, color swap, word, line, or letter, or if new physical/original-layout evidence changes the active target contacts."
+    },
+    {
+      "path": "Typeka/font state",
+      "role": "format witness",
+      "gates": {
+        "R1": "FAIL/PARTIAL",
+        "R2": "PASS as corroboration",
+        "R3": "FAIL",
+        "R4": "PASS as audited",
+        "R5": "FAIL"
+      },
+      "strictPasses": [],
+      "softPasses": [
+        "R2",
+        "R4"
+      ],
+      "failedStrictGates": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "r3Pass": false,
+      "r3SoftPass": false,
+      "extractionReady": false,
+      "blocker": "typeka_font_layer_closed_for_current_scan_as_r3_selector; no unit/order unlock.",
+      "next": "Keep Article with Fonts.docm as a formatting/font witness and Typeka as corridor/provenance support only. Reopen font-state extraction only if a raw clue names font/Typeka/Mix/bold as the unit or if a new physical/original-layout source selects exact font-run units."
+    },
+    {
+      "path": "p80 package/OVERDOSE",
+      "role": "theme/count witness",
+      "gates": {
+        "R1": "FAIL/PARTIAL",
+        "R2": "PASS as corroboration",
+        "R3": "FAIL",
+        "R4": "PASS as audited",
+        "R5": "FAIL"
+      },
+      "strictPasses": [],
+      "softPasses": [
+        "R2",
+        "R4"
+      ],
+      "failedStrictGates": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "r3Pass": false,
+      "r3SoftPass": false,
+      "extractionReady": false,
+      "blocker": "p80_package_layer_closed_for_current_scan_as_r3_selector; no unit/order unlock.",
+      "next": "Keep p80 as C6 five-count/theme/source-validation evidence only. Reopen only if new physical/original-layout evidence places package copy onto p76 targets or a raw clue explicitly says to use relief/symptoms/dose/package text as a selector."
+    },
+    {
+      "path": "comparison OVERDOSE layouts",
+      "role": "style/provenance",
+      "gates": {
+        "R1": "FAIL/PARTIAL",
+        "R2": "PASS as provenance",
+        "R3": "FAIL",
+        "R4": "PASS as audited",
+        "R5": "FAIL"
+      },
+      "strictPasses": [],
+      "softPasses": [
+        "R2",
+        "R4"
+      ],
+      "failedStrictGates": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "r3Pass": false,
+      "r3SoftPass": false,
+      "extractionReady": false,
+      "blocker": "comparison_overdose_layout_closed_for_current_scan_as_r3_selector; no unit/order unlock.",
+      "next": "Keep comparison PDFs as style controls, provenance checks, and source-validation witnesses only. Reopen only if a raw clue explicitly references another issue/article/layout motif, or if a materially better source passes R1-R5 and names/supplies the extraction unit/order."
+    }
+  ],
+  "summary": {
+    "pathCount": 8,
+    "extractionReadyCount": 0,
+    "r3FailCount": 8,
+    "r3SoftPassCount": 0,
+    "softR2LocatorCount": 6,
+    "strictAllGatePaths": [],
+    "allCurrentPathsBlocked": true,
+    "allCurrentPathsFailR3": true,
+    "rubricDecision": "future_source_scoring_rubric_created_no_selector_unlocked",
+    "packetDecision": "source_acquisition_packet_created_no_current_selector_unlocked",
+    "integrityStatus": "PASS",
+    "frontierDeadBranchCount": 236
+  },
+  "decision": "current_stack_fails_future_source_rubric_no_selector_unlocked",
+  "nextMove": "Keep current materials as locator/provenance/source-validation evidence only. Apply the rubric only to new physical/original-layout/raw clue material before extraction."
+}

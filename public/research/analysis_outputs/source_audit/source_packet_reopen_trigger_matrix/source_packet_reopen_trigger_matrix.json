@@ -1,0 +1,373 @@
+{
+  "createdAt": "2026-05-21T07:13:04",
+  "scope": "source-packet reopen-trigger matrix; no OCR, extraction, key derivation, hashing, seed/WIF/address checks, BIP39 checks, or broad candidate generation",
+  "inputs": {
+    "source_reopen_requirements": "analysis_outputs/source_audit/source_reopen_requirements/source_reopen_requirements.json",
+    "future_source_validation_packet": "analysis_outputs/source_audit/future_source_validation_packet/future_source_validation_packet.json",
+    "source_packet_handoff_integrity_matrix": "analysis_outputs/source_audit/source_packet_handoff_integrity_matrix/source_packet_handoff_integrity_matrix.json",
+    "source_packet_false_positive_guardrail": "analysis_outputs/source_audit/source_packet_false_positive_guardrail/source_packet_false_positive_guardrail.json",
+    "source_packet_r3_bridge_audit": "analysis_outputs/source_audit/source_packet_r3_bridge_audit/source_packet_r3_bridge_audit.json",
+    "source_packet_color_profile_manifest": "analysis_outputs/source_audit/source_packet_color_profile_manifest/source_packet_color_profile_manifest.json",
+    "source_packet_frame_normalized_geometry": "analysis_outputs/source_audit/source_packet_frame_normalized_geometry/source_packet_frame_normalized_geometry.json",
+    "source_packet_repaired_p78_frame_residual": "analysis_outputs/source_audit/source_packet_repaired_p78_frame_residual/source_packet_repaired_p78_frame_residual.json",
+    "source_packet_repaired_frame_expansion_leakage": "analysis_outputs/source_audit/source_packet_repaired_frame_expansion_leakage/source_packet_repaired_frame_expansion_leakage.json"
+  },
+  "r1r5Gates": [
+    {
+      "id": "R1",
+      "name": "source identity",
+      "passCondition": "new material must be physically/original-layout distinct from the byte-locked current scan"
+    },
+    {
+      "id": "R2",
+      "name": "target preservation",
+      "passCondition": "must preserve or clearly explain O5, G5, L26-L29, and the p78 frame contact pattern"
+    },
+    {
+      "id": "R3",
+      "name": "unit/order evidence",
+      "passCondition": "must name or visibly supply the extraction unit/order before any key checks resume"
+    },
+    {
+      "id": "R4",
+      "name": "orientation discipline",
+      "passCondition": "must state whether coordinates are readable/upright or native/source and apply the 180-degree guardrail"
+    },
+    {
+      "id": "R5",
+      "name": "controlled improvement",
+      "passCondition": "must improve a compact benchmark, preferably dx -38/-40 G5 edge repair, O5 bottom contact, M3 right-edge cut, or the p77 one-line near miss"
+    }
+  ],
+  "minimumReopenConditions": [
+    {
+      "condition": "C3 extraction unit",
+      "requiredEvidence": "source/clue text or source-visible layout must name a unit/order such as word, letter, line, edge, font, first/last, left/right, or equivalent",
+      "why": "Without this, local geometry only repeats target discovery."
+    },
+    {
+      "condition": "C4 physical registration",
+      "requiredEvidence": "physical scan/photo/hold-to-light/spread should create repeated direct O5/G5 contacts or improve the p77 71.93px near miss under one natural transform",
+      "why": "Current best scan gives zero true physical O5/G5 overlaps."
+    },
+    {
+      "condition": "C8 source image quality",
+      "requiredEvidence": "original Canva/export/browser/source asset must exceed thumbnail status and visibly resolve the #0, p79 pills, XX/barbed-wire, or p78 frame benchmarks",
+      "why": "The current Canva surface is only a 668x376 investigator note thumbnail."
+    },
+    {
+      "condition": "C2 p78 frame signature",
+      "requiredEvidence": "new source should naturally preserve or explain `should sell | Volcano Bonds | shitcoiner at heart`, current O5 clip, M3 right-edge cut, and dx≈-38/-40 G5 edge repair",
+      "why": "This is the compactest existing registration signature."
+    }
+  ],
+  "triggerRows": [
+    {
+      "guardrailId": "color_or_state_only",
+      "domain": "orange/black + bold state",
+      "temptingMatch": "OBBO/YKKY color-state match: color palindrome=True, visual palindrome=True",
+      "controlledBy": "full-page Y/K non-active controls=4; OVERDOSE controls=NNNNNNNNN",
+      "requiredToReopen": [
+        "line order 22/25/27/32",
+        "corridor order 4/7/9/14",
+        "source-backed unit/order wording"
+      ],
+      "externalObservable": "A distinct source/original layout explicitly ties Y/K or orange/black order to a reading unit and preserves readable order 22/25/27/32.",
+      "minimumArtifact": "original export/source layer or raw clue text; not a resaved scan",
+      "acceptanceTest": "R1 distinct source + R3 unit/order + R4 readable/native orientation + controls do not reproduce the same color/order logic",
+      "currentBlocker": "YKKY/OBBO is palindromic and full-page Y/K has four non-active controls.",
+      "missingEvidence": "R3 source-backed unit/order absent; R1-R5 not satisfied by current scan/local derivatives.",
+      "r1r5Required": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "cConditionsTouched": [
+        "C3 extraction unit",
+        "C4 physical registration",
+        "C8 source image quality",
+        "C2 p78 frame signature"
+      ],
+      "triggerSatisfiedNow": false,
+      "decision": "wait_for_new_source_or_clue"
+    },
+    {
+      "guardrailId": "native_unrotated_order",
+      "domain": "native/source orientation",
+      "temptingMatch": "Native raw order 32 27 25 22 or 14 9 7 4",
+      "controlledBy": "readable/upright order 22 25 27 32 / 4 7 9 14",
+      "requiredToReopen": [
+        "rotate native source images 180 degrees",
+        "recover readable/upright active order",
+        "reject raw-native reversed order as orientation error"
+      ],
+      "externalObservable": "Source provenance states native coordinate direction, or a fresh extraction proves the active quartet after the documented 180-degree transform.",
+      "minimumArtifact": "native source image/PDF extraction with page orientation metadata",
+      "acceptanceTest": "R4 orientation discipline; raw-native reversed order must not be accepted as a match",
+      "currentBlocker": "Native raw order reverses to 32/27/25/22 and 14/9/7/4 unless rotated 180 degrees.",
+      "missingEvidence": "R3 source-backed unit/order absent; R1-R5 not satisfied by current scan/local derivatives.",
+      "r1r5Required": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "cConditionsTouched": [
+        "C3 extraction unit",
+        "C4 physical registration",
+        "C8 source image quality",
+        "C2 p78 frame signature"
+      ],
+      "triggerSatisfiedNow": false,
+      "decision": "wait_for_new_source_or_clue"
+    },
+    {
+      "guardrailId": "c9_frame_only",
+      "domain": "C9/Y-K frame",
+      "temptingMatch": "C9/Y-K frame contains active targets 4/4",
+      "controlledBy": "C9 is broad, horizontally mirror-invariant, and source-validation only",
+      "requiredToReopen": [
+        "source wording that names the frame as a reading boundary",
+        "unit/order wording inside or tied to the frame",
+        "controls must fail under the same rule"
+      ],
+      "externalObservable": "Source shows the C9/Y-K frame as an intentional reading boundary and names the units/order inside it.",
+      "minimumArtifact": "original layout layer or source note with frame/read instruction",
+      "acceptanceTest": "All four active targets inside, context leakage avoided, p75/frame controls fail under the same rule",
+      "currentBlocker": "C9 frame fully contains the quartet but is broad, mirror-invariant, and source-validation only.",
+      "missingEvidence": "R3 source-backed unit/order absent; R1-R5 not satisfied by current scan/local derivatives.",
+      "r1r5Required": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "cConditionsTouched": [
+        "C3 extraction unit",
+        "C4 physical registration",
+        "C8 source image quality",
+        "C2 p78 frame signature"
+      ],
+      "triggerSatisfiedNow": false,
+      "decision": "wait_for_new_source_or_clue"
+    },
+    {
+      "guardrailId": "overdose_black_over",
+      "domain": "OVERDOSE glyph slots",
+      "temptingMatch": "Active black OVER projections=2",
+      "controlledBy": "p75 control OVER projections=2; mirrored p75 matches active=8/8",
+      "requiredToReopen": [
+        "raw/source instruction tying OVERDOSE glyph slots to active boxes",
+        "control pages must not reproduce the same slot stream",
+        "explicit unit/order extraction wording"
+      ],
+      "externalObservable": "Source explicitly links OVERDOSE glyph slots to active boxes and names which glyph/slot stream to read.",
+      "minimumArtifact": "raw source clue, original layout annotation, or higher-fidelity source showing slot linkage",
+      "acceptanceTest": "Active slot rule succeeds, p75 control no longer reproduces it, and R3 unit/order is explicit",
+      "currentBlocker": "p75 control reproduces OVER-style slot streams; active mirrored variants are not unique.",
+      "missingEvidence": "R3 source-backed unit/order absent; R1-R5 not satisfied by current scan/local derivatives.",
+      "r1r5Required": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "cConditionsTouched": [
+        "C3 extraction unit",
+        "C4 physical registration",
+        "C8 source image quality",
+        "C2 p78 frame signature"
+      ],
+      "triggerSatisfiedNow": false,
+      "decision": "wait_for_new_source_or_clue"
+    },
+    {
+      "guardrailId": "p78_contact_or_dx_repair",
+      "domain": "folded/mirrored p78 frame geometry",
+      "temptingMatch": "repaired p78 max partial=2/4; max full=0/4",
+      "controlledBy": "B4/O4 need touch expansions 503/173 px",
+      "requiredToReopen": [
+        "source-backed reason for dx repair",
+        "all four active boxes inside without context-band leakage",
+        "unit/order wording"
+      ],
+      "externalObservable": "Physical/original source naturally explains dx≈-38/-40 or shows the p78 frame shifted/cut in that position without manual tuning.",
+      "minimumArtifact": "physical scan/photo/hold-to-light/spread/original layout source",
+      "acceptanceTest": "R5 controlled improvement plus all active targets inside without artificial expansion",
+      "currentBlocker": "dx repair improves G5/O5 residuals but still gives max full containment 0/4 and max partial 2/4.",
+      "missingEvidence": "R3 source-backed unit/order absent; R1-R5 not satisfied by current scan/local derivatives.",
+      "r1r5Required": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "cConditionsTouched": [
+        "C3 extraction unit",
+        "C4 physical registration",
+        "C8 source image quality",
+        "C2 p78 frame signature"
+      ],
+      "triggerSatisfiedNow": false,
+      "decision": "wait_for_new_source_or_clue"
+    },
+    {
+      "guardrailId": "p78_full_cover_leakage",
+      "domain": "p78 frame full-cover expansion",
+      "temptingMatch": "full-cover repair spans 102 words",
+      "controlledBy": "non-target words=92; hard hits=0",
+      "requiredToReopen": [
+        "new source must avoid L22-L32 context-band leakage",
+        "new source must isolate target units",
+        "hard instruction wording must be present"
+      ],
+      "externalObservable": "New source isolates O4/B4/G5/O5 as units without taking the full L22-L32 lower-corridor context band.",
+      "minimumArtifact": "source crop/layer/physical transform that cleanly bounds only the active quartet",
+      "acceptanceTest": "All four active targets isolated; non-target context and non-active format signals fall away",
+      "currentBlocker": "Full cover spans 102 words, 92 non-target words, and four non-active format signals.",
+      "missingEvidence": "R3 source-backed unit/order absent; R1-R5 not satisfied by current scan/local derivatives.",
+      "r1r5Required": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "cConditionsTouched": [
+        "C3 extraction unit",
+        "C4 physical registration",
+        "C8 source image quality",
+        "C2 p78 frame signature"
+      ],
+      "triggerSatisfiedNow": false,
+      "decision": "wait_for_new_source_or_clue"
+    },
+    {
+      "guardrailId": "bold_or_annotation_only",
+      "domain": "bold/highlight/annotation witnesses",
+      "temptingMatch": "format pass=4; line-bold exact=2/4",
+      "controlledBy": "witness conflicts=2; Markdown/notes are witness layers",
+      "requiredToReopen": [
+        "DOCM/high-res/crop-pack agreement",
+        "source-backed unit/order wording",
+        "do not rely on Markdown bold or annotated notes alone"
+      ],
+      "externalObservable": "Source or provenance explicitly says to read/take/count bold, highlight, first/last, or a comparable format unit.",
+      "minimumArtifact": "DOCM/source-layer instruction, raw clue, or original annotation source",
+      "acceptanceTest": "R3 format unit/order is explicit and Markdown/user notes are not the sole evidence",
+      "currentBlocker": "DOCM/high-res/crop-pack validate format only; line-level bold and annotations conflict or remain witness layers.",
+      "missingEvidence": "R3 source-backed unit/order absent; R1-R5 not satisfied by current scan/local derivatives.",
+      "r1r5Required": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "cConditionsTouched": [
+        "C3 extraction unit",
+        "C4 physical registration",
+        "C8 source image quality",
+        "C2 p78 frame signature"
+      ],
+      "triggerSatisfiedNow": false,
+      "decision": "wait_for_new_source_or_clue"
+    },
+    {
+      "guardrailId": "active_box_ocr_text",
+      "domain": "3D box OCR text",
+      "temptingMatch": "active box exact OCR matches=0/4",
+      "controlledBy": "corrupted/misread boxes=4/4; usable=False",
+      "requiredToReopen": [
+        "use canonical plain text + DOCM text + Markdown transcript",
+        "use 3D OCR only as geometry witness",
+        "do not extract key text from corrupted target-box OCR"
+      ],
+      "externalObservable": "A source text layer supplies exact text inside the target boxes, or OCR is replaced by canonical text authority tied to a unit/order instruction.",
+      "minimumArtifact": "source text extraction or authoritative transcript, not 3D box OCR alone",
+      "acceptanceTest": "Exact O4/B4/G5/O5 text is source-backed and tied to R3 unit/order",
+      "currentBlocker": "3D active-box OCR has 0/4 exact matches and 4/4 corrupted/misread target boxes.",
+      "missingEvidence": "R3 source-backed unit/order absent; R1-R5 not satisfied by current scan/local derivatives.",
+      "r1r5Required": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "cConditionsTouched": [
+        "C3 extraction unit",
+        "C4 physical registration",
+        "C8 source image quality",
+        "C2 p78 frame signature"
+      ],
+      "triggerSatisfiedNow": false,
+      "decision": "wait_for_new_source_or_clue"
+    },
+    {
+      "guardrailId": "loose_alignment",
+      "domain": "alignment tolerance",
+      "temptingMatch": "common shift tolerance=4 px",
+      "controlledBy": "alignment first pad failure is already below loose visual matching",
+      "requiredToReopen": [
+        "explain any shift larger than current tolerance",
+        "preserve line/corridor order and visual state",
+        "pass all R1-R5 source-reopen gates"
+      ],
+      "externalObservable": "New source explains any shift beyond the current ±4px tolerance through provenance, scaling, crop, or physical registration.",
+      "minimumArtifact": "source asset with measurable registration transform",
+      "acceptanceTest": "Transform is natural, repeatable, improves source benchmarks, and passes R1-R5",
+      "currentBlocker": "Future matches outside the current narrow tolerance are false positives unless the source explains the shift.",
+      "missingEvidence": "R3 source-backed unit/order absent; R1-R5 not satisfied by current scan/local derivatives.",
+      "r1r5Required": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "cConditionsTouched": [
+        "C3 extraction unit",
+        "C4 physical registration",
+        "C8 source image quality",
+        "C2 p78 frame signature"
+      ],
+      "triggerSatisfiedNow": false,
+      "decision": "wait_for_new_source_or_clue"
+    }
+  ],
+  "summary": {
+    "triggerCount": 9,
+    "satisfiedTriggerCount": 0,
+    "blockedTriggerCount": 9,
+    "r1r5GateCount": 5,
+    "minimumConditionCount": 4,
+    "sourceBackedR3BridgeHitCount": 0,
+    "derivedCorrectionBridgeWindowCount": 1,
+    "generatedUnitOrderPhraseCount": 37,
+    "guardrailStillBlockedCount": 9,
+    "activeVisualStateOrder": "YKKY",
+    "activePageLines": "22 25 27 32",
+    "activeCorridorIndexes": "4 7 9 14",
+    "handoffSelectorUnlockedCount": 0,
+    "handoffExtractionReadyGateCount": 0,
+    "colorProfileControlStateStream": "NNNNNNNNN",
+    "frameFullInsideActiveCount": 4,
+    "residualMaxFullInsideActiveCount": 0,
+    "fullCoverLeakageWords": 102,
+    "fullCoverLeakageNonTargetWords": 92,
+    "reopenTriggerFingerprint": "triggers=9|satisfied=0|sourceR3=0|states=YKKY|lines=22-25-27-32|corr=4-7-9-14|guardrailsBlocked=9|selectors=0"
+  },
+  "decision": {
+    "sourcePacketReopenTriggerMatrix": "no_current_reopen_trigger_satisfied",
+    "reason": "Every visually tempting path now has an explicit source/provenance trigger, but none is satisfied by the current scan, local text layers, generated reports, or local source derivatives."
+  },
+  "sheet": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix_sheet.jpg",
+  "nextMove": "Use this matrix when a new source/photo/original export/clue arrives: score the observed source change against the exact trigger row before any selector or key work resumes."
+}

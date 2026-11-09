@@ -1,0 +1,2346 @@
+{
+  "createdAt": "2026-05-21T06:43:12",
+  "scope": "source-packet repaired frame expansion leakage audit; no OCR, extraction, key derivation, hashing, seed/WIF/address checks, BIP39 checks, or broad candidate generation",
+  "inputs": {
+    "repairedP78FrameResidual": "analysis_outputs/source_audit/source_packet_repaired_p78_frame_residual/source_packet_repaired_p78_frame_residual.json",
+    "o4FrameRescueContentGate": "analysis_outputs/source_audit/o4_frame_rescue_content_gate/o4_frame_rescue_content_gate.json",
+    "o4FrameRescueSignalStreamGate": "analysis_outputs/source_audit/o4_frame_rescue_signal_stream_gate/o4_frame_rescue_signal_stream_gate.json",
+    "article3dMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "uprightPage": "analysis_outputs/3d_article_map/page_76_upright.jpg"
+  },
+  "targets": [
+    {
+      "id": "buying_dip",
+      "phrase": "buying the dip",
+      "box": [
+        1334,
+        2177,
+        1801,
+        2225
+      ],
+      "visualState": "Y",
+      "pageLine": 22,
+      "corridorIndex": 4
+    },
+    {
+      "id": "one_billion",
+      "phrase": "$1 billion",
+      "box": [
+        428,
+        2398,
+        691,
+        2445
+      ],
+      "visualState": "K",
+      "pageLine": 25,
+      "corridorIndex": 7
+    },
+    {
+      "id": "volcano_bonds",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795,
+        2544,
+        1196,
+        2592
+      ],
+      "visualState": "K",
+      "pageLine": 27,
+      "corridorIndex": 9
+    },
+    {
+      "id": "shitcoiner_heart",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040,
+        2932,
+        1661,
+        2982
+      ],
+      "visualState": "Y",
+      "pageLine": 32,
+      "corridorIndex": 14
+    }
+  ],
+  "scenarioRows": [
+    {
+      "frameName": "current",
+      "scenario": "base",
+      "frame": [
+        1234,
+        2398,
+        2250,
+        2950
+      ],
+      "dx": 0.0,
+      "targetRows": [
+        {
+          "id": "buying_dip",
+          "phrase": "buying the dip",
+          "visualState": "Y",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "overlapFraction": 0.0,
+          "partialHit": false,
+          "fullInsideFrame": false
+        },
+        {
+          "id": "one_billion",
+          "phrase": "$1 billion",
+          "visualState": "K",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "overlapFraction": 0.0,
+          "partialHit": false,
+          "fullInsideFrame": false
+        },
+        {
+          "id": "volcano_bonds",
+          "phrase": "Volcano Bonds",
+          "visualState": "K",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "overlapFraction": 0.0,
+          "partialHit": false,
+          "fullInsideFrame": false
+        },
+        {
+          "id": "shitcoiner_heart",
+          "phrase": "shitcoiner at heart",
+          "visualState": "Y",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "overlapFraction": 0.247536,
+          "partialHit": true,
+          "fullInsideFrame": false
+        }
+      ],
+      "fullInsideTargetCount": 0,
+      "partialTargetCount": 1,
+      "fullInsideTargetIds": [],
+      "partialTargetIds": [
+        "shitcoiner_heart"
+      ],
+      "lineRange": "25-32",
+      "corridorRange": "7-14",
+      "includedLineCount": 8,
+      "lineContextWordCount": 72,
+      "fullTargetPhraseWordCount": 0,
+      "partialTargetPhraseWordCount": 3,
+      "lineContextNonTargetWordCount": 72,
+      "lineContextNonTargetDensity": 1.0,
+      "nonActiveHighlightEntryCount": 4,
+      "nonActiveHighlightEntries": [
+        "bold: IMF",
+        "bold-partial/full: Mike",
+        "bold-partial: Novogratz",
+        "bold partial: I don't really trust that guy"
+      ],
+      "nonActiveBoldContextLineCount": 3,
+      "transcriptHardInstructionHits": [],
+      "transcriptHardInstructionHitCount": 0,
+      "contextTermHits": [
+        "bitcoin",
+        "bonds",
+        "heart",
+        "imf",
+        "mike",
+        "sell",
+        "shitcoiner",
+        "volcano"
+      ],
+      "ocrMapWordCenterCount": 22,
+      "ocrMapWordCenterTokens": "should sell earnings pay off the IMF I tagged Mike he could sella pals, but so far he trust that guy siukbeodmensertslveaarty",
+      "ocrMapHardInstructionHits": [],
+      "ocrMapHardInstructionHitCount": 0,
+      "includedLines": [
+        {
+          "lineIndex": 25,
+          "corridorIndex": 7,
+          "wordCount": 8,
+          "activeTargetWordCount": 2,
+          "activeTargets": [
+            {
+              "id": "one_billion",
+              "phrase": "$1 billion"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.220989,
+          "text": "$1 billion in bitcoin — that he should sell"
+        },
+        {
+          "lineIndex": 26,
+          "corridorIndex": 8,
+          "wordCount": 6,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.199008,
+          "text": "billions worth of future bitcoin earnings"
+        },
+        {
+          "lineIndex": 27,
+          "corridorIndex": 9,
+          "wordCount": 8,
+          "activeTargetWordCount": 2,
+          "activeTargets": [
+            {
+              "id": "volcano_bonds",
+              "phrase": "volcano bonds"
+            }
+          ],
+          "nonActiveHighlights": [
+            "bold: IMF"
+          ],
+          "boldLetters": "IMF",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.34559,
+          "text": "collateralized “Volcano Bonds” to pay off the IMF"
+        },
+        {
+          "lineIndex": 28,
+          "corridorIndex": 10,
+          "wordCount": 10,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold-partial/full: Mike"
+          ],
+          "boldLetters": "loanie",
+          "partialBoldLetters": "ie",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.3053,
+          "text": "loan and get rid of those leeches. I tagged Mike"
+        },
+        {
+          "lineIndex": 29,
+          "corridorIndex": 11,
+          "wordCount": 9,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold-partial: Novogratz"
+          ],
+          "boldLetters": "Nvz",
+          "partialBoldLetters": "Nvz",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.299043,
+          "text": "Novogratz in the tweet, figuring he could sell a"
+        },
+        {
+          "lineIndex": 30,
+          "corridorIndex": 12,
+          "wordCount": 11,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.326653,
+          "text": "bunch to his Wall Street crony pals, but so far he"
+        },
+        {
+          "lineIndex": 31,
+          "corridorIndex": 13,
+          "wordCount": 12,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold partial: I don't really trust that guy"
+          ],
+          "boldLetters": "Idelluhu",
+          "partialBoldLetters": "delluhu",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.320804,
+          "text": "hasn't moved on it. I don't really trust that guy."
+        },
+        {
+          "lineIndex": 32,
+          "corridorIndex": 14,
+          "wordCount": 8,
+          "activeTargetWordCount": 3,
+          "activeTargets": [
+            {
+              "id": "shitcoiner_heart",
+              "phrase": "shitcoiner at heart"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "shitcoineratheart",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.221759,
+          "text": "Maybe because he's a shitcoiner at heart."
+        }
+      ]
+    },
+    {
+      "frameName": "current",
+      "scenario": "edge_touch_all",
+      "frame": [
+        691,
+        2225,
+        2250,
+        2950
+      ],
+      "dx": 0.0,
+      "targetRows": [
+        {
+          "id": "buying_dip",
+          "phrase": "buying the dip",
+          "visualState": "Y",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "overlapFraction": 0.0,
+          "partialHit": false,
+          "fullInsideFrame": false
+        },
+        {
+          "id": "one_billion",
+          "phrase": "$1 billion",
+          "visualState": "K",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "overlapFraction": 0.0,
+          "partialHit": false,
+          "fullInsideFrame": false
+        },
+        {
+          "id": "volcano_bonds",
+          "phrase": "Volcano Bonds",
+          "visualState": "K",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "overlapFraction": 1.0,
+          "partialHit": true,
+          "fullInsideFrame": true
+        },
+        {
+          "id": "shitcoiner_heart",
+          "phrase": "shitcoiner at heart",
+          "visualState": "Y",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "overlapFraction": 0.36,
+          "partialHit": true,
+          "fullInsideFrame": false
+        }
+      ],
+      "fullInsideTargetCount": 1,
+      "partialTargetCount": 2,
+      "fullInsideTargetIds": [
+        "volcano_bonds"
+      ],
+      "partialTargetIds": [
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "lineRange": "23-32",
+      "corridorRange": "5-14",
+      "includedLineCount": 10,
+      "lineContextWordCount": 91,
+      "fullTargetPhraseWordCount": 2,
+      "partialTargetPhraseWordCount": 5,
+      "lineContextNonTargetWordCount": 89,
+      "lineContextNonTargetDensity": 0.978,
+      "nonActiveHighlightEntryCount": 4,
+      "nonActiveHighlightEntries": [
+        "bold: IMF",
+        "bold-partial/full: Mike",
+        "bold-partial: Novogratz",
+        "bold partial: I don't really trust that guy"
+      ],
+      "nonActiveBoldContextLineCount": 4,
+      "transcriptHardInstructionHits": [],
+      "transcriptHardInstructionHitCount": 0,
+      "contextTermHits": [
+        "bitcoin",
+        "bonds",
+        "heart",
+        "imf",
+        "mike",
+        "sell",
+        "shitcoiner",
+        "volcano"
+      ],
+      "ocrMapWordCenterCount": 68,
+      "ocrMapWordCenterTokens": "President Nayib Bukele when he announced going to tap his nation's volcanoes to mine in bitcoin — that he should sell worth of future bitcoin earnings to pay off the IMF get rid of those leeches. I tagged Mike in",
+      "ocrMapHardInstructionHits": [],
+      "ocrMapHardInstructionHitCount": 0,
+      "includedLines": [
+        {
+          "lineIndex": 23,
+          "corridorIndex": 5,
+          "wordCount": 8,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "PresidentNayibBukele",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.831682,
+          "text": "I tweeted President Nayib Bukele when he announced"
+        },
+        {
+          "lineIndex": 24,
+          "corridorIndex": 6,
+          "wordCount": 11,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.816335,
+          "text": "he was going to tap his nation's volcanoes to mine"
+        },
+        {
+          "lineIndex": 25,
+          "corridorIndex": 7,
+          "wordCount": 8,
+          "activeTargetWordCount": 2,
+          "activeTargets": [
+            {
+              "id": "one_billion",
+              "phrase": "$1 billion"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.855773,
+          "text": "$1 billion in bitcoin — that he should sell"
+        },
+        {
+          "lineIndex": 26,
+          "corridorIndex": 8,
+          "wordCount": 6,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.779267,
+          "text": "billions worth of future bitcoin earnings"
+        },
+        {
+          "lineIndex": 27,
+          "corridorIndex": 9,
+          "wordCount": 8,
+          "activeTargetWordCount": 2,
+          "activeTargets": [
+            {
+              "id": "volcano_bonds",
+              "phrase": "volcano bonds"
+            }
+          ],
+          "nonActiveHighlights": [
+            "bold: IMF"
+          ],
+          "boldLetters": "IMF",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.820294,
+          "text": "collateralized “Volcano Bonds” to pay off the IMF"
+        },
+        {
+          "lineIndex": 28,
+          "corridorIndex": 10,
+          "wordCount": 10,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold-partial/full: Mike"
+          ],
+          "boldLetters": "loanie",
+          "partialBoldLetters": "ie",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.80923,
+          "text": "loan and get rid of those leeches. I tagged Mike"
+        },
+        {
+          "lineIndex": 29,
+          "corridorIndex": 11,
+          "wordCount": 9,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold-partial: Novogratz"
+          ],
+          "boldLetters": "Nvz",
+          "partialBoldLetters": "Nvz",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.808199,
+          "text": "Novogratz in the tweet, figuring he could sell a"
+        },
+        {
+          "lineIndex": 30,
+          "corridorIndex": 12,
+          "wordCount": 11,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.815094,
+          "text": "bunch to his Wall Street crony pals, but so far he"
+        },
+        {
+          "lineIndex": 31,
+          "corridorIndex": 13,
+          "wordCount": 12,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold partial: I don't really trust that guy"
+          ],
+          "boldLetters": "Idelluhu",
+          "partialBoldLetters": "delluhu",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.814154,
+          "text": "hasn't moved on it. I don't really trust that guy."
+        },
+        {
+          "lineIndex": 32,
+          "corridorIndex": 14,
+          "wordCount": 8,
+          "activeTargetWordCount": 3,
+          "activeTargets": [
+            {
+              "id": "shitcoiner_heart",
+              "phrase": "shitcoiner at heart"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "shitcoineratheart",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.515184,
+          "text": "Maybe because he's a shitcoiner at heart."
+        }
+      ]
+    },
+    {
+      "frameName": "current",
+      "scenario": "full_cover_all",
+      "frame": [
+        428,
+        2177,
+        2250,
+        2982
+      ],
+      "dx": 0.0,
+      "targetRows": [
+        {
+          "id": "buying_dip",
+          "phrase": "buying the dip",
+          "visualState": "Y",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "overlapFraction": 1.0,
+          "partialHit": true,
+          "fullInsideFrame": true
+        },
+        {
+          "id": "one_billion",
+          "phrase": "$1 billion",
+          "visualState": "K",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "overlapFraction": 1.0,
+          "partialHit": true,
+          "fullInsideFrame": true
+        },
+        {
+          "id": "volcano_bonds",
+          "phrase": "Volcano Bonds",
+          "visualState": "K",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "overlapFraction": 1.0,
+          "partialHit": true,
+          "fullInsideFrame": true
+        },
+        {
+          "id": "shitcoiner_heart",
+          "phrase": "shitcoiner at heart",
+          "visualState": "Y",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "overlapFraction": 1.0,
+          "partialHit": true,
+          "fullInsideFrame": true
+        }
+      ],
+      "fullInsideTargetCount": 4,
+      "partialTargetCount": 4,
+      "fullInsideTargetIds": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "partialTargetIds": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "lineRange": "22-32",
+      "corridorRange": "4-14",
+      "includedLineCount": 11,
+      "lineContextWordCount": 102,
+      "fullTargetPhraseWordCount": 10,
+      "partialTargetPhraseWordCount": 10,
+      "lineContextNonTargetWordCount": 92,
+      "lineContextNonTargetDensity": 0.902,
+      "nonActiveHighlightEntryCount": 4,
+      "nonActiveHighlightEntries": [
+        "bold: IMF",
+        "bold-partial/full: Mike",
+        "bold-partial: Novogratz",
+        "bold partial: I don't really trust that guy"
+      ],
+      "nonActiveBoldContextLineCount": 4,
+      "transcriptHardInstructionHits": [],
+      "transcriptHardInstructionHitCount": 0,
+      "contextTermHits": [
+        "bitcoin",
+        "bonds",
+        "dip",
+        "heart",
+        "imf",
+        "mike",
+        "sell",
+        "shitcoiner",
+        "volcano"
+      ],
+      "ocrMapWordCenterCount": 89,
+      "ocrMapWordCenterTokens": "He's taunting them, telling them he's ByiiREeraipy\" I tweeted President Nayib Bukele when he announced he was going to tap his nation's volcanoes to mine eis in bitcoin — that he should sell billions worth of future bitcoin earnings collateralized",
+      "ocrMapHardInstructionHits": [],
+      "ocrMapHardInstructionHitCount": 0,
+      "includedLines": [
+        {
+          "lineIndex": 22,
+          "corridorIndex": 4,
+          "wordCount": 11,
+          "activeTargetWordCount": 3,
+          "activeTargets": [
+            {
+              "id": "buying_dip",
+              "phrase": "buying the dip"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "buyingthedip",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.786457,
+          "text": "He's taunting them, telling them he's “buying the dip.”"
+        },
+        {
+          "lineIndex": 23,
+          "corridorIndex": 5,
+          "wordCount": 8,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "PresidentNayibBukele",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "I tweeted President Nayib Bukele when he announced"
+        },
+        {
+          "lineIndex": 24,
+          "corridorIndex": 6,
+          "wordCount": 11,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "he was going to tap his nation's volcanoes to mine"
+        },
+        {
+          "lineIndex": 25,
+          "corridorIndex": 7,
+          "wordCount": 8,
+          "activeTargetWordCount": 2,
+          "activeTargets": [
+            {
+              "id": "one_billion",
+              "phrase": "$1 billion"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "$1 billion in bitcoin — that he should sell"
+        },
+        {
+          "lineIndex": 26,
+          "corridorIndex": 8,
+          "wordCount": 6,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "billions worth of future bitcoin earnings"
+        },
+        {
+          "lineIndex": 27,
+          "corridorIndex": 9,
+          "wordCount": 8,
+          "activeTargetWordCount": 2,
+          "activeTargets": [
+            {
+              "id": "volcano_bonds",
+              "phrase": "volcano bonds"
+            }
+          ],
+          "nonActiveHighlights": [
+            "bold: IMF"
+          ],
+          "boldLetters": "IMF",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "collateralized “Volcano Bonds” to pay off the IMF"
+        },
+        {
+          "lineIndex": 28,
+          "corridorIndex": 10,
+          "wordCount": 10,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold-partial/full: Mike"
+          ],
+          "boldLetters": "loanie",
+          "partialBoldLetters": "ie",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "loan and get rid of those leeches. I tagged Mike"
+        },
+        {
+          "lineIndex": 29,
+          "corridorIndex": 11,
+          "wordCount": 9,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold-partial: Novogratz"
+          ],
+          "boldLetters": "Nvz",
+          "partialBoldLetters": "Nvz",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "Novogratz in the tweet, figuring he could sell a"
+        },
+        {
+          "lineIndex": 30,
+          "corridorIndex": 12,
+          "wordCount": 11,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "bunch to his Wall Street crony pals, but so far he"
+        },
+        {
+          "lineIndex": 31,
+          "corridorIndex": 13,
+          "wordCount": 12,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold partial: I don't really trust that guy"
+          ],
+          "boldLetters": "Idelluhu",
+          "partialBoldLetters": "delluhu",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "hasn't moved on it. I don't really trust that guy."
+        },
+        {
+          "lineIndex": 32,
+          "corridorIndex": 14,
+          "wordCount": 8,
+          "activeTargetWordCount": 3,
+          "activeTargets": [
+            {
+              "id": "shitcoiner_heart",
+              "phrase": "shitcoiner at heart"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "shitcoineratheart",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "Maybe because he's a shitcoiner at heart."
+        }
+      ]
+    },
+    {
+      "frameName": "g5_edge_touch_dx_-38",
+      "scenario": "base",
+      "frame": [
+        1196,
+        2398,
+        2212,
+        2950
+      ],
+      "dx": -38.0,
+      "targetRows": [
+        {
+          "id": "buying_dip",
+          "phrase": "buying the dip",
+          "visualState": "Y",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "overlapFraction": 0.0,
+          "partialHit": false,
+          "fullInsideFrame": false
+        },
+        {
+          "id": "one_billion",
+          "phrase": "$1 billion",
+          "visualState": "K",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "overlapFraction": 0.0,
+          "partialHit": false,
+          "fullInsideFrame": false
+        },
+        {
+          "id": "volcano_bonds",
+          "phrase": "Volcano Bonds",
+          "visualState": "K",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "overlapFraction": 0.0,
+          "partialHit": false,
+          "fullInsideFrame": false
+        },
+        {
+          "id": "shitcoiner_heart",
+          "phrase": "shitcoiner at heart",
+          "visualState": "Y",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "overlapFraction": 0.269565,
+          "partialHit": true,
+          "fullInsideFrame": false
+        }
+      ],
+      "fullInsideTargetCount": 0,
+      "partialTargetCount": 1,
+      "fullInsideTargetIds": [],
+      "partialTargetIds": [
+        "shitcoiner_heart"
+      ],
+      "lineRange": "25-32",
+      "corridorRange": "7-14",
+      "includedLineCount": 8,
+      "lineContextWordCount": 72,
+      "fullTargetPhraseWordCount": 0,
+      "partialTargetPhraseWordCount": 3,
+      "lineContextNonTargetWordCount": 72,
+      "lineContextNonTargetDensity": 1.0,
+      "nonActiveHighlightEntryCount": 4,
+      "nonActiveHighlightEntries": [
+        "bold: IMF",
+        "bold-partial/full: Mike",
+        "bold-partial: Novogratz",
+        "bold partial: I don't really trust that guy"
+      ],
+      "nonActiveBoldContextLineCount": 3,
+      "transcriptHardInstructionHits": [],
+      "transcriptHardInstructionHitCount": 0,
+      "contextTermHits": [
+        "bitcoin",
+        "bonds",
+        "heart",
+        "imf",
+        "mike",
+        "sell",
+        "shitcoiner",
+        "volcano"
+      ],
+      "ocrMapWordCenterCount": 23,
+      "ocrMapWordCenterTokens": "should sell earnings to pay off the IMF I tagged Mike he could sella pals, but so far he trust that guy siukbeodmensertslveaarty",
+      "ocrMapHardInstructionHits": [],
+      "ocrMapHardInstructionHitCount": 0,
+      "includedLines": [
+        {
+          "lineIndex": 25,
+          "corridorIndex": 7,
+          "wordCount": 8,
+          "activeTargetWordCount": 2,
+          "activeTargets": [
+            {
+              "id": "one_billion",
+              "phrase": "$1 billion"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.258573,
+          "text": "$1 billion in bitcoin — that he should sell"
+        },
+        {
+          "lineIndex": 26,
+          "corridorIndex": 8,
+          "wordCount": 6,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.239616,
+          "text": "billions worth of future bitcoin earnings"
+        },
+        {
+          "lineIndex": 27,
+          "corridorIndex": 9,
+          "wordCount": 8,
+          "activeTargetWordCount": 2,
+          "activeTargets": [
+            {
+              "id": "volcano_bonds",
+              "phrase": "volcano bonds"
+            }
+          ],
+          "nonActiveHighlights": [
+            "bold: IMF"
+          ],
+          "boldLetters": "IMF",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.378811,
+          "text": "collateralized “Volcano Bonds” to pay off the IMF"
+        },
+        {
+          "lineIndex": 28,
+          "corridorIndex": 10,
+          "wordCount": 10,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold-partial/full: Mike"
+          ],
+          "boldLetters": "loanie",
+          "partialBoldLetters": "ie",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.340566,
+          "text": "loan and get rid of those leeches. I tagged Mike"
+        },
+        {
+          "lineIndex": 29,
+          "corridorIndex": 11,
+          "wordCount": 9,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold-partial: Novogratz"
+          ],
+          "boldLetters": "Nvz",
+          "partialBoldLetters": "Nvz",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.334674,
+          "text": "Novogratz in the tweet, figuring he could sell a"
+        },
+        {
+          "lineIndex": 30,
+          "corridorIndex": 12,
+          "wordCount": 11,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.360835,
+          "text": "bunch to his Wall Street crony pals, but so far he"
+        },
+        {
+          "lineIndex": 31,
+          "corridorIndex": 13,
+          "wordCount": 12,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold partial: I don't really trust that guy"
+          ],
+          "boldLetters": "Idelluhu",
+          "partialBoldLetters": "delluhu",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.35533,
+          "text": "hasn't moved on it. I don't really trust that guy."
+        },
+        {
+          "lineIndex": 32,
+          "corridorIndex": 14,
+          "wordCount": 8,
+          "activeTargetWordCount": 3,
+          "activeTargets": [
+            {
+              "id": "shitcoiner_heart",
+              "phrase": "shitcoiner at heart"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "shitcoineratheart",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.242294,
+          "text": "Maybe because he's a shitcoiner at heart."
+        }
+      ]
+    },
+    {
+      "frameName": "g5_edge_touch_dx_-38",
+      "scenario": "edge_touch_all",
+      "frame": [
+        691,
+        2225,
+        2212,
+        2950
+      ],
+      "dx": -38.0,
+      "targetRows": [
+        {
+          "id": "buying_dip",
+          "phrase": "buying the dip",
+          "visualState": "Y",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "overlapFraction": 0.0,
+          "partialHit": false,
+          "fullInsideFrame": false
+        },
+        {
+          "id": "one_billion",
+          "phrase": "$1 billion",
+          "visualState": "K",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "overlapFraction": 0.0,
+          "partialHit": false,
+          "fullInsideFrame": false
+        },
+        {
+          "id": "volcano_bonds",
+          "phrase": "Volcano Bonds",
+          "visualState": "K",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "overlapFraction": 1.0,
+          "partialHit": true,
+          "fullInsideFrame": true
+        },
+        {
+          "id": "shitcoiner_heart",
+          "phrase": "shitcoiner at heart",
+          "visualState": "Y",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "overlapFraction": 0.36,
+          "partialHit": true,
+          "fullInsideFrame": false
+        }
+      ],
+      "fullInsideTargetCount": 1,
+      "partialTargetCount": 2,
+      "fullInsideTargetIds": [
+        "volcano_bonds"
+      ],
+      "partialTargetIds": [
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "lineRange": "23-32",
+      "corridorRange": "5-14",
+      "includedLineCount": 10,
+      "lineContextWordCount": 91,
+      "fullTargetPhraseWordCount": 2,
+      "partialTargetPhraseWordCount": 5,
+      "lineContextNonTargetWordCount": 89,
+      "lineContextNonTargetDensity": 0.978,
+      "nonActiveHighlightEntryCount": 4,
+      "nonActiveHighlightEntries": [
+        "bold: IMF",
+        "bold-partial/full: Mike",
+        "bold-partial: Novogratz",
+        "bold partial: I don't really trust that guy"
+      ],
+      "nonActiveBoldContextLineCount": 4,
+      "transcriptHardInstructionHits": [],
+      "transcriptHardInstructionHitCount": 0,
+      "contextTermHits": [
+        "bitcoin",
+        "bonds",
+        "heart",
+        "imf",
+        "mike",
+        "sell",
+        "shitcoiner",
+        "volcano"
+      ],
+      "ocrMapWordCenterCount": 68,
+      "ocrMapWordCenterTokens": "President Nayib Bukele when he announced going to tap his nation's volcanoes to mine in bitcoin — that he should sell worth of future bitcoin earnings to pay off the IMF get rid of those leeches. I tagged Mike in",
+      "ocrMapHardInstructionHits": [],
+      "ocrMapHardInstructionHitCount": 0,
+      "includedLines": [
+        {
+          "lineIndex": 23,
+          "corridorIndex": 5,
+          "wordCount": 8,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "PresidentNayibBukele",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.831682,
+          "text": "I tweeted President Nayib Bukele when he announced"
+        },
+        {
+          "lineIndex": 24,
+          "corridorIndex": 6,
+          "wordCount": 11,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.816335,
+          "text": "he was going to tap his nation's volcanoes to mine"
+        },
+        {
+          "lineIndex": 25,
+          "corridorIndex": 7,
+          "wordCount": 8,
+          "activeTargetWordCount": 2,
+          "activeTargets": [
+            {
+              "id": "one_billion",
+              "phrase": "$1 billion"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.855773,
+          "text": "$1 billion in bitcoin — that he should sell"
+        },
+        {
+          "lineIndex": 26,
+          "corridorIndex": 8,
+          "wordCount": 6,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.779267,
+          "text": "billions worth of future bitcoin earnings"
+        },
+        {
+          "lineIndex": 27,
+          "corridorIndex": 9,
+          "wordCount": 8,
+          "activeTargetWordCount": 2,
+          "activeTargets": [
+            {
+              "id": "volcano_bonds",
+              "phrase": "volcano bonds"
+            }
+          ],
+          "nonActiveHighlights": [
+            "bold: IMF"
+          ],
+          "boldLetters": "IMF",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.820294,
+          "text": "collateralized “Volcano Bonds” to pay off the IMF"
+        },
+        {
+          "lineIndex": 28,
+          "corridorIndex": 10,
+          "wordCount": 10,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold-partial/full: Mike"
+          ],
+          "boldLetters": "loanie",
+          "partialBoldLetters": "ie",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.80923,
+          "text": "loan and get rid of those leeches. I tagged Mike"
+        },
+        {
+          "lineIndex": 29,
+          "corridorIndex": 11,
+          "wordCount": 9,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold-partial: Novogratz"
+          ],
+          "boldLetters": "Nvz",
+          "partialBoldLetters": "Nvz",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.808199,
+          "text": "Novogratz in the tweet, figuring he could sell a"
+        },
+        {
+          "lineIndex": 30,
+          "corridorIndex": 12,
+          "wordCount": 11,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.815094,
+          "text": "bunch to his Wall Street crony pals, but so far he"
+        },
+        {
+          "lineIndex": 31,
+          "corridorIndex": 13,
+          "wordCount": 12,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold partial: I don't really trust that guy"
+          ],
+          "boldLetters": "Idelluhu",
+          "partialBoldLetters": "delluhu",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.814154,
+          "text": "hasn't moved on it. I don't really trust that guy."
+        },
+        {
+          "lineIndex": 32,
+          "corridorIndex": 14,
+          "wordCount": 8,
+          "activeTargetWordCount": 3,
+          "activeTargets": [
+            {
+              "id": "shitcoiner_heart",
+              "phrase": "shitcoiner at heart"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "shitcoineratheart",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.515184,
+          "text": "Maybe because he's a shitcoiner at heart."
+        }
+      ]
+    },
+    {
+      "frameName": "g5_edge_touch_dx_-38",
+      "scenario": "full_cover_all",
+      "frame": [
+        428,
+        2177,
+        2212,
+        2982
+      ],
+      "dx": -38.0,
+      "targetRows": [
+        {
+          "id": "buying_dip",
+          "phrase": "buying the dip",
+          "visualState": "Y",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "overlapFraction": 1.0,
+          "partialHit": true,
+          "fullInsideFrame": true
+        },
+        {
+          "id": "one_billion",
+          "phrase": "$1 billion",
+          "visualState": "K",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "overlapFraction": 1.0,
+          "partialHit": true,
+          "fullInsideFrame": true
+        },
+        {
+          "id": "volcano_bonds",
+          "phrase": "Volcano Bonds",
+          "visualState": "K",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "overlapFraction": 1.0,
+          "partialHit": true,
+          "fullInsideFrame": true
+        },
+        {
+          "id": "shitcoiner_heart",
+          "phrase": "shitcoiner at heart",
+          "visualState": "Y",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "overlapFraction": 1.0,
+          "partialHit": true,
+          "fullInsideFrame": true
+        }
+      ],
+      "fullInsideTargetCount": 4,
+      "partialTargetCount": 4,
+      "fullInsideTargetIds": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "partialTargetIds": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "lineRange": "22-32",
+      "corridorRange": "4-14",
+      "includedLineCount": 11,
+      "lineContextWordCount": 102,
+      "fullTargetPhraseWordCount": 10,
+      "partialTargetPhraseWordCount": 10,
+      "lineContextNonTargetWordCount": 92,
+      "lineContextNonTargetDensity": 0.902,
+      "nonActiveHighlightEntryCount": 4,
+      "nonActiveHighlightEntries": [
+        "bold: IMF",
+        "bold-partial/full: Mike",
+        "bold-partial: Novogratz",
+        "bold partial: I don't really trust that guy"
+      ],
+      "nonActiveBoldContextLineCount": 4,
+      "transcriptHardInstructionHits": [],
+      "transcriptHardInstructionHitCount": 0,
+      "contextTermHits": [
+        "bitcoin",
+        "bonds",
+        "dip",
+        "heart",
+        "imf",
+        "mike",
+        "sell",
+        "shitcoiner",
+        "volcano"
+      ],
+      "ocrMapWordCenterCount": 89,
+      "ocrMapWordCenterTokens": "He's taunting them, telling them he's ByiiREeraipy\" I tweeted President Nayib Bukele when he announced he was going to tap his nation's volcanoes to mine eis in bitcoin — that he should sell billions worth of future bitcoin earnings collateralized",
+      "ocrMapHardInstructionHits": [],
+      "ocrMapHardInstructionHitCount": 0,
+      "includedLines": [
+        {
+          "lineIndex": 22,
+          "corridorIndex": 4,
+          "wordCount": 11,
+          "activeTargetWordCount": 3,
+          "activeTargets": [
+            {
+              "id": "buying_dip",
+              "phrase": "buying the dip"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "buyingthedip",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.786457,
+          "text": "He's taunting them, telling them he's “buying the dip.”"
+        },
+        {
+          "lineIndex": 23,
+          "corridorIndex": 5,
+          "wordCount": 8,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "PresidentNayibBukele",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "I tweeted President Nayib Bukele when he announced"
+        },
+        {
+          "lineIndex": 24,
+          "corridorIndex": 6,
+          "wordCount": 11,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "he was going to tap his nation's volcanoes to mine"
+        },
+        {
+          "lineIndex": 25,
+          "corridorIndex": 7,
+          "wordCount": 8,
+          "activeTargetWordCount": 2,
+          "activeTargets": [
+            {
+              "id": "one_billion",
+              "phrase": "$1 billion"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "$1 billion in bitcoin — that he should sell"
+        },
+        {
+          "lineIndex": 26,
+          "corridorIndex": 8,
+          "wordCount": 6,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "billions worth of future bitcoin earnings"
+        },
+        {
+          "lineIndex": 27,
+          "corridorIndex": 9,
+          "wordCount": 8,
+          "activeTargetWordCount": 2,
+          "activeTargets": [
+            {
+              "id": "volcano_bonds",
+              "phrase": "volcano bonds"
+            }
+          ],
+          "nonActiveHighlights": [
+            "bold: IMF"
+          ],
+          "boldLetters": "IMF",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "collateralized “Volcano Bonds” to pay off the IMF"
+        },
+        {
+          "lineIndex": 28,
+          "corridorIndex": 10,
+          "wordCount": 10,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold-partial/full: Mike"
+          ],
+          "boldLetters": "loanie",
+          "partialBoldLetters": "ie",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "loan and get rid of those leeches. I tagged Mike"
+        },
+        {
+          "lineIndex": 29,
+          "corridorIndex": 11,
+          "wordCount": 9,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold-partial: Novogratz"
+          ],
+          "boldLetters": "Nvz",
+          "partialBoldLetters": "Nvz",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "Novogratz in the tweet, figuring he could sell a"
+        },
+        {
+          "lineIndex": 30,
+          "corridorIndex": 12,
+          "wordCount": 11,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "bunch to his Wall Street crony pals, but so far he"
+        },
+        {
+          "lineIndex": 31,
+          "corridorIndex": 13,
+          "wordCount": 12,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold partial: I don't really trust that guy"
+          ],
+          "boldLetters": "Idelluhu",
+          "partialBoldLetters": "delluhu",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "hasn't moved on it. I don't really trust that guy."
+        },
+        {
+          "lineIndex": 32,
+          "corridorIndex": 14,
+          "wordCount": 8,
+          "activeTargetWordCount": 3,
+          "activeTargets": [
+            {
+              "id": "shitcoiner_heart",
+              "phrase": "shitcoiner at heart"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "shitcoineratheart",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "Maybe because he's a shitcoiner at heart."
+        }
+      ]
+    },
+    {
+      "frameName": "nearest_grid_dx_-40",
+      "scenario": "base",
+      "frame": [
+        1194,
+        2398,
+        2210,
+        2950
+      ],
+      "dx": -40.0,
+      "targetRows": [
+        {
+          "id": "buying_dip",
+          "phrase": "buying the dip",
+          "visualState": "Y",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "overlapFraction": 0.0,
+          "partialHit": false,
+          "fullInsideFrame": false
+        },
+        {
+          "id": "one_billion",
+          "phrase": "$1 billion",
+          "visualState": "K",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "overlapFraction": 0.0,
+          "partialHit": false,
+          "fullInsideFrame": false
+        },
+        {
+          "id": "volcano_bonds",
+          "phrase": "Volcano Bonds",
+          "visualState": "K",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "overlapFraction": 0.004988,
+          "partialHit": true,
+          "fullInsideFrame": false
+        },
+        {
+          "id": "shitcoiner_heart",
+          "phrase": "shitcoiner at heart",
+          "visualState": "Y",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "overlapFraction": 0.270725,
+          "partialHit": true,
+          "fullInsideFrame": false
+        }
+      ],
+      "fullInsideTargetCount": 0,
+      "partialTargetCount": 2,
+      "fullInsideTargetIds": [],
+      "partialTargetIds": [
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "lineRange": "25-32",
+      "corridorRange": "7-14",
+      "includedLineCount": 8,
+      "lineContextWordCount": 72,
+      "fullTargetPhraseWordCount": 0,
+      "partialTargetPhraseWordCount": 5,
+      "lineContextNonTargetWordCount": 72,
+      "lineContextNonTargetDensity": 1.0,
+      "nonActiveHighlightEntryCount": 4,
+      "nonActiveHighlightEntries": [
+        "bold: IMF",
+        "bold-partial/full: Mike",
+        "bold-partial: Novogratz",
+        "bold partial: I don't really trust that guy"
+      ],
+      "nonActiveBoldContextLineCount": 3,
+      "transcriptHardInstructionHits": [],
+      "transcriptHardInstructionHitCount": 0,
+      "contextTermHits": [
+        "bitcoin",
+        "bonds",
+        "heart",
+        "imf",
+        "mike",
+        "sell",
+        "shitcoiner",
+        "volcano"
+      ],
+      "ocrMapWordCenterCount": 23,
+      "ocrMapWordCenterTokens": "should sell earnings to pay off the IMF I tagged Mike he could sella pals, but so far he trust that guy siukbeodmensertslveaarty",
+      "ocrMapHardInstructionHits": [],
+      "ocrMapHardInstructionHitCount": 0,
+      "includedLines": [
+        {
+          "lineIndex": 25,
+          "corridorIndex": 7,
+          "wordCount": 8,
+          "activeTargetWordCount": 2,
+          "activeTargets": [
+            {
+              "id": "one_billion",
+              "phrase": "$1 billion"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.260552,
+          "text": "$1 billion in bitcoin — that he should sell"
+        },
+        {
+          "lineIndex": 26,
+          "corridorIndex": 8,
+          "wordCount": 6,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.241753,
+          "text": "billions worth of future bitcoin earnings"
+        },
+        {
+          "lineIndex": 27,
+          "corridorIndex": 9,
+          "wordCount": 8,
+          "activeTargetWordCount": 2,
+          "activeTargets": [
+            {
+              "id": "volcano_bonds",
+              "phrase": "volcano bonds"
+            }
+          ],
+          "nonActiveHighlights": [
+            "bold: IMF"
+          ],
+          "boldLetters": "IMF",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.380559,
+          "text": "collateralized “Volcano Bonds” to pay off the IMF"
+        },
+        {
+          "lineIndex": 28,
+          "corridorIndex": 10,
+          "wordCount": 10,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold-partial/full: Mike"
+          ],
+          "boldLetters": "loanie",
+          "partialBoldLetters": "ie",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.342422,
+          "text": "loan and get rid of those leeches. I tagged Mike"
+        },
+        {
+          "lineIndex": 29,
+          "corridorIndex": 11,
+          "wordCount": 9,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold-partial: Novogratz"
+          ],
+          "boldLetters": "Nvz",
+          "partialBoldLetters": "Nvz",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.33655,
+          "text": "Novogratz in the tweet, figuring he could sell a"
+        },
+        {
+          "lineIndex": 30,
+          "corridorIndex": 12,
+          "wordCount": 11,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.362634,
+          "text": "bunch to his Wall Street crony pals, but so far he"
+        },
+        {
+          "lineIndex": 31,
+          "corridorIndex": 13,
+          "wordCount": 12,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold partial: I don't really trust that guy"
+          ],
+          "boldLetters": "Idelluhu",
+          "partialBoldLetters": "delluhu",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.357147,
+          "text": "hasn't moved on it. I don't really trust that guy."
+        },
+        {
+          "lineIndex": 32,
+          "corridorIndex": 14,
+          "wordCount": 8,
+          "activeTargetWordCount": 3,
+          "activeTargets": [
+            {
+              "id": "shitcoiner_heart",
+              "phrase": "shitcoiner at heart"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "shitcoineratheart",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.243375,
+          "text": "Maybe because he's a shitcoiner at heart."
+        }
+      ]
+    },
+    {
+      "frameName": "nearest_grid_dx_-40",
+      "scenario": "edge_touch_all",
+      "frame": [
+        691,
+        2225,
+        2210,
+        2950
+      ],
+      "dx": -40.0,
+      "targetRows": [
+        {
+          "id": "buying_dip",
+          "phrase": "buying the dip",
+          "visualState": "Y",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "overlapFraction": 0.0,
+          "partialHit": false,
+          "fullInsideFrame": false
+        },
+        {
+          "id": "one_billion",
+          "phrase": "$1 billion",
+          "visualState": "K",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "overlapFraction": 0.0,
+          "partialHit": false,
+          "fullInsideFrame": false
+        },
+        {
+          "id": "volcano_bonds",
+          "phrase": "Volcano Bonds",
+          "visualState": "K",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "overlapFraction": 1.0,
+          "partialHit": true,
+          "fullInsideFrame": true
+        },
+        {
+          "id": "shitcoiner_heart",
+          "phrase": "shitcoiner at heart",
+          "visualState": "Y",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "overlapFraction": 0.36,
+          "partialHit": true,
+          "fullInsideFrame": false
+        }
+      ],
+      "fullInsideTargetCount": 1,
+      "partialTargetCount": 2,
+      "fullInsideTargetIds": [
+        "volcano_bonds"
+      ],
+      "partialTargetIds": [
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "lineRange": "23-32",
+      "corridorRange": "5-14",
+      "includedLineCount": 10,
+      "lineContextWordCount": 91,
+      "fullTargetPhraseWordCount": 2,
+      "partialTargetPhraseWordCount": 5,
+      "lineContextNonTargetWordCount": 89,
+      "lineContextNonTargetDensity": 0.978,
+      "nonActiveHighlightEntryCount": 4,
+      "nonActiveHighlightEntries": [
+        "bold: IMF",
+        "bold-partial/full: Mike",
+        "bold-partial: Novogratz",
+        "bold partial: I don't really trust that guy"
+      ],
+      "nonActiveBoldContextLineCount": 4,
+      "transcriptHardInstructionHits": [],
+      "transcriptHardInstructionHitCount": 0,
+      "contextTermHits": [
+        "bitcoin",
+        "bonds",
+        "heart",
+        "imf",
+        "mike",
+        "sell",
+        "shitcoiner",
+        "volcano"
+      ],
+      "ocrMapWordCenterCount": 68,
+      "ocrMapWordCenterTokens": "President Nayib Bukele when he announced going to tap his nation's volcanoes to mine in bitcoin — that he should sell worth of future bitcoin earnings to pay off the IMF get rid of those leeches. I tagged Mike in",
+      "ocrMapHardInstructionHits": [],
+      "ocrMapHardInstructionHitCount": 0,
+      "includedLines": [
+        {
+          "lineIndex": 23,
+          "corridorIndex": 5,
+          "wordCount": 8,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "PresidentNayibBukele",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.831682,
+          "text": "I tweeted President Nayib Bukele when he announced"
+        },
+        {
+          "lineIndex": 24,
+          "corridorIndex": 6,
+          "wordCount": 11,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.816335,
+          "text": "he was going to tap his nation's volcanoes to mine"
+        },
+        {
+          "lineIndex": 25,
+          "corridorIndex": 7,
+          "wordCount": 8,
+          "activeTargetWordCount": 2,
+          "activeTargets": [
+            {
+              "id": "one_billion",
+              "phrase": "$1 billion"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.855773,
+          "text": "$1 billion in bitcoin — that he should sell"
+        },
+        {
+          "lineIndex": 26,
+          "corridorIndex": 8,
+          "wordCount": 6,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.779267,
+          "text": "billions worth of future bitcoin earnings"
+        },
+        {
+          "lineIndex": 27,
+          "corridorIndex": 9,
+          "wordCount": 8,
+          "activeTargetWordCount": 2,
+          "activeTargets": [
+            {
+              "id": "volcano_bonds",
+              "phrase": "volcano bonds"
+            }
+          ],
+          "nonActiveHighlights": [
+            "bold: IMF"
+          ],
+          "boldLetters": "IMF",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.820294,
+          "text": "collateralized “Volcano Bonds” to pay off the IMF"
+        },
+        {
+          "lineIndex": 28,
+          "corridorIndex": 10,
+          "wordCount": 10,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold-partial/full: Mike"
+          ],
+          "boldLetters": "loanie",
+          "partialBoldLetters": "ie",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.80923,
+          "text": "loan and get rid of those leeches. I tagged Mike"
+        },
+        {
+          "lineIndex": 29,
+          "corridorIndex": 11,
+          "wordCount": 9,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold-partial: Novogratz"
+          ],
+          "boldLetters": "Nvz",
+          "partialBoldLetters": "Nvz",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.808199,
+          "text": "Novogratz in the tweet, figuring he could sell a"
+        },
+        {
+          "lineIndex": 30,
+          "corridorIndex": 12,
+          "wordCount": 11,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.815094,
+          "text": "bunch to his Wall Street crony pals, but so far he"
+        },
+        {
+          "lineIndex": 31,
+          "corridorIndex": 13,
+          "wordCount": 12,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold partial: I don't really trust that guy"
+          ],
+          "boldLetters": "Idelluhu",
+          "partialBoldLetters": "delluhu",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.814154,
+          "text": "hasn't moved on it. I don't really trust that guy."
+        },
+        {
+          "lineIndex": 32,
+          "corridorIndex": 14,
+          "wordCount": 8,
+          "activeTargetWordCount": 3,
+          "activeTargets": [
+            {
+              "id": "shitcoiner_heart",
+              "phrase": "shitcoiner at heart"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "shitcoineratheart",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.515184,
+          "text": "Maybe because he's a shitcoiner at heart."
+        }
+      ]
+    },
+    {
+      "frameName": "nearest_grid_dx_-40",
+      "scenario": "full_cover_all",
+      "frame": [
+        428,
+        2177,
+        2210,
+        2982
+      ],
+      "dx": -40.0,
+      "targetRows": [
+        {
+          "id": "buying_dip",
+          "phrase": "buying the dip",
+          "visualState": "Y",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "overlapFraction": 1.0,
+          "partialHit": true,
+          "fullInsideFrame": true
+        },
+        {
+          "id": "one_billion",
+          "phrase": "$1 billion",
+          "visualState": "K",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "overlapFraction": 1.0,
+          "partialHit": true,
+          "fullInsideFrame": true
+        },
+        {
+          "id": "volcano_bonds",
+          "phrase": "Volcano Bonds",
+          "visualState": "K",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "overlapFraction": 1.0,
+          "partialHit": true,
+          "fullInsideFrame": true
+        },
+        {
+          "id": "shitcoiner_heart",
+          "phrase": "shitcoiner at heart",
+          "visualState": "Y",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "overlapFraction": 1.0,
+          "partialHit": true,
+          "fullInsideFrame": true
+        }
+      ],
+      "fullInsideTargetCount": 4,
+      "partialTargetCount": 4,
+      "fullInsideTargetIds": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "partialTargetIds": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "lineRange": "22-32",
+      "corridorRange": "4-14",
+      "includedLineCount": 11,
+      "lineContextWordCount": 102,
+      "fullTargetPhraseWordCount": 10,
+      "partialTargetPhraseWordCount": 10,
+      "lineContextNonTargetWordCount": 92,
+      "lineContextNonTargetDensity": 0.902,
+      "nonActiveHighlightEntryCount": 4,
+      "nonActiveHighlightEntries": [
+        "bold: IMF",
+        "bold-partial/full: Mike",
+        "bold-partial: Novogratz",
+        "bold partial: I don't really trust that guy"
+      ],
+      "nonActiveBoldContextLineCount": 4,
+      "transcriptHardInstructionHits": [],
+      "transcriptHardInstructionHitCount": 0,
+      "contextTermHits": [
+        "bitcoin",
+        "bonds",
+        "dip",
+        "heart",
+        "imf",
+        "mike",
+        "sell",
+        "shitcoiner",
+        "volcano"
+      ],
+      "ocrMapWordCenterCount": 89,
+      "ocrMapWordCenterTokens": "He's taunting them, telling them he's ByiiREeraipy\" I tweeted President Nayib Bukele when he announced he was going to tap his nation's volcanoes to mine eis in bitcoin — that he should sell billions worth of future bitcoin earnings collateralized",
+      "ocrMapHardInstructionHits": [],
+      "ocrMapHardInstructionHitCount": 0,
+      "includedLines": [
+        {
+          "lineIndex": 22,
+          "corridorIndex": 4,
+          "wordCount": 11,
+          "activeTargetWordCount": 3,
+          "activeTargets": [
+            {
+              "id": "buying_dip",
+              "phrase": "buying the dip"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "buyingthedip",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 0.786457,
+          "text": "He's taunting them, telling them he's “buying the dip.”"
+        },
+        {
+          "lineIndex": 23,
+          "corridorIndex": 5,
+          "wordCount": 8,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "PresidentNayibBukele",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "I tweeted President Nayib Bukele when he announced"
+        },
+        {
+          "lineIndex": 24,
+          "corridorIndex": 6,
+          "wordCount": 11,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "he was going to tap his nation's volcanoes to mine"
+        },
+        {
+          "lineIndex": 25,
+          "corridorIndex": 7,
+          "wordCount": 8,
+          "activeTargetWordCount": 2,
+          "activeTargets": [
+            {
+              "id": "one_billion",
+              "phrase": "$1 billion"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "$1 billion in bitcoin — that he should sell"
+        },
+        {
+          "lineIndex": 26,
+          "corridorIndex": 8,
+          "wordCount": 6,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "billions worth of future bitcoin earnings"
+        },
+        {
+          "lineIndex": 27,
+          "corridorIndex": 9,
+          "wordCount": 8,
+          "activeTargetWordCount": 2,
+          "activeTargets": [
+            {
+              "id": "volcano_bonds",
+              "phrase": "volcano bonds"
+            }
+          ],
+          "nonActiveHighlights": [
+            "bold: IMF"
+          ],
+          "boldLetters": "IMF",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "collateralized “Volcano Bonds” to pay off the IMF"
+        },
+        {
+          "lineIndex": 28,
+          "corridorIndex": 10,
+          "wordCount": 10,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold-partial/full: Mike"
+          ],
+          "boldLetters": "loanie",
+          "partialBoldLetters": "ie",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "loan and get rid of those leeches. I tagged Mike"
+        },
+        {
+          "lineIndex": 29,
+          "corridorIndex": 11,
+          "wordCount": 9,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold-partial: Novogratz"
+          ],
+          "boldLetters": "Nvz",
+          "partialBoldLetters": "Nvz",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "Novogratz in the tweet, figuring he could sell a"
+        },
+        {
+          "lineIndex": 30,
+          "corridorIndex": 12,
+          "wordCount": 11,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [],
+          "boldLetters": "",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "bunch to his Wall Street crony pals, but so far he"
+        },
+        {
+          "lineIndex": 31,
+          "corridorIndex": 13,
+          "wordCount": 12,
+          "activeTargetWordCount": 0,
+          "activeTargets": [],
+          "nonActiveHighlights": [
+            "bold partial: I don't really trust that guy"
+          ],
+          "boldLetters": "Idelluhu",
+          "partialBoldLetters": "delluhu",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "hasn't moved on it. I don't really trust that guy."
+        },
+        {
+          "lineIndex": 32,
+          "corridorIndex": 14,
+          "wordCount": 8,
+          "activeTargetWordCount": 3,
+          "activeTargets": [
+            {
+              "id": "shitcoiner_heart",
+              "phrase": "shitcoiner at heart"
+            }
+          ],
+          "nonActiveHighlights": [],
+          "boldLetters": "shitcoineratheart",
+          "partialBoldLetters": "",
+          "hardInstructionHits": [],
+          "overlapVsFrame": 1.0,
+          "text": "Maybe because he's a shitcoiner at heart."
+        }
+      ]
+    }
+  ],
+  "comparisonReference": {
+    "o4FrameRescueFullCoverageFrame": [
+      294.0,
+      2176.81,
+      2250.0,
+      3023.73
+    ],
+    "o4FrameRescueIncludedWordCount": 102,
+    "o4FrameRescueNonTargetWordCount": 92,
+    "o4FrameRescueNonActiveHighlightEntryCount": 4,
+    "o4FrameRescueHardInstructionHitCount": 0,
+    "signalStreamFrameLayerCodes": "YBKKBMMY",
+    "signalStreamNonActiveSignalGroupCount": 4,
+    "signalStreamHardInstructionHitCount": 0
+  },
+  "summary": {
+    "frameVariantCount": 3,
+    "scenarioCount": 9,
+    "baseMaxLineContextWordCount": 72,
+    "touchMinLineContextWordCount": 91,
+    "touchMinLineContextNonTargetWordCount": 89,
+    "fullCoverMinLineContextWordCount": 102,
+    "fullCoverMinLineContextNonTargetWordCount": 92,
+    "fullCoverNonTargetDensityRange": [
+      0.902,
+      0.902
+    ],
+    "fullCoverOcrMapWordCenterCountRange": [
+      89,
+      89
+    ],
+    "fullCoverMaxNonActiveHighlightEntryCount": 4,
+    "fullCoverHardInstructionHits": [],
+    "fullCoverHardInstructionHitCount": 0,
+    "fullCoverOcrMapHardInstructionHits": [],
+    "fullCoverOcrMapHardInstructionHitCount": 0,
+    "fullCoverLineRanges": [
+      "22-32"
+    ],
+    "activeVisualStateOrder": "YKKY",
+    "activePageLines": "22 25 27 32",
+    "activeCorridorIndexes": "4 7 9 14",
+    "residualFingerprint": "frames=current,-38,-40|maxFull=0|maxPartial=2|bestG5Gap=g5_edge_touch_dx_-38:0.0|bestO5Overlap=nearest_grid_dx_-40:0.270725|minRepairedB4TouchLeft=503|minRepairedB4FullLeft=766|minRepairedO4TouchTop=173|minRepairedO4FullTop=221",
+    "expansionLeakageFingerprint": "scenarios=base,touch,full|baseMaxWords=72|touchMinWords=91|fullMinWords=102|fullMinNonTarget=92|fullSignals=4|fullHard=0|fullOcrHard=0",
+    "selectorUnlocked": false
+  },
+  "decision": {
+    "sourcePacketRepairedFrameExpansionLeakage": "non-selective-context-band",
+    "reason": "The repaired p78 frame needs broad edge-touch/full-cover expansions to include O4/B4. Full-cover variants pull the same lower-corridor line span and non-active format signals seen in the O4 frame-rescue content gate, with no hard instruction wording. This is context leakage, not an extraction selector."
+  },
+  "sheet": "analysis_outputs/source_audit/source_packet_repaired_frame_expansion_leakage/source_packet_repaired_frame_expansion_leakage_sheet.jpg",
+  "nextMove": "Keep repaired p78-frame expansion as a future source-registration stress test only. Do not resume extraction until an external/source-backed R3 unit and order rule appears."
+}

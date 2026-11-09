@@ -1,0 +1,36 @@
+{
+  "name": "key404-investigation",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && npm run research:package && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "check": "tsc -b --pretty false",
+    "audit:public": "node scripts/audit-public.mjs",
+    "research:manifest": "node scripts/research-manifest.mjs",
+    "verify": "npm run audit:public && npm run build",
+    "research:package": "node scripts/package-research.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/space-grotesk": "^5.2.10",
+    "@fontsource/ibm-plex-mono": "^5.2.7",
+    "lucide-react": "^0.468.0",
+    "nostr-tools": "^2.17.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "fflate": "^0.8.2",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.5"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}

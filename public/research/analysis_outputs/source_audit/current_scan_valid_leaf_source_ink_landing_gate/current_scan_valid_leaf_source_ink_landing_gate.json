@@ -1,0 +1,1014 @@
+{
+  "createdAt": "2026-05-24T08:54:42",
+  "scope": "valid physical leaf page-75-to-76 source-ink landing audit; no extraction or candidate generation",
+  "inputs": {
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "heldToLightSimulator": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/current_scan_held_to_light_simulator.json",
+    "lightTableBlendModeGate": "analysis_outputs/source_audit/current_scan_light_table_blend_mode_gate/current_scan_light_table_blend_mode_gate.json",
+    "activeBoxBalanceGate": "analysis_outputs/source_audit/current_scan_held_to_light_active_box_balance_gate/current_scan_held_to_light_active_box_balance_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "scenario": {
+    "scenarioId": "valid_75_to_76_natural",
+    "pairId": "same_leaf_75_to_76",
+    "sourcePage": 75,
+    "targetPage": 76,
+    "mode": "natural_hflip",
+    "dx": 0,
+    "dy": 0,
+    "binaryActiveOverTarget": 0.1003187699231202,
+    "activeCoverageByBox": {
+      "O4": {
+        "label": "buying the dip",
+        "coverage": 0.12232334047109207
+      },
+      "B4": {
+        "label": "$1 billion",
+        "coverage": 0.0
+      },
+      "G5": {
+        "label": "Volcano Bonds",
+        "coverage": 0.05262884455527847
+      },
+      "O5": {
+        "label": "shitcoiner at heart",
+        "coverage": 0.16541062801932366
+      }
+    }
+  },
+  "activeBoxes": [
+    {
+      "id": "buying_dip",
+      "shortId": "O4",
+      "phrase": "buying the dip",
+      "visualState": "Y",
+      "pageLine": 22,
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ]
+    },
+    {
+      "id": "one_billion",
+      "shortId": "B4",
+      "phrase": "$1 billion",
+      "visualState": "K",
+      "pageLine": 25,
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ]
+    },
+    {
+      "id": "volcano_bonds",
+      "shortId": "G5",
+      "phrase": "Volcano Bonds",
+      "visualState": "K",
+      "pageLine": 27,
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ]
+    },
+    {
+      "id": "shitcoiner_heart",
+      "shortId": "O5",
+      "phrase": "shitcoiner at heart",
+      "visualState": "Y",
+      "pageLine": 32,
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ]
+    }
+  ],
+  "controlBoxes": [
+    {
+      "id": "O4_line_-3",
+      "sourceTarget": "O4",
+      "lineOffset": -3,
+      "box": [
+        1334.0,
+        1953.35,
+        1801.0,
+        2001.35
+      ]
+    },
+    {
+      "id": "O4_line_-2",
+      "sourceTarget": "O4",
+      "lineOffset": -2,
+      "box": [
+        1334.0,
+        2027.9,
+        1801.0,
+        2075.9
+      ]
+    },
+    {
+      "id": "O4_line_-1",
+      "sourceTarget": "O4",
+      "lineOffset": -1,
+      "box": [
+        1334.0,
+        2102.45,
+        1801.0,
+        2150.45
+      ]
+    },
+    {
+      "id": "O4_line_+1",
+      "sourceTarget": "O4",
+      "lineOffset": 1,
+      "box": [
+        1334.0,
+        2251.55,
+        1801.0,
+        2299.55
+      ]
+    },
+    {
+      "id": "O4_line_+2",
+      "sourceTarget": "O4",
+      "lineOffset": 2,
+      "box": [
+        1334.0,
+        2326.1,
+        1801.0,
+        2374.1
+      ]
+    },
+    {
+      "id": "O4_line_+3",
+      "sourceTarget": "O4",
+      "lineOffset": 3,
+      "box": [
+        1334.0,
+        2400.65,
+        1801.0,
+        2448.65
+      ]
+    },
+    {
+      "id": "B4_line_-3",
+      "sourceTarget": "B4",
+      "lineOffset": -3,
+      "box": [
+        428.0,
+        2174.35,
+        691.0,
+        2221.35
+      ]
+    },
+    {
+      "id": "B4_line_-2",
+      "sourceTarget": "B4",
+      "lineOffset": -2,
+      "box": [
+        428.0,
+        2248.9,
+        691.0,
+        2295.9
+      ]
+    },
+    {
+      "id": "B4_line_-1",
+      "sourceTarget": "B4",
+      "lineOffset": -1,
+      "box": [
+        428.0,
+        2323.45,
+        691.0,
+        2370.45
+      ]
+    },
+    {
+      "id": "B4_line_+1",
+      "sourceTarget": "B4",
+      "lineOffset": 1,
+      "box": [
+        428.0,
+        2472.55,
+        691.0,
+        2519.55
+      ]
+    },
+    {
+      "id": "B4_line_+2",
+      "sourceTarget": "B4",
+      "lineOffset": 2,
+      "box": [
+        428.0,
+        2547.1,
+        691.0,
+        2594.1
+      ]
+    },
+    {
+      "id": "B4_line_+3",
+      "sourceTarget": "B4",
+      "lineOffset": 3,
+      "box": [
+        428.0,
+        2621.65,
+        691.0,
+        2668.65
+      ]
+    },
+    {
+      "id": "G5_line_-3",
+      "sourceTarget": "G5",
+      "lineOffset": -3,
+      "box": [
+        795.0,
+        2320.35,
+        1196.0,
+        2368.35
+      ]
+    },
+    {
+      "id": "G5_line_-2",
+      "sourceTarget": "G5",
+      "lineOffset": -2,
+      "box": [
+        795.0,
+        2394.9,
+        1196.0,
+        2442.9
+      ]
+    },
+    {
+      "id": "G5_line_-1",
+      "sourceTarget": "G5",
+      "lineOffset": -1,
+      "box": [
+        795.0,
+        2469.45,
+        1196.0,
+        2517.45
+      ]
+    },
+    {
+      "id": "G5_line_+1",
+      "sourceTarget": "G5",
+      "lineOffset": 1,
+      "box": [
+        795.0,
+        2618.55,
+        1196.0,
+        2666.55
+      ]
+    },
+    {
+      "id": "G5_line_+2",
+      "sourceTarget": "G5",
+      "lineOffset": 2,
+      "box": [
+        795.0,
+        2693.1,
+        1196.0,
+        2741.1
+      ]
+    },
+    {
+      "id": "G5_line_+3",
+      "sourceTarget": "G5",
+      "lineOffset": 3,
+      "box": [
+        795.0,
+        2767.65,
+        1196.0,
+        2815.65
+      ]
+    },
+    {
+      "id": "O5_line_-3",
+      "sourceTarget": "O5",
+      "lineOffset": -3,
+      "box": [
+        1040.0,
+        2708.35,
+        1661.0,
+        2758.35
+      ]
+    },
+    {
+      "id": "O5_line_-2",
+      "sourceTarget": "O5",
+      "lineOffset": -2,
+      "box": [
+        1040.0,
+        2782.9,
+        1661.0,
+        2832.9
+      ]
+    },
+    {
+      "id": "O5_line_-1",
+      "sourceTarget": "O5",
+      "lineOffset": -1,
+      "box": [
+        1040.0,
+        2857.45,
+        1661.0,
+        2907.45
+      ]
+    },
+    {
+      "id": "O5_line_+1",
+      "sourceTarget": "O5",
+      "lineOffset": 1,
+      "box": [
+        1040.0,
+        3006.55,
+        1661.0,
+        3056.55
+      ]
+    },
+    {
+      "id": "O5_line_+2",
+      "sourceTarget": "O5",
+      "lineOffset": 2,
+      "box": [
+        1040.0,
+        3081.1,
+        1661.0,
+        3131.1
+      ]
+    },
+    {
+      "id": "O5_line_+3",
+      "sourceTarget": "O5",
+      "lineOffset": 3,
+      "box": [
+        1040.0,
+        3155.65,
+        1661.0,
+        3205.65
+      ]
+    }
+  ],
+  "targetRows": [
+    {
+      "target": "O4",
+      "phrase": "buying the dip",
+      "visualState": "Y",
+      "pageLine": 22,
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "pixelCount": 22416,
+      "sourceInkPixelCount": 3143,
+      "sourceInkRatio": 0.140212,
+      "sourceInkLumaMean": 82.805918,
+      "sourceInkLocalBBox": [
+        0,
+        15,
+        467,
+        48
+      ],
+      "weakSourceSupported": true,
+      "sourceSupported": true,
+      "matchedControlMedianSourceInkRatio": 0.214624,
+      "matchedControlP95SourceInkRatio": 0.473969,
+      "matchedControlGeActiveCount": 4,
+      "activeMinusMatchedControlP95SourceInkRatio": -0.333757
+    },
+    {
+      "target": "B4",
+      "phrase": "$1 billion",
+      "visualState": "K",
+      "pageLine": 25,
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "pixelCount": 12361,
+      "sourceInkPixelCount": 0,
+      "sourceInkRatio": 0.0,
+      "sourceInkLumaMean": 0.0,
+      "sourceInkLocalBBox": null,
+      "weakSourceSupported": false,
+      "sourceSupported": false,
+      "matchedControlMedianSourceInkRatio": 0.0,
+      "matchedControlP95SourceInkRatio": 0.0,
+      "matchedControlGeActiveCount": 6,
+      "activeMinusMatchedControlP95SourceInkRatio": 0.0
+    },
+    {
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "visualState": "K",
+      "pageLine": 27,
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "pixelCount": 19248,
+      "sourceInkPixelCount": 1148,
+      "sourceInkRatio": 0.059643,
+      "sourceInkLumaMean": 92.940767,
+      "sourceInkLocalBBox": [
+        229,
+        17,
+        401,
+        48
+      ],
+      "weakSourceSupported": true,
+      "sourceSupported": true,
+      "matchedControlMedianSourceInkRatio": 0.087437,
+      "matchedControlP95SourceInkRatio": 0.210645,
+      "matchedControlGeActiveCount": 3,
+      "activeMinusMatchedControlP95SourceInkRatio": -0.151002
+    },
+    {
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "visualState": "Y",
+      "pageLine": 32,
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "pixelCount": 31050,
+      "sourceInkPixelCount": 6025,
+      "sourceInkRatio": 0.194042,
+      "sourceInkLumaMean": 86.594025,
+      "sourceInkLocalBBox": [
+        0,
+        0,
+        621,
+        38
+      ],
+      "weakSourceSupported": true,
+      "sourceSupported": true,
+      "matchedControlMedianSourceInkRatio": 0.098019,
+      "matchedControlP95SourceInkRatio": 0.258535,
+      "matchedControlGeActiveCount": 3,
+      "activeMinusMatchedControlP95SourceInkRatio": -0.064493
+    }
+  ],
+  "controlRows": [
+    {
+      "id": "O4_line_-3",
+      "sourceTarget": "O4",
+      "lineOffset": -3,
+      "box": [
+        1334.0,
+        1953.35,
+        1801.0,
+        2001.35
+      ],
+      "pixelCount": 22416,
+      "sourceInkPixelCount": 11032,
+      "sourceInkRatio": 0.492148,
+      "sourceInkLumaMean": 123.088212,
+      "sourceInkLocalBBox": [
+        0,
+        0,
+        467,
+        48
+      ],
+      "weakSourceSupported": true,
+      "sourceSupported": true
+    },
+    {
+      "id": "O4_line_-2",
+      "sourceTarget": "O4",
+      "lineOffset": -2,
+      "box": [
+        1334.0,
+        2027.9,
+        1801.0,
+        2075.9
+      ],
+      "pixelCount": 22416,
+      "sourceInkPixelCount": 2681,
+      "sourceInkRatio": 0.119602,
+      "sourceInkLumaMean": 96.877284,
+      "sourceInkLocalBBox": [
+        3,
+        0,
+        467,
+        48
+      ],
+      "weakSourceSupported": true,
+      "sourceSupported": true
+    },
+    {
+      "id": "O4_line_-1",
+      "sourceTarget": "O4",
+      "lineOffset": -1,
+      "box": [
+        1334.0,
+        2102.45,
+        1801.0,
+        2150.45
+      ],
+      "pixelCount": 22416,
+      "sourceInkPixelCount": 2596,
+      "sourceInkRatio": 0.11581,
+      "sourceInkLumaMean": 99.216102,
+      "sourceInkLocalBBox": [
+        0,
+        18,
+        467,
+        48
+      ],
+      "weakSourceSupported": true,
+      "sourceSupported": true
+    },
+    {
+      "id": "O4_line_+1",
+      "sourceTarget": "O4",
+      "lineOffset": 1,
+      "box": [
+        1334.0,
+        2251.55,
+        1801.0,
+        2299.55
+      ],
+      "pixelCount": 22416,
+      "sourceInkPixelCount": 3567,
+      "sourceInkRatio": 0.159127,
+      "sourceInkLumaMean": 92.400725,
+      "sourceInkLocalBBox": [
+        0,
+        19,
+        467,
+        48
+      ],
+      "weakSourceSupported": true,
+      "sourceSupported": true
+    },
+    {
+      "id": "O4_line_+2",
+      "sourceTarget": "O4",
+      "lineOffset": 2,
+      "box": [
+        1334.0,
+        2326.1,
+        1801.0,
+        2374.1
+      ],
+      "pixelCount": 22416,
+      "sourceInkPixelCount": 9402,
+      "sourceInkRatio": 0.419433,
+      "sourceInkLumaMean": 43.783835,
+      "sourceInkLocalBBox": [
+        58,
+        16,
+        467,
+        48
+      ],
+      "weakSourceSupported": true,
+      "sourceSupported": true
+    },
+    {
+      "id": "O4_line_+3",
+      "sourceTarget": "O4",
+      "lineOffset": 3,
+      "box": [
+        1334.0,
+        2400.65,
+        1801.0,
+        2448.65
+      ],
+      "pixelCount": 22416,
+      "sourceInkPixelCount": 6055,
+      "sourceInkRatio": 0.27012,
+      "sourceInkLumaMean": 114.10869,
+      "sourceInkLocalBBox": [
+        283,
+        13,
+        467,
+        48
+      ],
+      "weakSourceSupported": true,
+      "sourceSupported": true
+    },
+    {
+      "id": "B4_line_-3",
+      "sourceTarget": "B4",
+      "lineOffset": -3,
+      "box": [
+        428.0,
+        2174.35,
+        691.0,
+        2221.35
+      ],
+      "pixelCount": 12361,
+      "sourceInkPixelCount": 0,
+      "sourceInkRatio": 0.0,
+      "sourceInkLumaMean": 0.0,
+      "sourceInkLocalBBox": null,
+      "weakSourceSupported": false,
+      "sourceSupported": false
+    },
+    {
+      "id": "B4_line_-2",
+      "sourceTarget": "B4",
+      "lineOffset": -2,
+      "box": [
+        428.0,
+        2248.9,
+        691.0,
+        2295.9
+      ],
+      "pixelCount": 12361,
+      "sourceInkPixelCount": 0,
+      "sourceInkRatio": 0.0,
+      "sourceInkLumaMean": 0.0,
+      "sourceInkLocalBBox": null,
+      "weakSourceSupported": false,
+      "sourceSupported": false
+    },
+    {
+      "id": "B4_line_-1",
+      "sourceTarget": "B4",
+      "lineOffset": -1,
+      "box": [
+        428.0,
+        2323.45,
+        691.0,
+        2370.45
+      ],
+      "pixelCount": 12361,
+      "sourceInkPixelCount": 0,
+      "sourceInkRatio": 0.0,
+      "sourceInkLumaMean": 0.0,
+      "sourceInkLocalBBox": null,
+      "weakSourceSupported": false,
+      "sourceSupported": false
+    },
+    {
+      "id": "B4_line_+1",
+      "sourceTarget": "B4",
+      "lineOffset": 1,
+      "box": [
+        428.0,
+        2472.55,
+        691.0,
+        2519.55
+      ],
+      "pixelCount": 12361,
+      "sourceInkPixelCount": 0,
+      "sourceInkRatio": 0.0,
+      "sourceInkLumaMean": 0.0,
+      "sourceInkLocalBBox": null,
+      "weakSourceSupported": false,
+      "sourceSupported": false
+    },
+    {
+      "id": "B4_line_+2",
+      "sourceTarget": "B4",
+      "lineOffset": 2,
+      "box": [
+        428.0,
+        2547.1,
+        691.0,
+        2594.1
+      ],
+      "pixelCount": 12361,
+      "sourceInkPixelCount": 0,
+      "sourceInkRatio": 0.0,
+      "sourceInkLumaMean": 0.0,
+      "sourceInkLocalBBox": null,
+      "weakSourceSupported": false,
+      "sourceSupported": false
+    },
+    {
+      "id": "B4_line_+3",
+      "sourceTarget": "B4",
+      "lineOffset": 3,
+      "box": [
+        428.0,
+        2621.65,
+        691.0,
+        2668.65
+      ],
+      "pixelCount": 12361,
+      "sourceInkPixelCount": 0,
+      "sourceInkRatio": 0.0,
+      "sourceInkLumaMean": 0.0,
+      "sourceInkLocalBBox": null,
+      "weakSourceSupported": false,
+      "sourceSupported": false
+    },
+    {
+      "id": "G5_line_-3",
+      "sourceTarget": "G5",
+      "lineOffset": -3,
+      "box": [
+        795.0,
+        2320.35,
+        1196.0,
+        2368.35
+      ],
+      "pixelCount": 19248,
+      "sourceInkPixelCount": 0,
+      "sourceInkRatio": 0.0,
+      "sourceInkLumaMean": 0.0,
+      "sourceInkLocalBBox": null,
+      "weakSourceSupported": false,
+      "sourceSupported": false
+    },
+    {
+      "id": "G5_line_-2",
+      "sourceTarget": "G5",
+      "lineOffset": -2,
+      "box": [
+        795.0,
+        2394.9,
+        1196.0,
+        2442.9
+      ],
+      "pixelCount": 19248,
+      "sourceInkPixelCount": 0,
+      "sourceInkRatio": 0.0,
+      "sourceInkLumaMean": 0.0,
+      "sourceInkLocalBBox": null,
+      "weakSourceSupported": false,
+      "sourceSupported": false
+    },
+    {
+      "id": "G5_line_-1",
+      "sourceTarget": "G5",
+      "lineOffset": -1,
+      "box": [
+        795.0,
+        2469.45,
+        1196.0,
+        2517.45
+      ],
+      "pixelCount": 19248,
+      "sourceInkPixelCount": 11,
+      "sourceInkRatio": 0.000571,
+      "sourceInkLumaMean": 232.545455,
+      "sourceInkLocalBBox": [
+        208,
+        7,
+        211,
+        43
+      ],
+      "weakSourceSupported": false,
+      "sourceSupported": false
+    },
+    {
+      "id": "G5_line_+1",
+      "sourceTarget": "G5",
+      "lineOffset": 1,
+      "box": [
+        795.0,
+        2618.55,
+        1196.0,
+        2666.55
+      ],
+      "pixelCount": 19248,
+      "sourceInkPixelCount": 3546,
+      "sourceInkRatio": 0.184227,
+      "sourceInkLumaMean": 59.895745,
+      "sourceInkLocalBBox": [
+        78,
+        13,
+        401,
+        48
+      ],
+      "weakSourceSupported": true,
+      "sourceSupported": true
+    },
+    {
+      "id": "G5_line_+2",
+      "sourceTarget": "G5",
+      "lineOffset": 2,
+      "box": [
+        795.0,
+        2693.1,
+        1196.0,
+        2741.1
+      ],
+      "pixelCount": 19248,
+      "sourceInkPixelCount": 4224,
+      "sourceInkRatio": 0.219451,
+      "sourceInkLumaMean": 56.437027,
+      "sourceInkLocalBBox": [
+        29,
+        11,
+        401,
+        48
+      ],
+      "weakSourceSupported": true,
+      "sourceSupported": true
+    },
+    {
+      "id": "G5_line_+3",
+      "sourceTarget": "G5",
+      "lineOffset": 3,
+      "box": [
+        795.0,
+        2767.65,
+        1196.0,
+        2815.65
+      ],
+      "pixelCount": 19248,
+      "sourceInkPixelCount": 3355,
+      "sourceInkRatio": 0.174304,
+      "sourceInkLumaMean": 86.709389,
+      "sourceInkLocalBBox": [
+        0,
+        16,
+        401,
+        48
+      ],
+      "weakSourceSupported": true,
+      "sourceSupported": true
+    },
+    {
+      "id": "O5_line_-3",
+      "sourceTarget": "O5",
+      "lineOffset": -3,
+      "box": [
+        1040.0,
+        2708.35,
+        1661.0,
+        2758.35
+      ],
+      "pixelCount": 31050,
+      "sourceInkPixelCount": 8641,
+      "sourceInkRatio": 0.278293,
+      "sourceInkLumaMean": 57.05254,
+      "sourceInkLocalBBox": [
+        0,
+        0,
+        621,
+        39
+      ],
+      "weakSourceSupported": true,
+      "sourceSupported": true
+    },
+    {
+      "id": "O5_line_-2",
+      "sourceTarget": "O5",
+      "lineOffset": -2,
+      "box": [
+        1040.0,
+        2782.9,
+        1661.0,
+        2832.9
+      ],
+      "pixelCount": 31050,
+      "sourceInkPixelCount": 6087,
+      "sourceInkRatio": 0.196039,
+      "sourceInkLumaMean": 91.910136,
+      "sourceInkLocalBBox": [
+        0,
+        0,
+        621,
+        43
+      ],
+      "weakSourceSupported": true,
+      "sourceSupported": true
+    },
+    {
+      "id": "O5_line_-1",
+      "sourceTarget": "O5",
+      "lineOffset": -1,
+      "box": [
+        1040.0,
+        2857.45,
+        1661.0,
+        2907.45
+      ],
+      "pixelCount": 31050,
+      "sourceInkPixelCount": 6187,
+      "sourceInkRatio": 0.199259,
+      "sourceInkLumaMean": 90.674518,
+      "sourceInkLocalBBox": [
+        0,
+        0,
+        621,
+        39
+      ],
+      "weakSourceSupported": true,
+      "sourceSupported": true
+    },
+    {
+      "id": "O5_line_+1",
+      "sourceTarget": "O5",
+      "lineOffset": 1,
+      "box": [
+        1040.0,
+        3006.55,
+        1661.0,
+        3056.55
+      ],
+      "pixelCount": 31050,
+      "sourceInkPixelCount": 0,
+      "sourceInkRatio": 0.0,
+      "sourceInkLumaMean": 0.0,
+      "sourceInkLocalBBox": null,
+      "weakSourceSupported": false,
+      "sourceSupported": false
+    },
+    {
+      "id": "O5_line_+2",
+      "sourceTarget": "O5",
+      "lineOffset": 2,
+      "box": [
+        1040.0,
+        3081.1,
+        1661.0,
+        3131.1
+      ],
+      "pixelCount": 31050,
+      "sourceInkPixelCount": 0,
+      "sourceInkRatio": 0.0,
+      "sourceInkLumaMean": 0.0,
+      "sourceInkLocalBBox": null,
+      "weakSourceSupported": false,
+      "sourceSupported": false
+    },
+    {
+      "id": "O5_line_+3",
+      "sourceTarget": "O5",
+      "lineOffset": 3,
+      "box": [
+        1040.0,
+        3155.65,
+        1661.0,
+        3205.65
+      ],
+      "pixelCount": 31050,
+      "sourceInkPixelCount": 0,
+      "sourceInkRatio": 0.0,
+      "sourceInkLumaMean": 0.0,
+      "sourceInkLocalBBox": null,
+      "weakSourceSupported": false,
+      "sourceSupported": false
+    }
+  ],
+  "summary": {
+    "scenarioId": "valid_75_to_76_natural",
+    "sourcePage": 75,
+    "targetPage": 76,
+    "heldToLightMode": "natural_hflip",
+    "dx": 0,
+    "dy": 0,
+    "targetCount": 4,
+    "controlBoxCount": 24,
+    "estimatedLinePitchPx": 74.55,
+    "sourceInkLumaThreshold": 238.0,
+    "supportThreshold": 0.05,
+    "weakSupportThreshold": 0.01,
+    "activeSourceSupportedTargets": [
+      "O4",
+      "G5",
+      "O5"
+    ],
+    "weakSourceSupportedTargets": [
+      "O4",
+      "G5",
+      "O5"
+    ],
+    "zeroSourceInkTargets": [
+      "B4"
+    ],
+    "activeSourceSupportedCount": 3,
+    "weakActiveSourceSupportedCount": 3,
+    "allFourSourceSupported": false,
+    "allFourWeakSourceSupported": false,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "sourceInkLandingFingerprint": "scenario=valid_75_to_76_natural|targets=4|controls=24|activeGe05=3|activeGe01=3|all4Ge05=0|all4Ge01=0|zeroTargets=B4|ratios=O4:0.1402,B4:0.0000,G5:0.0596,O5:0.1940|sourceR3=0|triggers=0/9|selectors=0",
+    "priorLightTableBlendModeFingerprint": "scenarios=4|modes=5|alphas=3|blendRows=60|controls=24|naturalAll4Outlier=3|controlAll4Outlier=0|naturalAll4Source=0|controlAll4Source=0|bestNatural=4/4:3/4src:average@0.70:29.55|bestControl=3/4:3/4src:nonphysical_79_to_76_forced_active:average@0.35:-10.50|preR3=0|sourceR3=0|triggers=0/9|selectors=0",
+    "priorActiveBalanceFingerprint": "activeRows=9|physicalCandidates=0|sameLeafAll4_10=0|sameLeafAll4_25=0|nonphysicalAll4_10=2|nonphysicalAll4_25=0|naturalMin=0.0000|sameLeafBestMin=0.0540@-220,200|nonphysicalBestMin=0.1138@nonphysical_79_to_76:40,80|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "decision": {
+    "currentScanValidLeafSourceInkLandingGate": "current_scan_valid_leaf_source_ink_landing_no_selector",
+    "selectorUnlocked": false,
+    "reason": "The natural physical 75->76 source-ink landing does not support all four active targets. B4 has zero landing source ink, so the average-blend all-four visual pop cannot be a physical back-page ink selector.",
+    "nextMove": "Stop treating the current-scan valid leaf as extraction-ready. Use these landing ratios only as a source-review witness when comparing a true physical/original-layout source or raw clue wording."
+  },
+  "overlay": "analysis_outputs/source_audit/current_scan_valid_leaf_source_ink_landing_gate/valid_75_to_76_source_ink_overlay.jpg",
+  "sheet": "analysis_outputs/source_audit/current_scan_valid_leaf_source_ink_landing_gate/current_scan_valid_leaf_source_ink_landing_gate_sheet.jpg",
+  "fingerprint": "scenario=valid_75_to_76_natural|targets=4|controls=24|activeGe05=3|activeGe01=3|all4Ge05=0|all4Ge01=0|zeroTargets=B4|ratios=O4:0.1402,B4:0.0000,G5:0.0596,O5:0.1940|sourceR3=0|triggers=0/9|selectors=0"
+}

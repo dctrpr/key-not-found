@@ -1,0 +1,997 @@
+{
+  "createdAt": "2026-05-21T04:42:20",
+  "scope": [
+    "Use exact active target-center y coordinates as horizontal C9-frame chords.",
+    "Compare active O4/B4/G5/O5 chords with non-active focus-row control chords inside the same C9 frame.",
+    "Measure existing word/highlight/active-target intersections and strict instruction terms only.",
+    "No OCR, hashing, key derivation, private-key checks, seed/WIF checks, address checks, or broad candidate generation."
+  ],
+  "inputs": {
+    "activeTargets": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "articleMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "c9HeaderGlyphSlotGate": "analysis_outputs/source_audit/c9_header_glyph_slot_gate/c9_header_glyph_slot_gate.json"
+  },
+  "c9Frame": [
+    294.0,
+    2176.81,
+    2250.0,
+    3023.73
+  ],
+  "summary": {
+    "activeChordCount": 4,
+    "controlChordCount": 6,
+    "activeStrictInstructionHitCount": 0,
+    "controlStrictInstructionHitCount": 0,
+    "activeAllQuartetChordCount": 0,
+    "activeChordActiveTargetHitCounts": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "controlChordActiveTargetHitCounts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activeChordHighlightHitCounts": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "controlChordHighlightHitCounts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activeWordHitCounts": [
+      7,
+      8,
+      6,
+      5
+    ],
+    "controlWordHitCounts": [
+      8,
+      10,
+      6,
+      10,
+      8,
+      11
+    ],
+    "selectorUnlocked": false
+  },
+  "activeChords": [
+    {
+      "targetId": "buying_dip",
+      "targetLabel": "O4 buying the dip",
+      "targetKind": "active",
+      "y": 2201.0,
+      "left": [
+        294.0,
+        2201.0
+      ],
+      "right": [
+        2250.0,
+        2201.0
+      ],
+      "chordLengthPx": 1956.0,
+      "wordHitCount": 7,
+      "focusWordHitCount": 3,
+      "wordPreview": "He's taunting them, telling them he's ByiiREeraipy\"",
+      "highlightHitCount": 1,
+      "highlightHitIds": [
+        "p76_orange_4"
+      ],
+      "activeTargetHitCount": 1,
+      "activeTargetHitIds": [
+        "buying_dip"
+      ],
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w176",
+          "index": 176,
+          "text": "He's",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w177",
+          "index": 177,
+          "text": "taunting",
+          "importance": 8,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w178",
+          "index": 178,
+          "text": "them,",
+          "importance": 6,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w179",
+          "index": 179,
+          "text": "telling",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w180",
+          "index": 180,
+          "text": "them",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w181",
+          "index": 181,
+          "text": "he's",
+          "importance": 2,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w182",
+          "index": 182,
+          "text": "ByiiREeraipy\"",
+          "importance": 6,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": [
+        {
+          "id": "p76_orange_4",
+          "kind": "orange"
+        }
+      ]
+    },
+    {
+      "targetId": "one_billion",
+      "targetLabel": "B4 $1 billion",
+      "targetKind": "active",
+      "y": 2421.5,
+      "left": [
+        294.0,
+        2421.5
+      ],
+      "right": [
+        2250.0,
+        2421.5
+      ],
+      "chordLengthPx": 1956.0,
+      "wordHitCount": 8,
+      "focusWordHitCount": 3,
+      "wordPreview": "eis in bitcoin — that he should sell",
+      "highlightHitCount": 0,
+      "highlightHitIds": [],
+      "activeTargetHitCount": 1,
+      "activeTargetHitIds": [
+        "one_billion"
+      ],
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w201",
+          "index": 201,
+          "text": "eis",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w202",
+          "index": 202,
+          "text": "in",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w203",
+          "index": 203,
+          "text": "bitcoin",
+          "importance": 3,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w204",
+          "index": 204,
+          "text": "—",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w205",
+          "index": 205,
+          "text": "that",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w206",
+          "index": 206,
+          "text": "he",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w207",
+          "index": 207,
+          "text": "should",
+          "importance": 8,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w208",
+          "index": 208,
+          "text": "sell",
+          "importance": 8,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": []
+    },
+    {
+      "targetId": "volcano_bonds",
+      "targetLabel": "G5 Volcano Bonds",
+      "targetKind": "active",
+      "y": 2568.0,
+      "left": [
+        294.0,
+        2568.0
+      ],
+      "right": [
+        2250.0,
+        2568.0
+      ],
+      "chordLengthPx": 1956.0,
+      "wordHitCount": 6,
+      "focusWordHitCount": 3,
+      "wordPreview": "collateralized to pay off the IMF",
+      "highlightHitCount": 0,
+      "highlightHitIds": [],
+      "activeTargetHitCount": 1,
+      "activeTargetHitIds": [
+        "volcano_bonds"
+      ],
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w215",
+          "index": 215,
+          "text": "collateralized",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w216",
+          "index": 216,
+          "text": "to",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w217",
+          "index": 217,
+          "text": "pay",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w218",
+          "index": 218,
+          "text": "off",
+          "importance": 4,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w219",
+          "index": 219,
+          "text": "the",
+          "importance": 4,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w220",
+          "index": 220,
+          "text": "IMF",
+          "importance": 10,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": []
+    },
+    {
+      "targetId": "shitcoiner_heart",
+      "targetLabel": "O5 shitcoiner at heart",
+      "targetKind": "active",
+      "y": 2957.0,
+      "left": [
+        294.0,
+        2957.0
+      ],
+      "right": [
+        2250.0,
+        2957.0
+      ],
+      "chordLengthPx": 1956.0,
+      "wordHitCount": 5,
+      "focusWordHitCount": 0,
+      "wordPreview": "Maybe because he's a siukbeodmensertslveaarty",
+      "highlightHitCount": 1,
+      "highlightHitIds": [
+        "p76_orange_5"
+      ],
+      "activeTargetHitCount": 1,
+      "activeTargetHitIds": [
+        "shitcoiner_heart"
+      ],
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w260",
+          "index": 260,
+          "text": "Maybe",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w261",
+          "index": 261,
+          "text": "because",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w262",
+          "index": 262,
+          "text": "he's",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w263",
+          "index": 263,
+          "text": "a",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w264",
+          "index": 264,
+          "text": "siukbeodmensertslveaarty",
+          "importance": 0,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": [
+        {
+          "id": "p76_orange_5",
+          "kind": "orange"
+        }
+      ]
+    }
+  ],
+  "controlRows": [
+    {
+      "id": "c9_focus_row_2",
+      "label": "President Nayib Bukele announced",
+      "kind": "non_active_focus_row_control",
+      "y": 2265.93,
+      "sourceWordIds": [
+        "p76w185",
+        "p76w186",
+        "p76w187",
+        "p76w190"
+      ]
+    },
+    {
+      "id": "c9_focus_row_3",
+      "label": "nation's volcanoes mine",
+      "kind": "non_active_focus_row_control",
+      "y": 2340.82,
+      "sourceWordIds": [
+        "p76w197",
+        "p76w198",
+        "p76w200"
+      ]
+    },
+    {
+      "id": "c9_focus_row_5",
+      "label": "bitcoin",
+      "kind": "non_active_focus_row_control",
+      "y": 2487.2,
+      "sourceWordIds": [
+        "p76w213"
+      ]
+    },
+    {
+      "id": "c9_focus_row_7",
+      "label": "those leeches. I tagged",
+      "kind": "non_active_focus_row_control",
+      "y": 2631.37,
+      "sourceWordIds": [
+        "p76w226",
+        "p76w227",
+        "p76w228",
+        "p76w229"
+      ]
+    },
+    {
+      "id": "c9_focus_row_8",
+      "label": "Novogratz in the tweet,",
+      "kind": "non_active_focus_row_control",
+      "y": 2706.26,
+      "sourceWordIds": [
+        "p76w231",
+        "p76w232",
+        "p76w233",
+        "p76w234"
+      ]
+    },
+    {
+      "id": "c9_focus_row_9",
+      "label": "bunch",
+      "kind": "non_active_focus_row_control",
+      "y": 2778.92,
+      "sourceWordIds": [
+        "p76w239"
+      ]
+    }
+  ],
+  "controlChords": [
+    {
+      "targetId": "c9_focus_row_2",
+      "targetLabel": "President Nayib Bukele announced",
+      "targetKind": "non_active_focus_row_control",
+      "y": 2265.93,
+      "left": [
+        294.0,
+        2265.93
+      ],
+      "right": [
+        2250.0,
+        2265.93
+      ],
+      "chordLengthPx": 1956.0,
+      "wordHitCount": 8,
+      "focusWordHitCount": 4,
+      "wordPreview": "I tweeted President Nayib Bukele when he announced",
+      "highlightHitCount": 0,
+      "highlightHitIds": [],
+      "activeTargetHitCount": 0,
+      "activeTargetHitIds": [],
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w183",
+          "index": 183,
+          "text": "I",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w184",
+          "index": 184,
+          "text": "tweeted",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w185",
+          "index": 185,
+          "text": "President",
+          "importance": 14,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w186",
+          "index": 186,
+          "text": "Nayib",
+          "importance": 11,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w187",
+          "index": 187,
+          "text": "Bukele",
+          "importance": 6,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w188",
+          "index": 188,
+          "text": "when",
+          "importance": 2,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w189",
+          "index": 189,
+          "text": "he",
+          "importance": 2,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w190",
+          "index": 190,
+          "text": "announced",
+          "importance": 6,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": []
+    },
+    {
+      "targetId": "c9_focus_row_3",
+      "targetLabel": "nation's volcanoes mine",
+      "targetKind": "non_active_focus_row_control",
+      "y": 2340.82,
+      "left": [
+        294.0,
+        2340.82
+      ],
+      "right": [
+        2250.0,
+        2340.82
+      ],
+      "chordLengthPx": 1956.0,
+      "wordHitCount": 10,
+      "focusWordHitCount": 3,
+      "wordPreview": "he was going to tap his nation's volcanoes to mine",
+      "highlightHitCount": 0,
+      "highlightHitIds": [],
+      "activeTargetHitCount": 0,
+      "activeTargetHitIds": [],
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w191",
+          "index": 191,
+          "text": "he",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w192",
+          "index": 192,
+          "text": "was",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w193",
+          "index": 193,
+          "text": "going",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w194",
+          "index": 194,
+          "text": "to",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w195",
+          "index": 195,
+          "text": "tap",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w196",
+          "index": 196,
+          "text": "his",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w197",
+          "index": 197,
+          "text": "nation's",
+          "importance": 8,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w198",
+          "index": 198,
+          "text": "volcanoes",
+          "importance": 12,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w199",
+          "index": 199,
+          "text": "to",
+          "importance": 2,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w200",
+          "index": 200,
+          "text": "mine",
+          "importance": 5,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": []
+    },
+    {
+      "targetId": "c9_focus_row_5",
+      "targetLabel": "bitcoin",
+      "targetKind": "non_active_focus_row_control",
+      "y": 2487.2,
+      "left": [
+        294.0,
+        2487.2
+      ],
+      "right": [
+        2250.0,
+        2487.2
+      ],
+      "chordLengthPx": 1956.0,
+      "wordHitCount": 6,
+      "focusWordHitCount": 1,
+      "wordPreview": "billions worth of future bitcoin earnings",
+      "highlightHitCount": 0,
+      "highlightHitIds": [],
+      "activeTargetHitCount": 0,
+      "activeTargetHitIds": [],
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w209",
+          "index": 209,
+          "text": "billions",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w210",
+          "index": 210,
+          "text": "worth",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w211",
+          "index": 211,
+          "text": "of",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w212",
+          "index": 212,
+          "text": "future",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w213",
+          "index": 213,
+          "text": "bitcoin",
+          "importance": 3,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w214",
+          "index": 214,
+          "text": "earnings",
+          "importance": 0,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": []
+    },
+    {
+      "targetId": "c9_focus_row_7",
+      "targetLabel": "those leeches. I tagged",
+      "targetKind": "non_active_focus_row_control",
+      "y": 2631.37,
+      "left": [
+        294.0,
+        2631.37
+      ],
+      "right": [
+        2250.0,
+        2631.37
+      ],
+      "chordLengthPx": 1956.0,
+      "wordHitCount": 10,
+      "focusWordHitCount": 4,
+      "wordPreview": "loan and get rid of those leeches. I tagged Mike",
+      "highlightHitCount": 0,
+      "highlightHitIds": [],
+      "activeTargetHitCount": 0,
+      "activeTargetHitIds": [],
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w221",
+          "index": 221,
+          "text": "loan",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w222",
+          "index": 222,
+          "text": "and",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w223",
+          "index": 223,
+          "text": "get",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w224",
+          "index": 224,
+          "text": "rid",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w225",
+          "index": 225,
+          "text": "of",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w226",
+          "index": 226,
+          "text": "those",
+          "importance": 4,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w227",
+          "index": 227,
+          "text": "leeches.",
+          "importance": 4,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w228",
+          "index": 228,
+          "text": "I",
+          "importance": 4,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w229",
+          "index": 229,
+          "text": "tagged",
+          "importance": 4,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w230",
+          "index": 230,
+          "text": "Mike",
+          "importance": 0,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": []
+    },
+    {
+      "targetId": "c9_focus_row_8",
+      "targetLabel": "Novogratz in the tweet,",
+      "targetKind": "non_active_focus_row_control",
+      "y": 2706.26,
+      "left": [
+        294.0,
+        2706.26
+      ],
+      "right": [
+        2250.0,
+        2706.26
+      ],
+      "chordLengthPx": 1956.0,
+      "wordHitCount": 8,
+      "focusWordHitCount": 4,
+      "wordPreview": "Novogratz in the tweet, figuring he could sella",
+      "highlightHitCount": 0,
+      "highlightHitIds": [],
+      "activeTargetHitCount": 0,
+      "activeTargetHitIds": [],
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w231",
+          "index": 231,
+          "text": "Novogratz",
+          "importance": 4,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w232",
+          "index": 232,
+          "text": "in",
+          "importance": 4,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w233",
+          "index": 233,
+          "text": "the",
+          "importance": 4,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w234",
+          "index": 234,
+          "text": "tweet,",
+          "importance": 4,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w235",
+          "index": 235,
+          "text": "figuring",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w236",
+          "index": 236,
+          "text": "he",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w237",
+          "index": 237,
+          "text": "could",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w238",
+          "index": 238,
+          "text": "sella",
+          "importance": 0,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": []
+    },
+    {
+      "targetId": "c9_focus_row_9",
+      "targetLabel": "bunch",
+      "targetKind": "non_active_focus_row_control",
+      "y": 2778.92,
+      "left": [
+        294.0,
+        2778.92
+      ],
+      "right": [
+        2250.0,
+        2778.92
+      ],
+      "chordLengthPx": 1956.0,
+      "wordHitCount": 11,
+      "focusWordHitCount": 1,
+      "wordPreview": "bunch to his Wall Street crony pals, but so far he",
+      "highlightHitCount": 0,
+      "highlightHitIds": [],
+      "activeTargetHitCount": 0,
+      "activeTargetHitIds": [],
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w239",
+          "index": 239,
+          "text": "bunch",
+          "importance": 4,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w240",
+          "index": 240,
+          "text": "to",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w241",
+          "index": 241,
+          "text": "his",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w242",
+          "index": 242,
+          "text": "Wall",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w243",
+          "index": 243,
+          "text": "Street",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w244",
+          "index": 244,
+          "text": "crony",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w245",
+          "index": 245,
+          "text": "pals,",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w246",
+          "index": 246,
+          "text": "but",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w247",
+          "index": 247,
+          "text": "so",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w248",
+          "index": 248,
+          "text": "far",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w249",
+          "index": 249,
+          "text": "he",
+          "importance": 0,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": []
+    }
+  ],
+  "decision": {
+    "c9TargetHorizontalChordAsSelector": "closed_current_scan",
+    "selectorUnlocked": false,
+    "nextMove": "Keep exact target-y C9 horizontal chords as row/context evidence only. Reopen only if a source/clue explicitly names horizontal rows or a row-based unit/order rule."
+  },
+  "sheet": "analysis_outputs/source_audit/c9_target_horizontal_chord_gate/c9_target_horizontal_chord_gate_sheet.jpg",
+  "outputs": {
+    "json": "analysis_outputs/source_audit/c9_target_horizontal_chord_gate/c9_target_horizontal_chord_gate.json",
+    "markdown": "analysis_outputs/source_audit/c9_target_horizontal_chord_gate/c9_target_horizontal_chord_gate.md",
+    "sheet": "analysis_outputs/source_audit/c9_target_horizontal_chord_gate/c9_target_horizontal_chord_gate_sheet.jpg"
+  }
+}

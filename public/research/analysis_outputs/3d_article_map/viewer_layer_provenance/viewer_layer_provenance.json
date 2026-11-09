@@ -1,0 +1,373 @@
+{
+  "scope": "3D viewer layer/source provenance; no key derivation",
+  "sourceHierarchy": {
+    "dataMeta": {
+      "title": "Max Keiser Puzzle 3D Article Map",
+      "purpose": "High-resolution page planes with every OCR character mapped into 3D, plus highlight, mirror, anchor, and ray-selector layers.",
+      "sourcePdf": "keyser bitcoin .pdf",
+      "highresSource": "magazine.pdf"
+    },
+    "viewerDrawsPageImages": true,
+    "viewerTextSource": "OCR words from article_3d_map_data.json plus browser-local corrections if manually applied",
+    "manualCorrectionPersistence": "localStorage only; not part of source geometry or exported reports unless explicitly exported"
+  },
+  "controls": {
+    "layoutModes": [
+      "spread",
+      "fold",
+      "stack"
+    ],
+    "toggles": [
+      "togglePages",
+      "toggleChars",
+      "toggleImportant",
+      "toggleHighlights",
+      "toggleReflections",
+      "toggleAnchors",
+      "toggleRays"
+    ],
+    "focusPageOptions": [
+      "75",
+      "76",
+      "77",
+      "78",
+      "79",
+      "80",
+      "75",
+      "77",
+      "78",
+      "79",
+      "80"
+    ],
+    "assetLinks": [
+      "./active_target_label_gate/target_wording_bridge_sheet.jpg",
+      "../docm_format_sources/typeka_manual_bold_disambiguation/typeka_authority_bridge_sheet.jpg",
+      "../source_audit/page76_typography_overlay/page76_typography_overlay.jpg"
+    ]
+  },
+  "layouts": {
+    "spread": {
+      "75": [
+        -560.0,
+        330.0,
+        0.0,
+        0.0
+      ],
+      "76": [
+        0.0,
+        330.0,
+        0.0,
+        0.0
+      ],
+      "77": [
+        560.0,
+        330.0,
+        0.0,
+        0.0
+      ],
+      "78": [
+        -560.0,
+        -380.0,
+        0.0,
+        0.0
+      ],
+      "79": [
+        0.0,
+        -380.0,
+        0.0,
+        0.0
+      ],
+      "80": [
+        560.0,
+        -380.0,
+        0.0,
+        0.0
+      ]
+    },
+    "stack": {
+      "75": [
+        -180.0,
+        0.0,
+        -250.0,
+        -0.2
+      ],
+      "76": [
+        -110.0,
+        0.0,
+        -130.0,
+        -0.12
+      ],
+      "77": [
+        -40.0,
+        0.0,
+        -10.0,
+        -0.04
+      ],
+      "78": [
+        40.0,
+        0.0,
+        110.0,
+        0.04
+      ],
+      "79": [
+        110.0,
+        0.0,
+        230.0,
+        0.12
+      ],
+      "80": [
+        180.0,
+        0.0,
+        350.0,
+        0.2
+      ]
+    },
+    "fold": {
+      "75": [
+        -280.0,
+        320.0,
+        -130.0,
+        0.42
+      ],
+      "79": [
+        280.0,
+        320.0,
+        -130.0,
+        -0.42
+      ],
+      "76": [
+        -280.0,
+        -380.0,
+        130.0,
+        0.42
+      ],
+      "78": [
+        280.0,
+        -380.0,
+        130.0,
+        -0.42
+      ],
+      "77": [
+        0.0,
+        -20.0,
+        330.0,
+        0.0
+      ],
+      "80": [
+        610.0,
+        -20.0,
+        420.0,
+        -0.2
+      ]
+    }
+  },
+  "foldPairGeometry": {
+    "topRow": {
+      "75": [
+        -280.0,
+        320.0,
+        -130.0,
+        0.42
+      ],
+      "79": [
+        280.0,
+        320.0,
+        -130.0,
+        -0.42
+      ]
+    },
+    "bottomRow": {
+      "76": [
+        -280.0,
+        -380.0,
+        130.0,
+        0.42
+      ],
+      "78": [
+        280.0,
+        -380.0,
+        130.0,
+        -0.42
+      ]
+    },
+    "centerBack": {
+      "77": [
+        0.0,
+        -20.0,
+        330.0,
+        0.0
+      ]
+    },
+    "sideBack": {
+      "80": [
+        610.0,
+        -20.0,
+        420.0,
+        -0.2
+      ]
+    }
+  },
+  "anchorPageCounts": {
+    "76": 11,
+    "79": 5
+  },
+  "reflectionPairs": {
+    "79->75": 10,
+    "78->76": 4,
+    "76->78": 5,
+    "79->76": 10
+  },
+  "rayEndpointPagePairs": {
+    "76->76": 40
+  },
+  "rayCounts": {
+    "total": 40,
+    "visibleInViewer": 28,
+    "hiddenByViewerLimit": 12,
+    "visibleRayLimit": 28,
+    "originalP79EndpointUses": 0,
+    "mirroredP79EndpointUses": 43,
+    "addRaysForcesPage76": true
+  },
+  "layerImplementation": {
+    "reflectionUsesPrecomputedTargetBox": true,
+    "hiddenOrExtraLayoutModes": [],
+    "assetLinks": [
+      "./active_target_label_gate/target_wording_bridge_sheet.jpg",
+      "../docm_format_sources/typeka_manual_bold_disambiguation/typeka_authority_bridge_sheet.jpg",
+      "../source_audit/page76_typography_overlay/page76_typography_overlay.jpg"
+    ]
+  },
+  "hiddenRayRows": [
+    {
+      "rank": 29,
+      "mode": "ray_ab",
+      "a": "p79_pill_1_mirror",
+      "aPage": 76,
+      "b": "p79_pill_2_mirror",
+      "bPage": 76,
+      "visibleInViewer": false,
+      "text": "off the IMF those leeches. I tagged Novogratz in the tweet, bunch"
+    },
+    {
+      "rank": 30,
+      "mode": "ray_ab",
+      "a": "p79_pill_4_mirror",
+      "aPage": 76,
+      "b": "p76_black_bar_2",
+      "bPage": 76,
+      "visibleInViewer": false,
+      "text": "money bitcoin heads. psychotic and some Schiff It's"
+    },
+    {
+      "rank": 31,
+      "mode": "ray_ab",
+      "a": "p79_pill_4_mirror",
+      "aPage": 76,
+      "b": "p76_black_bar_2",
+      "bPage": 76,
+      "visibleInViewer": false,
+      "text": "It's Schiff some and psychotic heads. bitcoin money"
+    },
+    {
+      "rank": 32,
+      "mode": "ray_ba",
+      "a": "p76_black_bar_2",
+      "aPage": 76,
+      "b": "p76_x_mark",
+      "bPage": 76,
+      "visibleInViewer": false,
+      "text": "Get freaking of buy euthanized bitcoin money"
+    },
+    {
+      "rank": 33,
+      "mode": "ray_ab",
+      "a": "p79_pill_2_mirror",
+      "aPage": 76,
+      "b": "p76_black_bar_2",
+      "bPage": 76,
+      "visibleInViewer": false,
+      "text": "money bitcoin euthanized heads. psychotic buy Schiff dumb bankers Brown parallel UTXO some"
+    },
+    {
+      "rank": 34,
+      "mode": "ray_ab",
+      "a": "p79_pill_2_mirror",
+      "aPage": 76,
+      "b": "p76_black_bar_2",
+      "bPage": 76,
+      "visibleInViewer": false,
+      "text": "some UTXO parallel Brown bankers dumb Schiff buy psychotic heads. euthanized bitcoin money"
+    },
+    {
+      "rank": 35,
+      "mode": "ray_ba",
+      "a": "p79_pill_3_mirror",
+      "aPage": 76,
+      "b": "p76_x_mark",
+      "bPage": 76,
+      "visibleInViewer": false,
+      "text": "trolling taunting President Nayib nation's should sell"
+    },
+    {
+      "rank": 36,
+      "mode": "ray_ab",
+      "a": "p79_pill_2_mirror",
+      "aPage": 76,
+      "b": "p76_black_bar_2",
+      "bPage": 76,
+      "visibleInViewer": false,
+      "text": "money bitcoin euthanized bankers Brown some"
+    },
+    {
+      "rank": 37,
+      "mode": "ray_ab",
+      "a": "p79_pill_2_mirror",
+      "aPage": 76,
+      "b": "p76_black_bar_2",
+      "bPage": 76,
+      "visibleInViewer": false,
+      "text": "some Brown bankers euthanized bitcoin money"
+    },
+    {
+      "rank": 38,
+      "mode": "ray_ab",
+      "a": "p79_pill_5_mirror",
+      "aPage": 76,
+      "b": "p76_black_bar_2",
+      "bPage": 76,
+      "visibleInViewer": false,
+      "text": "money bitcoin euthanized buy bankers Brown"
+    },
+    {
+      "rank": 39,
+      "mode": "ray_ab",
+      "a": "p79_pill_5_mirror",
+      "aPage": 76,
+      "b": "p76_black_bar_2",
+      "bPage": 76,
+      "visibleInViewer": false,
+      "text": "Brown bankers buy euthanized bitcoin money"
+    },
+    {
+      "rank": 40,
+      "mode": "segment",
+      "a": "p79_pill_4_mirror",
+      "aPage": 76,
+      "b": "p76_wire_left_knot",
+      "bPage": 76,
+      "visibleInViewer": false,
+      "text": "minds. in bitcoin skin nothing heart"
+    }
+  ],
+  "findings": [
+    "The 3D viewer exposes only the expected layout modes: spread, fold, and stack.",
+    "Mirror boxes are drawn from precomputed targetBox coordinates in article_3d_map_data.json; the viewer does not calculate a new fold/mirror solution at runtime.",
+    "Ray selectors are a page-76 hypothesis layer: all ray endpoint anchors used by raySelections are page-76 anchors, including mirrored p79-pill anchors already projected onto page 76.",
+    "The viewer draws only the first 28 of 40 raySelections, so the browser view is an inspection aid rather than the complete ray dataset.",
+    "The fold layout pairs pages 75/79 and 76/78 visually; it does not make 79/76 a physical contact pair.",
+    "Browser-local text corrections can change the visible labels, but they are not geometry truth and do not alter the JSON source model."
+  ],
+  "decision": "Keep the 3D viewer as a manual orientation/review surface. Do not treat viewer fold depth, ray visibility, or browser-local correction state as a new selector. Measurements and source truth must come from high-res scan geometry, corrected/DOCM text witnesses, and generated reports.",
+  "nextMove": "If the 3D view is used again, inspect it through the Text Authority/bridge sheets and avoid drawing conclusions from hidden rays or runtime layout depth. The next meaningful progress requires a new source image/original layout clue or an explicit unit/order rule."
+}

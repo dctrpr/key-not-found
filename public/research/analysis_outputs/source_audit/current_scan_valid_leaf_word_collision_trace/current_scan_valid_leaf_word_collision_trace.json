@@ -1,0 +1,1418 @@
+{
+  "createdAt": "2026-05-24T03:33:11",
+  "scope": "valid page 75 -> page 76 word-box collision trace around O4/B4/G5/O5; no key derivation",
+  "inputs": {
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "articleMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "decision": "valid_leaf_word_collision_trace_no_instruction_source",
+  "summary": {
+    "traceRowCount": 8,
+    "sourceWordRows": 6,
+    "targetWordRows": 8,
+    "collisionRows": 5,
+    "totalSourceWordHits": 32,
+    "totalTargetWordHits": 18,
+    "totalCollisionPairs": 27,
+    "strictInstructionRows": 0,
+    "contextTermRows": 0,
+    "totalStrictInstructionHits": 0,
+    "totalContextTermHits": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0
+  },
+  "fingerprint": "modes=2|targets=8|sourceRows=6|collisionRows=5|sourceWords=32|targetWords=18|pairs=27|strictRows=0|contextRows=0|strict=0|context=0|sourceR3=0|triggers=0/9|selectors=0",
+  "traceRows": [
+    {
+      "mode": "valid_75_to_76_natural",
+      "dx": 0,
+      "dy": 0,
+      "target": "O4",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "targetWordHitCount": 1,
+      "sourceWordHitCount": 9,
+      "collisionPairCount": 5,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "targetTextPreview": "ByiiREeraipy\"",
+      "sourceTextPreview": "by riding Bitcoins coattails Buterin came up with the",
+      "targetInitials": "b",
+      "sourceInitials": "brbcbcuwt",
+      "combinedInitials": "ctwbubcrbb",
+      "collisions": [
+        {
+          "sourceWordId": "p75w189",
+          "sourceText": "Buterin",
+          "sourceToken": "buterin",
+          "targetWordId": "p76w182",
+          "targetText": "ByiiREeraipy\"",
+          "targetToken": "byiireeraipy",
+          "overlapArea": 1507.3532000000084
+        },
+        {
+          "sourceWordId": "p75w190",
+          "sourceText": "came",
+          "sourceToken": "came",
+          "targetWordId": "p76w182",
+          "targetText": "ByiiREeraipy\"",
+          "targetToken": "byiireeraipy",
+          "overlapArea": 2349.5968000000203
+        },
+        {
+          "sourceWordId": "p75w191",
+          "sourceText": "up",
+          "sourceToken": "up",
+          "targetWordId": "p76w182",
+          "targetText": "ByiiREeraipy\"",
+          "targetToken": "byiireeraipy",
+          "overlapArea": 959.9520000000094
+        },
+        {
+          "sourceWordId": "p75w192",
+          "sourceText": "with",
+          "sourceToken": "with",
+          "targetWordId": "p76w182",
+          "targetText": "ByiiREeraipy\"",
+          "targetToken": "byiireeraipy",
+          "overlapArea": 2211.318000000015
+        },
+        {
+          "sourceWordId": "p75w193",
+          "sourceText": "the",
+          "sourceToken": "the",
+          "targetWordId": "p76w182",
+          "targetText": "ByiiREeraipy\"",
+          "targetToken": "byiireeraipy",
+          "overlapArea": 521.9739000000025
+        }
+      ],
+      "targetWords": [
+        {
+          "id": "p76w182",
+          "index": 182,
+          "text": "ByiiREeraipy\"",
+          "token": "byiireeraipy",
+          "box": [
+            1335.8,
+            2166.53,
+            1743.68,
+            2215.56
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "sourceWords": [
+        {
+          "id": "p75w178",
+          "index": 178,
+          "text": "by",
+          "token": "by",
+          "sourceBox": [
+            741.47,
+            2122.21,
+            775.06,
+            2162.29
+          ],
+          "targetBox": [
+            1768.94,
+            2122.21,
+            1802.53,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w179",
+          "index": 179,
+          "text": "riding",
+          "token": "riding",
+          "sourceBox": [
+            806.98,
+            2122.21,
+            928.77,
+            2162.29
+          ],
+          "targetBox": [
+            1615.23,
+            2122.21,
+            1737.02,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w180",
+          "index": 180,
+          "text": "Bitcoins",
+          "token": "bitcoins",
+          "sourceBox": [
+            965.2,
+            2122.21,
+            1129.13,
+            2162.29
+          ],
+          "targetBox": [
+            1414.87,
+            2122.21,
+            1578.8,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w181",
+          "index": 181,
+          "text": "coattails",
+          "token": "coattails",
+          "sourceBox": [
+            1166.75,
+            2122.21,
+            1352.69,
+            2162.29
+          ],
+          "targetBox": [
+            1191.31,
+            2122.21,
+            1377.25,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w189",
+          "index": 189,
+          "text": "Buterin",
+          "token": "buterin",
+          "sourceBox": [
+            696.12,
+            2186.99,
+            853.08,
+            2235.97
+          ],
+          "targetBox": [
+            1690.92,
+            2186.99,
+            1847.88,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w190",
+          "index": 190,
+          "text": "came",
+          "token": "came",
+          "sourceBox": [
+            893.64,
+            2186.99,
+            975.88,
+            2235.97
+          ],
+          "targetBox": [
+            1568.12,
+            2186.99,
+            1650.3600000000001,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w191",
+          "index": 191,
+          "text": "up",
+          "token": "up",
+          "sourceBox": [
+            1011.55,
+            2186.99,
+            1045.15,
+            2235.97
+          ],
+          "targetBox": [
+            1498.85,
+            2186.99,
+            1532.45,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w192",
+          "index": 192,
+          "text": "with",
+          "token": "with",
+          "sourceBox": [
+            1078.07,
+            2186.99,
+            1155.47,
+            2235.97
+          ],
+          "targetBox": [
+            1388.53,
+            2186.99,
+            1465.93,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w193",
+          "index": 193,
+          "text": "the",
+          "token": "the",
+          "sourceBox": [
+            1189.93,
+            2186.99,
+            1244.35,
+            2235.97
+          ],
+          "targetBox": [
+            1299.65,
+            2186.99,
+            1354.07,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_word_collision_trace/valid_75_to_76_natural_O4_word_collision.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_natural",
+      "dx": 0,
+      "dy": 0,
+      "target": "B4",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "targetWordHitCount": 1,
+      "sourceWordHitCount": 0,
+      "collisionPairCount": 0,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "targetTextPreview": "eis",
+      "sourceTextPreview": "",
+      "targetInitials": "e",
+      "sourceInitials": "",
+      "combinedInitials": "e",
+      "collisions": [],
+      "targetWords": [
+        {
+          "id": "p76w201",
+          "index": 201,
+          "text": "eis",
+          "token": "eis",
+          "box": [
+            561.83,
+            2393.42,
+            570.13,
+            2433.53
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "sourceWords": [],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_word_collision_trace/valid_75_to_76_natural_B4_word_collision.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_natural",
+      "dx": 0,
+      "dy": 0,
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "targetWordHitCount": 5,
+      "sourceWordHitCount": 1,
+      "collisionPairCount": 0,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "targetTextPreview": "collateralized rid of those leeches.",
+      "sourceTextPreview": "experience.",
+      "targetInitials": "crotl",
+      "sourceInitials": "e",
+      "combinedInitials": "crotle",
+      "collisions": [],
+      "targetWords": [
+        {
+          "id": "p76w215",
+          "index": 215,
+          "text": "collateralized",
+          "token": "collateralized",
+          "box": [
+            485.44,
+            2535.36,
+            788.47,
+            2579.93
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p76w224",
+          "index": 224,
+          "text": "rid",
+          "token": "rid",
+          "box": [
+            782.97,
+            2609.09,
+            832.72,
+            2653.65
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p76w225",
+          "index": 225,
+          "text": "of",
+          "token": "of",
+          "box": [
+            864.39,
+            2609.09,
+            894.54,
+            2653.65
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p76w226",
+          "index": 226,
+          "text": "those",
+          "token": "those",
+          "box": [
+            923.69,
+            2609.09,
+            1024.2,
+            2653.65
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p76w227",
+          "index": 227,
+          "text": "leeches.",
+          "token": "leeches",
+          "box": [
+            1060.39,
+            2609.09,
+            1221.21,
+            2653.65
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "sourceWords": [
+        {
+          "id": "p75w223",
+          "index": 223,
+          "text": "experience.",
+          "token": "experience",
+          "sourceBox": [
+            1257.45,
+            2552.13,
+            1492.1,
+            2601.12
+          ],
+          "targetBox": [
+            1051.9,
+            2552.13,
+            1286.55,
+            2601.12
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_word_collision_trace/valid_75_to_76_natural_G5_word_collision.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_natural",
+      "dx": 0,
+      "dy": 0,
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "targetWordHitCount": 2,
+      "sourceWordHitCount": 6,
+      "collisionPairCount": 6,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "targetTextPreview": "a siukbeodmensertslveaarty",
+      "sourceTextPreview": "listening for the gullible and unloved.",
+      "targetInitials": "as",
+      "sourceInitials": "lftgau",
+      "combinedInitials": "auasgtfl",
+      "collisions": [
+        {
+          "sourceWordId": "p75w263",
+          "sourceText": "for",
+          "sourceToken": "for",
+          "targetWordId": "p76w264",
+          "targetText": "siukbeodmensertslveaarty",
+          "targetToken": "siukbeodmensertslveaarty",
+          "overlapArea": 1938.6696000000013
+        },
+        {
+          "sourceWordId": "p75w264",
+          "sourceText": "the",
+          "sourceToken": "the",
+          "targetWordId": "p76w264",
+          "targetText": "siukbeodmensertslveaarty",
+          "targetToken": "siukbeodmensertslveaarty",
+          "overlapArea": 2151.0935999999897
+        },
+        {
+          "sourceWordId": "p75w265",
+          "sourceText": "gullible",
+          "sourceToken": "gullible",
+          "targetWordId": "p76w264",
+          "targetText": "siukbeodmensertslveaarty",
+          "targetToken": "siukbeodmensertslveaarty",
+          "overlapArea": 6642.458399999989
+        },
+        {
+          "sourceWordId": "p75w266",
+          "sourceText": "and",
+          "sourceToken": "and",
+          "targetWordId": "p76w264",
+          "targetText": "siukbeodmensertslveaarty",
+          "targetToken": "siukbeodmensertslveaarty",
+          "overlapArea": 2332.6559999999977
+        },
+        {
+          "sourceWordId": "p75w267",
+          "sourceText": "unloved.",
+          "sourceToken": "unloved",
+          "targetWordId": "p76w263",
+          "targetText": "a",
+          "targetToken": "a",
+          "overlapArea": 563.9256000000009
+        },
+        {
+          "sourceWordId": "p75w267",
+          "sourceText": "unloved.",
+          "sourceToken": "unloved",
+          "targetWordId": "p76w264",
+          "targetText": "siukbeodmensertslveaarty",
+          "targetToken": "siukbeodmensertslveaarty",
+          "overlapArea": 3368.723999999992
+        }
+      ],
+      "targetWords": [
+        {
+          "id": "p76w263",
+          "index": 263,
+          "text": "a",
+          "token": "a",
+          "box": [
+            1012.14,
+            2897.06,
+            1026.21,
+            2981.74
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p76w264",
+          "index": 264,
+          "text": "siukbeodmensertslveaarty",
+          "token": "siukbeodmensertslveaarty",
+          "box": [
+            1059.39,
+            2897.06,
+            1620.98,
+            2981.74
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "sourceWords": [
+        {
+          "id": "p75w262",
+          "index": 262,
+          "text": "listening",
+          "token": "listening",
+          "sourceBox": [
+            708.21,
+            2924.04,
+            901.41,
+            2964.12
+          ],
+          "targetBox": [
+            1642.5900000000001,
+            2924.04,
+            1835.79,
+            2964.12
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w263",
+          "index": 263,
+          "text": "for",
+          "token": "for",
+          "sourceBox": [
+            937.99,
+            2924.04,
+            986.36,
+            2964.12
+          ],
+          "targetBox": [
+            1557.6399999999999,
+            2924.04,
+            1606.01,
+            2964.12
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w264",
+          "index": 264,
+          "text": "the",
+          "token": "the",
+          "sourceBox": [
+            1016.59,
+            2924.04,
+            1070.26,
+            2964.12
+          ],
+          "targetBox": [
+            1473.74,
+            2924.04,
+            1527.4099999999999,
+            2964.12
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w265",
+          "index": 265,
+          "text": "gullible",
+          "token": "gullible",
+          "sourceBox": [
+            1104.27,
+            2924.04,
+            1270.0,
+            2964.12
+          ],
+          "targetBox": [
+            1274.0,
+            2924.04,
+            1439.73,
+            2964.12
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w266",
+          "index": 266,
+          "text": "and",
+          "token": "and",
+          "sourceBox": [
+            1307.84,
+            2924.04,
+            1366.04,
+            2964.12
+          ],
+          "targetBox": [
+            1177.96,
+            2924.04,
+            1236.16,
+            2964.12
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w267",
+          "index": 267,
+          "text": "unloved.",
+          "token": "unloved",
+          "sourceBox": [
+            1400.56,
+            2924.04,
+            1568.97,
+            2964.12
+          ],
+          "targetBox": [
+            975.03,
+            2924.04,
+            1143.44,
+            2964.12
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_word_collision_trace/valid_75_to_76_natural_O5_word_collision.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "dx": -80,
+      "dy": -20,
+      "target": "O4",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "targetWordHitCount": 1,
+      "sourceWordHitCount": 5,
+      "collisionPairCount": 4,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "targetTextPreview": "ByiiREeraipy\"",
+      "sourceTextPreview": "Vitalik Buterin came up with",
+      "targetInitials": "b",
+      "sourceInitials": "vbcuw",
+      "combinedInitials": "wucbbv",
+      "collisions": [
+        {
+          "sourceWordId": "p75w189",
+          "sourceText": "Buterin",
+          "sourceToken": "buterin",
+          "targetWordId": "p76w182",
+          "targetText": "ByiiREeraipy\"",
+          "targetToken": "byiireeraipy",
+          "overlapArea": 6448.153200000022
+        },
+        {
+          "sourceWordId": "p75w190",
+          "sourceText": "came",
+          "sourceToken": "came",
+          "targetWordId": "p76w182",
+          "targetText": "ByiiREeraipy\"",
+          "targetToken": "byiireeraipy",
+          "overlapArea": 3994.396800000025
+        },
+        {
+          "sourceWordId": "p75w191",
+          "sourceText": "up",
+          "sourceToken": "up",
+          "targetWordId": "p76w182",
+          "targetText": "ByiiREeraipy\"",
+          "targetToken": "byiireeraipy",
+          "overlapArea": 1631.952000000012
+        },
+        {
+          "sourceWordId": "p75w192",
+          "sourceText": "with",
+          "sourceToken": "with",
+          "targetWordId": "p76w182",
+          "targetText": "ByiiREeraipy\"",
+          "targetToken": "byiireeraipy",
+          "overlapArea": 2434.8141000000137
+        }
+      ],
+      "targetWords": [
+        {
+          "id": "p76w182",
+          "index": 182,
+          "text": "ByiiREeraipy\"",
+          "token": "byiireeraipy",
+          "box": [
+            1335.8,
+            2166.53,
+            1743.68,
+            2215.56
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "sourceWords": [
+        {
+          "id": "p75w188",
+          "index": 188,
+          "text": "Vitalik",
+          "token": "vitalik",
+          "sourceBox": [
+            505.65,
+            2186.99,
+            657.32,
+            2235.97
+          ],
+          "targetBox": [
+            1806.6799999999998,
+            2166.99,
+            1958.35,
+            2215.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w189",
+          "index": 189,
+          "text": "Buterin",
+          "token": "buterin",
+          "sourceBox": [
+            696.12,
+            2186.99,
+            853.08,
+            2235.97
+          ],
+          "targetBox": [
+            1610.92,
+            2166.99,
+            1767.88,
+            2215.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w190",
+          "index": 190,
+          "text": "came",
+          "token": "came",
+          "sourceBox": [
+            893.64,
+            2186.99,
+            975.88,
+            2235.97
+          ],
+          "targetBox": [
+            1488.12,
+            2166.99,
+            1570.3600000000001,
+            2215.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w191",
+          "index": 191,
+          "text": "up",
+          "token": "up",
+          "sourceBox": [
+            1011.55,
+            2186.99,
+            1045.15,
+            2235.97
+          ],
+          "targetBox": [
+            1418.85,
+            2166.99,
+            1452.45,
+            2215.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w192",
+          "index": 192,
+          "text": "with",
+          "token": "with",
+          "sourceBox": [
+            1078.07,
+            2186.99,
+            1155.47,
+            2235.97
+          ],
+          "targetBox": [
+            1308.53,
+            2166.99,
+            1385.93,
+            2215.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_word_collision_trace/valid_75_to_76_small_jitter_best_O4_word_collision.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "dx": -80,
+      "dy": -20,
+      "target": "B4",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "targetWordHitCount": 1,
+      "sourceWordHitCount": 0,
+      "collisionPairCount": 0,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "targetTextPreview": "eis",
+      "sourceTextPreview": "",
+      "targetInitials": "e",
+      "sourceInitials": "",
+      "combinedInitials": "e",
+      "collisions": [],
+      "targetWords": [
+        {
+          "id": "p76w201",
+          "index": 201,
+          "text": "eis",
+          "token": "eis",
+          "box": [
+            561.83,
+            2393.42,
+            570.13,
+            2433.53
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "sourceWords": [],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_word_collision_trace/valid_75_to_76_small_jitter_best_B4_word_collision.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "dx": -80,
+      "dy": -20,
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "targetWordHitCount": 5,
+      "sourceWordHitCount": 5,
+      "collisionPairCount": 5,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "targetTextPreview": "collateralized rid of those leeches.",
+      "sourceTextPreview": "experience. blindly with your bare",
+      "targetInitials": "crotl",
+      "sourceInitials": "ebwyb",
+      "combinedInitials": "crbotyewlb",
+      "collisions": [
+        {
+          "sourceWordId": "p75w228",
+          "sourceText": "blindly",
+          "sourceToken": "blindly",
+          "targetWordId": "p76w227",
+          "targetText": "leeches.",
+          "targetToken": "leeches",
+          "overlapArea": 792.4554000000018
+        },
+        {
+          "sourceWordId": "p75w229",
+          "sourceText": "with",
+          "sourceToken": "with",
+          "targetWordId": "p76w227",
+          "targetText": "leeches.",
+          "targetToken": "leeches",
+          "overlapArea": 3800.4062000000235
+        },
+        {
+          "sourceWordId": "p75w230",
+          "sourceText": "your",
+          "sourceToken": "your",
+          "targetWordId": "p76w226",
+          "targetText": "those",
+          "targetToken": "those",
+          "overlapArea": 3112.900000000018
+        },
+        {
+          "sourceWordId": "p75w231",
+          "sourceText": "bare",
+          "sourceToken": "bare",
+          "targetWordId": "p76w224",
+          "targetText": "rid",
+          "targetToken": "rid",
+          "overlapArea": 110.28560000000144
+        },
+        {
+          "sourceWordId": "p75w231",
+          "sourceText": "bare",
+          "sourceToken": "bare",
+          "targetWordId": "p76w225",
+          "targetText": "of",
+          "targetToken": "of",
+          "overlapArea": 1340.7705000000067
+        }
+      ],
+      "targetWords": [
+        {
+          "id": "p76w215",
+          "index": 215,
+          "text": "collateralized",
+          "token": "collateralized",
+          "box": [
+            485.44,
+            2535.36,
+            788.47,
+            2579.93
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p76w224",
+          "index": 224,
+          "text": "rid",
+          "token": "rid",
+          "box": [
+            782.97,
+            2609.09,
+            832.72,
+            2653.65
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p76w225",
+          "index": 225,
+          "text": "of",
+          "token": "of",
+          "box": [
+            864.39,
+            2609.09,
+            894.54,
+            2653.65
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p76w226",
+          "index": 226,
+          "text": "those",
+          "token": "those",
+          "box": [
+            923.69,
+            2609.09,
+            1024.2,
+            2653.65
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p76w227",
+          "index": 227,
+          "text": "leeches.",
+          "token": "leeches",
+          "box": [
+            1060.39,
+            2609.09,
+            1221.21,
+            2653.65
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "sourceWords": [
+        {
+          "id": "p75w223",
+          "index": 223,
+          "text": "experience.",
+          "token": "experience",
+          "sourceBox": [
+            1257.45,
+            2552.13,
+            1492.1,
+            2601.12
+          ],
+          "targetBox": [
+            971.9000000000001,
+            2532.13,
+            1206.55,
+            2581.12
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w228",
+          "index": 228,
+          "text": "blindly",
+          "token": "blindly",
+          "sourceBox": [
+            1099.23,
+            2629.18,
+            1260.61,
+            2673.71
+          ],
+          "targetBox": [
+            1203.39,
+            2609.18,
+            1364.77,
+            2653.71
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w229",
+          "index": 229,
+          "text": "with",
+          "token": "with",
+          "sourceBox": [
+            1299.78,
+            2629.18,
+            1385.24,
+            2673.71
+          ],
+          "targetBox": [
+            1078.76,
+            2609.18,
+            1164.22,
+            2653.71
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w230",
+          "index": 230,
+          "text": "your",
+          "token": "your",
+          "sourceBox": [
+            1422.73,
+            2629.18,
+            1509.8,
+            2673.71
+          ],
+          "targetBox": [
+            954.2,
+            2609.18,
+            1041.27,
+            2653.71
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w231",
+          "index": 231,
+          "text": "bare",
+          "token": "bare",
+          "sourceBox": [
+            1546.69,
+            2629.18,
+            1633.76,
+            2673.71
+          ],
+          "targetBox": [
+            830.24,
+            2609.18,
+            917.31,
+            2653.71
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_word_collision_trace/valid_75_to_76_small_jitter_best_G5_word_collision.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "dx": -80,
+      "dy": -20,
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "targetWordHitCount": 2,
+      "sourceWordHitCount": 6,
+      "collisionPairCount": 7,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "targetTextPreview": "a siukbeodmensertslveaarty",
+      "sourceTextPreview": "listening for the gullible and unloved.",
+      "targetInitials": "as",
+      "sourceInitials": "lftgau",
+      "combinedInitials": "uaagstfl",
+      "collisions": [
+        {
+          "sourceWordId": "p75w262",
+          "sourceText": "listening",
+          "sourceToken": "listening",
+          "targetWordId": "p76w264",
+          "targetText": "siukbeodmensertslveaarty",
+          "targetToken": "siukbeodmensertslveaarty",
+          "overlapArea": 2340.2711999999906
+        },
+        {
+          "sourceWordId": "p75w263",
+          "sourceText": "for",
+          "sourceToken": "for",
+          "targetWordId": "p76w264",
+          "targetText": "siukbeodmensertslveaarty",
+          "targetToken": "siukbeodmensertslveaarty",
+          "overlapArea": 1938.6696000000013
+        },
+        {
+          "sourceWordId": "p75w264",
+          "sourceText": "the",
+          "sourceToken": "the",
+          "targetWordId": "p76w264",
+          "targetText": "siukbeodmensertslveaarty",
+          "targetToken": "siukbeodmensertslveaarty",
+          "overlapArea": 2151.0935999999897
+        },
+        {
+          "sourceWordId": "p75w265",
+          "sourceText": "gullible",
+          "sourceToken": "gullible",
+          "targetWordId": "p76w264",
+          "targetText": "siukbeodmensertslveaarty",
+          "targetToken": "siukbeodmensertslveaarty",
+          "overlapArea": 6642.458399999989
+        },
+        {
+          "sourceWordId": "p75w266",
+          "sourceText": "and",
+          "sourceToken": "and",
+          "targetWordId": "p76w264",
+          "targetText": "siukbeodmensertslveaarty",
+          "targetToken": "siukbeodmensertslveaarty",
+          "overlapArea": 2332.6559999999977
+        },
+        {
+          "sourceWordId": "p75w267",
+          "sourceText": "unloved.",
+          "sourceToken": "unloved",
+          "targetWordId": "p76w263",
+          "targetText": "a",
+          "targetToken": "a",
+          "overlapArea": 563.9256000000009
+        },
+        {
+          "sourceWordId": "p75w267",
+          "sourceText": "unloved.",
+          "sourceToken": "unloved",
+          "targetWordId": "p76w264",
+          "targetText": "siukbeodmensertslveaarty",
+          "targetToken": "siukbeodmensertslveaarty",
+          "overlapArea": 162.32399999999788
+        }
+      ],
+      "targetWords": [
+        {
+          "id": "p76w263",
+          "index": 263,
+          "text": "a",
+          "token": "a",
+          "box": [
+            1012.14,
+            2897.06,
+            1026.21,
+            2981.74
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p76w264",
+          "index": 264,
+          "text": "siukbeodmensertslveaarty",
+          "token": "siukbeodmensertslveaarty",
+          "box": [
+            1059.39,
+            2897.06,
+            1620.98,
+            2981.74
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "sourceWords": [
+        {
+          "id": "p75w262",
+          "index": 262,
+          "text": "listening",
+          "token": "listening",
+          "sourceBox": [
+            708.21,
+            2924.04,
+            901.41,
+            2964.12
+          ],
+          "targetBox": [
+            1562.5900000000001,
+            2904.04,
+            1755.79,
+            2944.12
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w263",
+          "index": 263,
+          "text": "for",
+          "token": "for",
+          "sourceBox": [
+            937.99,
+            2924.04,
+            986.36,
+            2964.12
+          ],
+          "targetBox": [
+            1477.6399999999999,
+            2904.04,
+            1526.01,
+            2944.12
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w264",
+          "index": 264,
+          "text": "the",
+          "token": "the",
+          "sourceBox": [
+            1016.59,
+            2924.04,
+            1070.26,
+            2964.12
+          ],
+          "targetBox": [
+            1393.74,
+            2904.04,
+            1447.4099999999999,
+            2944.12
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w265",
+          "index": 265,
+          "text": "gullible",
+          "token": "gullible",
+          "sourceBox": [
+            1104.27,
+            2924.04,
+            1270.0,
+            2964.12
+          ],
+          "targetBox": [
+            1194.0,
+            2904.04,
+            1359.73,
+            2944.12
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w266",
+          "index": 266,
+          "text": "and",
+          "token": "and",
+          "sourceBox": [
+            1307.84,
+            2924.04,
+            1366.04,
+            2964.12
+          ],
+          "targetBox": [
+            1097.96,
+            2904.04,
+            1156.16,
+            2944.12
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w267",
+          "index": 267,
+          "text": "unloved.",
+          "token": "unloved",
+          "sourceBox": [
+            1400.56,
+            2924.04,
+            1568.97,
+            2964.12
+          ],
+          "targetBox": [
+            895.03,
+            2904.04,
+            1063.44,
+            2944.12
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_word_collision_trace/valid_75_to_76_small_jitter_best_O5_word_collision.jpg"
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/current_scan_valid_leaf_word_collision_trace/current_scan_valid_leaf_word_collision_trace_sheet.jpg",
+  "nextMove": "Do not extract from valid-leaf OCR word collisions; require source/clue wording that names transform, unit, and order."
+}

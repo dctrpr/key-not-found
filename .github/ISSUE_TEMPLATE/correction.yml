@@ -1,0 +1,19 @@
+name: Correct the record
+description: Fix a source, implementation, privacy, or interpretation error.
+title: "[Correction] "
+labels: [correction]
+body:
+  - type: textarea
+    id: claim
+    attributes:
+      label: What is wrong?
+      description: Link the exact file, method, update, or claim.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and proposed correction
+      description: Give a public source or reproducible test. Never include secrets or personal identifiers.
+    validations:
+      required: true

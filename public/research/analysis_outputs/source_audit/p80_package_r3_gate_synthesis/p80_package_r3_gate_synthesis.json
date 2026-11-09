@@ -1,0 +1,101 @@
+{
+  "createdAt": "2026-05-20T22:32:03",
+  "scope": "p80 package/OVERDOSE synthesis against source-reopen gate; no extraction/key derivation",
+  "inputs": {
+    "package_copy": "analysis_outputs/3d_article_map/p80_package_copy_audit.json",
+    "five_symptom": "analysis_outputs/3d_article_map/five_symptom_mapping.json",
+    "symptom_relief": "analysis_outputs/source_audit/p80_symptom_relief_rule/p80_symptom_relief_rule.json",
+    "symptom_to_p76": "analysis_outputs/source_audit/p80_symptom_to_p76_units/p80_symptom_to_p76_units.json",
+    "p79_p80_interaction": "analysis_outputs/source_audit/p79_p80_package_interaction/p79_p80_package_interaction.json",
+    "p80_anchor_geometry": "analysis_outputs/source_audit/p80_to_p76_anchor_geometry/p80_to_p76_anchor_geometry.json",
+    "p80_four_anchor_choice": "analysis_outputs/source_audit/p80_four_anchor_choice/p80_four_anchor_choice.json",
+    "dose_number": "analysis_outputs/source_audit/overdose_dose_number_selector/overdose_dose_number_selector.json",
+    "source_reopen": "analysis_outputs/source_audit/source_reopen_requirements/source_reopen_requirements.json"
+  },
+  "sheet": "analysis_outputs/source_audit/p80_package_r3_gate_synthesis/p80_package_r3_gate_synthesis_sheet.jpg",
+  "sheetPanels": [
+    {
+      "title": "p80 package page",
+      "path": "analysis_outputs/3d_article_map/page_80_upright.jpg"
+    },
+    {
+      "title": "p80 -> p76 anchor geometry",
+      "path": "analysis_outputs/source_audit/p80_to_p76_anchor_geometry/p80_to_p76_anchor_geometry_sheet.jpg"
+    },
+    {
+      "title": "p79/p80 interaction",
+      "path": "analysis_outputs/source_audit/p79_p80_package_interaction/p79_p80_package_interaction_sheet.jpg"
+    },
+    {
+      "title": "source reopen gate",
+      "path": "analysis_outputs/source_audit/source_reopen_requirements/source_reopen_requirements_sheet.jpg"
+    }
+  ],
+  "manualPackageLineCount": 11,
+  "packageNumbers": "5,100,5,16,473,6,473,80",
+  "explicitExtractionTerms": [],
+  "possibleActionTerms": [
+    "relief",
+    "reliever",
+    "fixes",
+    "proof",
+    "work",
+    "anti",
+    "fake"
+  ],
+  "fiveSymptomAssessment": [
+    "The five-symptom count supports the five page-76 target-group model.",
+    "The symptom order does not create readable initials, last initials, or length-indexed text over the five graph targets.",
+    "Direct lexical/semantic matches mostly point HEARTBURN to heart phrases and SHITCOINS to 'shitcoiner at heart'; they do not order the graph targets cleanly.",
+    "Treat p80 as count/theme support, not the final selector."
+  ],
+  "symptomToP76Assessment": [
+    "The only exact forward five-to-five orange hit is symptom 5 SHITCOINS -> p76 orange 5 shitcoiner at heart.",
+    "HEARTBURN has an unordered lexical hit on p76 orange 1 because that phrase contains heart, but it is off-order if the five boxes are used literally.",
+    "No forward or reverse five-to-five mapping gives a clean multi-hit instruction or ordered phrase.",
+    "The package symptom list corroborates the O5/B5 lower-corridor anchor, but it does not define a complete selector."
+  ],
+  "p80FourAnchorDecision": "Do not use p80 package copy as a four-anchor chooser without a new alignment/source clue.",
+  "p80ToP76Decision": "Keep p80 package geometry closed for the current scan; no tested mirror/fold transform selects the four page-76 anchors.",
+  "p79P80Assessment": [
+    "Both page-80 package labels hit only one page-79 target: the sentence Everyone will live their own experience in the rabbit hole.",
+    "The target spans are broad sentence fragments, not narrow word/letter selections.",
+    "The vertical p80 package hits are bottom strips of the package boxes, plausibly the lower label lines, so they reinforce the medicine/SHITCOINS theme rather than defining an extraction unit.",
+    "Do not use p80 package labels as direct key text or numeric index streams without a new rule."
+  ],
+  "doseNumberAssessment": [
+    "The number 5 reinforces the existing page-76 lower corridor: p76 orange #5 is shitcoiner at heart, and p76 grey #5 is Volcano Bonds.",
+    "The number 6 selects the volcano-mining line in the El Salvador corridor, but only when applied to corridor lines.",
+    "No selected item contains a direct instruction such as read/take/fold/mirror/word/letter/key.",
+    "The dosage numbers corroborate the same semantic cluster but do not supply the missing extraction rule."
+  ],
+  "gateRows": [
+    {
+      "gate": "R1 source identity",
+      "status": "FAIL/PARTIAL",
+      "evidence": "p80 is from the same locked current scan, not new physical/original-layout source evidence."
+    },
+    {
+      "gate": "R2 target preservation",
+      "status": "PASS as corroboration",
+      "evidence": "p80 reinforces OVERDOSE, five-count, symptoms, and O5/shitcoiner theming."
+    },
+    {
+      "gate": "R3 unit/order evidence",
+      "status": "FAIL",
+      "evidence": "explicit extraction terms on package: none; relief/number/symptom streams have no instruction hits."
+    },
+    {
+      "gate": "R4 orientation discipline",
+      "status": "PASS as audited",
+      "evidence": "existing p80 audits use current readable/upright scan and simple hflip/identity/vflip/rotate180 transforms."
+    },
+    {
+      "gate": "R5 controlled improvement",
+      "status": "FAIL",
+      "evidence": "p80->p76 anchor geometry has 0 positive overlap rows; no p78/G5/O5 benchmark improvement."
+    }
+  ],
+  "decision": "p80_package_layer_closed_for_current_scan_as_r3_selector",
+  "nextMove": "Keep p80 as C6 five-count/theme/source-validation evidence only. Reopen only if new physical/original-layout evidence places package copy onto p76 targets or a raw clue explicitly says to use relief/symptoms/dose/package text as a selector."
+}

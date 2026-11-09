@@ -1,0 +1,252 @@
+{
+  "createdAt": "2026-05-20T22:27:42",
+  "scope": "strict external clue unit/order intake; no extraction or key derivation",
+  "inputs": {
+    "original_clue": "analysis_outputs/external_clues/original_clue_provenance.json",
+    "source_inventory": "analysis_outputs/external_clues/source_clue_inventory.json",
+    "instruction_frontier": "analysis_outputs/external_clues/external_instruction_term_frontier/external_instruction_term_frontier.json",
+    "schott": "analysis_outputs/external_clues/schott_instruction_distillation.json",
+    "announcement_media_order": "analysis_outputs/external_clues/announcement_media_order_selector/announcement_media_order_selector.json",
+    "canva_live": "analysis_outputs/external_clues/canva_live_recheck/canva_live_recheck.json",
+    "canva_surface": "analysis_outputs/source_audit/canva_live_clue_surface/canva_live_clue_surface.json",
+    "public_index": "analysis_outputs/source_audit/public_clue_index_selector/public_clue_index_selector.json",
+    "source_reopen": "analysis_outputs/source_audit/source_reopen_requirements/source_reopen_requirements.json"
+  },
+  "records": [
+    {
+      "id": "tweet_announcement",
+      "sourceType": "raw_oembed_tweet",
+      "text": "“I hid a private #Bitcoin key encoded in this piece I wrote for @BitcoinMagazine Mr. President. Nobody’s figured it out yet, but it’s for 20 BTC” pic.twitter.com/eiSeo82gxP",
+      "source": "https://twitter.com/maxkeiser/status/1632068898169450497",
+      "rawness": "raw",
+      "unitHits": [],
+      "targetHits": [],
+      "r3Status": "FAIL",
+      "classification": "no_unit_order",
+      "reason": "No unit/order term appears in the raw text."
+    },
+    {
+      "id": "tweet_schott_mirror_clue",
+      "sourceType": "raw_oembed_tweet",
+      "text": "“Mirror writing: neurological reflections on an unusual phenomenon” https://t.co/WkSDXKwSiv https://t.co/3NrEhxV2Iz",
+      "source": "https://twitter.com/maxkeiser/status/1632391507008278528",
+      "rawness": "raw",
+      "unitHits": [],
+      "targetHits": [],
+      "r3Status": "FAIL",
+      "classification": "no_unit_order",
+      "reason": "No unit/order term appears in the raw text."
+    },
+    {
+      "id": "announcement_text_inventory",
+      "sourceType": "archived_raw_announcement_text",
+      "text": "I hid a private #Bitcoin key encoded in this piece I wrote for @BitcoinMagazine Mr. President. Nobody’s figured it out yet, but it’s for 20 BTC",
+      "source": "analysis_outputs/external_clues/source_clue_inventory.json",
+      "rawness": "raw",
+      "unitHits": [],
+      "targetHits": [],
+      "r3Status": "FAIL",
+      "classification": "no_unit_order",
+      "reason": "No unit/order term appears in the raw text."
+    },
+    {
+      "id": "schott_title",
+      "sourceType": "linked_paper_title",
+      "text": "Mirror writing: neurological reflections on an unusual phenomenon - PMC",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2117809/",
+      "rawness": "raw_linked_title",
+      "unitHits": [],
+      "targetHits": [],
+      "r3Status": "FAIL",
+      "classification": "no_unit_order",
+      "reason": "No unit/order term appears in the raw text."
+    },
+    {
+      "id": "schott_operation_literal_mirror",
+      "sourceType": "derived_schott_distillation",
+      "text": "  Direct prose reversal and raw hflip have been tested; they identify regions, not final letters.",
+      "source": "analysis_outputs/external_clues/schott_instruction_distillation.json",
+      "rawness": "derived",
+      "unitHits": [
+        "letters"
+      ],
+      "targetHits": [],
+      "r3Status": "FAIL",
+      "classification": "unit_without_target",
+      "reason": "Unit term exists but is not tied to active page-76 target terms."
+    },
+    {
+      "id": "schott_operation_handedness_left / right_hemisphere",
+      "sourceType": "derived_schott_distillation",
+      "text": "  78/79 as two hands is suggestive but first/last and binary selectors failed.",
+      "source": "analysis_outputs/external_clues/schott_instruction_distillation.json",
+      "rawness": "derived",
+      "unitHits": [
+        "first",
+        "last"
+      ],
+      "targetHits": [],
+      "r3Status": "FAIL",
+      "classification": "non_actionable_unit",
+      "reason": "Unit-like term is not enough to extract."
+    },
+    {
+      "id": "schott_operation_bimanual / corpus_callosum",
+      "sourceType": "derived_schott_distillation",
+      "text": "  The p79-yellow -> p76-black row anchor fits this concept but lacks extraction unit/order.",
+      "source": "analysis_outputs/external_clues/schott_instruction_distillation.json",
+      "rawness": "derived",
+      "unitHits": [
+        "order"
+      ],
+      "targetHits": [
+        "p76"
+      ],
+      "r3Status": "FAIL",
+      "classification": "targeting_not_extraction",
+      "reason": "The text reinforces target/corridor but does not name a unit."
+    },
+    {
+      "id": "schott_operation_Leonardo / reversed writing",
+      "sourceType": "derived_schott_distillation",
+      "text": "  Reversing current reflected text streams produced no instruction, so the missing piece is upstream.",
+      "source": "analysis_outputs/external_clues/schott_instruction_distillation.json",
+      "rawness": "derived",
+      "unitHits": [],
+      "targetHits": [],
+      "r3Status": "FAIL",
+      "classification": "no_unit_order",
+      "reason": "No unit/order term appears in the raw text."
+    },
+    {
+      "id": "canva_live_text",
+      "sourceType": "live_canva_text",
+      "text": "PRIVATE_ANNOTATION_OMITTED \nOCR DIDNT PICK UP THE #0 IN WEB BROWSER PDF VIEWER \nTHE “XX”  IS IN LINE WITH THE BARBED WITRE , AFTER ROATION/MIRRORINGSAME THING KINDA WITH“SHIT” AND THE “FUCK ALL SHITCOINS” SPILLSWONDER IF ITS LIKE SHOWING THE ORIENTATION TO POSITIONING OF PAGES?.",
+      "source": "analysis_outputs/external_clues/canva_live_recheck/canva_live_recheck.json",
+      "rawness": "source_adjacent",
+      "unitHits": [
+        "line"
+      ],
+      "targetHits": [],
+      "r3Status": "FAIL",
+      "classification": "orientation_not_extraction",
+      "reason": "`line` appears in geometric/orientation language, not as a line-index instruction."
+    },
+    {
+      "id": "announcement_media_1",
+      "sourceType": "manual_media_subject_mapping",
+      "text": "Max holding OVERDOSE spread with Bukele overdose bukele magazine president source_piece president_bukele",
+      "source": "analysis_outputs/external_clues/announcement_media_order_selector/announcement_media_order_selector.json",
+      "rawness": "derived_visual_label",
+      "unitHits": [],
+      "targetHits": [
+        "bukele"
+      ],
+      "r3Status": "FAIL",
+      "classification": "no_unit_order",
+      "reason": "No unit/order term appears in the raw text."
+    },
+    {
+      "id": "announcement_media_2",
+      "sourceType": "manual_media_subject_mapping",
+      "text": "Max and Bukele at El Salvador presidential seal bukele el_salvador president seal magazine president_el_salvador president_bukele",
+      "source": "analysis_outputs/external_clues/announcement_media_order_selector/announcement_media_order_selector.json",
+      "rawness": "derived_visual_label",
+      "unitHits": [],
+      "targetHits": [
+        "el salvador",
+        "bukele"
+      ],
+      "r3Status": "FAIL",
+      "classification": "no_unit_order",
+      "reason": "No unit/order term appears in the raw text."
+    },
+    {
+      "id": "announcement_media_3",
+      "sourceType": "manual_media_subject_mapping",
+      "text": "Stacy Herbert portrait stacy stacy_page79",
+      "source": "analysis_outputs/external_clues/announcement_media_order_selector/announcement_media_order_selector.json",
+      "rawness": "derived_visual_label",
+      "unitHits": [],
+      "targetHits": [],
+      "r3Status": "FAIL",
+      "classification": "no_unit_order",
+      "reason": "No unit/order term appears in the raw text."
+    },
+    {
+      "id": "announcement_media_4",
+      "sourceType": "manual_media_subject_mapping",
+      "text": "Max and Bukele holding Bitcoin Magazine issue bukele bitcoin_magazine source_piece source_piece president_bukele",
+      "source": "analysis_outputs/external_clues/announcement_media_order_selector/announcement_media_order_selector.json",
+      "rawness": "derived_visual_label",
+      "unitHits": [],
+      "targetHits": [
+        "bukele"
+      ],
+      "r3Status": "FAIL",
+      "classification": "no_unit_order",
+      "reason": "No unit/order term appears in the raw text."
+    },
+    {
+      "id": "announcement_media_5",
+      "sourceType": "manual_media_subject_mapping",
+      "text": "Max/Stacy/driver in car, El Salvador context stacy travel el_salvador stacy_page79 president_el_salvador",
+      "source": "analysis_outputs/external_clues/announcement_media_order_selector/announcement_media_order_selector.json",
+      "rawness": "derived_visual_label",
+      "unitHits": [],
+      "targetHits": [
+        "el salvador"
+      ],
+      "r3Status": "FAIL",
+      "classification": "no_unit_order",
+      "reason": "No unit/order term appears in the raw text."
+    },
+    {
+      "id": "announcement_media_6",
+      "sourceType": "manual_media_subject_mapping",
+      "text": "Stacy in lava/El Salvador flag composite stacy lava el_salvador volcano stacy_page79 volcanoes",
+      "source": "analysis_outputs/external_clues/announcement_media_order_selector/announcement_media_order_selector.json",
+      "rawness": "derived_visual_label",
+      "unitHits": [],
+      "targetHits": [
+        "el salvador",
+        "volcano"
+      ],
+      "r3Status": "FAIL",
+      "classification": "no_unit_order",
+      "reason": "No unit/order term appears in the raw text."
+    },
+    {
+      "id": "announcement_media_7",
+      "sourceType": "manual_media_subject_mapping",
+      "text": "Bitcoin symbols erupting from a volcano bitcoin volcano volcano_bonds volcanoes volcano_bonds",
+      "source": "analysis_outputs/external_clues/announcement_media_order_selector/announcement_media_order_selector.json",
+      "rawness": "derived_visual_label",
+      "unitHits": [],
+      "targetHits": [
+        "volcano"
+      ],
+      "r3Status": "FAIL",
+      "classification": "no_unit_order",
+      "reason": "No unit/order term appears in the raw text."
+    }
+  ],
+  "rawLikeRecordCount": 5,
+  "rawLikeR3PassCount": 0,
+  "derivedR3PassCount": 0,
+  "contaminationNote": {
+    "filesScanned": 23,
+    "rawishNonInternalCooccurrenceCount": 2,
+    "actionableRawishCooccurrenceCount": 1,
+    "reason": "Earlier co-occurrence counts include report prose. This intake treats only raw/raw-like clue text as eligible R3 evidence."
+  },
+  "publicIndexSelectorAssessment": [
+    "Public clue word lengths and the explicit numeric values `20` and `BTC=3` do not provide a clean selector into page 76.",
+    "Direct index streams select ordinary article words, not procedural language such as read/take/word/letter/key.",
+    "Modulo indexing into the G5/O5 six-line interval just cycles through the already-known lower corridor and does not add order.",
+    "This closes public-clue word/number indexing as a standalone local selector.",
+    "The public clue remains useful only for target type (`private Bitcoin key`), source (`piece`), value (`20 BTC`), and operation family (`mirror writing`)."
+  ],
+  "decision": "no_archived_raw_external_clue_names_extraction_unit_order",
+  "nextMove": "Keep archived clues as constraints: source piece, private Bitcoin key, mirror-writing operation family, page-76/Bukele/volcano target confirmation, and Canva source-registration gaps. Reopen only with new raw clue/provenance wording or new physical/original-layout source evidence."
+}

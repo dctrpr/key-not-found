@@ -1,0 +1,482 @@
+{
+  "createdAt": "2026-05-21T01:33:44",
+  "scope": "O4 recovery test for p78 same-layout/current-mirror frame envelope; no OCR, key derivation, hashing, WIF, seed, or address checks",
+  "inputs": {
+    "activeTargets": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "p78SourceInstructionSurface": "analysis_outputs/source_audit/p78_source_graphic_instruction_surface/p78_source_graphic_instruction_surface.json",
+    "futureSourceScoringRubric": "analysis_outputs/source_audit/future_source_scoring_rubric/future_source_scoring_rubric.json"
+  },
+  "linePitchPx": 73.73,
+  "frames": {
+    "sameLayout": [
+      294.0,
+      2398.0,
+      1310.0,
+      2950.0
+    ],
+    "currentMirror": [
+      1234.0,
+      2398.0,
+      2250.0,
+      2950.0
+    ],
+    "dualEnvelope": [
+      294.0,
+      2398.0,
+      2250.0,
+      2950.0
+    ],
+    "dualEnvelopeTopMinus3LinePitch": [
+      294.0,
+      2176.81,
+      2250.0,
+      2950.0
+    ],
+    "dualEnvelopeFullRescue": [
+      294.0,
+      2177,
+      2250.0,
+      2982
+    ]
+  },
+  "targets": [
+    {
+      "id": "buying_dip",
+      "label": "O4 buying the dip",
+      "phrase": "buying the dip",
+      "box": [
+        1334,
+        2177,
+        1801,
+        2225
+      ],
+      "visualState": "Y",
+      "pageLine": 22,
+      "corridorIndex": 4
+    },
+    {
+      "id": "one_billion",
+      "label": "B4 $1 billion",
+      "phrase": "$1 billion",
+      "box": [
+        428,
+        2398,
+        691,
+        2445
+      ],
+      "visualState": "K",
+      "pageLine": 25,
+      "corridorIndex": 7
+    },
+    {
+      "id": "volcano_bonds",
+      "label": "G5 Volcano Bonds",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795,
+        2544,
+        1196,
+        2592
+      ],
+      "visualState": "K",
+      "pageLine": 27,
+      "corridorIndex": 9
+    },
+    {
+      "id": "shitcoiner_heart",
+      "label": "O5 shitcoiner at heart",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040,
+        2932,
+        1661,
+        2982
+      ],
+      "visualState": "Y",
+      "pageLine": 32,
+      "corridorIndex": 14
+    }
+  ],
+  "classifications": [
+    {
+      "id": "sameLayout",
+      "frame": [
+        294.0,
+        2398.0,
+        1310.0,
+        2950.0
+      ],
+      "fullHitCount": 2,
+      "partialHitCount": 3,
+      "hitIds": [
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "fullHitIds": [
+        "one_billion",
+        "volcano_bonds"
+      ],
+      "rows": [
+        {
+          "id": "buying_dip",
+          "label": "O4 buying the dip",
+          "visualState": "Y",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "overlapVsTarget": 0.0,
+          "fullHit": false,
+          "partialHit": false
+        },
+        {
+          "id": "one_billion",
+          "label": "B4 $1 billion",
+          "visualState": "K",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "overlapVsTarget": 1.0,
+          "fullHit": true,
+          "partialHit": true
+        },
+        {
+          "id": "volcano_bonds",
+          "label": "G5 Volcano Bonds",
+          "visualState": "K",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "overlapVsTarget": 1.0,
+          "fullHit": true,
+          "partialHit": true
+        },
+        {
+          "id": "shitcoiner_heart",
+          "label": "O5 shitcoiner at heart",
+          "visualState": "Y",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "overlapVsTarget": 0.156522,
+          "fullHit": false,
+          "partialHit": true
+        }
+      ]
+    },
+    {
+      "id": "currentMirror",
+      "frame": [
+        1234.0,
+        2398.0,
+        2250.0,
+        2950.0
+      ],
+      "fullHitCount": 0,
+      "partialHitCount": 1,
+      "hitIds": [
+        "shitcoiner_heart"
+      ],
+      "fullHitIds": [],
+      "rows": [
+        {
+          "id": "buying_dip",
+          "label": "O4 buying the dip",
+          "visualState": "Y",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "overlapVsTarget": 0.0,
+          "fullHit": false,
+          "partialHit": false
+        },
+        {
+          "id": "one_billion",
+          "label": "B4 $1 billion",
+          "visualState": "K",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "overlapVsTarget": 0.0,
+          "fullHit": false,
+          "partialHit": false
+        },
+        {
+          "id": "volcano_bonds",
+          "label": "G5 Volcano Bonds",
+          "visualState": "K",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "overlapVsTarget": 0.0,
+          "fullHit": false,
+          "partialHit": false
+        },
+        {
+          "id": "shitcoiner_heart",
+          "label": "O5 shitcoiner at heart",
+          "visualState": "Y",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "overlapVsTarget": 0.247536,
+          "fullHit": false,
+          "partialHit": true
+        }
+      ]
+    },
+    {
+      "id": "dualEnvelope",
+      "frame": [
+        294.0,
+        2398.0,
+        2250.0,
+        2950.0
+      ],
+      "fullHitCount": 2,
+      "partialHitCount": 3,
+      "hitIds": [
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "fullHitIds": [
+        "one_billion",
+        "volcano_bonds"
+      ],
+      "rows": [
+        {
+          "id": "buying_dip",
+          "label": "O4 buying the dip",
+          "visualState": "Y",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "overlapVsTarget": 0.0,
+          "fullHit": false,
+          "partialHit": false
+        },
+        {
+          "id": "one_billion",
+          "label": "B4 $1 billion",
+          "visualState": "K",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "overlapVsTarget": 1.0,
+          "fullHit": true,
+          "partialHit": true
+        },
+        {
+          "id": "volcano_bonds",
+          "label": "G5 Volcano Bonds",
+          "visualState": "K",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "overlapVsTarget": 1.0,
+          "fullHit": true,
+          "partialHit": true
+        },
+        {
+          "id": "shitcoiner_heart",
+          "label": "O5 shitcoiner at heart",
+          "visualState": "Y",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "overlapVsTarget": 0.36,
+          "fullHit": false,
+          "partialHit": true
+        }
+      ]
+    },
+    {
+      "id": "dualEnvelopeTopMinus3LinePitch",
+      "frame": [
+        294.0,
+        2176.81,
+        2250.0,
+        2950.0
+      ],
+      "fullHitCount": 3,
+      "partialHitCount": 4,
+      "hitIds": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "fullHitIds": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds"
+      ],
+      "rows": [
+        {
+          "id": "buying_dip",
+          "label": "O4 buying the dip",
+          "visualState": "Y",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "overlapVsTarget": 1.0,
+          "fullHit": true,
+          "partialHit": true
+        },
+        {
+          "id": "one_billion",
+          "label": "B4 $1 billion",
+          "visualState": "K",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "overlapVsTarget": 1.0,
+          "fullHit": true,
+          "partialHit": true
+        },
+        {
+          "id": "volcano_bonds",
+          "label": "G5 Volcano Bonds",
+          "visualState": "K",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "overlapVsTarget": 1.0,
+          "fullHit": true,
+          "partialHit": true
+        },
+        {
+          "id": "shitcoiner_heart",
+          "label": "O5 shitcoiner at heart",
+          "visualState": "Y",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "overlapVsTarget": 0.36,
+          "fullHit": false,
+          "partialHit": true
+        }
+      ]
+    },
+    {
+      "id": "dualEnvelopeFullRescue",
+      "frame": [
+        294.0,
+        2177,
+        2250.0,
+        2982
+      ],
+      "fullHitCount": 4,
+      "partialHitCount": 4,
+      "hitIds": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "fullHitIds": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "rows": [
+        {
+          "id": "buying_dip",
+          "label": "O4 buying the dip",
+          "visualState": "Y",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "overlapVsTarget": 1.0,
+          "fullHit": true,
+          "partialHit": true
+        },
+        {
+          "id": "one_billion",
+          "label": "B4 $1 billion",
+          "visualState": "K",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "overlapVsTarget": 1.0,
+          "fullHit": true,
+          "partialHit": true
+        },
+        {
+          "id": "volcano_bonds",
+          "label": "G5 Volcano Bonds",
+          "visualState": "K",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "overlapVsTarget": 1.0,
+          "fullHit": true,
+          "partialHit": true
+        },
+        {
+          "id": "shitcoiner_heart",
+          "label": "O5 shitcoiner at heart",
+          "visualState": "Y",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "overlapVsTarget": 1.0,
+          "fullHit": true,
+          "partialHit": true
+        }
+      ]
+    }
+  ],
+  "expansions": {
+    "sameLayoutFull": {
+      "left": 0.0,
+      "top": 221.0,
+      "right": 491.0,
+      "bottom": 32.0
+    },
+    "currentMirrorFull": {
+      "left": 806.0,
+      "top": 221.0,
+      "right": 0.0,
+      "bottom": 32.0
+    },
+    "dualEnvelopeFull": {
+      "left": 0.0,
+      "top": 221.0,
+      "right": 0.0,
+      "bottom": 32.0
+    },
+    "sameLayoutTouch": {
+      "left": 0.0,
+      "top": 173.0,
+      "right": 24.0,
+      "bottom": 0.0
+    },
+    "currentMirrorTouch": {
+      "left": 543.0,
+      "top": 173.0,
+      "right": 0.0,
+      "bottom": 0.0
+    },
+    "dualEnvelopeTouch": {
+      "left": 0.0,
+      "top": 173.0,
+      "right": 0.0,
+      "bottom": 0.0
+    }
+  },
+  "summary": {
+    "dualEnvelopeOriginalHitIds": [
+      "one_billion",
+      "volcano_bonds",
+      "shitcoiner_heart"
+    ],
+    "dualEnvelopeFullTopExpansionPx": 221.0,
+    "dualEnvelopeFullBottomExpansionPx": 32.0,
+    "dualEnvelopeFullTopInLinePitches": 2.9974,
+    "dualEnvelopeTouchTopExpansionPx": 173.0,
+    "dualEnvelopeTouchTopInLinePitches": 2.3464,
+    "topMinus3LinePitchHitIds": [
+      "buying_dip",
+      "one_billion",
+      "volcano_bonds",
+      "shitcoiner_heart"
+    ],
+    "topMinus3LinePitchFullHitIds": [
+      "buying_dip",
+      "one_billion",
+      "volcano_bonds"
+    ],
+    "topMinus3LinePitchPartialHitCount": 4,
+    "topMinus3LinePitchFullHitCount": 3,
+    "selectorUnlocked": false
+  },
+  "decision": {
+    "activeO4FrameRescue": "source_comparison_benchmark_only",
+    "selectorUnlocked": false,
+    "nextMove": "Keep the 3-line O4 rescue as a future source/original-layout validation benchmark only; reopen extraction only if source wording names extending/reading above the frame or three-line frame offset."
+  },
+  "sheet": "analysis_outputs/source_audit/active_o4_frame_rescue_gate/active_o4_frame_rescue_gate_sheet.jpg"
+}

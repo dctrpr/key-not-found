@@ -1,0 +1,3238 @@
+{
+  "created": "2026-05-24T04:03:02",
+  "decision": "current_pdf_lowres_render_source_trace_no_instruction_source",
+  "sheet": "analysis_outputs/source_audit/current_pdf_lowres_render_source_trace/current_pdf_lowres_render_source_trace_sheet.jpg",
+  "summary": {
+    "pdfCount": 2,
+    "pairRowCount": 4,
+    "traceRowCount": 12,
+    "uniqueTraceShapeCount": 6,
+    "skippedBelowThresholdCount": 4,
+    "sourceWordRowCount": 8,
+    "totalSourceWordHits": 36,
+    "strictInstructionRowCount": 0,
+    "totalStrictInstructionTokenHits": 0,
+    "contextRowCount": 4,
+    "totalContextTokenHits": 4,
+    "allFourEligibleTracePairCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0
+  },
+  "fingerprint": "pdfs=2|pairs=4|traceRows=12|unique=6|skipped=4|wordRows=8|words=36|strictRows=0|strict=0|contextRows=4|context=4|allFour=0|sourceR3=0|triggers=0/9|selectors=0",
+  "pairRows": [
+    {
+      "pairId": "keyser bitcoin .pdf:rendered_300dpi",
+      "pageMeta": {
+        "75": {
+          "bestOrientation": "as_is",
+          "bestMadToUpright": 49.2596,
+          "inputSize": "2550x3300",
+          "normalizedSize": "2544x3264"
+        },
+        "76": {
+          "bestOrientation": "hflip",
+          "bestMadToUpright": 57.5478,
+          "inputSize": "2550x3300",
+          "normalizedSize": "2544x3264"
+        }
+      },
+      "traceRows": [
+        {
+          "pairId": "keyser bitcoin .pdf:rendered_300dpi",
+          "target": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceCoverage": 0.6303533190578159,
+          "targetCoverage": 0.22046752319771593,
+          "sourceOnlyCoverage": 0.512847965738758,
+          "sourceOnlyPixelCount": 11496,
+          "sourcePixelCount": 14130,
+          "targetUnionBox": [
+            1418,
+            2177,
+            1801,
+            2225
+          ],
+          "sourceTraceBox": [
+            743,
+            2177,
+            1126,
+            2225
+          ],
+          "sourceContextBox": [
+            707,
+            2141,
+            1162,
+            2261
+          ],
+          "componentCount": 6,
+          "topComponents": [
+            {
+              "pixelCount": 11175,
+              "targetBox": [
+                1418,
+                2177,
+                1801,
+                2219
+              ]
+            },
+            {
+              "pixelCount": 47,
+              "targetBox": [
+                1509,
+                2185,
+                1519,
+                2191
+              ]
+            },
+            {
+              "pixelCount": 47,
+              "targetBox": [
+                1664,
+                2212,
+                1674,
+                2218
+              ]
+            },
+            {
+              "pixelCount": 47,
+              "targetBox": [
+                1725,
+                2212,
+                1735,
+                2218
+              ]
+            },
+            {
+              "pixelCount": 46,
+              "targetBox": [
+                1766,
+                2211,
+                1775,
+                2218
+              ]
+            },
+            {
+              "pixelCount": 45,
+              "targetBox": [
+                1641,
+                2212,
+                1651,
+                2218
+              ]
+            }
+          ],
+          "sourceWords": [
+            {
+              "text": "in",
+              "token": "in",
+              "index": 177,
+              "box": [
+                682.01,
+                2122.21,
+                711.57,
+                2162.29
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "by",
+              "token": "by",
+              "index": 178,
+              "box": [
+                741.47,
+                2122.21,
+                775.06,
+                2162.29
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "riding",
+              "token": "riding",
+              "index": 179,
+              "box": [
+                806.98,
+                2122.21,
+                928.77,
+                2162.29
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "Bitcoins",
+              "token": "bitcoins",
+              "index": 180,
+              "box": [
+                965.2,
+                2122.21,
+                1129.13,
+                2162.29
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "Buterin",
+              "token": "buterin",
+              "index": 189,
+              "box": [
+                696.12,
+                2186.99,
+                853.08,
+                2235.97
+              ],
+              "strictInstruction": false,
+              "contextTerm": true
+            },
+            {
+              "text": "came",
+              "token": "came",
+              "index": 190,
+              "box": [
+                893.64,
+                2186.99,
+                975.88,
+                2235.97
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "up",
+              "token": "up",
+              "index": 191,
+              "box": [
+                1011.55,
+                2186.99,
+                1045.15,
+                2235.97
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "with",
+              "token": "with",
+              "index": 192,
+              "box": [
+                1078.07,
+                2186.99,
+                1155.47,
+                2235.97
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            }
+          ],
+          "sourceSnippet": "in by riding Bitcoins Buterin came up with",
+          "strictInstructionTokens": [],
+          "contextTokens": [
+            "buterin"
+          ],
+          "strictInstructionHitCount": 0,
+          "contextHitCount": 1,
+          "duplicateOf": null
+        },
+        {
+          "pairId": "keyser bitcoin .pdf:rendered_300dpi",
+          "target": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceCoverage": 0.2693956799611682,
+          "targetCoverage": 0.000808996035919424,
+          "sourceOnlyCoverage": 0.2693147803575762,
+          "sourceOnlyPixelCount": 3329,
+          "sourcePixelCount": 3330,
+          "targetUnionBox": [
+            428,
+            2398,
+            546,
+            2445
+          ],
+          "sourceTraceBox": [
+            1998,
+            2398,
+            2116,
+            2445
+          ],
+          "sourceContextBox": [
+            1962,
+            2362,
+            2152,
+            2481
+          ],
+          "componentCount": 2,
+          "topComponents": [
+            {
+              "pixelCount": 3227,
+              "targetBox": [
+                428,
+                2398,
+                504,
+                2445
+              ]
+            },
+            {
+              "pixelCount": 32,
+              "targetBox": [
+                502,
+                2424,
+                510,
+                2430
+              ]
+            }
+          ],
+          "sourceWords": [],
+          "sourceSnippet": "(no OCR words in source trace box)",
+          "strictInstructionTokens": [],
+          "contextTokens": [],
+          "strictInstructionHitCount": 0,
+          "contextHitCount": 0,
+          "duplicateOf": null
+        },
+        {
+          "pairId": "keyser bitcoin .pdf:rendered_300dpi",
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceCoverage": 0.06785120532003325,
+          "targetCoverage": 0.15560058187863673,
+          "sourceOnlyCoverage": 0.06520157938487116,
+          "sourceOnlyPixelCount": 1255,
+          "sourcePixelCount": 1306,
+          "targetUnionBox": [
+            818,
+            2544,
+            1187,
+            2592
+          ],
+          "sourceTraceBox": [
+            1357,
+            2544,
+            1726,
+            2592
+          ],
+          "sourceContextBox": [
+            1321,
+            2508,
+            1762,
+            2628
+          ],
+          "componentCount": 8,
+          "topComponents": [
+            {
+              "pixelCount": 204,
+              "targetBox": [
+                1030,
+                2580,
+                1074,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 122,
+              "targetBox": [
+                1106,
+                2580,
+                1130,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 121,
+              "targetBox": [
+                939,
+                2579,
+                953,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 107,
+              "targetBox": [
+                993,
+                2581,
+                1012,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 103,
+              "targetBox": [
+                867,
+                2581,
+                887,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 93,
+              "targetBox": [
+                1175,
+                2579,
+                1187,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 90,
+              "targetBox": [
+                917,
+                2579,
+                929,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 63,
+              "targetBox": [
+                889,
+                2588,
+                908,
+                2592
+              ]
+            }
+          ],
+          "sourceWords": [
+            {
+              "text": "experience.",
+              "token": "experience",
+              "index": 223,
+              "box": [
+                1257.45,
+                2552.13,
+                1492.1,
+                2601.12
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            }
+          ],
+          "sourceSnippet": "experience.",
+          "strictInstructionTokens": [],
+          "contextTokens": [],
+          "strictInstructionHitCount": 0,
+          "contextHitCount": 0,
+          "duplicateOf": null
+        }
+      ],
+      "skippedRowsBelowThreshold": [
+        {
+          "pairId": "keyser bitcoin .pdf:rendered_300dpi",
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceCoverage": 0.0002576489533011272,
+          "targetCoverage": 0.00045088566827697265,
+          "sourceOnlyCoverage": 0.0002576489533011272,
+          "sourceOnlyPixelCount": 8,
+          "sourcePixelCount": 8
+        }
+      ]
+    },
+    {
+      "pairId": "keyser bitcoin .pdf:embedded_primary_image",
+      "pageMeta": {
+        "75": {
+          "bestOrientation": "as_is",
+          "bestMadToUpright": 51.283,
+          "inputSize": "2040x2805",
+          "normalizedSize": "2544x3264"
+        },
+        "76": {
+          "bestOrientation": "as_is",
+          "bestMadToUpright": 59.7692,
+          "inputSize": "2040x2805",
+          "normalizedSize": "2544x3264"
+        }
+      },
+      "traceRows": [
+        {
+          "pairId": "keyser bitcoin .pdf:embedded_primary_image",
+          "target": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceCoverage": 0.5962705210563883,
+          "targetCoverage": 0.08739293361884368,
+          "sourceOnlyCoverage": 0.5790060670949322,
+          "sourceOnlyPixelCount": 12979,
+          "sourcePixelCount": 13366,
+          "targetUnionBox": [
+            1427,
+            2177,
+            1801,
+            2225
+          ],
+          "sourceTraceBox": [
+            743,
+            2177,
+            1117,
+            2225
+          ],
+          "sourceContextBox": [
+            707,
+            2141,
+            1153,
+            2261
+          ],
+          "componentCount": 2,
+          "topComponents": [
+            {
+              "pixelCount": 12920,
+              "targetBox": [
+                1427,
+                2177,
+                1801,
+                2219
+              ]
+            },
+            {
+              "pixelCount": 39,
+              "targetBox": [
+                1524,
+                2185,
+                1534,
+                2191
+              ]
+            }
+          ],
+          "sourceWords": [
+            {
+              "text": "in",
+              "token": "in",
+              "index": 177,
+              "box": [
+                682.01,
+                2122.21,
+                711.57,
+                2162.29
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "by",
+              "token": "by",
+              "index": 178,
+              "box": [
+                741.47,
+                2122.21,
+                775.06,
+                2162.29
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "riding",
+              "token": "riding",
+              "index": 179,
+              "box": [
+                806.98,
+                2122.21,
+                928.77,
+                2162.29
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "Bitcoins",
+              "token": "bitcoins",
+              "index": 180,
+              "box": [
+                965.2,
+                2122.21,
+                1129.13,
+                2162.29
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "Buterin",
+              "token": "buterin",
+              "index": 189,
+              "box": [
+                696.12,
+                2186.99,
+                853.08,
+                2235.97
+              ],
+              "strictInstruction": false,
+              "contextTerm": true
+            },
+            {
+              "text": "came",
+              "token": "came",
+              "index": 190,
+              "box": [
+                893.64,
+                2186.99,
+                975.88,
+                2235.97
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "up",
+              "token": "up",
+              "index": 191,
+              "box": [
+                1011.55,
+                2186.99,
+                1045.15,
+                2235.97
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "with",
+              "token": "with",
+              "index": 192,
+              "box": [
+                1078.07,
+                2186.99,
+                1155.47,
+                2235.97
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            }
+          ],
+          "sourceSnippet": "in by riding Bitcoins Buterin came up with",
+          "strictInstructionTokens": [],
+          "contextTokens": [
+            "buterin"
+          ],
+          "strictInstructionHitCount": 0,
+          "contextHitCount": 1,
+          "duplicateOf": null
+        },
+        {
+          "pairId": "keyser bitcoin .pdf:embedded_primary_image",
+          "target": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceCoverage": 0.07410403689021924,
+          "targetCoverage": 0.2875980907693552,
+          "sourceOnlyCoverage": 0.05525442925329666,
+          "sourceOnlyPixelCount": 683,
+          "sourcePixelCount": 916,
+          "targetUnionBox": [
+            428,
+            2398,
+            496,
+            2445
+          ],
+          "sourceTraceBox": [
+            2048,
+            2398,
+            2116,
+            2445
+          ],
+          "sourceContextBox": [
+            2012,
+            2362,
+            2152,
+            2481
+          ],
+          "componentCount": 1,
+          "topComponents": [
+            {
+              "pixelCount": 630,
+              "targetBox": [
+                428,
+                2398,
+                456,
+                2445
+              ]
+            }
+          ],
+          "sourceWords": [],
+          "sourceSnippet": "(no OCR words in source trace box)",
+          "strictInstructionTokens": [],
+          "contextTokens": [],
+          "strictInstructionHitCount": 0,
+          "contextHitCount": 0,
+          "duplicateOf": null
+        },
+        {
+          "pairId": "keyser bitcoin .pdf:embedded_primary_image",
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceCoverage": 0.06540939318370739,
+          "targetCoverage": 0.2383624272651704,
+          "sourceOnlyCoverage": 0.0627597672485453,
+          "sourceOnlyPixelCount": 1208,
+          "sourcePixelCount": 1259,
+          "targetUnionBox": [
+            795,
+            2544,
+            1185,
+            2592
+          ],
+          "sourceTraceBox": [
+            1359,
+            2544,
+            1749,
+            2592
+          ],
+          "sourceContextBox": [
+            1323,
+            2508,
+            1785,
+            2628
+          ],
+          "componentCount": 8,
+          "topComponents": [
+            {
+              "pixelCount": 197,
+              "targetBox": [
+                1015,
+                2580,
+                1061,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 120,
+              "targetBox": [
+                918,
+                2579,
+                933,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 104,
+              "targetBox": [
+                842,
+                2581,
+                863,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 104,
+              "targetBox": [
+                976,
+                2581,
+                996,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 74,
+              "targetBox": [
+                1111,
+                2580,
+                1121,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 63,
+              "targetBox": [
+                1138,
+                2588,
+                1158,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 61,
+              "targetBox": [
+                865,
+                2588,
+                885,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 54,
+              "targetBox": [
+                818,
+                2588,
+                835,
+                2592
+              ]
+            }
+          ],
+          "sourceWords": [
+            {
+              "text": "experience.",
+              "token": "experience",
+              "index": 223,
+              "box": [
+                1257.45,
+                2552.13,
+                1492.1,
+                2601.12
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            }
+          ],
+          "sourceSnippet": "experience.",
+          "strictInstructionTokens": [],
+          "contextTokens": [],
+          "strictInstructionHitCount": 0,
+          "contextHitCount": 0,
+          "duplicateOf": null
+        }
+      ],
+      "skippedRowsBelowThreshold": [
+        {
+          "pairId": "keyser bitcoin .pdf:embedded_primary_image",
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceCoverage": 0.0002898550724637681,
+          "targetCoverage": 0.00016103059581320451,
+          "sourceOnlyCoverage": 0.0002898550724637681,
+          "sourceOnlyPixelCount": 9,
+          "sourcePixelCount": 9
+        }
+      ]
+    },
+    {
+      "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:rendered_300dpi",
+      "pageMeta": {
+        "75": {
+          "bestOrientation": "as_is",
+          "bestMadToUpright": 49.2596,
+          "inputSize": "2550x3300",
+          "normalizedSize": "2544x3264"
+        },
+        "76": {
+          "bestOrientation": "hflip",
+          "bestMadToUpright": 57.5478,
+          "inputSize": "2550x3300",
+          "normalizedSize": "2544x3264"
+        }
+      },
+      "traceRows": [
+        {
+          "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:rendered_300dpi",
+          "target": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceCoverage": 0.6303533190578159,
+          "targetCoverage": 0.22046752319771593,
+          "sourceOnlyCoverage": 0.512847965738758,
+          "sourceOnlyPixelCount": 11496,
+          "sourcePixelCount": 14130,
+          "targetUnionBox": [
+            1418,
+            2177,
+            1801,
+            2225
+          ],
+          "sourceTraceBox": [
+            743,
+            2177,
+            1126,
+            2225
+          ],
+          "sourceContextBox": [
+            707,
+            2141,
+            1162,
+            2261
+          ],
+          "componentCount": 6,
+          "topComponents": [
+            {
+              "pixelCount": 11175,
+              "targetBox": [
+                1418,
+                2177,
+                1801,
+                2219
+              ]
+            },
+            {
+              "pixelCount": 47,
+              "targetBox": [
+                1509,
+                2185,
+                1519,
+                2191
+              ]
+            },
+            {
+              "pixelCount": 47,
+              "targetBox": [
+                1664,
+                2212,
+                1674,
+                2218
+              ]
+            },
+            {
+              "pixelCount": 47,
+              "targetBox": [
+                1725,
+                2212,
+                1735,
+                2218
+              ]
+            },
+            {
+              "pixelCount": 46,
+              "targetBox": [
+                1766,
+                2211,
+                1775,
+                2218
+              ]
+            },
+            {
+              "pixelCount": 45,
+              "targetBox": [
+                1641,
+                2212,
+                1651,
+                2218
+              ]
+            }
+          ],
+          "sourceWords": [
+            {
+              "text": "in",
+              "token": "in",
+              "index": 177,
+              "box": [
+                682.01,
+                2122.21,
+                711.57,
+                2162.29
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "by",
+              "token": "by",
+              "index": 178,
+              "box": [
+                741.47,
+                2122.21,
+                775.06,
+                2162.29
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "riding",
+              "token": "riding",
+              "index": 179,
+              "box": [
+                806.98,
+                2122.21,
+                928.77,
+                2162.29
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "Bitcoins",
+              "token": "bitcoins",
+              "index": 180,
+              "box": [
+                965.2,
+                2122.21,
+                1129.13,
+                2162.29
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "Buterin",
+              "token": "buterin",
+              "index": 189,
+              "box": [
+                696.12,
+                2186.99,
+                853.08,
+                2235.97
+              ],
+              "strictInstruction": false,
+              "contextTerm": true
+            },
+            {
+              "text": "came",
+              "token": "came",
+              "index": 190,
+              "box": [
+                893.64,
+                2186.99,
+                975.88,
+                2235.97
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "up",
+              "token": "up",
+              "index": 191,
+              "box": [
+                1011.55,
+                2186.99,
+                1045.15,
+                2235.97
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "with",
+              "token": "with",
+              "index": 192,
+              "box": [
+                1078.07,
+                2186.99,
+                1155.47,
+                2235.97
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            }
+          ],
+          "sourceSnippet": "in by riding Bitcoins Buterin came up with",
+          "strictInstructionTokens": [],
+          "contextTokens": [
+            "buterin"
+          ],
+          "strictInstructionHitCount": 0,
+          "contextHitCount": 1,
+          "duplicateOf": "keyser bitcoin .pdf:rendered_300dpi:O4"
+        },
+        {
+          "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:rendered_300dpi",
+          "target": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceCoverage": 0.2693956799611682,
+          "targetCoverage": 0.000808996035919424,
+          "sourceOnlyCoverage": 0.2693147803575762,
+          "sourceOnlyPixelCount": 3329,
+          "sourcePixelCount": 3330,
+          "targetUnionBox": [
+            428,
+            2398,
+            546,
+            2445
+          ],
+          "sourceTraceBox": [
+            1998,
+            2398,
+            2116,
+            2445
+          ],
+          "sourceContextBox": [
+            1962,
+            2362,
+            2152,
+            2481
+          ],
+          "componentCount": 2,
+          "topComponents": [
+            {
+              "pixelCount": 3227,
+              "targetBox": [
+                428,
+                2398,
+                504,
+                2445
+              ]
+            },
+            {
+              "pixelCount": 32,
+              "targetBox": [
+                502,
+                2424,
+                510,
+                2430
+              ]
+            }
+          ],
+          "sourceWords": [],
+          "sourceSnippet": "(no OCR words in source trace box)",
+          "strictInstructionTokens": [],
+          "contextTokens": [],
+          "strictInstructionHitCount": 0,
+          "contextHitCount": 0,
+          "duplicateOf": "keyser bitcoin .pdf:rendered_300dpi:B4"
+        },
+        {
+          "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:rendered_300dpi",
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceCoverage": 0.06785120532003325,
+          "targetCoverage": 0.15560058187863673,
+          "sourceOnlyCoverage": 0.06520157938487116,
+          "sourceOnlyPixelCount": 1255,
+          "sourcePixelCount": 1306,
+          "targetUnionBox": [
+            818,
+            2544,
+            1187,
+            2592
+          ],
+          "sourceTraceBox": [
+            1357,
+            2544,
+            1726,
+            2592
+          ],
+          "sourceContextBox": [
+            1321,
+            2508,
+            1762,
+            2628
+          ],
+          "componentCount": 8,
+          "topComponents": [
+            {
+              "pixelCount": 204,
+              "targetBox": [
+                1030,
+                2580,
+                1074,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 122,
+              "targetBox": [
+                1106,
+                2580,
+                1130,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 121,
+              "targetBox": [
+                939,
+                2579,
+                953,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 107,
+              "targetBox": [
+                993,
+                2581,
+                1012,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 103,
+              "targetBox": [
+                867,
+                2581,
+                887,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 93,
+              "targetBox": [
+                1175,
+                2579,
+                1187,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 90,
+              "targetBox": [
+                917,
+                2579,
+                929,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 63,
+              "targetBox": [
+                889,
+                2588,
+                908,
+                2592
+              ]
+            }
+          ],
+          "sourceWords": [
+            {
+              "text": "experience.",
+              "token": "experience",
+              "index": 223,
+              "box": [
+                1257.45,
+                2552.13,
+                1492.1,
+                2601.12
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            }
+          ],
+          "sourceSnippet": "experience.",
+          "strictInstructionTokens": [],
+          "contextTokens": [],
+          "strictInstructionHitCount": 0,
+          "contextHitCount": 0,
+          "duplicateOf": "keyser bitcoin .pdf:rendered_300dpi:G5"
+        }
+      ],
+      "skippedRowsBelowThreshold": [
+        {
+          "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:rendered_300dpi",
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceCoverage": 0.0002576489533011272,
+          "targetCoverage": 0.00045088566827697265,
+          "sourceOnlyCoverage": 0.0002576489533011272,
+          "sourceOnlyPixelCount": 8,
+          "sourcePixelCount": 8
+        }
+      ]
+    },
+    {
+      "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:embedded_primary_image",
+      "pageMeta": {
+        "75": {
+          "bestOrientation": "as_is",
+          "bestMadToUpright": 51.283,
+          "inputSize": "2040x2805",
+          "normalizedSize": "2544x3264"
+        },
+        "76": {
+          "bestOrientation": "as_is",
+          "bestMadToUpright": 59.7692,
+          "inputSize": "2040x2805",
+          "normalizedSize": "2544x3264"
+        }
+      },
+      "traceRows": [
+        {
+          "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:embedded_primary_image",
+          "target": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceCoverage": 0.5962705210563883,
+          "targetCoverage": 0.08739293361884368,
+          "sourceOnlyCoverage": 0.5790060670949322,
+          "sourceOnlyPixelCount": 12979,
+          "sourcePixelCount": 13366,
+          "targetUnionBox": [
+            1427,
+            2177,
+            1801,
+            2225
+          ],
+          "sourceTraceBox": [
+            743,
+            2177,
+            1117,
+            2225
+          ],
+          "sourceContextBox": [
+            707,
+            2141,
+            1153,
+            2261
+          ],
+          "componentCount": 2,
+          "topComponents": [
+            {
+              "pixelCount": 12920,
+              "targetBox": [
+                1427,
+                2177,
+                1801,
+                2219
+              ]
+            },
+            {
+              "pixelCount": 39,
+              "targetBox": [
+                1524,
+                2185,
+                1534,
+                2191
+              ]
+            }
+          ],
+          "sourceWords": [
+            {
+              "text": "in",
+              "token": "in",
+              "index": 177,
+              "box": [
+                682.01,
+                2122.21,
+                711.57,
+                2162.29
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "by",
+              "token": "by",
+              "index": 178,
+              "box": [
+                741.47,
+                2122.21,
+                775.06,
+                2162.29
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "riding",
+              "token": "riding",
+              "index": 179,
+              "box": [
+                806.98,
+                2122.21,
+                928.77,
+                2162.29
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "Bitcoins",
+              "token": "bitcoins",
+              "index": 180,
+              "box": [
+                965.2,
+                2122.21,
+                1129.13,
+                2162.29
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "Buterin",
+              "token": "buterin",
+              "index": 189,
+              "box": [
+                696.12,
+                2186.99,
+                853.08,
+                2235.97
+              ],
+              "strictInstruction": false,
+              "contextTerm": true
+            },
+            {
+              "text": "came",
+              "token": "came",
+              "index": 190,
+              "box": [
+                893.64,
+                2186.99,
+                975.88,
+                2235.97
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "up",
+              "token": "up",
+              "index": 191,
+              "box": [
+                1011.55,
+                2186.99,
+                1045.15,
+                2235.97
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "text": "with",
+              "token": "with",
+              "index": 192,
+              "box": [
+                1078.07,
+                2186.99,
+                1155.47,
+                2235.97
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            }
+          ],
+          "sourceSnippet": "in by riding Bitcoins Buterin came up with",
+          "strictInstructionTokens": [],
+          "contextTokens": [
+            "buterin"
+          ],
+          "strictInstructionHitCount": 0,
+          "contextHitCount": 1,
+          "duplicateOf": "keyser bitcoin .pdf:embedded_primary_image:O4"
+        },
+        {
+          "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:embedded_primary_image",
+          "target": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceCoverage": 0.07410403689021924,
+          "targetCoverage": 0.2875980907693552,
+          "sourceOnlyCoverage": 0.05525442925329666,
+          "sourceOnlyPixelCount": 683,
+          "sourcePixelCount": 916,
+          "targetUnionBox": [
+            428,
+            2398,
+            496,
+            2445
+          ],
+          "sourceTraceBox": [
+            2048,
+            2398,
+            2116,
+            2445
+          ],
+          "sourceContextBox": [
+            2012,
+            2362,
+            2152,
+            2481
+          ],
+          "componentCount": 1,
+          "topComponents": [
+            {
+              "pixelCount": 630,
+              "targetBox": [
+                428,
+                2398,
+                456,
+                2445
+              ]
+            }
+          ],
+          "sourceWords": [],
+          "sourceSnippet": "(no OCR words in source trace box)",
+          "strictInstructionTokens": [],
+          "contextTokens": [],
+          "strictInstructionHitCount": 0,
+          "contextHitCount": 0,
+          "duplicateOf": "keyser bitcoin .pdf:embedded_primary_image:B4"
+        },
+        {
+          "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:embedded_primary_image",
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceCoverage": 0.06540939318370739,
+          "targetCoverage": 0.2383624272651704,
+          "sourceOnlyCoverage": 0.0627597672485453,
+          "sourceOnlyPixelCount": 1208,
+          "sourcePixelCount": 1259,
+          "targetUnionBox": [
+            795,
+            2544,
+            1185,
+            2592
+          ],
+          "sourceTraceBox": [
+            1359,
+            2544,
+            1749,
+            2592
+          ],
+          "sourceContextBox": [
+            1323,
+            2508,
+            1785,
+            2628
+          ],
+          "componentCount": 8,
+          "topComponents": [
+            {
+              "pixelCount": 197,
+              "targetBox": [
+                1015,
+                2580,
+                1061,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 120,
+              "targetBox": [
+                918,
+                2579,
+                933,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 104,
+              "targetBox": [
+                842,
+                2581,
+                863,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 104,
+              "targetBox": [
+                976,
+                2581,
+                996,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 74,
+              "targetBox": [
+                1111,
+                2580,
+                1121,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 63,
+              "targetBox": [
+                1138,
+                2588,
+                1158,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 61,
+              "targetBox": [
+                865,
+                2588,
+                885,
+                2592
+              ]
+            },
+            {
+              "pixelCount": 54,
+              "targetBox": [
+                818,
+                2588,
+                835,
+                2592
+              ]
+            }
+          ],
+          "sourceWords": [
+            {
+              "text": "experience.",
+              "token": "experience",
+              "index": 223,
+              "box": [
+                1257.45,
+                2552.13,
+                1492.1,
+                2601.12
+              ],
+              "strictInstruction": false,
+              "contextTerm": false
+            }
+          ],
+          "sourceSnippet": "experience.",
+          "strictInstructionTokens": [],
+          "contextTokens": [],
+          "strictInstructionHitCount": 0,
+          "contextHitCount": 0,
+          "duplicateOf": "keyser bitcoin .pdf:embedded_primary_image:G5"
+        }
+      ],
+      "skippedRowsBelowThreshold": [
+        {
+          "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:embedded_primary_image",
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceCoverage": 0.0002898550724637681,
+          "targetCoverage": 0.00016103059581320451,
+          "sourceOnlyCoverage": 0.0002898550724637681,
+          "sourceOnlyPixelCount": 9,
+          "sourcePixelCount": 9
+        }
+      ]
+    }
+  ],
+  "traceRows": [
+    {
+      "pairId": "keyser bitcoin .pdf:rendered_300dpi",
+      "target": "O4",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "sourceCoverage": 0.6303533190578159,
+      "targetCoverage": 0.22046752319771593,
+      "sourceOnlyCoverage": 0.512847965738758,
+      "sourceOnlyPixelCount": 11496,
+      "sourcePixelCount": 14130,
+      "targetUnionBox": [
+        1418,
+        2177,
+        1801,
+        2225
+      ],
+      "sourceTraceBox": [
+        743,
+        2177,
+        1126,
+        2225
+      ],
+      "sourceContextBox": [
+        707,
+        2141,
+        1162,
+        2261
+      ],
+      "componentCount": 6,
+      "topComponents": [
+        {
+          "pixelCount": 11175,
+          "targetBox": [
+            1418,
+            2177,
+            1801,
+            2219
+          ]
+        },
+        {
+          "pixelCount": 47,
+          "targetBox": [
+            1509,
+            2185,
+            1519,
+            2191
+          ]
+        },
+        {
+          "pixelCount": 47,
+          "targetBox": [
+            1664,
+            2212,
+            1674,
+            2218
+          ]
+        },
+        {
+          "pixelCount": 47,
+          "targetBox": [
+            1725,
+            2212,
+            1735,
+            2218
+          ]
+        },
+        {
+          "pixelCount": 46,
+          "targetBox": [
+            1766,
+            2211,
+            1775,
+            2218
+          ]
+        },
+        {
+          "pixelCount": 45,
+          "targetBox": [
+            1641,
+            2212,
+            1651,
+            2218
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "in",
+          "token": "in",
+          "index": 177,
+          "box": [
+            682.01,
+            2122.21,
+            711.57,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "by",
+          "token": "by",
+          "index": 178,
+          "box": [
+            741.47,
+            2122.21,
+            775.06,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "riding",
+          "token": "riding",
+          "index": 179,
+          "box": [
+            806.98,
+            2122.21,
+            928.77,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Bitcoins",
+          "token": "bitcoins",
+          "index": 180,
+          "box": [
+            965.2,
+            2122.21,
+            1129.13,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Buterin",
+          "token": "buterin",
+          "index": 189,
+          "box": [
+            696.12,
+            2186.99,
+            853.08,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": true
+        },
+        {
+          "text": "came",
+          "token": "came",
+          "index": 190,
+          "box": [
+            893.64,
+            2186.99,
+            975.88,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "up",
+          "token": "up",
+          "index": 191,
+          "box": [
+            1011.55,
+            2186.99,
+            1045.15,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "with",
+          "token": "with",
+          "index": 192,
+          "box": [
+            1078.07,
+            2186.99,
+            1155.47,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "sourceSnippet": "in by riding Bitcoins Buterin came up with",
+      "strictInstructionTokens": [],
+      "contextTokens": [
+        "buterin"
+      ],
+      "strictInstructionHitCount": 0,
+      "contextHitCount": 1,
+      "duplicateOf": null
+    },
+    {
+      "pairId": "keyser bitcoin .pdf:rendered_300dpi",
+      "target": "B4",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "sourceCoverage": 0.2693956799611682,
+      "targetCoverage": 0.000808996035919424,
+      "sourceOnlyCoverage": 0.2693147803575762,
+      "sourceOnlyPixelCount": 3329,
+      "sourcePixelCount": 3330,
+      "targetUnionBox": [
+        428,
+        2398,
+        546,
+        2445
+      ],
+      "sourceTraceBox": [
+        1998,
+        2398,
+        2116,
+        2445
+      ],
+      "sourceContextBox": [
+        1962,
+        2362,
+        2152,
+        2481
+      ],
+      "componentCount": 2,
+      "topComponents": [
+        {
+          "pixelCount": 3227,
+          "targetBox": [
+            428,
+            2398,
+            504,
+            2445
+          ]
+        },
+        {
+          "pixelCount": 32,
+          "targetBox": [
+            502,
+            2424,
+            510,
+            2430
+          ]
+        }
+      ],
+      "sourceWords": [],
+      "sourceSnippet": "(no OCR words in source trace box)",
+      "strictInstructionTokens": [],
+      "contextTokens": [],
+      "strictInstructionHitCount": 0,
+      "contextHitCount": 0,
+      "duplicateOf": null
+    },
+    {
+      "pairId": "keyser bitcoin .pdf:rendered_300dpi",
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "sourceCoverage": 0.06785120532003325,
+      "targetCoverage": 0.15560058187863673,
+      "sourceOnlyCoverage": 0.06520157938487116,
+      "sourceOnlyPixelCount": 1255,
+      "sourcePixelCount": 1306,
+      "targetUnionBox": [
+        818,
+        2544,
+        1187,
+        2592
+      ],
+      "sourceTraceBox": [
+        1357,
+        2544,
+        1726,
+        2592
+      ],
+      "sourceContextBox": [
+        1321,
+        2508,
+        1762,
+        2628
+      ],
+      "componentCount": 8,
+      "topComponents": [
+        {
+          "pixelCount": 204,
+          "targetBox": [
+            1030,
+            2580,
+            1074,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 122,
+          "targetBox": [
+            1106,
+            2580,
+            1130,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 121,
+          "targetBox": [
+            939,
+            2579,
+            953,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 107,
+          "targetBox": [
+            993,
+            2581,
+            1012,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 103,
+          "targetBox": [
+            867,
+            2581,
+            887,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 93,
+          "targetBox": [
+            1175,
+            2579,
+            1187,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 90,
+          "targetBox": [
+            917,
+            2579,
+            929,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 63,
+          "targetBox": [
+            889,
+            2588,
+            908,
+            2592
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "experience.",
+          "token": "experience",
+          "index": 223,
+          "box": [
+            1257.45,
+            2552.13,
+            1492.1,
+            2601.12
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "sourceSnippet": "experience.",
+      "strictInstructionTokens": [],
+      "contextTokens": [],
+      "strictInstructionHitCount": 0,
+      "contextHitCount": 0,
+      "duplicateOf": null
+    },
+    {
+      "pairId": "keyser bitcoin .pdf:embedded_primary_image",
+      "target": "O4",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "sourceCoverage": 0.5962705210563883,
+      "targetCoverage": 0.08739293361884368,
+      "sourceOnlyCoverage": 0.5790060670949322,
+      "sourceOnlyPixelCount": 12979,
+      "sourcePixelCount": 13366,
+      "targetUnionBox": [
+        1427,
+        2177,
+        1801,
+        2225
+      ],
+      "sourceTraceBox": [
+        743,
+        2177,
+        1117,
+        2225
+      ],
+      "sourceContextBox": [
+        707,
+        2141,
+        1153,
+        2261
+      ],
+      "componentCount": 2,
+      "topComponents": [
+        {
+          "pixelCount": 12920,
+          "targetBox": [
+            1427,
+            2177,
+            1801,
+            2219
+          ]
+        },
+        {
+          "pixelCount": 39,
+          "targetBox": [
+            1524,
+            2185,
+            1534,
+            2191
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "in",
+          "token": "in",
+          "index": 177,
+          "box": [
+            682.01,
+            2122.21,
+            711.57,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "by",
+          "token": "by",
+          "index": 178,
+          "box": [
+            741.47,
+            2122.21,
+            775.06,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "riding",
+          "token": "riding",
+          "index": 179,
+          "box": [
+            806.98,
+            2122.21,
+            928.77,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Bitcoins",
+          "token": "bitcoins",
+          "index": 180,
+          "box": [
+            965.2,
+            2122.21,
+            1129.13,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Buterin",
+          "token": "buterin",
+          "index": 189,
+          "box": [
+            696.12,
+            2186.99,
+            853.08,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": true
+        },
+        {
+          "text": "came",
+          "token": "came",
+          "index": 190,
+          "box": [
+            893.64,
+            2186.99,
+            975.88,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "up",
+          "token": "up",
+          "index": 191,
+          "box": [
+            1011.55,
+            2186.99,
+            1045.15,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "with",
+          "token": "with",
+          "index": 192,
+          "box": [
+            1078.07,
+            2186.99,
+            1155.47,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "sourceSnippet": "in by riding Bitcoins Buterin came up with",
+      "strictInstructionTokens": [],
+      "contextTokens": [
+        "buterin"
+      ],
+      "strictInstructionHitCount": 0,
+      "contextHitCount": 1,
+      "duplicateOf": null
+    },
+    {
+      "pairId": "keyser bitcoin .pdf:embedded_primary_image",
+      "target": "B4",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "sourceCoverage": 0.07410403689021924,
+      "targetCoverage": 0.2875980907693552,
+      "sourceOnlyCoverage": 0.05525442925329666,
+      "sourceOnlyPixelCount": 683,
+      "sourcePixelCount": 916,
+      "targetUnionBox": [
+        428,
+        2398,
+        496,
+        2445
+      ],
+      "sourceTraceBox": [
+        2048,
+        2398,
+        2116,
+        2445
+      ],
+      "sourceContextBox": [
+        2012,
+        2362,
+        2152,
+        2481
+      ],
+      "componentCount": 1,
+      "topComponents": [
+        {
+          "pixelCount": 630,
+          "targetBox": [
+            428,
+            2398,
+            456,
+            2445
+          ]
+        }
+      ],
+      "sourceWords": [],
+      "sourceSnippet": "(no OCR words in source trace box)",
+      "strictInstructionTokens": [],
+      "contextTokens": [],
+      "strictInstructionHitCount": 0,
+      "contextHitCount": 0,
+      "duplicateOf": null
+    },
+    {
+      "pairId": "keyser bitcoin .pdf:embedded_primary_image",
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "sourceCoverage": 0.06540939318370739,
+      "targetCoverage": 0.2383624272651704,
+      "sourceOnlyCoverage": 0.0627597672485453,
+      "sourceOnlyPixelCount": 1208,
+      "sourcePixelCount": 1259,
+      "targetUnionBox": [
+        795,
+        2544,
+        1185,
+        2592
+      ],
+      "sourceTraceBox": [
+        1359,
+        2544,
+        1749,
+        2592
+      ],
+      "sourceContextBox": [
+        1323,
+        2508,
+        1785,
+        2628
+      ],
+      "componentCount": 8,
+      "topComponents": [
+        {
+          "pixelCount": 197,
+          "targetBox": [
+            1015,
+            2580,
+            1061,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 120,
+          "targetBox": [
+            918,
+            2579,
+            933,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 104,
+          "targetBox": [
+            842,
+            2581,
+            863,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 104,
+          "targetBox": [
+            976,
+            2581,
+            996,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 74,
+          "targetBox": [
+            1111,
+            2580,
+            1121,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 63,
+          "targetBox": [
+            1138,
+            2588,
+            1158,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 61,
+          "targetBox": [
+            865,
+            2588,
+            885,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 54,
+          "targetBox": [
+            818,
+            2588,
+            835,
+            2592
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "experience.",
+          "token": "experience",
+          "index": 223,
+          "box": [
+            1257.45,
+            2552.13,
+            1492.1,
+            2601.12
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "sourceSnippet": "experience.",
+      "strictInstructionTokens": [],
+      "contextTokens": [],
+      "strictInstructionHitCount": 0,
+      "contextHitCount": 0,
+      "duplicateOf": null
+    },
+    {
+      "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:rendered_300dpi",
+      "target": "O4",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "sourceCoverage": 0.6303533190578159,
+      "targetCoverage": 0.22046752319771593,
+      "sourceOnlyCoverage": 0.512847965738758,
+      "sourceOnlyPixelCount": 11496,
+      "sourcePixelCount": 14130,
+      "targetUnionBox": [
+        1418,
+        2177,
+        1801,
+        2225
+      ],
+      "sourceTraceBox": [
+        743,
+        2177,
+        1126,
+        2225
+      ],
+      "sourceContextBox": [
+        707,
+        2141,
+        1162,
+        2261
+      ],
+      "componentCount": 6,
+      "topComponents": [
+        {
+          "pixelCount": 11175,
+          "targetBox": [
+            1418,
+            2177,
+            1801,
+            2219
+          ]
+        },
+        {
+          "pixelCount": 47,
+          "targetBox": [
+            1509,
+            2185,
+            1519,
+            2191
+          ]
+        },
+        {
+          "pixelCount": 47,
+          "targetBox": [
+            1664,
+            2212,
+            1674,
+            2218
+          ]
+        },
+        {
+          "pixelCount": 47,
+          "targetBox": [
+            1725,
+            2212,
+            1735,
+            2218
+          ]
+        },
+        {
+          "pixelCount": 46,
+          "targetBox": [
+            1766,
+            2211,
+            1775,
+            2218
+          ]
+        },
+        {
+          "pixelCount": 45,
+          "targetBox": [
+            1641,
+            2212,
+            1651,
+            2218
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "in",
+          "token": "in",
+          "index": 177,
+          "box": [
+            682.01,
+            2122.21,
+            711.57,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "by",
+          "token": "by",
+          "index": 178,
+          "box": [
+            741.47,
+            2122.21,
+            775.06,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "riding",
+          "token": "riding",
+          "index": 179,
+          "box": [
+            806.98,
+            2122.21,
+            928.77,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Bitcoins",
+          "token": "bitcoins",
+          "index": 180,
+          "box": [
+            965.2,
+            2122.21,
+            1129.13,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Buterin",
+          "token": "buterin",
+          "index": 189,
+          "box": [
+            696.12,
+            2186.99,
+            853.08,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": true
+        },
+        {
+          "text": "came",
+          "token": "came",
+          "index": 190,
+          "box": [
+            893.64,
+            2186.99,
+            975.88,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "up",
+          "token": "up",
+          "index": 191,
+          "box": [
+            1011.55,
+            2186.99,
+            1045.15,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "with",
+          "token": "with",
+          "index": 192,
+          "box": [
+            1078.07,
+            2186.99,
+            1155.47,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "sourceSnippet": "in by riding Bitcoins Buterin came up with",
+      "strictInstructionTokens": [],
+      "contextTokens": [
+        "buterin"
+      ],
+      "strictInstructionHitCount": 0,
+      "contextHitCount": 1,
+      "duplicateOf": "keyser bitcoin .pdf:rendered_300dpi:O4"
+    },
+    {
+      "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:rendered_300dpi",
+      "target": "B4",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "sourceCoverage": 0.2693956799611682,
+      "targetCoverage": 0.000808996035919424,
+      "sourceOnlyCoverage": 0.2693147803575762,
+      "sourceOnlyPixelCount": 3329,
+      "sourcePixelCount": 3330,
+      "targetUnionBox": [
+        428,
+        2398,
+        546,
+        2445
+      ],
+      "sourceTraceBox": [
+        1998,
+        2398,
+        2116,
+        2445
+      ],
+      "sourceContextBox": [
+        1962,
+        2362,
+        2152,
+        2481
+      ],
+      "componentCount": 2,
+      "topComponents": [
+        {
+          "pixelCount": 3227,
+          "targetBox": [
+            428,
+            2398,
+            504,
+            2445
+          ]
+        },
+        {
+          "pixelCount": 32,
+          "targetBox": [
+            502,
+            2424,
+            510,
+            2430
+          ]
+        }
+      ],
+      "sourceWords": [],
+      "sourceSnippet": "(no OCR words in source trace box)",
+      "strictInstructionTokens": [],
+      "contextTokens": [],
+      "strictInstructionHitCount": 0,
+      "contextHitCount": 0,
+      "duplicateOf": "keyser bitcoin .pdf:rendered_300dpi:B4"
+    },
+    {
+      "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:rendered_300dpi",
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "sourceCoverage": 0.06785120532003325,
+      "targetCoverage": 0.15560058187863673,
+      "sourceOnlyCoverage": 0.06520157938487116,
+      "sourceOnlyPixelCount": 1255,
+      "sourcePixelCount": 1306,
+      "targetUnionBox": [
+        818,
+        2544,
+        1187,
+        2592
+      ],
+      "sourceTraceBox": [
+        1357,
+        2544,
+        1726,
+        2592
+      ],
+      "sourceContextBox": [
+        1321,
+        2508,
+        1762,
+        2628
+      ],
+      "componentCount": 8,
+      "topComponents": [
+        {
+          "pixelCount": 204,
+          "targetBox": [
+            1030,
+            2580,
+            1074,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 122,
+          "targetBox": [
+            1106,
+            2580,
+            1130,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 121,
+          "targetBox": [
+            939,
+            2579,
+            953,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 107,
+          "targetBox": [
+            993,
+            2581,
+            1012,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 103,
+          "targetBox": [
+            867,
+            2581,
+            887,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 93,
+          "targetBox": [
+            1175,
+            2579,
+            1187,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 90,
+          "targetBox": [
+            917,
+            2579,
+            929,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 63,
+          "targetBox": [
+            889,
+            2588,
+            908,
+            2592
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "experience.",
+          "token": "experience",
+          "index": 223,
+          "box": [
+            1257.45,
+            2552.13,
+            1492.1,
+            2601.12
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "sourceSnippet": "experience.",
+      "strictInstructionTokens": [],
+      "contextTokens": [],
+      "strictInstructionHitCount": 0,
+      "contextHitCount": 0,
+      "duplicateOf": "keyser bitcoin .pdf:rendered_300dpi:G5"
+    },
+    {
+      "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:embedded_primary_image",
+      "target": "O4",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "sourceCoverage": 0.5962705210563883,
+      "targetCoverage": 0.08739293361884368,
+      "sourceOnlyCoverage": 0.5790060670949322,
+      "sourceOnlyPixelCount": 12979,
+      "sourcePixelCount": 13366,
+      "targetUnionBox": [
+        1427,
+        2177,
+        1801,
+        2225
+      ],
+      "sourceTraceBox": [
+        743,
+        2177,
+        1117,
+        2225
+      ],
+      "sourceContextBox": [
+        707,
+        2141,
+        1153,
+        2261
+      ],
+      "componentCount": 2,
+      "topComponents": [
+        {
+          "pixelCount": 12920,
+          "targetBox": [
+            1427,
+            2177,
+            1801,
+            2219
+          ]
+        },
+        {
+          "pixelCount": 39,
+          "targetBox": [
+            1524,
+            2185,
+            1534,
+            2191
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "in",
+          "token": "in",
+          "index": 177,
+          "box": [
+            682.01,
+            2122.21,
+            711.57,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "by",
+          "token": "by",
+          "index": 178,
+          "box": [
+            741.47,
+            2122.21,
+            775.06,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "riding",
+          "token": "riding",
+          "index": 179,
+          "box": [
+            806.98,
+            2122.21,
+            928.77,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Bitcoins",
+          "token": "bitcoins",
+          "index": 180,
+          "box": [
+            965.2,
+            2122.21,
+            1129.13,
+            2162.29
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Buterin",
+          "token": "buterin",
+          "index": 189,
+          "box": [
+            696.12,
+            2186.99,
+            853.08,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": true
+        },
+        {
+          "text": "came",
+          "token": "came",
+          "index": 190,
+          "box": [
+            893.64,
+            2186.99,
+            975.88,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "up",
+          "token": "up",
+          "index": 191,
+          "box": [
+            1011.55,
+            2186.99,
+            1045.15,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "with",
+          "token": "with",
+          "index": 192,
+          "box": [
+            1078.07,
+            2186.99,
+            1155.47,
+            2235.97
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "sourceSnippet": "in by riding Bitcoins Buterin came up with",
+      "strictInstructionTokens": [],
+      "contextTokens": [
+        "buterin"
+      ],
+      "strictInstructionHitCount": 0,
+      "contextHitCount": 1,
+      "duplicateOf": "keyser bitcoin .pdf:embedded_primary_image:O4"
+    },
+    {
+      "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:embedded_primary_image",
+      "target": "B4",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "sourceCoverage": 0.07410403689021924,
+      "targetCoverage": 0.2875980907693552,
+      "sourceOnlyCoverage": 0.05525442925329666,
+      "sourceOnlyPixelCount": 683,
+      "sourcePixelCount": 916,
+      "targetUnionBox": [
+        428,
+        2398,
+        496,
+        2445
+      ],
+      "sourceTraceBox": [
+        2048,
+        2398,
+        2116,
+        2445
+      ],
+      "sourceContextBox": [
+        2012,
+        2362,
+        2152,
+        2481
+      ],
+      "componentCount": 1,
+      "topComponents": [
+        {
+          "pixelCount": 630,
+          "targetBox": [
+            428,
+            2398,
+            456,
+            2445
+          ]
+        }
+      ],
+      "sourceWords": [],
+      "sourceSnippet": "(no OCR words in source trace box)",
+      "strictInstructionTokens": [],
+      "contextTokens": [],
+      "strictInstructionHitCount": 0,
+      "contextHitCount": 0,
+      "duplicateOf": "keyser bitcoin .pdf:embedded_primary_image:B4"
+    },
+    {
+      "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:embedded_primary_image",
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "sourceCoverage": 0.06540939318370739,
+      "targetCoverage": 0.2383624272651704,
+      "sourceOnlyCoverage": 0.0627597672485453,
+      "sourceOnlyPixelCount": 1208,
+      "sourcePixelCount": 1259,
+      "targetUnionBox": [
+        795,
+        2544,
+        1185,
+        2592
+      ],
+      "sourceTraceBox": [
+        1359,
+        2544,
+        1749,
+        2592
+      ],
+      "sourceContextBox": [
+        1323,
+        2508,
+        1785,
+        2628
+      ],
+      "componentCount": 8,
+      "topComponents": [
+        {
+          "pixelCount": 197,
+          "targetBox": [
+            1015,
+            2580,
+            1061,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 120,
+          "targetBox": [
+            918,
+            2579,
+            933,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 104,
+          "targetBox": [
+            842,
+            2581,
+            863,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 104,
+          "targetBox": [
+            976,
+            2581,
+            996,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 74,
+          "targetBox": [
+            1111,
+            2580,
+            1121,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 63,
+          "targetBox": [
+            1138,
+            2588,
+            1158,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 61,
+          "targetBox": [
+            865,
+            2588,
+            885,
+            2592
+          ]
+        },
+        {
+          "pixelCount": 54,
+          "targetBox": [
+            818,
+            2588,
+            835,
+            2592
+          ]
+        }
+      ],
+      "sourceWords": [
+        {
+          "text": "experience.",
+          "token": "experience",
+          "index": 223,
+          "box": [
+            1257.45,
+            2552.13,
+            1492.1,
+            2601.12
+          ],
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "sourceSnippet": "experience.",
+      "strictInstructionTokens": [],
+      "contextTokens": [],
+      "strictInstructionHitCount": 0,
+      "contextHitCount": 0,
+      "duplicateOf": "keyser bitcoin .pdf:embedded_primary_image:G5"
+    }
+  ],
+  "skippedRowsBelowThreshold": [
+    {
+      "pairId": "keyser bitcoin .pdf:rendered_300dpi",
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "sourceCoverage": 0.0002576489533011272,
+      "targetCoverage": 0.00045088566827697265,
+      "sourceOnlyCoverage": 0.0002576489533011272,
+      "sourceOnlyPixelCount": 8,
+      "sourcePixelCount": 8
+    },
+    {
+      "pairId": "keyser bitcoin .pdf:embedded_primary_image",
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "sourceCoverage": 0.0002898550724637681,
+      "targetCoverage": 0.00016103059581320451,
+      "sourceOnlyCoverage": 0.0002898550724637681,
+      "sourceOnlyPixelCount": 9,
+      "sourcePixelCount": 9
+    },
+    {
+      "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:rendered_300dpi",
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "sourceCoverage": 0.0002576489533011272,
+      "targetCoverage": 0.00045088566827697265,
+      "sourceOnlyCoverage": 0.0002576489533011272,
+      "sourceOnlyPixelCount": 8,
+      "sourcePixelCount": 8
+    },
+    {
+      "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:embedded_primary_image",
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "sourceCoverage": 0.0002898550724637681,
+      "targetCoverage": 0.00016103059581320451,
+      "sourceOnlyCoverage": 0.0002898550724637681,
+      "sourceOnlyPixelCount": 9,
+      "sourcePixelCount": 9
+    }
+  ]
+}

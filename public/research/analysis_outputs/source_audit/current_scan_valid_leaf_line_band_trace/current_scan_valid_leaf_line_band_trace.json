@@ -1,0 +1,5182 @@
+{
+  "createdAt": "2026-05-24T03:39:08",
+  "scope": "valid page 75 -> page 76 source line-band trace around O4/B4/G5/O5; no key derivation",
+  "inputs": {
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "articleMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "decision": "valid_leaf_line_band_trace_no_instruction_source",
+  "summary": {
+    "traceRowCount": 8,
+    "sourceLineRows": 6,
+    "targetLineRows": 8,
+    "lineOverlapRows": 6,
+    "totalSourceLineHits": 14,
+    "totalTargetLineHits": 20,
+    "totalSourceTargetLineOverlaps": 13,
+    "strictInstructionRows": 1,
+    "contextTermRows": 5,
+    "totalStrictInstructionHits": 1,
+    "totalContextTermHits": 6,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0
+  },
+  "fingerprint": "modes=2|targets=8|sourceRows=6|overlapRows=6|sourceLines=14|targetLines=20|overlaps=13|strictRows=1|contextRows=5|strict=1|context=6|sourceR3=0|triggers=0/9|selectors=0",
+  "traceRows": [
+    {
+      "mode": "valid_75_to_76_natural",
+      "dx": 0,
+      "dy": 0,
+      "target": "O4",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "targetLineHitCount": 3,
+      "sourceLineHitCount": 3,
+      "sourceTargetLineOverlapCount": 3,
+      "sourceTargetLineOverlapArea": 68593.70349999995,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "targetContextTermHitCount": 2,
+      "strictInstructionTerms": [],
+      "contextTerms": [
+        "bitcoins"
+      ],
+      "targetContextTerms": [
+        "bukele",
+        "imf"
+      ],
+      "targetTextPreview": "trolling the International Monetary Fund (IMF) on Twitter? / He's taunting them, telling them he's ByiiREeraipy\" / I tweeted President Nayib Bukele when he announced",
+      "sourceTextPreview": "to cash in by riding Bitcoins coattails that give it a bad name. / Vitalik Buterin came up with the (MRERREIGStY epithet. / Now he's slinging proof of stake at the mEthereum lab.",
+      "targetLines": [
+        {
+          "lineIndex": 23,
+          "box": [
+            484.44,
+            2102.78,
+            1776.73,
+            2142.89
+          ],
+          "center": [
+            1130.585,
+            2122.835
+          ],
+          "text": "trolling the International Monetary Fund (IMF) on Twitter?",
+          "tokens": [
+            "trolling",
+            "the",
+            "international",
+            "monetary",
+            "fund",
+            "imf",
+            "on",
+            "twitter"
+          ],
+          "words": [
+            {
+              "id": "p76w168",
+              "index": 168,
+              "text": "trolling",
+              "token": "trolling",
+              "box": [
+                484.44,
+                2102.78,
+                649.73,
+                2142.89
+              ]
+            },
+            {
+              "id": "p76w169",
+              "index": 169,
+              "text": "the",
+              "token": "the",
+              "box": [
+                685.47,
+                2102.78,
+                739.75,
+                2142.89
+              ]
+            },
+            {
+              "id": "p76w170",
+              "index": 170,
+              "text": "International",
+              "token": "international",
+              "box": [
+                774.93,
+                2102.78,
+                1054.0,
+                2142.89
+              ]
+            },
+            {
+              "id": "p76w171",
+              "index": 171,
+              "text": "Monetary",
+              "token": "monetary",
+              "box": [
+                1089.54,
+                2102.78,
+                1267.34,
+                2142.89
+              ]
+            },
+            {
+              "id": "p76w172",
+              "index": 172,
+              "text": "Fund",
+              "token": "fund",
+              "box": [
+                1303.64,
+                2102.78,
+                1388.87,
+                2142.89
+              ]
+            },
+            {
+              "id": "p76w173",
+              "index": 173,
+              "text": "(IMF)",
+              "token": "imf",
+              "box": [
+                1425.26,
+                2102.78,
+                1514.89,
+                2142.89
+              ]
+            },
+            {
+              "id": "p76w174",
+              "index": 174,
+              "text": "on",
+              "token": "on",
+              "box": [
+                1547.89,
+                2102.78,
+                1580.73,
+                2142.89
+              ]
+            },
+            {
+              "id": "p76w175",
+              "index": 175,
+              "text": "Twitter?",
+              "token": "twitter",
+              "box": [
+                1613.22,
+                2102.78,
+                1776.73,
+                2142.89
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 24,
+          "box": [
+            485.44,
+            2166.53,
+            1743.68,
+            2215.56
+          ],
+          "center": [
+            1114.56,
+            2191.045
+          ],
+          "text": "He's taunting them, telling them he's ByiiREeraipy\"",
+          "tokens": [
+            "hes",
+            "taunting",
+            "them",
+            "telling",
+            "them",
+            "hes",
+            "byiireeraipy"
+          ],
+          "words": [
+            {
+              "id": "p76w176",
+              "index": 176,
+              "text": "He's",
+              "token": "hes",
+              "box": [
+                485.44,
+                2166.53,
+                553.79,
+                2215.56
+              ]
+            },
+            {
+              "id": "p76w177",
+              "index": 177,
+              "text": "taunting",
+              "token": "taunting",
+              "box": [
+                586.96,
+                2166.53,
+                761.19,
+                2215.56
+              ]
+            },
+            {
+              "id": "p76w178",
+              "index": 178,
+              "text": "them,",
+              "token": "them",
+              "box": [
+                797.04,
+                2166.53,
+                896.72,
+                2215.56
+              ]
+            },
+            {
+              "id": "p76w179",
+              "index": 179,
+              "text": "telling",
+              "token": "telling",
+              "box": [
+                932.74,
+                2166.53,
+                1076.1,
+                2215.56
+              ]
+            },
+            {
+              "id": "p76w180",
+              "index": 180,
+              "text": "them",
+              "token": "them",
+              "box": [
+                1111.65,
+                2166.53,
+                1196.09,
+                2215.56
+              ]
+            },
+            {
+              "id": "p76w181",
+              "index": 181,
+              "text": "he's",
+              "token": "hes",
+              "box": [
+                1234.28,
+                2166.53,
+                1303.44,
+                2215.56
+              ]
+            },
+            {
+              "id": "p76w182",
+              "index": 182,
+              "text": "ByiiREeraipy\"",
+              "token": "byiireeraipy",
+              "box": [
+                1335.8,
+                2166.53,
+                1743.68,
+                2215.56
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 25,
+          "box": [
+            485.44,
+            2243.65,
+            1683.38,
+            2288.21
+          ],
+          "center": [
+            1084.41,
+            2265.9300000000003
+          ],
+          "text": "I tweeted President Nayib Bukele when he announced",
+          "tokens": [
+            "i",
+            "tweeted",
+            "president",
+            "nayib",
+            "bukele",
+            "when",
+            "he",
+            "announced"
+          ],
+          "words": [
+            {
+              "id": "p76w183",
+              "index": 183,
+              "text": "I",
+              "token": "i",
+              "box": [
+                485.44,
+                2243.65,
+                494.49,
+                2288.21
+              ]
+            },
+            {
+              "id": "p76w184",
+              "index": 184,
+              "text": "tweeted",
+              "token": "tweeted",
+              "box": [
+                519.62,
+                2243.65,
+                668.26,
+                2288.21
+              ]
+            },
+            {
+              "id": "p76w185",
+              "index": 185,
+              "text": "President",
+              "token": "president",
+              "box": [
+                704.57,
+                2243.65,
+                916.26,
+                2288.21
+              ]
+            },
+            {
+              "id": "p76w186",
+              "index": 186,
+              "text": "Nayib",
+              "token": "nayib",
+              "box": [
+                956.86,
+                2243.65,
+                1066.59,
+                2288.21
+              ]
+            },
+            {
+              "id": "p76w187",
+              "index": 187,
+              "text": "Bukele",
+              "token": "bukele",
+              "box": [
+                1105.62,
+                2243.65,
+                1246.06,
+                2288.21
+              ]
+            },
+            {
+              "id": "p76w188",
+              "index": 188,
+              "text": "when",
+              "token": "when",
+              "box": [
+                1284.54,
+                2243.65,
+                1370.58,
+                2288.21
+              ]
+            },
+            {
+              "id": "p76w189",
+              "index": 189,
+              "text": "he",
+              "token": "he",
+              "box": [
+                1408.17,
+                2243.65,
+                1441.68,
+                2288.21
+              ]
+            },
+            {
+              "id": "p76w190",
+              "index": 190,
+              "text": "announced",
+              "token": "announced",
+              "box": [
+                1473.51,
+                2243.65,
+                1683.38,
+                2288.21
+              ]
+            }
+          ]
+        }
+      ],
+      "sourceLines": [
+        {
+          "lineIndex": 19,
+          "sourceBox": [
+            504.64,
+            2122.21,
+            1889.33,
+            2162.29
+          ],
+          "targetBox": [
+            654.6700000000001,
+            2122.21,
+            2039.3600000000001,
+            2162.29
+          ],
+          "sourceText": "to cash in by riding Bitcoins coattails that give it a bad name.",
+          "tokens": [
+            "to",
+            "cash",
+            "in",
+            "by",
+            "riding",
+            "bitcoins",
+            "coattails",
+            "that",
+            "give",
+            "it",
+            "a",
+            "bad",
+            "name"
+          ],
+          "strictInstructionTerms": [],
+          "contextTerms": [
+            "bitcoins"
+          ],
+          "words": [
+            {
+              "id": "p75w175",
+              "index": 175,
+              "text": "to",
+              "token": "to",
+              "box": [
+                504.64,
+                2122.21,
+                534.2,
+                2162.29
+              ],
+              "targetBox": [
+                2009.8,
+                2122.21,
+                2039.3600000000001,
+                2162.29
+              ]
+            },
+            {
+              "id": "p75w176",
+              "index": 176,
+              "text": "cash",
+              "token": "cash",
+              "box": [
+                565.11,
+                2122.21,
+                645.73,
+                2162.29
+              ],
+              "targetBox": [
+                1898.27,
+                2122.21,
+                1978.8899999999999,
+                2162.29
+              ]
+            },
+            {
+              "id": "p75w177",
+              "index": 177,
+              "text": "in",
+              "token": "in",
+              "box": [
+                682.01,
+                2122.21,
+                711.57,
+                2162.29
+              ],
+              "targetBox": [
+                1832.4299999999998,
+                2122.21,
+                1861.99,
+                2162.29
+              ]
+            },
+            {
+              "id": "p75w178",
+              "index": 178,
+              "text": "by",
+              "token": "by",
+              "box": [
+                741.47,
+                2122.21,
+                775.06,
+                2162.29
+              ],
+              "targetBox": [
+                1768.94,
+                2122.21,
+                1802.53,
+                2162.29
+              ]
+            },
+            {
+              "id": "p75w179",
+              "index": 179,
+              "text": "riding",
+              "token": "riding",
+              "box": [
+                806.98,
+                2122.21,
+                928.77,
+                2162.29
+              ],
+              "targetBox": [
+                1615.23,
+                2122.21,
+                1737.02,
+                2162.29
+              ]
+            },
+            {
+              "id": "p75w180",
+              "index": 180,
+              "text": "Bitcoins",
+              "token": "bitcoins",
+              "box": [
+                965.2,
+                2122.21,
+                1129.13,
+                2162.29
+              ],
+              "targetBox": [
+                1414.87,
+                2122.21,
+                1578.8,
+                2162.29
+              ]
+            },
+            {
+              "id": "p75w181",
+              "index": 181,
+              "text": "coattails",
+              "token": "coattails",
+              "box": [
+                1166.75,
+                2122.21,
+                1352.69,
+                2162.29
+              ],
+              "targetBox": [
+                1191.31,
+                2122.21,
+                1377.25,
+                2162.29
+              ]
+            },
+            {
+              "id": "p75w182",
+              "index": 182,
+              "text": "that",
+              "token": "that",
+              "box": [
+                1389.47,
+                2122.21,
+                1466.06,
+                2162.29
+              ],
+              "targetBox": [
+                1077.94,
+                2122.21,
+                1154.53,
+                2162.29
+              ]
+            },
+            {
+              "id": "p75w183",
+              "index": 183,
+              "text": "give",
+              "token": "give",
+              "box": [
+                1500.33,
+                2122.21,
+                1570.47,
+                2162.29
+              ],
+              "targetBox": [
+                973.53,
+                2122.21,
+                1043.67,
+                2162.29
+              ]
+            },
+            {
+              "id": "p75w184",
+              "index": 184,
+              "text": "it",
+              "token": "it",
+              "box": [
+                1605.14,
+                2122.21,
+                1629.32,
+                2162.29
+              ],
+              "targetBox": [
+                914.6800000000001,
+                2122.21,
+                938.8599999999999,
+                2162.29
+              ]
+            },
+            {
+              "id": "p75w185",
+              "index": 185,
+              "text": "a",
+              "token": "a",
+              "box": [
+                1656.53,
+                2122.21,
+                1669.13,
+                2162.29
+              ],
+              "targetBox": [
+                874.8699999999999,
+                2122.21,
+                887.47,
+                2162.29
+              ]
+            },
+            {
+              "id": "p75w186",
+              "index": 186,
+              "text": "bad",
+              "token": "bad",
+              "box": [
+                1695.84,
+                2122.21,
+                1754.04,
+                2162.29
+              ],
+              "targetBox": [
+                789.96,
+                2122.21,
+                848.1600000000001,
+                2162.29
+              ]
+            },
+            {
+              "id": "p75w187",
+              "index": 187,
+              "text": "name.",
+              "token": "name",
+              "box": [
+                1788.55,
+                2122.21,
+                1889.33,
+                2162.29
+              ],
+              "targetBox": [
+                654.6700000000001,
+                2122.21,
+                755.45,
+                2162.29
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 20,
+          "sourceBox": [
+            505.65,
+            2186.99,
+            1763.36,
+            2235.97
+          ],
+          "targetBox": [
+            780.6400000000001,
+            2186.99,
+            2038.35,
+            2235.97
+          ],
+          "sourceText": "Vitalik Buterin came up with the (MRERREIGStY epithet.",
+          "tokens": [
+            "vitalik",
+            "buterin",
+            "came",
+            "up",
+            "with",
+            "the",
+            "mrerreigsty",
+            "epithet"
+          ],
+          "strictInstructionTerms": [],
+          "contextTerms": [],
+          "words": [
+            {
+              "id": "p75w188",
+              "index": 188,
+              "text": "Vitalik",
+              "token": "vitalik",
+              "box": [
+                505.65,
+                2186.99,
+                657.32,
+                2235.97
+              ],
+              "targetBox": [
+                1886.6799999999998,
+                2186.99,
+                2038.35,
+                2235.97
+              ]
+            },
+            {
+              "id": "p75w189",
+              "index": 189,
+              "text": "Buterin",
+              "token": "buterin",
+              "box": [
+                696.12,
+                2186.99,
+                853.08,
+                2235.97
+              ],
+              "targetBox": [
+                1690.92,
+                2186.99,
+                1847.88,
+                2235.97
+              ]
+            },
+            {
+              "id": "p75w190",
+              "index": 190,
+              "text": "came",
+              "token": "came",
+              "box": [
+                893.64,
+                2186.99,
+                975.88,
+                2235.97
+              ],
+              "targetBox": [
+                1568.12,
+                2186.99,
+                1650.3600000000001,
+                2235.97
+              ]
+            },
+            {
+              "id": "p75w191",
+              "index": 191,
+              "text": "up",
+              "token": "up",
+              "box": [
+                1011.55,
+                2186.99,
+                1045.15,
+                2235.97
+              ],
+              "targetBox": [
+                1498.85,
+                2186.99,
+                1532.45,
+                2235.97
+              ]
+            },
+            {
+              "id": "p75w192",
+              "index": 192,
+              "text": "with",
+              "token": "with",
+              "box": [
+                1078.07,
+                2186.99,
+                1155.47,
+                2235.97
+              ],
+              "targetBox": [
+                1388.53,
+                2186.99,
+                1465.93,
+                2235.97
+              ]
+            },
+            {
+              "id": "p75w193",
+              "index": 193,
+              "text": "the",
+              "token": "the",
+              "box": [
+                1189.93,
+                2186.99,
+                1244.35,
+                2235.97
+              ],
+              "targetBox": [
+                1299.65,
+                2186.99,
+                1354.07,
+                2235.97
+              ]
+            },
+            {
+              "id": "p75w194",
+              "index": 194,
+              "text": "(MRERREIGStY",
+              "token": "mrerreigsty",
+              "box": [
+                1277.61,
+                2186.99,
+                1571.57,
+                2235.97
+              ],
+              "targetBox": [
+                972.4300000000001,
+                2186.99,
+                1266.39,
+                2235.97
+              ]
+            },
+            {
+              "id": "p75w195",
+              "index": 195,
+              "text": "epithet.",
+              "token": "epithet",
+              "box": [
+                1610.18,
+                2186.99,
+                1763.36,
+                2235.97
+              ],
+              "targetBox": [
+                780.6400000000001,
+                2186.99,
+                933.8199999999999,
+                2235.97
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 21,
+          "sourceBox": [
+            506.66,
+            2267.42,
+            1720.43,
+            2307.5
+          ],
+          "targetBox": [
+            823.5699999999999,
+            2267.42,
+            2037.34,
+            2307.5
+          ],
+          "sourceText": "Now he's slinging proof of stake at the mEthereum lab.",
+          "tokens": [
+            "now",
+            "hes",
+            "slinging",
+            "proof",
+            "of",
+            "stake",
+            "at",
+            "the",
+            "methereum",
+            "lab"
+          ],
+          "strictInstructionTerms": [],
+          "contextTerms": [],
+          "words": [
+            {
+              "id": "p75w196",
+              "index": 196,
+              "text": "Now",
+              "token": "now",
+              "box": [
+                506.66,
+                2267.42,
+                566.37,
+                2307.5
+              ],
+              "targetBox": [
+                1977.63,
+                2267.42,
+                2037.34,
+                2307.5
+              ]
+            },
+            {
+              "id": "p75w197",
+              "index": 197,
+              "text": "he's",
+              "token": "hes",
+              "box": [
+                602.4,
+                2267.42,
+                671.74,
+                2307.5
+              ],
+              "targetBox": [
+                1872.26,
+                2267.42,
+                1941.6,
+                2307.5
+              ]
+            },
+            {
+              "id": "p75w198",
+              "index": 198,
+              "text": "slinging",
+              "token": "slinging",
+              "box": [
+                706.2,
+                2267.42,
+                879.09,
+                2307.5
+              ],
+              "targetBox": [
+                1664.9099999999999,
+                2267.42,
+                1837.8,
+                2307.5
+              ]
+            },
+            {
+              "id": "p75w199",
+              "index": 199,
+              "text": "proof",
+              "token": "proof",
+              "box": [
+                915.82,
+                2267.42,
+                1014.91,
+                2307.5
+              ],
+              "targetBox": [
+                1529.0900000000001,
+                2267.42,
+                1628.1799999999998,
+                2307.5
+              ]
+            },
+            {
+              "id": "p75w200",
+              "index": 200,
+              "text": "of",
+              "token": "of",
+              "box": [
+                1049.85,
+                2267.42,
+                1079.42,
+                2307.5
+              ],
+              "targetBox": [
+                1464.58,
+                2267.42,
+                1494.15,
+                2307.5
+              ]
+            },
+            {
+              "id": "p75w201",
+              "index": 201,
+              "text": "stake",
+              "token": "stake",
+              "box": [
+                1111.32,
+                2267.42,
+                1212.1,
+                2307.5
+              ],
+              "targetBox": [
+                1331.9,
+                2267.42,
+                1432.68,
+                2307.5
+              ]
+            },
+            {
+              "id": "p75w202",
+              "index": 202,
+              "text": "at",
+              "token": "at",
+              "box": [
+                1248.38,
+                2267.42,
+                1276.6,
+                2307.5
+              ],
+              "targetBox": [
+                1267.4,
+                2267.42,
+                1295.62,
+                2307.5
+              ]
+            },
+            {
+              "id": "p75w203",
+              "index": 203,
+              "text": "the",
+              "token": "the",
+              "box": [
+                1304.82,
+                2267.42,
+                1359.99,
+                2307.5
+              ],
+              "targetBox": [
+                1184.01,
+                2267.42,
+                1239.18,
+                2307.5
+              ]
+            },
+            {
+              "id": "p75w204",
+              "index": 204,
+              "text": "mEthereum",
+              "token": "methereum",
+              "box": [
+                1394.51,
+                2267.42,
+                1613.1,
+                2307.5
+              ],
+              "targetBox": [
+                930.9000000000001,
+                2267.42,
+                1149.49,
+                2307.5
+              ]
+            },
+            {
+              "id": "p75w205",
+              "index": 205,
+              "text": "lab.",
+              "token": "lab",
+              "box": [
+                1653.51,
+                2267.42,
+                1720.43,
+                2307.5
+              ],
+              "targetBox": [
+                823.5699999999999,
+                2267.42,
+                890.49,
+                2307.5
+              ]
+            }
+          ]
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_line_band_trace/valid_75_to_76_natural_O4_line_band.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_natural",
+      "dx": 0,
+      "dy": 0,
+      "target": "B4",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "targetLineHitCount": 3,
+      "sourceLineHitCount": 0,
+      "sourceTargetLineOverlapCount": 0,
+      "sourceTargetLineOverlapArea": 0.0,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetContextTermHitCount": 3,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "targetContextTerms": [
+        "bitcoin",
+        "sell",
+        "volcanoes"
+      ],
+      "targetTextPreview": "he was going to tap his nation's volcanoes to mine / eis in bitcoin that he should sell / billions worth of future bitcoin earnings",
+      "sourceTextPreview": "",
+      "targetLines": [
+        {
+          "lineIndex": 26,
+          "box": [
+            486.45,
+            2320.76,
+            1579.86,
+            2360.87
+          ],
+          "center": [
+            1033.155,
+            2340.815
+          ],
+          "text": "he was going to tap his nation's volcanoes to mine",
+          "tokens": [
+            "he",
+            "was",
+            "going",
+            "to",
+            "tap",
+            "his",
+            "nations",
+            "volcanoes",
+            "to",
+            "mine"
+          ],
+          "words": [
+            {
+              "id": "p76w191",
+              "index": 191,
+              "text": "he",
+              "token": "he",
+              "box": [
+                486.45,
+                2320.76,
+                518.61,
+                2360.87
+              ]
+            },
+            {
+              "id": "p76w192",
+              "index": 192,
+              "text": "was",
+              "token": "was",
+              "box": [
+                550.78,
+                2320.76,
+                608.82,
+                2360.87
+              ]
+            },
+            {
+              "id": "p76w193",
+              "index": 193,
+              "text": "going",
+              "token": "going",
+              "box": [
+                645.26,
+                2320.76,
+                745.78,
+                2360.87
+              ]
+            },
+            {
+              "id": "p76w194",
+              "index": 194,
+              "text": "to",
+              "token": "to",
+              "box": [
+                779.95,
+                2320.76,
+                809.44,
+                2360.87
+              ]
+            },
+            {
+              "id": "p76w195",
+              "index": 195,
+              "text": "tap",
+              "token": "tap",
+              "box": [
+                839.26,
+                2320.76,
+                891.28,
+                2360.87
+              ]
+            },
+            {
+              "id": "p76w196",
+              "index": 196,
+              "text": "his",
+              "token": "his",
+              "box": [
+                924.69,
+                2320.76,
+                978.98,
+                2360.87
+              ]
+            },
+            {
+              "id": "p76w197",
+              "index": 197,
+              "text": "nation's",
+              "token": "nations",
+              "box": [
+                1013.15,
+                2320.76,
+                1171.29,
+                2360.87
+              ]
+            },
+            {
+              "id": "p76w198",
+              "index": 198,
+              "text": "volcanoes",
+              "token": "volcanoes",
+              "box": [
+                1207.14,
+                2320.76,
+                1402.54,
+                2360.87
+              ]
+            },
+            {
+              "id": "p76w199",
+              "index": 199,
+              "text": "to",
+              "token": "to",
+              "box": [
+                1439.33,
+                2320.76,
+                1468.82,
+                2360.87
+              ]
+            },
+            {
+              "id": "p76w200",
+              "index": 200,
+              "text": "mine",
+              "token": "mine",
+              "box": [
+                1498.64,
+                2320.76,
+                1579.86,
+                2360.87
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 27,
+          "box": [
+            561.83,
+            2393.42,
+            1439.33,
+            2433.53
+          ],
+          "center": [
+            1000.5799999999999,
+            2413.4750000000004
+          ],
+          "text": "eis in bitcoin that he should sell",
+          "tokens": [
+            "eis",
+            "in",
+            "bitcoin",
+            "that",
+            "he",
+            "should",
+            "sell"
+          ],
+          "words": [
+            {
+              "id": "p76w201",
+              "index": 201,
+              "text": "eis",
+              "token": "eis",
+              "box": [
+                561.83,
+                2393.42,
+                570.13,
+                2433.53
+              ]
+            },
+            {
+              "id": "p76w202",
+              "index": 202,
+              "text": "in",
+              "token": "in",
+              "box": [
+                742.76,
+                2393.42,
+                772.25,
+                2433.53
+              ]
+            },
+            {
+              "id": "p76w203",
+              "index": 203,
+              "text": "bitcoin",
+              "token": "bitcoin",
+              "box": [
+                803.07,
+                2393.42,
+                940.28,
+                2433.53
+              ]
+            },
+            {
+              "id": "p76w205",
+              "index": 205,
+              "text": "that",
+              "token": "that",
+              "box": [
+                1023.2,
+                2393.42,
+                1099.59,
+                2433.53
+              ]
+            },
+            {
+              "id": "p76w206",
+              "index": 206,
+              "text": "he",
+              "token": "he",
+              "box": [
+                1134.77,
+                2393.42,
+                1167.61,
+                2433.53
+              ]
+            },
+            {
+              "id": "p76w207",
+              "index": 207,
+              "text": "should",
+              "token": "should",
+              "box": [
+                1201.11,
+                2393.42,
+                1328.62,
+                2433.53
+              ]
+            },
+            {
+              "id": "p76w208",
+              "index": 208,
+              "text": "sell",
+              "token": "sell",
+              "box": [
+                1366.96,
+                2393.42,
+                1439.33,
+                2433.53
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 28,
+          "box": [
+            484.44,
+            2467.15,
+            1398.23,
+            2507.26
+          ],
+          "center": [
+            941.335,
+            2487.205
+          ],
+          "text": "billions worth of future bitcoin earnings",
+          "tokens": [
+            "billions",
+            "worth",
+            "of",
+            "future",
+            "bitcoin",
+            "earnings"
+          ],
+          "words": [
+            {
+              "id": "p76w209",
+              "index": 209,
+              "text": "billions",
+              "token": "billions",
+              "box": [
+                484.44,
+                2467.15,
+                650.62,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w210",
+              "index": 210,
+              "text": "worth",
+              "token": "worth",
+              "box": [
+                687.48,
+                2467.15,
+                793.86,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w211",
+              "index": 211,
+              "text": "of",
+              "token": "of",
+              "box": [
+                830.21,
+                2467.15,
+                860.36,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w212",
+              "index": 212,
+              "text": "future",
+              "token": "future",
+              "box": [
+                890.52,
+                2467.15,
+                1012.86,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w213",
+              "index": 213,
+              "text": "bitcoin",
+              "token": "bitcoin",
+              "box": [
+                1049.33,
+                2467.15,
+                1186.54,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w214",
+              "index": 214,
+              "text": "earnings",
+              "token": "earnings",
+              "box": [
+                1222.22,
+                2467.15,
+                1398.23,
+                2507.26
+              ]
+            }
+          ]
+        }
+      ],
+      "sourceLines": [],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_line_band_trace/valid_75_to_76_natural_B4_line_band.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_natural",
+      "dx": 0,
+      "dy": 0,
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "targetLineHitCount": 3,
+      "sourceLineHitCount": 2,
+      "sourceTargetLineOverlapCount": 2,
+      "sourceTargetLineOverlapArea": 30897.697400000005,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "targetContextTermHitCount": 2,
+      "strictInstructionTerms": [],
+      "contextTerms": [
+        "satoshi"
+      ],
+      "targetContextTerms": [
+        "bitcoin",
+        "imf"
+      ],
+      "targetTextPreview": "billions worth of future bitcoin earnings / collateralized to pay off the IMF / loan and get rid of those leeches. I tagged Mike",
+      "sourceTextPreview": "the BSR of the whole Satoshi experience. / You wouldn't be digging blindly with your bare",
+      "targetLines": [
+        {
+          "lineIndex": 28,
+          "box": [
+            484.44,
+            2467.15,
+            1398.23,
+            2507.26
+          ],
+          "center": [
+            941.335,
+            2487.205
+          ],
+          "text": "billions worth of future bitcoin earnings",
+          "tokens": [
+            "billions",
+            "worth",
+            "of",
+            "future",
+            "bitcoin",
+            "earnings"
+          ],
+          "words": [
+            {
+              "id": "p76w209",
+              "index": 209,
+              "text": "billions",
+              "token": "billions",
+              "box": [
+                484.44,
+                2467.15,
+                650.62,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w210",
+              "index": 210,
+              "text": "worth",
+              "token": "worth",
+              "box": [
+                687.48,
+                2467.15,
+                793.86,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w211",
+              "index": 211,
+              "text": "of",
+              "token": "of",
+              "box": [
+                830.21,
+                2467.15,
+                860.36,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w212",
+              "index": 212,
+              "text": "future",
+              "token": "future",
+              "box": [
+                890.52,
+                2467.15,
+                1012.86,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w213",
+              "index": 213,
+              "text": "bitcoin",
+              "token": "bitcoin",
+              "box": [
+                1049.33,
+                2467.15,
+                1186.54,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w214",
+              "index": 214,
+              "text": "earnings",
+              "token": "earnings",
+              "box": [
+                1222.22,
+                2467.15,
+                1398.23,
+                2507.26
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 29,
+          "box": [
+            485.44,
+            2535.36,
+            1607.19,
+            2579.93
+          ],
+          "center": [
+            1046.315,
+            2557.645
+          ],
+          "text": "collateralized to pay off the IMF",
+          "tokens": [
+            "collateralized",
+            "to",
+            "pay",
+            "off",
+            "the",
+            "imf"
+          ],
+          "words": [
+            {
+              "id": "p76w215",
+              "index": 215,
+              "text": "collateralized",
+              "token": "collateralized",
+              "box": [
+                485.44,
+                2535.36,
+                788.47,
+                2579.93
+              ]
+            },
+            {
+              "id": "p76w216",
+              "index": 216,
+              "text": "to",
+              "token": "to",
+              "box": [
+                1219.2,
+                2535.36,
+                1248.69,
+                2579.93
+              ]
+            },
+            {
+              "id": "p76w217",
+              "index": 217,
+              "text": "pay",
+              "token": "pay",
+              "box": [
+                1278.51,
+                2535.36,
+                1334.3,
+                2579.93
+              ]
+            },
+            {
+              "id": "p76w218",
+              "index": 218,
+              "text": "off",
+              "token": "off",
+              "box": [
+                1367.97,
+                2535.36,
+                1419.23,
+                2579.93
+              ]
+            },
+            {
+              "id": "p76w219",
+              "index": 219,
+              "text": "the",
+              "token": "the",
+              "box": [
+                1450.39,
+                2535.36,
+                1504.67,
+                2579.93
+              ]
+            },
+            {
+              "id": "p76w220",
+              "index": 220,
+              "text": "IMF",
+              "token": "imf",
+              "box": [
+                1540.85,
+                2535.36,
+                1607.19,
+                2579.93
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 30,
+          "box": [
+            485.44,
+            2609.09,
+            1542.06,
+            2653.65
+          ],
+          "center": [
+            1013.75,
+            2631.37
+          ],
+          "text": "loan and get rid of those leeches. I tagged Mike",
+          "tokens": [
+            "loan",
+            "and",
+            "get",
+            "rid",
+            "of",
+            "those",
+            "leeches",
+            "i",
+            "tagged",
+            "mike"
+          ],
+          "words": [
+            {
+              "id": "p76w221",
+              "index": 221,
+              "text": "loan",
+              "token": "loan",
+              "box": [
+                485.44,
+                2609.09,
+                568.27,
+                2653.65
+              ]
+            },
+            {
+              "id": "p76w222",
+              "index": 222,
+              "text": "and",
+              "token": "and",
+              "box": [
+                605.06,
+                2609.09,
+                663.1,
+                2653.65
+              ]
+            },
+            {
+              "id": "p76w223",
+              "index": 223,
+              "text": "get",
+              "token": "get",
+              "box": [
+                698.53,
+                2609.09,
+                750.56,
+                2653.65
+              ]
+            },
+            {
+              "id": "p76w224",
+              "index": 224,
+              "text": "rid",
+              "token": "rid",
+              "box": [
+                782.97,
+                2609.09,
+                832.72,
+                2653.65
+              ]
+            },
+            {
+              "id": "p76w225",
+              "index": 225,
+              "text": "of",
+              "token": "of",
+              "box": [
+                864.39,
+                2609.09,
+                894.54,
+                2653.65
+              ]
+            },
+            {
+              "id": "p76w226",
+              "index": 226,
+              "text": "those",
+              "token": "those",
+              "box": [
+                923.69,
+                2609.09,
+                1024.2,
+                2653.65
+              ]
+            },
+            {
+              "id": "p76w227",
+              "index": 227,
+              "text": "leeches.",
+              "token": "leeches",
+              "box": [
+                1060.39,
+                2609.09,
+                1221.21,
+                2653.65
+              ]
+            },
+            {
+              "id": "p76w228",
+              "index": 228,
+              "text": "I",
+              "token": "i",
+              "box": [
+                1258.41,
+                2609.09,
+                1267.45,
+                2653.65
+              ]
+            },
+            {
+              "id": "p76w229",
+              "index": 229,
+              "text": "tagged",
+              "token": "tagged",
+              "box": [
+                1291.58,
+                2609.09,
+                1420.81,
+                2653.65
+              ]
+            },
+            {
+              "id": "p76w230",
+              "index": 230,
+              "text": "Mike",
+              "token": "mike",
+              "box": [
+                1458.43,
+                2609.09,
+                1542.06,
+                2653.65
+              ]
+            }
+          ]
+        }
+      ],
+      "sourceLines": [
+        {
+          "lineIndex": 25,
+          "sourceBox": [
+            506.66,
+            2552.13,
+            1492.1,
+            2601.12
+          ],
+          "targetBox": [
+            1051.9,
+            2552.13,
+            2037.34,
+            2601.12
+          ],
+          "sourceText": "the BSR of the whole Satoshi experience.",
+          "tokens": [
+            "the",
+            "bsr",
+            "of",
+            "the",
+            "whole",
+            "satoshi",
+            "experience"
+          ],
+          "strictInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "words": [
+            {
+              "id": "p75w217",
+              "index": 217,
+              "text": "the",
+              "token": "the",
+              "box": [
+                506.66,
+                2552.13,
+                560.32,
+                2601.12
+              ],
+              "targetBox": [
+                1983.6799999999998,
+                2552.13,
+                2037.34,
+                2601.12
+              ]
+            },
+            {
+              "id": "p75w218",
+              "index": 218,
+              "text": "BSR",
+              "token": "bsr",
+              "box": [
+                594.33,
+                2552.13,
+                728.87,
+                2601.12
+              ],
+              "targetBox": [
+                1815.13,
+                2552.13,
+                1949.67,
+                2601.12
+              ]
+            },
+            {
+              "id": "p75w219",
+              "index": 219,
+              "text": "of",
+              "token": "of",
+              "box": [
+                786.82,
+                2552.13,
+                817.05,
+                2601.12
+              ],
+              "targetBox": [
+                1726.95,
+                2552.13,
+                1757.1799999999998,
+                2601.12
+              ]
+            },
+            {
+              "id": "p75w220",
+              "index": 220,
+              "text": "the",
+              "token": "the",
+              "box": [
+                846.28,
+                2552.13,
+                900.7,
+                2601.12
+              ],
+              "targetBox": [
+                1643.3,
+                2552.13,
+                1697.72,
+                2601.12
+              ]
+            },
+            {
+              "id": "p75w221",
+              "index": 221,
+              "text": "whole",
+              "token": "whole",
+              "box": [
+                934.96,
+                2552.13,
+                1037.42,
+                2601.12
+              ],
+              "targetBox": [
+                1506.58,
+                2552.13,
+                1609.04,
+                2601.12
+              ]
+            },
+            {
+              "id": "p75w222",
+              "index": 222,
+              "text": "Satoshi",
+              "token": "satoshi",
+              "box": [
+                1074.04,
+                2552.13,
+                1221.3,
+                2601.12
+              ],
+              "targetBox": [
+                1322.7,
+                2552.13,
+                1469.96,
+                2601.12
+              ]
+            },
+            {
+              "id": "p75w223",
+              "index": 223,
+              "text": "experience.",
+              "token": "experience",
+              "box": [
+                1257.45,
+                2552.13,
+                1492.1,
+                2601.12
+              ],
+              "targetBox": [
+                1051.9,
+                2552.13,
+                1286.55,
+                2601.12
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 26,
+          "sourceBox": [
+            506.66,
+            2629.18,
+            1633.76,
+            2673.71
+          ],
+          "targetBox": [
+            910.24,
+            2629.18,
+            2037.34,
+            2673.71
+          ],
+          "sourceText": "You wouldn't be digging blindly with your bare",
+          "tokens": [
+            "you",
+            "wouldnt",
+            "be",
+            "digging",
+            "blindly",
+            "with",
+            "your",
+            "bare"
+          ],
+          "strictInstructionTerms": [],
+          "contextTerms": [],
+          "words": [
+            {
+              "id": "p75w224",
+              "index": 224,
+              "text": "You",
+              "token": "you",
+              "box": [
+                506.66,
+                2629.18,
+                568.64,
+                2673.71
+              ],
+              "targetBox": [
+                1975.3600000000001,
+                2629.18,
+                2037.34,
+                2673.71
+              ]
+            },
+            {
+              "id": "p75w225",
+              "index": 225,
+              "text": "wouldn't",
+              "token": "wouldnt",
+              "box": [
+                605.42,
+                2629.18,
+                790.85,
+                2673.71
+              ],
+              "targetBox": [
+                1753.15,
+                2629.18,
+                1938.58,
+                2673.71
+              ]
+            },
+            {
+              "id": "p75w226",
+              "index": 226,
+              "text": "be",
+              "token": "be",
+              "box": [
+                829.15,
+                2629.18,
+                864.08,
+                2673.71
+              ],
+              "targetBox": [
+                1679.92,
+                2629.18,
+                1714.85,
+                2673.71
+              ]
+            },
+            {
+              "id": "p75w227",
+              "index": 227,
+              "text": "digging",
+              "token": "digging",
+              "box": [
+                898.68,
+                2629.18,
+                1060.94,
+                2673.71
+              ],
+              "targetBox": [
+                1483.06,
+                2629.18,
+                1645.3200000000002,
+                2673.71
+              ]
+            },
+            {
+              "id": "p75w228",
+              "index": 228,
+              "text": "blindly",
+              "token": "blindly",
+              "box": [
+                1099.23,
+                2629.18,
+                1260.61,
+                2673.71
+              ],
+              "targetBox": [
+                1283.39,
+                2629.18,
+                1444.77,
+                2673.71
+              ]
+            },
+            {
+              "id": "p75w229",
+              "index": 229,
+              "text": "with",
+              "token": "with",
+              "box": [
+                1299.78,
+                2629.18,
+                1385.24,
+                2673.71
+              ],
+              "targetBox": [
+                1158.76,
+                2629.18,
+                1244.22,
+                2673.71
+              ]
+            },
+            {
+              "id": "p75w230",
+              "index": 230,
+              "text": "your",
+              "token": "your",
+              "box": [
+                1422.73,
+                2629.18,
+                1509.8,
+                2673.71
+              ],
+              "targetBox": [
+                1034.2,
+                2629.18,
+                1121.27,
+                2673.71
+              ]
+            },
+            {
+              "id": "p75w231",
+              "index": 231,
+              "text": "bare",
+              "token": "bare",
+              "box": [
+                1546.69,
+                2629.18,
+                1633.76,
+                2673.71
+              ],
+              "targetBox": [
+                910.24,
+                2629.18,
+                997.31,
+                2673.71
+              ]
+            }
+          ]
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_line_band_trace/valid_75_to_76_natural_G5_line_band.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_natural",
+      "dx": 0,
+      "dy": 0,
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "targetLineHitCount": 1,
+      "sourceLineHitCount": 2,
+      "sourceTargetLineOverlapCount": 1,
+      "sourceTargetLineOverlapArea": 25889.675999999956,
+      "strictInstructionHitCount": 1,
+      "contextTermHitCount": 1,
+      "targetContextTermHitCount": 0,
+      "strictInstructionTerms": [
+        "words"
+      ],
+      "contextTerms": [
+        "shitcoiners"
+      ],
+      "targetContextTerms": [],
+      "targetTextPreview": "Maybe because he's a siukbeodmensertslveaarty",
+      "sourceTextPreview": "to. Nice, pleasant words from con men and shitcoiners / are easy listening for the gullible and unloved.",
+      "targetLines": [
+        {
+          "lineIndex": 34,
+          "box": [
+            487.45,
+            2897.06,
+            1620.98,
+            2981.74
+          ],
+          "center": [
+            1054.215,
+            2939.3999999999996
+          ],
+          "text": "Maybe because he's a siukbeodmensertslveaarty",
+          "tokens": [
+            "maybe",
+            "because",
+            "hes",
+            "a",
+            "siukbeodmensertslveaarty"
+          ],
+          "words": [
+            {
+              "id": "p76w260",
+              "index": 260,
+              "text": "Maybe",
+              "token": "maybe",
+              "box": [
+                487.45,
+                2897.06,
+                614.78,
+                2981.74
+              ]
+            },
+            {
+              "id": "p76w261",
+              "index": 261,
+              "text": "because",
+              "token": "because",
+              "box": [
+                659.33,
+                2897.06,
+                840.52,
+                2981.74
+              ]
+            },
+            {
+              "id": "p76w262",
+              "index": 262,
+              "text": "he's",
+              "token": "hes",
+              "box": [
+                886.5,
+                2897.06,
+                970.13,
+                2981.74
+              ]
+            },
+            {
+              "id": "p76w263",
+              "index": 263,
+              "text": "a",
+              "token": "a",
+              "box": [
+                1012.14,
+                2897.06,
+                1026.21,
+                2981.74
+              ]
+            },
+            {
+              "id": "p76w264",
+              "index": 264,
+              "text": "siukbeodmensertslveaarty",
+              "token": "siukbeodmensertslveaarty",
+              "box": [
+                1059.39,
+                2897.06,
+                1620.98,
+                2981.74
+              ]
+            }
+          ]
+        }
+      ],
+      "sourceLines": [
+        {
+          "lineIndex": 29,
+          "sourceBox": [
+            506.66,
+            2851.44,
+            1683.66,
+            2891.51
+          ],
+          "targetBox": [
+            860.3399999999999,
+            2851.44,
+            2037.34,
+            2891.51
+          ],
+          "sourceText": "to. Nice, pleasant words from con men and shitcoiners",
+          "tokens": [
+            "to",
+            "nice",
+            "pleasant",
+            "words",
+            "from",
+            "con",
+            "men",
+            "and",
+            "shitcoiners"
+          ],
+          "strictInstructionTerms": [
+            "words"
+          ],
+          "contextTerms": [
+            "shitcoiners"
+          ],
+          "words": [
+            {
+              "id": "p75w251",
+              "index": 251,
+              "text": "to.",
+              "token": "to",
+              "box": [
+                506.66,
+                2851.44,
+                549.74,
+                2891.51
+              ],
+              "targetBox": [
+                1994.26,
+                2851.44,
+                2037.34,
+                2891.51
+              ]
+            },
+            {
+              "id": "p75w252",
+              "index": 252,
+              "text": "Nice,",
+              "token": "nice",
+              "box": [
+                580.22,
+                2851.44,
+                670.09,
+                2891.51
+              ],
+              "targetBox": [
+                1873.9099999999999,
+                2851.44,
+                1963.78,
+                2891.51
+              ]
+            },
+            {
+              "id": "p75w253",
+              "index": 253,
+              "text": "pleasant",
+              "token": "pleasant",
+              "box": [
+                704.18,
+                2851.44,
+                876.18,
+                2891.51
+              ],
+              "targetBox": [
+                1667.8200000000002,
+                2851.44,
+                1839.8200000000002,
+                2891.51
+              ]
+            },
+            {
+              "id": "p75w254",
+              "index": 254,
+              "text": "words",
+              "token": "words",
+              "box": [
+                911.78,
+                2851.44,
+                1015.92,
+                2891.51
+              ],
+              "targetBox": [
+                1528.08,
+                2851.44,
+                1632.22,
+                2891.51
+              ]
+            },
+            {
+              "id": "p75w255",
+              "index": 255,
+              "text": "from",
+              "token": "from",
+              "box": [
+                1052.87,
+                2851.44,
+                1133.49,
+                2891.51
+              ],
+              "targetBox": [
+                1410.51,
+                2851.44,
+                1491.13,
+                2891.51
+              ]
+            },
+            {
+              "id": "p75w256",
+              "index": 256,
+              "text": "con",
+              "token": "con",
+              "box": [
+                1169.78,
+                2851.44,
+                1224.2,
+                2891.51
+              ],
+              "targetBox": [
+                1319.8,
+                2851.44,
+                1374.22,
+                2891.51
+              ]
+            },
+            {
+              "id": "p75w257",
+              "index": 257,
+              "text": "men",
+              "token": "men",
+              "box": [
+                1258.46,
+                2851.44,
+                1318.17,
+                2891.51
+              ],
+              "targetBox": [
+                1225.83,
+                2851.44,
+                1285.54,
+                2891.51
+              ]
+            },
+            {
+              "id": "p75w258",
+              "index": 258,
+              "text": "and",
+              "token": "and",
+              "box": [
+                1355.21,
+                2851.44,
+                1413.41,
+                2891.51
+              ],
+              "targetBox": [
+                1130.59,
+                2851.44,
+                1188.79,
+                2891.51
+              ]
+            },
+            {
+              "id": "p75w259",
+              "index": 259,
+              "text": "shitcoiners",
+              "token": "shitcoiners",
+              "box": [
+                1449.94,
+                2851.44,
+                1683.66,
+                2891.51
+              ],
+              "targetBox": [
+                860.3399999999999,
+                2851.44,
+                1094.06,
+                2891.51
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 30,
+          "sourceBox": [
+            507.66,
+            2924.04,
+            1568.97,
+            2964.12
+          ],
+          "targetBox": [
+            975.03,
+            2924.04,
+            2036.34,
+            2964.12
+          ],
+          "sourceText": "are easy listening for the gullible and unloved.",
+          "tokens": [
+            "are",
+            "easy",
+            "listening",
+            "for",
+            "the",
+            "gullible",
+            "and",
+            "unloved"
+          ],
+          "strictInstructionTerms": [],
+          "contextTerms": [],
+          "words": [
+            {
+              "id": "p75w260",
+              "index": 260,
+              "text": "are",
+              "token": "are",
+              "box": [
+                507.66,
+                2924.04,
+                560.58,
+                2964.12
+              ],
+              "targetBox": [
+                1983.42,
+                2924.04,
+                2036.34,
+                2964.12
+              ]
+            },
+            {
+              "id": "p75w261",
+              "index": 261,
+              "text": "easy",
+              "token": "easy",
+              "box": [
+                594.33,
+                2924.04,
+                673.34,
+                2964.12
+              ],
+              "targetBox": [
+                1870.6599999999999,
+                2924.04,
+                1949.67,
+                2964.12
+              ]
+            },
+            {
+              "id": "p75w262",
+              "index": 262,
+              "text": "listening",
+              "token": "listening",
+              "box": [
+                708.21,
+                2924.04,
+                901.41,
+                2964.12
+              ],
+              "targetBox": [
+                1642.5900000000001,
+                2924.04,
+                1835.79,
+                2964.12
+              ]
+            },
+            {
+              "id": "p75w263",
+              "index": 263,
+              "text": "for",
+              "token": "for",
+              "box": [
+                937.99,
+                2924.04,
+                986.36,
+                2964.12
+              ],
+              "targetBox": [
+                1557.6399999999999,
+                2924.04,
+                1606.01,
+                2964.12
+              ]
+            },
+            {
+              "id": "p75w264",
+              "index": 264,
+              "text": "the",
+              "token": "the",
+              "box": [
+                1016.59,
+                2924.04,
+                1070.26,
+                2964.12
+              ],
+              "targetBox": [
+                1473.74,
+                2924.04,
+                1527.4099999999999,
+                2964.12
+              ]
+            },
+            {
+              "id": "p75w265",
+              "index": 265,
+              "text": "gullible",
+              "token": "gullible",
+              "box": [
+                1104.27,
+                2924.04,
+                1270.0,
+                2964.12
+              ],
+              "targetBox": [
+                1274.0,
+                2924.04,
+                1439.73,
+                2964.12
+              ]
+            },
+            {
+              "id": "p75w266",
+              "index": 266,
+              "text": "and",
+              "token": "and",
+              "box": [
+                1307.84,
+                2924.04,
+                1366.04,
+                2964.12
+              ],
+              "targetBox": [
+                1177.96,
+                2924.04,
+                1236.16,
+                2964.12
+              ]
+            },
+            {
+              "id": "p75w267",
+              "index": 267,
+              "text": "unloved.",
+              "token": "unloved",
+              "box": [
+                1400.56,
+                2924.04,
+                1568.97,
+                2964.12
+              ],
+              "targetBox": [
+                975.03,
+                2924.04,
+                1143.44,
+                2964.12
+              ]
+            }
+          ]
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_line_band_trace/valid_75_to_76_natural_O5_line_band.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "dx": -80,
+      "dy": -20,
+      "target": "O4",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "targetLineHitCount": 3,
+      "sourceLineHitCount": 3,
+      "sourceTargetLineOverlapCount": 3,
+      "sourceTargetLineOverlapArea": 135821.42819999982,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "targetContextTermHitCount": 2,
+      "strictInstructionTerms": [],
+      "contextTerms": [
+        "bitcoins"
+      ],
+      "targetContextTerms": [
+        "bukele",
+        "imf"
+      ],
+      "targetTextPreview": "trolling the International Monetary Fund (IMF) on Twitter? / He's taunting them, telling them he's ByiiREeraipy\" / I tweeted President Nayib Bukele when he announced",
+      "sourceTextPreview": "to cash in by riding Bitcoins coattails that give it a bad name. / Vitalik Buterin came up with the (MRERREIGStY epithet. / Now he's slinging proof of stake at the mEthereum lab.",
+      "targetLines": [
+        {
+          "lineIndex": 23,
+          "box": [
+            484.44,
+            2102.78,
+            1776.73,
+            2142.89
+          ],
+          "center": [
+            1130.585,
+            2122.835
+          ],
+          "text": "trolling the International Monetary Fund (IMF) on Twitter?",
+          "tokens": [
+            "trolling",
+            "the",
+            "international",
+            "monetary",
+            "fund",
+            "imf",
+            "on",
+            "twitter"
+          ],
+          "words": [
+            {
+              "id": "p76w168",
+              "index": 168,
+              "text": "trolling",
+              "token": "trolling",
+              "box": [
+                484.44,
+                2102.78,
+                649.73,
+                2142.89
+              ]
+            },
+            {
+              "id": "p76w169",
+              "index": 169,
+              "text": "the",
+              "token": "the",
+              "box": [
+                685.47,
+                2102.78,
+                739.75,
+                2142.89
+              ]
+            },
+            {
+              "id": "p76w170",
+              "index": 170,
+              "text": "International",
+              "token": "international",
+              "box": [
+                774.93,
+                2102.78,
+                1054.0,
+                2142.89
+              ]
+            },
+            {
+              "id": "p76w171",
+              "index": 171,
+              "text": "Monetary",
+              "token": "monetary",
+              "box": [
+                1089.54,
+                2102.78,
+                1267.34,
+                2142.89
+              ]
+            },
+            {
+              "id": "p76w172",
+              "index": 172,
+              "text": "Fund",
+              "token": "fund",
+              "box": [
+                1303.64,
+                2102.78,
+                1388.87,
+                2142.89
+              ]
+            },
+            {
+              "id": "p76w173",
+              "index": 173,
+              "text": "(IMF)",
+              "token": "imf",
+              "box": [
+                1425.26,
+                2102.78,
+                1514.89,
+                2142.89
+              ]
+            },
+            {
+              "id": "p76w174",
+              "index": 174,
+              "text": "on",
+              "token": "on",
+              "box": [
+                1547.89,
+                2102.78,
+                1580.73,
+                2142.89
+              ]
+            },
+            {
+              "id": "p76w175",
+              "index": 175,
+              "text": "Twitter?",
+              "token": "twitter",
+              "box": [
+                1613.22,
+                2102.78,
+                1776.73,
+                2142.89
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 24,
+          "box": [
+            485.44,
+            2166.53,
+            1743.68,
+            2215.56
+          ],
+          "center": [
+            1114.56,
+            2191.045
+          ],
+          "text": "He's taunting them, telling them he's ByiiREeraipy\"",
+          "tokens": [
+            "hes",
+            "taunting",
+            "them",
+            "telling",
+            "them",
+            "hes",
+            "byiireeraipy"
+          ],
+          "words": [
+            {
+              "id": "p76w176",
+              "index": 176,
+              "text": "He's",
+              "token": "hes",
+              "box": [
+                485.44,
+                2166.53,
+                553.79,
+                2215.56
+              ]
+            },
+            {
+              "id": "p76w177",
+              "index": 177,
+              "text": "taunting",
+              "token": "taunting",
+              "box": [
+                586.96,
+                2166.53,
+                761.19,
+                2215.56
+              ]
+            },
+            {
+              "id": "p76w178",
+              "index": 178,
+              "text": "them,",
+              "token": "them",
+              "box": [
+                797.04,
+                2166.53,
+                896.72,
+                2215.56
+              ]
+            },
+            {
+              "id": "p76w179",
+              "index": 179,
+              "text": "telling",
+              "token": "telling",
+              "box": [
+                932.74,
+                2166.53,
+                1076.1,
+                2215.56
+              ]
+            },
+            {
+              "id": "p76w180",
+              "index": 180,
+              "text": "them",
+              "token": "them",
+              "box": [
+                1111.65,
+                2166.53,
+                1196.09,
+                2215.56
+              ]
+            },
+            {
+              "id": "p76w181",
+              "index": 181,
+              "text": "he's",
+              "token": "hes",
+              "box": [
+                1234.28,
+                2166.53,
+                1303.44,
+                2215.56
+              ]
+            },
+            {
+              "id": "p76w182",
+              "index": 182,
+              "text": "ByiiREeraipy\"",
+              "token": "byiireeraipy",
+              "box": [
+                1335.8,
+                2166.53,
+                1743.68,
+                2215.56
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 25,
+          "box": [
+            485.44,
+            2243.65,
+            1683.38,
+            2288.21
+          ],
+          "center": [
+            1084.41,
+            2265.9300000000003
+          ],
+          "text": "I tweeted President Nayib Bukele when he announced",
+          "tokens": [
+            "i",
+            "tweeted",
+            "president",
+            "nayib",
+            "bukele",
+            "when",
+            "he",
+            "announced"
+          ],
+          "words": [
+            {
+              "id": "p76w183",
+              "index": 183,
+              "text": "I",
+              "token": "i",
+              "box": [
+                485.44,
+                2243.65,
+                494.49,
+                2288.21
+              ]
+            },
+            {
+              "id": "p76w184",
+              "index": 184,
+              "text": "tweeted",
+              "token": "tweeted",
+              "box": [
+                519.62,
+                2243.65,
+                668.26,
+                2288.21
+              ]
+            },
+            {
+              "id": "p76w185",
+              "index": 185,
+              "text": "President",
+              "token": "president",
+              "box": [
+                704.57,
+                2243.65,
+                916.26,
+                2288.21
+              ]
+            },
+            {
+              "id": "p76w186",
+              "index": 186,
+              "text": "Nayib",
+              "token": "nayib",
+              "box": [
+                956.86,
+                2243.65,
+                1066.59,
+                2288.21
+              ]
+            },
+            {
+              "id": "p76w187",
+              "index": 187,
+              "text": "Bukele",
+              "token": "bukele",
+              "box": [
+                1105.62,
+                2243.65,
+                1246.06,
+                2288.21
+              ]
+            },
+            {
+              "id": "p76w188",
+              "index": 188,
+              "text": "when",
+              "token": "when",
+              "box": [
+                1284.54,
+                2243.65,
+                1370.58,
+                2288.21
+              ]
+            },
+            {
+              "id": "p76w189",
+              "index": 189,
+              "text": "he",
+              "token": "he",
+              "box": [
+                1408.17,
+                2243.65,
+                1441.68,
+                2288.21
+              ]
+            },
+            {
+              "id": "p76w190",
+              "index": 190,
+              "text": "announced",
+              "token": "announced",
+              "box": [
+                1473.51,
+                2243.65,
+                1683.38,
+                2288.21
+              ]
+            }
+          ]
+        }
+      ],
+      "sourceLines": [
+        {
+          "lineIndex": 19,
+          "sourceBox": [
+            504.64,
+            2122.21,
+            1889.33,
+            2162.29
+          ],
+          "targetBox": [
+            574.6700000000001,
+            2102.21,
+            1959.3600000000001,
+            2142.29
+          ],
+          "sourceText": "to cash in by riding Bitcoins coattails that give it a bad name.",
+          "tokens": [
+            "to",
+            "cash",
+            "in",
+            "by",
+            "riding",
+            "bitcoins",
+            "coattails",
+            "that",
+            "give",
+            "it",
+            "a",
+            "bad",
+            "name"
+          ],
+          "strictInstructionTerms": [],
+          "contextTerms": [
+            "bitcoins"
+          ],
+          "words": [
+            {
+              "id": "p75w175",
+              "index": 175,
+              "text": "to",
+              "token": "to",
+              "box": [
+                504.64,
+                2122.21,
+                534.2,
+                2162.29
+              ],
+              "targetBox": [
+                1929.8,
+                2102.21,
+                1959.3600000000001,
+                2142.29
+              ]
+            },
+            {
+              "id": "p75w176",
+              "index": 176,
+              "text": "cash",
+              "token": "cash",
+              "box": [
+                565.11,
+                2122.21,
+                645.73,
+                2162.29
+              ],
+              "targetBox": [
+                1818.27,
+                2102.21,
+                1898.8899999999999,
+                2142.29
+              ]
+            },
+            {
+              "id": "p75w177",
+              "index": 177,
+              "text": "in",
+              "token": "in",
+              "box": [
+                682.01,
+                2122.21,
+                711.57,
+                2162.29
+              ],
+              "targetBox": [
+                1752.4299999999998,
+                2102.21,
+                1781.99,
+                2142.29
+              ]
+            },
+            {
+              "id": "p75w178",
+              "index": 178,
+              "text": "by",
+              "token": "by",
+              "box": [
+                741.47,
+                2122.21,
+                775.06,
+                2162.29
+              ],
+              "targetBox": [
+                1688.94,
+                2102.21,
+                1722.53,
+                2142.29
+              ]
+            },
+            {
+              "id": "p75w179",
+              "index": 179,
+              "text": "riding",
+              "token": "riding",
+              "box": [
+                806.98,
+                2122.21,
+                928.77,
+                2162.29
+              ],
+              "targetBox": [
+                1535.23,
+                2102.21,
+                1657.02,
+                2142.29
+              ]
+            },
+            {
+              "id": "p75w180",
+              "index": 180,
+              "text": "Bitcoins",
+              "token": "bitcoins",
+              "box": [
+                965.2,
+                2122.21,
+                1129.13,
+                2162.29
+              ],
+              "targetBox": [
+                1334.87,
+                2102.21,
+                1498.8,
+                2142.29
+              ]
+            },
+            {
+              "id": "p75w181",
+              "index": 181,
+              "text": "coattails",
+              "token": "coattails",
+              "box": [
+                1166.75,
+                2122.21,
+                1352.69,
+                2162.29
+              ],
+              "targetBox": [
+                1111.31,
+                2102.21,
+                1297.25,
+                2142.29
+              ]
+            },
+            {
+              "id": "p75w182",
+              "index": 182,
+              "text": "that",
+              "token": "that",
+              "box": [
+                1389.47,
+                2122.21,
+                1466.06,
+                2162.29
+              ],
+              "targetBox": [
+                997.94,
+                2102.21,
+                1074.53,
+                2142.29
+              ]
+            },
+            {
+              "id": "p75w183",
+              "index": 183,
+              "text": "give",
+              "token": "give",
+              "box": [
+                1500.33,
+                2122.21,
+                1570.47,
+                2162.29
+              ],
+              "targetBox": [
+                893.53,
+                2102.21,
+                963.6700000000001,
+                2142.29
+              ]
+            },
+            {
+              "id": "p75w184",
+              "index": 184,
+              "text": "it",
+              "token": "it",
+              "box": [
+                1605.14,
+                2122.21,
+                1629.32,
+                2162.29
+              ],
+              "targetBox": [
+                834.6800000000001,
+                2102.21,
+                858.8599999999999,
+                2142.29
+              ]
+            },
+            {
+              "id": "p75w185",
+              "index": 185,
+              "text": "a",
+              "token": "a",
+              "box": [
+                1656.53,
+                2122.21,
+                1669.13,
+                2162.29
+              ],
+              "targetBox": [
+                794.8699999999999,
+                2102.21,
+                807.47,
+                2142.29
+              ]
+            },
+            {
+              "id": "p75w186",
+              "index": 186,
+              "text": "bad",
+              "token": "bad",
+              "box": [
+                1695.84,
+                2122.21,
+                1754.04,
+                2162.29
+              ],
+              "targetBox": [
+                709.96,
+                2102.21,
+                768.1600000000001,
+                2142.29
+              ]
+            },
+            {
+              "id": "p75w187",
+              "index": 187,
+              "text": "name.",
+              "token": "name",
+              "box": [
+                1788.55,
+                2122.21,
+                1889.33,
+                2162.29
+              ],
+              "targetBox": [
+                574.6700000000001,
+                2102.21,
+                675.45,
+                2142.29
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 20,
+          "sourceBox": [
+            505.65,
+            2186.99,
+            1763.36,
+            2235.97
+          ],
+          "targetBox": [
+            700.6400000000001,
+            2166.99,
+            1958.35,
+            2215.97
+          ],
+          "sourceText": "Vitalik Buterin came up with the (MRERREIGStY epithet.",
+          "tokens": [
+            "vitalik",
+            "buterin",
+            "came",
+            "up",
+            "with",
+            "the",
+            "mrerreigsty",
+            "epithet"
+          ],
+          "strictInstructionTerms": [],
+          "contextTerms": [],
+          "words": [
+            {
+              "id": "p75w188",
+              "index": 188,
+              "text": "Vitalik",
+              "token": "vitalik",
+              "box": [
+                505.65,
+                2186.99,
+                657.32,
+                2235.97
+              ],
+              "targetBox": [
+                1806.6799999999998,
+                2166.99,
+                1958.35,
+                2215.97
+              ]
+            },
+            {
+              "id": "p75w189",
+              "index": 189,
+              "text": "Buterin",
+              "token": "buterin",
+              "box": [
+                696.12,
+                2186.99,
+                853.08,
+                2235.97
+              ],
+              "targetBox": [
+                1610.92,
+                2166.99,
+                1767.88,
+                2215.97
+              ]
+            },
+            {
+              "id": "p75w190",
+              "index": 190,
+              "text": "came",
+              "token": "came",
+              "box": [
+                893.64,
+                2186.99,
+                975.88,
+                2235.97
+              ],
+              "targetBox": [
+                1488.12,
+                2166.99,
+                1570.3600000000001,
+                2215.97
+              ]
+            },
+            {
+              "id": "p75w191",
+              "index": 191,
+              "text": "up",
+              "token": "up",
+              "box": [
+                1011.55,
+                2186.99,
+                1045.15,
+                2235.97
+              ],
+              "targetBox": [
+                1418.85,
+                2166.99,
+                1452.45,
+                2215.97
+              ]
+            },
+            {
+              "id": "p75w192",
+              "index": 192,
+              "text": "with",
+              "token": "with",
+              "box": [
+                1078.07,
+                2186.99,
+                1155.47,
+                2235.97
+              ],
+              "targetBox": [
+                1308.53,
+                2166.99,
+                1385.93,
+                2215.97
+              ]
+            },
+            {
+              "id": "p75w193",
+              "index": 193,
+              "text": "the",
+              "token": "the",
+              "box": [
+                1189.93,
+                2186.99,
+                1244.35,
+                2235.97
+              ],
+              "targetBox": [
+                1219.65,
+                2166.99,
+                1274.07,
+                2215.97
+              ]
+            },
+            {
+              "id": "p75w194",
+              "index": 194,
+              "text": "(MRERREIGStY",
+              "token": "mrerreigsty",
+              "box": [
+                1277.61,
+                2186.99,
+                1571.57,
+                2235.97
+              ],
+              "targetBox": [
+                892.4300000000001,
+                2166.99,
+                1186.39,
+                2215.97
+              ]
+            },
+            {
+              "id": "p75w195",
+              "index": 195,
+              "text": "epithet.",
+              "token": "epithet",
+              "box": [
+                1610.18,
+                2186.99,
+                1763.36,
+                2235.97
+              ],
+              "targetBox": [
+                700.6400000000001,
+                2166.99,
+                853.8199999999999,
+                2215.97
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 21,
+          "sourceBox": [
+            506.66,
+            2267.42,
+            1720.43,
+            2307.5
+          ],
+          "targetBox": [
+            743.5699999999999,
+            2247.42,
+            1957.34,
+            2287.5
+          ],
+          "sourceText": "Now he's slinging proof of stake at the mEthereum lab.",
+          "tokens": [
+            "now",
+            "hes",
+            "slinging",
+            "proof",
+            "of",
+            "stake",
+            "at",
+            "the",
+            "methereum",
+            "lab"
+          ],
+          "strictInstructionTerms": [],
+          "contextTerms": [],
+          "words": [
+            {
+              "id": "p75w196",
+              "index": 196,
+              "text": "Now",
+              "token": "now",
+              "box": [
+                506.66,
+                2267.42,
+                566.37,
+                2307.5
+              ],
+              "targetBox": [
+                1897.63,
+                2247.42,
+                1957.34,
+                2287.5
+              ]
+            },
+            {
+              "id": "p75w197",
+              "index": 197,
+              "text": "he's",
+              "token": "hes",
+              "box": [
+                602.4,
+                2267.42,
+                671.74,
+                2307.5
+              ],
+              "targetBox": [
+                1792.26,
+                2247.42,
+                1861.6,
+                2287.5
+              ]
+            },
+            {
+              "id": "p75w198",
+              "index": 198,
+              "text": "slinging",
+              "token": "slinging",
+              "box": [
+                706.2,
+                2267.42,
+                879.09,
+                2307.5
+              ],
+              "targetBox": [
+                1584.9099999999999,
+                2247.42,
+                1757.8,
+                2287.5
+              ]
+            },
+            {
+              "id": "p75w199",
+              "index": 199,
+              "text": "proof",
+              "token": "proof",
+              "box": [
+                915.82,
+                2267.42,
+                1014.91,
+                2307.5
+              ],
+              "targetBox": [
+                1449.0900000000001,
+                2247.42,
+                1548.1799999999998,
+                2287.5
+              ]
+            },
+            {
+              "id": "p75w200",
+              "index": 200,
+              "text": "of",
+              "token": "of",
+              "box": [
+                1049.85,
+                2267.42,
+                1079.42,
+                2307.5
+              ],
+              "targetBox": [
+                1384.58,
+                2247.42,
+                1414.15,
+                2287.5
+              ]
+            },
+            {
+              "id": "p75w201",
+              "index": 201,
+              "text": "stake",
+              "token": "stake",
+              "box": [
+                1111.32,
+                2267.42,
+                1212.1,
+                2307.5
+              ],
+              "targetBox": [
+                1251.9,
+                2247.42,
+                1352.68,
+                2287.5
+              ]
+            },
+            {
+              "id": "p75w202",
+              "index": 202,
+              "text": "at",
+              "token": "at",
+              "box": [
+                1248.38,
+                2267.42,
+                1276.6,
+                2307.5
+              ],
+              "targetBox": [
+                1187.4,
+                2247.42,
+                1215.62,
+                2287.5
+              ]
+            },
+            {
+              "id": "p75w203",
+              "index": 203,
+              "text": "the",
+              "token": "the",
+              "box": [
+                1304.82,
+                2267.42,
+                1359.99,
+                2307.5
+              ],
+              "targetBox": [
+                1104.01,
+                2247.42,
+                1159.18,
+                2287.5
+              ]
+            },
+            {
+              "id": "p75w204",
+              "index": 204,
+              "text": "mEthereum",
+              "token": "methereum",
+              "box": [
+                1394.51,
+                2267.42,
+                1613.1,
+                2307.5
+              ],
+              "targetBox": [
+                850.9000000000001,
+                2247.42,
+                1069.49,
+                2287.5
+              ]
+            },
+            {
+              "id": "p75w205",
+              "index": 205,
+              "text": "lab.",
+              "token": "lab",
+              "box": [
+                1653.51,
+                2267.42,
+                1720.43,
+                2307.5
+              ],
+              "targetBox": [
+                743.5699999999999,
+                2247.42,
+                810.49,
+                2287.5
+              ]
+            }
+          ]
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_line_band_trace/valid_75_to_76_small_jitter_best_O4_line_band.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "dx": -80,
+      "dy": -20,
+      "target": "B4",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "targetLineHitCount": 3,
+      "sourceLineHitCount": 0,
+      "sourceTargetLineOverlapCount": 0,
+      "sourceTargetLineOverlapArea": 0.0,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetContextTermHitCount": 3,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "targetContextTerms": [
+        "bitcoin",
+        "sell",
+        "volcanoes"
+      ],
+      "targetTextPreview": "he was going to tap his nation's volcanoes to mine / eis in bitcoin that he should sell / billions worth of future bitcoin earnings",
+      "sourceTextPreview": "",
+      "targetLines": [
+        {
+          "lineIndex": 26,
+          "box": [
+            486.45,
+            2320.76,
+            1579.86,
+            2360.87
+          ],
+          "center": [
+            1033.155,
+            2340.815
+          ],
+          "text": "he was going to tap his nation's volcanoes to mine",
+          "tokens": [
+            "he",
+            "was",
+            "going",
+            "to",
+            "tap",
+            "his",
+            "nations",
+            "volcanoes",
+            "to",
+            "mine"
+          ],
+          "words": [
+            {
+              "id": "p76w191",
+              "index": 191,
+              "text": "he",
+              "token": "he",
+              "box": [
+                486.45,
+                2320.76,
+                518.61,
+                2360.87
+              ]
+            },
+            {
+              "id": "p76w192",
+              "index": 192,
+              "text": "was",
+              "token": "was",
+              "box": [
+                550.78,
+                2320.76,
+                608.82,
+                2360.87
+              ]
+            },
+            {
+              "id": "p76w193",
+              "index": 193,
+              "text": "going",
+              "token": "going",
+              "box": [
+                645.26,
+                2320.76,
+                745.78,
+                2360.87
+              ]
+            },
+            {
+              "id": "p76w194",
+              "index": 194,
+              "text": "to",
+              "token": "to",
+              "box": [
+                779.95,
+                2320.76,
+                809.44,
+                2360.87
+              ]
+            },
+            {
+              "id": "p76w195",
+              "index": 195,
+              "text": "tap",
+              "token": "tap",
+              "box": [
+                839.26,
+                2320.76,
+                891.28,
+                2360.87
+              ]
+            },
+            {
+              "id": "p76w196",
+              "index": 196,
+              "text": "his",
+              "token": "his",
+              "box": [
+                924.69,
+                2320.76,
+                978.98,
+                2360.87
+              ]
+            },
+            {
+              "id": "p76w197",
+              "index": 197,
+              "text": "nation's",
+              "token": "nations",
+              "box": [
+                1013.15,
+                2320.76,
+                1171.29,
+                2360.87
+              ]
+            },
+            {
+              "id": "p76w198",
+              "index": 198,
+              "text": "volcanoes",
+              "token": "volcanoes",
+              "box": [
+                1207.14,
+                2320.76,
+                1402.54,
+                2360.87
+              ]
+            },
+            {
+              "id": "p76w199",
+              "index": 199,
+              "text": "to",
+              "token": "to",
+              "box": [
+                1439.33,
+                2320.76,
+                1468.82,
+                2360.87
+              ]
+            },
+            {
+              "id": "p76w200",
+              "index": 200,
+              "text": "mine",
+              "token": "mine",
+              "box": [
+                1498.64,
+                2320.76,
+                1579.86,
+                2360.87
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 27,
+          "box": [
+            561.83,
+            2393.42,
+            1439.33,
+            2433.53
+          ],
+          "center": [
+            1000.5799999999999,
+            2413.4750000000004
+          ],
+          "text": "eis in bitcoin that he should sell",
+          "tokens": [
+            "eis",
+            "in",
+            "bitcoin",
+            "that",
+            "he",
+            "should",
+            "sell"
+          ],
+          "words": [
+            {
+              "id": "p76w201",
+              "index": 201,
+              "text": "eis",
+              "token": "eis",
+              "box": [
+                561.83,
+                2393.42,
+                570.13,
+                2433.53
+              ]
+            },
+            {
+              "id": "p76w202",
+              "index": 202,
+              "text": "in",
+              "token": "in",
+              "box": [
+                742.76,
+                2393.42,
+                772.25,
+                2433.53
+              ]
+            },
+            {
+              "id": "p76w203",
+              "index": 203,
+              "text": "bitcoin",
+              "token": "bitcoin",
+              "box": [
+                803.07,
+                2393.42,
+                940.28,
+                2433.53
+              ]
+            },
+            {
+              "id": "p76w205",
+              "index": 205,
+              "text": "that",
+              "token": "that",
+              "box": [
+                1023.2,
+                2393.42,
+                1099.59,
+                2433.53
+              ]
+            },
+            {
+              "id": "p76w206",
+              "index": 206,
+              "text": "he",
+              "token": "he",
+              "box": [
+                1134.77,
+                2393.42,
+                1167.61,
+                2433.53
+              ]
+            },
+            {
+              "id": "p76w207",
+              "index": 207,
+              "text": "should",
+              "token": "should",
+              "box": [
+                1201.11,
+                2393.42,
+                1328.62,
+                2433.53
+              ]
+            },
+            {
+              "id": "p76w208",
+              "index": 208,
+              "text": "sell",
+              "token": "sell",
+              "box": [
+                1366.96,
+                2393.42,
+                1439.33,
+                2433.53
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 28,
+          "box": [
+            484.44,
+            2467.15,
+            1398.23,
+            2507.26
+          ],
+          "center": [
+            941.335,
+            2487.205
+          ],
+          "text": "billions worth of future bitcoin earnings",
+          "tokens": [
+            "billions",
+            "worth",
+            "of",
+            "future",
+            "bitcoin",
+            "earnings"
+          ],
+          "words": [
+            {
+              "id": "p76w209",
+              "index": 209,
+              "text": "billions",
+              "token": "billions",
+              "box": [
+                484.44,
+                2467.15,
+                650.62,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w210",
+              "index": 210,
+              "text": "worth",
+              "token": "worth",
+              "box": [
+                687.48,
+                2467.15,
+                793.86,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w211",
+              "index": 211,
+              "text": "of",
+              "token": "of",
+              "box": [
+                830.21,
+                2467.15,
+                860.36,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w212",
+              "index": 212,
+              "text": "future",
+              "token": "future",
+              "box": [
+                890.52,
+                2467.15,
+                1012.86,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w213",
+              "index": 213,
+              "text": "bitcoin",
+              "token": "bitcoin",
+              "box": [
+                1049.33,
+                2467.15,
+                1186.54,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w214",
+              "index": 214,
+              "text": "earnings",
+              "token": "earnings",
+              "box": [
+                1222.22,
+                2467.15,
+                1398.23,
+                2507.26
+              ]
+            }
+          ]
+        }
+      ],
+      "sourceLines": [],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_line_band_trace/valid_75_to_76_small_jitter_best_B4_line_band.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "dx": -80,
+      "dy": -20,
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "targetLineHitCount": 3,
+      "sourceLineHitCount": 3,
+      "sourceTargetLineOverlapCount": 3,
+      "sourceTargetLineOverlapArea": 68324.82480000002,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 2,
+      "targetContextTermHitCount": 2,
+      "strictInstructionTerms": [],
+      "contextTerms": [
+        "bitcoin",
+        "satoshi"
+      ],
+      "targetContextTerms": [
+        "bitcoin",
+        "imf"
+      ],
+      "targetTextPreview": "billions worth of future bitcoin earnings / collateralized to pay off the IMF / loan and get rid of those leeches. I tagged Mike",
+      "sourceTextPreview": "Go Bitcoin Toxic Maximalist, / the BSR of the whole Satoshi experience. / You wouldn't be digging blindly with your bare",
+      "targetLines": [
+        {
+          "lineIndex": 28,
+          "box": [
+            484.44,
+            2467.15,
+            1398.23,
+            2507.26
+          ],
+          "center": [
+            941.335,
+            2487.205
+          ],
+          "text": "billions worth of future bitcoin earnings",
+          "tokens": [
+            "billions",
+            "worth",
+            "of",
+            "future",
+            "bitcoin",
+            "earnings"
+          ],
+          "words": [
+            {
+              "id": "p76w209",
+              "index": 209,
+              "text": "billions",
+              "token": "billions",
+              "box": [
+                484.44,
+                2467.15,
+                650.62,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w210",
+              "index": 210,
+              "text": "worth",
+              "token": "worth",
+              "box": [
+                687.48,
+                2467.15,
+                793.86,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w211",
+              "index": 211,
+              "text": "of",
+              "token": "of",
+              "box": [
+                830.21,
+                2467.15,
+                860.36,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w212",
+              "index": 212,
+              "text": "future",
+              "token": "future",
+              "box": [
+                890.52,
+                2467.15,
+                1012.86,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w213",
+              "index": 213,
+              "text": "bitcoin",
+              "token": "bitcoin",
+              "box": [
+                1049.33,
+                2467.15,
+                1186.54,
+                2507.26
+              ]
+            },
+            {
+              "id": "p76w214",
+              "index": 214,
+              "text": "earnings",
+              "token": "earnings",
+              "box": [
+                1222.22,
+                2467.15,
+                1398.23,
+                2507.26
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 29,
+          "box": [
+            485.44,
+            2535.36,
+            1607.19,
+            2579.93
+          ],
+          "center": [
+            1046.315,
+            2557.645
+          ],
+          "text": "collateralized to pay off the IMF",
+          "tokens": [
+            "collateralized",
+            "to",
+            "pay",
+            "off",
+            "the",
+            "imf"
+          ],
+          "words": [
+            {
+              "id": "p76w215",
+              "index": 215,
+              "text": "collateralized",
+              "token": "collateralized",
+              "box": [
+                485.44,
+                2535.36,
+                788.47,
+                2579.93
+              ]
+            },
+            {
+              "id": "p76w216",
+              "index": 216,
+              "text": "to",
+              "token": "to",
+              "box": [
+                1219.2,
+                2535.36,
+                1248.69,
+                2579.93
+              ]
+            },
+            {
+              "id": "p76w217",
+              "index": 217,
+              "text": "pay",
+              "token": "pay",
+              "box": [
+                1278.51,
+                2535.36,
+                1334.3,
+                2579.93
+              ]
+            },
+            {
+              "id": "p76w218",
+              "index": 218,
+              "text": "off",
+              "token": "off",
+              "box": [
+                1367.97,
+                2535.36,
+                1419.23,
+                2579.93
+              ]
+            },
+            {
+              "id": "p76w219",
+              "index": 219,
+              "text": "the",
+              "token": "the",
+              "box": [
+                1450.39,
+                2535.36,
+                1504.67,
+                2579.93
+              ]
+            },
+            {
+              "id": "p76w220",
+              "index": 220,
+              "text": "IMF",
+              "token": "imf",
+              "box": [
+                1540.85,
+                2535.36,
+                1607.19,
+                2579.93
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 30,
+          "box": [
+            485.44,
+            2609.09,
+            1542.06,
+            2653.65
+          ],
+          "center": [
+            1013.75,
+            2631.37
+          ],
+          "text": "loan and get rid of those leeches. I tagged Mike",
+          "tokens": [
+            "loan",
+            "and",
+            "get",
+            "rid",
+            "of",
+            "those",
+            "leeches",
+            "i",
+            "tagged",
+            "mike"
+          ],
+          "words": [
+            {
+              "id": "p76w221",
+              "index": 221,
+              "text": "loan",
+              "token": "loan",
+              "box": [
+                485.44,
+                2609.09,
+                568.27,
+                2653.65
+              ]
+            },
+            {
+              "id": "p76w222",
+              "index": 222,
+              "text": "and",
+              "token": "and",
+              "box": [
+                605.06,
+                2609.09,
+                663.1,
+                2653.65
+              ]
+            },
+            {
+              "id": "p76w223",
+              "index": 223,
+              "text": "get",
+              "token": "get",
+              "box": [
+                698.53,
+                2609.09,
+                750.56,
+                2653.65
+              ]
+            },
+            {
+              "id": "p76w224",
+              "index": 224,
+              "text": "rid",
+              "token": "rid",
+              "box": [
+                782.97,
+                2609.09,
+                832.72,
+                2653.65
+              ]
+            },
+            {
+              "id": "p76w225",
+              "index": 225,
+              "text": "of",
+              "token": "of",
+              "box": [
+                864.39,
+                2609.09,
+                894.54,
+                2653.65
+              ]
+            },
+            {
+              "id": "p76w226",
+              "index": 226,
+              "text": "those",
+              "token": "those",
+              "box": [
+                923.69,
+                2609.09,
+                1024.2,
+                2653.65
+              ]
+            },
+            {
+              "id": "p76w227",
+              "index": 227,
+              "text": "leeches.",
+              "token": "leeches",
+              "box": [
+                1060.39,
+                2609.09,
+                1221.21,
+                2653.65
+              ]
+            },
+            {
+              "id": "p76w228",
+              "index": 228,
+              "text": "I",
+              "token": "i",
+              "box": [
+                1258.41,
+                2609.09,
+                1267.45,
+                2653.65
+              ]
+            },
+            {
+              "id": "p76w229",
+              "index": 229,
+              "text": "tagged",
+              "token": "tagged",
+              "box": [
+                1291.58,
+                2609.09,
+                1420.81,
+                2653.65
+              ]
+            },
+            {
+              "id": "p76w230",
+              "index": 230,
+              "text": "Mike",
+              "token": "mike",
+              "box": [
+                1458.43,
+                2609.09,
+                1542.06,
+                2653.65
+              ]
+            }
+          ]
+        }
+      ],
+      "sourceLines": [
+        {
+          "lineIndex": 24,
+          "sourceBox": [
+            506.66,
+            2478.46,
+            1274.08,
+            2527.45
+          ],
+          "targetBox": [
+            1189.92,
+            2458.46,
+            1957.34,
+            2507.45
+          ],
+          "sourceText": "Go Bitcoin Toxic Maximalist,",
+          "tokens": [
+            "go",
+            "bitcoin",
+            "toxic",
+            "maximalist"
+          ],
+          "strictInstructionTerms": [],
+          "contextTerms": [
+            "bitcoin"
+          ],
+          "words": [
+            {
+              "id": "p75w213",
+              "index": 213,
+              "text": "Go",
+              "token": "go",
+              "box": [
+                506.66,
+                2478.46,
+                546.97,
+                2527.45
+              ],
+              "targetBox": [
+                1917.03,
+                2458.46,
+                1957.34,
+                2507.45
+              ]
+            },
+            {
+              "id": "p75w214",
+              "index": 214,
+              "text": "Bitcoin",
+              "token": "bitcoin",
+              "box": [
+                586.27,
+                2478.46,
+                758.23,
+                2527.45
+              ],
+              "targetBox": [
+                1705.77,
+                2458.46,
+                1877.73,
+                2507.45
+              ]
+            },
+            {
+              "id": "p75w215",
+              "index": 215,
+              "text": "Toxic",
+              "token": "toxic",
+              "box": [
+                802.94,
+                2478.46,
+                924.72,
+                2527.45
+              ],
+              "targetBox": [
+                1539.28,
+                2458.46,
+                1661.06,
+                2507.45
+              ]
+            },
+            {
+              "id": "p75w216",
+              "index": 216,
+              "text": "Maximalist,",
+              "token": "maximalist",
+              "box": [
+                969.23,
+                2478.46,
+                1274.08,
+                2527.45
+              ],
+              "targetBox": [
+                1189.92,
+                2458.46,
+                1494.77,
+                2507.45
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 25,
+          "sourceBox": [
+            506.66,
+            2552.13,
+            1492.1,
+            2601.12
+          ],
+          "targetBox": [
+            971.9000000000001,
+            2532.13,
+            1957.34,
+            2581.12
+          ],
+          "sourceText": "the BSR of the whole Satoshi experience.",
+          "tokens": [
+            "the",
+            "bsr",
+            "of",
+            "the",
+            "whole",
+            "satoshi",
+            "experience"
+          ],
+          "strictInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "words": [
+            {
+              "id": "p75w217",
+              "index": 217,
+              "text": "the",
+              "token": "the",
+              "box": [
+                506.66,
+                2552.13,
+                560.32,
+                2601.12
+              ],
+              "targetBox": [
+                1903.6799999999998,
+                2532.13,
+                1957.34,
+                2581.12
+              ]
+            },
+            {
+              "id": "p75w218",
+              "index": 218,
+              "text": "BSR",
+              "token": "bsr",
+              "box": [
+                594.33,
+                2552.13,
+                728.87,
+                2601.12
+              ],
+              "targetBox": [
+                1735.13,
+                2532.13,
+                1869.67,
+                2581.12
+              ]
+            },
+            {
+              "id": "p75w219",
+              "index": 219,
+              "text": "of",
+              "token": "of",
+              "box": [
+                786.82,
+                2552.13,
+                817.05,
+                2601.12
+              ],
+              "targetBox": [
+                1646.95,
+                2532.13,
+                1677.1799999999998,
+                2581.12
+              ]
+            },
+            {
+              "id": "p75w220",
+              "index": 220,
+              "text": "the",
+              "token": "the",
+              "box": [
+                846.28,
+                2552.13,
+                900.7,
+                2601.12
+              ],
+              "targetBox": [
+                1563.3,
+                2532.13,
+                1617.72,
+                2581.12
+              ]
+            },
+            {
+              "id": "p75w221",
+              "index": 221,
+              "text": "whole",
+              "token": "whole",
+              "box": [
+                934.96,
+                2552.13,
+                1037.42,
+                2601.12
+              ],
+              "targetBox": [
+                1426.58,
+                2532.13,
+                1529.04,
+                2581.12
+              ]
+            },
+            {
+              "id": "p75w222",
+              "index": 222,
+              "text": "Satoshi",
+              "token": "satoshi",
+              "box": [
+                1074.04,
+                2552.13,
+                1221.3,
+                2601.12
+              ],
+              "targetBox": [
+                1242.7,
+                2532.13,
+                1389.96,
+                2581.12
+              ]
+            },
+            {
+              "id": "p75w223",
+              "index": 223,
+              "text": "experience.",
+              "token": "experience",
+              "box": [
+                1257.45,
+                2552.13,
+                1492.1,
+                2601.12
+              ],
+              "targetBox": [
+                971.9000000000001,
+                2532.13,
+                1206.55,
+                2581.12
+              ]
+            }
+          ]
+        },
+        {
+          "lineIndex": 26,
+          "sourceBox": [
+            506.66,
+            2629.18,
+            1633.76,
+            2673.71
+          ],
+          "targetBox": [
+            830.24,
+            2609.18,
+            1957.34,
+            2653.71
+          ],
+          "sourceText": "You wouldn't be digging blindly with your bare",
+          "tokens": [
+            "you",
+            "wouldnt",
+            "be",
+            "digging",
+            "blindly",
+            "with",
+            "your",
+            "bare"
+          ],
+          "strictInstructionTerms": [],
+          "contextTerms": [],
+          "words": [
+            {
+              "id": "p75w224",
+              "index": 224,
+              "text": "You",
+              "token": "you",
+              "box": [
+                506.66,
+                2629.18,
+                568.64,
+                2673.71
+              ],
+              "targetBox": [
+                1895.3600000000001,
+                2609.18,
+                1957.34,
+                2653.71
+              ]
+            },
+            {
+              "id": "p75w225",
+              "index": 225,
+              "text": "wouldn't",
+              "token": "wouldnt",
+              "box": [
+                605.42,
+                2629.18,
+                790.85,
+                2673.71
+              ],
+              "targetBox": [
+                1673.15,
+                2609.18,
+                1858.58,
+                2653.71
+              ]
+            },
+            {
+              "id": "p75w226",
+              "index": 226,
+              "text": "be",
+              "token": "be",
+              "box": [
+                829.15,
+                2629.18,
+                864.08,
+                2673.71
+              ],
+              "targetBox": [
+                1599.92,
+                2609.18,
+                1634.85,
+                2653.71
+              ]
+            },
+            {
+              "id": "p75w227",
+              "index": 227,
+              "text": "digging",
+              "token": "digging",
+              "box": [
+                898.68,
+                2629.18,
+                1060.94,
+                2673.71
+              ],
+              "targetBox": [
+                1403.06,
+                2609.18,
+                1565.3200000000002,
+                2653.71
+              ]
+            },
+            {
+              "id": "p75w228",
+              "index": 228,
+              "text": "blindly",
+              "token": "blindly",
+              "box": [
+                1099.23,
+                2629.18,
+                1260.61,
+                2673.71
+              ],
+              "targetBox": [
+                1203.39,
+                2609.18,
+                1364.77,
+                2653.71
+              ]
+            },
+            {
+              "id": "p75w229",
+              "index": 229,
+              "text": "with",
+              "token": "with",
+              "box": [
+                1299.78,
+                2629.18,
+                1385.24,
+                2673.71
+              ],
+              "targetBox": [
+                1078.76,
+                2609.18,
+                1164.22,
+                2653.71
+              ]
+            },
+            {
+              "id": "p75w230",
+              "index": 230,
+              "text": "your",
+              "token": "your",
+              "box": [
+                1422.73,
+                2629.18,
+                1509.8,
+                2673.71
+              ],
+              "targetBox": [
+                954.2,
+                2609.18,
+                1041.27,
+                2653.71
+              ]
+            },
+            {
+              "id": "p75w231",
+              "index": 231,
+              "text": "bare",
+              "token": "bare",
+              "box": [
+                1546.69,
+                2629.18,
+                1633.76,
+                2673.71
+              ],
+              "targetBox": [
+                830.24,
+                2609.18,
+                917.31,
+                2653.71
+              ]
+            }
+          ]
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_line_band_trace/valid_75_to_76_small_jitter_best_G5_line_band.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "dx": -80,
+      "dy": -20,
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "targetLineHitCount": 1,
+      "sourceLineHitCount": 1,
+      "sourceTargetLineOverlapCount": 1,
+      "sourceTargetLineOverlapArea": 29096.07599999995,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "targetContextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "targetContextTerms": [],
+      "targetTextPreview": "Maybe because he's a siukbeodmensertslveaarty",
+      "sourceTextPreview": "are easy listening for the gullible and unloved.",
+      "targetLines": [
+        {
+          "lineIndex": 34,
+          "box": [
+            487.45,
+            2897.06,
+            1620.98,
+            2981.74
+          ],
+          "center": [
+            1054.215,
+            2939.3999999999996
+          ],
+          "text": "Maybe because he's a siukbeodmensertslveaarty",
+          "tokens": [
+            "maybe",
+            "because",
+            "hes",
+            "a",
+            "siukbeodmensertslveaarty"
+          ],
+          "words": [
+            {
+              "id": "p76w260",
+              "index": 260,
+              "text": "Maybe",
+              "token": "maybe",
+              "box": [
+                487.45,
+                2897.06,
+                614.78,
+                2981.74
+              ]
+            },
+            {
+              "id": "p76w261",
+              "index": 261,
+              "text": "because",
+              "token": "because",
+              "box": [
+                659.33,
+                2897.06,
+                840.52,
+                2981.74
+              ]
+            },
+            {
+              "id": "p76w262",
+              "index": 262,
+              "text": "he's",
+              "token": "hes",
+              "box": [
+                886.5,
+                2897.06,
+                970.13,
+                2981.74
+              ]
+            },
+            {
+              "id": "p76w263",
+              "index": 263,
+              "text": "a",
+              "token": "a",
+              "box": [
+                1012.14,
+                2897.06,
+                1026.21,
+                2981.74
+              ]
+            },
+            {
+              "id": "p76w264",
+              "index": 264,
+              "text": "siukbeodmensertslveaarty",
+              "token": "siukbeodmensertslveaarty",
+              "box": [
+                1059.39,
+                2897.06,
+                1620.98,
+                2981.74
+              ]
+            }
+          ]
+        }
+      ],
+      "sourceLines": [
+        {
+          "lineIndex": 30,
+          "sourceBox": [
+            507.66,
+            2924.04,
+            1568.97,
+            2964.12
+          ],
+          "targetBox": [
+            895.03,
+            2904.04,
+            1956.34,
+            2944.12
+          ],
+          "sourceText": "are easy listening for the gullible and unloved.",
+          "tokens": [
+            "are",
+            "easy",
+            "listening",
+            "for",
+            "the",
+            "gullible",
+            "and",
+            "unloved"
+          ],
+          "strictInstructionTerms": [],
+          "contextTerms": [],
+          "words": [
+            {
+              "id": "p75w260",
+              "index": 260,
+              "text": "are",
+              "token": "are",
+              "box": [
+                507.66,
+                2924.04,
+                560.58,
+                2964.12
+              ],
+              "targetBox": [
+                1903.42,
+                2904.04,
+                1956.34,
+                2944.12
+              ]
+            },
+            {
+              "id": "p75w261",
+              "index": 261,
+              "text": "easy",
+              "token": "easy",
+              "box": [
+                594.33,
+                2924.04,
+                673.34,
+                2964.12
+              ],
+              "targetBox": [
+                1790.6599999999999,
+                2904.04,
+                1869.67,
+                2944.12
+              ]
+            },
+            {
+              "id": "p75w262",
+              "index": 262,
+              "text": "listening",
+              "token": "listening",
+              "box": [
+                708.21,
+                2924.04,
+                901.41,
+                2964.12
+              ],
+              "targetBox": [
+                1562.5900000000001,
+                2904.04,
+                1755.79,
+                2944.12
+              ]
+            },
+            {
+              "id": "p75w263",
+              "index": 263,
+              "text": "for",
+              "token": "for",
+              "box": [
+                937.99,
+                2924.04,
+                986.36,
+                2964.12
+              ],
+              "targetBox": [
+                1477.6399999999999,
+                2904.04,
+                1526.01,
+                2944.12
+              ]
+            },
+            {
+              "id": "p75w264",
+              "index": 264,
+              "text": "the",
+              "token": "the",
+              "box": [
+                1016.59,
+                2924.04,
+                1070.26,
+                2964.12
+              ],
+              "targetBox": [
+                1393.74,
+                2904.04,
+                1447.4099999999999,
+                2944.12
+              ]
+            },
+            {
+              "id": "p75w265",
+              "index": 265,
+              "text": "gullible",
+              "token": "gullible",
+              "box": [
+                1104.27,
+                2924.04,
+                1270.0,
+                2964.12
+              ],
+              "targetBox": [
+                1194.0,
+                2904.04,
+                1359.73,
+                2944.12
+              ]
+            },
+            {
+              "id": "p75w266",
+              "index": 266,
+              "text": "and",
+              "token": "and",
+              "box": [
+                1307.84,
+                2924.04,
+                1366.04,
+                2964.12
+              ],
+              "targetBox": [
+                1097.96,
+                2904.04,
+                1156.16,
+                2944.12
+              ]
+            },
+            {
+              "id": "p75w267",
+              "index": 267,
+              "text": "unloved.",
+              "token": "unloved",
+              "box": [
+                1400.56,
+                2924.04,
+                1568.97,
+                2964.12
+              ],
+              "targetBox": [
+                895.03,
+                2904.04,
+                1063.44,
+                2944.12
+              ]
+            }
+          ]
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_line_band_trace/valid_75_to_76_small_jitter_best_O5_line_band.jpg"
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/current_scan_valid_leaf_line_band_trace/current_scan_valid_leaf_line_band_trace_sheet.jpg",
+  "nextMove": "Do not extract from valid-leaf projected source line bands; require source/clue wording that names transform, unit, and order."
+}

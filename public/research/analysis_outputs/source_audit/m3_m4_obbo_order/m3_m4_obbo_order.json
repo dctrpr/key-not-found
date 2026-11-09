@@ -1,0 +1,183 @@
+{
+  "createdAt": "2026-05-20T19:34:07",
+  "scope": "bounded M3/M4 ordering audit over the four page-76 OBBO anchors; no key derivation",
+  "sources": {
+    "marks": "analysis_outputs/source_audit/lower_page76_mark_pointers.json",
+    "anchors": "analysis_outputs/source_audit/page76_anchor_adjacency_units/page76_anchor_adjacency_units.json"
+  },
+  "overlay": "analysis_outputs/source_audit/m3_m4_obbo_order/m3_m4_obbo_order_overlay.jpg",
+  "m3": {
+    "box": [
+      2172,
+      2619,
+      2544,
+      2884
+    ],
+    "center": [
+      2358.0,
+      2751.5
+    ],
+    "axis": {
+      "angleDeg": 173.75,
+      "vector": [
+        -0.994,
+        0.1089
+      ],
+      "blackPixels": 27335
+    }
+  },
+  "m4": {
+    "box": [
+      1827,
+      3003,
+      2120,
+      3182
+    ],
+    "center": [
+      1973.5,
+      3092.5
+    ],
+    "axis": {
+      "angleDeg": -168.84,
+      "vector": [
+        -0.9811,
+        -0.1935
+      ],
+      "blackPixels": 18076
+    }
+  },
+  "axisIntersectionVertex": [
+    999.28,
+    2900.36
+  ],
+  "anchorRecords": [
+    {
+      "id": "buying_dip",
+      "label": "buying the dip",
+      "color": "orange",
+      "box": [
+        1328,
+        2160,
+        1760,
+        2226
+      ],
+      "center": [
+        1544.0,
+        2193.0
+      ],
+      "distanceToM3Center": 987.18,
+      "distanceToM4Center": 996.78,
+      "distanceToM3Axis": 643.83,
+      "distanceToM4Axis": 799.39,
+      "projectionOnM3Axis": 748.33,
+      "projectionOnM4Axis": 595.44,
+      "insideM3M4Wedge": false,
+      "minAxisDistance": 643.83,
+      "minCenterDistance": 987.18
+    },
+    {
+      "id": "one_billion",
+      "label": "$1 billion",
+      "color": "black",
+      "box": [
+        430,
+        2400,
+        690,
+        2447
+      ],
+      "center": [
+        560.0,
+        2423.5
+      ],
+      "distanceToM3Center": 1827.67,
+      "distanceToM4Center": 1563.82,
+      "distanceToM3Axis": 521.86,
+      "distanceToM4Axis": 382.84,
+      "projectionOnM3Axis": 1751.58,
+      "projectionOnM4Axis": 1516.24,
+      "insideM3M4Wedge": false,
+      "minAxisDistance": 382.84,
+      "minCenterDistance": 1563.82
+    },
+    {
+      "id": "volcano_bonds",
+      "label": "Volcano Bonds",
+      "color": "black",
+      "box": [
+        795,
+        2544,
+        1196,
+        2592
+      ],
+      "center": [
+        995.5,
+        2568.0
+      ],
+      "distanceToM3Center": 1374.8,
+      "distanceToM4Center": 1109.77,
+      "distanceToM3Axis": 330.79,
+      "distanceToM4Axis": 325.34,
+      "projectionOnM3Axis": 1334.41,
+      "projectionOnM4Axis": 1061.01,
+      "insideM3M4Wedge": false,
+      "minAxisDistance": 325.34,
+      "minCenterDistance": 1109.77
+    },
+    {
+      "id": "shitcoiner_heart",
+      "label": "shitcoiner at heart",
+      "color": "orange",
+      "box": [
+        1040,
+        2932,
+        1661,
+        2982
+      ],
+      "center": [
+        1350.5,
+        2957.0
+      ],
+      "distanceToM3Center": 1028.24,
+      "distanceToM4Center": 637.57,
+      "distanceToM3Axis": 94.56,
+      "distanceToM4Axis": 12.39,
+      "projectionOnM3Axis": 1023.89,
+      "projectionOnM4Axis": 637.44,
+      "insideM3M4Wedge": true,
+      "minAxisDistance": 12.39,
+      "minCenterDistance": 637.57
+    }
+  ],
+  "streams": {
+    "visualTopToBottom": "buying the dip | $1 billion | Volcano Bonds | shitcoiner at heart",
+    "nearestM3Center": "buying the dip | shitcoiner at heart | Volcano Bonds | $1 billion",
+    "nearestM4Center": "shitcoiner at heart | buying the dip | Volcano Bonds | $1 billion",
+    "nearestAnyCenter": "shitcoiner at heart | buying the dip | Volcano Bonds | $1 billion",
+    "nearestM3Axis": "shitcoiner at heart | Volcano Bonds | $1 billion | buying the dip",
+    "nearestM4Axis": "shitcoiner at heart | Volcano Bonds | $1 billion | buying the dip",
+    "nearestAnyAxis": "shitcoiner at heart | Volcano Bonds | $1 billion | buying the dip",
+    "m3ProjectionForward": "buying the dip | shitcoiner at heart | Volcano Bonds | $1 billion",
+    "m4ProjectionForward": "buying the dip | shitcoiner at heart | Volcano Bonds | $1 billion",
+    "visualTopToBottomInitials": "btd 1b vb sah",
+    "nearestM3CenterInitials": "btd sah vb 1b",
+    "nearestM4CenterInitials": "sah btd vb 1b",
+    "nearestAnyCenterInitials": "sah btd vb 1b",
+    "nearestM3AxisInitials": "sah vb 1b btd",
+    "nearestM4AxisInitials": "sah vb 1b btd",
+    "nearestAnyAxisInitials": "sah vb 1b btd",
+    "m3ProjectionForwardInitials": "btd sah vb 1b",
+    "m4ProjectionForwardInitials": "btd sah vb 1b",
+    "insideWedge": "shitcoiner at heart",
+    "insideWedgeInitials": "sah"
+  },
+  "instructionHits": {},
+  "assessment": [
+    "M3/M4 do not order all four O-B-B-O anchors.",
+    "The M3/M4 wedge selects only the O5 endpoint (`shitcoiner at heart`) among the four anchors.",
+    "Distance and projection rankings are dominated by geometry around the lower-right endpoint; they do not produce an instruction-like sequence.",
+    "G5/Volcano Bonds is not chosen by the M3/M4 wedge; it remains part of the p78 frame/G5/O5 path, not the standalone mark path.",
+    "M3/M4 should stay classified as endpoint/bracket evidence for O5, not as the final extraction-order rule."
+  ],
+  "decision": "Do not use M3/M4 as an OBBO ordering selector; keep them as O5 endpoint/bracket evidence.",
+  "nextMove": "Return to the p78 frame/G5/O5 source-registration path and ask what external/source rule supplies the extraction unit."
+}

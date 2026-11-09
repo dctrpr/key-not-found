@@ -1,0 +1,449 @@
+{
+  "createdAt": "2026-05-24T15:30:41",
+  "scope": {
+    "articlePages": [
+      76,
+      78
+    ],
+    "method": "Assign locked active boxes to nearest OCR body line on repeated OVERDOSE pages; check row order and line text.",
+    "excluded": [
+      "OCR-to-key extraction",
+      "private-key candidate generation",
+      "hash-to-key checks",
+      "seed/WIF/address checks",
+      "BIP39 checks",
+      "broad brute force"
+    ]
+  },
+  "inputs": {
+    "pdfs": [
+      "magazine.pdf",
+      "keyser bitcoin .pdf",
+      "analysis_outputs/external_clues/google_drive_article_download.pdf"
+    ],
+    "activeIndexSlotControl": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "bodyBasisReflection": "analysis_outputs/source_audit/current_pdf_overdose_body_basis_reflection_gate/current_pdf_overdose_body_basis_reflection_gate.json",
+    "bodyBasisReflectionFingerprint": "pdfs=3|basisRows=4|variants=8|boxRows=32|inPage=10|textRows=2|targetRows=0|strictRows=0|allFourVariants=0|activeOrderVariants=0|candidates=0|sourceR3=0|triggers=0/9|selectors=0",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "summary": {
+    "pdfCount": 3,
+    "bodyLatticePageCount": 4,
+    "mappedTargetRowCount": 16,
+    "ownTargetLineHitCount": 0,
+    "strictMappedLineCount": 0,
+    "allFourOwnTargetVariantCount": 0,
+    "activeRowOrderVariantCount": 4,
+    "bodyLatticeCandidateCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "fingerprint": "pdfs=3|latticePages=4|mappedRows=16|ownTargetRows=0|strictRows=0|allFourVariants=0|activeOrderVariants=4|candidates=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "records": [
+    {
+      "pdf": "magazine.pdf",
+      "bodyLatticeRows": [],
+      "mappedTargetRows": [],
+      "variantRows": []
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "bodyLatticeRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "bodyLineCount": 45,
+          "firstBodyLineText": "Get some toxicity. Get some bitcoin. Open your heart to",
+          "medianLinePitchPt": 16.3005
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "bodyLineCount": 46,
+          "firstBodyLineText": "We've never had an economy and a money",
+          "medianLinePitchPt": 12.9335
+        }
+      ],
+      "mappedTargetRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "target": "O4",
+          "expectedPhrase": "buying the dip",
+          "targetPdfCenter": [
+            372.9057,
+            534.0662
+          ],
+          "nearestBodyRowIndex": 35,
+          "nearestLineDistancePt": 3.0383,
+          "nearestLineColumnFraction": 120.2199,
+          "nearestLineTargetIds": [],
+          "ownTargetLineHit": false,
+          "nearestLineStrictHits": [],
+          "nearestLineText": "eis"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "target": "B4",
+          "expectedPhrase": "$1 billion",
+          "targetPdfCenter": [
+            144.6792,
+            587.5699
+          ],
+          "nearestBodyRowIndex": 40,
+          "nearestLineDistancePt": 1.5248,
+          "nearestLineColumnFraction": 0.1111,
+          "nearestLineTargetIds": [],
+          "ownTargetLineHit": false,
+          "nearestLineStrictHits": [],
+          "nearestLineText": "loan and get rid of those leeches. I tagged Mike"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "target": "G5",
+          "expectedPhrase": "Volcano Bonds",
+          "targetPdfCenter": [
+            243.3962,
+            623.1176
+          ],
+          "nearestBodyRowIndex": 42,
+          "nearestLineDistancePt": 3.9331,
+          "nearestLineColumnFraction": 0.4847,
+          "nearestLineTargetIds": [],
+          "ownTargetLineHit": false,
+          "nearestLineStrictHits": [],
+          "nearestLineText": "bunch to his Wall Street crony pals, but so far he"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "target": "O5",
+          "expectedPhrase": "shitcoiner at heart",
+          "targetPdfCenter": [
+            323.7736,
+            717.5074
+          ],
+          "nearestBodyRowIndex": 44,
+          "nearestLineDistancePt": 62.2779,
+          "nearestLineColumnFraction": 0.7635,
+          "nearestLineTargetIds": [],
+          "ownTargetLineHit": false,
+          "nearestLineStrictHits": [],
+          "nearestLineText": "Maybe because he's a siukbeodmensertslveaarty"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "target": "O4",
+          "expectedPhrase": "buying the dip",
+          "targetPdfCenter": [
+            372.9057,
+            534.0662
+          ],
+          "nearestBodyRowIndex": 39,
+          "nearestLineDistancePt": 40.9583,
+          "nearestLineColumnFraction": 43.7366,
+          "nearestLineTargetIds": [],
+          "ownTargetLineHit": false,
+          "nearestLineStrictHits": [],
+          "nearestLineText": "a\u00e9"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "target": "B4",
+          "expectedPhrase": "$1 billion",
+          "targetPdfCenter": [
+            144.6792,
+            587.5699
+          ],
+          "nearestBodyRowIndex": 41,
+          "nearestLineDistancePt": 4.1852,
+          "nearestLineColumnFraction": -0.2853,
+          "nearestLineTargetIds": [],
+          "ownTargetLineHit": false,
+          "nearestLineStrictHits": [],
+          "nearestLineText": "peste aed"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "target": "G5",
+          "expectedPhrase": "Volcano Bonds",
+          "targetPdfCenter": [
+            243.3962,
+            623.1176
+          ],
+          "nearestBodyRowIndex": 45,
+          "nearestLineDistancePt": 5.2402,
+          "nearestLineColumnFraction": 1.3798,
+          "nearestLineTargetIds": [],
+          "ownTargetLineHit": false,
+          "nearestLineStrictHits": [],
+          "nearestLineText": "Ca nate a ware"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "target": "O5",
+          "expectedPhrase": "shitcoiner at heart",
+          "targetPdfCenter": [
+            323.7736,
+            717.5074
+          ],
+          "nearestBodyRowIndex": 45,
+          "nearestLineDistancePt": 99.6299,
+          "nearestLineColumnFraction": 2.1917,
+          "nearestLineTargetIds": [],
+          "ownTargetLineHit": false,
+          "nearestLineStrictHits": [],
+          "nearestLineText": "Ca nate a ware"
+        }
+      ],
+      "variantRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "mappedTargetRows": 4,
+          "ownTargetLineHitCount": 0,
+          "strictMappedLineCount": 0,
+          "unionNearestLineTargetIds": [],
+          "rowOrder": [
+            "O4",
+            "B4",
+            "G5",
+            "O5"
+          ],
+          "allFourOwnTargetLines": false,
+          "activeRowOrder": true,
+          "candidate": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "mappedTargetRows": 4,
+          "ownTargetLineHitCount": 0,
+          "strictMappedLineCount": 0,
+          "unionNearestLineTargetIds": [],
+          "rowOrder": [
+            "O4",
+            "B4",
+            "G5",
+            "O5"
+          ],
+          "allFourOwnTargetLines": false,
+          "activeRowOrder": true,
+          "candidate": false
+        }
+      ]
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "bodyLatticeRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "bodyLineCount": 45,
+          "firstBodyLineText": "Get some toxicity. Get some bitcoin. Open your heart to",
+          "medianLinePitchPt": 16.3005
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "bodyLineCount": 46,
+          "firstBodyLineText": "We've never had an economy and a money",
+          "medianLinePitchPt": 12.9335
+        }
+      ],
+      "mappedTargetRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "target": "O4",
+          "expectedPhrase": "buying the dip",
+          "targetPdfCenter": [
+            372.9057,
+            534.0662
+          ],
+          "nearestBodyRowIndex": 35,
+          "nearestLineDistancePt": 3.0383,
+          "nearestLineColumnFraction": 120.2199,
+          "nearestLineTargetIds": [],
+          "ownTargetLineHit": false,
+          "nearestLineStrictHits": [],
+          "nearestLineText": "eis"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "target": "B4",
+          "expectedPhrase": "$1 billion",
+          "targetPdfCenter": [
+            144.6792,
+            587.5699
+          ],
+          "nearestBodyRowIndex": 40,
+          "nearestLineDistancePt": 1.5248,
+          "nearestLineColumnFraction": 0.1111,
+          "nearestLineTargetIds": [],
+          "ownTargetLineHit": false,
+          "nearestLineStrictHits": [],
+          "nearestLineText": "loan and get rid of those leeches. I tagged Mike"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "target": "G5",
+          "expectedPhrase": "Volcano Bonds",
+          "targetPdfCenter": [
+            243.3962,
+            623.1176
+          ],
+          "nearestBodyRowIndex": 42,
+          "nearestLineDistancePt": 3.9331,
+          "nearestLineColumnFraction": 0.4847,
+          "nearestLineTargetIds": [],
+          "ownTargetLineHit": false,
+          "nearestLineStrictHits": [],
+          "nearestLineText": "bunch to his Wall Street crony pals, but so far he"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "target": "O5",
+          "expectedPhrase": "shitcoiner at heart",
+          "targetPdfCenter": [
+            323.7736,
+            717.5074
+          ],
+          "nearestBodyRowIndex": 44,
+          "nearestLineDistancePt": 62.2779,
+          "nearestLineColumnFraction": 0.7635,
+          "nearestLineTargetIds": [],
+          "ownTargetLineHit": false,
+          "nearestLineStrictHits": [],
+          "nearestLineText": "Maybe because he's a siukbeodmensertslveaarty"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "target": "O4",
+          "expectedPhrase": "buying the dip",
+          "targetPdfCenter": [
+            372.9057,
+            534.0662
+          ],
+          "nearestBodyRowIndex": 39,
+          "nearestLineDistancePt": 40.9583,
+          "nearestLineColumnFraction": 43.7366,
+          "nearestLineTargetIds": [],
+          "ownTargetLineHit": false,
+          "nearestLineStrictHits": [],
+          "nearestLineText": "a\u00e9"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "target": "B4",
+          "expectedPhrase": "$1 billion",
+          "targetPdfCenter": [
+            144.6792,
+            587.5699
+          ],
+          "nearestBodyRowIndex": 41,
+          "nearestLineDistancePt": 4.1852,
+          "nearestLineColumnFraction": -0.2853,
+          "nearestLineTargetIds": [],
+          "ownTargetLineHit": false,
+          "nearestLineStrictHits": [],
+          "nearestLineText": "peste aed"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "target": "G5",
+          "expectedPhrase": "Volcano Bonds",
+          "targetPdfCenter": [
+            243.3962,
+            623.1176
+          ],
+          "nearestBodyRowIndex": 45,
+          "nearestLineDistancePt": 5.2402,
+          "nearestLineColumnFraction": 1.3798,
+          "nearestLineTargetIds": [],
+          "ownTargetLineHit": false,
+          "nearestLineStrictHits": [],
+          "nearestLineText": "Ca nate a ware"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "target": "O5",
+          "expectedPhrase": "shitcoiner at heart",
+          "targetPdfCenter": [
+            323.7736,
+            717.5074
+          ],
+          "nearestBodyRowIndex": 45,
+          "nearestLineDistancePt": 99.6299,
+          "nearestLineColumnFraction": 2.1917,
+          "nearestLineTargetIds": [],
+          "ownTargetLineHit": false,
+          "nearestLineStrictHits": [],
+          "nearestLineText": "Ca nate a ware"
+        }
+      ],
+      "variantRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "mappedTargetRows": 4,
+          "ownTargetLineHitCount": 0,
+          "strictMappedLineCount": 0,
+          "unionNearestLineTargetIds": [],
+          "rowOrder": [
+            "O4",
+            "B4",
+            "G5",
+            "O5"
+          ],
+          "allFourOwnTargetLines": false,
+          "activeRowOrder": true,
+          "candidate": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "mappedTargetRows": 4,
+          "ownTargetLineHitCount": 0,
+          "strictMappedLineCount": 0,
+          "unionNearestLineTargetIds": [],
+          "rowOrder": [
+            "O4",
+            "B4",
+            "G5",
+            "O5"
+          ],
+          "allFourOwnTargetLines": false,
+          "activeRowOrder": true,
+          "candidate": false
+        }
+      ]
+    }
+  ],
+  "decision": {
+    "currentPdfOverdoseBodyLatticeGate": "current_pdf_overdose_body_lattice_no_selector",
+    "selectorUnlocked": false,
+    "reason": "OVERDOSE body-line lattice mapping preserves fixed box row order but supplies no target terms, strict unit/order wording, or source-backed R3.",
+    "nextMove": "Treat OVERDOSE body-line lattice as closed unless source material names this row/column unit/order rule."
+  },
+  "sheet": "analysis_outputs/source_audit/current_pdf_overdose_body_lattice_gate/current_pdf_overdose_body_lattice_gate_sheet.jpg"
+}

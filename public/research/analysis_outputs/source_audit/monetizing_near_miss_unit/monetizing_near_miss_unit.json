@@ -1,0 +1,123 @@
+{
+  "createdAt": "2026-05-20T12:19:43",
+  "scope": "C3 extraction-unit pressure test for p77 `It does this by monetizing`; no key derivation",
+  "nearMissInput": {
+    "sourcePhrase": "It does this by monetizing",
+    "sourcePage": 77,
+    "targetId": "O5",
+    "touchShiftDx": 0.0,
+    "touchShiftDy": -71.93,
+    "touchShiftMagnitude": 71.93,
+    "nudgeHitCount": 1
+  },
+  "phraseAudit": {
+    "exactPhrase": "It does this by monetizing",
+    "contextSentence": "And as bitcoin starves shitcoins, fiat and gold to death, it simultaneously demonetizes war, violence, hatred and the state itself. It does this by monetizing, for the first time in human history, peace, love and understanding.",
+    "exactExtractionTerms": [],
+    "contextExtractionTerms": [
+      "first"
+    ],
+    "exactThematicTerms": [
+      "monetizing"
+    ],
+    "contextThematicTerms": [
+      "bitcoin",
+      "monetizing",
+      "demonetizes",
+      "peace",
+      "love",
+      "understanding",
+      "war",
+      "violence",
+      "hatred",
+      "state"
+    ],
+    "deicticTerms": [
+      "it",
+      "this"
+    ]
+  },
+  "criteria": [
+    {
+      "criterion": "names an extraction unit",
+      "status": "FAIL",
+      "evidence": "Exact phrase contains no word/letter/line/edge/font/color/take/read/select term."
+    },
+    {
+      "criterion": "names an order or direction",
+      "status": "WEAK",
+      "evidence": "Immediate context contains `first time`, but it names historical timing, not which word/letter/line to take."
+    },
+    {
+      "criterion": "names a unique target object",
+      "status": "FAIL",
+      "evidence": "`Monetizing` is semantically related to both Volcano Bonds and shitcoiner/bitcoin language, but it does not choose one or define a unit."
+    },
+    {
+      "criterion": "survives physical/visual repetition check",
+      "status": "FAIL",
+      "evidence": "Near-miss repair creates only 1 trusted O5/G5 hit, not a repeated selector."
+    },
+    {
+      "criterion": "produces instruction-like local outputs",
+      "status": "FAIL",
+      "evidence": "Initials/endings/reversal and first-cue target reads produce short thematic fragments, not procedural text."
+    }
+  ],
+  "lowParameterTests": [
+    {
+      "test": "exact phrase initials",
+      "output": "idtbm",
+      "instructionHits": [],
+      "verdict": "not instruction-like"
+    },
+    {
+      "test": "exact phrase endings",
+      "output": "tssyg",
+      "instructionHits": [],
+      "verdict": "not instruction-like"
+    },
+    {
+      "test": "exact phrase word reversal",
+      "output": "monetizing by this does It",
+      "instructionHits": [],
+      "verdict": "still only ordinary prose"
+    },
+    {
+      "test": "exact phrase character reversal",
+      "output": "gnizitenom yb siht seod tI",
+      "instructionHits": [],
+      "verdict": "still no extraction unit"
+    },
+    {
+      "test": "peace/love/understanding initials from immediate context",
+      "output": "plu",
+      "instructionHits": [],
+      "verdict": "thematic phrase only; no unit/order"
+    }
+  ],
+  "firstCueOutputs": [
+    {
+      "order": "G5 then O5",
+      "firstWords": "Volcano shitcoiner",
+      "firstLetters": "Vs",
+      "targetWordInitials": "vb sah",
+      "instructionHits": []
+    },
+    {
+      "order": "O5 then G5",
+      "firstWords": "shitcoiner Volcano",
+      "firstLetters": "sV",
+      "targetWordInitials": "sah vb",
+      "instructionHits": []
+    }
+  ],
+  "assessment": [
+    "`It does this by monetizing` is a good semantic near miss because it sits close to O5 and echoes the money/Bitcoin theme.",
+    "It does not satisfy C3: it does not name a concrete unit such as word, letter, line, font, color, edge, or direction.",
+    "The only procedural-looking context word is `first`, but the phrase is `for the first time in human history`; applying `first` to G5/O5 yields ordinary target words/initials, not an instruction.",
+    "Keep this phrase as a future physical-scan benchmark, not as extraction material under the current scan."
+  ],
+  "decision": "do_not_promote_to_selector",
+  "nextMove": "Only revisit if a physical/original-layout source makes the p77 phrase directly and repeatedly contact O5/G5, or if an external clue uses monetizing/first-time language as an explicit instruction."
+}

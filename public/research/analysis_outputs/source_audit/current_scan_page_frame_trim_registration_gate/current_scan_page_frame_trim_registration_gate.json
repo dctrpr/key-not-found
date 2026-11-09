@@ -1,0 +1,378 @@
+{
+  "createdAt": "2026-05-24T10:57:17+02:00",
+  "scope": "current scan page-frame/trim registration audit for held-to-light geometry; no extraction or candidate generation",
+  "inputs": {
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "heldToLightSimulator": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/current_scan_held_to_light_simulator.json",
+    "bleedthroughControlGrid": "analysis_outputs/source_audit/current_scan_valid_leaf_bleedthrough_control_grid/current_scan_valid_leaf_bleedthrough_control_grid.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json",
+    "sourcePageTemplate": "analysis_outputs/source_images/magazine_page_{page}.jpg",
+    "uprightPageTemplate": "analysis_outputs/3d_article_map/page_{page}_upright.jpg"
+  },
+  "pageRows": [
+    {
+      "page": 75,
+      "image": "analysis_outputs/3d_article_map/page_75_upright.jpg",
+      "sourceMode": "source_rot180_to_readable",
+      "size": [
+        2544,
+        3264
+      ],
+      "edgeSummaries": {
+        "top": {
+          "side": "top",
+          "coverage": 0.383648,
+          "medianFirstContentPx": 337.0,
+          "minFirstContentPx": 34.0,
+          "p10FirstContentPx": 135.0,
+          "p90FirstContentPx": 354.0,
+          "iqrFirstContentPx": 24.5,
+          "edgeBandNonwhiteShare": 0.0,
+          "frameLikeEdge": false
+        },
+        "bottom": {
+          "side": "bottom",
+          "coverage": 0.490566,
+          "medianFirstContentPx": 300.0,
+          "minFirstContentPx": 0.0,
+          "p10FirstContentPx": 121.5,
+          "p90FirstContentPx": 306.0,
+          "iqrFirstContentPx": 8.0,
+          "edgeBandNonwhiteShare": 0.003243,
+          "frameLikeEdge": false
+        },
+        "left": {
+          "side": "left",
+          "coverage": 0.480392,
+          "medianFirstContentPx": 32.0,
+          "minFirstContentPx": 24.0,
+          "p10FirstContentPx": 29.0,
+          "p90FirstContentPx": 114.0,
+          "iqrFirstContentPx": 3.0,
+          "edgeBandNonwhiteShare": 0.0,
+          "frameLikeEdge": false
+        },
+        "right": {
+          "side": "right",
+          "coverage": 0.830882,
+          "medianFirstContentPx": 0.0,
+          "minFirstContentPx": 0.0,
+          "p10FirstContentPx": 0.0,
+          "p90FirstContentPx": 0.0,
+          "iqrFirstContentPx": 0.0,
+          "edgeBandNonwhiteShare": 0.196551,
+          "frameLikeEdge": false
+        }
+      },
+      "frameLikeEdgeCount": 0,
+      "allEdgesFrameLike": false
+    },
+    {
+      "page": 76,
+      "image": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+      "sourceMode": "source_rot180_to_readable",
+      "size": [
+        2544,
+        3264
+      ],
+      "edgeSummaries": {
+        "top": {
+          "side": "top",
+          "coverage": 0.179245,
+          "medianFirstContentPx": 138.0,
+          "minFirstContentPx": 1.0,
+          "p10FirstContentPx": 24.2,
+          "p90FirstContentPx": 315.6,
+          "iqrFirstContentPx": 164.0,
+          "edgeBandNonwhiteShare": 0.002031,
+          "frameLikeEdge": false
+        },
+        "bottom": {
+          "side": "bottom",
+          "coverage": 0.669811,
+          "medianFirstContentPx": 281.0,
+          "minFirstContentPx": 0.0,
+          "p10FirstContentPx": 41.0,
+          "p90FirstContentPx": 298.0,
+          "iqrFirstContentPx": 160.0,
+          "edgeBandNonwhiteShare": 0.004537,
+          "frameLikeEdge": false
+        },
+        "left": {
+          "side": "left",
+          "coverage": 0.867647,
+          "medianFirstContentPx": 40.0,
+          "minFirstContentPx": 32.0,
+          "p10FirstContentPx": 37.0,
+          "p90FirstContentPx": 44.0,
+          "iqrFirstContentPx": 3.0,
+          "edgeBandNonwhiteShare": 0.0,
+          "frameLikeEdge": false
+        },
+        "right": {
+          "side": "right",
+          "coverage": 0.536765,
+          "medianFirstContentPx": 97.0,
+          "minFirstContentPx": 0.0,
+          "p10FirstContentPx": 2.8,
+          "p90FirstContentPx": 330.0,
+          "iqrFirstContentPx": 219.0,
+          "edgeBandNonwhiteShare": 0.038807,
+          "frameLikeEdge": false
+        }
+      },
+      "frameLikeEdgeCount": 0,
+      "allEdgesFrameLike": false
+    },
+    {
+      "page": 78,
+      "image": "analysis_outputs/3d_article_map/page_78_upright.jpg",
+      "sourceMode": "source_rot180_to_readable",
+      "size": [
+        2544,
+        3264
+      ],
+      "edgeSummaries": {
+        "top": {
+          "side": "top",
+          "coverage": 0.091195,
+          "medianFirstContentPx": 134.0,
+          "minFirstContentPx": 8.0,
+          "p10FirstContentPx": 13.2,
+          "p90FirstContentPx": 136.4,
+          "iqrFirstContentPx": 3.0,
+          "edgeBandNonwhiteShare": 0.001949,
+          "frameLikeEdge": false
+        },
+        "bottom": {
+          "side": "bottom",
+          "coverage": 0.220126,
+          "medianFirstContentPx": 126.5,
+          "minFirstContentPx": 0.0,
+          "p10FirstContentPx": 0.0,
+          "p90FirstContentPx": 344.0,
+          "iqrFirstContentPx": 325.75,
+          "edgeBandNonwhiteShare": 0.009745,
+          "frameLikeEdge": false
+        },
+        "left": {
+          "side": "left",
+          "coverage": 0.982843,
+          "medianFirstContentPx": 41.0,
+          "minFirstContentPx": 24.0,
+          "p10FirstContentPx": 32.0,
+          "p90FirstContentPx": 49.0,
+          "iqrFirstContentPx": 10.0,
+          "edgeBandNonwhiteShare": 1.3e-05,
+          "frameLikeEdge": true
+        },
+        "right": {
+          "side": "right",
+          "coverage": 0.247549,
+          "medianFirstContentPx": 76.0,
+          "minFirstContentPx": 1.0,
+          "p10FirstContentPx": 68.0,
+          "p90FirstContentPx": 329.0,
+          "iqrFirstContentPx": 174.0,
+          "edgeBandNonwhiteShare": 0.001085,
+          "frameLikeEdge": false
+        }
+      },
+      "frameLikeEdgeCount": 1,
+      "allEdgesFrameLike": false
+    },
+    {
+      "page": 79,
+      "image": "analysis_outputs/3d_article_map/page_79_upright.jpg",
+      "sourceMode": "source_rot180_to_readable",
+      "size": [
+        2544,
+        3264
+      ],
+      "edgeSummaries": {
+        "top": {
+          "side": "top",
+          "coverage": 0.352201,
+          "medianFirstContentPx": 144.5,
+          "minFirstContentPx": 0.0,
+          "p10FirstContentPx": 10.7,
+          "p90FirstContentPx": 312.9,
+          "iqrFirstContentPx": 153.25,
+          "edgeBandNonwhiteShare": 0.020882,
+          "frameLikeEdge": false
+        },
+        "bottom": {
+          "side": "bottom",
+          "coverage": 0.308176,
+          "medianFirstContentPx": 263.0,
+          "minFirstContentPx": 0.0,
+          "p10FirstContentPx": 69.8,
+          "p90FirstContentPx": 328.6,
+          "iqrFirstContentPx": 105.5,
+          "edgeBandNonwhiteShare": 0.003276,
+          "frameLikeEdge": false
+        },
+        "left": {
+          "side": "left",
+          "coverage": 0.590686,
+          "medianFirstContentPx": 90.0,
+          "minFirstContentPx": 33.0,
+          "p10FirstContentPx": 36.0,
+          "p90FirstContentPx": 290.0,
+          "iqrFirstContentPx": 99.0,
+          "edgeBandNonwhiteShare": 0.0,
+          "frameLikeEdge": false
+        },
+        "right": {
+          "side": "right",
+          "coverage": 0.941176,
+          "medianFirstContentPx": 0.0,
+          "minFirstContentPx": 0.0,
+          "p10FirstContentPx": 0.0,
+          "p90FirstContentPx": 4.7,
+          "iqrFirstContentPx": 1.0,
+          "edgeBandNonwhiteShare": 0.282961,
+          "frameLikeEdge": true
+        }
+      },
+      "frameLikeEdgeCount": 1,
+      "allEdgesFrameLike": false
+    }
+  ],
+  "validPairComparison": {
+    "pair": "75->76",
+    "sameCanvasSize": true,
+    "bothPagesAllEdgesFrameLike": false,
+    "edgeDeltas": {
+      "top": {
+        "coverageDelta": -0.204403,
+        "medianFirstContentDeltaPx": -199.0,
+        "bothFrameLike": false,
+        "edgeBandShareDelta": 0.002031
+      },
+      "bottom": {
+        "coverageDelta": 0.179245,
+        "medianFirstContentDeltaPx": -19.0,
+        "bothFrameLike": false,
+        "edgeBandShareDelta": 0.001294
+      },
+      "left": {
+        "coverageDelta": 0.387255,
+        "medianFirstContentDeltaPx": 8.0,
+        "bothFrameLike": false,
+        "edgeBandShareDelta": 0.0
+      },
+      "right": {
+        "coverageDelta": -0.294117,
+        "medianFirstContentDeltaPx": 97.0,
+        "bothFrameLike": false,
+        "edgeBandShareDelta": -0.157744
+      }
+    }
+  },
+  "activeBoxDistances": [
+    {
+      "shortId": "O4",
+      "phrase": "buying the dip",
+      "visualState": "Y",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "distanceToCanvas": {
+        "left": 1334.0,
+        "top": 2177.0,
+        "right": 743.0,
+        "bottom": 1039.0
+      },
+      "pageFrameAvailable": false
+    },
+    {
+      "shortId": "B4",
+      "phrase": "$1 billion",
+      "visualState": "K",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "distanceToCanvas": {
+        "left": 428.0,
+        "top": 2398.0,
+        "right": 1853.0,
+        "bottom": 819.0
+      },
+      "pageFrameAvailable": false
+    },
+    {
+      "shortId": "G5",
+      "phrase": "Volcano Bonds",
+      "visualState": "K",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "distanceToCanvas": {
+        "left": 795.0,
+        "top": 2544.0,
+        "right": 1348.0,
+        "bottom": 672.0
+      },
+      "pageFrameAvailable": false
+    },
+    {
+      "shortId": "O5",
+      "phrase": "shitcoiner at heart",
+      "visualState": "Y",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "distanceToCanvas": {
+        "left": 1040.0,
+        "top": 2932.0,
+        "right": 883.0,
+        "bottom": 282.0
+      },
+      "pageFrameAvailable": false
+    }
+  ],
+  "summary": {
+    "decision": "current_scan_page_frame_trim_registration_no_selector",
+    "pageCount": 4,
+    "pagesChecked": [
+      75,
+      76,
+      78,
+      79
+    ],
+    "validPair": "75->76",
+    "sameCanvasValidPair": true,
+    "allEdgesFrameLikePageCount": 0,
+    "validPairBothPagesAllEdgesFrameLike": false,
+    "trimCorrectionCandidate": false,
+    "hiddenTrimSkewCandidate": false,
+    "activeDistanceRowCount": 4,
+    "priorHeldToLightFingerprint": "pairs=9|rows=21|sameLeaf75natural=0.1003|sameLeaf75best=0.3242@-220,200|bestP76=nonphysical_79_to_76:best_global_feature:0.3840@40,80|bestGlobal=same_leaf_77_to_78:0.5220|sourceR3=0|triggers=0/9|selectors=0",
+    "priorBleedthroughFingerprint": "modes=2|targets=8|natMean=0.0032|natMin=0.0000|nat10=0|nat25=0|natPctl75=0|jit=-80,-20|jitMean=0.0128|jitMin=0.0000|jit10=0|jit25=0|jitPctl75=0|sourceR3=0|triggers=0/9|selectors=0",
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "pageFrameTrimFingerprint": "pages=4|pair=75->76|sameCanvas=1|allEdgesPages=0|pairAllEdges=0|trimCandidate=0|hiddenCandidate=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "decision": {
+    "currentScanPageFrameTrimRegistrationGate": "current_scan_page_frame_trim_registration_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Current scan rasters share the same canvas for the valid 75->76 pair, but the edge profiles do not expose a stable all-edge physical page-frame/trim line. Edge hits are content/margin profiles, so they do not justify changing held-to-light registration.",
+    "nextMove": "Do not reopen held-to-light with ad hoc trim/skew correction unless a distinct physical or original-layout source supplies a measurable frame/registration cue."
+  },
+  "sheet": "analysis_outputs/source_audit/current_scan_page_frame_trim_registration_gate/current_scan_page_frame_trim_registration_gate_sheet.jpg",
+  "fingerprint": "pages=4|pair=75->76|sameCanvas=1|allEdgesPages=0|pairAllEdges=0|trimCandidate=0|hiddenCandidate=0|sourceR3=0|triggers=0/9|selectors=0"
+}

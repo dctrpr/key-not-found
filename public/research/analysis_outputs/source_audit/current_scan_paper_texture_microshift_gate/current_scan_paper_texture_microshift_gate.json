@@ -1,0 +1,782 @@
+{
+  "createdAt": "2026-05-24T18:12:56",
+  "scope": "current-scan paper/background texture physical hmirror microshift rescue; no extraction, candidate generation, broad hashing, seed/WIF/address checks, or brute force",
+  "inputs": {
+    "pages": [
+      "analysis_outputs/3d_article_map/page_75_upright.jpg",
+      "analysis_outputs/3d_article_map/page_76_upright.jpg",
+      "analysis_outputs/3d_article_map/page_77_upright.jpg",
+      "analysis_outputs/3d_article_map/page_78_upright.jpg",
+      "analysis_outputs/3d_article_map/page_79_upright.jpg",
+      "analysis_outputs/3d_article_map/page_80_upright.jpg"
+    ],
+    "fixedDuplexGate": "analysis_outputs/source_audit/current_scan_paper_texture_duplex_gate/current_scan_paper_texture_duplex_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json",
+    "physicalPairs": [
+      [
+        75,
+        76
+      ],
+      [
+        77,
+        78
+      ],
+      [
+        79,
+        80
+      ]
+    ],
+    "controlPairs": [
+      [
+        75,
+        78
+      ],
+      [
+        75,
+        80
+      ],
+      [
+        76,
+        77
+      ],
+      [
+        76,
+        79
+      ],
+      [
+        77,
+        80
+      ],
+      [
+        78,
+        79
+      ]
+    ],
+    "shiftValues": [
+      -32,
+      -24,
+      -16,
+      -8,
+      0,
+      8,
+      16,
+      24,
+      32
+    ]
+  },
+  "pageSummaries": [
+    {
+      "page": 75,
+      "backgroundShare": 0.821726,
+      "highpassStd": 19.114422
+    },
+    {
+      "page": 76,
+      "backgroundShare": 0.829339,
+      "highpassStd": 18.697248
+    },
+    {
+      "page": 77,
+      "backgroundShare": 0.037103,
+      "highpassStd": 39.005814
+    },
+    {
+      "page": 78,
+      "backgroundShare": 0.811533,
+      "highpassStd": 20.37727
+    },
+    {
+      "page": 79,
+      "backgroundShare": 0.826399,
+      "highpassStd": 17.590675
+    },
+    {
+      "page": 80,
+      "backgroundShare": 0.06191,
+      "highpassStd": 8.860572
+    }
+  ],
+  "pairRows": [
+    {
+      "pair": "75/76",
+      "pageA": 75,
+      "pageB": 76,
+      "class": "physical_leaf",
+      "searchRadiusPx": 32,
+      "shiftStepPx": 8,
+      "shiftCount": 81,
+      "zeroShiftCorrelation": 0.164008,
+      "bestShift": {
+        "dx": -32,
+        "dy": -24,
+        "validPixelCount": 147908,
+        "paperTextureCorrelation": 0.212228
+      },
+      "bestVsZeroImprovement": 0.04822,
+      "sampleShiftRows": [
+        {
+          "dx": -32,
+          "dy": -32,
+          "validPixelCount": 144458,
+          "paperTextureCorrelation": 0.139519
+        },
+        {
+          "dx": 0,
+          "dy": -32,
+          "validPixelCount": 159100,
+          "paperTextureCorrelation": 0.097929
+        },
+        {
+          "dx": 32,
+          "dy": -32,
+          "validPixelCount": 143289,
+          "paperTextureCorrelation": 0.005206
+        },
+        {
+          "dx": -32,
+          "dy": 0,
+          "validPixelCount": 156691,
+          "paperTextureCorrelation": 0.198131
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "validPixelCount": 172513,
+          "paperTextureCorrelation": 0.164008
+        },
+        {
+          "dx": 32,
+          "dy": 0,
+          "validPixelCount": 155536,
+          "paperTextureCorrelation": 0.065659
+        },
+        {
+          "dx": -32,
+          "dy": 32,
+          "validPixelCount": 144332,
+          "paperTextureCorrelation": 0.072734
+        },
+        {
+          "dx": 0,
+          "dy": 32,
+          "validPixelCount": 159297,
+          "paperTextureCorrelation": 0.07727
+        },
+        {
+          "dx": 32,
+          "dy": 32,
+          "validPixelCount": 143367,
+          "paperTextureCorrelation": -0.008778
+        }
+      ]
+    },
+    {
+      "pair": "77/78",
+      "pageA": 77,
+      "pageB": 78,
+      "class": "physical_leaf",
+      "searchRadiusPx": 32,
+      "shiftStepPx": 8,
+      "shiftCount": 81,
+      "zeroShiftCorrelation": 0.308967,
+      "bestShift": {
+        "dx": 0,
+        "dy": -8,
+        "validPixelCount": 7481,
+        "paperTextureCorrelation": 0.311048
+      },
+      "bestVsZeroImprovement": 0.002081,
+      "sampleShiftRows": [
+        {
+          "dx": -32,
+          "dy": -32,
+          "validPixelCount": 7601,
+          "paperTextureCorrelation": 0.193497
+        },
+        {
+          "dx": 0,
+          "dy": -32,
+          "validPixelCount": 7492,
+          "paperTextureCorrelation": 0.236178
+        },
+        {
+          "dx": 32,
+          "dy": -32,
+          "validPixelCount": 6757,
+          "paperTextureCorrelation": 0.191435
+        },
+        {
+          "dx": -32,
+          "dy": 0,
+          "validPixelCount": 7185,
+          "paperTextureCorrelation": 0.272288
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "validPixelCount": 7106,
+          "paperTextureCorrelation": 0.308967
+        },
+        {
+          "dx": 32,
+          "dy": 0,
+          "validPixelCount": 6529,
+          "paperTextureCorrelation": 0.2883
+        },
+        {
+          "dx": -32,
+          "dy": 32,
+          "validPixelCount": 7274,
+          "paperTextureCorrelation": 0.057955
+        },
+        {
+          "dx": 0,
+          "dy": 32,
+          "validPixelCount": 7232,
+          "paperTextureCorrelation": 0.11229
+        },
+        {
+          "dx": 32,
+          "dy": 32,
+          "validPixelCount": 6684,
+          "paperTextureCorrelation": 0.151624
+        }
+      ]
+    },
+    {
+      "pair": "79/80",
+      "pageA": 79,
+      "pageB": 80,
+      "class": "physical_leaf",
+      "searchRadiusPx": 32,
+      "shiftStepPx": 8,
+      "shiftCount": 81,
+      "zeroShiftCorrelation": 0.242338,
+      "bestShift": {
+        "dx": 32,
+        "dy": -32,
+        "validPixelCount": 12669,
+        "paperTextureCorrelation": 0.426065
+      },
+      "bestVsZeroImprovement": 0.183727,
+      "sampleShiftRows": [
+        {
+          "dx": -32,
+          "dy": -32,
+          "validPixelCount": 12622,
+          "paperTextureCorrelation": 0.270789
+        },
+        {
+          "dx": 0,
+          "dy": -32,
+          "validPixelCount": 13029,
+          "paperTextureCorrelation": 0.32074
+        },
+        {
+          "dx": 32,
+          "dy": -32,
+          "validPixelCount": 12669,
+          "paperTextureCorrelation": 0.426065
+        },
+        {
+          "dx": -32,
+          "dy": 0,
+          "validPixelCount": 12522,
+          "paperTextureCorrelation": 0.161286
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "validPixelCount": 13236,
+          "paperTextureCorrelation": 0.242338
+        },
+        {
+          "dx": 32,
+          "dy": 0,
+          "validPixelCount": 12835,
+          "paperTextureCorrelation": 0.33386
+        },
+        {
+          "dx": -32,
+          "dy": 32,
+          "validPixelCount": 12121,
+          "paperTextureCorrelation": 0.032962
+        },
+        {
+          "dx": 0,
+          "dy": 32,
+          "validPixelCount": 12838,
+          "paperTextureCorrelation": 0.128847
+        },
+        {
+          "dx": 32,
+          "dy": 32,
+          "validPixelCount": 12605,
+          "paperTextureCorrelation": 0.227867
+        }
+      ]
+    },
+    {
+      "pair": "75/78",
+      "pageA": 75,
+      "pageB": 78,
+      "class": "control_pair",
+      "searchRadiusPx": 32,
+      "shiftStepPx": 8,
+      "shiftCount": 81,
+      "zeroShiftCorrelation": 0.162463,
+      "bestShift": {
+        "dx": -24,
+        "dy": -8,
+        "validPixelCount": 154784,
+        "paperTextureCorrelation": 0.230026
+      },
+      "bestVsZeroImprovement": 0.067563,
+      "sampleShiftRows": [
+        {
+          "dx": -32,
+          "dy": -32,
+          "validPixelCount": 140429,
+          "paperTextureCorrelation": 0.136368
+        },
+        {
+          "dx": 0,
+          "dy": -32,
+          "validPixelCount": 156080,
+          "paperTextureCorrelation": 0.12906
+        },
+        {
+          "dx": 32,
+          "dy": -32,
+          "validPixelCount": 140072,
+          "paperTextureCorrelation": 0.032871
+        },
+        {
+          "dx": -32,
+          "dy": 0,
+          "validPixelCount": 153044,
+          "paperTextureCorrelation": 0.171539
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "validPixelCount": 169437,
+          "paperTextureCorrelation": 0.162463
+        },
+        {
+          "dx": 32,
+          "dy": 0,
+          "validPixelCount": 152297,
+          "paperTextureCorrelation": 0.076555
+        },
+        {
+          "dx": -32,
+          "dy": 32,
+          "validPixelCount": 139965,
+          "paperTextureCorrelation": 0.129826
+        },
+        {
+          "dx": 0,
+          "dy": 32,
+          "validPixelCount": 155483,
+          "paperTextureCorrelation": 0.151243
+        },
+        {
+          "dx": 32,
+          "dy": 32,
+          "validPixelCount": 139621,
+          "paperTextureCorrelation": 0.068752
+        }
+      ]
+    },
+    {
+      "pair": "75/80",
+      "pageA": 75,
+      "pageB": 80,
+      "class": "control_pair",
+      "searchRadiusPx": 32,
+      "shiftStepPx": 8,
+      "shiftCount": 81,
+      "zeroShiftCorrelation": 0.194627,
+      "bestShift": {
+        "dx": 32,
+        "dy": 32,
+        "validPixelCount": 12492,
+        "paperTextureCorrelation": 0.369263
+      },
+      "bestVsZeroImprovement": 0.174636,
+      "sampleShiftRows": [
+        {
+          "dx": -32,
+          "dy": -32,
+          "validPixelCount": 11934,
+          "paperTextureCorrelation": 0.202452
+        },
+        {
+          "dx": 0,
+          "dy": -32,
+          "validPixelCount": 12582,
+          "paperTextureCorrelation": 0.245011
+        },
+        {
+          "dx": 32,
+          "dy": -32,
+          "validPixelCount": 12474,
+          "paperTextureCorrelation": 0.357458
+        },
+        {
+          "dx": -32,
+          "dy": 0,
+          "validPixelCount": 12426,
+          "paperTextureCorrelation": 0.117882
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "validPixelCount": 13032,
+          "paperTextureCorrelation": 0.194627
+        },
+        {
+          "dx": 32,
+          "dy": 0,
+          "validPixelCount": 12547,
+          "paperTextureCorrelation": 0.247781
+        },
+        {
+          "dx": -32,
+          "dy": 32,
+          "validPixelCount": 12031,
+          "paperTextureCorrelation": 0.196262
+        },
+        {
+          "dx": 0,
+          "dy": 32,
+          "validPixelCount": 12934,
+          "paperTextureCorrelation": 0.290945
+        },
+        {
+          "dx": 32,
+          "dy": 32,
+          "validPixelCount": 12492,
+          "paperTextureCorrelation": 0.369263
+        }
+      ]
+    },
+    {
+      "pair": "76/77",
+      "pageA": 76,
+      "pageB": 77,
+      "class": "control_pair",
+      "searchRadiusPx": 32,
+      "shiftStepPx": 8,
+      "shiftCount": 81,
+      "zeroShiftCorrelation": 0.183036,
+      "bestShift": {
+        "dx": 0,
+        "dy": -8,
+        "validPixelCount": 7913,
+        "paperTextureCorrelation": 0.264738
+      },
+      "bestVsZeroImprovement": 0.081702,
+      "sampleShiftRows": [
+        {
+          "dx": -32,
+          "dy": -32,
+          "validPixelCount": 7978,
+          "paperTextureCorrelation": 0.192783
+        },
+        {
+          "dx": 0,
+          "dy": -32,
+          "validPixelCount": 7967,
+          "paperTextureCorrelation": 0.251512
+        },
+        {
+          "dx": 32,
+          "dy": -32,
+          "validPixelCount": 7230,
+          "paperTextureCorrelation": 0.210389
+        },
+        {
+          "dx": -32,
+          "dy": 0,
+          "validPixelCount": 7527,
+          "paperTextureCorrelation": 0.123811
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "validPixelCount": 7386,
+          "paperTextureCorrelation": 0.183036
+        },
+        {
+          "dx": 32,
+          "dy": 0,
+          "validPixelCount": 6661,
+          "paperTextureCorrelation": 0.134359
+        },
+        {
+          "dx": -32,
+          "dy": 32,
+          "validPixelCount": 7535,
+          "paperTextureCorrelation": 0.134507
+        },
+        {
+          "dx": 0,
+          "dy": 32,
+          "validPixelCount": 7302,
+          "paperTextureCorrelation": 0.048067
+        },
+        {
+          "dx": 32,
+          "dy": 32,
+          "validPixelCount": 6749,
+          "paperTextureCorrelation": 0.016895
+        }
+      ]
+    },
+    {
+      "pair": "76/79",
+      "pageA": 76,
+      "pageB": 79,
+      "class": "control_pair",
+      "searchRadiusPx": 32,
+      "shiftStepPx": 8,
+      "shiftCount": 81,
+      "zeroShiftCorrelation": 0.267884,
+      "bestShift": {
+        "dx": 0,
+        "dy": 16,
+        "validPixelCount": 167553,
+        "paperTextureCorrelation": 0.301407
+      },
+      "bestVsZeroImprovement": 0.033523,
+      "sampleShiftRows": [
+        {
+          "dx": -32,
+          "dy": -32,
+          "validPixelCount": 146274,
+          "paperTextureCorrelation": 0.121052
+        },
+        {
+          "dx": 0,
+          "dy": -32,
+          "validPixelCount": 161871,
+          "paperTextureCorrelation": 0.195337
+        },
+        {
+          "dx": 32,
+          "dy": -32,
+          "validPixelCount": 147207,
+          "paperTextureCorrelation": 0.168084
+        },
+        {
+          "dx": -32,
+          "dy": 0,
+          "validPixelCount": 157569,
+          "paperTextureCorrelation": 0.208414
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "validPixelCount": 173925,
+          "paperTextureCorrelation": 0.267884
+        },
+        {
+          "dx": 32,
+          "dy": 0,
+          "validPixelCount": 158029,
+          "paperTextureCorrelation": 0.234342
+        },
+        {
+          "dx": -32,
+          "dy": 32,
+          "validPixelCount": 145504,
+          "paperTextureCorrelation": 0.213104
+        },
+        {
+          "dx": 0,
+          "dy": 32,
+          "validPixelCount": 160797,
+          "paperTextureCorrelation": 0.25899
+        },
+        {
+          "dx": 32,
+          "dy": 32,
+          "validPixelCount": 145762,
+          "paperTextureCorrelation": 0.17496
+        }
+      ]
+    },
+    {
+      "pair": "77/80",
+      "pageA": 77,
+      "pageB": 80,
+      "class": "control_pair",
+      "searchRadiusPx": 32,
+      "shiftStepPx": 8,
+      "shiftCount": 81,
+      "zeroShiftCorrelation": null,
+      "bestShift": {
+        "dx": null,
+        "dy": null,
+        "validPixelCount": 0,
+        "paperTextureCorrelation": null
+      },
+      "bestVsZeroImprovement": null,
+      "sampleShiftRows": [
+        {
+          "dx": -32,
+          "dy": -32,
+          "validPixelCount": 1037,
+          "paperTextureCorrelation": null
+        },
+        {
+          "dx": 0,
+          "dy": -32,
+          "validPixelCount": 1006,
+          "paperTextureCorrelation": null
+        },
+        {
+          "dx": 32,
+          "dy": -32,
+          "validPixelCount": 932,
+          "paperTextureCorrelation": null
+        },
+        {
+          "dx": -32,
+          "dy": 0,
+          "validPixelCount": 750,
+          "paperTextureCorrelation": null
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "validPixelCount": 623,
+          "paperTextureCorrelation": null
+        },
+        {
+          "dx": 32,
+          "dy": 0,
+          "validPixelCount": 542,
+          "paperTextureCorrelation": null
+        },
+        {
+          "dx": -32,
+          "dy": 32,
+          "validPixelCount": 681,
+          "paperTextureCorrelation": null
+        },
+        {
+          "dx": 0,
+          "dy": 32,
+          "validPixelCount": 670,
+          "paperTextureCorrelation": null
+        },
+        {
+          "dx": 32,
+          "dy": 32,
+          "validPixelCount": 676,
+          "paperTextureCorrelation": null
+        }
+      ]
+    },
+    {
+      "pair": "78/79",
+      "pageA": 78,
+      "pageB": 79,
+      "class": "control_pair",
+      "searchRadiusPx": 32,
+      "shiftStepPx": 8,
+      "shiftCount": 81,
+      "zeroShiftCorrelation": 0.176241,
+      "bestShift": {
+        "dx": -8,
+        "dy": 8,
+        "validPixelCount": 162364,
+        "paperTextureCorrelation": 0.198468
+      },
+      "bestVsZeroImprovement": 0.022227,
+      "sampleShiftRows": [
+        {
+          "dx": -32,
+          "dy": -32,
+          "validPixelCount": 141117,
+          "paperTextureCorrelation": 0.121781
+        },
+        {
+          "dx": 0,
+          "dy": -32,
+          "validPixelCount": 156509,
+          "paperTextureCorrelation": 0.136859
+        },
+        {
+          "dx": 32,
+          "dy": -32,
+          "validPixelCount": 141477,
+          "paperTextureCorrelation": 0.085874
+        },
+        {
+          "dx": -32,
+          "dy": 0,
+          "validPixelCount": 152928,
+          "paperTextureCorrelation": 0.173045
+        },
+        {
+          "dx": 0,
+          "dy": 0,
+          "validPixelCount": 169342,
+          "paperTextureCorrelation": 0.176241
+        },
+        {
+          "dx": 32,
+          "dy": 0,
+          "validPixelCount": 153444,
+          "paperTextureCorrelation": 0.146645
+        },
+        {
+          "dx": -32,
+          "dy": 32,
+          "validPixelCount": 141344,
+          "paperTextureCorrelation": 0.156268
+        },
+        {
+          "dx": 0,
+          "dy": 32,
+          "validPixelCount": 157004,
+          "paperTextureCorrelation": 0.178959
+        },
+        {
+          "dx": 32,
+          "dy": 32,
+          "validPixelCount": 142204,
+          "paperTextureCorrelation": 0.140111
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "physicalPairCount": 3,
+    "controlPairCount": 6,
+    "shiftCountPerPair": 81,
+    "totalShiftRows": 729,
+    "shiftRadiusPx": 32,
+    "shiftStepPx": 8,
+    "physicalAboveControlP95Count": 1,
+    "physicalBestImprovementOverZeroCount": 2,
+    "physicalBestWithinSmallShiftCount": 1,
+    "maxPhysicalBestCorrelation": 0.426065,
+    "maxControlBestCorrelation": 0.369263,
+    "controlBestCorrelationP95": 0.355692,
+    "fixedDuplexFingerprint": "pairs=9|rows=36|physMirrorBest=1/3|physAboveControlP95=0/3|physMax=0.3090|controlMax=0.3495|controlP95=0.3220|sourceR3=0|triggers=0/9|selectors=0",
+    "paperTextureMicroshiftSelectorCandidate": false,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "paperTextureMicroshiftFingerprint": "pairs=9|shifts=81|physAboveP95=1/3|physImproved=2/3|smallShift=1/3|physMax=0.4261|controlMax=0.3693|controlP95=0.3557|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "decision": "paper_texture_microshift_not_a_selector",
+  "reason": "Bounded global shifts after physical mirror do not separate physical leaf pairs from controls, do not keep physical best shifts in a consistent small registration window, and still have no source-backed R3 trigger.",
+  "nextMove": "Keep paper-texture microshift rescue closed for the current scan. Reopen only with a distinct physical/original-layout source or raw clue wording that names side, mirror, paper texture, shift/registration, unit, and read order.",
+  "sheet": "analysis_outputs/source_audit/current_scan_paper_texture_microshift_gate/current_scan_paper_texture_microshift_gate_sheet.jpg"
+}

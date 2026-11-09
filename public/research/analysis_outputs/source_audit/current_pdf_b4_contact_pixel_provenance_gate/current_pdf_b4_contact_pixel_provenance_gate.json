@@ -1,0 +1,617 @@
+{
+  "createdAt": "2026-05-24T11:43:43+02:00",
+  "scope": "current PDF embedded/render provenance for B4 broad contact pixel; no extraction or candidate generation",
+  "inputs": {
+    "pdfs": [
+      "magazine.pdf",
+      "keyser bitcoin .pdf",
+      "analysis_outputs/external_clues/google_drive_article_download.pdf"
+    ],
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "contentBoxRegistrationGate": "analysis_outputs/source_audit/current_scan_content_box_registration_gate/current_scan_content_box_registration_gate.json",
+    "b4BroadContactProvenanceGate": "analysis_outputs/source_audit/current_scan_b4_broad_contact_provenance_gate/current_scan_b4_broad_contact_provenance_gate.json",
+    "sourceLayerMissDistanceGate": "analysis_outputs/source_audit/current_scan_source_layer_miss_distance_gate/current_scan_source_layer_miss_distance_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "mode": {
+    "modeId": "all_content_box_translation",
+    "dx": 31.5,
+    "dy": -61.0
+  },
+  "target": "B4",
+  "layer": "broad",
+  "sourcePoint": [
+    1864,
+    2511
+  ],
+  "targetPoint": [
+    711,
+    2450
+  ],
+  "ringRadiusPx": 32,
+  "renderDpi": 300,
+  "candidateRows": [
+    {
+      "pdfLabel": "magazine.pdf",
+      "candidateKind": "embedded",
+      "pageNo": 75,
+      "orientation": {
+        "inputSize": [
+          2544,
+          3264
+        ],
+        "normalizedSize": [
+          2544,
+          3264
+        ],
+        "bestOrientation": "rotate180",
+        "bestMadToUprightSample": 0.0997,
+        "orientationRows": [
+          {
+            "orientation": "as_is",
+            "madToUprightSample": 29.0684
+          },
+          {
+            "orientation": "rotate180",
+            "madToUprightSample": 0.0997
+          },
+          {
+            "orientation": "hflip",
+            "madToUprightSample": 27.2167
+          },
+          {
+            "orientation": "hflip_rotate180",
+            "madToUprightSample": 20.4432
+          }
+        ]
+      },
+      "sourcePointRgb": {
+        "rgb": [
+          243,
+          243,
+          243
+        ],
+        "luma": 243.0,
+        "saturation": 0.0
+      },
+      "sourcePointLayerMembership": {
+        "black": false,
+        "orange": false,
+        "grey": false,
+        "feature": false,
+        "broad": true
+      },
+      "sourcePointWindowCounts": {
+        "black": 0,
+        "orange": 0,
+        "grey": 0,
+        "feature": 0,
+        "broad": 1
+      },
+      "landingPointRgb": {
+        "rgb": [
+          243,
+          243,
+          243
+        ],
+        "luma": 243.0,
+        "saturation": 0.0
+      },
+      "landingPointLayerMembership": {
+        "black": false,
+        "orange": false,
+        "grey": false,
+        "feature": false,
+        "broad": true
+      },
+      "landingPointWindowCounts": {
+        "black": 0,
+        "orange": 0,
+        "grey": 0,
+        "feature": 0,
+        "broad": 1
+      },
+      "radius32BroadPixelCount": 1,
+      "radius32FeaturePixelCount": 0,
+      "radius32BroadOnlyPixelCount": 1,
+      "deltaVsBaselineSourcePointMax": 1,
+      "deltaVsEmbeddedSourcePointMax": 1,
+      "verdict": "broad_background_only",
+      "embeddedMeta": {
+        "xref": 30,
+        "width": 2544,
+        "height": 3264,
+        "extension": "jpeg",
+        "bytes": 629312
+      }
+    },
+    {
+      "pdfLabel": "magazine.pdf",
+      "candidateKind": "render_300dpi",
+      "pageNo": 75,
+      "orientation": {
+        "inputSize": [
+          2544,
+          3264
+        ],
+        "normalizedSize": [
+          2544,
+          3264
+        ],
+        "bestOrientation": "as_is",
+        "bestMadToUprightSample": 0.104,
+        "orientationRows": [
+          {
+            "orientation": "as_is",
+            "madToUprightSample": 0.104
+          },
+          {
+            "orientation": "rotate180",
+            "madToUprightSample": 29.0699
+          },
+          {
+            "orientation": "hflip",
+            "madToUprightSample": 20.4445
+          },
+          {
+            "orientation": "hflip_rotate180",
+            "madToUprightSample": 27.2182
+          }
+        ]
+      },
+      "sourcePointRgb": {
+        "rgb": [
+          243,
+          243,
+          243
+        ],
+        "luma": 243.0,
+        "saturation": 0.0
+      },
+      "sourcePointLayerMembership": {
+        "black": false,
+        "orange": false,
+        "grey": false,
+        "feature": false,
+        "broad": true
+      },
+      "sourcePointWindowCounts": {
+        "black": 0,
+        "orange": 0,
+        "grey": 0,
+        "feature": 0,
+        "broad": 1
+      },
+      "landingPointRgb": {
+        "rgb": [
+          243,
+          243,
+          243
+        ],
+        "luma": 243.0,
+        "saturation": 0.0
+      },
+      "landingPointLayerMembership": {
+        "black": false,
+        "orange": false,
+        "grey": false,
+        "feature": false,
+        "broad": true
+      },
+      "landingPointWindowCounts": {
+        "black": 0,
+        "orange": 0,
+        "grey": 0,
+        "feature": 0,
+        "broad": 1
+      },
+      "radius32BroadPixelCount": 1,
+      "radius32FeaturePixelCount": 0,
+      "radius32BroadOnlyPixelCount": 1,
+      "deltaVsBaselineSourcePointMax": 1,
+      "deltaVsEmbeddedSourcePointMax": 0,
+      "verdict": "broad_background_only",
+      "renderDpi": 300
+    },
+    {
+      "pdfLabel": "keyser bitcoin .pdf",
+      "candidateKind": "embedded",
+      "pageNo": 75,
+      "orientation": {
+        "inputSize": [
+          2040,
+          2805
+        ],
+        "normalizedSize": [
+          2544,
+          3264
+        ],
+        "bestOrientation": "as_is",
+        "bestMadToUprightSample": 46.2778,
+        "orientationRows": [
+          {
+            "orientation": "as_is",
+            "madToUprightSample": 46.2778
+          },
+          {
+            "orientation": "rotate180",
+            "madToUprightSample": 48.0118
+          },
+          {
+            "orientation": "hflip",
+            "madToUprightSample": 46.8388
+          },
+          {
+            "orientation": "hflip_rotate180",
+            "madToUprightSample": 48.0484
+          }
+        ]
+      },
+      "sourcePointRgb": {
+        "rgb": [
+          217,
+          223,
+          223
+        ],
+        "luma": 221.724,
+        "saturation": 0.026906
+      },
+      "sourcePointLayerMembership": {
+        "black": false,
+        "orange": false,
+        "grey": true,
+        "feature": true,
+        "broad": true
+      },
+      "sourcePointWindowCounts": {
+        "black": 0,
+        "orange": 0,
+        "grey": 349,
+        "feature": 349,
+        "broad": 361
+      },
+      "landingPointRgb": {
+        "rgb": [
+          217,
+          223,
+          223
+        ],
+        "luma": 221.724,
+        "saturation": 0.026906
+      },
+      "landingPointLayerMembership": {
+        "black": false,
+        "orange": false,
+        "grey": true,
+        "feature": true,
+        "broad": true
+      },
+      "landingPointWindowCounts": {
+        "black": 0,
+        "orange": 0,
+        "grey": 349,
+        "feature": 349,
+        "broad": 361
+      },
+      "radius32BroadPixelCount": 23936,
+      "radius32FeaturePixelCount": 22445,
+      "radius32BroadOnlyPixelCount": 1491,
+      "deltaVsBaselineSourcePointMax": 25,
+      "deltaVsEmbeddedSourcePointMax": 25,
+      "verdict": "feature_contact_created",
+      "embeddedMeta": {
+        "xref": 57,
+        "width": 2040,
+        "height": 2805,
+        "extension": "jpeg",
+        "bytes": 755625
+      }
+    },
+    {
+      "pdfLabel": "keyser bitcoin .pdf",
+      "candidateKind": "render_300dpi",
+      "pageNo": 75,
+      "orientation": {
+        "inputSize": [
+          2550,
+          3300
+        ],
+        "normalizedSize": [
+          2544,
+          3264
+        ],
+        "bestOrientation": "as_is",
+        "bestMadToUprightSample": 44.2519,
+        "orientationRows": [
+          {
+            "orientation": "as_is",
+            "madToUprightSample": 44.2519
+          },
+          {
+            "orientation": "rotate180",
+            "madToUprightSample": 45.894
+          },
+          {
+            "orientation": "hflip",
+            "madToUprightSample": 44.7437
+          },
+          {
+            "orientation": "hflip_rotate180",
+            "madToUprightSample": 46.0783
+          }
+        ]
+      },
+      "sourcePointRgb": {
+        "rgb": [
+          222,
+          228,
+          228
+        ],
+        "luma": 226.724,
+        "saturation": 0.026316
+      },
+      "sourcePointLayerMembership": {
+        "black": false,
+        "orange": false,
+        "grey": true,
+        "feature": true,
+        "broad": true
+      },
+      "sourcePointWindowCounts": {
+        "black": 0,
+        "orange": 0,
+        "grey": 348,
+        "feature": 348,
+        "broad": 361
+      },
+      "landingPointRgb": {
+        "rgb": [
+          222,
+          228,
+          228
+        ],
+        "luma": 226.724,
+        "saturation": 0.026316
+      },
+      "landingPointLayerMembership": {
+        "black": false,
+        "orange": false,
+        "grey": true,
+        "feature": true,
+        "broad": true
+      },
+      "landingPointWindowCounts": {
+        "black": 0,
+        "orange": 0,
+        "grey": 348,
+        "feature": 348,
+        "broad": 361
+      },
+      "radius32BroadPixelCount": 23936,
+      "radius32FeaturePixelCount": 23362,
+      "radius32BroadOnlyPixelCount": 574,
+      "deltaVsBaselineSourcePointMax": 20,
+      "deltaVsEmbeddedSourcePointMax": 5,
+      "verdict": "feature_contact_created",
+      "renderDpi": 300
+    },
+    {
+      "pdfLabel": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "candidateKind": "embedded",
+      "pageNo": 75,
+      "orientation": {
+        "inputSize": [
+          2040,
+          2805
+        ],
+        "normalizedSize": [
+          2544,
+          3264
+        ],
+        "bestOrientation": "as_is",
+        "bestMadToUprightSample": 46.2778,
+        "orientationRows": [
+          {
+            "orientation": "as_is",
+            "madToUprightSample": 46.2778
+          },
+          {
+            "orientation": "rotate180",
+            "madToUprightSample": 48.0118
+          },
+          {
+            "orientation": "hflip",
+            "madToUprightSample": 46.8388
+          },
+          {
+            "orientation": "hflip_rotate180",
+            "madToUprightSample": 48.0484
+          }
+        ]
+      },
+      "sourcePointRgb": {
+        "rgb": [
+          217,
+          223,
+          223
+        ],
+        "luma": 221.724,
+        "saturation": 0.026906
+      },
+      "sourcePointLayerMembership": {
+        "black": false,
+        "orange": false,
+        "grey": true,
+        "feature": true,
+        "broad": true
+      },
+      "sourcePointWindowCounts": {
+        "black": 0,
+        "orange": 0,
+        "grey": 349,
+        "feature": 349,
+        "broad": 361
+      },
+      "landingPointRgb": {
+        "rgb": [
+          217,
+          223,
+          223
+        ],
+        "luma": 221.724,
+        "saturation": 0.026906
+      },
+      "landingPointLayerMembership": {
+        "black": false,
+        "orange": false,
+        "grey": true,
+        "feature": true,
+        "broad": true
+      },
+      "landingPointWindowCounts": {
+        "black": 0,
+        "orange": 0,
+        "grey": 349,
+        "feature": 349,
+        "broad": 361
+      },
+      "radius32BroadPixelCount": 23936,
+      "radius32FeaturePixelCount": 22445,
+      "radius32BroadOnlyPixelCount": 1491,
+      "deltaVsBaselineSourcePointMax": 25,
+      "deltaVsEmbeddedSourcePointMax": 25,
+      "verdict": "feature_contact_created",
+      "embeddedMeta": {
+        "xref": 57,
+        "width": 2040,
+        "height": 2805,
+        "extension": "jpeg",
+        "bytes": 755625
+      }
+    },
+    {
+      "pdfLabel": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "candidateKind": "render_300dpi",
+      "pageNo": 75,
+      "orientation": {
+        "inputSize": [
+          2550,
+          3300
+        ],
+        "normalizedSize": [
+          2544,
+          3264
+        ],
+        "bestOrientation": "as_is",
+        "bestMadToUprightSample": 44.2519,
+        "orientationRows": [
+          {
+            "orientation": "as_is",
+            "madToUprightSample": 44.2519
+          },
+          {
+            "orientation": "rotate180",
+            "madToUprightSample": 45.894
+          },
+          {
+            "orientation": "hflip",
+            "madToUprightSample": 44.7437
+          },
+          {
+            "orientation": "hflip_rotate180",
+            "madToUprightSample": 46.0783
+          }
+        ]
+      },
+      "sourcePointRgb": {
+        "rgb": [
+          222,
+          228,
+          228
+        ],
+        "luma": 226.724,
+        "saturation": 0.026316
+      },
+      "sourcePointLayerMembership": {
+        "black": false,
+        "orange": false,
+        "grey": true,
+        "feature": true,
+        "broad": true
+      },
+      "sourcePointWindowCounts": {
+        "black": 0,
+        "orange": 0,
+        "grey": 348,
+        "feature": 348,
+        "broad": 361
+      },
+      "landingPointRgb": {
+        "rgb": [
+          222,
+          228,
+          228
+        ],
+        "luma": 226.724,
+        "saturation": 0.026316
+      },
+      "landingPointLayerMembership": {
+        "black": false,
+        "orange": false,
+        "grey": true,
+        "feature": true,
+        "broad": true
+      },
+      "landingPointWindowCounts": {
+        "black": 0,
+        "orange": 0,
+        "grey": 348,
+        "feature": 348,
+        "broad": 361
+      },
+      "radius32BroadPixelCount": 23936,
+      "radius32FeaturePixelCount": 23362,
+      "radius32BroadOnlyPixelCount": 574,
+      "deltaVsBaselineSourcePointMax": 20,
+      "deltaVsEmbeddedSourcePointMax": 5,
+      "verdict": "feature_contact_created",
+      "renderDpi": 300
+    }
+  ],
+  "summary": {
+    "decision": "current_pdf_b4_contact_pixel_background_carrier",
+    "candidateCount": 6,
+    "pdfCount": 3,
+    "sourcePointBroadCandidateCount": 6,
+    "sourcePointFeatureCandidateCount": 4,
+    "landingPointBroadCandidateCount": 6,
+    "landingPointFeatureCandidateCount": 4,
+    "radius32FeatureContactCandidateCount": 4,
+    "renderOnlyContactCandidateCount": 2,
+    "baselineSourcePointRgb": [
+      242,
+      242,
+      242
+    ],
+    "magazineEmbeddedSourcePointRgb": [
+      243,
+      243,
+      243
+    ],
+    "hiddenPdfRenderContactCandidate": false,
+    "priorB4BroadContactFingerprint": "mode=all_content_box_translation|target=B4|layer=broad|b4BroadMin=22|firstExpansion=32|r32BroadPx=1|r32FeaturePx=0|r32BroadOnlyPx=1|r32Components=1|pointLayers=broad|sourceWords64=0|sourceWords128=0|nearestWord=249.047:lab|nearestStrict=913.859:words|strict=0|context=0|hiddenCandidate=0|sourceR3=0|triggers=0/9|selectors=0",
+    "priorSourceLayerMissDistanceFingerprint": "modes=3|layers=black,orange,grey,feature,broad|rows=60|controls=360|b4MinAny=22|b4MinFeature=136|b4MinBroad=22|b4Tiny=0|allFourWithin16=0|bestAllFour=all_content_box_translation:broad:22px|b4=natural_hflip:black:136,natural_hflip:orange:288,natural_hflip:grey:136,natural_hflip:feature:136,natural_hflip:broad:67,all_content_box_translation:black:203,all_content_box_translation:orange:>260,all_content_box_translation:grey:202,all_content_box_translation:feature:202,all_content_box_translation:broad:22,lower_half_content_box_translation:black:161,lower_half_content_box_translation:orange:>260,lower_half_content_box_translation:grey:160,lower_half_content_box_translation:feature:160,lower_half_content_box_translation:broad:71|hiddenCandidate=0|sourceR3=0|triggers=0/9|selectors=0",
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "currentPdfB4ContactPixelProvenanceFingerprint": "pdfs=3|candidates=6|srcBroad=6|srcFeature=4|landBroad=6|landFeature=4|r32Feature=4|magEmbRgb=[243, 243, 243]|baseRgb=[242, 242, 242]|renderOnlyFeature=2|hiddenCandidate=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "decision": {
+    "currentPdfB4ContactPixelProvenanceGate": "current_pdf_b4_contact_pixel_background_carrier",
+    "selectorUnlocked": false,
+    "reason": "The byte-locked magazine carrier keeps the B4 point broad/background only; lower-resolution duplicate carriers create feature-colored contacts but no source-backed rule.",
+    "nextMove": "Do not reopen current-PDF rendering for this B4 contact; require a distinct physical/original-layout source or source-backed rule."
+  },
+  "sheet": "analysis_outputs/source_audit/current_pdf_b4_contact_pixel_provenance_gate/current_pdf_b4_contact_pixel_provenance_gate_sheet.jpg",
+  "fingerprint": "pdfs=3|candidates=6|srcBroad=6|srcFeature=4|landBroad=6|landFeature=4|r32Feature=4|magEmbRgb=[243, 243, 243]|baseRgb=[242, 242, 242]|renderOnlyFeature=2|hiddenCandidate=0|sourceR3=0|triggers=0/9|selectors=0"
+}

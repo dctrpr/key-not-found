@@ -1,0 +1,195 @@
+{
+  "createdAt": "2026-05-20T05:38:17",
+  "scope": "Focused local-unit audit for page-76 G5/O5 pair; no key derivation.",
+  "g5": {
+    "name": "G5",
+    "text": "Volcano Bonds",
+    "lineIndex0": 27,
+    "lineIndex1": 28,
+    "wordIndex0": [
+      223,
+      224
+    ],
+    "wordIndex1": [
+      224,
+      225
+    ],
+    "lineWordPosition0": [
+      1,
+      2
+    ],
+    "lineWordPosition1": [
+      2,
+      3
+    ],
+    "letters": "VolcanoBonds",
+    "wordLengths": [
+      7,
+      5
+    ],
+    "initials": "VB",
+    "lastLetters": "os",
+    "lineWords": [
+      "collateralized",
+      "Volcano",
+      "Bonds",
+      "to",
+      "pay",
+      "off",
+      "the",
+      "IMF"
+    ],
+    "contextBefore6": [
+      "worth",
+      "of",
+      "future",
+      "bitcoin",
+      "earnings",
+      "collateralized"
+    ],
+    "contextAfter6": [
+      "to",
+      "pay",
+      "off",
+      "the",
+      "IMF",
+      "loan"
+    ],
+    "lineText": "collateralized Volcano Bonds to pay off the IMF"
+  },
+  "o5": {
+    "name": "O5",
+    "text": "shitcoiner at heart",
+    "lineIndex0": 32,
+    "lineIndex1": 33,
+    "wordIndex0": [
+      274,
+      275,
+      276
+    ],
+    "wordIndex1": [
+      275,
+      276,
+      277
+    ],
+    "lineWordPosition0": [
+      4,
+      5,
+      6
+    ],
+    "lineWordPosition1": [
+      5,
+      6,
+      7
+    ],
+    "letters": "shitcoineratheart",
+    "wordLengths": [
+      10,
+      2,
+      5
+    ],
+    "initials": "sah",
+    "lastLetters": "rtt",
+    "lineWords": [
+      "Maybe",
+      "because",
+      "he's",
+      "a",
+      "shitcoiner",
+      "at",
+      "heart"
+    ],
+    "contextBefore6": [
+      "that",
+      "guy",
+      "Maybe",
+      "because",
+      "he's",
+      "a"
+    ],
+    "contextAfter6": [],
+    "lineText": "Maybe because he's a shitcoiner at heart"
+  },
+  "structural": {
+    "lineGapO5MinusG5": 5,
+    "globalWordGapStartToStart": 51,
+    "globalWordGapEndToStartExclusive": 49,
+    "g5LinePlus5": 32,
+    "g5LinePlus5MatchesO5Line": true,
+    "boxIndex": 5,
+    "doseNumbersSeenNearby": [
+      5,
+      6
+    ]
+  },
+  "omittedUnits": [
+    {
+      "direction": "B5->O5",
+      "sourceOmittedRightApprox": "s",
+      "targetOmittedRightApprox": ".",
+      "combined": "s.",
+      "combinedReverse": ".s"
+    },
+    {
+      "direction": "O5->B5",
+      "sourceOmittedRightApprox": ".",
+      "targetOmittedRightApprox": "s",
+      "combined": ".s",
+      "combinedReverse": "s."
+    }
+  ],
+  "candidateUnits": {
+    "omittedOverlapCombined": [
+      "s.",
+      ".s"
+    ],
+    "omittedOverlapCombinedReverse": [
+      ".s",
+      "s."
+    ],
+    "selectedOverlapPairs": [
+      {
+        "direction": "B5->O5",
+        "sourceSelectedApprox": "Volcano Bond",
+        "targetSelectedApprox": "shitcoiner at heart"
+      },
+      {
+        "direction": "O5->B5",
+        "sourceSelectedApprox": "shitcoiner at heart",
+        "targetSelectedApprox": "Volcano Bond"
+      }
+    ],
+    "phraseInitials": "VBsah",
+    "phraseLastLetters": "osrtt",
+    "wordLengths": [
+      7,
+      5,
+      10,
+      2,
+      5
+    ],
+    "dosageLinePicks": {
+      "g5LineWord5": "pay",
+      "g5LineWord6": "off",
+      "o5LineWord5": "shitcoiner",
+      "o5LineWord6": "at"
+    },
+    "dosageAdjacentPicks": {
+      "fifthAfterG5Phrase": "IMF",
+      "sixthAfterG5Phrase": "loan",
+      "fifthBeforeO5Phrase": "guy",
+      "sixthBeforeO5Phrase": "that",
+      "fifthBeforeG5Phrase": "of",
+      "sixthBeforeG5Phrase": "worth"
+    }
+  },
+  "instructionTermHits": [],
+  "assessment": [
+    "The omitted-overlap unit is only `s.` or `.s`, caused by broad phrase overlap; it is too small and not instruction-like.",
+    "The shared index 5 is structurally meaningful: line 27 + 5 = line 32, so the fifth line below `Volcano Bonds` is the `shitcoiner at heart` line.",
+    "Using 5/6 as simple word selectors gives ordinary local words such as `pay/off`, `shitcoiner/at`, `IMF/loan`, and `guy/that`.",
+    "Adjacent words and local line/word numbers do not reveal a read/take/fold/mirror/word/letter/key instruction.",
+    "This keeps G5/O5 as target confirmation, not extraction material."
+  ],
+  "nextMove": "Treat the 5-line relationship as a locator. The missing rule must come from source/provenance or physical registration, not from the obvious local text units around G5/O5."
+}

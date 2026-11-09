@@ -1,0 +1,513 @@
+{
+  "createdAt": "2026-05-20T05:48:59",
+  "scope": "Compare page-76 line-counting models for the highlight-number offset pattern; no key derivation.",
+  "summaries": {
+    "corrected_with_blank_lines": {
+      "hitCount": 4,
+      "hits": [
+        "O1->O2",
+        "B1->B2",
+        "O3->B3",
+        "B5->O5"
+      ]
+    },
+    "corrected_nonblank_lines": {
+      "hitCount": 3,
+      "hits": [
+        "O1->O2",
+        "B1->B2",
+        "B5->O5"
+      ]
+    },
+    "paragraph_local_nonblank_lines": {
+      "hitCount": 3,
+      "hits": [
+        "O1->O2",
+        "B1->B2",
+        "B5->O5"
+      ]
+    },
+    "highres_highlight_row_order": {
+      "hitCount": 6,
+      "hits": [
+        "O1->O2",
+        "O2->B2",
+        "B1->B2",
+        "B2->B3",
+        "O3->B4",
+        "B3->O5,B5"
+      ]
+    }
+  },
+  "models": {
+    "corrected_with_blank_lines": [
+      {
+        "model": "corrected_with_blank_lines",
+        "sourceId": "O1",
+        "sourceIndex": 1,
+        "sourceLine": 0,
+        "targetLine": 1,
+        "targetText": "Bitcoin. It's the freaking UTXO ghetto up in here, y'all.",
+        "targetUnits": [
+          "O2"
+        ],
+        "hit": true
+      },
+      {
+        "model": "corrected_with_blank_lines",
+        "sourceId": "O2",
+        "sourceIndex": 2,
+        "sourceLine": 1,
+        "targetLine": 3,
+        "targetText": "but George Clinton and James Brown clones. It's Martin Luther",
+        "targetUnits": [],
+        "hit": false
+      },
+      {
+        "model": "corrected_with_blank_lines",
+        "sourceId": "B1",
+        "sourceIndex": 1,
+        "sourceLine": 6,
+        "targetLine": 7,
+        "targetText": "nonsense (and 10 years of watching Peter Schiff miss buying bitcoin",
+        "targetUnits": [
+          "B2"
+        ],
+        "hit": true
+      },
+      {
+        "model": "corrected_with_blank_lines",
+        "sourceId": "B2",
+        "sourceIndex": 2,
+        "sourceLine": 7,
+        "targetLine": 9,
+        "targetText": "have dulled shitcoiners' and nocoiners' minds.",
+        "targetUnits": [],
+        "hit": false
+      },
+      {
+        "model": "corrected_with_blank_lines",
+        "sourceId": "O3",
+        "sourceIndex": 3,
+        "sourceLine": 13,
+        "targetLine": 16,
+        "targetText": "laundering lobotomy. It’s a stun gun to the genitals.",
+        "targetUnits": [
+          "B3"
+        ],
+        "hit": true
+      },
+      {
+        "model": "corrected_with_blank_lines",
+        "sourceId": "B3",
+        "sourceIndex": 3,
+        "sourceLine": 16,
+        "targetLine": 19,
+        "targetText": "Don't believe me?",
+        "targetUnits": [],
+        "hit": false
+      },
+      {
+        "model": "corrected_with_blank_lines",
+        "sourceId": "O4",
+        "sourceIndex": 4,
+        "sourceLine": 22,
+        "targetLine": 26,
+        "targetText": "billions worth of future bitcoin earnings",
+        "targetUnits": [],
+        "hit": false
+      },
+      {
+        "model": "corrected_with_blank_lines",
+        "sourceId": "B4",
+        "sourceIndex": 4,
+        "sourceLine": 25,
+        "targetLine": 29,
+        "targetText": "Novogratz in the tweet, figuring he could sell a",
+        "targetUnits": [],
+        "hit": false
+      },
+      {
+        "model": "corrected_with_blank_lines",
+        "sourceId": "B5",
+        "sourceIndex": 5,
+        "sourceLine": 27,
+        "targetLine": 32,
+        "targetText": "Maybe because he's a shitcoiner at heart.",
+        "targetUnits": [
+          "O5"
+        ],
+        "hit": true
+      },
+      {
+        "model": "corrected_with_blank_lines",
+        "sourceId": "O5",
+        "sourceIndex": 5,
+        "sourceLine": 32,
+        "targetLine": 37,
+        "targetText": "",
+        "targetUnits": [],
+        "hit": false
+      }
+    ],
+    "corrected_nonblank_lines": [
+      {
+        "model": "corrected_nonblank_lines",
+        "sourceId": "O1",
+        "sourceIndex": 1,
+        "sourceLine": 0,
+        "targetLine": 1,
+        "targetText": "Bitcoin. It's the freaking UTXO ghetto up in here, y'all.",
+        "targetUnits": [
+          "O2"
+        ],
+        "hit": true,
+        "sourceNonblankRank": 0
+      },
+      {
+        "model": "corrected_nonblank_lines",
+        "sourceId": "O2",
+        "sourceIndex": 2,
+        "sourceLine": 1,
+        "targetLine": 3,
+        "targetText": "but George Clinton and James Brown clones. It's Martin Luther",
+        "targetUnits": [],
+        "hit": false,
+        "sourceNonblankRank": 1
+      },
+      {
+        "model": "corrected_nonblank_lines",
+        "sourceId": "B1",
+        "sourceIndex": 1,
+        "sourceLine": 6,
+        "targetLine": 7,
+        "targetText": "nonsense (and 10 years of watching Peter Schiff miss buying bitcoin",
+        "targetUnits": [
+          "B2"
+        ],
+        "hit": true,
+        "sourceNonblankRank": 6
+      },
+      {
+        "model": "corrected_nonblank_lines",
+        "sourceId": "B2",
+        "sourceIndex": 2,
+        "sourceLine": 7,
+        "targetLine": 9,
+        "targetText": "have dulled shitcoiners' and nocoiners' minds.",
+        "targetUnits": [],
+        "hit": false,
+        "sourceNonblankRank": 7
+      },
+      {
+        "model": "corrected_nonblank_lines",
+        "sourceId": "O3",
+        "sourceIndex": 3,
+        "sourceLine": 13,
+        "targetLine": 17,
+        "targetText": "A monetary defibrillator to the treasure chest.",
+        "targetUnits": [],
+        "hit": false,
+        "sourceNonblankRank": 12
+      },
+      {
+        "model": "corrected_nonblank_lines",
+        "sourceId": "B3",
+        "sourceIndex": 3,
+        "sourceLine": 16,
+        "targetLine": 20,
+        "targetText": "Have you seen the president of El Salvador",
+        "targetUnits": [],
+        "hit": false,
+        "sourceNonblankRank": 14
+      },
+      {
+        "model": "corrected_nonblank_lines",
+        "sourceId": "O4",
+        "sourceIndex": 4,
+        "sourceLine": 22,
+        "targetLine": 26,
+        "targetText": "billions worth of future bitcoin earnings",
+        "targetUnits": [],
+        "hit": false,
+        "sourceNonblankRank": 19
+      },
+      {
+        "model": "corrected_nonblank_lines",
+        "sourceId": "B4",
+        "sourceIndex": 4,
+        "sourceLine": 25,
+        "targetLine": 29,
+        "targetText": "Novogratz in the tweet, figuring he could sell a",
+        "targetUnits": [],
+        "hit": false,
+        "sourceNonblankRank": 22
+      },
+      {
+        "model": "corrected_nonblank_lines",
+        "sourceId": "B5",
+        "sourceIndex": 5,
+        "sourceLine": 27,
+        "targetLine": 32,
+        "targetText": "Maybe because he's a shitcoiner at heart.",
+        "targetUnits": [
+          "O5"
+        ],
+        "hit": true,
+        "sourceNonblankRank": 24
+      },
+      {
+        "model": "corrected_nonblank_lines",
+        "sourceId": "O5",
+        "sourceIndex": 5,
+        "sourceLine": 32,
+        "targetLine": null,
+        "targetText": "",
+        "targetUnits": [],
+        "hit": false,
+        "sourceNonblankRank": 29
+      }
+    ],
+    "paragraph_local_nonblank_lines": [
+      {
+        "model": "paragraph_local_nonblank_lines",
+        "sourceId": "O1",
+        "sourceIndex": 1,
+        "sourceLine": 0,
+        "targetLine": 1,
+        "targetText": "Bitcoin. It's the freaking UTXO ghetto up in here, y'all.",
+        "targetUnits": [
+          "O2"
+        ],
+        "hit": true,
+        "paragraphIndex": 0,
+        "sourceParagraphRank": 0
+      },
+      {
+        "model": "paragraph_local_nonblank_lines",
+        "sourceId": "O2",
+        "sourceIndex": 2,
+        "sourceLine": 1,
+        "targetLine": 3,
+        "targetText": "but George Clinton and James Brown clones. It's Martin Luther",
+        "targetUnits": [],
+        "hit": false,
+        "paragraphIndex": 0,
+        "sourceParagraphRank": 1
+      },
+      {
+        "model": "paragraph_local_nonblank_lines",
+        "sourceId": "B1",
+        "sourceIndex": 1,
+        "sourceLine": 6,
+        "targetLine": 7,
+        "targetText": "nonsense (and 10 years of watching Peter Schiff miss buying bitcoin",
+        "targetUnits": [
+          "B2"
+        ],
+        "hit": true,
+        "paragraphIndex": 0,
+        "sourceParagraphRank": 6
+      },
+      {
+        "model": "paragraph_local_nonblank_lines",
+        "sourceId": "B2",
+        "sourceIndex": 2,
+        "sourceLine": 7,
+        "targetLine": 9,
+        "targetText": "have dulled shitcoiners' and nocoiners' minds.",
+        "targetUnits": [],
+        "hit": false,
+        "paragraphIndex": 0,
+        "sourceParagraphRank": 7
+      },
+      {
+        "model": "paragraph_local_nonblank_lines",
+        "sourceId": "O3",
+        "sourceIndex": 3,
+        "sourceLine": 13,
+        "targetLine": null,
+        "targetText": "",
+        "targetUnits": [],
+        "hit": false,
+        "paragraphIndex": 1,
+        "sourceParagraphRank": 2
+      },
+      {
+        "model": "paragraph_local_nonblank_lines",
+        "sourceId": "B3",
+        "sourceIndex": 3,
+        "sourceLine": 16,
+        "targetLine": null,
+        "targetText": "",
+        "targetUnits": [],
+        "hit": false,
+        "paragraphIndex": 2,
+        "sourceParagraphRank": 1
+      },
+      {
+        "model": "paragraph_local_nonblank_lines",
+        "sourceId": "O4",
+        "sourceIndex": 4,
+        "sourceLine": 22,
+        "targetLine": 26,
+        "targetText": "billions worth of future bitcoin earnings",
+        "targetUnits": [],
+        "hit": false,
+        "paragraphIndex": 3,
+        "sourceParagraphRank": 3
+      },
+      {
+        "model": "paragraph_local_nonblank_lines",
+        "sourceId": "B4",
+        "sourceIndex": 4,
+        "sourceLine": 25,
+        "targetLine": 29,
+        "targetText": "Novogratz in the tweet, figuring he could sell a",
+        "targetUnits": [],
+        "hit": false,
+        "paragraphIndex": 3,
+        "sourceParagraphRank": 6
+      },
+      {
+        "model": "paragraph_local_nonblank_lines",
+        "sourceId": "B5",
+        "sourceIndex": 5,
+        "sourceLine": 27,
+        "targetLine": 32,
+        "targetText": "Maybe because he's a shitcoiner at heart.",
+        "targetUnits": [
+          "O5"
+        ],
+        "hit": true,
+        "paragraphIndex": 3,
+        "sourceParagraphRank": 8
+      },
+      {
+        "model": "paragraph_local_nonblank_lines",
+        "sourceId": "O5",
+        "sourceIndex": 5,
+        "sourceLine": 32,
+        "targetLine": null,
+        "targetText": "",
+        "targetUnits": [],
+        "hit": false,
+        "paragraphIndex": 3,
+        "sourceParagraphRank": 13
+      }
+    ],
+    "highres_highlight_row_order": [
+      {
+        "model": "highres_highlight_row_order",
+        "sourceId": "O1",
+        "sourceIndex": 1,
+        "sourceHighlightRow": 0,
+        "targetHighlightRow": 1,
+        "targetUnits": [
+          "O2"
+        ],
+        "hit": true
+      },
+      {
+        "model": "highres_highlight_row_order",
+        "sourceId": "O2",
+        "sourceIndex": 2,
+        "sourceHighlightRow": 1,
+        "targetHighlightRow": 3,
+        "targetUnits": [
+          "B2"
+        ],
+        "hit": true
+      },
+      {
+        "model": "highres_highlight_row_order",
+        "sourceId": "B1",
+        "sourceIndex": 1,
+        "sourceHighlightRow": 2,
+        "targetHighlightRow": 3,
+        "targetUnits": [
+          "B2"
+        ],
+        "hit": true
+      },
+      {
+        "model": "highres_highlight_row_order",
+        "sourceId": "B2",
+        "sourceIndex": 2,
+        "sourceHighlightRow": 3,
+        "targetHighlightRow": 5,
+        "targetUnits": [
+          "B3"
+        ],
+        "hit": true
+      },
+      {
+        "model": "highres_highlight_row_order",
+        "sourceId": "O3",
+        "sourceIndex": 3,
+        "sourceHighlightRow": 4,
+        "targetHighlightRow": 7,
+        "targetUnits": [
+          "B4"
+        ],
+        "hit": true
+      },
+      {
+        "model": "highres_highlight_row_order",
+        "sourceId": "B3",
+        "sourceIndex": 3,
+        "sourceHighlightRow": 5,
+        "targetHighlightRow": 8,
+        "targetUnits": [
+          "O5",
+          "B5"
+        ],
+        "hit": true
+      },
+      {
+        "model": "highres_highlight_row_order",
+        "sourceId": "O4",
+        "sourceIndex": 4,
+        "sourceHighlightRow": 6,
+        "targetHighlightRow": 10,
+        "targetUnits": [],
+        "hit": false
+      },
+      {
+        "model": "highres_highlight_row_order",
+        "sourceId": "B4",
+        "sourceIndex": 4,
+        "sourceHighlightRow": 7,
+        "targetHighlightRow": 11,
+        "targetUnits": [],
+        "hit": false
+      },
+      {
+        "model": "highres_highlight_row_order",
+        "sourceId": "B5",
+        "sourceIndex": 5,
+        "sourceHighlightRow": 8,
+        "targetHighlightRow": 13,
+        "targetUnits": [],
+        "hit": false
+      },
+      {
+        "model": "highres_highlight_row_order",
+        "sourceId": "O5",
+        "sourceIndex": 5,
+        "sourceHighlightRow": 8,
+        "targetHighlightRow": 13,
+        "targetUnits": [],
+        "hit": false
+      }
+    ]
+  },
+  "assessment": [
+    "The strongest partial pattern is the corrected-with-blank-lines model: O1->O2, B1->B2, O3->B3, B5->O5.",
+    "The nonblank-line model loses O3->B3 because the blank row between the rancid-catnip line and the stun-gun line matters.",
+    "Paragraph-local counting loses the cross-paragraph O3->B3 bridge.",
+    "High-res highlight-row order produces a different set of hits and should not replace corrected text lines as the locator model.",
+    "#2 and #4 still fail in the corrected line model; the complete line-offset rule remains closed."
+  ],
+  "nextMove": "Treat corrected printed line layout, including blank rows, as the only line-counting model worth preserving. Keep looking for source/physical evidence that explains the #2/#4 gaps or chooses the extraction unit."
+}

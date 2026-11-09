@@ -1,0 +1,171 @@
+{
+  "createdAt": "2026-05-20T21:04:13",
+  "scope": "Active O4/B4/G5/O5 line-unit reconciliation across corrected text, sentence rows, page lines, corridor indexes, and DOCM states. No key derivation.",
+  "sources": {
+    "anchorAdjacency": "analysis_outputs/source_audit/page76_anchor_adjacency_units/page76_anchor_adjacency_units.json",
+    "sentenceLineBridge": "analysis_outputs/plain_text_transcript/sentence_line_highlight_bridge/sentence_line_highlight_bridge.json",
+    "correctionSelectorImpact": "analysis_outputs/plain_text_transcript/correction_selector_impact/correction_selector_impact.json"
+  },
+  "records": [
+    {
+      "order": 1,
+      "id": "buying_dip",
+      "label": "buying the dip",
+      "color": "orange",
+      "visualState": "Y",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "yellow": 14
+      },
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "sentenceRow": 44,
+      "sentenceSpan": "22",
+      "sentenceCorridorSpan": "4",
+      "canonicalLine": "He's taunting them, telling them he's \u201cbuying the dip.\u201d",
+      "leftBoundaryWord": "he's",
+      "rightBoundaryWord": "-",
+      "aboveWord": "on",
+      "belowWord": "announced",
+      "phraseInitials": "btd",
+      "phraseEdges": "bp"
+    },
+    {
+      "order": 2,
+      "id": "one_billion",
+      "label": "$1 billion",
+      "color": "black",
+      "visualState": "K",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "black": 10
+      },
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "sentenceRow": 45,
+      "sentenceSpan": "23-28",
+      "sentenceCorridorSpan": "5-10",
+      "canonicalLine": "$1 billion in bitcoin \u2014 that he should sell",
+      "leftBoundaryWord": "-",
+      "rightBoundaryWord": "in",
+      "aboveWord": "was",
+      "belowWord": "billions",
+      "phraseInitials": "1b",
+      "phraseEdges": "1n"
+    },
+    {
+      "order": 3,
+      "id": "volcano_bonds",
+      "label": "Volcano Bonds",
+      "color": "black",
+      "visualState": "K",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "black": 13
+      },
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "sentenceRow": 45,
+      "sentenceSpan": "23-28",
+      "sentenceCorridorSpan": "5-10",
+      "canonicalLine": "collateralized \u201cVolcano Bonds\u201d to pay off the IMF",
+      "leftBoundaryWord": "collateralized",
+      "rightBoundaryWord": "to",
+      "aboveWord": "future",
+      "belowWord": "those",
+      "phraseInitials": "vb",
+      "phraseEdges": "vs"
+    },
+    {
+      "order": 4,
+      "id": "shitcoiner_heart",
+      "label": "shitcoiner at heart",
+      "color": "orange",
+      "visualState": "Y",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "yellow": 19
+      },
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "sentenceRow": 48,
+      "sentenceSpan": "32",
+      "sentenceCorridorSpan": "14",
+      "canonicalLine": "Maybe because he's a shitcoiner at heart.",
+      "leftBoundaryWord": "a",
+      "rightBoundaryWord": "-",
+      "aboveWord": "trust",
+      "belowWord": "-",
+      "phraseInitials": "sah",
+      "phraseEdges": "st"
+    }
+  ],
+  "duplicateSentenceRows": {
+    "45": [
+      "one_billion",
+      "volcano_bonds"
+    ]
+  },
+  "streams": {
+    "visualStateOrder": "YKKY",
+    "pageLines": "22 25 27 32",
+    "sentenceRows": "44 45 45 48",
+    "corridorIndexes": "4 7 9 14",
+    "sentenceLinePairs": "44-22 45-25 45-27 48-32",
+    "lineGaps": "3 2 5",
+    "sentenceGaps": "1 0 3",
+    "corridorGaps": "3 2 5",
+    "phraseInitials": "btd 1b vb sah",
+    "phraseEdges": "bp 1n vs st",
+    "leftBoundaryWords": "he's | - | collateralized | a",
+    "rightBoundaryWords": "- | in | to | -",
+    "aboveWords": "on | was | future | trust",
+    "belowWords": "announced | billions | those | -",
+    "leftBoundaryInitials": "h-ca",
+    "rightBoundaryInitials": "-it-",
+    "aboveInitials": "owft",
+    "belowInitials": "abt-",
+    "leftBoundaryLasts": "s-da",
+    "rightBoundaryLasts": "-no-",
+    "aboveLasts": "nset",
+    "belowLasts": "dse-"
+  },
+  "streamInstructionHits": {
+    "visualStateOrder": [],
+    "pageLines": [],
+    "sentenceRows": [],
+    "corridorIndexes": [],
+    "sentenceLinePairs": [],
+    "lineGaps": [],
+    "sentenceGaps": [],
+    "corridorGaps": [],
+    "phraseInitials": [],
+    "phraseEdges": [],
+    "leftBoundaryWords": [],
+    "rightBoundaryWords": [],
+    "aboveWords": [],
+    "belowWords": [],
+    "leftBoundaryInitials": [],
+    "rightBoundaryInitials": [],
+    "aboveInitials": [],
+    "belowInitials": [],
+    "leftBoundaryLasts": [],
+    "rightBoundaryLasts": [],
+    "aboveLasts": [],
+    "belowLasts": []
+  },
+  "selectorPermissionCorrections": [],
+  "assessment": [
+    "O4/B4/G5/O5 are stable as visual/DOCM units, but they do not map one-to-one across sentence rows and printed line rows.",
+    "B4 `$1 billion` and G5 `Volcano Bonds` share canonical sentence row 45 while occupying different printed lines; this blocks sentence-row numbering as a precise four-unit selector.",
+    "The four active line units form page-line stream `22 25 27 32`, sentence stream `44 45 45 48`, and corridor-index stream `4 7 9 14`; none contains procedural terms or an obvious human-readable instruction.",
+    "The O-B-B-O / Y-K-K-Y visual-state order remains real, but it is only a locator signature unless a clue names sentence, line, corridor index, or side words.",
+    "The latest correction audit confirms no correction-added word grants selector permission, so line-unit reconciliation remains validation-only."
+  ],
+  "decision": "Use active line/sentence/corridor rows as locator evidence only. Do not extract by line, sentence, gap, or side-word streams without a new clue naming that unit.",
+  "nextMove": "Keep source/original-layout validation as the next productive path; reopen line units only if a clue explicitly says sentence, line, gap, first/last, or side."
+}

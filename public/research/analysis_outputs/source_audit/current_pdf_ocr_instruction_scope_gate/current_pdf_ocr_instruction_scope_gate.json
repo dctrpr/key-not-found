@@ -1,0 +1,2208 @@
+{
+  "createdAt": "2026-05-24T20:07:41",
+  "scope": "Current PDF OCR instruction-scope gate. Scans current PDF OCR/text overlay tokens for bounded action-plus-unit instruction windows. No OCR-to-key extraction, candidate generation, hashes-to-key, seed/WIF/address checks, BIP39 checks, or broad brute force.",
+  "decision": "current_pdf_ocr_instruction_scope_no_selector",
+  "inputs": {
+    "pdfs": [
+      "magazine.pdf",
+      "keyser bitcoin .pdf",
+      "analysis_outputs/external_clues/google_drive_article_download.pdf"
+    ],
+    "textOverlayGate": "analysis_outputs/source_audit/current_pdf_text_overlay_render_mode_gate/current_pdf_text_overlay_render_mode_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json",
+    "windowRadiusTokens": 6
+  },
+  "summary": {
+    "pdfCount": 3,
+    "pageCount": 24,
+    "tokenCount": 4160,
+    "actionTermCount": 10,
+    "unitTermCount": 10,
+    "transformTermCount": 0,
+    "targetTermCount": 98,
+    "actionUnitWindowCount": 0,
+    "candidateWindowCount": 0,
+    "hardPhraseHitCount": 0,
+    "visiblePaintedTraceSpanCount": 0,
+    "invisibleType3TraceSpanCount": 755,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorCandidateCount": 0,
+    "fingerprint": "pdfs=3|pages=24|tokens=4160|action=10|unit=10|transform=0|target=98|actionUnitWindows=0|candidates=0|hardPhrases=0|visible=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "pdfRows": [
+    {
+      "pdf": "magazine.pdf",
+      "pageCount": 8,
+      "tokenCount": 1636,
+      "actionTermCount": 0,
+      "unitTermCount": 0,
+      "transformTermCount": 0,
+      "targetTermCount": 0,
+      "termCounts": {},
+      "pageRows": [
+        {
+          "pdf": "magazine.pdf",
+          "articlePage": 73,
+          "tokenCount": 25,
+          "actionCount": 0,
+          "unitCount": 0,
+          "transformCount": 0,
+          "targetCount": 0,
+          "termCounts": {}
+        },
+        {
+          "pdf": "magazine.pdf",
+          "articlePage": 74,
+          "tokenCount": 2,
+          "actionCount": 0,
+          "unitCount": 0,
+          "transformCount": 0,
+          "targetCount": 0,
+          "termCounts": {}
+        },
+        {
+          "pdf": "magazine.pdf",
+          "articlePage": 75,
+          "tokenCount": 377,
+          "actionCount": 0,
+          "unitCount": 0,
+          "transformCount": 0,
+          "targetCount": 0,
+          "termCounts": {}
+        },
+        {
+          "pdf": "magazine.pdf",
+          "articlePage": 76,
+          "tokenCount": 340,
+          "actionCount": 0,
+          "unitCount": 0,
+          "transformCount": 0,
+          "targetCount": 0,
+          "termCounts": {}
+        },
+        {
+          "pdf": "magazine.pdf",
+          "articlePage": 77,
+          "tokenCount": 357,
+          "actionCount": 0,
+          "unitCount": 0,
+          "transformCount": 0,
+          "targetCount": 0,
+          "termCounts": {}
+        },
+        {
+          "pdf": "magazine.pdf",
+          "articlePage": 78,
+          "tokenCount": 266,
+          "actionCount": 0,
+          "unitCount": 0,
+          "transformCount": 0,
+          "targetCount": 0,
+          "termCounts": {}
+        },
+        {
+          "pdf": "magazine.pdf",
+          "articlePage": 79,
+          "tokenCount": 254,
+          "actionCount": 0,
+          "unitCount": 0,
+          "transformCount": 0,
+          "targetCount": 0,
+          "termCounts": {}
+        },
+        {
+          "pdf": "magazine.pdf",
+          "articlePage": 80,
+          "tokenCount": 15,
+          "actionCount": 0,
+          "unitCount": 0,
+          "transformCount": 0,
+          "targetCount": 0,
+          "termCounts": {}
+        }
+      ],
+      "termRows": [],
+      "actionUnitWindowRows": [],
+      "candidateRows": [],
+      "hardPhraseRows": []
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "pageCount": 8,
+      "tokenCount": 1262,
+      "actionTermCount": 5,
+      "unitTermCount": 5,
+      "transformTermCount": 0,
+      "targetTermCount": 49,
+      "termCounts": {
+        "billions": 2,
+        "bitcoin": 29,
+        "bukele": 1,
+        "first": 3,
+        "get": 3,
+        "heart": 1,
+        "imf": 2,
+        "look": 1,
+        "open": 1,
+        "overdose": 4,
+        "right": 1,
+        "salvador": 4,
+        "satoshi": 1,
+        "sell": 1,
+        "shitcoiners": 3,
+        "volcanoes": 1,
+        "words": 1
+      },
+      "pageRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 73,
+          "tokenCount": 6,
+          "actionCount": 0,
+          "unitCount": 0,
+          "transformCount": 0,
+          "targetCount": 1,
+          "termCounts": {
+            "overdose": 1
+          }
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 74,
+          "tokenCount": 1,
+          "actionCount": 0,
+          "unitCount": 0,
+          "transformCount": 0,
+          "targetCount": 1,
+          "termCounts": {
+            "overdose": 1
+          }
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 75,
+          "tokenCount": 273,
+          "actionCount": 1,
+          "unitCount": 1,
+          "transformCount": 0,
+          "targetCount": 11,
+          "termCounts": {
+            "bitcoin": 8,
+            "look": 1,
+            "satoshi": 1,
+            "shitcoiners": 2,
+            "words": 1
+          }
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "tokenCount": 281,
+          "actionCount": 4,
+          "unitCount": 0,
+          "transformCount": 0,
+          "targetCount": 17,
+          "termCounts": {
+            "billions": 1,
+            "bitcoin": 6,
+            "bukele": 1,
+            "get": 3,
+            "heart": 1,
+            "imf": 2,
+            "open": 1,
+            "overdose": 1,
+            "salvador": 2,
+            "sell": 1,
+            "shitcoiners": 1,
+            "volcanoes": 1
+          }
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 77,
+          "tokenCount": 281,
+          "actionCount": 0,
+          "unitCount": 2,
+          "transformCount": 0,
+          "targetCount": 5,
+          "termCounts": {
+            "bitcoin": 4,
+            "first": 2,
+            "salvador": 1
+          }
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "tokenCount": 202,
+          "actionCount": 0,
+          "unitCount": 1,
+          "transformCount": 0,
+          "targetCount": 8,
+          "termCounts": {
+            "bitcoin": 6,
+            "overdose": 1,
+            "right": 1,
+            "salvador": 1
+          }
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 79,
+          "tokenCount": 216,
+          "actionCount": 0,
+          "unitCount": 1,
+          "transformCount": 0,
+          "targetCount": 6,
+          "termCounts": {
+            "billions": 1,
+            "bitcoin": 5,
+            "first": 1
+          }
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 80,
+          "tokenCount": 2,
+          "actionCount": 0,
+          "unitCount": 0,
+          "transformCount": 0,
+          "targetCount": 0,
+          "termCounts": {}
+        }
+      ],
+      "termRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 73,
+          "token": "overdose",
+          "categories": [
+            "target"
+          ],
+          "raw": "OVERDOSE",
+          "bbox": [
+            55.92,
+            29.24,
+            88.134,
+            34.245
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 74,
+          "token": "overdose",
+          "categories": [
+            "target"
+          ],
+          "raw": "OVERDOSE",
+          "bbox": [
+            504.24,
+            35.92,
+            537.75,
+            41.926
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 75,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "BITCOIN",
+          "bbox": [
+            57.0,
+            74.985,
+            146.653,
+            99.541
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 75,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            231.12,
+            121.96,
+            267.45,
+            130.969
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 75,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            198.48,
+            187.48,
+            231.871,
+            196.489
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 75,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            208.8,
+            301.2,
+            242.19,
+            311.21
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 75,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin.",
+          "bbox": [
+            113.28,
+            361.68,
+            150.186,
+            371.69
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 75,
+          "token": "shitcoiners",
+          "categories": [
+            "target"
+          ],
+          "raw": "shitcoiners,",
+          "bbox": [
+            393.84,
+            361.68,
+            454.763,
+            371.69
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 75,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            252.72,
+            394.32,
+            287.58,
+            404.33
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 75,
+          "token": "look",
+          "categories": [
+            "action"
+          ],
+          "raw": "Look,",
+          "bbox": [
+            113.28,
+            409.88,
+            136.68,
+            420.891
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 75,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            132.48,
+            557.48,
+            173.431,
+            568.491
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 75,
+          "token": "satoshi",
+          "categories": [
+            "target"
+          ],
+          "raw": "Satoshi",
+          "bbox": [
+            248.64,
+            574.04,
+            283.71,
+            585.051
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 75,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin's",
+          "bbox": [
+            236.16,
+            607.68,
+            282.385,
+            617.69
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 75,
+          "token": "words",
+          "categories": [
+            "unit"
+          ],
+          "raw": "words",
+          "bbox": [
+            210.0,
+            641.32,
+            234.801,
+            650.329
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 75,
+          "token": "shitcoiners",
+          "categories": [
+            "target"
+          ],
+          "raw": "shitcoiners",
+          "bbox": [
+            338.16,
+            641.32,
+            393.821,
+            650.329
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "overdose",
+          "categories": [
+            "target"
+          ],
+          "raw": "OVERDOSE",
+          "bbox": [
+            514.32,
+            29.4,
+            547.814,
+            36.407
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "get",
+          "categories": [
+            "action"
+          ],
+          "raw": "Get",
+          "bbox": [
+            194.16,
+            76.64,
+            211.26,
+            90.654
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "get",
+          "categories": [
+            "action"
+          ],
+          "raw": "Get",
+          "bbox": [
+            303.36,
+            76.64,
+            319.561,
+            90.654
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin.",
+          "bbox": [
+            353.04,
+            76.64,
+            398.693,
+            90.654
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "open",
+          "categories": [
+            "action"
+          ],
+          "raw": "Open",
+          "bbox": [
+            404.16,
+            76.64,
+            427.201,
+            90.654
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "heart",
+          "categories": [
+            "target"
+          ],
+          "raw": "heart",
+          "bbox": [
+            462.48,
+            76.64,
+            491.081,
+            90.654
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin",
+          "bbox": [
+            476.64,
+            196.0,
+            512.971,
+            208.012
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "shitcoiners",
+          "categories": [
+            "target"
+          ],
+          "raw": "shitcoiners'",
+          "bbox": [
+            327.84,
+            230.12,
+            392.086,
+            241.131
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin",
+          "bbox": [
+            399.6,
+            290.52,
+            432.361,
+            309.539
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            565.752,
+            405.549,
+            573.848,
+            427.632
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "salvador",
+          "categories": [
+            "target"
+          ],
+          "raw": "Salvador",
+          "bbox": [
+            565.377,
+            311.945,
+            573.501,
+            340.99
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "salvador",
+          "categories": [
+            "target"
+          ],
+          "raw": "Salvador",
+          "bbox": [
+            299.04,
+            449.76,
+            341.921,
+            459.77
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "imf",
+          "categories": [
+            "target"
+          ],
+          "raw": "(IMF)",
+          "bbox": [
+            341.04,
+            467.32,
+            362.441,
+            476.329
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "bukele",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bukele",
+          "bbox": [
+            264.72,
+            498.96,
+            298.252,
+            508.97
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "volcanoes",
+          "categories": [
+            "target"
+          ],
+          "raw": "volcanoes",
+          "bbox": [
+            288.96,
+            516.28,
+            335.616,
+            525.289
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin",
+          "bbox": [
+            192.48,
+            532.6,
+            225.241,
+            541.609
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "sell",
+          "categories": [
+            "target"
+          ],
+          "raw": "sell",
+          "bbox": [
+            327.12,
+            532.6,
+            344.4,
+            541.609
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "billions",
+          "categories": [
+            "target"
+          ],
+          "raw": "billions",
+          "bbox": [
+            116.4,
+            549.16,
+            156.08,
+            558.169
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin",
+          "bbox": [
+            251.28,
+            549.16,
+            284.04,
+            558.169
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "imf",
+          "categories": [
+            "target"
+          ],
+          "raw": "IMF",
+          "bbox": [
+            368.64,
+            564.48,
+            384.48,
+            574.49
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "token": "get",
+          "categories": [
+            "action"
+          ],
+          "raw": "get",
+          "bbox": [
+            167.52,
+            581.04,
+            179.941,
+            591.05
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 77,
+          "token": "salvador",
+          "categories": [
+            "target"
+          ],
+          "raw": "Salvador,",
+          "bbox": [
+            219.864,
+            79.822,
+            263.354,
+            90.999
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 77,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "BITCOIN",
+          "bbox": [
+            236.144,
+            397.145,
+            280.963,
+            409.314
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 77,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "BITCOIN.",
+          "bbox": [
+            435.17,
+            451.474,
+            484.54,
+            463.761
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 77,
+          "token": "first",
+          "categories": [
+            "unit"
+          ],
+          "raw": "first",
+          "bbox": [
+            342.049,
+            511.054,
+            361.478,
+            520.543
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 77,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin",
+          "bbox": [
+            196.078,
+            523.73,
+            229.283,
+            533.564
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 77,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin's",
+          "bbox": [
+            446.237,
+            563.094,
+            497.67,
+            573.383
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 77,
+          "token": "first",
+          "categories": [
+            "unit"
+          ],
+          "raw": "first",
+          "bbox": [
+            479.119,
+            629.544,
+            498.553,
+            639.033
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "token": "overdose",
+          "categories": [
+            "target"
+          ],
+          "raw": "OVERDOSE",
+          "bbox": [
+            502.08,
+            30.88,
+            535.36,
+            36.886
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin.",
+          "bbox": [
+            292.577,
+            97.365,
+            329.363,
+            106.742
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "BITCOIN",
+          "bbox": [
+            101.76,
+            341.08,
+            139.005,
+            350.386
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin.",
+          "bbox": [
+            405.848,
+            359.803,
+            442.827,
+            369.107
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            101.752,
+            390.521,
+            134.795,
+            399.794
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin",
+          "bbox": [
+            386.88,
+            427.12,
+            430.561,
+            439.132
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "token": "right",
+          "categories": [
+            "unit"
+          ],
+          "raw": "right",
+          "bbox": [
+            329.28,
+            479.8,
+            352.48,
+            488.809
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            549.96,
+            407.913,
+            559.057,
+            430.0
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "token": "salvador",
+          "categories": [
+            "target"
+          ],
+          "raw": "Salvador",
+          "bbox": [
+            550.307,
+            314.309,
+            559.432,
+            343.359
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 79,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin",
+          "bbox": [
+            224.905,
+            120.776,
+            257.902,
+            132.476
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 79,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            136.314,
+            169.964,
+            169.872,
+            179.575
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 79,
+          "token": "first",
+          "categories": [
+            "unit"
+          ],
+          "raw": "first",
+          "bbox": [
+            346.398,
+            233.904,
+            370.428,
+            242.555
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 79,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            317.973,
+            261.908,
+            354.998,
+            275.407
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 79,
+          "token": "billions",
+          "categories": [
+            "target"
+          ],
+          "raw": "billions",
+          "bbox": [
+            162.94,
+            289.87,
+            206.009,
+            301.62
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 79,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            257.52,
+            397.954,
+            294.555,
+            408.957
+          ]
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 79,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            382.108,
+            525.322,
+            419.133,
+            536.288
+          ]
+        }
+      ],
+      "actionUnitWindowRows": [],
+      "candidateRows": [],
+      "hardPhraseRows": []
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "pageCount": 8,
+      "tokenCount": 1262,
+      "actionTermCount": 5,
+      "unitTermCount": 5,
+      "transformTermCount": 0,
+      "targetTermCount": 49,
+      "termCounts": {
+        "billions": 2,
+        "bitcoin": 29,
+        "bukele": 1,
+        "first": 3,
+        "get": 3,
+        "heart": 1,
+        "imf": 2,
+        "look": 1,
+        "open": 1,
+        "overdose": 4,
+        "right": 1,
+        "salvador": 4,
+        "satoshi": 1,
+        "sell": 1,
+        "shitcoiners": 3,
+        "volcanoes": 1,
+        "words": 1
+      },
+      "pageRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 73,
+          "tokenCount": 6,
+          "actionCount": 0,
+          "unitCount": 0,
+          "transformCount": 0,
+          "targetCount": 1,
+          "termCounts": {
+            "overdose": 1
+          }
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 74,
+          "tokenCount": 1,
+          "actionCount": 0,
+          "unitCount": 0,
+          "transformCount": 0,
+          "targetCount": 1,
+          "termCounts": {
+            "overdose": 1
+          }
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 75,
+          "tokenCount": 273,
+          "actionCount": 1,
+          "unitCount": 1,
+          "transformCount": 0,
+          "targetCount": 11,
+          "termCounts": {
+            "bitcoin": 8,
+            "look": 1,
+            "satoshi": 1,
+            "shitcoiners": 2,
+            "words": 1
+          }
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "tokenCount": 281,
+          "actionCount": 4,
+          "unitCount": 0,
+          "transformCount": 0,
+          "targetCount": 17,
+          "termCounts": {
+            "billions": 1,
+            "bitcoin": 6,
+            "bukele": 1,
+            "get": 3,
+            "heart": 1,
+            "imf": 2,
+            "open": 1,
+            "overdose": 1,
+            "salvador": 2,
+            "sell": 1,
+            "shitcoiners": 1,
+            "volcanoes": 1
+          }
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 77,
+          "tokenCount": 281,
+          "actionCount": 0,
+          "unitCount": 2,
+          "transformCount": 0,
+          "targetCount": 5,
+          "termCounts": {
+            "bitcoin": 4,
+            "first": 2,
+            "salvador": 1
+          }
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "tokenCount": 202,
+          "actionCount": 0,
+          "unitCount": 1,
+          "transformCount": 0,
+          "targetCount": 8,
+          "termCounts": {
+            "bitcoin": 6,
+            "overdose": 1,
+            "right": 1,
+            "salvador": 1
+          }
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 79,
+          "tokenCount": 216,
+          "actionCount": 0,
+          "unitCount": 1,
+          "transformCount": 0,
+          "targetCount": 6,
+          "termCounts": {
+            "billions": 1,
+            "bitcoin": 5,
+            "first": 1
+          }
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 80,
+          "tokenCount": 2,
+          "actionCount": 0,
+          "unitCount": 0,
+          "transformCount": 0,
+          "targetCount": 0,
+          "termCounts": {}
+        }
+      ],
+      "termRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 73,
+          "token": "overdose",
+          "categories": [
+            "target"
+          ],
+          "raw": "OVERDOSE",
+          "bbox": [
+            55.92,
+            29.24,
+            88.134,
+            34.245
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 74,
+          "token": "overdose",
+          "categories": [
+            "target"
+          ],
+          "raw": "OVERDOSE",
+          "bbox": [
+            504.24,
+            35.92,
+            537.75,
+            41.926
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 75,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "BITCOIN",
+          "bbox": [
+            57.0,
+            74.985,
+            146.653,
+            99.541
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 75,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            231.12,
+            121.96,
+            267.45,
+            130.969
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 75,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            198.48,
+            187.48,
+            231.871,
+            196.489
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 75,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            208.8,
+            301.2,
+            242.19,
+            311.21
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 75,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin.",
+          "bbox": [
+            113.28,
+            361.68,
+            150.186,
+            371.69
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 75,
+          "token": "shitcoiners",
+          "categories": [
+            "target"
+          ],
+          "raw": "shitcoiners,",
+          "bbox": [
+            393.84,
+            361.68,
+            454.763,
+            371.69
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 75,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            252.72,
+            394.32,
+            287.58,
+            404.33
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 75,
+          "token": "look",
+          "categories": [
+            "action"
+          ],
+          "raw": "Look,",
+          "bbox": [
+            113.28,
+            409.88,
+            136.68,
+            420.891
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 75,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            132.48,
+            557.48,
+            173.431,
+            568.491
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 75,
+          "token": "satoshi",
+          "categories": [
+            "target"
+          ],
+          "raw": "Satoshi",
+          "bbox": [
+            248.64,
+            574.04,
+            283.71,
+            585.051
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 75,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin's",
+          "bbox": [
+            236.16,
+            607.68,
+            282.385,
+            617.69
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 75,
+          "token": "words",
+          "categories": [
+            "unit"
+          ],
+          "raw": "words",
+          "bbox": [
+            210.0,
+            641.32,
+            234.801,
+            650.329
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 75,
+          "token": "shitcoiners",
+          "categories": [
+            "target"
+          ],
+          "raw": "shitcoiners",
+          "bbox": [
+            338.16,
+            641.32,
+            393.821,
+            650.329
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "overdose",
+          "categories": [
+            "target"
+          ],
+          "raw": "OVERDOSE",
+          "bbox": [
+            514.32,
+            29.4,
+            547.814,
+            36.407
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "get",
+          "categories": [
+            "action"
+          ],
+          "raw": "Get",
+          "bbox": [
+            194.16,
+            76.64,
+            211.26,
+            90.654
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "get",
+          "categories": [
+            "action"
+          ],
+          "raw": "Get",
+          "bbox": [
+            303.36,
+            76.64,
+            319.561,
+            90.654
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin.",
+          "bbox": [
+            353.04,
+            76.64,
+            398.693,
+            90.654
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "open",
+          "categories": [
+            "action"
+          ],
+          "raw": "Open",
+          "bbox": [
+            404.16,
+            76.64,
+            427.201,
+            90.654
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "heart",
+          "categories": [
+            "target"
+          ],
+          "raw": "heart",
+          "bbox": [
+            462.48,
+            76.64,
+            491.081,
+            90.654
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin",
+          "bbox": [
+            476.64,
+            196.0,
+            512.971,
+            208.012
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "shitcoiners",
+          "categories": [
+            "target"
+          ],
+          "raw": "shitcoiners'",
+          "bbox": [
+            327.84,
+            230.12,
+            392.086,
+            241.131
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin",
+          "bbox": [
+            399.6,
+            290.52,
+            432.361,
+            309.539
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            565.752,
+            405.549,
+            573.848,
+            427.632
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "salvador",
+          "categories": [
+            "target"
+          ],
+          "raw": "Salvador",
+          "bbox": [
+            565.377,
+            311.945,
+            573.501,
+            340.99
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "salvador",
+          "categories": [
+            "target"
+          ],
+          "raw": "Salvador",
+          "bbox": [
+            299.04,
+            449.76,
+            341.921,
+            459.77
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "imf",
+          "categories": [
+            "target"
+          ],
+          "raw": "(IMF)",
+          "bbox": [
+            341.04,
+            467.32,
+            362.441,
+            476.329
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "bukele",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bukele",
+          "bbox": [
+            264.72,
+            498.96,
+            298.252,
+            508.97
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "volcanoes",
+          "categories": [
+            "target"
+          ],
+          "raw": "volcanoes",
+          "bbox": [
+            288.96,
+            516.28,
+            335.616,
+            525.289
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin",
+          "bbox": [
+            192.48,
+            532.6,
+            225.241,
+            541.609
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "sell",
+          "categories": [
+            "target"
+          ],
+          "raw": "sell",
+          "bbox": [
+            327.12,
+            532.6,
+            344.4,
+            541.609
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "billions",
+          "categories": [
+            "target"
+          ],
+          "raw": "billions",
+          "bbox": [
+            116.4,
+            549.16,
+            156.08,
+            558.169
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin",
+          "bbox": [
+            251.28,
+            549.16,
+            284.04,
+            558.169
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "imf",
+          "categories": [
+            "target"
+          ],
+          "raw": "IMF",
+          "bbox": [
+            368.64,
+            564.48,
+            384.48,
+            574.49
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "token": "get",
+          "categories": [
+            "action"
+          ],
+          "raw": "get",
+          "bbox": [
+            167.52,
+            581.04,
+            179.941,
+            591.05
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 77,
+          "token": "salvador",
+          "categories": [
+            "target"
+          ],
+          "raw": "Salvador,",
+          "bbox": [
+            219.864,
+            79.822,
+            263.354,
+            90.999
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 77,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "BITCOIN",
+          "bbox": [
+            236.144,
+            397.145,
+            280.963,
+            409.314
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 77,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "BITCOIN.",
+          "bbox": [
+            435.17,
+            451.474,
+            484.54,
+            463.761
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 77,
+          "token": "first",
+          "categories": [
+            "unit"
+          ],
+          "raw": "first",
+          "bbox": [
+            342.049,
+            511.054,
+            361.478,
+            520.543
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 77,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin",
+          "bbox": [
+            196.078,
+            523.73,
+            229.283,
+            533.564
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 77,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin's",
+          "bbox": [
+            446.237,
+            563.094,
+            497.67,
+            573.383
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 77,
+          "token": "first",
+          "categories": [
+            "unit"
+          ],
+          "raw": "first",
+          "bbox": [
+            479.119,
+            629.544,
+            498.553,
+            639.033
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "token": "overdose",
+          "categories": [
+            "target"
+          ],
+          "raw": "OVERDOSE",
+          "bbox": [
+            502.08,
+            30.88,
+            535.36,
+            36.886
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin.",
+          "bbox": [
+            292.577,
+            97.365,
+            329.363,
+            106.742
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "BITCOIN",
+          "bbox": [
+            101.76,
+            341.08,
+            139.005,
+            350.386
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin.",
+          "bbox": [
+            405.848,
+            359.803,
+            442.827,
+            369.107
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            101.752,
+            390.521,
+            134.795,
+            399.794
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin",
+          "bbox": [
+            386.88,
+            427.12,
+            430.561,
+            439.132
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "token": "right",
+          "categories": [
+            "unit"
+          ],
+          "raw": "right",
+          "bbox": [
+            329.28,
+            479.8,
+            352.48,
+            488.809
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            549.96,
+            407.913,
+            559.057,
+            430.0
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "token": "salvador",
+          "categories": [
+            "target"
+          ],
+          "raw": "Salvador",
+          "bbox": [
+            550.307,
+            314.309,
+            559.432,
+            343.359
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 79,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "bitcoin",
+          "bbox": [
+            224.905,
+            120.776,
+            257.902,
+            132.476
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 79,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            136.314,
+            169.964,
+            169.872,
+            179.575
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 79,
+          "token": "first",
+          "categories": [
+            "unit"
+          ],
+          "raw": "first",
+          "bbox": [
+            346.398,
+            233.904,
+            370.428,
+            242.555
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 79,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            317.973,
+            261.908,
+            354.998,
+            275.407
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 79,
+          "token": "billions",
+          "categories": [
+            "target"
+          ],
+          "raw": "billions",
+          "bbox": [
+            162.94,
+            289.87,
+            206.009,
+            301.62
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 79,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            257.52,
+            397.954,
+            294.555,
+            408.957
+          ]
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 79,
+          "token": "bitcoin",
+          "categories": [
+            "target"
+          ],
+          "raw": "Bitcoin",
+          "bbox": [
+            382.108,
+            525.322,
+            419.133,
+            536.288
+          ]
+        }
+      ],
+      "actionUnitWindowRows": [],
+      "candidateRows": [],
+      "hardPhraseRows": []
+    }
+  ],
+  "actionUnitWindowRows": [],
+  "candidateRows": [],
+  "hardPhraseRows": [],
+  "nextMove": "Treat current PDF OCR overlays as invisible derivative context only. Reopen OCR/layout text only for a distinct original-layout source or raw clue that supplies action plus unit/order."
+}

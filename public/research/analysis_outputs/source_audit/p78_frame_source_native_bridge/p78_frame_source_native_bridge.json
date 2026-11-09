@@ -1,0 +1,117 @@
+{
+  "createdAt": "2026-05-20T11:47:33",
+  "scope": "p78 frame source/native coordinate bridge; no OCR extraction or key derivation",
+  "sourceReports": {
+    "triContact": "analysis_outputs/source_audit/p78_frame_tricontact_signature/p78_frame_tricontact_signature.json"
+  },
+  "transformChain": [
+    "p78 upright source box --horizontal flip--> p76 upright reflected box",
+    "upright box --rotate180--> native PDF/source box"
+  ],
+  "imageSize": [
+    2544,
+    3264
+  ],
+  "rows": [
+    {
+      "name": "current",
+      "label": "current",
+      "dx": 0.0,
+      "dy": 0.0,
+      "color": "#55d6ff",
+      "p78UprightBox": [
+        294,
+        2398,
+        1310,
+        2950
+      ],
+      "p76ReflectedUprightBox": [
+        1234,
+        2398,
+        2250,
+        2950
+      ],
+      "p78NativeBox": [
+        1234,
+        314,
+        2250,
+        866
+      ],
+      "p76NativeBox": [
+        294,
+        314,
+        1310,
+        866
+      ]
+    },
+    {
+      "name": "g5_edge_touch_dx_-38",
+      "label": "g5_edge_touch_dx_-38",
+      "dx": -38.0,
+      "dy": 0.0,
+      "color": "#ff5ebc",
+      "p78UprightBox": [
+        332,
+        2398,
+        1348,
+        2950
+      ],
+      "p76ReflectedUprightBox": [
+        1196,
+        2398,
+        2212,
+        2950
+      ],
+      "p78NativeBox": [
+        1196,
+        314,
+        2212,
+        866
+      ],
+      "p76NativeBox": [
+        332,
+        314,
+        1348,
+        866
+      ]
+    },
+    {
+      "name": "nearest_grid_dx_-40",
+      "label": "nearest_grid_dx_-40",
+      "dx": -40.0,
+      "dy": 0.0,
+      "color": "#ff9b2e",
+      "p78UprightBox": [
+        334,
+        2398,
+        1350,
+        2950
+      ],
+      "p76ReflectedUprightBox": [
+        1194,
+        2398,
+        2210,
+        2950
+      ],
+      "p78NativeBox": [
+        1194,
+        314,
+        2210,
+        866
+      ],
+      "p76NativeBox": [
+        334,
+        314,
+        1350,
+        866
+      ]
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/p78_frame_source_native_bridge/p78_frame_source_native_bridge_sheet.jpg",
+  "assessment": [
+    "The active p78 frame benchmark can now be compared in both the source page and target page coordinate systems.",
+    "The current and dx=-38/-40 repaired frames keep the same simple transform chain: horizontal mirror between p78 and p76, then rotate180 for native source images.",
+    "This preserves the repaired frame as a source-registration benchmark but does not provide a word/letter/line extraction unit."
+  ],
+  "nextMove": "Use these coordinates when comparing any future physical/original-layout source against the p78-frame-to-p76 lower-corridor benchmark."
+}

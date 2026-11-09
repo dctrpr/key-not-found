@@ -1,0 +1,6268 @@
+{
+  "createdAt": "2026-05-24T07:56:32",
+  "scope": "C9-projected OVERDOSE glyph axes controlled against ordinary page-76 C9-frame word centers.",
+  "inputs": {
+    "articleMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "glyphAxisGate": "analysis_outputs/source_audit/overdose_glyph_axis_ruler_gate/overdose_glyph_axis_ruler_gate.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "decision": "overdose_glyph_axis_word_center_control_no_selector",
+  "summary": {
+    "decision": "overdose_glyph_axis_word_center_control_no_selector",
+    "selectedAxisCount": 4,
+    "activeAllFourInsideAxisCount": 4,
+    "activeMeaningfulLayoutAxisCount": 0,
+    "activeStreams": [
+      "ESOR",
+      "ODRV",
+      "RESD",
+      "VODE"
+    ],
+    "c9WordCount": 88,
+    "nonTargetC9ControlWordCount": 85,
+    "controlWordMirrorRowCount": 340,
+    "controlWordMirroredInsideSlotCount": 336,
+    "controlWordMirroredInsideSlotRate": 0.988235,
+    "controlQuartetWindowCount": 328,
+    "controlQuartetAllFourInsideSlotCount": 315,
+    "controlQuartetLayoutTermWindowCount": 1,
+    "controlQuartetStrictInstructionWindowCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0,
+    "fingerprint": "axes=4|activeAll=4|activeLayout=0|streams=ESOR,ODRV,RESD,VODE|c9Words=88|controls=85|ctrlInside=336/340|ctrlAll4=315/328|ctrlLayout=1|ctrlStrict=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "fingerprint": "axes=4|activeAll=4|activeLayout=0|streams=ESOR,ODRV,RESD,VODE|c9Words=88|controls=85|ctrlInside=336/340|ctrlAll4=315/328|ctrlLayout=1|ctrlStrict=0|sourceR3=0|triggers=0/9|selectors=0",
+  "c9Frame": [
+    294.0,
+    2176.81,
+    2250.0,
+    3023.73
+  ],
+  "slots": [
+    {
+      "index": 0,
+      "letter": "O",
+      "left": 294.0,
+      "right": 538.5697177074414,
+      "center": 416.2848588537207
+    },
+    {
+      "index": 1,
+      "letter": "V",
+      "left": 538.5697177074414,
+      "right": 783.0000000000016,
+      "center": 660.7848588537215
+    },
+    {
+      "index": 2,
+      "letter": "E",
+      "left": 783.0000000000016,
+      "right": 1027.569717707443,
+      "center": 905.2848588537223
+    },
+    {
+      "index": 3,
+      "letter": "R",
+      "left": 1027.569717707443,
+      "right": 1271.9999999999968,
+      "center": 1149.78485885372
+    },
+    {
+      "index": 4,
+      "letter": "D",
+      "left": 1271.9999999999968,
+      "right": 1516.5697177074383,
+      "center": 1394.2848588537177
+    },
+    {
+      "index": 5,
+      "letter": "O",
+      "left": 1516.5697177074383,
+      "right": 1760.9999999999984,
+      "center": 1638.7848588537183
+    },
+    {
+      "index": 6,
+      "letter": "S",
+      "left": 1760.9999999999984,
+      "right": 2005.5697177074398,
+      "center": 1883.284858853719
+    },
+    {
+      "index": 7,
+      "letter": "E",
+      "left": 2005.5697177074398,
+      "right": 2250.0,
+      "center": 2127.78485885372
+    }
+  ],
+  "targets": [
+    {
+      "id": "buying_dip",
+      "shortId": "O4",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "visualState": "Y",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "docmBoldFraction": 1.0,
+      "docmHighlightSummary": "yellow:14",
+      "centerX": 1567.5,
+      "centerSlotIndex": 5,
+      "centerSlotLetter": "O",
+      "spanSlotIndexes": [
+        4,
+        5,
+        6
+      ],
+      "spanSlotLetters": "DOS",
+      "spanSlotOverlapsPx": [
+        182.57,
+        244.43,
+        40.0
+      ],
+      "center": [
+        1567.5,
+        2201.0
+      ]
+    },
+    {
+      "id": "one_billion",
+      "shortId": "B4",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "visualState": "K",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "docmBoldFraction": 1.0,
+      "docmHighlightSummary": "black:10",
+      "centerX": 559.5,
+      "centerSlotIndex": 1,
+      "centerSlotLetter": "V",
+      "spanSlotIndexes": [
+        0,
+        1
+      ],
+      "spanSlotLetters": "OV",
+      "spanSlotOverlapsPx": [
+        110.57,
+        152.43
+      ],
+      "center": [
+        559.5,
+        2421.5
+      ]
+    },
+    {
+      "id": "volcano_bonds",
+      "shortId": "G5",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "visualState": "K",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "docmBoldFraction": 1.0,
+      "docmHighlightSummary": "black:13",
+      "centerX": 995.5,
+      "centerSlotIndex": 2,
+      "centerSlotLetter": "E",
+      "spanSlotIndexes": [
+        2,
+        3
+      ],
+      "spanSlotLetters": "ER",
+      "spanSlotOverlapsPx": [
+        232.57,
+        168.43
+      ],
+      "center": [
+        995.5,
+        2568.0
+      ]
+    },
+    {
+      "id": "shitcoiner_heart",
+      "shortId": "O5",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "visualState": "Y",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "docmBoldFraction": 1.0,
+      "docmHighlightSummary": "yellow:19",
+      "centerX": 1350.5,
+      "centerSlotIndex": 4,
+      "centerSlotLetter": "D",
+      "spanSlotIndexes": [
+        3,
+        4,
+        5
+      ],
+      "spanSlotLetters": "RDO",
+      "spanSlotOverlapsPx": [
+        232.0,
+        244.57,
+        144.43
+      ],
+      "center": [
+        1350.5,
+        2957.0
+      ]
+    }
+  ],
+  "axisRows": [
+    {
+      "role": "boundary_3",
+      "letter": "E|R",
+      "axisX": 1027.57,
+      "activeStream": "ODRV",
+      "activeLayoutHits": [],
+      "activeInsideSlotCount": 4,
+      "controlWordCount": 85,
+      "controlWordMirroredInsideSlotCount": 85,
+      "controlWordSlotDistribution": {
+        "D": 19,
+        "E": 16,
+        "O": 9,
+        "R": 23,
+        "V": 18
+      },
+      "controlQuartetWindowCount": 82,
+      "controlQuartetAllFourInsideSlotCount": 82,
+      "controlQuartetLayoutTermWindowCount": 0,
+      "controlQuartetStrictInstructionWindowCount": 0,
+      "controlQuartetNearMissFragmentWindowCount": 0,
+      "controlAllFourStreamCounts": {
+        "DDRR": 7,
+        "DRRE": 5,
+        "RREE": 4,
+        "RREV": 4,
+        "ODDR": 4,
+        "REVV": 3,
+        "EVVO": 3,
+        "DRRR": 3,
+        "RRRE": 3,
+        "VVOD": 3,
+        "REEV": 3,
+        "EEVV": 3
+      },
+      "representativeAllFourWindows": [
+        {
+          "wordIds": [
+            "p76w176",
+            "p76w177",
+            "p76w178",
+            "p76w179"
+          ],
+          "indexes": [
+            176,
+            177,
+            178,
+            179
+          ],
+          "text": "He's taunting them, telling",
+          "stream": "ODRR",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w176",
+              "index": 176,
+              "text": "He's",
+              "token": "hes",
+              "originalX": 519.615,
+              "mirroredX": 1535.525,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w177",
+              "index": 177,
+              "text": "taunting",
+              "token": "taunting",
+              "originalX": 674.075,
+              "mirroredX": 1381.065,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w178",
+              "index": 178,
+              "text": "them,",
+              "token": "them",
+              "originalX": 846.88,
+              "mirroredX": 1208.26,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w179",
+              "index": 179,
+              "text": "telling",
+              "token": "telling",
+              "originalX": 1004.42,
+              "mirroredX": 1050.72,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w177",
+            "p76w178",
+            "p76w179",
+            "p76w180"
+          ],
+          "indexes": [
+            177,
+            178,
+            179,
+            180
+          ],
+          "text": "taunting them, telling them",
+          "stream": "DRRE",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w177",
+              "index": 177,
+              "text": "taunting",
+              "token": "taunting",
+              "originalX": 674.075,
+              "mirroredX": 1381.065,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w178",
+              "index": 178,
+              "text": "them,",
+              "token": "them",
+              "originalX": 846.88,
+              "mirroredX": 1208.26,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w179",
+              "index": 179,
+              "text": "telling",
+              "token": "telling",
+              "originalX": 1004.42,
+              "mirroredX": 1050.72,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w180",
+              "index": 180,
+              "text": "them",
+              "token": "them",
+              "originalX": 1153.87,
+              "mirroredX": 901.27,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w178",
+            "p76w179",
+            "p76w180",
+            "p76w181"
+          ],
+          "indexes": [
+            178,
+            179,
+            180,
+            181
+          ],
+          "text": "them, telling them he's",
+          "stream": "RREE",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w178",
+              "index": 178,
+              "text": "them,",
+              "token": "them",
+              "originalX": 846.88,
+              "mirroredX": 1208.26,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w179",
+              "index": 179,
+              "text": "telling",
+              "token": "telling",
+              "originalX": 1004.42,
+              "mirroredX": 1050.72,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w180",
+              "index": 180,
+              "text": "them",
+              "token": "them",
+              "originalX": 1153.87,
+              "mirroredX": 901.27,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w181",
+              "index": 181,
+              "text": "he's",
+              "token": "hes",
+              "originalX": 1268.86,
+              "mirroredX": 786.28,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w179",
+            "p76w180",
+            "p76w181",
+            "p76w183"
+          ],
+          "indexes": [
+            179,
+            180,
+            181,
+            183
+          ],
+          "text": "telling them he's I",
+          "stream": "REEO",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w179",
+              "index": 179,
+              "text": "telling",
+              "token": "telling",
+              "originalX": 1004.42,
+              "mirroredX": 1050.72,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w180",
+              "index": 180,
+              "text": "them",
+              "token": "them",
+              "originalX": 1153.87,
+              "mirroredX": 901.27,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w181",
+              "index": 181,
+              "text": "he's",
+              "token": "hes",
+              "originalX": 1268.86,
+              "mirroredX": 786.28,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w183",
+              "index": 183,
+              "text": "I",
+              "token": "i",
+              "originalX": 489.965,
+              "mirroredX": 1565.175,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w180",
+            "p76w181",
+            "p76w183",
+            "p76w184"
+          ],
+          "indexes": [
+            180,
+            181,
+            183,
+            184
+          ],
+          "text": "them he's I tweeted",
+          "stream": "EEOD",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w180",
+              "index": 180,
+              "text": "them",
+              "token": "them",
+              "originalX": 1153.87,
+              "mirroredX": 901.27,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w181",
+              "index": 181,
+              "text": "he's",
+              "token": "hes",
+              "originalX": 1268.86,
+              "mirroredX": 786.28,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w183",
+              "index": 183,
+              "text": "I",
+              "token": "i",
+              "originalX": 489.965,
+              "mirroredX": 1565.175,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w184",
+              "index": 184,
+              "text": "tweeted",
+              "token": "tweeted",
+              "originalX": 593.94,
+              "mirroredX": 1461.2,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w181",
+            "p76w183",
+            "p76w184",
+            "p76w185"
+          ],
+          "indexes": [
+            181,
+            183,
+            184,
+            185
+          ],
+          "text": "he's I tweeted President",
+          "stream": "EODR",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w181",
+              "index": 181,
+              "text": "he's",
+              "token": "hes",
+              "originalX": 1268.86,
+              "mirroredX": 786.28,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w183",
+              "index": 183,
+              "text": "I",
+              "token": "i",
+              "originalX": 489.965,
+              "mirroredX": 1565.175,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w184",
+              "index": 184,
+              "text": "tweeted",
+              "token": "tweeted",
+              "originalX": 593.94,
+              "mirroredX": 1461.2,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w185",
+              "index": 185,
+              "text": "President",
+              "token": "president",
+              "originalX": 810.415,
+              "mirroredX": 1244.725,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w183",
+            "p76w184",
+            "p76w185",
+            "p76w186"
+          ],
+          "indexes": [
+            183,
+            184,
+            185,
+            186
+          ],
+          "text": "I tweeted President Nayib",
+          "stream": "ODRR",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w183",
+              "index": 183,
+              "text": "I",
+              "token": "i",
+              "originalX": 489.965,
+              "mirroredX": 1565.175,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w184",
+              "index": 184,
+              "text": "tweeted",
+              "token": "tweeted",
+              "originalX": 593.94,
+              "mirroredX": 1461.2,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w185",
+              "index": 185,
+              "text": "President",
+              "token": "president",
+              "originalX": 810.415,
+              "mirroredX": 1244.725,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w186",
+              "index": 186,
+              "text": "Nayib",
+              "token": "nayib",
+              "originalX": 1011.725,
+              "mirroredX": 1043.415,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w184",
+            "p76w185",
+            "p76w186",
+            "p76w187"
+          ],
+          "indexes": [
+            184,
+            185,
+            186,
+            187
+          ],
+          "text": "tweeted President Nayib Bukele",
+          "stream": "DRRE",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w184",
+              "index": 184,
+              "text": "tweeted",
+              "token": "tweeted",
+              "originalX": 593.94,
+              "mirroredX": 1461.2,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w185",
+              "index": 185,
+              "text": "President",
+              "token": "president",
+              "originalX": 810.415,
+              "mirroredX": 1244.725,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w186",
+              "index": 186,
+              "text": "Nayib",
+              "token": "nayib",
+              "originalX": 1011.725,
+              "mirroredX": 1043.415,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w187",
+              "index": 187,
+              "text": "Bukele",
+              "token": "bukele",
+              "originalX": 1175.84,
+              "mirroredX": 879.3,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w185",
+            "p76w186",
+            "p76w187",
+            "p76w188"
+          ],
+          "indexes": [
+            185,
+            186,
+            187,
+            188
+          ],
+          "text": "President Nayib Bukele when",
+          "stream": "RREV",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w185",
+              "index": 185,
+              "text": "President",
+              "token": "president",
+              "originalX": 810.415,
+              "mirroredX": 1244.725,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w186",
+              "index": 186,
+              "text": "Nayib",
+              "token": "nayib",
+              "originalX": 1011.725,
+              "mirroredX": 1043.415,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w187",
+              "index": 187,
+              "text": "Bukele",
+              "token": "bukele",
+              "originalX": 1175.84,
+              "mirroredX": 879.3,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w188",
+              "index": 188,
+              "text": "when",
+              "token": "when",
+              "originalX": 1327.56,
+              "mirroredX": 727.58,
+              "slotLetter": "V",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w186",
+            "p76w187",
+            "p76w188",
+            "p76w189"
+          ],
+          "indexes": [
+            186,
+            187,
+            188,
+            189
+          ],
+          "text": "Nayib Bukele when he",
+          "stream": "REVV",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w186",
+              "index": 186,
+              "text": "Nayib",
+              "token": "nayib",
+              "originalX": 1011.725,
+              "mirroredX": 1043.415,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w187",
+              "index": 187,
+              "text": "Bukele",
+              "token": "bukele",
+              "originalX": 1175.84,
+              "mirroredX": 879.3,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w188",
+              "index": 188,
+              "text": "when",
+              "token": "when",
+              "originalX": 1327.56,
+              "mirroredX": 727.58,
+              "slotLetter": "V",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w189",
+              "index": 189,
+              "text": "he",
+              "token": "he",
+              "originalX": 1424.925,
+              "mirroredX": 630.215,
+              "slotLetter": "V",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        }
+      ],
+      "representativeLayoutWindows": [],
+      "representativeStrictWindows": []
+    },
+    {
+      "role": "center_3",
+      "letter": "R",
+      "axisX": 1149.785,
+      "activeStream": "VODE",
+      "activeLayoutHits": [],
+      "activeInsideSlotCount": 4,
+      "controlWordCount": 85,
+      "controlWordMirroredInsideSlotCount": 85,
+      "controlWordSlotDistribution": {
+        "D": 23,
+        "E": 18,
+        "O": 19,
+        "R": 16,
+        "S": 4,
+        "V": 5
+      },
+      "controlQuartetWindowCount": 82,
+      "controlQuartetAllFourInsideSlotCount": 82,
+      "controlQuartetLayoutTermWindowCount": 0,
+      "controlQuartetStrictInstructionWindowCount": 0,
+      "controlQuartetNearMissFragmentWindowCount": 0,
+      "controlAllFourStreamCounts": {
+        "OODD": 7,
+        "ODDR": 5,
+        "DDRR": 4,
+        "DDRE": 4,
+        "DREE": 3,
+        "REEV": 3,
+        "ODDD": 3,
+        "DDDR": 3,
+        "EEVO": 3,
+        "DRRE": 3,
+        "RREE": 3,
+        "SODD": 2
+      },
+      "representativeAllFourWindows": [
+        {
+          "wordIds": [
+            "p76w176",
+            "p76w177",
+            "p76w178",
+            "p76w179"
+          ],
+          "indexes": [
+            176,
+            177,
+            178,
+            179
+          ],
+          "text": "He's taunting them, telling",
+          "stream": "SODD",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w176",
+              "index": 176,
+              "text": "He's",
+              "token": "hes",
+              "originalX": 519.615,
+              "mirroredX": 1779.955,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w177",
+              "index": 177,
+              "text": "taunting",
+              "token": "taunting",
+              "originalX": 674.075,
+              "mirroredX": 1625.495,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w178",
+              "index": 178,
+              "text": "them,",
+              "token": "them",
+              "originalX": 846.88,
+              "mirroredX": 1452.69,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w179",
+              "index": 179,
+              "text": "telling",
+              "token": "telling",
+              "originalX": 1004.42,
+              "mirroredX": 1295.15,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w177",
+            "p76w178",
+            "p76w179",
+            "p76w180"
+          ],
+          "indexes": [
+            177,
+            178,
+            179,
+            180
+          ],
+          "text": "taunting them, telling them",
+          "stream": "ODDR",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w177",
+              "index": 177,
+              "text": "taunting",
+              "token": "taunting",
+              "originalX": 674.075,
+              "mirroredX": 1625.495,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w178",
+              "index": 178,
+              "text": "them,",
+              "token": "them",
+              "originalX": 846.88,
+              "mirroredX": 1452.69,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w179",
+              "index": 179,
+              "text": "telling",
+              "token": "telling",
+              "originalX": 1004.42,
+              "mirroredX": 1295.15,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w180",
+              "index": 180,
+              "text": "them",
+              "token": "them",
+              "originalX": 1153.87,
+              "mirroredX": 1145.7,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w178",
+            "p76w179",
+            "p76w180",
+            "p76w181"
+          ],
+          "indexes": [
+            178,
+            179,
+            180,
+            181
+          ],
+          "text": "them, telling them he's",
+          "stream": "DDRR",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w178",
+              "index": 178,
+              "text": "them,",
+              "token": "them",
+              "originalX": 846.88,
+              "mirroredX": 1452.69,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w179",
+              "index": 179,
+              "text": "telling",
+              "token": "telling",
+              "originalX": 1004.42,
+              "mirroredX": 1295.15,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w180",
+              "index": 180,
+              "text": "them",
+              "token": "them",
+              "originalX": 1153.87,
+              "mirroredX": 1145.7,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w181",
+              "index": 181,
+              "text": "he's",
+              "token": "hes",
+              "originalX": 1268.86,
+              "mirroredX": 1030.71,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w179",
+            "p76w180",
+            "p76w181",
+            "p76w183"
+          ],
+          "indexes": [
+            179,
+            180,
+            181,
+            183
+          ],
+          "text": "telling them he's I",
+          "stream": "DRRS",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w179",
+              "index": 179,
+              "text": "telling",
+              "token": "telling",
+              "originalX": 1004.42,
+              "mirroredX": 1295.15,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w180",
+              "index": 180,
+              "text": "them",
+              "token": "them",
+              "originalX": 1153.87,
+              "mirroredX": 1145.7,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w181",
+              "index": 181,
+              "text": "he's",
+              "token": "hes",
+              "originalX": 1268.86,
+              "mirroredX": 1030.71,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w183",
+              "index": 183,
+              "text": "I",
+              "token": "i",
+              "originalX": 489.965,
+              "mirroredX": 1809.605,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w180",
+            "p76w181",
+            "p76w183",
+            "p76w184"
+          ],
+          "indexes": [
+            180,
+            181,
+            183,
+            184
+          ],
+          "text": "them he's I tweeted",
+          "stream": "RRSO",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w180",
+              "index": 180,
+              "text": "them",
+              "token": "them",
+              "originalX": 1153.87,
+              "mirroredX": 1145.7,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w181",
+              "index": 181,
+              "text": "he's",
+              "token": "hes",
+              "originalX": 1268.86,
+              "mirroredX": 1030.71,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w183",
+              "index": 183,
+              "text": "I",
+              "token": "i",
+              "originalX": 489.965,
+              "mirroredX": 1809.605,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w184",
+              "index": 184,
+              "text": "tweeted",
+              "token": "tweeted",
+              "originalX": 593.94,
+              "mirroredX": 1705.63,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w181",
+            "p76w183",
+            "p76w184",
+            "p76w185"
+          ],
+          "indexes": [
+            181,
+            183,
+            184,
+            185
+          ],
+          "text": "he's I tweeted President",
+          "stream": "RSOD",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w181",
+              "index": 181,
+              "text": "he's",
+              "token": "hes",
+              "originalX": 1268.86,
+              "mirroredX": 1030.71,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w183",
+              "index": 183,
+              "text": "I",
+              "token": "i",
+              "originalX": 489.965,
+              "mirroredX": 1809.605,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w184",
+              "index": 184,
+              "text": "tweeted",
+              "token": "tweeted",
+              "originalX": 593.94,
+              "mirroredX": 1705.63,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w185",
+              "index": 185,
+              "text": "President",
+              "token": "president",
+              "originalX": 810.415,
+              "mirroredX": 1489.155,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w183",
+            "p76w184",
+            "p76w185",
+            "p76w186"
+          ],
+          "indexes": [
+            183,
+            184,
+            185,
+            186
+          ],
+          "text": "I tweeted President Nayib",
+          "stream": "SODD",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w183",
+              "index": 183,
+              "text": "I",
+              "token": "i",
+              "originalX": 489.965,
+              "mirroredX": 1809.605,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w184",
+              "index": 184,
+              "text": "tweeted",
+              "token": "tweeted",
+              "originalX": 593.94,
+              "mirroredX": 1705.63,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w185",
+              "index": 185,
+              "text": "President",
+              "token": "president",
+              "originalX": 810.415,
+              "mirroredX": 1489.155,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w186",
+              "index": 186,
+              "text": "Nayib",
+              "token": "nayib",
+              "originalX": 1011.725,
+              "mirroredX": 1287.845,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w184",
+            "p76w185",
+            "p76w186",
+            "p76w187"
+          ],
+          "indexes": [
+            184,
+            185,
+            186,
+            187
+          ],
+          "text": "tweeted President Nayib Bukele",
+          "stream": "ODDR",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w184",
+              "index": 184,
+              "text": "tweeted",
+              "token": "tweeted",
+              "originalX": 593.94,
+              "mirroredX": 1705.63,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w185",
+              "index": 185,
+              "text": "President",
+              "token": "president",
+              "originalX": 810.415,
+              "mirroredX": 1489.155,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w186",
+              "index": 186,
+              "text": "Nayib",
+              "token": "nayib",
+              "originalX": 1011.725,
+              "mirroredX": 1287.845,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w187",
+              "index": 187,
+              "text": "Bukele",
+              "token": "bukele",
+              "originalX": 1175.84,
+              "mirroredX": 1123.73,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w185",
+            "p76w186",
+            "p76w187",
+            "p76w188"
+          ],
+          "indexes": [
+            185,
+            186,
+            187,
+            188
+          ],
+          "text": "President Nayib Bukele when",
+          "stream": "DDRE",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w185",
+              "index": 185,
+              "text": "President",
+              "token": "president",
+              "originalX": 810.415,
+              "mirroredX": 1489.155,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w186",
+              "index": 186,
+              "text": "Nayib",
+              "token": "nayib",
+              "originalX": 1011.725,
+              "mirroredX": 1287.845,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w187",
+              "index": 187,
+              "text": "Bukele",
+              "token": "bukele",
+              "originalX": 1175.84,
+              "mirroredX": 1123.73,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w188",
+              "index": 188,
+              "text": "when",
+              "token": "when",
+              "originalX": 1327.56,
+              "mirroredX": 972.01,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w186",
+            "p76w187",
+            "p76w188",
+            "p76w189"
+          ],
+          "indexes": [
+            186,
+            187,
+            188,
+            189
+          ],
+          "text": "Nayib Bukele when he",
+          "stream": "DREE",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w186",
+              "index": 186,
+              "text": "Nayib",
+              "token": "nayib",
+              "originalX": 1011.725,
+              "mirroredX": 1287.845,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w187",
+              "index": 187,
+              "text": "Bukele",
+              "token": "bukele",
+              "originalX": 1175.84,
+              "mirroredX": 1123.73,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w188",
+              "index": 188,
+              "text": "when",
+              "token": "when",
+              "originalX": 1327.56,
+              "mirroredX": 972.01,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w189",
+              "index": 189,
+              "text": "he",
+              "token": "he",
+              "originalX": 1424.925,
+              "mirroredX": 874.645,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        }
+      ],
+      "representativeLayoutWindows": [],
+      "representativeStrictWindows": []
+    },
+    {
+      "role": "boundary_4",
+      "letter": "R|D",
+      "axisX": 1272.0,
+      "activeStream": "ESOR",
+      "activeLayoutHits": [],
+      "activeInsideSlotCount": 4,
+      "controlWordCount": 85,
+      "controlWordMirroredInsideSlotCount": 85,
+      "controlWordSlotDistribution": {
+        "D": 16,
+        "E": 9,
+        "O": 23,
+        "R": 18,
+        "S": 19
+      },
+      "controlQuartetWindowCount": 82,
+      "controlQuartetAllFourInsideSlotCount": 82,
+      "controlQuartetLayoutTermWindowCount": 1,
+      "controlQuartetStrictInstructionWindowCount": 0,
+      "controlQuartetNearMissFragmentWindowCount": 0,
+      "controlAllFourStreamCounts": {
+        "SSOO": 7,
+        "SOOD": 5,
+        "OODD": 4,
+        "OODR": 4,
+        "ESSO": 4,
+        "ODRR": 3,
+        "DRRE": 3,
+        "SOOO": 3,
+        "OOOD": 3,
+        "RRES": 3,
+        "ODDR": 3,
+        "DDRR": 3
+      },
+      "representativeAllFourWindows": [
+        {
+          "wordIds": [
+            "p76w176",
+            "p76w177",
+            "p76w178",
+            "p76w179"
+          ],
+          "indexes": [
+            176,
+            177,
+            178,
+            179
+          ],
+          "text": "He's taunting them, telling",
+          "stream": "ESOO",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w176",
+              "index": 176,
+              "text": "He's",
+              "token": "hes",
+              "originalX": 519.615,
+              "mirroredX": 2024.385,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w177",
+              "index": 177,
+              "text": "taunting",
+              "token": "taunting",
+              "originalX": 674.075,
+              "mirroredX": 1869.925,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w178",
+              "index": 178,
+              "text": "them,",
+              "token": "them",
+              "originalX": 846.88,
+              "mirroredX": 1697.12,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w179",
+              "index": 179,
+              "text": "telling",
+              "token": "telling",
+              "originalX": 1004.42,
+              "mirroredX": 1539.58,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w177",
+            "p76w178",
+            "p76w179",
+            "p76w180"
+          ],
+          "indexes": [
+            177,
+            178,
+            179,
+            180
+          ],
+          "text": "taunting them, telling them",
+          "stream": "SOOD",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w177",
+              "index": 177,
+              "text": "taunting",
+              "token": "taunting",
+              "originalX": 674.075,
+              "mirroredX": 1869.925,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w178",
+              "index": 178,
+              "text": "them,",
+              "token": "them",
+              "originalX": 846.88,
+              "mirroredX": 1697.12,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w179",
+              "index": 179,
+              "text": "telling",
+              "token": "telling",
+              "originalX": 1004.42,
+              "mirroredX": 1539.58,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w180",
+              "index": 180,
+              "text": "them",
+              "token": "them",
+              "originalX": 1153.87,
+              "mirroredX": 1390.13,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w178",
+            "p76w179",
+            "p76w180",
+            "p76w181"
+          ],
+          "indexes": [
+            178,
+            179,
+            180,
+            181
+          ],
+          "text": "them, telling them he's",
+          "stream": "OODD",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w178",
+              "index": 178,
+              "text": "them,",
+              "token": "them",
+              "originalX": 846.88,
+              "mirroredX": 1697.12,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w179",
+              "index": 179,
+              "text": "telling",
+              "token": "telling",
+              "originalX": 1004.42,
+              "mirroredX": 1539.58,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w180",
+              "index": 180,
+              "text": "them",
+              "token": "them",
+              "originalX": 1153.87,
+              "mirroredX": 1390.13,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w181",
+              "index": 181,
+              "text": "he's",
+              "token": "hes",
+              "originalX": 1268.86,
+              "mirroredX": 1275.14,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w179",
+            "p76w180",
+            "p76w181",
+            "p76w183"
+          ],
+          "indexes": [
+            179,
+            180,
+            181,
+            183
+          ],
+          "text": "telling them he's I",
+          "stream": "ODDE",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w179",
+              "index": 179,
+              "text": "telling",
+              "token": "telling",
+              "originalX": 1004.42,
+              "mirroredX": 1539.58,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w180",
+              "index": 180,
+              "text": "them",
+              "token": "them",
+              "originalX": 1153.87,
+              "mirroredX": 1390.13,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w181",
+              "index": 181,
+              "text": "he's",
+              "token": "hes",
+              "originalX": 1268.86,
+              "mirroredX": 1275.14,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w183",
+              "index": 183,
+              "text": "I",
+              "token": "i",
+              "originalX": 489.965,
+              "mirroredX": 2054.035,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w180",
+            "p76w181",
+            "p76w183",
+            "p76w184"
+          ],
+          "indexes": [
+            180,
+            181,
+            183,
+            184
+          ],
+          "text": "them he's I tweeted",
+          "stream": "DDES",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w180",
+              "index": 180,
+              "text": "them",
+              "token": "them",
+              "originalX": 1153.87,
+              "mirroredX": 1390.13,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w181",
+              "index": 181,
+              "text": "he's",
+              "token": "hes",
+              "originalX": 1268.86,
+              "mirroredX": 1275.14,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w183",
+              "index": 183,
+              "text": "I",
+              "token": "i",
+              "originalX": 489.965,
+              "mirroredX": 2054.035,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w184",
+              "index": 184,
+              "text": "tweeted",
+              "token": "tweeted",
+              "originalX": 593.94,
+              "mirroredX": 1950.06,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w181",
+            "p76w183",
+            "p76w184",
+            "p76w185"
+          ],
+          "indexes": [
+            181,
+            183,
+            184,
+            185
+          ],
+          "text": "he's I tweeted President",
+          "stream": "DESO",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w181",
+              "index": 181,
+              "text": "he's",
+              "token": "hes",
+              "originalX": 1268.86,
+              "mirroredX": 1275.14,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w183",
+              "index": 183,
+              "text": "I",
+              "token": "i",
+              "originalX": 489.965,
+              "mirroredX": 2054.035,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w184",
+              "index": 184,
+              "text": "tweeted",
+              "token": "tweeted",
+              "originalX": 593.94,
+              "mirroredX": 1950.06,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w185",
+              "index": 185,
+              "text": "President",
+              "token": "president",
+              "originalX": 810.415,
+              "mirroredX": 1733.585,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w183",
+            "p76w184",
+            "p76w185",
+            "p76w186"
+          ],
+          "indexes": [
+            183,
+            184,
+            185,
+            186
+          ],
+          "text": "I tweeted President Nayib",
+          "stream": "ESOO",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w183",
+              "index": 183,
+              "text": "I",
+              "token": "i",
+              "originalX": 489.965,
+              "mirroredX": 2054.035,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w184",
+              "index": 184,
+              "text": "tweeted",
+              "token": "tweeted",
+              "originalX": 593.94,
+              "mirroredX": 1950.06,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w185",
+              "index": 185,
+              "text": "President",
+              "token": "president",
+              "originalX": 810.415,
+              "mirroredX": 1733.585,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w186",
+              "index": 186,
+              "text": "Nayib",
+              "token": "nayib",
+              "originalX": 1011.725,
+              "mirroredX": 1532.275,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w184",
+            "p76w185",
+            "p76w186",
+            "p76w187"
+          ],
+          "indexes": [
+            184,
+            185,
+            186,
+            187
+          ],
+          "text": "tweeted President Nayib Bukele",
+          "stream": "SOOD",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w184",
+              "index": 184,
+              "text": "tweeted",
+              "token": "tweeted",
+              "originalX": 593.94,
+              "mirroredX": 1950.06,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w185",
+              "index": 185,
+              "text": "President",
+              "token": "president",
+              "originalX": 810.415,
+              "mirroredX": 1733.585,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w186",
+              "index": 186,
+              "text": "Nayib",
+              "token": "nayib",
+              "originalX": 1011.725,
+              "mirroredX": 1532.275,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w187",
+              "index": 187,
+              "text": "Bukele",
+              "token": "bukele",
+              "originalX": 1175.84,
+              "mirroredX": 1368.16,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w185",
+            "p76w186",
+            "p76w187",
+            "p76w188"
+          ],
+          "indexes": [
+            185,
+            186,
+            187,
+            188
+          ],
+          "text": "President Nayib Bukele when",
+          "stream": "OODR",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w185",
+              "index": 185,
+              "text": "President",
+              "token": "president",
+              "originalX": 810.415,
+              "mirroredX": 1733.585,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w186",
+              "index": 186,
+              "text": "Nayib",
+              "token": "nayib",
+              "originalX": 1011.725,
+              "mirroredX": 1532.275,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w187",
+              "index": 187,
+              "text": "Bukele",
+              "token": "bukele",
+              "originalX": 1175.84,
+              "mirroredX": 1368.16,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w188",
+              "index": 188,
+              "text": "when",
+              "token": "when",
+              "originalX": 1327.56,
+              "mirroredX": 1216.44,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w186",
+            "p76w187",
+            "p76w188",
+            "p76w189"
+          ],
+          "indexes": [
+            186,
+            187,
+            188,
+            189
+          ],
+          "text": "Nayib Bukele when he",
+          "stream": "ODRR",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w186",
+              "index": 186,
+              "text": "Nayib",
+              "token": "nayib",
+              "originalX": 1011.725,
+              "mirroredX": 1532.275,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w187",
+              "index": 187,
+              "text": "Bukele",
+              "token": "bukele",
+              "originalX": 1175.84,
+              "mirroredX": 1368.16,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w188",
+              "index": 188,
+              "text": "when",
+              "token": "when",
+              "originalX": 1327.56,
+              "mirroredX": 1216.44,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w189",
+              "index": 189,
+              "text": "he",
+              "token": "he",
+              "originalX": 1424.925,
+              "mirroredX": 1119.075,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        }
+      ],
+      "representativeLayoutWindows": [
+        {
+          "wordIds": [
+            "p76w200",
+            "p76w202",
+            "p76w203",
+            "p76w205"
+          ],
+          "indexes": [
+            200,
+            202,
+            203,
+            205
+          ],
+          "text": "mine in bitcoin that",
+          "stream": "ESOD",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [
+            "ESOD"
+          ],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w200",
+              "index": 200,
+              "text": "mine",
+              "token": "mine",
+              "originalX": 1539.25,
+              "mirroredX": 1004.75,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w202",
+              "index": 202,
+              "text": "in",
+              "token": "in",
+              "originalX": 757.505,
+              "mirroredX": 1786.495,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w203",
+              "index": 203,
+              "text": "bitcoin",
+              "token": "bitcoin",
+              "originalX": 871.675,
+              "mirroredX": 1672.325,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w205",
+              "index": 205,
+              "text": "that",
+              "token": "that",
+              "originalX": 1061.395,
+              "mirroredX": 1482.605,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        }
+      ],
+      "representativeStrictWindows": []
+    },
+    {
+      "role": "center_4",
+      "letter": "D",
+      "axisX": 1394.285,
+      "activeStream": "RESD",
+      "activeLayoutHits": [],
+      "activeInsideSlotCount": 4,
+      "controlWordCount": 85,
+      "controlWordMirroredInsideSlotCount": 81,
+      "controlWordSlotDistribution": {
+        "D": 18,
+        "E": 19,
+        "O": 16,
+        "R": 5,
+        "S": 23
+      },
+      "controlQuartetWindowCount": 82,
+      "controlQuartetAllFourInsideSlotCount": 69,
+      "controlQuartetLayoutTermWindowCount": 0,
+      "controlQuartetStrictInstructionWindowCount": 0,
+      "controlQuartetNearMissFragmentWindowCount": 0,
+      "controlAllFourStreamCounts": {
+        "EESS": 7,
+        "ESSO": 5,
+        "SSOO": 4,
+        "SSOD": 4,
+        "SODD": 3,
+        "ODDR": 3,
+        "ESSS": 3,
+        "SSSO": 3,
+        "DDRE": 3,
+        "SOOD": 3,
+        "OODD": 3,
+        "DEES": 2
+      },
+      "representativeAllFourWindows": [
+        {
+          "wordIds": [
+            "p76w177",
+            "p76w178",
+            "p76w179",
+            "p76w180"
+          ],
+          "indexes": [
+            177,
+            178,
+            179,
+            180
+          ],
+          "text": "taunting them, telling them",
+          "stream": "ESSO",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w177",
+              "index": 177,
+              "text": "taunting",
+              "token": "taunting",
+              "originalX": 674.075,
+              "mirroredX": 2114.495,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w178",
+              "index": 178,
+              "text": "them,",
+              "token": "them",
+              "originalX": 846.88,
+              "mirroredX": 1941.69,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w179",
+              "index": 179,
+              "text": "telling",
+              "token": "telling",
+              "originalX": 1004.42,
+              "mirroredX": 1784.15,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w180",
+              "index": 180,
+              "text": "them",
+              "token": "them",
+              "originalX": 1153.87,
+              "mirroredX": 1634.7,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w178",
+            "p76w179",
+            "p76w180",
+            "p76w181"
+          ],
+          "indexes": [
+            178,
+            179,
+            180,
+            181
+          ],
+          "text": "them, telling them he's",
+          "stream": "SSOO",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w178",
+              "index": 178,
+              "text": "them,",
+              "token": "them",
+              "originalX": 846.88,
+              "mirroredX": 1941.69,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w179",
+              "index": 179,
+              "text": "telling",
+              "token": "telling",
+              "originalX": 1004.42,
+              "mirroredX": 1784.15,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w180",
+              "index": 180,
+              "text": "them",
+              "token": "them",
+              "originalX": 1153.87,
+              "mirroredX": 1634.7,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w181",
+              "index": 181,
+              "text": "he's",
+              "token": "hes",
+              "originalX": 1268.86,
+              "mirroredX": 1519.71,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w184",
+            "p76w185",
+            "p76w186",
+            "p76w187"
+          ],
+          "indexes": [
+            184,
+            185,
+            186,
+            187
+          ],
+          "text": "tweeted President Nayib Bukele",
+          "stream": "ESSO",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w184",
+              "index": 184,
+              "text": "tweeted",
+              "token": "tweeted",
+              "originalX": 593.94,
+              "mirroredX": 2194.63,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w185",
+              "index": 185,
+              "text": "President",
+              "token": "president",
+              "originalX": 810.415,
+              "mirroredX": 1978.155,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w186",
+              "index": 186,
+              "text": "Nayib",
+              "token": "nayib",
+              "originalX": 1011.725,
+              "mirroredX": 1776.845,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w187",
+              "index": 187,
+              "text": "Bukele",
+              "token": "bukele",
+              "originalX": 1175.84,
+              "mirroredX": 1612.73,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w185",
+            "p76w186",
+            "p76w187",
+            "p76w188"
+          ],
+          "indexes": [
+            185,
+            186,
+            187,
+            188
+          ],
+          "text": "President Nayib Bukele when",
+          "stream": "SSOD",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w185",
+              "index": 185,
+              "text": "President",
+              "token": "president",
+              "originalX": 810.415,
+              "mirroredX": 1978.155,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w186",
+              "index": 186,
+              "text": "Nayib",
+              "token": "nayib",
+              "originalX": 1011.725,
+              "mirroredX": 1776.845,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w187",
+              "index": 187,
+              "text": "Bukele",
+              "token": "bukele",
+              "originalX": 1175.84,
+              "mirroredX": 1612.73,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w188",
+              "index": 188,
+              "text": "when",
+              "token": "when",
+              "originalX": 1327.56,
+              "mirroredX": 1461.01,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w186",
+            "p76w187",
+            "p76w188",
+            "p76w189"
+          ],
+          "indexes": [
+            186,
+            187,
+            188,
+            189
+          ],
+          "text": "Nayib Bukele when he",
+          "stream": "SODD",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w186",
+              "index": 186,
+              "text": "Nayib",
+              "token": "nayib",
+              "originalX": 1011.725,
+              "mirroredX": 1776.845,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w187",
+              "index": 187,
+              "text": "Bukele",
+              "token": "bukele",
+              "originalX": 1175.84,
+              "mirroredX": 1612.73,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w188",
+              "index": 188,
+              "text": "when",
+              "token": "when",
+              "originalX": 1327.56,
+              "mirroredX": 1461.01,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w189",
+              "index": 189,
+              "text": "he",
+              "token": "he",
+              "originalX": 1424.925,
+              "mirroredX": 1363.645,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w187",
+            "p76w188",
+            "p76w189",
+            "p76w190"
+          ],
+          "indexes": [
+            187,
+            188,
+            189,
+            190
+          ],
+          "text": "Bukele when he announced",
+          "stream": "ODDR",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w187",
+              "index": 187,
+              "text": "Bukele",
+              "token": "bukele",
+              "originalX": 1175.84,
+              "mirroredX": 1612.73,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w188",
+              "index": 188,
+              "text": "when",
+              "token": "when",
+              "originalX": 1327.56,
+              "mirroredX": 1461.01,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w189",
+              "index": 189,
+              "text": "he",
+              "token": "he",
+              "originalX": 1424.925,
+              "mirroredX": 1363.645,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w190",
+              "index": 190,
+              "text": "announced",
+              "token": "announced",
+              "originalX": 1578.445,
+              "mirroredX": 1210.125,
+              "slotLetter": "R",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w192",
+            "p76w193",
+            "p76w194",
+            "p76w195"
+          ],
+          "indexes": [
+            192,
+            193,
+            194,
+            195
+          ],
+          "text": "was going to tap",
+          "stream": "EESS",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w192",
+              "index": 192,
+              "text": "was",
+              "token": "was",
+              "originalX": 579.8,
+              "mirroredX": 2208.77,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w193",
+              "index": 193,
+              "text": "going",
+              "token": "going",
+              "originalX": 695.52,
+              "mirroredX": 2093.05,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w194",
+              "index": 194,
+              "text": "to",
+              "token": "to",
+              "originalX": 794.695,
+              "mirroredX": 1993.875,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w195",
+              "index": 195,
+              "text": "tap",
+              "token": "tap",
+              "originalX": 865.27,
+              "mirroredX": 1923.3,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w193",
+            "p76w194",
+            "p76w195",
+            "p76w196"
+          ],
+          "indexes": [
+            193,
+            194,
+            195,
+            196
+          ],
+          "text": "going to tap his",
+          "stream": "ESSS",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w193",
+              "index": 193,
+              "text": "going",
+              "token": "going",
+              "originalX": 695.52,
+              "mirroredX": 2093.05,
+              "slotLetter": "E",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w194",
+              "index": 194,
+              "text": "to",
+              "token": "to",
+              "originalX": 794.695,
+              "mirroredX": 1993.875,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w195",
+              "index": 195,
+              "text": "tap",
+              "token": "tap",
+              "originalX": 865.27,
+              "mirroredX": 1923.3,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w196",
+              "index": 196,
+              "text": "his",
+              "token": "his",
+              "originalX": 951.835,
+              "mirroredX": 1836.735,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w194",
+            "p76w195",
+            "p76w196",
+            "p76w197"
+          ],
+          "indexes": [
+            194,
+            195,
+            196,
+            197
+          ],
+          "text": "to tap his nation's",
+          "stream": "SSSO",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w194",
+              "index": 194,
+              "text": "to",
+              "token": "to",
+              "originalX": 794.695,
+              "mirroredX": 1993.875,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w195",
+              "index": 195,
+              "text": "tap",
+              "token": "tap",
+              "originalX": 865.27,
+              "mirroredX": 1923.3,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w196",
+              "index": 196,
+              "text": "his",
+              "token": "his",
+              "originalX": 951.835,
+              "mirroredX": 1836.735,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w197",
+              "index": 197,
+              "text": "nation's",
+              "token": "nations",
+              "originalX": 1092.22,
+              "mirroredX": 1696.35,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        },
+        {
+          "wordIds": [
+            "p76w195",
+            "p76w196",
+            "p76w197",
+            "p76w198"
+          ],
+          "indexes": [
+            195,
+            196,
+            197,
+            198
+          ],
+          "text": "tap his nation's volcanoes",
+          "stream": "SSOD",
+          "insideSlotCount": 4,
+          "allFourInsideSlots": true,
+          "layoutHits": [],
+          "nearMissFragmentHits": [],
+          "strictInstructionTerms": [],
+          "mirroredWords": [
+            {
+              "wordId": "p76w195",
+              "index": 195,
+              "text": "tap",
+              "token": "tap",
+              "originalX": 865.27,
+              "mirroredX": 1923.3,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w196",
+              "index": 196,
+              "text": "his",
+              "token": "his",
+              "originalX": 951.835,
+              "mirroredX": 1836.735,
+              "slotLetter": "S",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w197",
+              "index": 197,
+              "text": "nation's",
+              "token": "nations",
+              "originalX": 1092.22,
+              "mirroredX": 1696.35,
+              "slotLetter": "O",
+              "insideSlot": true,
+              "strictInstruction": false
+            },
+            {
+              "wordId": "p76w198",
+              "index": 198,
+              "text": "volcanoes",
+              "token": "volcanoes",
+              "originalX": 1304.84,
+              "mirroredX": 1483.73,
+              "slotLetter": "D",
+              "insideSlot": true,
+              "strictInstruction": false
+            }
+          ]
+        }
+      ],
+      "representativeLayoutWindows": [],
+      "representativeStrictWindows": []
+    }
+  ],
+  "c9Words": [
+    {
+      "id": "p76w176",
+      "index": 176,
+      "text": "He's",
+      "token": "hes",
+      "box": [
+        485.44,
+        2166.53,
+        553.79,
+        2215.56
+      ],
+      "center": [
+        519.615,
+        2191.045
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w177",
+      "index": 177,
+      "text": "taunting",
+      "token": "taunting",
+      "box": [
+        586.96,
+        2166.53,
+        761.19,
+        2215.56
+      ],
+      "center": [
+        674.075,
+        2191.045
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w178",
+      "index": 178,
+      "text": "them,",
+      "token": "them",
+      "box": [
+        797.04,
+        2166.53,
+        896.72,
+        2215.56
+      ],
+      "center": [
+        846.88,
+        2191.045
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w179",
+      "index": 179,
+      "text": "telling",
+      "token": "telling",
+      "box": [
+        932.74,
+        2166.53,
+        1076.1,
+        2215.56
+      ],
+      "center": [
+        1004.42,
+        2191.045
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w180",
+      "index": 180,
+      "text": "them",
+      "token": "them",
+      "box": [
+        1111.65,
+        2166.53,
+        1196.09,
+        2215.56
+      ],
+      "center": [
+        1153.87,
+        2191.045
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w181",
+      "index": 181,
+      "text": "he's",
+      "token": "hes",
+      "box": [
+        1234.28,
+        2166.53,
+        1303.44,
+        2215.56
+      ],
+      "center": [
+        1268.8600000000001,
+        2191.045
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w182",
+      "index": 182,
+      "text": "ByiiREeraipy\"",
+      "token": "byiireeraipy",
+      "box": [
+        1335.8,
+        2166.53,
+        1743.68,
+        2215.56
+      ],
+      "center": [
+        1539.74,
+        2191.045
+      ],
+      "isActiveTargetWord": true,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w183",
+      "index": 183,
+      "text": "I",
+      "token": "i",
+      "box": [
+        485.44,
+        2243.65,
+        494.49,
+        2288.21
+      ],
+      "center": [
+        489.96500000000003,
+        2265.9300000000003
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w184",
+      "index": 184,
+      "text": "tweeted",
+      "token": "tweeted",
+      "box": [
+        519.62,
+        2243.65,
+        668.26,
+        2288.21
+      ],
+      "center": [
+        593.94,
+        2265.9300000000003
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w185",
+      "index": 185,
+      "text": "President",
+      "token": "president",
+      "box": [
+        704.57,
+        2243.65,
+        916.26,
+        2288.21
+      ],
+      "center": [
+        810.415,
+        2265.9300000000003
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w186",
+      "index": 186,
+      "text": "Nayib",
+      "token": "nayib",
+      "box": [
+        956.86,
+        2243.65,
+        1066.59,
+        2288.21
+      ],
+      "center": [
+        1011.7249999999999,
+        2265.9300000000003
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w187",
+      "index": 187,
+      "text": "Bukele",
+      "token": "bukele",
+      "box": [
+        1105.62,
+        2243.65,
+        1246.06,
+        2288.21
+      ],
+      "center": [
+        1175.84,
+        2265.9300000000003
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w188",
+      "index": 188,
+      "text": "when",
+      "token": "when",
+      "box": [
+        1284.54,
+        2243.65,
+        1370.58,
+        2288.21
+      ],
+      "center": [
+        1327.56,
+        2265.9300000000003
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w189",
+      "index": 189,
+      "text": "he",
+      "token": "he",
+      "box": [
+        1408.17,
+        2243.65,
+        1441.68,
+        2288.21
+      ],
+      "center": [
+        1424.9250000000002,
+        2265.9300000000003
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w190",
+      "index": 190,
+      "text": "announced",
+      "token": "announced",
+      "box": [
+        1473.51,
+        2243.65,
+        1683.38,
+        2288.21
+      ],
+      "center": [
+        1578.4450000000002,
+        2265.9300000000003
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w191",
+      "index": 191,
+      "text": "he",
+      "token": "he",
+      "box": [
+        486.45,
+        2320.76,
+        518.61,
+        2360.87
+      ],
+      "center": [
+        502.53,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w192",
+      "index": 192,
+      "text": "was",
+      "token": "was",
+      "box": [
+        550.78,
+        2320.76,
+        608.82,
+        2360.87
+      ],
+      "center": [
+        579.8,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w193",
+      "index": 193,
+      "text": "going",
+      "token": "going",
+      "box": [
+        645.26,
+        2320.76,
+        745.78,
+        2360.87
+      ],
+      "center": [
+        695.52,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w194",
+      "index": 194,
+      "text": "to",
+      "token": "to",
+      "box": [
+        779.95,
+        2320.76,
+        809.44,
+        2360.87
+      ],
+      "center": [
+        794.695,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w195",
+      "index": 195,
+      "text": "tap",
+      "token": "tap",
+      "box": [
+        839.26,
+        2320.76,
+        891.28,
+        2360.87
+      ],
+      "center": [
+        865.27,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w196",
+      "index": 196,
+      "text": "his",
+      "token": "his",
+      "box": [
+        924.69,
+        2320.76,
+        978.98,
+        2360.87
+      ],
+      "center": [
+        951.835,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w197",
+      "index": 197,
+      "text": "nation's",
+      "token": "nations",
+      "box": [
+        1013.15,
+        2320.76,
+        1171.29,
+        2360.87
+      ],
+      "center": [
+        1092.22,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w198",
+      "index": 198,
+      "text": "volcanoes",
+      "token": "volcanoes",
+      "box": [
+        1207.14,
+        2320.76,
+        1402.54,
+        2360.87
+      ],
+      "center": [
+        1304.8400000000001,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w199",
+      "index": 199,
+      "text": "to",
+      "token": "to",
+      "box": [
+        1439.33,
+        2320.76,
+        1468.82,
+        2360.87
+      ],
+      "center": [
+        1454.0749999999998,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w200",
+      "index": 200,
+      "text": "mine",
+      "token": "mine",
+      "box": [
+        1498.64,
+        2320.76,
+        1579.86,
+        2360.87
+      ],
+      "center": [
+        1539.25,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w201",
+      "index": 201,
+      "text": "eis",
+      "token": "eis",
+      "box": [
+        561.83,
+        2393.42,
+        570.13,
+        2433.53
+      ],
+      "center": [
+        565.98,
+        2413.4750000000004
+      ],
+      "isActiveTargetWord": true,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w202",
+      "index": 202,
+      "text": "in",
+      "token": "in",
+      "box": [
+        742.76,
+        2393.42,
+        772.25,
+        2433.53
+      ],
+      "center": [
+        757.505,
+        2413.4750000000004
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w203",
+      "index": 203,
+      "text": "bitcoin",
+      "token": "bitcoin",
+      "box": [
+        803.07,
+        2393.42,
+        940.28,
+        2433.53
+      ],
+      "center": [
+        871.675,
+        2413.4750000000004
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w205",
+      "index": 205,
+      "text": "that",
+      "token": "that",
+      "box": [
+        1023.2,
+        2393.42,
+        1099.59,
+        2433.53
+      ],
+      "center": [
+        1061.395,
+        2413.4750000000004
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w206",
+      "index": 206,
+      "text": "he",
+      "token": "he",
+      "box": [
+        1134.77,
+        2393.42,
+        1167.61,
+        2433.53
+      ],
+      "center": [
+        1151.19,
+        2413.4750000000004
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w207",
+      "index": 207,
+      "text": "should",
+      "token": "should",
+      "box": [
+        1201.11,
+        2393.42,
+        1328.62,
+        2433.53
+      ],
+      "center": [
+        1264.8649999999998,
+        2413.4750000000004
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w208",
+      "index": 208,
+      "text": "sell",
+      "token": "sell",
+      "box": [
+        1366.96,
+        2393.42,
+        1439.33,
+        2433.53
+      ],
+      "center": [
+        1403.145,
+        2413.4750000000004
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w209",
+      "index": 209,
+      "text": "billions",
+      "token": "billions",
+      "box": [
+        484.44,
+        2467.15,
+        650.62,
+        2507.26
+      ],
+      "center": [
+        567.53,
+        2487.205
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w210",
+      "index": 210,
+      "text": "worth",
+      "token": "worth",
+      "box": [
+        687.48,
+        2467.15,
+        793.86,
+        2507.26
+      ],
+      "center": [
+        740.6700000000001,
+        2487.205
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w211",
+      "index": 211,
+      "text": "of",
+      "token": "of",
+      "box": [
+        830.21,
+        2467.15,
+        860.36,
+        2507.26
+      ],
+      "center": [
+        845.2850000000001,
+        2487.205
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w212",
+      "index": 212,
+      "text": "future",
+      "token": "future",
+      "box": [
+        890.52,
+        2467.15,
+        1012.86,
+        2507.26
+      ],
+      "center": [
+        951.69,
+        2487.205
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w213",
+      "index": 213,
+      "text": "bitcoin",
+      "token": "bitcoin",
+      "box": [
+        1049.33,
+        2467.15,
+        1186.54,
+        2507.26
+      ],
+      "center": [
+        1117.935,
+        2487.205
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w214",
+      "index": 214,
+      "text": "earnings",
+      "token": "earnings",
+      "box": [
+        1222.22,
+        2467.15,
+        1398.23,
+        2507.26
+      ],
+      "center": [
+        1310.225,
+        2487.205
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w215",
+      "index": 215,
+      "text": "collateralized",
+      "token": "collateralized",
+      "box": [
+        485.44,
+        2535.36,
+        788.47,
+        2579.93
+      ],
+      "center": [
+        636.955,
+        2557.645
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w216",
+      "index": 216,
+      "text": "to",
+      "token": "to",
+      "box": [
+        1219.2,
+        2535.36,
+        1248.69,
+        2579.93
+      ],
+      "center": [
+        1233.9450000000002,
+        2557.645
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w217",
+      "index": 217,
+      "text": "pay",
+      "token": "pay",
+      "box": [
+        1278.51,
+        2535.36,
+        1334.3,
+        2579.93
+      ],
+      "center": [
+        1306.405,
+        2557.645
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w218",
+      "index": 218,
+      "text": "off",
+      "token": "off",
+      "box": [
+        1367.97,
+        2535.36,
+        1419.23,
+        2579.93
+      ],
+      "center": [
+        1393.6,
+        2557.645
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w219",
+      "index": 219,
+      "text": "the",
+      "token": "the",
+      "box": [
+        1450.39,
+        2535.36,
+        1504.67,
+        2579.93
+      ],
+      "center": [
+        1477.5300000000002,
+        2557.645
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w220",
+      "index": 220,
+      "text": "IMF",
+      "token": "imf",
+      "box": [
+        1540.85,
+        2535.36,
+        1607.19,
+        2579.93
+      ],
+      "center": [
+        1574.02,
+        2557.645
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w221",
+      "index": 221,
+      "text": "loan",
+      "token": "loan",
+      "box": [
+        485.44,
+        2609.09,
+        568.27,
+        2653.65
+      ],
+      "center": [
+        526.855,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w222",
+      "index": 222,
+      "text": "and",
+      "token": "and",
+      "box": [
+        605.06,
+        2609.09,
+        663.1,
+        2653.65
+      ],
+      "center": [
+        634.0799999999999,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w223",
+      "index": 223,
+      "text": "get",
+      "token": "get",
+      "box": [
+        698.53,
+        2609.09,
+        750.56,
+        2653.65
+      ],
+      "center": [
+        724.545,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w224",
+      "index": 224,
+      "text": "rid",
+      "token": "rid",
+      "box": [
+        782.97,
+        2609.09,
+        832.72,
+        2653.65
+      ],
+      "center": [
+        807.845,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w225",
+      "index": 225,
+      "text": "of",
+      "token": "of",
+      "box": [
+        864.39,
+        2609.09,
+        894.54,
+        2653.65
+      ],
+      "center": [
+        879.4649999999999,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w226",
+      "index": 226,
+      "text": "those",
+      "token": "those",
+      "box": [
+        923.69,
+        2609.09,
+        1024.2,
+        2653.65
+      ],
+      "center": [
+        973.945,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w227",
+      "index": 227,
+      "text": "leeches.",
+      "token": "leeches",
+      "box": [
+        1060.39,
+        2609.09,
+        1221.21,
+        2653.65
+      ],
+      "center": [
+        1140.8000000000002,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w228",
+      "index": 228,
+      "text": "I",
+      "token": "i",
+      "box": [
+        1258.41,
+        2609.09,
+        1267.45,
+        2653.65
+      ],
+      "center": [
+        1262.93,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w229",
+      "index": 229,
+      "text": "tagged",
+      "token": "tagged",
+      "box": [
+        1291.58,
+        2609.09,
+        1420.81,
+        2653.65
+      ],
+      "center": [
+        1356.195,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w230",
+      "index": 230,
+      "text": "Mike",
+      "token": "mike",
+      "box": [
+        1458.43,
+        2609.09,
+        1542.06,
+        2653.65
+      ],
+      "center": [
+        1500.245,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w231",
+      "index": 231,
+      "text": "Novogratz",
+      "token": "novogratz",
+      "box": [
+        486.45,
+        2686.2,
+        684.57,
+        2726.31
+      ],
+      "center": [
+        585.51,
+        2706.255
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w232",
+      "index": 232,
+      "text": "in",
+      "token": "in",
+      "box": [
+        724.67,
+        2686.2,
+        753.48,
+        2726.31
+      ],
+      "center": [
+        739.075,
+        2706.255
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w233",
+      "index": 233,
+      "text": "the",
+      "token": "the",
+      "box": [
+        783.97,
+        2686.2,
+        838.25,
+        2726.31
+      ],
+      "center": [
+        811.11,
+        2706.255
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w234",
+      "index": 234,
+      "text": "tweet,",
+      "token": "tweet",
+      "box": [
+        871.42,
+        2686.2,
+        985.15,
+        2726.31
+      ],
+      "center": [
+        928.285,
+        2706.255
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w235",
+      "index": 235,
+      "text": "figuring",
+      "token": "figuring",
+      "box": [
+        1020.18,
+        2686.2,
+        1183.69,
+        2726.31
+      ],
+      "center": [
+        1101.935,
+        2706.255
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w236",
+      "index": 236,
+      "text": "he",
+      "token": "he",
+      "box": [
+        1220.21,
+        2686.2,
+        1253.05,
+        2726.31
+      ],
+      "center": [
+        1236.63,
+        2706.255
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w237",
+      "index": 237,
+      "text": "could",
+      "token": "could",
+      "box": [
+        1285.54,
+        2686.2,
+        1386.06,
+        2726.31
+      ],
+      "center": [
+        1335.8,
+        2706.255
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w238",
+      "index": 238,
+      "text": "sella",
+      "token": "sella",
+      "box": [
+        1423.25,
+        2686.2,
+        1531.3,
+        2726.31
+      ],
+      "center": [
+        1477.275,
+        2706.255
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w239",
+      "index": 239,
+      "text": "bunch",
+      "token": "bunch",
+      "box": [
+        485.44,
+        2758.86,
+        596.01,
+        2798.97
+      ],
+      "center": [
+        540.725,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w240",
+      "index": 240,
+      "text": "to",
+      "token": "to",
+      "box": [
+        633.2,
+        2758.86,
+        662.68,
+        2798.97
+      ],
+      "center": [
+        647.94,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w241",
+      "index": 241,
+      "text": "his",
+      "token": "his",
+      "box": [
+        692.5,
+        2758.86,
+        746.78,
+        2798.97
+      ],
+      "center": [
+        719.64,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w242",
+      "index": 242,
+      "text": "Wall",
+      "token": "wall",
+      "box": [
+        780.96,
+        2758.86,
+        862.17,
+        2798.97
+      ],
+      "center": [
+        821.565,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w243",
+      "index": 243,
+      "text": "Street",
+      "token": "street",
+      "box": [
+        897.56,
+        2758.86,
+        1016.45,
+        2798.97
+      ],
+      "center": [
+        957.005,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w244",
+      "index": 244,
+      "text": "crony",
+      "token": "crony",
+      "box": [
+        1052.35,
+        2758.86,
+        1152.86,
+        2798.97
+      ],
+      "center": [
+        1102.605,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w245",
+      "index": 245,
+      "text": "pals,",
+      "token": "pals",
+      "box": [
+        1189.05,
+        2758.86,
+        1281.19,
+        2798.97
+      ],
+      "center": [
+        1235.12,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w246",
+      "index": 246,
+      "text": "but",
+      "token": "but",
+      "box": [
+        1315.7,
+        2758.86,
+        1370.73,
+        2798.97
+      ],
+      "center": [
+        1343.2150000000001,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w247",
+      "index": 247,
+      "text": "so",
+      "token": "so",
+      "box": [
+        1405.16,
+        2758.86,
+        1434.64,
+        2798.97
+      ],
+      "center": [
+        1419.9,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w248",
+      "index": 248,
+      "text": "far",
+      "token": "far",
+      "box": [
+        1465.47,
+        2758.86,
+        1515.98,
+        2798.97
+      ],
+      "center": [
+        1490.725,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w249",
+      "index": 249,
+      "text": "he",
+      "token": "he",
+      "box": [
+        1547.89,
+        2758.86,
+        1580.73,
+        2798.97
+      ],
+      "center": [
+        1564.31,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w250",
+      "index": 250,
+      "text": "hasn't",
+      "token": "hasnt",
+      "box": [
+        486.45,
+        2827.07,
+        607.07,
+        2871.64
+      ],
+      "center": [
+        546.76,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w251",
+      "index": 251,
+      "text": "moved",
+      "token": "moved",
+      "box": [
+        643.25,
+        2827.07,
+        749.63,
+        2871.64
+      ],
+      "center": [
+        696.44,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w252",
+      "index": 252,
+      "text": "on",
+      "token": "on",
+      "box": [
+        785.98,
+        2827.07,
+        818.15,
+        2871.64
+      ],
+      "center": [
+        802.065,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w253",
+      "index": 253,
+      "text": "it.",
+      "token": "it",
+      "box": [
+        851.32,
+        2827.07,
+        888.26,
+        2871.64
+      ],
+      "center": [
+        869.79,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w254",
+      "index": 254,
+      "text": "I",
+      "token": "i",
+      "box": [
+        917.66,
+        2827.07,
+        926.71,
+        2871.64
+      ],
+      "center": [
+        922.185,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w255",
+      "index": 255,
+      "text": "don't",
+      "token": "dont",
+      "box": [
+        953.84,
+        2827.07,
+        1045.98,
+        2871.64
+      ],
+      "center": [
+        999.9100000000001,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w256",
+      "index": 256,
+      "text": "really",
+      "token": "really",
+      "box": [
+        1079.49,
+        2827.07,
+        1207.86,
+        2871.64
+      ],
+      "center": [
+        1143.675,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w257",
+      "index": 257,
+      "text": "trust",
+      "token": "trust",
+      "box": [
+        1245.34,
+        2827.07,
+        1345.86,
+        2871.64
+      ],
+      "center": [
+        1295.6,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w258",
+      "index": 258,
+      "text": "that",
+      "token": "that",
+      "box": [
+        1381.03,
+        2827.07,
+        1459.03,
+        2871.64
+      ],
+      "center": [
+        1420.03,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w259",
+      "index": 259,
+      "text": "guy",
+      "token": "guy",
+      "box": [
+        1493.61,
+        2827.07,
+        1563.72,
+        2871.64
+      ],
+      "center": [
+        1528.665,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w260",
+      "index": 260,
+      "text": "Maybe",
+      "token": "maybe",
+      "box": [
+        487.45,
+        2897.06,
+        614.78,
+        2981.74
+      ],
+      "center": [
+        551.115,
+        2939.3999999999996
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w261",
+      "index": 261,
+      "text": "because",
+      "token": "because",
+      "box": [
+        659.33,
+        2897.06,
+        840.52,
+        2981.74
+      ],
+      "center": [
+        749.925,
+        2939.3999999999996
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w262",
+      "index": 262,
+      "text": "he's",
+      "token": "hes",
+      "box": [
+        886.5,
+        2897.06,
+        970.13,
+        2981.74
+      ],
+      "center": [
+        928.315,
+        2939.3999999999996
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w263",
+      "index": 263,
+      "text": "a",
+      "token": "a",
+      "box": [
+        1012.14,
+        2897.06,
+        1026.21,
+        2981.74
+      ],
+      "center": [
+        1019.175,
+        2939.3999999999996
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w264",
+      "index": 264,
+      "text": "siukbeodmensertslveaarty",
+      "token": "siukbeodmensertslveaarty",
+      "box": [
+        1059.39,
+        2897.06,
+        1620.98,
+        2981.74
+      ],
+      "center": [
+        1340.185,
+        2939.3999999999996
+      ],
+      "isActiveTargetWord": true,
+      "strictInstruction": false
+    }
+  ],
+  "nonTargetControlWords": [
+    {
+      "id": "p76w176",
+      "index": 176,
+      "text": "He's",
+      "token": "hes",
+      "box": [
+        485.44,
+        2166.53,
+        553.79,
+        2215.56
+      ],
+      "center": [
+        519.615,
+        2191.045
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w177",
+      "index": 177,
+      "text": "taunting",
+      "token": "taunting",
+      "box": [
+        586.96,
+        2166.53,
+        761.19,
+        2215.56
+      ],
+      "center": [
+        674.075,
+        2191.045
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w178",
+      "index": 178,
+      "text": "them,",
+      "token": "them",
+      "box": [
+        797.04,
+        2166.53,
+        896.72,
+        2215.56
+      ],
+      "center": [
+        846.88,
+        2191.045
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w179",
+      "index": 179,
+      "text": "telling",
+      "token": "telling",
+      "box": [
+        932.74,
+        2166.53,
+        1076.1,
+        2215.56
+      ],
+      "center": [
+        1004.42,
+        2191.045
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w180",
+      "index": 180,
+      "text": "them",
+      "token": "them",
+      "box": [
+        1111.65,
+        2166.53,
+        1196.09,
+        2215.56
+      ],
+      "center": [
+        1153.87,
+        2191.045
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w181",
+      "index": 181,
+      "text": "he's",
+      "token": "hes",
+      "box": [
+        1234.28,
+        2166.53,
+        1303.44,
+        2215.56
+      ],
+      "center": [
+        1268.8600000000001,
+        2191.045
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w183",
+      "index": 183,
+      "text": "I",
+      "token": "i",
+      "box": [
+        485.44,
+        2243.65,
+        494.49,
+        2288.21
+      ],
+      "center": [
+        489.96500000000003,
+        2265.9300000000003
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w184",
+      "index": 184,
+      "text": "tweeted",
+      "token": "tweeted",
+      "box": [
+        519.62,
+        2243.65,
+        668.26,
+        2288.21
+      ],
+      "center": [
+        593.94,
+        2265.9300000000003
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w185",
+      "index": 185,
+      "text": "President",
+      "token": "president",
+      "box": [
+        704.57,
+        2243.65,
+        916.26,
+        2288.21
+      ],
+      "center": [
+        810.415,
+        2265.9300000000003
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w186",
+      "index": 186,
+      "text": "Nayib",
+      "token": "nayib",
+      "box": [
+        956.86,
+        2243.65,
+        1066.59,
+        2288.21
+      ],
+      "center": [
+        1011.7249999999999,
+        2265.9300000000003
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w187",
+      "index": 187,
+      "text": "Bukele",
+      "token": "bukele",
+      "box": [
+        1105.62,
+        2243.65,
+        1246.06,
+        2288.21
+      ],
+      "center": [
+        1175.84,
+        2265.9300000000003
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w188",
+      "index": 188,
+      "text": "when",
+      "token": "when",
+      "box": [
+        1284.54,
+        2243.65,
+        1370.58,
+        2288.21
+      ],
+      "center": [
+        1327.56,
+        2265.9300000000003
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w189",
+      "index": 189,
+      "text": "he",
+      "token": "he",
+      "box": [
+        1408.17,
+        2243.65,
+        1441.68,
+        2288.21
+      ],
+      "center": [
+        1424.9250000000002,
+        2265.9300000000003
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w190",
+      "index": 190,
+      "text": "announced",
+      "token": "announced",
+      "box": [
+        1473.51,
+        2243.65,
+        1683.38,
+        2288.21
+      ],
+      "center": [
+        1578.4450000000002,
+        2265.9300000000003
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w191",
+      "index": 191,
+      "text": "he",
+      "token": "he",
+      "box": [
+        486.45,
+        2320.76,
+        518.61,
+        2360.87
+      ],
+      "center": [
+        502.53,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w192",
+      "index": 192,
+      "text": "was",
+      "token": "was",
+      "box": [
+        550.78,
+        2320.76,
+        608.82,
+        2360.87
+      ],
+      "center": [
+        579.8,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w193",
+      "index": 193,
+      "text": "going",
+      "token": "going",
+      "box": [
+        645.26,
+        2320.76,
+        745.78,
+        2360.87
+      ],
+      "center": [
+        695.52,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w194",
+      "index": 194,
+      "text": "to",
+      "token": "to",
+      "box": [
+        779.95,
+        2320.76,
+        809.44,
+        2360.87
+      ],
+      "center": [
+        794.695,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w195",
+      "index": 195,
+      "text": "tap",
+      "token": "tap",
+      "box": [
+        839.26,
+        2320.76,
+        891.28,
+        2360.87
+      ],
+      "center": [
+        865.27,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w196",
+      "index": 196,
+      "text": "his",
+      "token": "his",
+      "box": [
+        924.69,
+        2320.76,
+        978.98,
+        2360.87
+      ],
+      "center": [
+        951.835,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w197",
+      "index": 197,
+      "text": "nation's",
+      "token": "nations",
+      "box": [
+        1013.15,
+        2320.76,
+        1171.29,
+        2360.87
+      ],
+      "center": [
+        1092.22,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w198",
+      "index": 198,
+      "text": "volcanoes",
+      "token": "volcanoes",
+      "box": [
+        1207.14,
+        2320.76,
+        1402.54,
+        2360.87
+      ],
+      "center": [
+        1304.8400000000001,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w199",
+      "index": 199,
+      "text": "to",
+      "token": "to",
+      "box": [
+        1439.33,
+        2320.76,
+        1468.82,
+        2360.87
+      ],
+      "center": [
+        1454.0749999999998,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w200",
+      "index": 200,
+      "text": "mine",
+      "token": "mine",
+      "box": [
+        1498.64,
+        2320.76,
+        1579.86,
+        2360.87
+      ],
+      "center": [
+        1539.25,
+        2340.815
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w202",
+      "index": 202,
+      "text": "in",
+      "token": "in",
+      "box": [
+        742.76,
+        2393.42,
+        772.25,
+        2433.53
+      ],
+      "center": [
+        757.505,
+        2413.4750000000004
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w203",
+      "index": 203,
+      "text": "bitcoin",
+      "token": "bitcoin",
+      "box": [
+        803.07,
+        2393.42,
+        940.28,
+        2433.53
+      ],
+      "center": [
+        871.675,
+        2413.4750000000004
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w205",
+      "index": 205,
+      "text": "that",
+      "token": "that",
+      "box": [
+        1023.2,
+        2393.42,
+        1099.59,
+        2433.53
+      ],
+      "center": [
+        1061.395,
+        2413.4750000000004
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w206",
+      "index": 206,
+      "text": "he",
+      "token": "he",
+      "box": [
+        1134.77,
+        2393.42,
+        1167.61,
+        2433.53
+      ],
+      "center": [
+        1151.19,
+        2413.4750000000004
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w207",
+      "index": 207,
+      "text": "should",
+      "token": "should",
+      "box": [
+        1201.11,
+        2393.42,
+        1328.62,
+        2433.53
+      ],
+      "center": [
+        1264.8649999999998,
+        2413.4750000000004
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w208",
+      "index": 208,
+      "text": "sell",
+      "token": "sell",
+      "box": [
+        1366.96,
+        2393.42,
+        1439.33,
+        2433.53
+      ],
+      "center": [
+        1403.145,
+        2413.4750000000004
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w209",
+      "index": 209,
+      "text": "billions",
+      "token": "billions",
+      "box": [
+        484.44,
+        2467.15,
+        650.62,
+        2507.26
+      ],
+      "center": [
+        567.53,
+        2487.205
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w210",
+      "index": 210,
+      "text": "worth",
+      "token": "worth",
+      "box": [
+        687.48,
+        2467.15,
+        793.86,
+        2507.26
+      ],
+      "center": [
+        740.6700000000001,
+        2487.205
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w211",
+      "index": 211,
+      "text": "of",
+      "token": "of",
+      "box": [
+        830.21,
+        2467.15,
+        860.36,
+        2507.26
+      ],
+      "center": [
+        845.2850000000001,
+        2487.205
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w212",
+      "index": 212,
+      "text": "future",
+      "token": "future",
+      "box": [
+        890.52,
+        2467.15,
+        1012.86,
+        2507.26
+      ],
+      "center": [
+        951.69,
+        2487.205
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w213",
+      "index": 213,
+      "text": "bitcoin",
+      "token": "bitcoin",
+      "box": [
+        1049.33,
+        2467.15,
+        1186.54,
+        2507.26
+      ],
+      "center": [
+        1117.935,
+        2487.205
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w214",
+      "index": 214,
+      "text": "earnings",
+      "token": "earnings",
+      "box": [
+        1222.22,
+        2467.15,
+        1398.23,
+        2507.26
+      ],
+      "center": [
+        1310.225,
+        2487.205
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w215",
+      "index": 215,
+      "text": "collateralized",
+      "token": "collateralized",
+      "box": [
+        485.44,
+        2535.36,
+        788.47,
+        2579.93
+      ],
+      "center": [
+        636.955,
+        2557.645
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w216",
+      "index": 216,
+      "text": "to",
+      "token": "to",
+      "box": [
+        1219.2,
+        2535.36,
+        1248.69,
+        2579.93
+      ],
+      "center": [
+        1233.9450000000002,
+        2557.645
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w217",
+      "index": 217,
+      "text": "pay",
+      "token": "pay",
+      "box": [
+        1278.51,
+        2535.36,
+        1334.3,
+        2579.93
+      ],
+      "center": [
+        1306.405,
+        2557.645
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w218",
+      "index": 218,
+      "text": "off",
+      "token": "off",
+      "box": [
+        1367.97,
+        2535.36,
+        1419.23,
+        2579.93
+      ],
+      "center": [
+        1393.6,
+        2557.645
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w219",
+      "index": 219,
+      "text": "the",
+      "token": "the",
+      "box": [
+        1450.39,
+        2535.36,
+        1504.67,
+        2579.93
+      ],
+      "center": [
+        1477.5300000000002,
+        2557.645
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w220",
+      "index": 220,
+      "text": "IMF",
+      "token": "imf",
+      "box": [
+        1540.85,
+        2535.36,
+        1607.19,
+        2579.93
+      ],
+      "center": [
+        1574.02,
+        2557.645
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w221",
+      "index": 221,
+      "text": "loan",
+      "token": "loan",
+      "box": [
+        485.44,
+        2609.09,
+        568.27,
+        2653.65
+      ],
+      "center": [
+        526.855,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w222",
+      "index": 222,
+      "text": "and",
+      "token": "and",
+      "box": [
+        605.06,
+        2609.09,
+        663.1,
+        2653.65
+      ],
+      "center": [
+        634.0799999999999,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w223",
+      "index": 223,
+      "text": "get",
+      "token": "get",
+      "box": [
+        698.53,
+        2609.09,
+        750.56,
+        2653.65
+      ],
+      "center": [
+        724.545,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w224",
+      "index": 224,
+      "text": "rid",
+      "token": "rid",
+      "box": [
+        782.97,
+        2609.09,
+        832.72,
+        2653.65
+      ],
+      "center": [
+        807.845,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w225",
+      "index": 225,
+      "text": "of",
+      "token": "of",
+      "box": [
+        864.39,
+        2609.09,
+        894.54,
+        2653.65
+      ],
+      "center": [
+        879.4649999999999,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w226",
+      "index": 226,
+      "text": "those",
+      "token": "those",
+      "box": [
+        923.69,
+        2609.09,
+        1024.2,
+        2653.65
+      ],
+      "center": [
+        973.945,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w227",
+      "index": 227,
+      "text": "leeches.",
+      "token": "leeches",
+      "box": [
+        1060.39,
+        2609.09,
+        1221.21,
+        2653.65
+      ],
+      "center": [
+        1140.8000000000002,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w228",
+      "index": 228,
+      "text": "I",
+      "token": "i",
+      "box": [
+        1258.41,
+        2609.09,
+        1267.45,
+        2653.65
+      ],
+      "center": [
+        1262.93,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w229",
+      "index": 229,
+      "text": "tagged",
+      "token": "tagged",
+      "box": [
+        1291.58,
+        2609.09,
+        1420.81,
+        2653.65
+      ],
+      "center": [
+        1356.195,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w230",
+      "index": 230,
+      "text": "Mike",
+      "token": "mike",
+      "box": [
+        1458.43,
+        2609.09,
+        1542.06,
+        2653.65
+      ],
+      "center": [
+        1500.245,
+        2631.37
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w231",
+      "index": 231,
+      "text": "Novogratz",
+      "token": "novogratz",
+      "box": [
+        486.45,
+        2686.2,
+        684.57,
+        2726.31
+      ],
+      "center": [
+        585.51,
+        2706.255
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w232",
+      "index": 232,
+      "text": "in",
+      "token": "in",
+      "box": [
+        724.67,
+        2686.2,
+        753.48,
+        2726.31
+      ],
+      "center": [
+        739.075,
+        2706.255
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w233",
+      "index": 233,
+      "text": "the",
+      "token": "the",
+      "box": [
+        783.97,
+        2686.2,
+        838.25,
+        2726.31
+      ],
+      "center": [
+        811.11,
+        2706.255
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w234",
+      "index": 234,
+      "text": "tweet,",
+      "token": "tweet",
+      "box": [
+        871.42,
+        2686.2,
+        985.15,
+        2726.31
+      ],
+      "center": [
+        928.285,
+        2706.255
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w235",
+      "index": 235,
+      "text": "figuring",
+      "token": "figuring",
+      "box": [
+        1020.18,
+        2686.2,
+        1183.69,
+        2726.31
+      ],
+      "center": [
+        1101.935,
+        2706.255
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w236",
+      "index": 236,
+      "text": "he",
+      "token": "he",
+      "box": [
+        1220.21,
+        2686.2,
+        1253.05,
+        2726.31
+      ],
+      "center": [
+        1236.63,
+        2706.255
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w237",
+      "index": 237,
+      "text": "could",
+      "token": "could",
+      "box": [
+        1285.54,
+        2686.2,
+        1386.06,
+        2726.31
+      ],
+      "center": [
+        1335.8,
+        2706.255
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w238",
+      "index": 238,
+      "text": "sella",
+      "token": "sella",
+      "box": [
+        1423.25,
+        2686.2,
+        1531.3,
+        2726.31
+      ],
+      "center": [
+        1477.275,
+        2706.255
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w239",
+      "index": 239,
+      "text": "bunch",
+      "token": "bunch",
+      "box": [
+        485.44,
+        2758.86,
+        596.01,
+        2798.97
+      ],
+      "center": [
+        540.725,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w240",
+      "index": 240,
+      "text": "to",
+      "token": "to",
+      "box": [
+        633.2,
+        2758.86,
+        662.68,
+        2798.97
+      ],
+      "center": [
+        647.94,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w241",
+      "index": 241,
+      "text": "his",
+      "token": "his",
+      "box": [
+        692.5,
+        2758.86,
+        746.78,
+        2798.97
+      ],
+      "center": [
+        719.64,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w242",
+      "index": 242,
+      "text": "Wall",
+      "token": "wall",
+      "box": [
+        780.96,
+        2758.86,
+        862.17,
+        2798.97
+      ],
+      "center": [
+        821.565,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w243",
+      "index": 243,
+      "text": "Street",
+      "token": "street",
+      "box": [
+        897.56,
+        2758.86,
+        1016.45,
+        2798.97
+      ],
+      "center": [
+        957.005,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w244",
+      "index": 244,
+      "text": "crony",
+      "token": "crony",
+      "box": [
+        1052.35,
+        2758.86,
+        1152.86,
+        2798.97
+      ],
+      "center": [
+        1102.605,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w245",
+      "index": 245,
+      "text": "pals,",
+      "token": "pals",
+      "box": [
+        1189.05,
+        2758.86,
+        1281.19,
+        2798.97
+      ],
+      "center": [
+        1235.12,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w246",
+      "index": 246,
+      "text": "but",
+      "token": "but",
+      "box": [
+        1315.7,
+        2758.86,
+        1370.73,
+        2798.97
+      ],
+      "center": [
+        1343.2150000000001,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w247",
+      "index": 247,
+      "text": "so",
+      "token": "so",
+      "box": [
+        1405.16,
+        2758.86,
+        1434.64,
+        2798.97
+      ],
+      "center": [
+        1419.9,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w248",
+      "index": 248,
+      "text": "far",
+      "token": "far",
+      "box": [
+        1465.47,
+        2758.86,
+        1515.98,
+        2798.97
+      ],
+      "center": [
+        1490.725,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w249",
+      "index": 249,
+      "text": "he",
+      "token": "he",
+      "box": [
+        1547.89,
+        2758.86,
+        1580.73,
+        2798.97
+      ],
+      "center": [
+        1564.31,
+        2778.915
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w250",
+      "index": 250,
+      "text": "hasn't",
+      "token": "hasnt",
+      "box": [
+        486.45,
+        2827.07,
+        607.07,
+        2871.64
+      ],
+      "center": [
+        546.76,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w251",
+      "index": 251,
+      "text": "moved",
+      "token": "moved",
+      "box": [
+        643.25,
+        2827.07,
+        749.63,
+        2871.64
+      ],
+      "center": [
+        696.44,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w252",
+      "index": 252,
+      "text": "on",
+      "token": "on",
+      "box": [
+        785.98,
+        2827.07,
+        818.15,
+        2871.64
+      ],
+      "center": [
+        802.065,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w253",
+      "index": 253,
+      "text": "it.",
+      "token": "it",
+      "box": [
+        851.32,
+        2827.07,
+        888.26,
+        2871.64
+      ],
+      "center": [
+        869.79,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w254",
+      "index": 254,
+      "text": "I",
+      "token": "i",
+      "box": [
+        917.66,
+        2827.07,
+        926.71,
+        2871.64
+      ],
+      "center": [
+        922.185,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w255",
+      "index": 255,
+      "text": "don't",
+      "token": "dont",
+      "box": [
+        953.84,
+        2827.07,
+        1045.98,
+        2871.64
+      ],
+      "center": [
+        999.9100000000001,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w256",
+      "index": 256,
+      "text": "really",
+      "token": "really",
+      "box": [
+        1079.49,
+        2827.07,
+        1207.86,
+        2871.64
+      ],
+      "center": [
+        1143.675,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w257",
+      "index": 257,
+      "text": "trust",
+      "token": "trust",
+      "box": [
+        1245.34,
+        2827.07,
+        1345.86,
+        2871.64
+      ],
+      "center": [
+        1295.6,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w258",
+      "index": 258,
+      "text": "that",
+      "token": "that",
+      "box": [
+        1381.03,
+        2827.07,
+        1459.03,
+        2871.64
+      ],
+      "center": [
+        1420.03,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w259",
+      "index": 259,
+      "text": "guy",
+      "token": "guy",
+      "box": [
+        1493.61,
+        2827.07,
+        1563.72,
+        2871.64
+      ],
+      "center": [
+        1528.665,
+        2849.355
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w260",
+      "index": 260,
+      "text": "Maybe",
+      "token": "maybe",
+      "box": [
+        487.45,
+        2897.06,
+        614.78,
+        2981.74
+      ],
+      "center": [
+        551.115,
+        2939.3999999999996
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w261",
+      "index": 261,
+      "text": "because",
+      "token": "because",
+      "box": [
+        659.33,
+        2897.06,
+        840.52,
+        2981.74
+      ],
+      "center": [
+        749.925,
+        2939.3999999999996
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w262",
+      "index": 262,
+      "text": "he's",
+      "token": "hes",
+      "box": [
+        886.5,
+        2897.06,
+        970.13,
+        2981.74
+      ],
+      "center": [
+        928.315,
+        2939.3999999999996
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    },
+    {
+      "id": "p76w263",
+      "index": 263,
+      "text": "a",
+      "token": "a",
+      "box": [
+        1012.14,
+        2897.06,
+        1026.21,
+        2981.74
+      ],
+      "center": [
+        1019.175,
+        2939.3999999999996
+      ],
+      "isActiveTargetWord": false,
+      "strictInstruction": false
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/overdose_glyph_axis_word_center_control_gate/overdose_glyph_axis_word_center_control_gate_sheet.jpg"
+}

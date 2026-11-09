@@ -1,0 +1,508 @@
+{
+  "createdAt": "2026-05-21T14:19:30",
+  "scope": "current PDF/source-image held-to-light simulator; no extraction or candidate generation",
+  "inputs": {
+    "sourceImages": "analysis_outputs/source_images/magazine_page_75..80.jpg",
+    "readableReference": "analysis_outputs/3d_article_map/page_75..80_upright.jpg",
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "orientation": "PDF-extracted source_images are rotated 180 degrees into readable/upright coordinates before hold-to-light simulation.",
+  "rows": [
+    {
+      "pairId": "same_leaf_75_to_76",
+      "topology": "valid same leaf into page 76",
+      "sourcePage": 75,
+      "targetPage": 76,
+      "mode": "natural_hflip",
+      "dx": 0,
+      "dy": 0,
+      "globalBalanced": 0.13726340594151026,
+      "globalJaccard": 0.07360043703363421,
+      "activeOverTarget": 0.1003187699231202,
+      "activeBalanced": 0.05614600179570284,
+      "activeCoverageByBox": {
+        "O4": {
+          "label": "buying the dip",
+          "coverage": 0.12232334047109207
+        },
+        "B4": {
+          "label": "$1 billion",
+          "coverage": 0.0
+        },
+        "G5": {
+          "label": "Volcano Bonds",
+          "coverage": 0.05262884455527847
+        },
+        "O5": {
+          "label": "shitcoiner at heart",
+          "coverage": 0.16541062801932366
+        }
+      },
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/same_leaf_75_to_76_natural_hflip.jpg"
+    },
+    {
+      "pairId": "same_leaf_75_to_76",
+      "topology": "valid same leaf into page 76",
+      "sourcePage": 75,
+      "targetPage": 76,
+      "mode": "best_global_feature",
+      "dx": -220,
+      "dy": 200,
+      "globalBalanced": 0.17051947266022977,
+      "globalJaccard": 0.0931291496018926,
+      "activeOverTarget": 0.32420776298518655,
+      "activeBalanced": 0.18168219474560532,
+      "activeCoverageByBox": {
+        "O4": {
+          "label": "buying the dip",
+          "coverage": 0.9766238401142041
+        },
+        "B4": {
+          "label": "$1 billion",
+          "coverage": 0.1299247633686595
+        },
+        "G5": {
+          "label": "Volcano Bonds",
+          "coverage": 0.05403158769742311
+        },
+        "O5": {
+          "label": "shitcoiner at heart",
+          "coverage": 0.09990338164251207
+        }
+      },
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/same_leaf_75_to_76_best_global_feature.jpg"
+    },
+    {
+      "pairId": "same_leaf_75_to_76",
+      "topology": "valid same leaf into page 76",
+      "sourcePage": 75,
+      "targetPage": 76,
+      "mode": "best_page76_active_boxes",
+      "dx": -220,
+      "dy": 200,
+      "globalBalanced": 0.17051947266022977,
+      "globalJaccard": 0.0931291496018926,
+      "activeOverTarget": 0.32420776298518655,
+      "activeBalanced": 0.18168219474560532,
+      "activeCoverageByBox": {
+        "O4": {
+          "label": "buying the dip",
+          "coverage": 0.9766238401142041
+        },
+        "B4": {
+          "label": "$1 billion",
+          "coverage": 0.1299247633686595
+        },
+        "G5": {
+          "label": "Volcano Bonds",
+          "coverage": 0.05403158769742311
+        },
+        "O5": {
+          "label": "shitcoiner at heart",
+          "coverage": 0.09990338164251207
+        }
+      },
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/same_leaf_75_to_76_best_page76_active_boxes.jpg"
+    },
+    {
+      "pairId": "same_leaf_76_to_75",
+      "topology": "reverse same leaf",
+      "sourcePage": 76,
+      "targetPage": 75,
+      "mode": "natural_hflip",
+      "dx": 0,
+      "dy": 0,
+      "globalBalanced": 0.13765907818622877,
+      "globalJaccard": 0.07382799450651424,
+      "activeOverTarget": 0.0,
+      "activeBalanced": 0.0,
+      "activeCoverageByBox": {},
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/same_leaf_76_to_75_natural_hflip.jpg"
+    },
+    {
+      "pairId": "same_leaf_76_to_75",
+      "topology": "reverse same leaf",
+      "sourcePage": 76,
+      "targetPage": 75,
+      "mode": "best_global_feature",
+      "dx": -220,
+      "dy": -200,
+      "globalBalanced": 0.17426411649944257,
+      "globalJaccard": 0.09510718756856519,
+      "activeOverTarget": 0.0,
+      "activeBalanced": 0.0,
+      "activeCoverageByBox": {},
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/same_leaf_76_to_75_best_global_feature.jpg"
+    },
+    {
+      "pairId": "same_leaf_77_to_78",
+      "topology": "valid same leaf",
+      "sourcePage": 77,
+      "targetPage": 78,
+      "mode": "natural_hflip",
+      "dx": 0,
+      "dy": 0,
+      "globalBalanced": 0.5064145593496712,
+      "globalJaccard": 0.09557686485955769,
+      "activeOverTarget": 0.0,
+      "activeBalanced": 0.0,
+      "activeCoverageByBox": {},
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/same_leaf_77_to_78_natural_hflip.jpg"
+    },
+    {
+      "pairId": "same_leaf_77_to_78",
+      "topology": "valid same leaf",
+      "sourcePage": 77,
+      "targetPage": 78,
+      "mode": "best_global_feature",
+      "dx": -180,
+      "dy": 120,
+      "globalBalanced": 0.5220353176298291,
+      "globalJaccard": 0.10967410438613469,
+      "activeOverTarget": 0.0,
+      "activeBalanced": 0.0,
+      "activeCoverageByBox": {},
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/same_leaf_77_to_78_best_global_feature.jpg"
+    },
+    {
+      "pairId": "same_leaf_78_to_77",
+      "topology": "reverse same leaf",
+      "sourcePage": 78,
+      "targetPage": 77,
+      "mode": "natural_hflip",
+      "dx": 0,
+      "dy": 0,
+      "globalBalanced": 0.5072925474992932,
+      "globalJaccard": 0.09598284114771294,
+      "activeOverTarget": 0.0,
+      "activeBalanced": 0.0,
+      "activeCoverageByBox": {},
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/same_leaf_78_to_77_natural_hflip.jpg"
+    },
+    {
+      "pairId": "same_leaf_78_to_77",
+      "topology": "reverse same leaf",
+      "sourcePage": 78,
+      "targetPage": 77,
+      "mode": "best_global_feature",
+      "dx": -180,
+      "dy": -120,
+      "globalBalanced": 0.5202087543998544,
+      "globalJaccard": 0.09792791573906662,
+      "activeOverTarget": 0.0,
+      "activeBalanced": 0.0,
+      "activeCoverageByBox": {},
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/same_leaf_78_to_77_best_global_feature.jpg"
+    },
+    {
+      "pairId": "same_leaf_79_to_80",
+      "topology": "valid same leaf",
+      "sourcePage": 79,
+      "targetPage": 80,
+      "mode": "natural_hflip",
+      "dx": 0,
+      "dy": 0,
+      "globalBalanced": 0.42200352832772653,
+      "globalJaccard": 0.07803824511429172,
+      "activeOverTarget": 0.0,
+      "activeBalanced": 0.0,
+      "activeCoverageByBox": {},
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/same_leaf_79_to_80_natural_hflip.jpg"
+    },
+    {
+      "pairId": "same_leaf_79_to_80",
+      "topology": "valid same leaf",
+      "sourcePage": 79,
+      "targetPage": 80,
+      "mode": "best_global_feature",
+      "dx": 220,
+      "dy": -180,
+      "globalBalanced": 0.4501354525102754,
+      "globalJaccard": 0.07863229374365148,
+      "activeOverTarget": 0.0,
+      "activeBalanced": 0.0,
+      "activeCoverageByBox": {},
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/same_leaf_79_to_80_best_global_feature.jpg"
+    },
+    {
+      "pairId": "same_leaf_80_to_79",
+      "topology": "reverse same leaf",
+      "sourcePage": 80,
+      "targetPage": 79,
+      "mode": "natural_hflip",
+      "dx": 0,
+      "dy": 0,
+      "globalBalanced": 0.4195834479798545,
+      "globalJaccard": 0.07799105020735325,
+      "activeOverTarget": 0.0,
+      "activeBalanced": 0.0,
+      "activeCoverageByBox": {},
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/same_leaf_80_to_79_natural_hflip.jpg"
+    },
+    {
+      "pairId": "same_leaf_80_to_79",
+      "topology": "reverse same leaf",
+      "sourcePage": 80,
+      "targetPage": 79,
+      "mode": "best_global_feature",
+      "dx": 60,
+      "dy": 180,
+      "globalBalanced": 0.4416244286668749,
+      "globalJaccard": 0.08804090948195155,
+      "activeOverTarget": 0.0,
+      "activeBalanced": 0.0,
+      "activeCoverageByBox": {},
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/same_leaf_80_to_79_best_global_feature.jpg"
+    },
+    {
+      "pairId": "nonphysical_78_to_76",
+      "topology": "visual registration benchmark, not same leaf",
+      "sourcePage": 78,
+      "targetPage": 76,
+      "mode": "natural_hflip",
+      "dx": 0,
+      "dy": 0,
+      "globalBalanced": 0.0884839149292683,
+      "globalJaccard": 0.04579877794906996,
+      "activeOverTarget": 0.004687792987061692,
+      "activeBalanced": 0.0025882805479600624,
+      "activeCoverageByBox": {
+        "O4": {
+          "label": "buying the dip",
+          "coverage": 0.0
+        },
+        "B4": {
+          "label": "$1 billion",
+          "coverage": 0.0
+        },
+        "G5": {
+          "label": "Volcano Bonds",
+          "coverage": 0.0
+        },
+        "O5": {
+          "label": "shitcoiner at heart",
+          "coverage": 0.013880837359098229
+        }
+      },
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/nonphysical_78_to_76_natural_hflip.jpg"
+    },
+    {
+      "pairId": "nonphysical_78_to_76",
+      "topology": "visual registration benchmark, not same leaf",
+      "sourcePage": 78,
+      "targetPage": 76,
+      "mode": "best_global_feature",
+      "dx": 220,
+      "dy": 180,
+      "globalBalanced": 0.1833369107072432,
+      "globalJaccard": 0.10006363538127198,
+      "activeOverTarget": 0.22257641102568912,
+      "activeBalanced": 0.12319798417357139,
+      "activeCoverageByBox": {
+        "O4": {
+          "label": "buying the dip",
+          "coverage": 0.8004104211277658
+        },
+        "B4": {
+          "label": "$1 billion",
+          "coverage": 8.08996035919424e-05
+        },
+        "G5": {
+          "label": "Volcano Bonds",
+          "coverage": 0.0
+        },
+        "O5": {
+          "label": "shitcoiner at heart",
+          "coverage": 0.045056360708534623
+        }
+      },
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/nonphysical_78_to_76_best_global_feature.jpg"
+    },
+    {
+      "pairId": "nonphysical_78_to_76",
+      "topology": "visual registration benchmark, not same leaf",
+      "sourcePage": 78,
+      "targetPage": 76,
+      "mode": "best_page76_active_boxes",
+      "dx": -220,
+      "dy": 180,
+      "globalBalanced": 0.1770992450849808,
+      "globalJaccard": 0.09616843702579667,
+      "activeOverTarget": 0.2921432589536846,
+      "activeBalanced": 0.16144379776163195,
+      "activeCoverageByBox": {
+        "O4": {
+          "label": "buying the dip",
+          "coverage": 0.2346538187009279
+        },
+        "B4": {
+          "label": "$1 billion",
+          "coverage": 0.0
+        },
+        "G5": {
+          "label": "Volcano Bonds",
+          "coverage": 0.0
+        },
+        "O5": {
+          "label": "shitcoiner at heart",
+          "coverage": 0.6057971014492753
+        }
+      },
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/nonphysical_78_to_76_best_page76_active_boxes.jpg"
+    },
+    {
+      "pairId": "nonphysical_79_to_76",
+      "topology": "visual registration benchmark, not same leaf",
+      "sourcePage": 79,
+      "targetPage": 76,
+      "mode": "natural_hflip",
+      "dx": 0,
+      "dy": 0,
+      "globalBalanced": 0.15822062279912355,
+      "globalJaccard": 0.08585755998476577,
+      "activeOverTarget": 0.08494280892555785,
+      "activeBalanced": 0.047649139061018725,
+      "activeCoverageByBox": {
+        "O4": {
+          "label": "buying the dip",
+          "coverage": 0.009145253390435404
+        },
+        "B4": {
+          "label": "$1 billion",
+          "coverage": 0.0713534503680932
+        },
+        "G5": {
+          "label": "Volcano Bonds",
+          "coverage": 0.00015586034912718204
+        },
+        "O5": {
+          "label": "shitcoiner at heart",
+          "coverage": 0.21091787439613527
+        }
+      },
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/nonphysical_79_to_76_natural_hflip.jpg"
+    },
+    {
+      "pairId": "nonphysical_79_to_76",
+      "topology": "visual registration benchmark, not same leaf",
+      "sourcePage": 79,
+      "targetPage": 76,
+      "mode": "best_global_feature",
+      "dx": 40,
+      "dy": 80,
+      "globalBalanced": 0.17345826122937186,
+      "globalJaccard": 0.09491247615023113,
+      "activeOverTarget": 0.38402400150009375,
+      "activeBalanced": 0.21543538295834114,
+      "activeCoverageByBox": {
+        "O4": {
+          "label": "buying the dip",
+          "coverage": 0.8415863668807995
+        },
+        "B4": {
+          "label": "$1 billion",
+          "coverage": 0.11382574225386295
+        },
+        "G5": {
+          "label": "Volcano Bonds",
+          "coverage": 0.13284497090606817
+        },
+        "O5": {
+          "label": "shitcoiner at heart",
+          "coverage": 0.32032206119162643
+        }
+      },
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/nonphysical_79_to_76_best_global_feature.jpg"
+    },
+    {
+      "pairId": "nonphysical_79_to_76",
+      "topology": "visual registration benchmark, not same leaf",
+      "sourcePage": 79,
+      "targetPage": 76,
+      "mode": "best_page76_active_boxes",
+      "dx": 40,
+      "dy": 80,
+      "globalBalanced": 0.17345826122937186,
+      "globalJaccard": 0.09491247615023113,
+      "activeOverTarget": 0.38402400150009375,
+      "activeBalanced": 0.21543538295834114,
+      "activeCoverageByBox": {
+        "O4": {
+          "label": "buying the dip",
+          "coverage": 0.8415863668807995
+        },
+        "B4": {
+          "label": "$1 billion",
+          "coverage": 0.11382574225386295
+        },
+        "G5": {
+          "label": "Volcano Bonds",
+          "coverage": 0.13284497090606817
+        },
+        "O5": {
+          "label": "shitcoiner at heart",
+          "coverage": 0.32032206119162643
+        }
+      },
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/nonphysical_79_to_76_best_page76_active_boxes.jpg"
+    },
+    {
+      "pairId": "facing_spread_78_to_79",
+      "topology": "facing spread comparison",
+      "sourcePage": 78,
+      "targetPage": 79,
+      "mode": "natural_hflip",
+      "dx": 0,
+      "dy": 0,
+      "globalBalanced": 0.11697901507604173,
+      "globalJaccard": 0.06173598230048942,
+      "activeOverTarget": 0.0,
+      "activeBalanced": 0.0,
+      "activeCoverageByBox": {},
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/facing_spread_78_to_79_natural_hflip.jpg"
+    },
+    {
+      "pairId": "facing_spread_78_to_79",
+      "topology": "facing spread comparison",
+      "sourcePage": 78,
+      "targetPage": 79,
+      "mode": "best_global_feature",
+      "dx": 40,
+      "dy": 100,
+      "globalBalanced": 0.17494545720187565,
+      "globalJaccard": 0.09528433854726644,
+      "activeOverTarget": 0.0,
+      "activeBalanced": 0.0,
+      "activeCoverageByBox": {},
+      "image": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/facing_spread_78_to_79_best_global_feature.jpg"
+    }
+  ],
+  "summary": {
+    "pairCount": 9,
+    "modeRowCount": 21,
+    "naturalSameLeaf75To76ActiveOverTarget": 0.1003187699231202,
+    "bestSameLeaf75To76ActiveOverTarget": 0.32420776298518655,
+    "bestSameLeaf75To76Shift": "-220,200",
+    "bestPage76ActivePair": "nonphysical_79_to_76",
+    "bestPage76ActiveMode": "best_global_feature",
+    "bestPage76ActiveOverTarget": 0.38402400150009375,
+    "bestPage76ActiveShift": "40,80",
+    "bestGlobalPair": "same_leaf_77_to_78",
+    "bestGlobalMode": "best_global_feature",
+    "bestGlobalBalanced": 0.5220353176298291,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "heldToLightSimulatorFingerprint": "pairs=9|rows=21|sameLeaf75natural=0.1003|sameLeaf75best=0.3242@-220,200|bestP76=nonphysical_79_to_76:best_global_feature:0.3840@40,80|bestGlobal=same_leaf_77_to_78:0.5220|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "decision": {
+    "currentScanHeldToLightSimulator": "simulator_created_no_current_selector_unlocked",
+    "selectorUnlocked": false,
+    "reason": "The simulator makes the current scan usable for visual leaf/spread inspection, but the physically valid 75->76 same-leaf view does not naturally select the lower O4/B4/G5/O5 corridor. Forced active-box alignment remains a translation search, not source-backed unit/order evidence.",
+    "nextMove": "Use the simulator for manual visual review and for testing any source clue that names a page pair or transform. Next automated pass should inspect the PDF object layout/layer assets for original embedded-image provenance rather than key material."
+  },
+  "sheet": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/current_scan_held_to_light_simulator_sheet.jpg",
+  "htmlSimulator": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/index.html"
+}

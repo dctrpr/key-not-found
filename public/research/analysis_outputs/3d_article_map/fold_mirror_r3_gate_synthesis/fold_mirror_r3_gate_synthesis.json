@@ -1,0 +1,168 @@
+{
+  "createdAt": "2026-05-20T22:42:05",
+  "scope": "folded/mirrored 3D geometry synthesis against source-reopen gate; no extraction/key derivation",
+  "inputs": {
+    "reflected_highlight_graph": "analysis_outputs/3d_article_map/reflected_highlight_graph.json",
+    "exact_highres_reflection_geometry": "analysis_outputs/3d_article_map/exact_highres_reflection_geometry.json",
+    "page76_twohand_selector": "analysis_outputs/3d_article_map/page76_twohand_selector.json",
+    "page76_mirror_read_rule": "analysis_outputs/3d_article_map/page76_mirror_read_rule.json",
+    "reflection_box_target_overlap": "analysis_outputs/3d_article_map/reflection_box_target_overlap/reflection_box_target_overlap.json",
+    "anchor_point_target_proximity": "analysis_outputs/3d_article_map/anchor_point_target_proximity/anchor_point_target_proximity.json",
+    "fold_nonboundary_ordering": "analysis_outputs/3d_article_map/fold_nonboundary_ordering/fold_nonboundary_ordering.json",
+    "runtime_view_modes": "analysis_outputs/3d_article_map/runtime_view_modes/runtime_view_modes.json",
+    "selector_intersection_analysis": "analysis_outputs/3d_article_map/selector_intersection_analysis.json",
+    "source_reopen": "analysis_outputs/source_audit/source_reopen_requirements/source_reopen_requirements.json"
+  },
+  "sheet": "analysis_outputs/3d_article_map/fold_mirror_r3_gate_synthesis/fold_mirror_r3_gate_synthesis_sheet.jpg",
+  "sheetPanels": [
+    {
+      "title": "3D fold view, page 76 focus",
+      "path": "analysis_outputs/3d_article_map/runtime_view_modes/fold_page76.png"
+    },
+    {
+      "title": "reflection boxes vs active targets",
+      "path": "analysis_outputs/3d_article_map/reflection_box_target_overlap/reflection_box_target_overlap_overlay.jpg"
+    },
+    {
+      "title": "3D anchors vs active targets",
+      "path": "analysis_outputs/3d_article_map/anchor_point_target_proximity/anchor_point_target_proximity_overlay.jpg"
+    },
+    {
+      "title": "fold non-boundary ordering",
+      "path": "analysis_outputs/3d_article_map/fold_nonboundary_ordering/fold_nonboundary_ordering_plan.jpg"
+    }
+  ],
+  "reflectedGraphSummary": {
+    "edges": 25,
+    "strongEdges": 9,
+    "mediumPlusEdges": 17,
+    "page76MediumPlusEdges": 17,
+    "pairCounts": {
+      "78->76": 8,
+      "79->76": 9
+    },
+    "page76TargetInitials": "GGGbbbbbIIII$$$$$",
+    "page76SourcePagePattern": "7979797878787979787879797878787979",
+    "page76ReflectedInitials": "bGCaJBcIsMLntVwuIstsosbrolcbttabs|GbSwFyoalowP|mbb|obettpcMBm|HystpoES|hybh|GbSwFyoalowP|mbb|hybh|obettpcMBm|GbSwFyoalowP|bGCaJBcIsMLntVwuIstsosbrolcbttabs|HystpoES|obettpcMBm|Oi|HystpoES|ttIMFIoTtttthsB"
+  },
+  "exactHighresPage76StableCount": 6,
+  "twoHandWeakTermHitCount": 3,
+  "twoHandUnitOrderHitCount": 0,
+  "mirrorReadSummary": {
+    "graphRows": 17,
+    "highresRows": 4,
+    "sourcePages": "7979797878787979787878797978787979"
+  },
+  "reflectionBox": {
+    "page76ReflectionCount": 14,
+    "activeTargetOverlapCount": 1,
+    "instructionReflectionCount": 0,
+    "decision": "Do not extract directly from 3D reflection target boxes under the current scan. Reopen only if a new source transform makes G5/O5 direct reflection-box contacts or a clue names a specific reflection id."
+  },
+  "anchorPoint": {
+    "page76AnchorCount": 11,
+    "insideTargetCount": 0,
+    "nearTargetWithin50Count": 0,
+    "streamInstructionHitCount": 0,
+    "decision": "Do not treat 3D anchor points as direct selectors into O4/B4/G5/O5 under the current scan."
+  },
+  "foldOrdering": {
+    "pairSymmetry": [
+      {
+        "pair": [
+          75,
+          79
+        ],
+        "sameFoldRow": true,
+        "sameFoldDepth": true,
+        "rotations": [
+          0.42,
+          -0.42
+        ]
+      },
+      {
+        "pair": [
+          76,
+          78
+        ],
+        "sameFoldRow": true,
+        "sameFoldDepth": true,
+        "rotations": [
+          0.42,
+          -0.42
+        ]
+      },
+      {
+        "pair": [
+          79,
+          76
+        ],
+        "sameFoldRow": false,
+        "sameFoldDepth": false,
+        "rotations": [
+          -0.42,
+          0.42
+        ]
+      }
+    ],
+    "orders": {
+      "page76VisualTopToBottom": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "foldDepthFrontToBackZLowToHigh": [
+        "buying_dip",
+        "shitcoiner_heart",
+        "volcano_bonds",
+        "one_billion"
+      ],
+      "foldXLeftToRight": [
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart",
+        "buying_dip"
+      ]
+    },
+    "decision": "Do not promote 3D fold display ordering to extraction evidence; it is an orientation view."
+  },
+  "runtimeViewModes": {
+    "nonblankCaptures": [
+      "spread_all",
+      "fold_all",
+      "fold_page76",
+      "stack_all"
+    ],
+    "decision": "Use the 3D viewer for visual review/orientation only. Future runtime screenshots should force SwiftShader/ANGLE; do not infer puzzle signal from blank default headless captures or from focus/layout UI state."
+  },
+  "gateRows": [
+    {
+      "gate": "R1 source identity",
+      "status": "FAIL/PARTIAL",
+      "evidence": "3D geometry is derived from the current locked scan/viewer cache, not a new physical/original-layout source."
+    },
+    {
+      "gate": "R2 target preservation",
+      "status": "PASS as locator",
+      "evidence": "reflected graph has 17 page-76 medium/strong edges and preserves the El Salvador/IMF/$1B/buying corridor."
+    },
+    {
+      "gate": "R3 unit/order evidence",
+      "status": "FAIL",
+      "evidence": "two-hand unit/order hits=0 (all weak term hits=3); reflection-box instruction hits=0; anchor stream instruction hits=0; literal mirror-read hits are semantic corridor words only."
+    },
+    {
+      "gate": "R4 orientation/source discipline",
+      "status": "PASS as review layer",
+      "evidence": "runtime viewer is nonblank under SwiftShader/ANGLE, and the current orientation rule is known: 3D/crop layer is upright; source_images/fresh extraction need rotate180."
+    },
+    {
+      "gate": "R5 controlled improvement",
+      "status": "FAIL",
+      "evidence": "direct reflection boxes overlap active targets 1 time(s), only O4; anchors inside active targets=0, within 50px=0; no direct G5/O5 geometry improvement."
+    }
+  ],
+  "decision": "3d_fold_mirror_geometry_closed_for_current_scan_as_r3_selector",
+  "nextMove": "Keep 3D fold/mirror geometry as orientation, target-location, and source-validation evidence only. Reopen extraction only if new physical/original-layout material changes G5/O5 registration or a raw clue names a specific geometry unit/order such as reflection id, anchor order, fold contact, word, line, or letter."
+}

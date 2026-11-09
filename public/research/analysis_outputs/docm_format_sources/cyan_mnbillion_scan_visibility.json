@@ -1,0 +1,170 @@
+{
+  "sourceRuns": "analysis_outputs/docm_format_sources/article_with_fonts_runs.json",
+  "scanSource": "analysis_outputs/source_images/magazine_page_75.jpg ... magazine_page_80.jpg",
+  "cyanDefinition": {
+    "loose": "R < 120, G > 150, B > 150, |G-B| < 80",
+    "strict": "R < 80, G > 180, B > 180, |G-B| < 60"
+  },
+  "cyanRuns": [
+    {
+      "runIndex": 2,
+      "paragraphIndex": 1,
+      "page": 75,
+      "text": "M",
+      "letters": "M",
+      "fontAscii": "Typeka",
+      "bold": true,
+      "start": 14,
+      "end": 15
+    },
+    {
+      "runIndex": 42,
+      "paragraphIndex": 21,
+      "page": 75,
+      "text": "N",
+      "letters": "N",
+      "fontAscii": "Typeka",
+      "bold": false,
+      "start": 863,
+      "end": 864
+    },
+    {
+      "runIndex": 263,
+      "paragraphIndex": 123,
+      "page": 78,
+      "text": "BILLION",
+      "letters": "BILLION",
+      "fontAscii": "Typeka",
+      "bold": false,
+      "start": 5715,
+      "end": 5722
+    }
+  ],
+  "cyanLetters": "MNBILLION",
+  "scanPageCounts": [
+    {
+      "path": "analysis_outputs/source_images/magazine_page_75.jpg",
+      "width": 2544,
+      "height": 3264,
+      "pixels": 8303616,
+      "looseCyanPixels": 0,
+      "strictCyanPixels": 0,
+      "looseRatio": 0.0,
+      "strictRatio": 0.0,
+      "page": 75
+    },
+    {
+      "path": "analysis_outputs/source_images/magazine_page_76.jpg",
+      "width": 2544,
+      "height": 3264,
+      "pixels": 8303616,
+      "looseCyanPixels": 0,
+      "strictCyanPixels": 0,
+      "looseRatio": 0.0,
+      "strictRatio": 0.0,
+      "page": 76
+    },
+    {
+      "path": "analysis_outputs/source_images/magazine_page_77.jpg",
+      "width": 2544,
+      "height": 3264,
+      "pixels": 8303616,
+      "looseCyanPixels": 0,
+      "strictCyanPixels": 0,
+      "looseRatio": 0.0,
+      "strictRatio": 0.0,
+      "page": 77
+    },
+    {
+      "path": "analysis_outputs/source_images/magazine_page_78.jpg",
+      "width": 2544,
+      "height": 3264,
+      "pixels": 8303616,
+      "looseCyanPixels": 5,
+      "strictCyanPixels": 0,
+      "looseRatio": 6.021473054630657e-07,
+      "strictRatio": 0.0,
+      "page": 78
+    },
+    {
+      "path": "analysis_outputs/source_images/magazine_page_79.jpg",
+      "width": 2544,
+      "height": 3264,
+      "pixels": 8303616,
+      "looseCyanPixels": 0,
+      "strictCyanPixels": 0,
+      "looseRatio": 0.0,
+      "strictRatio": 0.0,
+      "page": 79
+    },
+    {
+      "path": "analysis_outputs/source_images/magazine_page_80.jpg",
+      "width": 2544,
+      "height": 3264,
+      "pixels": 8303616,
+      "looseCyanPixels": 0,
+      "strictCyanPixels": 0,
+      "looseRatio": 0.0,
+      "strictRatio": 0.0,
+      "page": 80
+    }
+  ],
+  "targetRegionCounts": [
+    {
+      "label": "p75 visible word box: Nocoiners",
+      "page": 75,
+      "box": [
+        1348,
+        1607,
+        1548,
+        1652
+      ],
+      "pixels": 9000,
+      "looseCyanPixels": 0,
+      "strictCyanPixels": 0
+    },
+    {
+      "label": "p76 grey target: $1 billion",
+      "page": 76,
+      "box": [
+        412,
+        2769,
+        814,
+        2838
+      ],
+      "pixels": 27738,
+      "looseCyanPixels": 0,
+      "strictCyanPixels": 0
+    }
+  ],
+  "cropCounts": [
+    {
+      "path": "analysis_outputs/highlight_audit/p78_orange_2_crop.jpg",
+      "width": 631,
+      "height": 190,
+      "pixels": 119890,
+      "looseCyanPixels": 0,
+      "strictCyanPixels": 0,
+      "looseRatio": 0.0,
+      "strictRatio": 0.0,
+      "label": "p78 orange crop: America left $85"
+    },
+    {
+      "path": "analysis_outputs/highlight_audit/p78_orange_3_crop.jpg",
+      "width": 1517,
+      "height": 264,
+      "pixels": 400488,
+      "looseCyanPixels": 0,
+      "strictCyanPixels": 0,
+      "looseRatio": 0.0,
+      "strictRatio": 0.0,
+      "label": "p78 orange crop: BILLION / $2 trillion"
+    }
+  ],
+  "assessment": [
+    "The DOCM cyan stream is `MNBILLION`, but cyan highlighter color is not visible in the high-resolution magazine scan.",
+    "Page 78 has only five loose-threshold cyan-like pixels across the whole 2544x3264 scan and zero strict-threshold pixels, so this is image noise rather than a printed cyan highlight.",
+    "The p75 Nocoiners box, p76 `$1 billion` grey target, and p78 orange `$85/BILLION` crops all have zero cyan pixels under both thresholds.",
+    "Treat cyan as a DOCM metadata/annotation anomaly, not as a printed visual selector, unless an independent source proves the DOCM formatting itself is the puzzle source."
+  ]
+}

@@ -1,0 +1,3026 @@
+{
+  "createdAt": "2026-05-24T10:00:54",
+  "scope": "current page-76 scan threshold morphology gate over active boxes, shifted controls, and projected OVERDOSE slots; no extraction or candidate generation",
+  "inputs": {
+    "page76Upright": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "c9HeaderGlyphSlotGate": "analysis_outputs/source_audit/c9_header_glyph_slot_gate/c9_header_glyph_slot_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "summary": {
+    "activeBoxCount": 4,
+    "shiftedControlBoxCount": 16,
+    "overdoseSlotBoxCount": 8,
+    "thresholdsChecked": [
+      64,
+      96,
+      128,
+      160,
+      192
+    ],
+    "signatureThresholds": [
+      128,
+      160,
+      192
+    ],
+    "outlierAbsZThreshold": 3.0,
+    "morphologyMetrics": [
+      "darkRatio",
+      "componentCount",
+      "largeComponentCount",
+      "largestComponentAreaRatio",
+      "largestComponentBboxAreaRatio",
+      "largestComponentFillRatio",
+      "inkBboxAreaRatio",
+      "rowOccupancyRatio",
+      "columnOccupancyRatio",
+      "xProjectionRunCount",
+      "yProjectionRunCount"
+    ],
+    "activeMorphologyOutlierCount": 4,
+    "activeMorphologyOutlierIds": [
+      "O4",
+      "B4",
+      "G5",
+      "O5"
+    ],
+    "allFourActiveMorphologyOutlier": true,
+    "activeMorphologySignatures": [
+      "t128=d3c15l3b9|t160=d6c19l63b10|t192=d10c1l97b10",
+      "t128=d7c6l64b9|t160=d7c7l66b9|t192=d7c7l68b10",
+      "t128=d7c12l66b10|t160=d7c9l68b10|t192=d8c9l71b10",
+      "t128=d3c18l2b10|t160=d6c25l59b10|t192=d9c1l94b10"
+    ],
+    "activeCommonMorphologySignature": null,
+    "controlCommonMorphologySignatureMatchCount": 0,
+    "overdoseSlotCommonMorphologySignatureMatchCount": 0,
+    "sharedActiveMorphologyCarrier": false,
+    "hiddenMorphologyCandidate": false,
+    "maxActiveMorphologyAbsZ": 78.912887,
+    "maxControlMorphologyAbsZ": 2.479705,
+    "maxOverdoseSlotMorphologyAbsZ": 30.194053,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "thresholdMorphologyFingerprint": "active=4|controls=16|slots=8|thresholds=64,96,128,160,192|activeMorphOutliers=4|allFourMorph=1|sharedCarrier=0|hiddenCandidate=0|commonMorph=mixed|controlCommon=0|slotCommon=0|maxMorphZ=78.91/2.48/30.19|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "controlStats": {
+    "64": {
+      "darkRatio": {
+        "mean": 0.086007875,
+        "std": 0.06415909439615225
+      },
+      "componentCount": {
+        "mean": 12.125,
+        "std": 7.841197293781097
+      },
+      "largeComponentCount": {
+        "mean": 9.5,
+        "std": 5.5565276927232174
+      },
+      "largestComponentAreaRatio": {
+        "mean": 0.0123380625,
+        "std": 0.009966495926783581
+      },
+      "largestComponentBboxAreaRatio": {
+        "mean": 0.0294310625,
+        "std": 0.023249107266378934
+      },
+      "largestComponentFillRatio": {
+        "mean": 0.35430712500000006,
+        "std": 0.2007984084653919
+      },
+      "inkBboxAreaRatio": {
+        "mean": 0.51081175,
+        "std": 0.3464374452467032
+      },
+      "rowOccupancyRatio": {
+        "mean": 0.5658920625,
+        "std": 0.3088527739464769
+      },
+      "columnOccupancyRatio": {
+        "mean": 0.5146831249999999,
+        "std": 0.3148477741027946
+      },
+      "xProjectionRunCount": {
+        "mean": 10.3125,
+        "std": 6.779737734603013
+      },
+      "yProjectionRunCount": {
+        "mean": 0.875,
+        "std": 0.4841229182759271
+      }
+    },
+    "96": {
+      "darkRatio": {
+        "mean": 0.0903204375,
+        "std": 0.06693100170134983
+      },
+      "componentCount": {
+        "mean": 11.6875,
+        "std": 7.480965429007141
+      },
+      "largeComponentCount": {
+        "mean": 9.4375,
+        "std": 5.656508971972023
+      },
+      "largestComponentAreaRatio": {
+        "mean": 0.01280525,
+        "std": 0.010207564226469507
+      },
+      "largestComponentBboxAreaRatio": {
+        "mean": 0.030134750000000002,
+        "std": 0.02308798892687494
+      },
+      "largestComponentFillRatio": {
+        "mean": 0.356922125,
+        "std": 0.2045081283112223
+      },
+      "inkBboxAreaRatio": {
+        "mean": 0.5130946249999999,
+        "std": 0.34735337883844514
+      },
+      "rowOccupancyRatio": {
+        "mean": 0.5685239375,
+        "std": 0.3104880377797325
+      },
+      "columnOccupancyRatio": {
+        "mean": 0.5194028749999999,
+        "std": 0.31721146536614087
+      },
+      "xProjectionRunCount": {
+        "mean": 10.125,
+        "std": 6.808771915698161
+      },
+      "yProjectionRunCount": {
+        "mean": 0.875,
+        "std": 0.4841229182759271
+      }
+    },
+    "128": {
+      "darkRatio": {
+        "mean": 0.09560025,
+        "std": 0.07017167423674242
+      },
+      "componentCount": {
+        "mean": 11.5,
+        "std": 7.390872749547241
+      },
+      "largeComponentCount": {
+        "mean": 9.4375,
+        "std": 5.667547419298757
+      },
+      "largestComponentAreaRatio": {
+        "mean": 0.0134549375,
+        "std": 0.010576548435505496
+      },
+      "largestComponentBboxAreaRatio": {
+        "mean": 0.030684062499999998,
+        "std": 0.02295381355153417
+      },
+      "largestComponentFillRatio": {
+        "mean": 0.3497874375,
+        "std": 0.1894663671753409
+      },
+      "inkBboxAreaRatio": {
+        "mean": 0.5494129999999999,
+        "std": 0.351599464781127
+      },
+      "rowOccupancyRatio": {
+        "mean": 0.5710759999999999,
+        "std": 0.31014021529684765
+      },
+      "columnOccupancyRatio": {
+        "mean": 0.5244121875000001,
+        "std": 0.320278714755254
+      },
+      "xProjectionRunCount": {
+        "mean": 10.0,
+        "std": 6.754628043053148
+      },
+      "yProjectionRunCount": {
+        "mean": 0.9375,
+        "std": 0.5555121510822243
+      }
+    },
+    "160": {
+      "darkRatio": {
+        "mean": 0.10435675,
+        "std": 0.07562199781602903
+      },
+      "componentCount": {
+        "mean": 11.0,
+        "std": 7.176350047203662
+      },
+      "largeComponentCount": {
+        "mean": 9.375,
+        "std": 5.8829733128750465
+      },
+      "largestComponentAreaRatio": {
+        "mean": 0.014565624999999999,
+        "std": 0.011233209441623307
+      },
+      "largestComponentBboxAreaRatio": {
+        "mean": 0.0323648125,
+        "std": 0.023134968476363735
+      },
+      "largestComponentFillRatio": {
+        "mean": 0.35823906250000004,
+        "std": 0.19320692413040894
+      },
+      "inkBboxAreaRatio": {
+        "mean": 0.5523724375,
+        "std": 0.35282611768156574
+      },
+      "rowOccupancyRatio": {
+        "mean": 0.5762600625,
+        "std": 0.3098541092987288
+      },
+      "columnOccupancyRatio": {
+        "mean": 0.5324859375,
+        "std": 0.32505857434381513
+      },
+      "xProjectionRunCount": {
+        "mean": 9.875,
+        "std": 6.5942683445549894
+      },
+      "yProjectionRunCount": {
+        "mean": 1.0,
+        "std": 0.5
+      }
+    },
+    "192": {
+      "darkRatio": {
+        "mean": 0.1184575,
+        "std": 0.08392657210621675
+      },
+      "componentCount": {
+        "mean": 10.9375,
+        "std": 7.335434121440939
+      },
+      "largeComponentCount": {
+        "mean": 9.375,
+        "std": 5.998697775350913
+      },
+      "largestComponentAreaRatio": {
+        "mean": 0.0161889375,
+        "std": 0.012093944277347807
+      },
+      "largestComponentBboxAreaRatio": {
+        "mean": 0.0353288125,
+        "std": 0.024359964925104956
+      },
+      "largestComponentFillRatio": {
+        "mean": 0.364661,
+        "std": 0.18288796832453194
+      },
+      "inkBboxAreaRatio": {
+        "mean": 0.556724625,
+        "std": 0.3545766056654533
+      },
+      "rowOccupancyRatio": {
+        "mean": 0.5855861875,
+        "std": 0.3085016302347969
+      },
+      "columnOccupancyRatio": {
+        "mean": 0.54655625,
+        "std": 0.3330196062127011
+      },
+      "xProjectionRunCount": {
+        "mean": 9.75,
+        "std": 6.466258578188781
+      },
+      "yProjectionRunCount": {
+        "mean": 1.0625,
+        "std": 0.42847841252506524
+      }
+    }
+  },
+  "regionRows": [
+    {
+      "shortId": "O4",
+      "phrase": "buying the dip",
+      "visualState": "Y",
+      "kind": "active",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "meanLuminance": 131.442452,
+      "stdLuminance": 54.607836,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.217434,
+          "componentCount": 15,
+          "largeComponentCount": 15,
+          "largestComponentAreaRatio": 0.021146,
+          "largestComponentBboxAreaRatio": 0.035689,
+          "largestComponentFillRatio": 0.5925,
+          "inkBboxAreaRatio": 0.8394,
+          "rowOccupancyRatio": 0.875,
+          "columnOccupancyRatio": 0.745182,
+          "xProjectionRunCount": 15,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.241792,
+          "componentCount": 15,
+          "largeComponentCount": 15,
+          "largestComponentAreaRatio": 0.023198,
+          "largestComponentBboxAreaRatio": 0.038276,
+          "largestComponentFillRatio": 0.606061,
+          "inkBboxAreaRatio": 0.8394,
+          "rowOccupancyRatio": 0.875,
+          "columnOccupancyRatio": 0.766595,
+          "xProjectionRunCount": 15,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.263517,
+          "componentCount": 15,
+          "largeComponentCount": 15,
+          "largestComponentAreaRatio": 0.025161,
+          "largestComponentBboxAreaRatio": 0.040953,
+          "largestComponentFillRatio": 0.614379,
+          "inkBboxAreaRatio": 0.869379,
+          "rowOccupancyRatio": 0.875,
+          "columnOccupancyRatio": 0.817987,
+          "xProjectionRunCount": 19,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.644049,
+          "componentCount": 19,
+          "largeComponentCount": 2,
+          "largestComponentAreaRatio": 0.627632,
+          "largestComponentBboxAreaRatio": 0.995717,
+          "largestComponentFillRatio": 0.630332,
+          "inkBboxAreaRatio": 0.995717,
+          "rowOccupancyRatio": 1.0,
+          "columnOccupancyRatio": 0.995717,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.970557,
+          "componentCount": 1,
+          "largeComponentCount": 1,
+          "largestComponentAreaRatio": 0.970557,
+          "largestComponentBboxAreaRatio": 1.0,
+          "largestComponentFillRatio": 0.970557,
+          "inkBboxAreaRatio": 1.0,
+          "rowOccupancyRatio": 1.0,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 1
+        }
+      ],
+      "morphologySignature": "t128=d3c15l3b9|t160=d6c19l63b10|t192=d10c1l97b10",
+      "maxMorphologyAbsZ": 78.912887,
+      "morphologyOutlier": true,
+      "strongestMorphologyZ": {
+        "threshold": 192,
+        "metric": "largestComponentAreaRatio",
+        "absZ": 78.912887,
+        "value": 0.970557
+      }
+    },
+    {
+      "shortId": "B4",
+      "phrase": "$1 billion",
+      "visualState": "K",
+      "kind": "active",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "meanLuminance": 88.887954,
+      "stdLuminance": 105.624202,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.650837,
+          "componentCount": 7,
+          "largeComponentCount": 4,
+          "largestComponentAreaRatio": 0.621956,
+          "largestComponentBboxAreaRatio": 0.946525,
+          "largestComponentFillRatio": 0.657094,
+          "inkBboxAreaRatio": 0.946525,
+          "rowOccupancyRatio": 0.957447,
+          "columnOccupancyRatio": 0.988593,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.659332,
+          "componentCount": 6,
+          "largeComponentCount": 3,
+          "largestComponentAreaRatio": 0.636033,
+          "largestComponentBboxAreaRatio": 0.946525,
+          "largestComponentFillRatio": 0.671966,
+          "inkBboxAreaRatio": 0.946525,
+          "rowOccupancyRatio": 0.957447,
+          "columnOccupancyRatio": 0.988593,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.668473,
+          "componentCount": 6,
+          "largeComponentCount": 3,
+          "largestComponentAreaRatio": 0.643314,
+          "largestComponentBboxAreaRatio": 0.946525,
+          "largestComponentFillRatio": 0.679658,
+          "inkBboxAreaRatio": 0.946525,
+          "rowOccupancyRatio": 0.957447,
+          "columnOccupancyRatio": 0.988593,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.682954,
+          "componentCount": 7,
+          "largeComponentCount": 4,
+          "largestComponentAreaRatio": 0.655529,
+          "largestComponentBboxAreaRatio": 0.946525,
+          "largestComponentFillRatio": 0.692564,
+          "inkBboxAreaRatio": 0.946525,
+          "rowOccupancyRatio": 0.957447,
+          "columnOccupancyRatio": 0.988593,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.707467,
+          "componentCount": 7,
+          "largeComponentCount": 6,
+          "largestComponentAreaRatio": 0.676402,
+          "largestComponentBboxAreaRatio": 0.953806,
+          "largestComponentFillRatio": 0.70916,
+          "inkBboxAreaRatio": 0.953806,
+          "rowOccupancyRatio": 0.957447,
+          "columnOccupancyRatio": 0.996198,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 1
+        }
+      ],
+      "morphologySignature": "t128=d7c6l64b9|t160=d7c7l66b9|t192=d7c7l68b10",
+      "maxMorphologyAbsZ": 61.166727,
+      "morphologyOutlier": true,
+      "strongestMorphologyZ": {
+        "threshold": 64,
+        "metric": "largestComponentAreaRatio",
+        "absZ": 61.166727,
+        "value": 0.621956
+      }
+    },
+    {
+      "shortId": "G5",
+      "phrase": "Volcano Bonds",
+      "visualState": "K",
+      "kind": "active",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "meanLuminance": 77.367415,
+      "stdLuminance": 99.678118,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.690098,
+          "componentCount": 12,
+          "largeComponentCount": 10,
+          "largestComponentAreaRatio": 0.641365,
+          "largestComponentBboxAreaRatio": 0.979167,
+          "largestComponentFillRatio": 0.655011,
+          "inkBboxAreaRatio": 0.979167,
+          "rowOccupancyRatio": 0.979167,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.699969,
+          "componentCount": 12,
+          "largeComponentCount": 10,
+          "largestComponentAreaRatio": 0.649626,
+          "largestComponentBboxAreaRatio": 0.979167,
+          "largestComponentFillRatio": 0.663448,
+          "inkBboxAreaRatio": 0.979167,
+          "rowOccupancyRatio": 0.979167,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.711866,
+          "componentCount": 12,
+          "largeComponentCount": 10,
+          "largestComponentAreaRatio": 0.659497,
+          "largestComponentBboxAreaRatio": 1.0,
+          "largestComponentFillRatio": 0.659497,
+          "inkBboxAreaRatio": 1.0,
+          "rowOccupancyRatio": 1.0,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.729998,
+          "componentCount": 9,
+          "largeComponentCount": 9,
+          "largestComponentAreaRatio": 0.683084,
+          "largestComponentBboxAreaRatio": 1.0,
+          "largestComponentFillRatio": 0.683084,
+          "inkBboxAreaRatio": 1.0,
+          "rowOccupancyRatio": 1.0,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.76091,
+          "componentCount": 9,
+          "largeComponentCount": 9,
+          "largestComponentAreaRatio": 0.710567,
+          "largestComponentBboxAreaRatio": 1.0,
+          "largestComponentFillRatio": 0.710567,
+          "inkBboxAreaRatio": 1.0,
+          "rowOccupancyRatio": 1.0,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 1
+        }
+      ],
+      "morphologySignature": "t128=d7c12l66b10|t160=d7c9l68b10|t192=d8c9l71b10",
+      "maxMorphologyAbsZ": 63.114152,
+      "morphologyOutlier": true,
+      "strongestMorphologyZ": {
+        "threshold": 64,
+        "metric": "largestComponentAreaRatio",
+        "absZ": 63.114152,
+        "value": 0.641365
+      }
+    },
+    {
+      "shortId": "O5",
+      "phrase": "shitcoiner at heart",
+      "visualState": "Y",
+      "kind": "active",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "width": 621.0,
+      "height": 50.0,
+      "meanLuminance": 127.091014,
+      "stdLuminance": 62.903568,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.26132,
+          "componentCount": 18,
+          "largeComponentCount": 18,
+          "largestComponentAreaRatio": 0.017778,
+          "largestComponentBboxAreaRatio": 0.039452,
+          "largestComponentFillRatio": 0.450612,
+          "inkBboxAreaRatio": 0.715362,
+          "rowOccupancyRatio": 0.72,
+          "columnOccupancyRatio": 0.801932,
+          "xProjectionRunCount": 18,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.284928,
+          "componentCount": 18,
+          "largeComponentCount": 18,
+          "largestComponentAreaRatio": 0.019098,
+          "largestComponentBboxAreaRatio": 0.039452,
+          "largestComponentFillRatio": 0.484082,
+          "inkBboxAreaRatio": 0.715362,
+          "rowOccupancyRatio": 0.72,
+          "columnOccupancyRatio": 0.811594,
+          "xProjectionRunCount": 17,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.305282,
+          "componentCount": 18,
+          "largeComponentCount": 18,
+          "largestComponentAreaRatio": 0.020419,
+          "largestComponentBboxAreaRatio": 0.039452,
+          "largestComponentFillRatio": 0.517551,
+          "inkBboxAreaRatio": 0.955362,
+          "rowOccupancyRatio": 0.84,
+          "columnOccupancyRatio": 0.838969,
+          "xProjectionRunCount": 19,
+          "yProjectionRunCount": 5
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.62306,
+          "componentCount": 25,
+          "largeComponentCount": 4,
+          "largestComponentAreaRatio": 0.592818,
+          "largestComponentBboxAreaRatio": 0.978422,
+          "largestComponentFillRatio": 0.605892,
+          "inkBboxAreaRatio": 0.99839,
+          "rowOccupancyRatio": 1.0,
+          "columnOccupancyRatio": 0.99839,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.941868,
+          "componentCount": 1,
+          "largeComponentCount": 1,
+          "largestComponentAreaRatio": 0.941868,
+          "largestComponentBboxAreaRatio": 1.0,
+          "largestComponentFillRatio": 0.941868,
+          "inkBboxAreaRatio": 1.0,
+          "rowOccupancyRatio": 1.0,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 1
+        }
+      ],
+      "morphologySignature": "t128=d3c18l2b10|t160=d6c25l59b10|t192=d9c1l94b10",
+      "maxMorphologyAbsZ": 76.540708,
+      "morphologyOutlier": true,
+      "strongestMorphologyZ": {
+        "threshold": 192,
+        "metric": "largestComponentAreaRatio",
+        "absZ": 76.540708,
+        "value": 0.941868
+      }
+    },
+    {
+      "shortId": "O4_dy-292",
+      "phrase": "O4 shifted -292px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        1334.0,
+        1885.0,
+        1801.0,
+        1933.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "meanLuminance": 254.949411,
+      "stdLuminance": 0.760034,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.0,
+          "componentCount": 0,
+          "largeComponentCount": 0,
+          "largestComponentAreaRatio": 0.0,
+          "largestComponentBboxAreaRatio": 0.0,
+          "largestComponentFillRatio": 0.0,
+          "inkBboxAreaRatio": 0.0,
+          "rowOccupancyRatio": 0.0,
+          "columnOccupancyRatio": 0.0,
+          "xProjectionRunCount": 0,
+          "yProjectionRunCount": 0
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.0,
+          "componentCount": 0,
+          "largeComponentCount": 0,
+          "largestComponentAreaRatio": 0.0,
+          "largestComponentBboxAreaRatio": 0.0,
+          "largestComponentFillRatio": 0.0,
+          "inkBboxAreaRatio": 0.0,
+          "rowOccupancyRatio": 0.0,
+          "columnOccupancyRatio": 0.0,
+          "xProjectionRunCount": 0,
+          "yProjectionRunCount": 0
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.0,
+          "componentCount": 0,
+          "largeComponentCount": 0,
+          "largestComponentAreaRatio": 0.0,
+          "largestComponentBboxAreaRatio": 0.0,
+          "largestComponentFillRatio": 0.0,
+          "inkBboxAreaRatio": 0.0,
+          "rowOccupancyRatio": 0.0,
+          "columnOccupancyRatio": 0.0,
+          "xProjectionRunCount": 0,
+          "yProjectionRunCount": 0
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.0,
+          "componentCount": 0,
+          "largeComponentCount": 0,
+          "largestComponentAreaRatio": 0.0,
+          "largestComponentBboxAreaRatio": 0.0,
+          "largestComponentFillRatio": 0.0,
+          "inkBboxAreaRatio": 0.0,
+          "rowOccupancyRatio": 0.0,
+          "columnOccupancyRatio": 0.0,
+          "xProjectionRunCount": 0,
+          "yProjectionRunCount": 0
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.0,
+          "componentCount": 0,
+          "largeComponentCount": 0,
+          "largestComponentAreaRatio": 0.0,
+          "largestComponentBboxAreaRatio": 0.0,
+          "largestComponentFillRatio": 0.0,
+          "inkBboxAreaRatio": 0.0,
+          "rowOccupancyRatio": 0.0,
+          "columnOccupancyRatio": 0.0,
+          "xProjectionRunCount": 0,
+          "yProjectionRunCount": 0
+        }
+      ],
+      "morphologySignature": "t128=d0c0l0b0|t160=d0c0l0b0|t192=d0c0l0b0",
+      "maxMorphologyAbsZ": 2.479705,
+      "morphologyOutlier": false,
+      "strongestMorphologyZ": {
+        "threshold": 192,
+        "metric": "yProjectionRunCount",
+        "absZ": 2.479705,
+        "value": 0.0
+      }
+    },
+    {
+      "shortId": "O4_dy-146",
+      "phrase": "O4 shifted -146px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        1334.0,
+        2031.0,
+        1801.0,
+        2079.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "meanLuminance": 241.820664,
+      "stdLuminance": 51.433066,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.043719,
+          "componentCount": 5,
+          "largeComponentCount": 5,
+          "largestComponentAreaRatio": 0.015748,
+          "largestComponentBboxAreaRatio": 0.038276,
+          "largestComponentFillRatio": 0.411422,
+          "inkBboxAreaRatio": 0.179604,
+          "rowOccupancyRatio": 0.6875,
+          "columnOccupancyRatio": 0.231263,
+          "xProjectionRunCount": 5,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.045369,
+          "componentCount": 5,
+          "largeComponentCount": 5,
+          "largestComponentAreaRatio": 0.01606,
+          "largestComponentBboxAreaRatio": 0.038276,
+          "largestComponentFillRatio": 0.41958,
+          "inkBboxAreaRatio": 0.179604,
+          "rowOccupancyRatio": 0.6875,
+          "columnOccupancyRatio": 0.231263,
+          "xProjectionRunCount": 5,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.048091,
+          "componentCount": 5,
+          "largeComponentCount": 5,
+          "largestComponentAreaRatio": 0.016774,
+          "largestComponentBboxAreaRatio": 0.038276,
+          "largestComponentFillRatio": 0.438228,
+          "inkBboxAreaRatio": 0.179604,
+          "rowOccupancyRatio": 0.6875,
+          "columnOccupancyRatio": 0.231263,
+          "xProjectionRunCount": 5,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.052552,
+          "componentCount": 5,
+          "largeComponentCount": 5,
+          "largestComponentAreaRatio": 0.018023,
+          "largestComponentBboxAreaRatio": 0.038276,
+          "largestComponentFillRatio": 0.470862,
+          "inkBboxAreaRatio": 0.179604,
+          "rowOccupancyRatio": 0.6875,
+          "columnOccupancyRatio": 0.233405,
+          "xProjectionRunCount": 5,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.059957,
+          "componentCount": 5,
+          "largeComponentCount": 5,
+          "largestComponentAreaRatio": 0.019495,
+          "largestComponentBboxAreaRatio": 0.040953,
+          "largestComponentFillRatio": 0.476035,
+          "inkBboxAreaRatio": 0.186563,
+          "rowOccupancyRatio": 0.708333,
+          "columnOccupancyRatio": 0.24197,
+          "xProjectionRunCount": 5,
+          "yProjectionRunCount": 1
+        }
+      ],
+      "morphologySignature": "t128=d0c5l2b2|t160=d1c5l2b2|t192=d1c5l2b2",
+      "maxMorphologyAbsZ": 1.056522,
+      "morphologyOutlier": false,
+      "strongestMorphologyZ": {
+        "threshold": 160,
+        "metric": "inkBboxAreaRatio",
+        "absZ": 1.056522,
+        "value": 0.179604
+      }
+    },
+    {
+      "shortId": "O4_dy+146",
+      "phrase": "O4 shifted +146px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        1334.0,
+        2323.0,
+        1801.0,
+        2371.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "meanLuminance": 231.881736,
+      "stdLuminance": 65.18425,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.071467,
+          "componentCount": 14,
+          "largeComponentCount": 12,
+          "largestComponentAreaRatio": 0.009234,
+          "largestComponentBboxAreaRatio": 0.020521,
+          "largestComponentFillRatio": 0.45,
+          "inkBboxAreaRatio": 0.398287,
+          "rowOccupancyRatio": 0.666667,
+          "columnOccupancyRatio": 0.430407,
+          "xProjectionRunCount": 13,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.07566,
+          "componentCount": 13,
+          "largeComponentCount": 11,
+          "largestComponentAreaRatio": 0.009859,
+          "largestComponentBboxAreaRatio": 0.028462,
+          "largestComponentFillRatio": 0.346395,
+          "inkBboxAreaRatio": 0.410733,
+          "rowOccupancyRatio": 0.6875,
+          "columnOccupancyRatio": 0.438972,
+          "xProjectionRunCount": 12,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.080657,
+          "componentCount": 12,
+          "largeComponentCount": 11,
+          "largestComponentAreaRatio": 0.011956,
+          "largestComponentBboxAreaRatio": 0.028462,
+          "largestComponentFillRatio": 0.420063,
+          "inkBboxAreaRatio": 0.42318,
+          "rowOccupancyRatio": 0.708333,
+          "columnOccupancyRatio": 0.447537,
+          "xProjectionRunCount": 12,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.088999,
+          "componentCount": 12,
+          "largeComponentCount": 11,
+          "largestComponentAreaRatio": 0.013205,
+          "largestComponentBboxAreaRatio": 0.031049,
+          "largestComponentFillRatio": 0.425287,
+          "inkBboxAreaRatio": 0.424697,
+          "rowOccupancyRatio": 0.708333,
+          "columnOccupancyRatio": 0.456103,
+          "xProjectionRunCount": 11,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.105817,
+          "componentCount": 11,
+          "largeComponentCount": 10,
+          "largestComponentAreaRatio": 0.015123,
+          "largestComponentBboxAreaRatio": 0.033191,
+          "largestComponentFillRatio": 0.455645,
+          "inkBboxAreaRatio": 0.424697,
+          "rowOccupancyRatio": 0.708333,
+          "columnOccupancyRatio": 0.471092,
+          "xProjectionRunCount": 10,
+          "yProjectionRunCount": 1
+        }
+      ],
+      "morphologySignature": "t128=d1c12l1b4|t160=d1c12l1b4|t192=d1c11l2b4",
+      "maxMorphologyAbsZ": 0.497485,
+      "morphologyOutlier": false,
+      "strongestMorphologyZ": {
+        "threshold": 192,
+        "metric": "largestComponentFillRatio",
+        "absZ": 0.497485,
+        "value": 0.455645
+      }
+    },
+    {
+      "shortId": "O4_dy+292",
+      "phrase": "O4 shifted +292px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        1334.0,
+        2469.0,
+        1801.0,
+        2517.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "meanLuminance": 246.563615,
+      "stdLuminance": 41.383054,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.027659,
+          "componentCount": 6,
+          "largeComponentCount": 5,
+          "largestComponentAreaRatio": 0.009591,
+          "largestComponentBboxAreaRatio": 0.019629,
+          "largestComponentFillRatio": 0.488636,
+          "inkBboxAreaRatio": 0.123082,
+          "rowOccupancyRatio": 0.645833,
+          "columnOccupancyRatio": 0.1606,
+          "xProjectionRunCount": 5,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.028997,
+          "componentCount": 5,
+          "largeComponentCount": 4,
+          "largestComponentAreaRatio": 0.00977,
+          "largestComponentBboxAreaRatio": 0.02061,
+          "largestComponentFillRatio": 0.474026,
+          "inkBboxAreaRatio": 0.124465,
+          "rowOccupancyRatio": 0.645833,
+          "columnOccupancyRatio": 0.164882,
+          "xProjectionRunCount": 4,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.030112,
+          "componentCount": 5,
+          "largeComponentCount": 4,
+          "largestComponentAreaRatio": 0.009993,
+          "largestComponentBboxAreaRatio": 0.02061,
+          "largestComponentFillRatio": 0.484848,
+          "inkBboxAreaRatio": 0.124465,
+          "rowOccupancyRatio": 0.645833,
+          "columnOccupancyRatio": 0.164882,
+          "xProjectionRunCount": 4,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.032878,
+          "componentCount": 4,
+          "largeComponentCount": 3,
+          "largestComponentAreaRatio": 0.01209,
+          "largestComponentBboxAreaRatio": 0.035689,
+          "largestComponentFillRatio": 0.33875,
+          "inkBboxAreaRatio": 0.12848,
+          "rowOccupancyRatio": 0.666667,
+          "columnOccupancyRatio": 0.164882,
+          "xProjectionRunCount": 4,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.037964,
+          "componentCount": 4,
+          "largeComponentCount": 3,
+          "largestComponentAreaRatio": 0.013919,
+          "largestComponentBboxAreaRatio": 0.035689,
+          "largestComponentFillRatio": 0.39,
+          "inkBboxAreaRatio": 0.12848,
+          "rowOccupancyRatio": 0.666667,
+          "columnOccupancyRatio": 0.169165,
+          "xProjectionRunCount": 4,
+          "yProjectionRunCount": 1
+        }
+      ],
+      "morphologySignature": "t128=d0c5l1b1|t160=d0c4l1b1|t192=d0c4l1b1",
+      "maxMorphologyAbsZ": 1.208614,
+      "morphologyOutlier": false,
+      "strongestMorphologyZ": {
+        "threshold": 128,
+        "metric": "inkBboxAreaRatio",
+        "absZ": 1.208614,
+        "value": 0.124465
+      }
+    },
+    {
+      "shortId": "B4_dy-292",
+      "phrase": "B4 shifted -292px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        428.0,
+        2106.0,
+        691.0,
+        2153.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "meanLuminance": 217.827198,
+      "stdLuminance": 78.656966,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.11245,
+          "componentCount": 14,
+          "largeComponentCount": 12,
+          "largestComponentAreaRatio": 0.01165,
+          "largestComponentBboxAreaRatio": 0.035596,
+          "largestComponentFillRatio": 0.327273,
+          "inkBboxAreaRatio": 0.820322,
+          "rowOccupancyRatio": 0.829787,
+          "columnOccupancyRatio": 0.787072,
+          "xProjectionRunCount": 11,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.118761,
+          "componentCount": 14,
+          "largeComponentCount": 12,
+          "largestComponentAreaRatio": 0.01262,
+          "largestComponentBboxAreaRatio": 0.035596,
+          "largestComponentFillRatio": 0.354545,
+          "inkBboxAreaRatio": 0.841356,
+          "rowOccupancyRatio": 0.851064,
+          "columnOccupancyRatio": 0.794677,
+          "xProjectionRunCount": 11,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.129116,
+          "componentCount": 14,
+          "largeComponentCount": 12,
+          "largestComponentAreaRatio": 0.013187,
+          "largestComponentBboxAreaRatio": 0.035596,
+          "largestComponentFillRatio": 0.370455,
+          "inkBboxAreaRatio": 0.844592,
+          "rowOccupancyRatio": 0.851064,
+          "columnOccupancyRatio": 0.813688,
+          "xProjectionRunCount": 11,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.145296,
+          "componentCount": 12,
+          "largeComponentCount": 11,
+          "largestComponentAreaRatio": 0.014966,
+          "largestComponentBboxAreaRatio": 0.040935,
+          "largestComponentFillRatio": 0.365613,
+          "inkBboxAreaRatio": 0.844592,
+          "rowOccupancyRatio": 0.851064,
+          "columnOccupancyRatio": 0.836502,
+          "xProjectionRunCount": 10,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.172559,
+          "componentCount": 12,
+          "largeComponentCount": 11,
+          "largestComponentAreaRatio": 0.017798,
+          "largestComponentBboxAreaRatio": 0.046517,
+          "largestComponentFillRatio": 0.382609,
+          "inkBboxAreaRatio": 0.844592,
+          "rowOccupancyRatio": 0.851064,
+          "columnOccupancyRatio": 0.844106,
+          "xProjectionRunCount": 10,
+          "yProjectionRunCount": 1
+        }
+      ],
+      "morphologySignature": "t128=d1c14l1b8|t160=d1c12l1b8|t192=d2c12l2b8",
+      "maxMorphologyAbsZ": 0.945036,
+      "morphologyOutlier": false,
+      "strongestMorphologyZ": {
+        "threshold": 96,
+        "metric": "inkBboxAreaRatio",
+        "absZ": 0.945036,
+        "value": 0.841356
+      }
+    },
+    {
+      "shortId": "B4_dy-146",
+      "phrase": "B4 shifted -146px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        428.0,
+        2252.0,
+        691.0,
+        2299.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "meanLuminance": 214.515654,
+      "stdLuminance": 83.022023,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.129682,
+          "componentCount": 10,
+          "largeComponentCount": 9,
+          "largestComponentAreaRatio": 0.030176,
+          "largestComponentBboxAreaRatio": 0.062697,
+          "largestComponentFillRatio": 0.48129,
+          "inkBboxAreaRatio": 0.691449,
+          "rowOccupancyRatio": 0.702128,
+          "columnOccupancyRatio": 0.741445,
+          "xProjectionRunCount": 9,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.137772,
+          "componentCount": 10,
+          "largeComponentCount": 9,
+          "largestComponentAreaRatio": 0.030661,
+          "largestComponentBboxAreaRatio": 0.062697,
+          "largestComponentFillRatio": 0.489032,
+          "inkBboxAreaRatio": 0.691449,
+          "rowOccupancyRatio": 0.702128,
+          "columnOccupancyRatio": 0.745247,
+          "xProjectionRunCount": 9,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.146995,
+          "componentCount": 10,
+          "largeComponentCount": 9,
+          "largestComponentAreaRatio": 0.031551,
+          "largestComponentBboxAreaRatio": 0.06472,
+          "largestComponentFillRatio": 0.4875,
+          "inkBboxAreaRatio": 0.691449,
+          "rowOccupancyRatio": 0.702128,
+          "columnOccupancyRatio": 0.752852,
+          "xProjectionRunCount": 9,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.160828,
+          "componentCount": 10,
+          "largeComponentCount": 9,
+          "largestComponentAreaRatio": 0.032845,
+          "largestComponentBboxAreaRatio": 0.067308,
+          "largestComponentFillRatio": 0.487981,
+          "inkBboxAreaRatio": 0.691449,
+          "rowOccupancyRatio": 0.702128,
+          "columnOccupancyRatio": 0.768061,
+          "xProjectionRunCount": 9,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.182024,
+          "componentCount": 9,
+          "largeComponentCount": 9,
+          "largestComponentAreaRatio": 0.035434,
+          "largestComponentBboxAreaRatio": 0.069412,
+          "largestComponentFillRatio": 0.51049,
+          "inkBboxAreaRatio": 0.712402,
+          "rowOccupancyRatio": 0.723404,
+          "columnOccupancyRatio": 0.779468,
+          "xProjectionRunCount": 9,
+          "yProjectionRunCount": 1
+        }
+      ],
+      "morphologySignature": "t128=d1c10l3b7|t160=d2c10l3b7|t192=d2c9l4b7",
+      "maxMorphologyAbsZ": 1.78979,
+      "morphologyOutlier": false,
+      "strongestMorphologyZ": {
+        "threshold": 64,
+        "metric": "largestComponentAreaRatio",
+        "absZ": 1.78979,
+        "value": 0.030176
+      }
+    },
+    {
+      "shortId": "B4_dy+146",
+      "phrase": "B4 shifted +146px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        428.0,
+        2544.0,
+        691.0,
+        2591.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "meanLuminance": 213.291481,
+      "stdLuminance": 82.924895,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.129925,
+          "componentCount": 12,
+          "largeComponentCount": 11,
+          "largestComponentAreaRatio": 0.014724,
+          "largestComponentBboxAreaRatio": 0.037214,
+          "largestComponentFillRatio": 0.395652,
+          "inkBboxAreaRatio": 0.670496,
+          "rowOccupancyRatio": 0.680851,
+          "columnOccupancyRatio": 0.840304,
+          "xProjectionRunCount": 11,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.13761,
+          "componentCount": 12,
+          "largeComponentCount": 11,
+          "largestComponentAreaRatio": 0.015533,
+          "largestComponentBboxAreaRatio": 0.037214,
+          "largestComponentFillRatio": 0.417391,
+          "inkBboxAreaRatio": 0.670496,
+          "rowOccupancyRatio": 0.680851,
+          "columnOccupancyRatio": 0.851711,
+          "xProjectionRunCount": 10,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.147723,
+          "componentCount": 12,
+          "largeComponentCount": 11,
+          "largestComponentAreaRatio": 0.01618,
+          "largestComponentBboxAreaRatio": 0.037214,
+          "largestComponentFillRatio": 0.434783,
+          "inkBboxAreaRatio": 0.670496,
+          "rowOccupancyRatio": 0.680851,
+          "columnOccupancyRatio": 0.851711,
+          "xProjectionRunCount": 10,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.163579,
+          "componentCount": 12,
+          "largeComponentCount": 11,
+          "largestComponentAreaRatio": 0.017636,
+          "largestComponentBboxAreaRatio": 0.037214,
+          "largestComponentFillRatio": 0.473913,
+          "inkBboxAreaRatio": 0.691449,
+          "rowOccupancyRatio": 0.702128,
+          "columnOccupancyRatio": 0.859316,
+          "xProjectionRunCount": 10,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.191247,
+          "componentCount": 12,
+          "largeComponentCount": 11,
+          "largestComponentAreaRatio": 0.021196,
+          "largestComponentBboxAreaRatio": 0.048378,
+          "largestComponentFillRatio": 0.438127,
+          "inkBboxAreaRatio": 0.712402,
+          "rowOccupancyRatio": 0.723404,
+          "columnOccupancyRatio": 0.889734,
+          "xProjectionRunCount": 10,
+          "yProjectionRunCount": 1
+        }
+      ],
+      "morphologySignature": "t128=d1c12l2b7|t160=d2c12l2b7|t192=d2c12l2b7",
+      "maxMorphologyAbsZ": 1.047592,
+      "morphologyOutlier": false,
+      "strongestMorphologyZ": {
+        "threshold": 96,
+        "metric": "columnOccupancyRatio",
+        "absZ": 1.047592,
+        "value": 0.851711
+      }
+    },
+    {
+      "shortId": "B4_dy+292",
+      "phrase": "B4 shifted +292px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        428.0,
+        2690.0,
+        691.0,
+        2737.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "meanLuminance": 203.892404,
+      "stdLuminance": 91.708837,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.172802,
+          "componentCount": 13,
+          "largeComponentCount": 10,
+          "largestComponentAreaRatio": 0.033897,
+          "largestComponentBboxAreaRatio": 0.08276,
+          "largestComponentFillRatio": 0.40958,
+          "inkBboxAreaRatio": 0.859073,
+          "rowOccupancyRatio": 0.87234,
+          "columnOccupancyRatio": 0.825095,
+          "xProjectionRunCount": 9,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.180568,
+          "componentCount": 13,
+          "largeComponentCount": 10,
+          "largestComponentAreaRatio": 0.034949,
+          "largestComponentBboxAreaRatio": 0.08276,
+          "largestComponentFillRatio": 0.422287,
+          "inkBboxAreaRatio": 0.859073,
+          "rowOccupancyRatio": 0.87234,
+          "columnOccupancyRatio": 0.828897,
+          "xProjectionRunCount": 9,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.189143,
+          "componentCount": 12,
+          "largeComponentCount": 10,
+          "largestComponentAreaRatio": 0.036809,
+          "largestComponentBboxAreaRatio": 0.08276,
+          "largestComponentFillRatio": 0.44477,
+          "inkBboxAreaRatio": 0.859073,
+          "rowOccupancyRatio": 0.87234,
+          "columnOccupancyRatio": 0.840304,
+          "xProjectionRunCount": 9,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.204514,
+          "componentCount": 11,
+          "largeComponentCount": 9,
+          "largestComponentAreaRatio": 0.040126,
+          "largestComponentBboxAreaRatio": 0.08276,
+          "largestComponentFillRatio": 0.484848,
+          "inkBboxAreaRatio": 0.859073,
+          "rowOccupancyRatio": 0.87234,
+          "columnOccupancyRatio": 0.844106,
+          "xProjectionRunCount": 9,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.226762,
+          "componentCount": 11,
+          "largeComponentCount": 9,
+          "largestComponentAreaRatio": 0.043362,
+          "largestComponentBboxAreaRatio": 0.08543,
+          "largestComponentFillRatio": 0.507576,
+          "inkBboxAreaRatio": 0.859073,
+          "rowOccupancyRatio": 0.87234,
+          "columnOccupancyRatio": 0.86692,
+          "xProjectionRunCount": 8,
+          "yProjectionRunCount": 1
+        }
+      ],
+      "morphologySignature": "t128=d2c12l4b9|t160=d2c11l4b9|t192=d2c11l4b9",
+      "maxMorphologyAbsZ": 2.293806,
+      "morphologyOutlier": false,
+      "strongestMorphologyZ": {
+        "threshold": 64,
+        "metric": "largestComponentBboxAreaRatio",
+        "absZ": 2.293806,
+        "value": 0.08276
+      }
+    },
+    {
+      "shortId": "G5_dy-292",
+      "phrase": "G5 shifted -292px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        795.0,
+        2252.0,
+        1196.0,
+        2300.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "meanLuminance": 192.313331,
+      "stdLuminance": 100.239205,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.22527,
+          "componentCount": 14,
+          "largeComponentCount": 13,
+          "largestComponentAreaRatio": 0.022963,
+          "largestComponentBboxAreaRatio": 0.051434,
+          "largestComponentFillRatio": 0.446465,
+          "inkBboxAreaRatio": 0.875,
+          "rowOccupancyRatio": 0.875,
+          "columnOccupancyRatio": 0.80798,
+          "xProjectionRunCount": 14,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.232544,
+          "componentCount": 14,
+          "largeComponentCount": 13,
+          "largestComponentAreaRatio": 0.023431,
+          "largestComponentBboxAreaRatio": 0.051434,
+          "largestComponentFillRatio": 0.455556,
+          "inkBboxAreaRatio": 0.875,
+          "rowOccupancyRatio": 0.875,
+          "columnOccupancyRatio": 0.810474,
+          "xProjectionRunCount": 14,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.240025,
+          "componentCount": 14,
+          "largeComponentCount": 13,
+          "largestComponentAreaRatio": 0.024002,
+          "largestComponentBboxAreaRatio": 0.051434,
+          "largestComponentFillRatio": 0.466667,
+          "inkBboxAreaRatio": 0.875,
+          "rowOccupancyRatio": 0.875,
+          "columnOccupancyRatio": 0.812968,
+          "xProjectionRunCount": 13,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.253169,
+          "componentCount": 14,
+          "largeComponentCount": 13,
+          "largestComponentAreaRatio": 0.025197,
+          "largestComponentBboxAreaRatio": 0.051434,
+          "largestComponentFillRatio": 0.489899,
+          "inkBboxAreaRatio": 0.875,
+          "rowOccupancyRatio": 0.875,
+          "columnOccupancyRatio": 0.822943,
+          "xProjectionRunCount": 13,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.271924,
+          "componentCount": 14,
+          "largeComponentCount": 13,
+          "largestComponentAreaRatio": 0.027276,
+          "largestComponentBboxAreaRatio": 0.053148,
+          "largestComponentFillRatio": 0.513196,
+          "inkBboxAreaRatio": 0.875,
+          "rowOccupancyRatio": 0.875,
+          "columnOccupancyRatio": 0.852868,
+          "xProjectionRunCount": 13,
+          "yProjectionRunCount": 1
+        }
+      ],
+      "morphologySignature": "t128=d2c14l2b9|t160=d3c14l3b9|t192=d3c14l3b9",
+      "maxMorphologyAbsZ": 2.170575,
+      "morphologyOutlier": false,
+      "strongestMorphologyZ": {
+        "threshold": 64,
+        "metric": "darkRatio",
+        "absZ": 2.170575,
+        "value": 0.22527
+      }
+    },
+    {
+      "shortId": "G5_dy-146",
+      "phrase": "G5 shifted -146px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        795.0,
+        2398.0,
+        1196.0,
+        2446.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "meanLuminance": 223.472724,
+      "stdLuminance": 74.788721,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.099231,
+          "componentCount": 24,
+          "largeComponentCount": 15,
+          "largestComponentAreaRatio": 0.009092,
+          "largestComponentBboxAreaRatio": 0.025094,
+          "largestComponentFillRatio": 0.362319,
+          "inkBboxAreaRatio": 0.661679,
+          "rowOccupancyRatio": 0.666667,
+          "columnOccupancyRatio": 0.725686,
+          "xProjectionRunCount": 13,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.105881,
+          "componentCount": 21,
+          "largeComponentCount": 14,
+          "largestComponentAreaRatio": 0.009767,
+          "largestComponentBboxAreaRatio": 0.027431,
+          "largestComponentFillRatio": 0.356061,
+          "inkBboxAreaRatio": 0.663342,
+          "rowOccupancyRatio": 0.666667,
+          "columnOccupancyRatio": 0.730673,
+          "xProjectionRunCount": 13,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.114038,
+          "componentCount": 20,
+          "largeComponentCount": 13,
+          "largestComponentAreaRatio": 0.010547,
+          "largestComponentBboxAreaRatio": 0.025094,
+          "largestComponentFillRatio": 0.42029,
+          "inkBboxAreaRatio": 0.663342,
+          "rowOccupancyRatio": 0.666667,
+          "columnOccupancyRatio": 0.740648,
+          "xProjectionRunCount": 12,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.12552,
+          "componentCount": 18,
+          "largeComponentCount": 13,
+          "largestComponentAreaRatio": 0.011741,
+          "largestComponentBboxAreaRatio": 0.025094,
+          "largestComponentFillRatio": 0.467909,
+          "inkBboxAreaRatio": 0.663342,
+          "rowOccupancyRatio": 0.666667,
+          "columnOccupancyRatio": 0.74813,
+          "xProjectionRunCount": 12,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.143807,
+          "componentCount": 17,
+          "largeComponentCount": 13,
+          "largestComponentAreaRatio": 0.013092,
+          "largestComponentBboxAreaRatio": 0.025094,
+          "largestComponentFillRatio": 0.521739,
+          "inkBboxAreaRatio": 0.663342,
+          "rowOccupancyRatio": 0.666667,
+          "columnOccupancyRatio": 0.76808,
+          "xProjectionRunCount": 12,
+          "yProjectionRunCount": 1
+        }
+      ],
+      "morphologySignature": "t128=d1c20l1b7|t160=d1c18l1b7|t192=d1c17l1b7",
+      "maxMorphologyAbsZ": 1.514437,
+      "morphologyOutlier": false,
+      "strongestMorphologyZ": {
+        "threshold": 64,
+        "metric": "componentCount",
+        "absZ": 1.514437,
+        "value": 24.0
+      }
+    },
+    {
+      "shortId": "G5_dy+146",
+      "phrase": "G5 shifted +146px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        795.0,
+        2690.0,
+        1196.0,
+        2738.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "meanLuminance": 214.364609,
+      "stdLuminance": 82.995949,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.130923,
+          "componentCount": 19,
+          "largeComponentCount": 16,
+          "largestComponentAreaRatio": 0.014703,
+          "largestComponentBboxAreaRatio": 0.049875,
+          "largestComponentFillRatio": 0.294792,
+          "inkBboxAreaRatio": 0.849906,
+          "rowOccupancyRatio": 0.854167,
+          "columnOccupancyRatio": 0.773067,
+          "xProjectionRunCount": 15,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.136378,
+          "componentCount": 18,
+          "largeComponentCount": 16,
+          "largestComponentAreaRatio": 0.015586,
+          "largestComponentBboxAreaRatio": 0.049875,
+          "largestComponentFillRatio": 0.3125,
+          "inkBboxAreaRatio": 0.849906,
+          "rowOccupancyRatio": 0.854167,
+          "columnOccupancyRatio": 0.783042,
+          "xProjectionRunCount": 15,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.144379,
+          "componentCount": 18,
+          "largeComponentCount": 16,
+          "largestComponentAreaRatio": 0.016209,
+          "largestComponentBboxAreaRatio": 0.051538,
+          "largestComponentFillRatio": 0.314516,
+          "inkBboxAreaRatio": 0.849906,
+          "rowOccupancyRatio": 0.854167,
+          "columnOccupancyRatio": 0.78803,
+          "xProjectionRunCount": 15,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.158614,
+          "componentCount": 17,
+          "largeComponentCount": 15,
+          "largestComponentAreaRatio": 0.017041,
+          "largestComponentBboxAreaRatio": 0.051538,
+          "largestComponentFillRatio": 0.330645,
+          "inkBboxAreaRatio": 0.849906,
+          "rowOccupancyRatio": 0.854167,
+          "columnOccupancyRatio": 0.800499,
+          "xProjectionRunCount": 15,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.179187,
+          "componentCount": 16,
+          "largeComponentCount": 14,
+          "largestComponentAreaRatio": 0.01834,
+          "largestComponentBboxAreaRatio": 0.053148,
+          "largestComponentFillRatio": 0.345064,
+          "inkBboxAreaRatio": 0.870636,
+          "rowOccupancyRatio": 0.875,
+          "columnOccupancyRatio": 0.822943,
+          "xProjectionRunCount": 15,
+          "yProjectionRunCount": 1
+        }
+      ],
+      "morphologySignature": "t128=d1c18l2b8|t160=d2c17l2b8|t192=d2c16l2b9",
+      "maxMorphologyAbsZ": 1.169795,
+      "morphologyOutlier": false,
+      "strongestMorphologyZ": {
+        "threshold": 64,
+        "metric": "largeComponentCount",
+        "absZ": 1.169795,
+        "value": 16.0
+      }
+    },
+    {
+      "shortId": "G5_dy+292",
+      "phrase": "G5 shifted +292px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        795.0,
+        2836.0,
+        1196.0,
+        2884.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "meanLuminance": 214.911212,
+      "stdLuminance": 83.333489,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.131806,
+          "componentCount": 18,
+          "largeComponentCount": 16,
+          "largestComponentAreaRatio": 0.018288,
+          "largestComponentBboxAreaRatio": 0.028574,
+          "largestComponentFillRatio": 0.64,
+          "inkBboxAreaRatio": 0.833333,
+          "rowOccupancyRatio": 0.833333,
+          "columnOccupancyRatio": 0.710723,
+          "xProjectionRunCount": 16,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.139339,
+          "componentCount": 18,
+          "largeComponentCount": 16,
+          "largestComponentAreaRatio": 0.019015,
+          "largestComponentBboxAreaRatio": 0.028574,
+          "largestComponentFillRatio": 0.665455,
+          "inkBboxAreaRatio": 0.833333,
+          "rowOccupancyRatio": 0.833333,
+          "columnOccupancyRatio": 0.713217,
+          "xProjectionRunCount": 16,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.147184,
+          "componentCount": 18,
+          "largeComponentCount": 16,
+          "largestComponentAreaRatio": 0.019794,
+          "largestComponentBboxAreaRatio": 0.028574,
+          "largestComponentFillRatio": 0.692727,
+          "inkBboxAreaRatio": 0.833333,
+          "rowOccupancyRatio": 0.833333,
+          "columnOccupancyRatio": 0.713217,
+          "xProjectionRunCount": 16,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.160796,
+          "componentCount": 17,
+          "largeComponentCount": 15,
+          "largestComponentAreaRatio": 0.020937,
+          "largestComponentBboxAreaRatio": 0.029873,
+          "largestComponentFillRatio": 0.70087,
+          "inkBboxAreaRatio": 0.854167,
+          "rowOccupancyRatio": 0.854167,
+          "columnOccupancyRatio": 0.72818,
+          "xProjectionRunCount": 15,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.182616,
+          "componentCount": 18,
+          "largeComponentCount": 15,
+          "largestComponentAreaRatio": 0.022652,
+          "largestComponentBboxAreaRatio": 0.045927,
+          "largestComponentFillRatio": 0.493213,
+          "inkBboxAreaRatio": 0.854167,
+          "rowOccupancyRatio": 0.854167,
+          "columnOccupancyRatio": 0.740648,
+          "xProjectionRunCount": 14,
+          "yProjectionRunCount": 1
+        }
+      ],
+      "morphologySignature": "t128=d1c18l2b8|t160=d2c17l2b9|t192=d2c18l2b9",
+      "maxMorphologyAbsZ": 1.810029,
+      "morphologyOutlier": false,
+      "strongestMorphologyZ": {
+        "threshold": 128,
+        "metric": "largestComponentFillRatio",
+        "absZ": 1.810029,
+        "value": 0.692727
+      }
+    },
+    {
+      "shortId": "O5_dy-292",
+      "phrase": "O5 shifted -292px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        1040.0,
+        2640.0,
+        1661.0,
+        2690.0
+      ],
+      "width": 621.0,
+      "height": 50.0,
+      "meanLuminance": 239.459646,
+      "stdLuminance": 54.693252,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.048921,
+          "componentCount": 23,
+          "largeComponentCount": 14,
+          "largestComponentAreaRatio": 0.003575,
+          "largestComponentBboxAreaRatio": 0.005153,
+          "largestComponentFillRatio": 0.69375,
+          "inkBboxAreaRatio": 0.291272,
+          "rowOccupancyRatio": 0.34,
+          "columnOccupancyRatio": 0.605475,
+          "xProjectionRunCount": 22,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.051659,
+          "componentCount": 22,
+          "largeComponentCount": 16,
+          "largestComponentAreaRatio": 0.003704,
+          "largestComponentBboxAreaRatio": 0.005153,
+          "largestComponentFillRatio": 0.71875,
+          "inkBboxAreaRatio": 0.291272,
+          "rowOccupancyRatio": 0.34,
+          "columnOccupancyRatio": 0.615137,
+          "xProjectionRunCount": 22,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.055072,
+          "componentCount": 22,
+          "largeComponentCount": 16,
+          "largestComponentAreaRatio": 0.004026,
+          "largestComponentBboxAreaRatio": 0.012593,
+          "largestComponentFillRatio": 0.319693,
+          "inkBboxAreaRatio": 0.856683,
+          "rowOccupancyRatio": 0.36,
+          "columnOccupancyRatio": 0.624799,
+          "xProjectionRunCount": 22,
+          "yProjectionRunCount": 2
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.060934,
+          "componentCount": 22,
+          "largeComponentCount": 17,
+          "largestComponentAreaRatio": 0.004605,
+          "largestComponentBboxAreaRatio": 0.012593,
+          "largestComponentFillRatio": 0.365729,
+          "inkBboxAreaRatio": 0.856683,
+          "rowOccupancyRatio": 0.36,
+          "columnOccupancyRatio": 0.637681,
+          "xProjectionRunCount": 22,
+          "yProjectionRunCount": 2
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.070853,
+          "componentCount": 23,
+          "largeComponentCount": 18,
+          "largestComponentAreaRatio": 0.005829,
+          "largestComponentBboxAreaRatio": 0.013688,
+          "largestComponentFillRatio": 0.425882,
+          "inkBboxAreaRatio": 0.856683,
+          "rowOccupancyRatio": 0.36,
+          "columnOccupancyRatio": 0.661836,
+          "xProjectionRunCount": 22,
+          "yProjectionRunCount": 2
+        }
+      ],
+      "morphologySignature": "t128=d1c22l0b9|t160=d1c22l0b9|t192=d1c23l1b9",
+      "maxMorphologyAbsZ": 2.187975,
+      "morphologyOutlier": false,
+      "strongestMorphologyZ": {
+        "threshold": 192,
+        "metric": "yProjectionRunCount",
+        "absZ": 2.187975,
+        "value": 2.0
+      }
+    },
+    {
+      "shortId": "O5_dy-146",
+      "phrase": "O5 shifted -146px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        1040.0,
+        2786.0,
+        1661.0,
+        2836.0
+      ],
+      "width": 621.0,
+      "height": 50.0,
+      "meanLuminance": 239.010435,
+      "stdLuminance": 55.907069,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.052271,
+          "componentCount": 22,
+          "largeComponentCount": 14,
+          "largestComponentAreaRatio": 0.003768,
+          "largestComponentBboxAreaRatio": 0.014074,
+          "largestComponentFillRatio": 0.267735,
+          "inkBboxAreaRatio": 0.919485,
+          "rowOccupancyRatio": 0.4,
+          "columnOccupancyRatio": 0.595813,
+          "xProjectionRunCount": 22,
+          "yProjectionRunCount": 2
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.054589,
+          "componentCount": 22,
+          "largeComponentCount": 14,
+          "largestComponentAreaRatio": 0.003929,
+          "largestComponentBboxAreaRatio": 0.014074,
+          "largestComponentFillRatio": 0.279176,
+          "inkBboxAreaRatio": 0.919485,
+          "rowOccupancyRatio": 0.4,
+          "columnOccupancyRatio": 0.602254,
+          "xProjectionRunCount": 22,
+          "yProjectionRunCount": 2
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.057069,
+          "componentCount": 22,
+          "largeComponentCount": 15,
+          "largestComponentAreaRatio": 0.004251,
+          "largestComponentBboxAreaRatio": 0.014074,
+          "largestComponentFillRatio": 0.302059,
+          "inkBboxAreaRatio": 0.919485,
+          "rowOccupancyRatio": 0.4,
+          "columnOccupancyRatio": 0.608696,
+          "xProjectionRunCount": 22,
+          "yProjectionRunCount": 2
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.061997,
+          "componentCount": 22,
+          "largeComponentCount": 18,
+          "largestComponentAreaRatio": 0.004638,
+          "largestComponentBboxAreaRatio": 0.014074,
+          "largestComponentFillRatio": 0.329519,
+          "inkBboxAreaRatio": 0.919485,
+          "rowOccupancyRatio": 0.4,
+          "columnOccupancyRatio": 0.618357,
+          "xProjectionRunCount": 22,
+          "yProjectionRunCount": 2
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.070531,
+          "componentCount": 23,
+          "largeComponentCount": 19,
+          "largestComponentAreaRatio": 0.005507,
+          "largestComponentBboxAreaRatio": 0.014686,
+          "largestComponentFillRatio": 0.375,
+          "inkBboxAreaRatio": 0.919485,
+          "rowOccupancyRatio": 0.44,
+          "columnOccupancyRatio": 0.63285,
+          "xProjectionRunCount": 22,
+          "yProjectionRunCount": 2
+        }
+      ],
+      "morphologySignature": "t128=d1c22l0b9|t160=d1c22l0b9|t192=d1c23l1b9",
+      "maxMorphologyAbsZ": 2.32379,
+      "morphologyOutlier": false,
+      "strongestMorphologyZ": {
+        "threshold": 96,
+        "metric": "yProjectionRunCount",
+        "absZ": 2.32379,
+        "value": 2.0
+      }
+    },
+    {
+      "shortId": "O5_dy+146",
+      "phrase": "O5 shifted +146px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        1040.0,
+        3078.0,
+        1661.0,
+        3128.0
+      ],
+      "width": 621.0,
+      "height": 50.0,
+      "meanLuminance": 254.97723,
+      "stdLuminance": 0.739214,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.0,
+          "componentCount": 0,
+          "largeComponentCount": 0,
+          "largestComponentAreaRatio": 0.0,
+          "largestComponentBboxAreaRatio": 0.0,
+          "largestComponentFillRatio": 0.0,
+          "inkBboxAreaRatio": 0.0,
+          "rowOccupancyRatio": 0.0,
+          "columnOccupancyRatio": 0.0,
+          "xProjectionRunCount": 0,
+          "yProjectionRunCount": 0
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.0,
+          "componentCount": 0,
+          "largeComponentCount": 0,
+          "largestComponentAreaRatio": 0.0,
+          "largestComponentBboxAreaRatio": 0.0,
+          "largestComponentFillRatio": 0.0,
+          "inkBboxAreaRatio": 0.0,
+          "rowOccupancyRatio": 0.0,
+          "columnOccupancyRatio": 0.0,
+          "xProjectionRunCount": 0,
+          "yProjectionRunCount": 0
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.0,
+          "componentCount": 0,
+          "largeComponentCount": 0,
+          "largestComponentAreaRatio": 0.0,
+          "largestComponentBboxAreaRatio": 0.0,
+          "largestComponentFillRatio": 0.0,
+          "inkBboxAreaRatio": 0.0,
+          "rowOccupancyRatio": 0.0,
+          "columnOccupancyRatio": 0.0,
+          "xProjectionRunCount": 0,
+          "yProjectionRunCount": 0
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 3.2e-05,
+          "componentCount": 0,
+          "largeComponentCount": 0,
+          "largestComponentAreaRatio": 0.0,
+          "largestComponentBboxAreaRatio": 0.0,
+          "largestComponentFillRatio": 0.0,
+          "inkBboxAreaRatio": 3.2e-05,
+          "rowOccupancyRatio": 0.02,
+          "columnOccupancyRatio": 0.00161,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 3.2e-05,
+          "componentCount": 0,
+          "largeComponentCount": 0,
+          "largestComponentAreaRatio": 0.0,
+          "largestComponentBboxAreaRatio": 0.0,
+          "largestComponentFillRatio": 0.0,
+          "inkBboxAreaRatio": 3.2e-05,
+          "rowOccupancyRatio": 0.02,
+          "columnOccupancyRatio": 0.00161,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 1
+        }
+      ],
+      "morphologySignature": "t128=d0c0l0b0|t160=d0c0l0b0|t192=d0c0l0b0",
+      "maxMorphologyAbsZ": 1.993904,
+      "morphologyOutlier": false,
+      "strongestMorphologyZ": {
+        "threshold": 192,
+        "metric": "largestComponentFillRatio",
+        "absZ": 1.993904,
+        "value": 0.0
+      }
+    },
+    {
+      "shortId": "O5_dy+292",
+      "phrase": "O5 shifted +292px",
+      "visualState": "control",
+      "kind": "shifted_control",
+      "box": [
+        1040.0,
+        3224.0,
+        1661.0,
+        3264.0
+      ],
+      "width": 621.0,
+      "height": 40.0,
+      "meanLuminance": 254.929428,
+      "stdLuminance": 0.869997,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.0,
+          "componentCount": 0,
+          "largeComponentCount": 0,
+          "largestComponentAreaRatio": 0.0,
+          "largestComponentBboxAreaRatio": 0.0,
+          "largestComponentFillRatio": 0.0,
+          "inkBboxAreaRatio": 0.0,
+          "rowOccupancyRatio": 0.0,
+          "columnOccupancyRatio": 0.0,
+          "xProjectionRunCount": 0,
+          "yProjectionRunCount": 0
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.0,
+          "componentCount": 0,
+          "largeComponentCount": 0,
+          "largestComponentAreaRatio": 0.0,
+          "largestComponentBboxAreaRatio": 0.0,
+          "largestComponentFillRatio": 0.0,
+          "inkBboxAreaRatio": 0.0,
+          "rowOccupancyRatio": 0.0,
+          "columnOccupancyRatio": 0.0,
+          "xProjectionRunCount": 0,
+          "yProjectionRunCount": 0
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.0,
+          "componentCount": 0,
+          "largeComponentCount": 0,
+          "largestComponentAreaRatio": 0.0,
+          "largestComponentBboxAreaRatio": 0.0,
+          "largestComponentFillRatio": 0.0,
+          "inkBboxAreaRatio": 0.0,
+          "rowOccupancyRatio": 0.0,
+          "columnOccupancyRatio": 0.0,
+          "xProjectionRunCount": 0,
+          "yProjectionRunCount": 0
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.0,
+          "componentCount": 0,
+          "largeComponentCount": 0,
+          "largestComponentAreaRatio": 0.0,
+          "largestComponentBboxAreaRatio": 0.0,
+          "largestComponentFillRatio": 0.0,
+          "inkBboxAreaRatio": 0.0,
+          "rowOccupancyRatio": 0.0,
+          "columnOccupancyRatio": 0.0,
+          "xProjectionRunCount": 0,
+          "yProjectionRunCount": 0
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 4e-05,
+          "componentCount": 0,
+          "largeComponentCount": 0,
+          "largestComponentAreaRatio": 0.0,
+          "largestComponentBboxAreaRatio": 0.0,
+          "largestComponentFillRatio": 0.0,
+          "inkBboxAreaRatio": 4e-05,
+          "rowOccupancyRatio": 0.025,
+          "columnOccupancyRatio": 0.00161,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 1
+        }
+      ],
+      "morphologySignature": "t128=d0c0l0b0|t160=d0c0l0b0|t192=d0c0l0b0",
+      "maxMorphologyAbsZ": 2.0,
+      "morphologyOutlier": false,
+      "strongestMorphologyZ": {
+        "threshold": 160,
+        "metric": "yProjectionRunCount",
+        "absZ": 2.0,
+        "value": 0.0
+      }
+    },
+    {
+      "shortId": "slot0_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "visualState": "N",
+      "kind": "overdose_slot",
+      "box": [
+        294.0,
+        2176.81,
+        538.5697177074414,
+        3023.73
+      ],
+      "width": 244.569718,
+      "height": 846.92,
+      "meanLuminance": 239.788757,
+      "stdLuminance": 55.104444,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.051042,
+          "componentCount": 43,
+          "largeComponentCount": 2,
+          "largestComponentAreaRatio": 0.015551,
+          "largestComponentBboxAreaRatio": 0.024162,
+          "largestComponentFillRatio": 0.643598,
+          "inkBboxAreaRatio": 0.41916,
+          "rowOccupancyRatio": 0.436836,
+          "columnOccupancyRatio": 0.444898,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 15
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.053567,
+          "componentCount": 46,
+          "largeComponentCount": 2,
+          "largestComponentAreaRatio": 0.016168,
+          "largestComponentBboxAreaRatio": 0.024162,
+          "largestComponentFillRatio": 0.669126,
+          "inkBboxAreaRatio": 0.41916,
+          "rowOccupancyRatio": 0.441558,
+          "columnOccupancyRatio": 0.444898,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 15
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.056584,
+          "componentCount": 44,
+          "largeComponentCount": 2,
+          "largestComponentAreaRatio": 0.016365,
+          "largestComponentBboxAreaRatio": 0.024162,
+          "largestComponentFillRatio": 0.677304,
+          "inkBboxAreaRatio": 0.419685,
+          "rowOccupancyRatio": 0.447462,
+          "columnOccupancyRatio": 0.444898,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 14
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.0612,
+          "componentCount": 45,
+          "largeComponentCount": 2,
+          "largestComponentAreaRatio": 0.016664,
+          "largestComponentBboxAreaRatio": 0.024687,
+          "largestComponentFillRatio": 0.674995,
+          "inkBboxAreaRatio": 0.419685,
+          "rowOccupancyRatio": 0.458087,
+          "columnOccupancyRatio": 0.444898,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 11
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.068858,
+          "componentCount": 47,
+          "largeComponentCount": 3,
+          "largestComponentAreaRatio": 0.017324,
+          "largestComponentBboxAreaRatio": 0.024914,
+          "largestComponentFillRatio": 0.695358,
+          "inkBboxAreaRatio": 0.423536,
+          "rowOccupancyRatio": 0.461629,
+          "columnOccupancyRatio": 0.44898,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 11
+        }
+      ],
+      "morphologySignature": "t128=d1c44l2b4|t160=d1c45l2b4|t192=d1c47l2b4",
+      "maxMorphologyAbsZ": 29.176475,
+      "morphologyOutlier": true,
+      "strongestMorphologyZ": {
+        "threshold": 64,
+        "metric": "yProjectionRunCount",
+        "absZ": 29.176475,
+        "value": 15.0
+      }
+    },
+    {
+      "shortId": "slot1_V",
+      "phrase": "C9 projected OVERDOSE slot V",
+      "visualState": "N",
+      "kind": "overdose_slot",
+      "box": [
+        538.5697177074414,
+        2176.81,
+        783.0000000000016,
+        3023.73
+      ],
+      "width": 244.430282,
+      "height": 846.92,
+      "meanLuminance": 225.797511,
+      "stdLuminance": 73.608486,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.097867,
+          "componentCount": 102,
+          "largeComponentCount": 1,
+          "largestComponentAreaRatio": 0.023453,
+          "largestComponentBboxAreaRatio": 0.03434,
+          "largestComponentFillRatio": 0.682965,
+          "inkBboxAreaRatio": 0.929162,
+          "rowOccupancyRatio": 0.478158,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 12
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.102174,
+          "componentCount": 102,
+          "largeComponentCount": 1,
+          "largestComponentAreaRatio": 0.023806,
+          "largestComponentBboxAreaRatio": 0.03434,
+          "largestComponentFillRatio": 0.693251,
+          "inkBboxAreaRatio": 0.930342,
+          "rowOccupancyRatio": 0.479339,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 12
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.107278,
+          "componentCount": 101,
+          "largeComponentCount": 2,
+          "largestComponentAreaRatio": 0.02413,
+          "largestComponentBboxAreaRatio": 0.03434,
+          "largestComponentFillRatio": 0.702691,
+          "inkBboxAreaRatio": 0.930342,
+          "rowOccupancyRatio": 0.480519,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 11
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.116119,
+          "componentCount": 96,
+          "largeComponentCount": 3,
+          "largestComponentAreaRatio": 0.024692,
+          "largestComponentBboxAreaRatio": 0.03434,
+          "largestComponentFillRatio": 0.719036,
+          "inkBboxAreaRatio": 0.930342,
+          "rowOccupancyRatio": 0.484061,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 11
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.129836,
+          "componentCount": 93,
+          "largeComponentCount": 5,
+          "largestComponentAreaRatio": 0.025437,
+          "largestComponentBboxAreaRatio": 0.034568,
+          "largestComponentFillRatio": 0.735862,
+          "inkBboxAreaRatio": 0.971665,
+          "rowOccupancyRatio": 0.497048,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 14
+        }
+      ],
+      "morphologySignature": "t128=d1c99l2b9|t160=d1c96l2b9|t192=d1c93l3b10",
+      "maxMorphologyAbsZ": 30.194053,
+      "morphologyOutlier": true,
+      "strongestMorphologyZ": {
+        "threshold": 192,
+        "metric": "yProjectionRunCount",
+        "absZ": 30.194053,
+        "value": 14.0
+      }
+    },
+    {
+      "shortId": "slot2_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "visualState": "N",
+      "kind": "overdose_slot",
+      "box": [
+        783.0000000000016,
+        2176.81,
+        1027.569717707443,
+        3023.73
+      ],
+      "width": 244.569718,
+      "height": 846.92,
+      "meanLuminance": 222.844411,
+      "stdLuminance": 77.587457,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.111683,
+          "componentCount": 94,
+          "largeComponentCount": 2,
+          "largestComponentAreaRatio": 0.035718,
+          "largestComponentBboxAreaRatio": 0.051649,
+          "largestComponentFillRatio": 0.691547,
+          "inkBboxAreaRatio": 0.929162,
+          "rowOccupancyRatio": 0.479339,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 11
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.11551,
+          "componentCount": 94,
+          "largeComponentCount": 2,
+          "largestComponentAreaRatio": 0.036007,
+          "largestComponentBboxAreaRatio": 0.051649,
+          "largestComponentFillRatio": 0.697145,
+          "inkBboxAreaRatio": 0.929162,
+          "rowOccupancyRatio": 0.480519,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 11
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.120256,
+          "componentCount": 93,
+          "largeComponentCount": 2,
+          "largestComponentAreaRatio": 0.036359,
+          "largestComponentBboxAreaRatio": 0.053895,
+          "largestComponentFillRatio": 0.674624,
+          "inkBboxAreaRatio": 0.929162,
+          "rowOccupancyRatio": 0.487603,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 11
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.128256,
+          "componentCount": 90,
+          "largeComponentCount": 2,
+          "largestComponentAreaRatio": 0.037843,
+          "largestComponentBboxAreaRatio": 0.054126,
+          "largestComponentFillRatio": 0.699163,
+          "inkBboxAreaRatio": 0.959858,
+          "rowOccupancyRatio": 0.497048,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 13
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.141151,
+          "componentCount": 90,
+          "largeComponentCount": 6,
+          "largestComponentAreaRatio": 0.039737,
+          "largestComponentBboxAreaRatio": 0.054126,
+          "largestComponentFillRatio": 0.734152,
+          "inkBboxAreaRatio": 0.961039,
+          "rowOccupancyRatio": 0.504132,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 13
+        }
+      ],
+      "morphologySignature": "t128=d1c93l4b9|t160=d1c90l4b10|t192=d1c90l4b10",
+      "maxMorphologyAbsZ": 27.860213,
+      "morphologyOutlier": true,
+      "strongestMorphologyZ": {
+        "threshold": 192,
+        "metric": "yProjectionRunCount",
+        "absZ": 27.860213,
+        "value": 13.0
+      }
+    },
+    {
+      "shortId": "slot3_R",
+      "phrase": "C9 projected OVERDOSE slot R",
+      "visualState": "N",
+      "kind": "overdose_slot",
+      "box": [
+        1027.569717707443,
+        2176.81,
+        1271.9999999999968,
+        3023.73
+      ],
+      "width": 244.430282,
+      "height": 846.92,
+      "meanLuminance": 218.880301,
+      "stdLuminance": 78.128047,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.112993,
+          "componentCount": 105,
+          "largeComponentCount": 6,
+          "largestComponentAreaRatio": 0.023008,
+          "largestComponentBboxAreaRatio": 0.038206,
+          "largestComponentFillRatio": 0.602204,
+          "inkBboxAreaRatio": 0.930342,
+          "rowOccupancyRatio": 0.488784,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 12
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.118688,
+          "componentCount": 101,
+          "largeComponentCount": 8,
+          "largestComponentAreaRatio": 0.023482,
+          "largestComponentBboxAreaRatio": 0.038206,
+          "largestComponentFillRatio": 0.614615,
+          "inkBboxAreaRatio": 0.930342,
+          "rowOccupancyRatio": 0.488784,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 12
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.124925,
+          "componentCount": 101,
+          "largeComponentCount": 8,
+          "largestComponentAreaRatio": 0.024043,
+          "largestComponentBboxAreaRatio": 0.038206,
+          "largestComponentFillRatio": 0.629306,
+          "inkBboxAreaRatio": 0.94451,
+          "rowOccupancyRatio": 0.491145,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 13
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.15086,
+          "componentCount": 91,
+          "largeComponentCount": 4,
+          "largestComponentAreaRatio": 0.035497,
+          "largestComponentBboxAreaRatio": 0.062864,
+          "largestComponentFillRatio": 0.564655,
+          "inkBboxAreaRatio": 0.946871,
+          "rowOccupancyRatio": 0.511216,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 11
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.180879,
+          "componentCount": 88,
+          "largeComponentCount": 8,
+          "largestComponentAreaRatio": 0.05415,
+          "largestComponentBboxAreaRatio": 0.064262,
+          "largestComponentFillRatio": 0.842632,
+          "inkBboxAreaRatio": 0.946871,
+          "rowOccupancyRatio": 0.519481,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 11
+        }
+      ],
+      "morphologySignature": "t128=d1c99l2b9|t160=d2c91l4b9|t192=d2c88l5b9",
+      "maxMorphologyAbsZ": 23.192534,
+      "morphologyOutlier": true,
+      "strongestMorphologyZ": {
+        "threshold": 192,
+        "metric": "yProjectionRunCount",
+        "absZ": 23.192534,
+        "value": 11.0
+      }
+    },
+    {
+      "shortId": "slot4_D",
+      "phrase": "C9 projected OVERDOSE slot D",
+      "visualState": "N",
+      "kind": "overdose_slot",
+      "box": [
+        1271.9999999999968,
+        2176.81,
+        1516.5697177074383,
+        3023.73
+      ],
+      "width": 244.569718,
+      "height": 846.92,
+      "meanLuminance": 222.835299,
+      "stdLuminance": 70.482541,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.085526,
+          "componentCount": 98,
+          "largeComponentCount": 4,
+          "largestComponentAreaRatio": 0.002824,
+          "largestComponentBboxAreaRatio": 0.006939,
+          "largestComponentFillRatio": 0.406944,
+          "inkBboxAreaRatio": 0.931523,
+          "rowOccupancyRatio": 0.487603,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 12
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.091218,
+          "componentCount": 97,
+          "largeComponentCount": 6,
+          "largestComponentAreaRatio": 0.003079,
+          "largestComponentBboxAreaRatio": 0.006939,
+          "largestComponentFillRatio": 0.44375,
+          "inkBboxAreaRatio": 0.932704,
+          "rowOccupancyRatio": 0.488784,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 12
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.097434,
+          "componentCount": 95,
+          "largeComponentCount": 10,
+          "largestComponentAreaRatio": 0.003301,
+          "largestComponentBboxAreaRatio": 0.007113,
+          "largestComponentFillRatio": 0.464092,
+          "inkBboxAreaRatio": 0.945691,
+          "rowOccupancyRatio": 0.49941,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 15
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.140139,
+          "componentCount": 84,
+          "largeComponentCount": 3,
+          "largestComponentAreaRatio": 0.034364,
+          "largestComponentBboxAreaRatio": 0.064935,
+          "largestComponentFillRatio": 0.529202,
+          "inkBboxAreaRatio": 0.949233,
+          "rowOccupancyRatio": 0.5183,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 12
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.183924,
+          "componentCount": 81,
+          "largeComponentCount": 4,
+          "largestComponentAreaRatio": 0.05601,
+          "largestComponentBboxAreaRatio": 0.067296,
+          "largestComponentFillRatio": 0.832295,
+          "inkBboxAreaRatio": 0.950413,
+          "rowOccupancyRatio": 0.524203,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 12
+        }
+      ],
+      "morphologySignature": "t128=d1c95l0b9|t160=d1c84l3b9|t192=d2c81l6b10",
+      "maxMorphologyAbsZ": 25.526374,
+      "morphologyOutlier": true,
+      "strongestMorphologyZ": {
+        "threshold": 192,
+        "metric": "yProjectionRunCount",
+        "absZ": 25.526374,
+        "value": 12.0
+      }
+    },
+    {
+      "shortId": "slot5_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "visualState": "N",
+      "kind": "overdose_slot",
+      "box": [
+        1516.5697177074383,
+        2176.81,
+        1760.9999999999984,
+        3023.73
+      ],
+      "width": 244.430282,
+      "height": 846.92,
+      "meanLuminance": 235.744537,
+      "stdLuminance": 54.985265,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.047264,
+          "componentCount": 43,
+          "largeComponentCount": 5,
+          "largestComponentAreaRatio": 0.002545,
+          "largestComponentBboxAreaRatio": 0.005269,
+          "largestComponentFillRatio": 0.483012,
+          "inkBboxAreaRatio": 0.915091,
+          "rowOccupancyRatio": 0.335301,
+          "columnOccupancyRatio": 0.95082,
+          "xProjectionRunCount": 4,
+          "yProjectionRunCount": 12
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.050472,
+          "componentCount": 43,
+          "largeComponentCount": 7,
+          "largestComponentAreaRatio": 0.00271,
+          "largestComponentBboxAreaRatio": 0.00449,
+          "largestComponentFillRatio": 0.603448,
+          "inkBboxAreaRatio": 0.916252,
+          "rowOccupancyRatio": 0.343566,
+          "columnOccupancyRatio": 0.954918,
+          "xProjectionRunCount": 4,
+          "yProjectionRunCount": 11
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.053424,
+          "componentCount": 43,
+          "largeComponentCount": 10,
+          "largestComponentAreaRatio": 0.002879,
+          "largestComponentBboxAreaRatio": 0.00449,
+          "largestComponentFillRatio": 0.641164,
+          "inkBboxAreaRatio": 0.922402,
+          "rowOccupancyRatio": 0.345927,
+          "columnOccupancyRatio": 0.971311,
+          "xProjectionRunCount": 3,
+          "yProjectionRunCount": 11
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.088132,
+          "componentCount": 30,
+          "largeComponentCount": 4,
+          "largestComponentAreaRatio": 0.035971,
+          "largestComponentBboxAreaRatio": 0.05549,
+          "largestComponentFillRatio": 0.648239,
+          "inkBboxAreaRatio": 0.946871,
+          "rowOccupancyRatio": 0.375443,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 10
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.121693,
+          "componentCount": 30,
+          "largeComponentCount": 6,
+          "largestComponentAreaRatio": 0.054924,
+          "largestComponentBboxAreaRatio": 0.05549,
+          "largestComponentFillRatio": 0.989798,
+          "inkBboxAreaRatio": 0.948052,
+          "rowOccupancyRatio": 0.380165,
+          "columnOccupancyRatio": 1.0,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 10
+        }
+      ],
+      "morphologySignature": "t128=d1c43l0b9|t160=d1c30l4b9|t192=d1c30l5b9",
+      "maxMorphologyAbsZ": 22.979701,
+      "morphologyOutlier": true,
+      "strongestMorphologyZ": {
+        "threshold": 64,
+        "metric": "yProjectionRunCount",
+        "absZ": 22.979701,
+        "value": 12.0
+      }
+    },
+    {
+      "shortId": "slot6_S",
+      "phrase": "C9 projected OVERDOSE slot S",
+      "visualState": "N",
+      "kind": "overdose_slot",
+      "box": [
+        1760.9999999999984,
+        2176.81,
+        2005.5697177074398,
+        3023.73
+      ],
+      "width": 244.569718,
+      "height": 846.92,
+      "meanLuminance": 253.033761,
+      "stdLuminance": 17.912079,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.004217,
+          "componentCount": 3,
+          "largeComponentCount": 1,
+          "largestComponentAreaRatio": 0.002448,
+          "largestComponentBboxAreaRatio": 0.004761,
+          "largestComponentFillRatio": 0.51417,
+          "inkBboxAreaRatio": 0.771429,
+          "rowOccupancyRatio": 0.061393,
+          "columnOccupancyRatio": 0.363265,
+          "xProjectionRunCount": 3,
+          "yProjectionRunCount": 3
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.004694,
+          "componentCount": 3,
+          "largeComponentCount": 1,
+          "largestComponentAreaRatio": 0.002819,
+          "largestComponentBboxAreaRatio": 0.005879,
+          "largestComponentFillRatio": 0.479508,
+          "inkBboxAreaRatio": 0.771429,
+          "rowOccupancyRatio": 0.066116,
+          "columnOccupancyRatio": 0.371429,
+          "xProjectionRunCount": 3,
+          "yProjectionRunCount": 4
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.0052,
+          "componentCount": 3,
+          "largeComponentCount": 1,
+          "largestComponentAreaRatio": 0.003132,
+          "largestComponentBboxAreaRatio": 0.006274,
+          "largestComponentFillRatio": 0.499232,
+          "inkBboxAreaRatio": 0.77551,
+          "rowOccupancyRatio": 0.069658,
+          "columnOccupancyRatio": 0.379592,
+          "xProjectionRunCount": 3,
+          "yProjectionRunCount": 3
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.008578,
+          "componentCount": 3,
+          "largeComponentCount": 2,
+          "largestComponentAreaRatio": 0.003884,
+          "largestComponentBboxAreaRatio": 0.006954,
+          "largestComponentFillRatio": 0.558559,
+          "inkBboxAreaRatio": 0.787755,
+          "rowOccupancyRatio": 0.089728,
+          "columnOccupancyRatio": 0.412245,
+          "xProjectionRunCount": 2,
+          "yProjectionRunCount": 3
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.01305,
+          "componentCount": 2,
+          "largeComponentCount": 2,
+          "largestComponentAreaRatio": 0.008939,
+          "largestComponentBboxAreaRatio": 0.00906,
+          "largestComponentFillRatio": 0.986702,
+          "inkBboxAreaRatio": 0.791837,
+          "rowOccupancyRatio": 0.09209,
+          "columnOccupancyRatio": 0.42449,
+          "xProjectionRunCount": 3,
+          "yProjectionRunCount": 4
+        }
+      ],
+      "morphologySignature": "t128=d0c3l0b8|t160=d0c3l0b8|t192=d0c2l1b8",
+      "maxMorphologyAbsZ": 6.855655,
+      "morphologyOutlier": true,
+      "strongestMorphologyZ": {
+        "threshold": 192,
+        "metric": "yProjectionRunCount",
+        "absZ": 6.855655,
+        "value": 4.0
+      }
+    },
+    {
+      "shortId": "slot7_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "visualState": "N",
+      "kind": "overdose_slot",
+      "box": [
+        2005.5697177074398,
+        2176.81,
+        2250.0,
+        3023.73
+      ],
+      "width": 244.430282,
+      "height": 846.92,
+      "meanLuminance": 251.366278,
+      "stdLuminance": 28.678597,
+      "thresholdMorphology": [
+        {
+          "threshold": 64,
+          "darkRatio": 0.013379,
+          "componentCount": 1,
+          "largeComponentCount": 1,
+          "largestComponentAreaRatio": 0.013292,
+          "largestComponentBboxAreaRatio": 0.017884,
+          "largestComponentFillRatio": 0.743236,
+          "inkBboxAreaRatio": 0.017884,
+          "rowOccupancyRatio": 0.056671,
+          "columnOccupancyRatio": 0.315574,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 96,
+          "darkRatio": 0.01379,
+          "componentCount": 1,
+          "largeComponentCount": 1,
+          "largestComponentAreaRatio": 0.013655,
+          "largestComponentBboxAreaRatio": 0.017884,
+          "largestComponentFillRatio": 0.763528,
+          "inkBboxAreaRatio": 0.017884,
+          "rowOccupancyRatio": 0.056671,
+          "columnOccupancyRatio": 0.315574,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 1
+        },
+        {
+          "threshold": 128,
+          "darkRatio": 0.014148,
+          "componentCount": 1,
+          "largeComponentCount": 1,
+          "largestComponentAreaRatio": 0.013955,
+          "largestComponentBboxAreaRatio": 0.018871,
+          "largestComponentFillRatio": 0.739487,
+          "inkBboxAreaRatio": 0.237395,
+          "rowOccupancyRatio": 0.061393,
+          "columnOccupancyRatio": 0.319672,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 2
+        },
+        {
+          "threshold": 160,
+          "darkRatio": 0.014748,
+          "componentCount": 1,
+          "largeComponentCount": 1,
+          "largestComponentAreaRatio": 0.014671,
+          "largestComponentBboxAreaRatio": 0.019248,
+          "largestComponentFillRatio": 0.762192,
+          "inkBboxAreaRatio": 0.237395,
+          "rowOccupancyRatio": 0.062574,
+          "columnOccupancyRatio": 0.319672,
+          "xProjectionRunCount": 1,
+          "yProjectionRunCount": 3
+        },
+        {
+          "threshold": 192,
+          "darkRatio": 0.015561,
+          "componentCount": 1,
+          "largeComponentCount": 1,
+          "largestComponentAreaRatio": 0.015493,
+          "largestComponentBboxAreaRatio": 0.019626,
+          "largestComponentFillRatio": 0.789448,
+          "inkBboxAreaRatio": 0.688558,
+          "rowOccupancyRatio": 0.070838,
+          "columnOccupancyRatio": 0.336066,
+          "xProjectionRunCount": 3,
+          "yProjectionRunCount": 6
+        }
+      ],
+      "morphologySignature": "t128=d0c1l1b2|t160=d0c1l1b2|t192=d0c1l2b7",
+      "maxMorphologyAbsZ": 11.523334,
+      "morphologyOutlier": true,
+      "strongestMorphologyZ": {
+        "threshold": 192,
+        "metric": "yProjectionRunCount",
+        "absZ": 11.523334,
+        "value": 6.0
+      }
+    }
+  ],
+  "decision": {
+    "currentScanThresholdMorphologyGate": "current_scan_threshold_morphology_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Thresholded ink morphology shows active-box shape contrast, but the active morphology signatures are mixed and do not form a shared all-four carrier. The component behavior follows visible orange/black target ink and still has no source-backed R3 unit/order/transform cue.",
+    "nextMove": "Do not pursue current-scan threshold morphology or component-shape tuning. Continue with original-layout/physical source validation or raw clue wording that names the missing unit, order, or transform."
+  },
+  "sheet": "analysis_outputs/source_audit/current_scan_threshold_morphology_gate/current_scan_threshold_morphology_gate_sheet.jpg",
+  "fingerprint": "active=4|controls=16|slots=8|thresholds=64,96,128,160,192|activeMorphOutliers=4|allFourMorph=1|sharedCarrier=0|hiddenCandidate=0|commonMorph=mixed|controlCommon=0|slotCommon=0|maxMorphZ=78.91/2.48/30.19|sourceR3=0|triggers=0/9|selectors=0"
+}

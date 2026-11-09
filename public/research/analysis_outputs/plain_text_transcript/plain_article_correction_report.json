@@ -1,0 +1,221 @@
+{
+  "rawSource": "analysis_outputs/plain_text_transcript/user_plain_article_latest.txt",
+  "docmWitness": "analysis_outputs/docm_format_sources/article_with_fonts_text.txt",
+  "fixedBody": "analysis_outputs/plain_text_transcript/canonical_plain_article_body.txt",
+  "fixedWithSignature": "analysis_outputs/plain_text_transcript/canonical_plain_article_with_signature.txt",
+  "manualCorrections": [
+    {
+      "raw": "Bitcoin is toxic af",
+      "fixed": "BITCOIN IS TOXIC AF",
+      "reason": "Article title is uppercase in the scan and DOCM witness.",
+      "rawPatternPresent": true
+    },
+    {
+      "raw": "Really? Yes",
+      "fixed": "Really? Yes.",
+      "reason": "DOCM witness includes the period after Yes.",
+      "rawPatternPresent": true
+    },
+    {
+      "raw": "hands I\\nn the muck",
+      "fixed": "hands in the muck",
+      "reason": "The raw plain text split the word `in` across lines incorrectly.",
+      "rawPatternPresent": true
+    },
+    {
+      "raw": "puts and end",
+      "fixed": "puts an end",
+      "reason": "DOCM/Markdown witness agree on `an end`.",
+      "rawPatternPresent": true
+    },
+    {
+      "raw": "\"buying the dip\".",
+      "fixed": "\"buying the dip.\"",
+      "reason": "DOCM witness places the period inside the quote.",
+      "rawPatternPresent": true
+    },
+    {
+      "raw": "collateralized to pay off the IMF",
+      "fixed": "collateralized “Volcano Bonds” to pay off the IMF",
+      "reason": "The raw plain text omitted the highlighted `Volcano Bonds` phrase.",
+      "rawPatternPresent": true
+    },
+    {
+      "raw": "At this rate the whole",
+      "fixed": "At this rate, the whole",
+      "reason": "DOCM witness includes the comma.",
+      "rawPatternPresent": true
+    },
+    {
+      "raw": "big blockers",
+      "fixed": "Big blockers",
+      "reason": "DOCM witness capitalizes the sentence start.",
+      "rawPatternPresent": true
+    },
+    {
+      "raw": "Full stop.",
+      "fixed": "Full Stop.",
+      "reason": "DOCM witness capitalizes both words.",
+      "rawPatternPresent": true
+    },
+    {
+      "raw": "Every single one of the bitcoin wannabes- ...",
+      "fixed": "EVERY SINGLE ONE OF THE BITCOIN WANNABES - ...",
+      "reason": "This block is all uppercase in the scan and DOCM witness.",
+      "rawPatternPresent": false
+    },
+    {
+      "raw": "It's guaranteed, mathematical certainty.",
+      "fixed": "It's a guaranteed, mathematical certainty.",
+      "reason": "DOCM witness includes `a`.",
+      "rawPatternPresent": true
+    },
+    {
+      "raw": "bitcoin was designed",
+      "fixed": "Bitcoin was designed",
+      "reason": "DOCM witness capitalizes Bitcoin at this sentence position.",
+      "rawPatternPresent": true
+    },
+    {
+      "raw": "gargantually wasteful",
+      "fixed": "gargantuanly wasteful",
+      "reason": "DOCM witness has `gargantuanly`.",
+      "rawPatternPresent": true
+    },
+    {
+      "raw": "requires printing and wars",
+      "fixed": "requires money printing and wars",
+      "reason": "The raw plain text omitted `money`.",
+      "rawPatternPresent": true
+    },
+    {
+      "raw": "cost 2 trillion fiat cuck bucks",
+      "fixed": "cost $2 trillion fiat cuck-bucks",
+      "reason": "DOCM witness includes the dollar sign and hyphenated `cuck-bucks`.",
+      "rawPatternPresent": true
+    },
+    {
+      "raw": "Bitcoin fixes all this",
+      "fixed": "BITCOIN FIXES ALL THIS",
+      "reason": "This lead phrase is all uppercase in the scan and DOCM witness.",
+      "rawPatternPresent": true
+    },
+    {
+      "raw": "Remove the war incentive and you remove",
+      "fixed": "Remove the war incentive, and you remove",
+      "reason": "DOCM witness includes the comma.",
+      "rawPatternPresent": true
+    },
+    {
+      "raw": "It's fact baked",
+      "fixed": "It's a fact baked",
+      "reason": "DOCM witness includes `a`.",
+      "rawPatternPresent": true
+    },
+    {
+      "raw": "In so doing our energy consumption",
+      "fixed": "In so doing, our energy consumption",
+      "reason": "DOCM witness includes the comma.",
+      "rawPatternPresent": true
+    },
+    {
+      "raw": "gets monetized and for the first time in our existence",
+      "fixed": "gets monetized for the first time in our existence",
+      "reason": "The raw plain text inserted an extra `and`.",
+      "rawPatternPresent": false
+    },
+    {
+      "raw": "smile- virtually nothing",
+      "fixed": "smile - virtually nothing",
+      "reason": "DOCM witness uses spaced hyphen.",
+      "rawPatternPresent": true
+    }
+  ],
+  "wordLevelDiffPreview": [
+    "--- ",
+    "+++ ",
+    "@@ -1,6 +1,10 @@",
+    "-Bitcoin",
+    "-is",
+    "-toxic",
+    "-af",
+    "+OVERDOSE",
+    "+with",
+    "+Max",
+    "+Keiser",
+    "+BITCOIN",
+    "+IS",
+    "+TOXIC",
+    "+AF",
+    " Here's",
+    " the",
+    "@@ -28,4 +32,5 @@",
+    " ?",
+    " Yes",
+    "+.",
+    " The",
+    " markets",
+    "@@ -290,6 +295,5 @@",
+    " bare",
+    " hands",
+    "-I",
+    "-n",
+    "+in",
+    " the",
+    " muck",
+    "@@ -488,5 +492,5 @@",
+    " bitcoin",
+    " puts",
+    "-and",
+    "+an",
+    " end",
+    " to",
+    "@@ -550,6 +554,6 @@",
+    " the",
+    " dip",
+    "+.",
+    " \"",
+    "-.",
+    " I",
+    " tweeted",
+    "@@ -586,4 +590,8 @@",
+    " earnings",
+    " collateralized",
+    "+“",
+    "+Volcano",
+    "+Bonds",
+    "+”",
+    " to",
+    " pay",
+    "@@ -696,4 +704,5 @@",
+    " this",
+    " rate",
+    "+,",
+    " the",
+    " whole",
+    "@@ -708,4 +717,5 @@",
+    " months",
+    " .",
+    "+(",
+    " Sorry",
+    " Bhutan",
+    "@@ -737,5 +747,5 @@",
+    " lately",
+    " ?",
+    "-big",
+    "+Big",
+    " blockers",
+    " got",
+    "@@ -817,13 +827,13 @@",
+    " .",
+    " Full",
+    "-stop",
+    "-.",
+    "-Every"
+  ],
+  "assessment": [
+    "Use the DOCM-derived fixed body as the canonical plain-text witness for article wording.",
+    "`MAX KEISER` is preserved in the with-signature output because it appears visually on the scan, but it is not part of the DOCM body text.",
+    "The raw plain text is useful, but contains several transcription omissions and punctuation/capitalization mismatches that can break exact selector work."
+  ]
+}

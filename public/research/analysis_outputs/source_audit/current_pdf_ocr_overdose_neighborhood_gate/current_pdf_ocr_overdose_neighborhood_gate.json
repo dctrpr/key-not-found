@@ -1,0 +1,316 @@
+{
+  "createdAt": "2026-05-24T14:11:10",
+  "scope": "current PDF invisible OCR OVERDOSE local-neighborhood guardrail; no extraction/key derivation",
+  "inputs": {
+    "pdfs": [
+      "magazine.pdf",
+      "keyser bitcoin .pdf",
+      "analysis_outputs/external_clues/google_drive_article_download.pdf"
+    ],
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "summary": {
+    "pdfCount": 3,
+    "overdosePdfCount": 2,
+    "overdoseWordCount": 2,
+    "neighborhoodRowsChecked": 8,
+    "strictNeighborhoodRowCount": 0,
+    "targetNeighborhoodRowCount": 4,
+    "allFourNeighborhoodRowCount": 0,
+    "activeOrderNeighborhoodRowCount": 0,
+    "hiddenOverdoseNeighborhoodCandidateCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "fingerprint": "pdfs=3|overdosePdfs=2|overdoseWords=2|rows=8|strictRows=0|targetRows=4|allFourRows=0|activeOrderRows=0|hiddenCandidate=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "records": [
+    {
+      "pdf": "magazine.pdf",
+      "wordCount": 245,
+      "overdoseWordCount": 0,
+      "overdoseIndexes": [],
+      "sameLineRows": [],
+      "neighborhoodRows": [],
+      "strictNeighborhoodRows": 0,
+      "targetNeighborhoodRows": 0,
+      "allFourNeighborhoodRows": 0,
+      "activeOrderNeighborhoodRows": 0,
+      "candidateRows": 0
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "wordCount": 265,
+      "overdoseWordCount": 1,
+      "overdoseIndexes": [
+        0
+      ],
+      "sameLineRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "overdoseIndex": 0,
+          "sameLineWordCount": 1,
+          "sameLineText": "OVERDOSE",
+          "sameLineStrictHitCount": 0,
+          "sameLineTargetIds": []
+        }
+      ],
+      "neighborhoodRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "overdoseIndex": 0,
+          "overdoseBlockLineWord": [
+            1,
+            0,
+            0
+          ],
+          "radius": 4,
+          "windowIndexSpan": [
+            0,
+            4
+          ],
+          "windowWordCount": 5,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetIdCount": 0,
+          "targetIds": [],
+          "targetTerms": [],
+          "targetOrder": [],
+          "activeOrderMatch": false,
+          "candidate": false,
+          "windowText": "OVERDOSE Get some toxicity. Get"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "overdoseIndex": 0,
+          "overdoseBlockLineWord": [
+            1,
+            0,
+            0
+          ],
+          "radius": 8,
+          "windowIndexSpan": [
+            0,
+            8
+          ],
+          "windowWordCount": 9,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetIdCount": 0,
+          "targetIds": [],
+          "targetTerms": [],
+          "targetOrder": [],
+          "activeOrderMatch": false,
+          "candidate": false,
+          "windowText": "OVERDOSE Get some toxicity. Get some bitcoin. Open your"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "overdoseIndex": 0,
+          "overdoseBlockLineWord": [
+            1,
+            0,
+            0
+          ],
+          "radius": 16,
+          "windowIndexSpan": [
+            0,
+            16
+          ],
+          "windowWordCount": 17,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetIdCount": 1,
+          "targetIds": [
+            "O5"
+          ],
+          "targetTerms": [
+            "heart"
+          ],
+          "targetOrder": [
+            "O5"
+          ],
+          "activeOrderMatch": false,
+          "candidate": false,
+          "windowText": "OVERDOSE Get some toxicity. Get some bitcoin. Open your heart to Biteoiny It's the freaking UTXO ghetto"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "overdoseIndex": 0,
+          "overdoseBlockLineWord": [
+            1,
+            0,
+            0
+          ],
+          "radius": 32,
+          "windowIndexSpan": [
+            0,
+            32
+          ],
+          "windowWordCount": 33,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetIdCount": 1,
+          "targetIds": [
+            "O5"
+          ],
+          "targetTerms": [
+            "heart"
+          ],
+          "targetOrder": [
+            "O5"
+          ],
+          "activeOrderMatch": false,
+          "candidate": false,
+          "windowText": "OVERDOSE Get some toxicity. Get some bitcoin. Open your heart to Biteoiny It's the freaking UTXO ghetto up in here, y'all. It's funkier than a whole parallel universe full of nothing but George"
+        }
+      ],
+      "strictNeighborhoodRows": 0,
+      "targetNeighborhoodRows": 2,
+      "allFourNeighborhoodRows": 0,
+      "activeOrderNeighborhoodRows": 0,
+      "candidateRows": 0
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "wordCount": 265,
+      "overdoseWordCount": 1,
+      "overdoseIndexes": [
+        0
+      ],
+      "sameLineRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "overdoseIndex": 0,
+          "sameLineWordCount": 1,
+          "sameLineText": "OVERDOSE",
+          "sameLineStrictHitCount": 0,
+          "sameLineTargetIds": []
+        }
+      ],
+      "neighborhoodRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "overdoseIndex": 0,
+          "overdoseBlockLineWord": [
+            1,
+            0,
+            0
+          ],
+          "radius": 4,
+          "windowIndexSpan": [
+            0,
+            4
+          ],
+          "windowWordCount": 5,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetIdCount": 0,
+          "targetIds": [],
+          "targetTerms": [],
+          "targetOrder": [],
+          "activeOrderMatch": false,
+          "candidate": false,
+          "windowText": "OVERDOSE Get some toxicity. Get"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "overdoseIndex": 0,
+          "overdoseBlockLineWord": [
+            1,
+            0,
+            0
+          ],
+          "radius": 8,
+          "windowIndexSpan": [
+            0,
+            8
+          ],
+          "windowWordCount": 9,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetIdCount": 0,
+          "targetIds": [],
+          "targetTerms": [],
+          "targetOrder": [],
+          "activeOrderMatch": false,
+          "candidate": false,
+          "windowText": "OVERDOSE Get some toxicity. Get some bitcoin. Open your"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "overdoseIndex": 0,
+          "overdoseBlockLineWord": [
+            1,
+            0,
+            0
+          ],
+          "radius": 16,
+          "windowIndexSpan": [
+            0,
+            16
+          ],
+          "windowWordCount": 17,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetIdCount": 1,
+          "targetIds": [
+            "O5"
+          ],
+          "targetTerms": [
+            "heart"
+          ],
+          "targetOrder": [
+            "O5"
+          ],
+          "activeOrderMatch": false,
+          "candidate": false,
+          "windowText": "OVERDOSE Get some toxicity. Get some bitcoin. Open your heart to Biteoiny It's the freaking UTXO ghetto"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "overdoseIndex": 0,
+          "overdoseBlockLineWord": [
+            1,
+            0,
+            0
+          ],
+          "radius": 32,
+          "windowIndexSpan": [
+            0,
+            32
+          ],
+          "windowWordCount": 33,
+          "strictHitCount": 0,
+          "strictHits": [],
+          "targetIdCount": 1,
+          "targetIds": [
+            "O5"
+          ],
+          "targetTerms": [
+            "heart"
+          ],
+          "targetOrder": [
+            "O5"
+          ],
+          "activeOrderMatch": false,
+          "candidate": false,
+          "windowText": "OVERDOSE Get some toxicity. Get some bitcoin. Open your heart to Biteoiny It's the freaking UTXO ghetto up in here, y'all. It's funkier than a whole parallel universe full of nothing but George"
+        }
+      ],
+      "strictNeighborhoodRows": 0,
+      "targetNeighborhoodRows": 2,
+      "allFourNeighborhoodRows": 0,
+      "activeOrderNeighborhoodRows": 0,
+      "candidateRows": 0
+    }
+  ],
+  "decision": {
+    "currentPdfOcrOverdoseNeighborhoodGate": "current_pdf_ocr_overdose_neighborhood_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Fixed OCR word windows around the hidden OVERDOSE header do not contain strict unit/order instructions or an all-four active component neighborhood.",
+    "nextMove": "Treat current PDF OCR OVERDOSE as derivative context unless a distinct source or raw clue supplies R3 unit/order evidence."
+  },
+  "sheet": "analysis_outputs/source_audit/current_pdf_ocr_overdose_neighborhood_gate/current_pdf_ocr_overdose_neighborhood_gate_sheet.jpg"
+}

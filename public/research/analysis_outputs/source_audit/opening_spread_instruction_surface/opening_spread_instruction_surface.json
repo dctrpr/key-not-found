@@ -1,0 +1,192 @@
+{
+  "createdAt": "2026-05-20T21:47:32",
+  "scope": "opening spread visible instruction-surface inventory; no key derivation",
+  "inputs": {
+    "page73": "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue24/page_01.jpg",
+    "page74": "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue24/page_02.jpg"
+  },
+  "sheet": "analysis_outputs/source_audit/opening_spread_instruction_surface/opening_spread_instruction_surface_sheet.jpg",
+  "records": [
+    {
+      "id": "p73_small_overdose",
+      "page": 73,
+      "kind": "label",
+      "box": [
+        210,
+        125,
+        410,
+        170
+      ],
+      "text": "OVERDOSE",
+      "instructionHits": [],
+      "initials": "O",
+      "lasts": "E"
+    },
+    {
+      "id": "p73_large_overdose",
+      "page": 73,
+      "kind": "title",
+      "box": [
+        190,
+        330,
+        2230,
+        560
+      ],
+      "text": "OVERDOSE",
+      "instructionHits": [],
+      "initials": "O",
+      "lasts": "E"
+    },
+    {
+      "id": "p73_with_max_keiser",
+      "page": 73,
+      "kind": "credit",
+      "box": [
+        300,
+        620,
+        810,
+        720
+      ],
+      "text": "with Max Keiser",
+      "instructionHits": [],
+      "initials": "wMK",
+      "lasts": "hxr"
+    },
+    {
+      "id": "p73_vertical_footer",
+      "page": 73,
+      "kind": "footer",
+      "box": [
+        80,
+        1750,
+        140,
+        2920
+      ],
+      "text": "Bitcoin Magazine | El Salvador",
+      "instructionHits": [],
+      "initials": "BMES",
+      "lasts": "nelr"
+    },
+    {
+      "id": "p73_page_number",
+      "page": 73,
+      "kind": "page_number",
+      "box": [
+        75,
+        3095,
+        145,
+        3165
+      ],
+      "text": "73",
+      "instructionHits": [],
+      "initials": "7",
+      "lasts": "3"
+    },
+    {
+      "id": "p73_five_capsules",
+      "page": 73,
+      "kind": "capsule_sequence",
+      "box": [
+        650,
+        1110,
+        1080,
+        2610
+      ],
+      "text": "five orange-white capsules",
+      "count": 5,
+      "order": "top-to-bottom on page 73",
+      "instructionHits": [],
+      "initials": "fowc",
+      "lasts": "eees"
+    },
+    {
+      "id": "p74_small_overdose",
+      "page": 74,
+      "kind": "label",
+      "box": [
+        2160,
+        125,
+        2365,
+        170
+      ],
+      "text": "OVERDOSE",
+      "instructionHits": [],
+      "initials": "O",
+      "lasts": "E"
+    },
+    {
+      "id": "p74_vertical_footer",
+      "page": 74,
+      "kind": "footer",
+      "box": [
+        2400,
+        1850,
+        2495,
+        2960
+      ],
+      "text": "Bitcoin Magazine | El Salvador",
+      "instructionHits": [],
+      "initials": "BMES",
+      "lasts": "nelr"
+    },
+    {
+      "id": "p74_page_number",
+      "page": 74,
+      "kind": "page_number",
+      "box": [
+        2310,
+        3090,
+        2380,
+        3165
+      ],
+      "text": "74",
+      "instructionHits": [],
+      "initials": "7",
+      "lasts": "4"
+    },
+    {
+      "id": "p74_max_and_money",
+      "page": 74,
+      "kind": "provenance_art",
+      "box": [
+        250,
+        900,
+        2160,
+        2920
+      ],
+      "text": "Max Keiser with thrown dollar bills in El Salvador field",
+      "instructionHits": [],
+      "initials": "MKwtdbiESf",
+      "lasts": "xrhnrsnlrd"
+    }
+  ],
+  "streams": {
+    "visibleText": "OVERDOSE | OVERDOSE | with Max Keiser | Bitcoin Magazine | El Salvador | 73 | five orange-white capsules | OVERDOSE | Bitcoin Magazine | El Salvador | 74 | Max Keiser with thrown dollar bills in El Salvador field",
+    "visibleTextNoRepeats": "OVERDOSE | with Max Keiser | Bitcoin Magazine | El Salvador | 73 | five orange-white capsules | 74 | Max Keiser with thrown dollar bills in El Salvador field",
+    "initialsBySurface": "OOwMKBMES7fowcOBMES7MKwtdbiESf",
+    "lastsBySurface": "EEhxrnelr3eeesEnelr4xrhnrsnlrd",
+    "pageNumbers": "73 74",
+    "capsuleCount": "5",
+    "pagePlusCapsule": "73 74 5"
+  },
+  "streamInstructionHits": {
+    "visibleText": [],
+    "visibleTextNoRepeats": [],
+    "initialsBySurface": [],
+    "lastsBySurface": [],
+    "pageNumbers": [],
+    "capsuleCount": [],
+    "pagePlusCapsule": []
+  },
+  "assessment": [
+    "The opener visibly establishes OVERDOSE, Max Keiser, Bitcoin Magazine, El Salvador, page numbers 73/74, five capsules, field/money imagery, and provenance.",
+    "The only instruction-term hits are generic/provenance terms already visible as labels or object types: page, capsule, Bitcoin, and number/count via the manually recorded object classes.",
+    "No visible opener text names a unit/order such as take/read/select word/letter/line, nor does it mention mirror/fold/key/private.",
+    "The five-capsule sequence remains useful as provenance/order evidence, but previous endpoint mapping showed it does not tightly select page-76 units under the current scan."
+  ],
+  "decision": {
+    "openerAsStandaloneSelector": "closed_current_scan",
+    "openerAsProvenance": "keep",
+    "nextMove": "Use opener only to validate future source/original-layout evidence or a clue explicitly naming capsules/page numbers; do not derive key material from opener labels alone."
+  }
+}

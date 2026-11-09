@@ -1,0 +1,134 @@
+{
+  "sourceImage": "analysis_outputs/3d_article_map/page_80_upright.jpg",
+  "manualTranscription": [
+    {
+      "label": "top_right",
+      "text": "FAKE AD",
+      "initials": "FA",
+      "lasts": "ED",
+      "numbers": []
+    },
+    {
+      "label": "cap_front",
+      "text": "5 SYMPTOM RELIEF",
+      "initials": "5SR",
+      "lasts": "5MF",
+      "numbers": [
+        5
+      ]
+    },
+    {
+      "label": "product",
+      "text": "Bitcoin FixesThis",
+      "initials": "BF",
+      "lasts": "ns",
+      "numbers": []
+    },
+    {
+      "label": "claim_1",
+      "text": "100% Proof of Work Liquid",
+      "initials": "1PoWL",
+      "lasts": "0ffkd",
+      "numbers": [
+        100
+      ]
+    },
+    {
+      "label": "claim_2",
+      "text": "Fiat Humiditus Reliever / Anticentralization",
+      "initials": "FHRA",
+      "lasts": "tsrn",
+      "numbers": []
+    },
+    {
+      "label": "bottle_front",
+      "text": "5 SYMPTOM RELIEF",
+      "initials": "5SR",
+      "lasts": "5MF",
+      "numbers": [
+        5
+      ]
+    },
+    {
+      "label": "symptoms",
+      "text": "NAUSEA HEARTBURN INDIGESTION UPSET STOMACH SHITCOINS",
+      "initials": "NHIUSS",
+      "lasts": "ANNTHS",
+      "numbers": []
+    },
+    {
+      "label": "volume_visible_likely",
+      "text": "16 FL OZ (473 mL)",
+      "initials": "1FO4m",
+      "lasts": "6LZ3L",
+      "numbers": [
+        16,
+        473
+      ]
+    },
+    {
+      "label": "volume_crop_recorded",
+      "text": "6 FL OZ (473 mL)",
+      "initials": "6FO4m",
+      "lasts": "6LZ3L",
+      "numbers": [
+        6,
+        473
+      ]
+    },
+    {
+      "label": "footer",
+      "text": "TOXIC BTB",
+      "initials": "TB",
+      "lasts": "CB",
+      "numbers": []
+    },
+    {
+      "label": "page_number",
+      "text": "80",
+      "initials": "8",
+      "lasts": "0",
+      "numbers": [
+        80
+      ]
+    }
+  ],
+  "streams": {
+    "package_all_initials": "FA5SRBF1PoWLFHRA5SRNHIUSS1FO4m6FO4mTB8",
+    "package_all_lasts": "ED5MFns0ffkdtsrn5MFANNTHS6LZ3L6LZ3LCB0",
+    "numbers_joined": "5100516473647380",
+    "numbers_csv": "5,100,5,16,473,6,473,80",
+    "known_page76_group_initials": "GbbI$",
+    "symptom_initials": "NHIUSS",
+    "claims_initials": "1PoWLFHRA"
+  },
+  "page76Stats": {
+    "lineCount": 30,
+    "wordCount": 277,
+    "line16": "laundering lobotomy. It’s a stun gun to the genitals.",
+    "word5_1based": "some",
+    "word16_1based": "ghetto",
+    "word80_1based": "Peter",
+    "word100_1based": "dulled",
+    "word473_1based": ""
+  },
+  "numericChecks": {
+    "5_matches_page76_target_group_count": true,
+    "5_matches_page76_group_initials": "GbbI$",
+    "16_as_page76_line": "laundering lobotomy. It’s a stun gun to the genitals.",
+    "1based_page76_words": {
+      "5": "some",
+      "16": "ghetto",
+      "80": "Peter",
+      "100": "dulled",
+      "473": ""
+    }
+  },
+  "assessment": [
+    "The package copy is useful as an unresolved visual layer, but it does not contain a direct instruction.",
+    "The strongest low-parameter link is count-based: '5 SYMPTOM RELIEF' appears twice and the label lists exactly five symptoms: nausea, heartburn, indigestion, upset stomach, and shitcoins. This matches the five page-76 target groups from the reflected graph.",
+    "The volume is visually and semantically likely '16 FL OZ (473 mL)'; an existing crop-only source records '6 FL OZ' because the left edge is clipped. If using p80 numbers, keep this ambiguity registered.",
+    "The number 16 lands on the page-76 line containing 'It's a stun gun to the genitals.', but this is not enough by itself because other package numbers do not produce a coherent index stream.",
+    "Treat p80 as thematic/count support unless a source/physical alignment shows the bottle copy lining up with another page."
+  ]
+}

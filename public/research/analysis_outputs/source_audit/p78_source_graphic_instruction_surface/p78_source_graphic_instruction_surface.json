@@ -1,0 +1,58 @@
+{
+  "createdAt": "2026-05-20T22:10:54",
+  "scope": "p78 source graphic instruction-surface audit; no key derivation",
+  "inputs": {
+    "pullquoteReflection": "analysis_outputs/source_audit/p78_graphic_pullquote_reflection/p78_graphic_pullquote_reflection.json",
+    "sourceSideFit": "analysis_outputs/source_audit/p78_frame_source_side_fit/p78_frame_source_side_fit.json",
+    "triContact": "analysis_outputs/source_audit/p78_frame_tricontact_signature/p78_frame_tricontact_signature.json",
+    "article3dMap": "analysis_outputs/3d_article_map/article_3d_map_data.json"
+  },
+  "sourceGraphic": {
+    "box": [
+      294,
+      2398,
+      1310,
+      2950
+    ],
+    "manualVisibleText": "The economy of love is infinitely more efficient than hate and war.",
+    "manualWordCount": 12,
+    "instructionHits": [],
+    "thematicHits": [
+      "economy",
+      "love",
+      "efficient",
+      "hate",
+      "war"
+    ]
+  },
+  "sourceSideOcrLabelCheck": {
+    "insideWordCount": 14,
+    "insideText": "aé economy O aed peste aa 4 © efficie: more ware a nate Ca",
+    "insideInstructionHits": [],
+    "nearbyWordCount": 0,
+    "nearbyText": "",
+    "nearbyInstructionHits": []
+  },
+  "registrationContext": {
+    "currentSourceFrameCapturesGraphicMask": true,
+    "dxMinus38SourceMaskCapture": 0.991782,
+    "dxMinus38ReflectedP76Frame": [
+      1196,
+      2398,
+      2212,
+      2950
+    ],
+    "triContactPass": true
+  },
+  "sheet": "analysis_outputs/source_audit/p78_source_graphic_instruction_surface/p78_source_graphic_instruction_surface_sheet.jpg",
+  "assessment": [
+    "The p78 source object is a visible pull-quote/frame, not a hidden instruction label.",
+    "Manual visible source text has thematic terms (`economy`, `love`, `efficient`, `hate`, `war`) but no extraction terms such as read/take/word/letter/line/mirror/fold/key/private.",
+    "The 3D/OCR labels inside the graphic are low-quality graphic-text artifacts and also contain no extraction unit.",
+    "The p78 object remains a registration/orientation source for the p76 lower corridor; it does not supply the missing unit/order by itself."
+  ],
+  "decision": {
+    "p78SourceGraphicAsInstructionSurface": "closed_current_scan",
+    "nextMove": "Keep p78 frame only as validation evidence. Continue toward explicit source/external wording or new physical/original-layout imagery before extracting from G5/O5."
+  }
+}

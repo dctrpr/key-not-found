@@ -1,0 +1,113 @@
+{
+  "createdAt": "2026-05-20T06:07:40",
+  "scope": "Secondary-support audit for non-empty weak page-76 line-offset landings; no key derivation.",
+  "auditedLandings": [
+    {
+      "sourceId": "O2",
+      "sourceIndex": 2,
+      "targetLine": 3,
+      "targetText": "but George Clinton and James Brown clones. It's Martin Luther",
+      "graphSupport": [
+        {
+          "targetId": "orange_7",
+          "targetText": "Get some toxicity. Get some bitcoin. Open your heart to Bitcoin.",
+          "sourcePage": 79,
+          "reflectionId": "79_76_1",
+          "reflectionText": "but George Clinton and James Brown clones. It's Martin Luther nailing the Vatican with ultimatums. It's the sound of skin being ripped off live central bankers tied to a burning stake.",
+          "strength": "strong",
+          "overlapVsSpan": 0.2967,
+          "overlapVsReflection": 0.9566,
+          "centerDistance": 57.97,
+          "matchedTerms": [
+            "brown",
+            "clinton",
+            "clones",
+            "george",
+            "james",
+            "luther",
+            "martin"
+          ]
+        },
+        {
+          "targetId": "grey_black_4",
+          "targetText": "It’s a stun gun to the genitals.",
+          "sourcePage": 79,
+          "reflectionId": "79_76_1",
+          "reflectionText": "but George Clinton and James Brown clones. It's Martin Luther nailing the Vatican with ultimatums. It's the sound of skin being ripped off live central bankers tied to a burning stake.",
+          "strength": "medium",
+          "overlapVsSpan": 0.1651,
+          "overlapVsReflection": 0.571,
+          "centerDistance": 316.36,
+          "matchedTerms": [
+            "brown",
+            "clinton",
+            "clones",
+            "george",
+            "james",
+            "luther",
+            "martin"
+          ]
+        }
+      ],
+      "packageTermSupport": [],
+      "packageNumberSupport": [],
+      "secondarySupportScore": 5,
+      "secondarySupportLabels": [
+        "strong reflected carrier",
+        "medium reflected carrier"
+      ]
+    },
+    {
+      "sourceId": "B2",
+      "sourceIndex": 2,
+      "targetLine": 9,
+      "targetText": "have dulled shitcoiners' and nocoiners' minds.",
+      "graphSupport": [],
+      "packageTermSupport": [
+        {
+          "packageLabel": "symptoms",
+          "packageText": "NAUSEA HEARTBURN INDIGESTION UPSET STOMACH SHITCOINS",
+          "exactTerms": [],
+          "familyTerms": [
+            {
+              "landingToken": "shitcoiners",
+              "sourceToken": "shitcoins"
+            }
+          ]
+        }
+      ],
+      "packageNumberSupport": [
+        {
+          "numberLabel": "100_percent_pow",
+          "number": 100,
+          "hits": {
+            "oneBasedWord": "dulled"
+          }
+        }
+      ],
+      "secondarySupportScore": 3,
+      "secondarySupportLabels": [
+        "p80 number/word hit",
+        "p80 package term/family hit"
+      ]
+    },
+    {
+      "sourceId": "B3",
+      "sourceIndex": 3,
+      "targetLine": 19,
+      "targetText": "Don't believe me?",
+      "graphSupport": [],
+      "packageTermSupport": [],
+      "packageNumberSupport": [],
+      "secondarySupportScore": 0,
+      "secondarySupportLabels": []
+    }
+  ],
+  "assessment": [
+    "O2+2 is not actually unsupported in the full evidence stack: the `George Clinton / Martin Luther` line is the same p79 reflected carrier that strongly overlaps O1 and medium-overlaps B3 in the reflected-highlight graph.",
+    "B2+2 gains weak p80 support: `100% Proof of Work Liquid` maps through the existing p80 number check to page-76 word 100, `dulled`, and the p80 symptom `SHITCOINS` shares the same family as `shitcoiners` in the landing line.",
+    "This does not make #2 a final selector. It means the earlier score-0 label was too strict because it ignored reflected-carrier and package-number evidence.",
+    "The line-offset model now looks more like a cross-reference/locator map than a direct highlight-to-highlight rule. It still does not specify the word or letter to extract."
+  ],
+  "nextMove": "Run one local unit audit on the secondary-supported landing set: for each supported landing, use only the externally named term/carrier word and test whether those named terms form a readable instruction before any key derivation."
+}

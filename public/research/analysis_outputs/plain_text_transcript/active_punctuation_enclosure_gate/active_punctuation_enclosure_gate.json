@@ -1,0 +1,221 @@
+{
+  "createdAt": "2026-05-21T00:40:54",
+  "scope": "active punctuation/enclosure gate; no extraction, no key derivation, no hashing, no seed/WIF/address checks",
+  "inputs": {
+    "activeLineUnitReconciliation": "analysis_outputs/plain_text_transcript/active_line_unit_reconciliation/active_line_unit_reconciliation.json",
+    "targetTextAuthorityLock": "analysis_outputs/plain_text_transcript/page76_target_text_authority_lock/page76_target_text_authority_lock.json",
+    "targetFormatAuthorityLock": "analysis_outputs/docm_format_sources/page76_target_format_authority_lock/page76_target_format_authority_lock.json",
+    "correctionSelectorImpact": "analysis_outputs/plain_text_transcript/correction_selector_impact/correction_selector_impact.json"
+  },
+  "summary": {
+    "activeTargetCount": 4,
+    "classStream": "quote+period | dollar | quote | period",
+    "classInitialStream": "QP D Q P",
+    "selectorPickStream": "bp $ Vs t",
+    "phraseEdgeStream": "bp $n Vs st",
+    "boundaryRunStream": "“/.” -/- “/” -/.",
+    "activePageLines": "22 25 27 32",
+    "activeCorridorIndexes": "4 7 9 14",
+    "activeVisualStateOrder": "YKKY",
+    "activeCorridorCorrectionCount": 3,
+    "activePunctuationCorrectionCount": 2,
+    "instructionHitCount": 0,
+    "instructionHits": [],
+    "selectorUnlocked": false
+  },
+  "punctuationContexts": [
+    {
+      "order": 1,
+      "id": "buying_dip",
+      "label": "buying the dip",
+      "visualState": "Y",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "canonicalLine": "He's taunting them, telling them he's “buying the dip.”",
+      "leftRun": "“",
+      "rightRun": ".”",
+      "hasLeftQuote": true,
+      "hasRightQuote": true,
+      "hasTerminalPeriod": true,
+      "hasDollar": false,
+      "class": "quote+period",
+      "classInitial": "QP",
+      "phraseFirst": "b",
+      "phraseLast": "p",
+      "selectorPick": "bp",
+      "selectorRule": "quoted with terminal punctuation: phrase edges"
+    },
+    {
+      "order": 2,
+      "id": "one_billion",
+      "label": "$1 billion",
+      "visualState": "K",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "canonicalLine": "$1 billion in bitcoin — that he should sell",
+      "leftRun": "-",
+      "rightRun": "-",
+      "hasLeftQuote": false,
+      "hasRightQuote": false,
+      "hasTerminalPeriod": false,
+      "hasDollar": true,
+      "class": "dollar",
+      "classInitial": "D",
+      "phraseFirst": "$",
+      "phraseLast": "n",
+      "selectorPick": "$",
+      "selectorRule": "dollar amount: first visible character"
+    },
+    {
+      "order": 3,
+      "id": "volcano_bonds",
+      "label": "Volcano Bonds",
+      "visualState": "K",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "canonicalLine": "collateralized “Volcano Bonds” to pay off the IMF",
+      "leftRun": "“",
+      "rightRun": "”",
+      "hasLeftQuote": true,
+      "hasRightQuote": true,
+      "hasTerminalPeriod": false,
+      "hasDollar": false,
+      "class": "quote",
+      "classInitial": "Q",
+      "phraseFirst": "V",
+      "phraseLast": "s",
+      "selectorPick": "Vs",
+      "selectorRule": "quoted phrase: phrase edges"
+    },
+    {
+      "order": 4,
+      "id": "shitcoiner_heart",
+      "label": "shitcoiner at heart",
+      "visualState": "Y",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "canonicalLine": "Maybe because he's a shitcoiner at heart.",
+      "leftRun": "-",
+      "rightRun": ".",
+      "hasLeftQuote": false,
+      "hasRightQuote": false,
+      "hasTerminalPeriod": true,
+      "hasDollar": false,
+      "class": "period",
+      "classInitial": "P",
+      "phraseFirst": "s",
+      "phraseLast": "t",
+      "selectorPick": "t",
+      "selectorRule": "terminal punctuation: last character"
+    }
+  ],
+  "activeCorridorCorrections": [
+    {
+      "index": 5,
+      "raw": "\"buying the dip\".",
+      "fixed": "\"buying the dip.\"",
+      "reason": "DOCM witness places the period inside the quote.",
+      "rawPatternPresent": true,
+      "removedTokens": [
+        "."
+      ],
+      "addedTokens": [
+        "."
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [
+        "buying",
+        "dip"
+      ],
+      "fixedTargetHits": [
+        "buying",
+        "dip"
+      ],
+      "addedTargetHits": [],
+      "activePhraseHitsRaw": [
+        "O4"
+      ],
+      "activePhraseHitsFixed": [
+        "O4"
+      ],
+      "affectsActiveCorridor": true,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 6,
+      "raw": "collateralized to pay off the IMF",
+      "fixed": "collateralized “Volcano Bonds” to pay off the IMF",
+      "reason": "The raw plain text omitted the highlighted `Volcano Bonds` phrase.",
+      "rawPatternPresent": true,
+      "removedTokens": [],
+      "addedTokens": [
+        "“",
+        "Volcano",
+        "Bonds",
+        "”"
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [
+        "imf"
+      ],
+      "fixedTargetHits": [
+        "volcano",
+        "bonds",
+        "imf"
+      ],
+      "addedTargetHits": [
+        "volcano",
+        "bonds"
+      ],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [
+        "G5"
+      ],
+      "affectsActiveCorridor": true,
+      "addsSelectorPermission": false
+    },
+    {
+      "index": 14,
+      "raw": "requires printing and wars",
+      "fixed": "requires money printing and wars",
+      "reason": "The raw plain text omitted `money`.",
+      "rawPatternPresent": true,
+      "removedTokens": [],
+      "addedTokens": [
+        "money"
+      ],
+      "rawInstructionHits": [],
+      "fixedInstructionHits": [],
+      "addedInstructionHits": [],
+      "rawTargetHits": [],
+      "fixedTargetHits": [
+        "money"
+      ],
+      "addedTargetHits": [
+        "money"
+      ],
+      "activePhraseHitsRaw": [],
+      "activePhraseHitsFixed": [],
+      "affectsActiveCorridor": true,
+      "addsSelectorPermission": false
+    }
+  ],
+  "sourceContext": {
+    "textAuthorityDecision": "page76_target_text_authority_locked_to_canonical_docm_markdown_annotated",
+    "formatAuthorityDecision": "page76_target_format_authority_locked_no_selector",
+    "selectorPermissionCorrectionCount": 0
+  },
+  "assessment": [
+    "The active quartet has a real punctuation/enclosure pattern: O4 is quoted with terminal punctuation, B4 is a dollar amount, G5 is quoted, and O5 has terminal punctuation.",
+    "That pattern is exact-text authority, not an extraction rule: the class stream and simple punctuation-directed edge picks contain no instruction terms.",
+    "The correction layer matters for source fidelity because it moves O4 punctuation inside the quote and restores quoted `Volcano Bonds`, but those corrections add no selector permission.",
+    "This closes punctuation/enclosure as a current-scan active quartet selector while preserving it as a source-comparison guardrail."
+  ],
+  "decision": "active_punctuation_enclosure_is_text_authority_not_selector",
+  "sheet": "analysis_outputs/plain_text_transcript/active_punctuation_enclosure_gate/active_punctuation_enclosure_gate_sheet.jpg",
+  "nextMove": "Use active punctuation/enclosure only to validate exact source text in future scans/layout exports; reopen it as selector evidence only if raw clue wording names quote, dollar, punctuation, first/last, or edge extraction."
+}

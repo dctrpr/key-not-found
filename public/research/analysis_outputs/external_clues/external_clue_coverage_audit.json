@@ -1,0 +1,127 @@
+{
+  "createdAt": "2026-05-20T04:56:04",
+  "scope": "external clue coverage audit; no key derivation",
+  "rows": [
+    {
+      "clue": "Announcement: private Bitcoin key encoded in the Bitcoin Magazine piece",
+      "evidence": "analysis_outputs/external_clues/original_clue_provenance.md",
+      "testedBy": [
+        "source lock, exact transcript, broad key-format tests, dead-branch blacklist"
+      ],
+      "status": "accounted_for",
+      "finding": "Confirms source and target type, but gives no selector beyond the later mirror-writing clue.",
+      "evidenceExists": true
+    },
+    {
+      "clue": "Schott paper title: mirror writing",
+      "evidence": "analysis_outputs/external_clues/schott_instruction_distillation.md",
+      "testedBy": [
+        "hold-to-light overlays",
+        "literal string reversal",
+        "left/right and bimanual selectors",
+        "76/79 registration",
+        "page-76 self-mirror"
+      ],
+      "status": "accounted_for_but_incomplete",
+      "finding": "Supports visual/physical mirror and left-right operations. Current tests find regions, not extraction units.",
+      "evidenceExists": true
+    },
+    {
+      "clue": "Schott concepts: left hand, right hemisphere, bimanual movement, corpus callosum",
+      "evidence": "analysis_outputs/external_clues/schott_instruction_distillation.md",
+      "testedBy": [
+        "78/79 two-hand selectors",
+        "registered 76/79 line anchor",
+        "source-page binary selectors"
+      ],
+      "status": "accounted_for_but_incomplete",
+      "finding": "The concept fits crossing/registration, especially p79 -> p76, but does not name source layer or extraction unit.",
+      "evidenceExists": true
+    },
+    {
+      "clue": "Announcement media sequence: Bukele, El Salvador, IMF, volcano imagery",
+      "evidence": "analysis_outputs/external_clues/source_clue_inventory.md",
+      "testedBy": [
+        "page-76 corridor",
+        "page-76 B5/O5 drilldown",
+        "dose-number and p80 symptom audits"
+      ],
+      "status": "strongly_accounted_for",
+      "finding": "Repeatedly reinforces page 76 and the Bukele/IMF/volcano/Volcano Bonds corridor.",
+      "evidenceExists": true
+    },
+    {
+      "clue": "Announcement opener spread: OVERDOSE, five capsules, cash",
+      "evidence": "analysis_outputs/source_audit/announcement_opening_spread/announcement_opening_spread_audit.md",
+      "testedBy": [
+        "opener pill/cash inventory",
+        "capsule recurrence",
+        "ordered capsule projection",
+        "spread model reconciliation"
+      ],
+      "status": "accounted_for_but_incomplete",
+      "finding": "Five-capsule/order provenance is real but does not currently map onto page-76 text under the high-res digital scan.",
+      "evidenceExists": true
+    },
+    {
+      "clue": "Canva note: pills don't line up / diff pic?",
+      "evidence": "analysis_outputs/external_clues/canva_source_inspection.md",
+      "testedBy": [
+        "source registration gap",
+        "best scan source lock",
+        "capsule projection and recurrence"
+      ],
+      "status": "source_gap_active",
+      "finding": "This is not a selector. It points to a possible source/version mismatch that only a different source image, original layout asset, or physical scan can settle.",
+      "evidenceExists": true
+    },
+    {
+      "clue": "Canva note: OCR did not pick up the #0 in browser/PDF viewer",
+      "evidence": "analysis_outputs/external_clues/canva_source_inspection.md",
+      "testedBy": [
+        "OCR is diagnostic only; high-res/manual text is source truth"
+      ],
+      "status": "source_gap_active",
+      "finding": "Treat as OCR/source-fidelity warning. It does not identify which zero or which page without the referenced browser view or higher-res Canva/original visual.",
+      "evidenceExists": true
+    },
+    {
+      "clue": "Canva note: XX / barbed wire / SHIT / FUCK ALL SHITCOINS line up after rotation/mirroring",
+      "evidence": "analysis_outputs/external_clues/canva_source_inspection.md",
+      "testedBy": [
+        "registered Canva anchor alignment",
+        "p79 pill / p76 X-dollar-wire system",
+        "lower page-76 mark pointers"
+      ],
+      "status": "accounted_for_as_orientation",
+      "finding": "Supports orientation/registration. Existing high-res tests do not make it a precise ordering or letter selector.",
+      "evidenceExists": true
+    },
+    {
+      "clue": "Canva design thumbnail / board",
+      "evidence": "analysis_outputs/external_clues/canva_thumbnail_export_audit.md",
+      "testedBy": [
+        "thumbnail export audit",
+        "dead-branch blacklist"
+      ],
+      "status": "closed_as_geometry_truth",
+      "finding": "Current connector only exposes a low-resolution investigator thumbnail, not original geometry truth.",
+      "evidenceExists": true
+    }
+  ],
+  "summary": {
+    "clueCount": 9,
+    "activeSourceGaps": 2,
+    "activeSourceGapLabels": [
+      "Canva note: pills don't line up / diff pic?",
+      "Canva note: OCR did not pick up the #0 in browser/PDF viewer"
+    ]
+  },
+  "assessment": [
+    "The known external clues do not contain an untested local selector operation.",
+    "Mirror/left-right/bimanual clues have been tested enough to show region/corridor behavior, not final extraction units.",
+    "The remaining live clue items are source-fidelity gaps: possible different source image and the unspecified OCR-missed #0.",
+    "The next high-value move is source acquisition or manual inspection of the exact browser/Canva/original-layout view, not more transformations of current extracted text."
+  ],
+  "nextMove": "Make a zero/#0 visual inventory only if the referenced browser/PDF view or higher-resolution Canva/original asset is available; otherwise prioritize physical/original-source acquisition."
+}

@@ -1,0 +1,462 @@
+{
+  "createdAt": "2026-05-21T01:20:17",
+  "scope": "active OBBO/YKKY pair-symmetry gate; no OCR, key derivation, hashing, WIF, seed, or address checks",
+  "inputs": {
+    "activeTargets": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "article3dMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "p78SourceInstructionSurface": "analysis_outputs/source_audit/p78_source_graphic_instruction_surface/p78_source_graphic_instruction_surface.json",
+    "futureSourceScoringRubric": "analysis_outputs/source_audit/future_source_scoring_rubric/future_source_scoring_rubric.json"
+  },
+  "page": {
+    "page": 76,
+    "width": 2544,
+    "height": 3264
+  },
+  "linePitchPx": 73.73,
+  "targets": [
+    {
+      "id": "buying_dip",
+      "label": "O4 buying the dip",
+      "phrase": "buying the dip",
+      "box": [
+        1334,
+        2177,
+        1801,
+        2225
+      ],
+      "center": [
+        1567.5,
+        2201.0
+      ],
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "visualState": "Y"
+    },
+    {
+      "id": "one_billion",
+      "label": "B4 $1 billion",
+      "phrase": "$1 billion",
+      "box": [
+        428,
+        2398,
+        691,
+        2445
+      ],
+      "center": [
+        559.5,
+        2421.5
+      ],
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "visualState": "K"
+    },
+    {
+      "id": "volcano_bonds",
+      "label": "G5 Volcano Bonds",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795,
+        2544,
+        1196,
+        2592
+      ],
+      "center": [
+        995.5,
+        2568.0
+      ],
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "visualState": "K"
+    },
+    {
+      "id": "shitcoiner_heart",
+      "label": "O5 shitcoiner at heart",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040,
+        2932,
+        1661,
+        2982
+      ],
+      "center": [
+        1350.5,
+        2957.0
+      ],
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "visualState": "Y"
+    }
+  ],
+  "frames": {
+    "sameLayoutFrame": [
+      294.0,
+      2398.0,
+      1310.0,
+      2950.0
+    ],
+    "currentMirrorFrame": [
+      1234.0,
+      2398.0,
+      2250.0,
+      2950.0
+    ]
+  },
+  "primaryPairing": {
+    "name": "outer_orange_inner_black",
+    "pairs": [
+      {
+        "pair": [
+          "buying_dip",
+          "shitcoiner_heart"
+        ],
+        "labels": [
+          "O4 buying the dip",
+          "O5 shitcoiner at heart"
+        ],
+        "colors": [
+          "Y",
+          "Y"
+        ],
+        "centers": [
+          [
+            1567.5,
+            2201.0
+          ],
+          [
+            1350.5,
+            2957.0
+          ]
+        ],
+        "midpoint": [
+          1459.0,
+          2579.0
+        ],
+        "dxAbsPx": 217.0,
+        "dyAbsPx": 756.0,
+        "distancePx": 786.53,
+        "lineGap": 10,
+        "corridorGap": 10
+      },
+      {
+        "pair": [
+          "one_billion",
+          "volcano_bonds"
+        ],
+        "labels": [
+          "B4 $1 billion",
+          "G5 Volcano Bonds"
+        ],
+        "colors": [
+          "K",
+          "K"
+        ],
+        "centers": [
+          [
+            559.5,
+            2421.5
+          ],
+          [
+            995.5,
+            2568.0
+          ]
+        ],
+        "midpoint": [
+          777.5,
+          2494.75
+        ],
+        "dxAbsPx": 436.0,
+        "dyAbsPx": 146.5,
+        "distancePx": 459.95,
+        "lineGap": 2,
+        "corridorGap": 2
+      }
+    ],
+    "horizontalFold": {
+      "pairAxesY": [
+        2579.0,
+        2494.75
+      ],
+      "pairAxisSpreadPx": 84.25,
+      "xMismatchPx": [
+        217.0,
+        436.0
+      ],
+      "maxErrorPx": 436.0,
+      "passesOneLinePitch": false
+    },
+    "verticalFold": {
+      "pairAxesX": [
+        1459.0,
+        777.5
+      ],
+      "pairAxisSpreadPx": 681.5,
+      "yMismatchPx": [
+        756.0,
+        146.5
+      ],
+      "maxErrorPx": 756.0,
+      "passesOneLinePitch": false
+    },
+    "pointReflection": {
+      "pairMidpoints": [
+        [
+          1459.0,
+          2579.0
+        ],
+        [
+          777.5,
+          2494.75
+        ]
+      ],
+      "midpointSpreadPx": 686.69,
+      "passesOneLinePitch": false
+    }
+  },
+  "alternatePairingControl": {
+    "name": "top_neighbor_pairs_control",
+    "pairs": [
+      {
+        "pair": [
+          "buying_dip",
+          "one_billion"
+        ],
+        "labels": [
+          "O4 buying the dip",
+          "B4 $1 billion"
+        ],
+        "colors": [
+          "Y",
+          "K"
+        ],
+        "centers": [
+          [
+            1567.5,
+            2201.0
+          ],
+          [
+            559.5,
+            2421.5
+          ]
+        ],
+        "midpoint": [
+          1063.5,
+          2311.25
+        ],
+        "dxAbsPx": 1008.0,
+        "dyAbsPx": 220.5,
+        "distancePx": 1031.84,
+        "lineGap": 3,
+        "corridorGap": 3
+      },
+      {
+        "pair": [
+          "volcano_bonds",
+          "shitcoiner_heart"
+        ],
+        "labels": [
+          "G5 Volcano Bonds",
+          "O5 shitcoiner at heart"
+        ],
+        "colors": [
+          "K",
+          "Y"
+        ],
+        "centers": [
+          [
+            995.5,
+            2568.0
+          ],
+          [
+            1350.5,
+            2957.0
+          ]
+        ],
+        "midpoint": [
+          1173.0,
+          2762.5
+        ],
+        "dxAbsPx": 355.0,
+        "dyAbsPx": 389.0,
+        "distancePx": 526.64,
+        "lineGap": 5,
+        "corridorGap": 5
+      }
+    ],
+    "horizontalFold": {
+      "pairAxesY": [
+        2311.25,
+        2762.5
+      ],
+      "pairAxisSpreadPx": 451.25,
+      "xMismatchPx": [
+        1008.0,
+        355.0
+      ],
+      "maxErrorPx": 1008.0,
+      "passesOneLinePitch": false
+    },
+    "verticalFold": {
+      "pairAxesX": [
+        1063.5,
+        1173.0
+      ],
+      "pairAxisSpreadPx": 109.5,
+      "yMismatchPx": [
+        220.5,
+        389.0
+      ],
+      "maxErrorPx": 389.0,
+      "passesOneLinePitch": false
+    },
+    "pointReflection": {
+      "pairMidpoints": [
+        [
+          1063.5,
+          2311.25
+        ],
+        [
+          1173.0,
+          2762.5
+        ]
+      ],
+      "midpointSpreadPx": 464.35,
+      "passesOneLinePitch": false
+    }
+  },
+  "frameRelations": [
+    {
+      "name": "same_layout_p78_source_slot",
+      "frame": [
+        294.0,
+        2398.0,
+        1310.0,
+        2950.0
+      ],
+      "frameCenter": [
+        802.0,
+        2674.0
+      ],
+      "pairRows": [
+        {
+          "pair": [
+            "buying_dip",
+            "shitcoiner_heart"
+          ],
+          "midpoint": [
+            1459.0,
+            2579.0
+          ],
+          "dxToFrameCenterPx": 657.0,
+          "dyToFrameCenterPx": 95.0,
+          "distanceToFrameCenterPx": 663.83,
+          "withinOneLinePitch2d": false
+        },
+        {
+          "pair": [
+            "one_billion",
+            "volcano_bonds"
+          ],
+          "midpoint": [
+            777.5,
+            2494.75
+          ],
+          "dxToFrameCenterPx": 24.5,
+          "dyToFrameCenterPx": 179.25,
+          "distanceToFrameCenterPx": 180.92,
+          "withinOneLinePitch2d": false
+        }
+      ],
+      "bestPair": {
+        "pair": [
+          "one_billion",
+          "volcano_bonds"
+        ],
+        "midpoint": [
+          777.5,
+          2494.75
+        ],
+        "dxToFrameCenterPx": 24.5,
+        "dyToFrameCenterPx": 179.25,
+        "distanceToFrameCenterPx": 180.92,
+        "withinOneLinePitch2d": false
+      }
+    },
+    {
+      "name": "current_p78_to_p76_mirror_frame",
+      "frame": [
+        1234.0,
+        2398.0,
+        2250.0,
+        2950.0
+      ],
+      "frameCenter": [
+        1742.0,
+        2674.0
+      ],
+      "pairRows": [
+        {
+          "pair": [
+            "buying_dip",
+            "shitcoiner_heart"
+          ],
+          "midpoint": [
+            1459.0,
+            2579.0
+          ],
+          "dxToFrameCenterPx": 283.0,
+          "dyToFrameCenterPx": 95.0,
+          "distanceToFrameCenterPx": 298.52,
+          "withinOneLinePitch2d": false
+        },
+        {
+          "pair": [
+            "one_billion",
+            "volcano_bonds"
+          ],
+          "midpoint": [
+            777.5,
+            2494.75
+          ],
+          "dxToFrameCenterPx": 964.5,
+          "dyToFrameCenterPx": 179.25,
+          "distanceToFrameCenterPx": 981.02,
+          "withinOneLinePitch2d": false
+        }
+      ],
+      "bestPair": {
+        "pair": [
+          "buying_dip",
+          "shitcoiner_heart"
+        ],
+        "midpoint": [
+          1459.0,
+          2579.0
+        ],
+        "dxToFrameCenterPx": 283.0,
+        "dyToFrameCenterPx": 95.0,
+        "distanceToFrameCenterPx": 298.52,
+        "withinOneLinePitch2d": false
+      }
+    }
+  ],
+  "summary": {
+    "colorPattern": "OBBO",
+    "visualStatePattern": "YKKY",
+    "pageLines": "22 25 27 32",
+    "corridorIndexes": "4 7 9 14",
+    "primaryHorizontalMaxErrorPx": 436.0,
+    "primaryVerticalMaxErrorPx": 756.0,
+    "primaryPointMidpointSpreadPx": 686.69,
+    "bestFrameRelationName": "same_layout_p78_source_slot",
+    "bestFrameRelationDistancePx": 180.92,
+    "selectorUnlocked": false
+  },
+  "decision": {
+    "activeQuartetPairSymmetry": "closed_current_scan",
+    "bestAxis": "horizontal_fold 436.0px",
+    "bestFrameRelation": "same_layout_p78_source_slot 180.92px",
+    "selectorUnlocked": false,
+    "nextMove": "Keep OBBO/YKKY pair symmetry as a visual validation check only; reopen only if source wording names color-pair folding, pair midpoints, or an axis."
+  },
+  "sheet": "analysis_outputs/source_audit/active_quartet_pair_symmetry_gate/active_quartet_pair_symmetry_gate_sheet.jpg"
+}

@@ -1,0 +1,293 @@
+{
+  "createdAt": "2026-05-20T23:39:36",
+  "scope": "Markdown-bold vs DOCM formatting mismatch instruction-surface audit; no extraction, no key derivation, no hashing, no OCR, no address checks",
+  "inputs": {
+    "markdown": "analysis_outputs/3d_article_map/user_markdown_transcript.md",
+    "docm_text": "analysis_outputs/docm_format_sources/article_with_fonts_text.txt",
+    "docm_runs": "analysis_outputs/docm_format_sources/article_with_fonts_runs.json",
+    "manual_bold": "analysis_outputs/docm_format_sources/typeka_manual_bold_disambiguation/typeka_manual_bold_disambiguation.json",
+    "format_lock": "analysis_outputs/docm_format_sources/page76_target_format_authority_lock/page76_target_format_authority_lock.json"
+  },
+  "summary": {
+    "markdownBoldSpanCount": 230,
+    "alignedCount": 229,
+    "unalignedCount": 1,
+    "corridorWindow": {
+      "start": 2744,
+      "end": 3410,
+      "startPhrase": "Don't believe me?",
+      "endPhrase": "Maybe because he's a shitcoiner at heart."
+    },
+    "corridorMarkdownBoldSpanCount": 18,
+    "corridorMarkdownOnlySpanCount": 13,
+    "corridorHighlightedAlignedSpanCount": 2,
+    "corridorDocmOnlyActiveTargetCount": 2,
+    "totalInstructionHitCount": 0,
+    "formatLockDecision": "page76_target_format_authority_locked_no_selector",
+    "activeVisualStateOrder": "YKKY"
+  },
+  "docmTextAlignment": {
+    "runReconstructedLength": 7652,
+    "fileTextLength": 7632,
+    "using": "run_reconstructed_text_for_font_offset_alignment"
+  },
+  "corridorMarkdownRows": [
+    {
+      "order": 77,
+      "text": "lv",
+      "docmStart": 2798,
+      "docmEnd": 2800,
+      "dominantFont": "Typeka Mix",
+      "boldFraction": 0.0,
+      "mixFraction": 1.0,
+      "dominantHighlight": "none",
+      "highlightFraction": 0.0,
+      "classification": "markdown_only_not_docm_bold"
+    },
+    {
+      "order": 78,
+      "text": "d",
+      "docmStart": 2801,
+      "docmEnd": 2802,
+      "dominantFont": "Typeka Mix",
+      "boldFraction": 0.0,
+      "mixFraction": 1.0,
+      "dominantHighlight": "none",
+      "highlightFraction": 0.0,
+      "classification": "markdown_only_not_docm_bold"
+    },
+    {
+      "order": 79,
+      "text": "“buying the dip.”",
+      "docmStart": 2905,
+      "docmEnd": 2919,
+      "dominantFont": "Typeka",
+      "boldFraction": 1.0,
+      "mixFraction": 0.0,
+      "dominantHighlight": "yellow",
+      "highlightFraction": 1.0,
+      "classification": "visual_highlight_or_docm_highlight"
+    },
+    {
+      "order": 80,
+      "text": "President Nayib Bukele",
+      "docmStart": 2932,
+      "docmEnd": 2954,
+      "dominantFont": "Typeka",
+      "boldFraction": 1.0,
+      "mixFraction": 0.0,
+      "dominantHighlight": "none",
+      "highlightFraction": 0.0,
+      "classification": "docm_bold_aligned"
+    },
+    {
+      "order": 81,
+      "text": "IMF",
+      "docmStart": 3160,
+      "docmEnd": 3163,
+      "dominantFont": "Typeka",
+      "boldFraction": 1.0,
+      "mixFraction": 0.0,
+      "dominantHighlight": "none",
+      "highlightFraction": 0.0,
+      "classification": "docm_bold_aligned"
+    },
+    {
+      "order": 82,
+      "text": "loan",
+      "docmStart": 3165,
+      "docmEnd": 3169,
+      "dominantFont": "Typeka",
+      "boldFraction": 1.0,
+      "mixFraction": 0.0,
+      "dominantHighlight": "none",
+      "highlightFraction": 0.0,
+      "classification": "docm_bold_aligned"
+    },
+    {
+      "order": 83,
+      "text": "i",
+      "docmStart": 3179,
+      "docmEnd": 3180,
+      "dominantFont": "Typeka",
+      "boldFraction": 0.0,
+      "mixFraction": 0.0,
+      "dominantHighlight": "none",
+      "highlightFraction": 0.0,
+      "classification": "markdown_only_not_docm_bold"
+    },
+    {
+      "order": 84,
+      "text": "e",
+      "docmStart": 3189,
+      "docmEnd": 3190,
+      "dominantFont": "Typeka",
+      "boldFraction": 0.0,
+      "mixFraction": 0.0,
+      "dominantHighlight": "none",
+      "highlightFraction": 0.0,
+      "classification": "markdown_only_not_docm_bold"
+    },
+    {
+      "order": 85,
+      "text": "N",
+      "docmStart": 3215,
+      "docmEnd": 3216,
+      "dominantFont": "Typeka Mix",
+      "boldFraction": 0.0,
+      "mixFraction": 1.0,
+      "dominantHighlight": "none",
+      "highlightFraction": 0.0,
+      "classification": "markdown_only_not_docm_bold"
+    },
+    {
+      "order": 86,
+      "text": "v",
+      "docmStart": 3217,
+      "docmEnd": 3218,
+      "dominantFont": "Typeka Mix",
+      "boldFraction": 0.0,
+      "mixFraction": 1.0,
+      "dominantHighlight": "none",
+      "highlightFraction": 0.0,
+      "classification": "markdown_only_not_docm_bold"
+    },
+    {
+      "order": 87,
+      "text": "z",
+      "docmStart": 3223,
+      "docmEnd": 3224,
+      "dominantFont": "Typeka Mix",
+      "boldFraction": 0.0,
+      "mixFraction": 1.0,
+      "dominantHighlight": "none",
+      "highlightFraction": 0.0,
+      "classification": "markdown_only_not_docm_bold"
+    },
+    {
+      "order": 88,
+      "text": "I d",
+      "docmStart": 3337,
+      "docmEnd": 3340,
+      "dominantFont": "Typeka Mix",
+      "boldFraction": 0.0,
+      "mixFraction": 1.0,
+      "dominantHighlight": "none",
+      "highlightFraction": 0.0,
+      "classification": "markdown_only_not_docm_bold"
+    },
+    {
+      "order": 89,
+      "text": "e",
+      "docmStart": 3346,
+      "docmEnd": 3347,
+      "dominantFont": "Typeka Mix",
+      "boldFraction": 0.0,
+      "mixFraction": 1.0,
+      "dominantHighlight": "none",
+      "highlightFraction": 0.0,
+      "classification": "markdown_only_not_docm_bold"
+    },
+    {
+      "order": 90,
+      "text": "ll",
+      "docmStart": 3348,
+      "docmEnd": 3350,
+      "dominantFont": "Typeka Mix",
+      "boldFraction": 0.0,
+      "mixFraction": 1.0,
+      "dominantHighlight": "none",
+      "highlightFraction": 0.0,
+      "classification": "markdown_only_not_docm_bold"
+    },
+    {
+      "order": 91,
+      "text": "u",
+      "docmStart": 3354,
+      "docmEnd": 3355,
+      "dominantFont": "Typeka Mix",
+      "boldFraction": 0.0,
+      "mixFraction": 1.0,
+      "dominantHighlight": "none",
+      "highlightFraction": 0.0,
+      "classification": "markdown_only_not_docm_bold"
+    },
+    {
+      "order": 92,
+      "text": "h",
+      "docmStart": 3359,
+      "docmEnd": 3360,
+      "dominantFont": "Typeka Mix",
+      "boldFraction": 0.0,
+      "mixFraction": 1.0,
+      "dominantHighlight": "none",
+      "highlightFraction": 0.0,
+      "classification": "markdown_only_not_docm_bold"
+    },
+    {
+      "order": 93,
+      "text": "u",
+      "docmStart": 3364,
+      "docmEnd": 3365,
+      "dominantFont": "Typeka Mix",
+      "boldFraction": 0.0,
+      "mixFraction": 1.0,
+      "dominantHighlight": "none",
+      "highlightFraction": 0.0,
+      "classification": "markdown_only_not_docm_bold"
+    },
+    {
+      "order": 94,
+      "text": "shitcoiner at heart.",
+      "docmStart": 3390,
+      "docmEnd": 3409,
+      "dominantFont": "Typeka",
+      "boldFraction": 1.0,
+      "mixFraction": 0.0,
+      "dominantHighlight": "yellow",
+      "highlightFraction": 1.0,
+      "classification": "visual_highlight_or_docm_highlight"
+    }
+  ],
+  "corridorDocmOnlyActiveTargets": [
+    {
+      "id": "one_billion",
+      "phrase": "$1 billion",
+      "role": "grey highlight / money phrase",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "black": 10
+      },
+      "markdownBoldFraction": 0.0
+    },
+    {
+      "id": "volcano_bonds",
+      "phrase": "Volcano Bonds",
+      "role": "G5 target",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "black": 13
+      },
+      "markdownBoldFraction": 0.0
+    }
+  ],
+  "streams": {
+    "corridorMarkdownOnlyStream": "lv d i e N v z I d e ll u h u",
+    "corridorHighlightedAlignedStream": "“buying the dip.” shitcoiner at heart.",
+    "corridorDocmOnlyActiveTargetStream": "$1 billion Volcano Bonds"
+  },
+  "instructionHits": {
+    "corridorMarkdownOnlyStream": [],
+    "corridorHighlightedAlignedStream": [],
+    "corridorDocmOnlyActiveTargetStream": []
+  },
+  "unalignedMarkdownSpans": [
+    {
+      "order": 155,
+      "text": "Bitcoin fills the gap with love; our most natural tendency if given a chance."
+    }
+  ],
+  "sheet": "analysis_outputs/docm_format_sources/markdown_docm_mismatch_instruction_surface/markdown_docm_mismatch_instruction_surface_sheet.jpg",
+  "decision": "markdown_docm_mismatch_no_r3_instruction",
+  "nextMove": "Keep Markdown bold as an annotation/transcript layer and DOCM/high-res as format authority. Do not use mismatch streams unless a new source clue explicitly names Markdown-vs-font mismatch as the unit."
+}

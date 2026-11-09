@@ -1,0 +1,603 @@
+{
+  "created": "2026-05-24T04:20:38",
+  "decision": "current_scan_overdose_slot_shape_phase_control_no_instruction_source",
+  "sheet": "analysis_outputs/source_audit/current_scan_overdose_slot_shape_phase_control/current_scan_overdose_slot_shape_phase_control_sheet.jpg",
+  "summary": {
+    "lineGroupCount": 13,
+    "scenarioCount": 3,
+    "activePhaseCount": 1,
+    "controlPhaseCount": 2,
+    "targetRowCount": 12,
+    "totalWordHitCount": 30,
+    "strictInstructionScenarioCount": 0,
+    "strictInstructionTokenHitCount": 0,
+    "contextScenarioCount": 2,
+    "contextTokenHitCount": 3,
+    "activePhaseStrictTokenHitCount": 0,
+    "activePhaseContextTokenHitCount": 0,
+    "controlPhaseStrictTokenHitCount": 0,
+    "controlPhaseContextTokenHitCount": 3,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0
+  },
+  "fingerprint": "lines=13|scenarios=3|active=1|controls=2|targets=12|words=30|strictRows=0|strict=0|contextRows=2|context=3|activeStrict=0|activeContext=0|controlStrict=0|controlContext=3|sourceR3=0|triggers=0/9|selectors=0",
+  "activeRows": [
+    {
+      "id": "buying_dip",
+      "shortId": "O4",
+      "label": "buying the dip",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "sentenceRow": 44,
+      "visualState": "Y",
+      "color": "orange",
+      "docmHighlightSummary": "yellow:14",
+      "canonicalPresent": true,
+      "markdownPresent": true,
+      "annotatedPresent": true,
+      "formatAuthorityPass": true,
+      "visualExactMatch": true,
+      "cropEvidenceCount": 0,
+      "activeCorrectionHits": [
+        {
+          "raw": "\"buying the dip\".",
+          "fixed": "\"buying the dip.\""
+        }
+      ],
+      "authorityNote": "correction touched active phrase",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "docmBoldFraction": 1.0,
+      "centerX": 1567.5,
+      "centerSlotIndex": 5,
+      "centerSlotLetter": "O",
+      "spanSlotIndexes": [
+        4,
+        5,
+        6
+      ],
+      "spanSlotLetters": "DOS",
+      "spanSlotOverlapsPx": [
+        182.5,
+        244.5,
+        40.0
+      ],
+      "center": [
+        1567.5,
+        2201.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "slotIndexFromCenter": 5,
+      "slotLetterFromCenter": "O",
+      "declaredSlotLetter": "O"
+    },
+    {
+      "id": "one_billion",
+      "shortId": "B4",
+      "label": "$1 billion",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "sentenceRow": 45,
+      "visualState": "K",
+      "color": "black",
+      "docmHighlightSummary": "black:10",
+      "canonicalPresent": true,
+      "markdownPresent": true,
+      "annotatedPresent": true,
+      "formatAuthorityPass": true,
+      "visualExactMatch": true,
+      "cropEvidenceCount": 1,
+      "activeCorrectionHits": [],
+      "authorityNote": "witnesses agree",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "docmBoldFraction": 1.0,
+      "centerX": 559.5,
+      "centerSlotIndex": 1,
+      "centerSlotLetter": "V",
+      "spanSlotIndexes": [
+        0,
+        1
+      ],
+      "spanSlotLetters": "OV",
+      "spanSlotOverlapsPx": [
+        110.5,
+        152.5
+      ],
+      "center": [
+        559.5,
+        2421.5
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "slotIndexFromCenter": 1,
+      "slotLetterFromCenter": "V",
+      "declaredSlotLetter": "V"
+    },
+    {
+      "id": "volcano_bonds",
+      "shortId": "G5",
+      "label": "Volcano Bonds",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "sentenceRow": 45,
+      "visualState": "K",
+      "color": "black",
+      "docmHighlightSummary": "black:13",
+      "canonicalPresent": true,
+      "markdownPresent": true,
+      "annotatedPresent": true,
+      "formatAuthorityPass": true,
+      "visualExactMatch": true,
+      "cropEvidenceCount": 3,
+      "activeCorrectionHits": [
+        {
+          "raw": "collateralized to pay off the IMF",
+          "fixed": "collateralized \u201cVolcano Bonds\u201d to pay off the IMF"
+        }
+      ],
+      "authorityNote": "raw plain omitted G5",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "docmBoldFraction": 1.0,
+      "centerX": 995.5,
+      "centerSlotIndex": 2,
+      "centerSlotLetter": "E",
+      "spanSlotIndexes": [
+        2,
+        3
+      ],
+      "spanSlotLetters": "ER",
+      "spanSlotOverlapsPx": [
+        232.5,
+        168.5
+      ],
+      "center": [
+        995.5,
+        2568.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "slotIndexFromCenter": 2,
+      "slotLetterFromCenter": "E",
+      "declaredSlotLetter": "E"
+    },
+    {
+      "id": "shitcoiner_heart",
+      "shortId": "O5",
+      "label": "shitcoiner at heart",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "sentenceRow": 48,
+      "visualState": "Y",
+      "color": "orange",
+      "docmHighlightSummary": "yellow:19",
+      "canonicalPresent": true,
+      "markdownPresent": true,
+      "annotatedPresent": true,
+      "formatAuthorityPass": true,
+      "visualExactMatch": true,
+      "cropEvidenceCount": 2,
+      "activeCorrectionHits": [],
+      "authorityNote": "witnesses agree",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "docmBoldFraction": 1.0,
+      "centerX": 1350.5,
+      "centerSlotIndex": 4,
+      "centerSlotLetter": "D",
+      "spanSlotIndexes": [
+        3,
+        4,
+        5
+      ],
+      "spanSlotLetters": "RDO",
+      "spanSlotOverlapsPx": [
+        232.0,
+        244.5,
+        144.5
+      ],
+      "center": [
+        1350.5,
+        2957.0
+      ],
+      "width": 621.0,
+      "height": 50.0,
+      "slotIndexFromCenter": 4,
+      "slotLetterFromCenter": "D",
+      "declaredSlotLetter": "D"
+    }
+  ],
+  "lineGroups": [
+    {
+      "lineGroupIndex": 0,
+      "centerY": 2046.8799999999999,
+      "wordCount": 8,
+      "text": "Have you seen the president of El Salvador"
+    },
+    {
+      "lineGroupIndex": 1,
+      "centerY": 2122.835,
+      "wordCount": 8,
+      "text": "trolling the International Monetary Fund (IMF) on Twitter?"
+    },
+    {
+      "lineGroupIndex": 2,
+      "centerY": 2191.045,
+      "wordCount": 7,
+      "text": "He's taunting them, telling them he's ByiiREeraipy\""
+    },
+    {
+      "lineGroupIndex": 3,
+      "centerY": 2265.9300000000003,
+      "wordCount": 8,
+      "text": "I tweeted President Nayib Bukele when he announced"
+    },
+    {
+      "lineGroupIndex": 4,
+      "centerY": 2340.815,
+      "wordCount": 10,
+      "text": "he was going to tap his nation's volcanoes to mine"
+    },
+    {
+      "lineGroupIndex": 5,
+      "centerY": 2413.475000000001,
+      "wordCount": 7,
+      "text": "eis in bitcoin that he should sell"
+    },
+    {
+      "lineGroupIndex": 6,
+      "centerY": 2487.205,
+      "wordCount": 6,
+      "text": "billions worth of future bitcoin earnings"
+    },
+    {
+      "lineGroupIndex": 7,
+      "centerY": 2557.645,
+      "wordCount": 6,
+      "text": "collateralized to pay off the IMF"
+    },
+    {
+      "lineGroupIndex": 8,
+      "centerY": 2631.37,
+      "wordCount": 10,
+      "text": "loan and get rid of those leeches. I tagged Mike"
+    },
+    {
+      "lineGroupIndex": 9,
+      "centerY": 2706.255,
+      "wordCount": 8,
+      "text": "Novogratz in the tweet, figuring he could sella"
+    },
+    {
+      "lineGroupIndex": 10,
+      "centerY": 2778.915,
+      "wordCount": 11,
+      "text": "bunch to his Wall Street crony pals, but so far he"
+    },
+    {
+      "lineGroupIndex": 11,
+      "centerY": 2849.355,
+      "wordCount": 10,
+      "text": "hasn't moved on it. I don't really trust that guy"
+    },
+    {
+      "lineGroupIndex": 12,
+      "centerY": 2939.3999999999996,
+      "wordCount": 5,
+      "text": "Maybe because he's a siukbeodmensertslveaarty"
+    }
+  ],
+  "scenarioRows": [
+    {
+      "startLineGroupIndex": 0,
+      "lineGroupIndexes": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "lineGapPattern": "3/2/5",
+      "slotStream": "OVED",
+      "wordHitCount": 12,
+      "strictInstructionTokens": [],
+      "contextTokens": [
+        "bitcoin"
+      ],
+      "strictInstructionHitCount": 0,
+      "contextHitCount": 1,
+      "activeOverlapTargetCount": 0,
+      "isActivePhase": false,
+      "targetRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "lineGroupIndex": 0,
+          "lineCenterY": 2046.88,
+          "shiftedBox": [
+            1334.0,
+            2032.835,
+            1801.0,
+            2080.835
+          ],
+          "slotLetter": "O",
+          "wordHitCount": 1,
+          "wordSnippet": "Salvador",
+          "strictInstructionTokens": [],
+          "contextTokens": [],
+          "overlapsOriginalTarget": false
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "lineGroupIndex": 3,
+          "lineCenterY": 2265.93,
+          "shiftedBox": [
+            428.0,
+            2250.455,
+            691.0,
+            2297.455
+          ],
+          "slotLetter": "V",
+          "wordHitCount": 2,
+          "wordSnippet": "I tweeted",
+          "strictInstructionTokens": [],
+          "contextTokens": [],
+          "overlapsOriginalTarget": false
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "lineGroupIndex": 5,
+          "lineCenterY": 2413.475,
+          "shiftedBox": [
+            795.0,
+            2399.83,
+            1196.0,
+            2447.83
+          ],
+          "slotLetter": "E",
+          "wordHitCount": 3,
+          "wordSnippet": "bitcoin that he",
+          "strictInstructionTokens": [],
+          "contextTokens": [
+            "bitcoin"
+          ],
+          "overlapsOriginalTarget": false
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "lineGroupIndex": 10,
+          "lineCenterY": 2778.915,
+          "shiftedBox": [
+            1040.0,
+            2771.515,
+            1661.0,
+            2821.515
+          ],
+          "slotLetter": "D",
+          "wordHitCount": 6,
+          "wordSnippet": "crony pals, but so far he",
+          "strictInstructionTokens": [],
+          "contextTokens": [],
+          "overlapsOriginalTarget": false
+        }
+      ]
+    },
+    {
+      "startLineGroupIndex": 1,
+      "lineGroupIndexes": [
+        1,
+        4,
+        6,
+        11
+      ],
+      "lineGapPattern": "3/2/5",
+      "slotStream": "OVED",
+      "wordHitCount": 15,
+      "strictInstructionTokens": [],
+      "contextTokens": [
+        "bitcoin",
+        "imf"
+      ],
+      "strictInstructionHitCount": 0,
+      "contextHitCount": 2,
+      "activeOverlapTargetCount": 0,
+      "isActivePhase": false,
+      "targetRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "lineGroupIndex": 1,
+          "lineCenterY": 2122.835,
+          "shiftedBox": [
+            1334.0,
+            2108.79,
+            1801.0,
+            2156.79
+          ],
+          "slotLetter": "O",
+          "wordHitCount": 4,
+          "wordSnippet": "Fund (IMF) on Twitter?",
+          "strictInstructionTokens": [],
+          "contextTokens": [
+            "imf"
+          ],
+          "overlapsOriginalTarget": false
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "lineGroupIndex": 4,
+          "lineCenterY": 2340.815,
+          "shiftedBox": [
+            428.0,
+            2325.34,
+            691.0,
+            2372.34
+          ],
+          "slotLetter": "V",
+          "wordHitCount": 3,
+          "wordSnippet": "he was going",
+          "strictInstructionTokens": [],
+          "contextTokens": [],
+          "overlapsOriginalTarget": false
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "lineGroupIndex": 6,
+          "lineCenterY": 2487.205,
+          "shiftedBox": [
+            795.0,
+            2473.56,
+            1196.0,
+            2521.56
+          ],
+          "slotLetter": "E",
+          "wordHitCount": 3,
+          "wordSnippet": "of future bitcoin",
+          "strictInstructionTokens": [],
+          "contextTokens": [
+            "bitcoin"
+          ],
+          "overlapsOriginalTarget": false
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "lineGroupIndex": 11,
+          "lineCenterY": 2849.355,
+          "shiftedBox": [
+            1040.0,
+            2841.955,
+            1661.0,
+            2891.955
+          ],
+          "slotLetter": "D",
+          "wordHitCount": 5,
+          "wordSnippet": "don't really trust that guy",
+          "strictInstructionTokens": [],
+          "contextTokens": [],
+          "overlapsOriginalTarget": false
+        }
+      ]
+    },
+    {
+      "startLineGroupIndex": 2,
+      "lineGroupIndexes": [
+        2,
+        5,
+        7,
+        12
+      ],
+      "lineGapPattern": "3/2/5",
+      "slotStream": "OVED",
+      "wordHitCount": 3,
+      "strictInstructionTokens": [],
+      "contextTokens": [],
+      "strictInstructionHitCount": 0,
+      "contextHitCount": 0,
+      "activeOverlapTargetCount": 4,
+      "isActivePhase": true,
+      "targetRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "lineGroupIndex": 2,
+          "lineCenterY": 2191.045,
+          "shiftedBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "slotLetter": "O",
+          "wordHitCount": 1,
+          "wordSnippet": "ByiiREeraipy\"",
+          "strictInstructionTokens": [],
+          "contextTokens": [],
+          "overlapsOriginalTarget": true
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "lineGroupIndex": 5,
+          "lineCenterY": 2413.475,
+          "shiftedBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "slotLetter": "V",
+          "wordHitCount": 1,
+          "wordSnippet": "eis",
+          "strictInstructionTokens": [],
+          "contextTokens": [],
+          "overlapsOriginalTarget": true
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "lineGroupIndex": 7,
+          "lineCenterY": 2557.645,
+          "shiftedBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "slotLetter": "E",
+          "wordHitCount": 0,
+          "wordSnippet": "(no OCR words)",
+          "strictInstructionTokens": [],
+          "contextTokens": [],
+          "overlapsOriginalTarget": true
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "lineGroupIndex": 12,
+          "lineCenterY": 2939.4,
+          "shiftedBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "slotLetter": "D",
+          "wordHitCount": 1,
+          "wordSnippet": "siukbeodmensertslveaarty",
+          "strictInstructionTokens": [],
+          "contextTokens": [],
+          "overlapsOriginalTarget": true
+        }
+      ]
+    }
+  ]
+}

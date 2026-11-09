@@ -1,0 +1,300 @@
+{
+  "createdAt": "2026-05-24T14:06:24",
+  "scope": "current PDF invisible OCR OVERDOSE index offset guardrail; no extraction/key derivation",
+  "inputs": {
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "summary": {
+    "pdfCount": 3,
+    "overdosePdfCount": 2,
+    "offsetRowsChecked": 46,
+    "targetOffsetHitCount": 2,
+    "strictOffsetHitCount": 0,
+    "allFourDeltaKnownUnitPdfCount": 0,
+    "hiddenOverdoseIndexCandidateCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "fingerprint": "pdfs=3|overdosePdfs=2|offsetRows=46|targetHits=2|strictHits=0|allFourKnownDelta=0|hiddenCandidate=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "records": [
+    {
+      "pdf": "magazine.pdf",
+      "wordCount": 245,
+      "overdoseIndexes": [],
+      "componentFirstOrder": [],
+      "firstComponentByTarget": {
+        "O4": null,
+        "B4": null,
+        "G5": null,
+        "O5": null
+      },
+      "componentDeltaRows": [],
+      "offsetRowsChecked": 0,
+      "targetOffsetHitCount": 0,
+      "strictOffsetHitCount": 0,
+      "offsetHitRows": [],
+      "allFourComponentsPresent": false,
+      "allFourDeltaKnownUnit": false,
+      "hiddenOverdoseIndexCandidate": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "wordCount": 265,
+      "overdoseIndexes": [
+        0
+      ],
+      "componentFirstOrder": [
+        "O5",
+        "O4",
+        "G5",
+        "B4"
+      ],
+      "firstComponentByTarget": {
+        "O4": {
+          "target": "O4",
+          "index": 81,
+          "text": "buying",
+          "context": "of watching Peter Schiff miss buying bitcoin since I started honéy-badgering"
+        },
+        "B4": {
+          "target": "B4",
+          "index": 209,
+          "text": "billions",
+          "context": "— that he should sell billions worth of future bitcoin earnings"
+        },
+        "G5": {
+          "target": "G5",
+          "index": 198,
+          "text": "volcanoes",
+          "context": "going to tap his nation's volcanoes to mine eis in bitcoin"
+        },
+        "O5": {
+          "target": "O5",
+          "index": 9,
+          "text": "heart",
+          "context": "Get some bitcoin. Open your heart to Biteoiny It's the freaking"
+        }
+      },
+      "componentDeltaRows": [
+        {
+          "target": "O4",
+          "firstComponentIndex": 81,
+          "firstComponentText": "buying",
+          "nearestOverdoseIndex": 0,
+          "delta": 81,
+          "absDelta": 81,
+          "matchesOwnKnownUnit": false,
+          "ownOffsetValues": [
+            4,
+            5,
+            6,
+            22
+          ]
+        },
+        {
+          "target": "B4",
+          "firstComponentIndex": 209,
+          "firstComponentText": "billions",
+          "nearestOverdoseIndex": 0,
+          "delta": 209,
+          "absDelta": 209,
+          "matchesOwnKnownUnit": false,
+          "ownOffsetValues": [
+            0,
+            1,
+            7,
+            25
+          ]
+        },
+        {
+          "target": "G5",
+          "firstComponentIndex": 198,
+          "firstComponentText": "volcanoes",
+          "nearestOverdoseIndex": 0,
+          "delta": 198,
+          "absDelta": 198,
+          "matchesOwnKnownUnit": false,
+          "ownOffsetValues": [
+            2,
+            3,
+            9,
+            27
+          ]
+        },
+        {
+          "target": "O5",
+          "firstComponentIndex": 9,
+          "firstComponentText": "heart",
+          "nearestOverdoseIndex": 0,
+          "delta": 9,
+          "absDelta": 9,
+          "matchesOwnKnownUnit": false,
+          "ownOffsetValues": [
+            3,
+            4,
+            5,
+            14,
+            32
+          ]
+        }
+      ],
+      "offsetRowsChecked": 23,
+      "targetOffsetHitCount": 1,
+      "strictOffsetHitCount": 0,
+      "offsetHitRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "overdoseIndex": 0,
+          "sourceTarget": "G5",
+          "offsetName": "corridorIndex",
+          "offsetValue": 9,
+          "direction": "+",
+          "landedIndex": 9,
+          "landedText": "heart",
+          "landedToken": "heart",
+          "landedTarget": "O5",
+          "strictInstructionHit": false,
+          "context": "Get some bitcoin. Open your heart to Biteoiny It's the freaking",
+          "hit": true
+        }
+      ],
+      "allFourComponentsPresent": true,
+      "allFourDeltaKnownUnit": false,
+      "hiddenOverdoseIndexCandidate": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "wordCount": 265,
+      "overdoseIndexes": [
+        0
+      ],
+      "componentFirstOrder": [
+        "O5",
+        "O4",
+        "G5",
+        "B4"
+      ],
+      "firstComponentByTarget": {
+        "O4": {
+          "target": "O4",
+          "index": 81,
+          "text": "buying",
+          "context": "of watching Peter Schiff miss buying bitcoin since I started honéy-badgering"
+        },
+        "B4": {
+          "target": "B4",
+          "index": 209,
+          "text": "billions",
+          "context": "— that he should sell billions worth of future bitcoin earnings"
+        },
+        "G5": {
+          "target": "G5",
+          "index": 198,
+          "text": "volcanoes",
+          "context": "going to tap his nation's volcanoes to mine eis in bitcoin"
+        },
+        "O5": {
+          "target": "O5",
+          "index": 9,
+          "text": "heart",
+          "context": "Get some bitcoin. Open your heart to Biteoiny It's the freaking"
+        }
+      },
+      "componentDeltaRows": [
+        {
+          "target": "O4",
+          "firstComponentIndex": 81,
+          "firstComponentText": "buying",
+          "nearestOverdoseIndex": 0,
+          "delta": 81,
+          "absDelta": 81,
+          "matchesOwnKnownUnit": false,
+          "ownOffsetValues": [
+            4,
+            5,
+            6,
+            22
+          ]
+        },
+        {
+          "target": "B4",
+          "firstComponentIndex": 209,
+          "firstComponentText": "billions",
+          "nearestOverdoseIndex": 0,
+          "delta": 209,
+          "absDelta": 209,
+          "matchesOwnKnownUnit": false,
+          "ownOffsetValues": [
+            0,
+            1,
+            7,
+            25
+          ]
+        },
+        {
+          "target": "G5",
+          "firstComponentIndex": 198,
+          "firstComponentText": "volcanoes",
+          "nearestOverdoseIndex": 0,
+          "delta": 198,
+          "absDelta": 198,
+          "matchesOwnKnownUnit": false,
+          "ownOffsetValues": [
+            2,
+            3,
+            9,
+            27
+          ]
+        },
+        {
+          "target": "O5",
+          "firstComponentIndex": 9,
+          "firstComponentText": "heart",
+          "nearestOverdoseIndex": 0,
+          "delta": 9,
+          "absDelta": 9,
+          "matchesOwnKnownUnit": false,
+          "ownOffsetValues": [
+            3,
+            4,
+            5,
+            14,
+            32
+          ]
+        }
+      ],
+      "offsetRowsChecked": 23,
+      "targetOffsetHitCount": 1,
+      "strictOffsetHitCount": 0,
+      "offsetHitRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "overdoseIndex": 0,
+          "sourceTarget": "G5",
+          "offsetName": "corridorIndex",
+          "offsetValue": 9,
+          "direction": "+",
+          "landedIndex": 9,
+          "landedText": "heart",
+          "landedToken": "heart",
+          "landedTarget": "O5",
+          "strictInstructionHit": false,
+          "context": "Get some bitcoin. Open your heart to Biteoiny It's the freaking",
+          "hit": true
+        }
+      ],
+      "allFourComponentsPresent": true,
+      "allFourDeltaKnownUnit": false,
+      "hiddenOverdoseIndexCandidate": false
+    }
+  ],
+  "decision": {
+    "currentPdfOcrOverdoseIndexOffsetGate": "no_selector",
+    "reason": "OVERDOSE OCR document index plus/minus existing active line/corridor/slot units does not land on active component words or strict unit/order instructions in a selective all-four way.",
+    "nextMove": "Keep hidden PDF OCR OVERDOSE index offsets closed. Reopen only with source/original-layout material or raw clue wording that explicitly names document-order indexes or a unit/order rule."
+  },
+  "sheet": "analysis_outputs/source_audit/current_pdf_ocr_overdose_index_offset_gate/current_pdf_ocr_overdose_index_offset_gate_sheet.jpg"
+}

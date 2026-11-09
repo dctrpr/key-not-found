@@ -1,0 +1,114 @@
+{
+  "createdAt": "2026-05-20T07:31:09",
+  "scope": "opener five-capsule order through M3/M4 endpoint units; no key derivation",
+  "rows": [
+    {
+      "capsuleOrder": 1,
+      "p79OrangeBoxIndex": 6,
+      "mappedCenter": [
+        2387.0,
+        2702.5
+      ],
+      "nearestEndpointMark": "M3",
+      "nearestEndpointDistancePx": 56.94,
+      "forcedUnit": "trust that guy",
+      "forcedRole": "M3 axis / lower row support"
+    },
+    {
+      "capsuleOrder": 2,
+      "p79OrangeBoxIndex": 7,
+      "mappedCenter": [
+        2130.0,
+        2740.5
+      ],
+      "nearestEndpointMark": "M3",
+      "nearestEndpointDistancePx": 228.27,
+      "forcedUnit": "trust that guy",
+      "forcedRole": "M3 axis / lower row support"
+    },
+    {
+      "capsuleOrder": 3,
+      "p79OrangeBoxIndex": 8,
+      "mappedCenter": [
+        1936.0,
+        2891.0
+      ],
+      "nearestEndpointMark": "M4",
+      "nearestEndpointDistancePx": 204.96,
+      "forcedUnit": "shitcoiner at heart",
+      "forcedRole": "M3/M4 bracket endpoint / O5"
+    },
+    {
+      "capsuleOrder": 4,
+      "p79OrangeBoxIndex": 9,
+      "mappedCenter": [
+        2102.5,
+        3072.5
+      ],
+      "nearestEndpointMark": "M4",
+      "nearestEndpointDistancePx": 130.54,
+      "forcedUnit": "shitcoiner at heart",
+      "forcedRole": "M3/M4 bracket endpoint / O5"
+    },
+    {
+      "capsuleOrder": 5,
+      "p79OrangeBoxIndex": 10,
+      "mappedCenter": [
+        2354.0,
+        3272.5
+      ],
+      "nearestEndpointMark": "M4",
+      "nearestEndpointDistancePx": 420.93,
+      "forcedUnit": "shitcoiner at heart",
+      "forcedRole": "M3/M4 bracket endpoint / O5"
+    }
+  ],
+  "thresholds": {
+    "75": {
+      "sequence": "M3----",
+      "assignedCount": 1
+    },
+    "100": {
+      "sequence": "M3----",
+      "assignedCount": 1
+    },
+    "150": {
+      "sequence": "M3--M4-",
+      "assignedCount": 2
+    },
+    "250": {
+      "sequence": "M3M3M4M4-",
+      "assignedCount": 4
+    },
+    "500": {
+      "sequence": "M3M3M4M4M4",
+      "assignedCount": 5
+    }
+  },
+  "streams": {
+    "forcedMarkSequence": "M3M3M4M4M4",
+    "forcedUnitLabels": "trust that guy | trust that guy | shitcoiner at heart | shitcoiner at heart | shitcoiner at heart",
+    "forcedInitials": "ttsss",
+    "forcedLasts": "yyttt",
+    "m3As0Binary": "00111",
+    "m3As1Binary": "11000",
+    "bracketStream": "guy [O5: shitcoiner at heart]"
+  },
+  "streamInstructionHits": {
+    "forcedMarkSequence": [],
+    "forcedUnitLabels": [],
+    "forcedInitials": [],
+    "forcedLasts": [],
+    "m3As0Binary": [],
+    "m3As1Binary": [],
+    "bracketStream": []
+  },
+  "assessment": [
+    "The five opener capsules project into the M3/M4 visual endpoint region, but the geometry is only tight for the first capsule.",
+    "Forced nearest-mark reading gives M3 M3 M4 M4 M4, which maps to repeated `trust that guy` and O5 `shitcoiner at heart` units.",
+    "Thresholded readings are unstable: tight thresholds leave most capsules unassigned, while loose thresholds force a pattern without a rule.",
+    "The M3/M4 endpoint system confirms O5 again, but it still does not specify a word/letter/line extraction unit.",
+    "Close opener-capsule -> M3/M4 endpoint mapping as a direct selector under the current scan."
+  ],
+  "nextMove": "Keep opener capsules as provenance/order evidence only. Reopen only if a new source transform places all five capsules tightly on text units or a clue names M3/M4 as a binary/index selector."
+}

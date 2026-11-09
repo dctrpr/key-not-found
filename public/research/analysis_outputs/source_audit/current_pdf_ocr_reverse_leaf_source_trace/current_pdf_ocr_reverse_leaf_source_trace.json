@@ -1,0 +1,567 @@
+{
+  "created": "2026-05-24T04:11:52",
+  "decision": "current_pdf_ocr_reverse_leaf_source_trace_no_instruction_source",
+  "sheet": "analysis_outputs/source_audit/current_pdf_ocr_reverse_leaf_source_trace/current_pdf_ocr_reverse_leaf_source_trace_sheet.jpg",
+  "summary": {
+    "pdfCount": 3,
+    "fitAvailableCount": 2,
+    "totalTokenPairCount": 232,
+    "totalInlierCount": 232,
+    "targetRowCount": 12,
+    "pdfWordTargetRowCount": 6,
+    "pdfExactBoxWordTargetRowCount": 6,
+    "strictInstructionRowCount": 0,
+    "contextRowCount": 2,
+    "allFourExactBoxPdfTracePairCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0
+  },
+  "fingerprint": "pdfs=3|fits=2|pairs=232|inliers=232|targets=12|pdfWordRows=6|exactRows=6|strictRows=0|contextRows=2|allFourExact=0|sourceR3=0|triggers=0/9|selectors=0",
+  "pdfRows": [
+    {
+      "pdf": "magazine.pdf",
+      "sha256": "a0714dcbe503ecdff846f0f77334e2d1d259937d7fe5130258212f24c137716e",
+      "rotation": 180,
+      "imageRect": [
+        0.0,
+        0.0,
+        610.56,
+        783.36
+      ],
+      "imageSize": [
+        2544,
+        3264
+      ],
+      "wordCount": 273,
+      "fit": {
+        "fitAvailable": false,
+        "reason": "too_few_token_pairs",
+        "pairCount": 0,
+        "inlierCount": 0
+      },
+      "fitAvailable": false,
+      "targetRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "sourceTraceBox": [
+            743,
+            2177,
+            1210,
+            2225
+          ],
+          "sourceContextBox": [
+            707,
+            2141,
+            1246,
+            2261
+          ],
+          "pdfWordCount": 0,
+          "pdfSnippet": "(fit unavailable)",
+          "articleSnippet": "Buterin came up with",
+          "strictInstructionTokens": [],
+          "contextTokens": []
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "sourceTraceBox": [
+            1853,
+            2398,
+            2116,
+            2445
+          ],
+          "sourceContextBox": [
+            1817,
+            2362,
+            2152,
+            2481
+          ],
+          "pdfWordCount": 0,
+          "pdfSnippet": "(fit unavailable)",
+          "articleSnippet": "(no PDF OCR words)",
+          "strictInstructionTokens": [],
+          "contextTokens": []
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "sourceTraceBox": [
+            1348,
+            2544,
+            1749,
+            2592
+          ],
+          "sourceContextBox": [
+            1312,
+            2508,
+            1785,
+            2628
+          ],
+          "pdfWordCount": 0,
+          "pdfSnippet": "(fit unavailable)",
+          "articleSnippet": "experience.",
+          "strictInstructionTokens": [],
+          "contextTokens": []
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "sourceTraceBox": [
+            883,
+            2932,
+            1504,
+            2982
+          ],
+          "sourceContextBox": [
+            847,
+            2896,
+            1540,
+            3018
+          ],
+          "pdfWordCount": 0,
+          "pdfSnippet": "(fit unavailable)",
+          "articleSnippet": "for the gullible and unloved.",
+          "strictInstructionTokens": [],
+          "contextTokens": []
+        }
+      ]
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "sha256": "0078fe23401fab4882303ae038df0de6b439f498acb852d3b226c366caf5ab5c",
+      "rotation": 0,
+      "imageRect": [
+        18.0,
+        0.0,
+        594.0,
+        792.0
+      ],
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "wordCount": 263,
+      "fit": {
+        "fitAvailable": true,
+        "pairCount": 116,
+        "inlierCount": 116,
+        "inlierFraction": 1.0,
+        "medianResidualPx": 0.003,
+        "p90ResidualPx": 0.004,
+        "maxInlierResidualPx": 0.005,
+        "matrix": [
+          [
+            0.95073628,
+            7e-08,
+            105.55982597
+          ],
+          [
+            -2e-08,
+            1.07945198,
+            -1.57104453
+          ]
+        ],
+        "inlierTokens": [
+          "2008",
+          "about",
+          "advance",
+          "after",
+          "aiaourmieurosess",
+          "anything",
+          "arose",
+          "arsonists",
+          "bank",
+          "bare",
+          "better",
+          "bitcoiners",
+          "bitter",
+          "black",
+          "blindly",
+          "bsrmof",
+          "buterin",
+          "came",
+          "cash",
+          "chaos",
+          "coattails",
+          "collective",
+          "coming",
+          "complaining",
+          "consider",
+          "cosmic",
+          "could",
+          "crash",
+          "crisis",
+          "cypherpunks",
+          "digging",
+          "dignity",
+          "dimon",
+          "discount",
+          "dont",
+          "easy",
+          "economy",
+          "epithet",
+          "errorists",
+          "even",
+          "everybodys",
+          "experience",
+          "fact",
+          "fiat",
+          "financial",
+          "from",
+          "give",
+          "gullible",
+          "hands",
+          "hard",
+          "hearing",
+          "heres",
+          "jamie",
+          "jopeajes",
+          "keep",
+          "language",
+          "like",
+          "listen",
+          "listening",
+          "look",
+          "maximalist",
+          "maximalists",
+          "merbesiad",
+          "methereum",
+          "mrerreigsty",
+          "muck",
+          "name",
+          "nervous",
+          "nice",
+          "nocoiners",
+          "nothing",
+          "only",
+          "opening",
+          "opportunists",
+          "ouszebe",
+          "panic",
+          "paper",
+          "pleasant",
+          "proof",
+          "protocol"
+        ]
+      },
+      "fitAvailable": true,
+      "targetRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "sourceTraceBox": [
+            743,
+            2177,
+            1210,
+            2225
+          ],
+          "sourceContextBox": [
+            707,
+            2141,
+            1246,
+            2261
+          ],
+          "pdfWordCount": 8,
+          "pdfExactBoxWordCount": 4,
+          "pdfSnippet": "by riding Bitcoins Buterin came up with the",
+          "pdfExactBoxSnippet": "Buterin came up with",
+          "articleSnippet": "Buterin came up with",
+          "strictInstructionTokens": [],
+          "contextTokens": [
+            "bitcoins",
+            "buterin"
+          ]
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "sourceTraceBox": [
+            1853,
+            2398,
+            2116,
+            2445
+          ],
+          "sourceContextBox": [
+            1817,
+            2362,
+            2152,
+            2481
+          ],
+          "pdfWordCount": 0,
+          "pdfExactBoxWordCount": 0,
+          "pdfSnippet": "(no PDF OCR words)",
+          "pdfExactBoxSnippet": "(no PDF OCR words)",
+          "articleSnippet": "(no PDF OCR words)",
+          "strictInstructionTokens": [],
+          "contextTokens": []
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "sourceTraceBox": [
+            1348,
+            2544,
+            1749,
+            2592
+          ],
+          "sourceContextBox": [
+            1312,
+            2508,
+            1785,
+            2628
+          ],
+          "pdfWordCount": 1,
+          "pdfExactBoxWordCount": 1,
+          "pdfSnippet": "experience.",
+          "pdfExactBoxSnippet": "experience.",
+          "articleSnippet": "experience.",
+          "strictInstructionTokens": [],
+          "contextTokens": []
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "sourceTraceBox": [
+            883,
+            2932,
+            1504,
+            2982
+          ],
+          "sourceContextBox": [
+            847,
+            2896,
+            1540,
+            3018
+          ],
+          "pdfWordCount": 5,
+          "pdfExactBoxWordCount": 5,
+          "pdfSnippet": "for the gullible and unloved.",
+          "pdfExactBoxSnippet": "for the gullible and unloved.",
+          "articleSnippet": "for the gullible and unloved.",
+          "strictInstructionTokens": [],
+          "contextTokens": []
+        }
+      ]
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "sha256": "0078fe23401fab4882303ae038df0de6b439f498acb852d3b226c366caf5ab5c",
+      "rotation": 0,
+      "imageRect": [
+        18.0,
+        0.0,
+        594.0,
+        792.0
+      ],
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "wordCount": 263,
+      "fit": {
+        "fitAvailable": true,
+        "pairCount": 116,
+        "inlierCount": 116,
+        "inlierFraction": 1.0,
+        "medianResidualPx": 0.003,
+        "p90ResidualPx": 0.004,
+        "maxInlierResidualPx": 0.005,
+        "matrix": [
+          [
+            0.95073628,
+            7e-08,
+            105.55982597
+          ],
+          [
+            -2e-08,
+            1.07945198,
+            -1.57104453
+          ]
+        ],
+        "inlierTokens": [
+          "2008",
+          "about",
+          "advance",
+          "after",
+          "aiaourmieurosess",
+          "anything",
+          "arose",
+          "arsonists",
+          "bank",
+          "bare",
+          "better",
+          "bitcoiners",
+          "bitter",
+          "black",
+          "blindly",
+          "bsrmof",
+          "buterin",
+          "came",
+          "cash",
+          "chaos",
+          "coattails",
+          "collective",
+          "coming",
+          "complaining",
+          "consider",
+          "cosmic",
+          "could",
+          "crash",
+          "crisis",
+          "cypherpunks",
+          "digging",
+          "dignity",
+          "dimon",
+          "discount",
+          "dont",
+          "easy",
+          "economy",
+          "epithet",
+          "errorists",
+          "even",
+          "everybodys",
+          "experience",
+          "fact",
+          "fiat",
+          "financial",
+          "from",
+          "give",
+          "gullible",
+          "hands",
+          "hard",
+          "hearing",
+          "heres",
+          "jamie",
+          "jopeajes",
+          "keep",
+          "language",
+          "like",
+          "listen",
+          "listening",
+          "look",
+          "maximalist",
+          "maximalists",
+          "merbesiad",
+          "methereum",
+          "mrerreigsty",
+          "muck",
+          "name",
+          "nervous",
+          "nice",
+          "nocoiners",
+          "nothing",
+          "only",
+          "opening",
+          "opportunists",
+          "ouszebe",
+          "panic",
+          "paper",
+          "pleasant",
+          "proof",
+          "protocol"
+        ]
+      },
+      "fitAvailable": true,
+      "targetRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "sourceTraceBox": [
+            743,
+            2177,
+            1210,
+            2225
+          ],
+          "sourceContextBox": [
+            707,
+            2141,
+            1246,
+            2261
+          ],
+          "pdfWordCount": 8,
+          "pdfExactBoxWordCount": 4,
+          "pdfSnippet": "by riding Bitcoins Buterin came up with the",
+          "pdfExactBoxSnippet": "Buterin came up with",
+          "articleSnippet": "Buterin came up with",
+          "strictInstructionTokens": [],
+          "contextTokens": [
+            "bitcoins",
+            "buterin"
+          ]
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "sourceTraceBox": [
+            1853,
+            2398,
+            2116,
+            2445
+          ],
+          "sourceContextBox": [
+            1817,
+            2362,
+            2152,
+            2481
+          ],
+          "pdfWordCount": 0,
+          "pdfExactBoxWordCount": 0,
+          "pdfSnippet": "(no PDF OCR words)",
+          "pdfExactBoxSnippet": "(no PDF OCR words)",
+          "articleSnippet": "(no PDF OCR words)",
+          "strictInstructionTokens": [],
+          "contextTokens": []
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "sourceTraceBox": [
+            1348,
+            2544,
+            1749,
+            2592
+          ],
+          "sourceContextBox": [
+            1312,
+            2508,
+            1785,
+            2628
+          ],
+          "pdfWordCount": 1,
+          "pdfExactBoxWordCount": 1,
+          "pdfSnippet": "experience.",
+          "pdfExactBoxSnippet": "experience.",
+          "articleSnippet": "experience.",
+          "strictInstructionTokens": [],
+          "contextTokens": []
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "sourceTraceBox": [
+            883,
+            2932,
+            1504,
+            2982
+          ],
+          "sourceContextBox": [
+            847,
+            2896,
+            1540,
+            3018
+          ],
+          "pdfWordCount": 5,
+          "pdfExactBoxWordCount": 5,
+          "pdfSnippet": "for the gullible and unloved.",
+          "pdfExactBoxSnippet": "for the gullible and unloved.",
+          "articleSnippet": "for the gullible and unloved.",
+          "strictInstructionTokens": [],
+          "contextTokens": []
+        }
+      ]
+    }
+  ]
+}

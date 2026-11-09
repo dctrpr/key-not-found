@@ -1,0 +1,466 @@
+{
+  "createdAt": "2026-05-24T15:38:41",
+  "scope": {
+    "sourceArticlePage": 76,
+    "articlePages": [
+      74,
+      76,
+      78
+    ],
+    "method": "Derive page-76 active body-row offsets from repeated OVERDOSE body start and transfer those offsets to repeated OVERDOSE body pages.",
+    "excluded": [
+      "OCR-to-key extraction",
+      "private-key candidate generation",
+      "hash-to-key checks",
+      "seed/WIF/address checks",
+      "BIP39 checks",
+      "broad brute force"
+    ]
+  },
+  "inputs": {
+    "pdfs": [
+      "magazine.pdf",
+      "keyser bitcoin .pdf",
+      "analysis_outputs/external_clues/google_drive_article_download.pdf"
+    ],
+    "activeIndexSlotControl": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "bodyLattice": "analysis_outputs/source_audit/current_pdf_overdose_body_lattice_gate/current_pdf_overdose_body_lattice_gate.json",
+    "bodyLatticeFingerprint": "pdfs=3|latticePages=4|mappedRows=16|ownTargetRows=0|strictRows=0|allFourVariants=0|activeOrderVariants=4|candidates=0|sourceR3=0|triggers=0/9|selectors=0",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "summary": {
+    "pdfCount": 3,
+    "overdoseHeaderRowCount": 6,
+    "bodyOffsetPageCount": 4,
+    "sourceOffsetRowCount": 8,
+    "transferredOffsetRowCount": 16,
+    "ownTargetOffsetHitCount": 0,
+    "strictOffsetRowCount": 0,
+    "allFourOwnTargetPageCount": 0,
+    "activeTargetOrderPageCount": 0,
+    "bodyOffsetCandidateCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "fingerprint": "pdfs=3|headers=6|sourceOffsets=8|offsetPages=4|offsetRows=16|ownTargetRows=0|strictRows=0|allFourPages=0|activeOrderPages=0|candidates=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "records": [
+    {
+      "pdf": "magazine.pdf",
+      "overdosePageRows": [],
+      "sourceOffsetRows": [],
+      "transferredOffsetRows": [],
+      "variantRows": []
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "overdosePageRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 74,
+          "overdoseHeader": true,
+          "bodyLineCount": 0,
+          "firstBodyLineText": null,
+          "medianLinePitchPt": null
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "overdoseHeader": true,
+          "bodyLineCount": 45,
+          "firstBodyLineText": "Get some toxicity. Get some bitcoin. Open your heart to",
+          "medianLinePitchPt": 16.3005
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "overdoseHeader": true,
+          "bodyLineCount": 46,
+          "firstBodyLineText": "We've never had an economy and a money",
+          "medianLinePitchPt": 12.9335
+        }
+      ],
+      "sourceOffsetRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "sourceTarget": "O4",
+          "expectedPhrase": "buying the dip",
+          "sourceBodyRowIndex": 35,
+          "sourceLineDistancePt": 3.0383,
+          "sourceLineText": "eis"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "sourceTarget": "B4",
+          "expectedPhrase": "$1 billion",
+          "sourceBodyRowIndex": 40,
+          "sourceLineDistancePt": 1.5248,
+          "sourceLineText": "loan and get rid of those leeches. I tagged Mike"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "sourceTarget": "G5",
+          "expectedPhrase": "Volcano Bonds",
+          "sourceBodyRowIndex": 42,
+          "sourceLineDistancePt": 3.9331,
+          "sourceLineText": "bunch to his Wall Street crony pals, but so far he"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "sourceArticlePage": 76,
+          "sourceTarget": "O5",
+          "expectedPhrase": "shitcoiner at heart",
+          "sourceBodyRowIndex": 44,
+          "sourceLineDistancePt": 62.2779,
+          "sourceLineText": "Maybe because he's a siukbeodmensertslveaarty"
+        }
+      ],
+      "transferredOffsetRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "sourceTarget": "O4",
+          "expectedPhrase": "buying the dip",
+          "sourceBodyRowIndex": 35,
+          "lineAvailable": true,
+          "ownTargetAtOffset": false,
+          "lineTargetIds": [],
+          "strictHits": [],
+          "bodyLineText": "eis",
+          "isSourceCalibrationPage": true
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "sourceTarget": "B4",
+          "expectedPhrase": "$1 billion",
+          "sourceBodyRowIndex": 40,
+          "lineAvailable": true,
+          "ownTargetAtOffset": false,
+          "lineTargetIds": [],
+          "strictHits": [],
+          "bodyLineText": "loan and get rid of those leeches. I tagged Mike",
+          "isSourceCalibrationPage": true
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "sourceTarget": "G5",
+          "expectedPhrase": "Volcano Bonds",
+          "sourceBodyRowIndex": 42,
+          "lineAvailable": true,
+          "ownTargetAtOffset": false,
+          "lineTargetIds": [],
+          "strictHits": [],
+          "bodyLineText": "bunch to his Wall Street crony pals, but so far he",
+          "isSourceCalibrationPage": true
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "sourceTarget": "O5",
+          "expectedPhrase": "shitcoiner at heart",
+          "sourceBodyRowIndex": 44,
+          "lineAvailable": true,
+          "ownTargetAtOffset": false,
+          "lineTargetIds": [],
+          "strictHits": [],
+          "bodyLineText": "Maybe because he's a siukbeodmensertslveaarty",
+          "isSourceCalibrationPage": true
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "sourceTarget": "O4",
+          "expectedPhrase": "buying the dip",
+          "sourceBodyRowIndex": 35,
+          "lineAvailable": true,
+          "ownTargetAtOffset": false,
+          "lineTargetIds": [],
+          "strictHits": [],
+          "bodyLineText": "@",
+          "isSourceCalibrationPage": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "sourceTarget": "B4",
+          "expectedPhrase": "$1 billion",
+          "sourceBodyRowIndex": 40,
+          "lineAvailable": true,
+          "ownTargetAtOffset": false,
+          "lineTargetIds": [],
+          "strictHits": [],
+          "bodyLineText": "economy O",
+          "isSourceCalibrationPage": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "sourceTarget": "G5",
+          "expectedPhrase": "Volcano Bonds",
+          "sourceBodyRowIndex": 42,
+          "lineAvailable": true,
+          "ownTargetAtOffset": false,
+          "lineTargetIds": [],
+          "strictHits": [],
+          "bodyLineText": "aa",
+          "isSourceCalibrationPage": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "sourceTarget": "O5",
+          "expectedPhrase": "shitcoiner at heart",
+          "sourceBodyRowIndex": 44,
+          "lineAvailable": true,
+          "ownTargetAtOffset": false,
+          "lineTargetIds": [],
+          "strictHits": [],
+          "bodyLineText": "more \u00a9 efficie:",
+          "isSourceCalibrationPage": false
+        }
+      ],
+      "variantRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 76,
+          "offsetRows": 4,
+          "availableOffsetRows": 4,
+          "ownTargetOffsetHitCount": 0,
+          "strictOffsetRowCount": 0,
+          "unionTargetIds": [],
+          "allFourOwnTargetOffsets": false,
+          "activeTargetOrder": false,
+          "candidate": false,
+          "isSourceCalibrationPage": true
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "articlePage": 78,
+          "offsetRows": 4,
+          "availableOffsetRows": 4,
+          "ownTargetOffsetHitCount": 0,
+          "strictOffsetRowCount": 0,
+          "unionTargetIds": [],
+          "allFourOwnTargetOffsets": false,
+          "activeTargetOrder": false,
+          "candidate": false,
+          "isSourceCalibrationPage": false
+        }
+      ]
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "overdosePageRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 74,
+          "overdoseHeader": true,
+          "bodyLineCount": 0,
+          "firstBodyLineText": null,
+          "medianLinePitchPt": null
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "overdoseHeader": true,
+          "bodyLineCount": 45,
+          "firstBodyLineText": "Get some toxicity. Get some bitcoin. Open your heart to",
+          "medianLinePitchPt": 16.3005
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "overdoseHeader": true,
+          "bodyLineCount": 46,
+          "firstBodyLineText": "We've never had an economy and a money",
+          "medianLinePitchPt": 12.9335
+        }
+      ],
+      "sourceOffsetRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "sourceTarget": "O4",
+          "expectedPhrase": "buying the dip",
+          "sourceBodyRowIndex": 35,
+          "sourceLineDistancePt": 3.0383,
+          "sourceLineText": "eis"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "sourceTarget": "B4",
+          "expectedPhrase": "$1 billion",
+          "sourceBodyRowIndex": 40,
+          "sourceLineDistancePt": 1.5248,
+          "sourceLineText": "loan and get rid of those leeches. I tagged Mike"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "sourceTarget": "G5",
+          "expectedPhrase": "Volcano Bonds",
+          "sourceBodyRowIndex": 42,
+          "sourceLineDistancePt": 3.9331,
+          "sourceLineText": "bunch to his Wall Street crony pals, but so far he"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "sourceArticlePage": 76,
+          "sourceTarget": "O5",
+          "expectedPhrase": "shitcoiner at heart",
+          "sourceBodyRowIndex": 44,
+          "sourceLineDistancePt": 62.2779,
+          "sourceLineText": "Maybe because he's a siukbeodmensertslveaarty"
+        }
+      ],
+      "transferredOffsetRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "sourceTarget": "O4",
+          "expectedPhrase": "buying the dip",
+          "sourceBodyRowIndex": 35,
+          "lineAvailable": true,
+          "ownTargetAtOffset": false,
+          "lineTargetIds": [],
+          "strictHits": [],
+          "bodyLineText": "eis",
+          "isSourceCalibrationPage": true
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "sourceTarget": "B4",
+          "expectedPhrase": "$1 billion",
+          "sourceBodyRowIndex": 40,
+          "lineAvailable": true,
+          "ownTargetAtOffset": false,
+          "lineTargetIds": [],
+          "strictHits": [],
+          "bodyLineText": "loan and get rid of those leeches. I tagged Mike",
+          "isSourceCalibrationPage": true
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "sourceTarget": "G5",
+          "expectedPhrase": "Volcano Bonds",
+          "sourceBodyRowIndex": 42,
+          "lineAvailable": true,
+          "ownTargetAtOffset": false,
+          "lineTargetIds": [],
+          "strictHits": [],
+          "bodyLineText": "bunch to his Wall Street crony pals, but so far he",
+          "isSourceCalibrationPage": true
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "sourceTarget": "O5",
+          "expectedPhrase": "shitcoiner at heart",
+          "sourceBodyRowIndex": 44,
+          "lineAvailable": true,
+          "ownTargetAtOffset": false,
+          "lineTargetIds": [],
+          "strictHits": [],
+          "bodyLineText": "Maybe because he's a siukbeodmensertslveaarty",
+          "isSourceCalibrationPage": true
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "sourceTarget": "O4",
+          "expectedPhrase": "buying the dip",
+          "sourceBodyRowIndex": 35,
+          "lineAvailable": true,
+          "ownTargetAtOffset": false,
+          "lineTargetIds": [],
+          "strictHits": [],
+          "bodyLineText": "@",
+          "isSourceCalibrationPage": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "sourceTarget": "B4",
+          "expectedPhrase": "$1 billion",
+          "sourceBodyRowIndex": 40,
+          "lineAvailable": true,
+          "ownTargetAtOffset": false,
+          "lineTargetIds": [],
+          "strictHits": [],
+          "bodyLineText": "economy O",
+          "isSourceCalibrationPage": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "sourceTarget": "G5",
+          "expectedPhrase": "Volcano Bonds",
+          "sourceBodyRowIndex": 42,
+          "lineAvailable": true,
+          "ownTargetAtOffset": false,
+          "lineTargetIds": [],
+          "strictHits": [],
+          "bodyLineText": "aa",
+          "isSourceCalibrationPage": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "sourceTarget": "O5",
+          "expectedPhrase": "shitcoiner at heart",
+          "sourceBodyRowIndex": 44,
+          "lineAvailable": true,
+          "ownTargetAtOffset": false,
+          "lineTargetIds": [],
+          "strictHits": [],
+          "bodyLineText": "more \u00a9 efficie:",
+          "isSourceCalibrationPage": false
+        }
+      ],
+      "variantRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 76,
+          "offsetRows": 4,
+          "availableOffsetRows": 4,
+          "ownTargetOffsetHitCount": 0,
+          "strictOffsetRowCount": 0,
+          "unionTargetIds": [],
+          "allFourOwnTargetOffsets": false,
+          "activeTargetOrder": false,
+          "candidate": false,
+          "isSourceCalibrationPage": true
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "articlePage": 78,
+          "offsetRows": 4,
+          "availableOffsetRows": 4,
+          "ownTargetOffsetHitCount": 0,
+          "strictOffsetRowCount": 0,
+          "unionTargetIds": [],
+          "allFourOwnTargetOffsets": false,
+          "activeTargetOrder": false,
+          "candidate": false,
+          "isSourceCalibrationPage": false
+        }
+      ]
+    }
+  ],
+  "decision": {
+    "currentPdfOverdoseBodyOffsetTransferGate": "current_pdf_overdose_body_offset_transfer_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Page-76 active body-row offsets transfer to repeated OVERDOSE pages but produce no own-target rows, strict unit/order wording, candidate page, or source-backed R3.",
+    "nextMove": "Treat repeated OVERDOSE body-offset transfer as closed unless source material names a body-row offset or line-transfer rule."
+  },
+  "sheet": "analysis_outputs/source_audit/current_pdf_overdose_body_offset_transfer_gate/current_pdf_overdose_body_offset_transfer_gate_sheet.jpg"
+}

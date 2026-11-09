@@ -1,0 +1,4594 @@
+{
+  "createdAt": "2026-05-21T14:49:53",
+  "scope": "current scan held-to-light OVERDOSE glyph crop projection; no extraction or candidate generation",
+  "inputs": {
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "heldToLightSimulator": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/current_scan_held_to_light_simulator.json",
+    "c9HeaderGlyphSlotGate": "analysis_outputs/source_audit/c9_header_glyph_slot_gate/c9_header_glyph_slot_gate.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "scenarioRows": [
+    {
+      "scenarioId": "valid_75_to_76_natural",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "natural_hflip",
+      "topology": "valid same leaf",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p76_header_glyph",
+      "dominant10LineStream": "S.RD",
+      "dominant10XStream": ".RDS",
+      "dominant25LineStream": "....",
+      "slots10LineStream": "DOSRRDO",
+      "slots10XStream": "RRDODOS",
+      "blackSlots10XStream": "R",
+      "allFourDominant10": false,
+      "allFourTouched25": false,
+      "allFourTouched50": false,
+      "layoutTermHitStreamCount": 0,
+      "strictInstructionHitCount": 0,
+      "scenarioDecision": "no active quartet glyph-ink selector"
+    },
+    {
+      "scenarioId": "valid_75_to_76_natural",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "natural_hflip",
+      "topology": "valid same leaf",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p78_header_glyph",
+      "dominant10LineStream": "S.RD",
+      "dominant10XStream": ".RDS",
+      "dominant25LineStream": "....",
+      "slots10LineStream": "DOSRRDO",
+      "slots10XStream": "RRDODOS",
+      "blackSlots10XStream": "R",
+      "allFourDominant10": false,
+      "allFourTouched25": false,
+      "allFourTouched50": false,
+      "layoutTermHitStreamCount": 0,
+      "strictInstructionHitCount": 0,
+      "scenarioDecision": "no active quartet glyph-ink selector"
+    },
+    {
+      "scenarioId": "valid_75_to_76_forced_best",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "best_page76_active_boxes",
+      "topology": "valid same leaf, forced boundary shift",
+      "dx": -220,
+      "dy": 200,
+      "glyphProjection": "p76_header_glyph",
+      "dominant10LineStream": "OVRR",
+      "dominant10XStream": "VRRO",
+      "dominant25LineStream": "O...",
+      "slots10LineStream": "DOSVRRD",
+      "slots10XStream": "VRRDDOS",
+      "blackSlots10XStream": "VR",
+      "allFourDominant10": true,
+      "allFourTouched25": false,
+      "allFourTouched50": false,
+      "layoutTermHitStreamCount": 0,
+      "strictInstructionHitCount": 0,
+      "scenarioDecision": "weak all-target glyph coverage"
+    },
+    {
+      "scenarioId": "valid_75_to_76_forced_best",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "best_page76_active_boxes",
+      "topology": "valid same leaf, forced boundary shift",
+      "dx": -220,
+      "dy": 200,
+      "glyphProjection": "p78_header_glyph",
+      "dominant10LineStream": "OVRR",
+      "dominant10XStream": "VRRO",
+      "dominant25LineStream": "O...",
+      "slots10LineStream": "DOSVRRD",
+      "slots10XStream": "VRRDDOS",
+      "blackSlots10XStream": "VR",
+      "allFourDominant10": true,
+      "allFourTouched25": false,
+      "allFourTouched50": false,
+      "layoutTermHitStreamCount": 0,
+      "strictInstructionHitCount": 0,
+      "scenarioDecision": "weak all-target glyph coverage"
+    },
+    {
+      "scenarioId": "benchmark_79_to_76_natural",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "natural_hflip",
+      "topology": "non-physical benchmark",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p76_header_glyph",
+      "dominant10LineStream": "...D",
+      "dominant10XStream": "..D.",
+      "dominant25LineStream": "...D",
+      "slots10LineStream": "RD",
+      "slots10XStream": "RD",
+      "blackSlots10XStream": "",
+      "allFourDominant10": false,
+      "allFourTouched25": false,
+      "allFourTouched50": false,
+      "layoutTermHitStreamCount": 0,
+      "strictInstructionHitCount": 0,
+      "scenarioDecision": "no active quartet glyph-ink selector"
+    },
+    {
+      "scenarioId": "benchmark_79_to_76_natural",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "natural_hflip",
+      "topology": "non-physical benchmark",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p78_header_glyph",
+      "dominant10LineStream": "...D",
+      "dominant10XStream": "..D.",
+      "dominant25LineStream": "...D",
+      "slots10LineStream": "RD",
+      "slots10XStream": "RD",
+      "blackSlots10XStream": "",
+      "allFourDominant10": false,
+      "allFourTouched25": false,
+      "allFourTouched50": false,
+      "layoutTermHitStreamCount": 0,
+      "strictInstructionHitCount": 0,
+      "scenarioDecision": "no active quartet glyph-ink selector"
+    },
+    {
+      "scenarioId": "benchmark_79_to_76_best",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "best_global_feature",
+      "topology": "non-physical benchmark",
+      "dx": 40,
+      "dy": 80,
+      "glyphProjection": "p76_header_glyph",
+      "dominant10LineStream": "DVRR",
+      "dominant10XStream": "VRRD",
+      "dominant25LineStream": "D..R",
+      "slots10LineStream": "DOSOVERRDO",
+      "slots10XStream": "OVERRDODOS",
+      "blackSlots10XStream": "OVER",
+      "allFourDominant10": true,
+      "allFourTouched25": false,
+      "allFourTouched50": false,
+      "layoutTermHitStreamCount": 3,
+      "strictInstructionHitCount": 0,
+      "scenarioDecision": "weak all-target glyph coverage"
+    },
+    {
+      "scenarioId": "benchmark_79_to_76_best",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "best_global_feature",
+      "topology": "non-physical benchmark",
+      "dx": 40,
+      "dy": 80,
+      "glyphProjection": "p78_header_glyph",
+      "dominant10LineStream": "DVRR",
+      "dominant10XStream": "VRRD",
+      "dominant25LineStream": "D..R",
+      "slots10LineStream": "DOSOVERRDO",
+      "slots10XStream": "OVERRDODOS",
+      "blackSlots10XStream": "OVER",
+      "allFourDominant10": true,
+      "allFourTouched25": false,
+      "allFourTouched50": false,
+      "layoutTermHitStreamCount": 3,
+      "strictInstructionHitCount": 0,
+      "scenarioDecision": "weak all-target glyph coverage"
+    }
+  ],
+  "targetRows": [
+    {
+      "target": "O4",
+      "id": "buying_dip",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "centerX": 1567.5,
+      "scenarioId": "valid_75_to_76_natural",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "natural_hflip",
+      "topology": "valid same leaf",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p76_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 8784,
+          "sourceCoverage": 0.10473588342440801,
+          "targetCoverage": 0.9784836065573771,
+          "intersectionOverSlotArea": 0.10473588342440801,
+          "jaccard": 0.1070389761489238
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 11712,
+          "sourceCoverage": 0.11765710382513661,
+          "targetCoverage": 0.9779713114754098,
+          "intersectionOverSlotArea": 0.11244877049180328,
+          "jaccard": 0.11437255753365176
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 1920,
+          "sourceCoverage": 0.23125,
+          "targetCoverage": 0.9786458333333333,
+          "intersectionOverSlotArea": 0.21979166666666666,
+          "jaccard": 0.2219884271436086
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "S",
+      "dominant10SlotIndex": 6,
+      "dominant10Coverage": 0.23125,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 6,
+      "dominant25Coverage": 0.23125,
+      "slots10Letters": "DOS",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.23125,
+      "image": "analysis_outputs/source_audit/current_scan_overdose_glyph_crop_projection/valid_75_to_76_natural_O4_p76_glyph_slots.jpg"
+    },
+    {
+      "target": "B4",
+      "id": "one_billion",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "centerX": 559.5,
+      "scenarioId": "valid_75_to_76_natural",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "natural_hflip",
+      "topology": "valid same leaf",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p76_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 5217,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.7199539965497412,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 7144,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.736562150055991,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": ".",
+      "dominant10SlotIndex": 0,
+      "dominant10Coverage": 0.0,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 0,
+      "dominant25Coverage": 0.0,
+      "slots10Letters": "",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.0,
+      "image": "analysis_outputs/source_audit/current_scan_overdose_glyph_crop_projection/valid_75_to_76_natural_B4_p76_glyph_slots.jpg"
+    },
+    {
+      "target": "G5",
+      "id": "volcano_bonds",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "centerX": 995.5,
+      "scenarioId": "valid_75_to_76_natural",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "natural_hflip",
+      "topology": "valid same leaf",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p76_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 11184,
+          "sourceCoverage": 8.94134477825465e-05,
+          "targetCoverage": 0.8003397711015737,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 8064,
+          "sourceCoverage": 0.12549603174603174,
+          "targetCoverage": 0.7658730158730159,
+          "intersectionOverSlotArea": 0.11185515873015874,
+          "jaccard": 0.1434934775692014
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "R",
+      "dominant10SlotIndex": 3,
+      "dominant10Coverage": 0.12549603174603174,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 3,
+      "dominant25Coverage": 0.12549603174603174,
+      "slots10Letters": "R",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.12549603174603174,
+      "image": "analysis_outputs/source_audit/current_scan_overdose_glyph_crop_projection/valid_75_to_76_natural_G5_p76_glyph_slots.jpg"
+    },
+    {
+      "target": "O5",
+      "id": "shitcoiner_heart",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "centerX": 1350.5,
+      "scenarioId": "valid_75_to_76_natural",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "natural_hflip",
+      "topology": "valid same leaf",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p76_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 11600,
+          "sourceCoverage": 0.15991379310344828,
+          "targetCoverage": 0.9580172413793103,
+          "intersectionOverSlotArea": 0.15844827586206897,
+          "jaccard": 0.1651392632524708
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 12250,
+          "sourceCoverage": 0.18179591836734693,
+          "targetCoverage": 0.9467755102040817,
+          "intersectionOverSlotArea": 0.1753469387755102,
+          "jaccard": 0.1839513573691873
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 7200,
+          "sourceCoverage": 0.1463888888888889,
+          "targetCoverage": 0.9569444444444445,
+          "intersectionOverSlotArea": 0.14597222222222223,
+          "jaccard": 0.15247352386479038
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "D",
+      "dominant10SlotIndex": 4,
+      "dominant10Coverage": 0.18179591836734693,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 4,
+      "dominant25Coverage": 0.18179591836734693,
+      "slots10Letters": "RDO",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.18179591836734693,
+      "image": "analysis_outputs/source_audit/current_scan_overdose_glyph_crop_projection/valid_75_to_76_natural_O5_p76_glyph_slots.jpg"
+    },
+    {
+      "target": "O4",
+      "id": "buying_dip",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "centerX": 1567.5,
+      "scenarioId": "valid_75_to_76_natural",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "natural_hflip",
+      "topology": "valid same leaf",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p78_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 8736,
+          "sourceCoverage": 0.10462454212454213,
+          "targetCoverage": 0.9784798534798534,
+          "intersectionOverSlotArea": 0.10462454212454213,
+          "jaccard": 0.10692559663079083
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 11760,
+          "sourceCoverage": 0.11768707482993197,
+          "targetCoverage": 0.9779761904761904,
+          "intersectionOverSlotArea": 0.1125,
+          "jaccard": 0.11442656979761287
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 1920,
+          "sourceCoverage": 0.23125,
+          "targetCoverage": 0.9786458333333333,
+          "intersectionOverSlotArea": 0.21979166666666666,
+          "jaccard": 0.2219884271436086
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "S",
+      "dominant10SlotIndex": 6,
+      "dominant10Coverage": 0.23125,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 6,
+      "dominant25Coverage": 0.23125,
+      "slots10Letters": "DOS",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.23125
+    },
+    {
+      "target": "B4",
+      "id": "one_billion",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "centerX": 559.5,
+      "scenarioId": "valid_75_to_76_natural",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "natural_hflip",
+      "topology": "valid same leaf",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p78_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 5217,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.7199539965497412,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 7144,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.736562150055991,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": ".",
+      "dominant10SlotIndex": 0,
+      "dominant10Coverage": 0.0,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 0,
+      "dominant25Coverage": 0.0,
+      "slots10Letters": "",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.0
+    },
+    {
+      "target": "G5",
+      "id": "volcano_bonds",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "centerX": 995.5,
+      "scenarioId": "valid_75_to_76_natural",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "natural_hflip",
+      "topology": "valid same leaf",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p78_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 11136,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.7995689655172413,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 8112,
+          "sourceCoverage": 0.1248767258382643,
+          "targetCoverage": 0.7671351084812623,
+          "intersectionOverSlotArea": 0.11119329388560158,
+          "jaccard": 0.14240606251973476
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "R",
+      "dominant10SlotIndex": 3,
+      "dominant10Coverage": 0.1248767258382643,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 3,
+      "dominant25Coverage": 0.1248767258382643,
+      "slots10Letters": "R",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.1248767258382643
+    },
+    {
+      "target": "O5",
+      "id": "shitcoiner_heart",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "centerX": 1350.5,
+      "scenarioId": "valid_75_to_76_natural",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "natural_hflip",
+      "topology": "valid same leaf",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p78_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 11600,
+          "sourceCoverage": 0.15991379310344828,
+          "targetCoverage": 0.9580172413793103,
+          "intersectionOverSlotArea": 0.15844827586206897,
+          "jaccard": 0.1651392632524708
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 12200,
+          "sourceCoverage": 0.1822950819672131,
+          "targetCoverage": 0.9467213114754098,
+          "intersectionOverSlotArea": 0.17581967213114755,
+          "jaccard": 0.18445266144982372
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 7250,
+          "sourceCoverage": 0.14579310344827587,
+          "targetCoverage": 0.9569655172413793,
+          "intersectionOverSlotArea": 0.1453793103448276,
+          "jaccard": 0.15185131825385392
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "D",
+      "dominant10SlotIndex": 4,
+      "dominant10Coverage": 0.1822950819672131,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 4,
+      "dominant25Coverage": 0.1822950819672131,
+      "slots10Letters": "RDO",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.1822950819672131
+    },
+    {
+      "target": "O4",
+      "id": "buying_dip",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "centerX": 1567.5,
+      "scenarioId": "valid_75_to_76_forced_best",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "best_page76_active_boxes",
+      "topology": "valid same leaf, forced boundary shift",
+      "dx": -220,
+      "dy": 200,
+      "glyphProjection": "p76_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 8784,
+          "sourceCoverage": 0.9647085610200364,
+          "targetCoverage": 0.9784836065573771,
+          "intersectionOverSlotArea": 0.9642531876138434,
+          "jaccard": 0.9849982556111175
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 11712,
+          "sourceCoverage": 0.9849726775956285,
+          "targetCoverage": 0.9779713114754098,
+          "intersectionOverSlotArea": 0.9720799180327869,
+          "jaccard": 0.981042654028436
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 1920,
+          "sourceCoverage": 0.9802083333333333,
+          "targetCoverage": 0.9786458333333333,
+          "intersectionOverSlotArea": 0.9786458333333333,
+          "jaccard": 0.9984059511158342
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "O",
+      "dominant10SlotIndex": 5,
+      "dominant10Coverage": 0.9849726775956285,
+      "dominant25Letter": "O",
+      "dominant25SlotIndex": 5,
+      "dominant25Coverage": 0.9849726775956285,
+      "slots10Letters": "DOS",
+      "slots25Letters": "DOS",
+      "slots50Letters": "DOS",
+      "maxSlotSourceCoverage": 0.9849726775956285,
+      "image": "analysis_outputs/source_audit/current_scan_overdose_glyph_crop_projection/valid_75_to_76_forced_best_O4_p76_glyph_slots.jpg"
+    },
+    {
+      "target": "B4",
+      "id": "one_billion",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "centerX": 559.5,
+      "scenarioId": "valid_75_to_76_forced_best",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "best_page76_active_boxes",
+      "topology": "valid same leaf, forced boundary shift",
+      "dx": -220,
+      "dy": 200,
+      "glyphProjection": "p76_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 5217,
+          "sourceCoverage": 0.025876940770557792,
+          "targetCoverage": 0.7199539965497412,
+          "intersectionOverSlotArea": 0.01437607820586544,
+          "jaccard": 0.019654088050314465
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 7144,
+          "sourceCoverage": 0.2059070548712206,
+          "targetCoverage": 0.736562150055991,
+          "intersectionOverSlotArea": 0.14515677491601345,
+          "jaccard": 0.18205758426966293
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "V",
+      "dominant10SlotIndex": 1,
+      "dominant10Coverage": 0.2059070548712206,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 1,
+      "dominant25Coverage": 0.2059070548712206,
+      "slots10Letters": "V",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.2059070548712206,
+      "image": "analysis_outputs/source_audit/current_scan_overdose_glyph_crop_projection/valid_75_to_76_forced_best_B4_p76_glyph_slots.jpg"
+    },
+    {
+      "target": "G5",
+      "id": "volcano_bonds",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "centerX": 995.5,
+      "scenarioId": "valid_75_to_76_forced_best",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "best_page76_active_boxes",
+      "topology": "valid same leaf, forced boundary shift",
+      "dx": -220,
+      "dy": 200,
+      "glyphProjection": "p76_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 11184,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.8003397711015737,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 8064,
+          "sourceCoverage": 0.12896825396825398,
+          "targetCoverage": 0.7658730158730159,
+          "intersectionOverSlotArea": 0.0992063492063492,
+          "jaccard": 0.12468827930174564
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "R",
+      "dominant10SlotIndex": 3,
+      "dominant10Coverage": 0.12896825396825398,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 3,
+      "dominant25Coverage": 0.12896825396825398,
+      "slots10Letters": "R",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.12896825396825398,
+      "image": "analysis_outputs/source_audit/current_scan_overdose_glyph_crop_projection/valid_75_to_76_forced_best_G5_p76_glyph_slots.jpg"
+    },
+    {
+      "target": "O5",
+      "id": "shitcoiner_heart",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "centerX": 1350.5,
+      "scenarioId": "valid_75_to_76_forced_best",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "best_page76_active_boxes",
+      "topology": "valid same leaf, forced boundary shift",
+      "dx": -220,
+      "dy": 200,
+      "glyphProjection": "p76_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 11600,
+          "sourceCoverage": 0.10879310344827586,
+          "targetCoverage": 0.9580172413793103,
+          "intersectionOverSlotArea": 0.0968103448275862,
+          "jaccard": 0.09980447920369712
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 12250,
+          "sourceCoverage": 0.10114285714285715,
+          "targetCoverage": 0.9467755102040817,
+          "intersectionOverSlotArea": 0.09428571428571429,
+          "jaccard": 0.09887005649717515
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 7200,
+          "sourceCoverage": 0.08347222222222223,
+          "targetCoverage": 0.9569444444444445,
+          "intersectionOverSlotArea": 0.0825,
+          "jaccard": 0.0861244019138756
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "R",
+      "dominant10SlotIndex": 3,
+      "dominant10Coverage": 0.10879310344827586,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 3,
+      "dominant25Coverage": 0.10879310344827586,
+      "slots10Letters": "RD",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.10879310344827586,
+      "image": "analysis_outputs/source_audit/current_scan_overdose_glyph_crop_projection/valid_75_to_76_forced_best_O5_p76_glyph_slots.jpg"
+    },
+    {
+      "target": "O4",
+      "id": "buying_dip",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "centerX": 1567.5,
+      "scenarioId": "valid_75_to_76_forced_best",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "best_page76_active_boxes",
+      "topology": "valid same leaf, forced boundary shift",
+      "dx": -220,
+      "dy": 200,
+      "glyphProjection": "p78_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 8736,
+          "sourceCoverage": 0.9646291208791209,
+          "targetCoverage": 0.9784798534798534,
+          "intersectionOverSlotArea": 0.9641712454212454,
+          "jaccard": 0.9849158091674463
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 11760,
+          "sourceCoverage": 0.9849489795918367,
+          "targetCoverage": 0.9779761904761904,
+          "intersectionOverSlotArea": 0.972108843537415,
+          "jaccard": 0.9811191211809132
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 1920,
+          "sourceCoverage": 0.9802083333333333,
+          "targetCoverage": 0.9786458333333333,
+          "intersectionOverSlotArea": 0.9786458333333333,
+          "jaccard": 0.9984059511158342
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "O",
+      "dominant10SlotIndex": 5,
+      "dominant10Coverage": 0.9849489795918367,
+      "dominant25Letter": "O",
+      "dominant25SlotIndex": 5,
+      "dominant25Coverage": 0.9849489795918367,
+      "slots10Letters": "DOS",
+      "slots25Letters": "DOS",
+      "slots50Letters": "DOS",
+      "maxSlotSourceCoverage": 0.9849489795918367
+    },
+    {
+      "target": "B4",
+      "id": "one_billion",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "centerX": 559.5,
+      "scenarioId": "valid_75_to_76_forced_best",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "best_page76_active_boxes",
+      "topology": "valid same leaf, forced boundary shift",
+      "dx": -220,
+      "dy": 200,
+      "glyphProjection": "p78_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 5217,
+          "sourceCoverage": 0.025876940770557792,
+          "targetCoverage": 0.7199539965497412,
+          "intersectionOverSlotArea": 0.01437607820586544,
+          "jaccard": 0.019654088050314465
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 7144,
+          "sourceCoverage": 0.2059070548712206,
+          "targetCoverage": 0.736562150055991,
+          "intersectionOverSlotArea": 0.14515677491601345,
+          "jaccard": 0.18205758426966293
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "V",
+      "dominant10SlotIndex": 1,
+      "dominant10Coverage": 0.2059070548712206,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 1,
+      "dominant25Coverage": 0.2059070548712206,
+      "slots10Letters": "V",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.2059070548712206
+    },
+    {
+      "target": "G5",
+      "id": "volcano_bonds",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "centerX": 995.5,
+      "scenarioId": "valid_75_to_76_forced_best",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "best_page76_active_boxes",
+      "topology": "valid same leaf, forced boundary shift",
+      "dx": -220,
+      "dy": 200,
+      "glyphProjection": "p78_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 11136,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.7995689655172413,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 8112,
+          "sourceCoverage": 0.1282051282051282,
+          "targetCoverage": 0.7671351084812623,
+          "intersectionOverSlotArea": 0.09861932938856016,
+          "jaccard": 0.12378152560730311
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "R",
+      "dominant10SlotIndex": 3,
+      "dominant10Coverage": 0.1282051282051282,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 3,
+      "dominant25Coverage": 0.1282051282051282,
+      "slots10Letters": "R",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.1282051282051282
+    },
+    {
+      "target": "O5",
+      "id": "shitcoiner_heart",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "centerX": 1350.5,
+      "scenarioId": "valid_75_to_76_forced_best",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "best_page76_active_boxes",
+      "topology": "valid same leaf, forced boundary shift",
+      "dx": -220,
+      "dy": 200,
+      "glyphProjection": "p78_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 11600,
+          "sourceCoverage": 0.10879310344827586,
+          "targetCoverage": 0.9580172413793103,
+          "intersectionOverSlotArea": 0.0968103448275862,
+          "jaccard": 0.09980447920369712
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 12200,
+          "sourceCoverage": 0.10122950819672132,
+          "targetCoverage": 0.9467213114754098,
+          "intersectionOverSlotArea": 0.09434426229508197,
+          "jaccard": 0.0989341585009455
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 7250,
+          "sourceCoverage": 0.08344827586206896,
+          "targetCoverage": 0.9569655172413793,
+          "intersectionOverSlotArea": 0.08248275862068966,
+          "jaccard": 0.08610511159107272
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "R",
+      "dominant10SlotIndex": 3,
+      "dominant10Coverage": 0.10879310344827586,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 3,
+      "dominant25Coverage": 0.10879310344827586,
+      "slots10Letters": "RD",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.10879310344827586
+    },
+    {
+      "target": "O4",
+      "id": "buying_dip",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "centerX": 1567.5,
+      "scenarioId": "benchmark_79_to_76_natural",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "natural_hflip",
+      "topology": "non-physical benchmark",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p76_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 8784,
+          "sourceCoverage": 0.011498178506375228,
+          "targetCoverage": 0.9784836065573771,
+          "intersectionOverSlotArea": 0.011498178506375228,
+          "jaccard": 0.011751018033740547
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 11712,
+          "sourceCoverage": 0.007855191256830601,
+          "targetCoverage": 0.9779713114754098,
+          "intersectionOverSlotArea": 0.007513661202185792,
+          "jaccard": 0.007680223424681445
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 1920,
+          "sourceCoverage": 0.00625,
+          "targetCoverage": 0.9786458333333333,
+          "intersectionOverSlotArea": 0.0036458333333333334,
+          "jaccard": 0.0037154989384288748
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": ".",
+      "dominant10SlotIndex": 4,
+      "dominant10Coverage": 0.011498178506375228,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 4,
+      "dominant25Coverage": 0.011498178506375228,
+      "slots10Letters": "",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.011498178506375228,
+      "image": "analysis_outputs/source_audit/current_scan_overdose_glyph_crop_projection/benchmark_79_to_76_natural_O4_p76_glyph_slots.jpg"
+    },
+    {
+      "target": "B4",
+      "id": "one_billion",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "centerX": 559.5,
+      "scenarioId": "benchmark_79_to_76_natural",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "natural_hflip",
+      "topology": "non-physical benchmark",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p76_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 5217,
+          "sourceCoverage": 0.0628713820203182,
+          "targetCoverage": 0.7199539965497412,
+          "intersectionOverSlotArea": 0.03220241518113859,
+          "jaccard": 0.04290091930541369
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 7144,
+          "sourceCoverage": 0.07754759238521837,
+          "targetCoverage": 0.736562150055991,
+          "intersectionOverSlotArea": 0.044512877939529676,
+          "jaccard": 0.05783921425973081
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": ".",
+      "dominant10SlotIndex": 1,
+      "dominant10Coverage": 0.07754759238521837,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 1,
+      "dominant25Coverage": 0.07754759238521837,
+      "slots10Letters": "",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.07754759238521837,
+      "image": "analysis_outputs/source_audit/current_scan_overdose_glyph_crop_projection/benchmark_79_to_76_natural_B4_p76_glyph_slots.jpg"
+    },
+    {
+      "target": "G5",
+      "id": "volcano_bonds",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "centerX": 995.5,
+      "scenarioId": "benchmark_79_to_76_natural",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "natural_hflip",
+      "topology": "non-physical benchmark",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p76_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 11184,
+          "sourceCoverage": 0.0002682403433476395,
+          "targetCoverage": 0.8003397711015737,
+          "intersectionOverSlotArea": 0.0002682403433476395,
+          "jaccard": 0.00033515808289576583
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 8064,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.7658730158730159,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": ".",
+      "dominant10SlotIndex": 2,
+      "dominant10Coverage": 0.0002682403433476395,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 2,
+      "dominant25Coverage": 0.0002682403433476395,
+      "slots10Letters": "",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.0002682403433476395,
+      "image": "analysis_outputs/source_audit/current_scan_overdose_glyph_crop_projection/benchmark_79_to_76_natural_G5_p76_glyph_slots.jpg"
+    },
+    {
+      "target": "O5",
+      "id": "shitcoiner_heart",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "centerX": 1350.5,
+      "scenarioId": "benchmark_79_to_76_natural",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "natural_hflip",
+      "topology": "non-physical benchmark",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p76_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 11600,
+          "sourceCoverage": 0.24379310344827587,
+          "targetCoverage": 0.9580172413793103,
+          "intersectionOverSlotArea": 0.2292241379310345,
+          "jaccard": 0.23568516220528274
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 12250,
+          "sourceCoverage": 0.2583673469387755,
+          "targetCoverage": 0.9467755102040817,
+          "intersectionOverSlotArea": 0.2443265306122449,
+          "jaccard": 0.25429056924384025
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 7200,
+          "sourceCoverage": 0.07722222222222222,
+          "targetCoverage": 0.9569444444444445,
+          "intersectionOverSlotArea": 0.07680555555555556,
+          "jaccard": 0.08022631655302481
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "D",
+      "dominant10SlotIndex": 4,
+      "dominant10Coverage": 0.2583673469387755,
+      "dominant25Letter": "D",
+      "dominant25SlotIndex": 4,
+      "dominant25Coverage": 0.2583673469387755,
+      "slots10Letters": "RD",
+      "slots25Letters": "D",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.2583673469387755,
+      "image": "analysis_outputs/source_audit/current_scan_overdose_glyph_crop_projection/benchmark_79_to_76_natural_O5_p76_glyph_slots.jpg"
+    },
+    {
+      "target": "O4",
+      "id": "buying_dip",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "centerX": 1567.5,
+      "scenarioId": "benchmark_79_to_76_natural",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "natural_hflip",
+      "topology": "non-physical benchmark",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p78_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 8736,
+          "sourceCoverage": 0.011217948717948718,
+          "targetCoverage": 0.9784798534798534,
+          "intersectionOverSlotArea": 0.011217948717948718,
+          "jaccard": 0.011464670098268601
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 11760,
+          "sourceCoverage": 0.008078231292517007,
+          "targetCoverage": 0.9779761904761904,
+          "intersectionOverSlotArea": 0.007738095238095238,
+          "jaccard": 0.007909604519774011
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 1920,
+          "sourceCoverage": 0.00625,
+          "targetCoverage": 0.9786458333333333,
+          "intersectionOverSlotArea": 0.0036458333333333334,
+          "jaccard": 0.0037154989384288748
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": ".",
+      "dominant10SlotIndex": 4,
+      "dominant10Coverage": 0.011217948717948718,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 4,
+      "dominant25Coverage": 0.011217948717948718,
+      "slots10Letters": "",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.011217948717948718
+    },
+    {
+      "target": "B4",
+      "id": "one_billion",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "centerX": 559.5,
+      "scenarioId": "benchmark_79_to_76_natural",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "natural_hflip",
+      "topology": "non-physical benchmark",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p78_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 5217,
+          "sourceCoverage": 0.0628713820203182,
+          "targetCoverage": 0.7199539965497412,
+          "intersectionOverSlotArea": 0.03220241518113859,
+          "jaccard": 0.04290091930541369
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 7144,
+          "sourceCoverage": 0.07754759238521837,
+          "targetCoverage": 0.736562150055991,
+          "intersectionOverSlotArea": 0.044512877939529676,
+          "jaccard": 0.05783921425973081
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": ".",
+      "dominant10SlotIndex": 1,
+      "dominant10Coverage": 0.07754759238521837,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 1,
+      "dominant25Coverage": 0.07754759238521837,
+      "slots10Letters": "",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.07754759238521837
+    },
+    {
+      "target": "G5",
+      "id": "volcano_bonds",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "centerX": 995.5,
+      "scenarioId": "benchmark_79_to_76_natural",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "natural_hflip",
+      "topology": "non-physical benchmark",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p78_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 11136,
+          "sourceCoverage": 0.00026939655172413793,
+          "targetCoverage": 0.7995689655172413,
+          "intersectionOverSlotArea": 0.00026939655172413793,
+          "jaccard": 0.00033692722371967657
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 8112,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.7671351084812623,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": ".",
+      "dominant10SlotIndex": 2,
+      "dominant10Coverage": 0.00026939655172413793,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 2,
+      "dominant25Coverage": 0.00026939655172413793,
+      "slots10Letters": "",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.00026939655172413793
+    },
+    {
+      "target": "O5",
+      "id": "shitcoiner_heart",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "centerX": 1350.5,
+      "scenarioId": "benchmark_79_to_76_natural",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "natural_hflip",
+      "topology": "non-physical benchmark",
+      "dx": 0,
+      "dy": 0,
+      "glyphProjection": "p78_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 11600,
+          "sourceCoverage": 0.24379310344827587,
+          "targetCoverage": 0.9580172413793103,
+          "intersectionOverSlotArea": 0.2292241379310345,
+          "jaccard": 0.23568516220528274
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 12200,
+          "sourceCoverage": 0.2594262295081967,
+          "targetCoverage": 0.9467213114754098,
+          "intersectionOverSlotArea": 0.24532786885245902,
+          "jaccard": 0.2553318546323153
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 7250,
+          "sourceCoverage": 0.07668965517241379,
+          "targetCoverage": 0.9569655172413793,
+          "intersectionOverSlotArea": 0.07627586206896551,
+          "jaccard": 0.07967151707246795
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "D",
+      "dominant10SlotIndex": 4,
+      "dominant10Coverage": 0.2594262295081967,
+      "dominant25Letter": "D",
+      "dominant25SlotIndex": 4,
+      "dominant25Coverage": 0.2594262295081967,
+      "slots10Letters": "RD",
+      "slots25Letters": "D",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.2594262295081967
+    },
+    {
+      "target": "O4",
+      "id": "buying_dip",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "centerX": 1567.5,
+      "scenarioId": "benchmark_79_to_76_best",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "best_global_feature",
+      "topology": "non-physical benchmark",
+      "dx": 40,
+      "dy": 80,
+      "glyphProjection": "p76_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 8784,
+          "sourceCoverage": 0.8520036429872495,
+          "targetCoverage": 0.9784836065573771,
+          "intersectionOverSlotArea": 0.8518897996357013,
+          "jaccard": 0.8705211726384365
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 11712,
+          "sourceCoverage": 0.8351263661202186,
+          "targetCoverage": 0.9779713114754098,
+          "intersectionOverSlotArea": 0.820099043715847,
+          "jaccard": 0.8258813413585555
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 1920,
+          "sourceCoverage": 0.8333333333333334,
+          "targetCoverage": 0.9786458333333333,
+          "intersectionOverSlotArea": 0.8125,
+          "jaccard": 0.8129233976029182
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "D",
+      "dominant10SlotIndex": 4,
+      "dominant10Coverage": 0.8520036429872495,
+      "dominant25Letter": "D",
+      "dominant25SlotIndex": 4,
+      "dominant25Coverage": 0.8520036429872495,
+      "slots10Letters": "DOS",
+      "slots25Letters": "DOS",
+      "slots50Letters": "DOS",
+      "maxSlotSourceCoverage": 0.8520036429872495,
+      "image": "analysis_outputs/source_audit/current_scan_overdose_glyph_crop_projection/benchmark_79_to_76_best_O4_p76_glyph_slots.jpg"
+    },
+    {
+      "target": "B4",
+      "id": "one_billion",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "centerX": 559.5,
+      "scenarioId": "benchmark_79_to_76_best",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "best_global_feature",
+      "topology": "non-physical benchmark",
+      "dx": 40,
+      "dy": 80,
+      "glyphProjection": "p76_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 5217,
+          "sourceCoverage": 0.11175004792026069,
+          "targetCoverage": 0.7199539965497412,
+          "intersectionOverSlotArea": 0.07418056354226567,
+          "jaccard": 0.0979251012145749
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 7144,
+          "sourceCoverage": 0.11534154535274356,
+          "targetCoverage": 0.736562150055991,
+          "intersectionOverSlotArea": 0.0803471444568869,
+          "jaccard": 0.10413642960812772
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "V",
+      "dominant10SlotIndex": 1,
+      "dominant10Coverage": 0.11534154535274356,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 1,
+      "dominant25Coverage": 0.11534154535274356,
+      "slots10Letters": "OV",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.11534154535274356,
+      "image": "analysis_outputs/source_audit/current_scan_overdose_glyph_crop_projection/benchmark_79_to_76_best_B4_p76_glyph_slots.jpg"
+    },
+    {
+      "target": "G5",
+      "id": "volcano_bonds",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "centerX": 995.5,
+      "scenarioId": "benchmark_79_to_76_best",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "best_global_feature",
+      "topology": "non-physical benchmark",
+      "dx": 40,
+      "dy": 80,
+      "glyphProjection": "p76_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 11184,
+          "sourceCoverage": 0.11471745350500716,
+          "targetCoverage": 0.8003397711015737,
+          "intersectionOverSlotArea": 0.09066523605150215,
+          "jaccard": 0.10997830802603037
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 8064,
+          "sourceCoverage": 0.1579861111111111,
+          "targetCoverage": 0.7658730158730159,
+          "intersectionOverSlotArea": 0.1318204365079365,
+          "jaccard": 0.16643181462345388
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "R",
+      "dominant10SlotIndex": 3,
+      "dominant10Coverage": 0.1579861111111111,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 3,
+      "dominant25Coverage": 0.1579861111111111,
+      "slots10Letters": "ER",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.1579861111111111,
+      "image": "analysis_outputs/source_audit/current_scan_overdose_glyph_crop_projection/benchmark_79_to_76_best_G5_p76_glyph_slots.jpg"
+    },
+    {
+      "target": "O5",
+      "id": "shitcoiner_heart",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "centerX": 1350.5,
+      "scenarioId": "benchmark_79_to_76_best",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "best_global_feature",
+      "topology": "non-physical benchmark",
+      "dx": 40,
+      "dy": 80,
+      "glyphProjection": "p76_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 11600,
+          "sourceCoverage": 0.38241379310344825,
+          "targetCoverage": 0.9580172413793103,
+          "intersectionOverSlotArea": 0.37103448275862067,
+          "jaccard": 0.3827478879502001
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 12250,
+          "sourceCoverage": 0.25020408163265306,
+          "targetCoverage": 0.9467755102040817,
+          "intersectionOverSlotArea": 0.2376326530612245,
+          "jaccard": 0.24770251872021784
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 7200,
+          "sourceCoverage": 0.33958333333333335,
+          "targetCoverage": 0.9569444444444445,
+          "intersectionOverSlotArea": 0.33055555555555555,
+          "jaccard": 0.3421998562185478
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "R",
+      "dominant10SlotIndex": 3,
+      "dominant10Coverage": 0.38241379310344825,
+      "dominant25Letter": "R",
+      "dominant25SlotIndex": 3,
+      "dominant25Coverage": 0.38241379310344825,
+      "slots10Letters": "RDO",
+      "slots25Letters": "RDO",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.38241379310344825,
+      "image": "analysis_outputs/source_audit/current_scan_overdose_glyph_crop_projection/benchmark_79_to_76_best_O5_p76_glyph_slots.jpg"
+    },
+    {
+      "target": "O4",
+      "id": "buying_dip",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "centerX": 1567.5,
+      "scenarioId": "benchmark_79_to_76_best",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "best_global_feature",
+      "topology": "non-physical benchmark",
+      "dx": 40,
+      "dy": 80,
+      "glyphProjection": "p78_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 8736,
+          "sourceCoverage": 0.8521062271062271,
+          "targetCoverage": 0.9784798534798534,
+          "intersectionOverSlotArea": 0.8519917582417582,
+          "jaccard": 0.8706281436425313
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 11760,
+          "sourceCoverage": 0.8351190476190476,
+          "targetCoverage": 0.9779761904761904,
+          "intersectionOverSlotArea": 0.8201530612244898,
+          "jaccard": 0.8259827010362251
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 1920,
+          "sourceCoverage": 0.8333333333333334,
+          "targetCoverage": 0.9786458333333333,
+          "intersectionOverSlotArea": 0.8125,
+          "jaccard": 0.8129233976029182
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "D",
+      "dominant10SlotIndex": 4,
+      "dominant10Coverage": 0.8521062271062271,
+      "dominant25Letter": "D",
+      "dominant25SlotIndex": 4,
+      "dominant25Coverage": 0.8521062271062271,
+      "slots10Letters": "DOS",
+      "slots25Letters": "DOS",
+      "slots50Letters": "DOS",
+      "maxSlotSourceCoverage": 0.8521062271062271
+    },
+    {
+      "target": "B4",
+      "id": "one_billion",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "centerX": 559.5,
+      "scenarioId": "benchmark_79_to_76_best",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "best_global_feature",
+      "topology": "non-physical benchmark",
+      "dx": 40,
+      "dy": 80,
+      "glyphProjection": "p78_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 5217,
+          "sourceCoverage": 0.11175004792026069,
+          "targetCoverage": 0.7199539965497412,
+          "intersectionOverSlotArea": 0.07418056354226567,
+          "jaccard": 0.0979251012145749
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 7144,
+          "sourceCoverage": 0.11534154535274356,
+          "targetCoverage": 0.736562150055991,
+          "intersectionOverSlotArea": 0.0803471444568869,
+          "jaccard": 0.10413642960812772
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "V",
+      "dominant10SlotIndex": 1,
+      "dominant10Coverage": 0.11534154535274356,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 1,
+      "dominant25Coverage": 0.11534154535274356,
+      "slots10Letters": "OV",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.11534154535274356
+    },
+    {
+      "target": "G5",
+      "id": "volcano_bonds",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "visualState": "K",
+      "color": "black",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "centerX": 995.5,
+      "scenarioId": "benchmark_79_to_76_best",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "best_global_feature",
+      "topology": "non-physical benchmark",
+      "dx": 40,
+      "dy": 80,
+      "glyphProjection": "p78_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 11136,
+          "sourceCoverage": 0.11422413793103449,
+          "targetCoverage": 0.7995689655172413,
+          "intersectionOverSlotArea": 0.09006824712643678,
+          "jaccard": 0.10934263599694756
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 8112,
+          "sourceCoverage": 0.15840729783037474,
+          "targetCoverage": 0.7671351084812623,
+          "intersectionOverSlotArea": 0.13239644970414202,
+          "jaccard": 0.16692570718060304
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "R",
+      "dominant10SlotIndex": 3,
+      "dominant10Coverage": 0.15840729783037474,
+      "dominant25Letter": ".",
+      "dominant25SlotIndex": 3,
+      "dominant25Coverage": 0.15840729783037474,
+      "slots10Letters": "ER",
+      "slots25Letters": "",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.15840729783037474
+    },
+    {
+      "target": "O5",
+      "id": "shitcoiner_heart",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "visualState": "Y",
+      "color": "orange",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "centerX": 1350.5,
+      "scenarioId": "benchmark_79_to_76_best",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "best_global_feature",
+      "topology": "non-physical benchmark",
+      "dx": 40,
+      "dy": 80,
+      "glyphProjection": "p78_header_glyph",
+      "slotRows": [
+        {
+          "index": 0,
+          "letter": "O",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 1,
+          "letter": "V",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 2,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 3,
+          "letter": "R",
+          "area": 11600,
+          "sourceCoverage": 0.38241379310344825,
+          "targetCoverage": 0.9580172413793103,
+          "intersectionOverSlotArea": 0.37103448275862067,
+          "jaccard": 0.3827478879502001
+        },
+        {
+          "index": 4,
+          "letter": "D",
+          "area": 12200,
+          "sourceCoverage": 0.24959016393442623,
+          "targetCoverage": 0.9467213114754098,
+          "intersectionOverSlotArea": 0.2369672131147541,
+          "jaccard": 0.24700956937799043
+        },
+        {
+          "index": 5,
+          "letter": "O",
+          "area": 7250,
+          "sourceCoverage": 0.34,
+          "targetCoverage": 0.9569655172413793,
+          "intersectionOverSlotArea": 0.3310344827586207,
+          "jaccard": 0.3427102670284164
+        },
+        {
+          "index": 6,
+          "letter": "S",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        },
+        {
+          "index": 7,
+          "letter": "E",
+          "area": 0,
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.0,
+          "intersectionOverSlotArea": 0.0,
+          "jaccard": 0.0
+        }
+      ],
+      "dominant10Letter": "R",
+      "dominant10SlotIndex": 3,
+      "dominant10Coverage": 0.38241379310344825,
+      "dominant25Letter": "R",
+      "dominant25SlotIndex": 3,
+      "dominant25Coverage": 0.38241379310344825,
+      "slots10Letters": "RDO",
+      "slots25Letters": "RO",
+      "slots50Letters": "",
+      "maxSlotSourceCoverage": 0.38241379310344825
+    }
+  ],
+  "streamRows": [
+    {
+      "name": "valid_75_to_76_natural_p76_header_glyph_dominant10_line",
+      "rawStream": "S.RD",
+      "stream": "SRD",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_natural_p76_header_glyph_dominant10_x",
+      "rawStream": ".RDS",
+      "stream": "RDS",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_natural_p76_header_glyph_dominant25_line",
+      "rawStream": "....",
+      "stream": "",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_natural_p76_header_glyph_slots10_line",
+      "rawStream": "DOSRRDO",
+      "stream": "DOSRRDO",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_natural_p76_header_glyph_slots10_x",
+      "rawStream": "RRDODOS",
+      "stream": "RRDODOS",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_natural_p76_header_glyph_black_slots10_x",
+      "rawStream": "R",
+      "stream": "R",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_natural_p76_header_glyph_orange_slots10_x",
+      "rawStream": "RDODOS",
+      "stream": "RDODOS",
+      "targetOrder": [
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_natural_p76_header_glyph_slots25_line",
+      "rawStream": "",
+      "stream": "",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_natural_p76_header_glyph_black_slots25_x",
+      "rawStream": "",
+      "stream": "",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_natural_p78_header_glyph_dominant10_line",
+      "rawStream": "S.RD",
+      "stream": "SRD",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_natural_p78_header_glyph_dominant10_x",
+      "rawStream": ".RDS",
+      "stream": "RDS",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_natural_p78_header_glyph_dominant25_line",
+      "rawStream": "....",
+      "stream": "",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_natural_p78_header_glyph_slots10_line",
+      "rawStream": "DOSRRDO",
+      "stream": "DOSRRDO",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_natural_p78_header_glyph_slots10_x",
+      "rawStream": "RRDODOS",
+      "stream": "RRDODOS",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_natural_p78_header_glyph_black_slots10_x",
+      "rawStream": "R",
+      "stream": "R",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_natural_p78_header_glyph_orange_slots10_x",
+      "rawStream": "RDODOS",
+      "stream": "RDODOS",
+      "targetOrder": [
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_natural_p78_header_glyph_slots25_line",
+      "rawStream": "",
+      "stream": "",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_natural_p78_header_glyph_black_slots25_x",
+      "rawStream": "",
+      "stream": "",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_forced_best_p76_header_glyph_dominant10_line",
+      "rawStream": "OVRR",
+      "stream": "OVRR",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_forced_best_p76_header_glyph_dominant10_x",
+      "rawStream": "VRRO",
+      "stream": "VRRO",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_forced_best_p76_header_glyph_dominant25_line",
+      "rawStream": "O...",
+      "stream": "O",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_forced_best_p76_header_glyph_slots10_line",
+      "rawStream": "DOSVRRD",
+      "stream": "DOSVRRD",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_forced_best_p76_header_glyph_slots10_x",
+      "rawStream": "VRRDDOS",
+      "stream": "VRRDDOS",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_forced_best_p76_header_glyph_black_slots10_x",
+      "rawStream": "VR",
+      "stream": "VR",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_forced_best_p76_header_glyph_orange_slots10_x",
+      "rawStream": "RDDOS",
+      "stream": "RDDOS",
+      "targetOrder": [
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_forced_best_p76_header_glyph_slots25_line",
+      "rawStream": "DOS",
+      "stream": "DOS",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_forced_best_p76_header_glyph_black_slots25_x",
+      "rawStream": "",
+      "stream": "",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_forced_best_p78_header_glyph_dominant10_line",
+      "rawStream": "OVRR",
+      "stream": "OVRR",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_forced_best_p78_header_glyph_dominant10_x",
+      "rawStream": "VRRO",
+      "stream": "VRRO",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_forced_best_p78_header_glyph_dominant25_line",
+      "rawStream": "O...",
+      "stream": "O",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_forced_best_p78_header_glyph_slots10_line",
+      "rawStream": "DOSVRRD",
+      "stream": "DOSVRRD",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_forced_best_p78_header_glyph_slots10_x",
+      "rawStream": "VRRDDOS",
+      "stream": "VRRDDOS",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_forced_best_p78_header_glyph_black_slots10_x",
+      "rawStream": "VR",
+      "stream": "VR",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_forced_best_p78_header_glyph_orange_slots10_x",
+      "rawStream": "RDDOS",
+      "stream": "RDDOS",
+      "targetOrder": [
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_forced_best_p78_header_glyph_slots25_line",
+      "rawStream": "DOS",
+      "stream": "DOS",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "valid_75_to_76_forced_best_p78_header_glyph_black_slots25_x",
+      "rawStream": "",
+      "stream": "",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_natural_p76_header_glyph_dominant10_line",
+      "rawStream": "...D",
+      "stream": "D",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_natural_p76_header_glyph_dominant10_x",
+      "rawStream": "..D.",
+      "stream": "D",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_natural_p76_header_glyph_dominant25_line",
+      "rawStream": "...D",
+      "stream": "D",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_natural_p76_header_glyph_slots10_line",
+      "rawStream": "RD",
+      "stream": "RD",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_natural_p76_header_glyph_slots10_x",
+      "rawStream": "RD",
+      "stream": "RD",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_natural_p76_header_glyph_black_slots10_x",
+      "rawStream": "",
+      "stream": "",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_natural_p76_header_glyph_orange_slots10_x",
+      "rawStream": "RD",
+      "stream": "RD",
+      "targetOrder": [
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_natural_p76_header_glyph_slots25_line",
+      "rawStream": "D",
+      "stream": "D",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_natural_p76_header_glyph_black_slots25_x",
+      "rawStream": "",
+      "stream": "",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_natural_p78_header_glyph_dominant10_line",
+      "rawStream": "...D",
+      "stream": "D",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_natural_p78_header_glyph_dominant10_x",
+      "rawStream": "..D.",
+      "stream": "D",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_natural_p78_header_glyph_dominant25_line",
+      "rawStream": "...D",
+      "stream": "D",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_natural_p78_header_glyph_slots10_line",
+      "rawStream": "RD",
+      "stream": "RD",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_natural_p78_header_glyph_slots10_x",
+      "rawStream": "RD",
+      "stream": "RD",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_natural_p78_header_glyph_black_slots10_x",
+      "rawStream": "",
+      "stream": "",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_natural_p78_header_glyph_orange_slots10_x",
+      "rawStream": "RD",
+      "stream": "RD",
+      "targetOrder": [
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_natural_p78_header_glyph_slots25_line",
+      "rawStream": "D",
+      "stream": "D",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_natural_p78_header_glyph_black_slots25_x",
+      "rawStream": "",
+      "stream": "",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_best_p76_header_glyph_dominant10_line",
+      "rawStream": "DVRR",
+      "stream": "DVRR",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_best_p76_header_glyph_dominant10_x",
+      "rawStream": "VRRD",
+      "stream": "VRRD",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_best_p76_header_glyph_dominant25_line",
+      "rawStream": "D..R",
+      "stream": "DR",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_best_p76_header_glyph_slots10_line",
+      "rawStream": "DOSOVERRDO",
+      "stream": "DOSOVERRDO",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [
+        "OVER"
+      ],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_best_p76_header_glyph_slots10_x",
+      "rawStream": "OVERRDODOS",
+      "stream": "OVERRDODOS",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [
+        "OVER"
+      ],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_best_p76_header_glyph_black_slots10_x",
+      "rawStream": "OVER",
+      "stream": "OVER",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "layoutTermHits": [
+        "OVER"
+      ],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_best_p76_header_glyph_orange_slots10_x",
+      "rawStream": "RDODOS",
+      "stream": "RDODOS",
+      "targetOrder": [
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_best_p76_header_glyph_slots25_line",
+      "rawStream": "DOSRDO",
+      "stream": "DOSRDO",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_best_p76_header_glyph_black_slots25_x",
+      "rawStream": "",
+      "stream": "",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_best_p78_header_glyph_dominant10_line",
+      "rawStream": "DVRR",
+      "stream": "DVRR",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_best_p78_header_glyph_dominant10_x",
+      "rawStream": "VRRD",
+      "stream": "VRRD",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_best_p78_header_glyph_dominant25_line",
+      "rawStream": "D..R",
+      "stream": "DR",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_best_p78_header_glyph_slots10_line",
+      "rawStream": "DOSOVERRDO",
+      "stream": "DOSOVERRDO",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [
+        "OVER"
+      ],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_best_p78_header_glyph_slots10_x",
+      "rawStream": "OVERRDODOS",
+      "stream": "OVERRDODOS",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [
+        "OVER"
+      ],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_best_p78_header_glyph_black_slots10_x",
+      "rawStream": "OVER",
+      "stream": "OVER",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "layoutTermHits": [
+        "OVER"
+      ],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_best_p78_header_glyph_orange_slots10_x",
+      "rawStream": "RDODOS",
+      "stream": "RDODOS",
+      "targetOrder": [
+        "O5",
+        "O4"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_best_p78_header_glyph_slots25_line",
+      "rawStream": "DOSRO",
+      "stream": "DOSRO",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    },
+    {
+      "name": "benchmark_79_to_76_best_p78_header_glyph_black_slots25_x",
+      "rawStream": "",
+      "stream": "",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "layoutTermHits": [],
+      "strictInstructionHits": []
+    }
+  ],
+  "summary": {
+    "glyphProjectionCount": 2,
+    "scenarioProjectionCount": 8,
+    "targetGlyphRowCount": 32,
+    "streamCount": 72,
+    "allFourDominant10ScenarioProjectionCount": 4,
+    "allFourTouched25ScenarioProjectionCount": 0,
+    "allFourTouched50ScenarioProjectionCount": 0,
+    "layoutHitStreamCount": 6,
+    "strictInstructionHitCount": 0,
+    "validNaturalDominant10LineStream": "S.RD",
+    "validForcedDominant10LineStream": "OVRR",
+    "benchmark79BestDominant10LineStream": "DVRR",
+    "validNaturalBlackSlots10XStream": "R",
+    "validForcedBlackSlots10XStream": "VR",
+    "benchmark79BestBlackSlots10XStream": "OVER",
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "glyphCropProjectionFingerprint": "glyphs=2|scenarioProj=8|targets=32|allDom10=4|all25=0|all50=0|layoutStreams=6|strict=0|validNat=S.RD|validForced=OVRR|bench79=DVRR|black10=R/VR/OVER|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "decision": {
+    "currentScanOverdoseGlyphCropProjection": "glyph_crop_projection_no_active_quartet_selector",
+    "selectorUnlocked": false,
+    "reason": "Actual OVERDOSE glyph slots do not turn the current held-to-light crop windows into a source-backed selector. The valid 75->76 natural case still lacks a complete active quartet; any layout fragments are weak, forced, or non-physical and still lack R3 unit/order wording.",
+    "nextMove": "Use this as the glyph-aware stop-check for the current scan. The next bounded move is not another slot permutation; inspect whether page-76 highlight edges or crop-window boundaries supply a source-backed instruction term, or wait for distinct source/original-layout material."
+  },
+  "sheet": "analysis_outputs/source_audit/current_scan_overdose_glyph_crop_projection/current_scan_overdose_glyph_crop_projection_sheet.jpg"
+}

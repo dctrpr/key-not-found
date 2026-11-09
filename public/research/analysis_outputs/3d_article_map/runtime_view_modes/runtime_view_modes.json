@@ -1,0 +1,295 @@
+{
+  "createdAt": "2026-05-20T20:36:48",
+  "scope": "3D viewer runtime mode sanity check; no key derivation.",
+  "chrome": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  "baseUrl": "http://127.0.0.1:8765/analysis_outputs/3d_article_map/index.html",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "staticSurface": {
+    "htmlModes": [
+      "spread",
+      "fold",
+      "stack"
+    ],
+    "toggleIds": [
+      "togglePages",
+      "toggleChars",
+      "toggleImportant",
+      "toggleHighlights",
+      "toggleReflections",
+      "toggleAnchors",
+      "toggleRays"
+    ],
+    "urlParams": [
+      "focus",
+      "layout"
+    ],
+    "focusPages": [
+      "75",
+      "76",
+      "77",
+      "78",
+      "79",
+      "80",
+      "75",
+      "77",
+      "78",
+      "79",
+      "80"
+    ],
+    "rayDisplayLimit": 28,
+    "dataCounts": {
+      "pages": 6,
+      "chars": 7299,
+      "words": 1243,
+      "anchors": 16,
+      "reflections": 29,
+      "raySelections": 40
+    },
+    "reflectionTargetPairs": [
+      "76->78",
+      "78->76",
+      "79->75",
+      "79->76"
+    ]
+  },
+  "captures": [
+    {
+      "id": "spread_all",
+      "layout": "spread",
+      "focus": "all",
+      "url": "http://127.0.0.1:8765/analysis_outputs/3d_article_map/index.html?layout=spread&focus=all",
+      "screenshot": "analysis_outputs/3d_article_map/runtime_view_modes/spread_all.png",
+      "returnCode": 0,
+      "chromeTimedOut": false,
+      "stderrTail": "520/203613.064286:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\n[29764:7074350:0520/203615.773958:ERROR:gpu/command_buffer/service/shared_image/shared_image_manager.cc:361] SharedImageManager::ProduceOverlay: Trying to Produce a Overlay representation from a non-existent mailbox.\n[29764:7074350:0520/203615.774158:ERROR:components/viz/service/display_embedder/skia_output_device_buffer_queue.cc:258] Invalid mailbox.\n[29764:7074350:0520/203615.774462:ERROR:gpu/command_buffer/service/shared_image/shared_image_manager.cc:361] SharedImageManager::ProduceOverlay: Trying to Produce a Overlay representation from a non-existent mailbox.\n[29764:7074350:0520/203615.774467:ERROR:components/viz/service/display_embedder/skia_output_device_buffer_queue.cc:258] Invalid mailbox.\n[29764:7074350:0520/203615.775073:ERROR:gpu/command_buffer/service/shared_image/shared_image_manager.cc:361] SharedImageManager::ProduceOverlay: Trying to Produce a Overlay representation from a non-existent mailbox.\n[29764:7074350:0520/203615.775082:ERROR:components/viz/service/display_embedder/skia_output_device_buffer_queue.cc:258] Invalid mailbox.\n",
+      "stdoutTail": "",
+      "runtimeReadiness": {
+        "ready": true,
+        "active": "spread",
+        "focus": "all",
+        "metrics": {
+          "charCount": "5,966",
+          "wordCount": "1,243",
+          "anchorCount": "16",
+          "reflectionCount": "29"
+        },
+        "findings": 7,
+        "canvasRect": {
+          "x": 360,
+          "y": 0,
+          "width": 1080,
+          "height": 1000
+        },
+        "hoverText": "Ready"
+      },
+      "imageStats": {
+        "size": [
+          1440,
+          1000
+        ],
+        "canvasSize": [
+          1080,
+          1000
+        ],
+        "canvasBackgroundSample": [
+          16,
+          18,
+          22
+        ],
+        "nonBackgroundPixels": 902257,
+        "nonBackgroundFraction": 0.83542,
+        "brightPixels": 889664,
+        "saturatedPixels": 64398,
+        "approxColorPixels": {
+          "orange": 26138,
+          "cyan": 3084,
+          "magenta": 3702,
+          "green": 4528
+        }
+      }
+    },
+    {
+      "id": "fold_all",
+      "layout": "fold",
+      "focus": "all",
+      "url": "http://127.0.0.1:8765/analysis_outputs/3d_article_map/index.html?layout=fold&focus=all",
+      "screenshot": "analysis_outputs/3d_article_map/runtime_view_modes/fold_all.png",
+      "returnCode": 0,
+      "chromeTimedOut": false,
+      "stderrTail": "mes. This is *not* supported.\n[29826:7075170:0520/203624.943927:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\n[29826:7075170:0520/203624.952096:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\n[29826:7075170:0520/203624.957498:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\n[29831:7075186:0520/203628.735585:ERROR:gpu/command_buffer/service/shared_image/shared_image_manager.cc:361] SharedImageManager::ProduceOverlay: Trying to Produce a Overlay representation from a non-existent mailbox.\n[29831:7075186:0520/203628.735621:ERROR:components/viz/service/display_embedder/skia_output_device_buffer_queue.cc:258] Invalid mailbox.\n[29831:7075186:0520/203628.736141:ERROR:gpu/command_buffer/service/shared_image/shared_image_manager.cc:361] SharedImageManager::ProduceOverlay: Trying to Produce a Overlay representation from a non-existent mailbox.\n[29831:7075186:0520/203628.736150:ERROR:components/viz/service/display_embedder/skia_output_device_buffer_queue.cc:258] Invalid mailbox.\n",
+      "stdoutTail": "",
+      "runtimeReadiness": {
+        "ready": true,
+        "active": "fold",
+        "focus": "all",
+        "metrics": {
+          "charCount": "5,966",
+          "wordCount": "1,243",
+          "anchorCount": "16",
+          "reflectionCount": "29"
+        },
+        "findings": 7,
+        "canvasRect": {
+          "x": 360,
+          "y": 0,
+          "width": 1080,
+          "height": 1000
+        },
+        "hoverText": "Ready"
+      },
+      "imageStats": {
+        "size": [
+          1440,
+          1000
+        ],
+        "canvasSize": [
+          1080,
+          1000
+        ],
+        "canvasBackgroundSample": [
+          16,
+          18,
+          22
+        ],
+        "nonBackgroundPixels": 517845,
+        "nonBackgroundFraction": 0.47949,
+        "brightPixels": 400728,
+        "saturatedPixels": 34088,
+        "approxColorPixels": {
+          "orange": 11409,
+          "cyan": 962,
+          "magenta": 2455,
+          "green": 2739
+        }
+      }
+    },
+    {
+      "id": "fold_page76",
+      "layout": "fold",
+      "focus": "76",
+      "url": "http://127.0.0.1:8765/analysis_outputs/3d_article_map/index.html?layout=fold&focus=76",
+      "screenshot": "analysis_outputs/3d_article_map/runtime_view_modes/fold_page76.png",
+      "returnCode": 0,
+      "chromeTimedOut": false,
+      "stderrTail": ":0520/203637.621473:ERROR:components/viz/service/display_embedder/skia_output_device_buffer_queue.cc:258] Invalid mailbox.\n[29894:7075956:0520/203637.621886:ERROR:gpu/command_buffer/service/shared_image/shared_image_manager.cc:361] SharedImageManager::ProduceOverlay: Trying to Produce a Overlay representation from a non-existent mailbox.\n[29894:7075956:0520/203637.621894:ERROR:components/viz/service/display_embedder/skia_output_device_buffer_queue.cc:258] Invalid mailbox.\n[29890:7075909:0520/203637.627016:ERROR:mojo/public/cpp/bindings/lib/interface_endpoint_client.cc:748] Message 448091329 rejected by interface blink.mojom.FrameWidgetHost\n[29890:7075909:0520/203637.628063:ERROR:mojo/public/cpp/bindings/lib/interface_endpoint_client.cc:748] Message 6 rejected by interface blink.mojom.WidgetHost\n[29890:7075909:0520/203637.628076:ERROR:mojo/public/cpp/bindings/lib/interface_endpoint_client.cc:748] Message 7 rejected by interface blink.mojom.WidgetHost\n[29890:7075909:0520/203637.644190:ERROR:chrome/browser/web_applications/externally_managed_app_manager.cc:680] https://docs.google.com/presentation/installwebapp?usp=chrome_default from install source 1 failed to install with reason 21\n",
+      "stdoutTail": "",
+      "runtimeReadiness": {
+        "ready": true,
+        "active": "fold",
+        "focus": "76",
+        "metrics": {
+          "charCount": "5,966",
+          "wordCount": "1,243",
+          "anchorCount": "16",
+          "reflectionCount": "29"
+        },
+        "findings": 7,
+        "canvasRect": {
+          "x": 360,
+          "y": 0,
+          "width": 1080,
+          "height": 1000
+        },
+        "hoverText": "Ready"
+      },
+      "imageStats": {
+        "size": [
+          1440,
+          1000
+        ],
+        "canvasSize": [
+          1080,
+          1000
+        ],
+        "canvasBackgroundSample": [
+          16,
+          18,
+          22
+        ],
+        "nonBackgroundPixels": 248829,
+        "nonBackgroundFraction": 0.2304,
+        "brightPixels": 245432,
+        "saturatedPixels": 31122,
+        "approxColorPixels": {
+          "orange": 6925,
+          "cyan": 678,
+          "magenta": 5251,
+          "green": 814
+        }
+      }
+    },
+    {
+      "id": "stack_all",
+      "layout": "stack",
+      "focus": "all",
+      "url": "http://127.0.0.1:8765/analysis_outputs/3d_article_map/index.html?layout=stack&focus=all",
+      "screenshot": "analysis_outputs/3d_article_map/runtime_view_modes/stack_all.png",
+      "returnCode": 0,
+      "chromeTimedOut": false,
+      "stderrTail": "ge (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels\n[29933:7076603:0520/203641.324349:ERROR:gpu/command_buffer/service/gl_utils.cc:431] [.WebGL-0x11c00496000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)\nTrying to load the allocator multiple times. This is *not* supported.\n[29928:7076585:0520/203645.346531:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\n[29928:7076585:0520/203645.352926:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\n[29928:7076585:0520/203645.354386:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR\n[29933:7076603:0520/203647.848508:ERROR:gpu/command_buffer/service/shared_image/shared_image_manager.cc:361] SharedImageManager::ProduceOverlay: Trying to Produce a Overlay representation from a non-existent mailbox.\n[29933:7076603:0520/203647.848551:ERROR:components/viz/service/display_embedder/skia_output_device_buffer_queue.cc:258] Invalid mailbox.\n",
+      "stdoutTail": "",
+      "runtimeReadiness": {
+        "ready": true,
+        "active": "stack",
+        "focus": "all",
+        "metrics": {
+          "charCount": "5,966",
+          "wordCount": "1,243",
+          "anchorCount": "16",
+          "reflectionCount": "29"
+        },
+        "findings": 7,
+        "canvasRect": {
+          "x": 360,
+          "y": 0,
+          "width": 1080,
+          "height": 1000
+        },
+        "hoverText": "Ready"
+      },
+      "imageStats": {
+        "size": [
+          1440,
+          1000
+        ],
+        "canvasSize": [
+          1080,
+          1000
+        ],
+        "canvasBackgroundSample": [
+          16,
+          18,
+          22
+        ],
+        "nonBackgroundPixels": 676929,
+        "nonBackgroundFraction": 0.62679,
+        "brightPixels": 666541,
+        "saturatedPixels": 329782,
+        "approxColorPixels": {
+          "orange": 14354,
+          "cyan": 178,
+          "magenta": 108423,
+          "green": 142
+        }
+      }
+    }
+  ],
+  "nonblankCaptures": [
+    "spread_all",
+    "fold_all",
+    "fold_page76",
+    "stack_all"
+  ],
+  "assessment": [
+    "The rendered 3D viewer is reproducibly nonblank when Chrome is forced to use SwiftShader/ANGLE; this avoids the blank-canvas failure seen in the default headless path.",
+    "The viewer still exposes only the three known layout modes: spread, fold, and stack.",
+    "The URL focus parameter is a display filter only. It hides non-selected page groups but does not recompute mirror/fold geometry or create a new selector.",
+    "Runtime metrics are populated and source-consistent: the viewer reports 5,966 display letters, 1,243 words, 16 anchors, and 29 mirror boxes; the JSON has 7,299 raw character records because it includes blanks/spacing, plus 40 stored ray selections with 28 displayed.",
+    "The screenshots show overlay layers, anchors, rays, highlights, and text sprites as review aids. They do not reveal a hidden UI mode, hidden fold selector, or new ordering rule."
+  ],
+  "decision": "Use the 3D viewer for visual review/orientation only. Future runtime screenshots should force SwiftShader/ANGLE; do not infer puzzle signal from blank default headless captures or from focus/layout UI state.",
+  "nextMove": "Return to source evidence: only reopen extraction when a new source/clue names the unit/order, or when a physical/original-layout image changes the page-76/G5/O5 geometry."
+}

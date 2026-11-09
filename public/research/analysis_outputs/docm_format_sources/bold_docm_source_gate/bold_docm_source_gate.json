@@ -1,0 +1,140 @@
+{
+  "createdAt": "2026-05-21T00:11:28",
+  "scope": "BOLD.docm source/provenance gate; no macro execution, extraction, hashing, key derivation, BIP39, WIF, OCR, or address checks",
+  "inputs": {
+    "macro_audit": "analysis_outputs/docm_format_sources/bold_docm_macro_audit.json",
+    "bold_vs_article": "analysis_outputs/docm_format_sources/bold_vs_article_active_corridor/bold_vs_article_active_corridor.json",
+    "target_format_authority": "analysis_outputs/docm_format_sources/page76_target_format_authority_lock/page76_target_format_authority_lock.json",
+    "typeka_font_gate": "analysis_outputs/docm_format_sources/typeka_font_r3_gate_synthesis/typeka_font_r3_gate_synthesis.json"
+  },
+  "summary": {
+    "boldHasVbaProject": true,
+    "boldHasVbaData": true,
+    "boldActiveTargetsPresent": "0/4",
+    "articleActiveTargetsPresent": "4/4",
+    "otrobipRecovered": false,
+    "boldWordCount": 230,
+    "articleWordCount": 1281,
+    "targetFormatAuthorityDecision": "page76_target_format_authority_locked_no_selector",
+    "typekaGateDecision": "typeka_font_layer_closed_for_current_scan_as_r3_selector",
+    "selectorUnlocked": false
+  },
+  "documentRows": [
+    {
+      "document": "BOLD.docm",
+      "hasVbaProject": true,
+      "hasVbaData": true,
+      "paragraphCount": 25,
+      "runCount": 140,
+      "wordCount": 230,
+      "fontRunCounts": {
+        "Typeka": 139,
+        "Stencil": 1
+      },
+      "highlightRunCounts": {
+        "(none)": 97,
+        "yellow": 43
+      },
+      "activePresent": [],
+      "activePresentCount": 0,
+      "contextPresent": [
+        "IMF",
+        "Nayib Bukele",
+        "IMF loan"
+      ],
+      "contextPresentCount": 3,
+      "instructionTermsInFullText": [
+        "right"
+      ],
+      "authorityUse": "generated/annotation sanity witness only"
+    },
+    {
+      "document": "Article with Fonts.docm",
+      "hasVbaProject": false,
+      "hasVbaData": false,
+      "paragraphCount": 149,
+      "runCount": 344,
+      "wordCount": 1281,
+      "fontRunCounts": {
+        "Typeka": 295,
+        "Typeka Mix": 47,
+        "LonestarW00-Regular": 1,
+        "Stencil": 1
+      },
+      "highlightRunCounts": {
+        "(none)": 278,
+        "yellow": 35,
+        "black": 28,
+        "cyan": 3
+      },
+      "activePresent": [
+        "buying the dip",
+        "$1 billion",
+        "Volcano Bonds",
+        "shitcoiner at heart"
+      ],
+      "activePresentCount": 4,
+      "contextPresent": [
+        "El Salvador",
+        "International Monetary Fund",
+        "IMF",
+        "Nayib Bukele",
+        "should sell",
+        "future bitcoin earnings",
+        "IMF loan",
+        "Mike Novogratz",
+        "trust that guy"
+      ],
+      "contextPresentCount": 9,
+      "instructionTermsInFullText": [
+        "take",
+        "first",
+        "left",
+        "right"
+      ],
+      "authorityUse": "trusted formatting witness"
+    }
+  ],
+  "macroEvidence": {
+    "hasVbaProject": true,
+    "hasVbaData": true,
+    "containsHighlightWordsMacro": true,
+    "referencedPath": "private_inputs\\OneDrive\\Desktop\\Alles\\TOXIC_AF\\BIP39\\otrobip.txt'",
+    "routine": "HighlightWordsFromTextFile",
+    "localOtrobipMatchCount": 0,
+    "searchRoots": [
+      "private_inputs/Desktop",
+      "."
+    ]
+  },
+  "gateRows": [
+    {
+      "gate": "R1 source identity",
+      "status": "FAIL for BOLD",
+      "evidence": "BOLD.docm has a VBA highlighting workflow and is not an original layout/font source."
+    },
+    {
+      "gate": "R2 target preservation",
+      "status": "FAIL for BOLD",
+      "evidence": "BOLD.docm contains 0/4 locked O4/B4/G5/O5 active targets; Article with Fonts contains 4/4."
+    },
+    {
+      "gate": "R3 unit/order evidence",
+      "status": "FAIL",
+      "evidence": "The macro points to a missing word list and provides no page-76 word/letter/line/font order."
+    },
+    {
+      "gate": "R4 orientation/source discipline",
+      "status": "PASS as classified",
+      "evidence": "BOLD is kept separate from DOCM/high-res format authority and is not used for geometry."
+    },
+    {
+      "gate": "R5 controlled improvement",
+      "status": "FAIL",
+      "evidence": "BOLD does not improve active-corridor coverage or source registration."
+    }
+  ],
+  "decision": "bold_docm_generated_artifact_not_source_or_selector",
+  "sheet": "analysis_outputs/docm_format_sources/bold_docm_source_gate/bold_docm_source_gate_sheet.jpg",
+  "nextMove": "Use BOLD.docm only as generated-artifact sanity evidence unless the referenced `otrobip.txt` or original workflow files are recovered; keep Article with Fonts.docm as the Word formatting witness."
+}

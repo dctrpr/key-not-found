@@ -1,0 +1,101 @@
+{
+  "createdAt": "2026-05-20T23:47:51",
+  "scope": "source packet crop authority sync; no extraction, no key derivation, no hashing, no OCR, no address checks",
+  "inputs": {
+    "source_packet": "analysis_outputs/source_audit/source_acquisition_target_packet/source_acquisition_target_packet.json",
+    "packet_integrity": "analysis_outputs/source_audit/source_acquisition_packet_integrity/source_acquisition_packet_integrity.json",
+    "crop_completion": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "format_lock": "analysis_outputs/docm_format_sources/page76_target_format_authority_lock/page76_target_format_authority_lock.json",
+    "text_lock": "analysis_outputs/plain_text_transcript/page76_target_text_authority_lock/page76_target_text_authority_lock.json",
+    "future_rubric": "analysis_outputs/source_audit/future_source_scoring_rubric/future_source_scoring_rubric.json"
+  },
+  "summary": {
+    "syncStatus": "PASS_WITH_SUPPLEMENTAL_APPENDIX",
+    "historicalPacketStillValid": true,
+    "historicalPacketUsesOldPriorityCropPanel": true,
+    "completedCropPanelAlreadyInHistoricalPacket": false,
+    "cropCoverage": "4/4",
+    "allTargetCropsPresent": true,
+    "activeIdsPresent": true,
+    "formatAuthority": "DOCM runs + high-res visual highlight consistency + page-76 crop pack/manual boxes",
+    "textAuthority": "canonical_plain + docm_text + markdown_transcript",
+    "futureRubricExtractionGate": "R1, R2, R3, R4, and R5 all pass on the same new source/clue item, with R3 providing a source-backed unit/order.",
+    "selectorUnlocked": false,
+    "deadBranchCount": 237
+  },
+  "targetRows": [
+    {
+      "id": "buying_dip",
+      "label": "O4 buying the dip",
+      "visualState": "Y",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "box": [
+        1334,
+        2177,
+        1801,
+        2225
+      ],
+      "output": "analysis_outputs/source_audit/page76_active_target_crop_completion/buying_dip_crop.jpg",
+      "exists": true,
+      "size": 45324
+    },
+    {
+      "id": "one_billion",
+      "label": "B4 $1 billion",
+      "visualState": "K",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "box": [
+        428,
+        2398,
+        691,
+        2445
+      ],
+      "output": "analysis_outputs/source_audit/page76_active_target_crop_completion/one_billion_crop.jpg",
+      "exists": true,
+      "size": 46898
+    },
+    {
+      "id": "volcano_bonds",
+      "label": "G5 Volcano Bonds",
+      "visualState": "K",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "box": [
+        795,
+        2544,
+        1196,
+        2592
+      ],
+      "output": "analysis_outputs/source_audit/page76_active_target_crop_completion/volcano_bonds_crop.jpg",
+      "exists": true,
+      "size": 36024
+    },
+    {
+      "id": "shitcoiner_heart",
+      "label": "O5 shitcoiner at heart",
+      "visualState": "Y",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "box": [
+        1040,
+        2932,
+        1661,
+        2982
+      ],
+      "output": "analysis_outputs/source_audit/page76_active_target_crop_completion/shitcoiner_heart_crop.jpg",
+      "exists": true,
+      "size": 47769
+    }
+  ],
+  "handoffRule": {
+    "useForJobsAndGates": "analysis_outputs/source_audit/source_acquisition_target_packet/source_acquisition_target_packet.md",
+    "useForActivePage76VisualComparison": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.md",
+    "doNotUseForB4G5Geometry": "old projected p76 grey boxes from the grey-reading audit",
+    "r3GateStillRequired": true
+  },
+  "sheet": "analysis_outputs/source_audit/source_packet_crop_authority_sync/source_packet_crop_authority_sync_sheet.jpg",
+  "decision": "source_packet_crop_authority_synced_with_supplemental_appendix_no_selector",
+  "nextMove": "When new source material appears, score it with the source-acquisition packet/R1-R5 rubric and compare page-76 targets against the completed O4/B4/G5/O5 crop sheet before any extraction attempt."
+}

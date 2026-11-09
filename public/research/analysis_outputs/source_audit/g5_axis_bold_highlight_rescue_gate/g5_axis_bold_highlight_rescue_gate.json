@@ -1,0 +1,205 @@
+{
+  "createdAt": "2026-05-21T04:03:44",
+  "scope": "G5-axis bold/highlight rescue gate; no OCR, extraction, hashing, or key derivation",
+  "inputs": {
+    "page76LineLevelCorridor": "analysis_outputs/3d_article_map/page76_line_level_corridor.json",
+    "activeLineUnitReconciliation": "analysis_outputs/plain_text_transcript/active_line_unit_reconciliation/active_line_unit_reconciliation.json",
+    "activeLineCorridorMirrorIndexGate": "analysis_outputs/source_audit/active_line_corridor_mirror_index_gate/active_line_corridor_mirror_index_gate.json"
+  },
+  "summary": {
+    "axisPageLine": 27,
+    "axisCorridorIndex": 9,
+    "activeOrder": [
+      "buying_dip",
+      "one_billion",
+      "volcano_bonds",
+      "shitcoiner_heart"
+    ],
+    "activeHitCount": 3,
+    "activeMissCount": 1,
+    "nonActiveSignalHitCount": 1,
+    "reflectedStyleStream": "OBGO",
+    "reflectedRoleStream": "active|bold_control|active|active",
+    "reflectedActiveTargetStream": "shitcoiner_heart|-|volcano_bonds|buying_dip",
+    "initialStream": "MNcH",
+    "lastInitialStream": "haId",
+    "boldStream": "shitcoineratheartNvzIMFbuyingthedip",
+    "boldStreamLength": 35,
+    "partialBoldStream": "Nvz",
+    "partialBoldStreamLength": 3,
+    "signalPairCount": 5,
+    "strictInstructionHits": [],
+    "strictInstructionHitCount": 0,
+    "selectorUnlocked": false
+  },
+  "activeOrderReflections": [
+    {
+      "from": "buying_dip",
+      "fromLabel": "buying the dip",
+      "fromPageLine": 22,
+      "fromCorridorIndex": 4,
+      "reflectedPageLine": 32,
+      "reflectedCorridorIndex": 14,
+      "text": "Maybe because he's a shitcoiner at heart.",
+      "initial": "M",
+      "lastInitial": "h",
+      "reflected": {
+        "role": "active",
+        "styleCode": "O",
+        "hasSignal": true,
+        "activeTargetIds": [
+          "shitcoiner_heart"
+        ],
+        "highlightLabels": [
+          "orange: shitcoiner at heart"
+        ],
+        "boldLetters": "shitcoineratheart",
+        "partialBoldLetters": ""
+      }
+    },
+    {
+      "from": "one_billion",
+      "fromLabel": "$1 billion",
+      "fromPageLine": 25,
+      "fromCorridorIndex": 7,
+      "reflectedPageLine": 29,
+      "reflectedCorridorIndex": 11,
+      "text": "Novogratz in the tweet, figuring he could sell a",
+      "initial": "N",
+      "lastInitial": "a",
+      "reflected": {
+        "role": "bold_control",
+        "styleCode": "B",
+        "hasSignal": true,
+        "activeTargetIds": [],
+        "highlightLabels": [
+          "bold-partial: Novogratz"
+        ],
+        "boldLetters": "Nvz",
+        "partialBoldLetters": "Nvz"
+      }
+    },
+    {
+      "from": "volcano_bonds",
+      "fromLabel": "Volcano Bonds",
+      "fromPageLine": 27,
+      "fromCorridorIndex": 9,
+      "reflectedPageLine": 27,
+      "reflectedCorridorIndex": 9,
+      "text": "collateralized \u201cVolcano Bonds\u201d to pay off the IMF",
+      "initial": "c",
+      "lastInitial": "I",
+      "reflected": {
+        "role": "active",
+        "styleCode": "G",
+        "hasSignal": true,
+        "activeTargetIds": [
+          "volcano_bonds"
+        ],
+        "highlightLabels": [
+          "grey: Volcano Bonds",
+          "bold: IMF"
+        ],
+        "boldLetters": "IMF",
+        "partialBoldLetters": ""
+      }
+    },
+    {
+      "from": "shitcoiner_heart",
+      "fromLabel": "shitcoiner at heart",
+      "fromPageLine": 32,
+      "fromCorridorIndex": 14,
+      "reflectedPageLine": 22,
+      "reflectedCorridorIndex": 4,
+      "text": "He's taunting them, telling them he's \u201cbuying the dip.\u201d",
+      "initial": "H",
+      "lastInitial": "d",
+      "reflected": {
+        "role": "active",
+        "styleCode": "O",
+        "hasSignal": true,
+        "activeTargetIds": [
+          "buying_dip"
+        ],
+        "highlightLabels": [
+          "orange: buying the dip"
+        ],
+        "boldLetters": "buyingthedip",
+        "partialBoldLetters": ""
+      }
+    }
+  ],
+  "signalPairs": [
+    {
+      "line": 22,
+      "corridor": 4,
+      "mirrorLine": 32,
+      "mirrorCorridor": 14,
+      "sourceStyle": "O",
+      "mirrorStyle": "O",
+      "sourceRole": "active",
+      "mirrorRole": "active",
+      "sourceText": "He's taunting them, telling them he's \u201cbuying the dip.\u201d",
+      "mirrorText": "Maybe because he's a shitcoiner at heart."
+    },
+    {
+      "line": 23,
+      "corridor": 5,
+      "mirrorLine": 31,
+      "mirrorCorridor": 13,
+      "sourceStyle": "B",
+      "mirrorStyle": "B",
+      "sourceRole": "bold_control",
+      "mirrorRole": "bold_control",
+      "sourceText": "I tweeted President Nayib Bukele when he announced",
+      "mirrorText": "hasn't moved on it. I don't really trust that guy."
+    },
+    {
+      "line": 25,
+      "corridor": 7,
+      "mirrorLine": 29,
+      "mirrorCorridor": 11,
+      "sourceStyle": "G",
+      "mirrorStyle": "B",
+      "sourceRole": "active",
+      "mirrorRole": "bold_control",
+      "sourceText": "$1 billion in bitcoin \u2014 that he should sell",
+      "mirrorText": "Novogratz in the tweet, figuring he could sell a"
+    },
+    {
+      "line": 27,
+      "corridor": 9,
+      "mirrorLine": 27,
+      "mirrorCorridor": 9,
+      "sourceStyle": "G",
+      "mirrorStyle": "G",
+      "sourceRole": "active",
+      "mirrorRole": "active",
+      "sourceText": "collateralized \u201cVolcano Bonds\u201d to pay off the IMF",
+      "mirrorText": "collateralized \u201cVolcano Bonds\u201d to pay off the IMF"
+    },
+    {
+      "line": 28,
+      "corridor": 10,
+      "mirrorLine": 26,
+      "mirrorCorridor": 8,
+      "sourceStyle": "B",
+      "mirrorStyle": "-",
+      "sourceRole": "bold_control",
+      "mirrorRole": "plain_control",
+      "sourceText": "loan and get rid of those leeches. I tagged Mike",
+      "mirrorText": "billions worth of future bitcoin earnings"
+    }
+  ],
+  "assessment": [
+    "The G5-centered axis keeps three active hits but only by accepting a non-active bold/partial-bold Novogratz line as B4's mirror.",
+    "Requiring bold/highlighted rows does not rescue the near miss because the failed B4 reflection is itself a signal-bearing control.",
+    "The reflected bold stream is ordinary corridor emphasis and contains no strict unit/order instruction terms."
+  ],
+  "decision": {
+    "g5AxisBoldHighlightRescueGate": "g5_axis_signal_filter_no_selector",
+    "selectorUnlocked": false,
+    "nextMove": "Keep the G5-centered axis as a source-validation near miss only unless a clue explicitly names Novogratz/sell as a replacement for B4 or names a line/corridor mirror unit/order rule."
+  },
+  "sheet": "analysis_outputs/source_audit/g5_axis_bold_highlight_rescue_gate/g5_axis_bold_highlight_rescue_gate_sheet.jpg"
+}

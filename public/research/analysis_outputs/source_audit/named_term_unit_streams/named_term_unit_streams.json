@@ -1,0 +1,444 @@
+{
+  "createdAt": "2026-05-20T06:12:13",
+  "scope": "Externally named term/unit stream audit; no key candidates, hashes, seed phrases, or address checks.",
+  "rows": [
+    {
+      "sourceId": "O1",
+      "sourceColor": "O",
+      "sourceIndex": 1,
+      "targetLine": 1,
+      "targetText": "Bitcoin. It's the freaking UTXO ghetto up in here, y'all.",
+      "namedTerms": [
+        "bitcoin"
+      ],
+      "preferredTerm": "bitcoin",
+      "provenance": [
+        "highlighttarget",
+        "reflectedhighlightgraph"
+      ]
+    },
+    {
+      "sourceId": "O2",
+      "sourceColor": "O",
+      "sourceIndex": 2,
+      "targetLine": 3,
+      "targetText": "but George Clinton and James Brown clones. It's Martin Luther",
+      "namedTerms": [
+        "george",
+        "clinton",
+        "james",
+        "brown",
+        "clones",
+        "martin",
+        "luther"
+      ],
+      "preferredTerm": "george",
+      "provenance": [
+        "reflectedcarrierterms"
+      ]
+    },
+    {
+      "sourceId": "B1",
+      "sourceColor": "B",
+      "sourceIndex": 1,
+      "targetLine": 7,
+      "targetText": "nonsense (and 10 years of watching Peter Schiff miss buying bitcoin",
+      "namedTerms": [
+        "bitcoin"
+      ],
+      "preferredTerm": "bitcoin",
+      "provenance": [
+        "highlighttarget",
+        "reflectedhighlightgraph"
+      ]
+    },
+    {
+      "sourceId": "B2",
+      "sourceColor": "B",
+      "sourceIndex": 2,
+      "targetLine": 9,
+      "targetText": "have dulled shitcoiners' and nocoiners' minds.",
+      "namedTerms": [
+        "dulled",
+        "shitcoiners"
+      ],
+      "preferredTerm": "dulled",
+      "provenance": [
+        "p80number100",
+        "p80termsymptoms"
+      ]
+    },
+    {
+      "sourceId": "O3",
+      "sourceColor": "O",
+      "sourceIndex": 3,
+      "targetLine": 16,
+      "targetText": "laundering lobotomy. It’s a stun gun to the genitals.",
+      "namedTerms": [
+        "stun",
+        "genitals"
+      ],
+      "preferredTerm": "genitals",
+      "provenance": [
+        "highlighttarget",
+        "reflectedhighlightgraph"
+      ]
+    },
+    {
+      "sourceId": "B3",
+      "sourceColor": "B",
+      "sourceIndex": 3,
+      "targetLine": 19,
+      "targetText": "Don't believe me?",
+      "namedTerms": [],
+      "preferredTerm": "",
+      "provenance": []
+    },
+    {
+      "sourceId": "O4",
+      "sourceColor": "O",
+      "sourceIndex": 4,
+      "targetLine": 26,
+      "targetText": "billions worth of future bitcoin earnings",
+      "namedTerms": [
+        "bitcoin",
+        "earnings"
+      ],
+      "preferredTerm": "earnings",
+      "provenance": [
+        "p78bboxwords",
+        "p78darkwords",
+        "reflectedhighlightgraph"
+      ]
+    },
+    {
+      "sourceId": "B4",
+      "sourceColor": "B",
+      "sourceIndex": 4,
+      "targetLine": 29,
+      "targetText": "Novogratz in the tweet, figuring he could sell a",
+      "namedTerms": [
+        "could",
+        "sell"
+      ],
+      "preferredTerm": "sell",
+      "provenance": [
+        "p78bboxwords",
+        "p78darkwords",
+        "p78holewords"
+      ]
+    },
+    {
+      "sourceId": "B5",
+      "sourceColor": "B",
+      "sourceIndex": 5,
+      "targetLine": 32,
+      "targetText": "Maybe because he's a shitcoiner at heart.",
+      "namedTerms": [
+        "heart"
+      ],
+      "preferredTerm": "heart",
+      "provenance": [
+        "highlighttarget",
+        "reflectedhighlightgraph",
+        "targetconvergence"
+      ]
+    }
+  ],
+  "streams": [
+    {
+      "name": "preferred_terms_forward",
+      "values": [
+        "bitcoin",
+        "george",
+        "bitcoin",
+        "dulled",
+        "genitals",
+        "earnings",
+        "sell",
+        "heart"
+      ],
+      "joinedWithSpaces": "bitcoin george bitcoin dulled genitals earnings sell heart",
+      "compact": "bitcoingeorgebitcoindulledgenitalsearningssellheart",
+      "instructionWordHits": [],
+      "instructionSubstringHits": []
+    },
+    {
+      "name": "preferred_terms_reverse",
+      "values": [
+        "heart",
+        "sell",
+        "earnings",
+        "genitals",
+        "dulled",
+        "bitcoin",
+        "george",
+        "bitcoin"
+      ],
+      "joinedWithSpaces": "heart sell earnings genitals dulled bitcoin george bitcoin",
+      "compact": "heartsellearningsgenitalsdulledbitcoingeorgebitcoin",
+      "instructionWordHits": [],
+      "instructionSubstringHits": []
+    },
+    {
+      "name": "all_named_terms_forward",
+      "values": [
+        "bitcoin",
+        "george",
+        "clinton",
+        "james",
+        "brown",
+        "clones",
+        "martin",
+        "luther",
+        "bitcoin",
+        "dulled",
+        "shitcoiners",
+        "stun",
+        "genitals",
+        "bitcoin",
+        "earnings",
+        "could",
+        "sell",
+        "heart"
+      ],
+      "joinedWithSpaces": "bitcoin george clinton james brown clones martin luther bitcoin dulled shitcoiners stun genitals bitcoin earnings could sell heart",
+      "compact": "bitcoingeorgeclintonjamesbrownclonesmartinlutherbitcoindulledshitcoinersstungenitalsbitcoinearningscouldsellheart",
+      "instructionWordHits": [],
+      "instructionSubstringHits": []
+    },
+    {
+      "name": "all_named_terms_reverse",
+      "values": [
+        "heart",
+        "sell",
+        "could",
+        "earnings",
+        "bitcoin",
+        "genitals",
+        "stun",
+        "shitcoiners",
+        "dulled",
+        "bitcoin",
+        "luther",
+        "martin",
+        "clones",
+        "brown",
+        "james",
+        "clinton",
+        "george",
+        "bitcoin"
+      ],
+      "joinedWithSpaces": "heart sell could earnings bitcoin genitals stun shitcoiners dulled bitcoin luther martin clones brown james clinton george bitcoin",
+      "compact": "heartsellcouldearningsbitcoingenitalsstunshitcoinersdulledbitcoinluthermartinclonesbrownjamesclintongeorgebitcoin",
+      "instructionWordHits": [],
+      "instructionSubstringHits": []
+    },
+    {
+      "name": "first_named_term_per_row",
+      "values": [
+        "bitcoin",
+        "george",
+        "bitcoin",
+        "dulled",
+        "stun",
+        "bitcoin",
+        "could",
+        "heart"
+      ],
+      "joinedWithSpaces": "bitcoin george bitcoin dulled stun bitcoin could heart",
+      "compact": "bitcoingeorgebitcoindulledstunbitcoincouldheart",
+      "instructionWordHits": [],
+      "instructionSubstringHits": []
+    },
+    {
+      "name": "last_named_term_per_row",
+      "values": [
+        "bitcoin",
+        "luther",
+        "bitcoin",
+        "shitcoiners",
+        "genitals",
+        "earnings",
+        "sell",
+        "heart"
+      ],
+      "joinedWithSpaces": "bitcoin luther bitcoin shitcoiners genitals earnings sell heart",
+      "compact": "bitcoinlutherbitcoinshitcoinersgenitalsearningssellheart",
+      "instructionWordHits": [],
+      "instructionSubstringHits": []
+    },
+    {
+      "name": "source_index_selected_terms",
+      "values": [
+        "bitcoin",
+        "clinton",
+        "bitcoin",
+        "shitcoiners",
+        "stun",
+        "earnings",
+        "sell",
+        "heart"
+      ],
+      "joinedWithSpaces": "bitcoin clinton bitcoin shitcoiners stun earnings sell heart",
+      "compact": "bitcoinclintonbitcoinshitcoinersstunearningssellheart",
+      "instructionWordHits": [],
+      "instructionSubstringHits": []
+    },
+    {
+      "name": "color_rule_O_first_B_last",
+      "values": [
+        "bitcoin",
+        "george",
+        "bitcoin",
+        "shitcoiners",
+        "stun",
+        "bitcoin",
+        "sell",
+        "heart"
+      ],
+      "joinedWithSpaces": "bitcoin george bitcoin shitcoiners stun bitcoin sell heart",
+      "compact": "bitcoingeorgebitcoinshitcoinersstunbitcoinsellheart",
+      "instructionWordHits": [],
+      "instructionSubstringHits": []
+    },
+    {
+      "name": "color_rule_O_last_B_first",
+      "values": [
+        "bitcoin",
+        "luther",
+        "bitcoin",
+        "dulled",
+        "genitals",
+        "earnings",
+        "could",
+        "heart"
+      ],
+      "joinedWithSpaces": "bitcoin luther bitcoin dulled genitals earnings could heart",
+      "compact": "bitcoinlutherbitcoindulledgenitalsearningscouldheart",
+      "instructionWordHits": [],
+      "instructionSubstringHits": []
+    },
+    {
+      "name": "preferred_initials",
+      "values": [
+        "b",
+        "g",
+        "b",
+        "d",
+        "g",
+        "e",
+        "s",
+        "h"
+      ],
+      "joinedWithSpaces": "b g b d g e s h",
+      "compact": "bgbdgesh",
+      "instructionWordHits": [],
+      "instructionSubstringHits": []
+    },
+    {
+      "name": "all_named_initials",
+      "values": [
+        "b",
+        "g",
+        "c",
+        "j",
+        "b",
+        "c",
+        "m",
+        "l",
+        "b",
+        "d",
+        "s",
+        "s",
+        "g",
+        "b",
+        "e",
+        "c",
+        "s",
+        "h"
+      ],
+      "joinedWithSpaces": "b g c j b c m l b d s s g b e c s h",
+      "compact": "bgcjbcmlbdssgbecsh",
+      "instructionWordHits": [],
+      "instructionSubstringHits": []
+    },
+    {
+      "name": "source_index_letters_first_terms",
+      "values": [
+        "b",
+        "e",
+        "b",
+        "u",
+        "u",
+        "c",
+        "l",
+        "t"
+      ],
+      "joinedWithSpaces": "b e b u u c l t",
+      "compact": "bebuuclt",
+      "instructionWordHits": [],
+      "instructionSubstringHits": []
+    },
+    {
+      "name": "source_index_letters_last_terms",
+      "values": [
+        "b",
+        "u",
+        "b",
+        "h",
+        "n",
+        "n",
+        "l",
+        "t"
+      ],
+      "joinedWithSpaces": "b u b h n n l t",
+      "compact": "bubhnnlt",
+      "instructionWordHits": [],
+      "instructionSubstringHits": []
+    },
+    {
+      "name": "source_index_letters_first_terms_from_end",
+      "values": [
+        "n",
+        "g",
+        "n",
+        "e",
+        "t",
+        "c",
+        "o",
+        "h"
+      ],
+      "joinedWithSpaces": "n g n e t c o h",
+      "compact": "ngnetcoh",
+      "instructionWordHits": [],
+      "instructionSubstringHits": []
+    },
+    {
+      "name": "source_index_letters_last_terms_from_end",
+      "values": [
+        "n",
+        "e",
+        "n",
+        "r",
+        "a",
+        "i",
+        "s",
+        "h"
+      ],
+      "joinedWithSpaces": "n e n r a i s h",
+      "compact": "nenraish",
+      "instructionWordHits": [],
+      "instructionSubstringHits": []
+    }
+  ],
+  "flaggedStreams": [],
+  "assessment": [
+    "Adding the secondary-supported #2 terms does not turn the named-term streams into a readable instruction.",
+    "The strongest expanded preferred sequence is `bitcoin george bitcoin dulled genitals earnings sell heart`, with initials `bgbdgesh`; reversed and color-rule variants are also not instruction-like.",
+    "All-named terms mainly restate source provenance: `bitcoin george clinton james brown clones martin luther bitcoin dulled shitcoiners stun genitals bitcoin earnings could sell heart`.",
+    "Source-index letter picks and O/B first-last rules produce short nonsense strings rather than `read/take/mirror/word/letter/key` language.",
+    "This closes externally named terms as a standalone extraction unit, while preserving them as a cleaner locator ledger."
+  ],
+  "nextMove": "Use the named-term ledger to drive a visual/typography audit around only those exact words on page 76, especially whether Typeka states or highlight edges mark one letter per named word."
+}

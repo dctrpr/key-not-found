@@ -1,0 +1,801 @@
+{
+  "createdAt": "2026-05-21T04:36:50",
+  "scope": [
+    "Use exact target-center x coordinates as vertical C9-frame chords.",
+    "Compare active O4/B4/G5/O5 chords with non-active page-76 highlight control chords.",
+    "Measure existing word/highlight/active-target intersections and strict instruction terms only.",
+    "No OCR, hashing, key derivation, private-key checks, seed/WIF checks, address checks, or broad candidate generation."
+  ],
+  "inputs": {
+    "activeTargets": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "articleMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "c9HeaderGlyphSlotGate": "analysis_outputs/source_audit/c9_header_glyph_slot_gate/c9_header_glyph_slot_gate.json"
+  },
+  "c9Frame": [
+    294.0,
+    2176.81,
+    2250.0,
+    3023.73
+  ],
+  "slots": [
+    {
+      "index": 0,
+      "letter": "O",
+      "left": 294.0,
+      "right": 538.5697177074414,
+      "width": 244.56971770744144,
+      "sourcePage": 76,
+      "sourceGlyphBox": [
+        2150.98,
+        153.05,
+        2168.52,
+        184.24
+      ]
+    },
+    {
+      "index": 1,
+      "letter": "V",
+      "left": 538.5697177074414,
+      "right": 783.0000000000016,
+      "width": 244.43028229256015,
+      "sourcePage": 76,
+      "sourceGlyphBox": [
+        2168.52,
+        153.05,
+        2186.05,
+        184.24
+      ]
+    },
+    {
+      "index": 2,
+      "letter": "E",
+      "left": 783.0000000000016,
+      "right": 1027.569717707443,
+      "width": 244.56971770744144,
+      "sourcePage": 76,
+      "sourceGlyphBox": [
+        2186.05,
+        153.05,
+        2203.59,
+        184.24
+      ]
+    },
+    {
+      "index": 3,
+      "letter": "R",
+      "left": 1027.569717707443,
+      "right": 1271.9999999999968,
+      "width": 244.43028229255378,
+      "sourcePage": 76,
+      "sourceGlyphBox": [
+        2203.59,
+        153.05,
+        2221.12,
+        184.24
+      ]
+    },
+    {
+      "index": 4,
+      "letter": "D",
+      "left": 1271.9999999999968,
+      "right": 1516.5697177074383,
+      "width": 244.56971770744144,
+      "sourcePage": 76,
+      "sourceGlyphBox": [
+        2221.12,
+        153.05,
+        2238.66,
+        184.24
+      ]
+    },
+    {
+      "index": 5,
+      "letter": "O",
+      "left": 1516.5697177074383,
+      "right": 1760.9999999999984,
+      "width": 244.43028229256015,
+      "sourcePage": 76,
+      "sourceGlyphBox": [
+        2238.66,
+        153.05,
+        2256.19,
+        184.24
+      ]
+    },
+    {
+      "index": 6,
+      "letter": "S",
+      "left": 1760.9999999999984,
+      "right": 2005.5697177074398,
+      "width": 244.56971770744144,
+      "sourcePage": 76,
+      "sourceGlyphBox": [
+        2256.19,
+        153.05,
+        2273.73,
+        184.24
+      ]
+    },
+    {
+      "index": 7,
+      "letter": "E",
+      "left": 2005.5697177074398,
+      "right": 2250.0,
+      "width": 244.43028229256015,
+      "sourcePage": 76,
+      "sourceGlyphBox": [
+        2273.73,
+        153.05,
+        2291.26,
+        184.24
+      ]
+    }
+  ],
+  "summary": {
+    "activeChordCount": 4,
+    "controlChordCount": 3,
+    "activeSlotStream": "OVED",
+    "controlSlotStream": "DEE",
+    "activeStrictInstructionHitCount": 0,
+    "controlStrictInstructionHitCount": 0,
+    "activeAllQuartetChordCount": 0,
+    "activeChordActiveTargetHitCounts": [
+      2,
+      1,
+      1,
+      2
+    ],
+    "controlChordActiveTargetHitCounts": [
+      2,
+      1,
+      1
+    ],
+    "activeChordHighlightHitCounts": [
+      2,
+      0,
+      0,
+      2
+    ],
+    "controlChordHighlightHitCounts": [
+      2,
+      0,
+      0
+    ],
+    "selectorUnlocked": false
+  },
+  "activeChords": [
+    {
+      "targetId": "buying_dip",
+      "targetLabel": "O4 buying the dip",
+      "targetKind": "active",
+      "x": 1567.5,
+      "slotIndex": 5,
+      "slotLetter": "O",
+      "top": [
+        1567.5,
+        2176.81
+      ],
+      "bottom": [
+        1567.5,
+        3023.73
+      ],
+      "targetCenter": [
+        1567.5,
+        2201.0
+      ],
+      "chordLengthPx": 846.92,
+      "wordHitCount": 6,
+      "focusWordHitCount": 4,
+      "wordPreview": "ByiiREeraipy\" announced mine IMF he siukbeodmensertslveaarty",
+      "highlightHitCount": 2,
+      "highlightHitIds": [
+        "p76_orange_4",
+        "p76_orange_5"
+      ],
+      "activeTargetHitCount": 2,
+      "activeTargetHitIds": [
+        "buying_dip",
+        "shitcoiner_heart"
+      ],
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w182",
+          "index": 182,
+          "text": "ByiiREeraipy\"",
+          "importance": 6,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w190",
+          "index": 190,
+          "text": "announced",
+          "importance": 6,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w200",
+          "index": 200,
+          "text": "mine",
+          "importance": 5,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w220",
+          "index": 220,
+          "text": "IMF",
+          "importance": 10,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w249",
+          "index": 249,
+          "text": "he",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w264",
+          "index": 264,
+          "text": "siukbeodmensertslveaarty",
+          "importance": 0,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": [
+        {
+          "id": "p76_orange_4",
+          "kind": "orange"
+        },
+        {
+          "id": "p76_orange_5",
+          "kind": "orange"
+        }
+      ]
+    },
+    {
+      "targetId": "one_billion",
+      "targetLabel": "B4 $1 billion",
+      "targetKind": "active",
+      "x": 559.5,
+      "slotIndex": 1,
+      "slotLetter": "V",
+      "top": [
+        559.5,
+        2176.81
+      ],
+      "bottom": [
+        559.5,
+        3023.73
+      ],
+      "targetCenter": [
+        559.5,
+        2421.5
+      ],
+      "chordLengthPx": 846.92,
+      "wordHitCount": 9,
+      "focusWordHitCount": 2,
+      "wordPreview": "tweeted was billions collateralized loan Novogratz bunch hasn't Maybe",
+      "highlightHitCount": 0,
+      "highlightHitIds": [],
+      "activeTargetHitCount": 1,
+      "activeTargetHitIds": [
+        "one_billion"
+      ],
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w184",
+          "index": 184,
+          "text": "tweeted",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w192",
+          "index": 192,
+          "text": "was",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w209",
+          "index": 209,
+          "text": "billions",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w215",
+          "index": 215,
+          "text": "collateralized",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w221",
+          "index": 221,
+          "text": "loan",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w231",
+          "index": 231,
+          "text": "Novogratz",
+          "importance": 4,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w239",
+          "index": 239,
+          "text": "bunch",
+          "importance": 4,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w250",
+          "index": 250,
+          "text": "hasn't",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w260",
+          "index": 260,
+          "text": "Maybe",
+          "importance": 0,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": []
+    },
+    {
+      "targetId": "volcano_bonds",
+      "targetLabel": "G5 Volcano Bonds",
+      "targetKind": "active",
+      "x": 995.5,
+      "slotIndex": 2,
+      "slotLetter": "E",
+      "top": [
+        995.5,
+        2176.81
+      ],
+      "bottom": [
+        995.5,
+        3023.73
+      ],
+      "targetCenter": [
+        995.5,
+        2568.0
+      ],
+      "chordLengthPx": 846.92,
+      "wordHitCount": 6,
+      "focusWordHitCount": 2,
+      "wordPreview": "telling Nayib future those Street don't",
+      "highlightHitCount": 0,
+      "highlightHitIds": [],
+      "activeTargetHitCount": 1,
+      "activeTargetHitIds": [
+        "volcano_bonds"
+      ],
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w179",
+          "index": 179,
+          "text": "telling",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w186",
+          "index": 186,
+          "text": "Nayib",
+          "importance": 11,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w212",
+          "index": 212,
+          "text": "future",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w226",
+          "index": 226,
+          "text": "those",
+          "importance": 4,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w243",
+          "index": 243,
+          "text": "Street",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w255",
+          "index": 255,
+          "text": "don't",
+          "importance": 0,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": []
+    },
+    {
+      "targetId": "shitcoiner_heart",
+      "targetLabel": "O5 shitcoiner at heart",
+      "targetKind": "active",
+      "x": 1350.5,
+      "slotIndex": 4,
+      "slotLetter": "D",
+      "top": [
+        1350.5,
+        2176.81
+      ],
+      "bottom": [
+        1350.5,
+        3023.73
+      ],
+      "targetCenter": [
+        1350.5,
+        2957.0
+      ],
+      "chordLengthPx": 846.92,
+      "wordHitCount": 8,
+      "focusWordHitCount": 3,
+      "wordPreview": "ByiiREeraipy\" when volcanoes earnings tagged could but siukbeodmensertslveaarty",
+      "highlightHitCount": 2,
+      "highlightHitIds": [
+        "p76_orange_4",
+        "p76_orange_5"
+      ],
+      "activeTargetHitCount": 2,
+      "activeTargetHitIds": [
+        "buying_dip",
+        "shitcoiner_heart"
+      ],
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w182",
+          "index": 182,
+          "text": "ByiiREeraipy\"",
+          "importance": 6,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w188",
+          "index": 188,
+          "text": "when",
+          "importance": 2,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w198",
+          "index": 198,
+          "text": "volcanoes",
+          "importance": 12,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w214",
+          "index": 214,
+          "text": "earnings",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w229",
+          "index": 229,
+          "text": "tagged",
+          "importance": 4,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w237",
+          "index": 237,
+          "text": "could",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w246",
+          "index": 246,
+          "text": "but",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w264",
+          "index": 264,
+          "text": "siukbeodmensertslveaarty",
+          "importance": 0,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": [
+        {
+          "id": "p76_orange_4",
+          "kind": "orange"
+        },
+        {
+          "id": "p76_orange_5",
+          "kind": "orange"
+        }
+      ]
+    }
+  ],
+  "controlChords": [
+    {
+      "targetId": "p76_orange_1",
+      "targetLabel": "orange p76_orange_1",
+      "targetKind": "non_active_highlight_control",
+      "x": 1511.5,
+      "slotIndex": 4,
+      "slotLetter": "D",
+      "top": [
+        1511.5,
+        2176.81
+      ],
+      "bottom": [
+        1511.5,
+        3023.73
+      ],
+      "targetCenter": [
+        1511.5,
+        399.0
+      ],
+      "chordLengthPx": 846.92,
+      "wordHitCount": 8,
+      "focusWordHitCount": 3,
+      "wordPreview": "ByiiREeraipy\" announced mine Mike sella far guy siukbeodmensertslveaarty",
+      "highlightHitCount": 2,
+      "highlightHitIds": [
+        "p76_orange_4",
+        "p76_orange_5"
+      ],
+      "activeTargetHitCount": 2,
+      "activeTargetHitIds": [
+        "buying_dip",
+        "shitcoiner_heart"
+      ],
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w182",
+          "index": 182,
+          "text": "ByiiREeraipy\"",
+          "importance": 6,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w190",
+          "index": 190,
+          "text": "announced",
+          "importance": 6,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w200",
+          "index": 200,
+          "text": "mine",
+          "importance": 5,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w230",
+          "index": 230,
+          "text": "Mike",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w238",
+          "index": 238,
+          "text": "sella",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w248",
+          "index": 248,
+          "text": "far",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w259",
+          "index": 259,
+          "text": "guy",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w264",
+          "index": 264,
+          "text": "siukbeodmensertslveaarty",
+          "importance": 0,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": [
+        {
+          "id": "p76_orange_4",
+          "kind": "orange"
+        },
+        {
+          "id": "p76_orange_5",
+          "kind": "orange"
+        }
+      ]
+    },
+    {
+      "targetId": "p76_orange_2",
+      "targetLabel": "orange p76_orange_2",
+      "targetKind": "non_active_highlight_control",
+      "x": 916.5,
+      "slotIndex": 2,
+      "slotLetter": "E",
+      "top": [
+        916.5,
+        2176.81
+      ],
+      "bottom": [
+        916.5,
+        3023.73
+      ],
+      "targetCenter": [
+        916.5,
+        474.5
+      ],
+      "chordLengthPx": 846.92,
+      "wordHitCount": 5,
+      "focusWordHitCount": 2,
+      "wordPreview": "bitcoin future tweet, Street he's",
+      "highlightHitCount": 0,
+      "highlightHitIds": [],
+      "activeTargetHitCount": 1,
+      "activeTargetHitIds": [
+        "volcano_bonds"
+      ],
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w203",
+          "index": 203,
+          "text": "bitcoin",
+          "importance": 3,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w212",
+          "index": 212,
+          "text": "future",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w234",
+          "index": 234,
+          "text": "tweet,",
+          "importance": 4,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w243",
+          "index": 243,
+          "text": "Street",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w262",
+          "index": 262,
+          "text": "he's",
+          "importance": 0,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": []
+    },
+    {
+      "targetId": "p76_orange_3",
+      "targetLabel": "orange p76_orange_3",
+      "targetKind": "non_active_highlight_control",
+      "x": 867.5,
+      "slotIndex": 2,
+      "slotLetter": "E",
+      "top": [
+        867.5,
+        2176.81
+      ],
+      "bottom": [
+        867.5,
+        3023.73
+      ],
+      "targetCenter": [
+        867.5,
+        1375.5
+      ],
+      "chordLengthPx": 846.92,
+      "wordHitCount": 6,
+      "focusWordHitCount": 3,
+      "wordPreview": "them, President tap bitcoin of it.",
+      "highlightHitCount": 0,
+      "highlightHitIds": [],
+      "activeTargetHitCount": 1,
+      "activeTargetHitIds": [
+        "volcano_bonds"
+      ],
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w178",
+          "index": 178,
+          "text": "them,",
+          "importance": 6,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w185",
+          "index": 185,
+          "text": "President",
+          "importance": 14,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w195",
+          "index": 195,
+          "text": "tap",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w203",
+          "index": 203,
+          "text": "bitcoin",
+          "importance": 3,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w225",
+          "index": 225,
+          "text": "of",
+          "importance": 0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w253",
+          "index": 253,
+          "text": "it.",
+          "importance": 0,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": []
+    }
+  ],
+  "decision": {
+    "c9TargetVerticalChordAsSelector": "closed_current_scan",
+    "selectorUnlocked": false,
+    "nextMove": "Keep exact target-x C9 vertical chords as visual/layout context only. Reopen only if a source/clue explicitly names vertical slot chords or a chord-based unit/order rule."
+  },
+  "sheet": "analysis_outputs/source_audit/c9_target_vertical_chord_gate/c9_target_vertical_chord_gate_sheet.jpg",
+  "outputs": {
+    "json": "analysis_outputs/source_audit/c9_target_vertical_chord_gate/c9_target_vertical_chord_gate.json",
+    "markdown": "analysis_outputs/source_audit/c9_target_vertical_chord_gate/c9_target_vertical_chord_gate.md",
+    "sheet": "analysis_outputs/source_audit/c9_target_vertical_chord_gate/c9_target_vertical_chord_gate_sheet.jpg"
+  }
+}

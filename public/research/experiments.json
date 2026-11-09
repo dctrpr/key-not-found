@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "updatedOn": "2026-11-09",
+  "caseStatus": "unsolved",
+  "methods": [
+    {
+      "id": "raw-bip39",
+      "title": "Raw and structured mnemonic checks",
+      "status": "falsified",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Recorded strict candidate sets and first receive addresses on BIP44/49/84.",
+      "result": "No activity in the tested candidates; this does not exhaust seed-based encodings.",
+      "evidence": [
+        "CLUE_LEDGER.md",
+        "scripts/search_structured_candidates.py"
+      ],
+      "reproduce": [],
+      "limitations": [
+        "Older 2,051-word list was corrected to the official 2,048-word list.",
+        "Filtered ordinary prose can generate chance valid checksums."
+      ]
+    },
+    {
+      "id": "highlight-bip39",
+      "title": "Highlight-derived mnemonic checks",
+      "status": "falsified",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Recorded 350 strict highlight candidates and 1,050 standard addresses.",
+      "result": "No activity reported in the stated set.",
+      "evidence": [
+        "CLUE_LEDGER.md",
+        "analysis_outputs/highlight_audit/highres_exact_highlight_streams.json"
+      ],
+      "reproduce": [],
+      "limitations": [
+        "A broad family is not exhausted by this finite set."
+      ]
+    },
+    {
+      "id": "physical-registration",
+      "title": "Fold and mirror geometry",
+      "status": "partial",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Recorded scan registration and reflected-mask experiments.",
+      "result": "Some geometric/semantic correspondences; no deterministic extraction established.",
+      "evidence": [
+        "CLUE_LEDGER.md",
+        "analysis_outputs/continuation_20261109/state_audit.md"
+      ],
+      "reproduce": [],
+      "limitations": [
+        "Many older leaf pairings were wrong.",
+        "Chosen overlaps and article context do not prove intent."
+      ]
+    },
+    {
+      "id": "phrase-box-bug",
+      "title": "Historical 17-edge phrase-box claim",
+      "status": "falsified",
+      "kind": "evidence-audit",
+      "independentTheory": false,
+      "scope": "The exact old phrase matcher and all 17 medium/strong graph records.",
+      "result": "Noncontiguous token matches invalidate that graph statistic as intentional phrase alignment.",
+      "evidence": [
+        "analysis_outputs/continuation_20261109/phrase_box_audit/phrase_box_audit.md",
+        "analysis_outputs/continuation_20261109/phrase_box_audit/phrase_box_audit.json"
+      ],
+      "reproduce": [
+        "python3 scripts/continuation_audit_phrase_boxes.py"
+      ],
+      "limitations": [
+        "Later independent scan-native measurements are separate."
+      ]
+    },
+    {
+      "id": "typography",
+      "title": "Font and partial-bold hypothesis",
+      "status": "partial",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Source typography, reconstructed font runs and investigator annotations.",
+      "result": "Typeka variants explain much apparent partial bolding; no decoded message established.",
+      "evidence": [
+        "analysis_outputs/docm_format_sources/typeka_variant_state_audit.md",
+        "CLUE_LEDGER.md"
+      ],
+      "reproduce": [],
+      "limitations": [
+        "Reconstructed Word annotations are not original magazine metadata.",
+        "Some inputs are excluded or unavailable."
+      ]
+    },
+    {
+      "id": "corrected-orange",
+      "title": "Corrected fixed orange-mask reflections",
+      "status": "falsified",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "20 ordered page pairs,80 direct streams; no offset fitting.",
+      "result": "No exact checksum-bearing WIF or 64-hex output.",
+      "evidence": [
+        "analysis_outputs/continuation_20261109/corrected_duplex_orange.md",
+        "analysis_outputs/continuation_20261109/corrected_duplex_orange.json"
+      ],
+      "reproduce": [
+        "python3 scripts/continue_corrected_duplex.py"
+      ],
+      "limitations": [
+        "Only the declared source masks and registration."
+      ]
+    },
+    {
+      "id": "corrected-inverted",
+      "title": "Correct physical-leaf inverted bars",
+      "status": "falsified",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "19 source-detected inverted bars across leaves74/75,76/77,78/79.",
+      "result": "Ordinary target prose/art fragments and no WIF/64-hex candidate.",
+      "evidence": [
+        "analysis_outputs/continuation_20261109/inverted_duplex/inverted_duplex.md",
+        "analysis_outputs/continuation_20261109/inverted_duplex/inverted_duplex.json"
+      ],
+      "reproduce": [
+        "python3 scripts/continuation_corrected_inverted_masks.py"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "faithful-lines",
+      "title": "George Sand / Musset printed body lines",
+      "status": "falsified",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "142 visually reconstructed body lines; declared parity, edge and reversal variants.",
+      "result": "No valid literal key, contiguous mnemonic or clear hidden instruction in the recorded streams.",
+      "evidence": [
+        "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.md",
+        "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.json"
+      ],
+      "reproduce": [
+        "node analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.js"
+      ],
+      "limitations": [
+        "Variant counts are correlated formulations, not independent theories."
+      ]
+    },
+    {
+      "id": "highlight-lines",
+      "title": "George Sand / Musset highlighted physical lines",
+      "status": "falsified",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "46 colored fragments on45 baselines;540 declared variants.",
+      "result": "One weak short-key checksum hit; all 5 tested address types had zero transactions.",
+      "evidence": [
+        "analysis_outputs/continuation_20261109/george_sand/highlight_physical_lines.md",
+        "analysis_outputs/continuation_20261109/george_sand/minikey_activity.json"
+      ],
+      "reproduce": [
+        "python3 scripts/continuation_george_sand_highlight_lines.py"
+      ],
+      "limitations": []
+    },
+    {
+      "id": "literal-ascii",
+      "title": "Literal 32-byte line-edge candidates",
+      "status": "falsified",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "12 exact ASCII scalar candidates from the two32-line pages;60 addresses.",
+      "result": "Zero confirmed/pending transactions in successful recorded lookups.",
+      "evidence": [
+        "analysis_outputs/continuation_20261109/george_sand/printed_line_ascii_keys.json"
+      ],
+      "reproduce": [
+        "node scripts/continue_printed_line_ascii_keys.js --check"
+      ],
+      "limitations": [
+        "ASCII interpretation is an added hypothesis."
+      ]
+    },
+    {
+      "id": "firstword-sha256",
+      "title": "Exact first-word SHA-256 control",
+      "status": "falsified",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "36 case-preserving first-word strings, one SHA256 each;180 addresses.",
+      "result": "Zero confirmed/pending transactions in successful recorded lookups.",
+      "evidence": [
+        "analysis_outputs/continuation_20261109/george_sand/printed_firstword_sha256_keys.json"
+      ],
+      "reproduce": [
+        "node scripts/continue_printed_line_ascii_keys.js --firstword-sha256 --check"
+      ],
+      "limitations": [
+        "Hash wrapper is conjectural, not a creator instruction."
+      ]
+    },
+    {
+      "id": "numeric-256",
+      "title": "Source-faithful 24-number / 256-bit rule",
+      "status": "falsified",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Exact24-number rule, four declared source/bit-order mirror forms;20 addresses.",
+      "result": "All 20 lookups succeeded; zero transaction activity.",
+      "evidence": [
+        "analysis_outputs/continuation_20261109/numeric_inventory/RESULT.md",
+        "analysis_outputs/continuation_20261109/numeric_inventory/numeric_inventory.json",
+        "analysis_outputs/continuation_20261109/numeric_inventory/numeric_activity.json"
+      ],
+      "reproduce": [
+        "python3 scripts/continuation_numeric_inventory.py",
+        "node scripts/continuation_numeric_activity.cjs"
+      ],
+      "limitations": [
+        "Excludes three ordinal first occurrences and pronoun ONE; includes Forty/six/zero.",
+        "Another ordinary serialization yields264 bits. Length alone is not proof."
+      ]
+    },
+    {
+      "id": "issue27",
+      "title": "Alternative OVERDOSE column",
+      "status": "falsified",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Recorded356 OCR-assisted printed lines and declared readings.",
+      "result": "No literal key or clear hidden instruction in the tested set.",
+      "evidence": [
+        "analysis_outputs/continuation_20261109/george_sand_issue27/REPORT.md",
+        "analysis_outputs/continuation_20261109/george_sand_issue27/printed_lines_and_streams.json"
+      ],
+      "reproduce": [],
+      "limitations": [
+        "OCR-assisted source and unavailable comparison raster inputs limit complete reproduction."
+      ]
+    },
+    {
+      "id": "creator-sources",
+      "title": "Public creator-post evidence",
+      "status": "partial",
+      "kind": "source-audit",
+      "independentTheory": false,
+      "scope": "Four verified public posts; exact source links and caveats.",
+      "result": "Method pointers and a prize claim; no authenticated funding address or solution.",
+      "evidence": [
+        "sources/creator-clues.json",
+        "analysis_outputs/continuation_20261109/george_sand_research.md",
+        "analysis_outputs/continuation_20261109/external_research.md"
+      ],
+      "reproduce": [],
+      "limitations": [
+        "December2023 predecessor context is unavailable."
+      ]
+    },
+    {
+      "id": "author-manuscript",
+      "title": "Independent author-controlled manuscript",
+      "status": "untested",
+      "kind": "open-source-question",
+      "independentTheory": false,
+      "scope": "A genuine pre-layout manuscript with provenance.",
+      "result": "No such authoritative manuscript is in this release.",
+      "evidence": [
+        "sources/creator-clues.json"
+      ],
+      "reproduce": [],
+      "limitations": [
+        "An unavailable input is not a failed experiment."
+      ]
+    }
+  ],
+  "countingPolicy": "This is a curated set of method families/source audits, not a total count of independent theories. Historical administrative gates and correlated variants are not counted as independent experiments. Falsified means only the concrete stated candidate/address scope.",
+  "historicalRecordPolicy": "All retained historical documents are redacted copies; older broad conclusions are superseded by scoped corrections."
+}

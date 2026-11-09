@@ -1,0 +1,72 @@
+{
+  "createdAt": "2026-05-20T14:14:50",
+  "scope": "visual source-validation review sheet; no key derivation",
+  "packet": "analysis_outputs/source_audit/future_source_validation_packet/future_source_validation_packet.json",
+  "sheet": "analysis_outputs/source_audit/future_source_validation_packet/future_source_validation_review_sheet.jpg",
+  "panelCount": 9,
+  "sourceDeltaDecision": "no_new_source_grade_candidate",
+  "minimumReopenConditions": [
+    "C3 extraction unit",
+    "C4 physical registration",
+    "C8 source image quality",
+    "C2 p78 frame signature"
+  ],
+  "panels": [
+    {
+      "id": "page76_priority_crops",
+      "title": "Page 76 Priority Crops",
+      "image": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_sheet.jpg",
+      "caption": "O5, G5, and lower corridor crop baseline. Future geometry must be compared in readable/upright orientation."
+    },
+    {
+      "id": "p78_frame_tricontact",
+      "title": "P78 Frame Tri-Contact",
+      "image": "analysis_outputs/source_audit/p78_frame_tricontact_signature/p78_frame_tricontact_signature_overlay.jpg",
+      "caption": "Current frame clips O5, cuts M3, and sits 38 px from G5; dx=-38/-40 is the compact repair signature."
+    },
+    {
+      "id": "repaired_exact_edge_style",
+      "title": "Exact-Edge Phrase / Style",
+      "image": "analysis_outputs/docm_format_sources/repaired_frame_font_contact_states/repaired_frame_font_contact_states_sheet.jpg",
+      "caption": "Repaired exact-edge trio is should sell | Volcano Bonds | shitcoiner at heart, style code RKY."
+    },
+    {
+      "id": "typeka_typography_authority",
+      "title": "Typeka Typography Authority",
+      "image": "analysis_outputs/docm_format_sources/typeka_manual_bold_disambiguation/typeka_authority_bridge_sheet.jpg",
+      "caption": "DOCM font/highlight witness for the active lower corridor. Markdown bold is annotation-only; $1 billion and Volcano Bonds are bold/black in DOCM."
+    },
+    {
+      "id": "zero_hash0_hotspots",
+      "title": "Zero / #0 Hotspots",
+      "image": "analysis_outputs/source_audit/zero_visual_crops/zero_visual_crops_sheet.jpg",
+      "caption": "Current trusted scan reads the main hotspot as 100,000. Any source claiming 1000,000 must beat this crop."
+    },
+    {
+      "id": "p79_pill_fragments",
+      "title": "P79 Pill Fragment Baseline",
+      "image": "analysis_outputs/source_audit/alternate_pdf_pill_geometry/alternate_pdf_pill_geometry_sheet.jpg",
+      "caption": "Trusted baseline has five lower-left p79 pill fragments. A new source must change count, order, or placement to reopen pills."
+    },
+    {
+      "id": "source_gate",
+      "title": "Source Gate Summary",
+      "image": "analysis_outputs/source_audit/source_validation_gate/source_validation_gate_sheet.jpg",
+      "caption": "Current scan is target/provenance-valid but not extraction-valid: C3/C4/C8 remain the blockers."
+    },
+    {
+      "id": "p77_line_gap",
+      "title": "P77 One-Line Near Miss",
+      "image": null,
+      "caption": "Benchmark: p77 `It does this by monetizing` -> p76 O5 misses by 71.93 px; page-76 median line pitch is 73.73 px. This is useful only if a future physical/source transform makes it a repeated direct contact."
+    },
+    {
+      "id": "minimum_reopen_conditions",
+      "title": "Minimum Reopen Conditions",
+      "image": null,
+      "caption": "Reopen extraction only if future material improves one gate: C3 names an extraction unit, C4 improves physical registration, C8 provides source-quality image evidence, or C2 naturally explains the p78 frame signature."
+    }
+  ],
+  "decision": "review_sheet_ready_for_future_source_comparison",
+  "nextMove": "When a new source image appears, compare it visually against this sheet and then score it against the validation packet before extraction."
+}

@@ -1,0 +1,3366 @@
+{
+  "createdAt": "2026-05-24T13:35:33",
+  "scope": "current scan active box OVERDOSE edge-residue control; no key derivation, hashing, WIF, seed, address, BIP39, or broad brute force",
+  "inputs": {
+    "targetWitnessSubstitution": "analysis_outputs/source_audit/current_scan_target_witness_box_substitution_gate/current_scan_target_witness_box_substitution_gate.json",
+    "c9OverdoseLetterSlotGate": "analysis_outputs/source_audit/c9_overdose_letter_slot_gate/c9_overdose_letter_slot_gate.json",
+    "slotBoundaryResidualPrior": "analysis_outputs/source_audit/current_scan_slot_boundary_residual_gate/current_scan_slot_boundary_residual_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "method": {
+    "targetOrder": [
+      "O4",
+      "B4",
+      "G5",
+      "O5"
+    ],
+    "anchors": [
+      "left",
+      "center",
+      "right"
+    ],
+    "closeThresholdPx": 16.0,
+    "boundedVariantSet": "same eight O4/B4/G5/O5 witness-box substitutions from the current scan target witness gate",
+    "candidateRequirement": "exact active boxes plus all-four edge/center closeness plus source-backed R3"
+  },
+  "c9Ruler": {
+    "slotLetters": "OVERDOSE",
+    "slotCount": 8,
+    "slotWidthPx": 244.5,
+    "boundaries": [
+      294.0,
+      538.5,
+      783.0,
+      1027.5,
+      1272.0,
+      1516.5,
+      1761.0,
+      2005.5,
+      2250.0
+    ],
+    "centers": [
+      416.25,
+      660.75,
+      905.25,
+      1149.75,
+      1394.25,
+      1638.75,
+      1883.25,
+      2127.75
+    ]
+  },
+  "variantRows": [
+    {
+      "ordinal": 1,
+      "targets": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "witnessIds": [
+        [
+          "O4_active_index",
+          "p76_orange_4"
+        ],
+        [
+          "B4_active_index"
+        ],
+        [
+          "G5_active_index"
+        ],
+        [
+          "O5_active_index",
+          "p76_orange_5"
+        ]
+      ],
+      "sourceKinds": [
+        [
+          "active_index_slot",
+          "visual-orange"
+        ],
+        [
+          "active_index_slot"
+        ],
+        [
+          "active_index_slot"
+        ],
+        [
+          "active_index_slot",
+          "visual-orange"
+        ]
+      ],
+      "exactActiveBoxFlags": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "allExactActiveBoxes": true,
+      "hasSubstitution": false,
+      "targetMetrics": [
+        {
+          "target": "O4",
+          "witnessIds": [
+            "O4_active_index",
+            "p76_orange_4"
+          ],
+          "sourceKinds": [
+            "active_index_slot",
+            "visual-orange"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 1334.0,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": -60.25,
+              "nearestCenterAbsPx": 60.25,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": 62.0,
+              "nearestBoundaryAbsPx": 62.0,
+              "nearestType": "center",
+              "nearestAbsPx": 60.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 1567.5,
+              "nearestCenterIndex": 5,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": -71.25,
+              "nearestCenterAbsPx": 71.25,
+              "nearestBoundaryIndex": 5,
+              "nearestBoundarySignedPx": 51.0,
+              "nearestBoundaryAbsPx": 51.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 51.0,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1801.0,
+              "nearestCenterIndex": 6,
+              "nearestCenterLetter": "S",
+              "nearestCenterSignedPx": -82.25,
+              "nearestCenterAbsPx": 82.25,
+              "nearestBoundaryIndex": 6,
+              "nearestBoundarySignedPx": 40.0,
+              "nearestBoundaryAbsPx": 40.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 40.0,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "B4",
+          "witnessIds": [
+            "B4_active_index"
+          ],
+          "sourceKinds": [
+            "active_index_slot"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 428.0,
+              "nearestCenterIndex": 0,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": 11.75,
+              "nearestCenterAbsPx": 11.75,
+              "nearestBoundaryIndex": 1,
+              "nearestBoundarySignedPx": -110.5,
+              "nearestBoundaryAbsPx": 110.5,
+              "nearestType": "center",
+              "nearestAbsPx": 11.75,
+              "nearestClose16": true,
+              "centerClose16": true,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 559.5,
+              "nearestCenterIndex": 1,
+              "nearestCenterLetter": "V",
+              "nearestCenterSignedPx": -101.25,
+              "nearestCenterAbsPx": 101.25,
+              "nearestBoundaryIndex": 1,
+              "nearestBoundarySignedPx": 21.0,
+              "nearestBoundaryAbsPx": 21.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 21.0,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 691.0,
+              "nearestCenterIndex": 1,
+              "nearestCenterLetter": "V",
+              "nearestCenterSignedPx": 30.25,
+              "nearestCenterAbsPx": 30.25,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": -92.0,
+              "nearestBoundaryAbsPx": 92.0,
+              "nearestType": "center",
+              "nearestAbsPx": 30.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "G5",
+          "witnessIds": [
+            "G5_active_index"
+          ],
+          "sourceKinds": [
+            "active_index_slot"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 795.0,
+              "nearestCenterIndex": 2,
+              "nearestCenterLetter": "E",
+              "nearestCenterSignedPx": -110.25,
+              "nearestCenterAbsPx": 110.25,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": 12.0,
+              "nearestBoundaryAbsPx": 12.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 12.0,
+              "nearestClose16": true,
+              "centerClose16": false,
+              "boundaryClose16": true
+            },
+            "center": {
+              "x": 995.5,
+              "nearestCenterIndex": 2,
+              "nearestCenterLetter": "E",
+              "nearestCenterSignedPx": 90.25,
+              "nearestCenterAbsPx": 90.25,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": -32.0,
+              "nearestBoundaryAbsPx": 32.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 32.0,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1196.0,
+              "nearestCenterIndex": 3,
+              "nearestCenterLetter": "R",
+              "nearestCenterSignedPx": 46.25,
+              "nearestCenterAbsPx": 46.25,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": -76.0,
+              "nearestBoundaryAbsPx": 76.0,
+              "nearestType": "center",
+              "nearestAbsPx": 46.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "O5",
+          "witnessIds": [
+            "O5_active_index",
+            "p76_orange_5"
+          ],
+          "sourceKinds": [
+            "active_index_slot",
+            "visual-orange"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 1040.0,
+              "nearestCenterIndex": 3,
+              "nearestCenterLetter": "R",
+              "nearestCenterSignedPx": -109.75,
+              "nearestCenterAbsPx": 109.75,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": 12.5,
+              "nearestBoundaryAbsPx": 12.5,
+              "nearestType": "boundary",
+              "nearestAbsPx": 12.5,
+              "nearestClose16": true,
+              "centerClose16": false,
+              "boundaryClose16": true
+            },
+            "center": {
+              "x": 1350.5,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": -43.75,
+              "nearestCenterAbsPx": 43.75,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": 78.5,
+              "nearestBoundaryAbsPx": 78.5,
+              "nearestType": "center",
+              "nearestAbsPx": 43.75,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1661.0,
+              "nearestCenterIndex": 5,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": 22.25,
+              "nearestCenterAbsPx": 22.25,
+              "nearestBoundaryIndex": 6,
+              "nearestBoundarySignedPx": -100.0,
+              "nearestBoundaryAbsPx": 100.0,
+              "nearestType": "center",
+              "nearestAbsPx": 22.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        }
+      ],
+      "nearestCenterStreams": {
+        "left": "DOER",
+        "center": "OVED",
+        "right": "SVRO"
+      },
+      "nearestBoundaryStreams": {
+        "left": "4123",
+        "center": "5134",
+        "right": "6246"
+      },
+      "anyAnchorClose16RowCount": 3,
+      "allFourAnyAnchorClose16": false,
+      "leftBoundaryClose16RowCount": 2,
+      "allFourLeftBoundaryClose16": false,
+      "centerSlotClose16RowCount": 0,
+      "allFourCenterSlotClose16": false,
+      "rightBoundaryClose16RowCount": 0,
+      "allFourRightBoundaryClose16": false,
+      "meanNearestResiduePx": 31.916667,
+      "meanCenterResiduePx": 76.625,
+      "centerStreamMatchesActive": true,
+      "edgeResidueSelectorCandidate": false
+    },
+    {
+      "ordinal": 2,
+      "targets": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "witnessIds": [
+        [
+          "O4_active_index",
+          "p76_orange_4"
+        ],
+        [
+          "B4_active_index"
+        ],
+        [
+          "annotated_15_grey"
+        ],
+        [
+          "O5_active_index",
+          "p76_orange_5"
+        ]
+      ],
+      "sourceKinds": [
+        [
+          "active_index_slot",
+          "visual-orange"
+        ],
+        [
+          "active_index_slot"
+        ],
+        [
+          "annotated-grey"
+        ],
+        [
+          "active_index_slot",
+          "visual-orange"
+        ]
+      ],
+      "exactActiveBoxFlags": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "allExactActiveBoxes": false,
+      "hasSubstitution": true,
+      "targetMetrics": [
+        {
+          "target": "O4",
+          "witnessIds": [
+            "O4_active_index",
+            "p76_orange_4"
+          ],
+          "sourceKinds": [
+            "active_index_slot",
+            "visual-orange"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 1334.0,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": -60.25,
+              "nearestCenterAbsPx": 60.25,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": 62.0,
+              "nearestBoundaryAbsPx": 62.0,
+              "nearestType": "center",
+              "nearestAbsPx": 60.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 1567.5,
+              "nearestCenterIndex": 5,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": -71.25,
+              "nearestCenterAbsPx": 71.25,
+              "nearestBoundaryIndex": 5,
+              "nearestBoundarySignedPx": 51.0,
+              "nearestBoundaryAbsPx": 51.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 51.0,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1801.0,
+              "nearestCenterIndex": 6,
+              "nearestCenterLetter": "S",
+              "nearestCenterSignedPx": -82.25,
+              "nearestCenterAbsPx": 82.25,
+              "nearestBoundaryIndex": 6,
+              "nearestBoundarySignedPx": 40.0,
+              "nearestBoundaryAbsPx": 40.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 40.0,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "B4",
+          "witnessIds": [
+            "B4_active_index"
+          ],
+          "sourceKinds": [
+            "active_index_slot"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 428.0,
+              "nearestCenterIndex": 0,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": 11.75,
+              "nearestCenterAbsPx": 11.75,
+              "nearestBoundaryIndex": 1,
+              "nearestBoundarySignedPx": -110.5,
+              "nearestBoundaryAbsPx": 110.5,
+              "nearestType": "center",
+              "nearestAbsPx": 11.75,
+              "nearestClose16": true,
+              "centerClose16": true,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 559.5,
+              "nearestCenterIndex": 1,
+              "nearestCenterLetter": "V",
+              "nearestCenterSignedPx": -101.25,
+              "nearestCenterAbsPx": 101.25,
+              "nearestBoundaryIndex": 1,
+              "nearestBoundarySignedPx": 21.0,
+              "nearestBoundaryAbsPx": 21.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 21.0,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 691.0,
+              "nearestCenterIndex": 1,
+              "nearestCenterLetter": "V",
+              "nearestCenterSignedPx": 30.25,
+              "nearestCenterAbsPx": 30.25,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": -92.0,
+              "nearestBoundaryAbsPx": 92.0,
+              "nearestType": "center",
+              "nearestAbsPx": 30.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "G5",
+          "witnessIds": [
+            "annotated_15_grey"
+          ],
+          "sourceKinds": [
+            "annotated-grey"
+          ],
+          "isExactActiveBox": false,
+          "box": [
+            698.53,
+            2609.09,
+            832.72,
+            2653.65
+          ],
+          "anchors": {
+            "left": {
+              "x": 698.53,
+              "nearestCenterIndex": 1,
+              "nearestCenterLetter": "V",
+              "nearestCenterSignedPx": 37.78,
+              "nearestCenterAbsPx": 37.78,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": -84.47,
+              "nearestBoundaryAbsPx": 84.47,
+              "nearestType": "center",
+              "nearestAbsPx": 37.78,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 765.625,
+              "nearestCenterIndex": 1,
+              "nearestCenterLetter": "V",
+              "nearestCenterSignedPx": 104.875,
+              "nearestCenterAbsPx": 104.875,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": -17.375,
+              "nearestBoundaryAbsPx": 17.375,
+              "nearestType": "boundary",
+              "nearestAbsPx": 17.375,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 832.72,
+              "nearestCenterIndex": 2,
+              "nearestCenterLetter": "E",
+              "nearestCenterSignedPx": -72.53,
+              "nearestCenterAbsPx": 72.53,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": 49.72,
+              "nearestBoundaryAbsPx": 49.72,
+              "nearestType": "boundary",
+              "nearestAbsPx": 49.72,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "O5",
+          "witnessIds": [
+            "O5_active_index",
+            "p76_orange_5"
+          ],
+          "sourceKinds": [
+            "active_index_slot",
+            "visual-orange"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 1040.0,
+              "nearestCenterIndex": 3,
+              "nearestCenterLetter": "R",
+              "nearestCenterSignedPx": -109.75,
+              "nearestCenterAbsPx": 109.75,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": 12.5,
+              "nearestBoundaryAbsPx": 12.5,
+              "nearestType": "boundary",
+              "nearestAbsPx": 12.5,
+              "nearestClose16": true,
+              "centerClose16": false,
+              "boundaryClose16": true
+            },
+            "center": {
+              "x": 1350.5,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": -43.75,
+              "nearestCenterAbsPx": 43.75,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": 78.5,
+              "nearestBoundaryAbsPx": 78.5,
+              "nearestType": "center",
+              "nearestAbsPx": 43.75,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1661.0,
+              "nearestCenterIndex": 5,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": 22.25,
+              "nearestCenterAbsPx": 22.25,
+              "nearestBoundaryIndex": 6,
+              "nearestBoundarySignedPx": -100.0,
+              "nearestBoundaryAbsPx": 100.0,
+              "nearestType": "center",
+              "nearestAbsPx": 22.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        }
+      ],
+      "nearestCenterStreams": {
+        "left": "DOVR",
+        "center": "OVVD",
+        "right": "SVEO"
+      },
+      "nearestBoundaryStreams": {
+        "left": "4123",
+        "center": "5124",
+        "right": "6226"
+      },
+      "anyAnchorClose16RowCount": 2,
+      "allFourAnyAnchorClose16": false,
+      "leftBoundaryClose16RowCount": 1,
+      "allFourLeftBoundaryClose16": false,
+      "centerSlotClose16RowCount": 0,
+      "allFourCenterSlotClose16": false,
+      "rightBoundaryClose16RowCount": 0,
+      "allFourRightBoundaryClose16": false,
+      "meanNearestResiduePx": 33.135417,
+      "meanCenterResiduePx": 80.28125,
+      "centerStreamMatchesActive": false,
+      "edgeResidueSelectorCandidate": false
+    },
+    {
+      "ordinal": 3,
+      "targets": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "witnessIds": [
+        [
+          "O4_active_index",
+          "p76_orange_4"
+        ],
+        [
+          "annotated_14_grey"
+        ],
+        [
+          "G5_active_index"
+        ],
+        [
+          "O5_active_index",
+          "p76_orange_5"
+        ]
+      ],
+      "sourceKinds": [
+        [
+          "active_index_slot",
+          "visual-orange"
+        ],
+        [
+          "annotated-grey"
+        ],
+        [
+          "active_index_slot"
+        ],
+        [
+          "active_index_slot",
+          "visual-orange"
+        ]
+      ],
+      "exactActiveBoxFlags": [
+        true,
+        false,
+        true,
+        true
+      ],
+      "allExactActiveBoxes": false,
+      "hasSubstitution": true,
+      "targetMetrics": [
+        {
+          "target": "O4",
+          "witnessIds": [
+            "O4_active_index",
+            "p76_orange_4"
+          ],
+          "sourceKinds": [
+            "active_index_slot",
+            "visual-orange"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 1334.0,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": -60.25,
+              "nearestCenterAbsPx": 60.25,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": 62.0,
+              "nearestBoundaryAbsPx": 62.0,
+              "nearestType": "center",
+              "nearestAbsPx": 60.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 1567.5,
+              "nearestCenterIndex": 5,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": -71.25,
+              "nearestCenterAbsPx": 71.25,
+              "nearestBoundaryIndex": 5,
+              "nearestBoundarySignedPx": 51.0,
+              "nearestBoundaryAbsPx": 51.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 51.0,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1801.0,
+              "nearestCenterIndex": 6,
+              "nearestCenterLetter": "S",
+              "nearestCenterSignedPx": -82.25,
+              "nearestCenterAbsPx": 82.25,
+              "nearestBoundaryIndex": 6,
+              "nearestBoundarySignedPx": 40.0,
+              "nearestBoundaryAbsPx": 40.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 40.0,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "B4",
+          "witnessIds": [
+            "annotated_14_grey"
+          ],
+          "sourceKinds": [
+            "annotated-grey"
+          ],
+          "isExactActiveBox": false,
+          "box": [
+            484.44,
+            2393.42,
+            1439.33,
+            2507.26
+          ],
+          "anchors": {
+            "left": {
+              "x": 484.44,
+              "nearestCenterIndex": 0,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": 68.19,
+              "nearestCenterAbsPx": 68.19,
+              "nearestBoundaryIndex": 1,
+              "nearestBoundarySignedPx": -54.06,
+              "nearestBoundaryAbsPx": 54.06,
+              "nearestType": "boundary",
+              "nearestAbsPx": 54.06,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 961.885,
+              "nearestCenterIndex": 2,
+              "nearestCenterLetter": "E",
+              "nearestCenterSignedPx": 56.635,
+              "nearestCenterAbsPx": 56.635,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": -65.615,
+              "nearestBoundaryAbsPx": 65.615,
+              "nearestType": "center",
+              "nearestAbsPx": 56.635,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1439.33,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": 45.08,
+              "nearestCenterAbsPx": 45.08,
+              "nearestBoundaryIndex": 5,
+              "nearestBoundarySignedPx": -77.17,
+              "nearestBoundaryAbsPx": 77.17,
+              "nearestType": "center",
+              "nearestAbsPx": 45.08,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "G5",
+          "witnessIds": [
+            "G5_active_index"
+          ],
+          "sourceKinds": [
+            "active_index_slot"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 795.0,
+              "nearestCenterIndex": 2,
+              "nearestCenterLetter": "E",
+              "nearestCenterSignedPx": -110.25,
+              "nearestCenterAbsPx": 110.25,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": 12.0,
+              "nearestBoundaryAbsPx": 12.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 12.0,
+              "nearestClose16": true,
+              "centerClose16": false,
+              "boundaryClose16": true
+            },
+            "center": {
+              "x": 995.5,
+              "nearestCenterIndex": 2,
+              "nearestCenterLetter": "E",
+              "nearestCenterSignedPx": 90.25,
+              "nearestCenterAbsPx": 90.25,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": -32.0,
+              "nearestBoundaryAbsPx": 32.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 32.0,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1196.0,
+              "nearestCenterIndex": 3,
+              "nearestCenterLetter": "R",
+              "nearestCenterSignedPx": 46.25,
+              "nearestCenterAbsPx": 46.25,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": -76.0,
+              "nearestBoundaryAbsPx": 76.0,
+              "nearestType": "center",
+              "nearestAbsPx": 46.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "O5",
+          "witnessIds": [
+            "O5_active_index",
+            "p76_orange_5"
+          ],
+          "sourceKinds": [
+            "active_index_slot",
+            "visual-orange"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 1040.0,
+              "nearestCenterIndex": 3,
+              "nearestCenterLetter": "R",
+              "nearestCenterSignedPx": -109.75,
+              "nearestCenterAbsPx": 109.75,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": 12.5,
+              "nearestBoundaryAbsPx": 12.5,
+              "nearestType": "boundary",
+              "nearestAbsPx": 12.5,
+              "nearestClose16": true,
+              "centerClose16": false,
+              "boundaryClose16": true
+            },
+            "center": {
+              "x": 1350.5,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": -43.75,
+              "nearestCenterAbsPx": 43.75,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": 78.5,
+              "nearestBoundaryAbsPx": 78.5,
+              "nearestType": "center",
+              "nearestAbsPx": 43.75,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1661.0,
+              "nearestCenterIndex": 5,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": 22.25,
+              "nearestCenterAbsPx": 22.25,
+              "nearestBoundaryIndex": 6,
+              "nearestBoundarySignedPx": -100.0,
+              "nearestBoundaryAbsPx": 100.0,
+              "nearestType": "center",
+              "nearestAbsPx": 22.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        }
+      ],
+      "nearestCenterStreams": {
+        "left": "DOER",
+        "center": "OEED",
+        "right": "SDRO"
+      },
+      "nearestBoundaryStreams": {
+        "left": "4123",
+        "center": "5334",
+        "right": "6546"
+      },
+      "anyAnchorClose16RowCount": 2,
+      "allFourAnyAnchorClose16": false,
+      "leftBoundaryClose16RowCount": 2,
+      "allFourLeftBoundaryClose16": false,
+      "centerSlotClose16RowCount": 0,
+      "allFourCenterSlotClose16": false,
+      "rightBoundaryClose16RowCount": 0,
+      "allFourRightBoundaryClose16": false,
+      "meanNearestResiduePx": 39.647917,
+      "meanCenterResiduePx": 65.47125,
+      "centerStreamMatchesActive": false,
+      "edgeResidueSelectorCandidate": false
+    },
+    {
+      "ordinal": 4,
+      "targets": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "witnessIds": [
+        [
+          "O4_active_index",
+          "p76_orange_4"
+        ],
+        [
+          "annotated_14_grey"
+        ],
+        [
+          "annotated_15_grey"
+        ],
+        [
+          "O5_active_index",
+          "p76_orange_5"
+        ]
+      ],
+      "sourceKinds": [
+        [
+          "active_index_slot",
+          "visual-orange"
+        ],
+        [
+          "annotated-grey"
+        ],
+        [
+          "annotated-grey"
+        ],
+        [
+          "active_index_slot",
+          "visual-orange"
+        ]
+      ],
+      "exactActiveBoxFlags": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "allExactActiveBoxes": false,
+      "hasSubstitution": true,
+      "targetMetrics": [
+        {
+          "target": "O4",
+          "witnessIds": [
+            "O4_active_index",
+            "p76_orange_4"
+          ],
+          "sourceKinds": [
+            "active_index_slot",
+            "visual-orange"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 1334.0,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": -60.25,
+              "nearestCenterAbsPx": 60.25,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": 62.0,
+              "nearestBoundaryAbsPx": 62.0,
+              "nearestType": "center",
+              "nearestAbsPx": 60.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 1567.5,
+              "nearestCenterIndex": 5,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": -71.25,
+              "nearestCenterAbsPx": 71.25,
+              "nearestBoundaryIndex": 5,
+              "nearestBoundarySignedPx": 51.0,
+              "nearestBoundaryAbsPx": 51.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 51.0,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1801.0,
+              "nearestCenterIndex": 6,
+              "nearestCenterLetter": "S",
+              "nearestCenterSignedPx": -82.25,
+              "nearestCenterAbsPx": 82.25,
+              "nearestBoundaryIndex": 6,
+              "nearestBoundarySignedPx": 40.0,
+              "nearestBoundaryAbsPx": 40.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 40.0,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "B4",
+          "witnessIds": [
+            "annotated_14_grey"
+          ],
+          "sourceKinds": [
+            "annotated-grey"
+          ],
+          "isExactActiveBox": false,
+          "box": [
+            484.44,
+            2393.42,
+            1439.33,
+            2507.26
+          ],
+          "anchors": {
+            "left": {
+              "x": 484.44,
+              "nearestCenterIndex": 0,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": 68.19,
+              "nearestCenterAbsPx": 68.19,
+              "nearestBoundaryIndex": 1,
+              "nearestBoundarySignedPx": -54.06,
+              "nearestBoundaryAbsPx": 54.06,
+              "nearestType": "boundary",
+              "nearestAbsPx": 54.06,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 961.885,
+              "nearestCenterIndex": 2,
+              "nearestCenterLetter": "E",
+              "nearestCenterSignedPx": 56.635,
+              "nearestCenterAbsPx": 56.635,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": -65.615,
+              "nearestBoundaryAbsPx": 65.615,
+              "nearestType": "center",
+              "nearestAbsPx": 56.635,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1439.33,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": 45.08,
+              "nearestCenterAbsPx": 45.08,
+              "nearestBoundaryIndex": 5,
+              "nearestBoundarySignedPx": -77.17,
+              "nearestBoundaryAbsPx": 77.17,
+              "nearestType": "center",
+              "nearestAbsPx": 45.08,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "G5",
+          "witnessIds": [
+            "annotated_15_grey"
+          ],
+          "sourceKinds": [
+            "annotated-grey"
+          ],
+          "isExactActiveBox": false,
+          "box": [
+            698.53,
+            2609.09,
+            832.72,
+            2653.65
+          ],
+          "anchors": {
+            "left": {
+              "x": 698.53,
+              "nearestCenterIndex": 1,
+              "nearestCenterLetter": "V",
+              "nearestCenterSignedPx": 37.78,
+              "nearestCenterAbsPx": 37.78,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": -84.47,
+              "nearestBoundaryAbsPx": 84.47,
+              "nearestType": "center",
+              "nearestAbsPx": 37.78,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 765.625,
+              "nearestCenterIndex": 1,
+              "nearestCenterLetter": "V",
+              "nearestCenterSignedPx": 104.875,
+              "nearestCenterAbsPx": 104.875,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": -17.375,
+              "nearestBoundaryAbsPx": 17.375,
+              "nearestType": "boundary",
+              "nearestAbsPx": 17.375,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 832.72,
+              "nearestCenterIndex": 2,
+              "nearestCenterLetter": "E",
+              "nearestCenterSignedPx": -72.53,
+              "nearestCenterAbsPx": 72.53,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": 49.72,
+              "nearestBoundaryAbsPx": 49.72,
+              "nearestType": "boundary",
+              "nearestAbsPx": 49.72,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "O5",
+          "witnessIds": [
+            "O5_active_index",
+            "p76_orange_5"
+          ],
+          "sourceKinds": [
+            "active_index_slot",
+            "visual-orange"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 1040.0,
+              "nearestCenterIndex": 3,
+              "nearestCenterLetter": "R",
+              "nearestCenterSignedPx": -109.75,
+              "nearestCenterAbsPx": 109.75,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": 12.5,
+              "nearestBoundaryAbsPx": 12.5,
+              "nearestType": "boundary",
+              "nearestAbsPx": 12.5,
+              "nearestClose16": true,
+              "centerClose16": false,
+              "boundaryClose16": true
+            },
+            "center": {
+              "x": 1350.5,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": -43.75,
+              "nearestCenterAbsPx": 43.75,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": 78.5,
+              "nearestBoundaryAbsPx": 78.5,
+              "nearestType": "center",
+              "nearestAbsPx": 43.75,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1661.0,
+              "nearestCenterIndex": 5,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": 22.25,
+              "nearestCenterAbsPx": 22.25,
+              "nearestBoundaryIndex": 6,
+              "nearestBoundarySignedPx": -100.0,
+              "nearestBoundaryAbsPx": 100.0,
+              "nearestType": "center",
+              "nearestAbsPx": 22.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        }
+      ],
+      "nearestCenterStreams": {
+        "left": "DOVR",
+        "center": "OEVD",
+        "right": "SDEO"
+      },
+      "nearestBoundaryStreams": {
+        "left": "4123",
+        "center": "5324",
+        "right": "6526"
+      },
+      "anyAnchorClose16RowCount": 1,
+      "allFourAnyAnchorClose16": false,
+      "leftBoundaryClose16RowCount": 1,
+      "allFourLeftBoundaryClose16": false,
+      "centerSlotClose16RowCount": 0,
+      "allFourCenterSlotClose16": false,
+      "rightBoundaryClose16RowCount": 0,
+      "allFourRightBoundaryClose16": false,
+      "meanNearestResiduePx": 40.866667,
+      "meanCenterResiduePx": 69.1275,
+      "centerStreamMatchesActive": false,
+      "edgeResidueSelectorCandidate": false
+    },
+    {
+      "ordinal": 5,
+      "targets": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "witnessIds": [
+        [
+          "annotated_13_orange"
+        ],
+        [
+          "B4_active_index"
+        ],
+        [
+          "G5_active_index"
+        ],
+        [
+          "O5_active_index",
+          "p76_orange_5"
+        ]
+      ],
+      "sourceKinds": [
+        [
+          "annotated-orange"
+        ],
+        [
+          "active_index_slot"
+        ],
+        [
+          "active_index_slot"
+        ],
+        [
+          "active_index_slot",
+          "visual-orange"
+        ]
+      ],
+      "exactActiveBoxFlags": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "allExactActiveBoxes": false,
+      "hasSubstitution": true,
+      "targetMetrics": [
+        {
+          "target": "O4",
+          "witnessIds": [
+            "annotated_13_orange"
+          ],
+          "sourceKinds": [
+            "annotated-orange"
+          ],
+          "isExactActiveBox": false,
+          "box": [
+            1105.62,
+            2243.65,
+            1441.68,
+            2288.21
+          ],
+          "anchors": {
+            "left": {
+              "x": 1105.62,
+              "nearestCenterIndex": 3,
+              "nearestCenterLetter": "R",
+              "nearestCenterSignedPx": -44.13,
+              "nearestCenterAbsPx": 44.13,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": 78.12,
+              "nearestBoundaryAbsPx": 78.12,
+              "nearestType": "center",
+              "nearestAbsPx": 44.13,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 1273.65,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": -120.6,
+              "nearestCenterAbsPx": 120.6,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": 1.65,
+              "nearestBoundaryAbsPx": 1.65,
+              "nearestType": "boundary",
+              "nearestAbsPx": 1.65,
+              "nearestClose16": true,
+              "centerClose16": false,
+              "boundaryClose16": true
+            },
+            "right": {
+              "x": 1441.68,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": 47.43,
+              "nearestCenterAbsPx": 47.43,
+              "nearestBoundaryIndex": 5,
+              "nearestBoundarySignedPx": -74.82,
+              "nearestBoundaryAbsPx": 74.82,
+              "nearestType": "center",
+              "nearestAbsPx": 47.43,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "B4",
+          "witnessIds": [
+            "B4_active_index"
+          ],
+          "sourceKinds": [
+            "active_index_slot"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 428.0,
+              "nearestCenterIndex": 0,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": 11.75,
+              "nearestCenterAbsPx": 11.75,
+              "nearestBoundaryIndex": 1,
+              "nearestBoundarySignedPx": -110.5,
+              "nearestBoundaryAbsPx": 110.5,
+              "nearestType": "center",
+              "nearestAbsPx": 11.75,
+              "nearestClose16": true,
+              "centerClose16": true,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 559.5,
+              "nearestCenterIndex": 1,
+              "nearestCenterLetter": "V",
+              "nearestCenterSignedPx": -101.25,
+              "nearestCenterAbsPx": 101.25,
+              "nearestBoundaryIndex": 1,
+              "nearestBoundarySignedPx": 21.0,
+              "nearestBoundaryAbsPx": 21.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 21.0,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 691.0,
+              "nearestCenterIndex": 1,
+              "nearestCenterLetter": "V",
+              "nearestCenterSignedPx": 30.25,
+              "nearestCenterAbsPx": 30.25,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": -92.0,
+              "nearestBoundaryAbsPx": 92.0,
+              "nearestType": "center",
+              "nearestAbsPx": 30.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "G5",
+          "witnessIds": [
+            "G5_active_index"
+          ],
+          "sourceKinds": [
+            "active_index_slot"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 795.0,
+              "nearestCenterIndex": 2,
+              "nearestCenterLetter": "E",
+              "nearestCenterSignedPx": -110.25,
+              "nearestCenterAbsPx": 110.25,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": 12.0,
+              "nearestBoundaryAbsPx": 12.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 12.0,
+              "nearestClose16": true,
+              "centerClose16": false,
+              "boundaryClose16": true
+            },
+            "center": {
+              "x": 995.5,
+              "nearestCenterIndex": 2,
+              "nearestCenterLetter": "E",
+              "nearestCenterSignedPx": 90.25,
+              "nearestCenterAbsPx": 90.25,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": -32.0,
+              "nearestBoundaryAbsPx": 32.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 32.0,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1196.0,
+              "nearestCenterIndex": 3,
+              "nearestCenterLetter": "R",
+              "nearestCenterSignedPx": 46.25,
+              "nearestCenterAbsPx": 46.25,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": -76.0,
+              "nearestBoundaryAbsPx": 76.0,
+              "nearestType": "center",
+              "nearestAbsPx": 46.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "O5",
+          "witnessIds": [
+            "O5_active_index",
+            "p76_orange_5"
+          ],
+          "sourceKinds": [
+            "active_index_slot",
+            "visual-orange"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 1040.0,
+              "nearestCenterIndex": 3,
+              "nearestCenterLetter": "R",
+              "nearestCenterSignedPx": -109.75,
+              "nearestCenterAbsPx": 109.75,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": 12.5,
+              "nearestBoundaryAbsPx": 12.5,
+              "nearestType": "boundary",
+              "nearestAbsPx": 12.5,
+              "nearestClose16": true,
+              "centerClose16": false,
+              "boundaryClose16": true
+            },
+            "center": {
+              "x": 1350.5,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": -43.75,
+              "nearestCenterAbsPx": 43.75,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": 78.5,
+              "nearestBoundaryAbsPx": 78.5,
+              "nearestType": "center",
+              "nearestAbsPx": 43.75,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1661.0,
+              "nearestCenterIndex": 5,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": 22.25,
+              "nearestCenterAbsPx": 22.25,
+              "nearestBoundaryIndex": 6,
+              "nearestBoundarySignedPx": -100.0,
+              "nearestBoundaryAbsPx": 100.0,
+              "nearestType": "center",
+              "nearestAbsPx": 22.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        }
+      ],
+      "nearestCenterStreams": {
+        "left": "ROER",
+        "center": "DVED",
+        "right": "DVRO"
+      },
+      "nearestBoundaryStreams": {
+        "left": "3123",
+        "center": "4134",
+        "right": "5246"
+      },
+      "anyAnchorClose16RowCount": 4,
+      "allFourAnyAnchorClose16": true,
+      "leftBoundaryClose16RowCount": 2,
+      "allFourLeftBoundaryClose16": false,
+      "centerSlotClose16RowCount": 0,
+      "allFourCenterSlotClose16": false,
+      "rightBoundaryClose16RowCount": 0,
+      "allFourRightBoundaryClose16": false,
+      "meanNearestResiduePx": 27.08,
+      "meanCenterResiduePx": 88.9625,
+      "centerStreamMatchesActive": false,
+      "edgeResidueSelectorCandidate": false
+    },
+    {
+      "ordinal": 6,
+      "targets": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "witnessIds": [
+        [
+          "annotated_13_orange"
+        ],
+        [
+          "B4_active_index"
+        ],
+        [
+          "annotated_15_grey"
+        ],
+        [
+          "O5_active_index",
+          "p76_orange_5"
+        ]
+      ],
+      "sourceKinds": [
+        [
+          "annotated-orange"
+        ],
+        [
+          "active_index_slot"
+        ],
+        [
+          "annotated-grey"
+        ],
+        [
+          "active_index_slot",
+          "visual-orange"
+        ]
+      ],
+      "exactActiveBoxFlags": [
+        false,
+        true,
+        false,
+        true
+      ],
+      "allExactActiveBoxes": false,
+      "hasSubstitution": true,
+      "targetMetrics": [
+        {
+          "target": "O4",
+          "witnessIds": [
+            "annotated_13_orange"
+          ],
+          "sourceKinds": [
+            "annotated-orange"
+          ],
+          "isExactActiveBox": false,
+          "box": [
+            1105.62,
+            2243.65,
+            1441.68,
+            2288.21
+          ],
+          "anchors": {
+            "left": {
+              "x": 1105.62,
+              "nearestCenterIndex": 3,
+              "nearestCenterLetter": "R",
+              "nearestCenterSignedPx": -44.13,
+              "nearestCenterAbsPx": 44.13,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": 78.12,
+              "nearestBoundaryAbsPx": 78.12,
+              "nearestType": "center",
+              "nearestAbsPx": 44.13,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 1273.65,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": -120.6,
+              "nearestCenterAbsPx": 120.6,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": 1.65,
+              "nearestBoundaryAbsPx": 1.65,
+              "nearestType": "boundary",
+              "nearestAbsPx": 1.65,
+              "nearestClose16": true,
+              "centerClose16": false,
+              "boundaryClose16": true
+            },
+            "right": {
+              "x": 1441.68,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": 47.43,
+              "nearestCenterAbsPx": 47.43,
+              "nearestBoundaryIndex": 5,
+              "nearestBoundarySignedPx": -74.82,
+              "nearestBoundaryAbsPx": 74.82,
+              "nearestType": "center",
+              "nearestAbsPx": 47.43,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "B4",
+          "witnessIds": [
+            "B4_active_index"
+          ],
+          "sourceKinds": [
+            "active_index_slot"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 428.0,
+              "nearestCenterIndex": 0,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": 11.75,
+              "nearestCenterAbsPx": 11.75,
+              "nearestBoundaryIndex": 1,
+              "nearestBoundarySignedPx": -110.5,
+              "nearestBoundaryAbsPx": 110.5,
+              "nearestType": "center",
+              "nearestAbsPx": 11.75,
+              "nearestClose16": true,
+              "centerClose16": true,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 559.5,
+              "nearestCenterIndex": 1,
+              "nearestCenterLetter": "V",
+              "nearestCenterSignedPx": -101.25,
+              "nearestCenterAbsPx": 101.25,
+              "nearestBoundaryIndex": 1,
+              "nearestBoundarySignedPx": 21.0,
+              "nearestBoundaryAbsPx": 21.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 21.0,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 691.0,
+              "nearestCenterIndex": 1,
+              "nearestCenterLetter": "V",
+              "nearestCenterSignedPx": 30.25,
+              "nearestCenterAbsPx": 30.25,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": -92.0,
+              "nearestBoundaryAbsPx": 92.0,
+              "nearestType": "center",
+              "nearestAbsPx": 30.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "G5",
+          "witnessIds": [
+            "annotated_15_grey"
+          ],
+          "sourceKinds": [
+            "annotated-grey"
+          ],
+          "isExactActiveBox": false,
+          "box": [
+            698.53,
+            2609.09,
+            832.72,
+            2653.65
+          ],
+          "anchors": {
+            "left": {
+              "x": 698.53,
+              "nearestCenterIndex": 1,
+              "nearestCenterLetter": "V",
+              "nearestCenterSignedPx": 37.78,
+              "nearestCenterAbsPx": 37.78,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": -84.47,
+              "nearestBoundaryAbsPx": 84.47,
+              "nearestType": "center",
+              "nearestAbsPx": 37.78,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 765.625,
+              "nearestCenterIndex": 1,
+              "nearestCenterLetter": "V",
+              "nearestCenterSignedPx": 104.875,
+              "nearestCenterAbsPx": 104.875,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": -17.375,
+              "nearestBoundaryAbsPx": 17.375,
+              "nearestType": "boundary",
+              "nearestAbsPx": 17.375,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 832.72,
+              "nearestCenterIndex": 2,
+              "nearestCenterLetter": "E",
+              "nearestCenterSignedPx": -72.53,
+              "nearestCenterAbsPx": 72.53,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": 49.72,
+              "nearestBoundaryAbsPx": 49.72,
+              "nearestType": "boundary",
+              "nearestAbsPx": 49.72,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "O5",
+          "witnessIds": [
+            "O5_active_index",
+            "p76_orange_5"
+          ],
+          "sourceKinds": [
+            "active_index_slot",
+            "visual-orange"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 1040.0,
+              "nearestCenterIndex": 3,
+              "nearestCenterLetter": "R",
+              "nearestCenterSignedPx": -109.75,
+              "nearestCenterAbsPx": 109.75,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": 12.5,
+              "nearestBoundaryAbsPx": 12.5,
+              "nearestType": "boundary",
+              "nearestAbsPx": 12.5,
+              "nearestClose16": true,
+              "centerClose16": false,
+              "boundaryClose16": true
+            },
+            "center": {
+              "x": 1350.5,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": -43.75,
+              "nearestCenterAbsPx": 43.75,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": 78.5,
+              "nearestBoundaryAbsPx": 78.5,
+              "nearestType": "center",
+              "nearestAbsPx": 43.75,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1661.0,
+              "nearestCenterIndex": 5,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": 22.25,
+              "nearestCenterAbsPx": 22.25,
+              "nearestBoundaryIndex": 6,
+              "nearestBoundarySignedPx": -100.0,
+              "nearestBoundaryAbsPx": 100.0,
+              "nearestType": "center",
+              "nearestAbsPx": 22.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        }
+      ],
+      "nearestCenterStreams": {
+        "left": "ROVR",
+        "center": "DVVD",
+        "right": "DVEO"
+      },
+      "nearestBoundaryStreams": {
+        "left": "3123",
+        "center": "4124",
+        "right": "5226"
+      },
+      "anyAnchorClose16RowCount": 3,
+      "allFourAnyAnchorClose16": false,
+      "leftBoundaryClose16RowCount": 1,
+      "allFourLeftBoundaryClose16": false,
+      "centerSlotClose16RowCount": 0,
+      "allFourCenterSlotClose16": false,
+      "rightBoundaryClose16RowCount": 0,
+      "allFourRightBoundaryClose16": false,
+      "meanNearestResiduePx": 28.29875,
+      "meanCenterResiduePx": 92.61875,
+      "centerStreamMatchesActive": false,
+      "edgeResidueSelectorCandidate": false
+    },
+    {
+      "ordinal": 7,
+      "targets": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "witnessIds": [
+        [
+          "annotated_13_orange"
+        ],
+        [
+          "annotated_14_grey"
+        ],
+        [
+          "G5_active_index"
+        ],
+        [
+          "O5_active_index",
+          "p76_orange_5"
+        ]
+      ],
+      "sourceKinds": [
+        [
+          "annotated-orange"
+        ],
+        [
+          "annotated-grey"
+        ],
+        [
+          "active_index_slot"
+        ],
+        [
+          "active_index_slot",
+          "visual-orange"
+        ]
+      ],
+      "exactActiveBoxFlags": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "allExactActiveBoxes": false,
+      "hasSubstitution": true,
+      "targetMetrics": [
+        {
+          "target": "O4",
+          "witnessIds": [
+            "annotated_13_orange"
+          ],
+          "sourceKinds": [
+            "annotated-orange"
+          ],
+          "isExactActiveBox": false,
+          "box": [
+            1105.62,
+            2243.65,
+            1441.68,
+            2288.21
+          ],
+          "anchors": {
+            "left": {
+              "x": 1105.62,
+              "nearestCenterIndex": 3,
+              "nearestCenterLetter": "R",
+              "nearestCenterSignedPx": -44.13,
+              "nearestCenterAbsPx": 44.13,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": 78.12,
+              "nearestBoundaryAbsPx": 78.12,
+              "nearestType": "center",
+              "nearestAbsPx": 44.13,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 1273.65,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": -120.6,
+              "nearestCenterAbsPx": 120.6,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": 1.65,
+              "nearestBoundaryAbsPx": 1.65,
+              "nearestType": "boundary",
+              "nearestAbsPx": 1.65,
+              "nearestClose16": true,
+              "centerClose16": false,
+              "boundaryClose16": true
+            },
+            "right": {
+              "x": 1441.68,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": 47.43,
+              "nearestCenterAbsPx": 47.43,
+              "nearestBoundaryIndex": 5,
+              "nearestBoundarySignedPx": -74.82,
+              "nearestBoundaryAbsPx": 74.82,
+              "nearestType": "center",
+              "nearestAbsPx": 47.43,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "B4",
+          "witnessIds": [
+            "annotated_14_grey"
+          ],
+          "sourceKinds": [
+            "annotated-grey"
+          ],
+          "isExactActiveBox": false,
+          "box": [
+            484.44,
+            2393.42,
+            1439.33,
+            2507.26
+          ],
+          "anchors": {
+            "left": {
+              "x": 484.44,
+              "nearestCenterIndex": 0,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": 68.19,
+              "nearestCenterAbsPx": 68.19,
+              "nearestBoundaryIndex": 1,
+              "nearestBoundarySignedPx": -54.06,
+              "nearestBoundaryAbsPx": 54.06,
+              "nearestType": "boundary",
+              "nearestAbsPx": 54.06,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 961.885,
+              "nearestCenterIndex": 2,
+              "nearestCenterLetter": "E",
+              "nearestCenterSignedPx": 56.635,
+              "nearestCenterAbsPx": 56.635,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": -65.615,
+              "nearestBoundaryAbsPx": 65.615,
+              "nearestType": "center",
+              "nearestAbsPx": 56.635,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1439.33,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": 45.08,
+              "nearestCenterAbsPx": 45.08,
+              "nearestBoundaryIndex": 5,
+              "nearestBoundarySignedPx": -77.17,
+              "nearestBoundaryAbsPx": 77.17,
+              "nearestType": "center",
+              "nearestAbsPx": 45.08,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "G5",
+          "witnessIds": [
+            "G5_active_index"
+          ],
+          "sourceKinds": [
+            "active_index_slot"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 795.0,
+              "nearestCenterIndex": 2,
+              "nearestCenterLetter": "E",
+              "nearestCenterSignedPx": -110.25,
+              "nearestCenterAbsPx": 110.25,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": 12.0,
+              "nearestBoundaryAbsPx": 12.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 12.0,
+              "nearestClose16": true,
+              "centerClose16": false,
+              "boundaryClose16": true
+            },
+            "center": {
+              "x": 995.5,
+              "nearestCenterIndex": 2,
+              "nearestCenterLetter": "E",
+              "nearestCenterSignedPx": 90.25,
+              "nearestCenterAbsPx": 90.25,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": -32.0,
+              "nearestBoundaryAbsPx": 32.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 32.0,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1196.0,
+              "nearestCenterIndex": 3,
+              "nearestCenterLetter": "R",
+              "nearestCenterSignedPx": 46.25,
+              "nearestCenterAbsPx": 46.25,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": -76.0,
+              "nearestBoundaryAbsPx": 76.0,
+              "nearestType": "center",
+              "nearestAbsPx": 46.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "O5",
+          "witnessIds": [
+            "O5_active_index",
+            "p76_orange_5"
+          ],
+          "sourceKinds": [
+            "active_index_slot",
+            "visual-orange"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 1040.0,
+              "nearestCenterIndex": 3,
+              "nearestCenterLetter": "R",
+              "nearestCenterSignedPx": -109.75,
+              "nearestCenterAbsPx": 109.75,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": 12.5,
+              "nearestBoundaryAbsPx": 12.5,
+              "nearestType": "boundary",
+              "nearestAbsPx": 12.5,
+              "nearestClose16": true,
+              "centerClose16": false,
+              "boundaryClose16": true
+            },
+            "center": {
+              "x": 1350.5,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": -43.75,
+              "nearestCenterAbsPx": 43.75,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": 78.5,
+              "nearestBoundaryAbsPx": 78.5,
+              "nearestType": "center",
+              "nearestAbsPx": 43.75,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1661.0,
+              "nearestCenterIndex": 5,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": 22.25,
+              "nearestCenterAbsPx": 22.25,
+              "nearestBoundaryIndex": 6,
+              "nearestBoundarySignedPx": -100.0,
+              "nearestBoundaryAbsPx": 100.0,
+              "nearestType": "center",
+              "nearestAbsPx": 22.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        }
+      ],
+      "nearestCenterStreams": {
+        "left": "ROER",
+        "center": "DEED",
+        "right": "DDRO"
+      },
+      "nearestBoundaryStreams": {
+        "left": "3123",
+        "center": "4334",
+        "right": "5546"
+      },
+      "anyAnchorClose16RowCount": 3,
+      "allFourAnyAnchorClose16": false,
+      "leftBoundaryClose16RowCount": 2,
+      "allFourLeftBoundaryClose16": false,
+      "centerSlotClose16RowCount": 0,
+      "allFourCenterSlotClose16": false,
+      "rightBoundaryClose16RowCount": 0,
+      "allFourRightBoundaryClose16": false,
+      "meanNearestResiduePx": 34.81125,
+      "meanCenterResiduePx": 77.80875,
+      "centerStreamMatchesActive": false,
+      "edgeResidueSelectorCandidate": false
+    },
+    {
+      "ordinal": 8,
+      "targets": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "witnessIds": [
+        [
+          "annotated_13_orange"
+        ],
+        [
+          "annotated_14_grey"
+        ],
+        [
+          "annotated_15_grey"
+        ],
+        [
+          "O5_active_index",
+          "p76_orange_5"
+        ]
+      ],
+      "sourceKinds": [
+        [
+          "annotated-orange"
+        ],
+        [
+          "annotated-grey"
+        ],
+        [
+          "annotated-grey"
+        ],
+        [
+          "active_index_slot",
+          "visual-orange"
+        ]
+      ],
+      "exactActiveBoxFlags": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "allExactActiveBoxes": false,
+      "hasSubstitution": true,
+      "targetMetrics": [
+        {
+          "target": "O4",
+          "witnessIds": [
+            "annotated_13_orange"
+          ],
+          "sourceKinds": [
+            "annotated-orange"
+          ],
+          "isExactActiveBox": false,
+          "box": [
+            1105.62,
+            2243.65,
+            1441.68,
+            2288.21
+          ],
+          "anchors": {
+            "left": {
+              "x": 1105.62,
+              "nearestCenterIndex": 3,
+              "nearestCenterLetter": "R",
+              "nearestCenterSignedPx": -44.13,
+              "nearestCenterAbsPx": 44.13,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": 78.12,
+              "nearestBoundaryAbsPx": 78.12,
+              "nearestType": "center",
+              "nearestAbsPx": 44.13,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 1273.65,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": -120.6,
+              "nearestCenterAbsPx": 120.6,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": 1.65,
+              "nearestBoundaryAbsPx": 1.65,
+              "nearestType": "boundary",
+              "nearestAbsPx": 1.65,
+              "nearestClose16": true,
+              "centerClose16": false,
+              "boundaryClose16": true
+            },
+            "right": {
+              "x": 1441.68,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": 47.43,
+              "nearestCenterAbsPx": 47.43,
+              "nearestBoundaryIndex": 5,
+              "nearestBoundarySignedPx": -74.82,
+              "nearestBoundaryAbsPx": 74.82,
+              "nearestType": "center",
+              "nearestAbsPx": 47.43,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "B4",
+          "witnessIds": [
+            "annotated_14_grey"
+          ],
+          "sourceKinds": [
+            "annotated-grey"
+          ],
+          "isExactActiveBox": false,
+          "box": [
+            484.44,
+            2393.42,
+            1439.33,
+            2507.26
+          ],
+          "anchors": {
+            "left": {
+              "x": 484.44,
+              "nearestCenterIndex": 0,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": 68.19,
+              "nearestCenterAbsPx": 68.19,
+              "nearestBoundaryIndex": 1,
+              "nearestBoundarySignedPx": -54.06,
+              "nearestBoundaryAbsPx": 54.06,
+              "nearestType": "boundary",
+              "nearestAbsPx": 54.06,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 961.885,
+              "nearestCenterIndex": 2,
+              "nearestCenterLetter": "E",
+              "nearestCenterSignedPx": 56.635,
+              "nearestCenterAbsPx": 56.635,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": -65.615,
+              "nearestBoundaryAbsPx": 65.615,
+              "nearestType": "center",
+              "nearestAbsPx": 56.635,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1439.33,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": 45.08,
+              "nearestCenterAbsPx": 45.08,
+              "nearestBoundaryIndex": 5,
+              "nearestBoundarySignedPx": -77.17,
+              "nearestBoundaryAbsPx": 77.17,
+              "nearestType": "center",
+              "nearestAbsPx": 45.08,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "G5",
+          "witnessIds": [
+            "annotated_15_grey"
+          ],
+          "sourceKinds": [
+            "annotated-grey"
+          ],
+          "isExactActiveBox": false,
+          "box": [
+            698.53,
+            2609.09,
+            832.72,
+            2653.65
+          ],
+          "anchors": {
+            "left": {
+              "x": 698.53,
+              "nearestCenterIndex": 1,
+              "nearestCenterLetter": "V",
+              "nearestCenterSignedPx": 37.78,
+              "nearestCenterAbsPx": 37.78,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": -84.47,
+              "nearestBoundaryAbsPx": 84.47,
+              "nearestType": "center",
+              "nearestAbsPx": 37.78,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 765.625,
+              "nearestCenterIndex": 1,
+              "nearestCenterLetter": "V",
+              "nearestCenterSignedPx": 104.875,
+              "nearestCenterAbsPx": 104.875,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": -17.375,
+              "nearestBoundaryAbsPx": 17.375,
+              "nearestType": "boundary",
+              "nearestAbsPx": 17.375,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 832.72,
+              "nearestCenterIndex": 2,
+              "nearestCenterLetter": "E",
+              "nearestCenterSignedPx": -72.53,
+              "nearestCenterAbsPx": 72.53,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": 49.72,
+              "nearestBoundaryAbsPx": 49.72,
+              "nearestType": "boundary",
+              "nearestAbsPx": 49.72,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "O5",
+          "witnessIds": [
+            "O5_active_index",
+            "p76_orange_5"
+          ],
+          "sourceKinds": [
+            "active_index_slot",
+            "visual-orange"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 1040.0,
+              "nearestCenterIndex": 3,
+              "nearestCenterLetter": "R",
+              "nearestCenterSignedPx": -109.75,
+              "nearestCenterAbsPx": 109.75,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": 12.5,
+              "nearestBoundaryAbsPx": 12.5,
+              "nearestType": "boundary",
+              "nearestAbsPx": 12.5,
+              "nearestClose16": true,
+              "centerClose16": false,
+              "boundaryClose16": true
+            },
+            "center": {
+              "x": 1350.5,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": -43.75,
+              "nearestCenterAbsPx": 43.75,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": 78.5,
+              "nearestBoundaryAbsPx": 78.5,
+              "nearestType": "center",
+              "nearestAbsPx": 43.75,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1661.0,
+              "nearestCenterIndex": 5,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": 22.25,
+              "nearestCenterAbsPx": 22.25,
+              "nearestBoundaryIndex": 6,
+              "nearestBoundarySignedPx": -100.0,
+              "nearestBoundaryAbsPx": 100.0,
+              "nearestType": "center",
+              "nearestAbsPx": 22.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        }
+      ],
+      "nearestCenterStreams": {
+        "left": "ROVR",
+        "center": "DEVD",
+        "right": "DDEO"
+      },
+      "nearestBoundaryStreams": {
+        "left": "3123",
+        "center": "4324",
+        "right": "5526"
+      },
+      "anyAnchorClose16RowCount": 2,
+      "allFourAnyAnchorClose16": false,
+      "leftBoundaryClose16RowCount": 1,
+      "allFourLeftBoundaryClose16": false,
+      "centerSlotClose16RowCount": 0,
+      "allFourCenterSlotClose16": false,
+      "rightBoundaryClose16RowCount": 0,
+      "allFourRightBoundaryClose16": false,
+      "meanNearestResiduePx": 36.03,
+      "meanCenterResiduePx": 81.465,
+      "centerStreamMatchesActive": false,
+      "edgeResidueSelectorCandidate": false
+    }
+  ],
+  "exactActiveVariant": {
+    "ordinal": 1,
+    "targets": [
+      "O4",
+      "B4",
+      "G5",
+      "O5"
+    ],
+    "witnessIds": [
+      [
+        "O4_active_index",
+        "p76_orange_4"
+      ],
+      [
+        "B4_active_index"
+      ],
+      [
+        "G5_active_index"
+      ],
+      [
+        "O5_active_index",
+        "p76_orange_5"
+      ]
+    ],
+    "sourceKinds": [
+      [
+        "active_index_slot",
+        "visual-orange"
+      ],
+      [
+        "active_index_slot"
+      ],
+      [
+        "active_index_slot"
+      ],
+      [
+        "active_index_slot",
+        "visual-orange"
+      ]
+    ],
+    "exactActiveBoxFlags": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "allExactActiveBoxes": true,
+    "hasSubstitution": false,
+    "targetMetrics": [
+      {
+        "target": "O4",
+        "witnessIds": [
+          "O4_active_index",
+          "p76_orange_4"
+        ],
+        "sourceKinds": [
+          "active_index_slot",
+          "visual-orange"
+        ],
+        "isExactActiveBox": true,
+        "box": [
+          1334.0,
+          2177.0,
+          1801.0,
+          2225.0
+        ],
+        "anchors": {
+          "left": {
+            "x": 1334.0,
+            "nearestCenterIndex": 4,
+            "nearestCenterLetter": "D",
+            "nearestCenterSignedPx": -60.25,
+            "nearestCenterAbsPx": 60.25,
+            "nearestBoundaryIndex": 4,
+            "nearestBoundarySignedPx": 62.0,
+            "nearestBoundaryAbsPx": 62.0,
+            "nearestType": "center",
+            "nearestAbsPx": 60.25,
+            "nearestClose16": false,
+            "centerClose16": false,
+            "boundaryClose16": false
+          },
+          "center": {
+            "x": 1567.5,
+            "nearestCenterIndex": 5,
+            "nearestCenterLetter": "O",
+            "nearestCenterSignedPx": -71.25,
+            "nearestCenterAbsPx": 71.25,
+            "nearestBoundaryIndex": 5,
+            "nearestBoundarySignedPx": 51.0,
+            "nearestBoundaryAbsPx": 51.0,
+            "nearestType": "boundary",
+            "nearestAbsPx": 51.0,
+            "nearestClose16": false,
+            "centerClose16": false,
+            "boundaryClose16": false
+          },
+          "right": {
+            "x": 1801.0,
+            "nearestCenterIndex": 6,
+            "nearestCenterLetter": "S",
+            "nearestCenterSignedPx": -82.25,
+            "nearestCenterAbsPx": 82.25,
+            "nearestBoundaryIndex": 6,
+            "nearestBoundarySignedPx": 40.0,
+            "nearestBoundaryAbsPx": 40.0,
+            "nearestType": "boundary",
+            "nearestAbsPx": 40.0,
+            "nearestClose16": false,
+            "centerClose16": false,
+            "boundaryClose16": false
+          }
+        }
+      },
+      {
+        "target": "B4",
+        "witnessIds": [
+          "B4_active_index"
+        ],
+        "sourceKinds": [
+          "active_index_slot"
+        ],
+        "isExactActiveBox": true,
+        "box": [
+          428.0,
+          2398.0,
+          691.0,
+          2445.0
+        ],
+        "anchors": {
+          "left": {
+            "x": 428.0,
+            "nearestCenterIndex": 0,
+            "nearestCenterLetter": "O",
+            "nearestCenterSignedPx": 11.75,
+            "nearestCenterAbsPx": 11.75,
+            "nearestBoundaryIndex": 1,
+            "nearestBoundarySignedPx": -110.5,
+            "nearestBoundaryAbsPx": 110.5,
+            "nearestType": "center",
+            "nearestAbsPx": 11.75,
+            "nearestClose16": true,
+            "centerClose16": true,
+            "boundaryClose16": false
+          },
+          "center": {
+            "x": 559.5,
+            "nearestCenterIndex": 1,
+            "nearestCenterLetter": "V",
+            "nearestCenterSignedPx": -101.25,
+            "nearestCenterAbsPx": 101.25,
+            "nearestBoundaryIndex": 1,
+            "nearestBoundarySignedPx": 21.0,
+            "nearestBoundaryAbsPx": 21.0,
+            "nearestType": "boundary",
+            "nearestAbsPx": 21.0,
+            "nearestClose16": false,
+            "centerClose16": false,
+            "boundaryClose16": false
+          },
+          "right": {
+            "x": 691.0,
+            "nearestCenterIndex": 1,
+            "nearestCenterLetter": "V",
+            "nearestCenterSignedPx": 30.25,
+            "nearestCenterAbsPx": 30.25,
+            "nearestBoundaryIndex": 2,
+            "nearestBoundarySignedPx": -92.0,
+            "nearestBoundaryAbsPx": 92.0,
+            "nearestType": "center",
+            "nearestAbsPx": 30.25,
+            "nearestClose16": false,
+            "centerClose16": false,
+            "boundaryClose16": false
+          }
+        }
+      },
+      {
+        "target": "G5",
+        "witnessIds": [
+          "G5_active_index"
+        ],
+        "sourceKinds": [
+          "active_index_slot"
+        ],
+        "isExactActiveBox": true,
+        "box": [
+          795.0,
+          2544.0,
+          1196.0,
+          2592.0
+        ],
+        "anchors": {
+          "left": {
+            "x": 795.0,
+            "nearestCenterIndex": 2,
+            "nearestCenterLetter": "E",
+            "nearestCenterSignedPx": -110.25,
+            "nearestCenterAbsPx": 110.25,
+            "nearestBoundaryIndex": 2,
+            "nearestBoundarySignedPx": 12.0,
+            "nearestBoundaryAbsPx": 12.0,
+            "nearestType": "boundary",
+            "nearestAbsPx": 12.0,
+            "nearestClose16": true,
+            "centerClose16": false,
+            "boundaryClose16": true
+          },
+          "center": {
+            "x": 995.5,
+            "nearestCenterIndex": 2,
+            "nearestCenterLetter": "E",
+            "nearestCenterSignedPx": 90.25,
+            "nearestCenterAbsPx": 90.25,
+            "nearestBoundaryIndex": 3,
+            "nearestBoundarySignedPx": -32.0,
+            "nearestBoundaryAbsPx": 32.0,
+            "nearestType": "boundary",
+            "nearestAbsPx": 32.0,
+            "nearestClose16": false,
+            "centerClose16": false,
+            "boundaryClose16": false
+          },
+          "right": {
+            "x": 1196.0,
+            "nearestCenterIndex": 3,
+            "nearestCenterLetter": "R",
+            "nearestCenterSignedPx": 46.25,
+            "nearestCenterAbsPx": 46.25,
+            "nearestBoundaryIndex": 4,
+            "nearestBoundarySignedPx": -76.0,
+            "nearestBoundaryAbsPx": 76.0,
+            "nearestType": "center",
+            "nearestAbsPx": 46.25,
+            "nearestClose16": false,
+            "centerClose16": false,
+            "boundaryClose16": false
+          }
+        }
+      },
+      {
+        "target": "O5",
+        "witnessIds": [
+          "O5_active_index",
+          "p76_orange_5"
+        ],
+        "sourceKinds": [
+          "active_index_slot",
+          "visual-orange"
+        ],
+        "isExactActiveBox": true,
+        "box": [
+          1040.0,
+          2932.0,
+          1661.0,
+          2982.0
+        ],
+        "anchors": {
+          "left": {
+            "x": 1040.0,
+            "nearestCenterIndex": 3,
+            "nearestCenterLetter": "R",
+            "nearestCenterSignedPx": -109.75,
+            "nearestCenterAbsPx": 109.75,
+            "nearestBoundaryIndex": 3,
+            "nearestBoundarySignedPx": 12.5,
+            "nearestBoundaryAbsPx": 12.5,
+            "nearestType": "boundary",
+            "nearestAbsPx": 12.5,
+            "nearestClose16": true,
+            "centerClose16": false,
+            "boundaryClose16": true
+          },
+          "center": {
+            "x": 1350.5,
+            "nearestCenterIndex": 4,
+            "nearestCenterLetter": "D",
+            "nearestCenterSignedPx": -43.75,
+            "nearestCenterAbsPx": 43.75,
+            "nearestBoundaryIndex": 4,
+            "nearestBoundarySignedPx": 78.5,
+            "nearestBoundaryAbsPx": 78.5,
+            "nearestType": "center",
+            "nearestAbsPx": 43.75,
+            "nearestClose16": false,
+            "centerClose16": false,
+            "boundaryClose16": false
+          },
+          "right": {
+            "x": 1661.0,
+            "nearestCenterIndex": 5,
+            "nearestCenterLetter": "O",
+            "nearestCenterSignedPx": 22.25,
+            "nearestCenterAbsPx": 22.25,
+            "nearestBoundaryIndex": 6,
+            "nearestBoundarySignedPx": -100.0,
+            "nearestBoundaryAbsPx": 100.0,
+            "nearestType": "center",
+            "nearestAbsPx": 22.25,
+            "nearestClose16": false,
+            "centerClose16": false,
+            "boundaryClose16": false
+          }
+        }
+      }
+    ],
+    "nearestCenterStreams": {
+      "left": "DOER",
+      "center": "OVED",
+      "right": "SVRO"
+    },
+    "nearestBoundaryStreams": {
+      "left": "4123",
+      "center": "5134",
+      "right": "6246"
+    },
+    "anyAnchorClose16RowCount": 3,
+    "allFourAnyAnchorClose16": false,
+    "leftBoundaryClose16RowCount": 2,
+    "allFourLeftBoundaryClose16": false,
+    "centerSlotClose16RowCount": 0,
+    "allFourCenterSlotClose16": false,
+    "rightBoundaryClose16RowCount": 0,
+    "allFourRightBoundaryClose16": false,
+    "meanNearestResiduePx": 31.916667,
+    "meanCenterResiduePx": 76.625,
+    "centerStreamMatchesActive": true,
+    "edgeResidueSelectorCandidate": false
+  },
+  "allFourAnyAnchorClose16Variants": [
+    {
+      "ordinal": 5,
+      "targets": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "witnessIds": [
+        [
+          "annotated_13_orange"
+        ],
+        [
+          "B4_active_index"
+        ],
+        [
+          "G5_active_index"
+        ],
+        [
+          "O5_active_index",
+          "p76_orange_5"
+        ]
+      ],
+      "sourceKinds": [
+        [
+          "annotated-orange"
+        ],
+        [
+          "active_index_slot"
+        ],
+        [
+          "active_index_slot"
+        ],
+        [
+          "active_index_slot",
+          "visual-orange"
+        ]
+      ],
+      "exactActiveBoxFlags": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "allExactActiveBoxes": false,
+      "hasSubstitution": true,
+      "targetMetrics": [
+        {
+          "target": "O4",
+          "witnessIds": [
+            "annotated_13_orange"
+          ],
+          "sourceKinds": [
+            "annotated-orange"
+          ],
+          "isExactActiveBox": false,
+          "box": [
+            1105.62,
+            2243.65,
+            1441.68,
+            2288.21
+          ],
+          "anchors": {
+            "left": {
+              "x": 1105.62,
+              "nearestCenterIndex": 3,
+              "nearestCenterLetter": "R",
+              "nearestCenterSignedPx": -44.13,
+              "nearestCenterAbsPx": 44.13,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": 78.12,
+              "nearestBoundaryAbsPx": 78.12,
+              "nearestType": "center",
+              "nearestAbsPx": 44.13,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 1273.65,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": -120.6,
+              "nearestCenterAbsPx": 120.6,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": 1.65,
+              "nearestBoundaryAbsPx": 1.65,
+              "nearestType": "boundary",
+              "nearestAbsPx": 1.65,
+              "nearestClose16": true,
+              "centerClose16": false,
+              "boundaryClose16": true
+            },
+            "right": {
+              "x": 1441.68,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": 47.43,
+              "nearestCenterAbsPx": 47.43,
+              "nearestBoundaryIndex": 5,
+              "nearestBoundarySignedPx": -74.82,
+              "nearestBoundaryAbsPx": 74.82,
+              "nearestType": "center",
+              "nearestAbsPx": 47.43,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "B4",
+          "witnessIds": [
+            "B4_active_index"
+          ],
+          "sourceKinds": [
+            "active_index_slot"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 428.0,
+              "nearestCenterIndex": 0,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": 11.75,
+              "nearestCenterAbsPx": 11.75,
+              "nearestBoundaryIndex": 1,
+              "nearestBoundarySignedPx": -110.5,
+              "nearestBoundaryAbsPx": 110.5,
+              "nearestType": "center",
+              "nearestAbsPx": 11.75,
+              "nearestClose16": true,
+              "centerClose16": true,
+              "boundaryClose16": false
+            },
+            "center": {
+              "x": 559.5,
+              "nearestCenterIndex": 1,
+              "nearestCenterLetter": "V",
+              "nearestCenterSignedPx": -101.25,
+              "nearestCenterAbsPx": 101.25,
+              "nearestBoundaryIndex": 1,
+              "nearestBoundarySignedPx": 21.0,
+              "nearestBoundaryAbsPx": 21.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 21.0,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 691.0,
+              "nearestCenterIndex": 1,
+              "nearestCenterLetter": "V",
+              "nearestCenterSignedPx": 30.25,
+              "nearestCenterAbsPx": 30.25,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": -92.0,
+              "nearestBoundaryAbsPx": 92.0,
+              "nearestType": "center",
+              "nearestAbsPx": 30.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "G5",
+          "witnessIds": [
+            "G5_active_index"
+          ],
+          "sourceKinds": [
+            "active_index_slot"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 795.0,
+              "nearestCenterIndex": 2,
+              "nearestCenterLetter": "E",
+              "nearestCenterSignedPx": -110.25,
+              "nearestCenterAbsPx": 110.25,
+              "nearestBoundaryIndex": 2,
+              "nearestBoundarySignedPx": 12.0,
+              "nearestBoundaryAbsPx": 12.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 12.0,
+              "nearestClose16": true,
+              "centerClose16": false,
+              "boundaryClose16": true
+            },
+            "center": {
+              "x": 995.5,
+              "nearestCenterIndex": 2,
+              "nearestCenterLetter": "E",
+              "nearestCenterSignedPx": 90.25,
+              "nearestCenterAbsPx": 90.25,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": -32.0,
+              "nearestBoundaryAbsPx": 32.0,
+              "nearestType": "boundary",
+              "nearestAbsPx": 32.0,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1196.0,
+              "nearestCenterIndex": 3,
+              "nearestCenterLetter": "R",
+              "nearestCenterSignedPx": 46.25,
+              "nearestCenterAbsPx": 46.25,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": -76.0,
+              "nearestBoundaryAbsPx": 76.0,
+              "nearestType": "center",
+              "nearestAbsPx": 46.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        },
+        {
+          "target": "O5",
+          "witnessIds": [
+            "O5_active_index",
+            "p76_orange_5"
+          ],
+          "sourceKinds": [
+            "active_index_slot",
+            "visual-orange"
+          ],
+          "isExactActiveBox": true,
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "anchors": {
+            "left": {
+              "x": 1040.0,
+              "nearestCenterIndex": 3,
+              "nearestCenterLetter": "R",
+              "nearestCenterSignedPx": -109.75,
+              "nearestCenterAbsPx": 109.75,
+              "nearestBoundaryIndex": 3,
+              "nearestBoundarySignedPx": 12.5,
+              "nearestBoundaryAbsPx": 12.5,
+              "nearestType": "boundary",
+              "nearestAbsPx": 12.5,
+              "nearestClose16": true,
+              "centerClose16": false,
+              "boundaryClose16": true
+            },
+            "center": {
+              "x": 1350.5,
+              "nearestCenterIndex": 4,
+              "nearestCenterLetter": "D",
+              "nearestCenterSignedPx": -43.75,
+              "nearestCenterAbsPx": 43.75,
+              "nearestBoundaryIndex": 4,
+              "nearestBoundarySignedPx": 78.5,
+              "nearestBoundaryAbsPx": 78.5,
+              "nearestType": "center",
+              "nearestAbsPx": 43.75,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            },
+            "right": {
+              "x": 1661.0,
+              "nearestCenterIndex": 5,
+              "nearestCenterLetter": "O",
+              "nearestCenterSignedPx": 22.25,
+              "nearestCenterAbsPx": 22.25,
+              "nearestBoundaryIndex": 6,
+              "nearestBoundarySignedPx": -100.0,
+              "nearestBoundaryAbsPx": 100.0,
+              "nearestType": "center",
+              "nearestAbsPx": 22.25,
+              "nearestClose16": false,
+              "centerClose16": false,
+              "boundaryClose16": false
+            }
+          }
+        }
+      ],
+      "nearestCenterStreams": {
+        "left": "ROER",
+        "center": "DVED",
+        "right": "DVRO"
+      },
+      "nearestBoundaryStreams": {
+        "left": "3123",
+        "center": "4134",
+        "right": "5246"
+      },
+      "anyAnchorClose16RowCount": 4,
+      "allFourAnyAnchorClose16": true,
+      "leftBoundaryClose16RowCount": 2,
+      "allFourLeftBoundaryClose16": false,
+      "centerSlotClose16RowCount": 0,
+      "allFourCenterSlotClose16": false,
+      "rightBoundaryClose16RowCount": 0,
+      "allFourRightBoundaryClose16": false,
+      "meanNearestResiduePx": 27.08,
+      "meanCenterResiduePx": 88.9625,
+      "centerStreamMatchesActive": false,
+      "edgeResidueSelectorCandidate": false
+    }
+  ],
+  "summary": {
+    "variantCount": 8,
+    "closeThresholdPx": 16.0,
+    "exactActiveLeftCenterStream": "DOER",
+    "exactActiveCenterStream": "OVED",
+    "exactActiveRightCenterStream": "SVRO",
+    "exactActiveBoundaryStreams": {
+      "left": "4123",
+      "center": "5134",
+      "right": "6246"
+    },
+    "exactActiveAnyAnchorClose16RowCount": 3,
+    "exactActiveLeftBoundaryClose16RowCount": 2,
+    "exactActiveCenterSlotClose16RowCount": 0,
+    "exactActiveRightBoundaryClose16RowCount": 0,
+    "exactActiveAllFourAnyAnchorClose16": false,
+    "exactActiveAllFourLeftBoundaryClose16": false,
+    "exactActiveAllFourCenterSlotClose16": false,
+    "exactActiveAllFourRightBoundaryClose16": false,
+    "exactActiveMeanNearestResiduePx": 31.916667,
+    "exactActiveMeanCenterResiduePx": 76.625,
+    "allFourAnyAnchorClose16VariantCount": 1,
+    "substitutedAllFourAnyAnchorClose16VariantCount": 1,
+    "bestMeanNearestResidueVariantOrdinal": 5,
+    "bestMeanNearestResiduePx": 27.08,
+    "slotBoundaryResidualPriorFingerprint": "active=4|highlightControls=7|verticalControls=16|thresholds=4,8,16,32|allFourAny16=0|allFourLeftB16=0|allFourCenter16=0|allFourRightB16=0|commonSig=mixed|streamsC=DOER/OVED/SVRO|streamsB=4123/5134/6246|meanResidual=31.90/26.00|sharedCarrier=0|hiddenCandidate=0|sourceR3=0|triggers=0/9|selectors=0",
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "hiddenEdgeResidueCandidateCount": 0,
+    "selectorUnlocked": false,
+    "edgeResidueFingerprint": "variants=8|exactCenter=OVED|exactEdges=DOER/SVRO|exactClose=3/2/0/0|allFourAny=1|subAllFourAny=1|hiddenCandidate=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "decision": {
+    "currentScanActiveBoxOverdoseEdgeResidueGate": "current_scan_active_box_overdose_edge_residue_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Exact active centers repeat the known OVED stream, but 0/4 exact active centers are close to slot centers at <=16px and the exact left/right edge streams are mixed. A substituted annotated O4 variant has better all-four any-anchor closeness than the exact active boxes, so edge residue is not exact-active-specific and has no source-backed R3 permission."
+  },
+  "nextMove": "Do not pursue active-box edge/center residue as an extraction selector. The next useful local pass should inspect a different source/provenance surface, or stop until a true physical/original-layout asset or raw clue wording supplies unit/order/transform.",
+  "sheet": "analysis_outputs/source_audit/current_scan_active_box_overdose_edge_residue_gate/current_scan_active_box_overdose_edge_residue_gate_sheet.jpg"
+}

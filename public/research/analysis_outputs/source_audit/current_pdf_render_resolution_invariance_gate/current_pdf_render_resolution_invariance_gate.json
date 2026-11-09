@@ -1,0 +1,906 @@
+{
+  "createdAt": "2026-05-24T06:11:06",
+  "scope": "current PDF page-76 multi-resolution render invariance; no extraction or candidate generation",
+  "inputs": {
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "c9HeaderGlyphSlotGate": "analysis_outputs/source_audit/c9_header_glyph_slot_gate/c9_header_glyph_slot_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json",
+    "referencePage": "analysis_outputs/3d_article_map/page_76_upright.jpg"
+  },
+  "renderRows": [
+    {
+      "pdf": "magazine.pdf",
+      "zoom": 1,
+      "rawSize": [
+        611,
+        784
+      ],
+      "normalizedSize": [
+        2544,
+        3264
+      ],
+      "orientation": "as_rendered",
+      "referenceDiffScore": 4.108221
+    },
+    {
+      "pdf": "magazine.pdf",
+      "zoom": 2,
+      "rawSize": [
+        1222,
+        1567
+      ],
+      "normalizedSize": [
+        2544,
+        3264
+      ],
+      "orientation": "as_rendered",
+      "referenceDiffScore": 1.537751
+    },
+    {
+      "pdf": "magazine.pdf",
+      "zoom": 4,
+      "rawSize": [
+        2443,
+        3134
+      ],
+      "normalizedSize": [
+        2544,
+        3264
+      ],
+      "orientation": "as_rendered",
+      "referenceDiffScore": 0.62843
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "zoom": 1,
+      "rawSize": [
+        612,
+        792
+      ],
+      "normalizedSize": [
+        2544,
+        3264
+      ],
+      "orientation": "as_rendered",
+      "referenceDiffScore": 156.572558
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "zoom": 2,
+      "rawSize": [
+        1224,
+        1584
+      ],
+      "normalizedSize": [
+        2544,
+        3264
+      ],
+      "orientation": "as_rendered",
+      "referenceDiffScore": 156.72317
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "zoom": 4,
+      "rawSize": [
+        2448,
+        3168
+      ],
+      "normalizedSize": [
+        2544,
+        3264
+      ],
+      "orientation": "as_rendered",
+      "referenceDiffScore": 158.15889
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "zoom": 1,
+      "rawSize": [
+        612,
+        792
+      ],
+      "normalizedSize": [
+        2544,
+        3264
+      ],
+      "orientation": "as_rendered",
+      "referenceDiffScore": 156.572558
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "zoom": 2,
+      "rawSize": [
+        1224,
+        1584
+      ],
+      "normalizedSize": [
+        2544,
+        3264
+      ],
+      "orientation": "as_rendered",
+      "referenceDiffScore": 156.72317
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "zoom": 4,
+      "rawSize": [
+        2448,
+        3168
+      ],
+      "normalizedSize": [
+        2544,
+        3264
+      ],
+      "orientation": "as_rendered",
+      "referenceDiffScore": 158.15889
+    }
+  ],
+  "comparisonRows": [
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z1_vs_z4",
+      "controlP95MeanAbsDelta": 30.428161,
+      "maxActiveMeanAbsDelta": 33.652132,
+      "meanActiveMeanAbsDelta": 25.833091,
+      "maxControlMeanAbsDelta": 31.54227,
+      "meanControlMeanAbsDelta": 16.799782,
+      "activeOutlierCount": 2,
+      "activeOutlierIds": [
+        "B4",
+        "G5"
+      ],
+      "maxOverdoseSlotMeanAbsDelta": 17.370846,
+      "meanOverdoseSlotMeanAbsDelta": 10.19114,
+      "selectorCandidate": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z2_vs_z4",
+      "controlP95MeanAbsDelta": 12.022531,
+      "maxActiveMeanAbsDelta": 15.40612,
+      "meanActiveMeanAbsDelta": 12.159362,
+      "maxControlMeanAbsDelta": 12.496562,
+      "meanControlMeanAbsDelta": 6.91204,
+      "activeOutlierCount": 2,
+      "activeOutlierIds": [
+        "B4",
+        "G5"
+      ],
+      "maxOverdoseSlotMeanAbsDelta": 7.348686,
+      "meanOverdoseSlotMeanAbsDelta": 4.32691,
+      "selectorCandidate": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z1_vs_z4",
+      "controlP95MeanAbsDelta": 12.117787,
+      "maxActiveMeanAbsDelta": 11.553806,
+      "meanActiveMeanAbsDelta": 6.670321,
+      "maxControlMeanAbsDelta": 12.210914,
+      "meanControlMeanAbsDelta": 6.665317,
+      "activeOutlierCount": 0,
+      "activeOutlierIds": [],
+      "maxOverdoseSlotMeanAbsDelta": 6.825987,
+      "meanOverdoseSlotMeanAbsDelta": 4.399895,
+      "selectorCandidate": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z2_vs_z4",
+      "controlP95MeanAbsDelta": 3.434474,
+      "maxActiveMeanAbsDelta": 3.222898,
+      "meanActiveMeanAbsDelta": 2.071469,
+      "maxControlMeanAbsDelta": 3.603335,
+      "meanControlMeanAbsDelta": 2.133057,
+      "activeOutlierCount": 0,
+      "activeOutlierIds": [],
+      "maxOverdoseSlotMeanAbsDelta": 2.176434,
+      "meanOverdoseSlotMeanAbsDelta": 1.580101,
+      "selectorCandidate": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z1_vs_z4",
+      "controlP95MeanAbsDelta": 12.117787,
+      "maxActiveMeanAbsDelta": 11.553806,
+      "meanActiveMeanAbsDelta": 6.670321,
+      "maxControlMeanAbsDelta": 12.210914,
+      "meanControlMeanAbsDelta": 6.665317,
+      "activeOutlierCount": 0,
+      "activeOutlierIds": [],
+      "maxOverdoseSlotMeanAbsDelta": 6.825987,
+      "meanOverdoseSlotMeanAbsDelta": 4.399895,
+      "selectorCandidate": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z2_vs_z4",
+      "controlP95MeanAbsDelta": 3.434474,
+      "maxActiveMeanAbsDelta": 3.222898,
+      "meanActiveMeanAbsDelta": 2.071469,
+      "maxControlMeanAbsDelta": 3.603335,
+      "meanControlMeanAbsDelta": 2.133057,
+      "activeOutlierCount": 0,
+      "activeOutlierIds": [],
+      "maxOverdoseSlotMeanAbsDelta": 2.176434,
+      "meanOverdoseSlotMeanAbsDelta": 1.580101,
+      "selectorCandidate": false
+    }
+  ],
+  "regionRows": [
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "active",
+      "region": "O4",
+      "phrase": "buying the dip",
+      "meanAbsDelta": 20.182221,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "active",
+      "region": "B4",
+      "phrase": "$1 billion",
+      "meanAbsDelta": 33.652132,
+      "aboveControlP95": true
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "active",
+      "region": "G5",
+      "phrase": "Volcano Bonds",
+      "meanAbsDelta": 33.285796,
+      "aboveControlP95": true
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "active",
+      "region": "O5",
+      "phrase": "shitcoiner at heart",
+      "meanAbsDelta": 16.212217,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot0_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "meanAbsDelta": 8.005131,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot1_V",
+      "phrase": "C9 projected OVERDOSE slot V",
+      "meanAbsDelta": 17.370846,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot2_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "meanAbsDelta": 16.565468,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot3_R",
+      "phrase": "C9 projected OVERDOSE slot R",
+      "meanAbsDelta": 17.034501,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot4_D",
+      "phrase": "C9 projected OVERDOSE slot D",
+      "meanAbsDelta": 15.266535,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot5_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "meanAbsDelta": 6.486053,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot6_S",
+      "phrase": "C9 projected OVERDOSE slot S",
+      "meanAbsDelta": 0.417451,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot7_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "meanAbsDelta": 0.383131,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "active",
+      "region": "O4",
+      "phrase": "buying the dip",
+      "meanAbsDelta": 9.392398,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "active",
+      "region": "B4",
+      "phrase": "$1 billion",
+      "meanAbsDelta": 14.879028,
+      "aboveControlP95": true
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "active",
+      "region": "G5",
+      "phrase": "Volcano Bonds",
+      "meanAbsDelta": 15.40612,
+      "aboveControlP95": true
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "active",
+      "region": "O5",
+      "phrase": "shitcoiner at heart",
+      "meanAbsDelta": 8.959903,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot0_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "meanAbsDelta": 3.277516,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot1_V",
+      "phrase": "C9 projected OVERDOSE slot V",
+      "meanAbsDelta": 7.173623,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot2_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "meanAbsDelta": 6.960992,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot3_R",
+      "phrase": "C9 projected OVERDOSE slot R",
+      "meanAbsDelta": 7.348686,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot4_D",
+      "phrase": "C9 projected OVERDOSE slot D",
+      "meanAbsDelta": 6.518838,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot5_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "meanAbsDelta": 2.912575,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot6_S",
+      "phrase": "C9 projected OVERDOSE slot S",
+      "meanAbsDelta": 0.23043,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot7_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "meanAbsDelta": 0.192623,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "active",
+      "region": "O4",
+      "phrase": "buying the dip",
+      "meanAbsDelta": 3.233598,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "active",
+      "region": "B4",
+      "phrase": "$1 billion",
+      "meanAbsDelta": 10.400804,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "active",
+      "region": "G5",
+      "phrase": "Volcano Bonds",
+      "meanAbsDelta": 11.553806,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "active",
+      "region": "O5",
+      "phrase": "shitcoiner at heart",
+      "meanAbsDelta": 1.493076,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot0_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "meanAbsDelta": 2.336464,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot1_V",
+      "phrase": "C9 projected OVERDOSE slot V",
+      "meanAbsDelta": 6.825987,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot2_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "meanAbsDelta": 6.637234,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot3_R",
+      "phrase": "C9 projected OVERDOSE slot R",
+      "meanAbsDelta": 6.653984,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot4_D",
+      "phrase": "C9 projected OVERDOSE slot D",
+      "meanAbsDelta": 6.13014,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot5_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "meanAbsDelta": 2.626465,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot6_S",
+      "phrase": "C9 projected OVERDOSE slot S",
+      "meanAbsDelta": 2.047791,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot7_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "meanAbsDelta": 1.941097,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "active",
+      "region": "O4",
+      "phrase": "buying the dip",
+      "meanAbsDelta": 1.243799,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "active",
+      "region": "B4",
+      "phrase": "$1 billion",
+      "meanAbsDelta": 2.933285,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "active",
+      "region": "G5",
+      "phrase": "Volcano Bonds",
+      "meanAbsDelta": 3.222898,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "active",
+      "region": "O5",
+      "phrase": "shitcoiner at heart",
+      "meanAbsDelta": 0.885894,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot0_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "meanAbsDelta": 0.947792,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot1_V",
+      "phrase": "C9 projected OVERDOSE slot V",
+      "meanAbsDelta": 2.176434,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot2_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "meanAbsDelta": 2.140308,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot3_R",
+      "phrase": "C9 projected OVERDOSE slot R",
+      "meanAbsDelta": 2.134801,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot4_D",
+      "phrase": "C9 projected OVERDOSE slot D",
+      "meanAbsDelta": 2.032857,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot5_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "meanAbsDelta": 1.145664,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot6_S",
+      "phrase": "C9 projected OVERDOSE slot S",
+      "meanAbsDelta": 1.052056,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot7_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "meanAbsDelta": 1.010895,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "active",
+      "region": "O4",
+      "phrase": "buying the dip",
+      "meanAbsDelta": 3.233598,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "active",
+      "region": "B4",
+      "phrase": "$1 billion",
+      "meanAbsDelta": 10.400804,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "active",
+      "region": "G5",
+      "phrase": "Volcano Bonds",
+      "meanAbsDelta": 11.553806,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "active",
+      "region": "O5",
+      "phrase": "shitcoiner at heart",
+      "meanAbsDelta": 1.493076,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot0_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "meanAbsDelta": 2.336464,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot1_V",
+      "phrase": "C9 projected OVERDOSE slot V",
+      "meanAbsDelta": 6.825987,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot2_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "meanAbsDelta": 6.637234,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot3_R",
+      "phrase": "C9 projected OVERDOSE slot R",
+      "meanAbsDelta": 6.653984,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot4_D",
+      "phrase": "C9 projected OVERDOSE slot D",
+      "meanAbsDelta": 6.13014,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot5_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "meanAbsDelta": 2.626465,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot6_S",
+      "phrase": "C9 projected OVERDOSE slot S",
+      "meanAbsDelta": 2.047791,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z1_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot7_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "meanAbsDelta": 1.941097,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "active",
+      "region": "O4",
+      "phrase": "buying the dip",
+      "meanAbsDelta": 1.243799,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "active",
+      "region": "B4",
+      "phrase": "$1 billion",
+      "meanAbsDelta": 2.933285,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "active",
+      "region": "G5",
+      "phrase": "Volcano Bonds",
+      "meanAbsDelta": 3.222898,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "active",
+      "region": "O5",
+      "phrase": "shitcoiner at heart",
+      "meanAbsDelta": 0.885894,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot0_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "meanAbsDelta": 0.947792,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot1_V",
+      "phrase": "C9 projected OVERDOSE slot V",
+      "meanAbsDelta": 2.176434,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot2_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "meanAbsDelta": 2.140308,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot3_R",
+      "phrase": "C9 projected OVERDOSE slot R",
+      "meanAbsDelta": 2.134801,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot4_D",
+      "phrase": "C9 projected OVERDOSE slot D",
+      "meanAbsDelta": 2.032857,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot5_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "meanAbsDelta": 1.145664,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot6_S",
+      "phrase": "C9 projected OVERDOSE slot S",
+      "meanAbsDelta": 1.052056,
+      "aboveControlP95": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "comparison": "z2_vs_z4",
+      "kind": "overdose_slot",
+      "region": "slot7_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "meanAbsDelta": 1.010895,
+      "aboveControlP95": false
+    }
+  ],
+  "summary": {
+    "pdfCount": 3,
+    "zoomCount": 3,
+    "renderRowCount": 9,
+    "comparisonRowCount": 6,
+    "activeRegionRowCount": 24,
+    "overdoseSlotRegionRowCount": 48,
+    "activeOutlierCount": 4,
+    "allFourActiveOutlierComparisonCount": 0,
+    "maxActiveMeanAbsDelta": 33.652132,
+    "maxControlMeanAbsDelta": 31.54227,
+    "maxOverdoseSlotMeanAbsDelta": 17.370846,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "renderResolutionInvarianceFingerprint": "pdfs=3|zooms=3|renders=9|comparisons=6|activeOutliers=4|allFourOutliers=0|maxActive=33.652|maxControl=31.542|maxSlot=17.371|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "decision": {
+    "currentPdfRenderResolutionInvarianceGate": "render_resolution_invariance_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Higher-DPI rendering changes page-76 regions only by ordinary raster resampling. Active boxes and projected OVERDOSE slots are not a unique high-resolution/original-layout carrier, and no source-backed R3 unit/order trigger is satisfied.",
+    "nextMove": "Keep current PDFs as derivative/current-scan render witnesses only. Reopen PDF-render inspection only if a distinct original-layout PDF or raw source asset arrives."
+  },
+  "sheet": "analysis_outputs/source_audit/current_pdf_render_resolution_invariance_gate/current_pdf_render_resolution_invariance_gate_sheet.jpg",
+  "fingerprint": "pdfs=3|zooms=3|renders=9|comparisons=6|activeOutliers=4|allFourOutliers=0|maxActive=33.652|maxControl=31.542|maxSlot=17.371|sourceR3=0|triggers=0/9|selectors=0"
+}

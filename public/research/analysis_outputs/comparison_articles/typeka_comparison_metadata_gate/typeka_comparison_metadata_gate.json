@@ -1,0 +1,138 @@
+{
+  "createdAt": "2026-05-21T00:02:20",
+  "scope": "Typeka comparison metadata gate; no extraction, hashing, key derivation, OCR extraction, WIF, seed, or address checks",
+  "inputs": {
+    "typography_source_provenance": "analysis_outputs/source_audit/typography_source_provenance.json",
+    "typeka_variant_state": "analysis_outputs/docm_format_sources/typeka_variant_state_audit.json",
+    "typeka_font_r3_gate": "analysis_outputs/docm_format_sources/typeka_font_r3_gate_synthesis/typeka_font_r3_gate_synthesis.json",
+    "comparison_layout_r3_gate": "analysis_outputs/comparison_articles/overdose_layout_r3_gate_synthesis/overdose_layout_r3_gate_synthesis.json"
+  },
+  "summary": {
+    "comparisonPdfCount": 3,
+    "comparisonPdfFontWitnessCount": 0,
+    "comparisonPdfTypekaResourceCount": 0,
+    "comparisonPdfImageOnlyCount": 3,
+    "articleWithFontsTypekaChars": 7451,
+    "typekaVariantCounts": null,
+    "typekaGateDecision": "typeka_font_layer_closed_for_current_scan_as_r3_selector",
+    "comparisonGateDecision": "comparison_overdose_layout_closed_for_current_scan_as_r3_selector",
+    "r3SelectorStatus": "FAIL",
+    "selectorUnlocked": false
+  },
+  "sourceRows": [
+    {
+      "label": "issue24_best_scan",
+      "kind": "PDF",
+      "fontNames": [
+        "Helvetica"
+      ],
+      "textChars": 7785,
+      "typekaEvidence": false,
+      "imageOnly": false,
+      "use": "scan/witness, not font layer"
+    },
+    {
+      "label": "issue24_desktop_scan",
+      "kind": "PDF",
+      "fontNames": [
+        "Helvetica"
+      ],
+      "textChars": 7785,
+      "typekaEvidence": false,
+      "imageOnly": false,
+      "use": "scan/witness, not font layer"
+    },
+    {
+      "label": "issue26_comparison",
+      "kind": "PDF",
+      "fontNames": [],
+      "textChars": 0,
+      "typekaEvidence": false,
+      "imageOnly": true,
+      "use": "style control only"
+    },
+    {
+      "label": "issue27_comparison",
+      "kind": "PDF",
+      "fontNames": [],
+      "textChars": 0,
+      "typekaEvidence": false,
+      "imageOnly": true,
+      "use": "style control only"
+    },
+    {
+      "label": "bitcoin3_comparison",
+      "kind": "PDF",
+      "fontNames": [],
+      "textChars": 0,
+      "typekaEvidence": false,
+      "imageOnly": true,
+      "use": "style control only"
+    },
+    {
+      "label": "bitcoin4_issue24_witness",
+      "kind": "PDF",
+      "fontNames": [],
+      "textChars": 0,
+      "typekaEvidence": false,
+      "imageOnly": true,
+      "use": "scan/witness, not font layer"
+    },
+    {
+      "label": "article_with_fonts",
+      "kind": "DOCM",
+      "fontNames": [
+        "Typeka",
+        "Typeka Mix",
+        "Stencil",
+        "LonestarW00-Regular"
+      ],
+      "textChars": 7478,
+      "typekaEvidence": 7451,
+      "imageOnly": false,
+      "use": "font witness"
+    },
+    {
+      "label": "bold_docm",
+      "kind": "DOCM",
+      "fontNames": [
+        "Typeka",
+        "Stencil"
+      ],
+      "textChars": 1393,
+      "typekaEvidence": 1374,
+      "imageOnly": false,
+      "use": "annotation/generated witness"
+    }
+  ],
+  "gateRows": [
+    {
+      "gate": "R1 source identity",
+      "status": "PARTIAL",
+      "evidence": "Article with Fonts.docm is a local font witness; comparison PDFs are flattened article images, not source layout files."
+    },
+    {
+      "gate": "R2 target preservation",
+      "status": "PASS as corroboration",
+      "evidence": "Article with Fonts.docm records Typeka/Typeka Mix across Issue 24 with 7451 Typeka-family chars."
+    },
+    {
+      "gate": "R3 unit/order evidence",
+      "status": "FAIL",
+      "evidence": "Comparison PDFs expose zero Typeka font resources and no word/letter/line/font-order instruction."
+    },
+    {
+      "gate": "R4 orientation/source discipline",
+      "status": "PASS",
+      "evidence": "PDF raster witnesses are separated from DOCM font-state witnesses; scan OCR Helvetica is not treated as printed typography."
+    },
+    {
+      "gate": "R5 controlled improvement",
+      "status": "FAIL",
+      "evidence": "The comparison metadata does not improve page-76 registration or select O4/B4/G5/O5 units."
+    }
+  ],
+  "sheet": "analysis_outputs/comparison_articles/typeka_comparison_metadata_gate/typeka_comparison_metadata_gate_sheet.jpg",
+  "decision": "typeka_comparison_metadata_closed_as_r3_selector",
+  "nextMove": "Treat Article with Fonts.docm as the Typeka witness and comparison PDFs as style controls only; reopen Typeka extraction only with a source/clue that names font-state units or original layout metadata."
+}

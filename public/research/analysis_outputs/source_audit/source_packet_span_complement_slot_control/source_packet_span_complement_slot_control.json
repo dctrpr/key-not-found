@@ -1,0 +1,2804 @@
+{
+  "createdAt": "2026-05-21T09:10:41",
+  "scope": "OVERDOSE span-complement slot control; no extraction or candidate generation",
+  "inputs": {
+    "c9_mirrored_header_glyph_gate": "analysis_outputs/source_audit/c9_mirrored_header_glyph_gate/c9_mirrored_header_glyph_gate.json",
+    "source_packet_span_neighbor_slot_control": "analysis_outputs/source_audit/source_packet_span_neighbor_slot_control/source_packet_span_neighbor_slot_control.json",
+    "source_packet_span_edge_slot_control": "analysis_outputs/source_audit/source_packet_span_edge_slot_control/source_packet_span_edge_slot_control.json",
+    "source_packet_overlap_width_profile_control": "analysis_outputs/source_audit/source_packet_overlap_width_profile_control/source_packet_overlap_width_profile_control.json",
+    "source_packet_active_format_stream_control": "analysis_outputs/source_audit/source_packet_active_format_stream_control/source_packet_active_format_stream_control.json",
+    "source_packet_reopen_trigger_matrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json",
+    "canonical_plain_article_body": "analysis_outputs/plain_text_transcript/canonical_plain_article_body.txt",
+    "user_markdown_transcript": "analysis_outputs/3d_article_map/user_markdown_transcript.md",
+    "user_annotated_transcript": "analysis_outputs/3d_article_map/user_annotated_transcript.txt",
+    "plain_article_correction_report": "analysis_outputs/plain_text_transcript/plain_article_correction_report.json"
+  },
+  "streamRows": [
+    {
+      "variant": "p76_normal_labels_original_geometry",
+      "mode": "active_complement_line_order",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "stream": "OVEREERDOSEOVDOSEOVESE",
+      "displayStream": "OVERE/ERDOSE/OVDOSE/OVESE",
+      "layoutTermHits": [
+        "DOSE",
+        "OVER"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        6,
+        6,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "DOS",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "complementSlotLetters": "OVERE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "OV",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "complementSlotLetters": "ERDOSE",
+          "complementSlotIndexes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "ER",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "complementSlotLetters": "OVDOSE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "RDO",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "complementSlotLetters": "OVESE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p76_normal_labels_original_geometry",
+      "mode": "active_complement_x_order",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "stream": "ERDOSEOVDOSEOVESEOVERE",
+      "displayStream": "ERDOSE/OVDOSE/OVESE/OVERE",
+      "layoutTermHits": [
+        "DOSE",
+        "OVER"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        6,
+        6,
+        5,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "OV",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "complementSlotLetters": "ERDOSE",
+          "complementSlotIndexes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "ER",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "complementSlotLetters": "OVDOSE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "RDO",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "complementSlotLetters": "OVESE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "DOS",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "complementSlotLetters": "OVERE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p76_normal_labels_original_geometry",
+      "mode": "active_black_complement_x_order",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "stream": "ERDOSEOVDOSE",
+      "displayStream": "ERDOSE/OVDOSE",
+      "layoutTermHits": [
+        "DOSE"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        6,
+        6
+      ],
+      "rows": [
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "OV",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "complementSlotLetters": "ERDOSE",
+          "complementSlotIndexes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "ER",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "complementSlotLetters": "OVDOSE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        }
+      ]
+    },
+    {
+      "variant": "p76_normal_labels_original_geometry",
+      "mode": "active_orange_complement_x_order",
+      "targetOrder": [
+        "O5",
+        "O4"
+      ],
+      "stream": "OVESEOVERE",
+      "displayStream": "OVESE/OVERE",
+      "layoutTermHits": [
+        "OVER"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "RDO",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "complementSlotLetters": "OVESE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "DOS",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "complementSlotLetters": "OVERE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p76_normal_labels_original_geometry",
+      "mode": "p75_control_complement",
+      "targetOrder": [
+        "p75_grey_3"
+      ],
+      "stream": "DOSE",
+      "displayStream": "DOSE",
+      "layoutTermHits": [
+        "DOSE"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        4
+      ],
+      "rows": [
+        {
+          "shortId": "p75_grey_3",
+          "spanSlotLetters": "OVER",
+          "spanSlotIndexes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complementSlotLetters": "DOSE",
+          "complementSlotIndexes": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 4
+        }
+      ]
+    },
+    {
+      "variant": "p76_normal_labels_mirror_x_geometry",
+      "mode": "active_complement_line_order",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "stream": "ODOSEOVERDOOVERSEOVOSE",
+      "displayStream": "ODOSE/OVERDO/OVERSE/OVOSE",
+      "layoutTermHits": [
+        "DOSE",
+        "OVER"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        6,
+        6,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "VER",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "complementSlotLetters": "ODOSE",
+          "complementSlotIndexes": [
+            0,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "SE",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "complementSlotLetters": "OVERDO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "DO",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "complementSlotLetters": "OVERSE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "ERD",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "complementSlotLetters": "OVOSE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p76_normal_labels_mirror_x_geometry",
+      "mode": "active_complement_x_order",
+      "targetOrder": [
+        "O4",
+        "O5",
+        "G5",
+        "B4"
+      ],
+      "stream": "ODOSEOVOSEOVERSEOVERDO",
+      "displayStream": "ODOSE/OVOSE/OVERSE/OVERDO",
+      "layoutTermHits": [
+        "DOSE",
+        "OVER"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        5,
+        6,
+        6
+      ],
+      "rows": [
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "VER",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "complementSlotLetters": "ODOSE",
+          "complementSlotIndexes": [
+            0,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "ERD",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "complementSlotLetters": "OVOSE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "DO",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "complementSlotLetters": "OVERSE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "SE",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "complementSlotLetters": "OVERDO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "complementSlotCount": 6
+        }
+      ]
+    },
+    {
+      "variant": "p76_normal_labels_mirror_x_geometry",
+      "mode": "active_black_complement_x_order",
+      "targetOrder": [
+        "G5",
+        "B4"
+      ],
+      "stream": "OVERSEOVERDO",
+      "displayStream": "OVERSE/OVERDO",
+      "layoutTermHits": [
+        "OVER"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        6,
+        6
+      ],
+      "rows": [
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "DO",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "complementSlotLetters": "OVERSE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "SE",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "complementSlotLetters": "OVERDO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "complementSlotCount": 6
+        }
+      ]
+    },
+    {
+      "variant": "p76_normal_labels_mirror_x_geometry",
+      "mode": "active_orange_complement_x_order",
+      "targetOrder": [
+        "O4",
+        "O5"
+      ],
+      "stream": "ODOSEOVOSE",
+      "displayStream": "ODOSE/OVOSE",
+      "layoutTermHits": [
+        "DOSE"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "VER",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "complementSlotLetters": "ODOSE",
+          "complementSlotIndexes": [
+            0,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "ERD",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "complementSlotLetters": "OVOSE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p76_normal_labels_mirror_x_geometry",
+      "mode": "p75_control_complement",
+      "targetOrder": [
+        "p75_grey_3"
+      ],
+      "stream": "OVER",
+      "displayStream": "OVER",
+      "layoutTermHits": [
+        "OVER"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        4
+      ],
+      "rows": [
+        {
+          "shortId": "p75_grey_3",
+          "spanSlotLetters": "DOSE",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotLetters": "OVER",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complementSlotCount": 4
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_original_geometry",
+      "mode": "active_complement_line_order",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "stream": "ESODOODREVOESREVOESOVO",
+      "displayStream": "ESODO/ODREVO/ESREVO/ESOVO",
+      "layoutTermHits": [
+        "ESOD",
+        "REVO"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        6,
+        6,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "REV",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "complementSlotLetters": "ESODO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "ES",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "complementSlotLetters": "ODREVO",
+          "complementSlotIndexes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "OD",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "complementSlotLetters": "ESREVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "DRE",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "complementSlotLetters": "ESOVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_original_geometry",
+      "mode": "active_complement_x_order",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "stream": "ODREVOESREVOESOVOESODO",
+      "displayStream": "ODREVO/ESREVO/ESOVO/ESODO",
+      "layoutTermHits": [
+        "ESOD",
+        "REVO"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        6,
+        6,
+        5,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "ES",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "complementSlotLetters": "ODREVO",
+          "complementSlotIndexes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "OD",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "complementSlotLetters": "ESREVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "DRE",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "complementSlotLetters": "ESOVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "REV",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "complementSlotLetters": "ESODO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_original_geometry",
+      "mode": "active_black_complement_x_order",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "stream": "ODREVOESREVO",
+      "displayStream": "ODREVO/ESREVO",
+      "layoutTermHits": [
+        "REVO"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        6,
+        6
+      ],
+      "rows": [
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "ES",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "complementSlotLetters": "ODREVO",
+          "complementSlotIndexes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "OD",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "complementSlotLetters": "ESREVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_original_geometry",
+      "mode": "active_orange_complement_x_order",
+      "targetOrder": [
+        "O5",
+        "O4"
+      ],
+      "stream": "ESOVOESODO",
+      "displayStream": "ESOVO/ESODO",
+      "layoutTermHits": [
+        "ESOD"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "DRE",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "complementSlotLetters": "ESOVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "REV",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "complementSlotLetters": "ESODO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_original_geometry",
+      "mode": "p75_control_complement",
+      "targetOrder": [
+        "p75_grey_3"
+      ],
+      "stream": "REVO",
+      "displayStream": "REVO",
+      "layoutTermHits": [
+        "REVO"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        4
+      ],
+      "rows": [
+        {
+          "shortId": "p75_grey_3",
+          "spanSlotLetters": "ESOD",
+          "spanSlotIndexes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complementSlotLetters": "REVO",
+          "complementSlotIndexes": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 4
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_mirror_x_geometry",
+      "mode": "active_complement_line_order",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "stream": "EREVOESODREESODVOESEVO",
+      "displayStream": "EREVO/ESODRE/ESODVO/ESEVO",
+      "layoutTermHits": [
+        "ESOD",
+        "REVO"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        6,
+        6,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "SOD",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "complementSlotLetters": "EREVO",
+          "complementSlotIndexes": [
+            0,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "VO",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "complementSlotLetters": "ESODRE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "RE",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "complementSlotLetters": "ESODVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "ODR",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "complementSlotLetters": "ESEVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_mirror_x_geometry",
+      "mode": "active_complement_x_order",
+      "targetOrder": [
+        "O4",
+        "O5",
+        "G5",
+        "B4"
+      ],
+      "stream": "EREVOESEVOESODVOESODRE",
+      "displayStream": "EREVO/ESEVO/ESODVO/ESODRE",
+      "layoutTermHits": [
+        "ESOD",
+        "REVO"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        5,
+        6,
+        6
+      ],
+      "rows": [
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "SOD",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "complementSlotLetters": "EREVO",
+          "complementSlotIndexes": [
+            0,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "ODR",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "complementSlotLetters": "ESEVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "RE",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "complementSlotLetters": "ESODVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "VO",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "complementSlotLetters": "ESODRE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "complementSlotCount": 6
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_mirror_x_geometry",
+      "mode": "active_black_complement_x_order",
+      "targetOrder": [
+        "G5",
+        "B4"
+      ],
+      "stream": "ESODVOESODRE",
+      "displayStream": "ESODVO/ESODRE",
+      "layoutTermHits": [
+        "ESOD"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        6,
+        6
+      ],
+      "rows": [
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "RE",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "complementSlotLetters": "ESODVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "VO",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "complementSlotLetters": "ESODRE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "complementSlotCount": 6
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_mirror_x_geometry",
+      "mode": "active_orange_complement_x_order",
+      "targetOrder": [
+        "O4",
+        "O5"
+      ],
+      "stream": "EREVOESEVO",
+      "displayStream": "EREVO/ESEVO",
+      "layoutTermHits": [
+        "REVO"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "SOD",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "complementSlotLetters": "EREVO",
+          "complementSlotIndexes": [
+            0,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "ODR",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "complementSlotLetters": "ESEVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p76_reverse_labels_mirror_x_geometry",
+      "mode": "p75_control_complement",
+      "targetOrder": [
+        "p75_grey_3"
+      ],
+      "stream": "ESOD",
+      "displayStream": "ESOD",
+      "layoutTermHits": [
+        "ESOD"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        4
+      ],
+      "rows": [
+        {
+          "shortId": "p75_grey_3",
+          "spanSlotLetters": "REVO",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotLetters": "ESOD",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complementSlotCount": 4
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_original_geometry",
+      "mode": "active_complement_line_order",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "stream": "OVEREERDOSEOVDOSEOVESE",
+      "displayStream": "OVERE/ERDOSE/OVDOSE/OVESE",
+      "layoutTermHits": [
+        "DOSE",
+        "OVER"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        6,
+        6,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "DOS",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "complementSlotLetters": "OVERE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "OV",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "complementSlotLetters": "ERDOSE",
+          "complementSlotIndexes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "ER",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "complementSlotLetters": "OVDOSE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "RDO",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "complementSlotLetters": "OVESE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_original_geometry",
+      "mode": "active_complement_x_order",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "stream": "ERDOSEOVDOSEOVESEOVERE",
+      "displayStream": "ERDOSE/OVDOSE/OVESE/OVERE",
+      "layoutTermHits": [
+        "DOSE",
+        "OVER"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        6,
+        6,
+        5,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "OV",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "complementSlotLetters": "ERDOSE",
+          "complementSlotIndexes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "ER",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "complementSlotLetters": "OVDOSE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "RDO",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "complementSlotLetters": "OVESE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "DOS",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "complementSlotLetters": "OVERE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_original_geometry",
+      "mode": "active_black_complement_x_order",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "stream": "ERDOSEOVDOSE",
+      "displayStream": "ERDOSE/OVDOSE",
+      "layoutTermHits": [
+        "DOSE"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        6,
+        6
+      ],
+      "rows": [
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "OV",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "complementSlotLetters": "ERDOSE",
+          "complementSlotIndexes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "ER",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "complementSlotLetters": "OVDOSE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_original_geometry",
+      "mode": "active_orange_complement_x_order",
+      "targetOrder": [
+        "O5",
+        "O4"
+      ],
+      "stream": "OVESEOVERE",
+      "displayStream": "OVESE/OVERE",
+      "layoutTermHits": [
+        "OVER"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "RDO",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "complementSlotLetters": "OVESE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "DOS",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "complementSlotLetters": "OVERE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_original_geometry",
+      "mode": "p75_control_complement",
+      "targetOrder": [
+        "p75_grey_3"
+      ],
+      "stream": "DOSE",
+      "displayStream": "DOSE",
+      "layoutTermHits": [
+        "DOSE"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        4
+      ],
+      "rows": [
+        {
+          "shortId": "p75_grey_3",
+          "spanSlotLetters": "OVER",
+          "spanSlotIndexes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complementSlotLetters": "DOSE",
+          "complementSlotIndexes": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 4
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_mirror_x_geometry",
+      "mode": "active_complement_line_order",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "stream": "ODOSEOVERDOOVERSEOVOSE",
+      "displayStream": "ODOSE/OVERDO/OVERSE/OVOSE",
+      "layoutTermHits": [
+        "DOSE",
+        "OVER"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        6,
+        6,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "VER",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "complementSlotLetters": "ODOSE",
+          "complementSlotIndexes": [
+            0,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "SE",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "complementSlotLetters": "OVERDO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "DO",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "complementSlotLetters": "OVERSE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "ERD",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "complementSlotLetters": "OVOSE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_mirror_x_geometry",
+      "mode": "active_complement_x_order",
+      "targetOrder": [
+        "O4",
+        "O5",
+        "G5",
+        "B4"
+      ],
+      "stream": "ODOSEOVOSEOVERSEOVERDO",
+      "displayStream": "ODOSE/OVOSE/OVERSE/OVERDO",
+      "layoutTermHits": [
+        "DOSE",
+        "OVER"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        5,
+        6,
+        6
+      ],
+      "rows": [
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "VER",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "complementSlotLetters": "ODOSE",
+          "complementSlotIndexes": [
+            0,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "ERD",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "complementSlotLetters": "OVOSE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "DO",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "complementSlotLetters": "OVERSE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "SE",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "complementSlotLetters": "OVERDO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "complementSlotCount": 6
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_mirror_x_geometry",
+      "mode": "active_black_complement_x_order",
+      "targetOrder": [
+        "G5",
+        "B4"
+      ],
+      "stream": "OVERSEOVERDO",
+      "displayStream": "OVERSE/OVERDO",
+      "layoutTermHits": [
+        "OVER"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        6,
+        6
+      ],
+      "rows": [
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "DO",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "complementSlotLetters": "OVERSE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "SE",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "complementSlotLetters": "OVERDO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "complementSlotCount": 6
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_mirror_x_geometry",
+      "mode": "active_orange_complement_x_order",
+      "targetOrder": [
+        "O4",
+        "O5"
+      ],
+      "stream": "ODOSEOVOSE",
+      "displayStream": "ODOSE/OVOSE",
+      "layoutTermHits": [
+        "DOSE"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "VER",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "complementSlotLetters": "ODOSE",
+          "complementSlotIndexes": [
+            0,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "ERD",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "complementSlotLetters": "OVOSE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p78_normal_labels_mirror_x_geometry",
+      "mode": "p75_control_complement",
+      "targetOrder": [
+        "p75_grey_3"
+      ],
+      "stream": "OVER",
+      "displayStream": "OVER",
+      "layoutTermHits": [
+        "OVER"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        4
+      ],
+      "rows": [
+        {
+          "shortId": "p75_grey_3",
+          "spanSlotLetters": "DOSE",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotLetters": "OVER",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complementSlotCount": 4
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_original_geometry",
+      "mode": "active_complement_line_order",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "stream": "ESODOODREVOESREVOESOVO",
+      "displayStream": "ESODO/ODREVO/ESREVO/ESOVO",
+      "layoutTermHits": [
+        "ESOD",
+        "REVO"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        6,
+        6,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "REV",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "complementSlotLetters": "ESODO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "ES",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "complementSlotLetters": "ODREVO",
+          "complementSlotIndexes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "OD",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "complementSlotLetters": "ESREVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "DRE",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "complementSlotLetters": "ESOVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_original_geometry",
+      "mode": "active_complement_x_order",
+      "targetOrder": [
+        "B4",
+        "G5",
+        "O5",
+        "O4"
+      ],
+      "stream": "ODREVOESREVOESOVOESODO",
+      "displayStream": "ODREVO/ESREVO/ESOVO/ESODO",
+      "layoutTermHits": [
+        "ESOD",
+        "REVO"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        6,
+        6,
+        5,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "ES",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "complementSlotLetters": "ODREVO",
+          "complementSlotIndexes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "OD",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "complementSlotLetters": "ESREVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "DRE",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "complementSlotLetters": "ESOVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "REV",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "complementSlotLetters": "ESODO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_original_geometry",
+      "mode": "active_black_complement_x_order",
+      "targetOrder": [
+        "B4",
+        "G5"
+      ],
+      "stream": "ODREVOESREVO",
+      "displayStream": "ODREVO/ESREVO",
+      "layoutTermHits": [
+        "REVO"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        6,
+        6
+      ],
+      "rows": [
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "ES",
+          "spanSlotIndexes": [
+            0,
+            1
+          ],
+          "complementSlotLetters": "ODREVO",
+          "complementSlotIndexes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "OD",
+          "spanSlotIndexes": [
+            2,
+            3
+          ],
+          "complementSlotLetters": "ESREVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_original_geometry",
+      "mode": "active_orange_complement_x_order",
+      "targetOrder": [
+        "O5",
+        "O4"
+      ],
+      "stream": "ESOVOESODO",
+      "displayStream": "ESOVO/ESODO",
+      "layoutTermHits": [
+        "ESOD"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "DRE",
+          "spanSlotIndexes": [
+            3,
+            4,
+            5
+          ],
+          "complementSlotLetters": "ESOVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "REV",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6
+          ],
+          "complementSlotLetters": "ESODO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_original_geometry",
+      "mode": "p75_control_complement",
+      "targetOrder": [
+        "p75_grey_3"
+      ],
+      "stream": "REVO",
+      "displayStream": "REVO",
+      "layoutTermHits": [
+        "REVO"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        4
+      ],
+      "rows": [
+        {
+          "shortId": "p75_grey_3",
+          "spanSlotLetters": "ESOD",
+          "spanSlotIndexes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complementSlotLetters": "REVO",
+          "complementSlotIndexes": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 4
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_mirror_x_geometry",
+      "mode": "active_complement_line_order",
+      "targetOrder": [
+        "O4",
+        "B4",
+        "G5",
+        "O5"
+      ],
+      "stream": "EREVOESODREESODVOESEVO",
+      "displayStream": "EREVO/ESODRE/ESODVO/ESEVO",
+      "layoutTermHits": [
+        "ESOD",
+        "REVO"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        6,
+        6,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "SOD",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "complementSlotLetters": "EREVO",
+          "complementSlotIndexes": [
+            0,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "VO",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "complementSlotLetters": "ESODRE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "RE",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "complementSlotLetters": "ESODVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "ODR",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "complementSlotLetters": "ESEVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_mirror_x_geometry",
+      "mode": "active_complement_x_order",
+      "targetOrder": [
+        "O4",
+        "O5",
+        "G5",
+        "B4"
+      ],
+      "stream": "EREVOESEVOESODVOESODRE",
+      "displayStream": "EREVO/ESEVO/ESODVO/ESODRE",
+      "layoutTermHits": [
+        "ESOD",
+        "REVO"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        5,
+        6,
+        6
+      ],
+      "rows": [
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "SOD",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "complementSlotLetters": "EREVO",
+          "complementSlotIndexes": [
+            0,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "ODR",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "complementSlotLetters": "ESEVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "RE",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "complementSlotLetters": "ESODVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "VO",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "complementSlotLetters": "ESODRE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "complementSlotCount": 6
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_mirror_x_geometry",
+      "mode": "active_black_complement_x_order",
+      "targetOrder": [
+        "G5",
+        "B4"
+      ],
+      "stream": "ESODVOESODRE",
+      "displayStream": "ESODVO/ESODRE",
+      "layoutTermHits": [
+        "ESOD"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        6,
+        6
+      ],
+      "rows": [
+        {
+          "shortId": "G5",
+          "spanSlotLetters": "RE",
+          "spanSlotIndexes": [
+            4,
+            5
+          ],
+          "complementSlotLetters": "ESODVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7
+          ],
+          "complementSlotCount": 6
+        },
+        {
+          "shortId": "B4",
+          "spanSlotLetters": "VO",
+          "spanSlotIndexes": [
+            6,
+            7
+          ],
+          "complementSlotLetters": "ESODRE",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "complementSlotCount": 6
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_mirror_x_geometry",
+      "mode": "active_orange_complement_x_order",
+      "targetOrder": [
+        "O4",
+        "O5"
+      ],
+      "stream": "EREVOESEVO",
+      "displayStream": "EREVO/ESEVO",
+      "layoutTermHits": [
+        "REVO"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        5,
+        5
+      ],
+      "rows": [
+        {
+          "shortId": "O4",
+          "spanSlotLetters": "SOD",
+          "spanSlotIndexes": [
+            1,
+            2,
+            3
+          ],
+          "complementSlotLetters": "EREVO",
+          "complementSlotIndexes": [
+            0,
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        },
+        {
+          "shortId": "O5",
+          "spanSlotLetters": "ODR",
+          "spanSlotIndexes": [
+            2,
+            3,
+            4
+          ],
+          "complementSlotLetters": "ESEVO",
+          "complementSlotIndexes": [
+            0,
+            1,
+            5,
+            6,
+            7
+          ],
+          "complementSlotCount": 5
+        }
+      ]
+    },
+    {
+      "variant": "p78_reverse_labels_mirror_x_geometry",
+      "mode": "p75_control_complement",
+      "targetOrder": [
+        "p75_grey_3"
+      ],
+      "stream": "ESOD",
+      "displayStream": "ESOD",
+      "layoutTermHits": [
+        "ESOD"
+      ],
+      "thematicHits": [],
+      "complementSlotCounts": [
+        4
+      ],
+      "rows": [
+        {
+          "shortId": "p75_grey_3",
+          "spanSlotLetters": "REVO",
+          "spanSlotIndexes": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "complementSlotLetters": "ESOD",
+          "complementSlotIndexes": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "complementSlotCount": 4
+        }
+      ]
+    }
+  ],
+  "sourceComplementCueRows": [],
+  "summary": {
+    "variantCount": 8,
+    "streamRowCount": 40,
+    "activeComplementStreamCount": 16,
+    "layoutHitRowCount": 40,
+    "activeLayoutHitRowCount": 16,
+    "thematicHitRowCount": 0,
+    "activeThematicHitRowCount": 0,
+    "p75LayoutHitRowCount": 8,
+    "blackComplementStreams": [
+      "ERDOSEOVDOSE",
+      "ESODVOESODRE",
+      "ODREVOESREVO",
+      "OVERSEOVERDO"
+    ],
+    "orangeComplementStreams": [
+      "EREVOESEVO",
+      "ESOVOESODO",
+      "ODOSEOVOSE",
+      "OVESEOVERE"
+    ],
+    "p75ComplementStreams": [
+      "DOSE",
+      "ESOD",
+      "OVER",
+      "REVO"
+    ],
+    "activeComplementSlotCountStreams": [
+      "5-5-6-6",
+      "5-6-6-5",
+      "6-6-5-5"
+    ],
+    "sourceComplementCueHitCount": 0,
+    "spanNeighborLayoutHitRowCount": 0,
+    "spanEdgeLayoutHitRowCount": 0,
+    "widthProfileCueHitCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "spanComplementFingerprint": "variants=8|streams=40|activeStreams=16|layoutHits=40|activeLayout=16|p75Layout=8|themeHits=0|activeTheme=0|black=ERDOSEOVDOSE,ESODVOESODRE,ODREVOESREVO,OVERSEOVERDO|orange=EREVOESEVO,ESOVOESODO,ODOSEOVOSE,OVESEOVERE|p75=DOSE,ESOD,OVER,REVO|counts=5-5-6-6,5-6-6-5,6-6-5-5|complementCueHits=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "decision": {
+    "sourcePacketSpanComplementSlotControl": "span_complement_slots_controlled_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Untouched/remainder OVERDOSE slots produce expected layout fragments because each complement keeps five or six of the eight letters, but p75 controls also produce layout hits and no checked source witness names an unused/remainder slot rule.",
+    "nextMove": "Keep span-complement slots as a visual-artifact control. Reopen extraction only with distinct source-backed wording that names untouched, remaining, unused, or remainder letters."
+  },
+  "sheet": "analysis_outputs/source_audit/source_packet_span_complement_slot_control/source_packet_span_complement_slot_control_sheet.jpg"
+}

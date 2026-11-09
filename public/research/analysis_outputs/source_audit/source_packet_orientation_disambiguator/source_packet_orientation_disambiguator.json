@@ -1,0 +1,242 @@
+{
+  "createdAt": "2026-05-21T07:22:01",
+  "scope": "source-packet orientation disambiguator; no OCR, extraction, key derivation, hashing, seed/WIF/address checks, BIP39 checks, or broad brute force",
+  "inputs": {
+    "native_benchmark_bridge": "analysis_outputs/source_audit/source_packet_native_benchmark_bridge/source_packet_native_benchmark_bridge.json",
+    "geometric_fingerprint": "analysis_outputs/source_audit/source_packet_geometric_fingerprint/source_packet_geometric_fingerprint.json",
+    "frame_normalized_geometry": "analysis_outputs/source_audit/source_packet_frame_normalized_geometry/source_packet_frame_normalized_geometry.json",
+    "color_profile_manifest": "analysis_outputs/source_audit/source_packet_color_profile_manifest/source_packet_color_profile_manifest.json",
+    "alignment_tolerance": "analysis_outputs/source_audit/source_packet_alignment_tolerance/source_packet_alignment_tolerance.json",
+    "orientation_guardrail": "analysis_outputs/source_audit/page76_active_crop_orientation_guardrail/page76_active_crop_orientation_guardrail.json",
+    "order_orientation_trap": "analysis_outputs/source_audit/page76_active_order_orientation_trap/page76_active_order_orientation_trap.json",
+    "handoff_integrity_matrix": "analysis_outputs/source_audit/source_packet_handoff_integrity_matrix/source_packet_handoff_integrity_matrix.json",
+    "reopen_trigger_matrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "imageSize": [
+    2544,
+    3264
+  ],
+  "orientationRows": [
+    {
+      "mode": "readable_upright",
+      "readOrder": "line/corridor top-to-bottom",
+      "targetIds": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "visualStateStream": "YKKY",
+      "pageLines": "22 25 27 32",
+      "corridorIndexes": "4 7 9 14",
+      "dxSignStream": "-++",
+      "dySignStream": "+++",
+      "c9NormalizedCenterStream": "0.651,0.028;0.136,0.289;0.359,0.462;0.540,0.921",
+      "acceptedForFutureSourceComparison": true,
+      "decision": "accept_for_source_comparison",
+      "reason": "matches text authority and native rotate180 bridge"
+    },
+    {
+      "mode": "raw_native_unrotated_top_to_bottom",
+      "readOrder": "native y ascending",
+      "targetIds": [
+        "shitcoiner_heart",
+        "volcano_bonds",
+        "one_billion",
+        "buying_dip"
+      ],
+      "visualStateStream": "YKKY",
+      "pageLines": "32 27 25 22",
+      "corridorIndexes": "14 9 7 4",
+      "dxSignStream": "--+",
+      "dySignStream": "---",
+      "c9NormalizedCenterStream": "0.540,0.921;0.359,0.462;0.136,0.289;0.651,0.028",
+      "acceptedForFutureSourceComparison": false,
+      "decision": "reject_until_rot180_normalized",
+      "reason": "visual/color stream is unchanged but order is reversed"
+    },
+    {
+      "mode": "x_mirror_about_page",
+      "readOrder": "same ids after x mirror",
+      "targetIds": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "visualStateStream": "YKKY",
+      "pageLines": "22 25 27 32",
+      "corridorIndexes": "4 7 9 14",
+      "dxSignStream": "+--",
+      "dySignStream": "+++",
+      "c9NormalizedCenterStream": "0.349,0.028;0.864,0.289;0.641,0.462;0.460,0.921",
+      "acceptedForFutureSourceComparison": false,
+      "decision": "reject_as_loose_mirror",
+      "reason": "horizontal center-step signs invert"
+    },
+    {
+      "mode": "y_mirror_about_page",
+      "readOrder": "same ids after y mirror",
+      "targetIds": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "visualStateStream": "YKKY",
+      "pageLines": "22 25 27 32",
+      "corridorIndexes": "4 7 9 14",
+      "dxSignStream": "-++",
+      "dySignStream": "---",
+      "c9NormalizedCenterStream": "0.651,-1.315;0.136,-1.576;0.359,-1.749;0.540,-2.208",
+      "acceptedForFutureSourceComparison": false,
+      "decision": "reject_as_loose_mirror",
+      "reason": "vertical order/signs invert"
+    },
+    {
+      "mode": "point_mirror_or_page_rotate180",
+      "readOrder": "same ids after point mirror",
+      "targetIds": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "visualStateStream": "YKKY",
+      "pageLines": "22 25 27 32",
+      "corridorIndexes": "4 7 9 14",
+      "dxSignStream": "+--",
+      "dySignStream": "---",
+      "c9NormalizedCenterStream": "0.349,-1.315;0.864,-1.576;0.641,-1.749;0.460,-2.208",
+      "acceptedForFutureSourceComparison": false,
+      "decision": "reject_without_native_rot180_context",
+      "reason": "both center-step streams invert"
+    }
+  ],
+  "signalRows": [
+    {
+      "signal": "visual state stream",
+      "observed": "YKKY",
+      "role": "ambiguous",
+      "futureSourceUse": "Do not validate orientation from YKKY alone; it survives reversal."
+    },
+    {
+      "signal": "orange/black color stream",
+      "observed": "OBBO",
+      "role": "ambiguous",
+      "futureSourceUse": "Do not validate orientation from OBBO alone; it is palindromic."
+    },
+    {
+      "signal": "C9 frame horizontal mirror",
+      "observed": "xMirrorInvariant=True",
+      "role": "ambiguous",
+      "futureSourceUse": "Treat frame-only matches as source-registration evidence, not selector permission."
+    },
+    {
+      "signal": "OVERDOSE control state",
+      "observed": "NNNNNNNNN",
+      "role": "ambiguous",
+      "futureSourceUse": "Header glyphs stay non-active; require external slot wording before use."
+    },
+    {
+      "signal": "page-line order",
+      "observed": "22 25 27 32 vs 32 27 25 22",
+      "role": "discriminator",
+      "futureSourceUse": "Require readable order 22/25/27/32 after orientation normalization."
+    },
+    {
+      "signal": "corridor-index order",
+      "observed": "4 7 9 14 vs 14 9 7 4",
+      "role": "discriminator",
+      "futureSourceUse": "Require corridor order 4/7/9/14 after orientation normalization."
+    },
+    {
+      "signal": "center-step signs",
+      "observed": "dx -++; dy +++",
+      "role": "discriminator",
+      "futureSourceUse": "Reject loose mirror matches that invert dx or dy signs without provenance."
+    },
+    {
+      "signal": "C9 normalized centers",
+      "observed": [
+        [
+          0.651074,
+          0.028335
+        ],
+        [
+          0.135736,
+          0.288666
+        ],
+        [
+          0.35864,
+          0.461629
+        ],
+        [
+          0.540133,
+          0.920897
+        ]
+      ],
+      "role": "discriminator",
+      "futureSourceUse": "Compare normalized positions, not just frame containment or color state."
+    },
+    {
+      "signal": "native rotate180 roundtrip",
+      "observed": "mean 0.2859 vs direct 27.6479",
+      "role": "discriminator",
+      "futureSourceUse": "Normalize native source assets with the documented 180-degree transform first."
+    },
+    {
+      "signal": "alignment tolerance",
+      "observed": "shift +/-4px; pad +4px",
+      "role": "discriminator",
+      "futureSourceUse": "Reject geometry matches outside the narrow tolerance unless source provenance explains them."
+    }
+  ],
+  "summary": {
+    "orientationModeCount": 5,
+    "acceptedOrientationModeCount": 1,
+    "rejectedOrientationModeCount": 4,
+    "ambiguousSignalCount": 4,
+    "discriminatingSignalCount": 6,
+    "currentVisualStatePattern": "YKKY",
+    "currentColorPattern": "OBBO",
+    "visualStatePatternIsPalindrome": true,
+    "colorPatternIsPalindrome": true,
+    "readablePageLineOrder": "22 25 27 32",
+    "nativeUnnormalizedPageLineOrder": "32 27 25 22",
+    "readableCorridorOrder": "4 7 9 14",
+    "nativeUnnormalizedCorridorOrder": "14 9 7 4",
+    "readableDxSignStream": "-++",
+    "readableDySignStream": "+++",
+    "c9NormalizedCenterStream": [
+      [
+        0.651074,
+        0.028335
+      ],
+      [
+        0.135736,
+        0.288666
+      ],
+      [
+        0.35864,
+        0.461629
+      ],
+      [
+        0.540133,
+        0.920897
+      ]
+    ],
+    "commonShiftTolerancePx": 4,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "selectorUnlockedCount": 0,
+    "extractionReadyGateCount": 0,
+    "orientationDisambiguatorFingerprint": "modes=5|accepted=1|ambiguous=4|discriminators=6|states=YKKY|color=OBBO|lines=22-25-27-32|nativeLines=32-27-25-22|dx=-++|dy=+++|sourceR3=0|selectors=0"
+  },
+  "decision": {
+    "sourcePacketOrientationDisambiguator": "orientation_signals_are_validation_only",
+    "reason": "Only readable/upright orientation is accepted for future source comparison. YKKY/OBBO and C9 frame containment are orientation-ambiguous; line/corridor order, center-step signs, C9 normalized centers, native rotate180 roundtrip, and +/-4px tolerance are the controls. No selector or extraction gate is unlocked."
+  },
+  "sheet": "analysis_outputs/source_audit/source_packet_orientation_disambiguator/source_packet_orientation_disambiguator_sheet.jpg",
+  "nextMove": "Use this disambiguator with the reopen-trigger matrix when inspecting a new source asset: normalize orientation first, then require readable order 22/25/27/32 and corridor order 4/7/9/14 before treating visual matches as evidence."
+}

@@ -1,0 +1,200 @@
+{
+  "createdAt": "2026-05-20T09:05:19",
+  "scope": "exact-edge line/corridor numbers and gaps as local selector; no key derivation",
+  "sourceReports": {
+    "corridor": "analysis_outputs/3d_article_map/page76_line_level_corridor.json"
+  },
+  "exactNeedles": [
+    "should sell",
+    "Volcano Bonds",
+    "shitcoiner at heart"
+  ],
+  "lineFacts": {
+    "pageLineNumbers": [
+      25,
+      27,
+      32
+    ],
+    "corridorNumbers": [
+      7,
+      9,
+      14
+    ],
+    "gapNumbers": [
+      2,
+      5
+    ],
+    "exactRecords": [
+      {
+        "lineIndex": 25,
+        "corridorIndex": 7,
+        "text": "$1 billion in bitcoin — that he should sell",
+        "initial": "$",
+        "lastWord": "sell",
+        "lastInitial": "s",
+        "wordCount": 8,
+        "boldLetters": "",
+        "partialBoldLetters": "",
+        "highlights": [
+          "grey: $1 billion"
+        ]
+      },
+      {
+        "lineIndex": 27,
+        "corridorIndex": 9,
+        "text": "collateralized “Volcano Bonds” to pay off the IMF",
+        "initial": "c",
+        "lastWord": "IMF",
+        "lastInitial": "I",
+        "wordCount": 8,
+        "boldLetters": "IMF",
+        "partialBoldLetters": "",
+        "highlights": [
+          "grey: Volcano Bonds",
+          "bold: IMF"
+        ]
+      },
+      {
+        "lineIndex": 32,
+        "corridorIndex": 14,
+        "text": "Maybe because he's a shitcoiner at heart.",
+        "initial": "M",
+        "lastWord": "heart",
+        "lastInitial": "h",
+        "wordCount": 8,
+        "boldLetters": "shitcoineratheart",
+        "partialBoldLetters": "",
+        "highlights": [
+          "orange: shitcoiner at heart"
+        ]
+      }
+    ]
+  },
+  "operations": [
+    {
+      "name": "numbers_as_letters",
+      "reason": "map page lines, corridor lines, and gaps through A1Z26",
+      "output": "page=YAF corridor=GIN gaps=BE",
+      "outputCompact": "page=YAF corridor=GIN gaps=BE",
+      "instructionHits": [],
+      "lettersOnly": "pageYAFcorridorGINgapsBE",
+      "letterLength": 24
+    },
+    {
+      "name": "numbers_as_letters_reversed",
+      "reason": "same A1Z26 streams in mirror order",
+      "output": "page=FAY corridor=NIG gaps=EB",
+      "outputCompact": "page=FAY corridor=NIG gaps=EB",
+      "instructionHits": [],
+      "lettersOnly": "pageFAYcorridorNIGgapsEB",
+      "letterLength": 24
+    },
+    {
+      "name": "gap_words_on_exact_lines",
+      "reason": "take words 2 and 5 from each exact-edge line",
+      "output": "billion that | Volcano pay | because shitcoiner",
+      "outputCompact": "billion that | Volcano pay | because shitcoiner",
+      "instructionHits": [],
+      "lettersOnly": "billionthatVolcanopaybecauseshitcoiner",
+      "letterLength": 38
+    },
+    {
+      "name": "gap_words_on_highlighted_corridor_lines",
+      "reason": "take words 2 and 5 from every highlighted corridor line",
+      "output": "taunting them | billion that | Volcano pay | and of | in figuring | moved I | because shitcoiner",
+      "outputCompact": "taunting them | billion that | Volcano pay | and of | in figuring | moved I | because shitcoiner",
+      "instructionHits": [],
+      "lettersOnly": "tauntingthembillionthatVolcanopayandofinfiguringmovedIbecauseshitcoiner",
+      "letterLength": 71
+    },
+    {
+      "name": "gap_words_in_exact_stream",
+      "reason": "take words 2 and 5 from the exact trio stream",
+      "output": "sell shitcoiner",
+      "outputCompact": "sell shitcoiner",
+      "instructionHits": [],
+      "lettersOnly": "sellshitcoiner",
+      "letterLength": 14
+    },
+    {
+      "name": "corridor_numbers_as_lines",
+      "reason": "use 7, 9, 14 as corridor line selectors",
+      "output": "L25/C7: $1 billion in bitcoin — that he should sell | L27/C9: collateralized “Volcano Bonds” to pay off the IMF | L32/C14: Maybe because he's a shitcoiner at heart.",
+      "outputCompact": "L25/C7: $1 billion in bitcoin — that he should sell | L27/C9: collateralized “Volcano Bonds” to pay off the IMF | L32/C14: Maybe because he's a shitc...",
+      "instructionHits": [],
+      "lettersOnly": "L25C71billioninbitcointhatheshouldsellL27C9collateralizedVolcanoBondstopayofftheIMFL32C14Maybebecausehesashitcoineratheart",
+      "letterLength": 122
+    },
+    {
+      "name": "page_numbers_wrapped_to_corridor_lines",
+      "reason": "wrap page line numbers 25, 27, 32 through the 14-line corridor",
+      "output": "L29/C11: Novogratz in the tweet, figuring he could sell a | L31/C13: hasn't moved on it. I don't really trust that guy. | L22/C4: He's taunting them, telling them he's “buying the dip.”",
+      "outputCompact": "L29/C11: Novogratz in the tweet, figuring he could sell a | L31/C13: hasn't moved on it. I don't really trust that guy. | L22/C4: He's taunting them,...",
+      "instructionHits": [],
+      "lettersOnly": "L29C11NovogratzinthetweetfiguringhecouldsellaL31C13hasntmovedonitIdontreallytrustthatguyL22C4Hestauntingthemtellingthemhesbuyingthedip",
+      "letterLength": 134
+    },
+    {
+      "name": "corridor_numbers_as_interval_words",
+      "reason": "use 7, 9, 14 as word selectors in the G5-to-O5 interval",
+      "output": "the loan those",
+      "outputCompact": "the loan those",
+      "instructionHits": [],
+      "lettersOnly": "theloanthose",
+      "letterLength": 12
+    },
+    {
+      "name": "page_numbers_as_interval_words",
+      "reason": "use 25, 27, 32 as word selectors in the G5-to-O5 interval",
+      "output": "could a Street",
+      "outputCompact": "could a Street",
+      "instructionHits": [],
+      "lettersOnly": "couldaStreet",
+      "letterLength": 12
+    },
+    {
+      "name": "gap_jump_forward",
+      "reason": "start at should-sell, jump +2 to Volcano, then +5 to heart",
+      "output": "L25/C7: $1 billion in bitcoin — that he should sell -> L27/C9: collateralized “Volcano Bonds” to pay off the IMF -> L32/C14: Maybe because he's a shitcoiner at heart.",
+      "outputCompact": "L25/C7: $1 billion in bitcoin — that he should sell -> L27/C9: collateralized “Volcano Bonds” to pay off the IMF -> L32/C14: Maybe because he's a shi...",
+      "instructionHits": [],
+      "lettersOnly": "L25C71billioninbitcointhatheshouldsellL27C9collateralizedVolcanoBondstopayofftheIMFL32C14Maybebecausehesashitcoineratheart",
+      "letterLength": 122
+    },
+    {
+      "name": "gap_jump_backward",
+      "reason": "mirror the same gap walk backward from heart",
+      "output": "L32/C14: Maybe because he's a shitcoiner at heart. -> L27/C9: collateralized “Volcano Bonds” to pay off the IMF -> L25/C7: $1 billion in bitcoin — that he should sell",
+      "outputCompact": "L32/C14: Maybe because he's a shitcoiner at heart. -> L27/C9: collateralized “Volcano Bonds” to pay off the IMF -> L25/C7: $1 billion in bitcoin — th...",
+      "instructionHits": [],
+      "lettersOnly": "L32C14MaybebecausehesashitcoineratheartL27C9collateralizedVolcanoBondstopayofftheIMFL25C71billioninbitcointhatheshouldsell",
+      "letterLength": 122
+    },
+    {
+      "name": "same_phrase_wrapped_chars_by_page_line",
+      "reason": "use page line number as wrapped character index inside each exact phrase",
+      "output": "lla",
+      "outputCompact": "lla",
+      "instructionHits": [],
+      "lettersOnly": "lla",
+      "letterLength": 3
+    },
+    {
+      "name": "same_phrase_wrapped_chars_by_corridor_line",
+      "reason": "use corridor number as wrapped character index inside each exact phrase",
+      "output": "soe",
+      "outputCompact": "soe",
+      "instructionHits": [],
+      "lettersOnly": "soe",
+      "letterLength": 3
+    }
+  ],
+  "operationsWithInstructionHits": [],
+  "assessment": [
+    "A1Z26 number streams are short fragments (`YAF`, `GIN`, `BE`) and do not read as an instruction.",
+    "Words 2 and 5 from the exact lines produce ordinary corridor fragments (`billion that`, `Volcano pay`, `because shitcoiner`).",
+    "The gap walk only restates the known locator path from `should sell` to `Volcano Bonds` to `shitcoiner at heart`.",
+    "Wrapped line numbers and interval word indexes produce ordinary text, not a rule naming word, letter, key, mirror, or direction."
+  ],
+  "nextMove": "Close exact-edge line/corridor numbers and gaps as a direct numeric selector. Keep the 2/5 gaps only as structural locator evidence for the p76 lower corridor."
+}

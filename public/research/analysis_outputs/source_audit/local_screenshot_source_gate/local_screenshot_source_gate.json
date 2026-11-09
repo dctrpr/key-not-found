@@ -1,0 +1,90 @@
+{
+  "createdAt": "2026-05-20T10:30:27",
+  "scope": "apply source-validation gate to local Desktop screenshots; no key derivation",
+  "gateSource": "analysis_outputs/source_audit/source_validation_gate/source_validation_gate.json",
+  "inputReview": "analysis_outputs/source_audit/local_source_candidate_inventory/local_screenshot_visual_review.json",
+  "records": [
+    {
+      "name": "Screenshot 2026-04-30 at 4.16.48 am.png",
+      "path": "private_inputs/Desktop/Screenshot 2026-04-30 at 4.16.48 am.png",
+      "image": {
+        "error": "[Errno 2] No such file or directory: 'private_inputs/Desktop/Screenshot 2026-04-30 at 4.16.48 am.png'"
+      },
+      "visualContent": "Doctors Without Borders logo",
+      "priorVerdict": "unrelated; not puzzle source",
+      "sourceQuality": "fails: screenshot, not native/original-layout export or physical scan",
+      "benchmarkVisibility": "fails: no visible page-76/zero/pill/frame benchmark",
+      "sourceGateStatus": "reject",
+      "decision": "do not promote; witness/noise only"
+    },
+    {
+      "name": "Screenshot 2026-05-02 at 10.13.06 pm.png",
+      "path": "private_inputs/Desktop/Screenshot 2026-05-02 at 10.13.06 pm.png",
+      "image": {
+        "error": "[Errno 2] No such file or directory: 'private_inputs/Desktop/Screenshot 2026-05-02 at 10.13.06 pm.png'"
+      },
+      "visualContent": "car/photo with cartoon foreground",
+      "priorVerdict": "possible recovered-media context only; not source geometry",
+      "sourceQuality": "fails: screenshot, not native/original-layout export or physical scan",
+      "benchmarkVisibility": "fails: no visible page-76/zero/pill/frame benchmark",
+      "sourceGateStatus": "reject",
+      "decision": "do not promote; witness/noise only"
+    },
+    {
+      "name": "Screenshot 2026-05-05 at 8.41.38 pm.png",
+      "path": "private_inputs/Desktop/Screenshot 2026-05-05 at 8.41.38 pm.png",
+      "image": {
+        "error": "[Errno 2] No such file or directory: 'private_inputs/Desktop/Screenshot 2026-05-05 at 8.41.38 pm.png'"
+      },
+      "visualContent": "word-list style text columns",
+      "priorVerdict": "likely solver/reference artifact; not source geometry",
+      "sourceQuality": "fails: screenshot, not native/original-layout export or physical scan",
+      "benchmarkVisibility": "fails: no visible page-76/zero/pill/frame benchmark",
+      "sourceGateStatus": "reject",
+      "decision": "do not promote; witness/noise only"
+    },
+    {
+      "name": "Screenshot 2026-05-06 at 12.33.08 am.png",
+      "path": "private_inputs/Desktop/Screenshot 2026-05-06 at 12.33.08 am.png",
+      "image": {
+        "error": "[Errno 2] No such file or directory: 'private_inputs/Desktop/Screenshot 2026-05-06 at 12.33.08 am.png'"
+      },
+      "visualContent": "word-list style text columns",
+      "priorVerdict": "likely solver/reference artifact; not source geometry",
+      "sourceQuality": "fails: screenshot, not native/original-layout export or physical scan",
+      "benchmarkVisibility": "fails: no visible page-76/zero/pill/frame benchmark",
+      "sourceGateStatus": "reject",
+      "decision": "do not promote; witness/noise only"
+    },
+    {
+      "name": "Screenshot 2026-05-06 at 12.34.00 am.png",
+      "path": "private_inputs/Desktop/Screenshot 2026-05-06 at 12.34.00 am.png",
+      "image": {
+        "error": "[Errno 2] No such file or directory: 'private_inputs/Desktop/Screenshot 2026-05-06 at 12.34.00 am.png'"
+      },
+      "visualContent": "word-list style text columns",
+      "priorVerdict": "likely solver/reference artifact; not source geometry",
+      "sourceQuality": "fails: screenshot, not native/original-layout export or physical scan",
+      "benchmarkVisibility": "fails: no visible page-76/zero/pill/frame benchmark",
+      "sourceGateStatus": "reject",
+      "decision": "do not promote; witness/noise only"
+    },
+    {
+      "name": "Screenshot 2026-05-19 at 7.35.10 pm.png",
+      "path": "private_inputs/Desktop/Screenshot 2026-05-19 at 7.35.10 pm.png",
+      "image": {
+        "error": "[Errno 2] No such file or directory: 'private_inputs/Desktop/Screenshot 2026-05-19 at 7.35.10 pm.png'"
+      },
+      "visualContent": "profile/avatar style image",
+      "priorVerdict": "unrelated; not puzzle source",
+      "sourceQuality": "fails: screenshot, not native/original-layout export or physical scan",
+      "benchmarkVisibility": "fails: no visible page-76/zero/pill/frame benchmark",
+      "sourceGateStatus": "reject",
+      "decision": "do not promote; witness/noise only"
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/local_screenshot_source_gate/local_screenshot_source_gate_sheet.jpg",
+  "promotedCount": 0,
+  "decision": "No local Desktop screenshot passes the source gate. All remain unrelated, media context, or solver/reference artifacts rather than source geometry.",
+  "nextMove": "Do not revisit local screenshots unless a new file appears. Continue waiting for physical scan/original export/source asset, or use comparison PDFs only for style conventions."
+}

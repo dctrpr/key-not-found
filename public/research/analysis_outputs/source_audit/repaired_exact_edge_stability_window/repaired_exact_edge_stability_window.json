@@ -1,0 +1,178 @@
+{
+  "createdAt": "2026-05-20T08:46:24",
+  "scope": "stability window for repaired p78 exact-edge signature; no key derivation",
+  "grid": {
+    "dxRange": [
+      -80,
+      0
+    ],
+    "dyRange": [
+      -20,
+      20
+    ],
+    "cellCount": 3321
+  },
+  "targetSignature": {
+    "labels": [
+      "should sell",
+      "Volcano Bonds",
+      "shitcoiner at heart"
+    ],
+    "styles": "RKY"
+  },
+  "sourceReports": {
+    "edgeReconciliation": "analysis_outputs/source_audit/p78_graphic_edge_reconciliation/p78_graphic_edge_reconciliation.json",
+    "triContact": "analysis_outputs/source_audit/p78_frame_tricontact_signature/p78_frame_tricontact_signature.json",
+    "fontStates": "analysis_outputs/docm_format_sources/lower_corridor_font_state_selector/lower_corridor_font_state_selector.json"
+  },
+  "summaries": {
+    "targetExact": {
+      "count": 1075,
+      "dxRange": [
+        -80,
+        -38
+      ],
+      "dyRange": [
+        -4,
+        20
+      ]
+    },
+    "triContact": {
+      "count": 1599,
+      "dxRange": [
+        -78,
+        -38
+      ],
+      "dyRange": [
+        -18,
+        20
+      ]
+    },
+    "targetExactAndTriContact": {
+      "count": 1025,
+      "dxRange": [
+        -78,
+        -38
+      ],
+      "dyRange": [
+        -4,
+        20
+      ]
+    }
+  },
+  "topExactStreams": [
+    {
+      "exactLabelStream": "should sell | Volcano Bonds | shitcoiner at heart",
+      "count": 1075,
+      "dx": -80,
+      "dy": -4,
+      "exactLabels": [
+        "should sell",
+        "Volcano Bonds",
+        "shitcoiner at heart"
+      ],
+      "exactStyles": "RKY",
+      "instructionHits": {}
+    },
+    {
+      "exactLabelStream": "should sell | shitcoiner at heart",
+      "count": 944,
+      "dx": -32,
+      "dy": -18,
+      "exactLabels": [
+        "should sell",
+        "shitcoiner at heart"
+      ],
+      "exactStyles": "RY",
+      "instructionHits": {}
+    },
+    {
+      "exactLabelStream": "Volcano Bonds | shitcoiner at heart",
+      "count": 602,
+      "dx": -80,
+      "dy": -18,
+      "exactLabels": [
+        "Volcano Bonds",
+        "shitcoiner at heart"
+      ],
+      "exactStyles": "KY",
+      "instructionHits": {}
+    },
+    {
+      "exactLabelStream": "should sell | earnings | shitcoiner at heart",
+      "count": 468,
+      "dx": -11,
+      "dy": -18,
+      "exactLabels": [
+        "should sell",
+        "earnings",
+        "shitcoiner at heart"
+      ],
+      "exactStyles": "RRY",
+      "instructionHits": {}
+    },
+    {
+      "exactLabelStream": "Volcano Bonds",
+      "count": 86,
+      "dx": -80,
+      "dy": -20,
+      "exactLabels": [
+        "Volcano Bonds"
+      ],
+      "exactStyles": "K",
+      "instructionHits": {}
+    },
+    {
+      "exactLabelStream": "shitcoiner at heart",
+      "count": 70,
+      "dx": -37,
+      "dy": -18,
+      "exactLabels": [
+        "shitcoiner at heart"
+      ],
+      "exactStyles": "Y",
+      "instructionHits": {}
+    },
+    {
+      "exactLabelStream": "should sell",
+      "count": 42,
+      "dx": -32,
+      "dy": -20,
+      "exactLabels": [
+        "should sell"
+      ],
+      "exactStyles": "R",
+      "instructionHits": {}
+    },
+    {
+      "exactLabelStream": "should sell | earnings",
+      "count": 24,
+      "dx": -11,
+      "dy": -20,
+      "exactLabels": [
+        "should sell",
+        "earnings"
+      ],
+      "exactStyles": "RR",
+      "instructionHits": {}
+    },
+    {
+      "exactLabelStream": "(none)",
+      "count": 10,
+      "dx": -37,
+      "dy": -20,
+      "exactLabels": [],
+      "exactStyles": "",
+      "instructionHits": {}
+    }
+  ],
+  "instructionHitsInTopStreams": {},
+  "heatmap": "analysis_outputs/source_audit/repaired_exact_edge_stability_window/repaired_exact_edge_stability_window_heatmap.jpg",
+  "assessment": [
+    "The repaired exact-edge trio is not a single-pixel accident inside the bounded source-like window.",
+    "The same `should sell | Volcano Bonds | shitcoiner at heart` / `R K Y` signature survives across the central overlap of the small dx/dy search window.",
+    "The M3/G5/O5 tri-contact and exact-edge trio overlap in a compact window, so the signature is a usable source-registration benchmark.",
+    "The stable streams still do not name an extraction unit or instruction; this remains calibration evidence, not key material."
+  ],
+  "nextMove": "Use this stability window to compare any future Canva/original-layout/physical source. Without new source imagery, move to a different unresolved layer: p80 package copy / dosage counts or original browser/Canva clue inspection."
+}

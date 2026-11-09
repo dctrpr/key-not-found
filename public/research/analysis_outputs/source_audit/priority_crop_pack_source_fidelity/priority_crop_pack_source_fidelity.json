@@ -1,0 +1,124 @@
+{
+  "createdAt": "2026-05-20T11:41:04",
+  "scope": "page-76 priority crop pack source-fidelity audit; no OCR extraction or key derivation",
+  "priorityCropPack": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_pack.json",
+  "currentSourceImage": "analysis_outputs/source_images/magazine_page_76.jpg",
+  "currentSourceTransform": "rotate180",
+  "oldCropPackSourceImage": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+  "sheet": "analysis_outputs/source_audit/priority_crop_pack_source_fidelity/priority_crop_pack_source_fidelity_sheet.jpg",
+  "rows": [
+    {
+      "id": "L32_O5_primary",
+      "title": "Primary O5 / L32",
+      "lineIndex": 32,
+      "text": "Maybe because he's a shitcoiner at heart.",
+      "crop": [
+        850,
+        2860,
+        1770,
+        3038
+      ],
+      "oldCropPackOutput": "analysis_outputs/source_audit/page76_priority_crop_pack/L32_O5_primary.jpg",
+      "sourceRenderedOutput": "analysis_outputs/source_audit/priority_crop_pack_source_fidelity/L32_O5_primary_source.jpg",
+      "raw3dVsSourceDiff": {
+        "sameSize": true,
+        "rms": 2.070533,
+        "meanAbs": 0.781229,
+        "maxAbs": 25
+      }
+    },
+    {
+      "id": "L27_G5_pair",
+      "title": "Paired G5 / L27",
+      "lineIndex": 27,
+      "text": "collateralized Volcano Bonds to pay off the IMF",
+      "crop": [
+        720,
+        2505,
+        1650,
+        2625
+      ],
+      "oldCropPackOutput": "analysis_outputs/source_audit/page76_priority_crop_pack/L27_G5_pair.jpg",
+      "sourceRenderedOutput": "analysis_outputs/source_audit/priority_crop_pack_source_fidelity/L27_G5_pair_source.jpg",
+      "raw3dVsSourceDiff": {
+        "sameSize": true,
+        "rms": 1.132865,
+        "meanAbs": 0.432106,
+        "maxAbs": 15
+      }
+    },
+    {
+      "id": "L25_should_sell",
+      "title": "Frame Top / L25",
+      "lineIndex": 25,
+      "text": "$1 billion in bitcoin - that he should sell",
+      "crop": [
+        720,
+        2355,
+        1515,
+        2455
+      ],
+      "oldCropPackOutput": "analysis_outputs/source_audit/page76_priority_crop_pack/L25_should_sell.jpg",
+      "sourceRenderedOutput": "analysis_outputs/source_audit/priority_crop_pack_source_fidelity/L25_should_sell_source.jpg",
+      "raw3dVsSourceDiff": {
+        "sameSize": true,
+        "rms": 1.183482,
+        "meanAbs": 0.422164,
+        "maxAbs": 12
+      }
+    },
+    {
+      "id": "L26_L29_source_band",
+      "title": "Broad p78 Source Band / L26-L29",
+      "lineIndex": "26-29",
+      "text": "earnings / Volcano Bonds / Mike / could sell band",
+      "crop": [
+        720,
+        2440,
+        1685,
+        2745
+      ],
+      "oldCropPackOutput": "analysis_outputs/source_audit/page76_priority_crop_pack/L26_L29_source_band.jpg",
+      "sourceRenderedOutput": "analysis_outputs/source_audit/priority_crop_pack_source_fidelity/L26_L29_source_band_source.jpg",
+      "raw3dVsSourceDiff": {
+        "sameSize": true,
+        "rms": 1.267788,
+        "meanAbs": 0.500593,
+        "maxAbs": 15
+      }
+    },
+    {
+      "id": "L25_L32_frame_context",
+      "title": "Full Frame Context / L25-L32",
+      "lineIndex": "25-32",
+      "text": "should sell -> Volcano Bonds -> shitcoiner at heart",
+      "crop": [
+        720,
+        2350,
+        1750,
+        3045
+      ],
+      "oldCropPackOutput": "analysis_outputs/source_audit/page76_priority_crop_pack/L25_L32_frame_context.jpg",
+      "sourceRenderedOutput": "analysis_outputs/source_audit/priority_crop_pack_source_fidelity/L25_L32_frame_context_source.jpg",
+      "raw3dVsSourceDiff": {
+        "sameSize": true,
+        "rms": 1.461144,
+        "meanAbs": 0.536477,
+        "maxAbs": 25
+      }
+    }
+  ],
+  "summary": {
+    "cropCount": 5,
+    "anyHigh3dVsSourceDiff": false,
+    "maxRawRms": 2.070533,
+    "minRawRms": 1.132865
+  },
+  "assessment": [
+    "The existing priority crop pack was rendered from the 3D upright image layer.",
+    "After rotating the native source image 180 degrees into readable orientation, the same crop windows visually match the 3D upright layer at JPEG-resave tolerance.",
+    "The earlier stale-crop conclusion was caused by comparing readable-upright crop coordinates against native upside-down source coordinates.",
+    "The old crop pack remains valid as readable-orientation geometry, provided future source comparisons apply the same 180-degree source transform."
+  ],
+  "nextMove": "For future source comparisons, rotate source_images/fresh PDF extraction 180 degrees before applying existing upright page-76 crop coordinates."
+}

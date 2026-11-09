@@ -1,0 +1,1058 @@
+{
+  "createdAt": "2026-05-21T04:20:22",
+  "scope": [
+    "Draw straight rays from the page-76 OVERDOSE header center to O4/B4/G5/O5 target centers.",
+    "Compare active rays with rays from the same origin to non-active page-76 highlight centers.",
+    "Measure existing word/highlight intersections and strict instruction words only.",
+    "No OCR, hashing, key derivation, private-key checks, seed/WIF checks, address checks, or broad candidate generation."
+  ],
+  "inputs": {
+    "activeTargets": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "articleMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "pageImage": "analysis_outputs/3d_article_map/page_76_upright.jpg"
+  },
+  "origin": {
+    "wordId": "p76w0",
+    "text": "OVERDOSE",
+    "box": [
+      2150.98,
+      153.05,
+      2291.26,
+      184.24
+    ],
+    "center": [
+      2221.12,
+      168.64
+    ]
+  },
+  "summary": {
+    "activeRayCount": 4,
+    "controlRayCount": 3,
+    "activeStrictInstructionHits": [],
+    "activeStrictInstructionHitCount": 0,
+    "controlStrictInstructionHits": [],
+    "controlStrictInstructionHitCount": 0,
+    "activeAllQuartetRayCount": 0,
+    "activeRayHighlightHitCounts": [
+      2,
+      1,
+      1,
+      3
+    ],
+    "controlRayHighlightHitCounts": [
+      1,
+      2,
+      2
+    ],
+    "activeRayFocusWordCounts": [
+      8,
+      4,
+      9,
+      11
+    ],
+    "controlRayFocusWordCounts": [
+      1,
+      2,
+      5
+    ],
+    "selectorUnlocked": false
+  },
+  "activeRays": [
+    {
+      "targetId": "buying_dip",
+      "targetLabel": "O4 buying the dip",
+      "targetKind": "active",
+      "targetCenter": [
+        1567.5,
+        2201.0
+      ],
+      "rayLengthPx": 2134.88,
+      "angleDegrees": 107.828,
+      "wordHitCount": 11,
+      "focusWordHitCount": 8,
+      "wordPreview": "y'all. nothing Luther being stake. back nocoiners' money genitals. chest. ByiiREeraipy\"",
+      "highlightHitCount": 2,
+      "highlightHitIds": [
+        "p76_orange_1",
+        "p76_orange_4"
+      ],
+      "activeHighlightHitCount": 1,
+      "activeHighlightHitIds": [
+        "buying_dip"
+      ],
+      "activeTargetHitStream": "buying_dip",
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w20",
+          "index": 20,
+          "text": "y'all.",
+          "importance": 8,
+          "centerDistanceToRayPx": 46.95,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w30",
+          "index": 30,
+          "text": "nothing",
+          "importance": 18,
+          "centerDistanceToRayPx": 46.8,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w40",
+          "index": 40,
+          "text": "Luther",
+          "importance": 16,
+          "centerDistanceToRayPx": 7.0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w51",
+          "index": 51,
+          "text": "being",
+          "importance": 12,
+          "centerDistanceToRayPx": 31.22,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w61",
+          "index": 61,
+          "text": "stake.",
+          "importance": 12,
+          "centerDistanceToRayPx": 51.97,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w93",
+          "index": 93,
+          "text": "back",
+          "importance": 0,
+          "centerDistanceToRayPx": 35.45,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w100",
+          "index": 100,
+          "text": "nocoiners'",
+          "importance": 0,
+          "centerDistanceToRayPx": 50.19,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w136",
+          "index": 136,
+          "text": "money",
+          "importance": 44,
+          "centerDistanceToRayPx": 57.79,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w144",
+          "index": 144,
+          "text": "genitals.",
+          "importance": 0,
+          "centerDistanceToRayPx": 78.12,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w151",
+          "index": 151,
+          "text": "chest.",
+          "importance": 6,
+          "centerDistanceToRayPx": 13.35,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w182",
+          "index": 182,
+          "text": "ByiiREeraipy\"",
+          "importance": 6,
+          "centerDistanceToRayPx": 29.48,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": [
+        {
+          "id": "p76_orange_1",
+          "kind": "orange",
+          "activeTargetId": null,
+          "centerDistanceToRayPx": 605.02
+        },
+        {
+          "id": "p76_orange_4",
+          "kind": "orange",
+          "activeTargetId": "buying_dip",
+          "centerDistanceToRayPx": 0.0
+        }
+      ]
+    },
+    {
+      "targetId": "one_billion",
+      "targetLabel": "B4 $1 billion",
+      "targetKind": "active",
+      "targetCenter": [
+        559.5,
+        2421.5
+      ],
+      "rayLengthPx": 2799.35,
+      "angleDegrees": 126.411,
+      "wordHitCount": 20,
+      "focusWordHitCount": 4,
+      "wordPreview": "heart of Martin a post-1971 Schiff buy shitcoiners' now day have chase Stun defibrillator the International taunting tweeted was eis",
+      "highlightHitCount": 1,
+      "highlightHitIds": [
+        "p76_orange_1"
+      ],
+      "activeHighlightHitCount": 0,
+      "activeHighlightHitIds": [],
+      "activeTargetHitStream": "-",
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w9",
+          "index": 9,
+          "text": "heart",
+          "importance": 18,
+          "centerDistanceToRayPx": 48.87,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w29",
+          "index": 29,
+          "text": "of",
+          "importance": 0,
+          "centerDistanceToRayPx": 14.92,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w39",
+          "index": 39,
+          "text": "Martin",
+          "importance": 0,
+          "centerDistanceToRayPx": 9.58,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w59",
+          "index": 59,
+          "text": "a",
+          "importance": 0,
+          "centerDistanceToRayPx": 9.62,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w70",
+          "index": 70,
+          "text": "post-1971",
+          "importance": 0,
+          "centerDistanceToRayPx": 43.78,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w79",
+          "index": 79,
+          "text": "Schiff",
+          "importance": 18,
+          "centerDistanceToRayPx": 30.65,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w89",
+          "index": 89,
+          "text": "buy",
+          "importance": 20,
+          "centerDistanceToRayPx": 28.83,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w98",
+          "index": 98,
+          "text": "shitcoiners'",
+          "importance": 0,
+          "centerDistanceToRayPx": 40.96,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w106",
+          "index": 106,
+          "text": "now",
+          "importance": 0,
+          "centerDistanceToRayPx": 10.24,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w114",
+          "index": 114,
+          "text": "day",
+          "importance": 0,
+          "centerDistanceToRayPx": 22.48,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w122",
+          "index": 122,
+          "text": "have",
+          "importance": 0,
+          "centerDistanceToRayPx": 2.98,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w133",
+          "index": 133,
+          "text": "chase",
+          "importance": 0,
+          "centerDistanceToRayPx": 44.16,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w140",
+          "index": 140,
+          "text": "Stun",
+          "importance": 0,
+          "centerDistanceToRayPx": 29.17,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w147",
+          "index": 147,
+          "text": "defibrillator",
+          "importance": 0,
+          "centerDistanceToRayPx": 6.12,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w163",
+          "index": 163,
+          "text": "the",
+          "importance": 0,
+          "centerDistanceToRayPx": 4.5,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w170",
+          "index": 170,
+          "text": "International",
+          "importance": 0,
+          "centerDistanceToRayPx": 108.39,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w177",
+          "index": 177,
+          "text": "taunting",
+          "importance": 8,
+          "centerDistanceToRayPx": 44.58,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w184",
+          "index": 184,
+          "text": "tweeted",
+          "importance": 0,
+          "centerDistanceToRayPx": 64.63,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w192",
+          "index": 192,
+          "text": "was",
+          "importance": 0,
+          "centerDistanceToRayPx": 31.55,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w201",
+          "index": 201,
+          "text": "eis",
+          "importance": 0,
+          "centerDistanceToRayPx": 0.45,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": [
+        {
+          "id": "p76_orange_1",
+          "kind": "orange",
+          "activeTargetId": null,
+          "centerDistanceToRayPx": 434.35
+        }
+      ]
+    },
+    {
+      "targetId": "volcano_bonds",
+      "targetLabel": "G5 Volcano Bonds",
+      "targetKind": "active",
+      "targetCenter": [
+        995.5,
+        2568.0
+      ],
+      "rayLengthPx": 2694.27,
+      "angleDegrees": 117.058,
+      "wordHitCount": 18,
+      "focusWordHitCount": 9,
+      "wordPreview": "to y'all. nothing skin burning buying psychotic heads. euthanized ¥ortunately, Bank treasure Salvador Monetary them Bukele nation's that",
+      "highlightHitCount": 1,
+      "highlightHitIds": [
+        "p76_orange_1"
+      ],
+      "activeHighlightHitCount": 0,
+      "activeHighlightHitIds": [],
+      "activeTargetHitStream": "-",
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w10",
+          "index": 10,
+          "text": "to",
+          "importance": 0,
+          "centerDistanceToRayPx": 0.93,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w20",
+          "index": 20,
+          "text": "y'all.",
+          "importance": 8,
+          "centerDistanceToRayPx": 5.35,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w30",
+          "index": 30,
+          "text": "nothing",
+          "importance": 18,
+          "centerDistanceToRayPx": 18.29,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w50",
+          "index": 50,
+          "text": "skin",
+          "importance": 6,
+          "centerDistanceToRayPx": 2.88,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w60",
+          "index": 60,
+          "text": "burning",
+          "importance": 0,
+          "centerDistanceToRayPx": 9.28,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w81",
+          "index": 81,
+          "text": "buying",
+          "importance": 0,
+          "centerDistanceToRayPx": 54.58,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w108",
+          "index": 108,
+          "text": "psychotic",
+          "importance": 26,
+          "centerDistanceToRayPx": 8.91,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w117",
+          "index": 117,
+          "text": "heads.",
+          "importance": 24,
+          "centerDistanceToRayPx": 55.0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w124",
+          "index": 124,
+          "text": "euthanized",
+          "importance": 30,
+          "centerDistanceToRayPx": 40.47,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w125",
+          "index": 125,
+          "text": "¥ortunately,",
+          "importance": 0,
+          "centerDistanceToRayPx": 95.7,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w135",
+          "index": 135,
+          "text": "Bank",
+          "importance": 0,
+          "centerDistanceToRayPx": 38.44,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w150",
+          "index": 150,
+          "text": "treasure",
+          "importance": 0,
+          "centerDistanceToRayPx": 64.38,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w167",
+          "index": 167,
+          "text": "Salvador",
+          "importance": 12,
+          "centerDistanceToRayPx": 68.99,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w171",
+          "index": 171,
+          "text": "Monetary",
+          "importance": 2,
+          "centerDistanceToRayPx": 39.59,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w180",
+          "index": 180,
+          "text": "them",
+          "importance": 0,
+          "centerDistanceToRayPx": 30.44,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w187",
+          "index": 187,
+          "text": "Bukele",
+          "importance": 6,
+          "centerDistanceToRayPx": 23.19,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w197",
+          "index": 197,
+          "text": "nation's",
+          "importance": 8,
+          "centerDistanceToRayPx": 17.21,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w205",
+          "index": 205,
+          "text": "that",
+          "importance": 0,
+          "centerDistanceToRayPx": 11.6,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": [
+        {
+          "id": "p76_orange_1",
+          "kind": "orange",
+          "activeTargetId": null,
+          "centerDistanceToRayPx": 527.16
+        }
+      ]
+    },
+    {
+      "targetId": "shitcoiner_heart",
+      "targetLabel": "O5 shitcoiner at heart",
+      "targetKind": "active",
+      "targetCenter": [
+        1350.5,
+        2957.0
+      ],
+      "rayLengthPx": 2921.12,
+      "angleDegrees": 107.34,
+      "wordHitCount": 20,
+      "focusWordHitCount": 11,
+      "wordPreview": "y'all. nothing Luther being stake. bitcoin back nocoiners' genitals. chest. Twitter? ByiiREeraipy\" announced mine the Mike sella so that siukbeodmensertslveaarty",
+      "highlightHitCount": 3,
+      "highlightHitIds": [
+        "p76_orange_1",
+        "p76_orange_4",
+        "p76_orange_5"
+      ],
+      "activeHighlightHitCount": 2,
+      "activeHighlightHitIds": [
+        "buying_dip",
+        "shitcoiner_heart"
+      ],
+      "activeTargetHitStream": "buying_dip|shitcoiner_heart",
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w20",
+          "index": 20,
+          "text": "y'all.",
+          "importance": 8,
+          "centerDistanceToRayPx": 49.69,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w30",
+          "index": 30,
+          "text": "nothing",
+          "importance": 18,
+          "centerDistanceToRayPx": 50.22,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w40",
+          "index": 40,
+          "text": "Luther",
+          "importance": 16,
+          "centerDistanceToRayPx": 11.0,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w51",
+          "index": 51,
+          "text": "being",
+          "importance": 12,
+          "centerDistanceToRayPx": 26.69,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w61",
+          "index": 61,
+          "text": "stake.",
+          "importance": 12,
+          "centerDistanceToRayPx": 46.83,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w82",
+          "index": 82,
+          "text": "bitcoin",
+          "importance": 21,
+          "centerDistanceToRayPx": 79.43,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w93",
+          "index": 93,
+          "text": "back",
+          "importance": 0,
+          "centerDistanceToRayPx": 42.98,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w100",
+          "index": 100,
+          "text": "nocoiners'",
+          "importance": 0,
+          "centerDistanceToRayPx": 58.4,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w144",
+          "index": 144,
+          "text": "genitals.",
+          "importance": 0,
+          "centerDistanceToRayPx": 90.36,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w151",
+          "index": 151,
+          "text": "chest.",
+          "importance": 6,
+          "centerDistanceToRayPx": 26.06,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w175",
+          "index": 175,
+          "text": "Twitter?",
+          "importance": 0,
+          "centerDistanceToRayPx": 80.21,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w182",
+          "index": 182,
+          "text": "ByiiREeraipy\"",
+          "importance": 6,
+          "centerDistanceToRayPx": 47.65,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w190",
+          "index": 190,
+          "text": "announced",
+          "importance": 6,
+          "centerDistanceToRayPx": 11.62,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w200",
+          "index": 200,
+          "text": "mine",
+          "importance": 5,
+          "centerDistanceToRayPx": 3.48,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w219",
+          "index": 219,
+          "text": "the",
+          "importance": 4,
+          "centerDistanceToRayPx": 2.23,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w230",
+          "index": 230,
+          "text": "Mike",
+          "importance": 0,
+          "centerDistanceToRayPx": 45.88,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w238",
+          "index": 238,
+          "text": "sella",
+          "importance": 0,
+          "centerDistanceToRayPx": 46.29,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w247",
+          "index": 247,
+          "text": "so",
+          "importance": 0,
+          "centerDistanceToRayPx": 13.17,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w258",
+          "index": 258,
+          "text": "that",
+          "importance": 0,
+          "centerDistanceToRayPx": 34.29,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w264",
+          "index": 264,
+          "text": "siukbeodmensertslveaarty",
+          "importance": 0,
+          "centerDistanceToRayPx": 15.1,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": [
+        {
+          "id": "p76_orange_1",
+          "kind": "orange",
+          "activeTargetId": null,
+          "centerDistanceToRayPx": 608.71
+        },
+        {
+          "id": "p76_orange_4",
+          "kind": "orange",
+          "activeTargetId": "buying_dip",
+          "centerDistanceToRayPx": 18.18
+        },
+        {
+          "id": "p76_orange_5",
+          "kind": "orange",
+          "activeTargetId": "shitcoiner_heart",
+          "centerDistanceToRayPx": 0.0
+        }
+      ]
+    }
+  ],
+  "controlRays": [
+    {
+      "targetId": "p76_orange_1",
+      "targetLabel": "orange p76_orange_1",
+      "targetKind": "non_active_highlight_control",
+      "targetCenter": [
+        1511.5,
+        399.0
+      ],
+      "rayLengthPx": 746.07,
+      "angleDegrees": 162.015,
+      "wordHitCount": 1,
+      "focusWordHitCount": 1,
+      "wordPreview": "bitcoin.",
+      "highlightHitCount": 1,
+      "highlightHitIds": [
+        "p76_orange_1"
+      ],
+      "activeHighlightHitCount": 0,
+      "activeHighlightHitIds": [],
+      "activeTargetHitStream": "-",
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w6",
+          "index": 6,
+          "text": "bitcoin.",
+          "importance": 9,
+          "centerDistanceToRayPx": 14.19,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": [
+        {
+          "id": "p76_orange_1",
+          "kind": "orange",
+          "activeTargetId": null,
+          "centerDistanceToRayPx": 0.0
+        }
+      ]
+    },
+    {
+      "targetId": "p76_orange_2",
+      "targetLabel": "orange p76_orange_2",
+      "targetKind": "non_active_highlight_control",
+      "targetCenter": [
+        916.5,
+        474.5
+      ],
+      "rayLengthPx": 1339.99,
+      "angleDegrees": 166.806,
+      "wordHitCount": 5,
+      "focusWordHitCount": 2,
+      "wordPreview": "toxicity. Get some Biteoiny It's",
+      "highlightHitCount": 2,
+      "highlightHitIds": [
+        "p76_orange_1",
+        "p76_orange_2"
+      ],
+      "activeHighlightHitCount": 0,
+      "activeHighlightHitIds": [],
+      "activeTargetHitStream": "-",
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w3",
+          "index": 3,
+          "text": "toxicity.",
+          "importance": 0,
+          "centerDistanceToRayPx": 28.15,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w4",
+          "index": 4,
+          "text": "Get",
+          "importance": 8,
+          "centerDistanceToRayPx": 10.03,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w5",
+          "index": 5,
+          "text": "some",
+          "importance": 16,
+          "centerDistanceToRayPx": 33.63,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w11",
+          "index": 11,
+          "text": "Biteoiny",
+          "importance": 0,
+          "centerDistanceToRayPx": 12.85,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w12",
+          "index": 12,
+          "text": "It's",
+          "importance": 0,
+          "centerDistanceToRayPx": 22.3,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": [
+        {
+          "id": "p76_orange_1",
+          "kind": "orange",
+          "activeTargetId": null,
+          "centerDistanceToRayPx": 62.3
+        },
+        {
+          "id": "p76_orange_2",
+          "kind": "orange",
+          "activeTargetId": null,
+          "centerDistanceToRayPx": 0.0
+        }
+      ]
+    },
+    {
+      "targetId": "p76_orange_3",
+      "targetLabel": "orange p76_orange_3",
+      "targetKind": "non_active_highlight_control",
+      "targetCenter": [
+        867.5,
+        1375.5
+      ],
+      "rayLengthPx": 1813.5,
+      "angleDegrees": 138.28,
+      "wordHitCount": 14,
+      "focusWordHitCount": 5,
+      "wordPreview": "heart here, full clones. the bankers years of watching honéy-badgering dulled unconscious, \"I'riends\" and",
+      "highlightHitCount": 2,
+      "highlightHitIds": [
+        "p76_orange_1",
+        "p76_orange_3"
+      ],
+      "activeHighlightHitCount": 0,
+      "activeHighlightHitIds": [],
+      "activeTargetHitStream": "-",
+      "strictInstructionHits": [],
+      "strictInstructionHitCount": 0,
+      "wordHits": [
+        {
+          "id": "p76w9",
+          "index": 9,
+          "text": "heart",
+          "importance": 18,
+          "centerDistanceToRayPx": 17.33,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w19",
+          "index": 19,
+          "text": "here,",
+          "importance": 0,
+          "centerDistanceToRayPx": 27.95,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w28",
+          "index": 28,
+          "text": "full",
+          "importance": 0,
+          "centerDistanceToRayPx": 25.35,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w37",
+          "index": 37,
+          "text": "clones.",
+          "importance": 4,
+          "centerDistanceToRayPx": 52.65,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w47",
+          "index": 47,
+          "text": "the",
+          "importance": 4,
+          "centerDistanceToRayPx": 9.07,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w56",
+          "index": 56,
+          "text": "bankers",
+          "importance": 20,
+          "centerDistanceToRayPx": 33.48,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w67",
+          "index": 67,
+          "text": "years",
+          "importance": 0,
+          "centerDistanceToRayPx": 47.6,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w68",
+          "index": 68,
+          "text": "of",
+          "importance": 8,
+          "centerDistanceToRayPx": 26.2,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w77",
+          "index": 77,
+          "text": "watching",
+          "importance": 0,
+          "centerDistanceToRayPx": 49.95,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w86",
+          "index": 86,
+          "text": "honéy-badgering",
+          "importance": 0,
+          "centerDistanceToRayPx": 79.07,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w97",
+          "index": 97,
+          "text": "dulled",
+          "importance": 0,
+          "centerDistanceToRayPx": 41.24,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w104",
+          "index": 104,
+          "text": "unconscious,",
+          "importance": 0,
+          "centerDistanceToRayPx": 58.29,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w111",
+          "index": 111,
+          "text": "\"I'riends\"",
+          "importance": 0,
+          "centerDistanceToRayPx": 14.38,
+          "strictInstructionHits": []
+        },
+        {
+          "id": "p76w120",
+          "index": 120,
+          "text": "and",
+          "importance": 0,
+          "centerDistanceToRayPx": 2.29,
+          "strictInstructionHits": []
+        }
+      ],
+      "highlightHits": [
+        {
+          "id": "p76_orange_1",
+          "kind": "orange",
+          "activeTargetId": null,
+          "centerDistanceToRayPx": 300.3
+        },
+        {
+          "id": "p76_orange_3",
+          "kind": "orange",
+          "activeTargetId": null,
+          "centerDistanceToRayPx": 0.0
+        }
+      ]
+    }
+  ],
+  "decision": {
+    "overdoseHeaderRayFanAsSelector": "closed_current_scan",
+    "selectorUnlocked": false,
+    "nextMove": "Keep OVERDOSE header ray geometry as a visual inspection aid only. Reopen only if a source/clue explicitly names rays, header origin, or a ray-based unit/order rule."
+  },
+  "sheet": "analysis_outputs/source_audit/overdose_header_ray_fan_gate/overdose_header_ray_fan_gate_sheet.jpg",
+  "outputs": {
+    "json": "analysis_outputs/source_audit/overdose_header_ray_fan_gate/overdose_header_ray_fan_gate.json",
+    "markdown": "analysis_outputs/source_audit/overdose_header_ray_fan_gate/overdose_header_ray_fan_gate.md",
+    "sheet": "analysis_outputs/source_audit/overdose_header_ray_fan_gate/overdose_header_ray_fan_gate_sheet.jpg"
+  }
+}

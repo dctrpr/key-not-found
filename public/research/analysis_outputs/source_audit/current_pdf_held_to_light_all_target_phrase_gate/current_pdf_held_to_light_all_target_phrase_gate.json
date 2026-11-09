@@ -1,0 +1,6926 @@
+{
+  "createdAt": "2026-05-24T17:36:39",
+  "scope": "All four locked active page-76 boxes traced through fixed PDF held-to-light orientations to page-75 source words.",
+  "inputs": {
+    "articleMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "activeTargets": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "polarityGate": "analysis_outputs/source_audit/current_pdf_held_to_light_composite_polarity_gate/current_pdf_held_to_light_composite_polarity_gate.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json",
+    "transforms": [
+      "physical_back_mirror",
+      "same_side_no_mirror",
+      "back_mirror_rotate180",
+      "front_rotate180"
+    ]
+  },
+  "decision": "current_pdf_held_to_light_all_target_phrase_no_selector",
+  "summary": {
+    "decision": "current_pdf_held_to_light_all_target_phrase_no_selector",
+    "pdfCount": 3,
+    "transformCount": 4,
+    "variantCount": 12,
+    "targetTraceRowCount": 48,
+    "allFourSourceWordVariantCount": 6,
+    "targetRowsWithWords": 39,
+    "totalSourceWordHits": 102,
+    "strictInstructionRowCount": 0,
+    "totalStrictInstructionHits": 0,
+    "actionOrderInstructionRowCount": 0,
+    "totalActionOrderInstructionHits": 0,
+    "contextTermRowCount": 6,
+    "totalContextTermHits": 6,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorCandidateCount": 0,
+    "fingerprint": "pdfs=3|transforms=4|variants=12|targetRows=48|allFourWords=6|wordRows=39|words=102|strictRows=0|strict=0|actionRows=0|action=0|contextRows=6|context=6|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "variantRows": [
+    {
+      "pdf": "magazine.pdf",
+      "transform": "physical_back_mirror",
+      "transformDescription": "Back side seen through page 76, page 75 mirrored left-right.",
+      "targetRows": [
+        {
+          "target": "O4",
+          "targetId": "buying_dip",
+          "targetPhrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceBox": [
+            743.0,
+            2177.0,
+            1210.0,
+            2225.0
+          ],
+          "intersectWordCount": 5,
+          "centerWordCount": 4,
+          "selectedWordCount": 4,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "buterin"
+          ],
+          "sourceTextPreview": "Buterin came up with",
+          "sourceWords": [
+            {
+              "id": "p75w189",
+              "index": 189,
+              "text": "Buterin",
+              "token": "buterin",
+              "box": [
+                696.12,
+                2186.99,
+                853.08,
+                2235.97
+              ],
+              "center": [
+                774.6,
+                2211.4799999999996
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": true
+            },
+            {
+              "id": "p75w190",
+              "index": 190,
+              "text": "came",
+              "token": "came",
+              "box": [
+                893.64,
+                2186.99,
+                975.88,
+                2235.97
+              ],
+              "center": [
+                934.76,
+                2211.4799999999996
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w191",
+              "index": 191,
+              "text": "up",
+              "token": "up",
+              "box": [
+                1011.55,
+                2186.99,
+                1045.15,
+                2235.97
+              ],
+              "center": [
+                1028.35,
+                2211.4799999999996
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w192",
+              "index": 192,
+              "text": "with",
+              "token": "with",
+              "box": [
+                1078.07,
+                2186.99,
+                1155.47,
+                2235.97
+              ],
+              "center": [
+                1116.77,
+                2211.4799999999996
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "B4",
+          "targetId": "one_billion",
+          "targetPhrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceBox": [
+            1853.0,
+            2398.0,
+            2116.0,
+            2445.0
+          ],
+          "intersectWordCount": 0,
+          "centerWordCount": 0,
+          "selectedWordCount": 0,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "",
+          "sourceWords": []
+        },
+        {
+          "target": "G5",
+          "targetId": "volcano_bonds",
+          "targetPhrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceBox": [
+            1348.0,
+            2544.0,
+            1749.0,
+            2592.0
+          ],
+          "intersectWordCount": 1,
+          "centerWordCount": 1,
+          "selectedWordCount": 1,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "experience.",
+          "sourceWords": [
+            {
+              "id": "p75w223",
+              "index": 223,
+              "text": "experience.",
+              "token": "experience",
+              "box": [
+                1257.45,
+                2552.13,
+                1492.1,
+                2601.12
+              ],
+              "center": [
+                1374.775,
+                2576.625
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "O5",
+          "targetId": "shitcoiner_heart",
+          "targetPhrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceBox": [
+            883.0,
+            2932.0,
+            1504.0,
+            2982.0
+          ],
+          "intersectWordCount": 6,
+          "centerWordCount": 5,
+          "selectedWordCount": 5,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "for the gullible and unloved.",
+          "sourceWords": [
+            {
+              "id": "p75w263",
+              "index": 263,
+              "text": "for",
+              "token": "for",
+              "box": [
+                937.99,
+                2924.04,
+                986.36,
+                2964.12
+              ],
+              "center": [
+                962.175,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w264",
+              "index": 264,
+              "text": "the",
+              "token": "the",
+              "box": [
+                1016.59,
+                2924.04,
+                1070.26,
+                2964.12
+              ],
+              "center": [
+                1043.425,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w265",
+              "index": 265,
+              "text": "gullible",
+              "token": "gullible",
+              "box": [
+                1104.27,
+                2924.04,
+                1270.0,
+                2964.12
+              ],
+              "center": [
+                1187.135,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w266",
+              "index": 266,
+              "text": "and",
+              "token": "and",
+              "box": [
+                1307.84,
+                2924.04,
+                1366.04,
+                2964.12
+              ],
+              "center": [
+                1336.94,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w267",
+              "index": 267,
+              "text": "unloved.",
+              "token": "unloved",
+              "box": [
+                1400.56,
+                2924.04,
+                1568.97,
+                2964.12
+              ],
+              "center": [
+                1484.7649999999999,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        }
+      ],
+      "allFourSourceWordRows": false,
+      "targetRowsWithWords": 3,
+      "strictInstructionRowCount": 0,
+      "actionOrderInstructionRowCount": 0,
+      "contextTermRowCount": 1,
+      "totalSourceWordHits": 10,
+      "totalStrictInstructionHits": 0,
+      "totalActionOrderInstructionHits": 0,
+      "totalContextTermHits": 1,
+      "assembledActiveOrderText": "O4:Buterin came up with | B4: | G5:experience. | O5:for the gullible and unloved.",
+      "selectorCandidate": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "transform": "same_side_no_mirror",
+      "transformDescription": "Unmirrored page 75 over page 76; non-backside control.",
+      "targetRows": [
+        {
+          "target": "O4",
+          "targetId": "buying_dip",
+          "targetPhrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "intersectWordCount": 2,
+          "centerWordCount": 2,
+          "selectedWordCount": 2,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "(MRERREIGStY epithet.",
+          "sourceWords": [
+            {
+              "id": "p75w194",
+              "index": 194,
+              "text": "(MRERREIGStY",
+              "token": "mrerreigsty",
+              "box": [
+                1277.61,
+                2186.99,
+                1571.57,
+                2235.97
+              ],
+              "center": [
+                1424.59,
+                2211.4799999999996
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w195",
+              "index": 195,
+              "text": "epithet.",
+              "token": "epithet",
+              "box": [
+                1610.18,
+                2186.99,
+                1763.36,
+                2235.97
+              ],
+              "center": [
+                1686.77,
+                2211.4799999999996
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "B4",
+          "targetId": "one_billion",
+          "targetPhrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "intersectWordCount": 2,
+          "centerWordCount": 2,
+          "selectedWordCount": 2,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "Keep your",
+          "sourceWords": [
+            {
+              "id": "p75w210",
+              "index": 210,
+              "text": "Keep",
+              "token": "keep",
+              "box": [
+                484.49,
+                2408.71,
+                586.88,
+                2466.6
+              ],
+              "center": [
+                535.685,
+                2437.6549999999997
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w211",
+              "index": 211,
+              "text": "your",
+              "token": "your",
+              "box": [
+                617.51,
+                2408.71,
+                711.04,
+                2466.6
+              ],
+              "center": [
+                664.275,
+                2437.6549999999997
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "G5",
+          "targetId": "volcano_bonds",
+          "targetPhrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "intersectWordCount": 4,
+          "centerWordCount": 4,
+          "selectedWordCount": 4,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "sourceTextPreview": "of the whole Satoshi",
+          "sourceWords": [
+            {
+              "id": "p75w219",
+              "index": 219,
+              "text": "of",
+              "token": "of",
+              "box": [
+                786.82,
+                2552.13,
+                817.05,
+                2601.12
+              ],
+              "center": [
+                801.935,
+                2576.625
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w220",
+              "index": 220,
+              "text": "the",
+              "token": "the",
+              "box": [
+                846.28,
+                2552.13,
+                900.7,
+                2601.12
+              ],
+              "center": [
+                873.49,
+                2576.625
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w221",
+              "index": 221,
+              "text": "whole",
+              "token": "whole",
+              "box": [
+                934.96,
+                2552.13,
+                1037.42,
+                2601.12
+              ],
+              "center": [
+                986.19,
+                2576.625
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w222",
+              "index": 222,
+              "text": "Satoshi",
+              "token": "satoshi",
+              "box": [
+                1074.04,
+                2552.13,
+                1221.3,
+                2601.12
+              ],
+              "center": [
+                1147.67,
+                2576.625
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": true
+            }
+          ]
+        },
+        {
+          "target": "O5",
+          "targetId": "shitcoiner_heart",
+          "targetPhrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "intersectWordCount": 4,
+          "centerWordCount": 4,
+          "selectedWordCount": 4,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "the gullible and unloved.",
+          "sourceWords": [
+            {
+              "id": "p75w264",
+              "index": 264,
+              "text": "the",
+              "token": "the",
+              "box": [
+                1016.59,
+                2924.04,
+                1070.26,
+                2964.12
+              ],
+              "center": [
+                1043.425,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w265",
+              "index": 265,
+              "text": "gullible",
+              "token": "gullible",
+              "box": [
+                1104.27,
+                2924.04,
+                1270.0,
+                2964.12
+              ],
+              "center": [
+                1187.135,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w266",
+              "index": 266,
+              "text": "and",
+              "token": "and",
+              "box": [
+                1307.84,
+                2924.04,
+                1366.04,
+                2964.12
+              ],
+              "center": [
+                1336.94,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w267",
+              "index": 267,
+              "text": "unloved.",
+              "token": "unloved",
+              "box": [
+                1400.56,
+                2924.04,
+                1568.97,
+                2964.12
+              ],
+              "center": [
+                1484.7649999999999,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        }
+      ],
+      "allFourSourceWordRows": true,
+      "targetRowsWithWords": 4,
+      "strictInstructionRowCount": 0,
+      "actionOrderInstructionRowCount": 0,
+      "contextTermRowCount": 1,
+      "totalSourceWordHits": 12,
+      "totalStrictInstructionHits": 0,
+      "totalActionOrderInstructionHits": 0,
+      "totalContextTermHits": 1,
+      "assembledActiveOrderText": "O4:(MRERREIGStY epithet. | B4:Keep your | G5:of the whole Satoshi | O5:the gullible and unloved.",
+      "selectorCandidate": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "transform": "back_mirror_rotate180",
+      "transformDescription": "Mirrored back side with 180-degree turn.",
+      "targetRows": [
+        {
+          "target": "O4",
+          "targetId": "buying_dip",
+          "targetPhrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceBox": [
+            1334.0,
+            1039.0,
+            1801.0,
+            1087.0
+          ],
+          "intersectWordCount": 3,
+          "centerWordCount": 3,
+          "selectedWordCount": 3,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "publishing the white",
+          "sourceWords": [
+            {
+              "id": "p75w64",
+              "index": 64,
+              "text": "publishing",
+              "token": "publishing",
+              "box": [
+                1356.21,
+                1042.44,
+                1579.76,
+                1091.42
+              ],
+              "center": [
+                1467.9850000000001,
+                1066.93
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w65",
+              "index": 65,
+              "text": "the",
+              "token": "the",
+              "box": [
+                1617.23,
+                1042.44,
+                1671.65,
+                1091.42
+              ],
+              "center": [
+                1644.44,
+                1066.93
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w66",
+              "index": 66,
+              "text": "white",
+              "token": "white",
+              "box": [
+                1704.91,
+                1042.44,
+                1804.0,
+                1091.42
+              ],
+              "center": [
+                1754.455,
+                1066.93
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "B4",
+          "targetId": "one_billion",
+          "targetPhrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceBox": [
+            428.0,
+            819.0,
+            691.0,
+            866.0
+          ],
+          "intersectWordCount": 2,
+          "centerWordCount": 2,
+          "selectedWordCount": 2,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "The markets",
+          "sourceWords": [
+            {
+              "id": "p75w30",
+              "index": 30,
+              "text": "The",
+              "token": "the",
+              "box": [
+                413.94,
+                832.46,
+                471.39,
+                872.54
+              ],
+              "center": [
+                442.66499999999996,
+                852.5
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w31",
+              "index": 31,
+              "text": "markets",
+              "token": "markets",
+              "box": [
+                506.66,
+                832.46,
+                660.09,
+                872.54
+              ],
+              "center": [
+                583.375,
+                852.5
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "G5",
+          "targetId": "volcano_bonds",
+          "targetPhrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceBox": [
+            795.0,
+            672.0,
+            1196.0,
+            720.0
+          ],
+          "intersectWordCount": 1,
+          "centerWordCount": 0,
+          "selectedWordCount": 1,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "Yes.",
+          "sourceWords": [
+            {
+              "id": "p75w29",
+              "index": 29,
+              "text": "Yes.",
+              "token": "yes",
+              "box": [
+                839.22,
+                717.51,
+                935.17,
+                775.4
+              ],
+              "center": [
+                887.1949999999999,
+                746.4549999999999
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "O5",
+          "targetId": "shitcoiner_heart",
+          "targetPhrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceBox": [
+            1040.0,
+            282.0,
+            1661.0,
+            332.0
+          ],
+          "intersectWordCount": 2,
+          "centerWordCount": 0,
+          "selectedWordCount": 2,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "TOXIC AF",
+          "sourceWords": [
+            {
+              "id": "p75w7",
+              "index": 7,
+              "text": "TOXIC",
+              "token": "toxic",
+              "box": [
+                847.64,
+                312.43,
+                1107.29,
+                416.72
+              ],
+              "center": [
+                977.4649999999999,
+                364.57500000000005
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w8",
+              "index": 8,
+              "text": "AF",
+              "token": "af",
+              "box": [
+                1180.17,
+                305.2,
+                1277.75,
+                402.61
+              ],
+              "center": [
+                1228.96,
+                353.905
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        }
+      ],
+      "allFourSourceWordRows": true,
+      "targetRowsWithWords": 4,
+      "strictInstructionRowCount": 0,
+      "actionOrderInstructionRowCount": 0,
+      "contextTermRowCount": 0,
+      "totalSourceWordHits": 8,
+      "totalStrictInstructionHits": 0,
+      "totalActionOrderInstructionHits": 0,
+      "totalContextTermHits": 0,
+      "assembledActiveOrderText": "O4:publishing the white | B4:The markets | G5:Yes. | O5:TOXIC AF",
+      "selectorCandidate": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "transform": "front_rotate180",
+      "transformDescription": "Unmirrored page 75 with 180-degree turn; orientation control.",
+      "targetRows": [
+        {
+          "target": "O4",
+          "targetId": "buying_dip",
+          "targetPhrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceBox": [
+            743.0,
+            1039.0,
+            1210.0,
+            1087.0
+          ],
+          "intersectWordCount": 3,
+          "centerWordCount": 2,
+          "selectedWordCount": 2,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "The cypherpunks",
+          "sourceWords": [
+            {
+              "id": "p75w61",
+              "index": 61,
+              "text": "The",
+              "token": "the",
+              "box": [
+                847.29,
+                1042.44,
+                904.73,
+                1091.42
+              ],
+              "center": [
+                876.01,
+                1066.93
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w62",
+              "index": 62,
+              "text": "cypherpunks",
+              "token": "cypherpunks",
+              "box": [
+                940.0,
+                1042.44,
+                1202.36,
+                1091.42
+              ],
+              "center": [
+                1071.1799999999998,
+                1066.93
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "B4",
+          "targetId": "one_billion",
+          "targetPhrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceBox": [
+            1853.0,
+            819.0,
+            2116.0,
+            866.0
+          ],
+          "intersectWordCount": 0,
+          "centerWordCount": 0,
+          "selectedWordCount": 0,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "",
+          "sourceWords": []
+        },
+        {
+          "target": "G5",
+          "targetId": "volcano_bonds",
+          "targetPhrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceBox": [
+            1348.0,
+            672.0,
+            1749.0,
+            720.0
+          ],
+          "intersectWordCount": 0,
+          "centerWordCount": 0,
+          "selectedWordCount": 0,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "",
+          "sourceWords": []
+        },
+        {
+          "target": "O5",
+          "targetId": "shitcoiner_heart",
+          "targetPhrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceBox": [
+            883.0,
+            282.0,
+            1504.0,
+            332.0
+          ],
+          "intersectWordCount": 2,
+          "centerWordCount": 0,
+          "selectedWordCount": 2,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "TOXIC AF",
+          "sourceWords": [
+            {
+              "id": "p75w7",
+              "index": 7,
+              "text": "TOXIC",
+              "token": "toxic",
+              "box": [
+                847.64,
+                312.43,
+                1107.29,
+                416.72
+              ],
+              "center": [
+                977.4649999999999,
+                364.57500000000005
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w8",
+              "index": 8,
+              "text": "AF",
+              "token": "af",
+              "box": [
+                1180.17,
+                305.2,
+                1277.75,
+                402.61
+              ],
+              "center": [
+                1228.96,
+                353.905
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        }
+      ],
+      "allFourSourceWordRows": false,
+      "targetRowsWithWords": 2,
+      "strictInstructionRowCount": 0,
+      "actionOrderInstructionRowCount": 0,
+      "contextTermRowCount": 0,
+      "totalSourceWordHits": 4,
+      "totalStrictInstructionHits": 0,
+      "totalActionOrderInstructionHits": 0,
+      "totalContextTermHits": 0,
+      "assembledActiveOrderText": "O4:The cypherpunks | B4: | G5: | O5:TOXIC AF",
+      "selectorCandidate": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "physical_back_mirror",
+      "transformDescription": "Back side seen through page 76, page 75 mirrored left-right.",
+      "targetRows": [
+        {
+          "target": "O4",
+          "targetId": "buying_dip",
+          "targetPhrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceBox": [
+            743.0,
+            2177.0,
+            1210.0,
+            2225.0
+          ],
+          "intersectWordCount": 5,
+          "centerWordCount": 4,
+          "selectedWordCount": 4,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "buterin"
+          ],
+          "sourceTextPreview": "Buterin came up with",
+          "sourceWords": [
+            {
+              "id": "p75w189",
+              "index": 189,
+              "text": "Buterin",
+              "token": "buterin",
+              "box": [
+                696.12,
+                2186.99,
+                853.08,
+                2235.97
+              ],
+              "center": [
+                774.6,
+                2211.4799999999996
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": true
+            },
+            {
+              "id": "p75w190",
+              "index": 190,
+              "text": "came",
+              "token": "came",
+              "box": [
+                893.64,
+                2186.99,
+                975.88,
+                2235.97
+              ],
+              "center": [
+                934.76,
+                2211.4799999999996
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w191",
+              "index": 191,
+              "text": "up",
+              "token": "up",
+              "box": [
+                1011.55,
+                2186.99,
+                1045.15,
+                2235.97
+              ],
+              "center": [
+                1028.35,
+                2211.4799999999996
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w192",
+              "index": 192,
+              "text": "with",
+              "token": "with",
+              "box": [
+                1078.07,
+                2186.99,
+                1155.47,
+                2235.97
+              ],
+              "center": [
+                1116.77,
+                2211.4799999999996
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "B4",
+          "targetId": "one_billion",
+          "targetPhrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceBox": [
+            1853.0,
+            2398.0,
+            2116.0,
+            2445.0
+          ],
+          "intersectWordCount": 0,
+          "centerWordCount": 0,
+          "selectedWordCount": 0,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "",
+          "sourceWords": []
+        },
+        {
+          "target": "G5",
+          "targetId": "volcano_bonds",
+          "targetPhrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceBox": [
+            1348.0,
+            2544.0,
+            1749.0,
+            2592.0
+          ],
+          "intersectWordCount": 1,
+          "centerWordCount": 1,
+          "selectedWordCount": 1,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "experience.",
+          "sourceWords": [
+            {
+              "id": "p75w223",
+              "index": 223,
+              "text": "experience.",
+              "token": "experience",
+              "box": [
+                1257.45,
+                2552.13,
+                1492.1,
+                2601.12
+              ],
+              "center": [
+                1374.775,
+                2576.625
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "O5",
+          "targetId": "shitcoiner_heart",
+          "targetPhrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceBox": [
+            883.0,
+            2932.0,
+            1504.0,
+            2982.0
+          ],
+          "intersectWordCount": 6,
+          "centerWordCount": 5,
+          "selectedWordCount": 5,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "for the gullible and unloved.",
+          "sourceWords": [
+            {
+              "id": "p75w263",
+              "index": 263,
+              "text": "for",
+              "token": "for",
+              "box": [
+                937.99,
+                2924.04,
+                986.36,
+                2964.12
+              ],
+              "center": [
+                962.175,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w264",
+              "index": 264,
+              "text": "the",
+              "token": "the",
+              "box": [
+                1016.59,
+                2924.04,
+                1070.26,
+                2964.12
+              ],
+              "center": [
+                1043.425,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w265",
+              "index": 265,
+              "text": "gullible",
+              "token": "gullible",
+              "box": [
+                1104.27,
+                2924.04,
+                1270.0,
+                2964.12
+              ],
+              "center": [
+                1187.135,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w266",
+              "index": 266,
+              "text": "and",
+              "token": "and",
+              "box": [
+                1307.84,
+                2924.04,
+                1366.04,
+                2964.12
+              ],
+              "center": [
+                1336.94,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w267",
+              "index": 267,
+              "text": "unloved.",
+              "token": "unloved",
+              "box": [
+                1400.56,
+                2924.04,
+                1568.97,
+                2964.12
+              ],
+              "center": [
+                1484.7649999999999,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        }
+      ],
+      "allFourSourceWordRows": false,
+      "targetRowsWithWords": 3,
+      "strictInstructionRowCount": 0,
+      "actionOrderInstructionRowCount": 0,
+      "contextTermRowCount": 1,
+      "totalSourceWordHits": 10,
+      "totalStrictInstructionHits": 0,
+      "totalActionOrderInstructionHits": 0,
+      "totalContextTermHits": 1,
+      "assembledActiveOrderText": "O4:Buterin came up with | B4: | G5:experience. | O5:for the gullible and unloved.",
+      "selectorCandidate": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "same_side_no_mirror",
+      "transformDescription": "Unmirrored page 75 over page 76; non-backside control.",
+      "targetRows": [
+        {
+          "target": "O4",
+          "targetId": "buying_dip",
+          "targetPhrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "intersectWordCount": 2,
+          "centerWordCount": 2,
+          "selectedWordCount": 2,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "(MRERREIGStY epithet.",
+          "sourceWords": [
+            {
+              "id": "p75w194",
+              "index": 194,
+              "text": "(MRERREIGStY",
+              "token": "mrerreigsty",
+              "box": [
+                1277.61,
+                2186.99,
+                1571.57,
+                2235.97
+              ],
+              "center": [
+                1424.59,
+                2211.4799999999996
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w195",
+              "index": 195,
+              "text": "epithet.",
+              "token": "epithet",
+              "box": [
+                1610.18,
+                2186.99,
+                1763.36,
+                2235.97
+              ],
+              "center": [
+                1686.77,
+                2211.4799999999996
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "B4",
+          "targetId": "one_billion",
+          "targetPhrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "intersectWordCount": 2,
+          "centerWordCount": 2,
+          "selectedWordCount": 2,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "Keep your",
+          "sourceWords": [
+            {
+              "id": "p75w210",
+              "index": 210,
+              "text": "Keep",
+              "token": "keep",
+              "box": [
+                484.49,
+                2408.71,
+                586.88,
+                2466.6
+              ],
+              "center": [
+                535.685,
+                2437.6549999999997
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w211",
+              "index": 211,
+              "text": "your",
+              "token": "your",
+              "box": [
+                617.51,
+                2408.71,
+                711.04,
+                2466.6
+              ],
+              "center": [
+                664.275,
+                2437.6549999999997
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "G5",
+          "targetId": "volcano_bonds",
+          "targetPhrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "intersectWordCount": 4,
+          "centerWordCount": 4,
+          "selectedWordCount": 4,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "sourceTextPreview": "of the whole Satoshi",
+          "sourceWords": [
+            {
+              "id": "p75w219",
+              "index": 219,
+              "text": "of",
+              "token": "of",
+              "box": [
+                786.82,
+                2552.13,
+                817.05,
+                2601.12
+              ],
+              "center": [
+                801.935,
+                2576.625
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w220",
+              "index": 220,
+              "text": "the",
+              "token": "the",
+              "box": [
+                846.28,
+                2552.13,
+                900.7,
+                2601.12
+              ],
+              "center": [
+                873.49,
+                2576.625
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w221",
+              "index": 221,
+              "text": "whole",
+              "token": "whole",
+              "box": [
+                934.96,
+                2552.13,
+                1037.42,
+                2601.12
+              ],
+              "center": [
+                986.19,
+                2576.625
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w222",
+              "index": 222,
+              "text": "Satoshi",
+              "token": "satoshi",
+              "box": [
+                1074.04,
+                2552.13,
+                1221.3,
+                2601.12
+              ],
+              "center": [
+                1147.67,
+                2576.625
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": true
+            }
+          ]
+        },
+        {
+          "target": "O5",
+          "targetId": "shitcoiner_heart",
+          "targetPhrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "intersectWordCount": 4,
+          "centerWordCount": 4,
+          "selectedWordCount": 4,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "the gullible and unloved.",
+          "sourceWords": [
+            {
+              "id": "p75w264",
+              "index": 264,
+              "text": "the",
+              "token": "the",
+              "box": [
+                1016.59,
+                2924.04,
+                1070.26,
+                2964.12
+              ],
+              "center": [
+                1043.425,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w265",
+              "index": 265,
+              "text": "gullible",
+              "token": "gullible",
+              "box": [
+                1104.27,
+                2924.04,
+                1270.0,
+                2964.12
+              ],
+              "center": [
+                1187.135,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w266",
+              "index": 266,
+              "text": "and",
+              "token": "and",
+              "box": [
+                1307.84,
+                2924.04,
+                1366.04,
+                2964.12
+              ],
+              "center": [
+                1336.94,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w267",
+              "index": 267,
+              "text": "unloved.",
+              "token": "unloved",
+              "box": [
+                1400.56,
+                2924.04,
+                1568.97,
+                2964.12
+              ],
+              "center": [
+                1484.7649999999999,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        }
+      ],
+      "allFourSourceWordRows": true,
+      "targetRowsWithWords": 4,
+      "strictInstructionRowCount": 0,
+      "actionOrderInstructionRowCount": 0,
+      "contextTermRowCount": 1,
+      "totalSourceWordHits": 12,
+      "totalStrictInstructionHits": 0,
+      "totalActionOrderInstructionHits": 0,
+      "totalContextTermHits": 1,
+      "assembledActiveOrderText": "O4:(MRERREIGStY epithet. | B4:Keep your | G5:of the whole Satoshi | O5:the gullible and unloved.",
+      "selectorCandidate": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "back_mirror_rotate180",
+      "transformDescription": "Mirrored back side with 180-degree turn.",
+      "targetRows": [
+        {
+          "target": "O4",
+          "targetId": "buying_dip",
+          "targetPhrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceBox": [
+            1334.0,
+            1039.0,
+            1801.0,
+            1087.0
+          ],
+          "intersectWordCount": 3,
+          "centerWordCount": 3,
+          "selectedWordCount": 3,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "publishing the white",
+          "sourceWords": [
+            {
+              "id": "p75w64",
+              "index": 64,
+              "text": "publishing",
+              "token": "publishing",
+              "box": [
+                1356.21,
+                1042.44,
+                1579.76,
+                1091.42
+              ],
+              "center": [
+                1467.9850000000001,
+                1066.93
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w65",
+              "index": 65,
+              "text": "the",
+              "token": "the",
+              "box": [
+                1617.23,
+                1042.44,
+                1671.65,
+                1091.42
+              ],
+              "center": [
+                1644.44,
+                1066.93
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w66",
+              "index": 66,
+              "text": "white",
+              "token": "white",
+              "box": [
+                1704.91,
+                1042.44,
+                1804.0,
+                1091.42
+              ],
+              "center": [
+                1754.455,
+                1066.93
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "B4",
+          "targetId": "one_billion",
+          "targetPhrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceBox": [
+            428.0,
+            819.0,
+            691.0,
+            866.0
+          ],
+          "intersectWordCount": 2,
+          "centerWordCount": 2,
+          "selectedWordCount": 2,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "The markets",
+          "sourceWords": [
+            {
+              "id": "p75w30",
+              "index": 30,
+              "text": "The",
+              "token": "the",
+              "box": [
+                413.94,
+                832.46,
+                471.39,
+                872.54
+              ],
+              "center": [
+                442.66499999999996,
+                852.5
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w31",
+              "index": 31,
+              "text": "markets",
+              "token": "markets",
+              "box": [
+                506.66,
+                832.46,
+                660.09,
+                872.54
+              ],
+              "center": [
+                583.375,
+                852.5
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "G5",
+          "targetId": "volcano_bonds",
+          "targetPhrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceBox": [
+            795.0,
+            672.0,
+            1196.0,
+            720.0
+          ],
+          "intersectWordCount": 1,
+          "centerWordCount": 0,
+          "selectedWordCount": 1,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "Yes.",
+          "sourceWords": [
+            {
+              "id": "p75w29",
+              "index": 29,
+              "text": "Yes.",
+              "token": "yes",
+              "box": [
+                839.22,
+                717.51,
+                935.17,
+                775.4
+              ],
+              "center": [
+                887.1949999999999,
+                746.4549999999999
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "O5",
+          "targetId": "shitcoiner_heart",
+          "targetPhrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceBox": [
+            1040.0,
+            282.0,
+            1661.0,
+            332.0
+          ],
+          "intersectWordCount": 2,
+          "centerWordCount": 0,
+          "selectedWordCount": 2,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "TOXIC AF",
+          "sourceWords": [
+            {
+              "id": "p75w7",
+              "index": 7,
+              "text": "TOXIC",
+              "token": "toxic",
+              "box": [
+                847.64,
+                312.43,
+                1107.29,
+                416.72
+              ],
+              "center": [
+                977.4649999999999,
+                364.57500000000005
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w8",
+              "index": 8,
+              "text": "AF",
+              "token": "af",
+              "box": [
+                1180.17,
+                305.2,
+                1277.75,
+                402.61
+              ],
+              "center": [
+                1228.96,
+                353.905
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        }
+      ],
+      "allFourSourceWordRows": true,
+      "targetRowsWithWords": 4,
+      "strictInstructionRowCount": 0,
+      "actionOrderInstructionRowCount": 0,
+      "contextTermRowCount": 0,
+      "totalSourceWordHits": 8,
+      "totalStrictInstructionHits": 0,
+      "totalActionOrderInstructionHits": 0,
+      "totalContextTermHits": 0,
+      "assembledActiveOrderText": "O4:publishing the white | B4:The markets | G5:Yes. | O5:TOXIC AF",
+      "selectorCandidate": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "front_rotate180",
+      "transformDescription": "Unmirrored page 75 with 180-degree turn; orientation control.",
+      "targetRows": [
+        {
+          "target": "O4",
+          "targetId": "buying_dip",
+          "targetPhrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceBox": [
+            743.0,
+            1039.0,
+            1210.0,
+            1087.0
+          ],
+          "intersectWordCount": 3,
+          "centerWordCount": 2,
+          "selectedWordCount": 2,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "The cypherpunks",
+          "sourceWords": [
+            {
+              "id": "p75w61",
+              "index": 61,
+              "text": "The",
+              "token": "the",
+              "box": [
+                847.29,
+                1042.44,
+                904.73,
+                1091.42
+              ],
+              "center": [
+                876.01,
+                1066.93
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w62",
+              "index": 62,
+              "text": "cypherpunks",
+              "token": "cypherpunks",
+              "box": [
+                940.0,
+                1042.44,
+                1202.36,
+                1091.42
+              ],
+              "center": [
+                1071.1799999999998,
+                1066.93
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "B4",
+          "targetId": "one_billion",
+          "targetPhrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceBox": [
+            1853.0,
+            819.0,
+            2116.0,
+            866.0
+          ],
+          "intersectWordCount": 0,
+          "centerWordCount": 0,
+          "selectedWordCount": 0,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "",
+          "sourceWords": []
+        },
+        {
+          "target": "G5",
+          "targetId": "volcano_bonds",
+          "targetPhrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceBox": [
+            1348.0,
+            672.0,
+            1749.0,
+            720.0
+          ],
+          "intersectWordCount": 0,
+          "centerWordCount": 0,
+          "selectedWordCount": 0,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "",
+          "sourceWords": []
+        },
+        {
+          "target": "O5",
+          "targetId": "shitcoiner_heart",
+          "targetPhrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceBox": [
+            883.0,
+            282.0,
+            1504.0,
+            332.0
+          ],
+          "intersectWordCount": 2,
+          "centerWordCount": 0,
+          "selectedWordCount": 2,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "TOXIC AF",
+          "sourceWords": [
+            {
+              "id": "p75w7",
+              "index": 7,
+              "text": "TOXIC",
+              "token": "toxic",
+              "box": [
+                847.64,
+                312.43,
+                1107.29,
+                416.72
+              ],
+              "center": [
+                977.4649999999999,
+                364.57500000000005
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w8",
+              "index": 8,
+              "text": "AF",
+              "token": "af",
+              "box": [
+                1180.17,
+                305.2,
+                1277.75,
+                402.61
+              ],
+              "center": [
+                1228.96,
+                353.905
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        }
+      ],
+      "allFourSourceWordRows": false,
+      "targetRowsWithWords": 2,
+      "strictInstructionRowCount": 0,
+      "actionOrderInstructionRowCount": 0,
+      "contextTermRowCount": 0,
+      "totalSourceWordHits": 4,
+      "totalStrictInstructionHits": 0,
+      "totalActionOrderInstructionHits": 0,
+      "totalContextTermHits": 0,
+      "assembledActiveOrderText": "O4:The cypherpunks | B4: | G5: | O5:TOXIC AF",
+      "selectorCandidate": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "physical_back_mirror",
+      "transformDescription": "Back side seen through page 76, page 75 mirrored left-right.",
+      "targetRows": [
+        {
+          "target": "O4",
+          "targetId": "buying_dip",
+          "targetPhrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceBox": [
+            743.0,
+            2177.0,
+            1210.0,
+            2225.0
+          ],
+          "intersectWordCount": 5,
+          "centerWordCount": 4,
+          "selectedWordCount": 4,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "buterin"
+          ],
+          "sourceTextPreview": "Buterin came up with",
+          "sourceWords": [
+            {
+              "id": "p75w189",
+              "index": 189,
+              "text": "Buterin",
+              "token": "buterin",
+              "box": [
+                696.12,
+                2186.99,
+                853.08,
+                2235.97
+              ],
+              "center": [
+                774.6,
+                2211.4799999999996
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": true
+            },
+            {
+              "id": "p75w190",
+              "index": 190,
+              "text": "came",
+              "token": "came",
+              "box": [
+                893.64,
+                2186.99,
+                975.88,
+                2235.97
+              ],
+              "center": [
+                934.76,
+                2211.4799999999996
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w191",
+              "index": 191,
+              "text": "up",
+              "token": "up",
+              "box": [
+                1011.55,
+                2186.99,
+                1045.15,
+                2235.97
+              ],
+              "center": [
+                1028.35,
+                2211.4799999999996
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w192",
+              "index": 192,
+              "text": "with",
+              "token": "with",
+              "box": [
+                1078.07,
+                2186.99,
+                1155.47,
+                2235.97
+              ],
+              "center": [
+                1116.77,
+                2211.4799999999996
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "B4",
+          "targetId": "one_billion",
+          "targetPhrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceBox": [
+            1853.0,
+            2398.0,
+            2116.0,
+            2445.0
+          ],
+          "intersectWordCount": 0,
+          "centerWordCount": 0,
+          "selectedWordCount": 0,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "",
+          "sourceWords": []
+        },
+        {
+          "target": "G5",
+          "targetId": "volcano_bonds",
+          "targetPhrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceBox": [
+            1348.0,
+            2544.0,
+            1749.0,
+            2592.0
+          ],
+          "intersectWordCount": 1,
+          "centerWordCount": 1,
+          "selectedWordCount": 1,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "experience.",
+          "sourceWords": [
+            {
+              "id": "p75w223",
+              "index": 223,
+              "text": "experience.",
+              "token": "experience",
+              "box": [
+                1257.45,
+                2552.13,
+                1492.1,
+                2601.12
+              ],
+              "center": [
+                1374.775,
+                2576.625
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "O5",
+          "targetId": "shitcoiner_heart",
+          "targetPhrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceBox": [
+            883.0,
+            2932.0,
+            1504.0,
+            2982.0
+          ],
+          "intersectWordCount": 6,
+          "centerWordCount": 5,
+          "selectedWordCount": 5,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "for the gullible and unloved.",
+          "sourceWords": [
+            {
+              "id": "p75w263",
+              "index": 263,
+              "text": "for",
+              "token": "for",
+              "box": [
+                937.99,
+                2924.04,
+                986.36,
+                2964.12
+              ],
+              "center": [
+                962.175,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w264",
+              "index": 264,
+              "text": "the",
+              "token": "the",
+              "box": [
+                1016.59,
+                2924.04,
+                1070.26,
+                2964.12
+              ],
+              "center": [
+                1043.425,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w265",
+              "index": 265,
+              "text": "gullible",
+              "token": "gullible",
+              "box": [
+                1104.27,
+                2924.04,
+                1270.0,
+                2964.12
+              ],
+              "center": [
+                1187.135,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w266",
+              "index": 266,
+              "text": "and",
+              "token": "and",
+              "box": [
+                1307.84,
+                2924.04,
+                1366.04,
+                2964.12
+              ],
+              "center": [
+                1336.94,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w267",
+              "index": 267,
+              "text": "unloved.",
+              "token": "unloved",
+              "box": [
+                1400.56,
+                2924.04,
+                1568.97,
+                2964.12
+              ],
+              "center": [
+                1484.7649999999999,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        }
+      ],
+      "allFourSourceWordRows": false,
+      "targetRowsWithWords": 3,
+      "strictInstructionRowCount": 0,
+      "actionOrderInstructionRowCount": 0,
+      "contextTermRowCount": 1,
+      "totalSourceWordHits": 10,
+      "totalStrictInstructionHits": 0,
+      "totalActionOrderInstructionHits": 0,
+      "totalContextTermHits": 1,
+      "assembledActiveOrderText": "O4:Buterin came up with | B4: | G5:experience. | O5:for the gullible and unloved.",
+      "selectorCandidate": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "same_side_no_mirror",
+      "transformDescription": "Unmirrored page 75 over page 76; non-backside control.",
+      "targetRows": [
+        {
+          "target": "O4",
+          "targetId": "buying_dip",
+          "targetPhrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "intersectWordCount": 2,
+          "centerWordCount": 2,
+          "selectedWordCount": 2,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "(MRERREIGStY epithet.",
+          "sourceWords": [
+            {
+              "id": "p75w194",
+              "index": 194,
+              "text": "(MRERREIGStY",
+              "token": "mrerreigsty",
+              "box": [
+                1277.61,
+                2186.99,
+                1571.57,
+                2235.97
+              ],
+              "center": [
+                1424.59,
+                2211.4799999999996
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w195",
+              "index": 195,
+              "text": "epithet.",
+              "token": "epithet",
+              "box": [
+                1610.18,
+                2186.99,
+                1763.36,
+                2235.97
+              ],
+              "center": [
+                1686.77,
+                2211.4799999999996
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "B4",
+          "targetId": "one_billion",
+          "targetPhrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "intersectWordCount": 2,
+          "centerWordCount": 2,
+          "selectedWordCount": 2,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "Keep your",
+          "sourceWords": [
+            {
+              "id": "p75w210",
+              "index": 210,
+              "text": "Keep",
+              "token": "keep",
+              "box": [
+                484.49,
+                2408.71,
+                586.88,
+                2466.6
+              ],
+              "center": [
+                535.685,
+                2437.6549999999997
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w211",
+              "index": 211,
+              "text": "your",
+              "token": "your",
+              "box": [
+                617.51,
+                2408.71,
+                711.04,
+                2466.6
+              ],
+              "center": [
+                664.275,
+                2437.6549999999997
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "G5",
+          "targetId": "volcano_bonds",
+          "targetPhrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "intersectWordCount": 4,
+          "centerWordCount": 4,
+          "selectedWordCount": 4,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "sourceTextPreview": "of the whole Satoshi",
+          "sourceWords": [
+            {
+              "id": "p75w219",
+              "index": 219,
+              "text": "of",
+              "token": "of",
+              "box": [
+                786.82,
+                2552.13,
+                817.05,
+                2601.12
+              ],
+              "center": [
+                801.935,
+                2576.625
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w220",
+              "index": 220,
+              "text": "the",
+              "token": "the",
+              "box": [
+                846.28,
+                2552.13,
+                900.7,
+                2601.12
+              ],
+              "center": [
+                873.49,
+                2576.625
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w221",
+              "index": 221,
+              "text": "whole",
+              "token": "whole",
+              "box": [
+                934.96,
+                2552.13,
+                1037.42,
+                2601.12
+              ],
+              "center": [
+                986.19,
+                2576.625
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w222",
+              "index": 222,
+              "text": "Satoshi",
+              "token": "satoshi",
+              "box": [
+                1074.04,
+                2552.13,
+                1221.3,
+                2601.12
+              ],
+              "center": [
+                1147.67,
+                2576.625
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": true
+            }
+          ]
+        },
+        {
+          "target": "O5",
+          "targetId": "shitcoiner_heart",
+          "targetPhrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "intersectWordCount": 4,
+          "centerWordCount": 4,
+          "selectedWordCount": 4,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "the gullible and unloved.",
+          "sourceWords": [
+            {
+              "id": "p75w264",
+              "index": 264,
+              "text": "the",
+              "token": "the",
+              "box": [
+                1016.59,
+                2924.04,
+                1070.26,
+                2964.12
+              ],
+              "center": [
+                1043.425,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w265",
+              "index": 265,
+              "text": "gullible",
+              "token": "gullible",
+              "box": [
+                1104.27,
+                2924.04,
+                1270.0,
+                2964.12
+              ],
+              "center": [
+                1187.135,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w266",
+              "index": 266,
+              "text": "and",
+              "token": "and",
+              "box": [
+                1307.84,
+                2924.04,
+                1366.04,
+                2964.12
+              ],
+              "center": [
+                1336.94,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w267",
+              "index": 267,
+              "text": "unloved.",
+              "token": "unloved",
+              "box": [
+                1400.56,
+                2924.04,
+                1568.97,
+                2964.12
+              ],
+              "center": [
+                1484.7649999999999,
+                2944.08
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        }
+      ],
+      "allFourSourceWordRows": true,
+      "targetRowsWithWords": 4,
+      "strictInstructionRowCount": 0,
+      "actionOrderInstructionRowCount": 0,
+      "contextTermRowCount": 1,
+      "totalSourceWordHits": 12,
+      "totalStrictInstructionHits": 0,
+      "totalActionOrderInstructionHits": 0,
+      "totalContextTermHits": 1,
+      "assembledActiveOrderText": "O4:(MRERREIGStY epithet. | B4:Keep your | G5:of the whole Satoshi | O5:the gullible and unloved.",
+      "selectorCandidate": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "back_mirror_rotate180",
+      "transformDescription": "Mirrored back side with 180-degree turn.",
+      "targetRows": [
+        {
+          "target": "O4",
+          "targetId": "buying_dip",
+          "targetPhrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceBox": [
+            1334.0,
+            1039.0,
+            1801.0,
+            1087.0
+          ],
+          "intersectWordCount": 3,
+          "centerWordCount": 3,
+          "selectedWordCount": 3,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "publishing the white",
+          "sourceWords": [
+            {
+              "id": "p75w64",
+              "index": 64,
+              "text": "publishing",
+              "token": "publishing",
+              "box": [
+                1356.21,
+                1042.44,
+                1579.76,
+                1091.42
+              ],
+              "center": [
+                1467.9850000000001,
+                1066.93
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w65",
+              "index": 65,
+              "text": "the",
+              "token": "the",
+              "box": [
+                1617.23,
+                1042.44,
+                1671.65,
+                1091.42
+              ],
+              "center": [
+                1644.44,
+                1066.93
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w66",
+              "index": 66,
+              "text": "white",
+              "token": "white",
+              "box": [
+                1704.91,
+                1042.44,
+                1804.0,
+                1091.42
+              ],
+              "center": [
+                1754.455,
+                1066.93
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "B4",
+          "targetId": "one_billion",
+          "targetPhrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceBox": [
+            428.0,
+            819.0,
+            691.0,
+            866.0
+          ],
+          "intersectWordCount": 2,
+          "centerWordCount": 2,
+          "selectedWordCount": 2,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "The markets",
+          "sourceWords": [
+            {
+              "id": "p75w30",
+              "index": 30,
+              "text": "The",
+              "token": "the",
+              "box": [
+                413.94,
+                832.46,
+                471.39,
+                872.54
+              ],
+              "center": [
+                442.66499999999996,
+                852.5
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w31",
+              "index": 31,
+              "text": "markets",
+              "token": "markets",
+              "box": [
+                506.66,
+                832.46,
+                660.09,
+                872.54
+              ],
+              "center": [
+                583.375,
+                852.5
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "G5",
+          "targetId": "volcano_bonds",
+          "targetPhrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceBox": [
+            795.0,
+            672.0,
+            1196.0,
+            720.0
+          ],
+          "intersectWordCount": 1,
+          "centerWordCount": 0,
+          "selectedWordCount": 1,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "Yes.",
+          "sourceWords": [
+            {
+              "id": "p75w29",
+              "index": 29,
+              "text": "Yes.",
+              "token": "yes",
+              "box": [
+                839.22,
+                717.51,
+                935.17,
+                775.4
+              ],
+              "center": [
+                887.1949999999999,
+                746.4549999999999
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "O5",
+          "targetId": "shitcoiner_heart",
+          "targetPhrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceBox": [
+            1040.0,
+            282.0,
+            1661.0,
+            332.0
+          ],
+          "intersectWordCount": 2,
+          "centerWordCount": 0,
+          "selectedWordCount": 2,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "TOXIC AF",
+          "sourceWords": [
+            {
+              "id": "p75w7",
+              "index": 7,
+              "text": "TOXIC",
+              "token": "toxic",
+              "box": [
+                847.64,
+                312.43,
+                1107.29,
+                416.72
+              ],
+              "center": [
+                977.4649999999999,
+                364.57500000000005
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w8",
+              "index": 8,
+              "text": "AF",
+              "token": "af",
+              "box": [
+                1180.17,
+                305.2,
+                1277.75,
+                402.61
+              ],
+              "center": [
+                1228.96,
+                353.905
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        }
+      ],
+      "allFourSourceWordRows": true,
+      "targetRowsWithWords": 4,
+      "strictInstructionRowCount": 0,
+      "actionOrderInstructionRowCount": 0,
+      "contextTermRowCount": 0,
+      "totalSourceWordHits": 8,
+      "totalStrictInstructionHits": 0,
+      "totalActionOrderInstructionHits": 0,
+      "totalContextTermHits": 0,
+      "assembledActiveOrderText": "O4:publishing the white | B4:The markets | G5:Yes. | O5:TOXIC AF",
+      "selectorCandidate": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "front_rotate180",
+      "transformDescription": "Unmirrored page 75 with 180-degree turn; orientation control.",
+      "targetRows": [
+        {
+          "target": "O4",
+          "targetId": "buying_dip",
+          "targetPhrase": "buying the dip",
+          "referenceBox": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceBox": [
+            743.0,
+            1039.0,
+            1210.0,
+            1087.0
+          ],
+          "intersectWordCount": 3,
+          "centerWordCount": 2,
+          "selectedWordCount": 2,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "The cypherpunks",
+          "sourceWords": [
+            {
+              "id": "p75w61",
+              "index": 61,
+              "text": "The",
+              "token": "the",
+              "box": [
+                847.29,
+                1042.44,
+                904.73,
+                1091.42
+              ],
+              "center": [
+                876.01,
+                1066.93
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w62",
+              "index": 62,
+              "text": "cypherpunks",
+              "token": "cypherpunks",
+              "box": [
+                940.0,
+                1042.44,
+                1202.36,
+                1091.42
+              ],
+              "center": [
+                1071.1799999999998,
+                1066.93
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        },
+        {
+          "target": "B4",
+          "targetId": "one_billion",
+          "targetPhrase": "$1 billion",
+          "referenceBox": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceBox": [
+            1853.0,
+            819.0,
+            2116.0,
+            866.0
+          ],
+          "intersectWordCount": 0,
+          "centerWordCount": 0,
+          "selectedWordCount": 0,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "",
+          "sourceWords": []
+        },
+        {
+          "target": "G5",
+          "targetId": "volcano_bonds",
+          "targetPhrase": "Volcano Bonds",
+          "referenceBox": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceBox": [
+            1348.0,
+            672.0,
+            1749.0,
+            720.0
+          ],
+          "intersectWordCount": 0,
+          "centerWordCount": 0,
+          "selectedWordCount": 0,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "",
+          "sourceWords": []
+        },
+        {
+          "target": "O5",
+          "targetId": "shitcoiner_heart",
+          "targetPhrase": "shitcoiner at heart",
+          "referenceBox": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceBox": [
+            883.0,
+            282.0,
+            1504.0,
+            332.0
+          ],
+          "intersectWordCount": 2,
+          "centerWordCount": 0,
+          "selectedWordCount": 2,
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "sourceTextPreview": "TOXIC AF",
+          "sourceWords": [
+            {
+              "id": "p75w7",
+              "index": 7,
+              "text": "TOXIC",
+              "token": "toxic",
+              "box": [
+                847.64,
+                312.43,
+                1107.29,
+                416.72
+              ],
+              "center": [
+                977.4649999999999,
+                364.57500000000005
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            },
+            {
+              "id": "p75w8",
+              "index": 8,
+              "text": "AF",
+              "token": "af",
+              "box": [
+                1180.17,
+                305.2,
+                1277.75,
+                402.61
+              ],
+              "center": [
+                1228.96,
+                353.905
+              ],
+              "strictInstruction": false,
+              "actionOrderInstruction": false,
+              "contextTerm": false
+            }
+          ]
+        }
+      ],
+      "allFourSourceWordRows": false,
+      "targetRowsWithWords": 2,
+      "strictInstructionRowCount": 0,
+      "actionOrderInstructionRowCount": 0,
+      "contextTermRowCount": 0,
+      "totalSourceWordHits": 4,
+      "totalStrictInstructionHits": 0,
+      "totalActionOrderInstructionHits": 0,
+      "totalContextTermHits": 0,
+      "assembledActiveOrderText": "O4:The cypherpunks | B4: | G5: | O5:TOXIC AF",
+      "selectorCandidate": false
+    }
+  ],
+  "targetTraceRows": [
+    {
+      "target": "O4",
+      "targetId": "buying_dip",
+      "targetPhrase": "buying the dip",
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "sourceBox": [
+        743.0,
+        2177.0,
+        1210.0,
+        2225.0
+      ],
+      "intersectWordCount": 5,
+      "centerWordCount": 4,
+      "selectedWordCount": 4,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [
+        "buterin"
+      ],
+      "sourceTextPreview": "Buterin came up with",
+      "sourceWords": [
+        {
+          "id": "p75w189",
+          "index": 189,
+          "text": "Buterin",
+          "token": "buterin",
+          "box": [
+            696.12,
+            2186.99,
+            853.08,
+            2235.97
+          ],
+          "center": [
+            774.6,
+            2211.4799999999996
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": true
+        },
+        {
+          "id": "p75w190",
+          "index": 190,
+          "text": "came",
+          "token": "came",
+          "box": [
+            893.64,
+            2186.99,
+            975.88,
+            2235.97
+          ],
+          "center": [
+            934.76,
+            2211.4799999999996
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w191",
+          "index": 191,
+          "text": "up",
+          "token": "up",
+          "box": [
+            1011.55,
+            2186.99,
+            1045.15,
+            2235.97
+          ],
+          "center": [
+            1028.35,
+            2211.4799999999996
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w192",
+          "index": 192,
+          "text": "with",
+          "token": "with",
+          "box": [
+            1078.07,
+            2186.99,
+            1155.47,
+            2235.97
+          ],
+          "center": [
+            1116.77,
+            2211.4799999999996
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "B4",
+      "targetId": "one_billion",
+      "targetPhrase": "$1 billion",
+      "referenceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "sourceBox": [
+        1853.0,
+        2398.0,
+        2116.0,
+        2445.0
+      ],
+      "intersectWordCount": 0,
+      "centerWordCount": 0,
+      "selectedWordCount": 0,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "",
+      "sourceWords": []
+    },
+    {
+      "target": "G5",
+      "targetId": "volcano_bonds",
+      "targetPhrase": "Volcano Bonds",
+      "referenceBox": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "sourceBox": [
+        1348.0,
+        2544.0,
+        1749.0,
+        2592.0
+      ],
+      "intersectWordCount": 1,
+      "centerWordCount": 1,
+      "selectedWordCount": 1,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "experience.",
+      "sourceWords": [
+        {
+          "id": "p75w223",
+          "index": 223,
+          "text": "experience.",
+          "token": "experience",
+          "box": [
+            1257.45,
+            2552.13,
+            1492.1,
+            2601.12
+          ],
+          "center": [
+            1374.775,
+            2576.625
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "O5",
+      "targetId": "shitcoiner_heart",
+      "targetPhrase": "shitcoiner at heart",
+      "referenceBox": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "sourceBox": [
+        883.0,
+        2932.0,
+        1504.0,
+        2982.0
+      ],
+      "intersectWordCount": 6,
+      "centerWordCount": 5,
+      "selectedWordCount": 5,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "for the gullible and unloved.",
+      "sourceWords": [
+        {
+          "id": "p75w263",
+          "index": 263,
+          "text": "for",
+          "token": "for",
+          "box": [
+            937.99,
+            2924.04,
+            986.36,
+            2964.12
+          ],
+          "center": [
+            962.175,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w264",
+          "index": 264,
+          "text": "the",
+          "token": "the",
+          "box": [
+            1016.59,
+            2924.04,
+            1070.26,
+            2964.12
+          ],
+          "center": [
+            1043.425,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w265",
+          "index": 265,
+          "text": "gullible",
+          "token": "gullible",
+          "box": [
+            1104.27,
+            2924.04,
+            1270.0,
+            2964.12
+          ],
+          "center": [
+            1187.135,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w266",
+          "index": 266,
+          "text": "and",
+          "token": "and",
+          "box": [
+            1307.84,
+            2924.04,
+            1366.04,
+            2964.12
+          ],
+          "center": [
+            1336.94,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w267",
+          "index": 267,
+          "text": "unloved.",
+          "token": "unloved",
+          "box": [
+            1400.56,
+            2924.04,
+            1568.97,
+            2964.12
+          ],
+          "center": [
+            1484.7649999999999,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "O4",
+      "targetId": "buying_dip",
+      "targetPhrase": "buying the dip",
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "sourceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "intersectWordCount": 2,
+      "centerWordCount": 2,
+      "selectedWordCount": 2,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "(MRERREIGStY epithet.",
+      "sourceWords": [
+        {
+          "id": "p75w194",
+          "index": 194,
+          "text": "(MRERREIGStY",
+          "token": "mrerreigsty",
+          "box": [
+            1277.61,
+            2186.99,
+            1571.57,
+            2235.97
+          ],
+          "center": [
+            1424.59,
+            2211.4799999999996
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w195",
+          "index": 195,
+          "text": "epithet.",
+          "token": "epithet",
+          "box": [
+            1610.18,
+            2186.99,
+            1763.36,
+            2235.97
+          ],
+          "center": [
+            1686.77,
+            2211.4799999999996
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "B4",
+      "targetId": "one_billion",
+      "targetPhrase": "$1 billion",
+      "referenceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "sourceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "intersectWordCount": 2,
+      "centerWordCount": 2,
+      "selectedWordCount": 2,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "Keep your",
+      "sourceWords": [
+        {
+          "id": "p75w210",
+          "index": 210,
+          "text": "Keep",
+          "token": "keep",
+          "box": [
+            484.49,
+            2408.71,
+            586.88,
+            2466.6
+          ],
+          "center": [
+            535.685,
+            2437.6549999999997
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w211",
+          "index": 211,
+          "text": "your",
+          "token": "your",
+          "box": [
+            617.51,
+            2408.71,
+            711.04,
+            2466.6
+          ],
+          "center": [
+            664.275,
+            2437.6549999999997
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "G5",
+      "targetId": "volcano_bonds",
+      "targetPhrase": "Volcano Bonds",
+      "referenceBox": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "sourceBox": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "intersectWordCount": 4,
+      "centerWordCount": 4,
+      "selectedWordCount": 4,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [
+        "satoshi"
+      ],
+      "sourceTextPreview": "of the whole Satoshi",
+      "sourceWords": [
+        {
+          "id": "p75w219",
+          "index": 219,
+          "text": "of",
+          "token": "of",
+          "box": [
+            786.82,
+            2552.13,
+            817.05,
+            2601.12
+          ],
+          "center": [
+            801.935,
+            2576.625
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w220",
+          "index": 220,
+          "text": "the",
+          "token": "the",
+          "box": [
+            846.28,
+            2552.13,
+            900.7,
+            2601.12
+          ],
+          "center": [
+            873.49,
+            2576.625
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w221",
+          "index": 221,
+          "text": "whole",
+          "token": "whole",
+          "box": [
+            934.96,
+            2552.13,
+            1037.42,
+            2601.12
+          ],
+          "center": [
+            986.19,
+            2576.625
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w222",
+          "index": 222,
+          "text": "Satoshi",
+          "token": "satoshi",
+          "box": [
+            1074.04,
+            2552.13,
+            1221.3,
+            2601.12
+          ],
+          "center": [
+            1147.67,
+            2576.625
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": true
+        }
+      ]
+    },
+    {
+      "target": "O5",
+      "targetId": "shitcoiner_heart",
+      "targetPhrase": "shitcoiner at heart",
+      "referenceBox": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "sourceBox": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "intersectWordCount": 4,
+      "centerWordCount": 4,
+      "selectedWordCount": 4,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "the gullible and unloved.",
+      "sourceWords": [
+        {
+          "id": "p75w264",
+          "index": 264,
+          "text": "the",
+          "token": "the",
+          "box": [
+            1016.59,
+            2924.04,
+            1070.26,
+            2964.12
+          ],
+          "center": [
+            1043.425,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w265",
+          "index": 265,
+          "text": "gullible",
+          "token": "gullible",
+          "box": [
+            1104.27,
+            2924.04,
+            1270.0,
+            2964.12
+          ],
+          "center": [
+            1187.135,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w266",
+          "index": 266,
+          "text": "and",
+          "token": "and",
+          "box": [
+            1307.84,
+            2924.04,
+            1366.04,
+            2964.12
+          ],
+          "center": [
+            1336.94,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w267",
+          "index": 267,
+          "text": "unloved.",
+          "token": "unloved",
+          "box": [
+            1400.56,
+            2924.04,
+            1568.97,
+            2964.12
+          ],
+          "center": [
+            1484.7649999999999,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "O4",
+      "targetId": "buying_dip",
+      "targetPhrase": "buying the dip",
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "sourceBox": [
+        1334.0,
+        1039.0,
+        1801.0,
+        1087.0
+      ],
+      "intersectWordCount": 3,
+      "centerWordCount": 3,
+      "selectedWordCount": 3,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "publishing the white",
+      "sourceWords": [
+        {
+          "id": "p75w64",
+          "index": 64,
+          "text": "publishing",
+          "token": "publishing",
+          "box": [
+            1356.21,
+            1042.44,
+            1579.76,
+            1091.42
+          ],
+          "center": [
+            1467.9850000000001,
+            1066.93
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w65",
+          "index": 65,
+          "text": "the",
+          "token": "the",
+          "box": [
+            1617.23,
+            1042.44,
+            1671.65,
+            1091.42
+          ],
+          "center": [
+            1644.44,
+            1066.93
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w66",
+          "index": 66,
+          "text": "white",
+          "token": "white",
+          "box": [
+            1704.91,
+            1042.44,
+            1804.0,
+            1091.42
+          ],
+          "center": [
+            1754.455,
+            1066.93
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "B4",
+      "targetId": "one_billion",
+      "targetPhrase": "$1 billion",
+      "referenceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "sourceBox": [
+        428.0,
+        819.0,
+        691.0,
+        866.0
+      ],
+      "intersectWordCount": 2,
+      "centerWordCount": 2,
+      "selectedWordCount": 2,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "The markets",
+      "sourceWords": [
+        {
+          "id": "p75w30",
+          "index": 30,
+          "text": "The",
+          "token": "the",
+          "box": [
+            413.94,
+            832.46,
+            471.39,
+            872.54
+          ],
+          "center": [
+            442.66499999999996,
+            852.5
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w31",
+          "index": 31,
+          "text": "markets",
+          "token": "markets",
+          "box": [
+            506.66,
+            832.46,
+            660.09,
+            872.54
+          ],
+          "center": [
+            583.375,
+            852.5
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "G5",
+      "targetId": "volcano_bonds",
+      "targetPhrase": "Volcano Bonds",
+      "referenceBox": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "sourceBox": [
+        795.0,
+        672.0,
+        1196.0,
+        720.0
+      ],
+      "intersectWordCount": 1,
+      "centerWordCount": 0,
+      "selectedWordCount": 1,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "Yes.",
+      "sourceWords": [
+        {
+          "id": "p75w29",
+          "index": 29,
+          "text": "Yes.",
+          "token": "yes",
+          "box": [
+            839.22,
+            717.51,
+            935.17,
+            775.4
+          ],
+          "center": [
+            887.1949999999999,
+            746.4549999999999
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "O5",
+      "targetId": "shitcoiner_heart",
+      "targetPhrase": "shitcoiner at heart",
+      "referenceBox": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "sourceBox": [
+        1040.0,
+        282.0,
+        1661.0,
+        332.0
+      ],
+      "intersectWordCount": 2,
+      "centerWordCount": 0,
+      "selectedWordCount": 2,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "TOXIC AF",
+      "sourceWords": [
+        {
+          "id": "p75w7",
+          "index": 7,
+          "text": "TOXIC",
+          "token": "toxic",
+          "box": [
+            847.64,
+            312.43,
+            1107.29,
+            416.72
+          ],
+          "center": [
+            977.4649999999999,
+            364.57500000000005
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w8",
+          "index": 8,
+          "text": "AF",
+          "token": "af",
+          "box": [
+            1180.17,
+            305.2,
+            1277.75,
+            402.61
+          ],
+          "center": [
+            1228.96,
+            353.905
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "O4",
+      "targetId": "buying_dip",
+      "targetPhrase": "buying the dip",
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "sourceBox": [
+        743.0,
+        1039.0,
+        1210.0,
+        1087.0
+      ],
+      "intersectWordCount": 3,
+      "centerWordCount": 2,
+      "selectedWordCount": 2,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "The cypherpunks",
+      "sourceWords": [
+        {
+          "id": "p75w61",
+          "index": 61,
+          "text": "The",
+          "token": "the",
+          "box": [
+            847.29,
+            1042.44,
+            904.73,
+            1091.42
+          ],
+          "center": [
+            876.01,
+            1066.93
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w62",
+          "index": 62,
+          "text": "cypherpunks",
+          "token": "cypherpunks",
+          "box": [
+            940.0,
+            1042.44,
+            1202.36,
+            1091.42
+          ],
+          "center": [
+            1071.1799999999998,
+            1066.93
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "B4",
+      "targetId": "one_billion",
+      "targetPhrase": "$1 billion",
+      "referenceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "sourceBox": [
+        1853.0,
+        819.0,
+        2116.0,
+        866.0
+      ],
+      "intersectWordCount": 0,
+      "centerWordCount": 0,
+      "selectedWordCount": 0,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "",
+      "sourceWords": []
+    },
+    {
+      "target": "G5",
+      "targetId": "volcano_bonds",
+      "targetPhrase": "Volcano Bonds",
+      "referenceBox": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "sourceBox": [
+        1348.0,
+        672.0,
+        1749.0,
+        720.0
+      ],
+      "intersectWordCount": 0,
+      "centerWordCount": 0,
+      "selectedWordCount": 0,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "",
+      "sourceWords": []
+    },
+    {
+      "target": "O5",
+      "targetId": "shitcoiner_heart",
+      "targetPhrase": "shitcoiner at heart",
+      "referenceBox": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "sourceBox": [
+        883.0,
+        282.0,
+        1504.0,
+        332.0
+      ],
+      "intersectWordCount": 2,
+      "centerWordCount": 0,
+      "selectedWordCount": 2,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "TOXIC AF",
+      "sourceWords": [
+        {
+          "id": "p75w7",
+          "index": 7,
+          "text": "TOXIC",
+          "token": "toxic",
+          "box": [
+            847.64,
+            312.43,
+            1107.29,
+            416.72
+          ],
+          "center": [
+            977.4649999999999,
+            364.57500000000005
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w8",
+          "index": 8,
+          "text": "AF",
+          "token": "af",
+          "box": [
+            1180.17,
+            305.2,
+            1277.75,
+            402.61
+          ],
+          "center": [
+            1228.96,
+            353.905
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "O4",
+      "targetId": "buying_dip",
+      "targetPhrase": "buying the dip",
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "sourceBox": [
+        743.0,
+        2177.0,
+        1210.0,
+        2225.0
+      ],
+      "intersectWordCount": 5,
+      "centerWordCount": 4,
+      "selectedWordCount": 4,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [
+        "buterin"
+      ],
+      "sourceTextPreview": "Buterin came up with",
+      "sourceWords": [
+        {
+          "id": "p75w189",
+          "index": 189,
+          "text": "Buterin",
+          "token": "buterin",
+          "box": [
+            696.12,
+            2186.99,
+            853.08,
+            2235.97
+          ],
+          "center": [
+            774.6,
+            2211.4799999999996
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": true
+        },
+        {
+          "id": "p75w190",
+          "index": 190,
+          "text": "came",
+          "token": "came",
+          "box": [
+            893.64,
+            2186.99,
+            975.88,
+            2235.97
+          ],
+          "center": [
+            934.76,
+            2211.4799999999996
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w191",
+          "index": 191,
+          "text": "up",
+          "token": "up",
+          "box": [
+            1011.55,
+            2186.99,
+            1045.15,
+            2235.97
+          ],
+          "center": [
+            1028.35,
+            2211.4799999999996
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w192",
+          "index": 192,
+          "text": "with",
+          "token": "with",
+          "box": [
+            1078.07,
+            2186.99,
+            1155.47,
+            2235.97
+          ],
+          "center": [
+            1116.77,
+            2211.4799999999996
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "B4",
+      "targetId": "one_billion",
+      "targetPhrase": "$1 billion",
+      "referenceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "sourceBox": [
+        1853.0,
+        2398.0,
+        2116.0,
+        2445.0
+      ],
+      "intersectWordCount": 0,
+      "centerWordCount": 0,
+      "selectedWordCount": 0,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "",
+      "sourceWords": []
+    },
+    {
+      "target": "G5",
+      "targetId": "volcano_bonds",
+      "targetPhrase": "Volcano Bonds",
+      "referenceBox": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "sourceBox": [
+        1348.0,
+        2544.0,
+        1749.0,
+        2592.0
+      ],
+      "intersectWordCount": 1,
+      "centerWordCount": 1,
+      "selectedWordCount": 1,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "experience.",
+      "sourceWords": [
+        {
+          "id": "p75w223",
+          "index": 223,
+          "text": "experience.",
+          "token": "experience",
+          "box": [
+            1257.45,
+            2552.13,
+            1492.1,
+            2601.12
+          ],
+          "center": [
+            1374.775,
+            2576.625
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "O5",
+      "targetId": "shitcoiner_heart",
+      "targetPhrase": "shitcoiner at heart",
+      "referenceBox": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "sourceBox": [
+        883.0,
+        2932.0,
+        1504.0,
+        2982.0
+      ],
+      "intersectWordCount": 6,
+      "centerWordCount": 5,
+      "selectedWordCount": 5,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "for the gullible and unloved.",
+      "sourceWords": [
+        {
+          "id": "p75w263",
+          "index": 263,
+          "text": "for",
+          "token": "for",
+          "box": [
+            937.99,
+            2924.04,
+            986.36,
+            2964.12
+          ],
+          "center": [
+            962.175,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w264",
+          "index": 264,
+          "text": "the",
+          "token": "the",
+          "box": [
+            1016.59,
+            2924.04,
+            1070.26,
+            2964.12
+          ],
+          "center": [
+            1043.425,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w265",
+          "index": 265,
+          "text": "gullible",
+          "token": "gullible",
+          "box": [
+            1104.27,
+            2924.04,
+            1270.0,
+            2964.12
+          ],
+          "center": [
+            1187.135,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w266",
+          "index": 266,
+          "text": "and",
+          "token": "and",
+          "box": [
+            1307.84,
+            2924.04,
+            1366.04,
+            2964.12
+          ],
+          "center": [
+            1336.94,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w267",
+          "index": 267,
+          "text": "unloved.",
+          "token": "unloved",
+          "box": [
+            1400.56,
+            2924.04,
+            1568.97,
+            2964.12
+          ],
+          "center": [
+            1484.7649999999999,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "O4",
+      "targetId": "buying_dip",
+      "targetPhrase": "buying the dip",
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "sourceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "intersectWordCount": 2,
+      "centerWordCount": 2,
+      "selectedWordCount": 2,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "(MRERREIGStY epithet.",
+      "sourceWords": [
+        {
+          "id": "p75w194",
+          "index": 194,
+          "text": "(MRERREIGStY",
+          "token": "mrerreigsty",
+          "box": [
+            1277.61,
+            2186.99,
+            1571.57,
+            2235.97
+          ],
+          "center": [
+            1424.59,
+            2211.4799999999996
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w195",
+          "index": 195,
+          "text": "epithet.",
+          "token": "epithet",
+          "box": [
+            1610.18,
+            2186.99,
+            1763.36,
+            2235.97
+          ],
+          "center": [
+            1686.77,
+            2211.4799999999996
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "B4",
+      "targetId": "one_billion",
+      "targetPhrase": "$1 billion",
+      "referenceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "sourceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "intersectWordCount": 2,
+      "centerWordCount": 2,
+      "selectedWordCount": 2,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "Keep your",
+      "sourceWords": [
+        {
+          "id": "p75w210",
+          "index": 210,
+          "text": "Keep",
+          "token": "keep",
+          "box": [
+            484.49,
+            2408.71,
+            586.88,
+            2466.6
+          ],
+          "center": [
+            535.685,
+            2437.6549999999997
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w211",
+          "index": 211,
+          "text": "your",
+          "token": "your",
+          "box": [
+            617.51,
+            2408.71,
+            711.04,
+            2466.6
+          ],
+          "center": [
+            664.275,
+            2437.6549999999997
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "G5",
+      "targetId": "volcano_bonds",
+      "targetPhrase": "Volcano Bonds",
+      "referenceBox": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "sourceBox": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "intersectWordCount": 4,
+      "centerWordCount": 4,
+      "selectedWordCount": 4,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [
+        "satoshi"
+      ],
+      "sourceTextPreview": "of the whole Satoshi",
+      "sourceWords": [
+        {
+          "id": "p75w219",
+          "index": 219,
+          "text": "of",
+          "token": "of",
+          "box": [
+            786.82,
+            2552.13,
+            817.05,
+            2601.12
+          ],
+          "center": [
+            801.935,
+            2576.625
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w220",
+          "index": 220,
+          "text": "the",
+          "token": "the",
+          "box": [
+            846.28,
+            2552.13,
+            900.7,
+            2601.12
+          ],
+          "center": [
+            873.49,
+            2576.625
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w221",
+          "index": 221,
+          "text": "whole",
+          "token": "whole",
+          "box": [
+            934.96,
+            2552.13,
+            1037.42,
+            2601.12
+          ],
+          "center": [
+            986.19,
+            2576.625
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w222",
+          "index": 222,
+          "text": "Satoshi",
+          "token": "satoshi",
+          "box": [
+            1074.04,
+            2552.13,
+            1221.3,
+            2601.12
+          ],
+          "center": [
+            1147.67,
+            2576.625
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": true
+        }
+      ]
+    },
+    {
+      "target": "O5",
+      "targetId": "shitcoiner_heart",
+      "targetPhrase": "shitcoiner at heart",
+      "referenceBox": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "sourceBox": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "intersectWordCount": 4,
+      "centerWordCount": 4,
+      "selectedWordCount": 4,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "the gullible and unloved.",
+      "sourceWords": [
+        {
+          "id": "p75w264",
+          "index": 264,
+          "text": "the",
+          "token": "the",
+          "box": [
+            1016.59,
+            2924.04,
+            1070.26,
+            2964.12
+          ],
+          "center": [
+            1043.425,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w265",
+          "index": 265,
+          "text": "gullible",
+          "token": "gullible",
+          "box": [
+            1104.27,
+            2924.04,
+            1270.0,
+            2964.12
+          ],
+          "center": [
+            1187.135,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w266",
+          "index": 266,
+          "text": "and",
+          "token": "and",
+          "box": [
+            1307.84,
+            2924.04,
+            1366.04,
+            2964.12
+          ],
+          "center": [
+            1336.94,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w267",
+          "index": 267,
+          "text": "unloved.",
+          "token": "unloved",
+          "box": [
+            1400.56,
+            2924.04,
+            1568.97,
+            2964.12
+          ],
+          "center": [
+            1484.7649999999999,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "O4",
+      "targetId": "buying_dip",
+      "targetPhrase": "buying the dip",
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "sourceBox": [
+        1334.0,
+        1039.0,
+        1801.0,
+        1087.0
+      ],
+      "intersectWordCount": 3,
+      "centerWordCount": 3,
+      "selectedWordCount": 3,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "publishing the white",
+      "sourceWords": [
+        {
+          "id": "p75w64",
+          "index": 64,
+          "text": "publishing",
+          "token": "publishing",
+          "box": [
+            1356.21,
+            1042.44,
+            1579.76,
+            1091.42
+          ],
+          "center": [
+            1467.9850000000001,
+            1066.93
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w65",
+          "index": 65,
+          "text": "the",
+          "token": "the",
+          "box": [
+            1617.23,
+            1042.44,
+            1671.65,
+            1091.42
+          ],
+          "center": [
+            1644.44,
+            1066.93
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w66",
+          "index": 66,
+          "text": "white",
+          "token": "white",
+          "box": [
+            1704.91,
+            1042.44,
+            1804.0,
+            1091.42
+          ],
+          "center": [
+            1754.455,
+            1066.93
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "B4",
+      "targetId": "one_billion",
+      "targetPhrase": "$1 billion",
+      "referenceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "sourceBox": [
+        428.0,
+        819.0,
+        691.0,
+        866.0
+      ],
+      "intersectWordCount": 2,
+      "centerWordCount": 2,
+      "selectedWordCount": 2,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "The markets",
+      "sourceWords": [
+        {
+          "id": "p75w30",
+          "index": 30,
+          "text": "The",
+          "token": "the",
+          "box": [
+            413.94,
+            832.46,
+            471.39,
+            872.54
+          ],
+          "center": [
+            442.66499999999996,
+            852.5
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w31",
+          "index": 31,
+          "text": "markets",
+          "token": "markets",
+          "box": [
+            506.66,
+            832.46,
+            660.09,
+            872.54
+          ],
+          "center": [
+            583.375,
+            852.5
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "G5",
+      "targetId": "volcano_bonds",
+      "targetPhrase": "Volcano Bonds",
+      "referenceBox": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "sourceBox": [
+        795.0,
+        672.0,
+        1196.0,
+        720.0
+      ],
+      "intersectWordCount": 1,
+      "centerWordCount": 0,
+      "selectedWordCount": 1,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "Yes.",
+      "sourceWords": [
+        {
+          "id": "p75w29",
+          "index": 29,
+          "text": "Yes.",
+          "token": "yes",
+          "box": [
+            839.22,
+            717.51,
+            935.17,
+            775.4
+          ],
+          "center": [
+            887.1949999999999,
+            746.4549999999999
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "O5",
+      "targetId": "shitcoiner_heart",
+      "targetPhrase": "shitcoiner at heart",
+      "referenceBox": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "sourceBox": [
+        1040.0,
+        282.0,
+        1661.0,
+        332.0
+      ],
+      "intersectWordCount": 2,
+      "centerWordCount": 0,
+      "selectedWordCount": 2,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "TOXIC AF",
+      "sourceWords": [
+        {
+          "id": "p75w7",
+          "index": 7,
+          "text": "TOXIC",
+          "token": "toxic",
+          "box": [
+            847.64,
+            312.43,
+            1107.29,
+            416.72
+          ],
+          "center": [
+            977.4649999999999,
+            364.57500000000005
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w8",
+          "index": 8,
+          "text": "AF",
+          "token": "af",
+          "box": [
+            1180.17,
+            305.2,
+            1277.75,
+            402.61
+          ],
+          "center": [
+            1228.96,
+            353.905
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "O4",
+      "targetId": "buying_dip",
+      "targetPhrase": "buying the dip",
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "sourceBox": [
+        743.0,
+        1039.0,
+        1210.0,
+        1087.0
+      ],
+      "intersectWordCount": 3,
+      "centerWordCount": 2,
+      "selectedWordCount": 2,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "The cypherpunks",
+      "sourceWords": [
+        {
+          "id": "p75w61",
+          "index": 61,
+          "text": "The",
+          "token": "the",
+          "box": [
+            847.29,
+            1042.44,
+            904.73,
+            1091.42
+          ],
+          "center": [
+            876.01,
+            1066.93
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w62",
+          "index": 62,
+          "text": "cypherpunks",
+          "token": "cypherpunks",
+          "box": [
+            940.0,
+            1042.44,
+            1202.36,
+            1091.42
+          ],
+          "center": [
+            1071.1799999999998,
+            1066.93
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "B4",
+      "targetId": "one_billion",
+      "targetPhrase": "$1 billion",
+      "referenceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "sourceBox": [
+        1853.0,
+        819.0,
+        2116.0,
+        866.0
+      ],
+      "intersectWordCount": 0,
+      "centerWordCount": 0,
+      "selectedWordCount": 0,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "",
+      "sourceWords": []
+    },
+    {
+      "target": "G5",
+      "targetId": "volcano_bonds",
+      "targetPhrase": "Volcano Bonds",
+      "referenceBox": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "sourceBox": [
+        1348.0,
+        672.0,
+        1749.0,
+        720.0
+      ],
+      "intersectWordCount": 0,
+      "centerWordCount": 0,
+      "selectedWordCount": 0,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "",
+      "sourceWords": []
+    },
+    {
+      "target": "O5",
+      "targetId": "shitcoiner_heart",
+      "targetPhrase": "shitcoiner at heart",
+      "referenceBox": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "sourceBox": [
+        883.0,
+        282.0,
+        1504.0,
+        332.0
+      ],
+      "intersectWordCount": 2,
+      "centerWordCount": 0,
+      "selectedWordCount": 2,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "TOXIC AF",
+      "sourceWords": [
+        {
+          "id": "p75w7",
+          "index": 7,
+          "text": "TOXIC",
+          "token": "toxic",
+          "box": [
+            847.64,
+            312.43,
+            1107.29,
+            416.72
+          ],
+          "center": [
+            977.4649999999999,
+            364.57500000000005
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w8",
+          "index": 8,
+          "text": "AF",
+          "token": "af",
+          "box": [
+            1180.17,
+            305.2,
+            1277.75,
+            402.61
+          ],
+          "center": [
+            1228.96,
+            353.905
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "O4",
+      "targetId": "buying_dip",
+      "targetPhrase": "buying the dip",
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "sourceBox": [
+        743.0,
+        2177.0,
+        1210.0,
+        2225.0
+      ],
+      "intersectWordCount": 5,
+      "centerWordCount": 4,
+      "selectedWordCount": 4,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [
+        "buterin"
+      ],
+      "sourceTextPreview": "Buterin came up with",
+      "sourceWords": [
+        {
+          "id": "p75w189",
+          "index": 189,
+          "text": "Buterin",
+          "token": "buterin",
+          "box": [
+            696.12,
+            2186.99,
+            853.08,
+            2235.97
+          ],
+          "center": [
+            774.6,
+            2211.4799999999996
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": true
+        },
+        {
+          "id": "p75w190",
+          "index": 190,
+          "text": "came",
+          "token": "came",
+          "box": [
+            893.64,
+            2186.99,
+            975.88,
+            2235.97
+          ],
+          "center": [
+            934.76,
+            2211.4799999999996
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w191",
+          "index": 191,
+          "text": "up",
+          "token": "up",
+          "box": [
+            1011.55,
+            2186.99,
+            1045.15,
+            2235.97
+          ],
+          "center": [
+            1028.35,
+            2211.4799999999996
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w192",
+          "index": 192,
+          "text": "with",
+          "token": "with",
+          "box": [
+            1078.07,
+            2186.99,
+            1155.47,
+            2235.97
+          ],
+          "center": [
+            1116.77,
+            2211.4799999999996
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "B4",
+      "targetId": "one_billion",
+      "targetPhrase": "$1 billion",
+      "referenceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "sourceBox": [
+        1853.0,
+        2398.0,
+        2116.0,
+        2445.0
+      ],
+      "intersectWordCount": 0,
+      "centerWordCount": 0,
+      "selectedWordCount": 0,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "",
+      "sourceWords": []
+    },
+    {
+      "target": "G5",
+      "targetId": "volcano_bonds",
+      "targetPhrase": "Volcano Bonds",
+      "referenceBox": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "sourceBox": [
+        1348.0,
+        2544.0,
+        1749.0,
+        2592.0
+      ],
+      "intersectWordCount": 1,
+      "centerWordCount": 1,
+      "selectedWordCount": 1,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "experience.",
+      "sourceWords": [
+        {
+          "id": "p75w223",
+          "index": 223,
+          "text": "experience.",
+          "token": "experience",
+          "box": [
+            1257.45,
+            2552.13,
+            1492.1,
+            2601.12
+          ],
+          "center": [
+            1374.775,
+            2576.625
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "O5",
+      "targetId": "shitcoiner_heart",
+      "targetPhrase": "shitcoiner at heart",
+      "referenceBox": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "sourceBox": [
+        883.0,
+        2932.0,
+        1504.0,
+        2982.0
+      ],
+      "intersectWordCount": 6,
+      "centerWordCount": 5,
+      "selectedWordCount": 5,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "for the gullible and unloved.",
+      "sourceWords": [
+        {
+          "id": "p75w263",
+          "index": 263,
+          "text": "for",
+          "token": "for",
+          "box": [
+            937.99,
+            2924.04,
+            986.36,
+            2964.12
+          ],
+          "center": [
+            962.175,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w264",
+          "index": 264,
+          "text": "the",
+          "token": "the",
+          "box": [
+            1016.59,
+            2924.04,
+            1070.26,
+            2964.12
+          ],
+          "center": [
+            1043.425,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w265",
+          "index": 265,
+          "text": "gullible",
+          "token": "gullible",
+          "box": [
+            1104.27,
+            2924.04,
+            1270.0,
+            2964.12
+          ],
+          "center": [
+            1187.135,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w266",
+          "index": 266,
+          "text": "and",
+          "token": "and",
+          "box": [
+            1307.84,
+            2924.04,
+            1366.04,
+            2964.12
+          ],
+          "center": [
+            1336.94,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w267",
+          "index": 267,
+          "text": "unloved.",
+          "token": "unloved",
+          "box": [
+            1400.56,
+            2924.04,
+            1568.97,
+            2964.12
+          ],
+          "center": [
+            1484.7649999999999,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "O4",
+      "targetId": "buying_dip",
+      "targetPhrase": "buying the dip",
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "sourceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "intersectWordCount": 2,
+      "centerWordCount": 2,
+      "selectedWordCount": 2,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "(MRERREIGStY epithet.",
+      "sourceWords": [
+        {
+          "id": "p75w194",
+          "index": 194,
+          "text": "(MRERREIGStY",
+          "token": "mrerreigsty",
+          "box": [
+            1277.61,
+            2186.99,
+            1571.57,
+            2235.97
+          ],
+          "center": [
+            1424.59,
+            2211.4799999999996
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w195",
+          "index": 195,
+          "text": "epithet.",
+          "token": "epithet",
+          "box": [
+            1610.18,
+            2186.99,
+            1763.36,
+            2235.97
+          ],
+          "center": [
+            1686.77,
+            2211.4799999999996
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "B4",
+      "targetId": "one_billion",
+      "targetPhrase": "$1 billion",
+      "referenceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "sourceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "intersectWordCount": 2,
+      "centerWordCount": 2,
+      "selectedWordCount": 2,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "Keep your",
+      "sourceWords": [
+        {
+          "id": "p75w210",
+          "index": 210,
+          "text": "Keep",
+          "token": "keep",
+          "box": [
+            484.49,
+            2408.71,
+            586.88,
+            2466.6
+          ],
+          "center": [
+            535.685,
+            2437.6549999999997
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w211",
+          "index": 211,
+          "text": "your",
+          "token": "your",
+          "box": [
+            617.51,
+            2408.71,
+            711.04,
+            2466.6
+          ],
+          "center": [
+            664.275,
+            2437.6549999999997
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "G5",
+      "targetId": "volcano_bonds",
+      "targetPhrase": "Volcano Bonds",
+      "referenceBox": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "sourceBox": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "intersectWordCount": 4,
+      "centerWordCount": 4,
+      "selectedWordCount": 4,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [
+        "satoshi"
+      ],
+      "sourceTextPreview": "of the whole Satoshi",
+      "sourceWords": [
+        {
+          "id": "p75w219",
+          "index": 219,
+          "text": "of",
+          "token": "of",
+          "box": [
+            786.82,
+            2552.13,
+            817.05,
+            2601.12
+          ],
+          "center": [
+            801.935,
+            2576.625
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w220",
+          "index": 220,
+          "text": "the",
+          "token": "the",
+          "box": [
+            846.28,
+            2552.13,
+            900.7,
+            2601.12
+          ],
+          "center": [
+            873.49,
+            2576.625
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w221",
+          "index": 221,
+          "text": "whole",
+          "token": "whole",
+          "box": [
+            934.96,
+            2552.13,
+            1037.42,
+            2601.12
+          ],
+          "center": [
+            986.19,
+            2576.625
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w222",
+          "index": 222,
+          "text": "Satoshi",
+          "token": "satoshi",
+          "box": [
+            1074.04,
+            2552.13,
+            1221.3,
+            2601.12
+          ],
+          "center": [
+            1147.67,
+            2576.625
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": true
+        }
+      ]
+    },
+    {
+      "target": "O5",
+      "targetId": "shitcoiner_heart",
+      "targetPhrase": "shitcoiner at heart",
+      "referenceBox": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "sourceBox": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "intersectWordCount": 4,
+      "centerWordCount": 4,
+      "selectedWordCount": 4,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "the gullible and unloved.",
+      "sourceWords": [
+        {
+          "id": "p75w264",
+          "index": 264,
+          "text": "the",
+          "token": "the",
+          "box": [
+            1016.59,
+            2924.04,
+            1070.26,
+            2964.12
+          ],
+          "center": [
+            1043.425,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w265",
+          "index": 265,
+          "text": "gullible",
+          "token": "gullible",
+          "box": [
+            1104.27,
+            2924.04,
+            1270.0,
+            2964.12
+          ],
+          "center": [
+            1187.135,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w266",
+          "index": 266,
+          "text": "and",
+          "token": "and",
+          "box": [
+            1307.84,
+            2924.04,
+            1366.04,
+            2964.12
+          ],
+          "center": [
+            1336.94,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w267",
+          "index": 267,
+          "text": "unloved.",
+          "token": "unloved",
+          "box": [
+            1400.56,
+            2924.04,
+            1568.97,
+            2964.12
+          ],
+          "center": [
+            1484.7649999999999,
+            2944.08
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "O4",
+      "targetId": "buying_dip",
+      "targetPhrase": "buying the dip",
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "sourceBox": [
+        1334.0,
+        1039.0,
+        1801.0,
+        1087.0
+      ],
+      "intersectWordCount": 3,
+      "centerWordCount": 3,
+      "selectedWordCount": 3,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "publishing the white",
+      "sourceWords": [
+        {
+          "id": "p75w64",
+          "index": 64,
+          "text": "publishing",
+          "token": "publishing",
+          "box": [
+            1356.21,
+            1042.44,
+            1579.76,
+            1091.42
+          ],
+          "center": [
+            1467.9850000000001,
+            1066.93
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w65",
+          "index": 65,
+          "text": "the",
+          "token": "the",
+          "box": [
+            1617.23,
+            1042.44,
+            1671.65,
+            1091.42
+          ],
+          "center": [
+            1644.44,
+            1066.93
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w66",
+          "index": 66,
+          "text": "white",
+          "token": "white",
+          "box": [
+            1704.91,
+            1042.44,
+            1804.0,
+            1091.42
+          ],
+          "center": [
+            1754.455,
+            1066.93
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "B4",
+      "targetId": "one_billion",
+      "targetPhrase": "$1 billion",
+      "referenceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "sourceBox": [
+        428.0,
+        819.0,
+        691.0,
+        866.0
+      ],
+      "intersectWordCount": 2,
+      "centerWordCount": 2,
+      "selectedWordCount": 2,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "The markets",
+      "sourceWords": [
+        {
+          "id": "p75w30",
+          "index": 30,
+          "text": "The",
+          "token": "the",
+          "box": [
+            413.94,
+            832.46,
+            471.39,
+            872.54
+          ],
+          "center": [
+            442.66499999999996,
+            852.5
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w31",
+          "index": 31,
+          "text": "markets",
+          "token": "markets",
+          "box": [
+            506.66,
+            832.46,
+            660.09,
+            872.54
+          ],
+          "center": [
+            583.375,
+            852.5
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "G5",
+      "targetId": "volcano_bonds",
+      "targetPhrase": "Volcano Bonds",
+      "referenceBox": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "sourceBox": [
+        795.0,
+        672.0,
+        1196.0,
+        720.0
+      ],
+      "intersectWordCount": 1,
+      "centerWordCount": 0,
+      "selectedWordCount": 1,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "Yes.",
+      "sourceWords": [
+        {
+          "id": "p75w29",
+          "index": 29,
+          "text": "Yes.",
+          "token": "yes",
+          "box": [
+            839.22,
+            717.51,
+            935.17,
+            775.4
+          ],
+          "center": [
+            887.1949999999999,
+            746.4549999999999
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "O5",
+      "targetId": "shitcoiner_heart",
+      "targetPhrase": "shitcoiner at heart",
+      "referenceBox": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "sourceBox": [
+        1040.0,
+        282.0,
+        1661.0,
+        332.0
+      ],
+      "intersectWordCount": 2,
+      "centerWordCount": 0,
+      "selectedWordCount": 2,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "TOXIC AF",
+      "sourceWords": [
+        {
+          "id": "p75w7",
+          "index": 7,
+          "text": "TOXIC",
+          "token": "toxic",
+          "box": [
+            847.64,
+            312.43,
+            1107.29,
+            416.72
+          ],
+          "center": [
+            977.4649999999999,
+            364.57500000000005
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w8",
+          "index": 8,
+          "text": "AF",
+          "token": "af",
+          "box": [
+            1180.17,
+            305.2,
+            1277.75,
+            402.61
+          ],
+          "center": [
+            1228.96,
+            353.905
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "O4",
+      "targetId": "buying_dip",
+      "targetPhrase": "buying the dip",
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "sourceBox": [
+        743.0,
+        1039.0,
+        1210.0,
+        1087.0
+      ],
+      "intersectWordCount": 3,
+      "centerWordCount": 2,
+      "selectedWordCount": 2,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "The cypherpunks",
+      "sourceWords": [
+        {
+          "id": "p75w61",
+          "index": 61,
+          "text": "The",
+          "token": "the",
+          "box": [
+            847.29,
+            1042.44,
+            904.73,
+            1091.42
+          ],
+          "center": [
+            876.01,
+            1066.93
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w62",
+          "index": 62,
+          "text": "cypherpunks",
+          "token": "cypherpunks",
+          "box": [
+            940.0,
+            1042.44,
+            1202.36,
+            1091.42
+          ],
+          "center": [
+            1071.1799999999998,
+            1066.93
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "target": "B4",
+      "targetId": "one_billion",
+      "targetPhrase": "$1 billion",
+      "referenceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "sourceBox": [
+        1853.0,
+        819.0,
+        2116.0,
+        866.0
+      ],
+      "intersectWordCount": 0,
+      "centerWordCount": 0,
+      "selectedWordCount": 0,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "",
+      "sourceWords": []
+    },
+    {
+      "target": "G5",
+      "targetId": "volcano_bonds",
+      "targetPhrase": "Volcano Bonds",
+      "referenceBox": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "sourceBox": [
+        1348.0,
+        672.0,
+        1749.0,
+        720.0
+      ],
+      "intersectWordCount": 0,
+      "centerWordCount": 0,
+      "selectedWordCount": 0,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "",
+      "sourceWords": []
+    },
+    {
+      "target": "O5",
+      "targetId": "shitcoiner_heart",
+      "targetPhrase": "shitcoiner at heart",
+      "referenceBox": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "sourceBox": [
+        883.0,
+        282.0,
+        1504.0,
+        332.0
+      ],
+      "intersectWordCount": 2,
+      "centerWordCount": 0,
+      "selectedWordCount": 2,
+      "strictInstructionHitCount": 0,
+      "actionOrderInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "actionOrderInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "TOXIC AF",
+      "sourceWords": [
+        {
+          "id": "p75w7",
+          "index": 7,
+          "text": "TOXIC",
+          "token": "toxic",
+          "box": [
+            847.64,
+            312.43,
+            1107.29,
+            416.72
+          ],
+          "center": [
+            977.4649999999999,
+            364.57500000000005
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "id": "p75w8",
+          "index": 8,
+          "text": "AF",
+          "token": "af",
+          "box": [
+            1180.17,
+            305.2,
+            1277.75,
+            402.61
+          ],
+          "center": [
+            1228.96,
+            353.905
+          ],
+          "strictInstruction": false,
+          "actionOrderInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/current_pdf_held_to_light_all_target_phrase_gate/current_pdf_held_to_light_all_target_phrase_gate_sheet.jpg"
+}

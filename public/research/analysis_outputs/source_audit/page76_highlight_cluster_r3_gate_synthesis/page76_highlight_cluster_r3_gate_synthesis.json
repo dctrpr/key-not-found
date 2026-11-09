@@ -1,0 +1,198 @@
+{
+  "createdAt": "2026-05-20T22:45:01",
+  "scope": "page-76 O-B-B-O highlight-cluster synthesis against source-reopen gate; no extraction/key derivation",
+  "inputs": {
+    "target_convergence": "analysis_outputs/source_audit/page76_target_convergence/page76_target_convergence.json",
+    "next_target_chooser": "analysis_outputs/source_audit/page76_next_target_chooser/page76_next_target_chooser.json",
+    "highlight_edge_selector": "analysis_outputs/source_audit/page76_highlight_edge_selector/page76_highlight_edge_selector.json",
+    "active_highlight_fill": "analysis_outputs/source_audit/page76_active_highlight_fill/page76_active_highlight_fill.json",
+    "highlight_spill_direction": "analysis_outputs/source_audit/page76_highlight_spill_direction/page76_highlight_spill_direction.json",
+    "spill_control_comparison": "analysis_outputs/source_audit/page76_spill_control_comparison/page76_spill_control_comparison.json",
+    "color_swap_filter": "analysis_outputs/source_audit/page76_color_swap_mirror_filter/page76_color_swap_mirror_filter.json",
+    "color_swap_take_right": "analysis_outputs/source_audit/color_swap_take_right_rule/color_swap_take_right_rule.json",
+    "lower_mark_pointers": "analysis_outputs/source_audit/lower_page76_mark_pointers.md",
+    "priority_crop_pack": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_pack.json",
+    "source_reopen": "analysis_outputs/source_audit/source_reopen_requirements/source_reopen_requirements.json"
+  },
+  "sheet": "analysis_outputs/source_audit/page76_highlight_cluster_r3_gate_synthesis/page76_highlight_cluster_r3_gate_synthesis_sheet.jpg",
+  "sheetPanels": [
+    {
+      "title": "page-76 priority crop pack",
+      "path": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_sheet.jpg"
+    },
+    {
+      "title": "active highlight edges",
+      "path": "analysis_outputs/source_audit/page76_highlight_edge_selector/page76_highlight_edge_selector_overlay.jpg"
+    },
+    {
+      "title": "active highlight fill",
+      "path": "analysis_outputs/source_audit/page76_active_highlight_fill/page76_active_highlight_fill_sheet.jpg"
+    },
+    {
+      "title": "spill control comparison",
+      "path": "analysis_outputs/source_audit/page76_spill_control_comparison/page76_spill_control_comparison_sheet.jpg"
+    }
+  ],
+  "topTargets": [
+    {
+      "target": "O5",
+      "label": "shitcoiner at heart",
+      "score": 15,
+      "layers": 5
+    },
+    {
+      "target": "G5",
+      "label": "Volcano Bonds",
+      "score": 11,
+      "layers": 4
+    },
+    {
+      "target": "CORRIDOR",
+      "label": "lower El Salvador / IMF / Bukele / Mike / trust corridor",
+      "score": 6,
+      "layers": 4
+    },
+    {
+      "target": "O1",
+      "label": "Get some toxicity / Open your heart to Bitcoin",
+      "score": 3,
+      "layers": 2
+    },
+    {
+      "target": "G4",
+      "label": "$1 billion",
+      "score": 2,
+      "layers": 1
+    }
+  ],
+  "nextTargetDecision": {
+    "primary": {
+      "lineIndex": 32,
+      "corridorIndex": 14,
+      "text": "Maybe because he's a shitcoiner at heart.",
+      "score": 32.75
+    },
+    "paired": {
+      "lineIndex": 27,
+      "corridorIndex": 9,
+      "text": "collateralized “Volcano Bonds” to pay off the IMF",
+      "score": 16.75
+    },
+    "sourceBand": {
+      "lineIndex": 26,
+      "corridorIndex": 8,
+      "text": "billions worth of future bitcoin earnings",
+      "score": 10.0
+    }
+  },
+  "activeCluster": {
+    "visualOrder": "O4 -> B4 -> G5 -> O5",
+    "colorPattern": "O-B-B-O",
+    "labels": [
+      "buying the dip",
+      "$1 billion",
+      "Volcano Bonds",
+      "shitcoiner at heart"
+    ]
+  },
+  "edgeSelector": {
+    "instructionHitCount": 0,
+    "streams": {
+      "targetFirstLiteral": "b$Vs",
+      "targetLastLiteral": ".ns.",
+      "targetFirstAlpha": "b$Vs",
+      "targetLastAlpha": "pnst",
+      "leftWords": "he's | - | collateralized | a",
+      "leftInitials": "h-ca",
+      "leftLasts": "s-da",
+      "rightWords": "- | in | to | -",
+      "rightInitials": "-it-",
+      "rightLasts": "-no-",
+      "aboveWords": "on | was | future | trust",
+      "aboveInitials": "owft",
+      "aboveLasts": "nset",
+      "belowWords": "announced | billions | those | -",
+      "belowInitials": "abt-",
+      "belowLasts": "dse-"
+    },
+    "decision": "Do not use active highlight boundaries alone as selectors. Reopen this only if a new clue specifies a side such as left/right/top/bottom, or a physical/original-layout source changes the edge contacts."
+  },
+  "fillResidue": {
+    "largeResidualComponentTotal": 5,
+    "decision": "Close hidden-fill residue inside the current high-res active highlights as a standalone selector. Reopen only with a different physical/original scan or an explicit clue naming fill/ink/noise.",
+    "sheet": "analysis_outputs/source_audit/page76_active_highlight_fill/page76_active_highlight_fill_sheet.jpg"
+  },
+  "spillDirection": {
+    "dominantSideStream": "RRRB",
+    "sideStrengthStreams": "RBLT | RBLT | RLBT | BTLR",
+    "decision": "Close active-highlight spill/tail direction as a standalone selector under the current high-res scan."
+  },
+  "spillControl": {
+    "dominantSideCounts": {
+      "bottom": 6,
+      "top": 1,
+      "right": 3
+    },
+    "sideOrderCounts": {
+      "BTLR": 3,
+      "TBRL": 1,
+      "BLRT": 1,
+      "RBLT": 2,
+      "BLTR": 1,
+      "BTRL": 1,
+      "RLBT": 1
+    },
+    "activeOrdersAlsoSeenInControls": [
+      "one_billion",
+      "p76_orange_5"
+    ],
+    "decision": "Close page-76 highlight spill uniqueness as a standalone selector; do not infer extraction direction from side/tail pixels."
+  },
+  "colorSwap": {
+    "bidirectionalColorSwapPages": [
+      79
+    ],
+    "targetIds": "O1 O2 G1 G1 G2",
+    "decision": "The color-swap filter is useful as a noise reducer because only p79 has both orange->grey and grey->orange contacts. But the surviving p79 set selects the upper page-76 energy/war/toxicity/fiat-nonsense contrast, not the lower G5/O5 corridor. Its only instruction-term hits are `take` and `right` inside the printed sentence `That’s right, Bitcoin will take`, not procedural commands, so the streams still name no extraction unit.",
+    "takeRightDecision": "Literal take-right operations on the p79 color-swap contacts produce ordinary upper-page-76 prose and short fragments such as `to`, `Bitcoin`, `money`, and `nonsense`. The streams do not contain a procedural read/take/word/letter/key instruction, so `take/right` remains printed phrase content rather than a usable rule."
+  },
+  "markPointersClosed": true,
+  "priorityCropPack": {
+    "sheet": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_sheet.jpg",
+    "assessment": [
+      "This crop pack is a visual baseline for future source/physical/Canva comparisons.",
+      "O5/L32 remains the primary visual target, G5/L27 is the paired target, and L26-L29 is the broad p78 source band.",
+      "The crop pack does not define an extraction unit and should not trigger key derivation by itself."
+    ],
+    "nextMove": "If a new source image appears, compare these exact crops first and require a named extraction unit before trying keys."
+  },
+  "gateRows": [
+    {
+      "gate": "R1 source identity",
+      "status": "FAIL/PARTIAL",
+      "evidence": "The active O-B-B-O cluster is from the same locked high-res scan and crop cache, not new physical/original-layout evidence."
+    },
+    {
+      "gate": "R2 target preservation",
+      "status": "PASS as locator",
+      "evidence": "O5 `Maybe because he's a shitcoiner at heart.` and G5 `collateralized “Volcano Bonds” to pay off the IMF` remain the strongest target pair; O5 score is 15."
+    },
+    {
+      "gate": "R3 unit/order evidence",
+      "status": "FAIL",
+      "evidence": "edge instruction hits=0; color-swap take/right instruction hits=0; fill/spill reports expose no read/take/word/letter/line/edge/font unit."
+    },
+    {
+      "gate": "R4 orientation/source discipline",
+      "status": "PASS as audited",
+      "evidence": "priority crops and active highlight inspections use the readable/upright high-res page-76 layer; source_images/fresh PDF extraction must be rotate180 before comparison."
+    },
+    {
+      "gate": "R5 controlled improvement",
+      "status": "FAIL",
+      "evidence": "hidden-fill readable residue is absent; large residual count=5; active spill orders also occur in controls=['one_billion', 'p76_orange_5']; color-swap selects upper page-76, not G5/O5."
+    }
+  ],
+  "decision": "page76_highlight_cluster_closed_for_current_scan_as_r3_selector",
+  "nextMove": "Keep O4/B4/G5/O5, especially G5/O5, as page-76 target and future-source validation evidence only. Reopen highlight-cluster extraction only if a raw clue names a unit/order such as side, edge, fill, spill, color swap, word, line, or letter, or if new physical/original-layout evidence changes the active target contacts."
+}

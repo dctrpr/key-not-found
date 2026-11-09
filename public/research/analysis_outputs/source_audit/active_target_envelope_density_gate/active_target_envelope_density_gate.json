@@ -1,0 +1,4195 @@
+{
+  "createdAt": "2026-05-21T05:05:32",
+  "scope": "active O4/B4/G5/O5 minimal target-envelope density gate; no new OCR/key derivation/hashing/address checks",
+  "inputs": {
+    "activeTargets": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "article3dMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "linePitchSource": "analysis_outputs/source_audit/p77_one_line_near_miss/p77_one_line_near_miss.json",
+    "pageImage": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+    "wordOverlapThreshold": 0.25,
+    "highlightOverlapThreshold": 0.01
+  },
+  "linePitchPx": 73.73,
+  "targets": [
+    {
+      "id": "buying_dip",
+      "label": "O4 buying the dip",
+      "phrase": "buying the dip",
+      "box": [
+        1334,
+        2177,
+        1801,
+        2225
+      ],
+      "center": [
+        1567.5,
+        2201.0
+      ],
+      "visualState": "Y",
+      "pageLine": 22,
+      "corridorIndex": 4
+    },
+    {
+      "id": "one_billion",
+      "label": "B4 $1 billion",
+      "phrase": "$1 billion",
+      "box": [
+        428,
+        2398,
+        691,
+        2445
+      ],
+      "center": [
+        559.5,
+        2421.5
+      ],
+      "visualState": "K",
+      "pageLine": 25,
+      "corridorIndex": 7
+    },
+    {
+      "id": "volcano_bonds",
+      "label": "G5 Volcano Bonds",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795,
+        2544,
+        1196,
+        2592
+      ],
+      "center": [
+        995.5,
+        2568.0
+      ],
+      "visualState": "K",
+      "pageLine": 27,
+      "corridorIndex": 9
+    },
+    {
+      "id": "shitcoiner_heart",
+      "label": "O5 shitcoiner at heart",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040,
+        2932,
+        1661,
+        2982
+      ],
+      "center": [
+        1350.5,
+        2957.0
+      ],
+      "visualState": "Y",
+      "pageLine": 32,
+      "corridorIndex": 14
+    }
+  ],
+  "geometry": {
+    "activeEnvelopeBox": [
+      428,
+      2177,
+      1801,
+      2982
+    ],
+    "activeEnvelopeWidthPx": 1373,
+    "activeEnvelopeHeightPx": 805,
+    "activeEnvelopeAreaPx": 1105265,
+    "targetBoxAreaTotalPx": 85075,
+    "targetBoxAreaFractionOfEnvelope": 0.076972,
+    "targetCenterHull": [
+      [
+        559.5,
+        2421.5
+      ],
+      [
+        1567.5,
+        2201.0
+      ],
+      [
+        1350.5,
+        2957.0
+      ]
+    ],
+    "targetCenterHullAreaPx": 357099.75,
+    "targetCenterHullAreaFractionOfEnvelope": 0.32309,
+    "activePageLines": [
+      22,
+      25,
+      27,
+      32
+    ],
+    "activeCorridorIndexes": [
+      4,
+      7,
+      9,
+      14
+    ],
+    "activeLineGaps": [
+      3,
+      2,
+      5
+    ],
+    "activeCorridorGaps": [
+      3,
+      2,
+      5
+    ]
+  },
+  "activeEnvelope": {
+    "id": "active_target_envelope",
+    "box": [
+      428,
+      2177,
+      1801,
+      2982
+    ],
+    "linePitchOffsetRangeFromActiveTop": [
+      0.0,
+      10.92
+    ],
+    "wordCount": 89,
+    "textPreview": "He's taunting them, telling them he's ByiiREeraipy\" I tweeted President Nayib Bukele when he announced he was going to tap his nation's volcanoes to mine eis in bitcoin — that he should sell billions worth of future bitcoin earnings collateralized to pay off t",
+    "rowGroups": [
+      {
+        "rowIndex": 1,
+        "wordCount": 7,
+        "yMedian": 2191.04,
+        "xMin": 485.44,
+        "xMax": 1743.68,
+        "text": "He's taunting them, telling them he's ByiiREeraipy\"",
+        "strictInstructionTerms": [],
+        "contextTerms": []
+      },
+      {
+        "rowIndex": 2,
+        "wordCount": 8,
+        "yMedian": 2265.93,
+        "xMin": 485.44,
+        "xMax": 1683.38,
+        "text": "I tweeted President Nayib Bukele when he announced",
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "bukele"
+        ]
+      },
+      {
+        "rowIndex": 3,
+        "wordCount": 10,
+        "yMedian": 2340.82,
+        "xMin": 486.45,
+        "xMax": 1579.86,
+        "text": "he was going to tap his nation's volcanoes to mine",
+        "strictInstructionTerms": [],
+        "contextTerms": []
+      },
+      {
+        "rowIndex": 4,
+        "wordCount": 8,
+        "yMedian": 2413.48,
+        "xMin": 561.83,
+        "xMax": 1439.33,
+        "text": "eis in bitcoin — that he should sell",
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "bitcoin",
+          "sell"
+        ]
+      },
+      {
+        "rowIndex": 5,
+        "wordCount": 6,
+        "yMedian": 2487.2,
+        "xMin": 484.44,
+        "xMax": 1398.23,
+        "text": "billions worth of future bitcoin earnings",
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "billions",
+          "bitcoin"
+        ]
+      },
+      {
+        "rowIndex": 6,
+        "wordCount": 6,
+        "yMedian": 2557.64,
+        "xMin": 485.44,
+        "xMax": 1607.19,
+        "text": "collateralized to pay off the IMF",
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "imf"
+        ]
+      },
+      {
+        "rowIndex": 7,
+        "wordCount": 10,
+        "yMedian": 2631.37,
+        "xMin": 485.44,
+        "xMax": 1542.06,
+        "text": "loan and get rid of those leeches. I tagged Mike",
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "loan"
+        ]
+      },
+      {
+        "rowIndex": 8,
+        "wordCount": 8,
+        "yMedian": 2706.26,
+        "xMin": 486.45,
+        "xMax": 1531.3,
+        "text": "Novogratz in the tweet, figuring he could sella",
+        "strictInstructionTerms": [],
+        "contextTerms": []
+      },
+      {
+        "rowIndex": 9,
+        "wordCount": 11,
+        "yMedian": 2778.92,
+        "xMin": 485.44,
+        "xMax": 1580.73,
+        "text": "bunch to his Wall Street crony pals, but so far he",
+        "strictInstructionTerms": [],
+        "contextTerms": []
+      },
+      {
+        "rowIndex": 10,
+        "wordCount": 10,
+        "yMedian": 2849.36,
+        "xMin": 486.45,
+        "xMax": 1563.72,
+        "text": "hasn't moved on it. I don't really trust that guy",
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "trust"
+        ]
+      },
+      {
+        "rowIndex": 11,
+        "wordCount": 5,
+        "yMedian": 2939.4,
+        "xMin": 487.45,
+        "xMax": 1620.98,
+        "text": "Maybe because he's a siukbeodmensertslveaarty",
+        "strictInstructionTerms": [],
+        "contextTerms": []
+      }
+    ],
+    "highlightHits": [
+      {
+        "id": "p76_orange_4",
+        "kind": "orange",
+        "overlapFraction": 1.0
+      },
+      {
+        "id": "p76_orange_5",
+        "kind": "orange",
+        "overlapFraction": 1.0
+      }
+    ],
+    "activeTargetHits": [
+      {
+        "id": "buying_dip",
+        "label": "O4 buying the dip",
+        "phrase": "buying the dip",
+        "visualState": "Y",
+        "pageLine": 22,
+        "corridorIndex": 4,
+        "box": [
+          1334,
+          2177,
+          1801,
+          2225
+        ],
+        "subjectOverlapFraction": 1.0,
+        "envelopeAreaFraction": 0.020281
+      },
+      {
+        "id": "one_billion",
+        "label": "B4 $1 billion",
+        "phrase": "$1 billion",
+        "visualState": "K",
+        "pageLine": 25,
+        "corridorIndex": 7,
+        "box": [
+          428,
+          2398,
+          691,
+          2445
+        ],
+        "subjectOverlapFraction": 1.0,
+        "envelopeAreaFraction": 0.011184
+      },
+      {
+        "id": "volcano_bonds",
+        "label": "G5 Volcano Bonds",
+        "phrase": "Volcano Bonds",
+        "visualState": "K",
+        "pageLine": 27,
+        "corridorIndex": 9,
+        "box": [
+          795,
+          2544,
+          1196,
+          2592
+        ],
+        "subjectOverlapFraction": 1.0,
+        "envelopeAreaFraction": 0.017415
+      },
+      {
+        "id": "shitcoiner_heart",
+        "label": "O5 shitcoiner at heart",
+        "phrase": "shitcoiner at heart",
+        "visualState": "Y",
+        "pageLine": 32,
+        "corridorIndex": 14,
+        "box": [
+          1040,
+          2932,
+          1661,
+          2982
+        ],
+        "subjectOverlapFraction": 1.0,
+        "envelopeAreaFraction": 0.028093
+      }
+    ],
+    "activeTargetHitCount": 4,
+    "strictInstructionTerms": [],
+    "contextTerms": [
+      "billions",
+      "bitcoin",
+      "bukele",
+      "imf",
+      "loan",
+      "sell",
+      "trust"
+    ]
+  },
+  "controls": {
+    "method": "same-size active envelope translated by integer multiples of the current median line pitch; controls remain in p76 page bounds",
+    "rows": [
+      {
+        "id": "shift_-22_line_pitches",
+        "box": [
+          428,
+          554.94,
+          1801,
+          1359.94
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -22.0,
+          -11.08
+        ],
+        "wordCount": 79,
+        "textPreview": "but George Clinton and James Brown clones. It's nailing the Vatican with ultimatums. It's the sound ripped off live central bankers tied to a Gotta be S way. Forty years of dumb post-1971 RRECECy (and loyears of watching Peter Schiff miss since I started honéy",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 8,
+            "yMedian": 612.98,
+            "xMin": 751.81,
+            "xMax": 1808.83,
+            "text": "but George Clinton and James Brown clones. It's",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 8,
+            "yMedian": 684.58,
+            "xMin": 685.47,
+            "xMax": 1824.98,
+            "text": "nailing the Vatican with ultimatums. It's the sound",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 8,
+            "yMedian": 758.3,
+            "xMin": 890.52,
+            "xMax": 1804.2,
+            "text": "ripped off live central bankers tied to a",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 9,
+            "yMedian": 854.47,
+            "xMin": 739.75,
+            "xMax": 1858.79,
+            "text": "Gotta be S way. Forty years of dumb post-1971",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 8,
+            "yMedian": 921.53,
+            "xMin": 589.98,
+            "xMax": 1801.8,
+            "text": "RRECECy (and loyears of watching Peter Schiff miss",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 9,
+            "yMedian": 999.8,
+            "xMin": 639.23,
+            "xMax": 1783.1,
+            "text": "since I started honéy-badgering him to buy some at",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 4,
+            "yMedian": 1071.22,
+            "xMin": 1092.56,
+            "xMax": 1737.61,
+            "text": "have dulled shitcoiners' and",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 8,
+            "wordCount": 7,
+            "yMedian": 1148.32,
+            "xMin": 571.89,
+            "xMax": 1806.11,
+            "text": "The collective unconscious, controlled now by psychotic",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 9,
+            "wordCount": 9,
+            "yMedian": 1220.99,
+            "xMin": 711.6,
+            "xMax": 1806.07,
+            "text": "cats, plays \"I'riends\" reruns all day in our heads.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 10,
+            "wordCount": 7,
+            "yMedian": 1293.64,
+            "xMin": 531.68,
+            "xMax": 1804.75,
+            "text": "Our imaginations and inventiveness have been euthanized",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 11,
+            "wordCount": 2,
+            "yMedian": 1357.96,
+            "xMin": 1379.02,
+            "xMax": 1807.72,
+            "text": "¥ortunately, bitcoin",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin"
+            ]
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_3",
+            "kind": "orange",
+            "overlapFraction": 0.182449
+          }
+        ],
+        "activeTargetHits": [],
+        "activeTargetHitCount": 0,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "bitcoin"
+        ],
+        "linePitchShift": -22
+      },
+      {
+        "id": "shift_-21_line_pitches",
+        "box": [
+          428,
+          628.67,
+          1801,
+          1433.67
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -21.0,
+          -10.08
+        ],
+        "wordCount": 81,
+        "textPreview": "nailing the Vatican with ultimatums. It's the sound ripped off live central bankers tied to a Gotta be S way. Forty years of dumb post-1971 RRECECy (and loyears of watching Peter Schiff miss since I started honéy-badgering him to buy some at have dulled shitco",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 8,
+            "yMedian": 684.58,
+            "xMin": 685.47,
+            "xMax": 1824.98,
+            "text": "nailing the Vatican with ultimatums. It's the sound",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 8,
+            "yMedian": 758.3,
+            "xMin": 890.52,
+            "xMax": 1804.2,
+            "text": "ripped off live central bankers tied to a",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 9,
+            "yMedian": 854.47,
+            "xMin": 739.75,
+            "xMax": 1858.79,
+            "text": "Gotta be S way. Forty years of dumb post-1971",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 8,
+            "yMedian": 921.53,
+            "xMin": 589.98,
+            "xMax": 1801.8,
+            "text": "RRECECy (and loyears of watching Peter Schiff miss",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 9,
+            "yMedian": 999.8,
+            "xMin": 639.23,
+            "xMax": 1783.1,
+            "text": "since I started honéy-badgering him to buy some at",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 4,
+            "yMedian": 1071.22,
+            "xMin": 1092.56,
+            "xMax": 1737.61,
+            "text": "have dulled shitcoiners' and",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 7,
+            "yMedian": 1148.32,
+            "xMin": 571.89,
+            "xMax": 1806.11,
+            "text": "The collective unconscious, controlled now by psychotic",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 8,
+            "wordCount": 9,
+            "yMedian": 1220.99,
+            "xMin": 711.6,
+            "xMax": 1806.07,
+            "text": "cats, plays \"I'riends\" reruns all day in our heads.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 9,
+            "wordCount": 7,
+            "yMedian": 1293.64,
+            "xMin": 531.68,
+            "xMax": 1804.75,
+            "text": "Our imaginations and inventiveness have been euthanized",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 10,
+            "wordCount": 2,
+            "yMedian": 1357.96,
+            "xMin": 1379.02,
+            "xMax": 1807.72,
+            "text": "¥ortunately, bitcoin",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin"
+            ]
+          },
+          {
+            "rowIndex": 11,
+            "wordCount": 10,
+            "yMedian": 1440.04,
+            "xMin": 625.16,
+            "xMax": 1806.38,
+            "text": "puts an end to the paper chase Manhattan Bank money",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_3",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [],
+        "activeTargetHitCount": 0,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "bitcoin"
+        ],
+        "linePitchShift": -21
+      },
+      {
+        "id": "shift_-20_line_pitches",
+        "box": [
+          428,
+          702.4,
+          1801,
+          1507.4
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -20.0,
+          -9.08
+        ],
+        "wordCount": 81,
+        "textPreview": "ripped off live central bankers tied to a Gotta be S way. Forty years of dumb post-1971 RRECECy (and loyears of watching Peter Schiff miss since I started honéy-badgering him to buy some at have dulled shitcoiners' and The collective unconscious, controlled no",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 8,
+            "yMedian": 758.3,
+            "xMin": 890.52,
+            "xMax": 1804.2,
+            "text": "ripped off live central bankers tied to a",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 9,
+            "yMedian": 854.47,
+            "xMin": 739.75,
+            "xMax": 1858.79,
+            "text": "Gotta be S way. Forty years of dumb post-1971",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 8,
+            "yMedian": 921.53,
+            "xMin": 589.98,
+            "xMax": 1801.8,
+            "text": "RRECECy (and loyears of watching Peter Schiff miss",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 9,
+            "yMedian": 999.8,
+            "xMin": 639.23,
+            "xMax": 1783.1,
+            "text": "since I started honéy-badgering him to buy some at",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 4,
+            "yMedian": 1071.22,
+            "xMin": 1092.56,
+            "xMax": 1737.61,
+            "text": "have dulled shitcoiners' and",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 7,
+            "yMedian": 1148.32,
+            "xMin": 571.89,
+            "xMax": 1806.11,
+            "text": "The collective unconscious, controlled now by psychotic",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 9,
+            "yMedian": 1220.99,
+            "xMin": 711.6,
+            "xMax": 1806.07,
+            "text": "cats, plays \"I'riends\" reruns all day in our heads.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 8,
+            "wordCount": 7,
+            "yMedian": 1293.64,
+            "xMin": 531.68,
+            "xMax": 1804.75,
+            "text": "Our imaginations and inventiveness have been euthanized",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 9,
+            "wordCount": 2,
+            "yMedian": 1357.96,
+            "xMin": 1379.02,
+            "xMax": 1807.72,
+            "text": "¥ortunately, bitcoin",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin"
+            ]
+          },
+          {
+            "rowIndex": 10,
+            "wordCount": 10,
+            "yMedian": 1440.04,
+            "xMin": 625.16,
+            "xMax": 1806.38,
+            "text": "puts an end to the paper chase Manhattan Bank money",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 11,
+            "wordCount": 8,
+            "yMedian": 1512.7,
+            "xMin": 597.01,
+            "xMax": 1805.41,
+            "text": "AE-hbbelel-nabetomolomomea lcs &2 Stun gun to the genitals.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_3",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [],
+        "activeTargetHitCount": 0,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "bitcoin"
+        ],
+        "linePitchShift": -20
+      },
+      {
+        "id": "shift_-19_line_pitches",
+        "box": [
+          428,
+          776.13,
+          1801,
+          1581.13
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -19.0,
+          -8.08
+        ],
+        "wordCount": 80,
+        "textPreview": "Gotta be S way. Forty years of dumb post-1971 RRECECy (and loyears of watching Peter Schiff miss since I started honéy-badgering him to buy some at have dulled shitcoiners' and The collective unconscious, controlled now by psychotic cats, plays \"I'riends\" reru",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 9,
+            "yMedian": 854.47,
+            "xMin": 739.75,
+            "xMax": 1858.79,
+            "text": "Gotta be S way. Forty years of dumb post-1971",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 8,
+            "yMedian": 921.53,
+            "xMin": 589.98,
+            "xMax": 1801.8,
+            "text": "RRECECy (and loyears of watching Peter Schiff miss",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 9,
+            "yMedian": 999.8,
+            "xMin": 639.23,
+            "xMax": 1783.1,
+            "text": "since I started honéy-badgering him to buy some at",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 4,
+            "yMedian": 1071.22,
+            "xMin": 1092.56,
+            "xMax": 1737.61,
+            "text": "have dulled shitcoiners' and",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 7,
+            "yMedian": 1148.32,
+            "xMin": 571.89,
+            "xMax": 1806.11,
+            "text": "The collective unconscious, controlled now by psychotic",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 9,
+            "yMedian": 1220.99,
+            "xMin": 711.6,
+            "xMax": 1806.07,
+            "text": "cats, plays \"I'riends\" reruns all day in our heads.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 7,
+            "yMedian": 1293.64,
+            "xMin": 531.68,
+            "xMax": 1804.75,
+            "text": "Our imaginations and inventiveness have been euthanized",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 8,
+            "wordCount": 2,
+            "yMedian": 1357.96,
+            "xMin": 1379.02,
+            "xMax": 1807.72,
+            "text": "¥ortunately, bitcoin",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin"
+            ]
+          },
+          {
+            "rowIndex": 9,
+            "wordCount": 10,
+            "yMedian": 1440.04,
+            "xMin": 625.16,
+            "xMax": 1806.38,
+            "text": "puts an end to the paper chase Manhattan Bank money",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 10,
+            "wordCount": 8,
+            "yMedian": 1512.7,
+            "xMin": 597.01,
+            "xMax": 1805.41,
+            "text": "AE-hbbelel-nabetomolomomea lcs &2 Stun gun to the genitals.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 11,
+            "wordCount": 7,
+            "yMedian": 1585.27,
+            "xMin": 768.9,
+            "xMax": 1808.37,
+            "text": "A monetary defibrillator to the treasure chest.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_3",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [],
+        "activeTargetHitCount": 0,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "bitcoin"
+        ],
+        "linePitchShift": -19
+      },
+      {
+        "id": "shift_-18_line_pitches",
+        "box": [
+          428,
+          849.86,
+          1801,
+          1654.86
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -18.0,
+          -7.08
+        ],
+        "wordCount": 80,
+        "textPreview": "Gotta be S way. Forty years of dumb post-1971 RRECECy (and loyears of watching Peter Schiff miss since I started honéy-badgering him to buy some at have dulled shitcoiners' and The collective unconscious, controlled now by psychotic cats, plays \"I'riends\" reru",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 9,
+            "yMedian": 854.47,
+            "xMin": 739.75,
+            "xMax": 1858.79,
+            "text": "Gotta be S way. Forty years of dumb post-1971",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 8,
+            "yMedian": 921.53,
+            "xMin": 589.98,
+            "xMax": 1801.8,
+            "text": "RRECECy (and loyears of watching Peter Schiff miss",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 9,
+            "yMedian": 999.8,
+            "xMin": 639.23,
+            "xMax": 1783.1,
+            "text": "since I started honéy-badgering him to buy some at",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 4,
+            "yMedian": 1071.22,
+            "xMin": 1092.56,
+            "xMax": 1737.61,
+            "text": "have dulled shitcoiners' and",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 7,
+            "yMedian": 1148.32,
+            "xMin": 571.89,
+            "xMax": 1806.11,
+            "text": "The collective unconscious, controlled now by psychotic",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 9,
+            "yMedian": 1220.99,
+            "xMin": 711.6,
+            "xMax": 1806.07,
+            "text": "cats, plays \"I'riends\" reruns all day in our heads.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 7,
+            "yMedian": 1293.64,
+            "xMin": 531.68,
+            "xMax": 1804.75,
+            "text": "Our imaginations and inventiveness have been euthanized",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 8,
+            "wordCount": 2,
+            "yMedian": 1357.96,
+            "xMin": 1379.02,
+            "xMax": 1807.72,
+            "text": "¥ortunately, bitcoin",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin"
+            ]
+          },
+          {
+            "rowIndex": 9,
+            "wordCount": 10,
+            "yMedian": 1440.04,
+            "xMin": 625.16,
+            "xMax": 1806.38,
+            "text": "puts an end to the paper chase Manhattan Bank money",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 10,
+            "wordCount": 8,
+            "yMedian": 1512.7,
+            "xMin": 597.01,
+            "xMax": 1805.41,
+            "text": "AE-hbbelel-nabetomolomomea lcs &2 Stun gun to the genitals.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 11,
+            "wordCount": 7,
+            "yMedian": 1585.27,
+            "xMin": 768.9,
+            "xMax": 1808.37,
+            "text": "A monetary defibrillator to the treasure chest.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_3",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [],
+        "activeTargetHitCount": 0,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "bitcoin"
+        ],
+        "linePitchShift": -18
+      },
+      {
+        "id": "shift_-17_line_pitches",
+        "box": [
+          428,
+          923.59,
+          1801,
+          1728.59
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -17.0,
+          -6.08
+        ],
+        "wordCount": 71,
+        "textPreview": "RRECECy (and loyears of watching Peter Schiff miss since I started honéy-badgering him to buy some at have dulled shitcoiners' and The collective unconscious, controlled now by psychotic cats, plays \"I'riends\" reruns all day in our heads. Our imaginations and ",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 8,
+            "yMedian": 921.53,
+            "xMin": 589.98,
+            "xMax": 1801.8,
+            "text": "RRECECy (and loyears of watching Peter Schiff miss",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 9,
+            "yMedian": 999.8,
+            "xMin": 639.23,
+            "xMax": 1783.1,
+            "text": "since I started honéy-badgering him to buy some at",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 4,
+            "yMedian": 1071.22,
+            "xMin": 1092.56,
+            "xMax": 1737.61,
+            "text": "have dulled shitcoiners' and",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 7,
+            "yMedian": 1148.32,
+            "xMin": 571.89,
+            "xMax": 1806.11,
+            "text": "The collective unconscious, controlled now by psychotic",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 9,
+            "yMedian": 1220.99,
+            "xMin": 711.6,
+            "xMax": 1806.07,
+            "text": "cats, plays \"I'riends\" reruns all day in our heads.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 7,
+            "yMedian": 1293.64,
+            "xMin": 531.68,
+            "xMax": 1804.75,
+            "text": "Our imaginations and inventiveness have been euthanized",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 2,
+            "yMedian": 1357.96,
+            "xMin": 1379.02,
+            "xMax": 1807.72,
+            "text": "¥ortunately, bitcoin",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin"
+            ]
+          },
+          {
+            "rowIndex": 8,
+            "wordCount": 10,
+            "yMedian": 1440.04,
+            "xMin": 625.16,
+            "xMax": 1806.38,
+            "text": "puts an end to the paper chase Manhattan Bank money",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 9,
+            "wordCount": 8,
+            "yMedian": 1512.7,
+            "xMin": 597.01,
+            "xMax": 1805.41,
+            "text": "AE-hbbelel-nabetomolomomea lcs &2 Stun gun to the genitals.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 10,
+            "wordCount": 7,
+            "yMedian": 1585.27,
+            "xMin": 768.9,
+            "xMax": 1808.37,
+            "text": "A monetary defibrillator to the treasure chest.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_3",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [],
+        "activeTargetHitCount": 0,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "bitcoin"
+        ],
+        "linePitchShift": -17
+      },
+      {
+        "id": "shift_-16_line_pitches",
+        "box": [
+          428,
+          997.32,
+          1801,
+          1802.32
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -16.0,
+          -5.08
+        ],
+        "wordCount": 63,
+        "textPreview": "since I started honéy-badgering him to buy some at have dulled shitcoiners' and The collective unconscious, controlled now by psychotic cats, plays \"I'riends\" reruns all day in our heads. Our imaginations and inventiveness have been euthanized ¥ortunately, bit",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 9,
+            "yMedian": 999.8,
+            "xMin": 639.23,
+            "xMax": 1783.1,
+            "text": "since I started honéy-badgering him to buy some at",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 4,
+            "yMedian": 1071.22,
+            "xMin": 1092.56,
+            "xMax": 1737.61,
+            "text": "have dulled shitcoiners' and",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 7,
+            "yMedian": 1148.32,
+            "xMin": 571.89,
+            "xMax": 1806.11,
+            "text": "The collective unconscious, controlled now by psychotic",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 9,
+            "yMedian": 1220.99,
+            "xMin": 711.6,
+            "xMax": 1806.07,
+            "text": "cats, plays \"I'riends\" reruns all day in our heads.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 7,
+            "yMedian": 1293.64,
+            "xMin": 531.68,
+            "xMax": 1804.75,
+            "text": "Our imaginations and inventiveness have been euthanized",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 2,
+            "yMedian": 1357.96,
+            "xMin": 1379.02,
+            "xMax": 1807.72,
+            "text": "¥ortunately, bitcoin",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin"
+            ]
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 10,
+            "yMedian": 1440.04,
+            "xMin": 625.16,
+            "xMax": 1806.38,
+            "text": "puts an end to the paper chase Manhattan Bank money",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 8,
+            "wordCount": 8,
+            "yMedian": 1512.7,
+            "xMin": 597.01,
+            "xMax": 1805.41,
+            "text": "AE-hbbelel-nabetomolomomea lcs &2 Stun gun to the genitals.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 9,
+            "wordCount": 7,
+            "yMedian": 1585.27,
+            "xMin": 768.9,
+            "xMax": 1808.37,
+            "text": "A monetary defibrillator to the treasure chest.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_3",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [],
+        "activeTargetHitCount": 0,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "bitcoin"
+        ],
+        "linePitchShift": -16
+      },
+      {
+        "id": "shift_-15_line_pitches",
+        "box": [
+          428,
+          1071.05,
+          1801,
+          1876.05
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -15.0,
+          -4.08
+        ],
+        "wordCount": 54,
+        "textPreview": "have dulled shitcoiners' and The collective unconscious, controlled now by psychotic cats, plays \"I'riends\" reruns all day in our heads. Our imaginations and inventiveness have been euthanized ¥ortunately, bitcoin puts an end to the paper chase Manhattan Bank ",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 4,
+            "yMedian": 1071.22,
+            "xMin": 1092.56,
+            "xMax": 1737.61,
+            "text": "have dulled shitcoiners' and",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 7,
+            "yMedian": 1148.32,
+            "xMin": 571.89,
+            "xMax": 1806.11,
+            "text": "The collective unconscious, controlled now by psychotic",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 9,
+            "yMedian": 1220.99,
+            "xMin": 711.6,
+            "xMax": 1806.07,
+            "text": "cats, plays \"I'riends\" reruns all day in our heads.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 7,
+            "yMedian": 1293.64,
+            "xMin": 531.68,
+            "xMax": 1804.75,
+            "text": "Our imaginations and inventiveness have been euthanized",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 2,
+            "yMedian": 1357.96,
+            "xMin": 1379.02,
+            "xMax": 1807.72,
+            "text": "¥ortunately, bitcoin",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin"
+            ]
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 10,
+            "yMedian": 1440.04,
+            "xMin": 625.16,
+            "xMax": 1806.38,
+            "text": "puts an end to the paper chase Manhattan Bank money",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 8,
+            "yMedian": 1512.7,
+            "xMin": 597.01,
+            "xMax": 1805.41,
+            "text": "AE-hbbelel-nabetomolomomea lcs &2 Stun gun to the genitals.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 8,
+            "wordCount": 7,
+            "yMedian": 1585.27,
+            "xMin": 768.9,
+            "xMax": 1808.37,
+            "text": "A monetary defibrillator to the treasure chest.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_3",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [],
+        "activeTargetHitCount": 0,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "bitcoin"
+        ],
+        "linePitchShift": -15
+      },
+      {
+        "id": "shift_-14_line_pitches",
+        "box": [
+          428,
+          1144.78,
+          1801,
+          1949.78
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -14.0,
+          -3.08
+        ],
+        "wordCount": 50,
+        "textPreview": "The collective unconscious, controlled now by psychotic cats, plays \"I'riends\" reruns all day in our heads. Our imaginations and inventiveness have been euthanized ¥ortunately, bitcoin puts an end to the paper chase Manhattan Bank money AE-hbbelel-nabetomolomo",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 7,
+            "yMedian": 1148.32,
+            "xMin": 571.89,
+            "xMax": 1806.11,
+            "text": "The collective unconscious, controlled now by psychotic",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 9,
+            "yMedian": 1220.99,
+            "xMin": 711.6,
+            "xMax": 1806.07,
+            "text": "cats, plays \"I'riends\" reruns all day in our heads.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 7,
+            "yMedian": 1293.64,
+            "xMin": 531.68,
+            "xMax": 1804.75,
+            "text": "Our imaginations and inventiveness have been euthanized",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 2,
+            "yMedian": 1357.96,
+            "xMin": 1379.02,
+            "xMax": 1807.72,
+            "text": "¥ortunately, bitcoin",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin"
+            ]
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 10,
+            "yMedian": 1440.04,
+            "xMin": 625.16,
+            "xMax": 1806.38,
+            "text": "puts an end to the paper chase Manhattan Bank money",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 8,
+            "yMedian": 1512.7,
+            "xMin": 597.01,
+            "xMax": 1805.41,
+            "text": "AE-hbbelel-nabetomolomomea lcs &2 Stun gun to the genitals.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 7,
+            "yMedian": 1585.27,
+            "xMin": 768.9,
+            "xMax": 1808.37,
+            "text": "A monetary defibrillator to the treasure chest.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_3",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [],
+        "activeTargetHitCount": 0,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "bitcoin"
+        ],
+        "linePitchShift": -14
+      },
+      {
+        "id": "shift_-13_line_pitches",
+        "box": [
+          428,
+          1218.51,
+          1801,
+          2023.51
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -13.0,
+          -2.08
+        ],
+        "wordCount": 46,
+        "textPreview": "cats, plays \"I'riends\" reruns all day in our heads. Our imaginations and inventiveness have been euthanized ¥ortunately, bitcoin puts an end to the paper chase Manhattan Bank money AE-hbbelel-nabetomolomomea lcs &2 Stun gun to the genitals. A monetary defibril",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 9,
+            "yMedian": 1220.99,
+            "xMin": 711.6,
+            "xMax": 1806.07,
+            "text": "cats, plays \"I'riends\" reruns all day in our heads.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 7,
+            "yMedian": 1293.64,
+            "xMin": 531.68,
+            "xMax": 1804.75,
+            "text": "Our imaginations and inventiveness have been euthanized",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 2,
+            "yMedian": 1357.96,
+            "xMin": 1379.02,
+            "xMax": 1807.72,
+            "text": "¥ortunately, bitcoin",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin"
+            ]
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 10,
+            "yMedian": 1440.04,
+            "xMin": 625.16,
+            "xMax": 1806.38,
+            "text": "puts an end to the paper chase Manhattan Bank money",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 8,
+            "yMedian": 1512.7,
+            "xMin": 597.01,
+            "xMax": 1805.41,
+            "text": "AE-hbbelel-nabetomolomomea lcs &2 Stun gun to the genitals.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 7,
+            "yMedian": 1585.27,
+            "xMin": 768.9,
+            "xMax": 1808.37,
+            "text": "A monetary defibrillator to the treasure chest.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 3,
+            "yMedian": 1972.08,
+            "xMin": 486.45,
+            "xMax": 849.06,
+            "text": "Don't believe me?",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_3",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [],
+        "activeTargetHitCount": 0,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "bitcoin"
+        ],
+        "linePitchShift": -13
+      },
+      {
+        "id": "shift_-12_line_pitches",
+        "box": [
+          428,
+          1292.24,
+          1801,
+          2097.24
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -12.0,
+          -1.08
+        ],
+        "wordCount": 45,
+        "textPreview": "Our imaginations and inventiveness have been euthanized ¥ortunately, bitcoin puts an end to the paper chase Manhattan Bank money AE-hbbelel-nabetomolomomea lcs &2 Stun gun to the genitals. A monetary defibrillator to the treasure chest. Don't believe me? Have ",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 7,
+            "yMedian": 1293.64,
+            "xMin": 531.68,
+            "xMax": 1804.75,
+            "text": "Our imaginations and inventiveness have been euthanized",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 2,
+            "yMedian": 1357.96,
+            "xMin": 1379.02,
+            "xMax": 1807.72,
+            "text": "¥ortunately, bitcoin",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin"
+            ]
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 10,
+            "yMedian": 1440.04,
+            "xMin": 625.16,
+            "xMax": 1806.38,
+            "text": "puts an end to the paper chase Manhattan Bank money",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 8,
+            "yMedian": 1512.7,
+            "xMin": 597.01,
+            "xMax": 1805.41,
+            "text": "AE-hbbelel-nabetomolomomea lcs &2 Stun gun to the genitals.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 7,
+            "yMedian": 1585.27,
+            "xMin": 768.9,
+            "xMax": 1808.37,
+            "text": "A monetary defibrillator to the treasure chest.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 3,
+            "yMedian": 1972.08,
+            "xMin": 486.45,
+            "xMax": 849.06,
+            "text": "Don't believe me?",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 8,
+            "yMedian": 2046.88,
+            "xMin": 485.44,
+            "xMax": 1428.95,
+            "text": "Have you seen the president of El Salvador",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_3",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [],
+        "activeTargetHitCount": 0,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "bitcoin"
+        ],
+        "linePitchShift": -12
+      },
+      {
+        "id": "shift_-11_line_pitches",
+        "box": [
+          428,
+          1365.97,
+          1801,
+          2170.97
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -11.0,
+          -0.08
+        ],
+        "wordCount": 46,
+        "textPreview": "¥ortunately, bitcoin puts an end to the paper chase Manhattan Bank money AE-hbbelel-nabetomolomomea lcs &2 Stun gun to the genitals. A monetary defibrillator to the treasure chest. Don't believe me? Have you seen the president of El Salvador trolling the Inter",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 2,
+            "yMedian": 1357.96,
+            "xMin": 1379.02,
+            "xMax": 1807.72,
+            "text": "¥ortunately, bitcoin",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin"
+            ]
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 10,
+            "yMedian": 1440.04,
+            "xMin": 625.16,
+            "xMax": 1806.38,
+            "text": "puts an end to the paper chase Manhattan Bank money",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 8,
+            "yMedian": 1512.7,
+            "xMin": 597.01,
+            "xMax": 1805.41,
+            "text": "AE-hbbelel-nabetomolomomea lcs &2 Stun gun to the genitals.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 7,
+            "yMedian": 1585.27,
+            "xMin": 768.9,
+            "xMax": 1808.37,
+            "text": "A monetary defibrillator to the treasure chest.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 3,
+            "yMedian": 1972.08,
+            "xMin": 486.45,
+            "xMax": 849.06,
+            "text": "Don't believe me?",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 8,
+            "yMedian": 2046.88,
+            "xMin": 485.44,
+            "xMax": 1428.95,
+            "text": "Have you seen the president of El Salvador",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 8,
+            "yMedian": 2122.84,
+            "xMin": 484.44,
+            "xMax": 1776.73,
+            "text": "trolling the International Monetary Fund (IMF) on Twitter?",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "imf"
+            ]
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_3",
+            "kind": "orange",
+            "overlapFraction": 0.69449
+          }
+        ],
+        "activeTargetHits": [],
+        "activeTargetHitCount": 0,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "bitcoin",
+          "imf"
+        ],
+        "linePitchShift": -11
+      },
+      {
+        "id": "shift_-10_line_pitches",
+        "box": [
+          428,
+          1439.7,
+          1801,
+          2244.7
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -10.0,
+          0.92
+        ],
+        "wordCount": 51,
+        "textPreview": "puts an end to the paper chase Manhattan Bank money AE-hbbelel-nabetomolomomea lcs &2 Stun gun to the genitals. A monetary defibrillator to the treasure chest. Don't believe me? Have you seen the president of El Salvador trolling the International Monetary Fun",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 10,
+            "yMedian": 1440.04,
+            "xMin": 625.16,
+            "xMax": 1806.38,
+            "text": "puts an end to the paper chase Manhattan Bank money",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 8,
+            "yMedian": 1512.7,
+            "xMin": 597.01,
+            "xMax": 1805.41,
+            "text": "AE-hbbelel-nabetomolomomea lcs &2 Stun gun to the genitals.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 7,
+            "yMedian": 1585.27,
+            "xMin": 768.9,
+            "xMax": 1808.37,
+            "text": "A monetary defibrillator to the treasure chest.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 3,
+            "yMedian": 1972.08,
+            "xMin": 486.45,
+            "xMax": 849.06,
+            "text": "Don't believe me?",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 8,
+            "yMedian": 2046.88,
+            "xMin": 485.44,
+            "xMax": 1428.95,
+            "text": "Have you seen the president of El Salvador",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 8,
+            "yMedian": 2122.84,
+            "xMin": 484.44,
+            "xMax": 1776.73,
+            "text": "trolling the International Monetary Fund (IMF) on Twitter?",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "imf"
+            ]
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 7,
+            "yMedian": 2191.04,
+            "xMin": 485.44,
+            "xMax": 1743.68,
+            "text": "He's taunting them, telling them he's ByiiREeraipy\"",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_4",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [
+          {
+            "id": "buying_dip",
+            "label": "O4 buying the dip",
+            "phrase": "buying the dip",
+            "visualState": "Y",
+            "pageLine": 22,
+            "corridorIndex": 4,
+            "box": [
+              1334,
+              2177,
+              1801,
+              2225
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.020281
+          }
+        ],
+        "activeTargetHitCount": 1,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "imf"
+        ],
+        "linePitchShift": -10
+      },
+      {
+        "id": "shift_-9_line_pitches",
+        "box": [
+          428,
+          1513.43,
+          1801,
+          2318.43
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -9.0,
+          1.92
+        ],
+        "wordCount": 49,
+        "textPreview": "AE-hbbelel-nabetomolomomea lcs &2 Stun gun to the genitals. A monetary defibrillator to the treasure chest. Don't believe me? Have you seen the president of El Salvador trolling the International Monetary Fund (IMF) on Twitter? He's taunting them, telling them",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 8,
+            "yMedian": 1512.7,
+            "xMin": 597.01,
+            "xMax": 1805.41,
+            "text": "AE-hbbelel-nabetomolomomea lcs &2 Stun gun to the genitals.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 7,
+            "yMedian": 1585.27,
+            "xMin": 768.9,
+            "xMax": 1808.37,
+            "text": "A monetary defibrillator to the treasure chest.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 3,
+            "yMedian": 1972.08,
+            "xMin": 486.45,
+            "xMax": 849.06,
+            "text": "Don't believe me?",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 8,
+            "yMedian": 2046.88,
+            "xMin": 485.44,
+            "xMax": 1428.95,
+            "text": "Have you seen the president of El Salvador",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 8,
+            "yMedian": 2122.84,
+            "xMin": 484.44,
+            "xMax": 1776.73,
+            "text": "trolling the International Monetary Fund (IMF) on Twitter?",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "imf"
+            ]
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 7,
+            "yMedian": 2191.04,
+            "xMin": 485.44,
+            "xMax": 1743.68,
+            "text": "He's taunting them, telling them he's ByiiREeraipy\"",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 8,
+            "yMedian": 2265.93,
+            "xMin": 485.44,
+            "xMax": 1683.38,
+            "text": "I tweeted President Nayib Bukele when he announced",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bukele"
+            ]
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_4",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [
+          {
+            "id": "buying_dip",
+            "label": "O4 buying the dip",
+            "phrase": "buying the dip",
+            "visualState": "Y",
+            "pageLine": 22,
+            "corridorIndex": 4,
+            "box": [
+              1334,
+              2177,
+              1801,
+              2225
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.020281
+          }
+        ],
+        "activeTargetHitCount": 1,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "bukele",
+          "imf"
+        ],
+        "linePitchShift": -9
+      },
+      {
+        "id": "shift_-8_line_pitches",
+        "box": [
+          428,
+          1587.16,
+          1801,
+          2392.16
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -8.0,
+          2.92
+        ],
+        "wordCount": 51,
+        "textPreview": "A monetary defibrillator to the treasure chest. Don't believe me? Have you seen the president of El Salvador trolling the International Monetary Fund (IMF) on Twitter? He's taunting them, telling them he's ByiiREeraipy\" I tweeted President Nayib Bukele when he",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 7,
+            "yMedian": 1585.27,
+            "xMin": 768.9,
+            "xMax": 1808.37,
+            "text": "A monetary defibrillator to the treasure chest.",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 3,
+            "yMedian": 1972.08,
+            "xMin": 486.45,
+            "xMax": 849.06,
+            "text": "Don't believe me?",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 8,
+            "yMedian": 2046.88,
+            "xMin": 485.44,
+            "xMax": 1428.95,
+            "text": "Have you seen the president of El Salvador",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 8,
+            "yMedian": 2122.84,
+            "xMin": 484.44,
+            "xMax": 1776.73,
+            "text": "trolling the International Monetary Fund (IMF) on Twitter?",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "imf"
+            ]
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 7,
+            "yMedian": 2191.04,
+            "xMin": 485.44,
+            "xMax": 1743.68,
+            "text": "He's taunting them, telling them he's ByiiREeraipy\"",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 8,
+            "yMedian": 2265.93,
+            "xMin": 485.44,
+            "xMax": 1683.38,
+            "text": "I tweeted President Nayib Bukele when he announced",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bukele"
+            ]
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 10,
+            "yMedian": 2340.82,
+            "xMin": 486.45,
+            "xMax": 1579.86,
+            "text": "he was going to tap his nation's volcanoes to mine",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_4",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [
+          {
+            "id": "buying_dip",
+            "label": "O4 buying the dip",
+            "phrase": "buying the dip",
+            "visualState": "Y",
+            "pageLine": 22,
+            "corridorIndex": 4,
+            "box": [
+              1334,
+              2177,
+              1801,
+              2225
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.020281
+          }
+        ],
+        "activeTargetHitCount": 1,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "bukele",
+          "imf"
+        ],
+        "linePitchShift": -8
+      },
+      {
+        "id": "shift_-7_line_pitches",
+        "box": [
+          428,
+          1660.89,
+          1801,
+          2465.89
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -7.0,
+          3.92
+        ],
+        "wordCount": 52,
+        "textPreview": "Don't believe me? Have you seen the president of El Salvador trolling the International Monetary Fund (IMF) on Twitter? He's taunting them, telling them he's ByiiREeraipy\" I tweeted President Nayib Bukele when he announced he was going to tap his nation's volc",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 3,
+            "yMedian": 1972.08,
+            "xMin": 486.45,
+            "xMax": 849.06,
+            "text": "Don't believe me?",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 8,
+            "yMedian": 2046.88,
+            "xMin": 485.44,
+            "xMax": 1428.95,
+            "text": "Have you seen the president of El Salvador",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 8,
+            "yMedian": 2122.84,
+            "xMin": 484.44,
+            "xMax": 1776.73,
+            "text": "trolling the International Monetary Fund (IMF) on Twitter?",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "imf"
+            ]
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 7,
+            "yMedian": 2191.04,
+            "xMin": 485.44,
+            "xMax": 1743.68,
+            "text": "He's taunting them, telling them he's ByiiREeraipy\"",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 8,
+            "yMedian": 2265.93,
+            "xMin": 485.44,
+            "xMax": 1683.38,
+            "text": "I tweeted President Nayib Bukele when he announced",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bukele"
+            ]
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 10,
+            "yMedian": 2340.82,
+            "xMin": 486.45,
+            "xMax": 1579.86,
+            "text": "he was going to tap his nation's volcanoes to mine",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 8,
+            "yMedian": 2413.48,
+            "xMin": 561.83,
+            "xMax": 1439.33,
+            "text": "eis in bitcoin — that he should sell",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin",
+              "sell"
+            ]
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_4",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [
+          {
+            "id": "buying_dip",
+            "label": "O4 buying the dip",
+            "phrase": "buying the dip",
+            "visualState": "Y",
+            "pageLine": 22,
+            "corridorIndex": 4,
+            "box": [
+              1334,
+              2177,
+              1801,
+              2225
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.020281
+          },
+          {
+            "id": "one_billion",
+            "label": "B4 $1 billion",
+            "phrase": "$1 billion",
+            "visualState": "K",
+            "pageLine": 25,
+            "corridorIndex": 7,
+            "box": [
+              428,
+              2398,
+              691,
+              2445
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.011184
+          }
+        ],
+        "activeTargetHitCount": 2,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "bitcoin",
+          "bukele",
+          "imf",
+          "sell"
+        ],
+        "linePitchShift": -7
+      },
+      {
+        "id": "shift_-6_line_pitches",
+        "box": [
+          428,
+          1734.62,
+          1801,
+          2539.62
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -6.0,
+          4.92
+        ],
+        "wordCount": 58,
+        "textPreview": "Don't believe me? Have you seen the president of El Salvador trolling the International Monetary Fund (IMF) on Twitter? He's taunting them, telling them he's ByiiREeraipy\" I tweeted President Nayib Bukele when he announced he was going to tap his nation's volc",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 3,
+            "yMedian": 1972.08,
+            "xMin": 486.45,
+            "xMax": 849.06,
+            "text": "Don't believe me?",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 8,
+            "yMedian": 2046.88,
+            "xMin": 485.44,
+            "xMax": 1428.95,
+            "text": "Have you seen the president of El Salvador",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 8,
+            "yMedian": 2122.84,
+            "xMin": 484.44,
+            "xMax": 1776.73,
+            "text": "trolling the International Monetary Fund (IMF) on Twitter?",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "imf"
+            ]
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 7,
+            "yMedian": 2191.04,
+            "xMin": 485.44,
+            "xMax": 1743.68,
+            "text": "He's taunting them, telling them he's ByiiREeraipy\"",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 8,
+            "yMedian": 2265.93,
+            "xMin": 485.44,
+            "xMax": 1683.38,
+            "text": "I tweeted President Nayib Bukele when he announced",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bukele"
+            ]
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 10,
+            "yMedian": 2340.82,
+            "xMin": 486.45,
+            "xMax": 1579.86,
+            "text": "he was going to tap his nation's volcanoes to mine",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 8,
+            "yMedian": 2413.48,
+            "xMin": 561.83,
+            "xMax": 1439.33,
+            "text": "eis in bitcoin — that he should sell",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin",
+              "sell"
+            ]
+          },
+          {
+            "rowIndex": 8,
+            "wordCount": 6,
+            "yMedian": 2487.2,
+            "xMin": 484.44,
+            "xMax": 1398.23,
+            "text": "billions worth of future bitcoin earnings",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "billions",
+              "bitcoin"
+            ]
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_4",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [
+          {
+            "id": "buying_dip",
+            "label": "O4 buying the dip",
+            "phrase": "buying the dip",
+            "visualState": "Y",
+            "pageLine": 22,
+            "corridorIndex": 4,
+            "box": [
+              1334,
+              2177,
+              1801,
+              2225
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.020281
+          },
+          {
+            "id": "one_billion",
+            "label": "B4 $1 billion",
+            "phrase": "$1 billion",
+            "visualState": "K",
+            "pageLine": 25,
+            "corridorIndex": 7,
+            "box": [
+              428,
+              2398,
+              691,
+              2445
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.011184
+          }
+        ],
+        "activeTargetHitCount": 2,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "billions",
+          "bitcoin",
+          "bukele",
+          "imf",
+          "sell"
+        ],
+        "linePitchShift": -6
+      },
+      {
+        "id": "shift_-5_line_pitches",
+        "box": [
+          428,
+          1808.35,
+          1801,
+          2613.35
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -5.0,
+          5.92
+        ],
+        "wordCount": 64,
+        "textPreview": "Don't believe me? Have you seen the president of El Salvador trolling the International Monetary Fund (IMF) on Twitter? He's taunting them, telling them he's ByiiREeraipy\" I tweeted President Nayib Bukele when he announced he was going to tap his nation's volc",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 3,
+            "yMedian": 1972.08,
+            "xMin": 486.45,
+            "xMax": 849.06,
+            "text": "Don't believe me?",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 8,
+            "yMedian": 2046.88,
+            "xMin": 485.44,
+            "xMax": 1428.95,
+            "text": "Have you seen the president of El Salvador",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 8,
+            "yMedian": 2122.84,
+            "xMin": 484.44,
+            "xMax": 1776.73,
+            "text": "trolling the International Monetary Fund (IMF) on Twitter?",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "imf"
+            ]
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 7,
+            "yMedian": 2191.04,
+            "xMin": 485.44,
+            "xMax": 1743.68,
+            "text": "He's taunting them, telling them he's ByiiREeraipy\"",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 8,
+            "yMedian": 2265.93,
+            "xMin": 485.44,
+            "xMax": 1683.38,
+            "text": "I tweeted President Nayib Bukele when he announced",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bukele"
+            ]
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 10,
+            "yMedian": 2340.82,
+            "xMin": 486.45,
+            "xMax": 1579.86,
+            "text": "he was going to tap his nation's volcanoes to mine",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 8,
+            "yMedian": 2413.48,
+            "xMin": 561.83,
+            "xMax": 1439.33,
+            "text": "eis in bitcoin — that he should sell",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin",
+              "sell"
+            ]
+          },
+          {
+            "rowIndex": 8,
+            "wordCount": 6,
+            "yMedian": 2487.2,
+            "xMin": 484.44,
+            "xMax": 1398.23,
+            "text": "billions worth of future bitcoin earnings",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "billions",
+              "bitcoin"
+            ]
+          },
+          {
+            "rowIndex": 9,
+            "wordCount": 6,
+            "yMedian": 2557.64,
+            "xMin": 485.44,
+            "xMax": 1607.19,
+            "text": "collateralized to pay off the IMF",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "imf"
+            ]
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_4",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [
+          {
+            "id": "buying_dip",
+            "label": "O4 buying the dip",
+            "phrase": "buying the dip",
+            "visualState": "Y",
+            "pageLine": 22,
+            "corridorIndex": 4,
+            "box": [
+              1334,
+              2177,
+              1801,
+              2225
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.020281
+          },
+          {
+            "id": "one_billion",
+            "label": "B4 $1 billion",
+            "phrase": "$1 billion",
+            "visualState": "K",
+            "pageLine": 25,
+            "corridorIndex": 7,
+            "box": [
+              428,
+              2398,
+              691,
+              2445
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.011184
+          },
+          {
+            "id": "volcano_bonds",
+            "label": "G5 Volcano Bonds",
+            "phrase": "Volcano Bonds",
+            "visualState": "K",
+            "pageLine": 27,
+            "corridorIndex": 9,
+            "box": [
+              795,
+              2544,
+              1196,
+              2592
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.017415
+          }
+        ],
+        "activeTargetHitCount": 3,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "billions",
+          "bitcoin",
+          "bukele",
+          "imf",
+          "sell"
+        ],
+        "linePitchShift": -5
+      },
+      {
+        "id": "shift_-4_line_pitches",
+        "box": [
+          428,
+          1882.08,
+          1801,
+          2687.08
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -4.0,
+          6.92
+        ],
+        "wordCount": 74,
+        "textPreview": "Don't believe me? Have you seen the president of El Salvador trolling the International Monetary Fund (IMF) on Twitter? He's taunting them, telling them he's ByiiREeraipy\" I tweeted President Nayib Bukele when he announced he was going to tap his nation's volc",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 3,
+            "yMedian": 1972.08,
+            "xMin": 486.45,
+            "xMax": 849.06,
+            "text": "Don't believe me?",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 8,
+            "yMedian": 2046.88,
+            "xMin": 485.44,
+            "xMax": 1428.95,
+            "text": "Have you seen the president of El Salvador",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 8,
+            "yMedian": 2122.84,
+            "xMin": 484.44,
+            "xMax": 1776.73,
+            "text": "trolling the International Monetary Fund (IMF) on Twitter?",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "imf"
+            ]
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 7,
+            "yMedian": 2191.04,
+            "xMin": 485.44,
+            "xMax": 1743.68,
+            "text": "He's taunting them, telling them he's ByiiREeraipy\"",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 8,
+            "yMedian": 2265.93,
+            "xMin": 485.44,
+            "xMax": 1683.38,
+            "text": "I tweeted President Nayib Bukele when he announced",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bukele"
+            ]
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 10,
+            "yMedian": 2340.82,
+            "xMin": 486.45,
+            "xMax": 1579.86,
+            "text": "he was going to tap his nation's volcanoes to mine",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 8,
+            "yMedian": 2413.48,
+            "xMin": 561.83,
+            "xMax": 1439.33,
+            "text": "eis in bitcoin — that he should sell",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin",
+              "sell"
+            ]
+          },
+          {
+            "rowIndex": 8,
+            "wordCount": 6,
+            "yMedian": 2487.2,
+            "xMin": 484.44,
+            "xMax": 1398.23,
+            "text": "billions worth of future bitcoin earnings",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "billions",
+              "bitcoin"
+            ]
+          },
+          {
+            "rowIndex": 9,
+            "wordCount": 6,
+            "yMedian": 2557.64,
+            "xMin": 485.44,
+            "xMax": 1607.19,
+            "text": "collateralized to pay off the IMF",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "imf"
+            ]
+          },
+          {
+            "rowIndex": 10,
+            "wordCount": 10,
+            "yMedian": 2631.37,
+            "xMin": 485.44,
+            "xMax": 1542.06,
+            "text": "loan and get rid of those leeches. I tagged Mike",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "loan"
+            ]
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_4",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [
+          {
+            "id": "buying_dip",
+            "label": "O4 buying the dip",
+            "phrase": "buying the dip",
+            "visualState": "Y",
+            "pageLine": 22,
+            "corridorIndex": 4,
+            "box": [
+              1334,
+              2177,
+              1801,
+              2225
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.020281
+          },
+          {
+            "id": "one_billion",
+            "label": "B4 $1 billion",
+            "phrase": "$1 billion",
+            "visualState": "K",
+            "pageLine": 25,
+            "corridorIndex": 7,
+            "box": [
+              428,
+              2398,
+              691,
+              2445
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.011184
+          },
+          {
+            "id": "volcano_bonds",
+            "label": "G5 Volcano Bonds",
+            "phrase": "Volcano Bonds",
+            "visualState": "K",
+            "pageLine": 27,
+            "corridorIndex": 9,
+            "box": [
+              795,
+              2544,
+              1196,
+              2592
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.017415
+          }
+        ],
+        "activeTargetHitCount": 3,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "billions",
+          "bitcoin",
+          "bukele",
+          "imf",
+          "loan",
+          "sell"
+        ],
+        "linePitchShift": -4
+      },
+      {
+        "id": "shift_-3_line_pitches",
+        "box": [
+          428,
+          1955.81,
+          1801,
+          2760.81
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -3.0,
+          7.92
+        ],
+        "wordCount": 82,
+        "textPreview": "Don't believe me? Have you seen the president of El Salvador trolling the International Monetary Fund (IMF) on Twitter? He's taunting them, telling them he's ByiiREeraipy\" I tweeted President Nayib Bukele when he announced he was going to tap his nation's volc",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 3,
+            "yMedian": 1972.08,
+            "xMin": 486.45,
+            "xMax": 849.06,
+            "text": "Don't believe me?",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 8,
+            "yMedian": 2046.88,
+            "xMin": 485.44,
+            "xMax": 1428.95,
+            "text": "Have you seen the president of El Salvador",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 8,
+            "yMedian": 2122.84,
+            "xMin": 484.44,
+            "xMax": 1776.73,
+            "text": "trolling the International Monetary Fund (IMF) on Twitter?",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "imf"
+            ]
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 7,
+            "yMedian": 2191.04,
+            "xMin": 485.44,
+            "xMax": 1743.68,
+            "text": "He's taunting them, telling them he's ByiiREeraipy\"",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 8,
+            "yMedian": 2265.93,
+            "xMin": 485.44,
+            "xMax": 1683.38,
+            "text": "I tweeted President Nayib Bukele when he announced",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bukele"
+            ]
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 10,
+            "yMedian": 2340.82,
+            "xMin": 486.45,
+            "xMax": 1579.86,
+            "text": "he was going to tap his nation's volcanoes to mine",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 8,
+            "yMedian": 2413.48,
+            "xMin": 561.83,
+            "xMax": 1439.33,
+            "text": "eis in bitcoin — that he should sell",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin",
+              "sell"
+            ]
+          },
+          {
+            "rowIndex": 8,
+            "wordCount": 6,
+            "yMedian": 2487.2,
+            "xMin": 484.44,
+            "xMax": 1398.23,
+            "text": "billions worth of future bitcoin earnings",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "billions",
+              "bitcoin"
+            ]
+          },
+          {
+            "rowIndex": 9,
+            "wordCount": 6,
+            "yMedian": 2557.64,
+            "xMin": 485.44,
+            "xMax": 1607.19,
+            "text": "collateralized to pay off the IMF",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "imf"
+            ]
+          },
+          {
+            "rowIndex": 10,
+            "wordCount": 10,
+            "yMedian": 2631.37,
+            "xMin": 485.44,
+            "xMax": 1542.06,
+            "text": "loan and get rid of those leeches. I tagged Mike",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "loan"
+            ]
+          },
+          {
+            "rowIndex": 11,
+            "wordCount": 8,
+            "yMedian": 2706.26,
+            "xMin": 486.45,
+            "xMax": 1531.3,
+            "text": "Novogratz in the tweet, figuring he could sella",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_4",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [
+          {
+            "id": "buying_dip",
+            "label": "O4 buying the dip",
+            "phrase": "buying the dip",
+            "visualState": "Y",
+            "pageLine": 22,
+            "corridorIndex": 4,
+            "box": [
+              1334,
+              2177,
+              1801,
+              2225
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.020281
+          },
+          {
+            "id": "one_billion",
+            "label": "B4 $1 billion",
+            "phrase": "$1 billion",
+            "visualState": "K",
+            "pageLine": 25,
+            "corridorIndex": 7,
+            "box": [
+              428,
+              2398,
+              691,
+              2445
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.011184
+          },
+          {
+            "id": "volcano_bonds",
+            "label": "G5 Volcano Bonds",
+            "phrase": "Volcano Bonds",
+            "visualState": "K",
+            "pageLine": 27,
+            "corridorIndex": 9,
+            "box": [
+              795,
+              2544,
+              1196,
+              2592
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.017415
+          }
+        ],
+        "activeTargetHitCount": 3,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "billions",
+          "bitcoin",
+          "bukele",
+          "imf",
+          "loan",
+          "sell"
+        ],
+        "linePitchShift": -3
+      },
+      {
+        "id": "shift_-2_line_pitches",
+        "box": [
+          428,
+          2029.54,
+          1801,
+          2834.54
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -2.0,
+          8.92
+        ],
+        "wordCount": 90,
+        "textPreview": "Have you seen the president of El Salvador trolling the International Monetary Fund (IMF) on Twitter? He's taunting them, telling them he's ByiiREeraipy\" I tweeted President Nayib Bukele when he announced he was going to tap his nation's volcanoes to mine eis ",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 8,
+            "yMedian": 2046.88,
+            "xMin": 485.44,
+            "xMax": 1428.95,
+            "text": "Have you seen the president of El Salvador",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 8,
+            "yMedian": 2122.84,
+            "xMin": 484.44,
+            "xMax": 1776.73,
+            "text": "trolling the International Monetary Fund (IMF) on Twitter?",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "imf"
+            ]
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 7,
+            "yMedian": 2191.04,
+            "xMin": 485.44,
+            "xMax": 1743.68,
+            "text": "He's taunting them, telling them he's ByiiREeraipy\"",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 8,
+            "yMedian": 2265.93,
+            "xMin": 485.44,
+            "xMax": 1683.38,
+            "text": "I tweeted President Nayib Bukele when he announced",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bukele"
+            ]
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 10,
+            "yMedian": 2340.82,
+            "xMin": 486.45,
+            "xMax": 1579.86,
+            "text": "he was going to tap his nation's volcanoes to mine",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 8,
+            "yMedian": 2413.48,
+            "xMin": 561.83,
+            "xMax": 1439.33,
+            "text": "eis in bitcoin — that he should sell",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin",
+              "sell"
+            ]
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 6,
+            "yMedian": 2487.2,
+            "xMin": 484.44,
+            "xMax": 1398.23,
+            "text": "billions worth of future bitcoin earnings",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "billions",
+              "bitcoin"
+            ]
+          },
+          {
+            "rowIndex": 8,
+            "wordCount": 6,
+            "yMedian": 2557.64,
+            "xMin": 485.44,
+            "xMax": 1607.19,
+            "text": "collateralized to pay off the IMF",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "imf"
+            ]
+          },
+          {
+            "rowIndex": 9,
+            "wordCount": 10,
+            "yMedian": 2631.37,
+            "xMin": 485.44,
+            "xMax": 1542.06,
+            "text": "loan and get rid of those leeches. I tagged Mike",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "loan"
+            ]
+          },
+          {
+            "rowIndex": 10,
+            "wordCount": 8,
+            "yMedian": 2706.26,
+            "xMin": 486.45,
+            "xMax": 1531.3,
+            "text": "Novogratz in the tweet, figuring he could sella",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 11,
+            "wordCount": 11,
+            "yMedian": 2778.92,
+            "xMin": 485.44,
+            "xMax": 1580.73,
+            "text": "bunch to his Wall Street crony pals, but so far he",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_4",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [
+          {
+            "id": "buying_dip",
+            "label": "O4 buying the dip",
+            "phrase": "buying the dip",
+            "visualState": "Y",
+            "pageLine": 22,
+            "corridorIndex": 4,
+            "box": [
+              1334,
+              2177,
+              1801,
+              2225
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.020281
+          },
+          {
+            "id": "one_billion",
+            "label": "B4 $1 billion",
+            "phrase": "$1 billion",
+            "visualState": "K",
+            "pageLine": 25,
+            "corridorIndex": 7,
+            "box": [
+              428,
+              2398,
+              691,
+              2445
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.011184
+          },
+          {
+            "id": "volcano_bonds",
+            "label": "G5 Volcano Bonds",
+            "phrase": "Volcano Bonds",
+            "visualState": "K",
+            "pageLine": 27,
+            "corridorIndex": 9,
+            "box": [
+              795,
+              2544,
+              1196,
+              2592
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.017415
+          }
+        ],
+        "activeTargetHitCount": 3,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "billions",
+          "bitcoin",
+          "bukele",
+          "imf",
+          "loan",
+          "sell"
+        ],
+        "linePitchShift": -2
+      },
+      {
+        "id": "shift_-1_line_pitches",
+        "box": [
+          428,
+          2103.27,
+          1801,
+          2908.27
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          -1.0,
+          9.92
+        ],
+        "wordCount": 92,
+        "textPreview": "trolling the International Monetary Fund (IMF) on Twitter? He's taunting them, telling them he's ByiiREeraipy\" I tweeted President Nayib Bukele when he announced he was going to tap his nation's volcanoes to mine eis in bitcoin — that he should sell billions w",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 8,
+            "yMedian": 2122.84,
+            "xMin": 484.44,
+            "xMax": 1776.73,
+            "text": "trolling the International Monetary Fund (IMF) on Twitter?",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "imf"
+            ]
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 7,
+            "yMedian": 2191.04,
+            "xMin": 485.44,
+            "xMax": 1743.68,
+            "text": "He's taunting them, telling them he's ByiiREeraipy\"",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 8,
+            "yMedian": 2265.93,
+            "xMin": 485.44,
+            "xMax": 1683.38,
+            "text": "I tweeted President Nayib Bukele when he announced",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bukele"
+            ]
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 10,
+            "yMedian": 2340.82,
+            "xMin": 486.45,
+            "xMax": 1579.86,
+            "text": "he was going to tap his nation's volcanoes to mine",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 8,
+            "yMedian": 2413.48,
+            "xMin": 561.83,
+            "xMax": 1439.33,
+            "text": "eis in bitcoin — that he should sell",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin",
+              "sell"
+            ]
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 6,
+            "yMedian": 2487.2,
+            "xMin": 484.44,
+            "xMax": 1398.23,
+            "text": "billions worth of future bitcoin earnings",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "billions",
+              "bitcoin"
+            ]
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 6,
+            "yMedian": 2557.64,
+            "xMin": 485.44,
+            "xMax": 1607.19,
+            "text": "collateralized to pay off the IMF",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "imf"
+            ]
+          },
+          {
+            "rowIndex": 8,
+            "wordCount": 10,
+            "yMedian": 2631.37,
+            "xMin": 485.44,
+            "xMax": 1542.06,
+            "text": "loan and get rid of those leeches. I tagged Mike",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "loan"
+            ]
+          },
+          {
+            "rowIndex": 9,
+            "wordCount": 8,
+            "yMedian": 2706.26,
+            "xMin": 486.45,
+            "xMax": 1531.3,
+            "text": "Novogratz in the tweet, figuring he could sella",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 10,
+            "wordCount": 11,
+            "yMedian": 2778.92,
+            "xMin": 485.44,
+            "xMax": 1580.73,
+            "text": "bunch to his Wall Street crony pals, but so far he",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 11,
+            "wordCount": 10,
+            "yMedian": 2849.36,
+            "xMin": 486.45,
+            "xMax": 1563.72,
+            "text": "hasn't moved on it. I don't really trust that guy",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "trust"
+            ]
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_4",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [
+          {
+            "id": "buying_dip",
+            "label": "O4 buying the dip",
+            "phrase": "buying the dip",
+            "visualState": "Y",
+            "pageLine": 22,
+            "corridorIndex": 4,
+            "box": [
+              1334,
+              2177,
+              1801,
+              2225
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.020281
+          },
+          {
+            "id": "one_billion",
+            "label": "B4 $1 billion",
+            "phrase": "$1 billion",
+            "visualState": "K",
+            "pageLine": 25,
+            "corridorIndex": 7,
+            "box": [
+              428,
+              2398,
+              691,
+              2445
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.011184
+          },
+          {
+            "id": "volcano_bonds",
+            "label": "G5 Volcano Bonds",
+            "phrase": "Volcano Bonds",
+            "visualState": "K",
+            "pageLine": 27,
+            "corridorIndex": 9,
+            "box": [
+              795,
+              2544,
+              1196,
+              2592
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.017415
+          }
+        ],
+        "activeTargetHitCount": 3,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "billions",
+          "bitcoin",
+          "bukele",
+          "imf",
+          "loan",
+          "sell",
+          "trust"
+        ],
+        "linePitchShift": -1
+      },
+      {
+        "id": "shift_+1_line_pitches",
+        "box": [
+          428,
+          2250.73,
+          1801,
+          3055.73
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          1.0,
+          11.92
+        ],
+        "wordCount": 82,
+        "textPreview": "I tweeted President Nayib Bukele when he announced he was going to tap his nation's volcanoes to mine eis in bitcoin — that he should sell billions worth of future bitcoin earnings collateralized to pay off the IMF loan and get rid of those leeches. I tagged M",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 8,
+            "yMedian": 2265.93,
+            "xMin": 485.44,
+            "xMax": 1683.38,
+            "text": "I tweeted President Nayib Bukele when he announced",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bukele"
+            ]
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 10,
+            "yMedian": 2340.82,
+            "xMin": 486.45,
+            "xMax": 1579.86,
+            "text": "he was going to tap his nation's volcanoes to mine",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 8,
+            "yMedian": 2413.48,
+            "xMin": 561.83,
+            "xMax": 1439.33,
+            "text": "eis in bitcoin — that he should sell",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin",
+              "sell"
+            ]
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 6,
+            "yMedian": 2487.2,
+            "xMin": 484.44,
+            "xMax": 1398.23,
+            "text": "billions worth of future bitcoin earnings",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "billions",
+              "bitcoin"
+            ]
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 6,
+            "yMedian": 2557.64,
+            "xMin": 485.44,
+            "xMax": 1607.19,
+            "text": "collateralized to pay off the IMF",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "imf"
+            ]
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 10,
+            "yMedian": 2631.37,
+            "xMin": 485.44,
+            "xMax": 1542.06,
+            "text": "loan and get rid of those leeches. I tagged Mike",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "loan"
+            ]
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 8,
+            "yMedian": 2706.26,
+            "xMin": 486.45,
+            "xMax": 1531.3,
+            "text": "Novogratz in the tweet, figuring he could sella",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 8,
+            "wordCount": 11,
+            "yMedian": 2778.92,
+            "xMin": 485.44,
+            "xMax": 1580.73,
+            "text": "bunch to his Wall Street crony pals, but so far he",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 9,
+            "wordCount": 10,
+            "yMedian": 2849.36,
+            "xMin": 486.45,
+            "xMax": 1563.72,
+            "text": "hasn't moved on it. I don't really trust that guy",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "trust"
+            ]
+          },
+          {
+            "rowIndex": 10,
+            "wordCount": 5,
+            "yMedian": 2939.4,
+            "xMin": 487.45,
+            "xMax": 1620.98,
+            "text": "Maybe because he's a siukbeodmensertslveaarty",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_5",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [
+          {
+            "id": "one_billion",
+            "label": "B4 $1 billion",
+            "phrase": "$1 billion",
+            "visualState": "K",
+            "pageLine": 25,
+            "corridorIndex": 7,
+            "box": [
+              428,
+              2398,
+              691,
+              2445
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.011184
+          },
+          {
+            "id": "volcano_bonds",
+            "label": "G5 Volcano Bonds",
+            "phrase": "Volcano Bonds",
+            "visualState": "K",
+            "pageLine": 27,
+            "corridorIndex": 9,
+            "box": [
+              795,
+              2544,
+              1196,
+              2592
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.017415
+          },
+          {
+            "id": "shitcoiner_heart",
+            "label": "O5 shitcoiner at heart",
+            "phrase": "shitcoiner at heart",
+            "visualState": "Y",
+            "pageLine": 32,
+            "corridorIndex": 14,
+            "box": [
+              1040,
+              2932,
+              1661,
+              2982
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.028093
+          }
+        ],
+        "activeTargetHitCount": 3,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "billions",
+          "bitcoin",
+          "bukele",
+          "imf",
+          "loan",
+          "sell",
+          "trust"
+        ],
+        "linePitchShift": 1
+      },
+      {
+        "id": "shift_+2_line_pitches",
+        "box": [
+          428,
+          2324.46,
+          1801,
+          3129.46
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          2.0,
+          12.92
+        ],
+        "wordCount": 74,
+        "textPreview": "he was going to tap his nation's volcanoes to mine eis in bitcoin — that he should sell billions worth of future bitcoin earnings collateralized to pay off the IMF loan and get rid of those leeches. I tagged Mike Novogratz in the tweet, figuring he could sella",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 10,
+            "yMedian": 2340.82,
+            "xMin": 486.45,
+            "xMax": 1579.86,
+            "text": "he was going to tap his nation's volcanoes to mine",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 8,
+            "yMedian": 2413.48,
+            "xMin": 561.83,
+            "xMax": 1439.33,
+            "text": "eis in bitcoin — that he should sell",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin",
+              "sell"
+            ]
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 6,
+            "yMedian": 2487.2,
+            "xMin": 484.44,
+            "xMax": 1398.23,
+            "text": "billions worth of future bitcoin earnings",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "billions",
+              "bitcoin"
+            ]
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 6,
+            "yMedian": 2557.64,
+            "xMin": 485.44,
+            "xMax": 1607.19,
+            "text": "collateralized to pay off the IMF",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "imf"
+            ]
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 10,
+            "yMedian": 2631.37,
+            "xMin": 485.44,
+            "xMax": 1542.06,
+            "text": "loan and get rid of those leeches. I tagged Mike",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "loan"
+            ]
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 8,
+            "yMedian": 2706.26,
+            "xMin": 486.45,
+            "xMax": 1531.3,
+            "text": "Novogratz in the tweet, figuring he could sella",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 11,
+            "yMedian": 2778.92,
+            "xMin": 485.44,
+            "xMax": 1580.73,
+            "text": "bunch to his Wall Street crony pals, but so far he",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 8,
+            "wordCount": 10,
+            "yMedian": 2849.36,
+            "xMin": 486.45,
+            "xMax": 1563.72,
+            "text": "hasn't moved on it. I don't really trust that guy",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "trust"
+            ]
+          },
+          {
+            "rowIndex": 9,
+            "wordCount": 5,
+            "yMedian": 2939.4,
+            "xMin": 487.45,
+            "xMax": 1620.98,
+            "text": "Maybe because he's a siukbeodmensertslveaarty",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_5",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [
+          {
+            "id": "one_billion",
+            "label": "B4 $1 billion",
+            "phrase": "$1 billion",
+            "visualState": "K",
+            "pageLine": 25,
+            "corridorIndex": 7,
+            "box": [
+              428,
+              2398,
+              691,
+              2445
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.011184
+          },
+          {
+            "id": "volcano_bonds",
+            "label": "G5 Volcano Bonds",
+            "phrase": "Volcano Bonds",
+            "visualState": "K",
+            "pageLine": 27,
+            "corridorIndex": 9,
+            "box": [
+              795,
+              2544,
+              1196,
+              2592
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.017415
+          },
+          {
+            "id": "shitcoiner_heart",
+            "label": "O5 shitcoiner at heart",
+            "phrase": "shitcoiner at heart",
+            "visualState": "Y",
+            "pageLine": 32,
+            "corridorIndex": 14,
+            "box": [
+              1040,
+              2932,
+              1661,
+              2982
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.028093
+          }
+        ],
+        "activeTargetHitCount": 3,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "billions",
+          "bitcoin",
+          "imf",
+          "loan",
+          "sell",
+          "trust"
+        ],
+        "linePitchShift": 2
+      },
+      {
+        "id": "shift_+3_line_pitches",
+        "box": [
+          428,
+          2398.19,
+          1801,
+          3203.19
+        ],
+        "linePitchOffsetRangeFromActiveTop": [
+          3.0,
+          13.92
+        ],
+        "wordCount": 64,
+        "textPreview": "eis in bitcoin — that he should sell billions worth of future bitcoin earnings collateralized to pay off the IMF loan and get rid of those leeches. I tagged Mike Novogratz in the tweet, figuring he could sella bunch to his Wall Street crony pals, but so far he",
+        "rowGroups": [
+          {
+            "rowIndex": 1,
+            "wordCount": 8,
+            "yMedian": 2413.48,
+            "xMin": 561.83,
+            "xMax": 1439.33,
+            "text": "eis in bitcoin — that he should sell",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "bitcoin",
+              "sell"
+            ]
+          },
+          {
+            "rowIndex": 2,
+            "wordCount": 6,
+            "yMedian": 2487.2,
+            "xMin": 484.44,
+            "xMax": 1398.23,
+            "text": "billions worth of future bitcoin earnings",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "billions",
+              "bitcoin"
+            ]
+          },
+          {
+            "rowIndex": 3,
+            "wordCount": 6,
+            "yMedian": 2557.64,
+            "xMin": 485.44,
+            "xMax": 1607.19,
+            "text": "collateralized to pay off the IMF",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "imf"
+            ]
+          },
+          {
+            "rowIndex": 4,
+            "wordCount": 10,
+            "yMedian": 2631.37,
+            "xMin": 485.44,
+            "xMax": 1542.06,
+            "text": "loan and get rid of those leeches. I tagged Mike",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "loan"
+            ]
+          },
+          {
+            "rowIndex": 5,
+            "wordCount": 8,
+            "yMedian": 2706.26,
+            "xMin": 486.45,
+            "xMax": 1531.3,
+            "text": "Novogratz in the tweet, figuring he could sella",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 6,
+            "wordCount": 11,
+            "yMedian": 2778.92,
+            "xMin": 485.44,
+            "xMax": 1580.73,
+            "text": "bunch to his Wall Street crony pals, but so far he",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          },
+          {
+            "rowIndex": 7,
+            "wordCount": 10,
+            "yMedian": 2849.36,
+            "xMin": 486.45,
+            "xMax": 1563.72,
+            "text": "hasn't moved on it. I don't really trust that guy",
+            "strictInstructionTerms": [],
+            "contextTerms": [
+              "trust"
+            ]
+          },
+          {
+            "rowIndex": 8,
+            "wordCount": 5,
+            "yMedian": 2939.4,
+            "xMin": 487.45,
+            "xMax": 1620.98,
+            "text": "Maybe because he's a siukbeodmensertslveaarty",
+            "strictInstructionTerms": [],
+            "contextTerms": []
+          }
+        ],
+        "highlightHits": [
+          {
+            "id": "p76_orange_5",
+            "kind": "orange",
+            "overlapFraction": 1.0
+          }
+        ],
+        "activeTargetHits": [
+          {
+            "id": "one_billion",
+            "label": "B4 $1 billion",
+            "phrase": "$1 billion",
+            "visualState": "K",
+            "pageLine": 25,
+            "corridorIndex": 7,
+            "box": [
+              428,
+              2398,
+              691,
+              2445
+            ],
+            "subjectOverlapFraction": 0.995957,
+            "envelopeAreaFraction": 0.011139
+          },
+          {
+            "id": "volcano_bonds",
+            "label": "G5 Volcano Bonds",
+            "phrase": "Volcano Bonds",
+            "visualState": "K",
+            "pageLine": 27,
+            "corridorIndex": 9,
+            "box": [
+              795,
+              2544,
+              1196,
+              2592
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.017415
+          },
+          {
+            "id": "shitcoiner_heart",
+            "label": "O5 shitcoiner at heart",
+            "phrase": "shitcoiner at heart",
+            "visualState": "Y",
+            "pageLine": 32,
+            "corridorIndex": 14,
+            "box": [
+              1040,
+              2932,
+              1661,
+              2982
+            ],
+            "subjectOverlapFraction": 1.0,
+            "envelopeAreaFraction": 0.028093
+          }
+        ],
+        "activeTargetHitCount": 3,
+        "strictInstructionTerms": [],
+        "contextTerms": [
+          "billions",
+          "bitcoin",
+          "imf",
+          "loan",
+          "sell",
+          "trust"
+        ],
+        "linePitchShift": 3
+      }
+    ]
+  },
+  "summary": {
+    "activeEnvelopeWordCount": 89,
+    "activeTargetWordCountByOcrOverlap": 3,
+    "activeEnvelopeNonTargetWordCount": 86,
+    "activeTargetCoverage": "4/4",
+    "activeHighlightHitIds": [
+      "p76_orange_4",
+      "p76_orange_5"
+    ],
+    "activeStrictInstructionHitCount": 0,
+    "activeStrictInstructionTerms": [],
+    "activeContextTerms": [
+      "billions",
+      "bitcoin",
+      "bukele",
+      "imf",
+      "loan",
+      "sell",
+      "trust"
+    ],
+    "controlShiftCount": 25,
+    "controlWordCounts": [
+      79,
+      81,
+      81,
+      80,
+      80,
+      71,
+      63,
+      54,
+      50,
+      46,
+      45,
+      46,
+      51,
+      49,
+      51,
+      52,
+      58,
+      64,
+      74,
+      82,
+      90,
+      92,
+      82,
+      74,
+      64
+    ],
+    "controlMedianWordCount": 64,
+    "controlMaxWordCount": 92,
+    "controlComparableWordCount": 12,
+    "controlComparableShifts": [
+      -22,
+      -21,
+      -20,
+      -19,
+      -18,
+      -17,
+      -4,
+      -3,
+      -2,
+      -1,
+      1,
+      2
+    ],
+    "controlStrictInstructionHitCount": 0,
+    "controlStrictInstructionHitShifts": [],
+    "targetPhraseIsolated": false,
+    "selectorUnlocked": false
+  },
+  "decision": {
+    "activeTargetEnvelopeDensityGate": "do-not-promote",
+    "reason": "The minimal O4/B4/G5/O5 envelope covers a broad lower-corridor prose band, not an isolated instruction surface. It contains many non-target OCR words, only ordinary context terms, and no strict unit/order instruction terms; line-pitch translated controls have comparable text density."
+  },
+  "sheet": "analysis_outputs/source_audit/active_target_envelope_density_gate/active_target_envelope_density_gate_sheet.jpg",
+  "nextMove": "Keep the active envelope as source-comparison/validation geometry only. The next useful geometry pass should require new source wording or inspect a different bounded mechanic, not expand this envelope into another selector."
+}

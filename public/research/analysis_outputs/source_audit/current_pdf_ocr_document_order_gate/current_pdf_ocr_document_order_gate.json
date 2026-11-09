@@ -1,0 +1,338 @@
+{
+  "createdAt": "2026-05-24T13:55:35",
+  "scope": "current PDF invisible OCR document-order guardrail around active page-76 target boxes; no extraction/key derivation",
+  "inputs": {
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "summary": {
+    "pdfCount": 3,
+    "allFourBoxPopulatedPdfCount": 0,
+    "allFourComponentPresentPdfCount": 2,
+    "componentOrderMatchesActiveOrderPdfCount": 0,
+    "strictNearActiveBoxCount": 0,
+    "hiddenOcrOrderCandidateCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "fingerprint": "pdfs=3|allFourBoxes=0|allFourComponents=2|activeOrder=0|strictNear=0|hiddenCandidate=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "records": [
+    {
+      "pdf": "magazine.pdf",
+      "wordCount": 245,
+      "targetRows": [
+        {
+          "target": "O4",
+          "label": "buying the dip",
+          "boxWordCount": 1,
+          "boxIndexSpan": [
+            167,
+            167
+          ],
+          "boxText": "a^€LI",
+          "componentHits": [],
+          "strictInside": [],
+          "strictNear": []
+        },
+        {
+          "target": "B4",
+          "label": "$1 billion",
+          "boxWordCount": 0,
+          "boxIndexSpan": [],
+          "boxText": "",
+          "componentHits": [],
+          "strictInside": [],
+          "strictNear": []
+        },
+        {
+          "target": "G5",
+          "label": "Volcano Bonds",
+          "boxWordCount": 3,
+          "boxIndexSpan": [
+            203,
+            205
+          ],
+          "boxText": "oe} srlf 'sun}€ulr1ln",
+          "componentHits": [],
+          "strictInside": [],
+          "strictNear": []
+        },
+        {
+          "target": "O5",
+          "label": "shitcoiner at heart",
+          "boxWordCount": 0,
+          "boxIndexSpan": [],
+          "boxText": "",
+          "componentHits": [],
+          "strictInside": [],
+          "strictNear": []
+        }
+      ],
+      "populatedTargetCount": 2,
+      "boxWordRows": 2,
+      "boxWordsText": "a^€LI | - | oe} srlf 'sun}€ulr1ln | -",
+      "componentOccurrenceCount": 0,
+      "componentRows": [],
+      "componentFirstIndices": {
+        "O4": null,
+        "B4": null,
+        "G5": null,
+        "O5": null
+      },
+      "componentFirstOrder": [],
+      "allFourComponentsPresent": false,
+      "componentOrderMatchesActiveOrder": false,
+      "componentIndexSpan": [],
+      "strictDocumentHitCount": 0,
+      "strictNearActiveBoxCount": 0,
+      "targetBoxTextHasInstruction": false,
+      "hiddenOcrOrderCandidate": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "wordCount": 265,
+      "targetRows": [
+        {
+          "target": "O4",
+          "label": "buying the dip",
+          "boxWordCount": 1,
+          "boxIndexSpan": [
+            208,
+            208
+          ],
+          "boxText": "sell",
+          "componentHits": [],
+          "strictInside": [],
+          "strictNear": []
+        },
+        {
+          "target": "B4",
+          "label": "$1 billion",
+          "boxWordCount": 3,
+          "boxIndexSpan": [
+            221,
+            223
+          ],
+          "boxText": "loan and get",
+          "componentHits": [],
+          "strictInside": [],
+          "strictNear": []
+        },
+        {
+          "target": "G5",
+          "label": "Volcano Bonds",
+          "boxWordCount": 2,
+          "boxIndexSpan": [
+            243,
+            244
+          ],
+          "boxText": "Street crony",
+          "componentHits": [],
+          "strictInside": [],
+          "strictNear": []
+        },
+        {
+          "target": "O5",
+          "label": "shitcoiner at heart",
+          "boxWordCount": 0,
+          "boxIndexSpan": [],
+          "boxText": "",
+          "componentHits": [],
+          "strictInside": [],
+          "strictNear": []
+        }
+      ],
+      "populatedTargetCount": 3,
+      "boxWordRows": 3,
+      "boxWordsText": "sell | loan and get | Street crony | -",
+      "componentOccurrenceCount": 5,
+      "componentRows": [
+        {
+          "target": "O5",
+          "term": "heart",
+          "text": "heart",
+          "index": 9,
+          "context": "Get some toxicity. Get some bitcoin. Open your heart to Biteoiny It's the freaking UTXO ghetto up"
+        },
+        {
+          "target": "O4",
+          "term": "buying",
+          "text": "buying",
+          "index": 81,
+          "context": "RRECECy (and loyears of watching Peter Schiff miss buying bitcoin since I started honéy-badgering him to buy"
+        },
+        {
+          "target": "O5",
+          "term": "shitcoiner",
+          "text": "shitcoiners'",
+          "index": 98,
+          "context": "some at $1 back in 2011) have dulled shitcoiners' and nocoiners' minds. The collective unconscious, controlled now"
+        },
+        {
+          "target": "G5",
+          "term": "volcano",
+          "text": "volcanoes",
+          "index": 198,
+          "context": "announced he was going to tap his nation's volcanoes to mine eis in bitcoin — that he"
+        },
+        {
+          "target": "B4",
+          "term": "billion",
+          "text": "billions",
+          "index": 209,
+          "context": "eis in bitcoin — that he should sell billions worth of future bitcoin earnings collateralized to pay"
+        }
+      ],
+      "componentFirstIndices": {
+        "O4": 81,
+        "B4": 209,
+        "G5": 198,
+        "O5": 9
+      },
+      "componentFirstOrder": [
+        "O5",
+        "O4",
+        "G5",
+        "B4"
+      ],
+      "allFourComponentsPresent": true,
+      "componentOrderMatchesActiveOrder": false,
+      "componentIndexSpan": [
+        9,
+        209,
+        200
+      ],
+      "strictDocumentHitCount": 0,
+      "strictNearActiveBoxCount": 0,
+      "targetBoxTextHasInstruction": false,
+      "hiddenOcrOrderCandidate": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "wordCount": 265,
+      "targetRows": [
+        {
+          "target": "O4",
+          "label": "buying the dip",
+          "boxWordCount": 1,
+          "boxIndexSpan": [
+            208,
+            208
+          ],
+          "boxText": "sell",
+          "componentHits": [],
+          "strictInside": [],
+          "strictNear": []
+        },
+        {
+          "target": "B4",
+          "label": "$1 billion",
+          "boxWordCount": 3,
+          "boxIndexSpan": [
+            221,
+            223
+          ],
+          "boxText": "loan and get",
+          "componentHits": [],
+          "strictInside": [],
+          "strictNear": []
+        },
+        {
+          "target": "G5",
+          "label": "Volcano Bonds",
+          "boxWordCount": 2,
+          "boxIndexSpan": [
+            243,
+            244
+          ],
+          "boxText": "Street crony",
+          "componentHits": [],
+          "strictInside": [],
+          "strictNear": []
+        },
+        {
+          "target": "O5",
+          "label": "shitcoiner at heart",
+          "boxWordCount": 0,
+          "boxIndexSpan": [],
+          "boxText": "",
+          "componentHits": [],
+          "strictInside": [],
+          "strictNear": []
+        }
+      ],
+      "populatedTargetCount": 3,
+      "boxWordRows": 3,
+      "boxWordsText": "sell | loan and get | Street crony | -",
+      "componentOccurrenceCount": 5,
+      "componentRows": [
+        {
+          "target": "O5",
+          "term": "heart",
+          "text": "heart",
+          "index": 9,
+          "context": "Get some toxicity. Get some bitcoin. Open your heart to Biteoiny It's the freaking UTXO ghetto up"
+        },
+        {
+          "target": "O4",
+          "term": "buying",
+          "text": "buying",
+          "index": 81,
+          "context": "RRECECy (and loyears of watching Peter Schiff miss buying bitcoin since I started honéy-badgering him to buy"
+        },
+        {
+          "target": "O5",
+          "term": "shitcoiner",
+          "text": "shitcoiners'",
+          "index": 98,
+          "context": "some at $1 back in 2011) have dulled shitcoiners' and nocoiners' minds. The collective unconscious, controlled now"
+        },
+        {
+          "target": "G5",
+          "term": "volcano",
+          "text": "volcanoes",
+          "index": 198,
+          "context": "announced he was going to tap his nation's volcanoes to mine eis in bitcoin — that he"
+        },
+        {
+          "target": "B4",
+          "term": "billion",
+          "text": "billions",
+          "index": 209,
+          "context": "eis in bitcoin — that he should sell billions worth of future bitcoin earnings collateralized to pay"
+        }
+      ],
+      "componentFirstIndices": {
+        "O4": 81,
+        "B4": 209,
+        "G5": 198,
+        "O5": 9
+      },
+      "componentFirstOrder": [
+        "O5",
+        "O4",
+        "G5",
+        "B4"
+      ],
+      "allFourComponentsPresent": true,
+      "componentOrderMatchesActiveOrder": false,
+      "componentIndexSpan": [
+        9,
+        209,
+        200
+      ],
+      "strictDocumentHitCount": 0,
+      "strictNearActiveBoxCount": 0,
+      "targetBoxTextHasInstruction": false,
+      "hiddenOcrOrderCandidate": false
+    }
+  ],
+  "decision": {
+    "currentPdfOcrDocumentOrderGate": "no_selector",
+    "reason": "The OCR layer is derivative and does not put all four active boxes, target component terms, active target order, and strict unit/order wording together in any current PDF.",
+    "nextMove": "Treat invisible PDF OCR document order as context only; reopen only with distinct source/original-layout material or raw clue wording that supplies R3 unit/order."
+  },
+  "sheet": "analysis_outputs/source_audit/current_pdf_ocr_document_order_gate/current_pdf_ocr_document_order_gate_sheet.jpg"
+}

@@ -1,0 +1,1112 @@
+{
+  "created": "2026-05-24T05:23:10",
+  "decision": "current_pdf_jpeg_compression_provenance_no_selector",
+  "scope": "current PDF DCT compression structure; no key derivation, candidate generation, broad hashing, seed/WIF/address checks, or brute force",
+  "summary": {
+    "pdfCount": 3,
+    "imageRecordCount": 32,
+    "pageImageRecordCount": 24,
+    "thumbnailRecordCount": 8,
+    "compressionGroupCount": 3,
+    "pageImageCompressionGroupCount": 2,
+    "thumbnailCompressionGroupCount": 1,
+    "page76CompressionSignatureCount": 3,
+    "page76UniqueCompressionSignatureCount": 0,
+    "activeUniqueCompressionSignatureCount": 0,
+    "magazinePageImageByteOrder": [
+      78,
+      79,
+      76,
+      75,
+      73,
+      77,
+      80,
+      74
+    ],
+    "magazineThumbnailByteOrder": [
+      79,
+      75,
+      76,
+      78,
+      73,
+      80,
+      74,
+      77
+    ],
+    "candidateOrderMatchCount": 0,
+    "candidateOrderCheckCount": 6,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9
+  },
+  "groupRows": [
+    {
+      "groupId": "J1",
+      "compressionSignature": "DCTDecode|2040x2805|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=923fad45b89409f0|dht=3332adea16c3317e",
+      "recordCount": 16,
+      "roles": [
+        "page_image"
+      ],
+      "pdfs": [
+        "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "keyser bitcoin .pdf"
+      ],
+      "articlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "page76RecordCount": 2,
+      "rawByteMin": 700966,
+      "rawByteMax": 999752
+    },
+    {
+      "groupId": "J2",
+      "compressionSignature": "DCTDecode|2544x3264|sof=SOF0|sampling=1:2x1:q0;2:1x1:q1;3:1x1:q1|dqt=1249c9d146fa7b71|dht=bd22c11fd034b824",
+      "recordCount": 8,
+      "roles": [
+        "page_image"
+      ],
+      "pdfs": [
+        "magazine.pdf"
+      ],
+      "articlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "page76RecordCount": 1,
+      "rawByteMin": 561468,
+      "rawByteMax": 1347648
+    },
+    {
+      "groupId": "J3",
+      "compressionSignature": "DCTDecode|82x106|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=812fc98121e5ef68|dht=3332adea16c3317e",
+      "recordCount": 8,
+      "roles": [
+        "page_thumbnail"
+      ],
+      "pdfs": [
+        "magazine.pdf"
+      ],
+      "articlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "page76RecordCount": 1,
+      "rawByteMin": 9027,
+      "rawByteMax": 12751
+    }
+  ],
+  "candidateOrderChecks": [
+    {
+      "candidate": "magazine page-image byte-size order vs page order",
+      "expected": "73-74-75-76-77-78-79-80",
+      "observed": "78-79-76-75-73-77-80-74",
+      "match": false
+    },
+    {
+      "candidate": "magazine page-image byte-size order vs reverse page order",
+      "expected": "80-79-78-77-76-75-74-73",
+      "observed": "78-79-76-75-73-77-80-74",
+      "match": false
+    },
+    {
+      "candidate": "magazine thumbnail byte-size order vs page order",
+      "expected": "73-74-75-76-77-78-79-80",
+      "observed": "79-75-76-78-73-80-74-77",
+      "match": false
+    },
+    {
+      "candidate": "magazine thumbnail byte-size order vs reverse page order",
+      "expected": "80-79-78-77-76-75-74-73",
+      "observed": "79-75-76-78-73-80-74-77",
+      "match": false
+    },
+    {
+      "candidate": "active page-image byte-size order vs 76-78-79-80",
+      "expected": "76-78-79-80",
+      "observed": "78-79-76-80",
+      "match": false
+    },
+    {
+      "candidate": "active thumbnail byte-size order vs 76-78-79-80",
+      "expected": "76-78-79-80",
+      "observed": "79-76-78-80",
+      "match": false
+    }
+  ],
+  "pdfRows": [
+    {
+      "pdf": "magazine.pdf",
+      "pageCount": 8,
+      "imageRows": [
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 1,
+          "articlePage": 73,
+          "role": "page_image",
+          "xref": 16,
+          "width": 2544,
+          "height": 3264,
+          "filter": "DCTDecode",
+          "rawByteCount": 860148,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 1,
+          "dhtSegmentCount": 1,
+          "dqtHash16": "1249c9d146fa7b71",
+          "dhtHash16": "bd22c11fd034b824",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2544,
+            "height": 3264,
+            "componentCount": 3,
+            "sampling": "1:2x1:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2544x3264|sof=SOF0|sampling=1:2x1:q0;2:1x1:q1;3:1x1:q1|dqt=1249c9d146fa7b71|dht=bd22c11fd034b824"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 1,
+          "articlePage": 73,
+          "role": "page_thumbnail",
+          "xref": 17,
+          "width": 82,
+          "height": 106,
+          "filter": "DCTDecode",
+          "rawByteCount": 10926,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "812fc98121e5ef68",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 82,
+            "height": 106,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif",
+            "exif"
+          ],
+          "compressionSignature": "DCTDecode|82x106|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=812fc98121e5ef68|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "role": "page_image",
+          "xref": 23,
+          "width": 2544,
+          "height": 3264,
+          "filter": "DCTDecode",
+          "rawByteCount": 1347648,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 1,
+          "dhtSegmentCount": 1,
+          "dqtHash16": "1249c9d146fa7b71",
+          "dhtHash16": "bd22c11fd034b824",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2544,
+            "height": 3264,
+            "componentCount": 3,
+            "sampling": "1:2x1:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2544x3264|sof=SOF0|sampling=1:2x1:q0;2:1x1:q1;3:1x1:q1|dqt=1249c9d146fa7b71|dht=bd22c11fd034b824"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "role": "page_thumbnail",
+          "xref": 24,
+          "width": 82,
+          "height": 106,
+          "filter": "DCTDecode",
+          "rawByteCount": 12678,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "812fc98121e5ef68",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 82,
+            "height": 106,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif",
+            "exif"
+          ],
+          "compressionSignature": "DCTDecode|82x106|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=812fc98121e5ef68|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 3,
+          "articlePage": 75,
+          "role": "page_image",
+          "xref": 30,
+          "width": 2544,
+          "height": 3264,
+          "filter": "DCTDecode",
+          "rawByteCount": 629312,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 1,
+          "dhtSegmentCount": 1,
+          "dqtHash16": "1249c9d146fa7b71",
+          "dhtHash16": "bd22c11fd034b824",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2544,
+            "height": 3264,
+            "componentCount": 3,
+            "sampling": "1:2x1:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2544x3264|sof=SOF0|sampling=1:2x1:q0;2:1x1:q1;3:1x1:q1|dqt=1249c9d146fa7b71|dht=bd22c11fd034b824"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 3,
+          "articlePage": 75,
+          "role": "page_thumbnail",
+          "xref": 31,
+          "width": 82,
+          "height": 106,
+          "filter": "DCTDecode",
+          "rawByteCount": 9524,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "812fc98121e5ef68",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 82,
+            "height": 106,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif",
+            "exif"
+          ],
+          "compressionSignature": "DCTDecode|82x106|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=812fc98121e5ef68|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "role": "page_image",
+          "xref": 37,
+          "width": 2544,
+          "height": 3264,
+          "filter": "DCTDecode",
+          "rawByteCount": 606236,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 1,
+          "dhtSegmentCount": 1,
+          "dqtHash16": "1249c9d146fa7b71",
+          "dhtHash16": "bd22c11fd034b824",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2544,
+            "height": 3264,
+            "componentCount": 3,
+            "sampling": "1:2x1:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2544x3264|sof=SOF0|sampling=1:2x1:q0;2:1x1:q1;3:1x1:q1|dqt=1249c9d146fa7b71|dht=bd22c11fd034b824"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "role": "page_thumbnail",
+          "xref": 38,
+          "width": 82,
+          "height": 106,
+          "filter": "DCTDecode",
+          "rawByteCount": 9867,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "812fc98121e5ef68",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 82,
+            "height": 106,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif",
+            "exif"
+          ],
+          "compressionSignature": "DCTDecode|82x106|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=812fc98121e5ef68|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 5,
+          "articlePage": 77,
+          "role": "page_image",
+          "xref": 44,
+          "width": 2544,
+          "height": 3264,
+          "filter": "DCTDecode",
+          "rawByteCount": 882608,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 1,
+          "dhtSegmentCount": 1,
+          "dqtHash16": "1249c9d146fa7b71",
+          "dhtHash16": "bd22c11fd034b824",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2544,
+            "height": 3264,
+            "componentCount": 3,
+            "sampling": "1:2x1:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2544x3264|sof=SOF0|sampling=1:2x1:q0;2:1x1:q1;3:1x1:q1|dqt=1249c9d146fa7b71|dht=bd22c11fd034b824"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 5,
+          "articlePage": 77,
+          "role": "page_thumbnail",
+          "xref": 45,
+          "width": 82,
+          "height": 106,
+          "filter": "DCTDecode",
+          "rawByteCount": 12751,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "812fc98121e5ef68",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 82,
+            "height": 106,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif",
+            "exif"
+          ],
+          "compressionSignature": "DCTDecode|82x106|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=812fc98121e5ef68|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "role": "page_image",
+          "xref": 51,
+          "width": 2544,
+          "height": 3264,
+          "filter": "DCTDecode",
+          "rawByteCount": 561468,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 1,
+          "dhtSegmentCount": 1,
+          "dqtHash16": "1249c9d146fa7b71",
+          "dhtHash16": "bd22c11fd034b824",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2544,
+            "height": 3264,
+            "componentCount": 3,
+            "sampling": "1:2x1:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2544x3264|sof=SOF0|sampling=1:2x1:q0;2:1x1:q1;3:1x1:q1|dqt=1249c9d146fa7b71|dht=bd22c11fd034b824"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "role": "page_thumbnail",
+          "xref": 52,
+          "width": 82,
+          "height": 106,
+          "filter": "DCTDecode",
+          "rawByteCount": 9885,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "812fc98121e5ef68",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 82,
+            "height": 106,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif",
+            "exif"
+          ],
+          "compressionSignature": "DCTDecode|82x106|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=812fc98121e5ef68|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 7,
+          "articlePage": 79,
+          "role": "page_image",
+          "xref": 58,
+          "width": 2544,
+          "height": 3264,
+          "filter": "DCTDecode",
+          "rawByteCount": 562264,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 1,
+          "dhtSegmentCount": 1,
+          "dqtHash16": "1249c9d146fa7b71",
+          "dhtHash16": "bd22c11fd034b824",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2544,
+            "height": 3264,
+            "componentCount": 3,
+            "sampling": "1:2x1:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2544x3264|sof=SOF0|sampling=1:2x1:q0;2:1x1:q1;3:1x1:q1|dqt=1249c9d146fa7b71|dht=bd22c11fd034b824"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 7,
+          "articlePage": 79,
+          "role": "page_thumbnail",
+          "xref": 59,
+          "width": 82,
+          "height": 106,
+          "filter": "DCTDecode",
+          "rawByteCount": 9027,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "812fc98121e5ef68",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 82,
+            "height": 106,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif",
+            "exif"
+          ],
+          "compressionSignature": "DCTDecode|82x106|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=812fc98121e5ef68|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 8,
+          "articlePage": 80,
+          "role": "page_image",
+          "xref": 65,
+          "width": 2544,
+          "height": 3264,
+          "filter": "DCTDecode",
+          "rawByteCount": 1334040,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 1,
+          "dhtSegmentCount": 1,
+          "dqtHash16": "1249c9d146fa7b71",
+          "dhtHash16": "bd22c11fd034b824",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2544,
+            "height": 3264,
+            "componentCount": 3,
+            "sampling": "1:2x1:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2544x3264|sof=SOF0|sampling=1:2x1:q0;2:1x1:q1;3:1x1:q1|dqt=1249c9d146fa7b71|dht=bd22c11fd034b824"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 8,
+          "articlePage": 80,
+          "role": "page_thumbnail",
+          "xref": 66,
+          "width": 82,
+          "height": 106,
+          "filter": "DCTDecode",
+          "rawByteCount": 12573,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "812fc98121e5ef68",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 82,
+            "height": 106,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif",
+            "exif"
+          ],
+          "compressionSignature": "DCTDecode|82x106|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=812fc98121e5ef68|dht=3332adea16c3317e"
+        }
+      ]
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "pageCount": 8,
+      "imageRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 1,
+          "articlePage": 73,
+          "role": "page_image",
+          "xref": 53,
+          "width": 2040,
+          "height": 2805,
+          "filter": "DCTDecode",
+          "rawByteCount": 700966,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "923fad45b89409f0",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2040,
+            "height": 2805,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2040x2805|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=923fad45b89409f0|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "role": "page_image",
+          "xref": 55,
+          "width": 2040,
+          "height": 2805,
+          "filter": "DCTDecode",
+          "rawByteCount": 999752,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "923fad45b89409f0",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2040,
+            "height": 2805,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2040x2805|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=923fad45b89409f0|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 3,
+          "articlePage": 75,
+          "role": "page_image",
+          "xref": 57,
+          "width": 2040,
+          "height": 2805,
+          "filter": "DCTDecode",
+          "rawByteCount": 755625,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "923fad45b89409f0",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2040,
+            "height": 2805,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2040x2805|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=923fad45b89409f0|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "role": "page_image",
+          "xref": 59,
+          "width": 2040,
+          "height": 2805,
+          "filter": "DCTDecode",
+          "rawByteCount": 765780,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "923fad45b89409f0",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2040,
+            "height": 2805,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2040x2805|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=923fad45b89409f0|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 5,
+          "articlePage": 77,
+          "role": "page_image",
+          "xref": 61,
+          "width": 2040,
+          "height": 2805,
+          "filter": "DCTDecode",
+          "rawByteCount": 889334,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "923fad45b89409f0",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2040,
+            "height": 2805,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2040x2805|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=923fad45b89409f0|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "role": "page_image",
+          "xref": 63,
+          "width": 2040,
+          "height": 2805,
+          "filter": "DCTDecode",
+          "rawByteCount": 769817,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "923fad45b89409f0",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2040,
+            "height": 2805,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2040x2805|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=923fad45b89409f0|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 7,
+          "articlePage": 79,
+          "role": "page_image",
+          "xref": 65,
+          "width": 2040,
+          "height": 2805,
+          "filter": "DCTDecode",
+          "rawByteCount": 752545,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "923fad45b89409f0",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2040,
+            "height": 2805,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2040x2805|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=923fad45b89409f0|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 8,
+          "articlePage": 80,
+          "role": "page_image",
+          "xref": 67,
+          "width": 2040,
+          "height": 2805,
+          "filter": "DCTDecode",
+          "rawByteCount": 833840,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "923fad45b89409f0",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2040,
+            "height": 2805,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2040x2805|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=923fad45b89409f0|dht=3332adea16c3317e"
+        }
+      ]
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "pageCount": 8,
+      "imageRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 1,
+          "articlePage": 73,
+          "role": "page_image",
+          "xref": 53,
+          "width": 2040,
+          "height": 2805,
+          "filter": "DCTDecode",
+          "rawByteCount": 700966,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "923fad45b89409f0",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2040,
+            "height": 2805,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2040x2805|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=923fad45b89409f0|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "role": "page_image",
+          "xref": 55,
+          "width": 2040,
+          "height": 2805,
+          "filter": "DCTDecode",
+          "rawByteCount": 999752,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "923fad45b89409f0",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2040,
+            "height": 2805,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2040x2805|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=923fad45b89409f0|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 3,
+          "articlePage": 75,
+          "role": "page_image",
+          "xref": 57,
+          "width": 2040,
+          "height": 2805,
+          "filter": "DCTDecode",
+          "rawByteCount": 755625,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "923fad45b89409f0",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2040,
+            "height": 2805,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2040x2805|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=923fad45b89409f0|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "role": "page_image",
+          "xref": 59,
+          "width": 2040,
+          "height": 2805,
+          "filter": "DCTDecode",
+          "rawByteCount": 765780,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "923fad45b89409f0",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2040,
+            "height": 2805,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2040x2805|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=923fad45b89409f0|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 5,
+          "articlePage": 77,
+          "role": "page_image",
+          "xref": 61,
+          "width": 2040,
+          "height": 2805,
+          "filter": "DCTDecode",
+          "rawByteCount": 889334,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "923fad45b89409f0",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2040,
+            "height": 2805,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2040x2805|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=923fad45b89409f0|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "role": "page_image",
+          "xref": 63,
+          "width": 2040,
+          "height": 2805,
+          "filter": "DCTDecode",
+          "rawByteCount": 769817,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "923fad45b89409f0",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2040,
+            "height": 2805,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2040x2805|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=923fad45b89409f0|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 7,
+          "articlePage": 79,
+          "role": "page_image",
+          "xref": 65,
+          "width": 2040,
+          "height": 2805,
+          "filter": "DCTDecode",
+          "rawByteCount": 752545,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "923fad45b89409f0",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2040,
+            "height": 2805,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2040x2805|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=923fad45b89409f0|dht=3332adea16c3317e"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 8,
+          "articlePage": 80,
+          "role": "page_image",
+          "xref": 67,
+          "width": 2040,
+          "height": 2805,
+          "filter": "DCTDecode",
+          "rawByteCount": 833840,
+          "isJpeg": true,
+          "parseWarning": "",
+          "dqtSegmentCount": 2,
+          "dhtSegmentCount": 4,
+          "dqtHash16": "923fad45b89409f0",
+          "dhtHash16": "3332adea16c3317e",
+          "sof": {
+            "name": "SOF0",
+            "precision": 8,
+            "width": 2040,
+            "height": 2805,
+            "componentCount": 3,
+            "sampling": "1:2x2:q0;2:1x1:q1;3:1x1:q1"
+          },
+          "appRoles": [
+            "structural_jfif"
+          ],
+          "compressionSignature": "DCTDecode|2040x2805|sof=SOF0|sampling=1:2x2:q0;2:1x1:q1;3:1x1:q1|dqt=923fad45b89409f0|dht=3332adea16c3317e"
+        }
+      ]
+    }
+  ],
+  "fingerprint": "pdfs=3|records=32|groups=3|pageImageGroups=2|thumbGroups=1|p76Sigs=3|p76Unique=0|activeUnique=0|byteOrder=78-79-76-75-73-77-80-74|thumbByteOrder=79-75-76-78-73-80-74-77|sourceR3=0|triggers=0/9|selectors=0"
+}

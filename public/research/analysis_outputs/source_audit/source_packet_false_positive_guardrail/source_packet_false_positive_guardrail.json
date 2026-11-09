@@ -1,0 +1,172 @@
+{
+  "createdAt": "2026-05-21T06:57:19",
+  "scope": "source-packet false-positive guardrail audit; no OCR, extraction, key derivation, hashing, seed/WIF/address checks, BIP39 checks, or broad candidate generation",
+  "inputs": {
+    "handoff": "analysis_outputs/source_audit/source_packet_handoff_integrity_matrix/source_packet_handoff_integrity_matrix.json",
+    "order_trap": "analysis_outputs/source_audit/page76_active_order_orientation_trap/page76_active_order_orientation_trap.json",
+    "yk_sync": "analysis_outputs/source_audit/source_packet_yk_frame_benchmark_sync/source_packet_yk_frame_benchmark_sync.json",
+    "frame_normalized": "analysis_outputs/source_audit/source_packet_frame_normalized_geometry/source_packet_frame_normalized_geometry.json",
+    "color_profile": "analysis_outputs/source_audit/source_packet_color_profile_manifest/source_packet_color_profile_manifest.json",
+    "repaired_residual": "analysis_outputs/source_audit/source_packet_repaired_p78_frame_residual/source_packet_repaired_p78_frame_residual.json",
+    "expansion_leakage": "analysis_outputs/source_audit/source_packet_repaired_frame_expansion_leakage/source_packet_repaired_frame_expansion_leakage.json",
+    "format_witness": "analysis_outputs/source_audit/c9_active_format_witness_reconciliation/c9_active_format_witness_reconciliation.json",
+    "header_glyph": "analysis_outputs/source_audit/c9_header_glyph_slot_gate/c9_header_glyph_slot_gate.json",
+    "mirrored_header": "analysis_outputs/source_audit/c9_mirrored_header_glyph_gate/c9_mirrored_header_glyph_gate.json",
+    "box_ocr": "analysis_outputs/3d_article_map/active_quartet_box_ocr_gate/active_quartet_box_ocr_gate.json"
+  },
+  "guardrailRows": [
+    {
+      "id": "color_or_state_only",
+      "temptingMatch": "OBBO/YKKY color-state match: color palindrome=True, visual palindrome=True",
+      "controlledBy": "full-page Y/K non-active controls=4; OVERDOSE controls=NNNNNNNNN",
+      "rejectReason": "Color/state alone cannot prove orientation or extraction order.",
+      "requiredToReopen": [
+        "line order 22/25/27/32",
+        "corridor order 4/7/9/14",
+        "source-backed unit/order wording"
+      ],
+      "severity": "hard_reject_without_r3"
+    },
+    {
+      "id": "native_unrotated_order",
+      "temptingMatch": "Native raw order 32 27 25 22 or 14 9 7 4",
+      "controlledBy": "readable/upright order 22 25 27 32 / 4 7 9 14",
+      "rejectReason": "A visually matched native source that is not rotated 180 degrees reverses line/corridor order.",
+      "requiredToReopen": [
+        "rotate native source images 180 degrees",
+        "recover readable/upright active order",
+        "reject raw-native reversed order as orientation error"
+      ],
+      "severity": "hard_reject_without_r3"
+    },
+    {
+      "id": "c9_frame_only",
+      "temptingMatch": "C9/Y-K frame contains active targets 4/4",
+      "controlledBy": "C9 is broad, horizontally mirror-invariant, and source-validation only",
+      "rejectReason": "Frame containment is a benchmark, not a selector.",
+      "requiredToReopen": [
+        "source wording that names the frame as a reading boundary",
+        "unit/order wording inside or tied to the frame",
+        "controls must fail under the same rule"
+      ],
+      "severity": "hard_reject_without_r3"
+    },
+    {
+      "id": "overdose_black_over",
+      "temptingMatch": "Active black OVER projections=2",
+      "controlledBy": "p75 control OVER projections=2; mirrored p75 matches active=8/8",
+      "rejectReason": "OVER/REVO/DOSE-style slot matches are controlled by p75 and have no instruction wording.",
+      "requiredToReopen": [
+        "raw/source instruction tying OVERDOSE glyph slots to active boxes",
+        "control pages must not reproduce the same slot stream",
+        "explicit unit/order extraction wording"
+      ],
+      "severity": "hard_reject_without_r3"
+    },
+    {
+      "id": "p78_contact_or_dx_repair",
+      "temptingMatch": "repaired p78 max partial=2/4; max full=0/4",
+      "controlledBy": "B4/O4 need touch expansions 503/173 px",
+      "rejectReason": "dx repair improves residual contact but does not cover the active quartet.",
+      "requiredToReopen": [
+        "source-backed reason for dx repair",
+        "all four active boxes inside without context-band leakage",
+        "unit/order wording"
+      ],
+      "severity": "hard_reject_without_r3"
+    },
+    {
+      "id": "p78_full_cover_leakage",
+      "temptingMatch": "full-cover repair spans 102 words",
+      "controlledBy": "non-target words=92; hard hits=0",
+      "rejectReason": "Forcing coverage takes the whole lower-corridor context band.",
+      "requiredToReopen": [
+        "new source must avoid L22-L32 context-band leakage",
+        "new source must isolate target units",
+        "hard instruction wording must be present"
+      ],
+      "severity": "hard_reject_without_r3"
+    },
+    {
+      "id": "bold_or_annotation_only",
+      "temptingMatch": "format pass=4; line-bold exact=2/4",
+      "controlledBy": "witness conflicts=2; Markdown/notes are witness layers",
+      "rejectReason": "Bold/highlight witnesses validate formatting but do not supply a unit/order selector.",
+      "requiredToReopen": [
+        "DOCM/high-res/crop-pack agreement",
+        "source-backed unit/order wording",
+        "do not rely on Markdown bold or annotated notes alone"
+      ],
+      "severity": "hard_reject_without_r3"
+    },
+    {
+      "id": "active_box_ocr_text",
+      "temptingMatch": "active box exact OCR matches=0/4",
+      "controlledBy": "corrupted/misread boxes=4/4; usable=False",
+      "rejectReason": "3D map OCR inside target boxes is not text authority.",
+      "requiredToReopen": [
+        "use canonical plain text + DOCM text + Markdown transcript",
+        "use 3D OCR only as geometry witness",
+        "do not extract key text from corrupted target-box OCR"
+      ],
+      "severity": "hard_reject_without_r3"
+    },
+    {
+      "id": "loose_alignment",
+      "temptingMatch": "common shift tolerance=4 px",
+      "controlledBy": "alignment first pad failure is already below loose visual matching",
+      "rejectReason": "A future source match that only works outside the current narrow tolerance is a false positive unless explained.",
+      "requiredToReopen": [
+        "explain any shift larger than current tolerance",
+        "preserve line/corridor order and visual state",
+        "pass all R1-R5 source-reopen gates"
+      ],
+      "severity": "hard_reject_without_r3"
+    }
+  ],
+  "summary": {
+    "guardrailCount": 9,
+    "hardRejectWithoutR3Count": 9,
+    "selectorUnlockedCount": 0,
+    "activeVisualStateOrder": "YKKY",
+    "activePageLines": "22 25 27 32",
+    "activeCorridorIndexes": "4 7 9 14",
+    "requiredToReopenUniqueCount": 26,
+    "requiredToReopenUnique": [
+      "DOCM/high-res/crop-pack agreement",
+      "all four active boxes inside without context-band leakage",
+      "control pages must not reproduce the same slot stream",
+      "controls must fail under the same rule",
+      "corridor order 4/7/9/14",
+      "do not extract key text from corrupted target-box OCR",
+      "do not rely on Markdown bold or annotated notes alone",
+      "explain any shift larger than current tolerance",
+      "explicit unit/order extraction wording",
+      "hard instruction wording must be present",
+      "line order 22/25/27/32",
+      "new source must avoid L22-L32 context-band leakage",
+      "new source must isolate target units",
+      "pass all R1-R5 source-reopen gates",
+      "preserve line/corridor order and visual state",
+      "raw/source instruction tying OVERDOSE glyph slots to active boxes",
+      "recover readable/upright active order",
+      "reject raw-native reversed order as orientation error",
+      "rotate native source images 180 degrees",
+      "source wording that names the frame as a reading boundary",
+      "source-backed reason for dx repair",
+      "source-backed unit/order wording",
+      "unit/order wording",
+      "unit/order wording inside or tied to the frame",
+      "use 3D OCR only as geometry witness",
+      "use canonical plain text + DOCM text + Markdown transcript"
+    ],
+    "falsePositiveGuardrailFingerprint": "guardrails=9|hardReject=9|states=YKKY|lines=22-25-27-32|corr=4-7-9-14|selectorUnlocks=0|requiresR3=1",
+    "selectorUnlocked": false
+  },
+  "decision": {
+    "sourcePacketFalsePositiveGuardrail": "reject-visual-only-matches",
+    "reason": "The current stack has several visually tempting matches, but each is already controlled, ambiguous, or context-leaky. Future source comparisons must not pass on color/frame/OVERDOSE/bold/partial-contact signals alone; they need the exact active order plus source-backed R3 unit/order wording."
+  },
+  "sheet": "analysis_outputs/source_audit/source_packet_false_positive_guardrail/source_packet_false_positive_guardrail_sheet.jpg",
+  "nextMove": "Use these guardrails with the handoff integrity matrix when reviewing any new source asset. Do not reopen extraction for visual-only matches."
+}

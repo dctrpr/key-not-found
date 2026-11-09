@@ -1,0 +1,182 @@
+{
+  "createdAt": "2026-05-20T22:00:38",
+  "scope": "physical page topology guardrail for Issue 24 pages 73-80; no key derivation",
+  "pageRows": [
+    {
+      "pdfPage": 1,
+      "internalPage": 73,
+      "role": "opener",
+      "side": "recto/right/odd",
+      "image": "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue24/page_01.jpg"
+    },
+    {
+      "pdfPage": 2,
+      "internalPage": 74,
+      "role": "opener",
+      "side": "verso/left/even",
+      "image": "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue24/page_02.jpg"
+    },
+    {
+      "pdfPage": 3,
+      "internalPage": 75,
+      "role": "article",
+      "side": "recto/right/odd",
+      "image": "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue24/page_03.jpg"
+    },
+    {
+      "pdfPage": 4,
+      "internalPage": 76,
+      "role": "article",
+      "side": "verso/left/even",
+      "image": "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue24/page_04.jpg"
+    },
+    {
+      "pdfPage": 5,
+      "internalPage": 77,
+      "role": "article",
+      "side": "recto/right/odd",
+      "image": "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue24/page_05.jpg"
+    },
+    {
+      "pdfPage": 6,
+      "internalPage": 78,
+      "role": "article",
+      "side": "verso/left/even",
+      "image": "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue24/page_06.jpg"
+    },
+    {
+      "pdfPage": 7,
+      "internalPage": 79,
+      "role": "article",
+      "side": "recto/right/odd",
+      "image": "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue24/page_07.jpg"
+    },
+    {
+      "pdfPage": 8,
+      "internalPage": 80,
+      "role": "article",
+      "side": "verso/left/even",
+      "image": "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue24/page_08.jpg"
+    }
+  ],
+  "physicalLeaves": [
+    {
+      "name": "opener leaf",
+      "internalPages": [
+        73,
+        74
+      ],
+      "pdfPages": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "article leaf 1",
+      "internalPages": [
+        75,
+        76
+      ],
+      "pdfPages": [
+        3,
+        4
+      ]
+    },
+    {
+      "name": "article leaf 2",
+      "internalPages": [
+        77,
+        78
+      ],
+      "pdfPages": [
+        5,
+        6
+      ]
+    },
+    {
+      "name": "article leaf 3",
+      "internalPages": [
+        79,
+        80
+      ],
+      "pdfPages": [
+        7,
+        8
+      ]
+    }
+  ],
+  "facingSpreads": [
+    {
+      "name": "entry spread",
+      "internalPages": [
+        74,
+        75
+      ],
+      "pdfPages": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "article spread 1",
+      "internalPages": [
+        76,
+        77
+      ],
+      "pdfPages": [
+        4,
+        5
+      ]
+    },
+    {
+      "name": "article spread 2",
+      "internalPages": [
+        78,
+        79
+      ],
+      "pdfPages": [
+        6,
+        7
+      ]
+    }
+  ],
+  "testedSignalPairs": [
+    {
+      "pair": "78 -> 76",
+      "topology": "not same leaf and not facing spread",
+      "meaning": "visual/registration signal only under current scan, not literal magazine leaf physics"
+    },
+    {
+      "pair": "79 -> 76",
+      "topology": "not same leaf and not facing spread",
+      "meaning": "visual/registration signal only under current scan, not literal magazine leaf physics"
+    },
+    {
+      "pair": "75 <-> 76",
+      "topology": "same physical leaf",
+      "meaning": "valid hold-to-light pair, but prior refined leaf tests did not reproduce the lower p76 corridor"
+    },
+    {
+      "pair": "77 <-> 78",
+      "topology": "same physical leaf",
+      "meaning": "valid hold-to-light pair; supports checking only with new physical/source evidence"
+    },
+    {
+      "pair": "78 <-> 79",
+      "topology": "facing spread",
+      "meaning": "valid facing-spread pair; useful for visual registration, not front/back bleed-through"
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/issue24_physical_page_topology/issue24_physical_page_topology_sheet.jpg",
+  "assessment": [
+    "Normal magazine pagination makes 73/74, 75/76, 77/78, and 79/80 front/back leaf pairs.",
+    "Facing spreads in the available article window are 74/75, 76/77, and 78/79.",
+    "The strongest current p78/p79 -> p76 page-76 signals are therefore not literal same-leaf hold-to-light or facing-spread folds under the current scan.",
+    "This does not invalidate the mirror/highlight system; it says the current strong p76 corridor is a visual/registration clue unless a new physical/original-layout source changes the transform."
+  ],
+  "decision": {
+    "pageTopologyGuardrail": "recorded",
+    "literalLeafPhysicsFor78Or79To76": "closed_current_scan",
+    "nextMove": "Use same-leaf physics only for 75/76, 77/78, and 79/80; treat 78/79->76 signals as registration/orientation evidence until a new physical/source transform appears."
+  }
+}

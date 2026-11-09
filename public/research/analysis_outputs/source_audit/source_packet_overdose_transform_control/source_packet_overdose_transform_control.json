@@ -1,0 +1,390 @@
+{
+  "createdAt": "2026-05-21T07:51:50",
+  "scope": "bounded OVERDOSE header glyph transform/control audit; no OCR extraction, hashes, WIF, seed phrase, address, or key checks",
+  "inputs": {
+    "source_packet_native_benchmark_bridge": "analysis_outputs/source_audit/source_packet_native_benchmark_bridge/source_packet_native_benchmark_bridge.json",
+    "source_packet_geometric_fingerprint": "analysis_outputs/source_audit/source_packet_geometric_fingerprint/source_packet_geometric_fingerprint.json",
+    "source_packet_frame_normalized_geometry": "analysis_outputs/source_audit/source_packet_frame_normalized_geometry/source_packet_frame_normalized_geometry.json",
+    "c9_header_glyph_slot_gate": "analysis_outputs/source_audit/c9_header_glyph_slot_gate/c9_header_glyph_slot_gate.json",
+    "c9_mirrored_header_glyph_gate": "analysis_outputs/source_audit/c9_mirrored_header_glyph_gate/c9_mirrored_header_glyph_gate.json",
+    "c9_grey_black_over_slot_control": "analysis_outputs/source_audit/c9_grey_black_over_slot_control/c9_grey_black_over_slot_control.json",
+    "c9_over_slot_tolerance_gate": "analysis_outputs/source_audit/c9_over_slot_tolerance_gate/c9_over_slot_tolerance_gate.json",
+    "source_packet_source_review_gate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json"
+  },
+  "glyphs": [
+    {
+      "slotIndex": 0,
+      "letter": "O",
+      "uprightBox": [
+        2150.98,
+        153.05,
+        2168.52,
+        184.24
+      ],
+      "uprightCenter": [
+        2159.75,
+        168.645
+      ],
+      "nativeBox": [
+        375,
+        3080,
+        393,
+        3111
+      ]
+    },
+    {
+      "slotIndex": 1,
+      "letter": "V",
+      "uprightBox": [
+        2168.52,
+        153.05,
+        2186.05,
+        184.24
+      ],
+      "uprightCenter": [
+        2177.285,
+        168.645
+      ],
+      "nativeBox": [
+        358,
+        3080,
+        375,
+        3111
+      ]
+    },
+    {
+      "slotIndex": 2,
+      "letter": "E",
+      "uprightBox": [
+        2186.05,
+        153.05,
+        2203.59,
+        184.24
+      ],
+      "uprightCenter": [
+        2194.82,
+        168.645
+      ],
+      "nativeBox": [
+        340,
+        3080,
+        358,
+        3111
+      ]
+    },
+    {
+      "slotIndex": 3,
+      "letter": "R",
+      "uprightBox": [
+        2203.59,
+        153.05,
+        2221.12,
+        184.24
+      ],
+      "uprightCenter": [
+        2212.355,
+        168.645
+      ],
+      "nativeBox": [
+        323,
+        3080,
+        340,
+        3111
+      ]
+    },
+    {
+      "slotIndex": 4,
+      "letter": "D",
+      "uprightBox": [
+        2221.12,
+        153.05,
+        2238.66,
+        184.24
+      ],
+      "uprightCenter": [
+        2229.89,
+        168.645
+      ],
+      "nativeBox": [
+        305,
+        3080,
+        323,
+        3111
+      ]
+    },
+    {
+      "slotIndex": 5,
+      "letter": "O",
+      "uprightBox": [
+        2238.66,
+        153.05,
+        2256.19,
+        184.24
+      ],
+      "uprightCenter": [
+        2247.425,
+        168.645
+      ],
+      "nativeBox": [
+        288,
+        3080,
+        305,
+        3111
+      ]
+    },
+    {
+      "slotIndex": 6,
+      "letter": "S",
+      "uprightBox": [
+        2256.19,
+        153.05,
+        2273.73,
+        184.24
+      ],
+      "uprightCenter": [
+        2264.96,
+        168.645
+      ],
+      "nativeBox": [
+        270,
+        3080,
+        288,
+        3111
+      ]
+    },
+    {
+      "slotIndex": 7,
+      "letter": "E",
+      "uprightBox": [
+        2273.73,
+        153.05,
+        2291.26,
+        184.24
+      ],
+      "uprightCenter": [
+        2282.495,
+        168.645
+      ],
+      "nativeBox": [
+        253,
+        3080,
+        270,
+        3111
+      ]
+    }
+  ],
+  "projectionRows": [
+    {
+      "check": "actual glyph boxes projected to C9",
+      "active": "max edge delta 0.087628px",
+      "control": "header sequence OVERDOSE",
+      "result": "equivalent to equal-slot geometry; no new transform signal"
+    },
+    {
+      "check": "active center slots, line order",
+      "active": "OVED slots [5, 1, 2, 4]",
+      "control": "no p75 center instruction stream",
+      "result": "not OVER/DOSE and 0 strict instruction hits"
+    },
+    {
+      "check": "active center slots, x order",
+      "active": "VEDO",
+      "control": "fit residual 0.500818 slots",
+      "result": "simple x transform bins centers only; no source unit/order"
+    },
+    {
+      "check": "active black span x order",
+      "active": "OVER",
+      "control": "OVER",
+      "result": "OVER is controlled by p75 in the same lower-frame geometry"
+    },
+    {
+      "check": "active all-span x order",
+      "active": "OVERRDODOS",
+      "control": "duplicate/overlap span bins",
+      "result": "OVER appears only inside a longer non-instruction stream"
+    },
+    {
+      "check": "orange/yellow span x order",
+      "active": "RDODOS",
+      "control": "no strict hits",
+      "result": "orange side does not supply a selector"
+    },
+    {
+      "check": "mirror/reversed header variants",
+      "active": "OVER,DOSE,ESOD,REVO",
+      "control": "8/8 match",
+      "result": "p75 tracks active black stream under every tested variant"
+    },
+    {
+      "check": "bounded slot tolerance",
+      "active": "45/99 OVER",
+      "control": "49/99 OVER",
+      "result": "active fails at high thresholds; control persists at canonical"
+    },
+    {
+      "check": "source-review gate",
+      "active": "0 ready paths",
+      "control": "R3 fails 7",
+      "result": "OVERDOSE layout remains validation evidence only"
+    }
+  ],
+  "mirrorVariantRows": [
+    {
+      "name": "p76_normal_labels_original_geometry",
+      "slotLetters": "OVERDOSE",
+      "activeBlackSpan": "OVER",
+      "p75ControlSpan": "OVER",
+      "activeControlMatch": true,
+      "strictInstructionHitCount": 0
+    },
+    {
+      "name": "p76_normal_labels_mirror_x_geometry",
+      "slotLetters": "OVERDOSE",
+      "activeBlackSpan": "DOSE",
+      "p75ControlSpan": "DOSE",
+      "activeControlMatch": true,
+      "strictInstructionHitCount": 0
+    },
+    {
+      "name": "p76_reverse_labels_original_geometry",
+      "slotLetters": "ESODREVO",
+      "activeBlackSpan": "ESOD",
+      "p75ControlSpan": "ESOD",
+      "activeControlMatch": true,
+      "strictInstructionHitCount": 0
+    },
+    {
+      "name": "p76_reverse_labels_mirror_x_geometry",
+      "slotLetters": "ESODREVO",
+      "activeBlackSpan": "REVO",
+      "p75ControlSpan": "REVO",
+      "activeControlMatch": true,
+      "strictInstructionHitCount": 0
+    },
+    {
+      "name": "p78_normal_labels_original_geometry",
+      "slotLetters": "OVERDOSE",
+      "activeBlackSpan": "OVER",
+      "p75ControlSpan": "OVER",
+      "activeControlMatch": true,
+      "strictInstructionHitCount": 0
+    },
+    {
+      "name": "p78_normal_labels_mirror_x_geometry",
+      "slotLetters": "OVERDOSE",
+      "activeBlackSpan": "DOSE",
+      "p75ControlSpan": "DOSE",
+      "activeControlMatch": true,
+      "strictInstructionHitCount": 0
+    },
+    {
+      "name": "p78_reverse_labels_original_geometry",
+      "slotLetters": "ESODREVO",
+      "activeBlackSpan": "ESOD",
+      "p75ControlSpan": "ESOD",
+      "activeControlMatch": true,
+      "strictInstructionHitCount": 0
+    },
+    {
+      "name": "p78_reverse_labels_mirror_x_geometry",
+      "slotLetters": "ESODREVO",
+      "activeBlackSpan": "REVO",
+      "p75ControlSpan": "REVO",
+      "activeControlMatch": true,
+      "strictInstructionHitCount": 0
+    }
+  ],
+  "summary": {
+    "glyphSequence": "OVERDOSE",
+    "glyphWidthRangePx": [
+      17.53,
+      17.54
+    ],
+    "headerGlyphMaxEdgeDeltaVsEqualSlotPx": 0.087628,
+    "activeCenterLineOrderStream": "OVED",
+    "activeCenterXOrderStream": "VEDO",
+    "activeSpanXOrderStream": "OVERRDODOS",
+    "activeBlackSpanXOrderStream": "OVER",
+    "activeOrangeSpanXOrderStream": "RDODOS",
+    "p75ControlSpan": "OVER",
+    "activeCenterSlotIndexes": [
+      5,
+      1,
+      2,
+      4
+    ],
+    "activeCenterSlotLetters": "OVED",
+    "activeCenterXToSlotFit": {
+      "slope": 0.004067,
+      "intercept": -1.547535,
+      "residuals": [
+        0.173056,
+        0.272242,
+        -0.500818,
+        0.05552
+      ],
+      "maxAbsResidualSlots": 0.500818
+    },
+    "activeBlackOverProjectionCount": 2,
+    "p75ControlOverProjectionCount": 2,
+    "activeStrictInstructionHitCount": 0,
+    "mirrorVariantCount": 8,
+    "mirrorVariantBlackStreams": [
+      "OVER",
+      "DOSE",
+      "ESOD",
+      "REVO"
+    ],
+    "p75MirrorVariantMatchCount": 8,
+    "toleranceActiveOverCount": 45,
+    "toleranceP75OverCount": 49,
+    "toleranceBothOverCount": 37,
+    "activeOverFailsAtThresholds": [
+      150,
+      200
+    ],
+    "sourceReviewExtractionReadyCount": 0,
+    "sourceReviewR3FailCount": 7,
+    "sourceBackedR3BridgeHitCount": 0,
+    "c9NormalizedCenters": [
+      [
+        0.651074,
+        0.028335
+      ],
+      [
+        0.135736,
+        0.288666
+      ],
+      [
+        0.35864,
+        0.461629
+      ],
+      [
+        0.540133,
+        0.920897
+      ]
+    ],
+    "p78FrameFullInsideCount": 0,
+    "readableLineCorridorOrder": {
+      "pageLines": "22 25 27 32",
+      "corridors": "4 7 9 14",
+      "lineGaps": [
+        3,
+        2,
+        5
+      ],
+      "dxSigns": "-++",
+      "dySigns": "+++"
+    },
+    "selectorUnlockedCount": 0,
+    "overdoseTransformControlFingerprint": "glyphDelta=0.087628|center=OVED/VEDO|black=OVER|p75=OVER|mirrors=8/8|tol=45/49|ready=0|sourceR3=0|selectors=0"
+  },
+  "decision": {
+    "sourcePacketOverdoseTransformControl": "controlled_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Measured OVERDOSE header glyph boxes collapse to the already-tested equal-slot C9 mapping. Active center streams are not instructions; the black B4/G5 OVER span is matched by p75 controls across normal, mirrored, reversed, and tolerance variants.",
+    "nextMove": "Keep OVERDOSE geometry as a source-validation guardrail. Reopen only if a distinct source or clue explicitly names OVERDOSE/header slots and supplies a unit/order rule that controls do not satisfy."
+  },
+  "sheet": "analysis_outputs/source_audit/source_packet_overdose_transform_control/source_packet_overdose_transform_control_sheet.jpg"
+}

@@ -1,0 +1,620 @@
+{
+  "createdAt": "2026-05-24T07:14:59",
+  "scope": "Trace only exact PDF-native registration rows that crossed candidate thresholds back to page 75 source words.",
+  "inputs": {
+    "nativeRegistrationGate": "analysis_outputs/source_audit/current_pdf_native_image_registration_gate/current_pdf_native_image_registration_gate.json",
+    "articleMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "decision": "current_pdf_native_registration_candidate_trace_no_instruction_source",
+  "summary": {
+    "candidateTraceRowCount": 4,
+    "activeTraceRowCount": 2,
+    "overdoseSlotTraceRowCount": 2,
+    "totalComponentCount": 34,
+    "totalComponentPixelCount": 196264,
+    "totalSourceOnlyPixelCount": 198756,
+    "sourceWordRowCount": 2,
+    "totalSourceWordHits": 16,
+    "strictInstructionRowCount": 0,
+    "totalStrictInstructionHits": 0,
+    "contextTermRowCount": 2,
+    "totalContextTermHits": 2,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0,
+    "fingerprint": "rows=4|active=2|slots=2|components=34|pixels=196264|sourceOnly=198756|wordRows=2|words=16|strictRows=0|strict=0|contextRows=2|context=2|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "fingerprint": "rows=4|active=2|slots=2|components=34|pixels=196264|sourceOnly=198756|wordRows=2|words=16|strictRows=0|strict=0|contextRows=2|context=2|sourceR3=0|triggers=0/9|selectors=0",
+  "traceRows": [
+    {
+      "kind": "active",
+      "pdf": "keyser bitcoin .pdf",
+      "target": "O4",
+      "label": "O4",
+      "phrase": "buying the dip",
+      "slotIndex": null,
+      "slotLetter": null,
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "nativeBox": [
+        1069.72,
+        1870.86,
+        1444.2,
+        1912.11
+      ],
+      "sourceOnlyCoverage": 0.579953046,
+      "recomputedSourceOnlyCoverage": 0.575699313,
+      "sourceOnlyPixelCount": 8893,
+      "componentCount": 2,
+      "componentPixelCount": 8873,
+      "largestComponentPixelCount": 8845,
+      "componentSourceRefBoxes": [
+        [
+          743.2470588235294,
+          2177.163636363636,
+          1117.364705882353,
+          2219.0545454545454
+        ],
+        [
+          1008.8705882352941,
+          2185.3090909090906,
+          1020.0941176470589,
+          2191.1272727272726
+        ]
+      ],
+      "sourceTraceRefBox": [
+        701.2470588235294,
+        2135.163636363636,
+        1159.364705882353,
+        2261.0545454545454
+      ],
+      "sourceWordHitCount": 8,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "strictInstructionTerms": [],
+      "contextTerms": [
+        "buterin"
+      ],
+      "sourceTextPreview": "in by riding Bitcoins Buterin came up with",
+      "sourceWords": [
+        {
+          "text": "in",
+          "token": "in",
+          "box": [
+            682.01,
+            2122.21,
+            711.57,
+            2162.29
+          ],
+          "index": 177,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "by",
+          "token": "by",
+          "box": [
+            741.47,
+            2122.21,
+            775.06,
+            2162.29
+          ],
+          "index": 178,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "riding",
+          "token": "riding",
+          "box": [
+            806.98,
+            2122.21,
+            928.77,
+            2162.29
+          ],
+          "index": 179,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Bitcoins",
+          "token": "bitcoins",
+          "box": [
+            965.2,
+            2122.21,
+            1129.13,
+            2162.29
+          ],
+          "index": 180,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Buterin",
+          "token": "buterin",
+          "box": [
+            696.12,
+            2186.99,
+            853.08,
+            2235.97
+          ],
+          "index": 189,
+          "strictInstruction": false,
+          "contextTerm": true
+        },
+        {
+          "text": "came",
+          "token": "came",
+          "box": [
+            893.64,
+            2186.99,
+            975.88,
+            2235.97
+          ],
+          "index": 190,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "up",
+          "token": "up",
+          "box": [
+            1011.55,
+            2186.99,
+            1045.15,
+            2235.97
+          ],
+          "index": 191,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "with",
+          "token": "with",
+          "box": [
+            1078.07,
+            2186.99,
+            1155.47,
+            2235.97
+          ],
+          "index": 192,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "kind": "overdose_slot",
+      "pdf": "keyser bitcoin .pdf",
+      "target": "slot0_O",
+      "label": "slot0_O_O",
+      "phrase": null,
+      "slotIndex": 0,
+      "slotLetter": "O",
+      "referenceBox": [
+        294.0,
+        2176.81,
+        538.5697177074414,
+        3023.73
+      ],
+      "nativeBox": [
+        235.75,
+        1870.7,
+        431.87,
+        2598.52
+      ],
+      "sourceOnlyCoverage": 0.634145829,
+      "recomputedSourceOnlyCoverage": 0.633914551,
+      "sourceOnlyPixelCount": 90485,
+      "componentCount": 15,
+      "componentPixelCount": 89259,
+      "largestComponentPixelCount": 88667,
+      "componentSourceRefBoxes": [
+        [
+          2060.141176470588,
+          2177.163636363636,
+          2249.6941176470586,
+          3024.290909090909
+        ],
+        [
+          2088.823529411765,
+          2216.7272727272725,
+          2107.529411764706,
+          2230.690909090909
+        ],
+        [
+          2086.329411764706,
+          2615.854545454545,
+          2098.8,
+          2630.981818181818
+        ],
+        [
+          2091.3176470588237,
+          2344.7272727272725,
+          2103.788235294118,
+          2358.690909090909
+        ],
+        [
+          2086.329411764706,
+          2694.981818181818,
+          2096.3058823529414,
+          2718.254545454545
+        ],
+        [
+          2073.858823529412,
+          2508.7999999999997,
+          2087.576470588235,
+          2523.927272727273
+        ],
+        [
+          2076.3529411764707,
+          2700.7999999999997,
+          2086.329411764706,
+          2713.6
+        ],
+        [
+          2088.823529411765,
+          2551.854545454545,
+          2098.8,
+          2561.163636363636
+        ],
+        [
+          2052.6588235294116,
+          2783.418181818182,
+          2063.8823529411766,
+          2791.5636363636363
+        ],
+        [
+          2057.6470588235293,
+          2269.090909090909,
+          2068.8705882352942,
+          2278.4
+        ],
+        [
+          2067.6235294117646,
+          2250.4727272727273,
+          2080.0941176470587,
+          2256.290909090909
+        ],
+        [
+          2045.1764705882354,
+          2745.018181818182,
+          2060.141176470588,
+          2753.163636363636
+        ],
+        [
+          2092.564705882353,
+          2277.2363636363634,
+          2100.0470588235294,
+          2288.8727272727274
+        ],
+        [
+          2040.1882352941177,
+          2803.2,
+          2050.164705882353,
+          2810.181818181818
+        ],
+        [
+          2061.3882352941177,
+          2933.5272727272727,
+          2070.1176470588234,
+          2940.509090909091
+        ]
+      ],
+      "sourceTraceRefBox": [
+        1998.1882352941177,
+        2135.163636363636,
+        2291.6941176470586,
+        3066.290909090909
+      ],
+      "sourceWordHitCount": 0,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "",
+      "sourceWords": []
+    },
+    {
+      "kind": "active",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "target": "O4",
+      "label": "O4",
+      "phrase": "buying the dip",
+      "slotIndex": null,
+      "slotLetter": null,
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "nativeBox": [
+        1069.72,
+        1870.86,
+        1444.2,
+        1912.11
+      ],
+      "sourceOnlyCoverage": 0.579953046,
+      "recomputedSourceOnlyCoverage": 0.575699313,
+      "sourceOnlyPixelCount": 8893,
+      "componentCount": 2,
+      "componentPixelCount": 8873,
+      "largestComponentPixelCount": 8845,
+      "componentSourceRefBoxes": [
+        [
+          743.2470588235294,
+          2177.163636363636,
+          1117.364705882353,
+          2219.0545454545454
+        ],
+        [
+          1008.8705882352941,
+          2185.3090909090906,
+          1020.0941176470589,
+          2191.1272727272726
+        ]
+      ],
+      "sourceTraceRefBox": [
+        701.2470588235294,
+        2135.163636363636,
+        1159.364705882353,
+        2261.0545454545454
+      ],
+      "sourceWordHitCount": 8,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "strictInstructionTerms": [],
+      "contextTerms": [
+        "buterin"
+      ],
+      "sourceTextPreview": "in by riding Bitcoins Buterin came up with",
+      "sourceWords": [
+        {
+          "text": "in",
+          "token": "in",
+          "box": [
+            682.01,
+            2122.21,
+            711.57,
+            2162.29
+          ],
+          "index": 177,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "by",
+          "token": "by",
+          "box": [
+            741.47,
+            2122.21,
+            775.06,
+            2162.29
+          ],
+          "index": 178,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "riding",
+          "token": "riding",
+          "box": [
+            806.98,
+            2122.21,
+            928.77,
+            2162.29
+          ],
+          "index": 179,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Bitcoins",
+          "token": "bitcoins",
+          "box": [
+            965.2,
+            2122.21,
+            1129.13,
+            2162.29
+          ],
+          "index": 180,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Buterin",
+          "token": "buterin",
+          "box": [
+            696.12,
+            2186.99,
+            853.08,
+            2235.97
+          ],
+          "index": 189,
+          "strictInstruction": false,
+          "contextTerm": true
+        },
+        {
+          "text": "came",
+          "token": "came",
+          "box": [
+            893.64,
+            2186.99,
+            975.88,
+            2235.97
+          ],
+          "index": 190,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "up",
+          "token": "up",
+          "box": [
+            1011.55,
+            2186.99,
+            1045.15,
+            2235.97
+          ],
+          "index": 191,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "with",
+          "token": "with",
+          "box": [
+            1078.07,
+            2186.99,
+            1155.47,
+            2235.97
+          ],
+          "index": 192,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "kind": "overdose_slot",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "target": "slot0_O",
+      "label": "slot0_O_O",
+      "phrase": null,
+      "slotIndex": 0,
+      "slotLetter": "O",
+      "referenceBox": [
+        294.0,
+        2176.81,
+        538.5697177074414,
+        3023.73
+      ],
+      "nativeBox": [
+        235.75,
+        1870.7,
+        431.87,
+        2598.52
+      ],
+      "sourceOnlyCoverage": 0.634145829,
+      "recomputedSourceOnlyCoverage": 0.633914551,
+      "sourceOnlyPixelCount": 90485,
+      "componentCount": 15,
+      "componentPixelCount": 89259,
+      "largestComponentPixelCount": 88667,
+      "componentSourceRefBoxes": [
+        [
+          2060.141176470588,
+          2177.163636363636,
+          2249.6941176470586,
+          3024.290909090909
+        ],
+        [
+          2088.823529411765,
+          2216.7272727272725,
+          2107.529411764706,
+          2230.690909090909
+        ],
+        [
+          2086.329411764706,
+          2615.854545454545,
+          2098.8,
+          2630.981818181818
+        ],
+        [
+          2091.3176470588237,
+          2344.7272727272725,
+          2103.788235294118,
+          2358.690909090909
+        ],
+        [
+          2086.329411764706,
+          2694.981818181818,
+          2096.3058823529414,
+          2718.254545454545
+        ],
+        [
+          2073.858823529412,
+          2508.7999999999997,
+          2087.576470588235,
+          2523.927272727273
+        ],
+        [
+          2076.3529411764707,
+          2700.7999999999997,
+          2086.329411764706,
+          2713.6
+        ],
+        [
+          2088.823529411765,
+          2551.854545454545,
+          2098.8,
+          2561.163636363636
+        ],
+        [
+          2052.6588235294116,
+          2783.418181818182,
+          2063.8823529411766,
+          2791.5636363636363
+        ],
+        [
+          2057.6470588235293,
+          2269.090909090909,
+          2068.8705882352942,
+          2278.4
+        ],
+        [
+          2067.6235294117646,
+          2250.4727272727273,
+          2080.0941176470587,
+          2256.290909090909
+        ],
+        [
+          2045.1764705882354,
+          2745.018181818182,
+          2060.141176470588,
+          2753.163636363636
+        ],
+        [
+          2092.564705882353,
+          2277.2363636363634,
+          2100.0470588235294,
+          2288.8727272727274
+        ],
+        [
+          2040.1882352941177,
+          2803.2,
+          2050.164705882353,
+          2810.181818181818
+        ],
+        [
+          2061.3882352941177,
+          2933.5272727272727,
+          2070.1176470588234,
+          2940.509090909091
+        ]
+      ],
+      "sourceTraceRefBox": [
+        1998.1882352941177,
+        2135.163636363636,
+        2291.6941176470586,
+        3066.290909090909
+      ],
+      "sourceWordHitCount": 0,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "",
+      "sourceWords": []
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/current_pdf_native_registration_candidate_source_trace/current_pdf_native_registration_candidate_source_trace_sheet.jpg"
+}

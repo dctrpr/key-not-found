@@ -1,0 +1,596 @@
+{
+  "source": "high-res page 76 standalone lower-mark pointer audit",
+  "inputMarks": "analysis_outputs/source_audit/page76_nontext_marks.json",
+  "overlay": "analysis_outputs/source_audit/lower_page76_mark_pointers_overlay.jpg",
+  "rowsUsed": [
+    {
+      "visualRow": 20,
+      "y": 1972.08,
+      "canonicalLineIndex": 19,
+      "canonicalText": "Don't believe me?",
+      "highlight": ""
+    },
+    {
+      "visualRow": 21,
+      "y": 2046.88,
+      "canonicalLineIndex": 20,
+      "canonicalText": "Have you seen the president of El Salvador",
+      "highlight": ""
+    },
+    {
+      "visualRow": 22,
+      "y": 2122.84,
+      "canonicalLineIndex": 21,
+      "canonicalText": "trolling the International Monetary Fund (IMF) on Twitter?",
+      "highlight": ""
+    },
+    {
+      "visualRow": 23,
+      "y": 2191.04,
+      "canonicalLineIndex": 22,
+      "canonicalText": "He's taunting them, telling them he's “buying the dip.”",
+      "highlight": "orange: buying the dip"
+    },
+    {
+      "visualRow": 24,
+      "y": 2265.93,
+      "canonicalLineIndex": 23,
+      "canonicalText": "I tweeted President Nayib Bukele when he announced",
+      "highlight": ""
+    },
+    {
+      "visualRow": 25,
+      "y": 2340.82,
+      "canonicalLineIndex": 24,
+      "canonicalText": "he was going to tap his nation's volcanoes to mine",
+      "highlight": ""
+    },
+    {
+      "visualRow": 26,
+      "y": 2413.48,
+      "canonicalLineIndex": 25,
+      "canonicalText": "$1 billion in bitcoin — that he should sell",
+      "highlight": "grey: $1 billion"
+    },
+    {
+      "visualRow": 27,
+      "y": 2487.2,
+      "canonicalLineIndex": 26,
+      "canonicalText": "billions worth of future bitcoin earnings",
+      "highlight": ""
+    },
+    {
+      "visualRow": 28,
+      "y": 2557.64,
+      "canonicalLineIndex": 27,
+      "canonicalText": "collateralized “Volcano Bonds” to pay off the IMF",
+      "highlight": "grey: Volcano Bonds / IMF"
+    },
+    {
+      "visualRow": 29,
+      "y": 2631.37,
+      "canonicalLineIndex": 28,
+      "canonicalText": "loan and get rid of those leeches. I tagged Mike",
+      "highlight": ""
+    },
+    {
+      "visualRow": 30,
+      "y": 2706.26,
+      "canonicalLineIndex": 29,
+      "canonicalText": "Novogratz in the tweet, figuring he could sell a",
+      "highlight": ""
+    },
+    {
+      "visualRow": 31,
+      "y": 2778.92,
+      "canonicalLineIndex": 30,
+      "canonicalText": "bunch to his Wall Street crony pals, but so far he",
+      "highlight": ""
+    },
+    {
+      "visualRow": 32,
+      "y": 2849.36,
+      "canonicalLineIndex": 31,
+      "canonicalText": "hasn't moved on it. I don't really trust that guy.",
+      "highlight": "bold: I don't really trust that guy"
+    },
+    {
+      "visualRow": 33,
+      "y": 2939.4,
+      "canonicalLineIndex": 32,
+      "canonicalText": "Maybe because he's a shitcoiner at heart.",
+      "highlight": "orange: shitcoiner at heart"
+    }
+  ],
+  "analyses": [
+    {
+      "index": 1,
+      "box": [
+        430,
+        2400,
+        690,
+        2447
+      ],
+      "center": [
+        560.0,
+        2423.5
+      ],
+      "classification": "text/highlight-false-positive",
+      "note": "$1 billion grey highlighted text box; detector caught text/highlight, not a separate mark."
+    },
+    {
+      "index": 2,
+      "box": [
+        795,
+        2544,
+        1196,
+        2592
+      ],
+      "center": [
+        995.5,
+        2568.0
+      ],
+      "classification": "text/highlight-false-positive",
+      "note": "Volcano Bonds grey highlighted text box; detector caught text/highlight, not a separate mark."
+    },
+    {
+      "index": 3,
+      "box": [
+        2172,
+        2619,
+        2544,
+        2884
+      ],
+      "center": [
+        2358.0,
+        2751.5
+      ],
+      "classification": "standalone-mark",
+      "note": "",
+      "axis": {
+        "angleDeg": 173.75,
+        "vector": [
+          -0.994,
+          0.1089
+        ],
+        "blackPixels": 27335
+      },
+      "rowHits": {
+        "insideRows": [
+          {
+            "visualRow": 29,
+            "y": 2631.37,
+            "canonicalLineIndex": 28,
+            "canonicalText": "loan and get rid of those leeches. I tagged Mike",
+            "highlight": ""
+          },
+          {
+            "visualRow": 30,
+            "y": 2706.26,
+            "canonicalLineIndex": 29,
+            "canonicalText": "Novogratz in the tweet, figuring he could sell a",
+            "highlight": ""
+          },
+          {
+            "visualRow": 31,
+            "y": 2778.92,
+            "canonicalLineIndex": 30,
+            "canonicalText": "bunch to his Wall Street crony pals, but so far he",
+            "highlight": ""
+          },
+          {
+            "visualRow": 32,
+            "y": 2849.36,
+            "canonicalLineIndex": 31,
+            "canonicalText": "hasn't moved on it. I don't really trust that guy.",
+            "highlight": "bold: I don't really trust that guy"
+          }
+        ],
+        "closestRows": [
+          {
+            "visualRow": 31,
+            "y": 2778.92,
+            "canonicalLineIndex": 30,
+            "canonicalText": "bunch to his Wall Street crony pals, but so far he",
+            "highlight": ""
+          },
+          {
+            "visualRow": 30,
+            "y": 2706.26,
+            "canonicalLineIndex": 29,
+            "canonicalText": "Novogratz in the tweet, figuring he could sell a",
+            "highlight": ""
+          },
+          {
+            "visualRow": 32,
+            "y": 2849.36,
+            "canonicalLineIndex": 31,
+            "canonicalText": "hasn't moved on it. I don't really trust that guy.",
+            "highlight": "bold: I don't really trust that guy"
+          },
+          {
+            "visualRow": 29,
+            "y": 2631.37,
+            "canonicalLineIndex": 28,
+            "canonicalText": "loan and get rid of those leeches. I tagged Mike",
+            "highlight": ""
+          }
+        ],
+        "horizontalLeftRows": [
+          {
+            "visualRow": 31,
+            "y": 2778.92,
+            "canonicalLineIndex": 30,
+            "canonicalText": "bunch to his Wall Street crony pals, but so far he",
+            "highlight": "",
+            "nearestLeftWords": "he far so but pals, crony Street Wall his to bunch"
+          },
+          {
+            "visualRow": 30,
+            "y": 2706.26,
+            "canonicalLineIndex": 29,
+            "canonicalText": "Novogratz in the tweet, figuring he could sell a",
+            "highlight": "",
+            "nearestLeftWords": "sella could he figuring tweet, the in Novogratz"
+          },
+          {
+            "visualRow": 32,
+            "y": 2849.36,
+            "canonicalLineIndex": 31,
+            "canonicalText": "hasn't moved on it. I don't really trust that guy.",
+            "highlight": "bold: I don't really trust that guy",
+            "nearestLeftWords": "guy that trust really don't I it. on moved hasn't"
+          },
+          {
+            "visualRow": 29,
+            "y": 2631.37,
+            "canonicalLineIndex": 28,
+            "canonicalText": "loan and get rid of those leeches. I tagged Mike",
+            "highlight": "",
+            "nearestLeftWords": "Mike tagged I leeches. those of rid get and loan"
+          }
+        ]
+      },
+      "rayHits": {
+        "leftAxisWords": [
+          {
+            "text": "guy",
+            "box": [
+              1493.61,
+              2827.07,
+              1563.72,
+              2871.64
+            ],
+            "center": [
+              1528.66,
+              2849.36
+            ],
+            "projection": 835.02,
+            "distance": 6.96
+          },
+          {
+            "text": "that",
+            "box": [
+              1381.03,
+              2827.07,
+              1459.03,
+              2871.64
+            ],
+            "center": [
+              1420.03,
+              2849.36
+            ],
+            "projection": 943.0,
+            "distance": 4.87
+          },
+          {
+            "text": "trust",
+            "box": [
+              1245.34,
+              2827.07,
+              1345.86,
+              2871.64
+            ],
+            "center": [
+              1295.6,
+              2849.36
+            ],
+            "projection": 1066.68,
+            "distance": 18.42
+          },
+          {
+            "text": "really",
+            "box": [
+              1079.49,
+              2827.07,
+              1207.86,
+              2871.64
+            ],
+            "center": [
+              1143.68,
+              2849.36
+            ],
+            "projection": 1217.69,
+            "distance": 34.97
+          },
+          {
+            "text": "a",
+            "box": [
+              1012.14,
+              2897.06,
+              1026.21,
+              2981.74
+            ],
+            "center": [
+              1019.18,
+              2939.4
+            ],
+            "projection": 1351.25,
+            "distance": 40.98
+          },
+          {
+            "text": "he's",
+            "box": [
+              886.5,
+              2897.06,
+              970.13,
+              2981.74
+            ],
+            "center": [
+              928.32,
+              2939.4
+            ],
+            "projection": 1441.56,
+            "distance": 31.08
+          },
+          {
+            "text": "because",
+            "box": [
+              659.33,
+              2897.06,
+              840.52,
+              2981.74
+            ],
+            "center": [
+              749.92,
+              2939.4
+            ],
+            "projection": 1618.89,
+            "distance": 11.65
+          },
+          {
+            "text": "Maybe",
+            "box": [
+              487.45,
+              2897.06,
+              614.78,
+              2981.74
+            ],
+            "center": [
+              551.12,
+              2939.4
+            ],
+            "projection": 1816.5,
+            "distance": 19.46
+          }
+        ],
+        "rightAxisWords": []
+      }
+    },
+    {
+      "index": 4,
+      "box": [
+        1827,
+        3003,
+        2120,
+        3182
+      ],
+      "center": [
+        1973.5,
+        3092.5
+      ],
+      "classification": "standalone-mark",
+      "note": "",
+      "axis": {
+        "angleDeg": -168.84,
+        "vector": [
+          -0.9811,
+          -0.1935
+        ],
+        "blackPixels": 18076
+      },
+      "rowHits": {
+        "insideRows": [],
+        "closestRows": [
+          {
+            "visualRow": 33,
+            "y": 2939.4,
+            "canonicalLineIndex": 32,
+            "canonicalText": "Maybe because he's a shitcoiner at heart.",
+            "highlight": "orange: shitcoiner at heart"
+          },
+          {
+            "visualRow": 32,
+            "y": 2849.36,
+            "canonicalLineIndex": 31,
+            "canonicalText": "hasn't moved on it. I don't really trust that guy.",
+            "highlight": "bold: I don't really trust that guy"
+          },
+          {
+            "visualRow": 31,
+            "y": 2778.92,
+            "canonicalLineIndex": 30,
+            "canonicalText": "bunch to his Wall Street crony pals, but so far he",
+            "highlight": ""
+          },
+          {
+            "visualRow": 30,
+            "y": 2706.26,
+            "canonicalLineIndex": 29,
+            "canonicalText": "Novogratz in the tweet, figuring he could sell a",
+            "highlight": ""
+          }
+        ],
+        "horizontalLeftRows": [
+          {
+            "visualRow": 33,
+            "y": 2939.4,
+            "canonicalLineIndex": 32,
+            "canonicalText": "Maybe because he's a shitcoiner at heart.",
+            "highlight": "orange: shitcoiner at heart",
+            "nearestLeftWords": "siukbeodmensertslveaarty a he's because Maybe"
+          },
+          {
+            "visualRow": 32,
+            "y": 2849.36,
+            "canonicalLineIndex": 31,
+            "canonicalText": "hasn't moved on it. I don't really trust that guy.",
+            "highlight": "bold: I don't really trust that guy",
+            "nearestLeftWords": "guy that trust really don't I it. on moved hasn't"
+          },
+          {
+            "visualRow": 31,
+            "y": 2778.92,
+            "canonicalLineIndex": 30,
+            "canonicalText": "bunch to his Wall Street crony pals, but so far he",
+            "highlight": "",
+            "nearestLeftWords": "he far so but pals, crony Street Wall his to bunch"
+          },
+          {
+            "visualRow": 30,
+            "y": 2706.26,
+            "canonicalLineIndex": 29,
+            "canonicalText": "Novogratz in the tweet, figuring he could sell a",
+            "highlight": "",
+            "nearestLeftWords": "sella could he figuring tweet, the in Novogratz"
+          }
+        ]
+      },
+      "rayHits": {
+        "leftAxisWords": [
+          {
+            "text": "siukbeodmensertslveaarty",
+            "box": [
+              1059.39,
+              2897.06,
+              1620.98,
+              2981.74
+            ],
+            "center": [
+              1340.18,
+              2939.4
+            ],
+            "projection": 650.98,
+            "distance": 27.66
+          },
+          {
+            "text": "a",
+            "box": [
+              1012.14,
+              2897.06,
+              1026.21,
+              2981.74
+            ],
+            "center": [
+              1019.18,
+              2939.4
+            ],
+            "projection": 965.91,
+            "distance": 34.45
+          },
+          {
+            "text": "I",
+            "box": [
+              917.66,
+              2827.07,
+              926.71,
+              2871.64
+            ],
+            "center": [
+              922.18,
+              2849.36
+            ],
+            "projection": 1078.5,
+            "distance": 35.11
+          },
+          {
+            "text": "it.",
+            "box": [
+              851.32,
+              2827.07,
+              888.26,
+              2871.64
+            ],
+            "center": [
+              869.79,
+              2849.36
+            ],
+            "projection": 1129.9,
+            "distance": 24.98
+          },
+          {
+            "text": "on",
+            "box": [
+              785.98,
+              2827.07,
+              818.15,
+              2871.64
+            ],
+            "center": [
+              802.06,
+              2849.36
+            ],
+            "projection": 1196.35,
+            "distance": 11.87
+          },
+          {
+            "text": "moved",
+            "box": [
+              643.25,
+              2827.07,
+              749.63,
+              2871.64
+            ],
+            "center": [
+              696.44,
+              2849.36
+            ],
+            "projection": 1299.97,
+            "distance": 8.57
+          },
+          {
+            "text": "hasn't",
+            "box": [
+              486.45,
+              2827.07,
+              607.07,
+              2871.64
+            ],
+            "center": [
+              546.76,
+              2849.36
+            ],
+            "projection": 1446.82,
+            "distance": 37.53
+          },
+          {
+            "text": "bunch",
+            "box": [
+              485.44,
+              2758.86,
+              596.01,
+              2798.97
+            ],
+            "center": [
+              540.72,
+              2778.92
+            ],
+            "projection": 1466.38,
+            "distance": 30.41
+          }
+        ],
+        "rightAxisWords": []
+      }
+    }
+  ]
+}

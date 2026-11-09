@@ -1,0 +1,2075 @@
+{
+  "createdAt": "2026-05-24T14:24:25",
+  "scope": {
+    "articlePages": [
+      73,
+      80
+    ],
+    "headerFraction": 0.14,
+    "footerFraction": 0.14,
+    "compareSize": [
+      640,
+      120
+    ],
+    "nearMadThreshold": 35.0,
+    "method": "Render current PDFs as displayed; crop top/bottom bands; compare page 76 against same-band neighbors.",
+    "excluded": [
+      "OCR-to-key extraction",
+      "private-key candidate generation",
+      "hash-to-key checks",
+      "seed/WIF/address checks",
+      "BIP39 checks",
+      "broad brute force"
+    ]
+  },
+  "inputs": {
+    "pdfs": [
+      "magazine.pdf",
+      "keyser bitcoin .pdf",
+      "analysis_outputs/external_clues/google_drive_article_download.pdf"
+    ],
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json",
+    "ocrPageHeaderSequence": "analysis_outputs/source_audit/current_pdf_ocr_page_header_sequence_gate/current_pdf_ocr_page_header_sequence_gate.json"
+  },
+  "summary": {
+    "pdfCount": 3,
+    "pageRowsChecked": 24,
+    "bandRowsChecked": 48,
+    "ocrOverdoseStartRowCount": 6,
+    "ocrOverdoseStartRows": [
+      {
+        "pdf": "keyser bitcoin .pdf",
+        "articlePage": 74
+      },
+      {
+        "pdf": "keyser bitcoin .pdf",
+        "articlePage": 76
+      },
+      {
+        "pdf": "keyser bitcoin .pdf",
+        "articlePage": 78
+      },
+      {
+        "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "articlePage": 74
+      },
+      {
+        "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "articlePage": 76
+      },
+      {
+        "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "articlePage": 78
+      }
+    ],
+    "page76TopNearMatchCount": 15,
+    "page76BottomNearMatchCount": 5,
+    "visualHeaderFooterSequenceCandidateCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "pdfSummaries": [
+      {
+        "pdf": "magazine.pdf",
+        "pageCount": 8,
+        "ocrOverdoseStartPages": [],
+        "page76TopNearOtherCount": 5,
+        "page76BottomNearOtherCount": 3,
+        "page76TopSignature": "D058-K012-O048-E031-L246",
+        "page76BottomSignature": "D068-K035-O018-E048-L241",
+        "closestPage76TopMatches": [
+          {
+            "pdf": "magazine.pdf",
+            "band": "top",
+            "baseArticlePage": 76,
+            "compareArticlePage": 78,
+            "meanAbsDiff": 9.3342,
+            "nearByMadThreshold": true,
+            "selfComparison": false
+          },
+          {
+            "pdf": "magazine.pdf",
+            "band": "top",
+            "baseArticlePage": 76,
+            "compareArticlePage": 75,
+            "meanAbsDiff": 15.7005,
+            "nearByMadThreshold": true,
+            "selfComparison": false
+          },
+          {
+            "pdf": "magazine.pdf",
+            "band": "top",
+            "baseArticlePage": 76,
+            "compareArticlePage": 79,
+            "meanAbsDiff": 15.775,
+            "nearByMadThreshold": true,
+            "selfComparison": false
+          }
+        ],
+        "closestPage76BottomMatches": [
+          {
+            "pdf": "magazine.pdf",
+            "band": "bottom",
+            "baseArticlePage": 76,
+            "compareArticlePage": 75,
+            "meanAbsDiff": 15.7489,
+            "nearByMadThreshold": true,
+            "selfComparison": false
+          },
+          {
+            "pdf": "magazine.pdf",
+            "band": "bottom",
+            "baseArticlePage": 76,
+            "compareArticlePage": 79,
+            "meanAbsDiff": 18.8011,
+            "nearByMadThreshold": true,
+            "selfComparison": false
+          },
+          {
+            "pdf": "magazine.pdf",
+            "band": "bottom",
+            "baseArticlePage": 76,
+            "compareArticlePage": 78,
+            "meanAbsDiff": 22.6505,
+            "nearByMadThreshold": true,
+            "selfComparison": false
+          }
+        ],
+        "visualHeaderFooterSelectorCandidate": false
+      },
+      {
+        "pdf": "keyser bitcoin .pdf",
+        "pageCount": 8,
+        "ocrOverdoseStartPages": [
+          74,
+          76,
+          78
+        ],
+        "page76TopNearOtherCount": 5,
+        "page76BottomNearOtherCount": 1,
+        "page76TopSignature": "D163-K002-O050-E034-L210",
+        "page76BottomSignature": "D381-K001-O000-E012-L182",
+        "closestPage76TopMatches": [
+          {
+            "pdf": "keyser bitcoin .pdf",
+            "band": "top",
+            "baseArticlePage": 76,
+            "compareArticlePage": 74,
+            "meanAbsDiff": 19.7826,
+            "nearByMadThreshold": true,
+            "selfComparison": false
+          },
+          {
+            "pdf": "keyser bitcoin .pdf",
+            "band": "top",
+            "baseArticlePage": 76,
+            "compareArticlePage": 78,
+            "meanAbsDiff": 22.0316,
+            "nearByMadThreshold": true,
+            "selfComparison": false
+          },
+          {
+            "pdf": "keyser bitcoin .pdf",
+            "band": "top",
+            "baseArticlePage": 76,
+            "compareArticlePage": 75,
+            "meanAbsDiff": 29.0648,
+            "nearByMadThreshold": true,
+            "selfComparison": false
+          }
+        ],
+        "closestPage76BottomMatches": [
+          {
+            "pdf": "keyser bitcoin .pdf",
+            "band": "bottom",
+            "baseArticlePage": 76,
+            "compareArticlePage": 79,
+            "meanAbsDiff": 34.018,
+            "nearByMadThreshold": true,
+            "selfComparison": false
+          },
+          {
+            "pdf": "keyser bitcoin .pdf",
+            "band": "bottom",
+            "baseArticlePage": 76,
+            "compareArticlePage": 74,
+            "meanAbsDiff": 35.2685,
+            "nearByMadThreshold": false,
+            "selfComparison": false
+          },
+          {
+            "pdf": "keyser bitcoin .pdf",
+            "band": "bottom",
+            "baseArticlePage": 76,
+            "compareArticlePage": 78,
+            "meanAbsDiff": 35.3074,
+            "nearByMadThreshold": false,
+            "selfComparison": false
+          }
+        ],
+        "visualHeaderFooterSelectorCandidate": false
+      },
+      {
+        "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "pageCount": 8,
+        "ocrOverdoseStartPages": [
+          74,
+          76,
+          78
+        ],
+        "page76TopNearOtherCount": 5,
+        "page76BottomNearOtherCount": 1,
+        "page76TopSignature": "D163-K002-O050-E034-L210",
+        "page76BottomSignature": "D381-K001-O000-E012-L182",
+        "closestPage76TopMatches": [
+          {
+            "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+            "band": "top",
+            "baseArticlePage": 76,
+            "compareArticlePage": 74,
+            "meanAbsDiff": 19.7826,
+            "nearByMadThreshold": true,
+            "selfComparison": false
+          },
+          {
+            "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+            "band": "top",
+            "baseArticlePage": 76,
+            "compareArticlePage": 78,
+            "meanAbsDiff": 22.0316,
+            "nearByMadThreshold": true,
+            "selfComparison": false
+          },
+          {
+            "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+            "band": "top",
+            "baseArticlePage": 76,
+            "compareArticlePage": 75,
+            "meanAbsDiff": 29.0648,
+            "nearByMadThreshold": true,
+            "selfComparison": false
+          }
+        ],
+        "closestPage76BottomMatches": [
+          {
+            "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+            "band": "bottom",
+            "baseArticlePage": 76,
+            "compareArticlePage": 79,
+            "meanAbsDiff": 34.018,
+            "nearByMadThreshold": true,
+            "selfComparison": false
+          },
+          {
+            "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+            "band": "bottom",
+            "baseArticlePage": 76,
+            "compareArticlePage": 74,
+            "meanAbsDiff": 35.2685,
+            "nearByMadThreshold": false,
+            "selfComparison": false
+          },
+          {
+            "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+            "band": "bottom",
+            "baseArticlePage": 76,
+            "compareArticlePage": 78,
+            "meanAbsDiff": 35.3074,
+            "nearByMadThreshold": false,
+            "selfComparison": false
+          }
+        ],
+        "visualHeaderFooterSelectorCandidate": false
+      }
+    ],
+    "fingerprint": "pdfs=3|pages=24|bands=48|p76TopNear=15|p76BottomNear=5|ocrOverdoseStarts=6|candidates=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "comparisons": [
+    {
+      "pdf": "magazine.pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 76,
+      "meanAbsDiff": 0.0,
+      "nearByMadThreshold": false,
+      "selfComparison": true
+    },
+    {
+      "pdf": "magazine.pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 75,
+      "meanAbsDiff": 15.7489,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 79,
+      "meanAbsDiff": 18.8011,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 78,
+      "meanAbsDiff": 22.6505,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 73,
+      "meanAbsDiff": 37.9528,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 74,
+      "meanAbsDiff": 59.6086,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 80,
+      "meanAbsDiff": 89.7484,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 77,
+      "meanAbsDiff": 220.694,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 76,
+      "meanAbsDiff": 0.0,
+      "nearByMadThreshold": false,
+      "selfComparison": true
+    },
+    {
+      "pdf": "magazine.pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 78,
+      "meanAbsDiff": 9.3342,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 75,
+      "meanAbsDiff": 15.7005,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 79,
+      "meanAbsDiff": 15.775,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 74,
+      "meanAbsDiff": 15.8039,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 73,
+      "meanAbsDiff": 22.2041,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 80,
+      "meanAbsDiff": 94.7423,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 77,
+      "meanAbsDiff": 228.0923,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 76,
+      "meanAbsDiff": 0.0,
+      "nearByMadThreshold": false,
+      "selfComparison": true
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 79,
+      "meanAbsDiff": 34.018,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 74,
+      "meanAbsDiff": 35.2685,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 78,
+      "meanAbsDiff": 35.3074,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 80,
+      "meanAbsDiff": 44.5864,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 73,
+      "meanAbsDiff": 48.0271,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 75,
+      "meanAbsDiff": 49.2587,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 77,
+      "meanAbsDiff": 84.059,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 76,
+      "meanAbsDiff": 0.0,
+      "nearByMadThreshold": false,
+      "selfComparison": true
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 74,
+      "meanAbsDiff": 19.7826,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 78,
+      "meanAbsDiff": 22.0316,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 75,
+      "meanAbsDiff": 29.0648,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 79,
+      "meanAbsDiff": 31.0394,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 73,
+      "meanAbsDiff": 34.1911,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 80,
+      "meanAbsDiff": 55.1437,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 77,
+      "meanAbsDiff": 114.6674,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 76,
+      "meanAbsDiff": 0.0,
+      "nearByMadThreshold": false,
+      "selfComparison": true
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 79,
+      "meanAbsDiff": 34.018,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 74,
+      "meanAbsDiff": 35.2685,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 78,
+      "meanAbsDiff": 35.3074,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 80,
+      "meanAbsDiff": 44.5864,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 73,
+      "meanAbsDiff": 48.0271,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 75,
+      "meanAbsDiff": 49.2587,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "band": "bottom",
+      "baseArticlePage": 76,
+      "compareArticlePage": 77,
+      "meanAbsDiff": 84.059,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 76,
+      "meanAbsDiff": 0.0,
+      "nearByMadThreshold": false,
+      "selfComparison": true
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 74,
+      "meanAbsDiff": 19.7826,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 78,
+      "meanAbsDiff": 22.0316,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 75,
+      "meanAbsDiff": 29.0648,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 79,
+      "meanAbsDiff": 31.0394,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 73,
+      "meanAbsDiff": 34.1911,
+      "nearByMadThreshold": true,
+      "selfComparison": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 80,
+      "meanAbsDiff": 55.1437,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "band": "top",
+      "baseArticlePage": 76,
+      "compareArticlePage": 77,
+      "meanAbsDiff": 114.6674,
+      "nearByMadThreshold": false,
+      "selfComparison": false
+    }
+  ],
+  "records": [
+    {
+      "pdf": "magazine.pdf",
+      "pageCount": 8,
+      "pageRows": [
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 1,
+          "articlePage": 73,
+          "pageRotation": 180,
+          "renderedSize": [
+            1222,
+            1567
+          ],
+          "largestEmbeddedImage": {
+            "xref": 16,
+            "width": 2544,
+            "height": 3264,
+            "area": 8303616,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "pageRotation": 180,
+          "renderedSize": [
+            1222,
+            1567
+          ],
+          "largestEmbeddedImage": {
+            "xref": 23,
+            "width": 2544,
+            "height": 3264,
+            "area": 8303616,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 3,
+          "articlePage": 75,
+          "pageRotation": 180,
+          "renderedSize": [
+            1222,
+            1567
+          ],
+          "largestEmbeddedImage": {
+            "xref": 30,
+            "width": 2544,
+            "height": 3264,
+            "area": 8303616,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "pageRotation": 180,
+          "renderedSize": [
+            1222,
+            1567
+          ],
+          "largestEmbeddedImage": {
+            "xref": 37,
+            "width": 2544,
+            "height": 3264,
+            "area": 8303616,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 5,
+          "articlePage": 77,
+          "pageRotation": 180,
+          "renderedSize": [
+            1222,
+            1567
+          ],
+          "largestEmbeddedImage": {
+            "xref": 44,
+            "width": 2544,
+            "height": 3264,
+            "area": 8303616,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "pageRotation": 180,
+          "renderedSize": [
+            1222,
+            1567
+          ],
+          "largestEmbeddedImage": {
+            "xref": 51,
+            "width": 2544,
+            "height": 3264,
+            "area": 8303616,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 7,
+          "articlePage": 79,
+          "pageRotation": 180,
+          "renderedSize": [
+            1222,
+            1567
+          ],
+          "largestEmbeddedImage": {
+            "xref": 58,
+            "width": 2544,
+            "height": 3264,
+            "area": 8303616,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 8,
+          "articlePage": 80,
+          "pageRotation": 180,
+          "renderedSize": [
+            1222,
+            1567
+          ],
+          "largestEmbeddedImage": {
+            "xref": 65,
+            "width": 2544,
+            "height": 3264,
+            "area": 8303616,
+            "ext": "jpeg"
+          }
+        }
+      ],
+      "bandRows": [
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 1,
+          "articlePage": 73,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1222,
+            219
+          ],
+          "meanLum": 233.6487,
+          "darkRatio": 0.082878,
+          "blackRatio": 0.067956,
+          "orangeRatio": 0.001732,
+          "whiteRatio": 0.827201,
+          "edgeRatio": 0.026541,
+          "signature": "D082-K067-O001-E026-L233"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 1,
+          "articlePage": 73,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1347,
+            1222,
+            1567
+          ],
+          "meanLum": 224.3594,
+          "darkRatio": 0.193763,
+          "blackRatio": 0.003984,
+          "orangeRatio": 0.0,
+          "whiteRatio": 0.771888,
+          "edgeRatio": 0.06017,
+          "signature": "D193-K003-O000-E060-L224"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1222,
+            219
+          ],
+          "meanLum": 245.2749,
+          "darkRatio": 0.00082,
+          "blackRatio": 0.0,
+          "orangeRatio": 0.001719,
+          "whiteRatio": 0.774674,
+          "edgeRatio": 0.002206,
+          "signature": "D000-K000-O001-E002-L245"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1347,
+            1222,
+            1567
+          ],
+          "meanLum": 196.9481,
+          "darkRatio": 0.375352,
+          "blackRatio": 0.008503,
+          "orangeRatio": 0.0,
+          "whiteRatio": 0.507461,
+          "edgeRatio": 0.142798,
+          "signature": "D375-K008-O000-E142-L196"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 3,
+          "articlePage": 75,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1222,
+            219
+          ],
+          "meanLum": 246.4848,
+          "darkRatio": 0.037422,
+          "blackRatio": 0.028151,
+          "orangeRatio": 0.002018,
+          "whiteRatio": 0.951146,
+          "edgeRatio": 0.028346,
+          "signature": "D037-K028-O002-E028-L246"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 3,
+          "articlePage": 75,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1347,
+            1222,
+            1567
+          ],
+          "meanLum": 250.0187,
+          "darkRatio": 0.025729,
+          "blackRatio": 0.004883,
+          "orangeRatio": 0.0,
+          "whiteRatio": 0.95112,
+          "edgeRatio": 0.04549,
+          "signature": "D025-K004-O000-E045-L250"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1222,
+            219
+          ],
+          "meanLum": 246.0359,
+          "darkRatio": 0.058268,
+          "blackRatio": 0.012656,
+          "orangeRatio": 0.048333,
+          "whiteRatio": 0.929622,
+          "edgeRatio": 0.03118,
+          "signature": "D058-K012-O048-E031-L246"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1347,
+            1222,
+            1567
+          ],
+          "meanLum": 241.4739,
+          "darkRatio": 0.068737,
+          "blackRatio": 0.035365,
+          "orangeRatio": 0.018789,
+          "whiteRatio": 0.912461,
+          "edgeRatio": 0.04831,
+          "signature": "D068-K035-O018-E048-L241"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 5,
+          "articlePage": 77,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1222,
+            219
+          ],
+          "meanLum": 18.7577,
+          "darkRatio": 0.981159,
+          "blackRatio": 0.96875,
+          "orangeRatio": 0.001497,
+          "whiteRatio": 0.014141,
+          "edgeRatio": 0.025856,
+          "signature": "D981-K968-O001-E025-L018"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 5,
+          "articlePage": 77,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1347,
+            1222,
+            1567
+          ],
+          "meanLum": 21.7702,
+          "darkRatio": 0.972487,
+          "blackRatio": 0.951576,
+          "orangeRatio": 0.0,
+          "whiteRatio": 0.020052,
+          "edgeRatio": 0.039488,
+          "signature": "D972-K951-O000-E039-L021"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1222,
+            219
+          ],
+          "meanLum": 252.3724,
+          "darkRatio": 0.012161,
+          "blackRatio": 0.005664,
+          "orangeRatio": 0.002031,
+          "whiteRatio": 0.976953,
+          "edgeRatio": 0.018683,
+          "signature": "D012-K005-O002-E018-L252"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1347,
+            1222,
+            1567
+          ],
+          "meanLum": 244.2978,
+          "darkRatio": 0.045104,
+          "blackRatio": 0.039883,
+          "orangeRatio": 0.0,
+          "whiteRatio": 0.945885,
+          "edgeRatio": 0.014189,
+          "signature": "D045-K039-O000-E014-L244"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 7,
+          "articlePage": 79,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1222,
+            219
+          ],
+          "meanLum": 247.0869,
+          "darkRatio": 0.037708,
+          "blackRatio": 0.020898,
+          "orangeRatio": 0.002031,
+          "whiteRatio": 0.945,
+          "edgeRatio": 0.045018,
+          "signature": "D037-K020-O002-E045-L247"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 7,
+          "articlePage": 79,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1347,
+            1222,
+            1567
+          ],
+          "meanLum": 247.2721,
+          "darkRatio": 0.033594,
+          "blackRatio": 0.022448,
+          "orangeRatio": 0.001901,
+          "whiteRatio": 0.949544,
+          "edgeRatio": 0.026755,
+          "signature": "D033-K022-O001-E026-L247"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 8,
+          "articlePage": 80,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1222,
+            219
+          ],
+          "meanLum": 158.3421,
+          "darkRatio": 0.950625,
+          "blackRatio": 0.0,
+          "orangeRatio": 0.614857,
+          "whiteRatio": 0.014857,
+          "edgeRatio": 0.001634,
+          "signature": "D950-K000-O614-E001-L158"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 8,
+          "articlePage": 80,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1347,
+            1222,
+            1567
+          ],
+          "meanLum": 164.9346,
+          "darkRatio": 0.923893,
+          "blackRatio": 0.0,
+          "orangeRatio": 0.937096,
+          "whiteRatio": 0.017096,
+          "edgeRatio": 0.002091,
+          "signature": "D923-K000-O937-E002-L164"
+        }
+      ]
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "pageCount": 8,
+      "pageRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 1,
+          "articlePage": 73,
+          "pageRotation": 0,
+          "renderedSize": [
+            1224,
+            1584
+          ],
+          "largestEmbeddedImage": {
+            "xref": 53,
+            "width": 2040,
+            "height": 2805,
+            "area": 5722200,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "pageRotation": 0,
+          "renderedSize": [
+            1224,
+            1584
+          ],
+          "largestEmbeddedImage": {
+            "xref": 55,
+            "width": 2040,
+            "height": 2805,
+            "area": 5722200,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 3,
+          "articlePage": 75,
+          "pageRotation": 0,
+          "renderedSize": [
+            1224,
+            1584
+          ],
+          "largestEmbeddedImage": {
+            "xref": 57,
+            "width": 2040,
+            "height": 2805,
+            "area": 5722200,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "pageRotation": 0,
+          "renderedSize": [
+            1224,
+            1584
+          ],
+          "largestEmbeddedImage": {
+            "xref": 59,
+            "width": 2040,
+            "height": 2805,
+            "area": 5722200,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 5,
+          "articlePage": 77,
+          "pageRotation": 0,
+          "renderedSize": [
+            1224,
+            1584
+          ],
+          "largestEmbeddedImage": {
+            "xref": 61,
+            "width": 2040,
+            "height": 2805,
+            "area": 5722200,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "pageRotation": 0,
+          "renderedSize": [
+            1224,
+            1584
+          ],
+          "largestEmbeddedImage": {
+            "xref": 63,
+            "width": 2040,
+            "height": 2805,
+            "area": 5722200,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 7,
+          "articlePage": 79,
+          "pageRotation": 0,
+          "renderedSize": [
+            1224,
+            1584
+          ],
+          "largestEmbeddedImage": {
+            "xref": 65,
+            "width": 2040,
+            "height": 2805,
+            "area": 5722200,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 8,
+          "articlePage": 80,
+          "pageRotation": 0,
+          "renderedSize": [
+            1224,
+            1584
+          ],
+          "largestEmbeddedImage": {
+            "xref": 67,
+            "width": 2040,
+            "height": 2805,
+            "area": 5722200,
+            "ext": "jpeg"
+          }
+        }
+      ],
+      "bandRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 1,
+          "articlePage": 73,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1224,
+            221
+          ],
+          "meanLum": 205.5747,
+          "darkRatio": 0.165951,
+          "blackRatio": 0.070898,
+          "orangeRatio": 0.001328,
+          "whiteRatio": 0.096784,
+          "edgeRatio": 0.035406,
+          "signature": "D165-K070-O001-E035-L205"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 1,
+          "articlePage": 73,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1362,
+            1224,
+            1584
+          ],
+          "meanLum": 219.9228,
+          "darkRatio": 0.046745,
+          "blackRatio": 0.0,
+          "orangeRatio": 0.0,
+          "whiteRatio": 0.108529,
+          "edgeRatio": 0.002771,
+          "signature": "D046-K000-O000-E002-L219"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1224,
+            221
+          ],
+          "meanLum": 215.5037,
+          "darkRatio": 0.096432,
+          "blackRatio": 0.003372,
+          "orangeRatio": 0.003424,
+          "whiteRatio": 0.120469,
+          "edgeRatio": 0.0122,
+          "signature": "D096-K003-O003-E012-L215"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1362,
+            1224,
+            1584
+          ],
+          "meanLum": 193.5705,
+          "darkRatio": 0.309063,
+          "blackRatio": 0.003919,
+          "orangeRatio": 0.031745,
+          "whiteRatio": 0.183698,
+          "edgeRatio": 0.01947,
+          "signature": "D309-K003-O031-E019-L193"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 3,
+          "articlePage": 75,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1224,
+            221
+          ],
+          "meanLum": 221.9205,
+          "darkRatio": 0.074896,
+          "blackRatio": 0.010951,
+          "orangeRatio": 0.000846,
+          "whiteRatio": 0.191211,
+          "edgeRatio": 0.029504,
+          "signature": "D074-K010-O000-E029-L221"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 3,
+          "articlePage": 75,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1362,
+            1224,
+            1584
+          ],
+          "meanLum": 222.3924,
+          "darkRatio": 0.033503,
+          "blackRatio": 0.0,
+          "orangeRatio": 0.0,
+          "whiteRatio": 0.128984,
+          "edgeRatio": 0.002099,
+          "signature": "D033-K000-O000-E002-L222"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1224,
+            221
+          ],
+          "meanLum": 210.6336,
+          "darkRatio": 0.163203,
+          "blackRatio": 0.002305,
+          "orangeRatio": 0.050599,
+          "whiteRatio": 0.097227,
+          "edgeRatio": 0.034739,
+          "signature": "D163-K002-O050-E034-L210"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1362,
+            1224,
+            1584
+          ],
+          "meanLum": 182.5657,
+          "darkRatio": 0.381237,
+          "blackRatio": 0.001302,
+          "orangeRatio": 0.0,
+          "whiteRatio": 0.11526,
+          "edgeRatio": 0.012672,
+          "signature": "D381-K001-O000-E012-L182"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 5,
+          "articlePage": 77,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1224,
+            221
+          ],
+          "meanLum": 102.9694,
+          "darkRatio": 0.869245,
+          "blackRatio": 0.092734,
+          "orangeRatio": 0.002344,
+          "whiteRatio": 0.094648,
+          "edgeRatio": 0.025805,
+          "signature": "D869-K092-O002-E025-L102"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 5,
+          "articlePage": 77,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1362,
+            1224,
+            1584
+          ],
+          "meanLum": 131.2006,
+          "darkRatio": 0.684844,
+          "blackRatio": 0.054609,
+          "orangeRatio": 0.00862,
+          "whiteRatio": 0.100937,
+          "edgeRatio": 0.017637,
+          "signature": "D684-K054-O008-E017-L131"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1224,
+            221
+          ],
+          "meanLum": 216.6998,
+          "darkRatio": 0.096953,
+          "blackRatio": 0.044531,
+          "orangeRatio": 0.002188,
+          "whiteRatio": 0.122826,
+          "edgeRatio": 0.027983,
+          "signature": "D096-K044-O002-E027-L216"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1362,
+            1224,
+            1584
+          ],
+          "meanLum": 193.7843,
+          "darkRatio": 0.252526,
+          "blackRatio": 0.052943,
+          "orangeRatio": 0.016654,
+          "whiteRatio": 0.106237,
+          "edgeRatio": 0.017783,
+          "signature": "D252-K052-O016-E017-L193"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 7,
+          "articlePage": 79,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1224,
+            221
+          ],
+          "meanLum": 213.1051,
+          "darkRatio": 0.146315,
+          "blackRatio": 0.00082,
+          "orangeRatio": 0.065143,
+          "whiteRatio": 0.083841,
+          "edgeRatio": 0.044066,
+          "signature": "D146-K000-O065-E044-L213"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 7,
+          "articlePage": 79,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1362,
+            1224,
+            1584
+          ],
+          "meanLum": 205.224,
+          "darkRatio": 0.208437,
+          "blackRatio": 0.0,
+          "orangeRatio": 0.17181,
+          "whiteRatio": 0.101654,
+          "edgeRatio": 0.010636,
+          "signature": "D208-K000-O171-E010-L205"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 8,
+          "articlePage": 80,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1224,
+            221
+          ],
+          "meanLum": 164.8768,
+          "darkRatio": 0.75668,
+          "blackRatio": 0.004232,
+          "orangeRatio": 0.668112,
+          "whiteRatio": 0.077826,
+          "edgeRatio": 0.007136,
+          "signature": "D756-K004-O668-E007-L164"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 8,
+          "articlePage": 80,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1362,
+            1224,
+            1584
+          ],
+          "meanLum": 163.7346,
+          "darkRatio": 0.648958,
+          "blackRatio": 0.003984,
+          "orangeRatio": 0.42388,
+          "whiteRatio": 0.097201,
+          "edgeRatio": 0.00864,
+          "signature": "D648-K003-O423-E008-L163"
+        }
+      ]
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "pageCount": 8,
+      "pageRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 1,
+          "articlePage": 73,
+          "pageRotation": 0,
+          "renderedSize": [
+            1224,
+            1584
+          ],
+          "largestEmbeddedImage": {
+            "xref": 53,
+            "width": 2040,
+            "height": 2805,
+            "area": 5722200,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "pageRotation": 0,
+          "renderedSize": [
+            1224,
+            1584
+          ],
+          "largestEmbeddedImage": {
+            "xref": 55,
+            "width": 2040,
+            "height": 2805,
+            "area": 5722200,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 3,
+          "articlePage": 75,
+          "pageRotation": 0,
+          "renderedSize": [
+            1224,
+            1584
+          ],
+          "largestEmbeddedImage": {
+            "xref": 57,
+            "width": 2040,
+            "height": 2805,
+            "area": 5722200,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "pageRotation": 0,
+          "renderedSize": [
+            1224,
+            1584
+          ],
+          "largestEmbeddedImage": {
+            "xref": 59,
+            "width": 2040,
+            "height": 2805,
+            "area": 5722200,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 5,
+          "articlePage": 77,
+          "pageRotation": 0,
+          "renderedSize": [
+            1224,
+            1584
+          ],
+          "largestEmbeddedImage": {
+            "xref": 61,
+            "width": 2040,
+            "height": 2805,
+            "area": 5722200,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "pageRotation": 0,
+          "renderedSize": [
+            1224,
+            1584
+          ],
+          "largestEmbeddedImage": {
+            "xref": 63,
+            "width": 2040,
+            "height": 2805,
+            "area": 5722200,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 7,
+          "articlePage": 79,
+          "pageRotation": 0,
+          "renderedSize": [
+            1224,
+            1584
+          ],
+          "largestEmbeddedImage": {
+            "xref": 65,
+            "width": 2040,
+            "height": 2805,
+            "area": 5722200,
+            "ext": "jpeg"
+          }
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 8,
+          "articlePage": 80,
+          "pageRotation": 0,
+          "renderedSize": [
+            1224,
+            1584
+          ],
+          "largestEmbeddedImage": {
+            "xref": 67,
+            "width": 2040,
+            "height": 2805,
+            "area": 5722200,
+            "ext": "jpeg"
+          }
+        }
+      ],
+      "bandRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 1,
+          "articlePage": 73,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1224,
+            221
+          ],
+          "meanLum": 205.5747,
+          "darkRatio": 0.165951,
+          "blackRatio": 0.070898,
+          "orangeRatio": 0.001328,
+          "whiteRatio": 0.096784,
+          "edgeRatio": 0.035406,
+          "signature": "D165-K070-O001-E035-L205"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 1,
+          "articlePage": 73,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1362,
+            1224,
+            1584
+          ],
+          "meanLum": 219.9228,
+          "darkRatio": 0.046745,
+          "blackRatio": 0.0,
+          "orangeRatio": 0.0,
+          "whiteRatio": 0.108529,
+          "edgeRatio": 0.002771,
+          "signature": "D046-K000-O000-E002-L219"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1224,
+            221
+          ],
+          "meanLum": 215.5037,
+          "darkRatio": 0.096432,
+          "blackRatio": 0.003372,
+          "orangeRatio": 0.003424,
+          "whiteRatio": 0.120469,
+          "edgeRatio": 0.0122,
+          "signature": "D096-K003-O003-E012-L215"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1362,
+            1224,
+            1584
+          ],
+          "meanLum": 193.5705,
+          "darkRatio": 0.309063,
+          "blackRatio": 0.003919,
+          "orangeRatio": 0.031745,
+          "whiteRatio": 0.183698,
+          "edgeRatio": 0.01947,
+          "signature": "D309-K003-O031-E019-L193"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 3,
+          "articlePage": 75,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1224,
+            221
+          ],
+          "meanLum": 221.9205,
+          "darkRatio": 0.074896,
+          "blackRatio": 0.010951,
+          "orangeRatio": 0.000846,
+          "whiteRatio": 0.191211,
+          "edgeRatio": 0.029504,
+          "signature": "D074-K010-O000-E029-L221"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 3,
+          "articlePage": 75,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1362,
+            1224,
+            1584
+          ],
+          "meanLum": 222.3924,
+          "darkRatio": 0.033503,
+          "blackRatio": 0.0,
+          "orangeRatio": 0.0,
+          "whiteRatio": 0.128984,
+          "edgeRatio": 0.002099,
+          "signature": "D033-K000-O000-E002-L222"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1224,
+            221
+          ],
+          "meanLum": 210.6336,
+          "darkRatio": 0.163203,
+          "blackRatio": 0.002305,
+          "orangeRatio": 0.050599,
+          "whiteRatio": 0.097227,
+          "edgeRatio": 0.034739,
+          "signature": "D163-K002-O050-E034-L210"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1362,
+            1224,
+            1584
+          ],
+          "meanLum": 182.5657,
+          "darkRatio": 0.381237,
+          "blackRatio": 0.001302,
+          "orangeRatio": 0.0,
+          "whiteRatio": 0.11526,
+          "edgeRatio": 0.012672,
+          "signature": "D381-K001-O000-E012-L182"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 5,
+          "articlePage": 77,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1224,
+            221
+          ],
+          "meanLum": 102.9694,
+          "darkRatio": 0.869245,
+          "blackRatio": 0.092734,
+          "orangeRatio": 0.002344,
+          "whiteRatio": 0.094648,
+          "edgeRatio": 0.025805,
+          "signature": "D869-K092-O002-E025-L102"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 5,
+          "articlePage": 77,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1362,
+            1224,
+            1584
+          ],
+          "meanLum": 131.2006,
+          "darkRatio": 0.684844,
+          "blackRatio": 0.054609,
+          "orangeRatio": 0.00862,
+          "whiteRatio": 0.100937,
+          "edgeRatio": 0.017637,
+          "signature": "D684-K054-O008-E017-L131"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1224,
+            221
+          ],
+          "meanLum": 216.6998,
+          "darkRatio": 0.096953,
+          "blackRatio": 0.044531,
+          "orangeRatio": 0.002188,
+          "whiteRatio": 0.122826,
+          "edgeRatio": 0.027983,
+          "signature": "D096-K044-O002-E027-L216"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1362,
+            1224,
+            1584
+          ],
+          "meanLum": 193.7843,
+          "darkRatio": 0.252526,
+          "blackRatio": 0.052943,
+          "orangeRatio": 0.016654,
+          "whiteRatio": 0.106237,
+          "edgeRatio": 0.017783,
+          "signature": "D252-K052-O016-E017-L193"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 7,
+          "articlePage": 79,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1224,
+            221
+          ],
+          "meanLum": 213.1051,
+          "darkRatio": 0.146315,
+          "blackRatio": 0.00082,
+          "orangeRatio": 0.065143,
+          "whiteRatio": 0.083841,
+          "edgeRatio": 0.044066,
+          "signature": "D146-K000-O065-E044-L213"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 7,
+          "articlePage": 79,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1362,
+            1224,
+            1584
+          ],
+          "meanLum": 205.224,
+          "darkRatio": 0.208437,
+          "blackRatio": 0.0,
+          "orangeRatio": 0.17181,
+          "whiteRatio": 0.101654,
+          "edgeRatio": 0.010636,
+          "signature": "D208-K000-O171-E010-L205"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 8,
+          "articlePage": 80,
+          "band": "top",
+          "bandBoxPx": [
+            0,
+            0,
+            1224,
+            221
+          ],
+          "meanLum": 164.8768,
+          "darkRatio": 0.75668,
+          "blackRatio": 0.004232,
+          "orangeRatio": 0.668112,
+          "whiteRatio": 0.077826,
+          "edgeRatio": 0.007136,
+          "signature": "D756-K004-O668-E007-L164"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 8,
+          "articlePage": 80,
+          "band": "bottom",
+          "bandBoxPx": [
+            0,
+            1362,
+            1224,
+            1584
+          ],
+          "meanLum": 163.7346,
+          "darkRatio": 0.648958,
+          "blackRatio": 0.003984,
+          "orangeRatio": 0.42388,
+          "whiteRatio": 0.097201,
+          "edgeRatio": 0.00864,
+          "signature": "D648-K003-O423-E008-L163"
+        }
+      ]
+    }
+  ],
+  "decision": {
+    "currentPdfVisualHeaderFooterBandSequenceGate": "current_pdf_visual_header_footer_band_sequence_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Rendered header/footer bands do not add source-backed R3 unit/order evidence or a selector; page 76 is still context/validation, not extraction material.",
+    "nextMove": "Use PDF visual band state as registration evidence only; reopen extraction only if a true source asset or raw clue supplies unit/order wording."
+  },
+  "sheet": "analysis_outputs/source_audit/current_pdf_visual_header_footer_band_sequence_gate/current_pdf_visual_header_footer_band_sequence_gate_sheet.jpg"
+}

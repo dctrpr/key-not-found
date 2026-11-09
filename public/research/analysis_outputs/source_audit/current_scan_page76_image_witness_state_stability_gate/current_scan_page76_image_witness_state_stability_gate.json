@@ -1,0 +1,3397 @@
+{
+  "createdAt": "2026-05-24T13:19:34",
+  "scope": "current scan page-76 image witness state stability control; no key derivation, hashing, WIF, seed, address, or broad brute force",
+  "inputs": {
+    "referencePage76": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "c9Slots": "analysis_outputs/source_audit/c9_overdose_letter_slot_gate/c9_overdose_letter_slot_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "method": {
+    "candidateImages": "root full-page images plus analysis_outputs/source_images and 3d_article_map upright pages",
+    "page76Identification": "sample mean absolute difference against upright page 76; normal vs 180-degree rotation",
+    "exactPage76Threshold": 1.0,
+    "nearControlThreshold": 30.0,
+    "stateClassification": "orange fraction >= 0.20 => Y/O; otherwise dark fraction >= 0.20 => K/B"
+  },
+  "witnessRows": [
+    {
+      "path": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+      "size": [
+        2544,
+        3264
+      ],
+      "orientationToUpright": "already_upright",
+      "page76Mad": 0.0,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.742862,
+          "darkFraction": 0.251517,
+          "meanRgb": [
+            197.819,
+            114.868,
+            42.791
+          ],
+          "meanLuma": 127.299362,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 0.0
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.662649,
+          "meanRgb": [
+            88.885,
+            88.888,
+            88.906
+          ],
+          "meanLuma": 88.888672,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 0.0
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.703969,
+          "meanRgb": [
+            77.38,
+            77.353,
+            77.395
+          ],
+          "meanLuma": 77.361671,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 0.0
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.681031,
+          "darkFraction": 0.294106,
+          "meanRgb": [
+            187.161,
+            112.461,
+            44.95
+          ],
+          "meanLuma": 123.467705,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 0.0
+        }
+      ],
+      "stateStream": "YKKY",
+      "colorStream": "OBBO",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": true,
+      "matchesActiveColorStream": true,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 0.0,
+      "meanActiveCropMeanAbsDiff": 0.0,
+      "classification": "exact_page76_witness",
+      "stableExactActiveWitness": true
+    },
+    {
+      "path": "analysis_outputs/source_images/magazine_page_76.jpg",
+      "size": [
+        2544,
+        3264
+      ],
+      "orientationToUpright": "rot180_to_upright",
+      "page76Mad": 0.054238,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.742505,
+          "darkFraction": 0.25174,
+          "meanRgb": [
+            198.619,
+            114.753,
+            41.682
+          ],
+          "meanLuma": 127.306801,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 2.896443
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.662649,
+          "meanRgb": [
+            88.922,
+            88.926,
+            88.957
+          ],
+          "meanLuma": 88.927238,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 1.060594
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.703969,
+          "meanRgb": [
+            77.401,
+            77.375,
+            77.413
+          ],
+          "meanLuma": 77.383133,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 1.109483
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.680193,
+          "darkFraction": 0.294074,
+          "meanRgb": [
+            187.855,
+            112.39,
+            44.008
+          ],
+          "meanLuma": 123.496857,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 2.979356
+        }
+      ],
+      "stateStream": "YKKY",
+      "colorStream": "OBBO",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": true,
+      "matchesActiveColorStream": true,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 2.979356,
+      "meanActiveCropMeanAbsDiff": 2.011469,
+      "classification": "exact_page76_witness",
+      "stableExactActiveWitness": true
+    },
+    {
+      "path": "magazine-4_1.jpg",
+      "size": [
+        2544,
+        3264
+      ],
+      "orientationToUpright": "rot180_to_upright",
+      "page76Mad": 0.092986,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.738847,
+          "darkFraction": 0.252231,
+          "meanRgb": [
+            199.696,
+            114.631,
+            40.478
+          ],
+          "meanLuma": 127.362198,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 6.176005
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.662649,
+          "meanRgb": [
+            88.936,
+            88.937,
+            88.979
+          ],
+          "meanLuma": 88.939758,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 1.546477
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.703813,
+          "meanRgb": [
+            77.407,
+            77.383,
+            77.422
+          ],
+          "meanLuma": 77.390869,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 1.623788
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.677005,
+          "darkFraction": 0.294654,
+          "meanRgb": [
+            188.746,
+            112.309,
+            43.082
+          ],
+          "meanLuma": 123.561356,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 6.455416
+        }
+      ],
+      "stateStream": "YKKY",
+      "colorStream": "OBBO",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": true,
+      "matchesActiveColorStream": true,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 6.455416,
+      "meanActiveCropMeanAbsDiff": 3.950422,
+      "classification": "exact_page76_witness",
+      "stableExactActiveWitness": true
+    },
+    {
+      "path": "fold_76_78.png",
+      "size": [
+        1272,
+        1632
+      ],
+      "orientationToUpright": "already_upright",
+      "page76Mad": 15.806295,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.783503,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            227.209,
+            185.136,
+            148.032
+          ],
+          "meanLuma": 191.401947,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 69.988876
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            168.937,
+            168.936,
+            168.954
+          ],
+          "meanLuma": 168.937805,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 88.520699
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            166.912,
+            166.901,
+            166.898
+          ],
+          "meanLuma": 166.902817,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 96.008728
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.70248,
+          "darkFraction": 0.006538,
+          "meanRgb": [
+            220.777,
+            182.852,
+            148.366
+          ],
+          "meanLuma": 188.425049,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 71.354279
+        }
+      ],
+      "stateStream": "YNNY",
+      "colorStream": "ONNO",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 96.008728,
+      "meanActiveCropMeanAbsDiff": 81.468146,
+      "classification": "near_page76_control",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "fold_75_79.png",
+      "size": [
+        1272,
+        1632
+      ],
+      "orientationToUpright": "already_upright",
+      "page76Mad": 23.393657,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.226222,
+          "darkFraction": 0.007495,
+          "meanRgb": [
+            237.461,
+            225.044,
+            214.544
+          ],
+          "meanLuma": 226.92543,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 116.491585
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.412669,
+          "darkFraction": 0.006634,
+          "meanRgb": [
+            224.11,
+            201.742,
+            183.057
+          ],
+          "meanLuma": 205.148788,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 137.527084
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            239.894,
+            239.894,
+            239.894
+          ],
+          "meanLuma": 239.894333,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 167.639725
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.044573,
+          "meanRgb": [
+            215.279,
+            215.276,
+            215.263
+          ],
+          "meanLuma": 215.275589,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 117.002602
+        }
+      ],
+      "stateStream": "YYNN",
+      "colorStream": "OONN",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 167.639725,
+      "meanActiveCropMeanAbsDiff": 134.665249,
+      "classification": "near_page76_control",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "analysis_outputs/source_images/magazine_page_79.jpg",
+      "size": [
+        2544,
+        3264
+      ],
+      "orientationToUpright": "rot180_to_upright",
+      "page76Mad": 25.089723,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.014365,
+          "meanRgb": [
+            251.141,
+            251.141,
+            251.141
+          ],
+          "meanLuma": 251.140656,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 136.564178
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.022247,
+          "darkFraction": 0.000566,
+          "meanRgb": [
+            254.499,
+            252.348,
+            250.873
+          ],
+          "meanLuma": 252.699112,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 164.823746
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            254.973,
+            254.973,
+            254.973
+          ],
+          "meanLuma": 254.972977,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 177.59726
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.179614,
+          "meanRgb": [
+            208.766,
+            208.759,
+            208.733
+          ],
+          "meanLuma": 208.758942,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 131.858093
+        }
+      ],
+      "stateStream": "NNNN",
+      "colorStream": "NNNN",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 177.59726,
+      "meanActiveCropMeanAbsDiff": 152.710819,
+      "classification": "near_page76_control",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "analysis_outputs/3d_article_map/page_79_upright.jpg",
+      "size": [
+        2544,
+        3264
+      ],
+      "orientationToUpright": "already_upright",
+      "page76Mad": 25.093235,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.01432,
+          "meanRgb": [
+            251.134,
+            251.134,
+            251.134
+          ],
+          "meanLuma": 251.133926,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 136.553787
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.022409,
+          "darkFraction": 0.000647,
+          "meanRgb": [
+            254.461,
+            252.337,
+            250.854
+          ],
+          "meanLuma": 252.681259,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 164.810486
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            254.972,
+            254.972,
+            254.972
+          ],
+          "meanLuma": 254.972107,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 177.596375
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.179646,
+          "meanRgb": [
+            208.733,
+            208.73,
+            208.702
+          ],
+          "meanLuma": 208.728958,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 131.810181
+        }
+      ],
+      "stateStream": "NNNN",
+      "colorStream": "NNNN",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 177.596375,
+      "meanActiveCropMeanAbsDiff": 152.692707,
+      "classification": "near_page76_control",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "magazine-3_1.jpg",
+      "size": [
+        2544,
+        3264
+      ],
+      "orientationToUpright": "rot180_to_upright",
+      "page76Mad": 25.281966,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.202355,
+          "darkFraction": 0.133967,
+          "meanRgb": [
+            224.189,
+            200.122,
+            179.829
+          ],
+          "meanLuma": 203.77327,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 112.059349
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.360408,
+          "darkFraction": 0.212361,
+          "meanRgb": [
+            209.266,
+            165.686,
+            129.178
+          ],
+          "meanLuma": 172.314957,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 117.125099
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.091386,
+          "meanRgb": [
+            227.93,
+            227.93,
+            227.93
+          ],
+          "meanLuma": 227.92955,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 162.377213
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.10876,
+          "meanRgb": [
+            223.435,
+            223.435,
+            223.435
+          ],
+          "meanLuma": 223.435043,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 126.433517
+        }
+      ],
+      "stateStream": "YYNN",
+      "colorStream": "OONN",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 162.377213,
+      "meanActiveCropMeanAbsDiff": 129.498795,
+      "classification": "near_page76_control",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "analysis_outputs/source_images/magazine_page_75.jpg",
+      "size": [
+        2544,
+        3264
+      ],
+      "orientationToUpright": "rot180_to_upright",
+      "page76Mad": 25.289539,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.202266,
+          "darkFraction": 0.133878,
+          "meanRgb": [
+            223.848,
+            200.092,
+            179.943
+          ],
+          "meanLuma": 203.687515,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 111.873665
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.36963,
+          "darkFraction": 0.212281,
+          "meanRgb": [
+            208.748,
+            165.661,
+            129.354
+          ],
+          "meanLuma": 172.200287,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 116.924034
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.091438,
+          "meanRgb": [
+            227.838,
+            227.838,
+            227.838
+          ],
+          "meanLuma": 227.838425,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 162.268814
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.108502,
+          "meanRgb": [
+            223.347,
+            223.347,
+            223.347
+          ],
+          "meanLuma": 223.346695,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 126.302879
+        }
+      ],
+      "stateStream": "YYNN",
+      "colorStream": "OONN",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 162.268814,
+      "meanActiveCropMeanAbsDiff": 129.342348,
+      "classification": "near_page76_control",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "analysis_outputs/3d_article_map/page_75_upright.jpg",
+      "size": [
+        2544,
+        3264
+      ],
+      "orientationToUpright": "already_upright",
+      "page76Mad": 25.297172,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.202266,
+          "darkFraction": 0.133699,
+          "meanRgb": [
+            223.544,
+            200.054,
+            180.072
+          ],
+          "meanLuma": 203.605484,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 111.835487
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.371491,
+          "darkFraction": 0.212119,
+          "meanRgb": [
+            208.397,
+            165.595,
+            129.56
+          ],
+          "meanLuma": 172.092972,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 116.867538
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.091386,
+          "meanRgb": [
+            227.743,
+            227.743,
+            227.743
+          ],
+          "meanLuma": 227.742523,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 162.142456
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.108728,
+          "meanRgb": [
+            223.226,
+            223.226,
+            223.226
+          ],
+          "meanLuma": 223.226028,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 126.165283
+        }
+      ],
+      "stateStream": "YYNN",
+      "colorStream": "OONN",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 162.142456,
+      "meanActiveCropMeanAbsDiff": 129.252691,
+      "classification": "near_page76_control",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "analysis_outputs/source_images/magazine_page_78.jpg",
+      "size": [
+        2544,
+        3264
+      ],
+      "orientationToUpright": "already_upright",
+      "page76Mad": 29.435853,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.113535,
+          "meanRgb": [
+            222.092,
+            222.081,
+            222.083
+          ],
+          "meanLuma": 222.083237,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 130.825272
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.176361,
+          "meanRgb": [
+            208.729,
+            208.729,
+            208.729
+          ],
+          "meanLuma": 208.728912,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 145.317719
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.125364,
+          "meanRgb": [
+            220.98,
+            220.98,
+            220.98
+          ],
+          "meanLuma": 220.979691,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 158.99115
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            255.0,
+            255.0,
+            255.0
+          ],
+          "meanLuma": 255.0,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 140.142776
+        }
+      ],
+      "stateStream": "NNNN",
+      "colorStream": "NNNN",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 158.99115,
+      "meanActiveCropMeanAbsDiff": 143.819229,
+      "classification": "near_page76_control",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "analysis_outputs/3d_article_map/page_78_upright.jpg",
+      "size": [
+        2544,
+        3264
+      ],
+      "orientationToUpright": "rot180_to_upright",
+      "page76Mad": 29.441695,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.113624,
+          "meanRgb": [
+            221.973,
+            221.964,
+            221.965
+          ],
+          "meanLuma": 221.966141,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 130.689743
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.17628,
+          "meanRgb": [
+            208.664,
+            208.664,
+            208.664
+          ],
+          "meanLuma": 208.663864,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 145.196045
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.12526,
+          "meanRgb": [
+            220.907,
+            220.907,
+            220.907
+          ],
+          "meanLuma": 220.906738,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 158.900436
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            255.0,
+            255.0,
+            255.0
+          ],
+          "meanLuma": 255.0,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 140.142776
+        }
+      ],
+      "stateStream": "NNNN",
+      "colorStream": "NNNN",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 158.900436,
+      "meanActiveCropMeanAbsDiff": 143.73225,
+      "classification": "near_page76_control",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "keyser bitcoin -3_1.jpg",
+      "size": [
+        2040,
+        2805
+      ],
+      "orientationToUpright": "already_upright",
+      "page76Mad": 47.476292,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            222.331,
+            228.236,
+            228.285
+          ],
+          "meanLuma": 226.984299,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 118.313629
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.178384,
+          "darkFraction": 0.013187,
+          "meanRgb": [
+            220.984,
+            207.429,
+            195.24
+          ],
+          "meanLuma": 209.430893,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 143.842972
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.015846,
+          "meanRgb": [
+            217.396,
+            221.581,
+            221.455
+          ],
+          "meanLuma": 220.681946,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 153.62114
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            227.243,
+            232.979,
+            233.469
+          ],
+          "meanLuma": 231.794891,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 124.529984
+        }
+      ],
+      "stateStream": "NNNN",
+      "colorStream": "NNNN",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 153.62114,
+      "meanActiveCropMeanAbsDiff": 135.076931,
+      "classification": "not_page76",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "magazine-1_1.jpg",
+      "size": [
+        2544,
+        3264
+      ],
+      "orientationToUpright": "rot180_to_upright",
+      "page76Mad": 50.878193,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.539481,
+          "meanRgb": [
+            131.866,
+            129.263,
+            131.522
+          ],
+          "meanLuma": 129.97937,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 87.700661
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            252.794,
+            252.178,
+            254.223
+          ],
+          "meanLuma": 252.456299,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 164.56778
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            251.584,
+            250.761,
+            254.001
+          ],
+          "meanLuma": 251.169861,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 175.199356
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.08161,
+          "meanRgb": [
+            210.186,
+            208.628,
+            210.769
+          ],
+          "meanLuma": 209.114166,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 117.549126
+        }
+      ],
+      "stateStream": "KNNN",
+      "colorStream": "BNNN",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 175.199356,
+      "meanActiveCropMeanAbsDiff": 136.254231,
+      "classification": "not_page76",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "keyser bitcoin -7_1.jpg",
+      "size": [
+        2040,
+        2805
+      ],
+      "orientationToUpright": "already_upright",
+      "page76Mad": 51.039128,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.116658,
+          "meanRgb": [
+            198.655,
+            202.29,
+            201.499
+          ],
+          "meanLuma": 201.459854,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 105.80722
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.198366,
+          "darkFraction": 0.021843,
+          "meanRgb": [
+            200.633,
+            189.994,
+            176.246
+          ],
+          "meanLuma": 191.263443,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 133.029587
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.001455,
+          "darkFraction": 0.091542,
+          "meanRgb": [
+            207.059,
+            212.182,
+            211.284
+          ],
+          "meanLuma": 211.02829,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 149.966675
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            224.064,
+            230.858,
+            230.722
+          ],
+          "meanLuma": 229.403992,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 123.225403
+        }
+      ],
+      "stateStream": "NNNN",
+      "colorStream": "NNNN",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 149.966675,
+      "meanActiveCropMeanAbsDiff": 128.007221,
+      "classification": "not_page76",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "keyser bitcoin -4_1.jpg",
+      "size": [
+        2040,
+        2805
+      ],
+      "orientationToUpright": "already_upright",
+      "page76Mad": 54.822504,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.013785,
+          "meanRgb": [
+            212.646,
+            217.937,
+            218.384
+          ],
+          "meanLuma": 216.844711,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 113.633919
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 8.1e-05,
+          "darkFraction": 0.096271,
+          "meanRgb": [
+            200.051,
+            203.186,
+            202.29
+          ],
+          "meanLuma": 202.454697,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 147.062622
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.062812,
+          "meanRgb": [
+            205.471,
+            209.944,
+            209.205
+          ],
+          "meanLuma": 208.939529,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 150.473389
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            222.458,
+            228.565,
+            228.488
+          ],
+          "meanLuma": 227.261383,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 121.889854
+        }
+      ],
+      "stateStream": "NNNN",
+      "colorStream": "NNNN",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 150.473389,
+      "meanActiveCropMeanAbsDiff": 133.264946,
+      "classification": "not_page76",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "keyser bitcoin -6_1.jpg",
+      "size": [
+        2040,
+        2805
+      ],
+      "orientationToUpright": "rot180_to_upright",
+      "page76Mad": 56.667892,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 4.5e-05,
+          "darkFraction": 0.184199,
+          "meanRgb": [
+            194.506,
+            195.251,
+            195.265
+          ],
+          "meanLuma": 195.093689,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 113.272141
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.05032,
+          "meanRgb": [
+            208.519,
+            210.097,
+            210.435
+          ],
+          "meanLuma": 209.785995,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 140.535828
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            225.916,
+            230.307,
+            229.909
+          ],
+          "meanLuma": 229.344574,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 159.675522
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            225.299,
+            228.049,
+            229.482
+          ],
+          "meanLuma": 227.567978,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 121.797447
+        }
+      ],
+      "stateStream": "NNNN",
+      "colorStream": "NNNN",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 159.675522,
+      "meanActiveCropMeanAbsDiff": 133.820234,
+      "classification": "not_page76",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "keyser bitcoin -1_1.jpg",
+      "size": [
+        2040,
+        2805
+      ],
+      "orientationToUpright": "rot180_to_upright",
+      "page76Mad": 66.879799,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            227.868,
+            233.771,
+            232.35
+          ],
+          "meanLuma": 232.413269,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 120.929024
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.560068,
+          "meanRgb": [
+            110.848,
+            109.035,
+            99.015
+          ],
+          "meanLuma": 108.697128,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 103.364319
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.264651,
+          "meanRgb": [
+            123.3,
+            122.528,
+            113.015
+          ],
+          "meanLuma": 122.005608,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 104.73587
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.00277,
+          "darkFraction": 0.234944,
+          "meanRgb": [
+            188.457,
+            189.817,
+            187.37
+          ],
+          "meanLuma": 189.351379,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 107.045517
+        }
+      ],
+      "stateStream": "NKKK",
+      "colorStream": "NBBB",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 120.929024,
+      "meanActiveCropMeanAbsDiff": 109.018682,
+      "classification": "not_page76",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "magazine-2_1.jpg",
+      "size": [
+        2544,
+        3264
+      ],
+      "orientationToUpright": "already_upright",
+      "page76Mad": 73.468353,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.511108,
+          "meanRgb": [
+            137.499,
+            134.81,
+            136.593
+          ],
+          "meanLuma": 135.510864,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 88.222458
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            236.786,
+            235.796,
+            240.722
+          ],
+          "meanLuma": 236.362396,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 155.380142
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            235.766,
+            234.813,
+            239.604
+          ],
+          "meanLuma": 235.361343,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 164.587189
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            233.566,
+            232.574,
+            237.441
+          ],
+          "meanLuma": 233.136444,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 125.723679
+        }
+      ],
+      "stateStream": "KNNN",
+      "colorStream": "BNNN",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 164.587189,
+      "meanActiveCropMeanAbsDiff": 133.478367,
+      "classification": "not_page76",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "analysis_outputs/3d_article_map/page_80_upright.jpg",
+      "size": [
+        2544,
+        3264
+      ],
+      "orientationToUpright": "rot180_to_upright",
+      "page76Mad": 82.993153,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.003257,
+          "darkFraction": 0.022439,
+          "meanRgb": [
+            217.527,
+            159.544,
+            172.27
+          ],
+          "meanLuma": 172.789764,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 83.318565
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.180487,
+          "darkFraction": 0.072405,
+          "meanRgb": [
+            206.418,
+            137.003,
+            149.343
+          ],
+          "meanLuma": 152.651566,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 124.739075
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.319046,
+          "darkFraction": 0.000571,
+          "meanRgb": [
+            222.125,
+            195.196,
+            80.461
+          ],
+          "meanLuma": 192.637527,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 129.541626
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.133913,
+          "meanRgb": [
+            199.447,
+            118.915,
+            166.812
+          ],
+          "meanLuma": 139.494553,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 83.474342
+        }
+      ],
+      "stateStream": "NNYN",
+      "colorStream": "NNON",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 129.541626,
+      "meanActiveCropMeanAbsDiff": 105.268402,
+      "classification": "not_page76",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "analysis_outputs/source_images/magazine_page_80.jpg",
+      "size": [
+        2544,
+        3264
+      ],
+      "orientationToUpright": "already_upright",
+      "page76Mad": 83.002921,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.007004,
+          "darkFraction": 0.02293,
+          "meanRgb": [
+            217.68,
+            159.537,
+            172.321
+          ],
+          "meanLuma": 172.821152,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 83.326729
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.180002,
+          "darkFraction": 0.072243,
+          "meanRgb": [
+            206.412,
+            137.027,
+            149.249
+          ],
+          "meanLuma": 152.660446,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 124.72831
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.329281,
+          "darkFraction": 0.000468,
+          "meanRgb": [
+            222.187,
+            195.184,
+            80.484
+          ],
+          "meanLuma": 192.643204,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 129.580338
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.134525,
+          "meanRgb": [
+            199.476,
+            118.903,
+            166.696
+          ],
+          "meanLuma": 139.483139,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 83.45887
+        }
+      ],
+      "stateStream": "NNYN",
+      "colorStream": "NNON",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 129.580338,
+      "meanActiveCropMeanAbsDiff": 105.273562,
+      "classification": "not_page76",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "keyser bitcoin -8_1.jpg",
+      "size": [
+        2040,
+        2805
+      ],
+      "orientationToUpright": "rot180_to_upright",
+      "page76Mad": 85.56976,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.36871,
+          "darkFraction": 8.9e-05,
+          "meanRgb": [
+            217.257,
+            152.591,
+            150.087
+          ],
+          "meanLuma": 166.158371,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 72.234909
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            208.146,
+            130.374,
+            164.514
+          ],
+          "meanLuma": 149.373047,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 125.187012
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.388404,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            209.39,
+            157.145,
+            125.899
+          ],
+          "meanLuma": 165.996475,
+          "observedState": "Y",
+          "observedColor": "O",
+          "meanAbsDiffVsReferenceCrop": 126.87886
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            205.866,
+            128.669,
+            161.184
+          ],
+          "meanLuma": 147.428818,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 77.903511
+        }
+      ],
+      "stateStream": "YNYN",
+      "colorStream": "ONON",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 126.87886,
+      "meanActiveCropMeanAbsDiff": 100.551073,
+      "classification": "not_page76",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "keyser bitcoin -2_1.jpg",
+      "size": [
+        2040,
+        2805
+      ],
+      "orientationToUpright": "rot180_to_upright",
+      "page76Mad": 85.829081,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.504104,
+          "meanRgb": [
+            132.393,
+            130.189,
+            122.116
+          ],
+          "meanLuma": 130.074631,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 80.411995
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            212.947,
+            216.671,
+            215.715
+          ],
+          "meanLuma": 215.810013,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 143.824417
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            216.027,
+            219.759,
+            216.764
+          ],
+          "meanLuma": 218.749435,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 152.941849
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.0,
+          "meanRgb": [
+            214.27,
+            216.716,
+            214.563
+          ],
+          "meanLuma": 216.040909,
+          "observedState": "N",
+          "observedColor": "N",
+          "meanAbsDiffVsReferenceCrop": 114.441505
+        }
+      ],
+      "stateStream": "KNNN",
+      "colorStream": "BNNN",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 152.941849,
+      "meanActiveCropMeanAbsDiff": 122.904942,
+      "classification": "not_page76",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "keyser bitcoin -5_1.jpg",
+      "size": [
+        2040,
+        2805
+      ],
+      "orientationToUpright": "rot180_to_upright",
+      "page76Mad": 140.127672,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.915105,
+          "meanRgb": [
+            93.432,
+            85.813,
+            82.499
+          ],
+          "meanLuma": 87.193832,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 75.587181
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.0,
+          "darkFraction": 1.0,
+          "meanRgb": [
+            86.38,
+            77.949,
+            74.643
+          ],
+          "meanLuma": 79.502617,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 94.795624
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.002338,
+          "darkFraction": 0.572267,
+          "meanRgb": [
+            136.762,
+            132.063,
+            129.791
+          ],
+          "meanLuma": 132.897903,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 106.114815
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 1.0,
+          "meanRgb": [
+            86.839,
+            78.675,
+            75.113
+          ],
+          "meanLuma": 80.153572,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 76.823433
+        }
+      ],
+      "stateStream": "KKKK",
+      "colorStream": "BBBB",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 106.114815,
+      "meanActiveCropMeanAbsDiff": 88.330263,
+      "classification": "not_page76",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "analysis_outputs/3d_article_map/page_77_upright.jpg",
+      "size": [
+        2544,
+        3264
+      ],
+      "orientationToUpright": "already_upright",
+      "page76Mad": 207.306758,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.866078,
+          "meanRgb": [
+            43.831,
+            36.271,
+            39.983
+          ],
+          "meanLuma": 38.146187,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 105.400803
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.526495,
+          "meanRgb": [
+            116.169,
+            110.893,
+            116.141
+          ],
+          "meanLuma": 112.393822,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 108.21843
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.862012,
+          "meanRgb": [
+            44.819,
+            37.173,
+            41.413
+          ],
+          "meanLuma": 39.104698,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 83.812012
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.890918,
+          "meanRgb": [
+            38.84,
+            31.088,
+            35.21
+          ],
+          "meanLuma": 33.033535,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 105.771446
+        }
+      ],
+      "stateStream": "KKKK",
+      "colorStream": "BBBB",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 108.21843,
+      "meanActiveCropMeanAbsDiff": 100.800673,
+      "classification": "not_page76",
+      "stableExactActiveWitness": false
+    },
+    {
+      "path": "analysis_outputs/source_images/magazine_page_77.jpg",
+      "size": [
+        2544,
+        3264
+      ],
+      "orientationToUpright": "rot180_to_upright",
+      "page76Mad": 207.347474,
+      "targetRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "centerX": 1567.5,
+          "centerY": 2201.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 5,
+          "slotLetter": "O",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.865855,
+          "meanRgb": [
+            43.793,
+            36.21,
+            39.832
+          ],
+          "meanLuma": 38.083641,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 105.450439
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "centerX": 559.5,
+          "centerY": 2421.5,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 1,
+          "slotLetter": "V",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.526656,
+          "meanRgb": [
+            116.157,
+            110.881,
+            116.146
+          ],
+          "meanLuma": 112.38295,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 108.244965
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "centerX": 995.5,
+          "centerY": 2568.0,
+          "expectedState": "K",
+          "expectedColor": "B",
+          "slotIndex": 2,
+          "slotLetter": "E",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.862064,
+          "meanRgb": [
+            44.783,
+            37.148,
+            41.297
+          ],
+          "meanLuma": 39.070438,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 83.84655
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "centerX": 1350.5,
+          "centerY": 2957.0,
+          "expectedState": "Y",
+          "expectedColor": "O",
+          "slotIndex": 4,
+          "slotLetter": "D",
+          "orangeFraction": 0.0,
+          "darkFraction": 0.890886,
+          "meanRgb": [
+            38.821,
+            31.037,
+            35.089
+          ],
+          "meanLuma": 32.984261,
+          "observedState": "K",
+          "observedColor": "B",
+          "meanAbsDiffVsReferenceCrop": 105.81514
+        }
+      ],
+      "stateStream": "KKKK",
+      "colorStream": "BBBB",
+      "slotStream": "OVED",
+      "matchesActiveStateStream": false,
+      "matchesActiveColorStream": false,
+      "matchesActiveSlotStream": true,
+      "maxActiveCropMeanAbsDiff": 108.244965,
+      "meanActiveCropMeanAbsDiff": 100.839273,
+      "classification": "not_page76",
+      "stableExactActiveWitness": false
+    }
+  ],
+  "summary": {
+    "candidateImageCount": 26,
+    "exactPage76WitnessCount": 3,
+    "stableExactWitnessCount": 3,
+    "nearPage76ControlCount": 9,
+    "hiddenChangedStateWitnessCandidateCount": 0,
+    "exactPage76WitnessPaths": "analysis_outputs/3d_article_map/page_76_upright.jpg,analysis_outputs/source_images/magazine_page_76.jpg,magazine-4_1.jpg",
+    "targetStateStream": "YKKY",
+    "targetColorStream": "OBBO",
+    "targetSlotStream": "OVED",
+    "exactWitnessMaxActiveCropMeanAbsDiff": 6.455416,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "page76ImageWitnessStateFingerprint": "images=26|exact=3|stableExact=3|near=9|hiddenChanged=0|exactMaxDiff=6.455|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "decision": {
+    "currentScanPage76ImageWitnessStateStabilityGate": "current_page76_image_witnesses_are_stable_raster_duplicates",
+    "reason": "All exact page-76 image witnesses preserve the active YKKY/OBBO/OVED state and slot streams after orientation normalization. No local image witness changes active-box state or supplies source-backed R3 wording.",
+    "selectorUnlocked": false
+  },
+  "nextMove": "Keep exact page-76 image witnesses as duplicate raster validation only; reopen source review only for a distinct physical/original-layout asset or raw clue wording that satisfies a source-reopen trigger.",
+  "sheet": "analysis_outputs/source_audit/current_scan_page76_image_witness_state_stability_gate/current_scan_page76_image_witness_state_stability_gate_sheet.jpg"
+}

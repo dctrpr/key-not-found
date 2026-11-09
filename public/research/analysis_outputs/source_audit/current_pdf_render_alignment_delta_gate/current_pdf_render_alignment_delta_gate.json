@@ -1,0 +1,1078 @@
+{
+  "createdAt": "2026-05-21T15:40:18",
+  "scope": "Current PDF render alignment delta gate. Compares visible page-76 PDF rasters after OCR-derived alignment against the high-resolution page-76 baseline around active targets, orange highlights, and OVERDOSE header. No OCR-to-key/hash/seed/WIF/address/BIP39/candidate work.",
+  "inputs": {
+    "pdfs": [
+      "magazine.pdf",
+      "keyser bitcoin .pdf",
+      "analysis_outputs/external_clues/google_drive_article_download.pdf"
+    ],
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "articleMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "uprightPage": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+    "affineReport": "analysis_outputs/source_audit/current_pdf_ocr_affine_alignment_gate/current_pdf_ocr_affine_alignment_gate.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "summary": {
+    "pdfCount": 3,
+    "duplicateImageShaGroupCount": 1,
+    "duplicateImageShaGroups": [
+      [
+        "keyser bitcoin .pdf",
+        "analysis_outputs/external_clues/google_drive_article_download.pdf"
+      ]
+    ],
+    "nonBaselinePdfCount": 2,
+    "activeTargetMaterialResidualCount": 6,
+    "activeTargetStateMismatchCount": 0,
+    "materialResidualRegionCount": 12,
+    "stateMismatchRegionCount": 0,
+    "expectedStateMismatchRegionCount": 2,
+    "maxMeanAbsDiff": 97.405,
+    "maxLargeResidualRatio": 0.4594,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "pdfRenderAlignmentDeltaFingerprint": "pdfs=3|dupeGroups=1|nonBase=2|activeMaterial=6|activeStateMismatch=0|materialRegions=12|stateMismatch=0|expectedMismatch=2|maxMean=97.405|maxLarge=0.4594|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "records": [
+    {
+      "pdf": "magazine.pdf",
+      "rotation": 180,
+      "imageSize": [
+        2544,
+        3264
+      ],
+      "imageSha256Prefix": "d9f4a15c43f39b3a",
+      "alignment": "baseline_highres",
+      "fitAvailable": false,
+      "regionRows": [
+        {
+          "regionId": "O4",
+          "kind": "active_target",
+          "label": "buying the dip",
+          "expectedState": "Y",
+          "box": [
+            1326,
+            2169,
+            1809,
+            2233
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5501,
+            "darkRatio": 0.6899,
+            "greyRatio": 0.0584,
+            "meanLuma": 154.269
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5501,
+            "darkRatio": 0.6899,
+            "greyRatio": 0.0584,
+            "meanLuma": 154.269
+          },
+          "meanAbsDiff": 0.0,
+          "maxDiff": 0,
+          "largeResidualRatio": 0.0,
+          "materialResidual": false
+        },
+        {
+          "regionId": "B4",
+          "kind": "active_target",
+          "label": "$1 billion",
+          "expectedState": "K",
+          "box": [
+            420,
+            2390,
+            699,
+            2453
+          ],
+          "baselineState": "K",
+          "alignedState": "K",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.0,
+            "darkRatio": 0.5104,
+            "greyRatio": 0.5465,
+            "meanLuma": 131.791
+          },
+          "alignedStats": {
+            "orangeRatio": 0.0,
+            "darkRatio": 0.5104,
+            "greyRatio": 0.5465,
+            "meanLuma": 131.791
+          },
+          "meanAbsDiff": 0.0,
+          "maxDiff": 0,
+          "largeResidualRatio": 0.0,
+          "materialResidual": false
+        },
+        {
+          "regionId": "G5",
+          "kind": "active_target",
+          "label": "Volcano Bonds",
+          "expectedState": "K",
+          "box": [
+            787,
+            2536,
+            1204,
+            2600
+          ],
+          "baselineState": "K",
+          "alignedState": "K",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.0,
+            "darkRatio": 0.5319,
+            "greyRatio": 0.5748,
+            "meanLuma": 126.432
+          },
+          "alignedStats": {
+            "orangeRatio": 0.0,
+            "darkRatio": 0.5319,
+            "greyRatio": 0.5748,
+            "meanLuma": 126.432
+          },
+          "meanAbsDiff": 0.0,
+          "maxDiff": 0,
+          "largeResidualRatio": 0.0,
+          "materialResidual": false
+        },
+        {
+          "regionId": "O5",
+          "kind": "active_target",
+          "label": "shitcoiner at heart",
+          "expectedState": "Y",
+          "box": [
+            1032,
+            2924,
+            1669,
+            2990
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5064,
+            "darkRatio": 0.6896,
+            "greyRatio": 0.1088,
+            "meanLuma": 148.753
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5064,
+            "darkRatio": 0.6896,
+            "greyRatio": 0.1088,
+            "meanLuma": 148.753
+          },
+          "meanAbsDiff": 0.0,
+          "maxDiff": 0,
+          "largeResidualRatio": 0.0,
+          "materialResidual": false
+        },
+        {
+          "regionId": "OVERDOSE_header",
+          "kind": "overdose_header",
+          "label": "OVERDOSE",
+          "expectedState": "K",
+          "box": [
+            2142,
+            145,
+            2300,
+            193
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": false,
+          "baselineStats": {
+            "orangeRatio": 0.1237,
+            "darkRatio": 0.0912,
+            "greyRatio": 0.0007,
+            "meanLuma": 240.551
+          },
+          "alignedStats": {
+            "orangeRatio": 0.1237,
+            "darkRatio": 0.0912,
+            "greyRatio": 0.0007,
+            "meanLuma": 240.551
+          },
+          "meanAbsDiff": 0.0,
+          "maxDiff": 0,
+          "largeResidualRatio": 0.0,
+          "materialResidual": false
+        },
+        {
+          "regionId": "p76_orange_1",
+          "kind": "orange_highlight",
+          "label": "p76_orange_1",
+          "expectedState": "Y",
+          "box": [
+            800,
+            365,
+            2223,
+            433
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5304,
+            "darkRatio": 0.6693,
+            "greyRatio": 0.0542,
+            "meanLuma": 157.292
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5304,
+            "darkRatio": 0.6693,
+            "greyRatio": 0.0542,
+            "meanLuma": 157.292
+          },
+          "meanAbsDiff": 0.0,
+          "maxDiff": 0,
+          "largeResidualRatio": 0.0,
+          "materialResidual": false
+        },
+        {
+          "regionId": "p76_orange_2",
+          "kind": "orange_highlight",
+          "label": "p76_orange_2",
+          "expectedState": "Y",
+          "box": [
+            805,
+            443,
+            1028,
+            506
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5329,
+            "darkRatio": 0.6818,
+            "greyRatio": 0.0457,
+            "meanLuma": 154.098
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5329,
+            "darkRatio": 0.6818,
+            "greyRatio": 0.0457,
+            "meanLuma": 154.098
+          },
+          "meanAbsDiff": 0.0,
+          "maxDiff": 0,
+          "largeResidualRatio": 0.0,
+          "materialResidual": false
+        },
+        {
+          "regionId": "p76_orange_3",
+          "kind": "orange_highlight",
+          "label": "p76_orange_3",
+          "expectedState": "Y",
+          "box": [
+            421,
+            1343,
+            1314,
+            1408
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5428,
+            "darkRatio": 0.688,
+            "greyRatio": 0.0546,
+            "meanLuma": 154.327
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5428,
+            "darkRatio": 0.688,
+            "greyRatio": 0.0546,
+            "meanLuma": 154.327
+          },
+          "meanAbsDiff": 0.0,
+          "maxDiff": 0,
+          "largeResidualRatio": 0.0,
+          "materialResidual": false
+        },
+        {
+          "regionId": "p76_orange_4",
+          "kind": "orange_highlight",
+          "label": "p76_orange_4",
+          "expectedState": "Y",
+          "box": [
+            1326,
+            2169,
+            1809,
+            2233
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5501,
+            "darkRatio": 0.6899,
+            "greyRatio": 0.0584,
+            "meanLuma": 154.269
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5501,
+            "darkRatio": 0.6899,
+            "greyRatio": 0.0584,
+            "meanLuma": 154.269
+          },
+          "meanAbsDiff": 0.0,
+          "maxDiff": 0,
+          "largeResidualRatio": 0.0,
+          "materialResidual": false
+        },
+        {
+          "regionId": "p76_orange_5",
+          "kind": "orange_highlight",
+          "label": "p76_orange_5",
+          "expectedState": "Y",
+          "box": [
+            1032,
+            2924,
+            1669,
+            2990
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5064,
+            "darkRatio": 0.6896,
+            "greyRatio": 0.1088,
+            "meanLuma": 148.753
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5064,
+            "darkRatio": 0.6896,
+            "greyRatio": 0.1088,
+            "meanLuma": 148.753
+          },
+          "meanAbsDiff": 0.0,
+          "maxDiff": 0,
+          "largeResidualRatio": 0.0,
+          "materialResidual": false
+        }
+      ],
+      "summary": {
+        "regionCount": 10,
+        "stateMismatchCount": 0,
+        "expectedStateMismatchCount": 1,
+        "materialResidualRegionCount": 0,
+        "maxMeanAbsDiff": 0.0,
+        "maxLargeResidualRatio": 0.0,
+        "activeTargetMaterialResidualCount": 0,
+        "activeTargetStateMismatchCount": 0
+      }
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "rotation": 0,
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "imageSha256Prefix": "26d6e8002fe1d86b",
+      "alignment": "ocr_affine",
+      "fitAvailable": true,
+      "regionRows": [
+        {
+          "regionId": "O4",
+          "kind": "active_target",
+          "label": "buying the dip",
+          "expectedState": "Y",
+          "box": [
+            1326,
+            2169,
+            1809,
+            2233
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5501,
+            "darkRatio": 0.6899,
+            "greyRatio": 0.0584,
+            "meanLuma": 154.269
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5569,
+            "darkRatio": 0.6297,
+            "greyRatio": 0.0328,
+            "meanLuma": 160.255
+          },
+          "meanAbsDiff": 43.941,
+          "maxDiff": 227,
+          "largeResidualRatio": 0.1471,
+          "materialResidual": false
+        },
+        {
+          "regionId": "B4",
+          "kind": "active_target",
+          "label": "$1 billion",
+          "expectedState": "K",
+          "box": [
+            420,
+            2390,
+            699,
+            2453
+          ],
+          "baselineState": "K",
+          "alignedState": "K",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.0,
+            "darkRatio": 0.5104,
+            "greyRatio": 0.5465,
+            "meanLuma": 131.791
+          },
+          "alignedStats": {
+            "orangeRatio": 0.0039,
+            "darkRatio": 0.4362,
+            "greyRatio": 0.5489,
+            "meanLuma": 169.142
+          },
+          "meanAbsDiff": 97.405,
+          "maxDiff": 245,
+          "largeResidualRatio": 0.4594,
+          "materialResidual": true
+        },
+        {
+          "regionId": "G5",
+          "kind": "active_target",
+          "label": "Volcano Bonds",
+          "expectedState": "K",
+          "box": [
+            787,
+            2536,
+            1204,
+            2600
+          ],
+          "baselineState": "K",
+          "alignedState": "K",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.0,
+            "darkRatio": 0.5319,
+            "greyRatio": 0.5748,
+            "meanLuma": 126.432
+          },
+          "alignedStats": {
+            "orangeRatio": 0.0016,
+            "darkRatio": 0.5186,
+            "greyRatio": 0.6957,
+            "meanLuma": 152.4
+          },
+          "meanAbsDiff": 81.115,
+          "maxDiff": 236,
+          "largeResidualRatio": 0.3239,
+          "materialResidual": true
+        },
+        {
+          "regionId": "O5",
+          "kind": "active_target",
+          "label": "shitcoiner at heart",
+          "expectedState": "Y",
+          "box": [
+            1032,
+            2924,
+            1669,
+            2990
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5064,
+            "darkRatio": 0.6896,
+            "greyRatio": 0.1088,
+            "meanLuma": 148.753
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5083,
+            "darkRatio": 0.644,
+            "greyRatio": 0.0648,
+            "meanLuma": 154.612
+          },
+          "meanAbsDiff": 45.571,
+          "maxDiff": 231,
+          "largeResidualRatio": 0.1749,
+          "materialResidual": true
+        },
+        {
+          "regionId": "OVERDOSE_header",
+          "kind": "overdose_header",
+          "label": "OVERDOSE",
+          "expectedState": "K",
+          "box": [
+            2142,
+            145,
+            2300,
+            193
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": false,
+          "baselineStats": {
+            "orangeRatio": 0.1237,
+            "darkRatio": 0.0912,
+            "greyRatio": 0.0007,
+            "meanLuma": 240.551
+          },
+          "alignedStats": {
+            "orangeRatio": 0.2307,
+            "darkRatio": 0.1592,
+            "greyRatio": 0.1175,
+            "meanLuma": 205.671
+          },
+          "meanAbsDiff": 52.322,
+          "maxDiff": 117,
+          "largeResidualRatio": 0.1564,
+          "materialResidual": true
+        },
+        {
+          "regionId": "p76_orange_1",
+          "kind": "orange_highlight",
+          "label": "p76_orange_1",
+          "expectedState": "Y",
+          "box": [
+            800,
+            365,
+            2223,
+            433
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5304,
+            "darkRatio": 0.6693,
+            "greyRatio": 0.0542,
+            "meanLuma": 157.292
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5311,
+            "darkRatio": 0.6076,
+            "greyRatio": 0.0785,
+            "meanLuma": 160.668
+          },
+          "meanAbsDiff": 41.404,
+          "maxDiff": 228,
+          "largeResidualRatio": 0.1403,
+          "materialResidual": false
+        },
+        {
+          "regionId": "p76_orange_2",
+          "kind": "orange_highlight",
+          "label": "p76_orange_2",
+          "expectedState": "Y",
+          "box": [
+            805,
+            443,
+            1028,
+            506
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5329,
+            "darkRatio": 0.6818,
+            "greyRatio": 0.0457,
+            "meanLuma": 154.098
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5596,
+            "darkRatio": 0.6184,
+            "greyRatio": 0.0337,
+            "meanLuma": 161.21
+          },
+          "meanAbsDiff": 46.478,
+          "maxDiff": 225,
+          "largeResidualRatio": 0.1751,
+          "materialResidual": true
+        },
+        {
+          "regionId": "p76_orange_3",
+          "kind": "orange_highlight",
+          "label": "p76_orange_3",
+          "expectedState": "Y",
+          "box": [
+            421,
+            1343,
+            1314,
+            1408
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5428,
+            "darkRatio": 0.688,
+            "greyRatio": 0.0546,
+            "meanLuma": 154.327
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5532,
+            "darkRatio": 0.6246,
+            "greyRatio": 0.0206,
+            "meanLuma": 162.06
+          },
+          "meanAbsDiff": 44.743,
+          "maxDiff": 235,
+          "largeResidualRatio": 0.1661,
+          "materialResidual": false
+        },
+        {
+          "regionId": "p76_orange_4",
+          "kind": "orange_highlight",
+          "label": "p76_orange_4",
+          "expectedState": "Y",
+          "box": [
+            1326,
+            2169,
+            1809,
+            2233
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5501,
+            "darkRatio": 0.6899,
+            "greyRatio": 0.0584,
+            "meanLuma": 154.269
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5569,
+            "darkRatio": 0.6297,
+            "greyRatio": 0.0328,
+            "meanLuma": 160.255
+          },
+          "meanAbsDiff": 43.941,
+          "maxDiff": 227,
+          "largeResidualRatio": 0.1471,
+          "materialResidual": false
+        },
+        {
+          "regionId": "p76_orange_5",
+          "kind": "orange_highlight",
+          "label": "p76_orange_5",
+          "expectedState": "Y",
+          "box": [
+            1032,
+            2924,
+            1669,
+            2990
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5064,
+            "darkRatio": 0.6896,
+            "greyRatio": 0.1088,
+            "meanLuma": 148.753
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5083,
+            "darkRatio": 0.644,
+            "greyRatio": 0.0648,
+            "meanLuma": 154.612
+          },
+          "meanAbsDiff": 45.571,
+          "maxDiff": 231,
+          "largeResidualRatio": 0.1749,
+          "materialResidual": true
+        }
+      ],
+      "summary": {
+        "regionCount": 10,
+        "stateMismatchCount": 0,
+        "expectedStateMismatchCount": 1,
+        "materialResidualRegionCount": 6,
+        "maxMeanAbsDiff": 97.405,
+        "maxLargeResidualRatio": 0.4594,
+        "activeTargetMaterialResidualCount": 3,
+        "activeTargetStateMismatchCount": 0
+      }
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "rotation": 0,
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "imageSha256Prefix": "26d6e8002fe1d86b",
+      "alignment": "ocr_affine",
+      "fitAvailable": true,
+      "regionRows": [
+        {
+          "regionId": "O4",
+          "kind": "active_target",
+          "label": "buying the dip",
+          "expectedState": "Y",
+          "box": [
+            1326,
+            2169,
+            1809,
+            2233
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5501,
+            "darkRatio": 0.6899,
+            "greyRatio": 0.0584,
+            "meanLuma": 154.269
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5569,
+            "darkRatio": 0.6297,
+            "greyRatio": 0.0328,
+            "meanLuma": 160.255
+          },
+          "meanAbsDiff": 43.941,
+          "maxDiff": 227,
+          "largeResidualRatio": 0.1471,
+          "materialResidual": false
+        },
+        {
+          "regionId": "B4",
+          "kind": "active_target",
+          "label": "$1 billion",
+          "expectedState": "K",
+          "box": [
+            420,
+            2390,
+            699,
+            2453
+          ],
+          "baselineState": "K",
+          "alignedState": "K",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.0,
+            "darkRatio": 0.5104,
+            "greyRatio": 0.5465,
+            "meanLuma": 131.791
+          },
+          "alignedStats": {
+            "orangeRatio": 0.0039,
+            "darkRatio": 0.4362,
+            "greyRatio": 0.5489,
+            "meanLuma": 169.142
+          },
+          "meanAbsDiff": 97.405,
+          "maxDiff": 245,
+          "largeResidualRatio": 0.4594,
+          "materialResidual": true
+        },
+        {
+          "regionId": "G5",
+          "kind": "active_target",
+          "label": "Volcano Bonds",
+          "expectedState": "K",
+          "box": [
+            787,
+            2536,
+            1204,
+            2600
+          ],
+          "baselineState": "K",
+          "alignedState": "K",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.0,
+            "darkRatio": 0.5319,
+            "greyRatio": 0.5748,
+            "meanLuma": 126.432
+          },
+          "alignedStats": {
+            "orangeRatio": 0.0016,
+            "darkRatio": 0.5186,
+            "greyRatio": 0.6957,
+            "meanLuma": 152.4
+          },
+          "meanAbsDiff": 81.115,
+          "maxDiff": 236,
+          "largeResidualRatio": 0.3239,
+          "materialResidual": true
+        },
+        {
+          "regionId": "O5",
+          "kind": "active_target",
+          "label": "shitcoiner at heart",
+          "expectedState": "Y",
+          "box": [
+            1032,
+            2924,
+            1669,
+            2990
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5064,
+            "darkRatio": 0.6896,
+            "greyRatio": 0.1088,
+            "meanLuma": 148.753
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5083,
+            "darkRatio": 0.644,
+            "greyRatio": 0.0648,
+            "meanLuma": 154.612
+          },
+          "meanAbsDiff": 45.571,
+          "maxDiff": 231,
+          "largeResidualRatio": 0.1749,
+          "materialResidual": true
+        },
+        {
+          "regionId": "OVERDOSE_header",
+          "kind": "overdose_header",
+          "label": "OVERDOSE",
+          "expectedState": "K",
+          "box": [
+            2142,
+            145,
+            2300,
+            193
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": false,
+          "baselineStats": {
+            "orangeRatio": 0.1237,
+            "darkRatio": 0.0912,
+            "greyRatio": 0.0007,
+            "meanLuma": 240.551
+          },
+          "alignedStats": {
+            "orangeRatio": 0.2307,
+            "darkRatio": 0.1592,
+            "greyRatio": 0.1175,
+            "meanLuma": 205.671
+          },
+          "meanAbsDiff": 52.322,
+          "maxDiff": 117,
+          "largeResidualRatio": 0.1564,
+          "materialResidual": true
+        },
+        {
+          "regionId": "p76_orange_1",
+          "kind": "orange_highlight",
+          "label": "p76_orange_1",
+          "expectedState": "Y",
+          "box": [
+            800,
+            365,
+            2223,
+            433
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5304,
+            "darkRatio": 0.6693,
+            "greyRatio": 0.0542,
+            "meanLuma": 157.292
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5311,
+            "darkRatio": 0.6076,
+            "greyRatio": 0.0785,
+            "meanLuma": 160.668
+          },
+          "meanAbsDiff": 41.404,
+          "maxDiff": 228,
+          "largeResidualRatio": 0.1403,
+          "materialResidual": false
+        },
+        {
+          "regionId": "p76_orange_2",
+          "kind": "orange_highlight",
+          "label": "p76_orange_2",
+          "expectedState": "Y",
+          "box": [
+            805,
+            443,
+            1028,
+            506
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5329,
+            "darkRatio": 0.6818,
+            "greyRatio": 0.0457,
+            "meanLuma": 154.098
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5596,
+            "darkRatio": 0.6184,
+            "greyRatio": 0.0337,
+            "meanLuma": 161.21
+          },
+          "meanAbsDiff": 46.478,
+          "maxDiff": 225,
+          "largeResidualRatio": 0.1751,
+          "materialResidual": true
+        },
+        {
+          "regionId": "p76_orange_3",
+          "kind": "orange_highlight",
+          "label": "p76_orange_3",
+          "expectedState": "Y",
+          "box": [
+            421,
+            1343,
+            1314,
+            1408
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5428,
+            "darkRatio": 0.688,
+            "greyRatio": 0.0546,
+            "meanLuma": 154.327
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5532,
+            "darkRatio": 0.6246,
+            "greyRatio": 0.0206,
+            "meanLuma": 162.06
+          },
+          "meanAbsDiff": 44.743,
+          "maxDiff": 235,
+          "largeResidualRatio": 0.1661,
+          "materialResidual": false
+        },
+        {
+          "regionId": "p76_orange_4",
+          "kind": "orange_highlight",
+          "label": "p76_orange_4",
+          "expectedState": "Y",
+          "box": [
+            1326,
+            2169,
+            1809,
+            2233
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5501,
+            "darkRatio": 0.6899,
+            "greyRatio": 0.0584,
+            "meanLuma": 154.269
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5569,
+            "darkRatio": 0.6297,
+            "greyRatio": 0.0328,
+            "meanLuma": 160.255
+          },
+          "meanAbsDiff": 43.941,
+          "maxDiff": 227,
+          "largeResidualRatio": 0.1471,
+          "materialResidual": false
+        },
+        {
+          "regionId": "p76_orange_5",
+          "kind": "orange_highlight",
+          "label": "p76_orange_5",
+          "expectedState": "Y",
+          "box": [
+            1032,
+            2924,
+            1669,
+            2990
+          ],
+          "baselineState": "Y",
+          "alignedState": "Y",
+          "stateMatchesBaseline": true,
+          "stateMatchesExpected": true,
+          "baselineStats": {
+            "orangeRatio": 0.5064,
+            "darkRatio": 0.6896,
+            "greyRatio": 0.1088,
+            "meanLuma": 148.753
+          },
+          "alignedStats": {
+            "orangeRatio": 0.5083,
+            "darkRatio": 0.644,
+            "greyRatio": 0.0648,
+            "meanLuma": 154.612
+          },
+          "meanAbsDiff": 45.571,
+          "maxDiff": 231,
+          "largeResidualRatio": 0.1749,
+          "materialResidual": true
+        }
+      ],
+      "summary": {
+        "regionCount": 10,
+        "stateMismatchCount": 0,
+        "expectedStateMismatchCount": 1,
+        "materialResidualRegionCount": 6,
+        "maxMeanAbsDiff": 97.405,
+        "maxLargeResidualRatio": 0.4594,
+        "activeTargetMaterialResidualCount": 3,
+        "activeTargetStateMismatchCount": 0
+      }
+    }
+  ],
+  "decision": {
+    "currentPdfRenderAlignmentDeltaGate": "do_not_reopen_lowres_pdf_render",
+    "selectorUnlocked": false,
+    "reason": "The visible low-resolution duplicate PDF rasters are duplicate source images. After OCR-derived alignment, their active-target regions preserve visual state and do not add source-side unit/order evidence; residuals are render/downsample differences rather than a new target selector.",
+    "nextMove": "Keep the high-resolution page-76 scan as visual authority. Treat low-resolution PDF renders as duplicate/context witnesses unless a new original-layout or physical source arrives and passes R1/R3."
+  },
+  "sheet": "analysis_outputs/source_audit/current_pdf_render_alignment_delta_gate/current_pdf_render_alignment_delta_gate_sheet.jpg"
+}

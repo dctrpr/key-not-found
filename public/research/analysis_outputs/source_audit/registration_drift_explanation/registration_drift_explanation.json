@@ -1,0 +1,110 @@
+{
+  "createdAt": "2026-05-20T09:08:57",
+  "scope": "source/page drift explanation for p78->p76 dx repair; no key derivation",
+  "sourceReports": {
+    "pdfPlacement": "analysis_outputs/source_audit/magazine_pdf_image_placement/magazine_pdf_image_placement.json",
+    "alternatePdfPills": "analysis_outputs/source_audit/alternate_pdf_pill_geometry/alternate_pdf_pill_geometry.json",
+    "bitcoin4Witness": "analysis_outputs/source_audit/bitcoin4_issue24_geometry_witness/bitcoin4_issue24_geometry_witness.json",
+    "triContact": "analysis_outputs/source_audit/p78_frame_tricontact_signature/p78_frame_tricontact_signature.json",
+    "stabilityWindow": "analysis_outputs/source_audit/repaired_exact_edge_stability_window/repaired_exact_edge_stability_window.json"
+  },
+  "keyMeasurements": {
+    "pdfPlacement": {
+      "fullBleedSingleImageEveryPage": true,
+      "scalePxPerPtPairs": [
+        [
+          4.166667,
+          4.166667
+        ]
+      ],
+      "rotations": [
+        180
+      ]
+    },
+    "alternatePdfPills": {
+      "meanResidualPx": 0.31,
+      "maxResidualPx": 0.45
+    },
+    "bitcoin4": {
+      "p76MeanAbsResidualPx": 3.618,
+      "p78MeanAbsResidualPx": 4.595,
+      "naturalG5GapLowResPx": 84.098,
+      "naturalG5GapHighresEquivalentPx": 105.619,
+      "simpleScaledG5GapLowResPx": 30.472,
+      "simpleScaledG5GapHighresEquivalentPx": 38.27
+    },
+    "currentHighres": {
+      "currentG5GapPx": 38.0,
+      "edgeTouchDxPx": -38.0,
+      "nearestGridDxPx": -40.0,
+      "stableDxRange": [
+        -78,
+        -38
+      ],
+      "stableDyRange": [
+        -4,
+        20
+      ],
+      "stableCellCount": 1025
+    }
+  },
+  "rows": [
+    {
+      "witness": "magazine.pdf embedded page placement",
+      "measurement": "per-page image offset/scale drift",
+      "value": "0 pt gaps; one full-bleed image per page",
+      "implication": "does not explain dx=-38/-40",
+      "supportsOrdinaryDrift": false
+    },
+    {
+      "witness": "alternate OCR/Google p79 pill geometry",
+      "measurement": "affine residual after mapping to high-res p79",
+      "value": "mean 0.31 px, max 0.45 px",
+      "implication": "alternate p79 has same pill geometry after affine normalization",
+      "supportsOrdinaryDrift": false
+    },
+    {
+      "witness": "bitcoin4.pdf p76/p78 low-res transforms",
+      "measurement": "page transform residuals",
+      "value": "p76 mean 3.618 px; p78 mean 4.595 px",
+      "implication": "low-res source has page-specific distortion, but not a useful repair",
+      "supportsOrdinaryDrift": false
+    },
+    {
+      "witness": "bitcoin4.pdf natural p78->p76 geometry",
+      "measurement": "reflected frame gap to trusted G5",
+      "value": "84.098 low-res px (~105.619 high-res px)",
+      "implication": "worse than current high-res G5 gap, so it does not validate the dx repair",
+      "supportsOrdinaryDrift": false
+    },
+    {
+      "witness": "current high-res p78 frame",
+      "measurement": "gap to trusted G5 before repair",
+      "value": "38.0 px",
+      "implication": "the only coherent repair is local dx about -38/-40",
+      "supportsOrdinaryDrift": null
+    },
+    {
+      "witness": "p78 frame tri-contact repair",
+      "measurement": "dx needed to touch G5 while preserving M3/O5 contact",
+      "value": "edge-touch dx -38.0 px; nearest grid dx -40.0 px",
+      "implication": "use as a benchmark for future sources, not as extraction",
+      "supportsOrdinaryDrift": null
+    },
+    {
+      "witness": "repaired exact-edge stability window",
+      "measurement": "dx/dy cells satisfying exact trio plus tri-contact",
+      "value": "dx [-78, -38], dy [-4, 20], count 1025",
+      "implication": "stable local signature, but still no extraction unit",
+      "supportsOrdinaryDrift": null
+    }
+  ],
+  "assessment": [
+    "The dx=-38/-40 repair is not explained by hidden placement inside magazine.pdf; page placement is uniform.",
+    "The alternate OCR/Google PDF preserves the p79 pill geometry after affine normalization and does not supply a new global offset.",
+    "The low-res bitcoin4.pdf witness has page-specific distortion, but its natural p78->p76 geometry makes the G5 gap worse, not better.",
+    "So ordinary source/page drift is a weak explanation for dx=-38/-40 under currently available files.",
+    "The repair remains useful only as a source-registration benchmark; it still does not name an extraction unit."
+  ],
+  "nextMove": "Do not treat dx=-38/-40 as a solved physical correction. Keep it as a benchmark for future physical/Canva/original-layout imagery, and only resume extraction if a new source also names the unit to read."
+}

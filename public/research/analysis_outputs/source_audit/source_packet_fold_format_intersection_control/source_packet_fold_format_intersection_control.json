@@ -1,0 +1,134 @@
+{
+  "createdAt": "2026-05-21T08:00:36",
+  "scope": "folded 3D geometry plus bold/highlight intersection control; no extraction or candidate generation",
+  "inputs": {
+    "article_3d_map_summary": "analysis_outputs/3d_article_map/article_3d_map_data_summary.md",
+    "user_annotated_transcript": "analysis_outputs/3d_article_map/user_annotated_transcript.txt",
+    "user_markdown_transcript": "analysis_outputs/3d_article_map/user_markdown_transcript.md",
+    "plain_correction_report": "analysis_outputs/plain_text_transcript/plain_article_correction_report.json",
+    "reflection_line_pitch_stack_gate": "analysis_outputs/3d_article_map/reflection_line_pitch_stack_gate/reflection_line_pitch_stack_gate.json",
+    "reflection_shifted_carrier_content_gate": "analysis_outputs/3d_article_map/reflection_shifted_carrier_content_gate/reflection_shifted_carrier_content_gate.json",
+    "fold_mirror_r3_gate_synthesis": "analysis_outputs/3d_article_map/fold_mirror_r3_gate_synthesis/fold_mirror_r3_gate_synthesis.json",
+    "page76_highlight_fold_axis_population_gate": "analysis_outputs/source_audit/page76_highlight_fold_axis_population_gate/page76_highlight_fold_axis_population_gate.json",
+    "c9_active_format_witness_reconciliation": "analysis_outputs/source_audit/c9_active_format_witness_reconciliation/c9_active_format_witness_reconciliation.json",
+    "source_packet_orientation_control_quartets": "analysis_outputs/source_audit/source_packet_orientation_control_quartets/source_packet_orientation_control_quartets.json",
+    "source_packet_source_review_gate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "source_packet_overdose_transform_control": "analysis_outputs/source_audit/source_packet_overdose_transform_control/source_packet_overdose_transform_control.json"
+  },
+  "sourceInputStatus": {
+    "article_3d_map_summary": {
+      "present": true,
+      "bytes": 606
+    },
+    "user_annotated_transcript": {
+      "present": true,
+      "bytes": 12039
+    },
+    "user_markdown_transcript": {
+      "present": true,
+      "bytes": 8658
+    },
+    "plain_correction_report": {
+      "present": true,
+      "bytes": 6323
+    },
+    "plain_correction_outputKeys": []
+  },
+  "intersectionRows": [
+    {
+      "gate": "global folded operation covers all four targets",
+      "status": "FAIL",
+      "observation": "carriers 3 but single global shifts 0",
+      "blocker": "all-four contact requires per-target shifting, not a single fold/read rule"
+    },
+    {
+      "gate": "shifted carrier content isolates targets",
+      "status": "FAIL",
+      "observation": "12 slices, 69 non-target words",
+      "blocker": "row slices are broad context, not target-only extraction units"
+    },
+    {
+      "gate": "fold/highlight population gives active axis",
+      "status": "FAIL",
+      "observation": "141 axes, all-four 0, non-tautological two-active 0",
+      "blocker": "no non-tautological fold axis selects the active quartet"
+    },
+    {
+      "gate": "format authority agrees enough for validation",
+      "status": "PASS",
+      "observation": "authority pass 4/4, witness conflicts 2",
+      "blocker": "format authority validates targets but does not define unit/order"
+    },
+    {
+      "gate": "bold/markdown/annotation layer supplies selector",
+      "status": "FAIL",
+      "observation": "line-bold matches 2, markdown phrase matches 2",
+      "blocker": "line-level bold, Markdown, and annotations remain witness/context layers"
+    },
+    {
+      "gate": "active orientation controls are selective",
+      "status": "PASS",
+      "observation": "YKKY 11/70; line-gap exact 1",
+      "blocker": "selective geometry is source-registration only without R3"
+    },
+    {
+      "gate": "OVERDOSE mechanics independently confirm order",
+      "status": "FAIL",
+      "observation": "centers OVED/VEDO; p75 mirrors 8/8",
+      "blocker": "OVERDOSE black OVER remains controlled by p75 and variants"
+    },
+    {
+      "gate": "source-review R3 unlock",
+      "status": "FAIL",
+      "observation": "ready 0, R3 failures 7, triggers 0/9",
+      "blocker": "no distinct source/provenance wording names extraction unit/order"
+    }
+  ],
+  "summary": {
+    "intersectionGateCount": 8,
+    "passGateCount": 2,
+    "partialGateCount": 0,
+    "failGateCount": 6,
+    "extractionReadyIntersectionCount": 0,
+    "allFourActiveCarrierCount": 3,
+    "singleShiftAllFourCount": 0,
+    "strictInstructionHitCount": 0,
+    "activeSliceCount": 12,
+    "sliceWordCountTotal": 78,
+    "sliceNonTargetWordCountTotal": 69,
+    "targetPhraseIsolatedSliceCount": 0,
+    "uniqueInferredBaseLines": [
+      20,
+      21
+    ],
+    "activeLineGapPattern": [
+      3,
+      2,
+      5
+    ],
+    "allCarrierShiftGapsMatchPageLineGaps": true,
+    "axisCandidateCount": 141,
+    "allFourActiveAxisCount": 0,
+    "nonTautologicalTwoActiveAxisCount": 0,
+    "formatAuthorityPassCount": 4,
+    "witnessConflictCount": 2,
+    "lineLevelExactBoldMatchCount": 2,
+    "markdownBoldContainsPhraseCount": 2,
+    "orientationYkkyCombinationCount": 11,
+    "orientationFormatLineGapExactMatchCount": 1,
+    "overdoseControlFingerprint": "glyphDelta=0.087628|center=OVED/VEDO|black=OVER|p75=OVER|mirrors=8/8|tol=45/49|ready=0|sourceR3=0|selectors=0",
+    "sourceReviewExtractionReadyCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "selectorUnlockedCount": 0,
+    "foldMirrorR3Decision": "3d_fold_mirror_geometry_closed_for_current_scan_as_r3_selector",
+    "foldFormatIntersectionFingerprint": "gates=8|pass=2|partial=0|singleShiftAll4=0|carrierNonTarget=69|isolated=0|axesAll4=0|formatPass=4|formatConflicts=2|sourceR3=0|selectors=0"
+  },
+  "decision": {
+    "sourcePacketFoldFormatIntersectionControl": "fold_format_intersection_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Folded 3D carriers, page-76 highlight axes, and active format state do not combine into a source-backed unit/order rule. The only pass is format authority for source comparison; geometry and R3 gates fail.",
+    "nextMove": "Use this as the folded-geometry/format guardrail in future source review. Do not reopen selector/key work unless a distinct source names a fold/reflection/format operation and passes R1-R5."
+  },
+  "sheet": "analysis_outputs/source_audit/source_packet_fold_format_intersection_control/source_packet_fold_format_intersection_control_sheet.jpg"
+}

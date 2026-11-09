@@ -1,0 +1,193 @@
+{
+  "createdAt": "2026-05-20T10:39:15",
+  "scope": "apply source-validation gate to local comparison PDFs; no OCR/key derivation",
+  "inputs": {
+    "inventory": "analysis_outputs/source_audit/local_source_candidate_inventory/local_source_candidate_inventory.json",
+    "bodyHighlighterGrammar": "analysis_outputs/comparison_articles/body_highlighter_grammar/body_highlighter_grammar.json",
+    "bitcoin4Witness": "analysis_outputs/source_audit/bitcoin4_issue24_geometry_witness/bitcoin4_issue24_geometry_witness.json",
+    "bitcoin4PriorityCrops": "analysis_outputs/source_audit/priority_crops_bitcoin4_comparison/priority_crops_bitcoin4_comparison.json",
+    "sourceGate": "analysis_outputs/source_audit/source_validation_gate/source_validation_gate.json"
+  },
+  "sourceGateExtractionBlock": {
+    "id": "extraction_permission",
+    "accept": "Only proceed to key checks if the new source/clue names the extraction unit/order.",
+    "blockedWithout": [
+      "word",
+      "letter",
+      "line",
+      "edge",
+      "font state",
+      "first/last",
+      "explicit ordering"
+    ]
+  },
+  "records": [
+    {
+      "name": "bitcoin3.pdf",
+      "path": "private_inputs/Desktop/bitcoin3.pdf",
+      "md5": "fc8aad04fe91f78f26a9c2241a26a7dc",
+      "pageCount": 8,
+      "inventorySourceClass": "comparison Max/OVERDOSE issue",
+      "inventoryGeometryTruth": "no-for-issue24",
+      "inventoryPotential": "medium-for-style-only",
+      "sourceGateStatus": "reject_for_issue24_geometry",
+      "allowedUse": "style-only Max/OVERDOSE comparison",
+      "reason": "Different issue/article material cannot alter Issue 24 page-76 geometry or provide extraction coordinates for the 20 BTC puzzle.",
+      "sourceQuality": "valid comparison PDF, not source material for Issue 24",
+      "geometryTruth": "no-for-issue24",
+      "extractionPermission": "blocked: comparison article does not name the Issue 24 extraction unit/order",
+      "styleSummary": {
+        "status": "available",
+        "pages": 8,
+        "orangeLineBands": 4,
+        "darkLineBands": 4,
+        "sustainedGrammarPages": [
+          8
+        ],
+        "mixedOrangeDarkPages": [
+          8
+        ],
+        "maxGrammarScore": 7
+      }
+    },
+    {
+      "name": "Issue_26.pdf",
+      "path": "private_inputs/Desktop/Issue_26.pdf",
+      "md5": "d03964451f5ebcdf54ee3b43b0de8d80",
+      "pageCount": 5,
+      "inventorySourceClass": "comparison Max/OVERDOSE issue",
+      "inventoryGeometryTruth": "no-for-issue24",
+      "inventoryPotential": "medium-for-style-only",
+      "sourceGateStatus": "reject_for_issue24_geometry",
+      "allowedUse": "style-only Max/OVERDOSE comparison",
+      "reason": "Different issue/article material cannot alter Issue 24 page-76 geometry or provide extraction coordinates for the 20 BTC puzzle.",
+      "sourceQuality": "valid comparison PDF, not source material for Issue 24",
+      "geometryTruth": "no-for-issue24",
+      "extractionPermission": "blocked: comparison article does not name the Issue 24 extraction unit/order",
+      "styleSummary": {
+        "status": "available",
+        "pages": 5,
+        "orangeLineBands": 11,
+        "darkLineBands": 4,
+        "sustainedGrammarPages": [
+          3,
+          4
+        ],
+        "mixedOrangeDarkPages": [
+          3
+        ],
+        "maxGrammarScore": 14
+      }
+    },
+    {
+      "name": "Issue_27.pdf",
+      "path": "private_inputs/Desktop/Issue_27.pdf",
+      "md5": "bbc23a6794fc8fe437be1b619f942dd7",
+      "pageCount": 8,
+      "inventorySourceClass": "comparison Max/OVERDOSE issue",
+      "inventoryGeometryTruth": "no-for-issue24",
+      "inventoryPotential": "medium-for-style-only",
+      "sourceGateStatus": "reject_for_issue24_geometry",
+      "allowedUse": "style-only Max/OVERDOSE comparison",
+      "reason": "Different issue/article material cannot alter Issue 24 page-76 geometry or provide extraction coordinates for the 20 BTC puzzle.",
+      "sourceQuality": "valid comparison PDF, not source material for Issue 24",
+      "geometryTruth": "no-for-issue24",
+      "extractionPermission": "blocked: comparison article does not name the Issue 24 extraction unit/order",
+      "styleSummary": {
+        "status": "available",
+        "pages": 8,
+        "orangeLineBands": 2,
+        "darkLineBands": 3,
+        "sustainedGrammarPages": [],
+        "mixedOrangeDarkPages": [],
+        "maxGrammarScore": 3
+      }
+    },
+    {
+      "name": "bitcoin4.pdf",
+      "path": "private_inputs/Desktop/bitcoin4.pdf",
+      "md5": "493fb40f02745eb2fa996861ab143fc4",
+      "pageCount": 8,
+      "inventorySourceClass": "low-res Issue 24 article witness",
+      "inventoryGeometryTruth": "no",
+      "inventoryPotential": "low",
+      "sourceGateStatus": "reject_as_geometry_truth",
+      "allowedUse": "low-res Issue 24 source-fidelity witness only",
+      "reason": "It is the same Issue 24 article, but the existing witness audits show lower resolution/distortion and no repair of the trusted G5/O5 p78-frame registration.",
+      "sourceQuality": "fails extraction-grade quality; passes only as a rough witness",
+      "geometryTruth": "no",
+      "extractionPermission": "blocked: no unit/order named and no benchmark-changing geometry",
+      "styleSummary": {
+        "status": "available",
+        "pages": 8,
+        "orangeLineBands": 28,
+        "darkLineBands": 14,
+        "sustainedGrammarPages": [
+          3,
+          4,
+          6,
+          7
+        ],
+        "mixedOrangeDarkPages": [
+          3,
+          4,
+          6,
+          7
+        ],
+        "maxGrammarScore": 19
+      },
+      "witnessNote": {
+        "p76AffineMeanAbsResidualPx": 3.618,
+        "p76AffineMaxAbsResidualPx": 10.079,
+        "p78FrameTransfer": {},
+        "priorityCropComparisons": [
+          {
+            "id": "L32_O5_primary",
+            "text": "Maybe because he's a shitcoiner at heart.",
+            "meanAbsDiffAfterResize": 39.775,
+            "avgHashHamming16": 14,
+            "edgeDensityHigh": 0.045397,
+            "edgeDensityBitcoin4": 0.035069
+          },
+          {
+            "id": "L27_G5_pair",
+            "text": "collateralized Volcano Bonds to pay off the IMF",
+            "meanAbsDiffAfterResize": 55.921,
+            "avgHashHamming16": 26,
+            "edgeDensityHigh": 0.065663,
+            "edgeDensityBitcoin4": 0.071201
+          },
+          {
+            "id": "L25_should_sell",
+            "text": "$1 billion in bitcoin - that he should sell",
+            "meanAbsDiffAfterResize": 49.51,
+            "avgHashHamming16": 36,
+            "edgeDensityHigh": 0.067349,
+            "edgeDensityBitcoin4": 0.062465
+          },
+          {
+            "id": "L26_L29_source_band",
+            "text": "earnings / Volcano Bonds / Mike / could sell band",
+            "meanAbsDiffAfterResize": 52.861,
+            "avgHashHamming16": 24,
+            "edgeDensityHigh": 0.074847,
+            "edgeDensityBitcoin4": 0.077483
+          },
+          {
+            "id": "L25_L32_frame_context",
+            "text": "should sell -> Volcano Bonds -> shitcoiner at heart",
+            "meanAbsDiffAfterResize": 48.031,
+            "avgHashHamming16": 25,
+            "edgeDensityHigh": 0.063872,
+            "edgeDensityBitcoin4": 0.062554
+          }
+        ],
+        "interpretation": "Same Issue 24 article is visually preserved, but bitcoin4 is lower-res/distorted and does not repair the p78-frame-to-page-76 G5/O5 registration benchmark."
+      }
+    }
+  ],
+  "promotedForExtractionGeometry": 0,
+  "styleOnlyComparisonCount": 3,
+  "decision": "No comparison PDF passes the source gate for Issue 24 extraction geometry. bitcoin4 remains a low-res Issue 24 fidelity witness; bitcoin3, Issue_26, and Issue_27 remain style-only comparison articles.",
+  "nextMove": "Use comparison PDFs only to test whether Typeka/highlighter/pill grammar is unique. Do not use them to select key material unless a future raw clue explicitly references a comparison issue/article."
+}

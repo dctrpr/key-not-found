@@ -1,0 +1,139 @@
+{
+  "scope": "Y-B-B-Y same-color pair symmetry audit; no key derivation",
+  "anchors": [
+    {
+      "id": "O4",
+      "label": "buying the dip",
+      "color": "yellow/orange",
+      "box": [
+        1328.0,
+        2160.0,
+        1760.0,
+        2226.0
+      ],
+      "center": [
+        1544.0,
+        2193.0
+      ],
+      "width": 432.0,
+      "height": 66.0
+    },
+    {
+      "id": "B4",
+      "label": "$1 billion",
+      "color": "black/grey",
+      "box": [
+        430.0,
+        2400.0,
+        690.0,
+        2447.0
+      ],
+      "center": [
+        560.0,
+        2423.5
+      ],
+      "width": 260.0,
+      "height": 47.0
+    },
+    {
+      "id": "G5",
+      "label": "Volcano Bonds",
+      "color": "black/grey",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "center": [
+        995.5,
+        2568.0
+      ],
+      "width": 401.0,
+      "height": 48.0
+    },
+    {
+      "id": "O5",
+      "label": "shitcoiner at heart",
+      "color": "yellow/orange",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "center": [
+        1350.5,
+        2957.0
+      ],
+      "width": 621.0,
+      "height": 50.0
+    }
+  ],
+  "sameColorPairMetrics": {
+    "orangePair": {
+      "pair": [
+        "O4",
+        "O5"
+      ],
+      "vector": [
+        -193.5,
+        764.0
+      ],
+      "distance": 788.123,
+      "segmentAngle": 104.213,
+      "midpoint": [
+        1447.25,
+        2575.0
+      ]
+    },
+    "blackPair": {
+      "pair": [
+        "B4",
+        "G5"
+      ],
+      "vector": [
+        435.5,
+        144.5
+      ],
+      "distance": 458.847,
+      "segmentAngle": 18.356,
+      "midpoint": [
+        777.75,
+        2495.75
+      ]
+    },
+    "commonReflectionTest": {
+      "pairA_segmentAngle": 104.213,
+      "pairB_segmentAngle": 18.356,
+      "pairA_perpendicularBisectorAngle": 14.213,
+      "pairB_perpendicularBisectorAngle": 108.356,
+      "commonMirrorAxisAngleDelta": 85.857,
+      "midpointDistance": 674.174
+    },
+    "centralSymmetryMidpointDistance": 674.174,
+    "segmentAngleDelta": 85.857
+  },
+  "streams": {
+    "topToBottom": "buying the dip | $1 billion | Volcano Bonds | shitcoiner at heart",
+    "bottomToTop": "shitcoiner at heart | Volcano Bonds | $1 billion | buying the dip",
+    "sameColorOuterInner": "buying the dip | shitcoiner at heart | $1 billion | Volcano Bonds",
+    "pairMidpoints": "orange midpoint (1447.25, 2575.0) | black midpoint (777.75, 2495.75)"
+  },
+  "streamInstructionHits": {
+    "topToBottom": [],
+    "bottomToTop": [],
+    "sameColorOuterInner": [],
+    "pairMidpoints": []
+  },
+  "overlay": "analysis_outputs/source_audit/ybby_pair_symmetry/ybby_pair_symmetry_overlay.jpg",
+  "assessment": [
+    "The confirmed Y-B-B-Y sequence is a real active target signature, but the same-color pairs do not share a common mirror axis.",
+    "Orange pair and black pair segment angles differ by 85.857 degrees.",
+    "Their perpendicular-bisector axes differ by 85.857 degrees, so a single reflection axis cannot map O4->O5 and B4->G5.",
+    "The orange-pair and black-pair midpoints are 674.174 px apart, so the four anchors do not form a clean 180-degree rotational bracket either.",
+    "The simple order streams are only the known semantic labels and contain no instruction terms."
+  ],
+  "decision": "Keep Y-B-B-Y / O-B-B-O as a distinctive page-76 source-comparison signature, not a mirror/bracket extraction rule.",
+  "nextMove": "Do not spend more local passes trying to infer an axis from the four color targets. The remaining blocker is still an external/source instruction or a new physical/original-layout image that changes the active target geometry."
+}

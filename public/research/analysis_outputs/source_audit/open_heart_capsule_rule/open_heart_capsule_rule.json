@@ -1,0 +1,393 @@
+{
+  "createdAt": "2026-06-09T23:04:54",
+  "scope": "test the proposed open-your-heart O-K-K-O capsule rule using current visual span controls; no key derivation, hashing, WIF, seed, address, BIP39, or brute force",
+  "inputs": {
+    "proposal": "r3_candidate_rules.md",
+    "canonical": "analysis_outputs/plain_text_transcript/canonical_plain_article_body.txt",
+    "body_highlighter_grammar": "analysis_outputs/comparison_articles/body_highlighter_grammar/body_highlighter_grammar.json",
+    "active_obbo_recurrence": "analysis_outputs/comparison_articles/active_obbo_quartet_recurrence/active_obbo_quartet_recurrence.json",
+    "sentence_line_highlight_bridge": "analysis_outputs/plain_text_transcript/sentence_line_highlight_bridge/sentence_line_highlight_bridge.json",
+    "active_line_unit_reconciliation": "analysis_outputs/plain_text_transcript/active_line_unit_reconciliation/active_line_unit_reconciliation.json",
+    "source_packet_reopen_trigger_matrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json",
+    "source_packet_orientation_control_quartets": "analysis_outputs/source_audit/source_packet_orientation_control_quartets/source_packet_orientation_control_quartets.json",
+    "active_obbo_sheet": "analysis_outputs/comparison_articles/active_obbo_quartet_recurrence/active_obbo_quartet_recurrence_sheet.jpg",
+    "page76_priority_crop_sheet": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_sheet.jpg"
+  },
+  "rule": {
+    "name": "open your heart capsule rule",
+    "operation": "for each O-K-K-O visual quartet, read the unhighlighted canonical text between the two K spans",
+    "passCondition": "active bridge is uniquely substantive and supplies source-backed extraction unit/order wording",
+    "partialCondition": "active bridge is uniquely substantive but supplies only article-context convergence"
+  },
+  "visualQuartetCounts": {
+    "totalVisualQuartetWindows": 34,
+    "totalObboWindows": 3,
+    "issue24ObboWindows": 3,
+    "independentObboWindows": 0,
+    "perSource": {
+      "bitcoin3": {
+        "pages": 8,
+        "windows": 1,
+        "obbo": 0
+      },
+      "issue24_toxic_af": {
+        "pages": 8,
+        "windows": 26,
+        "obbo": 3
+      },
+      "issue26": {
+        "pages": 5,
+        "windows": 7,
+        "obbo": 0
+      },
+      "issue27": {
+        "pages": 8,
+        "windows": 0,
+        "obbo": 0
+      }
+    }
+  },
+  "existingBroaderYkQuartetControls": {
+    "source": "analysis_outputs/source_audit/source_packet_orientation_control_quartets/source_packet_orientation_control_quartets.json",
+    "summary": {
+      "fullPageYkGroupCount": 8,
+      "fullPageYkCombinationCount": 70,
+      "fullPageYkYkkyCombinationCount": 11,
+      "fullPageYkYkkyNonExactCombinationCount": 10,
+      "fullPageYkSlidingWindowCount": 5,
+      "fullPageYkSlidingYkkyCount": 1,
+      "frameSignalSlidingWindowCount": 5,
+      "frameSignalSlidingYkkyCount": 0,
+      "activeYkWindowIsOnlyContiguousYkkyWindow": true,
+      "activeGroupGapExactMatchCount": 1,
+      "formatSignalLineCount": 8,
+      "formatLineCombinationCount": 70,
+      "formatLineWindowCount": 5,
+      "formatLineGapExactMatchCount": 1,
+      "formatLineWindowGapExactMatchCount": 0,
+      "formatLineGapExactNonActiveMatchCount": 0,
+      "visualPatternAloneIsNonUnique": true,
+      "fullPageYkGroupsMissingPixelGeometryCount": 8,
+      "nonActiveYkGroupsMissingPixelGeometryCount": 4,
+      "sourceBackedR3BridgeHitCount": 0,
+      "satisfiedReopenTriggerCount": 0,
+      "selectorUnlockedCount": 0,
+      "extractionReadyGateCount": 0,
+      "strictReadableGeometryIsUniqueInAvailableControls": true,
+      "orientationControlQuartetFingerprint": "ykCombos=70|YKKY=11|YKKYNonExact=10|windows=5|windowYKKY=1|lineCombos=70|lineGaps325=1|dx=-++|dy=+++|sourceR3=0|selectors=0"
+    },
+    "interpretation": "This existing broader control set supports contiguous YKKY uniqueness within available full-page Y/K groups, while also showing YKKY is not unique as an unordered pattern. It is not the proposal's unlocated `715-quartet` falsifier."
+  },
+  "obboBridgeRows": [
+    {
+      "source": "issue24_toxic_af",
+      "articlePage": 76,
+      "windowIndex1": 7,
+      "sequence": "OBBO",
+      "activeLike": true,
+      "leftBlack": "$1 billion",
+      "rightBlack": "Volcano Bonds",
+      "bridgeText": "in bitcoin — that he should sell billions worth of future bitcoin earnings collateralized",
+      "note": "active lower corridor O4/B4/G5/O5 capsule bridge",
+      "wordCount": 13,
+      "extractionActionHits": [],
+      "unitHits": [],
+      "contentActionHits": [
+        "collateralized",
+        "sell"
+      ],
+      "targetContextHits": [
+        "bitcoin",
+        "sell"
+      ],
+      "hardR3PhraseHits": [],
+      "sourceBackedR3": false,
+      "contentConvergenceOnly": true
+    },
+    {
+      "source": "issue24_toxic_af",
+      "articlePage": 75,
+      "windowIndex1": 2,
+      "sequence": "OBBO",
+      "activeLike": false,
+      "leftBlack": "money printers, banking",
+      "rightBlack": "terrorists, stock traders, central bank arsonists",
+      "bridgeText": "",
+      "note": "line-split black control; bridge is empty after canonical normalization",
+      "wordCount": 0,
+      "extractionActionHits": [],
+      "unitHits": [],
+      "contentActionHits": [],
+      "targetContextHits": [],
+      "hardR3PhraseHits": [],
+      "sourceBackedR3": false,
+      "contentConvergenceOnly": false
+    },
+    {
+      "source": "issue24_toxic_af",
+      "articlePage": 76,
+      "windowIndex1": 2,
+      "sequence": "OBBO",
+      "activeLike": false,
+      "leftBlack": "Gotta be this way. Forty years of dumb post-1971 fiat money",
+      "rightBlack": "nonsense",
+      "bridgeText": "",
+      "note": "upper page-76 black line split; bridge is empty after canonical normalization",
+      "wordCount": 0,
+      "extractionActionHits": [],
+      "unitHits": [],
+      "contentActionHits": [],
+      "targetContextHits": [],
+      "hardR3PhraseHits": [],
+      "sourceBackedR3": false,
+      "contentConvergenceOnly": false
+    }
+  ],
+  "adjacentKkRows": [
+    {
+      "label": "p75_split_black",
+      "articlePage": 75,
+      "leftBlack": "money printers, banking",
+      "rightBlack": "terrorists, stock traders, central bank arsonists",
+      "bridgeText": "",
+      "isActive": false,
+      "wordCount": 0,
+      "extractionActionHits": [],
+      "unitHits": [],
+      "contentActionHits": [],
+      "targetContextHits": [],
+      "hardR3PhraseHits": [],
+      "sourceBackedR3": false,
+      "contentConvergenceOnly": false
+    },
+    {
+      "label": "p76_upper_split_black",
+      "articlePage": 76,
+      "leftBlack": "Gotta be this way. Forty years of dumb post-1971 fiat money",
+      "rightBlack": "nonsense",
+      "bridgeText": "",
+      "isActive": false,
+      "wordCount": 0,
+      "extractionActionHits": [],
+      "unitHits": [],
+      "contentActionHits": [],
+      "targetContextHits": [],
+      "hardR3PhraseHits": [],
+      "sourceBackedR3": false,
+      "contentConvergenceOnly": false
+    },
+    {
+      "label": "p76_active_bridge",
+      "articlePage": 76,
+      "leftBlack": "$1 billion",
+      "rightBlack": "Volcano Bonds",
+      "bridgeText": "in bitcoin — that he should sell billions worth of future bitcoin earnings collateralized",
+      "isActive": true,
+      "wordCount": 13,
+      "extractionActionHits": [],
+      "unitHits": [],
+      "contentActionHits": [
+        "collateralized",
+        "sell"
+      ],
+      "targetContextHits": [
+        "bitcoin",
+        "sell"
+      ],
+      "hardR3PhraseHits": [],
+      "sourceBackedR3": false,
+      "contentConvergenceOnly": true
+    },
+    {
+      "label": "p78_kk_1",
+      "articlePage": 78,
+      "leftBlack": "gargantuanly wasteful",
+      "rightBlack": "money printing",
+      "bridgeText": "and requires",
+      "isActive": false,
+      "wordCount": 2,
+      "extractionActionHits": [],
+      "unitHits": [],
+      "contentActionHits": [],
+      "targetContextHits": [],
+      "hardR3PhraseHits": [],
+      "sourceBackedR3": false,
+      "contentConvergenceOnly": false
+    },
+    {
+      "label": "p78_kk_2",
+      "articlePage": 78,
+      "leftBlack": "money printing",
+      "rightBlack": "wars to keep it going",
+      "bridgeText": "and",
+      "isActive": false,
+      "wordCount": 1,
+      "extractionActionHits": [],
+      "unitHits": [],
+      "contentActionHits": [],
+      "targetContextHits": [],
+      "hardR3PhraseHits": [],
+      "sourceBackedR3": false,
+      "contentConvergenceOnly": false
+    }
+  ],
+  "sourceCueRows": [
+    {
+      "cue": "Open your heart to Bitcoin",
+      "source": "analysis_outputs/plain_text_transcript/canonical_plain_article_body.txt",
+      "present": true,
+      "role": "authorizes opening/heart metaphor, but not an explicit word/letter/line unit"
+    },
+    {
+      "cue": "shitcoiner at heart",
+      "source": "analysis_outputs/plain_text_transcript/canonical_plain_article_body.txt",
+      "present": true,
+      "role": "closes the page-76 heart bracket at the active O5 span"
+    },
+    {
+      "cue": "MAX heart KEISER marker-layer claim",
+      "source": "r3_candidate_rules.md",
+      "present": true,
+      "role": "external proposal claims marker-layer heart=center; not independently adjudicated in this pass"
+    }
+  ],
+  "activeSentence45": {
+    "sentenceText": "I tweeted President Nayib Bukele when he announced he was going to tap his nation's volcanoes to mine $1 billion in bitcoin — that he should sell billions worth of future bitcoin earnings collateralized “Volcano Bonds” to pay off the IMF loan and get rid of those leeches.",
+    "pageLineSpan": "23-28",
+    "corridorSpan": "5-10",
+    "highlights": [
+      "grey: $1 billion",
+      "grey: Volcano Bonds",
+      "bold: IMF",
+      "bold-partial/full: Mike"
+    ]
+  },
+  "activeRecords": [
+    {
+      "order": 1,
+      "id": "buying_dip",
+      "label": "buying the dip",
+      "color": "orange",
+      "visualState": "Y",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "yellow": 14
+      },
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "sentenceRow": 44,
+      "sentenceSpan": "22",
+      "sentenceCorridorSpan": "4",
+      "canonicalLine": "He's taunting them, telling them he's “buying the dip.”",
+      "leftBoundaryWord": "he's",
+      "rightBoundaryWord": "-",
+      "aboveWord": "on",
+      "belowWord": "announced",
+      "phraseInitials": "btd",
+      "phraseEdges": "bp"
+    },
+    {
+      "order": 2,
+      "id": "one_billion",
+      "label": "$1 billion",
+      "color": "black",
+      "visualState": "K",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "black": 10
+      },
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "sentenceRow": 45,
+      "sentenceSpan": "23-28",
+      "sentenceCorridorSpan": "5-10",
+      "canonicalLine": "$1 billion in bitcoin — that he should sell",
+      "leftBoundaryWord": "-",
+      "rightBoundaryWord": "in",
+      "aboveWord": "was",
+      "belowWord": "billions",
+      "phraseInitials": "1b",
+      "phraseEdges": "1n"
+    },
+    {
+      "order": 3,
+      "id": "volcano_bonds",
+      "label": "Volcano Bonds",
+      "color": "black",
+      "visualState": "K",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "black": 13
+      },
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "sentenceRow": 45,
+      "sentenceSpan": "23-28",
+      "sentenceCorridorSpan": "5-10",
+      "canonicalLine": "collateralized “Volcano Bonds” to pay off the IMF",
+      "leftBoundaryWord": "collateralized",
+      "rightBoundaryWord": "to",
+      "aboveWord": "future",
+      "belowWord": "those",
+      "phraseInitials": "vb",
+      "phraseEdges": "vs"
+    },
+    {
+      "order": 4,
+      "id": "shitcoiner_heart",
+      "label": "shitcoiner at heart",
+      "color": "orange",
+      "visualState": "Y",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "yellow": 19
+      },
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "sentenceRow": 48,
+      "sentenceSpan": "32",
+      "sentenceCorridorSpan": "14",
+      "canonicalLine": "Maybe because he's a shitcoiner at heart.",
+      "leftBoundaryWord": "a",
+      "rightBoundaryWord": "-",
+      "aboveWord": "trust",
+      "belowWord": "-",
+      "phraseInitials": "sah",
+      "phraseEdges": "st"
+    }
+  ],
+  "summary": {
+    "status": "partial_unique_selector_no_downstream_r3",
+    "selectorUnlocked": false,
+    "activeUniqueSubstantiveBridge": true,
+    "sourceBackedR3": false,
+    "activeBridgeText": "in bitcoin — that he should sell billions worth of future bitcoin earnings collateralized",
+    "activeBridgeWordCount": 13,
+    "maxNonactiveObboBridgeWordCount": 0,
+    "maxAdjacentKkBridgeWordCount": 2,
+    "activeBridgeContentActionHits": [
+      "collateralized",
+      "sell"
+    ],
+    "activeBridgeTargetContextHits": [
+      "bitcoin",
+      "sell"
+    ],
+    "activeBridgeExtractionActionHits": [],
+    "activeBridgeUnitHits": [],
+    "satisfiedReopenTriggers": 0,
+    "triggerCount": 9,
+    "fingerprint": "visualQuartets=34|obbo=3|issue24Obbo=3|indObbo=0|activeBridgeWords=13|maxNonactiveObboBridgeWords=0|maxAdjacentKkBridgeWords=2|uniqueBridge=1|sourceR3=0|triggers=0/9|selector=0"
+  },
+  "decision": {
+    "openHeartCapsuleRule": "partial_unique_selector_no_downstream_r3",
+    "selectorUnlocked": false,
+    "reason": "The proposed capsule operation is a useful partial selector: among the checked OBBO windows, the lower page-76 active window is the only one with a substantive black-to-black bridge, and that bridge contains the pre-registered `should sell` convergence. It still does not supply a source-backed extraction unit/order such as word, letter, line, edge, first/last, or a hard read/take/extract instruction, so it cannot unlock key material by itself.",
+    "nextMove": "If pursuing this branch, test whether the selected bridge's `should sell` phrase is named by an external/source clue as a unit/order operation. Without that, keep the capsule rule as a target selector only."
+  },
+  "sheet": "analysis_outputs/source_audit/open_heart_capsule_rule/open_heart_capsule_rule_sheet.jpg"
+}

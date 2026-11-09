@@ -1,0 +1,1253 @@
+{
+  "created": "2026-05-24T08:36:25",
+  "scope": "current PDF OCR form overlay placement audit; no extraction, candidate generation, broad hashing, seed/WIF/address checks, or brute force",
+  "inputs": {
+    "activeTargets": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "contentTransformMatrix": "analysis_outputs/source_audit/current_pdf_content_transform_matrix_gate/current_pdf_content_transform_matrix_gate.json",
+    "formXobjectDictionary": "analysis_outputs/source_audit/current_pdf_form_xobject_dictionary_gate/current_pdf_form_xobject_dictionary_gate.json",
+    "textOverlayRenderMode": "analysis_outputs/source_audit/current_pdf_text_overlay_render_mode_gate/current_pdf_text_overlay_render_mode_gate.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "decision": {
+    "currentPdfFormOverlayPlacementGate": "current_pdf_form_overlay_placement_no_selector",
+    "selectorUnlocked": false,
+    "reason": "The repeated OL2 form matrix offset applies to a near-full-page OCR form BBox, not a local page-76 mark. The same overlay signature repeats across every duplicate-PDF article page, has no page-76-unique group, contains only invisible OCR text, and has no strict unit/order terms or source-backed R3 bridge.",
+    "nextMove": "Treat the duplicate-PDF OCR form overlay as a text-search aid only. Keep the next best move on true source/original-layout/raw clue acquisition rather than PDF OCR-wrapper geometry."
+  },
+  "summary": {
+    "pdfCount": 3,
+    "formPlacementCount": 16,
+    "page76FormPlacementCount": 2,
+    "overlaySignatureGroupCount": 1,
+    "page76UniqueOverlaySignatureCount": 0,
+    "activeUniqueOverlaySignatureCount": 0,
+    "nearFullOverlayCount": 16,
+    "page76NearFullOverlayCount": 2,
+    "allPageRepeatingOverlayGroupCount": 1,
+    "visibleTextPlacementCount": 0,
+    "invisibleTextPlacementCount": 16,
+    "strictHitCount": 0,
+    "contextHitCount": 0,
+    "topOffsetPtValues": [
+      0.119995
+    ],
+    "topOffsetPage76Values": [
+      0.119995
+    ],
+    "activeProjectionInsideCount": 8,
+    "activeProjectionRowCount": 8,
+    "activeInsideRatio": 1.0,
+    "textOverlayVisiblePaintedTraceSpanCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0
+  },
+  "overlayRows": [
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "pdfPage": 1,
+      "articlePage": 73,
+      "pageXref": 5,
+      "resourceName": "OL2",
+      "formXref": 54,
+      "placementMatrix": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.119995
+      ],
+      "formBBox": [
+        0.0,
+        0.0,
+        612.0,
+        791.76001
+      ],
+      "displayBBox": [
+        0.0,
+        0.119995,
+        612.0,
+        791.880005
+      ],
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pageCoverage": 0.999697,
+      "leftGapPt": 0.0,
+      "rightGapPt": 0.0,
+      "topGapPt": 0.119995,
+      "bottomGapPt": 0.119995,
+      "nearFullOverlay": true,
+      "strictHitCount": 0,
+      "contextHitCount": 0,
+      "visibleTextRenderModeCount": 0,
+      "invisibleTextRenderModeCount": 7,
+      "textObjectCount": 7,
+      "textShowOperatorCount": 11,
+      "decodedStreamByteCount": 835,
+      "normalizedDictionaryHash16": "af3e350cdc1d6a7a",
+      "placementSignatureHash16": "2f51c696ce86cf16",
+      "overlaySignatureHash16": "002668dcd13a485d",
+      "signatureRecordCount": 16,
+      "signatureArticlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "signaturePdfs": [
+        "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "keyser bitcoin .pdf"
+      ],
+      "signatureRepeatsEveryPageInPdfSet": true,
+      "page76UniqueOverlaySignature": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "pdfPage": 2,
+      "articlePage": 74,
+      "pageXref": 6,
+      "resourceName": "OL2",
+      "formXref": 56,
+      "placementMatrix": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.119995
+      ],
+      "formBBox": [
+        0.0,
+        0.0,
+        612.0,
+        791.76001
+      ],
+      "displayBBox": [
+        0.0,
+        0.119995,
+        612.0,
+        791.880005
+      ],
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pageCoverage": 0.999697,
+      "leftGapPt": 0.0,
+      "rightGapPt": 0.0,
+      "topGapPt": 0.119995,
+      "bottomGapPt": 0.119995,
+      "nearFullOverlay": true,
+      "strictHitCount": 0,
+      "contextHitCount": 0,
+      "visibleTextRenderModeCount": 0,
+      "invisibleTextRenderModeCount": 4,
+      "textObjectCount": 4,
+      "textShowOperatorCount": 4,
+      "decodedStreamByteCount": 350,
+      "normalizedDictionaryHash16": "af3e350cdc1d6a7a",
+      "placementSignatureHash16": "2f51c696ce86cf16",
+      "overlaySignatureHash16": "002668dcd13a485d",
+      "signatureRecordCount": 16,
+      "signatureArticlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "signaturePdfs": [
+        "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "keyser bitcoin .pdf"
+      ],
+      "signatureRepeatsEveryPageInPdfSet": true,
+      "page76UniqueOverlaySignature": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "pdfPage": 3,
+      "articlePage": 75,
+      "pageXref": 7,
+      "resourceName": "OL2",
+      "formXref": 58,
+      "placementMatrix": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.119995
+      ],
+      "formBBox": [
+        0.0,
+        0.0,
+        612.0,
+        791.76001
+      ],
+      "displayBBox": [
+        0.0,
+        0.119995,
+        612.0,
+        791.880005
+      ],
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pageCoverage": 0.999697,
+      "leftGapPt": 0.0,
+      "rightGapPt": 0.0,
+      "topGapPt": 0.119995,
+      "bottomGapPt": 0.119995,
+      "nearFullOverlay": true,
+      "strictHitCount": 0,
+      "contextHitCount": 0,
+      "visibleTextRenderModeCount": 0,
+      "invisibleTextRenderModeCount": 14,
+      "textObjectCount": 14,
+      "textShowOperatorCount": 271,
+      "decodedStreamByteCount": 15639,
+      "normalizedDictionaryHash16": "af3e350cdc1d6a7a",
+      "placementSignatureHash16": "2f51c696ce86cf16",
+      "overlaySignatureHash16": "002668dcd13a485d",
+      "signatureRecordCount": 16,
+      "signatureArticlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "signaturePdfs": [
+        "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "keyser bitcoin .pdf"
+      ],
+      "signatureRepeatsEveryPageInPdfSet": true,
+      "page76UniqueOverlaySignature": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "pdfPage": 4,
+      "articlePage": 76,
+      "pageXref": 8,
+      "resourceName": "OL2",
+      "formXref": 60,
+      "placementMatrix": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.119995
+      ],
+      "formBBox": [
+        0.0,
+        0.0,
+        612.0,
+        791.76001
+      ],
+      "displayBBox": [
+        0.0,
+        0.119995,
+        612.0,
+        791.880005
+      ],
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pageCoverage": 0.999697,
+      "leftGapPt": 0.0,
+      "rightGapPt": 0.0,
+      "topGapPt": 0.119995,
+      "bottomGapPt": 0.119995,
+      "nearFullOverlay": true,
+      "strictHitCount": 0,
+      "contextHitCount": 0,
+      "visibleTextRenderModeCount": 0,
+      "invisibleTextRenderModeCount": 17,
+      "textObjectCount": 17,
+      "textShowOperatorCount": 269,
+      "decodedStreamByteCount": 15653,
+      "normalizedDictionaryHash16": "af3e350cdc1d6a7a",
+      "placementSignatureHash16": "2f51c696ce86cf16",
+      "overlaySignatureHash16": "002668dcd13a485d",
+      "signatureRecordCount": 16,
+      "signatureArticlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "signaturePdfs": [
+        "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "keyser bitcoin .pdf"
+      ],
+      "signatureRepeatsEveryPageInPdfSet": true,
+      "page76UniqueOverlaySignature": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "pdfPage": 5,
+      "articlePage": 77,
+      "pageXref": 9,
+      "resourceName": "OL2",
+      "formXref": 62,
+      "placementMatrix": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.119995
+      ],
+      "formBBox": [
+        0.0,
+        0.0,
+        612.0,
+        791.76001
+      ],
+      "displayBBox": [
+        0.0,
+        0.119995,
+        612.0,
+        791.880005
+      ],
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pageCoverage": 0.999697,
+      "leftGapPt": 0.0,
+      "rightGapPt": 0.0,
+      "topGapPt": 0.119995,
+      "bottomGapPt": 0.119995,
+      "nearFullOverlay": true,
+      "strictHitCount": 0,
+      "contextHitCount": 0,
+      "visibleTextRenderModeCount": 0,
+      "invisibleTextRenderModeCount": 16,
+      "textObjectCount": 16,
+      "textShowOperatorCount": 296,
+      "decodedStreamByteCount": 17781,
+      "normalizedDictionaryHash16": "af3e350cdc1d6a7a",
+      "placementSignatureHash16": "2f51c696ce86cf16",
+      "overlaySignatureHash16": "002668dcd13a485d",
+      "signatureRecordCount": 16,
+      "signatureArticlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "signaturePdfs": [
+        "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "keyser bitcoin .pdf"
+      ],
+      "signatureRepeatsEveryPageInPdfSet": true,
+      "page76UniqueOverlaySignature": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "pdfPage": 6,
+      "articlePage": 78,
+      "pageXref": 10,
+      "resourceName": "OL2",
+      "formXref": 64,
+      "placementMatrix": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.119995
+      ],
+      "formBBox": [
+        0.0,
+        0.0,
+        612.0,
+        791.76001
+      ],
+      "displayBBox": [
+        0.0,
+        0.119995,
+        612.0,
+        791.880005
+      ],
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pageCoverage": 0.999697,
+      "leftGapPt": 0.0,
+      "rightGapPt": 0.0,
+      "topGapPt": 0.119995,
+      "bottomGapPt": 0.119995,
+      "nearFullOverlay": true,
+      "strictHitCount": 0,
+      "contextHitCount": 0,
+      "visibleTextRenderModeCount": 0,
+      "invisibleTextRenderModeCount": 24,
+      "textObjectCount": 24,
+      "textShowOperatorCount": 211,
+      "decodedStreamByteCount": 12959,
+      "normalizedDictionaryHash16": "af3e350cdc1d6a7a",
+      "placementSignatureHash16": "2f51c696ce86cf16",
+      "overlaySignatureHash16": "002668dcd13a485d",
+      "signatureRecordCount": 16,
+      "signatureArticlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "signaturePdfs": [
+        "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "keyser bitcoin .pdf"
+      ],
+      "signatureRepeatsEveryPageInPdfSet": true,
+      "page76UniqueOverlaySignature": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "pdfPage": 7,
+      "articlePage": 79,
+      "pageXref": 11,
+      "resourceName": "OL2",
+      "formXref": 66,
+      "placementMatrix": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.119995
+      ],
+      "formBBox": [
+        0.0,
+        0.0,
+        612.0,
+        791.76001
+      ],
+      "displayBBox": [
+        0.0,
+        0.119995,
+        612.0,
+        791.880005
+      ],
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pageCoverage": 0.999697,
+      "leftGapPt": 0.0,
+      "rightGapPt": 0.0,
+      "topGapPt": 0.119995,
+      "bottomGapPt": 0.119995,
+      "nearFullOverlay": true,
+      "strictHitCount": 0,
+      "contextHitCount": 0,
+      "visibleTextRenderModeCount": 0,
+      "invisibleTextRenderModeCount": 28,
+      "textObjectCount": 28,
+      "textShowOperatorCount": 234,
+      "decodedStreamByteCount": 14197,
+      "normalizedDictionaryHash16": "af3e350cdc1d6a7a",
+      "placementSignatureHash16": "2f51c696ce86cf16",
+      "overlaySignatureHash16": "002668dcd13a485d",
+      "signatureRecordCount": 16,
+      "signatureArticlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "signaturePdfs": [
+        "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "keyser bitcoin .pdf"
+      ],
+      "signatureRepeatsEveryPageInPdfSet": true,
+      "page76UniqueOverlaySignature": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "pdfPage": 8,
+      "articlePage": 80,
+      "pageXref": 12,
+      "resourceName": "OL2",
+      "formXref": 68,
+      "placementMatrix": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.119995
+      ],
+      "formBBox": [
+        0.0,
+        0.0,
+        612.0,
+        791.76001
+      ],
+      "displayBBox": [
+        0.0,
+        0.119995,
+        612.0,
+        791.880005
+      ],
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pageCoverage": 0.999697,
+      "leftGapPt": 0.0,
+      "rightGapPt": 0.0,
+      "topGapPt": 0.119995,
+      "bottomGapPt": 0.119995,
+      "nearFullOverlay": true,
+      "strictHitCount": 0,
+      "contextHitCount": 0,
+      "visibleTextRenderModeCount": 0,
+      "invisibleTextRenderModeCount": 4,
+      "textObjectCount": 4,
+      "textShowOperatorCount": 5,
+      "decodedStreamByteCount": 378,
+      "normalizedDictionaryHash16": "af3e350cdc1d6a7a",
+      "placementSignatureHash16": "2f51c696ce86cf16",
+      "overlaySignatureHash16": "002668dcd13a485d",
+      "signatureRecordCount": 16,
+      "signatureArticlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "signaturePdfs": [
+        "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "keyser bitcoin .pdf"
+      ],
+      "signatureRepeatsEveryPageInPdfSet": true,
+      "page76UniqueOverlaySignature": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "pdfPage": 1,
+      "articlePage": 73,
+      "pageXref": 5,
+      "resourceName": "OL2",
+      "formXref": 54,
+      "placementMatrix": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.119995
+      ],
+      "formBBox": [
+        0.0,
+        0.0,
+        612.0,
+        791.76001
+      ],
+      "displayBBox": [
+        0.0,
+        0.119995,
+        612.0,
+        791.880005
+      ],
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pageCoverage": 0.999697,
+      "leftGapPt": 0.0,
+      "rightGapPt": 0.0,
+      "topGapPt": 0.119995,
+      "bottomGapPt": 0.119995,
+      "nearFullOverlay": true,
+      "strictHitCount": 0,
+      "contextHitCount": 0,
+      "visibleTextRenderModeCount": 0,
+      "invisibleTextRenderModeCount": 7,
+      "textObjectCount": 7,
+      "textShowOperatorCount": 11,
+      "decodedStreamByteCount": 835,
+      "normalizedDictionaryHash16": "af3e350cdc1d6a7a",
+      "placementSignatureHash16": "2f51c696ce86cf16",
+      "overlaySignatureHash16": "002668dcd13a485d",
+      "signatureRecordCount": 16,
+      "signatureArticlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "signaturePdfs": [
+        "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "keyser bitcoin .pdf"
+      ],
+      "signatureRepeatsEveryPageInPdfSet": true,
+      "page76UniqueOverlaySignature": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "pdfPage": 2,
+      "articlePage": 74,
+      "pageXref": 6,
+      "resourceName": "OL2",
+      "formXref": 56,
+      "placementMatrix": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.119995
+      ],
+      "formBBox": [
+        0.0,
+        0.0,
+        612.0,
+        791.76001
+      ],
+      "displayBBox": [
+        0.0,
+        0.119995,
+        612.0,
+        791.880005
+      ],
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pageCoverage": 0.999697,
+      "leftGapPt": 0.0,
+      "rightGapPt": 0.0,
+      "topGapPt": 0.119995,
+      "bottomGapPt": 0.119995,
+      "nearFullOverlay": true,
+      "strictHitCount": 0,
+      "contextHitCount": 0,
+      "visibleTextRenderModeCount": 0,
+      "invisibleTextRenderModeCount": 4,
+      "textObjectCount": 4,
+      "textShowOperatorCount": 4,
+      "decodedStreamByteCount": 350,
+      "normalizedDictionaryHash16": "af3e350cdc1d6a7a",
+      "placementSignatureHash16": "2f51c696ce86cf16",
+      "overlaySignatureHash16": "002668dcd13a485d",
+      "signatureRecordCount": 16,
+      "signatureArticlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "signaturePdfs": [
+        "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "keyser bitcoin .pdf"
+      ],
+      "signatureRepeatsEveryPageInPdfSet": true,
+      "page76UniqueOverlaySignature": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "pdfPage": 3,
+      "articlePage": 75,
+      "pageXref": 7,
+      "resourceName": "OL2",
+      "formXref": 58,
+      "placementMatrix": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.119995
+      ],
+      "formBBox": [
+        0.0,
+        0.0,
+        612.0,
+        791.76001
+      ],
+      "displayBBox": [
+        0.0,
+        0.119995,
+        612.0,
+        791.880005
+      ],
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pageCoverage": 0.999697,
+      "leftGapPt": 0.0,
+      "rightGapPt": 0.0,
+      "topGapPt": 0.119995,
+      "bottomGapPt": 0.119995,
+      "nearFullOverlay": true,
+      "strictHitCount": 0,
+      "contextHitCount": 0,
+      "visibleTextRenderModeCount": 0,
+      "invisibleTextRenderModeCount": 14,
+      "textObjectCount": 14,
+      "textShowOperatorCount": 271,
+      "decodedStreamByteCount": 15639,
+      "normalizedDictionaryHash16": "af3e350cdc1d6a7a",
+      "placementSignatureHash16": "2f51c696ce86cf16",
+      "overlaySignatureHash16": "002668dcd13a485d",
+      "signatureRecordCount": 16,
+      "signatureArticlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "signaturePdfs": [
+        "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "keyser bitcoin .pdf"
+      ],
+      "signatureRepeatsEveryPageInPdfSet": true,
+      "page76UniqueOverlaySignature": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "pdfPage": 4,
+      "articlePage": 76,
+      "pageXref": 8,
+      "resourceName": "OL2",
+      "formXref": 60,
+      "placementMatrix": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.119995
+      ],
+      "formBBox": [
+        0.0,
+        0.0,
+        612.0,
+        791.76001
+      ],
+      "displayBBox": [
+        0.0,
+        0.119995,
+        612.0,
+        791.880005
+      ],
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pageCoverage": 0.999697,
+      "leftGapPt": 0.0,
+      "rightGapPt": 0.0,
+      "topGapPt": 0.119995,
+      "bottomGapPt": 0.119995,
+      "nearFullOverlay": true,
+      "strictHitCount": 0,
+      "contextHitCount": 0,
+      "visibleTextRenderModeCount": 0,
+      "invisibleTextRenderModeCount": 17,
+      "textObjectCount": 17,
+      "textShowOperatorCount": 269,
+      "decodedStreamByteCount": 15653,
+      "normalizedDictionaryHash16": "af3e350cdc1d6a7a",
+      "placementSignatureHash16": "2f51c696ce86cf16",
+      "overlaySignatureHash16": "002668dcd13a485d",
+      "signatureRecordCount": 16,
+      "signatureArticlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "signaturePdfs": [
+        "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "keyser bitcoin .pdf"
+      ],
+      "signatureRepeatsEveryPageInPdfSet": true,
+      "page76UniqueOverlaySignature": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "pdfPage": 5,
+      "articlePage": 77,
+      "pageXref": 9,
+      "resourceName": "OL2",
+      "formXref": 62,
+      "placementMatrix": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.119995
+      ],
+      "formBBox": [
+        0.0,
+        0.0,
+        612.0,
+        791.76001
+      ],
+      "displayBBox": [
+        0.0,
+        0.119995,
+        612.0,
+        791.880005
+      ],
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pageCoverage": 0.999697,
+      "leftGapPt": 0.0,
+      "rightGapPt": 0.0,
+      "topGapPt": 0.119995,
+      "bottomGapPt": 0.119995,
+      "nearFullOverlay": true,
+      "strictHitCount": 0,
+      "contextHitCount": 0,
+      "visibleTextRenderModeCount": 0,
+      "invisibleTextRenderModeCount": 16,
+      "textObjectCount": 16,
+      "textShowOperatorCount": 296,
+      "decodedStreamByteCount": 17781,
+      "normalizedDictionaryHash16": "af3e350cdc1d6a7a",
+      "placementSignatureHash16": "2f51c696ce86cf16",
+      "overlaySignatureHash16": "002668dcd13a485d",
+      "signatureRecordCount": 16,
+      "signatureArticlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "signaturePdfs": [
+        "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "keyser bitcoin .pdf"
+      ],
+      "signatureRepeatsEveryPageInPdfSet": true,
+      "page76UniqueOverlaySignature": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "pdfPage": 6,
+      "articlePage": 78,
+      "pageXref": 10,
+      "resourceName": "OL2",
+      "formXref": 64,
+      "placementMatrix": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.119995
+      ],
+      "formBBox": [
+        0.0,
+        0.0,
+        612.0,
+        791.76001
+      ],
+      "displayBBox": [
+        0.0,
+        0.119995,
+        612.0,
+        791.880005
+      ],
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pageCoverage": 0.999697,
+      "leftGapPt": 0.0,
+      "rightGapPt": 0.0,
+      "topGapPt": 0.119995,
+      "bottomGapPt": 0.119995,
+      "nearFullOverlay": true,
+      "strictHitCount": 0,
+      "contextHitCount": 0,
+      "visibleTextRenderModeCount": 0,
+      "invisibleTextRenderModeCount": 24,
+      "textObjectCount": 24,
+      "textShowOperatorCount": 211,
+      "decodedStreamByteCount": 12959,
+      "normalizedDictionaryHash16": "af3e350cdc1d6a7a",
+      "placementSignatureHash16": "2f51c696ce86cf16",
+      "overlaySignatureHash16": "002668dcd13a485d",
+      "signatureRecordCount": 16,
+      "signatureArticlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "signaturePdfs": [
+        "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "keyser bitcoin .pdf"
+      ],
+      "signatureRepeatsEveryPageInPdfSet": true,
+      "page76UniqueOverlaySignature": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "pdfPage": 7,
+      "articlePage": 79,
+      "pageXref": 11,
+      "resourceName": "OL2",
+      "formXref": 66,
+      "placementMatrix": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.119995
+      ],
+      "formBBox": [
+        0.0,
+        0.0,
+        612.0,
+        791.76001
+      ],
+      "displayBBox": [
+        0.0,
+        0.119995,
+        612.0,
+        791.880005
+      ],
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pageCoverage": 0.999697,
+      "leftGapPt": 0.0,
+      "rightGapPt": 0.0,
+      "topGapPt": 0.119995,
+      "bottomGapPt": 0.119995,
+      "nearFullOverlay": true,
+      "strictHitCount": 0,
+      "contextHitCount": 0,
+      "visibleTextRenderModeCount": 0,
+      "invisibleTextRenderModeCount": 28,
+      "textObjectCount": 28,
+      "textShowOperatorCount": 234,
+      "decodedStreamByteCount": 14197,
+      "normalizedDictionaryHash16": "af3e350cdc1d6a7a",
+      "placementSignatureHash16": "2f51c696ce86cf16",
+      "overlaySignatureHash16": "002668dcd13a485d",
+      "signatureRecordCount": 16,
+      "signatureArticlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "signaturePdfs": [
+        "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "keyser bitcoin .pdf"
+      ],
+      "signatureRepeatsEveryPageInPdfSet": true,
+      "page76UniqueOverlaySignature": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "pdfPage": 8,
+      "articlePage": 80,
+      "pageXref": 12,
+      "resourceName": "OL2",
+      "formXref": 68,
+      "placementMatrix": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.119995
+      ],
+      "formBBox": [
+        0.0,
+        0.0,
+        612.0,
+        791.76001
+      ],
+      "displayBBox": [
+        0.0,
+        0.119995,
+        612.0,
+        791.880005
+      ],
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "pageCoverage": 0.999697,
+      "leftGapPt": 0.0,
+      "rightGapPt": 0.0,
+      "topGapPt": 0.119995,
+      "bottomGapPt": 0.119995,
+      "nearFullOverlay": true,
+      "strictHitCount": 0,
+      "contextHitCount": 0,
+      "visibleTextRenderModeCount": 0,
+      "invisibleTextRenderModeCount": 4,
+      "textObjectCount": 4,
+      "textShowOperatorCount": 5,
+      "decodedStreamByteCount": 378,
+      "normalizedDictionaryHash16": "af3e350cdc1d6a7a",
+      "placementSignatureHash16": "2f51c696ce86cf16",
+      "overlaySignatureHash16": "002668dcd13a485d",
+      "signatureRecordCount": 16,
+      "signatureArticlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "signaturePdfs": [
+        "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "keyser bitcoin .pdf"
+      ],
+      "signatureRepeatsEveryPageInPdfSet": true,
+      "page76UniqueOverlaySignature": false
+    }
+  ],
+  "activeProjectionRows": [
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "articlePage": 76,
+      "formXref": 60,
+      "targetId": "buying_dip",
+      "targetLabel": "O4 buying the dip",
+      "targetPhrase": "buying the dip",
+      "projectedPageBox": [
+        320.915094,
+        528.242647,
+        433.259434,
+        539.889706
+      ],
+      "coverageInsideOverlay": 1.0,
+      "insideOverlay": true
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "articlePage": 76,
+      "formXref": 60,
+      "targetId": "one_billion",
+      "targetLabel": "B4 $1 billion",
+      "targetPhrase": "$1 billion",
+      "projectedPageBox": [
+        102.962264,
+        581.867647,
+        166.231132,
+        593.272059
+      ],
+      "coverageInsideOverlay": 1.0,
+      "insideOverlay": true
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "articlePage": 76,
+      "formXref": 60,
+      "targetId": "volcano_bonds",
+      "targetLabel": "G5 Volcano Bonds",
+      "targetPhrase": "Volcano Bonds",
+      "projectedPageBox": [
+        191.25,
+        617.294118,
+        287.716981,
+        628.941176
+      ],
+      "coverageInsideOverlay": 1.0,
+      "insideOverlay": true
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "articlePage": 76,
+      "formXref": 60,
+      "targetId": "shitcoiner_heart",
+      "targetLabel": "O5 shitcoiner at heart",
+      "targetPhrase": "shitcoiner at heart",
+      "projectedPageBox": [
+        250.188679,
+        711.441176,
+        399.580189,
+        723.573529
+      ],
+      "coverageInsideOverlay": 1.0,
+      "insideOverlay": true
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "articlePage": 76,
+      "formXref": 60,
+      "targetId": "buying_dip",
+      "targetLabel": "O4 buying the dip",
+      "targetPhrase": "buying the dip",
+      "projectedPageBox": [
+        320.915094,
+        528.242647,
+        433.259434,
+        539.889706
+      ],
+      "coverageInsideOverlay": 1.0,
+      "insideOverlay": true
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "articlePage": 76,
+      "formXref": 60,
+      "targetId": "one_billion",
+      "targetLabel": "B4 $1 billion",
+      "targetPhrase": "$1 billion",
+      "projectedPageBox": [
+        102.962264,
+        581.867647,
+        166.231132,
+        593.272059
+      ],
+      "coverageInsideOverlay": 1.0,
+      "insideOverlay": true
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "articlePage": 76,
+      "formXref": 60,
+      "targetId": "volcano_bonds",
+      "targetLabel": "G5 Volcano Bonds",
+      "targetPhrase": "Volcano Bonds",
+      "projectedPageBox": [
+        191.25,
+        617.294118,
+        287.716981,
+        628.941176
+      ],
+      "coverageInsideOverlay": 1.0,
+      "insideOverlay": true
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "articlePage": 76,
+      "formXref": 60,
+      "targetId": "shitcoiner_heart",
+      "targetLabel": "O5 shitcoiner at heart",
+      "targetPhrase": "shitcoiner at heart",
+      "projectedPageBox": [
+        250.188679,
+        711.441176,
+        399.580189,
+        723.573529
+      ],
+      "coverageInsideOverlay": 1.0,
+      "insideOverlay": true
+    }
+  ],
+  "fingerprint": "forms=16|p76Forms=2|groups=1|p76Unique=0|activeUnique=0|nearFull=16|p76NearFull=2|allPageGroups=1|visiblePlacements=0|invisiblePlacements=16|strict=0|offsets=0.119995|activeInside=8/8|sourceR3=0|triggers=0/9|selectors=0",
+  "sheet": "analysis_outputs/source_audit/current_pdf_form_overlay_placement_gate/current_pdf_form_overlay_placement_gate_sheet.jpg"
+}

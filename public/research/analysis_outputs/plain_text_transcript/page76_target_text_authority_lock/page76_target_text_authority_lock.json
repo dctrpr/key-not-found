@@ -1,0 +1,766 @@
+{
+  "createdAt": "2026-05-20T23:24:03",
+  "scope": "page-76 target text authority lock; no extraction, no key derivation, no hashing, no OCR, no address checks",
+  "sources": [
+    {
+      "id": "canonical_plain",
+      "path": "analysis_outputs/plain_text_transcript/canonical_plain_article_body.txt",
+      "role": "corrected canonical plain text",
+      "authoritative": true,
+      "exists": true,
+      "charCount": 7537,
+      "presentCount": 10,
+      "missingCount": 0,
+      "missing": [],
+      "checks": [
+        {
+          "targetId": "buying_dip",
+          "phrase": "buying the dip",
+          "role": "O4 orange target",
+          "present": true,
+          "snippet": " international monetary fund (imf) on twitter? he's taunting them, telling them he's \"buying the dip.\" i tweeted president nayib bukele when he announced he was going to tap his nation's"
+        },
+        {
+          "targetId": "one_billion",
+          "phrase": "$1 billion",
+          "role": "B4 grey target",
+          "present": true,
+          "snippet": "ent nayib bukele when he announced he was going to tap his nation's volcanoes to mine $1 billion in bitcoin - that he should sell billions worth of future bitcoin earnings collateral"
+        },
+        {
+          "targetId": "should_sell",
+          "phrase": "should sell",
+          "role": "p78-frame top edge phrase",
+          "present": true,
+          "snippet": "ed he was going to tap his nation's volcanoes to mine $1 billion in bitcoin - that he should sell billions worth of future bitcoin earnings collateralized \"volcano bonds\" to pay off t"
+        },
+        {
+          "targetId": "future_bitcoin_earnings",
+          "phrase": "future bitcoin earnings",
+          "role": "source-band phrase",
+          "present": true,
+          "snippet": "ion's volcanoes to mine $1 billion in bitcoin - that he should sell billions worth of future bitcoin earnings collateralized \"volcano bonds\" to pay off the imf loan and get rid of those leeches. "
+        },
+        {
+          "targetId": "volcano_bonds",
+          "phrase": "Volcano Bonds",
+          "role": "G5 trusted target",
+          "present": true,
+          "snippet": "tcoin - that he should sell billions worth of future bitcoin earnings collateralized \"volcano bonds\" to pay off the imf loan and get rid of those leeches. i tagged mike novogratz in the"
+        },
+        {
+          "targetId": "imf_loan",
+          "phrase": "IMF loan",
+          "role": "G5 neighbor",
+          "present": true,
+          "snippet": "llions worth of future bitcoin earnings collateralized \"volcano bonds\" to pay off the imf loan and get rid of those leeches. i tagged mike novogratz in the tweet, figuring he could"
+        },
+        {
+          "targetId": "tagged_mike",
+          "phrase": "I tagged Mike",
+          "role": "source-band phrase",
+          "present": true,
+          "snippet": " collateralized \"volcano bonds\" to pay off the imf loan and get rid of those leeches. i tagged mike novogratz in the tweet, figuring he could sell a bunch to his wall street crony pals,"
+        },
+        {
+          "targetId": "novogratz",
+          "phrase": "Novogratz",
+          "role": "source-band phrase",
+          "present": true,
+          "snippet": "d \"volcano bonds\" to pay off the imf loan and get rid of those leeches. i tagged mike novogratz in the tweet, figuring he could sell a bunch to his wall street crony pals, but so fa"
+        },
+        {
+          "targetId": "trust_that_guy",
+          "phrase": "I don't really trust that guy",
+          "role": "nearby Typeka Mix phrase",
+          "present": true,
+          "snippet": "e could sell a bunch to his wall street crony pals, but so far he hasn't moved on it. i don't really trust that guy. maybe because he's a shitcoiner at heart. meanwhile, back in el salvador, 42% of the"
+        },
+        {
+          "targetId": "shitcoiner_heart",
+          "phrase": "shitcoiner at heart",
+          "role": "O5 primary target",
+          "present": true,
+          "snippet": "but so far he hasn't moved on it. i don't really trust that guy. maybe because he's a shitcoiner at heart. meanwhile, back in el salvador, 42% of the country is now hyperbitcoinized (at the t"
+        }
+      ]
+    },
+    {
+      "id": "docm_text",
+      "path": "analysis_outputs/docm_format_sources/article_with_fonts_text.txt",
+      "role": "Article with Fonts DOCM text witness",
+      "authoritative": true,
+      "exists": true,
+      "charCount": 7632,
+      "presentCount": 10,
+      "missingCount": 0,
+      "missing": [],
+      "checks": [
+        {
+          "targetId": "buying_dip",
+          "phrase": "buying the dip",
+          "role": "O4 orange target",
+          "present": true,
+          "snippet": " international monetary fund (imf) on twitter? he's taunting them, telling them he's \"buying the dip.\" i tweeted president nayib bukele when he announced he was going to tap his nation's"
+        },
+        {
+          "targetId": "one_billion",
+          "phrase": "$1 billion",
+          "role": "B4 grey target",
+          "present": true,
+          "snippet": "ent nayib bukele when he announced he was going to tap his nation's volcanoes to mine $1 billion in bitcoin - that he should sell billions worth of future bitcoin earnings collateral"
+        },
+        {
+          "targetId": "should_sell",
+          "phrase": "should sell",
+          "role": "p78-frame top edge phrase",
+          "present": true,
+          "snippet": "ed he was going to tap his nation's volcanoes to mine $1 billion in bitcoin - that he should sell billions worth of future bitcoin earnings collateralized \"volcano bonds\" to pay off t"
+        },
+        {
+          "targetId": "future_bitcoin_earnings",
+          "phrase": "future bitcoin earnings",
+          "role": "source-band phrase",
+          "present": true,
+          "snippet": "ion's volcanoes to mine $1 billion in bitcoin - that he should sell billions worth of future bitcoin earnings collateralized \"volcano bonds\" to pay off the imf loan and get rid of those leeches. "
+        },
+        {
+          "targetId": "volcano_bonds",
+          "phrase": "Volcano Bonds",
+          "role": "G5 trusted target",
+          "present": true,
+          "snippet": "tcoin - that he should sell billions worth of future bitcoin earnings collateralized \"volcano bonds\" to pay off the imf loan and get rid of those leeches. i tagged mike novogratz in the"
+        },
+        {
+          "targetId": "imf_loan",
+          "phrase": "IMF loan",
+          "role": "G5 neighbor",
+          "present": true,
+          "snippet": "llions worth of future bitcoin earnings collateralized \"volcano bonds\" to pay off the imf loan and get rid of those leeches. i tagged mike novogratz in the tweet, figuring he could"
+        },
+        {
+          "targetId": "tagged_mike",
+          "phrase": "I tagged Mike",
+          "role": "source-band phrase",
+          "present": true,
+          "snippet": " collateralized \"volcano bonds\" to pay off the imf loan and get rid of those leeches. i tagged mike novogratz in the tweet, figuring he could sell a bunch to his wall street crony pals,"
+        },
+        {
+          "targetId": "novogratz",
+          "phrase": "Novogratz",
+          "role": "source-band phrase",
+          "present": true,
+          "snippet": "d \"volcano bonds\" to pay off the imf loan and get rid of those leeches. i tagged mike novogratz in the tweet, figuring he could sell a bunch to his wall street crony pals, but so fa"
+        },
+        {
+          "targetId": "trust_that_guy",
+          "phrase": "I don't really trust that guy",
+          "role": "nearby Typeka Mix phrase",
+          "present": true,
+          "snippet": "e could sell a bunch to his wall street crony pals, but so far he hasn't moved on it. i don't really trust that guy. maybe because he's a shitcoiner at heart. meanwhile, back in el salvador, 42% of the"
+        },
+        {
+          "targetId": "shitcoiner_heart",
+          "phrase": "shitcoiner at heart",
+          "role": "O5 primary target",
+          "present": true,
+          "snippet": "but so far he hasn't moved on it. i don't really trust that guy. maybe because he's a shitcoiner at heart. meanwhile, back in el salvador, 42% of the country is now hyperbitcoinized (at the t"
+        }
+      ]
+    },
+    {
+      "id": "user_raw_plain",
+      "path": "analysis_outputs/plain_text_transcript/user_plain_article_latest.txt",
+      "role": "latest raw user plain-text paste",
+      "authoritative": false,
+      "exists": true,
+      "charCount": 7622,
+      "presentCount": 9,
+      "missingCount": 1,
+      "missing": [
+        "volcano_bonds"
+      ],
+      "checks": [
+        {
+          "targetId": "buying_dip",
+          "phrase": "buying the dip",
+          "role": "O4 orange target",
+          "present": true,
+          "snippet": " international monetary fund (imf) on twitter? he's taunting them, telling them he's \"buying the dip\". i tweeted president nayib bukele when he announced he was going to tap his nation's"
+        },
+        {
+          "targetId": "one_billion",
+          "phrase": "$1 billion",
+          "role": "B4 grey target",
+          "present": true,
+          "snippet": "ent nayib bukele when he announced he was going to tap his nation's volcanoes to mine $1 billion in bitcoin - that he should sell billions worth of future bitcoin earnings collateral"
+        },
+        {
+          "targetId": "should_sell",
+          "phrase": "should sell",
+          "role": "p78-frame top edge phrase",
+          "present": true,
+          "snippet": "ed he was going to tap his nation's volcanoes to mine $1 billion in bitcoin - that he should sell billions worth of future bitcoin earnings collateralized to pay off the imf loan and "
+        },
+        {
+          "targetId": "future_bitcoin_earnings",
+          "phrase": "future bitcoin earnings",
+          "role": "source-band phrase",
+          "present": true,
+          "snippet": "ion's volcanoes to mine $1 billion in bitcoin - that he should sell billions worth of future bitcoin earnings collateralized to pay off the imf loan and get rid of those leeches. i tagged mike no"
+        },
+        {
+          "targetId": "volcano_bonds",
+          "phrase": "Volcano Bonds",
+          "role": "G5 trusted target",
+          "present": false,
+          "snippet": null
+        },
+        {
+          "targetId": "imf_loan",
+          "phrase": "IMF loan",
+          "role": "G5 neighbor",
+          "present": true,
+          "snippet": "e should sell billions worth of future bitcoin earnings collateralized to pay off the imf loan and get rid of those leeches. i tagged mike novogratz in the tweet, figuring he could"
+        },
+        {
+          "targetId": "tagged_mike",
+          "phrase": "I tagged Mike",
+          "role": "source-band phrase",
+          "present": true,
+          "snippet": "bitcoin earnings collateralized to pay off the imf loan and get rid of those leeches. i tagged mike novogratz in the tweet, figuring he could sell a bunch to his wall street crony pals,"
+        },
+        {
+          "targetId": "novogratz",
+          "phrase": "Novogratz",
+          "role": "source-band phrase",
+          "present": true,
+          "snippet": "gs collateralized to pay off the imf loan and get rid of those leeches. i tagged mike novogratz in the tweet, figuring he could sell a bunch to his wall street crony pals, but so fa"
+        },
+        {
+          "targetId": "trust_that_guy",
+          "phrase": "I don't really trust that guy",
+          "role": "nearby Typeka Mix phrase",
+          "present": true,
+          "snippet": "e could sell a bunch to his wall street crony pals, but so far he hasn't moved on it. i don't really trust that guy. maybe because he's a shitcoiner at heart. meanwhile, back in el salvador, 42% of the"
+        },
+        {
+          "targetId": "shitcoiner_heart",
+          "phrase": "shitcoiner at heart",
+          "role": "O5 primary target",
+          "present": true,
+          "snippet": "but so far he hasn't moved on it. i don't really trust that guy. maybe because he's a shitcoiner at heart. meanwhile, back in el salvador, 42% of the country is now hyperbitcoinized (at the t"
+        }
+      ]
+    },
+    {
+      "id": "markdown_transcript",
+      "path": "analysis_outputs/3d_article_map/user_markdown_transcript.md",
+      "role": "Markdown bold/highlight transcript witness",
+      "authoritative": true,
+      "exists": true,
+      "charCount": 8602,
+      "presentCount": 10,
+      "missingCount": 0,
+      "missing": [],
+      "checks": [
+        {
+          "targetId": "buying_dip",
+          "phrase": "buying the dip",
+          "role": "O4 orange target",
+          "present": true,
+          "snippet": " international monetary fund (imf) on twitter? he's taunting them, telling them he's \"buying the dip.\" i tweeted president nayib bukele when he announced he was going to tap his nation's"
+        },
+        {
+          "targetId": "one_billion",
+          "phrase": "$1 billion",
+          "role": "B4 grey target",
+          "present": true,
+          "snippet": "ent nayib bukele when he announced he was going to tap his nation's volcanoes to mine $1 billion in bitcoin - that he should sell billions worth of future bitcoin earnings collateral"
+        },
+        {
+          "targetId": "should_sell",
+          "phrase": "should sell",
+          "role": "p78-frame top edge phrase",
+          "present": true,
+          "snippet": "ed he was going to tap his nation's volcanoes to mine $1 billion in bitcoin - that he should sell billions worth of future bitcoin earnings collateralized \"volcano bonds\" to pay off t"
+        },
+        {
+          "targetId": "future_bitcoin_earnings",
+          "phrase": "future bitcoin earnings",
+          "role": "source-band phrase",
+          "present": true,
+          "snippet": "ion's volcanoes to mine $1 billion in bitcoin - that he should sell billions worth of future bitcoin earnings collateralized \"volcano bonds\" to pay off the imf loan and get rid of those leeches. "
+        },
+        {
+          "targetId": "volcano_bonds",
+          "phrase": "Volcano Bonds",
+          "role": "G5 trusted target",
+          "present": true,
+          "snippet": "tcoin - that he should sell billions worth of future bitcoin earnings collateralized \"volcano bonds\" to pay off the imf loan and get rid of those leeches. i tagged mike novogratz in the"
+        },
+        {
+          "targetId": "imf_loan",
+          "phrase": "IMF loan",
+          "role": "G5 neighbor",
+          "present": true,
+          "snippet": "llions worth of future bitcoin earnings collateralized \"volcano bonds\" to pay off the imf loan and get rid of those leeches. i tagged mike novogratz in the tweet, figuring he could"
+        },
+        {
+          "targetId": "tagged_mike",
+          "phrase": "I tagged Mike",
+          "role": "source-band phrase",
+          "present": true,
+          "snippet": " collateralized \"volcano bonds\" to pay off the imf loan and get rid of those leeches. i tagged mike novogratz in the tweet, figuring he could sell a bunch to his wall street crony pals,"
+        },
+        {
+          "targetId": "novogratz",
+          "phrase": "Novogratz",
+          "role": "source-band phrase",
+          "present": true,
+          "snippet": "d \"volcano bonds\" to pay off the imf loan and get rid of those leeches. i tagged mike novogratz in the tweet, figuring he could sell a bunch to his wall street crony pals, but so fa"
+        },
+        {
+          "targetId": "trust_that_guy",
+          "phrase": "I don't really trust that guy",
+          "role": "nearby Typeka Mix phrase",
+          "present": true,
+          "snippet": "e could sell a bunch to his wall street crony pals, but so far he hasn't moved on it. i don't really trust that guy. maybe because he's a shitcoiner at heart. meanwhile, back in el salvador, 42% of the"
+        },
+        {
+          "targetId": "shitcoiner_heart",
+          "phrase": "shitcoiner at heart",
+          "role": "O5 primary target",
+          "present": true,
+          "snippet": "but so far he hasn't moved on it. i don't really trust that guy. maybe because he's a shitcoiner at heart. meanwhile, back in el salvador, 42% of the country is now hyperbitcoinized (at the t"
+        }
+      ]
+    },
+    {
+      "id": "annotated_transcript",
+      "path": "analysis_outputs/3d_article_map/user_annotated_transcript.txt",
+      "role": "annotated format witness; inline notes can interrupt exact prose",
+      "authoritative": false,
+      "exists": true,
+      "charCount": 11929,
+      "presentCount": 9,
+      "missingCount": 1,
+      "missing": [
+        "trust_that_guy"
+      ],
+      "checks": [
+        {
+          "targetId": "buying_dip",
+          "phrase": "buying the dip",
+          "role": "O4 orange target",
+          "present": true,
+          "snippet": " international monetary fund (imf) on twitter? he's taunting them, telling them he's \"buying the dip.\" (buying the dip all in bold and highlighted orange) i tweeted president nayib bukel"
+        },
+        {
+          "targetId": "one_billion",
+          "phrase": "$1 billion",
+          "role": "B4 grey target",
+          "present": true,
+          "snippet": "ele all in bold) when he announced he was going to tap his nation's colvanoes to mine $1 billion ($1 billion in bold and highlighted grey) in bitcoin - that he should sell billions w"
+        },
+        {
+          "targetId": "should_sell",
+          "phrase": "should sell",
+          "role": "p78-frame top edge phrase",
+          "present": true,
+          "snippet": "oes to mine $1 billion ($1 billion in bold and highlighted grey) in bitcoin - that he should sell billions worth of future bitcoin earnings collateralized \"volcano bonds\" (volcano bon"
+        },
+        {
+          "targetId": "future_bitcoin_earnings",
+          "phrase": "future bitcoin earnings",
+          "role": "source-band phrase",
+          "present": true,
+          "snippet": "lion in bold and highlighted grey) in bitcoin - that he should sell billions worth of future bitcoin earnings collateralized \"volcano bonds\" (volcano bonds all in bold and highlighted grey) to pa"
+        },
+        {
+          "targetId": "volcano_bonds",
+          "phrase": "Volcano Bonds",
+          "role": "G5 trusted target",
+          "present": true,
+          "snippet": "tcoin - that he should sell billions worth of future bitcoin earnings collateralized \"volcano bonds\" (volcano bonds all in bold and highlighted grey) to pay off the imf loan (imf loan i"
+        },
+        {
+          "targetId": "imf_loan",
+          "phrase": "IMF loan",
+          "role": "G5 neighbor",
+          "present": true,
+          "snippet": "lized \"volcano bonds\" (volcano bonds all in bold and highlighted grey) to pay off the imf loan (imf loan in bold) and get rid of those leeches. i tagged mike (ie in bold) novogratz"
+        },
+        {
+          "targetId": "tagged_mike",
+          "phrase": "I tagged Mike",
+          "role": "source-band phrase",
+          "present": true,
+          "snippet": "ighted grey) to pay off the imf loan (imf loan in bold) and get rid of those leeches. i tagged mike (ie in bold) novogratz (nvz in bold) in the tweet, figuring he could sell a bunch to "
+        },
+        {
+          "targetId": "novogratz",
+          "phrase": "Novogratz",
+          "role": "source-band phrase",
+          "present": true,
+          "snippet": " imf loan (imf loan in bold) and get rid of those leeches. i tagged mike (ie in bold) novogratz (nvz in bold) in the tweet, figuring he could sell a bunch to his wall street crony p"
+        },
+        {
+          "targetId": "trust_that_guy",
+          "phrase": "I don't really trust that guy",
+          "role": "nearby Typeka Mix phrase",
+          "present": false,
+          "snippet": null
+        },
+        {
+          "targetId": "shitcoiner_heart",
+          "phrase": "shitcoiner at heart",
+          "role": "O5 primary target",
+          "present": true,
+          "snippet": "ell in bold) trust (u in bold) that (h in bold) guy (u in bold). maybe because he's a shitcoiner at heart. (shitcoiner at heart all in bold and highlighted orange) page 3 meanwhile, back in e"
+        }
+      ]
+    }
+  ],
+  "targetMatrix": [
+    {
+      "sourceId": "canonical_plain",
+      "targetId": "buying_dip",
+      "present": true
+    },
+    {
+      "sourceId": "canonical_plain",
+      "targetId": "one_billion",
+      "present": true
+    },
+    {
+      "sourceId": "canonical_plain",
+      "targetId": "should_sell",
+      "present": true
+    },
+    {
+      "sourceId": "canonical_plain",
+      "targetId": "future_bitcoin_earnings",
+      "present": true
+    },
+    {
+      "sourceId": "canonical_plain",
+      "targetId": "volcano_bonds",
+      "present": true
+    },
+    {
+      "sourceId": "canonical_plain",
+      "targetId": "imf_loan",
+      "present": true
+    },
+    {
+      "sourceId": "canonical_plain",
+      "targetId": "tagged_mike",
+      "present": true
+    },
+    {
+      "sourceId": "canonical_plain",
+      "targetId": "novogratz",
+      "present": true
+    },
+    {
+      "sourceId": "canonical_plain",
+      "targetId": "trust_that_guy",
+      "present": true
+    },
+    {
+      "sourceId": "canonical_plain",
+      "targetId": "shitcoiner_heart",
+      "present": true
+    },
+    {
+      "sourceId": "docm_text",
+      "targetId": "buying_dip",
+      "present": true
+    },
+    {
+      "sourceId": "docm_text",
+      "targetId": "one_billion",
+      "present": true
+    },
+    {
+      "sourceId": "docm_text",
+      "targetId": "should_sell",
+      "present": true
+    },
+    {
+      "sourceId": "docm_text",
+      "targetId": "future_bitcoin_earnings",
+      "present": true
+    },
+    {
+      "sourceId": "docm_text",
+      "targetId": "volcano_bonds",
+      "present": true
+    },
+    {
+      "sourceId": "docm_text",
+      "targetId": "imf_loan",
+      "present": true
+    },
+    {
+      "sourceId": "docm_text",
+      "targetId": "tagged_mike",
+      "present": true
+    },
+    {
+      "sourceId": "docm_text",
+      "targetId": "novogratz",
+      "present": true
+    },
+    {
+      "sourceId": "docm_text",
+      "targetId": "trust_that_guy",
+      "present": true
+    },
+    {
+      "sourceId": "docm_text",
+      "targetId": "shitcoiner_heart",
+      "present": true
+    },
+    {
+      "sourceId": "user_raw_plain",
+      "targetId": "buying_dip",
+      "present": true
+    },
+    {
+      "sourceId": "user_raw_plain",
+      "targetId": "one_billion",
+      "present": true
+    },
+    {
+      "sourceId": "user_raw_plain",
+      "targetId": "should_sell",
+      "present": true
+    },
+    {
+      "sourceId": "user_raw_plain",
+      "targetId": "future_bitcoin_earnings",
+      "present": true
+    },
+    {
+      "sourceId": "user_raw_plain",
+      "targetId": "volcano_bonds",
+      "present": false
+    },
+    {
+      "sourceId": "user_raw_plain",
+      "targetId": "imf_loan",
+      "present": true
+    },
+    {
+      "sourceId": "user_raw_plain",
+      "targetId": "tagged_mike",
+      "present": true
+    },
+    {
+      "sourceId": "user_raw_plain",
+      "targetId": "novogratz",
+      "present": true
+    },
+    {
+      "sourceId": "user_raw_plain",
+      "targetId": "trust_that_guy",
+      "present": true
+    },
+    {
+      "sourceId": "user_raw_plain",
+      "targetId": "shitcoiner_heart",
+      "present": true
+    },
+    {
+      "sourceId": "markdown_transcript",
+      "targetId": "buying_dip",
+      "present": true
+    },
+    {
+      "sourceId": "markdown_transcript",
+      "targetId": "one_billion",
+      "present": true
+    },
+    {
+      "sourceId": "markdown_transcript",
+      "targetId": "should_sell",
+      "present": true
+    },
+    {
+      "sourceId": "markdown_transcript",
+      "targetId": "future_bitcoin_earnings",
+      "present": true
+    },
+    {
+      "sourceId": "markdown_transcript",
+      "targetId": "volcano_bonds",
+      "present": true
+    },
+    {
+      "sourceId": "markdown_transcript",
+      "targetId": "imf_loan",
+      "present": true
+    },
+    {
+      "sourceId": "markdown_transcript",
+      "targetId": "tagged_mike",
+      "present": true
+    },
+    {
+      "sourceId": "markdown_transcript",
+      "targetId": "novogratz",
+      "present": true
+    },
+    {
+      "sourceId": "markdown_transcript",
+      "targetId": "trust_that_guy",
+      "present": true
+    },
+    {
+      "sourceId": "markdown_transcript",
+      "targetId": "shitcoiner_heart",
+      "present": true
+    },
+    {
+      "sourceId": "annotated_transcript",
+      "targetId": "buying_dip",
+      "present": true
+    },
+    {
+      "sourceId": "annotated_transcript",
+      "targetId": "one_billion",
+      "present": true
+    },
+    {
+      "sourceId": "annotated_transcript",
+      "targetId": "should_sell",
+      "present": true
+    },
+    {
+      "sourceId": "annotated_transcript",
+      "targetId": "future_bitcoin_earnings",
+      "present": true
+    },
+    {
+      "sourceId": "annotated_transcript",
+      "targetId": "volcano_bonds",
+      "present": true
+    },
+    {
+      "sourceId": "annotated_transcript",
+      "targetId": "imf_loan",
+      "present": true
+    },
+    {
+      "sourceId": "annotated_transcript",
+      "targetId": "tagged_mike",
+      "present": true
+    },
+    {
+      "sourceId": "annotated_transcript",
+      "targetId": "novogratz",
+      "present": true
+    },
+    {
+      "sourceId": "annotated_transcript",
+      "targetId": "trust_that_guy",
+      "present": false
+    },
+    {
+      "sourceId": "annotated_transcript",
+      "targetId": "shitcoiner_heart",
+      "present": true
+    }
+  ],
+  "correctionSummary": {
+    "manualCorrectionCount": 21,
+    "activeCorridorCorrectionCount": 3,
+    "selectorPermissionCorrectionCount": 0,
+    "activeCorridorCorrections": [
+      {
+        "index": 5,
+        "raw": "\"buying the dip\".",
+        "fixed": "\"buying the dip.\"",
+        "activePhraseHitsFixed": [
+          "O4"
+        ],
+        "addsSelectorPermission": false
+      },
+      {
+        "index": 6,
+        "raw": "collateralized to pay off the IMF",
+        "fixed": "collateralized “Volcano Bonds” to pay off the IMF",
+        "activePhraseHitsFixed": [
+          "G5"
+        ],
+        "addsSelectorPermission": false
+      },
+      {
+        "index": 14,
+        "raw": "requires printing and wars",
+        "fixed": "requires money printing and wars",
+        "activePhraseHitsFixed": [],
+        "addsSelectorPermission": false
+      }
+    ]
+  },
+  "authorityLock": {
+    "targetTextAuthority": "canonical_plain + docm_text + markdown_transcript",
+    "rawPlainUse": "context_only_not_authority_for_G5",
+    "annotatedTranscriptUse": "format/highlight witness, not exact-prose authority",
+    "reason": "The latest raw plain-text paste omits the G5 `Volcano Bonds` phrase; the annotated transcript inserts notes into prose. Canonical/DOCM/Markdown witnesses preserve the exact active target wording cleanly.",
+    "authoritativeMissing": {},
+    "rawPlainMissing": [
+      "volcano_bonds"
+    ],
+    "activeLineStreams": {
+      "visualStateOrder": "YKKY",
+      "pageLines": "22 25 27 32",
+      "sentenceRows": "44 45 45 48",
+      "corridorIndexes": "4 7 9 14",
+      "sentenceLinePairs": "44-22 45-25 45-27 48-32",
+      "lineGaps": "3 2 5",
+      "sentenceGaps": "1 0 3",
+      "corridorGaps": "3 2 5",
+      "phraseInitials": "btd 1b vb sah",
+      "phraseEdges": "bp 1n vs st",
+      "leftBoundaryWords": "he's | - | collateralized | a",
+      "rightBoundaryWords": "- | in | to | -",
+      "aboveWords": "on | was | future | trust",
+      "belowWords": "announced | billions | those | -",
+      "leftBoundaryInitials": "h-ca",
+      "rightBoundaryInitials": "-it-",
+      "aboveInitials": "owft",
+      "belowInitials": "abt-",
+      "leftBoundaryLasts": "s-da",
+      "rightBoundaryLasts": "-no-",
+      "aboveLasts": "nset",
+      "belowLasts": "dse-"
+    },
+    "packetTargetPriority": {
+      "primaryManualTarget": {
+        "lineIndex": 32,
+        "corridorIndex": 14,
+        "text": "Maybe because he's a shitcoiner at heart.",
+        "score": 32.75
+      },
+      "pairedTarget": {
+        "lineIndex": 27,
+        "corridorIndex": 9,
+        "text": "collateralized “Volcano Bonds” to pay off the IMF",
+        "score": 16.75
+      },
+      "sourceBandTarget": {
+        "lineIndex": 26,
+        "corridorIndex": 8,
+        "text": "billions worth of future bitcoin earnings",
+        "score": 10.0
+      }
+    }
+  },
+  "sheet": "analysis_outputs/plain_text_transcript/page76_target_text_authority_lock/page76_target_text_authority_lock_sheet.jpg",
+  "decision": "page76_target_text_authority_locked_to_canonical_docm_markdown_annotated",
+  "nextMove": "Use canonical/DOCM/Markdown witnesses for page-76 target wording; keep annotated text as a format witness and raw plain text as context only. Continue requiring new source/clue R1-R5 before extraction."
+}

@@ -1,0 +1,1030 @@
+{
+  "createdAt": "2026-05-21T01:25:00",
+  "scope": "active target reflection through p78 frame centers; no OCR, key derivation, hashing, WIF, seed, or address checks",
+  "inputs": {
+    "activeTargets": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "article3dMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "p78SourceInstructionSurface": "analysis_outputs/source_audit/p78_source_graphic_instruction_surface/p78_source_graphic_instruction_surface.json",
+    "futureSourceScoringRubric": "analysis_outputs/source_audit/future_source_scoring_rubric/future_source_scoring_rubric.json"
+  },
+  "page": {
+    "page": 76,
+    "width": 2544,
+    "height": 3264
+  },
+  "targets": [
+    {
+      "id": "buying_dip",
+      "label": "O4 buying the dip",
+      "phrase": "buying the dip",
+      "box": [
+        1334,
+        2177,
+        1801,
+        2225
+      ],
+      "center": [
+        1567.5,
+        2201.0
+      ],
+      "visualState": "Y",
+      "pageLine": 22,
+      "corridorIndex": 4
+    },
+    {
+      "id": "one_billion",
+      "label": "B4 $1 billion",
+      "phrase": "$1 billion",
+      "box": [
+        428,
+        2398,
+        691,
+        2445
+      ],
+      "center": [
+        559.5,
+        2421.5
+      ],
+      "visualState": "K",
+      "pageLine": 25,
+      "corridorIndex": 7
+    },
+    {
+      "id": "volcano_bonds",
+      "label": "G5 Volcano Bonds",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795,
+        2544,
+        1196,
+        2592
+      ],
+      "center": [
+        995.5,
+        2568.0
+      ],
+      "visualState": "K",
+      "pageLine": 27,
+      "corridorIndex": 9
+    },
+    {
+      "id": "shitcoiner_heart",
+      "label": "O5 shitcoiner at heart",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040,
+        2932,
+        1661,
+        2982
+      ],
+      "center": [
+        1350.5,
+        2957.0
+      ],
+      "visualState": "Y",
+      "pageLine": 32,
+      "corridorIndex": 14
+    }
+  ],
+  "frames": {
+    "sameLayoutFrame": [
+      294.0,
+      2398.0,
+      1310.0,
+      2950.0
+    ],
+    "currentMirrorFrame": [
+      1234.0,
+      2398.0,
+      2250.0,
+      2950.0
+    ],
+    "frameCenters": {
+      "sameLayout": [
+        802.0,
+        2674.0
+      ],
+      "currentMirror": [
+        1742.0,
+        2674.0
+      ]
+    }
+  },
+  "scenarios": [
+    {
+      "id": "same_layout_point",
+      "frame": [
+        294.0,
+        2398.0,
+        1310.0,
+        2950.0
+      ],
+      "frameCenter": [
+        802.0,
+        2674.0
+      ],
+      "mode": "point",
+      "summary": {
+        "projectionCount": 4,
+        "inBoundsCount": 4,
+        "wordHitProjectionCount": 2,
+        "highlightHitProjectionCount": 1,
+        "activeTargetRehitCount": 2,
+        "strongActiveTargetRehitCount": 0,
+        "maxActiveTargetRehitOverlap": 0.198042,
+        "hardInstructionHitCount": 0,
+        "hardInstructionHits": [],
+        "selectorUnlocked": false
+      },
+      "rows": [
+        {
+          "targetId": "buying_dip",
+          "targetLabel": "O4 buying the dip",
+          "projectedBox": [
+            -197.0,
+            3123.0,
+            270.0,
+            3171.0
+          ],
+          "wordCount": 0,
+          "focusWordCount": 0,
+          "wordPreview": "",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [],
+          "inBounds": true
+        },
+        {
+          "targetId": "one_billion",
+          "targetLabel": "B4 $1 billion",
+          "projectedBox": [
+            913.0,
+            2903.0,
+            1176.0,
+            2950.0
+          ],
+          "wordCount": 2,
+          "focusWordCount": 0,
+          "wordPreview": "he's a",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 1,
+          "highlightHits": [
+            {
+              "id": "p76_orange_5",
+              "kind": "orange",
+              "overlapVsHighlight": 0.078841
+            }
+          ],
+          "activeTargetHitCount": 1,
+          "activeTargetHits": [
+            {
+              "id": "shitcoiner_heart",
+              "label": "O5 shitcoiner at heart",
+              "overlapVsTarget": 0.078841
+            }
+          ],
+          "wordRows": [
+            {
+              "id": "p76w262",
+              "text": "he's",
+              "overlapVsWord": 0.379157,
+              "importance": 0,
+              "hardInstructionHits": []
+            },
+            {
+              "id": "p76w263",
+              "text": "a",
+              "overlapVsWord": 0.555031,
+              "importance": 0,
+              "hardInstructionHits": []
+            }
+          ],
+          "inBounds": true
+        },
+        {
+          "targetId": "volcano_bonds",
+          "targetLabel": "G5 Volcano Bonds",
+          "projectedBox": [
+            408.0,
+            2756.0,
+            809.0,
+            2804.0
+          ],
+          "wordCount": 4,
+          "focusWordCount": 1,
+          "wordPreview": "bunch to his Wall",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [
+            {
+              "id": "p76w239",
+              "text": "bunch",
+              "overlapVsWord": 1.0,
+              "importance": 4,
+              "hardInstructionHits": []
+            },
+            {
+              "id": "p76w240",
+              "text": "to",
+              "overlapVsWord": 1.0,
+              "importance": 0,
+              "hardInstructionHits": []
+            },
+            {
+              "id": "p76w241",
+              "text": "his",
+              "overlapVsWord": 1.0,
+              "importance": 0,
+              "hardInstructionHits": []
+            },
+            {
+              "id": "p76w242",
+              "text": "Wall",
+              "overlapVsWord": 0.345278,
+              "importance": 0,
+              "hardInstructionHits": []
+            }
+          ],
+          "inBounds": true
+        },
+        {
+          "targetId": "shitcoiner_heart",
+          "targetLabel": "O5 shitcoiner at heart",
+          "projectedBox": [
+            -57.0,
+            2366.0,
+            564.0,
+            2416.0
+          ],
+          "wordCount": 0,
+          "focusWordCount": 0,
+          "wordPreview": "",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 1,
+          "activeTargetHits": [
+            {
+              "id": "one_billion",
+              "label": "B4 $1 billion",
+              "overlapVsTarget": 0.198042
+            }
+          ],
+          "wordRows": [],
+          "inBounds": true
+        }
+      ]
+    },
+    {
+      "id": "same_layout_vertical_axis",
+      "frame": [
+        294.0,
+        2398.0,
+        1310.0,
+        2950.0
+      ],
+      "frameCenter": [
+        802.0,
+        2674.0
+      ],
+      "mode": "vertical_axis",
+      "summary": {
+        "projectionCount": 4,
+        "inBoundsCount": 4,
+        "wordHitProjectionCount": 3,
+        "highlightHitProjectionCount": 0,
+        "activeTargetRehitCount": 0,
+        "strongActiveTargetRehitCount": 0,
+        "maxActiveTargetRehitOverlap": 0.0,
+        "hardInstructionHitCount": 0,
+        "hardInstructionHits": [],
+        "selectorUnlocked": false
+      },
+      "rows": [
+        {
+          "targetId": "buying_dip",
+          "targetLabel": "O4 buying the dip",
+          "projectedBox": [
+            -197.0,
+            2177.0,
+            270.0,
+            2225.0
+          ],
+          "wordCount": 0,
+          "focusWordCount": 0,
+          "wordPreview": "",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [],
+          "inBounds": true
+        },
+        {
+          "targetId": "one_billion",
+          "targetLabel": "B4 $1 billion",
+          "projectedBox": [
+            913.0,
+            2398.0,
+            1176.0,
+            2445.0
+          ],
+          "wordCount": 3,
+          "focusWordCount": 0,
+          "wordPreview": "— that he",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [
+            {
+              "id": "p76w204",
+              "text": "—",
+              "overlapVsWord": 0.885814,
+              "importance": 0,
+              "hardInstructionHits": []
+            },
+            {
+              "id": "p76w205",
+              "text": "that",
+              "overlapVsWord": 0.885814,
+              "importance": 0,
+              "hardInstructionHits": []
+            },
+            {
+              "id": "p76w206",
+              "text": "he",
+              "overlapVsWord": 0.885814,
+              "importance": 0,
+              "hardInstructionHits": []
+            }
+          ],
+          "inBounds": true
+        },
+        {
+          "targetId": "volcano_bonds",
+          "targetLabel": "G5 Volcano Bonds",
+          "projectedBox": [
+            408.0,
+            2544.0,
+            809.0,
+            2592.0
+          ],
+          "wordCount": 1,
+          "focusWordCount": 0,
+          "wordPreview": "collateralized",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [
+            {
+              "id": "p76w215",
+              "text": "collateralized",
+              "overlapVsWord": 0.806148,
+              "importance": 0,
+              "hardInstructionHits": []
+            }
+          ],
+          "inBounds": true
+        },
+        {
+          "targetId": "shitcoiner_heart",
+          "targetLabel": "O5 shitcoiner at heart",
+          "projectedBox": [
+            -57.0,
+            2932.0,
+            564.0,
+            2982.0
+          ],
+          "wordCount": 1,
+          "focusWordCount": 0,
+          "wordPreview": "Maybe",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [
+            {
+              "id": "p76w260",
+              "text": "Maybe",
+              "overlapVsWord": 0.353134,
+              "importance": 0,
+              "hardInstructionHits": []
+            }
+          ],
+          "inBounds": true
+        }
+      ]
+    },
+    {
+      "id": "same_layout_horizontal_axis",
+      "frame": [
+        294.0,
+        2398.0,
+        1310.0,
+        2950.0
+      ],
+      "frameCenter": [
+        802.0,
+        2674.0
+      ],
+      "mode": "horizontal_axis",
+      "summary": {
+        "projectionCount": 4,
+        "inBoundsCount": 4,
+        "wordHitProjectionCount": 3,
+        "highlightHitProjectionCount": 0,
+        "activeTargetRehitCount": 0,
+        "strongActiveTargetRehitCount": 0,
+        "maxActiveTargetRehitOverlap": 0.0,
+        "hardInstructionHitCount": 0,
+        "hardInstructionHits": [],
+        "selectorUnlocked": false
+      },
+      "rows": [
+        {
+          "targetId": "buying_dip",
+          "targetLabel": "O4 buying the dip",
+          "projectedBox": [
+            1334.0,
+            3123.0,
+            1801.0,
+            3171.0
+          ],
+          "wordCount": 0,
+          "focusWordCount": 0,
+          "wordPreview": "",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [],
+          "inBounds": true
+        },
+        {
+          "targetId": "one_billion",
+          "targetLabel": "B4 $1 billion",
+          "projectedBox": [
+            428.0,
+            2903.0,
+            691.0,
+            2950.0
+          ],
+          "wordCount": 1,
+          "focusWordCount": 0,
+          "wordPreview": "Maybe",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [
+            {
+              "id": "p76w260",
+              "text": "Maybe",
+              "overlapVsWord": 0.555031,
+              "importance": 0,
+              "hardInstructionHits": []
+            }
+          ],
+          "inBounds": true
+        },
+        {
+          "targetId": "volcano_bonds",
+          "targetLabel": "G5 Volcano Bonds",
+          "projectedBox": [
+            795.0,
+            2756.0,
+            1196.0,
+            2804.0
+          ],
+          "wordCount": 3,
+          "focusWordCount": 0,
+          "wordPreview": "Wall Street crony",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [
+            {
+              "id": "p76w242",
+              "text": "Wall",
+              "overlapVsWord": 0.827115,
+              "importance": 0,
+              "hardInstructionHits": []
+            },
+            {
+              "id": "p76w243",
+              "text": "Street",
+              "overlapVsWord": 1.0,
+              "importance": 0,
+              "hardInstructionHits": []
+            },
+            {
+              "id": "p76w244",
+              "text": "crony",
+              "overlapVsWord": 1.0,
+              "importance": 0,
+              "hardInstructionHits": []
+            }
+          ],
+          "inBounds": true
+        },
+        {
+          "targetId": "shitcoiner_heart",
+          "targetLabel": "O5 shitcoiner at heart",
+          "projectedBox": [
+            1040.0,
+            2366.0,
+            1661.0,
+            2416.0
+          ],
+          "wordCount": 4,
+          "focusWordCount": 2,
+          "wordPreview": "that he should sell",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [
+            {
+              "id": "p76w205",
+              "text": "that",
+              "overlapVsWord": 0.439145,
+              "importance": 0,
+              "hardInstructionHits": []
+            },
+            {
+              "id": "p76w206",
+              "text": "he",
+              "overlapVsWord": 0.562952,
+              "importance": 0,
+              "hardInstructionHits": []
+            },
+            {
+              "id": "p76w207",
+              "text": "should",
+              "overlapVsWord": 0.562952,
+              "importance": 8,
+              "hardInstructionHits": []
+            },
+            {
+              "id": "p76w208",
+              "text": "sell",
+              "overlapVsWord": 0.562952,
+              "importance": 8,
+              "hardInstructionHits": []
+            }
+          ],
+          "inBounds": true
+        }
+      ]
+    },
+    {
+      "id": "current_mirror_point",
+      "frame": [
+        1234.0,
+        2398.0,
+        2250.0,
+        2950.0
+      ],
+      "frameCenter": [
+        1742.0,
+        2674.0
+      ],
+      "mode": "point",
+      "summary": {
+        "projectionCount": 4,
+        "inBoundsCount": 3,
+        "wordHitProjectionCount": 0,
+        "highlightHitProjectionCount": 0,
+        "activeTargetRehitCount": 0,
+        "strongActiveTargetRehitCount": 0,
+        "maxActiveTargetRehitOverlap": 0.0,
+        "hardInstructionHitCount": 0,
+        "hardInstructionHits": [],
+        "selectorUnlocked": false
+      },
+      "rows": [
+        {
+          "targetId": "buying_dip",
+          "targetLabel": "O4 buying the dip",
+          "projectedBox": [
+            1683.0,
+            3123.0,
+            2150.0,
+            3171.0
+          ],
+          "wordCount": 0,
+          "focusWordCount": 0,
+          "wordPreview": "",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [],
+          "inBounds": true
+        },
+        {
+          "targetId": "one_billion",
+          "targetLabel": "B4 $1 billion",
+          "projectedBox": [
+            2793.0,
+            2903.0,
+            3056.0,
+            2950.0
+          ],
+          "wordCount": 0,
+          "focusWordCount": 0,
+          "wordPreview": "",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [],
+          "inBounds": false
+        },
+        {
+          "targetId": "volcano_bonds",
+          "targetLabel": "G5 Volcano Bonds",
+          "projectedBox": [
+            2288.0,
+            2756.0,
+            2689.0,
+            2804.0
+          ],
+          "wordCount": 0,
+          "focusWordCount": 0,
+          "wordPreview": "",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [],
+          "inBounds": true
+        },
+        {
+          "targetId": "shitcoiner_heart",
+          "targetLabel": "O5 shitcoiner at heart",
+          "projectedBox": [
+            1823.0,
+            2366.0,
+            2444.0,
+            2416.0
+          ],
+          "wordCount": 0,
+          "focusWordCount": 0,
+          "wordPreview": "",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [],
+          "inBounds": true
+        }
+      ]
+    },
+    {
+      "id": "current_mirror_vertical_axis",
+      "frame": [
+        1234.0,
+        2398.0,
+        2250.0,
+        2950.0
+      ],
+      "frameCenter": [
+        1742.0,
+        2674.0
+      ],
+      "mode": "vertical_axis",
+      "summary": {
+        "projectionCount": 4,
+        "inBoundsCount": 3,
+        "wordHitProjectionCount": 0,
+        "highlightHitProjectionCount": 1,
+        "activeTargetRehitCount": 0,
+        "strongActiveTargetRehitCount": 0,
+        "maxActiveTargetRehitOverlap": 0.0,
+        "hardInstructionHitCount": 0,
+        "hardInstructionHits": [],
+        "selectorUnlocked": false
+      },
+      "rows": [
+        {
+          "targetId": "buying_dip",
+          "targetLabel": "O4 buying the dip",
+          "projectedBox": [
+            1683.0,
+            2177.0,
+            2150.0,
+            2225.0
+          ],
+          "wordCount": 0,
+          "focusWordCount": 0,
+          "wordPreview": "",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 1,
+          "highlightHits": [
+            {
+              "id": "p76_orange_4",
+              "kind": "orange",
+              "overlapVsHighlight": 0.252677
+            }
+          ],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [],
+          "inBounds": true
+        },
+        {
+          "targetId": "one_billion",
+          "targetLabel": "B4 $1 billion",
+          "projectedBox": [
+            2793.0,
+            2398.0,
+            3056.0,
+            2445.0
+          ],
+          "wordCount": 0,
+          "focusWordCount": 0,
+          "wordPreview": "",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [],
+          "inBounds": false
+        },
+        {
+          "targetId": "volcano_bonds",
+          "targetLabel": "G5 Volcano Bonds",
+          "projectedBox": [
+            2288.0,
+            2544.0,
+            2689.0,
+            2592.0
+          ],
+          "wordCount": 0,
+          "focusWordCount": 0,
+          "wordPreview": "",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [],
+          "inBounds": true
+        },
+        {
+          "targetId": "shitcoiner_heart",
+          "targetLabel": "O5 shitcoiner at heart",
+          "projectedBox": [
+            1823.0,
+            2932.0,
+            2444.0,
+            2982.0
+          ],
+          "wordCount": 0,
+          "focusWordCount": 0,
+          "wordPreview": "",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [],
+          "inBounds": true
+        }
+      ]
+    },
+    {
+      "id": "current_mirror_horizontal_axis",
+      "frame": [
+        1234.0,
+        2398.0,
+        2250.0,
+        2950.0
+      ],
+      "frameCenter": [
+        1742.0,
+        2674.0
+      ],
+      "mode": "horizontal_axis",
+      "summary": {
+        "projectionCount": 4,
+        "inBoundsCount": 4,
+        "wordHitProjectionCount": 3,
+        "highlightHitProjectionCount": 0,
+        "activeTargetRehitCount": 0,
+        "strongActiveTargetRehitCount": 0,
+        "maxActiveTargetRehitOverlap": 0.0,
+        "hardInstructionHitCount": 0,
+        "hardInstructionHits": [],
+        "selectorUnlocked": false
+      },
+      "rows": [
+        {
+          "targetId": "buying_dip",
+          "targetLabel": "O4 buying the dip",
+          "projectedBox": [
+            1334.0,
+            3123.0,
+            1801.0,
+            3171.0
+          ],
+          "wordCount": 0,
+          "focusWordCount": 0,
+          "wordPreview": "",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [],
+          "inBounds": true
+        },
+        {
+          "targetId": "one_billion",
+          "targetLabel": "B4 $1 billion",
+          "projectedBox": [
+            428.0,
+            2903.0,
+            691.0,
+            2950.0
+          ],
+          "wordCount": 1,
+          "focusWordCount": 0,
+          "wordPreview": "Maybe",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [
+            {
+              "id": "p76w260",
+              "text": "Maybe",
+              "overlapVsWord": 0.555031,
+              "importance": 0,
+              "hardInstructionHits": []
+            }
+          ],
+          "inBounds": true
+        },
+        {
+          "targetId": "volcano_bonds",
+          "targetLabel": "G5 Volcano Bonds",
+          "projectedBox": [
+            795.0,
+            2756.0,
+            1196.0,
+            2804.0
+          ],
+          "wordCount": 3,
+          "focusWordCount": 0,
+          "wordPreview": "Wall Street crony",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [
+            {
+              "id": "p76w242",
+              "text": "Wall",
+              "overlapVsWord": 0.827115,
+              "importance": 0,
+              "hardInstructionHits": []
+            },
+            {
+              "id": "p76w243",
+              "text": "Street",
+              "overlapVsWord": 1.0,
+              "importance": 0,
+              "hardInstructionHits": []
+            },
+            {
+              "id": "p76w244",
+              "text": "crony",
+              "overlapVsWord": 1.0,
+              "importance": 0,
+              "hardInstructionHits": []
+            }
+          ],
+          "inBounds": true
+        },
+        {
+          "targetId": "shitcoiner_heart",
+          "targetLabel": "O5 shitcoiner at heart",
+          "projectedBox": [
+            1040.0,
+            2366.0,
+            1661.0,
+            2416.0
+          ],
+          "wordCount": 4,
+          "focusWordCount": 2,
+          "wordPreview": "that he should sell",
+          "hardInstructionHits": [],
+          "hardInstructionHitCount": 0,
+          "highlightHitCount": 0,
+          "highlightHits": [],
+          "activeTargetHitCount": 0,
+          "activeTargetHits": [],
+          "wordRows": [
+            {
+              "id": "p76w205",
+              "text": "that",
+              "overlapVsWord": 0.439145,
+              "importance": 0,
+              "hardInstructionHits": []
+            },
+            {
+              "id": "p76w206",
+              "text": "he",
+              "overlapVsWord": 0.562952,
+              "importance": 0,
+              "hardInstructionHits": []
+            },
+            {
+              "id": "p76w207",
+              "text": "should",
+              "overlapVsWord": 0.562952,
+              "importance": 8,
+              "hardInstructionHits": []
+            },
+            {
+              "id": "p76w208",
+              "text": "sell",
+              "overlapVsWord": 0.562952,
+              "importance": 8,
+              "hardInstructionHits": []
+            }
+          ],
+          "inBounds": true
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "scenarioCount": 6,
+    "projectionCount": 24,
+    "inBoundsProjectionCount": 22,
+    "totalHardInstructionHitCount": 0,
+    "totalHardInstructionHits": [],
+    "totalActiveTargetRehitCount": 2,
+    "totalStrongActiveTargetRehitCount": 0,
+    "maxActiveTargetRehitOverlap": 0.198042,
+    "bestWordHitScenario": "same_layout_vertical_axis",
+    "bestWordHitProjectionCount": 3,
+    "selectorUnlocked": false
+  },
+  "decision": {
+    "activeFrameCenterReflection": "closed_current_scan",
+    "selectorUnlocked": false,
+    "nextMove": "Keep p78 frame centers as source-comparison landmarks only; reopen only if source wording names center reflection, frame-center axis, or same-slot frame flipping."
+  },
+  "sheet": "analysis_outputs/source_audit/active_frame_center_reflection_gate/active_frame_center_reflection_gate_sheet.jpg"
+}

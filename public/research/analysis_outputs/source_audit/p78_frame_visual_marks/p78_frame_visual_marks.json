@@ -1,0 +1,363 @@
+{
+  "createdAt": "2026-05-20T06:53:45",
+  "scope": "reflected p78 frame edges against known lower page-76 visual marks; no key derivation",
+  "reflectedP78BoxOnP76": [
+    1234,
+    2398,
+    2250,
+    2950
+  ],
+  "textSideSummaryFromPriorAudit": {
+    "top": [
+      "should sell (cuts)"
+    ],
+    "left": [
+      "should sell (cuts)",
+      "earnings (cuts)",
+      "Volcano Bonds (right-adjacent)",
+      "pay off the IMF (left-adjacent)",
+      "I tagged Mike (left-adjacent)",
+      "trust that guy (left-adjacent)",
+      "shitcoiner at heart (cuts)"
+    ],
+    "right": [],
+    "bottom": [
+      "shitcoiner at heart (cuts)"
+    ]
+  },
+  "visualSideSummary": {
+    "top": [],
+    "left": [
+      "M2 text/highlight-false-positive (right-adjacent, 48px)"
+    ],
+    "right": [
+      "M3 standalone-mark (cuts, 265px)"
+    ],
+    "bottom": [
+      "M4 standalone-mark (below-adjacent, 293px)"
+    ]
+  },
+  "markRecords": [
+    {
+      "index": 1,
+      "classification": "text/highlight-false-positive",
+      "note": "$1 billion grey highlighted text box; detector caught text/highlight, not a separate mark.",
+      "box": [
+        430,
+        2400,
+        690,
+        2447
+      ],
+      "intersection": null,
+      "overlapFracOfMark": 0.0,
+      "overlapFracOfFrame": 0.0,
+      "edgeContacts": [],
+      "cornerDistancesPx": {
+        "topLeft": 544.0,
+        "topRight": 1560.0,
+        "bottomRight": 1639.09,
+        "bottomLeft": 740.91
+      },
+      "nearestCorner": [
+        "topLeft",
+        544.0
+      ],
+      "axis": null,
+      "rowHits": null
+    },
+    {
+      "index": 2,
+      "classification": "text/highlight-false-positive",
+      "note": "Volcano Bonds grey highlighted text box; detector caught text/highlight, not a separate mark.",
+      "box": [
+        795,
+        2544,
+        1196,
+        2592
+      ],
+      "intersection": null,
+      "overlapFracOfMark": 0.0,
+      "overlapFracOfFrame": 0.0,
+      "edgeContacts": [
+        {
+          "edge": "left",
+          "relation": "right-adjacent",
+          "distancePx": 38,
+          "alongOverlapPx": 48
+        }
+      ],
+      "cornerDistancesPx": {
+        "topLeft": 150.86,
+        "topRight": 1064.06,
+        "bottomRight": 1113.14,
+        "bottomLeft": 360.01
+      },
+      "nearestCorner": [
+        "topLeft",
+        150.86
+      ],
+      "axis": null,
+      "rowHits": null
+    },
+    {
+      "index": 3,
+      "classification": "standalone-mark",
+      "note": "",
+      "box": [
+        2172,
+        2619,
+        2544,
+        2884
+      ],
+      "intersection": [
+        2172,
+        2619,
+        2250,
+        2884
+      ],
+      "overlapFracOfMark": 0.2097,
+      "overlapFracOfFrame": 0.0369,
+      "edgeContacts": [
+        {
+          "edge": "right",
+          "relation": "cuts",
+          "distancePx": 0.0,
+          "alongOverlapPx": 265
+        }
+      ],
+      "cornerDistancesPx": {
+        "topLeft": 963.68,
+        "topRight": 221.0,
+        "bottomRight": 66.0,
+        "bottomLeft": 940.32
+      },
+      "nearestCorner": [
+        "bottomRight",
+        66.0
+      ],
+      "axis": {
+        "angleDeg": 173.75,
+        "vector": [
+          -0.994,
+          0.1089
+        ],
+        "blackPixels": 27335
+      },
+      "rowHits": {
+        "insideRows": [
+          {
+            "visualRow": 29,
+            "y": 2631.37,
+            "canonicalLineIndex": 28,
+            "canonicalText": "loan and get rid of those leeches. I tagged Mike",
+            "highlight": ""
+          },
+          {
+            "visualRow": 30,
+            "y": 2706.26,
+            "canonicalLineIndex": 29,
+            "canonicalText": "Novogratz in the tweet, figuring he could sell a",
+            "highlight": ""
+          },
+          {
+            "visualRow": 31,
+            "y": 2778.92,
+            "canonicalLineIndex": 30,
+            "canonicalText": "bunch to his Wall Street crony pals, but so far he",
+            "highlight": ""
+          },
+          {
+            "visualRow": 32,
+            "y": 2849.36,
+            "canonicalLineIndex": 31,
+            "canonicalText": "hasn't moved on it. I don't really trust that guy.",
+            "highlight": "bold: I don't really trust that guy"
+          }
+        ],
+        "closestRows": [
+          {
+            "visualRow": 31,
+            "y": 2778.92,
+            "canonicalLineIndex": 30,
+            "canonicalText": "bunch to his Wall Street crony pals, but so far he",
+            "highlight": ""
+          },
+          {
+            "visualRow": 30,
+            "y": 2706.26,
+            "canonicalLineIndex": 29,
+            "canonicalText": "Novogratz in the tweet, figuring he could sell a",
+            "highlight": ""
+          },
+          {
+            "visualRow": 32,
+            "y": 2849.36,
+            "canonicalLineIndex": 31,
+            "canonicalText": "hasn't moved on it. I don't really trust that guy.",
+            "highlight": "bold: I don't really trust that guy"
+          },
+          {
+            "visualRow": 29,
+            "y": 2631.37,
+            "canonicalLineIndex": 28,
+            "canonicalText": "loan and get rid of those leeches. I tagged Mike",
+            "highlight": ""
+          }
+        ],
+        "horizontalLeftRows": [
+          {
+            "visualRow": 31,
+            "y": 2778.92,
+            "canonicalLineIndex": 30,
+            "canonicalText": "bunch to his Wall Street crony pals, but so far he",
+            "highlight": "",
+            "nearestLeftWords": "he far so but pals, crony Street Wall his to bunch"
+          },
+          {
+            "visualRow": 30,
+            "y": 2706.26,
+            "canonicalLineIndex": 29,
+            "canonicalText": "Novogratz in the tweet, figuring he could sell a",
+            "highlight": "",
+            "nearestLeftWords": "sella could he figuring tweet, the in Novogratz"
+          },
+          {
+            "visualRow": 32,
+            "y": 2849.36,
+            "canonicalLineIndex": 31,
+            "canonicalText": "hasn't moved on it. I don't really trust that guy.",
+            "highlight": "bold: I don't really trust that guy",
+            "nearestLeftWords": "guy that trust really don't I it. on moved hasn't"
+          },
+          {
+            "visualRow": 29,
+            "y": 2631.37,
+            "canonicalLineIndex": 28,
+            "canonicalText": "loan and get rid of those leeches. I tagged Mike",
+            "highlight": "",
+            "nearestLeftWords": "Mike tagged I leeches. those of rid get and loan"
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "classification": "standalone-mark",
+      "note": "",
+      "box": [
+        1827,
+        3003,
+        2120,
+        3182
+      ],
+      "intersection": null,
+      "overlapFracOfMark": 0.0,
+      "overlapFracOfFrame": 0.0,
+      "edgeContacts": [
+        {
+          "edge": "bottom",
+          "relation": "below-adjacent",
+          "distancePx": 53,
+          "alongOverlapPx": 293
+        }
+      ],
+      "cornerDistancesPx": {
+        "topLeft": 847.16,
+        "topRight": 618.81,
+        "bottomRight": 140.39,
+        "bottomLeft": 595.36
+      },
+      "nearestCorner": [
+        "bottomRight",
+        140.39
+      ],
+      "axis": {
+        "angleDeg": -168.84,
+        "vector": [
+          -0.9811,
+          -0.1935
+        ],
+        "blackPixels": 18076
+      },
+      "rowHits": {
+        "insideRows": [],
+        "closestRows": [
+          {
+            "visualRow": 33,
+            "y": 2939.4,
+            "canonicalLineIndex": 32,
+            "canonicalText": "Maybe because he's a shitcoiner at heart.",
+            "highlight": "orange: shitcoiner at heart"
+          },
+          {
+            "visualRow": 32,
+            "y": 2849.36,
+            "canonicalLineIndex": 31,
+            "canonicalText": "hasn't moved on it. I don't really trust that guy.",
+            "highlight": "bold: I don't really trust that guy"
+          },
+          {
+            "visualRow": 31,
+            "y": 2778.92,
+            "canonicalLineIndex": 30,
+            "canonicalText": "bunch to his Wall Street crony pals, but so far he",
+            "highlight": ""
+          },
+          {
+            "visualRow": 30,
+            "y": 2706.26,
+            "canonicalLineIndex": 29,
+            "canonicalText": "Novogratz in the tweet, figuring he could sell a",
+            "highlight": ""
+          }
+        ],
+        "horizontalLeftRows": [
+          {
+            "visualRow": 33,
+            "y": 2939.4,
+            "canonicalLineIndex": 32,
+            "canonicalText": "Maybe because he's a shitcoiner at heart.",
+            "highlight": "orange: shitcoiner at heart",
+            "nearestLeftWords": "siukbeodmensertslveaarty a he's because Maybe"
+          },
+          {
+            "visualRow": 32,
+            "y": 2849.36,
+            "canonicalLineIndex": 31,
+            "canonicalText": "hasn't moved on it. I don't really trust that guy.",
+            "highlight": "bold: I don't really trust that guy",
+            "nearestLeftWords": "guy that trust really don't I it. on moved hasn't"
+          },
+          {
+            "visualRow": 31,
+            "y": 2778.92,
+            "canonicalLineIndex": 30,
+            "canonicalText": "bunch to his Wall Street crony pals, but so far he",
+            "highlight": "",
+            "nearestLeftWords": "he far so but pals, crony Street Wall his to bunch"
+          },
+          {
+            "visualRow": 30,
+            "y": 2706.26,
+            "canonicalLineIndex": 29,
+            "canonicalText": "Novogratz in the tweet, figuring he could sell a",
+            "highlight": "",
+            "nearestLeftWords": "sella could he figuring tweet, the in Novogratz"
+          }
+        ]
+      }
+    }
+  ],
+  "overlay": "analysis_outputs/source_audit/p78_frame_visual_marks/p78_frame_visual_marks_overlay.jpg",
+  "keyFindings": {
+    "rightEdgeCutsStandaloneMarkM3": true,
+    "bottomEdgeAdjacentStandaloneMarkM4": true
+  },
+  "assessment": [
+    "The previous text-only frame read missed the unused right edge: the reflected p78 frame right side cuts true standalone mark M3 by a long vertical overlap.",
+    "M4 is not cut by the frame, but sits just below the bottom edge with a 53px vertical gap and broad horizontal overlap.",
+    "The frame is therefore not only a text-frame: top/left/bottom relate to corridor text, while the right/lower side also registers lower-right visual marks.",
+    "This strengthens the p78 frame as an orientation/registration object, but still does not specify a word/letter extraction unit."
+  ],
+  "nextMove": "Inspect M3 itself as a frame-side marker: compare its axis/ray with the reflected p78 right edge and test only simple adjacent-row labels, not key derivation."
+}

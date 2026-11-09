@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keiser Bitcoin Puzzle Decoder & Automation</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #121212; color: #e0e0e0; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1, h2, h3 { color: #ff9800; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
+
+        textarea { 
+            width: 100%; height: 200px; background: #1e1e1e; color: #fff; 
+            border: 1px solid #333; padding: 10px; font-family: 'Courier New', monospace; 
+            font-size: 14px; resize: vertical;
+        }
+        
+        .controls { margin: 15px 0; display: flex; gap: 10px; flex-wrap: wrap; }
+        button { 
+            padding: 10px 15px; background: #333; border: 1px solid #555; 
+            cursor: pointer; color: #fff; transition: 0.2s; font-weight: bold;
+        }
+        button:hover { background: #ff9800; color: #000; border-color: #ff9800; }
+        button.primary { background: #ff9800; color: #000; border: none; }
+        button.primary:hover { background: #ffb74d; }
+
+        .panel { background: #1e1e1e; padding: 15px; border-radius: 5px; border: 1px solid #333; }
+        
+        #output { 
+            background: #000; border: 1px solid #333; padding: 15px; 
+            min-height: 100px; white-space: pre-wrap; word-break: break-word;
+            font-family: 'Courier New', monospace; color: #00ff00;
+        }
+
+        .log-box {
+            height: 150px; overflow-y: auto; background: #000; border: 1px solid #333; 
+            padding: 10px; font-size: 12px; color: #aaa; margin-top: 10px;
+        }
+
+        .valid-key { 
+            background: rgba(0, 255, 0, 0.1); border: 1px solid #00ff00; 
+            padding: 10px; margin: 5px 0; color: #00ff00; font-weight: bold; 
+        }
+        
+        label { display: block; margin-bottom: 5px; font-weight: bold; color: #ccc; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Max Keiser "Overdose" Puzzle Solver</h1>
+        
+        <div class="grid">
+            <div class="panel">
+                <label>1. Input Puzzle Text (Preserve Line Breaks)</label>
+                <textarea id="mainText">Here's the bitter truth. Bitcoin was not a reaction
+to the Global Financial Crisis of 2008. It caused it.
+Really?
+Yes.
+The markets sensed Bitcoin was coming and started to crash.
+Markets are like that. They discount stuff in advance. Markets are
+the central nervous system of the global economy. They are the sum of
+all our neuroses. The cypherpunks were publishing the white paper
+around that time - after years of trying - and a collective panic
+arose in the global unconscious of money printers, banking
+terrorists, stock traders, central bank arsonists, Wall Street
+and Jamie Dimon. The Bitcoin rabbit hole was opening - the black hole
+of the Cosmic Now - and it had fiat markets in its sight.
+In fact, all the chaos you see around you these days is caused by
+Bitcoin. And nothing could be better. Nocoiners and shitcoiners,
+and even some Bitcoiners, consider this view toxic. Everybody's
+complaining about "Toxic Bitcoin Maximalists" these days.
+Look, toxicity is Layer 1 of the protocol.
+Fact: It's Layer 1 for every great thing
+that's ever been invented or discovered.
+It's only the language of the shameless opportunists trying
+to cash in by riding Bitcoins coattails that give it a bad name.
+Vitalik Buterin came up with the "Maximalist" epithet.
+Now he's slinging proof of stake at the mEthereum lab.
+Don't fall for shitcoinery.
+Keep your dignity.
+Go Bitcoin Toxic Maximalist,
+the Layer 1 of the whole Satoshi experience.
+You wouldn't be digging blindly with your bare
+hands in the muck of Bitcoin's rabbit hole if this
+weren't true. Anything worth hearing is hard to listen
+to. Nice, pleasant words from con men and shitcoiners
+are easy listening for the gullible and unloved.
+
+Get some toxicity. Get some bitcoin. Open your heart to
+Bitcoin. It's the freaking UTXO ghetto up in here, y'all.
+It's funkier than a whole parallel universe full of nothing
+but George Clinton and James Brown clones. It's Martin Luther
+nailing the Vatican with ultimatums. It's the sound of skin being
+ripped off live central bankers tied to a burning stake.
+
+Gotta be this way. Forty years of dumb post-1971 fiat money
+nonsense (and 10years of watching Peter Schiff miss buying bitcoin
+since I started honey-badgering him to buy some at $1 back in 2011)
+have dulled shitcoiners' and nocoiners' minds.
+The collective unconscious, controlled now by psychotic
+cats, plays "Friends" reruns all day in our heads.
+Our imaginations and inventiveness have been euthanized
+by the rancid catnip of fiat money. Fortunately, bitcoin
+puts an end to the paper chase Manhattan Bank money
+laundering lobotomy. It's a stun gun to the genitals.
+A monetary defibrillator to the treasure chest.
+
+Don't believe me?
+Have you seen the president of El Salvador
+trolling the International Monetary Fund (IMF) on Twitter?
+He's taunting them, telling them he's "buying the dip."
+I tweeted President Nayib Bukele when he announced
+he was going to tap his nation's volcanoes to mine
+$1 billion in bitcoin - that he should sell
+billions worth of future bitcoin earnings
+collateralized "Volcano Bonds" to pay off the IMF
+loan and get rid of those leeches. I tagged Mike
+Novogratz in the tweet, figuring he could sell a
+bunch to his Wall Street crony pals, but so far he
+hasn't moved on it. I don't really trust that guy.
+Maybe because he's a shitcoiner at heart.
+
+Meanwhile, back in El Salvador, 42% of the country
+is now hyperbitcoinized (at the time of writing).
+Jack Mallers' Strike app has gone from 20,000 new sign-ups
+a day to a mind-bending 100,000 and growing. At this rate, the whole
+country will be Toxic Bitcoin Maximalists within six months.
+(Sorry Bhutan, you fell for that snake oil salesmen over
+at XRP.          Get ready to experience shitcoin hell.
+
+Has anyone heard from Roger Ver lately?
+Big blockers got their heads ripped off during the Block
+Size War of 2017 and it's been going downhill ever since.
+Particularly for Faketoshi and his army of high-priced
+London legal hacks who harass old women and children
+(and Peter McCormack) for no other reason than the U.K.'s
+legal system favors and protects demented shitcoiners,
+useless Royals, career criminals and banksters.
+London is a scammer paradise. Full Stop.
+
+EVERY SINGLE ONE OF
+THE BITCOIN WANNABES - BCH, BSV, ETH, XRP,
+ADA, AND 12,000 OTHER SHITCOINS, PLUS FIAT
+MONEY AND GOLD - IS FACING THE IGNOMINIOUS
+FATE OF DEMONETIZATION VERSUS BITCOIN.
+
+It's a guaranteed, mathematical certainty. Let me explain
+why, and this might be the first time you're hearing this,
+Bitcoin was designed to be a 51% attack on the world's
+energy supply. Shitcoins, fiat and gold will
+starve to death as the result of Bitcoin's
+insatiable conquest of all available energy.
+And as bitcoin starves shitcoins, fiat and gold to death,
+it simultaneously demonetizes war, violence, hatred and
+the state itself. It does this by monetizing, for the first
+time in human history, peace, love and understanding
+(Elvis Costello was right).
+
+We've never had an economy and a money
+that incentivizes love before until bitcoin.
+Love opens up the collective unconscious and
+our joint inner cosmic being. The economy of
+love is infinitely more efficient than hate and war.
+
+I listen to these eggheads - Michael Saylor, Nic Carter,
+Marty Bent -        who spend their days pouring over spreadsheets
+and gallons of iced espresso. The numbers don't lie.
+The energy industry in its current form is gargantuanly wasteful
+and requires money printing and wars to keep it going - all in
+the service of an uber class of banksters who profit from war, poverty
+and misery with their fiat money Ponzi schemes. America left $85
+BILLION worth of hate toys in Afghanistan, for example, for a war
+that some estimate cost $2 trillion fiat cuck-bucks.
+
+BITCOIN FIXES ALL THIS by replacing oil-dripping,
+corpse-ridden, poppy-harvesting fiat money with perfect bitcoin.
+Remove the war incentive, and you remove the hate incentive.
+Bitcoin fills the gap with love; our most natural tendency if given a chance.
+
+The warmongers will start mining bitcoin for sure.
+It's a fact baked into the game-theorized Bitcoin protocol,
+observable by anyone choosing to see it,
+right there in the Genesis Block.
+
+To wrap this up, as we move from a war and violence
+economy to a peace and love economy, the efficiencies
+of love - because bitcoin is infinitely more efficient
+to transact and store wealth in than fiat, shitcoins
+or gold - the overall energy consumption, even while
+Bitcoin makes its 51% attack on global energy supply,
+drops by 95% or more. That's right, Bitcoin will take
+all the energy. In so doing, our energy consumption
+drops to near zero because our natural tendency toward
+love and peace gets monetized for the first time in
+our existence. Poverty disappears because the fear
+of being poor disappears because Bitcoin allows us
+to fully express ourselves individually in a cyber
+sea of billions of souls all looking to connect and
+express love for each other and the cost for this explosion
+of peace is the same as a smile - virtually nothing.
+
+Yes, for some, the Bitcoin rabbit hole ends up
+in John and Yoko's hotel room in Amsterdam
+during their 1969 bed-in.
+Everyone will live their own experience in the rabbit hole.
+We are getting our souls back and our minds.
+Stacy and I have been living in here for 10 years.
+We've seen some shit. Happy to share it all with you
+- the agony and ecstasy - as Bitcoin conquers fear
+and hate and replaces it with peace and love.</textarea>
+                
+                <label style="margin-top: 10px;">2. Bolded Content (from PDF)</label>
+                <textarea id="boldWords" placeholder="Enter FULL BOLDED WORDS here..." style="height: 60px; margin-bottom: 5px;"></textarea>
+                <textarea id="boldLetters" placeholder="Enter INDIVIDUAL BOLDED LETTERS here (in order)..." style="height: 60px;"></textarea>
+            </div>
+
+            <div class="panel">
+                <label>3. Transformation Strategies</label>
+                <div class="controls">
+                    <button onclick="transform('sand')">George Sand (Odd Lines)</button>
+                    <button onclick="transform('sand_inv')">Sand Inverse (Even Lines)</button>
+                    <button onclick="transform('mirror')">Mirror Text</button>
+                    <button onclick="transform('first')">First Words</button>
+                    <button onclick="transform('last')">Last Words</button>
+                </div>
+                <div class="controls">
+                    <button onclick="transform('bold_letters')">Use Bolded Letters</button>
+                    <button onclick="transform('mix_sand_bold')">Mix: Sand + Bold Words</button>
+                    <button onclick="transform('mix_mirror_sand')">Mix: Mirror + Sand</button>
+                </div>
+                
+                <label>Current Output / Candidate:</label>
+                <div id="output"></div>
+                
+                <div class="controls" style="margin-top: 20px;">
+                    <button class="primary" onclick="runAutomatedSolver()">RUN AUTOMATED SOLVER</button>
+                    <button onclick="checkCurrentOutput()">Check Current Output as Key</button>
+                </div>
+                
+                <label>Automation Log:</label>
+                <div id="log" class="log-box"></div>
+                <div id="results"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Full BIP39 Wordlist (Partial for now, usually you'd load full list)
+        // We'll rely on the backend to do strict validation, but frontend filtering helps.
+        // To save space, I'm not pasting 2048 words here, but the logic will try to filter for "English-looking" words
+        // or rely on the server which has the full library.
+        
+        function log(msg) {
+            const logDiv = document.getElementById('log');
+            logDiv.innerHTML += `<div>${new Date().toLocaleTimeString()} - ${msg}</div>`;
+            logDiv.scrollTop = logDiv.scrollHeight;
+        }
+
+        function getLines() {
+            return document.getElementById('mainText').value.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+        }
+
+        function getWords(text) {
+            return text.toLowerCase().replace(/[^a-z\s]/g, ' ').split(/\s+/).filter(w => w.length > 0);
+        }
+
+        function transform(type) {
+            const text = document.getElementById('mainText').value;
+            const boldWords = document.getElementById('boldWords').value;
+            const boldLetters = document.getElementById('boldLetters').value;
+            const lines = getLines();
+            let result = "";
+
+            switch(type) {
+                case 'sand':
+                    result = lines.filter((_, i) => i % 2 === 0).join(' ');
+                    break;
+                case 'sand_inv':
+                    result = lines.filter((_, i) => i % 2 !== 0).join(' ');
+                    break;
+                case 'mirror':
+                    result = text.split('').reverse().join('');
+                    break;
+                case 'first':
+                    result = lines.map(l => l.split(' ')[0]).join(' ');
+                    break;
+                case 'last':
+                    result = lines.map(l => l.split(' ').pop()).join(' ');
+                    break;
+                case 'bold_letters':
+                    result = boldLetters;
+                    break;
+                case 'mix_sand_bold':
+                    // Logic: Take Sand words, then append Bold words to see if they complete a phrase
+                    const sand = lines.filter((_, i) => i % 2 === 0).join(' ');
+                    result = sand + " " + boldWords;
+                    break;
+                case 'mix_mirror_sand':
+                    const reversedLines = [...lines].reverse();
+                    result = reversedLines.filter((_, i) => i % 2 === 0).join(' ');
+                    break;
+            }
+            
+            document.getElementById('output').innerText = result;
+        }
+
+        async function checkCurrentOutput() {
+            const text = document.getElementById('output').innerText;
+            const words = getWords(text);
+            const candidates = [];
+            
+            // Generate candidates from current text (sliding window)
+            if (words.length >= 12) {
+                for (let len of [12, 24]) {
+                     for (let i = 0; i <= words.length - len; i++) {
+                        candidates.push(words.slice(i, i + len).join(' '));
+                    }
+                }
+            }
+            
+            if (candidates.length === 0) {
+                log("Text too short or invalid for seed phrase.");
+                return;
+            }
+            
+            log(`Checking ${candidates.length} candidates from current output...`);
+            await sendCandidates(candidates);
+        }
+
+        async function runAutomatedSolver() {
+            log("Starting Full Automation...");
+            const text = document.getElementById('mainText').value;
+            const boldW = document.getElementById('boldWords').value;
+            const boldL = document.getElementById('boldLetters').value;
+            const lines = getLines();
+            const allWords = getWords(text);
+            
+            let candidates = new Set();
+
+            // 1. Add pure bold text candidates
+            if (boldW) {
+                const words = getWords(boldW);
+                if (words.length >= 12) candidates.add(words.join(' '));
+            }
+            
+            // Check if bold letters form a key directly (WIF)
+            if (boldL && boldL.length > 30) {
+                candidates.add(boldL.replace(/\s/g, '')); // Try as WIF/Hex
+            }
+
+            // 2. Strategies
+            const strategies = [
+                lines.filter((_, i) => i % 2 === 0).join(' '), // Sand
+                lines.filter((_, i) => i % 2 !== 0).join(' '), // Sand Inv
+                [...lines].reverse().filter((_, i) => i % 2 === 0).join(' '), // Mirror Sand
+                allWords.filter((_, i) => i % 2 === 0).join(' '), // Every 2nd word
+                allWords.filter((_, i) => i % 3 === 0).join(' '), // Every 3rd word
+                allWords.filter((_, i) => i % 4 === 0).join(' '), // Every 4th word
+                allWords.filter((_, i) => i % 5 === 0).join(' '), // Every 5th word
+            ];
+
+            strategies.forEach(stratText => {
+                const StratWords = getWords(stratText);
+                if (StratWords.length >= 12) {
+                    // Sliding windows
+                    for (let len of [12, 24]) {
+                        for (let i = 0; i <= StratWords.length - len; i++) {
+                            candidates.add(StratWords.slice(i, i + len).join(' '));
+                        }
+                    }
+                    // 13 words (remove 1)
+                     if (StratWords.length === 13) {
+                        for (let i = 0; i < 13; i++) {
+                            const copy = [...StratWords];
+                            copy.splice(i, 1);
+                            candidates.add(copy.join(' '));
+                        }
+                    }
+                }
+            });
+
+            log(`Generated ${candidates.size} unique candidates. Sending to server...`);
+            
+            const candidateArray = Array.from(candidates);
+            await sendCandidates(candidateArray);
+        }
+
+        async function sendCandidates(list) {
+            try {
+                const response = await fetch('/check-balance', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ candidates: list })
+                });
+                
+                const data = await response.json();
+                
+                let msg = `Checked: ${data.stats.totalReceived} candidates.<br>`;
+                msg += `Valid BIP39: ${data.stats.mnemonicsChecked} | Valid WIF: ${data.stats.wifsChecked}`;
+                log(msg);
+
+                if (data.results && data.results.length > 0) {
+                    log(`SUCCESS! Found ${data.results.length} keys with activity!`);
+                    const resultsDiv = document.getElementById('results');
+                    data.results.forEach(res => {
+                        resultsDiv.innerHTML += `<div class="valid-key">FOUND FUNDS (${res.type})!<br>Key: ${res.phrase}<br>Address: ${res.address}<br>Balance: ${res.balance}<br>Total Received: ${res.received}</div>`;
+                    });
+                } else {
+                    if (data.stats.mnemonicsChecked === 0 && data.stats.wifsChecked === 0) {
+                        log("WARNING: No valid key formats found. Check your text input or try 'Bold' clues.");
+                    } else {
+                        log("Done. Valid keys checked, but empty balances.");
+                    }
+                }
+            } catch (e) {
+                log("Error connecting to server: " + e.message);
+            }
+        }
+    </script>
+</body>
+</html>

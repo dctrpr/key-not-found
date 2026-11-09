@@ -1,0 +1,157 @@
+{
+  "createdAt": "2026-05-20T23:44:12",
+  "scope": "complete O4/B4/G5/O5 page-76 target crop authority sheet; no extraction, no key derivation, no hashing, no OCR, no address checks",
+  "sourceImage": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+  "inputs": {
+    "active_line": "analysis_outputs/plain_text_transcript/active_line_unit_reconciliation/active_line_unit_reconciliation.json",
+    "format_lock": "analysis_outputs/docm_format_sources/page76_target_format_authority_lock/page76_target_format_authority_lock.json",
+    "priority_crop_pack": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_pack.json",
+    "orange_highres_audit": "analysis_outputs/highlight_audit/highres_highlight_audit.json",
+    "grey_reading": "analysis_outputs/highlight_audit/highres_manual_grey_reading.json"
+  },
+  "summary": {
+    "targetCount": 4,
+    "cropCoverage": "4/4",
+    "activeColorPattern": "OBBO",
+    "activeVisualStateOrder": "YKKY",
+    "pageLines": "22 25 27 32",
+    "corridorIndexes": "4 7 9 14",
+    "previousFormatLockCropCoverage": 3,
+    "oldGreyProjectionCaveats": [
+      "p76 $1 billion and “Volcano Bonds” were verified from the full high-res page because projected old manual boxes landed on the wrong lower-page text.",
+      "p77 Faketoshi was verified from the full high-res page, not from the projected contact sheet."
+    ],
+    "selectorUnlocked": false
+  },
+  "targets": [
+    {
+      "id": "buying_dip",
+      "label": "O4 buying the dip",
+      "phrase": "buying the dip",
+      "source": "highres_highlight_audit.visualOrangeRows.p76_orange_4",
+      "box": [
+        1334,
+        2177,
+        1801,
+        2225
+      ],
+      "crop": [
+        1120,
+        2125,
+        1910,
+        2265
+      ],
+      "color": "#ff9b2e",
+      "note": "Completes the prior crop-pack gap for O4.",
+      "output": "analysis_outputs/source_audit/page76_active_target_crop_completion/buying_dip_crop.jpg",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "visualState": "Y",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "yellow": 14
+      }
+    },
+    {
+      "id": "one_billion",
+      "label": "B4 $1 billion",
+      "phrase": "$1 billion",
+      "source": "full-page visual inspection; old projected grey box was known wrong",
+      "box": [
+        428,
+        2398,
+        691,
+        2445
+      ],
+      "crop": [
+        250,
+        2350,
+        1520,
+        2460
+      ],
+      "color": "#8f98a5",
+      "note": "Uses direct full-page visual boxing because old p76_grey_4 projection landed on unrelated text.",
+      "output": "analysis_outputs/source_audit/page76_active_target_crop_completion/one_billion_crop.jpg",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "visualState": "K",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "black": 10
+      }
+    },
+    {
+      "id": "volcano_bonds",
+      "label": "G5 Volcano Bonds",
+      "phrase": "Volcano Bonds",
+      "source": "page76_priority_crop_pack.L27_G5_pair",
+      "box": [
+        795,
+        2544,
+        1196,
+        2592
+      ],
+      "crop": [
+        720,
+        2505,
+        1650,
+        2625
+      ],
+      "color": "#8f98a5",
+      "note": "Uses newer priority crop/manual box rather than old projected grey coordinates.",
+      "output": "analysis_outputs/source_audit/page76_active_target_crop_completion/volcano_bonds_crop.jpg",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "visualState": "K",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "black": 13
+      }
+    },
+    {
+      "id": "shitcoiner_heart",
+      "label": "O5 shitcoiner at heart",
+      "phrase": "shitcoiner at heart",
+      "source": "highres_highlight_audit.visualOrangeRows.p76_orange_5 + page76_priority_crop_pack.L32_O5_primary",
+      "box": [
+        1040,
+        2932,
+        1661,
+        2982
+      ],
+      "crop": [
+        850,
+        2860,
+        1770,
+        3038
+      ],
+      "color": "#ff9b2e",
+      "note": "Primary lower-corridor target already covered by priority crop pack.",
+      "output": "analysis_outputs/source_audit/page76_active_target_crop_completion/shitcoiner_heart_crop.jpg",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "visualState": "Y",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "yellow": 19
+      }
+    }
+  ],
+  "priorityCropContext": {
+    "previousSheet": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_sheet.jpg",
+    "previousCrops": [
+      "L32_O5_primary",
+      "L27_G5_pair",
+      "L25_should_sell",
+      "L26_L29_source_band",
+      "L25_L32_frame_context"
+    ]
+  },
+  "sheet": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion_sheet.jpg",
+  "decision": "page76_active_target_crop_authority_complete_no_selector",
+  "nextMove": "Use this completed O4/B4/G5/O5 sheet for future physical/original-layout/source comparison. Do not reopen current-scan extraction without R3 unit/order evidence."
+}

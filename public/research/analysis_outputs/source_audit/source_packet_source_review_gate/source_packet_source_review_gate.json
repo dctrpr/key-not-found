@@ -1,0 +1,355 @@
+{
+  "createdAt": "2026-05-21T07:39:55",
+  "scope": "current source-packet source-review gate dry run; no OCR extraction, key candidates, hashing, WIF, seed, address, BIP39, or broad brute force",
+  "inputs": {
+    "source_reopen_requirements": "analysis_outputs/source_audit/source_reopen_requirements/source_reopen_requirements.json",
+    "future_source_validation_packet": "analysis_outputs/source_audit/future_source_validation_packet/future_source_validation_packet.json",
+    "source_acquisition_packet_integrity": "analysis_outputs/source_audit/source_acquisition_packet_integrity/source_acquisition_packet_integrity.json",
+    "future_source_rubric_current_stack_dry_run": "analysis_outputs/source_audit/future_source_rubric_current_stack_dry_run/future_source_rubric_current_stack_dry_run.json",
+    "source_packet_handoff_integrity_matrix": "analysis_outputs/source_audit/source_packet_handoff_integrity_matrix/source_packet_handoff_integrity_matrix.json",
+    "source_packet_false_positive_guardrail": "analysis_outputs/source_audit/source_packet_false_positive_guardrail/source_packet_false_positive_guardrail.json",
+    "source_packet_reopen_trigger_matrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json",
+    "source_packet_orientation_disambiguator": "analysis_outputs/source_audit/source_packet_orientation_disambiguator/source_packet_orientation_disambiguator.json",
+    "source_packet_orientation_control_quartets": "analysis_outputs/source_audit/source_packet_orientation_control_quartets/source_packet_orientation_control_quartets.json",
+    "source_packet_r3_bridge_audit": "analysis_outputs/source_audit/source_packet_r3_bridge_audit/source_packet_r3_bridge_audit.json",
+    "source_packet_geometric_fingerprint": "analysis_outputs/source_audit/source_packet_geometric_fingerprint/source_packet_geometric_fingerprint.json",
+    "source_packet_frame_normalized_geometry": "analysis_outputs/source_audit/source_packet_frame_normalized_geometry/source_packet_frame_normalized_geometry.json",
+    "source_packet_color_profile_manifest": "analysis_outputs/source_audit/source_packet_color_profile_manifest/source_packet_color_profile_manifest.json",
+    "source_packet_repaired_p78_frame_residual": "analysis_outputs/source_audit/source_packet_repaired_p78_frame_residual/source_packet_repaired_p78_frame_residual.json",
+    "source_packet_repaired_frame_expansion_leakage": "analysis_outputs/source_audit/source_packet_repaired_frame_expansion_leakage/source_packet_repaired_frame_expansion_leakage.json",
+    "c9_grey_black_over_slot_control": "analysis_outputs/source_audit/c9_grey_black_over_slot_control/c9_grey_black_over_slot_control.json",
+    "c9_over_slot_tolerance_gate": "analysis_outputs/source_audit/c9_over_slot_tolerance_gate/c9_over_slot_tolerance_gate.json",
+    "c9_mirrored_header_glyph_gate": "analysis_outputs/source_audit/c9_mirrored_header_glyph_gate/c9_mirrored_header_glyph_gate.json",
+    "c9_active_format_witness_reconciliation": "analysis_outputs/source_audit/c9_active_format_witness_reconciliation/c9_active_format_witness_reconciliation.json"
+  },
+  "reopenGates": [
+    {
+      "id": "R1",
+      "name": "source identity",
+      "passCondition": "new material must be physically/original-layout distinct from the byte-locked current scan"
+    },
+    {
+      "id": "R2",
+      "name": "target preservation",
+      "passCondition": "must preserve or clearly explain O5, G5, L26-L29, and the p78 frame contact pattern"
+    },
+    {
+      "id": "R3",
+      "name": "unit/order evidence",
+      "passCondition": "must name or visibly supply the extraction unit/order before any key checks resume"
+    },
+    {
+      "id": "R4",
+      "name": "orientation discipline",
+      "passCondition": "must state whether coordinates are readable/upright or native/source and apply the 180-degree guardrail"
+    },
+    {
+      "id": "R5",
+      "name": "controlled improvement",
+      "passCondition": "must improve a compact benchmark, preferably dx -38/-40 G5 edge repair, O5 bottom contact, M3 right-edge cut, or the p77 one-line near miss"
+    }
+  ],
+  "minimumReopenConditions": [
+    {
+      "condition": "C3 extraction unit",
+      "requiredEvidence": "source/clue text or source-visible layout must name a unit/order such as word, letter, line, edge, font, first/last, left/right, or equivalent",
+      "why": "Without this, local geometry only repeats target discovery."
+    },
+    {
+      "condition": "C4 physical registration",
+      "requiredEvidence": "physical scan/photo/hold-to-light/spread should create repeated direct O5/G5 contacts or improve the p77 71.93px near miss under one natural transform",
+      "why": "Current best scan gives zero true physical O5/G5 overlaps."
+    },
+    {
+      "condition": "C8 source image quality",
+      "requiredEvidence": "original Canva/export/browser/source asset must exceed thumbnail status and visibly resolve the #0, p79 pills, XX/barbed-wire, or p78 frame benchmarks",
+      "why": "The current Canva surface is only a 668x376 investigator note thumbnail."
+    },
+    {
+      "condition": "C2 p78 frame signature",
+      "requiredEvidence": "new source should naturally preserve or explain `should sell | Volcano Bonds | shitcoiner at heart`, current O5 clip, M3 right-edge cut, and dx≈-38/-40 G5 edge repair",
+      "why": "This is the compactest existing registration signature."
+    }
+  ],
+  "protocol": [
+    {
+      "step": 1,
+      "gate": "R1",
+      "requiredObservation": "Confirm the item is materially new physical/original-layout/source evidence, not a duplicate or resaved current scan.",
+      "currentBaseline": "current local sources fail R1"
+    },
+    {
+      "step": 2,
+      "gate": "R4",
+      "requiredObservation": "Normalize orientation: readable/upright O4/B4/G5/O5 must preserve lines 22/25/27/32, corridors 4/7/9/14, dx/dy -++/+++.",
+      "currentBaseline": "modes=5|accepted=1|ambiguous=4|discriminators=6|states=YKKY|color=OBBO|lines=22-25-27-32|nativeLines=32-27-25-22|dx=-++|dy=+++|sourceR3=0|selectors=0"
+    },
+    {
+      "step": 3,
+      "gate": "pattern-control",
+      "requiredObservation": "Reject matches that only reproduce YKKY/OBBO/OVER; require the stricter contiguous Y/K window and 3/2/5 line-gap controls.",
+      "currentBaseline": "ykCombos=70|YKKY=11|YKKYNonExact=10|windows=5|windowYKKY=1|lineCombos=70|lineGaps325=1|dx=-++|dy=+++|sourceR3=0|selectors=0"
+    },
+    {
+      "step": 4,
+      "gate": "R2/R5",
+      "requiredObservation": "Show target preservation and controlled improvement without broad context leakage or p75/OVERDOSE control reproduction.",
+      "currentBaseline": "handoff gates 17; selectors 0"
+    },
+    {
+      "step": 5,
+      "gate": "R3",
+      "requiredObservation": "Find source-backed wording or layout that names the extraction unit/order before any selector/key checks resume.",
+      "currentBaseline": "source R3 0; triggers 0/9"
+    }
+  ],
+  "rows": [
+    {
+      "path": "current scan and local derivatives",
+      "role": "baseline/source",
+      "gates": {
+        "R1": "FAIL",
+        "R2": "PARTIAL",
+        "R3": "FAIL",
+        "R4": "PARTIAL",
+        "R5": "FAIL"
+      },
+      "strictPasses": [],
+      "failedStrictGates": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "r3Pass": false,
+      "extractionReady": false,
+      "evidence": "rubric paths=8; all fail R3=True",
+      "blocker": "not physically/original-layout distinct; no source-backed unit/order",
+      "next": "Only score materially new physical/original-layout/source evidence.",
+      "sourceReports": [
+        "future_source_rubric_current_stack_dry_run"
+      ]
+    },
+    {
+      "path": "active O4/B4/G5/O5 geometry",
+      "role": "page-76 locator",
+      "gates": {
+        "R1": "FAIL",
+        "R2": "PASS",
+        "R3": "FAIL",
+        "R4": "PASS",
+        "R5": "PARTIAL"
+      },
+      "strictPasses": [
+        "R2",
+        "R4"
+      ],
+      "failedStrictGates": [
+        "R1",
+        "R3",
+        "R5"
+      ],
+      "r3Pass": false,
+      "extractionReady": false,
+      "evidence": "lines 22 25 27 32; gaps [3, 2, 5]; signs -++/+++",
+      "blocker": "strong locator; no extraction unit/order",
+      "next": "Use as validation target after a new source passes R1/R3.",
+      "sourceReports": [
+        "source_packet_geometric_fingerprint",
+        "source_packet_orientation_disambiguator"
+      ]
+    },
+    {
+      "path": "Y/K frame plus orientation controls",
+      "role": "frame/color benchmark",
+      "gates": {
+        "R1": "FAIL",
+        "R2": "PASS",
+        "R3": "FAIL",
+        "R4": "PASS",
+        "R5": "PARTIAL"
+      },
+      "strictPasses": [
+        "R2",
+        "R4"
+      ],
+      "failedStrictGates": [
+        "R1",
+        "R3",
+        "R5"
+      ],
+      "r3Pass": false,
+      "extractionReady": false,
+      "evidence": "YKKY combos 11/70; contiguous windows 1/5",
+      "blocker": "pattern-only YKKY is controlled; geometry is still registration evidence only",
+      "next": "Require source wording that names the Y/K frame or active quartet order.",
+      "sourceReports": [
+        "source_packet_orientation_control_quartets",
+        "source_packet_frame_normalized_geometry"
+      ]
+    },
+    {
+      "path": "C9 / OVERDOSE layout mechanics",
+      "role": "glyph/slot benchmark",
+      "gates": {
+        "R1": "FAIL",
+        "R2": "PARTIAL",
+        "R3": "FAIL",
+        "R4": "PASS",
+        "R5": "FAIL"
+      },
+      "strictPasses": [
+        "R4"
+      ],
+      "failedStrictGates": [
+        "R1",
+        "R2",
+        "R3",
+        "R5"
+      ],
+      "r3Pass": false,
+      "extractionReady": false,
+      "evidence": "C9 inside 4/4; p75 control matches mirrored variants None",
+      "blocker": "OVER/slot effects are controlled by p75 and mirrored/header variants",
+      "next": "Only reopen if source explicitly links OVERDOSE slots to active boxes and controls fail.",
+      "sourceReports": [
+        "source_packet_frame_normalized_geometry",
+        "c9_grey_black_over_slot_control",
+        "c9_over_slot_tolerance_gate",
+        "c9_mirrored_header_glyph_gate"
+      ]
+    },
+    {
+      "path": "folded/reflected p78 frame repair",
+      "role": "fold geometry benchmark",
+      "gates": {
+        "R1": "FAIL",
+        "R2": "PARTIAL",
+        "R3": "FAIL",
+        "R4": "PASS",
+        "R5": "FAIL"
+      },
+      "strictPasses": [
+        "R4"
+      ],
+      "failedStrictGates": [
+        "R1",
+        "R2",
+        "R3",
+        "R5"
+      ],
+      "r3Pass": false,
+      "extractionReady": false,
+      "evidence": "max full inside None/4; full-cover leakage None/None",
+      "blocker": "dx repair improves residuals but all-four isolation requires a context-leaky expansion",
+      "next": "Only reopen if a physical/original source naturally explains the transform.",
+      "sourceReports": [
+        "source_packet_repaired_p78_frame_residual",
+        "source_packet_repaired_frame_expansion_leakage"
+      ]
+    },
+    {
+      "path": "bold/highlight witness stack",
+      "role": "format authority",
+      "gates": {
+        "R1": "FAIL",
+        "R2": "PARTIAL",
+        "R3": "FAIL",
+        "R4": "PASS",
+        "R5": "FAIL"
+      },
+      "strictPasses": [
+        "R4"
+      ],
+      "failedStrictGates": [
+        "R1",
+        "R2",
+        "R3",
+        "R5"
+      ],
+      "r3Pass": false,
+      "extractionReady": false,
+      "evidence": "DOCM/high-res/crop authority; line-level exact bold matches None",
+      "blocker": "format witnesses disagree or remain authority layers; no instruction says read bold/highlight",
+      "next": "Only reopen if source/provenance says read, take, count, or order format units.",
+      "sourceReports": [
+        "c9_active_format_witness_reconciliation",
+        "source_packet_color_profile_manifest"
+      ]
+    },
+    {
+      "path": "archived clue/provenance wording",
+      "role": "external clue",
+      "gates": {
+        "R1": "PARTIAL",
+        "R2": "PARTIAL",
+        "R3": "FAIL",
+        "R4": "PASS",
+        "R5": "FAIL"
+      },
+      "strictPasses": [
+        "R4"
+      ],
+      "failedStrictGates": [
+        "R1",
+        "R2",
+        "R3",
+        "R5"
+      ],
+      "r3Pass": false,
+      "extractionReady": false,
+      "evidence": "source-backed R3 hits 0; reopen triggers satisfied 0",
+      "blocker": "no raw/raw-like clue names the extraction unit/order",
+      "next": "Search only for source wording naming word/letter/line/edge/font/order.",
+      "sourceReports": [
+        "source_packet_r3_bridge_audit",
+        "source_packet_reopen_trigger_matrix"
+      ]
+    }
+  ],
+  "summary": {
+    "pathCount": 7,
+    "extractionReadyCount": 0,
+    "r3FailCount": 7,
+    "r1FailCount": 6,
+    "r4PassCount": 6,
+    "handoffGateCount": 17,
+    "handoffSelectorUnlockedCount": 0,
+    "hardRejectWithoutR3Count": 9,
+    "satisfiedReopenTriggerCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "orientationModeAcceptedCount": 1,
+    "orientationControlYkkyCombinationCount": 11,
+    "orientationControlYkkyNonExactCount": 10,
+    "c9ActiveFullInsideCount": 4,
+    "p78MaxFullInsideActiveCount": null,
+    "fullCoverLeakageWordCount": null,
+    "activeYOrangeRatioRange": [
+      0.7124,
+      0.7666
+    ],
+    "activeKDarkRatioRange": [
+      0.6592,
+      0.6994
+    ],
+    "overControlCanonicalActiveOverCount": null,
+    "greyBlackControlOverSpan": null,
+    "sourceReviewGateFingerprint": "paths=7|ready=0|r3Fail=7|R1Fail=6|R4Pass=6|triggers=0/9|sourceR3=0|YKKY=11|selectors=0"
+  },
+  "decision": {
+    "sourcePacketSourceReviewGate": "current-stack-not-extraction-ready",
+    "ruledOut": [
+      "using the current scan or local derivatives as new source evidence",
+      "accepting YKKY/OBBO/OVERDOSE pattern matches without the stricter geometry and R3",
+      "reopening selector/key work from source-registration benchmarks alone"
+    ],
+    "retained": [
+      "readable/upright orientation normalization",
+      "orientation-control quartet guardrail",
+      "R1-R5 plus exact reopen trigger order for future source review"
+    ],
+    "nextMove": "Future review should begin with this gate order: R1 distinct source, R4 orientation, pattern controls, R2/R5 preservation and controlled improvement, then R3 unit/order. If R3 remains absent, stop before selector/key work."
+  },
+  "sheet": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate_sheet.jpg"
+}

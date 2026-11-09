@@ -1,0 +1,304 @@
+{
+  "createdAt": "2026-05-20T23:33:27",
+  "scope": "page-76 target format authority lock; no extraction, no key derivation, no hashing, no OCR, no address checks",
+  "inputs": {
+    "active_line": "analysis_outputs/plain_text_transcript/active_line_unit_reconciliation/active_line_unit_reconciliation.json",
+    "manual_bold": "analysis_outputs/docm_format_sources/typeka_manual_bold_disambiguation/typeka_manual_bold_disambiguation.json",
+    "visual_consistency": "analysis_outputs/docm_format_sources/docm_visual_highlight_consistency/docm_visual_highlight_consistency.json",
+    "crop_pack": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_pack.json",
+    "text_lock": "analysis_outputs/plain_text_transcript/page76_target_text_authority_lock/page76_target_text_authority_lock.json",
+    "typeka_gate": "analysis_outputs/docm_format_sources/typeka_font_r3_gate_synthesis/typeka_font_r3_gate_synthesis.json"
+  },
+  "summary": {
+    "activeColorPattern": "OBBO",
+    "activeVisualStateOrder": "YKKY",
+    "pageLines": "22 25 27 32",
+    "sentenceRows": "44 45 45 48",
+    "corridorIndexes": "4 7 9 14",
+    "allActiveTargetsDocmTypekaBold": true,
+    "activeVisualExactMatchCount": 4,
+    "activeTargetCount": 4,
+    "cropPackActiveCoverageCount": 3
+  },
+  "activeTargets": [
+    {
+      "id": "buying_dip",
+      "order": 1,
+      "label": "buying the dip",
+      "color": "orange",
+      "visualState": "Y",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "sentenceRow": 44,
+      "canonicalLine": "He's taunting them, telling them he's “buying the dip.”",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "yellow": 14
+      },
+      "docmHighlightSummary": "yellow:14",
+      "docmMatchesActiveRecord": {
+        "font": true,
+        "bold": true,
+        "highlight": true
+      },
+      "visualMatches": [
+        {
+          "id": "visual_orange_9",
+          "visualColor": "orange",
+          "text": "“buying the dip.”",
+          "docmMatches": [
+            {
+              "id": "docm_yellow_15",
+              "text": "\"buying the dip.\"",
+              "kind": "exact"
+            }
+          ]
+        }
+      ],
+      "visualExactMatch": true,
+      "cropEvidence": [],
+      "cropEvidenceDetails": []
+    },
+    {
+      "id": "one_billion",
+      "order": 2,
+      "label": "$1 billion",
+      "color": "black",
+      "visualState": "K",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "sentenceRow": 45,
+      "canonicalLine": "$1 billion in bitcoin — that he should sell",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "black": 10
+      },
+      "docmHighlightSummary": "black:10",
+      "docmMatchesActiveRecord": {
+        "font": true,
+        "bold": true,
+        "highlight": true
+      },
+      "visualMatches": [
+        {
+          "id": "visual_grey_5",
+          "visualColor": "grey",
+          "text": "$1 billion",
+          "docmMatches": [
+            {
+              "id": "docm_black_16",
+              "text": "$1 billion",
+              "kind": "exact"
+            }
+          ]
+        }
+      ],
+      "visualExactMatch": true,
+      "cropEvidence": [
+        "L25_should_sell"
+      ],
+      "cropEvidenceDetails": [
+        {
+          "id": "L25_should_sell",
+          "output": "analysis_outputs/source_audit/page76_priority_crop_pack/L25_should_sell.jpg",
+          "title": "Frame Top / L25"
+        }
+      ]
+    },
+    {
+      "id": "volcano_bonds",
+      "order": 3,
+      "label": "Volcano Bonds",
+      "color": "black",
+      "visualState": "K",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "sentenceRow": 45,
+      "canonicalLine": "collateralized “Volcano Bonds” to pay off the IMF",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "black": 13
+      },
+      "docmHighlightSummary": "black:13",
+      "docmMatchesActiveRecord": {
+        "font": true,
+        "bold": true,
+        "highlight": true
+      },
+      "visualMatches": [
+        {
+          "id": "visual_grey_6",
+          "visualColor": "grey",
+          "text": "“Volcano Bonds”",
+          "docmMatches": [
+            {
+              "id": "docm_black_17",
+              "text": "“Volcano Bonds”",
+              "kind": "exact"
+            }
+          ]
+        }
+      ],
+      "visualExactMatch": true,
+      "cropEvidence": [
+        "L27_G5_pair",
+        "L26_L29_source_band",
+        "L25_L32_frame_context"
+      ],
+      "cropEvidenceDetails": [
+        {
+          "id": "L27_G5_pair",
+          "output": "analysis_outputs/source_audit/page76_priority_crop_pack/L27_G5_pair.jpg",
+          "title": "Paired G5 / L27"
+        },
+        {
+          "id": "L26_L29_source_band",
+          "output": "analysis_outputs/source_audit/page76_priority_crop_pack/L26_L29_source_band.jpg",
+          "title": "Broad p78 Source Band / L26-L29"
+        },
+        {
+          "id": "L25_L32_frame_context",
+          "output": "analysis_outputs/source_audit/page76_priority_crop_pack/L25_L32_frame_context.jpg",
+          "title": "Full Frame Context / L25-L32"
+        }
+      ]
+    },
+    {
+      "id": "shitcoiner_heart",
+      "order": 4,
+      "label": "shitcoiner at heart",
+      "color": "orange",
+      "visualState": "Y",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "sentenceRow": 48,
+      "canonicalLine": "Maybe because he's a shitcoiner at heart.",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "yellow": 19
+      },
+      "docmHighlightSummary": "yellow:19",
+      "docmMatchesActiveRecord": {
+        "font": true,
+        "bold": true,
+        "highlight": true
+      },
+      "visualMatches": [
+        {
+          "id": "visual_orange_10",
+          "visualColor": "orange",
+          "text": "shitcoiner at heart.",
+          "docmMatches": [
+            {
+              "id": "docm_yellow_18",
+              "text": "shitcoiner at heart.",
+              "kind": "exact"
+            }
+          ]
+        }
+      ],
+      "visualExactMatch": true,
+      "cropEvidence": [
+        "L32_O5_primary",
+        "L25_L32_frame_context"
+      ],
+      "cropEvidenceDetails": [
+        {
+          "id": "L32_O5_primary",
+          "output": "analysis_outputs/source_audit/page76_priority_crop_pack/L32_O5_primary.jpg",
+          "title": "Primary O5 / L32"
+        },
+        {
+          "id": "L25_L32_frame_context",
+          "output": "analysis_outputs/source_audit/page76_priority_crop_pack/L25_L32_frame_context.jpg",
+          "title": "Full Frame Context / L25-L32"
+        }
+      ]
+    }
+  ],
+  "nearbyFormatContext": [
+    {
+      "id": "el_salvador",
+      "phrase": "El Salvador",
+      "role": "Typeka Mix nearby anchor",
+      "dominantFont": "Typeka Mix",
+      "boldFraction": 0.0,
+      "highlights": {
+        "none": 11
+      },
+      "activeHighlightTarget": false
+    },
+    {
+      "id": "novogratz",
+      "phrase": "Novogratz",
+      "role": "Typeka Mix nearby anchor",
+      "dominantFont": "Typeka Mix",
+      "boldFraction": 0.0,
+      "highlights": {
+        "none": 9
+      },
+      "activeHighlightTarget": false
+    },
+    {
+      "id": "trust_that_guy",
+      "phrase": "I don't really trust that guy",
+      "role": "Typeka Mix local phrase",
+      "dominantFont": "Typeka Mix",
+      "boldFraction": 0.0,
+      "highlights": {
+        "none": 29
+      },
+      "activeHighlightTarget": false
+    },
+    {
+      "id": "imf_loan",
+      "phrase": "IMF loan",
+      "role": "G5 neighbor",
+      "dominantFont": "Typeka",
+      "boldFraction": 0.889,
+      "highlights": {
+        "none": 8
+      },
+      "activeHighlightTarget": false
+    }
+  ],
+  "authorityLock": {
+    "formatAuthority": "DOCM runs + high-res visual highlight consistency + page-76 crop pack/manual boxes",
+    "textAuthority": "canonical_plain + docm_text + markdown_transcript",
+    "markdownUse": "text/markup transcript only; not font-state authority",
+    "annotatedUse": "format/highlight witness; not exact-prose authority and not selector permission",
+    "nearbyTypekaMixUse": "`I don't really trust that guy` and nearby names are context, not active highlight targets",
+    "selectorUnlocked": false,
+    "selectorBlocker": "The O-B-B-O/Y-K-K-Y format pattern corroborates target identity but still does not name an extraction unit or order beyond the visual order already known."
+  },
+  "gateRows": [
+    {
+      "gate": "format authority",
+      "status": "pass",
+      "reason": "DOCM rows, high-res visual highlight matches, and crop-pack/manual boxes agree on the active target formatting."
+    },
+    {
+      "gate": "active pattern",
+      "status": "pass",
+      "reason": "The four locked active targets form O-B-B-O / Y-K-K-Y at page lines 22, 25, 27, and 32."
+    },
+    {
+      "gate": "R3 unit/order",
+      "status": "fail",
+      "reason": "Formatting states give target identity only; they do not provide a source-backed word/letter/line/side/index rule."
+    }
+  ],
+  "sourceGateContext": {
+    "typekaFontR3Decision": "typeka_font_layer_closed_for_current_scan_as_r3_selector",
+    "typekaStrongInstructionRecordCount": 0,
+    "textLockDecision": "page76_target_text_authority_locked_to_canonical_docm_markdown_annotated",
+    "textLockRawPlainUse": "context_only_not_authority_for_G5"
+  },
+  "sheet": "analysis_outputs/docm_format_sources/page76_target_format_authority_lock/page76_target_format_authority_lock_sheet.jpg",
+  "decision": "page76_target_format_authority_locked_no_selector",
+  "nextMove": "Use DOCM/high-res/crop-pack witnesses as format authority for future source comparison. Do not treat Markdown bold, annotated notes, or Typeka Mix context as selector permission without new R3 unit/order evidence."
+}

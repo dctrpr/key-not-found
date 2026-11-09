@@ -1,0 +1,334 @@
+{
+  "createdAt": "2026-05-20T09:36:05",
+  "scope": "Rank page-76 corrected corridor lines by already-logged independent evidence; no key derivation.",
+  "inputs": [
+    "analysis_outputs/3d_article_map/page76_line_level_corridor.json",
+    "analysis_outputs/source_audit/line_offset_landing_evidence/line_offset_landing_evidence.json",
+    "analysis_outputs/source_audit/supported_landing_sequence_units/supported_landing_sequence_units.json",
+    "analysis_outputs/source_audit/page76_target_convergence/page76_target_convergence.json",
+    "analysis_outputs/source_audit/p78_frame_order_read/p78_frame_order_read.json"
+  ],
+  "decision": {
+    "primaryManualTarget": {
+      "lineIndex": 32,
+      "corridorIndex": 14,
+      "text": "Maybe because he's a shitcoiner at heart.",
+      "score": 32.75
+    },
+    "pairedTarget": {
+      "lineIndex": 27,
+      "corridorIndex": 9,
+      "text": "collateralized \u201cVolcano Bonds\u201d to pay off the IMF",
+      "score": 16.75
+    },
+    "sourceBandTarget": {
+      "lineIndex": 26,
+      "corridorIndex": 8,
+      "text": "billions worth of future bitcoin earnings",
+      "score": 10.0
+    }
+  },
+  "rankedLines": [
+    {
+      "lineIndex": 32,
+      "corridorIndex": 14,
+      "text": "Maybe because he's a shitcoiner at heart.",
+      "highlights": [
+        "orange: shitcoiner at heart"
+      ],
+      "score": 32.75,
+      "evidence": [
+        {
+          "label": "line-offset landing score",
+          "weight": 8.0,
+          "detail": "B5 lands here; layers=highlight target, reflected highlight graph, target convergence"
+        },
+        {
+          "label": "supported landing sequence",
+          "weight": 1.0,
+          "detail": "B5 / preferred term `heart`"
+        },
+        {
+          "label": "target convergence",
+          "weight": 15.0,
+          "detail": "O5 `shitcoiner at heart` across 5 independent layers"
+        },
+        {
+          "label": "p78 frame edge",
+          "weight": 3.0,
+          "detail": "left edge cuts `shitcoiner at heart` distance=None"
+        },
+        {
+          "label": "p78 frame edge",
+          "weight": 3.0,
+          "detail": "bottom edge cuts `shitcoiner at heart` distance=None"
+        },
+        {
+          "label": "minimal frame phrase",
+          "weight": 2.0,
+          "detail": "`should sell | Volcano Bonds | shitcoiner at heart`"
+        },
+        {
+          "label": "announcement/media corridor term",
+          "weight": 0.75,
+          "detail": "shitcoiner at heart"
+        }
+      ]
+    },
+    {
+      "lineIndex": 27,
+      "corridorIndex": 9,
+      "text": "collateralized \u201cVolcano Bonds\u201d to pay off the IMF",
+      "highlights": [
+        "grey: Volcano Bonds",
+        "bold: IMF"
+      ],
+      "score": 16.75,
+      "evidence": [
+        {
+          "label": "target convergence",
+          "weight": 11.0,
+          "detail": "G5 `Volcano Bonds` across 4 independent layers"
+        },
+        {
+          "label": "p78 frame edge",
+          "weight": 1.5,
+          "detail": "left edge left-adjacent `pay off the IMF` distance=None"
+        },
+        {
+          "label": "p78 frame edge",
+          "weight": 1.5,
+          "detail": "left edge right-adjacent `Volcano Bonds` distance=None"
+        },
+        {
+          "label": "minimal frame phrase",
+          "weight": 2.0,
+          "detail": "`should sell | Volcano Bonds | shitcoiner at heart`"
+        },
+        {
+          "label": "announcement/media corridor term",
+          "weight": 0.75,
+          "detail": "Volcano Bonds"
+        }
+      ]
+    },
+    {
+      "lineIndex": 25,
+      "corridorIndex": 7,
+      "text": "$1 billion in bitcoin \u2014 that he should sell",
+      "highlights": [
+        "grey: $1 billion"
+      ],
+      "score": 10.75,
+      "evidence": [
+        {
+          "label": "target convergence",
+          "weight": 2.0,
+          "detail": "G4 `$1 billion` across 1 independent layers"
+        },
+        {
+          "label": "p78 frame edge",
+          "weight": 3.0,
+          "detail": "top edge cuts `should sell` distance=None"
+        },
+        {
+          "label": "p78 frame edge",
+          "weight": 3.0,
+          "detail": "left edge cuts `should sell` distance=None"
+        },
+        {
+          "label": "minimal frame phrase",
+          "weight": 2.0,
+          "detail": "`should sell | Volcano Bonds | shitcoiner at heart`"
+        },
+        {
+          "label": "announcement/media corridor term",
+          "weight": 0.75,
+          "detail": "$1 billion"
+        }
+      ]
+    },
+    {
+      "lineIndex": 26,
+      "corridorIndex": 8,
+      "text": "billions worth of future bitcoin earnings",
+      "highlights": [],
+      "score": 10.0,
+      "evidence": [
+        {
+          "label": "line-offset landing score",
+          "weight": 6.0,
+          "detail": "O4 lands here; layers=p78_bbox_words, p78_dark_words, reflected highlight graph"
+        },
+        {
+          "label": "supported landing sequence",
+          "weight": 1.0,
+          "detail": "O4 / preferred term `earnings`"
+        },
+        {
+          "label": "p78 frame edge",
+          "weight": 3.0,
+          "detail": "left edge cuts `earnings` distance=None"
+        }
+      ]
+    },
+    {
+      "lineIndex": 29,
+      "corridorIndex": 11,
+      "text": "Novogratz in the tweet, figuring he could sell a",
+      "highlights": [
+        "bold-partial: Novogratz"
+      ],
+      "score": 7.5,
+      "evidence": [
+        {
+          "label": "line-offset landing score",
+          "weight": 5.0,
+          "detail": "B4 lands here; layers=p78_bbox_words, p78_dark_words, p78_hole_words"
+        },
+        {
+          "label": "supported landing sequence",
+          "weight": 1.0,
+          "detail": "B4 / preferred term `sell`"
+        },
+        {
+          "label": "p78 frame edge",
+          "weight": 1.5,
+          "detail": "left edge left-adjacent `could sell` distance=None"
+        }
+      ]
+    },
+    {
+      "lineIndex": 22,
+      "corridorIndex": 4,
+      "text": "He's taunting them, telling them he's \u201cbuying the dip.\u201d",
+      "highlights": [
+        "orange: buying the dip"
+      ],
+      "score": 2.75,
+      "evidence": [
+        {
+          "label": "target convergence",
+          "weight": 2.0,
+          "detail": "O4 `buying the dip` across 1 independent layers"
+        },
+        {
+          "label": "announcement/media corridor term",
+          "weight": 0.75,
+          "detail": "buying the dip"
+        }
+      ]
+    },
+    {
+      "lineIndex": 28,
+      "corridorIndex": 10,
+      "text": "loan and get rid of those leeches. I tagged Mike",
+      "highlights": [
+        "bold-partial/full: Mike"
+      ],
+      "score": 1.5,
+      "evidence": [
+        {
+          "label": "p78 frame edge",
+          "weight": 1.5,
+          "detail": "left edge left-adjacent `I tagged Mike` distance=None"
+        }
+      ]
+    },
+    {
+      "lineIndex": 31,
+      "corridorIndex": 13,
+      "text": "hasn't moved on it. I don't really trust that guy.",
+      "highlights": [
+        "bold partial: I don't really trust that guy"
+      ],
+      "score": 1.5,
+      "evidence": [
+        {
+          "label": "p78 frame edge",
+          "weight": 1.5,
+          "detail": "left edge left-adjacent `trust that guy` distance=None"
+        }
+      ]
+    },
+    {
+      "lineIndex": 20,
+      "corridorIndex": 2,
+      "text": "Have you seen the president of El Salvador",
+      "highlights": [],
+      "score": 0.75,
+      "evidence": [
+        {
+          "label": "announcement/media corridor term",
+          "weight": 0.75,
+          "detail": "El Salvador"
+        }
+      ]
+    },
+    {
+      "lineIndex": 21,
+      "corridorIndex": 3,
+      "text": "trolling the International Monetary Fund (IMF) on Twitter?",
+      "highlights": [],
+      "score": 0.75,
+      "evidence": [
+        {
+          "label": "announcement/media corridor term",
+          "weight": 0.75,
+          "detail": "IMF"
+        }
+      ]
+    },
+    {
+      "lineIndex": 23,
+      "corridorIndex": 5,
+      "text": "I tweeted President Nayib Bukele when he announced",
+      "highlights": [],
+      "score": 0.75,
+      "evidence": [
+        {
+          "label": "announcement/media corridor term",
+          "weight": 0.75,
+          "detail": "President Nayib Bukele"
+        }
+      ]
+    },
+    {
+      "lineIndex": 24,
+      "corridorIndex": 6,
+      "text": "he was going to tap his nation's volcanoes to mine",
+      "highlights": [],
+      "score": 0.75,
+      "evidence": [
+        {
+          "label": "announcement/media corridor term",
+          "weight": 0.75,
+          "detail": "volcanoes"
+        }
+      ]
+    },
+    {
+      "lineIndex": 19,
+      "corridorIndex": 1,
+      "text": "Don't believe me?",
+      "highlights": [],
+      "score": 0.0,
+      "evidence": []
+    },
+    {
+      "lineIndex": 30,
+      "corridorIndex": 12,
+      "text": "bunch to his Wall Street crony pals, but so far he",
+      "highlights": [],
+      "score": 0.0,
+      "evidence": []
+    }
+  ],
+  "assessment": [
+    "Line 32 / O5 remains the strongest manual target because convergence, p78 frame cuts, the #5 landing, and p80/OVERDOSE corroboration all point there.",
+    "Line 27 / G5 is the required paired target, not a standalone solution, because it carries Volcano Bonds and the p78 frame relation but lacks the O5 convergence weight.",
+    "Lines 26 and 29 are the broad p78 source-band targets. They explain the #4 evidence conflict but still do not name an extraction unit.",
+    "The next useful comparison for any new source image should crop/score line 32, line 27, and the line 26-29 band before any key derivation resumes."
+  ],
+  "nextMove": "Use this ranked target set as the manual checklist for future Canva/original-layout/physical source comparison: primary O5, paired G5, then the line 26-29 p78 source band."
+}

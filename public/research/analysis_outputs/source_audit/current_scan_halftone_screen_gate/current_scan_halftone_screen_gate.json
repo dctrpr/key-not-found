@@ -1,0 +1,594 @@
+{
+  "createdAt": "2026-05-24T06:25:02",
+  "scope": "current page-76 scan halftone/high-frequency texture and dominant screen-angle gate; no extraction or candidate generation",
+  "inputs": {
+    "page76Upright": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "c9HeaderGlyphSlotGate": "analysis_outputs/source_audit/c9_header_glyph_slot_gate/c9_header_glyph_slot_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "summary": {
+    "activeBoxCount": 4,
+    "shiftedControlBoxCount": 16,
+    "overdoseSlotBoxCount": 8,
+    "dominantShareControlP95": 0.321127,
+    "highpassRmsControlP95": 50.585401,
+    "activeDominantShareOutlierCount": 0,
+    "activeDominantShareOutlierIds": [],
+    "activeHighpassRmsOutlierCount": 1,
+    "activeHighpassRmsOutlierIds": [
+      "G5"
+    ],
+    "allFourActiveDominantShareOutlier": false,
+    "allFourActiveHighpassRmsOutlier": false,
+    "activeDominantAngleBins": [
+      "90.0-112.5",
+      "90.0-112.5",
+      "90.0-112.5",
+      "90.0-112.5"
+    ],
+    "activeUniqueDominantAngleBins": [
+      "90.0-112.5"
+    ],
+    "activeCommonDominantAngleBin": "90.0-112.5",
+    "controlCommonDominantAngleBinMatchCount": 12,
+    "overdoseSlotCommonDominantAngleBinMatchCount": 7,
+    "maxActiveDominantShare": 0.240643,
+    "maxControlDominantShare": 0.373026,
+    "maxOverdoseSlotDominantShare": 0.239552,
+    "maxActiveHighpassRms": 50.751526,
+    "maxControlHighpassRms": 50.636333,
+    "maxOverdoseSlotHighpassRms": 38.138618,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "halftoneScreenFingerprint": "active=4|controls=16|slots=8|shareOutliers=0|highpassOutliers=1|allFourShare=0|allFourHighpass=0|activeBins=90.0-112.5,90.0-112.5,90.0-112.5,90.0-112.5|commonBin=90.0-112.5|controlCommon=12|slotCommon=7|shareMax=0.241/0.373/0.240|highpassMax=50.752/50.636/38.139|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "regionRows": [
+    {
+      "shortId": "O4",
+      "phrase": "buying the dip",
+      "visualState": "Y",
+      "kind": "active",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "highpassRms": 25.547413,
+      "highFreqPowerRatio": 0.103774,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.189638,
+      "angleAnisotropy": 0.104583
+    },
+    {
+      "shortId": "B4",
+      "phrase": "$1 billion",
+      "visualState": "K",
+      "kind": "active",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "highpassRms": 49.775417,
+      "highFreqPowerRatio": 0.136109,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.199183,
+      "angleAnisotropy": 0.133001
+    },
+    {
+      "shortId": "G5",
+      "phrase": "Volcano Bonds",
+      "visualState": "K",
+      "kind": "active",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "highpassRms": 50.751526,
+      "highFreqPowerRatio": 0.131878,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.240643,
+      "angleAnisotropy": 0.170835
+    },
+    {
+      "shortId": "O5",
+      "phrase": "shitcoiner at heart",
+      "visualState": "Y",
+      "kind": "active",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "width": 621.0,
+      "height": 50.0,
+      "highpassRms": 24.466429,
+      "highFreqPowerRatio": 0.065381,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.213756,
+      "angleAnisotropy": 0.129916
+    },
+    {
+      "shortId": "O4_dy-292",
+      "phrase": "O4 shifted -292px",
+      "kind": "shifted_control",
+      "box": [
+        1334.0,
+        1885.0,
+        1801.0,
+        1933.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "highpassRms": 0.610695,
+      "highFreqPowerRatio": 0.50071,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.294936,
+      "angleAnisotropy": 0.256624
+    },
+    {
+      "shortId": "O4_dy-146",
+      "phrase": "O4 shifted -146px",
+      "kind": "shifted_control",
+      "box": [
+        1334.0,
+        2031.0,
+        1801.0,
+        2079.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "highpassRms": 24.492104,
+      "highFreqPowerRatio": 0.086695,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.165944,
+      "angleAnisotropy": 0.072698
+    },
+    {
+      "shortId": "O4_dy+146",
+      "phrase": "O4 shifted +146px",
+      "kind": "shifted_control",
+      "box": [
+        1334.0,
+        2323.0,
+        1801.0,
+        2371.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "highpassRms": 36.196888,
+      "highFreqPowerRatio": 0.110393,
+      "dominantAngleDeg": 11.25,
+      "dominantAngleBin": "0.0-22.5",
+      "dominantShare": 0.164872,
+      "angleAnisotropy": 0.073264
+    },
+    {
+      "shortId": "O4_dy+292",
+      "phrase": "O4 shifted +292px",
+      "kind": "shifted_control",
+      "box": [
+        1334.0,
+        2469.0,
+        1801.0,
+        2517.0
+      ],
+      "width": 467.0,
+      "height": 48.0,
+      "highpassRms": 23.60107,
+      "highFreqPowerRatio": 0.155953,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.196739,
+      "angleAnisotropy": 0.119451
+    },
+    {
+      "shortId": "B4_dy-292",
+      "phrase": "B4 shifted -292px",
+      "kind": "shifted_control",
+      "box": [
+        428.0,
+        2106.0,
+        691.0,
+        2153.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "highpassRms": 48.980816,
+      "highFreqPowerRatio": 0.156167,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.181175,
+      "angleAnisotropy": 0.111458
+    },
+    {
+      "shortId": "B4_dy-146",
+      "phrase": "B4 shifted -146px",
+      "kind": "shifted_control",
+      "box": [
+        428.0,
+        2252.0,
+        691.0,
+        2299.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "highpassRms": 47.578094,
+      "highFreqPowerRatio": 0.122139,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.185932,
+      "angleAnisotropy": 0.10217
+    },
+    {
+      "shortId": "B4_dy+146",
+      "phrase": "B4 shifted +146px",
+      "kind": "shifted_control",
+      "box": [
+        428.0,
+        2544.0,
+        691.0,
+        2591.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "highpassRms": 49.980595,
+      "highFreqPowerRatio": 0.126624,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.19427,
+      "angleAnisotropy": 0.114564
+    },
+    {
+      "shortId": "B4_dy+292",
+      "phrase": "B4 shifted +292px",
+      "kind": "shifted_control",
+      "box": [
+        428.0,
+        2690.0,
+        691.0,
+        2737.0
+      ],
+      "width": 263.0,
+      "height": 47.0,
+      "highpassRms": 50.636333,
+      "highFreqPowerRatio": 0.111116,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.176105,
+      "angleAnisotropy": 0.099424
+    },
+    {
+      "shortId": "G5_dy-292",
+      "phrase": "G5 shifted -292px",
+      "kind": "shifted_control",
+      "box": [
+        795.0,
+        2252.0,
+        1196.0,
+        2300.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "highpassRms": 45.21664,
+      "highFreqPowerRatio": 0.067617,
+      "dominantAngleDeg": 11.25,
+      "dominantAngleBin": "0.0-22.5",
+      "dominantShare": 0.175079,
+      "angleAnisotropy": 0.090283
+    },
+    {
+      "shortId": "G5_dy-146",
+      "phrase": "G5 shifted -146px",
+      "kind": "shifted_control",
+      "box": [
+        795.0,
+        2398.0,
+        1196.0,
+        2446.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "highpassRms": 44.85136,
+      "highFreqPowerRatio": 0.141327,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.180275,
+      "angleAnisotropy": 0.098944
+    },
+    {
+      "shortId": "G5_dy+146",
+      "phrase": "G5 shifted +146px",
+      "kind": "shifted_control",
+      "box": [
+        795.0,
+        2690.0,
+        1196.0,
+        2738.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "highpassRms": 50.568424,
+      "highFreqPowerRatio": 0.14495,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.177395,
+      "angleAnisotropy": 0.088631
+    },
+    {
+      "shortId": "G5_dy+292",
+      "phrase": "G5 shifted +292px",
+      "kind": "shifted_control",
+      "box": [
+        795.0,
+        2836.0,
+        1196.0,
+        2884.0
+      ],
+      "width": 401.0,
+      "height": 48.0,
+      "highpassRms": 42.863377,
+      "highFreqPowerRatio": 0.096911,
+      "dominantAngleDeg": 11.25,
+      "dominantAngleBin": "0.0-22.5",
+      "dominantShare": 0.181281,
+      "angleAnisotropy": 0.104843
+    },
+    {
+      "shortId": "O5_dy-292",
+      "phrase": "O5 shifted -292px",
+      "kind": "shifted_control",
+      "box": [
+        1040.0,
+        2640.0,
+        1661.0,
+        2690.0
+      ],
+      "width": 621.0,
+      "height": 50.0,
+      "highpassRms": 29.112747,
+      "highFreqPowerRatio": 0.114589,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.215675,
+      "angleAnisotropy": 0.140159
+    },
+    {
+      "shortId": "O5_dy-146",
+      "phrase": "O5 shifted -146px",
+      "kind": "shifted_control",
+      "box": [
+        1040.0,
+        2786.0,
+        1661.0,
+        2836.0
+      ],
+      "width": 621.0,
+      "height": 50.0,
+      "highpassRms": 29.838058,
+      "highFreqPowerRatio": 0.111385,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.172547,
+      "angleAnisotropy": 0.080026
+    },
+    {
+      "shortId": "O5_dy+146",
+      "phrase": "O5 shifted +146px",
+      "kind": "shifted_control",
+      "box": [
+        1040.0,
+        3078.0,
+        1661.0,
+        3128.0
+      ],
+      "width": 621.0,
+      "height": 50.0,
+      "highpassRms": 0.639545,
+      "highFreqPowerRatio": 0.620132,
+      "dominantAngleDeg": 11.25,
+      "dominantAngleBin": "0.0-22.5",
+      "dominantShare": 0.373026,
+      "angleAnisotropy": 0.355171
+    },
+    {
+      "shortId": "O5_dy+292",
+      "phrase": "O5 shifted +292px",
+      "kind": "shifted_control",
+      "box": [
+        1040.0,
+        3224.0,
+        1661.0,
+        3264.0
+      ],
+      "width": 621.0,
+      "height": 40.0,
+      "highpassRms": 0.709239,
+      "highFreqPowerRatio": 0.538639,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.303827,
+      "angleAnisotropy": 0.23872
+    },
+    {
+      "shortId": "slot0_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "kind": "overdose_slot",
+      "box": [
+        294.0,
+        2176.81,
+        538.5697177074414,
+        3023.73
+      ],
+      "width": 244.569718,
+      "height": 846.92,
+      "highpassRms": 25.279095,
+      "highFreqPowerRatio": 0.078229,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.180141,
+      "angleAnisotropy": 0.095096
+    },
+    {
+      "shortId": "slot1_V",
+      "phrase": "C9 projected OVERDOSE slot V",
+      "kind": "overdose_slot",
+      "box": [
+        538.5697177074414,
+        2176.81,
+        783.0000000000016,
+        3023.73
+      ],
+      "width": 244.430282,
+      "height": 846.92,
+      "highpassRms": 38.138618,
+      "highFreqPowerRatio": 0.095908,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.175049,
+      "angleAnisotropy": 0.088139
+    },
+    {
+      "shortId": "slot2_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "kind": "overdose_slot",
+      "box": [
+        783.0000000000016,
+        2176.81,
+        1027.569717707443,
+        3023.73
+      ],
+      "width": 244.569718,
+      "height": 846.92,
+      "highpassRms": 37.158432,
+      "highFreqPowerRatio": 0.074199,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.185115,
+      "angleAnisotropy": 0.098896
+    },
+    {
+      "shortId": "slot3_R",
+      "phrase": "C9 projected OVERDOSE slot R",
+      "kind": "overdose_slot",
+      "box": [
+        1027.569717707443,
+        2176.81,
+        1271.9999999999968,
+        3023.73
+      ],
+      "width": 244.430282,
+      "height": 846.92,
+      "highpassRms": 36.939877,
+      "highFreqPowerRatio": 0.074704,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.187685,
+      "angleAnisotropy": 0.102211
+    },
+    {
+      "shortId": "slot4_D",
+      "phrase": "C9 projected OVERDOSE slot D",
+      "kind": "overdose_slot",
+      "box": [
+        1271.9999999999968,
+        2176.81,
+        1516.5697177074383,
+        3023.73
+      ],
+      "width": 244.569718,
+      "height": 846.92,
+      "highpassRms": 34.683273,
+      "highFreqPowerRatio": 0.07964,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.179649,
+      "angleAnisotropy": 0.092531
+    },
+    {
+      "shortId": "slot5_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "kind": "overdose_slot",
+      "box": [
+        1516.5697177074383,
+        2176.81,
+        1760.9999999999984,
+        3023.73
+      ],
+      "width": 244.430282,
+      "height": 846.92,
+      "highpassRms": 21.410753,
+      "highFreqPowerRatio": 0.050279,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.178295,
+      "angleAnisotropy": 0.088338
+    },
+    {
+      "shortId": "slot6_S",
+      "phrase": "C9 projected OVERDOSE slot S",
+      "kind": "overdose_slot",
+      "box": [
+        1760.9999999999984,
+        2176.81,
+        2005.5697177074398,
+        3023.73
+      ],
+      "width": 244.569718,
+      "height": 846.92,
+      "highpassRms": 4.877178,
+      "highFreqPowerRatio": 0.059792,
+      "dominantAngleDeg": 11.25,
+      "dominantAngleBin": "0.0-22.5",
+      "dominantShare": 0.168972,
+      "angleAnisotropy": 0.080424
+    },
+    {
+      "shortId": "slot7_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "kind": "overdose_slot",
+      "box": [
+        2005.5697177074398,
+        2176.81,
+        2250.0,
+        3023.73
+      ],
+      "width": 244.430282,
+      "height": 846.92,
+      "highpassRms": 4.295552,
+      "highFreqPowerRatio": 0.013535,
+      "dominantAngleDeg": 101.25,
+      "dominantAngleBin": "90.0-112.5",
+      "dominantShare": 0.239552,
+      "angleAnisotropy": 0.163221
+    }
+  ],
+  "decision": {
+    "currentScanHalftoneScreenGate": "current_scan_halftone_screen_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Active target boxes and projected OVERDOSE slots do not show a unique halftone/screen-angle or high-frequency texture carrier against shifted controls. The active boxes do not all become control-threshold outliers and their shared dominant-angle bin is not by itself a source-backed unit/order/transform.",
+    "nextMove": "Keep current-scan print/texture artifacts as closed. Continue only with distinct physical/original-layout source validation or raw clue wording that names extraction unit, order, or transform."
+  },
+  "sheet": "analysis_outputs/source_audit/current_scan_halftone_screen_gate/current_scan_halftone_screen_gate_sheet.jpg",
+  "fingerprint": "active=4|controls=16|slots=8|shareOutliers=0|highpassOutliers=1|allFourShare=0|allFourHighpass=0|activeBins=90.0-112.5,90.0-112.5,90.0-112.5,90.0-112.5|commonBin=90.0-112.5|controlCommon=12|slotCommon=7|shareMax=0.241/0.373/0.240|highpassMax=50.752/50.636/38.139|sourceR3=0|triggers=0/9|selectors=0"
+}

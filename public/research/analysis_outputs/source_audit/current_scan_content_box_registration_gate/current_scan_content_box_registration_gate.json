@@ -1,0 +1,1042 @@
+{
+  "createdAt": "2026-05-24T11:08:01+02:00",
+  "scope": "current scan content-box registration audit for held-to-light geometry; no extraction or candidate generation",
+  "inputs": {
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "heldToLightSimulator": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/current_scan_held_to_light_simulator.json",
+    "sourceInkLandingGate": "analysis_outputs/source_audit/current_scan_valid_leaf_source_ink_landing_gate/current_scan_valid_leaf_source_ink_landing_gate.json",
+    "jitterSourceInkGate": "analysis_outputs/source_audit/current_scan_valid_leaf_jitter_source_ink_rescue_gate/current_scan_valid_leaf_jitter_source_ink_rescue_gate.json",
+    "pageFrameTrimGate": "analysis_outputs/source_audit/current_scan_page_frame_trim_registration_gate/current_scan_page_frame_trim_registration_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json",
+    "sourcePageTemplate": "analysis_outputs/source_images/magazine_page_{page}.jpg",
+    "uprightPageTemplate": "analysis_outputs/3d_article_map/page_{page}_upright.jpg"
+  },
+  "contentBoxRows": [
+    {
+      "page": 75,
+      "kind": "all_content",
+      "box": [
+        29,
+        134,
+        2544,
+        3264
+      ],
+      "width": 2515,
+      "height": 3130,
+      "center": [
+        1286.5,
+        1699.0
+      ],
+      "contentShare": 0.101162,
+      "touchesCanvasLeft": true,
+      "touchesCanvasTop": false,
+      "touchesCanvasRight": true,
+      "touchesCanvasBottom": true,
+      "bandBoundaryClipped": false
+    },
+    {
+      "page": 75,
+      "kind": "lower_half_content",
+      "box": [
+        29,
+        1632,
+        2544,
+        3264
+      ],
+      "width": 2515,
+      "height": 1632,
+      "center": [
+        1286.5,
+        2448.0
+      ],
+      "contentShare": 0.101162,
+      "touchesCanvasLeft": true,
+      "touchesCanvasTop": false,
+      "touchesCanvasRight": true,
+      "touchesCanvasBottom": true,
+      "bandBoundaryClipped": true
+    },
+    {
+      "page": 76,
+      "kind": "all_content",
+      "box": [
+        34,
+        13,
+        2544,
+        3263
+      ],
+      "width": 2510,
+      "height": 3250,
+      "center": [
+        1289.0,
+        1638.0
+      ],
+      "contentShare": 0.095224,
+      "touchesCanvasLeft": true,
+      "touchesCanvasTop": true,
+      "touchesCanvasRight": true,
+      "touchesCanvasBottom": true,
+      "bandBoundaryClipped": false
+    },
+    {
+      "page": 76,
+      "kind": "lower_half_content",
+      "box": [
+        36,
+        1632,
+        2544,
+        3263
+      ],
+      "width": 2508,
+      "height": 1631,
+      "center": [
+        1290.0,
+        2447.5
+      ],
+      "contentShare": 0.095224,
+      "touchesCanvasLeft": true,
+      "touchesCanvasTop": false,
+      "touchesCanvasRight": true,
+      "touchesCanvasBottom": true,
+      "bandBoundaryClipped": true
+    },
+    {
+      "page": 78,
+      "kind": "all_content",
+      "box": [
+        27,
+        16,
+        2477,
+        3264
+      ],
+      "width": 2450,
+      "height": 3248,
+      "center": [
+        1252.0,
+        1640.0
+      ],
+      "contentShare": 0.111161,
+      "touchesCanvasLeft": true,
+      "touchesCanvasTop": true,
+      "touchesCanvasRight": false,
+      "touchesCanvasBottom": true,
+      "bandBoundaryClipped": false
+    },
+    {
+      "page": 78,
+      "kind": "lower_half_content",
+      "box": [
+        34,
+        1632,
+        2543,
+        3264
+      ],
+      "width": 2509,
+      "height": 1632,
+      "center": [
+        1288.5,
+        2448.0
+      ],
+      "contentShare": 0.111161,
+      "touchesCanvasLeft": true,
+      "touchesCanvasTop": false,
+      "touchesCanvasRight": true,
+      "touchesCanvasBottom": true,
+      "bandBoundaryClipped": true
+    },
+    {
+      "page": 79,
+      "kind": "all_content",
+      "box": [
+        36,
+        0,
+        2544,
+        3264
+      ],
+      "width": 2508,
+      "height": 3264,
+      "center": [
+        1290.0,
+        1632.0
+      ],
+      "contentShare": 0.09816,
+      "touchesCanvasLeft": true,
+      "touchesCanvasTop": true,
+      "touchesCanvasRight": true,
+      "touchesCanvasBottom": true,
+      "bandBoundaryClipped": false
+    },
+    {
+      "page": 79,
+      "kind": "lower_half_content",
+      "box": [
+        36,
+        1632,
+        2544,
+        3264
+      ],
+      "width": 2508,
+      "height": 1632,
+      "center": [
+        1290.0,
+        2448.0
+      ],
+      "contentShare": 0.09816,
+      "touchesCanvasLeft": true,
+      "touchesCanvasTop": false,
+      "touchesCanvasRight": true,
+      "touchesCanvasBottom": true,
+      "bandBoundaryClipped": true
+    }
+  ],
+  "pairRows": [
+    {
+      "pair": "75->76",
+      "sourcePage": 75,
+      "targetPage": 76,
+      "kind": "all_content",
+      "sourceBox": [
+        29,
+        134,
+        2544,
+        3264
+      ],
+      "mirroredSourceBox": [
+        0,
+        134,
+        2515,
+        3264
+      ],
+      "targetBox": [
+        34,
+        13,
+        2544,
+        3263
+      ],
+      "dx": 31.5,
+      "dy": -61.0,
+      "shiftMagnitudePx": 68.653,
+      "scaleX": 0.998012,
+      "scaleY": 1.038339,
+      "sourceTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true,
+        "bandBoundary": false
+      },
+      "targetTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": true,
+        "bandBoundary": false
+      }
+    },
+    {
+      "pair": "75->76",
+      "sourcePage": 75,
+      "targetPage": 76,
+      "kind": "lower_half_content",
+      "sourceBox": [
+        29,
+        1632,
+        2544,
+        3264
+      ],
+      "mirroredSourceBox": [
+        0,
+        1632,
+        2515,
+        3264
+      ],
+      "targetBox": [
+        36,
+        1632,
+        2544,
+        3263
+      ],
+      "dx": 32.5,
+      "dy": -0.5,
+      "shiftMagnitudePx": 32.504,
+      "scaleX": 0.997217,
+      "scaleY": 0.999387,
+      "sourceTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true,
+        "bandBoundary": true
+      },
+      "targetTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true,
+        "bandBoundary": true
+      }
+    },
+    {
+      "pair": "78->79",
+      "sourcePage": 78,
+      "targetPage": 79,
+      "kind": "all_content",
+      "sourceBox": [
+        27,
+        16,
+        2477,
+        3264
+      ],
+      "mirroredSourceBox": [
+        67,
+        16,
+        2517,
+        3264
+      ],
+      "targetBox": [
+        36,
+        0,
+        2544,
+        3264
+      ],
+      "dx": -2.0,
+      "dy": -8.0,
+      "shiftMagnitudePx": 8.246,
+      "scaleX": 1.023673,
+      "scaleY": 1.004926,
+      "sourceTouchesCanvasOrBand": {
+        "left": true,
+        "right": false,
+        "top": true,
+        "bottom": true,
+        "bandBoundary": false
+      },
+      "targetTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": true,
+        "bandBoundary": false
+      }
+    },
+    {
+      "pair": "78->79",
+      "sourcePage": 78,
+      "targetPage": 79,
+      "kind": "lower_half_content",
+      "sourceBox": [
+        34,
+        1632,
+        2543,
+        3264
+      ],
+      "mirroredSourceBox": [
+        1,
+        1632,
+        2510,
+        3264
+      ],
+      "targetBox": [
+        36,
+        1632,
+        2544,
+        3264
+      ],
+      "dx": 34.5,
+      "dy": 0.0,
+      "shiftMagnitudePx": 34.5,
+      "scaleX": 0.999601,
+      "scaleY": 1.0,
+      "sourceTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true,
+        "bandBoundary": true
+      },
+      "targetTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true,
+        "bandBoundary": true
+      }
+    },
+    {
+      "pair": "76->75",
+      "sourcePage": 76,
+      "targetPage": 75,
+      "kind": "all_content",
+      "sourceBox": [
+        34,
+        13,
+        2544,
+        3263
+      ],
+      "mirroredSourceBox": [
+        0,
+        13,
+        2510,
+        3263
+      ],
+      "targetBox": [
+        29,
+        134,
+        2544,
+        3264
+      ],
+      "dx": 31.5,
+      "dy": 61.0,
+      "shiftMagnitudePx": 68.653,
+      "scaleX": 1.001992,
+      "scaleY": 0.963077,
+      "sourceTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": true,
+        "bandBoundary": false
+      },
+      "targetTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true,
+        "bandBoundary": false
+      }
+    },
+    {
+      "pair": "76->75",
+      "sourcePage": 76,
+      "targetPage": 75,
+      "kind": "lower_half_content",
+      "sourceBox": [
+        36,
+        1632,
+        2544,
+        3263
+      ],
+      "mirroredSourceBox": [
+        0,
+        1632,
+        2508,
+        3263
+      ],
+      "targetBox": [
+        29,
+        1632,
+        2544,
+        3264
+      ],
+      "dx": 32.5,
+      "dy": 0.5,
+      "shiftMagnitudePx": 32.504,
+      "scaleX": 1.002791,
+      "scaleY": 1.000613,
+      "sourceTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true,
+        "bandBoundary": true
+      },
+      "targetTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true,
+        "bandBoundary": true
+      }
+    },
+    {
+      "pair": "79->78",
+      "sourcePage": 79,
+      "targetPage": 78,
+      "kind": "all_content",
+      "sourceBox": [
+        36,
+        0,
+        2544,
+        3264
+      ],
+      "mirroredSourceBox": [
+        0,
+        0,
+        2508,
+        3264
+      ],
+      "targetBox": [
+        27,
+        16,
+        2477,
+        3264
+      ],
+      "dx": -2.0,
+      "dy": 8.0,
+      "shiftMagnitudePx": 8.246,
+      "scaleX": 0.976874,
+      "scaleY": 0.995098,
+      "sourceTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": true,
+        "bandBoundary": false
+      },
+      "targetTouchesCanvasOrBand": {
+        "left": true,
+        "right": false,
+        "top": true,
+        "bottom": true,
+        "bandBoundary": false
+      }
+    },
+    {
+      "pair": "79->78",
+      "sourcePage": 79,
+      "targetPage": 78,
+      "kind": "lower_half_content",
+      "sourceBox": [
+        36,
+        1632,
+        2544,
+        3264
+      ],
+      "mirroredSourceBox": [
+        0,
+        1632,
+        2508,
+        3264
+      ],
+      "targetBox": [
+        34,
+        1632,
+        2543,
+        3264
+      ],
+      "dx": 34.5,
+      "dy": 0.0,
+      "shiftMagnitudePx": 34.5,
+      "scaleX": 1.000399,
+      "scaleY": 1.0,
+      "sourceTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true,
+        "bandBoundary": true
+      },
+      "targetTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true,
+        "bandBoundary": true
+      }
+    },
+    {
+      "pair": "75->78",
+      "sourcePage": 75,
+      "targetPage": 78,
+      "kind": "all_content",
+      "sourceBox": [
+        29,
+        134,
+        2544,
+        3264
+      ],
+      "mirroredSourceBox": [
+        0,
+        134,
+        2515,
+        3264
+      ],
+      "targetBox": [
+        27,
+        16,
+        2477,
+        3264
+      ],
+      "dx": -5.5,
+      "dy": -59.0,
+      "shiftMagnitudePx": 59.256,
+      "scaleX": 0.974155,
+      "scaleY": 1.0377,
+      "sourceTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true,
+        "bandBoundary": false
+      },
+      "targetTouchesCanvasOrBand": {
+        "left": true,
+        "right": false,
+        "top": true,
+        "bottom": true,
+        "bandBoundary": false
+      }
+    },
+    {
+      "pair": "75->78",
+      "sourcePage": 75,
+      "targetPage": 78,
+      "kind": "lower_half_content",
+      "sourceBox": [
+        29,
+        1632,
+        2544,
+        3264
+      ],
+      "mirroredSourceBox": [
+        0,
+        1632,
+        2515,
+        3264
+      ],
+      "targetBox": [
+        34,
+        1632,
+        2543,
+        3264
+      ],
+      "dx": 31.0,
+      "dy": 0.0,
+      "shiftMagnitudePx": 31.0,
+      "scaleX": 0.997614,
+      "scaleY": 1.0,
+      "sourceTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true,
+        "bandBoundary": true
+      },
+      "targetTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true,
+        "bandBoundary": true
+      }
+    },
+    {
+      "pair": "76->79",
+      "sourcePage": 76,
+      "targetPage": 79,
+      "kind": "all_content",
+      "sourceBox": [
+        34,
+        13,
+        2544,
+        3263
+      ],
+      "mirroredSourceBox": [
+        0,
+        13,
+        2510,
+        3263
+      ],
+      "targetBox": [
+        36,
+        0,
+        2544,
+        3264
+      ],
+      "dx": 35.0,
+      "dy": -6.0,
+      "shiftMagnitudePx": 35.511,
+      "scaleX": 0.999203,
+      "scaleY": 1.004308,
+      "sourceTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": true,
+        "bandBoundary": false
+      },
+      "targetTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": true,
+        "bandBoundary": false
+      }
+    },
+    {
+      "pair": "76->79",
+      "sourcePage": 76,
+      "targetPage": 79,
+      "kind": "lower_half_content",
+      "sourceBox": [
+        36,
+        1632,
+        2544,
+        3263
+      ],
+      "mirroredSourceBox": [
+        0,
+        1632,
+        2508,
+        3263
+      ],
+      "targetBox": [
+        36,
+        1632,
+        2544,
+        3264
+      ],
+      "dx": 36.0,
+      "dy": 0.5,
+      "shiftMagnitudePx": 36.003,
+      "scaleX": 1.0,
+      "scaleY": 1.000613,
+      "sourceTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true,
+        "bandBoundary": true
+      },
+      "targetTouchesCanvasOrBand": {
+        "left": true,
+        "right": true,
+        "top": false,
+        "bottom": true,
+        "bandBoundary": true
+      }
+    }
+  ],
+  "landingRows": [
+    {
+      "modeId": "natural_hflip",
+      "dx": 0.0,
+      "dy": 0.0,
+      "targetRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "visualState": "Y",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceInkPixelCount": 3143,
+          "pixelCount": 22416,
+          "sourceInkRatio": 0.140212,
+          "weakSourceSupported": true,
+          "sourceSupported": true
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "visualState": "K",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceInkPixelCount": 0,
+          "pixelCount": 12361,
+          "sourceInkRatio": 0.0,
+          "weakSourceSupported": false,
+          "sourceSupported": false
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "visualState": "K",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceInkPixelCount": 1148,
+          "pixelCount": 19248,
+          "sourceInkRatio": 0.059643,
+          "weakSourceSupported": true,
+          "sourceSupported": true
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "visualState": "Y",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceInkPixelCount": 6025,
+          "pixelCount": 31050,
+          "sourceInkRatio": 0.194042,
+          "weakSourceSupported": true,
+          "sourceSupported": true
+        }
+      ],
+      "activeSourceSupportedTargets": [
+        "O4",
+        "G5",
+        "O5"
+      ],
+      "weakSourceSupportedTargets": [
+        "O4",
+        "G5",
+        "O5"
+      ],
+      "zeroSourceInkTargets": [
+        "B4"
+      ],
+      "activeSourceSupportedCount": 3,
+      "weakActiveSourceSupportedCount": 3,
+      "allFourSourceSupported": false,
+      "allFourWeakSourceSupported": false
+    },
+    {
+      "modeId": "all_content_box_translation",
+      "dx": 31.5,
+      "dy": -61.0,
+      "targetRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "visualState": "Y",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceInkPixelCount": 1493,
+          "pixelCount": 22416,
+          "sourceInkRatio": 0.066604,
+          "weakSourceSupported": true,
+          "sourceSupported": true
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "visualState": "K",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceInkPixelCount": 0,
+          "pixelCount": 12361,
+          "sourceInkRatio": 0.0,
+          "weakSourceSupported": false,
+          "sourceSupported": false
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "visualState": "K",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceInkPixelCount": 1329,
+          "pixelCount": 19248,
+          "sourceInkRatio": 0.069046,
+          "weakSourceSupported": true,
+          "sourceSupported": true
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "visualState": "Y",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceInkPixelCount": 1,
+          "pixelCount": 31050,
+          "sourceInkRatio": 3.2e-05,
+          "weakSourceSupported": false,
+          "sourceSupported": false
+        }
+      ],
+      "activeSourceSupportedTargets": [
+        "O4",
+        "G5"
+      ],
+      "weakSourceSupportedTargets": [
+        "O4",
+        "G5"
+      ],
+      "zeroSourceInkTargets": [
+        "B4"
+      ],
+      "activeSourceSupportedCount": 2,
+      "weakActiveSourceSupportedCount": 2,
+      "allFourSourceSupported": false,
+      "allFourWeakSourceSupported": false
+    },
+    {
+      "modeId": "lower_half_content_box_translation",
+      "dx": 32.5,
+      "dy": -0.5,
+      "targetRows": [
+        {
+          "target": "O4",
+          "phrase": "buying the dip",
+          "visualState": "Y",
+          "box": [
+            1334.0,
+            2177.0,
+            1801.0,
+            2225.0
+          ],
+          "sourceInkPixelCount": 2967,
+          "pixelCount": 22416,
+          "sourceInkRatio": 0.132361,
+          "weakSourceSupported": true,
+          "sourceSupported": true
+        },
+        {
+          "target": "B4",
+          "phrase": "$1 billion",
+          "visualState": "K",
+          "box": [
+            428.0,
+            2398.0,
+            691.0,
+            2445.0
+          ],
+          "sourceInkPixelCount": 0,
+          "pixelCount": 12361,
+          "sourceInkRatio": 0.0,
+          "weakSourceSupported": false,
+          "sourceSupported": false
+        },
+        {
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "visualState": "K",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ],
+          "sourceInkPixelCount": 938,
+          "pixelCount": 19248,
+          "sourceInkRatio": 0.048732,
+          "weakSourceSupported": true,
+          "sourceSupported": false
+        },
+        {
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "visualState": "Y",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ],
+          "sourceInkPixelCount": 6171,
+          "pixelCount": 31050,
+          "sourceInkRatio": 0.198744,
+          "weakSourceSupported": true,
+          "sourceSupported": true
+        }
+      ],
+      "activeSourceSupportedTargets": [
+        "O4",
+        "O5"
+      ],
+      "weakSourceSupportedTargets": [
+        "O4",
+        "G5",
+        "O5"
+      ],
+      "zeroSourceInkTargets": [
+        "B4"
+      ],
+      "activeSourceSupportedCount": 2,
+      "weakActiveSourceSupportedCount": 3,
+      "allFourSourceSupported": false,
+      "allFourWeakSourceSupported": false
+    }
+  ],
+  "summary": {
+    "decision": "current_scan_content_box_registration_no_selector",
+    "pageCount": 4,
+    "pagesChecked": [
+      75,
+      76,
+      78,
+      79
+    ],
+    "validPair": "75->76",
+    "sameCanvasValidPair": true,
+    "validPairAllContentShift": [
+      31.5,
+      -61.0
+    ],
+    "validPairLowerHalfShift": [
+      32.5,
+      -0.5
+    ],
+    "allContentStability": {
+      "kind": "all_content",
+      "pairCount": 6,
+      "dxRangePx": 40.5,
+      "dyRangePx": 122.0,
+      "shiftMagnitudeRangePx": 60.407,
+      "medianDxPx": 14.75,
+      "medianDyPx": -7.0,
+      "scaleXRange": 0.049518,
+      "scaleYRange": 0.075262,
+      "stableByThreshold": false
+    },
+    "lowerHalfContentStability": {
+      "kind": "lower_half_content",
+      "pairCount": 6,
+      "dxRangePx": 5.0,
+      "dyRangePx": 1.0,
+      "shiftMagnitudeRangePx": 5.003,
+      "medianDxPx": 33.5,
+      "medianDyPx": 0.0,
+      "scaleXRange": 0.005574,
+      "scaleYRange": 0.001226,
+      "stableByThreshold": true
+    },
+    "allContentShiftStable": false,
+    "lowerHalfContentShiftStable": true,
+    "lowerHalfBoxesClippedToCanvasOrBand": true,
+    "contentBoxRegistrationCandidate": false,
+    "hiddenContentBoxCandidate": false,
+    "landingModeCount": 3,
+    "bestLandingModeId": "natural_hflip",
+    "bestLandingSupportedCount": 3,
+    "b4BestSourceInkRatio": 0.0,
+    "priorHeldToLightFingerprint": "pairs=9|rows=21|sameLeaf75natural=0.1003|sameLeaf75best=0.3242@-220,200|bestP76=nonphysical_79_to_76:best_global_feature:0.3840@40,80|bestGlobal=same_leaf_77_to_78:0.5220|sourceR3=0|triggers=0/9|selectors=0",
+    "priorSourceInkLandingFingerprint": "scenario=valid_75_to_76_natural|targets=4|controls=24|activeGe05=3|activeGe01=3|all4Ge05=0|all4Ge01=0|zeroTargets=B4|ratios=O4:0.1402,B4:0.0000,G5:0.0596,O5:0.1940|sourceR3=0|triggers=0/9|selectors=0",
+    "priorJitterSourceInkFingerprint": "credible=+-4|extended=+-8|credibleRows=81|extendedRows=289|credAll4=0|extAll4=0|credB4Pos=0|extB4Pos=0|bestCred=0,0:3/4:B4=0.0000:min=0.0000|bestExt=0,0:3/4:B4=0.0000:min=0.0000|bestCredRatios=O4:0.1402,B4:0.0000,G5:0.0596,O5:0.1940|sourceR3=0|triggers=0/9|selectors=0",
+    "priorPageFrameTrimFingerprint": "pages=4|pair=75->76|sameCanvas=1|allEdgesPages=0|pairAllEdges=0|trimCandidate=0|hiddenCandidate=0|sourceR3=0|triggers=0/9|selectors=0",
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "contentBoxRegistrationFingerprint": "pages=4|pair=75->76|sameCanvas=1|allShift=31.5,-61.0|lowerShift=32.5,-0.5|allStable=0|lowerStable=1|natural=3/4:B4=0.0000|allContent=2/4:B4=0.0000|lowerContent=2/4:B4=0.0000|candidate=0|hiddenCandidate=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "decision": {
+    "currentScanContentBoxRegistrationGate": "current_scan_content_box_registration_no_selector",
+    "selectorUnlocked": false,
+    "reason": "The all-page content envelope is content-dependent, while the lower-half envelope's repeatable x shift is clipped to canvas/band edges and does not rescue all four active targets. B4 remains zero source ink under content-box shifts.",
+    "nextMove": "Do not reopen held-to-light with content-box normalization unless a distinct physical or original-layout source supplies an explicit registration cue."
+  },
+  "sheet": "analysis_outputs/source_audit/current_scan_content_box_registration_gate/current_scan_content_box_registration_gate_sheet.jpg",
+  "fingerprint": "pages=4|pair=75->76|sameCanvas=1|allShift=31.5,-61.0|lowerShift=32.5,-0.5|allStable=0|lowerStable=1|natural=3/4:B4=0.0000|allContent=2/4:B4=0.0000|lowerContent=2/4:B4=0.0000|candidate=0|hiddenCandidate=0|sourceR3=0|triggers=0/9|selectors=0"
+}

@@ -1,0 +1,661 @@
+{
+  "createdAt": "2026-05-24T02:29:23",
+  "scope": "Current PDF text overlay render-mode gate. Checks page-76 OCR/text overlays, texttrace render types, fonts, visibility, OVERDOSE text, and active target aligned overlay hits. No OCR-to-key/hash/seed/WIF/address/BIP39/candidate work.",
+  "inputs": {
+    "pdfs": [
+      "magazine.pdf",
+      "keyser bitcoin .pdf",
+      "analysis_outputs/external_clues/google_drive_article_download.pdf"
+    ],
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "articleMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "affineReport": "analysis_outputs/source_audit/current_pdf_ocr_affine_alignment_gate/current_pdf_ocr_affine_alignment_gate.json"
+  },
+  "summary": {
+    "pdfCount": 3,
+    "textTraceSpanCount": 755,
+    "invisibleType3TraceSpanCount": 755,
+    "visiblePaintedTraceSpanCount": 0,
+    "allTraceTextInvisiblePdfCount": 3,
+    "glyphLessFontPdfCount": 2,
+    "helveticaOnlyPdfCount": 1,
+    "fitAvailablePdfCount": 2,
+    "overdoseTextTracePdfCount": 2,
+    "activeAlignedTraceRowCount": 6,
+    "activeAlignedComponentHitCount": 0,
+    "activeAlignedStrictInstructionHitCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "pdfTextOverlayRenderModeFingerprint": "pdfs=3|traceSpans=755|type3=755|visible=0|allInvisiblePdfs=3|glyphLess=2|helvetica=1|fits=2|overdosePdfs=2|activeTrace=6|activeComponents=0|activeStrict=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "records": [
+    {
+      "pdf": "magazine.pdf",
+      "rotation": 180,
+      "contentStreamCount": 3,
+      "contentByteCount": 13544,
+      "traceSpanCount": 221,
+      "textTraceTypeCounts": {
+        "3": 221
+      },
+      "visiblePaintedTraceSpanCount": 0,
+      "invisibleType3TraceSpanCount": 221,
+      "allTraceTextInvisible": true,
+      "fonts": {
+        "Helvetica": 221
+      },
+      "colors": {
+        "(0.0, 0.0, 0.0)": 221
+      },
+      "usesGlyphLessFont": false,
+      "usesHelveticaOnly": true,
+      "explicitTr3InPageStream": true,
+      "fitAvailable": false,
+      "overdoseTextHitCount": 0,
+      "overdoseTextTraceTypes": [],
+      "alignedHeaderTraceCount": 0,
+      "alignedHeaderText": "",
+      "targetRows": [],
+      "activeAlignedTraceRowCount": 0,
+      "activeAlignedComponentHitCount": 0,
+      "activeAlignedStrictInstructionHitCount": 0,
+      "sampleRows": [
+        {
+          "text": "9L",
+          "type": 3,
+          "font": "Helvetica",
+          "size": 9.0,
+          "bbox": [
+            24.0,
+            30.639,
+            34.008,
+            39.639
+          ]
+        },
+        {
+          "text": "q",
+          "type": 3,
+          "font": "Helvetica",
+          "size": 11.5,
+          "bbox": [
+            19.44,
+            318.843,
+            25.834,
+            330.343
+          ]
+        },
+        {
+          "text": "o",
+          "type": 3,
+          "font": "Helvetica",
+          "size": 8.5,
+          "bbox": [
+            19.44,
+            331.51,
+            24.166,
+            340.01
+          ]
+        },
+        {
+          "text": "9.",
+          "type": 3,
+          "font": "Helvetica",
+          "size": 7.5,
+          "bbox": [
+            19.44,
+            339.492,
+            25.695,
+            346.992
+          ]
+        },
+        {
+          "text": "\u00a7)",
+          "type": 3,
+          "font": "Helvetica",
+          "size": 5.0,
+          "bbox": [
+            19.44,
+            360.648,
+            23.885,
+            365.648
+          ]
+        },
+        {
+          "text": "Gt",
+          "type": 3,
+          "font": "Helvetica",
+          "size": 6.0,
+          "bbox": [
+            17.76,
+            365.146,
+            24.096,
+            371.146
+          ]
+        },
+        {
+          "text": "\u00df)",
+          "type": 3,
+          "font": "Helvetica",
+          "size": 5.0,
+          "bbox": [
+            19.44,
+            370.728,
+            24.16,
+            375.728
+          ]
+        },
+        {
+          "text": "\u00a7.",
+          "type": 3,
+          "font": "Helvetica",
+          "size": 7.0,
+          "bbox": [
+            19.68,
+            376.123,
+            25.518,
+            383.123
+          ]
+        },
+        {
+          "text": "o",
+          "type": 3,
+          "font": "Helvetica",
+          "size": 8.0,
+          "bbox": [
+            19.68,
+            385.421,
+            24.128,
+            393.421
+          ]
+        },
+        {
+          "text": "m",
+          "type": 3,
+          "font": "Helvetica",
+          "size": 7.0,
+          "bbox": [
+            19.68,
+            405.643,
+            25.511,
+            412.643
+          ]
+        },
+        {
+          "text": "a",
+          "type": 3,
+          "font": "Helvetica",
+          "size": 10.5,
+          "bbox": [
+            19.44,
+            412.265,
+            25.278,
+            422.765
+          ]
+        },
+        {
+          "text": "0i",
+          "type": 3,
+          "font": "Helvetica",
+          "size": 5.5,
+          "bbox": [
+            19.68,
+            420.977,
+            23.959,
+            426.477
+          ]
+        }
+      ]
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "rotation": 0,
+      "contentStreamCount": 4,
+      "contentByteCount": 107,
+      "traceSpanCount": 267,
+      "textTraceTypeCounts": {
+        "3": 267
+      },
+      "visiblePaintedTraceSpanCount": 0,
+      "invisibleType3TraceSpanCount": 267,
+      "allTraceTextInvisible": true,
+      "fonts": {
+        "GlyphLessFont": 267
+      },
+      "colors": {
+        "(0.0, 0.0, 0.0)": 267
+      },
+      "usesGlyphLessFont": true,
+      "usesHelveticaOnly": false,
+      "explicitTr3InPageStream": false,
+      "fitAvailable": true,
+      "overdoseTextHitCount": 1,
+      "overdoseTextTraceTypes": [
+        3
+      ],
+      "alignedHeaderTraceCount": 1,
+      "alignedHeaderText": "OVERDOSE",
+      "targetRows": [
+        {
+          "target": "O4",
+          "label": "buying the dip",
+          "alignedTraceCount": 1,
+          "alignedText": "ByiiREeraipy\"",
+          "traceTypes": [
+            3
+          ],
+          "componentHitText": [],
+          "strictInstructionText": []
+        },
+        {
+          "target": "B4",
+          "label": "$1 billion",
+          "alignedTraceCount": 1,
+          "alignedText": "eis",
+          "traceTypes": [
+            3
+          ],
+          "componentHitText": [],
+          "strictInstructionText": []
+        },
+        {
+          "target": "G5",
+          "label": "Volcano Bonds",
+          "alignedTraceCount": 0,
+          "alignedText": "",
+          "traceTypes": [],
+          "componentHitText": [],
+          "strictInstructionText": []
+        },
+        {
+          "target": "O5",
+          "label": "shitcoiner at heart",
+          "alignedTraceCount": 1,
+          "alignedText": "siukbeodmensertslveaarty",
+          "traceTypes": [
+            3
+          ],
+          "componentHitText": [],
+          "strictInstructionText": []
+        }
+      ],
+      "activeAlignedTraceRowCount": 3,
+      "activeAlignedComponentHitCount": 0,
+      "activeAlignedStrictInstructionHitCount": 0,
+      "sampleRows": [
+        {
+          "text": "  ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 132.96,
+          "bbox": [
+            456.24,
+            -130.027,
+            589.2,
+            2.933
+          ]
+        },
+        {
+          "text": "OVERDOSE ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 8.374,
+          "bbox": [
+            514.32,
+            28.035,
+            552.001,
+            36.408
+          ]
+        },
+        {
+          "text": "Get ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 11.4,
+          "bbox": [
+            194.16,
+            79.251,
+            216.96,
+            90.651
+          ]
+        },
+        {
+          "text": "some ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 11.52,
+          "bbox": [
+            216.72,
+            79.131,
+            245.52,
+            90.652
+          ]
+        },
+        {
+          "text": "toxicity. ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 11.664,
+          "bbox": [
+            245.28,
+            78.988,
+            303.6,
+            90.652
+          ]
+        },
+        {
+          "text": "Get ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 10.801,
+          "bbox": [
+            303.36,
+            79.85,
+            324.961,
+            90.651
+          ]
+        },
+        {
+          "text": "some ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 11.424,
+          "bbox": [
+            324.72,
+            79.227,
+            353.28,
+            90.651
+          ]
+        },
+        {
+          "text": "bitcoin. ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 11.413,
+          "bbox": [
+            353.04,
+            79.238,
+            404.4,
+            90.651
+          ]
+        },
+        {
+          "text": "Open ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 11.52,
+          "bbox": [
+            404.16,
+            79.131,
+            432.961,
+            90.652
+          ]
+        },
+        {
+          "text": "your ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 11.424,
+          "bbox": [
+            434.16,
+            79.227,
+            462.721,
+            90.651
+          ]
+        },
+        {
+          "text": "heart ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 11.44,
+          "bbox": [
+            462.48,
+            79.211,
+            496.801,
+            90.651
+          ]
+        },
+        {
+          "text": "to ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 11.52,
+          "bbox": [
+            498.0,
+            79.131,
+            515.28,
+            90.652
+          ]
+        }
+      ]
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "rotation": 0,
+      "contentStreamCount": 4,
+      "contentByteCount": 107,
+      "traceSpanCount": 267,
+      "textTraceTypeCounts": {
+        "3": 267
+      },
+      "visiblePaintedTraceSpanCount": 0,
+      "invisibleType3TraceSpanCount": 267,
+      "allTraceTextInvisible": true,
+      "fonts": {
+        "GlyphLessFont": 267
+      },
+      "colors": {
+        "(0.0, 0.0, 0.0)": 267
+      },
+      "usesGlyphLessFont": true,
+      "usesHelveticaOnly": false,
+      "explicitTr3InPageStream": false,
+      "fitAvailable": true,
+      "overdoseTextHitCount": 1,
+      "overdoseTextTraceTypes": [
+        3
+      ],
+      "alignedHeaderTraceCount": 1,
+      "alignedHeaderText": "OVERDOSE",
+      "targetRows": [
+        {
+          "target": "O4",
+          "label": "buying the dip",
+          "alignedTraceCount": 1,
+          "alignedText": "ByiiREeraipy\"",
+          "traceTypes": [
+            3
+          ],
+          "componentHitText": [],
+          "strictInstructionText": []
+        },
+        {
+          "target": "B4",
+          "label": "$1 billion",
+          "alignedTraceCount": 1,
+          "alignedText": "eis",
+          "traceTypes": [
+            3
+          ],
+          "componentHitText": [],
+          "strictInstructionText": []
+        },
+        {
+          "target": "G5",
+          "label": "Volcano Bonds",
+          "alignedTraceCount": 0,
+          "alignedText": "",
+          "traceTypes": [],
+          "componentHitText": [],
+          "strictInstructionText": []
+        },
+        {
+          "target": "O5",
+          "label": "shitcoiner at heart",
+          "alignedTraceCount": 1,
+          "alignedText": "siukbeodmensertslveaarty",
+          "traceTypes": [
+            3
+          ],
+          "componentHitText": [],
+          "strictInstructionText": []
+        }
+      ],
+      "activeAlignedTraceRowCount": 3,
+      "activeAlignedComponentHitCount": 0,
+      "activeAlignedStrictInstructionHitCount": 0,
+      "sampleRows": [
+        {
+          "text": "  ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 132.96,
+          "bbox": [
+            456.24,
+            -130.027,
+            589.2,
+            2.933
+          ]
+        },
+        {
+          "text": "OVERDOSE ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 8.374,
+          "bbox": [
+            514.32,
+            28.035,
+            552.001,
+            36.408
+          ]
+        },
+        {
+          "text": "Get ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 11.4,
+          "bbox": [
+            194.16,
+            79.251,
+            216.96,
+            90.651
+          ]
+        },
+        {
+          "text": "some ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 11.52,
+          "bbox": [
+            216.72,
+            79.131,
+            245.52,
+            90.652
+          ]
+        },
+        {
+          "text": "toxicity. ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 11.664,
+          "bbox": [
+            245.28,
+            78.988,
+            303.6,
+            90.652
+          ]
+        },
+        {
+          "text": "Get ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 10.801,
+          "bbox": [
+            303.36,
+            79.85,
+            324.961,
+            90.651
+          ]
+        },
+        {
+          "text": "some ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 11.424,
+          "bbox": [
+            324.72,
+            79.227,
+            353.28,
+            90.651
+          ]
+        },
+        {
+          "text": "bitcoin. ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 11.413,
+          "bbox": [
+            353.04,
+            79.238,
+            404.4,
+            90.651
+          ]
+        },
+        {
+          "text": "Open ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 11.52,
+          "bbox": [
+            404.16,
+            79.131,
+            432.961,
+            90.652
+          ]
+        },
+        {
+          "text": "your ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 11.424,
+          "bbox": [
+            434.16,
+            79.227,
+            462.721,
+            90.651
+          ]
+        },
+        {
+          "text": "heart ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 11.44,
+          "bbox": [
+            462.48,
+            79.211,
+            496.801,
+            90.651
+          ]
+        },
+        {
+          "text": "to ",
+          "type": 3,
+          "font": "GlyphLessFont",
+          "size": 11.52,
+          "bbox": [
+            498.0,
+            79.131,
+            515.28,
+            90.652
+          ]
+        }
+      ]
+    }
+  ],
+  "decision": {
+    "currentPdfTextOverlayRenderModeGate": "do_not_reopen_pdf_text_overlay",
+    "reason": "All page-76 texttrace spans are render type 3/invisible OCR text. The low-resolution duplicates use GlyphLessFont, magazine.pdf uses Helvetica, visible painted text spans are 0, and aligned active target overlay hits contain no exact components or strict unit/order terms."
+  },
+  "sheet": "analysis_outputs/source_audit/current_pdf_text_overlay_render_mode_gate/current_pdf_text_overlay_render_mode_gate_sheet.jpg",
+  "nextMove": "Treat PDF text overlays as derivative OCR context only. Continue to require a distinct source/original-layout asset or raw clue before reopening extraction."
+}

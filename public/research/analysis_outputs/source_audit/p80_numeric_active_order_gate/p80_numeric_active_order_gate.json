@@ -1,0 +1,454 @@
+{
+  "createdAt": "2026-05-21T00:29:16",
+  "scope": "p80 numeric active-order gate; no extraction, no key derivation, no hashing, no seed/WIF/address checks",
+  "inputs": {
+    "packageCopy": "analysis_outputs/3d_article_map/p80_package_copy_audit.json",
+    "activeLineUnits": "analysis_outputs/plain_text_transcript/active_line_unit_reconciliation/active_line_unit_reconciliation.json",
+    "formatAuthority": "analysis_outputs/docm_format_sources/page76_target_format_authority_lock/page76_target_format_authority_lock.json",
+    "volumeNumberImpact": "analysis_outputs/source_audit/p80_volume_number_impact/p80_volume_number_impact.json"
+  },
+  "summary": {
+    "rawNumbersCsv": "5,100,5,16,473,6,473,80",
+    "canonicalNumbersCsv": "5,100,5,16,473,80",
+    "activePageLines": "22 25 27 32",
+    "activeCorridorIndexes": "4 7 9 14",
+    "activeSentenceRows": "44 45 45 48",
+    "activeLineGaps": "3 2 5",
+    "activeCorridorGaps": "3 2 5",
+    "exactSequenceSuccessCount": 0,
+    "orderedSubsequenceSuccessCount": 0,
+    "nonemptyIntersectionCount": 8,
+    "onlyStrongDirectNumberLink": "5 repeats and matches the broader five-unit/five-symptom model, not the four-anchor active quartet order",
+    "canonicalVolumeDecision": "`16 FL OZ (473 mL)` should be treated as the canonical package volume; `6 FL OZ` is a clipped-crop reading.",
+    "formatAuthorityPattern": "OBBO",
+    "formatAuthorityVisualState": "YKKY",
+    "selectorUnlocked": false
+  },
+  "numberRecords": [
+    {
+      "label": "cap_front",
+      "text": "5 SYMPTOM RELIEF",
+      "number": 5,
+      "clippedVolumeReading": false
+    },
+    {
+      "label": "claim_1",
+      "text": "100% Proof of Work Liquid",
+      "number": 100,
+      "clippedVolumeReading": false
+    },
+    {
+      "label": "bottle_front",
+      "text": "5 SYMPTOM RELIEF",
+      "number": 5,
+      "clippedVolumeReading": false
+    },
+    {
+      "label": "volume_visible_likely",
+      "text": "16 FL OZ (473 mL)",
+      "number": 16,
+      "clippedVolumeReading": false
+    },
+    {
+      "label": "volume_visible_likely",
+      "text": "16 FL OZ (473 mL)",
+      "number": 473,
+      "clippedVolumeReading": false
+    },
+    {
+      "label": "volume_crop_recorded",
+      "text": "6 FL OZ (473 mL)",
+      "number": 6,
+      "clippedVolumeReading": true
+    },
+    {
+      "label": "volume_crop_recorded",
+      "text": "6 FL OZ (473 mL)",
+      "number": 473,
+      "clippedVolumeReading": true
+    },
+    {
+      "label": "page_number",
+      "text": "80",
+      "number": 80,
+      "clippedVolumeReading": false
+    }
+  ],
+  "canonicalNumberRecords": [
+    {
+      "label": "cap_front",
+      "text": "5 SYMPTOM RELIEF",
+      "number": 5,
+      "clippedVolumeReading": false
+    },
+    {
+      "label": "claim_1",
+      "text": "100% Proof of Work Liquid",
+      "number": 100,
+      "clippedVolumeReading": false
+    },
+    {
+      "label": "bottle_front",
+      "text": "5 SYMPTOM RELIEF",
+      "number": 5,
+      "clippedVolumeReading": false
+    },
+    {
+      "label": "volume_visible_likely",
+      "text": "16 FL OZ (473 mL)",
+      "number": 16,
+      "clippedVolumeReading": false
+    },
+    {
+      "label": "volume_visible_likely",
+      "text": "16 FL OZ (473 mL)",
+      "number": 473,
+      "clippedVolumeReading": false
+    },
+    {
+      "label": "page_number",
+      "text": "80",
+      "number": 80,
+      "clippedVolumeReading": false
+    }
+  ],
+  "sequenceChecks": [
+    {
+      "target": "active_page_lines",
+      "targetSequence": [
+        22,
+        25,
+        27,
+        32
+      ],
+      "exactContiguousSubsequence": false,
+      "exactOrderedSubsequence": false,
+      "intersection": [],
+      "targetGaps": [
+        3,
+        2,
+        5
+      ],
+      "gapIntersection": [
+        5
+      ],
+      "packageFirstFour": [
+        5,
+        100,
+        5,
+        16
+      ],
+      "packageFirstFourGaps": [
+        95,
+        -95,
+        11
+      ],
+      "firstFourEqualsTarget": false,
+      "firstFourEqualsTargetGaps": false,
+      "basis": "raw"
+    },
+    {
+      "target": "active_corridor_indexes",
+      "targetSequence": [
+        4,
+        7,
+        9,
+        14
+      ],
+      "exactContiguousSubsequence": false,
+      "exactOrderedSubsequence": false,
+      "intersection": [],
+      "targetGaps": [
+        3,
+        2,
+        5
+      ],
+      "gapIntersection": [
+        5
+      ],
+      "packageFirstFour": [
+        5,
+        100,
+        5,
+        16
+      ],
+      "packageFirstFourGaps": [
+        95,
+        -95,
+        11
+      ],
+      "firstFourEqualsTarget": false,
+      "firstFourEqualsTargetGaps": false,
+      "basis": "raw"
+    },
+    {
+      "target": "active_sentence_rows",
+      "targetSequence": [
+        44,
+        45,
+        45,
+        48
+      ],
+      "exactContiguousSubsequence": false,
+      "exactOrderedSubsequence": false,
+      "intersection": [],
+      "targetGaps": [
+        1,
+        0,
+        3
+      ],
+      "gapIntersection": [],
+      "packageFirstFour": [
+        5,
+        100,
+        5,
+        16
+      ],
+      "packageFirstFourGaps": [
+        95,
+        -95,
+        11
+      ],
+      "firstFourEqualsTarget": false,
+      "firstFourEqualsTargetGaps": false,
+      "basis": "raw"
+    },
+    {
+      "target": "active_page_line_gaps",
+      "targetSequence": [
+        3,
+        2,
+        5
+      ],
+      "exactContiguousSubsequence": false,
+      "exactOrderedSubsequence": false,
+      "intersection": [
+        5
+      ],
+      "targetGaps": [
+        -1,
+        3
+      ],
+      "gapIntersection": [],
+      "packageFirstFour": [
+        5,
+        100,
+        5,
+        16
+      ],
+      "packageFirstFourGaps": [
+        95,
+        -95,
+        11
+      ],
+      "firstFourEqualsTarget": false,
+      "firstFourEqualsTargetGaps": false,
+      "basis": "raw"
+    },
+    {
+      "target": "active_corridor_gaps",
+      "targetSequence": [
+        3,
+        2,
+        5
+      ],
+      "exactContiguousSubsequence": false,
+      "exactOrderedSubsequence": false,
+      "intersection": [
+        5
+      ],
+      "targetGaps": [
+        -1,
+        3
+      ],
+      "gapIntersection": [],
+      "packageFirstFour": [
+        5,
+        100,
+        5,
+        16
+      ],
+      "packageFirstFourGaps": [
+        95,
+        -95,
+        11
+      ],
+      "firstFourEqualsTarget": false,
+      "firstFourEqualsTargetGaps": false,
+      "basis": "raw"
+    },
+    {
+      "target": "active_page_lines",
+      "targetSequence": [
+        22,
+        25,
+        27,
+        32
+      ],
+      "exactContiguousSubsequence": false,
+      "exactOrderedSubsequence": false,
+      "intersection": [],
+      "targetGaps": [
+        3,
+        2,
+        5
+      ],
+      "gapIntersection": [
+        5
+      ],
+      "packageFirstFour": [
+        5,
+        100,
+        5,
+        16
+      ],
+      "packageFirstFourGaps": [
+        95,
+        -95,
+        11
+      ],
+      "firstFourEqualsTarget": false,
+      "firstFourEqualsTargetGaps": false,
+      "basis": "canonical"
+    },
+    {
+      "target": "active_corridor_indexes",
+      "targetSequence": [
+        4,
+        7,
+        9,
+        14
+      ],
+      "exactContiguousSubsequence": false,
+      "exactOrderedSubsequence": false,
+      "intersection": [],
+      "targetGaps": [
+        3,
+        2,
+        5
+      ],
+      "gapIntersection": [
+        5
+      ],
+      "packageFirstFour": [
+        5,
+        100,
+        5,
+        16
+      ],
+      "packageFirstFourGaps": [
+        95,
+        -95,
+        11
+      ],
+      "firstFourEqualsTarget": false,
+      "firstFourEqualsTargetGaps": false,
+      "basis": "canonical"
+    },
+    {
+      "target": "active_sentence_rows",
+      "targetSequence": [
+        44,
+        45,
+        45,
+        48
+      ],
+      "exactContiguousSubsequence": false,
+      "exactOrderedSubsequence": false,
+      "intersection": [],
+      "targetGaps": [
+        1,
+        0,
+        3
+      ],
+      "gapIntersection": [],
+      "packageFirstFour": [
+        5,
+        100,
+        5,
+        16
+      ],
+      "packageFirstFourGaps": [
+        95,
+        -95,
+        11
+      ],
+      "firstFourEqualsTarget": false,
+      "firstFourEqualsTargetGaps": false,
+      "basis": "canonical"
+    },
+    {
+      "target": "active_page_line_gaps",
+      "targetSequence": [
+        3,
+        2,
+        5
+      ],
+      "exactContiguousSubsequence": false,
+      "exactOrderedSubsequence": false,
+      "intersection": [
+        5
+      ],
+      "targetGaps": [
+        -1,
+        3
+      ],
+      "gapIntersection": [],
+      "packageFirstFour": [
+        5,
+        100,
+        5,
+        16
+      ],
+      "packageFirstFourGaps": [
+        95,
+        -95,
+        11
+      ],
+      "firstFourEqualsTarget": false,
+      "firstFourEqualsTargetGaps": false,
+      "basis": "canonical"
+    },
+    {
+      "target": "active_corridor_gaps",
+      "targetSequence": [
+        3,
+        2,
+        5
+      ],
+      "exactContiguousSubsequence": false,
+      "exactOrderedSubsequence": false,
+      "intersection": [
+        5
+      ],
+      "targetGaps": [
+        -1,
+        3
+      ],
+      "gapIntersection": [],
+      "packageFirstFour": [
+        5,
+        100,
+        5,
+        16
+      ],
+      "packageFirstFourGaps": [
+        95,
+        -95,
+        11
+      ],
+      "firstFourEqualsTarget": false,
+      "firstFourEqualsTargetGaps": false,
+      "basis": "canonical"
+    }
+  ],
+  "assessment": [
+    "P80 package numbers do not contain the active quartet page-line order 22 25 27 32 or corridor order 4 7 9 14.",
+    "The repeated number 5 remains real count/theme evidence for the broader five-symptom/five-highlight model, but it does not select or order O4/B4/G5/O5.",
+    "The likely 16 FL OZ reading supports the already-known B3/stun-gun line-offset evidence, not the lower active quartet.",
+    "The clipped 6 reading and repeated 473 mL value add source-fidelity caveats, not selector permission."
+  ],
+  "decision": "p80_numbers_do_not_explain_active_quartet_order",
+  "sheet": "analysis_outputs/source_audit/p80_numeric_active_order_gate/p80_numeric_active_order_gate_sheet.jpg",
+  "nextMove": "Keep p80 numeric copy as C6 count/theme/source-validation evidence only; reopen numeric selection only if a raw clue names page line, corridor index, dose, volume, or symptom number as the extraction unit."
+}

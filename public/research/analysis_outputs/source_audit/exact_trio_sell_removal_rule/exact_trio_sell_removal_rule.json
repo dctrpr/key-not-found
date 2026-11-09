@@ -1,0 +1,105 @@
+{
+  "createdAt": "2026-05-20T11:03:55",
+  "scope": "literal sell/removal-unit test on repaired exact-edge trio; no key derivation",
+  "sourcePath": "repaired p78 exact-edge trio",
+  "trio": [
+    "should sell",
+    "Volcano Bonds",
+    "shitcoiner at heart"
+  ],
+  "scenarios": [
+    {
+      "name": "sell_off_middle_phrase",
+      "operation": "remove `Volcano Bonds` from the exact-edge trio",
+      "remainingPhrases": [
+        "should sell",
+        "shitcoiner at heart"
+      ],
+      "exposedBoundary": {
+        "leftWord": "sell",
+        "rightWord": "shitcoiner",
+        "lastFirst": "ls",
+        "firstLast": "sr",
+        "joinedWords": "sell shitcoiner"
+      }
+    },
+    {
+      "name": "sell_off_sell_word",
+      "operation": "remove the word `sell` from `should sell`",
+      "remainingPhrases": [
+        "should",
+        "Volcano Bonds",
+        "shitcoiner at heart"
+      ],
+      "exposedBoundary": {
+        "leftWord": "should",
+        "rightWord": "Volcano",
+        "lastFirst": "dv",
+        "firstLast": "so",
+        "joinedWords": "should Volcano"
+      }
+    },
+    {
+      "name": "sell_off_command_phrase",
+      "operation": "remove the whole `should sell` phrase",
+      "remainingPhrases": [
+        "Volcano Bonds",
+        "shitcoiner at heart"
+      ],
+      "exposedBoundary": {
+        "leftWord": "Bonds",
+        "rightWord": "shitcoiner",
+        "lastFirst": "ss",
+        "firstLast": "br",
+        "joinedWords": "Bonds shitcoiner"
+      }
+    }
+  ],
+  "streams": {
+    "sell_off_middle_phrase_joined": "should sell shitcoiner at heart",
+    "sell_off_middle_phrase_compact": "shouldsellshitcoineratheart",
+    "sell_off_middle_phrase_initials": "ss",
+    "sell_off_middle_phrase_lasts": "lt",
+    "sell_off_middle_phrase_boundaryLastFirst": "ls",
+    "sell_off_middle_phrase_boundaryFirstLast": "sr",
+    "sell_off_middle_phrase_boundaryWords": "sell shitcoiner",
+    "sell_off_sell_word_joined": "should Volcano Bonds shitcoiner at heart",
+    "sell_off_sell_word_compact": "shouldvolcanobondsshitcoineratheart",
+    "sell_off_sell_word_initials": "svs",
+    "sell_off_sell_word_lasts": "dst",
+    "sell_off_sell_word_boundaryLastFirst": "dv",
+    "sell_off_sell_word_boundaryFirstLast": "so",
+    "sell_off_sell_word_boundaryWords": "should Volcano",
+    "sell_off_command_phrase_joined": "Volcano Bonds shitcoiner at heart",
+    "sell_off_command_phrase_compact": "volcanobondsshitcoineratheart",
+    "sell_off_command_phrase_initials": "vs",
+    "sell_off_command_phrase_lasts": "st",
+    "sell_off_command_phrase_boundaryLastFirst": "ss",
+    "sell_off_command_phrase_boundaryFirstLast": "br",
+    "sell_off_command_phrase_boundaryWords": "Bonds shitcoiner"
+  },
+  "rawInstructionHits": {
+    "sell_off_middle_phrase_joined": [
+      "heart",
+      "sell"
+    ],
+    "sell_off_middle_phrase_boundaryWords": [
+      "sell"
+    ],
+    "sell_off_sell_word_joined": [
+      "heart"
+    ],
+    "sell_off_command_phrase_joined": [
+      "heart"
+    ]
+  },
+  "actionableInstructionHits": {},
+  "assessment": [
+    "The `sell` rule is locally justified only because `should sell` is part of the repaired exact-edge trio.",
+    "Removing `Volcano Bonds`, removing `sell`, or removing the whole `should sell` phrase leaves ordinary phrase joins such as `sell shitcoiner`, `should Volcano`, and `Bonds shitcoiner`.",
+    "The resulting initials, lasts, compact text, and exposed boundary pairs do not create a new instruction or extraction unit.",
+    "This closes literal `sell off/remove` extraction from the exact trio as a standalone selector."
+  ],
+  "decision": "Close literal sell/remove extraction from the exact trio as a selector.",
+  "nextMove": "The exact trio remains registration evidence only until a source-backed unit/order is found."
+}

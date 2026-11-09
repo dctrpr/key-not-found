@@ -1,0 +1,944 @@
+{
+  "createdAt": "2026-05-20T10:43:38",
+  "scope": "force p78 XX pair onto p79 wire knots with proper/reflected two-point similarity transforms; no OCR/key derivation",
+  "sourceInventory": "analysis_outputs/source_audit/graphic_spill_alignment_inventory/graphic_spill_alignment_inventory.json",
+  "sheet": "analysis_outputs/source_audit/xx_wire_similarity_overfit/xx_wire_similarity_overfit_sheet.jpg",
+  "candidates": [
+    {
+      "name": "proper_left_to_left",
+      "transform": {
+        "scale": 0.6002,
+        "rotationDeg": -25.12,
+        "tx": -775.26,
+        "ty": -1051.02,
+        "reflected": false
+      },
+      "mappedObjects": [
+        {
+          "sourceId": "p78_x_left",
+          "sourceLabel": "left X beside FUCK graphic",
+          "mappedCenter": [
+            122.5,
+            415.0
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 0.0
+            },
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 351.2
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 481.9
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 1994.6
+            }
+          ]
+        },
+        {
+          "sourceId": "p78_x_right",
+          "sourceLabel": "right X beside FUCK graphic",
+          "mappedCenter": [
+            552.5,
+            197.5
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 0.0
+            },
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 131.0
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 481.9
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2243.9
+            }
+          ]
+        },
+        {
+          "sourceId": "p78_fuck_spill",
+          "sourceLabel": "FUCK / black spill graphic",
+          "mappedCenter": [
+            296.9,
+            299.1
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 144.3
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 209.4
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 275.1
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2113.5
+            }
+          ]
+        },
+        {
+          "sourceId": "p78_pullquote_blob",
+          "sourceLabel": "black pull-quote blob",
+          "mappedCenter": [
+            373.0,
+            369.5
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 133.5
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 248.6
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 254.6
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2049.3
+            }
+          ]
+        }
+      ],
+      "nonXUsefulHitCount": 2,
+      "nonXUsefulHits": [
+        {
+          "sourceId": "p78_fuck_spill",
+          "sourceLabel": "FUCK / black spill graphic",
+          "mappedCenter": [
+            296.9,
+            299.1
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 144.3
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 209.4
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 275.1
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2113.5
+            }
+          ]
+        },
+        {
+          "sourceId": "p78_pullquote_blob",
+          "sourceLabel": "black pull-quote blob",
+          "mappedCenter": [
+            373.0,
+            369.5
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 133.5
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 248.6
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 254.6
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2049.3
+            }
+          ]
+        }
+      ],
+      "allBoxesInsideFractionMin": 1.0
+    },
+    {
+      "name": "proper_left_to_right",
+      "transform": {
+        "scale": 0.6002,
+        "rotationDeg": 154.88,
+        "tx": 1450.26,
+        "ty": 1663.52,
+        "reflected": false
+      },
+      "mappedObjects": [
+        {
+          "sourceId": "p78_x_left",
+          "sourceLabel": "left X beside FUCK graphic",
+          "mappedCenter": [
+            552.5,
+            197.5
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 0.0
+            },
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 131.0
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 481.9
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2243.9
+            }
+          ]
+        },
+        {
+          "sourceId": "p78_x_right",
+          "sourceLabel": "right X beside FUCK graphic",
+          "mappedCenter": [
+            122.5,
+            415.0
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 0.0
+            },
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 351.2
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 481.9
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 1994.6
+            }
+          ]
+        },
+        {
+          "sourceId": "p78_fuck_spill",
+          "sourceLabel": "FUCK / black spill graphic",
+          "mappedCenter": [
+            378.1,
+            313.4
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 83.5
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 209.4
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 275.1
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2105.7
+            }
+          ]
+        },
+        {
+          "sourceId": "p78_pullquote_blob",
+          "sourceLabel": "black pull-quote blob",
+          "mappedCenter": [
+            302.0,
+            243.0
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 130.6
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 248.6
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 254.6
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2169.9
+            }
+          ]
+        }
+      ],
+      "nonXUsefulHitCount": 2,
+      "nonXUsefulHits": [
+        {
+          "sourceId": "p78_fuck_spill",
+          "sourceLabel": "FUCK / black spill graphic",
+          "mappedCenter": [
+            378.1,
+            313.4
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 83.5
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 209.4
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 275.1
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2105.7
+            }
+          ]
+        },
+        {
+          "sourceId": "p78_pullquote_blob",
+          "sourceLabel": "black pull-quote blob",
+          "mappedCenter": [
+            302.0,
+            243.0
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 130.6
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 248.6
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 254.6
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2169.9
+            }
+          ]
+        }
+      ],
+      "allBoxesInsideFractionMin": 1.0
+    },
+    {
+      "name": "reflected_left_to_left",
+      "transform": {
+        "scale": 0.6002,
+        "rotationDeg": -28.54,
+        "tx": 771.46,
+        "ty": 2006.87,
+        "reflected": true
+      },
+      "mappedObjects": [
+        {
+          "sourceId": "p78_x_left",
+          "sourceLabel": "left X beside FUCK graphic",
+          "mappedCenter": [
+            122.5,
+            415.0
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 0.0
+            },
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 351.2
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 481.9
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 1994.6
+            }
+          ]
+        },
+        {
+          "sourceId": "p78_x_right",
+          "sourceLabel": "right X beside FUCK graphic",
+          "mappedCenter": [
+            552.5,
+            197.5
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 0.0
+            },
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 131.0
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 481.9
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2243.9
+            }
+          ]
+        },
+        {
+          "sourceId": "p78_fuck_spill",
+          "sourceLabel": "FUCK / black spill graphic",
+          "mappedCenter": [
+            319.2,
+            343.2
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 146.7
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 209.4
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 275.1
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2071.0
+            }
+          ]
+        },
+        {
+          "sourceId": "p78_pullquote_blob",
+          "sourceLabel": "black pull-quote blob",
+          "mappedCenter": [
+            307.6,
+            240.2
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 125.3
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 248.6
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 254.6
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2173.0
+            }
+          ]
+        }
+      ],
+      "nonXUsefulHitCount": 2,
+      "nonXUsefulHits": [
+        {
+          "sourceId": "p78_fuck_spill",
+          "sourceLabel": "FUCK / black spill graphic",
+          "mappedCenter": [
+            319.2,
+            343.2
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 146.7
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 209.4
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 275.1
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2071.0
+            }
+          ]
+        },
+        {
+          "sourceId": "p78_pullquote_blob",
+          "sourceLabel": "black pull-quote blob",
+          "mappedCenter": [
+            307.6,
+            240.2
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 125.3
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 248.6
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 254.6
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2173.0
+            }
+          ]
+        }
+      ],
+      "allBoxesInsideFractionMin": 1.0
+    },
+    {
+      "name": "reflected_left_to_right",
+      "transform": {
+        "scale": 0.6002,
+        "rotationDeg": 151.46,
+        "tx": -96.46,
+        "ty": -1394.37,
+        "reflected": true
+      },
+      "mappedObjects": [
+        {
+          "sourceId": "p78_x_left",
+          "sourceLabel": "left X beside FUCK graphic",
+          "mappedCenter": [
+            552.5,
+            197.5
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 0.0
+            },
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 131.0
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 481.9
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2243.9
+            }
+          ]
+        },
+        {
+          "sourceId": "p78_x_right",
+          "sourceLabel": "right X beside FUCK graphic",
+          "mappedCenter": [
+            122.5,
+            415.0
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 0.0
+            },
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 351.2
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 481.9
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 1994.6
+            }
+          ]
+        },
+        {
+          "sourceId": "p78_fuck_spill",
+          "sourceLabel": "FUCK / black spill graphic",
+          "mappedCenter": [
+            355.8,
+            269.3
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 79.1
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 209.4
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 275.1
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2147.5
+            }
+          ]
+        },
+        {
+          "sourceId": "p78_pullquote_blob",
+          "sourceLabel": "black pull-quote blob",
+          "mappedCenter": [
+            367.4,
+            372.3
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 138.5
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 248.6
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 254.6
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2046.0
+            }
+          ]
+        }
+      ],
+      "nonXUsefulHitCount": 2,
+      "nonXUsefulHits": [
+        {
+          "sourceId": "p78_fuck_spill",
+          "sourceLabel": "FUCK / black spill graphic",
+          "mappedCenter": [
+            355.8,
+            269.3
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 79.1
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 209.4
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 275.1
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2147.5
+            }
+          ]
+        },
+        {
+          "sourceId": "p78_pullquote_blob",
+          "sourceLabel": "black pull-quote blob",
+          "mappedCenter": [
+            367.4,
+            372.3
+          ],
+          "insidePage": true,
+          "boxInsideFraction": 1.0,
+          "nearestP79": [
+            {
+              "targetId": "p79_wire_span",
+              "targetLabel": "barbed-wire diagonal span",
+              "targetKind": "wire-line",
+              "distancePx": 138.5
+            },
+            {
+              "targetId": "p79_wire_left_knot",
+              "targetLabel": "barbed-wire left knot",
+              "targetKind": "wire",
+              "distancePx": 248.6
+            },
+            {
+              "targetId": "p79_wire_right_knot",
+              "targetLabel": "barbed-wire right knot",
+              "targetKind": "wire",
+              "distancePx": 254.6
+            },
+            {
+              "targetId": "p79_pill_1",
+              "targetLabel": "pill 1",
+              "targetKind": "pill",
+              "distancePx": 2046.0
+            }
+          ]
+        }
+      ],
+      "allBoxesInsideFractionMin": 1.0
+    }
+  ],
+  "assessment": [
+    "A two-point similarity transform can force the p78 X pair onto the p79 wire knots, but that is tautological and must be judged by the non-X objects.",
+    "The best non-X result is `proper_left_to_left` with `2` non-X graphic centers within 180 px of any p79 mark.",
+    "The p78 `FUCK` spill and pull-quote blob do not land on a page-76/page-79 extraction surface or produce an instruction under this forced fit.",
+    "This branch remains source-registration/orientation evidence only; it still needs a higher-resolution Canva/original-layout/physical source or an explicit object-pair rule."
+  ],
+  "decision": "Forced XX-to-wire similarity alignment is an overfit under the current scan and does not unlock extraction.",
+  "nextMove": "Do not derive from XX/wire/FUCK geometry locally. Reopen only if a higher-resolution Canva/original-layout/physical source specifies the graphic object pair or changes registration."
+}

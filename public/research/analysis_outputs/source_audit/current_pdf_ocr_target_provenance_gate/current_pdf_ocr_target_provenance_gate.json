@@ -1,0 +1,619 @@
+{
+  "createdAt": "2026-05-21T15:24:30",
+  "scope": "Current PDF page-76 OCR target provenance gate. Checks exact O4/B4/G5/O5 text, component-token false positives, approximate target-box OCR, OVERDOSE header text, and strict unit/order wording. No key/hash/seed/WIF/address/BIP39/candidate work.",
+  "inputs": {
+    "pdfs": [
+      "magazine.pdf",
+      "keyser bitcoin .pdf",
+      "analysis_outputs/external_clues/google_drive_article_download.pdf"
+    ],
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "summary": {
+    "pdfCount": 3,
+    "exactActivePhraseRowCount": 0,
+    "pdfsWithAllFourExactActivePhrases": 0,
+    "componentExactHitRowCount": 4,
+    "componentStemLikeHitRowCount": 6,
+    "approxTargetBoxWordRowCount": 8,
+    "approxTargetBoxExactPhraseRowCount": 0,
+    "strictUnitOrderTerms": [],
+    "strictUnitOrderPdfCount": 0,
+    "overdoseHeaderPdfCount": 2,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "pdfOcrTargetProvenanceFingerprint": "pdfs=3|exactPhraseRows=0|allFourExactPdfs=0|componentExactRows=4|componentStemRows=6|approxBoxWordRows=8|approxBoxExactRows=0|strictTerms=-|overdosePdfs=2|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "pdfRecords": [
+    {
+      "pdf": "magazine.pdf",
+      "sha256": "a0714dcbe503ecdff846f0f77334e2d1d259937d7fe5130258212f24c137716e",
+      "pdfPage": 4,
+      "articlePage": 76,
+      "rotation": 180,
+      "pageRect": [
+        0.0,
+        0.0,
+        610.56,
+        783.36
+      ],
+      "imageRect": [
+        0.0,
+        0.0,
+        610.56,
+        783.36
+      ],
+      "imageSize": [
+        2544,
+        3264
+      ],
+      "textCharCount": 1605,
+      "wordCount": 245,
+      "sampleText": "9L q o 9. §) Gt ß) §. o m a 0i? 0) o ts SrAq aSnBCAq aO\",{tsInI ,r(n8 1eq1+snJ+ ,(11ee.r truop f '+T uo peÄou +ruseq srt ,rEJ os +nq 's1ed Äuo,rc laaJ+s IT€l\\ s;tq o+ qcunq ts ITes",
+      "phraseRows": [
+        {
+          "target": "O4",
+          "label": "buying the dip",
+          "variants": [
+            "buying the dip"
+          ],
+          "hits": [],
+          "exactPhrasePresent": false
+        },
+        {
+          "target": "B4",
+          "label": "$1 billion",
+          "variants": [
+            "$1 billion",
+            "1 billion"
+          ],
+          "hits": [],
+          "exactPhrasePresent": false
+        },
+        {
+          "target": "G5",
+          "label": "Volcano Bonds",
+          "variants": [
+            "Volcano Bonds",
+            "Volcano Bond"
+          ],
+          "hits": [],
+          "exactPhrasePresent": false
+        },
+        {
+          "target": "O5",
+          "label": "shitcoiner at heart",
+          "variants": [
+            "shitcoiner at heart",
+            "shitcoiner heart"
+          ],
+          "hits": [],
+          "exactPhrasePresent": false
+        }
+      ],
+      "componentRows": [
+        {
+          "target": "O4",
+          "label": "buying the dip",
+          "terms": [
+            "buying",
+            "dip"
+          ],
+          "exactHits": [],
+          "stemLikeHits": [],
+          "exactHitCount": 0,
+          "stemLikeHitCount": 0
+        },
+        {
+          "target": "B4",
+          "label": "$1 billion",
+          "terms": [
+            "billion"
+          ],
+          "exactHits": [],
+          "stemLikeHits": [],
+          "exactHitCount": 0,
+          "stemLikeHitCount": 0
+        },
+        {
+          "target": "G5",
+          "label": "Volcano Bonds",
+          "terms": [
+            "volcano",
+            "bonds"
+          ],
+          "exactHits": [],
+          "stemLikeHits": [],
+          "exactHitCount": 0,
+          "stemLikeHitCount": 0
+        },
+        {
+          "target": "O5",
+          "label": "shitcoiner at heart",
+          "terms": [
+            "shitcoiner",
+            "heart"
+          ],
+          "exactHits": [],
+          "stemLikeHits": [],
+          "exactHitCount": 0,
+          "stemLikeHitCount": 0
+        }
+      ],
+      "strictUnitOrderTerms": [],
+      "strictUnitOrderTermCount": 0,
+      "overdoseHeaderHitCount": 0,
+      "targetRectRows": [
+        {
+          "target": "O4",
+          "label": "buying the dip",
+          "approxPdfRect": [
+            320.16,
+            522.48,
+            432.24,
+            534.0
+          ],
+          "wordCount": 1,
+          "text": "a^€LI",
+          "containsExactPhrase": false
+        },
+        {
+          "target": "B4",
+          "label": "$1 billion",
+          "approxPdfRect": [
+            102.72,
+            575.52,
+            165.84,
+            586.8
+          ],
+          "wordCount": 0,
+          "text": "",
+          "containsExactPhrase": false
+        },
+        {
+          "target": "G5",
+          "label": "Volcano Bonds",
+          "approxPdfRect": [
+            190.8,
+            610.56,
+            287.04,
+            622.08
+          ],
+          "wordCount": 3,
+          "text": "oe} srlf 'sun}€ulr1ln",
+          "containsExactPhrase": false
+        },
+        {
+          "target": "O5",
+          "label": "shitcoiner at heart",
+          "approxPdfRect": [
+            249.6,
+            703.68,
+            398.64,
+            715.68
+          ],
+          "wordCount": 0,
+          "text": "",
+          "containsExactPhrase": false
+        }
+      ]
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "sha256": "0078fe23401fab4882303ae038df0de6b439f498acb852d3b226c366caf5ab5c",
+      "pdfPage": 4,
+      "articlePage": 76,
+      "rotation": 0,
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "imageRect": [
+        18.0,
+        0.0,
+        594.0,
+        792.0
+      ],
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "textCharCount": 1668,
+      "wordCount": 265,
+      "sampleText": "OVERDOSE Get some toxicity. Get some bitcoin. Open your heart to Biteoiny It's the freaking UTXO ghetto up in here, y'all. It's funkier than a whole parallel universe full of nothi",
+      "phraseRows": [
+        {
+          "target": "O4",
+          "label": "buying the dip",
+          "variants": [
+            "buying the dip"
+          ],
+          "hits": [],
+          "exactPhrasePresent": false
+        },
+        {
+          "target": "B4",
+          "label": "$1 billion",
+          "variants": [
+            "$1 billion",
+            "1 billion"
+          ],
+          "hits": [],
+          "exactPhrasePresent": false
+        },
+        {
+          "target": "G5",
+          "label": "Volcano Bonds",
+          "variants": [
+            "Volcano Bonds",
+            "Volcano Bond"
+          ],
+          "hits": [],
+          "exactPhrasePresent": false
+        },
+        {
+          "target": "O5",
+          "label": "shitcoiner at heart",
+          "variants": [
+            "shitcoiner at heart",
+            "shitcoiner heart"
+          ],
+          "hits": [],
+          "exactPhrasePresent": false
+        }
+      ],
+      "componentRows": [
+        {
+          "target": "O4",
+          "label": "buying the dip",
+          "terms": [
+            "buying",
+            "dip"
+          ],
+          "exactHits": [
+            {
+              "term": "buying",
+              "word": "buying",
+              "context": "(and loyears of watching Peter Schiff miss buying bitcoin since I started honéy-badgering him to"
+            }
+          ],
+          "stemLikeHits": [],
+          "exactHitCount": 1,
+          "stemLikeHitCount": 0
+        },
+        {
+          "target": "B4",
+          "label": "$1 billion",
+          "terms": [
+            "billion"
+          ],
+          "exactHits": [],
+          "stemLikeHits": [
+            {
+              "term": "billion",
+              "word": "billions",
+              "context": "in bitcoin — that he should sell billions worth of future bitcoin earnings collateralized to"
+            }
+          ],
+          "exactHitCount": 0,
+          "stemLikeHitCount": 1
+        },
+        {
+          "target": "G5",
+          "label": "Volcano Bonds",
+          "terms": [
+            "volcano",
+            "bonds"
+          ],
+          "exactHits": [],
+          "stemLikeHits": [
+            {
+              "term": "volcano",
+              "word": "volcanoes",
+              "context": "he was going to tap his nation's volcanoes to mine eis in bitcoin — that"
+            }
+          ],
+          "exactHitCount": 0,
+          "stemLikeHitCount": 1
+        },
+        {
+          "target": "O5",
+          "label": "shitcoiner at heart",
+          "terms": [
+            "shitcoiner",
+            "heart"
+          ],
+          "exactHits": [
+            {
+              "term": "heart",
+              "word": "heart",
+              "context": "some toxicity. Get some bitcoin. Open your heart to Biteoiny It's the freaking UTXO ghetto"
+            }
+          ],
+          "stemLikeHits": [
+            {
+              "term": "shitcoiner",
+              "word": "shitcoiners'",
+              "context": "at $1 back in 2011) have dulled shitcoiners' and nocoiners' minds. The collective unconscious, controlled"
+            }
+          ],
+          "exactHitCount": 1,
+          "stemLikeHitCount": 1
+        }
+      ],
+      "strictUnitOrderTerms": [],
+      "strictUnitOrderTermCount": 0,
+      "overdoseHeaderHitCount": 1,
+      "targetRectRows": [
+        {
+          "target": "O4",
+          "label": "buying the dip",
+          "approxPdfRect": [
+            320.038,
+            528.243,
+            425.774,
+            539.89
+          ],
+          "wordCount": 1,
+          "text": "sell",
+          "containsExactPhrase": false
+        },
+        {
+          "target": "B4",
+          "label": "$1 billion",
+          "approxPdfRect": [
+            114.906,
+            581.868,
+            174.453,
+            593.272
+          ],
+          "wordCount": 3,
+          "text": "loan and get",
+          "containsExactPhrase": false
+        },
+        {
+          "target": "G5",
+          "label": "Volcano Bonds",
+          "approxPdfRect": [
+            198.0,
+            617.294,
+            288.792,
+            628.941
+          ],
+          "wordCount": 2,
+          "text": "Street crony",
+          "containsExactPhrase": false
+        },
+        {
+          "target": "O5",
+          "label": "shitcoiner at heart",
+          "approxPdfRect": [
+            253.472,
+            711.441,
+            394.075,
+            723.574
+          ],
+          "wordCount": 0,
+          "text": "",
+          "containsExactPhrase": false
+        }
+      ]
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "sha256": "0078fe23401fab4882303ae038df0de6b439f498acb852d3b226c366caf5ab5c",
+      "pdfPage": 4,
+      "articlePage": 76,
+      "rotation": 0,
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "imageRect": [
+        18.0,
+        0.0,
+        594.0,
+        792.0
+      ],
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "textCharCount": 1668,
+      "wordCount": 265,
+      "sampleText": "OVERDOSE Get some toxicity. Get some bitcoin. Open your heart to Biteoiny It's the freaking UTXO ghetto up in here, y'all. It's funkier than a whole parallel universe full of nothi",
+      "phraseRows": [
+        {
+          "target": "O4",
+          "label": "buying the dip",
+          "variants": [
+            "buying the dip"
+          ],
+          "hits": [],
+          "exactPhrasePresent": false
+        },
+        {
+          "target": "B4",
+          "label": "$1 billion",
+          "variants": [
+            "$1 billion",
+            "1 billion"
+          ],
+          "hits": [],
+          "exactPhrasePresent": false
+        },
+        {
+          "target": "G5",
+          "label": "Volcano Bonds",
+          "variants": [
+            "Volcano Bonds",
+            "Volcano Bond"
+          ],
+          "hits": [],
+          "exactPhrasePresent": false
+        },
+        {
+          "target": "O5",
+          "label": "shitcoiner at heart",
+          "variants": [
+            "shitcoiner at heart",
+            "shitcoiner heart"
+          ],
+          "hits": [],
+          "exactPhrasePresent": false
+        }
+      ],
+      "componentRows": [
+        {
+          "target": "O4",
+          "label": "buying the dip",
+          "terms": [
+            "buying",
+            "dip"
+          ],
+          "exactHits": [
+            {
+              "term": "buying",
+              "word": "buying",
+              "context": "(and loyears of watching Peter Schiff miss buying bitcoin since I started honéy-badgering him to"
+            }
+          ],
+          "stemLikeHits": [],
+          "exactHitCount": 1,
+          "stemLikeHitCount": 0
+        },
+        {
+          "target": "B4",
+          "label": "$1 billion",
+          "terms": [
+            "billion"
+          ],
+          "exactHits": [],
+          "stemLikeHits": [
+            {
+              "term": "billion",
+              "word": "billions",
+              "context": "in bitcoin — that he should sell billions worth of future bitcoin earnings collateralized to"
+            }
+          ],
+          "exactHitCount": 0,
+          "stemLikeHitCount": 1
+        },
+        {
+          "target": "G5",
+          "label": "Volcano Bonds",
+          "terms": [
+            "volcano",
+            "bonds"
+          ],
+          "exactHits": [],
+          "stemLikeHits": [
+            {
+              "term": "volcano",
+              "word": "volcanoes",
+              "context": "he was going to tap his nation's volcanoes to mine eis in bitcoin — that"
+            }
+          ],
+          "exactHitCount": 0,
+          "stemLikeHitCount": 1
+        },
+        {
+          "target": "O5",
+          "label": "shitcoiner at heart",
+          "terms": [
+            "shitcoiner",
+            "heart"
+          ],
+          "exactHits": [
+            {
+              "term": "heart",
+              "word": "heart",
+              "context": "some toxicity. Get some bitcoin. Open your heart to Biteoiny It's the freaking UTXO ghetto"
+            }
+          ],
+          "stemLikeHits": [
+            {
+              "term": "shitcoiner",
+              "word": "shitcoiners'",
+              "context": "at $1 back in 2011) have dulled shitcoiners' and nocoiners' minds. The collective unconscious, controlled"
+            }
+          ],
+          "exactHitCount": 1,
+          "stemLikeHitCount": 1
+        }
+      ],
+      "strictUnitOrderTerms": [],
+      "strictUnitOrderTermCount": 0,
+      "overdoseHeaderHitCount": 1,
+      "targetRectRows": [
+        {
+          "target": "O4",
+          "label": "buying the dip",
+          "approxPdfRect": [
+            320.038,
+            528.243,
+            425.774,
+            539.89
+          ],
+          "wordCount": 1,
+          "text": "sell",
+          "containsExactPhrase": false
+        },
+        {
+          "target": "B4",
+          "label": "$1 billion",
+          "approxPdfRect": [
+            114.906,
+            581.868,
+            174.453,
+            593.272
+          ],
+          "wordCount": 3,
+          "text": "loan and get",
+          "containsExactPhrase": false
+        },
+        {
+          "target": "G5",
+          "label": "Volcano Bonds",
+          "approxPdfRect": [
+            198.0,
+            617.294,
+            288.792,
+            628.941
+          ],
+          "wordCount": 2,
+          "text": "Street crony",
+          "containsExactPhrase": false
+        },
+        {
+          "target": "O5",
+          "label": "shitcoiner at heart",
+          "approxPdfRect": [
+            253.472,
+            711.441,
+            394.075,
+            723.574
+          ],
+          "wordCount": 0,
+          "text": "",
+          "containsExactPhrase": false
+        }
+      ]
+    }
+  ],
+  "decision": {
+    "currentPdfOcrTargetProvenanceGate": "do_not_reopen_pdf_ocr_active_text",
+    "selectorUnlocked": false,
+    "reason": "The current PDF text overlays do not contain exact O4/B4/G5/O5 target phrases, do not put exact target phrases inside the approximate active boxes, and do not supply strict unit/order wording. Component hits are ordinary OCR prose elsewhere.",
+    "nextMove": "Keep PDF OCR as a weak text witness only. Do not use it for active-box extraction; future progress still requires a new source/original-layout clue satisfying R1/R3."
+  },
+  "sheet": "analysis_outputs/source_audit/current_pdf_ocr_target_provenance_gate/current_pdf_ocr_target_provenance_gate_sheet.jpg"
+}

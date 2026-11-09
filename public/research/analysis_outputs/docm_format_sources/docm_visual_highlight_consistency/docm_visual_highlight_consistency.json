@@ -1,0 +1,687 @@
+{
+  "createdAt": "2026-05-20T09:21:36",
+  "scope": "DOCM highlighted runs versus manual high-res visual highlights; no key derivation",
+  "sourceReports": {
+    "runs": "analysis_outputs/docm_format_sources/article_with_fonts_runs.json",
+    "orange": "analysis_outputs/highlight_audit/highres_manual_highlight_reading.json",
+    "grey": "analysis_outputs/highlight_audit/highres_manual_grey_reading.json"
+  },
+  "counts": {
+    "docmSpanCount": 37,
+    "docmPrintedSpanCount": 34,
+    "docmCyanSpanCount": 3,
+    "visualSpanCount": 34,
+    "unmatchedVisualCount": 1,
+    "unmatchedDocmPrintedCount": 0,
+    "cyanBridgeCount": 0
+  },
+  "docmCyanSpans": [
+    {
+      "source": "docm",
+      "page": 75,
+      "docmHighlight": "cyan",
+      "visualColor": "cyan",
+      "text": "M",
+      "runIndexes": [
+        2
+      ],
+      "id": "docm_cyan_1",
+      "norm": "m"
+    },
+    {
+      "source": "docm",
+      "page": 75,
+      "docmHighlight": "cyan",
+      "visualColor": "cyan",
+      "text": "N",
+      "runIndexes": [
+        42
+      ],
+      "id": "docm_cyan_4",
+      "norm": "n"
+    },
+    {
+      "source": "docm",
+      "page": 78,
+      "docmHighlight": "cyan",
+      "visualColor": "cyan",
+      "text": "BILLION",
+      "runIndexes": [
+        263
+      ],
+      "id": "docm_cyan_30",
+      "norm": "billion"
+    }
+  ],
+  "unmatchedVisual": [
+    {
+      "id": "visual_orange_20",
+      "source": "highres",
+      "page": 80,
+      "visualColor": "orange",
+      "text": "5 SYMPTOM RELIEF / NAUSEA / HEARTBURN / INDIGESTION / UPSET STOMACH / SHITCOINS; 6 FL OZ (473 mL)",
+      "norm": "5symptomreliefnauseaheartburnindigestionupsetstomachshitcoins6floz473ml",
+      "docmMatches": [],
+      "presentInJoinedSameColor": false,
+      "presentInJoinedSameColorPlusCyan": false
+    }
+  ],
+  "unmatchedDocmPrinted": [],
+  "cyanBridges": [],
+  "visualResults": [
+    {
+      "id": "visual_orange_1",
+      "source": "highres",
+      "page": 75,
+      "visualColor": "orange",
+      "text": "They are the sum of all our neuroses.",
+      "norm": "theyarethesumofallourneuroses",
+      "docmMatches": [
+        {
+          "id": "docm_yellow_2",
+          "text": "They are the sum of all our neuroses.",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_orange_2",
+      "source": "highres",
+      "page": 75,
+      "visualColor": "orange",
+      "text": "Layer 1",
+      "norm": "layer1",
+      "docmMatches": [
+        {
+          "id": "docm_yellow_5",
+          "text": "Layer 1",
+          "kind": "exact"
+        },
+        {
+          "id": "docm_yellow_6",
+          "text": "Fact: It's Layer 1 for every great thing that's ever been invented or discovered.",
+          "kind": "target_inside_candidate"
+        },
+        {
+          "id": "docm_yellow_10",
+          "text": "Layer 1",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_orange_3",
+      "source": "highres",
+      "page": 75,
+      "visualColor": "orange",
+      "text": "Fact: It’s Layer 1 for every great thing that’s ever been invented or discovered.",
+      "norm": "factitslayer1foreverygreatthingthatseverbeeninventedordiscovered",
+      "docmMatches": [
+        {
+          "id": "docm_yellow_5",
+          "text": "Layer 1",
+          "kind": "candidate_inside_target"
+        },
+        {
+          "id": "docm_yellow_6",
+          "text": "Fact: It's Layer 1 for every great thing that's ever been invented or discovered.",
+          "kind": "exact"
+        },
+        {
+          "id": "docm_yellow_10",
+          "text": "Layer 1",
+          "kind": "candidate_inside_target"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_orange_4",
+      "source": "highres",
+      "page": 75,
+      "visualColor": "orange",
+      "text": "“Maximalist”",
+      "norm": "maximalist",
+      "docmMatches": [
+        {
+          "id": "docm_yellow_7",
+          "text": "\"Maximalist\"",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_orange_5",
+      "source": "highres",
+      "page": 75,
+      "visualColor": "orange",
+      "text": "Keep your dignity.",
+      "norm": "keepyourdignity",
+      "docmMatches": [
+        {
+          "id": "docm_yellow_9",
+          "text": "Keep your dignity.",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_orange_6",
+      "source": "highres",
+      "page": 75,
+      "visualColor": "orange",
+      "text": "Layer 1",
+      "norm": "layer1",
+      "docmMatches": [
+        {
+          "id": "docm_yellow_5",
+          "text": "Layer 1",
+          "kind": "exact"
+        },
+        {
+          "id": "docm_yellow_6",
+          "text": "Fact: It's Layer 1 for every great thing that's ever been invented or discovered.",
+          "kind": "target_inside_candidate"
+        },
+        {
+          "id": "docm_yellow_10",
+          "text": "Layer 1",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_orange_7",
+      "source": "highres",
+      "page": 76,
+      "visualColor": "orange",
+      "text": "Get some toxicity. Get some bitcoin. Open your heart to Bitcoin.",
+      "norm": "getsometoxicitygetsomebitcoinopenyourhearttobitcoin",
+      "docmMatches": [
+        {
+          "id": "docm_yellow_11",
+          "text": "Get some toxicity. Get some bitcoin. Open your heart toBitcoin.",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_orange_8",
+      "source": "highres",
+      "page": 76,
+      "visualColor": "orange",
+      "text": "by the rancid catnip of fiat money.",
+      "norm": "bytherancidcatnipoffiatmoney",
+      "docmMatches": [
+        {
+          "id": "docm_yellow_13",
+          "text": "by the rancid catnip of fiat money.",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_orange_9",
+      "source": "highres",
+      "page": 76,
+      "visualColor": "orange",
+      "text": "“buying the dip.”",
+      "norm": "buyingthedip",
+      "docmMatches": [
+        {
+          "id": "docm_yellow_15",
+          "text": "\"buying the dip.\"",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_orange_10",
+      "source": "highres",
+      "page": 76,
+      "visualColor": "orange",
+      "text": "shitcoiner at heart.",
+      "norm": "shitcoineratheart",
+      "docmMatches": [
+        {
+          "id": "docm_yellow_18",
+          "text": "shitcoiner at heart.",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_orange_11",
+      "source": "highres",
+      "page": 77,
+      "visualColor": "orange",
+      "text": "Toxic Bitcoin Maximalists within six months.",
+      "norm": "toxicbitcoinmaximalistswithinsixmonths",
+      "docmMatches": [
+        {
+          "id": "docm_yellow_19",
+          "text": "Toxic Bitcoin Maximalists within six months.",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_orange_12",
+      "source": "highres",
+      "page": 77,
+      "visualColor": "orange",
+      "text": "harass old women and children",
+      "norm": "harassoldwomenandchildren",
+      "docmMatches": [
+        {
+          "id": "docm_yellow_22",
+          "text": "who harass old women and children",
+          "kind": "target_inside_candidate"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_orange_13",
+      "source": "highres",
+      "page": 78,
+      "visualColor": "orange",
+      "text": "The numbers don’t lie.",
+      "norm": "thenumbersdontlie",
+      "docmMatches": [
+        {
+          "id": "docm_yellow_25",
+          "text": "The numbers don't lie",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_orange_14",
+      "source": "highres",
+      "page": 78,
+      "visualColor": "orange",
+      "text": "America left $85 BILLION worth of hate toys in Afghanistan,",
+      "norm": "americaleft$85billionworthofhatetoysinafghanistan",
+      "docmMatches": [
+        {
+          "id": "docm_yellow_29",
+          "text": "America left $85",
+          "kind": "candidate_inside_target"
+        },
+        {
+          "id": "docm_yellow_31",
+          "text": "worth of hate toys in Afghanistan,",
+          "kind": "candidate_inside_target"
+        }
+      ],
+      "presentInJoinedSameColor": false,
+      "presentInJoinedSameColorPlusCyan": false
+    },
+    {
+      "id": "visual_orange_15",
+      "source": "highres",
+      "page": 78,
+      "visualColor": "orange",
+      "text": "$2 trillion fiat cuck-bucks.",
+      "norm": "$2trillionfiatcuckbucks",
+      "docmMatches": [
+        {
+          "id": "docm_yellow_32",
+          "text": "$2 trillion fiat cuck-bucks.",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_orange_16",
+      "source": "highres",
+      "page": 78,
+      "visualColor": "orange",
+      "text": "the game-theorized Bitcoin protocol,",
+      "norm": "thegametheorizedbitcoinprotocol",
+      "docmMatches": [
+        {
+          "id": "docm_yellow_33",
+          "text": "the game-theorized Bitcoin protocol",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_orange_17",
+      "source": "highres",
+      "page": 79,
+      "visualColor": "orange",
+      "text": "infinitely more efficient to transact and store wealth in than fiat, shitcoins or gold",
+      "norm": "infinitelymoreefficienttotransactandstorewealthinthanfiatshitcoinsorgold",
+      "docmMatches": [
+        {
+          "id": "docm_yellow_35",
+          "text": "infinitely more efficient to transact and store wealth in than fiat, shitcoins or gold",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_orange_18",
+      "source": "highres",
+      "page": 79,
+      "visualColor": "orange",
+      "text": "That’s right, Bitcoin will take all the energy.",
+      "norm": "thatsrightbitcoinwilltakealltheenergy",
+      "docmMatches": [
+        {
+          "id": "docm_yellow_36",
+          "text": "That's right, Bitcoin will take all the energy.",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_orange_19",
+      "source": "highres",
+      "page": 79,
+      "visualColor": "orange",
+      "text": "Everyone will live their own experience in the rabbit hole. We are getting our souls back and our minds.",
+      "norm": "everyonewilllivetheirownexperienceintherabbitholewearegettingoursoulsbackandourminds",
+      "docmMatches": [
+        {
+          "id": "docm_yellow_37",
+          "text": "Everyone will live their own experience in the rabbit hole. We are getting our souls back and our minds",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_orange_20",
+      "source": "highres",
+      "page": 80,
+      "visualColor": "orange",
+      "text": "5 SYMPTOM RELIEF / NAUSEA / HEARTBURN / INDIGESTION / UPSET STOMACH / SHITCOINS; 6 FL OZ (473 mL)",
+      "norm": "5symptomreliefnauseaheartburnindigestionupsetstomachshitcoins6floz473ml",
+      "docmMatches": [],
+      "presentInJoinedSameColor": false,
+      "presentInJoinedSameColorPlusCyan": false
+    },
+    {
+      "id": "visual_grey_1",
+      "source": "highres",
+      "page": 75,
+      "visualColor": "grey",
+      "text": "money printers, banking terrorists, stock traders, central bank arsonists,",
+      "norm": "moneyprintersbankingterroristsstocktraderscentralbankarsonists",
+      "docmMatches": [
+        {
+          "id": "docm_black_3",
+          "text": "money printers, banking terrorists, stock traders, central bank arsonists,",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_grey_2",
+      "source": "highres",
+      "page": 75,
+      "visualColor": "grey",
+      "text": "Don’t fall for shitcoinery.",
+      "norm": "dontfallforshitcoinery",
+      "docmMatches": [
+        {
+          "id": "docm_black_8",
+          "text": "Don't fall for shitcoinery.",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_grey_3",
+      "source": "highres",
+      "page": 76,
+      "visualColor": "grey",
+      "text": "Gotta be this way. Forty years of dumb post-1971 fiat money nonsense",
+      "norm": "gottabethiswayfortyyearsofdumbpost1971fiatmoneynonsense",
+      "docmMatches": [
+        {
+          "id": "docm_black_12",
+          "text": "Gotta be this way. Forty years of dumb post-1971 fiat moneynonsense",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_grey_4",
+      "source": "highres",
+      "page": 76,
+      "visualColor": "grey",
+      "text": "It’s a stun gun to the genitals.",
+      "norm": "itsastunguntothegenitals",
+      "docmMatches": [
+        {
+          "id": "docm_black_14",
+          "text": "It's a stun gun to the genitals.",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_grey_5",
+      "source": "highres",
+      "page": 76,
+      "visualColor": "grey",
+      "text": "$1 billion",
+      "norm": "$1billion",
+      "docmMatches": [
+        {
+          "id": "docm_black_16",
+          "text": "$1 billion",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_grey_6",
+      "source": "highres",
+      "page": 76,
+      "visualColor": "grey",
+      "text": "“Volcano Bonds”",
+      "norm": "volcanobonds",
+      "docmMatches": [
+        {
+          "id": "docm_black_17",
+          "text": "“Volcano Bonds”",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_grey_7",
+      "source": "highres",
+      "page": 77,
+      "visualColor": "grey",
+      "text": "(Sorry Bhutan, you fell for that snake oil salesmen over at XRP. Get ready to experience shitcoin hell.",
+      "norm": "sorrybhutanyoufellforthatsnakeoilsalesmenoveratxrpgetreadytoexperienceshitcoinhell",
+      "docmMatches": [
+        {
+          "id": "docm_black_20",
+          "text": "(Sorry Bhutan, you fell for that snake oil salesmen over at XRP. Get ready to experience shitcoin hell.",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_grey_8",
+      "source": "highres",
+      "page": 77,
+      "visualColor": "grey",
+      "text": "Faketoshi",
+      "norm": "faketoshi",
+      "docmMatches": [
+        {
+          "id": "docm_black_21",
+          "text": "Faketoshi",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_grey_9",
+      "source": "highres",
+      "page": 77,
+      "visualColor": "grey",
+      "text": "shitcoiners, useless Royals,",
+      "norm": "shitcoinersuselessroyals",
+      "docmMatches": [
+        {
+          "id": "docm_black_23",
+          "text": "shitcoiners, useless Royals,",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_grey_10",
+      "source": "highres",
+      "page": 77,
+      "visualColor": "grey",
+      "text": "It does this by monetizing,",
+      "norm": "itdoesthisbymonetizing",
+      "docmMatches": [
+        {
+          "id": "docm_black_24",
+          "text": "It does this by monetizing,",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_grey_11",
+      "source": "highres",
+      "page": 78,
+      "visualColor": "grey",
+      "text": "gargantuanly wasteful",
+      "norm": "gargantuanlywasteful",
+      "docmMatches": [
+        {
+          "id": "docm_black_26",
+          "text": "gargantuanly wasteful",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_grey_12",
+      "source": "highres",
+      "page": 78,
+      "visualColor": "grey",
+      "text": "money printing",
+      "norm": "moneyprinting",
+      "docmMatches": [
+        {
+          "id": "docm_black_27",
+          "text": "money printing",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_grey_13",
+      "source": "highres",
+      "page": 78,
+      "visualColor": "grey",
+      "text": "wars to keep it going",
+      "norm": "warstokeepitgoing",
+      "docmMatches": [
+        {
+          "id": "docm_black_28",
+          "text": "wars to keep it going",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    },
+    {
+      "id": "visual_grey_14",
+      "source": "highres",
+      "page": 79,
+      "visualColor": "grey",
+      "text": "war and violence economy",
+      "norm": "warandviolenceeconomy",
+      "docmMatches": [
+        {
+          "id": "docm_black_34",
+          "text": "war and violence economy",
+          "kind": "exact"
+        }
+      ],
+      "presentInJoinedSameColor": true,
+      "presentInJoinedSameColorPlusCyan": true
+    }
+  ],
+  "assessment": [
+    "DOCM yellow/black mostly mirrors the manual high-res orange/grey highlight system.",
+    "The main material mismatch is p78 `$85 BILLION`: DOCM splits `BILLION` into cyan, so same-color yellow alone omits part of the visible orange phrase.",
+    "The other unmatched visual item is p80 package art, which is graphic/package copy outside the article-body DOCM text.",
+    "Cyan remains a DOCM-only formatting anomaly, not a scan-visible highlight layer."
+  ],
+  "nextMove": "Treat DOCM yellow/black as wording support for visible highlights, not a separate selector. Do not use cyan unless a future source proves the Word formatting is original puzzle material."
+}

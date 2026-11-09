@@ -1,0 +1,178 @@
+{
+  "createdAt": "2026-05-20T09:01:35",
+  "scope": "literal-word operations from repaired exact-edge trio; no key derivation",
+  "sourceReports": {
+    "corridor": "analysis_outputs/3d_article_map/page76_line_level_corridor.json"
+  },
+  "exactTrio": [
+    "should sell",
+    "Volcano Bonds",
+    "shitcoiner at heart"
+  ],
+  "lineFacts": {
+    "shouldSell": {
+      "lineIndex": 25,
+      "corridorIndex": 7,
+      "text": "$1 billion in bitcoin — that he should sell"
+    },
+    "volcanoBonds": {
+      "lineIndex": 27,
+      "corridorIndex": 9,
+      "text": "collateralized “Volcano Bonds” to pay off the IMF"
+    },
+    "shitcoinerAtHeart": {
+      "lineIndex": 32,
+      "corridorIndex": 14,
+      "text": "Maybe because he's a shitcoiner at heart."
+    },
+    "couldSell": {
+      "lineIndex": 29,
+      "corridorIndex": 11,
+      "text": "Novogratz in the tweet, figuring he could sell a"
+    },
+    "lineDifferences": [
+      2,
+      5
+    ],
+    "corridorDifferences": [
+      2,
+      5
+    ]
+  },
+  "operations": [
+    {
+      "name": "exact_stream",
+      "reason": "read selected trio directly",
+      "output": "should sell | Volcano Bonds | shitcoiner at heart",
+      "outputCompact": "should sell | Volcano Bonds | shitcoiner at heart",
+      "instructionHits": [],
+      "lettersOnly": "shouldsellVolcanoBondsshitcoineratheart",
+      "letterLength": 39
+    },
+    {
+      "name": "exact_reversed_words",
+      "reason": "mirror-writing order reversal",
+      "output": "shitcoiner at heart | Volcano Bonds | should sell",
+      "outputCompact": "shitcoiner at heart | Volcano Bonds | should sell",
+      "instructionHits": [],
+      "lettersOnly": "shitcoineratheartVolcanoBondsshouldsell",
+      "letterLength": 39
+    },
+    {
+      "name": "exact_reversed_chars",
+      "reason": "literal mirror-writing character reversal",
+      "output": "traeh ta renioctihs | sdnoB onacloV | lles dluohs",
+      "outputCompact": "traeh ta renioctihs | sdnoB onacloV | lles dluohs",
+      "instructionHits": [],
+      "lettersOnly": "traehtarenioctihssdnoBonacloVllesdluohs",
+      "letterLength": 39
+    },
+    {
+      "name": "word_centers",
+      "reason": "`heart` as center letters of selected words",
+      "output": "ouelcncoata",
+      "outputCompact": "ouelcncoata",
+      "instructionHits": [],
+      "lettersOnly": "ouelcncoata",
+      "letterLength": 11
+    },
+    {
+      "name": "phrase_centers",
+      "reason": "`heart` as center of each selected phrase",
+      "output": "ldnoe",
+      "outputCompact": "ldnoe",
+      "instructionHits": [],
+      "lettersOnly": "ldnoe",
+      "letterLength": 5
+    },
+    {
+      "name": "endpoints_bonded",
+      "reason": "`bonds` as connect word endpoints",
+      "output": "sdslVoBssratht",
+      "outputCompact": "sdslVoBssratht",
+      "instructionHits": [],
+      "lettersOnly": "sdslVoBssratht",
+      "letterLength": 14
+    },
+    {
+      "name": "sell_remove_volcano_from_heart",
+      "reason": "`sell` as remove/sell away Volcano Bonds letters from shitcoiner at heart",
+      "output": "hitierathert",
+      "outputCompact": "hitierathert",
+      "instructionHits": [],
+      "lettersOnly": "hitierathert",
+      "letterLength": 12
+    },
+    {
+      "name": "sell_remove_heart_from_volcano",
+      "reason": "`sell` as remove/sell away shitcoiner-at-heart letters from Volcano Bonds",
+      "output": "volnobd",
+      "outputCompact": "volnobd",
+      "instructionHits": [],
+      "lettersOnly": "volnobd",
+      "letterLength": 7
+    },
+    {
+      "name": "sell_remove_volcano_from_exact",
+      "reason": "`sell` as remove/sell away the black-highlighted phrase from the exact stream",
+      "output": "shouldsellocanshitierathert",
+      "outputCompact": "shouldsellocanshitierathert",
+      "instructionHits": [],
+      "lettersOnly": "shouldsellocanshitierathert",
+      "letterLength": 27
+    },
+    {
+      "name": "g5_o5_interval_full",
+      "reason": "`Volcano Bonds` to `shitcoiner at heart` interval",
+      "output": "collateralized “Volcano Bonds” to pay off the IMF | loan and get rid of those leeches. I tagged Mike | Novogratz in the tweet, figuring he could sell a | bunch to his Wall Street crony pals, but so far he | hasn't moved on it. I don't really trust that guy. | Maybe because he's a shitcoiner at heart.",
+      "outputCompact": "collateralized “Volcano Bonds” to pay off the IMF | loan and get rid of those leeches. I tagged Mike | Novogratz in the…",
+      "instructionHits": [],
+      "lettersOnly": "collateralizedVolcanoBondstopayofftheIMFloanandgetridofthoseleechesItaggedMikeNovogratzinthetweetfiguringhecouldsellabunchtohisWallStreetcronypalsbutsofarhehasntmovedonitIdontreallytrustthatguyMaybebecausehesashitcoineratheart",
+      "letterLength": 226
+    },
+    {
+      "name": "g5_o5_interval_heart_lines",
+      "reason": "`heart` as middle of the G5-to-O5 six-line interval",
+      "output": "Novogratz in the tweet, figuring he could sell a | bunch to his Wall Street crony pals, but so far he",
+      "outputCompact": "Novogratz in the tweet, figuring he could sell a | bunch to his Wall Street crony pals, but so far he",
+      "instructionHits": [],
+      "lettersOnly": "NovogratzinthetweetfiguringhecouldsellabunchtohisWallStreetcronypalsbutsofarhe",
+      "letterLength": 78
+    },
+    {
+      "name": "sell_to_sell_interval",
+      "reason": "from `should sell` to the next `could sell`",
+      "output": "$1 billion in bitcoin — that he should sell | billions worth of future bitcoin earnings | collateralized “Volcano Bonds” to pay off the IMF | loan and get rid of those leeches. I tagged Mike | Novogratz in the tweet, figuring he could sell a",
+      "outputCompact": "$1 billion in bitcoin — that he should sell | billions worth of future bitcoin earnings | collateralized “Volcano Bonds…",
+      "instructionHits": [],
+      "lettersOnly": "1billioninbitcointhatheshouldsellbillionsworthoffuturebitcoinearningscollateralizedVolcanoBondstopayofftheIMFloanandgetridofthoseleechesItaggedMikeNovogratzinthetweetfiguringhecouldsella",
+      "letterLength": 186
+    },
+    {
+      "name": "line_index_words",
+      "reason": "use exact phrase corridor indexes as same-line word positions",
+      "output": "should |  | ",
+      "outputCompact": "should | |",
+      "instructionHits": [],
+      "lettersOnly": "should",
+      "letterLength": 6
+    },
+    {
+      "name": "page_line_index_words",
+      "reason": "use exact phrase page-line indexes as same-line word positions",
+      "output": " |  | ",
+      "outputCompact": "| |",
+      "instructionHits": [],
+      "lettersOnly": "",
+      "letterLength": 0
+    }
+  ],
+  "operationsWithInstructionHits": [],
+  "assessment": [
+    "Literal `heart` operations select centers/middle lines but produce ordinary fragments, not a selector instruction.",
+    "Literal `sell` operations as remove/interval produce letter debris or the ordinary corridor story, not a word/letter/key rule.",
+    "The G5-to-O5 interval heart is the middle two lines around Novogratz / could sell, reinforcing the existing lower-corridor focus but not choosing an extraction unit.",
+    "Using line/corridor indexes as same-line word positions is empty or ordinary text, not a clean rule."
+  ],
+  "nextMove": "Close literal sell/heart/bond wordplay as a current-scan selector. Keep the exact-edge trio only as source-registration evidence unless a new source clue names one of these operations explicitly."
+}

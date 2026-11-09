@@ -1,0 +1,264 @@
+{
+  "createdAt": "2026-05-24T13:24:10",
+  "scope": "current scan exact page-76 image witness micro-registration control; no key derivation, hashing, WIF, seed, address, or broad brute force",
+  "inputs": {
+    "referencePage76": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "imageWitnessStateGate": "analysis_outputs/source_audit/current_scan_page76_image_witness_state_stability_gate/current_scan_page76_image_witness_state_stability_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "method": {
+    "exactWitnessSource": "current_scan_page76_image_witness_state_stability_gate exact_page76_witness rows",
+    "searchRadiusPx": 8,
+    "metric": "mean absolute RGB difference against upright page-76 reference crop",
+    "interpretation": "a nonzero best shift would indicate local active-box micro-registration drift"
+  },
+  "witnessRows": [
+    {
+      "path": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+      "orientationToUpright": "already_upright",
+      "page76Mad": 0.0,
+      "targetShiftRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334,
+            2177,
+            1801,
+            2225
+          ],
+          "zeroShiftMeanAbsDiff": 0.0,
+          "bestShiftDx": 0,
+          "bestShiftDy": 0,
+          "bestShiftMeanAbsDiff": 0.0,
+          "bestShiftImprovement": 0.0,
+          "bestShiftIsZero": true
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428,
+            2398,
+            691,
+            2445
+          ],
+          "zeroShiftMeanAbsDiff": 0.0,
+          "bestShiftDx": 0,
+          "bestShiftDy": 0,
+          "bestShiftMeanAbsDiff": 0.0,
+          "bestShiftImprovement": 0.0,
+          "bestShiftIsZero": true
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795,
+            2544,
+            1196,
+            2592
+          ],
+          "zeroShiftMeanAbsDiff": 0.0,
+          "bestShiftDx": 0,
+          "bestShiftDy": 0,
+          "bestShiftMeanAbsDiff": 0.0,
+          "bestShiftImprovement": 0.0,
+          "bestShiftIsZero": true
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040,
+            2932,
+            1661,
+            2982
+          ],
+          "zeroShiftMeanAbsDiff": 0.0,
+          "bestShiftDx": 0,
+          "bestShiftDy": 0,
+          "bestShiftMeanAbsDiff": 0.0,
+          "bestShiftImprovement": 0.0,
+          "bestShiftIsZero": true
+        }
+      ],
+      "nonZeroBestShiftCount": 0,
+      "maxZeroShiftMeanAbsDiff": 0.0,
+      "maxBestShiftMeanAbsDiff": 0.0
+    },
+    {
+      "path": "analysis_outputs/source_images/magazine_page_76.jpg",
+      "orientationToUpright": "rot180_to_upright",
+      "page76Mad": 0.054238,
+      "targetShiftRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334,
+            2177,
+            1801,
+            2225
+          ],
+          "zeroShiftMeanAbsDiff": 2.896443,
+          "bestShiftDx": 0,
+          "bestShiftDy": 0,
+          "bestShiftMeanAbsDiff": 2.896443,
+          "bestShiftImprovement": 0.0,
+          "bestShiftIsZero": true
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428,
+            2398,
+            691,
+            2445
+          ],
+          "zeroShiftMeanAbsDiff": 1.060594,
+          "bestShiftDx": 0,
+          "bestShiftDy": 0,
+          "bestShiftMeanAbsDiff": 1.060594,
+          "bestShiftImprovement": 0.0,
+          "bestShiftIsZero": true
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795,
+            2544,
+            1196,
+            2592
+          ],
+          "zeroShiftMeanAbsDiff": 1.109483,
+          "bestShiftDx": 0,
+          "bestShiftDy": 0,
+          "bestShiftMeanAbsDiff": 1.109483,
+          "bestShiftImprovement": 0.0,
+          "bestShiftIsZero": true
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040,
+            2932,
+            1661,
+            2982
+          ],
+          "zeroShiftMeanAbsDiff": 2.979356,
+          "bestShiftDx": 0,
+          "bestShiftDy": 0,
+          "bestShiftMeanAbsDiff": 2.979356,
+          "bestShiftImprovement": 0.0,
+          "bestShiftIsZero": true
+        }
+      ],
+      "nonZeroBestShiftCount": 0,
+      "maxZeroShiftMeanAbsDiff": 2.979356,
+      "maxBestShiftMeanAbsDiff": 2.979356
+    },
+    {
+      "path": "magazine-4_1.jpg",
+      "orientationToUpright": "rot180_to_upright",
+      "page76Mad": 0.092986,
+      "targetShiftRows": [
+        {
+          "shortId": "O4",
+          "phrase": "buying the dip",
+          "box": [
+            1334,
+            2177,
+            1801,
+            2225
+          ],
+          "zeroShiftMeanAbsDiff": 6.176005,
+          "bestShiftDx": 0,
+          "bestShiftDy": 0,
+          "bestShiftMeanAbsDiff": 6.176005,
+          "bestShiftImprovement": 0.0,
+          "bestShiftIsZero": true
+        },
+        {
+          "shortId": "B4",
+          "phrase": "$1 billion",
+          "box": [
+            428,
+            2398,
+            691,
+            2445
+          ],
+          "zeroShiftMeanAbsDiff": 1.546477,
+          "bestShiftDx": 0,
+          "bestShiftDy": 0,
+          "bestShiftMeanAbsDiff": 1.546477,
+          "bestShiftImprovement": 0.0,
+          "bestShiftIsZero": true
+        },
+        {
+          "shortId": "G5",
+          "phrase": "Volcano Bonds",
+          "box": [
+            795,
+            2544,
+            1196,
+            2592
+          ],
+          "zeroShiftMeanAbsDiff": 1.623788,
+          "bestShiftDx": 0,
+          "bestShiftDy": 0,
+          "bestShiftMeanAbsDiff": 1.623788,
+          "bestShiftImprovement": 0.0,
+          "bestShiftIsZero": true
+        },
+        {
+          "shortId": "O5",
+          "phrase": "shitcoiner at heart",
+          "box": [
+            1040,
+            2932,
+            1661,
+            2982
+          ],
+          "zeroShiftMeanAbsDiff": 6.455416,
+          "bestShiftDx": 0,
+          "bestShiftDy": 0,
+          "bestShiftMeanAbsDiff": 6.455416,
+          "bestShiftImprovement": 0.0,
+          "bestShiftIsZero": true
+        }
+      ],
+      "nonZeroBestShiftCount": 0,
+      "maxZeroShiftMeanAbsDiff": 6.455416,
+      "maxBestShiftMeanAbsDiff": 6.455416
+    }
+  ],
+  "summary": {
+    "exactPage76WitnessCount": 3,
+    "targetShiftRowCount": 12,
+    "searchRadiusPx": 8,
+    "nonZeroBestShiftCount": 0,
+    "maxAbsBestShiftPx": 0,
+    "maxZeroShiftMeanAbsDiff": 6.455416,
+    "maxBestShiftMeanAbsDiff": 6.455416,
+    "meanZeroShiftMeanAbsDiff": 1.987297,
+    "meanBestShiftMeanAbsDiff": 1.987297,
+    "maxZeroToBestImprovement": 0.0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "microregistrationFingerprint": "witnesses=3|targets=12|radius=8|nonZeroShift=0|maxAbsShift=0|maxZeroDiff=6.455|maxImprove=0.000|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "decision": {
+    "currentScanPage76ImageWitnessMicroregistrationGate": "exact_page76_image_witnesses_have_no_active_microregistration_drift",
+    "reason": "Across all exact page-76 image witnesses and all four active boxes, the best +/-8 px local match is the zero-shift crop. The small remaining differences are raster/JPEG differences, not geometry shifts or a hidden layer.",
+    "selectorUnlocked": false
+  },
+  "nextMove": "Keep exact page-76 witnesses as aligned duplicate rasters. Reopen active-box geometry only for a distinct physical/original-layout source or raw clue wording.",
+  "sheet": "analysis_outputs/source_audit/current_scan_page76_image_witness_microregistration_gate/current_scan_page76_image_witness_microregistration_gate_sheet.jpg"
+}

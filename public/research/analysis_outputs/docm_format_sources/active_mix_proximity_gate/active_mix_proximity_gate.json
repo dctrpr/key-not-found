@@ -1,0 +1,133 @@
+{
+  "createdAt": "2026-05-21T01:14:07",
+  "scope": "active O4/B4/G5/O5 Typeka Mix proximity gate; no OCR or key derivation",
+  "inputs": {
+    "corridorFontOrderAudit": "analysis_outputs/docm_format_sources/page76_corridor_font_order_audit.json",
+    "activeLineUnitReconciliation": "analysis_outputs/plain_text_transcript/active_line_unit_reconciliation/active_line_unit_reconciliation.json"
+  },
+  "rows": [
+    {
+      "order": 1,
+      "targetId": "buying_dip",
+      "targetGroup": 12,
+      "targetCode": "Y",
+      "targetText": "\"buying the dip.\"",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "visualState": "Y",
+      "prevMixGroup": 11,
+      "prevMixText": "El Salvador",
+      "prevGapGroups": 1,
+      "nextMixGroup": 17,
+      "nextMixText": "Mike Novogratz",
+      "nextGapGroups": 5,
+      "tripletInitials": "EbM",
+      "nearestSide": "prev",
+      "nearestMixGroup": 11,
+      "nearestMixText": "El Salvador",
+      "instructionHits": []
+    },
+    {
+      "order": 2,
+      "targetId": "one_billion",
+      "targetGroup": 14,
+      "targetCode": "K",
+      "targetText": "$1 billion",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "visualState": "K",
+      "prevMixGroup": 11,
+      "prevMixText": "El Salvador",
+      "prevGapGroups": 3,
+      "nextMixGroup": 17,
+      "nextMixText": "Mike Novogratz",
+      "nextGapGroups": 3,
+      "tripletInitials": "E$M",
+      "nearestSide": "prev",
+      "nearestMixGroup": 11,
+      "nearestMixText": "El Salvador",
+      "instructionHits": []
+    },
+    {
+      "order": 3,
+      "targetId": "volcano_bonds",
+      "targetGroup": 15,
+      "targetCode": "K",
+      "targetText": "“Volcano Bonds”",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "visualState": "K",
+      "prevMixGroup": 11,
+      "prevMixText": "El Salvador",
+      "prevGapGroups": 4,
+      "nextMixGroup": 17,
+      "nextMixText": "Mike Novogratz",
+      "nextGapGroups": 2,
+      "tripletInitials": "EVM",
+      "nearestSide": "next",
+      "nearestMixGroup": 17,
+      "nearestMixText": "Mike Novogratz",
+      "instructionHits": []
+    },
+    {
+      "order": 4,
+      "targetId": "shitcoiner_heart",
+      "targetGroup": 19,
+      "targetCode": "Y",
+      "targetText": "shitcoiner at heart.",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "visualState": "Y",
+      "prevMixGroup": 18,
+      "prevMixText": "I don't really trust that guy.",
+      "prevGapGroups": 1,
+      "nextMixGroup": null,
+      "nextMixText": null,
+      "nextGapGroups": null,
+      "tripletInitials": "Is-",
+      "nearestSide": "prev",
+      "nearestMixGroup": 18,
+      "nearestMixText": "I don't really trust that guy.",
+      "instructionHits": []
+    }
+  ],
+  "streams": {
+    "tripletInitials": "EbM E$M EVM Is-",
+    "nearestMixText": "El Salvador | El Salvador | Mike Novogratz | I don't really trust that guy.",
+    "prevMixText": "El Salvador | El Salvador | El Salvador | I don't really trust that guy.",
+    "nextMixText": "Mike Novogratz | Mike Novogratz | Mike Novogratz | -"
+  },
+  "summary": {
+    "activeTargetCount": 4,
+    "uniqueNearestMixGroupCount": 3,
+    "uniquePrevMixGroupCount": 2,
+    "uniqueNextMixGroupCount": 1,
+    "nearestMixUsage": {
+      "El Salvador": 2,
+      "Mike Novogratz": 1,
+      "I don't really trust that guy.": 1
+    },
+    "oneToOneMixMap": false,
+    "sharedElMikeBandTargets": [
+      "buying_dip",
+      "one_billion",
+      "volcano_bonds"
+    ],
+    "instructionHitCount": 0,
+    "instructionHits": [],
+    "selectorUnlocked": false
+  },
+  "assessment": [
+    "Typeka Mix proximity does not map one-to-one onto the active quartet.",
+    "O4, B4, and G5 are all bracketed by the same broad Mix anchors: `El Salvador` before and `Mike Novogratz` after.",
+    "O5 is preceded by `I don't really trust that guy.` and has no following Mix anchor, so the active pattern is shared context plus endpoint, not four independent Mix pointers.",
+    "The triplet and nearest-Mix streams contain no instruction terms.",
+    "Keep Typeka Mix proximity as corridor/source-comparison evidence only unless a future raw clue names a font-state side or Mix-nearest rule."
+  ],
+  "decision": {
+    "activeMixProximityAsSelector": "closed_current_scan",
+    "selectorUnlocked": false,
+    "nextMove": "Reopen Typeka Mix proximity only if source wording names nearest Mix, previous/next font state, or a font-side extraction unit."
+  },
+  "sheet": "analysis_outputs/docm_format_sources/active_mix_proximity_gate/active_mix_proximity_gate_sheet.jpg"
+}

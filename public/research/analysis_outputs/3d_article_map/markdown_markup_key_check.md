@@ -1,0 +1,35 @@
+# Markdown Markup Key Check
+
+Scope: bounded key/index check over user-supplied Markdown bold streams only. This does not repeat broad article hashing.
+
+## Summary
+- markup streams: 14
+- private-key candidates: 1418
+- private-key addresses checked: 7090
+- private-key activity found: 0
+- checksum-valid BIP39 candidates: 94
+- BIP39 addresses checked: 282
+- BIP39 activity found: 0
+
+## Streams
+- p1_partial_bold: length=70 value=`ThediuuffidvelleivehelefmiNwidhiiedevemeieidehiiTiiiimViliueiGiiTiimli`
+- p1_all_bold: length=319 value=`lyYesThediuuffidveTheyarethesumofallourneuroseslleiveglobalunconscioushelefmiNwidhiiedevemeieidehiviewiTiiiimLayerprotocolFactItsLayerforeverygreatthingthatseverbeeninventedordiscoveredViliueiMaximalistKeepyourdignityGii`
+- p2_partial_bold: length=31 value=`eelibeippedelbeielvdieNvzelluhu`
+- p2_all_bold: length=213 value=`GetsometoxicityGetsomebitcoinOpenyourhearttoBitcoinItsthefreakingUTXOghettoupinhereeelibeippedelbeshitcoinersiebytherancidcatnipoffiatmoneyEllvdbuyingthedipPresidentNayibBukeleIMFloanieNvzIdelluhushitcoineratheart`
+- p3_partial_bold: length=57 value=`lleReVeBleemullSphiifidldvedehheeulfBiiiibleuefllvilbleee`
+- p3_all_bold: length=285 value=`hyperbitcoinizedlleToxicBitcoinMaximalistswithinsixmonthsReVeBlizeWharassoldwomenandchildreneemullSpEVERYSINGLEONEOFTHEBITCOINWANNABESBCHBSVETHXRPADAANDOTHERSHITCOINSPLUSFIATMONEYANDGOLDISFACINGTHEIGNOMINIOUSFATEOFDEMONE`
+- p4_partial_bold: length=12 value=`wmemiibiifue`
+- p4_all_bold: length=574 value=`WeveneverhadaneconomyandamoneythatincentivizeslovebeforeuntilbitcoinLoveopensupthecollectiveunconsciousandourjointinnercosmicbeingTheeconomyofloveisinfinitelymoreefficientthanhateandwarMichaelSaylorNicCarterMartyBentThen`
+- p5_partial_bold: length=78 value=`diueumpidpezebeueuuledewdlveeeemeizedfhefiimeiuexeedhvebeeliviiheefepphellwihu`
+- p5_all_bold: length=517 value=`infinitelymoreefficienttotransactandstorewealthinthanfiatshitcoinsorgoldThatsrightBitcoinwilltakealltheenergydiueumpidpezebeueuuledewdlveeeemeizedfhefiimeiuexeePovertydisappearsbecausethefearofbeingpoordisappearsbecauseB`
+- all_partial_bold: length=248 value=`ThediuuffidvelleivehelefmiNwidhiiedevemeieidehiiTiiiimViliueiGiiTiimlieelibeippedelbeielvdieNvzelluhulleReVeBleemullSphiifidldvedehheeulfBiiiibleuefllvilbleeewmemiibiifuediueumpidpezebeueuuledewdlveeeemeizedfhefiimeiuexe`
+- all_bold: length=1908 value=`lyYesThediuuffidveTheyarethesumofallourneuroseslleiveglobalunconscioushelefmiNwidhiiedevemeieidehiviewiTiiiimLayerprotocolFactItsLayerforeverygreatthingthatseverbeeninventedordiscoveredViliueiMaximalistKeepyourdignityGii`
+- partial_by_page_pipe: length=252 value=`ThediuuffidvelleivehelefmiNwidhiiedevemeieidehiiTiiiimViliueiGiiTiimli|eelibeippedelbeielvdieNvzelluhu|lleReVeBleemullSphiifidldvedehheeulfBiiiibleuefllvilbleee|wmemiibiifue|diueumpidpezebeueuuledewdlveeeemeizedfhefiimei`
+- partial_page_lengths: length=14 value=`70,31,57,12,78`
+
+## Hits
+- none
+
+## Assessment
+- Direct private-key and standard BIP39 derivations from the Markdown bold streams found no activity.
+- Keep the bold stream as structured evidence, but do not keep hashing it without a new geometric/order selector.

@@ -1,0 +1,130 @@
+{
+  "createdAt": "2026-05-20T22:36:12",
+  "scope": "Typeka/font-state synthesis against source-reopen gate; no extraction/key derivation",
+  "inputs": {
+    "typeka_instruction_surface": "analysis_outputs/docm_format_sources/typeka_instruction_surface/typeka_instruction_surface.json",
+    "lower_corridor_font_state_selector": "analysis_outputs/docm_format_sources/lower_corridor_font_state_selector/lower_corridor_font_state_selector.json",
+    "typeka_manual_bold_disambiguation": "analysis_outputs/docm_format_sources/typeka_manual_bold_disambiguation/typeka_manual_bold_disambiguation.json",
+    "repaired_frame_font_contact_states": "analysis_outputs/docm_format_sources/repaired_frame_font_contact_states/repaired_frame_font_contact_states.json",
+    "typeka_transition_boundaries": "analysis_outputs/docm_format_sources/typeka_transition_boundaries/typeka_transition_boundaries.json",
+    "typeka_highlight_boundary_alignment": "analysis_outputs/docm_format_sources/typeka_highlight_boundary_alignment/typeka_highlight_boundary_alignment.json",
+    "docm_visual_highlight_consistency": "analysis_outputs/docm_format_sources/docm_visual_highlight_consistency/docm_visual_highlight_consistency.json",
+    "source_reopen": "analysis_outputs/source_audit/source_reopen_requirements/source_reopen_requirements.json"
+  },
+  "sheet": "analysis_outputs/docm_format_sources/typeka_font_r3_gate_synthesis/typeka_font_r3_gate_synthesis_sheet.jpg",
+  "sheetPanels": [
+    {
+      "title": "page 76 target surface",
+      "path": "analysis_outputs/3d_article_map/page_76_upright.jpg"
+    },
+    {
+      "title": "DOCM vs manual bold",
+      "path": "analysis_outputs/docm_format_sources/typeka_manual_bold_disambiguation/typeka_authority_bridge_sheet.jpg"
+    },
+    {
+      "title": "repaired p78 frame contacts",
+      "path": "analysis_outputs/docm_format_sources/repaired_frame_font_contact_states/repaired_frame_font_contact_states_sheet.jpg"
+    },
+    {
+      "title": "source reopen gate",
+      "path": "analysis_outputs/source_audit/source_reopen_requirements/source_reopen_requirements_sheet.jpg"
+    }
+  ],
+  "variantRunCounts": {
+    "TYPEKA_BOLD": 115,
+    "MIX": 47
+  },
+  "strongInstructionRecordCount": 0,
+  "proceduralNoUnitRecordCount": 9,
+  "unitNoActionRecordCount": 0,
+  "lowerCorridorStreams": {
+    "corridorDominantStyles": "YBKRRKRBRRMY",
+    "corridorStyleRuns": "Y|B|K|R|R|K|RB|B|RM|R|M|Y",
+    "corridorInitials": "bP$seVpIIcts",
+    "corridorLasts": "penlssFnelyt",
+    "frameDominantStyles": "RRKRRRMY",
+    "frameInitials": "seVpIcts",
+    "frameLasts": "lssFelyt",
+    "highlightMixDominantStyles": "YKKRMY",
+    "highlightMixInitials": "b$VIts",
+    "highlightMixLasts": "pnseyt"
+  },
+  "lowerCorridorInstructionHits": {
+    "corridorDominantStyles": [],
+    "corridorStyleRuns": [],
+    "corridorInitials": [],
+    "corridorLasts": [],
+    "frameDominantStyles": [],
+    "frameInitials": [],
+    "frameLasts": [],
+    "highlightMixDominantStyles": [],
+    "highlightMixInitials": [],
+    "highlightMixLasts": []
+  },
+  "manualBoldSummary": {
+    "targets": 11,
+    "docmTypekaMixDominantTargets": [
+      "el_salvador",
+      "novogratz",
+      "trust_that_guy"
+    ],
+    "markdownOnlyBoldTargets": [],
+    "docmOnlyBoldTargets": [
+      "one_billion",
+      "volcano_bonds"
+    ],
+    "disagreementCount": 5
+  },
+  "repairedFrameInstructionHits": {},
+  "typekaTransitionDecision": "Keep Typeka/font transitions as source and corridor evidence only; they do not currently supply the missing extraction unit.",
+  "typekaBoundaryCounts": {
+    "fontChangeBoundaryCount": 58,
+    "typekaMixBoundaryCount": 56,
+    "highlightChangeBoundaryCount": 71,
+    "highlightedTypekaMixRunCount": 0,
+    "highlightedTypekaMixCharCount": 0
+  },
+  "typekaBoundaryInstructionHits": {
+    "typeka_mix_text": [
+      "first"
+    ]
+  },
+  "docmVisualHighlightCounts": {
+    "docmSpanCount": 37,
+    "docmPrintedSpanCount": 34,
+    "docmCyanSpanCount": 3,
+    "visualSpanCount": 34,
+    "unmatchedVisualCount": 1,
+    "unmatchedDocmPrintedCount": 0,
+    "cyanBridgeCount": 0
+  },
+  "gateRows": [
+    {
+      "gate": "R1 source identity",
+      "status": "FAIL/PARTIAL",
+      "evidence": "Article with Fonts.docm is a local formatting witness, not a new physical/original-layout source; BOLD.docm is annotation/generated sanity material unless original workflow files reappear."
+    },
+    {
+      "gate": "R2 target preservation",
+      "status": "PASS as corroboration",
+      "evidence": "Typeka/font states label the active page-76 corridor and the repaired R-K-Y contact trio: should sell | Volcano Bonds | shitcoiner at heart."
+    },
+    {
+      "gate": "R3 unit/order evidence",
+      "status": "FAIL",
+      "evidence": "strong Typeka instruction records: 0; unit-without-action records: 0; procedural/directional/index terms without unit: 9."
+    },
+    {
+      "gate": "R4 orientation/source discipline",
+      "status": "PASS as audited",
+      "evidence": "DOCM font labels are used as a text/run witness after visual region selection; manual Markdown bold is explicitly separated from original typography."
+    },
+    {
+      "gate": "R5 controlled improvement",
+      "status": "FAIL",
+      "evidence": "Font/style streams and repaired contact states produce no instruction hits and do not improve the source-registration benchmark without a separate source/clue."
+    }
+  ],
+  "decision": "typeka_font_layer_closed_for_current_scan_as_r3_selector",
+  "nextMove": "Keep Article with Fonts.docm as a formatting/font witness and Typeka as corridor/provenance support only. Reopen font-state extraction only if a raw clue names font/Typeka/Mix/bold as the unit or if a new physical/original-layout source selects exact font-run units."
+}

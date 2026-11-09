@@ -1,0 +1,1447 @@
+{
+  "createdAt": "2026-05-24T17:44:21",
+  "scope": "Fixed PDF held-to-light source-word trace grouped by active color/format streams.",
+  "inputs": {
+    "activeTargets": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "allTargetPhraseGate": "analysis_outputs/source_audit/current_pdf_held_to_light_all_target_phrase_gate/current_pdf_held_to_light_all_target_phrase_gate.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "decision": "current_pdf_held_to_light_color_phrase_no_selector",
+  "summary": {
+    "decision": "current_pdf_held_to_light_color_phrase_no_selector",
+    "variantCount": 12,
+    "streamRowCount": 60,
+    "allFourSourceWordVariantCount": 6,
+    "populatedStreamRowCount": 60,
+    "allFourPopulatedStreamRowCount": 30,
+    "totalSourceWordHits": 510,
+    "totalStrictInstructionHits": 0,
+    "totalActionOrderInstructionHits": 0,
+    "totalContextTermHits": 30,
+    "colorSelectorCandidateCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "fingerprint": "variants=12|streams=60|allFourWords=6|populatedStreams=60|allFourStreams=30|words=510|strict=0|action=0|context=30|candidates=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "variantRows": [
+    {
+      "pdf": "magazine.pdf",
+      "transform": "physical_back_mirror",
+      "allFourSourceWordRows": false,
+      "targetRowsWithWords": 3,
+      "streamRows": [
+        {
+          "mode": "active_order",
+          "targetStream": "O4-B4-G5-O5",
+          "visualStateStream": "YKKY",
+          "colorStream": "orange-black-black-orange",
+          "sourceText": "O4:Buterin came up with | B4: | G5:experience. | O5:for the gullible and unloved.",
+          "sourceWordHitCount": 10,
+          "populatedTargetCount": 3,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "buterin"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "visual_state_y_then_k",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:Buterin came up with | O5:for the gullible and unloved. | B4: | G5:experience.",
+          "sourceWordHitCount": 10,
+          "populatedTargetCount": 3,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "buterin"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "visual_state_k_then_y",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4: | G5:experience. | O4:Buterin came up with | O5:for the gullible and unloved.",
+          "sourceWordHitCount": 10,
+          "populatedTargetCount": 3,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "buterin"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "orange_then_black",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:Buterin came up with | O5:for the gullible and unloved. | B4: | G5:experience.",
+          "sourceWordHitCount": 10,
+          "populatedTargetCount": 3,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "buterin"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "black_then_orange",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4: | G5:experience. | O4:Buterin came up with | O5:for the gullible and unloved.",
+          "sourceWordHitCount": 10,
+          "populatedTargetCount": 3,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "buterin"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        }
+      ],
+      "yGroup": {
+        "targetStream": "O4-O5",
+        "visualStateStream": "YY",
+        "colorStream": "orange-orange",
+        "sourceText": "O4:Buterin came up with | O5:for the gullible and unloved.",
+        "sourceWordHitCount": 9,
+        "populatedTargetCount": 2,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [
+          "buterin"
+        ],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 1
+      },
+      "kGroup": {
+        "targetStream": "B4-G5",
+        "visualStateStream": "KK",
+        "colorStream": "black-black",
+        "sourceText": "B4: | G5:experience.",
+        "sourceWordHitCount": 1,
+        "populatedTargetCount": 1,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 0
+      },
+      "colorSelectorCandidate": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "transform": "same_side_no_mirror",
+      "allFourSourceWordRows": true,
+      "targetRowsWithWords": 4,
+      "streamRows": [
+        {
+          "mode": "active_order",
+          "targetStream": "O4-B4-G5-O5",
+          "visualStateStream": "YKKY",
+          "colorStream": "orange-black-black-orange",
+          "sourceText": "O4:(MRERREIGStY epithet. | B4:Keep your | G5:of the whole Satoshi | O5:the gullible and unloved.",
+          "sourceWordHitCount": 12,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "visual_state_y_then_k",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:(MRERREIGStY epithet. | O5:the gullible and unloved. | B4:Keep your | G5:of the whole Satoshi",
+          "sourceWordHitCount": 12,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "visual_state_k_then_y",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4:Keep your | G5:of the whole Satoshi | O4:(MRERREIGStY epithet. | O5:the gullible and unloved.",
+          "sourceWordHitCount": 12,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "orange_then_black",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:(MRERREIGStY epithet. | O5:the gullible and unloved. | B4:Keep your | G5:of the whole Satoshi",
+          "sourceWordHitCount": 12,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "black_then_orange",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4:Keep your | G5:of the whole Satoshi | O4:(MRERREIGStY epithet. | O5:the gullible and unloved.",
+          "sourceWordHitCount": 12,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        }
+      ],
+      "yGroup": {
+        "targetStream": "O4-O5",
+        "visualStateStream": "YY",
+        "colorStream": "orange-orange",
+        "sourceText": "O4:(MRERREIGStY epithet. | O5:the gullible and unloved.",
+        "sourceWordHitCount": 6,
+        "populatedTargetCount": 2,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 0
+      },
+      "kGroup": {
+        "targetStream": "B4-G5",
+        "visualStateStream": "KK",
+        "colorStream": "black-black",
+        "sourceText": "B4:Keep your | G5:of the whole Satoshi",
+        "sourceWordHitCount": 6,
+        "populatedTargetCount": 2,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [
+          "satoshi"
+        ],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 1
+      },
+      "colorSelectorCandidate": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "transform": "back_mirror_rotate180",
+      "allFourSourceWordRows": true,
+      "targetRowsWithWords": 4,
+      "streamRows": [
+        {
+          "mode": "active_order",
+          "targetStream": "O4-B4-G5-O5",
+          "visualStateStream": "YKKY",
+          "colorStream": "orange-black-black-orange",
+          "sourceText": "O4:publishing the white | B4:The markets | G5:Yes. | O5:TOXIC AF",
+          "sourceWordHitCount": 8,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "visual_state_y_then_k",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:publishing the white | O5:TOXIC AF | B4:The markets | G5:Yes.",
+          "sourceWordHitCount": 8,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "visual_state_k_then_y",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4:The markets | G5:Yes. | O4:publishing the white | O5:TOXIC AF",
+          "sourceWordHitCount": 8,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "orange_then_black",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:publishing the white | O5:TOXIC AF | B4:The markets | G5:Yes.",
+          "sourceWordHitCount": 8,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "black_then_orange",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4:The markets | G5:Yes. | O4:publishing the white | O5:TOXIC AF",
+          "sourceWordHitCount": 8,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        }
+      ],
+      "yGroup": {
+        "targetStream": "O4-O5",
+        "visualStateStream": "YY",
+        "colorStream": "orange-orange",
+        "sourceText": "O4:publishing the white | O5:TOXIC AF",
+        "sourceWordHitCount": 5,
+        "populatedTargetCount": 2,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 0
+      },
+      "kGroup": {
+        "targetStream": "B4-G5",
+        "visualStateStream": "KK",
+        "colorStream": "black-black",
+        "sourceText": "B4:The markets | G5:Yes.",
+        "sourceWordHitCount": 3,
+        "populatedTargetCount": 2,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 0
+      },
+      "colorSelectorCandidate": false
+    },
+    {
+      "pdf": "magazine.pdf",
+      "transform": "front_rotate180",
+      "allFourSourceWordRows": false,
+      "targetRowsWithWords": 2,
+      "streamRows": [
+        {
+          "mode": "active_order",
+          "targetStream": "O4-B4-G5-O5",
+          "visualStateStream": "YKKY",
+          "colorStream": "orange-black-black-orange",
+          "sourceText": "O4:The cypherpunks | B4: | G5: | O5:TOXIC AF",
+          "sourceWordHitCount": 4,
+          "populatedTargetCount": 2,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "visual_state_y_then_k",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:The cypherpunks | O5:TOXIC AF | B4: | G5:",
+          "sourceWordHitCount": 4,
+          "populatedTargetCount": 2,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "visual_state_k_then_y",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4: | G5: | O4:The cypherpunks | O5:TOXIC AF",
+          "sourceWordHitCount": 4,
+          "populatedTargetCount": 2,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "orange_then_black",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:The cypherpunks | O5:TOXIC AF | B4: | G5:",
+          "sourceWordHitCount": 4,
+          "populatedTargetCount": 2,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "black_then_orange",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4: | G5: | O4:The cypherpunks | O5:TOXIC AF",
+          "sourceWordHitCount": 4,
+          "populatedTargetCount": 2,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        }
+      ],
+      "yGroup": {
+        "targetStream": "O4-O5",
+        "visualStateStream": "YY",
+        "colorStream": "orange-orange",
+        "sourceText": "O4:The cypherpunks | O5:TOXIC AF",
+        "sourceWordHitCount": 4,
+        "populatedTargetCount": 2,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 0
+      },
+      "kGroup": {
+        "targetStream": "B4-G5",
+        "visualStateStream": "KK",
+        "colorStream": "black-black",
+        "sourceText": "B4: | G5:",
+        "sourceWordHitCount": 0,
+        "populatedTargetCount": 0,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 0
+      },
+      "colorSelectorCandidate": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "physical_back_mirror",
+      "allFourSourceWordRows": false,
+      "targetRowsWithWords": 3,
+      "streamRows": [
+        {
+          "mode": "active_order",
+          "targetStream": "O4-B4-G5-O5",
+          "visualStateStream": "YKKY",
+          "colorStream": "orange-black-black-orange",
+          "sourceText": "O4:Buterin came up with | B4: | G5:experience. | O5:for the gullible and unloved.",
+          "sourceWordHitCount": 10,
+          "populatedTargetCount": 3,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "buterin"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "visual_state_y_then_k",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:Buterin came up with | O5:for the gullible and unloved. | B4: | G5:experience.",
+          "sourceWordHitCount": 10,
+          "populatedTargetCount": 3,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "buterin"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "visual_state_k_then_y",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4: | G5:experience. | O4:Buterin came up with | O5:for the gullible and unloved.",
+          "sourceWordHitCount": 10,
+          "populatedTargetCount": 3,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "buterin"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "orange_then_black",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:Buterin came up with | O5:for the gullible and unloved. | B4: | G5:experience.",
+          "sourceWordHitCount": 10,
+          "populatedTargetCount": 3,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "buterin"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "black_then_orange",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4: | G5:experience. | O4:Buterin came up with | O5:for the gullible and unloved.",
+          "sourceWordHitCount": 10,
+          "populatedTargetCount": 3,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "buterin"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        }
+      ],
+      "yGroup": {
+        "targetStream": "O4-O5",
+        "visualStateStream": "YY",
+        "colorStream": "orange-orange",
+        "sourceText": "O4:Buterin came up with | O5:for the gullible and unloved.",
+        "sourceWordHitCount": 9,
+        "populatedTargetCount": 2,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [
+          "buterin"
+        ],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 1
+      },
+      "kGroup": {
+        "targetStream": "B4-G5",
+        "visualStateStream": "KK",
+        "colorStream": "black-black",
+        "sourceText": "B4: | G5:experience.",
+        "sourceWordHitCount": 1,
+        "populatedTargetCount": 1,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 0
+      },
+      "colorSelectorCandidate": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "same_side_no_mirror",
+      "allFourSourceWordRows": true,
+      "targetRowsWithWords": 4,
+      "streamRows": [
+        {
+          "mode": "active_order",
+          "targetStream": "O4-B4-G5-O5",
+          "visualStateStream": "YKKY",
+          "colorStream": "orange-black-black-orange",
+          "sourceText": "O4:(MRERREIGStY epithet. | B4:Keep your | G5:of the whole Satoshi | O5:the gullible and unloved.",
+          "sourceWordHitCount": 12,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "visual_state_y_then_k",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:(MRERREIGStY epithet. | O5:the gullible and unloved. | B4:Keep your | G5:of the whole Satoshi",
+          "sourceWordHitCount": 12,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "visual_state_k_then_y",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4:Keep your | G5:of the whole Satoshi | O4:(MRERREIGStY epithet. | O5:the gullible and unloved.",
+          "sourceWordHitCount": 12,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "orange_then_black",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:(MRERREIGStY epithet. | O5:the gullible and unloved. | B4:Keep your | G5:of the whole Satoshi",
+          "sourceWordHitCount": 12,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "black_then_orange",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4:Keep your | G5:of the whole Satoshi | O4:(MRERREIGStY epithet. | O5:the gullible and unloved.",
+          "sourceWordHitCount": 12,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        }
+      ],
+      "yGroup": {
+        "targetStream": "O4-O5",
+        "visualStateStream": "YY",
+        "colorStream": "orange-orange",
+        "sourceText": "O4:(MRERREIGStY epithet. | O5:the gullible and unloved.",
+        "sourceWordHitCount": 6,
+        "populatedTargetCount": 2,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 0
+      },
+      "kGroup": {
+        "targetStream": "B4-G5",
+        "visualStateStream": "KK",
+        "colorStream": "black-black",
+        "sourceText": "B4:Keep your | G5:of the whole Satoshi",
+        "sourceWordHitCount": 6,
+        "populatedTargetCount": 2,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [
+          "satoshi"
+        ],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 1
+      },
+      "colorSelectorCandidate": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "back_mirror_rotate180",
+      "allFourSourceWordRows": true,
+      "targetRowsWithWords": 4,
+      "streamRows": [
+        {
+          "mode": "active_order",
+          "targetStream": "O4-B4-G5-O5",
+          "visualStateStream": "YKKY",
+          "colorStream": "orange-black-black-orange",
+          "sourceText": "O4:publishing the white | B4:The markets | G5:Yes. | O5:TOXIC AF",
+          "sourceWordHitCount": 8,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "visual_state_y_then_k",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:publishing the white | O5:TOXIC AF | B4:The markets | G5:Yes.",
+          "sourceWordHitCount": 8,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "visual_state_k_then_y",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4:The markets | G5:Yes. | O4:publishing the white | O5:TOXIC AF",
+          "sourceWordHitCount": 8,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "orange_then_black",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:publishing the white | O5:TOXIC AF | B4:The markets | G5:Yes.",
+          "sourceWordHitCount": 8,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "black_then_orange",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4:The markets | G5:Yes. | O4:publishing the white | O5:TOXIC AF",
+          "sourceWordHitCount": 8,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        }
+      ],
+      "yGroup": {
+        "targetStream": "O4-O5",
+        "visualStateStream": "YY",
+        "colorStream": "orange-orange",
+        "sourceText": "O4:publishing the white | O5:TOXIC AF",
+        "sourceWordHitCount": 5,
+        "populatedTargetCount": 2,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 0
+      },
+      "kGroup": {
+        "targetStream": "B4-G5",
+        "visualStateStream": "KK",
+        "colorStream": "black-black",
+        "sourceText": "B4:The markets | G5:Yes.",
+        "sourceWordHitCount": 3,
+        "populatedTargetCount": 2,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 0
+      },
+      "colorSelectorCandidate": false
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "front_rotate180",
+      "allFourSourceWordRows": false,
+      "targetRowsWithWords": 2,
+      "streamRows": [
+        {
+          "mode": "active_order",
+          "targetStream": "O4-B4-G5-O5",
+          "visualStateStream": "YKKY",
+          "colorStream": "orange-black-black-orange",
+          "sourceText": "O4:The cypherpunks | B4: | G5: | O5:TOXIC AF",
+          "sourceWordHitCount": 4,
+          "populatedTargetCount": 2,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "visual_state_y_then_k",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:The cypherpunks | O5:TOXIC AF | B4: | G5:",
+          "sourceWordHitCount": 4,
+          "populatedTargetCount": 2,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "visual_state_k_then_y",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4: | G5: | O4:The cypherpunks | O5:TOXIC AF",
+          "sourceWordHitCount": 4,
+          "populatedTargetCount": 2,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "orange_then_black",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:The cypherpunks | O5:TOXIC AF | B4: | G5:",
+          "sourceWordHitCount": 4,
+          "populatedTargetCount": 2,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "black_then_orange",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4: | G5: | O4:The cypherpunks | O5:TOXIC AF",
+          "sourceWordHitCount": 4,
+          "populatedTargetCount": 2,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        }
+      ],
+      "yGroup": {
+        "targetStream": "O4-O5",
+        "visualStateStream": "YY",
+        "colorStream": "orange-orange",
+        "sourceText": "O4:The cypherpunks | O5:TOXIC AF",
+        "sourceWordHitCount": 4,
+        "populatedTargetCount": 2,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 0
+      },
+      "kGroup": {
+        "targetStream": "B4-G5",
+        "visualStateStream": "KK",
+        "colorStream": "black-black",
+        "sourceText": "B4: | G5:",
+        "sourceWordHitCount": 0,
+        "populatedTargetCount": 0,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 0
+      },
+      "colorSelectorCandidate": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "physical_back_mirror",
+      "allFourSourceWordRows": false,
+      "targetRowsWithWords": 3,
+      "streamRows": [
+        {
+          "mode": "active_order",
+          "targetStream": "O4-B4-G5-O5",
+          "visualStateStream": "YKKY",
+          "colorStream": "orange-black-black-orange",
+          "sourceText": "O4:Buterin came up with | B4: | G5:experience. | O5:for the gullible and unloved.",
+          "sourceWordHitCount": 10,
+          "populatedTargetCount": 3,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "buterin"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "visual_state_y_then_k",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:Buterin came up with | O5:for the gullible and unloved. | B4: | G5:experience.",
+          "sourceWordHitCount": 10,
+          "populatedTargetCount": 3,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "buterin"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "visual_state_k_then_y",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4: | G5:experience. | O4:Buterin came up with | O5:for the gullible and unloved.",
+          "sourceWordHitCount": 10,
+          "populatedTargetCount": 3,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "buterin"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "orange_then_black",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:Buterin came up with | O5:for the gullible and unloved. | B4: | G5:experience.",
+          "sourceWordHitCount": 10,
+          "populatedTargetCount": 3,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "buterin"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "black_then_orange",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4: | G5:experience. | O4:Buterin came up with | O5:for the gullible and unloved.",
+          "sourceWordHitCount": 10,
+          "populatedTargetCount": 3,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "buterin"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        }
+      ],
+      "yGroup": {
+        "targetStream": "O4-O5",
+        "visualStateStream": "YY",
+        "colorStream": "orange-orange",
+        "sourceText": "O4:Buterin came up with | O5:for the gullible and unloved.",
+        "sourceWordHitCount": 9,
+        "populatedTargetCount": 2,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [
+          "buterin"
+        ],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 1
+      },
+      "kGroup": {
+        "targetStream": "B4-G5",
+        "visualStateStream": "KK",
+        "colorStream": "black-black",
+        "sourceText": "B4: | G5:experience.",
+        "sourceWordHitCount": 1,
+        "populatedTargetCount": 1,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 0
+      },
+      "colorSelectorCandidate": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "same_side_no_mirror",
+      "allFourSourceWordRows": true,
+      "targetRowsWithWords": 4,
+      "streamRows": [
+        {
+          "mode": "active_order",
+          "targetStream": "O4-B4-G5-O5",
+          "visualStateStream": "YKKY",
+          "colorStream": "orange-black-black-orange",
+          "sourceText": "O4:(MRERREIGStY epithet. | B4:Keep your | G5:of the whole Satoshi | O5:the gullible and unloved.",
+          "sourceWordHitCount": 12,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "visual_state_y_then_k",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:(MRERREIGStY epithet. | O5:the gullible and unloved. | B4:Keep your | G5:of the whole Satoshi",
+          "sourceWordHitCount": 12,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "visual_state_k_then_y",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4:Keep your | G5:of the whole Satoshi | O4:(MRERREIGStY epithet. | O5:the gullible and unloved.",
+          "sourceWordHitCount": 12,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "orange_then_black",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:(MRERREIGStY epithet. | O5:the gullible and unloved. | B4:Keep your | G5:of the whole Satoshi",
+          "sourceWordHitCount": 12,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        },
+        {
+          "mode": "black_then_orange",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4:Keep your | G5:of the whole Satoshi | O4:(MRERREIGStY epithet. | O5:the gullible and unloved.",
+          "sourceWordHitCount": 12,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [
+            "satoshi"
+          ],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 1
+        }
+      ],
+      "yGroup": {
+        "targetStream": "O4-O5",
+        "visualStateStream": "YY",
+        "colorStream": "orange-orange",
+        "sourceText": "O4:(MRERREIGStY epithet. | O5:the gullible and unloved.",
+        "sourceWordHitCount": 6,
+        "populatedTargetCount": 2,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 0
+      },
+      "kGroup": {
+        "targetStream": "B4-G5",
+        "visualStateStream": "KK",
+        "colorStream": "black-black",
+        "sourceText": "B4:Keep your | G5:of the whole Satoshi",
+        "sourceWordHitCount": 6,
+        "populatedTargetCount": 2,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [
+          "satoshi"
+        ],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 1
+      },
+      "colorSelectorCandidate": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "back_mirror_rotate180",
+      "allFourSourceWordRows": true,
+      "targetRowsWithWords": 4,
+      "streamRows": [
+        {
+          "mode": "active_order",
+          "targetStream": "O4-B4-G5-O5",
+          "visualStateStream": "YKKY",
+          "colorStream": "orange-black-black-orange",
+          "sourceText": "O4:publishing the white | B4:The markets | G5:Yes. | O5:TOXIC AF",
+          "sourceWordHitCount": 8,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "visual_state_y_then_k",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:publishing the white | O5:TOXIC AF | B4:The markets | G5:Yes.",
+          "sourceWordHitCount": 8,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "visual_state_k_then_y",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4:The markets | G5:Yes. | O4:publishing the white | O5:TOXIC AF",
+          "sourceWordHitCount": 8,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "orange_then_black",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:publishing the white | O5:TOXIC AF | B4:The markets | G5:Yes.",
+          "sourceWordHitCount": 8,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "black_then_orange",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4:The markets | G5:Yes. | O4:publishing the white | O5:TOXIC AF",
+          "sourceWordHitCount": 8,
+          "populatedTargetCount": 4,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        }
+      ],
+      "yGroup": {
+        "targetStream": "O4-O5",
+        "visualStateStream": "YY",
+        "colorStream": "orange-orange",
+        "sourceText": "O4:publishing the white | O5:TOXIC AF",
+        "sourceWordHitCount": 5,
+        "populatedTargetCount": 2,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 0
+      },
+      "kGroup": {
+        "targetStream": "B4-G5",
+        "visualStateStream": "KK",
+        "colorStream": "black-black",
+        "sourceText": "B4:The markets | G5:Yes.",
+        "sourceWordHitCount": 3,
+        "populatedTargetCount": 2,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 0
+      },
+      "colorSelectorCandidate": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "front_rotate180",
+      "allFourSourceWordRows": false,
+      "targetRowsWithWords": 2,
+      "streamRows": [
+        {
+          "mode": "active_order",
+          "targetStream": "O4-B4-G5-O5",
+          "visualStateStream": "YKKY",
+          "colorStream": "orange-black-black-orange",
+          "sourceText": "O4:The cypherpunks | B4: | G5: | O5:TOXIC AF",
+          "sourceWordHitCount": 4,
+          "populatedTargetCount": 2,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "visual_state_y_then_k",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:The cypherpunks | O5:TOXIC AF | B4: | G5:",
+          "sourceWordHitCount": 4,
+          "populatedTargetCount": 2,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "visual_state_k_then_y",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4: | G5: | O4:The cypherpunks | O5:TOXIC AF",
+          "sourceWordHitCount": 4,
+          "populatedTargetCount": 2,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "orange_then_black",
+          "targetStream": "O4-O5-B4-G5",
+          "visualStateStream": "YYKK",
+          "colorStream": "orange-orange-black-black",
+          "sourceText": "O4:The cypherpunks | O5:TOXIC AF | B4: | G5:",
+          "sourceWordHitCount": 4,
+          "populatedTargetCount": 2,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        },
+        {
+          "mode": "black_then_orange",
+          "targetStream": "B4-G5-O4-O5",
+          "visualStateStream": "KKYY",
+          "colorStream": "black-black-orange-orange",
+          "sourceText": "B4: | G5: | O4:The cypherpunks | O5:TOXIC AF",
+          "sourceWordHitCount": 4,
+          "populatedTargetCount": 2,
+          "strictInstructionTerms": [],
+          "actionOrderInstructionTerms": [],
+          "contextTerms": [],
+          "strictInstructionHitCount": 0,
+          "actionOrderInstructionHitCount": 0,
+          "contextTermHitCount": 0
+        }
+      ],
+      "yGroup": {
+        "targetStream": "O4-O5",
+        "visualStateStream": "YY",
+        "colorStream": "orange-orange",
+        "sourceText": "O4:The cypherpunks | O5:TOXIC AF",
+        "sourceWordHitCount": 4,
+        "populatedTargetCount": 2,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 0
+      },
+      "kGroup": {
+        "targetStream": "B4-G5",
+        "visualStateStream": "KK",
+        "colorStream": "black-black",
+        "sourceText": "B4: | G5:",
+        "sourceWordHitCount": 0,
+        "populatedTargetCount": 0,
+        "strictInstructionTerms": [],
+        "actionOrderInstructionTerms": [],
+        "contextTerms": [],
+        "strictInstructionHitCount": 0,
+        "actionOrderInstructionHitCount": 0,
+        "contextTermHitCount": 0
+      },
+      "colorSelectorCandidate": false
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/current_pdf_held_to_light_color_phrase_gate/current_pdf_held_to_light_color_phrase_gate_sheet.jpg"
+}

@@ -1,0 +1,147 @@
+{
+  "source": "best locked scan / page-80 package copy",
+  "symptoms": [
+    "NAUSEA",
+    "HEARTBURN",
+    "INDIGESTION",
+    "UPSET STOMACH",
+    "SHITCOINS"
+  ],
+  "graphTargets": [
+    {
+      "id": "G",
+      "color": "orange",
+      "text": "Get some toxicity. Get some bitcoin. Open your heart to Bitcoin."
+    },
+    {
+      "id": "b1",
+      "color": "orange",
+      "text": "by the rancid catnip of fiat money."
+    },
+    {
+      "id": "b2",
+      "color": "orange",
+      "text": "“buying the dip.”"
+    },
+    {
+      "id": "I",
+      "color": "grey",
+      "text": "It’s a stun gun to the genitals."
+    },
+    {
+      "id": "$",
+      "color": "grey",
+      "text": "$1 billion"
+    }
+  ],
+  "streams": {
+    "symptom_initials": "NHIUS",
+    "symptom_last_initials": "NHISS",
+    "symptom_lengths": "6,9,11,12,9",
+    "graph_target_initials": "GbbI$",
+    "graph_target_last_initials": "Bmdgb",
+    "length_selected_chars": "mcitn",
+    "length_selected_words": "bitcoin the the stun $1"
+  },
+  "orderedRows": [
+    {
+      "symptom": "NAUSEA",
+      "targetId": "G",
+      "targetText": "Get some toxicity. Get some bitcoin. Open your heart to Bitcoin.",
+      "targetInitial": "G",
+      "targetLastInitial": "B",
+      "symptomLength": 6,
+      "charModulo": "m",
+      "wordModulo": "bitcoin"
+    },
+    {
+      "symptom": "HEARTBURN",
+      "targetId": "b1",
+      "targetText": "by the rancid catnip of fiat money.",
+      "targetInitial": "b",
+      "targetLastInitial": "m",
+      "symptomLength": 9,
+      "charModulo": "c",
+      "wordModulo": "the"
+    },
+    {
+      "symptom": "INDIGESTION",
+      "targetId": "b2",
+      "targetText": "“buying the dip.”",
+      "targetInitial": "b",
+      "targetLastInitial": "d",
+      "symptomLength": 11,
+      "charModulo": "i",
+      "wordModulo": "the"
+    },
+    {
+      "symptom": "UPSET STOMACH",
+      "targetId": "I",
+      "targetText": "It’s a stun gun to the genitals.",
+      "targetInitial": "I",
+      "targetLastInitial": "g",
+      "symptomLength": 12,
+      "charModulo": "t",
+      "wordModulo": "stun"
+    },
+    {
+      "symptom": "SHITCOINS",
+      "targetId": "$",
+      "targetText": "$1 billion",
+      "targetInitial": "$",
+      "targetLastInitial": "b",
+      "symptomLength": 9,
+      "charModulo": "n",
+      "wordModulo": "$1"
+    }
+  ],
+  "directMatchesAcrossAllP76Highlights": [
+    {
+      "symptom": "NAUSEA",
+      "target": "grey_stun_gun",
+      "targetText": "It’s a stun gun to the genitals.",
+      "hits": [
+        "stun"
+      ]
+    },
+    {
+      "symptom": "HEARTBURN",
+      "target": "orange_open_heart",
+      "targetText": "Get some toxicity. Get some bitcoin. Open your heart to Bitcoin.",
+      "hits": [
+        "heart"
+      ]
+    },
+    {
+      "symptom": "HEARTBURN",
+      "target": "orange_shitcoiner_heart",
+      "targetText": "shitcoiner at heart.",
+      "hits": [
+        "heart"
+      ]
+    },
+    {
+      "symptom": "UPSET STOMACH",
+      "target": "grey_stun_gun",
+      "targetText": "It’s a stun gun to the genitals.",
+      "hits": [
+        "genitals"
+      ]
+    },
+    {
+      "symptom": "SHITCOINS",
+      "target": "orange_shitcoiner_heart",
+      "targetText": "shitcoiner at heart.",
+      "hits": [
+        "shitcoin",
+        "shitcoiner"
+      ]
+    }
+  ],
+  "assessment": [
+    "The five-symptom count supports the five page-76 target-group model.",
+    "The symptom order does not create readable initials, last initials, or length-indexed text over the five graph targets.",
+    "Direct lexical/semantic matches mostly point HEARTBURN to heart phrases and SHITCOINS to 'shitcoiner at heart'; they do not order the graph targets cleanly.",
+    "Treat p80 as count/theme support, not the final selector."
+  ]
+}

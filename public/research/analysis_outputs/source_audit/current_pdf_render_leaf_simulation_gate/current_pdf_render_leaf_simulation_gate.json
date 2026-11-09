@@ -1,0 +1,716 @@
+{
+  "created": "2026-05-24T03:55:05",
+  "decision": "current_pdf_render_leaf_simulation_no_selector",
+  "sheet": "analysis_outputs/source_audit/current_pdf_render_leaf_simulation_gate/current_pdf_render_leaf_simulation_gate_sheet.jpg",
+  "summary": {
+    "pairRowCount": 7,
+    "targetRowCount": 28,
+    "renderVsEmbeddedPdfCount": 3,
+    "maxMeanSourceOnlyCoverage": 0.21190549360862665,
+    "minMeanSourceOnlyCoverage": 0.0031644877657824528,
+    "maxTargetCountAtLeast10": 2,
+    "maxTargetCountAtLeast25": 2,
+    "allFourAtLeast10PairCount": 0,
+    "allFourAtLeast25PairCount": 0,
+    "maxRenderEmbeddedPageMeanAbsDelta": 37.209693908691406,
+    "maxRenderEmbeddedActiveMeanAbsDelta": 26.990480422973633,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0
+  },
+  "fingerprint": "pairs=7|targets=28|renderRows=3|maxMean=0.2119|max10=2|max25=2|all10=0|all25=0|maxRenderMAD=37.2097|maxActiveRenderMAD=26.9905|sourceR3=0|triggers=0/9|selectors=0",
+  "pairRows": [
+    {
+      "pairId": "canonical_source_images",
+      "pageMeta": {
+        "75": {
+          "bestOrientation": "rotate180",
+          "bestMadToUpright": 0.3083,
+          "inputSize": "2544x3264",
+          "normalizedSize": "2544x3264"
+        },
+        "76": {
+          "bestOrientation": "rotate180",
+          "bestMadToUpright": 0.2859,
+          "inputSize": "2544x3264",
+          "normalizedSize": "2544x3264"
+        }
+      },
+      "rows": [
+        {
+          "pairId": "canonical_source_images",
+          "target": "O4",
+          "phrase": "buying the dip",
+          "sourceCoverage": 0.12232334047109207,
+          "targetCoverage": 0.9782298358315489,
+          "sourceOnlyCoverage": 0.0037027123483226267,
+          "sourceTargetOverlapCoverage": 0.11862062812276945,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.8603209336250912,
+          "greyShareOfSource": 1.0
+        },
+        {
+          "pairId": "canonical_source_images",
+          "target": "B4",
+          "phrase": "$1 billion",
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.7295526251921366,
+          "sourceOnlyCoverage": 0.0,
+          "sourceTargetOverlapCoverage": 0.0,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.0,
+          "greyShareOfSource": 0.0
+        },
+        {
+          "pairId": "canonical_source_images",
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "sourceCoverage": 0.05262884455527847,
+          "targetCoverage": 0.7858998337489609,
+          "sourceOnlyCoverage": 0.005766832917705736,
+          "sourceTargetOverlapCoverage": 0.04686201163757273,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.8223099703849951,
+          "greyShareOfSource": 1.0
+        },
+        {
+          "pairId": "canonical_source_images",
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "sourceCoverage": 0.16541062801932366,
+          "targetCoverage": 0.9533333333333334,
+          "sourceOnlyCoverage": 0.003188405797101449,
+          "sourceTargetOverlapCoverage": 0.1622222222222222,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.8639018691588785,
+          "greyShareOfSource": 1.0
+        }
+      ],
+      "meanSourceOnlyCoverage": 0.0031644877657824528,
+      "minSourceOnlyCoverage": 0.0,
+      "targetCountAtLeast10": 0,
+      "targetCountAtLeast25": 0,
+      "allFourAtLeast10": false,
+      "allFourAtLeast25": false,
+      "renderDelta": {}
+    },
+    {
+      "pairId": "magazine.pdf:rendered_300dpi",
+      "pageMeta": {
+        "75": {
+          "bestOrientation": "as_is",
+          "bestMadToUpright": 0.5295,
+          "inputSize": "2544x3264",
+          "normalizedSize": "2544x3264"
+        },
+        "76": {
+          "bestOrientation": "as_is",
+          "bestMadToUpright": 0.4835,
+          "inputSize": "2544x3264",
+          "normalizedSize": "2544x3264"
+        }
+      },
+      "rows": [
+        {
+          "pairId": "magazine.pdf:rendered_300dpi",
+          "target": "O4",
+          "phrase": "buying the dip",
+          "sourceCoverage": 0.12232334047109207,
+          "targetCoverage": 0.9771145610278372,
+          "sourceOnlyCoverage": 0.004193433261955746,
+          "sourceTargetOverlapCoverage": 0.11812990720913633,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.8584974471188913,
+          "greyShareOfSource": 1.0
+        },
+        {
+          "pairId": "magazine.pdf:rendered_300dpi",
+          "target": "B4",
+          "phrase": "$1 billion",
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.7296335247957285,
+          "sourceOnlyCoverage": 0.0,
+          "sourceTargetOverlapCoverage": 0.0,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.0,
+          "greyShareOfSource": 0.0
+        },
+        {
+          "pairId": "magazine.pdf:rendered_300dpi",
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "sourceCoverage": 0.05257689110556941,
+          "targetCoverage": 0.7858478802992519,
+          "sourceOnlyCoverage": 0.005766832917705736,
+          "sourceTargetOverlapCoverage": 0.04681005818786368,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.8201581027667985,
+          "greyShareOfSource": 1.0
+        },
+        {
+          "pairId": "magazine.pdf:rendered_300dpi",
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "sourceCoverage": 0.16547504025764895,
+          "targetCoverage": 0.951755233494364,
+          "sourceOnlyCoverage": 0.0030917874396135265,
+          "sourceTargetOverlapCoverage": 0.16238325281803542,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.8629817049435579,
+          "greyShareOfSource": 1.0
+        }
+      ],
+      "meanSourceOnlyCoverage": 0.0032630134048187522,
+      "minSourceOnlyCoverage": 0.0,
+      "targetCountAtLeast10": 0,
+      "targetCountAtLeast25": 0,
+      "allFourAtLeast10": false,
+      "allFourAtLeast25": false,
+      "renderDelta": {}
+    },
+    {
+      "pairId": "magazine.pdf:embedded_primary_image",
+      "pageMeta": {
+        "75": {
+          "bestOrientation": "rotate180",
+          "bestMadToUpright": 0.5022,
+          "inputSize": "2544x3264",
+          "normalizedSize": "2544x3264"
+        },
+        "76": {
+          "bestOrientation": "rotate180",
+          "bestMadToUpright": 0.4601,
+          "inputSize": "2544x3264",
+          "normalizedSize": "2544x3264"
+        }
+      },
+      "rows": [
+        {
+          "pairId": "magazine.pdf:embedded_primary_image",
+          "target": "O4",
+          "phrase": "buying the dip",
+          "sourceCoverage": 0.12232334047109207,
+          "targetCoverage": 0.9771591720199857,
+          "sourceOnlyCoverage": 0.0042380442541042115,
+          "sourceTargetOverlapCoverage": 0.11808529621698786,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.8584974471188913,
+          "greyShareOfSource": 1.0
+        },
+        {
+          "pairId": "magazine.pdf:embedded_primary_image",
+          "target": "B4",
+          "phrase": "$1 billion",
+          "sourceCoverage": 0.0,
+          "targetCoverage": 0.7296335247957285,
+          "sourceOnlyCoverage": 0.0,
+          "sourceTargetOverlapCoverage": 0.0,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.0,
+          "greyShareOfSource": 0.0
+        },
+        {
+          "pairId": "magazine.pdf:embedded_primary_image",
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "sourceCoverage": 0.05257689110556941,
+          "targetCoverage": 0.7858478802992519,
+          "sourceOnlyCoverage": 0.005766832917705736,
+          "sourceTargetOverlapCoverage": 0.04681005818786368,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.8201581027667985,
+          "greyShareOfSource": 1.0
+        },
+        {
+          "pairId": "magazine.pdf:embedded_primary_image",
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "sourceCoverage": 0.16547504025764895,
+          "targetCoverage": 0.9516264090177133,
+          "sourceOnlyCoverage": 0.003188405797101449,
+          "sourceTargetOverlapCoverage": 0.1622866344605475,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.8629817049435579,
+          "greyShareOfSource": 1.0
+        }
+      ],
+      "meanSourceOnlyCoverage": 0.003298320742227849,
+      "minSourceOnlyCoverage": 0.0,
+      "targetCountAtLeast10": 0,
+      "targetCountAtLeast25": 0,
+      "allFourAtLeast10": false,
+      "allFourAtLeast25": false,
+      "renderDelta": {}
+    },
+    {
+      "pairId": "keyser bitcoin .pdf:rendered_300dpi",
+      "pageMeta": {
+        "75": {
+          "bestOrientation": "as_is",
+          "bestMadToUpright": 49.2596,
+          "inputSize": "2550x3300",
+          "normalizedSize": "2544x3264"
+        },
+        "76": {
+          "bestOrientation": "hflip",
+          "bestMadToUpright": 57.5478,
+          "inputSize": "2550x3300",
+          "normalizedSize": "2544x3264"
+        }
+      },
+      "rows": [
+        {
+          "pairId": "keyser bitcoin .pdf:rendered_300dpi",
+          "target": "O4",
+          "phrase": "buying the dip",
+          "sourceCoverage": 0.6303533190578159,
+          "targetCoverage": 0.22046752319771593,
+          "sourceOnlyCoverage": 0.512847965738758,
+          "sourceTargetOverlapCoverage": 0.11750535331905781,
+          "orangeShareOfSource": 0.00035385704175513094,
+          "darkShareOfSource": 0.862137296532201,
+          "greyShareOfSource": 0.9936305732484076
+        },
+        {
+          "pairId": "keyser bitcoin .pdf:rendered_300dpi",
+          "target": "B4",
+          "phrase": "$1 billion",
+          "sourceCoverage": 0.2693956799611682,
+          "targetCoverage": 0.000808996035919424,
+          "sourceOnlyCoverage": 0.2693147803575762,
+          "sourceTargetOverlapCoverage": 8.08996035919424e-05,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.0,
+          "greyShareOfSource": 1.0
+        },
+        {
+          "pairId": "keyser bitcoin .pdf:rendered_300dpi",
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "sourceCoverage": 0.06785120532003325,
+          "targetCoverage": 0.15560058187863673,
+          "sourceOnlyCoverage": 0.06520157938487116,
+          "sourceTargetOverlapCoverage": 0.002649625935162095,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.5566615620214395,
+          "greyShareOfSource": 1.0
+        },
+        {
+          "pairId": "keyser bitcoin .pdf:rendered_300dpi",
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "sourceCoverage": 0.0002576489533011272,
+          "targetCoverage": 0.00045088566827697265,
+          "sourceOnlyCoverage": 0.0002576489533011272,
+          "sourceTargetOverlapCoverage": 0.0,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.0,
+          "greyShareOfSource": 1.0
+        }
+      ],
+      "meanSourceOnlyCoverage": 0.21190549360862665,
+      "minSourceOnlyCoverage": 0.0002576489533011272,
+      "targetCountAtLeast10": 2,
+      "targetCountAtLeast25": 2,
+      "allFourAtLeast10": false,
+      "allFourAtLeast25": false,
+      "renderDelta": {}
+    },
+    {
+      "pairId": "keyser bitcoin .pdf:embedded_primary_image",
+      "pageMeta": {
+        "75": {
+          "bestOrientation": "as_is",
+          "bestMadToUpright": 51.283,
+          "inputSize": "2040x2805",
+          "normalizedSize": "2544x3264"
+        },
+        "76": {
+          "bestOrientation": "as_is",
+          "bestMadToUpright": 59.7692,
+          "inputSize": "2040x2805",
+          "normalizedSize": "2544x3264"
+        }
+      },
+      "rows": [
+        {
+          "pairId": "keyser bitcoin .pdf:embedded_primary_image",
+          "target": "O4",
+          "phrase": "buying the dip",
+          "sourceCoverage": 0.5962705210563883,
+          "targetCoverage": 0.08739293361884368,
+          "sourceOnlyCoverage": 0.5790060670949322,
+          "sourceTargetOverlapCoverage": 0.0172644539614561,
+          "orangeShareOfSource": 0.00014963339817447254,
+          "darkShareOfSource": 0.8773006134969326,
+          "greyShareOfSource": 0.9968576986383361
+        },
+        {
+          "pairId": "keyser bitcoin .pdf:embedded_primary_image",
+          "target": "B4",
+          "phrase": "$1 billion",
+          "sourceCoverage": 0.07410403689021924,
+          "targetCoverage": 0.2875980907693552,
+          "sourceOnlyCoverage": 0.05525442925329666,
+          "sourceTargetOverlapCoverage": 0.018849607636922578,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.0,
+          "greyShareOfSource": 1.0
+        },
+        {
+          "pairId": "keyser bitcoin .pdf:embedded_primary_image",
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "sourceCoverage": 0.06540939318370739,
+          "targetCoverage": 0.2383624272651704,
+          "sourceOnlyCoverage": 0.0627597672485453,
+          "sourceTargetOverlapCoverage": 0.002649625935162095,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.6028594122319301,
+          "greyShareOfSource": 1.0
+        },
+        {
+          "pairId": "keyser bitcoin .pdf:embedded_primary_image",
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "sourceCoverage": 0.0002898550724637681,
+          "targetCoverage": 0.00016103059581320451,
+          "sourceOnlyCoverage": 0.0002898550724637681,
+          "sourceTargetOverlapCoverage": 0.0,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.0,
+          "greyShareOfSource": 1.0
+        }
+      ],
+      "meanSourceOnlyCoverage": 0.1743275296673095,
+      "minSourceOnlyCoverage": 0.0002898550724637681,
+      "targetCountAtLeast10": 1,
+      "targetCountAtLeast25": 1,
+      "allFourAtLeast10": false,
+      "allFourAtLeast25": false,
+      "renderDelta": {}
+    },
+    {
+      "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:rendered_300dpi",
+      "pageMeta": {
+        "75": {
+          "bestOrientation": "as_is",
+          "bestMadToUpright": 49.2596,
+          "inputSize": "2550x3300",
+          "normalizedSize": "2544x3264"
+        },
+        "76": {
+          "bestOrientation": "hflip",
+          "bestMadToUpright": 57.5478,
+          "inputSize": "2550x3300",
+          "normalizedSize": "2544x3264"
+        }
+      },
+      "rows": [
+        {
+          "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:rendered_300dpi",
+          "target": "O4",
+          "phrase": "buying the dip",
+          "sourceCoverage": 0.6303533190578159,
+          "targetCoverage": 0.22046752319771593,
+          "sourceOnlyCoverage": 0.512847965738758,
+          "sourceTargetOverlapCoverage": 0.11750535331905781,
+          "orangeShareOfSource": 0.00035385704175513094,
+          "darkShareOfSource": 0.862137296532201,
+          "greyShareOfSource": 0.9936305732484076
+        },
+        {
+          "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:rendered_300dpi",
+          "target": "B4",
+          "phrase": "$1 billion",
+          "sourceCoverage": 0.2693956799611682,
+          "targetCoverage": 0.000808996035919424,
+          "sourceOnlyCoverage": 0.2693147803575762,
+          "sourceTargetOverlapCoverage": 8.08996035919424e-05,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.0,
+          "greyShareOfSource": 1.0
+        },
+        {
+          "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:rendered_300dpi",
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "sourceCoverage": 0.06785120532003325,
+          "targetCoverage": 0.15560058187863673,
+          "sourceOnlyCoverage": 0.06520157938487116,
+          "sourceTargetOverlapCoverage": 0.002649625935162095,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.5566615620214395,
+          "greyShareOfSource": 1.0
+        },
+        {
+          "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:rendered_300dpi",
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "sourceCoverage": 0.0002576489533011272,
+          "targetCoverage": 0.00045088566827697265,
+          "sourceOnlyCoverage": 0.0002576489533011272,
+          "sourceTargetOverlapCoverage": 0.0,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.0,
+          "greyShareOfSource": 1.0
+        }
+      ],
+      "meanSourceOnlyCoverage": 0.21190549360862665,
+      "minSourceOnlyCoverage": 0.0002576489533011272,
+      "targetCountAtLeast10": 2,
+      "targetCountAtLeast25": 2,
+      "allFourAtLeast10": false,
+      "allFourAtLeast25": false,
+      "renderDelta": {}
+    },
+    {
+      "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:embedded_primary_image",
+      "pageMeta": {
+        "75": {
+          "bestOrientation": "as_is",
+          "bestMadToUpright": 51.283,
+          "inputSize": "2040x2805",
+          "normalizedSize": "2544x3264"
+        },
+        "76": {
+          "bestOrientation": "as_is",
+          "bestMadToUpright": 59.7692,
+          "inputSize": "2040x2805",
+          "normalizedSize": "2544x3264"
+        }
+      },
+      "rows": [
+        {
+          "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:embedded_primary_image",
+          "target": "O4",
+          "phrase": "buying the dip",
+          "sourceCoverage": 0.5962705210563883,
+          "targetCoverage": 0.08739293361884368,
+          "sourceOnlyCoverage": 0.5790060670949322,
+          "sourceTargetOverlapCoverage": 0.0172644539614561,
+          "orangeShareOfSource": 0.00014963339817447254,
+          "darkShareOfSource": 0.8773006134969326,
+          "greyShareOfSource": 0.9968576986383361
+        },
+        {
+          "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:embedded_primary_image",
+          "target": "B4",
+          "phrase": "$1 billion",
+          "sourceCoverage": 0.07410403689021924,
+          "targetCoverage": 0.2875980907693552,
+          "sourceOnlyCoverage": 0.05525442925329666,
+          "sourceTargetOverlapCoverage": 0.018849607636922578,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.0,
+          "greyShareOfSource": 1.0
+        },
+        {
+          "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:embedded_primary_image",
+          "target": "G5",
+          "phrase": "Volcano Bonds",
+          "sourceCoverage": 0.06540939318370739,
+          "targetCoverage": 0.2383624272651704,
+          "sourceOnlyCoverage": 0.0627597672485453,
+          "sourceTargetOverlapCoverage": 0.002649625935162095,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.6028594122319301,
+          "greyShareOfSource": 1.0
+        },
+        {
+          "pairId": "analysis_outputs/external_clues/google_drive_article_download.pdf:embedded_primary_image",
+          "target": "O5",
+          "phrase": "shitcoiner at heart",
+          "sourceCoverage": 0.0002898550724637681,
+          "targetCoverage": 0.00016103059581320451,
+          "sourceOnlyCoverage": 0.0002898550724637681,
+          "sourceTargetOverlapCoverage": 0.0,
+          "orangeShareOfSource": 0.0,
+          "darkShareOfSource": 0.0,
+          "greyShareOfSource": 1.0
+        }
+      ],
+      "meanSourceOnlyCoverage": 0.1743275296673095,
+      "minSourceOnlyCoverage": 0.0002898550724637681,
+      "targetCountAtLeast10": 1,
+      "targetCountAtLeast25": 1,
+      "allFourAtLeast10": false,
+      "allFourAtLeast25": false,
+      "renderDelta": {}
+    }
+  ],
+  "renderVsEmbeddedRows": [
+    {
+      "pdf": "magazine.pdf",
+      "75": {
+        "pageMeanAbsDelta": 0.04070853069424629,
+        "activeMeanAbsDeltaMax": 1.2554000616073608,
+        "activeMaxAbsDeltaMax": 50,
+        "activeDeltaRows": [
+          {
+            "target": "O4",
+            "meanAbsDelta": 0.7106382250785828,
+            "maxAbsDelta": 50
+          },
+          {
+            "target": "B4",
+            "meanAbsDelta": 1.2554000616073608,
+            "maxAbsDelta": 47
+          },
+          {
+            "target": "G5",
+            "meanAbsDelta": 0.0,
+            "maxAbsDelta": 0
+          },
+          {
+            "target": "O5",
+            "meanAbsDelta": 0.0,
+            "maxAbsDelta": 0
+          }
+        ]
+      },
+      "76": {
+        "pageMeanAbsDelta": 0.034779828041791916,
+        "activeMeanAbsDeltaMax": 1.6097429990768433,
+        "activeMaxAbsDeltaMax": 49,
+        "activeDeltaRows": [
+          {
+            "target": "O4",
+            "meanAbsDelta": 1.6097429990768433,
+            "maxAbsDelta": 45
+          },
+          {
+            "target": "B4",
+            "meanAbsDelta": 0.0010786614147946239,
+            "maxAbsDelta": 2
+          },
+          {
+            "target": "G5",
+            "meanAbsDelta": 0.006701995152980089,
+            "maxAbsDelta": 4
+          },
+          {
+            "target": "O5",
+            "meanAbsDelta": 1.5428770780563354,
+            "maxAbsDelta": 49
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "75": {
+        "pageMeanAbsDelta": 16.24904441833496,
+        "activeMeanAbsDeltaMax": 10.972332000732422,
+        "activeMaxAbsDeltaMax": 187,
+        "activeDeltaRows": [
+          {
+            "target": "O4",
+            "meanAbsDelta": 2.8203516006469727,
+            "maxAbsDelta": 22
+          },
+          {
+            "target": "B4",
+            "meanAbsDelta": 10.972332000732422,
+            "maxAbsDelta": 187
+          },
+          {
+            "target": "G5",
+            "meanAbsDelta": 9.38161563873291,
+            "maxAbsDelta": 160
+          },
+          {
+            "target": "O5",
+            "meanAbsDelta": 2.9070961475372314,
+            "maxAbsDelta": 29
+          }
+        ]
+      },
+      "76": {
+        "pageMeanAbsDelta": 37.209693908691406,
+        "activeMeanAbsDeltaMax": 26.990480422973633,
+        "activeMaxAbsDeltaMax": 164,
+        "activeDeltaRows": [
+          {
+            "target": "O4",
+            "meanAbsDelta": 15.942065238952637,
+            "maxAbsDelta": 162
+          },
+          {
+            "target": "B4",
+            "meanAbsDelta": 26.990480422973633,
+            "maxAbsDelta": 163
+          },
+          {
+            "target": "G5",
+            "meanAbsDelta": 24.598590850830078,
+            "maxAbsDelta": 164
+          },
+          {
+            "target": "O5",
+            "meanAbsDelta": 3.026677370071411,
+            "maxAbsDelta": 19
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "75": {
+        "pageMeanAbsDelta": 16.24904441833496,
+        "activeMeanAbsDeltaMax": 10.972332000732422,
+        "activeMaxAbsDeltaMax": 187,
+        "activeDeltaRows": [
+          {
+            "target": "O4",
+            "meanAbsDelta": 2.8203516006469727,
+            "maxAbsDelta": 22
+          },
+          {
+            "target": "B4",
+            "meanAbsDelta": 10.972332000732422,
+            "maxAbsDelta": 187
+          },
+          {
+            "target": "G5",
+            "meanAbsDelta": 9.38161563873291,
+            "maxAbsDelta": 160
+          },
+          {
+            "target": "O5",
+            "meanAbsDelta": 2.9070961475372314,
+            "maxAbsDelta": 29
+          }
+        ]
+      },
+      "76": {
+        "pageMeanAbsDelta": 37.209693908691406,
+        "activeMeanAbsDeltaMax": 26.990480422973633,
+        "activeMaxAbsDeltaMax": 164,
+        "activeDeltaRows": [
+          {
+            "target": "O4",
+            "meanAbsDelta": 15.942065238952637,
+            "maxAbsDelta": 162
+          },
+          {
+            "target": "B4",
+            "meanAbsDelta": 26.990480422973633,
+            "maxAbsDelta": 163
+          },
+          {
+            "target": "G5",
+            "meanAbsDelta": 24.598590850830078,
+            "maxAbsDelta": 164
+          },
+          {
+            "target": "O5",
+            "meanAbsDelta": 3.026677370071411,
+            "maxAbsDelta": 19
+          }
+        ]
+      }
+    }
+  ]
+}

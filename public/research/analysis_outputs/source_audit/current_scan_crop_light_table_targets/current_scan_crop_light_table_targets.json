@@ -1,0 +1,673 @@
+{
+  "createdAt": "2026-05-21T14:43:38",
+  "scope": "crop-level held-to-light target inspection; no extraction or candidate generation",
+  "inputs": {
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "heldToLightSimulator": "analysis_outputs/source_audit/current_scan_held_to_light_simulator/current_scan_held_to_light_simulator.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "scenarios": [
+    {
+      "scenarioId": "valid_75_to_76_natural",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "natural_hflip",
+      "topology": "valid same leaf",
+      "dx": 0,
+      "dy": 0,
+      "coverageByTarget": {
+        "O4": 0.12232334047109207,
+        "B4": 0.0,
+        "G5": 0.05262884455527847,
+        "O5": 0.16541062801932366
+      },
+      "boxJaccardByTarget": {
+        "O4": 0.12080323474626323,
+        "B4": 0.0,
+        "G5": 0.05919411996324977,
+        "O5": 0.1695959595959596
+      },
+      "cropJaccardByTarget": {
+        "O4": 0.059317501842831744,
+        "B4": 0.0033257119102057782,
+        "G5": 0.042493269828121766,
+        "O5": 0.11098622673499324
+      },
+      "activeBoxCountAt10": 2,
+      "activeBoxCountAt25": 0,
+      "activeBoxCountAt50": 0,
+      "orangeTargetMeanCoverage": 0.14386698424520786,
+      "blackTargetMeanCoverage": 0.026314422277639235,
+      "meanActiveCoverage": 0.08509070326142355,
+      "scenarioDecision": "no active quartet crop selector"
+    },
+    {
+      "scenarioId": "valid_75_to_76_forced_best",
+      "sourcePage": 75,
+      "pairId": "same_leaf_75_to_76",
+      "mode": "best_page76_active_boxes",
+      "topology": "valid same leaf, forced boundary shift",
+      "dx": -220,
+      "dy": 200,
+      "coverageByTarget": {
+        "O4": 0.9766238401142041,
+        "B4": 0.1299247633686595,
+        "G5": 0.05403158769742311,
+        "O5": 0.09990338164251207
+      },
+      "boxJaccardByTarget": {
+        "O4": 0.9840623019107126,
+        "B4": 0.11690496215306981,
+        "G5": 0.052059608251447904,
+        "O5": 0.09627568636653146
+      },
+      "cropJaccardByTarget": {
+        "O4": 0.3703371190016609,
+        "B4": 0.15397489539748954,
+        "G5": 0.10743547726341664,
+        "O5": 0.08804536147424791
+      },
+      "activeBoxCountAt10": 2,
+      "activeBoxCountAt25": 1,
+      "activeBoxCountAt50": 1,
+      "orangeTargetMeanCoverage": 0.5382636108783581,
+      "blackTargetMeanCoverage": 0.0919781755330413,
+      "meanActiveCoverage": 0.3151208932056997,
+      "scenarioDecision": "single-target ink concentration"
+    },
+    {
+      "scenarioId": "benchmark_79_to_76_natural",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "natural_hflip",
+      "topology": "non-physical benchmark",
+      "dx": 0,
+      "dy": 0,
+      "coverageByTarget": {
+        "O4": 0.009145253390435404,
+        "B4": 0.0713534503680932,
+        "G5": 0.00015586034912718204,
+        "O5": 0.21091787439613527
+      },
+      "boxJaccardByTarget": {
+        "O4": 0.008934676573825044,
+        "B4": 0.05162523900573614,
+        "G5": 0.0001983208831889998,
+        "O5": 0.20721322424444816
+      },
+      "cropJaccardByTarget": {
+        "O4": 0.07980831627814107,
+        "B4": 0.015697273890365123,
+        "G5": 0.004154952869191334,
+        "O5": 0.13668733110793196
+      },
+      "activeBoxCountAt10": 1,
+      "activeBoxCountAt25": 0,
+      "activeBoxCountAt50": 0,
+      "orangeTargetMeanCoverage": 0.11003156389328533,
+      "blackTargetMeanCoverage": 0.035754655358610186,
+      "meanActiveCoverage": 0.07289310962594776,
+      "scenarioDecision": "no active quartet crop selector"
+    },
+    {
+      "scenarioId": "benchmark_79_to_76_best",
+      "sourcePage": 79,
+      "pairId": "nonphysical_79_to_76",
+      "mode": "best_global_feature",
+      "topology": "non-physical benchmark",
+      "dx": 40,
+      "dy": 80,
+      "coverageByTarget": {
+        "O4": 0.8415863668807995,
+        "B4": 0.11382574225386295,
+        "G5": 0.13284497090606817,
+        "O5": 0.32032206119162643
+      },
+      "boxJaccardByTarget": {
+        "O4": 0.8420862497177692,
+        "B4": 0.10154268808114962,
+        "G5": 0.13308130966873838,
+        "O5": 0.32034588675213677
+      },
+      "cropJaccardByTarget": {
+        "O4": 0.2703525889215838,
+        "B4": 0.04495291858501261,
+        "G5": 0.05423086215548163,
+        "O5": 0.1682023346303502
+      },
+      "activeBoxCountAt10": 4,
+      "activeBoxCountAt25": 2,
+      "activeBoxCountAt50": 1,
+      "orangeTargetMeanCoverage": 0.580954214036213,
+      "blackTargetMeanCoverage": 0.12333535657996555,
+      "meanActiveCoverage": 0.35214478530808924,
+      "scenarioDecision": "single-target ink concentration"
+    }
+  ],
+  "targetRows": [
+    {
+      "scenarioId": "valid_75_to_76_natural",
+      "target": "O4",
+      "phrase": "buying the dip",
+      "centerSlotLetter": "O",
+      "spanSlotLetters": "DOS",
+      "visualState": "Y",
+      "color": "orange",
+      "boxStats": {
+        "sourceCoverage": 0.12232334047109207,
+        "targetCoverage": 0.9782298358315489,
+        "intersectionOverBox": 0.11862062812276945,
+        "intersectionOverTargetInk": 0.12126048887267421,
+        "intersectionOverSourceInk": 0.9697301239970825,
+        "jaccard": 0.12080323474626323
+      },
+      "cropStats": {
+        "sourceCoverage": 0.14446879618433428,
+        "targetCoverage": 0.1632490259304044,
+        "jaccard": 0.059317501842831744
+      },
+      "sourceSignal": {
+        "dominantSignal": "grey",
+        "sourceFeaturePixelCount": 2742,
+        "orangeShareOfSourceFeatures": 0.0,
+        "darkShareOfSourceFeatures": 0.8603209336250912,
+        "greyShareOfSourceFeatures": 1.0
+      },
+      "targetDecision": "weak source ink",
+      "image": "analysis_outputs/source_audit/current_scan_crop_light_table_targets/valid_75_to_76_natural_O4.jpg"
+    },
+    {
+      "scenarioId": "valid_75_to_76_natural",
+      "target": "B4",
+      "phrase": "$1 billion",
+      "centerSlotLetter": "V",
+      "spanSlotLetters": "OV",
+      "visualState": "K",
+      "color": "black",
+      "boxStats": {
+        "sourceCoverage": 0.0,
+        "targetCoverage": 0.7295526251921366,
+        "intersectionOverBox": 0.0,
+        "intersectionOverTargetInk": 0.0,
+        "intersectionOverSourceInk": 0.0,
+        "jaccard": 0.0
+      },
+      "cropStats": {
+        "sourceCoverage": 0.0046420322033993095,
+        "targetCoverage": 0.13034043433761555,
+        "jaccard": 0.0033257119102057782
+      },
+      "sourceSignal": {
+        "dominantSignal": "none",
+        "sourceFeaturePixelCount": 0,
+        "orangeShareOfSourceFeatures": 0.0,
+        "darkShareOfSourceFeatures": 0.0,
+        "greyShareOfSourceFeatures": 0.0
+      },
+      "targetDecision": "no meaningful source ink",
+      "image": "analysis_outputs/source_audit/current_scan_crop_light_table_targets/valid_75_to_76_natural_B4.jpg"
+    },
+    {
+      "scenarioId": "valid_75_to_76_natural",
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "centerSlotLetter": "E",
+      "spanSlotLetters": "ER",
+      "visualState": "K",
+      "color": "black",
+      "boxStats": {
+        "sourceCoverage": 0.05262884455527847,
+        "targetCoverage": 0.7858998337489609,
+        "intersectionOverBox": 0.04686201163757273,
+        "intersectionOverTargetInk": 0.05962847887882594,
+        "intersectionOverSourceInk": 0.8904244817374136,
+        "jaccard": 0.05919411996324977
+      },
+      "cropStats": {
+        "sourceCoverage": 0.05317838370565046,
+        "targetCoverage": 0.17651755730763616,
+        "jaccard": 0.042493269828121766
+      },
+      "sourceSignal": {
+        "dominantSignal": "grey",
+        "sourceFeaturePixelCount": 1013,
+        "orangeShareOfSourceFeatures": 0.0,
+        "darkShareOfSourceFeatures": 0.8223099703849951,
+        "greyShareOfSourceFeatures": 1.0
+      },
+      "targetDecision": "no meaningful source ink",
+      "image": "analysis_outputs/source_audit/current_scan_crop_light_table_targets/valid_75_to_76_natural_G5.jpg"
+    },
+    {
+      "scenarioId": "valid_75_to_76_natural",
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "centerSlotLetter": "D",
+      "spanSlotLetters": "RDO",
+      "visualState": "Y",
+      "color": "orange",
+      "boxStats": {
+        "sourceCoverage": 0.16541062801932366,
+        "targetCoverage": 0.9533333333333334,
+        "intersectionOverBox": 0.1622222222222222,
+        "intersectionOverTargetInk": 0.17016317016317017,
+        "intersectionOverSourceInk": 0.9807242990654206,
+        "jaccard": 0.1695959595959596
+      },
+      "cropStats": {
+        "sourceCoverage": 0.06693029631973005,
+        "targetCoverage": 0.13806460684031074,
+        "jaccard": 0.11098622673499324
+      },
+      "sourceSignal": {
+        "dominantSignal": "grey",
+        "sourceFeaturePixelCount": 5136,
+        "orangeShareOfSourceFeatures": 0.0,
+        "darkShareOfSourceFeatures": 0.8639018691588785,
+        "greyShareOfSourceFeatures": 1.0
+      },
+      "targetDecision": "weak source ink",
+      "image": "analysis_outputs/source_audit/current_scan_crop_light_table_targets/valid_75_to_76_natural_O5.jpg"
+    },
+    {
+      "scenarioId": "valid_75_to_76_forced_best",
+      "target": "O4",
+      "phrase": "buying the dip",
+      "centerSlotLetter": "O",
+      "spanSlotLetters": "DOS",
+      "visualState": "Y",
+      "color": "orange",
+      "boxStats": {
+        "sourceCoverage": 0.9766238401142041,
+        "targetCoverage": 0.9782298358315489,
+        "intersectionOverBox": 0.9695753033547466,
+        "intersectionOverTargetInk": 0.991152863918278,
+        "intersectionOverSourceInk": 0.9927827516901151,
+        "jaccard": 0.9840623019107126
+      },
+      "cropStats": {
+        "sourceCoverage": 0.34943067311567916,
+        "targetCoverage": 0.1632490259304044,
+        "jaccard": 0.3703371190016609
+      },
+      "sourceSignal": {
+        "dominantSignal": "dark",
+        "sourceFeaturePixelCount": 21892,
+        "orangeShareOfSourceFeatures": 0.8312625616663621,
+        "darkShareOfSourceFeatures": 0.9914123880869724,
+        "greyShareOfSourceFeatures": 0.06244290151653572
+      },
+      "targetDecision": "heavy source ink",
+      "image": "analysis_outputs/source_audit/current_scan_crop_light_table_targets/valid_75_to_76_forced_best_O4.jpg"
+    },
+    {
+      "scenarioId": "valid_75_to_76_forced_best",
+      "target": "B4",
+      "phrase": "$1 billion",
+      "centerSlotLetter": "V",
+      "spanSlotLetters": "OV",
+      "visualState": "K",
+      "color": "black",
+      "boxStats": {
+        "sourceCoverage": 0.1299247633686595,
+        "targetCoverage": 0.7295526251921366,
+        "intersectionOverBox": 0.08996035919423995,
+        "intersectionOverTargetInk": 0.12330893768019517,
+        "intersectionOverSourceInk": 0.6924034869240349,
+        "jaccard": 0.11690496215306981
+      },
+      "cropStats": {
+        "sourceCoverage": 0.10103411054748015,
+        "targetCoverage": 0.13034043433761555,
+        "jaccard": 0.15397489539748954
+      },
+      "sourceSignal": {
+        "dominantSignal": "grey",
+        "sourceFeaturePixelCount": 1606,
+        "orangeShareOfSourceFeatures": 0.0,
+        "darkShareOfSourceFeatures": 0.8673723536737236,
+        "greyShareOfSourceFeatures": 1.0
+      },
+      "targetDecision": "weak source ink",
+      "image": "analysis_outputs/source_audit/current_scan_crop_light_table_targets/valid_75_to_76_forced_best_B4.jpg"
+    },
+    {
+      "scenarioId": "valid_75_to_76_forced_best",
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "centerSlotLetter": "E",
+      "spanSlotLetters": "ER",
+      "visualState": "K",
+      "color": "black",
+      "boxStats": {
+        "sourceCoverage": 0.05403158769742311,
+        "targetCoverage": 0.7858998337489609,
+        "intersectionOverBox": 0.04156275976724855,
+        "intersectionOverTargetInk": 0.052885568850399946,
+        "intersectionOverSourceInk": 0.7692307692307693,
+        "jaccard": 0.052059608251447904
+      },
+      "cropStats": {
+        "sourceCoverage": 0.1195019345889911,
+        "targetCoverage": 0.17651755730763616,
+        "jaccard": 0.10743547726341664
+      },
+      "sourceSignal": {
+        "dominantSignal": "grey",
+        "sourceFeaturePixelCount": 1040,
+        "orangeShareOfSourceFeatures": 0.0,
+        "darkShareOfSourceFeatures": 0.9932692307692308,
+        "greyShareOfSourceFeatures": 1.0
+      },
+      "targetDecision": "no meaningful source ink",
+      "image": "analysis_outputs/source_audit/current_scan_crop_light_table_targets/valid_75_to_76_forced_best_G5.jpg"
+    },
+    {
+      "scenarioId": "valid_75_to_76_forced_best",
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "centerSlotLetter": "D",
+      "spanSlotLetters": "RDO",
+      "visualState": "Y",
+      "color": "orange",
+      "boxStats": {
+        "sourceCoverage": 0.09990338164251207,
+        "targetCoverage": 0.9533333333333334,
+        "intersectionOverBox": 0.09249597423510467,
+        "intersectionOverTargetInk": 0.09702374919766224,
+        "intersectionOverSourceInk": 0.9258542875564152,
+        "jaccard": 0.09627568636653146
+      },
+      "cropStats": {
+        "sourceCoverage": 0.1533199760975781,
+        "targetCoverage": 0.13806460684031074,
+        "jaccard": 0.08804536147424791
+      },
+      "sourceSignal": {
+        "dominantSignal": "grey",
+        "sourceFeaturePixelCount": 3102,
+        "orangeShareOfSourceFeatures": 0.0,
+        "darkShareOfSourceFeatures": 0.9181173436492586,
+        "greyShareOfSourceFeatures": 1.0
+      },
+      "targetDecision": "no meaningful source ink",
+      "image": "analysis_outputs/source_audit/current_scan_crop_light_table_targets/valid_75_to_76_forced_best_O5.jpg"
+    },
+    {
+      "scenarioId": "benchmark_79_to_76_natural",
+      "target": "O4",
+      "phrase": "buying the dip",
+      "centerSlotLetter": "O",
+      "spanSlotLetters": "DOS",
+      "visualState": "Y",
+      "color": "orange",
+      "boxStats": {
+        "sourceCoverage": 0.009145253390435404,
+        "targetCoverage": 0.9782298358315489,
+        "intersectionOverBox": 0.008743754461099216,
+        "intersectionOverTargetInk": 0.00893834367019336,
+        "intersectionOverSourceInk": 0.9560975609756097,
+        "jaccard": 0.008934676573825044
+      },
+      "cropStats": {
+        "sourceCoverage": 0.2908647386806395,
+        "targetCoverage": 0.1632490259304044,
+        "jaccard": 0.07980831627814107
+      },
+      "sourceSignal": {
+        "dominantSignal": "grey",
+        "sourceFeaturePixelCount": 205,
+        "orangeShareOfSourceFeatures": 0.0,
+        "darkShareOfSourceFeatures": 0.8829268292682927,
+        "greyShareOfSourceFeatures": 1.0
+      },
+      "targetDecision": "no meaningful source ink",
+      "image": "analysis_outputs/source_audit/current_scan_crop_light_table_targets/benchmark_79_to_76_natural_O4.jpg"
+    },
+    {
+      "scenarioId": "benchmark_79_to_76_natural",
+      "target": "B4",
+      "phrase": "$1 billion",
+      "centerSlotLetter": "V",
+      "spanSlotLetters": "OV",
+      "visualState": "K",
+      "color": "black",
+      "boxStats": {
+        "sourceCoverage": 0.0713534503680932,
+        "targetCoverage": 0.7295526251921366,
+        "intersectionOverBox": 0.03931720734568401,
+        "intersectionOverTargetInk": 0.05389221556886228,
+        "intersectionOverSourceInk": 0.5510204081632653,
+        "jaccard": 0.05162523900573614
+      },
+      "cropStats": {
+        "sourceCoverage": 0.10054194327772216,
+        "targetCoverage": 0.13034043433761555,
+        "jaccard": 0.015697273890365123
+      },
+      "sourceSignal": {
+        "dominantSignal": "grey",
+        "sourceFeaturePixelCount": 882,
+        "orangeShareOfSourceFeatures": 0.0,
+        "darkShareOfSourceFeatures": 0.9331065759637188,
+        "greyShareOfSourceFeatures": 1.0
+      },
+      "targetDecision": "no meaningful source ink",
+      "image": "analysis_outputs/source_audit/current_scan_crop_light_table_targets/benchmark_79_to_76_natural_B4.jpg"
+    },
+    {
+      "scenarioId": "benchmark_79_to_76_natural",
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "centerSlotLetter": "E",
+      "spanSlotLetters": "ER",
+      "visualState": "K",
+      "color": "black",
+      "boxStats": {
+        "sourceCoverage": 0.00015586034912718204,
+        "targetCoverage": 0.7858998337489609,
+        "intersectionOverBox": 0.00015586034912718204,
+        "intersectionOverTargetInk": 0.0001983208831889998,
+        "intersectionOverSourceInk": 1.0,
+        "jaccard": 0.0001983208831889998
+      },
+      "cropStats": {
+        "sourceCoverage": 0.04512520075923492,
+        "targetCoverage": 0.17651755730763616,
+        "jaccard": 0.004154952869191334
+      },
+      "sourceSignal": {
+        "dominantSignal": "grey",
+        "sourceFeaturePixelCount": 3,
+        "orangeShareOfSourceFeatures": 0.0,
+        "darkShareOfSourceFeatures": 0.6666666666666666,
+        "greyShareOfSourceFeatures": 1.0
+      },
+      "targetDecision": "no meaningful source ink",
+      "image": "analysis_outputs/source_audit/current_scan_crop_light_table_targets/benchmark_79_to_76_natural_G5.jpg"
+    },
+    {
+      "scenarioId": "benchmark_79_to_76_natural",
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "centerSlotLetter": "D",
+      "spanSlotLetters": "RDO",
+      "visualState": "Y",
+      "color": "orange",
+      "boxStats": {
+        "sourceCoverage": 0.21091787439613527,
+        "targetCoverage": 0.9533333333333334,
+        "intersectionOverBox": 0.1998389694041868,
+        "intersectionOverTargetInk": 0.2096212965778183,
+        "intersectionOverSourceInk": 0.947472896625439,
+        "jaccard": 0.20721322424444816
+      },
+      "cropStats": {
+        "sourceCoverage": 0.11329396463847587,
+        "targetCoverage": 0.13806460684031074,
+        "jaccard": 0.13668733110793196
+      },
+      "sourceSignal": {
+        "dominantSignal": "grey",
+        "sourceFeaturePixelCount": 6549,
+        "orangeShareOfSourceFeatures": 0.0,
+        "darkShareOfSourceFeatures": 0.9450297755382501,
+        "greyShareOfSourceFeatures": 1.0
+      },
+      "targetDecision": "weak source ink",
+      "image": "analysis_outputs/source_audit/current_scan_crop_light_table_targets/benchmark_79_to_76_natural_O5.jpg"
+    },
+    {
+      "scenarioId": "benchmark_79_to_76_best",
+      "target": "O4",
+      "phrase": "buying the dip",
+      "centerSlotLetter": "O",
+      "spanSlotLetters": "DOS",
+      "visualState": "Y",
+      "color": "orange",
+      "boxStats": {
+        "sourceCoverage": 0.8415863668807995,
+        "targetCoverage": 0.9782298358315489,
+        "intersectionOverBox": 0.8319057815845824,
+        "intersectionOverTargetInk": 0.8504195549069683,
+        "intersectionOverSourceInk": 0.9884972170686457,
+        "jaccard": 0.8420862497177692
+      },
+      "cropStats": {
+        "sourceCoverage": 0.35334374580142414,
+        "targetCoverage": 0.1632490259304044,
+        "jaccard": 0.2703525889215838
+      },
+      "sourceSignal": {
+        "dominantSignal": "dark",
+        "sourceFeaturePixelCount": 18865,
+        "orangeShareOfSourceFeatures": 0.7417439703153988,
+        "darkShareOfSourceFeatures": 0.9938510469122714,
+        "greyShareOfSourceFeatures": 0.06514709780015902
+      },
+      "targetDecision": "heavy source ink",
+      "image": "analysis_outputs/source_audit/current_scan_crop_light_table_targets/benchmark_79_to_76_best_O4.jpg"
+    },
+    {
+      "scenarioId": "benchmark_79_to_76_best",
+      "target": "B4",
+      "phrase": "$1 billion",
+      "centerSlotLetter": "V",
+      "spanSlotLetters": "OV",
+      "visualState": "K",
+      "color": "black",
+      "boxStats": {
+        "sourceCoverage": 0.11382574225386295,
+        "targetCoverage": 0.7295526251921366,
+        "intersectionOverBox": 0.07774451905185664,
+        "intersectionOverTargetInk": 0.10656464848081615,
+        "intersectionOverSourceInk": 0.6830135039090263,
+        "jaccard": 0.10154268808114962
+      },
+      "cropStats": {
+        "sourceCoverage": 0.12226441686567749,
+        "targetCoverage": 0.13034043433761555,
+        "jaccard": 0.04495291858501261
+      },
+      "sourceSignal": {
+        "dominantSignal": "grey",
+        "sourceFeaturePixelCount": 1407,
+        "orangeShareOfSourceFeatures": 0.0,
+        "darkShareOfSourceFeatures": 0.8805970149253731,
+        "greyShareOfSourceFeatures": 1.0
+      },
+      "targetDecision": "weak source ink",
+      "image": "analysis_outputs/source_audit/current_scan_crop_light_table_targets/benchmark_79_to_76_best_B4.jpg"
+    },
+    {
+      "scenarioId": "benchmark_79_to_76_best",
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "centerSlotLetter": "E",
+      "spanSlotLetters": "ER",
+      "visualState": "K",
+      "color": "black",
+      "boxStats": {
+        "sourceCoverage": 0.13284497090606817,
+        "targetCoverage": 0.7858998337489609,
+        "intersectionOverBox": 0.10790731504571903,
+        "intersectionOverTargetInk": 0.13730415812785085,
+        "intersectionOverSourceInk": 0.8122800156433321,
+        "jaccard": 0.13308130966873838
+      },
+      "cropStats": {
+        "sourceCoverage": 0.08230216089940137,
+        "targetCoverage": 0.17651755730763616,
+        "jaccard": 0.05423086215548163
+      },
+      "sourceSignal": {
+        "dominantSignal": "grey",
+        "sourceFeaturePixelCount": 2557,
+        "orangeShareOfSourceFeatures": 0.0,
+        "darkShareOfSourceFeatures": 0.9104419241298397,
+        "greyShareOfSourceFeatures": 1.0
+      },
+      "targetDecision": "weak source ink",
+      "image": "analysis_outputs/source_audit/current_scan_crop_light_table_targets/benchmark_79_to_76_best_G5.jpg"
+    },
+    {
+      "scenarioId": "benchmark_79_to_76_best",
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "centerSlotLetter": "D",
+      "spanSlotLetters": "RDO",
+      "visualState": "Y",
+      "color": "orange",
+      "boxStats": {
+        "sourceCoverage": 0.32032206119162643,
+        "targetCoverage": 0.9533333333333334,
+        "intersectionOverBox": 0.30901771336553946,
+        "intersectionOverTargetInk": 0.3241444545792372,
+        "intersectionOverSourceInk": 0.9647094309270058,
+        "jaccard": 0.32034588675213677
+      },
+      "cropStats": {
+        "sourceCoverage": 0.125765404759394,
+        "targetCoverage": 0.13806460684031074,
+        "jaccard": 0.1682023346303502
+      },
+      "sourceSignal": {
+        "dominantSignal": "grey",
+        "sourceFeaturePixelCount": 9946,
+        "orangeShareOfSourceFeatures": 0.0,
+        "darkShareOfSourceFeatures": 0.9413834707420068,
+        "greyShareOfSourceFeatures": 1.0
+      },
+      "targetDecision": "partial source ink",
+      "image": "analysis_outputs/source_audit/current_scan_crop_light_table_targets/benchmark_79_to_76_best_O5.jpg"
+    }
+  ],
+  "summary": {
+    "scenarioCount": 4,
+    "targetRowCount": 16,
+    "allFourAt10ScenarioCount": 1,
+    "allFourAt25ScenarioCount": 0,
+    "allFourAt50ScenarioCount": 0,
+    "bestMeanCoverageScenario": "benchmark_79_to_76_best",
+    "bestMeanCoverage": 0.35214478530808924,
+    "bestAt50Scenario": "valid_75_to_76_forced_best",
+    "bestAt50Count": 1,
+    "validNaturalCoverageCsv": "0.1223,0.0000,0.0526,0.1654",
+    "validForcedCoverageCsv": "0.9766,0.1299,0.0540,0.0999",
+    "benchmark79BestCoverageCsv": "0.8416,0.1138,0.1328,0.3203",
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "cropLightTableFingerprint": "scenarios=4|targets=16|all10=1|all25=0|all50=0|bestMean=benchmark_79_to_76_best:0.3521|best50=valid_75_to_76_forced_best:1|validNat=0.1223,0.0000,0.0526,0.1654|validForced=0.9766,0.1299,0.0540,0.0999|bench79=0.8416,0.1138,0.1328,0.3203|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "decision": {
+    "currentScanCropLightTableTargets": "crop_light_table_no_active_quartet_selector",
+    "selectorUnlocked": false,
+    "reason": "At crop level, the valid 75->76 leaf does not cover all four O4/B4/G5/O5 targets, even with the forced boundary shift. The strongest 79->76 overlay is still non-physical and concentrates source ink mainly on O4/O5 rather than the full active quartet.",
+    "nextMove": "Use the crop panels for manual visual review, but do not extract from them. The next bounded pass should test whether actual OVERDOSE glyph rectangles projected into these crop windows change the result, because current light-table ink alone does not supply the missing source-backed unit/order rule."
+  },
+  "sheet": "analysis_outputs/source_audit/current_scan_crop_light_table_targets/current_scan_crop_light_table_targets_sheet.jpg",
+  "html": "analysis_outputs/source_audit/current_scan_crop_light_table_targets/index.html"
+}

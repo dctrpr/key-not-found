@@ -1,0 +1,203 @@
+# Typeka Variant State Audit
+
+Scope: reframe the old partial-bold branch around actual Word font states in `Article with Fonts.docm`: Typeka regular, Typeka Mix, and Typeka with bold formatting. No key derivation was run.
+
+## Variant Counts
+
+- `MIX`: runs=47, nonblank=47, chars=883, letters=738
+- `TYPEKA`: runs=167, nonblank=139, chars=3996, letters=3101
+- `TYPEKA_BOLD`: runs=128, nonblank=115, chars=2578, letters=2092
+
+## Short Streams
+
+- `mixInitials` len=46 hits=none: `aTctooaTVGGbrcnEMNIJRBSPFSt5SsisTTlmhIodlgmoSH`
+- `mixLasts` len=46 hits=none: `recewscsntngds'rezy'rkrklSp%lsysefynrgndesnesu`
+- `mixLengthMod10` len=47 hits=none: `86524223443564904931857441304489226709006246274`
+- `typekaBoldInitials` len=107 hits=none: `MReallyYTagmtLpFItMDKLYhinwGBUGnsbIbP$VIlshTSaGFwsuETBAMFIWtLolMMTgwmpwfAw$2bBbcRaBgIaftorweitoTaPotsBEWWaa`
+- `typekaBoldLasts` len=107 hits=none: `MReallysfssgs1ltgdtyy1esiseoneye'yspensFntdsrPlinssFSPTSNgyndfrrteylyggs5n$ksSgneefesaoltkeytsdeyrsrteestre`
+- `typekaBoldLengthMod10` len=115 hits=none: `1111111030547025846302558514047838184200072347680552981368284320886329728587118060592410822313103747336521339795616`
+- `nonRegularInitials` len=153 hits=none: `MaReallyYTTacgmttooaTLpFItVMDKGLYhinwGBUGbrcGnsnbIEbP$VIlMNIshJTSaGRBSFwPsuFStETBAMF5SsisIWtLolMMTgwmpwfAw$2bBbcRaBgTIaftorTlmhweitoTaIodlgmoPotsBEWSWHaa`
+- `nonRegularLasts` len=153 hits=none: `MrReallysefscsgsewscs1ltgdntyyt1esiseonengdsye''ysrpensFnezytd'srPlrkrinksslSpFSPTSN%lsysgyndfrrteylyggs5n$ksSgneefeesaoltkfynreytsdeygndesnersrteessture`
+- `nonRegularLengthMod10` len=162 hits=none: `181111110306545702242235846340254585140478356438198402000723449376180552857984134136828430448920886329728587118060592410822231310372670473365290062462133979576416`
+- `compactStateChanges` len=144 hits=none: `RBMRBRMRBRMRBRBRMRMRMRBRBRBRMRBRBMRBRBRBRBRMRMRMRBRBRMRBRBRMRBRBRBRBRBRMRMRBRBRMRBRMRMRBRBRMRBRMBRMRMRMRBRBRBRBRBRBRBRBRBRBMBMRBRBRBMBRBRBRMBMRB`
+
+## Typeka Mix By Page
+
+- p75: runs=10, letters=200, instructionHits=none, text=`ax KeiserThey discount stuff in advance.collective panicthe black hole of the Cosmic Nowocoiners and shitcoiners,and even some Bitcoiners, consider this view toxic.Toxic Bitcoin MaximalistsVitalik ButerinGo Bitcoin Toxic Maximalist,`
+- p76: runs=9, letters=93, instructionHits=none, text=`George Clintonbeing ripped  central bankersnocoiners'El SalvadorMike NovogratzI don't really trust that guy.`
+- p77: runs=13, letters=158, instructionHits=none, text=`Jack Mallers'Roger VerBlock Size War Peter McCormack)Full Stop.51%Shitcoins, fiat and gold willstarve to death as the result of Bitcoin'sinsatiable conquest of all available energy.shitcoins`
+- p78: runs=5, letters=97, instructionHits=none, text=`The warmongers will start mining bitcoin for sure. The economy oflove is infinitelymore efficient thanhate and war.`
+- p79: runs=10, letters=190, instructionHits=first, text=`In so doing, our energy consumption drops to near zero because our natural tendency toward love and peace gets monetized for the first time in our existence.Stacy and I have been living in here for 10 years. Happy to share it all with you`
+
+## Non-Regular Variant Run Ledger
+
+- run 002 p75 `TYPEKA_BOLD` bold=True hl=cyan size=None len=1: `M`
+- run 003 p75 `MIX` bold=False hl=None size=None len=8: `ax Keiser`
+- run 007 p75 `TYPEKA_BOLD` bold=True hl=None size=22 len=1: `R`
+- run 008 p75 `TYPEKA_BOLD` bold=True hl=None size=None len=1: `e`
+- run 009 p75 `TYPEKA_BOLD` bold=True hl=None size=28 len=1: `a`
+- run 010 p75 `TYPEKA_BOLD` bold=True hl=None size=None len=1: `l`
+- run 011 p75 `TYPEKA_BOLD` bold=True hl=None size=28 len=1: `l`
+- run 012 p75 `TYPEKA_BOLD` bold=True hl=None size=32 len=1: `y`
+- run 013 p75 `TYPEKA_BOLD` bold=True hl=None size=28 len=0: `?`
+- run 016 p75 `TYPEKA_BOLD` bold=True hl=None size=32 len=3: `Yes`
+- run 017 p75 `TYPEKA_BOLD` bold=True hl=None size=32 len=0: `.`
+- run 020 p75 `MIX` bold=False hl=None size=None len=26: `They discount stuff in advance.`
+- run 023 p75 `TYPEKA_BOLD` bold=True hl=yellow size=None len=15: `They are the sum of`
+- run 024 p75 `TYPEKA_BOLD` bold=True hl=yellow size=None len=14: `all our neuroses.`
+- run 027 p75 `MIX` bold=False hl=None size=None len=15: `collective panic`
+- run 030 p75 `TYPEKA_BOLD` bold=True hl=None size=None len=17: `global unconscious`
+- run 032 p75 `TYPEKA_BOLD` bold=True hl=black size=None len=20: `money printers, banking`
+- run 033 p75 `TYPEKA_BOLD` bold=True hl=black size=None len=42: `terrorists, stock traders, central bank arsonists,`
+- run 037 p75 `MIX` bold=False hl=None size=None len=12: `the black hole`
+- run 038 p75 `MIX` bold=False hl=None size=None len=14: `of the Cosmic Now`
+- run 043 p75 `MIX` bold=False hl=None size=None len=22: `ocoiners and shitcoiners,`
+- run 044 p75 `MIX` bold=False hl=None size=None len=42: `and even some Bitcoiners, consider this view toxic.`
+- run 047 p75 `MIX` bold=False hl=None size=None len=23: `Toxic Bitcoin Maximalists`
+- run 050 p75 `TYPEKA_BOLD` bold=True hl=yellow size=None len=5: `Layer 1`
+- run 052 p75 `TYPEKA_BOLD` bold=True hl=None size=None len=8: `protocol`
+- run 054 p75 `TYPEKA_BOLD` bold=True hl=yellow size=None len=4: `Fact:`
+- run 057 p75 `TYPEKA_BOLD` bold=True hl=yellow size=None len=26: `It's Layer 1 for every great thing`
+- run 058 p75 `TYPEKA_BOLD` bold=True hl=yellow size=None len=33: `that's ever been invented or discovered.`
+- run 061 p75 `MIX` bold=False hl=None size=None len=14: `Vitalik Buterin`
+- run 063 p75 `TYPEKA_BOLD` bold=True hl=yellow size=None len=10: `"Maximalist"`
+- run 066 p75 `TYPEKA_BOLD` bold=True hl=black size=None len=22: `Don't fall for shitcoinery.`
+- run 067 p75 `TYPEKA_BOLD` bold=True hl=yellow size=None len=15: `Keep your dignity.`
+- run 068 p75 `MIX` bold=False hl=None size=28 len=24: `Go Bitcoin Toxic Maximalist,`
+- run 070 p75 `TYPEKA_BOLD` bold=True hl=yellow size=None len=5: `Layer 1`
+- run 072 p75 `TYPEKA_BOLD` bold=True hl=None size=None len=38: `You wouldn't be digging blindly with your bare`
+- run 073 p75 `TYPEKA_BOLD` bold=True hl=None size=None len=5: `hands`
+- run 074 p75 `TYPEKA_BOLD` bold=True hl=None size=None len=1: `i`
+- run 075 p75 `TYPEKA_BOLD` bold=True hl=None size=None len=34: `n the muck of Bitcoin's rabbit hole if this`
+- run 076 p75 `TYPEKA_BOLD` bold=True hl=None size=None len=10: `weren't true.`
+- run 080 p76 `TYPEKA_BOLD` bold=True hl=yellow size=None len=44: `Get some toxicity. Get some bitcoin. Open your heart to`
+- run 081 p76 `TYPEKA_BOLD` bold=True hl=yellow size=None len=7: `Bitcoin.`
+- run 083 p76 `TYPEKA_BOLD` bold=True hl=None size=None len=18: `UTXO ghetto up in here`
+- run 087 p76 `MIX` bold=False hl=None size=None len=13: `George Clinton`
+- run 090 p76 `MIX` bold=False hl=None size=None len=5: `being`
+- run 091 p76 `MIX` bold=False hl=None size=None len=6: `ripped`
+- run 093 p76 `MIX` bold=False hl=None size=None len=14: `central bankers`
+- run 095 p76 `TYPEKA_BOLD` bold=True hl=black size=None len=43: `Gotta be this way. Forty years of dumb post-1971 fiat money`
+- run 096 p76 `TYPEKA_BOLD` bold=True hl=black size=None len=8: `nonsense`
+- run 102 p76 `TYPEKA_BOLD` bold=True hl=None size=None len=11: `shitcoiners'`
+- run 104 p76 `MIX` bold=False hl=None size=None len=9: `nocoiners'`
+- run 109 p76 `TYPEKA_BOLD` bold=True hl=yellow size=None len=28: `by the rancid catnip of fiat money.`
+- run 115 p76 `TYPEKA_BOLD` bold=True hl=black size=None len=24: `It's a stun gun to the genitals.`
+- run 120 p76 `MIX` bold=False hl=None size=None len=10: `El Salvador`
+- run 124 p76 `TYPEKA_BOLD` bold=True hl=yellow size=None len=12: `"buying the dip`
+- run 125 p76 `TYPEKA_BOLD` bold=True hl=yellow size=None len=0: `.`
+- run 126 p76 `TYPEKA_BOLD` bold=True hl=yellow size=None len=0: `"`
+- run 128 p76 `TYPEKA_BOLD` bold=True hl=None size=None len=20: `President Nayib Bukele`
+- run 131 p76 `TYPEKA_BOLD` bold=True hl=black size=None len=7: `$1 billion`
+- run 137 p76 `TYPEKA_BOLD` bold=True hl=black size=None len=12: `“Volcano Bonds”`
+- run 140 p76 `TYPEKA_BOLD` bold=True hl=None size=None len=3: `IMF`
+- run 141 p76 `TYPEKA_BOLD` bold=True hl=None size=None len=4: `loan`
+- run 143 p76 `MIX` bold=False hl=None size=None len=4: `Mike`
+- run 144 p76 `MIX` bold=False hl=None size=None len=9: `Novogratz`
+- run 148 p76 `MIX` bold=False hl=None size=None len=23: `I don't really trust that guy.`
+- run 151 p76 `TYPEKA_BOLD` bold=True hl=yellow size=28 len=17: `shitcoiner at heart.`
+- run 154 p77 `TYPEKA_BOLD` bold=True hl=None size=None len=16: `hyperbitcoinized`
+- run 156 p77 `MIX` bold=False hl=None size=None len=11: `Jack Mallers'`
+- run 162 p77 `TYPEKA_BOLD` bold=True hl=yellow size=None len=38: `Toxic Bitcoin Maximalists within six months.`
+- run 164 p77 `TYPEKA_BOLD` bold=True hl=black size=None len=0: `(`
+- run 165 p77 `TYPEKA_BOLD` bold=True hl=black size=None len=45: `Sorry Bhutan, you fell for that snake oil salesmen over`
+- run 166 p77 `TYPEKA_BOLD` bold=True hl=black size=None len=5: `at XRP.`
+- run 170 p77 `TYPEKA_BOLD` bold=True hl=black size=None len=32: `Get ready to experience shitcoin hell.`
+- run 172 p77 `MIX` bold=False hl=None size=None len=8: `Roger Ver`
+- run 176 p77 `MIX` bold=False hl=None size=None len=5: `Block`
+- run 177 p77 `MIX` bold=False hl=None size=None len=7: `Size War`
+- run 180 p77 `TYPEKA_BOLD` bold=True hl=black size=None len=9: `Faketoshi`
+- run 183 p77 `TYPEKA_BOLD` bold=True hl=yellow size=None len=28: `who harass old women and children`
+- run 186 p77 `MIX` bold=False hl=None size=None len=14: `Peter McCormack)`
+- run 190 p77 `TYPEKA_BOLD` bold=True hl=black size=None len=11: `shitcoiners,`
+- run 191 p77 `TYPEKA_BOLD` bold=True hl=black size=None len=13: `useless Royals,`
+- run 195 p77 `MIX` bold=False hl=None size=36 len=4: `Full`
+- run 196 p77 `MIX` bold=False hl=None size=36 len=1: `S`
+- run 197 p77 `MIX` bold=False hl=None size=36 len=3: `top.`
+- run 198 p77 `TYPEKA_BOLD` bold=True hl=None size=None len=16: `EVERY SINGLE ONE OF`
+- run 199 p77 `TYPEKA_BOLD` bold=True hl=None size=None len=18: `THE BITCOIN WANNABES`
+- run 201 p77 `TYPEKA_BOLD` bold=True hl=None size=None len=12: `- BCH, BSV, ETH, XRP,`
+- run 202 p77 `TYPEKA_BOLD` bold=True hl=None size=None len=28: `ADA, AND 12,000 OTHER SHITCOINS, PLUS FIAT`
+- run 203 p77 `TYPEKA_BOLD` bold=True hl=None size=None len=34: `MONEY AND GOLD - IS FACING THE IGNOMINIOUS`
+- run 204 p77 `TYPEKA_BOLD` bold=True hl=None size=None len=33: `FATE OF DEMONETIZATION VERSUS BITCOIN.`
+- run 211 p77 `MIX` bold=False hl=None size=None len=0: `51%`
+- run 214 p77 `MIX` bold=False hl=None size=None len=24: `Shitcoins, fiat and gold will`
+- run 215 p77 `MIX` bold=False hl=None size=None len=34: `starve to death as the result of Bitcoin's`
+- run 216 p77 `MIX` bold=False hl=None size=None len=38: `insatiable conquest of all available energy.`
+- run 218 p77 `MIX` bold=False hl=None size=None len=9: `shitcoins`
+- run 222 p77 `TYPEKA_BOLD` bold=True hl=black size=None len=22: `It does this by monetizing,`
+- run 227 p78 `TYPEKA_BOLD` bold=True hl=None size=None len=30: `We've never had an economy and a money`
+- run 228 p78 `TYPEKA_BOLD` bold=True hl=None size=None len=38: `that incentivizes love before until bitcoin.`
+- run 229 p78 `TYPEKA_BOLD` bold=True hl=None size=None len=38: `Love opens up the collective unconscious and`
+- run 230 p78 `TYPEKA_BOLD` bold=True hl=None size=None len=36: `our joint inner cosmic being. The economy of`
+- run 231 p78 `TYPEKA_BOLD` bold=True hl=None size=None len=43: `love is infinitely more efficient than hate and war.`
+- run 233 p78 `TYPEKA_BOLD` bold=True hl=None size=None len=22: `Michael Saylor, Nic Carter,`
+- run 234 p78 `TYPEKA_BOLD` bold=True hl=None size=None len=9: `Marty Bent`
+- run 239 p78 `TYPEKA_BOLD` bold=True hl=yellow size=None len=17: `The numbers don't lie`
+- run 243 p78 `TYPEKA_BOLD` bold=True hl=black size=None len=12: `gargantuanly`
+- run 244 p78 `TYPEKA_BOLD` bold=True hl=black size=None len=8: `wasteful`
+- run 248 p78 `TYPEKA_BOLD` bold=True hl=black size=None len=5: `money`
+- run 249 p78 `TYPEKA_BOLD` bold=True hl=black size=None len=8: `printing`
+- run 252 p78 `TYPEKA_BOLD` bold=True hl=black size=None len=17: `wars to keep it going`
+- run 260 p78 `TYPEKA_BOLD` bold=True hl=None size=None len=21: `fiat money Ponzi schemes.`
+- run 262 p78 `TYPEKA_BOLD` bold=True hl=yellow size=None len=11: `America left $85`
+- run 264 p78 `TYPEKA_BOLD` bold=True hl=yellow size=None len=28: `worth of hate toys in Afghanistan,`
+- run 267 p78 `TYPEKA_BOLD` bold=True hl=yellow size=None len=0: `$`
+- run 268 p78 `TYPEKA_BOLD` bold=True hl=yellow size=None len=16: `2 trillion fiat cuck`
+- run 269 p78 `TYPEKA_BOLD` bold=True hl=yellow size=None len=0: `-`
+- run 270 p78 `TYPEKA_BOLD` bold=True hl=yellow size=None len=5: `bucks.`
+- run 271 p78 `TYPEKA_BOLD` bold=True hl=None size=20 len=19: `BITCOIN FIXES ALL THIS`
+- run 272 p78 `TYPEKA_BOLD` bold=True hl=None size=20 len=22: `by replacing oil-dripping,`
+- run 273 p78 `TYPEKA_BOLD` bold=True hl=None size=20 len=54: `corpse-ridden, poppy-harvesting fiat money with perfect bitcoin.`
+- run 274 p78 `TYPEKA_BOLD` bold=True hl=None size=20 len=21: `Remove the war incentive`
+- run 275 p78 `TYPEKA_BOLD` bold=True hl=None size=20 len=0: `,`
+- run 276 p78 `TYPEKA_BOLD` bold=True hl=None size=20 len=28: `and you remove the hate incentive.`
+- run 277 p78 `TYPEKA_BOLD` bold=True hl=None size=20 len=52: `Bitcoin fills in the gap with love; our most natural tendency if`
+- run 279 p78 `TYPEKA_BOLD` bold=True hl=None size=20 len=12: `given a chance.`
+- run 280 p78 `MIX` bold=False hl=None size=28 len=42: `The warmongers will start mining bitcoin for sure.`
+- run 281 p78 `TYPEKA_BOLD` bold=True hl=None size=22 len=3: `It's`
+- run 282 p78 `TYPEKA_BOLD` bold=True hl=None size=22 len=1: `a`
+- run 283 p78 `TYPEKA_BOLD` bold=True hl=None size=22 len=13: `fact baked into`
+- run 285 p78 `TYPEKA_BOLD` bold=True hl=yellow size=28 len=31: `the game-theorized Bitcoin protocol`
+- run 286 p78 `TYPEKA_BOLD` bold=True hl=None size=28 len=0: `,`
+- run 288 p78 `TYPEKA_BOLD` bold=True hl=None size=None len=33: `observable by anyone choosing to see it,`
+- run 289 p78 `TYPEKA_BOLD` bold=True hl=None size=None len=27: `right there in the Genesis Block.`
+- run 290 p78 `MIX` bold=False hl=None size=None len=12: `The economy of`
+- run 291 p78 `MIX` bold=False hl=None size=None len=16: `love is infinitely`
+- run 292 p78 `MIX` bold=False hl=None size=None len=17: `more efficient than`
+- run 293 p78 `MIX` bold=False hl=None size=None len=10: `hate and war.`
+- run 295 p79 `TYPEKA_BOLD` bold=True hl=black size=None len=14: `war and violence`
+- run 296 p79 `TYPEKA_BOLD` bold=True hl=black size=None len=7: `economy`
+- run 299 p79 `TYPEKA_BOLD` bold=True hl=yellow size=None len=23: `infinitely more efficient`
+- run 300 p79 `TYPEKA_BOLD` bold=True hl=yellow size=None len=43: `to transact and store wealth in than fiat, shitcoins`
+- run 301 p79 `TYPEKA_BOLD` bold=True hl=yellow size=None len=6: `or gold`
+- run 307 p79 `TYPEKA_BOLD` bold=True hl=yellow size=None len=25: `That's right, Bitcoin will take`
+- run 308 p79 `TYPEKA_BOLD` bold=True hl=yellow size=None len=12: `all the energy.`
+- run 310 p79 `MIX` bold=False hl=None size=None len=9: `In so doing`
+- run 311 p79 `MIX` bold=False hl=None size=None len=0: `,`
+- run 312 p79 `MIX` bold=False hl=None size=None len=20: `our energy consumption`
+- run 313 p79 `MIX` bold=False hl=None size=None len=46: `drops to near zero because our natural tendency toward`
+- run 314 p79 `MIX` bold=False hl=None size=None len=12: `love and peace`
+- run 315 p79 `MIX` bold=False hl=None size=None len=4: `gets`
+- run 316 p79 `MIX` bold=False hl=None size=None len=26: `monetized for the first time in`
+- run 317 p79 `MIX` bold=False hl=None size=None len=12: `our existence.`
+- run 319 p79 `TYPEKA_BOLD` bold=True hl=None size=None len=31: `Poverty disappears because the fear`
+- run 320 p79 `TYPEKA_BOLD` bold=True hl=None size=None len=43: `of being poor disappears because Bitcoin allows us`
+- run 321 p79 `TYPEKA_BOLD` bold=True hl=None size=None len=43: `to fully express ourselves individually in a cyber`
+- run 322 p79 `TYPEKA_BOLD` bold=True hl=None size=None len=39: `sea of billions of souls all looking to connect`
+- run 329 p79 `TYPEKA_BOLD` bold=True hl=None size=None len=17: `Bitcoin rabbit hole`
+- run 333 p79 `TYPEKA_BOLD` bold=True hl=yellow size=None len=49: `Everyone will live their own experience in the rabbit hole.`
+- run 334 p79 `TYPEKA_BOLD` bold=True hl=yellow size=None len=35: `We are getting our souls back and our minds`
+- run 336 p79 `MIX` bold=False hl=None size=None len=37: `Stacy and I have been living in here for 10 years.`
+- run 337 p79 `TYPEKA_BOLD` bold=True hl=None size=None len=16: `We've seen some shit.`
+- run 339 p79 `MIX` bold=False hl=None size=None len=24: `Happy to share it all with you`
+- run 342 p79 `TYPEKA_BOLD` bold=True hl=None size=None len=21: `as Bitcoin conquers fear`
+- run 343 p79 `TYPEKA_BOLD` bold=True hl=None size=None len=36: `and hate and replaces it with peace and love.`
+
+## Assessment
+
+- The user-supplied interpretation is supported: the old “weird partial bold” observation is mostly a Typeka Mix font-state observation.
+- `Article with Fonts.docm` does not expose a separate `Typeka Bold` font name; bold Typeka is represented as a bold formatting property on Typeka runs.
+- Typeka Mix by itself is phrase-like and stylistic, not a clean hidden message. Initials, last letters, run lengths, non-regular run order, and compact state changes do not produce a readable instruction.
+- This changes priority: stop treating the manual partial-bold stream as hand-selected key letters. Treat Typeka Mix and Typeka-bold as formatting layers that need an external selector, likely the page-76 mirror/highlight system.
+- The user-reported comparison that other magazine articles do not use Typeka should be treated as supporting evidence, but the local comparison PDFs are image-only so this script cannot verify font metadata from them.

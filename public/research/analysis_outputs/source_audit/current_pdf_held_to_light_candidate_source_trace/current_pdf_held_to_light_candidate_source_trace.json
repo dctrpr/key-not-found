@@ -1,0 +1,3702 @@
+{
+  "createdAt": "2026-05-24T07:29:44",
+  "scope": "Threshold-crossing exact PDF-native held-to-light composite rows traced back through orientation transforms to page-75 source words.",
+  "inputs": {
+    "polarityGate": "analysis_outputs/source_audit/current_pdf_held_to_light_composite_polarity_gate/current_pdf_held_to_light_composite_polarity_gate.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "decision": "current_pdf_held_to_light_candidate_trace_no_instruction_source",
+  "summary": {
+    "decision": "current_pdf_held_to_light_candidate_trace_no_instruction_source",
+    "candidateTraceRowCount": 23,
+    "activeTraceRowCount": 15,
+    "overdoseSlotTraceRowCount": 8,
+    "uniqueTraceShapeCount": 12,
+    "componentRowCount": 23,
+    "totalComponentCount": 203,
+    "totalComponentPixelCount": 574105,
+    "totalSourceOnlyPixelCount": 581806,
+    "sourceWordRowCount": 19,
+    "totalSourceWordHits": 110,
+    "strictInstructionRowCount": 0,
+    "totalStrictInstructionHits": 0,
+    "contextTermRowCount": 5,
+    "totalContextTermHits": 5,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0,
+    "fingerprint": "rows=23|active=15|slots=8|unique=12|componentRows=23|components=203|sourceOnly=581806|wordRows=19|words=110|strictRows=0|strict=0|contextRows=5|context=5|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "fingerprint": "rows=23|active=15|slots=8|unique=12|componentRows=23|components=203|sourceOnly=581806|wordRows=19|words=110|strictRows=0|strict=0|contextRows=5|context=5|sourceR3=0|triggers=0/9|selectors=0",
+  "traceRows": [
+    {
+      "kind": "active",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "back_mirror_rotate180",
+      "target": "B4",
+      "label": "B4",
+      "phrase": "$1 billion",
+      "slotIndex": null,
+      "slotLetter": null,
+      "referenceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "nativeBox": [
+        343.21,
+        2060.78,
+        554.1,
+        2101.17
+      ],
+      "sourceOnlyCoverage": 0.107701422,
+      "recomputedSourceOnlyCoverage": 0.106717107,
+      "sourceOnlyPixelCount": 909,
+      "componentCount": 12,
+      "componentPixelCount": 804,
+      "largestComponentPixelCount": 143,
+      "componentSourceRefBoxes": [
+        [
+          577.3882352941176,
+          850.6181818181818,
+          599.8352941176471,
+          865.7454545454545
+        ],
+        [
+          667.1764705882352,
+          850.6181818181818,
+          690.8705882352941,
+          865.7454545454545
+        ],
+        [
+          485.1058823529412,
+          852.9454545454545,
+          508.8,
+          865.7454545454545
+        ],
+        [
+          525.0117647058823,
+          851.7818181818182,
+          546.2117647058824,
+          865.7454545454545
+        ],
+        [
+          552.4470588235295,
+          849.4545454545454,
+          568.6588235294117,
+          865.7454545454545
+        ],
+        [
+          640.9882352941177,
+          850.6181818181818,
+          652.2117647058824,
+          865.7454545454545
+        ],
+        [
+          451.43529411764706,
+          850.6181818181818,
+          460.16470588235296,
+          863.4181818181818
+        ],
+        [
+          624.7764705882353,
+          854.1090909090909,
+          629.7647058823529,
+          865.7454545454545
+        ],
+        [
+          467.6470588235294,
+          856.4363636363636,
+          473.88235294117646,
+          865.7454545454545
+        ],
+        [
+          645.9764705882353,
+          842.4727272727272,
+          653.4588235294118,
+          849.4545454545454
+        ],
+        [
+          427.74117647058824,
+          849.4545454545454,
+          436.47058823529414,
+          857.5999999999999
+        ],
+        [
+          667.1764705882352,
+          842.4727272727272,
+          674.6588235294117,
+          850.6181818181818
+        ]
+      ],
+      "sourceTraceRefBox": [
+        385.74117647058824,
+        800.4727272727272,
+        732.8705882352941,
+        907.7454545454545
+      ],
+      "sourceWordHitCount": 6,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "The markets sensed Markets are like",
+      "sourceWords": [
+        {
+          "text": "The",
+          "token": "the",
+          "box": [
+            413.94,
+            832.46,
+            471.39,
+            872.54
+          ],
+          "index": 30,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "markets",
+          "token": "markets",
+          "box": [
+            506.66,
+            832.46,
+            660.09,
+            872.54
+          ],
+          "index": 31,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "sensed",
+          "token": "sensed",
+          "box": [
+            699.14,
+            832.46,
+            826.12,
+            872.54
+          ],
+          "index": 32,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Markets",
+          "token": "markets",
+          "box": [
+            414.95,
+            897.23,
+            566.62,
+            946.22
+          ],
+          "index": 40,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "are",
+          "token": "are",
+          "box": [
+            605.42,
+            897.23,
+            658.33,
+            946.22
+          ],
+          "index": 41,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "like",
+          "token": "like",
+          "box": [
+            691.08,
+            897.23,
+            765.25,
+            946.22
+          ],
+          "index": 42,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "back_mirror_rotate180",
+      "target": "O4",
+      "label": "O4",
+      "phrase": "buying the dip",
+      "slotIndex": null,
+      "slotLetter": null,
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "nativeBox": [
+        1069.72,
+        1870.86,
+        1444.2,
+        1912.11
+      ],
+      "sourceOnlyCoverage": 0.271944698,
+      "recomputedSourceOnlyCoverage": 0.269950088,
+      "sourceOnlyPixelCount": 4170,
+      "componentCount": 16,
+      "componentPixelCount": 4122,
+      "largestComponentPixelCount": 517,
+      "componentSourceRefBoxes": [
+        [
+          1516.4235294117648,
+          1046.1090909090908,
+          1566.3058823529411,
+          1079.8545454545454
+        ],
+        [
+          1757.105882352941,
+          1054.2545454545455,
+          1787.035294117647,
+          1086.8363636363636
+        ],
+        [
+          1592.4941176470588,
+          1054.2545454545455,
+          1617.4352941176471,
+          1078.6909090909091
+        ],
+        [
+          1714.7058823529412,
+          1053.090909090909,
+          1740.894117647059,
+          1078.6909090909091
+        ],
+        [
+          1686.0235294117647,
+          1053.090909090909,
+          1715.9529411764706,
+          1079.8545454545454
+        ],
+        [
+          1566.3058823529411,
+          1046.1090909090908,
+          1593.7411764705882,
+          1078.6909090909091
+        ],
+        [
+          1450.3294117647058,
+          1051.9272727272726,
+          1477.764705882353,
+          1082.181818181818
+        ],
+        [
+          1668.5647058823529,
+          1044.9454545454546,
+          1691.0117647058823,
+          1078.6909090909091
+        ],
+        [
+          1351.8117647058823,
+          1055.4181818181817,
+          1378.0,
+          1079.8545454545454
+        ],
+        [
+          1379.2470588235294,
+          1055.4181818181817,
+          1409.1764705882354,
+          1078.6909090909091
+        ],
+        [
+          1490.235294117647,
+          1055.4181818181817,
+          1513.929411764706,
+          1078.6909090909091
+        ],
+        [
+          1642.3764705882354,
+          1048.4363636363637,
+          1666.070588235294,
+          1079.8545454545454
+        ],
+        [
+          1619.929411764706,
+          1055.4181818181817,
+          1642.3764705882354,
+          1078.6909090909091
+        ],
+        [
+          1788.2823529411764,
+          1054.2545454545455,
+          1800.7529411764706,
+          1079.8545454545454
+        ],
+        [
+          1410.4235294117648,
+          1064.7272727272727,
+          1435.364705882353,
+          1079.8545454545454
+        ],
+        [
+          1409.1764705882354,
+          1056.581818181818,
+          1422.894117647059,
+          1068.2181818181818
+        ]
+      ],
+      "sourceTraceRefBox": [
+        1309.8117647058823,
+        1002.9454545454546,
+        1842.7529411764706,
+        1128.8363636363636
+      ],
+      "sourceWordHitCount": 12,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "global economy. RSyiERSitieisumios were publishing the white paper and a collective panic",
+      "sourceWords": [
+        {
+          "text": "global",
+          "token": "global",
+          "box": [
+            1186.91,
+            969.84,
+            1310.43,
+            1018.82
+          ],
+          "index": 57,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "economy.",
+          "token": "economy",
+          "box": [
+            1346.14,
+            969.84,
+            1513.65,
+            1018.82
+          ],
+          "index": 58,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "RSyiERSitieisumios",
+          "token": "rsyiersitieisumios",
+          "box": [
+            1549.71,
+            969.84,
+            2001.3,
+            1018.82
+          ],
+          "index": 59,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "were",
+          "token": "were",
+          "box": [
+            1242.34,
+            1042.44,
+            1319.73,
+            1091.42
+          ],
+          "index": 63,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "publishing",
+          "token": "publishing",
+          "box": [
+            1356.21,
+            1042.44,
+            1579.76,
+            1091.42
+          ],
+          "index": 64,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "the",
+          "token": "the",
+          "box": [
+            1617.23,
+            1042.44,
+            1671.65,
+            1091.42
+          ],
+          "index": 65,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "white",
+          "token": "white",
+          "box": [
+            1704.91,
+            1042.44,
+            1804.0,
+            1091.42
+          ],
+          "index": 66,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "paper",
+          "token": "paper",
+          "box": [
+            1839.95,
+            1042.44,
+            1940.73,
+            1091.42
+          ],
+          "index": 67,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "and",
+          "token": "and",
+          "box": [
+            1390.48,
+            1119.49,
+            1449.43,
+            1164.02
+          ],
+          "index": 77,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "a",
+          "token": "a",
+          "box": [
+            1485.21,
+            1119.49,
+            1497.3,
+            1164.02
+          ],
+          "index": 78,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "collective",
+          "token": "collective",
+          "box": [
+            1524.51,
+            1119.49,
+            1738.9,
+            1164.02
+          ],
+          "index": 79,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "panic",
+          "token": "panic",
+          "box": [
+            1777.47,
+            1119.49,
+            1881.6,
+            1164.02
+          ],
+          "index": 80,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "back_mirror_rotate180",
+      "target": "O5",
+      "label": "O5",
+      "phrase": "shitcoiner at heart",
+      "slotIndex": null,
+      "slotLetter": null,
+      "referenceBox": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "nativeBox": [
+        833.96,
+        2519.69,
+        1331.93,
+        2562.66
+      ],
+      "sourceOnlyCoverage": 0.112169609,
+      "recomputedSourceOnlyCoverage": 0.112254684,
+      "sourceOnlyPixelCount": 2402,
+      "componentCount": 4,
+      "componentPixelCount": 2394,
+      "largestComponentPixelCount": 965,
+      "componentSourceRefBoxes": [
+        [
+          1212.1411764705883,
+          300.2181818181818,
+          1283.2235294117647,
+          331.6363636363636
+        ],
+        [
+          1042.5411764705882,
+          308.3636363636364,
+          1106.1411764705883,
+          331.6363636363636
+        ],
+        [
+          1147.2941176470588,
+          304.8727272727273,
+          1193.4352941176471,
+          331.6363636363636
+        ],
+        [
+          1245.8117647058823,
+          318.8363636363636,
+          1264.5176470588235,
+          331.6363636363636
+        ]
+      ],
+      "sourceTraceRefBox": [
+        1000.5411764705882,
+        258.2181818181818,
+        1325.2235294117647,
+        373.6363636363636
+      ],
+      "sourceWordHitCount": 2,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "TOXIC AF",
+      "sourceWords": [
+        {
+          "text": "TOXIC",
+          "token": "toxic",
+          "box": [
+            847.64,
+            312.43,
+            1107.29,
+            416.72
+          ],
+          "index": 7,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "AF",
+          "token": "af",
+          "box": [
+            1180.17,
+            305.2,
+            1277.75,
+            402.61
+          ],
+          "index": 8,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "kind": "overdose_slot",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "back_mirror_rotate180",
+      "target": "slot7_E",
+      "label": "slot7_E_E",
+      "phrase": null,
+      "slotIndex": 7,
+      "slotLetter": "E",
+      "referenceBox": [
+        2005.5697177074398,
+        2176.81,
+        2250.0,
+        3023.73
+      ],
+      "nativeBox": [
+        1608.24,
+        1870.7,
+        1804.25,
+        2598.52
+      ],
+      "sourceOnlyCoverage": 0.292288069,
+      "recomputedSourceOnlyCoverage": 0.29234544,
+      "sourceOnlyPixelCount": 41706,
+      "componentCount": 7,
+      "componentPixelCount": 41171,
+      "largestComponentPixelCount": 23748,
+      "componentSourceRefBoxes": [
+        [
+          2129.9764705882353,
+          691.1999999999999,
+          2249.6941176470586,
+          1086.8363636363636
+        ],
+        [
+          2164.894117647059,
+          239.7090909090909,
+          2249.6941176470586,
+          653.9636363636363
+        ],
+        [
+          2005.270588235294,
+          908.8,
+          2021.4823529411765,
+          954.1818181818181
+        ],
+        [
+          2141.2,
+          645.8181818181818,
+          2169.8823529411766,
+          662.1090909090909
+        ],
+        [
+          2120.0,
+          1050.7636363636364,
+          2132.470588235294,
+          1060.0727272727272
+        ],
+        [
+          2157.4117647058824,
+          907.6363636363636,
+          2168.635294117647,
+          915.7818181818182
+        ],
+        [
+          2161.1529411764704,
+          686.5454545454545,
+          2171.1294117647058,
+          693.5272727272727
+        ]
+      ],
+      "sourceTraceRefBox": [
+        1963.270588235294,
+        197.7090909090909,
+        2291.6941176470586,
+        1128.8363636363636
+      ],
+      "sourceWordHitCount": 1,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "RSyiERSitieisumios",
+      "sourceWords": [
+        {
+          "text": "RSyiERSitieisumios",
+          "token": "rsyiersitieisumios",
+          "box": [
+            1549.71,
+            969.84,
+            2001.3,
+            1018.82
+          ],
+          "index": 59,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "front_rotate180",
+      "target": "O4",
+      "label": "O4",
+      "phrase": "buying the dip",
+      "slotIndex": null,
+      "slotLetter": null,
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "nativeBox": [
+        1069.72,
+        1870.86,
+        1444.2,
+        1912.11
+      ],
+      "sourceOnlyCoverage": 0.229555237,
+      "recomputedSourceOnlyCoverage": 0.227871537,
+      "sourceOnlyPixelCount": 3520,
+      "componentCount": 15,
+      "componentPixelCount": 3442,
+      "largestComponentPixelCount": 693,
+      "componentSourceRefBoxes": [
+        [
+          814.3294117647059,
+          1046.1090909090908,
+          882.9176470588235,
+          1079.8545454545454
+        ],
+        [
+          921.5764705882353,
+          1054.2545454545455,
+          951.5058823529412,
+          1085.6727272727271
+        ],
+        [
+          785.6470588235294,
+          1054.2545454545455,
+          814.3294117647059,
+          1077.5272727272727
+        ],
+        [
+          1030.070588235294,
+          1053.090909090909,
+          1052.5176470588235,
+          1078.6909090909091
+        ],
+        [
+          973.9529411764706,
+          1054.2545454545455,
+          1002.635294117647,
+          1077.5272727272727
+        ],
+        [
+          950.2588235294118,
+          1054.2545454545455,
+          973.9529411764706,
+          1078.6909090909091
+        ],
+        [
+          1179.7176470588236,
+          1053.090909090909,
+          1202.164705882353,
+          1086.8363636363636
+        ],
+        [
+          884.1647058823529,
+          1053.090909090909,
+          909.1058823529412,
+          1077.5272727272727
+        ],
+        [
+          1067.4823529411765,
+          1055.4181818181817,
+          1091.1764705882354,
+          1078.6909090909091
+        ],
+        [
+          1003.8823529411765,
+          1054.2545454545455,
+          1027.5764705882352,
+          1077.5272727272727
+        ],
+        [
+          743.2470588235294,
+          1057.7454545454545,
+          770.6823529411765,
+          1065.890909090909
+        ],
+        [
+          1137.3176470588235,
+          1055.4181818181817,
+          1153.5294117647059,
+          1078.6909090909091
+        ],
+        [
+          1153.5294117647059,
+          1055.4181818181817,
+          1172.235294117647,
+          1077.5272727272727
+        ],
+        [
+          1091.1764705882354,
+          1064.7272727272727,
+          1111.129411764706,
+          1078.6909090909091
+        ],
+        [
+          1097.4117647058824,
+          1047.2727272727273,
+          1114.8705882352942,
+          1058.9090909090908
+        ]
+      ],
+      "sourceTraceRefBox": [
+        701.2470588235294,
+        1004.1090909090908,
+        1244.164705882353,
+        1128.8363636363636
+      ],
+      "sourceWordHitCount": 14,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "nervous system of the global aiaourmieurosess The cypherpunks were time after years of trying",
+      "sourceWords": [
+        {
+          "text": "nervous",
+          "token": "nervous",
+          "box": [
+            684.03,
+            969.84,
+            834.82,
+            1018.82
+          ],
+          "index": 53,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "system",
+          "token": "system",
+          "box": [
+            874.5,
+            969.84,
+            1001.48,
+            1018.82
+          ],
+          "index": 54,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "of",
+          "token": "of",
+          "box": [
+            1038.76,
+            969.84,
+            1069.0,
+            1018.82
+          ],
+          "index": 55,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "the",
+          "token": "the",
+          "box": [
+            1098.22,
+            969.84,
+            1152.65,
+            1018.82
+          ],
+          "index": 56,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "global",
+          "token": "global",
+          "box": [
+            1186.91,
+            969.84,
+            1310.43,
+            1018.82
+          ],
+          "index": 57,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "aiaourmieurosess",
+          "token": "aiaourmieurosess",
+          "box": [
+            413.94,
+            1042.44,
+            808.51,
+            1091.42
+          ],
+          "index": 60,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "The",
+          "token": "the",
+          "box": [
+            847.29,
+            1042.44,
+            904.73,
+            1091.42
+          ],
+          "index": 61,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "cypherpunks",
+          "token": "cypherpunks",
+          "box": [
+            940.0,
+            1042.44,
+            1202.36,
+            1091.42
+          ],
+          "index": 62,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "were",
+          "token": "were",
+          "box": [
+            1242.34,
+            1042.44,
+            1319.73,
+            1091.42
+          ],
+          "index": 63,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "time",
+          "token": "time",
+          "box": [
+            694.1,
+            1119.49,
+            769.89,
+            1164.02
+          ],
+          "index": 70,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "after",
+          "token": "after",
+          "box": [
+            853.33,
+            1119.49,
+            949.91,
+            1164.02
+          ],
+          "index": 72,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "years",
+          "token": "years",
+          "box": [
+            983.34,
+            1119.49,
+            1084.95,
+            1164.02
+          ],
+          "index": 73,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "of",
+          "token": "of",
+          "box": [
+            1121.4,
+            1119.49,
+            1151.64,
+            1164.02
+          ],
+          "index": 74,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "trying",
+          "token": "trying",
+          "box": [
+            1180.86,
+            1119.49,
+            1306.98,
+            1164.02
+          ],
+          "index": 75,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "front_rotate180",
+      "target": "O5",
+      "label": "O5",
+      "phrase": "shitcoiner at heart",
+      "slotIndex": null,
+      "slotLetter": null,
+      "referenceBox": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "nativeBox": [
+        833.96,
+        2519.69,
+        1331.93,
+        2562.66
+      ],
+      "sourceOnlyCoverage": 0.186420099,
+      "recomputedSourceOnlyCoverage": 0.186561489,
+      "sourceOnlyPixelCount": 3992,
+      "componentCount": 6,
+      "componentPixelCount": 3984,
+      "largestComponentPixelCount": 1278,
+      "componentSourceRefBoxes": [
+        [
+          921.5764705882353,
+          309.5272727272727,
+          1040.0470588235294,
+          331.6363636363636
+        ],
+        [
+          1212.1411764705883,
+          300.2181818181818,
+          1283.2235294117647,
+          331.6363636363636
+        ],
+        [
+          1042.5411764705882,
+          308.3636363636364,
+          1106.1411764705883,
+          331.6363636363636
+        ],
+        [
+          1147.2941176470588,
+          304.8727272727273,
+          1193.4352941176471,
+          331.6363636363636
+        ],
+        [
+          882.9176470588235,
+          315.3454545454545,
+          921.5764705882353,
+          331.6363636363636
+        ],
+        [
+          1245.8117647058823,
+          318.8363636363636,
+          1264.5176470588235,
+          331.6363636363636
+        ]
+      ],
+      "sourceTraceRefBox": [
+        840.9176470588235,
+        258.2181818181818,
+        1325.2235294117647,
+        373.6363636363636
+      ],
+      "sourceWordHitCount": 2,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "TOXIC AF",
+      "sourceWords": [
+        {
+          "text": "TOXIC",
+          "token": "toxic",
+          "box": [
+            847.64,
+            312.43,
+            1107.29,
+            416.72
+          ],
+          "index": 7,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "AF",
+          "token": "af",
+          "box": [
+            1180.17,
+            305.2,
+            1277.75,
+            402.61
+          ],
+          "index": 8,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "kind": "overdose_slot",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "front_rotate180",
+      "target": "slot0_O",
+      "label": "slot0_O_O",
+      "phrase": null,
+      "slotIndex": 0,
+      "slotLetter": "O",
+      "referenceBox": [
+        294.0,
+        2176.81,
+        538.5697177074414,
+        3023.73
+      ],
+      "nativeBox": [
+        235.75,
+        1870.7,
+        431.87,
+        2598.52
+      ],
+      "sourceOnlyCoverage": 0.312240693,
+      "recomputedSourceOnlyCoverage": 0.312126816,
+      "sourceOnlyPixelCount": 44553,
+      "componentCount": 4,
+      "componentPixelCount": 44029,
+      "largestComponentPixelCount": 43544,
+      "componentSourceRefBoxes": [
+        [
+          2129.9764705882353,
+          239.7090909090909,
+          2249.6941176470586,
+          1086.8363636363636
+        ],
+        [
+          2005.270588235294,
+          909.9636363636363,
+          2021.4823529411765,
+          954.1818181818181
+        ],
+        [
+          2120.0,
+          1050.7636363636364,
+          2132.470588235294,
+          1060.0727272727272
+        ],
+        [
+          2157.4117647058824,
+          907.6363636363636,
+          2168.635294117647,
+          915.7818181818182
+        ]
+      ],
+      "sourceTraceRefBox": [
+        1963.270588235294,
+        197.7090909090909,
+        2291.6941176470586,
+        1128.8363636363636
+      ],
+      "sourceWordHitCount": 1,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "RSyiERSitieisumios",
+      "sourceWords": [
+        {
+          "text": "RSyiERSitieisumios",
+          "token": "rsyiersitieisumios",
+          "box": [
+            1549.71,
+            969.84,
+            2001.3,
+            1018.82
+          ],
+          "index": 59,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "physical_back_mirror",
+      "target": "O4",
+      "label": "O4",
+      "phrase": "buying the dip",
+      "slotIndex": null,
+      "slotLetter": null,
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "nativeBox": [
+        1069.72,
+        1870.86,
+        1444.2,
+        1912.11
+      ],
+      "sourceOnlyCoverage": 0.579953046,
+      "recomputedSourceOnlyCoverage": 0.575699313,
+      "sourceOnlyPixelCount": 8893,
+      "componentCount": 2,
+      "componentPixelCount": 8873,
+      "largestComponentPixelCount": 8845,
+      "componentSourceRefBoxes": [
+        [
+          743.2470588235294,
+          2177.163636363636,
+          1117.364705882353,
+          2219.0545454545454
+        ],
+        [
+          1008.8705882352941,
+          2185.3090909090906,
+          1020.0941176470589,
+          2191.1272727272726
+        ]
+      ],
+      "sourceTraceRefBox": [
+        701.2470588235294,
+        2135.163636363636,
+        1159.364705882353,
+        2261.0545454545454
+      ],
+      "sourceWordHitCount": 8,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "strictInstructionTerms": [],
+      "contextTerms": [
+        "buterin"
+      ],
+      "sourceTextPreview": "in by riding Bitcoins Buterin came up with",
+      "sourceWords": [
+        {
+          "text": "in",
+          "token": "in",
+          "box": [
+            682.01,
+            2122.21,
+            711.57,
+            2162.29
+          ],
+          "index": 177,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "by",
+          "token": "by",
+          "box": [
+            741.47,
+            2122.21,
+            775.06,
+            2162.29
+          ],
+          "index": 178,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "riding",
+          "token": "riding",
+          "box": [
+            806.98,
+            2122.21,
+            928.77,
+            2162.29
+          ],
+          "index": 179,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Bitcoins",
+          "token": "bitcoins",
+          "box": [
+            965.2,
+            2122.21,
+            1129.13,
+            2162.29
+          ],
+          "index": 180,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Buterin",
+          "token": "buterin",
+          "box": [
+            696.12,
+            2186.99,
+            853.08,
+            2235.97
+          ],
+          "index": 189,
+          "strictInstruction": false,
+          "contextTerm": true
+        },
+        {
+          "text": "came",
+          "token": "came",
+          "box": [
+            893.64,
+            2186.99,
+            975.88,
+            2235.97
+          ],
+          "index": 190,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "up",
+          "token": "up",
+          "box": [
+            1011.55,
+            2186.99,
+            1045.15,
+            2235.97
+          ],
+          "index": 191,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "with",
+          "token": "with",
+          "box": [
+            1078.07,
+            2186.99,
+            1155.47,
+            2235.97
+          ],
+          "index": 192,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "kind": "overdose_slot",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "physical_back_mirror",
+      "target": "slot0_O",
+      "label": "slot0_O_O",
+      "phrase": null,
+      "slotIndex": 0,
+      "slotLetter": "O",
+      "referenceBox": [
+        294.0,
+        2176.81,
+        538.5697177074414,
+        3023.73
+      ],
+      "nativeBox": [
+        235.75,
+        1870.7,
+        431.87,
+        2598.52
+      ],
+      "sourceOnlyCoverage": 0.634145829,
+      "recomputedSourceOnlyCoverage": 0.633914551,
+      "sourceOnlyPixelCount": 90485,
+      "componentCount": 15,
+      "componentPixelCount": 89259,
+      "largestComponentPixelCount": 88667,
+      "componentSourceRefBoxes": [
+        [
+          2060.141176470588,
+          2177.163636363636,
+          2249.6941176470586,
+          3024.290909090909
+        ],
+        [
+          2088.823529411765,
+          2216.7272727272725,
+          2107.529411764706,
+          2230.690909090909
+        ],
+        [
+          2086.329411764706,
+          2615.854545454545,
+          2098.8,
+          2630.981818181818
+        ],
+        [
+          2091.3176470588237,
+          2344.7272727272725,
+          2103.788235294118,
+          2358.690909090909
+        ],
+        [
+          2086.329411764706,
+          2694.981818181818,
+          2096.3058823529414,
+          2718.254545454545
+        ],
+        [
+          2073.858823529412,
+          2508.7999999999997,
+          2087.576470588235,
+          2523.927272727273
+        ],
+        [
+          2076.3529411764707,
+          2700.7999999999997,
+          2086.329411764706,
+          2713.6
+        ],
+        [
+          2088.823529411765,
+          2551.854545454545,
+          2098.8,
+          2561.163636363636
+        ],
+        [
+          2052.6588235294116,
+          2783.418181818182,
+          2063.8823529411766,
+          2791.5636363636363
+        ],
+        [
+          2057.6470588235293,
+          2269.090909090909,
+          2068.8705882352942,
+          2278.4
+        ],
+        [
+          2067.6235294117646,
+          2250.4727272727273,
+          2080.0941176470587,
+          2256.290909090909
+        ],
+        [
+          2045.1764705882354,
+          2745.018181818182,
+          2060.141176470588,
+          2753.163636363636
+        ],
+        [
+          2092.564705882353,
+          2277.2363636363634,
+          2100.0470588235294,
+          2288.8727272727274
+        ],
+        [
+          2040.1882352941177,
+          2803.2,
+          2050.164705882353,
+          2810.181818181818
+        ],
+        [
+          2061.3882352941177,
+          2933.5272727272727,
+          2070.1176470588234,
+          2940.509090909091
+        ]
+      ],
+      "sourceTraceRefBox": [
+        1998.1882352941177,
+        2135.163636363636,
+        2291.6941176470586,
+        3066.290909090909
+      ],
+      "sourceWordHitCount": 0,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "",
+      "sourceWords": []
+    },
+    {
+      "kind": "active",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "same_side_no_mirror",
+      "target": "B4",
+      "label": "B4",
+      "phrase": "$1 billion",
+      "slotIndex": null,
+      "slotLetter": null,
+      "referenceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "nativeBox": [
+        343.21,
+        2060.78,
+        554.1,
+        2101.17
+      ],
+      "sourceOnlyCoverage": 0.174526066,
+      "recomputedSourceOnlyCoverage": 0.172931022,
+      "sourceOnlyPixelCount": 1473,
+      "componentCount": 4,
+      "componentPixelCount": 1438,
+      "largestComponentPixelCount": 1342,
+      "componentSourceRefBoxes": [
+        [
+          513.7882352941176,
+          2398.254545454545,
+          690.8705882352941,
+          2411.0545454545454
+        ],
+        [
+          618.5411764705882,
+          2440.1454545454544,
+          634.7529411764706,
+          2444.7999999999997
+        ],
+        [
+          438.964705882353,
+          2441.3090909090906,
+          455.1764705882353,
+          2444.7999999999997
+        ],
+        [
+          427.74117647058824,
+          2440.1454545454544,
+          437.71764705882356,
+          2444.7999999999997
+        ]
+      ],
+      "sourceTraceRefBox": [
+        385.74117647058824,
+        2356.254545454545,
+        732.8705882352941,
+        2486.7999999999997
+      ],
+      "sourceWordHitCount": 6,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "strictInstructionTerms": [],
+      "contextTerms": [
+        "bitcoin"
+      ],
+      "sourceTextPreview": "Don't fa Keep your Go Bitcoin",
+      "sourceWords": [
+        {
+          "text": "Don't",
+          "token": "dont",
+          "box": [
+            518.75,
+            2335.57,
+            580.06,
+            2380.1
+          ],
+          "index": 206,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "fa",
+          "token": "fa",
+          "box": [
+            672.94,
+            2335.57,
+            689.06,
+            2380.1
+          ],
+          "index": 207,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Keep",
+          "token": "keep",
+          "box": [
+            484.49,
+            2408.71,
+            586.88,
+            2466.6
+          ],
+          "index": 210,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "your",
+          "token": "your",
+          "box": [
+            617.51,
+            2408.71,
+            711.04,
+            2466.6
+          ],
+          "index": 211,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Go",
+          "token": "go",
+          "box": [
+            506.66,
+            2478.46,
+            546.97,
+            2527.45
+          ],
+          "index": 213,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Bitcoin",
+          "token": "bitcoin",
+          "box": [
+            586.27,
+            2478.46,
+            758.23,
+            2527.45
+          ],
+          "index": 214,
+          "strictInstruction": false,
+          "contextTerm": true
+        }
+      ]
+    },
+    {
+      "kind": "overdose_slot",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "same_side_no_mirror",
+      "target": "slot7_E",
+      "label": "slot7_E_E",
+      "phrase": null,
+      "slotIndex": 7,
+      "slotLetter": "E",
+      "referenceBox": [
+        2005.5697177074398,
+        2176.81,
+        2250.0,
+        3023.73
+      ],
+      "nativeBox": [
+        1608.24,
+        1870.7,
+        1804.25,
+        2598.52
+      ],
+      "sourceOnlyCoverage": 0.617494113,
+      "recomputedSourceOnlyCoverage": 0.617615317,
+      "sourceOnlyPixelCount": 88109,
+      "componentCount": 11,
+      "componentPixelCount": 86847,
+      "largestComponentPixelCount": 86512,
+      "componentSourceRefBoxes": [
+        [
+          2061.3882352941177,
+          2177.163636363636,
+          2249.6941176470586,
+          3024.290909090909
+        ],
+        [
+          2075.105882352941,
+          2202.763636363636,
+          2088.823529411765,
+          2215.5636363636363
+        ],
+        [
+          2073.858823529412,
+          2508.7999999999997,
+          2087.576470588235,
+          2523.927272727273
+        ],
+        [
+          2052.6588235294116,
+          2783.418181818182,
+          2063.8823529411766,
+          2791.5636363636363
+        ],
+        [
+          2057.6470588235293,
+          2269.090909090909,
+          2068.8705882352942,
+          2278.4
+        ],
+        [
+          2067.6235294117646,
+          2250.4727272727273,
+          2080.0941176470587,
+          2256.290909090909
+        ],
+        [
+          2045.1764705882354,
+          2745.018181818182,
+          2060.141176470588,
+          2753.163636363636
+        ],
+        [
+          2075.105882352941,
+          2359.854545454545,
+          2083.835294117647,
+          2372.6545454545453
+        ],
+        [
+          2077.6,
+          2270.254545454545,
+          2087.576470588235,
+          2277.2363636363634
+        ],
+        [
+          2061.3882352941177,
+          2933.5272727272727,
+          2070.1176470588234,
+          2940.509090909091
+        ],
+        [
+          2082.5882352941176,
+          2278.4,
+          2091.3176470588237,
+          2284.2181818181816
+        ]
+      ],
+      "sourceTraceRefBox": [
+        2003.1764705882354,
+        2135.163636363636,
+        2291.6941176470586,
+        3066.290909090909
+      ],
+      "sourceWordHitCount": 0,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "",
+      "sourceWords": []
+    },
+    {
+      "kind": "active",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "back_mirror_rotate180",
+      "target": "B4",
+      "label": "B4",
+      "phrase": "$1 billion",
+      "slotIndex": null,
+      "slotLetter": null,
+      "referenceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "nativeBox": [
+        343.21,
+        2060.78,
+        554.1,
+        2101.17
+      ],
+      "sourceOnlyCoverage": 0.107701422,
+      "recomputedSourceOnlyCoverage": 0.106717107,
+      "sourceOnlyPixelCount": 909,
+      "componentCount": 12,
+      "componentPixelCount": 804,
+      "largestComponentPixelCount": 143,
+      "componentSourceRefBoxes": [
+        [
+          577.3882352941176,
+          850.6181818181818,
+          599.8352941176471,
+          865.7454545454545
+        ],
+        [
+          667.1764705882352,
+          850.6181818181818,
+          690.8705882352941,
+          865.7454545454545
+        ],
+        [
+          485.1058823529412,
+          852.9454545454545,
+          508.8,
+          865.7454545454545
+        ],
+        [
+          525.0117647058823,
+          851.7818181818182,
+          546.2117647058824,
+          865.7454545454545
+        ],
+        [
+          552.4470588235295,
+          849.4545454545454,
+          568.6588235294117,
+          865.7454545454545
+        ],
+        [
+          640.9882352941177,
+          850.6181818181818,
+          652.2117647058824,
+          865.7454545454545
+        ],
+        [
+          451.43529411764706,
+          850.6181818181818,
+          460.16470588235296,
+          863.4181818181818
+        ],
+        [
+          624.7764705882353,
+          854.1090909090909,
+          629.7647058823529,
+          865.7454545454545
+        ],
+        [
+          467.6470588235294,
+          856.4363636363636,
+          473.88235294117646,
+          865.7454545454545
+        ],
+        [
+          645.9764705882353,
+          842.4727272727272,
+          653.4588235294118,
+          849.4545454545454
+        ],
+        [
+          427.74117647058824,
+          849.4545454545454,
+          436.47058823529414,
+          857.5999999999999
+        ],
+        [
+          667.1764705882352,
+          842.4727272727272,
+          674.6588235294117,
+          850.6181818181818
+        ]
+      ],
+      "sourceTraceRefBox": [
+        385.74117647058824,
+        800.4727272727272,
+        732.8705882352941,
+        907.7454545454545
+      ],
+      "sourceWordHitCount": 6,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "The markets sensed Markets are like",
+      "sourceWords": [
+        {
+          "text": "The",
+          "token": "the",
+          "box": [
+            413.94,
+            832.46,
+            471.39,
+            872.54
+          ],
+          "index": 30,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "markets",
+          "token": "markets",
+          "box": [
+            506.66,
+            832.46,
+            660.09,
+            872.54
+          ],
+          "index": 31,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "sensed",
+          "token": "sensed",
+          "box": [
+            699.14,
+            832.46,
+            826.12,
+            872.54
+          ],
+          "index": 32,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Markets",
+          "token": "markets",
+          "box": [
+            414.95,
+            897.23,
+            566.62,
+            946.22
+          ],
+          "index": 40,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "are",
+          "token": "are",
+          "box": [
+            605.42,
+            897.23,
+            658.33,
+            946.22
+          ],
+          "index": 41,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "like",
+          "token": "like",
+          "box": [
+            691.08,
+            897.23,
+            765.25,
+            946.22
+          ],
+          "index": 42,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "back_mirror_rotate180",
+      "target": "O4",
+      "label": "O4",
+      "phrase": "buying the dip",
+      "slotIndex": null,
+      "slotLetter": null,
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "nativeBox": [
+        1069.72,
+        1870.86,
+        1444.2,
+        1912.11
+      ],
+      "sourceOnlyCoverage": 0.271944698,
+      "recomputedSourceOnlyCoverage": 0.269950088,
+      "sourceOnlyPixelCount": 4170,
+      "componentCount": 16,
+      "componentPixelCount": 4122,
+      "largestComponentPixelCount": 517,
+      "componentSourceRefBoxes": [
+        [
+          1516.4235294117648,
+          1046.1090909090908,
+          1566.3058823529411,
+          1079.8545454545454
+        ],
+        [
+          1757.105882352941,
+          1054.2545454545455,
+          1787.035294117647,
+          1086.8363636363636
+        ],
+        [
+          1592.4941176470588,
+          1054.2545454545455,
+          1617.4352941176471,
+          1078.6909090909091
+        ],
+        [
+          1714.7058823529412,
+          1053.090909090909,
+          1740.894117647059,
+          1078.6909090909091
+        ],
+        [
+          1686.0235294117647,
+          1053.090909090909,
+          1715.9529411764706,
+          1079.8545454545454
+        ],
+        [
+          1566.3058823529411,
+          1046.1090909090908,
+          1593.7411764705882,
+          1078.6909090909091
+        ],
+        [
+          1450.3294117647058,
+          1051.9272727272726,
+          1477.764705882353,
+          1082.181818181818
+        ],
+        [
+          1668.5647058823529,
+          1044.9454545454546,
+          1691.0117647058823,
+          1078.6909090909091
+        ],
+        [
+          1351.8117647058823,
+          1055.4181818181817,
+          1378.0,
+          1079.8545454545454
+        ],
+        [
+          1379.2470588235294,
+          1055.4181818181817,
+          1409.1764705882354,
+          1078.6909090909091
+        ],
+        [
+          1490.235294117647,
+          1055.4181818181817,
+          1513.929411764706,
+          1078.6909090909091
+        ],
+        [
+          1642.3764705882354,
+          1048.4363636363637,
+          1666.070588235294,
+          1079.8545454545454
+        ],
+        [
+          1619.929411764706,
+          1055.4181818181817,
+          1642.3764705882354,
+          1078.6909090909091
+        ],
+        [
+          1788.2823529411764,
+          1054.2545454545455,
+          1800.7529411764706,
+          1079.8545454545454
+        ],
+        [
+          1410.4235294117648,
+          1064.7272727272727,
+          1435.364705882353,
+          1079.8545454545454
+        ],
+        [
+          1409.1764705882354,
+          1056.581818181818,
+          1422.894117647059,
+          1068.2181818181818
+        ]
+      ],
+      "sourceTraceRefBox": [
+        1309.8117647058823,
+        1002.9454545454546,
+        1842.7529411764706,
+        1128.8363636363636
+      ],
+      "sourceWordHitCount": 12,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "global economy. RSyiERSitieisumios were publishing the white paper and a collective panic",
+      "sourceWords": [
+        {
+          "text": "global",
+          "token": "global",
+          "box": [
+            1186.91,
+            969.84,
+            1310.43,
+            1018.82
+          ],
+          "index": 57,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "economy.",
+          "token": "economy",
+          "box": [
+            1346.14,
+            969.84,
+            1513.65,
+            1018.82
+          ],
+          "index": 58,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "RSyiERSitieisumios",
+          "token": "rsyiersitieisumios",
+          "box": [
+            1549.71,
+            969.84,
+            2001.3,
+            1018.82
+          ],
+          "index": 59,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "were",
+          "token": "were",
+          "box": [
+            1242.34,
+            1042.44,
+            1319.73,
+            1091.42
+          ],
+          "index": 63,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "publishing",
+          "token": "publishing",
+          "box": [
+            1356.21,
+            1042.44,
+            1579.76,
+            1091.42
+          ],
+          "index": 64,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "the",
+          "token": "the",
+          "box": [
+            1617.23,
+            1042.44,
+            1671.65,
+            1091.42
+          ],
+          "index": 65,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "white",
+          "token": "white",
+          "box": [
+            1704.91,
+            1042.44,
+            1804.0,
+            1091.42
+          ],
+          "index": 66,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "paper",
+          "token": "paper",
+          "box": [
+            1839.95,
+            1042.44,
+            1940.73,
+            1091.42
+          ],
+          "index": 67,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "and",
+          "token": "and",
+          "box": [
+            1390.48,
+            1119.49,
+            1449.43,
+            1164.02
+          ],
+          "index": 77,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "a",
+          "token": "a",
+          "box": [
+            1485.21,
+            1119.49,
+            1497.3,
+            1164.02
+          ],
+          "index": 78,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "collective",
+          "token": "collective",
+          "box": [
+            1524.51,
+            1119.49,
+            1738.9,
+            1164.02
+          ],
+          "index": 79,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "panic",
+          "token": "panic",
+          "box": [
+            1777.47,
+            1119.49,
+            1881.6,
+            1164.02
+          ],
+          "index": 80,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "back_mirror_rotate180",
+      "target": "O5",
+      "label": "O5",
+      "phrase": "shitcoiner at heart",
+      "slotIndex": null,
+      "slotLetter": null,
+      "referenceBox": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "nativeBox": [
+        833.96,
+        2519.69,
+        1331.93,
+        2562.66
+      ],
+      "sourceOnlyCoverage": 0.112169609,
+      "recomputedSourceOnlyCoverage": 0.112254684,
+      "sourceOnlyPixelCount": 2402,
+      "componentCount": 4,
+      "componentPixelCount": 2394,
+      "largestComponentPixelCount": 965,
+      "componentSourceRefBoxes": [
+        [
+          1212.1411764705883,
+          300.2181818181818,
+          1283.2235294117647,
+          331.6363636363636
+        ],
+        [
+          1042.5411764705882,
+          308.3636363636364,
+          1106.1411764705883,
+          331.6363636363636
+        ],
+        [
+          1147.2941176470588,
+          304.8727272727273,
+          1193.4352941176471,
+          331.6363636363636
+        ],
+        [
+          1245.8117647058823,
+          318.8363636363636,
+          1264.5176470588235,
+          331.6363636363636
+        ]
+      ],
+      "sourceTraceRefBox": [
+        1000.5411764705882,
+        258.2181818181818,
+        1325.2235294117647,
+        373.6363636363636
+      ],
+      "sourceWordHitCount": 2,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "TOXIC AF",
+      "sourceWords": [
+        {
+          "text": "TOXIC",
+          "token": "toxic",
+          "box": [
+            847.64,
+            312.43,
+            1107.29,
+            416.72
+          ],
+          "index": 7,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "AF",
+          "token": "af",
+          "box": [
+            1180.17,
+            305.2,
+            1277.75,
+            402.61
+          ],
+          "index": 8,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "kind": "overdose_slot",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "back_mirror_rotate180",
+      "target": "slot7_E",
+      "label": "slot7_E_E",
+      "phrase": null,
+      "slotIndex": 7,
+      "slotLetter": "E",
+      "referenceBox": [
+        2005.5697177074398,
+        2176.81,
+        2250.0,
+        3023.73
+      ],
+      "nativeBox": [
+        1608.24,
+        1870.7,
+        1804.25,
+        2598.52
+      ],
+      "sourceOnlyCoverage": 0.292288069,
+      "recomputedSourceOnlyCoverage": 0.29234544,
+      "sourceOnlyPixelCount": 41706,
+      "componentCount": 7,
+      "componentPixelCount": 41171,
+      "largestComponentPixelCount": 23748,
+      "componentSourceRefBoxes": [
+        [
+          2129.9764705882353,
+          691.1999999999999,
+          2249.6941176470586,
+          1086.8363636363636
+        ],
+        [
+          2164.894117647059,
+          239.7090909090909,
+          2249.6941176470586,
+          653.9636363636363
+        ],
+        [
+          2005.270588235294,
+          908.8,
+          2021.4823529411765,
+          954.1818181818181
+        ],
+        [
+          2141.2,
+          645.8181818181818,
+          2169.8823529411766,
+          662.1090909090909
+        ],
+        [
+          2120.0,
+          1050.7636363636364,
+          2132.470588235294,
+          1060.0727272727272
+        ],
+        [
+          2157.4117647058824,
+          907.6363636363636,
+          2168.635294117647,
+          915.7818181818182
+        ],
+        [
+          2161.1529411764704,
+          686.5454545454545,
+          2171.1294117647058,
+          693.5272727272727
+        ]
+      ],
+      "sourceTraceRefBox": [
+        1963.270588235294,
+        197.7090909090909,
+        2291.6941176470586,
+        1128.8363636363636
+      ],
+      "sourceWordHitCount": 1,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "RSyiERSitieisumios",
+      "sourceWords": [
+        {
+          "text": "RSyiERSitieisumios",
+          "token": "rsyiersitieisumios",
+          "box": [
+            1549.71,
+            969.84,
+            2001.3,
+            1018.82
+          ],
+          "index": 59,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "front_rotate180",
+      "target": "O4",
+      "label": "O4",
+      "phrase": "buying the dip",
+      "slotIndex": null,
+      "slotLetter": null,
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "nativeBox": [
+        1069.72,
+        1870.86,
+        1444.2,
+        1912.11
+      ],
+      "sourceOnlyCoverage": 0.229555237,
+      "recomputedSourceOnlyCoverage": 0.227871537,
+      "sourceOnlyPixelCount": 3520,
+      "componentCount": 15,
+      "componentPixelCount": 3442,
+      "largestComponentPixelCount": 693,
+      "componentSourceRefBoxes": [
+        [
+          814.3294117647059,
+          1046.1090909090908,
+          882.9176470588235,
+          1079.8545454545454
+        ],
+        [
+          921.5764705882353,
+          1054.2545454545455,
+          951.5058823529412,
+          1085.6727272727271
+        ],
+        [
+          785.6470588235294,
+          1054.2545454545455,
+          814.3294117647059,
+          1077.5272727272727
+        ],
+        [
+          1030.070588235294,
+          1053.090909090909,
+          1052.5176470588235,
+          1078.6909090909091
+        ],
+        [
+          973.9529411764706,
+          1054.2545454545455,
+          1002.635294117647,
+          1077.5272727272727
+        ],
+        [
+          950.2588235294118,
+          1054.2545454545455,
+          973.9529411764706,
+          1078.6909090909091
+        ],
+        [
+          1179.7176470588236,
+          1053.090909090909,
+          1202.164705882353,
+          1086.8363636363636
+        ],
+        [
+          884.1647058823529,
+          1053.090909090909,
+          909.1058823529412,
+          1077.5272727272727
+        ],
+        [
+          1067.4823529411765,
+          1055.4181818181817,
+          1091.1764705882354,
+          1078.6909090909091
+        ],
+        [
+          1003.8823529411765,
+          1054.2545454545455,
+          1027.5764705882352,
+          1077.5272727272727
+        ],
+        [
+          743.2470588235294,
+          1057.7454545454545,
+          770.6823529411765,
+          1065.890909090909
+        ],
+        [
+          1137.3176470588235,
+          1055.4181818181817,
+          1153.5294117647059,
+          1078.6909090909091
+        ],
+        [
+          1153.5294117647059,
+          1055.4181818181817,
+          1172.235294117647,
+          1077.5272727272727
+        ],
+        [
+          1091.1764705882354,
+          1064.7272727272727,
+          1111.129411764706,
+          1078.6909090909091
+        ],
+        [
+          1097.4117647058824,
+          1047.2727272727273,
+          1114.8705882352942,
+          1058.9090909090908
+        ]
+      ],
+      "sourceTraceRefBox": [
+        701.2470588235294,
+        1004.1090909090908,
+        1244.164705882353,
+        1128.8363636363636
+      ],
+      "sourceWordHitCount": 14,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "nervous system of the global aiaourmieurosess The cypherpunks were time after years of trying",
+      "sourceWords": [
+        {
+          "text": "nervous",
+          "token": "nervous",
+          "box": [
+            684.03,
+            969.84,
+            834.82,
+            1018.82
+          ],
+          "index": 53,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "system",
+          "token": "system",
+          "box": [
+            874.5,
+            969.84,
+            1001.48,
+            1018.82
+          ],
+          "index": 54,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "of",
+          "token": "of",
+          "box": [
+            1038.76,
+            969.84,
+            1069.0,
+            1018.82
+          ],
+          "index": 55,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "the",
+          "token": "the",
+          "box": [
+            1098.22,
+            969.84,
+            1152.65,
+            1018.82
+          ],
+          "index": 56,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "global",
+          "token": "global",
+          "box": [
+            1186.91,
+            969.84,
+            1310.43,
+            1018.82
+          ],
+          "index": 57,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "aiaourmieurosess",
+          "token": "aiaourmieurosess",
+          "box": [
+            413.94,
+            1042.44,
+            808.51,
+            1091.42
+          ],
+          "index": 60,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "The",
+          "token": "the",
+          "box": [
+            847.29,
+            1042.44,
+            904.73,
+            1091.42
+          ],
+          "index": 61,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "cypherpunks",
+          "token": "cypherpunks",
+          "box": [
+            940.0,
+            1042.44,
+            1202.36,
+            1091.42
+          ],
+          "index": 62,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "were",
+          "token": "were",
+          "box": [
+            1242.34,
+            1042.44,
+            1319.73,
+            1091.42
+          ],
+          "index": 63,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "time",
+          "token": "time",
+          "box": [
+            694.1,
+            1119.49,
+            769.89,
+            1164.02
+          ],
+          "index": 70,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "after",
+          "token": "after",
+          "box": [
+            853.33,
+            1119.49,
+            949.91,
+            1164.02
+          ],
+          "index": 72,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "years",
+          "token": "years",
+          "box": [
+            983.34,
+            1119.49,
+            1084.95,
+            1164.02
+          ],
+          "index": 73,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "of",
+          "token": "of",
+          "box": [
+            1121.4,
+            1119.49,
+            1151.64,
+            1164.02
+          ],
+          "index": 74,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "trying",
+          "token": "trying",
+          "box": [
+            1180.86,
+            1119.49,
+            1306.98,
+            1164.02
+          ],
+          "index": 75,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "front_rotate180",
+      "target": "O5",
+      "label": "O5",
+      "phrase": "shitcoiner at heart",
+      "slotIndex": null,
+      "slotLetter": null,
+      "referenceBox": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "nativeBox": [
+        833.96,
+        2519.69,
+        1331.93,
+        2562.66
+      ],
+      "sourceOnlyCoverage": 0.186420099,
+      "recomputedSourceOnlyCoverage": 0.186561489,
+      "sourceOnlyPixelCount": 3992,
+      "componentCount": 6,
+      "componentPixelCount": 3984,
+      "largestComponentPixelCount": 1278,
+      "componentSourceRefBoxes": [
+        [
+          921.5764705882353,
+          309.5272727272727,
+          1040.0470588235294,
+          331.6363636363636
+        ],
+        [
+          1212.1411764705883,
+          300.2181818181818,
+          1283.2235294117647,
+          331.6363636363636
+        ],
+        [
+          1042.5411764705882,
+          308.3636363636364,
+          1106.1411764705883,
+          331.6363636363636
+        ],
+        [
+          1147.2941176470588,
+          304.8727272727273,
+          1193.4352941176471,
+          331.6363636363636
+        ],
+        [
+          882.9176470588235,
+          315.3454545454545,
+          921.5764705882353,
+          331.6363636363636
+        ],
+        [
+          1245.8117647058823,
+          318.8363636363636,
+          1264.5176470588235,
+          331.6363636363636
+        ]
+      ],
+      "sourceTraceRefBox": [
+        840.9176470588235,
+        258.2181818181818,
+        1325.2235294117647,
+        373.6363636363636
+      ],
+      "sourceWordHitCount": 2,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "TOXIC AF",
+      "sourceWords": [
+        {
+          "text": "TOXIC",
+          "token": "toxic",
+          "box": [
+            847.64,
+            312.43,
+            1107.29,
+            416.72
+          ],
+          "index": 7,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "AF",
+          "token": "af",
+          "box": [
+            1180.17,
+            305.2,
+            1277.75,
+            402.61
+          ],
+          "index": 8,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "kind": "overdose_slot",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "front_rotate180",
+      "target": "slot0_O",
+      "label": "slot0_O_O",
+      "phrase": null,
+      "slotIndex": 0,
+      "slotLetter": "O",
+      "referenceBox": [
+        294.0,
+        2176.81,
+        538.5697177074414,
+        3023.73
+      ],
+      "nativeBox": [
+        235.75,
+        1870.7,
+        431.87,
+        2598.52
+      ],
+      "sourceOnlyCoverage": 0.312240693,
+      "recomputedSourceOnlyCoverage": 0.312126816,
+      "sourceOnlyPixelCount": 44553,
+      "componentCount": 4,
+      "componentPixelCount": 44029,
+      "largestComponentPixelCount": 43544,
+      "componentSourceRefBoxes": [
+        [
+          2129.9764705882353,
+          239.7090909090909,
+          2249.6941176470586,
+          1086.8363636363636
+        ],
+        [
+          2005.270588235294,
+          909.9636363636363,
+          2021.4823529411765,
+          954.1818181818181
+        ],
+        [
+          2120.0,
+          1050.7636363636364,
+          2132.470588235294,
+          1060.0727272727272
+        ],
+        [
+          2157.4117647058824,
+          907.6363636363636,
+          2168.635294117647,
+          915.7818181818182
+        ]
+      ],
+      "sourceTraceRefBox": [
+        1963.270588235294,
+        197.7090909090909,
+        2291.6941176470586,
+        1128.8363636363636
+      ],
+      "sourceWordHitCount": 1,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "RSyiERSitieisumios",
+      "sourceWords": [
+        {
+          "text": "RSyiERSitieisumios",
+          "token": "rsyiersitieisumios",
+          "box": [
+            1549.71,
+            969.84,
+            2001.3,
+            1018.82
+          ],
+          "index": 59,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "physical_back_mirror",
+      "target": "O4",
+      "label": "O4",
+      "phrase": "buying the dip",
+      "slotIndex": null,
+      "slotLetter": null,
+      "referenceBox": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "nativeBox": [
+        1069.72,
+        1870.86,
+        1444.2,
+        1912.11
+      ],
+      "sourceOnlyCoverage": 0.579953046,
+      "recomputedSourceOnlyCoverage": 0.575699313,
+      "sourceOnlyPixelCount": 8893,
+      "componentCount": 2,
+      "componentPixelCount": 8873,
+      "largestComponentPixelCount": 8845,
+      "componentSourceRefBoxes": [
+        [
+          743.2470588235294,
+          2177.163636363636,
+          1117.364705882353,
+          2219.0545454545454
+        ],
+        [
+          1008.8705882352941,
+          2185.3090909090906,
+          1020.0941176470589,
+          2191.1272727272726
+        ]
+      ],
+      "sourceTraceRefBox": [
+        701.2470588235294,
+        2135.163636363636,
+        1159.364705882353,
+        2261.0545454545454
+      ],
+      "sourceWordHitCount": 8,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "strictInstructionTerms": [],
+      "contextTerms": [
+        "buterin"
+      ],
+      "sourceTextPreview": "in by riding Bitcoins Buterin came up with",
+      "sourceWords": [
+        {
+          "text": "in",
+          "token": "in",
+          "box": [
+            682.01,
+            2122.21,
+            711.57,
+            2162.29
+          ],
+          "index": 177,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "by",
+          "token": "by",
+          "box": [
+            741.47,
+            2122.21,
+            775.06,
+            2162.29
+          ],
+          "index": 178,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "riding",
+          "token": "riding",
+          "box": [
+            806.98,
+            2122.21,
+            928.77,
+            2162.29
+          ],
+          "index": 179,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Bitcoins",
+          "token": "bitcoins",
+          "box": [
+            965.2,
+            2122.21,
+            1129.13,
+            2162.29
+          ],
+          "index": 180,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Buterin",
+          "token": "buterin",
+          "box": [
+            696.12,
+            2186.99,
+            853.08,
+            2235.97
+          ],
+          "index": 189,
+          "strictInstruction": false,
+          "contextTerm": true
+        },
+        {
+          "text": "came",
+          "token": "came",
+          "box": [
+            893.64,
+            2186.99,
+            975.88,
+            2235.97
+          ],
+          "index": 190,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "up",
+          "token": "up",
+          "box": [
+            1011.55,
+            2186.99,
+            1045.15,
+            2235.97
+          ],
+          "index": 191,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "with",
+          "token": "with",
+          "box": [
+            1078.07,
+            2186.99,
+            1155.47,
+            2235.97
+          ],
+          "index": 192,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ]
+    },
+    {
+      "kind": "overdose_slot",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "physical_back_mirror",
+      "target": "slot0_O",
+      "label": "slot0_O_O",
+      "phrase": null,
+      "slotIndex": 0,
+      "slotLetter": "O",
+      "referenceBox": [
+        294.0,
+        2176.81,
+        538.5697177074414,
+        3023.73
+      ],
+      "nativeBox": [
+        235.75,
+        1870.7,
+        431.87,
+        2598.52
+      ],
+      "sourceOnlyCoverage": 0.634145829,
+      "recomputedSourceOnlyCoverage": 0.633914551,
+      "sourceOnlyPixelCount": 90485,
+      "componentCount": 15,
+      "componentPixelCount": 89259,
+      "largestComponentPixelCount": 88667,
+      "componentSourceRefBoxes": [
+        [
+          2060.141176470588,
+          2177.163636363636,
+          2249.6941176470586,
+          3024.290909090909
+        ],
+        [
+          2088.823529411765,
+          2216.7272727272725,
+          2107.529411764706,
+          2230.690909090909
+        ],
+        [
+          2086.329411764706,
+          2615.854545454545,
+          2098.8,
+          2630.981818181818
+        ],
+        [
+          2091.3176470588237,
+          2344.7272727272725,
+          2103.788235294118,
+          2358.690909090909
+        ],
+        [
+          2086.329411764706,
+          2694.981818181818,
+          2096.3058823529414,
+          2718.254545454545
+        ],
+        [
+          2073.858823529412,
+          2508.7999999999997,
+          2087.576470588235,
+          2523.927272727273
+        ],
+        [
+          2076.3529411764707,
+          2700.7999999999997,
+          2086.329411764706,
+          2713.6
+        ],
+        [
+          2088.823529411765,
+          2551.854545454545,
+          2098.8,
+          2561.163636363636
+        ],
+        [
+          2052.6588235294116,
+          2783.418181818182,
+          2063.8823529411766,
+          2791.5636363636363
+        ],
+        [
+          2057.6470588235293,
+          2269.090909090909,
+          2068.8705882352942,
+          2278.4
+        ],
+        [
+          2067.6235294117646,
+          2250.4727272727273,
+          2080.0941176470587,
+          2256.290909090909
+        ],
+        [
+          2045.1764705882354,
+          2745.018181818182,
+          2060.141176470588,
+          2753.163636363636
+        ],
+        [
+          2092.564705882353,
+          2277.2363636363634,
+          2100.0470588235294,
+          2288.8727272727274
+        ],
+        [
+          2040.1882352941177,
+          2803.2,
+          2050.164705882353,
+          2810.181818181818
+        ],
+        [
+          2061.3882352941177,
+          2933.5272727272727,
+          2070.1176470588234,
+          2940.509090909091
+        ]
+      ],
+      "sourceTraceRefBox": [
+        1998.1882352941177,
+        2135.163636363636,
+        2291.6941176470586,
+        3066.290909090909
+      ],
+      "sourceWordHitCount": 0,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "",
+      "sourceWords": []
+    },
+    {
+      "kind": "active",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "same_side_no_mirror",
+      "target": "B4",
+      "label": "B4",
+      "phrase": "$1 billion",
+      "slotIndex": null,
+      "slotLetter": null,
+      "referenceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "nativeBox": [
+        343.21,
+        2060.78,
+        554.1,
+        2101.17
+      ],
+      "sourceOnlyCoverage": 0.174526066,
+      "recomputedSourceOnlyCoverage": 0.172931022,
+      "sourceOnlyPixelCount": 1473,
+      "componentCount": 4,
+      "componentPixelCount": 1438,
+      "largestComponentPixelCount": 1342,
+      "componentSourceRefBoxes": [
+        [
+          513.7882352941176,
+          2398.254545454545,
+          690.8705882352941,
+          2411.0545454545454
+        ],
+        [
+          618.5411764705882,
+          2440.1454545454544,
+          634.7529411764706,
+          2444.7999999999997
+        ],
+        [
+          438.964705882353,
+          2441.3090909090906,
+          455.1764705882353,
+          2444.7999999999997
+        ],
+        [
+          427.74117647058824,
+          2440.1454545454544,
+          437.71764705882356,
+          2444.7999999999997
+        ]
+      ],
+      "sourceTraceRefBox": [
+        385.74117647058824,
+        2356.254545454545,
+        732.8705882352941,
+        2486.7999999999997
+      ],
+      "sourceWordHitCount": 6,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "strictInstructionTerms": [],
+      "contextTerms": [
+        "bitcoin"
+      ],
+      "sourceTextPreview": "Don't fa Keep your Go Bitcoin",
+      "sourceWords": [
+        {
+          "text": "Don't",
+          "token": "dont",
+          "box": [
+            518.75,
+            2335.57,
+            580.06,
+            2380.1
+          ],
+          "index": 206,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "fa",
+          "token": "fa",
+          "box": [
+            672.94,
+            2335.57,
+            689.06,
+            2380.1
+          ],
+          "index": 207,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Keep",
+          "token": "keep",
+          "box": [
+            484.49,
+            2408.71,
+            586.88,
+            2466.6
+          ],
+          "index": 210,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "your",
+          "token": "your",
+          "box": [
+            617.51,
+            2408.71,
+            711.04,
+            2466.6
+          ],
+          "index": 211,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Go",
+          "token": "go",
+          "box": [
+            506.66,
+            2478.46,
+            546.97,
+            2527.45
+          ],
+          "index": 213,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Bitcoin",
+          "token": "bitcoin",
+          "box": [
+            586.27,
+            2478.46,
+            758.23,
+            2527.45
+          ],
+          "index": 214,
+          "strictInstruction": false,
+          "contextTerm": true
+        }
+      ]
+    },
+    {
+      "kind": "overdose_slot",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "same_side_no_mirror",
+      "target": "slot7_E",
+      "label": "slot7_E_E",
+      "phrase": null,
+      "slotIndex": 7,
+      "slotLetter": "E",
+      "referenceBox": [
+        2005.5697177074398,
+        2176.81,
+        2250.0,
+        3023.73
+      ],
+      "nativeBox": [
+        1608.24,
+        1870.7,
+        1804.25,
+        2598.52
+      ],
+      "sourceOnlyCoverage": 0.617494113,
+      "recomputedSourceOnlyCoverage": 0.617615317,
+      "sourceOnlyPixelCount": 88109,
+      "componentCount": 11,
+      "componentPixelCount": 86847,
+      "largestComponentPixelCount": 86512,
+      "componentSourceRefBoxes": [
+        [
+          2061.3882352941177,
+          2177.163636363636,
+          2249.6941176470586,
+          3024.290909090909
+        ],
+        [
+          2075.105882352941,
+          2202.763636363636,
+          2088.823529411765,
+          2215.5636363636363
+        ],
+        [
+          2073.858823529412,
+          2508.7999999999997,
+          2087.576470588235,
+          2523.927272727273
+        ],
+        [
+          2052.6588235294116,
+          2783.418181818182,
+          2063.8823529411766,
+          2791.5636363636363
+        ],
+        [
+          2057.6470588235293,
+          2269.090909090909,
+          2068.8705882352942,
+          2278.4
+        ],
+        [
+          2067.6235294117646,
+          2250.4727272727273,
+          2080.0941176470587,
+          2256.290909090909
+        ],
+        [
+          2045.1764705882354,
+          2745.018181818182,
+          2060.141176470588,
+          2753.163636363636
+        ],
+        [
+          2075.105882352941,
+          2359.854545454545,
+          2083.835294117647,
+          2372.6545454545453
+        ],
+        [
+          2077.6,
+          2270.254545454545,
+          2087.576470588235,
+          2277.2363636363634
+        ],
+        [
+          2061.3882352941177,
+          2933.5272727272727,
+          2070.1176470588234,
+          2940.509090909091
+        ],
+        [
+          2082.5882352941176,
+          2278.4,
+          2091.3176470588237,
+          2284.2181818181816
+        ]
+      ],
+      "sourceTraceRefBox": [
+        2003.1764705882354,
+        2135.163636363636,
+        2291.6941176470586,
+        3066.290909090909
+      ],
+      "sourceWordHitCount": 0,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "",
+      "sourceWords": []
+    },
+    {
+      "kind": "active",
+      "pdf": "magazine.pdf",
+      "transform": "same_side_no_mirror",
+      "target": "B4",
+      "label": "B4",
+      "phrase": "$1 billion",
+      "slotIndex": null,
+      "slotLetter": null,
+      "referenceBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "nativeBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "sourceOnlyCoverage": 0.111803252,
+      "recomputedSourceOnlyCoverage": 0.111803252,
+      "sourceOnlyPixelCount": 1382,
+      "componentCount": 11,
+      "componentPixelCount": 1379,
+      "largestComponentPixelCount": 189,
+      "componentSourceRefBoxes": [
+        [
+          508.0,
+          2415.0,
+          528.0,
+          2433.0
+        ],
+        [
+          634.0,
+          2416.0,
+          655.0,
+          2433.0
+        ],
+        [
+          583.0,
+          2416.0,
+          606.0,
+          2432.0
+        ],
+        [
+          533.0,
+          2415.0,
+          553.0,
+          2433.0
+        ],
+        [
+          461.0,
+          2415.0,
+          484.0,
+          2433.0
+        ],
+        [
+          556.0,
+          2416.0,
+          579.0,
+          2432.0
+        ],
+        [
+          609.0,
+          2416.0,
+          630.0,
+          2432.0
+        ],
+        [
+          661.0,
+          2416.0,
+          673.0,
+          2432.0
+        ],
+        [
+          676.0,
+          2416.0,
+          687.0,
+          2432.0
+        ],
+        [
+          452.0,
+          2416.0,
+          457.0,
+          2430.0
+        ],
+        [
+          690.0,
+          2416.0,
+          691.0,
+          2440.0
+        ]
+      ],
+      "sourceTraceRefBox": [
+        410.0,
+        2373.0,
+        733.0,
+        2482.0
+      ],
+      "sourceWordHitCount": 6,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "strictInstructionTerms": [],
+      "contextTerms": [
+        "bitcoin"
+      ],
+      "sourceTextPreview": "Don't fa Keep your Go Bitcoin",
+      "sourceWords": [
+        {
+          "text": "Don't",
+          "token": "dont",
+          "box": [
+            518.75,
+            2335.57,
+            580.06,
+            2380.1
+          ],
+          "index": 206,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "fa",
+          "token": "fa",
+          "box": [
+            672.94,
+            2335.57,
+            689.06,
+            2380.1
+          ],
+          "index": 207,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Keep",
+          "token": "keep",
+          "box": [
+            484.49,
+            2408.71,
+            586.88,
+            2466.6
+          ],
+          "index": 210,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "your",
+          "token": "your",
+          "box": [
+            617.51,
+            2408.71,
+            711.04,
+            2466.6
+          ],
+          "index": 211,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Go",
+          "token": "go",
+          "box": [
+            506.66,
+            2478.46,
+            546.97,
+            2527.45
+          ],
+          "index": 213,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Bitcoin",
+          "token": "bitcoin",
+          "box": [
+            586.27,
+            2478.46,
+            758.23,
+            2527.45
+          ],
+          "index": 214,
+          "strictInstruction": false,
+          "contextTerm": true
+        }
+      ]
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/current_pdf_held_to_light_candidate_source_trace/current_pdf_held_to_light_candidate_source_trace_sheet.jpg"
+}

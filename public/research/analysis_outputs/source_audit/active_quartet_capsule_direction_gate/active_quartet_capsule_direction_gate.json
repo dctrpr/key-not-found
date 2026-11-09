@@ -1,0 +1,539 @@
+{
+  "createdAt": "2026-05-21T00:36:37",
+  "scope": "active quartet capsule-direction gate; no extraction, no key derivation, no hashing, no seed/WIF/address checks",
+  "inputs": {
+    "fiveIndexConvergence": "analysis_outputs/source_audit/five_index_convergence/five_index_convergence.json",
+    "activeLineUnitReconciliation": "analysis_outputs/plain_text_transcript/active_line_unit_reconciliation/active_line_unit_reconciliation.json"
+  },
+  "summary": {
+    "stepSigns": "RRLL",
+    "stepBits_R1_L0": "1100",
+    "sameStepSignature": true,
+    "modeCount": 8,
+    "nonblankStreamCount": 8,
+    "instructionHitCount": 0,
+    "instructionHitModeCount": 0,
+    "activePageLines": "22 25 27 32",
+    "activeCorridorIndexes": "4 7 9 14",
+    "activeVisualStateOrder": "YKKY",
+    "selectorUnlocked": false
+  },
+  "activeRecords": [
+    {
+      "order": 1,
+      "id": "buying_dip",
+      "label": "buying the dip",
+      "visualState": "Y",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "leftBoundaryWord": "he's",
+      "rightBoundaryWord": "-",
+      "aboveWord": "on",
+      "belowWord": "announced"
+    },
+    {
+      "order": 2,
+      "id": "one_billion",
+      "label": "$1 billion",
+      "visualState": "K",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "leftBoundaryWord": "-",
+      "rightBoundaryWord": "in",
+      "aboveWord": "was",
+      "belowWord": "billions"
+    },
+    {
+      "order": 3,
+      "id": "volcano_bonds",
+      "label": "Volcano Bonds",
+      "visualState": "K",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "leftBoundaryWord": "collateralized",
+      "rightBoundaryWord": "to",
+      "aboveWord": "future",
+      "belowWord": "those"
+    },
+    {
+      "order": 4,
+      "id": "shitcoiner_heart",
+      "label": "shitcoiner at heart",
+      "visualState": "Y",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "leftBoundaryWord": "a",
+      "rightBoundaryWord": "-",
+      "aboveWord": "trust",
+      "belowWord": "-"
+    }
+  ],
+  "directionModes": [
+    {
+      "modeId": "active_order_horizontal_outgoing",
+      "targetOrder": "active_order",
+      "dimension": "horizontal",
+      "mode": "outgoing",
+      "signs": "RRLL",
+      "rows": [
+        {
+          "step": 1,
+          "sign": "R",
+          "targetId": "buying_dip",
+          "targetLabel": "buying the dip",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "picked": "-",
+          "sourceField": "rightBoundaryWord"
+        },
+        {
+          "step": 2,
+          "sign": "R",
+          "targetId": "one_billion",
+          "targetLabel": "$1 billion",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "picked": "in",
+          "sourceField": "rightBoundaryWord"
+        },
+        {
+          "step": 3,
+          "sign": "L",
+          "targetId": "volcano_bonds",
+          "targetLabel": "Volcano Bonds",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "picked": "collateralized",
+          "sourceField": "leftBoundaryWord"
+        },
+        {
+          "step": 4,
+          "sign": "L",
+          "targetId": "shitcoiner_heart",
+          "targetLabel": "shitcoiner at heart",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "picked": "a",
+          "sourceField": "leftBoundaryWord"
+        }
+      ],
+      "stream": "- in collateralized a",
+      "cleanStream": "in collateralized a",
+      "reverseCleanStream": "a collateralized in",
+      "initials": "-ica",
+      "lasts": "-nda",
+      "instructionHits": [],
+      "blankPickCount": 1,
+      "nonblankPickCount": 3
+    },
+    {
+      "modeId": "active_order_horizontal_incoming",
+      "targetOrder": "active_order",
+      "dimension": "horizontal",
+      "mode": "incoming",
+      "signs": "RRLL",
+      "rows": [
+        {
+          "step": 1,
+          "sign": "R",
+          "targetId": "buying_dip",
+          "targetLabel": "buying the dip",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "picked": "he's",
+          "sourceField": "leftBoundaryWord"
+        },
+        {
+          "step": 2,
+          "sign": "R",
+          "targetId": "one_billion",
+          "targetLabel": "$1 billion",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "picked": "-",
+          "sourceField": "leftBoundaryWord"
+        },
+        {
+          "step": 3,
+          "sign": "L",
+          "targetId": "volcano_bonds",
+          "targetLabel": "Volcano Bonds",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "picked": "to",
+          "sourceField": "rightBoundaryWord"
+        },
+        {
+          "step": 4,
+          "sign": "L",
+          "targetId": "shitcoiner_heart",
+          "targetLabel": "shitcoiner at heart",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "picked": "-",
+          "sourceField": "rightBoundaryWord"
+        }
+      ],
+      "stream": "he's - to -",
+      "cleanStream": "he's to",
+      "reverseCleanStream": "to he's",
+      "initials": "h-t-",
+      "lasts": "s-o-",
+      "instructionHits": [],
+      "blankPickCount": 2,
+      "nonblankPickCount": 2
+    },
+    {
+      "modeId": "active_order_vertical_outgoing",
+      "targetOrder": "active_order",
+      "dimension": "vertical",
+      "mode": "outgoing",
+      "signs": "RRLL",
+      "rows": [
+        {
+          "step": 1,
+          "sign": "R",
+          "targetId": "buying_dip",
+          "targetLabel": "buying the dip",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "picked": "announced",
+          "sourceField": "belowWord"
+        },
+        {
+          "step": 2,
+          "sign": "R",
+          "targetId": "one_billion",
+          "targetLabel": "$1 billion",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "picked": "billions",
+          "sourceField": "belowWord"
+        },
+        {
+          "step": 3,
+          "sign": "L",
+          "targetId": "volcano_bonds",
+          "targetLabel": "Volcano Bonds",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "picked": "future",
+          "sourceField": "aboveWord"
+        },
+        {
+          "step": 4,
+          "sign": "L",
+          "targetId": "shitcoiner_heart",
+          "targetLabel": "shitcoiner at heart",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "picked": "trust",
+          "sourceField": "aboveWord"
+        }
+      ],
+      "stream": "announced billions future trust",
+      "cleanStream": "announced billions future trust",
+      "reverseCleanStream": "trust future billions announced",
+      "initials": "abft",
+      "lasts": "dset",
+      "instructionHits": [],
+      "blankPickCount": 0,
+      "nonblankPickCount": 4
+    },
+    {
+      "modeId": "active_order_vertical_incoming",
+      "targetOrder": "active_order",
+      "dimension": "vertical",
+      "mode": "incoming",
+      "signs": "RRLL",
+      "rows": [
+        {
+          "step": 1,
+          "sign": "R",
+          "targetId": "buying_dip",
+          "targetLabel": "buying the dip",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "picked": "on",
+          "sourceField": "aboveWord"
+        },
+        {
+          "step": 2,
+          "sign": "R",
+          "targetId": "one_billion",
+          "targetLabel": "$1 billion",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "picked": "was",
+          "sourceField": "aboveWord"
+        },
+        {
+          "step": 3,
+          "sign": "L",
+          "targetId": "volcano_bonds",
+          "targetLabel": "Volcano Bonds",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "picked": "those",
+          "sourceField": "belowWord"
+        },
+        {
+          "step": 4,
+          "sign": "L",
+          "targetId": "shitcoiner_heart",
+          "targetLabel": "shitcoiner at heart",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "picked": "-",
+          "sourceField": "belowWord"
+        }
+      ],
+      "stream": "on was those -",
+      "cleanStream": "on was those",
+      "reverseCleanStream": "those was on",
+      "initials": "owt-",
+      "lasts": "nse-",
+      "instructionHits": [],
+      "blankPickCount": 1,
+      "nonblankPickCount": 3
+    },
+    {
+      "modeId": "reverse_active_order_horizontal_outgoing",
+      "targetOrder": "reverse_active_order",
+      "dimension": "horizontal",
+      "mode": "outgoing",
+      "signs": "RRLL",
+      "rows": [
+        {
+          "step": 1,
+          "sign": "R",
+          "targetId": "shitcoiner_heart",
+          "targetLabel": "shitcoiner at heart",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "picked": "-",
+          "sourceField": "rightBoundaryWord"
+        },
+        {
+          "step": 2,
+          "sign": "R",
+          "targetId": "volcano_bonds",
+          "targetLabel": "Volcano Bonds",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "picked": "to",
+          "sourceField": "rightBoundaryWord"
+        },
+        {
+          "step": 3,
+          "sign": "L",
+          "targetId": "one_billion",
+          "targetLabel": "$1 billion",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "picked": "-",
+          "sourceField": "leftBoundaryWord"
+        },
+        {
+          "step": 4,
+          "sign": "L",
+          "targetId": "buying_dip",
+          "targetLabel": "buying the dip",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "picked": "he's",
+          "sourceField": "leftBoundaryWord"
+        }
+      ],
+      "stream": "- to - he's",
+      "cleanStream": "to he's",
+      "reverseCleanStream": "he's to",
+      "initials": "-t-h",
+      "lasts": "-o-s",
+      "instructionHits": [],
+      "blankPickCount": 2,
+      "nonblankPickCount": 2
+    },
+    {
+      "modeId": "reverse_active_order_horizontal_incoming",
+      "targetOrder": "reverse_active_order",
+      "dimension": "horizontal",
+      "mode": "incoming",
+      "signs": "RRLL",
+      "rows": [
+        {
+          "step": 1,
+          "sign": "R",
+          "targetId": "shitcoiner_heart",
+          "targetLabel": "shitcoiner at heart",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "picked": "a",
+          "sourceField": "leftBoundaryWord"
+        },
+        {
+          "step": 2,
+          "sign": "R",
+          "targetId": "volcano_bonds",
+          "targetLabel": "Volcano Bonds",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "picked": "collateralized",
+          "sourceField": "leftBoundaryWord"
+        },
+        {
+          "step": 3,
+          "sign": "L",
+          "targetId": "one_billion",
+          "targetLabel": "$1 billion",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "picked": "in",
+          "sourceField": "rightBoundaryWord"
+        },
+        {
+          "step": 4,
+          "sign": "L",
+          "targetId": "buying_dip",
+          "targetLabel": "buying the dip",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "picked": "-",
+          "sourceField": "rightBoundaryWord"
+        }
+      ],
+      "stream": "a collateralized in -",
+      "cleanStream": "a collateralized in",
+      "reverseCleanStream": "in collateralized a",
+      "initials": "aci-",
+      "lasts": "adn-",
+      "instructionHits": [],
+      "blankPickCount": 1,
+      "nonblankPickCount": 3
+    },
+    {
+      "modeId": "reverse_active_order_vertical_outgoing",
+      "targetOrder": "reverse_active_order",
+      "dimension": "vertical",
+      "mode": "outgoing",
+      "signs": "RRLL",
+      "rows": [
+        {
+          "step": 1,
+          "sign": "R",
+          "targetId": "shitcoiner_heart",
+          "targetLabel": "shitcoiner at heart",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "picked": "-",
+          "sourceField": "belowWord"
+        },
+        {
+          "step": 2,
+          "sign": "R",
+          "targetId": "volcano_bonds",
+          "targetLabel": "Volcano Bonds",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "picked": "those",
+          "sourceField": "belowWord"
+        },
+        {
+          "step": 3,
+          "sign": "L",
+          "targetId": "one_billion",
+          "targetLabel": "$1 billion",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "picked": "was",
+          "sourceField": "aboveWord"
+        },
+        {
+          "step": 4,
+          "sign": "L",
+          "targetId": "buying_dip",
+          "targetLabel": "buying the dip",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "picked": "on",
+          "sourceField": "aboveWord"
+        }
+      ],
+      "stream": "- those was on",
+      "cleanStream": "those was on",
+      "reverseCleanStream": "on was those",
+      "initials": "-two",
+      "lasts": "-esn",
+      "instructionHits": [],
+      "blankPickCount": 1,
+      "nonblankPickCount": 3
+    },
+    {
+      "modeId": "reverse_active_order_vertical_incoming",
+      "targetOrder": "reverse_active_order",
+      "dimension": "vertical",
+      "mode": "incoming",
+      "signs": "RRLL",
+      "rows": [
+        {
+          "step": 1,
+          "sign": "R",
+          "targetId": "shitcoiner_heart",
+          "targetLabel": "shitcoiner at heart",
+          "pageLine": 32,
+          "corridorIndex": 14,
+          "picked": "trust",
+          "sourceField": "aboveWord"
+        },
+        {
+          "step": 2,
+          "sign": "R",
+          "targetId": "volcano_bonds",
+          "targetLabel": "Volcano Bonds",
+          "pageLine": 27,
+          "corridorIndex": 9,
+          "picked": "future",
+          "sourceField": "aboveWord"
+        },
+        {
+          "step": 3,
+          "sign": "L",
+          "targetId": "one_billion",
+          "targetLabel": "$1 billion",
+          "pageLine": 25,
+          "corridorIndex": 7,
+          "picked": "billions",
+          "sourceField": "belowWord"
+        },
+        {
+          "step": 4,
+          "sign": "L",
+          "targetId": "buying_dip",
+          "targetLabel": "buying the dip",
+          "pageLine": 22,
+          "corridorIndex": 4,
+          "picked": "announced",
+          "sourceField": "belowWord"
+        }
+      ],
+      "stream": "trust future billions announced",
+      "cleanStream": "trust future billions announced",
+      "reverseCleanStream": "announced billions future trust",
+      "initials": "tfba",
+      "lasts": "tesd",
+      "instructionHits": [],
+      "blankPickCount": 0,
+      "nonblankPickCount": 4
+    }
+  ],
+  "assessment": [
+    "The shared p73/p79 capsule direction signature is RRLL and is real as a five-index locator/provenance signal.",
+    "Applying RRLL to horizontal side words around O4/B4/G5/O5 yields ordinary fragments such as `in collateralized a`, `he's to`, and `to he's`; no stream gives a word/letter/line/key instruction.",
+    "Applying the same bounded test to vertical above/below neighbors yields ordinary fragments such as `announced billions future trust` and `on was those`; no stream gives a selector instruction.",
+    "Reverse active order also fails to produce instruction-bearing text.",
+    "This closes RRLL-as-active-quartet-side-selector for the current scan; it does not weaken page 76 as the target surface."
+  ],
+  "decision": "rrll_capsule_direction_does_not_select_active_quartet_boundary_instruction",
+  "sheet": "analysis_outputs/source_audit/active_quartet_capsule_direction_gate/active_quartet_capsule_direction_gate_sheet.jpg",
+  "nextMove": "Keep RRLL/five-index evidence as locator/provenance only; reopen side-word or vertical-neighbor extraction only if a raw clue names left/right, above/below, first/last word, or letter extraction."
+}

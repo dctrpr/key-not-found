@@ -1,0 +1,850 @@
+{
+  "createdAt": "2026-05-24T02:56:34",
+  "scope": "trace valid page 75 -> page 76 edge contacts back to page-75 source words; no key derivation",
+  "inputs": {
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "edgeContactControl": "analysis_outputs/source_audit/current_scan_valid_leaf_edge_contact_control/current_scan_valid_leaf_edge_contact_control.json",
+    "articleMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "decision": "valid_leaf_edge_source_trace_no_instruction_source",
+  "summary": {
+    "traceRowCount": 8,
+    "componentRows": 6,
+    "wordHitRows": 6,
+    "strictInstructionRows": 0,
+    "contextTermRows": 0,
+    "totalSourceWordHits": 42,
+    "totalStrictInstructionHits": 0,
+    "totalContextTermHits": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0
+  },
+  "fingerprint": "rows=8|components=6|wordRows=6|strictRows=0|contextRows=0|words=42|strict=0|context=0|sourceR3=0|triggers=0/9|selectors=0",
+  "traceRows": [
+    {
+      "mode": "valid_75_to_76_natural",
+      "target": "O4",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "edgeSourceOnlyCoverage": 0.11980860645484114,
+      "edgeControlPercentile": 0.7481481481481481,
+      "componentCount": 6,
+      "componentPixelCount": 949,
+      "largestComponentPixelCount": 203,
+      "targetContactBox": [
+        1285,
+        2121,
+        1853,
+        2268
+      ],
+      "sourceTraceBox": [
+        691,
+        2121,
+        1259,
+        2268
+      ],
+      "sourceWordHitCount": 15,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "in by riding Bitcoins coattails Buterin came up with the slinging proof of stake at",
+      "sourceWords": [
+        {
+          "text": "in",
+          "token": "in",
+          "box": [
+            682.01,
+            2122.21,
+            711.57,
+            2162.29
+          ],
+          "index": 177,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "by",
+          "token": "by",
+          "box": [
+            741.47,
+            2122.21,
+            775.06,
+            2162.29
+          ],
+          "index": 178,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "riding",
+          "token": "riding",
+          "box": [
+            806.98,
+            2122.21,
+            928.77,
+            2162.29
+          ],
+          "index": 179,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Bitcoins",
+          "token": "bitcoins",
+          "box": [
+            965.2,
+            2122.21,
+            1129.13,
+            2162.29
+          ],
+          "index": 180,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "coattails",
+          "token": "coattails",
+          "box": [
+            1166.75,
+            2122.21,
+            1352.69,
+            2162.29
+          ],
+          "index": 181,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Buterin",
+          "token": "buterin",
+          "box": [
+            696.12,
+            2186.99,
+            853.08,
+            2235.97
+          ],
+          "index": 189,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "came",
+          "token": "came",
+          "box": [
+            893.64,
+            2186.99,
+            975.88,
+            2235.97
+          ],
+          "index": 190,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "up",
+          "token": "up",
+          "box": [
+            1011.55,
+            2186.99,
+            1045.15,
+            2235.97
+          ],
+          "index": 191,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "with",
+          "token": "with",
+          "box": [
+            1078.07,
+            2186.99,
+            1155.47,
+            2235.97
+          ],
+          "index": 192,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "the",
+          "token": "the",
+          "box": [
+            1189.93,
+            2186.99,
+            1244.35,
+            2235.97
+          ],
+          "index": 193,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "slinging",
+          "token": "slinging",
+          "box": [
+            706.2,
+            2267.42,
+            879.09,
+            2307.5
+          ],
+          "index": 198,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "proof",
+          "token": "proof",
+          "box": [
+            915.82,
+            2267.42,
+            1014.91,
+            2307.5
+          ],
+          "index": 199,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "of",
+          "token": "of",
+          "box": [
+            1049.85,
+            2267.42,
+            1079.42,
+            2307.5
+          ],
+          "index": 200,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "stake",
+          "token": "stake",
+          "box": [
+            1111.32,
+            2267.42,
+            1212.1,
+            2307.5
+          ],
+          "index": 201,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "at",
+          "token": "at",
+          "box": [
+            1248.38,
+            2267.42,
+            1276.6,
+            2307.5
+          ],
+          "index": 202,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_edge_source_trace/valid_75_to_76_natural_O4.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_natural",
+      "target": "B4",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "edgeSourceOnlyCoverage": 0.0,
+      "edgeControlPercentile": 0.29304029304029305,
+      "componentCount": 0,
+      "componentPixelCount": 0,
+      "largestComponentPixelCount": 0,
+      "targetContactBox": null,
+      "sourceTraceBox": null,
+      "sourceWordHitCount": 0,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "",
+      "sourceWords": [],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_edge_source_trace/valid_75_to_76_natural_B4.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_natural",
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "edgeSourceOnlyCoverage": 0.03094059405940594,
+      "edgeControlPercentile": 0.445859872611465,
+      "componentCount": 6,
+      "componentPixelCount": 639,
+      "largestComponentPixelCount": 240,
+      "targetContactBox": [
+        1015,
+        2546,
+        1252,
+        2627
+      ],
+      "sourceTraceBox": [
+        1292,
+        2546,
+        1529,
+        2627
+      ],
+      "sourceWordHitCount": 1,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "experience.",
+      "sourceWords": [
+        {
+          "text": "experience.",
+          "token": "experience",
+          "box": [
+            1257.45,
+            2552.13,
+            1492.1,
+            2601.12
+          ],
+          "index": 223,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_edge_source_trace/valid_75_to_76_natural_G5.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_natural",
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "edgeSourceOnlyCoverage": 0.016383375908822953,
+      "edgeControlPercentile": 0.2073170731707317,
+      "componentCount": 5,
+      "componentPixelCount": 604,
+      "largestComponentPixelCount": 279,
+      "targetContactBox": [
+        988,
+        2902,
+        1717,
+        2997
+      ],
+      "sourceTraceBox": [
+        827,
+        2902,
+        1556,
+        2997
+      ],
+      "sourceWordHitCount": 6,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "listening for the gullible and unloved.",
+      "sourceWords": [
+        {
+          "text": "listening",
+          "token": "listening",
+          "box": [
+            708.21,
+            2924.04,
+            901.41,
+            2964.12
+          ],
+          "index": 262,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "for",
+          "token": "for",
+          "box": [
+            937.99,
+            2924.04,
+            986.36,
+            2964.12
+          ],
+          "index": 263,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "the",
+          "token": "the",
+          "box": [
+            1016.59,
+            2924.04,
+            1070.26,
+            2964.12
+          ],
+          "index": 264,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "gullible",
+          "token": "gullible",
+          "box": [
+            1104.27,
+            2924.04,
+            1270.0,
+            2964.12
+          ],
+          "index": 265,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "and",
+          "token": "and",
+          "box": [
+            1307.84,
+            2924.04,
+            1366.04,
+            2964.12
+          ],
+          "index": 266,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "unloved.",
+          "token": "unloved",
+          "box": [
+            1400.56,
+            2924.04,
+            1568.97,
+            2964.12
+          ],
+          "index": 267,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_edge_source_trace/valid_75_to_76_natural_O5.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "target": "O4",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "edgeSourceOnlyCoverage": 0.010226419814861146,
+      "edgeControlPercentile": 0.18518518518518517,
+      "componentCount": 5,
+      "componentPixelCount": 253,
+      "largestComponentPixelCount": 146,
+      "targetContactBox": [
+        1278,
+        2148,
+        1836,
+        2281
+      ],
+      "sourceTraceBox": [
+        628,
+        2168,
+        1186,
+        2301
+      ],
+      "sourceWordHitCount": 10,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "Vitalik Buterin came up with he's slinging proof of stake",
+      "sourceWords": [
+        {
+          "text": "Vitalik",
+          "token": "vitalik",
+          "box": [
+            505.65,
+            2186.99,
+            657.32,
+            2235.97
+          ],
+          "index": 188,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "Buterin",
+          "token": "buterin",
+          "box": [
+            696.12,
+            2186.99,
+            853.08,
+            2235.97
+          ],
+          "index": 189,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "came",
+          "token": "came",
+          "box": [
+            893.64,
+            2186.99,
+            975.88,
+            2235.97
+          ],
+          "index": 190,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "up",
+          "token": "up",
+          "box": [
+            1011.55,
+            2186.99,
+            1045.15,
+            2235.97
+          ],
+          "index": 191,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "with",
+          "token": "with",
+          "box": [
+            1078.07,
+            2186.99,
+            1155.47,
+            2235.97
+          ],
+          "index": 192,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "he's",
+          "token": "hes",
+          "box": [
+            602.4,
+            2267.42,
+            671.74,
+            2307.5
+          ],
+          "index": 197,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "slinging",
+          "token": "slinging",
+          "box": [
+            706.2,
+            2267.42,
+            879.09,
+            2307.5
+          ],
+          "index": 198,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "proof",
+          "token": "proof",
+          "box": [
+            915.82,
+            2267.42,
+            1014.91,
+            2307.5
+          ],
+          "index": 199,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "of",
+          "token": "of",
+          "box": [
+            1049.85,
+            2267.42,
+            1079.42,
+            2307.5
+          ],
+          "index": 200,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "stake",
+          "token": "stake",
+          "box": [
+            1111.32,
+            2267.42,
+            1212.1,
+            2307.5
+          ],
+          "index": 201,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_edge_source_trace/valid_75_to_76_small_jitter_best_O4.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "target": "B4",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "edgeSourceOnlyCoverage": 0.0,
+      "edgeControlPercentile": 0.25274725274725274,
+      "componentCount": 0,
+      "componentPixelCount": 0,
+      "largestComponentPixelCount": 0,
+      "targetContactBox": null,
+      "sourceTraceBox": null,
+      "sourceWordHitCount": 0,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "",
+      "sourceWords": [],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_edge_source_trace/valid_75_to_76_small_jitter_best_B4.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "edgeSourceOnlyCoverage": 0.012482319660537483,
+      "edgeControlPercentile": 0.21019108280254778,
+      "componentCount": 3,
+      "componentPixelCount": 322,
+      "largestComponentPixelCount": 264,
+      "targetContactBox": [
+        1052,
+        2526,
+        1245,
+        2648
+      ],
+      "sourceTraceBox": [
+        1219,
+        2546,
+        1412,
+        2668
+      ],
+      "sourceWordHitCount": 4,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "Satoshi experience. blindly with",
+      "sourceWords": [
+        {
+          "text": "Satoshi",
+          "token": "satoshi",
+          "box": [
+            1074.04,
+            2552.13,
+            1221.3,
+            2601.12
+          ],
+          "index": 222,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "experience.",
+          "token": "experience",
+          "box": [
+            1257.45,
+            2552.13,
+            1492.1,
+            2601.12
+          ],
+          "index": 223,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "blindly",
+          "token": "blindly",
+          "box": [
+            1099.23,
+            2629.18,
+            1260.61,
+            2673.71
+          ],
+          "index": 228,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "with",
+          "token": "with",
+          "box": [
+            1299.78,
+            2629.18,
+            1385.24,
+            2673.71
+          ],
+          "index": 229,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_edge_source_trace/valid_75_to_76_small_jitter_best_G5.jpg"
+    },
+    {
+      "mode": "valid_75_to_76_small_jitter_best",
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "edgeSourceOnlyCoverage": 0.07825702495578699,
+      "edgeControlPercentile": 0.5,
+      "componentCount": 6,
+      "componentPixelCount": 1083,
+      "largestComponentPixelCount": 263,
+      "targetContactBox": [
+        984,
+        2881,
+        1708,
+        2971
+      ],
+      "sourceTraceBox": [
+        756,
+        2901,
+        1480,
+        2991
+      ],
+      "sourceWordHitCount": 6,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "strictInstructionTerms": [],
+      "contextTerms": [],
+      "sourceTextPreview": "listening for the gullible and unloved.",
+      "sourceWords": [
+        {
+          "text": "listening",
+          "token": "listening",
+          "box": [
+            708.21,
+            2924.04,
+            901.41,
+            2964.12
+          ],
+          "index": 262,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "for",
+          "token": "for",
+          "box": [
+            937.99,
+            2924.04,
+            986.36,
+            2964.12
+          ],
+          "index": 263,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "the",
+          "token": "the",
+          "box": [
+            1016.59,
+            2924.04,
+            1070.26,
+            2964.12
+          ],
+          "index": 264,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "gullible",
+          "token": "gullible",
+          "box": [
+            1104.27,
+            2924.04,
+            1270.0,
+            2964.12
+          ],
+          "index": 265,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "and",
+          "token": "and",
+          "box": [
+            1307.84,
+            2924.04,
+            1366.04,
+            2964.12
+          ],
+          "index": 266,
+          "strictInstruction": false,
+          "contextTerm": false
+        },
+        {
+          "text": "unloved.",
+          "token": "unloved",
+          "box": [
+            1400.56,
+            2924.04,
+            1568.97,
+            2964.12
+          ],
+          "index": 267,
+          "strictInstruction": false,
+          "contextTerm": false
+        }
+      ],
+      "panel": "analysis_outputs/source_audit/current_scan_valid_leaf_edge_source_trace/valid_75_to_76_small_jitter_best_O5.jpg"
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/current_scan_valid_leaf_edge_source_trace/current_scan_valid_leaf_edge_source_trace_sheet.jpg",
+  "nextMove": "Do not extract from valid-leaf edge source traces; require a source/clue that names transform, unit, and order."
+}

@@ -1,0 +1,56 @@
+Experiment counts
+E11_wif_base58_direct_scan: 37075
+E13_hex64_direct_scan: 18368
+E12_minikey_scan: 3
+E14_orange_geometry_byte_streams: 1635
+E15_reflected_geometry_byte_streams: 1955
+E18_id_shortcode_byte_streams: 1467
+E20_salted_priority_hashes: 640
+
+Subtype counts
+E11_wif_base58_direct_scan base58raw: 37075
+E12_minikey_scan minikey: 3
+E13_hex64_direct_scan hex_loose: 9184
+E13_hex64_direct_scan other: 9184
+E14_orange_geometry_byte_streams bytes32: 1632
+E14_orange_geometry_byte_streams sha256_stream: 3
+E15_reflected_geometry_byte_streams bytes32: 1952
+E15_reflected_geometry_byte_streams sha256_stream: 3
+E18_id_shortcode_byte_streams bytes32: 1464
+E18_id_shortcode_byte_streams sha256_stream: 3
+E20_salted_priority_hashes other: 480
+E20_salted_priority_hashes sha256_stream: 160
+
+Priority examples
+
+ ('E12_minikey_scan', 'minikey')
+  article:reverse:minikey:2719:22 :: SkcoBehtgnirudffodeppi
+  article:first_letters:reverse:minikey:512:30 :: S1AAXEBBWBTSESFpsaiLbaccRusdpa
+  reflected_79_76:firstlast:minikey:62:26 :: SSwyFyysofadsofwgPrmsbgbnH
+
+ ('E14_orange_geometry_byte_streams', 'sha256_stream')
+  orange_geometry:raw_mod256:sha256 :: all highres orange boxes
+  orange_geometry:highbyte:sha256 :: all highres orange boxes
+  orange_geometry:scaled255:sha256 :: all highres orange boxes
+
+ ('E15_reflected_geometry_byte_streams', 'sha256_stream')
+  reflected_geometry:raw_mod256:sha256 :: highres reflected boxes/text lengths
+  reflected_geometry:highbyte:sha256 :: highres reflected boxes/text lengths
+  reflected_geometry:scaled255:sha256 :: highres reflected boxes/text lengths
+
+ ('E18_id_shortcode_byte_streams', 'sha256_stream')
+  ids_and_shortcodes:raw_mod256:sha256 :: tweet/media/tco id streams
+  ids_and_shortcodes:highbyte:sha256 :: tweet/media/tco id streams
+  ids_and_shortcodes:scaled255:sha256 :: tweet/media/tco id streams
+
+ ('E20_salted_priority_hashes', 'sha256_stream')
+  20 BTCpriority:sha256 :: 20 BTCHave you seen the president of El Salvador trolling the International Monetary Fund (IMF) on Twitter? He's taunting them, telling them
+  20 BTC priority:sha256 :: 20 BTC Have you seen the president of El Salvador trolling the International Monetary Fund (IMF) on Twitter? He's taunting them, telling the
+  20 BTC:priority:sha256 :: 20 BTC:Have you seen the president of El Salvador trolling the International Monetary Fund (IMF) on Twitter? He's taunting them, telling the
+  20 BTC|priority:sha256 :: 20 BTC|Have you seen the president of El Salvador trolling the International Monetary Fund (IMF) on Twitter? He's taunting them, telling the
+  20 BTCpriority:sha256 :: 20 BTCbut George Clinton and James Brown clones. It's Martin Luther nailing the Vatican with ultimatums. It's the sound of skin being ripped
+  20 BTC priority:sha256 :: 20 BTC but George Clinton and James Brown clones. It's Martin Luther nailing the Vatican with ultimatums. It's the sound of skin being rippe
+  20 BTC:priority:sha256 :: 20 BTC:but George Clinton and James Brown clones. It's Martin Luther nailing the Vatican with ultimatums. It's the sound of skin being rippe
+  20 BTC|priority:sha256 :: 20 BTC|but George Clinton and James Brown clones. It's Martin Luther nailing the Vatican with ultimatums. It's the sound of skin being rippe
+
+BIP39 candidates: 125 Counter({'E19_id_shortcode_bip39_indices': 61, 'E16_geometry_bip39_indices': 34, 'E17_reflected_geometry_bip39_indices': 30})

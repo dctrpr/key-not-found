@@ -1,0 +1,273 @@
+{
+  "createdAt": "2026-05-24T06:46:28",
+  "scope": "current-scan valid page 75->76 held-to-light local-warp upper-bound gate; no OCR/key/hash/seed/WIF/address/BIP39/brute force",
+  "inputs": {
+    "sourcePage75": "analysis_outputs/source_images/magazine_page_75.jpg",
+    "targetPage76": "analysis_outputs/source_images/magazine_page_76.jpg",
+    "uprightReference": "analysis_outputs/3d_article_map/page_75..76_upright.jpg",
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "c9HeaderGlyphSlotGate": "analysis_outputs/source_audit/c9_header_glyph_slot_gate/c9_header_glyph_slot_gate.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "method": {
+    "topology": "valid same-leaf page 75 mirrored into page 76",
+    "localWarpUpperBound": "each box is allowed independent dx/dy in [-120,120] px at 20 px steps",
+    "metric": "source-only feature coverage inside the target box after subtracting page-76 target features",
+    "controls": "same-size lower-page controls with the same local-shift search",
+    "overdoseSlots": "projected C9 OVERDOSE slots evaluated with the same local-shift search"
+  },
+  "activeRows": [
+    {
+      "kind": "active",
+      "target": "O4",
+      "phrase": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "bestDx": 0,
+      "bestDy": -120,
+      "bestSourceOnlyCoverage": 0.011821913,
+      "controlCount": 156,
+      "controlMedianBestSourceOnlyCoverage": 0.243620628,
+      "controlP90BestSourceOnlyCoverage": 0.809979479,
+      "controlP95BestSourceOnlyCoverage": 0.884279086,
+      "controlMaxBestSourceOnlyCoverage": 0.958154889,
+      "bestCoverageControlPercentile": 0.096153846,
+      "isAboveControlP95": false
+    },
+    {
+      "kind": "active",
+      "target": "B4",
+      "phrase": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "bestDx": -120,
+      "bestDy": 120,
+      "bestSourceOnlyCoverage": 0.003802281,
+      "controlCount": 321,
+      "controlMedianBestSourceOnlyCoverage": 0.236145943,
+      "controlP90BestSourceOnlyCoverage": 0.832214222,
+      "controlP95BestSourceOnlyCoverage": 0.951460238,
+      "controlMaxBestSourceOnlyCoverage": 0.998220209,
+      "bestCoverageControlPercentile": 0.118380062,
+      "isAboveControlP95": false
+    },
+    {
+      "kind": "active",
+      "target": "G5",
+      "phrase": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "bestDx": -80,
+      "bestDy": -100,
+      "bestSourceOnlyCoverage": 0.069253948,
+      "controlCount": 181,
+      "controlMedianBestSourceOnlyCoverage": 0.243765586,
+      "controlP90BestSourceOnlyCoverage": 0.774418121,
+      "controlP95BestSourceOnlyCoverage": 0.89744389,
+      "controlMaxBestSourceOnlyCoverage": 0.958073566,
+      "bestCoverageControlPercentile": 0.209944751,
+      "isAboveControlP95": false
+    },
+    {
+      "kind": "active",
+      "target": "O5",
+      "phrase": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "bestDx": -120,
+      "bestDy": 120,
+      "bestSourceOnlyCoverage": 0.014428341,
+      "controlCount": 106,
+      "controlMedianBestSourceOnlyCoverage": 0.242045089,
+      "controlP90BestSourceOnlyCoverage": 0.664573268,
+      "controlP95BestSourceOnlyCoverage": 0.73852657,
+      "controlMaxBestSourceOnlyCoverage": 0.91410628,
+      "bestCoverageControlPercentile": 0.047169811,
+      "isAboveControlP95": false
+    }
+  ],
+  "overdoseSlotRows": [
+    {
+      "kind": "overdose_slot",
+      "target": "slot0_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "slotIndex": 0,
+      "slotLetter": "O",
+      "box": [
+        294.0,
+        2176.81,
+        538.5697177074414,
+        3023.73
+      ],
+      "bestDx": -120,
+      "bestDy": 100,
+      "bestSourceOnlyCoverage": 0.002727514
+    },
+    {
+      "kind": "overdose_slot",
+      "target": "slot1_V",
+      "phrase": "C9 projected OVERDOSE slot V",
+      "slotIndex": 1,
+      "slotLetter": "V",
+      "box": [
+        538.5697177074414,
+        2176.81,
+        783.0000000000016,
+        3023.73
+      ],
+      "bestDx": -120,
+      "bestDy": 100,
+      "bestSourceOnlyCoverage": 0.044240037
+    },
+    {
+      "kind": "overdose_slot",
+      "target": "slot2_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "slotIndex": 2,
+      "slotLetter": "E",
+      "box": [
+        783.0000000000016,
+        2176.81,
+        1027.569717707443,
+        3023.73
+      ],
+      "bestDx": -120,
+      "bestDy": 100,
+      "bestSourceOnlyCoverage": 0.12312363
+    },
+    {
+      "kind": "overdose_slot",
+      "target": "slot3_R",
+      "phrase": "C9 projected OVERDOSE slot R",
+      "slotIndex": 3,
+      "slotLetter": "R",
+      "box": [
+        1027.569717707443,
+        2176.81,
+        1271.9999999999968,
+        3023.73
+      ],
+      "bestDx": 0,
+      "bestDy": 100,
+      "bestSourceOnlyCoverage": 0.130586254
+    },
+    {
+      "kind": "overdose_slot",
+      "target": "slot4_D",
+      "phrase": "C9 projected OVERDOSE slot D",
+      "slotIndex": 4,
+      "slotLetter": "D",
+      "box": [
+        1271.9999999999968,
+        2176.81,
+        1516.5697177074383,
+        3023.73
+      ],
+      "bestDx": -120,
+      "bestDy": 20,
+      "bestSourceOnlyCoverage": 0.144389562
+    },
+    {
+      "kind": "overdose_slot",
+      "target": "slot5_O",
+      "phrase": "C9 projected OVERDOSE slot O",
+      "slotIndex": 5,
+      "slotLetter": "O",
+      "box": [
+        1516.5697177074383,
+        2176.81,
+        1760.9999999999984,
+        3023.73
+      ],
+      "bestDx": -120,
+      "bestDy": 20,
+      "bestSourceOnlyCoverage": 0.221417926
+    },
+    {
+      "kind": "overdose_slot",
+      "target": "slot6_S",
+      "phrase": "C9 projected OVERDOSE slot S",
+      "slotIndex": 6,
+      "slotLetter": "S",
+      "box": [
+        1760.9999999999984,
+        2176.81,
+        2005.5697177074398,
+        3023.73
+      ],
+      "bestDx": 0,
+      "bestDy": 60,
+      "bestSourceOnlyCoverage": 0.257470544
+    },
+    {
+      "kind": "overdose_slot",
+      "target": "slot7_E",
+      "phrase": "C9 projected OVERDOSE slot E",
+      "slotIndex": 7,
+      "slotLetter": "E",
+      "box": [
+        2005.5697177074398,
+        2176.81,
+        2250.0,
+        3023.73
+      ],
+      "bestDx": 120,
+      "bestDy": 60,
+      "bestSourceOnlyCoverage": 0.210497029
+    }
+  ],
+  "summary": {
+    "decision": "valid_leaf_local_warp_no_selector",
+    "activeBoxCount": 4,
+    "overdoseSlotBoxCount": 8,
+    "shiftCount": 169,
+    "maxActiveBestSourceOnlyCoverage": 0.069253948,
+    "minActiveBestSourceOnlyCoverage": 0.003802281,
+    "meanActiveBestSourceOnlyCoverage": 0.024826621,
+    "activeAboveControlP95Count": 0,
+    "activeAtLeast10Count": 0,
+    "activeAtLeast25Count": 0,
+    "maxActiveControlPercentile": 0.209944751,
+    "maxControlBestSourceOnlyCoverage": 0.998220209,
+    "activeDxRange": 120,
+    "activeDyRange": 240,
+    "maxOverdoseSlotBestSourceOnlyCoverage": 0.257470544,
+    "overdoseSlotAtLeast25Count": 1,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0,
+    "localWarpFingerprint": "active=4|slots=8|shifts=169|activeMax=0.0693|activeMin=0.0038|activeMean=0.0248|activeP95=0|active10=0|active25=0|pctMax=0.210|controlMax=0.9982|warpRange=120/240|slotMax=0.2575|slot25=1|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "decision": {
+    "currentScanValidLeafLocalWarpGate": "valid_leaf_local_warp_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Even with per-box local translation as a generous upper bound for page curl/warp, all four active boxes stay below their same-size control p95 and below 10% source-only coverage. Control boxes can be made much stronger under the same rule.",
+    "nextMove": "Treat local held-to-light warp/curl compensation as closed for the current scan. Further progress needs distinct source/original-layout material or raw clue wording that names the transform, unit, and order."
+  },
+  "fingerprint": "active=4|slots=8|shifts=169|activeMax=0.0693|activeMin=0.0038|activeMean=0.0248|activeP95=0|active10=0|active25=0|pctMax=0.210|controlMax=0.9982|warpRange=120/240|slotMax=0.2575|slot25=1|sourceR3=0|triggers=0/9|selectors=0",
+  "sheet": "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_gate/current_scan_valid_leaf_local_warp_gate_sheet.jpg",
+  "panelPaths": [
+    "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_gate/O4_local_warp_panel.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_gate/B4_local_warp_panel.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_gate/G5_local_warp_panel.jpg",
+    "analysis_outputs/source_audit/current_scan_valid_leaf_local_warp_gate/O5_local_warp_panel.jpg"
+  ]
+}

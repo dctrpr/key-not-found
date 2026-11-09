@@ -1,0 +1,735 @@
+{
+  "createdAt": "2026-05-21T04:51:40",
+  "scope": "3D reflected all-four carrier content gate; no new OCR, no extraction, no key derivation, no hashing",
+  "inputs": {
+    "article3dMap": "analysis_outputs/3d_article_map/article_3d_map_data.json",
+    "reflectionLinePitchStackGate": "analysis_outputs/3d_article_map/reflection_line_pitch_stack_gate/reflection_line_pitch_stack_gate.json",
+    "activeTargetCropCompletion": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json"
+  },
+  "activeTargets": [
+    {
+      "id": "buying_dip",
+      "label": "O4 buying the dip",
+      "phrase": "buying the dip",
+      "source": "highres_highlight_audit.visualOrangeRows.p76_orange_4",
+      "box": [
+        1334,
+        2177,
+        1801,
+        2225
+      ],
+      "crop": [
+        1120,
+        2125,
+        1910,
+        2265
+      ],
+      "color": "#ff9b2e",
+      "note": "Completes the prior crop-pack gap for O4.",
+      "output": "analysis_outputs/source_audit/page76_active_target_crop_completion/buying_dip_crop.jpg",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "visualState": "Y",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "yellow": 14
+      }
+    },
+    {
+      "id": "one_billion",
+      "label": "B4 $1 billion",
+      "phrase": "$1 billion",
+      "source": "full-page visual inspection; old projected grey box was known wrong",
+      "box": [
+        428,
+        2398,
+        691,
+        2445
+      ],
+      "crop": [
+        250,
+        2350,
+        1520,
+        2460
+      ],
+      "color": "#8f98a5",
+      "note": "Uses direct full-page visual boxing because old p76_grey_4 projection landed on unrelated text.",
+      "output": "analysis_outputs/source_audit/page76_active_target_crop_completion/one_billion_crop.jpg",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "visualState": "K",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "black": 10
+      }
+    },
+    {
+      "id": "volcano_bonds",
+      "label": "G5 Volcano Bonds",
+      "phrase": "Volcano Bonds",
+      "source": "page76_priority_crop_pack.L27_G5_pair",
+      "box": [
+        795,
+        2544,
+        1196,
+        2592
+      ],
+      "crop": [
+        720,
+        2505,
+        1650,
+        2625
+      ],
+      "color": "#8f98a5",
+      "note": "Uses newer priority crop/manual box rather than old projected grey coordinates.",
+      "output": "analysis_outputs/source_audit/page76_active_target_crop_completion/volcano_bonds_crop.jpg",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "visualState": "K",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "black": 13
+      }
+    },
+    {
+      "id": "shitcoiner_heart",
+      "label": "O5 shitcoiner at heart",
+      "phrase": "shitcoiner at heart",
+      "source": "highres_highlight_audit.visualOrangeRows.p76_orange_5 + page76_priority_crop_pack.L32_O5_primary",
+      "box": [
+        1040,
+        2932,
+        1661,
+        2982
+      ],
+      "crop": [
+        850,
+        2860,
+        1770,
+        3038
+      ],
+      "color": "#ff9b2e",
+      "note": "Primary lower-corridor target already covered by priority crop pack.",
+      "output": "analysis_outputs/source_audit/page76_active_target_crop_completion/shitcoiner_heart_crop.jpg",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "visualState": "Y",
+      "docmDominantFont": "Typeka",
+      "docmBoldFraction": 1.0,
+      "docmHighlights": {
+        "yellow": 19
+      }
+    }
+  ],
+  "summary": {
+    "carrierCount": 3,
+    "activeSliceCount": 12,
+    "activeTargetOrder": [
+      "buying_dip",
+      "one_billion",
+      "volcano_bonds",
+      "shitcoiner_heart"
+    ],
+    "activePageLines": [
+      22,
+      25,
+      27,
+      32
+    ],
+    "activeLineGapPattern": [
+      3,
+      2,
+      5
+    ],
+    "commonShiftGapPatterns": [
+      [
+        3,
+        2,
+        5
+      ]
+    ],
+    "allCarrierShiftGapsMatchPageLineGaps": true,
+    "uniqueInferredBaseLines": [
+      20,
+      21
+    ],
+    "sliceWordCountTotal": 78,
+    "sliceNonTargetWordCountTotal": 69,
+    "targetPhraseIsolatedSliceCount": 0,
+    "strictInstructionHitCount": 0,
+    "strictInstructionHits": [],
+    "selectorUnlocked": false
+  },
+  "carrierSummaries": [
+    {
+      "reflectionId": "78_76_4",
+      "source": "78->76",
+      "carrierText": "Have you seen the president of El Salvador",
+      "activeTargetOrder": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "activePageLines": [
+        22,
+        25,
+        27,
+        32
+      ],
+      "activeLineGapPattern": [
+        3,
+        2,
+        5
+      ],
+      "activeShiftPattern": [
+        2,
+        5,
+        7,
+        12
+      ],
+      "activeShiftGapPattern": [
+        3,
+        2,
+        5
+      ],
+      "shiftGapsMatchPageLineGaps": true,
+      "inferredBaseLinesByTarget": {
+        "buying_dip": 20,
+        "one_billion": 20,
+        "volcano_bonds": 20,
+        "shitcoiner_heart": 20
+      },
+      "inferredBaseLine": 20,
+      "singleBaseLine": true,
+      "sliceWordCounts": [
+        7,
+        8,
+        6,
+        5
+      ],
+      "sliceNonTargetWordCounts": [
+        6,
+        7,
+        6,
+        4
+      ],
+      "sliceInstructionHits": [],
+      "carrierInstructionHits": []
+    },
+    {
+      "reflectionId": "79_76_4",
+      "source": "79->76",
+      "carrierText": "Have you seen the president of El Salvador",
+      "activeTargetOrder": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "activePageLines": [
+        22,
+        25,
+        27,
+        32
+      ],
+      "activeLineGapPattern": [
+        3,
+        2,
+        5
+      ],
+      "activeShiftPattern": [
+        2,
+        5,
+        7,
+        12
+      ],
+      "activeShiftGapPattern": [
+        3,
+        2,
+        5
+      ],
+      "shiftGapsMatchPageLineGaps": true,
+      "inferredBaseLinesByTarget": {
+        "buying_dip": 20,
+        "one_billion": 20,
+        "volcano_bonds": 20,
+        "shitcoiner_heart": 20
+      },
+      "inferredBaseLine": 20,
+      "singleBaseLine": true,
+      "sliceWordCounts": [
+        7,
+        8,
+        6,
+        5
+      ],
+      "sliceNonTargetWordCounts": [
+        6,
+        7,
+        6,
+        4
+      ],
+      "sliceInstructionHits": [],
+      "carrierInstructionHits": []
+    },
+    {
+      "reflectionId": "79_76_5",
+      "source": "79->76",
+      "carrierText": "trolling the International Monetary Fund (IMF) on Twitter? taunting them, telling them he's ByiiREeraipy\"",
+      "activeTargetOrder": [
+        "buying_dip",
+        "one_billion",
+        "volcano_bonds",
+        "shitcoiner_heart"
+      ],
+      "activePageLines": [
+        22,
+        25,
+        27,
+        32
+      ],
+      "activeLineGapPattern": [
+        3,
+        2,
+        5
+      ],
+      "activeShiftPattern": [
+        1,
+        4,
+        6,
+        11
+      ],
+      "activeShiftGapPattern": [
+        3,
+        2,
+        5
+      ],
+      "shiftGapsMatchPageLineGaps": true,
+      "inferredBaseLinesByTarget": {
+        "buying_dip": 21,
+        "one_billion": 21,
+        "volcano_bonds": 21,
+        "shitcoiner_heart": 21
+      },
+      "inferredBaseLine": 21,
+      "singleBaseLine": true,
+      "sliceWordCounts": [
+        7,
+        8,
+        6,
+        5
+      ],
+      "sliceNonTargetWordCounts": [
+        6,
+        7,
+        6,
+        4
+      ],
+      "sliceInstructionHits": [],
+      "carrierInstructionHits": []
+    }
+  ],
+  "sliceRecords": [
+    {
+      "reflectionId": "78_76_4",
+      "source": "78->76",
+      "carrierText": "Have you seen the president of El Salvador",
+      "targetId": "buying_dip",
+      "targetLabel": "O4 buying the dip",
+      "targetPageLine": 22,
+      "targetCorridorIndex": 4,
+      "shift": 2,
+      "shiftedBox": [
+        421.62,
+        2159.61,
+        1622.77,
+        2211.15
+      ],
+      "activeBoxContacts": [
+        {
+          "targetId": "buying_dip",
+          "label": "O4 buying the dip",
+          "overlapOfTarget": 0.439931,
+          "strong": true
+        }
+      ],
+      "primaryOverlapOfTarget": 0.439931,
+      "wordCount": 7,
+      "activeTargetWordCount": 1,
+      "nonTargetWordCount": 6,
+      "wordText": "He's taunting them, telling them he's ByiiREeraipy\"",
+      "wordInstructionHits": [],
+      "carrierInstructionHits": [],
+      "targetPhraseIsolated": false
+    },
+    {
+      "reflectionId": "78_76_4",
+      "source": "78->76",
+      "carrierText": "Have you seen the president of El Salvador",
+      "targetId": "one_billion",
+      "targetLabel": "B4 $1 billion",
+      "targetPageLine": 25,
+      "targetCorridorIndex": 7,
+      "shift": 5,
+      "shiftedBox": [
+        421.62,
+        2380.8,
+        1622.77,
+        2432.34
+      ],
+      "activeBoxContacts": [
+        {
+          "targetId": "one_billion",
+          "label": "B4 $1 billion",
+          "overlapOfTarget": 0.730638,
+          "strong": true
+        }
+      ],
+      "primaryOverlapOfTarget": 0.730638,
+      "wordCount": 8,
+      "activeTargetWordCount": 1,
+      "nonTargetWordCount": 7,
+      "wordText": "eis in bitcoin — that he should sell",
+      "wordInstructionHits": [],
+      "carrierInstructionHits": [],
+      "targetPhraseIsolated": false
+    },
+    {
+      "reflectionId": "78_76_4",
+      "source": "78->76",
+      "carrierText": "Have you seen the president of El Salvador",
+      "targetId": "volcano_bonds",
+      "targetLabel": "G5 Volcano Bonds",
+      "targetPageLine": 27,
+      "targetCorridorIndex": 9,
+      "shift": 7,
+      "shiftedBox": [
+        421.62,
+        2528.26,
+        1622.77,
+        2579.8
+      ],
+      "activeBoxContacts": [
+        {
+          "targetId": "volcano_bonds",
+          "label": "G5 Volcano Bonds",
+          "overlapOfTarget": 0.745833,
+          "strong": true
+        }
+      ],
+      "primaryOverlapOfTarget": 0.745833,
+      "wordCount": 6,
+      "activeTargetWordCount": 0,
+      "nonTargetWordCount": 6,
+      "wordText": "collateralized to pay off the IMF",
+      "wordInstructionHits": [],
+      "carrierInstructionHits": [],
+      "targetPhraseIsolated": false
+    },
+    {
+      "reflectionId": "78_76_4",
+      "source": "78->76",
+      "carrierText": "Have you seen the president of El Salvador",
+      "targetId": "shitcoiner_heart",
+      "targetLabel": "O5 shitcoiner at heart",
+      "targetPageLine": 32,
+      "targetCorridorIndex": 14,
+      "shift": 12,
+      "shiftedBox": [
+        421.62,
+        2896.91,
+        1622.77,
+        2948.45
+      ],
+      "activeBoxContacts": [
+        {
+          "targetId": "shitcoiner_heart",
+          "label": "O5 shitcoiner at heart",
+          "overlapOfTarget": 0.308746,
+          "strong": true
+        }
+      ],
+      "primaryOverlapOfTarget": 0.308746,
+      "wordCount": 5,
+      "activeTargetWordCount": 1,
+      "nonTargetWordCount": 4,
+      "wordText": "Maybe because he's a siukbeodmensertslveaarty",
+      "wordInstructionHits": [],
+      "carrierInstructionHits": [],
+      "targetPhraseIsolated": false
+    },
+    {
+      "reflectionId": "79_76_4",
+      "source": "79->76",
+      "carrierText": "Have you seen the president of El Salvador",
+      "targetId": "buying_dip",
+      "targetLabel": "O4 buying the dip",
+      "targetPageLine": 22,
+      "targetCorridorIndex": 4,
+      "shift": 2,
+      "shiftedBox": [
+        508.31,
+        2169.67,
+        1916.78,
+        2243.84
+      ],
+      "activeBoxContacts": [
+        {
+          "targetId": "buying_dip",
+          "label": "O4 buying the dip",
+          "overlapOfTarget": 1.0,
+          "strong": true
+        }
+      ],
+      "primaryOverlapOfTarget": 1.0,
+      "wordCount": 7,
+      "activeTargetWordCount": 1,
+      "nonTargetWordCount": 6,
+      "wordText": "He's taunting them, telling them he's ByiiREeraipy\"",
+      "wordInstructionHits": [],
+      "carrierInstructionHits": [],
+      "targetPhraseIsolated": false
+    },
+    {
+      "reflectionId": "79_76_4",
+      "source": "79->76",
+      "carrierText": "Have you seen the president of El Salvador",
+      "targetId": "one_billion",
+      "targetLabel": "B4 $1 billion",
+      "targetPageLine": 25,
+      "targetCorridorIndex": 7,
+      "shift": 5,
+      "shiftedBox": [
+        508.31,
+        2390.86,
+        1916.78,
+        2465.03
+      ],
+      "activeBoxContacts": [
+        {
+          "targetId": "one_billion",
+          "label": "B4 $1 billion",
+          "overlapOfTarget": 0.694639,
+          "strong": true
+        }
+      ],
+      "primaryOverlapOfTarget": 0.694639,
+      "wordCount": 8,
+      "activeTargetWordCount": 1,
+      "nonTargetWordCount": 7,
+      "wordText": "eis in bitcoin — that he should sell",
+      "wordInstructionHits": [],
+      "carrierInstructionHits": [],
+      "targetPhraseIsolated": false
+    },
+    {
+      "reflectionId": "79_76_4",
+      "source": "79->76",
+      "carrierText": "Have you seen the president of El Salvador",
+      "targetId": "volcano_bonds",
+      "targetLabel": "G5 Volcano Bonds",
+      "targetPageLine": 27,
+      "targetCorridorIndex": 9,
+      "shift": 7,
+      "shiftedBox": [
+        508.31,
+        2538.32,
+        1916.78,
+        2612.49
+      ],
+      "activeBoxContacts": [
+        {
+          "targetId": "volcano_bonds",
+          "label": "G5 Volcano Bonds",
+          "overlapOfTarget": 1.0,
+          "strong": true
+        }
+      ],
+      "primaryOverlapOfTarget": 1.0,
+      "wordCount": 6,
+      "activeTargetWordCount": 0,
+      "nonTargetWordCount": 6,
+      "wordText": "collateralized to pay off the IMF",
+      "wordInstructionHits": [],
+      "carrierInstructionHits": [],
+      "targetPhraseIsolated": false
+    },
+    {
+      "reflectionId": "79_76_4",
+      "source": "79->76",
+      "carrierText": "Have you seen the president of El Salvador",
+      "targetId": "shitcoiner_heart",
+      "targetLabel": "O5 shitcoiner at heart",
+      "targetPageLine": 32,
+      "targetCorridorIndex": 14,
+      "shift": 12,
+      "shiftedBox": [
+        508.31,
+        2906.97,
+        1916.78,
+        2981.14
+      ],
+      "activeBoxContacts": [
+        {
+          "targetId": "shitcoiner_heart",
+          "label": "O5 shitcoiner at heart",
+          "overlapOfTarget": 0.9828,
+          "strong": true
+        }
+      ],
+      "primaryOverlapOfTarget": 0.9828,
+      "wordCount": 5,
+      "activeTargetWordCount": 1,
+      "nonTargetWordCount": 4,
+      "wordText": "Maybe because he's a siukbeodmensertslveaarty",
+      "wordInstructionHits": [],
+      "carrierInstructionHits": [],
+      "targetPhraseIsolated": false
+    },
+    {
+      "reflectionId": "79_76_5",
+      "source": "79->76",
+      "carrierText": "trolling the International Monetary Fund (IMF) on Twitter? taunting them, telling them he's ByiiREeraipy\"",
+      "targetId": "buying_dip",
+      "targetLabel": "O4 buying the dip",
+      "targetPageLine": 22,
+      "targetCorridorIndex": 4,
+      "shift": 1,
+      "shiftedBox": [
+        508.31,
+        2170.11,
+        1916.78,
+        2250.56
+      ],
+      "activeBoxContacts": [
+        {
+          "targetId": "buying_dip",
+          "label": "O4 buying the dip",
+          "overlapOfTarget": 1.0,
+          "strong": true
+        }
+      ],
+      "primaryOverlapOfTarget": 1.0,
+      "wordCount": 7,
+      "activeTargetWordCount": 1,
+      "nonTargetWordCount": 6,
+      "wordText": "He's taunting them, telling them he's ByiiREeraipy\"",
+      "wordInstructionHits": [],
+      "carrierInstructionHits": [],
+      "targetPhraseIsolated": false
+    },
+    {
+      "reflectionId": "79_76_5",
+      "source": "79->76",
+      "carrierText": "trolling the International Monetary Fund (IMF) on Twitter? taunting them, telling them he's ByiiREeraipy\"",
+      "targetId": "one_billion",
+      "targetLabel": "B4 $1 billion",
+      "targetPageLine": 25,
+      "targetCorridorIndex": 7,
+      "shift": 4,
+      "shiftedBox": [
+        508.31,
+        2391.3,
+        1916.78,
+        2471.75
+      ],
+      "activeBoxContacts": [
+        {
+          "targetId": "one_billion",
+          "label": "B4 $1 billion",
+          "overlapOfTarget": 0.694639,
+          "strong": true
+        }
+      ],
+      "primaryOverlapOfTarget": 0.694639,
+      "wordCount": 8,
+      "activeTargetWordCount": 1,
+      "nonTargetWordCount": 7,
+      "wordText": "eis in bitcoin — that he should sell",
+      "wordInstructionHits": [],
+      "carrierInstructionHits": [],
+      "targetPhraseIsolated": false
+    },
+    {
+      "reflectionId": "79_76_5",
+      "source": "79->76",
+      "carrierText": "trolling the International Monetary Fund (IMF) on Twitter? taunting them, telling them he's ByiiREeraipy\"",
+      "targetId": "volcano_bonds",
+      "targetLabel": "G5 Volcano Bonds",
+      "targetPageLine": 27,
+      "targetCorridorIndex": 9,
+      "shift": 6,
+      "shiftedBox": [
+        508.31,
+        2538.76,
+        1916.78,
+        2619.21
+      ],
+      "activeBoxContacts": [
+        {
+          "targetId": "volcano_bonds",
+          "label": "G5 Volcano Bonds",
+          "overlapOfTarget": 1.0,
+          "strong": true
+        }
+      ],
+      "primaryOverlapOfTarget": 1.0,
+      "wordCount": 6,
+      "activeTargetWordCount": 0,
+      "nonTargetWordCount": 6,
+      "wordText": "collateralized to pay off the IMF",
+      "wordInstructionHits": [],
+      "carrierInstructionHits": [],
+      "targetPhraseIsolated": false
+    },
+    {
+      "reflectionId": "79_76_5",
+      "source": "79->76",
+      "carrierText": "trolling the International Monetary Fund (IMF) on Twitter? taunting them, telling them he's ByiiREeraipy\"",
+      "targetId": "shitcoiner_heart",
+      "targetLabel": "O5 shitcoiner at heart",
+      "targetPageLine": 32,
+      "targetCorridorIndex": 14,
+      "shift": 11,
+      "shiftedBox": [
+        508.31,
+        2907.41,
+        1916.78,
+        2987.86
+      ],
+      "activeBoxContacts": [
+        {
+          "targetId": "shitcoiner_heart",
+          "label": "O5 shitcoiner at heart",
+          "overlapOfTarget": 1.0,
+          "strong": true
+        }
+      ],
+      "primaryOverlapOfTarget": 1.0,
+      "wordCount": 5,
+      "activeTargetWordCount": 1,
+      "nonTargetWordCount": 4,
+      "wordText": "Maybe because he's a siukbeodmensertslveaarty",
+      "wordInstructionHits": [],
+      "carrierInstructionHits": [],
+      "targetPhraseIsolated": false
+    }
+  ],
+  "assessment": [
+    "The all-four reflected carriers infer ordinary base rows L20/L21; the active shift gaps match page-line gaps 3/2/5 because the operation is walking article rows by line pitch.",
+    "None of the shifted slices isolates a target phrase: every active slice carries surrounding row prose, and the 12 slices include more non-target words than target-box OCR words.",
+    "The shifted slice text and the carrier text contain 0 strict instruction terms.",
+    "The 3D OCR in these shifted slices is not text authority: the trusted G5 target is geometrically hit, but its target phrase is not recovered as clean OCR text inside the slices.",
+    "This keeps reflected carriers useful as orientation/row-registration evidence only, not as a source-backed unit/order selector."
+  ],
+  "decision": {
+    "reflectionShiftedCarrierContentGate": "shifted_carriers_are_row_context_not_selector",
+    "selectorUnlocked": false,
+    "nextMove": "Do not promote shifted 3D reflection carrier rows as extraction permission. Reopen only if a source/clue names a specific carrier, base row, target-shift sequence, and unit/order rule."
+  },
+  "sheet": "analysis_outputs/3d_article_map/reflection_shifted_carrier_content_gate/reflection_shifted_carrier_content_gate_sheet.jpg"
+}

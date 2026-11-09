@@ -1,0 +1,102 @@
+{
+  "createdAt": "2026-05-20T07:01:01",
+  "scope": "M3/M4 paired mark wedge/bracket test; no key derivation",
+  "m3": {
+    "box": [
+      2172,
+      2619,
+      2544,
+      2884
+    ],
+    "center": [
+      2358.0,
+      2751.5
+    ],
+    "axisAngleDeg": 173.75,
+    "axisVector": [
+      -0.994052,
+      0.108906
+    ]
+  },
+  "m4": {
+    "box": [
+      1827,
+      3003,
+      2120,
+      3182
+    ],
+    "center": [
+      1973.5,
+      3092.5
+    ],
+    "axisAngleDeg": -168.84,
+    "axisVector": [
+      -0.9811,
+      -0.1935
+    ]
+  },
+  "axisIntersectionVertex": [
+    999.28,
+    2900.36
+  ],
+  "selectedWords": [
+    {
+      "text": "guy",
+      "displayText": "guy",
+      "box": [
+        1493.61,
+        2827.07,
+        1563.72,
+        2871.64
+      ],
+      "center": [
+        1528.66,
+        2849.36
+      ]
+    },
+    {
+      "text": "siukbeodmensertslveaarty",
+      "displayText": "[O5: shitcoiner at heart]",
+      "box": [
+        1059.39,
+        2897.06,
+        1620.98,
+        2981.74
+      ],
+      "center": [
+        1340.18,
+        2939.4
+      ]
+    }
+  ],
+  "selectedHighlights": [
+    {
+      "id": "p76_orange_5",
+      "kind": "orange",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "bracketSampleFraction": 0.5714,
+      "centerInside": true
+    }
+  ],
+  "selectedTrustedGrey": [],
+  "streams": {
+    "bracketedWordsLeftToRight": "guy [O5: shitcoiner at heart]",
+    "bracketedWordsReverse": "[O5: shitcoiner at heart] guy",
+    "highlightIds": "p76_orange_5"
+  },
+  "instructionTermHits": {},
+  "overlay": "analysis_outputs/source_audit/m3_m4_pair_bracket/m3_m4_pair_bracket_overlay.jpg",
+  "assessment": [
+    "M3 and M4 axes are not random parallel scratches: they intersect near x≈998, y≈2901, just left of the final orange line.",
+    "The right-opening wedge between them selects the final page-76 orange unit, O5 `shitcoiner at heart`, plus the nearby preceding word `guy` from the `trust that guy` row.",
+    "It does not include G5 `Volcano Bonds`; the M3/M4 pair chooses O5 rather than the grey/orange pair together.",
+    "The bracketed stream is visible corridor prose (`guy / shitcoiner at heart`) and contains no read/take/word/letter/key instruction.",
+    "This upgrades O5 as the endpoint/target of the lower-right mark system, but the extraction unit is still missing."
+  ],
+  "nextMove": "Treat O5 as confirmed endpoint, then step back to ask what source rule turns the confirmed targets (G5/O5, p78 frame, and Schott mirror) into an ordered extraction unit. Avoid reopening M3/M4 as key text."
+}

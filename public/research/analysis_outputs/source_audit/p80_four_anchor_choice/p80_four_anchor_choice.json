@@ -1,0 +1,365 @@
+{
+  "createdAt": "2026-05-20T19:27:36",
+  "scope": "bounded test of whether p80 package/pill copy chooses among the four active page-76 anchors; no key derivation",
+  "sources": {
+    "p80PackageCopy": "analysis_outputs/3d_article_map/p80_package_copy_audit.json",
+    "anchorAdjacency": "analysis_outputs/source_audit/page76_anchor_adjacency_units/page76_anchor_adjacency_units.json",
+    "obboSignature": "analysis_outputs/comparison_articles/obbo_anchor_signature/obbo_anchor_signature.json"
+  },
+  "anchorOrder": [
+    "buying_dip",
+    "one_billion",
+    "volcano_bonds",
+    "shitcoiner_heart"
+  ],
+  "obboSummary": {
+    "pagesWithObbo": 3,
+    "issue24PagesWithObbo": 3,
+    "independentPagesWithObbo": 0,
+    "page76BestScore": 0.015,
+    "bestIndependentScore": null,
+    "bestIndependent": null
+  },
+  "termMatches": [
+    {
+      "label": "product",
+      "text": "Bitcoin FixesThis",
+      "tokens": [
+        "bitcoin",
+        "fixesthi"
+      ],
+      "numbers": [],
+      "bestMatches": [
+        {
+          "anchorId": "one_billion",
+          "anchor": "$1 billion",
+          "score": 1,
+          "labelOverlap": [],
+          "contextOverlap": [
+            "bitcoin"
+          ],
+          "substringHits": []
+        },
+        {
+          "anchorId": "buying_dip",
+          "anchor": "buying the dip",
+          "score": 0,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": []
+        },
+        {
+          "anchorId": "shitcoiner_heart",
+          "anchor": "shitcoiner at heart",
+          "score": 0,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": []
+        },
+        {
+          "anchorId": "volcano_bonds",
+          "anchor": "Volcano Bonds",
+          "score": 0,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": []
+        }
+      ]
+    },
+    {
+      "label": "symptoms",
+      "text": "NAUSEA HEARTBURN INDIGESTION UPSET STOMACH SHITCOINS",
+      "tokens": [
+        "nausea",
+        "heartburn",
+        "indigestion",
+        "upset",
+        "stomach",
+        "shitcoin"
+      ],
+      "numbers": [],
+      "bestMatches": [
+        {
+          "anchorId": "shitcoiner_heart",
+          "anchor": "shitcoiner at heart",
+          "score": 8,
+          "labelOverlap": [
+            "shitcoin"
+          ],
+          "contextOverlap": [],
+          "substringHits": [
+            "heartburn<->heart",
+            "shitcoin<->shitcoiner"
+          ]
+        },
+        {
+          "anchorId": "buying_dip",
+          "anchor": "buying the dip",
+          "score": 0,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": []
+        },
+        {
+          "anchorId": "one_billion",
+          "anchor": "$1 billion",
+          "score": 0,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": []
+        },
+        {
+          "anchorId": "volcano_bonds",
+          "anchor": "Volcano Bonds",
+          "score": 0,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": []
+        }
+      ]
+    },
+    {
+      "label": "symptom:HEARTBURN",
+      "text": "HEARTBURN",
+      "tokens": [
+        "heartburn"
+      ],
+      "numbers": [],
+      "bestMatches": [
+        {
+          "anchorId": "shitcoiner_heart",
+          "anchor": "shitcoiner at heart",
+          "score": 2,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": [
+            "heartburn<->heart"
+          ]
+        },
+        {
+          "anchorId": "buying_dip",
+          "anchor": "buying the dip",
+          "score": 0,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": []
+        },
+        {
+          "anchorId": "one_billion",
+          "anchor": "$1 billion",
+          "score": 0,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": []
+        },
+        {
+          "anchorId": "volcano_bonds",
+          "anchor": "Volcano Bonds",
+          "score": 0,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": []
+        }
+      ]
+    },
+    {
+      "label": "symptom:SHITCOINS",
+      "text": "SHITCOINS",
+      "tokens": [
+        "shitcoin"
+      ],
+      "numbers": [],
+      "bestMatches": [
+        {
+          "anchorId": "shitcoiner_heart",
+          "anchor": "shitcoiner at heart",
+          "score": 6,
+          "labelOverlap": [
+            "shitcoin"
+          ],
+          "contextOverlap": [],
+          "substringHits": [
+            "shitcoin<->shitcoiner"
+          ]
+        },
+        {
+          "anchorId": "buying_dip",
+          "anchor": "buying the dip",
+          "score": 0,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": []
+        },
+        {
+          "anchorId": "one_billion",
+          "anchor": "$1 billion",
+          "score": 0,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": []
+        },
+        {
+          "anchorId": "volcano_bonds",
+          "anchor": "Volcano Bonds",
+          "score": 0,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": []
+        }
+      ]
+    }
+  ],
+  "symptomHits": [
+    {
+      "label": "symptom:HEARTBURN",
+      "text": "HEARTBURN",
+      "tokens": [
+        "heartburn"
+      ],
+      "numbers": [],
+      "bestMatches": [
+        {
+          "anchorId": "shitcoiner_heart",
+          "anchor": "shitcoiner at heart",
+          "score": 2,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": [
+            "heartburn<->heart"
+          ]
+        },
+        {
+          "anchorId": "buying_dip",
+          "anchor": "buying the dip",
+          "score": 0,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": []
+        },
+        {
+          "anchorId": "one_billion",
+          "anchor": "$1 billion",
+          "score": 0,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": []
+        },
+        {
+          "anchorId": "volcano_bonds",
+          "anchor": "Volcano Bonds",
+          "score": 0,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": []
+        }
+      ]
+    },
+    {
+      "label": "symptom:SHITCOINS",
+      "text": "SHITCOINS",
+      "tokens": [
+        "shitcoin"
+      ],
+      "numbers": [],
+      "bestMatches": [
+        {
+          "anchorId": "shitcoiner_heart",
+          "anchor": "shitcoiner at heart",
+          "score": 6,
+          "labelOverlap": [
+            "shitcoin"
+          ],
+          "contextOverlap": [],
+          "substringHits": [
+            "shitcoin<->shitcoiner"
+          ]
+        },
+        {
+          "anchorId": "buying_dip",
+          "anchor": "buying the dip",
+          "score": 0,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": []
+        },
+        {
+          "anchorId": "one_billion",
+          "anchor": "$1 billion",
+          "score": 0,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": []
+        },
+        {
+          "anchorId": "volcano_bonds",
+          "anchor": "Volcano Bonds",
+          "score": 0,
+          "labelOverlap": [],
+          "contextOverlap": [],
+          "substringHits": []
+        }
+      ]
+    }
+  ],
+  "hitByAnchor": {
+    "buying_dip": [],
+    "one_billion": [
+      "product"
+    ],
+    "volcano_bonds": [],
+    "shitcoiner_heart": [
+      "symptoms",
+      "symptom:HEARTBURN",
+      "symptom:SHITCOINS"
+    ]
+  },
+  "numbers": [
+    5,
+    100,
+    16,
+    473,
+    6,
+    80
+  ],
+  "moduloFourChoices": [
+    {
+      "number": 5,
+      "oneBasedModuloAnchor": "buying_dip",
+      "zeroBasedModuloAnchor": "one_billion"
+    },
+    {
+      "number": 100,
+      "oneBasedModuloAnchor": "shitcoiner_heart",
+      "zeroBasedModuloAnchor": "buying_dip"
+    },
+    {
+      "number": 16,
+      "oneBasedModuloAnchor": "shitcoiner_heart",
+      "zeroBasedModuloAnchor": "buying_dip"
+    },
+    {
+      "number": 473,
+      "oneBasedModuloAnchor": "buying_dip",
+      "zeroBasedModuloAnchor": "one_billion"
+    },
+    {
+      "number": 6,
+      "oneBasedModuloAnchor": "one_billion",
+      "zeroBasedModuloAnchor": "volcano_bonds"
+    },
+    {
+      "number": 80,
+      "oneBasedModuloAnchor": "shitcoiner_heart",
+      "zeroBasedModuloAnchor": "buying_dip"
+    }
+  ],
+  "assessment": [
+    "The p80 copy does not choose all four page-76 anchors.",
+    "Lexical signal collapses onto O5/shitcoiner at heart: SHITCOINS matches shitcoiner, and HEARTBURN weakly matches heart.",
+    "The black-anchor hits are context-only or absent: Bitcoin FixesThis touches the $1 billion line because the line contains bitcoin, while no p80 term names amount/billion/Volcano/Bonds.",
+    "The repeated number 5 conflicts with a four-anchor selector unless an extra rule supplies a fifth unit; modulo-4 number choices are arbitrary and repeat only anchors 1/4.",
+    "P80 therefore remains thematic/count corroboration, not the missing chooser for OBBO."
+  ],
+  "decision": "Do not use p80 package copy as a four-anchor chooser without a new alignment/source clue.",
+  "nextMove": "Return to geometry: inspect whether p80 bottle/package regions physically align to page 76 anchors under the existing fold/mirror models; if not, keep p80 closed."
+}

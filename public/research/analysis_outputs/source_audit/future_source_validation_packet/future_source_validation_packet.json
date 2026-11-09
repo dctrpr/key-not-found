@@ -1,0 +1,343 @@
+{
+  "createdAt": "2026-05-20T14:14:50",
+  "scope": "future source/physical validation packet; no key derivation",
+  "reviewSheet": "analysis_outputs/source_audit/future_source_validation_packet/future_source_validation_review_sheet.jpg",
+  "currentDecision": {
+    "currentScanStatusCounts": {
+      "PASS": 2,
+      "PARTIAL": 4,
+      "FAIL": 3
+    },
+    "blockingConstraints": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "sourceDeltaDecision": "no_new_source_grade_candidate",
+    "actionableUnknownSourceCount": 0
+  },
+  "constraints": [
+    {
+      "id": "C1",
+      "name": "trusted source boxes",
+      "currentStatus": "PASS",
+      "acceptance": "Any future source transform must report target boxes against these trusted units or a clearly better manual source.",
+      "futureUse": "baseline"
+    },
+    {
+      "id": "C2",
+      "name": "p78 frame signature",
+      "currentStatus": "PARTIAL",
+      "acceptance": "A valid source registration should naturally make this signature coherent while preserving the same corridor.",
+      "futureUse": "gate"
+    },
+    {
+      "id": "C3",
+      "name": "extraction unit",
+      "currentStatus": "FAIL",
+      "acceptance": "Must produce a human-readable instruction or checksum-valid compact key-like unit from a rule that follows from source/clue evidence.",
+      "futureUse": "gate"
+    },
+    {
+      "id": "C4",
+      "name": "physical leaf/spread support",
+      "currentStatus": "FAIL",
+      "acceptance": "A physical scan/photo should show real front/back, spread, bleed-through, or fold behavior that selects the corridor.",
+      "futureUse": "gate"
+    },
+    {
+      "id": "C5",
+      "name": "opener capsule provenance",
+      "currentStatus": "PARTIAL",
+      "acceptance": "A new transform should place all five ordered capsules tightly on text/selector units, or provide an explicit clue for M3/M4 binary/index use.",
+      "futureUse": "gate"
+    },
+    {
+      "id": "C6",
+      "name": "five-index locator",
+      "currentStatus": "PARTIAL",
+      "acceptance": "A future source/clue must explain how five selects a unit such as word/letter/edge/font before extraction resumes.",
+      "futureUse": "gate"
+    },
+    {
+      "id": "C7",
+      "name": "announcement media coverage",
+      "currentStatus": "PARTIAL",
+      "acceptance": "Future use of media must add a new exact unit/order not already covered by page-76 Bukele/volcano targeting.",
+      "futureUse": "gate"
+    },
+    {
+      "id": "C8",
+      "name": "Canva/source image quality",
+      "currentStatus": "FAIL",
+      "acceptance": "Need original embedded assets, higher-resolution export, browser screenshot, or physical source image.",
+      "futureUse": "gate"
+    },
+    {
+      "id": "C9",
+      "name": "orientation/source cache bridge",
+      "currentStatus": "PASS",
+      "acceptance": "Use readable/upright geometry or rotate native source/PDF images 180 degrees before applying page-76 crop coordinates.",
+      "futureUse": "baseline"
+    }
+  ],
+  "benchmarks": {
+    "page76PriorityCrops": {
+      "sheet": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_sheet.jpg",
+      "sourceImage": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+      "targetPriority": {
+        "primaryManualTarget": {
+          "lineIndex": 32,
+          "corridorIndex": 14,
+          "text": "Maybe because he's a shitcoiner at heart.",
+          "score": 32.75
+        },
+        "pairedTarget": {
+          "lineIndex": 27,
+          "corridorIndex": 9,
+          "text": "collateralized “Volcano Bonds” to pay off the IMF",
+          "score": 16.75
+        },
+        "sourceBandTarget": {
+          "lineIndex": 26,
+          "corridorIndex": 8,
+          "text": "billions worth of future bitcoin earnings",
+          "score": 10.0
+        }
+      },
+      "cropCount": 5,
+      "crops": [
+        {
+          "id": "L32_O5_primary",
+          "label": null,
+          "path": null,
+          "box": null
+        },
+        {
+          "id": "L27_G5_pair",
+          "label": null,
+          "path": null,
+          "box": null
+        },
+        {
+          "id": "L25_should_sell",
+          "label": null,
+          "path": null,
+          "box": null
+        },
+        {
+          "id": "L26_L29_source_band",
+          "label": null,
+          "path": null,
+          "box": null
+        },
+        {
+          "id": "L25_L32_frame_context",
+          "label": null,
+          "path": null,
+          "box": null
+        }
+      ]
+    },
+    "p78FrameTriContact": {
+      "overlay": "analysis_outputs/source_audit/p78_frame_tricontact_signature/p78_frame_tricontact_signature_overlay.jpg",
+      "currentFrame": [
+        1234.0,
+        2398.0,
+        2250.0,
+        2950.0
+      ],
+      "currentO5OverlapVsTarget": 0.24754,
+      "currentG5GapPx": 38.0,
+      "currentM3RightEdgeOverlapPx": 265.0,
+      "repairDx": -40.0,
+      "repairDy": 0.0,
+      "repairFrame": [
+        1194.0,
+        2398.0,
+        2210.0,
+        2950.0
+      ],
+      "repairG5OverlapVsTarget": 0.00499,
+      "repairO5OverlapVsTarget": 0.27072,
+      "repairTriContactPass": true
+    },
+    "repairedFrameFontContact": {
+      "sheet": "analysis_outputs/docm_format_sources/repaired_frame_font_contact_states/repaired_frame_font_contact_states_sheet.jpg",
+      "scenario": "nearest_grid_dx_minus_40",
+      "topDownStyles": "RRRKRRMY",
+      "exactEdgeLabels": "should sell | Volcano Bonds | shitcoiner at heart",
+      "exactEdgeStyles": "RKY",
+      "instructionHits": {}
+    },
+    "typekaTypographyAuthority": {
+      "sheet": "analysis_outputs/docm_format_sources/typeka_manual_bold_disambiguation/typeka_authority_bridge_sheet.jpg",
+      "sourceAudit": "analysis_outputs/docm_format_sources/typeka_manual_bold_disambiguation/typeka_manual_bold_disambiguation.json",
+      "panelCount": 5,
+      "keyTargets": [
+        {
+          "id": "one_billion",
+          "phrase": "$1 billion",
+          "docmDominantFont": "Typeka",
+          "docmBoldFraction": 1.0,
+          "docmMixFraction": 0.0,
+          "docmHighlights": {
+            "black": 10
+          },
+          "markdownBoldFraction": 0.0
+        },
+        {
+          "id": "volcano_bonds",
+          "phrase": "Volcano Bonds",
+          "docmDominantFont": "Typeka",
+          "docmBoldFraction": 1.0,
+          "docmMixFraction": 0.0,
+          "docmHighlights": {
+            "black": 13
+          },
+          "markdownBoldFraction": 0.0
+        },
+        {
+          "id": "novogratz",
+          "phrase": "Novogratz",
+          "docmDominantFont": "Typeka Mix",
+          "docmBoldFraction": 0.0,
+          "docmMixFraction": 1.0,
+          "docmHighlights": {
+            "none": 9
+          },
+          "markdownBoldFraction": 0.333
+        },
+        {
+          "id": "shitcoiner_heart",
+          "phrase": "shitcoiner at heart",
+          "docmDominantFont": "Typeka",
+          "docmBoldFraction": 1.0,
+          "docmMixFraction": 0.0,
+          "docmHighlights": {
+            "yellow": 19
+          },
+          "markdownBoldFraction": 1.0
+        },
+        {
+          "id": "volcano_bonds",
+          "phrase": "Volcano Bonds",
+          "docmDominantFont": "Typeka",
+          "docmBoldFraction": 1.0,
+          "docmMixFraction": 0.0,
+          "docmHighlights": {
+            "black": 13
+          },
+          "markdownBoldFraction": 0.0
+        },
+        {
+          "id": "shitcoiner_heart",
+          "phrase": "shitcoiner at heart",
+          "docmDominantFont": "Typeka",
+          "docmBoldFraction": 1.0,
+          "docmMixFraction": 0.0,
+          "docmHighlights": {
+            "yellow": 19
+          },
+          "markdownBoldFraction": 1.0
+        },
+        {
+          "id": "trust_that_guy",
+          "phrase": "I don't really trust that guy",
+          "docmDominantFont": "Typeka Mix",
+          "docmBoldFraction": 0.0,
+          "docmMixFraction": 1.0,
+          "docmHighlights": {
+            "none": 29
+          },
+          "markdownBoldFraction": 0.31
+        }
+      ],
+      "assessment": [
+        "The active visual targets should be inspected with DOCM font/highlight states, not the old Markdown-bold layer.",
+        "$1 billion and Volcano Bonds are bold/black in DOCM even though Markdown did not mark them bold.",
+        "Typeka Mix is real but appears as nearby contextual styling, not as the G5/O5 target style."
+      ]
+    },
+    "p77LinePitchNearMiss": {
+      "sourcePage": 77,
+      "sourceLabel": "It does this by monetizing",
+      "target": "O5",
+      "baselineVerticalGapPx": 71.93,
+      "contentBoxVerticalGapPx": 65.49,
+      "medianLinePitchPx": 73.73,
+      "baselineGapMinusMedianPitchPx": -1.8,
+      "p77OneLineUpO5HitCount": 1
+    },
+    "zeroHash0Hotspots": {
+      "sheet": "analysis_outputs/source_audit/zero_visual_crops/zero_visual_crops_sheet.jpg",
+      "primaryHotspot": {
+        "page": 77,
+        "token": "100,000",
+        "zeroCount": 5,
+        "visualReadFromTrustedScan": "100,000",
+        "crop": "analysis_outputs/source_audit/zero_visual_crops/01_p77_100000_highres.jpg"
+      },
+      "hotspotCount": 8
+    },
+    "p79PillFragments": {
+      "sheet": "analysis_outputs/source_audit/alternate_pdf_pill_geometry/alternate_pdf_pill_geometry_sheet.jpg",
+      "articlePage": 79,
+      "fragmentCount": 5,
+      "fragmentCenters": [
+        [
+          171.0,
+          2408.0
+        ],
+        [
+          421.5,
+          2454.5
+        ],
+        [
+          606.0,
+          2608.5
+        ],
+        [
+          437.0,
+          2780.5
+        ],
+        [
+          183.5,
+          2968.0
+        ]
+      ],
+      "assessment": [
+        "The alternate Google/OCR PDF contains the same countable five lower-left p79 pill fragments in the expected region.",
+        "Raw same-normalized positions are shifted/distorted, confirming the OCR/Google PDF is not geometry truth."
+      ]
+    }
+  },
+  "minimumReopenConditions": [
+    {
+      "condition": "C3 extraction unit",
+      "requiredEvidence": "source/clue text or source-visible layout must name a unit/order such as word, letter, line, edge, font, first/last, left/right, or equivalent",
+      "why": "Without this, local geometry only repeats target discovery."
+    },
+    {
+      "condition": "C4 physical registration",
+      "requiredEvidence": "physical scan/photo/hold-to-light/spread should create repeated direct O5/G5 contacts or improve the p77 71.93px near miss under one natural transform",
+      "why": "Current best scan gives zero true physical O5/G5 overlaps."
+    },
+    {
+      "condition": "C8 source image quality",
+      "requiredEvidence": "original Canva/export/browser/source asset must exceed thumbnail status and visibly resolve the #0, p79 pills, XX/barbed-wire, or p78 frame benchmarks",
+      "why": "The current Canva surface is only a 668x376 investigator note thumbnail."
+    },
+    {
+      "condition": "C2 p78 frame signature",
+      "requiredEvidence": "new source should naturally preserve or explain `should sell | Volcano Bonds | shitcoiner at heart`, current O5 clip, M3 right-edge cut, and dx≈-38/-40 G5 edge repair",
+      "why": "This is the compactest existing registration signature."
+    }
+  ],
+  "decision": "use_packet_before_reopening_extraction",
+  "nextMove": "When a new source appears, compare it against this packet first; only then run a named-unit extraction test."
+}

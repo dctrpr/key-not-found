@@ -1,0 +1,137 @@
+{
+  "createdAt": "2026-05-20T13:54:18",
+  "scope": "visual bridge from trusted page-76 crops to exact corrected wording; no key derivation",
+  "sheet": "analysis_outputs/3d_article_map/active_target_label_gate/target_wording_bridge_sheet.jpg",
+  "sourceGate": "analysis_outputs/3d_article_map/active_target_label_gate/active_target_label_gate.json",
+  "rows": [
+    {
+      "id": "L32_O5_primary",
+      "exactText": "Maybe because he's a shitcoiner at heart.",
+      "labelIds": [
+        "p76_shitcoiner_heart"
+      ],
+      "status": "primary O5 target; exact text absent from 3D labels",
+      "crop": "analysis_outputs/source_audit/page76_priority_crop_pack/L32_O5_primary.jpg",
+      "labels": [
+        {
+          "id": "p76_shitcoiner_heart",
+          "canonicalHasPhrase": true,
+          "threeDHasPhrase": false
+        }
+      ]
+    },
+    {
+      "id": "L27_G5_pair",
+      "exactText": "collateralized \"Volcano Bonds\" to pay off the IMF loan",
+      "labelIds": [
+        "p76_volcano_bonds",
+        "p76_imf_loan"
+      ],
+      "status": "G5 pair; Volcano Bonds absent from 3D labels, IMF loan present",
+      "crop": "analysis_outputs/source_audit/page76_priority_crop_pack/L27_G5_pair.jpg",
+      "labels": [
+        {
+          "id": "p76_volcano_bonds",
+          "canonicalHasPhrase": true,
+          "threeDHasPhrase": false
+        },
+        {
+          "id": "p76_imf_loan",
+          "canonicalHasPhrase": true,
+          "threeDHasPhrase": true
+        }
+      ]
+    },
+    {
+      "id": "L25_should_sell",
+      "exactText": "$1 billion in bitcoin - that he should sell",
+      "labelIds": [
+        "p76_one_billion",
+        "p76_should_sell"
+      ],
+      "status": "$1 billion absent from 3D labels; should sell present",
+      "crop": "analysis_outputs/source_audit/page76_priority_crop_pack/L25_should_sell.jpg",
+      "labels": [
+        {
+          "id": "p76_one_billion",
+          "canonicalHasPhrase": true,
+          "threeDHasPhrase": false
+        },
+        {
+          "id": "p76_should_sell",
+          "canonicalHasPhrase": true,
+          "threeDHasPhrase": true
+        }
+      ]
+    },
+    {
+      "id": "L26_L29_source_band",
+      "exactText": "billions worth of future bitcoin earnings / Volcano Bonds / IMF loan / Mike Novogratz",
+      "labelIds": [
+        "p76_future_earnings",
+        "p76_volcano_bonds",
+        "p76_imf_loan",
+        "p76_mike_novogratz"
+      ],
+      "status": "mixed reliability; use crop and corrected transcript for exact wording",
+      "crop": "analysis_outputs/source_audit/page76_priority_crop_pack/L26_L29_source_band.jpg",
+      "labels": [
+        {
+          "id": "p76_future_earnings",
+          "canonicalHasPhrase": true,
+          "threeDHasPhrase": true
+        },
+        {
+          "id": "p76_volcano_bonds",
+          "canonicalHasPhrase": true,
+          "threeDHasPhrase": false
+        },
+        {
+          "id": "p76_imf_loan",
+          "canonicalHasPhrase": true,
+          "threeDHasPhrase": true
+        },
+        {
+          "id": "p76_mike_novogratz",
+          "canonicalHasPhrase": true,
+          "threeDHasPhrase": true
+        }
+      ]
+    },
+    {
+      "id": "L25_L32_frame_context",
+      "exactText": "should sell -> Volcano Bonds -> shitcoiner at heart",
+      "labelIds": [
+        "p76_should_sell",
+        "p76_volcano_bonds",
+        "p76_shitcoiner_heart"
+      ],
+      "status": "compact p78-frame benchmark; registration evidence only",
+      "crop": "analysis_outputs/source_audit/page76_priority_crop_pack/L25_L32_frame_context.jpg",
+      "labels": [
+        {
+          "id": "p76_should_sell",
+          "canonicalHasPhrase": true,
+          "threeDHasPhrase": true
+        },
+        {
+          "id": "p76_volcano_bonds",
+          "canonicalHasPhrase": true,
+          "threeDHasPhrase": false
+        },
+        {
+          "id": "p76_shitcoiner_heart",
+          "canonicalHasPhrase": true,
+          "threeDHasPhrase": false
+        }
+      ]
+    }
+  ],
+  "assessment": [
+    "The active page-76 visual targets need exact transcript text, not 3D OCR labels.",
+    "The sheet preserves the current crop/geometry baselines while making the text authority explicit.",
+    "This supports future source comparison and manual inspection; it does not reopen extraction."
+  ],
+  "decision": "Use this bridge when inspecting the 3D view or future source images for the lower page-76 corridor.",
+  "nextMove": "Continue source-gated investigation; a new source/clue must still name the extraction unit/order before key work resumes."
+}

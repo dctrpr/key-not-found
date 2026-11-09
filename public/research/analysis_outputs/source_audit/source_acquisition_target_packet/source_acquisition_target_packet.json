@@ -1,0 +1,241 @@
+{
+  "createdAt": "2026-05-20T23:07:06",
+  "scope": "source acquisition target packet; no extraction/key derivation",
+  "inputs": {
+    "source_reopen": "analysis_outputs/source_audit/source_reopen_requirements/source_reopen_requirements.json",
+    "future_packet": "analysis_outputs/source_audit/future_source_validation_packet/future_source_validation_packet.json",
+    "unlock_matrix": "analysis_outputs/source_audit/active_evidence_unlock_matrix/active_evidence_unlock_matrix.json",
+    "priority_crops": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_pack.json",
+    "p78_tricontact": "analysis_outputs/source_audit/p78_frame_tricontact_signature/p78_frame_tricontact_signature.json",
+    "p78_sensitivity": "analysis_outputs/source_audit/p78_frame_trusted_target_sensitivity/p78_frame_trusted_target_sensitivity.json",
+    "p77_one_line": "analysis_outputs/source_audit/p77_one_line_near_miss/p77_one_line_near_miss.json",
+    "capsule_recurrence": "analysis_outputs/source_audit/capsule_motif_recurrence/capsule_motif_recurrence.json",
+    "p80_package": "analysis_outputs/3d_article_map/p80_package_copy_audit.json",
+    "post_unlock_arrival": "analysis_outputs/source_audit/post_unlock_source_arrival_watch/post_unlock_source_arrival_watch.json"
+  },
+  "sheet": "analysis_outputs/source_audit/source_acquisition_target_packet/source_acquisition_target_packet_sheet.jpg",
+  "sheetPanels": [
+    {
+      "title": "page-76 priority targets",
+      "path": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_sheet.jpg"
+    },
+    {
+      "title": "p78 frame tri-contact",
+      "path": "analysis_outputs/source_audit/p78_frame_tricontact_signature/p78_frame_tricontact_signature_overlay.jpg"
+    },
+    {
+      "title": "p78 frame sensitivity",
+      "path": "analysis_outputs/source_audit/p78_frame_trusted_target_sensitivity/p78_frame_trusted_target_sensitivity_overlay.jpg"
+    },
+    {
+      "title": "physical model check",
+      "path": "analysis_outputs/source_audit/physical_model_o5_g5_validation/physical_model_o5_g5_validation_overlay.jpg"
+    },
+    {
+      "title": "zero/#0 hotspots",
+      "path": "analysis_outputs/source_audit/zero_visual_crops/zero_visual_crops_sheet.jpg"
+    },
+    {
+      "title": "five-capsule motif",
+      "path": "analysis_outputs/source_audit/capsule_motif_recurrence/capsule_motif_recurrence_sheet.jpg"
+    },
+    {
+      "title": "p80 package layer",
+      "path": "analysis_outputs/source_audit/p80_package_r3_gate_synthesis/p80_package_r3_gate_synthesis_sheet.jpg"
+    },
+    {
+      "title": "Typeka/font witness",
+      "path": "analysis_outputs/docm_format_sources/typeka_font_r3_gate_synthesis/typeka_font_r3_gate_synthesis_sheet.jpg"
+    }
+  ],
+  "unlockMatrixSummary": {
+    "pathsChecked": 8,
+    "r3FailCount": 8,
+    "r5FailCount": 7,
+    "allPathsBlockedOnR3": true,
+    "deadBranchCountBeforeThisPass": 234,
+    "sourceIntakeDecision": "no_local_candidate_passes_r1_r5",
+    "sourceDeltaActionableUnknownCount": 0,
+    "externalRawLikeR3PassCount": 0,
+    "externalDerivedR3PassCount": 0,
+    "minimumReopenConditions": [
+      "C3 extraction unit",
+      "C4 physical registration",
+      "C8 source image quality",
+      "C2 p78 frame signature"
+    ]
+  },
+  "sourceReopenDecision": {
+    "doNotResumeExtractionFrom": "current scan or duplicate/resaved derivatives alone",
+    "resumeOnlyAfter": "a source/clue passes R1-R5 and names or materially supplies the extraction unit/order",
+    "nextBestMove": "obtain or inspect physical/original-layout/source provenance, then score it against this checklist before any selector/key test"
+  },
+  "minimumReopenConditions": [
+    {
+      "condition": "C3 extraction unit",
+      "requiredEvidence": "source/clue text or source-visible layout must name a unit/order such as word, letter, line, edge, font, first/last, left/right, or equivalent",
+      "why": "Without this, local geometry only repeats target discovery."
+    },
+    {
+      "condition": "C4 physical registration",
+      "requiredEvidence": "physical scan/photo/hold-to-light/spread should create repeated direct O5/G5 contacts or improve the p77 71.93px near miss under one natural transform",
+      "why": "Current best scan gives zero true physical O5/G5 overlaps."
+    },
+    {
+      "condition": "C8 source image quality",
+      "requiredEvidence": "original Canva/export/browser/source asset must exceed thumbnail status and visibly resolve the #0, p79 pills, XX/barbed-wire, or p78 frame benchmarks",
+      "why": "The current Canva surface is only a 668x376 investigator note thumbnail."
+    },
+    {
+      "condition": "C2 p78 frame signature",
+      "requiredEvidence": "new source should naturally preserve or explain `should sell | Volcano Bonds | shitcoiner at heart`, current O5 clip, M3 right-edge cut, and dx≈-38/-40 G5 edge repair",
+      "why": "This is the compactest existing registration signature."
+    }
+  ],
+  "reopenGates": [
+    {
+      "id": "R1",
+      "name": "source identity",
+      "passCondition": "new material must be physically/original-layout distinct from the byte-locked current scan"
+    },
+    {
+      "id": "R2",
+      "name": "target preservation",
+      "passCondition": "must preserve or clearly explain O5, G5, L26-L29, and the p78 frame contact pattern"
+    },
+    {
+      "id": "R3",
+      "name": "unit/order evidence",
+      "passCondition": "must name or visibly supply the extraction unit/order before any key checks resume"
+    },
+    {
+      "id": "R4",
+      "name": "orientation discipline",
+      "passCondition": "must state whether coordinates are readable/upright or native/source and apply the 180-degree guardrail"
+    },
+    {
+      "id": "R5",
+      "name": "controlled improvement",
+      "passCondition": "must improve a compact benchmark, preferably dx -38/-40 G5 edge repair, O5 bottom contact, M3 right-edge cut, or the p77 one-line near miss"
+    }
+  ],
+  "targetPriority": {
+    "primaryManualTarget": {
+      "lineIndex": 32,
+      "corridorIndex": 14,
+      "text": "Maybe because he's a shitcoiner at heart.",
+      "score": 32.75
+    },
+    "pairedTarget": {
+      "lineIndex": 27,
+      "corridorIndex": 9,
+      "text": "collateralized “Volcano Bonds” to pay off the IMF",
+      "score": 16.75
+    },
+    "sourceBandTarget": {
+      "lineIndex": 26,
+      "corridorIndex": 8,
+      "text": "billions worth of future bitcoin earnings",
+      "score": 10.0
+    }
+  },
+  "p80PackageNumbers": "5,100,5,16,473,6,473,80",
+  "captureJobs": [
+    {
+      "id": "physical_flat_pages_75_80",
+      "kind": "physical scan/photo",
+      "priority": 1,
+      "ask": "Flat, high-resolution scans/photos of pages 75, 76, 77, 78, 79, and 80.",
+      "mustShow": "Readable O4/B4/G5/O5 on page 76; p78 graphic frame; p79 capsules/XX/barbed wire; p80 package copy.",
+      "rGates": [
+        "R1",
+        "R2",
+        "R4"
+      ],
+      "acceptance": "Materially distinct physical/original capture with orientation visible and enough detail to compare priority crops."
+    },
+    {
+      "id": "physical_leaf_light_pairs",
+      "kind": "physical leaf/spread",
+      "priority": 2,
+      "ask": "Front/back and held-to-light photos for leaves 75/76, 77/78, and 79/80, plus spreads 76/77 and 78/79.",
+      "mustShow": "Same leaf edges, page numbers/orientation, and whether any natural bleed/fold selects O5/G5 or the p77 one-line near miss.",
+      "rGates": [
+        "R2",
+        "R4",
+        "R5"
+      ],
+      "acceptance": "Repeated direct O5/G5 contacts or a natural improvement to the p77 71.93px near miss under one transform."
+    },
+    {
+      "id": "page76_lower_corridor_closeups",
+      "kind": "physical/source closeup",
+      "priority": 3,
+      "ask": "Closeups of page 76 O4/B4/G5/O5 and L25-L32 frame context.",
+      "mustShow": "O4 `buying the dip`, B4 `$1 billion`, G5 `Volcano Bonds`, O5 `shitcoiner at heart`, plus adjacent line/edge details.",
+      "rGates": [
+        "R2",
+        "R5"
+      ],
+      "acceptance": "Preserves or explains O-B-B-O, G5/O5, and the p78-frame contact corridor."
+    },
+    {
+      "id": "original_layout_export",
+      "kind": "original layout/export",
+      "priority": 4,
+      "ask": "Native layout/export source for pages 73-80, including images, highlight rectangles, fonts, and layer names if available.",
+      "mustShow": "Higher-resolution assets or layer metadata for highlights, Typeka states, p78 frame, p79 capsules, p80 package, and #0/zero hotspots.",
+      "rGates": [
+        "R1",
+        "R3",
+        "R5"
+      ],
+      "acceptance": "Names or visibly supplies unit/order, or improves source-image quality beyond current scan/668x376 Canva thumbnail."
+    },
+    {
+      "id": "raw_clue_wording",
+      "kind": "external clue/provenance",
+      "priority": 5,
+      "ask": "Exact raw wording/screenshots/URLs/timestamps for Max/PRIVATE_CONTRIBUTOR/announcement clues, not generated analysis paraphrase.",
+      "mustShow": "Any wording naming word, letter, line, edge, font, first/last, left/right, mirror/read direction, page, fold, or order.",
+      "rGates": [
+        "R3"
+      ],
+      "acceptance": "Source-backed instruction language that points to page 76 lower corridor or clearly redirects away from it."
+    }
+  ],
+  "benchmarkChecks": [
+    {
+      "id": "C3",
+      "name": "extraction unit/order",
+      "current": "FAIL",
+      "mustImprove": "Name or visibly supply unit/order before any key checks resume."
+    },
+    {
+      "id": "C2",
+      "name": "p78 frame signature",
+      "current": "PARTIAL",
+      "mustImprove": "Naturally preserve/explain p78 frame on page 76, O5 clip, M3 right-edge cut, and dx≈-38/-40 G5 repair.",
+      "currentFrame": [
+        1234,
+        2398,
+        2250,
+        2950
+      ]
+    },
+    {
+      "id": "C4",
+      "name": "physical registration",
+      "current": "FAIL",
+      "mustImprove": "Create repeated direct O5/G5 physical contacts or improve p77 near miss. Current p77 vertical gap=71.93 px; median line pitch=73.73 px."
+    },
+    {
+      "id": "C8",
+      "name": "source image quality",
+      "current": "FAIL",
+      "mustImprove": "Resolve p79 pills/XX/barbed wire, p80 package, #0/zero hotspots, and p78 frame beyond current thumbnail/source limits."
+    }
+  ],
+  "decision": "source_acquisition_packet_created_no_current_selector_unlocked",
+  "nextMove": "Use this packet to collect or evaluate new physical/original-layout/raw clue evidence. Do not run extraction or key checks until a new item passes R1-R5, especially R3 unit/order evidence."
+}

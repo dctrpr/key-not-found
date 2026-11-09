@@ -1,0 +1,267 @@
+{
+  "createdAt": "2026-05-20T07:07:15",
+  "scope": "confirmed target/order synthesis; no key derivation",
+  "inputs": {
+    "targetConvergence": "analysis_outputs/source_audit/page76_target_convergence/page76_target_convergence.json",
+    "p78Frame": "analysis_outputs/source_audit/p78_frame_order_read/p78_frame_order_read.json",
+    "m3m4Bracket": "analysis_outputs/source_audit/m3_m4_pair_bracket/m3_m4_pair_bracket.json",
+    "bridgeChain": "analysis_outputs/source_audit/page76_bridge_normalized_chain/page76_bridge_normalized_chain.json",
+    "sourceClues": "analysis_outputs/external_clues/original_clue_provenance.json"
+  },
+  "streamRows": [
+    {
+      "name": "convergenceRankTop5",
+      "source": "page76_target_convergence",
+      "operation": "score order",
+      "value": "O5:shitcoiner at heart | G5:Volcano Bonds | CORRIDOR:lower El Salvador / IMF / Bukele / Mike / trust corridor | O1:Get some toxicity / Open your heart to Bitcoin | G4:$1 billion",
+      "initials": "osahgvbclesibmtcogstoyhtbg1b",
+      "lastLetters": "5rtt5osrrlrfeetr1teynrton41n",
+      "wordLengths": "2.10.2.5.2.7.5.8.5.2.8.3.6.4.5.8.2.3.4.8.4.4.5.2.7.2.1.7",
+      "reverseWords": "billion 1 G4 Bitcoin to heart your Open toxicity some Get O1 corridor trust Mike Bukele IMF Salvador El lower CORRIDOR Bonds Volcano G5 heart at shitcoiner O5",
+      "reverseChars": "noillib 1$:4G | nioctiB ot traeh ruoy nepO / yticixot emos teG:1O | rodirroc tsurt / ekiM / elekuB / FMI / rodavlaS lE rewol:RODIRROC | sdnoB onacloV:5G | traeh ta renioctihs:5O",
+      "instructionHits": [],
+      "unitHits": [],
+      "rationale": "Highest-supported page-76 targets in score order."
+    },
+    {
+      "name": "targetPairG5O5",
+      "source": "target convergence",
+      "operation": "confirmed pair forward",
+      "value": "Volcano Bonds | shitcoiner at heart",
+      "initials": "vbsah",
+      "lastLetters": "osrtt",
+      "wordLengths": "7.5.10.2.5",
+      "reverseWords": "heart at shitcoiner Bonds Volcano",
+      "reverseChars": "traeh ta renioctihs | sdnoB onacloV",
+      "instructionHits": [],
+      "unitHits": [],
+      "rationale": "The strongest confirmed pair from self-mirror/convergence."
+    },
+    {
+      "name": "targetPairO5G5",
+      "source": "target convergence",
+      "operation": "confirmed pair reverse",
+      "value": "shitcoiner at heart | Volcano Bonds",
+      "initials": "sahvb",
+      "lastLetters": "rttos",
+      "wordLengths": "10.2.5.7.5",
+      "reverseWords": "Bonds Volcano heart at shitcoiner",
+      "reverseChars": "sdnoB onacloV | traeh ta renioctihs",
+      "instructionHits": [],
+      "unitHits": [],
+      "rationale": "Schott/mirror-compatible reversal of the confirmed pair."
+    },
+    {
+      "name": "minimalFrame",
+      "source": "p78_frame_order_read",
+      "operation": "frame corner minimal path",
+      "value": "should sell | Volcano Bonds | shitcoiner at heart",
+      "initials": "ssvbsah",
+      "lastLetters": "dlosrtt",
+      "wordLengths": "6.4.7.5.10.2.5",
+      "reverseWords": "heart at shitcoiner Bonds Volcano sell should",
+      "reverseChars": "traeh ta renioctihs | sdnoB onacloV | lles dluohs",
+      "instructionHits": [],
+      "unitHits": [],
+      "rationale": "Shortest p78 frame phrase path."
+    },
+    {
+      "name": "leftFrameTopDown",
+      "source": "p78_frame_order_read",
+      "operation": "left edge top-to-bottom",
+      "value": "should sell | earnings | pay off the IMF | Volcano Bonds | I tagged Mike | could sell | trust that guy | shitcoiner at heart",
+      "initials": "ssepotivbitmcsttgsah",
+      "lastLetters": "dlsyfefosidedlttyrtt",
+      "wordLengths": "6.4.8.3.3.3.3.7.5.1.6.4.5.4.5.4.3.10.2.5",
+      "reverseWords": "heart at shitcoiner guy that trust sell could Mike tagged I Bonds Volcano IMF the off pay earnings sell should",
+      "reverseChars": "traeh ta renioctihs | yug taht tsurt | lles dluoc | ekiM deggat I | sdnoB onacloV | FMI eht ffo yap | sgninrae | lles dluohs",
+      "instructionHits": [],
+      "unitHits": [],
+      "rationale": "P78 reflected frame left edge in visual top-to-bottom order."
+    },
+    {
+      "name": "leftFrameBottomUp",
+      "source": "p78_frame_order_read",
+      "operation": "left edge bottom-to-top",
+      "value": "shitcoiner at heart | trust that guy | could sell | I tagged Mike | Volcano Bonds | pay off the IMF | earnings | should sell",
+      "initials": "sahttgcsitmvbpotiess",
+      "lastLetters": "rttttydlideosyfefsdl",
+      "wordLengths": "10.2.5.5.4.3.5.4.1.6.4.7.5.3.3.3.3.8.6.4",
+      "reverseWords": "sell should earnings IMF the off pay Bonds Volcano Mike tagged I sell could guy that trust heart at shitcoiner",
+      "reverseChars": "lles dluohs | sgninrae | FMI eht ffo yap | sdnoB onacloV | ekiM deggat I | lles dluoc | yug taht tsurt | traeh ta renioctihs",
+      "instructionHits": [],
+      "unitHits": [],
+      "rationale": "Mirror/reverse of the p78 reflected frame left edge."
+    },
+    {
+      "name": "m3m4Bracket",
+      "source": "m3_m4_pair_bracket",
+      "operation": "paired mark wedge",
+      "value": "guy [O5: shitcoiner at heart]",
+      "initials": "gosah",
+      "lastLetters": "y5rtt",
+      "wordLengths": "3.2.10.2.5",
+      "reverseWords": "heart at shitcoiner O5 guy",
+      "reverseChars": "]traeh ta renioctihs :5O[ yug",
+      "instructionHits": [],
+      "unitHits": [],
+      "rationale": "Only text/highlight selected by the M3/M4 wedge."
+    },
+    {
+      "name": "m3m4BracketReverse",
+      "source": "m3_m4_pair_bracket",
+      "operation": "paired mark wedge reversed",
+      "value": "[O5: shitcoiner at heart] guy",
+      "initials": "osahg",
+      "lastLetters": "5rtty",
+      "wordLengths": "2.10.2.5.3",
+      "reverseWords": "guy heart at shitcoiner O5",
+      "reverseChars": "yug ]traeh ta renioctihs :5O[",
+      "instructionHits": [],
+      "unitHits": [],
+      "rationale": "Reverse of M3/M4 wedge read."
+    },
+    {
+      "name": "bridgeStrictTerms",
+      "source": "page76_bridge_normalized_chain",
+      "operation": "line-offset chain terms",
+      "value": "bitcoin nonsense stun buying dip earnings sell heart",
+      "initials": "bnsbdesh",
+      "lastLetters": "nengpslt",
+      "wordLengths": "7.8.4.6.3.8.4.5",
+      "reverseWords": "heart sell earnings dip buying stun nonsense bitcoin",
+      "reverseChars": "traeh lles sgninrae pid gniyub nuts esnesnon nioctib",
+      "instructionHits": [],
+      "unitHits": [],
+      "rationale": "Bridge-normalized page-76 locator chain."
+    },
+    {
+      "name": "bridgeStrictTermsReversed",
+      "source": "page76_bridge_normalized_chain",
+      "operation": "line-offset chain terms reversed",
+      "value": "heart sell earnings dip buying stun nonsense bitcoin",
+      "initials": "hsedbsnb",
+      "lastLetters": "tlspgnen",
+      "wordLengths": "5.4.8.3.6.4.8.7",
+      "reverseWords": "bitcoin nonsense stun buying dip earnings sell heart",
+      "reverseChars": "nioctib esnesnon nuts gniyub pid sgninrae lles traeh",
+      "instructionHits": [],
+      "unitHits": [],
+      "rationale": "Mirror-compatible reversal of the bridge-normalized chain."
+    },
+    {
+      "name": "publicInstructionText",
+      "source": "original_clue_provenance",
+      "operation": "original announcement + Schott clue",
+      "value": "“I hid a private #Bitcoin key encoded in this piece I wrote for @BitcoinMagazine Mr. President. Nobody’s figured it out yet, but it’s for 20 BTC” pic.twitter.com/eiSeo82gxP | “Mirror writing: neurological reflections on an unusual phenomenon”https://t.co/WkSDXKwSiv https://t.co/3NrEhxV2Iz",
+      "initials": "ihapbkeitpiwfbmpnsfioybisf2bptcemwnroauphtcwhtc3",
+      "lastLetters": "idaenydnseierertysdtttttsr0ccrmprglsnnlnstovstoz",
+      "wordLengths": "1.3.1.7.7.3.7.2.4.5.1.5.3.15.2.9.6.1.7.2.3.3.3.2.1.3.2.3.3.7.3.10.6.7.12.11.2.2.7.10.5.1.2.10.5.1.2.10",
+      "reverseWords": "3NrEhxV2Iz co t https WkSDXKwSiv co t https phenomenon unusual an on reflections neurological writing Mirror eiSeo82gxP com twitter pic BTC 20 for s it but yet out it figured s Nobody President Mr BitcoinMagazine for wrote I piece this in encoded key Bitcoin private a hid I",
+      "reverseChars": "zI2VxhErN3/oc.t//:sptth viSwKXDSkW/oc.t//:sptth”nonemonehp lausunu na no snoitcelfer lacigoloruen :gnitirw rorriM“ | Pxg28oeSie/moc.rettiwt.cip ”CTB 02 rof s’ti tub ,tey tuo ti derugif s’ydoboN .tnediserP .rM enizagaMnioctiB@ rof etorw I eceip siht ni dedocne yek nioctiB# etavirp a dih I“",
+      "instructionHits": [
+        "mirror",
+        "key",
+        "private"
+      ],
+      "unitHits": [
+        "key"
+      ],
+      "rationale": "Only archived public written instruction text."
+    },
+    {
+      "name": "pairInitials",
+      "source": "confirmed pair",
+      "operation": "first letters only",
+      "value": "vbsah",
+      "initials": "v",
+      "lastLetters": "h",
+      "wordLengths": "5",
+      "reverseWords": "vbsah",
+      "reverseChars": "hasbv",
+      "instructionHits": [],
+      "unitHits": [],
+      "rationale": "Low-parameter first-letter extraction on G5/O5 only."
+    },
+    {
+      "name": "pairLastLetters",
+      "source": "confirmed pair",
+      "operation": "last letters only",
+      "value": "osrtt",
+      "initials": "o",
+      "lastLetters": "t",
+      "wordLengths": "5",
+      "reverseWords": "osrtt",
+      "reverseChars": "ttrso",
+      "instructionHits": [],
+      "unitHits": [],
+      "rationale": "Low-parameter last-letter extraction on G5/O5 only."
+    },
+    {
+      "name": "pairWordLengths",
+      "source": "confirmed pair",
+      "operation": "word lengths only",
+      "value": "7.5.10.2.5",
+      "initials": "75125",
+      "lastLetters": "75025",
+      "wordLengths": "1.1.2.1.1",
+      "reverseWords": "5 2 10 5 7",
+      "reverseChars": "5.2.01.5.7",
+      "instructionHits": [],
+      "unitHits": [],
+      "rationale": "Low-parameter count extraction on G5/O5 only."
+    }
+  ],
+  "positiveInstructionRows": [
+    {
+      "name": "publicInstructionText",
+      "source": "original_clue_provenance",
+      "operation": "original announcement + Schott clue",
+      "value": "“I hid a private #Bitcoin key encoded in this piece I wrote for @BitcoinMagazine Mr. President. Nobody’s figured it out yet, but it’s for 20 BTC” pic.twitter.com/eiSeo82gxP | “Mirror writing: neurological reflections on an unusual phenomenon”https://t.co/WkSDXKwSiv https://t.co/3NrEhxV2Iz",
+      "initials": "ihapbkeitpiwfbmpnsfioybisf2bptcemwnroauphtcwhtc3",
+      "lastLetters": "idaenydnseierertysdtttttsr0ccrmprglsnnlnstovstoz",
+      "wordLengths": "1.3.1.7.7.3.7.2.4.5.1.5.3.15.2.9.6.1.7.2.3.3.3.2.1.3.2.3.3.7.3.10.6.7.12.11.2.2.7.10.5.1.2.10.5.1.2.10",
+      "reverseWords": "3NrEhxV2Iz co t https WkSDXKwSiv co t https phenomenon unusual an on reflections neurological writing Mirror eiSeo82gxP com twitter pic BTC 20 for s it but yet out it figured s Nobody President Mr BitcoinMagazine for wrote I piece this in encoded key Bitcoin private a hid I",
+      "reverseChars": "zI2VxhErN3/oc.t//:sptth viSwKXDSkW/oc.t//:sptth”nonemonehp lausunu na no snoitcelfer lacigoloruen :gnitirw rorriM“ | Pxg28oeSie/moc.rettiwt.cip ”CTB 02 rof s’ti tub ,tey tuo ti derugif s’ydoboN .tnediserP .rM enizagaMnioctiB@ rof etorw I eceip siht ni dedocne yek nioctiB# etavirp a dih I“",
+      "instructionHits": [
+        "mirror",
+        "key",
+        "private"
+      ],
+      "unitHits": [
+        "key"
+      ],
+      "rationale": "Only archived public written instruction text."
+    }
+  ],
+  "positiveUnitRows": [
+    {
+      "name": "publicInstructionText",
+      "source": "original_clue_provenance",
+      "operation": "original announcement + Schott clue",
+      "value": "“I hid a private #Bitcoin key encoded in this piece I wrote for @BitcoinMagazine Mr. President. Nobody’s figured it out yet, but it’s for 20 BTC” pic.twitter.com/eiSeo82gxP | “Mirror writing: neurological reflections on an unusual phenomenon”https://t.co/WkSDXKwSiv https://t.co/3NrEhxV2Iz",
+      "initials": "ihapbkeitpiwfbmpnsfioybisf2bptcemwnroauphtcwhtc3",
+      "lastLetters": "idaenydnseierertysdtttttsr0ccrmprglsnnlnstovstoz",
+      "wordLengths": "1.3.1.7.7.3.7.2.4.5.1.5.3.15.2.9.6.1.7.2.3.3.3.2.1.3.2.3.3.7.3.10.6.7.12.11.2.2.7.10.5.1.2.10.5.1.2.10",
+      "reverseWords": "3NrEhxV2Iz co t https WkSDXKwSiv co t https phenomenon unusual an on reflections neurological writing Mirror eiSeo82gxP com twitter pic BTC 20 for s it but yet out it figured s Nobody President Mr BitcoinMagazine for wrote I piece this in encoded key Bitcoin private a hid I",
+      "reverseChars": "zI2VxhErN3/oc.t//:sptth viSwKXDSkW/oc.t//:sptth”nonemonehp lausunu na no snoitcelfer lacigoloruen :gnitirw rorriM“ | Pxg28oeSie/moc.rettiwt.cip ”CTB 02 rof s’ti tub ,tey tuo ti derugif s’ydoboN .tnediserP .rM enizagaMnioctiB@ rof etorw I eceip siht ni dedocne yek nioctiB# etavirp a dih I“",
+      "instructionHits": [
+        "mirror",
+        "key",
+        "private"
+      ],
+      "unitHits": [
+        "key"
+      ],
+      "rationale": "Only archived public written instruction text."
+    }
+  ],
+  "actionableLocalRows": [],
+  "assessment": [
+    "Confirmed local target/order streams still do not name a source layer or extraction unit.",
+    "The only instruction-like hits come from the archived public clue text itself: `private`, `key`, `encoded`, and Schott `mirror writing`.",
+    "The confirmed visual system has converged on O5 and G5/O5, but all low-parameter text orderings remain ordinary corridor prose or short non-words.",
+    "This is now a source-rule problem, not a local stream-generation problem."
+  ],
+  "nextMove": "Prioritize source/physical registration or exact original visual material. If forced to continue locally, audit true physical leaf/spread assumptions against the best scan using confirmed O5/G5 as validation points, not more p78 text streams."
+}

@@ -1,0 +1,477 @@
+{
+  "createdAt": "2026-05-20T12:04:17",
+  "scope": "five-index convergence and capsule direction audit; no key derivation",
+  "counts": {
+    "p73Capsules": 5,
+    "p79PillFragments": 5,
+    "p80Symptoms": 5,
+    "p76OrangeBoxes": 5,
+    "p76GreyBoxes": 5
+  },
+  "p73StepSignature": {
+    "stepSigns": "RRLL",
+    "stepBits_R1_L0": "1100",
+    "deltas": [
+      {
+        "dx": 310.5,
+        "dy": 117.0
+      },
+      {
+        "dx": 206.5,
+        "dy": 243.5
+      },
+      {
+        "dx": -259.0,
+        "dy": 184.5
+      },
+      {
+        "dx": -375.5,
+        "dy": 184.5
+      }
+    ],
+    "xRanksTopToBottom": "24531"
+  },
+  "p79StepSignature": {
+    "stepSigns": "RRLL",
+    "stepBits_R1_L0": "1100",
+    "deltas": [
+      {
+        "dx": 250.5,
+        "dy": 46.5
+      },
+      {
+        "dx": 184.5,
+        "dy": 154.0
+      },
+      {
+        "dx": -169.0,
+        "dy": 172.0
+      },
+      {
+        "dx": -253.5,
+        "dy": 187.5
+      }
+    ],
+    "xRanksTopToBottom": "13542"
+  },
+  "sameStepSignature": true,
+  "p79OrangeBoxIndexes": [
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "p79MinusP73IndexOffsets": [
+    5,
+    5,
+    5,
+    5,
+    5
+  ],
+  "sameIndexGapPairs": [
+    {
+      "sourceId": "O3",
+      "targetId": "B3",
+      "sourceIndex": 3,
+      "targetIndex": 3,
+      "sourceLine": 13,
+      "targetLine": 16,
+      "lineGap": 3,
+      "gapEqualsSourceIndex": true,
+      "gapEqualsTargetIndex": true,
+      "sameIndex": true,
+      "sourceLabel": "by the rancid catnip of fiat money",
+      "targetLabel": "It's a stun gun to the genitals",
+      "sourceLineText": "Our imaginations and inventiveness have been euthanized by the rancid catnip of fiat money.",
+      "targetLineText": "laundering lobotomy. It’s a stun gun to the genitals."
+    },
+    {
+      "sourceId": "B5",
+      "targetId": "O5",
+      "sourceIndex": 5,
+      "targetIndex": 5,
+      "sourceLine": 27,
+      "targetLine": 32,
+      "lineGap": 5,
+      "gapEqualsSourceIndex": true,
+      "gapEqualsTargetIndex": true,
+      "sameIndex": true,
+      "sourceLabel": "Volcano Bonds",
+      "targetLabel": "shitcoiner at heart",
+      "sourceLineText": "collateralized “Volcano Bonds” to pay off the IMF",
+      "targetLineText": "Maybe because he's a shitcoiner at heart."
+    }
+  ],
+  "fifthSelections": [
+    {
+      "surface": "p73 capsules",
+      "count": 5,
+      "fifth": "capsule 5 (graphic, no text)"
+    },
+    {
+      "surface": "p79 pill fragments",
+      "count": 5,
+      "fifth": "orange box 10 (graphic fragment, no article text)"
+    },
+    {
+      "surface": "p80 symptoms",
+      "count": 5,
+      "fifth": "SHITCOINS"
+    },
+    {
+      "surface": "p76 orange boxes",
+      "count": 5,
+      "fifth": "shitcoiner at heart."
+    },
+    {
+      "surface": "p76 grey boxes",
+      "count": 5,
+      "fifth": "Volcano Bonds"
+    },
+    {
+      "surface": "p76 line-offset pairs",
+      "count": 2,
+      "fifth": "B5 + 5 lines -> O5"
+    }
+  ],
+  "directionalStreams": [
+    {
+      "mode": "outgoing",
+      "rows": [
+        {
+          "step": 1,
+          "sign": "R",
+          "unitId": "p76_orange_1",
+          "unitText": "Get some toxicity. Get some bitcoin. Open your heart to",
+          "picked": "to",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 2,
+          "sign": "R",
+          "unitId": "p76_orange_2",
+          "unitText": "Bitcoin.",
+          "picked": "Bitcoin",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 3,
+          "sign": "L",
+          "unitId": "p76_orange_3",
+          "unitText": "by the rancid catnip of fiat money.",
+          "picked": "by",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 4,
+          "sign": "L",
+          "unitId": "p76_orange_4",
+          "unitText": "“buying the dip.”",
+          "picked": "buying",
+          "rule": "last word for R, first word for L"
+        }
+      ],
+      "stream": "to Bitcoin by buying",
+      "reverse": "buying by Bitcoin to",
+      "unitSurface": "p76_orange",
+      "signSource": "p73"
+    },
+    {
+      "mode": "incoming",
+      "rows": [
+        {
+          "step": 1,
+          "sign": "R",
+          "unitId": "p76_orange_2",
+          "unitText": "Bitcoin.",
+          "picked": "Bitcoin",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 2,
+          "sign": "R",
+          "unitId": "p76_orange_3",
+          "unitText": "by the rancid catnip of fiat money.",
+          "picked": "money",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 3,
+          "sign": "L",
+          "unitId": "p76_orange_4",
+          "unitText": "“buying the dip.”",
+          "picked": "buying",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 4,
+          "sign": "L",
+          "unitId": "p76_orange_5",
+          "unitText": "shitcoiner at heart.",
+          "picked": "shitcoiner",
+          "rule": "last word for R, first word for L"
+        }
+      ],
+      "stream": "Bitcoin money buying shitcoiner",
+      "reverse": "shitcoiner buying money Bitcoin",
+      "unitSurface": "p76_orange",
+      "signSource": "p73"
+    },
+    {
+      "mode": "outgoing",
+      "rows": [
+        {
+          "step": 1,
+          "sign": "R",
+          "unitId": "p76_orange_1",
+          "unitText": "Get some toxicity. Get some bitcoin. Open your heart to",
+          "picked": "to",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 2,
+          "sign": "R",
+          "unitId": "p76_orange_2",
+          "unitText": "Bitcoin.",
+          "picked": "Bitcoin",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 3,
+          "sign": "L",
+          "unitId": "p76_orange_3",
+          "unitText": "by the rancid catnip of fiat money.",
+          "picked": "by",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 4,
+          "sign": "L",
+          "unitId": "p76_orange_4",
+          "unitText": "“buying the dip.”",
+          "picked": "buying",
+          "rule": "last word for R, first word for L"
+        }
+      ],
+      "stream": "to Bitcoin by buying",
+      "reverse": "buying by Bitcoin to",
+      "unitSurface": "p76_orange",
+      "signSource": "p79"
+    },
+    {
+      "mode": "incoming",
+      "rows": [
+        {
+          "step": 1,
+          "sign": "R",
+          "unitId": "p76_orange_2",
+          "unitText": "Bitcoin.",
+          "picked": "Bitcoin",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 2,
+          "sign": "R",
+          "unitId": "p76_orange_3",
+          "unitText": "by the rancid catnip of fiat money.",
+          "picked": "money",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 3,
+          "sign": "L",
+          "unitId": "p76_orange_4",
+          "unitText": "“buying the dip.”",
+          "picked": "buying",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 4,
+          "sign": "L",
+          "unitId": "p76_orange_5",
+          "unitText": "shitcoiner at heart.",
+          "picked": "shitcoiner",
+          "rule": "last word for R, first word for L"
+        }
+      ],
+      "stream": "Bitcoin money buying shitcoiner",
+      "reverse": "shitcoiner buying money Bitcoin",
+      "unitSurface": "p76_orange",
+      "signSource": "p79"
+    },
+    {
+      "mode": "outgoing",
+      "rows": [
+        {
+          "step": 1,
+          "sign": "R",
+          "unitId": "p76_grey_1",
+          "unitText": "Gotta be this way... post-1971 fiat money",
+          "picked": "money",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 2,
+          "sign": "R",
+          "unitId": "p76_grey_2",
+          "unitText": "nonsense",
+          "picked": "nonsense",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 3,
+          "sign": "L",
+          "unitId": "p76_grey_3",
+          "unitText": "It's a stun gun to the genitals",
+          "picked": "It's",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 4,
+          "sign": "L",
+          "unitId": "p76_grey_4",
+          "unitText": "$1 billion",
+          "picked": "$1",
+          "rule": "last word for R, first word for L"
+        }
+      ],
+      "stream": "money nonsense It's $1",
+      "reverse": "$1 It's nonsense money",
+      "unitSurface": "p76_grey",
+      "signSource": "p73"
+    },
+    {
+      "mode": "incoming",
+      "rows": [
+        {
+          "step": 1,
+          "sign": "R",
+          "unitId": "p76_grey_2",
+          "unitText": "nonsense",
+          "picked": "nonsense",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 2,
+          "sign": "R",
+          "unitId": "p76_grey_3",
+          "unitText": "It's a stun gun to the genitals",
+          "picked": "genitals",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 3,
+          "sign": "L",
+          "unitId": "p76_grey_4",
+          "unitText": "$1 billion",
+          "picked": "$1",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 4,
+          "sign": "L",
+          "unitId": "p76_grey_5",
+          "unitText": "Volcano Bonds",
+          "picked": "Volcano",
+          "rule": "last word for R, first word for L"
+        }
+      ],
+      "stream": "nonsense genitals $1 Volcano",
+      "reverse": "Volcano $1 genitals nonsense",
+      "unitSurface": "p76_grey",
+      "signSource": "p73"
+    },
+    {
+      "mode": "outgoing",
+      "rows": [
+        {
+          "step": 1,
+          "sign": "R",
+          "unitId": "p76_grey_1",
+          "unitText": "Gotta be this way... post-1971 fiat money",
+          "picked": "money",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 2,
+          "sign": "R",
+          "unitId": "p76_grey_2",
+          "unitText": "nonsense",
+          "picked": "nonsense",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 3,
+          "sign": "L",
+          "unitId": "p76_grey_3",
+          "unitText": "It's a stun gun to the genitals",
+          "picked": "It's",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 4,
+          "sign": "L",
+          "unitId": "p76_grey_4",
+          "unitText": "$1 billion",
+          "picked": "$1",
+          "rule": "last word for R, first word for L"
+        }
+      ],
+      "stream": "money nonsense It's $1",
+      "reverse": "$1 It's nonsense money",
+      "unitSurface": "p76_grey",
+      "signSource": "p79"
+    },
+    {
+      "mode": "incoming",
+      "rows": [
+        {
+          "step": 1,
+          "sign": "R",
+          "unitId": "p76_grey_2",
+          "unitText": "nonsense",
+          "picked": "nonsense",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 2,
+          "sign": "R",
+          "unitId": "p76_grey_3",
+          "unitText": "It's a stun gun to the genitals",
+          "picked": "genitals",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 3,
+          "sign": "L",
+          "unitId": "p76_grey_4",
+          "unitText": "$1 billion",
+          "picked": "$1",
+          "rule": "last word for R, first word for L"
+        },
+        {
+          "step": 4,
+          "sign": "L",
+          "unitId": "p76_grey_5",
+          "unitText": "Volcano Bonds",
+          "picked": "Volcano",
+          "rule": "last word for R, first word for L"
+        }
+      ],
+      "stream": "nonsense genitals $1 Volcano",
+      "reverse": "Volcano $1 genitals nonsense",
+      "unitSurface": "p76_grey",
+      "signSource": "p79"
+    }
+  ],
+  "instructionTermHits": {},
+  "assessment": [
+    "The five-index system is real across independent visual layers: five opener capsules, five p79 fragments, five p80 symptoms, and five p76 orange/grey units.",
+    "The p73 and p79 capsule chains share the same simple left/right step signature RRLL, and p79 fragment indexes are p73 indexes plus 5.",
+    "The fifth selections converge on the known lower-corridor anchors: p80 SHITCOINS, p76 orange 5 shitcoiner at heart, and p76 grey 5 Volcano Bonds.",
+    "Simple direction-derived first/last-word streams from RRLL do not produce read/take/word/letter/key instructions.",
+    "This strengthens five as a locator/order signal, but not as the missing extraction unit."
+  ],
+  "nextMove": "Keep five as a locator that validates O5/G5 and p73/p79 provenance. Do not turn RRLL or fifth selections into key material unless a source clue names a word/letter/edge extraction unit."
+}

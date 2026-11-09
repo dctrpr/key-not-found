@@ -1,0 +1,97 @@
+{
+  "createdAt": "2026-05-20T21:57:02",
+  "scope": "focused high-res mirror audit of p79 highlighted action phrase; no key derivation",
+  "inputs": {
+    "mirrorSelector": "analysis_outputs/source_audit/highres_page76_mirror_selector.json",
+    "articleMap": "analysis_outputs/3d_article_map/article_3d_map_data.json"
+  },
+  "sheet": "analysis_outputs/source_audit/p79_take_all_energy_selector/p79_take_all_energy_selector_sheet.jpg",
+  "source": {
+    "page": 79,
+    "index": 2,
+    "label": "That's right, Bitcoin will take all the energy.",
+    "sourceBox": [
+      1097,
+      830,
+      1904,
+      915
+    ],
+    "reflectedBoxOn76": [
+      640,
+      830,
+      1447,
+      915
+    ],
+    "sourceInstructionHits": [
+      "right",
+      "take"
+    ]
+  },
+  "directReflectedWordsOn76": "Gotta be S way. Forty years",
+  "directInstructionHits": [],
+  "edgeRecords": [
+    {
+      "target": "black1",
+      "targetLabel": "Gotta be this way... post-1971 fiat money",
+      "targetBox": [
+        449.0,
+        827.0,
+        2233.0,
+        890.0
+      ],
+      "overlapBox": [
+        640.0,
+        830.0,
+        1447.0,
+        890.0
+      ],
+      "overlapVsSource": 0.70588,
+      "overlapVsTarget": 0.43081,
+      "targetWords": "Gotta be S way. Forty years of dumb post-1971 flat money",
+      "overlapWords": "Gotta be S way. Forty years",
+      "rightOfReflectedBoxWords": "of dumb post-1971 flat money",
+      "leftOfReflectedBoxWords": "",
+      "targetInstructionHits": [],
+      "overlapInstructionHits": [],
+      "rightInstructionHits": [],
+      "leftInstructionHits": []
+    },
+    {
+      "target": "black2",
+      "targetLabel": "nonsense",
+      "targetBox": [
+        374.0,
+        890.0,
+        701.0,
+        959.0
+      ],
+      "overlapBox": [
+        640.0,
+        890.0,
+        701.0,
+        915.0
+      ],
+      "overlapVsSource": 0.02223,
+      "overlapVsTarget": 0.06759,
+      "targetWords": "",
+      "overlapWords": "",
+      "rightOfReflectedBoxWords": "Peter Schiff miss buying bitcoin",
+      "leftOfReflectedBoxWords": "",
+      "targetInstructionHits": [],
+      "overlapInstructionHits": [],
+      "rightInstructionHits": [],
+      "leftInstructionHits": []
+    }
+  ],
+  "assessment": [
+    "The p79 phrase is legitimately tempting because it contains `right` and `take`, and it is a highlighted Typeka-bold run.",
+    "Under the current high-res horizontal mirror, it lands on p76 upper grey text (`Gotta be this way... post-1971 fiat money`) and grazes `nonsense`; it does not land on the lower El Salvador/IMF/G5/O5 corridor.",
+    "Taking the right side of the overlapped p76 grey row yields ordinary prose (`of dumb post-1971 fiat money`) and no extraction unit.",
+    "The phrase itself still lacks a concrete unit such as word, letter, line, font, key, private, seed, or address."
+  ],
+  "decision": {
+    "p79TakeAllEnergyAsCurrentScanSelector": "closed_current_scan",
+    "p79TakeAllEnergyAsContext": "keep_as_thematic_energy_wording",
+    "nextMove": "Do not promote p79 O2 as selector unless a new source transform moves it onto the lower page-76 corridor or an external clue explains the unit/order."
+  }
+}

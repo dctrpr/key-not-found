@@ -1,0 +1,188 @@
+# Second-Wave Crypto Experiments
+
+Scope: checksum-valid/direct encoding and structured byte/index tests, not broad phrase hashing.
+
+## Secret Candidate Counts
+- E11_wif_base58_direct_scan: 37075
+- E13_hex64_direct_scan: 18368
+- E12_minikey_scan: 3
+- E14_orange_geometry_byte_streams: 1635
+- E15_reflected_geometry_byte_streams: 1955
+- E18_id_shortcode_byte_streams: 1467
+- E20_salted_priority_hashes: 640
+
+## BIP39 Candidate Counts
+- E16_geometry_bip39_indices: 34
+- E17_reflected_geometry_bip39_indices: 30
+- E19_id_shortcode_bip39_indices: 61
+
+## Chain Results
+- private-key candidates generated: 61143
+- private-key activity found: 0
+- BIP39 candidates: 125
+- BIP39 addresses checked: 366
+- BIP39 activity found: 0
+
+## Sample Secret Candidates
+- E11_wif_base58_direct_scan `article:base58raw:0:43` source=HeresthebittertruthBitcoinwasnotareactionto
+- E11_wif_base58_direct_scan `article:base58raw:1:43` source=eresthebittertruthBitcoinwasnotareactiontot
+- E11_wif_base58_direct_scan `article:base58raw:2:43` source=resthebittertruthBitcoinwasnotareactiontoth
+- E11_wif_base58_direct_scan `article:base58raw:3:43` source=esthebittertruthBitcoinwasnotareactiontothe
+- E11_wif_base58_direct_scan `article:base58raw:4:43` source=sthebittertruthBitcoinwasnotareactiontotheG
+- E11_wif_base58_direct_scan `article:base58raw:5:43` source=thebittertruthBitcoinwasnotareactiontotheGo
+- E11_wif_base58_direct_scan `article:base58raw:6:43` source=hebittertruthBitcoinwasnotareactiontotheGob
+- E11_wif_base58_direct_scan `article:base58raw:7:43` source=ebittertruthBitcoinwasnotareactiontotheGoba
+- E11_wif_base58_direct_scan `article:base58raw:8:43` source=bittertruthBitcoinwasnotareactiontotheGobaF
+- E11_wif_base58_direct_scan `article:base58raw:9:43` source=ittertruthBitcoinwasnotareactiontotheGobaFi
+- E11_wif_base58_direct_scan `article:base58raw:10:43` source=ttertruthBitcoinwasnotareactiontotheGobaFin
+- E11_wif_base58_direct_scan `article:base58raw:11:43` source=tertruthBitcoinwasnotareactiontotheGobaFina
+- E11_wif_base58_direct_scan `article:base58raw:12:43` source=ertruthBitcoinwasnotareactiontotheGobaFinan
+- E11_wif_base58_direct_scan `article:base58raw:13:43` source=rtruthBitcoinwasnotareactiontotheGobaFinanc
+- E11_wif_base58_direct_scan `article:base58raw:14:43` source=truthBitcoinwasnotareactiontotheGobaFinanci
+- E11_wif_base58_direct_scan `article:base58raw:15:43` source=ruthBitcoinwasnotareactiontotheGobaFinancia
+- E11_wif_base58_direct_scan `article:base58raw:16:43` source=uthBitcoinwasnotareactiontotheGobaFinanciaC
+- E11_wif_base58_direct_scan `article:base58raw:17:43` source=thBitcoinwasnotareactiontotheGobaFinanciaCr
+- E11_wif_base58_direct_scan `article:base58raw:18:43` source=hBitcoinwasnotareactiontotheGobaFinanciaCri
+- E11_wif_base58_direct_scan `article:base58raw:19:43` source=BitcoinwasnotareactiontotheGobaFinanciaCris
+- E11_wif_base58_direct_scan `article:base58raw:20:43` source=itcoinwasnotareactiontotheGobaFinanciaCrisi
+- E11_wif_base58_direct_scan `article:base58raw:21:43` source=tcoinwasnotareactiontotheGobaFinanciaCrisis
+- E11_wif_base58_direct_scan `article:base58raw:22:43` source=coinwasnotareactiontotheGobaFinanciaCrisiso
+- E11_wif_base58_direct_scan `article:base58raw:23:43` source=oinwasnotareactiontotheGobaFinanciaCrisisof
+- E11_wif_base58_direct_scan `article:base58raw:24:43` source=inwasnotareactiontotheGobaFinanciaCrisisof2
+- E11_wif_base58_direct_scan `article:base58raw:25:43` source=nwasnotareactiontotheGobaFinanciaCrisisof28
+- E11_wif_base58_direct_scan `article:base58raw:26:43` source=wasnotareactiontotheGobaFinanciaCrisisof28t
+- E11_wif_base58_direct_scan `article:base58raw:27:43` source=asnotareactiontotheGobaFinanciaCrisisof28tc
+- E11_wif_base58_direct_scan `article:base58raw:28:43` source=snotareactiontotheGobaFinanciaCrisisof28tca
+- E11_wif_base58_direct_scan `article:base58raw:29:43` source=notareactiontotheGobaFinanciaCrisisof28tcau
+- E11_wif_base58_direct_scan `article:base58raw:30:43` source=otareactiontotheGobaFinanciaCrisisof28tcaus
+- E11_wif_base58_direct_scan `article:base58raw:31:43` source=tareactiontotheGobaFinanciaCrisisof28tcause
+- E11_wif_base58_direct_scan `article:base58raw:32:43` source=areactiontotheGobaFinanciaCrisisof28tcaused
+- E11_wif_base58_direct_scan `article:base58raw:33:43` source=reactiontotheGobaFinanciaCrisisof28tcausedi
+- E11_wif_base58_direct_scan `article:base58raw:34:43` source=eactiontotheGobaFinanciaCrisisof28tcausedit
+- E11_wif_base58_direct_scan `article:base58raw:35:43` source=actiontotheGobaFinanciaCrisisof28tcauseditR
+- E11_wif_base58_direct_scan `article:base58raw:36:43` source=ctiontotheGobaFinanciaCrisisof28tcauseditRe
+- E11_wif_base58_direct_scan `article:base58raw:37:43` source=tiontotheGobaFinanciaCrisisof28tcauseditRea
+- E11_wif_base58_direct_scan `article:base58raw:38:43` source=iontotheGobaFinanciaCrisisof28tcauseditReay
+- E11_wif_base58_direct_scan `article:base58raw:39:43` source=ontotheGobaFinanciaCrisisof28tcauseditReayY
+- E11_wif_base58_direct_scan `article:base58raw:40:43` source=ntotheGobaFinanciaCrisisof28tcauseditReayYe
+- E11_wif_base58_direct_scan `article:base58raw:41:43` source=totheGobaFinanciaCrisisof28tcauseditReayYes
+- E11_wif_base58_direct_scan `article:base58raw:42:43` source=otheGobaFinanciaCrisisof28tcauseditReayYesT
+- E11_wif_base58_direct_scan `article:base58raw:43:43` source=theGobaFinanciaCrisisof28tcauseditReayYesTh
+- E11_wif_base58_direct_scan `article:base58raw:44:43` source=heGobaFinanciaCrisisof28tcauseditReayYesThe
+- E11_wif_base58_direct_scan `article:base58raw:45:43` source=eGobaFinanciaCrisisof28tcauseditReayYesThem
+- E11_wif_base58_direct_scan `article:base58raw:46:43` source=GobaFinanciaCrisisof28tcauseditReayYesThema
+- E11_wif_base58_direct_scan `article:base58raw:47:43` source=obaFinanciaCrisisof28tcauseditReayYesThemar
+- E11_wif_base58_direct_scan `article:base58raw:48:43` source=baFinanciaCrisisof28tcauseditReayYesThemark
+- E11_wif_base58_direct_scan `article:base58raw:49:43` source=aFinanciaCrisisof28tcauseditReayYesThemarke
+- E11_wif_base58_direct_scan `article:base58raw:50:43` source=FinanciaCrisisof28tcauseditReayYesThemarket
+- E11_wif_base58_direct_scan `article:base58raw:51:43` source=inanciaCrisisof28tcauseditReayYesThemarkets
+- E11_wif_base58_direct_scan `article:base58raw:52:43` source=nanciaCrisisof28tcauseditReayYesThemarketss
+- E11_wif_base58_direct_scan `article:base58raw:53:43` source=anciaCrisisof28tcauseditReayYesThemarketsse
+- E11_wif_base58_direct_scan `article:base58raw:54:43` source=nciaCrisisof28tcauseditReayYesThemarketssen
+- E11_wif_base58_direct_scan `article:base58raw:55:43` source=ciaCrisisof28tcauseditReayYesThemarketssens
+- E11_wif_base58_direct_scan `article:base58raw:56:43` source=iaCrisisof28tcauseditReayYesThemarketssense
+- E11_wif_base58_direct_scan `article:base58raw:57:43` source=aCrisisof28tcauseditReayYesThemarketssensed
+- E11_wif_base58_direct_scan `article:base58raw:58:43` source=Crisisof28tcauseditReayYesThemarketssensedB
+- E11_wif_base58_direct_scan `article:base58raw:59:43` source=risisof28tcauseditReayYesThemarketssensedBi
+- E11_wif_base58_direct_scan `article:base58raw:60:43` source=isisof28tcauseditReayYesThemarketssensedBit
+- E11_wif_base58_direct_scan `article:base58raw:61:43` source=sisof28tcauseditReayYesThemarketssensedBitc
+- E11_wif_base58_direct_scan `article:base58raw:62:43` source=isof28tcauseditReayYesThemarketssensedBitco
+- E11_wif_base58_direct_scan `article:base58raw:63:43` source=sof28tcauseditReayYesThemarketssensedBitcoi
+- E11_wif_base58_direct_scan `article:base58raw:64:43` source=of28tcauseditReayYesThemarketssensedBitcoin
+- E11_wif_base58_direct_scan `article:base58raw:65:43` source=f28tcauseditReayYesThemarketssensedBitcoinw
+- E11_wif_base58_direct_scan `article:base58raw:67:43` source=8tcauseditReayYesThemarketssensedBitcoinwas
+- E11_wif_base58_direct_scan `article:base58raw:68:43` source=tcauseditReayYesThemarketssensedBitcoinwasc
+- E11_wif_base58_direct_scan `article:base58raw:69:43` source=causeditReayYesThemarketssensedBitcoinwasco
+- E11_wif_base58_direct_scan `article:base58raw:70:43` source=auseditReayYesThemarketssensedBitcoinwascom
+- E11_wif_base58_direct_scan `article:base58raw:71:43` source=useditReayYesThemarketssensedBitcoinwascomi
+- E11_wif_base58_direct_scan `article:base58raw:72:43` source=seditReayYesThemarketssensedBitcoinwascomin
+- E11_wif_base58_direct_scan `article:base58raw:73:43` source=editReayYesThemarketssensedBitcoinwascoming
+- E11_wif_base58_direct_scan `article:base58raw:74:43` source=ditReayYesThemarketssensedBitcoinwascominga
+- E11_wif_base58_direct_scan `article:base58raw:75:43` source=itReayYesThemarketssensedBitcoinwascomingan
+- E11_wif_base58_direct_scan `article:base58raw:76:43` source=tReayYesThemarketssensedBitcoinwascomingand
+- E11_wif_base58_direct_scan `article:base58raw:77:43` source=ReayYesThemarketssensedBitcoinwascomingands
+- E11_wif_base58_direct_scan `article:base58raw:78:43` source=eayYesThemarketssensedBitcoinwascomingandst
+- E11_wif_base58_direct_scan `article:base58raw:79:43` source=ayYesThemarketssensedBitcoinwascomingandsta
+- E11_wif_base58_direct_scan `article:base58raw:80:43` source=yYesThemarketssensedBitcoinwascomingandstar
+
+## BIP39 Candidates
+- E16_geometry_bip39_indices `orange_geometry:bip39:24:12` topple make twelve border album keen trend above decline unlock spring virus
+- E16_geometry_bip39_indices `orange_geometry:bip39:60:12` combine inhale cross depth alert figure couch absurd dune dish fossil eagle
+- E16_geometry_bip39_indices `orange_geometry:bip39:87:12` rude cradle able grant debris legend dinner boring album income deputy about
+- E16_geometry_bip39_indices `orange_geometry:bip39:97:12` deputy about cup pottery person pyramid horror alert hockey program above plug
+- E16_geometry_bip39_indices `orange_geometry:bip39:98:12` about cup pottery person pyramid horror alert hockey program above plug awake
+- E16_geometry_bip39_indices `orange_geometry:bip39:103:12` horror alert hockey program above plug awake thrive bike denial alcohol sentence
+- E16_geometry_bip39_indices `orange_geometry:bip39:116:12` absent link hub soul inquiry ethics alien potato immune answer dignity object
+- E16_geometry_bip39_indices `orange_geometry:bip39:119:12` soul inquiry ethics alien potato immune answer dignity object able ability gas
+- E16_geometry_bip39_indices `orange_geometry:bip39:126:12` dignity object able ability gas fancy vocal flee next album primary fiction
+- E16_geometry_bip39_indices `orange_geometry:bip39:131:12` fancy vocal flee next album primary fiction able reduce odor blade palace
+- E16_geometry_bip39_indices `orange_geometry:bip39:182:12` above north alone sight wonder antique dignity object access ability embody eagle
+- E16_geometry_bip39_indices `orange_geometry:bip39:188:12` dignity object access ability embody eagle useless flower police behind order exercise
+- E16_geometry_bip39_indices `orange_geometry:bip39:194:12` useless flower police behind order exercise able matrix guitar unlock include gossip
+- E16_geometry_bip39_indices `orange_geometry:bip39:200:12` able matrix guitar unlock include gossip apple romance home about energy honey
+- E16_geometry_bip39_indices `orange_geometry:bip39:204:12` include gossip apple romance home about energy honey kidney install corn analyst
+- E16_geometry_bip39_indices `orange_geometry:bip39:213:12` install corn analyst giraffe image above excuse worry you advance rabbit alert
+- E16_geometry_bip39_indices `orange_geometry:bip39:214:12` corn analyst giraffe image above excuse worry you advance rabbit alert poem
+- E16_geometry_bip39_indices `orange_geometry:bip39:217:12` image above excuse worry you advance rabbit alert poem absorb absent excuse
+- E16_geometry_bip39_indices `orange_geometry:bip39:236:12` absorb banner choose blush crack alien another betray code abstract corn cook
+- E16_geometry_bip39_indices `orange_geometry:bip39:250:12` anger all cruise crazy absurd else dragon exhaust enforce also amused envelope
+- E16_geometry_bip39_indices `orange_geometry:bip39:5:15` setup kitchen adjust library disease alcohol tomato lawn able come local grain maximum daring alert
+- E16_geometry_bip39_indices `orange_geometry:bip39:47:15` marble whip absorb page basic simple boil clay alcohol recycle bid abstract decade combine inhale
+- E16_geometry_bip39_indices `orange_geometry:bip39:73:15` album exit dragon another dignity object absent ability govern concert belt cry quiz alley rude
+- E16_geometry_bip39_indices `orange_geometry:bip39:101:15` person pyramid horror alert hockey program above plug awake thrive bike denial alcohol sentence basket
+- E16_geometry_bip39_indices `orange_geometry:bip39:225:15` poem absorb absent excuse alpha sort artist letter alcohol monster anxiety absorb banner choose blush
+- E16_geometry_bip39_indices `orange_geometry:bip39:244:15` code abstract corn cook decorate current anger all cruise crazy absurd else dragon exhaust enforce
+- E16_geometry_bip39_indices `orange_geometry:bip39:283:15` object able ability plastic stomach someone alien cinnamon coral ritual until able increase venue noodle
+- E16_geometry_bip39_indices `orange_geometry:bip39:109:18` awake thrive bike denial alcohol sentence basket absent link hub soul inquiry ethics alien potato immune answer dignity
+- E16_geometry_bip39_indices `orange_geometry:bip39:153:18` jealous spy lava early alien radar kingdom able spike oppose august peace dice alien vacant pact about curious
+- E16_geometry_bip39_indices `orange_geometry:bip39:197:18` behind order exercise able matrix guitar unlock include gossip apple romance home about energy honey kidney install corn
+- E16_geometry_bip39_indices `orange_geometry:bip39:213:18` install corn analyst giraffe image above excuse worry you advance rabbit alert poem absorb absent excuse alpha sort
+- E16_geometry_bip39_indices `orange_geometry:bip39:44:24` world outside alley marble whip absorb page basic simple boil clay alcohol recycle bid abstract decade combine inhale cross depth alert figure couch absurd
+- E16_geometry_bip39_indices `orange_geometry:bip39:48:24` whip absorb page basic simple boil clay alcohol recycle bid abstract decade combine inhale cross depth alert figure couch absurd dune dish fossil eagle
+- E16_geometry_bip39_indices `orange_geometry:bip39:207:24` romance home about energy honey kidney install corn analyst giraffe image above excuse worry you advance rabbit alert poem absorb absent excuse alpha sort
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:4:12` eagle useless flower enroll dance space enable achieve antenna angry antique annual
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:52:12` soft abuse alter already antique annual absent excuse alpha sort artist cream
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:71:12` annual absorb banner choose blush crack tuition unfold upon village abandon abandon
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:142:12` ability mixed jealous spy lava fragile fuel nature glance above act actor
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:144:12` jealous spy lava fragile fuel nature glance above act actor antenna another
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:170:12` about curious pioneer tilt regret extra like supreme mixture access amount amount
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:199:12` govern concert belt cry case cart quantum chimney absurd age age another
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:281:12` another able matrix guitar unlock include episode father order floor account amateur
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:282:12` able matrix guitar unlock include episode father order floor account amateur abandon
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:321:12` ahead antique another absent excuse alpha sort artist cream soft sample stone
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:377:12` abandon antique another abuse credit firm demise garment soft ball squirrel blur
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:386:12` ball squirrel blur abandon abandon abandon antique another access before humble border
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:390:12` abandon abandon antique another access before humble border jaguar tribe cement two
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:40:15` accident abuse antique annual above excuse worry you advance cream shoulder sample soft abuse alter
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:70:15` antique annual absorb banner choose blush crack tuition unfold upon village abandon abandon abandon antique
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:75:15` blush crack tuition unfold upon village abandon abandon abandon antique annual abstract corn cook decorate
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:78:15` unfold upon village abandon abandon abandon antique annual abstract corn cook decorate current soup venue
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:87:15` corn cook decorate current soup venue story warm abandon abandon abandon antique annual absurd else
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:178:15` mixture access amount amount antenna another above laptop whale battle above clean shine peace slam
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:201:15` belt cry case cart quantum chimney absurd age age another antenna able grant debris legend
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:216:15` dinner olympic client put control abandon abandon abandon another antenna about cup pottery person pyramid
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:230:15` pyramid ladder lottery spread master absorb addict abandon another antenna above plug awake thrive bike
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:248:15` swamp abandon abandon abandon another antenna absent link hub soul inquiry flight canoe note change
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:271:15` useless flower enroll dance space enable advance blade beyond antique another able matrix guitar unlock
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:376:15` abandon abandon antique another abuse credit firm demise garment soft ball squirrel blur abandon abandon
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:111:18` abandon antique annual abuse credit firm demise garment soft ball squirrel blur abandon abandon abandon antique annual access
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:289:18` order floor account amateur abandon antique another about energy honey kidney install position fluid someone fury about act
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:297:18` energy honey kidney install position fluid someone fury about act abandon antique another above excuse worry you advance
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:326:18` alpha sort artist cream soft sample stone achieve artwork already antique another absorb banner choose blush crack tuition
+- E17_reflected_geometry_bip39_indices `reflected_geometry:bip39:368:18` dragon exhaust enforce saddle absent select almost abandon abandon abandon antique another abuse credit firm demise garment soft
+- E19_id_shortcode_bip39_indices `ids_and_shortcodes:bip39:11:12` abuse above absent above abuse abstract ability absorb about able abandon absorb
+- E19_id_shortcode_bip39_indices `ids_and_shortcodes:bip39:25:12` abuse absurd ability absorb abuse above absent abandon above abuse abstract ability
+- E19_id_shortcode_bip39_indices `ids_and_shortcodes:bip39:26:12` absurd ability absorb abuse above absent abandon above abuse abstract ability absorb
+- E19_id_shortcode_bip39_indices `ids_and_shortcodes:bip39:42:12` able absent about abuse ability abstract absent about able absurd ability absorb
+- E19_id_shortcode_bip39_indices `ids_and_shortcodes:bip39:55:12` able abandon absorb abuse abandon able absent about abuse ability abandon abstract
+- E19_id_shortcode_bip39_indices `ids_and_shortcodes:bip39:76:12` about above abstract about abstract absorb about abuse abuse abstract about able
+- E19_id_shortcode_bip39_indices `ids_and_shortcodes:bip39:82:12` about abuse abuse abstract about able absurd ability absorb about able ability
+- E19_id_shortcode_bip39_indices `ids_and_shortcodes:bip39:97:12` about abstract absorb about abuse abuse abandon abstract about able absurd ability
+- E19_id_shortcode_bip39_indices `ids_and_shortcodes:bip39:115:12` abstract about ability about able absent above abuse abstract about above absorb
+- E19_id_shortcode_bip39_indices `ids_and_shortcodes:bip39:134:12` abstract about ability about able absent above abuse abstract about above absorb
+- E19_id_shortcode_bip39_indices `ids_and_shortcodes:bip39:155:12` above above about absent above abuse absorb abuse absorb ability absorb about
+- E19_id_shortcode_bip39_indices `ids_and_shortcodes:bip39:176:12` absent above abuse absorb abuse absorb abandon ability absorb about able able
+- E19_id_shortcode_bip39_indices `ids_and_shortcodes:bip39:184:12` absorb about able able abstract able absurd abuse absurd ability absorb above
+- E19_id_shortcode_bip39_indices `ids_and_shortcodes:bip39:195:12` above above ability absorb absent ability able ability absorb about able able
+- E19_id_shortcode_bip39_indices `ids_and_shortcodes:bip39:203:12` absorb about able able abstract able absurd abuse absurd ability absorb above
+- E19_id_shortcode_bip39_indices `ids_and_shortcodes:bip39:223:12` aerobic acoustic access afford abstract affair advice access achieve again alarm act

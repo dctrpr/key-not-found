@@ -1,0 +1,658 @@
+{
+  "createdAt": "2026-05-24T20:54:42",
+  "scope": "source-reopen requirements after local selector search pause; no extraction or key derivation",
+  "inputReports": {
+    "future_packet": "analysis_outputs/source_audit/future_source_validation_packet/future_source_validation_packet.json",
+    "priority_crops": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_pack.json",
+    "tri_contact": "analysis_outputs/source_audit/p78_frame_tricontact_signature/p78_frame_tricontact_signature.json",
+    "native_bridge": "analysis_outputs/source_audit/p78_frame_source_native_bridge/p78_frame_source_native_bridge.json",
+    "topology": "analysis_outputs/source_audit/issue24_physical_page_topology/issue24_physical_page_topology.json",
+    "frontier": "analysis_outputs/source_audit/missing_rule_frontier/missing_rule_frontier.json",
+    "scan_lock": "analysis_outputs/source_audit/desktop_best_scan_pixel_lock/desktop_best_scan_pixel_lock.json",
+    "obbo": "analysis_outputs/source_audit/obbo_highres_boundary_coincidences/obbo_highres_boundary_coincidences.json"
+  },
+  "sheet": "analysis_outputs/source_audit/source_reopen_requirements/source_reopen_requirements_sheet.jpg",
+  "sheetPanels": [
+    {
+      "title": "page 76 validation crops",
+      "path": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_sheet.jpg"
+    },
+    {
+      "title": "p78 frame tri-contact",
+      "path": "analysis_outputs/source_audit/p78_frame_tricontact_signature/p78_frame_tricontact_signature_overlay.jpg"
+    },
+    {
+      "title": "upright/native bridge",
+      "path": "analysis_outputs/source_audit/p78_frame_source_native_bridge/p78_frame_source_native_bridge_sheet.jpg"
+    },
+    {
+      "title": "physical topology",
+      "path": "analysis_outputs/source_audit/issue24_physical_page_topology/issue24_physical_page_topology_sheet.jpg"
+    },
+    {
+      "title": "current scan lock",
+      "path": "analysis_outputs/source_audit/desktop_best_scan_pixel_lock/desktop_best_scan_pixel_lock_sheet.jpg"
+    }
+  ],
+  "currentState": {
+    "localSelectorSearch": "paused for current scan",
+    "sourceConstraint": "2026-05-24 user clarification: no native/original PDF is expected; all available PDFs are scanned-page sources",
+    "frontierDecision": {
+      "localSelectorSearch": "pause unless new clue/source changes the rule space",
+      "highestValueNextMove": "new scan/physical/raw-clue asset validation against the source-acquisition packet and readable/upright 3D crop geometry",
+      "activeValidationTargets": [
+        "O4/B4/G5/O5 Y/K-frame quartet",
+        "O5 shitcoiner at heart",
+        "G5 Volcano Bonds",
+        "L26-L29 source band",
+        "p78 frame tri-contact"
+      ],
+      "sourceReopenGate": "use analysis_outputs/source_audit/source_reopen_requirements/source_reopen_requirements.md; require R1-R5 before selector/key checks resume"
+    },
+    "byteLockedScan": {
+      "pdfByteIdentical": true,
+      "desktopSha256": "a0714dcbe503ecdff846f0f77334e2d1d259937d7fe5130258212f24c137716e",
+      "workspaceSha256": "a0714dcbe503ecdff846f0f77334e2d1d259937d7fe5130258212f24c137716e"
+    },
+    "triContactBenchmark": {
+      "currentFrame": [
+        1234.0,
+        2398.0,
+        2250.0,
+        2950.0
+      ],
+      "currentO5OverlapVsTarget": 0.24754,
+      "currentG5GapPx": 38.0,
+      "currentM3RightEdgeOverlapPx": 265.0,
+      "repairedFrame": [
+        1194.0,
+        2398.0,
+        2210.0,
+        2950.0
+      ],
+      "repairDx": -40.0,
+      "repairDy": 0.0,
+      "repairTriContactPass": true
+    }
+  },
+  "validationTargets": [
+    {
+      "name": "O5 primary",
+      "label": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "why": "highest-scoring target surface; lower page-76 orange highlight"
+    },
+    {
+      "name": "G5 pair",
+      "label": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "why": "paired black/grey target in the same lower corridor"
+    },
+    {
+      "name": "OBBO anchor set",
+      "label": "buying the dip / $1 billion / Volcano Bonds / shitcoiner at heart",
+      "box": null,
+      "anchors": [
+        {
+          "id": "buying_dip",
+          "label": "buying the dip",
+          "color": "orange",
+          "box": [
+            1328.0,
+            2160.0,
+            1760.0,
+            2226.0
+          ]
+        },
+        {
+          "id": "one_billion",
+          "label": "$1 billion",
+          "color": "black",
+          "box": [
+            430.0,
+            2400.0,
+            690.0,
+            2447.0
+          ]
+        },
+        {
+          "id": "volcano_bonds",
+          "label": "Volcano Bonds",
+          "color": "black",
+          "box": [
+            795.0,
+            2544.0,
+            1196.0,
+            2592.0
+          ]
+        },
+        {
+          "id": "shitcoiner_heart",
+          "label": "shitcoiner at heart",
+          "color": "orange",
+          "box": [
+            1040.0,
+            2932.0,
+            1661.0,
+            2982.0
+          ]
+        }
+      ],
+      "why": "compact O-B-B-O boundary signature; source changes must preserve or explain it"
+    },
+    {
+      "name": "Priority crop pack",
+      "label": "line-level p76 comparison crops",
+      "box": null,
+      "crops": [
+        {
+          "id": "L32_O5_primary",
+          "title": "Primary O5 / L32",
+          "text": "Maybe because he's a shitcoiner at heart.",
+          "crop": [
+            850,
+            2860,
+            1770,
+            3038
+          ],
+          "image": "analysis_outputs/source_audit/page76_priority_crop_pack/L32_O5_primary.jpg",
+          "boxes": [
+            {
+              "label": "O5 shitcoiner at heart",
+              "box": [
+                1040,
+                2932,
+                1661,
+                2982
+              ],
+              "color": "#ff9b2e"
+            }
+          ]
+        },
+        {
+          "id": "L27_G5_pair",
+          "title": "Paired G5 / L27",
+          "text": "collateralized Volcano Bonds to pay off the IMF",
+          "crop": [
+            720,
+            2505,
+            1650,
+            2625
+          ],
+          "image": "analysis_outputs/source_audit/page76_priority_crop_pack/L27_G5_pair.jpg",
+          "boxes": [
+            {
+              "label": "G5 Volcano Bonds",
+              "box": [
+                795,
+                2544,
+                1196,
+                2592
+              ],
+              "color": "#8f98a5"
+            },
+            {
+              "label": "pay off the IMF",
+              "box": [
+                1278.51,
+                2535.36,
+                1607.19,
+                2579.93
+              ],
+              "color": "#55d6ff"
+            }
+          ]
+        },
+        {
+          "id": "L25_should_sell",
+          "title": "Frame Top / L25",
+          "text": "$1 billion in bitcoin - that he should sell",
+          "crop": [
+            720,
+            2355,
+            1515,
+            2455
+          ],
+          "image": "analysis_outputs/source_audit/page76_priority_crop_pack/L25_should_sell.jpg",
+          "boxes": [
+            {
+              "label": "should sell",
+              "box": [
+                1201.11,
+                2393.42,
+                1439.33,
+                2433.53
+              ],
+              "color": "#ff5ebc"
+            }
+          ]
+        },
+        {
+          "id": "L26_L29_source_band",
+          "title": "Broad p78 Source Band / L26-L29",
+          "text": "earnings / Volcano Bonds / Mike / could sell band",
+          "crop": [
+            720,
+            2440,
+            1685,
+            2745
+          ],
+          "image": "analysis_outputs/source_audit/page76_priority_crop_pack/L26_L29_source_band.jpg",
+          "boxes": [
+            {
+              "label": "earnings",
+              "box": [
+                1222.22,
+                2467.15,
+                1398.23,
+                2507.26
+              ],
+              "color": "#ff5ebc"
+            },
+            {
+              "label": "G5 Volcano Bonds",
+              "box": [
+                795,
+                2544,
+                1196,
+                2592
+              ],
+              "color": "#8f98a5"
+            },
+            {
+              "label": "I tagged Mike",
+              "box": [
+                1258.41,
+                2609.09,
+                1542.06,
+                2653.65
+              ],
+              "color": "#55d6ff"
+            },
+            {
+              "label": "could sell",
+              "box": [
+                1285.54,
+                2686.2,
+                1531.3,
+                2726.31
+              ],
+              "color": "#55d6ff"
+            }
+          ]
+        },
+        {
+          "id": "L25_L32_frame_context",
+          "title": "Full Frame Context / L25-L32",
+          "text": "should sell -> Volcano Bonds -> shitcoiner at heart",
+          "crop": [
+            720,
+            2350,
+            1750,
+            3045
+          ],
+          "image": "analysis_outputs/source_audit/page76_priority_crop_pack/L25_L32_frame_context.jpg",
+          "boxes": [
+            {
+              "label": "should sell",
+              "box": [
+                1201.11,
+                2393.42,
+                1439.33,
+                2433.53
+              ],
+              "color": "#ff5ebc"
+            },
+            {
+              "label": "G5 Volcano Bonds",
+              "box": [
+                795,
+                2544,
+                1196,
+                2592
+              ],
+              "color": "#8f98a5"
+            },
+            {
+              "label": "O5 shitcoiner at heart",
+              "box": [
+                1040,
+                2932,
+                1661,
+                2982
+              ],
+              "color": "#ff9b2e"
+            }
+          ]
+        }
+      ],
+      "why": "manual visual baseline for future physical or higher-resolution scan sources"
+    }
+  ],
+  "orientationGuardrail": {
+    "sourceImagesAreNative": true,
+    "cropAnd3dImagesAreReadableUpright": true,
+    "rule": "Compare like with like: rotate fresh PDF/source_images 180 degrees before applying readable/upright crop coordinates.",
+    "scanPages": [
+      {
+        "articlePage": 75,
+        "pdfPageNumber1": 3,
+        "embeddedSize": [
+          2544,
+          3264
+        ],
+        "sourceBestOrientation": "native",
+        "uprightBestOrientation": "rot180",
+        "freshRot180Vs3dRms": 2.246149
+      },
+      {
+        "articlePage": 76,
+        "pdfPageNumber1": 4,
+        "embeddedSize": [
+          2544,
+          3264
+        ],
+        "sourceBestOrientation": "native",
+        "uprightBestOrientation": "rot180",
+        "freshRot180Vs3dRms": 2.069753
+      },
+      {
+        "articlePage": 77,
+        "pdfPageNumber1": 5,
+        "embeddedSize": [
+          2544,
+          3264
+        ],
+        "sourceBestOrientation": "native",
+        "uprightBestOrientation": "rot180",
+        "freshRot180Vs3dRms": 1.901945
+      },
+      {
+        "articlePage": 78,
+        "pdfPageNumber1": 6,
+        "embeddedSize": [
+          2544,
+          3264
+        ],
+        "sourceBestOrientation": "native",
+        "uprightBestOrientation": "rot180",
+        "freshRot180Vs3dRms": 2.125986
+      },
+      {
+        "articlePage": 79,
+        "pdfPageNumber1": 7,
+        "embeddedSize": [
+          2544,
+          3264
+        ],
+        "sourceBestOrientation": "native",
+        "uprightBestOrientation": "rot180",
+        "freshRot180Vs3dRms": 2.426933
+      },
+      {
+        "articlePage": 80,
+        "pdfPageNumber1": 8,
+        "embeddedSize": [
+          2544,
+          3264
+        ],
+        "sourceBestOrientation": "native",
+        "uprightBestOrientation": "rot180",
+        "freshRot180Vs3dRms": 1.894221
+      }
+    ],
+    "physicalLeaves": [
+      {
+        "name": "opener leaf",
+        "internalPages": [
+          73,
+          74
+        ],
+        "pdfPages": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "article leaf 1",
+        "internalPages": [
+          75,
+          76
+        ],
+        "pdfPages": [
+          3,
+          4
+        ]
+      },
+      {
+        "name": "article leaf 2",
+        "internalPages": [
+          77,
+          78
+        ],
+        "pdfPages": [
+          5,
+          6
+        ]
+      },
+      {
+        "name": "article leaf 3",
+        "internalPages": [
+          79,
+          80
+        ],
+        "pdfPages": [
+          7,
+          8
+        ]
+      }
+    ],
+    "facingSpreads": [
+      {
+        "name": "entry spread",
+        "internalPages": [
+          74,
+          75
+        ],
+        "pdfPages": [
+          2,
+          3
+        ]
+      },
+      {
+        "name": "article spread 1",
+        "internalPages": [
+          76,
+          77
+        ],
+        "pdfPages": [
+          4,
+          5
+        ]
+      },
+      {
+        "name": "article spread 2",
+        "internalPages": [
+          78,
+          79
+        ],
+        "pdfPages": [
+          6,
+          7
+        ]
+      }
+    ],
+    "bridgeRows": [
+      {
+        "name": "current",
+        "label": "current",
+        "dx": 0.0,
+        "dy": 0.0,
+        "color": "#55d6ff",
+        "p78UprightBox": [
+          294,
+          2398,
+          1310,
+          2950
+        ],
+        "p76ReflectedUprightBox": [
+          1234,
+          2398,
+          2250,
+          2950
+        ],
+        "p78NativeBox": [
+          1234,
+          314,
+          2250,
+          866
+        ],
+        "p76NativeBox": [
+          294,
+          314,
+          1310,
+          866
+        ]
+      },
+      {
+        "name": "g5_edge_touch_dx_-38",
+        "label": "g5_edge_touch_dx_-38",
+        "dx": -38.0,
+        "dy": 0.0,
+        "color": "#ff5ebc",
+        "p78UprightBox": [
+          332,
+          2398,
+          1348,
+          2950
+        ],
+        "p76ReflectedUprightBox": [
+          1196,
+          2398,
+          2212,
+          2950
+        ],
+        "p78NativeBox": [
+          1196,
+          314,
+          2212,
+          866
+        ],
+        "p76NativeBox": [
+          332,
+          314,
+          1348,
+          866
+        ]
+      },
+      {
+        "name": "nearest_grid_dx_-40",
+        "label": "nearest_grid_dx_-40",
+        "dx": -40.0,
+        "dy": 0.0,
+        "color": "#ff9b2e",
+        "p78UprightBox": [
+          334,
+          2398,
+          1350,
+          2950
+        ],
+        "p76ReflectedUprightBox": [
+          1194,
+          2398,
+          2210,
+          2950
+        ],
+        "p78NativeBox": [
+          1194,
+          314,
+          2210,
+          866
+        ],
+        "p76NativeBox": [
+          334,
+          314,
+          1350,
+          866
+        ]
+      }
+    ]
+  },
+  "acceptedSources": [
+    {
+      "type": "physical magazine",
+      "requirements": [
+        "flat photos/scans of pages 75-80",
+        "photos of physical leaves 75/76, 77/78, and 79/80 from both sides",
+        "held-to-light shots only if the same leaf and orientation are visible",
+        "enough resolution to read O5, G5, $1 billion, buying the dip, and p80 package text"
+      ]
+    },
+    {
+      "type": "higher-resolution scanned source/export",
+      "requirements": [
+        "higher-resolution scanned page image or scanned PDF, not a resaved screenshot",
+        "visible page edges, scan provenance, or export metadata for the scanned page images",
+        "must preserve or explain the p78 frame to p76 tri-contact benchmark"
+      ]
+    },
+    {
+      "type": "external clue/provenance",
+      "requirements": [
+        "wording that names an extraction unit/order such as word, letter, line, edge, font, first/last, left/right, or read direction",
+        "must point back to the page-76 lower corridor or explain why it should be abandoned"
+      ]
+    }
+  ],
+  "insufficientInputs": [
+    "the same Desktop/workspace magazine.pdf again",
+    "requests for native/original PDF layout layers from the current source set",
+    "resaved or downsampled screenshots of the same PDF",
+    "OCR-PDF coordinate boxes used as geometry truth",
+    "current 3D viewer focus/camera state without a new source image",
+    "additional broad hashing, BIP39, WIF, minikey, Base58, or prose-hash passes",
+    "more local G5/O5 text-unit permutations without a clue naming the unit/order"
+  ],
+  "reopenGates": [
+    {
+      "id": "R1",
+      "name": "source identity",
+      "passCondition": "new material must be physically or scanned-source distinct from the byte-locked current scan"
+    },
+    {
+      "id": "R2",
+      "name": "target preservation",
+      "passCondition": "must preserve or clearly explain O5, G5, L26-L29, and the p78 frame contact pattern"
+    },
+    {
+      "id": "R3",
+      "name": "unit/order evidence",
+      "passCondition": "must name or visibly supply the extraction unit/order before any key checks resume"
+    },
+    {
+      "id": "R4",
+      "name": "orientation discipline",
+      "passCondition": "must state whether coordinates are readable/upright or native/source and apply the 180-degree guardrail"
+    },
+    {
+      "id": "R5",
+      "name": "controlled improvement",
+      "passCondition": "must improve a compact benchmark, preferably dx -38/-40 G5 edge repair, O5 bottom contact, M3 right-edge cut, or the p77 one-line near miss"
+    }
+  ],
+  "decision": {
+    "doNotResumeExtractionFrom": "current scan or duplicate/resaved derivatives alone",
+    "resumeOnlyAfter": "a source/clue passes R1-R5 and names or materially supplies the extraction unit/order",
+    "nextBestMove": "obtain or inspect physical scan, higher-resolution scanned-source provenance, or raw clue wording, then score it against this checklist before any selector/key test"
+  }
+}

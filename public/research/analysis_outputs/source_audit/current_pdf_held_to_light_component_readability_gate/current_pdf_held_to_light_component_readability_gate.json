@@ -1,0 +1,5302 @@
+{
+  "createdAt": "2026-05-24T17:56:33",
+  "scope": "Threshold-crossing exact PDF-native held-to-light rows checked for isolated source-only component readability inside active target and OVERDOSE-slot crops.",
+  "inputs": {
+    "polarityGate": "analysis_outputs/source_audit/current_pdf_held_to_light_composite_polarity_gate/current_pdf_held_to_light_composite_polarity_gate.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "decision": "current_pdf_held_to_light_component_readability_no_selector",
+  "summary": {
+    "decision": "current_pdf_held_to_light_component_readability_no_selector",
+    "candidateRowCount": 23,
+    "activeRowCount": 15,
+    "overdoseSlotRowCount": 8,
+    "componentRowCount": 23,
+    "totalComponentCount": 203,
+    "totalLetterlikeComponents": 168,
+    "totalCleanLetterlikeComponents": 122,
+    "visualReadableLikeRowCount": 5,
+    "mergedOrEdgeDominatedRowCount": 18,
+    "sourceWordRowCount": 19,
+    "totalSourceWordHits": 110,
+    "totalStrictInstructionHits": 0,
+    "contextTermRowCount": 5,
+    "totalContextTermHits": 5,
+    "selectorCandidateCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "fingerprint": "rows=23|active=15|slots=8|componentRows=23|components=203|letterlike=168|clean=122|visualRows=5|mergedRows=18|wordRows=19|words=110|strict=0|context=5|candidates=0|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "fingerprint": "rows=23|active=15|slots=8|componentRows=23|components=203|letterlike=168|clean=122|visualRows=5|mergedRows=18|wordRows=19|words=110|strict=0|context=5|candidates=0|sourceR3=0|triggers=0/9|selectors=0",
+  "readabilityRows": [
+    {
+      "kind": "active",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "back_mirror_rotate180",
+      "target": "B4",
+      "label": "B4",
+      "phrase": "$1 billion",
+      "slotIndex": null,
+      "slotLetter": null,
+      "nativeBox": [
+        343.21,
+        2060.78,
+        554.1,
+        2101.17
+      ],
+      "sourceOnlyCoverage": 0.107701422,
+      "sourceOnlyPixelCount": 909,
+      "sourceMaskPixelCount": 1316,
+      "targetMaskPixelCount": 2459,
+      "cropArea": 8440,
+      "sourceOnlyCropCoverage": 0.107701422,
+      "componentCount": 12,
+      "letterlikeComponentCount": 11,
+      "cleanLetterlikeComponentCount": 3,
+      "edgeTouchComponentCount": 9,
+      "edgeTouchComponentFraction": 0.75,
+      "largestComponentPixelCount": 143,
+      "largestComponentSourceOnlyFraction": 0.157316,
+      "mergedOrEdgeDominated": true,
+      "visualReadableLike": false,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "sourceWordHitCount": 6,
+      "sourceTextPreview": "The markets sensed Markets are like",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            463,
+            2061,
+            481,
+            2074
+          ],
+          "localBox": [
+            120,
+            0,
+            138,
+            13
+          ],
+          "pixelCount": 143,
+          "widthPx": 18,
+          "heightPx": 13,
+          "fillRatio": 0.611111,
+          "aspectRatio": 1.384615,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.157316,
+          "cropFraction": 0.016943,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            535,
+            2061,
+            554,
+            2074
+          ],
+          "localBox": [
+            192,
+            0,
+            211,
+            13
+          ],
+          "pixelCount": 114,
+          "widthPx": 19,
+          "heightPx": 13,
+          "fillRatio": 0.461538,
+          "aspectRatio": 1.461538,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.125413,
+          "cropFraction": 0.013507,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            389,
+            2061,
+            408,
+            2072
+          ],
+          "localBox": [
+            46,
+            0,
+            65,
+            11
+          ],
+          "pixelCount": 107,
+          "widthPx": 19,
+          "heightPx": 11,
+          "fillRatio": 0.511962,
+          "aspectRatio": 1.727273,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.117712,
+          "cropFraction": 0.012678,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            421,
+            2061,
+            438,
+            2073
+          ],
+          "localBox": [
+            78,
+            0,
+            95,
+            12
+          ],
+          "pixelCount": 99,
+          "widthPx": 17,
+          "heightPx": 12,
+          "fillRatio": 0.485294,
+          "aspectRatio": 1.416667,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.108911,
+          "cropFraction": 0.01173,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            443,
+            2061,
+            456,
+            2075
+          ],
+          "localBox": [
+            100,
+            0,
+            113,
+            14
+          ],
+          "pixelCount": 80,
+          "widthPx": 13,
+          "heightPx": 14,
+          "fillRatio": 0.43956,
+          "aspectRatio": 0.928571,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.088009,
+          "cropFraction": 0.009479,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            514,
+            2061,
+            523,
+            2074
+          ],
+          "localBox": [
+            171,
+            0,
+            180,
+            13
+          ],
+          "pixelCount": 60,
+          "widthPx": 9,
+          "heightPx": 13,
+          "fillRatio": 0.512821,
+          "aspectRatio": 0.692308,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.066007,
+          "cropFraction": 0.007109,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            362,
+            2063,
+            369,
+            2074
+          ],
+          "localBox": [
+            19,
+            2,
+            26,
+            13
+          ],
+          "pixelCount": 46,
+          "widthPx": 7,
+          "heightPx": 11,
+          "fillRatio": 0.597403,
+          "aspectRatio": 0.636364,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.050605,
+          "cropFraction": 0.00545,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            501,
+            2061,
+            505,
+            2071
+          ],
+          "localBox": [
+            158,
+            0,
+            162,
+            10
+          ],
+          "pixelCount": 38,
+          "widthPx": 4,
+          "heightPx": 10,
+          "fillRatio": 0.95,
+          "aspectRatio": 0.4,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.041804,
+          "cropFraction": 0.004502,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            375,
+            2061,
+            380,
+            2069
+          ],
+          "localBox": [
+            32,
+            0,
+            37,
+            8
+          ],
+          "pixelCount": 31,
+          "widthPx": 5,
+          "heightPx": 8,
+          "fillRatio": 0.775,
+          "aspectRatio": 0.625,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.034103,
+          "cropFraction": 0.003673,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            518,
+            2075,
+            524,
+            2081
+          ],
+          "localBox": [
+            175,
+            14,
+            181,
+            20
+          ],
+          "pixelCount": 30,
+          "widthPx": 6,
+          "heightPx": 6,
+          "fillRatio": 0.833333,
+          "aspectRatio": 1.0,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.033003,
+          "cropFraction": 0.003555,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            343,
+            2068,
+            350,
+            2075
+          ],
+          "localBox": [
+            0,
+            7,
+            7,
+            14
+          ],
+          "pixelCount": 29,
+          "widthPx": 7,
+          "heightPx": 7,
+          "fillRatio": 0.591837,
+          "aspectRatio": 1.0,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.031903,
+          "cropFraction": 0.003436,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            535,
+            2074,
+            541,
+            2081
+          ],
+          "localBox": [
+            192,
+            13,
+            198,
+            20
+          ],
+          "pixelCount": 27,
+          "widthPx": 6,
+          "heightPx": 7,
+          "fillRatio": 0.642857,
+          "aspectRatio": 0.857143,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.029703,
+          "cropFraction": 0.003199,
+          "letterlike": true,
+          "cleanLetterlike": true
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "back_mirror_rotate180",
+      "target": "O4",
+      "label": "O4",
+      "phrase": "buying the dip",
+      "slotIndex": null,
+      "slotLetter": null,
+      "nativeBox": [
+        1069.72,
+        1870.86,
+        1444.2,
+        1912.11
+      ],
+      "sourceOnlyCoverage": 0.271944698,
+      "sourceOnlyPixelCount": 4170,
+      "sourceMaskPixelCount": 4380,
+      "targetMaskPixelCount": 1349,
+      "cropArea": 15334,
+      "sourceOnlyCropCoverage": 0.271944698,
+      "componentCount": 16,
+      "letterlikeComponentCount": 16,
+      "cleanLetterlikeComponentCount": 14,
+      "edgeTouchComponentCount": 2,
+      "edgeTouchComponentFraction": 0.125,
+      "largestComponentPixelCount": 517,
+      "largestComponentSourceOnlyFraction": 0.123981,
+      "mergedOrEdgeDominated": false,
+      "visualReadableLike": true,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "sourceWordHitCount": 12,
+      "sourceTextPreview": "global economy. RSyiERSitieisumios were publishing the white paper and a collective panic",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            1216,
+            1877,
+            1256,
+            1906
+          ],
+          "localBox": [
+            146,
+            6,
+            186,
+            35
+          ],
+          "pixelCount": 517,
+          "widthPx": 40,
+          "heightPx": 29,
+          "fillRatio": 0.44569,
+          "aspectRatio": 1.37931,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.123981,
+          "cropFraction": 0.033716,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1409,
+            1871,
+            1433,
+            1899
+          ],
+          "localBox": [
+            339,
+            0,
+            363,
+            28
+          ],
+          "pixelCount": 422,
+          "widthPx": 24,
+          "heightPx": 28,
+          "fillRatio": 0.627976,
+          "aspectRatio": 0.857143,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.101199,
+          "cropFraction": 0.027521,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1277,
+            1878,
+            1297,
+            1899
+          ],
+          "localBox": [
+            207,
+            7,
+            227,
+            28
+          ],
+          "pixelCount": 342,
+          "widthPx": 20,
+          "heightPx": 21,
+          "fillRatio": 0.814286,
+          "aspectRatio": 0.952381,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.082014,
+          "cropFraction": 0.022303,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1375,
+            1878,
+            1396,
+            1900
+          ],
+          "localBox": [
+            305,
+            7,
+            326,
+            29
+          ],
+          "pixelCount": 341,
+          "widthPx": 21,
+          "heightPx": 22,
+          "fillRatio": 0.738095,
+          "aspectRatio": 0.954545,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.081775,
+          "cropFraction": 0.022238,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1352,
+            1877,
+            1376,
+            1900
+          ],
+          "localBox": [
+            282,
+            6,
+            306,
+            29
+          ],
+          "pixelCount": 302,
+          "widthPx": 24,
+          "heightPx": 23,
+          "fillRatio": 0.547101,
+          "aspectRatio": 1.043478,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.072422,
+          "cropFraction": 0.019695,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1256,
+            1878,
+            1278,
+            1906
+          ],
+          "localBox": [
+            186,
+            7,
+            208,
+            35
+          ],
+          "pixelCount": 291,
+          "widthPx": 22,
+          "heightPx": 28,
+          "fillRatio": 0.472403,
+          "aspectRatio": 0.785714,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.069784,
+          "cropFraction": 0.018977,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1163,
+            1875,
+            1185,
+            1901
+          ],
+          "localBox": [
+            93,
+            4,
+            115,
+            30
+          ],
+          "pixelCount": 285,
+          "widthPx": 22,
+          "heightPx": 26,
+          "fillRatio": 0.498252,
+          "aspectRatio": 0.846154,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.068345,
+          "cropFraction": 0.018586,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1338,
+            1878,
+            1356,
+            1907
+          ],
+          "localBox": [
+            268,
+            7,
+            286,
+            36
+          ],
+          "pixelCount": 282,
+          "widthPx": 18,
+          "heightPx": 29,
+          "fillRatio": 0.54023,
+          "aspectRatio": 0.62069,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.067626,
+          "cropFraction": 0.018391,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1084,
+            1877,
+            1105,
+            1898
+          ],
+          "localBox": [
+            14,
+            6,
+            35,
+            27
+          ],
+          "pixelCount": 223,
+          "widthPx": 21,
+          "heightPx": 21,
+          "fillRatio": 0.505669,
+          "aspectRatio": 1.0,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.053477,
+          "cropFraction": 0.014543,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1106,
+            1878,
+            1130,
+            1898
+          ],
+          "localBox": [
+            36,
+            7,
+            60,
+            27
+          ],
+          "pixelCount": 217,
+          "widthPx": 24,
+          "heightPx": 20,
+          "fillRatio": 0.452083,
+          "aspectRatio": 1.2,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.052038,
+          "cropFraction": 0.014152,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1195,
+            1878,
+            1214,
+            1898
+          ],
+          "localBox": [
+            125,
+            7,
+            144,
+            27
+          ],
+          "pixelCount": 209,
+          "widthPx": 19,
+          "heightPx": 20,
+          "fillRatio": 0.55,
+          "aspectRatio": 0.95,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.05012,
+          "cropFraction": 0.01363,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1317,
+            1877,
+            1336,
+            1904
+          ],
+          "localBox": [
+            247,
+            6,
+            266,
+            33
+          ],
+          "pixelCount": 203,
+          "widthPx": 19,
+          "heightPx": 27,
+          "fillRatio": 0.395712,
+          "aspectRatio": 0.703704,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.048681,
+          "cropFraction": 0.013239,
+          "letterlike": true,
+          "cleanLetterlike": true
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "back_mirror_rotate180",
+      "target": "O5",
+      "label": "O5",
+      "phrase": "shitcoiner at heart",
+      "slotIndex": null,
+      "slotLetter": null,
+      "nativeBox": [
+        833.96,
+        2519.69,
+        1331.93,
+        2562.66
+      ],
+      "sourceOnlyCoverage": 0.112169609,
+      "sourceOnlyPixelCount": 2402,
+      "sourceMaskPixelCount": 2402,
+      "targetMaskPixelCount": 3,
+      "cropArea": 21414,
+      "sourceOnlyCropCoverage": 0.112169609,
+      "componentCount": 4,
+      "letterlikeComponentCount": 4,
+      "cleanLetterlikeComponentCount": 0,
+      "edgeTouchComponentCount": 4,
+      "edgeTouchComponentFraction": 1.0,
+      "largestComponentPixelCount": 965,
+      "largestComponentSourceOnlyFraction": 0.401749,
+      "mergedOrEdgeDominated": true,
+      "visualReadableLike": false,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "sourceWordHitCount": 2,
+      "sourceTextPreview": "TOXIC AF",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            972,
+            2520,
+            1029,
+            2547
+          ],
+          "localBox": [
+            138,
+            0,
+            195,
+            27
+          ],
+          "pixelCount": 965,
+          "widthPx": 57,
+          "heightPx": 27,
+          "fillRatio": 0.627031,
+          "aspectRatio": 2.111111,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.401749,
+          "cropFraction": 0.045064,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            836,
+            2520,
+            887,
+            2540
+          ],
+          "localBox": [
+            2,
+            0,
+            53,
+            20
+          ],
+          "pixelCount": 702,
+          "widthPx": 51,
+          "heightPx": 20,
+          "fillRatio": 0.688235,
+          "aspectRatio": 2.55,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.292256,
+          "cropFraction": 0.032782,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            920,
+            2520,
+            957,
+            2543
+          ],
+          "localBox": [
+            86,
+            0,
+            123,
+            23
+          ],
+          "pixelCount": 603,
+          "widthPx": 37,
+          "heightPx": 23,
+          "fillRatio": 0.708578,
+          "aspectRatio": 1.608696,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.251041,
+          "cropFraction": 0.028159,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            999,
+            2520,
+            1014,
+            2531
+          ],
+          "localBox": [
+            165,
+            0,
+            180,
+            11
+          ],
+          "pixelCount": 124,
+          "widthPx": 15,
+          "heightPx": 11,
+          "fillRatio": 0.751515,
+          "aspectRatio": 1.363636,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.051624,
+          "cropFraction": 0.005791,
+          "letterlike": true,
+          "cleanLetterlike": false
+        }
+      ]
+    },
+    {
+      "kind": "overdose_slot",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "back_mirror_rotate180",
+      "target": "slot7_E",
+      "label": "slot7_E_E",
+      "phrase": null,
+      "slotIndex": 7,
+      "slotLetter": "E",
+      "nativeBox": [
+        1608.24,
+        1870.7,
+        1804.25,
+        2598.52
+      ],
+      "sourceOnlyCoverage": 0.292288069,
+      "sourceOnlyPixelCount": 41706,
+      "sourceMaskPixelCount": 44592,
+      "targetMaskPixelCount": 9517,
+      "cropArea": 142688,
+      "sourceOnlyCropCoverage": 0.292288069,
+      "componentCount": 7,
+      "letterlikeComponentCount": 4,
+      "cleanLetterlikeComponentCount": 4,
+      "edgeTouchComponentCount": 3,
+      "edgeTouchComponentFraction": 0.428571,
+      "largestComponentPixelCount": 23748,
+      "largestComponentSourceOnlyFraction": 0.569414,
+      "mergedOrEdgeDominated": true,
+      "visualReadableLike": false,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "sourceWordHitCount": 1,
+      "sourceTextPreview": "RSyiERSitieisumios",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            1708,
+            1871,
+            1804,
+            2211
+          ],
+          "localBox": [
+            100,
+            0,
+            196,
+            340
+          ],
+          "pixelCount": 23748,
+          "widthPx": 96,
+          "heightPx": 340,
+          "fillRatio": 0.727574,
+          "aspectRatio": 0.282353,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.569414,
+          "cropFraction": 0.166433,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1736,
+            2243,
+            1804,
+            2599
+          ],
+          "localBox": [
+            128,
+            372,
+            196,
+            728
+          ],
+          "pixelCount": 16787,
+          "widthPx": 68,
+          "heightPx": 356,
+          "fillRatio": 0.693448,
+          "aspectRatio": 0.191011,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.402508,
+          "cropFraction": 0.117648,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1608,
+            1985,
+            1621,
+            2024
+          ],
+          "localBox": [
+            0,
+            114,
+            13,
+            153
+          ],
+          "pixelCount": 451,
+          "widthPx": 13,
+          "heightPx": 39,
+          "fillRatio": 0.889546,
+          "aspectRatio": 0.333333,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.010814,
+          "cropFraction": 0.003161,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1717,
+            2236,
+            1740,
+            2250
+          ],
+          "localBox": [
+            109,
+            365,
+            132,
+            379
+          ],
+          "pixelCount": 89,
+          "widthPx": 23,
+          "heightPx": 14,
+          "fillRatio": 0.276398,
+          "aspectRatio": 1.642857,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.002134,
+          "cropFraction": 0.000624,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1700,
+            1894,
+            1710,
+            1902
+          ],
+          "localBox": [
+            92,
+            23,
+            102,
+            31
+          ],
+          "pixelCount": 37,
+          "widthPx": 10,
+          "heightPx": 8,
+          "fillRatio": 0.4625,
+          "aspectRatio": 1.25,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000887,
+          "cropFraction": 0.000259,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1730,
+            2018,
+            1739,
+            2025
+          ],
+          "localBox": [
+            122,
+            147,
+            131,
+            154
+          ],
+          "pixelCount": 31,
+          "widthPx": 9,
+          "heightPx": 7,
+          "fillRatio": 0.492063,
+          "aspectRatio": 1.285714,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000743,
+          "cropFraction": 0.000217,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1733,
+            2209,
+            1741,
+            2215
+          ],
+          "localBox": [
+            125,
+            338,
+            133,
+            344
+          ],
+          "pixelCount": 28,
+          "widthPx": 8,
+          "heightPx": 6,
+          "fillRatio": 0.583333,
+          "aspectRatio": 1.333333,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000671,
+          "cropFraction": 0.000196,
+          "letterlike": true,
+          "cleanLetterlike": true
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "front_rotate180",
+      "target": "O4",
+      "label": "O4",
+      "phrase": "buying the dip",
+      "slotIndex": null,
+      "slotLetter": null,
+      "nativeBox": [
+        1069.72,
+        1870.86,
+        1444.2,
+        1912.11
+      ],
+      "sourceOnlyCoverage": 0.229555237,
+      "sourceOnlyPixelCount": 3520,
+      "sourceMaskPixelCount": 3780,
+      "targetMaskPixelCount": 1349,
+      "cropArea": 15334,
+      "sourceOnlyCropCoverage": 0.229555237,
+      "componentCount": 15,
+      "letterlikeComponentCount": 14,
+      "cleanLetterlikeComponentCount": 12,
+      "edgeTouchComponentCount": 3,
+      "edgeTouchComponentFraction": 0.2,
+      "largestComponentPixelCount": 693,
+      "largestComponentSourceOnlyFraction": 0.196875,
+      "mergedOrEdgeDominated": false,
+      "visualReadableLike": true,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "sourceWordHitCount": 14,
+      "sourceTextPreview": "nervous system of the global aiaourmieurosess The cypherpunks were time after years of trying",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            1332,
+            1877,
+            1387,
+            1906
+          ],
+          "localBox": [
+            262,
+            6,
+            317,
+            35
+          ],
+          "pixelCount": 693,
+          "widthPx": 55,
+          "heightPx": 29,
+          "fillRatio": 0.434483,
+          "aspectRatio": 1.896552,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.196875,
+          "cropFraction": 0.045194,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1277,
+            1872,
+            1301,
+            1899
+          ],
+          "localBox": [
+            207,
+            1,
+            231,
+            28
+          ],
+          "pixelCount": 289,
+          "widthPx": 24,
+          "heightPx": 27,
+          "fillRatio": 0.445988,
+          "aspectRatio": 0.888889,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.082102,
+          "cropFraction": 0.018847,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1387,
+            1879,
+            1410,
+            1899
+          ],
+          "localBox": [
+            317,
+            8,
+            340,
+            28
+          ],
+          "pixelCount": 276,
+          "widthPx": 23,
+          "heightPx": 20,
+          "fillRatio": 0.6,
+          "aspectRatio": 1.15,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.078409,
+          "cropFraction": 0.017999,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1196,
+            1878,
+            1214,
+            1900
+          ],
+          "localBox": [
+            126,
+            7,
+            144,
+            29
+          ],
+          "pixelCount": 270,
+          "widthPx": 18,
+          "heightPx": 22,
+          "fillRatio": 0.681818,
+          "aspectRatio": 0.818182,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.076705,
+          "cropFraction": 0.017608,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1236,
+            1879,
+            1259,
+            1899
+          ],
+          "localBox": [
+            166,
+            8,
+            189,
+            28
+          ],
+          "pixelCount": 264,
+          "widthPx": 23,
+          "heightPx": 20,
+          "fillRatio": 0.573913,
+          "aspectRatio": 1.15,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.075,
+          "cropFraction": 0.017217,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1259,
+            1878,
+            1278,
+            1899
+          ],
+          "localBox": [
+            189,
+            7,
+            208,
+            28
+          ],
+          "pixelCount": 249,
+          "widthPx": 19,
+          "heightPx": 21,
+          "fillRatio": 0.62406,
+          "aspectRatio": 0.904762,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.070739,
+          "cropFraction": 0.016238,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1076,
+            1871,
+            1094,
+            1900
+          ],
+          "localBox": [
+            6,
+            0,
+            24,
+            29
+          ],
+          "pixelCount": 233,
+          "widthPx": 18,
+          "heightPx": 29,
+          "fillRatio": 0.44636,
+          "aspectRatio": 0.62069,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.066193,
+          "cropFraction": 0.015195,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1311,
+            1879,
+            1331,
+            1900
+          ],
+          "localBox": [
+            241,
+            8,
+            261,
+            29
+          ],
+          "pixelCount": 215,
+          "widthPx": 20,
+          "heightPx": 21,
+          "fillRatio": 0.511905,
+          "aspectRatio": 0.952381,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.06108,
+          "cropFraction": 0.014021,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1165,
+            1878,
+            1184,
+            1898
+          ],
+          "localBox": [
+            95,
+            7,
+            114,
+            27
+          ],
+          "pixelCount": 198,
+          "widthPx": 19,
+          "heightPx": 20,
+          "fillRatio": 0.521053,
+          "aspectRatio": 0.95,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.05625,
+          "cropFraction": 0.012912,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1216,
+            1879,
+            1235,
+            1899
+          ],
+          "localBox": [
+            146,
+            8,
+            165,
+            28
+          ],
+          "pixelCount": 195,
+          "widthPx": 19,
+          "heightPx": 20,
+          "fillRatio": 0.513158,
+          "aspectRatio": 0.95,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.055398,
+          "cropFraction": 0.012717,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1422,
+            1889,
+            1444,
+            1896
+          ],
+          "localBox": [
+            352,
+            18,
+            374,
+            25
+          ],
+          "pixelCount": 136,
+          "widthPx": 22,
+          "heightPx": 7,
+          "fillRatio": 0.883117,
+          "aspectRatio": 3.142857,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.038636,
+          "cropFraction": 0.008869,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1115,
+            1878,
+            1128,
+            1898
+          ],
+          "localBox": [
+            45,
+            7,
+            58,
+            27
+          ],
+          "pixelCount": 125,
+          "widthPx": 13,
+          "heightPx": 20,
+          "fillRatio": 0.480769,
+          "aspectRatio": 0.65,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.035511,
+          "cropFraction": 0.008152,
+          "letterlike": true,
+          "cleanLetterlike": true
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "front_rotate180",
+      "target": "O5",
+      "label": "O5",
+      "phrase": "shitcoiner at heart",
+      "slotIndex": null,
+      "slotLetter": null,
+      "nativeBox": [
+        833.96,
+        2519.69,
+        1331.93,
+        2562.66
+      ],
+      "sourceOnlyCoverage": 0.186420099,
+      "sourceOnlyPixelCount": 3992,
+      "sourceMaskPixelCount": 3992,
+      "targetMaskPixelCount": 3,
+      "cropArea": 21414,
+      "sourceOnlyCropCoverage": 0.186420099,
+      "componentCount": 6,
+      "letterlikeComponentCount": 6,
+      "cleanLetterlikeComponentCount": 0,
+      "edgeTouchComponentCount": 6,
+      "edgeTouchComponentFraction": 1.0,
+      "largestComponentPixelCount": 1278,
+      "largestComponentSourceOnlyFraction": 0.32014,
+      "mergedOrEdgeDominated": true,
+      "visualReadableLike": false,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "sourceWordHitCount": 2,
+      "sourceTextPreview": "TOXIC AF",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            1206,
+            2520,
+            1301,
+            2539
+          ],
+          "localBox": [
+            372,
+            0,
+            467,
+            19
+          ],
+          "pixelCount": 1278,
+          "widthPx": 95,
+          "heightPx": 19,
+          "fillRatio": 0.708033,
+          "aspectRatio": 5.0,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.32014,
+          "cropFraction": 0.059681,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1011,
+            2520,
+            1068,
+            2547
+          ],
+          "localBox": [
+            177,
+            0,
+            234,
+            27
+          ],
+          "pixelCount": 965,
+          "widthPx": 57,
+          "heightPx": 27,
+          "fillRatio": 0.627031,
+          "aspectRatio": 2.111111,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.241733,
+          "cropFraction": 0.045064,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1153,
+            2520,
+            1204,
+            2540
+          ],
+          "localBox": [
+            319,
+            0,
+            370,
+            20
+          ],
+          "pixelCount": 702,
+          "widthPx": 51,
+          "heightPx": 20,
+          "fillRatio": 0.688235,
+          "aspectRatio": 2.55,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.175852,
+          "cropFraction": 0.032782,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1083,
+            2520,
+            1120,
+            2543
+          ],
+          "localBox": [
+            249,
+            0,
+            286,
+            23
+          ],
+          "pixelCount": 603,
+          "widthPx": 37,
+          "heightPx": 23,
+          "fillRatio": 0.708578,
+          "aspectRatio": 1.608696,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.151052,
+          "cropFraction": 0.028159,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1301,
+            2520,
+            1332,
+            2534
+          ],
+          "localBox": [
+            467,
+            0,
+            498,
+            14
+          ],
+          "pixelCount": 312,
+          "widthPx": 31,
+          "heightPx": 14,
+          "fillRatio": 0.718894,
+          "aspectRatio": 2.214286,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.078156,
+          "cropFraction": 0.01457,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1026,
+            2520,
+            1041,
+            2531
+          ],
+          "localBox": [
+            192,
+            0,
+            207,
+            11
+          ],
+          "pixelCount": 124,
+          "widthPx": 15,
+          "heightPx": 11,
+          "fillRatio": 0.751515,
+          "aspectRatio": 1.363636,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.031062,
+          "cropFraction": 0.005791,
+          "letterlike": true,
+          "cleanLetterlike": false
+        }
+      ]
+    },
+    {
+      "kind": "overdose_slot",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "front_rotate180",
+      "target": "slot0_O",
+      "label": "slot0_O_O",
+      "phrase": null,
+      "slotIndex": 0,
+      "slotLetter": "O",
+      "nativeBox": [
+        235.75,
+        1870.7,
+        431.87,
+        2598.52
+      ],
+      "sourceOnlyCoverage": 0.312240693,
+      "sourceOnlyPixelCount": 44553,
+      "sourceMaskPixelCount": 44592,
+      "targetMaskPixelCount": 10049,
+      "cropArea": 142688,
+      "sourceOnlyCropCoverage": 0.312240693,
+      "componentCount": 4,
+      "letterlikeComponentCount": 3,
+      "cleanLetterlikeComponentCount": 2,
+      "edgeTouchComponentCount": 2,
+      "edgeTouchComponentFraction": 0.5,
+      "largestComponentPixelCount": 43544,
+      "largestComponentSourceOnlyFraction": 0.977353,
+      "mergedOrEdgeDominated": true,
+      "visualReadableLike": false,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "sourceWordHitCount": 1,
+      "sourceTextPreview": "RSyiERSitieisumios",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            236,
+            1871,
+            332,
+            2599
+          ],
+          "localBox": [
+            0,
+            0,
+            96,
+            728
+          ],
+          "pixelCount": 43544,
+          "widthPx": 96,
+          "heightPx": 728,
+          "fillRatio": 0.623054,
+          "aspectRatio": 0.131868,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.977353,
+          "cropFraction": 0.305169,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            419,
+            1985,
+            432,
+            2023
+          ],
+          "localBox": [
+            183,
+            114,
+            196,
+            152
+          ],
+          "pixelCount": 417,
+          "widthPx": 13,
+          "heightPx": 38,
+          "fillRatio": 0.84413,
+          "aspectRatio": 0.342105,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.00936,
+          "cropFraction": 0.002922,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            330,
+            1894,
+            340,
+            1902
+          ],
+          "localBox": [
+            94,
+            23,
+            104,
+            31
+          ],
+          "pixelCount": 37,
+          "widthPx": 10,
+          "heightPx": 8,
+          "fillRatio": 0.4625,
+          "aspectRatio": 1.25,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.00083,
+          "cropFraction": 0.000259,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            301,
+            2018,
+            310,
+            2025
+          ],
+          "localBox": [
+            65,
+            147,
+            74,
+            154
+          ],
+          "pixelCount": 31,
+          "widthPx": 9,
+          "heightPx": 7,
+          "fillRatio": 0.492063,
+          "aspectRatio": 1.285714,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000696,
+          "cropFraction": 0.000217,
+          "letterlike": true,
+          "cleanLetterlike": true
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "physical_back_mirror",
+      "target": "O4",
+      "label": "O4",
+      "phrase": "buying the dip",
+      "slotIndex": null,
+      "slotLetter": null,
+      "nativeBox": [
+        1069.72,
+        1870.86,
+        1444.2,
+        1912.11
+      ],
+      "sourceOnlyCoverage": 0.579953046,
+      "sourceOnlyPixelCount": 8893,
+      "sourceMaskPixelCount": 9170,
+      "targetMaskPixelCount": 1349,
+      "cropArea": 15334,
+      "sourceOnlyCropCoverage": 0.579953046,
+      "componentCount": 2,
+      "letterlikeComponentCount": 0,
+      "cleanLetterlikeComponentCount": 0,
+      "edgeTouchComponentCount": 1,
+      "edgeTouchComponentFraction": 0.5,
+      "largestComponentPixelCount": 8845,
+      "largestComponentSourceOnlyFraction": 0.994602,
+      "mergedOrEdgeDominated": true,
+      "visualReadableLike": false,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "sourceWordHitCount": 8,
+      "sourceTextPreview": "in by riding Bitcoins Buterin came up with",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            1144,
+            1871,
+            1444,
+            1907
+          ],
+          "localBox": [
+            74,
+            0,
+            374,
+            36
+          ],
+          "pixelCount": 8845,
+          "widthPx": 300,
+          "heightPx": 36,
+          "fillRatio": 0.818981,
+          "aspectRatio": 8.333333,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.994602,
+          "cropFraction": 0.576823,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1222,
+            1878,
+            1231,
+            1883
+          ],
+          "localBox": [
+            152,
+            7,
+            161,
+            12
+          ],
+          "pixelCount": 28,
+          "widthPx": 9,
+          "heightPx": 5,
+          "fillRatio": 0.622222,
+          "aspectRatio": 1.8,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.003149,
+          "cropFraction": 0.001826,
+          "letterlike": false,
+          "cleanLetterlike": false
+        }
+      ]
+    },
+    {
+      "kind": "overdose_slot",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "physical_back_mirror",
+      "target": "slot0_O",
+      "label": "slot0_O_O",
+      "phrase": null,
+      "slotIndex": 0,
+      "slotLetter": "O",
+      "nativeBox": [
+        235.75,
+        1870.7,
+        431.87,
+        2598.52
+      ],
+      "sourceOnlyCoverage": 0.634145829,
+      "sourceOnlyPixelCount": 90485,
+      "sourceMaskPixelCount": 92180,
+      "targetMaskPixelCount": 10049,
+      "cropArea": 142688,
+      "sourceOnlyCropCoverage": 0.634145829,
+      "componentCount": 15,
+      "letterlikeComponentCount": 13,
+      "cleanLetterlikeComponentCount": 13,
+      "edgeTouchComponentCount": 1,
+      "edgeTouchComponentFraction": 0.066667,
+      "largestComponentPixelCount": 88667,
+      "largestComponentSourceOnlyFraction": 0.979908,
+      "mergedOrEdgeDominated": true,
+      "visualReadableLike": false,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "sourceWordHitCount": 0,
+      "sourceTextPreview": "",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            236,
+            1871,
+            388,
+            2599
+          ],
+          "localBox": [
+            0,
+            0,
+            152,
+            728
+          ],
+          "pixelCount": 88667,
+          "widthPx": 152,
+          "heightPx": 728,
+          "fillRatio": 0.801285,
+          "aspectRatio": 0.208791,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.979908,
+          "cropFraction": 0.621405,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            350,
+            1905,
+            365,
+            1917
+          ],
+          "localBox": [
+            114,
+            34,
+            129,
+            46
+          ],
+          "pixelCount": 70,
+          "widthPx": 15,
+          "heightPx": 12,
+          "fillRatio": 0.388889,
+          "aspectRatio": 1.25,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000774,
+          "cropFraction": 0.000491,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            357,
+            2248,
+            367,
+            2261
+          ],
+          "localBox": [
+            121,
+            377,
+            131,
+            390
+          ],
+          "pixelCount": 66,
+          "widthPx": 10,
+          "heightPx": 13,
+          "fillRatio": 0.507692,
+          "aspectRatio": 0.769231,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000729,
+          "cropFraction": 0.000463,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            353,
+            2015,
+            363,
+            2027
+          ],
+          "localBox": [
+            117,
+            144,
+            127,
+            156
+          ],
+          "pixelCount": 65,
+          "widthPx": 10,
+          "heightPx": 12,
+          "fillRatio": 0.541667,
+          "aspectRatio": 0.833333,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000718,
+          "cropFraction": 0.000456,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            359,
+            2316,
+            367,
+            2336
+          ],
+          "localBox": [
+            123,
+            445,
+            131,
+            465
+          ],
+          "pixelCount": 56,
+          "widthPx": 8,
+          "heightPx": 20,
+          "fillRatio": 0.35,
+          "aspectRatio": 0.4,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000619,
+          "cropFraction": 0.000392,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            366,
+            2156,
+            377,
+            2169
+          ],
+          "localBox": [
+            130,
+            285,
+            141,
+            298
+          ],
+          "pixelCount": 50,
+          "widthPx": 11,
+          "heightPx": 13,
+          "fillRatio": 0.34965,
+          "aspectRatio": 0.846154,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000553,
+          "cropFraction": 0.00035,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            367,
+            2321,
+            375,
+            2332
+          ],
+          "localBox": [
+            131,
+            450,
+            139,
+            461
+          ],
+          "pixelCount": 40,
+          "widthPx": 8,
+          "heightPx": 11,
+          "fillRatio": 0.454545,
+          "aspectRatio": 0.727273,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000442,
+          "cropFraction": 0.00028,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            357,
+            2193,
+            365,
+            2201
+          ],
+          "localBox": [
+            121,
+            322,
+            129,
+            330
+          ],
+          "pixelCount": 39,
+          "widthPx": 8,
+          "heightPx": 8,
+          "fillRatio": 0.609375,
+          "aspectRatio": 1.0,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000431,
+          "cropFraction": 0.000273,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            385,
+            2392,
+            394,
+            2399
+          ],
+          "localBox": [
+            149,
+            521,
+            158,
+            528
+          ],
+          "pixelCount": 37,
+          "widthPx": 9,
+          "heightPx": 7,
+          "fillRatio": 0.587302,
+          "aspectRatio": 1.285714,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000409,
+          "cropFraction": 0.000259,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            381,
+            1950,
+            390,
+            1958
+          ],
+          "localBox": [
+            145,
+            79,
+            154,
+            87
+          ],
+          "pixelCount": 34,
+          "widthPx": 9,
+          "heightPx": 8,
+          "fillRatio": 0.472222,
+          "aspectRatio": 1.125,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000376,
+          "cropFraction": 0.000238,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            372,
+            1934,
+            382,
+            1939
+          ],
+          "localBox": [
+            136,
+            63,
+            146,
+            68
+          ],
+          "pixelCount": 30,
+          "widthPx": 10,
+          "heightPx": 5,
+          "fillRatio": 0.6,
+          "aspectRatio": 2.0,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000332,
+          "cropFraction": 0.00021,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            388,
+            2359,
+            400,
+            2366
+          ],
+          "localBox": [
+            152,
+            488,
+            164,
+            495
+          ],
+          "pixelCount": 30,
+          "widthPx": 12,
+          "heightPx": 7,
+          "fillRatio": 0.357143,
+          "aspectRatio": 1.714286,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000332,
+          "cropFraction": 0.00021,
+          "letterlike": true,
+          "cleanLetterlike": true
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "same_side_no_mirror",
+      "target": "B4",
+      "label": "B4",
+      "phrase": "$1 billion",
+      "slotIndex": null,
+      "slotLetter": null,
+      "nativeBox": [
+        343.21,
+        2060.78,
+        554.1,
+        2101.17
+      ],
+      "sourceOnlyCoverage": 0.174526066,
+      "sourceOnlyPixelCount": 1473,
+      "sourceMaskPixelCount": 1620,
+      "targetMaskPixelCount": 2459,
+      "cropArea": 8440,
+      "sourceOnlyCropCoverage": 0.174526066,
+      "componentCount": 4,
+      "letterlikeComponentCount": 0,
+      "cleanLetterlikeComponentCount": 0,
+      "edgeTouchComponentCount": 4,
+      "edgeTouchComponentFraction": 1.0,
+      "largestComponentPixelCount": 1342,
+      "largestComponentSourceOnlyFraction": 0.911066,
+      "mergedOrEdgeDominated": true,
+      "visualReadableLike": false,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "sourceWordHitCount": 6,
+      "sourceTextPreview": "Don't fa Keep your Go Bitcoin",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            412,
+            2061,
+            554,
+            2072
+          ],
+          "localBox": [
+            69,
+            0,
+            211,
+            11
+          ],
+          "pixelCount": 1342,
+          "widthPx": 142,
+          "heightPx": 11,
+          "fillRatio": 0.859155,
+          "aspectRatio": 12.909091,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.911066,
+          "cropFraction": 0.159005,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            496,
+            2097,
+            509,
+            2101
+          ],
+          "localBox": [
+            153,
+            36,
+            166,
+            40
+          ],
+          "pixelCount": 36,
+          "widthPx": 13,
+          "heightPx": 4,
+          "fillRatio": 0.692308,
+          "aspectRatio": 3.25,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.02444,
+          "cropFraction": 0.004265,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            352,
+            2098,
+            365,
+            2101
+          ],
+          "localBox": [
+            9,
+            37,
+            22,
+            40
+          ],
+          "pixelCount": 35,
+          "widthPx": 13,
+          "heightPx": 3,
+          "fillRatio": 0.897436,
+          "aspectRatio": 4.333333,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.023761,
+          "cropFraction": 0.004147,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            343,
+            2097,
+            351,
+            2101
+          ],
+          "localBox": [
+            0,
+            36,
+            8,
+            40
+          ],
+          "pixelCount": 25,
+          "widthPx": 8,
+          "heightPx": 4,
+          "fillRatio": 0.78125,
+          "aspectRatio": 2.0,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.016972,
+          "cropFraction": 0.002962,
+          "letterlike": false,
+          "cleanLetterlike": false
+        }
+      ]
+    },
+    {
+      "kind": "overdose_slot",
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "transform": "same_side_no_mirror",
+      "target": "slot7_E",
+      "label": "slot7_E_E",
+      "phrase": null,
+      "slotIndex": 7,
+      "slotLetter": "E",
+      "nativeBox": [
+        1608.24,
+        1870.7,
+        1804.25,
+        2598.52
+      ],
+      "sourceOnlyCoverage": 0.617494113,
+      "sourceOnlyPixelCount": 88109,
+      "sourceMaskPixelCount": 92180,
+      "targetMaskPixelCount": 9517,
+      "cropArea": 142688,
+      "sourceOnlyCropCoverage": 0.617494113,
+      "componentCount": 11,
+      "letterlikeComponentCount": 8,
+      "cleanLetterlikeComponentCount": 8,
+      "edgeTouchComponentCount": 1,
+      "edgeTouchComponentFraction": 0.090909,
+      "largestComponentPixelCount": 86512,
+      "largestComponentSourceOnlyFraction": 0.981875,
+      "mergedOrEdgeDominated": true,
+      "visualReadableLike": false,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "sourceWordHitCount": 0,
+      "sourceTextPreview": "",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            1653,
+            1871,
+            1804,
+            2599
+          ],
+          "localBox": [
+            45,
+            0,
+            196,
+            728
+          ],
+          "pixelCount": 86512,
+          "widthPx": 151,
+          "heightPx": 728,
+          "fillRatio": 0.786988,
+          "aspectRatio": 0.207418,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.981875,
+          "cropFraction": 0.606302,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1664,
+            1893,
+            1675,
+            1904
+          ],
+          "localBox": [
+            56,
+            22,
+            67,
+            33
+          ],
+          "pixelCount": 50,
+          "widthPx": 11,
+          "heightPx": 11,
+          "fillRatio": 0.413223,
+          "aspectRatio": 1.0,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000567,
+          "cropFraction": 0.00035,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1663,
+            2156,
+            1674,
+            2169
+          ],
+          "localBox": [
+            55,
+            285,
+            66,
+            298
+          ],
+          "pixelCount": 50,
+          "widthPx": 11,
+          "heightPx": 13,
+          "fillRatio": 0.34965,
+          "aspectRatio": 0.846154,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000567,
+          "cropFraction": 0.00035,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1646,
+            2392,
+            1655,
+            2399
+          ],
+          "localBox": [
+            38,
+            521,
+            47,
+            528
+          ],
+          "pixelCount": 37,
+          "widthPx": 9,
+          "heightPx": 7,
+          "fillRatio": 0.587302,
+          "aspectRatio": 1.285714,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.00042,
+          "cropFraction": 0.000259,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1650,
+            1950,
+            1659,
+            1958
+          ],
+          "localBox": [
+            42,
+            79,
+            51,
+            87
+          ],
+          "pixelCount": 34,
+          "widthPx": 9,
+          "heightPx": 8,
+          "fillRatio": 0.472222,
+          "aspectRatio": 1.125,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000386,
+          "cropFraction": 0.000238,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1658,
+            1934,
+            1668,
+            1939
+          ],
+          "localBox": [
+            50,
+            63,
+            60,
+            68
+          ],
+          "pixelCount": 30,
+          "widthPx": 10,
+          "heightPx": 5,
+          "fillRatio": 0.6,
+          "aspectRatio": 2.0,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.00034,
+          "cropFraction": 0.00021,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1640,
+            2359,
+            1652,
+            2366
+          ],
+          "localBox": [
+            32,
+            488,
+            44,
+            495
+          ],
+          "pixelCount": 30,
+          "widthPx": 12,
+          "heightPx": 7,
+          "fillRatio": 0.357143,
+          "aspectRatio": 1.714286,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.00034,
+          "cropFraction": 0.00021,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1664,
+            2028,
+            1671,
+            2039
+          ],
+          "localBox": [
+            56,
+            157,
+            63,
+            168
+          ],
+          "pixelCount": 29,
+          "widthPx": 7,
+          "heightPx": 11,
+          "fillRatio": 0.376623,
+          "aspectRatio": 0.636364,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000329,
+          "cropFraction": 0.000203,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1666,
+            1951,
+            1674,
+            1957
+          ],
+          "localBox": [
+            58,
+            80,
+            66,
+            86
+          ],
+          "pixelCount": 26,
+          "widthPx": 8,
+          "heightPx": 6,
+          "fillRatio": 0.541667,
+          "aspectRatio": 1.333333,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000295,
+          "cropFraction": 0.000182,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1653,
+            2521,
+            1660,
+            2527
+          ],
+          "localBox": [
+            45,
+            650,
+            52,
+            656
+          ],
+          "pixelCount": 25,
+          "widthPx": 7,
+          "heightPx": 6,
+          "fillRatio": 0.595238,
+          "aspectRatio": 1.166667,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000284,
+          "cropFraction": 0.000175,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1670,
+            1958,
+            1677,
+            1963
+          ],
+          "localBox": [
+            62,
+            87,
+            69,
+            92
+          ],
+          "pixelCount": 24,
+          "widthPx": 7,
+          "heightPx": 5,
+          "fillRatio": 0.685714,
+          "aspectRatio": 1.4,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000272,
+          "cropFraction": 0.000168,
+          "letterlike": false,
+          "cleanLetterlike": false
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "back_mirror_rotate180",
+      "target": "B4",
+      "label": "B4",
+      "phrase": "$1 billion",
+      "slotIndex": null,
+      "slotLetter": null,
+      "nativeBox": [
+        343.21,
+        2060.78,
+        554.1,
+        2101.17
+      ],
+      "sourceOnlyCoverage": 0.107701422,
+      "sourceOnlyPixelCount": 909,
+      "sourceMaskPixelCount": 1316,
+      "targetMaskPixelCount": 2459,
+      "cropArea": 8440,
+      "sourceOnlyCropCoverage": 0.107701422,
+      "componentCount": 12,
+      "letterlikeComponentCount": 11,
+      "cleanLetterlikeComponentCount": 3,
+      "edgeTouchComponentCount": 9,
+      "edgeTouchComponentFraction": 0.75,
+      "largestComponentPixelCount": 143,
+      "largestComponentSourceOnlyFraction": 0.157316,
+      "mergedOrEdgeDominated": true,
+      "visualReadableLike": false,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "sourceWordHitCount": 6,
+      "sourceTextPreview": "The markets sensed Markets are like",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            463,
+            2061,
+            481,
+            2074
+          ],
+          "localBox": [
+            120,
+            0,
+            138,
+            13
+          ],
+          "pixelCount": 143,
+          "widthPx": 18,
+          "heightPx": 13,
+          "fillRatio": 0.611111,
+          "aspectRatio": 1.384615,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.157316,
+          "cropFraction": 0.016943,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            535,
+            2061,
+            554,
+            2074
+          ],
+          "localBox": [
+            192,
+            0,
+            211,
+            13
+          ],
+          "pixelCount": 114,
+          "widthPx": 19,
+          "heightPx": 13,
+          "fillRatio": 0.461538,
+          "aspectRatio": 1.461538,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.125413,
+          "cropFraction": 0.013507,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            389,
+            2061,
+            408,
+            2072
+          ],
+          "localBox": [
+            46,
+            0,
+            65,
+            11
+          ],
+          "pixelCount": 107,
+          "widthPx": 19,
+          "heightPx": 11,
+          "fillRatio": 0.511962,
+          "aspectRatio": 1.727273,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.117712,
+          "cropFraction": 0.012678,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            421,
+            2061,
+            438,
+            2073
+          ],
+          "localBox": [
+            78,
+            0,
+            95,
+            12
+          ],
+          "pixelCount": 99,
+          "widthPx": 17,
+          "heightPx": 12,
+          "fillRatio": 0.485294,
+          "aspectRatio": 1.416667,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.108911,
+          "cropFraction": 0.01173,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            443,
+            2061,
+            456,
+            2075
+          ],
+          "localBox": [
+            100,
+            0,
+            113,
+            14
+          ],
+          "pixelCount": 80,
+          "widthPx": 13,
+          "heightPx": 14,
+          "fillRatio": 0.43956,
+          "aspectRatio": 0.928571,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.088009,
+          "cropFraction": 0.009479,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            514,
+            2061,
+            523,
+            2074
+          ],
+          "localBox": [
+            171,
+            0,
+            180,
+            13
+          ],
+          "pixelCount": 60,
+          "widthPx": 9,
+          "heightPx": 13,
+          "fillRatio": 0.512821,
+          "aspectRatio": 0.692308,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.066007,
+          "cropFraction": 0.007109,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            362,
+            2063,
+            369,
+            2074
+          ],
+          "localBox": [
+            19,
+            2,
+            26,
+            13
+          ],
+          "pixelCount": 46,
+          "widthPx": 7,
+          "heightPx": 11,
+          "fillRatio": 0.597403,
+          "aspectRatio": 0.636364,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.050605,
+          "cropFraction": 0.00545,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            501,
+            2061,
+            505,
+            2071
+          ],
+          "localBox": [
+            158,
+            0,
+            162,
+            10
+          ],
+          "pixelCount": 38,
+          "widthPx": 4,
+          "heightPx": 10,
+          "fillRatio": 0.95,
+          "aspectRatio": 0.4,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.041804,
+          "cropFraction": 0.004502,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            375,
+            2061,
+            380,
+            2069
+          ],
+          "localBox": [
+            32,
+            0,
+            37,
+            8
+          ],
+          "pixelCount": 31,
+          "widthPx": 5,
+          "heightPx": 8,
+          "fillRatio": 0.775,
+          "aspectRatio": 0.625,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.034103,
+          "cropFraction": 0.003673,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            518,
+            2075,
+            524,
+            2081
+          ],
+          "localBox": [
+            175,
+            14,
+            181,
+            20
+          ],
+          "pixelCount": 30,
+          "widthPx": 6,
+          "heightPx": 6,
+          "fillRatio": 0.833333,
+          "aspectRatio": 1.0,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.033003,
+          "cropFraction": 0.003555,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            343,
+            2068,
+            350,
+            2075
+          ],
+          "localBox": [
+            0,
+            7,
+            7,
+            14
+          ],
+          "pixelCount": 29,
+          "widthPx": 7,
+          "heightPx": 7,
+          "fillRatio": 0.591837,
+          "aspectRatio": 1.0,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.031903,
+          "cropFraction": 0.003436,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            535,
+            2074,
+            541,
+            2081
+          ],
+          "localBox": [
+            192,
+            13,
+            198,
+            20
+          ],
+          "pixelCount": 27,
+          "widthPx": 6,
+          "heightPx": 7,
+          "fillRatio": 0.642857,
+          "aspectRatio": 0.857143,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.029703,
+          "cropFraction": 0.003199,
+          "letterlike": true,
+          "cleanLetterlike": true
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "back_mirror_rotate180",
+      "target": "O4",
+      "label": "O4",
+      "phrase": "buying the dip",
+      "slotIndex": null,
+      "slotLetter": null,
+      "nativeBox": [
+        1069.72,
+        1870.86,
+        1444.2,
+        1912.11
+      ],
+      "sourceOnlyCoverage": 0.271944698,
+      "sourceOnlyPixelCount": 4170,
+      "sourceMaskPixelCount": 4380,
+      "targetMaskPixelCount": 1349,
+      "cropArea": 15334,
+      "sourceOnlyCropCoverage": 0.271944698,
+      "componentCount": 16,
+      "letterlikeComponentCount": 16,
+      "cleanLetterlikeComponentCount": 14,
+      "edgeTouchComponentCount": 2,
+      "edgeTouchComponentFraction": 0.125,
+      "largestComponentPixelCount": 517,
+      "largestComponentSourceOnlyFraction": 0.123981,
+      "mergedOrEdgeDominated": false,
+      "visualReadableLike": true,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "sourceWordHitCount": 12,
+      "sourceTextPreview": "global economy. RSyiERSitieisumios were publishing the white paper and a collective panic",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            1216,
+            1877,
+            1256,
+            1906
+          ],
+          "localBox": [
+            146,
+            6,
+            186,
+            35
+          ],
+          "pixelCount": 517,
+          "widthPx": 40,
+          "heightPx": 29,
+          "fillRatio": 0.44569,
+          "aspectRatio": 1.37931,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.123981,
+          "cropFraction": 0.033716,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1409,
+            1871,
+            1433,
+            1899
+          ],
+          "localBox": [
+            339,
+            0,
+            363,
+            28
+          ],
+          "pixelCount": 422,
+          "widthPx": 24,
+          "heightPx": 28,
+          "fillRatio": 0.627976,
+          "aspectRatio": 0.857143,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.101199,
+          "cropFraction": 0.027521,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1277,
+            1878,
+            1297,
+            1899
+          ],
+          "localBox": [
+            207,
+            7,
+            227,
+            28
+          ],
+          "pixelCount": 342,
+          "widthPx": 20,
+          "heightPx": 21,
+          "fillRatio": 0.814286,
+          "aspectRatio": 0.952381,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.082014,
+          "cropFraction": 0.022303,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1375,
+            1878,
+            1396,
+            1900
+          ],
+          "localBox": [
+            305,
+            7,
+            326,
+            29
+          ],
+          "pixelCount": 341,
+          "widthPx": 21,
+          "heightPx": 22,
+          "fillRatio": 0.738095,
+          "aspectRatio": 0.954545,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.081775,
+          "cropFraction": 0.022238,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1352,
+            1877,
+            1376,
+            1900
+          ],
+          "localBox": [
+            282,
+            6,
+            306,
+            29
+          ],
+          "pixelCount": 302,
+          "widthPx": 24,
+          "heightPx": 23,
+          "fillRatio": 0.547101,
+          "aspectRatio": 1.043478,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.072422,
+          "cropFraction": 0.019695,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1256,
+            1878,
+            1278,
+            1906
+          ],
+          "localBox": [
+            186,
+            7,
+            208,
+            35
+          ],
+          "pixelCount": 291,
+          "widthPx": 22,
+          "heightPx": 28,
+          "fillRatio": 0.472403,
+          "aspectRatio": 0.785714,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.069784,
+          "cropFraction": 0.018977,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1163,
+            1875,
+            1185,
+            1901
+          ],
+          "localBox": [
+            93,
+            4,
+            115,
+            30
+          ],
+          "pixelCount": 285,
+          "widthPx": 22,
+          "heightPx": 26,
+          "fillRatio": 0.498252,
+          "aspectRatio": 0.846154,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.068345,
+          "cropFraction": 0.018586,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1338,
+            1878,
+            1356,
+            1907
+          ],
+          "localBox": [
+            268,
+            7,
+            286,
+            36
+          ],
+          "pixelCount": 282,
+          "widthPx": 18,
+          "heightPx": 29,
+          "fillRatio": 0.54023,
+          "aspectRatio": 0.62069,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.067626,
+          "cropFraction": 0.018391,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1084,
+            1877,
+            1105,
+            1898
+          ],
+          "localBox": [
+            14,
+            6,
+            35,
+            27
+          ],
+          "pixelCount": 223,
+          "widthPx": 21,
+          "heightPx": 21,
+          "fillRatio": 0.505669,
+          "aspectRatio": 1.0,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.053477,
+          "cropFraction": 0.014543,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1106,
+            1878,
+            1130,
+            1898
+          ],
+          "localBox": [
+            36,
+            7,
+            60,
+            27
+          ],
+          "pixelCount": 217,
+          "widthPx": 24,
+          "heightPx": 20,
+          "fillRatio": 0.452083,
+          "aspectRatio": 1.2,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.052038,
+          "cropFraction": 0.014152,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1195,
+            1878,
+            1214,
+            1898
+          ],
+          "localBox": [
+            125,
+            7,
+            144,
+            27
+          ],
+          "pixelCount": 209,
+          "widthPx": 19,
+          "heightPx": 20,
+          "fillRatio": 0.55,
+          "aspectRatio": 0.95,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.05012,
+          "cropFraction": 0.01363,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1317,
+            1877,
+            1336,
+            1904
+          ],
+          "localBox": [
+            247,
+            6,
+            266,
+            33
+          ],
+          "pixelCount": 203,
+          "widthPx": 19,
+          "heightPx": 27,
+          "fillRatio": 0.395712,
+          "aspectRatio": 0.703704,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.048681,
+          "cropFraction": 0.013239,
+          "letterlike": true,
+          "cleanLetterlike": true
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "back_mirror_rotate180",
+      "target": "O5",
+      "label": "O5",
+      "phrase": "shitcoiner at heart",
+      "slotIndex": null,
+      "slotLetter": null,
+      "nativeBox": [
+        833.96,
+        2519.69,
+        1331.93,
+        2562.66
+      ],
+      "sourceOnlyCoverage": 0.112169609,
+      "sourceOnlyPixelCount": 2402,
+      "sourceMaskPixelCount": 2402,
+      "targetMaskPixelCount": 3,
+      "cropArea": 21414,
+      "sourceOnlyCropCoverage": 0.112169609,
+      "componentCount": 4,
+      "letterlikeComponentCount": 4,
+      "cleanLetterlikeComponentCount": 0,
+      "edgeTouchComponentCount": 4,
+      "edgeTouchComponentFraction": 1.0,
+      "largestComponentPixelCount": 965,
+      "largestComponentSourceOnlyFraction": 0.401749,
+      "mergedOrEdgeDominated": true,
+      "visualReadableLike": false,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "sourceWordHitCount": 2,
+      "sourceTextPreview": "TOXIC AF",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            972,
+            2520,
+            1029,
+            2547
+          ],
+          "localBox": [
+            138,
+            0,
+            195,
+            27
+          ],
+          "pixelCount": 965,
+          "widthPx": 57,
+          "heightPx": 27,
+          "fillRatio": 0.627031,
+          "aspectRatio": 2.111111,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.401749,
+          "cropFraction": 0.045064,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            836,
+            2520,
+            887,
+            2540
+          ],
+          "localBox": [
+            2,
+            0,
+            53,
+            20
+          ],
+          "pixelCount": 702,
+          "widthPx": 51,
+          "heightPx": 20,
+          "fillRatio": 0.688235,
+          "aspectRatio": 2.55,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.292256,
+          "cropFraction": 0.032782,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            920,
+            2520,
+            957,
+            2543
+          ],
+          "localBox": [
+            86,
+            0,
+            123,
+            23
+          ],
+          "pixelCount": 603,
+          "widthPx": 37,
+          "heightPx": 23,
+          "fillRatio": 0.708578,
+          "aspectRatio": 1.608696,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.251041,
+          "cropFraction": 0.028159,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            999,
+            2520,
+            1014,
+            2531
+          ],
+          "localBox": [
+            165,
+            0,
+            180,
+            11
+          ],
+          "pixelCount": 124,
+          "widthPx": 15,
+          "heightPx": 11,
+          "fillRatio": 0.751515,
+          "aspectRatio": 1.363636,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.051624,
+          "cropFraction": 0.005791,
+          "letterlike": true,
+          "cleanLetterlike": false
+        }
+      ]
+    },
+    {
+      "kind": "overdose_slot",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "back_mirror_rotate180",
+      "target": "slot7_E",
+      "label": "slot7_E_E",
+      "phrase": null,
+      "slotIndex": 7,
+      "slotLetter": "E",
+      "nativeBox": [
+        1608.24,
+        1870.7,
+        1804.25,
+        2598.52
+      ],
+      "sourceOnlyCoverage": 0.292288069,
+      "sourceOnlyPixelCount": 41706,
+      "sourceMaskPixelCount": 44592,
+      "targetMaskPixelCount": 9517,
+      "cropArea": 142688,
+      "sourceOnlyCropCoverage": 0.292288069,
+      "componentCount": 7,
+      "letterlikeComponentCount": 4,
+      "cleanLetterlikeComponentCount": 4,
+      "edgeTouchComponentCount": 3,
+      "edgeTouchComponentFraction": 0.428571,
+      "largestComponentPixelCount": 23748,
+      "largestComponentSourceOnlyFraction": 0.569414,
+      "mergedOrEdgeDominated": true,
+      "visualReadableLike": false,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "sourceWordHitCount": 1,
+      "sourceTextPreview": "RSyiERSitieisumios",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            1708,
+            1871,
+            1804,
+            2211
+          ],
+          "localBox": [
+            100,
+            0,
+            196,
+            340
+          ],
+          "pixelCount": 23748,
+          "widthPx": 96,
+          "heightPx": 340,
+          "fillRatio": 0.727574,
+          "aspectRatio": 0.282353,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.569414,
+          "cropFraction": 0.166433,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1736,
+            2243,
+            1804,
+            2599
+          ],
+          "localBox": [
+            128,
+            372,
+            196,
+            728
+          ],
+          "pixelCount": 16787,
+          "widthPx": 68,
+          "heightPx": 356,
+          "fillRatio": 0.693448,
+          "aspectRatio": 0.191011,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.402508,
+          "cropFraction": 0.117648,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1608,
+            1985,
+            1621,
+            2024
+          ],
+          "localBox": [
+            0,
+            114,
+            13,
+            153
+          ],
+          "pixelCount": 451,
+          "widthPx": 13,
+          "heightPx": 39,
+          "fillRatio": 0.889546,
+          "aspectRatio": 0.333333,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.010814,
+          "cropFraction": 0.003161,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1717,
+            2236,
+            1740,
+            2250
+          ],
+          "localBox": [
+            109,
+            365,
+            132,
+            379
+          ],
+          "pixelCount": 89,
+          "widthPx": 23,
+          "heightPx": 14,
+          "fillRatio": 0.276398,
+          "aspectRatio": 1.642857,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.002134,
+          "cropFraction": 0.000624,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1700,
+            1894,
+            1710,
+            1902
+          ],
+          "localBox": [
+            92,
+            23,
+            102,
+            31
+          ],
+          "pixelCount": 37,
+          "widthPx": 10,
+          "heightPx": 8,
+          "fillRatio": 0.4625,
+          "aspectRatio": 1.25,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000887,
+          "cropFraction": 0.000259,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1730,
+            2018,
+            1739,
+            2025
+          ],
+          "localBox": [
+            122,
+            147,
+            131,
+            154
+          ],
+          "pixelCount": 31,
+          "widthPx": 9,
+          "heightPx": 7,
+          "fillRatio": 0.492063,
+          "aspectRatio": 1.285714,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000743,
+          "cropFraction": 0.000217,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1733,
+            2209,
+            1741,
+            2215
+          ],
+          "localBox": [
+            125,
+            338,
+            133,
+            344
+          ],
+          "pixelCount": 28,
+          "widthPx": 8,
+          "heightPx": 6,
+          "fillRatio": 0.583333,
+          "aspectRatio": 1.333333,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000671,
+          "cropFraction": 0.000196,
+          "letterlike": true,
+          "cleanLetterlike": true
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "front_rotate180",
+      "target": "O4",
+      "label": "O4",
+      "phrase": "buying the dip",
+      "slotIndex": null,
+      "slotLetter": null,
+      "nativeBox": [
+        1069.72,
+        1870.86,
+        1444.2,
+        1912.11
+      ],
+      "sourceOnlyCoverage": 0.229555237,
+      "sourceOnlyPixelCount": 3520,
+      "sourceMaskPixelCount": 3780,
+      "targetMaskPixelCount": 1349,
+      "cropArea": 15334,
+      "sourceOnlyCropCoverage": 0.229555237,
+      "componentCount": 15,
+      "letterlikeComponentCount": 14,
+      "cleanLetterlikeComponentCount": 12,
+      "edgeTouchComponentCount": 3,
+      "edgeTouchComponentFraction": 0.2,
+      "largestComponentPixelCount": 693,
+      "largestComponentSourceOnlyFraction": 0.196875,
+      "mergedOrEdgeDominated": false,
+      "visualReadableLike": true,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "sourceWordHitCount": 14,
+      "sourceTextPreview": "nervous system of the global aiaourmieurosess The cypherpunks were time after years of trying",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            1332,
+            1877,
+            1387,
+            1906
+          ],
+          "localBox": [
+            262,
+            6,
+            317,
+            35
+          ],
+          "pixelCount": 693,
+          "widthPx": 55,
+          "heightPx": 29,
+          "fillRatio": 0.434483,
+          "aspectRatio": 1.896552,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.196875,
+          "cropFraction": 0.045194,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1277,
+            1872,
+            1301,
+            1899
+          ],
+          "localBox": [
+            207,
+            1,
+            231,
+            28
+          ],
+          "pixelCount": 289,
+          "widthPx": 24,
+          "heightPx": 27,
+          "fillRatio": 0.445988,
+          "aspectRatio": 0.888889,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.082102,
+          "cropFraction": 0.018847,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1387,
+            1879,
+            1410,
+            1899
+          ],
+          "localBox": [
+            317,
+            8,
+            340,
+            28
+          ],
+          "pixelCount": 276,
+          "widthPx": 23,
+          "heightPx": 20,
+          "fillRatio": 0.6,
+          "aspectRatio": 1.15,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.078409,
+          "cropFraction": 0.017999,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1196,
+            1878,
+            1214,
+            1900
+          ],
+          "localBox": [
+            126,
+            7,
+            144,
+            29
+          ],
+          "pixelCount": 270,
+          "widthPx": 18,
+          "heightPx": 22,
+          "fillRatio": 0.681818,
+          "aspectRatio": 0.818182,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.076705,
+          "cropFraction": 0.017608,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1236,
+            1879,
+            1259,
+            1899
+          ],
+          "localBox": [
+            166,
+            8,
+            189,
+            28
+          ],
+          "pixelCount": 264,
+          "widthPx": 23,
+          "heightPx": 20,
+          "fillRatio": 0.573913,
+          "aspectRatio": 1.15,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.075,
+          "cropFraction": 0.017217,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1259,
+            1878,
+            1278,
+            1899
+          ],
+          "localBox": [
+            189,
+            7,
+            208,
+            28
+          ],
+          "pixelCount": 249,
+          "widthPx": 19,
+          "heightPx": 21,
+          "fillRatio": 0.62406,
+          "aspectRatio": 0.904762,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.070739,
+          "cropFraction": 0.016238,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1076,
+            1871,
+            1094,
+            1900
+          ],
+          "localBox": [
+            6,
+            0,
+            24,
+            29
+          ],
+          "pixelCount": 233,
+          "widthPx": 18,
+          "heightPx": 29,
+          "fillRatio": 0.44636,
+          "aspectRatio": 0.62069,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.066193,
+          "cropFraction": 0.015195,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1311,
+            1879,
+            1331,
+            1900
+          ],
+          "localBox": [
+            241,
+            8,
+            261,
+            29
+          ],
+          "pixelCount": 215,
+          "widthPx": 20,
+          "heightPx": 21,
+          "fillRatio": 0.511905,
+          "aspectRatio": 0.952381,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.06108,
+          "cropFraction": 0.014021,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1165,
+            1878,
+            1184,
+            1898
+          ],
+          "localBox": [
+            95,
+            7,
+            114,
+            27
+          ],
+          "pixelCount": 198,
+          "widthPx": 19,
+          "heightPx": 20,
+          "fillRatio": 0.521053,
+          "aspectRatio": 0.95,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.05625,
+          "cropFraction": 0.012912,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1216,
+            1879,
+            1235,
+            1899
+          ],
+          "localBox": [
+            146,
+            8,
+            165,
+            28
+          ],
+          "pixelCount": 195,
+          "widthPx": 19,
+          "heightPx": 20,
+          "fillRatio": 0.513158,
+          "aspectRatio": 0.95,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.055398,
+          "cropFraction": 0.012717,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1422,
+            1889,
+            1444,
+            1896
+          ],
+          "localBox": [
+            352,
+            18,
+            374,
+            25
+          ],
+          "pixelCount": 136,
+          "widthPx": 22,
+          "heightPx": 7,
+          "fillRatio": 0.883117,
+          "aspectRatio": 3.142857,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.038636,
+          "cropFraction": 0.008869,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1115,
+            1878,
+            1128,
+            1898
+          ],
+          "localBox": [
+            45,
+            7,
+            58,
+            27
+          ],
+          "pixelCount": 125,
+          "widthPx": 13,
+          "heightPx": 20,
+          "fillRatio": 0.480769,
+          "aspectRatio": 0.65,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.035511,
+          "cropFraction": 0.008152,
+          "letterlike": true,
+          "cleanLetterlike": true
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "front_rotate180",
+      "target": "O5",
+      "label": "O5",
+      "phrase": "shitcoiner at heart",
+      "slotIndex": null,
+      "slotLetter": null,
+      "nativeBox": [
+        833.96,
+        2519.69,
+        1331.93,
+        2562.66
+      ],
+      "sourceOnlyCoverage": 0.186420099,
+      "sourceOnlyPixelCount": 3992,
+      "sourceMaskPixelCount": 3992,
+      "targetMaskPixelCount": 3,
+      "cropArea": 21414,
+      "sourceOnlyCropCoverage": 0.186420099,
+      "componentCount": 6,
+      "letterlikeComponentCount": 6,
+      "cleanLetterlikeComponentCount": 0,
+      "edgeTouchComponentCount": 6,
+      "edgeTouchComponentFraction": 1.0,
+      "largestComponentPixelCount": 1278,
+      "largestComponentSourceOnlyFraction": 0.32014,
+      "mergedOrEdgeDominated": true,
+      "visualReadableLike": false,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "sourceWordHitCount": 2,
+      "sourceTextPreview": "TOXIC AF",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            1206,
+            2520,
+            1301,
+            2539
+          ],
+          "localBox": [
+            372,
+            0,
+            467,
+            19
+          ],
+          "pixelCount": 1278,
+          "widthPx": 95,
+          "heightPx": 19,
+          "fillRatio": 0.708033,
+          "aspectRatio": 5.0,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.32014,
+          "cropFraction": 0.059681,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1011,
+            2520,
+            1068,
+            2547
+          ],
+          "localBox": [
+            177,
+            0,
+            234,
+            27
+          ],
+          "pixelCount": 965,
+          "widthPx": 57,
+          "heightPx": 27,
+          "fillRatio": 0.627031,
+          "aspectRatio": 2.111111,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.241733,
+          "cropFraction": 0.045064,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1153,
+            2520,
+            1204,
+            2540
+          ],
+          "localBox": [
+            319,
+            0,
+            370,
+            20
+          ],
+          "pixelCount": 702,
+          "widthPx": 51,
+          "heightPx": 20,
+          "fillRatio": 0.688235,
+          "aspectRatio": 2.55,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.175852,
+          "cropFraction": 0.032782,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1083,
+            2520,
+            1120,
+            2543
+          ],
+          "localBox": [
+            249,
+            0,
+            286,
+            23
+          ],
+          "pixelCount": 603,
+          "widthPx": 37,
+          "heightPx": 23,
+          "fillRatio": 0.708578,
+          "aspectRatio": 1.608696,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.151052,
+          "cropFraction": 0.028159,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1301,
+            2520,
+            1332,
+            2534
+          ],
+          "localBox": [
+            467,
+            0,
+            498,
+            14
+          ],
+          "pixelCount": 312,
+          "widthPx": 31,
+          "heightPx": 14,
+          "fillRatio": 0.718894,
+          "aspectRatio": 2.214286,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.078156,
+          "cropFraction": 0.01457,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1026,
+            2520,
+            1041,
+            2531
+          ],
+          "localBox": [
+            192,
+            0,
+            207,
+            11
+          ],
+          "pixelCount": 124,
+          "widthPx": 15,
+          "heightPx": 11,
+          "fillRatio": 0.751515,
+          "aspectRatio": 1.363636,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.031062,
+          "cropFraction": 0.005791,
+          "letterlike": true,
+          "cleanLetterlike": false
+        }
+      ]
+    },
+    {
+      "kind": "overdose_slot",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "front_rotate180",
+      "target": "slot0_O",
+      "label": "slot0_O_O",
+      "phrase": null,
+      "slotIndex": 0,
+      "slotLetter": "O",
+      "nativeBox": [
+        235.75,
+        1870.7,
+        431.87,
+        2598.52
+      ],
+      "sourceOnlyCoverage": 0.312240693,
+      "sourceOnlyPixelCount": 44553,
+      "sourceMaskPixelCount": 44592,
+      "targetMaskPixelCount": 10049,
+      "cropArea": 142688,
+      "sourceOnlyCropCoverage": 0.312240693,
+      "componentCount": 4,
+      "letterlikeComponentCount": 3,
+      "cleanLetterlikeComponentCount": 2,
+      "edgeTouchComponentCount": 2,
+      "edgeTouchComponentFraction": 0.5,
+      "largestComponentPixelCount": 43544,
+      "largestComponentSourceOnlyFraction": 0.977353,
+      "mergedOrEdgeDominated": true,
+      "visualReadableLike": false,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "sourceWordHitCount": 1,
+      "sourceTextPreview": "RSyiERSitieisumios",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            236,
+            1871,
+            332,
+            2599
+          ],
+          "localBox": [
+            0,
+            0,
+            96,
+            728
+          ],
+          "pixelCount": 43544,
+          "widthPx": 96,
+          "heightPx": 728,
+          "fillRatio": 0.623054,
+          "aspectRatio": 0.131868,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.977353,
+          "cropFraction": 0.305169,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            419,
+            1985,
+            432,
+            2023
+          ],
+          "localBox": [
+            183,
+            114,
+            196,
+            152
+          ],
+          "pixelCount": 417,
+          "widthPx": 13,
+          "heightPx": 38,
+          "fillRatio": 0.84413,
+          "aspectRatio": 0.342105,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.00936,
+          "cropFraction": 0.002922,
+          "letterlike": true,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            330,
+            1894,
+            340,
+            1902
+          ],
+          "localBox": [
+            94,
+            23,
+            104,
+            31
+          ],
+          "pixelCount": 37,
+          "widthPx": 10,
+          "heightPx": 8,
+          "fillRatio": 0.4625,
+          "aspectRatio": 1.25,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.00083,
+          "cropFraction": 0.000259,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            301,
+            2018,
+            310,
+            2025
+          ],
+          "localBox": [
+            65,
+            147,
+            74,
+            154
+          ],
+          "pixelCount": 31,
+          "widthPx": 9,
+          "heightPx": 7,
+          "fillRatio": 0.492063,
+          "aspectRatio": 1.285714,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000696,
+          "cropFraction": 0.000217,
+          "letterlike": true,
+          "cleanLetterlike": true
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "physical_back_mirror",
+      "target": "O4",
+      "label": "O4",
+      "phrase": "buying the dip",
+      "slotIndex": null,
+      "slotLetter": null,
+      "nativeBox": [
+        1069.72,
+        1870.86,
+        1444.2,
+        1912.11
+      ],
+      "sourceOnlyCoverage": 0.579953046,
+      "sourceOnlyPixelCount": 8893,
+      "sourceMaskPixelCount": 9170,
+      "targetMaskPixelCount": 1349,
+      "cropArea": 15334,
+      "sourceOnlyCropCoverage": 0.579953046,
+      "componentCount": 2,
+      "letterlikeComponentCount": 0,
+      "cleanLetterlikeComponentCount": 0,
+      "edgeTouchComponentCount": 1,
+      "edgeTouchComponentFraction": 0.5,
+      "largestComponentPixelCount": 8845,
+      "largestComponentSourceOnlyFraction": 0.994602,
+      "mergedOrEdgeDominated": true,
+      "visualReadableLike": false,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "sourceWordHitCount": 8,
+      "sourceTextPreview": "in by riding Bitcoins Buterin came up with",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            1144,
+            1871,
+            1444,
+            1907
+          ],
+          "localBox": [
+            74,
+            0,
+            374,
+            36
+          ],
+          "pixelCount": 8845,
+          "widthPx": 300,
+          "heightPx": 36,
+          "fillRatio": 0.818981,
+          "aspectRatio": 8.333333,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.994602,
+          "cropFraction": 0.576823,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1222,
+            1878,
+            1231,
+            1883
+          ],
+          "localBox": [
+            152,
+            7,
+            161,
+            12
+          ],
+          "pixelCount": 28,
+          "widthPx": 9,
+          "heightPx": 5,
+          "fillRatio": 0.622222,
+          "aspectRatio": 1.8,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.003149,
+          "cropFraction": 0.001826,
+          "letterlike": false,
+          "cleanLetterlike": false
+        }
+      ]
+    },
+    {
+      "kind": "overdose_slot",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "physical_back_mirror",
+      "target": "slot0_O",
+      "label": "slot0_O_O",
+      "phrase": null,
+      "slotIndex": 0,
+      "slotLetter": "O",
+      "nativeBox": [
+        235.75,
+        1870.7,
+        431.87,
+        2598.52
+      ],
+      "sourceOnlyCoverage": 0.634145829,
+      "sourceOnlyPixelCount": 90485,
+      "sourceMaskPixelCount": 92180,
+      "targetMaskPixelCount": 10049,
+      "cropArea": 142688,
+      "sourceOnlyCropCoverage": 0.634145829,
+      "componentCount": 15,
+      "letterlikeComponentCount": 13,
+      "cleanLetterlikeComponentCount": 13,
+      "edgeTouchComponentCount": 1,
+      "edgeTouchComponentFraction": 0.066667,
+      "largestComponentPixelCount": 88667,
+      "largestComponentSourceOnlyFraction": 0.979908,
+      "mergedOrEdgeDominated": true,
+      "visualReadableLike": false,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "sourceWordHitCount": 0,
+      "sourceTextPreview": "",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            236,
+            1871,
+            388,
+            2599
+          ],
+          "localBox": [
+            0,
+            0,
+            152,
+            728
+          ],
+          "pixelCount": 88667,
+          "widthPx": 152,
+          "heightPx": 728,
+          "fillRatio": 0.801285,
+          "aspectRatio": 0.208791,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.979908,
+          "cropFraction": 0.621405,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            350,
+            1905,
+            365,
+            1917
+          ],
+          "localBox": [
+            114,
+            34,
+            129,
+            46
+          ],
+          "pixelCount": 70,
+          "widthPx": 15,
+          "heightPx": 12,
+          "fillRatio": 0.388889,
+          "aspectRatio": 1.25,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000774,
+          "cropFraction": 0.000491,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            357,
+            2248,
+            367,
+            2261
+          ],
+          "localBox": [
+            121,
+            377,
+            131,
+            390
+          ],
+          "pixelCount": 66,
+          "widthPx": 10,
+          "heightPx": 13,
+          "fillRatio": 0.507692,
+          "aspectRatio": 0.769231,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000729,
+          "cropFraction": 0.000463,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            353,
+            2015,
+            363,
+            2027
+          ],
+          "localBox": [
+            117,
+            144,
+            127,
+            156
+          ],
+          "pixelCount": 65,
+          "widthPx": 10,
+          "heightPx": 12,
+          "fillRatio": 0.541667,
+          "aspectRatio": 0.833333,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000718,
+          "cropFraction": 0.000456,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            359,
+            2316,
+            367,
+            2336
+          ],
+          "localBox": [
+            123,
+            445,
+            131,
+            465
+          ],
+          "pixelCount": 56,
+          "widthPx": 8,
+          "heightPx": 20,
+          "fillRatio": 0.35,
+          "aspectRatio": 0.4,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000619,
+          "cropFraction": 0.000392,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            366,
+            2156,
+            377,
+            2169
+          ],
+          "localBox": [
+            130,
+            285,
+            141,
+            298
+          ],
+          "pixelCount": 50,
+          "widthPx": 11,
+          "heightPx": 13,
+          "fillRatio": 0.34965,
+          "aspectRatio": 0.846154,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000553,
+          "cropFraction": 0.00035,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            367,
+            2321,
+            375,
+            2332
+          ],
+          "localBox": [
+            131,
+            450,
+            139,
+            461
+          ],
+          "pixelCount": 40,
+          "widthPx": 8,
+          "heightPx": 11,
+          "fillRatio": 0.454545,
+          "aspectRatio": 0.727273,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000442,
+          "cropFraction": 0.00028,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            357,
+            2193,
+            365,
+            2201
+          ],
+          "localBox": [
+            121,
+            322,
+            129,
+            330
+          ],
+          "pixelCount": 39,
+          "widthPx": 8,
+          "heightPx": 8,
+          "fillRatio": 0.609375,
+          "aspectRatio": 1.0,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000431,
+          "cropFraction": 0.000273,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            385,
+            2392,
+            394,
+            2399
+          ],
+          "localBox": [
+            149,
+            521,
+            158,
+            528
+          ],
+          "pixelCount": 37,
+          "widthPx": 9,
+          "heightPx": 7,
+          "fillRatio": 0.587302,
+          "aspectRatio": 1.285714,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000409,
+          "cropFraction": 0.000259,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            381,
+            1950,
+            390,
+            1958
+          ],
+          "localBox": [
+            145,
+            79,
+            154,
+            87
+          ],
+          "pixelCount": 34,
+          "widthPx": 9,
+          "heightPx": 8,
+          "fillRatio": 0.472222,
+          "aspectRatio": 1.125,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000376,
+          "cropFraction": 0.000238,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            372,
+            1934,
+            382,
+            1939
+          ],
+          "localBox": [
+            136,
+            63,
+            146,
+            68
+          ],
+          "pixelCount": 30,
+          "widthPx": 10,
+          "heightPx": 5,
+          "fillRatio": 0.6,
+          "aspectRatio": 2.0,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000332,
+          "cropFraction": 0.00021,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            388,
+            2359,
+            400,
+            2366
+          ],
+          "localBox": [
+            152,
+            488,
+            164,
+            495
+          ],
+          "pixelCount": 30,
+          "widthPx": 12,
+          "heightPx": 7,
+          "fillRatio": 0.357143,
+          "aspectRatio": 1.714286,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000332,
+          "cropFraction": 0.00021,
+          "letterlike": true,
+          "cleanLetterlike": true
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "same_side_no_mirror",
+      "target": "B4",
+      "label": "B4",
+      "phrase": "$1 billion",
+      "slotIndex": null,
+      "slotLetter": null,
+      "nativeBox": [
+        343.21,
+        2060.78,
+        554.1,
+        2101.17
+      ],
+      "sourceOnlyCoverage": 0.174526066,
+      "sourceOnlyPixelCount": 1473,
+      "sourceMaskPixelCount": 1620,
+      "targetMaskPixelCount": 2459,
+      "cropArea": 8440,
+      "sourceOnlyCropCoverage": 0.174526066,
+      "componentCount": 4,
+      "letterlikeComponentCount": 0,
+      "cleanLetterlikeComponentCount": 0,
+      "edgeTouchComponentCount": 4,
+      "edgeTouchComponentFraction": 1.0,
+      "largestComponentPixelCount": 1342,
+      "largestComponentSourceOnlyFraction": 0.911066,
+      "mergedOrEdgeDominated": true,
+      "visualReadableLike": false,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "sourceWordHitCount": 6,
+      "sourceTextPreview": "Don't fa Keep your Go Bitcoin",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            412,
+            2061,
+            554,
+            2072
+          ],
+          "localBox": [
+            69,
+            0,
+            211,
+            11
+          ],
+          "pixelCount": 1342,
+          "widthPx": 142,
+          "heightPx": 11,
+          "fillRatio": 0.859155,
+          "aspectRatio": 12.909091,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.911066,
+          "cropFraction": 0.159005,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            496,
+            2097,
+            509,
+            2101
+          ],
+          "localBox": [
+            153,
+            36,
+            166,
+            40
+          ],
+          "pixelCount": 36,
+          "widthPx": 13,
+          "heightPx": 4,
+          "fillRatio": 0.692308,
+          "aspectRatio": 3.25,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.02444,
+          "cropFraction": 0.004265,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            352,
+            2098,
+            365,
+            2101
+          ],
+          "localBox": [
+            9,
+            37,
+            22,
+            40
+          ],
+          "pixelCount": 35,
+          "widthPx": 13,
+          "heightPx": 3,
+          "fillRatio": 0.897436,
+          "aspectRatio": 4.333333,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.023761,
+          "cropFraction": 0.004147,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            343,
+            2097,
+            351,
+            2101
+          ],
+          "localBox": [
+            0,
+            36,
+            8,
+            40
+          ],
+          "pixelCount": 25,
+          "widthPx": 8,
+          "heightPx": 4,
+          "fillRatio": 0.78125,
+          "aspectRatio": 2.0,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.016972,
+          "cropFraction": 0.002962,
+          "letterlike": false,
+          "cleanLetterlike": false
+        }
+      ]
+    },
+    {
+      "kind": "overdose_slot",
+      "pdf": "keyser bitcoin .pdf",
+      "transform": "same_side_no_mirror",
+      "target": "slot7_E",
+      "label": "slot7_E_E",
+      "phrase": null,
+      "slotIndex": 7,
+      "slotLetter": "E",
+      "nativeBox": [
+        1608.24,
+        1870.7,
+        1804.25,
+        2598.52
+      ],
+      "sourceOnlyCoverage": 0.617494113,
+      "sourceOnlyPixelCount": 88109,
+      "sourceMaskPixelCount": 92180,
+      "targetMaskPixelCount": 9517,
+      "cropArea": 142688,
+      "sourceOnlyCropCoverage": 0.617494113,
+      "componentCount": 11,
+      "letterlikeComponentCount": 8,
+      "cleanLetterlikeComponentCount": 8,
+      "edgeTouchComponentCount": 1,
+      "edgeTouchComponentFraction": 0.090909,
+      "largestComponentPixelCount": 86512,
+      "largestComponentSourceOnlyFraction": 0.981875,
+      "mergedOrEdgeDominated": true,
+      "visualReadableLike": false,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 0,
+      "sourceWordHitCount": 0,
+      "sourceTextPreview": "",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            1653,
+            1871,
+            1804,
+            2599
+          ],
+          "localBox": [
+            45,
+            0,
+            196,
+            728
+          ],
+          "pixelCount": 86512,
+          "widthPx": 151,
+          "heightPx": 728,
+          "fillRatio": 0.786988,
+          "aspectRatio": 0.207418,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.981875,
+          "cropFraction": 0.606302,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1664,
+            1893,
+            1675,
+            1904
+          ],
+          "localBox": [
+            56,
+            22,
+            67,
+            33
+          ],
+          "pixelCount": 50,
+          "widthPx": 11,
+          "heightPx": 11,
+          "fillRatio": 0.413223,
+          "aspectRatio": 1.0,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000567,
+          "cropFraction": 0.00035,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1663,
+            2156,
+            1674,
+            2169
+          ],
+          "localBox": [
+            55,
+            285,
+            66,
+            298
+          ],
+          "pixelCount": 50,
+          "widthPx": 11,
+          "heightPx": 13,
+          "fillRatio": 0.34965,
+          "aspectRatio": 0.846154,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000567,
+          "cropFraction": 0.00035,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1646,
+            2392,
+            1655,
+            2399
+          ],
+          "localBox": [
+            38,
+            521,
+            47,
+            528
+          ],
+          "pixelCount": 37,
+          "widthPx": 9,
+          "heightPx": 7,
+          "fillRatio": 0.587302,
+          "aspectRatio": 1.285714,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.00042,
+          "cropFraction": 0.000259,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1650,
+            1950,
+            1659,
+            1958
+          ],
+          "localBox": [
+            42,
+            79,
+            51,
+            87
+          ],
+          "pixelCount": 34,
+          "widthPx": 9,
+          "heightPx": 8,
+          "fillRatio": 0.472222,
+          "aspectRatio": 1.125,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000386,
+          "cropFraction": 0.000238,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1658,
+            1934,
+            1668,
+            1939
+          ],
+          "localBox": [
+            50,
+            63,
+            60,
+            68
+          ],
+          "pixelCount": 30,
+          "widthPx": 10,
+          "heightPx": 5,
+          "fillRatio": 0.6,
+          "aspectRatio": 2.0,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.00034,
+          "cropFraction": 0.00021,
+          "letterlike": false,
+          "cleanLetterlike": false
+        },
+        {
+          "nativeTargetBox": [
+            1640,
+            2359,
+            1652,
+            2366
+          ],
+          "localBox": [
+            32,
+            488,
+            44,
+            495
+          ],
+          "pixelCount": 30,
+          "widthPx": 12,
+          "heightPx": 7,
+          "fillRatio": 0.357143,
+          "aspectRatio": 1.714286,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.00034,
+          "cropFraction": 0.00021,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1664,
+            2028,
+            1671,
+            2039
+          ],
+          "localBox": [
+            56,
+            157,
+            63,
+            168
+          ],
+          "pixelCount": 29,
+          "widthPx": 7,
+          "heightPx": 11,
+          "fillRatio": 0.376623,
+          "aspectRatio": 0.636364,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000329,
+          "cropFraction": 0.000203,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1666,
+            1951,
+            1674,
+            1957
+          ],
+          "localBox": [
+            58,
+            80,
+            66,
+            86
+          ],
+          "pixelCount": 26,
+          "widthPx": 8,
+          "heightPx": 6,
+          "fillRatio": 0.541667,
+          "aspectRatio": 1.333333,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000295,
+          "cropFraction": 0.000182,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1653,
+            2521,
+            1660,
+            2527
+          ],
+          "localBox": [
+            45,
+            650,
+            52,
+            656
+          ],
+          "pixelCount": 25,
+          "widthPx": 7,
+          "heightPx": 6,
+          "fillRatio": 0.595238,
+          "aspectRatio": 1.166667,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000284,
+          "cropFraction": 0.000175,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            1670,
+            1958,
+            1677,
+            1963
+          ],
+          "localBox": [
+            62,
+            87,
+            69,
+            92
+          ],
+          "pixelCount": 24,
+          "widthPx": 7,
+          "heightPx": 5,
+          "fillRatio": 0.685714,
+          "aspectRatio": 1.4,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.000272,
+          "cropFraction": 0.000168,
+          "letterlike": false,
+          "cleanLetterlike": false
+        }
+      ]
+    },
+    {
+      "kind": "active",
+      "pdf": "magazine.pdf",
+      "transform": "same_side_no_mirror",
+      "target": "B4",
+      "label": "B4",
+      "phrase": "$1 billion",
+      "slotIndex": null,
+      "slotLetter": null,
+      "nativeBox": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "sourceOnlyCoverage": 0.111803252,
+      "sourceOnlyPixelCount": 1382,
+      "sourceMaskPixelCount": 7040,
+      "targetMaskPixelCount": 9019,
+      "cropArea": 12361,
+      "sourceOnlyCropCoverage": 0.111803252,
+      "componentCount": 11,
+      "letterlikeComponentCount": 10,
+      "cleanLetterlikeComponentCount": 10,
+      "edgeTouchComponentCount": 1,
+      "edgeTouchComponentFraction": 0.090909,
+      "largestComponentPixelCount": 189,
+      "largestComponentSourceOnlyFraction": 0.136758,
+      "mergedOrEdgeDominated": false,
+      "visualReadableLike": true,
+      "strictInstructionHitCount": 0,
+      "contextTermHitCount": 1,
+      "sourceWordHitCount": 6,
+      "sourceTextPreview": "Don't fa Keep your Go Bitcoin",
+      "selectorCandidate": false,
+      "components": [
+        {
+          "nativeTargetBox": [
+            508,
+            2415,
+            528,
+            2433
+          ],
+          "localBox": [
+            80,
+            17,
+            100,
+            35
+          ],
+          "pixelCount": 189,
+          "widthPx": 20,
+          "heightPx": 18,
+          "fillRatio": 0.525,
+          "aspectRatio": 1.111111,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.136758,
+          "cropFraction": 0.01529,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            634,
+            2416,
+            655,
+            2433
+          ],
+          "localBox": [
+            206,
+            18,
+            227,
+            35
+          ],
+          "pixelCount": 170,
+          "widthPx": 21,
+          "heightPx": 17,
+          "fillRatio": 0.47619,
+          "aspectRatio": 1.235294,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.12301,
+          "cropFraction": 0.013753,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            583,
+            2416,
+            606,
+            2432
+          ],
+          "localBox": [
+            155,
+            18,
+            178,
+            34
+          ],
+          "pixelCount": 151,
+          "widthPx": 23,
+          "heightPx": 16,
+          "fillRatio": 0.410326,
+          "aspectRatio": 1.4375,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.109262,
+          "cropFraction": 0.012216,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            533,
+            2415,
+            553,
+            2433
+          ],
+          "localBox": [
+            105,
+            17,
+            125,
+            35
+          ],
+          "pixelCount": 150,
+          "widthPx": 20,
+          "heightPx": 18,
+          "fillRatio": 0.416667,
+          "aspectRatio": 1.111111,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.108538,
+          "cropFraction": 0.012135,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            461,
+            2415,
+            484,
+            2433
+          ],
+          "localBox": [
+            33,
+            17,
+            56,
+            35
+          ],
+          "pixelCount": 146,
+          "widthPx": 23,
+          "heightPx": 18,
+          "fillRatio": 0.352657,
+          "aspectRatio": 1.277778,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.105644,
+          "cropFraction": 0.011811,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            556,
+            2416,
+            579,
+            2432
+          ],
+          "localBox": [
+            128,
+            18,
+            151,
+            34
+          ],
+          "pixelCount": 145,
+          "widthPx": 23,
+          "heightPx": 16,
+          "fillRatio": 0.394022,
+          "aspectRatio": 1.4375,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.10492,
+          "cropFraction": 0.01173,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            609,
+            2416,
+            630,
+            2432
+          ],
+          "localBox": [
+            181,
+            18,
+            202,
+            34
+          ],
+          "pixelCount": 145,
+          "widthPx": 21,
+          "heightPx": 16,
+          "fillRatio": 0.431548,
+          "aspectRatio": 1.3125,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.10492,
+          "cropFraction": 0.01173,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            661,
+            2416,
+            673,
+            2432
+          ],
+          "localBox": [
+            233,
+            18,
+            245,
+            34
+          ],
+          "pixelCount": 109,
+          "widthPx": 12,
+          "heightPx": 16,
+          "fillRatio": 0.567708,
+          "aspectRatio": 0.75,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.078871,
+          "cropFraction": 0.008818,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            676,
+            2416,
+            687,
+            2432
+          ],
+          "localBox": [
+            248,
+            18,
+            259,
+            34
+          ],
+          "pixelCount": 106,
+          "widthPx": 11,
+          "heightPx": 16,
+          "fillRatio": 0.602273,
+          "aspectRatio": 0.6875,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.0767,
+          "cropFraction": 0.008575,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            452,
+            2416,
+            457,
+            2430
+          ],
+          "localBox": [
+            24,
+            18,
+            29,
+            32
+          ],
+          "pixelCount": 44,
+          "widthPx": 5,
+          "heightPx": 14,
+          "fillRatio": 0.628571,
+          "aspectRatio": 0.357143,
+          "touchesCropEdge": false,
+          "sourceOnlyFraction": 0.031838,
+          "cropFraction": 0.00356,
+          "letterlike": true,
+          "cleanLetterlike": true
+        },
+        {
+          "nativeTargetBox": [
+            690,
+            2416,
+            691,
+            2440
+          ],
+          "localBox": [
+            262,
+            18,
+            263,
+            42
+          ],
+          "pixelCount": 24,
+          "widthPx": 1,
+          "heightPx": 24,
+          "fillRatio": 1.0,
+          "aspectRatio": 0.041667,
+          "touchesCropEdge": true,
+          "sourceOnlyFraction": 0.017366,
+          "cropFraction": 0.001942,
+          "letterlike": false,
+          "cleanLetterlike": false
+        }
+      ]
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/current_pdf_held_to_light_component_readability_gate/current_pdf_held_to_light_component_readability_gate_sheet.jpg"
+}

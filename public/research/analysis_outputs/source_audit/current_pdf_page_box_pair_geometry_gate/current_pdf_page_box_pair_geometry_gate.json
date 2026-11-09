@@ -1,0 +1,469 @@
+{
+  "createdAt": "2026-05-24T03:00:23",
+  "scope": "current PDF page-box and image-placement geometry for article pages 75 and 76; no key derivation",
+  "inputs": {
+    "pdfs": [
+      "magazine.pdf",
+      "keyser bitcoin .pdf",
+      "analysis_outputs/external_clues/google_drive_article_download.pdf"
+    ],
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "decision": "current_pdf_page_box_pair_geometry_no_selector",
+  "summary": {
+    "pdfCount": 3,
+    "pairCount": 3,
+    "identicalPairGeometryCount": 3,
+    "sameBoxPairCount": 3,
+    "sameRotationPairCount": 3,
+    "sameImageRectPairCount": 3,
+    "sameScalePairCount": 3,
+    "sideMarginPairCount": 2,
+    "placementOffsetPairCount": 0,
+    "hiddenPairLayerCandidateCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0
+  },
+  "fingerprint": "pdfs=3|pairs=3|pairGeometryPass=3|sameBoxes=3|sameRot=3|sameImageRect=3|sameScale=3|sideMargins=2|placementOffsets=0|hiddenPairLayers=0|sourceR3=0|triggers=0/9|selectors=0",
+  "pairRows": [
+    {
+      "pdf": "magazine.pdf",
+      "page75": {
+        "pdf": "magazine.pdf",
+        "pdfPage": 3,
+        "articlePage": 75,
+        "rotation": 180,
+        "pageRect": [
+          0.0,
+          0.0,
+          610.56,
+          783.36
+        ],
+        "mediaBox": [
+          0.0,
+          0.0,
+          610.56,
+          783.36
+        ],
+        "cropBox": [
+          0.0,
+          0.0,
+          610.56,
+          783.36
+        ],
+        "imageCount": 1,
+        "images": [
+          {
+            "xref": 30,
+            "widthPx": 2544,
+            "heightPx": 3264,
+            "bitsPerComponent": 8,
+            "colorspace": 3,
+            "extension": "jpeg",
+            "rects": [
+              [
+                0.0,
+                0.0,
+                610.56,
+                783.36
+              ]
+            ],
+            "primaryRect": [
+              0.0,
+              0.0,
+              610.56,
+              783.36
+            ],
+            "maxPageCoverage": 1.0,
+            "leftMarginPt": 0.0,
+            "topMarginPt": 0.0,
+            "rightMarginPt": 0.0,
+            "bottomMarginPt": 0.0,
+            "scaleXPxPerPt": 4.166667,
+            "scaleYPxPerPt": 4.166667
+          }
+        ],
+        "fontCount": 1,
+        "drawingCount": 0,
+        "ocrWordCount": 280
+      },
+      "page76": {
+        "pdf": "magazine.pdf",
+        "pdfPage": 4,
+        "articlePage": 76,
+        "rotation": 180,
+        "pageRect": [
+          0.0,
+          0.0,
+          610.56,
+          783.36
+        ],
+        "mediaBox": [
+          0.0,
+          0.0,
+          610.56,
+          783.36
+        ],
+        "cropBox": [
+          0.0,
+          0.0,
+          610.56,
+          783.36
+        ],
+        "imageCount": 1,
+        "images": [
+          {
+            "xref": 37,
+            "widthPx": 2544,
+            "heightPx": 3264,
+            "bitsPerComponent": 8,
+            "colorspace": 3,
+            "extension": "jpeg",
+            "rects": [
+              [
+                0.0,
+                0.0,
+                610.56,
+                783.36
+              ]
+            ],
+            "primaryRect": [
+              0.0,
+              0.0,
+              610.56,
+              783.36
+            ],
+            "maxPageCoverage": 1.0,
+            "leftMarginPt": 0.0,
+            "topMarginPt": 0.0,
+            "rightMarginPt": 0.0,
+            "bottomMarginPt": 0.0,
+            "scaleXPxPerPt": 4.166667,
+            "scaleYPxPerPt": 4.166667
+          }
+        ],
+        "fontCount": 1,
+        "drawingCount": 0,
+        "ocrWordCount": 245
+      },
+      "comparison": {
+        "samePageRect": true,
+        "sameMediaBox": true,
+        "sameCropBox": true,
+        "sameRotation": true,
+        "sameSingleImageCount": true,
+        "sameImageRect": true,
+        "sameImageSize": true,
+        "sameScale": true,
+        "identicalPairGeometry": true,
+        "hasSideMargins": false,
+        "hiddenPairLayerCandidate": false,
+        "imageRectDeltaPt": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scaleDeltaPxPerPt": [
+          0.0,
+          0.0
+        ],
+        "heldToLightImplication": "pdf_pair_geometry_does_not_change_valid_leaf_alignment"
+      }
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "page75": {
+        "pdf": "keyser bitcoin .pdf",
+        "pdfPage": 3,
+        "articlePage": 75,
+        "rotation": 0,
+        "pageRect": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediaBox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "cropBox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "imageCount": 1,
+        "images": [
+          {
+            "xref": 57,
+            "widthPx": 2040,
+            "heightPx": 2805,
+            "bitsPerComponent": 8,
+            "colorspace": 3,
+            "extension": "jpeg",
+            "rects": [
+              [
+                18.0,
+                0.0,
+                594.0,
+                792.0
+              ]
+            ],
+            "primaryRect": [
+              18.0,
+              0.0,
+              594.0,
+              792.0
+            ],
+            "maxPageCoverage": 0.941176,
+            "leftMarginPt": 18.0,
+            "topMarginPt": 0.0,
+            "rightMarginPt": 18.0,
+            "bottomMarginPt": 0.0,
+            "scaleXPxPerPt": 3.541667,
+            "scaleYPxPerPt": 3.541667
+          }
+        ],
+        "fontCount": 1,
+        "drawingCount": 0,
+        "ocrWordCount": 268
+      },
+      "page76": {
+        "pdf": "keyser bitcoin .pdf",
+        "pdfPage": 4,
+        "articlePage": 76,
+        "rotation": 0,
+        "pageRect": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediaBox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "cropBox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "imageCount": 1,
+        "images": [
+          {
+            "xref": 59,
+            "widthPx": 2040,
+            "heightPx": 2805,
+            "bitsPerComponent": 8,
+            "colorspace": 3,
+            "extension": "jpeg",
+            "rects": [
+              [
+                18.0,
+                0.0,
+                594.0,
+                792.0
+              ]
+            ],
+            "primaryRect": [
+              18.0,
+              0.0,
+              594.0,
+              792.0
+            ],
+            "maxPageCoverage": 0.941176,
+            "leftMarginPt": 18.0,
+            "topMarginPt": 0.0,
+            "rightMarginPt": 18.0,
+            "bottomMarginPt": 0.0,
+            "scaleXPxPerPt": 3.541667,
+            "scaleYPxPerPt": 3.541667
+          }
+        ],
+        "fontCount": 1,
+        "drawingCount": 0,
+        "ocrWordCount": 265
+      },
+      "comparison": {
+        "samePageRect": true,
+        "sameMediaBox": true,
+        "sameCropBox": true,
+        "sameRotation": true,
+        "sameSingleImageCount": true,
+        "sameImageRect": true,
+        "sameImageSize": true,
+        "sameScale": true,
+        "identicalPairGeometry": true,
+        "hasSideMargins": true,
+        "hiddenPairLayerCandidate": false,
+        "imageRectDeltaPt": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scaleDeltaPxPerPt": [
+          0.0,
+          0.0
+        ],
+        "heldToLightImplication": "pdf_pair_geometry_does_not_change_valid_leaf_alignment"
+      }
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "page75": {
+        "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "pdfPage": 3,
+        "articlePage": 75,
+        "rotation": 0,
+        "pageRect": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediaBox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "cropBox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "imageCount": 1,
+        "images": [
+          {
+            "xref": 57,
+            "widthPx": 2040,
+            "heightPx": 2805,
+            "bitsPerComponent": 8,
+            "colorspace": 3,
+            "extension": "jpeg",
+            "rects": [
+              [
+                18.0,
+                0.0,
+                594.0,
+                792.0
+              ]
+            ],
+            "primaryRect": [
+              18.0,
+              0.0,
+              594.0,
+              792.0
+            ],
+            "maxPageCoverage": 0.941176,
+            "leftMarginPt": 18.0,
+            "topMarginPt": 0.0,
+            "rightMarginPt": 18.0,
+            "bottomMarginPt": 0.0,
+            "scaleXPxPerPt": 3.541667,
+            "scaleYPxPerPt": 3.541667
+          }
+        ],
+        "fontCount": 1,
+        "drawingCount": 0,
+        "ocrWordCount": 268
+      },
+      "page76": {
+        "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "pdfPage": 4,
+        "articlePage": 76,
+        "rotation": 0,
+        "pageRect": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediaBox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "cropBox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "imageCount": 1,
+        "images": [
+          {
+            "xref": 59,
+            "widthPx": 2040,
+            "heightPx": 2805,
+            "bitsPerComponent": 8,
+            "colorspace": 3,
+            "extension": "jpeg",
+            "rects": [
+              [
+                18.0,
+                0.0,
+                594.0,
+                792.0
+              ]
+            ],
+            "primaryRect": [
+              18.0,
+              0.0,
+              594.0,
+              792.0
+            ],
+            "maxPageCoverage": 0.941176,
+            "leftMarginPt": 18.0,
+            "topMarginPt": 0.0,
+            "rightMarginPt": 18.0,
+            "bottomMarginPt": 0.0,
+            "scaleXPxPerPt": 3.541667,
+            "scaleYPxPerPt": 3.541667
+          }
+        ],
+        "fontCount": 1,
+        "drawingCount": 0,
+        "ocrWordCount": 265
+      },
+      "comparison": {
+        "samePageRect": true,
+        "sameMediaBox": true,
+        "sameCropBox": true,
+        "sameRotation": true,
+        "sameSingleImageCount": true,
+        "sameImageRect": true,
+        "sameImageSize": true,
+        "sameScale": true,
+        "identicalPairGeometry": true,
+        "hasSideMargins": true,
+        "hiddenPairLayerCandidate": false,
+        "imageRectDeltaPt": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scaleDeltaPxPerPt": [
+          0.0,
+          0.0
+        ],
+        "heldToLightImplication": "pdf_pair_geometry_does_not_change_valid_leaf_alignment"
+      }
+    }
+  ],
+  "sheet": "analysis_outputs/source_audit/current_pdf_page_box_pair_geometry_gate/current_pdf_page_box_pair_geometry_gate_sheet.jpg",
+  "nextMove": "Do not adjust valid 75->76 held-to-light geometry from current PDF page boxes; require a distinct physical/original-layout source or raw clue naming transform, unit, and order."
+}

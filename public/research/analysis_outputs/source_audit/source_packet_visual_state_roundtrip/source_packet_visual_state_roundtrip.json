@@ -1,0 +1,675 @@
+{
+  "createdAt": "2026-05-21T05:46:09",
+  "scope": "source-packet visual-state roundtrip; no OCR, extraction, key derivation, hashing, seed/WIF checks, address checks, BIP39 checks, or broad candidate generation",
+  "inputs": {
+    "nativeBenchmarkBridge": "analysis_outputs/source_audit/source_packet_native_benchmark_bridge/source_packet_native_benchmark_bridge.json",
+    "activeTargetCropCompletion": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "targetFormatAuthorityLock": "analysis_outputs/docm_format_sources/page76_target_format_authority_lock/page76_target_format_authority_lock.json",
+    "uprightImage": "analysis_outputs/3d_article_map/page_76_upright.jpg",
+    "nativeImage": "analysis_outputs/source_images/magazine_page_76.jpg"
+  },
+  "imageSize": [
+    2544,
+    3264
+  ],
+  "records": [
+    {
+      "id": "buying_dip",
+      "label": "O4 buying the dip",
+      "kind": "active_target",
+      "uprightBox": [
+        1334,
+        2177,
+        1801,
+        2225
+      ],
+      "nativeBox": [
+        743,
+        1039,
+        1210,
+        1087
+      ],
+      "boxSize": [
+        467,
+        48
+      ],
+      "diff": {
+        "meanAbsDiff": 2.8964,
+        "maxDiff": 25,
+        "nonzeroPct": 81.54
+      },
+      "visualStats": {
+        "meanRgb": [
+          197.82,
+          114.87,
+          42.79
+        ],
+        "meanLuma": 131.4535,
+        "meanSaturation": 0.7662,
+        "orangeRatio": 0.7666,
+        "darkRatio": 0.2411,
+        "greyDarkRatio": 0.0352
+      },
+      "expectedVisualState": "Y",
+      "classifiedVisualState": "Y",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "docmBoldFraction": 1.0,
+      "docmDominantFont": "Typeka",
+      "docmHighlights": {
+        "yellow": 14
+      },
+      "phrase": "buying the dip"
+    },
+    {
+      "id": "one_billion",
+      "label": "B4 $1 billion",
+      "kind": "active_target",
+      "uprightBox": [
+        428,
+        2398,
+        691,
+        2445
+      ],
+      "nativeBox": [
+        1853,
+        819,
+        2116,
+        866
+      ],
+      "boxSize": [
+        263,
+        47
+      ],
+      "diff": {
+        "meanAbsDiff": 1.0606,
+        "maxDiff": 14,
+        "nonzeroPct": 56.4625
+      },
+      "visualStats": {
+        "meanRgb": [
+          88.89,
+          88.89,
+          88.91
+        ],
+        "meanLuma": 88.8892,
+        "meanSaturation": 0.0006,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.6592,
+        "greyDarkRatio": 0.6732
+      },
+      "expectedVisualState": "K",
+      "classifiedVisualState": "K",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "docmBoldFraction": 1.0,
+      "docmDominantFont": "Typeka",
+      "docmHighlights": {
+        "black": 10
+      },
+      "phrase": "$1 billion"
+    },
+    {
+      "id": "volcano_bonds",
+      "label": "G5 Volcano Bonds",
+      "kind": "active_target",
+      "uprightBox": [
+        795,
+        2544,
+        1196,
+        2592
+      ],
+      "nativeBox": [
+        1348,
+        672,
+        1749,
+        720
+      ],
+      "boxSize": [
+        401,
+        48
+      ],
+      "diff": {
+        "meanAbsDiff": 1.1095,
+        "maxDiff": 15,
+        "nonzeroPct": 59.8885
+      },
+      "visualStats": {
+        "meanRgb": [
+          77.38,
+          77.35,
+          77.39
+        ],
+        "meanLuma": 77.3657,
+        "meanSaturation": 0.0296,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.6994,
+        "greyDarkRatio": 0.6938
+      },
+      "expectedVisualState": "K",
+      "classifiedVisualState": "K",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "docmBoldFraction": 1.0,
+      "docmDominantFont": "Typeka",
+      "docmHighlights": {
+        "black": 13
+      },
+      "phrase": "Volcano Bonds"
+    },
+    {
+      "id": "shitcoiner_heart",
+      "label": "O5 shitcoiner at heart",
+      "kind": "active_target",
+      "uprightBox": [
+        1040,
+        2932,
+        1661,
+        2982
+      ],
+      "nativeBox": [
+        883,
+        282,
+        1504,
+        332
+      ],
+      "boxSize": [
+        621,
+        50
+      ],
+      "diff": {
+        "meanAbsDiff": 2.9794,
+        "maxDiff": 25,
+        "nonzeroPct": 81.6425
+      },
+      "visualStats": {
+        "meanRgb": [
+          187.16,
+          112.46,
+          44.95
+        ],
+        "meanLuma": 127.0998,
+        "meanSaturation": 0.7356,
+        "orangeRatio": 0.7124,
+        "darkRatio": 0.284,
+        "greyDarkRatio": 0.0502
+      },
+      "expectedVisualState": "Y",
+      "classifiedVisualState": "Y",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "docmBoldFraction": 1.0,
+      "docmDominantFont": "Typeka",
+      "docmHighlights": {
+        "yellow": 19
+      },
+      "phrase": "shitcoiner at heart"
+    },
+    {
+      "id": "c9_yk_frame",
+      "label": "C9/Y-K full frame",
+      "kind": "source_frame",
+      "uprightBox": [
+        294,
+        2177,
+        2250,
+        3024
+      ],
+      "nativeBox": [
+        294,
+        240,
+        2250,
+        1087
+      ],
+      "boxSize": [
+        1956,
+        847
+      ],
+      "diff": {
+        "meanAbsDiff": 0.4284,
+        "maxDiff": 25,
+        "nonzeroPct": 17.7826
+      },
+      "visualStats": {
+        "meanRgb": [
+          235.83,
+          233.29,
+          230.99
+        ],
+        "meanLuma": 233.7882,
+        "meanSaturation": 0.0259,
+        "orangeRatio": 0.0247,
+        "darkRatio": 0.0686,
+        "greyDarkRatio": 0.0653
+      }
+    },
+    {
+      "id": "p78_reflected_frame_on_p76",
+      "label": "reflected p78 frame on p76",
+      "kind": "source_frame",
+      "uprightBox": [
+        1234,
+        2398,
+        2250,
+        2950
+      ],
+      "nativeBox": [
+        294,
+        314,
+        1310,
+        866
+      ],
+      "boxSize": [
+        1016,
+        552
+      ],
+      "diff": {
+        "meanAbsDiff": 0.2362,
+        "maxDiff": 21,
+        "nonzeroPct": 9.8351
+      },
+      "visualStats": {
+        "meanRgb": [
+          244.38,
+          243.46,
+          242.69
+        ],
+        "meanLuma": 243.6436,
+        "meanSaturation": 0.0104,
+        "orangeRatio": 0.0091,
+        "darkRatio": 0.0377,
+        "greyDarkRatio": 0.0358
+      }
+    },
+    {
+      "id": "p76_overdose_header",
+      "label": "p76 OVERDOSE header word",
+      "kind": "overdose_header",
+      "uprightBox": [
+        2151,
+        153,
+        2291,
+        184
+      ],
+      "nativeBox": [
+        253,
+        3080,
+        393,
+        3111
+      ],
+      "boxSize": [
+        140,
+        31
+      ],
+      "diff": {
+        "meanAbsDiff": 1.0868,
+        "maxDiff": 22,
+        "nonzeroPct": 34.2934
+      },
+      "visualStats": {
+        "meanRgb": [
+          252.22,
+          243.65,
+          233.83
+        ],
+        "meanLuma": 245.0943,
+        "meanSaturation": 0.0801,
+        "orangeRatio": 0.1507,
+        "darkRatio": 0.0,
+        "greyDarkRatio": 0.0
+      }
+    },
+    {
+      "id": "overdose_glyph_1_O",
+      "label": "OVERDOSE glyph 1 O",
+      "kind": "overdose_glyph",
+      "uprightBox": [
+        2151,
+        153,
+        2169,
+        184
+      ],
+      "nativeBox": [
+        375,
+        3080,
+        393,
+        3111
+      ],
+      "boxSize": [
+        18,
+        31
+      ],
+      "diff": {
+        "meanAbsDiff": 0.0018,
+        "maxDiff": 1,
+        "nonzeroPct": 0.1792
+      },
+      "visualStats": {
+        "meanRgb": [
+          254.99,
+          254.99,
+          254.99
+        ],
+        "meanLuma": 254.9946,
+        "meanSaturation": 0.0,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.0,
+        "greyDarkRatio": 0.0
+      },
+      "letter": "O",
+      "slotIndex": 0
+    },
+    {
+      "id": "overdose_glyph_2_V",
+      "label": "OVERDOSE glyph 2 V",
+      "kind": "overdose_glyph",
+      "uprightBox": [
+        2169,
+        153,
+        2186,
+        184
+      ],
+      "nativeBox": [
+        358,
+        3080,
+        375,
+        3111
+      ],
+      "boxSize": [
+        18,
+        31
+      ],
+      "diff": {
+        "meanAbsDiff": 0.0,
+        "maxDiff": 0,
+        "nonzeroPct": 0.0
+      },
+      "visualStats": {
+        "meanRgb": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "meanLuma": 255.0,
+        "meanSaturation": 0.0,
+        "orangeRatio": 0.0,
+        "darkRatio": 0.0,
+        "greyDarkRatio": 0.0
+      },
+      "letter": "V",
+      "slotIndex": 1
+    },
+    {
+      "id": "overdose_glyph_3_E",
+      "label": "OVERDOSE glyph 3 E",
+      "kind": "overdose_glyph",
+      "uprightBox": [
+        2186,
+        153,
+        2204,
+        184
+      ],
+      "nativeBox": [
+        340,
+        3080,
+        358,
+        3111
+      ],
+      "boxSize": [
+        18,
+        31
+      ],
+      "diff": {
+        "meanAbsDiff": 1.0143,
+        "maxDiff": 19,
+        "nonzeroPct": 35.006
+      },
+      "visualStats": {
+        "meanRgb": [
+          252.26,
+          244.36,
+          235.65
+        ],
+        "meanLuma": 245.7263,
+        "meanSaturation": 0.0734,
+        "orangeRatio": 0.1344,
+        "darkRatio": 0.0,
+        "greyDarkRatio": 0.0
+      },
+      "letter": "E",
+      "slotIndex": 2
+    },
+    {
+      "id": "overdose_glyph_4_R",
+      "label": "OVERDOSE glyph 4 R",
+      "kind": "overdose_glyph",
+      "uprightBox": [
+        2204,
+        153,
+        2221,
+        184
+      ],
+      "nativeBox": [
+        323,
+        3080,
+        340,
+        3111
+      ],
+      "boxSize": [
+        18,
+        31
+      ],
+      "diff": {
+        "meanAbsDiff": 1.4371,
+        "maxDiff": 18,
+        "nonzeroPct": 44.9083
+      },
+      "visualStats": {
+        "meanRgb": [
+          252.07,
+          242.21,
+          231.1
+        ],
+        "meanLuma": 243.8893,
+        "meanSaturation": 0.0905,
+        "orangeRatio": 0.1632,
+        "darkRatio": 0.0,
+        "greyDarkRatio": 0.0
+      },
+      "letter": "R",
+      "slotIndex": 3
+    },
+    {
+      "id": "overdose_glyph_5_D",
+      "label": "OVERDOSE glyph 5 D",
+      "kind": "overdose_glyph",
+      "uprightBox": [
+        2221,
+        153,
+        2239,
+        184
+      ],
+      "nativeBox": [
+        305,
+        3080,
+        323,
+        3111
+      ],
+      "boxSize": [
+        18,
+        31
+      ],
+      "diff": {
+        "meanAbsDiff": 1.2838,
+        "maxDiff": 15,
+        "nonzeroPct": 46.7742
+      },
+      "visualStats": {
+        "meanRgb": [
+          251.17,
+          239.98,
+          226.6
+        ],
+        "meanLuma": 241.8027,
+        "meanSaturation": 0.1081,
+        "orangeRatio": 0.1864,
+        "darkRatio": 0.0,
+        "greyDarkRatio": 0.0
+      },
+      "letter": "D",
+      "slotIndex": 4
+    },
+    {
+      "id": "overdose_glyph_6_O",
+      "label": "OVERDOSE glyph 6 O",
+      "kind": "overdose_glyph",
+      "uprightBox": [
+        2239,
+        153,
+        2256,
+        184
+      ],
+      "nativeBox": [
+        288,
+        3080,
+        305,
+        3111
+      ],
+      "boxSize": [
+        18,
+        31
+      ],
+      "diff": {
+        "meanAbsDiff": 1.7577,
+        "maxDiff": 21,
+        "nonzeroPct": 49.2094
+      },
+      "visualStats": {
+        "meanRgb": [
+          250.34,
+          235.36,
+          217.93
+        ],
+        "meanLuma": 237.8534,
+        "meanSaturation": 0.1408,
+        "orangeRatio": 0.277,
+        "darkRatio": 0.0,
+        "greyDarkRatio": 0.0
+      },
+      "letter": "O",
+      "slotIndex": 5
+    },
+    {
+      "id": "overdose_glyph_7_S",
+      "label": "OVERDOSE glyph 7 S",
+      "kind": "overdose_glyph",
+      "uprightBox": [
+        2256,
+        153,
+        2274,
+        184
+      ],
+      "nativeBox": [
+        270,
+        3080,
+        288,
+        3111
+      ],
+      "boxSize": [
+        18,
+        31
+      ],
+      "diff": {
+        "meanAbsDiff": 1.4827,
+        "maxDiff": 22,
+        "nonzeroPct": 47.5508
+      },
+      "visualStats": {
+        "meanRgb": [
+          251.28,
+          240.42,
+          226.53
+        ],
+        "meanLuma": 242.0822,
+        "meanSaturation": 0.1065,
+        "orangeRatio": 0.2061,
+        "darkRatio": 0.0,
+        "greyDarkRatio": 0.0
+      },
+      "letter": "S",
+      "slotIndex": 6
+    },
+    {
+      "id": "overdose_glyph_8_E",
+      "label": "OVERDOSE glyph 8 E",
+      "kind": "overdose_glyph",
+      "uprightBox": [
+        2274,
+        153,
+        2291,
+        184
+      ],
+      "nativeBox": [
+        253,
+        3080,
+        270,
+        3111
+      ],
+      "boxSize": [
+        18,
+        31
+      ],
+      "diff": {
+        "meanAbsDiff": 1.7502,
+        "maxDiff": 20,
+        "nonzeroPct": 51.1701
+      },
+      "visualStats": {
+        "meanRgb": [
+          250.62,
+          236.59,
+          222.33
+        ],
+        "meanLuma": 239.1569,
+        "meanSaturation": 0.1232,
+        "orangeRatio": 0.2429,
+        "darkRatio": 0.0,
+        "greyDarkRatio": 0.0
+      },
+      "letter": "E",
+      "slotIndex": 7
+    }
+  ],
+  "summary": {
+    "recordCount": 15,
+    "activeRecordCount": 4,
+    "activeExpectedVisualStateOrder": "YKKY",
+    "activeClassifiedVisualStateOrder": "YKKY",
+    "activePageLines": "22 25 27 32",
+    "activeCorridorIndexes": "4 7 9 14",
+    "allActiveVisualStatesMatch": true,
+    "allActiveDocmBoldFractionOne": true,
+    "activeMaxMeanAbsDiff": 2.9794,
+    "activeMaxDiff": 25,
+    "activeAllRoundtripMeanAbsDiffUnder3": true,
+    "activeYOrangeRatioRange": [
+      0.7124,
+      0.7666
+    ],
+    "activeKDarkRatioRange": [
+      0.6592,
+      0.6994
+    ],
+    "overdoseGlyphSequence": "OVERDOSE",
+    "overdoseGlyphMaxDarkRatio": 0.0,
+    "overdoseGlyphMaxOrangeRatio": 0.277,
+    "overdoseGlyphMaxMeanAbsDiff": 1.7577,
+    "selectorUnlocked": false
+  },
+  "decision": {
+    "sourcePacketVisualStateRoundtrip": "source-validation-only",
+    "reason": "The active O4/B4/G5/O5 boxes roundtrip cleanly between readable/upright and native rotate180 coordinates, pixel masks recover the expected Y/K/Y/K visual evidence as YKKY, all four active targets remain DOCM Typeka bold, and the OVERDOSE header/glyph controls do not add a unit/order rule."
+  },
+  "sheet": "analysis_outputs/source_audit/source_packet_visual_state_roundtrip/source_packet_visual_state_roundtrip_sheet.jpg",
+  "nextMove": "Use these per-box visual-state and roundtrip metrics as source-comparison benchmarks for a true physical scan, original export, or fresh PDF extraction; do not extract unless R3 unit/order evidence appears."
+}

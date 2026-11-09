@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Max Keiser Puzzle 3D Article Map</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main id="app">
+    <aside class="panel">
+      <div class="brand">
+        <div class="mark"></div>
+        <div>
+          <h1>3D Article Map</h1>
+          <p>Max Keiser Bitcoin puzzle</p>
+        </div>
+      </div>
+
+      <section class="controls">
+        <h2>View</h2>
+        <div class="segmented" role="group" aria-label="layout mode">
+          <button class="active" data-layout="spread">Spread</button>
+          <button data-layout="fold">Fold</button>
+          <button data-layout="stack">Stack</button>
+        </div>
+      </section>
+
+      <section class="controls grid">
+        <label><input type="checkbox" id="togglePages" checked> Page scans</label>
+        <label><input type="checkbox" id="toggleChars" checked> Letters</label>
+        <label><input type="checkbox" id="toggleImportant" checked> Important words</label>
+        <label><input type="checkbox" id="toggleHighlights" checked> Highlights</label>
+        <label><input type="checkbox" id="toggleReflections" checked> Mirror boxes</label>
+        <label><input type="checkbox" id="toggleAnchors" checked> Anchors</label>
+        <label><input type="checkbox" id="toggleRays" checked> Ray selectors</label>
+      </section>
+
+      <section class="metrics">
+        <div><strong id="charCount">0</strong><span>letters</span></div>
+        <div><strong id="wordCount">0</strong><span>words</span></div>
+        <div><strong id="anchorCount">0</strong><span>anchors</span></div>
+        <div><strong id="reflectionCount">0</strong><span>mirror boxes</span></div>
+      </section>
+
+      <section class="controls">
+        <h2>Focus</h2>
+        <select id="focusSelect" aria-label="focus page">
+          <option value="all">All pages</option>
+          <option value="75">Page 75</option>
+          <option value="76">Page 76</option>
+          <option value="77">Page 77</option>
+          <option value="78">Page 78</option>
+          <option value="79">Page 79</option>
+          <option value="80">Page 80</option>
+        </select>
+      </section>
+
+      <section class="correction">
+        <h2>Text Correction</h2>
+        <div class="field-row">
+          <label for="correctionPage">Page</label>
+          <select id="correctionPage" aria-label="correction page">
+            <option value="75">Page 75</option>
+            <option value="76" selected>Page 76</option>
+            <option value="77">Page 77</option>
+            <option value="78">Page 78</option>
+            <option value="79">Page 79</option>
+            <option value="80">Page 80</option>
+          </select>
+        </div>
+        <div class="field-row">
+          <label for="correctionLine">Line</label>
+          <select id="correctionLine" aria-label="correction line"></select>
+        </div>
+        <div class="line-preview">
+          <span>OCR</span>
+          <p id="ocrLinePreview"></p>
+        </div>
+        <label class="textarea-label" for="correctionText">Exact text + markup</label>
+        <textarea id="correctionText" spellcheck="false"></textarea>
+        <div class="markup-help">
+          <span><strong>Bold</strong>: **word** or **l**etter</span>
+          <span><strong>Orange</strong>: [[highlighted text]]</span>
+          <span><strong>Black</strong>: {{highlighted text}} or ~~text~~</span>
+        </div>
+        <div class="button-row">
+          <button id="markBold" type="button">Bold</button>
+          <button id="markOrange" type="button">Orange</button>
+        </div>
+        <div class="button-row">
+          <button id="markBlack" type="button">Black</button>
+          <button id="stripMarkup" type="button">Plain text</button>
+        </div>
+        <div class="button-row">
+          <button id="applyCorrection" type="button">Apply</button>
+          <button id="resetCorrection" type="button">Reset line</button>
+        </div>
+        <div class="button-row">
+          <button id="exportCorrections" type="button">Export JSON</button>
+          <button id="clearCorrections" type="button">Clear all</button>
+        </div>
+        <p id="correctionStatus" class="status-text">Corrections save in this browser.</p>
+      </section>
+
+      <section class="transcript">
+        <h2>Annotated Transcript</h2>
+        <div class="field-row">
+          <label for="transcriptSource">Source</label>
+          <select id="transcriptSource" aria-label="annotated transcript source">
+            <option value="notes">Notes</option>
+            <option value="markdown" selected>Markdown</option>
+          </select>
+        </div>
+        <div class="field-row">
+          <label for="transcriptPage">Part</label>
+          <select id="transcriptPage" aria-label="annotated transcript section"></select>
+        </div>
+        <textarea id="transcriptText" spellcheck="false" readonly></textarea>
+        <div class="button-row">
+          <button id="copyTranscript" type="button">Copy to editor</button>
+          <button id="downloadTranscript" type="button">Download</button>
+        </div>
+        <p class="status-text">This preserves your full supplied text and parenthetical markup notes exactly as a reference layer.</p>
+      </section>
+
+      <section class="authority">
+        <h2>Text Authority</h2>
+        <p class="authority-note">The 3D labels are OCR navigation only. Use corrected transcript/source crops for exact lower page-76 wording.</p>
+        <dl>
+          <div>
+            <dt>O5</dt>
+            <dd>Maybe because he's a shitcoiner at heart.</dd>
+          </div>
+          <div>
+            <dt>G5</dt>
+            <dd>collateralized "Volcano Bonds" to pay off the IMF loan</dd>
+          </div>
+          <div>
+            <dt>Frame</dt>
+            <dd>should sell -> Volcano Bonds -> shitcoiner at heart</dd>
+          </div>
+          <div>
+            <dt>Fonts</dt>
+            <dd>Use DOCM Typeka states for bold/font labels; Markdown bold is annotation-only.</dd>
+          </div>
+        </dl>
+        <a class="asset-link" href="./active_target_label_gate/target_wording_bridge_sheet.jpg" target="_blank" rel="noreferrer">Open bridge sheet</a>
+        <a class="asset-link" href="../docm_format_sources/typeka_manual_bold_disambiguation/typeka_authority_bridge_sheet.jpg" target="_blank" rel="noreferrer">Open typography sheet</a>
+        <a class="asset-link" href="../source_audit/page76_typography_overlay/page76_typography_overlay.jpg" target="_blank" rel="noreferrer">Open page 76 overlay</a>
+      </section>
+
+      <section class="findings">
+        <h2>Deconstruction</h2>
+        <ol id="findings"></ol>
+      </section>
+    </aside>
+
+    <section class="viewport">
+      <canvas id="scene"></canvas>
+      <div class="hud">
+        <span id="hoverText">Ready</span>
+        <span>drag rotate · wheel zoom · right-drag pan</span>
+      </div>
+    </section>
+  </main>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "/node_modules/three/build/three.module.js",
+        "three/addons/": "/node_modules/three/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="./viewer.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+{
+  "createdAt": "2026-05-20T14:14:50",
+  "scope": "future-source validation packet integrity; no key derivation or text extraction",
+  "status": "PASS",
+  "artifacts": [
+    {
+      "label": "packet_json",
+      "path": "analysis_outputs/source_audit/future_source_validation_packet/future_source_validation_packet.json",
+      "exists": true,
+      "size": 11487,
+      "mtime": "2026-05-20T14:14:50"
+    },
+    {
+      "label": "packet_md",
+      "path": "analysis_outputs/source_audit/future_source_validation_packet/future_source_validation_packet.md",
+      "exists": true,
+      "size": 4264,
+      "mtime": "2026-05-20T14:14:50"
+    },
+    {
+      "label": "review_json",
+      "path": "analysis_outputs/source_audit/future_source_validation_packet/future_source_validation_review_sheet.json",
+      "exists": true,
+      "size": 3842,
+      "mtime": "2026-05-20T14:14:50"
+    },
+    {
+      "label": "review_md",
+      "path": "analysis_outputs/source_audit/future_source_validation_packet/future_source_validation_review_sheet.md",
+      "exists": true,
+      "size": 1710,
+      "mtime": "2026-05-20T14:14:50"
+    },
+    {
+      "label": "review_sheet",
+      "path": "analysis_outputs/source_audit/future_source_validation_packet/future_source_validation_review_sheet.jpg",
+      "exists": true,
+      "size": 777602,
+      "mtime": "2026-05-20T14:14:50"
+    },
+    {
+      "label": "page76_priority_crop_sheet",
+      "path": "analysis_outputs/source_audit/page76_priority_crop_pack/page76_priority_crop_sheet.jpg",
+      "exists": true,
+      "size": 541734,
+      "mtime": "2026-05-20T09:39:26"
+    },
+    {
+      "label": "p78_frame_tricontact_json",
+      "path": "analysis_outputs/source_audit/p78_frame_tricontact_signature/p78_frame_tricontact_signature.json",
+      "exists": true,
+      "size": 5537,
+      "mtime": "2026-05-20T08:14:47"
+    },
+    {
+      "label": "p78_frame_tricontact_overlay",
+      "path": "analysis_outputs/source_audit/p78_frame_tricontact_signature/p78_frame_tricontact_signature_overlay.jpg",
+      "exists": true,
+      "size": 273199,
+      "mtime": "2026-05-20T08:14:47"
+    },
+    {
+      "label": "repaired_frame_font_states_json",
+      "path": "analysis_outputs/docm_format_sources/repaired_frame_font_contact_states/repaired_frame_font_contact_states.json",
+      "exists": true,
+      "size": 20590,
+      "mtime": "2026-05-20T08:29:19"
+    },
+    {
+      "label": "typeka_authority_sheet",
+      "path": "analysis_outputs/docm_format_sources/typeka_manual_bold_disambiguation/typeka_authority_bridge_sheet.jpg",
+      "exists": true,
+      "size": 491496,
+      "mtime": "2026-05-20T14:11:05"
+    },
+    {
+      "label": "typeka_authority_json",
+      "path": "analysis_outputs/docm_format_sources/typeka_manual_bold_disambiguation/typeka_authority_bridge_sheet.json",
+      "exists": true,
+      "size": 6731,
+      "mtime": "2026-05-20T14:11:05"
+    },
+    {
+      "label": "zero_visual_crop_sheet",
+      "path": "analysis_outputs/source_audit/zero_visual_crops/zero_visual_crops_sheet.jpg",
+      "exists": true,
+      "size": 928042,
+      "mtime": "2026-05-20T05:03:55"
+    },
+    {
+      "label": "p79_pill_baseline_sheet",
+      "path": "analysis_outputs/source_audit/alternate_pdf_pill_geometry/alternate_pdf_pill_geometry_sheet.jpg",
+      "exists": true,
+      "size": 206613,
+      "mtime": "2026-05-20T05:06:55"
+    },
+    {
+      "label": "p77_one_line_near_miss_json",
+      "path": "analysis_outputs/source_audit/p77_one_line_near_miss/p77_one_line_near_miss.json",
+      "exists": true,
+      "size": 6410,
+      "mtime": "2026-05-20T13:14:43"
+    },
+    {
+      "label": "missing_rule_frontier_json",
+      "path": "analysis_outputs/source_audit/missing_rule_frontier/missing_rule_frontier.json",
+      "exists": true,
+      "size": 6820,
+      "mtime": "2026-05-20T13:51:09"
+    }
+  ],
+  "missingArtifacts": [],
+  "staleInputs": [],
+  "benchmarkChecks": [
+    {
+      "id": "review_sheet_registered",
+      "pass": true,
+      "value": "analysis_outputs/source_audit/future_source_validation_packet/future_source_validation_review_sheet.jpg",
+      "expected": "analysis_outputs/source_audit/future_source_validation_packet/future_source_validation_review_sheet.jpg"
+    },
+    {
+      "id": "review_panel_count",
+      "pass": true,
+      "value": 9,
+      "expected": 9
+    },
+    {
+      "id": "tri_contact_repair",
+      "pass": true,
+      "value": {
+        "edgeTouchDx": -38.0,
+        "edgeTouchTriContactPass": true,
+        "currentFrame": [
+          1234.0,
+          2398.0,
+          2250.0,
+          2950.0
+        ],
+        "repairFrame": [
+          1196.0,
+          2398.0,
+          2212.0,
+          2950.0
+        ]
+      },
+      "expected": "dx around -38/-40 or tri-contact pass"
+    },
+    {
+      "id": "exact_edge_signature",
+      "pass": true,
+      "value": [
+        {
+          "name": "g5_edge_touch_dx_minus_38",
+          "exactPhraseStream": "should sell | Volcano Bonds | shitcoiner at heart",
+          "exactStyleStream": "RKY",
+          "instructionHits": {}
+        },
+        {
+          "name": "nearest_grid_dx_minus_40",
+          "exactPhraseStream": "should sell | Volcano Bonds | shitcoiner at heart",
+          "exactStyleStream": "RKY",
+          "instructionHits": {}
+        },
+        {
+          "name": "best_overlap_dx_minus_160_dy_35",
+          "exactPhraseStream": "should sell | Volcano Bonds | shitcoiner at heart",
+          "exactStyleStream": "RKY",
+          "instructionHits": {}
+        }
+      ],
+      "expected": "should sell | Volcano Bonds | shitcoiner at heart / RKY"
+    },
+    {
+      "id": "typeka_authority_registered",
+      "pass": true,
+      "value": {
+        "packetSheet": "analysis_outputs/docm_format_sources/typeka_manual_bold_disambiguation/typeka_authority_bridge_sheet.jpg",
+        "reviewHasPanel": true,
+        "sourceSheet": "analysis_outputs/docm_format_sources/typeka_manual_bold_disambiguation/typeka_authority_bridge_sheet.jpg"
+      },
+      "expected": "analysis_outputs/docm_format_sources/typeka_manual_bold_disambiguation/typeka_authority_bridge_sheet.jpg"
+    },
+    {
+      "id": "p77_near_miss_present",
+      "pass": true,
+      "value": 71.93,
+      "expected": "recorded p77 near-miss gap"
+    },
+    {
+      "id": "frontier_dead_branch_count",
+      "pass": true,
+      "value": 209,
+      "expected": ">= 208"
+    }
+  ],
+  "failedChecks": [],
+  "assessment": [
+    "The future-source packet and review sheet are present and non-empty.",
+    "The packet still points at the live review sheet and the current p78 exact-edge signature remains the same compact benchmark.",
+    "No extraction branch is reopened by this pass; it only verifies that future source comparisons are using current benchmarks."
+  ],
+  "decision": "Use the current packet/review sheet as the source-comparison gate.",
+  "nextMove": "Continue waiting for a true new source/clue; compare it first against the packet and review sheet before any extraction/key work."
+}

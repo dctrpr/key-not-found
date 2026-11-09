@@ -1,0 +1,1183 @@
+{
+  "createdAt": "2026-05-24T09:20:47",
+  "scope": "current PDF page-76 render vs embedded-image active-region identity gate; no extraction or candidate generation",
+  "inputs": {
+    "pdfs": [
+      "magazine.pdf",
+      "keyser bitcoin .pdf",
+      "analysis_outputs/external_clues/google_drive_article_download.pdf"
+    ],
+    "activeIndexSlot": "analysis_outputs/source_audit/source_packet_active_index_slot_control/source_packet_active_index_slot_control.json",
+    "c9OverdoseSlotGate": "analysis_outputs/source_audit/c9_overdose_letter_slot_gate/c9_overdose_letter_slot_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json",
+    "baselineUprightPage76": "analysis_outputs/3d_article_map/page_76_upright.jpg"
+  },
+  "pdfRecords": [
+    {
+      "pdf": "magazine.pdf",
+      "pageIndex": 3,
+      "articlePage": 76,
+      "pageRotation": 180,
+      "pageRect": [
+        0.0,
+        0.0,
+        610.56,
+        783.36
+      ],
+      "imageXref": 37,
+      "imageSize": [
+        2544,
+        3264
+      ],
+      "imageRect": [
+        0.0,
+        0.0,
+        610.56,
+        783.36
+      ],
+      "renderRawSize": [
+        2443,
+        3134
+      ],
+      "renderOrientationMode": "as_is",
+      "embeddedOrientationMode": "rotate180",
+      "renderBaselineSampleScore": 0.62843,
+      "embeddedBaselineSampleScore": 0.278957,
+      "activeMismatchCount": 0,
+      "overdoseSlotMismatchCount": 0,
+      "controlMismatchCount": 0,
+      "maxActiveRenderEmbeddedMeanAbsDiff": 7.198912,
+      "maxSlotRenderEmbeddedMeanAbsDiff": 3.121697,
+      "renderPreview": "analysis_outputs/source_audit/current_pdf_active_region_render_embedded_identity_gate/magazine_pdf_render_norm.jpg",
+      "embeddedPreview": "analysis_outputs/source_audit/current_pdf_active_region_render_embedded_identity_gate/magazine_pdf_embedded_canvas_norm.jpg"
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "pageIndex": 3,
+      "articlePage": 76,
+      "pageRotation": 0,
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "imageXref": 59,
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "imageRect": [
+        18.0,
+        0.0,
+        594.0,
+        792.0
+      ],
+      "renderRawSize": [
+        2448,
+        3168
+      ],
+      "renderOrientationMode": "as_is",
+      "embeddedOrientationMode": "as_is",
+      "renderBaselineSampleScore": 158.15889,
+      "embeddedBaselineSampleScore": 156.748243,
+      "activeMismatchCount": 0,
+      "overdoseSlotMismatchCount": 0,
+      "controlMismatchCount": 0,
+      "maxActiveRenderEmbeddedMeanAbsDiff": 2.42349,
+      "maxSlotRenderEmbeddedMeanAbsDiff": 1.707806,
+      "renderPreview": "analysis_outputs/source_audit/current_pdf_active_region_render_embedded_identity_gate/keyser_bitcoin__pdf_render_norm.jpg",
+      "embeddedPreview": "analysis_outputs/source_audit/current_pdf_active_region_render_embedded_identity_gate/keyser_bitcoin__pdf_embedded_canvas_norm.jpg"
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "pageIndex": 3,
+      "articlePage": 76,
+      "pageRotation": 0,
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "imageXref": 59,
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "imageRect": [
+        18.0,
+        0.0,
+        594.0,
+        792.0
+      ],
+      "renderRawSize": [
+        2448,
+        3168
+      ],
+      "renderOrientationMode": "as_is",
+      "embeddedOrientationMode": "as_is",
+      "renderBaselineSampleScore": 158.15889,
+      "embeddedBaselineSampleScore": 156.748243,
+      "activeMismatchCount": 0,
+      "overdoseSlotMismatchCount": 0,
+      "controlMismatchCount": 0,
+      "maxActiveRenderEmbeddedMeanAbsDiff": 2.42349,
+      "maxSlotRenderEmbeddedMeanAbsDiff": 1.707806,
+      "renderPreview": "analysis_outputs/source_audit/current_pdf_active_region_render_embedded_identity_gate/analysis_outputs_external_clues_google_drive_article_download_pdf_render_norm.jpg",
+      "embeddedPreview": "analysis_outputs/source_audit/current_pdf_active_region_render_embedded_identity_gate/analysis_outputs_external_clues_google_drive_article_download_pdf_embedded_canvas_norm.jpg"
+    }
+  ],
+  "regionRows": [
+    {
+      "pdf": "magazine.pdf",
+      "id": "O4",
+      "kind": "active_target",
+      "label": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 4.583794,
+      "renderVsEmbeddedLargeDiffRatio": 0.000178,
+      "renderVsBaselineMeanAbsDiff": 8.018722,
+      "embeddedVsBaselineMeanAbsDiff": 6.176005
+    },
+    {
+      "pdf": "magazine.pdf",
+      "id": "B4",
+      "kind": "active_target",
+      "label": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 6.306879,
+      "renderVsEmbeddedLargeDiffRatio": 0.006094,
+      "renderVsBaselineMeanAbsDiff": 6.606423,
+      "embeddedVsBaselineMeanAbsDiff": 1.546477
+    },
+    {
+      "pdf": "magazine.pdf",
+      "id": "G5",
+      "kind": "active_target",
+      "label": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 7.198912,
+      "renderVsEmbeddedLargeDiffRatio": 0.006252,
+      "renderVsBaselineMeanAbsDiff": 7.514131,
+      "embeddedVsBaselineMeanAbsDiff": 1.623788
+    },
+    {
+      "pdf": "magazine.pdf",
+      "id": "O5",
+      "kind": "active_target",
+      "label": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 4.314589,
+      "renderVsEmbeddedLargeDiffRatio": 0.000161,
+      "renderVsBaselineMeanAbsDiff": 7.923156,
+      "embeddedVsBaselineMeanAbsDiff": 6.455416
+    },
+    {
+      "pdf": "magazine.pdf",
+      "id": "slot0_O",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot O",
+      "box": [
+        294.0,
+        2176.81,
+        538.5,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.403465,
+      "renderVsEmbeddedLargeDiffRatio": 0.001677,
+      "renderVsBaselineMeanAbsDiff": 1.472681,
+      "embeddedVsBaselineMeanAbsDiff": 0.366333
+    },
+    {
+      "pdf": "magazine.pdf",
+      "id": "slot1_V",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot V",
+      "box": [
+        538.5,
+        2176.81,
+        783.0,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 3.121697,
+      "renderVsEmbeddedLargeDiffRatio": 0.004588,
+      "renderVsBaselineMeanAbsDiff": 3.271772,
+      "embeddedVsBaselineMeanAbsDiff": 0.812044
+    },
+    {
+      "pdf": "magazine.pdf",
+      "id": "slot2_E",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot E",
+      "box": [
+        783.0,
+        2176.81,
+        1027.5,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 3.02675,
+      "renderVsEmbeddedLargeDiffRatio": 0.004483,
+      "renderVsBaselineMeanAbsDiff": 3.170447,
+      "embeddedVsBaselineMeanAbsDiff": 0.781743
+    },
+    {
+      "pdf": "magazine.pdf",
+      "id": "slot3_R",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot R",
+      "box": [
+        1027.5,
+        2176.81,
+        1272.0,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 3.081949,
+      "renderVsEmbeddedLargeDiffRatio": 0.003944,
+      "renderVsBaselineMeanAbsDiff": 3.457102,
+      "embeddedVsBaselineMeanAbsDiff": 1.160325
+    },
+    {
+      "pdf": "magazine.pdf",
+      "id": "slot4_D",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot D",
+      "box": [
+        1272.0,
+        2176.81,
+        1516.5,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 2.855777,
+      "renderVsEmbeddedLargeDiffRatio": 0.003302,
+      "renderVsBaselineMeanAbsDiff": 3.374427,
+      "embeddedVsBaselineMeanAbsDiff": 1.339787
+    },
+    {
+      "pdf": "magazine.pdf",
+      "id": "slot5_O",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot O",
+      "box": [
+        1516.5,
+        2176.81,
+        1761.0,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.313746,
+      "renderVsEmbeddedLargeDiffRatio": 0.001246,
+      "renderVsBaselineMeanAbsDiff": 1.728349,
+      "embeddedVsBaselineMeanAbsDiff": 0.904482
+    },
+    {
+      "pdf": "magazine.pdf",
+      "id": "slot6_S",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot S",
+      "box": [
+        1761.0,
+        2176.81,
+        2005.5,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 0.171621,
+      "renderVsEmbeddedLargeDiffRatio": 0.000641,
+      "renderVsBaselineMeanAbsDiff": 0.206737,
+      "embeddedVsBaselineMeanAbsDiff": 0.085727
+    },
+    {
+      "pdf": "magazine.pdf",
+      "id": "slot7_E",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot E",
+      "box": [
+        2005.5,
+        2176.81,
+        2250.0,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 0.130823,
+      "renderVsEmbeddedLargeDiffRatio": 0.00015,
+      "renderVsBaselineMeanAbsDiff": 0.14111,
+      "embeddedVsBaselineMeanAbsDiff": 0.041777
+    },
+    {
+      "pdf": "magazine.pdf",
+      "id": "O4_dy-149",
+      "kind": "shifted_control",
+      "label": "O4 shifted -149.1px",
+      "box": [
+        1334.0,
+        2027.9,
+        1801.0,
+        2075.9
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.270253,
+      "renderVsEmbeddedLargeDiffRatio": 0.00058,
+      "renderVsBaselineMeanAbsDiff": 1.334924,
+      "embeddedVsBaselineMeanAbsDiff": 0.342865
+    },
+    {
+      "pdf": "magazine.pdf",
+      "id": "O4_dy+149",
+      "kind": "shifted_control",
+      "label": "O4 shifted +149.1px",
+      "box": [
+        1334.0,
+        2326.1,
+        1801.0,
+        2374.1
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 2.371282,
+      "renderVsEmbeddedLargeDiffRatio": 0.002186,
+      "renderVsBaselineMeanAbsDiff": 2.564448,
+      "embeddedVsBaselineMeanAbsDiff": 0.799102
+    },
+    {
+      "pdf": "magazine.pdf",
+      "id": "B4_dy-149",
+      "kind": "shifted_control",
+      "label": "B4 shifted -149.1px",
+      "box": [
+        428.0,
+        2248.9,
+        691.0,
+        2295.9
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 4.117547,
+      "renderVsEmbeddedLargeDiffRatio": 0.004234,
+      "renderVsBaselineMeanAbsDiff": 4.355041,
+      "embeddedVsBaselineMeanAbsDiff": 1.183157
+    },
+    {
+      "pdf": "magazine.pdf",
+      "id": "B4_dy+149",
+      "kind": "shifted_control",
+      "label": "B4 shifted +149.1px",
+      "box": [
+        428.0,
+        2547.1,
+        691.0,
+        2594.1
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 5.19184,
+      "renderVsEmbeddedLargeDiffRatio": 0.006202,
+      "renderVsBaselineMeanAbsDiff": 5.446485,
+      "embeddedVsBaselineMeanAbsDiff": 1.340587
+    },
+    {
+      "pdf": "magazine.pdf",
+      "id": "G5_dy-149",
+      "kind": "shifted_control",
+      "label": "G5 shifted -149.1px",
+      "box": [
+        795.0,
+        2394.9,
+        1196.0,
+        2442.9
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 3.765153,
+      "renderVsEmbeddedLargeDiffRatio": 0.005732,
+      "renderVsBaselineMeanAbsDiff": 3.916961,
+      "embeddedVsBaselineMeanAbsDiff": 0.975963
+    },
+    {
+      "pdf": "magazine.pdf",
+      "id": "G5_dy+149",
+      "kind": "shifted_control",
+      "label": "G5 shifted +149.1px",
+      "box": [
+        795.0,
+        2693.1,
+        1196.0,
+        2741.1
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 6.077134,
+      "renderVsEmbeddedLargeDiffRatio": 0.015517,
+      "renderVsBaselineMeanAbsDiff": 6.281986,
+      "embeddedVsBaselineMeanAbsDiff": 1.380109
+    },
+    {
+      "pdf": "magazine.pdf",
+      "id": "O5_dy-149",
+      "kind": "shifted_control",
+      "label": "O5 shifted -149.1px",
+      "box": [
+        1040.0,
+        2782.9,
+        1661.0,
+        2832.9
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 2.17256,
+      "renderVsEmbeddedLargeDiffRatio": 0.002319,
+      "renderVsBaselineMeanAbsDiff": 2.294407,
+      "embeddedVsBaselineMeanAbsDiff": 0.614772
+    },
+    {
+      "pdf": "magazine.pdf",
+      "id": "O5_dy+149",
+      "kind": "shifted_control",
+      "label": "O5 shifted +149.1px",
+      "box": [
+        1040.0,
+        3081.1,
+        1661.0,
+        3131.1
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 0.004573,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 0.006828,
+      "embeddedVsBaselineMeanAbsDiff": 0.00496
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "O4",
+      "kind": "active_target",
+      "label": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.080047,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 113.415209,
+      "embeddedVsBaselineMeanAbsDiff": 113.858895
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "B4",
+      "kind": "active_target",
+      "label": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 2.248497,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 146.850983,
+      "embeddedVsBaselineMeanAbsDiff": 147.376803
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "G5",
+      "kind": "active_target",
+      "label": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 2.42349,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 150.954021,
+      "embeddedVsBaselineMeanAbsDiff": 151.487167
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "O5",
+      "kind": "active_target",
+      "label": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 0.816586,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 121.459624,
+      "embeddedVsBaselineMeanAbsDiff": 121.871873
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "slot0_O",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot O",
+      "box": [
+        294.0,
+        2176.81,
+        538.5,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 0.812032,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 33.393514,
+      "embeddedVsBaselineMeanAbsDiff": 32.965079
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "slot1_V",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot V",
+      "box": [
+        538.5,
+        2176.81,
+        783.0,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.707806,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 55.872276,
+      "embeddedVsBaselineMeanAbsDiff": 55.32428
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "slot2_E",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot E",
+      "box": [
+        783.0,
+        2176.81,
+        1027.5,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.65317,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 57.789153,
+      "embeddedVsBaselineMeanAbsDiff": 57.248323
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "slot3_R",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot R",
+      "box": [
+        1027.5,
+        2176.81,
+        1272.0,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.684128,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 63.744608,
+      "embeddedVsBaselineMeanAbsDiff": 63.234002
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "slot4_D",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot D",
+      "box": [
+        1272.0,
+        2176.81,
+        1516.5,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.637118,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 59.279493,
+      "embeddedVsBaselineMeanAbsDiff": 58.761058
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "slot5_O",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot O",
+      "box": [
+        1516.5,
+        2176.81,
+        1761.0,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.032809,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 47.52699,
+      "embeddedVsBaselineMeanAbsDiff": 46.923667
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "slot6_S",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot S",
+      "box": [
+        1761.0,
+        2176.81,
+        2005.5,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 0.952061,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 41.570682,
+      "embeddedVsBaselineMeanAbsDiff": 40.82427
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "slot7_E",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot E",
+      "box": [
+        2005.5,
+        2176.81,
+        2250.0,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 0.947623,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 41.568356,
+      "embeddedVsBaselineMeanAbsDiff": 40.824187
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "O4_dy-149",
+      "kind": "shifted_control",
+      "label": "O4 shifted -149.1px",
+      "box": [
+        1334.0,
+        2027.9,
+        1801.0,
+        2075.9
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.484059,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 60.807578,
+      "embeddedVsBaselineMeanAbsDiff": 60.019569
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "O4_dy+149",
+      "kind": "shifted_control",
+      "label": "O4 shifted +149.1px",
+      "box": [
+        1334.0,
+        2326.1,
+        1801.0,
+        2374.1
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.994186,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 53.976267,
+      "embeddedVsBaselineMeanAbsDiff": 53.286893
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "B4_dy-149",
+      "kind": "shifted_control",
+      "label": "B4 shifted -149.1px",
+      "box": [
+        428.0,
+        2248.9,
+        691.0,
+        2295.9
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 2.0833,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 62.807243,
+      "embeddedVsBaselineMeanAbsDiff": 62.315023
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "B4_dy+149",
+      "kind": "shifted_control",
+      "label": "B4 shifted +149.1px",
+      "box": [
+        428.0,
+        2547.1,
+        691.0,
+        2594.1
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.8567,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 57.548796,
+      "embeddedVsBaselineMeanAbsDiff": 57.069331
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "G5_dy-149",
+      "kind": "shifted_control",
+      "label": "G5 shifted -149.1px",
+      "box": [
+        795.0,
+        2394.9,
+        1196.0,
+        2442.9
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 2.743939,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 58.943527,
+      "embeddedVsBaselineMeanAbsDiff": 58.320189
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "G5_dy+149",
+      "kind": "shifted_control",
+      "label": "G5 shifted +149.1px",
+      "box": [
+        795.0,
+        2693.1,
+        1196.0,
+        2741.1
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 2.580718,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 81.097118,
+      "embeddedVsBaselineMeanAbsDiff": 80.373147
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "O5_dy-149",
+      "kind": "shifted_control",
+      "label": "O5 shifted -149.1px",
+      "box": [
+        1040.0,
+        2782.9,
+        1661.0,
+        2832.9
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 0.826409,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 40.952034,
+      "embeddedVsBaselineMeanAbsDiff": 40.354096
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "id": "O5_dy+149",
+      "kind": "shifted_control",
+      "label": "O5 shifted +149.1px",
+      "box": [
+        1040.0,
+        3081.1,
+        1661.0,
+        3131.1
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 0.435942,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 163.359614,
+      "embeddedVsBaselineMeanAbsDiff": 162.929919
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "O4",
+      "kind": "active_target",
+      "label": "buying the dip",
+      "box": [
+        1334.0,
+        2177.0,
+        1801.0,
+        2225.0
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.080047,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 113.415209,
+      "embeddedVsBaselineMeanAbsDiff": 113.858895
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "B4",
+      "kind": "active_target",
+      "label": "$1 billion",
+      "box": [
+        428.0,
+        2398.0,
+        691.0,
+        2445.0
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 2.248497,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 146.850983,
+      "embeddedVsBaselineMeanAbsDiff": 147.376803
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "G5",
+      "kind": "active_target",
+      "label": "Volcano Bonds",
+      "box": [
+        795.0,
+        2544.0,
+        1196.0,
+        2592.0
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 2.42349,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 150.954021,
+      "embeddedVsBaselineMeanAbsDiff": 151.487167
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "O5",
+      "kind": "active_target",
+      "label": "shitcoiner at heart",
+      "box": [
+        1040.0,
+        2932.0,
+        1661.0,
+        2982.0
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 0.816586,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 121.459624,
+      "embeddedVsBaselineMeanAbsDiff": 121.871873
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "slot0_O",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot O",
+      "box": [
+        294.0,
+        2176.81,
+        538.5,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 0.812032,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 33.393514,
+      "embeddedVsBaselineMeanAbsDiff": 32.965079
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "slot1_V",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot V",
+      "box": [
+        538.5,
+        2176.81,
+        783.0,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.707806,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 55.872276,
+      "embeddedVsBaselineMeanAbsDiff": 55.32428
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "slot2_E",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot E",
+      "box": [
+        783.0,
+        2176.81,
+        1027.5,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.65317,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 57.789153,
+      "embeddedVsBaselineMeanAbsDiff": 57.248323
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "slot3_R",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot R",
+      "box": [
+        1027.5,
+        2176.81,
+        1272.0,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.684128,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 63.744608,
+      "embeddedVsBaselineMeanAbsDiff": 63.234002
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "slot4_D",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot D",
+      "box": [
+        1272.0,
+        2176.81,
+        1516.5,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.637118,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 59.279493,
+      "embeddedVsBaselineMeanAbsDiff": 58.761058
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "slot5_O",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot O",
+      "box": [
+        1516.5,
+        2176.81,
+        1761.0,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.032809,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 47.52699,
+      "embeddedVsBaselineMeanAbsDiff": 46.923667
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "slot6_S",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot S",
+      "box": [
+        1761.0,
+        2176.81,
+        2005.5,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 0.952061,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 41.570682,
+      "embeddedVsBaselineMeanAbsDiff": 40.82427
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "slot7_E",
+      "kind": "overdose_slot",
+      "label": "OVERDOSE slot E",
+      "box": [
+        2005.5,
+        2176.81,
+        2250.0,
+        3023.73
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 0.947623,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 41.568356,
+      "embeddedVsBaselineMeanAbsDiff": 40.824187
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "O4_dy-149",
+      "kind": "shifted_control",
+      "label": "O4 shifted -149.1px",
+      "box": [
+        1334.0,
+        2027.9,
+        1801.0,
+        2075.9
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.484059,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 60.807578,
+      "embeddedVsBaselineMeanAbsDiff": 60.019569
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "O4_dy+149",
+      "kind": "shifted_control",
+      "label": "O4 shifted +149.1px",
+      "box": [
+        1334.0,
+        2326.1,
+        1801.0,
+        2374.1
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.994186,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 53.976267,
+      "embeddedVsBaselineMeanAbsDiff": 53.286893
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "B4_dy-149",
+      "kind": "shifted_control",
+      "label": "B4 shifted -149.1px",
+      "box": [
+        428.0,
+        2248.9,
+        691.0,
+        2295.9
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 2.0833,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 62.807243,
+      "embeddedVsBaselineMeanAbsDiff": 62.315023
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "B4_dy+149",
+      "kind": "shifted_control",
+      "label": "B4 shifted +149.1px",
+      "box": [
+        428.0,
+        2547.1,
+        691.0,
+        2594.1
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 1.8567,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 57.548796,
+      "embeddedVsBaselineMeanAbsDiff": 57.069331
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "G5_dy-149",
+      "kind": "shifted_control",
+      "label": "G5 shifted -149.1px",
+      "box": [
+        795.0,
+        2394.9,
+        1196.0,
+        2442.9
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 2.743939,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 58.943527,
+      "embeddedVsBaselineMeanAbsDiff": 58.320189
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "G5_dy+149",
+      "kind": "shifted_control",
+      "label": "G5 shifted +149.1px",
+      "box": [
+        795.0,
+        2693.1,
+        1196.0,
+        2741.1
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 2.580718,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 81.097118,
+      "embeddedVsBaselineMeanAbsDiff": 80.373147
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "O5_dy-149",
+      "kind": "shifted_control",
+      "label": "O5 shifted -149.1px",
+      "box": [
+        1040.0,
+        2782.9,
+        1661.0,
+        2832.9
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 0.826409,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 40.952034,
+      "embeddedVsBaselineMeanAbsDiff": 40.354096
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "id": "O5_dy+149",
+      "kind": "shifted_control",
+      "label": "O5 shifted +149.1px",
+      "box": [
+        1040.0,
+        3081.1,
+        1661.0,
+        3131.1
+      ],
+      "renderEmbeddedMismatch": false,
+      "renderVsEmbeddedMeanAbsDiff": 0.435942,
+      "renderVsEmbeddedLargeDiffRatio": 0.0,
+      "renderVsBaselineMeanAbsDiff": 163.359614,
+      "embeddedVsBaselineMeanAbsDiff": 162.929919
+    }
+  ],
+  "summary": {
+    "pdfCount": 3,
+    "measuredRegionCount": 60,
+    "activeRegionRowCount": 12,
+    "overdoseSlotRegionRowCount": 24,
+    "controlRegionRowCount": 24,
+    "activeRenderEmbeddedMismatchCount": 0,
+    "allFourActiveMismatchPdfCount": 0,
+    "overdoseSlotRenderEmbeddedMismatchCount": 0,
+    "controlRenderEmbeddedMismatchCount": 0,
+    "maxActiveRenderEmbeddedMeanAbsDiff": 7.198912,
+    "maxOverdoseSlotRenderEmbeddedMeanAbsDiff": 3.121697,
+    "activeRenderEmbeddedP95MeanAbsDiff": 6.708294,
+    "controlRenderEmbeddedP95MeanAbsDiff": 5.030696,
+    "meanDiffThreshold": 18.0,
+    "largeDiffThreshold": 50.0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlocked": false,
+    "renderEmbeddedIdentityFingerprint": "pdfs=3|regions=60|activeMismatch=0|all4Pdf=0|slotMismatch=0|controlMismatch=0|maxActive=7.199|maxSlot=3.122|activeP95=6.708|controlP95=5.031|sourceR3=0|triggers=0/9|selectors=0"
+  },
+  "decision": {
+    "currentPdfActiveRegionRenderEmbeddedIdentityGate": "current_pdf_render_embedded_identity_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Current PDF page-76 visible renders do not add a coherent active-box or OVERDOSE-slot layer beyond the embedded raster image carriers. Any differences are ordinary derivative render/resampling behavior, with no source-backed R3 unit/order bridge.",
+    "nextMove": "Use the PDFs as raster witnesses only. Continue with true original-layout/physical source acquisition or raw clue wording before reopening selector/key extraction."
+  },
+  "sheet": "analysis_outputs/source_audit/current_pdf_active_region_render_embedded_identity_gate/current_pdf_active_region_render_embedded_identity_gate_sheet.jpg",
+  "fingerprint": "pdfs=3|regions=60|activeMismatch=0|all4Pdf=0|slotMismatch=0|controlMismatch=0|maxActive=7.199|maxSlot=3.122|activeP95=6.708|controlP95=5.031|sourceR3=0|triggers=0/9|selectors=0"
+}

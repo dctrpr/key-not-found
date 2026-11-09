@@ -1,0 +1,195 @@
+{
+  "createdAt": "2026-05-21T08:11:30",
+  "scope": "active target wording and format authority crosscheck; no extraction or candidate generation",
+  "inputs": {
+    "canonical_plain_article_body": "analysis_outputs/plain_text_transcript/canonical_plain_article_body.txt",
+    "user_annotated_transcript": "analysis_outputs/3d_article_map/user_annotated_transcript.txt",
+    "user_markdown_transcript": "analysis_outputs/3d_article_map/user_markdown_transcript.md",
+    "plain_article_correction_report": "analysis_outputs/plain_text_transcript/plain_article_correction_report.json",
+    "page76_target_text_authority_lock": "analysis_outputs/plain_text_transcript/page76_target_text_authority_lock/page76_target_text_authority_lock.json",
+    "page76_target_format_authority_lock": "analysis_outputs/docm_format_sources/page76_target_format_authority_lock/page76_target_format_authority_lock.json",
+    "c9_active_format_witness_reconciliation": "analysis_outputs/source_audit/c9_active_format_witness_reconciliation/c9_active_format_witness_reconciliation.json",
+    "source_packet_terminal_coverage_matrix": "analysis_outputs/source_audit/source_packet_terminal_coverage_matrix/source_packet_terminal_coverage_matrix.json"
+  },
+  "targetRows": [
+    {
+      "id": "buying_dip",
+      "shortId": "O4",
+      "label": "buying the dip",
+      "pageLine": 22,
+      "corridorIndex": 4,
+      "sentenceRow": 44,
+      "visualState": "Y",
+      "color": "orange",
+      "docmHighlightSummary": "yellow:14",
+      "canonicalPresent": true,
+      "markdownPresent": true,
+      "annotatedPresent": true,
+      "formatAuthorityPass": true,
+      "visualExactMatch": true,
+      "cropEvidenceCount": 0,
+      "activeCorrectionHits": [
+        {
+          "raw": "\"buying the dip\".",
+          "fixed": "\"buying the dip.\""
+        }
+      ],
+      "authorityNote": "correction touched active phrase"
+    },
+    {
+      "id": "one_billion",
+      "shortId": "B4",
+      "label": "$1 billion",
+      "pageLine": 25,
+      "corridorIndex": 7,
+      "sentenceRow": 45,
+      "visualState": "K",
+      "color": "black",
+      "docmHighlightSummary": "black:10",
+      "canonicalPresent": true,
+      "markdownPresent": true,
+      "annotatedPresent": true,
+      "formatAuthorityPass": true,
+      "visualExactMatch": true,
+      "cropEvidenceCount": 1,
+      "activeCorrectionHits": [],
+      "authorityNote": "witnesses agree"
+    },
+    {
+      "id": "volcano_bonds",
+      "shortId": "G5",
+      "label": "Volcano Bonds",
+      "pageLine": 27,
+      "corridorIndex": 9,
+      "sentenceRow": 45,
+      "visualState": "K",
+      "color": "black",
+      "docmHighlightSummary": "black:13",
+      "canonicalPresent": true,
+      "markdownPresent": true,
+      "annotatedPresent": true,
+      "formatAuthorityPass": true,
+      "visualExactMatch": true,
+      "cropEvidenceCount": 3,
+      "activeCorrectionHits": [
+        {
+          "raw": "collateralized to pay off the IMF",
+          "fixed": "collateralized “Volcano Bonds” to pay off the IMF"
+        }
+      ],
+      "authorityNote": "raw plain omitted G5"
+    },
+    {
+      "id": "shitcoiner_heart",
+      "shortId": "O5",
+      "label": "shitcoiner at heart",
+      "pageLine": 32,
+      "corridorIndex": 14,
+      "sentenceRow": 48,
+      "visualState": "Y",
+      "color": "orange",
+      "docmHighlightSummary": "yellow:19",
+      "canonicalPresent": true,
+      "markdownPresent": true,
+      "annotatedPresent": true,
+      "formatAuthorityPass": true,
+      "visualExactMatch": true,
+      "cropEvidenceCount": 2,
+      "activeCorrectionHits": [],
+      "authorityNote": "witnesses agree"
+    }
+  ],
+  "correctionAssessment": [
+    "Use the DOCM-derived fixed body as the canonical plain-text witness for article wording.",
+    "`MAX KEISER` is preserved in the with-signature output because it appears visually on the scan, but it is not part of the DOCM body text.",
+    "The raw plain text is useful, but contains several transcription omissions and punctuation/capitalization mismatches that can break exact selector work."
+  ],
+  "textAuthorityLock": {
+    "targetTextAuthority": "canonical_plain + docm_text + markdown_transcript",
+    "rawPlainUse": "context_only_not_authority_for_G5",
+    "annotatedTranscriptUse": "format/highlight witness, not exact-prose authority",
+    "reason": "The latest raw plain-text paste omits the G5 `Volcano Bonds` phrase; the annotated transcript inserts notes into prose. Canonical/DOCM/Markdown witnesses preserve the exact active target wording cleanly.",
+    "authoritativeMissing": {},
+    "rawPlainMissing": [
+      "volcano_bonds"
+    ],
+    "activeLineStreams": {
+      "visualStateOrder": "YKKY",
+      "pageLines": "22 25 27 32",
+      "sentenceRows": "44 45 45 48",
+      "corridorIndexes": "4 7 9 14",
+      "sentenceLinePairs": "44-22 45-25 45-27 48-32",
+      "lineGaps": "3 2 5",
+      "sentenceGaps": "1 0 3",
+      "corridorGaps": "3 2 5",
+      "phraseInitials": "btd 1b vb sah",
+      "phraseEdges": "bp 1n vs st",
+      "leftBoundaryWords": "he's | - | collateralized | a",
+      "rightBoundaryWords": "- | in | to | -",
+      "aboveWords": "on | was | future | trust",
+      "belowWords": "announced | billions | those | -",
+      "leftBoundaryInitials": "h-ca",
+      "rightBoundaryInitials": "-it-",
+      "aboveInitials": "owft",
+      "belowInitials": "abt-",
+      "leftBoundaryLasts": "s-da",
+      "rightBoundaryLasts": "-no-",
+      "aboveLasts": "nset",
+      "belowLasts": "dse-"
+    },
+    "packetTargetPriority": {
+      "primaryManualTarget": {
+        "lineIndex": 32,
+        "corridorIndex": 14,
+        "text": "Maybe because he's a shitcoiner at heart.",
+        "score": 32.75
+      },
+      "pairedTarget": {
+        "lineIndex": 27,
+        "corridorIndex": 9,
+        "text": "collateralized “Volcano Bonds” to pay off the IMF",
+        "score": 16.75
+      },
+      "sourceBandTarget": {
+        "lineIndex": 26,
+        "corridorIndex": 8,
+        "text": "billions worth of future bitcoin earnings",
+        "score": 10.0
+      }
+    }
+  },
+  "summary": {
+    "activeTargetCount": 4,
+    "canonicalPresentCount": 4,
+    "markdownPresentCount": 4,
+    "annotatedPresentCount": 4,
+    "formatAuthorityPassCount": 4,
+    "visualExactMatchCount": 4,
+    "cropEvidenceTargetCount": 3,
+    "allTargetWordingPresentInCheckedWitnesses": true,
+    "allActiveTargetsDocmTypekaBold": true,
+    "activeVisualStateOrder": "YKKY",
+    "activeColorPattern": "OBBO",
+    "pageLines": "22 25 27 32",
+    "corridorIndexes": "4 7 9 14",
+    "rawPlainMissing": [
+      "volcano_bonds"
+    ],
+    "activeCorridorCorrectionCount": 3,
+    "selectorPermissionCorrectionCount": 0,
+    "witnessConflictCount": 2,
+    "lineLevelExactBoldMatchCount": 2,
+    "markdownBoldContainsPhraseCount": 2,
+    "terminalCoverageReadyAreas": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "selectorUnlocked": false,
+    "authorityCrosscheckFingerprint": "targets=4|canon=4|markdown=4|annotated=4|format=4|rawMissing=volcano_bonds|activeCorr=3|selectorCorr=0|witnessConflicts=2|ready=0|sourceR3=0"
+  },
+  "decision": {
+    "sourcePacketActiveTargetAuthorityCrosscheck": "authority_confirmed_no_selector",
+    "selectorUnlocked": false,
+    "reason": "Canonical text, Markdown, annotated transcript, DOCM/high-res visual format authority, and correction markup agree on the active target identity. The raw plain omission of G5 is already controlled and no correction supplies selector permission.",
+    "nextMove": "Use canonical/DOCM/Markdown for exact text and DOCM/high-res/crop-pack for format in future source review. Do not treat correction markup, Markdown bold, or annotated notes as extraction instructions."
+  },
+  "sheet": "analysis_outputs/source_audit/source_packet_active_target_authority_crosscheck/source_packet_active_target_authority_crosscheck_sheet.jpg"
+}

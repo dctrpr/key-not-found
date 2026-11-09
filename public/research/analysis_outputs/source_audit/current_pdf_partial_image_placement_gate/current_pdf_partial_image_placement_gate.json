@@ -1,0 +1,1269 @@
+{
+  "created": "2026-05-24T08:28:26",
+  "scope": "current PDF page-76 partial image placement audit; no extraction, candidate generation, broad hashing, seed/WIF/address checks, or brute force",
+  "inputs": {
+    "pdfs": [
+      "magazine.pdf",
+      "keyser bitcoin .pdf",
+      "analysis_outputs/external_clues/google_drive_article_download.pdf"
+    ],
+    "activeTargets": "analysis_outputs/source_audit/page76_active_target_crop_completion/page76_active_target_crop_completion.json",
+    "objectLayout": "analysis_outputs/source_audit/current_pdf_object_layout_inspection/current_pdf_object_layout_inspection.json",
+    "contentTransformMatrix": "analysis_outputs/source_audit/current_pdf_content_transform_matrix_gate/current_pdf_content_transform_matrix_gate.json",
+    "imageXobjectDictionary": "analysis_outputs/source_audit/current_pdf_image_xobject_dictionary_gate/current_pdf_image_xobject_dictionary_gate.json",
+    "pageResourceOrder": "analysis_outputs/source_audit/current_pdf_page_resource_order_gate/current_pdf_page_resource_order_gate.json",
+    "textOverlayRenderMode": "analysis_outputs/source_audit/current_pdf_text_overlay_render_mode_gate/current_pdf_text_overlay_render_mode_gate.json",
+    "sourceReviewGate": "analysis_outputs/source_audit/source_packet_source_review_gate/source_packet_source_review_gate.json",
+    "reopenTriggerMatrix": "analysis_outputs/source_audit/source_packet_reopen_trigger_matrix/source_packet_reopen_trigger_matrix.json"
+  },
+  "decision": {
+    "currentPdfPartialImagePlacementGate": "current_pdf_partial_image_placement_no_selector",
+    "selectorUnlocked": false,
+    "reason": "The only page-76 partial image placements are the duplicate lower-resolution PDFs' inset full-page raster images. They cover about 94.1% of the page, span the full page height, repeat across every article page, and carry no page-76-unique local overlay, hidden placement, visible text, special resource key, strict unit/order term, or source-backed R3 bridge. They contain O4/B4/G5/O5 only because the entire page content is inside the raster image.",
+    "nextMove": "Stop treating current-PDF partial placements as original-layout evidence. The next useful move is still source acquisition or raw clue wording that supplies transform, unit, and order, with the current scan used only as a visual comparison witness."
+  },
+  "summary": {
+    "pdfCount": 3,
+    "placementRowCount": 24,
+    "page76ImagePlacementCount": 3,
+    "page76PartialPlacementCount": 2,
+    "objectLayoutPage76PartialImagePlacementCount": 2,
+    "page76PartialSignatureGroupCount": 1,
+    "page76UniquePartialSignatureCount": 0,
+    "page76NearFullContentPartialCount": 2,
+    "page76LocalOverlayPartialCount": 0,
+    "page76AllPageRepeatingPartialGroupCount": 1,
+    "page76PartialAllFourInsideCount": 2,
+    "activeProjectionInsideCount": 8,
+    "activeProjectionRowCount": 8,
+    "activeInsideRatio": 1.0,
+    "partialCoverageMin": 0.941176,
+    "partialCoverageMax": 0.941176,
+    "strictHitCount": 0,
+    "imageSpecialKeyRowCount": 0,
+    "pageSpecialKeyRowCount": 0,
+    "visiblePaintedTextSpanCount": 0,
+    "sourceBackedR3BridgeHitCount": 0,
+    "satisfiedReopenTriggerCount": 0,
+    "triggerCount": 9,
+    "selectorUnlockCount": 0
+  },
+  "partialPlacementRows": [
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "pdfPage": 4,
+      "articlePage": 76,
+      "pageXref": 8,
+      "rotation": 0,
+      "imageXref": 59,
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "imageRect": [
+        18.0,
+        0.0,
+        594.0,
+        792.0
+      ],
+      "rectNorm": [
+        0.029412,
+        0.0,
+        0.970588,
+        1.0
+      ],
+      "pageCoverage": 0.941176,
+      "widthFraction": 0.941176,
+      "heightFraction": 1.0,
+      "partialImagePlacement": true,
+      "fullBleedPlacement": false,
+      "nearFullContentPlacement": true,
+      "localOverlayCandidate": false,
+      "placementSignatureHash16": "44457cac6c6c0591",
+      "signatureRecordCount": 16,
+      "signatureArticlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "signaturePdfs": [
+        "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "keyser bitcoin .pdf"
+      ],
+      "signatureRepeatsEveryPageInPdfSet": true,
+      "page76UniquePartialSignature": false
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "pdfPage": 4,
+      "articlePage": 76,
+      "pageXref": 8,
+      "rotation": 0,
+      "imageXref": 59,
+      "imageSize": [
+        2040,
+        2805
+      ],
+      "pageRect": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "imageRect": [
+        18.0,
+        0.0,
+        594.0,
+        792.0
+      ],
+      "rectNorm": [
+        0.029412,
+        0.0,
+        0.970588,
+        1.0
+      ],
+      "pageCoverage": 0.941176,
+      "widthFraction": 0.941176,
+      "heightFraction": 1.0,
+      "partialImagePlacement": true,
+      "fullBleedPlacement": false,
+      "nearFullContentPlacement": true,
+      "localOverlayCandidate": false,
+      "placementSignatureHash16": "44457cac6c6c0591",
+      "signatureRecordCount": 16,
+      "signatureArticlePages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "signaturePdfs": [
+        "analysis_outputs/external_clues/google_drive_article_download.pdf",
+        "keyser bitcoin .pdf"
+      ],
+      "signatureRepeatsEveryPageInPdfSet": true,
+      "page76UniquePartialSignature": false
+    }
+  ],
+  "activeProjectionRows": [
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "pdfPage": 4,
+      "articlePage": 76,
+      "imageXref": 59,
+      "targetId": "buying_dip",
+      "targetLabel": "O4 buying the dip",
+      "targetPhrase": "buying the dip",
+      "projectedPageBox": [
+        320.037736,
+        528.242647,
+        425.773585,
+        539.889706
+      ],
+      "coverageInsidePlacement": 1.0,
+      "insidePlacement": true
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "pdfPage": 4,
+      "articlePage": 76,
+      "imageXref": 59,
+      "targetId": "one_billion",
+      "targetLabel": "B4 $1 billion",
+      "targetPhrase": "$1 billion",
+      "projectedPageBox": [
+        114.90566,
+        581.867647,
+        174.45283,
+        593.272059
+      ],
+      "coverageInsidePlacement": 1.0,
+      "insidePlacement": true
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "pdfPage": 4,
+      "articlePage": 76,
+      "imageXref": 59,
+      "targetId": "volcano_bonds",
+      "targetLabel": "G5 Volcano Bonds",
+      "targetPhrase": "Volcano Bonds",
+      "projectedPageBox": [
+        198.0,
+        617.294118,
+        288.792453,
+        628.941176
+      ],
+      "coverageInsidePlacement": 1.0,
+      "insidePlacement": true
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "pdfPage": 4,
+      "articlePage": 76,
+      "imageXref": 59,
+      "targetId": "shitcoiner_heart",
+      "targetLabel": "O5 shitcoiner at heart",
+      "targetPhrase": "shitcoiner at heart",
+      "projectedPageBox": [
+        253.471698,
+        711.441176,
+        394.075472,
+        723.573529
+      ],
+      "coverageInsidePlacement": 1.0,
+      "insidePlacement": true
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "pdfPage": 4,
+      "articlePage": 76,
+      "imageXref": 59,
+      "targetId": "buying_dip",
+      "targetLabel": "O4 buying the dip",
+      "targetPhrase": "buying the dip",
+      "projectedPageBox": [
+        320.037736,
+        528.242647,
+        425.773585,
+        539.889706
+      ],
+      "coverageInsidePlacement": 1.0,
+      "insidePlacement": true
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "pdfPage": 4,
+      "articlePage": 76,
+      "imageXref": 59,
+      "targetId": "one_billion",
+      "targetLabel": "B4 $1 billion",
+      "targetPhrase": "$1 billion",
+      "projectedPageBox": [
+        114.90566,
+        581.867647,
+        174.45283,
+        593.272059
+      ],
+      "coverageInsidePlacement": 1.0,
+      "insidePlacement": true
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "pdfPage": 4,
+      "articlePage": 76,
+      "imageXref": 59,
+      "targetId": "volcano_bonds",
+      "targetLabel": "G5 Volcano Bonds",
+      "targetPhrase": "Volcano Bonds",
+      "projectedPageBox": [
+        198.0,
+        617.294118,
+        288.792453,
+        628.941176
+      ],
+      "coverageInsidePlacement": 1.0,
+      "insidePlacement": true
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "pdfPage": 4,
+      "articlePage": 76,
+      "imageXref": 59,
+      "targetId": "shitcoiner_heart",
+      "targetLabel": "O5 shitcoiner at heart",
+      "targetPhrase": "shitcoiner at heart",
+      "projectedPageBox": [
+        253.471698,
+        711.441176,
+        394.075472,
+        723.573529
+      ],
+      "coverageInsidePlacement": 1.0,
+      "insidePlacement": true
+    }
+  ],
+  "pdfRows": [
+    {
+      "pdf": "magazine.pdf",
+      "pageCount": 8,
+      "imageRows": [
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 1,
+          "articlePage": 73,
+          "pageXref": 3,
+          "rotation": 180,
+          "imageXref": 16,
+          "imageSize": [
+            2544,
+            3264
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            610.559998,
+            783.359985
+          ],
+          "imageRect": [
+            0.0,
+            0.0,
+            610.559998,
+            783.359985
+          ],
+          "rectNorm": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "pageCoverage": 1.0,
+          "widthFraction": 1.0,
+          "heightFraction": 1.0,
+          "partialImagePlacement": false,
+          "fullBleedPlacement": true,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "ca72f18e7f62f8e3"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "pageXref": 4,
+          "rotation": 180,
+          "imageXref": 23,
+          "imageSize": [
+            2544,
+            3264
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            610.559998,
+            783.359985
+          ],
+          "imageRect": [
+            0.0,
+            0.0,
+            610.559998,
+            783.359985
+          ],
+          "rectNorm": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "pageCoverage": 1.0,
+          "widthFraction": 1.0,
+          "heightFraction": 1.0,
+          "partialImagePlacement": false,
+          "fullBleedPlacement": true,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "ca72f18e7f62f8e3"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 3,
+          "articlePage": 75,
+          "pageXref": 5,
+          "rotation": 180,
+          "imageXref": 30,
+          "imageSize": [
+            2544,
+            3264
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            610.559998,
+            783.359985
+          ],
+          "imageRect": [
+            0.0,
+            0.0,
+            610.559998,
+            783.359985
+          ],
+          "rectNorm": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "pageCoverage": 1.0,
+          "widthFraction": 1.0,
+          "heightFraction": 1.0,
+          "partialImagePlacement": false,
+          "fullBleedPlacement": true,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "ca72f18e7f62f8e3"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "pageXref": 6,
+          "rotation": 180,
+          "imageXref": 37,
+          "imageSize": [
+            2544,
+            3264
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            610.559998,
+            783.359985
+          ],
+          "imageRect": [
+            0.0,
+            0.0,
+            610.559998,
+            783.359985
+          ],
+          "rectNorm": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "pageCoverage": 1.0,
+          "widthFraction": 1.0,
+          "heightFraction": 1.0,
+          "partialImagePlacement": false,
+          "fullBleedPlacement": true,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "ca72f18e7f62f8e3"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 5,
+          "articlePage": 77,
+          "pageXref": 7,
+          "rotation": 180,
+          "imageXref": 44,
+          "imageSize": [
+            2544,
+            3264
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            610.559998,
+            783.359985
+          ],
+          "imageRect": [
+            0.0,
+            0.0,
+            610.559998,
+            783.359985
+          ],
+          "rectNorm": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "pageCoverage": 1.0,
+          "widthFraction": 1.0,
+          "heightFraction": 1.0,
+          "partialImagePlacement": false,
+          "fullBleedPlacement": true,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "ca72f18e7f62f8e3"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "pageXref": 8,
+          "rotation": 180,
+          "imageXref": 51,
+          "imageSize": [
+            2544,
+            3264
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            610.559998,
+            783.359985
+          ],
+          "imageRect": [
+            0.0,
+            0.0,
+            610.559998,
+            783.359985
+          ],
+          "rectNorm": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "pageCoverage": 1.0,
+          "widthFraction": 1.0,
+          "heightFraction": 1.0,
+          "partialImagePlacement": false,
+          "fullBleedPlacement": true,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "ca72f18e7f62f8e3"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 7,
+          "articlePage": 79,
+          "pageXref": 9,
+          "rotation": 180,
+          "imageXref": 58,
+          "imageSize": [
+            2544,
+            3264
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            610.559998,
+            783.359985
+          ],
+          "imageRect": [
+            0.0,
+            0.0,
+            610.559998,
+            783.359985
+          ],
+          "rectNorm": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "pageCoverage": 1.0,
+          "widthFraction": 1.0,
+          "heightFraction": 1.0,
+          "partialImagePlacement": false,
+          "fullBleedPlacement": true,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "ca72f18e7f62f8e3"
+        },
+        {
+          "pdf": "magazine.pdf",
+          "pdfPage": 8,
+          "articlePage": 80,
+          "pageXref": 10,
+          "rotation": 180,
+          "imageXref": 65,
+          "imageSize": [
+            2544,
+            3264
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            610.559998,
+            783.359985
+          ],
+          "imageRect": [
+            0.0,
+            0.0,
+            610.559998,
+            783.359985
+          ],
+          "rectNorm": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "pageCoverage": 1.0,
+          "widthFraction": 1.0,
+          "heightFraction": 1.0,
+          "partialImagePlacement": false,
+          "fullBleedPlacement": true,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "ca72f18e7f62f8e3"
+        }
+      ]
+    },
+    {
+      "pdf": "keyser bitcoin .pdf",
+      "pageCount": 8,
+      "imageRows": [
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 1,
+          "articlePage": 73,
+          "pageXref": 5,
+          "rotation": 0,
+          "imageXref": 53,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "rectNorm": [
+            0.029412,
+            0.0,
+            0.970588,
+            1.0
+          ],
+          "pageCoverage": 0.941176,
+          "widthFraction": 0.941176,
+          "heightFraction": 1.0,
+          "partialImagePlacement": true,
+          "fullBleedPlacement": false,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "44457cac6c6c0591"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "pageXref": 6,
+          "rotation": 0,
+          "imageXref": 55,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "rectNorm": [
+            0.029412,
+            0.0,
+            0.970588,
+            1.0
+          ],
+          "pageCoverage": 0.941176,
+          "widthFraction": 0.941176,
+          "heightFraction": 1.0,
+          "partialImagePlacement": true,
+          "fullBleedPlacement": false,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "44457cac6c6c0591"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 3,
+          "articlePage": 75,
+          "pageXref": 7,
+          "rotation": 0,
+          "imageXref": 57,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "rectNorm": [
+            0.029412,
+            0.0,
+            0.970588,
+            1.0
+          ],
+          "pageCoverage": 0.941176,
+          "widthFraction": 0.941176,
+          "heightFraction": 1.0,
+          "partialImagePlacement": true,
+          "fullBleedPlacement": false,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "44457cac6c6c0591"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "pageXref": 8,
+          "rotation": 0,
+          "imageXref": 59,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "rectNorm": [
+            0.029412,
+            0.0,
+            0.970588,
+            1.0
+          ],
+          "pageCoverage": 0.941176,
+          "widthFraction": 0.941176,
+          "heightFraction": 1.0,
+          "partialImagePlacement": true,
+          "fullBleedPlacement": false,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "44457cac6c6c0591",
+          "signatureRecordCount": 16,
+          "signatureArticlePages": [
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80
+          ],
+          "signaturePdfs": [
+            "analysis_outputs/external_clues/google_drive_article_download.pdf",
+            "keyser bitcoin .pdf"
+          ],
+          "signatureRepeatsEveryPageInPdfSet": true,
+          "page76UniquePartialSignature": false
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 5,
+          "articlePage": 77,
+          "pageXref": 9,
+          "rotation": 0,
+          "imageXref": 61,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "rectNorm": [
+            0.029412,
+            0.0,
+            0.970588,
+            1.0
+          ],
+          "pageCoverage": 0.941176,
+          "widthFraction": 0.941176,
+          "heightFraction": 1.0,
+          "partialImagePlacement": true,
+          "fullBleedPlacement": false,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "44457cac6c6c0591"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "pageXref": 10,
+          "rotation": 0,
+          "imageXref": 63,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "rectNorm": [
+            0.029412,
+            0.0,
+            0.970588,
+            1.0
+          ],
+          "pageCoverage": 0.941176,
+          "widthFraction": 0.941176,
+          "heightFraction": 1.0,
+          "partialImagePlacement": true,
+          "fullBleedPlacement": false,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "44457cac6c6c0591"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 7,
+          "articlePage": 79,
+          "pageXref": 11,
+          "rotation": 0,
+          "imageXref": 65,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "rectNorm": [
+            0.029412,
+            0.0,
+            0.970588,
+            1.0
+          ],
+          "pageCoverage": 0.941176,
+          "widthFraction": 0.941176,
+          "heightFraction": 1.0,
+          "partialImagePlacement": true,
+          "fullBleedPlacement": false,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "44457cac6c6c0591"
+        },
+        {
+          "pdf": "keyser bitcoin .pdf",
+          "pdfPage": 8,
+          "articlePage": 80,
+          "pageXref": 12,
+          "rotation": 0,
+          "imageXref": 67,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "rectNorm": [
+            0.029412,
+            0.0,
+            0.970588,
+            1.0
+          ],
+          "pageCoverage": 0.941176,
+          "widthFraction": 0.941176,
+          "heightFraction": 1.0,
+          "partialImagePlacement": true,
+          "fullBleedPlacement": false,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "44457cac6c6c0591"
+        }
+      ]
+    },
+    {
+      "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+      "pageCount": 8,
+      "imageRows": [
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 1,
+          "articlePage": 73,
+          "pageXref": 5,
+          "rotation": 0,
+          "imageXref": 53,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "rectNorm": [
+            0.029412,
+            0.0,
+            0.970588,
+            1.0
+          ],
+          "pageCoverage": 0.941176,
+          "widthFraction": 0.941176,
+          "heightFraction": 1.0,
+          "partialImagePlacement": true,
+          "fullBleedPlacement": false,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "44457cac6c6c0591"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 2,
+          "articlePage": 74,
+          "pageXref": 6,
+          "rotation": 0,
+          "imageXref": 55,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "rectNorm": [
+            0.029412,
+            0.0,
+            0.970588,
+            1.0
+          ],
+          "pageCoverage": 0.941176,
+          "widthFraction": 0.941176,
+          "heightFraction": 1.0,
+          "partialImagePlacement": true,
+          "fullBleedPlacement": false,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "44457cac6c6c0591"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 3,
+          "articlePage": 75,
+          "pageXref": 7,
+          "rotation": 0,
+          "imageXref": 57,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "rectNorm": [
+            0.029412,
+            0.0,
+            0.970588,
+            1.0
+          ],
+          "pageCoverage": 0.941176,
+          "widthFraction": 0.941176,
+          "heightFraction": 1.0,
+          "partialImagePlacement": true,
+          "fullBleedPlacement": false,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "44457cac6c6c0591"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 4,
+          "articlePage": 76,
+          "pageXref": 8,
+          "rotation": 0,
+          "imageXref": 59,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "rectNorm": [
+            0.029412,
+            0.0,
+            0.970588,
+            1.0
+          ],
+          "pageCoverage": 0.941176,
+          "widthFraction": 0.941176,
+          "heightFraction": 1.0,
+          "partialImagePlacement": true,
+          "fullBleedPlacement": false,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "44457cac6c6c0591",
+          "signatureRecordCount": 16,
+          "signatureArticlePages": [
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80
+          ],
+          "signaturePdfs": [
+            "analysis_outputs/external_clues/google_drive_article_download.pdf",
+            "keyser bitcoin .pdf"
+          ],
+          "signatureRepeatsEveryPageInPdfSet": true,
+          "page76UniquePartialSignature": false
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 5,
+          "articlePage": 77,
+          "pageXref": 9,
+          "rotation": 0,
+          "imageXref": 61,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "rectNorm": [
+            0.029412,
+            0.0,
+            0.970588,
+            1.0
+          ],
+          "pageCoverage": 0.941176,
+          "widthFraction": 0.941176,
+          "heightFraction": 1.0,
+          "partialImagePlacement": true,
+          "fullBleedPlacement": false,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "44457cac6c6c0591"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 6,
+          "articlePage": 78,
+          "pageXref": 10,
+          "rotation": 0,
+          "imageXref": 63,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "rectNorm": [
+            0.029412,
+            0.0,
+            0.970588,
+            1.0
+          ],
+          "pageCoverage": 0.941176,
+          "widthFraction": 0.941176,
+          "heightFraction": 1.0,
+          "partialImagePlacement": true,
+          "fullBleedPlacement": false,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "44457cac6c6c0591"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 7,
+          "articlePage": 79,
+          "pageXref": 11,
+          "rotation": 0,
+          "imageXref": 65,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "rectNorm": [
+            0.029412,
+            0.0,
+            0.970588,
+            1.0
+          ],
+          "pageCoverage": 0.941176,
+          "widthFraction": 0.941176,
+          "heightFraction": 1.0,
+          "partialImagePlacement": true,
+          "fullBleedPlacement": false,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "44457cac6c6c0591"
+        },
+        {
+          "pdf": "analysis_outputs/external_clues/google_drive_article_download.pdf",
+          "pdfPage": 8,
+          "articlePage": 80,
+          "pageXref": 12,
+          "rotation": 0,
+          "imageXref": 67,
+          "imageSize": [
+            2040,
+            2805
+          ],
+          "pageRect": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "imageRect": [
+            18.0,
+            0.0,
+            594.0,
+            792.0
+          ],
+          "rectNorm": [
+            0.029412,
+            0.0,
+            0.970588,
+            1.0
+          ],
+          "pageCoverage": 0.941176,
+          "widthFraction": 0.941176,
+          "heightFraction": 1.0,
+          "partialImagePlacement": true,
+          "fullBleedPlacement": false,
+          "nearFullContentPlacement": true,
+          "localOverlayCandidate": false,
+          "placementSignatureHash16": "44457cac6c6c0591"
+        }
+      ]
+    }
+  ],
+  "fingerprint": "p76Partial=2|partialGroups=1|uniqueP76Partial=0|nearFull=2|localPartial=0|allPageGroups=1|allFourInside=2|activeInside=8/8|strict=0|special=0|visible=0|sourceR3=0|triggers=0/9|selectors=0",
+  "sheet": "analysis_outputs/source_audit/current_pdf_partial_image_placement_gate/current_pdf_partial_image_placement_gate_sheet.jpg"
+}
