@@ -276,6 +276,7 @@ kbd,
   font-size: 15px;
   line-height: 1.65;
   max-width: none;
+  margin-top: 30px;
 }
 .founder-story > span,
 .founder-story > strong {
@@ -283,6 +284,20 @@ kbd,
 }
 .hero-discord {
   min-height: 44px;
+}
+.hero-claim {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 19px;
+  font-size: 12px;
+  color: #b6c1a4;
+}
+.hero-claim strong {
+  font-weight: 500;
+  color: var(--paper);
+  padding: 3px 7px;
+  border: 1px solid #58634b;
 }
 .hero-actions {
   display: flex;
@@ -347,12 +362,13 @@ kbd,
 .hero-exhibit {
   position: relative;
   width: 83%;
-  height: 510px;
-  max-height: calc(42vw + 40px);
+  height: auto;
+  aspect-ratio: 2544 / 3264;
+  max-width: 444px;
   padding: 0;
   border: 0;
   background: var(--paper);
-  transform: rotate(5deg);
+  transform: rotate(2deg);
   box-shadow:
     22px 25px 0 #31382a,
     0 25px 70px #0008;
@@ -365,24 +381,8 @@ kbd,
 .hero-exhibit > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: top;
-}
-.exhibit-hint {
-  position: absolute;
-  bottom: 13px;
-  left: 13px;
-  right: 13px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 11px 13px;
-  background: var(--ink);
-  color: var(--lime);
-  font: 9px var(--mono);
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  border: 1px solid #d6ff3c40;
 }
 .hero-visual:before,
 .hero-visual:after {
@@ -426,6 +426,19 @@ kbd,
   line-height: 1.6;
   letter-spacing: 1px;
   color: #aab39e;
+}
+.visual-caption button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 0;
+  border: 0;
+  background: transparent;
+  color: var(--paper);
+  font: inherit;
+}
+.visual-caption button:hover {
+  color: var(--lime);
 }
 .project-seal {
   width: 78px;
@@ -1020,6 +1033,14 @@ h2 {
   font-size: 13px;
   color: #65745a;
 }
+.show-all-methods {
+  display: none;
+}
+.vault-start-label {
+  font: 12px var(--mono);
+  margin: 24px 0 15px;
+  color: #59634b;
+}
 .empty-state a {
   text-decoration: underline;
 }
@@ -1277,7 +1298,8 @@ h2 {
   border-color: var(--ink);
 }
 .token-section {
-  background: var(--lime);
+  background: #e9ebdf;
+  border-top: 1px solid var(--line);
   position: relative;
 }
 .token-section .section {
@@ -1285,7 +1307,7 @@ h2 {
   padding-bottom: 50px;
 }
 .token-section .section-label i {
-  background: #849c29;
+  background: var(--line);
 }
 .token-layout {
   display: grid;
@@ -1296,7 +1318,9 @@ h2 {
 .token-ticker {
   font-size: 14px;
   letter-spacing: -0.3px;
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
   margin-bottom: 23px;
 }
 .token-layout h2 {
@@ -1319,6 +1343,7 @@ h2 {
   font-size: 8px;
   letter-spacing: 0.6px;
   margin-top: 25px;
+  background: var(--lime);
 }
 .launch-status > span {
   width: 5px;
@@ -1329,7 +1354,7 @@ h2 {
   display: flex;
   gap: 20px;
   padding: 22px 0;
-  border-bottom: 1px solid #9ab62b;
+  border-bottom: 1px solid var(--line);
 }
 .funding-plan > div:first-child {
   padding-top: 0;
@@ -1339,8 +1364,8 @@ h2 {
   padding-top: 6px;
 }
 .funding-plan h3 {
-  font-size: 23px;
-  letter-spacing: -0.8px;
+  font-size: 20px;
+  letter-spacing: -0.4px;
 }
 .funding-plan p {
   font-size: 12px;
@@ -1351,7 +1376,7 @@ h2 {
 .token-bottom {
   display: grid;
   grid-template-columns: 1fr auto;
-  border-top: 1px solid #899f37;
+  border-top: 1px solid var(--line);
   margin-top: 43px;
   padding-top: 24px;
   gap: 22px;
@@ -1508,7 +1533,7 @@ h2 {
     min-height: 750px;
   }
   .hero-exhibit {
-    height: 570px;
+    height: auto;
   }
 }
 @media (max-width: 1050px) {
@@ -1520,7 +1545,7 @@ h2 {
     font-size: 10vw;
   }
   .hero-exhibit {
-    height: 450px;
+    height: auto;
     width: 88%;
     max-height: none;
   }
@@ -1667,6 +1692,7 @@ h2 {
   }
   .hero-description.founder-story {
     font-size: 14px;
+    margin-top: 24px;
   }
   .hero-actions {
     margin-top: 25px;
@@ -1688,9 +1714,9 @@ h2 {
     min-height: 490px;
   }
   .hero-exhibit {
-    width: 76%;
-    height: 370px;
-    max-height: 480px;
+    width: 100%;
+    height: auto;
+    max-height: none;
     box-shadow:
       16px 17px 0 #31382a,
       0 20px 40px #0005;
@@ -1915,6 +1941,18 @@ h2 {
   }
   .method-number {
     font-size: 8px;
+  }
+  .ledger-condensed .method-row:nth-of-type(n + 6) {
+    display: none;
+  }
+  .show-all-methods {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border: 1px solid var(--line);
+    padding: 16px;
+    margin-top: 16px;
+    font-size: 12px;
   }
   .method-row > summary > p {
     grid-column: 1/-1;
@@ -2277,4 +2315,48 @@ h2 {
   font-size: 10px;
   margin-top: 22px;
   line-height: 1.7;
+}
+
+/* Keep source labels, evidence and funding terms readable on small screens. */
+.hero-topline,
+.hero-kicker,
+.visual-corner,
+.visual-caption,
+.hero-bottom > div > span:first-child,
+.hero-bottom > a > span,
+.section-label,
+.clue-meta,
+.pill,
+.clue-source,
+.update-kicker,
+.method-number,
+.method-detail h4,
+.method-detail p,
+.method-detail li,
+.method-detail pre,
+.evidence-link,
+.file-name small,
+.file-type,
+.file-size,
+.discord-room-label,
+.launch-status,
+.funding-number,
+.token-bottom .mono,
+.token-bottom > p,
+.funding-receipts summary > span,
+.funding-receipts p,
+.funding-receipts > .text-link,
+.launch-kit-link,
+.footer-small {
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+.hero-topline {
+  line-height: 1.5;
+}
+.section-label {
+  letter-spacing: 0.4px;
+}
+.funding-receipts {
+  border-color: var(--line);
 }

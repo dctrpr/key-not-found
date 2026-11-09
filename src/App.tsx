@@ -73,6 +73,14 @@ type Project = {
 const REPO = "https://github.com/dctrpr/key-not-found";
 const DISCORD = "https://discord.gg/ZZK6DuADS";
 const ARCHIVE = "/downloads/key404-casefile.zip";
+const START_FILES: Record<string, string> = {
+  "sources/creator-clues.json": "Read the creator’s clues",
+  "sources/printed-lines.json": "Inspect the exact printed lines",
+  "experiments.json": "See what has been tried",
+  "REPRODUCE.md": "Run an experiment yourself",
+  "README.md": "Read the case overview",
+};
+const startFileOrder = Object.keys(START_FILES);
 const researchPath = (path: string) =>
   "/research/" + path.split("/").map(encodeURIComponent).join("/");
 const formatBytes = (bytes: number) =>
@@ -134,9 +142,10 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [ledgerFilter, setLedgerFilter] = useState("all");
   const [ledgerSearch, setLedgerSearch] = useState("");
+  const [showAllMethods, setShowAllMethods] = useState(false);
   const [fileSearch, setFileSearch] = useState("");
   const [fileFilter, setFileFilter] = useState("all");
-  const [fileLimit, setFileLimit] = useState(16);
+  const [fileLimit, setFileLimit] = useState(5);
   const [toast, setToast] = useState("");
   const [selectedPage, setSelectedPage] = useState<number | null>(null);
   const [activeUpdate, setActiveUpdate] = useState(0);
@@ -212,23 +221,30 @@ function App() {
   );
   const visibleFiles = useMemo(
     () =>
-      (files.data?.files || []).filter((file) => {
-        const category = file.category.toLowerCase();
-        const matches =
-          fileFilter === "all" ||
-          (fileFilter === "code"
-            ? /code|script/.test(category) ||
-              /\.(py|js|ts|html)$/.test(file.path)
-            : fileFilter === "sources"
-              ? /source|clue/.test(category) || file.path.startsWith("sources/")
-              : /report|analysis|result|data/.test(category));
-        return (
-          matches &&
-          (file.path + " " + file.description)
-            .toLowerCase()
-            .includes(fileSearch.toLowerCase())
-        );
-      }),
+      (files.data?.files || [])
+        .filter((file) => {
+          const category = file.category.toLowerCase();
+          const matches =
+            fileFilter === "all" ||
+            (fileFilter === "code"
+              ? /code|script/.test(category) ||
+                /\.(py|js|ts|html)$/.test(file.path)
+              : fileFilter === "sources"
+                ? /source|clue/.test(category) ||
+                  file.path.startsWith("sources/")
+                : /report|analysis|result|data/.test(category));
+          return (
+            matches &&
+            (file.path + " " + file.description)
+              .toLowerCase()
+              .includes(fileSearch.toLowerCase())
+          );
+        })
+        .sort((a, b) => {
+          const aIndex = startFileOrder.indexOf(a.path);
+          const bIndex = startFileOrder.indexOf(b.path);
+          return (aIndex < 0 ? 99 : aIndex) - (bIndex < 0 ? 99 : bIndex);
+        }),
     [files.data, fileSearch, fileFilter],
   );
 
@@ -291,7 +307,7 @@ function App() {
           </div>
           <div className="hero-main">
             <div className="hero-copy">
-              <p className="hero-kicker">ONE MAGAZINE. A CLAIMED 20 BTC.</p>
+              <p className="hero-kicker">MAX KEISER’S MAGAZINE PUZZLE</p>
               <h1>
                 KEY NOT
                 <br />
@@ -299,15 +315,15 @@ function App() {
                   FOUND<span className="hero-period">.</span>
                 </span>
               </h1>
-              <p className="hero-deck">
-                The key is missing.
-                <br />
-                The work is public.
-              </p>
               <p className="hero-description founder-story">
                 <span>I found Max Keiser’s puzzle in 2023.</span>
                 <span>I’ve been working on it ever since.</span>
                 <strong>Now, let’s find the key together.</strong>
+              </p>
+              <p className="hero-claim">
+                <span>20 BTC claim</span>
+                <span>by Max Keiser</span>
+                <strong>Unverified</strong>
               </p>
               <div className="hero-actions">
                 <a className="button button-lime" href="#case">
@@ -338,23 +354,12 @@ function App() {
                   height="3264"
                   fetchPriority="high"
                 />
-                <span className="exhibit-hint">
-                  Inspect the original <ArrowUpRight size={13} />
-                </span>
               </button>
               <div className="visual-caption">
-                <span>
-                  ONE MAGAZINE.
-                  <br />
-                  ONE UNFINISHED QUESTION.
-                </span>
-                <img
-                  className="project-seal"
-                  src="/assets/key404-emblem.png"
-                  alt="KEY404 project emblem"
-                  width="100"
-                  height="100"
-                />
+                <button onClick={() => setSelectedPage(73)}>
+                  Inspect the original <ArrowUpRight size={15} />
+                </button>
+                <span>ISSUE 24 · P.73</span>
               </div>
             </div>
           </div>
@@ -672,7 +677,14 @@ function App() {
               />
             </label>
           </div>
-          <div className="ledger-table">
+          <div
+            className={
+              "ledger-table" +
+              (!showAllMethods && ledgerFilter === "all" && !ledgerSearch
+                ? " ledger-condensed"
+                : "")
+            }
+          >
             <div className="ledger-heading">
               <span>STATUS / METHOD</span>
               <span>WHAT WE LEARNED</span>
@@ -750,6 +762,17 @@ function App() {
               </div>
             )}
           </div>
+          {!showAllMethods &&
+            ledgerFilter === "all" &&
+            !ledgerSearch &&
+            methods.length > 5 && (
+              <button
+                className="show-all-methods text-link"
+                onClick={() => setShowAllMethods(true)}
+              >
+                Show all {methods.length} methods <ArrowDown size={16} />
+              </button>
+            )}
           <div className="ledger-bottom">
             <span>AN EMPTY RESULT IS STILL A RESULT.</span>
             <a
@@ -811,7 +834,7 @@ function App() {
                     className={fileFilter === value ? "active" : ""}
                     onClick={() => {
                       setFileFilter(value);
-                      setFileLimit(16);
+                      setFileLimit(value === "all" && !fileSearch ? 5 : 16);
                     }}
                     aria-pressed={fileFilter === value}
                   >
@@ -828,12 +851,17 @@ function App() {
                   value={fileSearch}
                   onChange={(event) => {
                     setFileSearch(event.target.value);
-                    setFileLimit(16);
+                    setFileLimit(event.target.value ? 16 : 5);
                   }}
                 />
                 <kbd>⌘ K</kbd>
               </label>
             </div>
+            {!fileSearch && fileFilter === "all" && fileLimit === 5 && (
+              <p className="vault-start-label">
+                NEW TO THE CASE? START WITH THESE FIVE.
+              </p>
+            )}
             <div className="file-list">
               {visibleFiles.slice(0, fileLimit).map((file) => (
                 <a
@@ -851,10 +879,14 @@ function App() {
                     )}
                   </span>
                   <span className="file-name">
-                    <strong>{file.path.split("/").pop()}</strong>
+                    <strong>
+                      {START_FILES[file.path] || file.path.split("/").pop()}
+                    </strong>
                     <small>
-                      {file.path.split("/").slice(0, -1).join("/") ||
-                        "Corpus root"}
+                      {START_FILES[file.path]
+                        ? file.path
+                        : file.path.split("/").slice(0, -1).join("/") ||
+                          "Corpus root"}
                     </small>
                   </span>
                   <span className="file-type">
@@ -1003,7 +1035,16 @@ function App() {
             <SectionLabel index="07">KEEP THE SEARCH ALIVE</SectionLabel>
             <div className="token-layout">
               <div>
-                <span className="token-ticker">$KEY404</span>
+                <span className="token-ticker">
+                  <img
+                    src="/assets/key404-emblem.png"
+                    alt="KEY404 emblem"
+                    width="42"
+                    height="42"
+                    loading="lazy"
+                  />
+                  $KEY404
+                </span>
                 <h2>
                   The mystery keeps going.
                   <br />
@@ -1045,7 +1086,7 @@ function App() {
                 <div>
                   <span className="funding-number">03</span>
                   <div>
-                    <h3>Recovered BTC → buybacks</h3>
+                    <h3>If we recover the BTC</h3>
                     <p>
                       If this project actually recovers the claimed prize, the
                       stated intention is to use 100% of the recovered BTC for
