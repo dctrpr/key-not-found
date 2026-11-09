@@ -171,6 +171,9 @@ kbd,
 .site-header nav a:hover {
   color: var(--lime);
 }
+.nav-community-actions {
+  display: none;
+}
 .header-github {
   display: flex;
   align-items: center;
@@ -184,6 +187,10 @@ kbd,
   border: 0;
   color: var(--paper);
   padding: 8px;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
 }
 .hero {
   color: var(--paper);
@@ -298,6 +305,11 @@ kbd,
   color: var(--paper);
   padding: 3px 7px;
   border: 1px solid #58634b;
+}
+.hero-qualification {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #b6c1a4;
 }
 .hero-actions {
   display: flex;
@@ -498,20 +510,43 @@ kbd,
 .diagonal-arrow {
   transform: rotate(45deg);
 }
-.running-strip {
+.how-to-help {
+  display: grid;
+  grid-template-columns: 0.7fr repeat(3, 1fr);
+  align-items: stretch;
   background: var(--lime);
-  display: flex;
-  gap: 42px;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 11px;
-  letter-spacing: 1.2px;
-  height: 45px;
-  align-items: center;
-  justify-content: center;
+  padding: 0 clamp(22px, 4vw, 76px);
 }
-.running-strip span:nth-child(even) {
-  font-size: 22px;
+.how-to-help > span {
+  display: flex;
+  align-items: center;
+  font: 12px var(--mono);
+  padding: 18px 0;
+}
+.how-to-help > a,
+.how-to-help > button {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 66px;
+  padding: 15px 20px;
+  border: 0;
+  border-left: 1px solid #11130f30;
+  background: transparent;
+  color: var(--ink);
+  font-size: 13px;
+  text-align: left;
+}
+.how-to-help > a:hover,
+.how-to-help > button:hover {
+  background: #ffffff25;
+}
+.how-to-help > :is(a, button) > span {
+  font: 12px var(--mono);
+}
+.how-to-help svg {
+  margin-left: auto;
+  flex-shrink: 0;
 }
 .section {
   max-width: 1440px;
@@ -807,6 +842,17 @@ h2 {
   font-size: 13px;
   line-height: 1.9;
   color: #c1ccb5;
+}
+.update-process a {
+  color: var(--paper);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.updates-overview > .log-origin {
+  font-size: 12px;
+  border-top: 1px solid #47543c;
+  padding-top: 16px;
+  margin-top: 20px;
 }
 .timeline-header {
   display: flex;
@@ -1355,6 +1401,17 @@ h2 {
   gap: 85px;
   align-items: start;
 }
+.token-layout .launch-status {
+  display: flex;
+  width: fit-content;
+  margin: 0 0 23px;
+}
+.token-unlaunched-note {
+  font-size: 12px;
+  color: #59634b;
+  max-width: 280px;
+  line-height: 1.6;
+}
 .token-ticker {
   font-size: 14px;
   letter-spacing: -0.3px;
@@ -1691,6 +1748,39 @@ h2 {
   .site-header nav.nav-open {
     display: flex;
   }
+  .site-header nav {
+    gap: 4px;
+    padding: 16px 24px;
+  }
+  .site-header nav > a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  .nav-community-actions {
+    display: flex;
+    gap: 16px;
+    border-top: 1px solid #4a563d;
+    margin-top: 8px;
+    padding-top: 10px;
+  }
+  .nav-community-actions :is(button, a) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 44px;
+    padding: 8px 16px;
+    border: 1px solid #657354;
+    background: transparent;
+    color: var(--paper);
+    font-size: 13px;
+  }
+  .header-github {
+    min-width: 44px;
+    min-height: 44px;
+    justify-content: center;
+  }
   .hero {
     padding: 22px 22px 0;
   }
@@ -1819,6 +1909,19 @@ h2 {
     height: 38px;
     font-size: 9px;
     gap: 25px;
+  }
+  .how-to-help {
+    grid-template-columns: 1fr;
+  }
+  .how-to-help > span {
+    padding: 18px 0 10px;
+  }
+  .how-to-help > a,
+  .how-to-help > button {
+    min-height: 52px;
+    padding: 14px 0;
+    border-left: 0;
+    border-top: 1px solid #11130f30;
   }
   .section {
     padding: 61px 22px;

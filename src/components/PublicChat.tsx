@@ -58,8 +58,11 @@ export default function PublicChat({
       element.showModal();
     } else if (!open && element.open) {
       element.close();
-      if (opener.current?.isConnected)
-        opener.current.focus({ preventScroll: true });
+      const focusTarget =
+        opener.current?.isConnected && opener.current.getClientRects().length
+          ? opener.current
+          : launcher.current;
+      focusTarget?.focus({ preventScroll: true });
     }
   }, [open]);
 

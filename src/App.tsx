@@ -137,9 +137,11 @@ function SectionLabel({
 
 function App() {
   const project = useJson<Project>("/data/project.json");
-  const updates = useJson<{ updatedOn: string; updates: Update[] }>(
-    "/data/updates.json",
-  );
+  const updates = useJson<{
+    updatedOn: string;
+    logOpenedOn: string;
+    updates: Update[];
+  }>("/data/updates.json");
   const ledger = useJson<{ methods: Method[] }>("/research/experiments.json");
   const files = useJson<FileIndex>("/research/files.json");
   const [menuOpen, setMenuOpen] = useState(false);
@@ -157,8 +159,10 @@ function App() {
   const repo = project.data?.repository || REPO;
   const updateEntries = useMemo(
     () =>
-      [...(updates.data?.updates || [])].sort((a, b) =>
-        b.date.localeCompare(a.date),
+      [...(updates.data?.updates || [])].sort(
+        (a, b) =>
+          b.date.localeCompare(a.date) ||
+          Number(a.kind === "project") - Number(b.kind === "project"),
       ),
     [updates.data],
   );
@@ -284,15 +288,40 @@ function App() {
           aria-label="Main navigation"
           className={menuOpen ? "nav-open" : ""}
         >
-          {["Case", "Updates", "Ledger", "Files", "Community"].map((label) => (
+          {[
+            ["Case", "case"],
+            ["Updates", "updates"],
+            ["Ledger", "ledger"],
+            ["Files", "files"],
+            ["Community", "community"],
+            ["Funding", "token"],
+          ].map(([label, target]) => (
             <a
-              href={"#" + label.toLowerCase()}
+              href={"#" + target}
               key={label}
               onClick={() => setMenuOpen(false)}
             >
               {label}
             </a>
           ))}
+          <div className="nav-community-actions">
+            <button
+              onClick={() => {
+                setMenuOpen(false);
+                setChatOpen(true);
+              }}
+            >
+              Chat <MessageCircle size={16} />
+            </button>
+            <a
+              href={DISCORD}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+            >
+              Discord <ArrowUpRight size={16} />
+            </a>
+          </div>
         </nav>
         <a
           className="header-github"
@@ -325,7 +354,9 @@ function App() {
           </div>
           <div className="hero-main">
             <div className="hero-copy">
-              <p className="hero-kicker">MAX KEISER’S MAGAZINE PUZZLE</p>
+              <p className="hero-kicker">
+                Max Keiser says he hid a Bitcoin private key in this magazine.
+              </p>
               <h1>
                 KEY NOT
                 <br />
@@ -341,7 +372,10 @@ function App() {
               <p className="hero-claim">
                 <span>20 BTC claim</span>
                 <span>by Max Keiser</span>
-                <strong>Unverified</strong>
+                <strong>Prize unverified</strong>
+              </p>
+              <p className="hero-qualification">
+                No funded prize address has been authenticated.
               </p>
               <div className="hero-actions">
                 <a className="button button-lime" href="#case">
@@ -406,18 +440,29 @@ function App() {
           </div>
         </section>
 
-        <div className="running-strip" aria-hidden="true">
-          <span>FOLLOW THE CLUES</span>
-          <span>✳</span>
-          <span>REPRODUCE THE WORK</span>
-          <span>✳</span>
-          <span>BREAK OUR ASSUMPTIONS</span>
-          <span>✳</span>
-          <span>FIND THE KEY</span>
-          <span>✳</span>
-          <span>FOLLOW THE CLUES</span>
-          <span>✳</span>
-        </div>
+        <nav className="how-to-help" aria-label="How to help">
+          <span>HOW TO HELP</span>
+          <button onClick={() => setSelectedPage(73)}>
+            <span>01</span>Read the eight pages <ArrowUpRight size={17} />
+          </button>
+          <a
+            href="#ledger"
+            onClick={() => {
+              setLedgerFilter("all");
+              setLedgerSearch("");
+              setShowAllMethods(true);
+            }}
+          >
+            <span>02</span>See what’s been tried <ArrowDown size={17} />
+          </a>
+          <a
+            href={repo + "/issues/new?template=experiment.yml"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>03</span>Propose a test <ArrowUpRight size={17} />
+          </a>
+        </nav>
 
         <section className="section case-section" id="case">
           <SectionLabel index="01">THE CASE</SectionLabel>
@@ -428,9 +473,9 @@ function App() {
               <span>Or a mystery with no answer.</span>
             </h2>
             <p>
-              The claim is real. The reward has not been independently verified.
-              Start with what Keiser actually posted, then inspect the pages
-              yourself.
+              Keiser made the claim publicly. The reward has not been
+              independently verified. Start with what Keiser actually posted,
+              then inspect the pages yourself.
             </p>
           </div>
           <div className="case-layout">
@@ -584,6 +629,13 @@ function App() {
                   Every result gets a dated note and a link to the evidence.
                   Failed tests and corrections stay in the history.
                 </p>
+                <p className="log-origin">
+                  This public log opened{" "}
+                  {updates.data?.logOpenedOn
+                    ? dateLabel(updates.data.logOpenedOn)
+                    : "09 Nov 2026"}
+                  . Earlier work is preserved in the experiment ledger.
+                </p>
                 <div className="research-checkpoint">
                   <span className="checkpoint-label">WHERE WE STAND</span>
                   <strong>Still unsolved.</strong>
@@ -611,9 +663,17 @@ function App() {
                 <div className="update-process">
                   <span>HOW THIS GETS UPDATED</span>
                   <ol>
-                    <li>Test one idea.</li>
-                    <li>Save the code and result on GitHub.</li>
-                    <li>Add a dated note here, with evidence.</li>
+                    <li>Pick an open question. Test one idea.</li>
+                    <li>
+                      <a
+                        href={repo + "/issues/new?template=experiment.yml"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Submit your method and evidence on GitHub ↗
+                      </a>
+                    </li>
+                    <li>Maintainers review it and publish a dated result.</li>
                   </ol>
                 </div>
                 <a
@@ -1034,7 +1094,7 @@ function App() {
             </h2>
             <p>
               Chat for quick questions. Discord for earlier files and ongoing
-              discussion. GitHub for the evidence everyone can reproduce.
+              discussion. GitHub for the evidence everyone can reproduce. No token is required to take part.
             </p>
           </div>
           <div className="community-doors">
@@ -1083,6 +1143,9 @@ function App() {
             <SectionLabel index="07">KEEP THE SEARCH ALIVE</SectionLabel>
             <div className="token-layout">
               <div>
+                <span className="launch-status">
+                  <span /> {tokenLive ? "TOKEN LIVE" : "TOKEN NOT LAUNCHED"}
+                </span>
                 <span className="token-ticker">
                   <img
                     src="/assets/key404-emblem.png"
@@ -1094,19 +1157,25 @@ function App() {
                   $KEY404
                 </span>
                 <h2>
-                  The mystery keeps going.
-                  <br />
-                  So does the work.
+                  {tokenLive ? (
+                    <>
+                      Funding the work.
+                      <br />
+                      In public.
+                    </>
+                  ) : (
+                    <>
+                      Planned funding.
+                      <br />
+                      Nothing is live.
+                    </>
+                  )}
                 </h2>
                 <p className="token-intro">
-                  A planned Pump.fun token to support an open, persistent
-                  investigation. Creator fees are intended to fund AI agents,
-                  research runs, and the tools that make this case easier to
-                  solve.
+                  {tokenLive
+                    ? "Project creator fees are intended to fund AI agents, research runs, and tools. The work and expenses should be published for everyone."
+                    : "If launched on Pump.fun, the project could receive creator fees from token trading. Those fees are intended for AI research; each funded run should publish its method, cost, and result."}
                 </p>
-                <span className="launch-status">
-                  <span /> {tokenLive ? "TOKEN LIVE" : "TOKEN NOT LAUNCHED"}
-                </span>
               </div>
               <div className="funding-plan">
                 <div>
@@ -1149,7 +1218,7 @@ function App() {
               <div>
                 <span className="mono">OFFICIAL CONTRACT</span>
                 <strong>
-                  {project.data?.token.contract || "Not created yet"}
+                  {project.data?.token.contract || "Not published"}
                 </strong>
               </div>
               {tokenLive && project.data?.token.url ? (
@@ -1162,9 +1231,9 @@ function App() {
                   View on Pump.fun <ArrowUpRight size={17} />
                 </a>
               ) : (
-                <button className="button button-dark" disabled>
-                  Launch pending <LockKeyhole size={16} />
-                </button>
+                <span className="token-unlaunched-note">
+                  No official contract or purchase link has been published.
+                </span>
               )}
               <p>
                 {tokenLive

@@ -333,3 +333,20 @@
     padding: 19px;
   }
 }
+@media (max-width: 1200px) {
+  .public-chat-launcher {
+    min-width: 56px;
+    width: 56px;
+    min-height: 56px;
+    height: 56px;
+    padding: 6px;
+    flex-direction: column;
+    gap: 1px;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .public-chat-launcher svg {
+    width: 19px;
+    height: 19px;
+  }
+}

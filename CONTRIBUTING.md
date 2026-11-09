@@ -24,7 +24,7 @@ Keep statuses honest: **untested**, **in-progress**, **partial**, **tested**, **
 - Report read-only chain lookup errors as errors; do not silently count them as no activity.
 - Do not add hidden services, telemetry, or paid calls to a reproduction command.
 
-Use the issue templates for a proposed experiment or a correction. Code contributions should run locally, preserve source evidence, and pass the public audit and build.
+Anyone can submit a GitHub issue or pull request using the templates for an experiment or a correction. Maintainers review the source, reproduction steps and privacy before merging and publishing a dated note. Code contributions should run locally, preserve source evidence, and pass the public audit and build.
 
 ## Publish an update
 

@@ -2,6 +2,8 @@
 
 The puzzle is unsolved. The site separates research findings from changes to the website.
 
+To contribute, submit a method and evidence in a [GitHub issue](https://github.com/dctrpr/key-not-found/issues/new?template=experiment.yml) or pull request. Maintainers check the source, reproducibility and privacy, then publish accepted findings with a dated note. Chat messages do not become research findings automatically.
+
 1. Test one stated idea against an identified source. Save the code, exact output, result and limits in the public research corpus.
 2. Update the experiment register. Mark work as proposed, in progress, partial, tested or invalidated according to what actually happened.
 3. Add a dated note with a link to its evidence. Corrections and failed tests remain in the history.
@@ -20,3 +22,11 @@ Notes are shown newest first. Their dates are recorded dates, not a claim that e
 The chat is hosted by [tlk.io](https://tlk.io/). Its [privacy policy](https://tlk.io/privacy) describes nickname/IP/message storage, analytics and short retention for unmoderated rooms. Use an alias and keep secrets out of public chat.
 
 [Public research repository](https://github.com/dctrpr/key-not-found) · [Commit history](https://github.com/dctrpr/key-not-found/commits/main)
+
+## 9 November 2026 — Prelaunch clarity review
+
+- Defined the hidden Bitcoin-private-key claim on the entry screen and clarified that the prize funding is unverified.
+- Added three direct ways to help: read the eight source pages, review previous tests, and propose a test on GitHub.
+- Made the maintainer review/publication step explicit. Research results lead when notes share a recorded date; all dated notes stay visible.
+- Put token-not-launched status before the planned funding explanation. No official contract or purchase link is published.
+- Added Funding, Chat and Discord to mobile navigation and enlarged touch targets. The chat launcher is smaller on narrower screens.

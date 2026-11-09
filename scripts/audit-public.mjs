@@ -149,6 +149,12 @@ const latestUpdate = updates
   .map((update) => update.date)
   .sort()
   .at(-1);
+if (
+  typeof updateLog.logOpenedOn !== "string" ||
+  !/^\d{4}-\d{2}-\d{2}$/.test(updateLog.logOpenedOn) ||
+  (latestUpdate && updateLog.logOpenedOn > latestUpdate)
+)
+  violations.push(["updates.json", "invalid public-log opening date"]);
 if (latestUpdate && updateLog.updatedOn !== latestUpdate)
   violations.push([
     "updates.json",
