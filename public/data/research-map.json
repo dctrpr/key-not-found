@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "updatedOn": "2026-11-09",
+  "branches": [
+    {
+      "id": "text-lines",
+      "title": "Text & lines",
+      "description": "Read the printed words, line edges and highlights. The George Sand clue makes the original line breaks matter.",
+      "methodIds": ["raw-bip39", "highlight-bip39", "faithful-lines", "highlight-lines", "literal-ascii", "firstword-sha256"],
+      "nextAction": "Read the exact extraction and limits before proposing a different source-motivated reading."
+    },
+    {
+      "id": "mirror-layout",
+      "title": "Mirrors & layout",
+      "description": "Test reading direction, physical leaves and reflected marks. Keep measured geometry separate from chosen visual coincidences.",
+      "methodIds": ["physical-registration", "phrase-box-bug", "corrected-orange", "corrected-inverted"],
+      "nextAction": "Define the physical pairing and extraction rule before looking for a meaningful overlap."
+    },
+    {
+      "id": "numbers-type",
+      "title": "Numbers & typography",
+      "description": "Inspect printed numbers and letterforms. A key-sized bit string or an unusual typeface is a lead to test, not a solution.",
+      "methodIds": ["numeric-256", "typography"],
+      "nextAction": "Explain why the source selects a rule, then preserve its exact output and a falsifiable test."
+    },
+    {
+      "id": "sources",
+      "title": "Sources & provenance",
+      "description": "Verify creator posts, the correct article and authoritative source material. Missing evidence stays visible as an open question.",
+      "methodIds": ["issue27", "creator-sources", "author-manuscript"],
+      "nextAction": "Add public, verifiable source evidence or a correction with its provenance."
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   ArrowDown,
   ArrowDownToLine,
@@ -22,6 +22,10 @@ import {
   X,
 } from "lucide-react";
 import PublicChat from "./components/PublicChat";
+import ResearchMapView from "./components/ResearchMap";
+import RepositoryActivity from "./components/RepositoryActivity";
+import useLiveResearch from "./hooks/useLiveResearch";
+import type { ResearchMap } from "./lib/researchState";
 
 type Method = {
   id: string;
@@ -54,6 +58,8 @@ type Update = {
   body: string;
   evidence: string;
   kind?: "research" | "project";
+  methodIds?: string[];
+  branchId?: string;
 };
 type Project = {
   repository: string;
@@ -143,6 +149,15 @@ function App() {
     updates: Update[];
   }>("/data/updates.json");
   const ledger = useJson<{ methods: Method[] }>("/research/experiments.json");
+  const researchMap = useJson<ResearchMap>("/data/research-map.json");
+  const liveResearch = useLiveResearch({
+    ledger: ledger.data,
+    updates: updates.data,
+    map: researchMap.data,
+  });
+  const currentLedger = liveResearch.data?.ledger || ledger.data;
+  const currentUpdates = liveResearch.data?.updates || updates.data;
+  const currentMap = liveResearch.data?.map || researchMap.data;
   const files = useJson<FileIndex>("/research/files.json");
   const [menuOpen, setMenuOpen] = useState(false);
   const [chatOpen, setChatOpen] = useState(false);
@@ -154,30 +169,44 @@ function App() {
   const [fileLimit, setFileLimit] = useState(5);
   const [toast, setToast] = useState("");
   const [selectedPage, setSelectedPage] = useState<number | null>(null);
+  const [pendingMethod, setPendingMethod] = useState<string | null>(null);
   const dialog = useRef<HTMLDialogElement>(null);
   const fileInput = useRef<HTMLInputElement>(null);
   const repo = project.data?.repository || REPO;
   const updateEntries = useMemo(
     () =>
-      [...(updates.data?.updates || [])].sort(
+      [...(currentUpdates?.updates || [])].sort(
         (a, b) =>
           b.date.localeCompare(a.date) ||
           Number(a.kind === "project") - Number(b.kind === "project"),
       ),
-    [updates.data],
+    [currentUpdates],
   );
   const latestFinding = updateEntries.find(
     (entry) => entry.kind === "research",
   );
-  const openMethods = (ledger.data?.methods || []).filter((method) =>
+  const openMethods = (currentLedger?.methods || []).filter((method) =>
     ["partial", "untested", "open"].includes(method.status),
   ).length;
-  const activeMethods = (ledger.data?.methods || []).filter((method) =>
+  const activeMethods = (currentLedger?.methods || []).filter((method) =>
     ["in-progress", "in_progress"].includes(method.status),
   ).length;
   const tokenLive =
     project.data?.token.status === "live" &&
     Boolean(project.data.token.contract && project.data.token.url);
+  const evidenceLink = (path: string, corpus = false) =>
+    liveResearch.sourceCommit
+      ? `${repo}/blob/${liveResearch.sourceCommit}/public/${corpus ? "research/" : ""}${path.replace(/^\/+/, "").split("/").map(encodeURIComponent).join("/")}`
+      : corpus
+        ? researchPath(path)
+        : path;
+  const openMethod = useCallback((id: string) => {
+    setLedgerFilter("all");
+    setLedgerSearch("");
+    setShowAllMethods(true);
+    setPendingMethod(id);
+    window.history.replaceState(null, "", "#method-" + id);
+  }, []);
 
   useEffect(() => {
     if (!toast) return;
@@ -222,7 +251,7 @@ function App() {
   const prompt = `Investigate the public Max Keiser magazine puzzle using the source corpus at ${typeof window === "undefined" ? "" : window.location.origin}/research/README.md. Start with sources/creator-clues.json, sources/printed-lines.json, experiments.json and SHA256SUMS. The puzzle is unsolved; no authenticated prize address is known. Review corrected historical claims before choosing one untested, source-motivated hypothesis. Declare source unit, traversal, operation, expected output and falsification criterion. Preserve exact intermediate data and reproducible commands. Distinguish facts, hypotheses and scoped negative results. Do not send transactions, import wallets or contact people. Submit a concise finding and evidence through ${repo}/issues.`;
   const methods = useMemo(
     () =>
-      (ledger.data?.methods || []).filter((method) => {
+      (currentLedger?.methods || []).filter((method) => {
         const query = ledgerSearch.toLowerCase();
         const status = method.status.toLowerCase();
         const matches =
@@ -239,8 +268,27 @@ function App() {
             .includes(query)
         );
       }),
-    [ledger.data, ledgerSearch, ledgerFilter],
+    [currentLedger, ledgerSearch, ledgerFilter],
   );
+  useEffect(() => {
+    if (!pendingMethod) return;
+    const target = document.getElementById("method-" + pendingMethod);
+    if (target instanceof HTMLDetailsElement) {
+      target.open = true;
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      target.querySelector("summary")?.focus({ preventScroll: true });
+      setPendingMethod(null);
+    }
+  }, [pendingMethod, methods]);
+  useEffect(() => {
+    const followHash = () => {
+      const match = /^#method-([a-z0-9-]+)$/.exec(window.location.hash);
+      if (match) openMethod(match[1]);
+    };
+    followHash();
+    window.addEventListener("hashchange", followHash);
+    return () => window.removeEventListener("hashchange", followHash);
+  }, [openMethod]);
   const visibleFiles = useMemo(
     () =>
       (files.data?.files || [])
@@ -290,6 +338,7 @@ function App() {
         >
           {[
             ["Case", "case"],
+            ["Map", "investigation"],
             ["Updates", "updates"],
             ["Ledger", "ledger"],
             ["Files", "files"],
@@ -378,8 +427,8 @@ function App() {
                 No funded prize address has been authenticated.
               </p>
               <div className="hero-actions">
-                <a className="button button-lime" href="#case">
-                  Open the case <ArrowDown size={17} />
+                <a className="button button-lime" href="#investigation">
+                  Explore the investigation <ArrowDown size={17} />
                 </a>
                 <a
                   className="text-link light hero-discord"
@@ -428,12 +477,12 @@ function App() {
               <span className="mono">REWARD STATUS</span>
               <span className="hero-stat lime-text">UNVERIFIED</span>
             </div>
-            <a href="#updates">
-              <span>LATEST FIELD NOTE</span>
+            <a href="#investigation">
+              <span>THE OPEN INVESTIGATION</span>
               <strong>
-                {updateEntries[0]
-                  ? dateLabel(updateEntries[0].date).toUpperCase()
-                  : "09 NOV 2026"}{" "}
+                {currentLedger
+                  ? `${currentLedger.methods.length} METHODS · ${openMethods} OPEN / PARTIAL`
+                  : "EXPLORE THE RESEARCH"}{" "}
                 <ArrowDownRight />
               </strong>
             </a>
@@ -463,6 +512,19 @@ function App() {
             <span>03</span>Propose a test <ArrowUpRight size={17} />
           </a>
         </nav>
+
+        {currentMap && currentLedger && (
+          <ResearchMapView
+            branches={currentMap.branches}
+            methods={currentLedger.methods}
+            updates={updateEntries}
+            sourceCommit={liveResearch.sourceCommit}
+            checkedAt={liveResearch.checkedAt}
+            status={liveResearch.status}
+            repo={repo}
+            onOpenMethod={openMethod}
+          />
+        )}
 
         <section className="section case-section" id="case">
           <SectionLabel index="01">THE CASE</SectionLabel>
@@ -631,8 +693,8 @@ function App() {
                 </p>
                 <p className="log-origin">
                   This public log opened{" "}
-                  {updates.data?.logOpenedOn
-                    ? dateLabel(updates.data.logOpenedOn)
+                  {currentUpdates?.logOpenedOn
+                    ? dateLabel(currentUpdates.logOpenedOn)
                     : "09 Nov 2026"}
                   . Earlier work is preserved in the experiment ledger.
                 </p>
@@ -644,7 +706,7 @@ function App() {
                       ? latestFinding.title
                       : "No recovered key or authenticated prize address."}
                   </p>
-                  {ledger.data && (
+                  {currentLedger && (
                     <span>
                       {openMethods} open questions ·{" "}
                       {activeMethods
@@ -673,7 +735,10 @@ function App() {
                         Submit your method and evidence on GitHub ↗
                       </a>
                     </li>
-                    <li>Maintainers review it and publish a dated result.</li>
+                    <li>
+                      Maintainers review and merge. The map and notes sync from
+                      GitHub.
+                    </li>
                   </ol>
                 </div>
                 <a
@@ -696,20 +761,28 @@ function App() {
                       : "PUBLISHED NOTES"}
                   </span>
                   <span>
-                    {updates.data?.updatedOn
-                      ? `LAST UPDATED ${dateLabel(updateEntries[0]?.date || updates.data.updatedOn).toUpperCase()}`
+                    {currentUpdates?.updatedOn
+                      ? `LAST UPDATED ${dateLabel(updateEntries[0]?.date || currentUpdates.updatedOn).toUpperCase()}`
                       : ""}
                   </span>
                 </div>
                 {updateEntries.map((entry) => (
-                  <article className="timeline-entry" key={entry.id}>
+                  <article
+                    className="timeline-entry"
+                    key={entry.id}
+                    id={"update-" + entry.id}
+                    data-category={entry.category}
+                  >
                     <div className="update-kicker">
                       <span>{entry.category}</span>
                       <time dateTime={entry.date}>{dateLabel(entry.date)}</time>
                     </div>
                     <h3>{entry.title}</h3>
                     <p>{entry.body}</p>
-                    <a className="text-link light" href={entry.evidence}>
+                    <a
+                      className="text-link light"
+                      href={evidenceLink(entry.evidence)}
+                    >
                       Read the evidence <ArrowUpRight size={16} />
                     </a>
                   </article>
@@ -786,7 +859,11 @@ function App() {
               <span>REVIEW</span>
             </div>
             {methods.map((method, index) => (
-              <details className="method-row" key={method.id}>
+              <details
+                className="method-row"
+                key={method.id}
+                id={"method-" + method.id}
+              >
                 <summary>
                   <div className="method-title">
                     <span className={"status-dot status-" + method.status} />
@@ -824,7 +901,7 @@ function App() {
                       <a
                         className="evidence-link"
                         key={path}
-                        href={researchPath(path)}
+                        href={evidenceLink(path, true)}
                       >
                         <FileText size={14} />
                         <span>{path.split("/").pop()}</span>
@@ -849,7 +926,7 @@ function App() {
                     The index could not load.{" "}
                     <a href={repo}>Browse the repository ↗</a>
                   </>
-                ) : ledger.data ? (
+                ) : currentLedger ? (
                   "No methods match this filter."
                 ) : (
                   "Loading the research ledger…"
@@ -879,6 +956,7 @@ function App() {
               Propose the next experiment <ArrowUpRight size={16} />
             </a>
           </div>
+          <RepositoryActivity repo={repo} />
         </section>
 
         <section className="vault-section" id="files">
@@ -888,9 +966,9 @@ function App() {
               <h2>Take the whole case.</h2>
               <p>
                 The sanitized public corpus includes source scans, transcripts,
-                reports, data, and solver code. Historical errors stay visible
-                with their corrections. Personal data and private chat records
-                stay out.
+                reports, data, and solver code in this release snapshot. The
+                live map and notes can advance between releases; their evidence
+                links open the exact GitHub revision.
               </p>
             </div>
             <div className="vault-banner">
@@ -1094,8 +1172,34 @@ function App() {
             </h2>
             <p>
               Chat for quick questions. Discord for earlier files and ongoing
-              discussion. GitHub for the evidence everyone can reproduce. No token is required to take part.
+              discussion. GitHub for the evidence everyone can reproduce. No
+              token is required to take part.
             </p>
+          </div>
+          <div
+            className="participation-roles"
+            aria-label="Find your role in the investigation"
+          >
+            <button onClick={() => setSelectedPage(73)}>
+              <strong>Reader</strong>
+              <span>Inspect the original pages.</span>
+            </button>
+            <a
+              href={repo + "/issues/new?template=correction.yml"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <strong>Skeptic</strong>
+              <span>Challenge a result with evidence.</span>
+            </a>
+            <a href="#investigation">
+              <strong>Solver</strong>
+              <span>Pick a thread. Test one idea.</span>
+            </a>
+            <a href="#token">
+              <strong>Backer</strong>
+              <span>Fund the work after launch.</span>
+            </a>
           </div>
           <div className="community-doors">
             <button
@@ -1205,10 +1309,10 @@ function App() {
                   <div>
                     <h3>If we recover the BTC</h3>
                     <p>
-                      If this project actually recovers the claimed prize, the
-                      stated intention is to use 100% of the recovered BTC for
-                      $KEY404 buybacks. Recovery and buybacks are not
-                      guaranteed.
+                      If this project recovers the prize BTC, 100% will be used
+                      for $KEY404 buybacks, with public execution records. That
+                      is the founder’s commitment. The prize and its recovery
+                      remain unverified.
                     </p>
                   </div>
                 </div>
@@ -1237,8 +1341,8 @@ function App() {
               )}
               <p>
                 {tokenLive
-                  ? "The funding plan is a public intention, not an enforced contract, ownership right, or claim on the BTC. "
-                  : "There is no live token, sale, or treasury address connected to this site. The funding plan is a public intention, not an enforced contract, ownership right, or claim on the BTC. "}
+                  ? "The buyback commitment applies to prize BTC this project actually recovers. It is not automated and gives no ownership right or claim on the BTC. "
+                  : "The token has not launched. The buyback commitment applies to prize BTC this project actually recovers. It is not automated and gives no ownership right or claim on the BTC. "}
                 <a href="/FUNDING.md">Read the full plan ↗</a>
               </p>
             </div>
@@ -1325,9 +1429,11 @@ function App() {
             </span>
             <span>
               CASE STATUS: UNSOLVED · UPDATED{" "}
-              {project.data
-                ? dateLabel(project.data.updatedOn).toUpperCase()
-                : "09 NOV 2026"}
+              {dateLabel(
+                currentUpdates?.updatedOn ||
+                  project.data?.updatedOn ||
+                  "2026-11-09",
+              ).toUpperCase()}
             </span>
           </div>
         </footer>

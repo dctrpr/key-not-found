@@ -2,6 +2,15 @@
   "updatedOn": "2026-11-09",
   "updates": [
     {
+      "id": "living-investigation",
+      "date": "2026-11-09",
+      "category": "SITE UPDATE",
+      "kind": "project",
+      "title": "One mystery. Four ways in.",
+      "body": "The research map connects every curated method to a readable branch, its evidence and related field notes. Accepted changes on GitHub sync into the map and update log; downloads remain release snapshots. Repository activity is shown separately from research results.",
+      "evidence": "/UPDATES.md"
+    },
+    {
       "id": "prelaunch-clarity",
       "date": "2026-11-09",
       "category": "SITE UPDATE",
@@ -26,7 +35,11 @@
       "title": "256 bits. Still no key.",
       "body": "A disclosed rule turns 24 printed numbers into 256 bits. Four mirror forms were checked across 20 addresses, with no transactions. Another ordinary serialization explains the community's 264-bit count.",
       "evidence": "/research/analysis_outputs/continuation_20261109/numeric_inventory/RESULT.md",
-      "kind": "research"
+      "kind": "research",
+      "methodIds": [
+        "numeric-256"
+      ],
+      "branchId": "numbers-type"
     },
     {
       "id": "lines",
@@ -35,7 +48,11 @@
       "title": "Rebuilt the actual printed lines.",
       "body": "The 142 body lines were reconstructed and independently checked. Earlier transcripts split words and baselines differently, which matters for the George Sand clue.",
       "evidence": "/research/analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.md",
-      "kind": "research"
+      "kind": "research",
+      "methodIds": [
+        "faithful-lines"
+      ],
+      "branchId": "text-lines"
     },
     {
       "id": "geometry",
@@ -44,7 +61,11 @@
       "title": "A promising reflection graph was wrong.",
       "body": "All 17 apparent overlap confirmations depended on a matcher joining distant words into large boxes. Those results are retained with the correction rather than quietly removed.",
       "evidence": "/research/analysis_outputs/continuation_20261109/phrase_box_audit/phrase_box_audit.md",
-      "kind": "research"
+      "kind": "research",
+      "methodIds": [
+        "phrase-box-bug"
+      ],
+      "branchId": "mirror-layout"
     },
     {
       "id": "launch",

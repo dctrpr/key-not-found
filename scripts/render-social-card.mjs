@@ -45,7 +45,7 @@ for weight, output in [(400,sys.argv[2]),(700,sys.argv[3])]:
   const regular = fontkit.openSync(regularTtf);
   const bold = fontkit.openSync(boldTtf);
   const mono = fontkit.openSync(path.join(root, 'node_modules/@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-400-normal.woff2'));
-  const bone = '#edece3', lime = '#d6ff3c', black = '#11130f';
+  const bone = '#f4f1e8', lime = '#d6ff3c', black = '#0e0e0d';
   const parts = [];
   const bounds = [];
   function text(label, value, font, size, x, y, fill, tracking = 0, opacity = 1) {

@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
+import { parseResearchData } from "../src/lib/researchState.ts";
 
 const root = path.resolve(import.meta.dirname, "..");
 const excluded = new Set([
@@ -98,6 +99,8 @@ for (const line of hashLines) {
 const project = JSON.parse(
   fs.readFileSync(path.join(root, "public/data/project.json"), "utf8"),
 );
+if (project.funding?.buyback?.allocationPercent !== 100)
+  violations.push(["project.json", "buyback commitment must preserve its 100-percent allocation"]);
 if (project.token.status !== "not-launched") {
   if (
     project.token.status !== "live" ||
@@ -119,9 +122,10 @@ if (project.token.status !== "not-launched") {
     "project.json",
     "unlaunched token must have null contract and URL",
   ]);
-const methods = JSON.parse(
+const ledgerDocument = JSON.parse(
   fs.readFileSync(path.join(corpus, "experiments.json"), "utf8"),
-).methods;
+);
+const methods = ledgerDocument.methods;
 for (const method of methods)
   for (const evidence of method.evidence)
     if (!fs.existsSync(path.join(corpus, evidence)))
@@ -130,6 +134,20 @@ const updateLog = JSON.parse(
   fs.readFileSync(path.join(root, "public/data/updates.json"), "utf8"),
 );
 const updates = updateLog.updates;
+try {
+  parseResearchData(
+    ledgerDocument,
+    updateLog,
+    JSON.parse(
+      fs.readFileSync(path.join(root, "public/data/research-map.json"), "utf8"),
+    ),
+  );
+} catch {
+  violations.push([
+    "research-map.json",
+    "invalid map coverage or research/update references",
+  ]);
+}
 const updateIds = new Set();
 for (const update of updates) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(update.date) || !update.title || !update.body)

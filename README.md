@@ -7,6 +7,7 @@ An independent, open investigation into the Bitcoin Magazine puzzle Max Keiser d
 ## Start here
 
 - [Research corpus](public/research/README.md): scans, public clues, source register, historical reports, code, and exact test outputs.
+- [Research map and live update flow](RESEARCH_MAP.md): four branches, linked notes, and the contribution-to-publication path.
 - [Experiment register](public/research/experiments.json): scoped results and open leads.
 - [Source-file manifest](public/research/files.json) and [SHA256SUMS](public/research/SHA256SUMS).
 - [Funding plan](public/FUNDING.md): planned creator-fee-funded research and conditional BTC buybacks.
@@ -14,7 +15,16 @@ An independent, open investigation into the Bitcoin Magazine puzzle Max Keiser d
 - [Discord research room](https://discord.gg/ZZK6DuADS): earlier shared files, leads, and discussion.
 - [Update process and website log](public/UPDATES.md): how dated notes connect to evidence and GitHub history.
 
-The website is a static React/TypeScript app. It reads versioned JSON from the repository and a guest chat in an explicitly opened third-party popup. The main site has no account database, wallet custody, hidden API keys, analytics, or private chat archive. The chat provider has its own privacy policy; its iframe loads only when a visitor opens chat.
+The website is a React/TypeScript app with two read-only public GitHub endpoints. The research map and notes sync periodically from a single public main-branch commit; a dated deployed snapshot remains available if syncing fails. A separate endpoint returns public repository counts and the latest three commit headlines, without author identities or email addresses. The guest chat loads in an explicitly opened third-party popup. The main site has no account database, wallet custody, hidden API keys, analytics, or private chat archive. The chat provider has its own privacy policy; its iframe loads only when a visitor opens chat.
+
+## Find your role
+
+- **Reader:** inspect the original pages and exact printed lines.
+- **Skeptic:** challenge a result with public evidence; corrections belong in the record.
+- **Solver:** propose one falsifiable experiment and publish its exact steps and result.
+- **Backer, after launch:** help fund research; follow the public expense and execution records.
+
+Useful contributions stay linked to their public issue or pull request. Buying is not required to read, test, correct or contribute.
 
 ## Run locally
 
@@ -32,7 +42,7 @@ For the historical research environment, follow `public/research/REPRODUCE.md` f
 2. Add/update its method entry in `public/research/experiments.json`. Record the exact source unit, operation, expected output, outcome, and limitations.
 3. Add an honest field note to `public/data/updates.json` and update `public/data/project.json`'s date.
 4. Run `npm run research:manifest`, `npm run audit:public`, and `npm run build`.
-5. Commit and push to `main`. GitHub checks audit and build every change. Deploy the reviewed commit to Vercel using the steps below. Do not invent activity on days without new work.
+5. Commit and push to `main` after review. GitHub checks audit and build every change. The map, method results and dated notes sync into the existing site periodically from that commit. Evidence links pin its GitHub revision. Deploy the reviewed commit for layout, funding configuration, scans, file-index or archive changes using the steps below. Do not invent activity on days without new work.
 
 ## Publish an update
 
@@ -57,7 +67,7 @@ The `public/research` snapshot intentionally excludes private chat records, pers
 
 The proposed token is **KEY NOT FOUND**, ticker **KEY404**, on Pump.fun/Solana. No contract address or trading link is configured at release. The site must remain marked **not launched** until a real contract and official URL are reviewed and set in `public/data/project.json`.
 
-Creator fees actually received by the project are intended to fund AI agents, research runs and infrastructure, with receipts. If the project actually recovers the claimed puzzle BTC, the stated intention is to use 100% of the recovered BTC for token buybacks, with transaction records. This is not an automatic mechanism or guaranteed outcome. See the full funding plan.
+Creator fees actually received by the project are intended to fund AI agents, research runs and infrastructure, with receipts. The founder commits: if this project recovers the prize BTC, 100% will fund KEY404 buybacks, with public execution records. Prize existence and recovery remain unverified; the commitment is not automated. See the full funding plan.
 
 ## Community
 

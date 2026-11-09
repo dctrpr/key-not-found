@@ -10,8 +10,10 @@
     "check": "tsc -b --pretty false",
     "audit:public": "node scripts/audit-public.mjs",
     "research:manifest": "node scripts/research-manifest.mjs",
-    "verify": "npm run audit:public && npm run build",
-    "research:package": "node scripts/package-research.mjs"
+    "verify": "npm run audit:public && npm run test:public-api && npm run build",
+    "research:package": "node scripts/package-research.mjs",
+    "test:public-api": "node --test tests/*.test.mjs",
+    "github:snapshot": "node scripts/github-activity-snapshot.mjs"
   },
   "dependencies": {
     "@fontsource-variable/space-grotesk": "^5.2.10",

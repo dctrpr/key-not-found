@@ -20,6 +20,6 @@ Use `DESCRIPTION.txt` for the proposed token description and `assets/key404-embl
 
 No token has been created by the website build. Wallet signing and any financial transaction remain with the user. No developer/private key is included in this kit.
 
-The conditional buyback intention applies only to BTC actually recovered by this project. It does not promise a reward, return, claim on the BTC, or an automated mechanism. The research is available equally to non-holders.
+The founder commits 100% of prize BTC actually recovered by this project to KEY404 buybacks, with public execution records. It does not promise a reward, return, claim on the BTC, or an automated mechanism. The research is available equally to non-holders.
 
 Platform documentation: https://pump.fun/docs/fees and https://pump.fun/docs/terms-and-conditions.

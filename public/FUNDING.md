@@ -18,11 +18,11 @@ Invoices must be redacted for personal identity, billing address, account identi
 
 ## Conditional BTC buybacks
 
-If this project actually recovers the BTC described in Max Keiser's claim, the stated project intention is to use **100% of the recovered BTC for KEY404 buybacks**, and publish the conversion/trade/fee records. Execution details, timing, transaction costs and applicable constraints would have to be disclosed before any trade.
+The founder commits: **if this project recovers the prize BTC, 100% will fund KEY404 buybacks.** This is a commitment about the use of recovered funds. Publish the recovery evidence, execution plan, timing, conversion/trade records, and necessary transaction costs before and after execution. No buyback has occurred in this prelaunch project.
 
-No key has been found. The existence of an authenticated 20-BTC prize address has not been established. Someone outside the project could solve the public puzzle first or keep any coins they recover. Neither recovery nor buybacks are guaranteed.
+No key has been found. The existence of an authenticated 20-BTC prize address has not been established. Someone outside the project could solve the public puzzle first or keep any coins they recover. Prize existence and recovery cannot be promised. The buyback commitment applies to prize BTC this project actually recovers.
 
-This plan is a statement of intent, not an automatically enforced contract. A token does not provide equity, a right to the claimed BTC, a right to reimbursement, guaranteed returns, or control of the investigation. Token value can fall to zero, regardless of research results.
+This commitment is not an automatically enforced contract. A token does not provide equity, a right to the claimed BTC, a right to reimbursement, guaranteed returns, or control of the investigation. Token value can fall to zero, regardless of research results.
 
 ## What is already public
 

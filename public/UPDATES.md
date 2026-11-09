@@ -30,3 +30,14 @@ The chat is hosted by [tlk.io](https://tlk.io/). Its [privacy policy](https://tl
 - Made the maintainer review/publication step explicit. Research results lead when notes share a recorded date; all dated notes stay visible.
 - Put token-not-launched status before the planned funding explanation. No official contract or purchase link is published.
 - Added Funding, Chat and Discord to mobile navigation and enlarged touch targets. The chat launcher is smaller on narrower screens.
+
+
+## 2026-11-09 — The living investigation
+
+Four branches connect the complete curated method ledger to evidence, open/partial questions and related dated notes. The public map and notes periodically sync from one immutable GitHub main-branch commit. Accepted contributions appear after maintainer review and merge; proposals alone are not published results. GitHub stars, forks and commit headlines are displayed separately from research evidence.
+
+The source commit and check time are visible. Failed syncs preserve the last verified view or a labelled deployed snapshot. Scans, the file index and downloadable ZIPs remain release snapshots until a new deployment/release. For the exact update process see `RESEARCH_MAP.md` in the repository.
+
+The founder's buyback commitment is now explicit: if this project recovers the prize BTC, 100% will fund KEY404 buybacks, with public execution records. The prize and recovery remain unverified. The token remains unlaunched.
+
+The marked-copy identity keeps the fluorescent marker and original magazine imagery while replacing olive neutrals with newsprint and ink. Reader, Skeptic, Solver and future Backer roles each lead to a concrete action; contribution and correction records stay public.
