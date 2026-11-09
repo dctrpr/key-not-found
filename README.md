@@ -11,6 +11,7 @@ An independent, open investigation into the Bitcoin Magazine puzzle Max Keiser d
 - [Source-file manifest](public/research/files.json) and [SHA256SUMS](public/research/SHA256SUMS).
 - [Funding plan](public/FUNDING.md): planned creator-fee-funded research and conditional BTC buybacks.
 - [Contribution guide](CONTRIBUTING.md): reproducible experiments, corrections, and updates.
+- [Discord research room](https://discord.gg/ZZK6DuADS): earlier shared files, leads, and discussion.
 
 The website is a static React/TypeScript app. It reads versioned JSON from the repository and public Nostr notes directly from relays. It has no account database, wallet custody, hidden API keys, analytics, or private chat archive.
 
@@ -57,7 +58,9 @@ The proposed token is **KEY NOT FOUND**, ticker **KEY404**, on Pump.fun/Solana. 
 
 Creator fees actually received by the project are intended to fund AI agents, research runs and infrastructure, with receipts. If the project actually recovers the claimed puzzle BTC, the stated intention is to use 100% of the recovered BTC for token buybacks, with transaction records. This is not an automatic mechanism or guaranteed outcome. See the full funding plan.
 
-## Nostr discussion
+## Community
+
+The earlier community research and discussion also live in [BTC is Toxic AF – Treasure Hunt on Discord](https://discord.gg/ZZK6DuADS). The site links this room from the introduction, community section, and footer. The invite is maintained in the `DISCORD` constant in `src/App.tsx`; update the documentation links at the same time if it changes. Source claims and durable results still need reproducible evidence in this repository. The supplied invite was verified on 9 November 2026 and currently expires on 9 December 2026; replace it when needed or supply a permanent invite.
 
 The shared topic is `#keiser-key-not-found`. Anyone can read without connecting a signer. Posting requires an explicit NIP-07 signer connection and a separate sign/publish click. The page never asks for a secret key. Real relay acknowledgments determine publishing success; no fabricated chat messages are shown. A signed note proves authorship, not truth. Durable research findings should also be submitted as an issue or pull request.
 

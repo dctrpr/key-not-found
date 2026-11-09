@@ -8,6 +8,8 @@ Tagline: **The key is missing. The work is public.**
 
 Use `DESCRIPTION.txt` for the proposed token description and `assets/key404-emblem.png` for its artwork. The website link must be the verified production URL of this project. This kit does not create a token, designate a wallet, or prove that a similarly named contract is official.
 
+`WEBSITE.txt` and `DISCORD.txt` contain the public project and community links. Earlier research and discussion also live in the Discord room. Verify that its invite still works before publishing a launch profile.
+
 ## Before signing a creation transaction
 
 1. Use the project identity and wallet addresses you intend to make public. On-chain addresses and transactions can be linked publicly.

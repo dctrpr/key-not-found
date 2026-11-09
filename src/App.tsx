@@ -17,6 +17,7 @@ import {
   KeyRound,
   LockKeyhole,
   Menu,
+  MessageCircle,
   Search,
   X,
 } from "lucide-react";
@@ -70,6 +71,7 @@ type Project = {
 };
 
 const REPO = "https://github.com/dctrpr/key-not-found";
+const DISCORD = "https://discord.gg/ZZK6DuADS";
 const ARCHIVE = "/downloads/key404-casefile.zip";
 const researchPath = (path: string) =>
   "/research/" + path.split("/").map(encodeURIComponent).join("/");
@@ -289,6 +291,7 @@ function App() {
           </div>
           <div className="hero-main">
             <div className="hero-copy">
+              <p className="hero-kicker">ONE MAGAZINE. A CLAIMED 20 BTC.</p>
               <h1>
                 KEY NOT
                 <br />
@@ -301,17 +304,22 @@ function App() {
                 <br />
                 The work is public.
               </p>
-              <p className="hero-description">
-                Max Keiser said he hid a key to <strong>20 BTC</strong> in a
-                magazine. We’re opening the entire investigation—clues, dead
-                ends, code, and the next attempt.
+              <p className="hero-description founder-story">
+                <span>I found Max Keiser’s puzzle in 2023.</span>
+                <span>I’ve been working on it ever since.</span>
+                <strong>Now, let’s find the key together.</strong>
               </p>
               <div className="hero-actions">
                 <a className="button button-lime" href="#case">
                   Open the case <ArrowDown size={17} />
                 </a>
-                <a className="text-link light" href={ARCHIVE} download>
-                  Get the evidence <ArrowDownToLine size={16} />
+                <a
+                  className="text-link light hero-discord"
+                  href={DISCORD}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Join the Discord <ArrowUpRight size={16} />
                 </a>
               </div>
             </div>
@@ -330,6 +338,9 @@ function App() {
                   height="3264"
                   fetchPriority="high"
                 />
+                <span className="exhibit-hint">
+                  Inspect the original <ArrowUpRight size={13} />
+                </span>
               </button>
               <div className="visual-caption">
                 <span>
@@ -403,31 +414,6 @@ function App() {
             <div className="clues">
               <a
                 className="clue"
-                href="https://x.com/maxkeiser/status/1607378060172460032"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="clue-meta">
-                  <span>26 DEC 2022</span>
-                  <span className="pill">CREATOR POST</span>
-                  <ArrowUpRight size={20} />
-                </div>
-                <h3>Hidden in the text.</h3>
-                <blockquote>
-                  “Like George Sand’s hidden cryptography, I have hidden private
-                  keys in the text.”
-                </blockquote>
-                <p>
-                  The linked examples read alternate printed lines, or the first
-                  word of every line. The post refers to multiple keys and
-                  doesn’t name an issue.
-                </p>
-                <span className="clue-source">
-                  View original post <ExternalLink size={12} />
-                </span>
-              </a>
-              <a
-                className="clue"
                 href="https://x.com/maxkeiser/status/1632068898169450497"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -451,6 +437,31 @@ function App() {
                   The photograph shows the El Salvador Issue. No authenticated
                   funding address or key format was published with the
                   announcement.
+                </p>
+                <span className="clue-source">
+                  View original post <ExternalLink size={12} />
+                </span>
+              </a>
+              <a
+                className="clue"
+                href="https://x.com/maxkeiser/status/1607378060172460032"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="clue-meta">
+                  <span>26 DEC 2022</span>
+                  <span className="pill">CREATOR POST</span>
+                  <ArrowUpRight size={20} />
+                </div>
+                <h3>Hidden in the text.</h3>
+                <blockquote>
+                  “Like George Sand’s hidden cryptography, I have hidden private
+                  keys in the text.”
+                </blockquote>
+                <p>
+                  The linked examples read alternate printed lines, or the first
+                  word of every line. The post refers to multiple keys and
+                  doesn’t name an issue.
                 </p>
                 <span className="clue-source">
                   View original post <ExternalLink size={12} />
@@ -955,10 +966,31 @@ function App() {
               <span>An open room.</span>
             </h2>
             <p>
-              Keep discussions on Nostr. Bring a source, challenge an
-              assumption, or find someone testing the same idea. Research
-              results belong in GitHub so they stay reproducible.
+              The earlier research and discussion also live in Discord. Bring a
+              clue, question a result, or test an idea together. Publish
+              reproducible findings on GitHub; Nostr is open below.
             </p>
+          </div>
+          <div className="discord-room">
+            <span className="discord-room-icon" aria-hidden="true">
+              <MessageCircle size={26} />
+            </span>
+            <div>
+              <span className="discord-room-label">THE PUZZLE DISCORD</span>
+              <h3>Meet the other detectives.</h3>
+              <p>
+                Earlier files, shared leads, and people still looking for the
+                key.
+              </p>
+            </div>
+            <a
+              className="button button-lime"
+              href={DISCORD}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join the Discord <ArrowUpRight size={17} />
+            </a>
           </div>
           <NostrRoom
             roomTag={project.data?.nostrTag || "keiser-key-not-found"}
@@ -1116,6 +1148,9 @@ function App() {
             <div>
               <a href={repo} target="_blank" rel="noopener noreferrer">
                 GitHub <ArrowUpRight size={14} />
+              </a>
+              <a href={DISCORD} target="_blank" rel="noopener noreferrer">
+                Discord <ArrowUpRight size={14} />
               </a>
               <a href="/research/PRIVACY_AUDIT.md">
                 Release privacy audit <ArrowUpRight size={14} />
