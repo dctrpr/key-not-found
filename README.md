@@ -30,7 +30,24 @@ For the historical research environment, follow `public/research/REPRODUCE.md` f
 2. Add/update its method entry in `public/research/experiments.json`. Record the exact source unit, operation, expected output, outcome, and limitations.
 3. Add an honest field note to `public/data/updates.json` and update `public/data/project.json`'s date.
 4. Run `npm run research:manifest`, `npm run audit:public`, and `npm run build`.
-5. Commit and push to `main`. The linked Vercel project builds the public site from this repository. Do not invent activity on days without new work.
+5. Commit and push to `main`. GitHub checks audit and build every change. Deploy the reviewed commit to Vercel using the steps below. Do not invent activity on days without new work.
+
+## Publish an update
+
+Production: https://key404-casefile.vercel.app
+
+The initial release uses the authenticated Vercel CLI. Automatic Git deployments are not configured: the Vercel account first needs its GitHub login connection linked by the account owner. After that connection is configured, connect this repository to the `key404-casefile` project with `main` as its production branch.
+
+Until then, deploy the checked, clean commit from this directory:
+
+```sh
+vercel link --project key404-casefile
+vercel deploy --prod --skip-domain
+# Inspect and test the returned deployment URL before promotion.
+vercel promote <deployment-url>
+```
+
+Confirm the intended team and project before deploying. Generated ZIPs are created from versioned inputs during each build; local build output, credentials and account metadata stay out of uploads and Git.
 
 The `public/research` snapshot intentionally excludes private chat records, personal paths, credentials, unrelated puzzles, and unreviewed screenshots. All publication must pass the public-data audit. Project Git commits should use a project name and a GitHub noreply address.
 
