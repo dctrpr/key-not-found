@@ -21,7 +21,7 @@ import {
   Search,
   X,
 } from "lucide-react";
-import NostrRoom from "./components/NostrRoom";
+import PublicChat from "./components/PublicChat";
 
 type Method = {
   id: string;
@@ -53,11 +53,12 @@ type Update = {
   title: string;
   body: string;
   evidence: string;
+  kind?: "research" | "project";
 };
 type Project = {
   repository: string;
   updatedOn: string;
-  nostrTag: string;
+  chat?: { provider: string; room: string; url: string };
   token: { status: string; contract: string | null; url: string | null };
   funding?: {
     receipts: {
@@ -136,10 +137,13 @@ function SectionLabel({
 
 function App() {
   const project = useJson<Project>("/data/project.json");
-  const updates = useJson<{ updates: Update[] }>("/data/updates.json");
+  const updates = useJson<{ updatedOn: string; updates: Update[] }>(
+    "/data/updates.json",
+  );
   const ledger = useJson<{ methods: Method[] }>("/research/experiments.json");
   const files = useJson<FileIndex>("/research/files.json");
   const [menuOpen, setMenuOpen] = useState(false);
+  const [chatOpen, setChatOpen] = useState(false);
   const [ledgerFilter, setLedgerFilter] = useState("all");
   const [ledgerSearch, setLedgerSearch] = useState("");
   const [showAllMethods, setShowAllMethods] = useState(false);
@@ -148,11 +152,25 @@ function App() {
   const [fileLimit, setFileLimit] = useState(5);
   const [toast, setToast] = useState("");
   const [selectedPage, setSelectedPage] = useState<number | null>(null);
-  const [activeUpdate, setActiveUpdate] = useState(0);
   const dialog = useRef<HTMLDialogElement>(null);
   const fileInput = useRef<HTMLInputElement>(null);
   const repo = project.data?.repository || REPO;
-  const latest = updates.data?.updates[activeUpdate];
+  const updateEntries = useMemo(
+    () =>
+      [...(updates.data?.updates || [])].sort((a, b) =>
+        b.date.localeCompare(a.date),
+      ),
+    [updates.data],
+  );
+  const latestFinding = updateEntries.find(
+    (entry) => entry.kind === "research",
+  );
+  const openMethods = (ledger.data?.methods || []).filter((method) =>
+    ["partial", "untested", "open"].includes(method.status),
+  ).length;
+  const activeMethods = (ledger.data?.methods || []).filter((method) =>
+    ["in-progress", "in_progress"].includes(method.status),
+  ).length;
   const tokenLive =
     project.data?.token.status === "live" &&
     Boolean(project.data.token.contract && project.data.token.url);
@@ -379,8 +397,8 @@ function App() {
             <a href="#updates">
               <span>LATEST FIELD NOTE</span>
               <strong>
-                {project.data
-                  ? dateLabel(project.data.updatedOn).toUpperCase()
+                {updateEntries[0]
+                  ? dateLabel(updateEntries[0].date).toUpperCase()
                   : "09 NOV 2026"}{" "}
                 <ArrowDownRight />
               </strong>
@@ -553,81 +571,94 @@ function App() {
         <section className="updates-section" id="updates">
           <div className="section updates-inner">
             <SectionLabel index="02" dark>
-              FIELD NOTES
+              UPDATE LOG
             </SectionLabel>
             <div className="updates-layout">
-              <div>
+              <div className="updates-overview">
                 <h2>
-                  The daily log.
+                  What we tried.
                   <br />
-                  <span>Including the dead ends.</span>
+                  <span>What happens next.</span>
                 </h2>
                 <p>
-                  What changed. What failed. What the next person should know.
+                  Every result gets a dated note and a link to the evidence.
+                  Failed tests and corrections stay in the history.
                 </p>
+                <div className="research-checkpoint">
+                  <span className="checkpoint-label">WHERE WE STAND</span>
+                  <strong>Still unsolved.</strong>
+                  <p>
+                    {latestFinding
+                      ? latestFinding.title
+                      : "No recovered key or authenticated prize address."}
+                  </p>
+                  {ledger.data && (
+                    <span>
+                      {openMethods} open questions ·{" "}
+                      {activeMethods
+                        ? `${activeMethods} experiments in progress`
+                        : "No active experiment logged"}
+                    </span>
+                  )}
+                  <a
+                    href="#ledger"
+                    className="text-link light"
+                    onClick={() => setLedgerFilter("open")}
+                  >
+                    Explore the open questions <ArrowDown size={16} />
+                  </a>
+                </div>
+                <div className="update-process">
+                  <span>HOW THIS GETS UPDATED</span>
+                  <ol>
+                    <li>Test one idea.</li>
+                    <li>Save the code and result on GitHub.</li>
+                    <li>Add a dated note here, with evidence.</li>
+                  </ol>
+                </div>
                 <a
                   className="text-link light"
                   href={repo + "/commits/main"}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Follow the commit history <ArrowUpRight size={17} />
+                  See the full commit history <ArrowUpRight size={17} />
                 </a>
               </div>
-              <div className="update-panel">
-                {latest ? (
-                  <>
+              <div
+                className="update-timeline"
+                aria-label="Published update history"
+              >
+                <div className="timeline-header">
+                  <span>
+                    {updateEntries.length
+                      ? `${updateEntries.length} PUBLISHED NOTES`
+                      : "PUBLISHED NOTES"}
+                  </span>
+                  <span>
+                    {updates.data?.updatedOn
+                      ? `LAST UPDATED ${dateLabel(updateEntries[0]?.date || updates.data.updatedOn).toUpperCase()}`
+                      : ""}
+                  </span>
+                </div>
+                {updateEntries.map((entry) => (
+                  <article className="timeline-entry" key={entry.id}>
                     <div className="update-kicker">
-                      <span>
-                        <i className="live-dot" /> {latest.category}
-                      </span>
-                      <time>{dateLabel(latest.date)}</time>
+                      <span>{entry.category}</span>
+                      <time dateTime={entry.date}>{dateLabel(entry.date)}</time>
                     </div>
-                    <h3>{latest.title}</h3>
-                    <p>{latest.body}</p>
-                    <a className="text-link light" href={latest.evidence}>
-                      Read the findings <ArrowUpRight size={16} />
+                    <h3>{entry.title}</h3>
+                    <p>{entry.body}</p>
+                    <a className="text-link light" href={entry.evidence}>
+                      Read the evidence <ArrowUpRight size={16} />
                     </a>
-                    <div className="update-pagination">
-                      <span>
-                        {String(activeUpdate + 1).padStart(2, "0")} /{" "}
-                        {String(updates.data?.updates.length).padStart(2, "0")}
-                      </span>
-                      <div>
-                        <button
-                          aria-label="Previous update"
-                          onClick={() =>
-                            setActiveUpdate(
-                              (index) =>
-                                (index +
-                                  (updates.data?.updates.length || 1) -
-                                  1) %
-                                (updates.data?.updates.length || 1),
-                            )
-                          }
-                        >
-                          <ChevronLeft size={19} />
-                        </button>
-                        <button
-                          aria-label="Next update"
-                          onClick={() =>
-                            setActiveUpdate(
-                              (index) =>
-                                (index + 1) %
-                                (updates.data?.updates.length || 1),
-                            )
-                          }
-                        >
-                          <ChevronRight size={19} />
-                        </button>
-                      </div>
-                    </div>
-                  </>
-                ) : (
-                  <p>
+                  </article>
+                ))}
+                {!updateEntries.length && (
+                  <p className="timeline-empty">
                     {updates.error
-                      ? "The log is temporarily unavailable. The full history is on GitHub."
-                      : "Loading the latest field notes…"}
+                      ? "The update log is unavailable. The full history is on GitHub."
+                      : "Loading published notes…"}
                   </p>
                 )}
               </div>
@@ -656,16 +687,20 @@ function App() {
                 ["tested", "Tested"],
                 ["open", "Open leads"],
                 ["in-progress", "In progress"],
-              ].map(([value, label]) => (
-                <button
-                  key={value}
-                  className={ledgerFilter === value ? "active" : ""}
-                  onClick={() => setLedgerFilter(value)}
-                  aria-pressed={ledgerFilter === value}
-                >
-                  {label}
-                </button>
-              ))}
+              ]
+                .filter(
+                  ([value]) => value !== "in-progress" || activeMethods > 0,
+                )
+                .map(([value, label]) => (
+                  <button
+                    key={value}
+                    className={ledgerFilter === value ? "active" : ""}
+                    onClick={() => setLedgerFilter(value)}
+                    aria-pressed={ledgerFilter === value}
+                  >
+                    {label}
+                  </button>
+                ))}
             </div>
             <label className="search-field">
               <Search size={16} />
@@ -990,44 +1025,57 @@ function App() {
         </section>
 
         <section className="section community-section" id="community">
-          <SectionLabel index="06">LEAVE A LEAD</SectionLabel>
+          <SectionLabel index="06">JOIN THE INVESTIGATION</SectionLabel>
           <div className="section-intro">
             <h2>
-              A public problem.
+              Talk here.
               <br />
-              <span>An open room.</span>
+              <span>Publish there.</span>
             </h2>
             <p>
-              The earlier research and discussion also live in Discord. Bring a
-              clue, question a result, or test an idea together. Publish
-              reproducible findings on GitHub; Nostr is open below.
+              Chat for quick questions. Discord for earlier files and ongoing
+              discussion. GitHub for the evidence everyone can reproduce.
             </p>
           </div>
-          <div className="discord-room">
-            <span className="discord-room-icon" aria-hidden="true">
-              <MessageCircle size={26} />
-            </span>
-            <div>
-              <span className="discord-room-label">THE PUZZLE DISCORD</span>
-              <h3>Meet the other detectives.</h3>
-              <p>
-                Earlier files, shared leads, and people still looking for the
-                key.
-              </p>
-            </div>
+          <div className="community-doors">
+            <button
+              className="community-door primary-door"
+              onClick={() => setChatOpen(true)}
+            >
+              <MessageCircle size={24} aria-hidden="true" />
+              <span>
+                <strong>Chat</strong>
+                <small>Pick a nickname. Ask a question.</small>
+              </span>
+              <ArrowUpRight size={20} aria-hidden="true" />
+            </button>
             <a
-              className="button button-lime"
+              className="community-door"
               href={DISCORD}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Join the Discord <ArrowUpRight size={17} />
+              <MessageCircle size={24} aria-hidden="true" />
+              <span>
+                <strong>Discord</strong>
+                <small>Earlier files and ongoing discussion.</small>
+              </span>
+              <ArrowUpRight size={20} aria-hidden="true" />
+            </a>
+            <a
+              className="community-door"
+              href={repo}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github size={24} aria-hidden="true" />
+              <span>
+                <strong>GitHub</strong>
+                <small>The lasting research record.</small>
+              </span>
+              <ArrowUpRight size={20} aria-hidden="true" />
             </a>
           </div>
-          <NostrRoom
-            roomTag={project.data?.nostrTag || "keiser-key-not-found"}
-            title="The case room"
-          />
         </section>
 
         <section className="token-section" id="token">
@@ -1215,6 +1263,16 @@ function App() {
           </div>
         </footer>
       </main>
+
+      {selectedPage === null && (
+        <PublicChat
+          open={chatOpen}
+          onOpenChange={setChatOpen}
+          discordUrl={DISCORD}
+          repositoryUrl={repo}
+          room={project.data?.chat?.room || "keiser-key-not-found"}
+        />
+      )}
 
       <dialog
         ref={dialog}

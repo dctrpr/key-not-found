@@ -126,18 +126,46 @@ for (const method of methods)
   for (const evidence of method.evidence)
     if (!fs.existsSync(path.join(corpus, evidence)))
       violations.push([method.id, "missing method evidence"]);
-const updates = JSON.parse(
+const updateLog = JSON.parse(
   fs.readFileSync(path.join(root, "public/data/updates.json"), "utf8"),
-).updates;
+);
+const updates = updateLog.updates;
+const updateIds = new Set();
 for (const update of updates) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(update.date) || !update.title || !update.body)
     violations.push([update.id, "invalid update"]);
+  if (!update.id || updateIds.has(update.id))
+    violations.push([update.id, "missing or duplicate update id"]);
+  updateIds.add(update.id);
+  if (!["research", "project"].includes(update.kind))
+    violations.push([update.id, "update kind must be research or project"]);
   if (
     !update.evidence.startsWith("/") ||
     !fs.existsSync(path.join(root, "public", update.evidence))
   )
     violations.push([update.id, "missing update evidence"]);
 }
+const latestUpdate = updates
+  .map((update) => update.date)
+  .sort()
+  .at(-1);
+if (latestUpdate && updateLog.updatedOn !== latestUpdate)
+  violations.push([
+    "updates.json",
+    "updatedOn must match the newest published note",
+  ]);
+if (latestUpdate && project.updatedOn < latestUpdate)
+  violations.push([
+    "project.json",
+    "project date is older than its update history",
+  ]);
+if (
+  project.chat?.provider !== "tlk.io" ||
+  typeof project.chat.room !== "string" ||
+  !/^[a-z0-9-]{1,80}$/.test(project.chat.room) ||
+  project.chat.url !== "https://tlk.io/" + project.chat.room
+)
+  violations.push(["project.json", "invalid public chat configuration"]);
 console.log(
   JSON.stringify(
     {

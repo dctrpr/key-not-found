@@ -26,4 +26,4 @@ This plan is a statement of intent, not an automatically enforced contract. A to
 
 ## What is already public
 
-The research corpus and code are available to everyone, including people who hold no token. Nostr discussions are public. Funding does not buy privileged access to clues, a private answer, or a guaranteed reward.
+The research corpus and code are available to everyone, including people who hold no token. The guest chat is public. Funding does not buy privileged access to clues, a private answer, or a guaranteed reward.

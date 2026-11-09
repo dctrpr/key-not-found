@@ -19,15 +19,15 @@ Keep statuses honest: **untested**, **in-progress**, **partial**, **tested**, **
 ## Privacy and safety of contributions
 
 - Submit only public or authorized source material. Strip local paths, personal names/contact details, EXIF, credentials, browser state, and private community records.
-- Do not post a funded private key, seed phrase, access token, or other operational secret in an issue, pull request, or Nostr note.
+- Do not post a funded private key, seed phrase, access token, or other operational secret in an issue, pull request, or public chat message.
 - Do not send transactions, contact people, or claim project endorsement through a research script.
 - Report read-only chain lookup errors as errors; do not silently count them as no activity.
 - Do not add hidden services, telemetry, or paid calls to a reproduction command.
 
 Use the issue templates for a proposed experiment or a correction. Code contributions should run locally, preserve source evidence, and pass the public audit and build.
 
-## Daily update format
+## Publish an update
 
-Add one actual finding to `public/data/updates.json`: `id`, `date` (`YYYY-MM-DD`), `category`, `title`, `body`, and an existing same-origin `evidence` link. Update the project date. If nothing changed, say so rather than manufacturing progress.
+Add one actual finding to `public/data/updates.json`: `id`, `date` (`YYYY-MM-DD`), `category`, `title`, `body`, `kind` (`research` or `project`), and an existing same-origin `evidence` link. Keep notes in reverse chronological order; all notes are visible in the site history. Update the project date. If nothing changed, say so rather than manufacturing progress.
 
 Funded runs should also record the invoice/receipt reference, model/tool, cost and currency, source commit, method ID, output, and reason for continuing or stopping. Redact billing identity and account credentials before publication.

@@ -12,8 +12,9 @@ An independent, open investigation into the Bitcoin Magazine puzzle Max Keiser d
 - [Funding plan](public/FUNDING.md): planned creator-fee-funded research and conditional BTC buybacks.
 - [Contribution guide](CONTRIBUTING.md): reproducible experiments, corrections, and updates.
 - [Discord research room](https://discord.gg/ZZK6DuADS): earlier shared files, leads, and discussion.
+- [Update process and website log](public/UPDATES.md): how dated notes connect to evidence and GitHub history.
 
-The website is a static React/TypeScript app. It reads versioned JSON from the repository and public Nostr notes directly from relays. It has no account database, wallet custody, hidden API keys, analytics, or private chat archive.
+The website is a static React/TypeScript app. It reads versioned JSON from the repository and a guest chat in an explicitly opened third-party popup. The main site has no account database, wallet custody, hidden API keys, analytics, or private chat archive. The chat provider has its own privacy policy; its iframe loads only when a visitor opens chat.
 
 ## Run locally
 
@@ -62,7 +63,11 @@ Creator fees actually received by the project are intended to fund AI agents, re
 
 The earlier community research and discussion also live in [BTC is Toxic AF – Treasure Hunt on Discord](https://discord.gg/ZZK6DuADS). The site links this room from the introduction, community section, and footer. The invite is maintained in the `DISCORD` constant in `src/App.tsx`; update the documentation links at the same time if it changes. Source claims and durable results still need reproducible evidence in this repository. The supplied invite was verified on 9 November 2026 and currently expires on 9 December 2026; replace it when needed or supply a permanent invite.
 
-The shared topic is `#keiser-key-not-found`. Anyone can read without connecting a signer. Posting requires an explicit NIP-07 signer connection and a separate sign/publish click. The page never asks for a secret key. Real relay acknowledgments determine publishing success; no fabricated chat messages are shown. A signed note proves authorship, not truth. Durable research findings should also be submitted as an issue or pull request.
+A floating **Chat** button and the community button open the same public nickname-only room, hosted by [tlk.io](https://tlk.io/keiser-key-not-found). Visitors choose a 2–24-character alias in the popup; the provider loads only after they select **Enter chat**. The alias is held in page memory, not local storage, and is passed using tlk.io's documented custom-nickname option. No Nostr signer, wallet connection, or project account is required. Closing the popup removes the provider iframe. Visitors can also open the room in a new tab or use Discord if their browser blocks embeds.
+
+The popup is for live conversation, not the research archive. The project has not claimed moderator ownership. According to the provider's [privacy policy](https://tlk.io/privacy), unmoderated messages expire after 10 minutes; the provider stores nicknames, IP addresses and messages and uses Google Analytics. A guest nickname does not prove authorship or anonymity. Keep durable findings and exact evidence on GitHub.
+
+The room name is in `public/data/project.json`. The iframe allowlist is in `vercel.json`. Do not add automatic sign-in, guessed chat messages, visitor counters, or private keys to the site.
 
 ## License
 
