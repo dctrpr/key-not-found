@@ -1,4 +1,4 @@
-import { parseResearchData } from "../src/lib/researchState.ts";
+import { parseResearchData } from "../lib/research-state.mjs";
 
 const REPO = "dctrpr/key-not-found";
 const MAX_DOCUMENT_BYTES = 512_000;
