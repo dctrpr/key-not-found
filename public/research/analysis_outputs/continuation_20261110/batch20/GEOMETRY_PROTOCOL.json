@@ -1,0 +1,688 @@
+{
+  "version": 1,
+  "batchId": "keiser-20261110-batch20",
+  "part": "geometry",
+  "registeredAtUTC": "2026-11-10T05:24:40.732Z",
+  "sourceHashes": {
+    "analysis_outputs/3d_article_map/article_3d_map_data.json": "22c2285a6cd53f6bdda7bdd284d556c52ff55dea0a55cd1b549acbb81443eac3",
+    "analysis_outputs/continuation_20261109/george_sand/highlight_physical_lines.json": "cc3b71163cd186c19337462639551f6ab97c407268e5e478ee5f101d716763f9",
+    "analysis_outputs/continuation_20261109/inverted_duplex/inverted_duplex.json": "4d6d029bf5f7e90acfa1d456bc94e790913c7865b923c9367212c219867742f3",
+    "analysis_outputs/source_audit/opener_pill_cash_inventory/opener_pill_cash_inventory.json": "2a13fb6be27a69acdace3b5382bf96a7652ac2d46582e69b6d793b5385a29095",
+    "magazine.pdf": "a30c61f8c49674afb7bccc6680d6477f6e919175386a2422de0a944db4e76c13",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/vision-datamatrix-control.png": "4f395fb1356cfa598ef08f3aaa07d372e1b836c6bc7bc08a6820a4584db2facc",
+    "scripts/batch20_support/vision-datamatrix-control.txt": "84d89877f0d4041efb6bf91a16f0248f2fd573e6af05c19f96bedb9f882f7882",
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "sources/word-geometry-20261110.json": "e3348d0d60d3097b05d0afdb0a1fccf66409274408af9ae7a9369c37fe596e9f"
+  },
+  "scriptHashes": {
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d",
+    "scripts/batch20_geometry.py": "e7786acc472fa3f7a294fe6391e74bd6f8840017e30d9f54941544019dbafb9a",
+    "scripts/batch20_vision.swift": "3a663b53c792d446e5c69bc5d599bdaf3ebfb5975e892d7dd1d055f61faeae49"
+  },
+  "evaluation": {
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39"
+    ],
+    "noRaw32ASCII": true,
+    "noProseHashWrappers": true,
+    "noTransactions": true,
+    "networkQueries": 0,
+    "candidatePrivacy": "Valid private records and raw lead locators remain private pending review. Public results contain only domain-separated fingerprints and safe counts. Decoded URLs are not followed.",
+    "missingData": "An unknown word, clipped ink region, failed control or missing detector coverage is not a negative. Affected scopes remain inconclusive.",
+    "counting": "Ten procedures including evidence audits and weak sanity checks, not ten equally plausible or independent theories."
+  },
+  "tests": [
+    {
+      "id": "G01",
+      "title": "Mirror first, then first selected word",
+      "family": "mirror-firstword-composition",
+      "priority": "primary",
+      "inputPaths": [
+        "magazine.pdf",
+        "sources/printed-lines.json",
+        "analysis_outputs/3d_article_map/article_3d_map_data.json",
+        "analysis_outputs/continuation_20261109/inverted_duplex/inverted_duplex.json",
+        "sources/word-geometry-20261110.json",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "parameters": {
+        "pairs": [
+          [
+            76,
+            77
+          ],
+          [
+            77,
+            76
+          ],
+          [
+            78,
+            79
+          ],
+          [
+            79,
+            78
+          ]
+        ],
+        "maskClasses": [
+          "orange",
+          "black"
+        ],
+        "scopeCount": 5,
+        "horizontal": [
+          "leftmost",
+          "rightmost"
+        ],
+        "vertical": [
+          "down",
+          "up"
+        ],
+        "projections": [
+          "words-spaced",
+          "words-joined",
+          "initials"
+        ],
+        "boundaryUncertaintyPx": 12,
+        "wordCenterGuard": "max(12,frozen centerUncertaintyPx)",
+        "geometry": "Word centers inverse-transformed from the documented row deskew frame; fixed horizontal page mirror only.",
+        "maximumLabeledStreams": 120
+      },
+      "controls": [
+        "synthetic-mask-firstword",
+        "synthetic-mirror-involution",
+        "shared-format-controls"
+      ],
+      "negativeCriterion": "No validated literal key in complete, unambiguous frozen readings excludes only these exact readings.",
+      "limitations": [
+        "Incomplete or boundary-ambiguous selected word geometry makes the affected stream inconclusive.",
+        "Direction/projection variants are not independent theories.75\u219274 has no target body and is outside this scope."
+      ],
+      "methodId": "batch20-g01",
+      "branchId": "mirror-layout"
+    },
+    {
+      "id": "G02",
+      "title": "Two-sided printed highlight stencil",
+      "family": "duplex-color-truth-table",
+      "priority": "coverage-correction",
+      "inputPaths": [
+        "magazine.pdf",
+        "sources/printed-lines.json",
+        "analysis_outputs/3d_article_map/article_3d_map_data.json",
+        "analysis_outputs/continuation_20261109/inverted_duplex/inverted_duplex.json",
+        "sources/word-geometry-20261110.json",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "parameters": {
+        "pairs": [
+          [
+            76,
+            77
+          ],
+          [
+            77,
+            76
+          ],
+          [
+            78,
+            79
+          ],
+          [
+            79,
+            78
+          ]
+        ],
+        "selectors": [
+          "same-color",
+          "opposite-color",
+          "source-only",
+          "target-only"
+        ],
+        "orders": [
+          "forward",
+          "reverse"
+        ],
+        "projections": [
+          "words-spaced",
+          "initials",
+          "finals"
+        ],
+        "scopeCount": 5,
+        "boundaryUncertaintyPx": 12,
+        "wordCenterGuard": "max(12,frozen centerUncertaintyPx)",
+        "maximumLabeledStreams": 120
+      },
+      "controls": [
+        "synthetic-three-state-truth-table",
+        "shared-format-controls"
+      ],
+      "negativeCriterion": "No validated literal key excludes only the declared word-center truth tables with complete geometry.",
+      "limitations": [
+        "Uses corrected physical pairs and actual printed masks, not old chosen-p76 phrase boxes.",
+        "Ambiguous target geometry/color is preserved and prevents a complete negative for affected readings."
+      ],
+      "methodId": "batch20-g02",
+      "branchId": "mirror-layout"
+    },
+    {
+      "id": "G03",
+      "title": "Orange/black two-alphabet channel",
+      "family": "printed-highlight-state",
+      "priority": "exploratory",
+      "inputPaths": [
+        "sources/printed-lines.json",
+        "analysis_outputs/continuation_20261109/george_sand/highlight_physical_lines.json",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "parameters": {
+        "unitTypes": [
+          "fragment",
+          "word",
+          "letter"
+        ],
+        "scopes": [
+          "global",
+          75,
+          76,
+          77,
+          78,
+          79
+        ],
+        "fragmentCount": 46,
+        "decoders": {
+          "baconAlphabets": [
+            "ABCDEFGHIKLMNOPQRSTUWXYZ",
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+          ],
+          "baconPhases": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "asciiPhases": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "bitAssignments": [
+            "original",
+            "complement"
+          ],
+          "orders": [
+            "forward",
+            "reverse"
+          ],
+          "incompleteBlocks": "Record unused prefix/suffix; no padding or guessed bits.",
+          "invalidDecodedGroup": "\u241e hard boundary; no deletion, word joining or format window across invalid groups/bytes."
+        },
+        "maximumLabeledDecodes": 1296
+      },
+      "controls": [
+        "synthetic-bacon-24-and-26",
+        "synthetic-ascii",
+        "incomplete-block-recording",
+        "shared-format-controls"
+      ],
+      "negativeCriterion": "No validated literal key excludes the exact declared color-state serializations/decodes.",
+      "limitations": [
+        "Color encoding was not specified by the creator; no DOCM/manual partial-bold state is used.",
+        "Readable-looking fragments or a weak checksum do not establish intentional encoding."
+      ],
+      "methodId": "batch20-g03",
+      "branchId": "numbers-type"
+    },
+    {
+      "id": "G04",
+      "title": "Fixed interword-gap binary channel",
+      "family": "interword-spacing",
+      "priority": "conditional",
+      "inputPaths": [
+        "magazine.pdf",
+        "sources/printed-lines.json",
+        "sources/word-geometry-20261110.json",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "parameters": {
+        "scopes": [
+          "global",
+          75,
+          76,
+          77,
+          78,
+          79
+        ],
+        "threshold": 1.5,
+        "measurement": "Original ink extents inside frozen lexical-word regions; consecutive ink gap divided by row median.",
+        "foreground": "Per-scanline edge-column background median maxRGB>170 chooses black maxRGB<130; otherwise white minRGB>170 and spread<70.",
+        "inkColumnMinimum": 2,
+        "edgeGuardPx": 1,
+        "glyphVerticalMarginPx": 2,
+        "verticalBounds": "Full frozen word-box envelope plus2px, bounded by adjacent row-center midpoints; robust ink touching a vertical boundary is unknown.",
+        "deskewResampler": "Nearest-neighbor, fixed center, no expansion",
+        "equalityBit": 0,
+        "decoders": {
+          "baconAlphabets": [
+            "ABCDEFGHIKLMNOPQRSTUWXYZ",
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+          ],
+          "baconPhases": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "asciiPhases": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "bitAssignments": [
+            "original",
+            "complement"
+          ],
+          "orders": [
+            "forward",
+            "reverse"
+          ],
+          "incompleteBlocks": "Record unused prefix/suffix; no padding or guessed bits.",
+          "invalidDecodedGroup": "\u241e hard boundary; no deletion, word joining or format window across invalid groups/bytes."
+        },
+        "maximumLabeledDecodes": 432
+      },
+      "controls": [
+        "synthetic-doubled-space-measurement",
+        "shared-format-controls"
+      ],
+      "negativeCriterion": "No literal validated key excludes the exact1.5\u00d7median measured ink-gap serialization, not all spacing ciphers.",
+      "limitations": [
+        "Word boxes are machine-verified source geometry, not a claim of original font metadata.",
+        "Incomplete rows, nonpositive gaps or unknown geometry make relevant scope inconclusive."
+      ],
+      "methodId": "batch20-g04",
+      "branchId": "numbers-type"
+    },
+    {
+      "id": "G05",
+      "title": "Printed-line displacement channel",
+      "family": "line-shift",
+      "priority": "conditional",
+      "inputPaths": [
+        "magazine.pdf",
+        "sources/printed-lines.json",
+        "sources/word-geometry-20261110.json",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "parameters": {
+        "scopes": [
+          "global",
+          75,
+          76,
+          77,
+          78,
+          79
+        ],
+        "measurement": "75th percentile of original ink-column bottoms inside frozen lexical-word regions; paragraph affine line-number detrend.",
+        "foreground": "Per-scanline edge-column background median maxRGB>170 chooses black maxRGB<130; otherwise white minRGB>170 and spread<70.",
+        "inkColumnMinimum": 2,
+        "residualRoundDecimals": 6,
+        "glyphVerticalMarginPx": 2,
+        "verticalBounds": "Full frozen word-box envelope plus2px, bounded by adjacent row-center midpoints; robust ink touching a vertical boundary is unknown.",
+        "deskewResampler": "Nearest-neighbor, fixed center, no expansion",
+        "bitRule": "Residual>0 is1; residual<=0 is0. No threshold fitting.",
+        "reportDisplacementPx": 2,
+        "decoders": {
+          "baconAlphabets": [
+            "ABCDEFGHIKLMNOPQRSTUWXYZ",
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+          ],
+          "baconPhases": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "asciiPhases": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "bitAssignments": [
+            "original",
+            "complement"
+          ],
+          "orders": [
+            "forward",
+            "reverse"
+          ],
+          "incompleteBlocks": "Record unused prefix/suffix; no padding or guessed bits.",
+          "invalidDecodedGroup": "\u241e hard boundary; no deletion, word joining or format window across invalid groups/bytes."
+        },
+        "maximumLabeledDecodes": 432
+      },
+      "controls": [
+        "synthetic-plus-minus-two-pixel-shifts",
+        "synthetic-zero-shift-grid",
+        "shared-format-controls"
+      ],
+      "negativeCriterion": "No literal validated key excludes only the registered ink-bottom residual-sign channel.",
+      "limitations": [
+        "The ink-bottom quantile is an optical baseline proxy, not original font metadata or an exact typographic baseline.",
+        "Font/glyph shape, printing and scan noise can create residuals. No general baseline-steganography absence claim."
+      ],
+      "methodId": "batch20-g05",
+      "branchId": "numbers-type"
+    },
+    {
+      "id": "G06",
+      "title": "Reused capsule interior differences",
+      "family": "repeated-artwork-difference",
+      "priority": "source-audit",
+      "inputPaths": [
+        "magazine.pdf",
+        "analysis_outputs/source_audit/opener_pill_cash_inventory/opener_pill_cash_inventory.json",
+        "scripts/batch20_support/vision-datamatrix-control.png",
+        "scripts/batch20_support/vision-datamatrix-control.txt",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "parameters": {
+        "pairing": "Five source-locked p73/p79 capsule pairs; stored affine only.",
+        "interiorErosionPx": 2,
+        "channels": [
+          "R",
+          "G",
+          "B",
+          "luminance"
+        ],
+        "residualViews": 20,
+        "combinedChannelStreams": 4,
+        "controls": 10,
+        "differenceMapping": "clip(127+sourceWarp-target,0,255)",
+        "ocr": "Apple Vision revision3 accurate en-US, correction off, 8\u00d7 nearest upscale."
+      },
+      "controls": [
+        "same-source-affine-resampling",
+        "planted-difference-text",
+        "shared-format-controls"
+      ],
+      "negativeCriterion": "No OCR-readable validated literal key excludes the declared20 registered residual views only.",
+      "limitations": [
+        "Differences may be interpolation/compositing/printing artifacts. Shape reuse alone is not a selector.",
+        "Vision failures or positive-control failure prevent a complete negative. Manual review remains useful."
+      ],
+      "methodId": "batch20-g06",
+      "branchId": "mirror-layout"
+    },
+    {
+      "id": "G07",
+      "title": "Spectral color-isolation OCR",
+      "family": "color-isolation-ocr",
+      "priority": "coverage-check",
+      "inputPaths": [
+        "magazine.pdf",
+        "scripts/batch20_support/vision-datamatrix-control.png",
+        "scripts/batch20_support/vision-datamatrix-control.txt",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "parameters": {
+        "pages": [
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80
+        ],
+        "differences": [
+          "R-G",
+          "G-B",
+          "B-R"
+        ],
+        "mapping": "clip((signedDifference+255)/2,0,255)",
+        "polarities": [
+          "normal",
+          "inverted"
+        ],
+        "orientations": [
+          "normal",
+          "horizontal-mirror"
+        ],
+        "differenceViews": 96,
+        "baselineViews": 16,
+        "maximumViews": 112,
+        "ocr": "Apple Vision revision3 accurate en-US, correction off, minimumTextHeight.001"
+      },
+      "controls": [
+        "synthetic-spectral-key-ocr",
+        "synthetic-plain-ocr",
+        "no-payload-ocr",
+        "shared-format-controls"
+      ],
+      "negativeCriterion": "No OCR-readable validated literal key excludes only these112 fixed detector views.",
+      "limitations": [
+        "No posthoc contrast/threshold/character substitution. OCR errors can hide genuine text.",
+        "This is full-source extraction coverage; earlier RGB registration gates were p76 statistical diagnostics."
+      ],
+      "methodId": "batch20-g07",
+      "branchId": "numbers-type"
+    },
+    {
+      "id": "G08",
+      "title": "Literal machine-readable codes",
+      "family": "qr-barcode",
+      "priority": "sanity-check",
+      "inputPaths": [
+        "magazine.pdf",
+        "scripts/batch20_support/vision-datamatrix-control.png",
+        "scripts/batch20_support/vision-datamatrix-control.txt",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "parameters": {
+        "pages": [
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80
+        ],
+        "rotations": [
+          0,
+          90,
+          180,
+          270
+        ],
+        "mirrors": [
+          false,
+          true
+        ],
+        "invert": [
+          false,
+          true
+        ],
+        "scales": [
+          0.5,
+          1,
+          2
+        ],
+        "symbologies": [
+          "QR",
+          "DataMatrix",
+          "Aztec",
+          "Code128"
+        ],
+        "views": 384,
+        "engine": "Apple Vision barcode revision3",
+        "decodedUrls": "Never automatically visited or executed."
+      },
+      "controls": [
+        "synthetic-QR-Aztec-Code128",
+        "pinned-ZXing-DataMatrix",
+        "synthetic-mirror-invert-rotations",
+        "no-code-image"
+      ],
+      "negativeCriterion": "No decoded payload excludes only the declared Vision-readable code formats/views.",
+      "limitations": [
+        "No explicit creator QR clue known. Nonstandard, damaged or artistic codes remain possible.",
+        "DataMatrix control is a pinned unmodified official ZXing fixture; other controls are CoreImage generated."
+      ],
+      "methodId": "batch20-g08",
+      "branchId": "sources"
+    },
+    {
+      "id": "G09",
+      "title": "Corrected-leaf alignment specificity",
+      "family": "duplex-alignment-control",
+      "priority": "coverage-correction",
+      "inputPaths": [
+        "magazine.pdf",
+        "sources/printed-lines.json",
+        "analysis_outputs/3d_article_map/article_3d_map_data.json",
+        "analysis_outputs/continuation_20261109/inverted_duplex/inverted_duplex.json",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "parameters": {
+        "trueUnorderedPairs": [
+          [
+            76,
+            77
+          ],
+          [
+            78,
+            79
+          ]
+        ],
+        "bodyPages": [
+          75,
+          76,
+          77,
+          78,
+          79
+        ],
+        "resize": [
+          256,
+          328
+        ],
+        "primary": "Mean IoU of the two true horizontally mirrored highlight unions.",
+        "wrongPairs": 8,
+        "translationGrid": [
+          16,
+          16
+        ],
+        "excludeIdentityShift": true,
+        "jointNullShifts": 255,
+        "retainThreshold": "Primary exceeds every wrong-pair score and at least95% of the fixed joint-shift null."
+      },
+      "controls": [
+        "identity-IoU",
+        "empty-mask-IoU",
+        "planted-alignment-shift"
+      ],
+      "negativeCriterion": "Failure to distinguish exact normalized alignment from the declared controls does not support that alignment claim.",
+      "limitations": [
+        "Evidence audit, not a key decoder. Nonsignificance is not absence proof.",
+        "Old leaf controls largely used wrong pairs; symmetric directions are not independent observations."
+      ],
+      "methodId": "batch20-g09",
+      "branchId": "mirror-layout"
+    },
+    {
+      "id": "G10",
+      "title": "Current raster least-bit payload",
+      "family": "raster-lsb",
+      "priority": "low-priority-reserve",
+      "inputPaths": [
+        "magazine.pdf",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "parameters": {
+        "pages": [
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80
+        ],
+        "channels": [
+          "R",
+          "G",
+          "B"
+        ],
+        "bit": 0,
+        "orientations": [
+          "normal",
+          "horizontal-mirror"
+        ],
+        "bitOrders": [
+          "big",
+          "little"
+        ],
+        "phases": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "maximumStreams": 768,
+        "decoder": "ASCII text with \u241e hard boundary for nontext bytes; strict literal format validators only; no raw scalar windows."
+      },
+      "controls": [
+        "synthetic-channel-LSB-payload",
+        "byte-order-and-phase",
+        "no-payload-raster",
+        "shared-format-controls"
+      ],
+      "negativeCriterion": "No validated literal key excludes only these768 current-raster serializations.",
+      "limitations": [
+        "A weak file sanity check: physical printing/scanning/JPEG may erase an earlier digital payload.",
+        "No arbitrary pixel-buffer hashes or32-byte scalar guesses. This does not rule out print-origin encoding."
+      ],
+      "methodId": "batch20-g10",
+      "branchId": "sources"
+    }
+  ]
+}
