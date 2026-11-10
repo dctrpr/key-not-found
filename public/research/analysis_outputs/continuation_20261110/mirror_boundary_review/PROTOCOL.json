@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "batchId": "keiser-mirror-boundary-envelope-20261110",
+  "registeredAtUTC": "2026-11-10T06:26:59.138Z",
+  "test": {
+    "id": "mirror-boundary-envelope",
+    "title": "All pair-local mirror boundary alternatives",
+    "family": "mirror-firstword-uncertainty-envelope",
+    "branchId": "mirror-layout",
+    "inputPaths": [
+      "sources/printed-lines.json",
+      "sources/word-geometry-20261110.json",
+      "analysis_outputs/3d_article_map/article_3d_map_data.json",
+      "analysis_outputs/continuation_20261109/inverted_duplex/inverted_duplex.json",
+      "scripts/batch20_support/english.txt",
+      "scripts/batch20_support/controls.json"
+    ],
+    "implementationPaths": [
+      "scripts/mirror_boundary_envelope.py",
+      "scripts/batch20_geometry.py",
+      "scripts/batch20_common.py"
+    ],
+    "parameters": {
+      "pairs": [
+        [
+          76,
+          77
+        ],
+        [
+          77,
+          76
+        ],
+        [
+          78,
+          79
+        ],
+        [
+          79,
+          78
+        ]
+      ],
+      "maskClasses": [
+        "orange",
+        "black"
+      ],
+      "wordEdges": [
+        "leftmost",
+        "rightmost"
+      ],
+      "rowOrders": [
+        "forward",
+        "reverse"
+      ],
+      "projections": [
+        "words-spaced",
+        "words-joined",
+        "initials"
+      ],
+      "formats": [
+        "wif",
+        "minikey",
+        "hex64",
+        "bip39"
+      ],
+      "forms": [
+        "exact",
+        "whitespace-only-compacted"
+      ],
+      "bip39Tokenization": "Lowercase unfiltered lexical words; ordinary punctuation boundaries; invalid decoded group \u241e is a hard region boundary.",
+      "hexMatching": "64hex scalar records require non-hex boundaries; WIF and minikey shape windows may be embedded in a longer string.",
+      "geometry": "Frozen token-box centers inverse-rotated to upright page; horizontal page reflection only.",
+      "guardPx": "max(12, frozen word.centerUncertaintyPx)",
+      "centerDomain": "Closed axis-aligned square [x-g,x+g] \u00d7 [y-g,y+g] in original upright pixels.",
+      "maskDomain": "Exact union of frozen horizontally reflected half-open rectangles [left,right) \u00d7 [top,bottom).",
+      "membership": "in if every point of the closed center square is in mask union; out if no point is; unknown otherwise.",
+      "selection": "First/last possible selected word before the first guaranteed-in word; include no-word option iff no guaranteed-in word exists.",
+      "coupling": "Independent uncertain memberships/row choices overapproximate correlated measurement errors; no likelihood or calibration claim.",
+      "emptyRow": "Omit row when the no-word alternative is chosen; no padding or replacement text.",
+      "maximumPairLocalSelectionPaths": 20000,
+      "maximumLabeledReadings": 120000,
+      "globalPairConcatenation": false,
+      "rawAsciiScalars": false,
+      "proseHashWrappers": false,
+      "networkQueries": 0,
+      "transactions": 0
+    },
+    "controls": [
+      "exhaustive-five-position-membership-oracle",
+      "first-last-irrelevant-boundary",
+      "empty-row-option",
+      "half-open-boundary",
+      "overlapping-union-coverage",
+      "mask-gap",
+      "forward-reverse-projection",
+      "incremental-full-scanner-agreement",
+      "shared-format-controls"
+    ],
+    "negativeCriterion": "A complete zero-result run excludes only the declared literal records from the registered pair-local modeled superset, at the pinned source/code bytes. It does not calibrate scan errors, test global concatenation or exhaust mirror/first-word ciphers.",
+    "limitations": [
+      "The 12-pixel and frozen center guards are review heuristics, not statistically calibrated measurement-error bounds.",
+      "Independent memberships admit physically inconsistent joint choices. This broadens the tested set and supplies no evidence of intentional encoding or candidate likelihood.",
+      "Global concatenations across page-pair readings are deferred; their large path count is not silently tested or ruled out.",
+      "Exact rectangle masks and the center-based selection convention are declared assumptions, not creator-specified instructions."
+    ]
+  },
+  "sourceHashes": {
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "sources/word-geometry-20261110.json": "e3348d0d60d3097b05d0afdb0a1fccf66409274408af9ae7a9369c37fe596e9f",
+    "analysis_outputs/3d_article_map/article_3d_map_data.json": "22c2285a6cd53f6bdda7bdd284d556c52ff55dea0a55cd1b549acbb81443eac3",
+    "analysis_outputs/continuation_20261109/inverted_duplex/inverted_duplex.json": "4d6d029bf5f7e90acfa1d456bc94e790913c7865b923c9367212c219867742f3",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b"
+  },
+  "scriptHashes": {
+    "scripts/mirror_boundary_envelope.py": "5ebe0750f4f47b3ef838aada5d5863272aaf3b2f8e8b8b4864c52820bab261e2",
+    "scripts/batch20_geometry.py": "e7786acc472fa3f7a294fe6391e74bd6f8840017e30d9f54941544019dbafb9a",
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d"
+  },
+  "candidatePrivacy": "Raw readings and locators remain private if any serialized private record validates. Public fingerprints are domain separated, never a raw minikey SHA-256. A checksum pass is a lead, not a prize claim.",
+  "sourceOnlyAudit": {
+    "pairLocalScopes": 16,
+    "selectionPaths": 17108,
+    "labeledReadings": 102648,
+    "targetKeyChecks": 0,
+    "globalConcatenationPathsDeferred": 43347744
+  }
+}

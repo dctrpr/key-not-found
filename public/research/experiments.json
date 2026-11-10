@@ -740,9 +740,13 @@
       "scope": "Source review followed by a preregistered pair-local envelope of uncertain first/last selected words. Globals outside scope.",
       "result": "Source review is underway. No completed decoding or negative result is claimed.",
       "evidence": [
-        "analysis_outputs/continuation_20261110/mirror_boundary_review/PLAN.md"
+        "analysis_outputs/continuation_20261110/mirror_boundary_review/PLAN.md",
+        "analysis_outputs/continuation_20261110/mirror_boundary_review/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/mirror_boundary_review/PROTOCOL.json"
       ],
-      "reproduce": [],
+      "reproduce": [
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/mirror_boundary_envelope.py --self-test"
+      ],
       "limitations": [
         "Frozen guards are heuristic review bounds, not calibrated actual-scan errors.",
         "Neither creator-linked source uniquely specifies a stencil or word-center selector.",
