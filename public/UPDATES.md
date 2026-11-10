@@ -109,3 +109,10 @@ The next registered procedure uses one 2,018-literal-chunk model and 72 directio
 
 
 The registered target run completed at 10:14:48.170 UTC. All 72 fixed-model readings completed; all 93 minikey-shaped strings failed and no other declared format shape was present. Independent source-token/reading/evaluation replay agreed. The 60-reading source-confirmed subset is separately reported; twelve readings retain prefix uncertainty. This is a negative for the exact model, not the whole physical-source hypothesis. No key/address derivation or network query followed.
+
+
+## 10 November 2026 — Original OP64 caption context
+
+The original Orange Pill OP64 video page was recovered from the official channel. Normal browser access exposed the English auto-caption transcript even though a separate raw HTTP player request required login. The platform displays a 9 March 2023 premiere and a description dating the conversation to 8 March; earlier syndicated dates are not substituted for these source facts.
+
+Two AI assistants independently reviewed all 543 exported caption cues. Neither recognized an explicit article-linked puzzle instruction. This is caption-only review, with ASR, redaction and missing end-time limits; no audio was listened to, no exact spoken wording is certified, and no thematic coincidence authorizes a new cipher rule. Public files include provenance and a bounded summary, not the full transcript.

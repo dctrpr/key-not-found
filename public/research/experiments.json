@@ -243,20 +243,25 @@
     },
     {
       "id": "creator-sources",
-      "title": "Public creator-post evidence",
+      "title": "Creator posts and recorded context",
       "status": "partial",
       "kind": "source-audit",
       "independentTheory": false,
-      "scope": "Four verified public posts; exact source links and caveats.",
-      "result": "Method pointers and a prize claim; no authenticated funding address or solution.",
+      "scope": "Four verified public posts plus a caption-only review of the original OP64 episode after the March announcement; exact links and source limits.",
+      "result": "Creator posts supply method pointers and a prize claim, without an authenticated funding address. Two AI assistants reviewed all 543 OP64 auto-caption cues; neither recognized an explicit puzzle-linked extraction instruction. Audio and other episode windows remain unreviewed.",
       "evidence": [
         "sources/creator-clues.json",
         "analysis_outputs/continuation_20261109/george_sand_research.md",
-        "analysis_outputs/continuation_20261109/external_research.md"
+        "analysis_outputs/continuation_20261109/external_research.md",
+        "analysis_outputs/continuation_20261110/creator_op64/REVIEW.md",
+        "analysis_outputs/continuation_20261110/creator_op64/SOURCE.json",
+        "analysis_outputs/continuation_20261110/creator_op64/REVIEW_RECEIPT.json"
       ],
       "reproduce": [],
       "limitations": [
-        "December2023 predecessor context is unavailable."
+        "December2023 predecessor context is unavailable.",
+        "OP64 review covers automatic captions only, with ASR/redaction and missing end-time limits; it is not a semantic or audio exclusion.",
+        "The relevant creator-recording date windows have not been exhaustively inventoried or cleared."
       ]
     },
     {
