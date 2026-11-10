@@ -4,7 +4,7 @@ The key is missing. The work is public.
 
 My independent investigation into the Bitcoin Magazine puzzle Max Keiser described in 2023. The files, tests and updates are public; help is optional. The puzzle is **unsolved**. The claimed 20 BTC has not been independently authenticated. This project is not affiliated with Max Keiser, Bitcoin Magazine, or Pump.fun.
 
-[Latest research](public/research/analysis_outputs/continuation_20261110/g02_shape_reachability/RESULT.md) found no registered literal shapes in the same-color or opposite-color stencil readings. Eight one-sided reading languages admit Base58 syntax in the broader model. A physical alignment check comes next.
+Sharing a query offset per page pair removed three of eight one-sided syntax matches. The surviving five are grammar matches within the frozen model. [Latest research](public/research/analysis_outputs/continuation_20261110/g02_shared_query/RESULT.md)
 
 ## Start here
 

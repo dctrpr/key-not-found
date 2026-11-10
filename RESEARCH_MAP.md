@@ -5,7 +5,7 @@ The [interactive investigation map](https://key404-casefile.vercel.app/#investig
 | Branch | Starting point | What remains useful |
 | --- | --- | --- |
 | Text & lines | Printed words, line edges, highlights and the George Sand clue | A source-motivated reading that differs meaningfully from a recorded test |
-| Mirrors & layout | Physical leaves, reading direction and reflected marks | A declared pairing and deterministic extraction, without fitting overlaps after the fact |
+| Mirrors & layout | Physical leaves, reading direction and reflected marks | Repeatable trim-edge evidence on both faces, followed by a frozen registration test |
 | Numbers & typography | Printed numbers and letterforms | Evidence for the selection rule, followed by a falsifiable extraction |
 | Sources & provenance | Creator posts, article identity and authoritative originals | Public source evidence, provenance or a correction |
 

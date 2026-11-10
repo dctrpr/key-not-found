@@ -82,6 +82,27 @@ for (const entry of data.entries) {
     assert.ok(result.descriptors.every(({ presence }) => presence.hex64 === false &&
       Object.values(presence.bip39).every(value => value === false)));
   }
+  if (entry.id === 'g02-shared-query-sensitivity') {
+    assert.equal(entry.diagram, 'funnel');
+    assert.equal(entry.methodId, 'batch20-g02');
+    assert.deepEqual(entry.scene, { layout: 'mirror', page: 77 });
+    assert.equal(result.testId, entry.id);
+    assert.equal(result.caseStatus, 'unsolved');
+    assert.equal(result.sharedQueryComplete, true);
+    assert.equal(result.conditionalQueryModelOnly, true);
+    assert.equal(result.physicalDisplacementRangeMeasured, false);
+    assert.equal(result.counts.physicalDisplacementMeasurements, 0);
+    assert.equal(result.counts.previousSyntaxNegativeLanguages, 152);
+    assert.deepEqual(result.activity, { checksums: 0, derivations: 0, historyQueries: 0, walletActions: 0 });
+    const hasSyntax = (presence) => [...Object.values(presence.wif),
+      ...Object.values(presence.minikey)].some(value => value === true);
+    assert.equal(result.languageChecks.length, 8);
+    assert.ok(result.languageChecks.every(check => hasSyntax(check.priorPresence)));
+    assert.equal(result.languageChecks.filter(check => hasSyntax(check.sharedQueryPresence)).length, 5);
+    assert.equal(result.languageChecks.filter(check => !hasSyntax(check.sharedQueryPresence)).length, 3);
+    const prior = fs.readFileSync(path.join(root, 'public/research/analysis_outputs/continuation_20261110/g02_shape_reachability/RESULT.json'));
+    assert.equal(crypto.createHash('sha256').update(prior).digest('hex'), result.priorShapeResultSha256);
+  }
   if (entry.id === 't01-saved-reading-review-result') {
     assert.equal(entry.diagram, 'funnel');
     assert.equal(entry.methodId, 'batch20-t01');

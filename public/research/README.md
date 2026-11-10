@@ -10,6 +10,8 @@ The [visual lab and dated frames](VISUAL_GUIDE.md) make the source pages and com
 
 ## Research is continuing
 
+The shared query follow-up removed three of eight one-sided syntax-positive reading languages and every 30-character minikey-like shape. The scan provenance review reproduced the digital placement and found partial paper edges in the lower-resolution photographs. The physical alignment range remains unresolved. [Shared query result](analysis_outputs/continuation_20261110/g02_shared_query/RESULT.md) · [Scan provenance](analysis_outputs/continuation_20261110/g02_shared_query/PHYSICAL_SOURCE.md)
+
 The [literal shape check](analysis_outputs/continuation_20261110/g02_shape_reachability/RESULT.md) ruled out the registered formats for the same-color and opposite-color stencil selections. Eight one-sided reading languages admit Base58 syntax in the broad choice model. The [opposite-color review](analysis_outputs/continuation_20261110/g02_opposite_reading/RESULT.md) found no coherent second message recognized by either AI reader. The next source test is whether a common displacement can realize any of the one-sided shape matches.
 
 The [two-sided stencil source audit](analysis_outputs/continuation_20261110/g02_joint_color_audit/RESULT.md) maps all 962 target word positions, retaining the 97 variable memberships. Two implementations agree on every ordered metadata field. The four selectors have very different assignment bounds, from eight opposite-color assignments to `2^59` for source-only. No reading or key check ran. The [paragraph eligibility audit](analysis_outputs/continuation_20261110/g05_paragraph_scope_audit/RESULT.md) separately explains the 98/142 displacement coverage and the fixed 136-row theoretical ceiling.

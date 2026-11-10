@@ -814,6 +814,42 @@
       },
       "sceneNote": "Actual Issue 24 page 77 in mirror view. The registered model covers four directed page pairs and their combined scope.",
       "methodId": "batch20-g02"
+    },
+    {
+      "id": "g02-shared-query-sensitivity",
+      "completedAtUTC": "2026-11-10T23:12:43.966Z",
+      "title": "Five languages still admit a format pattern.",
+      "summary": "The shared-query model gives both directions on each leaf one common offset. Eight languages had admitted syntax in the prior model.",
+      "result": "Five still admit a declared pattern and three lose all declared patterns under this model. The test checked syntax only. Physical alignment was not measured.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Previously syntax-positive",
+          "value": 8,
+          "pointer": "/counts/previousSyntaxPositiveLanguages"
+        },
+        {
+          "label": "Still syntax-positive",
+          "value": 5,
+          "pointer": "/counts/syntaxPositiveLanguages"
+        },
+        {
+          "label": "Excluded by shared query",
+          "value": 3,
+          "pointer": "/counts/excludedPreviouslyPositiveLanguages"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/g02_shared_query/RESULT.json",
+        "sha256": "f8956a3b5553be816822b866bd13b61c4c35585a94139087f936d267f2b9fcda"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/g02_shared_query/RESULT.md",
+      "scene": {
+        "layout": "mirror",
+        "page": 77
+      },
+      "sceneNote": "Actual Issue 24 page 77 in mirror view. The modeled offsets apply to leaves 76/77 and 78/79.",
+      "methodId": "batch20-g02"
     }
   ]
 }
