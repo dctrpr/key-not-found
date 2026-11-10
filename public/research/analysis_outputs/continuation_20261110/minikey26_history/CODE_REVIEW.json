@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "completedAtUTC": "2026-11-10T11:35:45.212Z",
+  "reviewDecision": "PASS",
+  "reviewScope": "static-and-synthetic-controls-only",
+  "scriptHashes": {
+    "scripts/check_minikey26_lead.cjs": "98146d0f97b359b5830991048974474290cac4f1cd97218986af9b334f744e44",
+    "scripts/minikey26_address_audit.cjs": "a351e20f4bb5b9ab20fdd97dc07f8d87afe48962fb25dff20a008a56e83b7a64",
+    "scripts/independent_minikey26_addresses.py": "27f1de62281f4c4e43906acd65f9ae8fa6b264d5dc4cf54a3faf998719479ba8"
+  },
+  "exactDiffsAgainstFrozenBaselinesVerified": true,
+  "safeSourceResultSha256": "8eb395f125c9c8eb953ad0c6db8a2d662b517099fdc5763e5e69503918d2e30e",
+  "safeSourceResultPinVerified": true,
+  "candidateFingerprint": "16a4c57bfd34fa3663560b3eb13ec981aed6df399d8d5701e69716cbe7c435c1",
+  "candidateLength": 26,
+  "fixedMainnetConstructions": 5,
+  "providers": 2,
+  "maximumRequests": 10,
+  "maximumConcurrency": 2,
+  "retries": 0,
+  "timeoutMilliseconds": 20000,
+  "sourcePins": 2,
+  "scriptPins": 3,
+  "registrationBytesCheckedBeforeTargetOpenByCode": true,
+  "independentImplementationsAgreeBeforeQueriesByCode": true,
+  "requestFailuresNeverZeroByCode": true,
+  "publicOutputExplicitlyAllowlisted": true,
+  "legacyScannerCLIAndExportsDisabled": true,
+  "syntheticControls": {
+    "passed": true,
+    "independentPythonChecks": 32,
+    "synthetic26FormatControls": 5,
+    "synthetic26FiveAddressAgreement": true,
+    "frozenSourceGuardMutationRejections": 23,
+    "classifierCases": 15,
+    "errorNoRetryMocks": 5,
+    "successfulMockAttempts": 10,
+    "measuredMaximumConcurrency": 2,
+    "syntheticLeadConfirmedDifferentFromTarget": true
+  },
+  "independentGuardAudit": {
+    "targetOpens": 0,
+    "networkAttempts": 0,
+    "unexpectedSpawns": 0,
+    "allowedPythonSpawns": 2,
+    "syntheticLeadIdentityChecked": 1,
+    "pythonAudits": [
+      {
+        "targetOpens": 0,
+        "networkAttempts": 0
+      },
+      {
+        "targetOpens": 0,
+        "networkAttempts": 0
+      }
+    ]
+  },
+  "temporaryRawControlFixturesRemoved": true,
+  "rawTargetCandidateReads": 0,
+  "targetScalarDerivations": 0,
+  "targetAddressDerivations": 0,
+  "liveNetworkQueries": 0,
+  "walletImports": 0,
+  "transactions": 0,
+  "publicEdits": 0,
+  "gitOperations": 0,
+  "blockers": [],
+  "limitations": [
+    "Static and synthetic controls do not constitute a target history result.",
+    "Root separately verifies actual remote public registration before explicit execution.",
+    "The planned result is scoped to five declared mainnet constructions, two providers and recorded times."
+  ]
+}

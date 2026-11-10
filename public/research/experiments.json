@@ -549,7 +549,7 @@
       ],
       "limitations": [
         "Incomplete or boundary-ambiguous selected word geometry makes the affected stream inconclusive.",
-        "Direction/projection variants are not independent theories.75\u219274 has no target body and is outside this scope."
+        "Direction/projection variants are not independent theories.75→74 has no target body and is outside this scope."
       ]
     },
     {
@@ -794,7 +794,7 @@
       "status": "tested",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "Complete candidate-set union over the 24 registered global languages and four literal formats; the sole checksum lead then checked through five fixed mainnet address constructions at two providers on 2026-11-10T07:40:53\u201354Z. Other wallet constructions remain outside scope.",
+      "scope": "Complete candidate-set union over the 24 registered global languages and four literal formats; the sole checksum lead then checked through five fixed mainnet address constructions at two providers on 2026-11-10T07:40:53–54Z. Other wallet constructions remain outside scope.",
       "result": "One 30-character minikey checksum pass remains format-valid. Independent Python/Node derivation agreed on five address constructions; all ten provider responses reported zero chain and mempool statistics. No evidence of a funded key within those registered constructions at check time; the puzzle remains unsolved.",
       "evidence": [
         "analysis_outputs/continuation_20261110/mirror_global_envelope/RESULT.md",
@@ -828,7 +828,7 @@
       "kind": "method-test",
       "independentTheory": false,
       "scope": "The exact 1,940 previously saved Orange Party readings and their pre-existing character reversals; four literal formats, fixed source/code pins and resource bounds. The single checksum lead has a separately registered five-construction, two-provider history follow-up.",
-      "result": "The frozen replay produced 3,709 forms: all 15 shaped WIFs failed, one of 205 shaped minikeys passed an eight-bit check, and no hex/BIP39 shapes appeared. Independent replay verification agreed. The 22-character lead then had zero reported chain/mempool history in all ten two-provider responses across five Python/Node-agreed constructions at 2026-11-10T09:23:52\u201354Z. No authenticated prize key.",
+      "result": "The frozen replay produced 3,709 forms: all 15 shaped WIFs failed, one of 205 shaped minikeys passed an eight-bit check, and no hex/BIP39 shapes appeared. Independent replay verification agreed. The 22-character lead then had zero reported chain/mempool history in all ten two-provider responses across five Python/Node-agreed constructions at 2026-11-10T09:23:52–54Z. No authenticated prize key.",
       "evidence": [
         "analysis_outputs/continuation_20261110/issue27_stream_coverage/RESULT.md",
         "analysis_outputs/continuation_20261110/issue27_stream_coverage/RESULT.json",
@@ -884,11 +884,11 @@
     {
       "id": "minikey26-original-compatibility",
       "title": "The missing 26-character minikey length",
-      "status": "tested",
+      "status": "partial",
       "kind": "coverage-audit",
       "independentTheory": false,
       "scope": "The original 22 saved body readings/42 forms plus the unchanged 24 global mirror language graphs; only historical 26-character minikey compatibility.",
-      "result": "All 42 frozen forms and 24 unchanged language graphs completed: 207 distinct 26-character shapes, one weak eight-bit checksum pass. Independent full candidate-set replay and Node crypto agreed. Source-witness/history follow-up remains open; no scalar/address/network work in this experiment.",
+      "result": "The complete format replay found one weak checksum pass among 207 shapes. Its sole global source witness requires uncertain choices and no nominal reading matches. Format validity is reproduced; creator intent and funding are unestablished. A separate registered five-construction history check is next.",
       "evidence": [
         "analysis_outputs/continuation_20261110/minikey26_compatibility/RESULT.md",
         "analysis_outputs/continuation_20261110/minikey26_compatibility/RESULT.json",
@@ -896,7 +896,9 @@
         "analysis_outputs/continuation_20261110/minikey26_compatibility/NODE_CHECK.json",
         "analysis_outputs/continuation_20261110/minikey26_compatibility/PROTOCOL.md",
         "analysis_outputs/continuation_20261110/minikey26_compatibility/PROTOCOL.json",
-        "analysis_outputs/continuation_20261110/minikey26_compatibility/HISTORICAL_SOURCE.json"
+        "analysis_outputs/continuation_20261110/minikey26_compatibility/HISTORICAL_SOURCE.json",
+        "analysis_outputs/continuation_20261110/minikey26_compatibility/SOURCE_WITNESS_REVIEW.md",
+        "analysis_outputs/continuation_20261110/minikey26_compatibility/SOURCE_WITNESS_REVIEW.json"
       ],
       "reproduce": [
         "python3 scripts/minikey26_compatibility.py --self-test",
@@ -907,6 +909,29 @@
         "Historical software compatibility is not evidence that the creator chose this length.",
         "Earlier tests remain valid for their declared 22/30 lengths. Other populations remain outside this replay.",
         "One-byte checksum passes can occur by chance; no scalar/address derivation or network lookup is part of this protocol."
+      ]
+    },
+    {
+      "id": "minikey26-history",
+      "title": "The 26-character lead: five-address history check",
+      "status": "in-progress",
+      "kind": "history-follow-up",
+      "independentTheory": false,
+      "scope": "One frozen 26-character checksum lead, five fixed mainnet constructions, exact Node/Python agreement, two providers and ten read-only requests maximum.",
+      "result": "Controls and independent code review passed. Target derivation and queries begin only after this separate protocol is published and its registration commit verified.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/minikey26_history/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/minikey26_history/PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/minikey26_history/CONTROL_RECEIPT.json",
+        "analysis_outputs/continuation_20261110/minikey26_history/CODE_REVIEW.json"
+      ],
+      "reproduce": [
+        "node scripts/check_minikey26_lead.cjs --self-test"
+      ],
+      "limitations": [
+        "The checksum lead is compatible with chance and its source witness needs uncertain membership choices.",
+        "Only five declared constructions and two provider snapshots are covered; other scripts, HD paths and future funding remain open.",
+        "No authenticated prize address or solution has been established; activity would require private source review."
       ]
     }
   ],

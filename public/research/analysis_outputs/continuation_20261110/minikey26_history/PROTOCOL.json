@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "testId": "minikey26-history",
+  "candidateFingerprint": "16a4c57bfd34fa3663560b3eb13ec981aed6df399d8d5701e69716cbe7c435c1",
+  "fingerprintRule": "SHA256(ASCII(KEY404/batch20/record-fingerprint/v1) || 0x00 || ASCII(minikey) || 0x00 || ASCII(candidate)); never SHA256(candidate)",
+  "candidateLength": 26,
+  "candidateSelection": "The single checksum-valid 26-character minikey in the separately registered historical-compatibility replay, selected only by its frozen domain-separated fingerprint; no edited candidates.",
+  "addressTypes": [
+    "P2PKH uncompressed",
+    "P2PKH compressed",
+    "P2SH-P2WPKH",
+    "P2WPKH",
+    "P2TR key-path with BIP341 TapTweak"
+  ],
+  "providers": [
+    "blockstream",
+    "mempool"
+  ],
+  "requestsMaximum": 10,
+  "concurrencyMaximum": 2,
+  "retries": 0,
+  "endpointPaths": [
+    "https://blockstream.info/api/address/:address",
+    "https://mempool.space/api/address/:address"
+  ],
+  "queryPolicy": "GET every registered address at both providers; 20-second timeout, redirects rejected, no-cache requested. Validate matching address and all five nonnegative safe integer statistics in both chain_stats and mempool_stats. No request failure becomes zero.",
+  "addressDerivationPolicy": "Two implementations must agree exactly before queries. ASCII minikey SHA256 scalar; public-key compression as declared; P2TR even-Y internal lift and BIP341 TapTweak with no script tree. No HD paths, passwords, arbitrary prose hashes or script guessing.",
+  "zeroCriterion": "All ten attempts return valid, mutually agreeing all-zero chain and mempool statistics. Scoped to these five mainnet constructions and recorded times.",
+  "failurePolicy": "Any derivation, control, source/code pin or provider failure/disagreement is inconclusive. Any validated activity triggers private review, not a prize or ownership claim.",
+  "sourceHashes": {
+    "analysis_outputs/continuation_20261110/minikey26_compatibility/RESULT.json": "8eb395f125c9c8eb953ad0c6db8a2d662b517099fdc5763e5e69503918d2e30e",
+    "package-lock.json": "e2754b2bbb763bd18670735b4b317dd9235e34f1d961123dbe551603657551a8"
+  },
+  "scriptHashes": {
+    "scripts/check_minikey26_lead.cjs": "98146d0f97b359b5830991048974474290cac4f1cd97218986af9b334f744e44",
+    "scripts/minikey26_address_audit.cjs": "a351e20f4bb5b9ab20fdd97dc07f8d87afe48962fb25dff20a008a56e83b7a64",
+    "scripts/independent_minikey26_addresses.py": "27f1de62281f4c4e43906acd65f9ae8fa6b264d5dc4cf54a3faf998719479ba8"
+  },
+  "dependencyVersions": {
+    "bitcoinjs-lib": "7.0.0",
+    "tiny-secp256k1": "2.2.4"
+  },
+  "controls": [
+    "Original published30-character minikey and scalar-one five-address vectors",
+    "Unchanged independent Python self-checks",
+    "Synthetic valid/invalid26-character minikey controls",
+    "Synthetic26 exact five-address agreement between Node and Python",
+    "Frozen complete-result and single26-character-lead summary guards",
+    "Provider statistics/error/no-retry and exact10-attempt/two-way-concurrency controls",
+    "Public output allowlist and candidate/scalar/address omission guards"
+  ],
+  "publication": "Public protocol and all pinned files must exist in the supplied Git commit; root verifies the commit on GitHub before target derivation or live queries. Candidate, scalar, source locators and address association remain private; safe result is explicitly allowlisted.",
+  "walletImports": 0,
+  "transactions": 0,
+  "limitations": [
+    "The minikey checksum is eight bits; one pass among 207 distinct shapes is compatible with chance (207/256 is about 0.81 expected passes under uniform checks).",
+    "Historical 26-character implementation compatibility does not establish author intent or the source-model rule.",
+    "The global source envelope permits inconsistent independent membership choices; source-witness review is a separate operation.",
+    "Zero history from two explorer operators excludes only the five registered constructions at the recorded times, not every wallet construction or future funding.",
+    "No authenticated prize address is known. Activity would not itself authenticate a solution, ownership or 20 BTC.",
+    "No HD path, password, arbitrary encoding, wallet import, signing or transaction is included.",
+    "Python arithmetic is variable-time and memory clearing is best effort; raw target material is not printed or serialized publicly."
+  ],
+  "preparedAtUTC": "2026-11-10T11:38:02.311Z"
+}
