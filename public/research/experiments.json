@@ -730,6 +730,24 @@
         "A weak file sanity check: physical printing/scanning/JPEG may erase an earlier digital payload.",
         "No arbitrary pixel-buffer hashes or32-byte scalar guesses. This does not rule out print-origin encoding."
       ]
+    },
+    {
+      "id": "mirror-boundary-envelope",
+      "title": "Mirror-first boundary envelope",
+      "status": "in-progress",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Source review followed by a preregistered pair-local envelope of uncertain first/last selected words. Globals outside scope.",
+      "result": "Source review is underway. No completed decoding or negative result is claimed.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/mirror_boundary_review/PLAN.md"
+      ],
+      "reproduce": [],
+      "limitations": [
+        "Frozen guards are heuristic review bounds, not calibrated actual-scan errors.",
+        "Neither creator-linked source uniquely specifies a stencil or word-center selector.",
+        "Global concatenations and other mirror mechanisms remain outside this proposed pair-local test."
+      ]
     }
   ],
   "countingPolicy": "This is a curated set of method families/source audits, not a total count of independent theories. Historical administrative gates and correlated variants are not counted as independent experiments. Falsified means only the concrete stated candidate/address scope.",
