@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "status": "PASS",
+  "scriptSha256": "63ea26d7ae838e6a1da53052fc039d8245120846b7916ec899134428e5097704",
+  "startedAtUTC": "2026-11-10T19:53:58.033487+00:00",
+  "completedAtUTC": "2026-11-10T19:53:59.561771+00:00",
+  "selfTest": {
+    "version": 1,
+    "status": "PASS",
+    "syntheticCohorts": 4,
+    "syntheticOriginalSerializationRoutines": 3,
+    "syntheticStrideReadings": 72,
+    "syntheticStrictKnownReadings": 60,
+    "positiveSharedFamilies": 8,
+    "minikeyChecksumLengths": [
+      22,
+      26,
+      30
+    ],
+    "rejectionControls": 24,
+    "directVerifiedByteCompilation": true,
+    "targetInputsOpened": 0,
+    "targetFormsOrShapesConstructed": 0,
+    "primaryRunnerImports": 0,
+    "legacyLoaderCalls": 0,
+    "scalarDerivations": 0,
+    "addressDerivations": 0,
+    "networkQueries": 0,
+    "methodDependency": "Reused frozen independent form/26 routines and deliberately shared literal validators."
+  },
+  "monitoredDenials": {
+    "targetInputOpens": 0,
+    "publicBytecodeOpens": 0,
+    "networkCalls": 0,
+    "subprocessCalls": 0,
+    "primaryFunctionCalls": 0,
+    "bareMinikeyHashes": 0
+  },
+  "onlyPublicFilesOpened": [
+    "site/public/research/scripts/batch20_common.py",
+    "site/public/research/scripts/batch20_support/controls.json",
+    "site/public/research/scripts/batch20_support/english.txt",
+    "site/public/research/scripts/verify_batch20_supplemental.py",
+    "site/public/research/scripts/verify_funky_sand_direct.py",
+    "site/public/research/scripts/verify_issue27_stride12.py"
+  ],
+  "actualTargetWorkPerformed": false,
+  "activityScope": "Synthetic controls and pinned public source-code/support bytes only; no target generation, reconstruction, forms or validation."
+}

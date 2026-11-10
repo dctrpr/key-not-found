@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "status": "PASS",
+  "startedAtUTC": "2026-11-10T20:00:39.140886+00:00",
+  "completedAtUTC": "2026-11-10T20:00:39.475080+00:00",
+  "codePins": {
+    "scripts/columns_compatibility.py": "6ef74c5ee9a908f7e870dca07ddfee758016c009981168a73ed7a5e52def2679",
+    "scripts/verify_columns_compatibility.py": "63ea26d7ae838e6a1da53052fc039d8245120846b7916ec899134428e5097704"
+  },
+  "primaryControls": {
+    "version": 1,
+    "testId": "columns-fixed-output-compatibility",
+    "status": "PASS",
+    "selfTestChecks": 60,
+    "targetSourcesOpened": false,
+    "targetReadingsReconstructed": false,
+    "targetFormsConstructed": false,
+    "targetChecks": 0,
+    "wholeProducerCalls": 0,
+    "bareMinikeyHashes": 0,
+    "legacyValidatorsOutsideFunky": 0,
+    "strictSubsetValidatorCalls": 0,
+    "strictSubsetChecksumCalls": 0,
+    "strictSubsetFingerprintCalls": 0,
+    "ocrReruns": 0,
+    "networkQueries": 0
+  },
+  "independentControls": {
+    "version": 1,
+    "status": "PASS",
+    "syntheticCohorts": 4,
+    "syntheticOriginalSerializationRoutines": 3,
+    "syntheticStrideReadings": 72,
+    "syntheticStrictKnownReadings": 60,
+    "positiveSharedFamilies": 8,
+    "minikeyChecksumLengths": [
+      22,
+      26,
+      30
+    ],
+    "rejectionControls": 24,
+    "directVerifiedByteCompilation": true,
+    "targetInputsOpened": 0,
+    "targetFormsOrShapesConstructed": 0,
+    "primaryRunnerImports": 0,
+    "legacyLoaderCalls": 0,
+    "scalarDerivations": 0,
+    "addressDerivations": 0,
+    "networkQueries": 0,
+    "methodDependency": "Reused frozen independent form/26 routines and deliberately shared literal validators."
+  },
+  "peerComparisons": {
+    "syntheticOriginalSerializationByteAgreements": 3,
+    "syntheticIssue26GzipAgreement": true,
+    "fullFourCohortFormsAndRawValidationAgreement": true,
+    "allEightFunkyFamiliesPositive": true,
+    "issue26CommonValidatorCalls": 0,
+    "strictSubsetCachedPositiveAgreement": true,
+    "strictSubsetNoExtraChecks": true,
+    "realRegistrationAPINoncommitRejects": 2,
+    "missingCLIArgumentsRejected": 2,
+    "privateSymlinkIntoSiteRejects": 2,
+    "actualSyntheticCounts": [
+      3,
+      5,
+      72,
+      6
+    ]
+  },
+  "monitor": {
+    "targetOpens": 0,
+    "processCalls": 0,
+    "networkEvents": 0,
+    "frozenPycOpens": 0,
+    "bareMinikeyHashes": 0,
+    "strictQuestionmarkHashes": 0,
+    "strictValidatorCalls": 0,
+    "strictFingerprintCalls": 0
+  },
+  "scratchRelativeCleanupNames": [
+    "fresh",
+    "research",
+    "root"
+  ],
+  "limits": [
+    "Synthetic source objects only; original target source JSON/text and private historical artifacts were denied.",
+    "Shared literal validators are deliberately shared; agreement is full output reproduction, not independent shared cryptographic mathematics."
+  ]
+}

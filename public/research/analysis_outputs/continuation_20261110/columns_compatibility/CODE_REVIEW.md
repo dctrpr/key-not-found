@@ -1,0 +1,18 @@
+# Four-cohort compatibility adapters — technical peer review
+
+**PASS. No remaining material blocker.** This is final static/source-free readiness, not an executed target result or a new puzzle milestone.
+
+Final primary SHA256: `6ef74c5ee9a908f7e870dca07ddfee758016c009981168a73ed7a5e52def2679`.
+Final verifier SHA256: `63ea26d7ae838e6a1da53052fc039d8245120846b7916ec899134428e5097704`.
+
+The exact 57-source/5-script maps, artifact counts/hashes/schemas, per-cohort matrix, serializers and reconstruction claims match audit05 and the frozen contract. Human protocol/CLI is consistent. Both actual registration paths require a full commit object and current/registered protocol/source/code equality before target parsing or original-reading reconstruction. The global four-original-artifact byte barrier precedes form generation and candidate checks. Public gzip decompression and the three deterministic original materializations are explicitly separated; no source OCR/repair or new selector is introduced.
+
+The review identified one source-containment policy disparity. The authors corrected both source and transitive code/support paths before registration, with resolved in-root checks and synthetic escape controls. Final dependency/common execution compiles hash-verified source bytes directly with original public file paths, not cached pyc. Primary preserves/restores the stride producer's sys.path side effect. Independent reconstruction uses its own loops and avoids the old incidental form/validator calls.
+
+The gate matrix is exact: first full eight-family coverage plus 26 for Funky ; 26 only for Issue26; added four plus 26 for both Issue27 populations. Issue26 direct exact-versus-compacted-set proof occurs only after registration. Stride source uncertainty remains projection-specific; the strict-known whole-record/form subset reuses nominal validation verdicts and fingerprints, with zero extra checksum/validator calls. It is nested coverage, not a fifth population. All safe result fields are allowlisted aggregates, whole-artifact integrity and scope; raw values, per-candidate fingerprints and associations stay private. Fresh private outputs exclude the whole site checkout and use 0700/0600. Failures remain inconclusive.
+
+Own source-free controls passed: primary 60 checks, independent 24 rejection controls; three synthetic original serializers agreed byte-for-byte, bounded synthetic Issue26 gzip agreed, and all four complete synthetic forms/raw-validation objects agreed. All eight Funky format families had positive controls. Issue26 invoked no repeated common validators. Strict subset positive results matched without new validation, question-mark checksum or fingerprint calls. Both actual installed-path registration APIs rejected a mock noncommit before target access; missing run/verify arguments and private symlinks into Site were rejected.
+
+Own monitor observed target opens 0, process/network calls 0, frozen pyc opens 0, bare minikey hashes 0, strict-subset checksum/validator/fingerprint calls 0. Synthetic record counts and statuses are controls, not real source coverage or puzzle outcomes. Shared literal validators remain deliberately shared; this is not independent cryptographic mathematics for those gates.
+
+No target source, raw historical artifact, target reconstruction, form/shape enumeration, checksum, public edit or Git action occurred. Root must publish and independently verify registration before actual execution. The JSON receipt identifies the final protocol/code pins and synthetic evidence. No further tests are justified before that registration without a new failure or change.

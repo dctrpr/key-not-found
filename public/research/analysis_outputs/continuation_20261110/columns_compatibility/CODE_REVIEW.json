@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "status": "PASS",
+  "materialBlockers": [],
+  "completedAtUTC": "2026-11-10T20:01:55.770Z",
+  "scope": "Final frozen combined-column adapters: static source/registration/private-output review and source-free synthetic reproduction only. No actual target reconstruction or validation.",
+  "protocolSHA256": "7e7868d2fa93110cced1ab8f6f8ff5e71c2235aabdc662f558ffcbf90f504cc5",
+  "scriptHashes": {
+    "scripts/columns_compatibility.py": "6ef74c5ee9a908f7e870dca07ddfee758016c009981168a73ed7a5e52def2679",
+    "scripts/verify_columns_compatibility.py": "63ea26d7ae838e6a1da53052fc039d8245120846b7916ec899134428e5097704",
+    "scripts/batch20_supplemental_formats.py": "385524773ef0c20a2af1858bbf1d1f15cb45fd47fdf08627b0b97d2dda2754ac",
+    "scripts/verify_batch20_supplemental.py": "a4bf930523eb29c0da942439eb6005514fc60d0dfb4f6deede2171380bd4389c",
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d"
+  },
+  "sourcePinCount": 57,
+  "scriptPinCount": 5,
+  "uniqueSourceAndScriptPaths": 61,
+  "contractSHA256": "6f23a8e475e27ab902e15401b85ed866d5fbacff31d501d6bb59ef5a46c5635f",
+  "definitionFileSHA256": "03694179753d757d3a46c9c5d3a0384a8c55bb01af4fdc882ab10d9ae2e6e692",
+  "humanProtocolSHA256": "220d40281c862fed1927f812ebc89901239834ba8e99eee003c2bd4cccdbafde",
+  "checks": {
+    "metadataMatchesAudit05AndReproducibility": true,
+    "fullCommitAndCurrentRegisteredByteGatesBeforeTargetParse": true,
+    "resolvedSourceAndTransitiveCodeContainment": true,
+    "verifiedSourceCompilationWithoutPyc": true,
+    "allFourOriginalArtifactByteBarrierBeforeFormsAndValidators": true,
+    "originalSerializersAndPrivateArtifactPinAuthoritiesPreserved": true,
+    "exactMatrixFunky8And26Issue26Only26Issue27Added4And26": true,
+    "issue26DirectExactCompactProofDeclaredAfterRegistration": true,
+    "strideUncertaintyAndNestedSubsetPreserved": true,
+    "strictSubsetValidatorsChecksumsFingerprintsReused": true,
+    "privateWholeSiteExclusion0700And0600": true,
+    "safeAllowlistNoRawCandidateOrPerCandidateFP": true,
+    "failureIsInconclusiveNotNegative": true,
+    "humanProtocolCLIAndScopeConsistent": true
+  },
+  "fixedDuringReview": {
+    "issue": "Verifier source reads could follow a matching-content symlink outside the declared research root; transitive primary code/support containment also needed consistency.",
+    "resolution": "Both authors refroze before registration with resolved containment guards and synthetic symlink/absolute/parent-path rejects. No source selector/format algorithm/contract change.",
+    "finalPrimarySHA256": "6ef74c5ee9a908f7e870dca07ddfee758016c009981168a73ed7a5e52def2679",
+    "finalVerifierSHA256": "63ea26d7ae838e6a1da53052fc039d8245120846b7916ec899134428e5097704"
+  },
+  "synthetic": {
+    "primaryControls": 60,
+    "independentRejectionControls": 24,
+    "syntheticOriginalSerializedByteAgreements": 3,
+    "syntheticIssue26GzipByteAgreement": true,
+    "fullFourCohortFormsAndRawValidationAgreement": true,
+    "allEightFunkyFamiliesHavePositiveControls": true,
+    "issue26RepeatedCommonValidatorCalls": 0,
+    "cachedStrictPositiveAgreement": true,
+    "realRegistrationAPINoncommitRejections": 2,
+    "missingCLIArgumentsRejections": 2,
+    "privateSymlinkIntoSiteRejections": 2,
+    "fixtureRecordCounts": [
+      3,
+      5,
+      72,
+      6
+    ],
+    "countsAreSyntheticNotRealTargets": true
+  },
+  "monitor": {
+    "targetOpens": 0,
+    "processCalls": 0,
+    "networkEvents": 0,
+    "frozenPycOpens": 0,
+    "bareMinikeyHashes": 0,
+    "strictQuestionmarkHashes": 0,
+    "strictValidatorCalls": 0,
+    "strictFingerprintCalls": 0
+  },
+  "syntheticReceiptSHA256": "9d423a7b7094ff7e825442868608490d0a3ac2ee3f138b42b61157c4051c62a4",
+  "syntheticHarnessSHA256": "6031deadc4a3cb03454ec18989bad167fbd3bdabe9d48df5001456a5153f9011",
+  "limitations": [
+    "The four shared literal-format engines are deliberately shared; complete output agreement is not independent cryptographic mathematics for those gates.",
+    "No actual source artifact was regenerated and no actual format verdict was computed. Root must still publish/verify registration before target execution.",
+    "Synthetic fixtures need not share real artifact hashes or every real population cardinality; real exact counts/hash barriers were checked statically and in mutation controls.",
+    "Peer monitor permits single-component dir_fd scratch cleanup names; actual pinned code/support inputs are absolute and whitelisted. Independent author denial receipt separately records no primary/target/process/network access."
+  ],
+  "activity": {
+    "targetSourcesOpened": 0,
+    "targetReadingsReconstructed": 0,
+    "targetFormsOrShapesConstructed": 0,
+    "targetValidatorsOrChecksums": 0,
+    "network": 0,
+    "processCalls": 0,
+    "gitActions": 0,
+    "publicEdits": 0,
+    "authorCodeEditsByReviewer": 0
+  }
+}
