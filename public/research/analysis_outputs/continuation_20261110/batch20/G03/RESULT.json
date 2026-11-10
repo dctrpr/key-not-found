@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "batchId": "keiser-20261110-batch20",
+  "testId": "G03",
+  "startedAtUTC": "2026-11-10T05:25:28.010Z",
+  "registrationCommit": "90ad1d694b0eb236494ae199b87de05db5e3d331",
+  "protocolSha256": "e69215cd826a8fd63c588d5fe9295a71a1807278fd499b9a77cff119c48d4f53",
+  "scriptSha256": "e7786acc472fa3f7a294fe6391e74bd6f8840017e30d9f54941544019dbafb9a",
+  "swiftSha256": "3a663b53c792d446e5c69bc5d599bdaf3ebfb5975e892d7dd1d055f61faeae49",
+  "networkQueries": 0,
+  "privateReviewRequired": false,
+  "title": "Orange/black two-alphabet channel",
+  "family": "printed-highlight-state",
+  "priority": "exploratory",
+  "sourceHashes": {
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "analysis_outputs/continuation_20261109/george_sand/highlight_physical_lines.json": "cc3b71163cd186c19337462639551f6ab97c407268e5e478ee5f101d716763f9",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b"
+  },
+  "parameters": {
+    "unitTypes": [
+      "fragment",
+      "word",
+      "letter"
+    ],
+    "scopes": [
+      "global",
+      75,
+      76,
+      77,
+      78,
+      79
+    ],
+    "fragmentCount": 46,
+    "decoders": {
+      "baconAlphabets": [
+        "ABCDEFGHIKLMNOPQRSTUWXYZ",
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      ],
+      "baconPhases": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "asciiPhases": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "bitAssignments": [
+        "original",
+        "complement"
+      ],
+      "orders": [
+        "forward",
+        "reverse"
+      ],
+      "incompleteBlocks": "Record unused prefix/suffix; no padding or guessed bits.",
+      "invalidDecodedGroup": "␞ hard boundary; no deletion, word joining or format window across invalid groups/bytes."
+    },
+    "maximumLabeledDecodes": 1296
+  },
+  "limitations": [
+    "Color encoding was not specified by the creator; no DOCM/manual partial-bold state is used.",
+    "Readable-looking fragments or a weak checksum do not establish intentional encoding."
+  ],
+  "controls": {
+    "passed": true,
+    "targetInputsRead": false,
+    "targetFormatChecks": 0,
+    "networkQueries": 0,
+    "controls": [
+      "mask-center-boundary",
+      "deskew-inverse",
+      "three-state-truth-table",
+      "Bacon24/26",
+      "ASCII",
+      "doubled-gap",
+      "line-shift±2px",
+      "zero-shift-grid",
+      "IoU",
+      "bit-packing",
+      "incremental-full-scanner-agreement",
+      "shared-format-controls"
+    ],
+    "common": {
+      "passed": true,
+      "controls": [
+        "official2048wordlist",
+        "BIP39valid-invalid",
+        "BIP39-invalid-group-barrier",
+        "BIP32-all5SLIP132-private-versions",
+        "invalid-root-parent-child-marker-scalar",
+        "BIP38-all6-structural-flag-combinations",
+        "BIP38-reserved-flags-checksum",
+        "Base58Check",
+        "Bech32-v0",
+        "Bech32m-v1",
+        "cross-checksum-version-and-invalid-padding",
+        "SEC-oncurve",
+        "WIF",
+        "minikey22and30-embedded",
+        "invalid-checksum-scalar-case-point",
+        "safe-domain-separated-output"
+      ],
+      "targetInputRead": false,
+      "targetChecks": 0,
+      "networkQueries": 0
+    }
+  },
+  "privateArtifactNames": [
+    "streams.private.json",
+    "DETAILS.private.json"
+  ],
+  "evaluation": {
+    "streamCount": 1296,
+    "uniqueStreamCount": 615,
+    "uniqueFormCount": 616,
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39"
+    ],
+    "shapeCounts": {
+      "wif": 0,
+      "minikey": 0,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "uniqueShapeCounts": {
+      "wif": 0,
+      "minikey": 0,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "executionCount": 0,
+    "validCounts": {
+      "wif": 0,
+      "minikey": 0,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "hits": [],
+    "privateReviewRequired": false,
+    "fingerprintRule": {
+      "algorithm": "SHA-256",
+      "domainText": "KEY404/batch20/record-fingerprint/v1",
+      "separatorHex": "00",
+      "rule": "SHA256(domain || 0x00 || ASCII(format) || 0x00 || canonical record bytes)"
+    },
+    "networkQueries": 0,
+    "rawAsciiScalarInterpretations": 0
+  },
+  "procedureCounts": {
+    "physicalFragments": 46,
+    "unitInventory": {
+      "fragment": {
+        "units": 46,
+        "perPage": {
+          "75": 11,
+          "76": 10,
+          "77": 8,
+          "78": 8,
+          "79": 9
+        }
+      },
+      "word": {
+        "units": 204,
+        "perPage": {
+          "75": 43,
+          "76": 47,
+          "77": 38,
+          "78": 31,
+          "79": 45
+        }
+      },
+      "letter": {
+        "units": 992,
+        "perPage": {
+          "75": 211,
+          "76": 202,
+          "77": 200,
+          "78": 165,
+          "79": 214
+        }
+      }
+    },
+    "labeledDecodes": 1296
+  },
+  "outcome": "no-valid-literal-key-in-declared-complete-readings",
+  "completeNegative": true,
+  "negativeCriterion": "No validated literal key excludes the exact declared color-state serializations/decodes.",
+  "completedAtUTC": "2026-11-10T05:25:28.052Z",
+  "durationMs": 42
+}

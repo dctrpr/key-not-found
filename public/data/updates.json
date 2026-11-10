@@ -2,6 +2,132 @@
   "updatedOn": "2026-11-10",
   "updates": [
     {
+      "id": "batch20-g10",
+      "date": "2026-11-10",
+      "completedAtUTC": "2026-11-10T05:27:05.026Z",
+      "category": "TESTED",
+      "title": "Current raster least-bit payload",
+      "body": "Checked 768 current-raster RGB least-bit serializations, with strict literal-format validation and no arbitrary scalar/hash guesses. No declared literal key. This is a weak file sanity check; printing, scanning or JPEG may erase an earlier payload.",
+      "evidence": "/research/analysis_outputs/continuation_20261110/batch20/G10/RESULT.md",
+      "kind": "research",
+      "methodIds": [
+        "batch20-g10"
+      ],
+      "branchId": "sources"
+    },
+    {
+      "id": "batch20-g09",
+      "date": "2026-11-10",
+      "completedAtUTC": "2026-11-10T05:25:30.357Z",
+      "category": "TESTED",
+      "title": "Corrected-leaf alignment specificity",
+      "body": "True-leaf mean overlap was 0.03085; the strongest wrong pair scored 0.03970. Shift rank was 0.03125, but the preregistered screen also required beating every wrong pair and failed. This weakens that exact alignment claim; it is not proof against all mirror methods.",
+      "evidence": "/research/analysis_outputs/continuation_20261110/batch20/G09/RESULT.md",
+      "kind": "research",
+      "methodIds": [
+        "batch20-g09"
+      ],
+      "branchId": "mirror-layout"
+    },
+    {
+      "id": "batch20-g07",
+      "date": "2026-11-10",
+      "completedAtUTC": "2026-11-10T05:26:30.920Z",
+      "category": "TESTED",
+      "title": "Spectral color-isolation OCR",
+      "body": "All 112 fixed spectral/baseline OCR views completed, yielding 1038 text streams and 1464 distinct forms. No declared literal key. Controls passed; OCR errors and other color transforms remain outside this result.",
+      "evidence": "/research/analysis_outputs/continuation_20261110/batch20/G07/RESULT.md",
+      "kind": "research",
+      "methodIds": [
+        "batch20-g07"
+      ],
+      "branchId": "numbers-type"
+    },
+    {
+      "id": "batch20-g06",
+      "date": "2026-11-10",
+      "completedAtUTC": "2026-11-10T05:26:03.907Z",
+      "category": "TESTED",
+      "title": "Reused capsule interior differences",
+      "body": "Five repeated capsule pairs produced 20 fixed residual OCR views plus combined readings (24 extracted text streams). Positive OCR controls passed; no declared literal key. This excludes only the registered detector-readable residual views, not all artwork encodings.",
+      "evidence": "/research/analysis_outputs/continuation_20261110/batch20/G06/RESULT.md",
+      "kind": "research",
+      "methodIds": [
+        "batch20-g06"
+      ],
+      "branchId": "mirror-layout"
+    },
+    {
+      "id": "batch20-g05",
+      "date": "2026-11-10",
+      "completedAtUTC": "2026-11-10T05:25:29.898Z",
+      "category": "INCONCLUSIVE",
+      "title": "Printed-line displacement channel",
+      "body": "Obtained 98 of 142 row displacement proxies; 44 rows were unavailable or could not be detrended. No page/global decoding had complete coverage. The registered baseline channel remains inconclusive.",
+      "evidence": "/research/analysis_outputs/continuation_20261110/batch20/G05/RESULT.md",
+      "kind": "research",
+      "methodIds": [
+        "batch20-g05"
+      ],
+      "branchId": "numbers-type"
+    },
+    {
+      "id": "batch20-g04",
+      "date": "2026-11-10",
+      "completedAtUTC": "2026-11-10T05:25:28.989Z",
+      "category": "INCONCLUSIVE",
+      "title": "Fixed interword-gap binary channel",
+      "body": "Measured 811 ink gaps across 104 of 142 rows. 38 rows failed source/ink guards and no full page was complete. No page/global bit string was decoded; spacing remains inconclusive.",
+      "evidence": "/research/analysis_outputs/continuation_20261110/batch20/G04/RESULT.md",
+      "kind": "research",
+      "methodIds": [
+        "batch20-g04"
+      ],
+      "branchId": "numbers-type"
+    },
+    {
+      "id": "batch20-g03",
+      "date": "2026-11-10",
+      "completedAtUTC": "2026-11-10T05:25:28.052Z",
+      "category": "TESTED",
+      "title": "Orange/black two-alphabet channel",
+      "body": "46 physical orange/black fragments were serialized at fragment, word and letter resolution: 1296 labeled decodes, 616 distinct forms. No declared literal key. This excludes only the fixed color-state/Bacon/ASCII serializations.",
+      "evidence": "/research/analysis_outputs/continuation_20261110/batch20/G03/RESULT.md",
+      "kind": "research",
+      "methodIds": [
+        "batch20-g03"
+      ],
+      "branchId": "numbers-type"
+    },
+    {
+      "id": "batch20-g02",
+      "date": "2026-11-10",
+      "completedAtUTC": "2026-11-10T05:25:28.009Z",
+      "category": "INCONCLUSIVE",
+      "title": "Two-sided printed highlight stencil",
+      "body": "0 complete readings; all 40 selection scopes contained uncertain boundary words. No complete stencil decoding was justified. The hypothesis remains open.",
+      "evidence": "/research/analysis_outputs/continuation_20261110/batch20/G02/RESULT.md",
+      "kind": "research",
+      "methodIds": [
+        "batch20-g02"
+      ],
+      "branchId": "mirror-layout"
+    },
+    {
+      "id": "batch20-g01",
+      "date": "2026-11-10",
+      "completedAtUTC": "2026-11-10T05:25:27.770Z",
+      "category": "INCONCLUSIVE",
+      "title": "Mirror first, then first selected word",
+      "body": "Only 12 of 120 labeled readings were complete; 36 of 40 selection scopes remained ambiguous at mask edges. The complete readings contain no declared literal key. This does not rule out mirror-first word selection.",
+      "evidence": "/research/analysis_outputs/continuation_20261110/batch20/G01/RESULT.md",
+      "kind": "research",
+      "methodIds": [
+        "batch20-g01"
+      ],
+      "branchId": "mirror-layout"
+    },
+    {
       "id": "batch20-t10",
       "date": "2026-11-10",
       "completedAtUTC": "2026-11-10T05:14:17.718Z",

@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "batchId": "keiser-20261110-batch20",
+  "testId": "G09",
+  "startedAtUTC": "2026-11-10T05:25:29.899Z",
+  "registrationCommit": "90ad1d694b0eb236494ae199b87de05db5e3d331",
+  "protocolSha256": "e69215cd826a8fd63c588d5fe9295a71a1807278fd499b9a77cff119c48d4f53",
+  "scriptSha256": "e7786acc472fa3f7a294fe6391e74bd6f8840017e30d9f54941544019dbafb9a",
+  "swiftSha256": "3a663b53c792d446e5c69bc5d599bdaf3ebfb5975e892d7dd1d055f61faeae49",
+  "networkQueries": 0,
+  "privateReviewRequired": false,
+  "title": "Corrected-leaf alignment specificity",
+  "family": "duplex-alignment-control",
+  "priority": "coverage-correction",
+  "sourceHashes": {
+    "magazine.pdf": "a30c61f8c49674afb7bccc6680d6477f6e919175386a2422de0a944db4e76c13",
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "analysis_outputs/3d_article_map/article_3d_map_data.json": "22c2285a6cd53f6bdda7bdd284d556c52ff55dea0a55cd1b549acbb81443eac3",
+    "analysis_outputs/continuation_20261109/inverted_duplex/inverted_duplex.json": "4d6d029bf5f7e90acfa1d456bc94e790913c7865b923c9367212c219867742f3",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b"
+  },
+  "parameters": {
+    "trueUnorderedPairs": [
+      [
+        76,
+        77
+      ],
+      [
+        78,
+        79
+      ]
+    ],
+    "bodyPages": [
+      75,
+      76,
+      77,
+      78,
+      79
+    ],
+    "resize": [
+      256,
+      328
+    ],
+    "primary": "Mean IoU of the two true horizontally mirrored highlight unions.",
+    "wrongPairs": 8,
+    "translationGrid": [
+      16,
+      16
+    ],
+    "excludeIdentityShift": true,
+    "jointNullShifts": 255,
+    "retainThreshold": "Primary exceeds every wrong-pair score and at least95% of the fixed joint-shift null."
+  },
+  "limitations": [
+    "Evidence audit, not a key decoder. Nonsignificance is not absence proof.",
+    "Old leaf controls largely used wrong pairs; symmetric directions are not independent observations."
+  ],
+  "controls": {
+    "passed": true,
+    "targetInputsRead": false,
+    "targetFormatChecks": 0,
+    "networkQueries": 0,
+    "controls": [
+      "mask-center-boundary",
+      "deskew-inverse",
+      "three-state-truth-table",
+      "Bacon24/26",
+      "ASCII",
+      "doubled-gap",
+      "line-shift±2px",
+      "zero-shift-grid",
+      "IoU",
+      "bit-packing",
+      "incremental-full-scanner-agreement",
+      "shared-format-controls"
+    ],
+    "common": {
+      "passed": true,
+      "controls": [
+        "official2048wordlist",
+        "BIP39valid-invalid",
+        "BIP39-invalid-group-barrier",
+        "BIP32-all5SLIP132-private-versions",
+        "invalid-root-parent-child-marker-scalar",
+        "BIP38-all6-structural-flag-combinations",
+        "BIP38-reserved-flags-checksum",
+        "Base58Check",
+        "Bech32-v0",
+        "Bech32m-v1",
+        "cross-checksum-version-and-invalid-padding",
+        "SEC-oncurve",
+        "WIF",
+        "minikey22and30-embedded",
+        "invalid-checksum-scalar-case-point",
+        "safe-domain-separated-output"
+      ],
+      "targetInputRead": false,
+      "targetChecks": 0,
+      "networkQueries": 0
+    }
+  },
+  "sourceImageInventory": [
+    {
+      "page": 73,
+      "embeddedImageSha256": "256d2c1cfe19317b9bfb8542991a3865116a6f2e7ca83a9e6e081695785d2f18",
+      "uprightRGBSha256": "87d7693b9e4e3e7a532483d70877ce907e57c9a2dca9d021afda9d5de274c59c",
+      "width": 2544,
+      "height": 3264,
+      "rotationDegrees": 180
+    },
+    {
+      "page": 74,
+      "embeddedImageSha256": "c8ae2c76bc6489ded0561d73015c30f369bf6ba812f1c240700a0748200f8667",
+      "uprightRGBSha256": "be1653f2e2d783d86a7c5d2e0021a7db9e44b63e2d71ab3601f0562cc48d1fdc",
+      "width": 2544,
+      "height": 3264,
+      "rotationDegrees": 180
+    },
+    {
+      "page": 75,
+      "embeddedImageSha256": "92a6c183c765c33339e401e2f2528d5f52f8019cda2d4fb36c49af49876fe880",
+      "uprightRGBSha256": "21d4c6e6775625d8920f23ed8b9acadb5cf79d4e7dca0c856621954a5c998ec6",
+      "width": 2544,
+      "height": 3264,
+      "rotationDegrees": 180
+    },
+    {
+      "page": 76,
+      "embeddedImageSha256": "d9f4a15c43f39b3af4840e9e92833117938c6c79a690c10a3623160c66778d3c",
+      "uprightRGBSha256": "3718950df9b579ad785590a8ca0f4ed3487035116452664fdb3f1c15037aa6de",
+      "width": 2544,
+      "height": 3264,
+      "rotationDegrees": 180
+    },
+    {
+      "page": 77,
+      "embeddedImageSha256": "e7aa5974278bc65142ecf11cf11bcef9c21ee85ca717585d553ce7de6e37347b",
+      "uprightRGBSha256": "193af233c853fb1450f7c53a6ce3432d190fc2dd12e78a7fe94dce1a54a4cba4",
+      "width": 2544,
+      "height": 3264,
+      "rotationDegrees": 180
+    },
+    {
+      "page": 78,
+      "embeddedImageSha256": "81066fc47ebee1654826f1957391bed19271189d817d45ec672c9f11a92ce29a",
+      "uprightRGBSha256": "effcf390dab626fe7aadeed799e45e1ad630c346ed9a85cef0c8bf646e3b30dc",
+      "width": 2544,
+      "height": 3264,
+      "rotationDegrees": 180
+    },
+    {
+      "page": 79,
+      "embeddedImageSha256": "984a7baaf2bebef86c7ad83fdb758e66fa7ab201c5e0e4f797e27927708c784b",
+      "uprightRGBSha256": "829f714940eaadeb0ce4afeec8dae0d5dde38c70f6e1a27a2e379bf9dbc66e38",
+      "width": 2544,
+      "height": 3264,
+      "rotationDegrees": 180
+    },
+    {
+      "page": 80,
+      "embeddedImageSha256": "b7eff4b9b03a80ccd1b18225a96c6bf7f611d950653d0fab2e2ae85e6cc056e6",
+      "uprightRGBSha256": "59de826c0fc4b1d556413ebaffff6a04de10d7c8bd6cceb1d32efbd3e87c29cf",
+      "width": 2544,
+      "height": 3264,
+      "rotationDegrees": 180
+    }
+  ],
+  "privateArtifactNames": [
+    "streams.private.json",
+    "DETAILS.private.json"
+  ],
+  "evaluation": {
+    "streamCount": 0,
+    "uniqueStreamCount": 0,
+    "uniqueFormCount": 0,
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39"
+    ],
+    "shapeCounts": {
+      "wif": 0,
+      "minikey": 0,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "uniqueShapeCounts": {
+      "wif": 0,
+      "minikey": 0,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "executionCount": 0,
+    "validCounts": {
+      "wif": 0,
+      "minikey": 0,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "hits": [],
+    "privateReviewRequired": false,
+    "fingerprintRule": {
+      "algorithm": "SHA-256",
+      "domainText": "KEY404/batch20/record-fingerprint/v1",
+      "separatorHex": "00",
+      "rule": "SHA256(domain || 0x00 || ASCII(format) || 0x00 || canonical record bytes)"
+    },
+    "networkQueries": 0,
+    "rawAsciiScalarInterpretations": 0
+  },
+  "procedureCounts": {
+    "trueUnorderedPairs": 2,
+    "trueScores": [
+      0.0429677074993328,
+      0.018731117824773415
+    ],
+    "primaryMeanIoU": 0.030849412662053106,
+    "wrongPairControls": [
+      {
+        "pair": [
+          75,
+          76
+        ],
+        "iou": 0.0
+      },
+      {
+        "pair": [
+          75,
+          77
+        ],
+        "iou": 0.0
+      },
+      {
+        "pair": [
+          75,
+          78
+        ],
+        "iou": 0.029233605478008955
+      },
+      {
+        "pair": [
+          75,
+          79
+        ],
+        "iou": 0.0
+      },
+      {
+        "pair": [
+          76,
+          78
+        ],
+        "iou": 0.006971556051310652
+      },
+      {
+        "pair": [
+          76,
+          79
+        ],
+        "iou": 0.039699248120300755
+      },
+      {
+        "pair": [
+          77,
+          78
+        ],
+        "iou": 0.0
+      },
+      {
+        "pair": [
+          77,
+          79
+        ],
+        "iou": 0.021152240467575842
+      }
+    ],
+    "shiftRankP": 0.03125,
+    "retainedByRegisteredScreen": false,
+    "maskPixels": [
+      {
+        "page": 75,
+        "maskPixels": 2145
+      },
+      {
+        "page": 76,
+        "maskPixels": 1848
+      },
+      {
+        "page": 77,
+        "maskPixels": 2060
+      },
+      {
+        "page": 78,
+        "maskPixels": 1763
+      },
+      {
+        "page": 79,
+        "maskPixels": 1609
+      }
+    ]
+  },
+  "outcome": "alignment-claim-not-supported-by-controls",
+  "completeNegative": true,
+  "negativeCriterion": "Failure to distinguish exact normalized alignment from the declared controls does not support that alignment claim.",
+  "completedAtUTC": "2026-11-10T05:25:30.357Z",
+  "durationMs": 457
+}
