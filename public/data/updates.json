@@ -4,10 +4,10 @@
     {
       "id": "minikey-window-audit",
       "date": "2026-11-10",
-      "category": "IN PROGRESS",
-      "title": "A gap in the old key checker. A fixed test.",
-      "body": "The earlier printed-line checker could miss a short Bitcoin minikey inside a longer reading. This run fixes the rule before checking: 22 existing clue-based readings, 42 text forms and every 22/30-character window. No new extraction or arbitrary hashing. Protocol and code are published before the scan; the result will state its limits.",
-      "evidence": "/research/analysis_outputs/continuation_20261110/minikey_windows/PROTOCOL.md",
+      "category": "TESTED",
+      "title": "12 shaped strings. Zero valid minikeys.",
+      "body": "A gap in the old checker is closed: it could miss a short minikey inside a longer reading. The fixed scan covered 22 existing readings and 42 exact text forms. All 12 distinct strings that fit the alphabet and length failed the checksum. An independent Python check agreed. This rules out only 22/30-character minikeys in those forms; no address lookups were needed.",
+      "evidence": "/research/analysis_outputs/continuation_20261110/minikey_windows/RESULT.md",
       "kind": "research",
       "methodIds": [
         "minikey-window-audit"

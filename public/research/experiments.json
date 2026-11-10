@@ -278,18 +278,21 @@
     {
       "id": "minikey-window-audit",
       "title": "Embedded minikey coverage audit",
-      "status": "in-progress",
+      "status": "falsified",
       "kind": "method-test",
       "independentTheory": false,
       "scope": "22 frozen body-only George Sand readings; 42 exact or whitespace-compacted forms; every 22/30-character position, fixed before execution.",
-      "result": "Protocol registered. Candidate scan pending; no outcome claimed.",
+      "result": "12 distinct alphabet/length-compatible strings across 42 declared forms; all failed the minikey checksum. Independent Node/Python agreement; no address queries needed.",
       "evidence": [
-        "analysis_outputs/continuation_20261110/minikey_windows/PROTOCOL.md",
-        "analysis_outputs/continuation_20261110/minikey_windows/PROTOCOL.json"
+        "analysis_outputs/continuation_20261110/minikey_windows/RESULT.md",
+        "analysis_outputs/continuation_20261110/minikey_windows/RESULT.json",
+        "analysis_outputs/continuation_20261110/minikey_windows/PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/minikey_windows/INDEPENDENT_CHECK.json"
       ],
       "reproduce": [
         "node scripts/minikey_window_audit.cjs --self-test",
-        "node scripts/minikey_window_audit.cjs --scan --check --out analysis_outputs/continuation_20261110/minikey_windows/RESULT.json"
+        "node scripts/minikey_window_audit.cjs --scan --check --out analysis_outputs/continuation_20261110/minikey_windows/RESULT.json",
+        "python3 scripts/verify_minikey_window_audit.py minikey-independent-rerun.json"
       ],
       "limitations": [
         "A validation coverage correction, not an independent cipher family.",

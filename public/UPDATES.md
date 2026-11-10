@@ -72,3 +72,7 @@ The film’s funding scene now reflects the live token and directs viewers to ke
 ## 10 November 2026 — First registered follow-up experiment
 
 The embedded-minikey coverage audit checks a specific gap in the previous printed-line validator. Its protocol and implementation are committed before the target scan. It uses 22 existing body-only clue-based readings and 42 exact or whitespace-compacted forms. Every 22- and 30-character position is checked under the published minikey format. The initial status is in progress; no result is claimed before execution. This is one coverage correction, not thousands of independent theories. See `public/research/analysis_outputs/continuation_20261110/minikey_windows/PROTOCOL.md`.
+
+### Completed result
+
+The preregistered scan found 17 alphabet/length-compatible occurrences, representing 12 distinct strings. All failed the minikey checksum. Node and an independent Python implementation agree. No target private-scalar derivation, address/API request, wallet action or transaction was needed. The ledger is now tested with a scoped negative result: no literal 22/30-character minikey in these exact 42 forms. The protocol commit and original older outputs remain available. No funded expense is claimed. Exact evidence: `public/research/analysis_outputs/continuation_20261110/minikey_windows/RESULT.md`.
