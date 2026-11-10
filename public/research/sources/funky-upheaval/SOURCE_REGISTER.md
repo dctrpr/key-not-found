@@ -36,3 +36,7 @@ Next: authenticate the exact issue/chronology, prepare and review a faithful phy
 ## Rights
 
 Article: Max Keiser. Magazine: Bitcoin Magazine. Existing credits and pixels are preserved. Third-party text, artwork and layout retain their copyrights; redistribution permission is unverified and this packet grants no reuse rights. See [DATA_LICENSE.md](../../DATA_LICENSE.md).
+
+## Subsequent line-model freeze
+
+The separate [physical-line model](SOURCE.md) now freezes 115 reviewed content rows, including four title rows and 111 non-title rows. Two AI visual passes proposed no lexical or wrap correction. Its declared encoding and uncertainty are explicit; the original curation receipt and image bytes remain unchanged. The [direct-reading protocol](../../analysis_outputs/continuation_20261110/funky_sand_direct/PROTOCOL.md) is a separate conditional-source procedure.

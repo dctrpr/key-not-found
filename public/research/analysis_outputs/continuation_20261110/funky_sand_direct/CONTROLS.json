@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "completedAtUTC": "2026-11-10T13:09:45.110Z",
+  "kind": "synthetic-preflight-controls",
+  "targetReadingsGenerated": false,
+  "controls": [
+    {
+      "script": "scripts/funky_sand_direct.py",
+      "sha256": "4eec6a4ce0ab8466875ddfc8568e1a38debf767a8d619eb5d8d1809ddaf7c8b1",
+      "result": {
+        "version": 1,
+        "testId": "funky-sand-direct",
+        "passed": true,
+        "checks": 46,
+        "controls": "synthetic only; hand-written parity/punctuation oracle,115-row metadata fixture,source/protocol/registration/privacy/output guards",
+        "targetSourceOpened": false,
+        "targetReadingsGenerated": false,
+        "keyFormatChecks": 0,
+        "addressDerivations": 0,
+        "networkQueries": 0
+      }
+    },
+    {
+      "script": "scripts/verify_funky_sand_direct.py",
+      "sha256": "7e7c5c9c2234b4934665b287848d6383d787949935ff99248c11f2f2083163d5",
+      "result": {
+        "cryptoChecks": 0,
+        "networkQueries": 0,
+        "rejectionControls": 26,
+        "status": "PASS",
+        "syntheticReadingsCompared": 6,
+        "targetReadingsGenerated": 0,
+        "targetSourceReads": 0
+      }
+    }
+  ]
+}

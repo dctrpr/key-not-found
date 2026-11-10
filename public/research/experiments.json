@@ -948,26 +948,54 @@
     {
       "id": "funky-source-preparation",
       "title": "Funky Upheaval source and line preparation",
-      "status": "in-progress",
+      "status": "partial",
       "kind": "source-audit",
       "independentTheory": false,
       "scope": "Eight retained images; six article pages107\u2013112 separated from two adjacent ads. Bounded prior-work audit and publisher source check. Subsequent single-AI close reading of four text pages108\u2013111.",
-      "result": "Source boundaries and exact scans are public. One AI close read recognized no explicit puzzle instruction. A private physical-line draft awaits independent proofreading; issue/date authentication remains open.",
+      "result": "The physical-line model is frozen after two AI visual passes over all 115 rows. Source scans, roles, wraps and declared encoding are public. Exact issue/date authentication remains open; the separate direct-reading procedure has its own protocol.",
       "evidence": [
         "sources/funky-upheaval/SOURCE_REGISTER.md",
         "sources/funky-upheaval/SOURCE_REGISTER.json",
         "analysis_outputs/continuation_20261110/funky_source_curation/RESULT.md",
         "analysis_outputs/continuation_20261110/funky_source_curation/RESULT.json",
         "analysis_outputs/continuation_20261110/funky_close_reading/REVIEW.md",
-        "analysis_outputs/continuation_20261110/funky_close_reading/REVIEW.json"
+        "analysis_outputs/continuation_20261110/funky_close_reading/REVIEW.json",
+        "sources/funky-upheaval/SOURCE.md",
+        "sources/funky-upheaval/physical-lines.json"
       ],
       "reproduce": [],
       "limitations": [
         "No cover/contents/colophon authenticates exact issue or date.",
         "A retained-record gap does not prove nobody has tested this column.",
         "No new decoding or cryptographic test occurred during curation.",
-        "This column is not established as the March2023 20BTC target.",
-        "Single-reviewer nonrecognition is not absence of a cipher; draft row counts and glyph encodings remain provisional."
+        "This column is not established as the March 2023 20BTC target.",
+        "The second visual pass was unblinded; AI agreement can miss errors, and raster ink does not recover original typesetting bytes."
+      ]
+    },
+    {
+      "id": "funky-sand-direct",
+      "title": "Three direct Sand readings of Funky Upheaval",
+      "status": "in-progress",
+      "kind": "reading-review",
+      "independentTheory": false,
+      "scope": "One fixed conditional-source procedure: first chunks of 111 non-title physical rows, 56 odd whole lines, and 55 even whole lines as control. Global order only.",
+      "result": "Source and implementations are being publicly registered before target outputs. Generation and two full-output AI reviews follow; no key-format or network check is part of this procedure.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/funky_sand_direct/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/funky_sand_direct/PROTOCOL.json",
+        "sources/funky-upheaval/SOURCE.md",
+        "scripts/funky_sand_direct.py",
+        "scripts/verify_funky_sand_direct.py"
+      ],
+      "reproduce": [
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/funky_sand_direct.py --self-test",
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/verify_funky_sand_direct.py --self-test"
+      ],
+      "limitations": [
+        "Issue/date and applicability under the December 2022 plural-key claim are conditional.",
+        "No March 2023 mirror/20 BTC association is assigned to this column.",
+        "A subjective AI reading cannot exclude a message, encoded key, article or cipher family.",
+        "The four title rows, furniture, decorative text, opener/art and adjacent ads are outside this declared population."
       ]
     }
   ],

@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "batchId": "keiser-funky-sand-direct-20261110",
+  "registeredAtUTC": "2026-11-10T13:09:45.110Z",
+  "test": {
+    "id": "funky-sand-direct",
+    "title": "Three literal Sand readings of the frozen Funky Upheaval source",
+    "family": "fixed-literal-source-reading",
+    "branchId": "text-lines",
+    "inputPaths": [
+      "sources/funky-upheaval/physical-lines.json",
+      "sources/funky-upheaval/SOURCE_REGISTER.json",
+      "sources/funky-upheaval/pages/108.jpg",
+      "sources/funky-upheaval/pages/109.jpg",
+      "sources/funky-upheaval/pages/110.jpg",
+      "sources/funky-upheaval/pages/111.jpg",
+      "analysis_outputs/continuation_20261109/george_sand_research.md"
+    ],
+    "implementationPaths": [
+      "scripts/funky_sand_direct.py",
+      "scripts/verify_funky_sand_direct.py"
+    ],
+    "protocolPath": "analysis_outputs/continuation_20261110/funky_sand_direct/PROTOCOL.json",
+    "sourceModel": {
+      "id": "funky-upheaval-physical-lines-v1",
+      "physicalRows": 115,
+      "titleRowsExcluded": 4,
+      "contentRows": 111,
+      "contentRowsByPrintedPage": {
+        "108": 7,
+        "109": 41,
+        "110": 29,
+        "111": 34
+      },
+      "rolePopulation": {
+        "title": 4,
+        "deck": 7,
+        "lead": 12,
+        "body": 53,
+        "display-emphasis": 10,
+        "attributed-quotation": 10,
+        "facts-display": 5,
+        "name-list": 3,
+        "section-introduction": 3,
+        "work-list": 5,
+        "closing-display": 3
+      },
+      "encoding": {
+        "version": "literal-printedText-v1",
+        "characterEncoding": "UTF-8",
+        "normalization": "none",
+        "printedTextPolicy": "Every printedText string is byte-identical in UTF-8 to the reviewed draft. Literal case, punctuation, visible physical wraps and stored word spacing are frozen as this declared transcription model.",
+        "wordSpacing": "One U+0020 between visible word chunks; no leading/trailing or repeated U+0020, tabs, CR or LF inside a row. Raster spacing widths are not represented.",
+        "apostrophes": "Retain existing U+0027 ASCII apostrophe bytes. Apostrophe presence was visually reviewed; original typesetting codepoints are not recovered from raster ink.",
+        "longDashes": "Retain existing U+2014 em dash bytes, including the printed110 row-final Nobel Prize dash.",
+        "bookTitleQuotationMarks": "Retain existing U+201C/U+201D double quotation marks in the printed111 work list, including the period before the final closing quote. Other stored quote bytes remain unchanged.",
+        "case": "Retain all literal case, including FiAT CUCkS. No case folding or style-based case repair.",
+        "physicalRows": "One JSON record per reviewed physical content row; no hard-wrap joining or fragment expansion.",
+        "originalTypesettingUnicodeRecovered": false,
+        "glyphPerfectOriginalByteStringClaimed": false
+      },
+      "ordering": "Stored source order; remove only title rows, then one global content-row index.",
+      "issueAndDateAuthenticated": false
+    },
+    "readings": [
+      {
+        "id": "SAND-FW-ALL",
+        "selectedRowCount": 111,
+        "rule": "First nonempty U+0020-delimited chunk of each retained row, preserving every glyph; join with one U+0020. Stop if a first chunk contains no ASCII letter/digit."
+      },
+      {
+        "id": "SAND-ODD-LINES",
+        "selectedRowCount": 56,
+        "rule": "Whole retained rows numbered 1,3,...,111 globally after title exclusion; join with LF."
+      },
+      {
+        "id": "SAND-EVEN-CONTROL",
+        "selectedRowCount": 55,
+        "rule": "Whole retained rows numbered 2,4,...,110 globally after title exclusion; join with LF; predeclared parity control."
+      }
+    ],
+    "boundaries": {
+      "pageOrBlockResets": false,
+      "roleSelectionsBeyondTitleExclusion": false,
+      "caseOrUnicodeNormalization": false,
+      "punctuationRemoval": false,
+      "wrapJoining": false,
+      "reversals": false,
+      "initialsOrFinals": false,
+      "selectedSubstrings": false,
+      "keyFormatOrChecksumChecks": false,
+      "wordlistFiltering": false,
+      "proseToKeyHashing": false,
+      "seedOrAddressDerivation": false,
+      "networkQueries": 0
+    },
+    "caps": {
+      "maximumInputOrRegisteredBlobBytes": 2000000,
+      "maximumProtocolBytes": 1000000,
+      "maximumRowCodepoints": 2000,
+      "maximumSourceCodepoints": 100000,
+      "maximumOutputCodepoints": 200000,
+      "maximumReadings": 3
+    },
+    "outputPolicy": {
+      "privateArtifacts": [
+        "READINGS.private.json",
+        "READINGS.private.txt"
+      ],
+      "rawOutputOutsidePublicCheckoutRequired": true,
+      "safeReceipt": "RESULT.json: fixed technical fields, aggregate counts and output-integrity hashes only; no raw strings or row locators.",
+      "hashMeaning": "SHA-256 of UTF-8 output bytes is an integrity identifier only, never a scalar/key derivation.",
+      "semanticOutcome": "No semantic verdict is computed. Independent full-reading reviews follow separately."
+    },
+    "authorityEvidence": {
+      "path": "analysis_outputs/continuation_20261109/george_sand_research.md",
+      "role": "Provenance only; no text from this file is used by the reading generator.",
+      "caveat": "The creator-linked blog demonstrates first-word and alternate-whole-line readings; its current presentation includes later corrections, including one dated December 28, 2022, after the creator December 26 post."
+    },
+    "limitations": [
+      "Exact issue/date and applicability to the December 2022 plural-key claim remain unverified.",
+      "The March 2023 mirror clue and 20-BTC claim are not assigned to this column.",
+      "This is one frozen transcription/encoding model, not recovered original typesetting bytes.",
+      "The population excludes title rows, running furniture, decorative text, opener/art and adjacent ads as declared.",
+      "Three related source readings are not independent theories or statistical trials.",
+      "Successful generation is neither semantic recognition nor a claim that a message, key or cipher is absent."
+    ]
+  },
+  "sourceHashes": {
+    "sources/funky-upheaval/physical-lines.json": "12ef2d85578b89a164a109c7f5045e9fd28b88fd7ce5c58e30632e242a60eb11",
+    "sources/funky-upheaval/SOURCE_REGISTER.json": "fb756e12d376af208c619b6e46ea17366df9d90214992e53673cc10fda106b2f",
+    "sources/funky-upheaval/pages/108.jpg": "1557e2974d4f04579aea3015b6f885f35b2b966f06ac5944d39c70439ee8fb6c",
+    "sources/funky-upheaval/pages/109.jpg": "bc12df605c993055ef761f27b413d9c8bc781d70c83533a7d9ae119034554814",
+    "sources/funky-upheaval/pages/110.jpg": "2f5cbca356f01887acf84cabcf6d5d8b5a5ec56547ae88329fd7de923a84601f",
+    "sources/funky-upheaval/pages/111.jpg": "40092c66f44296988a7f397563915e30f3926a6e265c512aa61b01057e970f50",
+    "analysis_outputs/continuation_20261109/george_sand_research.md": "8a619cf8c6ab246fc4dc1c2086648e5d245bfa1ca751011febcbf74be42dd1ff"
+  },
+  "scriptHashes": {
+    "scripts/funky_sand_direct.py": "4eec6a4ce0ab8466875ddfc8568e1a38debf767a8d619eb5d8d1809ddaf7c8b1",
+    "scripts/verify_funky_sand_direct.py": "7e7c5c9c2234b4934665b287848d6383d787949935ff99248c11f2f2083163d5"
+  },
+  "reviewPlan": {
+    "type": "exploratory-full-output-AI-reading",
+    "reviewerCount": 2,
+    "readingsEach": 3,
+    "independence": "Review all three complete saved outputs; reviewers do not receive each other's conclusions. They know the puzzle context and are not blinded to source or hypothesis.",
+    "secondMessageCriterion": "Directly coherent second message without omitted/substituted words, additional decoding or arbitrary selected substring. Ordinary cover-prose fragments and isolated thematic words are insufficient.",
+    "instructionCriterion": "A concrete action and target/unit/source anchor must be stated, without filling gaps.",
+    "positiveHandling": "Keep potential message/key-looking material private; a follow-up needs a separate fixed protocol.",
+    "nonrecognitionWording": "No clear second message was recognized in these three fixed literal readings.",
+    "nonrecognitionScope": "Subjective AI nonrecognition, not a formal message, key, article or cipher-family exclusion.",
+    "inconclusive": "Pin/source failure, incomplete reading or unresolved reviewer disagreement.",
+    "prohibitedFollowups": [
+      "No additional transforms, selected substrings, word deletions or substitutions.",
+      "No format/checksum validators, wordlist filtering, prose-to-key hashing, derivation or network."
+    ]
+  }
+}
