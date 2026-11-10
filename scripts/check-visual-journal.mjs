@@ -13,7 +13,7 @@ let previous = '';
 for (const entry of data.entries) {
   assert.match(entry.id, /^[a-z0-9-]+$/);
   assert.ok(!ids.has(entry.id)); ids.add(entry.id);
-  assert.ok(['funnel', 'history', 'source', 'reading'].includes(entry.diagram));
+  assert.ok(['funnel', 'history', 'source', 'reading', 'measurement'].includes(entry.diagram));
   assert.ok(['spread', 'stack', 'mirror'].includes(entry.scene.layout));
   assert.ok(entry.scene.source === undefined || ['issue27', 'funky'].includes(entry.scene.source));
   const pages = entry.scene.source === 'funky' ? [107, 108, 109, 110, 111, 112] : entry.scene.source === 'issue27' ? [78, 79, 80, 81] : [75, 76, 77, 78, 79, 80];
@@ -36,6 +36,26 @@ for (const entry of data.entries) {
       value = value.filter(q => q.activity).length;
     } else assert.equal(metric.operation, undefined);
     assert.equal(value, metric.value, 'Visual metric differs from its frozen result');
+  }
+  if (entry.diagram === 'measurement') {
+    assert.equal(result.testId, 'g04-guard-trace');
+    assert.equal(result.scopeComplete, true);
+    assert.equal(result.status, 'trace-complete-baseline-match');
+    assert.equal(result.counts.baselineMatchingRows, 142);
+    assert.deepEqual(result.counts.rowFirstGuardCounts, {
+      'optical-pass': 104, 'ink-touches-vertical-region-boundary': 13,
+      'ink-touches-word-region-boundary': 23, 'no-robust-ink-columns': 1,
+      'no-robust-ink-rows': 1,
+    });
+    assert.equal(result.postSpanGapGuardChecked, false);
+    assert.ok(Object.values(result.activity).every(value => value === 0));
+    assert.equal(entry.exhibits.length, 2);
+    for (const exhibit of entry.exhibits) {
+      assert.ok(exhibit.path.startsWith('/research/analysis_outputs/continuation_20261110/g04_measurement_audit/exhibits/'));
+      assert.ok(!exhibit.path.includes('..'));
+      const bytes = fs.readFileSync(path.join(root, 'public', exhibit.path));
+      assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), exhibit.sha256);
+    }
   }
   if (entry.diagram === 'history') {
     assert.equal(result.addressImplementationsAgree, true);

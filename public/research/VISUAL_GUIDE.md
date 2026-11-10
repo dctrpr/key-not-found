@@ -10,4 +10,6 @@ Save a frame as a standalone SVG, or download the [scene data](https://keynotfou
 
 New visual entries should record actual work, including failed tests, corrections and inconclusive results. Preserve older frames and their completion times. A day without a new result does not acquire a fabricated test, funding receipt or solution claim. Raw private-key candidates, their private scalars, and candidate-derived address associations are excluded.
 
+The spacing diagnostic frame links the actual native row strips and opens the 2023 source pages in 3D. Its 142 rows/1243 word regions / 0 baseline mismatches describe reproduction of the old optical guards;38 rows still fail. Those schematic counts do not certify source glyph support. The source-strip hashes are checked with the frame, and full-resolution files open separately.
+
 The puzzle remains unsolved. The 3D display and visual log do not verify the prize funding.

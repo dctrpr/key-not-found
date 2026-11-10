@@ -332,7 +332,7 @@
         "layout": "stack",
         "page": 108
       },
-      "sceneNote": "Actual retained Funky Upheaval scans, printed107\u2013112. The arrangement is a viewing aid. Issue/date and eligibility under the December claim remain unresolved; the photographed March target is still Issue24.",
+      "sceneNote": "Actual retained Funky Upheaval scans, printed107–112. The arrangement is a viewing aid. Issue/date and eligibility under the December claim remain unresolved; the photographed March target is still Issue24.",
       "methodId": "funky-source-preparation"
     },
     {
@@ -371,6 +371,54 @@
       },
       "sceneNote": "Actual Funky Upheaval scans. The arrangement is a viewing aid; registered rules fix the readings. Issue/date remain unverified, and the March mirror/20BTC claim is not assigned to this column.",
       "methodId": "funky-sand-direct"
+    },
+    {
+      "id": "g04-guard-trace",
+      "completedAtUTC": "2026-11-10T14:49:09.973Z",
+      "title": "The detector matches. Spacing stays open.",
+      "summary": "The registered diagnostic traced every lexical region using the original optical rule. All saved first-guard outcomes matched.",
+      "result": "The same 38 rows still fail measurement. No gaps, bits or decodes were generated; a source-support fixture comes next.",
+      "diagram": "measurement",
+      "metrics": [
+        {
+          "label": "Rows traced",
+          "value": 142,
+          "pointer": "/counts/rows"
+        },
+        {
+          "label": "Word regions",
+          "value": 1243,
+          "pointer": "/counts/wordRegionsRecorded"
+        },
+        {
+          "label": "Baseline mismatches",
+          "value": 0,
+          "pointer": "/counts/baselineMismatchingRows"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/g04_guard_trace/RESULT.json",
+        "sha256": "bacf31de93532e83f044abd62a5d58f6efee407ed2738a52ddc7a299ffe8a01e"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/g04_guard_trace/RESULT.md",
+      "scene": {
+        "layout": "spread",
+        "page": 77
+      },
+      "sceneNote": "Actual source pages; camera placement is illustrative. Native strips below show contrast changes and punctuation, not a decoded message.",
+      "methodId": "g04-guard-trace",
+      "exhibits": [
+        {
+          "path": "/research/analysis_outputs/continuation_20261110/g04_measurement_audit/exhibits/p77r05.png",
+          "sha256": "5e2c36ead8df290ca6e2d2d7cd8eac0c628a2bf0fcdfc9fcc1b3dd47ce8dd089",
+          "label": "Native row p77r05 · contrast changes"
+        },
+        {
+          "path": "/research/analysis_outputs/continuation_20261110/g04_measurement_audit/exhibits/p75r08.png",
+          "sha256": "088cabeed3f38a783d0e892d1b7837ac2389959b96579bfaab7ed624e17688f4",
+          "label": "Native row p75r08 · standalone dashes"
+        }
+      ]
     }
   ]
 }

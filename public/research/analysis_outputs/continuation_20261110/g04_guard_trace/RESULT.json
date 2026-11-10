@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "testId": "g04-guard-trace",
+  "batchId": "keiser-g04-guard-trace-20261110",
+  "startedAtUTC": "2026-11-10T14:49:08.861Z",
+  "registrationCommit": "8953539b90b946e1808fcc2a594409eb04c6a31a",
+  "protocolSha256": "0fd0ecf747e620071f222988436cde7e5fc013c175afc904165a5266875a4dce",
+  "sourceHashes": {
+    "magazine.pdf": "a30c61f8c49674afb7bccc6680d6477f6e919175386a2422de0a944db4e76c13",
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "sources/word-geometry-20261110.json": "e3348d0d60d3097b05d0afdb0a1fccf66409274408af9ae7a9369c37fe596e9f",
+    "analysis_outputs/continuation_20261110/batch20/G04/RESULT.json": "b3f920064b245c74cc0c1855ebd744b2d30f3c88a6ff50d89cc76c70a45185f4",
+    "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json": "e69215cd826a8fd63c588d5fe9295a71a1807278fd499b9a77cff119c48d4f53"
+  },
+  "scriptHashes": {
+    "scripts/batch20_geometry.py": "e7786acc472fa3f7a294fe6391e74bd6f8840017e30d9f54941544019dbafb9a",
+    "scripts/g04_guard_trace.py": "fdbcd1b94ea35476effbf7046d763e10c85b5e4001e42eca7933019cef620126"
+  },
+  "controls": {
+    "passed": true,
+    "syntheticAssertions": 14,
+    "targetSourceReads": 0,
+    "targetMeasurements": 0,
+    "gapCalculations": 0,
+    "gapBits": 0,
+    "decoders": 0,
+    "candidateChecks": 0,
+    "networkRequests": 0,
+    "controls": [
+      "ordinary-black/white",
+      "horizontal-and-vertical-first-guard",
+      "continue-after-first-failure",
+      "no-row/no-column",
+      "unrepaired-orange-polarity",
+      "scanline-polarity-runs",
+      "row-guard-null-word",
+      "baseline-mismatch",
+      "aggregate-no-identifiers"
+    ]
+  },
+  "scopeComplete": true,
+  "status": "trace-complete-baseline-match",
+  "counts": {
+    "rows": 142,
+    "wordRegionsRecorded": 1243,
+    "wordRegionsOpticallyEvaluated": 1243,
+    "rowFirstGuardCounts": {
+      "optical-pass": 104,
+      "ink-touches-vertical-region-boundary": 13,
+      "ink-touches-word-region-boundary": 23,
+      "no-robust-ink-columns": 1,
+      "no-robust-ink-rows": 1
+    },
+    "wordFirstGuardCounts": {
+      "optical-pass": 1157,
+      "ink-touches-vertical-region-boundary": 22,
+      "ink-touches-word-region-boundary": 58,
+      "no-robust-ink-columns": 3,
+      "no-robust-ink-rows": 3
+    },
+    "counterfactualAfterFirstWordFailureRegions": 189,
+    "columnDiagnosticsAfterEarlierGuard": 25,
+    "baselineComparedRows": 142,
+    "baselineMatchingRows": 142,
+    "baselineMismatchingRows": 0,
+    "postOpticalBaselineRowsExcluded": 0
+  },
+  "postSpanGapGuardChecked": false,
+  "semanticOrKeyConclusion": null,
+  "activity": {
+    "gapCalculations": 0,
+    "gapRowMedians": 0,
+    "gapBits": 0,
+    "decoders": 0,
+    "candidateChecks": 0,
+    "formatChecks": 0,
+    "networkRequests": 0,
+    "pixelOrCropOutputs": 0,
+    "sourceRepair": 0
+  },
+  "punctuationTokens": 15,
+  "punctuationAllBoxesNull": true,
+  "traceSHA256": "a5f2ddbb67658db80265db3b8b9ca36ec7d014ea1643159c13debba3f913d4e2",
+  "completedAtUTC": "2026-11-10T14:49:09.973Z"
+}

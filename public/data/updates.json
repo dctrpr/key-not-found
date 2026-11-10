@@ -2,11 +2,26 @@
   "updatedOn": "2026-11-10",
   "updates": [
     {
+      "id": "g04-guard-trace-complete",
+      "date": "2026-11-10",
+      "completedAtUTC": "2026-11-10T14:49:09.973Z",
+      "category": "DIAGNOSTIC COMPLETE",
+      "title": "The detector matches. Spacing stays open.",
+      "body": "Traced all 142 rows and 1243 lexical regions after public registration. All 142 first-guard outcomes matched the old run; the same 38 rows still fail. Failed-word/boundary records now support source preparation. Later words after failure are explicitly counterfactual. No gaps, bits, decodes or candidate checks were generated. The visual frame links actual source strips and the 3D page view.",
+      "evidence": "/research/analysis_outputs/continuation_20261110/g04_guard_trace/RESULT.md",
+      "kind": "research",
+      "methodIds": [
+        "g04-guard-trace",
+        "batch20-g04"
+      ],
+      "branchId": "numbers-type"
+    },
+    {
       "id": "g04-guard-trace-registered",
       "date": "2026-11-10",
       "category": "IN PROGRESS",
       "title": "Locate the failed word before changing the measurement.",
-      "body": "The diagnostic is fixed before execution: all142 rows, the original foreground rule and guard order, and every lexical word region. It records boundary and polarity diagnostics without interword gaps, bits or decoding. Later words after a first failure are labelled counterfactual. Target execution waits for the verified public registration commit.",
+      "body": "The diagnostic is fixed before execution: all 142 rows, the original foreground rule and guard order, and every lexical word region. It records boundary and polarity diagnostics without interword gaps, bits or decoding. Later words after a first failure are labelled counterfactual. Target execution waits for the verified public registration commit.",
       "evidence": "/research/analysis_outputs/continuation_20261110/g04_guard_trace/PROTOCOL.md",
       "kind": "research",
       "methodIds": [
@@ -35,7 +50,7 @@
       "completedAtUTC": "2026-11-10T14:23:07.166Z",
       "category": "MEASUREMENT AUDIT",
       "title": "38 rows failed measurement. That leaves spacing open.",
-      "body": "The old spacing run retained no complete-page result. All15 standalone punctuation tokens lack geometry; mixed foreground and approximate boxes create source risks. Native source strips are now inspectable. A separately registered diagnostic will identify first-failing words without gaps, bits or decodes; the old frozen results remain unchanged.",
+      "body": "The old spacing run retained no complete-page result. All 15 standalone punctuation tokens lack geometry; mixed foreground and approximate boxes create source risks. Native source strips are now inspectable. A separately registered diagnostic will identify first-failing words without gaps, bits or decodes; the old frozen results remain unchanged.",
       "evidence": "/research/analysis_outputs/continuation_20261110/g04_measurement_audit/REPORT.md",
       "kind": "research",
       "methodIds": [

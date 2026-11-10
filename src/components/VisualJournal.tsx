@@ -5,7 +5,9 @@ import { followHashLinks } from '../lib/hashLinks';
 import type { VisualLabView } from './VisualLab';
 import './VisualJournal.css';
 
-type Entry = (typeof journal.entries)[number];
+type Entry = (typeof journal.entries)[number] & {
+  exhibits?: { path: string; sha256: string; label: string }[];
+};
 const formatNumber = (n: number) => n.toLocaleString('en-GB');
 const date = (s: string) => new Date(s).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
 const clock = (s: string) => new Date(s).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'UTC' });
@@ -30,6 +32,16 @@ export function VisualFrame({ entry, number }: { entry: Entry; number: number })
           <text x="48" y={213 + i * 36} fill={paper} fontSize="14">{label}</text>
           {[600, 763].map(x => <g key={x}><circle cx={x - 27} cy={208 + i * 36} r="4" fill={lime}/><text x={x - 13} y={213 + i * 36} fill={lime} fontSize="13">0 history</text></g>)}
         </g>)}
+      </> : entry.diagram === 'measurement' ? <>
+        <text x="40" y="101" fill={paper} fontSize="26" fontWeight="700">Check the measurement first.</text>
+        <text x="40" y="130" fill={muted} fontSize="13">All source rows · original detector · first-guard comparison</text>
+        {entry.metrics.map((metric, i) => <g key={metric.label}>
+          <rect x={40 + i * 288} y="175" width="244" height="140" fill="#191917" stroke={i === 2 ? lime : '#45453c'}/>
+          <text x={60 + i * 288} y="243" fill={i === 2 ? lime : paper} fontSize="47" fontWeight="700">{formatNumber(metric.value)}</text>
+          <text x={60 + i * 288} y="282" fill={muted} fontSize="13">{metric.label}</text>
+        </g>)}
+        <text x="40" y="351" fill={paper} fontSize="15">38 rows still fail the original optical guards.</text>
+        <text x="40" y="375" fill={muted} fontSize="12">Diagnostics only. No gap bits, decoding or repaired-coverage claim.</text>
       </> : entry.diagram === 'reading' ? <>
         <text x="40" y="101" fill={paper} fontSize="26" fontWeight="700">Three direct readings.</text>
         <text x="40" y="130" fill={muted} fontSize="13">One frozen source · global order · no extra transforms</text>
@@ -76,7 +88,7 @@ export function VisualFrame({ entry, number }: { entry: Entry; number: number })
 export default function VisualJournal({ onOpenView }: { onOpenView: (view: VisualLabView) => void }) {
   const [index, setIndex] = useState(journal.entries.length - 1);
   const [playing, setPlaying] = useState(false);
-  const entry = journal.entries[index];
+  const entry: Entry = journal.entries[index];
   const frameStart = Math.max(0, Math.min(index - 1, journal.entries.length - 3));
   useEffect(() => followHashLinks(hash => {
     const match = /^#visual-([a-z0-9-]+)$/.exec(hash);
@@ -113,6 +125,7 @@ export default function VisualJournal({ onOpenView }: { onOpenView: (view: Visua
         <small>{entry.sceneNote}</small>
       </div>
     </div>
+    {entry.exhibits && <div className="vj-source-exhibits" aria-label="Native source excerpts">{entry.exhibits.map(exhibit => <a key={exhibit.path} href={exhibit.path} target="_blank" rel="noreferrer"><span>{exhibit.label}<ArrowUpRight size={14}/></span><img src={exhibit.path} alt={exhibit.label} width="2544" height="58" loading="lazy"/><small>Open full-resolution source strip</small></a>)}</div>}
     <div className="vj-frames" aria-label="Nearby research frames">{journal.entries.slice(frameStart, frameStart + 3).map((e, offset) => { const i = frameStart + offset; return <button type="button" key={e.id} aria-pressed={i === index} onClick={() => choose(i)}><span>{String(i + 1).padStart(2, '0')} / {clock(e.completedAtUTC)}</span><strong>{e.title}</strong></button>; })}</div>
     {journal.entries.length > 3 && <label className="vj-date-picker">Jump to a recorded update<select value={index} onChange={event => choose(Number(event.target.value))}>{journal.entries.map((e, i) => <option key={e.id} value={i}>{date(e.completedAtUTC)} · {clock(e.completedAtUTC)} · {e.title}</option>)}</select></label>}
     <div className="vj-export"><span>Keep the visuals with the research.</span><div><a href={`/research/visuals/${entry.id}.svg`} download>Save frame · SVG <ArrowDownToLine size={14}/></a><a href="/research/visuals/journal.json" download>Scene data · JSON <ArrowDownToLine size={14}/></a></div></div>

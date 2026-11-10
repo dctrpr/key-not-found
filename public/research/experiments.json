@@ -626,7 +626,7 @@
       "limitations": [
         "Word boxes are machine-verified source geometry, not a claim of original font metadata.",
         "Incomplete rows, nonpositive gaps or unknown geometry make relevant scope inconclusive.",
-        "All15 standalone punctuation tokens lack located support; mixed foreground and approximate lexical boxes require an outcome-blind source fixture across all142 rows, including previously measured rows.",
+        "All 15 standalone punctuation tokens lack located support; mixed foreground and approximate lexical boxes require an outcome-blind source fixture across all 142 rows, including previously measured rows.",
         "Saved first-failure reasons do not identify the failed word or explain all38 failures."
       ]
     },
@@ -1013,17 +1013,20 @@
     {
       "id": "g04-guard-trace",
       "title": "Trace the original spacing-measurement failures",
-      "status": "in-progress",
+      "status": "tested",
       "kind": "source-audit",
       "independentTheory": false,
-      "scope": "Registered bit-free optical trace of all142 G04 rows/all1243 lexical regions; unchanged original guard order and detector, no repair or gap calculation.",
-      "result": "Protocol finalized; target execution awaits the verified public registration commit. No target trace or new puzzle result yet.",
+      "scope": "Registered bit-free optical trace of all 142 G04 rows/all 1243 lexical regions; unchanged original guard order and detector, no repair or gap calculation.",
+      "result": "All 142 rows/all 1243 lexical regions were traced. First optical guard/pass outcomes matched the old baseline 142 / 142, with zero mismatches. The same 38 rows still fail. Later-word diagnostics are counterfactual; no gaps, bits, decodes or candidate checks ran. This diagnoses measurement coverage, not a key/cipher result.",
       "evidence": [
+        "analysis_outputs/continuation_20261110/g04_guard_trace/RESULT.md",
+        "analysis_outputs/continuation_20261110/g04_guard_trace/RESULT.json",
         "analysis_outputs/continuation_20261110/g04_guard_trace/PROTOCOL.md",
         "analysis_outputs/continuation_20261110/g04_guard_trace/PROTOCOL.json"
       ],
       "reproduce": [
-        "python3 scripts/g04_guard_trace.py --self-test"
+        "python3 scripts/g04_guard_trace.py --self-test",
+        "python3 scripts/g04_guard_trace.py --run --protocol analysis_outputs/continuation_20261110/g04_guard_trace/PROTOCOL.json --registration-commit 8953539b90b946e1808fcc2a594409eb04c6a31a --out FRESH_PRIVATE_DIRECTORY"
       ],
       "limitations": [
         "Continued words after a first failure are counterfactual diagnostics.",
