@@ -10,6 +10,8 @@ The [visual lab and dated frames](VISUAL_GUIDE.md) make the source pages and com
 
 ## Research is continuing
 
+The [December recording reviews](analysis_outputs/continuation_20261110/creator_december/REPORT.md) cover every saved auto-caption cue in the December 23 and 28 episodes. No explicit puzzle-linked extraction rule was recognized. The first recording supplies a planned follow-up; date/theme correspondence with the second remains tentative. Audio and frames are unreviewed. The [original clue conversations](analysis_outputs/continuation_20261110/creator_post_context/REVIEW.md) are also readable through normal browser access; their bounded review adds no authenticated instruction or prize address.
+
 The [original OP64 episode and caption review](analysis_outputs/continuation_20261110/creator_op64/REVIEW.md) add creator context. Two AI assistants reviewed all 543 auto-caption cues without recognizing an explicit puzzle instruction. Audio and other recording windows remain open; thematic reversal/mirror language is not an article-linked rule.
 
 The [Orange Party body review](analysis_outputs/continuation_20261110/issue27_body_source/SOURCE.md) now covers all 312 historical body rows. Its separate model repairs 68 rows, including typography, and retains three uncertain prefixes explicitly. The [registered stride-12 result](analysis_outputs/continuation_20261110/issue27_stride12/RESULT.md) completed all 72 fixed-model readings: 93 distinct minikey shapes all failed, with no other declared format shape. Independent replay agreed. Sixty readings use source-confirmed glyphs; twelve retain prefix uncertainty. This closes the exact model only.

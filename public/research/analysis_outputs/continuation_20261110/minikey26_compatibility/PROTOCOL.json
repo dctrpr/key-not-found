@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "batchId": "keiser-minikey26-original-compatibility-20261110",
+  "test": {
+    "id": "minikey26-original-compatibility",
+    "title": "Historical26-character minikey compatibility in frozen Issue24 populations",
+    "family": "literal-format-compatibility-replay",
+    "branchId": "text-lines",
+    "inputPaths": [
+      "analysis_outputs/continuation_20261110/mirror_boundary_review/SOURCE_MODEL.json",
+      "sources/word-geometry-20261110.json",
+      "sources/printed-lines.json",
+      "analysis_outputs/3d_article_map/article_3d_map_data.json",
+      "analysis_outputs/continuation_20261109/inverted_duplex/inverted_duplex.json",
+      "scripts/batch20_support/english.txt",
+      "scripts/batch20_support/controls.json",
+      "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.json",
+      "analysis_outputs/continuation_20261110/minikey_windows/RESULT.json",
+      "analysis_outputs/continuation_20261110/mirror_global_envelope/RESULT.json",
+      "analysis_outputs/continuation_20261110/minikey26_compatibility/HISTORICAL_SOURCE.json"
+    ],
+    "implementationPaths": [
+      "scripts/minikey26_compatibility.py",
+      "scripts/minikey_window_audit.cjs",
+      "scripts/global_mirror_envelope.py",
+      "scripts/global_mirror_dag.py",
+      "scripts/verify_minikey26_compatibility.py"
+    ],
+    "parameters": {
+      "lengths": [
+        26
+      ],
+      "alphabet": "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz",
+      "prefix": "S",
+      "checksum": "First byte of SHA256(ASCII(candidate + question-mark)) equals zero; no scalar derivation.",
+      "literalPopulation": {
+        "frozenStreams": 22,
+        "exactOrWhitespaceCompactedForms": 42,
+        "potentialPositionWindows26": 113662,
+        "wordOrCharacterTransformAdded": false
+      },
+      "globalPopulation": {
+        "globalFamilies": 4,
+        "languageDescriptors": 24,
+        "selectionPaths": 43347744,
+        "builder": "Unchanged checked_source_families and graph functions; unchanged pair, color, edge, row order, projection and omission choices.",
+        "candidateSemantics": "Unique reachable26-character shapes, not occurrences or expanded full-reading counts."
+      },
+      "maximumProductPrefixStateVisits": 2000000,
+      "maximumUniqueCandidateInsertions": 1000000,
+      "maximumLiteralPositions": 113662,
+      "maximumSourceBlobBytes": 20000000,
+      "maximumNodeBuilderOutputBytes": 2000000,
+      "networkAddressQueries": 0,
+      "scalarDerivations": 0,
+      "addressDerivations": 0,
+      "transactions": 0,
+      "automaticHistoryFollowup": false,
+      "rawArtifacts": [
+        "FORMS.private.json",
+        "CANDIDATES.private.json"
+      ],
+      "candidateFingerprint": "Existing batch20 domain-separated minikey fingerprint; never SHA256(candidate).",
+      "preflight": "Exact source/code/protocol byte-pin checks only; no target parsing, enumeration or checksum work."
+    },
+    "historicalSource": {
+      "schemaVersion": 1,
+      "sourceURL": "https://github.com/casascius/Bitcoin-Address-Utility/blob/e493d51e4a1da7536fc8e8aea38eeaee38abf4cb/Model/MiniKeyPair.cs",
+      "rawURL": "https://raw.githubusercontent.com/casascius/Bitcoin-Address-Utility/e493d51e4a1da7536fc8e8aea38eeaee38abf4cb/Model/MiniKeyPair.cs",
+      "commit": "e493d51e4a1da7536fc8e8aea38eeaee38abf4cb",
+      "commitDate": "2013-02-02T06:30:48Z",
+      "sourceBytes": 6544,
+      "sourceSha256": "80e65113831f35efee29bef828efd6705a9cb8418d4067e183d2478e4aa3f99c",
+      "sourceLines": {
+        "lengthGuard": 144,
+        "checksum": 148,
+        "success": 149,
+        "prefix": 145,
+        "alphabet": 146
+      },
+      "acceptedLengths": [
+        22,
+        26,
+        30
+      ],
+      "compatibilityInterpretation": "Historical implementation support; not a claim that every specification requires26 or that the puzzle creator selected26.",
+      "newReplayLengths": [
+        26
+      ],
+      "sourceCodeRedistributed": false,
+      "retrievalVerification": "Independent raw-source bytes matched the retained copy, and GitHub commit metadata independently confirmed the date."
+    },
+    "controls": [
+      "synthetic-valid-invalid26-only",
+      "old22-30-validator-gap-control",
+      "unchanged-Node-source-builder-with-synthetic-prose",
+      "DAG26-vs-exhaustive-toys",
+      "omission-conditional-space-reversal-embedded-windows",
+      "state-candidate-cap-inconclusive",
+      "protocol-schema-pin-and-Git-byte-guards",
+      "safe-output-allowlist"
+    ],
+    "negativeCriterion": "A complete zero excludes only historical26-character minikey compatibility in the declared frozen42-form and24-DAG populations. Existing22/30 results remain unchanged.",
+    "limitations": [
+      "Historical implementation support is not evidence that the creator used26 characters or that every specification requires26.",
+      "The eight-bit checksum is weak under repeated trials; a pass is private review, not puzzle authentication.",
+      "Global source membership/geometry conventions are investigator hypotheses, not calibrated physical bounds.",
+      "No new source reading, geometry, word filter, other length, scalar/address derivation, wallet action or network lookup is included."
+    ]
+  },
+  "sourceHashes": {
+    "analysis_outputs/continuation_20261110/mirror_boundary_review/SOURCE_MODEL.json": "8b378d6c88f4f132af9697482ef9e49024694791bccae87d4437c367091273e6",
+    "sources/word-geometry-20261110.json": "e3348d0d60d3097b05d0afdb0a1fccf66409274408af9ae7a9369c37fe596e9f",
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "analysis_outputs/3d_article_map/article_3d_map_data.json": "22c2285a6cd53f6bdda7bdd284d556c52ff55dea0a55cd1b549acbb81443eac3",
+    "analysis_outputs/continuation_20261109/inverted_duplex/inverted_duplex.json": "4d6d029bf5f7e90acfa1d456bc94e790913c7865b923c9367212c219867742f3",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b",
+    "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.json": "1651a33dab46babf36f56439ddb409058cfa36712d96ead7d4200962b80817b9",
+    "analysis_outputs/continuation_20261110/minikey_windows/RESULT.json": "49cc574ebb4ae9276ae9fec357558cbab0daf6b495b5c55b8a468e7e41e1921f",
+    "analysis_outputs/continuation_20261110/mirror_global_envelope/RESULT.json": "e3c0aceba6eb16d862710f474a6433ea31628f0522e2dca214bfc8af20cf4f8c",
+    "analysis_outputs/continuation_20261110/minikey26_compatibility/HISTORICAL_SOURCE.json": "8f38c33fd22cb300615a43b6dcac466812cb9df9ddc787a21d757c94dff0e07d"
+  },
+  "scriptHashes": {
+    "scripts/minikey26_compatibility.py": "b76da0999516f068d0c97689b873d860b3735f33cb9a2060a1099b8c1d9673a5",
+    "scripts/minikey_window_audit.cjs": "189c6f359a057021adbc060ddeaa8caa29e6f58c40a6976daeda62025d2182f0",
+    "scripts/global_mirror_envelope.py": "61538c617f74b9ab1dde922cd263e88436eb9ccc430b2072dcc003c49a50d712",
+    "scripts/global_mirror_dag.py": "8134260ef4811830e5653a9d5294acec9b154eb9df3d11c9b558e50fe20ca12d",
+    "scripts/verify_minikey26_compatibility.py": "28f633569dae17ca7a486438e67f721972be7184510372b3ff3317a8e2b6d2c7"
+  }
+}

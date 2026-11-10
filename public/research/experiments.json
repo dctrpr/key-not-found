@@ -247,21 +247,26 @@
       "status": "partial",
       "kind": "source-audit",
       "independentTheory": false,
-      "scope": "Four verified public posts plus a caption-only review of the original OP64 episode after the March announcement; exact links and source limits.",
-      "result": "Creator posts supply method pointers and a prize claim, without an authenticated funding address. Two AI assistants reviewed all 543 OP64 auto-caption cues; neither recognized an explicit puzzle-linked extraction instruction. Audio and other episode windows remain unreviewed.",
+      "scope": "Four verified public posts; full caption-only reviews of OP64 and the 23/28 December 2022 recordings; bounded original-post conversation review. Exact links and limits are retained.",
+      "result": "No authenticated prize address or new creator-directed extraction rule was recognized in the inspected sources. Two AI assistants read every saved cue in each of three recordings. The December 23 closing led to an official December 28 episode; exact promised-special identity is unproved.",
       "evidence": [
         "sources/creator-clues.json",
         "analysis_outputs/continuation_20261109/george_sand_research.md",
         "analysis_outputs/continuation_20261109/external_research.md",
         "analysis_outputs/continuation_20261110/creator_op64/REVIEW.md",
         "analysis_outputs/continuation_20261110/creator_op64/SOURCE.json",
-        "analysis_outputs/continuation_20261110/creator_op64/REVIEW_RECEIPT.json"
+        "analysis_outputs/continuation_20261110/creator_op64/REVIEW_RECEIPT.json",
+        "analysis_outputs/continuation_20261110/creator_december/REPORT.md",
+        "analysis_outputs/continuation_20261110/creator_december/SOURCE_REVIEW.json",
+        "analysis_outputs/continuation_20261110/creator_post_context/REVIEW.md",
+        "analysis_outputs/continuation_20261110/creator_post_context/REVIEW.json"
       ],
       "reproduce": [],
       "limitations": [
         "December2023 predecessor context is unavailable.",
-        "OP64 review covers automatic captions only, with ASR/redaction and missing end-time limits; it is not a semantic or audio exclusion.",
-        "The relevant creator-recording date windows have not been exhaustively inventoried or cleared."
+        "Recording reviews cover automatic captions only, with ASR and missing end-time limits; no full audio or frame review.",
+        "The relevant recording windows, account history and replies have not been exhaustively inventoried or cleared.",
+        "Third-party seed, format and typography guesses are not authenticated creator clues or solutions."
       ]
     },
     {
@@ -812,7 +817,8 @@
         "Zero history is limited to five registered mainnet address constructions, two explorer providers and recorded check times; it is not a full-node proof.",
         "Other scripts, HD derivations, multisig constructions, encodings, page rules and future funding remain outside scope.",
         "Guard bounds and source memberships are investigator assumptions. The matching modeled witness requires uncertain boundary choices and does not authenticate creator intent.",
-        "No authenticated prize address or solution has been established."
+        "No authenticated prize address or solution has been established.",
+        "The original minikey gate covered 22/30 characters only. A separate historical 26-character compatibility replay is registered independently."
       ]
     },
     {
@@ -873,6 +879,29 @@
         "Body classification, region order and literal-chunk rules are investigator assumptions. No hard-wrap joining or alternate word counting is included.",
         "Three prefixes remain source-uncertain for word/initial readings; fixed-model completion cannot exclude the whole physical-source hypothesis.",
         "Orange Party is relevant to the broad December plural-key claim, not authenticated as the March 20-BTC target."
+      ]
+    },
+    {
+      "id": "minikey26-original-compatibility",
+      "title": "The missing 26-character minikey length",
+      "status": "in-progress",
+      "kind": "coverage-audit",
+      "independentTheory": false,
+      "scope": "The original 22 saved body readings/42 forms plus the unchanged 24 global mirror language graphs; only historical 26-character minikey compatibility.",
+      "result": "Prepared for public registration. New code and synthetic controls are being independently reviewed; no target 26-character scan has run at this checkpoint.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/minikey26_compatibility/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/minikey26_compatibility/PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/minikey26_compatibility/HISTORICAL_SOURCE.json"
+      ],
+      "reproduce": [
+        "python3 scripts/minikey26_compatibility.py --self-test",
+        "python3 scripts/verify_minikey26_compatibility.py --self-test"
+      ],
+      "limitations": [
+        "Historical software compatibility is not evidence that the creator chose this length.",
+        "Earlier tests remain valid for their declared 22/30 lengths. Other populations remain outside this replay.",
+        "One-byte checksum passes can occur by chance; no scalar/address derivation or network lookup is part of this protocol."
       ]
     }
   ],
