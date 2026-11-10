@@ -13,7 +13,7 @@ let previous = '';
 for (const entry of data.entries) {
   assert.match(entry.id, /^[a-z0-9-]+$/);
   assert.ok(!ids.has(entry.id)); ids.add(entry.id);
-  assert.ok(['funnel', 'history', 'source', 'reading', 'measurement', 'support'].includes(entry.diagram));
+  assert.ok(['funnel', 'history', 'source', 'reading', 'measurement', 'support', 'review'].includes(entry.diagram));
   assert.ok(['spread', 'stack', 'mirror'].includes(entry.scene.layout));
   assert.ok(entry.scene.source === undefined || ['issue27', 'funky'].includes(entry.scene.source));
   const pages = entry.scene.source === 'funky' ? [107, 108, 109, 110, 111, 112] : entry.scene.source === 'issue27' ? [78, 79, 80, 81] : [73, 74, 75, 76, 77, 78, 79, 80];
@@ -36,6 +36,46 @@ for (const entry of data.entries) {
       value = value.filter(q => q.activity).length;
     } else assert.equal(metric.operation, undefined);
     assert.equal(value, metric.value, 'Visual metric differs from its frozen result');
+  }
+  if (entry.diagram === 'review') {
+    assert.equal(result.caseStatus, 'unsolved');
+    assert.equal(result.formalMessageExclusion, false);
+    assert.equal(result.newCipherExperiment, false);
+    assert.equal(result.completeSavedPopulationRead, true);
+    assert.equal(result.geometryRevalidatedBySemanticReview, false);
+    assert.ok(Object.values(result.activity).every(value => value === 0));
+    const readPinned = (reference) => {
+      const bytes = fs.readFileSync(path.join(root, 'public/research', reference.path));
+      assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), reference.sha256);
+      return JSON.parse(bytes);
+    };
+    const original = readPinned(result.sourceArtifact);
+    const inventory = readPinned(result.inventory);
+    assert.equal(inventory.records.length, 40);
+    assert.equal(inventory.records.filter(row => row.correctedPhysicalLeaf).length, 8);
+    assert.equal(inventory.records.reduce((n, row) => n + row.codepoints, 0), 3588);
+    for (const row of inventory.records) {
+      let text = original;
+      for (const key of row.jsonPointer.slice(1).split('/')) text = text[key];
+      assert.equal(typeof text, 'string');
+      assert.equal(Array.from(text).length, row.codepoints);
+      assert.equal(Buffer.byteLength(text), row.utf8Bytes);
+    }
+    assert.equal(result.reviewers.length, 2);
+    for (const reviewer of result.reviewers) {
+      const review = readPinned(reviewer.review);
+      assert.equal(review.readings.length, 40);
+      assert.equal(reviewer.completeTextsRead, 40);
+      assert.equal(reviewer.codepointsRead, 3588);
+      for (let i = 0; i < inventory.records.length; i++) {
+        const record = review.readings[i], expected = inventory.records[i];
+        assert.equal(record.id ?? record.readingId, expected.id);
+        assert.equal(record.codepoints ?? record.codepointCount, expected.codepoints);
+        assert.equal(record.utf8Bytes ?? record.utf8ByteCount, expected.utf8Bytes);
+        assert.equal(record.readInFull ?? record.completeSavedStringRead, true);
+      }
+    }
+    assert.equal(readPinned(result.effectiveSourceCheck).allEffectivePagesStructurallyEqual, true);
   }
   if (entry.id === 'column151-sand-three-readings') {
     assert.equal(entry.diagram, 'funnel');

@@ -22,7 +22,17 @@ export function VisualFrame({ entry, number }: { entry: Entry; number: number })
       <rect x="35" y="31" width="8" height="8" fill={lime}/>
       <text x="54" y="39" fill={paper} fontSize="11" letterSpacing="2">KEY NOT FOUND / RESEARCH FRAME {String(number).padStart(2, '0')}</text>
       <text x="865" y="39" textAnchor="end" fill={muted} fontSize="11">{entry.completedAtUTC.slice(0, 10)} · UNSOLVED</text>
-      {entry.diagram === 'history' ? <>
+      {entry.diagram === 'review' ? <>
+        <text x="40" y="101" fill={paper} fontSize="26" fontWeight="700">Read the 40 orange-mask texts.</text>
+        <text x="40" y="130" fill={muted} fontSize="13">40 historical texts · 8 physical-pair readings · 32 other-pair controls</text>
+        {entry.metrics.map((metric, i) => <g key={metric.label}>
+          <rect x={40 + i * 288} y="175" width="244" height="140" fill="#191917" stroke={i === 2 ? lime : '#45453c'}/>
+          <text x={60 + i * 288} y="243" fill={i === 2 ? lime : paper} fontSize="47" fontWeight="700">{formatNumber(metric.value)}</text>
+          <text x={60 + i * 288} y="282" fill={muted} fontSize="13">{metric.label}</text>
+        </g>)}
+        <text x="40" y="351" fill={paper} fontSize="14">All complete outputs read. Historical source limits remain.</text>
+        <text x="40" y="375" fill={muted} fontSize="12">Nonblind AI judgment. No new cipher run or formal message exclusion.</text>
+      </> : entry.diagram === 'history' ? <>
         <text x="40" y="101" fill={paper} fontSize="26" fontWeight="700">The history check.</text>
         <text x="40" y="130" fill={muted} fontSize="13">Five constructions. Two providers. One fixed, read-only check.</text>
         <text x="600" y="167" textAnchor="middle" fill={muted} fontSize="11">BLOCKSTREAM</text>

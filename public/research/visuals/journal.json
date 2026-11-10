@@ -523,6 +523,42 @@
           "height": 610
         }
       ]
+    },
+    {
+      "id": "mirror-saved-reading-review",
+      "completedAtUTC": "2026-11-10T17:25:26.153Z",
+      "title": "40 orange-mask texts, read in full.",
+      "summary": "Two AI contexts read all 40 historical forward orange-mask texts, including eight from correct physical pairs and 32 other-pair controls.",
+      "result": "Neither reader recognized a determinate puzzle instruction. This is subjective nonrecognition with prior source exposure; no new cipher run or formal message exclusion.",
+      "diagram": "review",
+      "metrics": [
+        {
+          "label": "Saved texts",
+          "value": 40,
+          "pointer": "/counts/savedTexts"
+        },
+        {
+          "label": "AI readers",
+          "value": 2,
+          "pointer": "/counts/AIReaders"
+        },
+        {
+          "label": "Instructions recognized",
+          "value": 0,
+          "pointer": "/counts/determinateInstructionsRecognized"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/mirror_saved_reading_review/RESULT.json",
+        "sha256": "92569e483c80e009a951f83543a067d136fb619ad798bbc4a4c409d8cf509ccc"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/mirror_saved_reading_review/RESULT.md",
+      "scene": {
+        "layout": "stack",
+        "page": 76
+      },
+      "sceneNote": "Actual source scans. The stack is a viewing aid; it does not apply the historical selector. The evidence separates physical-pair readings from other-pair controls.",
+      "methodId": "corrected-orange"
     }
   ]
 }

@@ -16,4 +16,6 @@ The source-support frame links accepted pilot masks and a separate inverse-field
 
 The declared-column reading frame opens the actual 73/74 opener board. The viewer now includes all eight retained 2023 pages. Its native excerpts show the two added opener units and the four already-retained display lines. The 151/3/0 counts mean source units, literal readings and valid format records; the two complete-output AI reviews are separately disclosed as nonblind and subjective.
 
+The saved-mirror review frame records 40 existing texts, two AI readers and zero recognized instructions. Recognition is subjective and nonblind; its zero is not a cryptographic test result. Eight physical-pair texts and 32 other-pair controls remain separate in the evidence. No new geometry or cipher output was generated.
+
 The puzzle remains unsolved. The 3D display and visual log do not verify the prize funding.

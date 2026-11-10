@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "id": "mirror-saved-reading-review",
+  "completedAtUTC": "2026-11-10T17:25:26.153Z",
+  "caseStatus": "unsolved",
+  "reviewKind": "exploratory-existing-output-semantic-review",
+  "sourceArtifact": {
+    "path": "analysis_outputs/continuation_20261109/corrected_duplex_orange.json",
+    "sha256": "fc56bf986f95fb2818d52ab747a5658c5a8a62de3074a211814394b16e39a829"
+  },
+  "counts": {
+    "savedTexts": 40,
+    "physicalPairTexts": 8,
+    "otherPairControls": 32,
+    "emptyTexts": 2,
+    "codepointsPerReader": 3588,
+    "utf8BytesPerReader": 3616,
+    "AIReaders": 2,
+    "determinateInstructionsRecognized": 0
+  },
+  "completeSavedPopulationRead": true,
+  "formalMessageExclusion": false,
+  "newCipherExperiment": false,
+  "geometryRevalidatedBySemanticReview": false,
+  "priorVisibility": "Four physical-pair word texts appeared in an old report; the complete40-ID review receipt was not found. Source-model hash change is privacy paths and serialization only, with unchanged effective geometry/text.",
+  "plan": {
+    "path": "analysis_outputs/continuation_20261110/mirror_saved_reading_review/PLAN.json",
+    "sha256": "38bf6092d8b2d79e542d959bdfa6ce04848ef0296a9a69a62da18118b62670a4"
+  },
+  "inventory": {
+    "path": "analysis_outputs/continuation_20261110/mirror_saved_reading_review/INVENTORY.json",
+    "sha256": "f897f791baff6a48e193cbb8374fdf969c005df3e729442d39a3a7fda5f3506a"
+  },
+  "effectiveSourceCheck": {
+    "path": "analysis_outputs/continuation_20261110/mirror_saved_reading_review/EFFECTIVE_SOURCE_CHECK.json",
+    "sha256": "1b81949d215f9b1d628d79a221962e0c64278a6a2d9680641895eacd00ee5392"
+  },
+  "reviewers": [
+    {
+      "id": "A",
+      "review": {
+        "path": "analysis_outputs/continuation_20261110/mirror_saved_reading_review/REVIEW_A.json",
+        "sha256": "73b0c4c5263fd6b3aec9a7e4f1902471c53d3eaf4eed0a194c698adea879ebf0"
+      },
+      "completeTextsRead": 40,
+      "codepointsRead": 3588,
+      "utf8BytesRead": 3616
+    },
+    {
+      "id": "B",
+      "review": {
+        "path": "analysis_outputs/continuation_20261110/mirror_saved_reading_review/REVIEW_B.json",
+        "sha256": "d4f975228a66f3e0017277933ecca58c60d6c28e84b5a3eabbc82df78a632ba0"
+      },
+      "completeTextsRead": 40,
+      "codepointsRead": 3588,
+      "utf8BytesRead": 3616
+    }
+  ],
+  "sourceCompanions": [
+    {
+      "path": "analysis_outputs/continuation_20261110/mirror_saved_reading_review/PAPER_SCOPE.json",
+      "sha256": "75163691276eff63e927dd1bad8ce238a227687af336d510b4ebea21a63e5076"
+    },
+    {
+      "path": "analysis_outputs/continuation_20261110/mirror_saved_reading_review/CREATOR_CONTEXT.json",
+      "sha256": "da4b1f1261678d8c6fdab08791be68860de5e37d011d6979e98e43783f9e49d3"
+    }
+  ],
+  "activity": {
+    "newCipherReadings": 0,
+    "newTransforms": 0,
+    "newFormatChecks": 0,
+    "scalarOrAddressDerivations": 0,
+    "candidateNetworkQueries": 0,
+    "transactions": 0
+  },
+  "limitations": [
+    "Both AI readers had prior article/source exposure and visible pair labels. Nonrecognition is subjective and unblinded, with no calibrated false-negative rate.",
+    "Historical OCR, center-in-mask and registration limits remain. Complete semantic coverage is not exact printed-glyph validation.",
+    "Only40savedforwardtexts; unsaved reversals, the flexible pair-envelope population and unexpanded global DAG are outside this review.",
+    "No new creator instruction was recovered in the bounded visible reply context; complete account/conversation coverage is not established."
+  ]
+}
