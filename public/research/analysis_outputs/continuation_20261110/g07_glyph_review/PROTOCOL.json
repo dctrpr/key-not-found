@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "testId": "g07-mirror-glyph-orientation",
+  "frozenAtUTC": "2026-11-10T23:49:12.931Z",
+  "sourceHashes": {
+    "magazine.pdf": "a30c61f8c49674afb7bccc6680d6477f6e919175386a2422de0a944db4e76c13",
+    "sources/creator-clues.json": "6c7d0ed5aabe6acd0cc8795e7c03e94813c5e25f6164944aa6d594148ef084c7",
+    "analysis_outputs/continuation_20261109/fresh_cryptanalysis/README.md": "b3881070a9353d1786ad9b0e0fb1b89719dcac10725afd4374dcc4ab1dd695f6",
+    "analysis_outputs/continuation_20261110/batch20/G07/RESULT.json": "fc3ab1acf7e97b6061341065d3e9c9a64626b37ee985a86db9147aa412742513",
+    "analysis_outputs/continuation_20261110/batch20/G07/DETAILS.json": "04ded3ed13261f1b93715040e098e52942bef62850ab0fe72179c1aafbb08e3e",
+    "analysis_outputs/continuation_20261110/batch20/G07/STREAMS.json": "e934e778c07cba19c00c6e4fb7cb8f858042f904d320f0d919a59fa1e4c3e7da",
+    "analysis_outputs/continuation_20261110/g07_glyph_review/BASELINE_BOXES.json": "2d7a6b97564ec8e85c3ac086a4dba87e9631666d3329d0a709c514d88b627fa0",
+    "analysis_outputs/continuation_20261110/g07_glyph_review/SOURCE.md": "71e6daa58fb4cf12b4e4af2f51335a4ad6bc517c809fab3a7d312d36e1b9fc32",
+    "analysis_outputs/continuation_20261110/g07_glyph_review/READER_INSTRUCTIONS.md": "8781d0be0076aa54b84d3875cd5316d58006f8b715896f1566dd733ad57a89a0"
+  },
+  "scriptHashes": {
+    "scripts/prepare_g07_glyph_review.py": "2c5bcf5c15ef4c2c54e1ff63ad4ded8d3ff5bb111cbf9c573fb30e14b7cf9aca",
+    "scripts/merge_g07_glyph_review.py": "a26a22855d3bce63bbd2dba6d6cafdb2a4fe64a53d30f56e5f5fc672984a2b55"
+  },
+  "runtimeVersions": {
+    "pymupdf": "1.26.5",
+    "pillow": "11.3.0"
+  },
+  "targetCount": 114,
+  "targetCountByPage": {
+    "73": 10,
+    "74": 7,
+    "75": 20,
+    "76": 22,
+    "77": 17,
+    "78": 10,
+    "79": 13,
+    "80": 15
+  },
+  "imageSize": [
+    2544,
+    3264
+  ],
+  "paddingPx": 8,
+  "sheetRows": 4,
+  "assetCount": 263,
+  "controlExpectations": {
+    "c01": "symmetric-only",
+    "c02": "reversed",
+    "c03": "ordinary"
+  },
+  "reviewers": 2,
+  "reviewerContexts": "fresh, no peer or prior target marks",
+  "orientationLabels": [
+    "ordinary",
+    "reversed",
+    "mixed",
+    "symmetric-only",
+    "nontext",
+    "unclear"
+  ],
+  "instructionLabels": [
+    "none",
+    "candidate",
+    "unclear"
+  ],
+  "minimumReversedAsymmetricGlyphsForCandidate": 2,
+  "outcomeRule": "Complete scoped nonrecognition requires both control sets passed, every orientation agreed and definite, two none marks per row, and no candidate."
+}
