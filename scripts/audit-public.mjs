@@ -8,6 +8,7 @@ const excluded = new Set([
   "node_modules",
   ".git",
   ".vercel",
+  ".claude",
   "dist",
   "coverage",
   "test-results",

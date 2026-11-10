@@ -1,8 +1,7 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   ArrowDown,
   ArrowDownToLine,
-  ArrowRight,
   ArrowUpRight,
   Check,
   ChevronDown,
@@ -25,19 +24,15 @@ import PublicChat from "./components/PublicChat";
 import ResearchMapView from "./components/ResearchMap";
 import RepositoryActivity from "./components/RepositoryActivity";
 import useLiveResearch from "./hooks/useLiveResearch";
-import type { ResearchMap } from "./lib/researchState";
+import { followHashLinks } from "./lib/hashLinks";
+import { isActiveStatus, isOpenStatus } from "./lib/methodStatus";
+import type {
+  ResearchLedger,
+  ResearchMap,
+  ResearchUpdate,
+  ResearchUpdates,
+} from "./lib/researchState";
 
-type Method = {
-  id: string;
-  title: string;
-  status: string;
-  kind?: string;
-  scope: string;
-  result: string;
-  evidence: string[];
-  reproduce: string[];
-  limitations?: string[];
-};
 type FileEntry = {
   path: string;
   category: string;
@@ -49,17 +44,6 @@ type FileEntry = {
 type FileIndex = {
   files: FileEntry[];
   totals: { files: number; bytes: number };
-};
-type Update = {
-  id: string;
-  date: string;
-  category: string;
-  title: string;
-  body: string;
-  evidence: string;
-  kind?: "research" | "project";
-  methodIds?: string[];
-  branchId?: string;
 };
 type Project = {
   repository: string;
@@ -80,6 +64,18 @@ type Project = {
 const REPO = "https://github.com/dctrpr/key-not-found";
 const DISCORD = "https://discord.gg/ZZK6DuADS";
 const ARCHIVE = "/downloads/key404-casefile.zip";
+// Date of the creator's public 20 BTC post, as recorded in the source register.
+const CLAIM_DATE = "2023-03-04";
+const FIRST_PAGE = 73;
+const LAST_PAGE = 80;
+const NAV = [
+  ["Case", "case"],
+  ["Map", "investigation"],
+  ["Log", "updates"],
+  ["Files", "files"],
+  ["Join", "community"],
+  ["Funding", "token"],
+];
 const START_FILES: Record<string, string> = {
   "sources/creator-clues.json": "Read the creator’s clues",
   "sources/printed-lines.json": "Inspect the exact printed lines",
@@ -103,6 +99,16 @@ const dateLabel = (date: string) =>
     year: "numeric",
     timeZone: "UTC",
   });
+const noteTone = (category: string) =>
+  ({
+    CORRECTION: " is-correction",
+    "SOURCE FIX": " is-source",
+    TESTED: " is-tested",
+  })[category.trim().toUpperCase()] || "";
+const calmScroll = (): ScrollBehavior =>
+  window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ? "auto"
+    : "smooth";
 
 function useJson<T>(path: string) {
   const [data, setData] = useState<T | null>(null);
@@ -143,12 +149,8 @@ function SectionLabel({
 
 function App() {
   const project = useJson<Project>("/data/project.json");
-  const updates = useJson<{
-    updatedOn: string;
-    logOpenedOn: string;
-    updates: Update[];
-  }>("/data/updates.json");
-  const ledger = useJson<{ methods: Method[] }>("/research/experiments.json");
+  const updates = useJson<ResearchUpdates>("/data/updates.json");
+  const ledger = useJson<ResearchLedger>("/research/experiments.json");
   const researchMap = useJson<ResearchMap>("/data/research-map.json");
   const liveResearch = useLiveResearch({
     ledger: ledger.data,
@@ -161,15 +163,13 @@ function App() {
   const files = useJson<FileIndex>("/research/files.json");
   const [menuOpen, setMenuOpen] = useState(false);
   const [chatOpen, setChatOpen] = useState(false);
-  const [ledgerFilter, setLedgerFilter] = useState("all");
-  const [ledgerSearch, setLedgerSearch] = useState("");
-  const [showAllMethods, setShowAllMethods] = useState(false);
   const [fileSearch, setFileSearch] = useState("");
   const [fileFilter, setFileFilter] = useState("all");
   const [fileLimit, setFileLimit] = useState(5);
   const [toast, setToast] = useState("");
   const [selectedPage, setSelectedPage] = useState<number | null>(null);
-  const [pendingMethod, setPendingMethod] = useState<string | null>(null);
+  const [showProjectNotes, setShowProjectNotes] = useState(false);
+  const [pendingUpdate, setPendingUpdate] = useState<string | null>(null);
   const dialog = useRef<HTMLDialogElement>(null);
   const fileInput = useRef<HTMLInputElement>(null);
   const repo = project.data?.repository || REPO;
@@ -182,15 +182,25 @@ function App() {
       ),
     [currentUpdates],
   );
+  const researchNotes = updateEntries.filter(
+    (entry) => entry.kind !== "project",
+  );
+  const projectNotes = updateEntries.filter(
+    (entry) => entry.kind === "project",
+  );
   const latestFinding = updateEntries.find(
     (entry) => entry.kind === "research",
   );
+  const methodCount = currentLedger?.methods.length ?? 0;
   const openMethods = (currentLedger?.methods || []).filter((method) =>
-    ["partial", "untested", "open"].includes(method.status),
+    isOpenStatus(method.status),
   ).length;
   const activeMethods = (currentLedger?.methods || []).filter((method) =>
-    ["in-progress", "in_progress"].includes(method.status),
+    isActiveStatus(method.status),
   ).length;
+  const daysSinceClaim = Math.floor(
+    (Date.now() - Date.parse(CLAIM_DATE + "T00:00:00Z")) / 86_400_000,
+  );
   const tokenLive =
     project.data?.token.status === "live" &&
     Boolean(project.data.token.contract && project.data.token.url);
@@ -200,13 +210,6 @@ function App() {
       : corpus
         ? researchPath(path)
         : path;
-  const openMethod = useCallback((id: string) => {
-    setLedgerFilter("all");
-    setLedgerSearch("");
-    setShowAllMethods(true);
-    setPendingMethod(id);
-    window.history.replaceState(null, "", "#method-" + id);
-  }, []);
 
   useEffect(() => {
     if (!toast) return;
@@ -224,21 +227,48 @@ function App() {
         event.preventDefault();
         document
           .getElementById("files")
-          ?.scrollIntoView({ behavior: "smooth" });
+          ?.scrollIntoView({ behavior: calmScroll() });
         fileInput.current?.focus({ preventScroll: true });
       }
       if (selectedPage !== null && event.key === "ArrowRight")
         setSelectedPage((page) =>
-          page === null ? 73 : Math.min(80, page + 1),
+          page === null ? FIRST_PAGE : Math.min(LAST_PAGE, page + 1),
         );
       if (selectedPage !== null && event.key === "ArrowLeft")
         setSelectedPage((page) =>
-          page === null ? 73 : Math.max(73, page - 1),
+          page === null ? FIRST_PAGE : Math.max(FIRST_PAGE, page - 1),
         );
     };
     document.addEventListener("keydown", handle);
     return () => document.removeEventListener("keydown", handle);
   }, [selectedPage]);
+  // A link to a project note opens the folded list before scrolling to it,
+  // including when the link repeats the hash already in the address bar.
+  useEffect(
+    () =>
+      followHashLinks((hash) => {
+        const match = /^#update-([a-z0-9-]+)$/.exec(hash);
+        // Any other destination replaces or cancels a note still waiting.
+        setPendingUpdate(match ? match[1] : null);
+      }),
+    [],
+  );
+  // The deployed snapshot is not the last word: a note merged after this
+  // deployment arrives with the live sync. A note that is not in the current
+  // data keeps waiting until it appears or the visitor goes elsewhere.
+  useEffect(() => {
+    if (!pendingUpdate) return;
+    const entry = updateEntries.find((item) => item.id === pendingUpdate);
+    if (!entry) return;
+    if (entry.kind === "project" && !showProjectNotes) {
+      setShowProjectNotes(true);
+      return;
+    }
+    document
+      .getElementById("update-" + pendingUpdate)
+      ?.scrollIntoView({ behavior: calmScroll(), block: "start" });
+    setPendingUpdate(null);
+  }, [pendingUpdate, updateEntries, showProjectNotes]);
 
   async function copy(text: string, success: string) {
     try {
@@ -249,46 +279,6 @@ function App() {
     }
   }
   const prompt = `Investigate the public Max Keiser magazine puzzle using the source corpus at ${typeof window === "undefined" ? "" : window.location.origin}/research/README.md. Start with sources/creator-clues.json, sources/printed-lines.json, experiments.json and SHA256SUMS. The puzzle is unsolved; no authenticated prize address is known. Review corrected historical claims before choosing one untested, source-motivated hypothesis. Declare source unit, traversal, operation, expected output and falsification criterion. Preserve exact intermediate data and reproducible commands. Distinguish facts, hypotheses and scoped negative results. Do not send transactions, import wallets or contact people. Submit a concise finding and evidence through ${repo}/issues.`;
-  const methods = useMemo(
-    () =>
-      (currentLedger?.methods || []).filter((method) => {
-        const query = ledgerSearch.toLowerCase();
-        const status = method.status.toLowerCase();
-        const matches =
-          ledgerFilter === "all" ||
-          (ledgerFilter === "tested"
-            ? ["falsified", "tested", "invalidated"].includes(status)
-            : ledgerFilter === "open"
-              ? ["untested", "partial", "open"].includes(status)
-              : ["in-progress", "in_progress"].includes(status));
-        return (
-          matches &&
-          (method.title + " " + method.scope + " " + method.result)
-            .toLowerCase()
-            .includes(query)
-        );
-      }),
-    [currentLedger, ledgerSearch, ledgerFilter],
-  );
-  useEffect(() => {
-    if (!pendingMethod) return;
-    const target = document.getElementById("method-" + pendingMethod);
-    if (target instanceof HTMLDetailsElement) {
-      target.open = true;
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
-      target.querySelector("summary")?.focus({ preventScroll: true });
-      setPendingMethod(null);
-    }
-  }, [pendingMethod, methods]);
-  useEffect(() => {
-    const followHash = () => {
-      const match = /^#method-([a-z0-9-]+)$/.exec(window.location.hash);
-      if (match) openMethod(match[1]);
-    };
-    followHash();
-    window.addEventListener("hashchange", followHash);
-    return () => window.removeEventListener("hashchange", followHash);
-  }, [openMethod]);
   const visibleFiles = useMemo(
     () =>
       (files.data?.files || [])
@@ -318,6 +308,34 @@ function App() {
     [files.data, fileSearch, fileFilter],
   );
 
+  const renderNote = (entry: ResearchUpdate) => (
+    <article
+      className="note"
+      key={entry.id}
+      id={"update-" + entry.id}
+      data-category={entry.category}
+    >
+      <div className="note-kicker">
+        <span className={"note-category" + noteTone(entry.category)}>
+          {entry.category}
+        </span>
+        <time dateTime={entry.date}>{dateLabel(entry.date)}</time>
+      </div>
+      <h3>{entry.title}</h3>
+      <p>{entry.body}</p>
+      <div className="note-links">
+        <a className="text-link light" href={evidenceLink(entry.evidence)}>
+          Read the evidence <ArrowUpRight size={16} />
+        </a>
+        {entry.methodIds?.map((id) => (
+          <a className="note-method" key={id} href={"#method-" + id}>
+            <code>{id}</code>
+          </a>
+        ))}
+      </div>
+    </article>
+  );
+
   return (
     <>
       <a className="skip-link" href="#case">
@@ -336,18 +354,10 @@ function App() {
           aria-label="Main navigation"
           className={menuOpen ? "nav-open" : ""}
         >
-          {[
-            ["Case", "case"],
-            ["Map", "investigation"],
-            ["Updates", "updates"],
-            ["Ledger", "ledger"],
-            ["Files", "files"],
-            ["Community", "community"],
-            ["Funding", "token"],
-          ].map(([label, target]) => (
+          {NAV.map(([label, target]) => (
             <a
               href={"#" + target}
-              key={label}
+              key={target}
               onClick={() => setMenuOpen(false)}
             >
               {label}
@@ -394,12 +404,12 @@ function App() {
 
       <main>
         <section className="hero" id="top">
-          <div className="hero-grid" aria-hidden="true" />
           <div className="hero-topline">
             <span>
-              <i className="live-dot" /> CASE FILE 001 · UNSOLVED
+              <i className="status-swatch" aria-hidden="true" /> CASE FILE 001 ·
+              UNSOLVED
             </span>
-            <span>INDEPENDENT / OPEN / ONGOING</span>
+            <span>INDEPENDENT · UNAFFILIATED · OPEN SOURCE</span>
           </div>
           <div className="hero-main">
             <div className="hero-copy">
@@ -407,13 +417,11 @@ function App() {
                 Max Keiser says he hid a Bitcoin private key in this magazine.
               </p>
               <h1>
-                KEY NOT
+                KEY <span className="title-mark">NOT</span>
                 <br />
-                <span>
-                  FOUND<span className="hero-period">.</span>
-                </span>
+                FOUND<span className="hero-period">.</span>
               </h1>
-              <p className="hero-description founder-story">
+              <p className="founder-story">
                 <span>I found Max Keiser’s puzzle in 2023.</span>
                 <span>I’ve been working on it ever since.</span>
                 <strong>Now, let’s find the key together.</strong>
@@ -431,7 +439,7 @@ function App() {
                   Explore the investigation <ArrowDown size={17} />
                 </a>
                 <a
-                  className="text-link light hero-discord"
+                  className="text-link hero-discord"
                   href={DISCORD}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -441,11 +449,13 @@ function App() {
               </div>
             </div>
             <div className="hero-visual">
-              <span className="visual-corner top-left">EXHIBIT 01</span>
-              <span className="visual-corner top-right">[ THE SOURCE ]</span>
+              <div className="visual-corners">
+                <span>EXHIBIT 01</span>
+                <span>THE SOURCE</span>
+              </div>
               <button
                 className="hero-exhibit"
-                onClick={() => setSelectedPage(73)}
+                onClick={() => setSelectedPage(FIRST_PAGE)}
                 aria-label="Inspect printed page 73"
               >
                 <img
@@ -457,74 +467,110 @@ function App() {
                 />
               </button>
               <div className="visual-caption">
-                <button onClick={() => setSelectedPage(73)}>
+                <button onClick={() => setSelectedPage(FIRST_PAGE)}>
                   Inspect the original <ArrowUpRight size={15} />
                 </button>
                 <span>ISSUE 24 · P.73</span>
               </div>
             </div>
           </div>
-          <div className="hero-bottom">
-            <div>
-              <span className="mono">THE CLAIM</span>
-              <span className="hero-stat">20 BTC</span>
-            </div>
-            <div>
-              <span className="mono">ATTRIBUTED TO</span>
-              <span className="hero-stat">MAX KEISER</span>
-            </div>
-            <div>
-              <span className="mono">REWARD STATUS</span>
-              <span className="hero-stat lime-text">UNVERIFIED</span>
-            </div>
-            <a href="#investigation">
-              <span>THE OPEN INVESTIGATION</span>
+          <div
+            className="hero-record"
+            role="group"
+            aria-label="The record at a glance"
+          >
+            <button onClick={() => setSelectedPage(FIRST_PAGE)}>
+              <span className="record-label">THE SOURCE</span>
+              <strong>8 printed pages</strong>
+              <small>Bitcoin Magazine · Issue 24 · pp. 73–80</small>
+            </button>
+            <a href="#case">
+              <span className="record-label">CLAIM POSTED</span>
+              <strong>{dateLabel(CLAIM_DATE)}</strong>
+              <small>
+                {daysSinceClaim.toLocaleString("en-GB")} days ago · by Max
+                Keiser
+              </small>
+            </a>
+            <a href="#ledger">
+              <span className="record-label">ON THE RECORD</span>
               <strong>
-                {currentLedger
-                  ? `${currentLedger.methods.length} METHODS · ${openMethods} OPEN / PARTIAL`
-                  : "EXPLORE THE RESEARCH"}{" "}
-                <ArrowDownRight />
+                {currentLedger ? `${methodCount} methods` : "The ledger"}
               </strong>
+              <small>each with scope, evidence and limits</small>
+            </a>
+            <a href="#open-leads" className="record-open">
+              <span className="record-label">STILL OPEN</span>
+              <strong>
+                {currentLedger ? `${openMethods} open / partial` : "Open leads"}
+              </strong>
+              <small>
+                pick one and test it <ArrowDown size={13} />
+              </small>
             </a>
           </div>
         </section>
 
-        <nav className="how-to-help" aria-label="How to help">
-          <span>HOW TO HELP</span>
-          <button onClick={() => setSelectedPage(73)}>
-            <span>01</span>Read the eight pages <ArrowUpRight size={17} />
-          </button>
-          <a
-            href="#ledger"
-            onClick={() => {
-              setLedgerFilter("all");
-              setLedgerSearch("");
-              setShowAllMethods(true);
-            }}
-          >
-            <span>02</span>See what’s been tried <ArrowDown size={17} />
-          </a>
-          <a
-            href={repo + "/issues/new?template=experiment.yml"}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>03</span>Propose a test <ArrowUpRight size={17} />
-          </a>
-        </nav>
-
-        {currentMap && currentLedger && (
-          <ResearchMapView
-            branches={currentMap.branches}
-            methods={currentLedger.methods}
-            updates={updateEntries}
-            sourceCommit={liveResearch.sourceCommit}
-            checkedAt={liveResearch.checkedAt}
-            status={liveResearch.status}
-            repo={repo}
-            onOpenMethod={openMethod}
-          />
-        )}
+        <section className="roles" id="roles" aria-labelledby="roles-title">
+          <div className="roles-head">
+            <h2 id="roles-title">Find your role.</h2>
+            <p>
+              Reading the evidence needs no token, wallet or account.
+              Corrections and tests go through GitHub, where they stay public.
+            </p>
+          </div>
+          <div className="roles-grid">
+            <button className="role" onClick={() => setSelectedPage(FIRST_PAGE)}>
+              <span className="role-index">01</span>
+              <strong>Reader</strong>
+              <span className="role-verb">Read the eight pages.</span>
+              <span className="role-note">
+                Start with the source, not with our notes.
+              </span>
+              <span className="role-action">
+                Open the pages <ArrowUpRight size={15} />
+              </span>
+            </button>
+            <a
+              className="role"
+              href={repo + "/issues/new?template=correction.yml"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="role-index">02</span>
+              <strong>Skeptic</strong>
+              <span className="role-verb">Challenge a result.</span>
+              <span className="role-note">
+                Corrections stay in the record, with their evidence.
+              </span>
+              <span className="role-action">
+                File a correction <ArrowUpRight size={15} />
+              </span>
+            </a>
+            <a className="role" href="#open-leads">
+              <span className="role-index">03</span>
+              <strong>Solver</strong>
+              <span className="role-verb">Test one idea.</span>
+              <span className="role-note">
+                Fix the rule first. Publish what happens, including nothing.
+              </span>
+              <span className="role-action">
+                See the open leads <ArrowDown size={15} />
+              </span>
+            </a>
+            <a className="role role-later" href="#token">
+              <span className="role-index">04 · AFTER LAUNCH</span>
+              <strong>Backer</strong>
+              <span className="role-verb">Fund research runs.</span>
+              <span className="role-note">
+                Not available yet. No token has launched.
+              </span>
+              <span className="role-action">
+                Read the funding plan <ArrowDown size={15} />
+              </span>
+            </a>
+          </div>
+        </section>
 
         <section className="section case-section" id="case">
           <SectionLabel index="01">THE CASE</SectionLabel>
@@ -569,7 +615,7 @@ function App() {
                   announcement.
                 </p>
                 <span className="clue-source">
-                  View original post <ExternalLink size={12} />
+                  View original post <ExternalLink size={13} />
                 </span>
               </a>
               <a
@@ -594,7 +640,7 @@ function App() {
                   doesn’t name an issue.
                 </p>
                 <span className="clue-source">
-                  View original post <ExternalLink size={12} />
+                  View original post <ExternalLink size={13} />
                 </span>
               </a>
               <a
@@ -619,7 +665,7 @@ function App() {
                   page-folding method.
                 </p>
                 <span className="clue-source">
-                  View original post <ExternalLink size={12} />
+                  View original post <ExternalLink size={13} />
                 </span>
               </a>
             </div>
@@ -645,7 +691,10 @@ function App() {
                 <span>INSPECT THE ORIGINAL ↗</span>
               </button>
               <div className="page-picker" aria-label="Magazine pages">
-                {Array.from({ length: 8 }, (_, i) => i + 73).map((page) => (
+                {Array.from(
+                  { length: LAST_PAGE - FIRST_PAGE + 1 },
+                  (_, i) => i + FIRST_PAGE,
+                ).map((page) => (
                   <button
                     key={page}
                     onClick={() => setSelectedPage(page)}
@@ -675,13 +724,25 @@ function App() {
           </div>
         </section>
 
-        <section className="updates-section" id="updates">
-          <div className="section updates-inner">
-            <SectionLabel index="02" dark>
-              UPDATE LOG
+        <ResearchMapView
+          branches={currentMap?.branches ?? null}
+          methods={currentLedger?.methods ?? null}
+          updates={updateEntries}
+          sourceCommit={liveResearch.sourceCommit}
+          checkedAt={liveResearch.checkedAt}
+          status={liveResearch.status}
+          repo={repo}
+          loadFailed={ledger.error}
+          evidenceLink={evidenceLink}
+        />
+
+        <section className="log-section" id="updates">
+          <div className="section">
+            <SectionLabel index="03" dark>
+              THE LOG
             </SectionLabel>
-            <div className="updates-layout">
-              <div className="updates-overview">
+            <div className="log-layout">
+              <div className="log-aside">
                 <h2>
                   What we tried.
                   <br />
@@ -691,6 +752,33 @@ function App() {
                   Every result gets a dated note and a link to the evidence.
                   Failed tests and corrections stay in the history.
                 </p>
+                <div className="standing">
+                  <span className="map-label">WHERE WE STAND</span>
+                  <strong>Still unsolved.</strong>
+                  <p>
+                    No verified solution or authenticated prize address is
+                    known to this project.
+                  </p>
+                  {latestFinding && (
+                    <p>
+                      Latest finding:{" "}
+                      <a href={"#update-" + latestFinding.id}>
+                        {latestFinding.title}
+                      </a>
+                    </p>
+                  )}
+                  {currentLedger && (
+                    <span className="standing-counts">
+                      {openMethods} open / partial ·{" "}
+                      {activeMethods
+                        ? `${activeMethods} experiments in progress`
+                        : "No active experiment logged"}
+                    </span>
+                  )}
+                  <a href="#open-leads" className="text-link light">
+                    See the open leads <ArrowUpRight size={16} />
+                  </a>
+                </div>
                 <p className="log-origin">
                   This public log opened{" "}
                   {currentUpdates?.logOpenedOn
@@ -698,67 +786,14 @@ function App() {
                     : "09 Nov 2026"}
                   . Earlier work is preserved in the experiment ledger.
                 </p>
-                <div className="research-checkpoint">
-                  <span className="checkpoint-label">WHERE WE STAND</span>
-                  <strong>Still unsolved.</strong>
-                  <p>
-                    {latestFinding
-                      ? latestFinding.title
-                      : "No recovered key or authenticated prize address."}
-                  </p>
-                  {currentLedger && (
-                    <span>
-                      {openMethods} open questions ·{" "}
-                      {activeMethods
-                        ? `${activeMethods} experiments in progress`
-                        : "No active experiment logged"}
-                    </span>
-                  )}
-                  <a
-                    href="#ledger"
-                    className="text-link light"
-                    onClick={() => setLedgerFilter("open")}
-                  >
-                    Explore the open questions <ArrowDown size={16} />
-                  </a>
-                </div>
-                <div className="update-process">
-                  <span>HOW THIS GETS UPDATED</span>
-                  <ol>
-                    <li>Pick an open question. Test one idea.</li>
-                    <li>
-                      <a
-                        href={repo + "/issues/new?template=experiment.yml"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Submit your method and evidence on GitHub ↗
-                      </a>
-                    </li>
-                    <li>
-                      Maintainers review and merge. The map and notes sync from
-                      GitHub.
-                    </li>
-                  </ol>
-                </div>
-                <a
-                  className="text-link light"
-                  href={repo + "/commits/main"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  See the full commit history <ArrowUpRight size={17} />
-                </a>
+                <RepositoryActivity repo={repo} />
               </div>
-              <div
-                className="update-timeline"
-                aria-label="Published update history"
-              >
-                <div className="timeline-header">
+              <div className="log-notes" aria-label="Published update history">
+                <div className="log-notes-head">
                   <span>
                     {updateEntries.length
-                      ? `${updateEntries.length} PUBLISHED NOTES`
-                      : "PUBLISHED NOTES"}
+                      ? `${researchNotes.length} RESEARCH ${researchNotes.length === 1 ? "NOTE" : "NOTES"}`
+                      : "RESEARCH NOTES"}
                   </span>
                   <span>
                     {currentUpdates?.updatedOn
@@ -766,197 +801,48 @@ function App() {
                       : ""}
                   </span>
                 </div>
-                {updateEntries.map((entry) => (
-                  <article
-                    className="timeline-entry"
-                    key={entry.id}
-                    id={"update-" + entry.id}
-                    data-category={entry.category}
+                {researchNotes.map(renderNote)}
+                {updateEntries.length > 0 && !researchNotes.length && (
+                  <p className="log-empty">
+                    No research note has been published yet.
+                  </p>
+                )}
+                {projectNotes.length > 0 && (
+                  <details
+                    className="project-notes"
+                    open={showProjectNotes}
+                    onToggle={(event) =>
+                      setShowProjectNotes(event.currentTarget.open)
+                    }
                   >
-                    <div className="update-kicker">
-                      <span>{entry.category}</span>
-                      <time dateTime={entry.date}>{dateLabel(entry.date)}</time>
-                    </div>
-                    <h3>{entry.title}</h3>
-                    <p>{entry.body}</p>
-                    <a
-                      className="text-link light"
-                      href={evidenceLink(entry.evidence)}
-                    >
-                      Read the evidence <ArrowUpRight size={16} />
-                    </a>
-                  </article>
-                ))}
+                    <summary>
+                      <span>
+                        Site and project notes · {projectNotes.length}
+                      </span>
+                      <small>Changes to this website, not research results</small>
+                      <ChevronDown size={18} />
+                    </summary>
+                    {projectNotes.map(renderNote)}
+                  </details>
+                )}
                 {!updateEntries.length && (
-                  <p className="timeline-empty">
+                  <p className="log-empty">
                     {updates.error
                       ? "The update log is unavailable. The full history is on GitHub."
                       : "Loading published notes…"}
                   </p>
                 )}
+                <a
+                  className="text-link light log-history"
+                  href={repo + "/commits/main"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  See the full commit history <ArrowUpRight size={17} />
+                </a>
               </div>
             </div>
           </div>
-        </section>
-
-        <section className="section ledger-section" id="ledger">
-          <SectionLabel index="03">THE WORK, IN THE OPEN</SectionLabel>
-          <div className="section-intro">
-            <h2>
-              Don’t start from zero.
-              <br />
-              <span>Start where the evidence ends.</span>
-            </h2>
-            <p>
-              These are method families, not a scoreboard of thousands of
-              correlated guesses. Open a result to see its scope, limits,
-              evidence, and reproducible commands.
-            </p>
-          </div>
-          <div className="ledger-toolbar">
-            <div className="filter-tabs" aria-label="Filter research methods">
-              {[
-                ["all", "All work"],
-                ["tested", "Tested"],
-                ["open", "Open leads"],
-                ["in-progress", "In progress"],
-              ]
-                .filter(
-                  ([value]) => value !== "in-progress" || activeMethods > 0,
-                )
-                .map(([value, label]) => (
-                  <button
-                    key={value}
-                    className={ledgerFilter === value ? "active" : ""}
-                    onClick={() => setLedgerFilter(value)}
-                    aria-pressed={ledgerFilter === value}
-                  >
-                    {label}
-                  </button>
-                ))}
-            </div>
-            <label className="search-field">
-              <Search size={16} />
-              <input
-                placeholder="Find a method…"
-                aria-label="Search research methods"
-                value={ledgerSearch}
-                onChange={(event) => setLedgerSearch(event.target.value)}
-              />
-            </label>
-          </div>
-          <div
-            className={
-              "ledger-table" +
-              (!showAllMethods && ledgerFilter === "all" && !ledgerSearch
-                ? " ledger-condensed"
-                : "")
-            }
-          >
-            <div className="ledger-heading">
-              <span>STATUS / METHOD</span>
-              <span>WHAT WE LEARNED</span>
-              <span>REVIEW</span>
-            </div>
-            {methods.map((method, index) => (
-              <details
-                className="method-row"
-                key={method.id}
-                id={"method-" + method.id}
-              >
-                <summary>
-                  <div className="method-title">
-                    <span className={"status-dot status-" + method.status} />
-                    <div>
-                      <span className="method-number">
-                        {String(index + 1).padStart(2, "0")} /{" "}
-                        {statusLabel(method.status)}
-                      </span>
-                      <h3>{method.title}</h3>
-                    </div>
-                  </div>
-                  <p>{method.result}</p>
-                  <span className="method-toggle">
-                    <ChevronDown size={19} />
-                  </span>
-                </summary>
-                <div className="method-detail">
-                  <div>
-                    <h4>Declared scope</h4>
-                    <p>{method.scope}</p>
-                    {method.limitations?.length ? (
-                      <>
-                        <h4>Limits</h4>
-                        <ul>
-                          {method.limitations.map((limit) => (
-                            <li key={limit}>{limit}</li>
-                          ))}
-                        </ul>
-                      </>
-                    ) : null}
-                  </div>
-                  <div>
-                    <h4>Evidence & reproduction</h4>
-                    {method.evidence.map((path) => (
-                      <a
-                        className="evidence-link"
-                        key={path}
-                        href={evidenceLink(path, true)}
-                      >
-                        <FileText size={14} />
-                        <span>{path.split("/").pop()}</span>
-                        <ArrowUpRight size={14} />
-                      </a>
-                    ))}
-                    {method.reproduce?.length ? (
-                      <pre>{method.reproduce.join("\n")}</pre>
-                    ) : (
-                      <p>
-                        Review the linked source before proposing a new test.
-                      </p>
-                    )}
-                  </div>
-                </div>
-              </details>
-            ))}
-            {!methods.length && (
-              <div className="empty-state">
-                {ledger.error ? (
-                  <>
-                    The index could not load.{" "}
-                    <a href={repo}>Browse the repository ↗</a>
-                  </>
-                ) : currentLedger ? (
-                  "No methods match this filter."
-                ) : (
-                  "Loading the research ledger…"
-                )}
-              </div>
-            )}
-          </div>
-          {!showAllMethods &&
-            ledgerFilter === "all" &&
-            !ledgerSearch &&
-            methods.length > 5 && (
-              <button
-                className="show-all-methods text-link"
-                onClick={() => setShowAllMethods(true)}
-              >
-                Show all {methods.length} methods <ArrowDown size={16} />
-              </button>
-            )}
-          <div className="ledger-bottom">
-            <span>AN EMPTY RESULT IS STILL A RESULT.</span>
-            <a
-              href={repo + "/issues/new?template=experiment.yml"}
-              className="text-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Propose the next experiment <ArrowUpRight size={16} />
-            </a>
-          </div>
-          <RepositoryActivity repo={repo} />
         </section>
 
         <section className="vault-section" id="files">
@@ -1176,31 +1062,6 @@ function App() {
               token is required to take part.
             </p>
           </div>
-          <div
-            className="participation-roles"
-            aria-label="Find your role in the investigation"
-          >
-            <button onClick={() => setSelectedPage(73)}>
-              <strong>Reader</strong>
-              <span>Inspect the original pages.</span>
-            </button>
-            <a
-              href={repo + "/issues/new?template=correction.yml"}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <strong>Skeptic</strong>
-              <span>Challenge a result with evidence.</span>
-            </a>
-            <a href="#investigation">
-              <strong>Solver</strong>
-              <span>Pick a thread. Test one idea.</span>
-            </a>
-            <a href="#token">
-              <strong>Backer</strong>
-              <span>Fund the work after launch.</span>
-            </a>
-          </div>
           <div className="community-doors">
             <button
               className="community-door primary-door"
@@ -1244,80 +1105,85 @@ function App() {
 
         <section className="token-section" id="token">
           <div className="section">
-            <SectionLabel index="07">KEEP THE SEARCH ALIVE</SectionLabel>
-            <div className="token-layout">
+            <SectionLabel index="07">FUNDING</SectionLabel>
+            <div className="funding-head">
               <div>
                 <span className="launch-status">
                   <span /> {tokenLive ? "TOKEN LIVE" : "TOKEN NOT LAUNCHED"}
-                </span>
-                <span className="token-ticker">
-                  <img
-                    src="/assets/key404-emblem.png"
-                    alt="KEY404 emblem"
-                    width="42"
-                    height="42"
-                    loading="lazy"
-                  />
-                  $KEY404
                 </span>
                 <h2>
                   {tokenLive ? (
                     <>
                       Funding the work.
                       <br />
-                      In public.
+                      <span>In public.</span>
                     </>
                   ) : (
                     <>
                       Planned funding.
                       <br />
-                      Nothing is live.
+                      <span>Nothing is live.</span>
                     </>
                   )}
                 </h2>
-                <p className="token-intro">
-                  {tokenLive
-                    ? "Project creator fees are intended to fund AI agents, research runs, and tools. The work and expenses should be published for everyone."
-                    : "If launched on Pump.fun, the project could receive creator fees from token trading. Those fees are intended for AI research; each funded run should publish its method, cost, and result."}
-                </p>
               </div>
-              <div className="funding-plan">
+              <div className="token-ticker">
+                <img
+                  src="/assets/key404-emblem.png"
+                  alt="KEY404 emblem"
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                />
                 <div>
-                  <span className="funding-number">01</span>
-                  <div>
-                    <h3>Fees → research</h3>
-                    <p>
-                      Project-received creator fees are intended for research
-                      expenses. Publish receipts, costs, and resulting work in
-                      the public ledger.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <span className="funding-number">02</span>
-                  <div>
-                    <h3>Work → everyone</h3>
-                    <p>
-                      Every funded run should add a test, source, correction, or
-                      useful dead end to the shared repository. Anyone can
-                      continue it.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <span className="funding-number">03</span>
-                  <div>
-                    <h3>If we recover the BTC</h3>
-                    <p>
-                      If this project recovers the prize BTC, 100% will be used
-                      for $KEY404 buybacks, with public execution records. That
-                      is the founder’s commitment. The prize and its recovery
-                      remain unverified.
-                    </p>
-                  </div>
+                  <strong>$KEY404</strong>
+                  <span>
+                    {tokenLive
+                      ? "The official contract is published below."
+                      : "No official contract or trading link is published."}
+                  </span>
                 </div>
               </div>
             </div>
+            <div className="funding-terms">
+              <article>
+                <span className="term-label">
+                  {tokenLive ? "ACTIVE" : "PLANNED"}
+                </span>
+                <h3>Creator fees fund research.</h3>
+                <p>
+                  {tokenLive
+                    ? "Creator fees received by the project fund AI agents and research runs. Each funded run publishes its method, cost and result."
+                    : "If $KEY404 launches on Pump.fun, creator fees received by the project will fund AI agents and research runs. Each funded run publishes its method, cost and result."}
+                </p>
+              </article>
+              <article className="term-committed">
+                <span className="term-label">COMMITTED</span>
+                <h3>If we recover the prize BTC, 100% goes to buybacks.</h3>
+                <p>
+                  If this project recovers the prize BTC, 100% of it will be
+                  used for $KEY404 buybacks, with public execution records. That
+                  is the founder’s public commitment.
+                </p>
+              </article>
+              <article>
+                <span className="term-label">UNKNOWN</span>
+                <h3>Whether there is a prize to recover.</h3>
+                <p>
+                  The 20 BTC is a claim. No funded prize address has been
+                  authenticated, and recovery is uncertain.
+                </p>
+              </article>
+            </div>
+            <p className="funding-line">
+              Recovery is uncertain.{" "}
+              <span className="mark">The allocation is not.</span>
+            </p>
+            <p className="funding-free">
+              Reading the evidence, testing an idea, correcting the record and
+              using the tools need no token. Every funded run should add a test,
+              source, correction, or useful dead end to the shared repository.
+            </p>
             <div className="token-bottom">
               <div>
                 <span className="mono">OFFICIAL CONTRACT</span>
@@ -1381,14 +1247,20 @@ function App() {
                 View the public ledger data <ArrowUpRight size={14} />
               </a>
             </details>
-            <a
-              className="launch-kit-link"
-              href="/downloads/key404-launch-kit.zip"
-              download
-            >
-              Download the token launch kit: name, ticker, description, artwork{" "}
-              <ArrowDownToLine size={15} />
-            </a>
+            <div className="launch-kit">
+              <a
+                className="launch-kit-link"
+                href="/downloads/key404-launch-kit.zip"
+                download
+              >
+                Download the token launch kit: name, ticker, description,
+                artwork <ArrowDownToLine size={15} />
+              </a>
+              <p>
+                A matching name or image does not make a token official. Only a
+                contract published on this page does.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -1464,19 +1336,23 @@ function App() {
           </span>
           <div>
             <button
-              disabled={selectedPage === 73}
+              disabled={selectedPage === FIRST_PAGE}
               aria-label="Previous page"
               onClick={() =>
-                setSelectedPage((page) => Math.max(73, (page || 73) - 1))
+                setSelectedPage((page) =>
+                  Math.max(FIRST_PAGE, (page || FIRST_PAGE) - 1),
+                )
               }
             >
               <ChevronLeft />
             </button>
             <button
-              disabled={selectedPage === 80}
+              disabled={selectedPage === LAST_PAGE}
               aria-label="Next page"
               onClick={() =>
-                setSelectedPage((page) => Math.min(80, (page || 73) + 1))
+                setSelectedPage((page) =>
+                  Math.min(LAST_PAGE, (page || FIRST_PAGE) + 1),
+                )
               }
             >
               <ChevronRight />
@@ -1519,26 +1395,6 @@ function App() {
         </div>
       )}
     </>
-  );
-}
-
-function ArrowDownRight() {
-  return <ArrowRight className="diagonal-arrow" size={18} />;
-}
-function statusLabel(status: string) {
-  return (
-    (
-      {
-        falsified: "Tested · no result",
-        tested: "Tested",
-        invalidated: "Corrected",
-        partial: "Partial lead",
-        untested: "Open question",
-        open: "Open question",
-        "in-progress": "In progress",
-        in_progress: "In progress",
-      } as Record<string, string>
-    )[status] || status.replace(/[-_]/g, " ")
   );
 }
 

@@ -1,92 +1,93 @@
+/* The public record: repository facts, kept apart from research results. */
 .repository-activity {
-  margin-top: 48px;
-  border-top: 1px solid var(--line);
-  padding-top: 22px;
+  margin-top: 30px;
+  padding-top: 18px;
+  border-top: 1px solid var(--ink-line);
 }
 .repository-activity-top {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 18px;
+  gap: 2px 18px;
 }
 .repository-activity-top > a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font: 11px var(--mono);
-  letter-spacing: 0.7px;
-  min-height: 44px;
+  min-height: 40px;
+  font: 500 12px/1.4 var(--mono);
+  letter-spacing: 0.08em;
+}
+.repository-activity-top > a:hover {
+  color: var(--lime);
 }
 .repository-activity-top > span {
-  font: 10px var(--mono);
-  color: var(--muted);
+  font: 12px/1.4 var(--mono);
+  color: var(--on-ink-muted);
 }
 .repository-counts {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px 28px;
-  margin: 3px 0 16px;
+  gap: 4px 26px;
+  margin: 2px 0 14px;
 }
 .repository-counts a {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  font-size: 12px;
-  min-height: 32px;
+  min-height: 36px;
+  font-size: 14px;
 }
 .repository-counts a:hover,
 .repository-commits a:hover span {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+.repository-activity > p {
+  max-width: 52ch;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--on-ink-muted);
+}
+.repository-activity > .repository-quiet {
+  margin: 2px 0 14px;
+  font-size: 14px;
+}
+.repository-quiet a {
+  color: var(--on-ink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--lime);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
 .repository-commits {
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--ink-line);
 }
 .repository-commits a {
   display: grid;
-  grid-template-columns: 17px minmax(0, 1fr) 65px 15px;
+  grid-template-columns: 17px minmax(0, 1fr) auto auto 15px;
   align-items: center;
   gap: 12px;
-  min-height: 54px;
-  border-bottom: 1px solid var(--line);
-  font-size: 12px;
+  min-height: 52px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--ink-line);
+  font-size: 14px;
   line-height: 1.4;
-  padding: 12px 0;
 }
-.repository-commits code {
-  font: 10px var(--mono);
-  color: var(--muted);
+.repository-commits :is(time, code) {
+  font: 12px/1.4 var(--mono);
+  color: var(--on-ink-muted);
+  white-space: nowrap;
 }
-.repository-activity > p {
-  font-size: 11px;
-  color: var(--muted);
-  margin-top: 17px;
-  max-width: 660px;
+.repository-activity > .repository-note {
+  margin-top: 14px;
 }
-@media (max-width: 600px) {
-  .repository-activity {
-    margin-top: 35px;
-    padding-top: 15px;
-  }
-  .repository-activity-top {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-  }
-  .repository-activity-top > span {
-    margin-bottom: 12px;
-    font-size: 9px;
-  }
-  .repository-counts {
-    gap: 7px 18px;
-  }
-  .repository-counts a {
-    min-height: 40px;
-    font-size: 11px;
-  }
+@media (max-width: 560px) {
   .repository-commits a {
-    grid-template-columns: 16px minmax(0, 1fr) 15px;
-    gap: 9px;
+    grid-template-columns: 16px minmax(0, 1fr) auto 15px;
+    gap: 10px;
   }
   .repository-commits code {
     display: none;

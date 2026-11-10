@@ -1,6 +1,6 @@
 # One case. Four ways in.
 
-The [interactive investigation map](https://key404-casefile.vercel.app/#investigation) groups the public work into four readable branches. Expand a branch to inspect exact methods, scoped results, limits and evidence. The [full ledger](https://key404-casefile.vercel.app/#ledger) remains searchable.
+The [interactive investigation map](https://key404-casefile.vercel.app/#investigation) groups the public work into four readable branches. Choose a branch to inspect its exact methods, scoped results, limits and evidence, or choose every method. The [full ledger](https://key404-casefile.vercel.app/#ledger) sits directly under the map: it filters by status and searches every record. [`/#open-leads`](https://key404-casefile.vercel.app/#open-leads) lists the open and partial methods; `/#method-<id>` links one record by its ledger ID.
 
 | Branch | Starting point | What remains useful |
 | --- | --- | --- |
@@ -22,7 +22,8 @@ The website layout, downloadable archives, file index and original source scans 
 
 ## Status rules
 
-- **Scoped negative:** the recorded method/candidate set did not produce the sought result. The whole branch is not exhausted.
+- **Tested · no result** (a scoped negative): the recorded method/candidate set did not produce the sought result. The whole branch is not exhausted, and the label says nothing about work outside this record.
+- **Claim invalidated / Corrected:** an audit or a source/code correction overturned an earlier claim. The earlier record stays visible with its correction.
 - **Partial lead:** some evidence exists, with unresolved limits. It is not a solution.
 - **Open question:** evidence or a test is still missing.
 - **In progress:** only shown for an actually recorded active method, never implied by a recent website edit.

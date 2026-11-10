@@ -41,3 +41,14 @@ The source commit and check time are visible. Failed syncs preserve the last ver
 The founder's buyback commitment is now explicit: if this project recovers the prize BTC, 100% will fund KEY404 buybacks, with public execution records. The prize and recovery remain unverified. The token remains unlaunched.
 
 The marked-copy identity keeps the fluorescent marker and original magazine imagery while replacing olive neutrals with newsprint and ink. Reader, Skeptic, Solver and future Backer roles each lead to a concrete action; contribution and correction records stay public.
+
+## 2026-11-10 — Marked copy: one map, one ledger
+
+- The entry page is newsprint and ink. The fluorescent marker sits on the word NOT; the magazine's orange marks only creator material, and red marks only corrections.
+- Reader, Skeptic, Solver and future Backer roles follow the introduction. Each has one action: open the pages, file a correction, see the open leads, or read the funding plan. Reading the evidence needs no token, wallet or account.
+- The research map and the full ledger are one section. Choose a branch or every method, filter by status, or search all records. Each record shows its ledger ID, declared scope, limits, evidence, commands and connected dated notes. `/#open-leads` lists the open and partial methods and `/#method-<id>` links one record.
+- "Tested · no result" is labelled as covering only the declared candidates. A falsified evidence audit is labelled "Claim invalidated". No method, status, scope, limit or evidence path changed.
+- Research notes are listed apart from site and project notes. Every note remains in the history; the site notes open in place.
+- Repository counts appear only once they are above zero. The three latest commit headlines remain, labelled as repository activity rather than research.
+- Funding separates what is planned (creator fees fund research after a launch), what is committed (100% of prize BTC this project recovers goes to KEY404 buybacks) and what is unknown (whether a funded prize exists or can be recovered). The token remains unlaunched.
+- The live GitHub sync, its stale and snapshot fallbacks, the page viewer, the downloads and the guest chat work as before.
