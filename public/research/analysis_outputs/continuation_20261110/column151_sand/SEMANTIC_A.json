@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "completedAtUTC": "2026-11-10T16:49:18.910Z",
+  "reviewKind": "EXPLORATORY_AI_SEMANTIC_RECOGNITION_OF_COMPLETE_REGISTERED_SAVED_TEXTS",
+  "reviewer": "A",
+  "registrationCommitReportedByOperator": "bac7e29f8745d7dd7fb5bd444dc35f2cb5ba869c",
+  "savedReadingsSHA256": "3429e0a36a95b9a8628a1cf8600b1e6f78624a69a780f69d34fe3c77785da1fb",
+  "sourceModelSHA256": "24242d3a31469a7bff5765a756fa51f6f8cfbd40f4a51737d852a172cd117c02",
+  "coverage": {
+    "allThreeSavedReadingsReadCompletely": true,
+    "readingCount": 3,
+    "totalCodepoints": 8404,
+    "totalUTF8Bytes": 8438,
+    "newSourceReadingsGenerated": 0
+  },
+  "readings": [
+    {
+      "readingId": "COLUMN151-FW-ALL",
+      "selectedRowCount": 151,
+      "codepointCount": 860,
+      "utf8ByteCount": 862,
+      "completeSavedUTF8TextRead": true,
+      "fullReadCoverage": {
+        "startCodepoint": 0,
+        "endCodepointExclusive": 860,
+        "truncated": false,
+        "readingEndExplicitlyObserved": true
+      },
+      "coherentIntermediateInstructionRecognized": false,
+      "coherentIndependentSecondaryMessageRecognized": false,
+      "rationale": "Isolated word beginnings and clause fragments do not form a sustained grammatical secondary message. No coherent operation tied to a specific source target or position was recognized."
+    },
+    {
+      "readingId": "COLUMN151-ODD-LINES",
+      "selectedRowCount": 76,
+      "codepointCount": 3749,
+      "utf8ByteCount": 3763,
+      "completeSavedUTF8TextRead": true,
+      "fullReadCoverage": {
+        "startCodepoint": 0,
+        "endCodepointExclusive": 3749,
+        "truncated": false,
+        "readingEndExplicitlyObserved": true
+      },
+      "coherentIntermediateInstructionRecognized": false,
+      "coherentIndependentSecondaryMessageRecognized": false,
+      "rationale": "Recognizable article rhetoric alternates with incomplete clauses. Surviving standalone directions fit the article rather than specifying an independent extraction or decoding procedure."
+    },
+    {
+      "readingId": "COLUMN151-EVEN-CONTROL",
+      "selectedRowCount": 75,
+      "codepointCount": 3795,
+      "utf8ByteCount": 3813,
+      "completeSavedUTF8TextRead": true,
+      "fullReadCoverage": {
+        "startCodepoint": 0,
+        "endCodepointExclusive": 3795,
+        "truncated": false,
+        "readingEndExplicitlyObserved": true
+      },
+      "coherentIntermediateInstructionRecognized": false,
+      "coherentIndependentSecondaryMessageRecognized": false,
+      "rationale": "Complementary article fragments retain ordinary topical references, assertions and the byline/signature. No coherent independent second message or actionable extraction rule was recognized."
+    }
+  ],
+  "overallRecognition": "NO_COHERENT_INTERMEDIATE_INSTRUCTION_OR_INDEPENDENT_SECOND_MESSAGE_RECOGNIZED",
+  "overallRationale": "The first-word text remains fragmentary. The whole-line texts preserve article assertions, rhetoric and occasional ordinary imperatives without a separately coherent action/source/reading rule. Topical or imperative coincidences alone do not establish a cipher instruction.",
+  "actionableNewDecodingProcedureIdentified": false,
+  "tentativeSemanticLeadRequiringPrivateFollowupRecognized": false,
+  "priorExposure": {
+    "blindToSourceOrProtocol": false,
+    "disclosure": "The reviewer previously inspected this article/source material, independently proofread the nine nonbody source units, checked body byte identity and151-unit order, and reviewed source/protocol/code plus synthetic controls. The reviewer also has broader puzzle research context. This is not a blind or fresh-model semantic test.",
+    "otherReviewerConclusionsReadForThisTask": false,
+    "formatValidationOrHitArtifactsReadForThisTask": false,
+    "priorSemanticConclusionsUsedAsEvidence": false
+  },
+  "limits": [
+    "Subjective AI nonrecognition is not a registered semantic detector or formal plaintext falsification.",
+    "A coherent message may require context or a different procedure that this review does not establish or exclude.",
+    "This receipt concerns only these three complete saved reading texts; it does not exclude other source populations, orders, encodings, artwork, or the whole physical column.",
+    "The claimed primary run/public registration/independent-byte-verifier chronology was supplied by the operator; this semantic review did not repeat Git/network verification."
+  ],
+  "rawReadingTextOrCandidateValuesIncluded": false,
+  "activity": {
+    "otherSelectors": 0,
+    "newTextTransforms": 0,
+    "formatOrChecksumChecks": 0,
+    "candidateOrScalarOrAddressDerivations": 0,
+    "networkRequests": 0,
+    "publicEdits": 0,
+    "GitOperations": 0
+  }
+}

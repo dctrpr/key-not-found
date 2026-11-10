@@ -471,6 +471,58 @@
           "height": 206
         }
       ]
+    },
+    {
+      "id": "column151-sand-three-readings",
+      "completedAtUTC": "2026-11-10T16:50:06.722Z",
+      "title": "The opener gap is checked.",
+      "summary": "Two previously omitted opener lines joined the unchanged body and display units. Three fixed readings were generated after public registration.",
+      "result": "No valid declared-format record. Two AI contexts read every output without recognizing a coherent second message. This closes the small source correction; the puzzle remains unsolved.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Source units",
+          "value": 151,
+          "pointer": "/sourceRows"
+        },
+        {
+          "label": "Literal readings",
+          "value": 3,
+          "pointer": "/readingCount"
+        },
+        {
+          "label": "Valid format records",
+          "value": 0,
+          "pointer": "/totalValidRecords"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/column151_sand/RESULT.json",
+        "sha256": "651cb7976520559660c8c42146f6b65e13d83ad120424363822e6f4c62c8e5d1"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/column151_sand/RESULT.md",
+      "scene": {
+        "layout": "spread",
+        "page": 73
+      },
+      "sceneNote": "Actual opener and article scans. Pages 73–80 are now available in the 3D viewer. Display arrangement is illustrative; the registered source fixes the reading order.",
+      "methodId": "column151-sand-three-readings",
+      "exhibits": [
+        {
+          "path": "/research/sources/issue24-column151/native-contexts/p73-opener.png",
+          "sha256": "d8d88d894057781537c09024a4795f9d70ec3b0744f43665364d48f6d3f3e607",
+          "label": "Native opener · name and byline",
+          "width": 2220,
+          "height": 500
+        },
+        {
+          "path": "/research/sources/issue24-column151/native-contexts/p78-display-quote.png",
+          "sha256": "a1b079acd1dc52aa52f2b574693f6499fa02e616672d2cd39d18ea4bdbaf3019",
+          "label": "Native display · four retained lines",
+          "width": 950,
+          "height": 610
+        }
+      ]
     }
   ]
 }

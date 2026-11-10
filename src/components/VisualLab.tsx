@@ -4,7 +4,7 @@ import { ArrowUpRight, Box, Layers3, Maximize2, Minus, Plus, RotateCcw, ScanLine
 import "./VisualLab.css";
 
 const VisualScene = lazy(() => import("./VisualScene"));
-export const VISUAL_PAGES = [75, 76, 77, 78, 79, 80] as const;
+export const VISUAL_PAGES = [73, 74, 75, 76, 77, 78, 79, 80] as const;
 export type VisualLabView = { layout: "spread" | "stack" | "mirror"; page: number; source?: "issue27" | "funky" };
 export const VISUAL_SOURCES = {
   issue24: {
@@ -255,7 +255,7 @@ export default function VisualLab({ view, onViewChange, openRequest }: VisualLab
         <p>
           {unavailable ? `Source scan of page ${current.page}. The full scan remains available through the link.`
             : current.layout === "mirror" ? "A source page and its horizontal reflection. An investigator hypothesis; no extraction is applied."
-            : current.layout === "stack" ? `${source.pages.length === 4 ? "Four" : "Six"} source scans separated for inspection. The spacing is a viewing aid.`
+            : current.layout === "stack" ? `${source.pages.length} source scans separated for inspection. The spacing is a viewing aid.`
               : "Source pages in printed sequence. The display arrangement adds no research conclusion."}
           {current.source === "funky" && " Issue and publication date unverified."}
         </p>

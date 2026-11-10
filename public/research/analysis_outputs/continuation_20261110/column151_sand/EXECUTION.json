@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "testId": "column151-sand-three-readings",
+  "batchId": "keiser-column151-sand-three-readings-20261110",
+  "status": "registered-literal-scope-complete",
+  "startedAtUTC": "2026-11-10T16:46:53.571Z",
+  "completedAtUTC": "2026-11-10T16:46:53.867Z",
+  "registrationCommit": "bac7e29f8745d7dd7fb5bd444dc35f2cb5ba869c",
+  "protocolSha256": "8e3cc1ed368e4bcb5c402f295e915b83d30d8ec62cd571ee968351e59a8b42ac",
+  "sourceHashes": {
+    "sources/issue24-column151/SOURCE.json": "24242d3a31469a7bff5765a756fa51f6f8cfbd40f4a51737d852a172cd117c02",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b",
+    "sources/issue24-column151/NATIVE_SOURCE_PROVENANCE.json": "07fed23e02ab0c096ba22795742070e0ac97697c47c82104d40491c2b36c379d",
+    "sources/issue24-column151/INDEPENDENT_SOURCE_REVIEW.json": "c8d7366c90291c916eeae0ccc3e3ac9296623206d4a2139be74ff5abcdda3736",
+    "sources/issue24-column151/native-contexts/p73-opener.png": "d8d88d894057781537c09024a4795f9d70ec3b0744f43665364d48f6d3f3e607",
+    "sources/issue24-column151/native-contexts/p75-article-title.png": "dd4ec1134234822828dfb834afe66d93b1562dca4c7e4bca2f35b537b2346050",
+    "sources/issue24-column151/native-contexts/p78-display-quote.png": "a1b079acd1dc52aa52f2b574693f6499fa02e616672d2cd39d18ea4bdbaf3019",
+    "sources/issue24-column151/native-contexts/p79-signature.png": "a2a7a8d09ccae306d828f5da47e72c8b2515d55ab039ee6aefb0aa95e004d43d",
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "magazine.pdf": "a30c61f8c49674afb7bccc6680d6477f6e919175386a2422de0a944db4e76c13"
+  },
+  "scriptHashes": {
+    "scripts/column151_sand_probe.py": "c08c194e39dffdc5b8f6de2b7000824169225ab992963aebc1b7d34cb98b14b6",
+    "scripts/verify_column151_sand.py": "8d54b4601b2164a13cd8fd8bc804ed24aee7d754afcea662d2d577e7b28c6935",
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d"
+  },
+  "sourceModel": {
+    "id": "issue24-declared-column151-physical-units-v1",
+    "physicalUnits": 151,
+    "byPrintedPage": {
+      "73": 2,
+      "75": 33,
+      "76": 31,
+      "77": 32,
+      "78": 26,
+      "79": 27
+    },
+    "originalTypesettingBytesRecovered": false
+  },
+  "scopeComplete": true,
+  "readingsGenerated": true,
+  "literalFormatGatesComplete": true,
+  "semanticReviewComplete": false,
+  "privateReviewRequired": false,
+  "counts": {
+    "readings": 3,
+    "selectedRows": [
+      151,
+      76,
+      75
+    ],
+    "submittedCodepoints": 8404,
+    "uniqueStreams": 3,
+    "uniqueForms": 6,
+    "commonShapeCounts": {
+      "wif": 0,
+      "hex64": 0,
+      "bip39": 0,
+      "extended_private": 0,
+      "bip38": 0,
+      "address": 0,
+      "sec_public": 0
+    },
+    "commonUniqueShapeCounts": {
+      "wif": 0,
+      "hex64": 0,
+      "bip39": 0,
+      "extended_private": 0,
+      "bip38": 0,
+      "address": 0,
+      "sec_public": 0
+    },
+    "commonExecutionCount": 0,
+    "minikeyShapeCountsByLength": {
+      "22": 2,
+      "26": 1,
+      "30": 0
+    },
+    "minikeyUniqueShapesByLength": {
+      "22": 2,
+      "26": 1,
+      "30": 0
+    },
+    "minikeyQuestionmarkChecksumCalls": 3,
+    "minikeyValidCountsByLength": {
+      "22": 0,
+      "26": 0,
+      "30": 0
+    },
+    "validCounts": {
+      "wif": 0,
+      "hex64": 0,
+      "bip39": 0,
+      "extended_private": 0,
+      "bip38": 0,
+      "address": 0,
+      "sec_public": 0,
+      "minikey": 0
+    },
+    "totalValidRecords": 0
+  },
+  "privateArtifactIntegrity": {
+    "READINGS.private.json": "3429e0a36a95b9a8628a1cf8600b1e6f78624a69a780f69d34fe3c77785da1fb",
+    "READINGS.private.txt": "0302e58d84d6d6b7c32c47aef2a89c86307c5ca401829b944363c0e8ff71d3ea",
+    "FORMS.private.json": "57b0bbadf03045463f47eefedd7754539fb1d9e4a09ec00cab62a499222ce459",
+    "VALIDATION.private.json": "dc0b4a1566a8ce4ddfac7c091331bd38d4420e9582840009f17279a9d6976f58"
+  },
+  "activity": {
+    "newSelectors": 0,
+    "reversals": 0,
+    "initialsOrFinals": 0,
+    "arbitraryScalarWindows": 0,
+    "proseToKeyHashes": 0,
+    "minikeyScalarHashes": 0,
+    "addressDerivations": 0,
+    "seedDerivations": 0,
+    "childKeyDerivations": 0,
+    "networkQueries": 0,
+    "transactions": 0
+  },
+  "limitations": [
+    "This is a declared151-unit transcription/ordering model, not original typesetting bytes or authenticated extraction instructions.",
+    "Three readings and fixed literal-format gates do not exclude readable messages, other readings, unknown record families or the whole column.",
+    "Weak minikey checksum, scalar-range-only hex and on-curve SEC matches are leads, not solutions or prize/funding proof.",
+    "Registration check is a local Git-object byte check; prior remote publication is separately established by the operator."
+  ]
+}

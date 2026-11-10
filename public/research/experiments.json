@@ -1068,25 +1068,33 @@
     {
       "id": "column151-sand-three-readings",
       "title": "Complete declared-column Sand reading correction",
-      "status": "in-progress",
+      "status": "tested",
       "kind": "method-test",
       "independentTheory": false,
       "scope": "One frozen 151-unit editorial-column model: first chunks, odd whole rows and even-line control; at most six exact/whitespace-compacted forms. Includes two opener lines omitted from the old 149-unit frame.",
-      "result": "Source and independent code controls are complete. Target generation and literal-format checks await the verified public registration commit. No target result yet.",
+      "result": "Three complete readings and six fixed forms produced zero valid declared-format records. Independent reconstruction agreed in full. Both AI contexts read all 8,404 codepoints without recognizing a coherent second message or actionable instruction; this is subjective nonrecognition, not a cipher exclusion.",
       "evidence": [
-        "analysis_outputs/continuation_20261110/column151_sand/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/column151_sand/RESULT.md",
+        "analysis_outputs/continuation_20261110/column151_sand/RESULT.json",
+        "analysis_outputs/continuation_20261110/column151_sand/EXECUTION.json",
+        "analysis_outputs/continuation_20261110/column151_sand/INDEPENDENT_VERIFICATION.json",
+        "analysis_outputs/continuation_20261110/column151_sand/SEMANTIC_A.json",
+        "analysis_outputs/continuation_20261110/column151_sand/SEMANTIC_B.json",
         "analysis_outputs/continuation_20261110/column151_sand/PROTOCOL.json",
-        "analysis_outputs/continuation_20261110/column151_sand/TECHNICAL_REVIEW.json",
         "sources/issue24-column151/SOURCE.json",
         "sources/issue24-column151/INDEPENDENT_SOURCE_REVIEW.json"
       ],
       "reproduce": [
-        "python3 scripts/column151_sand_probe.py --self-test"
+        "python3 scripts/column151_sand_probe.py --self-test",
+        "python3 scripts/verify_column151_sand.py --self-test",
+        "Follow RESULT.md using registration commit bac7e29f8745d7dd7fb5bd444dc35f2cb5ba869c and a fresh private output directory."
       ],
       "limitations": [
         "Small prefix/semantic coverage correction, not a new independent cipher family.",
         "Declared editorial text excludes artwork/furniture and is not original typesetter Unicode.",
-        "Weak or range-only format leads require separate source/history review; no wallet operation follows."
+        "Weak or range-only format leads require separate source/history review; no wallet operation follows.",
+        "Both semantic readers had prior source/procedure exposure; no calibrated message-exclusion claim.",
+        "Seven generic validators share pinned code; reconstruction and minikey enumeration are independent."
       ]
     }
   ],

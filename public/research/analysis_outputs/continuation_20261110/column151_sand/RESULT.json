@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "testId": "column151-sand-three-readings",
+  "completedAtUTC": "2026-11-10T16:50:06.722Z",
+  "caseStatus": "unsolved",
+  "outcome": "three-fixed-readings-no-valid-format-record-no-recognized-second-message",
+  "registrationCommit": "bac7e29f8745d7dd7fb5bd444dc35f2cb5ba869c",
+  "sourceRows": 151,
+  "readingCount": 3,
+  "selectedRows": [
+    151,
+    76,
+    75
+  ],
+  "uniqueForms": 6,
+  "totalValidRecords": 0,
+  "sourceCodepointsPerReviewer": 8404,
+  "sourceUTF8BytesPerReviewer": 8438,
+  "reviewerCount": 2,
+  "semanticReviewComplete": true,
+  "formalMessageExclusion": false,
+  "fullIndependentOutputAgreement": true,
+  "execution": {
+    "path": "analysis_outputs/continuation_20261110/column151_sand/EXECUTION.json",
+    "sha256": "af5081ba4384d56f3fa15bea1c43250fda00379a06ceec62cad80daf5abf1a2c"
+  },
+  "independentCheck": {
+    "path": "analysis_outputs/continuation_20261110/column151_sand/INDEPENDENT_VERIFICATION.json",
+    "sha256": "11a544748a31e79f45a9b20c9aadd68873511927940f42c06d085249f963e6d7"
+  },
+  "registration": {
+    "path": "analysis_outputs/continuation_20261110/column151_sand/REGISTRATION.json",
+    "sha256": "76f91643dc46530a5568db269b624d48c01cf64e0eceec9c5f91d458124c5a6f"
+  },
+  "reviewers": [
+    {
+      "id": "A",
+      "completedAtUTC": "2026-11-10T16:49:18.910Z",
+      "completeReadingsRead": 3,
+      "codepointsRead": 8404,
+      "utf8BytesRead": 8438,
+      "coherentSecondMessageRecognized": false,
+      "actionableIntermediateInstructionRecognized": false,
+      "review": {
+        "path": "analysis_outputs/continuation_20261110/column151_sand/SEMANTIC_A.json",
+        "sha256": "b0ee07edaf34e29642686112d78aa1890355a24869d812f4b691cee5b8e06d01"
+      }
+    },
+    {
+      "id": "B",
+      "completedAtUTC": "2026-11-10T16:49:05.791531+00:00",
+      "completeReadingsRead": 3,
+      "codepointsRead": 8404,
+      "utf8BytesRead": 8438,
+      "coherentSecondMessageRecognized": false,
+      "actionableIntermediateInstructionRecognized": false,
+      "review": {
+        "path": "analysis_outputs/continuation_20261110/column151_sand/SEMANTIC_B.json",
+        "sha256": "26a914d71cfb35f3a8cc7ec7cf165f02ece3380c7296e8e681c69e4bca12ea09"
+      }
+    }
+  ],
+  "limitations": [
+    "This closes one declared151-unit source/reading correction, not an independent cipher family or whole-column exclusion.",
+    "The seven general format validators share pinned code; reading reconstruction and minikey enumeration are independently implemented.",
+    "Both AI readers have prior source/protocol exposure. Their complete-output nonrecognition is subjective and unblinded, with no calibrated false-negative rate.",
+    "No native typesetter bytes or creator-authenticated extraction instruction were recovered."
+  ],
+  "activity": {
+    "newSelectors": 0,
+    "reversals": 0,
+    "initialsOrFinals": 0,
+    "arbitraryScalarWindows": 0,
+    "proseToKeyHashes": 0,
+    "minikeyScalarHashes": 0,
+    "addressDerivations": 0,
+    "seedDerivations": 0,
+    "childKeyDerivations": 0,
+    "networkQueries": 0,
+    "transactions": 0
+  }
+}

@@ -16,7 +16,7 @@ for (const entry of data.entries) {
   assert.ok(['funnel', 'history', 'source', 'reading', 'measurement', 'support'].includes(entry.diagram));
   assert.ok(['spread', 'stack', 'mirror'].includes(entry.scene.layout));
   assert.ok(entry.scene.source === undefined || ['issue27', 'funky'].includes(entry.scene.source));
-  const pages = entry.scene.source === 'funky' ? [107, 108, 109, 110, 111, 112] : entry.scene.source === 'issue27' ? [78, 79, 80, 81] : [75, 76, 77, 78, 79, 80];
+  const pages = entry.scene.source === 'funky' ? [107, 108, 109, 110, 111, 112] : entry.scene.source === 'issue27' ? [78, 79, 80, 81] : [73, 74, 75, 76, 77, 78, 79, 80];
   assert.ok(pages.includes(entry.scene.page));
   assert.ok(entry.source.path.startsWith('analysis_outputs/') && !entry.source.path.includes('..'));
   const raw = fs.readFileSync(path.join(root, 'public/research', entry.source.path));
@@ -36,6 +36,46 @@ for (const entry of data.entries) {
       value = value.filter(q => q.activity).length;
     } else assert.equal(metric.operation, undefined);
     assert.equal(value, metric.value, 'Visual metric differs from its frozen result');
+  }
+  if (entry.id === 'column151-sand-three-readings') {
+    assert.equal(entry.diagram, 'funnel');
+    assert.equal(result.caseStatus, 'unsolved');
+    assert.equal(result.formalMessageExclusion, false);
+    assert.equal(result.semanticReviewComplete, true);
+    assert.equal(result.fullIndependentOutputAgreement, true);
+    assert.deepEqual(result.selectedRows, [151, 76, 75]);
+    assert.equal(result.reviewerCount, 2);
+    const readPinned = (reference) => {
+      const bytes = fs.readFileSync(path.join(root, 'public/research', reference.path));
+      assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), reference.sha256);
+      return JSON.parse(bytes);
+    };
+    const execution = readPinned(result.execution);
+    assert.equal(execution.registrationCommit, result.registrationCommit);
+    assert.equal(execution.counts.readings, result.readingCount);
+    assert.equal(execution.sourceModel.physicalUnits, result.sourceRows);
+    assert.equal(execution.counts.uniqueForms, result.uniqueForms);
+    assert.equal(execution.counts.totalValidRecords, result.totalValidRecords);
+    assert.equal(execution.counts.submittedCodepoints, result.sourceCodepointsPerReviewer);
+    assert.ok(Object.values(execution.activity).every(value => value === 0));
+    const independent = readPinned(result.independentCheck);
+    assert.equal(independent.passed, true);
+    assert.equal(independent.comparisons.fullReadingsUTF8, 3);
+    assert.equal(independent.comparisons.fullExactAndCompactedForms, 6);
+    assert.equal(independent.primaryResultSha256, result.execution.sha256);
+    for (const reviewer of result.reviewers) {
+      readPinned(reviewer.review);
+      assert.equal(reviewer.completeReadingsRead, 3);
+      assert.equal(reviewer.codepointsRead, result.sourceCodepointsPerReviewer);
+    }
+    for (const exhibit of entry.exhibits) {
+      assert.ok(exhibit.path.startsWith('/research/sources/issue24-column151/native-contexts/'));
+      assert.ok(!exhibit.path.includes('..'));
+      const bytes = fs.readFileSync(path.join(root, 'public', exhibit.path));
+      assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), exhibit.sha256);
+      assert.equal(bytes.readUInt32BE(16), exhibit.width);
+      assert.equal(bytes.readUInt32BE(20), exhibit.height);
+    }
   }
   if (entry.diagram === 'support') {
     assert.equal(result.outcome, 'source-support-partial-full-glyph-repair-not-established');

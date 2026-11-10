@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "reviewId": "column151-three-complete-readings-semantic-B",
+  "reviewer": "AI B",
+  "kind": "exploratory-unblinded-subjective-semantic-review",
+  "startedAtUTC": "2026-11-10T16:47:42.643074+00:00",
+  "completedAtUTC": "2026-11-10T16:49:05.791531+00:00",
+  "registrationCommit": "bac7e29f8745d7dd7fb5bd444dc35f2cb5ba869c",
+  "sourceArtifact": {
+    "name": "READINGS.private.json",
+    "bytes": 14739,
+    "sha256": "3429e0a36a95b9a8628a1cf8600b1e6f78624a69a780f69d34fe3c77785da1fb"
+  },
+  "coverage": {
+    "savedReadingCount": 3,
+    "readInFull": 3,
+    "sourceCodepoints": 8404,
+    "sourceUtf8Bytes": 8438,
+    "allRequestedTextsReadWithoutTruncation": true
+  },
+  "readings": [
+    {
+      "id": "COLUMN151-FW-ALL",
+      "selectedRows": 151,
+      "codepoints": 860,
+      "utf8Bytes": 862,
+      "readInFull": true,
+      "fullReadCoverageCodepoints": 860,
+      "fullReadCoverageUtf8Bytes": 862,
+      "coherentSeparateMessageRecognized": false,
+      "actionableIntermediateInstructionRecognized": false,
+      "rationale": "The complete output reads as an ordered list of article line openings, including title/byline/signature words. I recognized no continuous second text or specified extraction action; isolated thematic or imperative words did not supply a consistent instruction."
+    },
+    {
+      "id": "COLUMN151-ODD-LINES",
+      "selectedRows": 76,
+      "codepoints": 3749,
+      "utf8Bytes": 3763,
+      "readInFull": true,
+      "fullReadCoverageCodepoints": 3749,
+      "fullReadCoverageUtf8Bytes": 3763,
+      "coherentSeparateMessageRecognized": false,
+      "actionableIntermediateInstructionRecognized": false,
+      "rationale": "The complete output preserves alternating fragments of the essay, ordinary rhetorical imperatives, topical names and parts of the display quotation. I recognized no separate coherent message specifying an operation, unit and order beyond the original argument."
+    },
+    {
+      "id": "COLUMN151-EVEN-CONTROL",
+      "selectedRows": 75,
+      "codepoints": 3795,
+      "utf8Bytes": 3813,
+      "readInFull": true,
+      "fullReadCoverageCodepoints": 3795,
+      "fullReadCoverageUtf8Bytes": 3813,
+      "coherentSeparateMessageRecognized": false,
+      "actionableIntermediateInstructionRecognized": false,
+      "rationale": "The complete parity control preserves complementary essay fragments and ordinary references to Bitcoin mechanics and the article conclusion. Potentially suggestive rhetorical language did not become a sustained second message or a determinate extraction instruction."
+    }
+  ],
+  "recognitionCriteria": "A recognizable coherent second text or actionable intermediate puzzle instruction beyond ordinary extracted essay fragments; topical agreement, isolated imperatives and suggestive technical language alone are insufficient.",
+  "finding": {
+    "coherentSeparateMessagesRecognized": 0,
+    "actionableIntermediateInstructionsRecognized": 0,
+    "overall": "I did not recognize a coherent actionable intermediate instruction or separate second message in any of the three complete saved outputs.",
+    "formalMessageExclusion": false,
+    "cipherFamilyNegative": false,
+    "puzzleSolved": false,
+    "prizeOrFundingAssessed": false
+  },
+  "priorExposure": {
+    "sourceArticleAndNativeImages": true,
+    "source151Preparation": true,
+    "sourceProofAndProtocolSchema": true,
+    "independentByteVerifierAuthorship": true,
+    "earlierBodyOnlySemanticResultKnown": true,
+    "otherCurrentSemanticReviewConsulted": false,
+    "disclosure": "This reader helped prepare the source and independent byte verifier and previously inspected the article and earlier body-only semantic result while auditing scope. The current review did not consult another review of these three outputs; it is not a blind or calibrated test."
+  },
+  "limitations": [
+    "AI recognition/nonrecognition is subjective and cannot exclude an unrecognized message, encoded record, alternate interpretation or creator intent.",
+    "Prior source/procedure exposure and the earlier body-only result can influence this reader; no claim of statistical independence or calibrated false-negative rate is made.",
+    "The source is the declared151-unit editorial-text model, with explicit artwork/furniture exclusions and no recovered original typesetting bytes.",
+    "Recorded UTC interval includes reading, reasoning and receipt work; it is not a calibrated attention or reading-speed measure."
+  ],
+  "activity": {
+    "existingCompleteTextsReviewed": 3,
+    "newVariantsOrTransforms": 0,
+    "newReadingGeneration": 0,
+    "candidateFormatOrChecksumChecks": 0,
+    "scalarOrAddressDerivations": 0,
+    "networkRequests": 0,
+    "otherCurrentSemanticReviewReads": 0,
+    "publicEdits": 0,
+    "gitOperations": 0,
+    "integrityHashOnlyForSourceArtifact": true
+  }
+}

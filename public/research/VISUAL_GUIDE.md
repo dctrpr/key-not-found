@@ -1,6 +1,6 @@
 # The visual investigation
 
-[Open the visual lab](https://keynotfound.com/#visual-lab) to inspect the original 2023-puzzle scans the four retained Orange Party column pages, or the six [Funky Upheaval article pages](sources/funky-upheaval/SOURCE_REGISTER.md) in a page board, a separated layer stack, or a page-and-reflection comparison. Choose the source set before comparing pages. Drag to orbit and use the zoom/reset controls. The full scan remains available as a normal image. The model loads on request and falls back to the scan if 3D is unavailable.
+[Open the visual lab](https://keynotfound.com/#visual-lab) to inspect all eight 2023-puzzle scans (printed 73–80), the four retained Orange Party column pages, or the six [Funky Upheaval article pages](sources/funky-upheaval/SOURCE_REGISTER.md) in a page board, a separated layer stack, or a page-and-reflection comparison. Choose the source set before comparing pages. Drag to orbit and use the zoom/reset controls. The full scan remains available as a normal image. The model loads on request and falls back to the scan if 3D is unavailable.
 
 Page spacing, camera positions and the reflection view are viewing tools and investigator hypotheses. They do not establish the creator's intended mechanism or add a new decoding result. The [archived 3D model](https://keynotfound.com/lab/index.html) exposes the earlier OCR and experimental layers separately; its hypotheses are off by default. Its old labels and geometry are navigation aids rather than current source authority.
 
@@ -13,5 +13,7 @@ New visual entries should record actual work, including failed tests, correction
 The spacing diagnostic frame links the actual native row strips and opens the 2023 source pages in 3D. Its 142 rows/1243 word regions / 0 baseline mismatches describe reproduction of the old optical guards;38 rows still fail. Those schematic counts do not certify source glyph support. The source-strip hashes are checked with the frame, and full-resolution files open separately.
 
 The source-support frame links accepted pilot masks and a separate inverse-field feasibility view. The latter retains edge residue and unobservable joins; it is not a completed source repair or a decoded message. All 142 native row views and the component atlas are downloadable with the research.
+
+The declared-column reading frame opens the actual 73/74 opener board. The viewer now includes all eight retained 2023 pages. Its native excerpts show the two added opener units and the four already-retained display lines. The 151/3/0 counts mean source units, literal readings and valid format records; the two complete-output AI reviews are separately disclosed as nonblind and subjective.
 
 The puzzle remains unsolved. The 3D display and visual log do not verify the prize funding.
