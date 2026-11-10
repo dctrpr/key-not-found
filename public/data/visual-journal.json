@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "updatedOn": "2026-11-10",
+  "caseStatus": "unsolved",
+  "description": "Dated, evidence-linked frames for the public site and future research films. Source-derived counts; no private keys or derived addresses.",
+  "entries": [
+    {
+      "id": "boundary-check",
+      "completedAtUTC": "2026-11-10T06:27:56.096Z",
+      "title": "Boundaries, tested.",
+      "summary": "Where the edge falls changes the word. Every allowed pair-local choice was included.",
+      "result": "All 222 shaped strings failed their checksums. This result covers the registered pair-local model.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Modeled paths",
+          "value": 17108,
+          "pointer": "/procedureCounts/selectionPaths"
+        },
+        {
+          "label": "Shaped minikeys",
+          "value": 222,
+          "pointer": "/evaluation/uniqueShapeCounts/minikey"
+        },
+        {
+          "label": "Checksum passes",
+          "value": 0,
+          "pointer": "/evaluation/validCounts/minikey"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/mirror_boundary_review/RESULT.json",
+        "sha256": "6dfb5fc6282f546795515ba772ecf7462d5588f8446671760bcc9655b1d39955"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/mirror_boundary_review/RESULT.md",
+      "scene": {
+        "layout": "mirror",
+        "page": 76
+      },
+      "sceneNote": "Illustrative page view. The evidence link contains the exact tested rule and scope.",
+      "methodId": "mirror-boundary-envelope"
+    },
+    {
+      "id": "global-check",
+      "completedAtUTC": "2026-11-10T07:18:12.995Z",
+      "title": "One weak checksum hit.",
+      "summary": "The search connected all four directed page pairs without choosing a convenient reading.",
+      "result": "A one-byte checksum can pass by chance. The next frame tests the lead against Bitcoin history.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Language graphs",
+          "value": 24,
+          "pointer": "/sourceCounts/languageDescriptors"
+        },
+        {
+          "label": "Shaped minikeys",
+          "value": 382,
+          "pointer": "/evaluation/uniqueShapeCounts/minikey"
+        },
+        {
+          "label": "8-bit checksum pass",
+          "value": 1,
+          "pointer": "/evaluation/validCounts/minikey"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/mirror_global_envelope/RESULT.json",
+        "sha256": "e3c0aceba6eb16d862710f474a6433ea31628f0522e2dca214bfc8af20cf4f8c"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/mirror_global_envelope/RESULT.md",
+      "scene": {
+        "layout": "stack",
+        "page": 76
+      },
+      "sceneNote": "Illustrative page view. The evidence link contains the exact tested rule and scope.",
+      "methodId": "mirror-global-envelope"
+    },
+    {
+      "id": "history-check",
+      "completedAtUTC": "2026-11-10T07:40:54.968Z",
+      "title": "Five addresses. Zero history.",
+      "summary": "Two independent implementations derived the same five standard address constructions.",
+      "result": "Both providers reported zero chain and mempool history. Other wallet constructions and the puzzle remain open.",
+      "diagram": "history",
+      "metrics": [
+        {
+          "label": "Constructions",
+          "value": 5,
+          "pointer": "/addressCount"
+        },
+        {
+          "label": "Successful lookups",
+          "value": 10,
+          "pointer": "/requestsAttempted"
+        },
+        {
+          "label": "Active responses",
+          "value": 0,
+          "pointer": "/queries",
+          "operation": "countActive"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/global_minikey_history/RESULT.json",
+        "sha256": "1fe57385ff515c47dc6f03f8f5025c4271f57f8f9b923e5247798d29044cd328"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/global_minikey_history/RESULT.md",
+      "scene": {
+        "layout": "spread",
+        "page": 76
+      },
+      "sceneNote": "Illustrative page view. The evidence link contains the exact tested rule and scope.",
+      "methodId": "mirror-global-envelope"
+    }
+  ]
+}

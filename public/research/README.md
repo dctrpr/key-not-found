@@ -6,6 +6,8 @@ This is a curated public copy of the Max Keiser / Bitcoin Magazine investigation
 
 Start with [the method catalog](experiments.json), [creator clues](sources/creator-clues.json), [printed lines](sources/printed-lines.txt), and [source provenance](sources/provenance.json). [files.json](files.json) is the searchable file catalog; [SHA256SUMS](SHA256SUMS) authenticates the public files. [REPRODUCE.md](REPRODUCE.md) distinguishes reproducible current checks from historical analyses whose private or unavailable inputs were excluded.
 
+The [visual lab and dated frames](VISUAL_GUIDE.md) make the source pages and completed tests inspectable on the site. Saved SVGs and scene data are included under `visuals/` for reuse in later research films.
+
 ## Research is continuing
 
 The [global mirror-envelope result](analysis_outputs/continuation_20261110/mirror_global_envelope/RESULT.md) produced one weak 30-character minikey checksum pass among 382 shaped strings. Its [separately registered history follow-up](analysis_outputs/continuation_20261110/global_minikey_history/RESULT.md) is complete: independent Python/Node derivations agreed on five fixed mainnet address constructions, and two providers returned ten successful all-zero chain/mempool summaries at 2026-11-10T07:40:53–54Z. The candidate remains format-valid, but there is no evidence of a funded key through those constructions at those times. Other wallet constructions and the whole puzzle remain open. Raw candidate, scalar, source locators and address association stay private.

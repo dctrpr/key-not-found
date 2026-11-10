@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the archived Max Keiser puzzle 3D research model. Source scans, OCR navigation and optional investigator layers.">
+  <meta name="robots" content="noindex">
+  <title>Archived 3D model · KEY NOT FOUND</title>
+  <base href="/research/analysis_outputs/3d_article_map/">
+  <link rel="stylesheet" href="/research/analysis_outputs/3d_article_map/styles.css">
+  <link rel="stylesheet" href="/lab/archive.css">
+</head>
+<body>
+  <header class="archive-header">
+    <div>
+      <span class="archive-kicker">KEY NOT FOUND / RESEARCH ARCHIVE</span>
+      <h1>Archived 3D model</h1>
+      <p>Investigator layers and OCR navigation. Current results are in the test log.</p>
+    </div>
+    <nav aria-label="Return to current investigation">
+      <a href="/#visual-lab">Visual lab</a>
+      <a href="/#updates">Test log ↗</a>
+    </nav>
+  </header>
+
+  <main id="app">
+    <aside class="panel" aria-label="Archived model controls">
+      <section class="archive-context">
+        <h2>Explore the original model</h2>
+        <p>The scans are source material. OCR labels are approximate. Mirrored boxes, scored words, anchors and rays are earlier investigator hypotheses.</p>
+        <p>Board, fold and stack positions are display arrangements, not a measured reconstruction of physical paper.</p>
+      </section>
+
+      <section class="controls">
+        <h2>Arrangement</h2>
+        <div class="segmented" role="group" aria-label="Display arrangement">
+          <button class="active" data-layout="spread" type="button">Page board</button>
+          <button data-layout="fold" type="button">Fold study</button>
+          <button data-layout="stack" type="button">Stack</button>
+        </div>
+      </section>
+
+      <section class="controls grid">
+        <h2>Source navigation</h2>
+        <label><input type="checkbox" id="togglePages" checked> Page scans</label>
+        <label><input type="checkbox" id="toggleChars" checked> Approximate OCR letters</label>
+      </section>
+
+      <details class="archive-details">
+        <summary>Earlier investigator layers</summary>
+        <div class="controls grid">
+          <p class="archive-warning">Optional hypotheses. These layers do not establish a key, a physical fold or a solved region.</p>
+          <label><input type="checkbox" id="toggleImportant"> Investigator-scored words</label>
+          <label><input type="checkbox" id="toggleHighlights"> Measured orange boxes / annotations</label>
+          <label><input type="checkbox" id="toggleReflections"> Hypothesized mirror boxes</label>
+          <label><input type="checkbox" id="toggleAnchors"> Investigator anchors</label>
+          <label><input type="checkbox" id="toggleRays"> Earlier page-76 ray selectors</label>
+        </div>
+      </details>
+
+      <section class="controls">
+        <h2>Focus page</h2>
+        <select id="focusSelect" aria-label="Focus page">
+          <option value="all">All pages</option>
+          <option value="75">Page 75</option>
+          <option value="76">Page 76</option>
+          <option value="77">Page 77</option>
+          <option value="78">Page 78</option>
+          <option value="79">Page 79</option>
+          <option value="80">Page 80</option>
+        </select>
+      </section>
+
+      <details class="archive-details">
+        <summary>Archived model counts</summary>
+        <section class="metrics" aria-label="Archived model counts">
+          <div><strong id="charCount">0</strong><span>navigation letters</span></div>
+          <div><strong id="wordCount">0</strong><span>legacy OCR words</span></div>
+          <div><strong id="anchorCount">0</strong><span>investigator anchors</span></div>
+          <div><strong id="reflectionCount">0</strong><span>hypothesis boxes</span></div>
+        </section>
+      </details>
+
+      <details class="archive-details">
+        <summary>Browser annotations</summary>
+        <section class="correction">
+          <h2>Local text annotation</h2>
+          <p>Edits affect labels in this browser. They do not change the frozen research source. Previously saved annotations may be present.</p>
+          <div class="field-row">
+            <label for="correctionPage">Page</label>
+            <select id="correctionPage" aria-label="Annotation page">
+              <option value="75">Page 75</option>
+              <option value="76" selected>Page 76</option>
+              <option value="77">Page 77</option>
+              <option value="78">Page 78</option>
+              <option value="79">Page 79</option>
+              <option value="80">Page 80</option>
+            </select>
+          </div>
+          <div class="field-row">
+            <label for="correctionLine">Line</label>
+            <select id="correctionLine" aria-label="Annotation line"></select>
+          </div>
+          <div class="line-preview"><span>Original OCR</span><p id="ocrLinePreview"></p></div>
+          <label class="textarea-label" for="correctionText">Text + annotation markup</label>
+          <textarea id="correctionText" spellcheck="false"></textarea>
+          <div class="markup-help">
+            <span><strong>Bold</strong>: **word** or **l**etter</span>
+            <span><strong>Orange</strong>: [[highlighted text]]</span>
+            <span><strong>Black</strong>: {{highlighted text}} or ~~text~~</span>
+          </div>
+          <div class="button-row"><button id="markBold" type="button">Bold</button><button id="markOrange" type="button">Orange</button></div>
+          <div class="button-row"><button id="markBlack" type="button">Black</button><button id="stripMarkup" type="button">Plain text</button></div>
+          <div class="button-row"><button id="applyCorrection" type="button">Apply</button><button id="resetCorrection" type="button">Reset line</button></div>
+          <div class="button-row"><button id="exportCorrections" type="button">Export JSON</button><button id="clearCorrections" type="button">Clear all</button></div>
+          <p id="correctionStatus" class="status-text" aria-live="polite">Annotations save in this browser.</p>
+        </section>
+      </details>
+
+      <details class="archive-details">
+        <summary>Archived annotated transcripts</summary>
+        <section class="transcript">
+          <h2>Reference annotations</h2>
+          <p>Historical notes preserve supplied markup. Use the current source archive for exact transcription authority.</p>
+          <div class="field-row"><label for="transcriptSource">Source</label><select id="transcriptSource" aria-label="Annotated transcript source"><option value="notes">Notes</option><option value="markdown" selected>Markdown</option></select></div>
+          <div class="field-row"><label for="transcriptPage">Part</label><select id="transcriptPage" aria-label="Annotated transcript section"></select></div>
+          <textarea id="transcriptText" spellcheck="false" readonly aria-label="Archived annotated transcript"></textarea>
+          <div class="button-row"><button id="copyTranscript" type="button">Copy to editor</button><button id="downloadTranscript" type="button">Download</button></div>
+        </section>
+      </details>
+
+      <details class="archive-details">
+        <summary>Source authority and provenance</summary>
+        <section class="authority">
+          <p class="authority-note">OCR and manual markup are navigation aids. Font labels, local corrections and scene depth are not source proof.</p>
+          <a class="asset-link" href="/research/sources/WORD-GEOMETRY.md" target="_blank" rel="noreferrer">Current source geometry</a>
+          <a class="asset-link" href="./viewer_layer_provenance/viewer_layer_provenance.md" target="_blank" rel="noreferrer">Archived layer provenance</a>
+          <a class="asset-link" href="/research/sources/word-geometry-review-20261110.png" target="_blank" rel="noreferrer">Current source review plate</a>
+          <a class="asset-link" href="/lab/LICENSE_THREE.txt" target="_blank" rel="noreferrer">Three.js MIT license</a>
+        </section>
+      </details>
+
+      <section class="findings" hidden aria-hidden="true"><h2>Archived notes</h2><ol id="findings"></ol></section>
+    </aside>
+
+    <section class="viewport" aria-label="Interactive archived 3D scene">
+      <canvas id="scene" aria-label="Scanned magazine pages in a movable 3D scene"></canvas>
+      <div class="hud"><span id="hoverText" role="status">Drag to inspect the archived model</span><span>drag rotate · wheel zoom · right-drag pan</span></div>
+    </section>
+  </main>
+  <noscript><p class="archive-noscript">JavaScript is required for the 3D archive. <a href="/#visual-lab">Return to the visual lab.</a></p></noscript>
+  <script type="module" src="/lab/archive-viewer.js"></script>
+</body>
+</html>

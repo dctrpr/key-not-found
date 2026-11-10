@@ -25,6 +25,9 @@ import PublicChat from "./components/PublicChat";
 import ResearchMapView from "./components/ResearchMap";
 import RepositoryActivity from "./components/RepositoryActivity";
 import ResearchFeed from "./components/ResearchFeed";
+import VisualLab from "./components/VisualLab";
+import type { VisualLabView } from "./components/VisualLab";
+import VisualJournal from "./components/VisualJournal";
 import projectSnapshot from "../public/data/project.json";
 import useLiveResearch from "./hooks/useLiveResearch";
 import { followHashLinks } from "./lib/hashLinks";
@@ -74,6 +77,7 @@ const FIRST_PAGE = 73;
 const LAST_PAGE = 80;
 const NAV = [
   ["Case", "case"],
+  ["Visuals", "visual-lab"],
   ["Map", "investigation"],
   ["Log", "updates"],
   ["Files", "files"],
@@ -174,6 +178,8 @@ function App() {
   const [selectedPage, setSelectedPage] = useState<number | null>(null);
   const [showProjectNotes, setShowProjectNotes] = useState(false);
   const [pendingUpdate, setPendingUpdate] = useState<string | null>(null);
+  const [visualView, setVisualView] = useState<VisualLabView>({ layout: "spread", page: 75 });
+  const [visualOpenRequest, setVisualOpenRequest] = useState(0);
   const dialog = useRef<HTMLDialogElement>(null);
   const fileInput = useRef<HTMLInputElement>(null);
   const repo = project.data?.repository || REPO;
@@ -211,14 +217,15 @@ function App() {
         ? researchPath(path)
         : path;
 
-  // A fresh #film URL can arrive before React has inserted the section.
+  // A shared visual URL can arrive before React has inserted its section.
   // Wait for the page's type to settle, then land below the sticky header.
   useEffect(() => {
-    if (window.location.hash !== "#film") return;
+    const hash = window.location.hash;
+    if (!["#film", "#visual-lab", "#visual-updates"].includes(hash)) return;
     let cancelled = false;
     void document.fonts.ready.then(() => {
-      if (cancelled || window.location.hash !== "#film") return;
-      const target = document.getElementById("film");
+      if (cancelled || window.location.hash !== hash) return;
+      const target = document.getElementById(hash.slice(1));
       if (!target) return;
       const headerHeight = document.querySelector("header")?.getBoundingClientRect().height ?? 0;
       window.scrollTo({
@@ -753,6 +760,13 @@ function App() {
             </a>
           </div>
         </section>
+
+        <VisualLab view={visualView} onViewChange={setVisualView} openRequest={visualOpenRequest} />
+        <VisualJournal onOpenView={(view) => {
+          setVisualView(view);
+          setVisualOpenRequest(value => value + 1);
+          document.getElementById("visual-lab")?.scrollIntoView({ behavior: "instant", block: "start" });
+        }} />
 
         <ResearchMapView
           branches={currentMap?.branches ?? null}
