@@ -10,15 +10,13 @@ Use `DESCRIPTION.txt` for the proposed token description and `assets/key404-embl
 
 `WEBSITE.txt` and `DISCORD.txt` contain the website and discussion links. Earlier research and discussion also live in the Discord room. Verify that its invite still works before publishing a launch profile.
 
-## Before signing a creation transaction
+## Published token
 
-1. Use the project identity and wallet addresses you intend to make public. On-chain addresses and transactions can be linked publicly.
-2. Review the real Pump.fun transaction and network costs in your wallet. Do not assume that the absence of a platform creation fee means no network/account cost.
-3. Select creator-fee mode if the intended mechanism is project fees funding AI research; holder-reward mode sends the relevant fees elsewhere.
-4. Publish the exact real contract, official token URL, creator-fee recipient, allocation and opening ledger. Update `public/data/project.json` and the funding policy, then commit the reviewed change.
-5. Keep the site marked not launched until the contract is actually created and verified. Do not reuse someone else's same-name contract.
+Official contract: `7ux4vVTCkBAUdyEHB9axUyzKnbdCophQTGHTwYWMpump`
 
-No token has been created by the website build. Wallet signing and any financial transaction remain with the user. No developer/private key is included in this kit.
+https://pump.fun/coin/7ux4vVTCkBAUdyEHB9axUyzKnbdCophQTGHTwYWMpump
+
+The founder supplied this contract on 10 November 2026. Its mint exists on Solana mainnet. The website build does not create tokens, receive fees, sign wallet transactions or verify the fee configuration. Funding receipts remain unpublished.
 
 The founder commits 100% of prize BTC actually recovered by this project to KEY404 buybacks, with public execution records. It does not promise a reward, return, claim on the BTC, or an automated mechanism. The research is available equally to non-holders.
 

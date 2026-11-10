@@ -837,23 +837,22 @@ final class Film {
     }
   }
 
-  /// 48.2–56.0: what is planned, what is committed, what is unknown.
+  /// 48.2–56.0: what is active, what is committed, what is unknown.
   /// Few words, set large, so it still reads in a phone feed.
   private func sceneFunding(_ canvas: Canvas, _ t: Double) {
     let local = t - Cue.funding
     let alpha = seg(local, 0.25, 0.55) * (1 - seg(t, Cue.end, Cue.end + 0.3))
     guard alpha > 0 else { return }
 
-    // Status comes first.
+    // Status comes first. The contract is never drawn here: the site is its one source.
     let tag = Style(font: assets.fonts.mono(34), color: Ink.ink, tracking: 0.06)
-    let tagWidth = canvas.width("TOKEN NOT LAUNCHED", tag) + 94
+    let tagWidth = canvas.width("$KEY404 IS LIVE", tag) + 94
     canvas.fill(Box(x: 96, y: 74, w: tagWidth, h: 72), Ink.lime, alpha)
     canvas.stroke(Box(x: 96, y: 74, w: tagWidth, h: 72), Ink.ink, alpha, width: 3)
     canvas.fill(Box(x: 122, y: 102, w: 16, h: 16), Ink.ink, alpha)
-    canvas.text("TOKEN NOT LAUNCHED", tag, x: 158, y: 122, alpha: alpha)
-    canvas.text("$KEY404", sans(48, Ink.ink), x: 96 + tagWidth + 34, y: 127, alpha: alpha)
+    canvas.text("$KEY404 IS LIVE", tag, x: 158, y: 122, alpha: alpha)
     canvas.text(
-      "no official contract or trading link", mono(24, Ink.muted), x: Double(W) - 96, y: 122,
+      "official contract at keynotfound.com", mono(24, Ink.muted), x: Double(W) - 96, y: 122,
       align: .right, alpha: alpha * seg(local, 0.5, 0.9))
 
     func label(_ text: String, x: Double, y: Double, alpha: Double, onInk: Bool, dashed: Bool = false) {
@@ -864,15 +863,16 @@ final class Film {
       canvas.text(text, style, x: x + 17, y: y + 32, alpha: alpha)
     }
 
-    // Planned: only fees the project actually receives.
-    let plannedIn = easeOut(seg(local, 0.7, 1.1))
-    let planned = alpha * plannedIn, rise1 = 30 * (1 - plannedIn)
-    label("PLANNED", x: 96, y: 196 + rise1, alpha: planned, onInk: false)
-    canvas.text("If it launches, creator fees actually", sans(68, Ink.ink), x: 96, y: 326 + rise1, alpha: planned)
-    canvas.text("received fund AI research runs.", sans(68, Ink.ink), x: 96, y: 406 + rise1, alpha: planned)
+    // Active: the rule for fees the project actually receives. It states no amount
+    // and no funded run.
+    let activeIn = easeOut(seg(local, 0.7, 1.1))
+    let active = alpha * activeIn, rise1 = 30 * (1 - activeIn)
+    label("ACTIVE", x: 96, y: 196 + rise1, alpha: active, onInk: false)
+    canvas.text("Creator fees actually received", sans(68, Ink.ink), x: 96, y: 326 + rise1, alpha: active)
+    canvas.text("fund AI research runs.", sans(68, Ink.ink), x: 96, y: 406 + rise1, alpha: active)
     canvas.text(
-      "method, cost and result published", mono(24, Ink.muted), x: Double(W) - 96, y: 402 + rise1,
-      align: .right, alpha: planned * seg(local, 1.3, 1.7))
+      "each funded run publishes method, cost and result", mono(24, Ink.muted), x: Double(W) - 96,
+      y: 402 + rise1, align: .right, alpha: active * seg(local, 1.3, 1.7))
 
     // Committed: the allocation is firm; it applies if the project recovers the prize.
     let committedIn = easeOut(seg(local, 2.5, 2.9))

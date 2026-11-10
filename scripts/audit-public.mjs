@@ -20,6 +20,10 @@ const checks = [
   ["personal home directory", /(?:\/Users\/|\/home\/)[^\s/"'<>]+\//g],
   ["Windows personal directory", /[A-Z]:\\Users\\[^\\\s]+\\/gi],
   [
+    "non-UTC location timezone",
+    /\b(?:Africa|America|Antarctica|Arctic|Asia|Atlantic|Australia|Europe|Indian|Pacific)\/[A-Z][A-Za-z_+-]+(?:\/[A-Z][A-Za-z_+-]+)?\b/g,
+  ],
+  [
     "private discussion URL",
     /https?:\/\/(?:canary\.|ptb\.)?discord(?:app)?\.com\/channels\/\d+/gi,
   ],
@@ -112,7 +116,9 @@ if (project.token.status !== "not-launched") {
     const url = new URL(project.token.url);
     if (
       url.protocol !== "https:" ||
-      !["pump.fun", "www.pump.fun"].includes(url.hostname)
+      !["pump.fun", "www.pump.fun"].includes(url.hostname) ||
+      url.pathname !== "/coin/" + project.token.contract ||
+      url.search || url.hash
     )
       throw new Error();
   } catch {

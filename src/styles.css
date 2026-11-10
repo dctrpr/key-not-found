@@ -1605,6 +1605,22 @@ pre {
   font-size: 17px;
   overflow-wrap: anywhere;
 }
+.contract-copy {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font: 500 14px/1.4 var(--mono);
+}
+.contract-copy:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 .token-bottom > .button {
   min-height: 48px;
   font-size: 14.5px;
@@ -1674,29 +1690,6 @@ pre {
 .receipt-list > a span {
   flex: 1;
 }
-.launch-kit {
-  margin-top: 20px;
-}
-.launch-kit-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  min-height: 32px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
-}
-.launch-kit-link:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-.launch-kit > p {
-  max-width: 72ch;
-  margin-top: 4px;
-  font-size: 13.5px;
-  color: var(--muted);
-}
-
 /* ---------- Footer ---------- */
 .site-footer {
   --focus: var(--lime);

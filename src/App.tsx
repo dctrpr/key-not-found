@@ -463,6 +463,16 @@ function App() {
                 >
                   Join the Discord <ArrowUpRight size={16} />
                 </a>
+                {tokenLive && project.data?.token.url && (
+                  <a
+                    className="text-link"
+                    href={project.data.token.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View $KEY404 <ArrowUpRight size={16} />
+                  </a>
+                )}
               </div>
             </div>
             <div className="hero-visual">
@@ -577,12 +587,14 @@ function App() {
                 See the open leads <ArrowDown size={15} />
               </span>
             </a>
-            <a className="role role-later" href="#token">
-              <span className="role-index">04 · AFTER LAUNCH</span>
+            <a className={tokenLive ? "role" : "role role-later"} href="#token">
+              <span className="role-index">{tokenLive ? "04" : "04 · AFTER LAUNCH"}</span>
               <strong>Backer</strong>
               <span className="role-verb">Fund research runs.</span>
               <span className="role-note">
-                Not available yet. No token has launched.
+                {tokenLive
+                  ? "Follow the public funding and research record."
+                  : "Not available yet. No token has launched."}
               </span>
               <span className="role-action">
                 Read the funding plan <ArrowDown size={15} />
@@ -1208,6 +1220,14 @@ function App() {
                 <strong>
                   {project.data?.token.contract || "Not published"}
                 </strong>
+                {tokenLive && (
+                  <button
+                    className="contract-copy"
+                    onClick={() => void copy(project.data?.token.contract || "", "Contract copied")}
+                  >
+                    <Copy size={15} /> Copy CA
+                  </button>
+                )}
               </div>
               {tokenLive && project.data?.token.url ? (
                 <a
@@ -1265,20 +1285,6 @@ function App() {
                 View the public ledger data <ArrowUpRight size={14} />
               </a>
             </details>
-            <div className="launch-kit">
-              <a
-                className="launch-kit-link"
-                href="/downloads/key404-launch-kit.zip"
-                download
-              >
-                Download the token launch kit: name, ticker, description,
-                artwork <ArrowDownToLine size={15} />
-              </a>
-              <p>
-                A matching name or image does not make a token official. Only a
-                contract published on this page does.
-              </p>
-            </div>
           </div>
         </section>
 

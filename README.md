@@ -23,7 +23,7 @@ The website is a React/TypeScript app with two read-only public GitHub endpoints
 - **Reader:** inspect the original pages and exact printed lines.
 - **Skeptic:** challenge a result with public evidence; corrections belong in the record.
 - **Solver:** propose one falsifiable experiment and publish its exact steps and result.
-- **Backer, after launch:** help fund research; follow the public expense and execution records.
+- **Backer:** help fund research; follow the public expense and execution records.
 
 Useful contributions stay linked to their public issue or pull request. Buying is not required to read, test, correct or contribute.
 
@@ -47,9 +47,13 @@ For the historical research environment, follow `public/research/REPRODUCE.md` f
 
 ## Token status
 
-The proposed token is **KEY NOT FOUND**, ticker **KEY404**, on Pump.fun/Solana. No contract address or trading link is configured at release. The site must remain marked **not launched** until a real contract and official URL are reviewed and set in `public/data/project.json`.
+The token is **KEY NOT FOUND**, ticker **KEY404**, on Pump.fun/Solana.
 
-Creator fees actually received by the project are intended to fund AI agents, research runs and infrastructure, with receipts. The founder commits: if this project recovers the prize BTC, 100% will fund KEY404 buybacks, with public execution records. Prize existence and recovery remain unverified; the commitment is not automated. See the full funding plan.
+Official contract: `7ux4vVTCkBAUdyEHB9axUyzKnbdCophQTGHTwYWMpump`
+
+[View on Pump.fun](https://pump.fun/coin/7ux4vVTCkBAUdyEHB9axUyzKnbdCophQTGHTwYWMpump).
+
+Creator fees actually received by the project fund AI agents, research runs and infrastructure, with receipts. The founder commits: if this project recovers the prize BTC, 100% will fund KEY404 buybacks, with public execution records. Prize existence and recovery remain unverified; the commitment is not automated. See the full funding plan.
 
 ## License
 

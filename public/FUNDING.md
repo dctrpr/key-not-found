@@ -1,14 +1,18 @@
 # KEY404 funding plan
 
-Status: planned; no token contract, fee-receiving address, token sale, or treasury is configured on this site.
+Status: token live; no funding receipts or recovered BTC are reported.
+
+Official Solana contract: `7ux4vVTCkBAUdyEHB9axUyzKnbdCophQTGHTwYWMpump`
+
+Token page: https://pump.fun/coin/7ux4vVTCkBAUdyEHB9axUyzKnbdCophQTGHTwYWMpump
 
 ## Research funding
 
-The proposed Pump.fun token is KEY NOT FOUND / KEY404 on Solana, using creator-fee mode. Creator fees actually received by the project are intended to fund AI-agent subscriptions/usage, reproducible research runs, data/source work, and the infrastructure needed to maintain the investigation.
+The Pump.fun token is KEY NOT FOUND / KEY404 on Solana. The funding plan uses creator fees actually received by the project. Creator fees actually received by the project are intended to fund AI-agent subscriptions/usage, reproducible research runs, data/source work, and the infrastructure needed to maintain the investigation.
 
 This means the project's creator-fee portion, not all trading fees or all token purchase proceeds. Pump.fun controls its own protocol/platform fee schedule; other fees may apply. Fees depend on activity and are not guaranteed. The current platform fee documentation is https://pump.fun/docs/fees.
 
-Before activation, publish the real contract, official token URL, fee-receiving address, allocation details, and opening ledger. Until those exist, the site must say **not launched**. No displayed ticker or generated image is proof that a contract is official.
+The founder supplied the official contract and token URL on 10 November 2026. The mint exists on Solana mainnet. The fee-receiving address, creator-fee configuration, allocation details and opening funding ledger have not yet been published or independently checked. Add those records as funding begins; the published contract does not prove fee receipts.
 
 ## Public expense ledger
 
@@ -18,7 +22,7 @@ Invoices must be redacted for personal identity, billing address, account identi
 
 ## Conditional BTC buybacks
 
-The founder commits: **if this project recovers the prize BTC, 100% will fund KEY404 buybacks.** This is a commitment about the use of recovered funds. Publish the recovery evidence, execution plan, timing, conversion/trade records, and necessary transaction costs before and after execution. No buyback has occurred in this prelaunch project.
+The founder commits: **if this project recovers the prize BTC, 100% will fund KEY404 buybacks.** This is a commitment about the use of recovered funds. Publish the recovery evidence, execution plan, timing, conversion/trade records, and necessary transaction costs before and after execution. No buyback has been reported by this project.
 
 No key has been found. The existence of an authenticated 20-BTC prize address has not been established. Someone outside the project could solve the public puzzle first or keep any coins they recover. Prize existence and recovery cannot be promised. The buyback commitment applies to prize BTC this project actually recovers.
 

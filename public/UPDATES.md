@@ -62,3 +62,9 @@ The site, sharing metadata and launch description now use the founder’s first-
 Fable 5.2 Max directly authored a 62-second film, its procedural score, the Swift renderer, captions, transcript and site player. The article’s actual printed characters become a flock, return to the scans and illustrate recorded readings before the public-work and planned-funding explanation. The player is opt-in, with a download and written alternative. Source and reproduction instructions are in `scripts/explainer/`. The film is a 10 November snapshot; the ledger remains the current record. No research result, token status or buyback allocation changed.
 
 The project’s primary domain is now https://keynotfound.com. The www name redirects to it; the original Vercel address is available for earlier links. The launch-kit website link and sharing metadata use the new domain.
+
+## 10 November 2026 — Official contract published
+
+The founder supplied the Solana contract `7ux4vVTCkBAUdyEHB9axUyzKnbdCophQTGHTwYWMpump`. The mint was checked through Solana mainnet RPC. The site now publishes the exact address, a copy action and the official Pump.fun link. The backer and funding sections reflect the live token; no fees, research payments, recovered BTC or buybacks are claimed. The launch-kit download block has been removed from the page.
+
+The film’s funding scene now reflects the live token and directs viewers to keynotfound.com for its official contract. The film section uses a large player under “The case”, without the inline scene transcript. Captions and a downloadable transcript remain available. The public README has been shortened. An old automation deadline in the research log now uses its equivalent UTC time, and the research manifests and archive have been regenerated. This is a publication/privacy correction, not a new puzzle result.
