@@ -1,0 +1,723 @@
+{
+  "version": 1,
+  "completedAtUTC": "2026-11-10T14:23:07.166Z",
+  "curatedAtUTC": "2026-11-10T14:31:59.847041+00:00",
+  "auditType": "source-measurement-coverage-audit",
+  "methodId": "batch20-g04",
+  "title": "G04 interword-gap measurement coverage and separate decoder-scope clarification",
+  "independentTheory": false,
+  "recordedRegistrationCommit": "90ad1d694b0eb236494ae199b87de05db5e3d331",
+  "protocolSha256": "e69215cd826a8fd63c588d5fe9295a71a1807278fd499b9a77cff119c48d4f53",
+  "frozenProcedure": {
+    "id": "G04",
+    "title": "Fixed interword-gap binary channel",
+    "family": "interword-spacing",
+    "priority": "conditional",
+    "inputPaths": [
+      "magazine.pdf",
+      "sources/printed-lines.json",
+      "sources/word-geometry-20261110.json",
+      "scripts/batch20_support/english.txt",
+      "scripts/batch20_support/controls.json"
+    ],
+    "parameters": {
+      "scopes": [
+        "global",
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "threshold": 1.5,
+      "measurement": "Original ink extents inside frozen lexical-word regions; consecutive ink gap divided by row median.",
+      "foreground": "Per-scanline edge-column background median maxRGB>170 chooses black maxRGB<130; otherwise white minRGB>170 and spread<70.",
+      "inkColumnMinimum": 2,
+      "edgeGuardPx": 1,
+      "glyphVerticalMarginPx": 2,
+      "verticalBounds": "Full frozen word-box envelope plus2px, bounded by adjacent row-center midpoints; robust ink touching a vertical boundary is unknown.",
+      "deskewResampler": "Nearest-neighbor, fixed center, no expansion",
+      "equalityBit": 0,
+      "decoders": {
+        "baconAlphabets": [
+          "ABCDEFGHIKLMNOPQRSTUWXYZ",
+          "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        ],
+        "baconPhases": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "asciiPhases": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "bitAssignments": [
+          "original",
+          "complement"
+        ],
+        "orders": [
+          "forward",
+          "reverse"
+        ],
+        "incompleteBlocks": "Record unused prefix/suffix; no padding or guessed bits.",
+        "invalidDecodedGroup": "␞ hard boundary; no deletion, word joining or format window across invalid groups/bytes."
+      },
+      "maximumLabeledDecodes": 432
+    },
+    "controls": [
+      "synthetic-doubled-space-measurement",
+      "shared-format-controls"
+    ],
+    "negativeCriterion": "No literal validated key excludes the exact1.5×median measured ink-gap serialization, not all spacing ciphers.",
+    "limitations": [
+      "Word boxes are machine-verified source geometry, not a claim of original font metadata.",
+      "Incomplete rows, nonpositive gaps or unknown geometry make relevant scope inconclusive."
+    ],
+    "methodId": "batch20-g04",
+    "branchId": "numbers-type"
+  },
+  "methodInputPins": {
+    "magazine.pdf": {
+      "bytes": 6789338,
+      "sha256": "a30c61f8c49674afb7bccc6680d6477f6e919175386a2422de0a944db4e76c13",
+      "matchesFrozenProtocol": true
+    },
+    "sources/printed-lines.json": {
+      "bytes": 116759,
+      "sha256": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+      "matchesFrozenProtocol": true
+    },
+    "sources/word-geometry-20261110.json": {
+      "bytes": 4660187,
+      "sha256": "e3348d0d60d3097b05d0afdb0a1fccf66409274408af9ae7a9369c37fe596e9f",
+      "matchesFrozenProtocol": true
+    },
+    "scripts/batch20_support/english.txt": {
+      "bytes": 13116,
+      "sha256": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+      "matchesFrozenProtocol": true
+    },
+    "scripts/batch20_support/controls.json": {
+      "bytes": 817,
+      "sha256": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b",
+      "matchesFrozenProtocol": true
+    }
+  },
+  "scriptPins": {
+    "scripts/batch20_common.py": {
+      "bytes": 20013,
+      "sha256": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d",
+      "matchesFrozenProtocol": true
+    },
+    "scripts/batch20_geometry.py": {
+      "bytes": 59209,
+      "sha256": "e7786acc472fa3f7a294fe6391e74bd6f8840017e30d9f54941544019dbafb9a",
+      "matchesFrozenProtocol": true
+    },
+    "scripts/batch20_vision.swift": {
+      "bytes": 8343,
+      "sha256": "3a663b53c792d446e5c69bc5d599bdaf3ebfb5975e892d7dd1d055f61faeae49",
+      "matchesFrozenProtocol": true
+    }
+  },
+  "frozenArtifactPins": {
+    "analysis_outputs/continuation_20261110/batch20/G04/RESULT.json": "b3f920064b245c74cc0c1855ebd744b2d30f3c88a6ff50d89cc76c70a45185f4",
+    "analysis_outputs/continuation_20261110/batch20/G04/DETAILS.json": "0d388118b47fe509063765fd76316c870036f99fabfa37ba17f95196e7266dbf",
+    "analysis_outputs/continuation_20261110/batch20/G04/RESULT.md": "8aab8eaaa8aea013c385bdae75bde3bfe7d904d0cb96a4b042c000438a5d7eeb",
+    "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json": "e69215cd826a8fd63c588d5fe9295a71a1807278fd499b9a77cff119c48d4f53",
+    "scripts/batch20_geometry.py": "e7786acc472fa3f7a294fe6391e74bd6f8840017e30d9f54941544019dbafb9a"
+  },
+  "frozenArtifactsModified": false,
+  "coverage": {
+    "canonicalRows": 142,
+    "frozenLexicalGeometryCompleteRows": 142,
+    "rowsWithSavedGapMeasurements": 104,
+    "savedMeasuredGapCount": 811,
+    "firstFailureRows": 38,
+    "byFirstFailureReason": {
+      "ink-touches-vertical-region-boundary": 13,
+      "ink-touches-word-region-boundary": 23,
+      "no-robust-ink-columns": 1,
+      "no-robust-ink-rows": 1
+    },
+    "byPage": [
+      {
+        "printedPage": 75,
+        "totalRows": 32,
+        "failedRows": 7,
+        "measuredRows": 25
+      },
+      {
+        "printedPage": 76,
+        "totalRows": 31,
+        "failedRows": 6,
+        "measuredRows": 25
+      },
+      {
+        "printedPage": 77,
+        "totalRows": 32,
+        "failedRows": 11,
+        "measuredRows": 21
+      },
+      {
+        "printedPage": 78,
+        "totalRows": 22,
+        "failedRows": 5,
+        "measuredRows": 17
+      },
+      {
+        "printedPage": 79,
+        "totalRows": 25,
+        "failedRows": 9,
+        "measuredRows": 16
+      }
+    ],
+    "completePages": [],
+    "all38FailuresListed": true,
+    "unknownListsAgreeBetweenResultAndDetails": true,
+    "publicAndOriginalPrivateDetailsByteIdentical": true,
+    "retainedLabeledDecodes": 0,
+    "decodedStreamsSubmittedToFormatEvaluation": 0,
+    "internalDecodeOrderingNote": "Static code eagerly constructs binary_decodes from measured-row subsets before filtering incomplete scopes. Zero retained/evaluated streams is established; zero internal decode construction is not."
+  },
+  "failedRows": [
+    {
+      "rowId": "p75r03",
+      "printedPage": 75,
+      "recordedFirstFailureReason": "ink-touches-vertical-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "ef57451e4c6943f937d191ed6f1e475ce28edb5840b6a7378c5ba9c91f32fa50",
+      "sourceCropBytes": 26346
+    },
+    {
+      "rowId": "p75r08",
+      "printedPage": 75,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 2,
+      "sourceCropSha256": "088cabeed3f38a783d0e892d1b7837ac2389959b96579bfaab7ed624e17688f4",
+      "sourceCropBytes": 61743
+    },
+    {
+      "rowId": "p75r09",
+      "printedPage": 75,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "aee14999b2373a16f99de3e2747295cf60c9c4630d65a0121c112f42485a108c",
+      "sourceCropBytes": 84252
+    },
+    {
+      "rowId": "p75r10",
+      "printedPage": 75,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "b94541a49e376d1d08e0b54f6e4634ff36016a7c828f2ddf61975bbfc308125d",
+      "sourceCropBytes": 105353
+    },
+    {
+      "rowId": "p75r11",
+      "printedPage": 75,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 1,
+      "sourceCropSha256": "988a52ac4efb5f05f55996fdcc709b145ee167122b31d240b6c62d4bc5732d72",
+      "sourceCropBytes": 68228
+    },
+    {
+      "rowId": "p75r12",
+      "printedPage": 75,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 1,
+      "sourceCropSha256": "0115f2bc553cc2a0fe6bdbd18b548104e4a4b79629ba70cb66468ff39b58b4eb",
+      "sourceCropBytes": 60727
+    },
+    {
+      "rowId": "p75r24",
+      "printedPage": 75,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "80fe91a1d25e0edabe9dba177d63574611ec1124f9a65bb9ede73e702354a018",
+      "sourceCropBytes": 54083
+    },
+    {
+      "rowId": "p76r07",
+      "printedPage": 76,
+      "recordedFirstFailureReason": "ink-touches-vertical-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "0ed013fa843ab1a4d8310ff87bd64c388839da1107175d311ee5c9240533435f",
+      "sourceCropBytes": 101842
+    },
+    {
+      "rowId": "p76r08",
+      "printedPage": 76,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "6d5c02b66c36202720434274da990d78b1f7b146099ddbf673845ead3ea74dc9",
+      "sourceCropBytes": 89752
+    },
+    {
+      "rowId": "p76r16",
+      "printedPage": 76,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "4ee6b8107d757e46bcf00ef335860657cb7f4c30612fb05b9838a4c53c983355",
+      "sourceCropBytes": 85723
+    },
+    {
+      "rowId": "p76r24",
+      "printedPage": 76,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 1,
+      "sourceCropSha256": "de8582f298bf919cf0400bbcedd63c48210a0d9d7b195037772e92f78c95c2ac",
+      "sourceCropBytes": 53970
+    },
+    {
+      "rowId": "p76r26",
+      "printedPage": 76,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "f497a9d1202883f81e8a22c4f052c0cfbdfe64e75b850687c041b2b5b71f72a9",
+      "sourceCropBytes": 71818
+    },
+    {
+      "rowId": "p76r31",
+      "printedPage": 76,
+      "recordedFirstFailureReason": "ink-touches-vertical-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "42262c1e0bb0a06620741858db67348ef8c53edffb941bd0d4fa8aed1d3a5e8b",
+      "sourceCropBytes": 110306
+    },
+    {
+      "rowId": "p77r05",
+      "printedPage": 77,
+      "recordedFirstFailureReason": "no-robust-ink-columns",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "5e2c36ead8df290ca6e2d2d7cd8eac0c628a2bf0fcdfc9fcc1b3dd47ce8dd089",
+      "sourceCropBytes": 193700
+    },
+    {
+      "rowId": "p77r06",
+      "printedPage": 77,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "e3702bbb1e34ede141670a52912f24af212fb7d890616380f25bb32db40d29ac",
+      "sourceCropBytes": 44211
+    },
+    {
+      "rowId": "p77r07",
+      "printedPage": 77,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "b39b936bd9c97880a3ea6df05440fde22bee94fe44d676da191558bc0a918a8f",
+      "sourceCropBytes": 204430
+    },
+    {
+      "rowId": "p77r11",
+      "printedPage": 77,
+      "recordedFirstFailureReason": "ink-touches-vertical-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "7fa7f62f49ec3aeb58188cca89f503a75b115c72d3cdc9024bae9a4cc196ce0b",
+      "sourceCropBytes": 186597
+    },
+    {
+      "rowId": "p77r12",
+      "printedPage": 77,
+      "recordedFirstFailureReason": "no-robust-ink-rows",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "2ae735a06b75ee81ed8217aea71e4f38f44ef4e9d37d7efbd725a60826141d24",
+      "sourceCropBytes": 175553
+    },
+    {
+      "rowId": "p77r15",
+      "printedPage": 77,
+      "recordedFirstFailureReason": "ink-touches-vertical-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "f9ccec495af9ce6b9b72c1e29414bdaecedfc9e1da37388832d741c66220e914",
+      "sourceCropBytes": 178423
+    },
+    {
+      "rowId": "p77r16",
+      "printedPage": 77,
+      "recordedFirstFailureReason": "ink-touches-vertical-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "0b8b661d0e8b96683d26c527524a17e2993b0aca8da9dbf6a9be73085206fe41",
+      "sourceCropBytes": 177902
+    },
+    {
+      "rowId": "p77r18",
+      "printedPage": 77,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 1,
+      "sourceCropSha256": "a997a88407646a3ed280d5f1975fdba429e17837da7b94d5c468d3299d562eac",
+      "sourceCropBytes": 167827
+    },
+    {
+      "rowId": "p77r20",
+      "printedPage": 77,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 1,
+      "sourceCropSha256": "a8fa08f0d3688f6795eb5c4c916df0b21d4b29b00825c2cf3c0b5a51387ba8eb",
+      "sourceCropBytes": 194619
+    },
+    {
+      "rowId": "p77r30",
+      "printedPage": 77,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "4f6d204dc3526661f10287b1903e827c10f5337c7798d6cc6f7d387d3477b7a5",
+      "sourceCropBytes": 196491
+    },
+    {
+      "rowId": "p77r32",
+      "printedPage": 77,
+      "recordedFirstFailureReason": "ink-touches-vertical-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "f1892b44592fe49546375aceb047cb0bc4b0945920c9b1b7851ec1e15b15334b",
+      "sourceCropBytes": 125864
+    },
+    {
+      "rowId": "p78r02",
+      "printedPage": 78,
+      "recordedFirstFailureReason": "ink-touches-vertical-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "06659960f9dcb79202994ab6128079278fcf37fdeaf730697e3e004e3978dc1c",
+      "sourceCropBytes": 52281
+    },
+    {
+      "rowId": "p78r06",
+      "printedPage": 78,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 1,
+      "sourceCropSha256": "8e801e0569657eb35b49fe21847bf0bcc5d27a7bcb48d887e1ee1fc99af9e835",
+      "sourceCropBytes": 61935
+    },
+    {
+      "rowId": "p78r08",
+      "printedPage": 78,
+      "recordedFirstFailureReason": "ink-touches-vertical-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "2eb6c39a6eec26fe893dae0039d8c7296bc190230518594a859b75f6df7db098",
+      "sourceCropBytes": 105166
+    },
+    {
+      "rowId": "p78r09",
+      "printedPage": 78,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "d8e95f16ea9095569af9c269ce73411be8db68545bbc7ccebc81131672f5178a",
+      "sourceCropBytes": 87333
+    },
+    {
+      "rowId": "p78r10",
+      "printedPage": 78,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 1,
+      "sourceCropSha256": "58f55cefffa6e2bfa847c23e86d33ccbb99bc87cfdea3539b2f16cdb8b6843de",
+      "sourceCropBytes": 95385
+    },
+    {
+      "rowId": "p79r01",
+      "printedPage": 79,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "31d8743538b11a418cbeef13097fe0644a7e3e2fe8a17fcf06cae97154f39e72",
+      "sourceCropBytes": 83504
+    },
+    {
+      "rowId": "p79r02",
+      "printedPage": 79,
+      "recordedFirstFailureReason": "ink-touches-vertical-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "e4fa501d72034a445a015b41569b57f12778755a34e13cb6bd49a866164ee7b3",
+      "sourceCropBytes": 70779
+    },
+    {
+      "rowId": "p79r03",
+      "printedPage": 79,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 1,
+      "sourceCropSha256": "60e02ced1ad9b2d8d580c35d6bd66b9b86c657fd35e27757282c7faf30d4e4f8",
+      "sourceCropBytes": 107675
+    },
+    {
+      "rowId": "p79r05",
+      "printedPage": 79,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 1,
+      "sourceCropSha256": "4be5830fcb7de33fe3ecb6cc3c14e4435262287914845ebaae372dac2d44d2d9",
+      "sourceCropBytes": 79091
+    },
+    {
+      "rowId": "p79r06",
+      "printedPage": 79,
+      "recordedFirstFailureReason": "ink-touches-vertical-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "e96ec1491332bda2483a83a0de8696ef23606319743bbbcd4a486c8d2344fcb7",
+      "sourceCropBytes": 59255
+    },
+    {
+      "rowId": "p79r07",
+      "printedPage": 79,
+      "recordedFirstFailureReason": "ink-touches-vertical-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "15a69772b97e74ce45da462c5d33b7bb16ca034f8b77ea8a85e9e4b2e15dda58",
+      "sourceCropBytes": 54084
+    },
+    {
+      "rowId": "p79r16",
+      "printedPage": 79,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 1,
+      "sourceCropSha256": "72a6e75cd6a5a6238245fb4a7b4e242fc215d1cf6c0eae091efc6f0199292dfb",
+      "sourceCropBytes": 57344
+    },
+    {
+      "rowId": "p79r22",
+      "printedPage": 79,
+      "recordedFirstFailureReason": "ink-touches-vertical-region-boundary",
+      "standalonePunctuationCount": 0,
+      "sourceCropSha256": "0295242ad3c1ee87b8807e4cf7b75cac5ac1d325fa8cefee9f751f02eb2c3fb0",
+      "sourceCropBytes": 73180
+    },
+    {
+      "rowId": "p79r24",
+      "printedPage": 79,
+      "recordedFirstFailureReason": "ink-touches-word-region-boundary",
+      "standalonePunctuationCount": 2,
+      "sourceCropSha256": "67a30b64d5a577956c9650b0fa85ee8c990e1152dc8e3450f7d83f3831a6cb0f",
+      "sourceCropBytes": 77091
+    }
+  ],
+  "punctuationMetadata": {
+    "totalStandaloneTokens": 15,
+    "rowsContainingStandaloneTokens": 13,
+    "failedRowsContainingStandaloneTokens": 12,
+    "failedReasonForAll12": "ink-touches-word-region-boundary",
+    "all15BoxesCentersPolygonsNull": true,
+    "punctuationGlyphLocationsAlreadyFrozen": false,
+    "onlyPunctuationRowNotFailed": "p78r07",
+    "causalProofForAll12": false
+  },
+  "reviewProvenance": {
+    "pixelReview": {
+      "reviewerType": "One AI assistant",
+      "representativeNativeRowsViewed": 10,
+      "rowIds": [
+        "p75r03",
+        "p75r08",
+        "p77r05",
+        "p77r12",
+        "p75r09",
+        "p75r24",
+        "p76r08",
+        "p77r11",
+        "p78r02",
+        "p79r02"
+      ],
+      "newMasksOrMeasurements": false
+    },
+    "independentConfirmation": {
+      "reviewerType": "Separate AI assistant",
+      "scope": "Static code, saved guard metadata, source-geometry fields and38existing source-crop hashes only.",
+      "newPixelViews": 0,
+      "newInkOrGapMeasurements": 0
+    },
+    "noAll38CausalProof": true
+  },
+  "sourceFixtureVerification": {
+    "checkedCrops": 38,
+    "allBytePinsMatch": true,
+    "privateCachePathsOmitted": true
+  },
+  "sourceObservations": [
+    {
+      "rows": [
+        "p77r05",
+        "p77r12"
+      ],
+      "observed": "White letters on orange highlight within a dark page.",
+      "codeConnection": "Background maxRGB>170 selects black ink, so orange at the region edge can select the wrong polarity for white glyphs.",
+      "inferenceLimit": "No new mask was computed; saved no-robust-column/no-robust-row reasons corroborate a plausible detector issue but do not identify its first failing word."
+    },
+    {
+      "rows": [
+        "p75r09",
+        "p75r24",
+        "p76r08",
+        "p79r02",
+        "p77r11"
+      ],
+      "observed": "Inverse highlight blocks create white-on-black and black-on-white words, sometimes within one physical row.",
+      "codeConnection": "Per-region edge medians can straddle a highlight/background boundary; a per-page polarity override is insufficient.",
+      "inferenceLimit": "Source-supported risk, not a measured attribution for every boundary failure."
+    },
+    {
+      "rows": [
+        "p75r08"
+      ],
+      "observed": "Standalone long dashes lie between lexical words; those punctuation records have no frozen glyph boxes.",
+      "codeConnection": "Lexical-word midpoint regions can include/bisect punctuation not represented in the word population. Twelve of thirteen punctuation-bearing rows have horizontal-boundary failure.",
+      "inferenceLimit": "Correlation and visible contamination opportunity are not proof the dash was the first failing glyph."
+    },
+    {
+      "rows": [
+        "p75r03",
+        "p78r02",
+        "p79r02"
+      ],
+      "observed": "Large/bold/inverse type and deskewed row crops have tight vertical envelopes.",
+      "codeConnection": "Fixed2px glyph envelope clipped to all same-page row-center midpoints can reject source ink at boundaries; guard is conservative.",
+      "inferenceLimit": "Cannot select an effective replacement margin or certify a frame bug from existing receipts alone."
+    },
+    {
+      "rows": [
+        "p76r08"
+      ],
+      "observed": "A printed strike-through crosses part of the source row.",
+      "codeConnection": "Extra non-glyph ink can contaminate component/extents measurement; source occlusion cannot be guessed away.",
+      "inferenceLimit": "Any ambiguous glyph support must remain unknown; recovery of all38rows is not promised."
+    }
+  ],
+  "diagnosticLimits": [
+    "The frozen producer short-circuits on the first failing word and stores only rowId/reason.",
+    "Failed word ID/index, crop bounds, boundary side, actual polarity and occupancy/component trace are absent.",
+    "The 38first-error labels do not enumerate every failed word/guard in those rows.",
+    "Lexically complete OCR alignment/approximate word boxes do not certify glyph-tight ink containment.",
+    "Existing measurement/bit fields were not inspected, printed or used. Only saved guard/count metadata, source geometry and pixels were audited."
+  ],
+  "separateCorrection": {
+    "target": "analysis_outputs/continuation_20261110/batch20/G04/RESULT.md",
+    "oldArtifactsRewritten": false,
+    "clarification": "The frozen implementation constructs temporary measured-subset Bacon/ASCII decodes before incomplete-scope filtering. Zero retained/evaluated page/global decodes is established; zero internal decoding is not.",
+    "futureRunnerRequirement": "Check complete source coverage before any decoding in a separately registered repaired runner."
+  },
+  "recommendedSingleRepair": {
+    "name": "source-frozen glyph-support and polarity repair of the same interword-gap hypothesis",
+    "encodingUnchanged": [
+      "All142row IDs/order and1243lexical-word identities/order.",
+      "Consecutive lexical-word pair unit; do not skip dash-adjacent pairs.",
+      "Gap divided by row median; threshold strictly>1.5 with equality0.",
+      "Global/page scopes, assignments/orders/decoder phases and hard-invalid-group policy."
+    ],
+    "measurementChangesRequireSeparateRegistration": true,
+    "preservesOriginalMeasurementProtocolUnchanged": false,
+    "steps": [
+      "First preregister a bit-free diagnostic trace of the frozen detector: first failing word ID, source/crop bounds, boundary side and selected polarity/foreground evidence only, no gaps/bits/decodes.",
+      "Prepare one outcome-blind source fixture for all142rows/1243lexicalwords and15standalonepunctuationtokens: per-word foreground polarity plus glyph support, with separate intervening-punctuation/art support. Include already measured104rows rather than cherry-picking failures.",
+      "Independently source-proof all changed support/polarity annotations against the pinned PDF/row frame, retaining ambiguity/occlusion. Freeze fixture and detector before gap measurement.",
+      "Use one declared source-support detector; no tuning masks, thresholds, margins or annotations by produced bits/readability. Preserve boundary/ambiguity guards.",
+      "If any row remains unknown, keep affected page/global scope inconclusive; do not concatenate only successful rows or fill missing bits.",
+      "In any separately registered repaired runner, check complete source coverage before constructing decoded strings; never label discarded partial decoding as no decoding occurred."
+    ],
+    "sourceOnlyControls": [
+      "Mixed black/white glyphs on paper, black blocks and orange; within-row inverse transitions.",
+      "Standalone dash between lexical words with no lexical population change.",
+      "Large/descender glyph region touching a boundary must remain unknown.",
+      "Strike-through/graphic contamination or ambiguous support must not silently become a glyph."
+    ],
+    "interpretation": "A deterministic source-grounded repair is possible in principle without changing the encoding rule, but this audit does not establish that all38failed rows can be recovered or that old104measurements are independently accurate."
+  },
+  "supportFixturePopulation": {
+    "rows": 142,
+    "canonicalWhitespaceTokens": 1258,
+    "lexicalWords": 1243,
+    "standalonePunctuationTokens": 15,
+    "includesPreviouslyMeasured104Rows": true,
+    "outcomeBlind": true
+  },
+  "repairLimits": {
+    "sourcePolarityAndGlyphSupportChangeOriginalMeasurementRecipe": true,
+    "separateCorrectivePreregistrationRequired": true,
+    "sameEncodingRuleCanBeRetained": true,
+    "recoveryOfAll38Guaranteed": false,
+    "sourceInkStrikeThroughOcclusionOrAnnotationAmbiguityRetainedAsUnknown": true,
+    "originalG04RemainsInconclusive": true
+  },
+  "activity": {
+    "newPixelInkMeasurements": 0,
+    "gapRecomputations": 0,
+    "newGapBitsOrStreams": 0,
+    "candidateOrChecksumTests": 0,
+    "networkRequests": 0,
+    "publicEdits": 0,
+    "gitOperations": 0
+  },
+  "privacy": {
+    "rawStreamsBitsCandidatesOrKeysIncluded": false,
+    "privateCacheOrHomePathsIncluded": false,
+    "publicImagesCopied": true
+  },
+  "publicationCurationRecordedAtUTC": "2026-11-10T14:40:19.856Z",
+  "originalPublicSafeDraftSha256": "a8cbc0cb8d6ec1a2e133f071f959b8a6d7d817a638a80e6e0f347b627beca185",
+  "exhibits": [
+    {
+      "rowId": "p77r05",
+      "sha256": "5e2c36ead8df290ca6e2d2d7cd8eac0c628a2bf0fcdfc9fcc1b3dd47ce8dd089",
+      "bytes": 193700,
+      "png": {
+        "width": 2544,
+        "height": 58,
+        "bitDepth": 8,
+        "colorType": 2,
+        "compression": 0,
+        "filter": 0,
+        "interlace": 0
+      },
+      "metadataAudit": {
+        "chunkTypes": [
+          "IHDR",
+          "IDAT",
+          "IDAT",
+          "IDAT",
+          "IEND"
+        ],
+        "allCRCsValid": true,
+        "textOrEXIFOrProfileChunks": false,
+        "trailingBytes": 0
+      },
+      "rootVisualAndPrivacyReviewPending": false,
+      "copiedToPublic": true,
+      "pixelsModified": false,
+      "path": "exhibits/p77r05.png",
+      "rootVisualReview": "Root inspected this full native source strip; no operator annotation/identity recognized. Exact source pixels unchanged."
+    },
+    {
+      "rowId": "p75r08",
+      "sha256": "088cabeed3f38a783d0e892d1b7837ac2389959b96579bfaab7ed624e17688f4",
+      "bytes": 61743,
+      "png": {
+        "width": 2544,
+        "height": 58,
+        "bitDepth": 8,
+        "colorType": 2,
+        "compression": 0,
+        "filter": 0,
+        "interlace": 0
+      },
+      "metadataAudit": {
+        "chunkTypes": [
+          "IHDR",
+          "IDAT",
+          "IEND"
+        ],
+        "allCRCsValid": true,
+        "textOrEXIFOrProfileChunks": false,
+        "trailingBytes": 0
+      },
+      "rootVisualAndPrivacyReviewPending": false,
+      "copiedToPublic": true,
+      "pixelsModified": false,
+      "path": "exhibits/p75r08.png",
+      "rootVisualReview": "Root inspected this full native source strip; no operator annotation/identity recognized. Exact source pixels unchanged."
+    }
+  ],
+  "activityScope": "Original read-only audit; publication curation and byte-identical exhibit copies are recorded separately.",
+  "status": "source-measurement-coverage-audit-complete"
+}

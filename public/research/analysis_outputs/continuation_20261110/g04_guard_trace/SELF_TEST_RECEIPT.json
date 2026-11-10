@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "status": "PASS",
+  "completedAtUTC": "2026-11-10T14:46:54.365Z",
+  "scriptSHA256": "fdbcd1b94ea35476effbf7046d763e10c85b5e4001e42eca7933019cef620126",
+  "selfTest": {
+    "passed": true,
+    "syntheticAssertions": 14,
+    "targetSourceReads": 0,
+    "targetMeasurements": 0,
+    "gapCalculations": 0,
+    "gapBits": 0,
+    "decoders": 0,
+    "candidateChecks": 0,
+    "networkRequests": 0,
+    "controls": [
+      "ordinary-black/white",
+      "horizontal-and-vertical-first-guard",
+      "continue-after-first-failure",
+      "no-row/no-column",
+      "unrepaired-orange-polarity",
+      "scanline-polarity-runs",
+      "row-guard-null-word",
+      "baseline-mismatch",
+      "aggregate-no-identifiers"
+    ]
+  },
+  "additionalPreconditionRejections": 4,
+  "monitoredAudit": {
+    "targetInputOrLegacyModuleOpens": 0,
+    "subprocessAttempts": 0,
+    "networkAttempts": 0
+  },
+  "targetRunPerformed": false,
+  "targetTraceGenerated": false
+}

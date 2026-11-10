@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "batchId": "keiser-g04-guard-trace-20261110",
+  "registeredAtUTC": "2026-11-10T14:46:47.259Z",
+  "definition": {
+    "id": "g04-guard-trace",
+    "family": "source-measurement-diagnostic",
+    "branchId": "numbers-type",
+    "title": "Bit-free trace of the original G04 optical guards",
+    "sourcePaths": [
+      "magazine.pdf",
+      "sources/printed-lines.json",
+      "sources/word-geometry-20261110.json",
+      "analysis_outputs/continuation_20261110/batch20/G04/RESULT.json",
+      "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json"
+    ],
+    "implementationPaths": [
+      "scripts/batch20_geometry.py",
+      "scripts/g04_guard_trace.py"
+    ],
+    "protocolPath": "analysis_outputs/continuation_20261110/g04_guard_trace/PROTOCOL.json",
+    "population": {
+      "physicalRows": 142,
+      "lexicalWords": 1243,
+      "standalonePunctuationTokens": 15,
+      "allRowsIncluded": true,
+      "allLexicalWordRegionsRecorded": true
+    },
+    "recordedBaseline": {
+      "opticalFirstFailureRows": 38,
+      "rowsWithSavedGapMeasurements": 104,
+      "savedMeasuredGapCount": 811,
+      "completePages": 0,
+      "retainedDecodedStreams": 0,
+      "gapValuesNeverRecomputedByThisDiagnostic": true
+    },
+    "measurement": "Exact original ink_word_regions geometry, resampler, foreground and guard order; no repair. Original edge-background medians are retained for polarity; gap-row medians are not computed.",
+    "polarity": "selectedByOriginalRule only: scanline edge median maxRGB>170 selects black(maxRGB<130), otherwise white(minRGB>170 and spread<70). Not source ground truth.",
+    "guardOrder": {
+      "row": [
+        "incomplete-word-geometry",
+        "no-lexical-words",
+        "insufficient-vertical-glyph-region"
+      ],
+      "word": [
+        "nonpositive-word-region",
+        "no-robust-ink-rows",
+        "ink-touches-vertical-region-boundary",
+        "no-robust-ink-columns",
+        "ink-touches-word-region-boundary"
+      ]
+    },
+    "continuation": "After first word failure, continue every remaining lexical word only as counterfactual-after-first-word-failure. Earlier guard failures retain their baseline priority; later-stage column flags are diagnostic only.",
+    "rowGuardPolicy": "A pre-word-loop row guard has NULL failedWordID/index. Do not invent per-word pixel diagnostics after an invalid row envelope.",
+    "comparison": "Compare first optical failure or optical pass for all142 rows to the pinned original G04 RESULT. No post-span nonpositive-gap check is performed.",
+    "punctuation": "Report the15 pinned punctuation records and NULL boxes; do not locate, repair or assign glyphs.",
+    "caps": {
+      "sourceOrRegisteredBlobBytes": 20000000,
+      "protocolBytes": 1000000,
+      "physicalRows": 142,
+      "lexicalWords": 1243,
+      "punctuationTokens": 15,
+      "traceBytes": 24000000
+    },
+    "privateArtifacts": [
+      "TRACE.private.json"
+    ],
+    "safeResult": "Aggregate source/guard/continuation counts and integrity pins only; no row IDs, word IDs, coordinates, polarity runs or source text.",
+    "prohibited": {
+      "gapCalculation": false,
+      "gapRowMedians": false,
+      "gapBits": false,
+      "decoders": false,
+      "candidateOrFormatChecks": false,
+      "pixelOrCropOutputs": false,
+      "foregroundRepair": false,
+      "networkRequests": 0,
+      "walletOperations": 0
+    },
+    "limitations": [
+      "This is a diagnostic, not a puzzle/key result or repaired measurement.",
+      "Only first optical guards are comparable to the original short-circuit row receipt.",
+      "Continuation after failure and column flags after an earlier guard are counterfactual diagnostics.",
+      "No source support/polarity correction or downstream gap guard is tested."
+    ]
+  },
+  "sourceHashes": {
+    "magazine.pdf": "a30c61f8c49674afb7bccc6680d6477f6e919175386a2422de0a944db4e76c13",
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "sources/word-geometry-20261110.json": "e3348d0d60d3097b05d0afdb0a1fccf66409274408af9ae7a9369c37fe596e9f",
+    "analysis_outputs/continuation_20261110/batch20/G04/RESULT.json": "b3f920064b245c74cc0c1855ebd744b2d30f3c88a6ff50d89cc76c70a45185f4",
+    "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json": "e69215cd826a8fd63c588d5fe9295a71a1807278fd499b9a77cff119c48d4f53"
+  },
+  "scriptHashes": {
+    "scripts/batch20_geometry.py": "e7786acc472fa3f7a294fe6391e74bd6f8840017e30d9f54941544019dbafb9a",
+    "scripts/g04_guard_trace.py": "fdbcd1b94ea35476effbf7046d763e10c85b5e4001e42eca7933019cef620126"
+  },
+  "registrationPolicy": "The actual public Git commit containing this protocol and exact code/input blobs must be verified before target execution. This timestamp records protocol finalization, not proof of public registration."
+}

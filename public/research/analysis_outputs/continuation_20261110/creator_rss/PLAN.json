@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "screenId": "orange-pill-165-rss-clue-metadata",
+  "frozenAtUTC": "2026-11-10T14:00:49.066Z",
+  "source": {
+    "retainedRelativePath": "Not bundled; caller-supplied cached RSS verified by the declared SHA-256",
+    "sha256": "0e497db47f546759778ee26c249785de25bed82746f954cf31aed6ee0f9c7b06",
+    "bytes": 342832,
+    "expectedItems": 165,
+    "captureContext": "Already recovered June5,2023 RSS body; no refetch."
+  },
+  "fields": [
+    "title",
+    "description",
+    "content:encoded",
+    "itunes:summary",
+    "itunes:subtitle"
+  ],
+  "fieldNamespaces": {
+    "content": "http://purl.org/rss/1.0/modules/content/",
+    "itunes": "http://www.itunes.com/dtds/podcast-1.0.dtd"
+  },
+  "terms": [
+    "bitcoin magazine",
+    "george sand",
+    "hidden key",
+    "private key",
+    "mirror",
+    "20 btc",
+    "20 bitcoin",
+    "10 btc",
+    "10 bitcoin"
+  ],
+  "matching": "ASCII case-insensitive literal substring matching; no word boundaries, stemming, spelling correction or punctuation deletion. All occurrences of every term are retained, including plural/compound substrings that contain the exact literal.",
+  "htmlToText": "Parse each actual field occurrence locally with HTMLParser(convert_charrefs=True), discard markup/comments, retain all character data without script/style filtering, and insert whitespace at block/br boundaries; decode XML/HTML character references normally. Never fetch links/entities.",
+  "whitespace": "Collapse runs of whitespace to one U+0020 and trim outer whitespace only; no other Unicode or case normalization of stored text. Case insensitivity affects matching only.",
+  "population": "Every direct channel/item in stored order; require165. Search all occurrences of all5fields, including repeated field elements. Do not deduplicate items or fields.",
+  "contextRadiusCodepoints": 100,
+  "contextPolicy": "Fixed up-to100codepoints before/after each literal match. Save contexts privately, without semantic/promising-substring selection. Record observed hrefs from matching fields as source pointers only; do not follow.",
+  "coverage": "For each field, count present/missing item slots, empty/nonempty-after-text-conversion slots, total elements/empty elements. Preserve per-item field states and GUID, plus hit item title/pubDate/GUID and field occurrence identities.",
+  "prohibited": [
+    "network requests",
+    "media/audio requests",
+    "external profile or identity lookups",
+    "crypto/key/seed/address tests",
+    "wordlists",
+    "cipher transforms",
+    "word stemming or term expansion",
+    "public edits",
+    "Git actions"
+  ],
+  "scope": "Metadata index audit, not decoding or an independent theory. A zero for a term/field does not establish absence in audio, frames, item enclosures, feed history or creator history. Hits are context leads, not puzzle instructions.",
+  "publicationPort": {
+    "originalPlanSha256": "e59c0762492527701b5728f12f70db40b520c954621851f59dccf27aa11fdba7",
+    "publishedPortAtUTC": "2026-11-10T14:17:39.620Z",
+    "change": "Private cache path descriptor and unrelated operational privacy wording generalized. Terms, fields, matching, normalization, source pin and fixed context radius are unchanged."
+  }
+}

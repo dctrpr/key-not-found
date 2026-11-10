@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS-no-material-blocker",
+  "completedAtUTC": "2026-11-10T14:47:17.528Z",
+  "reviewedScriptSha256": "fdbcd1b94ea35476effbf7046d763e10c85b5e4001e42eca7933019cef620126",
+  "frozenReferenceScriptSha256": "e7786acc472fa3f7a294fe6391e74bd6f8840017e30d9f54941544019dbafb9a",
+  "scope": "Independent static and synthetic review only; no target trace or optical source run.",
+  "staticFindings": {
+    "originalGuardOrderPreserved": true,
+    "rotationEnvelopeResamplerAndForegroundRulePreserved": true,
+    "preLoopGuardsHaveNullFailedWord": true,
+    "actualInWordFailureCarriesWordID": true,
+    "laterWordsMarkedCounterfactual": true,
+    "columnsAfterEarlierInWordGuardMarkedCounterfactual": true,
+    "edgeBackgroundMediansOnlyNoGapRowMedians": true,
+    "noGapBitDecoderCandidateOrFormatPathInvoked": true,
+    "publicReceiptAggregateOnly": true,
+    "privateTraceContainsSourceLocatorsOnlyPrivately": true,
+    "freshOutputOutsideEntireSiteGuard": true,
+    "registeredSourceCodeProtocolByteGateRequired": true,
+    "baselineMismatchExplicitAndNoKeyNegative": true
+  },
+  "controls": {
+    "builtinSyntheticAssertions": 14,
+    "independentSyntheticFrozenOpticalGuardComparisons": 40,
+    "targetInputOpenAttempts": 0,
+    "subprocessAttempts": 0,
+    "networkAttempts": 0,
+    "referenceMethod": "AST-extracted frozen ink_word_regions/point_rotate/center only, injected NumPy/Pillow; no legacy module import or decoder invocation.",
+    "staticLegacyCodeReadBeforeControls": true,
+    "targetRunPerformed": false
+  },
+  "materialBlockers": [],
+  "limits": [
+    "No target inputs were opened or measured for this review. Runtime target scope/counts/baseline equality remain to be evaluated only after registration.",
+    "Synthetic equality demonstrates these40 cases plus static correspondence; it is not a formal proof over all rasters.",
+    "Original-polarity agreement is not source ground truth or repaired extraction."
+  ]
+}

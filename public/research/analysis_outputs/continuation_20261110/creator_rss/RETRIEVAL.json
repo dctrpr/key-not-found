@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "completedAtUTC": "2026-11-10T14:32:52.807Z",
+  "classification": "observed-public-source-availability-check",
+  "OP65GUID": "Buzzsprout-12498799",
+  "observedRSSDurationSeconds": 2706,
+  "observedRSSDeclaredAudioBytes": 32518756,
+  "declaredValuesMeasuredOrValidated": false,
+  "mediaRouteGETs": 4,
+  "archiveMetadataGETs": 2,
+  "attempts": [
+    {
+      "label": "RSS enclosure",
+      "startedAtUTC": "2026-11-10T13:44:37.371Z",
+      "completedAtUTC": "2026-11-10T13:44:55.107Z",
+      "initialObservedURL": "https://www.buzzsprout.com/1263314/12498799-orange-pill-op65-a-quantum-entanglement-with-a-bag-of-stones.mp3",
+      "explicitGETs": 2,
+      "redirectsFollowed": 1,
+      "retries": 0,
+      "requests": [
+        {
+          "requestedURL": "https://www.buzzsprout.com/1263314/12498799-orange-pill-op65-a-quantum-entanglement-with-a-bag-of-stones.mp3",
+          "status": 301,
+          "observedLocation": "https://www.buzzsprout.com/1263314/episodes/12498799-orange-pill-op65-a-quantum-entanglement-with-a-bag-of-stones.mp3",
+          "MIMEType": "text/html; charset=UTF-8",
+          "responseBytes": 0,
+          "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "audioSignatureRecognized": false
+        },
+        {
+          "requestedURL": "https://www.buzzsprout.com/1263314/episodes/12498799-orange-pill-op65-a-quantum-entanglement-with-a-bag-of-stones.mp3",
+          "status": 404,
+          "observedLocation": null,
+          "MIMEType": "text/html; charset=UTF-8",
+          "responseBytes": 2877,
+          "bodySha256": "7ea20e0030cd0cc3c6a4186f22541a0284df7d8317ebf3745f04a095fbe0d836",
+          "audioSignatureRecognized": false
+        }
+      ],
+      "audioRecovered": false,
+      "stoppedBeforeDuplicateFailedDestination": false,
+      "safeReceiptSha256": "9039aa1be6472aff3246c5b86f2feb08e32253082629c0c719b8c5d468d3f427"
+    },
+    {
+      "label": "Observed iVoox primary media route",
+      "startedAtUTC": "2026-11-10T13:53:08.854Z",
+      "completedAtUTC": "2026-11-10T13:53:31.304Z",
+      "initialObservedURL": "https://www.ivoox.com/listen_mn_105098854_1.mp3",
+      "explicitGETs": 1,
+      "redirectsFollowed": 0,
+      "retries": 0,
+      "requests": [
+        {
+          "requestedURL": "https://www.ivoox.com/listen_mn_105098854_1.mp3",
+          "status": 302,
+          "observedLocation": "https://www.buzzsprout.com/1263314/12498799-orange-pill-op65-a-quantum-entanglement-with-a-bag-of-stones.mp3",
+          "MIMEType": "text/html",
+          "responseBytes": 0,
+          "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "audioSignatureRecognized": false
+        }
+      ],
+      "audioRecovered": false,
+      "stoppedBeforeDuplicateFailedDestination": true,
+      "safeReceiptSha256": "c95963db6b713d13e43119d6488ff58a31b79e48e48b9d47ad15b8fa38ccd346"
+    },
+    {
+      "label": "Observed iVoox secondary download route",
+      "startedAtUTC": "2026-11-10T13:58:10.366Z",
+      "completedAtUTC": "2026-11-10T13:58:26.842Z",
+      "initialObservedURL": "https://www.ivoox.com/_md_105098854_wp_1.mp3",
+      "explicitGETs": 1,
+      "redirectsFollowed": 0,
+      "retries": 0,
+      "requests": [
+        {
+          "requestedURL": "https://www.ivoox.com/_md_105098854_wp_1.mp3",
+          "status": 302,
+          "observedLocation": "https://www.buzzsprout.com/1263314/12498799-orange-pill-op65-a-quantum-entanglement-with-a-bag-of-stones.mp3",
+          "MIMEType": "text/html",
+          "responseBytes": 0,
+          "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "audioSignatureRecognized": false
+        }
+      ],
+      "audioRecovered": false,
+      "stoppedBeforeDuplicateFailedDestination": true,
+      "safeReceiptSha256": "114100b09fbed3f53d1c28ab49bbbf3611ba464fa8e0677781493473a2d3e7d6"
+    }
+  ],
+  "archiveIndexes": [
+    {
+      "targetURL": "https://www.buzzsprout.com/1263314/episodes/12498799-orange-pill-op65-a-quantum-entanglement-with-a-bag-of-stones.mp3",
+      "requestedAtUTC": "2026-11-10T13:48:54.172Z",
+      "httpStatus": 200,
+      "rows": 0,
+      "status200Filter": true,
+      "timeBounds": null,
+      "collapse": "digest",
+      "limit": 3,
+      "responseSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "safeReceiptSha256": "be8470778c9f3d1e23ee280b04c8b431bcf0966b37aa2fa5c6af741fdc6cd1e7"
+    },
+    {
+      "targetURL": "https://www.buzzsprout.com/1263314/12498799-orange-pill-op65-a-quantum-entanglement-with-a-bag-of-stones.mp3",
+      "requestedAtUTC": "2026-11-10T14:06:14.950Z",
+      "httpStatus": 200,
+      "rows": 0,
+      "status200Filter": false,
+      "timeBounds": [
+        "20230323",
+        "20241231"
+      ],
+      "collapse": "digest",
+      "limit": 3,
+      "responseSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "safeReceiptSha256": "b28d3950fbbcb1a66ed0f04cebc77ef4b39d39574e45dd5c0d2a6b96db9060d0"
+    }
+  ],
+  "audioFilesRecovered": 0,
+  "audioDecoded": false,
+  "audioTranscribed": false,
+  "recordingDate": null,
+  "originalVideoURL": null,
+  "globalAudioOrArchiveAbsenceEstablished": false,
+  "limits": [
+    "Both iVoox endpoints were observed forwarders to the same known failed Buzzsprout route, not independent recovered copies.",
+    "No repeated request was sent to the already failed destination from those endpoints.",
+    "Each archive index nonmatch covers only its exact URL/filter/interval.",
+    "Availability is a dated observation, not proof of historical or global absence.",
+    "Only clean queryless public media URLs are retained; raw headers, tracking, private network data and page payloads are excluded."
+  ]
+}

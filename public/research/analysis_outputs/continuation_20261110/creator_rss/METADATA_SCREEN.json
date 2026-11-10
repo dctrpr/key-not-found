@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "classification": "offline-source-metadata-index-audit",
+  "startedAtUTC": "2026-11-10T14:02:34.973Z",
+  "completedAtUTC": "2026-11-10T14:02:34.992Z",
+  "source": {
+    "sha256": "0e497db47f546759778ee26c249785de25bed82746f954cf31aed6ee0f9c7b06",
+    "bytes": 342832,
+    "expectedItems": 165
+  },
+  "originalPlanSha256": "e59c0762492527701b5728f12f70db40b520c954621851f59dccf27aa11fdba7",
+  "originalScriptSha256": "b84ebb41942a8ff9306686f6402baed6345f72dfaeb943689b9d8b63673e0552",
+  "itemsScreened": 165,
+  "fieldCoverage": {
+    "title": {
+      "presentItems": 165,
+      "missingItems": 0,
+      "emptyItems": 0,
+      "nonemptyItems": 165,
+      "mixedItems": 0,
+      "elements": 165,
+      "emptyElements": 0
+    },
+    "description": {
+      "presentItems": 165,
+      "missingItems": 0,
+      "emptyItems": 1,
+      "nonemptyItems": 164,
+      "mixedItems": 0,
+      "elements": 165,
+      "emptyElements": 1
+    },
+    "content:encoded": {
+      "presentItems": 165,
+      "missingItems": 0,
+      "emptyItems": 1,
+      "nonemptyItems": 164,
+      "mixedItems": 0,
+      "elements": 165,
+      "emptyElements": 1
+    },
+    "itunes:summary": {
+      "presentItems": 0,
+      "missingItems": 165,
+      "emptyItems": 0,
+      "nonemptyItems": 0,
+      "mixedItems": 0,
+      "elements": 0,
+      "emptyElements": 0
+    },
+    "itunes:subtitle": {
+      "presentItems": 0,
+      "missingItems": 165,
+      "emptyItems": 0,
+      "nonemptyItems": 0,
+      "mixedItems": 0,
+      "elements": 0,
+      "emptyElements": 0
+    }
+  },
+  "counts": {
+    "itemsWithAnyHit": 4,
+    "hitFieldOccurrences": 8,
+    "literalOccurrences": 8,
+    "occurrencesByTerm": {
+      "bitcoin magazine": 2,
+      "george sand": 0,
+      "hidden key": 0,
+      "private key": 4,
+      "mirror": 2,
+      "20 btc": 0,
+      "20 bitcoin": 0,
+      "10 btc": 0,
+      "10 bitcoin": 0
+    },
+    "itemsByTerm": {
+      "bitcoin magazine": 1,
+      "george sand": 0,
+      "hidden key": 0,
+      "private key": 2,
+      "mirror": 1,
+      "20 btc": 0,
+      "20 bitcoin": 0,
+      "10 btc": 0,
+      "10 bitcoin": 0
+    },
+    "occurrencesByField": {
+      "title": 0,
+      "description": 4,
+      "content:encoded": 4,
+      "itunes:summary": 0,
+      "itunes:subtitle": 0
+    }
+  },
+  "hitItems": [
+    {
+      "guid": "Buzzsprout-11090511",
+      "title": "MAX & STACY REPORT [EP12] - El Salvador is Building",
+      "pubDate": "Sat, 06 Aug 2022 08:00:00 -0400",
+      "matchedTerms": [
+        "bitcoin magazine"
+      ],
+      "fieldOccurrenceCount": 2
+    },
+    {
+      "guid": "Buzzsprout-7212136",
+      "title": "Orange Pill [OP23] - Bitcoin Reveals the Fiat Dark Ages",
+      "pubDate": "Sun, 10 Jan 2021 06:00:00 -0500",
+      "matchedTerms": [
+        "mirror"
+      ],
+      "fieldOccurrenceCount": 2
+    },
+    {
+      "guid": "Buzzsprout-7034650",
+      "title": "Orange Pilled with Saifedean Ammous",
+      "pubDate": "Tue, 29 Dec 2020 20:00:00 -0500",
+      "matchedTerms": [
+        "private key"
+      ],
+      "fieldOccurrenceCount": 2
+    },
+    {
+      "guid": "Buzzsprout-7039330",
+      "title": "Orange Pill [OP21] - Ski Jumping with Bitcoin",
+      "pubDate": "Tue, 29 Dec 2020 06:00:00 -0500",
+      "matchedTerms": [
+        "private key"
+      ],
+      "fieldOccurrenceCount": 2
+    }
+  ],
+  "OP65DescriptionAndEncodedContentEmpty": true,
+  "metadataContextsPublished": false,
+  "rawMetadataFieldsPublished": false,
+  "formalMessageOrAudioExclusion": false,
+  "limitations": [
+    "Four matched items are context leads, not puzzle instructions.",
+    "Eight occurrences repeat text in description/content fields; they are not independent corroboration.",
+    "Only the nine declared literals and five fields were screened; audio, frames and other history were not."
+  ],
+  "activity": {
+    "networkRequests": 0,
+    "audioRequests": 0,
+    "keyOrCryptoChecks": 0,
+    "publicEdits": 0,
+    "gitActions": 0
+  }
+}
