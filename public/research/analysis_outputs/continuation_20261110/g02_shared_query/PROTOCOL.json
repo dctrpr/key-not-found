@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "testId": "g02-shared-query-sensitivity",
+  "frozenAtUTC": "2026-11-10T23:12:15.444Z",
+  "sourceHashes": {
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "sources/word-geometry-20261110.json": "e3348d0d60d3097b05d0afdb0a1fccf66409274408af9ae7a9369c37fe596e9f",
+    "analysis_outputs/continuation_20261110/g02_joint_color_audit/RESULT.json": "392903951d353d971258a578ac3b967a813e4b95a19e1991cb76d5e84ef7abe4",
+    "analysis_outputs/continuation_20261110/g02_joint_color_audit/MEMBERSHIP.json": "2c10b715873e50cb0911765d8e096cbc38094a43d8cb0aff6c9a7ea8caacca91",
+    "analysis_outputs/continuation_20261110/g02_joint_color_audit/INDEPENDENT_VERIFICATION.json": "59f3522d9525547dd83de6a48055922ec618e3ca6430e82eac980ca3f603e325",
+    "analysis_outputs/continuation_20261110/g02_joint_color_audit/REGISTRATION.json": "f703e4d79b8c675d532e5ae740bbcba4a448c26dbd3096f3c07859e453496024",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "analysis_outputs/3d_article_map/article_3d_map_data.json": "22c2285a6cd53f6bdda7bdd284d556c52ff55dea0a55cd1b549acbb81443eac3",
+    "analysis_outputs/continuation_20261109/inverted_duplex/inverted_duplex.json": "4d6d029bf5f7e90acfa1d456bc94e790913c7865b923c9367212c219867742f3",
+    "analysis_outputs/continuation_20261110/g02_shape_reachability/RESULT.json": "d71051ade8e74558c00528d2901717c957addd01f4a2c96f98e2dcac9c9d7791"
+  },
+  "scriptHashes": {
+    "scripts/batch20_geometry.py": "e7786acc472fa3f7a294fe6391e74bd6f8840017e30d9f54941544019dbafb9a",
+    "scripts/g02_joint_source_audit.py": "e6202356d52fd382189bc736b56df2552122c530d75196363921d37aaa7e619f",
+    "scripts/g02_reading_model.py": "af127f668c8638c302af101abf4aa7ec7106f8e77d39126e59cf12e55e08ef95",
+    "scripts/g02_shape_reachability.py": "c2e01adfa9bc740baaf216ebcc8ddc3d16037cf8257dfaa51419837865768fee",
+    "scripts/global_mirror_dag.py": "8134260ef4811830e5653a9d5294acec9b154eb9df3d11c9b558e50fe20ca12d",
+    "scripts/run_g02_shared_query.py": "a9460abd48e61bb560cf256e7336efb0962df538b60b2f6e5fb6868d4dcba5f6",
+    "scripts/verify_g02_shared_query.py": "cf09dd42f4fd3c190507933148423c2ca58fa05cab5153b4351d5e8726b44c1a"
+  },
+  "guardPx": 12,
+  "widthPx": 2544,
+  "pairBlocks": [
+    [
+      76,
+      77
+    ],
+    [
+      78,
+      79
+    ]
+  ],
+  "forwardTargetQueryOffset": "(-tx,+ty)",
+  "reverseTargetQueryOffset": "(-tx,-ty)",
+  "domain": "Closed square per block, independent combination of whole block masks.",
+  "conditionalQueryModelOnly": true,
+  "physicalDisplacementRangeMeasured": false,
+  "previousSyntaxPositiveLanguages": 8,
+  "maximumLeafCells": 100000,
+  "maximumVariableEvaluations": 5000000,
+  "maximumProjectedCharacters": 5000000,
+  "maximumIndependentLeafCells": 500000,
+  "maximumIndependentPairedMasks": 50000,
+  "syntheticControls": {
+    "primary": {
+      "syntheticControlsPassed": true,
+      "fragmentProductComparisons": 512,
+      "reciprocalCouplingControl": true,
+      "targetEvaluations": 0
+    },
+    "independent": {
+      "binaryEndpointControl": true,
+      "capsFailClosed": true,
+      "correlatedPairControl": true,
+      "halfGridCases": 152,
+      "matchingCompleteMasks": 51,
+      "passed": true,
+      "rejectedOverlapCases": 101,
+      "targetEvaluation": false,
+      "targetInputsRead": false
+    }
+  }
+}
