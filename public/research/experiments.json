@@ -585,7 +585,7 @@
       "kind": "method-test",
       "independentTheory": false,
       "scope": "G02: exact geometry/image procedure, sources and fixed parameters in GEOMETRY_PROTOCOL.json.",
-      "result": "Original G02 retained 0 complete readings. The registered source-only audit now maps all 962 frozen positions, preserving all 97 variable memberships. Two implementations agree across 12,560 partition points, with no unclassified position under the fixed model. Opposite-color has only eight global assignments; source-only has 2^59. No new reading or key check ran.",
+      "result": "The stencil model retains all 97 variable positions. Same-color and opposite-color selections admit none of the registered literal shapes. Eight one-sided reading languages admit Base58 syntax within the broader independent-position model. Neither AI reader recognized a second message in the complete opposite-color selections.",
       "evidence": [
         "analysis_outputs/continuation_20261110/batch20/G02/RESULT.md",
         "analysis_outputs/continuation_20261110/batch20/G02/RESULT.json",
@@ -593,16 +593,27 @@
         "analysis_outputs/continuation_20261110/g02_joint_color_audit/PROTOCOL.md",
         "analysis_outputs/continuation_20261110/g02_joint_color_audit/RESULT.md",
         "analysis_outputs/continuation_20261110/g02_joint_color_audit/RESULT.json",
-        "analysis_outputs/continuation_20261110/g02_joint_color_audit/INDEPENDENT_VERIFICATION.json"
+        "analysis_outputs/continuation_20261110/g02_joint_color_audit/INDEPENDENT_VERIFICATION.json",
+        "analysis_outputs/continuation_20261110/g02_opposite_reading/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/g02_opposite_reading/REGISTRATION.json",
+        "analysis_outputs/continuation_20261110/g02_opposite_reading/RESULT.md",
+        "analysis_outputs/continuation_20261110/g02_opposite_reading/RESULT.json",
+        "analysis_outputs/continuation_20261110/g02_shape_reachability/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/g02_shape_reachability/REGISTRATION.json",
+        "analysis_outputs/continuation_20261110/g02_shape_reachability/RESULT.md",
+        "analysis_outputs/continuation_20261110/g02_shape_reachability/RESULT.json"
       ],
       "reproduce": [
         "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_geometry.py --run G02 --protocol analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json --registration-commit 90ad1d694b0eb236494ae199b87de05db5e3d331 --out G02-rerun",
-        "Reconstruct the ordered source memberships with the two commands in the joint color audit result."
+        "Reconstruct the ordered source memberships with the two commands in the joint color audit result.",
+        "Run both registered opposite-color enumerators and compare their exact record digests using the reading review protocol.",
+        "Run the graph recognizer and its source-free controls using the literal shape protocol."
       ],
       "limitations": [
-        "Uses corrected physical pairs and actual printed masks, not old chosen-p76 phrase boxes.",
-        "Ambiguous target geometry/color is preserved and prevents a complete negative for affected readings.",
-        "The exact guard-square model overapproximates physical correlations. Source-model completion does not certify scan geometry or exclude the cipher."
+        "The model uses frozen word centers and printed masks on the four physical page pairs.",
+        "Independently optional positions include combinations that may be impossible under a common physical displacement.",
+        "Shape absence applies only to the pinned grammar and projections. Syntax matches establish grammar reachability only.",
+        "The opposite-color semantic review reports subjective recognition by two scope-aware AI readers."
       ]
     },
     {

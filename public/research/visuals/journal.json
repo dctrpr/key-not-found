@@ -778,6 +778,42 @@
       },
       "sceneNote": "Actual Issue 24 page 77. The mirror is an inspection aid; the report defines all four two-sided pairs.",
       "methodId": "batch20-g02"
+    },
+    {
+      "id": "g02-stencil-shape-reachability",
+      "completedAtUTC": "2026-11-10T22:55:23.561Z",
+      "title": "152 languages had no declared format pattern.",
+      "summary": "All 160 registered stencil languages completed. Exhaustive flat checks agreed for 72 of them.",
+      "result": "Eight languages admitted WIF or minikey syntax. No hex64 or BIP39 pattern appeared in the registered model. The run stopped at syntax.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Languages checked",
+          "value": 160,
+          "pointer": "/counts/completedDescriptors"
+        },
+        {
+          "label": "Flat cross-checks",
+          "value": 72,
+          "pointer": "/counts/flatCrossCheckedDescriptors"
+        },
+        {
+          "label": "Checksums run",
+          "value": 0,
+          "pointer": "/activity/checksums"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/g02_shape_reachability/RESULT.json",
+        "sha256": "d71051ade8e74558c00528d2901717c957addd01f4a2c96f98e2dcac9c9d7791"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/g02_shape_reachability/RESULT.md",
+      "scene": {
+        "layout": "mirror",
+        "page": 77
+      },
+      "sceneNote": "Actual Issue 24 page 77 in mirror view. The registered model covers four directed page pairs and their combined scope.",
+      "methodId": "batch20-g02"
     }
   ]
 }

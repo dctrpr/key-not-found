@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "testId": "g02-opposite-color-reading-review",
+  "caseStatus": "unsolved",
+  "completedAtUTC": "2026-11-10T22:52:10.367Z",
+  "classification": "whole-reading-semantic-review",
+  "outcome": "complete-subjective-nonrecognition-in-opposite-color-population",
+  "semanticReviewComplete": true,
+  "formalMessageExclusion": false,
+  "registrationCommit": "b47316566a1f92984e7615ef192187eb4ebfb057",
+  "registration": {
+    "path": "analysis_outputs/continuation_20261110/g02_opposite_reading/REGISTRATION.json",
+    "sha256": "0a9a012ab82261351b4804d182ba6b50f48719a5271db1443e9958506636d633"
+  },
+  "protocol": {
+    "path": "analysis_outputs/continuation_20261110/g02_opposite_reading/PROTOCOL.json",
+    "sha256": "55a4e1fbc21328f703a44b68c8d36a78b8d4392a053d15b196abeafeeef49da8"
+  },
+  "sourceModel": {
+    "path": "analysis_outputs/continuation_20261110/g02_joint_color_audit/RESULT.json",
+    "sha256": "392903951d353d971258a578ac3b967a813e4b95a19e1991cb76d5e84ef7abe4"
+  },
+  "scope": {
+    "selector": "opposite-color",
+    "scope": "global",
+    "pairs": [
+      [
+        76,
+        77
+      ],
+      [
+        77,
+        76
+      ],
+      [
+        78,
+        79
+      ],
+      [
+        79,
+        78
+      ]
+    ],
+    "requiredPositions": 0,
+    "optionalPositions": 3,
+    "orders": [
+      "forward",
+      "reverse"
+    ],
+    "projections": [
+      "words-spaced",
+      "words-joined",
+      "initials",
+      "finals"
+    ],
+    "pairLocalSelectionsCoveredByGlobalAssignments": true
+  },
+  "counts": {
+    "globalAssignments": 8,
+    "labeledReadings": 64,
+    "uniqueTexts": 41,
+    "emptyTexts": 1,
+    "codepointsPerReader": 272,
+    "utf8BytesPerReader": 272,
+    "readers": 2,
+    "readersRecognizingActionableInstruction": 0
+  },
+  "verification": {
+    "registeredCurrentPinsVerified": 9,
+    "independentImplementations": 2,
+    "orderedRecordsCompared": 64,
+    "inventoriesByteIdentical": true,
+    "independentSyntheticControlsPassed": true,
+    "reviewPacketPreservesAllLabelsExactlyOnce": true,
+    "exactUTF8GroupingMatchesBothInventories": true,
+    "bothReaderReceiptsMatchWholePacketDigest": true
+  },
+  "reviewers": [
+    {
+      "completedAtUTC": "2026-11-10T22:52:10.367Z",
+      "completeTextsRead": 41,
+      "aliasesCovered": 64,
+      "codepointsRead": 272,
+      "recognizedActionableInstruction": false,
+      "priorExposure": "Prepared the scope, source adapter and exact grouping. Knew the puzzle and earlier research."
+    },
+    {
+      "completedAtUTC": "2026-11-10T22:51:42.969794+00:00",
+      "completeTextsRead": 41,
+      "aliasesCovered": 64,
+      "codepointsRead": 272,
+      "recognizedActionableInstruction": false,
+      "priorExposure": "Knew the source model, test design and prior article material. Reports recording the judgment before seeing the other current judgment."
+    }
+  ],
+  "readerContextLimits": {
+    "bothKnewPuzzleAndScope": true,
+    "bothReadersAI": true,
+    "mutualJudgmentBlindingVerified": false,
+    "calibratedIndependenceEstablished": false
+  },
+  "interpretation": "Neither AI reader reported a coherent second message or a determinate next puzzle operation in any whole exact reading.",
+  "limits": [
+    "The two judgments are subjective and reflect the readers’ source and method exposure.",
+    "Independent per-word assignments bound the language under the frozen geometry. Physical realizability can impose additional correlations.",
+    "Other selectors, encodings and puzzle mechanisms remain open."
+  ],
+  "activity": {
+    "newGeometryFits": 0,
+    "keyOrFormatChecks": 0,
+    "derivations": 0,
+    "historyQueries": 0,
+    "walletActions": 0
+  }
+}

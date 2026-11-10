@@ -61,6 +61,27 @@ for (const entry of data.entries) {
     assert.equal(result.globalSelectors['opposite-color'].independentAssignmentUpperBound, '8');
     assert.equal(result.globalSelectors['source-only'].independentAssignmentUpperBound, '576460752303423488');
   }
+  if (entry.id === 'g02-stencil-shape-reachability') {
+    assert.equal(entry.diagram, 'funnel');
+    assert.equal(entry.methodId, 'batch20-g02');
+    assert.deepEqual(entry.scene, { layout: 'mirror', page: 77 });
+    assert.equal(result.testId, 'g02-stencil-literal-shape-reachability');
+    assert.equal(result.caseStatus, 'unsolved');
+    assert.deepEqual(result.counts, {
+      descriptors: 160, completedDescriptors: 160, cappedDescriptors: 0,
+      flatCrossCheckedDescriptors: 72, aliases: 240,
+    });
+    assert.deepEqual(result.activity, { checksums: 0, derivations: 0, historyQueries: 0, walletActions: 0 });
+    assert.equal(result.descriptors.length, 160);
+    assert.ok(result.descriptors.every(descriptor => descriptor.complete === true && descriptor.reason === null));
+    assert.equal(result.descriptors.filter(descriptor => descriptor.flatAgreement === true).length, 72);
+    const hasSyntax = (descriptor) => [...Object.values(descriptor.presence.wif),
+      ...Object.values(descriptor.presence.minikey)].some(value => value === true);
+    assert.equal(result.descriptors.filter(hasSyntax).length, 8);
+    assert.equal(result.descriptors.filter(descriptor => !hasSyntax(descriptor)).length, 152);
+    assert.ok(result.descriptors.every(({ presence }) => presence.hex64 === false &&
+      Object.values(presence.bip39).every(value => value === false)));
+  }
   if (entry.id === 't01-saved-reading-review-result') {
     assert.equal(entry.diagram, 'funnel');
     assert.equal(entry.methodId, 'batch20-t01');
