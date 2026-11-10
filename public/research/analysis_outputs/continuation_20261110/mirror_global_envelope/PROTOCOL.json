@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "batchId": "keiser-global-mirror-envelope-20261110",
+  "registeredAtUTC": "2026-11-10T07:17:18.991Z",
+  "test": {
+    "id": "mirror-global-envelope",
+    "title": "Global mirror boundary language audit",
+    "family": "mirror-firstword-global-uncertainty-envelope",
+    "branchId": "mirror-layout",
+    "inputPaths": [
+      "analysis_outputs/continuation_20261110/mirror_boundary_review/SOURCE_MODEL.json",
+      "sources/word-geometry-20261110.json",
+      "sources/printed-lines.json",
+      "analysis_outputs/3d_article_map/article_3d_map_data.json",
+      "analysis_outputs/continuation_20261109/inverted_duplex/inverted_duplex.json",
+      "scripts/batch20_support/english.txt",
+      "scripts/batch20_support/controls.json"
+    ],
+    "implementationPaths": [
+      "scripts/global_mirror_envelope.py",
+      "scripts/global_mirror_dag.py",
+      "scripts/batch20_common.py"
+    ],
+    "parameters": {
+      "pairOrder": [
+        [
+          76,
+          77
+        ],
+        [
+          77,
+          76
+        ],
+        [
+          78,
+          79
+        ],
+        [
+          79,
+          78
+        ]
+      ],
+      "sameColorAndEdgeAcrossPairs": true,
+      "maskClasses": [
+        "orange",
+        "black"
+      ],
+      "wordEdges": [
+        "leftmost",
+        "rightmost"
+      ],
+      "rowOrders": [
+        "forward",
+        "reverse-entire-concatenated-row-sequence"
+      ],
+      "projections": [
+        "words-spaced",
+        "words-joined",
+        "initials"
+      ],
+      "forms": [
+        "exact",
+        "whitespace-only-compacted"
+      ],
+      "formats": [
+        "wif",
+        "minikey",
+        "hex64",
+        "bip39"
+      ],
+      "sourceModel": "Exact frozen row word/omission choices in SOURCE_MODEL.json; no new geometry fit.",
+      "sourceModelChecks": "All 16 pair/color/edge scopes, printed row order, canonical word IDs, membership states and first/last options verified; masks retained as pinned provenance.",
+      "sourceTokenInvariant": "Every possible selected token must be a nonempty string, have an alphanumeric code point, and contain no Unicode whitespace; violation is inconclusive.",
+      "formLanguageReduction": "Compacted spaced equals joined; joined and initials contain no whitespace. Thus 24 language descriptors cover the exact/compact union. They need not be disjoint.",
+      "globalFamilies": 4,
+      "languageDescriptors": 24,
+      "globalSelectionPaths": 43347744,
+      "theoreticalLabeledReadings": 260086464,
+      "fullReadingExpansionPerformed": false,
+      "candidateSemantics": "Set union of reachable shaped records across all modeled paths/languages. No occurrence counts, unique-text counts or unique-form counts are claimed.",
+      "wifShape": "Embedded [5KL] plus Base58 characters, total 51/52.",
+      "minikeyShape": "Embedded S plus Base58 characters, total 22/30.",
+      "hexShape": "Exactly 64hex code points with realizable nonhex/start and nonhex/EOF boundaries.",
+      "bip39Tokenization": "Lowercase unfiltered ASCII lexical tokens matching [A-Za-z0-9]+ with internal straight/curly apostrophe joins; ordinary punctuation boundaries; invalid decoded group \u241e is a hard region boundary.",
+      "bip39Windows": [
+        12,
+        15,
+        18,
+        21,
+        24
+      ],
+      "maximumProductPrefixStateVisits": 2000000,
+      "maximumUniqueCandidateInsertions": 1000000,
+      "capPolicy": "Any cap exceedance makes scope incomplete and result inconclusive; partial candidates remain private and are separately assessed.",
+      "rawAsciiScalars": false,
+      "proseHashWrappers": false,
+      "networkQueries": 0,
+      "transactions": 0
+    },
+    "controls": [
+      "846-exact-synthetic-DAG-vs-exhaustive-candidate-set-comparisons",
+      "conditional-space-and-row-omission",
+      "reverse-entire-sequence",
+      "embedded-WIF-minikey",
+      "64hex-left-right-boundaries",
+      "BIP39-dictionary-prefix-vs-word",
+      "BIP39-apostrophe-lookahead-and-hard-barrier",
+      "state-cap-fails-inconclusive",
+      "candidate-cap-preserves-private-partial-set",
+      "source-option-structure",
+      "shared-format-controls"
+    ],
+    "negativeCriterion": "A complete zero-valid-record result excludes only the four declared literal formats from the exact registered global modeled language union at the pinned bytes. It does not calibrate scan errors, establish a creator-selected stencil, or exhaust mirror/first-word ciphers.",
+    "limitations": [
+      "The frozen source guard squares and rectangle masks are heuristic investigator conventions, not calibrated physical error bounds or creator instructions.",
+      "Independent memberships admit physically inconsistent choices. This enlarges the tested set; a weak checksum match has no implied intentionality or likelihood.",
+      "Results count unique shaped values and validated records, not expanded full readings, unique strings, occurrences or independent theories.",
+      "Other page orders, masks, selection conventions, projections, encodings and wallet interpretations remain outside this exact test."
+    ]
+  },
+  "sourceHashes": {
+    "analysis_outputs/continuation_20261110/mirror_boundary_review/SOURCE_MODEL.json": "8b378d6c88f4f132af9697482ef9e49024694791bccae87d4437c367091273e6",
+    "sources/word-geometry-20261110.json": "e3348d0d60d3097b05d0afdb0a1fccf66409274408af9ae7a9369c37fe596e9f",
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "analysis_outputs/3d_article_map/article_3d_map_data.json": "22c2285a6cd53f6bdda7bdd284d556c52ff55dea0a55cd1b549acbb81443eac3",
+    "analysis_outputs/continuation_20261109/inverted_duplex/inverted_duplex.json": "4d6d029bf5f7e90acfa1d456bc94e790913c7865b923c9367212c219867742f3",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b"
+  },
+  "scriptHashes": {
+    "scripts/global_mirror_envelope.py": "61538c617f74b9ab1dde922cd263e88436eb9ccc430b2072dcc003c49a50d712",
+    "scripts/global_mirror_dag.py": "8134260ef4811830e5653a9d5294acec9b154eb9df3d11c9b558e50fe20ca12d",
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d"
+  },
+  "candidatePrivacy": "Raw unique shaped values remain private until reviewed. Publish only safe domain-separated fingerprints for valid records. Candidate values are saved; path witnesses are not promised by this implementation. Any positive requires separate source/witness review. No wallet, derivation, network query or transaction.",
+  "independentReview": {
+    "syntheticExactSetComparisons": 1072,
+    "targetCandidateSearchPerformed": false,
+    "wrapperLifecycleCases": 6,
+    "pinsMandatory": 10,
+    "reviewScope": "Independent mathematical/static and exhaustive synthetic oracle/lifecycle checks; no target candidate-union or checksum test."
+  },
+  "accounting": "43,347,744 modeled source paths and 260,086,464 theoretical labeled readings describe the language. Neither is an executed full-string count. Only unique candidate sets, graph checks and resource visits are reported."
+}

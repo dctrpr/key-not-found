@@ -784,12 +784,16 @@
       "status": "in-progress",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "Exact candidate-union search over four-pair global concatenations under the frozen guard model; protocol/implementation in preparation.",
-      "result": "Synthetic algorithm verification is underway. No target shape or checksum result is claimed.",
+      "scope": "Registered exact candidate union across 24 graph languages representing the frozen four-pair global combinations. Four declared literal formats; fixed 2M state/1M candidate caps.",
+      "result": "Implementation and independent synthetic review complete. Protocol registered before target extraction; no target outcome yet.",
       "evidence": [
-        "analysis_outputs/continuation_20261110/mirror_global_envelope/PLAN.md"
+        "analysis_outputs/continuation_20261110/mirror_global_envelope/PLAN.md",
+        "analysis_outputs/continuation_20261110/mirror_global_envelope/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/mirror_global_envelope/PROTOCOL.json"
       ],
-      "reproduce": [],
+      "reproduce": [
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/global_mirror_envelope.py --self-test"
+      ],
       "limitations": [
         "Guard bounds and center/rectangle conventions are heuristic investigator assumptions.",
         "Global path counts are modeled combinations, not independent theories or completed key checks.",
