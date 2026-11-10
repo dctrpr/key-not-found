@@ -760,16 +760,17 @@
       "status": "in-progress",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "Source identity and faithful first-word reconstruction for printed pages 102\u2013104; key-validation protocol pending.",
-      "result": "All 114 leading-word objects independently reviewed. Full-line ends remain incomplete in 23 rows. First-word validation protocol is being prepared; no key result is claimed.",
+      "scope": "Registered first-word-derived readings from 113 reviewed text rows plus a separate STOP label; full-line OCR excluded.",
+      "result": "Source review complete. Fixed 39,744-reading procedure is registered before target validation; no result claimed.",
       "evidence": [
-        "sources/issue26/SOURCE_REGISTER.md",
-        "sources/issue26/provenance.json",
+        "analysis_outputs/continuation_20261110/issue26_firstwords/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/issue26_firstwords/PROTOCOL.json",
         "sources/issue26/README.md",
-        "sources/issue26/issue26-source.json",
-        "sources/issue26/SOURCE_CHECK.json"
+        "sources/issue26/issue26-source.json"
       ],
-      "reproduce": [],
+      "reproduce": [
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/issue26_firstword_probe.py --self-test"
+      ],
       "limitations": [
         "Candidate for the December plural-key claim, not an authenticated alternative 20-BTC target.",
         "Original PDF unavailable; retained JPEGs are the declared witnesses.",
