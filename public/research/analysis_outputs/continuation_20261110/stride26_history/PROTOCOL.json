@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "testId": "stride26-history",
+  "candidateLength": 26,
+  "candidateSelection": "The single unchanged26-character minikey positive in the registered combined validation artifact, identical in nominal and cached strict-known stride12 records. No edited candidates and no public candidate fingerprint.",
+  "sourceSurface": {
+    "requiresWhitespaceCompaction": true,
+    "presentInSavedStrictKnownCompactedForm": true,
+    "contiguousInAnyUnmodifiedOriginalReading": false,
+    "physicalPrintedKeyAuthenticated": false
+  },
+  "addressTypes": [
+    "P2PKH uncompressed",
+    "P2PKH compressed",
+    "P2SH-P2WPKH",
+    "P2WPKH",
+    "P2TR key-path with BIP341 TapTweak"
+  ],
+  "providers": [
+    "blockstream",
+    "mempool"
+  ],
+  "requestsMaximum": 10,
+  "concurrencyMaximum": 2,
+  "retries": 0,
+  "httpStatusRequired": 200,
+  "endpointPaths": [
+    "https://blockstream.info/api/address/:address",
+    "https://mempool.space/api/address/:address"
+  ],
+  "queryPolicy": "GET all five constructions at both fixed providers; exactHTTP200 required;20-second timeout, redirects rejected, no-cache/no-store. Validate matching address and all ten nonnegative safe integer statistics per response. Any failure/disagreement is inconclusive, never zero.",
+  "addressDerivationPolicy": "Require exact ordered Node/Python five-address agreement before requests. Standard ASCII minikey SHA256 scalar only inside the address helpers; no scalar output/identifier. P2TR even-Y x-only lift with BIP341 TapTweak, no script tree. No HD paths/passwords/script guessing.",
+  "zeroCriterion": "All ten attempts returnHTTP200 with valid, matching all-zero chain/mempool statistics at both providers for every construction, at recorded times only.",
+  "failurePolicy": "Any source/code/registration/control/input/derivation/request/statistics/provider failure is inconclusive. Any validated activity requires private review; never ownership/funding/prize authentication.",
+  "sourceHashes": {
+    "analysis_outputs/continuation_20261110/columns_compatibility/RESULT.json": "0f1d2cbac0695e1328e878b9e3e080479c6405a65ff82a5d51019543b133fe6d",
+    "analysis_outputs/continuation_20261110/columns_compatibility/SOURCE_WITNESS_REVIEW.json": "f61a514cf4c839574646a3c459032af91b8246e727006418c133e2d7f6ccef58",
+    "package-lock.json": "e2754b2bbb763bd18670735b4b317dd9235e34f1d961123dbe551603657551a8"
+  },
+  "scriptHashes": {
+    "scripts/check_stride26_lead.cjs": "eaf034349746fa9b823a9fdb560825ef9426e91cb48577261ac8f9d0f8aa8763",
+    "scripts/minikey26_address_audit.cjs": "a351e20f4bb5b9ab20fdd97dc07f8d87afe48962fb25dff20a008a56e83b7a64",
+    "scripts/independent_minikey26_addresses.py": "27f1de62281f4c4e43906acd65f9ae8fa6b264d5dc4cf54a3faf998719479ba8",
+    "scripts/check_minikey26_lead.cjs": "98146d0f97b359b5830991048974474290cac4f1cd97218986af9b334f744e44"
+  },
+  "dependencyVersions": {
+    "bitcoinjs-lib": "7.0.0",
+    "tiny-secp256k1": "2.2.4"
+  },
+  "controls": [
+    "Published30-character and Python scalar-one five-construction vectors",
+    "Synthetic26 Node/Python exact ordered address agreement",
+    "Synthetic frozen result/witness/single nominal=strict input guards",
+    "ActualGitcommit/current-byte/containment/private modes",
+    "Mock exactly10 attempts, concurrency2, no retries, exact200 policy, malformed/failed statistics",
+    "Explicit public allowlist omits raw value, fingerprint and address association"
+  ],
+  "publication": "Root verifies a separate public registration before target input, target scalar/address derivation or live requests. Fixed localGitcommit/current-byte checks are mandatory. Frozen historical scripts stay unchanged.",
+  "walletImports": 0,
+  "transactions": 0,
+  "limitations": [
+    "This is one weak8bit checksum lead, not creator intent or a solved puzzle.",
+    "The lead depends on a registered whitespace-compacted saved form; no unmodified original reading contains it contiguously and no printed key is demonstrated.",
+    "Strict-known refers to the declared source/projection flags, not fresh pixel proof or full physical-source certification.",
+    "Zero history would exclude only these five mainnet constructions according to two explorer operators at recorded times; other constructions/future funding remain outside scope.",
+    "No authenticated prize address is known; activity alone does not establish ownership or20BTC.",
+    "Python arithmetic is variable-time and memory clearing is best effort; raw scalar material is never persisted or used as an identifier."
+  ]
+}

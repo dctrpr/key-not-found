@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "reviewId": "stride26-history-independent-static-control-review",
+  "status": "PASS",
+  "passed": true,
+  "completedAtUTC": "2026-11-10T20:23:35.385209+00:00",
+  "reviewedScriptSha256": "eaf034349746fa9b823a9fdb560825ef9426e91cb48577261ac8f9d0f8aa8763",
+  "reviewedProtocolDraftSha256": "282aa6bfdff7366a132b5bd1b97e2c5576e47830dbf4ecf0191604475f6da411",
+  "sourcePins": {
+    "analysis_outputs/continuation_20261110/columns_compatibility/RESULT.json": "0f1d2cbac0695e1328e878b9e3e080479c6405a65ff82a5d51019543b133fe6d",
+    "analysis_outputs/continuation_20261110/columns_compatibility/SOURCE_WITNESS_REVIEW.json": "f61a514cf4c839574646a3c459032af91b8246e727006418c133e2d7f6ccef58",
+    "package-lock.json": "e2754b2bbb763bd18670735b4b317dd9235e34f1d961123dbe551603657551a8"
+  },
+  "scriptPins": {
+    "scripts/check_stride26_lead.cjs": "eaf034349746fa9b823a9fdb560825ef9426e91cb48577261ac8f9d0f8aa8763",
+    "scripts/minikey26_address_audit.cjs": "a351e20f4bb5b9ab20fdd97dc07f8d87afe48962fb25dff20a008a56e83b7a64",
+    "scripts/independent_minikey26_addresses.py": "27f1de62281f4c4e43906acd65f9ae8fa6b264d5dc4cf54a3faf998719479ba8",
+    "scripts/check_minikey26_lead.cjs": "98146d0f97b359b5830991048974474290cac4f1cd97218986af9b334f744e44"
+  },
+  "allSevenCurrentSourceAndCodePinsMatch": true,
+  "syntheticPeerReceiptSha256": "aac506717f63d147d5dd86587d2410eb220ccacbfdfd620e019923e50579c258",
+  "review": {
+    "full262LineAdapterRead": true,
+    "fullProtocolAndControlRunnerRead": true,
+    "sameSoleNominalStrictWholeRecordRequired": true,
+    "privateValidationWholeSHARequiredBeforeJSONParse": true,
+    "upstreamCompleteResultAndSafeSourceWitnessBound": true,
+    "exactThreeSourceFourCodePopulation": true,
+    "actualGitCommitTypeRequiredBeforeTarget": true,
+    "allRegisteredBlobsCurrentBytesComparedBeforeTarget": true,
+    "resolvedPublicContainmentRequired": true,
+    "privateOutsideEntireSiteAndNoPublicComponents": true,
+    "outputDirectories0700Files0600": true,
+    "bothFiveAddressVectorsAgreeBeforeFirstQuery": true,
+    "exactTenRequestsAtMostTwoWorkersNoRetry": true,
+    "newExactHTTP200PolicyEnforced": true,
+    "failedOrDisagreeingStatsNotAcceptedAsZero": true,
+    "publicConstructedAllowlistAndSyntheticOmissions": true,
+    "candidateValueFingerprintAddressesNotPublishedByAdapter": true,
+    "compactionDependentNotPrintedKeyLimitExplicit": true,
+    "strictKnownNotWholePhysicalSource": true,
+    "oldFrozenCodeUnchanged": true,
+    "noNewAddressMath": true
+  },
+  "sourceFreeControls": {
+    "adapterPositiveChecks": 24,
+    "rejectionGuards": 31,
+    "pythonChecks": 32,
+    "pythonControlSubprocesses": 2,
+    "injectedMockCallsObserved": 26,
+    "fullZeroScopeMockCalls": 10,
+    "non200ScopeMockCalls": 10,
+    "isolatedErrorMockCalls": 6,
+    "maximumObservedMockConcurrency": 2,
+    "mockRetries": 0,
+    "nodeTargetFileReads": 0,
+    "liveFetches": 0,
+    "unexpectedSubprocesses": 0,
+    "pythonInternalIOSeparatelyTraced": false
+  },
+  "reviewerActions": {
+    "newTargetLeadOrRawValidationReads": 0,
+    "targetChecksumCalls": 0,
+    "targetScalarAddressDerivations": 0,
+    "realNetworkRequests": 0,
+    "gitActions": 0,
+    "publicEdits": 0
+  },
+  "nonblockingNotes": [
+    "Private input guard rejects all group/other permissions but does not require exact owner-bit0600; expected actual input is0600. Outputs are explicitly0600 and parents/directories0700.",
+    "Fresh target execution and saved fullreceipt audit remain pending separate public registration/root authorization."
+  ],
+  "limitations": [
+    "Static and synthetic review is not evidence of any target history or source intention.",
+    "Existing Node/Python helper mathematics is reused unchanged; old classifier/publicSummary exports remain shared code.",
+    "Two pinned Python control invocations were allowed; their internal I/O was not separately traced by the control peer.",
+    "The post-run audit will compare saved vectors/tenproviderreceipts without targetlead reread, repeated derivation or new requests."
+  ],
+  "materialBlockers": []
+}

@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "status": "PASS",
+  "testId": "stride26-history-control-peer-review",
+  "completedAtUTC": "2026-11-10T20:22:36.133Z",
+  "scriptSha256": "eaf034349746fa9b823a9fdb560825ef9426e91cb48577261ac8f9d0f8aa8763",
+  "controlSourceSha256": "16231f249a0f7e71f3695bc559b9019ba3c2d268582af58a312b7fa48a799f2c",
+  "controls": {
+    "passed": true,
+    "checksPassed": 24,
+    "rejectedGuards": 31,
+    "independentPythonChecks": 32,
+    "controlAddressSets": 2,
+    "synthetic26NodePythonAgreement": true,
+    "mockRequestsAttempted": 10,
+    "mockConcurrencyMaximum": 2,
+    "non200PolicyTested": true,
+    "targetInputRead": false,
+    "targetDerivations": 0,
+    "liveRequests": 0,
+    "walletImports": 0,
+    "transactions": 0
+  },
+  "independentExternalMonitor": {
+    "targetFileReadAttempts": 0,
+    "liveFetchAttempts": 0,
+    "unexpectedSubprocessAttempts": 0,
+    "pythonSyntheticSubprocesses": 2,
+    "requestStatsCalls": 26,
+    "injectedMockFetchCalls": 26,
+    "maximumActiveRequestStats": 2
+  },
+  "checkedBehaviors": [
+    "Exactly ten attempts for a complete five-construction/two-provider mock scope, measured concurrency two",
+    "HTTP206 cannot produce a conclusive zero-history result",
+    "Six single-attempt failures: HTTP500, malformed JSON, wrong address, negative statistics, inconsistent zero statistics, timeout",
+    "No retries across 26 instrumented mock calls total; 10 success-scope +10 non200-scope +6 isolated failures",
+    "Nominal/strict unique-positive selection, source-surface flags and frozen artifact identities are guarded using synthetic records",
+    "Public safe-summary omits synthetic value, domain fingerprint and address association",
+    "Published30 and synthetic26 five-address Node/Python controls agree"
+  ],
+  "limits": [
+    "Source-free controls only: no target validation artifact, lead, scalar, derived address or history output was opened",
+    "Node workspace reads and fetches were monitored; Python invocation argv restricted to helper self-test or ephemeral synthetic fixtures, but Python internal I/O not separately instrumented",
+    "This is a synthetic/control review; envelope_review independently owns static/protocol review"
+  ]
+}

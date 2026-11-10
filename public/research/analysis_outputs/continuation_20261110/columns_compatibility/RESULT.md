@@ -34,6 +34,6 @@ Use the protocol commands with the full registration commit above and fresh 0700
 
 ## Next step and limits
 
-Review the one weak pass against the fixed source, then register any narrowly defined address derivation/history follow-up separately. **This experiment performed no scalar, seed, child-key or address derivation, network/history query, wallet import, signing or transaction.** Its positive value stays private.
+The saved-form source association is reviewed; any narrowly defined address derivation/history follow-up must be registered separately. **This experiment performed no scalar, seed, child-key or address derivation, network/history query, wallet import, signing or transaction.** Its positive value stays private.
 
 Funky issue/date and eligibility under the December plural-key claim remain unresolved. Censorship first-word coverage cannot settle blurred full-line endings. The Orange Party body and historical populations retain distinct source/model uncertainties. None replaces the Issue24 magazine photographed in the March 20-BTC announcement. Other encodings, readings and the puzzle remain open.

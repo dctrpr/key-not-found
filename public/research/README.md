@@ -1,6 +1,6 @@
 # KEY NOT FOUND — research corpus
 
-**Status: unsolved as of 10 November 2026.** No authenticated prize key or prize address has been established. The recorded weak checksum leads had zero reported history within their respective five-construction checks. Max Keiser’s 20 BTC statement remains a creator claim, not verified funding.
+**Status: unsolved as of 10 November 2026.** No authenticated prize key or prize address has been established. The earlier weak checksum leads that reached a history check had zero reported history within their respective five-construction scopes. Max Keiser’s 20 BTC statement remains a creator claim, not verified funding.
 
 This is a curated public copy of the Max Keiser / Bitcoin Magazine investigation. It contains the relevant source scans, public creator-post evidence, the exact 142-line body transcript, code, candidate data and bounded results. Contributor identities, private account context, local paths, private discussions and annotations have been removed. Original artwork and public creator credits remain as printed.
 

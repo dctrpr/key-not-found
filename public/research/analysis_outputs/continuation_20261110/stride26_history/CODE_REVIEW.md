@@ -1,0 +1,11 @@
+# Stride26 history adapter review
+
+**PASS for registration; no material blocker found.** Reviewed exact driver `eaf034349746fa9b823a9fdb560825ef9426e91cb48577261ac8f9d0f8aa8763` and protocol draft `282aa6bfdff7366a132b5bd1b97e2c5576e47830dbf4ecf0191604475f6da411`. All3 safe-source and4 code pins match current bytes. All262 driver lines, the protocol and guarded control runner were read.
+
+The complete private VALIDATION artifact is byte-pinned before parsing. Selection requires exactly the same sole full26 record in nominal and cached strict-known data; no public candidate fingerprint is introduced. The safe witness explicitly makes the lead whitespace-compaction-dependent, not a demonstrated contiguous printed key. Fixed public paths/containment, real Git commit/current=registered bytes and upstream complete result/witness checks precede target input. Node/Python must agree on all five typed addresses before any live request. The request scope is exactly10, at most2 active, no retry; the new driver explicitly rejects successful non200 responses before using the frozen classifier. Output construction omits raw candidate/fingerprint/addresses and retains the appropriate five-construction/time/source limits.
+
+Independent control peer passed24 positive checks/31 rejections/32 Python checks. Instrumentation saw26 injected mock requests:10 all-zero scope,10 non200 scope,6 isolated failures; maximum2 active and no retries. Node target reads/live fetch/unexpected processes were0. The only2 Python subprocesses were pinned public/synthetic controls; internal Python I/O was not separately traced. Peer receipt `aac506717f63d147d5dd86587d2410eb220ccacbfdfd620e019923e50579c258` is in the separate control-peer folder.
+
+One nonblocking precision: the existing private input mode guard rejects group/other permissions rather than literal owner-bit0600; the expected actual input is0600. Output files are explicitly0600 and directories/parents0700. This does not broaden public exposure.
+
+This review opened no new target lead/raw validation, derived no target scalar/address, made no request/Git action and changed no public file. Actual registered execution and the subsequent saved5-address/10-receipt audit remain pending. That audit will not reread the lead, repeat address derivation or requery explorers.
