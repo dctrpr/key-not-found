@@ -1,6 +1,6 @@
 # KEY NOT FOUND — research corpus
 
-**Status: unsolved as of 10 November 2026.** No authenticated prize key or prize address has been established. One weak minikey-checksum candidate is under review. Max Keiser’s 20 BTC statement remains a creator claim, not verified funding.
+**Status: unsolved as of 10 November 2026.** No authenticated prize key or prize address has been established. The latest checksum lead had zero reported history in five registered address constructions. Max Keiser’s 20 BTC statement remains a creator claim, not verified funding.
 
 This is a curated public copy of the Max Keiser / Bitcoin Magazine investigation. It contains the relevant source scans, public creator-post evidence, the exact 142-line body transcript, code, candidate data and bounded results. Contributor identities, private account context, local paths, private discussions and annotations have been removed. Original artwork and public creator credits remain as printed.
 
@@ -8,7 +8,9 @@ Start with [the method catalog](experiments.json), [creator clues](sources/creat
 
 ## Research is continuing
 
-The [global mirror-envelope result](analysis_outputs/continuation_20261110/mirror_global_envelope/RESULT.md) is a weak lead: all 24 registered language checks completed, and one of 382 distinct minikey-shaped strings passed the 30-character format’s 8-bit checksum. The value stays private during review. No authenticated solution or prize is established. The next step is a read-only history check under its own preregistered protocol, alongside source-witness review. No address/history queries or transactions have run at this checkpoint.
+The [global mirror-envelope result](analysis_outputs/continuation_20261110/mirror_global_envelope/RESULT.md) produced one weak 30-character minikey checksum pass among 382 shaped strings. Its [separately registered history follow-up](analysis_outputs/continuation_20261110/global_minikey_history/RESULT.md) is complete: independent Python/Node derivations agreed on five fixed mainnet address constructions, and two providers returned ten successful all-zero chain/mempool summaries at 2026-11-10T07:40:53–54Z. The candidate remains format-valid, but there is no evidence of a funded key through those constructions at those times. Other wallet constructions and the whole puzzle remain open. Raw candidate, scalar, source locators and address association stay private.
+
+Next research will check the original announcement context and close the saved Issue 27 stream-validator gap. These next steps are not claimed as completed tests.
 
 The earlier [pair-local mirror boundary envelope](analysis_outputs/continuation_20261110/mirror_boundary_review/RESULT.md) tested every registered pair-local alternative: 222 distinct shaped strings, zero valid minikeys. Global concatenations were outside that specific result and are covered by the separate global test above.
 

@@ -2,6 +2,20 @@
   "updatedOn": "2026-11-10",
   "updates": [
     {
+      "id": "global-minikey-history-result",
+      "date": "2026-11-10",
+      "completedAtUTC": "2026-11-10T07:40:54.968Z",
+      "category": "TESTED",
+      "title": "Five addresses. No history reported.",
+      "body": "The weak checksum lead was checked through five fixed mainnet address constructions. Python and Node agreed on all five; Blockstream and mempool.space returned 10/10 successful responses with all chain and mempool statistics zero. This covers only those constructions at the recorded check times. The checksum remains valid, while a funded-key interpretation in this scope has no supporting history. Other wallet constructions and the puzzle remain open.",
+      "evidence": "/research/analysis_outputs/continuation_20261110/global_minikey_history/RESULT.md",
+      "kind": "research",
+      "methodIds": [
+        "mirror-global-envelope"
+      ],
+      "branchId": "mirror-layout"
+    },
+    {
       "id": "mirror-global-envelope-result",
       "date": "2026-11-10",
       "completedAtUTC": "2026-11-10T07:18:12.995Z",

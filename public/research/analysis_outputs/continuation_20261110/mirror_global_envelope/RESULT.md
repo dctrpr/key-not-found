@@ -36,3 +36,10 @@ PYTHONDONTWRITEBYTECODE=1 python3 scripts/global_mirror_envelope.py --run --prot
 ```
 
 The run preserves raw candidates privately and emits safe domain-separated fingerprints. A cap, control, source/code pin or validation failure is inconclusive. This completed run is a weak checksum lead requiring further evidence and review.
+
+
+---
+
+## Follow-up — 2026-11-10T07:40:54.968Z
+
+The separately registered [five-construction history check](../global_minikey_history/RESULT.md) is complete. Python and Node agreed on all five derived addresses. Blockstream and mempool.space returned ten successful responses with all chain and mempool statistics zero. This supplies no evidence of a funded key through those five constructions at the recorded times. The checksum pass remains format-valid; other wallet constructions and the whole puzzle remain outside this scoped result. Raw candidate and address association stay private. The [original extraction result JSON](RESULT.json) is unchanged.

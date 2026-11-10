@@ -781,28 +781,33 @@
     {
       "id": "mirror-global-envelope",
       "title": "Global mirror boundary envelope",
-      "status": "partial",
+      "status": "tested",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "Complete candidate-set union across all 24 registered global graph languages representing 43,347,744 modeled selection paths. Four declared literal formats; full readings were not expanded.",
-      "result": "382 distinct minikey-shaped strings yielded one 30-character 8-bit checksum pass. No other declared format candidate. This is a weak lead under private review, not an authenticated solution or prize; no address/history query or transaction has run.",
+      "scope": "Complete candidate-set union over the 24 registered global languages and four literal formats; the sole checksum lead then checked through five fixed mainnet address constructions at two providers on 2026-11-10T07:40:53\u201354Z. Other wallet constructions remain outside scope.",
+      "result": "One 30-character minikey checksum pass remains format-valid. Independent Python/Node derivation agreed on five address constructions; all ten provider responses reported zero chain and mempool statistics. No evidence of a funded key within those registered constructions at check time; the puzzle remains unsolved.",
       "evidence": [
         "analysis_outputs/continuation_20261110/mirror_global_envelope/RESULT.md",
         "analysis_outputs/continuation_20261110/mirror_global_envelope/RESULT.json",
         "analysis_outputs/continuation_20261110/mirror_global_envelope/PROTOCOL.md",
         "analysis_outputs/continuation_20261110/mirror_global_envelope/PROTOCOL.json",
         "analysis_outputs/continuation_20261110/mirror_global_envelope/SOURCE_WITNESS_REVIEW.json",
-        "analysis_outputs/continuation_20261110/global_minikey_history/PROTOCOL.md"
+        "analysis_outputs/continuation_20261110/global_minikey_history/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/global_minikey_history/RESULT.md",
+        "analysis_outputs/continuation_20261110/global_minikey_history/RESULT.json",
+        "analysis_outputs/continuation_20261110/global_minikey_history/PROTOCOL.json"
       ],
       "reproduce": [
         "PYTHONDONTWRITEBYTECODE=1 python3 scripts/global_mirror_envelope.py --self-test",
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/global_mirror_envelope.py --run --protocol analysis_outputs/continuation_20261110/mirror_global_envelope/PROTOCOL.json --registration-commit 115f477f29fe7d57785276529026e92b8c9e49cb --out global-mirror-rerun"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/global_mirror_envelope.py --run --protocol analysis_outputs/continuation_20261110/mirror_global_envelope/PROTOCOL.json --registration-commit 115f477f29fe7d57785276529026e92b8c9e49cb --out global-mirror-rerun",
+        "node scripts/check_global_minikey_lead.cjs --self-test"
       ],
       "limitations": [
-        "An 8-bit minikey checksum is weak evidence; a rough random-checksum benchmark expects about 1.49 passes among 382 shaped strings.",
-        "Guard bounds, rectangle masks and center conventions are heuristic investigator assumptions; independent memberships may admit physically inconsistent paths.",
-        "No address/history query has run. Prize funding, ownership, creator intent remain unverified; the reconstructed modeled witness requires uncertain boundary choices.",
-        "Modeled path counts and graph-language descriptors are not expanded full-reading checks or independent theories."
+        "The single minikey remains format-valid; an 8-bit checksum pass among 382 shaped values is compatible with chance.",
+        "Zero history is limited to five registered mainnet address constructions, two explorer providers and recorded check times; it is not a full-node proof.",
+        "Other scripts, HD derivations, multisig constructions, encodings, page rules and future funding remain outside scope.",
+        "Guard bounds and source memberships are investigator assumptions. The matching modeled witness requires uncertain boundary choices and does not authenticate creator intent.",
+        "No authenticated prize address or solution has been established."
       ]
     }
   ],
