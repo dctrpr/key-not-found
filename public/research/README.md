@@ -1,10 +1,14 @@
 # KEY NOT FOUND — research corpus
 
-**Status: unsolved as of 9 November 2026.** No reproducible source-to-key extraction or authenticated prize address has been established. Max Keiser's20 BTC statement is a creator claim, not verified funding.
+**Status: unsolved as of 10 November 2026.** No reproducible source-to-key extraction or authenticated prize address has been established. Max Keiser's20 BTC statement is a creator claim, not verified funding.
 
 This is a curated public copy of the Max Keiser / Bitcoin Magazine investigation. It contains the relevant source scans, public creator-post evidence, the exact 142-line body transcript, code, candidate data and bounded results. Contributor identities, private account context, local paths, private discussions and annotations have been removed. Original artwork and public creator credits remain as printed.
 
 Start with [the method catalog](experiments.json), [creator clues](sources/creator-clues.json), [printed lines](sources/printed-lines.txt), and [source provenance](sources/provenance.json). [files.json](files.json) is the searchable file catalog; [SHA256SUMS](SHA256SUMS) authenticates the public files. [REPRODUCE.md](REPRODUCE.md) distinguishes reproducible current checks from historical analyses whose private or unavailable inputs were excluded.
+
+## Latest executed research
+
+[Twenty registered procedures](analysis_outputs/continuation_20261110/batch20/SUMMARY.md): fifteen scoped literal/code negatives, one failed alignment screen and four inconclusive procedures. Exact completion times, frozen protocols, source hashes, outputs, code and reproduction commands are public. Mirror-first word selection remains open because source-mask boundaries are uncertain. These are procedures, not independent theories or whole families exhausted.
 
 ## What changed in the latest review
 

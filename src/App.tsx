@@ -25,6 +25,7 @@ import PublicChat from "./components/PublicChat";
 import ResearchMapView from "./components/ResearchMap";
 import RepositoryActivity from "./components/RepositoryActivity";
 import ResearchFeed from "./components/ResearchFeed";
+import projectSnapshot from "../public/data/project.json";
 import useLiveResearch from "./hooks/useLiveResearch";
 import { followHashLinks } from "./lib/hashLinks";
 import { isActiveStatus, isOpenStatus } from "./lib/methodStatus";
@@ -113,8 +114,8 @@ const calmScroll = (): ScrollBehavior =>
     ? "auto"
     : "smooth";
 
-function useJson<T>(path: string) {
-  const [data, setData] = useState<T | null>(null);
+function useJson<T>(path: string, initialData: T | null = null) {
+  const [data, setData] = useState<T | null>(initialData);
   const [error, setError] = useState(false);
   useEffect(() => {
     const controller = new AbortController();
@@ -151,7 +152,7 @@ function SectionLabel({
 }
 
 function App() {
-  const project = useJson<Project>("/data/project.json");
+  const project = useJson<Project>("/data/project.json", projectSnapshot as Project);
   const updates = useJson<ResearchUpdates>("/data/updates.json");
   const ledger = useJson<ResearchLedger>("/research/experiments.json");
   const researchMap = useJson<ResearchMap>("/data/research-map.json");

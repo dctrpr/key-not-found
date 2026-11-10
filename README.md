@@ -4,6 +4,8 @@ The key is missing. The work is public.
 
 My independent investigation into the Bitcoin Magazine puzzle Max Keiser described in 2023. The files, tests and updates are public; help is optional. The puzzle is **unsolved**. The claimed 20 BTC has not been independently authenticated. This project is not affiliated with Max Keiser, Bitcoin Magazine, or Pump.fun.
 
+[Latest research: twenty registered procedures and their outcomes](public/research/analysis_outputs/continuation_20261110/batch20/SUMMARY.md). Fifteen scoped literal/code negatives, one failed alignment screen and four inconclusive procedures; the puzzle remains unsolved.
+
 ## Start here
 
 - [The film](https://keynotfound.com/#film): a 62-second explanation, with [reproducible source](scripts/explainer/README.md), captions and a transcript.
@@ -41,7 +43,7 @@ For the historical research environment, follow `public/research/REPRODUCE.md` f
 
 1. Add a redacted, reproducible report under `public/research/analysis_outputs/` and any portable script under `public/research/scripts/`.
 2. Add/update its method entry in `public/research/experiments.json`. Record the exact source unit, operation, expected output, outcome, and limitations.
-3. Add an honest field note to `public/data/updates.json` and update `public/data/project.json`'s date.
+3. Add a test-centered note with its actual `completedAtUTC` to `public/data/updates.json` and update `public/data/project.json`'s date.
 4. Run `npm run research:manifest`, `npm run audit:public`, and `npm run build`.
 5. Commit and push to `main` after review. GitHub checks audit and build every change. The map, method results and dated notes sync into the existing site periodically from that commit. Evidence links pin its GitHub revision. Deploy the reviewed commit for layout, funding configuration, scans, file-index or archive changes to publish those changes. Do not invent activity on days without new work.
 

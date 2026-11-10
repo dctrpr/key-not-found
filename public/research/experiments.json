@@ -671,17 +671,18 @@
     {
       "id": "batch20-g08",
       "title": "Literal machine-readable codes",
-      "status": "in-progress",
+      "status": "falsified",
       "kind": "method-test",
       "independentTheory": false,
       "scope": "G08: exact geometry/image procedure, sources and fixed parameters in GEOMETRY_PROTOCOL.json.",
-      "result": "Registered target execution is underway. No completed result claimed.",
+      "result": "All 384 fixed views were scanned for QR, DataMatrix, Aztec and Code128. 0 payload occurrences. All 16 planted barcode-control views passed. No detector-readable payload in this exact view set; damaged or other codes remain possible.",
       "evidence": [
-        "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/G08/RESULT.md",
+        "analysis_outputs/continuation_20261110/batch20/G08/RESULT.json",
         "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json"
       ],
       "reproduce": [
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_geometry.py --self-test"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_geometry.py --run G08 --protocol analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json --registration-commit 90ad1d694b0eb236494ae199b87de05db5e3d331 --out G08-rerun"
       ],
       "limitations": [
         "No explicit creator QR clue known. Nonstandard, damaged or artistic codes remain possible.",

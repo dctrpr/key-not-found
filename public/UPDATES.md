@@ -76,3 +76,9 @@ The embedded-minikey coverage audit checks a specific gap in the previous printe
 ### Completed result
 
 The preregistered scan found 17 alphabet/length-compatible occurrences, representing 12 distinct strings. All failed the minikey checksum. Node and an independent Python implementation agree. No target private-scalar derivation, address/API request, wallet action or transaction was needed. The ledger is now tested with a scoped negative result: no literal 22/30-character minikey in these exact 42 forms. The protocol commit and original older outputs remain available. No funded expense is claimed. Exact evidence: `public/research/analysis_outputs/continuation_20261110/minikey_windows/RESULT.md`.
+
+## 10 November 2026 — Twenty registered procedures
+
+Twenty additional research procedures were registered on GitHub before execution. Fifteen produced scoped literal/code negatives; one alignment screen failed its wrong-pair comparison; four remained inconclusive because source measurements were incomplete. None produced a valid private record. The mirror-first/first-word method remains open: only 12/120 readings were complete. The public summary links every exact result, source hash, output or replay descriptor, control and reproduction command at `research/analysis_outputs/continuation_20261110/batch20/SUMMARY.md`. No network query, wallet action, transaction or funded expense is claimed.
+
+The site now shows a compact chronological test feed. Each completed test has its actual UTC completion time and expandable result/evidence link. Older notes retain dates rather than invented times. Source/code pins and scoped outcomes are preserved on GitHub; the feed syncs accepted records every five minutes while open. The build also includes the reviewed project snapshot so token status does not briefly show an unlaunched default while the public data request loads.
