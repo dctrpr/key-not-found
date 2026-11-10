@@ -1,0 +1,592 @@
+{
+  "version": 1,
+  "batchId": "keiser-20261110-batch20",
+  "part": "text",
+  "registeredAtUTC": "2026-11-10T05:13:19.641Z",
+  "sourceHashes": {
+    "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.json": "1651a33dab46babf36f56439ddb409058cfa36712d96ead7d4200962b80817b9",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe"
+  },
+  "scriptHashes": {
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d",
+    "scripts/batch20_text.py": "dedd23de8dc8cd58d9dfd9916f1ecfabb1149d96b4c0b21c42ad47aae9b8f747"
+  },
+  "evaluation": {
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39"
+    ],
+    "forms": [
+      "exact",
+      "whitespace-only-compacted"
+    ],
+    "bip39": "Lowercase unfiltered lexical words; punctuation boundaries; invalid decoded group \u241e is a hard region boundary. Do not select only dictionary words.",
+    "hex": "Boundary-delimited 64hex scalars and SEC public keys.",
+    "noRaw32ASCII": true,
+    "noProseHashWrappers": true,
+    "noTransactions": true,
+    "networkQueries": 0,
+    "candidatePrivacy": "Hold raw streams private until review; publish only safe domain-separated fingerprints for valid private records. A valid record is a lead, not an authenticated prize."
+  },
+  "tests": [
+    {
+      "id": "T01",
+      "methodId": "batch20-t01",
+      "title": "Alternating direction on the actual printed lines",
+      "family": "faithful-boustrophedon",
+      "branchId": "text-lines",
+      "priority": "high",
+      "parameters": {
+        "formats": [
+          "wif",
+          "minikey",
+          "hex64",
+          "bip39"
+        ],
+        "forms": [
+          "exact",
+          "whitespace-only-compacted"
+        ],
+        "raw32AsciiScalars": false,
+        "hashWrappers": false,
+        "bip39Tokenization": "lowercase unfiltered lexical tokens; ordinary punctuation boundaries; invalid-group \u241e is a hard region boundary",
+        "hexMatching": "64hex scalar and SEC records require non-hex boundaries",
+        "units": [
+          "whole-body",
+          "each-page"
+        ],
+        "rowOrder": [
+          "forward",
+          "reverse"
+        ],
+        "reversedRowParity": [
+          0,
+          1
+        ],
+        "bodyParityReset": [
+          "global",
+          "page"
+        ],
+        "projections": [
+          "full_text",
+          "first_words",
+          "last_words",
+          "first_initials",
+          "first_finals",
+          "last_initials",
+          "last_finals"
+        ]
+      },
+      "inputPaths": [
+        "sources/printed-lines.json",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "controls": [
+        "synthetic alternating-row inversion",
+        "both parities and page-reset distinction"
+      ],
+      "negativeCriterion": "No valid declared literal record excludes only this exact extraction, source population and record-format scope; it does not exclude another cipher, format or selector.",
+      "limitations": [
+        "The older boustrophedon test used merged transcript lines; this is a corrected-source test.",
+        "Direction and parity variants are one procedure, not independent theories."
+      ]
+    },
+    {
+      "id": "T02",
+      "methodId": "batch20-t02",
+      "title": "Fixed interior columns of printed words and characters",
+      "family": "interior-column-null-cipher",
+      "branchId": "text-lines",
+      "priority": "medium",
+      "parameters": {
+        "formats": [
+          "wif",
+          "minikey",
+          "hex64",
+          "bip39"
+        ],
+        "forms": [
+          "exact",
+          "whitespace-only-compacted"
+        ],
+        "raw32AsciiScalars": false,
+        "hashWrappers": false,
+        "bip39Tokenization": "lowercase unfiltered lexical tokens; ordinary punctuation boundaries; invalid-group \u241e is a hard region boundary",
+        "hexMatching": "64hex scalar and SEC records require non-hex boundaries",
+        "units": [
+          "whole-body",
+          "each-page"
+        ],
+        "rowOrder": [
+          "forward",
+          "reverse"
+        ],
+        "sides": [
+          "left",
+          "right"
+        ],
+        "wordColumns": "k=2..min(20,shortest-row-token-count)",
+        "characterColumns": "k=2..min(80,shortest-exact-row-codepoint-count)",
+        "wordProjections": [
+          "words",
+          "initials",
+          "finals"
+        ],
+        "shortRowPolicy": "common rectangle only; never pad or omit rows"
+      },
+      "inputPaths": [
+        "sources/printed-lines.json",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "controls": [
+        "synthetic column2 fixture",
+        "left-right and row-order reversal"
+      ],
+      "negativeCriterion": "No valid declared literal record excludes only this exact extraction, source population and record-format scope; it does not exclude another cipher, format or selector.",
+      "limitations": [
+        "Interior columns extend the first-word clue but are not creator instructions.",
+        "Character columns are logical indices, not measured scan x coordinates."
+      ]
+    },
+    {
+      "id": "T03",
+      "methodId": "batch20-t03",
+      "title": "Mirror-axis centers of printed lines",
+      "family": "line-mesostics",
+      "branchId": "text-lines",
+      "priority": "exploratory",
+      "parameters": {
+        "formats": [
+          "wif",
+          "minikey",
+          "hex64",
+          "bip39"
+        ],
+        "forms": [
+          "exact",
+          "whitespace-only-compacted"
+        ],
+        "raw32AsciiScalars": false,
+        "hashWrappers": false,
+        "bip39Tokenization": "lowercase unfiltered lexical tokens; ordinary punctuation boundaries; invalid-group \u241e is a hard region boundary",
+        "hexMatching": "64hex scalar and SEC records require non-hex boundaries",
+        "units": [
+          "whole-body",
+          "each-page"
+        ],
+        "rowOrder": [
+          "forward",
+          "reverse"
+        ],
+        "centers": [
+          "floor((n-1)/2)",
+          "floor(n/2)"
+        ],
+        "surfaces": [
+          "exact-codepoints",
+          "ASCII-letters",
+          "lexical-words"
+        ],
+        "wordProjections": [
+          "words",
+          "initials",
+          "finals"
+        ],
+        "offsetFitting": false
+      },
+      "inputPaths": [
+        "sources/printed-lines.json",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "controls": [
+        "synthetic odd/even center positions",
+        "exact whitespace remains a source character"
+      ],
+      "negativeCriterion": "No valid declared literal record excludes only this exact extraction, source population and record-format scope; it does not exclude another cipher, format or selector.",
+      "limitations": [
+        "The center selector is an exploratory mirror hypothesis.",
+        "Logical centers are not physical page-fold intersections."
+      ]
+    },
+    {
+      "id": "T04",
+      "methodId": "batch20-t04",
+      "title": "Paragraph-boundary readings",
+      "family": "paragraph-edge-null-cipher",
+      "branchId": "text-lines",
+      "priority": "medium",
+      "parameters": {
+        "formats": [
+          "wif",
+          "minikey",
+          "hex64",
+          "bip39"
+        ],
+        "forms": [
+          "exact",
+          "whitespace-only-compacted"
+        ],
+        "raw32AsciiScalars": false,
+        "hashWrappers": false,
+        "bip39Tokenization": "lowercase unfiltered lexical tokens; ordinary punctuation boundaries; invalid-group \u241e is a hard region boundary",
+        "hexMatching": "64hex scalar and SEC records require non-hex boundaries",
+        "units": [
+          "whole-body",
+          "each-page"
+        ],
+        "groupBy": [
+          "page",
+          "paragraph"
+        ],
+        "mergeAcrossPage": false,
+        "phases": [
+          "all",
+          "odd",
+          "even"
+        ],
+        "groupOrder": [
+          "forward",
+          "reverse"
+        ],
+        "projections": [
+          "first_words",
+          "last_words",
+          "first_initials",
+          "first_finals",
+          "last_initials",
+          "last_finals",
+          "boundary_initial_pairs"
+        ]
+      },
+      "inputPaths": [
+        "sources/printed-lines.json",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "controls": [
+        "synthetic reflow-invariance",
+        "no merge across a page boundary"
+      ],
+      "negativeCriterion": "No valid declared literal record excludes only this exact extraction, source population and record-format scope; it does not exclude another cipher, format or selector.",
+      "limitations": [
+        "Paragraph IDs were visually reconstructed, not supplied by an authoritative manuscript.",
+        "The previous paragraph reset selected alternating lines rather than one word per paragraph."
+      ]
+    },
+    {
+      "id": "T05",
+      "methodId": "batch20-t05",
+      "title": "Sentence-boundary readings from the faithful body",
+      "family": "sentence-edge-null-cipher",
+      "branchId": "text-lines",
+      "priority": "medium",
+      "parameters": {
+        "formats": [
+          "wif",
+          "minikey",
+          "hex64",
+          "bip39"
+        ],
+        "forms": [
+          "exact",
+          "whitespace-only-compacted"
+        ],
+        "raw32AsciiScalars": false,
+        "hashWrappers": false,
+        "bip39Tokenization": "lowercase unfiltered lexical tokens; ordinary punctuation boundaries; invalid-group \u241e is a hard region boundary",
+        "hexMatching": "64hex scalar and SEC records require non-hex boundaries",
+        "units": [
+          "whole-body"
+        ],
+        "splitter": "published canonical splitter: protect U.K.; punctuation then whitespace and capital/digit",
+        "phases": [
+          "all",
+          "odd",
+          "even"
+        ],
+        "groupOrder": [
+          "forward",
+          "reverse"
+        ],
+        "projections": [
+          "first_words",
+          "last_words",
+          "first_initials",
+          "first_finals",
+          "last_initials",
+          "last_finals",
+          "boundary_initial_pairs"
+        ]
+      },
+      "inputPaths": [
+        "sources/printed-lines.json",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "controls": [
+        "U.K. and quoted-ending segmentation fixture",
+        "line-reflow invariance"
+      ],
+      "negativeCriterion": "No valid declared literal record excludes only this exact extraction, source population and record-format scope; it does not exclude another cipher, format or selector.",
+      "limitations": [
+        "Sentence segmentation is a declared inference; alternate segmentation is outside this test.",
+        "Older sentence audits only checked local instruction terms and did not validate full-body literal records."
+      ]
+    },
+    {
+      "id": "T06",
+      "methodId": "batch20-t06",
+      "title": "Visible capitalization as a data carrier",
+      "family": "capitalization-carrier",
+      "branchId": "text-lines",
+      "priority": "exploratory",
+      "parameters": {
+        "formats": [
+          "wif",
+          "minikey",
+          "hex64",
+          "bip39"
+        ],
+        "forms": [
+          "exact",
+          "whitespace-only-compacted"
+        ],
+        "raw32AsciiScalars": false,
+        "hashWrappers": false,
+        "bip39Tokenization": "lowercase unfiltered lexical tokens; ordinary punctuation boundaries; invalid-group \u241e is a hard region boundary",
+        "hexMatching": "64hex scalar and SEC records require non-hex boundaries",
+        "units": [
+          "whole-body",
+          "each-page"
+        ],
+        "literalCarriers": [
+          "uppercase-ASCII-letters",
+          "uppercase-whole-tokens-at-least2letters"
+        ],
+        "bitCarrier": "case of first alphabetic character in the first lexical word of each printed row",
+        "nonAlphabeticFirstWord": "barrier at original bit position; never drop",
+        "bitPolarity": [
+          "upper=1",
+          "upper=0"
+        ],
+        "bitOrder": [
+          "forward",
+          "reverse"
+        ],
+        "groupPhase": 0,
+        "decoders": [
+          "modern26-letter-Bacon5",
+          "ASCII8"
+        ],
+        "incompleteGroup": "record count; no padding",
+        "invalidGroup": "non-whitespace barrier"
+      },
+      "inputPaths": [
+        "sources/printed-lines.json",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "controls": [
+        "synthetic ASCII and Bacon case carriers",
+        "invalid groups and unpadded trailing bits"
+      ],
+      "negativeCriterion": "No valid declared literal record excludes only this exact extraction, source population and record-format scope; it does not exclude another cipher, format or selector.",
+      "limitations": [
+        "Grammar, ordinary capitalization and the all-caps paragraph are strong null explanations.",
+        "This uses visible case, not unreliable DOCM bold labels.",
+        "A positive requires source-crop verification of the precise case choices."
+      ]
+    },
+    {
+      "id": "T07",
+      "methodId": "batch20-t07",
+      "title": "Serialized extended private-key records",
+      "family": "extended-private-record-coverage",
+      "branchId": "sources",
+      "priority": "high",
+      "parameters": {
+        "formats": [
+          "extended_private"
+        ],
+        "sourcePopulation": "frozen-clean42forms",
+        "recordLength": 111,
+        "mainnetVersions": [
+          "0488ade4",
+          "049d7878",
+          "04b2430c",
+          "0295b005",
+          "02aa7a99"
+        ],
+        "validate": [
+          "canonicalBase58",
+          "Base58Check",
+          "78byte-payload",
+          "private-marker00",
+          "scalar-range",
+          "root-parent-child-zero-consistency"
+        ],
+        "deriveChildKeys": false
+      },
+      "inputPaths": [
+        "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.json",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "controls": [
+        "official BIP32 vector",
+        "all5SLIP132 version round-trips",
+        "illegal root-parent/marker/scalar/checksum"
+      ],
+      "negativeCriterion": "No valid declared literal record excludes only this exact extraction, source population and record-format scope; it does not exclude another cipher, format or selector.",
+      "limitations": [
+        "No extended-private format is specified by the creator.",
+        "A valid record is a private-review lead, not proof of the prize; no child path is guessed."
+      ]
+    },
+    {
+      "id": "T08",
+      "methodId": "batch20-t08",
+      "title": "BIP38 encrypted private-key records",
+      "family": "encrypted-private-record-coverage",
+      "branchId": "sources",
+      "priority": "high",
+      "parameters": {
+        "formats": [
+          "bip38"
+        ],
+        "sourcePopulation": "frozen-clean42forms",
+        "recordLength": 58,
+        "prefix": "6P",
+        "payloadPrefixes": [
+          "0142",
+          "0143"
+        ],
+        "flags0142": [
+          "c0",
+          "e0"
+        ],
+        "flags0143": [
+          "00",
+          "04",
+          "20",
+          "24"
+        ],
+        "payloadBytes": 39,
+        "passphraseGuesses": false,
+        "decrypt": false
+      },
+      "inputPaths": [
+        "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.json",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "controls": [
+        "official BIP38 vector",
+        "all registered structural flag combinations",
+        "reserved flags and checksum negatives"
+      ],
+      "negativeCriterion": "No valid declared literal record excludes only this exact extraction, source population and record-format scope; it does not exclude another cipher, format or selector.",
+      "limitations": [
+        "A structural encrypted record would require a separate passphrase/source lead.",
+        "No password guessing, decryption or spendable-secret claim is part of this test."
+      ]
+    },
+    {
+      "id": "T09",
+      "methodId": "batch20-t09",
+      "title": "Literal candidate funding addresses",
+      "family": "public-address-discovery",
+      "branchId": "sources",
+      "priority": "high",
+      "parameters": {
+        "formats": [
+          "address"
+        ],
+        "sourcePopulation": "frozen-clean42forms",
+        "legacyVersions": [
+          "00",
+          "05"
+        ],
+        "legacyLengths": [
+          26,
+          35
+        ],
+        "witness": {
+          "0": [
+            20,
+            32
+          ],
+          "1": [
+            32
+          ]
+        },
+        "hrp": "bc",
+        "uniformUppercaseAllowed": true,
+        "mixedCaseAllowed": false,
+        "maxBech32Length": 90,
+        "addressQueries": false
+      },
+      "inputPaths": [
+        "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.json",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "controls": [
+        "Base58Check address",
+        "official Bech32/Bech32m vectors",
+        "mixed case/padding/cross-checksum-version negatives"
+      ],
+      "negativeCriterion": "No valid declared literal record excludes only this exact extraction, source population and record-format scope; it does not exclude another cipher, format or selector.",
+      "limitations": [
+        "A valid or active address is not authenticated as Max Keiser's.",
+        "This is record discovery only; no network activity checks or private-key derivation occur."
+      ]
+    },
+    {
+      "id": "T10",
+      "methodId": "batch20-t10",
+      "title": "Literal SEC public keys and curve membership",
+      "family": "public-point-discovery",
+      "branchId": "sources",
+      "priority": "high",
+      "parameters": {
+        "formats": [
+          "sec_public"
+        ],
+        "sourcePopulation": "frozen-clean42forms",
+        "compressedPrefixes": [
+          "02",
+          "03"
+        ],
+        "compressedHexLength": 66,
+        "uncompressedPrefix": "04",
+        "uncompressedHexLength": 130,
+        "curve": "secp256k1",
+        "onCurveRequired": true,
+        "repairHex": false,
+        "deriveAddresses": false
+      },
+      "inputPaths": [
+        "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.json",
+        "scripts/batch20_support/english.txt",
+        "scripts/batch20_support/controls.json"
+      ],
+      "controls": [
+        "published generator in compressed/uncompressed form",
+        "x>=p and off-curve negatives"
+      ],
+      "negativeCriterion": "No valid declared literal record excludes only this exact extraction, source population and record-format scope; it does not exclude another cipher, format or selector.",
+      "limitations": [
+        "Curve membership has no embedded checksum and does not prove intentional encoding or ownership.",
+        "No private-key inversion, address derivation, network request or transaction occurs."
+      ]
+    }
+  ]
+}

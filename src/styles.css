@@ -986,15 +986,19 @@ pre {
   color: var(--on-ink);
 }
 .log-layout {
+  display: block;
+}
+.log-aside {
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: start;
-  gap: clamp(36px, 6vw, 100px);
+  gap: clamp(30px, 6vw, 100px);
+  margin-bottom: 40px;
 }
 .log-aside h2 > span {
   color: #8f8c81;
 }
-.log-aside > p {
+.log-intro > p {
   max-width: 44ch;
   margin-top: 18px;
   font-size: 15.5px;
@@ -1004,7 +1008,7 @@ pre {
   color: var(--on-ink-muted);
 }
 .standing {
-  margin: 30px 0 26px;
+  margin: 0;
   padding: 2px 0 4px 18px;
   border-left: 3px solid var(--lime);
 }
@@ -1038,10 +1042,51 @@ pre {
 .standing .text-link {
   margin-top: 12px;
 }
-.log-aside > .log-origin {
-  padding-top: 16px;
+.log-record-links {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 30px 70px;
+  margin-top: 40px;
+  padding-top: 24px;
   border-top: 1px solid var(--ink-line);
+}
+.log-origin {
+  max-width: 60ch;
   font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--on-ink-muted);
+}
+.log-record-links > .repository-activity {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+.log-sync {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+  margin-bottom: 22px;
+  font: 500 12px/1.5 var(--mono);
+  color: var(--on-ink-muted);
+}
+.log-sync > span {
+  color: var(--on-ink);
+}
+.log-sync > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+}
+.log-sync > a:hover {
+  color: var(--lime);
+}
+.log-sync > small {
+  margin-left: auto;
+  font-size: 12px;
+  color: #8f8c81;
 }
 .log-notes-head {
   display: flex;
@@ -2004,8 +2049,22 @@ pre {
     margin-left: 36px;
   }
   .log-layout,
+  .log-aside,
+  .log-record-links,
   .agent-layout {
     display: block;
+  }
+  .log-aside .standing {
+    margin-top: 26px;
+  }
+  .log-record-links > .repository-activity {
+    margin-top: 26px;
+    padding-top: 20px;
+    border-top: 1px solid var(--ink-line);
+  }
+  .log-sync > small {
+    flex-basis: 100%;
+    margin-left: 0;
   }
   .log-notes {
     margin-top: 40px;

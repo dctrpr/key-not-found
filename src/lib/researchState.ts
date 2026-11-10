@@ -20,7 +20,21 @@ export type ResearchUpdate = {
   kind?: "research" | "project";
   methodIds?: string[];
   branchId?: string;
+  completedAtUTC?: string;
 };
+
+/** Completion time orders same-day records; older date-only entries keep their order. */
+export function compareResearchUpdates(a: ResearchUpdate, b: ResearchUpdate) {
+  const day = b.date.localeCompare(a.date);
+  if (day) return day;
+  const kind = Number(a.kind === "project") - Number(b.kind === "project");
+  if (kind) return kind;
+  const completedTime = (entry: ResearchUpdate) => {
+    const parsed = entry.completedAtUTC ? Date.parse(entry.completedAtUTC) : NaN;
+    return Number.isFinite(parsed) ? parsed : -1;
+  };
+  return completedTime(b) - completedTime(a);
+}
 
 export type ResearchBranch = {
   id: string;

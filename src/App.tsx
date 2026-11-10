@@ -24,6 +24,7 @@ import ExplainerFilm from "./components/ExplainerFilm";
 import PublicChat from "./components/PublicChat";
 import ResearchMapView from "./components/ResearchMap";
 import RepositoryActivity from "./components/RepositoryActivity";
+import ResearchFeed from "./components/ResearchFeed";
 import useLiveResearch from "./hooks/useLiveResearch";
 import { followHashLinks } from "./lib/hashLinks";
 import { isActiveStatus, isOpenStatus } from "./lib/methodStatus";
@@ -33,6 +34,7 @@ import type {
   ResearchUpdate,
   ResearchUpdates,
 } from "./lib/researchState";
+import { compareResearchUpdates } from "./lib/researchState";
 
 type FileEntry = {
   path: string;
@@ -176,11 +178,7 @@ function App() {
   const repo = project.data?.repository || REPO;
   const updateEntries = useMemo(
     () =>
-      [...(currentUpdates?.updates || [])].sort(
-        (a, b) =>
-          b.date.localeCompare(a.date) ||
-          Number(a.kind === "project") - Number(b.kind === "project"),
-      ),
+      [...(currentUpdates?.updates || [])].sort(compareResearchUpdates),
     [currentUpdates],
   );
   const researchNotes = updateEntries.filter(
@@ -285,9 +283,9 @@ function App() {
       setShowProjectNotes(true);
       return;
     }
-    document
-      .getElementById("update-" + pendingUpdate)
-      ?.scrollIntoView({ behavior: calmScroll(), block: "start" });
+    const target = document.getElementById("update-" + pendingUpdate);
+    if (target instanceof HTMLDetailsElement) target.open = true;
+    target?.scrollIntoView({ behavior: calmScroll(), block: "start" });
     setPendingUpdate(null);
   }, [pendingUpdate, updateEntries, showProjectNotes]);
 
@@ -770,19 +768,22 @@ function App() {
         <section className="log-section" id="updates">
           <div className="section">
             <SectionLabel index="03" dark>
-              THE LOG
+              THE TEST LOG
             </SectionLabel>
             <div className="log-layout">
               <div className="log-aside">
-                <h2>
-                  What I tried.
-                  <br />
-                  <span>What comes next.</span>
-                </h2>
-                <p>
-                  Every result gets a dated note and a link to the evidence.
-                  Failed tests and corrections stay in the history.
-                </p>
+                <div className="log-intro">
+                  <h2>
+                    The tests.
+                    <br />
+                    <span>The results.</span>
+                  </h2>
+                  <p>
+                    Each entry records what was tested and what it found.
+                    Open a row for the evidence, limits and reproduction.
+                    Failed tests and corrections stay on record.
+                  </p>
+                </div>
                 <div className="standing">
                   <span className="map-label">THE CURRENT RECORD</span>
                   <strong>Still unsolved.</strong>
@@ -810,21 +811,46 @@ function App() {
                     See the open leads <ArrowUpRight size={16} />
                   </a>
                 </div>
-                <p className="log-origin">
-                  This public log opened{" "}
-                  {currentUpdates?.logOpenedOn
-                    ? dateLabel(currentUpdates.logOpenedOn)
-                    : "09 Nov 2026"}
-                  . Earlier work is preserved in the experiment ledger.
-                </p>
-                <RepositoryActivity repo={repo} />
               </div>
               <div className="log-notes" aria-label="Published update history">
+                <div className="log-sync" aria-live="polite">
+                  <span>
+                    {liveResearch.status === "verified"
+                      ? "Synced from GitHub"
+                      : liveResearch.status === "stale"
+                        ? "Last verified GitHub data"
+                        : liveResearch.status === "checking"
+                          ? "Checking GitHub…"
+                          : "Deployed snapshot"}
+                  </span>
+                  {liveResearch.checkedAt && (
+                    <time dateTime={liveResearch.checkedAt}>
+                      Checked{" "}
+                      {new Date(liveResearch.checkedAt).toLocaleTimeString("en-GB", {
+                        hour: "2-digit",
+                        minute: "2-digit",
+                        hourCycle: "h23",
+                        timeZone: "UTC",
+                      })}{" "}
+                      UTC
+                    </time>
+                  )}
+                  {liveResearch.sourceCommit && (
+                    <a
+                      href={repo + "/commit/" + liveResearch.sourceCommit}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {liveResearch.sourceCommit.slice(0, 7)} <ArrowUpRight size={12} />
+                    </a>
+                  )}
+                  <small>Checks every 5 minutes while open.</small>
+                </div>
                 <div className="log-notes-head">
                   <span>
                     {updateEntries.length
-                      ? `${researchNotes.length} RESEARCH ${researchNotes.length === 1 ? "NOTE" : "NOTES"}`
-                      : "RESEARCH NOTES"}
+                      ? `${researchNotes.length} RESEARCH ${researchNotes.length === 1 ? "RECORD" : "RECORDS"}`
+                      : "RESEARCH RECORDS"}
                   </span>
                   <span>
                     {currentUpdates?.updatedOn
@@ -832,7 +858,11 @@ function App() {
                       : ""}
                   </span>
                 </div>
-                {researchNotes.map(renderNote)}
+                <ResearchFeed
+                  entries={researchNotes}
+                  methods={currentLedger?.methods || []}
+                  evidenceLink={evidenceLink}
+                />
                 {updateEntries.length > 0 && !researchNotes.length && (
                   <p className="log-empty">
                     No research note has been published yet.
@@ -872,6 +902,18 @@ function App() {
                   See the full commit history <ArrowUpRight size={17} />
                 </a>
               </div>
+            </div>
+            <div className="log-record-links">
+              <p className="log-origin">
+                This public log opened{" "}
+                {currentUpdates?.logOpenedOn
+                  ? dateLabel(currentUpdates.logOpenedOn)
+                  : "09 Nov 2026"}
+                . Earlier work is preserved in the experiment ledger.
+                Completion times are shown in UTC; older entries keep their
+                recorded date.
+              </p>
+              <RepositoryActivity repo={repo} />
             </div>
           </div>
         </section>

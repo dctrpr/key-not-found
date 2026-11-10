@@ -299,6 +299,207 @@
         "Only the specified 22 readings and two minikey lengths; no extra text transformations.",
         "An 8-bit checksum pass alone is weak evidence; address activity needs independent review."
       ]
+    },
+    {
+      "id": "batch20-t01",
+      "title": "Alternating direction on the actual printed lines",
+      "status": "untested",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Registered T01; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
+      "result": "Protocol published; target execution pending. No result claimed.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
+      ],
+      "reproduce": [
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+      ],
+      "limitations": [
+        "The older boustrophedon test used merged transcript lines; this is a corrected-source test.",
+        "Direction and parity variants are one procedure, not independent theories."
+      ]
+    },
+    {
+      "id": "batch20-t02",
+      "title": "Fixed interior columns of printed words and characters",
+      "status": "untested",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Registered T02; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
+      "result": "Protocol published; target execution pending. No result claimed.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
+      ],
+      "reproduce": [
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+      ],
+      "limitations": [
+        "Interior columns extend the first-word clue but are not creator instructions.",
+        "Character columns are logical indices, not measured scan x coordinates."
+      ]
+    },
+    {
+      "id": "batch20-t03",
+      "title": "Mirror-axis centers of printed lines",
+      "status": "untested",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Registered T03; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
+      "result": "Protocol published; target execution pending. No result claimed.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
+      ],
+      "reproduce": [
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+      ],
+      "limitations": [
+        "The center selector is an exploratory mirror hypothesis.",
+        "Logical centers are not physical page-fold intersections."
+      ]
+    },
+    {
+      "id": "batch20-t04",
+      "title": "Paragraph-boundary readings",
+      "status": "untested",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Registered T04; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
+      "result": "Protocol published; target execution pending. No result claimed.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
+      ],
+      "reproduce": [
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+      ],
+      "limitations": [
+        "Paragraph IDs were visually reconstructed, not supplied by an authoritative manuscript.",
+        "The previous paragraph reset selected alternating lines rather than one word per paragraph."
+      ]
+    },
+    {
+      "id": "batch20-t05",
+      "title": "Sentence-boundary readings from the faithful body",
+      "status": "untested",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Registered T05; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
+      "result": "Protocol published; target execution pending. No result claimed.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
+      ],
+      "reproduce": [
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+      ],
+      "limitations": [
+        "Sentence segmentation is a declared inference; alternate segmentation is outside this test.",
+        "Older sentence audits only checked local instruction terms and did not validate full-body literal records."
+      ]
+    },
+    {
+      "id": "batch20-t06",
+      "title": "Visible capitalization as a data carrier",
+      "status": "untested",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Registered T06; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
+      "result": "Protocol published; target execution pending. No result claimed.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
+      ],
+      "reproduce": [
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+      ],
+      "limitations": [
+        "Grammar, ordinary capitalization and the all-caps paragraph are strong null explanations.",
+        "This uses visible case, not unreliable DOCM bold labels.",
+        "A positive requires source-crop verification of the precise case choices."
+      ]
+    },
+    {
+      "id": "batch20-t07",
+      "title": "Serialized extended private-key records",
+      "status": "untested",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Registered T07; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
+      "result": "Protocol published; target execution pending. No result claimed.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
+      ],
+      "reproduce": [
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+      ],
+      "limitations": [
+        "No extended-private format is specified by the creator.",
+        "A valid record is a private-review lead, not proof of the prize; no child path is guessed."
+      ]
+    },
+    {
+      "id": "batch20-t08",
+      "title": "BIP38 encrypted private-key records",
+      "status": "untested",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Registered T08; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
+      "result": "Protocol published; target execution pending. No result claimed.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
+      ],
+      "reproduce": [
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+      ],
+      "limitations": [
+        "A structural encrypted record would require a separate passphrase/source lead.",
+        "No password guessing, decryption or spendable-secret claim is part of this test."
+      ]
+    },
+    {
+      "id": "batch20-t09",
+      "title": "Literal candidate funding addresses",
+      "status": "untested",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Registered T09; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
+      "result": "Protocol published; target execution pending. No result claimed.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
+      ],
+      "reproduce": [
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+      ],
+      "limitations": [
+        "A valid or active address is not authenticated as Max Keiser's.",
+        "This is record discovery only; no network activity checks or private-key derivation occur."
+      ]
+    },
+    {
+      "id": "batch20-t10",
+      "title": "Literal SEC public keys and curve membership",
+      "status": "untested",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Registered T10; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
+      "result": "Protocol published; target execution pending. No result claimed.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
+      ],
+      "reproduce": [
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+      ],
+      "limitations": [
+        "Curve membership has no embedded checksum and does not prove intentional encoding or ownership.",
+        "No private-key inversion, address derivation, network request or transaction occurs."
+      ]
     }
   ],
   "countingPolicy": "This is a curated set of method families/source audits, not a total count of independent theories. Historical administrative gates and correlated variants are not counted as independent experiments. Falsified means only the concrete stated candidate/address scope.",

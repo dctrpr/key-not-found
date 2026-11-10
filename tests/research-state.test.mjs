@@ -5,6 +5,7 @@ import { GET } from "../api/research-state.ts";
 import {
   parseResearchData,
   parseVerifiedResearch,
+  compareResearchUpdates,
 } from "../src/lib/researchState.ts";
 
 const [ledger, updates, map] = await Promise.all(
@@ -65,6 +66,78 @@ test("validates optional update links against the same map and ledger", () => {
   );
   linked.updates[0].methodIds = ["invented-method"];
   assert.throws(() => parseResearchData(ledger, linked, map));
+});
+
+test("preserves precise UTC completion times without inventing older times", () => {
+  const timed = structuredClone(updates);
+  timed.updates[0].date = "2026-11-09";
+  timed.updates[0].completedAtUTC = "2026-11-09T18:20:30.123Z";
+  timed.updates[0].operatorTimezone = "private setting";
+  delete timed.updates[1].completedAtUTC;
+  const parsed = parseResearchData(ledger, timed, map).updates.updates;
+  assert.equal(parsed[0].completedAtUTC, "2026-11-09T18:20:30.123Z");
+  assert.equal("operatorTimezone" in parsed[0], false);
+  assert.equal("completedAtUTC" in parsed[1], false);
+  timed.updates[0].completedAtUTC = "2026-11-09T18:20:30Z";
+  assert.equal(
+    parseResearchData(ledger, timed, map).updates.updates[0].completedAtUTC,
+    "2026-11-09T18:20:30Z",
+  );
+});
+
+test("rejects malformed, mismatched or future research completion times", () => {
+  for (const completedAtUTC of [
+    "2026-11-09T18:20:30+00:00",
+    "2026-11-09T18:20:30",
+    "2026-11-09T18:20:30.123456Z",
+    "2026-11-09T25:20:30Z",
+    "2026-02-30T18:20:30Z",
+    "2026-11-10T18:20:30Z",
+    "yesterday",
+    "",
+    null,
+  ]) {
+    const malformed = structuredClone(updates);
+    malformed.updates[0].date = "2026-11-09";
+    malformed.updates[0].completedAtUTC = completedAtUTC;
+    assert.throws(
+      () => parseResearchData(ledger, malformed, map),
+      String(completedAtUTC),
+    );
+  }
+  const future = structuredClone(updates);
+  const stamp = new Date(Date.now() + 120_000).toISOString();
+  future.updates[0].date = stamp.slice(0, 10);
+  future.updates[0].completedAtUTC = stamp;
+  future.updatedOn = stamp.slice(0, 10);
+  assert.throws(() => parseResearchData(ledger, future, map));
+});
+
+test("test feed orders exact completion times and keeps legacy same-day order", () => {
+  const entry = updates.updates[0];
+  const make = (id, date, completedAtUTC, kind = "research") => ({
+    ...entry,
+    id,
+    date,
+    kind,
+    completedAtUTC,
+  });
+  const records = [
+    make("legacy-first", "2026-11-09"),
+    make("fractional", "2026-11-09", "2026-11-09T18:20:30.001Z"),
+    make("whole-second", "2026-11-09", "2026-11-09T18:20:30Z"),
+    make("legacy-second", "2026-11-09"),
+    make("next-day", "2026-11-10"),
+    make("project-note", "2026-11-09", "2026-11-09T23:00:00Z", "project"),
+  ];
+  assert.deepEqual(records.sort(compareResearchUpdates).map((record) => record.id), [
+    "next-day",
+    "fractional",
+    "whole-second",
+    "legacy-first",
+    "legacy-second",
+    "project-note",
+  ]);
 });
 
 test("verified data requires source SHA, a valid time, and unsolved case scope", () => {
