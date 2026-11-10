@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "batchId": "keiser-minikey26-original-compatibility-20261110",
+  "testId": "minikey26-original-compatibility",
+  "startedAtUTC": "2026-11-10T11:20:29.785Z",
+  "registrationCommit": "96e206c0a86d8b2b62b4cf323862d54934927929",
+  "scopeComplete": true,
+  "completeNegative": false,
+  "privateReviewRequired": true,
+  "candidateAssessment": "complete-for-saved-set",
+  "scalarDerivations": 0,
+  "addressDerivations": 0,
+  "networkAddressQueries": 0,
+  "transactions": 0,
+  "protocolSha256": "89b702e72d08aa4ea4ccd423f66409257d377a894e96bce0c791ff5fb11bb174",
+  "sourceHashes": {
+    "analysis_outputs/continuation_20261110/mirror_boundary_review/SOURCE_MODEL.json": "8b378d6c88f4f132af9697482ef9e49024694791bccae87d4437c367091273e6",
+    "sources/word-geometry-20261110.json": "e3348d0d60d3097b05d0afdb0a1fccf66409274408af9ae7a9369c37fe596e9f",
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "analysis_outputs/3d_article_map/article_3d_map_data.json": "22c2285a6cd53f6bdda7bdd284d556c52ff55dea0a55cd1b549acbb81443eac3",
+    "analysis_outputs/continuation_20261109/inverted_duplex/inverted_duplex.json": "4d6d029bf5f7e90acfa1d456bc94e790913c7865b923c9367212c219867742f3",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b",
+    "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.json": "1651a33dab46babf36f56439ddb409058cfa36712d96ead7d4200962b80817b9",
+    "analysis_outputs/continuation_20261110/minikey_windows/RESULT.json": "49cc574ebb4ae9276ae9fec357558cbab0daf6b495b5c55b8a468e7e41e1921f",
+    "analysis_outputs/continuation_20261110/mirror_global_envelope/RESULT.json": "e3c0aceba6eb16d862710f474a6433ea31628f0522e2dca214bfc8af20cf4f8c",
+    "analysis_outputs/continuation_20261110/minikey26_compatibility/HISTORICAL_SOURCE.json": "8f38c33fd22cb300615a43b6dcac466812cb9df9ddc787a21d757c94dff0e07d"
+  },
+  "scriptHashes": {
+    "scripts/minikey26_compatibility.py": "b76da0999516f068d0c97689b873d860b3735f33cb9a2060a1099b8c1d9673a5",
+    "scripts/minikey_window_audit.cjs": "189c6f359a057021adbc060ddeaa8caa29e6f58c40a6976daeda62025d2182f0",
+    "scripts/global_mirror_envelope.py": "61538c617f74b9ab1dde922cd263e88436eb9ccc430b2072dcc003c49a50d712",
+    "scripts/global_mirror_dag.py": "8134260ef4811830e5653a9d5294acec9b154eb9df3d11c9b558e50fe20ca12d",
+    "scripts/verify_minikey26_compatibility.py": "28f633569dae17ca7a486438e67f721972be7184510372b3ff3317a8e2b6d2c7"
+  },
+  "parameters": {
+    "lengths": [
+      26
+    ],
+    "alphabet": "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz",
+    "prefix": "S",
+    "checksum": "First byte of SHA256(ASCII(candidate + question-mark)) equals zero; no scalar derivation.",
+    "literalPopulation": {
+      "frozenStreams": 22,
+      "exactOrWhitespaceCompactedForms": 42,
+      "potentialPositionWindows26": 113662,
+      "wordOrCharacterTransformAdded": false
+    },
+    "globalPopulation": {
+      "globalFamilies": 4,
+      "languageDescriptors": 24,
+      "selectionPaths": 43347744,
+      "builder": "Unchanged checked_source_families and graph functions; unchanged pair, color, edge, row order, projection and omission choices.",
+      "candidateSemantics": "Unique reachable26-character shapes, not occurrences or expanded full-reading counts."
+    },
+    "maximumProductPrefixStateVisits": 2000000,
+    "maximumUniqueCandidateInsertions": 1000000,
+    "maximumLiteralPositions": 113662,
+    "maximumSourceBlobBytes": 20000000,
+    "maximumNodeBuilderOutputBytes": 2000000,
+    "networkAddressQueries": 0,
+    "scalarDerivations": 0,
+    "addressDerivations": 0,
+    "transactions": 0,
+    "automaticHistoryFollowup": false,
+    "rawArtifacts": [
+      "FORMS.private.json",
+      "CANDIDATES.private.json"
+    ],
+    "candidateFingerprint": "Existing batch20 domain-separated minikey fingerprint; never SHA256(candidate).",
+    "preflight": "Exact source/code/protocol byte-pin checks only; no target parsing, enumeration or checksum work."
+  },
+  "controls": {
+    "passed": true,
+    "syntheticDAGComparisons": 36,
+    "syntheticValid26": 1,
+    "syntheticInvalid26": 1,
+    "syntheticCapsRejected": 2,
+    "protocolDriftRejections": 5,
+    "targetSourcesParsed": false,
+    "target26ShapesEnumerated": 0,
+    "target26Checksums": 0,
+    "scalarDerivations": 0,
+    "addressDerivations": 0,
+    "networkAddressQueries": 0
+  },
+  "literalCounts": {
+    "frozenStreams": 22,
+    "uniqueForms": 42,
+    "positionWindows26": 113662,
+    "shapeCompatibleOccurrences": 9,
+    "uniqueShapes": 7
+  },
+  "languageChecks": [
+    {
+      "family": "orange:leftmost",
+      "rowOrder": "forward",
+      "projection": "words-spaced",
+      "complete": true,
+      "stateVisits": 0,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "orange:leftmost",
+      "rowOrder": "forward",
+      "projection": "words-joined",
+      "complete": true,
+      "stateVisits": 0,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "orange:leftmost",
+      "rowOrder": "forward",
+      "projection": "initials",
+      "complete": true,
+      "stateVisits": 0,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "orange:leftmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "words-spaced",
+      "complete": true,
+      "stateVisits": 0,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "orange:leftmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "words-joined",
+      "complete": true,
+      "stateVisits": 0,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "orange:leftmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "initials",
+      "complete": true,
+      "stateVisits": 0,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "orange:rightmost",
+      "rowOrder": "forward",
+      "projection": "words-spaced",
+      "complete": true,
+      "stateVisits": 0,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "orange:rightmost",
+      "rowOrder": "forward",
+      "projection": "words-joined",
+      "complete": true,
+      "stateVisits": 0,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "orange:rightmost",
+      "rowOrder": "forward",
+      "projection": "initials",
+      "complete": true,
+      "stateVisits": 0,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "orange:rightmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "words-spaced",
+      "complete": true,
+      "stateVisits": 0,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "orange:rightmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "words-joined",
+      "complete": true,
+      "stateVisits": 0,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "orange:rightmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "initials",
+      "complete": true,
+      "stateVisits": 0,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "black:leftmost",
+      "rowOrder": "forward",
+      "projection": "words-spaced",
+      "complete": true,
+      "stateVisits": 6,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "black:leftmost",
+      "rowOrder": "forward",
+      "projection": "words-joined",
+      "complete": true,
+      "stateVisits": 6,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "black:leftmost",
+      "rowOrder": "forward",
+      "projection": "initials",
+      "complete": true,
+      "stateVisits": 1,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "black:leftmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "words-spaced",
+      "complete": true,
+      "stateVisits": 6,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "black:leftmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "words-joined",
+      "complete": true,
+      "stateVisits": 1568,
+      "newUniqueShapes": 146
+    },
+    {
+      "family": "black:leftmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "initials",
+      "complete": true,
+      "stateVisits": 24909,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "black:rightmost",
+      "rowOrder": "forward",
+      "projection": "words-spaced",
+      "complete": true,
+      "stateVisits": 6,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "black:rightmost",
+      "rowOrder": "forward",
+      "projection": "words-joined",
+      "complete": true,
+      "stateVisits": 124,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "black:rightmost",
+      "rowOrder": "forward",
+      "projection": "initials",
+      "complete": true,
+      "stateVisits": 22,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "black:rightmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "words-spaced",
+      "complete": true,
+      "stateVisits": 6,
+      "newUniqueShapes": 0
+    },
+    {
+      "family": "black:rightmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "words-joined",
+      "complete": true,
+      "stateVisits": 457,
+      "newUniqueShapes": 54
+    },
+    {
+      "family": "black:rightmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "initials",
+      "complete": true,
+      "stateVisits": 12244,
+      "newUniqueShapes": 0
+    }
+  ],
+  "resourceCounts": {
+    "productPrefixStateVisits": 39355,
+    "globalUniqueCandidateInsertions": 200,
+    "stateCap": 2000000,
+    "candidateCap": 1000000
+  },
+  "evaluation": {
+    "lengths": [
+      26
+    ],
+    "uniqueShapeCount": 207,
+    "checksumValidCount": 1,
+    "checksumCalls": 207,
+    "hits": [
+      {
+        "format": "minikey",
+        "length": 26,
+        "checkBits": 8,
+        "fingerprint": "16a4c57bfd34fa3663560b3eb13ec981aed6df399d8d5701e69716cbe7c435c1",
+        "private": true
+      }
+    ],
+    "fingerprintRule": {
+      "algorithm": "SHA-256",
+      "domainText": "KEY404/batch20/record-fingerprint/v1",
+      "separatorHex": "00",
+      "rule": "SHA256(domain || 0x00 || ASCII(minikey) || 0x00 || ASCII(candidate))"
+    },
+    "privateReviewRequired": true
+  },
+  "cohortCounts": {
+    "literalUniqueShapes": 7,
+    "globalUniqueShapes": 200,
+    "combinedUniqueShapes": 207,
+    "overlap": 0
+  },
+  "outcome": "finding-private-review-required",
+  "completedAtUTC": "2026-11-10T11:20:30.256Z",
+  "negativeCriterion": "A complete zero excludes only historical26-character minikey compatibility in the declared frozen42-form and24-DAG populations. Existing22/30 results remain unchanged.",
+  "limitations": [
+    "Historical implementation support is not evidence that the creator used26 characters or that every specification requires26.",
+    "The eight-bit checksum is weak under repeated trials; a pass is private review, not puzzle authentication.",
+    "Global source membership/geometry conventions are investigator hypotheses, not calibrated physical bounds.",
+    "No new source reading, geometry, word filter, other length, scalar/address derivation, wallet action or network lookup is included."
+  ]
+}

@@ -224,6 +224,42 @@
       },
       "sceneNote": "Actual retained Orange Party scans. The row/token convention and uncertain prefixes are fixed in the linked evidence.",
       "methodId": "issue27-body-stride12"
+    },
+    {
+      "id": "minikey26-check",
+      "completedAtUTC": "2026-11-10T11:20:30.256Z",
+      "title": "The missing length. One weak hit.",
+      "summary": "Historical software accepted 26-character mini keys. The same 42 forms and 24 mirror language graphs were checked.",
+      "result": "One of 207 shaped strings passed an eight-bit checksum. Independent replay agreed; source and history review remain open.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Language graphs",
+          "value": 24,
+          "pointer": "/parameters/globalPopulation/languageDescriptors"
+        },
+        {
+          "label": "26-character shapes",
+          "value": 207,
+          "pointer": "/evaluation/uniqueShapeCount"
+        },
+        {
+          "label": "8-bit checksum pass",
+          "value": 1,
+          "pointer": "/evaluation/checksumValidCount"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/minikey26_compatibility/RESULT.json",
+        "sha256": "8eb395f125c9c8eb953ad0c6db8a2d662b517099fdc5763e5e69503918d2e30e"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/minikey26_compatibility/RESULT.md",
+      "scene": {
+        "layout": "mirror",
+        "page": 76
+      },
+      "sceneNote": "Original Issue 24 scans. The page view illustrates the source; it does not disclose or authenticate the checksum lead. The protocol fixes both populations.",
+      "methodId": "minikey26-original-compatibility"
     }
   ]
 }

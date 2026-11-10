@@ -1,6 +1,6 @@
 # KEY NOT FOUND — research corpus
 
-**Status: unsolved as of 10 November 2026.** No authenticated prize key or prize address has been established. The latest checksum lead had zero reported history in five registered address constructions. Max Keiser’s 20 BTC statement remains a creator claim, not verified funding.
+**Status: unsolved as of 10 November 2026.** No authenticated prize key or prize address has been established. Earlier 22/30-character leads had zero reported history in five registered address constructions; the new 26-character checksum lead awaits a separate check. Max Keiser’s 20 BTC statement remains a creator claim, not verified funding.
 
 This is a curated public copy of the Max Keiser / Bitcoin Magazine investigation. It contains the relevant source scans, public creator-post evidence, the exact 142-line body transcript, code, candidate data and bounded results. Contributor identities, private account context, local paths, private discussions and annotations have been removed. Original artwork and public creator credits remain as printed.
 
@@ -9,6 +9,8 @@ Start with [the method catalog](experiments.json), [creator clues](sources/creat
 The [visual lab and dated frames](VISUAL_GUIDE.md) make the source pages and completed tests inspectable on the site. Saved SVGs and scene data are included under `visuals/` for reuse in later research films.
 
 ## Research is continuing
+
+The [historical 26-character compatibility replay](analysis_outputs/continuation_20261110/minikey26_compatibility/RESULT.md) closes a checker-length gap over the same 42 original forms and 24 mirror language graphs: 207 distinct shaped strings, one weak checksum pass. Independent complete candidate-set replay agreed. No scalar, address or network lookup ran; separate source and history review is next.
 
 The [December recording reviews](analysis_outputs/continuation_20261110/creator_december/REPORT.md) cover every saved auto-caption cue in the December 23 and 28 episodes. No explicit puzzle-linked extraction rule was recognized. The first recording supplies a planned follow-up; date/theme correspondence with the second remains tentative. Audio and frames are unreviewed. The [original clue conversations](analysis_outputs/continuation_20261110/creator_post_context/REVIEW.md) are also readable through normal browser access; their bounded review adds no authenticated instruction or prize address.
 

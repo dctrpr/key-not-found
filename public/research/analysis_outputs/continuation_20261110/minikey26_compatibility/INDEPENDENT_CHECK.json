@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "passed": true,
+  "scopeComplete": true,
+  "networkQueries": 0,
+  "verifierSha256": "28f633569dae17ca7a486438e67f721972be7184510372b3ff3317a8e2b6d2c7",
+  "registrationCommit": "96e206c0a86d8b2b62b4cf323862d54934927929",
+  "protocolSha256": "89b702e72d08aa4ea4ccd423f66409257d377a894e96bce0c791ff5fb11bb174",
+  "fullPrivateCandidateSetsMatch": true,
+  "frozenFormsMatch": true,
+  "languageDescriptorsMatched": 24,
+  "literalCounts": {
+    "frozenStreams": 22,
+    "uniqueForms": 42,
+    "positionWindows26": 113662,
+    "shapeCompatibleOccurrences": 9,
+    "uniqueShapes": 7
+  },
+  "cohortCounts": {
+    "literalUniqueShapes": 7,
+    "globalUniqueShapes": 200,
+    "combinedUniqueShapes": 207,
+    "overlap": 0
+  },
+  "evaluation": {
+    "lengths": [
+      26
+    ],
+    "uniqueShapeCount": 207,
+    "checksumValidCount": 1,
+    "checksumCalls": 207,
+    "hits": [
+      {
+        "format": "minikey",
+        "length": 26,
+        "checkBits": 8,
+        "fingerprint": "16a4c57bfd34fa3663560b3eb13ec981aed6df399d8d5701e69716cbe7c435c1",
+        "private": true
+      }
+    ],
+    "fingerprintRule": {
+      "algorithm": "SHA-256",
+      "domainText": "KEY404/batch20/record-fingerprint/v1",
+      "separatorHex": "00",
+      "rule": "SHA256(domain || 0x00 || ASCII(minikey) || 0x00 || ASCII(candidate))"
+    },
+    "privateReviewRequired": true
+  },
+  "independentResources": {
+    "suffixMemoStates": 39727,
+    "suffixStringInsertions": 1683
+  },
+  "controls": {
+    "status": "PASS",
+    "syntheticDAGComparisons": 132,
+    "capGuards": 3,
+    "controls": [
+      "cross-branch",
+      "omission-conditional-space",
+      "reverse-whole-sequence",
+      "Unicode-codepoint-barriers",
+      "Base58-exclusions",
+      "26-only-positive-checksum",
+      "safe-domain-fingerprint"
+    ],
+    "targetInputsRead": false,
+    "target26Scans": 0,
+    "targetChecksumChecks": 0,
+    "networkQueries": 0
+  },
+  "scope": "Independent26-only fixed-cohort candidate sets and checksums; no downstream action or broader puzzle exclusion",
+  "completedAtUTC": "2026-11-10T11:21:04.217684+00:00"
+}

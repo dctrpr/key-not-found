@@ -884,19 +884,24 @@
     {
       "id": "minikey26-original-compatibility",
       "title": "The missing 26-character minikey length",
-      "status": "in-progress",
+      "status": "tested",
       "kind": "coverage-audit",
       "independentTheory": false,
       "scope": "The original 22 saved body readings/42 forms plus the unchanged 24 global mirror language graphs; only historical 26-character minikey compatibility.",
-      "result": "Prepared for public registration. New code and synthetic controls are being independently reviewed; no target 26-character scan has run at this checkpoint.",
+      "result": "All 42 frozen forms and 24 unchanged language graphs completed: 207 distinct 26-character shapes, one weak eight-bit checksum pass. Independent full candidate-set replay and Node crypto agreed. Source-witness/history follow-up remains open; no scalar/address/network work in this experiment.",
       "evidence": [
+        "analysis_outputs/continuation_20261110/minikey26_compatibility/RESULT.md",
+        "analysis_outputs/continuation_20261110/minikey26_compatibility/RESULT.json",
+        "analysis_outputs/continuation_20261110/minikey26_compatibility/INDEPENDENT_CHECK.json",
+        "analysis_outputs/continuation_20261110/minikey26_compatibility/NODE_CHECK.json",
         "analysis_outputs/continuation_20261110/minikey26_compatibility/PROTOCOL.md",
         "analysis_outputs/continuation_20261110/minikey26_compatibility/PROTOCOL.json",
         "analysis_outputs/continuation_20261110/minikey26_compatibility/HISTORICAL_SOURCE.json"
       ],
       "reproduce": [
         "python3 scripts/minikey26_compatibility.py --self-test",
-        "python3 scripts/verify_minikey26_compatibility.py --self-test"
+        "python3 scripts/verify_minikey26_compatibility.py --self-test",
+        "python3 scripts/minikey26_compatibility.py --run --protocol analysis_outputs/continuation_20261110/minikey26_compatibility/PROTOCOL.json --registration-commit 96e206c0a86d8b2b62b4cf323862d54934927929 --out /tmp/key404-26-replay"
       ],
       "limitations": [
         "Historical software compatibility is not evidence that the creator chose this length.",
