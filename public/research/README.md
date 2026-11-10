@@ -8,7 +8,7 @@ Start with [the method catalog](experiments.json), [creator clues](sources/creat
 
 ## Research is continuing
 
-The [pair-local mirror boundary envelope](analysis_outputs/continuation_20261110/mirror_boundary_review/RESULT.md) tested every registered modeled alternative: 222 distinct shaped strings, zero valid minikeys. Global concatenations remain outside that result. A new [Issue 26 first-word source branch](sources/issue26/SOURCE_REGISTER.md) has 114 visually reviewed leading-word objects and a matching publisher contents entry. Validation is being registered separately; unreadable full-line ends remain unknown.
+The [pair-local mirror boundary envelope](analysis_outputs/continuation_20261110/mirror_boundary_review/RESULT.md) tested every registered modeled alternative: 222 distinct shaped strings, zero valid minikeys. Global concatenations remain outside that result. A new [Issue 26 first-word source branch](sources/issue26/SOURCE_REGISTER.md) has 114 visually reviewed leading-word objects and a matching publisher contents entry. The [registered first-word result](analysis_outputs/continuation_20261110/issue26_firstwords/RESULT.md) rejected all 12 distinct format-shaped strings across 1,746 distinct forms. Unreadable full-line ends remain unknown. A global mirror-envelope search is now in preparation.
 
 ## Latest executed research
 

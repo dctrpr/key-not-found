@@ -86,3 +86,7 @@ The site now shows a compact chronological test feed. Each completed test has it
 ## 10 November 2026 — Research continues beyond the twenty-procedure batch
 
 The registered pair-local boundary envelope completed all 17,108 modeled paths and 102,648 correlated readings. All 222 distinct minikey-shaped strings failed the checksum; an independent saved-output audit agreed. Globals and other mirror rules remain outside the result. The retained Issue 26 body scans now have independently reviewed leading words and source-replay artifacts; first-word validation is being prepared. Gutter-blurred full-line endings are not guessed into an exclusion.
+
+## 10 November 2026 — Issue 26 first-word result; globals remain open
+
+The preregistered Issue 26 procedure completed 39,744 correlated first-word readings and 1,746 distinct forms. All two WIF-shaped and ten minikey-shaped distinct strings failed checksums; no other declared format candidate was present. An independent audit agreed. Its 23 obscured full-line endings remain outside scope. Work continues on an exact candidate-union search over the modeled global mirror combinations; no target global result is claimed yet.

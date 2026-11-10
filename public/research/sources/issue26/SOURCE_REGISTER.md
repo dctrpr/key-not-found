@@ -1,4 +1,4 @@
-# Issue 26 source branch — first-word source reviewed, validation pending
+# Issue 26 source branch — first-word source and scoped result
 
 The [official publisher contents](https://bitcoinmagazine.com/2022-censorship-resistant-issue) identifies a Q2 2022 issue and Keiser’s **Censorship, Dematerialization, and Bitcoin**, with the subtitle **Without Freaks, America Is Nothing**. This matches the retained printed page 102. The source therefore predates the creator’s December 2022 plural hidden-key claim. Its connection to that claim is a hypothesis; it is not a newly authenticated 20-BTC target.
 
@@ -12,4 +12,4 @@ The existing investigation used this comparison article for layout, artwork and 
 
 The canonical source will preserve printed column flow, body/display roles, capitalization, punctuation, genuine no-space forms and explicit unknowns. Header/footer/title/sidebar material will stay separately classified. No corrupted OCR token is silently repaired into a desired output.
 
-Source review is complete for the 113 text rows and separate STOP label; the validation protocol is being prepared. No candidate checksum, address query, wallet action or transaction on this article is claimed. Third-party magazine content retains its rights under the corpus DATA_LICENSE.
+Source review is complete for the 113 text rows and separate STOP label. The [registered first-word validation](../../analysis_outputs/continuation_20261110/issue26_firstwords/RESULT.md) also completed: all 12 distinct WIF/minikey-shaped strings failed checksums. This is a scoped first-word negative; full-line endings remain outside it. No candidate checksum, address query, wallet action or transaction on this article is claimed. Third-party magazine content retains its rights under the corpus DATA_LICENSE.

@@ -757,24 +757,43 @@
     {
       "id": "issue26-first-words",
       "title": "Issue 26 faithful printed first words",
-      "status": "in-progress",
+      "status": "falsified",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "Registered first-word-derived readings from 113 reviewed text rows plus a separate STOP label; full-line OCR excluded.",
-      "result": "Source review complete. Fixed 39,744-reading procedure is registered before target validation; no result claimed.",
+      "scope": "113 text rows plus STOP; 39,744 correlated readings; 1,746 distinct forms; eight declared record formats. Full-line OCR excluded.",
+      "result": "Two WIF-shaped and ten minikey-shaped distinct strings all failed checksums. No other declared format candidate. Independent saved-output audit agreed; this is a scoped first-word negative.",
       "evidence": [
-        "analysis_outputs/continuation_20261110/issue26_firstwords/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/issue26_firstwords/RESULT.md",
+        "analysis_outputs/continuation_20261110/issue26_firstwords/RESULT.json",
+        "analysis_outputs/continuation_20261110/issue26_firstwords/INDEPENDENT_CHECK.json",
         "analysis_outputs/continuation_20261110/issue26_firstwords/PROTOCOL.json",
-        "sources/issue26/README.md",
-        "sources/issue26/issue26-source.json"
+        "sources/issue26/README.md"
       ],
       "reproduce": [
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/issue26_firstword_probe.py --self-test"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/issue26_firstword_probe.py --run --protocol analysis_outputs/continuation_20261110/issue26_firstwords/PROTOCOL.json --registration-commit 1af6d1f0cf07e6ca87d620db65c27d3b63949a12 --out issue26-firstwords-rerun"
       ],
       "limitations": [
         "Candidate for the December plural-key claim, not an authenticated alternative 20-BTC target.",
         "Original PDF unavailable; retained JPEGs are the declared witnesses.",
         "Gutter-blurred line endings prevent a complete full-line exclusion without a better source."
+      ]
+    },
+    {
+      "id": "mirror-global-envelope",
+      "title": "Global mirror boundary envelope",
+      "status": "in-progress",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Exact candidate-union search over four-pair global concatenations under the frozen guard model; protocol/implementation in preparation.",
+      "result": "Synthetic algorithm verification is underway. No target shape or checksum result is claimed.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/mirror_global_envelope/PLAN.md"
+      ],
+      "reproduce": [],
+      "limitations": [
+        "Guard bounds and center/rectangle conventions are heuristic investigator assumptions.",
+        "Global path counts are modeled combinations, not independent theories or completed key checks.",
+        "The new exact language search must pass controls and completeness caps before any exclusion."
       ]
     }
   ],

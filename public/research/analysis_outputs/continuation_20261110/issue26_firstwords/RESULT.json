@@ -1,0 +1,343 @@
+{
+  "schemaVersion": 1,
+  "batchId": "keiser-issue26-firstwords-20261110",
+  "testId": "issue26-first-words",
+  "title": "Issue26 faithful printed-first-word readings",
+  "startedAtUTC": "2026-11-10T06:48:12.155Z",
+  "registrationCommit": "1af6d1f0cf07e6ca87d620db65c27d3b63949a12",
+  "networkQueries": 0,
+  "transactions": 0,
+  "privateReviewRequired": false,
+  "scopeComplete": true,
+  "completeNegative": true,
+  "sourceHashes": {
+    "sources/issue26/issue26-source.json": "1ff7a0a26c1e91fb2bfef9817693419979fdf39381d4124c2c9e5e7739f73c67",
+    "sources/issue26/page_03.jpg": "bd88ecc69fe5215aaf370a97520cb7668d9b67c43395f4d36544cd3b5a6081f7",
+    "sources/issue26/page_04.jpg": "f7eaedb88bf75249c45a61e5abd9bfa7cc5c59c472d63c84aa30bad7334c75da",
+    "sources/issue26/page_05.jpg": "de13717ccc0d51fa6442ab1f6c8591162d1b3db2a910e36c2cdfedeedb89250d",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b"
+  },
+  "scriptHashes": {
+    "scripts/issue26_firstword_probe.py": "79b3a93d38760208ffc728e1e9ada6dcefd430f1ae155ca467aa5d34e8c04b56",
+    "scripts/batch20_geometry.py": "e7786acc472fa3f7a294fe6391e74bd6f8840017e30d9f54941544019dbafb9a",
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d"
+  },
+  "protocolSha256": "8ec335eae647d695f14f0024027d281975265d02ba11eb3811ad8480f2255d3d",
+  "parameters": {
+    "units": [
+      "whole-article",
+      "each-printed-page",
+      "each-source-flow-block"
+    ],
+    "expectedUnitCount": 23,
+    "expectedFlowBlocks": 19,
+    "printedPages": [
+      102,
+      103,
+      104
+    ],
+    "sourceBodyRows": 113,
+    "sourceRowsByPage": {
+      "102": 42,
+      "103": 52,
+      "104": 19
+    },
+    "sourceProseRows": 94,
+    "sourceEmphasisRows": 19,
+    "standaloneSTOPLabels": 1,
+    "populations": [
+      "all-text",
+      "prose-only",
+      "emphasis-only"
+    ],
+    "populationRules": {
+      "all-text": "All source text rows, including inserted label when that policy is selected.",
+      "prose-only": "role exactly body-prose; standalone label is excluded.",
+      "emphasis-only": "role other than body-prose, including inserted label."
+    },
+    "tokenSurfaces": [
+      "firstWordSource",
+      "firstLexicalWordSource"
+    ],
+    "surfaceMeaning": "Use the frozen reviewed fields literally; outer punctuation already stripped by source convention; internal punctuation, fused forms and printed hyphenation retained. Raster witnesses do not establish original digital Unicode codepoints.",
+    "STOPPolicies": [
+      "exclude-side-label",
+      "replace-anchored-row-token",
+      "insert-label-before-anchor"
+    ],
+    "STOPAnchorRowId": "p102r10",
+    "STOPPolicyMeaning": "Exclude the side label; replace the anchored row token with STOP without changing that row role/rank; or insert the separate label immediately before the anchor. Units without the anchor are unchanged.",
+    "parityPhases": [
+      "all",
+      "odd",
+      "even"
+    ],
+    "parityOrigins": [
+      "policy-rows-before-population-filter",
+      "population-after-filter"
+    ],
+    "parityDefinition": "One-based rank within the current unit after STOP policy; either before or after population filtering. Source ID suffixes never determine parity.",
+    "rowOrder": [
+      "forward",
+      "reverse"
+    ],
+    "operationOrder": "Unit -> STOP policy -> population/rank -> parity -> row order -> projection -> character order.",
+    "projections": [
+      "words-spaced",
+      "words-joined",
+      "initials",
+      "finals"
+    ],
+    "initialFinalRule": "First/last Unicode alphanumeric character of each reviewed token, with case preserved.",
+    "characterOrder": [
+      "exact",
+      "reversed-codepoints"
+    ],
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39",
+      "extended_private",
+      "bip38",
+      "address",
+      "sec_public"
+    ],
+    "forms": [
+      "exact",
+      "whitespace-only-compacted"
+    ],
+    "bip39Tokenization": "Lowercase unfiltered lexical tokens; ordinary punctuation bounds words; invalid decoded group \u241e is a hard region boundary. Non-dictionary tokens are not discarded.",
+    "hexMatching": "64hex and SEC records require non-hex boundaries. Other registered record shapes may be embedded in longer text.",
+    "fullLineOCRUsed": false,
+    "unknownFirstWordPolicy": "Any unverified, empty or malformed source first-word field prevents a complete result; never silently omit or guess it.",
+    "emptyUnits": "Retain labeled empty readings; deduplicate actual forms in the shared evaluator.",
+    "expectedLabeledReadings": 39744,
+    "maximumLabeledReadings": 50000,
+    "rawAsciiScalars": false,
+    "proseHashWrappers": false,
+    "deriveChildKeys": false,
+    "deriveAddresses": false,
+    "passphraseGuesses": false,
+    "networkQueries": 0,
+    "transactions": 0
+  },
+  "controls": {
+    "passed": true,
+    "controls": [
+      "STOP-exclude-replace-insert",
+      "source-ID-gap-independent-parity",
+      "before-after-filter-parity",
+      "unit-local-ranks",
+      "mixed-flow-column-order",
+      "prose-emphasis-partition",
+      "empty-unit-retention",
+      "fused-token-Unicode-hyphen-preservation",
+      "row-and-codepoint-reversal",
+      "shared-eight-format-controls",
+      "incremental-bulk-scanner-agreement"
+    ],
+    "syntheticLabeledReadings": 1728,
+    "shared": {
+      "passed": true,
+      "controls": [
+        "official2048wordlist",
+        "BIP39valid-invalid",
+        "BIP39-invalid-group-barrier",
+        "BIP32-all5SLIP132-private-versions",
+        "invalid-root-parent-child-marker-scalar",
+        "BIP38-all6-structural-flag-combinations",
+        "BIP38-reserved-flags-checksum",
+        "Base58Check",
+        "Bech32-v0",
+        "Bech32m-v1",
+        "cross-checksum-version-and-invalid-padding",
+        "SEC-oncurve",
+        "WIF",
+        "minikey22and30-embedded",
+        "invalid-checksum-scalar-case-point",
+        "safe-domain-separated-output"
+      ],
+      "targetInputRead": false,
+      "targetChecks": 0,
+      "networkQueries": 0
+    },
+    "targetInputsRead": false,
+    "targetRecordChecks": 0,
+    "networkQueries": 0
+  },
+  "procedureCounts": {
+    "sourceRows": 113,
+    "sourceLabels": 1,
+    "sourceProseRows": 94,
+    "sourceEmphasisRows": 19,
+    "units": 23,
+    "unitCounts": [
+      {
+        "id": "article",
+        "sourceRows": 113
+      },
+      {
+        "id": "p102",
+        "sourceRows": 42
+      },
+      {
+        "id": "p103",
+        "sourceRows": 52
+      },
+      {
+        "id": "p104",
+        "sourceRows": 19
+      },
+      {
+        "id": "p102-intro",
+        "sourceRows": 9
+      },
+      {
+        "id": "p102-stop",
+        "sourceRows": 5
+      },
+      {
+        "id": "p102-brand",
+        "sourceRows": 4
+      },
+      {
+        "id": "p102-leftcol",
+        "sourceRows": 11
+      },
+      {
+        "id": "p102-rightcol",
+        "sourceRows": 10
+      },
+      {
+        "id": "p102-redcallout",
+        "sourceRows": 3
+      },
+      {
+        "id": "p103-intro",
+        "sourceRows": 8
+      },
+      {
+        "id": "p103-leftcol",
+        "sourceRows": 11
+      },
+      {
+        "id": "p103-rightcol",
+        "sourceRows": 13
+      },
+      {
+        "id": "p103-centercallout",
+        "sourceRows": 2
+      },
+      {
+        "id": "p103-wideprose",
+        "sourceRows": 9
+      },
+      {
+        "id": "p103-redcaption",
+        "sourceRows": 1
+      },
+      {
+        "id": "p103-boldprose",
+        "sourceRows": 5
+      },
+      {
+        "id": "p103-closing",
+        "sourceRows": 3
+      },
+      {
+        "id": "p104-intro",
+        "sourceRows": 6
+      },
+      {
+        "id": "p104-redcallout",
+        "sourceRows": 4
+      },
+      {
+        "id": "p104-body",
+        "sourceRows": 5
+      },
+      {
+        "id": "p104-closing",
+        "sourceRows": 3
+      },
+      {
+        "id": "p104-final",
+        "sourceRows": 1
+      }
+    ],
+    "labeledReadings": 39744,
+    "fullLineOCRUsed": false,
+    "sourceIDParityUsed": false
+  },
+  "evaluation": {
+    "streamCount": 39744,
+    "uniqueStreamCount": 1746,
+    "uniqueFormCount": 1746,
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39",
+      "extended_private",
+      "bip38",
+      "address",
+      "sec_public"
+    ],
+    "shapeCounts": {
+      "wif": 14,
+      "minikey": 22,
+      "hex64": 0,
+      "bip39": 0,
+      "extended_private": 0,
+      "bip38": 0,
+      "address": 0,
+      "sec_public": 0
+    },
+    "uniqueShapeCounts": {
+      "wif": 2,
+      "minikey": 10,
+      "hex64": 0,
+      "bip39": 0,
+      "extended_private": 0,
+      "bip38": 0,
+      "address": 0,
+      "sec_public": 0
+    },
+    "executionCount": 12,
+    "validCounts": {
+      "wif": 0,
+      "minikey": 0,
+      "hex64": 0,
+      "bip39": 0,
+      "extended_private": 0,
+      "bip38": 0,
+      "address": 0,
+      "sec_public": 0
+    },
+    "hits": [],
+    "privateReviewRequired": false,
+    "fingerprintRule": {
+      "algorithm": "SHA-256",
+      "domainText": "KEY404/batch20/record-fingerprint/v1",
+      "separatorHex": "00",
+      "rule": "SHA256(domain || 0x00 || ASCII(format) || 0x00 || canonical record bytes)"
+    },
+    "networkQueries": 0,
+    "rawAsciiScalarInterpretations": 0
+  },
+  "outcome": "no-valid-record-in-registered-firstword-readings",
+  "negativeCriterion": "A complete zero result excludes only the declared literal/private/public records in these fixed first-word-derived readings from the pinned Issue26 witnesses. It does not test full alternate lines, another source, arbitrary ciphers or authenticate the 20-BTC claim.",
+  "limitations": [
+    "This eligible pre-December2022 column is not authenticated as the March2023 20-BTC target.",
+    "Printed line starts are reviewed; full-line OCR is unverified, including23 obscured page102 endings. Full-line/alternate-line exclusion is outside scope.",
+    "STOP placement, population, parity and mirror variants are correlated declared conventions, not independent theories or evidence of intent.",
+    "First-word surfaces are raster transcription conventions; original digital punctuation/Unicode bytes are unavailable.",
+    "A valid private record, encrypted record, address or public point is only a lead requiring separate review; no wallet action follows."
+  ],
+  "privateArtifacts": [
+    "READINGS.private.jsonl"
+  ],
+  "completedAtUTC": "2026-11-10T06:48:12.497Z"
+}
