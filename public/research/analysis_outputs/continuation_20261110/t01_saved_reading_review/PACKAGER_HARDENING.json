@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "status": "PASS",
+  "completedAtUTC": "2026-11-10T21:21:29.467Z",
+  "sourceArtifactSha256": "2900473b467c74c18ee29f841f0fbb150376ffa42ab8e9862d9d0957fce8b395",
+  "initialPackagerSha256": "2f4f47f89eeb76e04bd099defd8ec56f2d976fecb68e484de3dddeb964c3f599",
+  "hardenedPackagerSha256": "0e9f827a5c5a0d554261fc4675d4b2479559a92f32dd9364c8e234d4353b1ecc",
+  "initialBytesPreservedPrivately": true,
+  "changeScope": "Output containment only: entered, lexically normalized, canonical and resolved-ancestor paths checked against Site/public before mkdir. Packet grouping/serialization unchanged. Added source-free finite guard controls.",
+  "outputGuardControls": {
+    "passed": true,
+    "unsafePathsRejected": 10,
+    "safeFreshPrivatePathAccepted": true,
+    "cases": [
+      "raw-Site",
+      "raw-public",
+      "Site-symlink-to-outside",
+      "alias-resolving-to-Site",
+      "public-symlink-to-outside",
+      "alias-resolving-to-public",
+      "raw-public-dotdot",
+      "normalized-Site-symlink-to-outside",
+      "Site-alias-then-escape",
+      "public-alias-then-escape"
+    ]
+  },
+  "existingSyntheticRoundtripControlsPassed": true,
+  "copyCounts": {
+    "sourceRecords": 196,
+    "uniqueUTF8ByteStrings": 152,
+    "packetCount": 12,
+    "maximumPacketTextCodepoints": 9950,
+    "uniqueTextCodepoints": 114810,
+    "uniqueTextUTF8Bytes": 115170
+  },
+  "wholePacketAndMappingProof": [
+    {
+      "file": "PACKET_001.json",
+      "bytes": 11879,
+      "sha256": "55c8af212551e89439b1ed450c5d12cc87471daeccf1c0b2dce796caa0804d52",
+      "byteIdentical": true
+    },
+    {
+      "file": "PACKET_002.json",
+      "bytes": 10931,
+      "sha256": "cfeb9ac3603f91e35b1757ae4c4e1fdd7829cddb54ccc88725682d2e5fce8923",
+      "byteIdentical": true
+    },
+    {
+      "file": "PACKET_003.json",
+      "bytes": 11877,
+      "sha256": "c23a3a2f6a3bde30410927e242674d25e8c8210ba7a87d3be99b4334316fb331",
+      "byteIdentical": true
+    },
+    {
+      "file": "PACKET_004.json",
+      "bytes": 10923,
+      "sha256": "e3c124bdec76e65f00b47830c11a531a6c633c3ec4524f8b337b82103ebb3e88",
+      "byteIdentical": true
+    },
+    {
+      "file": "PACKET_005.json",
+      "bytes": 11891,
+      "sha256": "f763b187767ec64c3c7660a66e2afa8c11b52a37725496023c30bc68c5394287",
+      "byteIdentical": true
+    },
+    {
+      "file": "PACKET_006.json",
+      "bytes": 10937,
+      "sha256": "f5c142f2488da47c3f8ef937991fb45221b86b79e82d1a4beb286480c097447a",
+      "byteIdentical": true
+    },
+    {
+      "file": "PACKET_007.json",
+      "bytes": 11875,
+      "sha256": "315cc547d97ba4d76cd0d9091e8ac1a481035ba23182f0c9630a2071a354fd64",
+      "byteIdentical": true
+    },
+    {
+      "file": "PACKET_008.json",
+      "bytes": 10925,
+      "sha256": "8baa5015d217e5ab8a1c73ba0ce52e739022732802be0fbc3561575b5c1404d2",
+      "byteIdentical": true
+    },
+    {
+      "file": "PACKET_009.json",
+      "bytes": 14220,
+      "sha256": "54da231f514a924c17db2792507df4862da43f442f2b7c8c6fb478f2c55e6f12",
+      "byteIdentical": true
+    },
+    {
+      "file": "PACKET_010.json",
+      "bytes": 16036,
+      "sha256": "18b1a1362d309a2ecec2fdf4d642fdf62ceebeff0984c494b0b6b7b0208c6333",
+      "byteIdentical": true
+    },
+    {
+      "file": "PACKET_011.json",
+      "bytes": 18025,
+      "sha256": "66b8c09d2cf7c2d61d8fa2c098f452301d8edbbd8421f1308e8c006f3c6ed7cf",
+      "byteIdentical": true
+    },
+    {
+      "file": "PACKET_012.json",
+      "bytes": 17990,
+      "sha256": "7eec0e5b6bb4951139160916b038468cab3102948de39555c61b2671d0731f00",
+      "byteIdentical": true
+    },
+    {
+      "file": "MAPPING.json",
+      "bytes": 45387,
+      "sha256": "7a52f759d1c8bf42a710481a11cfe3a89d876d541d60127dbae9aa154a0ade3c",
+      "byteIdentical": true
+    }
+  ],
+  "inventoryEqualExceptTimestamps": true,
+  "inventoryTimestamps": {
+    "startedAtUTC": {
+      "initial": "2026-11-10T21:11:05.064Z",
+      "hardened": "2026-11-10T21:20:52.080Z"
+    },
+    "completedAtUTC": {
+      "initial": "2026-11-10T21:11:05.071Z",
+      "hardened": "2026-11-10T21:20:52.087Z"
+    }
+  },
+  "initialInventorySha256": "205db2a152b87f0bf0944754448e6f56c7c43c0df9970a1fe7d8151b1a196471",
+  "hardenedInventorySha256": "e19641e8abfd4423037b92cbfa0813927008a92e0d78f5d5ab4c88f6c437b092",
+  "modes": {
+    "directory": "0700",
+    "files": "0600",
+    "verified": true
+  },
+  "activity": {
+    "targetArtifactOpenedForInventoryCopy": true,
+    "semanticReview": false,
+    "newCandidatePopulation": false,
+    "newTransforms": 0,
+    "shapeScans": 0,
+    "checksums": 0,
+    "derivations": 0,
+    "networkRequests": 0,
+    "publicEdits": 0,
+    "gitActions": 0
+  },
+  "hashScope": "Whole source/code/packet/mapping/inventory artifacts only; no per-text or private-candidate cryptographic hashes."
+}

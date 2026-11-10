@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "reviewId": "t01-saved-alternating-direction-semantic-review",
+  "preparedAtUTC": "2026-11-10T21:24:53.706Z",
+  "planSha256": "c984c90f8b426caa03f7c607a078dcf488a7863091f009f9fd47d02910332475",
+  "sourceHashes": {
+    "analysis_outputs/continuation_20261110/batch20/T01/STREAMS.json": "2900473b467c74c18ee29f841f0fbb150376ffa42ab8e9862d9d0957fce8b395",
+    "analysis_outputs/continuation_20261110/batch20/T01/RESULT.json": "f96c512124f8ab5314db28fe28627f6217d84a166f880c547c017b6f1acf386c",
+    "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json": "9a9441d1ad4e6a10c11addd06b31f9d443c0e82faa9caa1438379cc7c58742be",
+    "scripts/batch20_text.py": "dedd23de8dc8cd58d9dfd9916f1ecfabb1149d96b4c0b21c42ad47aae9b8f747",
+    "analysis_outputs/continuation_20261110/mirror_saved_reading_review/PAPER_SCOPE.json": "75163691276eff63e927dd1bad8ce238a227687af336d510b4ebea21a63e5076"
+  },
+  "scriptHashes": {
+    "scripts/pack_t01_semantic_readings.py": "0e9f827a5c5a0d554261fc4675d4b2479559a92f32dd9364c8e234d4353b1ecc"
+  },
+  "sourcePreparation": {
+    "savedRecords": 196,
+    "exactUTF8Groups": 152,
+    "uniqueTextCodepointsPerReader": 114810,
+    "uniqueTextUTF8BytesPerReader": 115170,
+    "packetsPerReader": 12,
+    "maximumPacketTextCodepoints": 9950,
+    "allAliasesCoveredExactlyOnce": true,
+    "allTextsWholeAndUnmodified": true,
+    "inventoryCopyBeforePublicRegistration": true,
+    "semanticReviewBeforePublicRegistration": false
+  },
+  "readerCount": 2,
+  "readingScope": "Every complete stored unique UTF8 text, with all original196 source aliases retained; body/page controls and all seven projections included.",
+  "primaryMotivation": {
+    "paperURL": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2117809/",
+    "location": "Table1 footnote defining boustrophedon",
+    "shortQuote": "alternate lines written rightwards and leftwards, mirrored",
+    "inference": "This motivates reviewing the already saved alternating-direction family; it selects no specific magazine parity, source unit or key format."
+  },
+  "recognition": "A coherent second message or determinate next puzzle operation beyond ordinary article rhetoric/fragments. Natural recognition of an unspaced message is allowed without constructing an edited text.",
+  "readerSeparation": "Two separate AI contexts read the full corpus without consulting each other current judgments. Prior source/hypothesis exposure must be disclosed. No statistical or calibrated model independence is claimed.",
+  "forbidden": [
+    "new text/reading/selector",
+    "rerun original extraction",
+    "programmatic character reversal or whitespace compaction",
+    "OCR repair/inserted letters/added spacing",
+    "word filtering or substring sweep",
+    "new decoding layer",
+    "key/checksum validation",
+    "scalar/seed/address derivation",
+    "network-history query",
+    "wallet/signing/transaction"
+  ],
+  "negativeMeaning": "Complete subjective nonrecognition within this fixed saved population only; no formal plaintext/key/cipher/puzzle exclusion.",
+  "positiveHandling": "Keep exact existing source basis private; any new operation requires a separate later source-supported protocol.",
+  "publication": "Root verifies remote public registration before either semantic reader starts. The lossless inventory/copy is disclosed as earlier source preparation; no new candidate population was generated.",
+  "packetHashes": {
+    "PACKET_001.json": "55c8af212551e89439b1ed450c5d12cc87471daeccf1c0b2dce796caa0804d52",
+    "PACKET_002.json": "cfeb9ac3603f91e35b1757ae4c4e1fdd7829cddb54ccc88725682d2e5fce8923",
+    "PACKET_003.json": "c23a3a2f6a3bde30410927e242674d25e8c8210ba7a87d3be99b4334316fb331",
+    "PACKET_004.json": "e3c124bdec76e65f00b47830c11a531a6c633c3ec4524f8b337b82103ebb3e88",
+    "PACKET_005.json": "f763b187767ec64c3c7660a66e2afa8c11b52a37725496023c30bc68c5394287",
+    "PACKET_006.json": "f5c142f2488da47c3f8ef937991fb45221b86b79e82d1a4beb286480c097447a",
+    "PACKET_007.json": "315cc547d97ba4d76cd0d9091e8ac1a481035ba23182f0c9630a2071a354fd64",
+    "PACKET_008.json": "8baa5015d217e5ab8a1c73ba0ce52e739022732802be0fbc3561575b5c1404d2",
+    "PACKET_009.json": "54da231f514a924c17db2792507df4862da43f442f2b7c8c6fb478f2c55e6f12",
+    "PACKET_010.json": "18b1a1362d309a2ecec2fdf4d642fdf62ceebeff0984c494b0b6b7b0208c6333",
+    "PACKET_011.json": "66b8c09d2cf7c2d61d8fa2c098f452301d8edbbd8421f1308e8c006f3c6ed7cf",
+    "PACKET_012.json": "7eec0e5b6bb4951139160916b038468cab3102948de39555c61b2671d0731f00"
+  },
+  "preparationHashes": {
+    "PLAN.json": "c984c90f8b426caa03f7c607a078dcf488a7863091f009f9fd47d02910332475",
+    "INVENTORY.json": "e19641e8abfd4423037b92cbfa0813927008a92e0d78f5d5ab4c88f6c437b092",
+    "MAPPING.json": "7a52f759d1c8bf42a710481a11cfe3a89d876d541d60127dbae9aa154a0ade3c",
+    "PACKET_PREFLIGHT.json": "6c211d233228ce6c168dab7d8a893a5efe7d5932d7ec31fd2c342c22b9cbf5f6",
+    "PACKAGER_HARDENING.json": "d4d76779a34c3e7bcaa6b6d7bb13fc4f1bdeefca2f4fb999714a9860c61886f6"
+  }
+}

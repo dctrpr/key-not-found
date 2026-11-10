@@ -333,23 +333,25 @@
     {
       "id": "batch20-t01",
       "title": "Alternating direction on the actual printed lines",
-      "status": "falsified",
+      "status": "in-progress",
       "kind": "method-test",
       "independentTheory": false,
       "scope": "T01: 196 labeled readings; 236 distinct forms; exact fixed protocol.",
-      "result": "196 labeled readings (152 distinct texts), 236 distinct exact/whitespace-compacted forms. 21 shape occurrences (6 distinct); zero valid declared records. Independent form counts and checksums agreed.",
+      "result": "196 labeled readings (152 distinct texts), 236 distinct exact/whitespace-compacted forms. 21 shape occurrences (6 distinct); zero valid declared records. Independent form counts and checksums agreed. A separate complete semantic review is now being registered for all 196 existing labels / 152 exact-byte-distinct texts, with two AI readers. The earlier literal-format result is unchanged.",
       "evidence": [
         "analysis_outputs/continuation_20261110/batch20/T01/RESULT.md",
         "analysis_outputs/continuation_20261110/batch20/T01/RESULT.json",
         "analysis_outputs/continuation_20261110/batch20/T01/INDEPENDENT_CHECK.json",
-        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
+        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/t01_saved_reading_review/PROTOCOL.md"
       ],
       "reproduce": [
         "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --run T01 --protocol analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json --registration-commit 8f4fa38bf24db7e432410c4daaa29e9de486156c --out T01-rerun"
       ],
       "limitations": [
         "The older boustrophedon test used merged transcript lines; this is a corrected-source test.",
-        "Direction and parity variants are one procedure, not independent theories."
+        "Direction and parity variants are one procedure, not independent theories.",
+        "The new semantic review generates no cipher output or validator result; subjective recognition cannot establish a general message/key exclusion."
       ]
     },
     {
