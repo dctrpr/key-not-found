@@ -21,7 +21,7 @@ This is a completed validator-coverage replay with a private-review lead, **not 
 
 The unchanged OCR model has uncertain interiors and line ends. This does not exhaust the column, every George Sand interpretation or any whole cipher family. The retained Fall 2022 Orange Party column is relevant to the broad December plural-key post; it is not authenticated as the March 2023 Issue 24 / 20-BTC target.
 
-A separately registered follow-up will check only this frozen lead through five standard mainnet address constructions, with independent Python/Node agreement and two providers. No address construction or history query was part of this extraction. No wallet import, signing or transaction occurred.
+The [separately registered history follow-up](../issue27_minikey_history/RESULT.md) is now complete: Python and Node agreed on five fixed address constructions, and all ten two-provider responses reported zero chain/mempool history at 2026-11-10T09:23:52–54Z. The minikey remains format-valid; those observations supply no funding evidence in that scope. No address construction or history query was part of this extraction. No wallet import, signing or transaction occurred.
 
 ## Registration and reproduction
 

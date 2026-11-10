@@ -813,11 +813,11 @@
     {
       "id": "issue27-frozen-stream-coverage",
       "title": "Issue 27 saved-reading validator coverage",
-      "status": "in-progress",
+      "status": "tested",
       "kind": "method-test",
       "independentTheory": false,
       "scope": "The exact 1,940 previously saved Orange Party readings and their pre-existing character reversals; four literal formats, fixed source/code pins and resource bounds. The single checksum lead has a separately registered five-construction, two-provider history follow-up.",
-      "result": "The 3,880 frozen records produced 3,709 distinct forms. All 15 shaped WIFs failed; one of 205 shaped minikeys passed its weak eight-bit check (22 characters). No 64-hex or BIP39 shapes. Independent saved-source/evaluation verification agreed exactly. A bounded history follow-up is being registered; no prize key is authenticated.",
+      "result": "The frozen replay produced 3,709 forms: all 15 shaped WIFs failed, one of 205 shaped minikeys passed an eight-bit check, and no hex/BIP39 shapes appeared. Independent replay verification agreed. The 22-character lead then had zero reported chain/mempool history in all ten two-provider responses across five Python/Node-agreed constructions at 2026-11-10T09:23:52\u201354Z. No authenticated prize key.",
       "evidence": [
         "analysis_outputs/continuation_20261110/issue27_stream_coverage/RESULT.md",
         "analysis_outputs/continuation_20261110/issue27_stream_coverage/RESULT.json",
@@ -826,7 +826,9 @@
         "analysis_outputs/continuation_20261110/issue27_stream_coverage/PROTOCOL.json",
         "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/SOURCE_REGISTER.md",
         "analysis_outputs/continuation_20261110/issue27_minikey_history/PROTOCOL.md",
-        "analysis_outputs/continuation_20261110/issue27_minikey_history/PROTOCOL.json"
+        "analysis_outputs/continuation_20261110/issue27_minikey_history/PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/issue27_minikey_history/RESULT.md",
+        "analysis_outputs/continuation_20261110/issue27_minikey_history/RESULT.json"
       ],
       "reproduce": [
         "PYTHONDONTWRITEBYTECODE=1 python3 scripts/issue27_stream_coverage.py --self-test",
@@ -836,7 +838,9 @@
       "limitations": [
         "A validator-coverage replay of existing correlated readings, not a new cipher theory.",
         "Frozen OCR and printed-line conventions are not repaired or independently authenticated by this replay.",
-        "A zero applies only to four literal formats in the registered readings; a format-valid value requires private review."
+        "A zero applies only to four literal formats in the registered readings; a format-valid value requires private review.",
+        "The minikey remains format-valid; zero explorer history applies only to five registered constructions at the recorded times.",
+        "Public frozen readings are reproducible. New summaries omit selected values, private scalars, source locators and derived-address associations."
       ]
     }
   ],

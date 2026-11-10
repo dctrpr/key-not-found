@@ -4,7 +4,7 @@ The key is missing. The work is public.
 
 My independent investigation into the Bitcoin Magazine puzzle Max Keiser described in 2023. The files, tests and updates are public; help is optional. The puzzle is **unsolved**. The claimed 20 BTC has not been independently authenticated. This project is not affiliated with Max Keiser, Bitcoin Magazine, or Pump.fun.
 
-[Latest research: twenty registered procedures and their outcomes](public/research/analysis_outputs/continuation_20261110/batch20/SUMMARY.md). Fifteen scoped literal/code negatives, one failed alignment screen and four inconclusive procedures; the puzzle remains unsolved.
+[Latest research: the Orange Party replay and its history check](public/research/analysis_outputs/continuation_20261110/issue27_minikey_history/RESULT.md). One weak checksum lead had no reported history through five fixed address constructions at two providers. The registered source readings, independent checks, actual times and limits are public; the puzzle remains unsolved.
 
 ## Start here
 

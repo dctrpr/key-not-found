@@ -149,6 +149,44 @@
       },
       "sceneNote": "Actual retained Orange Party scans. The 3D arrangement is a viewing aid; the evidence fixes the tested readings.",
       "methodId": "issue27-frozen-stream-coverage"
+    },
+    {
+      "id": "issue27-history",
+      "completedAtUTC": "2026-11-10T09:23:54.318Z",
+      "title": "Orange Party lead. Zero history.",
+      "summary": "The weak checksum lead was checked through five fixed constructions after independent address agreement.",
+      "result": "Both providers returned ten successful all-zero chain and mempool summaries. Other constructions and the puzzle remain open.",
+      "diagram": "history",
+      "metrics": [
+        {
+          "label": "Constructions",
+          "value": 5,
+          "pointer": "/addressCount"
+        },
+        {
+          "label": "Successful lookups",
+          "value": 10,
+          "pointer": "/requestsAttempted"
+        },
+        {
+          "label": "Active responses",
+          "value": 0,
+          "pointer": "/queries",
+          "operation": "countActive"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/issue27_minikey_history/RESULT.json",
+        "sha256": "2d6d106528402c128d7944d48c4a784cf169ddb1d5a4a3eefb07ea1e18d28627"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/issue27_minikey_history/RESULT.md",
+      "scene": {
+        "source": "issue27",
+        "layout": "spread",
+        "page": 79
+      },
+      "sceneNote": "Actual retained Orange Party scans. Viewing geometry does not reveal or authenticate a key.",
+      "methodId": "issue27-frozen-stream-coverage"
     }
   ]
 }

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "status": "SOURCE_REVIEW_ONLY",
+  "recommendation": "Repair/verify a full token source before physical-word claims; otherwise explicitly limit any experiment to frozen-OCR-model scope",
+  "fullPhysicalWordSequenceCertified": false,
+  "bodyRows": 312,
+  "sampleRowsReviewed": 23,
+  "sampleWordBoundaryConsistent": 19,
+  "sampleGutterUncertain": 4,
+  "remainingRowsNotInteriorProofread": 289,
+  "sampleFinding": "No missing/extra lexical word observed in19 clear rows; punctuation policy differs and full-corpus fidelity is not established",
+  "duplicateP80": "Both repetitions visibly printed; differing wrap/hyphen presentation is source material, not permission to delete a copy",
+  "sourceKindCaveat": "Excludes29pullquote/10intro/5heading rows; includes two p80 wide-lead and five p81 wide-lead rows",
+  "sourceProvenance": {
+    "primary": {
+      "path": "analysis_outputs/continuation_20261109/george_sand_issue27/printed_lines_and_streams.json",
+      "bytes": 946620,
+      "sha256": "f5f441345ebe411ee769cdcb624c0717a2b4f790b7eadc50d10dc12d37da07bb"
+    },
+    "images": [
+      {
+        "path": "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_02.jpg",
+        "printedPage": 79,
+        "bytes": 1125358,
+        "sha256": "e18e02e521444c9ea760c6e1d80a39bbee08d65a7839e970629ab81b4fd83610"
+      },
+      {
+        "path": "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_03.jpg",
+        "printedPage": 80,
+        "bytes": 1143396,
+        "sha256": "b7f120860b1a76aa6ba97c836bb56388477ee8878665d75414098f9b8a38a1b5"
+      },
+      {
+        "path": "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_04.jpg",
+        "printedPage": 81,
+        "bytes": 1065764,
+        "sha256": "60da7f7ed64764e8c9bb347bce163eb2f8dc4c4ad20abbd00182bced3ad3343a"
+      }
+    ]
+  },
+  "tokensCreated": 0,
+  "strideSelections": 0,
+  "cipherChecks": 0,
+  "targetChecksumChecks": 0,
+  "networkQueries": 0,
+  "scope": "Source preparation after the saved-reading replay; no new cipher or token-stride test"
+}
