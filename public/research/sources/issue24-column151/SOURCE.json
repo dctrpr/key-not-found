@@ -1,0 +1,4205 @@
+{
+  "schemaVersion": 1,
+  "modelId": "issue24-declared-column151-physical-units-v1",
+  "status": "frozen-declared-source-model-pending-independent-review",
+  "preparedAtUTC": "2026-11-10T16:06:59.218534+00:00",
+  "scope": "Declared editorial column text units, including opener name/byline, article title, body, display quotation and signature; not every printed glyph/art/furniture on the retained pages.",
+  "upstreamSources": [
+    {
+      "path": "magazine.pdf",
+      "role": "authoritative-retained-native-scan",
+      "bytes": 6789338,
+      "sha256": "a30c61f8c49674afb7bccc6680d6477f6e919175386a2422de0a944db4e76c13"
+    },
+    {
+      "path": "sources/printed-lines.json",
+      "role": "frozen142body-plus7optional-display-inputs",
+      "bytes": 116759,
+      "sha256": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe"
+    },
+    {
+      "path": "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.js",
+      "role": "existing149with_displays-traversal-definition",
+      "sha256": "46b5b174485345469e8f7c346d1d7a419f4a606c9762e3edc37e4885b2a84b6d"
+    },
+    {
+      "path": "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.json",
+      "role": "frozen-prior-reading-artifact-scope-reference-only-not-an-input-for-new-tokenization",
+      "sha256": "1651a33dab46babf36f56439ddb409058cfa36712d96ead7d4200962b80817b9"
+    }
+  ],
+  "nativeContexts": [
+    {
+      "printedPage": 73,
+      "pdfPageIndex0": 0,
+      "pdfPageRotation": 180,
+      "imageXref": 4,
+      "imageCodec": "jpeg",
+      "imageWidth": 2544,
+      "imageHeight": 3264,
+      "nativeExtraction": "Extract sole embedded JPEG, decode RGB without applying ICC profile, exact180degree pixel-index rotation; no interpolation, threshold, enhancement or OCR.",
+      "uprightRGBSha256": "87d7693b9e4e3e7a532483d70877ce907e57c9a2dca9d021afda9d5de274c59c",
+      "contextBoxXYXY": [
+        150,
+        280,
+        2370,
+        780
+      ],
+      "contextFile": "native-contexts/p73-opener.png",
+      "contextPngBytes": 1036490,
+      "contextPngSha256": "d8d88d894057781537c09024a4795f9d70ec3b0744f43665364d48f6d3f3e607",
+      "contextRGBSha256": "dec6afc288a448a1d96c2e0492e132795797105e24aaba6fcec34d22a2f5b5cd"
+    },
+    {
+      "printedPage": 75,
+      "pdfPageIndex0": 2,
+      "pdfPageRotation": 180,
+      "imageXref": 10,
+      "imageCodec": "jpeg",
+      "imageWidth": 2544,
+      "imageHeight": 3264,
+      "nativeExtraction": "Extract sole embedded JPEG, decode RGB without applying ICC profile, exact180degree pixel-index rotation; no interpolation, threshold, enhancement or OCR.",
+      "uprightRGBSha256": "21d4c6e6775625d8920f23ed8b9acadb5cf79d4e7dca0c856621954a5c998ec6",
+      "contextBoxXYXY": [
+        170,
+        280,
+        1500,
+        500
+      ],
+      "contextFile": "native-contexts/p75-article-title.png",
+      "contextPngBytes": 85011,
+      "contextPngSha256": "dd4ec1134234822828dfb834afe66d93b1562dca4c7e4bca2f35b537b2346050",
+      "contextRGBSha256": "8514e14444dd1385a4c126dc304b5099752a05726b1369a09b48358d13f03250"
+    },
+    {
+      "printedPage": 78,
+      "pdfPageIndex0": 5,
+      "pdfPageRotation": 180,
+      "imageXref": 16,
+      "imageCodec": "jpeg",
+      "imageWidth": 2544,
+      "imageHeight": 3264,
+      "nativeExtraction": "Extract sole embedded JPEG, decode RGB without applying ICC profile, exact180degree pixel-index rotation; no interpolation, threshold, enhancement or OCR.",
+      "uprightRGBSha256": "effcf390dab626fe7aadeed799e45e1ad630c346ed9a85cef0c8bf646e3b30dc",
+      "contextBoxXYXY": [
+        300,
+        2370,
+        1250,
+        2980
+      ],
+      "contextFile": "native-contexts/p78-display-quote.png",
+      "contextPngBytes": 416222,
+      "contextPngSha256": "a1b079acd1dc52aa52f2b574693f6499fa02e616672d2cd39d18ea4bdbaf3019",
+      "contextRGBSha256": "0926afb1f9c25bc643c3643555ab7ed354e8588f2d6fcf3e52d79be0e74931cc"
+    },
+    {
+      "printedPage": 79,
+      "pdfPageIndex0": 6,
+      "pdfPageRotation": 180,
+      "imageXref": 18,
+      "imageCodec": "jpeg",
+      "imageWidth": 2544,
+      "imageHeight": 3264,
+      "nativeExtraction": "Extract sole embedded JPEG, decode RGB without applying ICC profile, exact180degree pixel-index rotation; no interpolation, threshold, enhancement or OCR.",
+      "uprightRGBSha256": "829f714940eaadeb0ce4afeec8dae0d5dde38c70f6e1a27a2e379bf9dbc66e38",
+      "contextBoxXYXY": [
+        850,
+        2690,
+        1610,
+        3090
+      ],
+      "contextFile": "native-contexts/p79-signature.png",
+      "contextPngBytes": 102214,
+      "contextPngSha256": "a2a7a8d09ccae306d828f5da47e72c8b2515d55ab039ee6aefb0aa95e004d43d",
+      "contextRGBSha256": "bd9a40333964df17a378b72c0d657bfaffee141528b4fc6c73e4be237baf30ae"
+    }
+  ],
+  "counts": {
+    "physicalUnits": 151,
+    "newOpenerUnits": 2,
+    "reusedBodyUnits": 142,
+    "reusedOptionalDisplayUnits": 7,
+    "nonbodyUnits": 9,
+    "byPrintedPage": {
+      "73": 2,
+      "75": 33,
+      "76": 31,
+      "77": 32,
+      "78": 26,
+      "79": 27
+    },
+    "byRole": {
+      "column-name": 1,
+      "byline": 1,
+      "article-title": 1,
+      "body": 142,
+      "display-quotation": 4,
+      "signature": 2
+    }
+  },
+  "normalization": {
+    "encoding": "UTF-8",
+    "lineBoundary": "one JSON row per declared physical printed/handwritten line; no reflow or hard-wrap joining",
+    "case": "preserve frozen source and visually read opener case",
+    "spaces": "Frozen149texts byte-preserved; new byline uses oneU+0020 at each visible word gap. Printed gap widths are not recoverable text-byte counts.",
+    "glyphs": "Frozen signature heart retained as the existingU+2665 transcription of a drawn heart; original typesetting bytes are not claimed.",
+    "ocr": "No OCR run or OCR line units used for the two new opener rows."
+  },
+  "orderingPolicy": {
+    "pages": [
+      73,
+      75,
+      76,
+      77,
+      78,
+      79
+    ],
+    "page73": [
+      "column-name",
+      "byline"
+    ],
+    "pages75to79": "Exactly frozen with_displays builder order: title(if any),body,graphic(if any),signature(if any); original stored order within each population.",
+    "page74": "No eligible editorial text unit; no placeholder counted.",
+    "globalOrdinals": "1-based across all151units; ordinal is source identity metadata, not a generated odd/even selection."
+  },
+  "exclusions": [
+    {
+      "kind": "running-furniture",
+      "pages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "details": "Small orange repeatedOVERDOSE running labels, folios, verticalBitcoinMagazine/ElSalvador furniture and photographer credit."
+    },
+    {
+      "kind": "photographic-art-lettering",
+      "pages": [
+        73,
+        74
+      ],
+      "details": "Banknote imagery/serials and incidental photographed content are not editorial text lines."
+    },
+    {
+      "kind": "backing-art-lettering",
+      "pages": [
+        78
+      ],
+      "details": "Graffiti/partly occluded backing strokes, including some readable lettering behind the four-line quote, excluded as artwork by this declared population; not claimed absent/unreadable."
+    },
+    {
+      "kind": "pictographic-art",
+      "pages": [
+        79
+      ],
+      "details": "Bitcoin symbol/doodles/capsule art excluded; the two-line signature and drawn heart are retained under explicit signature role."
+    },
+    {
+      "kind": "adjacent-advertisement",
+      "pages": [
+        80
+      ],
+      "details": "Page visibly headedFAKEAD is outside this author-column text population."
+    }
+  ],
+  "reviewBoundary": {
+    "newPrimaryNativeVisualChecks": 9,
+    "bodyRowsReproofreadInThisPreparation": 0,
+    "bodyProofReused": 142,
+    "independentNonbodyAndOrderReview": "See separate review receipt; source content frozen for review.",
+    "notEveryPrintedGlyph": true,
+    "originalTypesettingBytesRecovered": false
+  },
+  "rows": [
+    {
+      "id": "p73-opener-name",
+      "printedPage": 73,
+      "role": "column-name",
+      "sourceOrigin": "newly-transcribed-native-scan",
+      "sourceRef": {
+        "nativeContextIndex": 0,
+        "physicalLineWithinContext": 1
+      },
+      "reviewBasis": "primary-nativeRGB-visual-review-independent-review-pending",
+      "ordinal": 1,
+      "printedText": "OVERDOSE"
+    },
+    {
+      "id": "p73-opener-byline",
+      "printedPage": 73,
+      "role": "byline",
+      "sourceOrigin": "newly-transcribed-native-scan",
+      "sourceRef": {
+        "nativeContextIndex": 0,
+        "physicalLineWithinContext": 2
+      },
+      "reviewBasis": "primary-nativeRGB-visual-review-independent-review-pending",
+      "ordinal": 2,
+      "printedText": "with Max Keiser"
+    },
+    {
+      "id": "p75_title_0",
+      "printedPage": 75,
+      "role": "article-title",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-optional-display-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "optional_display_rows",
+        "index0": 0,
+        "sectionIndex0": 0,
+        "nativeContextIndex": 1,
+        "physicalLineWithinContext": 1
+      },
+      "reviewBasis": "primary-nativeRGB-visual-recheck-independent-review-pending",
+      "ordinal": 3,
+      "printedText": "BITCOIN IS TOXIC AF"
+    },
+    {
+      "id": "p75r01",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 0,
+        "sourceId": "p75r01"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          541,
+          2250,
+          577
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 4,
+      "printedText": "Here's the bitter truth. Bitcoin was not a reaction"
+    },
+    {
+      "id": "p75r02",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 1,
+        "sourceId": "p75r02"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          613,
+          2250,
+          651
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 5,
+      "printedText": "to the Global Financial Crisis of 2008. It caused it."
+    },
+    {
+      "id": "p75r03",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 2,
+        "sourceId": "p75r03"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          728,
+          2250,
+          768
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 6,
+      "printedText": "Really? Yes."
+    },
+    {
+      "id": "p75r04",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 3,
+        "sourceId": "p75r04"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          841,
+          2250,
+          870
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 7,
+      "printedText": "The markets sensed Bitcoin was coming and started to crash."
+    },
+    {
+      "id": "p75r05",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 4,
+        "sourceId": "p75r05"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          906,
+          2250,
+          944
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 8,
+      "printedText": "Markets are like that. They discount stuff in advance. Markets are"
+    },
+    {
+      "id": "p75r06",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 5,
+        "sourceId": "p75r06"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          983,
+          2250,
+          1018
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 9,
+      "printedText": "the central nervous system of the global economy. They are the sum of"
+    },
+    {
+      "id": "p75r07",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 6,
+        "sourceId": "p75r07"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          1056,
+          2250,
+          1094
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 10,
+      "printedText": "all our neuroses. The cypherpunks were publishing the white paper"
+    },
+    {
+      "id": "p75r08",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 7,
+        "sourceId": "p75r08"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          1129,
+          2250,
+          1163
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 11,
+      "printedText": "around that time — after years of trying — and a collective panic"
+    },
+    {
+      "id": "p75r09",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 8,
+        "sourceId": "p75r09"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          1200,
+          2250,
+          1250
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 12,
+      "printedText": "arose in the global unconscious of money printers, banking"
+    },
+    {
+      "id": "p75r10",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 9,
+        "sourceId": "p75r10"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          1270,
+          2250,
+          1322
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 13,
+      "printedText": "terrorists, stock traders, central bank arsonists, Wall Street"
+    },
+    {
+      "id": "p75r11",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 10,
+        "sourceId": "p75r11"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          1346,
+          2250,
+          1382
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 14,
+      "printedText": "and Jamie Dimon. The Bitcoin rabbit hole was opening — the black hole"
+    },
+    {
+      "id": "p75r12",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 11,
+        "sourceId": "p75r12"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          1418,
+          2250,
+          1454
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 15,
+      "printedText": "of the Cosmic Now — and it had fiat markets in its sight."
+    },
+    {
+      "id": "p75r13",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 12,
+        "sourceId": "p75r13"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          1541,
+          2250,
+          1578
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 16,
+      "printedText": "In fact, all the chaos you see around you these days is caused by"
+    },
+    {
+      "id": "p75r14",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 13,
+        "sourceId": "p75r14"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          1616,
+          2250,
+          1650
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 17,
+      "printedText": "Bitcoin. And nothing could be better. Nocoiners and shitcoiners,"
+    },
+    {
+      "id": "p75r15",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 14,
+        "sourceId": "p75r15"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          1688,
+          2250,
+          1723
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 18,
+      "printedText": "and even some Bitcoiners, consider this view toxic. Everybody's"
+    },
+    {
+      "id": "p75r16",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 15,
+        "sourceId": "p75r16"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          1760,
+          2250,
+          1795
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 19,
+      "printedText": "complaining about \"Toxic Bitcoin Maximalists\" these days."
+    },
+    {
+      "id": "p75r17",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 16,
+        "sourceId": "p75r17"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          1833,
+          2250,
+          1871
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 20,
+      "printedText": "Look, toxicity is Layer 1 of the protocol."
+    },
+    {
+      "id": "p75r18",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 17,
+        "sourceId": "p75r18"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          1906,
+          2250,
+          1948
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 21,
+      "printedText": "Fact: It's Layer 1 for every great thing"
+    },
+    {
+      "id": "p75r19",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 18,
+        "sourceId": "p75r19"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          1981,
+          2250,
+          2014
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 22,
+      "printedText": "that's ever been invented or discovered."
+    },
+    {
+      "id": "p75r20",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 19,
+        "sourceId": "p75r20"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          2053,
+          2250,
+          2092
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 23,
+      "printedText": "It's only the language of the shameless opportunists trying"
+    },
+    {
+      "id": "p75r21",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 20,
+        "sourceId": "p75r21"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          2128,
+          2250,
+          2161
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 24,
+      "printedText": "to cash in by riding Bitcoins coattails that give it a bad name."
+    },
+    {
+      "id": "p75r22",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 21,
+        "sourceId": "p75r22"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          2197,
+          2250,
+          2234
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 25,
+      "printedText": "Vitalik Buterin came up with the \"Maximalist\" epithet."
+    },
+    {
+      "id": "p75r23",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 22,
+        "sourceId": "p75r23"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          2273,
+          2250,
+          2306
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 26,
+      "printedText": "Now he's slinging proof of stake at the mEthereum lab."
+    },
+    {
+      "id": "p75r24",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 23,
+        "sourceId": "p75r24"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          2343,
+          2250,
+          2391
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 27,
+      "printedText": "Don't fall for shitcoinery."
+    },
+    {
+      "id": "p75r25",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 24,
+        "sourceId": "p75r25"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          2417,
+          2250,
+          2456
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 28,
+      "printedText": "Keep your dignity."
+    },
+    {
+      "id": "p75r26",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 25,
+        "sourceId": "p75r26"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          2483,
+          2250,
+          2524
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 29,
+      "printedText": "Go Bitcoin Toxic Maximalist,"
+    },
+    {
+      "id": "p75r27",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 26,
+        "sourceId": "p75r27"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          2561,
+          2250,
+          2597
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 30,
+      "printedText": "the Layer 1 of the whole Satoshi experience."
+    },
+    {
+      "id": "p75r28",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 27,
+        "sourceId": "p75r28"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          2635,
+          2250,
+          2677
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 31,
+      "printedText": "You wouldn't be digging blindly with your bare"
+    },
+    {
+      "id": "p75r29",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 28,
+        "sourceId": "p75r29"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          2709,
+          2250,
+          2744
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 32,
+      "printedText": "hands in the muck of Bitcoin's rabbit hole if this"
+    },
+    {
+      "id": "p75r30",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 29,
+        "sourceId": "p75r30"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          2786,
+          2250,
+          2818
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 33,
+      "printedText": "weren't true. Anything worth hearing is hard to listen"
+    },
+    {
+      "id": "p75r31",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 30,
+        "sourceId": "p75r31"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          2864,
+          2250,
+          2890
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 34,
+      "printedText": "to. Nice, pleasant words from con men and shitcoiners"
+    },
+    {
+      "id": "p75r32",
+      "printedPage": 75,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 31,
+        "sourceId": "p75r32"
+      },
+      "sourceLocator": {
+        "box": [
+          350,
+          2931,
+          2250,
+          2963
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 35,
+      "printedText": "are easy listening for the gullible and unloved."
+    },
+    {
+      "id": "p76r01",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 32,
+        "sourceId": "p76r01"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          375,
+          2240,
+          411
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 36,
+      "printedText": "Get some toxicity. Get some bitcoin. Open your heart to"
+    },
+    {
+      "id": "p76r02",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 33,
+        "sourceId": "p76r02"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          448,
+          2240,
+          484
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 37,
+      "printedText": "Bitcoin. It's the freaking UTXO ghetto up in here, y'all."
+    },
+    {
+      "id": "p76r03",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 34,
+        "sourceId": "p76r03"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          522,
+          2240,
+          556
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 38,
+      "printedText": "It's funkier than a whole parallel universe full of nothing"
+    },
+    {
+      "id": "p76r04",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 35,
+        "sourceId": "p76r04"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          595,
+          2240,
+          629
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 39,
+      "printedText": "but George Clinton and James Brown clones. It's Martin Luther"
+    },
+    {
+      "id": "p76r05",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 36,
+        "sourceId": "p76r05"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          669,
+          2240,
+          703
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 40,
+      "printedText": "nailing the Vatican with ultimatums. It's the sound of skin being"
+    },
+    {
+      "id": "p76r06",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 37,
+        "sourceId": "p76r06"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          742,
+          2240,
+          774
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 41,
+      "printedText": "ripped off live central bankers tied to a burning stake."
+    },
+    {
+      "id": "p76r07",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 38,
+        "sourceId": "p76r07"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          836,
+          2240,
+          887
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 42,
+      "printedText": "Gotta be this way. Forty years of dumb post-1971 fiat money"
+    },
+    {
+      "id": "p76r08",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 39,
+        "sourceId": "p76r08"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          912,
+          2240,
+          960
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 43,
+      "printedText": "nonsense (and 10years of watching Peter Schiff miss buying bitcoin"
+    },
+    {
+      "id": "p76r09",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 40,
+        "sourceId": "p76r09"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          984,
+          2240,
+          1024
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 44,
+      "printedText": "since I started honey-badgering him to buy some at $1 back in 2011)"
+    },
+    {
+      "id": "p76r10",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 41,
+        "sourceId": "p76r10"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          1058,
+          2240,
+          1091
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 45,
+      "printedText": "have dulled shitcoiners' and nocoiners' minds."
+    },
+    {
+      "id": "p76r11",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 42,
+        "sourceId": "p76r11"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          1133,
+          2240,
+          1165
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 46,
+      "printedText": "The collective unconscious, controlled now by psychotic"
+    },
+    {
+      "id": "p76r12",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 43,
+        "sourceId": "p76r12"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          1205,
+          2240,
+          1237
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 47,
+      "printedText": "cats, plays \"Friends\" reruns all day in our heads."
+    },
+    {
+      "id": "p76r13",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 44,
+        "sourceId": "p76r13"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          1286,
+          2240,
+          1312
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 48,
+      "printedText": "Our imaginations and inventiveness have been euthanized"
+    },
+    {
+      "id": "p76r14",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 45,
+        "sourceId": "p76r14"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          1351,
+          2240,
+          1389
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 49,
+      "printedText": "by the rancid catnip of fiat money. Fortunately, bitcoin"
+    },
+    {
+      "id": "p76r15",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 46,
+        "sourceId": "p76r15"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          1425,
+          2240,
+          1458
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 50,
+      "printedText": "puts an end to the paper chase Manhattan Bank money"
+    },
+    {
+      "id": "p76r16",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 47,
+        "sourceId": "p76r16"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          1495,
+          2240,
+          1544
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 51,
+      "printedText": "laundering lobotomy. It's a stun gun to the genitals."
+    },
+    {
+      "id": "p76r17",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 48,
+        "sourceId": "p76r17"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          1572,
+          2240,
+          1603
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 52,
+      "printedText": "A monetary defibrillator to the treasure chest."
+    },
+    {
+      "id": "p76r18",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 49,
+        "sourceId": "p76r18"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          1965,
+          2000,
+          1994
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 53,
+      "printedText": "Don't believe me?"
+    },
+    {
+      "id": "p76r19",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 50,
+        "sourceId": "p76r19"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          2033,
+          2000,
+          2067
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 54,
+      "printedText": "Have you seen the president of El Salvador"
+    },
+    {
+      "id": "p76r20",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 51,
+        "sourceId": "p76r20"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          2106,
+          2000,
+          2141
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 55,
+      "printedText": "trolling the International Monetary Fund (IMF) on Twitter?"
+    },
+    {
+      "id": "p76r21",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 52,
+        "sourceId": "p76r21"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          2178,
+          2000,
+          2218
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 56,
+      "printedText": "He's taunting them, telling them he's \"buying the dip.\""
+    },
+    {
+      "id": "p76r22",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 53,
+        "sourceId": "p76r22"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          2252,
+          2000,
+          2286
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 57,
+      "printedText": "I tweeted President Nayib Bukele when he announced"
+    },
+    {
+      "id": "p76r23",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 54,
+        "sourceId": "p76r23"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          2334,
+          2000,
+          2360
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 58,
+      "printedText": "he was going to tap his nation's volcanoes to mine"
+    },
+    {
+      "id": "p76r24",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 55,
+        "sourceId": "p76r24"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          2400,
+          2000,
+          2447
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 59,
+      "printedText": "$1 billion in bitcoin — that he should sell"
+    },
+    {
+      "id": "p76r25",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 56,
+        "sourceId": "p76r25"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          2474,
+          2000,
+          2505
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 60,
+      "printedText": "billions worth of future bitcoin earnings"
+    },
+    {
+      "id": "p76r26",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 57,
+        "sourceId": "p76r26"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          2543,
+          2000,
+          2591
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 61,
+      "printedText": "collateralized \"Volcano Bonds\" to pay off the IMF"
+    },
+    {
+      "id": "p76r27",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 58,
+        "sourceId": "p76r27"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          2619,
+          2000,
+          2651
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 62,
+      "printedText": "loan and get rid of those leeches. I tagged Mike"
+    },
+    {
+      "id": "p76r28",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 59,
+        "sourceId": "p76r28"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          2691,
+          2000,
+          2724
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 63,
+      "printedText": "Novogratz in the tweet, figuring he could sell a"
+    },
+    {
+      "id": "p76r29",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 60,
+        "sourceId": "p76r29"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          2766,
+          2000,
+          2798
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 64,
+      "printedText": "bunch to his Wall Street crony pals, but so far he"
+    },
+    {
+      "id": "p76r30",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 61,
+        "sourceId": "p76r30"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          2839,
+          2000,
+          2871
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 65,
+      "printedText": "hasn't moved on it. I don't really trust that guy."
+    },
+    {
+      "id": "p76r31",
+      "printedPage": 76,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 62,
+        "sourceId": "p76r31"
+      },
+      "sourceLocator": {
+        "box": [
+          420,
+          2929,
+          2000,
+          2968
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 66,
+      "printedText": "Maybe because he's a shitcoiner at heart."
+    },
+    {
+      "id": "p77r01",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 63,
+        "sourceId": "p77r01"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          372,
+          2260,
+          403
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 67,
+      "printedText": "Meanwhile, back in El Salvador, 42% of the country"
+    },
+    {
+      "id": "p77r02",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 64,
+        "sourceId": "p77r02"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          445,
+          2260,
+          477
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 68,
+      "printedText": "is now hyperbitcoinized (at the time of writing)."
+    },
+    {
+      "id": "p77r03",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 65,
+        "sourceId": "p77r03"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          518,
+          2260,
+          557
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 69,
+      "printedText": "Jack Mallers' Strike app has gone from 20,000 new sign-ups"
+    },
+    {
+      "id": "p77r04",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 66,
+        "sourceId": "p77r04"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          592,
+          2260,
+          630
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 70,
+      "printedText": "a day to a mind-bending 100,000 and growing. At this rate, the whole"
+    },
+    {
+      "id": "p77r05",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 67,
+        "sourceId": "p77r05"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          663,
+          2260,
+          697
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 71,
+      "printedText": "country will be Toxic Bitcoin Maximalists within six months."
+    },
+    {
+      "id": "p77r06",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 68,
+        "sourceId": "p77r06"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          736,
+          2260,
+          782
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 72,
+      "printedText": "(Sorry Bhutan, you fell for that snake oil salesmen over"
+    },
+    {
+      "id": "p77r07",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 69,
+        "sourceId": "p77r07"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          808,
+          2260,
+          855
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 73,
+      "printedText": "at XRP. Get ready to experience shitcoin hell."
+    },
+    {
+      "id": "p77r08",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 70,
+        "sourceId": "p77r08"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          942,
+          2260,
+          973
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 74,
+      "printedText": "Has anyone heard from Roger Ver lately?"
+    },
+    {
+      "id": "p77r09",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 71,
+        "sourceId": "p77r09"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          1013,
+          2260,
+          1052
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 75,
+      "printedText": "big blockers got their heads ripped off during the Block"
+    },
+    {
+      "id": "p77r10",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 72,
+        "sourceId": "p77r10"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          1085,
+          2260,
+          1116
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 76,
+      "printedText": "Size War of 2017 and it's been going downhill ever since."
+    },
+    {
+      "id": "p77r11",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 73,
+        "sourceId": "p77r11"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          1155,
+          2260,
+          1200
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 77,
+      "printedText": "Particularly for Faketoshi and his army of high-priced"
+    },
+    {
+      "id": "p77r12",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 74,
+        "sourceId": "p77r12"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          1226,
+          2260,
+          1259
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 78,
+      "printedText": "London legal hacks who harass old women and children"
+    },
+    {
+      "id": "p77r13",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 75,
+        "sourceId": "p77r13"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          1299,
+          2260,
+          1330
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 79,
+      "printedText": "(and Peter McCormack) for no other reason than the U.K.'s"
+    },
+    {
+      "id": "p77r14",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 76,
+        "sourceId": "p77r14"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          1369,
+          2260,
+          1415
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 80,
+      "printedText": "legal system favors and protects demented shitcoiners,"
+    },
+    {
+      "id": "p77r15",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 77,
+        "sourceId": "p77r15"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          1440,
+          2260,
+          1487
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 81,
+      "printedText": "useless Royals, career criminals and banksters."
+    },
+    {
+      "id": "p77r16",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 78,
+        "sourceId": "p77r16"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          1505,
+          2260,
+          1554
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 82,
+      "printedText": "London is a scammer paradise. Full Stop."
+    },
+    {
+      "id": "p77r17",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 79,
+        "sourceId": "p77r17"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          1706,
+          2260,
+          1742
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 83,
+      "printedText": "EVERY SINGLE ONE OF"
+    },
+    {
+      "id": "p77r18",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 80,
+        "sourceId": "p77r18"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          1779,
+          2260,
+          1815
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 84,
+      "printedText": "THE BITCOIN WANNABES — BCH, BSV, ETH, XRP,"
+    },
+    {
+      "id": "p77r19",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 81,
+        "sourceId": "p77r19"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          1851,
+          2260,
+          1888
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 85,
+      "printedText": "ADA, AND 12,000 OTHER SHITCOINS, PLUS FIAT"
+    },
+    {
+      "id": "p77r20",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 82,
+        "sourceId": "p77r20"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          1925,
+          2260,
+          1962
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 86,
+      "printedText": "MONEY AND GOLD — IS FACING THE IGNOMINIOUS"
+    },
+    {
+      "id": "p77r21",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 83,
+        "sourceId": "p77r21"
+      },
+      "sourceLocator": {
+        "box": [
+          380,
+          1998,
+          2260,
+          2034
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 87,
+      "printedText": "FATE OF DEMONETIZATION VERSUS BITCOIN."
+    },
+    {
+      "id": "p77r22",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 84,
+        "sourceId": "p77r22"
+      },
+      "sourceLocator": {
+        "box": [
+          850,
+          2198,
+          2260,
+          2228
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 88,
+      "printedText": "It's a guaranteed, mathematical certainty. Let me explain"
+    },
+    {
+      "id": "p77r23",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 85,
+        "sourceId": "p77r23"
+      },
+      "sourceLocator": {
+        "box": [
+          850,
+          2270,
+          2260,
+          2308
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 89,
+      "printedText": "why, and this might be the first time you're hearing this,"
+    },
+    {
+      "id": "p77r24",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 86,
+        "sourceId": "p77r24"
+      },
+      "sourceLocator": {
+        "box": [
+          850,
+          2343,
+          2260,
+          2375
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 90,
+      "printedText": "bitcoin was designed to be a 51% attack on the world's"
+    },
+    {
+      "id": "p77r25",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 87,
+        "sourceId": "p77r25"
+      },
+      "sourceLocator": {
+        "box": [
+          850,
+          2415,
+          2260,
+          2455
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 91,
+      "printedText": "energy supply. Shitcoins, fiat and gold will"
+    },
+    {
+      "id": "p77r26",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 88,
+        "sourceId": "p77r26"
+      },
+      "sourceLocator": {
+        "box": [
+          850,
+          2488,
+          2260,
+          2520
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 92,
+      "printedText": "starve to death as the result of Bitcoin's"
+    },
+    {
+      "id": "p77r27",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 89,
+        "sourceId": "p77r27"
+      },
+      "sourceLocator": {
+        "box": [
+          850,
+          2560,
+          2260,
+          2594
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 93,
+      "printedText": "insatiable conquest of all available energy."
+    },
+    {
+      "id": "p77r28",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 90,
+        "sourceId": "p77r28"
+      },
+      "sourceLocator": {
+        "box": [
+          850,
+          2635,
+          2260,
+          2666
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 94,
+      "printedText": "And as bitcoin starves shitcoins, fiat and gold to death,"
+    },
+    {
+      "id": "p77r29",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 91,
+        "sourceId": "p77r29"
+      },
+      "sourceLocator": {
+        "box": [
+          850,
+          2708,
+          2260,
+          2739
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 95,
+      "printedText": "it simultaneously demonetizes war, violence, hatred and"
+    },
+    {
+      "id": "p77r30",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 92,
+        "sourceId": "p77r30"
+      },
+      "sourceLocator": {
+        "box": [
+          850,
+          2780,
+          2260,
+          2827
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 96,
+      "printedText": "the state itself. It does this by monetizing, for the first"
+    },
+    {
+      "id": "p77r31",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 93,
+        "sourceId": "p77r31"
+      },
+      "sourceLocator": {
+        "box": [
+          850,
+          2856,
+          2260,
+          2886
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 97,
+      "printedText": "time in human history, peace, love and understanding"
+    },
+    {
+      "id": "p77r32",
+      "printedPage": 77,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 94,
+        "sourceId": "p77r32"
+      },
+      "sourceLocator": {
+        "box": [
+          850,
+          2928,
+          2260,
+          2959
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 98,
+      "printedText": "(Elvis Costello was right)."
+    },
+    {
+      "id": "p78r01",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 95,
+        "sourceId": "p78r01"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          386,
+          2240,
+          414
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 99,
+      "printedText": "We've never had an economy and a money"
+    },
+    {
+      "id": "p78r02",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 96,
+        "sourceId": "p78r02"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          453,
+          2240,
+          487
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 100,
+      "printedText": "that incentivizes love before until bitcoin."
+    },
+    {
+      "id": "p78r03",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 97,
+        "sourceId": "p78r03"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          529,
+          2240,
+          559
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 101,
+      "printedText": "Love opens up the collective unconscious and"
+    },
+    {
+      "id": "p78r04",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 98,
+        "sourceId": "p78r04"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          599,
+          2240,
+          633
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 102,
+      "printedText": "our joint inner cosmic being. The economy of"
+    },
+    {
+      "id": "p78r05",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 99,
+        "sourceId": "p78r05"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          672,
+          2240,
+          706
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 103,
+      "printedText": "love is infinitely more efficient than hate and war."
+    },
+    {
+      "id": "p78r06",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 100,
+        "sourceId": "p78r06"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          809,
+          2240,
+          848
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 104,
+      "printedText": "I listen to these eggheads — Michael Saylor, Nic Carter,"
+    },
+    {
+      "id": "p78r07",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 101,
+        "sourceId": "p78r07"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          890,
+          2240,
+          924
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 105,
+      "printedText": "Marty Bent — who spend their days pouring over spreadsheets"
+    },
+    {
+      "id": "p78r08",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 102,
+        "sourceId": "p78r08"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          958,
+          2240,
+          996
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 106,
+      "printedText": "and gallons of iced espresso. The numbers don't lie."
+    },
+    {
+      "id": "p78r09",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 103,
+        "sourceId": "p78r09"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          1025,
+          2240,
+          1076
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 107,
+      "printedText": "The energy industry in its current form is gargantuanly wasteful"
+    },
+    {
+      "id": "p78r10",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 104,
+        "sourceId": "p78r10"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          1100,
+          2240,
+          1154
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 108,
+      "printedText": "and requires money printing and wars to keep it going — all in"
+    },
+    {
+      "id": "p78r11",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 105,
+        "sourceId": "p78r11"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          1180,
+          2240,
+          1214
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 109,
+      "printedText": "the service of an uber class of banksters who profit from war, poverty"
+    },
+    {
+      "id": "p78r12",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 106,
+        "sourceId": "p78r12"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          1245,
+          2240,
+          1287
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 110,
+      "printedText": "and misery with their fiat money Ponzi schemes. America left $85"
+    },
+    {
+      "id": "p78r13",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 107,
+        "sourceId": "p78r13"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          1322,
+          2240,
+          1360
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 111,
+      "printedText": "BILLION worth of hate toys in Afghanistan, for example, for a war"
+    },
+    {
+      "id": "p78r14",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 108,
+        "sourceId": "p78r14"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          1395,
+          2240,
+          1433
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 112,
+      "printedText": "that some estimate cost $2 trillion fiat cuck-bucks."
+    },
+    {
+      "id": "p78r15",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 109,
+        "sourceId": "p78r15"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          1546,
+          2240,
+          1580
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 113,
+      "printedText": "BITCOIN FIXES ALL THIS by replacing oil-dripping,"
+    },
+    {
+      "id": "p78r16",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 110,
+        "sourceId": "p78r16"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          1616,
+          2240,
+          1657
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 114,
+      "printedText": "corpse-ridden, poppy-harvesting fiat money with perfect bitcoin."
+    },
+    {
+      "id": "p78r17",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 111,
+        "sourceId": "p78r17"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          1694,
+          2240,
+          1726
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 115,
+      "printedText": "Remove the war incentive, and you remove the hate incentive."
+    },
+    {
+      "id": "p78r18",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 112,
+        "sourceId": "p78r18"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          1761,
+          2240,
+          1798
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 116,
+      "printedText": "Bitcoin fills the gap with love; our most natural tendency if given a chance."
+    },
+    {
+      "id": "p78r19",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 113,
+        "sourceId": "p78r19"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          1919,
+          2240,
+          1967
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 117,
+      "printedText": "The warmongers will start mining bitcoin for sure."
+    },
+    {
+      "id": "p78r20",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 114,
+        "sourceId": "p78r20"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          1992,
+          2240,
+          2040
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 118,
+      "printedText": "It's a fact baked into the game-theorized Bitcoin protocol,"
+    },
+    {
+      "id": "p78r21",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 115,
+        "sourceId": "p78r21"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          2078,
+          2240,
+          2108
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 119,
+      "printedText": "observable by anyone choosing to see it,"
+    },
+    {
+      "id": "p78r22",
+      "printedPage": 78,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 116,
+        "sourceId": "p78r22"
+      },
+      "sourceLocator": {
+        "box": [
+          425,
+          2147,
+          2240,
+          2179
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 120,
+      "printedText": "right there in the Genesis Block."
+    },
+    {
+      "id": "p78_graphic_0",
+      "printedPage": 78,
+      "role": "display-quotation",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-optional-display-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "optional_display_rows",
+        "index0": 1,
+        "sectionIndex0": 0,
+        "nativeContextIndex": 2,
+        "physicalLineWithinContext": 1
+      },
+      "reviewBasis": "primary-nativeRGB-visual-recheck-independent-review-pending",
+      "ordinal": 121,
+      "printedText": "The economy of"
+    },
+    {
+      "id": "p78_graphic_1",
+      "printedPage": 78,
+      "role": "display-quotation",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-optional-display-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "optional_display_rows",
+        "index0": 2,
+        "sectionIndex0": 1,
+        "nativeContextIndex": 2,
+        "physicalLineWithinContext": 2
+      },
+      "reviewBasis": "primary-nativeRGB-visual-recheck-independent-review-pending",
+      "ordinal": 122,
+      "printedText": "love is infinitely"
+    },
+    {
+      "id": "p78_graphic_2",
+      "printedPage": 78,
+      "role": "display-quotation",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-optional-display-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "optional_display_rows",
+        "index0": 3,
+        "sectionIndex0": 2,
+        "nativeContextIndex": 2,
+        "physicalLineWithinContext": 3
+      },
+      "reviewBasis": "primary-nativeRGB-visual-recheck-independent-review-pending",
+      "ordinal": 123,
+      "printedText": "more efficient than"
+    },
+    {
+      "id": "p78_graphic_3",
+      "printedPage": 78,
+      "role": "display-quotation",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-optional-display-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "optional_display_rows",
+        "index0": 4,
+        "sectionIndex0": 3,
+        "nativeContextIndex": 2,
+        "physicalLineWithinContext": 4
+      },
+      "reviewBasis": "primary-nativeRGB-visual-recheck-independent-review-pending",
+      "ordinal": 124,
+      "printedText": "hate and war."
+    },
+    {
+      "id": "p79r01",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 117,
+        "sourceId": "p79r01"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          411,
+          2240,
+          461
+        ],
+        "rotate_ccw_degrees": 2.5,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 125,
+      "printedText": "To wrap this up, as we move from a war and violence"
+    },
+    {
+      "id": "p79r02",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 118,
+        "sourceId": "p79r02"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          477,
+          2240,
+          524
+        ],
+        "rotate_ccw_degrees": 2.5,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 126,
+      "printedText": "economy to a peace and love economy, the efficiencies"
+    },
+    {
+      "id": "p79r03",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 119,
+        "sourceId": "p79r03"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          553,
+          2240,
+          589
+        ],
+        "rotate_ccw_degrees": 2.5,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 127,
+      "printedText": "of love — because bitcoin is infinitely more efficient"
+    },
+    {
+      "id": "p79r04",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 120,
+        "sourceId": "p79r04"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          623,
+          2240,
+          661
+        ],
+        "rotate_ccw_degrees": 2.5,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 128,
+      "printedText": "to transact and store wealth in than fiat, shitcoins"
+    },
+    {
+      "id": "p79r05",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 121,
+        "sourceId": "p79r05"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          698,
+          2240,
+          731
+        ],
+        "rotate_ccw_degrees": 2.5,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 129,
+      "printedText": "or gold — the overall energy consumption, even while"
+    },
+    {
+      "id": "p79r06",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 122,
+        "sourceId": "p79r06"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          767,
+          2240,
+          809
+        ],
+        "rotate_ccw_degrees": 2.5,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 130,
+      "printedText": "Bitcoin makes its 51% attack on global energy supply,"
+    },
+    {
+      "id": "p79r07",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 123,
+        "sourceId": "p79r07"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          835,
+          2240,
+          874
+        ],
+        "rotate_ccw_degrees": 2.5,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 131,
+      "printedText": "drops by 95% or more. That's right, Bitcoin will take"
+    },
+    {
+      "id": "p79r08",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 124,
+        "sourceId": "p79r08"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          908,
+          2240,
+          946
+        ],
+        "rotate_ccw_degrees": 2.5,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 132,
+      "printedText": "all the energy. In so doing, our energy consumption"
+    },
+    {
+      "id": "p79r09",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 125,
+        "sourceId": "p79r09"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          983,
+          2240,
+          1015
+        ],
+        "rotate_ccw_degrees": 2.5,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 133,
+      "printedText": "drops to near zero because our natural tendency toward"
+    },
+    {
+      "id": "p79r10",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 126,
+        "sourceId": "p79r10"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          1052,
+          2240,
+          1088
+        ],
+        "rotate_ccw_degrees": 2.5,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 134,
+      "printedText": "love and peace gets monetized for the first time in"
+    },
+    {
+      "id": "p79r11",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 127,
+        "sourceId": "p79r11"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          1122,
+          2240,
+          1158
+        ],
+        "rotate_ccw_degrees": 2.5,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 135,
+      "printedText": "our existence. Poverty disappears because the fear"
+    },
+    {
+      "id": "p79r12",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 128,
+        "sourceId": "p79r12"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          1194,
+          2240,
+          1229
+        ],
+        "rotate_ccw_degrees": 2.5,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 136,
+      "printedText": "of being poor disappears because Bitcoin allows us"
+    },
+    {
+      "id": "p79r13",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 129,
+        "sourceId": "p79r13"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          1263,
+          2240,
+          1301
+        ],
+        "rotate_ccw_degrees": 2.5,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 137,
+      "printedText": "to fully express ourselves individually in a cyber"
+    },
+    {
+      "id": "p79r14",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 130,
+        "sourceId": "p79r14"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          1332,
+          2240,
+          1371
+        ],
+        "rotate_ccw_degrees": 2.5,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 138,
+      "printedText": "sea of billions of souls all looking to connect and"
+    },
+    {
+      "id": "p79r15",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 131,
+        "sourceId": "p79r15"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          1410,
+          2240,
+          1442
+        ],
+        "rotate_ccw_degrees": 2.5,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 139,
+      "printedText": "express love for each other and the cost for this explosion"
+    },
+    {
+      "id": "p79r16",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 132,
+        "sourceId": "p79r16"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          1482,
+          2240,
+          1514
+        ],
+        "rotate_ccw_degrees": 2.5,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 140,
+      "printedText": "of peace is the same as a smile — virtually nothing."
+    },
+    {
+      "id": "p79r17",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 133,
+        "sourceId": "p79r17"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          1788,
+          2240,
+          1821
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 141,
+      "printedText": "Yes, for some, the Bitcoin rabbit hole ends up"
+    },
+    {
+      "id": "p79r18",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 134,
+        "sourceId": "p79r18"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          1863,
+          2240,
+          1894
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 142,
+      "printedText": "in John and Yoko's hotel room in Amsterdam"
+    },
+    {
+      "id": "p79r19",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 1,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 135,
+        "sourceId": "p79r19"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          1937,
+          2240,
+          1967
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 143,
+      "printedText": "during their 1969 bed-in."
+    },
+    {
+      "id": "p79r20",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 136,
+        "sourceId": "p79r20"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          2033,
+          2240,
+          2065
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 144,
+      "printedText": "Everyone will live their own experience in the rabbit hole."
+    },
+    {
+      "id": "p79r21",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 2,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 137,
+        "sourceId": "p79r21"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          2107,
+          2240,
+          2138
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 145,
+      "printedText": "We are getting our souls back and our minds."
+    },
+    {
+      "id": "p79r22",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 138,
+        "sourceId": "p79r22"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          2219,
+          2240,
+          2258
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 146,
+      "printedText": "Stacy and I have been living in here for 10 years."
+    },
+    {
+      "id": "p79r23",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 139,
+        "sourceId": "p79r23"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          2296,
+          2240,
+          2336
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 147,
+      "printedText": "We've seen some shit. Happy to share it all with you"
+    },
+    {
+      "id": "p79r24",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 140,
+        "sourceId": "p79r24"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          2372,
+          2240,
+          2404
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 148,
+      "printedText": "— the agony and ecstasy — as Bitcoin conquers fear"
+    },
+    {
+      "id": "p79r25",
+      "printedPage": 79,
+      "role": "body",
+      "paragraph": 3,
+      "sourceOrigin": "reused-frozen-body-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "rows",
+        "index0": 141,
+        "sourceId": "p79r25"
+      },
+      "sourceLocator": {
+        "box": [
+          500,
+          2443,
+          2240,
+          2476
+        ],
+        "rotate_ccw_degrees": 0,
+        "coordinate_space": "2544x3264 scan, fixed center rotation without expansion",
+        "selection_note": "Broad locator band; x extent is analysis crop, not glyph-tight text boundary."
+      },
+      "reviewBasis": "reused-existing142row-proof-not-reproofread-in-this-preparation",
+      "ordinal": 149,
+      "printedText": "and hate and replaces it with peace and love."
+    },
+    {
+      "id": "p79_signature_0",
+      "printedPage": 79,
+      "role": "signature",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-optional-display-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "optional_display_rows",
+        "index0": 5,
+        "sectionIndex0": 0,
+        "nativeContextIndex": 3,
+        "physicalLineWithinContext": 1
+      },
+      "reviewBasis": "primary-nativeRGB-visual-recheck-independent-review-pending",
+      "ordinal": 150,
+      "printedText": "MAX ♥"
+    },
+    {
+      "id": "p79_signature_1",
+      "printedPage": 79,
+      "role": "signature",
+      "paragraph": 0,
+      "sourceOrigin": "reused-frozen-optional-display-row",
+      "sourceRef": {
+        "path": "sources/printed-lines.json",
+        "population": "optional_display_rows",
+        "index0": 6,
+        "sectionIndex0": 1,
+        "nativeContextIndex": 3,
+        "physicalLineWithinContext": 2
+      },
+      "reviewBasis": "primary-nativeRGB-visual-recheck-independent-review-pending",
+      "ordinal": 151,
+      "printedText": "KEISER"
+    }
+  ]
+}

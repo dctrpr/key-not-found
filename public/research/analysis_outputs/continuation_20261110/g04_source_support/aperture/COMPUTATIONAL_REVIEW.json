@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "completedAtUTC": "2026-11-10T15:50:11.529457+00:00",
+  "classification": "independent-saved-visible-field-fragment-pixelset-proof",
+  "allChecksPass": true,
+  "checks": {
+    "artifactSourceAndCodePins": true,
+    "fixedPopulationAndUniqueFields": true,
+    "nativeSourceIdentityAndScalarPolarity": true,
+    "oldAtlasPixelMembership": true,
+    "independentClosedApertures": true,
+    "inverseDisjointAndBaseComplementPartition": true,
+    "allRLEAreaBoxesCropContactIntegrity": true,
+    "all261FragmentsMaximal8Connected": true,
+    "allOldParentLinks": true,
+    "allInner8BoundaryContactFlags": true,
+    "allUncertaintyAndUnassignedOwnershipFlags": true,
+    "allSourceTokensCopiedExactly": true,
+    "allSafeSummaryCountsAndHashMatch": true,
+    "privateFiles0600AndDirectory0700": true
+  },
+  "counts": {
+    "sourceRows": 3,
+    "fields": 7,
+    "inverseFields": 4,
+    "canonicalTokens": 34,
+    "sourceEdgeContactTokens": 13,
+    "fragments": 261,
+    "apertureBoundaryContactFragments": 84
+  },
+  "rows": [
+    {
+      "rowId": "p77r30",
+      "fields": 2,
+      "fragments": 84,
+      "boundaryContactFragments": 27,
+      "allPixelsetChecksPass": true
+    },
+    {
+      "rowId": "p78r09",
+      "fields": 2,
+      "fragments": 86,
+      "boundaryContactFragments": 16,
+      "allPixelsetChecksPass": true
+    },
+    {
+      "rowId": "p78r10",
+      "fields": 3,
+      "fragments": 91,
+      "boundaryContactFragments": 41,
+      "allPixelsetChecksPass": true
+    }
+  ],
+  "artifactSHA256": "6963c4358b4e6ccaacfa1933555bd07a84efccea92fccbfa9253e386001300ba",
+  "summarySHA256": "ed136227d7fc46c7e578624c958590afb9535fd904b1eb600b949d261723bd41",
+  "runnerSHA256": "dee2e3a0f36d95881dcadf9a2967b0166ee48a54750331ddd663932aa8993637",
+  "independentVerifierSHA256": "0dcf3d0300e6721400f63bf226cbaff6f699c8ba1d6203287d612791e1ad2876",
+  "auditMonitor": {
+    "unexpectedWorkspaceAccessAttempts": 0,
+    "networkAttempts": 0,
+    "subprocessAttempts": 0
+  },
+  "builderRerun": false,
+  "primaryKernelOrAtlasFunctionsImported": false,
+  "method": "Independent doubled-integer closed point-in-polygon; scalar RGB predicates; set-complement partition; BFS eight-connectivity; set-based inner8 boundary; saved RLE/parent equality.",
+  "measurementReady": false,
+  "ownershipAssigned": false,
+  "limits": [
+    "Computational proof of the saved NEW visible-field model only, not source perimeter validity, glyph ownership or original-glyph completeness.",
+    "Source13edge-contact token flags are preserved declarations, distinct from84computed fragment/aperture contacts.",
+    "No gap, median, encoded bitstream, decoder, candidate, address or network operation."
+  ]
+}

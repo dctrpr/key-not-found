@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "reviewId": "g04-atlas-independent-native-pixel-roundtrip",
+  "status": "PASS",
+  "completedAtUTC": "2026-11-10T15:25:54.296Z",
+  "pins": {
+    "atlasSha256": "d4cea4ad782883917153c590ef1d801e961784940a3d11dcb2e0b726881597b5",
+    "atlasBytes": 9056050,
+    "sourceInventorySha256": "a63192daa4b713d90f3e87cc379866d74df494ccf9aa1bc1251504cd32820a7d",
+    "sourceInventoryBytes": 106424,
+    "canonicalRowsSha256": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "sourcePdfSha256": "a30c61f8c49674afb7bccc6680d6477f6e919175386a2422de0a944db4e76c13",
+    "originalNativeManifestSha256": "2e938022745bc99e7b97c671850349cafd7786298c6116150a92931b0713e022",
+    "visualClassesSha256": "34c9bed34af9c1fadaf0d11ddb3ce51796b2e9393faea48612754af2c3620610",
+    "atlasCodeSha256": "60bae29d6d043175008040becd731a7a065ba65203f1ff12a7ee50166ceab168"
+  },
+  "coverage": {
+    "rows": 142,
+    "layersPerRow": 2,
+    "layerChecks": 284,
+    "canonicalTokens": 1258,
+    "lexicalWords": 1243,
+    "standalonePunctuation": 15,
+    "nativeCropFiles": 142,
+    "nativeCropBytes": 13780568,
+    "nativePixels": 21926736,
+    "layerTotals": {
+      "dark": {
+        "components": 7517,
+        "candidatePixels": 5623826,
+        "singletons": 714,
+        "borderComponents": 261,
+        "runs": 262922
+      },
+      "light": {
+        "components": 4964,
+        "candidatePixels": 15359356,
+        "singletons": 516,
+        "borderComponents": 426,
+        "runs": 260805
+      }
+    }
+  },
+  "verified": {
+    "everyNativePixelMatchesFixedPredicate": true,
+    "eachCandidatePixelAppearsExactlyOnce": true,
+    "noCandidatePixelOmitted": true,
+    "noNoncandidatePixelAdded": true,
+    "allComponentAreasAndExclusiveBoxesCorrect": true,
+    "allCropBorderFlagsCorrect": true,
+    "allComponentsExactlyEightConnected": true,
+    "noAdjacentComponentsImproperlySplit": true,
+    "allComponentIdsAndRasterOrderingCorrect": true,
+    "allOwnershipUnassigned": true,
+    "allSourceRowsAndTokensMatchCanonicalSource": true,
+    "allCropsByteMatchOriginalNativeManifest": true,
+    "allPNGCRCsValid": true,
+    "allPNGsIHDR_IDAT_IENDOnly": true,
+    "noPNGTrailingBytes": true,
+    "noUnsafePublicPathFieldFound": true
+  },
+  "method": "Independent native RGB channel comparisons, dense RLE reconstruction, cross-label eight-neighbor checks, and dense-neighbor run-graph BFS connectivity. No builder component or layer function was imported or reused.",
+  "privacyScope": "Path fields and PNG container metadata checked; no private marker map read. This does not newly certify glyph ownership or operator-free source-pixel content beyond the existing curation.",
+  "classification": "Source component inventory roundtrip only, not glyph containment, repaired G04, gap/bit result, candidate or key evidence.",
+  "measurementReady": false,
+  "ownershipAssigned": false,
+  "activity": {
+    "gapMeasurements": 0,
+    "gapMedians": 0,
+    "bitDerivations": 0,
+    "decoderCalls": 0,
+    "ownershipAssignments": 0,
+    "keyOrFormatChecks": 0,
+    "networkRequests": 0,
+    "subprocesses": 0,
+    "publicEdits": 0,
+    "gitActions": 0
+  },
+  "monitoredIO": {
+    "networkAttempts": 0,
+    "subprocessAttempts": 0
+  }
+}

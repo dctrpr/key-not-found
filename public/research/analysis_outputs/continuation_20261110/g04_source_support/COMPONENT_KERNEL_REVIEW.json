@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS-no-component-algorithm-defect",
+  "reviewedAtUTC": "2026-11-10T15:17:29.486Z",
+  "reviewedScriptSha256": "3b406f70ddb4efab59c48b78d060cb3f52eaef565ab0910353d4d4336dd4f9ad",
+  "builtinSyntheticAssertions": 11,
+  "independentBFSComparisons": 1782,
+  "exhaustiveTinyMaskComparisons": 669,
+  "randomAndViewAndLayerComparisons": 1113,
+  "independentScalarRGBPredicateChecks": 2730,
+  "checks": [
+    "exact8-connected pixel sets",
+    "full retention including singletons/borders/background",
+    "no overlaps or lost pixels",
+    "XYXY exclusive box and area",
+    "raster-first component ordering",
+    "border flags",
+    "noncontiguous array views",
+    "fixed dark/light thresholds",
+    "ownership remains unassigned"
+  ],
+  "monitoredIO": {
+    "targetOrNativeInputOpenAttempts": 0,
+    "subprocessAttempts": 0,
+    "networkAttempts": 0
+  },
+  "targetNativeInputsRead": false,
+  "targetAtlasRunPerformed": false,
+  "sourcePrivateOutputGateHardeningOwnedByRoot": true,
+  "materialAlgorithmDefects": [],
+  "limits": [
+    "Synthetic equivalence is not a formal proof for every mask.",
+    "This review covers the frozen component kernel and declared layer predicates; root is separately hardening source reproduction/output/protocol gates before public use.",
+    "No glyph ownership or physical containment is certified by component extraction alone."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "preparedBeforeTargetFragmentsAtUTC": "2026-11-10T15:45:38.486Z",
+  "classification": "source-feasibility-not-cipher-test",
+  "apertureProposalSHA256": "2140d714cb2a7a6c9ae6a910503a9df0a613c814c35e271c2f39de4dba56718d",
+  "scriptSHA256": "dee2e3a0f36d95881dcadf9a2967b0166ee48a54750331ddd663932aa8993637",
+  "kernelSHA256": "f8cab8c73e14aa6b34c2024f3a57b7eccc87e8542dba18fff6c01b18642bc026",
+  "definition": {
+    "classification": "source-feasibility-only, new visible-field model",
+    "pixelCoordinates": "native crop integer pixels; evaluate centre (x+0.5,y+0.5)",
+    "numericContract": {
+      "integerWidthRange": [
+        1,
+        2544
+      ],
+      "integerHeightRange": [
+        1,
+        200
+      ],
+      "integerVerticesOnly": true
+    },
+    "polygonConvention": "even-odd ray crossing OR point exactly on a polygon segment; integer pixel-edge vertices",
+    "candidateIntersection": "fixed atlas polarity predicate AND frozen printed-field aperture",
+    "newFragmentConnectivity": 8,
+    "ownership": "unassigned; fragments are not claimed to be old whole components or full original glyphs",
+    "edgeContact": "any retained fragment pixel on the inner eight-neighbour aperture boundary",
+    "uncertainty": "glyph-edge contacts remain explicit; no font continuation or missing support inferred",
+    "thresholdChanges": false,
+    "morphology": false,
+    "sizeFiltering": false,
+    "interwordGapMedianBitOrDecoderOperations": 0,
+    "candidateChecks": 0,
+    "networkRequests": 0
+  },
+  "kernelControls": {
+    "passed": true,
+    "assertions": 15,
+    "targetSourceReads": 0,
+    "gapOrMedianOrBitOrDecoderOperations": 0
+  },
+  "rootSourcePerimeterReview": {
+    "nativeRowsPreviouslyViewed": 3,
+    "nativeFieldCornerPanelsViewed": 4,
+    "nativeGlyphContactDetailPanelsViewed": 4,
+    "nominalCoordinatesConsistentWithVisibleFields": true,
+    "thirteenContactFlagsAreSourceUncertaintyNotRecovery": true,
+    "fullOriginalGlyphContourCertified": false
+  },
+  "rootHardeningAfterPeerStaticRead": "Set process umask077 and explicit3rows/7uniqueFields/4inverse/1base-per-row counts. Kernel and composition unchanged.",
+  "newFragmentsGeneratedBeforePlan": false
+}

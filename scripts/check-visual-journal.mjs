@@ -13,7 +13,7 @@ let previous = '';
 for (const entry of data.entries) {
   assert.match(entry.id, /^[a-z0-9-]+$/);
   assert.ok(!ids.has(entry.id)); ids.add(entry.id);
-  assert.ok(['funnel', 'history', 'source', 'reading', 'measurement'].includes(entry.diagram));
+  assert.ok(['funnel', 'history', 'source', 'reading', 'measurement', 'support'].includes(entry.diagram));
   assert.ok(['spread', 'stack', 'mirror'].includes(entry.scene.layout));
   assert.ok(entry.scene.source === undefined || ['issue27', 'funky'].includes(entry.scene.source));
   const pages = entry.scene.source === 'funky' ? [107, 108, 109, 110, 111, 112] : entry.scene.source === 'issue27' ? [78, 79, 80, 81] : [75, 76, 77, 78, 79, 80];
@@ -36,6 +36,40 @@ for (const entry of data.entries) {
       value = value.filter(q => q.activity).length;
     } else assert.equal(metric.operation, undefined);
     assert.equal(value, metric.value, 'Visual metric differs from its frozen result');
+  }
+  if (entry.diagram === 'support') {
+    assert.equal(result.outcome, 'source-support-partial-full-glyph-repair-not-established');
+    assert.equal(result.caseStatus, 'unsolved');
+    assert.equal(result.counts.remainingTokenMembershipsNotAccepted, 1236);
+    assert.equal(result.counts.sourceGlyphEdgeContactTokens, 13);
+    assert.equal(result.feasibility.fullOriginalGlyphSupportCertified, false);
+    assert.equal(result.feasibility.full142RowExpansionPerformed, false);
+    assert.ok(Object.values(result.activity).every(value => value === 0));
+    const readPinned = (reference) => {
+      const bytes = fs.readFileSync(path.join(root, 'public/research', reference.path));
+      assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), reference.sha256);
+      return JSON.parse(bytes);
+    };
+    const native = readPinned(result.sourceInventory);
+    assert.equal(native.rows.length, 142);
+    assert.equal(native.rows.reduce((n, row) => n + row.canonicalTokens.length, 0), 1258);
+    const atlas = readPinned(result.atlas);
+    assert.equal(atlas.sourceRows.length, 142);
+    assert.equal(atlas.sourceRows.reduce((n, row) => n + row.layers.dark.length + row.layers.light.length, 0), 12481);
+    const pilot = readPinned(result.acceptedPilot);
+    assert.equal(pilot.measurementReady, false);
+    assert.equal(pilot.rows.length, 2);
+    assert.equal(pilot.rows.reduce((n, row) => n + row.tokens.length, 0), 22);
+    assert.equal(pilot.rows.reduce((n, row) => n + row.tokens.reduce((k, token) => k + token.componentIDs.length, 0), 0), 125);
+    assert.equal(entry.exhibits.length, 2);
+    for (const exhibit of entry.exhibits) {
+      assert.ok(exhibit.path.startsWith('/research/analysis_outputs/continuation_20261110/g04_source_support/exhibits/'));
+      assert.ok(!exhibit.path.includes('..'));
+      const bytes = fs.readFileSync(path.join(root, 'public', exhibit.path));
+      assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), exhibit.sha256);
+      assert.equal(bytes.readUInt32BE(16), exhibit.width);
+      assert.equal(bytes.readUInt32BE(20), exhibit.height);
+    }
   }
   if (entry.diagram === 'measurement') {
     assert.equal(result.testId, 'g04-guard-trace');

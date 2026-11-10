@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "batchId": "keiser-column151-sand-three-readings-20261110",
+  "test": {
+    "id": "column151-sand-three-readings",
+    "title": "Three fixed Sand readings of the declared column151 source",
+    "family": "fixed-literal-source-reading",
+    "branchId": "text-lines",
+    "inputPaths": [
+      "sources/issue24-column151/SOURCE.json",
+      "scripts/batch20_support/english.txt",
+      "scripts/batch20_support/controls.json",
+      "sources/issue24-column151/NATIVE_SOURCE_PROVENANCE.json",
+      "sources/issue24-column151/INDEPENDENT_SOURCE_REVIEW.json",
+      "sources/issue24-column151/native-contexts/p73-opener.png",
+      "sources/issue24-column151/native-contexts/p75-article-title.png",
+      "sources/issue24-column151/native-contexts/p78-display-quote.png",
+      "sources/issue24-column151/native-contexts/p79-signature.png",
+      "sources/printed-lines.json",
+      "magazine.pdf"
+    ],
+    "implementationPaths": [
+      "scripts/column151_sand_probe.py",
+      "scripts/verify_column151_sand.py",
+      "scripts/batch20_common.py"
+    ],
+    "protocolPath": "analysis_outputs/continuation_20261110/column151_sand/PROTOCOL.json",
+    "sourceModel": {
+      "id": "issue24-declared-column151-physical-units-v1",
+      "sha256": "24242d3a31469a7bff5765a756fa51f6f8cfbd40f4a51737d852a172cd117c02",
+      "physicalUnits": 151,
+      "byPrintedPage": {
+        "73": 2,
+        "75": 33,
+        "76": 31,
+        "77": 32,
+        "78": 26,
+        "79": 27
+      },
+      "byRole": {
+        "column-name": 1,
+        "byline": 1,
+        "article-title": 1,
+        "body": 142,
+        "display-quotation": 4,
+        "signature": 2
+      },
+      "selection": "All151 stored units, including2 opener units and149 prior display-inclusive units; no role exclusion.",
+      "ordering": "Exact ordinal/id/page/role layout in code; one global index, no page/block reset.",
+      "encoding": "Preserve every printedText UTF-8 string; no case, punctuation, Unicode or wrap normalization.",
+      "originalTypesettingBytesRecovered": false
+    },
+    "readings": [
+      {
+        "id": "COLUMN151-FW-ALL",
+        "selectedRowCount": 151,
+        "rule": "First whitespace-delimited chunk of each row, retaining punctuation; join with one U+0020."
+      },
+      {
+        "id": "COLUMN151-ODD-LINES",
+        "selectedRowCount": 76,
+        "rule": "Whole rows at global1-based odd positions1,3,...,151; join with LF."
+      },
+      {
+        "id": "COLUMN151-EVEN-CONTROL",
+        "selectedRowCount": 75,
+        "rule": "Whole rows at global1-based even positions2,4,...,150; join with LF; parity control."
+      }
+    ],
+    "forms": {
+      "rule": "Exactly each unique saved text and its whitespace-only compacted form, deduplicated globally and sorted by Python string order.",
+      "maximumReadings": 3,
+      "maximumForms": 6,
+      "otherTransforms": false
+    },
+    "literalValidation": {
+      "commonFormats": [
+        "wif",
+        "hex64",
+        "bip39",
+        "extended_private",
+        "bip38",
+        "address",
+        "sec_public"
+      ],
+      "commonImplementationUnchanged": true,
+      "commonSha256": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d",
+      "commonOldMinikeyCheckerCalled": false,
+      "minikey": {
+        "lengths": [
+          22,
+          26,
+          30
+        ],
+        "shape": "Every overlapping embedded S-prefixed Base58 window of exactly22/26/30characters; no outer token boundary requirement.",
+        "validation": "SHA256(ASCII(value + question mark))[0]==0;8bit weak check only.",
+        "scalarSHA256OfMinikey": false,
+        "recordFingerprint": "Existing batch20 domain-separated record fingerprint; private only."
+      },
+      "zeroCheckBitFormatsAreOnlyShapeOrRangeLeads": true
+    },
+    "registrationGate": "Full40hex Git commit; protocol and all source/code/support blobs equal actual registered public/research bytes and current bytes; fixed public executing path.",
+    "caps": {
+      "targetJSONAndPrivateArtifactBytes": 2000000,
+      "registeredBlobBytes": 20000000,
+      "protocolBytes": 1000000,
+      "rowCodepoints": 2000,
+      "sourceCodepoints": 100000,
+      "readingCodepoints": 200000,
+      "totalFormCodepoints": 400000
+    },
+    "outputPolicy": {
+      "rawArtifacts": [
+        "READINGS.private.json",
+        "READINGS.private.txt",
+        "FORMS.private.json",
+        "VALIDATION.private.json"
+      ],
+      "rawOutsideEntireSiteCheckout": true,
+      "directoryMode": "0700",
+      "fileMode": "0600",
+      "publicReceipt": "Counts, declared scope and whole-artifact integrity only; no values, record fingerprints, addresses, SEC text or locators.",
+      "keyOutputsPublic": false,
+      "semanticConclusionComputed": false
+    },
+    "activityBoundary": {
+      "newSelectors": 0,
+      "reversals": 0,
+      "initialsOrFinals": 0,
+      "arbitraryScalarWindows": 0,
+      "proseToKeyHashes": 0,
+      "minikeyScalarHashes": 0,
+      "addressDerivations": 0,
+      "seedDerivations": 0,
+      "childKeyDerivations": 0,
+      "networkQueries": 0,
+      "transactions": 0
+    },
+    "limitations": [
+      "This is a declared151-unit transcription/ordering model, not original typesetting bytes or authenticated extraction instructions.",
+      "Three readings and fixed literal-format gates do not exclude readable messages, other readings, unknown record families or the whole column.",
+      "Weak minikey checksum, scalar-range-only hex and on-curve SEC matches are leads, not solutions or prize/funding proof.",
+      "Registration check is a local Git-object byte check; prior remote publication is separately established by the operator."
+    ]
+  },
+  "sourceHashes": {
+    "sources/issue24-column151/SOURCE.json": "24242d3a31469a7bff5765a756fa51f6f8cfbd40f4a51737d852a172cd117c02",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b",
+    "sources/issue24-column151/NATIVE_SOURCE_PROVENANCE.json": "07fed23e02ab0c096ba22795742070e0ac97697c47c82104d40491c2b36c379d",
+    "sources/issue24-column151/INDEPENDENT_SOURCE_REVIEW.json": "c8d7366c90291c916eeae0ccc3e3ac9296623206d4a2139be74ff5abcdda3736",
+    "sources/issue24-column151/native-contexts/p73-opener.png": "d8d88d894057781537c09024a4795f9d70ec3b0744f43665364d48f6d3f3e607",
+    "sources/issue24-column151/native-contexts/p75-article-title.png": "dd4ec1134234822828dfb834afe66d93b1562dca4c7e4bca2f35b537b2346050",
+    "sources/issue24-column151/native-contexts/p78-display-quote.png": "a1b079acd1dc52aa52f2b574693f6499fa02e616672d2cd39d18ea4bdbaf3019",
+    "sources/issue24-column151/native-contexts/p79-signature.png": "a2a7a8d09ccae306d828f5da47e72c8b2515d55ab039ee6aefb0aa95e004d43d",
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "magazine.pdf": "a30c61f8c49674afb7bccc6680d6477f6e919175386a2422de0a944db4e76c13"
+  },
+  "scriptHashes": {
+    "scripts/column151_sand_probe.py": "c08c194e39dffdc5b8f6de2b7000824169225ab992963aebc1b7d34cb98b14b6",
+    "scripts/verify_column151_sand.py": "8d54b4601b2164a13cd8fd8bc804ed24aee7d754afcea662d2d577e7b28c6935",
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d"
+  },
+  "draftStatus": "NOT_REGISTERED;allfinalpinsfilled;rootmustverify/copyexactpublicbytesandpublishregistrationbeforetargetrun.",
+  "registeredAtUTC": "2026-11-10T16:39:50.226Z",
+  "registrationPolicy": "Timestamp records protocol finalization; actual remote public commit publication is separately verified before target execution."
+}

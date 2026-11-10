@@ -10,6 +10,8 @@ The [visual lab and dated frames](VISUAL_GUIDE.md) make the source pages and com
 
 ## Research is continuing
 
+The [source-support follow-up](analysis_outputs/continuation_20261110/g04_source_support/RESULT.md) adds all 142 native source strips, 1,258 first-pass contrast labels, the exact component atlas and independently accepted masks for two pilot rows / 22 tokens. A separately declared inverse-field pilot restores readable interiors but leaves 13 glyph/background joins unresolved. Full original-glyph support is not established, and no corrective spacing decode ran. The public inputs and code let another solver inspect that limitation directly.
+
 The [spacing measurement audit](analysis_outputs/continuation_20261110/g04_measurement_audit/REPORT.md) records 38 optical-guard failures and two native source-strip exhibits. Zero complete-page decodes were retained/evaluated; the companion correction explains temporary partial-subset decodes discarded by the old runner. The [registered bit-free trace](analysis_outputs/continuation_20261110/g04_guard_trace/RESULT.md) now reproduces all 142 first-guard outcomes across 1,243 word regions, without gaps, bits or decodes. Source support for all 142 rows comes next, before a separately registered repair. Spacing is inconclusive.
 
 The [recovered 165-item historical RSS inventory](analysis_outputs/continuation_20261110/creator_rss/REPORT.md) supplies publication dates, not recording dates. Four fixed-term metadata matches were generic contexts; OP65’s descriptions are empty, its original recording date unresolved and its observed audio routes failed. No audio was recovered. The inventory does not clear creator recording windows.

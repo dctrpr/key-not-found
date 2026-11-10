@@ -1032,6 +1032,62 @@
         "Continued words after a first failure are counterfactual diagnostics.",
         "Original foreground selections are not source ground truth; gap values and decoders are outside scope."
       ]
+    },
+    {
+      "id": "g04-source-support",
+      "title": "Printed glyph support and inverse-field source feasibility",
+      "status": "partial",
+      "kind": "source-audit",
+      "independentTheory": false,
+      "scope": "First contrast review of 142 native body rows / 1,258 tokens; exact two-layer component atlas; independent two-row token-ownership pilot; separately declared three-row visible-field feasibility. No new cipher test.",
+      "result": "Independent pixel reconstruction verified all 12,481 source components. Two pilot rows / 22 tokens / 125 glyph components have accepted membership. The separate field model restores readable interiors but leaves 13 source joins and panel-edge residue unresolved. Full original-glyph support is not established; no corrective G04 decode ran.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/g04_source_support/RESULT.md",
+        "analysis_outputs/continuation_20261110/g04_source_support/RESULT.json",
+        "analysis_outputs/continuation_20261110/g04_source_support/ACCEPTED_PILOT.json",
+        "analysis_outputs/continuation_20261110/g04_source_support/PILOT_PEER_REVIEW.json",
+        "analysis_outputs/continuation_20261110/g04_source_support/ATLAS_REVIEW.json",
+        "analysis_outputs/continuation_20261110/g04_source_support/aperture/APERTURES.json",
+        "analysis_outputs/continuation_20261110/g04_source_support/aperture/COMPUTATIONAL_REVIEW.json",
+        "analysis_outputs/continuation_20261110/g04_source_support/aperture/VISUAL_REVIEW.json",
+        "analysis_outputs/continuation_20261110/g04_source_support/LOCAL_NATIVE_PDF_CHECK.json",
+        "sources/g04-native-rows/SOURCE.json",
+        "sources/g04-native-rows/VISUAL_CLASSES.json"
+      ],
+      "reproduce": [
+        "python3 scripts/build_component_atlas.py --self-test",
+        "python3 scripts/field_fragment_kernel.py"
+      ],
+      "limitations": [
+        "Qualitative classes do not certify OCR boxes, original font metadata or glyph containment.",
+        "Only 22 token memberships have independent acceptance; 1,236 remain unaccepted.",
+        "Whole-component grouping fails at some inverse boundaries; clipped readable fragments are not full-glyph repair.",
+        "Native layout searches are bounded; no public or local native-layout witness was recovered."
+      ]
+    },
+    {
+      "id": "column151-sand-three-readings",
+      "title": "Complete declared-column Sand reading correction",
+      "status": "in-progress",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "One frozen 151-unit editorial-column model: first chunks, odd whole rows and even-line control; at most six exact/whitespace-compacted forms. Includes two opener lines omitted from the old 149-unit frame.",
+      "result": "Source and independent code controls are complete. Target generation and literal-format checks await the verified public registration commit. No target result yet.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/column151_sand/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/column151_sand/PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/column151_sand/TECHNICAL_REVIEW.json",
+        "sources/issue24-column151/SOURCE.json",
+        "sources/issue24-column151/INDEPENDENT_SOURCE_REVIEW.json"
+      ],
+      "reproduce": [
+        "python3 scripts/column151_sand_probe.py --self-test"
+      ],
+      "limitations": [
+        "Small prefix/semantic coverage correction, not a new independent cipher family.",
+        "Declared editorial text excludes artwork/furniture and is not original typesetter Unicode.",
+        "Weak or range-only format leads require separate source/history review; no wallet operation follows."
+      ]
     }
   ],
   "countingPolicy": "This is a curated set of method families/source audits, not a total count of independent theories. Historical administrative gates and correlated variants are not counted as independent experiments. Falsified means only the concrete stated candidate/address scope.",

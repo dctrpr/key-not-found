@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "auditId": "all-1243-lexical-locator-origin",
+  "completedAtUTC": "2026-11-10T15:12:27.880Z",
+  "status": "locator-lineage-verified; glyph-support-not-certified",
+  "answer": {
+    "returnedVisionTextRangeBoxes": 1243,
+    "localEqualWidthOrCharacterCountInterpolationFound": 0,
+    "localAveragedOrInventedReplacementBoxesFound": 0,
+    "allFinalBoxesEqualOneRetainedObservedRangeBox": true,
+    "VisionInternalLocalizationMethodKnownFromTheseArtifacts": false,
+    "genuinePixelTightGlyphMeasurementClaimed": false,
+    "mixedWhat": "Recognition source views and lexical mapping/adjudication routes, not a local interpolation/physical-glyph measurement blend."
+  },
+  "metadataConsistencyChecks": {
+    "rows": 142,
+    "lexicalWords": 1243,
+    "rawObservedBoxEquality": 1243,
+    "normalizedRangeToCropFrameTransformMatches": 1243,
+    "standalonePunctuationTokens": 15,
+    "machineLexicalMappings": 1236,
+    "AIVisualTokenSubstitutionAdjudications": 7,
+    "visualAdjudicationsAlterObservedBox": false,
+    "allHumanVerifiedFlagsFalse": true,
+    "independentlyCertifiedGlyphSupportMasksStored": 0,
+    "punctuationOrCaseDifferenceFlagged": 13
+  },
+  "selectedSourceViews": {
+    "rows": {
+      "original-rgb": 132,
+      "gray-autocontrast-2x": 6,
+      "black-ink-110-2x": 3,
+      "white-ink-175-2x": 1
+    },
+    "words": {
+      "original-rgb": 1142,
+      "gray-autocontrast-2x": 63,
+      "black-ink-110-2x": 29,
+      "white-ink-175-2x": 9
+    }
+  },
+  "mappingStatusCounts": {
+    "unambiguous-normalized-token-match": 1236,
+    "visually-adjudicated-unique-token-substitution": 7
+  },
+  "centerGuardMetadata": {
+    "minimum": 3.0,
+    "maximum": 15.676531763465121,
+    "equal3Pixels": 1238,
+    "greater3Pixels": 5,
+    "greater12Pixels": 4,
+    "calibratedPhysicalErrorBound": false
+  },
+  "codeEvidence": [
+    {
+      "path": "scripts/batch20_vision.swift",
+      "lines": [
+        44,
+        64
+      ],
+      "supports": "VNRecognizeTextRequest accurate/en-US/no language correction; regex whitespace spans passed to VNRecognizedText.boundingBox(for:). Missing ranges produce null, not guessed boxes. Text-candidate confidence is emitted at observation level."
+    },
+    {
+      "path": "scripts/align_word_geometry_20261110.py",
+      "lines": [
+        24,
+        28
+      ],
+      "supports": "Normalized bottom-left API rectangle is affine-mapped to the known original crop frame. This is coordinate conversion, not token-width interpolation."
+    },
+    {
+      "path": "scripts/align_word_geometry_20261110.py",
+      "lines": [
+        37,
+        53
+      ],
+      "supports": "Duplicate groups choose one existing observed rectangle by longer observation/context/confidence; they do not average or split a box."
+    },
+    {
+      "path": "scripts/align_word_geometry_20261110.py",
+      "lines": [
+        61,
+        77
+      ],
+      "supports": "Canonical token identity is matched over all optimal edit alignments. A unique match with observation confidence>=0.5 supplies its existing box. The copied confidence is whole recognized candidate/observation confidence, not an independent glyph-edge calibration."
+    },
+    {
+      "path": "scripts/assemble_word_geometry_20261110.py",
+      "lines": [
+        109,
+        151
+      ],
+      "supports": "Whole-row source view selected lexically; seven frozen visual token substitutions copy the unique observed raw box unchanged."
+    }
+  ],
+  "fieldMeanings": {
+    "verified": "Canonical token-to-observation mapping, with seven source-pixel identity adjudications; not independently certified glyph containment.",
+    "humanVerified": "False for every word; source AI review is explicitly not human verification.",
+    "confidence": "Inherited recognized text-candidate/observation confidence; not per-pixel support or physical bbox error certainty.",
+    "centerUncertaintyPx": "Heuristic review guard, usually3 pixels plus duplicate-center disagreement; not a calibrated bound.",
+    "box": "Approximate OCR text-range rectangle in row-specific rotated coordinates.",
+    "originalUprightPolygon": "Inverse coordinate mapping of that rectangle, not a measured glyph contour.",
+    "rawObservations/rawWords/rawOCRWordId": "Evidence chain to API response, retained so a box can be audited without trusting the final label.",
+    "selectedSourceView/sourceCropSha256": "Which fixed representation generated the chosen API ranges;101words use processed2x representations.",
+    "punctuationOnlyTokens": "Fifteen standalone punctuation identities outside the lexical word unit; their old locations are null. They still require source ownership/support in a new fixture.",
+    "punctuationOrCaseDifference": "Flags any literal canonical/OCR difference. Machine identity normalizes away case/punctuation; an accepted token association therefore does not certify attached punctuation is inside the OCR range box."
+  },
+  "coordinateAndPhotometricLimits": [
+    "Row frames are2544x3264, top-left origin, after the declared fixed-center rotation. Page79 first paragraph uses2.5degrees; other rows0.",
+    "Second-pass source crops use gray/autocontrast or fixed dark/light thresholds and2x LANCZOS scaling. A copied API box from those representations is not direct native-pixel segmentation.",
+    "Source-preparation rotation explicitly sets white fill; frozen G04 rotate call leaves fill unspecified. Keep native pixels and every future frame/fill mapping explicit; this audit did not measure whether any inspected glyph is affected.",
+    "No Apple implementation internals or original typesetting font metrics are exposed. Numeric regularity alone does not establish how the framework internally localizes a substring."
+  ],
+  "substantiveSupportPath": {
+    "basis": "Use source pixel/component ownership independent of the OCR rectangle, consistent with the already proposed MASK_MECHANISM; no execution in this audit.",
+    "steps": [
+      "Freeze predeclared native source-context windows with full neighboring-row/word context, extending beyond old OCR boxes. Do not clip candidate support to the old ROI before annotation.",
+      "Build both fixed photometric candidate layers on those source pixels: dark maxRGB<130 and light minRGB>170 with spread<70. No edge-median polarity decision, threshold tuning, gap or decoder output. Label all8-connected components with stable pixel/source IDs; keep noise/background candidates too.",
+      "Source-review canonical-token ownership of components. Include attached punctuation and give every standalone punctuation token its own identity. Mark highlighter/page fields, art, strike-through, neighbor glyphs and ambiguous bridges separately.",
+      "For each token, independently review the full candidate component union against unmodified source context: glyph inclusion, diacritics/descenders/punctuation, foreign support and context-border clipping. A second pass confirms or rejects membership before any extent is measured.",
+      "Certify containment only from this reviewed support: all reviewed possible-support pixels/envelope inside the proposed ROI => contained; definite glyph support outside => not contained; uncertainty intersecting the ROI edge => unknown. Definite-support and fringe-boundary intervals can establish clear yes/no cases without claiming every antialias pixel is known.",
+      "Freeze accepted source masks/component membership and unknowns. Only a later separately registered routine may measure extents/gaps while retaining the declared original encoding. No source annotation may be chosen by decoded language, acceptance count or key validity."
+    ],
+    "positivePilotFeasibility": "Existing source-only pilot recognizes readable dark-on-paper tokens and light-on-dark/orange tokens, including two standalone dashes. These provide concrete visibility classes for component ownership, but its coarse enclosures are not yet support masks. A bounded whole-row pilot can prove at least clear support cases before scaling to all1258 identities.",
+    "requiredFirstDeliverable": "A source-pinned component atlas plus independent token membership/contamination/containment review for a fixed complete pilot population, yielding actual accepted masks where source permits—not a copied-box/all-unknown skeleton.",
+    "currentSourcePilotState": "22 qualitative token classifications and2coarse dash locators; zero measurement-ready supports. The mask mechanism exists as an unexecuted proposal."
+  },
+  "limits": [
+    "All1243 exact lineage checks establish where locators came from, not that any box encloses every physical glyph pixel.",
+    "Canonical-token verification is normalized identity, not glyph-by-glyph coverage; attached punctuation and visually adjudicated character confusions need independent physical-support proof.",
+    "This audit classified no token as glyph-contained or noncontained, and produced no new raster mask, threshold statistic, measured ink bound or detector repair.",
+    "Only a fixed source-ownership fixture can resolve physical support; keep illegible/connected/occluded cases unknown without declaring all readable tokens unknowable."
+  ],
+  "sourcePins": [
+    {
+      "researchPath": "sources/word-geometry-20261110.json",
+      "bytes": 4660187,
+      "sha256": "e3348d0d60d3097b05d0afdb0a1fccf66409274408af9ae7a9369c37fe596e9f"
+    },
+    {
+      "researchPath": "sources/WORD-GEOMETRY.md",
+      "bytes": 4752,
+      "sha256": "fd6a8e70629cd0aef3517d14226aff2e3dd8b70e00550a24cbef4e7b8f5f238a"
+    },
+    {
+      "researchPath": "sources/word-geometry-adjudications-20261110.json",
+      "bytes": 5334,
+      "sha256": "0c06a877c46f98fe3b962dedf278d9993b95b35123cf88688b66b0c36cc7b1cc"
+    },
+    {
+      "researchPath": "scripts/batch20_vision.swift",
+      "bytes": 8343,
+      "sha256": "3a663b53c792d446e5c69bc5d599bdaf3ebfb5975e892d7dd1d055f61faeae49"
+    },
+    {
+      "researchPath": "scripts/prepare_word_geometry_20261110.py",
+      "bytes": 3456,
+      "sha256": "7aa6c81bc88e23267171da5c3d3af517b052c8553d2ede7aa48f7cf0f8fb41ca"
+    },
+    {
+      "researchPath": "scripts/align_word_geometry_20261110.py",
+      "bytes": 7887,
+      "sha256": "06e6b26114ff4753d47caf5159a28b3af823b996ad836f2f66b658eaa4e2cd60"
+    },
+    {
+      "researchPath": "scripts/assemble_word_geometry_20261110.py",
+      "bytes": 12057,
+      "sha256": "10d7ed899218fb49ba09aea95d055dcf6811240cd60ea5e6fe91ef6c0da04df8"
+    }
+  ],
+  "actions": {
+    "targetPixelMeasurements": 0,
+    "newOCRRequests": 0,
+    "newMasksOrComponentsGenerated": 0,
+    "gapOrMedianMeasurements": 0,
+    "bitOrDecoderOperations": 0,
+    "candidateOrKeyChecks": 0,
+    "networkRequests": 0,
+    "publicEdits": 0,
+    "gitActions": 0
+  }
+}

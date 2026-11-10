@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "completedAtUTC": "2026-11-10T15:42:45.765977+00:00",
+  "classification": "source-free-independent-static-and-synthetic-kernel-review",
+  "kernelSHA256": "f8cab8c73e14aa6b34c2024f3a57b7eccc87e8542dba18fff6c01b18642bc026",
+  "allComparisonsPass": true,
+  "independentCounts": {
+    "explicitPolygons": 16,
+    "randomPolygons": 400,
+    "maxNativePolygons": 2,
+    "orientationAndCyclicVariants": 800,
+    "apertureComparisons": 418,
+    "boundaryComparisons": 1230,
+    "exhaustive3x3BoundaryMasks": 512,
+    "randomBoundaryMasks": 300,
+    "invalidInputRejections": 20
+  },
+  "primarySyntheticControls": {
+    "passed": true,
+    "assertions": 15,
+    "targetSourceReads": 0,
+    "gapOrMedianOrBitOrDecoderOperations": 0
+  },
+  "auditMonitor": {
+    "forbiddenWorkspaceReadAttempts": 0,
+    "networkAttempts": 0,
+    "subprocessAttempts": 0
+  },
+  "oracle": "Scalar exact integer orientation and on-segment test in doubled coordinates; set-membership eight-neighbour boundary.",
+  "coordinateContract": "Integer vertices; native integer width1..2544 and height1..200. Closed inside-or-on polygon pixel-centre rule.",
+  "sourceInputsOpened": 0,
+  "targetAperturesOpened": 0,
+  "scopeLimits": [
+    "Only aperture_mask and inner_boundary exist in this kernel and were tested.",
+    "No eight-connected component extractor is implemented here or newly certified.",
+    "This is a new visible-field model, not unchanged old components or original-glyph containment.",
+    "Boolean2D ndarray is the inner_boundary caller contract; arbitrary dtypes were not reviewed.",
+    "No source polygon, native row, mask atlas, gap, median, encoded stream, decoder or candidate was read or run."
+  ],
+  "independentReviewScriptSHA256": "af3237e57db9026b967104869092927f2d097cd316760170f32ae28e212fa2d3",
+  "staticAssessment": [
+    "Closed inside-or-on segment semantics match the declared replacement definition.",
+    "Native integer dimensions/vertices bound exact half-integer orientation products; no arbitrary floating polygon contract is asserted.",
+    "inner_boundary correctly uses all eight neighbours, with outside-crop pixels false.",
+    "No source IO, threshold recomputation, clipping, morphology, or component extraction is implemented by these functions."
+  ]
+}

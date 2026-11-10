@@ -419,6 +419,58 @@
           "label": "Native row p75r08 · standalone dashes"
         }
       ]
+    },
+    {
+      "id": "g04-source-support",
+      "completedAtUTC": "2026-11-10T16:04:01.015Z",
+      "title": "Two rows checked. A source limit exposed.",
+      "summary": "Every body row received a first contrast review. Independent pixel checks verified the atlas, and two pilot rows now have accepted token masks.",
+      "result": "Only 22 token masks are independently accepted. Inverse-field joins and edge residue stop full original-glyph certification. Spacing remains inconclusive; no new decode ran.",
+      "diagram": "support",
+      "metrics": [
+        {
+          "label": "Source rows reviewed",
+          "value": 142,
+          "pointer": "/counts/sourceRowsVisuallyClassified"
+        },
+        {
+          "label": "Token masks checked",
+          "value": 22,
+          "pointer": "/counts/pilotTokensIndependentlyAccepted"
+        },
+        {
+          "label": "Glyph components",
+          "value": 125,
+          "pointer": "/counts/pilotGlyphComponentsAccepted"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/g04_source_support/RESULT.json",
+        "sha256": "4bbc7c885d59c07254cc977cffc673fad09d2bdce043282df5620e57eef97d48"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/g04_source_support/RESULT.md",
+      "scene": {
+        "layout": "spread",
+        "page": 78
+      },
+      "sceneNote": "Actual source scans open in 3D. The excerpts show accepted pilot memberships and remaining source uncertainty.",
+      "methodId": "g04-source-support",
+      "exhibits": [
+        {
+          "path": "/research/analysis_outputs/continuation_20261110/g04_source_support/exhibits/accepted-p75r08.png",
+          "sha256": "6e42912fbbaaf7f1e719ad833d7b9173d6ac6b0fbbda2c539fab03cd18e817bc",
+          "label": "Accepted pilot · separate words and dashes",
+          "width": 2544,
+          "height": 172
+        },
+        {
+          "path": "/research/analysis_outputs/continuation_20261110/g04_source_support/exhibits/visible-field-p78r09.png",
+          "sha256": "1392d34effbceb7552bc4b12cf9b11efea1da52b91aab95e726a7dd023ebfe20",
+          "label": "Field pilot · unresolved edge residue",
+          "width": 2544,
+          "height": 206
+        }
+      ]
     }
   ]
 }

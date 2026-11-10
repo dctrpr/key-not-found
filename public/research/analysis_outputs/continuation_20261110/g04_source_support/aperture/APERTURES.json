@@ -1,0 +1,1296 @@
+{
+  "version": 1,
+  "completedAtUTC": "2026-11-10T15:37:56.896Z",
+  "status": "FROZEN_RGB_ONLY_VISIBLE_FIELD_APERTURE_PROPOSAL_PENDING_PEER",
+  "sourceInventorySHA256": "a63192daa4b713d90f3e87cc379866d74df494ccf9aa1bc1251504cd32820a7d",
+  "visualClassesSHA256": "34c9bed34af9c1fadaf0d11ddb3ce51796b2e9393faea48612754af2c3620610",
+  "sourceCropAuthority": "Unchanged original pass1 native source strips, with page/crop origins pinned by curated SOURCE.json; not later OCR-selected crop boxes.",
+  "sourceModel": "MANUAL_VISIBLE_PRINTED_FIELD_APERTURE_V1",
+  "coordinateConvention": "Integer polygon vertices are nominal pixel-edge coordinates in native crop XY space; page vertices add sourceCropBox top-left. They are a declared visible-field model, not original typesetter geometry.",
+  "polygonSelection": "Manual perimeter annotation from native RGB rulers, full-field views and enlarged corners, before computing any new masks/fragments. Nominal straight edges interpolate across glyph-contact spans; no decoded output or gap measurement informs the polygons.",
+  "futureRasterizationConvention": "For the separately implemented model only: evaluate native pixel centers (x+0.5,y+0.5); inside or on a nominal inverse-field polygon belongs to that field. The base-page field is the crop domain minus every declared inverse field. No overlapping field ownership. This proposal does not execute rasterization.",
+  "uncertaintyConvention": "Each inverse-field edge has a fixed +/-2native-pixel source-perimeter uncertainty note; this is a limitation, not alternate polygons to sweep. At glyph/ambient joins the original separating contour is unobservable, so full original-glyph containment remains uncertified regardless of this finite band.",
+  "rows": [
+    {
+      "rowId": "p77r30",
+      "page": 77,
+      "sourceCropRelativePath": "sources/g04-native-rows/crops/p77r30.png",
+      "sourceCropSHA256": "4f6d204dc3526661f10287b1903e827c10f5337c7798d6cc6f7d387d3477b7a5",
+      "sourceCropBytes": 196491,
+      "sourceCropBox": [
+        0,
+        2768,
+        2544,
+        2839
+      ],
+      "rotationCCWDegrees": 0.0,
+      "dimensions": [
+        2544,
+        71
+      ],
+      "fields": [
+        {
+          "fieldId": "p77r30-base-page",
+          "kind": "base-page-complement",
+          "background": "dark-page",
+          "glyphForeground": "light",
+          "polygonCropPixelEdges": [
+            [
+              0,
+              0
+            ],
+            [
+              2544,
+              0
+            ],
+            [
+              2544,
+              71
+            ],
+            [
+              0,
+              71
+            ]
+          ],
+          "polygonPagePixelEdges": [
+            [
+              0,
+              2768
+            ],
+            [
+              2544,
+              2768
+            ],
+            [
+              2544,
+              2839
+            ],
+            [
+              0,
+              2839
+            ]
+          ],
+          "excludeFieldIDs": [
+            "p77r30-inverse-light-01"
+          ],
+          "canonicalTokenIDs": [
+            "p77r30w01",
+            "p77r30w02",
+            "p77r30w03",
+            "p77r30w09",
+            "p77r30w10",
+            "p77r30w11"
+          ],
+          "edges": [],
+          "notes": "Base page aperture is the native crop domain minus explicitly listed inverse fields. This sets contrast region only, not glyph ownership; peripheral page/scan artifacts remain unclassified until source proof.",
+          "fullOriginalGlyphContainmentCertified": false
+        },
+        {
+          "fieldId": "p77r30-inverse-light-01",
+          "kind": "printed-inverse-field",
+          "background": "light-inverse-field",
+          "glyphForeground": "dark",
+          "polygonCropPixelEdges": [
+            [
+              1235,
+              12
+            ],
+            [
+              1947,
+              13
+            ],
+            [
+              1947,
+              58
+            ],
+            [
+              1235,
+              58
+            ]
+          ],
+          "polygonPagePixelEdges": [
+            [
+              1235,
+              2780
+            ],
+            [
+              1947,
+              2781
+            ],
+            [
+              1947,
+              2826
+            ],
+            [
+              1235,
+              2826
+            ]
+          ],
+          "excludeFieldIDs": [],
+          "canonicalTokenIDs": [
+            "p77r30w04",
+            "p77r30w05",
+            "p77r30w06",
+            "p77r30w07",
+            "p77r30w08"
+          ],
+          "edges": [
+            {
+              "side": "top",
+              "nominalSegmentCrop": [
+                [
+                  1235,
+                  12
+                ],
+                [
+                  1947,
+                  13
+                ]
+              ],
+              "manualPerimeterUncertaintyPixels": 2,
+              "borderSupport": "Visible surrounding field border with unobservable spans where glyph and surrounding-page color join.",
+              "glyphContactTokenIDs": [
+                "p77r30w04",
+                "p77r30w05",
+                "p77r30w06",
+                "p77r30w07",
+                "p77r30w08"
+              ],
+              "originalGlyphContourSeparableAtContact": false
+            },
+            {
+              "side": "right",
+              "nominalSegmentCrop": [
+                [
+                  1947,
+                  13
+                ],
+                [
+                  1947,
+                  58
+                ]
+              ],
+              "manualPerimeterUncertaintyPixels": 2,
+              "borderSupport": "Visible field border/corner in native RGB; antialias/fringe position remains manual-model uncertainty.",
+              "glyphContactTokenIDs": [],
+              "originalGlyphContourSeparableAtContact": null
+            },
+            {
+              "side": "bottom",
+              "nominalSegmentCrop": [
+                [
+                  1947,
+                  58
+                ],
+                [
+                  1235,
+                  58
+                ]
+              ],
+              "manualPerimeterUncertaintyPixels": 2,
+              "borderSupport": "Visible field border/corner in native RGB; antialias/fringe position remains manual-model uncertainty.",
+              "glyphContactTokenIDs": [],
+              "originalGlyphContourSeparableAtContact": null
+            },
+            {
+              "side": "left",
+              "nominalSegmentCrop": [
+                [
+                  1235,
+                  58
+                ],
+                [
+                  1235,
+                  12
+                ]
+              ],
+              "manualPerimeterUncertaintyPixels": 2,
+              "borderSupport": "Visible field border/corner in native RGB; antialias/fringe position remains manual-model uncertainty.",
+              "glyphContactTokenIDs": [],
+              "originalGlyphContourSeparableAtContact": null
+            }
+          ],
+          "notes": "White printed field on dark page. Nominal top perimeter is interrupted by black glyphs joining dark page above; all five inverse tokens have visible top contact. Field bottom and side margins are visible.",
+          "fullOriginalGlyphContainmentCertified": false
+        }
+      ],
+      "tokens": [
+        {
+          "id": "p77r30w01",
+          "canonicalTokenIndex0": 0,
+          "canonicalText": "the",
+          "role": "lexical-word",
+          "fieldId": "p77r30-base-page",
+          "glyphForeground": "light",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p77r30w02",
+          "canonicalTokenIndex0": 1,
+          "canonicalText": "state",
+          "role": "lexical-word",
+          "fieldId": "p77r30-base-page",
+          "glyphForeground": "light",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p77r30w03",
+          "canonicalTokenIndex0": 2,
+          "canonicalText": "itself.",
+          "role": "lexical-word",
+          "fieldId": "p77r30-base-page",
+          "glyphForeground": "light",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p77r30w04",
+          "canonicalTokenIndex0": 3,
+          "canonicalText": "It",
+          "role": "lexical-word",
+          "fieldId": "p77r30-inverse-light-01",
+          "glyphForeground": "dark",
+          "sourceEdgeContactRecognized": true,
+          "contactSides": [
+            "top"
+          ],
+          "contactObservation": "Visible glyph/ambient-color join at nominated field edge; no font or missing contour inferred.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p77r30w05",
+          "canonicalTokenIndex0": 4,
+          "canonicalText": "does",
+          "role": "lexical-word",
+          "fieldId": "p77r30-inverse-light-01",
+          "glyphForeground": "dark",
+          "sourceEdgeContactRecognized": true,
+          "contactSides": [
+            "top"
+          ],
+          "contactObservation": "Visible glyph/ambient-color join at nominated field edge; no font or missing contour inferred.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p77r30w06",
+          "canonicalTokenIndex0": 5,
+          "canonicalText": "this",
+          "role": "lexical-word",
+          "fieldId": "p77r30-inverse-light-01",
+          "glyphForeground": "dark",
+          "sourceEdgeContactRecognized": true,
+          "contactSides": [
+            "top"
+          ],
+          "contactObservation": "Visible glyph/ambient-color join at nominated field edge; no font or missing contour inferred.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p77r30w07",
+          "canonicalTokenIndex0": 6,
+          "canonicalText": "by",
+          "role": "lexical-word",
+          "fieldId": "p77r30-inverse-light-01",
+          "glyphForeground": "dark",
+          "sourceEdgeContactRecognized": true,
+          "contactSides": [
+            "top"
+          ],
+          "contactObservation": "Visible glyph/ambient-color join at nominated field edge; no font or missing contour inferred.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p77r30w08",
+          "canonicalTokenIndex0": 7,
+          "canonicalText": "monetizing,",
+          "role": "lexical-word",
+          "fieldId": "p77r30-inverse-light-01",
+          "glyphForeground": "dark",
+          "sourceEdgeContactRecognized": true,
+          "contactSides": [
+            "top"
+          ],
+          "contactObservation": "Visible glyph/ambient-color join at nominated field edge; no font or missing contour inferred.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p77r30w09",
+          "canonicalTokenIndex0": 8,
+          "canonicalText": "for",
+          "role": "lexical-word",
+          "fieldId": "p77r30-base-page",
+          "glyphForeground": "light",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p77r30w10",
+          "canonicalTokenIndex0": 9,
+          "canonicalText": "the",
+          "role": "lexical-word",
+          "fieldId": "p77r30-base-page",
+          "glyphForeground": "light",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p77r30w11",
+          "canonicalTokenIndex0": 10,
+          "canonicalText": "first",
+          "role": "lexical-word",
+          "fieldId": "p77r30-base-page",
+          "glyphForeground": "light",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        }
+      ]
+    },
+    {
+      "rowId": "p78r09",
+      "page": 78,
+      "sourceCropRelativePath": "sources/g04-native-rows/crops/p78r09.png",
+      "sourceCropSHA256": "d8e95f16ea9095569af9c269ce73411be8db68545bbc7ccebc81131672f5178a",
+      "sourceCropBytes": 87333,
+      "sourceCropBox": [
+        0,
+        1013,
+        2544,
+        1088
+      ],
+      "rotationCCWDegrees": 0.0,
+      "dimensions": [
+        2544,
+        75
+      ],
+      "fields": [
+        {
+          "fieldId": "p78r09-base-page",
+          "kind": "base-page-complement",
+          "background": "light-paper",
+          "glyphForeground": "dark",
+          "polygonCropPixelEdges": [
+            [
+              0,
+              0
+            ],
+            [
+              2544,
+              0
+            ],
+            [
+              2544,
+              75
+            ],
+            [
+              0,
+              75
+            ]
+          ],
+          "polygonPagePixelEdges": [
+            [
+              0,
+              1013
+            ],
+            [
+              2544,
+              1013
+            ],
+            [
+              2544,
+              1088
+            ],
+            [
+              0,
+              1088
+            ]
+          ],
+          "excludeFieldIDs": [
+            "p78r09-inverse-dark-01"
+          ],
+          "canonicalTokenIDs": [
+            "p78r09w01",
+            "p78r09w02",
+            "p78r09w03",
+            "p78r09w04",
+            "p78r09w05",
+            "p78r09w06",
+            "p78r09w07",
+            "p78r09w08"
+          ],
+          "edges": [],
+          "notes": "Base page aperture is the native crop domain minus explicitly listed inverse fields. This sets contrast region only, not glyph ownership; peripheral page/scan artifacts remain unclassified until source proof.",
+          "fullOriginalGlyphContainmentCertified": false
+        },
+        {
+          "fieldId": "p78r09-inverse-dark-01",
+          "kind": "printed-inverse-field",
+          "background": "dark-inverse-field",
+          "glyphForeground": "light",
+          "polygonCropPixelEdges": [
+            [
+              1492,
+              17
+            ],
+            [
+              2148,
+              12
+            ],
+            [
+              2148,
+              60
+            ],
+            [
+              1492,
+              64
+            ]
+          ],
+          "polygonPagePixelEdges": [
+            [
+              1492,
+              1030
+            ],
+            [
+              2148,
+              1025
+            ],
+            [
+              2148,
+              1073
+            ],
+            [
+              1492,
+              1077
+            ]
+          ],
+          "excludeFieldIDs": [],
+          "canonicalTokenIDs": [
+            "p78r09w09",
+            "p78r09w10"
+          ],
+          "edges": [
+            {
+              "side": "top",
+              "nominalSegmentCrop": [
+                [
+                  1492,
+                  17
+                ],
+                [
+                  2148,
+                  12
+                ]
+              ],
+              "manualPerimeterUncertaintyPixels": 2,
+              "borderSupport": "Visible surrounding field border with unobservable spans where glyph and surrounding-page color join.",
+              "glyphContactTokenIDs": [
+                "p78r09w09",
+                "p78r09w10"
+              ],
+              "originalGlyphContourSeparableAtContact": false
+            },
+            {
+              "side": "right",
+              "nominalSegmentCrop": [
+                [
+                  2148,
+                  12
+                ],
+                [
+                  2148,
+                  60
+                ]
+              ],
+              "manualPerimeterUncertaintyPixels": 2,
+              "borderSupport": "Visible field border/corner in native RGB; antialias/fringe position remains manual-model uncertainty.",
+              "glyphContactTokenIDs": [],
+              "originalGlyphContourSeparableAtContact": null
+            },
+            {
+              "side": "bottom",
+              "nominalSegmentCrop": [
+                [
+                  2148,
+                  60
+                ],
+                [
+                  1492,
+                  64
+                ]
+              ],
+              "manualPerimeterUncertaintyPixels": 2,
+              "borderSupport": "Visible field border/corner in native RGB; antialias/fringe position remains manual-model uncertainty.",
+              "glyphContactTokenIDs": [],
+              "originalGlyphContourSeparableAtContact": null
+            },
+            {
+              "side": "left",
+              "nominalSegmentCrop": [
+                [
+                  1492,
+                  64
+                ],
+                [
+                  1492,
+                  17
+                ]
+              ],
+              "manualPerimeterUncertaintyPixels": 2,
+              "borderSupport": "Visible field border/corner in native RGB; antialias/fringe position remains manual-model uncertainty.",
+              "glyphContactTokenIDs": [],
+              "originalGlyphContourSeparableAtContact": null
+            }
+          ],
+          "notes": "Dark printed field on light paper; top and bottom have a slight source slope. Light t/l/f ascenders interrupt the top field edge and join light paper. Side and bottom margins remain visible.",
+          "fullOriginalGlyphContainmentCertified": false
+        }
+      ],
+      "tokens": [
+        {
+          "id": "p78r09w01",
+          "canonicalTokenIndex0": 0,
+          "canonicalText": "The",
+          "role": "lexical-word",
+          "fieldId": "p78r09-base-page",
+          "glyphForeground": "dark",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r09w02",
+          "canonicalTokenIndex0": 1,
+          "canonicalText": "energy",
+          "role": "lexical-word",
+          "fieldId": "p78r09-base-page",
+          "glyphForeground": "dark",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r09w03",
+          "canonicalTokenIndex0": 2,
+          "canonicalText": "industry",
+          "role": "lexical-word",
+          "fieldId": "p78r09-base-page",
+          "glyphForeground": "dark",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r09w04",
+          "canonicalTokenIndex0": 3,
+          "canonicalText": "in",
+          "role": "lexical-word",
+          "fieldId": "p78r09-base-page",
+          "glyphForeground": "dark",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r09w05",
+          "canonicalTokenIndex0": 4,
+          "canonicalText": "its",
+          "role": "lexical-word",
+          "fieldId": "p78r09-base-page",
+          "glyphForeground": "dark",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r09w06",
+          "canonicalTokenIndex0": 5,
+          "canonicalText": "current",
+          "role": "lexical-word",
+          "fieldId": "p78r09-base-page",
+          "glyphForeground": "dark",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r09w07",
+          "canonicalTokenIndex0": 6,
+          "canonicalText": "form",
+          "role": "lexical-word",
+          "fieldId": "p78r09-base-page",
+          "glyphForeground": "dark",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r09w08",
+          "canonicalTokenIndex0": 7,
+          "canonicalText": "is",
+          "role": "lexical-word",
+          "fieldId": "p78r09-base-page",
+          "glyphForeground": "dark",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r09w09",
+          "canonicalTokenIndex0": 8,
+          "canonicalText": "gargantuanly",
+          "role": "lexical-word",
+          "fieldId": "p78r09-inverse-dark-01",
+          "glyphForeground": "light",
+          "sourceEdgeContactRecognized": true,
+          "contactSides": [
+            "top"
+          ],
+          "contactObservation": "Visible glyph/ambient-color join at nominated field edge; no font or missing contour inferred.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r09w10",
+          "canonicalTokenIndex0": 9,
+          "canonicalText": "wasteful",
+          "role": "lexical-word",
+          "fieldId": "p78r09-inverse-dark-01",
+          "glyphForeground": "light",
+          "sourceEdgeContactRecognized": true,
+          "contactSides": [
+            "top"
+          ],
+          "contactObservation": "Visible glyph/ambient-color join at nominated field edge; no font or missing contour inferred.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        }
+      ]
+    },
+    {
+      "rowId": "p78r10",
+      "page": 78,
+      "sourceCropRelativePath": "sources/g04-native-rows/crops/p78r10.png",
+      "sourceCropSHA256": "58f55cefffa6e2bfa847c23e86d33ccbb99bc87cfdea3539b2f16cdb8b6843de",
+      "sourceCropBytes": 95385,
+      "sourceCropBox": [
+        0,
+        1088,
+        2544,
+        1166
+      ],
+      "rotationCCWDegrees": 0.0,
+      "dimensions": [
+        2544,
+        78
+      ],
+      "fields": [
+        {
+          "fieldId": "p78r10-base-page",
+          "kind": "base-page-complement",
+          "background": "light-paper",
+          "glyphForeground": "dark",
+          "polygonCropPixelEdges": [
+            [
+              0,
+              0
+            ],
+            [
+              2544,
+              0
+            ],
+            [
+              2544,
+              78
+            ],
+            [
+              0,
+              78
+            ]
+          ],
+          "polygonPagePixelEdges": [
+            [
+              0,
+              1088
+            ],
+            [
+              2544,
+              1088
+            ],
+            [
+              2544,
+              1166
+            ],
+            [
+              0,
+              1166
+            ]
+          ],
+          "excludeFieldIDs": [
+            "p78r10-inverse-dark-01",
+            "p78r10-inverse-dark-02"
+          ],
+          "canonicalTokenIDs": [
+            "p78r10w01",
+            "p78r10w02",
+            "p78r10w05",
+            "p78r10w11",
+            "p78r10w12",
+            "p78r10w13"
+          ],
+          "edges": [],
+          "notes": "Base page aperture is the native crop domain minus explicitly listed inverse fields. This sets contrast region only, not glyph ownership; peripheral page/scan artifacts remain unclassified until source proof.",
+          "fullOriginalGlyphContainmentCertified": false
+        },
+        {
+          "fieldId": "p78r10-inverse-dark-01",
+          "kind": "printed-inverse-field",
+          "background": "dark-inverse-field",
+          "glyphForeground": "light",
+          "polygonCropPixelEdges": [
+            [
+              767,
+              20
+            ],
+            [
+              1198,
+              17
+            ],
+            [
+              1198,
+              64
+            ],
+            [
+              767,
+              67
+            ]
+          ],
+          "polygonPagePixelEdges": [
+            [
+              767,
+              1108
+            ],
+            [
+              1198,
+              1105
+            ],
+            [
+              1198,
+              1152
+            ],
+            [
+              767,
+              1155
+            ]
+          ],
+          "excludeFieldIDs": [],
+          "canonicalTokenIDs": [
+            "p78r10w03",
+            "p78r10w04"
+          ],
+          "edges": [
+            {
+              "side": "top",
+              "nominalSegmentCrop": [
+                [
+                  767,
+                  20
+                ],
+                [
+                  1198,
+                  17
+                ]
+              ],
+              "manualPerimeterUncertaintyPixels": 2,
+              "borderSupport": "Visible surrounding field border with unobservable spans where glyph and surrounding-page color join.",
+              "glyphContactTokenIDs": [
+                "p78r10w04"
+              ],
+              "originalGlyphContourSeparableAtContact": false
+            },
+            {
+              "side": "right",
+              "nominalSegmentCrop": [
+                [
+                  1198,
+                  17
+                ],
+                [
+                  1198,
+                  64
+                ]
+              ],
+              "manualPerimeterUncertaintyPixels": 2,
+              "borderSupport": "Visible field border/corner in native RGB; antialias/fringe position remains manual-model uncertainty.",
+              "glyphContactTokenIDs": [],
+              "originalGlyphContourSeparableAtContact": null
+            },
+            {
+              "side": "bottom",
+              "nominalSegmentCrop": [
+                [
+                  1198,
+                  64
+                ],
+                [
+                  767,
+                  67
+                ]
+              ],
+              "manualPerimeterUncertaintyPixels": 2,
+              "borderSupport": "Visible field border/corner in native RGB; antialias/fringe position remains manual-model uncertainty.",
+              "glyphContactTokenIDs": [],
+              "originalGlyphContourSeparableAtContact": null
+            },
+            {
+              "side": "left",
+              "nominalSegmentCrop": [
+                [
+                  767,
+                  67
+                ],
+                [
+                  767,
+                  20
+                ]
+              ],
+              "manualPerimeterUncertaintyPixels": 2,
+              "borderSupport": "Visible field border/corner in native RGB; antialias/fringe position remains manual-model uncertainty.",
+              "glyphContactTokenIDs": [],
+              "originalGlyphContourSeparableAtContact": null
+            }
+          ],
+          "notes": "First dark printed field. money has a narrow visible dark left margin in the enlarged RGB; no field-edge join is recognized for that token. printing has top-edge i/t contact. No full glyph containment follows from this source-only observation.",
+          "fullOriginalGlyphContainmentCertified": false
+        },
+        {
+          "fieldId": "p78r10-inverse-dark-02",
+          "kind": "printed-inverse-field",
+          "background": "dark-inverse-field",
+          "glyphForeground": "light",
+          "polygonCropPixelEdges": [
+            [
+              1305,
+              16
+            ],
+            [
+              1888,
+              12
+            ],
+            [
+              1888,
+              58
+            ],
+            [
+              1305,
+              62
+            ]
+          ],
+          "polygonPagePixelEdges": [
+            [
+              1305,
+              1104
+            ],
+            [
+              1888,
+              1100
+            ],
+            [
+              1888,
+              1146
+            ],
+            [
+              1305,
+              1150
+            ]
+          ],
+          "excludeFieldIDs": [],
+          "canonicalTokenIDs": [
+            "p78r10w06",
+            "p78r10w07",
+            "p78r10w08",
+            "p78r10w09",
+            "p78r10w10"
+          ],
+          "edges": [
+            {
+              "side": "top",
+              "nominalSegmentCrop": [
+                [
+                  1305,
+                  16
+                ],
+                [
+                  1888,
+                  12
+                ]
+              ],
+              "manualPerimeterUncertaintyPixels": 2,
+              "borderSupport": "Visible surrounding field border with unobservable spans where glyph and surrounding-page color join.",
+              "glyphContactTokenIDs": [
+                "p78r10w07",
+                "p78r10w08",
+                "p78r10w09",
+                "p78r10w10"
+              ],
+              "originalGlyphContourSeparableAtContact": false
+            },
+            {
+              "side": "right",
+              "nominalSegmentCrop": [
+                [
+                  1888,
+                  12
+                ],
+                [
+                  1888,
+                  58
+                ]
+              ],
+              "manualPerimeterUncertaintyPixels": 2,
+              "borderSupport": "Visible field border/corner in native RGB; antialias/fringe position remains manual-model uncertainty.",
+              "glyphContactTokenIDs": [],
+              "originalGlyphContourSeparableAtContact": null
+            },
+            {
+              "side": "bottom",
+              "nominalSegmentCrop": [
+                [
+                  1888,
+                  58
+                ],
+                [
+                  1305,
+                  62
+                ]
+              ],
+              "manualPerimeterUncertaintyPixels": 2,
+              "borderSupport": "Visible field border/corner in native RGB; antialias/fringe position remains manual-model uncertainty.",
+              "glyphContactTokenIDs": [],
+              "originalGlyphContourSeparableAtContact": null
+            },
+            {
+              "side": "left",
+              "nominalSegmentCrop": [
+                [
+                  1305,
+                  62
+                ],
+                [
+                  1305,
+                  16
+                ]
+              ],
+              "manualPerimeterUncertaintyPixels": 2,
+              "borderSupport": "Visible surrounding field border with unobservable spans where glyph and surrounding-page color join.",
+              "glyphContactTokenIDs": [
+                "p78r10w06"
+              ],
+              "originalGlyphContourSeparableAtContact": false
+            }
+          ],
+          "notes": "Second dark field. wars has a visible light upper-left stroke meeting surrounding paper at the left field edge. Top-edge ascenders/dots in to, keep, it and going meet surrounding paper. Right and bottom margins are visible.",
+          "fullOriginalGlyphContainmentCertified": false
+        }
+      ],
+      "tokens": [
+        {
+          "id": "p78r10w01",
+          "canonicalTokenIndex0": 0,
+          "canonicalText": "and",
+          "role": "lexical-word",
+          "fieldId": "p78r10-base-page",
+          "glyphForeground": "dark",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r10w02",
+          "canonicalTokenIndex0": 1,
+          "canonicalText": "requires",
+          "role": "lexical-word",
+          "fieldId": "p78r10-base-page",
+          "glyphForeground": "dark",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r10w03",
+          "canonicalTokenIndex0": 2,
+          "canonicalText": "money",
+          "role": "lexical-word",
+          "fieldId": "p78r10-inverse-dark-01",
+          "glyphForeground": "light",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r10w04",
+          "canonicalTokenIndex0": 3,
+          "canonicalText": "printing",
+          "role": "lexical-word",
+          "fieldId": "p78r10-inverse-dark-01",
+          "glyphForeground": "light",
+          "sourceEdgeContactRecognized": true,
+          "contactSides": [
+            "top"
+          ],
+          "contactObservation": "Visible glyph/ambient-color join at nominated field edge; no font or missing contour inferred.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r10w05",
+          "canonicalTokenIndex0": 4,
+          "canonicalText": "and",
+          "role": "lexical-word",
+          "fieldId": "p78r10-base-page",
+          "glyphForeground": "dark",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r10w06",
+          "canonicalTokenIndex0": 5,
+          "canonicalText": "wars",
+          "role": "lexical-word",
+          "fieldId": "p78r10-inverse-dark-02",
+          "glyphForeground": "light",
+          "sourceEdgeContactRecognized": true,
+          "contactSides": [
+            "left"
+          ],
+          "contactObservation": "Visible glyph/ambient-color join at nominated field edge; no font or missing contour inferred.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r10w07",
+          "canonicalTokenIndex0": 6,
+          "canonicalText": "to",
+          "role": "lexical-word",
+          "fieldId": "p78r10-inverse-dark-02",
+          "glyphForeground": "light",
+          "sourceEdgeContactRecognized": true,
+          "contactSides": [
+            "top"
+          ],
+          "contactObservation": "Visible glyph/ambient-color join at nominated field edge; no font or missing contour inferred.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r10w08",
+          "canonicalTokenIndex0": 7,
+          "canonicalText": "keep",
+          "role": "lexical-word",
+          "fieldId": "p78r10-inverse-dark-02",
+          "glyphForeground": "light",
+          "sourceEdgeContactRecognized": true,
+          "contactSides": [
+            "top"
+          ],
+          "contactObservation": "Visible glyph/ambient-color join at nominated field edge; no font or missing contour inferred.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r10w09",
+          "canonicalTokenIndex0": 8,
+          "canonicalText": "it",
+          "role": "lexical-word",
+          "fieldId": "p78r10-inverse-dark-02",
+          "glyphForeground": "light",
+          "sourceEdgeContactRecognized": true,
+          "contactSides": [
+            "top"
+          ],
+          "contactObservation": "Visible glyph/ambient-color join at nominated field edge; no font or missing contour inferred.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r10w10",
+          "canonicalTokenIndex0": 9,
+          "canonicalText": "going",
+          "role": "lexical-word",
+          "fieldId": "p78r10-inverse-dark-02",
+          "glyphForeground": "light",
+          "sourceEdgeContactRecognized": true,
+          "contactSides": [
+            "top"
+          ],
+          "contactObservation": "Visible glyph/ambient-color join at nominated field edge; no font or missing contour inferred.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r10w11",
+          "canonicalTokenIndex0": 10,
+          "canonicalText": "—",
+          "role": "standalone-punctuation",
+          "fieldId": "p78r10-base-page",
+          "glyphForeground": "dark",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r10w12",
+          "canonicalTokenIndex0": 11,
+          "canonicalText": "all",
+          "role": "lexical-word",
+          "fieldId": "p78r10-base-page",
+          "glyphForeground": "dark",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        },
+        {
+          "id": "p78r10w13",
+          "canonicalTokenIndex0": 12,
+          "canonicalText": "in",
+          "role": "lexical-word",
+          "fieldId": "p78r10-base-page",
+          "glyphForeground": "dark",
+          "sourceEdgeContactRecognized": false,
+          "contactSides": [],
+          "contactObservation": "No source-edge join recognized at native/enlarged RGB viewing scale; this is not exact full-glyph certification.",
+          "fullOriginalGlyphContainmentCertified": false,
+          "componentOwnershipAssigned": false
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "sourceRows": 3,
+    "canonicalTokens": 34,
+    "inverseFields": 4,
+    "baseComplementFields": 3,
+    "tokensWithRecognizedFieldEdgeContact": 13,
+    "standalonePunctuationTokens": 1
+  },
+  "visualProofs": [
+    {
+      "path": "p77r30-inverse-light-01-PROPOSED-outline.png",
+      "sha256": "923be0a305eba2219884ca3728a5f369d22a7d81d4b2feabcb10467c0400ffb2",
+      "role": "RGB-perimeter-annotation-only",
+      "fieldId": "p77r30-inverse-light-01",
+      "newMaskOrFragments": false,
+      "sourceXRange": [
+        1217,
+        1965
+      ]
+    },
+    {
+      "path": "p78r09-inverse-dark-01-PROPOSED-outline.png",
+      "sha256": "56806b95d00820b9283bdeb301f5196707d1526f3c86c0ccb8e8cde05be368b1",
+      "role": "RGB-perimeter-annotation-only",
+      "fieldId": "p78r09-inverse-dark-01",
+      "newMaskOrFragments": false,
+      "sourceXRange": [
+        1474,
+        2166
+      ]
+    },
+    {
+      "path": "p78r10-inverse-dark-01-PROPOSED-outline.png",
+      "sha256": "a116de27cfe0056d00cdbc4f86edf97066790b55cbb512494bd13cd6c1151d33",
+      "role": "RGB-perimeter-annotation-only",
+      "fieldId": "p78r10-inverse-dark-01",
+      "newMaskOrFragments": false,
+      "sourceXRange": [
+        749,
+        1216
+      ]
+    },
+    {
+      "path": "p78r10-inverse-dark-02-PROPOSED-outline.png",
+      "sha256": "7fa1ecf1b211520e7755452848dca14fafa440bf5adf2c2851006c45658030c1",
+      "role": "RGB-perimeter-annotation-only",
+      "fieldId": "p78r10-inverse-dark-02",
+      "newMaskOrFragments": false,
+      "sourceXRange": [
+        1287,
+        1906
+      ]
+    }
+  ],
+  "limits": [
+    "Visible-field membership is distinct from full original glyph/ink support. Edge-touching glyphs must not silently become certified complete words.",
+    "Every canonical token remains present; the one standalone dash remains a dark-on-paper token outside inverse fields.",
+    "No threshold parameters, morphology, component-size filter, font completion or word/OCR-box clipping is introduced.",
+    "No old whole component or source pixel is changed. Any future aperture intersections must create explicit new fragment labels with parent provenance.",
+    "Only these three source-risk rows are annotated. No all142 ownership or repaired G04 coverage/result is claimed.",
+    "Manual AI source annotations are pending independent source-perimeter review."
+  ],
+  "measurementReady": false,
+  "newFragmentsGenerated": false,
+  "activity": {
+    "newThresholdMasks": 0,
+    "apertureRasterizations": 0,
+    "componentIntersections": 0,
+    "newFragments": 0,
+    "gapMeasurements": 0,
+    "medians": 0,
+    "bits": 0,
+    "decoderCalls": 0,
+    "cryptoCalls": 0,
+    "networkRequests": 0
+  }
+}

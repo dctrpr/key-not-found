@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "completedAtUTC": "2026-11-10T16:04:01.015Z",
+  "outcome": "source-support-partial-full-glyph-repair-not-established",
+  "caseStatus": "unsolved",
+  "classification": "source-preparation-and-feasibility-not-new-cipher-test",
+  "independentTheory": false,
+  "counts": {
+    "sourceRowsVisuallyClassified": 142,
+    "sourceTokensVisuallyClassified": 1258,
+    "nativeSourceCrops": 142,
+    "allAtlasComponents": 12481,
+    "atlasLayers": 284,
+    "nativeSourcePixelsVerified": 21926736,
+    "pilotRows": 2,
+    "pilotTokensIndependentlyAccepted": 22,
+    "pilotGlyphComponentsAccepted": 125,
+    "pilotNonGlyphComponentsAccepted": 32,
+    "pilotAllComponentsAccounted": 157,
+    "remainingTokenMembershipsNotAccepted": 1236,
+    "fieldFeasibilityRows": 3,
+    "fieldFeasibilityTokens": 34,
+    "newFieldFragments": 261,
+    "apertureBoundaryContactFragments": 84,
+    "sourceGlyphEdgeContactTokens": 13,
+    "correctiveG04DecodingRuns": 0,
+    "localPDFOccurrencesInspected": 6,
+    "localUniquePDFsInspected": 2
+  },
+  "sourceInventory": {
+    "path": "sources/g04-native-rows/SOURCE.json",
+    "sha256": "a63192daa4b713d90f3e87cc379866d74df494ccf9aa1bc1251504cd32820a7d"
+  },
+  "atlas": {
+    "path": "analysis_outputs/continuation_20261110/g04_source_support/COMPONENT_ATLAS.json",
+    "sha256": "d4cea4ad782883917153c590ef1d801e961784940a3d11dcb2e0b726881597b5"
+  },
+  "acceptedPilot": {
+    "path": "analysis_outputs/continuation_20261110/g04_source_support/ACCEPTED_PILOT.json",
+    "sha256": "7675773204e4c19c64e53823865688e56dfcdb8611fb727bcbbcea37b6813adb"
+  },
+  "feasibility": {
+    "path": "analysis_outputs/continuation_20261110/g04_source_support/aperture/FRAGMENTS.json",
+    "sha256": "6963c4358b4e6ccaacfa1933555bd07a84efccea92fccbfa9253e386001300ba",
+    "fullOriginalGlyphSupportCertified": false,
+    "full142RowExpansionPerformed": false,
+    "aperturesRetunedAfterFragmentViews": false,
+    "decision": "Stop full-source containment certification at the pilot; do not replace unresolved contours with readable clipped masks."
+  },
+  "activity": {
+    "interwordGapCalculations": 0,
+    "gapMedians": 0,
+    "gapBits": 0,
+    "decoders": 0,
+    "candidateChecks": 0,
+    "walletOperations": 0
+  },
+  "limits": [
+    "One first qualitative AI pass per row; independent whole-pixel atlas verification is not independent glyph ownership proof.",
+    "Only22fixed-atlas token memberships have independent acceptance; no142-row source-mask completion or original-font claim.",
+    "A separately declared visible-field model remains distinguishable from original full-glyph support; boundary contacts and paper/panel residue remain unresolved.",
+    "Native/vector source recovery is bounded non-discovery; existing raster sources remain available."
+  ],
+  "localNativeLayoutWitnessRecovered": false
+}

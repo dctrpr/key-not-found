@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "completedAtUTC": "2026-11-10T16:37:36.925Z",
+  "status": "PASS_STATIC_AND_SOURCE_FREE_SYNTHETIC_PEER",
+  "primarySHA256": "c08c194e39dffdc5b8f6de2b7000824169225ab992963aebc1b7d34cb98b14b6",
+  "verifierSHA256": "8d54b4601b2164a13cd8fd8bc804ed24aee7d754afcea662d2d577e7b28c6935",
+  "primaryBuiltIn": {
+    "version": 1,
+    "testId": "column151-sand-three-readings",
+    "passed": true,
+    "checks": 64,
+    "controls": "Hand-written chunk/parity oracle; synthetic151source/registration/privacy guards; published7-format controls; published22/30+synthetic26 minikey controls.",
+    "targetSourceOpened": false,
+    "targetReadingsGenerated": false,
+    "oldMinikeyCheckerCalls": 0,
+    "bareMinikeyHashes": 0,
+    "addressDerivations": 0,
+    "seedDerivations": 0,
+    "networkQueries": 0
+  },
+  "verifierBuiltIn": {
+    "version": 1,
+    "status": "PASS",
+    "sourceFreeCompleteReadings": 6,
+    "rejectionControls": 30,
+    "sharedFormatPositiveControls": 7,
+    "independentMinikeyLengths": [
+      22,
+      26,
+      30
+    ],
+    "targetSourceReads": 0,
+    "targetReadingsGenerated": 0,
+    "scalarDerivations": 0,
+    "addressDerivations": 0,
+    "networkQueries": 0,
+    "primaryRunnerImports": 0
+  },
+  "extraPeerChecks": [
+    "Exactnormativedefinition+11source+3script populations agree.",
+    "Primaryfixedlayout equals independently enumerated151metadata identities.",
+    "Independent7rowpunctuation/Unicode/global-parity readings/forms agree.",
+    "Publicaddress-only fixture lead privacyflag and safe serialization agree.",
+    "Embedded22/30/overlap/barrier/windowshape/checksum/privatefingerprint results agree with independently implementedminichecker.",
+    "Recursive public allowlist payload fields absent.",
+    "Corrected22/26truncated-tail andoverlappingcounts+actualrecordlengths regressions pass."
+  ],
+  "audit": {
+    "targetSourceOrRawOutputOpenAttempts": 0,
+    "networkAttempts": 0,
+    "subprocessAttempts": 0,
+    "allowedCodeOrPublicControlOpens": 37,
+    "syntheticScratchRelativeOpens": 2
+  },
+  "targetRunInvoked": false,
+  "targetSourceOrReadingsOpened": false,
+  "actualGitOrRegistrationLookupPerformed": false,
+  "network": 0
+}

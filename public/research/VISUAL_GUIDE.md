@@ -12,4 +12,6 @@ New visual entries should record actual work, including failed tests, correction
 
 The spacing diagnostic frame links the actual native row strips and opens the 2023 source pages in 3D. Its 142 rows/1243 word regions / 0 baseline mismatches describe reproduction of the old optical guards;38 rows still fail. Those schematic counts do not certify source glyph support. The source-strip hashes are checked with the frame, and full-resolution files open separately.
 
+The source-support frame links accepted pilot masks and a separate inverse-field feasibility view. The latter retains edge residue and unobservable joins; it is not a completed source repair or a decoded message. All 142 native row views and the component atlas are downloadable with the research.
+
 The puzzle remains unsolved. The 3D display and visual log do not verify the prize funding.
