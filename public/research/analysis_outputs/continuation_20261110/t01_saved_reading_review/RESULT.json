@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "testId": "t01-saved-alternating-direction-semantic-review",
+  "caseStatus": "unsolved",
+  "completedAtUTC": "2026-11-10T21:31:35.827Z",
+  "completionTimePrecision": "Millisecond display truncates Reader B full-precision report; reader records retain exact reported UTC timestamps.",
+  "outcome": "complete-subjective-nonrecognition-in-saved-population",
+  "semanticReviewComplete": true,
+  "formalMessageExclusion": false,
+  "registrationCommit": "fccfd659d2476c58f9fe6ed7133ca5c472e82b03",
+  "registration": {
+    "path": "analysis_outputs/continuation_20261110/t01_saved_reading_review/REGISTRATION.json",
+    "sha256": "6b04b37a739eed17a07ba4714f4ad939caa81df55f63fbf1b9dcf774d43e5841"
+  },
+  "protocol": {
+    "path": "analysis_outputs/continuation_20261110/t01_saved_reading_review/PROTOCOL.json",
+    "sha256": "d3ac1e6242949945be6f5e334b8bf728ea85bc0307003391edcc264d38c326b8"
+  },
+  "technicalReview": {
+    "path": "analysis_outputs/continuation_20261110/t01_saved_reading_review/TECHNICAL_REVIEW.json",
+    "sha256": "d4c384b05cbfe07af3b653f145155234b05368eab7b4fe042061d066088bec5e"
+  },
+  "sourceHashes": {
+    "analysis_outputs/continuation_20261110/batch20/T01/STREAMS.json": "2900473b467c74c18ee29f841f0fbb150376ffa42ab8e9862d9d0957fce8b395",
+    "analysis_outputs/continuation_20261110/batch20/T01/RESULT.json": "f96c512124f8ab5314db28fe28627f6217d84a166f880c547c017b6f1acf386c",
+    "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json": "9a9441d1ad4e6a10c11addd06b31f9d443c0e82faa9caa1438379cc7c58742be",
+    "scripts/batch20_text.py": "dedd23de8dc8cd58d9dfd9916f1ecfabb1149d96b4c0b21c42ad47aae9b8f747",
+    "analysis_outputs/continuation_20261110/mirror_saved_reading_review/PAPER_SCOPE.json": "75163691276eff63e927dd1bad8ce238a227687af336d510b4ebea21a63e5076"
+  },
+  "scriptHashes": {
+    "scripts/pack_t01_semantic_readings.py": "0e9f827a5c5a0d554261fc4675d4b2479559a92f32dd9364c8e234d4353b1ecc"
+  },
+  "counts": {
+    "savedRecords": 196,
+    "uniqueTexts": 152,
+    "packetsPerReader": 12,
+    "codepointsPerReader": 114810,
+    "utf8BytesPerReader": 115170,
+    "readers": 2,
+    "readersRecognizingActionableInstruction": 0
+  },
+  "reviewers": [
+    {
+      "readerId": "A",
+      "review": {
+        "path": "analysis_outputs/continuation_20261110/t01_saved_reading_review/READER_A.json",
+        "sha256": "f5ee202d1f73bf562e86703e7486f3d63a8e66bd21db6d8beda796fed54e1c11"
+      },
+      "startedAtUTC": "2026-11-10T21:28:06.784605+00:00",
+      "completedAtUTC": "2026-11-10T21:31:21.349097+00:00",
+      "completeTextsRead": 152,
+      "sourceAliasesCovered": 196,
+      "codepointsRead": 114810,
+      "utf8BytesRead": 115170,
+      "recognizedActionableInstruction": false
+    },
+    {
+      "readerId": "ReaderB",
+      "review": {
+        "path": "analysis_outputs/continuation_20261110/t01_saved_reading_review/READER_B.json",
+        "sha256": "0e5f09969cfc8b795b688d8968e6990cbe118a8314091879248c2ad8429c877a"
+      },
+      "startedAtUTC": "2026-11-10T21:28:26.963387+00:00",
+      "completedAtUTC": "2026-11-10T21:31:35.827853+00:00",
+      "completeTextsRead": 152,
+      "sourceAliasesCovered": 196,
+      "codepointsRead": 114810,
+      "utf8BytesRead": 115170,
+      "recognizedActionableInstruction": false
+    }
+  ],
+  "readerContextLimitations": {
+    "readerAPriorExposureBroaderThanFrozenPlan": true,
+    "readerA": "Had read article/clues, filenames and high-level ledger summaries including earlier semantic nonrecognition. The additional ledger exposure was omitted from the specific human predeclaration and is a disclosed deviation.",
+    "readerB": "Reports a fresh separate context without earlier solver conclusions, earlier T01 result/streams, or sibling judgments. Puzzle purpose, aliases and protocol were known.",
+    "calibratedStatisticalIndependence": false,
+    "freshnessIsSelfReport": true,
+    "frozenPlanAmended": false
+  },
+  "sourcePreparation": {
+    "newCipherPopulationGenerated": false,
+    "originalExtractionRerun": false,
+    "exactUTF8DeduplicationOnly": true,
+    "wholeStringsUnmodified": true,
+    "all196AliasesRetained": true,
+    "copyPreparedBeforePublicRegistration": true,
+    "semanticReadersStartedAfterRemoteRegistration": true
+  },
+  "activity": {
+    "newTransforms": 0,
+    "newCipherOutputs": 0,
+    "keyChecks": 0,
+    "derivations": 0,
+    "historyQueries": 0,
+    "walletActions": 0
+  },
+  "interpretation": "Neither reader recognized a coherent second message or determinate next puzzle action in this fixed saved population. This closes the owning complete-reading coverage gap, not a cipher family or the puzzle.",
+  "limitations": [
+    "Semantic AI nonrecognition is subjective and can miss a message; it is not formal plaintext, key, cipher or puzzle exclusion.",
+    "Counters and hashes verify consistent reported coverage and input identity, not cognition, attention or statistical independence.",
+    "All 152 distinct saved strings were reviewed; no claim is made that they are 152 novel strings relative to every prior review.",
+    "These inherited text models and geometries do not certify every original printed glyph or a creator-selected direction/parity.",
+    "No editing, OCR repair, substring sweep, extra decoding or cryptographic validation was added.",
+    "No authenticated prize key, prize address, funded prize or recovery is established."
+  ],
+  "nextStep": "Seek a source-supported instruction or genuinely stronger source witness. A native/prepress Issue 24 PDF could resolve the 13 still-uncertified glyph/background joins; additional guesses or repeats of already-covered modeled mirror paths are not justified by this review."
+}

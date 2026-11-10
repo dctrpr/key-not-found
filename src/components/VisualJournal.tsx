@@ -12,6 +12,7 @@ const clock = (s: string) => new Date(s).toLocaleTimeString('en-GB', { hour: '2-
 
 export function VisualFrame({ entry, number }: { entry: Entry; number: number }) {
   const lime = '#d6ff3c', paper = '#f4f1e8', muted = '#aaa79d';
+  const isSavedReadingReview = entry.id === 't01-saved-reading-review-result';
   return <svg viewBox="0 0 900 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="visual-frame-title visual-frame-description">
     <title id="visual-frame-title">{entry.title}</title>
     <desc id="visual-frame-description">{entry.metrics.map(m => `${formatNumber(m.value)} ${m.label}`).join('; ')}. {entry.result}</desc>
@@ -87,14 +88,14 @@ export function VisualFrame({ entry, number }: { entry: Entry; number: number })
         <text x="40" y="367" fill={muted} fontSize="12">Source curation only. No new decoding or cryptographic check in this frame.</text>
       </> : <>
         <text x="40" y="101" fill={paper} fontSize="26" fontWeight="700">{entry.title}</text>
-        <text x="40" y="130" fill={muted} fontSize="13">Registered input → format checks → recorded outcome</text>
+        <text x="40" y="130" fill={muted} fontSize="13">{isSavedReadingReview ? 'Saved texts → two AI contexts → reported nonrecognition' : 'Registered input → format checks → recorded outcome'}</text>
         {entry.metrics.map((metric, i) => <g key={metric.label}>
           <rect x={40 + i * 288} y="190" width="244" height="132" rx="1" fill={i === 2 ? lime : '#191917'} stroke={i === 2 ? lime : '#45453c'}/>
           <text x={61 + i * 288} y="251" fill={i === 2 ? '#0e0e0d' : paper} fontSize="49" fontWeight="700" letterSpacing="-2">{formatNumber(metric.value)}</text>
           <text x={62 + i * 288} y="288" fill={i === 2 ? '#30341e' : muted} fontSize="13">{metric.label}</text>
           {i < 2 && <path d={`M ${294 + i * 288} 256 h 18 m -5 -5 l 5 5 -5 5`} stroke={muted} fill="none"/>}
         </g>)}
-        <text x="40" y="356" fill={muted} fontSize="12">{'Each count is tied to the frozen result. Read the test for its exact scope and limits.'}</text>
+        <text x="40" y="356" fill={muted} fontSize="12">{isSavedReadingReview ? 'Subjective review. Prior exposure is disclosed. No new format checks or formal message exclusion.' : 'Each count is tied to the frozen result. Read the test for its exact scope and limits.'}</text>
       </>}
       <line x1="35" x2="865" y1="397" y2="397" stroke="#34342e"/>
       <text x="40" y="420" fill={muted} fontSize="10">SOURCE {entry.source.sha256.slice(0, 16)} · {entry.completedAtUTC} · SCHEMATIC</text>

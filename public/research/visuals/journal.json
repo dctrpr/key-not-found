@@ -706,6 +706,42 @@
       },
       "sceneNote": "Actual Orange Party body pages 80–81. The lead requires registered whitespace compaction; this is a viewing aid, not a displayed or authenticated printed key.",
       "methodId": "stride26-history"
+    },
+    {
+      "id": "t01-saved-reading-review-result",
+      "completedAtUTC": "2026-11-10T21:31:35.827Z",
+      "title": "152 saved texts, read in full.",
+      "summary": "Two AI contexts report reading all saved alternating row texts for an intermediate instruction. Neither recognized one.",
+      "result": "Subjective nonrecognition in this fixed set. A's prior ledger exposure exceeded the plan; B reported a fresh context. No general exclusion.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Saved texts",
+          "value": 152,
+          "pointer": "/counts/uniqueTexts"
+        },
+        {
+          "label": "AI readers",
+          "value": 2,
+          "pointer": "/counts/readers"
+        },
+        {
+          "label": "Readers with a lead",
+          "value": 0,
+          "pointer": "/counts/readersRecognizingActionableInstruction"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/t01_saved_reading_review/RESULT.json",
+        "sha256": "8cc98491b3dddb55296801ea35b39cea1c608fff2c35ad11a76256c16dc9fad4"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/t01_saved_reading_review/RESULT.md",
+      "scene": {
+        "layout": "mirror",
+        "page": 75
+      },
+      "sceneNote": "Original Issue 24 scans. The mirror illustrates the source; the review used saved texts and did not rerun extraction.",
+      "methodId": "batch20-t01"
     }
   ]
 }

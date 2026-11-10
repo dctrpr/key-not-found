@@ -10,6 +10,10 @@ The [visual lab and dated frames](VISUAL_GUIDE.md) make the source pages and com
 
 ## Research is continuing
 
+A [bounded source-date follow-up](analysis_outputs/continuation_20261110/t01_saved_reading_review/SOURCE_FOLLOWUP.md) records the official 15 February 2023 livestream date of another surfaced video, outside both fixed windows without clearing its content. The exact derived OP65 publisher route displays a not-found page. Its recording and recording date remain unresolved; tool/index failures are distinguished from primary-page observations.
+
+The [complete T01 saved-text review](analysis_outputs/continuation_20261110/t01_saved_reading_review/RESULT.md) covers all 152 distinct texts / 196 existing labels. Two AI contexts report no actionable second message; input identity, reported coverage and chronology were audited. Reader A’s broader prior-ledger exposure is a disclosed deviation; Reader B reports fresh context. This is subjective nonrecognition, with no new extraction or cryptographic test, and no general exclusion. The dated visual frame preserves the finite result.
+
 The separately registered [stride26 history check](analysis_outputs/continuation_20261110/stride26_history/RESULT.md) completed: five Node/Python-agreed mainnet constructions, ten valid HTTP 200 responses, and all chain/mempool statistics zero. Independent saved-receipt review verified every vector and response. This supplies no funding evidence within the fixed scope; the weak checksum remains valid, and the puzzle is unsolved.
 
 The [four-population format check](analysis_outputs/continuation_20261110/columns_compatibility/RESULT.md) reproduced all original artifacts byte for byte: 43,699 correlated records and 5,557 forms summed across populations. One 26-character minikey checksum pass occurs only in a whitespace-compacted Orange Party stride form, also within the source-known subset. Independent full replay agrees. It is a chance-compatible private review lead, with no address derivation/history request in this experiment. The scans now include the Censorship column in all three viewer modes.

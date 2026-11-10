@@ -37,6 +37,110 @@ for (const entry of data.entries) {
     } else assert.equal(metric.operation, undefined);
     assert.equal(value, metric.value, 'Visual metric differs from its frozen result');
   }
+  if (entry.id === 't01-saved-reading-review-result') {
+    assert.equal(entry.diagram, 'funnel');
+    assert.equal(entry.methodId, 'batch20-t01');
+    assert.equal(entry.scene.source, undefined);
+    assert.equal(entry.scene.layout, 'mirror');
+    assert.equal(entry.scene.page, 75);
+    assert.equal(result.testId, 't01-saved-alternating-direction-semantic-review');
+    assert.equal(result.caseStatus, 'unsolved');
+    assert.equal(result.completedAtUTC, '2026-11-10T21:31:35.827Z');
+    assert.equal(result.semanticReviewComplete, true);
+    assert.equal(result.formalMessageExclusion, false);
+    assert.equal(result.outcome, 'complete-subjective-nonrecognition-in-saved-population');
+    assert.deepEqual(result.counts, {
+      savedRecords: 196, uniqueTexts: 152, packetsPerReader: 12,
+      codepointsPerReader: 114810, utf8BytesPerReader: 115170,
+      readers: 2, readersRecognizingActionableInstruction: 0,
+    });
+    assert.equal(result.readerContextLimitations.readerAPriorExposureBroaderThanFrozenPlan, true);
+    assert.equal(result.readerContextLimitations.calibratedStatisticalIndependence, false);
+    assert.equal(result.readerContextLimitations.freshnessIsSelfReport, true);
+    assert.equal(result.readerContextLimitations.frozenPlanAmended, false);
+    assert.equal(result.sourcePreparation.newCipherPopulationGenerated, false);
+    assert.equal(result.sourcePreparation.originalExtractionRerun, false);
+    assert.equal(result.sourcePreparation.wholeStringsUnmodified, true);
+    assert.equal(result.sourcePreparation.all196AliasesRetained, true);
+    assert.ok(Object.values(result.activity).every(value => value === 0));
+    assert.equal(result.registrationCommit, 'fccfd659d2476c58f9fe6ed7133ca5c472e82b03');
+    const readPinned = (reference) => {
+      assert.ok(reference.path.startsWith('analysis_outputs/') && !reference.path.includes('..'));
+      assert.match(reference.sha256, /^[a-f0-9]{64}$/);
+      const bytes = fs.readFileSync(path.join(root, 'public/research', reference.path));
+      assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), reference.sha256);
+      return JSON.parse(bytes);
+    };
+    const protocol = readPinned(result.protocol);
+    assert.equal(protocol.reviewId, result.testId);
+    assert.equal(protocol.sourcePreparation.savedRecords, 196);
+    assert.equal(protocol.sourcePreparation.exactUTF8Groups, 152);
+    assert.equal(protocol.sourcePreparation.uniqueTextCodepointsPerReader, 114810);
+    assert.equal(protocol.sourcePreparation.uniqueTextUTF8BytesPerReader, 115170);
+    assert.equal(protocol.sourcePreparation.packetsPerReader, 12);
+    assert.equal(protocol.sourcePreparation.allAliasesCoveredExactlyOnce, true);
+    assert.equal(protocol.sourcePreparation.allTextsWholeAndUnmodified, true);
+    assert.equal(Object.keys(protocol.packetHashes).length, 12);
+    const registration = readPinned(result.registration);
+    assert.equal(registration.registrationCommit, result.registrationCommit);
+    assert.equal(registration.protocolSha256, result.protocol.sha256);
+    assert.equal(registration.remoteHeadMatches, true);
+    assert.equal(registration.beforeSemanticReadersStarted, true);
+    assert.deepEqual(registration.packetHashes, protocol.packetHashes);
+    const technical = readPinned(result.technicalReview);
+    assert.equal(technical.passed, true);
+    assert.equal(technical.registrationCommit, result.registrationCommit);
+    assert.equal(technical.protocolSha256, result.protocol.sha256);
+    assert.equal(technical.registrationReceiptSha256, result.registration.sha256);
+    assert.equal(technical.registeredByteVerification.allCurrentBytesUnchanged, true);
+    assert.equal(technical.packetIdentity.wholeGroups, 152);
+    assert.equal(technical.packetIdentity.sourceAliasRecords, 196);
+    assert.equal(technical.packetIdentity.uniqueCodepoints, 114810);
+    assert.equal(technical.packetIdentity.uniqueUTF8Bytes, 115170);
+    assert.deepEqual(technical.packetIdentity.wholePacketHashes, protocol.packetHashes);
+    assert.equal(technical.coverageAttestationLimits.cognitiveReadingOrComprehensionProvenByCounters, false);
+    assert.equal(technical.coverageAttestationLimits.actualAttentionMeasured, false);
+    assert.equal(technical.deviation.frozenPlanOrProtocolAmended, false);
+    assert.equal(technical.readers.A.exposure.priorLedgerAndSemanticSummaryExposure, true);
+    assert.equal(technical.readers.A.exposure.broaderThanHumanPredeclaration, true);
+    assert.equal(technical.readers.B.exposure.freshnessIsSelfReport, true);
+    assert.equal(result.reviewers.length, 2);
+    assert.deepEqual(result.reviewers.map(reviewer => reviewer.readerId), ['A', 'ReaderB']);
+    const expectedGroupIds = Array.from({ length: 152 }, (_, i) => `T01-G${String(i + 1).padStart(3, '0')}`);
+    const packetGroupCounts = [7, 5, 7, 5, 7, 5, 7, 5, 20, 23, 30, 31];
+    for (const reviewer of result.reviewers) {
+      const review = readPinned(reviewer.review);
+      assert.equal(review.readerId, reviewer.readerId);
+      assert.equal(review.registrationCommit, result.registrationCommit);
+      assert.equal(review.reviewId, result.testId);
+      assert.equal(reviewer.recognizedActionableInstruction, false);
+      // These verify the frozen recorded coverage claims, not subjective cognition.
+      assert.equal(reviewer.completeTextsRead, 152);
+      assert.equal(reviewer.sourceAliasesCovered, 196);
+      assert.equal(reviewer.codepointsRead, 114810);
+      assert.equal(reviewer.utf8BytesRead, 115170);
+      assert.deepEqual(review.inputPacketDigests, protocol.packetHashes);
+      assert.deepEqual(review.groupIdsRead, expectedGroupIds);
+      assert.equal(review.uniqueGroupsRead, 152);
+      assert.equal(review.sourceAliasesCovered, 196);
+      assert.equal(review.uniqueTextCodepointsRead, 114810);
+      assert.equal(review.uniqueTextUTF8BytesRead, 115170);
+      assert.equal(review.recognizedActionableInstruction, false);
+      assert.equal(review.completedAtUTC, reviewer.completedAtUTC);
+      assert.ok(review.exposure && typeof review.exposure === 'object');
+      assert.equal(review.packetReviews.length, 12);
+      const recordedPacketGroupIds = [];
+      for (let i = 0; i < review.packetReviews.length; i++) {
+        const packet = review.packetReviews[i];
+        assert.equal(packet.packet, `PACKET_${String(i + 1).padStart(3, '0')}.json`);
+        assert.equal(packet.allGroupsRead, true);
+        const groupIds = packet.groupIDs;
+        assert.equal(groupIds.length, packetGroupCounts[i]);
+        recordedPacketGroupIds.push(...groupIds);
+      }
+      assert.deepEqual(recordedPacketGroupIds, expectedGroupIds);
+    }
+  }
   if (entry.id === 'stride26-history-result') {
     assert.equal(entry.diagram, 'funnel');
     assert.equal(result.testId, 'stride26-history');

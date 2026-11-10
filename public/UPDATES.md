@@ -123,3 +123,8 @@ Two AI assistants independently reviewed all 543 exported caption cues. Neither 
 The Visual Lab now includes the three retained Censorship pages 102–104 alongside the 2023 photographed-target scans, Orange Party and Funky Upheaval. Each source has a page board, layer stack and page-and-reflection view, with full scans and provenance links. The last Censorship page pairs with its preceding page; no missing page or scan is invented. The display arrangement is a viewing aid.
 
 The dated visual journal records the new four-population format check with hash-pinned counts and a link to its exact result. The recap, standalone SVGs and scene JSON preserve actual completed work for later films. Existing frames and timestamps remain intact; publication follows actual work. No funding receipt, research spending or recovered BTC is invented.
+
+
+## 10 November 2026 — The complete saved alternating-direction review
+
+Frame 19 records a completed review of all 152 exact distinct T01 texts / 196 original labels, with twelve pinned packets per reader. Two AI contexts report no actionable second message. The input hashes, reported coverage and chronology were technically audited; Reader A's broader prior-ledger exposure is explicitly disclosed, and Reader B reports a fresh context. This is subjective nonrecognition, not formal exclusion. No additional reading, cipher run or key check was performed. Existing frames remain intact; the new frame, SVG and scene JSON represent actual completed work for a later recap film.

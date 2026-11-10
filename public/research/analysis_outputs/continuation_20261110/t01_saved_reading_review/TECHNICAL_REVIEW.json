@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "reviewId": "t01-completed-semantic-review-technical-audit",
+  "status": "PASS-technical-with-disclosed-exposure-deviation",
+  "passed": true,
+  "completedAtUTC": "2026-11-10T21:37:46.270848+00:00",
+  "registrationCommit": "fccfd659d2476c58f9fe6ed7133ca5c472e82b03",
+  "protocolSha256": "d3ac1e6242949945be6f5e334b8bf728ea85bc0307003391edcc264d38c326b8",
+  "frozenHumanProtocolSha256": "371b3984523ff9566cd66bacb570090bf75540d185516fd2335736dd77a0f71f",
+  "frozenPlanSha256": "c984c90f8b426caa03f7c607a078dcf488a7863091f009f9fd47d02910332475",
+  "registrationReceiptSha256": "6b04b37a739eed17a07ba4714f4ad939caa81df55f63fbf1b9dcf774d43e5841",
+  "registeredByteVerification": {
+    "actualLocalCommit": true,
+    "sourcePins": 5,
+    "codePins": 1,
+    "preparationPins": 5,
+    "protocolPins": 1,
+    "declaredCurrentAndRegisteredBlobsCompared": 12,
+    "additionalFrozenHumanProtocolCompared": true,
+    "allCurrentBytesUnchanged": true,
+    "remoteVerifiedAtUTC": "2026-11-10T21:26:57.595Z",
+    "remoteVerificationSuppliedByRootReceipt": true,
+    "newRemoteQueryByAuditor": false
+  },
+  "packetIdentity": {
+    "allTwelveCurrentWholePacketDigestsEqualPublicRegisteredProtocol": true,
+    "wholePacketHashes": {
+      "PACKET_001.json": "55c8af212551e89439b1ed450c5d12cc87471daeccf1c0b2dce796caa0804d52",
+      "PACKET_002.json": "cfeb9ac3603f91e35b1757ae4c4e1fdd7829cddb54ccc88725682d2e5fce8923",
+      "PACKET_003.json": "c23a3a2f6a3bde30410927e242674d25e8c8210ba7a87d3be99b4334316fb331",
+      "PACKET_004.json": "e3c124bdec76e65f00b47830c11a531a6c633c3ec4524f8b337b82103ebb3e88",
+      "PACKET_005.json": "f763b187767ec64c3c7660a66e2afa8c11b52a37725496023c30bc68c5394287",
+      "PACKET_006.json": "f5c142f2488da47c3f8ef937991fb45221b86b79e82d1a4beb286480c097447a",
+      "PACKET_007.json": "315cc547d97ba4d76cd0d9091e8ac1a481035ba23182f0c9630a2071a354fd64",
+      "PACKET_008.json": "8baa5015d217e5ab8a1c73ba0ce52e739022732802be0fbc3561575b5c1404d2",
+      "PACKET_009.json": "54da231f514a924c17db2792507df4862da43f442f2b7c8c6fb478f2c55e6f12",
+      "PACKET_010.json": "18b1a1362d309a2ecec2fdf4d642fdf62ceebeff0984c494b0b6b7b0208c6333",
+      "PACKET_011.json": "66b8c09d2cf7c2d61d8fa2c098f452301d8edbbd8421f1308e8c006f3c6ed7cf",
+      "PACKET_012.json": "7eec0e5b6bb4951139160916b038468cab3102948de39555c61b2671d0731f00"
+    },
+    "mappingSha256": "7a52f759d1c8bf42a710481a11cfe3a89d876d541d60127dbae9aa154a0ade3c",
+    "inventorySha256": "e19641e8abfd4423037b92cbfa0813927008a92e0d78f5d5ab4c88f6c437b092",
+    "wholeGroups": 152,
+    "sourceAliasRecords": 196,
+    "uniqueCodepoints": 114810,
+    "uniqueUTF8Bytes": 115170,
+    "fullTextAliases": 28,
+    "wholeBodyFullTextAliases": 8,
+    "pageFullTextAliases": 20,
+    "maximumPacketTextCodepoints": 9950
+  },
+  "readers": {
+    "A": {
+      "reviewJSONSha256": "98e3cf1565da31d0336b4f9243e8468ca4b986c43eaddf0eb8d685bd8bae2ec3",
+      "reviewMDSha256": "f10777af05994a7682e713a4f5989f9acbb28fb50693c3a31c646c48d1424266",
+      "startedAtUTC": "2026-11-10T21:28:06.784605+00:00",
+      "completedAtUTC": "2026-11-10T21:31:21.349097+00:00",
+      "reportedGroups": 152,
+      "reportedSourceAliases": 196,
+      "reportedCodepoints": 114810,
+      "reportedUTF8Bytes": 115170,
+      "reportedPackets": 12,
+      "allPacketDigestsEqualRegisteredProtocol": true,
+      "allGroupAliasMappingDeclarationsConsistent": true,
+      "packetReadTimesMonotoneWithinInterval": true,
+      "reportedRecognizedActionableInstruction": false,
+      "reportedLeadGroups": 0,
+      "exposure": {
+        "priorLedgerAndSemanticSummaryExposure": true,
+        "broaderThanHumanPredeclaration": true,
+        "currentOtherReaderJudgmentsConsulted": false
+      }
+    },
+    "B": {
+      "reviewJSONSha256": "0cd600f0b8a048f74fc85ec0598293bbe706893fbfed664b8c0814ce3a61d8da",
+      "reviewMDSha256": "ff23f7190476523666c93d1acfa5a195bb569de269aac48466762f6ba2ebe421",
+      "startedAtUTC": "2026-11-10T21:28:26.963387+00:00",
+      "completedAtUTC": "2026-11-10T21:31:35.827853+00:00",
+      "reportedGroups": 152,
+      "reportedSourceAliases": 196,
+      "reportedCodepoints": 114810,
+      "reportedUTF8Bytes": 115170,
+      "reportedPackets": 12,
+      "allPacketDigestsEqualRegisteredProtocol": true,
+      "allGroupAliasMappingDeclarationsConsistent": true,
+      "packetReadTimesMonotoneWithinInterval": true,
+      "reportedRecognizedActionableInstruction": false,
+      "reportedLeadGroups": 0,
+      "exposure": {
+        "priorSolverConclusionsRead": false,
+        "siblingReaderJudgmentsRead": false,
+        "freshnessIsSelfReport": true
+      }
+    }
+  },
+  "privateArtifactHashes": {
+    "A": {
+      "PROGRESS.private.json": "e639b67291e5cb851052c2af181bf57b7d3a94db286745b70fcdcd0111b6c652",
+      "REVIEW.md": "f10777af05994a7682e713a4f5989f9acbb28fb50693c3a31c646c48d1424266",
+      "REVIEW.json": "98e3cf1565da31d0336b4f9243e8468ca4b986c43eaddf0eb8d685bd8bae2ec3"
+    },
+    "B": {
+      "PROGRESS.json": "d572c17b230c005a8584fd0458bbd0aaf953ce870fd793e650b2e30ec3f36cd6",
+      "REVIEW.md": "ff23f7190476523666c93d1acfa5a195bb569de269aac48466762f6ba2ebe421",
+      "REVIEW.json": "0cd600f0b8a048f74fc85ec0598293bbe706893fbfed664b8c0814ce3a61d8da"
+    }
+  },
+  "reportedIntervals": {
+    "A": {
+      "elapsedWallSeconds": 194.564492,
+      "includesToolInputAndReportWork": true,
+      "notAttentionOrCognitionMeasurement": true
+    },
+    "B": {
+      "elapsedWallSeconds": 188.864466,
+      "includesToolInputAndReportWork": true,
+      "notAttentionOrCognitionMeasurement": true
+    }
+  },
+  "coverageAttestationLimits": {
+    "reportsAndInputIdentitiesVerified": true,
+    "cognitiveReadingOrComprehensionProvenByCounters": false,
+    "toolOutputTruncationIndependentlyObservedByAuditor": false,
+    "actualAttentionMeasured": false,
+    "prohibitedActivityClaimsIndependentlyProcessMonitored": false,
+    "recognitionReinterpretedByAuditor": false,
+    "explanation": "Whole-group declarations and counters are consistent with all exact registered inputs. They attest reported coverage, not cognition, calibration or model independence."
+  },
+  "deviation": {
+    "id": "reader-A-prior-exposure-broader-than-specific-human-predeclaration",
+    "frozenPlanOrProtocolAmended": false,
+    "predeclaredHumanContext": "Original article/clues and some experiment filenames.",
+    "actualReportedAdditionalExposure": "Public high-level ledger summaries including prior semantic nonrecognition summaries.",
+    "currentOtherReaderJudgmentConsultationReported": false,
+    "effect": "Reading A is more exposed than the specific human protocol description. Preserve this methodological confound; do not describe it as fresh/blind or statistically independent. Packet identities and finite reported coverage remain valid.",
+    "readerB": "Reports no prior solver conclusions, no earlier T01 result/streams and no sibling judgments; this is self-report, with known puzzle/protocol labels."
+  },
+  "publicPrivacyReview": {
+    "A": {
+      "absoluteFilesystemPathJSONPointers": [],
+      "absoluteFilesystemPathMDLines": [],
+      "emptyPrivateLeadGroupIds": true,
+      "extraneousMemoryContextFieldPresent": false,
+      "rawLeadGroupIdsReported": 0,
+      "fullTargetTextFieldInReviewSchema": false,
+      "cryptographicPatternScanningPerformed": false
+    },
+    "B": {
+      "absoluteFilesystemPathJSONPointers": [],
+      "absoluteFilesystemPathMDLines": [],
+      "emptyPrivateLeadGroupIds": true,
+      "extraneousMemoryContextFieldPresent": true,
+      "rawLeadGroupIdsReported": 0,
+      "fullTargetTextFieldInReviewSchema": false,
+      "cryptographicPatternScanningPerformed": false
+    }
+  },
+  "publicationRecommendation": {
+    "preservePrivateOriginalJSONMDHashes": true,
+    "doNotRewriteFrozenPlanOrHumanProtocol": true,
+    "keepAActualExposureDisclosure": true,
+    "allowlistBExposureOmitFields": [
+      "otherContext"
+    ],
+    "dropEmptyPrivateSourceBasisIfNotNeeded": true,
+    "noAbsolutePathRedactionNeededInInspectedJSONMD": true,
+    "reason": "Generic unrelated injected-memory context is outside this research result, even though no project names or direct identity were found."
+  },
+  "reportedResult": {
+    "readerARecognizedActionableInstruction": false,
+    "readerBRecognizedActionableInstruction": false,
+    "meaning": "Two separate AI contexts report nonrecognition in this finite saved population. No formal plaintext/key/cipher/puzzle exclusion or statistical independence/calibration follows."
+  },
+  "privateModes": {
+    "readerDirectories0700": true,
+    "allReaderFiles0600": true
+  },
+  "auditorActions": {
+    "semanticReinterpretations": 0,
+    "newReadingTransforms": 0,
+    "candidateOrKeyChecks": 0,
+    "derivations": 0,
+    "networkHistoryQueries": 0,
+    "networkRequests": 0,
+    "publicEdits": 0,
+    "gitMutations": 0,
+    "localReadOnlyGitObjectInspections": true,
+    "wholeArtifactIntegrityHashesOnly": true
+  },
+  "technicalBlockers": []
+}
