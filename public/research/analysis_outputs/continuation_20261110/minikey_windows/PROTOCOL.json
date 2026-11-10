@@ -1,0 +1,92 @@
+{
+  "id": "minikey-window-audit",
+  "registeredAtUTC": "2026-11-10T04:08:29.986026+00:00",
+  "caseStatus": "unsolved",
+  "hypothesis": "A legacy 22-character or standard 30-character Bitcoin minikey may occur inside an already recorded clue-based reading, rather than occupying the entire reading.",
+  "input": "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.json",
+  "inputSha256": "1651a33dab46babf36f56439ddb409058cfa36712d96ead7d4200962b80817b9",
+  "selector": {
+    "frame": "body",
+    "subset": "all",
+    "parityBase": "all_printed_rows",
+    "resets": [
+      "global",
+      "page"
+    ],
+    "projections": [
+      {
+        "projection": "complete_lines",
+        "phases": [
+          "odd",
+          "even"
+        ]
+      },
+      {
+        "projection": "first_words",
+        "phases": [
+          "all"
+        ]
+      },
+      {
+        "projection": "first_word_initials",
+        "phases": [
+          "all"
+        ]
+      }
+    ],
+    "directions": "All existing down/up and normal/character_reverse variants matching those fields; no new variants generated."
+  },
+  "forms": [
+    "exact recorded text",
+    "remove whitespace only"
+  ],
+  "deduplication": "Unique recorded candidate text, then unique resulting form text, then unique shape-compatible minikey value. Preserve every source locator.",
+  "expectedScope": {
+    "recordedStreams": 22,
+    "uniqueForms": 42,
+    "positionWindows22": 113830,
+    "positionWindows30": 113494,
+    "totalPositionWindows": 227324
+  },
+  "minikeyLengths": [
+    22,
+    30
+  ],
+  "formatRule": "Exactly uppercase S followed by Base58 characters; SHA256 of ASCII candidate plus question mark must start with byte 00.",
+  "secretDerivation": "For format-valid minikeys only, one SHA256 of the exact ASCII candidate, as specified by the minikey format. No arbitrary text hashing.",
+  "addressScope": [
+    "P2PKH uncompressed",
+    "P2PKH compressed",
+    "P2SH-P2WPKH",
+    "P2WPKH",
+    "P2TR key-path with BIP341 TapTweak"
+  ],
+  "activityChecks": "Only if a format-valid minikey exists. Read-only Blockstream Esplora address statistics, with successful zero-activity outcomes independently checked via mempool.space; failures remain failures. Controls never queried. No cache reuse.",
+  "successCriterion": "A format-valid candidate is only a follow-up lead. A reproducible reading with activity requires private review and corroboration; no automatic claim that it is Max Keiser’s prize.",
+  "negativeCriterion": "If no minikey passes the formatcheck, exclude literal22/30 minikeys within these exact 42 forms. If valid minikeys exist but all declared derived addresses have successfully verified zero confirmed/mempooltransactions, exclude those concrete key/address interpretations at the recorded check time.",
+  "inconclusiveCriterion": "Scope/hash/control failure or any unresolved address lookup failure prevents a complete negative activity result.",
+  "stopRule": "No extra lengths, case changes, substitutions, punctuation deletion, padding, salts, repeated hashes, alternate encodings, extra address indices or post-hoc transformations in this run. New ideas require a new protocol.",
+  "sources": [
+    {
+      "url": "https://x.com/maxkeiser/status/1607378060172460032",
+      "use": "Creator-linked George Sand method; archivedresponsealreadyinpubliccorpus."
+    },
+    {
+      "url": "https://ciphermysteries.com/2010/05/16/george-sands-cryptography",
+      "use": "Alternate complete printed lines and first-word reading; applicability to this specific issue remains inferred."
+    },
+    {
+      "url": "https://en.bitcoin.it/wiki/Mini_private_key_format",
+      "use": "Standard 30/legacy 22 character format, 8-bit typo check, defined SHA256 secret conversion."
+    }
+  ],
+  "limitations": [
+    "This is a validator coverage correction, not a new independent cipher family.",
+    "First-word initials and mirror variants are inherited hypotheses; the creator did not specify minikey format.",
+    "The minikey check has only 8 bits; chance passes are expected in sufficiently large shape-compatible sets.",
+    "No authenticated prize address is known; inactive addresses do not exclude other encodings or derivation schemes.",
+    "Other subsets of the 2,034 recorded streams, including manually annotated bold selections, are outside this tight audit."
+  ],
+  "publication": "Register protocol and implementation before scanning; preserve original20261109files unchanged. Do not publish an operational secret or candidate locators if activity requires review.",
+  "candidateFingerprint": "SHA256 of ASCII domain KEY404/minikey-window-audit/fingerprint/v1 followed by NUL and the exact candidate. A plain SHA256(candidate) would be its private scalar and must not be published."
+}

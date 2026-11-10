@@ -2,6 +2,19 @@
   "updatedOn": "2026-11-10",
   "updates": [
     {
+      "id": "minikey-window-audit",
+      "date": "2026-11-10",
+      "category": "IN PROGRESS",
+      "title": "A gap in the old key checker. A fixed test.",
+      "body": "The earlier printed-line checker could miss a short Bitcoin minikey inside a longer reading. This run fixes the rule before checking: 22 existing clue-based readings, 42 text forms and every 22/30-character window. No new extraction or arbitrary hashing. Protocol and code are published before the scan; the result will state its limits.",
+      "evidence": "/research/analysis_outputs/continuation_20261110/minikey_windows/PROTOCOL.md",
+      "kind": "research",
+      "methodIds": [
+        "minikey-window-audit"
+      ],
+      "branchId": "text-lines"
+    },
+    {
       "id": "official-contract",
       "date": "2026-11-10",
       "category": "SITE UPDATE",

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedOn": "2026-11-09",
+  "updatedOn": "2026-11-10",
   "caseStatus": "unsolved",
   "methods": [
     {
@@ -136,7 +136,7 @@
       "kind": "method-test",
       "independentTheory": false,
       "scope": "142 visually reconstructed body lines; declared parity, edge and reversal variants.",
-      "result": "No valid literal key, contiguous mnemonic or clear hidden instruction in the recorded streams.",
+      "result": "No checksum-valid WIF, literal 64-hex key or contiguous BIP39 phrase in the recorded streams. Its minikey check covered complete compact strings only; embedded windows are audited separately.",
       "evidence": [
         "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.md",
         "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.json"
@@ -145,7 +145,8 @@
         "node analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.js"
       ],
       "limitations": [
-        "Variant counts are correlated formulations, not independent theories."
+        "Variant counts are correlated formulations, not independent theories.",
+        "The original minikey validator did not scan inside longer streams. See minikey-window-audit for the separate coverage correction."
       ]
     },
     {
@@ -272,6 +273,28 @@
       "reproduce": [],
       "limitations": [
         "An unavailable input is not a failed experiment."
+      ]
+    },
+    {
+      "id": "minikey-window-audit",
+      "title": "Embedded minikey coverage audit",
+      "status": "in-progress",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "22 frozen body-only George Sand readings; 42 exact or whitespace-compacted forms; every 22/30-character position, fixed before execution.",
+      "result": "Protocol registered. Candidate scan pending; no outcome claimed.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/minikey_windows/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/minikey_windows/PROTOCOL.json"
+      ],
+      "reproduce": [
+        "node scripts/minikey_window_audit.cjs --self-test",
+        "node scripts/minikey_window_audit.cjs --scan --check --out analysis_outputs/continuation_20261110/minikey_windows/RESULT.json"
+      ],
+      "limitations": [
+        "A validation coverage correction, not an independent cipher family.",
+        "Only the specified 22 readings and two minikey lengths; no extra text transformations.",
+        "An 8-bit checksum pass alone is weak evidence; address activity needs independent review."
       ]
     }
   ],

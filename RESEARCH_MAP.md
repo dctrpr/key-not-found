@@ -28,4 +28,4 @@ The website layout, downloadable archives, file index and original source scans 
 - **Open question:** evidence or a test is still missing.
 - **In progress:** only shown for an actually recorded active method, never implied by a recent website edit.
 
-The case remains unsolved. No authenticated prize address or reproducible recovered key is established. The token is not launched; research participation does not require a token. See [CONTRIBUTING.md](CONTRIBUTING.md) for the publication format and [FUNDING.md](public/FUNDING.md) for the separate funding commitment.
+The case remains unsolved. No authenticated prize address or reproducible recovered key is established. The official token contract is published on the site; research participation does not require a token. See [CONTRIBUTING.md](CONTRIBUTING.md) for the publication format and [FUNDING.md](public/FUNDING.md) for the separate funding commitment.
