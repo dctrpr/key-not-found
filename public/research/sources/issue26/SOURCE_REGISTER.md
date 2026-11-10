@@ -1,8 +1,8 @@
-# Issue 26 source branch — first-word reconstruction in progress
+# Issue 26 source branch — first-word source reviewed, validation pending
 
 The [official publisher contents](https://bitcoinmagazine.com/2022-censorship-resistant-issue) identifies a Q2 2022 issue and Keiser’s **Censorship, Dematerialization, and Bitcoin**, with the subtitle **Without Freaks, America Is Nothing**. This matches the retained printed page 102. The source therefore predates the creator’s December 2022 plural hidden-key claim. Its connection to that claim is a hypothesis; it is not a newly authenticated 20-BTC target.
 
-The existing investigation used this comparison article for layout, artwork and font audits. No faithful printed-first-word/key validation was located in the retained ledger. Work now reconstructs those first words against the scan pixels. The exact procedure will be registered before validation.
+The existing investigation used this comparison article for layout, artwork and font audits. No faithful printed-first-word/key validation was located in the retained ledger. All 114 first-word objects have now been checked against source pixels by the source preparer and an independent review. The exact procedure will be registered before validation.
 
 ## Retained witnesses
 
@@ -12,4 +12,4 @@ The existing investigation used this comparison article for layout, artwork and 
 
 The canonical source will preserve printed column flow, body/display roles, capitalization, punctuation, genuine no-space forms and explicit unknowns. Header/footer/title/sidebar material will stay separately classified. No corrupted OCR token is silently repaired into a desired output.
 
-Source review is ongoing. No candidate checksum, address query, wallet action or transaction on this article is claimed. Third-party magazine content retains its rights under the corpus DATA_LICENSE.
+Source review is complete for the 113 text rows and separate STOP label; the validation protocol is being prepared. No candidate checksum, address query, wallet action or transaction on this article is claimed. Third-party magazine content retains its rights under the corpus DATA_LICENSE.

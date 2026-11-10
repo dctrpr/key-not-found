@@ -6,6 +6,10 @@ This is a curated public copy of the Max Keiser / Bitcoin Magazine investigation
 
 Start with [the method catalog](experiments.json), [creator clues](sources/creator-clues.json), [printed lines](sources/printed-lines.txt), and [source provenance](sources/provenance.json). [files.json](files.json) is the searchable file catalog; [SHA256SUMS](SHA256SUMS) authenticates the public files. [REPRODUCE.md](REPRODUCE.md) distinguishes reproducible current checks from historical analyses whose private or unavailable inputs were excluded.
 
+## Research is continuing
+
+The [pair-local mirror boundary envelope](analysis_outputs/continuation_20261110/mirror_boundary_review/RESULT.md) tested every registered modeled alternative: 222 distinct shaped strings, zero valid minikeys. Global concatenations remain outside that result. A new [Issue 26 first-word source branch](sources/issue26/SOURCE_REGISTER.md) has 114 visually reviewed leading-word objects and a matching publisher contents entry. Validation is being registered separately; unreadable full-line ends remain unknown.
+
 ## Latest executed research
 
 [Twenty registered procedures](analysis_outputs/continuation_20261110/batch20/SUMMARY.md): fifteen scoped literal/code negatives, one failed alignment screen and four inconclusive procedures. Exact completion times, frozen protocols, source hashes, outputs, code and reproduction commands are public. Mirror-first word selection remains open because source-mask boundaries are uncertain. These are procedures, not independent theories or whole families exhausted.
