@@ -10,6 +10,8 @@ The [visual lab and dated frames](VISUAL_GUIDE.md) make the source pages and com
 
 ## Research is continuing
 
+The separately registered [stride26 history check](analysis_outputs/continuation_20261110/stride26_history/RESULT.md) completed: five Node/Python-agreed mainnet constructions, ten valid HTTP 200 responses, and all chain/mempool statistics zero. Independent saved-receipt review verified every vector and response. This supplies no funding evidence within the fixed scope; the weak checksum remains valid, and the puzzle is unsolved.
+
 The [four-population format check](analysis_outputs/continuation_20261110/columns_compatibility/RESULT.md) reproduced all original artifacts byte for byte: 43,699 correlated records and 5,557 forms summed across populations. One 26-character minikey checksum pass occurs only in a whitespace-compacted Orange Party stride form, also within the source-known subset. Independent full replay agrees. It is a chance-compatible private review lead, with no address derivation/history request in this experiment. The scans now include the Censorship column in all three viewer modes.
 
 The [retained-source comparison](analysis_outputs/continuation_20261110/source_witness_followup/RESULT.md) exposes six exact native crops from both scan PDFs. The same three inverse-field contexts still leave 13 prior contact cases uncertified; acquisition independence is unproven. No new layout source was recovered. The later clue's exact parent URL is now recorded, but its text and puzzle connection remain unverified. Direct inspection of the linked paper's three figures established no additional extraction rule.

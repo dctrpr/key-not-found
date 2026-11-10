@@ -37,3 +37,8 @@ Use the protocol commands with the full registration commit above and fresh 0700
 The saved-form source association is reviewed; any narrowly defined address derivation/history follow-up must be registered separately. **This experiment performed no scalar, seed, child-key or address derivation, network/history query, wallet import, signing or transaction.** Its positive value stays private.
 
 Funky issue/date and eligibility under the December plural-key claim remain unresolved. Censorship first-word coverage cannot settle blurred full-line endings. The Orange Party body and historical populations retain distinct source/model uncertainties. None replaces the Issue24 magazine photographed in the March 20-BTC announcement. Other encodings, readings and the puzzle remain open.
+
+
+## Subsequent bounded follow-up
+
+The [separately registered history check](../stride26_history/RESULT.md) completed at 20:26:00.675Z. Five Node/Python-agreed constructions and ten valid two-provider responses reported zero chain and mempool statistics. This gives no funding evidence in that scope. The original eight-bit checksum pass and this extraction result are unchanged; no broader exclusion follows.

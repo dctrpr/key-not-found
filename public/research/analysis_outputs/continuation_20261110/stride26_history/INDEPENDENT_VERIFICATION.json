@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "reviewId": "stride26-history-saved-receipt-independent-verification",
+  "status": "PASS",
+  "passed": true,
+  "reviewedAtUTC": "2026-11-10T20:28:34.396785+00:00",
+  "reviewScope": "complete saved5address/10provider receipts plus pinned registration/code; no repeated target derivation/checksum/network",
+  "registrationCommit": "6b4885388deafb96bd735145fcd7ac5fcd3bc66d",
+  "primaryResultSha256": "e4035fdd1c391e2401c13efefeec1c420d1f62a28bd6cfe74699555cf18fff0c",
+  "protocolSha256": "282aa6bfdff7366a132b5bd1b97e2c5576e47830dbf4ecf0191604475f6da411",
+  "sourceHashes": {
+    "analysis_outputs/continuation_20261110/columns_compatibility/RESULT.json": "0f1d2cbac0695e1328e878b9e3e080479c6405a65ff82a5d51019543b133fe6d",
+    "analysis_outputs/continuation_20261110/columns_compatibility/SOURCE_WITNESS_REVIEW.json": "f61a514cf4c839574646a3c459032af91b8246e727006418c133e2d7f6ccef58",
+    "package-lock.json": "e2754b2bbb763bd18670735b4b317dd9235e34f1d961123dbe551603657551a8"
+  },
+  "scriptHashes": {
+    "scripts/check_stride26_lead.cjs": "eaf034349746fa9b823a9fdb560825ef9426e91cb48577261ac8f9d0f8aa8763",
+    "scripts/minikey26_address_audit.cjs": "a351e20f4bb5b9ab20fdd97dc07f8d87afe48962fb25dff20a008a56e83b7a64",
+    "scripts/independent_minikey26_addresses.py": "27f1de62281f4c4e43906acd65f9ae8fa6b264d5dc4cf54a3faf998719479ba8",
+    "scripts/check_minikey26_lead.cjs": "98146d0f97b359b5830991048974474290cac4f1cd97218986af9b334f744e44"
+  },
+  "savedArtifactIntegrity": {
+    "RESULT.json": "e4035fdd1c391e2401c13efefeec1c420d1f62a28bd6cfe74699555cf18fff0c",
+    "HISTORY.private.json": "b3ec6b0ae4a2c752bbc55a5339d3561cc09a245c3b0a18722e6f17143fac0e5a",
+    "ADDRESSES.python.private.json": "569362808e09dcf675a41679f44d282993065ae940ef8570857a23400ce2a9ac",
+    "REGISTRATION.json": "0f59a6c60e81c2af63be75a03db5d0c646f1e8506067800ceedcbbb66436b05c",
+    "RUN.log": "660e2c1308b68a68f638f5e3808e468bdf8edf97c675305ddcceb8318a139008"
+  },
+  "registration": {
+    "realCommitObject": true,
+    "allThreeSourceFourCodeAndProtocolCurrentBytesEqualRegisteredBlobs": true,
+    "priorRemoteVerificationReceiptAtUTC": "2026-11-10T20:25:39.372Z",
+    "remoteVerificationBeforeRun": true,
+    "remoteLookupRepeatedByReviewer": false,
+    "remotePublicationBasedOnRootRecordedVerificationNotCommitDate": true
+  },
+  "addressAgreement": {
+    "completeNodeAndPythonRecordsEqual": true,
+    "exactOrderedTypes": true,
+    "uniqueAddresses": 5,
+    "allPrivateQueryAddressesMatchSavedTypeAddress": true,
+    "derivationRepeatedByReviewer": false
+  },
+  "requestCoverage": {
+    "expectedDistinctTypeProviderPairs": 10,
+    "observedPairs": 10,
+    "attemptsReported": 10,
+    "successfulHTTP200": 10,
+    "missingPairs": 0,
+    "duplicatePairs": 0,
+    "providers": 2,
+    "codeConcurrencyMaximum": 2,
+    "codeRetries": 0,
+    "runtimeConcurrencyReconstructedFromReceipts": false
+  },
+  "statistics": {
+    "groupsPerResponse": 2,
+    "fieldsPerGroup": 5,
+    "strictSafeIntegerFieldsChecked": 100,
+    "allFieldsZero": true,
+    "providerStatisticsAgreeForEveryType": true,
+    "activityFlagsConsistent": true,
+    "publicQueriesExactlyEqualPrivateMinusAddress": true
+  },
+  "timing": {
+    "runStartedAtUTC": "2026-11-10T20:25:59.158Z",
+    "firstQueryStartAtUTC": "2026-11-10T20:25:59.194Z",
+    "lastQueryStartAtUTC": "2026-11-10T20:26:00.559Z",
+    "runCompletedAtUTC": "2026-11-10T20:26:00.675Z",
+    "startsMonotoneWithinRun": true,
+    "responseEndTimesRetained": false
+  },
+  "publicPrivacy": {
+    "exactTopLevelAllowlist": true,
+    "allFiveRawAddressesAbsent": true,
+    "candidateFingerprintAbsent": true,
+    "rawCandidateScalarFields": 0,
+    "rawCandidateOrValidationReadByReviewer": false,
+    "controlsMatchPreparedReceipt": true,
+    "sourceCompactionLimitsPreserved": true
+  },
+  "privatePermissions": {
+    "directories0700": true,
+    "files0600": {
+      "REGISTRATION.json": "0o600",
+      "RUN.log": "0o600",
+      "history/RESULT.json": "0o600",
+      "history/HISTORY.private.json": "0o600",
+      "history/ADDRESSES.python.private.json": "0o600"
+    }
+  },
+  "outcome": "zero-history-in-scope",
+  "scopeComplete": true,
+  "reviewerActions": {
+    "leadOrRawValidationReads": 0,
+    "targetChecksumCalls": 0,
+    "targetScalarDerivations": 0,
+    "targetAddressDerivations": 0,
+    "newNetworkRequests": 0,
+    "walletActions": 0,
+    "gitMutations": 0,
+    "localReadOnlyGitObjectChecks": true,
+    "publicEdits": 0
+  },
+  "inconsistencies": [],
+  "limitations": [
+    "Saved-record consistency audit, not independent explorer requests or a repeat secret/address derivation.",
+    "Normalized API receipts do not preserve original HTTP bodies/TLS evidence or each response-end time; matching-address validation and two-worker/no-retry bounds rely on pinned code plus earlier synthetic controls.",
+    "Source selection/checksum correctness relies on the registered source guard and saved Python format flag; the reviewer did not open the lead/raw validation or redo checksum/secret math.",
+    "Remote publication timing is supported by root recorded verification, not a new remote lookup or a Git commit date.",
+    "All-zero evidence is only for the five registered constructions at those request times; it does not establish a globally unfunded key, creator intent, prize identity, future funding, other constructions, a printed contiguous key or a solved/excluded puzzle."
+  ]
+}

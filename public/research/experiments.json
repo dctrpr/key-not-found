@@ -1167,12 +1167,17 @@
     {
       "id": "stride26-history",
       "title": "Orange Party stride26 lead: bounded history",
-      "status": "in-progress",
+      "status": "tested",
       "kind": "history-check",
       "independentTheory": false,
       "scope": "One unchanged 26-character checksum lead from the byte-pinned combined validation artifact; full nominal/cached source-known equality, five fixed mainnet constructions, two providers, ten read-only attempts.",
-      "result": "The source association is reviewed. The value appears only under registered whitespace compaction, not as a contiguous string in any unmodified reading. Controls and independent code review passed. Target address derivation and history queries wait for separate public registration.",
+      "result": "Node and independent Python agreed exactly on all five fixed mainnet constructions. All ten HTTP 200 responses from both providers reported zero chain and mempool statistics at 2026-11-10T20:25:59–20:26:00Z. Independent saved-receipt review verified the full vectors and statistics. No funding evidence within this scope; the compaction-dependent eight-bit checksum remains valid, and other constructions/readings remain open.",
       "evidence": [
+        "analysis_outputs/continuation_20261110/stride26_history/RESULT.md",
+        "analysis_outputs/continuation_20261110/stride26_history/RESULT.json",
+        "analysis_outputs/continuation_20261110/stride26_history/INDEPENDENT_VERIFICATION.json",
+        "analysis_outputs/continuation_20261110/stride26_history/REGISTRATION.json",
+        "analysis_outputs/continuation_20261110/stride26_history/EXECUTION.json",
         "analysis_outputs/continuation_20261110/stride26_history/PROTOCOL.md",
         "analysis_outputs/continuation_20261110/stride26_history/PROTOCOL.json",
         "analysis_outputs/continuation_20261110/stride26_history/CODE_REVIEW.json",
@@ -1181,7 +1186,8 @@
       ],
       "reproduce": [
         "node scripts/check_stride26_lead.cjs --self-test",
-        "Follow analysis_outputs/continuation_20261110/stride26_history/PROTOCOL.md using the reproduced combined private validation artifact and fresh private output."
+        "Follow analysis_outputs/continuation_20261110/stride26_history/PROTOCOL.md using the reproduced combined private validation artifact and fresh private output.",
+        "Published history registration:6b4885388deafb96bd735145fcd7ac5fcd3bc66d. The originating compatibility replay uses its separate d95986156cd785c3836ad060fdcaeabdebabcb01 registration."
       ],
       "limitations": [
         "Eight-bit checksum compatibility can occur by chance and is not creator intent or a solution.",

@@ -37,6 +37,39 @@ for (const entry of data.entries) {
     } else assert.equal(metric.operation, undefined);
     assert.equal(value, metric.value, 'Visual metric differs from its frozen result');
   }
+  if (entry.id === 'stride26-history-result') {
+    assert.equal(entry.diagram, 'funnel');
+    assert.equal(result.testId, 'stride26-history');
+    assert.equal(result.outcome, 'zero-history-in-scope');
+    assert.equal(result.scopeComplete, true);
+    assert.equal(result.addressImplementationsAgree, true);
+    assert.equal(result.addressCount, 5);
+    assert.equal(result.requestsAttempted, 10);
+    assert.equal(result.sourceSurface.requiresWhitespaceCompaction, true);
+    assert.equal(result.sourceSurface.contiguousInAnyUnmodifiedOriginalReading, false);
+    assert.equal(result.sourceSurface.physicalPrintedKeyAuthenticated, false);
+    assert.equal(result.transactions, 0);
+    assert.equal(result.walletImports, 0);
+    assert.ok(result.queries.every(query => query.status === 'ok' && query.httpStatus === 200 &&
+      query.activity === false && Object.values(query.statistics).every(group => Object.values(group).every(value => value === 0))));
+    const base = path.dirname(path.join(root, 'public/research', entry.source.path));
+    const independent = JSON.parse(fs.readFileSync(path.join(base, 'INDEPENDENT_VERIFICATION.json')));
+    assert.equal(independent.passed, true);
+    assert.equal(independent.primaryResultSha256, entry.source.sha256);
+    assert.equal(independent.registrationCommit, result.registrationCommit);
+    assert.equal(independent.addressAgreement.completeNodeAndPythonRecordsEqual, true);
+    assert.equal(independent.requestCoverage.observedPairs, 10);
+    assert.equal(independent.requestCoverage.successfulHTTP200, 10);
+    assert.equal(independent.statistics.strictSafeIntegerFieldsChecked, 100);
+    assert.equal(independent.statistics.allFieldsZero, true);
+    assert.equal(independent.statistics.publicQueriesExactlyEqualPrivateMinusAddress, true);
+    assert.equal(independent.publicPrivacy.sourceCompactionLimitsPreserved, true);
+    assert.equal(independent.reviewerActions.newNetworkRequests, 0);
+    for (const [file, hash] of Object.entries({ ...result.sourceHashes, ...result.scriptHashes })) {
+      assert.ok(!file.includes('..'));
+      assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root, 'public/research', file))).digest('hex'), hash);
+    }
+  }
   if (entry.id === 'columns-fixed-output-compatibility') {
     assert.equal(entry.diagram, 'funnel');
     assert.equal(result.testId, 'columns-fixed-output-compatibility');

@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "testId": "stride26-history",
+  "startedAtUTC": "2026-11-10T20:25:59.158Z",
+  "completedAtUTC": "2026-11-10T20:26:00.675Z",
+  "registrationCommit": "6b4885388deafb96bd735145fcd7ac5fcd3bc66d",
+  "protocolSha256": "282aa6bfdff7366a132b5bd1b97e2c5576e47830dbf4ecf0191604475f6da411",
+  "sourceHashes": {
+    "analysis_outputs/continuation_20261110/columns_compatibility/RESULT.json": "0f1d2cbac0695e1328e878b9e3e080479c6405a65ff82a5d51019543b133fe6d",
+    "analysis_outputs/continuation_20261110/columns_compatibility/SOURCE_WITNESS_REVIEW.json": "f61a514cf4c839574646a3c459032af91b8246e727006418c133e2d7f6ccef58",
+    "package-lock.json": "e2754b2bbb763bd18670735b4b317dd9235e34f1d961123dbe551603657551a8"
+  },
+  "scriptHashes": {
+    "scripts/check_stride26_lead.cjs": "eaf034349746fa9b823a9fdb560825ef9426e91cb48577261ac8f9d0f8aa8763",
+    "scripts/minikey26_address_audit.cjs": "a351e20f4bb5b9ab20fdd97dc07f8d87afe48962fb25dff20a008a56e83b7a64",
+    "scripts/independent_minikey26_addresses.py": "27f1de62281f4c4e43906acd65f9ae8fa6b264d5dc4cf54a3faf998719479ba8",
+    "scripts/check_minikey26_lead.cjs": "98146d0f97b359b5830991048974474290cac4f1cd97218986af9b334f744e44"
+  },
+  "sourceResultSha256": "0f1d2cbac0695e1328e878b9e3e080479c6405a65ff82a5d51019543b133fe6d",
+  "sourceWitnessSha256": "f61a514cf4c839574646a3c459032af91b8246e727006418c133e2d7f6ccef58",
+  "privateValidationArtifactSha256": "69978ce65b2655860717b86fc575f7c92295bbacf5891419df1151e7b0d3f99e",
+  "candidateLength": 26,
+  "sourceSurface": {
+    "requiresWhitespaceCompaction": true,
+    "presentInSavedStrictKnownCompactedForm": true,
+    "contiguousInAnyUnmodifiedOriginalReading": false,
+    "physicalPrintedKeyAuthenticated": false
+  },
+  "checksumIndependentlyVerified": true,
+  "addressImplementationsAgree": true,
+  "addressCount": 5,
+  "outcome": "zero-history-in-scope",
+  "scopeComplete": true,
+  "requestsAttempted": 10,
+  "queries": [
+    {
+      "type": "P2PKH uncompressed",
+      "provider": "blockstream",
+      "status": "ok",
+      "httpStatus": 200,
+      "checkedAtUTC": "2026-11-10T20:25:59.194Z",
+      "activity": false,
+      "statistics": {
+        "chain_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        },
+        "mempool_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        }
+      }
+    },
+    {
+      "type": "P2PKH uncompressed",
+      "provider": "mempool",
+      "status": "ok",
+      "httpStatus": 200,
+      "checkedAtUTC": "2026-11-10T20:25:59.206Z",
+      "activity": false,
+      "statistics": {
+        "chain_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        },
+        "mempool_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        }
+      }
+    },
+    {
+      "type": "P2PKH compressed",
+      "provider": "blockstream",
+      "status": "ok",
+      "httpStatus": 200,
+      "checkedAtUTC": "2026-11-10T20:25:59.664Z",
+      "activity": false,
+      "statistics": {
+        "chain_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        },
+        "mempool_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        }
+      }
+    },
+    {
+      "type": "P2PKH compressed",
+      "provider": "mempool",
+      "status": "ok",
+      "httpStatus": 200,
+      "checkedAtUTC": "2026-11-10T20:25:59.847Z",
+      "activity": false,
+      "statistics": {
+        "chain_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        },
+        "mempool_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        }
+      }
+    },
+    {
+      "type": "P2SH-P2WPKH",
+      "provider": "blockstream",
+      "status": "ok",
+      "httpStatus": 200,
+      "checkedAtUTC": "2026-11-10T20:25:59.961Z",
+      "activity": false,
+      "statistics": {
+        "chain_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        },
+        "mempool_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        }
+      }
+    },
+    {
+      "type": "P2SH-P2WPKH",
+      "provider": "mempool",
+      "status": "ok",
+      "httpStatus": 200,
+      "checkedAtUTC": "2026-11-10T20:26:00.137Z",
+      "activity": false,
+      "statistics": {
+        "chain_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        },
+        "mempool_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        }
+      }
+    },
+    {
+      "type": "P2WPKH",
+      "provider": "blockstream",
+      "status": "ok",
+      "httpStatus": 200,
+      "checkedAtUTC": "2026-11-10T20:26:00.200Z",
+      "activity": false,
+      "statistics": {
+        "chain_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        },
+        "mempool_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        }
+      }
+    },
+    {
+      "type": "P2WPKH",
+      "provider": "mempool",
+      "status": "ok",
+      "httpStatus": 200,
+      "checkedAtUTC": "2026-11-10T20:26:00.251Z",
+      "activity": false,
+      "statistics": {
+        "chain_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        },
+        "mempool_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        }
+      }
+    },
+    {
+      "type": "P2TR key-path with BIP341 TapTweak",
+      "provider": "blockstream",
+      "status": "ok",
+      "httpStatus": 200,
+      "checkedAtUTC": "2026-11-10T20:26:00.380Z",
+      "activity": false,
+      "statistics": {
+        "chain_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        },
+        "mempool_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        }
+      }
+    },
+    {
+      "type": "P2TR key-path with BIP341 TapTweak",
+      "provider": "mempool",
+      "status": "ok",
+      "httpStatus": 200,
+      "checkedAtUTC": "2026-11-10T20:26:00.559Z",
+      "activity": false,
+      "statistics": {
+        "chain_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        },
+        "mempool_stats": {
+          "funded_txo_count": 0,
+          "funded_txo_sum": 0,
+          "spent_txo_count": 0,
+          "spent_txo_sum": 0,
+          "tx_count": 0
+        }
+      }
+    }
+  ],
+  "controls": {
+    "passed": true,
+    "checksPassed": 24,
+    "rejectedGuards": 31,
+    "independentPythonChecks": 32,
+    "controlAddressSets": 2,
+    "synthetic26NodePythonAgreement": true,
+    "mockRequestsAttempted": 10,
+    "mockConcurrencyMaximum": 2,
+    "non200PolicyTested": true,
+    "targetInputRead": false,
+    "targetDerivations": 0,
+    "liveRequests": 0,
+    "walletImports": 0,
+    "transactions": 0
+  },
+  "transactions": 0,
+  "walletImports": 0,
+  "limitations": [
+    "This is one weak8bit checksum lead, not creator intent or a solved puzzle.",
+    "The lead depends on a registered whitespace-compacted saved form; no unmodified original reading contains it contiguously and no printed key is demonstrated.",
+    "Strict-known refers to the declared source/projection flags, not fresh pixel proof or full physical-source certification.",
+    "Zero history would exclude only these five mainnet constructions according to two explorer operators at recorded times; other constructions/future funding remain outside scope.",
+    "No authenticated prize address is known; activity alone does not establish ownership or20BTC.",
+    "Python arithmetic is variable-time and memory clearing is best effort; raw scalar material is never persisted or used as an identifier."
+  ]
+}

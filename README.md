@@ -4,7 +4,7 @@ The key is missing. The work is public.
 
 My independent investigation into the Bitcoin Magazine puzzle Max Keiser described in 2023. The files, tests and updates are public; help is optional. The puzzle is **unsolved**. The claimed 20 BTC has not been independently authenticated. This project is not affiliated with Max Keiser, Bitcoin Magazine, or Pump.fun.
 
-[Latest research: four saved populations, one weak checksum lead](public/research/analysis_outputs/continuation_20261110/columns_compatibility/RESULT.md). All four original artifacts reproduced byte for byte. One 26-character checksum pass requires registered whitespace compaction; it does not authenticate a key or prize. The report distinguishes source-known characters from an unproven extraction rule.
+[Latest research: the compacted stride lead had zero history in scope](public/research/analysis_outputs/continuation_20261110/stride26_history/RESULT.md). Node and Python agreed on five constructions; all ten provider responses reported zero chain and mempool statistics. The originating eight-bit checksum pass requires whitespace compaction and authenticates no key or prize. Independent reviews and exact limits are public.
 
 ## Start here
 
