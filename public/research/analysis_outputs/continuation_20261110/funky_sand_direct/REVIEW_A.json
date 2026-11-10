@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "reviewId": "funky-sand-direct-A",
+  "reviewer": "AI reviewer A",
+  "reviewType": "exploratory-full-output-AI-reading",
+  "startedAtUTC": "2026-11-10T13:11:49.246Z",
+  "completedAtUTC": "2026-11-10T13:13:12.777Z",
+  "registrationCommit": "5c7942ea339ee964e0080ba0781b725b5801c5d5",
+  "protocolSha256": "26a681bc40ddb6a1d9d471cf7e70f7f7c3c0c6a588b2f3400a4c083a1e59f15e",
+  "sourceModelSha256": "12ef2d85578b89a164a109c7f5045e9fd28b88fd7ce5c58e30632e242a60eb11",
+  "inputReadingFileSha256": "033513555f835cdec0193732751118a6ca0a09b9558537edf323c46658d15c61",
+  "technicalResultSha256": "dcc173a36d0e49bf01cfa2ced4497b726822296e93e004e19d8e0c0f7c3afa0f",
+  "coverage": {
+    "readingCount": 3,
+    "completeReadingsRead": 3,
+    "selectedRows": [
+      111,
+      56,
+      55
+    ],
+    "totalCodepointsRead": 7689,
+    "allInputDescriptorsMatchTechnicalResult": true
+  },
+  "independence": {
+    "otherReviewerConclusionReceived": false,
+    "otherReviewerReviewArtifactOpened": false,
+    "sourceBlinded": false,
+    "hypothesisBlinded": false,
+    "knownPuzzleAndSourceContext": true,
+    "limitation": "Independent from the other current output-review conclusion; not blinded to source/hypothesis and not a calibrated message detector."
+  },
+  "reviewPlanApplied": {
+    "type": "exploratory-full-output-AI-reading",
+    "reviewerCount": 2,
+    "readingsEach": 3,
+    "independence": "Review all three complete saved outputs; reviewers do not receive each other's conclusions. They know the puzzle context and are not blinded to source or hypothesis.",
+    "secondMessageCriterion": "Directly coherent second message without omitted/substituted words, additional decoding or arbitrary selected substring. Ordinary cover-prose fragments and isolated thematic words are insufficient.",
+    "instructionCriterion": "A concrete action and target/unit/source anchor must be stated, without filling gaps.",
+    "positiveHandling": "Keep potential message/key-looking material private; a follow-up needs a separate fixed protocol.",
+    "nonrecognitionWording": "No clear second message was recognized in these three fixed literal readings.",
+    "nonrecognitionScope": "Subjective AI nonrecognition, not a formal message, key, article or cipher-family exclusion.",
+    "inconclusive": "Pin/source failure, incomplete reading or unresolved reviewer disagreement.",
+    "prohibitedFollowups": [
+      "No additional transforms, selected substrings, word deletions or substitutions.",
+      "No format/checksum validators, wordlist filtering, prose-to-key hashing, derivation or network."
+    ]
+  },
+  "readings": [
+    {
+      "id": "SAND-FW-ALL",
+      "selectedRowCount": 111,
+      "codepoints": 703,
+      "utf8Bytes": 703,
+      "sha256": "bd74dbfe4fc74de0bb2ed587ff68a91da11435ca90d338c18a358225b927ab2a",
+      "completeOutputRead": true,
+      "reviewCoverage": "Entire saved text; no excerpt-only sampling.",
+      "coherentIndependentSecondMessageRecognized": false,
+      "actionableInstructionRecognized": false,
+      "instructionActionAndTargetSourceAnchorCriterionMet": false,
+      "potentialLeadRecognized": false,
+      "unresolvedAmbiguityRecognized": false,
+      "classification": "Discontinuous line-leading word chunks; no directly coherent independent second message recognized.",
+      "sourceContextAssessment": "Scattered thematic words, list names and rhetorical imperatives do not jointly state a determinate article-reading action. No deletion, substitution or selected substring was used to improve them."
+    },
+    {
+      "id": "SAND-ODD-LINES",
+      "selectedRowCount": 56,
+      "codepoints": 3445,
+      "utf8Bytes": 3459,
+      "sha256": "459f480133df15bd09f3260a20f12b949ad9485dbc1c98753af3ff6a8b68bd3d",
+      "completeOutputRead": true,
+      "reviewCoverage": "Entire saved text; no excerpt-only sampling.",
+      "coherentIndependentSecondMessageRecognized": false,
+      "actionableInstructionRecognized": false,
+      "instructionActionAndTargetSourceAnchorCriterionMet": false,
+      "potentialLeadRecognized": false,
+      "unresolvedAmbiguityRecognized": false,
+      "classification": "Alternating cover-prose fragments, with some complete original sentences and display rows retained unchanged; no directly coherent independent second message recognized.",
+      "sourceContextAssessment": "The cover narrative, monetary polemic, attributed quotation and visible author/work list remain recognizable. Their original assertions do not supply a new action plus text unit/source anchor under the fixed reading."
+    },
+    {
+      "id": "SAND-EVEN-CONTROL",
+      "selectedRowCount": 55,
+      "codepoints": 3541,
+      "utf8Bytes": 3558,
+      "sha256": "8de7738e2b2a246cdfcf406199600d6847c0e96303f0f09b763d46936e3a0b59",
+      "completeOutputRead": true,
+      "reviewCoverage": "Entire saved text; no excerpt-only sampling.",
+      "coherentIndependentSecondMessageRecognized": false,
+      "actionableInstructionRecognized": false,
+      "instructionActionAndTargetSourceAnchorCriterionMet": false,
+      "potentialLeadRecognized": false,
+      "unresolvedAmbiguityRecognized": false,
+      "classification": "Complementary cover-prose fragments, complete ordinary source sentences and partial quotation/display rows; no directly coherent independent second message recognized.",
+      "sourceContextAssessment": "Message/time imagery and imperative wording have ordinary source contexts. No instruction for manipulating article words/lines is directly stated by the complete control output."
+    }
+  ],
+  "outcome": "subjective-AI-nonrecognition",
+  "conclusion": "No clear second message was recognized in these three fixed literal readings.",
+  "potentialMessageOrKeyLookingLeadRecognized": false,
+  "unresolvedReviewerAAmbiguity": false,
+  "claimScope": {
+    "formalPlaintextExclusion": false,
+    "encodedKeyExclusion": false,
+    "wholeArticleExclusion": false,
+    "cipherFamilyExclusion": false,
+    "issueDateEligibilityEstablished": false,
+    "marchMirrorOr20BTCAssignmentEstablished": false
+  },
+  "interpretation": "The outputs preserve ordinary source material and discontinuous fragments; recognition of cover-prose words/sentences is not recognition of an independent hidden message. No rule was inferred merely from themes or ordinary imperative wording.",
+  "privateHandling": {
+    "rawTextQuotedInThisReview": false,
+    "rawOutputsModifiedOrRepublished": false,
+    "privatePermissionsRequired": true,
+    "newFollowupProtocolRequiredForAnyLaterCandidateValidation": true
+  },
+  "activities": {
+    "completeSavedOutputsRead": 3,
+    "newTransforms": 0,
+    "selectedSubstringSearches": 0,
+    "wordDeletionsOrSubstitutions": 0,
+    "additionalReadingsGenerated": 0,
+    "keyFormatChecks": 0,
+    "checksumChecks": 0,
+    "wordlistFiltering": 0,
+    "proseToKeyHashes": 0,
+    "keySeedOrAddressDerivations": 0,
+    "networkRequests": 0,
+    "publicEdits": 0,
+    "gitMutations": 0
+  },
+  "limitations": [
+    "Subjective AI nonrecognition is not proof that a message or key is absent.",
+    "Only these three related literal readings of one declared transcription model were inspected.",
+    "Other populations, reset rules, orders, mechanisms and encodings remain outside scope.",
+    "Exact column issue/date and its applicability under the broad December claim remain unverified.",
+    "No March mirror clue or photographed Issue24 20-BTC prize was assigned to this column."
+  ]
+}

@@ -30,6 +30,17 @@ export function VisualFrame({ entry, number }: { entry: Entry; number: number })
           <text x="48" y={213 + i * 36} fill={paper} fontSize="14">{label}</text>
           {[600, 763].map(x => <g key={x}><circle cx={x - 27} cy={208 + i * 36} r="4" fill={lime}/><text x={x - 13} y={213 + i * 36} fill={lime} fontSize="13">0 history</text></g>)}
         </g>)}
+      </> : entry.diagram === 'reading' ? <>
+        <text x="40" y="101" fill={paper} fontSize="26" fontWeight="700">Three direct readings.</text>
+        <text x="40" y="130" fill={muted} fontSize="13">One frozen source · global order · no extra transforms</text>
+        {['First words', 'Odd whole lines', 'Even-line control'].map((label, i) => <g key={label}>
+          <rect x={40 + i * 288} y="166" width="244" height="136" fill="#191917" stroke="#45453c"/>
+          <text x={60 + i * 288} y="198" fill={muted} fontSize="13">{label}</text>
+          <text x={60 + i * 288} y="253" fill={paper} fontSize="43" fontWeight="700">{[111, 56, 55][i]}</text>
+          <text x={60 + i * 288} y="280" fill={muted} fontSize="12">{i === 0 ? 'literal word chunks' : 'complete physical rows'}</text>
+        </g>)}
+        {entry.metrics.map((metric, i) => <text key={metric.label} x={40 + i * 288} y="338" fill={paper} fontSize="15">{formatNumber(metric.value)} <tspan fill={muted}>{metric.label}</tspan></text>)}
+        <text x="40" y="370" fill={muted} fontSize="12">Full-output AI review is exploratory recognition, not a cipher exclusion.</text>
       </> : entry.diagram === 'source' ? <>
         <text x="40" y="101" fill={paper} fontSize="26" fontWeight="700">The source, before the test.</text>
         <text x="40" y="130" fill={muted} fontSize="13">Funky Upheaval · actual scans in the page viewer · issue and date unverified</text>

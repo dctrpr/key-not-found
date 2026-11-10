@@ -13,7 +13,7 @@ let previous = '';
 for (const entry of data.entries) {
   assert.match(entry.id, /^[a-z0-9-]+$/);
   assert.ok(!ids.has(entry.id)); ids.add(entry.id);
-  assert.ok(['funnel', 'history', 'source'].includes(entry.diagram));
+  assert.ok(['funnel', 'history', 'source', 'reading'].includes(entry.diagram));
   assert.ok(['spread', 'stack', 'mirror'].includes(entry.scene.layout));
   assert.ok(entry.scene.source === undefined || ['issue27', 'funky'].includes(entry.scene.source));
   const pages = entry.scene.source === 'funky' ? [107, 108, 109, 110, 111, 112] : entry.scene.source === 'issue27' ? [78, 79, 80, 81] : [75, 76, 77, 78, 79, 80];
@@ -62,6 +62,36 @@ for (const entry of data.entries) {
       assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), file.sha256);
     }
     assert.ok(Object.values(result.activity).every(value => value === 0));
+  }
+  if (entry.diagram === 'reading') {
+    assert.equal(entry.scene.source, 'funky');
+    assert.equal(result.semanticReviewComplete, true);
+    assert.equal(result.formalMessageExclusion, false);
+    assert.deepEqual(result.selectedRows, [111, 56, 55]);
+    assert.equal(result.fullIndependentOutputAgreement, true);
+    assert.equal(result.reviewers.length, 2);
+    for (const reviewer of result.reviewers) {
+      assert.equal(reviewer.readingsReadInFull, 3);
+      assert.equal(reviewer.sourceCodepointsRead, result.sourceCodepointsPerReviewer);
+      const reviewBytes = fs.readFileSync(path.join(root, 'public/research', reviewer.review.path));
+      assert.equal(crypto.createHash('sha256').update(reviewBytes).digest('hex'), reviewer.review.sha256);
+      const review = JSON.parse(reviewBytes);
+      assert.equal(review.coverage.completeReadingsRead, 3);
+      assert.equal(review.coverage.totalCodepointsRead ?? review.coverage.sourceOutputCodepointsRead, result.sourceCodepointsPerReviewer);
+      assert.equal(review.completedAtUTC, reviewer.completedAtUTC);
+    }
+    const executionBytes = fs.readFileSync(path.join(root, 'public/research', result.execution.path));
+    assert.equal(crypto.createHash('sha256').update(executionBytes).digest('hex'), result.execution.sha256);
+    const execution = JSON.parse(executionBytes);
+    assert.deepEqual(execution.counts.selectedRows, result.selectedRows);
+    assert.equal(execution.counts.submittedCodepoints, result.sourceCodepointsPerReviewer);
+    assert.ok(Object.values(execution.activity).every(value => value === 0));
+    const independentBytes = fs.readFileSync(path.join(root, 'public/research', result.independentCheck.path));
+    assert.equal(crypto.createHash('sha256').update(independentBytes).digest('hex'), result.independentCheck.sha256);
+    const independent = JSON.parse(independentBytes);
+    assert.equal(independent.primaryResultSha256, result.execution.sha256);
+    assert.equal(independent.fullUTF8TextsMatch, true);
+    assert.equal(independent.completePrivateReadingRecordsMatch, true);
   }
 }
 console.log(JSON.stringify({visualFramesVerified: ids.size, metricsVerified: ids.size * 3,

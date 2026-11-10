@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "reviewId": "funky-sand-semantic-B",
+  "reviewer": "B",
+  "reviewType": "exploratory-full-output-AI-reading",
+  "status": "full-reading-complete",
+  "startedAtUTC": "2026-11-10T13:11:57.640723Z",
+  "completedAtUTC": "2026-11-10T13:14:39.860303Z",
+  "elapsedWallSeconds": 162.21958,
+  "timeMeaning": "Actual wall interval includes full reading, reasoning and tool/report work; it is not a calibrated reading-speed or attention measure.",
+  "registrationCommit": "5c7942ea339ee964e0080ba0781b725b5801c5d5",
+  "generationCompletedAtUTC": "2026-11-10T13:10:48.078Z",
+  "sourcePins": {
+    "physicalLinesModelSha256": "12ef2d85578b89a164a109c7f5045e9fd28b88fd7ce5c58e30632e242a60eb11",
+    "readingsPacketSha256": "033513555f835cdec0193732751118a6ca0a09b9558537edf323c46658d15c61",
+    "readingsPacketBytes": 8272,
+    "generationResultSha256": "dcc173a36d0e49bf01cfa2ced4497b726822296e93e004e19d8e0c0f7c3afa0f",
+    "protocolSha256": "26a681bc40ddb6a1d9d471cf7e70f7f7c3c0c6a588b2f3400a4c083a1e59f15e"
+  },
+  "integrityScope": "Whole-file packet/protocol provenance checked against generation receipt; per-reading integrity hashes are recorded from the already independently verified technical descriptors. IDs, row counts, Unicode lengths and UTF-8 byte lengths were matched here. No target string was interpreted as a key or scalar.",
+  "coverage": {
+    "expectedReadings": 3,
+    "completeReadingsRead": 3,
+    "selectedRowsPerReading": [
+      111,
+      56,
+      55
+    ],
+    "sourceOutputCodepointsRead": 7689,
+    "sourceOutputUtf8BytesRead": 7720,
+    "allThreeStringsDisplayedInFullWithoutTruncation": true,
+    "outputsReadAsSaved": true
+  },
+  "recognitionCriteria": {
+    "secondMessage": "Directly coherent second message without omitted/substituted words, additional decoding or arbitrary selected substring. Ordinary cover-prose fragments and isolated thematic words are insufficient.",
+    "instruction": "A concrete action and target/unit/source anchor must be stated, without filling gaps.",
+    "ordinarySourceProseAndThematicWordsAreInsufficient": true
+  },
+  "finding": {
+    "wording": "No clear second message was recognized in these three fixed literal readings.",
+    "coherentSeparateSecondMessagesRecognized": 0,
+    "concretePuzzleInstructionsRecognized": 0,
+    "unresolvedAmbiguousMessagesRecognized": 0,
+    "formalMessageExclusion": false,
+    "keyExistenceExclusion": false,
+    "articleOrCipherFamilyExclusion": false,
+    "solutionOrFundingClaim": false
+  },
+  "independence": {
+    "reviewAConclusionReadOrRequested": false,
+    "semanticConclusionCoordinatedWithReviewA": false,
+    "blindedToSourceOrHypothesis": false,
+    "priorPuzzleAndSourceKnowledge": true,
+    "primaryGeneratorAuthoredByReviewer": true,
+    "qualification": "Independent of Review A conclusion, not independent of prior puzzle knowledge or generator authorship."
+  },
+  "readings": [
+    {
+      "id": "SAND-FW-ALL",
+      "selectedRowCount": 111,
+      "codepoints": 703,
+      "utf8Bytes": 703,
+      "outputIntegritySha256": "bd74dbfe4fc74de0bb2ed587ff68a91da11435ca90d338c18a358225b927ab2a",
+      "readInFull": true,
+      "coherentSeparateSecondMessageRecognized": false,
+      "concretePuzzleActionAndTargetUnitOrSourceAnchorRecognized": false,
+      "unresolvedAmbiguousMessageRecognized": false,
+      "keyLookingMaterialRecognizedByReading": false,
+      "requiresPrivateFollowup": false,
+      "class": "disjoint-initial-chunk-list",
+      "ordinarySourceVocabularyRecognized": true,
+      "ordinaryRhetoricalImperativesOrActionWordsPresent": true,
+      "reason": "The complete list preserves article vocabulary, names and isolated action words, without a directly coherent second message or an action tied to a puzzle unit/source anchor. No spacing, omission or substring was supplied to make one."
+    },
+    {
+      "id": "SAND-ODD-LINES",
+      "selectedRowCount": 56,
+      "codepoints": 3445,
+      "utf8Bytes": 3459,
+      "outputIntegritySha256": "459f480133df15bd09f3260a20f12b949ad9485dbc1c98753af3ff6a8b68bd3d",
+      "readInFull": true,
+      "coherentSeparateSecondMessageRecognized": false,
+      "concretePuzzleActionAndTargetUnitOrSourceAnchorRecognized": false,
+      "unresolvedAmbiguousMessageRecognized": false,
+      "keyLookingMaterialRecognizedByReading": false,
+      "requiresPrivateFollowup": false,
+      "class": "odd-physical-row-source-prose-fragments",
+      "ordinarySourceVocabularyRecognized": true,
+      "ordinaryRhetoricalImperativesOrActionWordsPresent": true,
+      "reason": "The complete selection retains clipped essay prose, source advocacy, parts of an attributed quotation, book/author lists and an article-style closing. I recognized no separately coherent second text or puzzle-specific operation from the whole output."
+    },
+    {
+      "id": "SAND-EVEN-CONTROL",
+      "selectedRowCount": 55,
+      "codepoints": 3541,
+      "utf8Bytes": 3558,
+      "outputIntegritySha256": "8de7738e2b2a246cdfcf406199600d6847c0e96303f0f09b763d46936e3a0b59",
+      "readInFull": true,
+      "coherentSeparateSecondMessageRecognized": false,
+      "concretePuzzleActionAndTargetUnitOrSourceAnchorRecognized": false,
+      "unresolvedAmbiguousMessageRecognized": false,
+      "keyLookingMaterialRecognizedByReading": false,
+      "requiresPrivateFollowup": false,
+      "class": "even-physical-row-source-prose-fragments-control",
+      "ordinarySourceVocabularyRecognized": true,
+      "ordinaryRhetoricalImperativesOrActionWordsPresent": true,
+      "reason": "The complete parity control retains the complementary article fragments, rhetorical advice and portions of a quotation. Concrete-sounding source rhetoric did not identify a puzzle extraction unit or source-anchored next action. I did not repair or join missing text."
+    }
+  ],
+  "prohibitedFollowups": {
+    "newTransforms": 0,
+    "wordDeletionsOrSubstitutions": 0,
+    "newSpacingOrWrapRepairs": 0,
+    "arbitrarySubstringSelection": 0,
+    "additionalReadings": 0,
+    "keyFormatOrChecksumTests": 0,
+    "wordlistFilters": 0,
+    "proseToKeyHashes": 0,
+    "seedOrAddressDerivations": 0,
+    "networkQueries": 0,
+    "publicEdits": 0,
+    "gitActions": 0
+  },
+  "limits": [
+    "This is subjective unblinded AI nonrecognition in exactly three fixed outputs, not a proof that a message or key is absent.",
+    "Source fragments and ordinary rhetorical commands can remain readable after row selection without establishing a separately encoded message.",
+    "No missing words, source anchors, selection rules or semantic gaps were supplied by the reviewer.",
+    "Issue/date, creator applicability and original typesetting-byte recovery remain unresolved as in the registered source model.",
+    "Only Reviewer B coverage and judgment are complete here. Any combined outcome and possible disagreement must be assessed separately without rewriting this review.",
+    "The reviewer wrote the primary generator and may have expectation bias despite not receiving Review A conclusion."
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "testId": "funky-sand-direct",
+  "batchId": "keiser-funky-sand-direct-20261110",
+  "status": "readings-generated-awaiting-review",
+  "startedAtUTC": "2026-11-10T13:10:47.924Z",
+  "completedAtUTC": "2026-11-10T13:10:48.078Z",
+  "registrationCommit": "5c7942ea339ee964e0080ba0781b725b5801c5d5",
+  "protocolSha256": "26a681bc40ddb6a1d9d471cf7e70f7f7c3c0c6a588b2f3400a4c083a1e59f15e",
+  "sourceHashes": {
+    "sources/funky-upheaval/physical-lines.json": "12ef2d85578b89a164a109c7f5045e9fd28b88fd7ce5c58e30632e242a60eb11",
+    "sources/funky-upheaval/SOURCE_REGISTER.json": "fb756e12d376af208c619b6e46ea17366df9d90214992e53673cc10fda106b2f",
+    "sources/funky-upheaval/pages/108.jpg": "1557e2974d4f04579aea3015b6f885f35b2b966f06ac5944d39c70439ee8fb6c",
+    "sources/funky-upheaval/pages/109.jpg": "bc12df605c993055ef761f27b413d9c8bc781d70c83533a7d9ae119034554814",
+    "sources/funky-upheaval/pages/110.jpg": "2f5cbca356f01887acf84cabcf6d5d8b5a5ec56547ae88329fd7de923a84601f",
+    "sources/funky-upheaval/pages/111.jpg": "40092c66f44296988a7f397563915e30f3926a6e265c512aa61b01057e970f50",
+    "analysis_outputs/continuation_20261109/george_sand_research.md": "8a619cf8c6ab246fc4dc1c2086648e5d245bfa1ca751011febcbf74be42dd1ff"
+  },
+  "scriptHashes": {
+    "scripts/funky_sand_direct.py": "4eec6a4ce0ab8466875ddfc8568e1a38debf767a8d619eb5d8d1809ddaf7c8b1",
+    "scripts/verify_funky_sand_direct.py": "7e7c5c9c2234b4934665b287848d6383d787949935ff99248c11f2f2083163d5"
+  },
+  "sourceModel": {
+    "id": "funky-upheaval-physical-lines-v1",
+    "physicalRows": 115,
+    "titleRowsExcluded": 4,
+    "contentRows": 111,
+    "contentRowsByPrintedPage": {
+      "108": 7,
+      "109": 41,
+      "110": 29,
+      "111": 34
+    },
+    "issueNumber": null,
+    "publicationDate": null,
+    "eligibility": "unverified-conditional",
+    "originalTypesettingBytesRecovered": false
+  },
+  "scopeComplete": true,
+  "readingsGenerated": true,
+  "semanticReviewComplete": false,
+  "counts": {
+    "readings": 3,
+    "selectedRows": [
+      111,
+      56,
+      55
+    ],
+    "submittedCodepoints": 7689
+  },
+  "readingDescriptors": [
+    {
+      "id": "SAND-FW-ALL",
+      "selectedRowCount": 111,
+      "codepoints": 703,
+      "utf8Bytes": 703,
+      "sha256": "bd74dbfe4fc74de0bb2ed587ff68a91da11435ca90d338c18a358225b927ab2a"
+    },
+    {
+      "id": "SAND-ODD-LINES",
+      "selectedRowCount": 56,
+      "codepoints": 3445,
+      "utf8Bytes": 3459,
+      "sha256": "459f480133df15bd09f3260a20f12b949ad9485dbc1c98753af3ff6a8b68bd3d"
+    },
+    {
+      "id": "SAND-EVEN-CONTROL",
+      "selectedRowCount": 55,
+      "codepoints": 3541,
+      "utf8Bytes": 3558,
+      "sha256": "8de7738e2b2a246cdfcf406199600d6847c0e96303f0f09b763d46936e3a0b59"
+    }
+  ],
+  "privateArtifactIntegrity": {
+    "readingsJsonSha256": "033513555f835cdec0193732751118a6ca0a09b9558537edf323c46658d15c61",
+    "readingsTextSha256": "80f141c86a8ca9401c384bdce85832fbdbbf40f3ae4b704563917e39205506f2"
+  },
+  "activity": {
+    "variantsBeyondRegisteredReadings": 0,
+    "keyFormatChecks": 0,
+    "checksumChecks": 0,
+    "wordlistFilters": 0,
+    "proseToKeyHashes": 0,
+    "seedDerivations": 0,
+    "addressDerivations": 0,
+    "semanticScoring": 0,
+    "networkQueries": 0,
+    "transactions": 0
+  },
+  "limitations": [
+    "Exact issue/date and applicability to the December 2022 plural-key claim remain unverified.",
+    "The March 2023 mirror clue and 20-BTC claim are not assigned to this column.",
+    "This is one frozen transcription/encoding model, not recovered original typesetting bytes.",
+    "The population excludes title rows, running furniture, decorative text, opener/art and adjacent ads as declared.",
+    "Three related source readings are not independent theories or statistical trials.",
+    "Successful generation is neither semantic recognition nor a claim that a message, key or cipher is absent."
+  ]
+}

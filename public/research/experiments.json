@@ -975,17 +975,20 @@
     {
       "id": "funky-sand-direct",
       "title": "Three direct Sand readings of Funky Upheaval",
-      "status": "in-progress",
+      "status": "tested",
       "kind": "reading-review",
       "independentTheory": false,
       "scope": "One fixed conditional-source procedure: first chunks of 111 non-title physical rows, 56 odd whole lines, and 55 even whole lines as control. Global order only.",
-      "result": "Source and implementations are being publicly registered before target outputs. Generation and two full-output AI reviews follow; no key-format or network check is part of this procedure.",
+      "result": "Three registered literal outputs were generated with exact independent UTF-8/JSON/TXT agreement. Two AI contexts read all three complete outputs and recognized no clear second message or actionable instruction. This is subjective nonrecognition, not a formal key/message exclusion.",
       "evidence": [
         "analysis_outputs/continuation_20261110/funky_sand_direct/PROTOCOL.md",
         "analysis_outputs/continuation_20261110/funky_sand_direct/PROTOCOL.json",
         "sources/funky-upheaval/SOURCE.md",
         "scripts/funky_sand_direct.py",
-        "scripts/verify_funky_sand_direct.py"
+        "scripts/verify_funky_sand_direct.py",
+        "analysis_outputs/continuation_20261110/funky_sand_direct/RESULT.md",
+        "analysis_outputs/continuation_20261110/funky_sand_direct/RESULT.json",
+        "analysis_outputs/continuation_20261110/funky_sand_direct/INDEPENDENT_CHECK.json"
       ],
       "reproduce": [
         "PYTHONDONTWRITEBYTECODE=1 python3 scripts/funky_sand_direct.py --self-test",

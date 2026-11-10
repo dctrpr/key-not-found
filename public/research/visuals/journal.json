@@ -334,6 +334,43 @@
       },
       "sceneNote": "Actual retained Funky Upheaval scans, printed107\u2013112. The arrangement is a viewing aid. Issue/date and eligibility under the December claim remain unresolved; the photographed March target is still Issue24.",
       "methodId": "funky-source-preparation"
+    },
+    {
+      "id": "funky-direct-reading",
+      "completedAtUTC": "2026-11-10T13:14:39.860Z",
+      "title": "Three readings. No clear second message.",
+      "summary": "First words, odd whole lines and the even-line control were generated from the frozen source. Both implementations agreed.",
+      "result": "Two AI contexts read all three complete outputs and recognized no clear second message. This is exploratory nonrecognition, not proof that a key or cipher is absent.",
+      "diagram": "reading",
+      "metrics": [
+        {
+          "label": "Source rows",
+          "value": 111,
+          "pointer": "/sourceRows"
+        },
+        {
+          "label": "Literal readings",
+          "value": 3,
+          "pointer": "/readingCount"
+        },
+        {
+          "label": "AI review contexts",
+          "value": 2,
+          "pointer": "/reviewerCount"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/funky_sand_direct/RESULT.json",
+        "sha256": "c260981ee58f2575951fbf1c51c197e78b25c4009ff79f1be38eac9e59ed3c89"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/funky_sand_direct/RESULT.md",
+      "scene": {
+        "source": "funky",
+        "layout": "spread",
+        "page": 109
+      },
+      "sceneNote": "Actual Funky Upheaval scans. The arrangement is a viewing aid; registered rules fix the readings. Issue/date remain unverified, and the March mirror/20BTC claim is not assigned to this column.",
+      "methodId": "funky-sand-direct"
     }
   ]
 }
