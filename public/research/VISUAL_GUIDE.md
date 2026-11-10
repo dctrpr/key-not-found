@@ -6,6 +6,8 @@ Page spacing, camera positions and the reflection view are viewing tools and inv
 
 The [visual log](https://keynotfound.com/#visual-updates) gives completed source reviews and tests a dated frame. Each frame links to its report, carries the actual UTC completion time, and uses counts checked against a hash-pinned safe result. The frames preserve completed research in sequence, including the mirror checks and Orange Party saved-reading replay. Multiple frames on one date are separate steps on that day; their number is not a count of research days. A frame’s page-view link selects its actual source set.
 
+Open tabs check for newly published frames every five minutes and when returning after a minute away. New frames preserve the view being read; use **Latest frame** to jump ahead. Network failures keep the checked snapshot. Changes to earlier frames or to the visual format require a page reload so the displayed explanation and its renderer stay together.
+
 Save a frame as a standalone SVG, or download the [scene data](https://keynotfound.com/data/visual-journal.json). The same recorded view, numbers and evidence can be reused for a later film. The SVG is a schematic explanation; the linked evidence defines the source review or exact experiment. The Funky Upheaval frame records source curation, with no new decoding test; its issue/date remain unverified. A recap plays only when selected.
 
 New visual entries should record actual work, including failed tests, corrections and inconclusive results. Preserve older frames and their completion times. A day without a new result does not acquire a fabricated test, funding receipt or solution claim. Raw private-key candidates, their private scalars, and candidate-derived address associations are excluded.

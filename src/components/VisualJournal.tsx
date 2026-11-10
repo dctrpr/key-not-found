@@ -1,13 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ArrowDownToLine, ArrowUpRight, Box, ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react';
-import journal from '../../public/data/visual-journal.json';
+import useLiveVisualJournal from '../hooks/useLiveVisualJournal';
+import type { VisualJournalEntry as Entry } from '../lib/visualJournal';
 import { followHashLinks } from '../lib/hashLinks';
 import type { VisualLabView } from './VisualLab';
 import './VisualJournal.css';
 
-type Entry = (typeof journal.entries)[number] & {
-  exhibits?: { path: string; sha256: string; label: string; width?: number; height?: number }[];
-};
 const formatNumber = (n: number) => n.toLocaleString('en-GB');
 const date = (s: string) => new Date(s).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
 const clock = (s: string) => new Date(s).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'UTC' });
@@ -106,18 +104,33 @@ export function VisualFrame({ entry, number }: { entry: Entry; number: number })
 }
 
 export default function VisualJournal({ onOpenView }: { onOpenView: (view: VisualLabView) => void }) {
+  const journal = useLiveVisualJournal();
+  const entries = useRef(journal.entries);
+  const seenFrames = useRef(journal.entries.length);
+  entries.current = journal.entries;
   const [index, setIndex] = useState(journal.entries.length - 1);
   const [playing, setPlaying] = useState(false);
   const entry: Entry = journal.entries[index];
   const frameStart = Math.max(0, Math.min(index - 1, journal.entries.length - 3));
   useEffect(() => followHashLinks(hash => {
     const match = /^#visual-([a-z0-9-]+)$/.exec(hash);
-    const i = match ? journal.entries.findIndex(e => e.id === match[1]) : -1;
+    const i = match ? entries.current.findIndex(e => e.id === match[1]) : -1;
     if (i >= 0) {
       setIndex(i); setPlaying(false);
       document.getElementById('visual-updates')?.scrollIntoView({ block: 'start', behavior: 'instant' });
     }
   }), []);
+  useEffect(() => {
+    // Resolve a shared link that was newer than this tab's bundled snapshot.
+    // Existing selections stay in place when other frames are published.
+    const match = /^#visual-([a-z0-9-]+)$/.exec(window.location.hash);
+    const i = match ? journal.entries.findIndex(e => e.id === match[1]) : -1;
+    if (i >= seenFrames.current) {
+      setIndex(i); setPlaying(false);
+      document.getElementById('visual-updates')?.scrollIntoView({ block: 'start', behavior: 'instant' });
+    }
+    seenFrames.current = journal.entries.length;
+  }, [journal.entries]);
   useEffect(() => {
     if (!playing) return;
     const timer = window.setTimeout(() => {
@@ -125,13 +138,13 @@ export default function VisualJournal({ onOpenView }: { onOpenView: (view: Visua
       else setIndex(index + 1);
     }, 6500);
     return () => window.clearTimeout(timer);
-  }, [playing, index]);
+  }, [playing, index, journal.entries.length]);
   const choose = (i: number) => {
     setIndex(i); setPlaying(false);
     window.history.replaceState(null, '', '#visual-' + journal.entries[i].id);
   };
   return <section className="visual-journal" id="visual-updates" aria-labelledby="visual-journal-title">
-    <div className="vj-heading"><div><span className="vj-eyebrow">THE VISUAL LOG</span><h2 id="visual-journal-title">The work, frame by frame.</h2></div><p>Dated views of sources, tests and results. Each frame links to the evidence.</p></div>
+    <div className="vj-heading"><div><span className="vj-eyebrow">THE VISUAL LOG</span><h2 id="visual-journal-title">The work, frame by frame.</h2></div><p>Dated views of sources, tests and results. Each frame links to the evidence. New published frames appear here automatically.</p></div>
     <div className="vj-layout">
       <div className="vj-player">
         <VisualFrame entry={entry} number={index + 1}/>
@@ -148,6 +161,6 @@ export default function VisualJournal({ onOpenView }: { onOpenView: (view: Visua
     {entry.exhibits && <div className="vj-source-exhibits" aria-label="Source and diagnostic excerpts">{entry.exhibits.map(exhibit => <a key={exhibit.path} href={exhibit.path} target="_blank" rel="noreferrer"><span>{exhibit.label}<ArrowUpRight size={14}/></span><img src={exhibit.path} alt={exhibit.label} width={exhibit.width || 2544} height={exhibit.height || 58} loading="lazy"/><small>Open full-resolution excerpt</small></a>)}</div>}
     <div className="vj-frames" aria-label="Nearby research frames">{journal.entries.slice(frameStart, frameStart + 3).map((e, offset) => { const i = frameStart + offset; return <button type="button" key={e.id} aria-pressed={i === index} onClick={() => choose(i)}><span>{String(i + 1).padStart(2, '0')} / {clock(e.completedAtUTC)}</span><strong>{e.title}</strong></button>; })}</div>
     {journal.entries.length > 3 && <label className="vj-date-picker">Jump to a recorded update<select value={index} onChange={event => choose(Number(event.target.value))}>{journal.entries.map((e, i) => <option key={e.id} value={i}>{date(e.completedAtUTC)} · {clock(e.completedAtUTC)} · {e.title}</option>)}</select></label>}
-    <div className="vj-export"><span>Keep the visuals with the research.</span><div><a href={`/research/visuals/${entry.id}.svg`} download>Save frame · SVG <ArrowDownToLine size={14}/></a><a href="/research/visuals/journal.json" download>Scene data · JSON <ArrowDownToLine size={14}/></a></div></div>
+    <div className="vj-export"><span>Keep the visuals with the research.</span><div>{index < journal.entries.length - 1 && <button type="button" onClick={() => choose(journal.entries.length - 1)}>Latest frame <ChevronRight size={14}/></button>}<a href={`/research/visuals/${entry.id}.svg`} download>Save frame · SVG <ArrowDownToLine size={14}/></a><a href="/research/visuals/journal.json" download>Scene data · JSON <ArrowDownToLine size={14}/></a></div></div>
   </section>;
 }
