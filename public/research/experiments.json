@@ -801,17 +801,22 @@
       "status": "falsified",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "113 text rows plus STOP; 39,744 correlated readings; 1,746 distinct forms; eight declared record formats. Full-line OCR excluded.",
-      "result": "Two WIF-shaped and ten minikey-shaped distinct strings all failed checksums. No other declared format candidate. Independent saved-output audit agreed; this is a scoped first-word negative.",
+      "scope": "113 text rows plus STOP; 39,744 correlated readings; 1,746 distinct forms; eight declared record formats. Full-line OCR excluded. A later registered replay adds the missing 26-character minikey length on the same 1,746 forms.",
+      "result": "Two WIF-shaped and ten minikey-shaped distinct strings all failed checksums. No other declared format candidate. Independent saved-output audit agreed; this is a scoped first-word negative. All four distinct minikey26 shapes also failed. The public gzip reproduced the original JSONL exactly, and the exact-text/compacted form sets were proved equal; independent replay agreed.",
       "evidence": [
         "analysis_outputs/continuation_20261110/issue26_firstwords/RESULT.md",
         "analysis_outputs/continuation_20261110/issue26_firstwords/RESULT.json",
         "analysis_outputs/continuation_20261110/issue26_firstwords/INDEPENDENT_CHECK.json",
         "analysis_outputs/continuation_20261110/issue26_firstwords/PROTOCOL.json",
-        "sources/issue26/README.md"
+        "sources/issue26/README.md",
+        "analysis_outputs/continuation_20261110/columns_compatibility/RESULT.md",
+        "analysis_outputs/continuation_20261110/columns_compatibility/RESULT.json",
+        "analysis_outputs/continuation_20261110/columns_compatibility/PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/columns_compatibility/INDEPENDENT_VERIFICATION.json"
       ],
       "reproduce": [
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/issue26_firstword_probe.py --run --protocol analysis_outputs/continuation_20261110/issue26_firstwords/PROTOCOL.json --registration-commit 1af6d1f0cf07e6ca87d620db65c27d3b63949a12 --out issue26-firstwords-rerun"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/issue26_firstword_probe.py --run --protocol analysis_outputs/continuation_20261110/issue26_firstwords/PROTOCOL.json --registration-commit 1af6d1f0cf07e6ca87d620db65c27d3b63949a12 --out issue26-firstwords-rerun",
+        "Follow analysis_outputs/continuation_20261110/columns_compatibility/PROTOCOL.md with registration d95986156cd785c3836ad060fdcaeabdebabcb01 and fresh private output directories."
       ],
       "limitations": [
         "Candidate for the December plural-key claim, not an authenticated alternative 20-BTC target.",
@@ -858,8 +863,8 @@
       "status": "tested",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "The exact 1,940 previously saved Orange Party readings and their pre-existing character reversals; four literal formats, fixed source/code pins and resource bounds. The single checksum lead has a separately registered five-construction, two-provider history follow-up.",
-      "result": "The frozen replay produced 3,709 forms: all 15 shaped WIFs failed, one of 205 shaped minikeys passed an eight-bit check, and no hex/BIP39 shapes appeared. Independent replay verification agreed. The 22-character lead then had zero reported chain/mempool history in all ten two-provider responses across five Python/Node-agreed constructions at 2026-11-10T09:23:52–54Z. No authenticated prize key.",
+      "scope": "The exact 1,940 previously saved Orange Party readings and their pre-existing character reversals; four literal formats, fixed source/code pins and resource bounds. The single checksum lead has a separately registered five-construction, two-provider history follow-up. A later compatibility replay adds extended-private/BIP38/address/SEC and minikey26 to those same 3,709 forms.",
+      "result": "The frozen replay produced 3,709 forms: all 15 shaped WIFs failed, one of 205 shaped minikeys passed an eight-bit check, and no hex/BIP39 shapes appeared. Independent replay verification agreed. The 22-character lead then had zero reported chain/mempool history in all ten two-provider responses across five Python/Node-agreed constructions at 2026-11-10T09:23:52–54Z. No authenticated prize key. The later replay reconstructed all 3,880 original exact/reversed records byte for byte; all 60 distinct literal address shapes and 99 minikey26 shapes failed, with no other added-format shape. Independent full replay agreed; the older 22-character lead is unchanged.",
       "evidence": [
         "analysis_outputs/continuation_20261110/issue27_stream_coverage/RESULT.md",
         "analysis_outputs/continuation_20261110/issue27_stream_coverage/RESULT.json",
@@ -870,12 +875,17 @@
         "analysis_outputs/continuation_20261110/issue27_minikey_history/PROTOCOL.md",
         "analysis_outputs/continuation_20261110/issue27_minikey_history/PROTOCOL.json",
         "analysis_outputs/continuation_20261110/issue27_minikey_history/RESULT.md",
-        "analysis_outputs/continuation_20261110/issue27_minikey_history/RESULT.json"
+        "analysis_outputs/continuation_20261110/issue27_minikey_history/RESULT.json",
+        "analysis_outputs/continuation_20261110/columns_compatibility/RESULT.md",
+        "analysis_outputs/continuation_20261110/columns_compatibility/RESULT.json",
+        "analysis_outputs/continuation_20261110/columns_compatibility/PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/columns_compatibility/INDEPENDENT_VERIFICATION.json"
       ],
       "reproduce": [
         "PYTHONDONTWRITEBYTECODE=1 python3 scripts/issue27_stream_coverage.py --self-test",
         "PYTHONDONTWRITEBYTECODE=1 python3 scripts/verify_issue27_saved.py --self-test",
-        "node scripts/check_issue27_minikey_lead.cjs --self-test"
+        "node scripts/check_issue27_minikey_lead.cjs --self-test",
+        "Follow analysis_outputs/continuation_20261110/columns_compatibility/PROTOCOL.md with registration d95986156cd785c3836ad060fdcaeabdebabcb01 and fresh private output directories."
       ],
       "limitations": [
         "A validator-coverage replay of existing correlated readings, not a new cipher theory.",
@@ -891,19 +901,24 @@
       "status": "tested",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "One frozen repaired-OCR body model: 312 rows, 2,018 literal chunks, both token directions, 12 phases and words/initials/finals; exactly 72 correlated readings. Three uncertain prefixes propagate by projection.",
-      "result": "All 72 fixed-model readings completed: 96 distinct forms, 93 distinct minikey-shaped strings all failed checks, and no WIF/hex/BIP39 shapes. Independent token/reading/evaluation replay agreed. The source-confirmed subset has 60 readings, 78 forms and 51 rejected minikey shapes; 12 readings retain prefix uncertainty. This closes only the registered literal-chunk model, not the full physical-source hypothesis or puzzle.",
+      "scope": "One frozen repaired-OCR body model: 312 rows, 2,018 literal chunks, both token directions, 12 phases and words/initials/finals; exactly 72 correlated readings. Three uncertain prefixes propagate by projection. The later compatibility matrix adds extended-private/BIP38/address/SEC and minikey26 on the same 96 forms, with cached nominal verdicts for the nested 78-form source-known subset.",
+      "result": "All 72 fixed-model readings completed: 96 distinct forms, 93 distinct minikey-shaped strings all failed checks, and no WIF/hex/BIP39 shapes. Independent token/reading/evaluation replay agreed. The source-confirmed subset has 60 readings, 78 forms and 51 rejected minikey shapes; 12 readings retain prefix uncertainty. This closes only the registered literal-chunk model, not the full physical-source hypothesis or puzzle. A separately registered added-format replay found one weak 26-character minikey checksum pass among 51 distinct shapes; the same pass is in a whitespace-compacted form of the 60-reading source-known subset, but is not contiguous in any unmodified reading. All 43 literal address shapes failed. Full independent reconstruction agreed. This is a private review lead compatible with chance; history requires a separate protocol.",
       "evidence": [
         "analysis_outputs/continuation_20261110/issue27_stride12/RESULT.md",
         "analysis_outputs/continuation_20261110/issue27_stride12/RESULT.json",
         "analysis_outputs/continuation_20261110/issue27_stride12/INDEPENDENT_CHECK.json",
         "analysis_outputs/continuation_20261110/issue27_stride12/PROTOCOL.md",
         "analysis_outputs/continuation_20261110/issue27_stride12/PROTOCOL.json",
-        "analysis_outputs/continuation_20261110/issue27_body_source/SOURCE.md"
+        "analysis_outputs/continuation_20261110/issue27_body_source/SOURCE.md",
+        "analysis_outputs/continuation_20261110/columns_compatibility/RESULT.md",
+        "analysis_outputs/continuation_20261110/columns_compatibility/RESULT.json",
+        "analysis_outputs/continuation_20261110/columns_compatibility/PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/columns_compatibility/INDEPENDENT_VERIFICATION.json"
       ],
       "reproduce": [
         "PYTHONDONTWRITEBYTECODE=1 python3 scripts/issue27_stride12.py --self-test",
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/verify_issue27_stride12.py --self-test"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/verify_issue27_stride12.py --self-test",
+        "Follow analysis_outputs/continuation_20261110/columns_compatibility/PROTOCOL.md with registration d95986156cd785c3836ad060fdcaeabdebabcb01 and fresh private output directories."
       ],
       "limitations": [
         "The printed 12-step phrase motivates one exploratory interval; it is not an authenticated extraction instruction.",
@@ -1001,10 +1016,10 @@
       "id": "funky-sand-direct",
       "title": "Three direct Sand readings of Funky Upheaval",
       "status": "tested",
-      "kind": "reading-review",
+      "kind": "method-test",
       "independentTheory": false,
-      "scope": "One fixed conditional-source procedure: first chunks of 111 non-title physical rows, 56 odd whole lines, and 55 even whole lines as control. Global order only.",
-      "result": "Three registered literal outputs were generated with exact independent UTF-8/JSON/TXT agreement. Two AI contexts read all three complete outputs and recognized no clear second message or actionable instruction. This is subjective nonrecognition, not a formal key/message exclusion.",
+      "scope": "One fixed conditional-source procedure: first chunks of 111 non-title physical rows, 56 odd whole lines, and 55 even whole lines as control. Global order only. Separate fixed-output compatibility check: six exact/Unicode-whitespace-compacted forms, all eight format categories and minikey26.",
+      "result": "Three registered literal outputs were generated with exact independent UTF-8/JSON/TXT agreement. Two AI contexts read all three complete outputs and recognized no clear second message or actionable instruction. This is subjective nonrecognition, not a formal key/message exclusion. The later registered format replay reproduced the original artifact byte for byte. All five minikey22/30 and two minikey26 shapes failed; no other declared shape. Independent full replay agreed. This is a literal-format negative only on these six forms.",
       "evidence": [
         "analysis_outputs/continuation_20261110/funky_sand_direct/PROTOCOL.md",
         "analysis_outputs/continuation_20261110/funky_sand_direct/PROTOCOL.json",
@@ -1013,11 +1028,16 @@
         "scripts/verify_funky_sand_direct.py",
         "analysis_outputs/continuation_20261110/funky_sand_direct/RESULT.md",
         "analysis_outputs/continuation_20261110/funky_sand_direct/RESULT.json",
-        "analysis_outputs/continuation_20261110/funky_sand_direct/INDEPENDENT_CHECK.json"
+        "analysis_outputs/continuation_20261110/funky_sand_direct/INDEPENDENT_CHECK.json",
+        "analysis_outputs/continuation_20261110/columns_compatibility/RESULT.md",
+        "analysis_outputs/continuation_20261110/columns_compatibility/RESULT.json",
+        "analysis_outputs/continuation_20261110/columns_compatibility/PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/columns_compatibility/INDEPENDENT_VERIFICATION.json"
       ],
       "reproduce": [
         "PYTHONDONTWRITEBYTECODE=1 python3 scripts/funky_sand_direct.py --self-test",
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/verify_funky_sand_direct.py --self-test"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/verify_funky_sand_direct.py --self-test",
+        "Follow analysis_outputs/continuation_20261110/columns_compatibility/PROTOCOL.md with registration d95986156cd785c3836ad060fdcaeabdebabcb01 and fresh private output directories."
       ],
       "limitations": [
         "Issue/date and applicability under the December 2022 plural-key claim are conditional.",

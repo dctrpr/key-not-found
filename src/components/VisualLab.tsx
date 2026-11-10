@@ -5,11 +5,16 @@ import "./VisualLab.css";
 
 const VisualScene = lazy(() => import("./VisualScene"));
 export const VISUAL_PAGES = [73, 74, 75, 76, 77, 78, 79, 80] as const;
-export type VisualLabView = { layout: "spread" | "stack" | "mirror"; page: number; source?: "issue27" | "funky" };
+export type VisualLabView = { layout: "spread" | "stack" | "mirror"; page: number; source?: "issue26" | "issue27" | "funky" };
 export const VISUAL_SOURCES = {
   issue24: {
     label: "2023 puzzle", name: "Bitcoin Magazine Issue 24", pages: VISUAL_PAGES,
     width: 2544, height: 3264, provenance: "/research/sources/provenance.json",
+  },
+  issue26: {
+    label: "Censorship column", name: "Censorship, Dematerialization and Bitcoin", pages: [102, 103, 104],
+    width: 2040, height: 2805,
+    provenance: "/research/sources/issue26/SOURCE_REGISTER.md",
   },
   issue27: {
     label: "Orange Party column", name: "Bitcoin Magazine Orange Party column", pages: [78, 79, 80, 81],
@@ -25,13 +30,15 @@ export const VISUAL_SOURCES = {
 export const visualSource = (source?: VisualLabView["source"]) => VISUAL_SOURCES[source || "issue24"];
 export const visualPageUrl = (page: number, source?: VisualLabView["source"]) => source === "funky"
   ? `/research/sources/funky-upheaval/pages/${page}.jpg`
+  : source === "issue26"
+    ? `/research/sources/issue26/page_${String(page - 99).padStart(2, "0")}.jpg`
   : source === "issue27"
     ? `/research/analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_${String(page - 77).padStart(2, "0")}.jpg`
     : `/research/sources/pages/${page}.jpg`;
 export const visualPairPages = (view: VisualLabView): [number, number] => {
   const pages: readonly number[] = visualSource(view.source).pages;
   const index = Math.max(0, pages.indexOf(view.page));
-  const start = Math.floor(index / 2) * 2;
+  const start = Math.min(Math.floor(index / 2) * 2, pages.length - 2);
   return [pages[start], pages[start + 1]];
 };
 export type VisualZoomRequest = { serial: number; amount: number };
@@ -50,7 +57,7 @@ const MODES = [
   { id: "mirror", label: "Mirror", Icon: Box },
 ] as const;
 const checkedView = (view?: VisualLabView): VisualLabView => {
-  const source = view?.source === "issue27" || view?.source === "funky" ? view.source : undefined;
+  const source = view?.source === "issue26" || view?.source === "issue27" || view?.source === "funky" ? view.source : undefined;
   const pages: readonly number[] = visualSource(source).pages;
   return {
     ...(source ? { source } : {}),
@@ -161,7 +168,7 @@ export default function VisualLab({ view, onViewChange, openRequest }: VisualLab
           {Object.entries(VISUAL_SOURCES).map(([id, option]) => (
             <button key={id} type="button" aria-pressed={sourceId === id} onClick={() => {
               if (sourceId === id) return;
-              selectView({ layout: current.layout, page: option.pages[0], ...(id === "issue27" || id === "funky" ? { source: id } : {}) });
+              selectView({ layout: current.layout, page: option.pages[0], ...(id === "issue26" || id === "issue27" || id === "funky" ? { source: id } : {}) });
             }}>{option.label}</button>
           ))}
         </div>

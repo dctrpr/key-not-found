@@ -631,6 +631,43 @@
       },
       "sceneNote": "Actual magazine scans behind the saved OCR. This viewer illustrates the source; the replay did not regenerate the 112 historical OCR views.",
       "methodId": "batch20-g07"
+    },
+    {
+      "id": "columns-fixed-output-compatibility",
+      "completedAtUTC": "2026-11-10T20:03:01.496Z",
+      "title": "Four paths. One weak checksum pass.",
+      "summary": "Four saved populations reproduced byte for byte: 43,699 correlated records and 5,557 forms summed across them. One 26-character minikey passed its eight-bit checksum in a whitespace-compacted Orange Party stride form.",
+      "result": "The independent replay matched every original artifact, form and validation record. The pass is in the source-known subset, but is not contiguous in an unmodified reading. A weak checksum can pass by chance; no recovered key or prize is authenticated.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Saved records",
+          "value": 43699,
+          "pointer": "/counts/labeledRecords"
+        },
+        {
+          "label": "Forms across four sets",
+          "value": 5557,
+          "pointer": "/counts/sumPerCohortForms"
+        },
+        {
+          "label": "Weak format passes",
+          "value": 1,
+          "pointer": "/counts/sumNominalValidRecords"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/columns_compatibility/RESULT.json",
+        "sha256": "0f1d2cbac0695e1328e878b9e3e080479c6405a65ff82a5d51019543b133fe6d"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/columns_compatibility/RESULT.md",
+      "scene": {
+        "layout": "spread",
+        "page": 79,
+        "source": "issue27"
+      },
+      "sceneNote": "Actual Orange Party source pages. The check replays frozen readings; the page-board, layers and mirror are viewing aids. Choose another source set to inspect Censorship or Funky Upheaval.",
+      "methodId": "issue27-body-stride12"
     }
   ]
 }

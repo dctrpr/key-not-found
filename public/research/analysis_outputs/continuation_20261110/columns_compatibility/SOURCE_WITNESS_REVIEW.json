@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "status": "PASS-scoped-saved-form-association",
+  "completedAtUTC": "2026-11-10T20:11:15.954Z",
+  "registrationCommit": "d95986156cd785c3836ad060fdcaeabdebabcb01",
+  "protocolSha256": "7e7868d2fa93110cced1ab8f6f8ff5e71c2235aabdc662f558ffcbf90f504cc5",
+  "primaryResultSha256": "0f1d2cbac0695e1328e878b9e3e080479c6405a65ff82a5d51019543b133fe6d",
+  "privateValidationArtifactSha256": "69978ce65b2655860717b86fc575f7c92295bbacf5891419df1151e7b0d3f99e",
+  "privateFormsArtifactSha256": "a634eef32022587b1a1c178474e7c2347f9db03a1da2c8ef300ed4f203e72823",
+  "cohort": "issue27-body-stride12",
+  "checks": {
+    "literal26SBase58Syntax": true,
+    "nominalEqualsCachedStrictPositive": true,
+    "presentInSavedStrictKnownCompactedForm": true,
+    "contiguousInAnyUnmodifiedOriginalReading": false,
+    "compactionRegeneratedByReviewer": false,
+    "newGlyphMappingPerformed": false
+  },
+  "sourceKnownScope": {
+    "nominalReadings": 72,
+    "strictKnownReadings": 60,
+    "strictKnownForms": 78,
+    "nestedSubset": true,
+    "physicalSourceComplete": false
+  },
+  "finding": "The sole new26-character checksum lead belongs to a saved registered whitespace-compacted form in the strict-known subset. It is not a contiguous substring of any unmodified original reading and is not a demonstrated printed key.",
+  "provenanceBasis": "Saved nominal/strict record equality, cached known-form membership, registered source-uncertainty flags and completed independent full reconstruction/validation agreement. No new compaction or glyph mapping by this reviewer.",
+  "limitations": [
+    "Eight-bit checksum compatibility is not creator intent, ownership, funding or solution evidence.",
+    "Source-known means the declared source model/projection flags; no fresh pixel proof of every glyph was performed.",
+    "No raw value, candidate fingerprint, reading ID, phase, projection, offset or source position is included."
+  ],
+  "activity": {
+    "newTransforms": 0,
+    "newSelectors": 0,
+    "checksumsRecomputed": 0,
+    "derivations": 0,
+    "network": 0,
+    "publicEdits": 0,
+    "gitActions": 0
+  }
+}

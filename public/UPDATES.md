@@ -116,3 +116,10 @@ The registered target run completed at 10:14:48.170 UTC. All 72 fixed-model read
 The original Orange Pill OP64 video page was recovered from the official channel. Normal browser access exposed the English auto-caption transcript even though a separate raw HTTP player request required login. The platform displays a 9 March 2023 premiere and a description dating the conversation to 8 March; earlier syndicated dates are not substituted for these source facts.
 
 Two AI assistants independently reviewed all 543 exported caption cues. Neither recognized an explicit article-linked puzzle instruction. This is caption-only review, with ASR, redaction and missing end-time limits; no audio was listened to, no exact spoken wording is certified, and no thematic coincidence authorizes a new cipher rule. Public files include provenance and a bounded summary, not the full transcript.
+
+
+## 10 November 2026 — Four source sets and a continuing visual record
+
+The Visual Lab now includes the three retained Censorship pages 102–104 alongside the 2023 photographed-target scans, Orange Party and Funky Upheaval. Each source has a page board, layer stack and page-and-reflection view, with full scans and provenance links. The last Censorship page pairs with its preceding page; no missing page or scan is invented. The display arrangement is a viewing aid.
+
+The dated visual journal records the new four-population format check with hash-pinned counts and a link to its exact result. The recap, standalone SVGs and scene JSON preserve actual completed work for later films. Existing frames and timestamps remain intact; publication follows actual work. No funding receipt, research spending or recovered BTC is invented.

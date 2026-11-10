@@ -2,7 +2,7 @@ import bundled from '../../public/data/visual-journal.json';
 
 export type VisualJournalDiagram = 'funnel' | 'history' | 'support' | 'measurement' | 'reading' | 'source' | 'review';
 export type VisualJournalMetric = { label: string; value: number; pointer: string; operation?: 'countActive' };
-export type VisualJournalScene = { layout: 'spread' | 'stack' | 'mirror'; page: number; source?: 'issue27' | 'funky' };
+export type VisualJournalScene = { layout: 'spread' | 'stack' | 'mirror'; page: number; source?: 'issue26' | 'issue27' | 'funky' };
 export type VisualJournalExhibit = { path: string; sha256: string; label: string; width?: number; height?: number };
 export type VisualJournalEntry = {
   id: string;
@@ -96,9 +96,9 @@ function metric(value: unknown): VisualJournalMetric {
 function scene(value: unknown): VisualJournalScene {
   const item = object(value, ['layout', 'page'], ['source']);
   if (item.layout !== 'spread' && item.layout !== 'stack' && item.layout !== 'mirror') throw new Error('Invalid visual journal layout');
-  if (item.source !== undefined && item.source !== 'issue27' && item.source !== 'funky') throw new Error('Unknown visual journal source');
+  if (item.source !== undefined && item.source !== 'issue26' && item.source !== 'issue27' && item.source !== 'funky') throw new Error('Unknown visual journal source');
   const page = integer(item.page);
-  const [first, last] = item.source === 'issue27' ? [78, 81] : item.source === 'funky' ? [107, 112] : [73, 80];
+  const [first, last] = item.source === 'issue26' ? [102, 104] : item.source === 'issue27' ? [78, 81] : item.source === 'funky' ? [107, 112] : [73, 80];
   if (page < first || page > last) throw new Error('Invalid visual journal page');
   return { layout: item.layout, page, ...(item.source === undefined ? {} : { source: item.source }) };
 }

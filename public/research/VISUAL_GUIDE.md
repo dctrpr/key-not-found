@@ -1,6 +1,6 @@
 # The visual investigation
 
-[Open the visual lab](https://keynotfound.com/#visual-lab) to inspect all eight 2023-puzzle scans (printed 73–80), the four retained Orange Party column pages, or the six [Funky Upheaval article pages](sources/funky-upheaval/SOURCE_REGISTER.md) in a page board, a separated layer stack, or a page-and-reflection comparison. Choose the source set before comparing pages. Drag to orbit and use the zoom/reset controls. The full scan remains available as a normal image. The model loads on request and falls back to the scan if 3D is unavailable.
+[Open the visual lab](https://keynotfound.com/#visual-lab) to inspect all eight 2023-puzzle scans (printed 73–80), the three [Censorship column pages 102–104](sources/issue26/SOURCE_REGISTER.md), the four retained Orange Party column pages, or the six [Funky Upheaval article pages](sources/funky-upheaval/SOURCE_REGISTER.md) in a page board, a separated layer stack, or a page-and-reflection comparison. Choose the source set before comparing pages. Drag to orbit and use the zoom/reset controls. The full scan remains available as a normal image. The model loads on request and falls back to the scan if 3D is unavailable.
 
 Page spacing, camera positions and the reflection view are viewing tools and investigator hypotheses. They do not establish the creator's intended mechanism or add a new decoding result. The [archived 3D model](https://keynotfound.com/lab/index.html) exposes the earlier OCR and experimental layers separately; its hypotheses are off by default. Its old labels and geometry are navigation aids rather than current source authority.
 
@@ -23,5 +23,7 @@ The saved-mirror review frame records 40 existing texts, two AI readers and zero
 The supplemental-format frame records seven frozen cohorts, 186 cohort-level validations and zero valid extra records. The check reused the existing outputs and added only the declared missing gates. Counts are tied to the execution and independent full-output verification; they are not a count of independent theories or globally unique candidate values.
 
 The G07 saved-OCR frame records 1,038 saved readings, 1,464 fixed forms and zero valid extra-format records. It opens the actual source pages; the replay did not recreate the historical 112 OCR views. The separate [source comparison](analysis_outputs/continuation_20261110/source_witness_followup/RESULT.md) shows six native context crops from the two retained PDFs, with exact pixel provenance and the remaining contour limits.
+
+The four-population compatibility frame records 43,699 correlated saved records, 5,557 forms summed across populations and one weak 26-character checksum pass. The pass requires registered whitespace compaction and is not contiguous in an unchanged reading. It opens the Orange Party pages; the other source sets remain selectable. The source-known subset is nested, not an extra discovery. See the [exact result](analysis_outputs/continuation_20261110/columns_compatibility/RESULT.md).
 
 The puzzle remains unsolved. The 3D display and visual log do not verify the prize funding.

@@ -4,11 +4,12 @@ The key is missing. The work is public.
 
 My independent investigation into the Bitcoin Magazine puzzle Max Keiser described in 2023. The files, tests and updates are public; help is optional. The puzzle is **unsolved**. The claimed 20 BTC has not been independently authenticated. This project is not affiliated with Max Keiser, Bitcoin Magazine, or Pump.fun.
 
-[Latest research: the registered twelve-step model](public/research/analysis_outputs/continuation_20261110/issue27_stride12/RESULT.md). All 93 minikey-shaped strings failed in 72 fixed-model readings, with independent replay. Source uncertainty and the exact exclusion are explicit; the puzzle remains unsolved.
+[Latest research: four saved populations, one weak checksum lead](public/research/analysis_outputs/continuation_20261110/columns_compatibility/RESULT.md). All four original artifacts reproduced byte for byte. One 26-character checksum pass requires registered whitespace compaction; it does not authenticate a key or prize. The report distinguishes source-known characters from an unproven extraction rule.
 
 ## Start here
 
 - [The film](https://keynotfound.com/#film): a 62-second explanation, with [reproducible source](scripts/explainer/README.md), captions and a transcript.
+- [Visual lab and dated recap](https://keynotfound.com/#visual-lab): actual scans in page-board, layer-stack and mirror views; evidence-linked frames with SVG and scene-data exports.
 - [Research corpus](public/research/README.md): scans, public clues, source register, historical reports, code, and exact test outputs.
 - [Research map and live update flow](RESEARCH_MAP.md): four branches, linked notes, and the contribution-to-publication path.
 - [Experiment register](public/research/experiments.json): scoped results and open leads.

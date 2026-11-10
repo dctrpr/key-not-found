@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "testId": "columns-fixed-output-compatibility",
+  "status": "PASS",
+  "passed": true,
+  "completedAtUTC": "2026-11-10T20:03:20.280363+00:00",
+  "registrationCommit": "d95986156cd785c3836ad060fdcaeabdebabcb01",
+  "protocolSha256": "7e7868d2fa93110cced1ab8f6f8ff5e71c2235aabdc662f558ffcbf90f504cc5",
+  "primaryResultSha256": "0f1d2cbac0695e1328e878b9e3e080479c6405a65ff82a5d51019543b133fe6d",
+  "privateArtifactIntegrity": {
+    "FUNKY_READINGS.private.json": "033513555f835cdec0193732751118a6ca0a09b9558537edf323c46658d15c61",
+    "ISSUE26_READINGS.private.jsonl": "53e24a093652064a7965b57a9c2195e88f555b6e13f2d83b9f02d96958edf054",
+    "STRIDE_READINGS.private.jsonl": "b2b33f3eb8440cdf3fa949355b59f443e8aa545b8809500b45d406b364a93225",
+    "FROZEN_READINGS.private.jsonl": "f397d4932969dd6282dd8b2f1562ec0cbec7165a19a7038aecf131b4a3789030",
+    "FORMS.private.json": "a634eef32022587b1a1c178474e7c2347f9db03a1da2c8ef300ed4f203e72823",
+    "VALIDATION.private.json": "69978ce65b2655860717b86fc575f7c92295bbacf5891419df1151e7b0d3f99e"
+  },
+  "comparisons": {
+    "cohorts": 4,
+    "labeledRecords": 43699,
+    "textCodepoints": 2303575,
+    "sumPerCohortForms": 5557,
+    "globalUnionComputed": false,
+    "strictKnownIsNested": true,
+    "sumNominalValidRecords": 1
+  },
+  "fullOriginalArtifactBytesCompared": true,
+  "fullReadingObjectsOrderAndUTF8Compared": true,
+  "fullFormsAndRawValidationCompared": true,
+  "safeCountsAndScopeCompared": true,
+  "originalReadingReconstruction": {
+    "funky-sand-direct": true,
+    "issue26-first-words": false,
+    "issue27-body-stride12": true,
+    "issue27-frozen-stream-coverage": true
+  },
+  "newSelectorIntroduced": false,
+  "semanticReviewPerformed": false,
+  "methodDependency": "Original independentFunky/stride token routines, independentfixed reading wrappers, reused independentform/26core; common literal validator math deliberately shared.",
+  "scalarDerivations": 0,
+  "addressDerivations": 0,
+  "networkQueries": 0,
+  "publicEdits": 0
+}

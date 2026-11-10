@@ -15,8 +15,8 @@ for (const entry of data.entries) {
   assert.ok(!ids.has(entry.id)); ids.add(entry.id);
   assert.ok(['funnel', 'history', 'source', 'reading', 'measurement', 'support', 'review'].includes(entry.diagram));
   assert.ok(['spread', 'stack', 'mirror'].includes(entry.scene.layout));
-  assert.ok(entry.scene.source === undefined || ['issue27', 'funky'].includes(entry.scene.source));
-  const pages = entry.scene.source === 'funky' ? [107, 108, 109, 110, 111, 112] : entry.scene.source === 'issue27' ? [78, 79, 80, 81] : [73, 74, 75, 76, 77, 78, 79, 80];
+  assert.ok(entry.scene.source === undefined || ['issue26', 'issue27', 'funky'].includes(entry.scene.source));
+  const pages = entry.scene.source === 'funky' ? [107, 108, 109, 110, 111, 112] : entry.scene.source === 'issue26' ? [102, 103, 104] : entry.scene.source === 'issue27' ? [78, 79, 80, 81] : [73, 74, 75, 76, 77, 78, 79, 80];
   assert.ok(pages.includes(entry.scene.page));
   assert.ok(entry.source.path.startsWith('analysis_outputs/') && !entry.source.path.includes('..'));
   const raw = fs.readFileSync(path.join(root, 'public/research', entry.source.path));
@@ -36,6 +36,44 @@ for (const entry of data.entries) {
       value = value.filter(q => q.activity).length;
     } else assert.equal(metric.operation, undefined);
     assert.equal(value, metric.value, 'Visual metric differs from its frozen result');
+  }
+  if (entry.id === 'columns-fixed-output-compatibility') {
+    assert.equal(entry.diagram, 'funnel');
+    assert.equal(result.testId, 'columns-fixed-output-compatibility');
+    assert.equal(result.scopeComplete, true);
+    assert.equal(result.compatibilityGatesComplete, true);
+    assert.equal(result.allOriginalArtifactIdentitiesVerified, true);
+    assert.equal(result.newSelectorIntroduced, false);
+    assert.equal(result.ocrRerun, false);
+    assert.equal(result.sourceRepairs, false);
+    assert.equal(result.privateReviewRequired, true);
+    assert.equal(result.counts.labeledRecords, 43699);
+    assert.equal(result.counts.sumPerCohortForms, 5557);
+    assert.equal(result.counts.globalUnionComputed, false);
+    assert.equal(result.counts.sumNominalValidRecords, 1);
+    const base = path.dirname(path.join(root, 'public/research', entry.source.path));
+    const independentBytes = fs.readFileSync(path.join(base, 'INDEPENDENT_VERIFICATION.json'));
+    const independent = JSON.parse(independentBytes);
+    assert.equal(independent.passed, true);
+    assert.equal(independent.primaryResultSha256, entry.source.sha256);
+    assert.equal(independent.fullOriginalArtifactBytesCompared, true);
+    assert.equal(independent.fullFormsAndRawValidationCompared, true);
+    const review = JSON.parse(fs.readFileSync(path.join(base, 'POST_RUN_REVIEW.json')));
+    assert.equal(review.status, 'PASS');
+    assert.ok(Object.values(review.checks).every(value => value === true));
+    assert.equal(review.primaryResultSha256, entry.source.sha256);
+    assert.equal(review.independentReceiptSha256, crypto.createHash('sha256').update(independentBytes).digest('hex'));
+    const witness = JSON.parse(fs.readFileSync(path.join(base, 'SOURCE_WITNESS_REVIEW.json')));
+    assert.equal(witness.status, 'PASS-scoped-saved-form-association');
+    assert.equal(witness.primaryResultSha256, entry.source.sha256);
+    assert.equal(witness.checks.presentInSavedStrictKnownCompactedForm, true);
+    assert.equal(witness.checks.contiguousInAnyUnmodifiedOriginalReading, false);
+    assert.equal(witness.privateValidationArtifactSha256, result.privateArtifactIntegrity['VALIDATION.private.json']);
+    for (const receipt of [independent, review, witness]) assert.equal(receipt.registrationCommit, result.registrationCommit);
+    for (const [file, hash] of Object.entries({ ...result.sourceHashes, ...result.scriptHashes })) {
+      assert.ok(!file.includes('..'));
+      assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root, 'public/research', file))).digest('hex'), hash);
+    }
   }
   if (entry.id === 'g07-supplemental-formats') {
     assert.equal(entry.diagram, 'funnel');

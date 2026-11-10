@@ -10,6 +10,8 @@ The [visual lab and dated frames](VISUAL_GUIDE.md) make the source pages and com
 
 ## Research is continuing
 
+The [four-population format check](analysis_outputs/continuation_20261110/columns_compatibility/RESULT.md) reproduced all original artifacts byte for byte: 43,699 correlated records and 5,557 forms summed across populations. One 26-character minikey checksum pass occurs only in a whitespace-compacted Orange Party stride form, also within the source-known subset. Independent full replay agrees. It is a chance-compatible private review lead, with no address derivation/history request in this experiment. The scans now include the Censorship column in all three viewer modes.
+
 The [retained-source comparison](analysis_outputs/continuation_20261110/source_witness_followup/RESULT.md) exposes six exact native crops from both scan PDFs. The same three inverse-field contexts still leave 13 prior contact cases uncertified; acquisition independence is unproven. No new layout source was recovered. The later clue's exact parent URL is now recorded, but its text and puzzle connection remain unverified. Direct inspection of the linked paper's three figures established no additional extraction rule.
 
 The [G07 saved-OCR format replay](analysis_outputs/continuation_20261110/g07_supplemental/RESULT.md) completed all 1,038 unchanged records / 1,464 forms. Six address validations and two 26-character minikey checks failed; other added formats had no shapes. The independent replay matched every record, form and validation result. This updates the existing spectral-OCR method without rerunning OCR, adding a selector or excluding missed text.
