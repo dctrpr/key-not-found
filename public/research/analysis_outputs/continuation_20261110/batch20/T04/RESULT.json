@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "batchId": "keiser-20261110-batch20",
+  "testId": "T04",
+  "methodId": "batch20-t04",
+  "title": "Paragraph-boundary readings",
+  "family": "paragraph-edge-null-cipher",
+  "startedAtUTC": "2026-11-10T05:14:17.473Z",
+  "completedAtUTC": "2026-11-10T05:14:17.484Z",
+  "registrationCommit": "8f4fa38bf24db7e432410c4daaa29e9de486156c",
+  "protocolSha256": "9a9441d1ad4e6a10c11addd06b31f9d443c0e82faa9caa1438379cc7c58742be",
+  "sourceHashes": {
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b"
+  },
+  "scriptHashes": {
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d",
+    "scripts/batch20_text.py": "dedd23de8dc8cd58d9dfd9916f1ecfabb1149d96b4c0b21c42ad47aae9b8f747"
+  },
+  "parameters": {
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39"
+    ],
+    "forms": [
+      "exact",
+      "whitespace-only-compacted"
+    ],
+    "raw32AsciiScalars": false,
+    "hashWrappers": false,
+    "bip39Tokenization": "lowercase unfiltered lexical tokens; ordinary punctuation boundaries; invalid-group \u241e is a hard region boundary",
+    "hexMatching": "64hex scalar and SEC records require non-hex boundaries",
+    "units": [
+      "whole-body",
+      "each-page"
+    ],
+    "groupBy": [
+      "page",
+      "paragraph"
+    ],
+    "mergeAcrossPage": false,
+    "phases": [
+      "all",
+      "odd",
+      "even"
+    ],
+    "groupOrder": [
+      "forward",
+      "reverse"
+    ],
+    "projections": [
+      "first_words",
+      "last_words",
+      "first_initials",
+      "first_finals",
+      "last_initials",
+      "last_finals",
+      "boundary_initial_pairs"
+    ]
+  },
+  "controls": {
+    "passed": true,
+    "common": {
+      "passed": true,
+      "controls": [
+        "official2048wordlist",
+        "BIP39valid-invalid",
+        "BIP39-invalid-group-barrier",
+        "BIP32-all5SLIP132-private-versions",
+        "invalid-root-parent-child-marker-scalar",
+        "BIP38-all6-structural-flag-combinations",
+        "BIP38-reserved-flags-checksum",
+        "Base58Check",
+        "Bech32-v0",
+        "Bech32m-v1",
+        "cross-checksum-version-and-invalid-padding",
+        "SEC-oncurve",
+        "WIF",
+        "minikey22and30-embedded",
+        "invalid-checksum-scalar-case-point",
+        "safe-domain-separated-output"
+      ],
+      "targetInputRead": false,
+      "targetChecks": 0,
+      "networkQueries": 0
+    },
+    "textControls": [
+      "boustrophedon-parity-order-page-reset",
+      "fixed-interior-column",
+      "odd-even-middle",
+      "paragraph-reflow",
+      "U.K.-quoted-sentence-splitter",
+      "Bacon-ASCII-case-decoding",
+      "barriers-and-unpadded-tail",
+      "unique-stream-ids"
+    ],
+    "targetInputRead": false,
+    "targetChecks": 0,
+    "networkQueries": 0
+  },
+  "evaluation": {
+    "streamCount": 252,
+    "uniqueStreamCount": 244,
+    "uniqueFormCount": 316,
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39"
+    ],
+    "shapeCounts": {
+      "wif": 0,
+      "minikey": 1,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "uniqueShapeCounts": {
+      "wif": 0,
+      "minikey": 1,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "executionCount": 1,
+    "validCounts": {
+      "wif": 0,
+      "minikey": 0,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "hits": [],
+    "privateReviewRequired": false,
+    "fingerprintRule": {
+      "algorithm": "SHA-256",
+      "domainText": "KEY404/batch20/record-fingerprint/v1",
+      "separatorHex": "00",
+      "rule": "SHA256(domain || 0x00 || ASCII(format) || 0x00 || canonical record bytes)"
+    },
+    "networkQueries": 0,
+    "rawAsciiScalarInterpretations": 0
+  },
+  "outcome": "no-valid-declared-literal-record",
+  "negativeCriterion": "No valid declared literal record excludes only this exact extraction, source population and record-format scope; it does not exclude another cipher, format or selector.",
+  "limitations": [
+    "Paragraph IDs were visually reconstructed, not supplied by an authoritative manuscript.",
+    "The previous paragraph reset selected alternating lines rather than one word per paragraph."
+  ],
+  "privateReviewRequired": false,
+  "networkQueries": 0,
+  "rawStreamFile": "streams.private.json; never publish without separate review"
+}

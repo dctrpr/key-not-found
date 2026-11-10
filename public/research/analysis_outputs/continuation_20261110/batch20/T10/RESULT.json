@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "batchId": "keiser-20261110-batch20",
+  "testId": "T10",
+  "methodId": "batch20-t10",
+  "title": "Literal SEC public keys and curve membership",
+  "family": "public-point-discovery",
+  "startedAtUTC": "2026-11-10T05:14:17.670Z",
+  "completedAtUTC": "2026-11-10T05:14:17.718Z",
+  "registrationCommit": "8f4fa38bf24db7e432410c4daaa29e9de486156c",
+  "protocolSha256": "9a9441d1ad4e6a10c11addd06b31f9d443c0e82faa9caa1438379cc7c58742be",
+  "sourceHashes": {
+    "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.json": "1651a33dab46babf36f56439ddb409058cfa36712d96ead7d4200962b80817b9",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b"
+  },
+  "scriptHashes": {
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d",
+    "scripts/batch20_text.py": "dedd23de8dc8cd58d9dfd9916f1ecfabb1149d96b4c0b21c42ad47aae9b8f747"
+  },
+  "parameters": {
+    "formats": [
+      "sec_public"
+    ],
+    "sourcePopulation": "frozen-clean42forms",
+    "compressedPrefixes": [
+      "02",
+      "03"
+    ],
+    "compressedHexLength": 66,
+    "uncompressedPrefix": "04",
+    "uncompressedHexLength": 130,
+    "curve": "secp256k1",
+    "onCurveRequired": true,
+    "repairHex": false,
+    "deriveAddresses": false
+  },
+  "controls": {
+    "passed": true,
+    "common": {
+      "passed": true,
+      "controls": [
+        "official2048wordlist",
+        "BIP39valid-invalid",
+        "BIP39-invalid-group-barrier",
+        "BIP32-all5SLIP132-private-versions",
+        "invalid-root-parent-child-marker-scalar",
+        "BIP38-all6-structural-flag-combinations",
+        "BIP38-reserved-flags-checksum",
+        "Base58Check",
+        "Bech32-v0",
+        "Bech32m-v1",
+        "cross-checksum-version-and-invalid-padding",
+        "SEC-oncurve",
+        "WIF",
+        "minikey22and30-embedded",
+        "invalid-checksum-scalar-case-point",
+        "safe-domain-separated-output"
+      ],
+      "targetInputRead": false,
+      "targetChecks": 0,
+      "networkQueries": 0
+    },
+    "textControls": [
+      "boustrophedon-parity-order-page-reset",
+      "fixed-interior-column",
+      "odd-even-middle",
+      "paragraph-reflow",
+      "U.K.-quoted-sentence-splitter",
+      "Bacon-ASCII-case-decoding",
+      "barriers-and-unpadded-tail",
+      "unique-stream-ids"
+    ],
+    "targetInputRead": false,
+    "targetChecks": 0,
+    "networkQueries": 0
+  },
+  "evaluation": {
+    "streamCount": 42,
+    "uniqueStreamCount": 42,
+    "uniqueFormCount": 42,
+    "formats": [
+      "sec_public"
+    ],
+    "shapeCounts": {
+      "sec_public": 0
+    },
+    "uniqueShapeCounts": {
+      "sec_public": 0
+    },
+    "executionCount": 0,
+    "validCounts": {
+      "sec_public": 0
+    },
+    "hits": [],
+    "privateReviewRequired": false,
+    "fingerprintRule": {
+      "algorithm": "SHA-256",
+      "domainText": "KEY404/batch20/record-fingerprint/v1",
+      "separatorHex": "00",
+      "rule": "SHA256(domain || 0x00 || ASCII(format) || 0x00 || canonical record bytes)"
+    },
+    "networkQueries": 0,
+    "rawAsciiScalarInterpretations": 0
+  },
+  "outcome": "no-valid-declared-literal-record",
+  "negativeCriterion": "No valid declared literal record excludes only this exact extraction, source population and record-format scope; it does not exclude another cipher, format or selector.",
+  "limitations": [
+    "Curve membership has no embedded checksum and does not prove intentional encoding or ownership.",
+    "No private-key inversion, address derivation, network request or transaction occurs."
+  ],
+  "privateReviewRequired": false,
+  "networkQueries": 0,
+  "rawStreamFile": "streams.private.json; never publish without separate review"
+}

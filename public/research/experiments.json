@@ -303,17 +303,19 @@
     {
       "id": "batch20-t01",
       "title": "Alternating direction on the actual printed lines",
-      "status": "untested",
+      "status": "falsified",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "Registered T01; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
-      "result": "Protocol published; target execution pending. No result claimed.",
+      "scope": "T01: 196 labeled readings; 236 distinct forms; exact fixed protocol.",
+      "result": "196 labeled readings (152 distinct texts), 236 distinct exact/whitespace-compacted forms. 21 shape occurrences (6 distinct); zero valid declared records. Independent form counts and checksums agreed.",
       "evidence": [
-        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/T01/RESULT.md",
+        "analysis_outputs/continuation_20261110/batch20/T01/RESULT.json",
+        "analysis_outputs/continuation_20261110/batch20/T01/INDEPENDENT_CHECK.json",
         "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
       ],
       "reproduce": [
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --run T01 --protocol analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json --registration-commit 8f4fa38bf24db7e432410c4daaa29e9de486156c --out T01-rerun"
       ],
       "limitations": [
         "The older boustrophedon test used merged transcript lines; this is a corrected-source test.",
@@ -323,17 +325,19 @@
     {
       "id": "batch20-t02",
       "title": "Fixed interior columns of printed words and characters",
-      "status": "untested",
+      "status": "falsified",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "Registered T02; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
-      "result": "Protocol published; target execution pending. No result claimed.",
+      "scope": "T02: 628 labeled readings; 1120 distinct forms; exact fixed protocol.",
+      "result": "628 labeled readings (628 distinct texts), 1120 distinct exact/whitespace-compacted forms. 42 shape occurrences (36 distinct); zero valid declared records. Independent form counts and checksums agreed.",
       "evidence": [
-        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/T02/RESULT.md",
+        "analysis_outputs/continuation_20261110/batch20/T02/RESULT.json",
+        "analysis_outputs/continuation_20261110/batch20/T02/INDEPENDENT_CHECK.json",
         "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
       ],
       "reproduce": [
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --run T02 --protocol analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json --registration-commit 8f4fa38bf24db7e432410c4daaa29e9de486156c --out T02-rerun"
       ],
       "limitations": [
         "Interior columns extend the first-word clue but are not creator instructions.",
@@ -343,17 +347,19 @@
     {
       "id": "batch20-t03",
       "title": "Mirror-axis centers of printed lines",
-      "status": "untested",
+      "status": "falsified",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "Registered T03; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
-      "result": "Protocol published; target execution pending. No result claimed.",
+      "scope": "T03: 120 labeled readings; 168 distinct forms; exact fixed protocol.",
+      "result": "120 labeled readings (120 distinct texts), 168 distinct exact/whitespace-compacted forms. 16 shape occurrences (10 distinct); zero valid declared records. Independent form counts and checksums agreed.",
       "evidence": [
-        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/T03/RESULT.md",
+        "analysis_outputs/continuation_20261110/batch20/T03/RESULT.json",
+        "analysis_outputs/continuation_20261110/batch20/T03/INDEPENDENT_CHECK.json",
         "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
       ],
       "reproduce": [
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --run T03 --protocol analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json --registration-commit 8f4fa38bf24db7e432410c4daaa29e9de486156c --out T03-rerun"
       ],
       "limitations": [
         "The center selector is an exploratory mirror hypothesis.",
@@ -363,17 +369,19 @@
     {
       "id": "batch20-t04",
       "title": "Paragraph-boundary readings",
-      "status": "untested",
+      "status": "falsified",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "Registered T04; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
-      "result": "Protocol published; target execution pending. No result claimed.",
+      "scope": "T04: 252 labeled readings; 316 distinct forms; exact fixed protocol.",
+      "result": "252 labeled readings (244 distinct texts), 316 distinct exact/whitespace-compacted forms. 1 shape occurrences (1 distinct); zero valid declared records. Independent form counts and checksums agreed.",
       "evidence": [
-        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/T04/RESULT.md",
+        "analysis_outputs/continuation_20261110/batch20/T04/RESULT.json",
+        "analysis_outputs/continuation_20261110/batch20/T04/INDEPENDENT_CHECK.json",
         "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
       ],
       "reproduce": [
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --run T04 --protocol analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json --registration-commit 8f4fa38bf24db7e432410c4daaa29e9de486156c --out T04-rerun"
       ],
       "limitations": [
         "Paragraph IDs were visually reconstructed, not supplied by an authoritative manuscript.",
@@ -383,17 +391,19 @@
     {
       "id": "batch20-t05",
       "title": "Sentence-boundary readings from the faithful body",
-      "status": "untested",
+      "status": "falsified",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "Registered T05; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
-      "result": "Protocol published; target execution pending. No result claimed.",
+      "scope": "T05: 42 labeled readings; 54 distinct forms; exact fixed protocol.",
+      "result": "42 labeled readings (42 distinct texts), 54 distinct exact/whitespace-compacted forms. 6 shape occurrences (6 distinct); zero valid declared records. Independent form counts and checksums agreed.",
       "evidence": [
-        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/T05/RESULT.md",
+        "analysis_outputs/continuation_20261110/batch20/T05/RESULT.json",
+        "analysis_outputs/continuation_20261110/batch20/T05/INDEPENDENT_CHECK.json",
         "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
       ],
       "reproduce": [
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --run T05 --protocol analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json --registration-commit 8f4fa38bf24db7e432410c4daaa29e9de486156c --out T05-rerun"
       ],
       "limitations": [
         "Sentence segmentation is a declared inference; alternate segmentation is outside this test.",
@@ -403,17 +413,19 @@
     {
       "id": "batch20-t06",
       "title": "Visible capitalization as a data carrier",
-      "status": "untested",
+      "status": "falsified",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "Registered T06; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
-      "result": "Protocol published; target execution pending. No result claimed.",
+      "scope": "T06: 60 labeled readings; 66 distinct forms; exact fixed protocol.",
+      "result": "60 labeled readings (58 distinct texts), 66 distinct exact/whitespace-compacted forms. 12 shape occurrences (6 distinct); zero valid declared records. Independent form counts and checksums agreed.",
       "evidence": [
-        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/T06/RESULT.md",
+        "analysis_outputs/continuation_20261110/batch20/T06/RESULT.json",
+        "analysis_outputs/continuation_20261110/batch20/T06/INDEPENDENT_CHECK.json",
         "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
       ],
       "reproduce": [
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --run T06 --protocol analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json --registration-commit 8f4fa38bf24db7e432410c4daaa29e9de486156c --out T06-rerun"
       ],
       "limitations": [
         "Grammar, ordinary capitalization and the all-caps paragraph are strong null explanations.",
@@ -424,17 +436,19 @@
     {
       "id": "batch20-t07",
       "title": "Serialized extended private-key records",
-      "status": "untested",
+      "status": "falsified",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "Registered T07; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
-      "result": "Protocol published; target execution pending. No result claimed.",
+      "scope": "T07: 42 labeled readings; 42 distinct forms; exact fixed protocol.",
+      "result": "42 labeled readings (42 distinct texts), 42 distinct exact/whitespace-compacted forms. 0 shape occurrences (0 distinct); zero valid declared records. Independent form counts and checksums agreed.",
       "evidence": [
-        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/T07/RESULT.md",
+        "analysis_outputs/continuation_20261110/batch20/T07/RESULT.json",
+        "analysis_outputs/continuation_20261110/batch20/T07/INDEPENDENT_CHECK.json",
         "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
       ],
       "reproduce": [
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --run T07 --protocol analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json --registration-commit 8f4fa38bf24db7e432410c4daaa29e9de486156c --out T07-rerun"
       ],
       "limitations": [
         "No extended-private format is specified by the creator.",
@@ -444,17 +458,19 @@
     {
       "id": "batch20-t08",
       "title": "BIP38 encrypted private-key records",
-      "status": "untested",
+      "status": "falsified",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "Registered T08; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
-      "result": "Protocol published; target execution pending. No result claimed.",
+      "scope": "T08: 42 labeled readings; 42 distinct forms; exact fixed protocol.",
+      "result": "42 labeled readings (42 distinct texts), 42 distinct exact/whitespace-compacted forms. 0 shape occurrences (0 distinct); zero valid declared records. Independent form counts and checksums agreed.",
       "evidence": [
-        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/T08/RESULT.md",
+        "analysis_outputs/continuation_20261110/batch20/T08/RESULT.json",
+        "analysis_outputs/continuation_20261110/batch20/T08/INDEPENDENT_CHECK.json",
         "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
       ],
       "reproduce": [
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --run T08 --protocol analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json --registration-commit 8f4fa38bf24db7e432410c4daaa29e9de486156c --out T08-rerun"
       ],
       "limitations": [
         "A structural encrypted record would require a separate passphrase/source lead.",
@@ -464,17 +480,19 @@
     {
       "id": "batch20-t09",
       "title": "Literal candidate funding addresses",
-      "status": "untested",
+      "status": "falsified",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "Registered T09; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
-      "result": "Protocol published; target execution pending. No result claimed.",
+      "scope": "T09: 42 labeled readings; 42 distinct forms; exact fixed protocol.",
+      "result": "42 labeled readings (42 distinct texts), 42 distinct exact/whitespace-compacted forms. 30 shape occurrences (15 distinct); zero valid declared records. Independent form counts and checksums agreed.",
       "evidence": [
-        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/T09/RESULT.md",
+        "analysis_outputs/continuation_20261110/batch20/T09/RESULT.json",
+        "analysis_outputs/continuation_20261110/batch20/T09/INDEPENDENT_CHECK.json",
         "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
       ],
       "reproduce": [
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --run T09 --protocol analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json --registration-commit 8f4fa38bf24db7e432410c4daaa29e9de486156c --out T09-rerun"
       ],
       "limitations": [
         "A valid or active address is not authenticated as Max Keiser's.",
@@ -484,17 +502,19 @@
     {
       "id": "batch20-t10",
       "title": "Literal SEC public keys and curve membership",
-      "status": "untested",
+      "status": "falsified",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "Registered T10; exact parameters and pinned sources in TEXT_PROTOCOL.json.",
-      "result": "Protocol published; target execution pending. No result claimed.",
+      "scope": "T10: 42 labeled readings; 42 distinct forms; exact fixed protocol.",
+      "result": "42 labeled readings (42 distinct texts), 42 distinct exact/whitespace-compacted forms. 0 shape occurrences (0 distinct); zero valid declared records. Independent form counts and checksums agreed.",
       "evidence": [
-        "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20/T10/RESULT.md",
+        "analysis_outputs/continuation_20261110/batch20/T10/RESULT.json",
+        "analysis_outputs/continuation_20261110/batch20/T10/INDEPENDENT_CHECK.json",
         "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json"
       ],
       "reproduce": [
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --self-test"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --run T10 --protocol analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json --registration-commit 8f4fa38bf24db7e432410c4daaa29e9de486156c --out T10-rerun"
       ],
       "limitations": [
         "Curve membership has no embedded checksum and does not prove intentional encoding or ownership.",
