@@ -2,7 +2,7 @@
 
 The key is missing. The work is public.
 
-An independent, open investigation into the Bitcoin Magazine puzzle Max Keiser described in 2023. The puzzle is **unsolved**. The claimed 20 BTC has not been independently authenticated. This project is not affiliated with Max Keiser, Bitcoin Magazine, or Pump.fun.
+My independent investigation into the Bitcoin Magazine puzzle Max Keiser described in 2023. The files, tests and updates are public; help is optional. The puzzle is **unsolved**. The claimed 20 BTC has not been independently authenticated. This project is not affiliated with Max Keiser, Bitcoin Magazine, or Pump.fun.
 
 ## Start here
 
@@ -17,7 +17,7 @@ An independent, open investigation into the Bitcoin Magazine puzzle Max Keiser d
 
 The website is a React/TypeScript app with two read-only public GitHub endpoints. The research map and notes sync periodically from a single public main-branch commit; a dated deployed snapshot remains available if syncing fails. A separate endpoint returns public repository counts and the latest three commit headlines, without author identities or email addresses. The guest chat loads in an explicitly opened third-party popup. The main site has no account database, wallet custody, hidden API keys, analytics, or private chat archive. The chat provider has its own privacy policy; its iframe loads only when a visitor opens chat.
 
-## Find your role
+## Want to help?
 
 - **Reader:** inspect the original pages and exact printed lines.
 - **Skeptic:** challenge a result with public evidence; corrections belong in the record.
@@ -69,11 +69,11 @@ The proposed token is **KEY NOT FOUND**, ticker **KEY404**, on Pump.fun/Solana. 
 
 Creator fees actually received by the project are intended to fund AI agents, research runs and infrastructure, with receipts. The founder commits: if this project recovers the prize BTC, 100% will fund KEY404 buybacks, with public execution records. Prize existence and recovery remain unverified; the commitment is not automated. See the full funding plan.
 
-## Community
+## Chat and research files
 
-The earlier community research and discussion also live in [BTC is Toxic AF – Treasure Hunt on Discord](https://discord.gg/ZZK6DuADS). The site links this room from the introduction, community section, and footer. The invite is maintained in the `DISCORD` constant in `src/App.tsx`; update the documentation links at the same time if it changes. Source claims and durable results still need reproducible evidence in this repository. The supplied invite was verified on 9 November 2026 and currently expires on 9 December 2026; replace it when needed or supply a permanent invite.
+Earlier research and discussion also live in [BTC is Toxic AF – Treasure Hunt on Discord](https://discord.gg/ZZK6DuADS). The site links this room from the introduction, discussion section, and footer. The invite is maintained in the `DISCORD` constant in `src/App.tsx`; update the documentation links at the same time if it changes. Source claims and durable results still need reproducible evidence in this repository. The supplied invite was verified on 9 November 2026 and currently expires on 9 December 2026; replace it when needed or supply a permanent invite.
 
-A floating **Chat** button and the community button open the same public nickname-only room, hosted by [tlk.io](https://tlk.io/keiser-key-not-found). Visitors choose a 2–24-character alias in the popup; the provider loads only after they select **Enter chat**. The alias is held in page memory, not local storage, and is passed using tlk.io's documented custom-nickname option. No Nostr signer, wallet connection, or project account is required. Closing the popup removes the provider iframe. Visitors can also open the room in a new tab or use Discord if their browser blocks embeds.
+A floating **Chat** button and the discussion section’s Chat button open the same public nickname-only room, hosted by [tlk.io](https://tlk.io/keiser-key-not-found). Visitors choose a 2–24-character alias in the popup; the provider loads only after they select **Enter chat**. The alias is held in page memory, not local storage, and is passed using tlk.io's documented custom-nickname option. No Nostr signer, wallet connection, or project account is required. Closing the popup removes the provider iframe. Visitors can also open the room in a new tab or use Discord if their browser blocks embeds.
 
 The popup is for live conversation, not the research archive. The project has not claimed moderator ownership. According to the provider's [privacy policy](https://tlk.io/privacy), unmoderated messages expire after 10 minutes; the provider stores nicknames, IP addresses and messages and uses Google Analytics. A guest nickname does not prove authorship or anonymity. Keep durable findings and exact evidence on GitHub.
 

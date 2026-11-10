@@ -73,7 +73,7 @@ const NAV = [
   ["Map", "investigation"],
   ["Log", "updates"],
   ["Files", "files"],
-  ["Join", "community"],
+  ["Discuss", "discussion"],
   ["Funding", "token"],
 ];
 const START_FILES: Record<string, string> = {
@@ -363,7 +363,7 @@ function App() {
               {label}
             </a>
           ))}
-          <div className="nav-community-actions">
+          <div className="nav-discussion-actions">
             <button
               onClick={() => {
                 setMenuOpen(false);
@@ -424,7 +424,7 @@ function App() {
               <p className="founder-story">
                 <span>I found Max Keiser’s puzzle in 2023.</span>
                 <span>I’ve been working on it ever since.</span>
-                <strong>Now, let’s find the key together.</strong>
+                <strong>I’m still hunting. Got a lead?</strong>
               </p>
               <p className="hero-claim">
                 <span>20 BTC claim</span>
@@ -513,10 +513,10 @@ function App() {
 
         <section className="roles" id="roles" aria-labelledby="roles-title">
           <div className="roles-head">
-            <h2 id="roles-title">Find your role.</h2>
+            <h2 id="roles-title">Want to help?</h2>
             <p>
-              Reading the evidence needs no token, wallet or account.
-              Corrections and tests go through GitHub, where they stay public.
+              This is my investigation. The files, tests and updates are public.
+              Read along, challenge a result, or test a lead. No token needed.
             </p>
           </div>
           <div className="roles-grid">
@@ -525,7 +525,7 @@ function App() {
               <strong>Reader</strong>
               <span className="role-verb">Read the eight pages.</span>
               <span className="role-note">
-                Start with the source, not with our notes.
+                Read the original pages. Check the notes.
               </span>
               <span className="role-action">
                 Open the pages <ArrowUpRight size={15} />
@@ -715,7 +715,7 @@ function App() {
             <p>
               <strong>Keep the uncertainty visible.</strong> A later “El
               Salvador” statement is authentic, but its deleted parent post
-              leaves the puzzle connection unverified. We label source facts,
+              leaves the puzzle connection unverified. I label source facts,
               hypotheses, and failed tests separately.
             </p>
             <a href="/research/sources/creator-clues.json">
@@ -744,16 +744,16 @@ function App() {
             <div className="log-layout">
               <div className="log-aside">
                 <h2>
-                  What we tried.
+                  What I tried.
                   <br />
-                  <span>What happens next.</span>
+                  <span>What comes next.</span>
                 </h2>
                 <p>
                   Every result gets a dated note and a link to the evidence.
                   Failed tests and corrections stay in the history.
                 </p>
                 <div className="standing">
-                  <span className="map-label">WHERE WE STAND</span>
+                  <span className="map-label">THE CURRENT RECORD</span>
                   <strong>Still unsolved.</strong>
                   <p>
                     No verified solution or authenticated prize address is
@@ -1048,8 +1048,8 @@ function App() {
           </div>
         </section>
 
-        <section className="section community-section" id="community">
-          <SectionLabel index="06">JOIN THE INVESTIGATION</SectionLabel>
+        <section className="section discussion-section" id="discussion">
+          <SectionLabel index="06">SHARE A LEAD</SectionLabel>
           <div className="section-intro">
             <h2>
               Talk here.
@@ -1057,14 +1057,14 @@ function App() {
               <span>Publish there.</span>
             </h2>
             <p>
-              Chat for quick questions. Discord for earlier files and ongoing
-              discussion. GitHub for the evidence everyone can reproduce. No
-              token is required to take part.
+              Have a question or a lead? Drop it in the chat. Earlier files and
+              discussion are on Discord; reproducible findings go to GitHub.
+              Help if you want. The work stays public.
             </p>
           </div>
-          <div className="community-doors">
+          <div className="discussion-doors">
             <button
-              className="community-door primary-door"
+              className="discussion-door primary-door"
               onClick={() => setChatOpen(true)}
             >
               <MessageCircle size={24} aria-hidden="true" />
@@ -1075,7 +1075,7 @@ function App() {
               <ArrowUpRight size={20} aria-hidden="true" />
             </button>
             <a
-              className="community-door"
+              className="discussion-door"
               href={DISCORD}
               target="_blank"
               rel="noopener noreferrer"
@@ -1088,7 +1088,7 @@ function App() {
               <ArrowUpRight size={20} aria-hidden="true" />
             </a>
             <a
-              className="community-door"
+              className="discussion-door"
               href={repo}
               target="_blank"
               rel="noopener noreferrer"
@@ -1153,17 +1153,17 @@ function App() {
                 <h3>Creator fees fund research.</h3>
                 <p>
                   {tokenLive
-                    ? "Creator fees received by the project fund AI agents and research runs. Each funded run publishes its method, cost and result."
-                    : "If $KEY404 launches on Pump.fun, creator fees received by the project will fund AI agents and research runs. Each funded run publishes its method, cost and result."}
+                    ? "I use creator fees received by the project to fund AI agents and research runs. Each funded run publishes its method, cost and result."
+                    : "If $KEY404 launches on Pump.fun, I’ll use creator fees received by the project to fund AI agents and research runs. Each funded run publishes its method, cost and result."}
                 </p>
               </article>
               <article className="term-committed">
                 <span className="term-label">COMMITTED</span>
-                <h3>If we recover the prize BTC, 100% goes to buybacks.</h3>
+                <h3>If I recover the prize BTC, 100% goes to buybacks.</h3>
                 <p>
-                  If this project recovers the prize BTC, 100% of it will be
-                  used for $KEY404 buybacks, with public execution records. That
-                  is the founder’s public commitment.
+                  If this project recovers the prize BTC, I’ll use 100% of it for
+                  $KEY404 buybacks, with public execution records. That is my
+                  public commitment.
                 </p>
               </article>
               <article>
@@ -1296,7 +1296,7 @@ function App() {
           </div>
           <div className="footer-small">
             <span>
-              Independent community research. Not affiliated with Max Keiser,
+              An independent investigation. Not affiliated with Max Keiser,
               Bitcoin Magazine, or Pump.fun.
             </span>
             <span>

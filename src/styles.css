@@ -1,7 +1,7 @@
 /*
  * KEY NOT FOUND — "marked copy".
  * Newsprint and ink carry the page. Each accent has one job:
- *   lime    our marker: open leads, the next action, the word NOT
+ *   lime    the reader’s marker: open leads, the next action, the word NOT
  *   orange  the source's own ink: Keiser's posts and the magazine
  *   red     the proofreader's pencil: corrections only
  * Ink bars with paper text echo the magazine's inverted bars and mark what
@@ -383,7 +383,7 @@ pre {
   border-bottom-color: var(--lime);
   color: var(--on-ink);
 }
-.nav-community-actions {
+.nav-discussion-actions {
   display: none;
 }
 .header-github {
@@ -1417,15 +1417,15 @@ pre {
 }
 
 /* ---------- Join ---------- */
-.community-section {
+.discussion-section {
   border-top: 1px solid var(--line);
 }
-.community-doors {
+.discussion-doors {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   border: 1.5px solid var(--ink);
 }
-.community-door {
+.discussion-door {
   display: flex;
   align-items: flex-start;
   gap: 15px;
@@ -1437,31 +1437,31 @@ pre {
   text-align: left;
   transition: background 0.15s;
 }
-.community-door:first-child {
+.discussion-door:first-child {
   border-left: 0;
 }
-.community-door > svg {
+.discussion-door > svg {
   flex-shrink: 0;
   margin-top: 3px;
 }
-.community-door > svg:last-child {
+.discussion-door > svg:last-child {
   margin-left: auto;
 }
-.community-door strong {
+.discussion-door strong {
   display: block;
   font-size: 26px;
   font-weight: 650;
   line-height: 1.1;
   letter-spacing: -0.04em;
 }
-.community-door small {
+.discussion-door small {
   display: block;
   margin-top: 9px;
   font-size: 14.5px;
   line-height: 1.5;
   color: var(--muted);
 }
-.community-door:hover {
+.discussion-door:hover {
   background: var(--paper-2);
 }
 .primary-door {
@@ -1926,12 +1926,12 @@ pre {
     min-height: 46px;
     border-bottom: 1px solid var(--ink-line);
   }
-  .nav-community-actions {
+  .nav-discussion-actions {
     display: flex;
     gap: 12px;
     padding-top: 14px;
   }
-  .nav-community-actions :is(button, a) {
+  .nav-discussion-actions :is(button, a) {
     display: flex;
     flex: 1;
     align-items: center;
@@ -2058,15 +2058,15 @@ pre {
     margin-top: 34px;
     box-shadow: 6px 6px 0 var(--lime);
   }
-  .community-doors {
+  .discussion-doors {
     grid-template-columns: 1fr;
   }
-  .community-door {
+  .discussion-door {
     min-height: 0;
     border-top: 1.5px solid var(--ink);
     border-left: 0;
   }
-  .community-door:first-child {
+  .discussion-door:first-child {
     border-top: 0;
   }
   .token-bottom {

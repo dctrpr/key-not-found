@@ -18,7 +18,7 @@ Keep statuses honest: **untested**, **in-progress**, **partial**, **tested**, **
 
 ## Privacy and safety of contributions
 
-- Submit only public or authorized source material. Strip local paths, personal names/contact details, EXIF, credentials, browser state, and private community records.
+- Submit only public or authorized source material. Strip local paths, personal names/contact details, EXIF, credentials, browser state, and private chat records.
 - Do not post a funded private key, seed phrase, access token, or other operational secret in an issue, pull request, or public chat message.
 - Do not send transactions, contact people, or claim project endorsement through a research script.
 - Report read-only chain lookup errors as errors; do not silently count them as no activity.

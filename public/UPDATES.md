@@ -52,3 +52,7 @@ The marked-copy identity keeps the fluorescent marker and original magazine imag
 - Repository counts appear only once they are above zero. The three latest commit headlines remain, labelled as repository activity rather than research.
 - Funding separates what is planned (creator fees fund research after a launch), what is committed (100% of prize BTC this project recovers goes to KEY404 buybacks) and what is unknown (whether a funded prize exists or can be recovered). The token remains unlaunched.
 - The live GitHub sync, its stale and snapshot fallbacks, the page viewer, the downloads and the guest chat work as before.
+
+## 10 November 2026 — An independent investigation
+
+The site, sharing metadata and launch description now use the founder’s first-person voice. The files, tests and updates are public, and help is optional. Leads, corrections and independent tests remain welcome. Funding copy states who runs the research and who makes the recovered-prize buyback commitment. No research result, token status or allocation changed.

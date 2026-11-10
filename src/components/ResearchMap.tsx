@@ -273,8 +273,8 @@ export default function ResearchMap({
             </span>
           </h2>
           <p>
-            We haven’t found the key. Here is every place we looked: what each
-            test covered, what it found, and what it could not rule out.
+            I haven’t found the key. Every recorded attempt is here: what it
+            covered, what it found, and what it could not rule out.
           </p>
         </div>
 
@@ -588,7 +588,7 @@ export default function ResearchMap({
             </li>
             <li>
               <span className="route-step">Review</span>
-              <p>Maintainers check source, reproduction and privacy, then merge.</p>
+              <p>I review the source, reproduction and privacy before merging.</p>
               <a
                 href={repo + "/pulls"}
                 target="_blank"
