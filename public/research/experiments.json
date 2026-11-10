@@ -139,14 +139,17 @@
       "result": "No checksum-valid WIF, literal 64-hex key or contiguous BIP39 phrase in the recorded streams. Its minikey check covered complete compact strings only; embedded windows are audited separately.",
       "evidence": [
         "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.md",
-        "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.json"
+        "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.json",
+        "analysis_outputs/continuation_20261110/issue24_readable_review/REVIEW.md",
+        "analysis_outputs/continuation_20261110/issue24_readable_review/REVIEW.json"
       ],
       "reproduce": [
         "node analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.js"
       ],
       "limitations": [
         "Variant counts are correlated formulations, not independent theories.",
-        "The original minikey validator did not scan inside longer streams. See minikey-window-audit for the separate coverage correction."
+        "The original minikey validator did not scan inside longer streams. See minikey-window-audit for the separate coverage correction.",
+        "Two AI reviewers read the exact22 saved body-only outputs without recognizing an actionable intermediate instruction. This unblinded subjective review does not exclude hidden messages."
       ]
     },
     {
@@ -259,14 +262,17 @@
         "analysis_outputs/continuation_20261110/creator_december/REPORT.md",
         "analysis_outputs/continuation_20261110/creator_december/SOURCE_REVIEW.json",
         "analysis_outputs/continuation_20261110/creator_post_context/REVIEW.md",
-        "analysis_outputs/continuation_20261110/creator_post_context/REVIEW.json"
+        "analysis_outputs/continuation_20261110/creator_post_context/REVIEW.json",
+        "analysis_outputs/continuation_20261110/creator_extra_search/REPORT.md",
+        "analysis_outputs/continuation_20261110/creator_extra_search/SOURCE_RECEIPT.json"
       ],
       "reproduce": [],
       "limitations": [
         "December2023 predecessor context is unavailable.",
         "Recording reviews cover automatic captions only, with ASR and missing end-time limits; no full audio or frame review.",
         "The relevant recording windows, account history and replies have not been exhaustively inventoried or cleared.",
-        "Third-party seed, format and typography guesses are not authenticated creator clues or solutions."
+        "Third-party seed, format and typography guesses are not authenticated creator clues or solutions.",
+        "Six further index queries verified no additional creator statement; this is bounded non-discovery, not account-history completeness."
       ]
     },
     {
@@ -884,11 +890,11 @@
     {
       "id": "minikey26-original-compatibility",
       "title": "The missing 26-character minikey length",
-      "status": "partial",
+      "status": "tested",
       "kind": "coverage-audit",
       "independentTheory": false,
       "scope": "The original 22 saved body readings/42 forms plus the unchanged 24 global mirror language graphs; only historical 26-character minikey compatibility.",
-      "result": "The complete format replay found one weak checksum pass among 207 shapes. Its sole global source witness requires uncertain choices and no nominal reading matches. Format validity is reproduced; creator intent and funding are unestablished. A separate registered five-construction history check is next.",
+      "result": "One of 207 shaped strings passed the eight-bit check. Its sole global witness requires uncertain choices; no nominal reading matches. The separate five-construction history check returned ten successful all-zero provider summaries. The checksum remains valid, with no authenticated funded-key or creator-intent evidence.",
       "evidence": [
         "analysis_outputs/continuation_20261110/minikey26_compatibility/RESULT.md",
         "analysis_outputs/continuation_20261110/minikey26_compatibility/RESULT.json",
@@ -898,7 +904,8 @@
         "analysis_outputs/continuation_20261110/minikey26_compatibility/PROTOCOL.json",
         "analysis_outputs/continuation_20261110/minikey26_compatibility/HISTORICAL_SOURCE.json",
         "analysis_outputs/continuation_20261110/minikey26_compatibility/SOURCE_WITNESS_REVIEW.md",
-        "analysis_outputs/continuation_20261110/minikey26_compatibility/SOURCE_WITNESS_REVIEW.json"
+        "analysis_outputs/continuation_20261110/minikey26_compatibility/SOURCE_WITNESS_REVIEW.json",
+        "analysis_outputs/continuation_20261110/minikey26_history/RESULT.md"
       ],
       "reproduce": [
         "python3 scripts/minikey26_compatibility.py --self-test",
@@ -914,19 +921,23 @@
     {
       "id": "minikey26-history",
       "title": "The 26-character lead: five-address history check",
-      "status": "in-progress",
+      "status": "tested",
       "kind": "history-follow-up",
       "independentTheory": false,
       "scope": "One frozen 26-character checksum lead, five fixed mainnet constructions, exact Node/Python agreement, two providers and ten read-only requests maximum.",
-      "result": "Controls and independent code review passed. Target derivation and queries begin only after this separate protocol is published and its registration commit verified.",
+      "result": "Independent Python/Node agreed on five fixed constructions. All ten two-provider HTTP200 responses reported zero chain and mempool statistics at 11:39:47–48 UTC. This provides no funding evidence for this lead within those constructions; the checksum remains valid and the puzzle is unsolved.",
       "evidence": [
+        "analysis_outputs/continuation_20261110/minikey26_history/RESULT.md",
+        "analysis_outputs/continuation_20261110/minikey26_history/RESULT.json",
+        "analysis_outputs/continuation_20261110/minikey26_history/INDEPENDENT_RESULT_REVIEW.json",
         "analysis_outputs/continuation_20261110/minikey26_history/PROTOCOL.md",
         "analysis_outputs/continuation_20261110/minikey26_history/PROTOCOL.json",
         "analysis_outputs/continuation_20261110/minikey26_history/CONTROL_RECEIPT.json",
         "analysis_outputs/continuation_20261110/minikey26_history/CODE_REVIEW.json"
       ],
       "reproduce": [
-        "node scripts/check_minikey26_lead.cjs --self-test"
+        "node scripts/check_minikey26_lead.cjs --self-test",
+        "node scripts/check_minikey26_lead.cjs --candidates /tmp/key404-26-replay/CANDIDATES.private.json --protocol analysis_outputs/continuation_20261110/minikey26_history/PROTOCOL.json --registration-commit b5ea6bc083a856ce7245a5b86a9748f16cbb380d --out /tmp/key404-26-history"
       ],
       "limitations": [
         "The checksum lead is compatible with chance and its source witness needs uncertain membership choices.",

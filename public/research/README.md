@@ -1,6 +1,6 @@
 # KEY NOT FOUND — research corpus
 
-**Status: unsolved as of 10 November 2026.** No authenticated prize key or prize address has been established. Earlier 22/30-character leads had zero reported history in five registered address constructions; the new 26-character checksum lead awaits a separate check. Max Keiser’s 20 BTC statement remains a creator claim, not verified funding.
+**Status: unsolved as of 10 November 2026.** No authenticated prize key or prize address has been established. The recorded weak checksum leads had zero reported history within their respective five-construction checks. Max Keiser’s 20 BTC statement remains a creator claim, not verified funding.
 
 This is a curated public copy of the Max Keiser / Bitcoin Magazine investigation. It contains the relevant source scans, public creator-post evidence, the exact 142-line body transcript, code, candidate data and bounded results. Contributor identities, private account context, local paths, private discussions and annotations have been removed. Original artwork and public creator credits remain as printed.
 
@@ -10,7 +10,11 @@ The [visual lab and dated frames](VISUAL_GUIDE.md) make the source pages and com
 
 ## Research is continuing
 
-The [historical 26-character compatibility replay](analysis_outputs/continuation_20261110/minikey26_compatibility/RESULT.md) closes a checker-length gap over the same 42 original forms and 24 mirror language graphs: 207 distinct shaped strings, one weak checksum pass. Independent complete candidate-set replay agreed. No scalar, address or network lookup ran; separate source and history review is next.
+The [26-character history follow-up](analysis_outputs/continuation_20261110/minikey26_history/RESULT.md) completed: five independently agreed constructions, ten HTTP200 provider responses, all chain/mempool statistics zero. Its [source witness](analysis_outputs/continuation_20261110/minikey26_compatibility/SOURCE_WITNESS_REVIEW.md) requires uncertain choices, with no nominal match. The mini key remains format-valid; no authenticated funded key is established.
+
+Two AI assistants also [read all 22 frozen body-only outputs](analysis_outputs/continuation_20261110/issue24_readable_review/REVIEW.md) for an intermediate instruction and recognized none. This is exploratory subjective nonrecognition, not a message exclusion. A [six-query creator-source search](analysis_outputs/continuation_20261110/creator_extra_search/REPORT.md) verified no additional statement; source coverage remains incomplete.
+
+The [historical 26-character compatibility replay](analysis_outputs/continuation_20261110/minikey26_compatibility/RESULT.md) closes a checker-length gap over the same 42 original forms and 24 mirror language graphs: 207 distinct shaped strings, one weak checksum pass. Independent complete candidate-set replay agreed. No scalar, address or network lookup ran in that extraction step; the separate source and history reviews above are now complete.
 
 The [December recording reviews](analysis_outputs/continuation_20261110/creator_december/REPORT.md) cover every saved auto-caption cue in the December 23 and 28 episodes. No explicit puzzle-linked extraction rule was recognized. The first recording supplies a planned follow-up; date/theme correspondence with the second remains tentative. Audio and frames are unreviewed. The [original clue conversations](analysis_outputs/continuation_20261110/creator_post_context/REVIEW.md) are also readable through normal browser access; their bounded review adds no authenticated instruction or prize address.
 

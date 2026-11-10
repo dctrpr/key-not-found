@@ -1,0 +1,477 @@
+{
+  "schemaVersion": 1,
+  "reviewId": "issue24-frozen22-readable-instruction-review",
+  "status": "exploratory-full-reading-complete",
+  "scope": "Readable intermediate instructions in the exact 22 already-saved, body-only George Sand source readings from Issue 24.",
+  "upstreamPins": [
+    {
+      "role": "frozen-upstream-json",
+      "path": "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.json",
+      "bytes": 16852358,
+      "sha256": "1651a33dab46babf36f56439ddb409058cfa36712d96ead7d4200962b80817b9"
+    },
+    {
+      "role": "unchanged-source-builder",
+      "path": "scripts/minikey_window_audit.cjs",
+      "bytes": 21076,
+      "sha256": "189c6f359a057021adbc060ddeaa8caa29e6f58c40a6976daeda62025d2182f0"
+    }
+  ],
+  "packetExportIdentities": [
+    {
+      "role": "plain-text-review-packet",
+      "bytes": 66415,
+      "sha256": "f0a4795960a333635e704aa9ed7781a1ca2e72d27b5757623eb1e1c2c228f406"
+    },
+    {
+      "role": "structured-review-packet",
+      "bytes": 153605,
+      "sha256": "dbd23a556c478646bbc48e1c05a3111c778840880ad8d3134f1e1187e4a9dbde"
+    }
+  ],
+  "reviewReceiptIdentities": [
+    {
+      "reviewer": "A",
+      "sha256": "3652a08afaafe121ca2bf7e7dccc0190fc2b568d6caa19b4586dfe53ca3b1adf"
+    },
+    {
+      "reviewer": "B",
+      "sha256": "40b1ae4bef3954f455590a186fd8d4b1634ec5eee54cf62fcb872ed3345299c4"
+    }
+  ],
+  "coverage": {
+    "uniqueSavedReadings": 22,
+    "sourceCodepoints": 62804,
+    "readInFullByEachReviewer": 22,
+    "normalWholeLineSelections": 8,
+    "characterReversedWholeLineSelections": 8,
+    "firstWordLists": 4,
+    "initialStrings": 2,
+    "matchingSourceHashesAndLengthsVerifiedAcrossBothReviewsAndPacket": true
+  },
+  "reviewers": [
+    {
+      "label": "A",
+      "startedAtUTC": "2026-11-10T11:34:06.393109+00:00",
+      "completedAtUTC": "2026-11-10T11:36:31.848039+00:00",
+      "elapsedWallSeconds": 145.455,
+      "readInFull": 22,
+      "sourceCodepointsRead": 62804,
+      "actionableIntermediateInstructionsRecognized": 0
+    },
+    {
+      "label": "B",
+      "startedAtUTC": "2026-11-10T11:34:24.096675Z",
+      "completedAtUTC": "2026-11-10T11:38:34.954521Z",
+      "elapsedWallSeconds": 250.858,
+      "readInFull": 22,
+      "sourceCodepointsRead": 62804,
+      "actionableIntermediateInstructionsRecognized": 0,
+      "coherentSeparateSecondTextsRecognized": 0
+    }
+  ],
+  "timeMeaning": "Recorded review intervals include reading and report/tool work; they are not calibrated attention or reading-speed measurements.",
+  "finding": {
+    "summary": "Neither reviewer recognized a coherent actionable intermediate puzzle instruction in these exact saved outputs.",
+    "interpretation": "The line selections retain ordinary essay fragments and rhetorical imperatives; first-word and initial outputs did not yield a recognized actionable instruction. Existing character reversals did not supply a recognized next operation.",
+    "reviewKind": "exploratory, unblinded, subjective AI nonrecognition",
+    "formalMessageExclusion": false,
+    "cipherFamilyNegative": false,
+    "independentTheoryCountClaimed": false,
+    "puzzleSolved": false
+  },
+  "boundaries": {
+    "newSelectors": 0,
+    "newTransformations": 0,
+    "newWordFilters": 0,
+    "cryptographicCandidateChecks": 0,
+    "scalarOrAddressDerivations": 0,
+    "networkQueries": 0,
+    "sourceModelReproofreadInThisReview": false,
+    "rawReadingsPublished": false,
+    "sourceLocatorsPublished": false
+  },
+  "limitations": [
+    "The reviewers knew the puzzle context. Agreement is not a blinded experiment or a calibrated estimate of whether a message is absent.",
+    "The 22 strings are related saved variants of the same source, not 22 independent theories or trials.",
+    "Readable local prose, thematic words and rhetorical advice were not promoted into extraction instructions without a specified puzzle operation.",
+    "The scope excludes other populations, transformations, visual interpretations, possible messages, source transcription accuracy and author intent.",
+    "This review neither rules out the George Sand/mirror family nor establishes that no intermediate instruction exists."
+  ],
+  "readings": [
+    {
+      "readingNumber": 1,
+      "sourceSha256": "088b788add01752389f4af36104e5565bd5ca53e0472782df2ceedf5a3363e95",
+      "sourceCodepoints": 3678,
+      "projectionClass": "whole-line-selection",
+      "readingClass": "ordinary-source-prose",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 2,
+      "sourceSha256": "1b433255010584f40029c1066170d17e3f51174ebd566e104ab465dcc9c4ce99",
+      "sourceCodepoints": 3687,
+      "projectionClass": "whole-line-selection",
+      "readingClass": "ordinary-source-prose",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 3,
+      "sourceSha256": "25a685c1712f4b0668d3743eebadf2f59c4c0a41893fa0352c3b36b3b2bda22f",
+      "sourceCodepoints": 3687,
+      "projectionClass": "whole-line-selection",
+      "readingClass": "character-reversed-source-prose",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 4,
+      "sourceSha256": "368ed3fdc10685e3339c029527228ccbaeaa15636bed12b92073eee503755d3a",
+      "sourceCodepoints": 3628,
+      "projectionClass": "whole-line-selection",
+      "readingClass": "character-reversed-source-prose",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 5,
+      "sourceSha256": "5f2a1106410bf1d9b68fb6ccf61cebaaf4f924c8115d6c2f8a9f896449ce174e",
+      "sourceCodepoints": 142,
+      "projectionClass": "first-word-initials",
+      "readingClass": "initial-string",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 6,
+      "sourceSha256": "614edaed4e88571aa98bea0c0200ace8403ee46d20f003f328ccc299092a69ed",
+      "sourceCodepoints": 3790,
+      "projectionClass": "whole-line-selection",
+      "readingClass": "character-reversed-source-prose",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 7,
+      "sourceSha256": "72a6cd5e44b53dc64767c491ca95a6b99b925d39e627ff700072376241bd3916",
+      "sourceCodepoints": 794,
+      "projectionClass": "first-word-list",
+      "readingClass": "first-word-list",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 8,
+      "sourceSha256": "7c39792db2a9b5a0393762d4fb93c495c55a6174464a202ddc3623ed2681b194",
+      "sourceCodepoints": 794,
+      "projectionClass": "first-word-list",
+      "readingClass": "first-word-list",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 9,
+      "sourceSha256": "844fd4300a999229280cab6f75b6fc7d96f13ff8e7281edb2fda2c607439aafc",
+      "sourceCodepoints": 3740,
+      "projectionClass": "whole-line-selection",
+      "readingClass": "character-reversed-source-prose",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 10,
+      "sourceSha256": "8987b8c12c99ef9880ea8de0e2d840b06ad30cd75e0dbc1d2b9bf19030af083c",
+      "sourceCodepoints": 3740,
+      "projectionClass": "whole-line-selection",
+      "readingClass": "ordinary-source-prose",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 11,
+      "sourceSha256": "977a3ff316b4851f721f257c565639a5decaf17207dddb1241b6ba5e45ef8b68",
+      "sourceCodepoints": 794,
+      "projectionClass": "first-word-list",
+      "readingClass": "first-word-list",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 12,
+      "sourceSha256": "9956487bb1bede0b16e32d4d2b9930dd177e980a02477d6c5639031bcd44edac",
+      "sourceCodepoints": 3740,
+      "projectionClass": "whole-line-selection",
+      "readingClass": "ordinary-source-prose",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 13,
+      "sourceSha256": "9b729527364cb1e992906ef9455c5a73b482517a4200729618937cca32ad8778",
+      "sourceCodepoints": 3678,
+      "projectionClass": "whole-line-selection",
+      "readingClass": "character-reversed-source-prose",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 14,
+      "sourceSha256": "a1a84e93669e63d747bcc0ffa79d12337660922ab6e047aafb2b9c2105ef6b69",
+      "sourceCodepoints": 3731,
+      "projectionClass": "whole-line-selection",
+      "readingClass": "character-reversed-source-prose",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 15,
+      "sourceSha256": "a6623621ce81548b7b1a864f6b2c81938db9407525b3c6b8a077563fa80f5e69",
+      "sourceCodepoints": 3628,
+      "projectionClass": "whole-line-selection",
+      "readingClass": "ordinary-source-prose",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 16,
+      "sourceSha256": "aaaa9052b83c3b26510a71dad1812848e13d60569a131bfb7c176788061b7af8",
+      "sourceCodepoints": 3678,
+      "projectionClass": "whole-line-selection",
+      "readingClass": "ordinary-source-prose",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 17,
+      "sourceSha256": "b5bb74eb9c60dd4f4093cbd85653fdd314e2ae5972153f80b5d55bfcc806cbd0",
+      "sourceCodepoints": 3740,
+      "projectionClass": "whole-line-selection",
+      "readingClass": "character-reversed-source-prose",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 18,
+      "sourceSha256": "b5f034903fdb9859b6af68586761489f83c2b0563db4b4bda7605bb3abfa4a93",
+      "sourceCodepoints": 142,
+      "projectionClass": "first-word-initials",
+      "readingClass": "initial-string",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 19,
+      "sourceSha256": "bceb74bbab805c6fa193acbf6ab10be67f8be567b0014ff85084fdcc2b908e9d",
+      "sourceCodepoints": 3731,
+      "projectionClass": "whole-line-selection",
+      "readingClass": "ordinary-source-prose",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 20,
+      "sourceSha256": "c1fc42e0ad7283c92d38edc788d8042d1a383f7a2aadbf4ed44f98494fe7b81a",
+      "sourceCodepoints": 3790,
+      "projectionClass": "whole-line-selection",
+      "readingClass": "ordinary-source-prose",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 21,
+      "sourceSha256": "debc0430ba9fb787d221e84cc3a866fc9e646ecd5319b06e321e0da75743bdae",
+      "sourceCodepoints": 794,
+      "projectionClass": "first-word-list",
+      "readingClass": "first-word-list",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    },
+    {
+      "readingNumber": 22,
+      "sourceSha256": "ecee8d54c1ad5ab1f71b774cef41a88862be0e6f0d3ce4624838906838f0215e",
+      "sourceCodepoints": 3678,
+      "projectionClass": "whole-line-selection",
+      "readingClass": "character-reversed-source-prose",
+      "reviewA": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "puzzleSpecificOperationOrTargetRecognized": false
+      },
+      "reviewB": {
+        "readInFull": true,
+        "actionableIntermediateInstructionRecognized": false,
+        "coherentSeparateSecondTextRecognized": false
+      }
+    }
+  ]
+}

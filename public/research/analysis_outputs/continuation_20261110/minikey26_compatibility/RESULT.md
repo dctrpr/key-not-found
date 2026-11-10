@@ -34,3 +34,7 @@ python3 scripts/verify_minikey26_compatibility.py --verify --result /tmp/key404-
 ```
 
 Keep raw outputs private. No wallet import, signing or transaction is included. See [RESULT.json](RESULT.json) for exact pins, times, counts, cap accounting and limitations.
+
+## Subsequent checkpoint
+
+The [source-witness review](SOURCE_WITNESS_REVIEW.md) found no nominal match and requires uncertain choices. The [separate five-construction history follow-up](../minikey26_history/RESULT.md) completed at 11:39:48.621Z: all ten two-provider responses reported zero chain and mempool statistics. The format pass remains valid; no authenticated funded key or solution is established. The original RESULT.json above remains unchanged.

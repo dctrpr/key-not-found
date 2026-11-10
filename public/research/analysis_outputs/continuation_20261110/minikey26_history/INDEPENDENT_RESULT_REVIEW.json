@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "reviewId": "minikey26-history-saved-result-review",
+  "status": "PASS",
+  "passed": true,
+  "reviewScope": "saved-receipts-and-pinned-code-only; no repeated target derivation/checksum/network request",
+  "reviewedAtUTC": "2026-11-10T11:43:42.033429+00:00",
+  "testId": "minikey26-history",
+  "resultSha256": "d629a1a2417c43d7bc4d836e5b7e19559fe9c432828258c4dbf401a99e417d3a",
+  "protocolSha256": "75989cd8e11c0b495401eb14de1bc17eda124306d560c44338d5f4dd5fb98897",
+  "registrationCommit": "b5ea6bc083a856ce7245a5b86a9748f16cbb380d",
+  "candidateFingerprint": "16a4c57bfd34fa3663560b3eb13ec981aed6df399d8d5701e69716cbe7c435c1",
+  "candidateLength": 26,
+  "sourceHashes": {
+    "analysis_outputs/continuation_20261110/minikey26_compatibility/RESULT.json": "8eb395f125c9c8eb953ad0c6db8a2d662b517099fdc5763e5e69503918d2e30e",
+    "package-lock.json": "e2754b2bbb763bd18670735b4b317dd9235e34f1d961123dbe551603657551a8"
+  },
+  "scriptHashes": {
+    "scripts/check_minikey26_lead.cjs": "98146d0f97b359b5830991048974474290cac4f1cd97218986af9b334f744e44",
+    "scripts/minikey26_address_audit.cjs": "a351e20f4bb5b9ab20fdd97dc07f8d87afe48962fb25dff20a008a56e83b7a64",
+    "scripts/independent_minikey26_addresses.py": "27f1de62281f4c4e43906acd65f9ae8fa6b264d5dc4cf54a3faf998719479ba8"
+  },
+  "registrationVerification": {
+    "protocolWorkingBytesMatchDeclaredHash": true,
+    "allSourceAndScriptWorkingBytesMatchProtocol": true,
+    "protocolAndAllFivePinnedFilesMatchLocalRegistrationCommitExactly": true,
+    "sourcePinsChecked": 2,
+    "scriptPinsChecked": 3,
+    "localCommitTimestampUTC": "2026-11-10T11:39:32Z",
+    "localCommitTimestampPrecedesRecordedRunStart": true,
+    "remoteVerificationIndependentlyRepeated": false,
+    "priorRemoteVerificationSource": "Root reported successful git push and gh api commit/main SHA equal to this registration commit before target invocation; this reviewer did not independently observe or repeat that remote check.",
+    "commitDateTreatedAsRemotePublicationTimestamp": false,
+    "lockedDependencyVersionsMatch": true
+  },
+  "addressAgreement": {
+    "savedNodeAndPythonAddressRecordsMatchExactly": true,
+    "exactRegisteredTypeOrder": true,
+    "uniqueAddressCount": 5,
+    "typeCount": 5,
+    "allPrivateQueryAddressesMatchTheirSavedTypeAddress": true,
+    "derivationIndependentlyRepeatedByThisReview": false
+  },
+  "requestCoverage": {
+    "expectedTypeProviderPairs": 10,
+    "savedDistinctTypeProviderPairs": 10,
+    "savedAttempts": 10,
+    "attemptsMaximum": 10,
+    "missingPairs": 0,
+    "duplicatePairs": 0,
+    "successfulResponses": 10,
+    "http200Responses": 10,
+    "providerCount": 2,
+    "requestErrors": 0,
+    "pinnedCodeInvokesEveryPairOnce": true,
+    "pinnedCodeRetries": 0,
+    "pinnedCodeConcurrencyMaximum": 2,
+    "runtimeConcurrencyEmpiricallyMeasuredByThisReview": false,
+    "queryTimestampsRepresentRequestStart": true
+  },
+  "statistics": {
+    "statisticGroupsPerResponse": 2,
+    "fieldsPerGroup": 5,
+    "numericFieldsChecked": 100,
+    "strictSafeIntegerValidation": true,
+    "allNumericFieldsZero": true,
+    "providerStatisticsAgreeForAllFiveTypes": true,
+    "activityFlagsAgreeWithZeroStatistics": true,
+    "publicQueryRecordsExactlyEqualSavedPrivateRecordsMinusAddress": true,
+    "safeQueryStatusesAndTimesMatchPrivateReceipts": true
+  },
+  "timing": {
+    "runStartedAtUTC": "2026-11-10T11:39:47.126Z",
+    "firstQueryStartAtUTC": "2026-11-10T11:39:47.163Z",
+    "lastQueryStartAtUTC": "2026-11-10T11:39:48.504Z",
+    "runCompletedAtUTC": "2026-11-10T11:39:48.621Z",
+    "requestStartTimesMonotoneAndWithinRunInterval": true,
+    "individualResponseEndTimesRetained": false
+  },
+  "publicResultPrivacy": {
+    "exactTopLevelAllowlist": true,
+    "queryFieldsExplicitlyAllowlisted": true,
+    "allDynamicStringsMatchFixedProtocolLabelsValidatedTimesOrKnownPins": true,
+    "allFiveRawAddressesAbsentFromResult": true,
+    "rawCandidateOrScalarFields": 0,
+    "rawCandidateReadForThisReview": false,
+    "rawSecretsOrAddressesIncludedInThisReview": false,
+    "controlsMatchRegisteredControlReceipt": true,
+    "limitationsMatchRegisteredProtocol": true
+  },
+  "outcome": "zero-history-in-scope",
+  "scopeComplete": true,
+  "savedOutcomeIndependentlyReclassified": true,
+  "transactions": 0,
+  "walletImports": 0,
+  "reviewActions": {
+    "targetChecksumChecks": 0,
+    "targetScalarDerivations": 0,
+    "targetAddressDerivations": 0,
+    "networkQueries": 0,
+    "privateLeadFileReads": 0,
+    "publicEdits": 0,
+    "gitMutations": 0,
+    "localReadOnlyGitObjectInspections": true
+  },
+  "inconsistencies": [],
+  "limitations": [
+    "This is a saved-receipt audit, not an independent query of either explorer or a repeated address derivation.",
+    "The normalized saved API statistics do not retain original HTTP bodies or TLS evidence; acceptance and matching-response-address validation are supported by the pinned request implementation.",
+    "The source selection/checksum and address correctness are reported by the preregistered run and prior implementation controls; this review independently compares saved address records, not secret math.",
+    "The local Git commit timestamp is not proof of when the commit became public. Prior remote publication verification is supplied by root, as recorded above.",
+    "The code caps concurrency at two and has no retry loop. The saved receipts retain request starts rather than each response end, so this audit does not empirically reconstruct concurrency.",
+    "All-zero chain and mempool statistics support only the five registered mainnet constructions at the recorded query times, not every wallet construction, future funding, prize identity, source-model correctness or all possible puzzle solutions."
+  ]
+}

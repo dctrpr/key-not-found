@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "completedAtUTC": "2026-11-10T11:45:05.192Z",
+  "reviewType": "bounded-additional-creator-primary-source-search",
+  "status": "bounded-non-discovery",
+  "calendarSearchDate": "2026-11-10",
+  "focusedQueryMaximum": 6,
+  "focusedQueriesExecuted": 6,
+  "searchBatches": 2,
+  "queries": [
+    "site:x.com/maxkeiser \"private key\" \"20\" \"magazine\"",
+    "site:x.com/maxkeiser \"George Sand\" keys",
+    "\"Max Keiser\" \"Bitcoin Magazine\" \"puzzle\" solved",
+    "(site:twitter.com/maxkeiser/status OR site:x.com/maxkeiser/status) (\"hidden\" OR \"hid\") (\"key\" OR \"keys\")",
+    "\"Max Keiser\" (\"treasure hunt\" OR \"hidden private key\") (\"solved\" OR \"claimed\" OR \"clue\") after:2023-03-05 before:2026-11-11",
+    "\"maxkeiser\" (\"private key\" OR \"private keys\") (\"BitcoinMagazine\" OR \"20 BTC\") -site:bitcointalk.org -site:keynotfound.com"
+  ],
+  "queryResultsMergedWithinBatches": true,
+  "perQueryResultTotalsKnown": false,
+  "latestExplicitRequestedDate": "2026-11-10",
+  "indexedCoverageThroughThatDateEstablished": false,
+  "knownCreatorSourcesExcludedFromNewDiscovery": [
+    {
+      "date": "2022-12-26",
+      "url": "https://x.com/maxkeiser/status/1607378060172460032"
+    },
+    {
+      "date": "2023-03-04",
+      "url": "https://x.com/maxkeiser/status/1632068898169450497"
+    },
+    {
+      "date": "2023-03-05",
+      "url": "https://x.com/maxkeiser/status/1632391507008278528"
+    },
+    {
+      "date": "2023-12-30",
+      "url": "https://x.com/maxkeiser/status/1741134493769965603"
+    }
+  ],
+  "sourcesAssessed": [
+    {
+      "url": "https://bitcointalk.org/index.php?topic=5450165.0",
+      "sourceType": "third-party forum",
+      "observedVia": "search-index rendered content",
+      "assessment": "Discussion reproduces the already-known March announcement/mirror references. It supplies no newly verified creator-authored instruction in the inspected results.",
+      "newPrimaryCreatorStatementVerified": false
+    },
+    {
+      "url": "https://profit.com/ticker/REAL/news",
+      "sourceType": "third-party market/social aggregator",
+      "observedVia": "search index and ordinary web page open",
+      "assessment": "Attributes a Bitcoin Beach podcast promotion mentioning Saylor private keys to Keiser; no magazine-puzzle connection or original creator status URL was established. Excluded as an unverified, non-puzzle-specific lead.",
+      "newPrimaryCreatorStatementVerified": false
+    },
+    {
+      "url": "https://t.co/qApwaQocYP",
+      "sourceType": "observed short link in secondary attribution",
+      "observedVia": "ordinary web.open attempt",
+      "accessOutcome": "inaccessible through this tool; canonical destination not recovered",
+      "assessment": "No conclusion about ordinary browser accessibility or original content.",
+      "newPrimaryCreatorStatementVerified": false
+    },
+    {
+      "url": "https://bitcoinnews.com/max-keiser-10-bitcoins-in-el-salvador/",
+      "sourceType": "secondary article link observed in forum result",
+      "observedVia": "ordinary web.open attempt",
+      "accessOutcome": "inaccessible through this tool",
+      "assessment": "Content was not verified or adopted. Tool failure does not establish browser inaccessibility.",
+      "newPrimaryCreatorStatementVerified": false
+    },
+    {
+      "url": "https://cryptitalk.com/tokens/btc/2025-10-01",
+      "sourceType": "third-party social recap",
+      "observedVia": "search-index rendered content",
+      "assessment": "A literary remark attributed to Keiser has no explicit puzzle mechanism. Original-post attribution/wording were not authenticated and no clue was adopted.",
+      "newPrimaryCreatorStatementVerified": false
+    },
+    {
+      "url": "https://bitcoinmagazine.com/page/1137?hPP=5&idx=articles&is_v=1&p=0&q=nasdaq",
+      "sourceType": "original publisher archive index",
+      "observedVia": "search-index rendered content",
+      "assessment": "Unrelated historical interview/article material appeared, without an explicit magazine-puzzle operation in the inspected result.",
+      "newPrimaryCreatorStatementVerified": false
+    }
+  ],
+  "ordinaryPageOpenAttempts": 3,
+  "newCanonicalCreatorStatusURLsLocated": [],
+  "newCreatorPuzzleStatementsPrimaryVerified": 0,
+  "newActionableKeyFormatMethodFundingSolutionOrRetractionInstructionRecognized": false,
+  "verbatimSourceWordsQuoted": 0,
+  "sourceQuotationsAuthenticatedAndUsed": 0,
+  "sourceSupportedNextCryptoExperiment": null,
+  "accountHistoryExhaustivelyReviewed": false,
+  "allRepliesReviewed": false,
+  "allRecordingsReviewed": false,
+  "normalBrowserAccessibilityDeterminedByToolFailures": false,
+  "limits": [
+    "Search indexes are incomplete and ranked; these six queries cannot establish that additional creator statements do not exist.",
+    "Secondary attribution and snippets do not authenticate original creator wording or authorship.",
+    "Inaccessible web-tool opens do not imply the URLs are inaccessible in an ordinary browser.",
+    "No newly discovered primary creator statement was available for direct-content quotation verification."
+  ],
+  "actions": {
+    "loginAttempts": 0,
+    "challengeBypassAttempts": 0,
+    "contactOrMessages": 0,
+    "cryptoTransforms": 0,
+    "keyFormatChecks": 0,
+    "scalarDerivations": 0,
+    "addressDerivations": 0,
+    "blockchainQueries": 0,
+    "walletImports": 0,
+    "transactions": 0,
+    "publicEdits": 0,
+    "gitOperations": 0
+  }
+}

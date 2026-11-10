@@ -260,6 +260,43 @@
       },
       "sceneNote": "Original Issue 24 scans. The page view illustrates the source; it does not disclose or authenticate the checksum lead. The protocol fixes both populations.",
       "methodId": "minikey26-original-compatibility"
+    },
+    {
+      "id": "minikey26-history",
+      "completedAtUTC": "2026-11-10T11:39:48.621Z",
+      "title": "Five addresses. Zero reported history.",
+      "summary": "The 26-character checksum lead was checked through five fixed constructions after exact Python/Node agreement.",
+      "result": "All ten provider responses reported zero chain and mempool statistics. This covers those constructions at check time; the puzzle remains open.",
+      "diagram": "history",
+      "metrics": [
+        {
+          "label": "Constructions",
+          "value": 5,
+          "pointer": "/addressCount"
+        },
+        {
+          "label": "Successful lookups",
+          "value": 10,
+          "pointer": "/requestsAttempted"
+        },
+        {
+          "label": "Active responses",
+          "value": 0,
+          "pointer": "/queries",
+          "operation": "countActive"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/minikey26_history/RESULT.json",
+        "sha256": "d629a1a2417c43d7bc4d836e5b7e19559fe9c432828258c4dbf401a99e417d3a"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/minikey26_history/RESULT.md",
+      "scene": {
+        "layout": "mirror",
+        "page": 76
+      },
+      "sceneNote": "Original Issue 24 source scans. The viewing arrangement is illustrative; private candidate and address associations are omitted. The linked protocol defines the checked scope.",
+      "methodId": "minikey26-history"
     }
   ]
 }
