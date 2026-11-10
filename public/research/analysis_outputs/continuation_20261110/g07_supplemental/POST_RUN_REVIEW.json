@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "status": "PASS",
+  "kind": "metadata-only-after-run-receipt-integrity-scope-audit",
+  "completedAtUTC": "2026-11-10T19:06:09.049105+00:00",
+  "registrationCommit": "a1051636de65a62d896da9fa1d9d5235484e1c61",
+  "recordedTimeOrder": {
+    "remoteAndLocalVerifiedAtUTC": "2026-11-10T19:04:34.126661+00:00",
+    "primaryStartedAtUTC": "2026-11-10T19:04:34.167Z",
+    "primaryCompletedAtUTC": "2026-11-10T19:04:34.397Z",
+    "independentCompletedAtUTC": "2026-11-10T19:04:44.020430+00:00"
+  },
+  "checks": {
+    "registrationCommitAgrees": true,
+    "registrationRecordedBeforePrimary": true,
+    "primaryThenVerifierTimes": true,
+    "priorSourceCodeVerificationRecorded": true,
+    "independentVerifierPassed": true,
+    "primaryResultHashMatchesVerifier": true,
+    "protocolHashesAgree": true,
+    "countsMatch": true,
+    "safeResultAndNestedFieldsExact": true,
+    "supplementalScopeCompleteWithoutSourceOrSemanticRun": true,
+    "privateLeadFlagFalse": true,
+    "reportedActivityExactZero": true,
+    "privateArtifactPinsAgree": true,
+    "privateArtifactBytesMatch": true,
+    "independentCorePinMatches": true,
+    "allCurrent8Source5CodePinEntriesMatch": true,
+    "currentProtocolBytesMatch": true,
+    "privateModesExact": true,
+    "addedFormatShapeAndCallCountsMatch": true,
+    "mini26ShapeAndCallCountsMatch": true
+  },
+  "counts": {
+    "labeledSavedRecords": 1038,
+    "uniqueSavedTexts": 833,
+    "sameForms": 1464,
+    "addedFourValidationCalls": 6,
+    "acceptedAddedFourRecords": 0,
+    "mini26QuestionmarkChecks": 2,
+    "acceptedMini26Records": 0
+  },
+  "pins": {
+    "registrationReceiptSha256": "efb2197cde5d2a9015344a1eedb95117d729022a6d004cfd40efbba5f5e56a7c",
+    "primaryResultSha256": "9c343ca3f1045cf073c122ae8f7bee51fa409284c1f500b46488f9d3c3d9a937",
+    "independentVerificationSha256": "467547ec5b16ae2fb3f588ed3c581d25b88f4f8d6629970aa3921cfe1299d084",
+    "protocolSha256": "9d14337811a1679014ee06193511fe196861bf3a8f8e1adb0ce69d09fb8ed161",
+    "sourceArtifactSha256": "e934e778c07cba19c00c6e4fb7cb8f858042f904d320f0d919a59fa1e4c3e7da",
+    "sourcePinEntries": 8,
+    "scriptPinEntries": 5,
+    "distinctCurrentFilesIncludingProtocol": 13,
+    "mismatches": [],
+    "privateArtifactIntegrity": {
+      "FORMS.private.json": "98ed2969e2b2d13e5dbe7faf62b6b4a1b70d29379eae10380a41a811db83ae49",
+      "VALIDATION.private.json": "f59d3b10951f31d4c34d463e7af4b504c595674e4b2418f71817c4fd3780712d"
+    }
+  },
+  "fileModes": [
+    {
+      "role": "run-parent",
+      "actual": "0o700",
+      "expected": "0o700",
+      "matches": true
+    },
+    {
+      "role": "primary",
+      "actual": "0o700",
+      "expected": "0o700",
+      "matches": true
+    },
+    {
+      "role": "independent",
+      "actual": "0o700",
+      "expected": "0o700",
+      "matches": true
+    },
+    {
+      "role": "REGISTRATION.json",
+      "actual": "0o600",
+      "expected": "0o600",
+      "matches": true
+    },
+    {
+      "role": "primary/RESULT.json",
+      "actual": "0o600",
+      "expected": "0o600",
+      "matches": true
+    },
+    {
+      "role": "independent/VERIFICATION.json",
+      "actual": "0o600",
+      "expected": "0o600",
+      "matches": true
+    },
+    {
+      "role": "primary/FORMS.private.json",
+      "actual": "0o600",
+      "expected": "0o600",
+      "matches": true
+    },
+    {
+      "role": "primary/VALIDATION.private.json",
+      "actual": "0o600",
+      "expected": "0o600",
+      "matches": true
+    }
+  ],
+  "scopeLimits": [
+    "Exact saved G07 compatibility scope only. OCR omissions/view quality/source geometry, semantic recognition, creator intent, funding and whole-puzzle exclusion remain outside this result.",
+    "The independent adapter reuses the frozen independent form/26 core and the same four shared shape/validation engines; it is not an independently implemented four-format mathematical engine.",
+    "Current pin and whole-artifact byte hashes were rechecked, but no private form/validation JSON or string was parsed, no new form/candidate/validator was generated or evaluated, and Git/remote state was not requeried.",
+    "The registration targetNotYetExecuted flag is a historical pre-run checkpoint, not current execution state.",
+    "Zero activity fields are recorded run/verifier claims confirmed consistent with the frozen scope; this metadata audit did not independently monitor the original process or network."
+  ],
+  "activity": {
+    "targetFormsOrReadingsReconstructed": 0,
+    "targetFormatOrChecksumCalls": 0,
+    "rawPrivateArtifactsParsed": false,
+    "privateArtifactReadsForWholeFileIntegrityOnly": true,
+    "semanticReviews": 0,
+    "scalarOrAddressDerivations": 0,
+    "networkRequests": 0,
+    "gitOperations": 0,
+    "publicEdits": 0
+  }
+}

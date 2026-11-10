@@ -37,6 +37,41 @@ for (const entry of data.entries) {
     } else assert.equal(metric.operation, undefined);
     assert.equal(value, metric.value, 'Visual metric differs from its frozen result');
   }
+  if (entry.id === 'g07-supplemental-formats') {
+    assert.equal(entry.diagram, 'funnel');
+    assert.equal(result.testId, 'g07-supplemental-fixed-formats');
+    assert.deepEqual(result.counts, { labeledStreams: 1038, uniqueStreams: 833, uniqueForms: 1464, totalValidRecords: 0 });
+    assert.equal(result.scopeComplete, true);
+    assert.equal(result.supplementalGatesComplete, true);
+    assert.equal(result.sourceRegenerated, false);
+    assert.equal(result.ocrRerun, false);
+    assert.equal(result.semanticReviewPerformed, false);
+    assert.equal(result.privateReviewRequired, false);
+    assert.equal(result.common4.validationCalls, 6);
+    assert.deepEqual(result.common4.uniqueShapeCounts, { extended_private: 0, bip38: 0, address: 6, sec_public: 0 });
+    assert.ok(Object.values(result.common4.validCounts).every(n => n === 0));
+    assert.equal(result.minikey26.enumerated, true);
+    assert.equal(result.minikey26.checksumCalls, 2);
+    assert.equal(result.minikey26.validCount, 0);
+    assert.ok(Object.values(result.activity).every(n => n === 0));
+    const base = path.dirname(path.join(root, 'public/research', entry.source.path));
+    const independentBytes = fs.readFileSync(path.join(base, 'INDEPENDENT_VERIFICATION.json'));
+    const independent = JSON.parse(independentBytes);
+    assert.equal(independent.passed, true);
+    assert.equal(independent.primaryResultSha256, entry.source.sha256);
+    assert.equal(independent.comparisons.fullOriginalObjectsOrderAndUTF8, true);
+    assert.equal(independent.comparisons.fullFormsAndRawValidation, true);
+    const review = JSON.parse(fs.readFileSync(path.join(base, 'POST_RUN_REVIEW.json')));
+    assert.equal(review.status, 'PASS');
+    assert.ok(Object.values(review.checks).every(value => value === true));
+    assert.equal(review.pins.independentVerificationSha256, crypto.createHash('sha256').update(independentBytes).digest('hex'));
+    assert.equal(result.registrationCommit, independent.registrationCommit);
+    assert.equal(result.registrationCommit, review.registrationCommit);
+    for (const [file, hash] of Object.entries({ ...result.sourceHashes, ...result.scriptHashes })) {
+      assert.ok(!file.includes('..'));
+      assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root, 'public/research', file))).digest('hex'), hash);
+    }
+  }
   if (entry.id === 'batch20-supplemental-formats') {
     assert.equal(entry.diagram, 'funnel');
     assert.equal(result.caseStatus, 'unsolved');

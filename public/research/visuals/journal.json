@@ -595,6 +595,42 @@
       },
       "sceneNote": "Actual source scans behind the historical outputs. This viewer illustrates the source; the replay used the frozen artifacts and did not rebuild geometry.",
       "methodId": "batch20-supplemental-formats"
+    },
+    {
+      "id": "g07-supplemental-formats",
+      "completedAtUTC": "2026-11-10T19:04:34.397Z",
+      "title": "Saved OCR. No valid extra record.",
+      "summary": "The same 1,038 saved spectral-OCR records produced 1,464 unchanged forms. Six address validations and two 26-character minikey checks all failed.",
+      "result": "The independent replay matched the complete records, forms and validation results. This closes the declared format gap on these saved outputs; OCR misses and other readings remain possible.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Saved readings",
+          "value": 1038,
+          "pointer": "/counts/labeledStreams"
+        },
+        {
+          "label": "Fixed forms",
+          "value": 1464,
+          "pointer": "/counts/uniqueForms"
+        },
+        {
+          "label": "Valid extra records",
+          "value": 0,
+          "pointer": "/counts/totalValidRecords"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/g07_supplemental/RESULT.json",
+        "sha256": "9c343ca3f1045cf073c122ae8f7bee51fa409284c1f500b46488f9d3c3d9a937"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/g07_supplemental/RESULT.md",
+      "scene": {
+        "layout": "spread",
+        "page": 75
+      },
+      "sceneNote": "Actual magazine scans behind the saved OCR. This viewer illustrates the source; the replay did not regenerate the 112 historical OCR views.",
+      "methodId": "batch20-g07"
     }
   ]
 }

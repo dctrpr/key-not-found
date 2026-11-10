@@ -297,7 +297,8 @@
       "scope": "A genuine pre-layout manuscript with provenance.",
       "result": "No such authoritative manuscript is in this release.",
       "evidence": [
-        "sources/creator-clues.json"
+        "sources/creator-clues.json",
+        "analysis_outputs/continuation_20261110/source_witness_followup/RESULT.md"
       ],
       "reproduce": [],
       "limitations": [
@@ -626,7 +627,8 @@
         "analysis_outputs/continuation_20261110/batch20/G04/RESULT.json",
         "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json",
         "analysis_outputs/continuation_20261110/g04_measurement_audit/REPORT.md",
-        "analysis_outputs/continuation_20261110/g04_measurement_audit/SOURCE.json"
+        "analysis_outputs/continuation_20261110/g04_measurement_audit/SOURCE.json",
+        "analysis_outputs/continuation_20261110/source_witness_followup/RESULT.md"
       ],
       "reproduce": [
         "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_geometry.py --run G04 --protocol analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json --registration-commit 90ad1d694b0eb236494ae199b87de05db5e3d331 --out G04-rerun"
@@ -635,7 +637,8 @@
         "Word boxes are machine-verified source geometry, not a claim of original font metadata.",
         "Incomplete rows, nonpositive gaps or unknown geometry make relevant scope inconclusive.",
         "All 15 standalone punctuation tokens lack located support; mixed foreground and approximate lexical boxes require an outcome-blind source fixture across all 142 rows, including previously measured rows.",
-        "Saved first-failure reasons do not identify the failed word or explain all38 failures."
+        "Saved first-failure reasons do not identify the failed word or explain all38 failures.",
+        "Both retained PDF views were compared at three inverse-field contexts. The 13 prior contact cases remain uncertified; acquisition independence is unproven. No corrective spacing decode was run."
       ]
     },
     {
@@ -686,9 +689,12 @@
       "status": "falsified",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "G07: exact geometry/image procedure, sources and fixed parameters in GEOMETRY_PROTOCOL.json.",
-      "result": "All 112 fixed spectral/baseline OCR views completed, yielding 1038 text streams and 1464 distinct forms. No declared literal key. Controls passed; OCR errors and other color transforms remain outside this result.",
+      "scope": "The original 112 fixed OCR views and their 1,038 saved records, plus separately registered added-format validation of the unchanged 1,464 forms.",
+      "result": "The historical four-format result remains unchanged. The separate added-format replay found six address shapes and two 26-character minikey shapes; all eight checks failed, with no shapes for the other added formats. Independent complete-output verification agreed. OCR misses and other transforms remain outside this result.",
       "evidence": [
+        "analysis_outputs/continuation_20261110/g07_supplemental/RESULT.md",
+        "analysis_outputs/continuation_20261110/g07_supplemental/RESULT.json",
+        "analysis_outputs/continuation_20261110/g07_supplemental/INDEPENDENT_VERIFICATION.json",
         "analysis_outputs/continuation_20261110/batch20/G07/RESULT.md",
         "analysis_outputs/continuation_20261110/batch20/G07/RESULT.json",
         "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json",
@@ -700,7 +706,7 @@
       "limitations": [
         "No posthoc contrast/threshold/character substitution. OCR errors can hide genuine text.",
         "This is full-source extraction coverage; earlier RGB registration gates were p76 statistical diagnostics.",
-        "The historical result covers its original four formats. A separate fixed saved-output replay is being registered for the added four formats and 26-character minikeys; no target result is claimed at this checkpoint."
+        "The new replay reuses separately frozen form/window cores and deliberately shared four-format engines. It adds compatibility coverage, not a new extraction theory or semantic exclusion."
       ]
     },
     {

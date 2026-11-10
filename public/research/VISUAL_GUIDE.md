@@ -22,4 +22,6 @@ The saved-mirror review frame records 40 existing texts, two AI readers and zero
 
 The supplemental-format frame records seven frozen cohorts, 186 cohort-level validations and zero valid extra records. The check reused the existing outputs and added only the declared missing gates. Counts are tied to the execution and independent full-output verification; they are not a count of independent theories or globally unique candidate values.
 
+The G07 saved-OCR frame records 1,038 saved readings, 1,464 fixed forms and zero valid extra-format records. It opens the actual source pages; the replay did not recreate the historical 112 OCR views. The separate [source comparison](analysis_outputs/continuation_20261110/source_witness_followup/RESULT.md) shows six native context crops from the two retained PDFs, with exact pixel provenance and the remaining contour limits.
+
 The puzzle remains unsolved. The 3D display and visual log do not verify the prize funding.

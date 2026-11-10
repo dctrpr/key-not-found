@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "testId": "g07-supplemental-fixed-formats",
+  "batchId": "keiser-g07-supplemental-fixed-formats-20261110",
+  "status": "g07-fixed-artifact-supplemental-scope-complete",
+  "startedAtUTC": "2026-11-10T19:04:34.167Z",
+  "completedAtUTC": "2026-11-10T19:04:34.397Z",
+  "registrationCommit": "a1051636de65a62d896da9fa1d9d5235484e1c61",
+  "protocolSha256": "9d14337811a1679014ee06193511fe196861bf3a8f8e1adb0ce69d09fb8ed161",
+  "sourceHashes": {
+    "analysis_outputs/continuation_20261110/batch20/G07/STREAMS.json": "e934e778c07cba19c00c6e4fb7cb8f858042f904d320f0d919a59fa1e4c3e7da",
+    "analysis_outputs/continuation_20261110/batch20/G07/RESULT.json": "fc3ab1acf7e97b6061341065d3e9c9a64626b37ee985a86db9147aa412742513",
+    "analysis_outputs/continuation_20261110/batch20/G07/INDEPENDENT_CHECK.json": "f57582748af54a9ba5bec0a1db67f74ca69471f57b7859217a2de7bd432c1d4a",
+    "scripts/batch20_support/vision-datamatrix-control.png": "4f395fb1356cfa598ef08f3aaa07d372e1b836c6bc7bc08a6820a4584db2facc",
+    "scripts/batch20_support/vision-datamatrix-control.txt": "84d89877f0d4041efb6bf91a16f0248f2fd573e6af05c19f96bedb9f882f7882",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b",
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d"
+  },
+  "scriptHashes": {
+    "scripts/g07_supplemental_formats.py": "ce94823f90628017ea9a19d3b6e3200b16d2fbd53d880e465c2aeee3ae374006",
+    "scripts/verify_g07_supplemental.py": "994f1374f0d93a5eeb9ee2c0f9dcf7dde642de2688a5b3721649a9b3ff3d85fb",
+    "scripts/batch20_supplemental_formats.py": "385524773ef0c20a2af1858bbf1d1f15cb45fd47fdf08627b0b97d2dda2754ac",
+    "scripts/verify_batch20_supplemental.py": "a4bf930523eb29c0da942439eb6005514fc60d0dfb4f6deede2171380bd4389c",
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d"
+  },
+  "scopeComplete": true,
+  "supplementalGatesComplete": true,
+  "sourceRegenerated": false,
+  "ocrRerun": false,
+  "semanticReviewPerformed": false,
+  "privateReviewRequired": false,
+  "counts": {
+    "labeledStreams": 1038,
+    "uniqueStreams": 833,
+    "uniqueForms": 1464,
+    "totalValidRecords": 0
+  },
+  "common4": {
+    "formats": [
+      "extended_private",
+      "bip38",
+      "address",
+      "sec_public"
+    ],
+    "shapeCounts": {
+      "extended_private": 0,
+      "bip38": 0,
+      "address": 6,
+      "sec_public": 0
+    },
+    "uniqueShapeCounts": {
+      "extended_private": 0,
+      "bip38": 0,
+      "address": 6,
+      "sec_public": 0
+    },
+    "validationCalls": 6,
+    "validCounts": {
+      "extended_private": 0,
+      "bip38": 0,
+      "address": 0,
+      "sec_public": 0
+    }
+  },
+  "minikey26": {
+    "status": "checked",
+    "enumerated": true,
+    "shapeOccurrences": 2,
+    "uniqueShapeCount": 2,
+    "checksumCalls": 2,
+    "validCount": 0
+  },
+  "privateArtifactIntegrity": {
+    "FORMS.private.json": "98ed2969e2b2d13e5dbe7faf62b6b4a1b70d29379eae10380a41a811db83ae49",
+    "VALIDATION.private.json": "f59d3b10951f31d4c34d463e7af4b504c595674e4b2418f71817c4fd3780712d"
+  },
+  "activity": {
+    "ocrReruns": 0,
+    "sourceSelectorRegenerations": 0,
+    "newTransformsBeyondExistingForms": 0,
+    "newJoinsOrRepairs": 0,
+    "oldSharedMinikeyCalls": 0,
+    "minikeyScalarHashes": 0,
+    "proseToKeyHashes": 0,
+    "scalarDerivations": 0,
+    "addressDerivations": 0,
+    "seedDerivations": 0,
+    "childKeyDerivations": 0,
+    "networkQueries": 0,
+    "transactions": 0
+  },
+  "limitations": [
+    "Compatibility replay of the exact saved G07 OCR outputs, not a new extraction theory or source-selection test.",
+    "OCR misses, unusual/damaged text, and the quality of original112detector views remain outside added-format coverage.",
+    "Four shared validators are unchanged and shared; a weak8bit minikey or on-curve SEC is only a review lead, not ownership/funding/prize proof.",
+    "No semantic recognition, source geometry conclusion or whole-puzzle exclusion is computed."
+  ]
+}

@@ -10,6 +10,10 @@ The [visual lab and dated frames](VISUAL_GUIDE.md) make the source pages and com
 
 ## Research is continuing
 
+The [retained-source comparison](analysis_outputs/continuation_20261110/source_witness_followup/RESULT.md) exposes six exact native crops from both scan PDFs. The same three inverse-field contexts still leave 13 prior contact cases uncertified; acquisition independence is unproven. No new layout source was recovered. The later clue's exact parent URL is now recorded, but its text and puzzle connection remain unverified. Direct inspection of the linked paper's three figures established no additional extraction rule.
+
+The [G07 saved-OCR format replay](analysis_outputs/continuation_20261110/g07_supplemental/RESULT.md) completed all 1,038 unchanged records / 1,464 forms. Six address validations and two 26-character minikey checks failed; other added formats had no shapes. The independent replay matched every record, form and validation result. This updates the existing spectral-OCR method without rerunning OCR, adding a selector or excluding missed text.
+
 The [supplemental format replay](analysis_outputs/continuation_20261110/batch20_supplemental/RESULT.md) closes a recorded compatibility gap across seven frozen batches / 2,594 saved readings. All 156 address validations and 30 minikey26 checks failed; the other added formats had no shapes. Both implementations matched full forms and validation records. The 2,576 form count is a sum of per-cohort unique forms, not a global union. This adds no selector or whole-puzzle exclusion.
 
 The [complete saved-mirror reading review](analysis_outputs/continuation_20261110/mirror_saved_reading_review/RESULT.md) covers all 40 historical forward orange-mask texts, including eight physical-pair texts and 32 controls. Two AI contexts recognized no coherent second message or determinate puzzle action. This is subjective nonrecognition, with prior source exposure and inherited geometry limits; no new cipher run or family exclusion. The source-model hash difference is privacy metadata/formatting only, with unchanged effective geometry and text.
