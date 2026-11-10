@@ -450,10 +450,6 @@ function App() {
               <p className="hero-claim">
                 <span>20 BTC claim</span>
                 <span>by Max Keiser</span>
-                <strong>Prize unverified</strong>
-              </p>
-              <p className="hero-qualification">
-                No funded prize address has been authenticated.
               </p>
               <div className="hero-actions">
                 <a className="button button-lime" href="#investigation">
@@ -1193,8 +1189,7 @@ function App() {
                 <span className="term-label">UNKNOWN</span>
                 <h3>Whether there is a prize to recover.</h3>
                 <p>
-                  The 20 BTC is a claim. No funded prize address has been
-                  authenticated, and recovery is uncertain.
+                  The 20 BTC is Max Keiser’s claim. Recovery is uncertain.
                 </p>
               </article>
             </div>

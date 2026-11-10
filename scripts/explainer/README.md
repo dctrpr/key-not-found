@@ -81,7 +81,6 @@ render again and update these by hand so they still match the film:
 
 - `public/media/key404-film.vtt`
 - `public/media/key404-film-transcript.txt`
-- the written version in `src/components/ExplainerFilm.tsx`
 
 The play button on the site sits in the eye of the key on the 3.3-second
 poster. If the poster frame changes, move `.film-play` in

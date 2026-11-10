@@ -1,4 +1,4 @@
-/* The explainer film: an ink screen on newsprint, with its written version. */
+/* A full-width screen, with downloads kept beneath the player. */
 .film {
   padding: clamp(40px, 5vw, 72px) var(--bleed);
   border-bottom: 1px solid var(--line);
@@ -6,39 +6,11 @@
 }
 .film-layout {
   display: grid;
-  grid-template-columns: minmax(0, 0.6fr) minmax(0, 1.4fr);
-  align-items: end;
-  gap: clamp(24px, 4vw, 64px);
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(20px, 3vw, 32px);
 }
-.film-copy {
-  min-width: 0;
-  padding-bottom: 44px;
-}
-.film .film-label {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  margin-bottom: 18px;
-  font: 500 12px/1.5 var(--mono);
-  letter-spacing: 0.08em;
-}
-.film .film-copy h2 {
-  font-size: clamp(30px, 3.6vw, 50px);
-}
-.film .film-lede {
-  max-width: 34ch;
-  margin-top: 16px;
-  font-size: 15.5px;
-  color: var(--muted);
-}
-.film .film-motion-note {
-  display: none;
-  max-width: 34ch;
-  margin-top: 14px;
-  padding-left: 12px;
-  border-left: 3px solid var(--lime);
-  font-size: 14px;
-  font-weight: 600;
+.film #film-title {
+  font-size: clamp(32px, 4vw, 56px);
 }
 .film-figure {
   min-width: 0;
@@ -119,125 +91,13 @@
   text-underline-offset: 4px;
 }
 
-/* The written version. */
-.film-written {
-  margin-top: clamp(20px, 2.6vw, 34px);
-  border-top: 1.5px solid var(--ink);
-  border-bottom: 1px solid var(--line);
-}
-.film-written > summary {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 2px 14px;
-  padding: 16px 0;
-  cursor: pointer;
-  list-style: none;
-}
-.film-written > summary::-webkit-details-marker {
-  display: none;
-}
-.film-written > summary > span {
-  font-size: 16px;
-  font-weight: 600;
-}
-.film-written > summary > small {
-  grid-column: 1;
-  font-size: 13.5px;
-  color: var(--muted);
-}
-.film-written > summary > svg {
-  grid-column: 2;
-  grid-row: 1 / span 2;
-  transition: transform 0.2s;
-}
-.film-written[open] > summary > svg {
-  transform: rotate(180deg);
-}
-.film-written > summary:hover > span {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-.film-lines {
-  columns: 2;
-  column-gap: clamp(28px, 5vw, 72px);
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.film-lines li {
-  display: grid;
-  grid-template-columns: 40px minmax(0, 1fr);
-  align-items: start;
-  gap: 8px 14px;
-  padding: 13px 0 14px;
-  border-top: 1px solid var(--line);
-  break-inside: avoid;
-}
-.film-lines p {
-  font-size: 14.5px;
-  line-height: 1.5;
-}
-.film-time {
-  font: 500 12px/1.82 var(--mono);
-  letter-spacing: 0.04em;
-  color: var(--muted);
-}
-.film-method {
-  grid-column: 2;
-  justify-self: start;
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  min-height: 28px;
-  padding: 3px 8px;
-  border: 1px solid var(--ink);
-  font: 500 12px/1.4 var(--mono);
-}
-.film-method:hover {
-  background: var(--lime);
-}
-.film .film-files {
+.film-downloads {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 4px 28px;
-  padding: 12px 0 16px;
-  border-top: 1px solid var(--line);
-  font-size: 14px;
+  gap: 0 24px;
 }
-.film-files > a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 34px;
-  font-weight: 600;
-}
-.film-files > span {
-  color: var(--muted);
-}
-.film-files a:hover,
-.film-files > span a {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-@media (max-width: 900px) {
-  .film-layout {
-    grid-template-columns: minmax(0, 1fr);
-    align-items: start;
-  }
-  .film-copy {
-    padding-bottom: 0;
-  }
-  .film .film-lede,
-  .film .film-motion-note {
-    max-width: 52ch;
-  }
-  .film-lines {
-    columns: 1;
-  }
-}
-/* On a phone the screen runs edge to edge, so the film is as large as it can be. */
+/* On a phone the screen runs edge to edge. */
 @media (max-width: 560px) {
   .film-frame {
     margin: 0 calc(-1 * var(--gutter));
@@ -246,7 +106,7 @@
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .film .film-motion-note {
-    display: block;
+  .film-play {
+    transition: none;
   }
 }
