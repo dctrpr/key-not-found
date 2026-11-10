@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "batchId": "keiser-mirror-boundary-envelope-20261110",
+  "testId": "mirror-boundary-envelope",
+  "title": "All pair-local mirror boundary alternatives",
+  "startedAtUTC": "2026-11-10T06:27:54.907Z",
+  "registrationCommit": "bed5239266a687a5e4ad474feb920b362b2cb670",
+  "networkQueries": 0,
+  "transactions": 0,
+  "privateReviewRequired": false,
+  "scopeComplete": true,
+  "completeNegative": true,
+  "sourceHashes": {
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "sources/word-geometry-20261110.json": "e3348d0d60d3097b05d0afdb0a1fccf66409274408af9ae7a9369c37fe596e9f",
+    "analysis_outputs/3d_article_map/article_3d_map_data.json": "22c2285a6cd53f6bdda7bdd284d556c52ff55dea0a55cd1b549acbb81443eac3",
+    "analysis_outputs/continuation_20261109/inverted_duplex/inverted_duplex.json": "4d6d029bf5f7e90acfa1d456bc94e790913c7865b923c9367212c219867742f3",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b"
+  },
+  "scriptHashes": {
+    "scripts/mirror_boundary_envelope.py": "5ebe0750f4f47b3ef838aada5d5863272aaf3b2f8e8b8b4864c52820bab261e2",
+    "scripts/batch20_geometry.py": "e7786acc472fa3f7a294fe6391e74bd6f8840017e30d9f54941544019dbafb9a",
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d"
+  },
+  "protocolSha256": "53c34fd6899bddd3ca763a7025a5c03ca53341e70b702dca15a15f0116605b6c",
+  "parameters": {
+    "pairs": [
+      [
+        76,
+        77
+      ],
+      [
+        77,
+        76
+      ],
+      [
+        78,
+        79
+      ],
+      [
+        79,
+        78
+      ]
+    ],
+    "maskClasses": [
+      "orange",
+      "black"
+    ],
+    "wordEdges": [
+      "leftmost",
+      "rightmost"
+    ],
+    "rowOrders": [
+      "forward",
+      "reverse"
+    ],
+    "projections": [
+      "words-spaced",
+      "words-joined",
+      "initials"
+    ],
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39"
+    ],
+    "forms": [
+      "exact",
+      "whitespace-only-compacted"
+    ],
+    "bip39Tokenization": "Lowercase unfiltered lexical words; ordinary punctuation boundaries; invalid decoded group \u241e is a hard region boundary.",
+    "hexMatching": "64hex scalar records require non-hex boundaries; WIF and minikey shape windows may be embedded in a longer string.",
+    "geometry": "Frozen token-box centers inverse-rotated to upright page; horizontal page reflection only.",
+    "guardPx": "max(12, frozen word.centerUncertaintyPx)",
+    "centerDomain": "Closed axis-aligned square [x-g,x+g] \u00d7 [y-g,y+g] in original upright pixels.",
+    "maskDomain": "Exact union of frozen horizontally reflected half-open rectangles [left,right) \u00d7 [top,bottom).",
+    "membership": "in if every point of the closed center square is in mask union; out if no point is; unknown otherwise.",
+    "selection": "First/last possible selected word before the first guaranteed-in word; include no-word option iff no guaranteed-in word exists.",
+    "coupling": "Independent uncertain memberships/row choices overapproximate correlated measurement errors; no likelihood or calibration claim.",
+    "emptyRow": "Omit row when the no-word alternative is chosen; no padding or replacement text.",
+    "maximumPairLocalSelectionPaths": 20000,
+    "maximumLabeledReadings": 120000,
+    "globalPairConcatenation": false,
+    "rawAsciiScalars": false,
+    "proseHashWrappers": false,
+    "networkQueries": 0,
+    "transactions": 0
+  },
+  "controls": {
+    "passed": true,
+    "exhaustiveSyntheticMembershipConfigurations": 243,
+    "controls": [
+      "exhaustive-five-position-membership-oracle",
+      "first-last-irrelevant-boundary",
+      "empty-row-option",
+      "half-open-boundary",
+      "overlapping-union-coverage",
+      "mask-gap",
+      "forward-reverse-projection",
+      "incremental-full-scanner-agreement",
+      "shared-format-controls"
+    ],
+    "shared": {
+      "passed": true,
+      "controls": [
+        "official2048wordlist",
+        "BIP39valid-invalid",
+        "BIP39-invalid-group-barrier",
+        "BIP32-all5SLIP132-private-versions",
+        "invalid-root-parent-child-marker-scalar",
+        "BIP38-all6-structural-flag-combinations",
+        "BIP38-reserved-flags-checksum",
+        "Base58Check",
+        "Bech32-v0",
+        "Bech32m-v1",
+        "cross-checksum-version-and-invalid-padding",
+        "SEC-oncurve",
+        "WIF",
+        "minikey22and30-embedded",
+        "invalid-checksum-scalar-case-point",
+        "safe-domain-separated-output"
+      ],
+      "targetInputRead": false,
+      "targetChecks": 0,
+      "networkQueries": 0
+    },
+    "targetInputsRead": false,
+    "targetKeyChecks": 0,
+    "networkQueries": 0
+  },
+  "procedureCounts": {
+    "pairLocalScopes": 16,
+    "selectionPaths": 17108,
+    "labeledReadings": 102648,
+    "scopeCounts": [
+      {
+        "scopeId": "76-to-77:orange:leftmost",
+        "rows": 32,
+        "selectionPaths": 24,
+        "ambiguousRowChoices": 2
+      },
+      {
+        "scopeId": "76-to-77:orange:rightmost",
+        "rows": 32,
+        "selectionPaths": 24,
+        "ambiguousRowChoices": 2
+      },
+      {
+        "scopeId": "76-to-77:black:leftmost",
+        "rows": 32,
+        "selectionPaths": 54,
+        "ambiguousRowChoices": 3
+      },
+      {
+        "scopeId": "76-to-77:black:rightmost",
+        "rows": 32,
+        "selectionPaths": 54,
+        "ambiguousRowChoices": 3
+      },
+      {
+        "scopeId": "77-to-76:orange:leftmost",
+        "rows": 31,
+        "selectionPaths": 4,
+        "ambiguousRowChoices": 1
+      },
+      {
+        "scopeId": "77-to-76:orange:rightmost",
+        "rows": 31,
+        "selectionPaths": 4,
+        "ambiguousRowChoices": 1
+      },
+      {
+        "scopeId": "77-to-76:black:leftmost",
+        "rows": 31,
+        "selectionPaths": 2592,
+        "ambiguousRowChoices": 6
+      },
+      {
+        "scopeId": "77-to-76:black:rightmost",
+        "rows": 31,
+        "selectionPaths": 1296,
+        "ambiguousRowChoices": 5
+      },
+      {
+        "scopeId": "78-to-79:orange:leftmost",
+        "rows": 25,
+        "selectionPaths": 28,
+        "ambiguousRowChoices": 3
+      },
+      {
+        "scopeId": "78-to-79:orange:rightmost",
+        "rows": 25,
+        "selectionPaths": 56,
+        "ambiguousRowChoices": 3
+      },
+      {
+        "scopeId": "78-to-79:black:leftmost",
+        "rows": 25,
+        "selectionPaths": 1,
+        "ambiguousRowChoices": 0
+      },
+      {
+        "scopeId": "78-to-79:black:rightmost",
+        "rows": 25,
+        "selectionPaths": 9,
+        "ambiguousRowChoices": 2
+      },
+      {
+        "scopeId": "79-to-78:orange:leftmost",
+        "rows": 22,
+        "selectionPaths": 10080,
+        "ambiguousRowChoices": 5
+      },
+      {
+        "scopeId": "79-to-78:orange:rightmost",
+        "rows": 22,
+        "selectionPaths": 2880,
+        "ambiguousRowChoices": 5
+      },
+      {
+        "scopeId": "79-to-78:black:leftmost",
+        "rows": 22,
+        "selectionPaths": 1,
+        "ambiguousRowChoices": 0
+      },
+      {
+        "scopeId": "79-to-78:black:rightmost",
+        "rows": 22,
+        "selectionPaths": 1,
+        "ambiguousRowChoices": 0
+      }
+    ],
+    "globalPairConcatenationTested": false
+  },
+  "evaluation": {
+    "streamCount": 102648,
+    "uniqueStreamCount": 93536,
+    "uniqueFormCount": 93536,
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39"
+    ],
+    "shapeCounts": {
+      "wif": 0,
+      "minikey": 521,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "uniqueShapeCounts": {
+      "wif": 0,
+      "minikey": 222,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "executionCount": 222,
+    "validCounts": {
+      "wif": 0,
+      "minikey": 0,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "hits": [],
+    "privateReviewRequired": false,
+    "fingerprintRule": {
+      "algorithm": "SHA-256",
+      "domainText": "KEY404/batch20/record-fingerprint/v1",
+      "separatorHex": "00",
+      "rule": "SHA256(domain || 0x00 || ASCII(format) || 0x00 || canonical record bytes)"
+    },
+    "networkQueries": 0,
+    "rawAsciiScalarInterpretations": 0
+  },
+  "outcome": "no-valid-record-in-registered-pair-local-envelope",
+  "negativeCriterion": "A complete zero-result run excludes only the declared literal records from the registered pair-local modeled superset, at the pinned source/code bytes. It does not calibrate scan errors, test global concatenation or exhaust mirror/first-word ciphers.",
+  "limitations": [
+    "The 12-pixel and frozen center guards are review heuristics, not statistically calibrated measurement-error bounds.",
+    "Independent memberships admit physically inconsistent joint choices. This broadens the tested set and supplies no evidence of intentional encoding or candidate likelihood.",
+    "Global concatenations across page-pair readings are deferred; their large path count is not silently tested or ruled out.",
+    "Exact rectangle masks and the center-based selection convention are declared assumptions, not creator-specified instructions."
+  ],
+  "privateArtifacts": [
+    "SOURCE_MODEL.private.json",
+    "READINGS.private.jsonl"
+  ],
+  "completedAtUTC": "2026-11-10T06:27:56.096Z"
+}

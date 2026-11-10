@@ -734,23 +734,43 @@
     {
       "id": "mirror-boundary-envelope",
       "title": "Mirror-first boundary envelope",
-      "status": "in-progress",
+      "status": "falsified",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "Source review followed by a preregistered pair-local envelope of uncertain first/last selected words. Globals outside scope.",
-      "result": "Source review is underway. No completed decoding or negative result is claimed.",
+      "scope": "All 17,108 pair-local guard-model paths; 102,648 labeled readings; 93,536 distinct forms. Globals excluded.",
+      "result": "222 distinct minikey-shaped strings all failed the checksum; no valid declared record. Independent saved-output audit agreed. This excludes only the registered modeled pair-local superset.",
       "evidence": [
-        "analysis_outputs/continuation_20261110/mirror_boundary_review/PLAN.md",
-        "analysis_outputs/continuation_20261110/mirror_boundary_review/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/mirror_boundary_review/RESULT.md",
+        "analysis_outputs/continuation_20261110/mirror_boundary_review/RESULT.json",
+        "analysis_outputs/continuation_20261110/mirror_boundary_review/INDEPENDENT_CHECK.json",
         "analysis_outputs/continuation_20261110/mirror_boundary_review/PROTOCOL.json"
       ],
       "reproduce": [
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/mirror_boundary_envelope.py --self-test"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/mirror_boundary_envelope.py --run --protocol analysis_outputs/continuation_20261110/mirror_boundary_review/PROTOCOL.json --registration-commit bed5239266a687a5e4ad474feb920b362b2cb670 --out mirror-envelope-rerun"
       ],
       "limitations": [
         "Frozen guards are heuristic review bounds, not calibrated actual-scan errors.",
         "Neither creator-linked source uniquely specifies a stencil or word-center selector.",
         "Global concatenations and other mirror mechanisms remain outside this proposed pair-local test."
+      ]
+    },
+    {
+      "id": "issue26-first-words",
+      "title": "Issue 26 faithful printed first words",
+      "status": "in-progress",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Source identity and faithful first-word reconstruction for printed pages 102\u2013104; key-validation protocol pending.",
+      "result": "Official publisher contents matches this pre-December 2022 column. First-word source review is underway. No key result is claimed.",
+      "evidence": [
+        "sources/issue26/SOURCE_REGISTER.md",
+        "sources/issue26/provenance.json"
+      ],
+      "reproduce": [],
+      "limitations": [
+        "Candidate for the December plural-key claim, not an authenticated alternative 20-BTC target.",
+        "Original PDF unavailable; retained JPEGs are the declared witnesses.",
+        "Gutter-blurred line endings prevent a complete full-line exclusion without a better source."
       ]
     }
   ],
