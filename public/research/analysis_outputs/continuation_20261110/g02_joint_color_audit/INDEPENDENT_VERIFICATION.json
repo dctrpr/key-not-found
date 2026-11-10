@@ -1,0 +1,247 @@
+{
+  "version": 1,
+  "testId": "g02-joint-color-source-audit",
+  "verificationPassed": true,
+  "startedAtUTC": "2026-11-10T22:21:08.572Z",
+  "completedAtUTC": "2026-11-10T22:21:09.121Z",
+  "registrationCommit": "ec3bb322cb1b8baa35ee128143dd8864cb6ab451",
+  "protocolSha256": "6c8fe09481efb08ba806b5968a49d39e0c72581d5c44548c2baf7c18279a00f3",
+  "registrationReceiptSha256": "f703e4d79b8c675d532e5ae740bbcba4a448c26dbd3096f3c07859e453496024",
+  "sourceHashes": {
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "sources/word-geometry-20261110.json": "e3348d0d60d3097b05d0afdb0a1fccf66409274408af9ae7a9369c37fe596e9f",
+    "analysis_outputs/3d_article_map/article_3d_map_data.json": "22c2285a6cd53f6bdda7bdd284d556c52ff55dea0a55cd1b549acbb81443eac3",
+    "analysis_outputs/continuation_20261109/inverted_duplex/inverted_duplex.json": "4d6d029bf5f7e90acfa1d456bc94e790913c7865b923c9367212c219867742f3",
+    "analysis_outputs/continuation_20261110/batch20/G02/RESULT.json": "4f596f955299fe1a5cc19c48ba36454efc9cd719c8f0570963eac1b98bbf3fd6",
+    "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json": "e69215cd826a8fd63c588d5fe9295a71a1807278fd499b9a77cff119c48d4f53"
+  },
+  "scriptHashes": {
+    "scripts/g02_joint_source_audit.py": "e6202356d52fd382189bc736b56df2552122c530d75196363921d37aaa7e619f",
+    "scripts/verify_g02_joint_source_audit.py": "764993caf6f2aeda13b6aec31abdaac3a68136a0b4a7603ba353b17471bb9fb1",
+    "scripts/batch20_geometry.py": "e7786acc472fa3f7a294fe6391e74bd6f8840017e30d9f54941544019dbafb9a"
+  },
+  "primaryInventorySha256": "2c10b715873e50cb0911765d8e096cbc38094a43d8cb0aff6c9a7ea8caacca91",
+  "primaryResultSha256": "392903951d353d971258a578ac3b967a813e4b95a19e1991cb76d5e84ef7abe4",
+  "allOrderedMetadataFieldsMatch": true,
+  "sourceModelComplete": true,
+  "counts": {
+    "canonicalRows": 142,
+    "canonicalTokens": 1258,
+    "canonicalLexicalWords": 1243,
+    "directedPairs": 4,
+    "targetWordPositions": 962,
+    "legacyFlaggedWordOccurrences": 97,
+    "partitionPointsEvaluated": 12560
+  },
+  "pairs": [
+    {
+      "source": 76,
+      "target": 77,
+      "wordPositions": 263,
+      "legacyFlaggedWordOccurrences": 20,
+      "overlapWords": 0,
+      "nominalCompatibilityDisagreements": 0,
+      "oldStableClassDisagreements": 0,
+      "selectors": {
+        "same-color": {
+          "must": 0,
+          "optional": 8,
+          "out": 255,
+          "unresolved": 0,
+          "independentAssignmentUpperBound": "256"
+        },
+        "opposite-color": {
+          "must": 0,
+          "optional": 1,
+          "out": 262,
+          "unresolved": 0,
+          "independentAssignmentUpperBound": "2"
+        },
+        "source-only": {
+          "must": 19,
+          "optional": 12,
+          "out": 232,
+          "unresolved": 0,
+          "independentAssignmentUpperBound": "4096"
+        },
+        "target-only": {
+          "must": 29,
+          "optional": 9,
+          "out": 225,
+          "unresolved": 0,
+          "independentAssignmentUpperBound": "512"
+        }
+      }
+    },
+    {
+      "source": 77,
+      "target": 76,
+      "wordPositions": 274,
+      "legacyFlaggedWordOccurrences": 25,
+      "overlapWords": 0,
+      "nominalCompatibilityDisagreements": 0,
+      "oldStableClassDisagreements": 0,
+      "selectors": {
+        "same-color": {
+          "must": 0,
+          "optional": 11,
+          "out": 263,
+          "unresolved": 0,
+          "independentAssignmentUpperBound": "2048"
+        },
+        "opposite-color": {
+          "must": 0,
+          "optional": 2,
+          "out": 272,
+          "unresolved": 0,
+          "independentAssignmentUpperBound": "4"
+        },
+        "source-only": {
+          "must": 19,
+          "optional": 11,
+          "out": 244,
+          "unresolved": 0,
+          "independentAssignmentUpperBound": "2048"
+        },
+        "target-only": {
+          "must": 33,
+          "optional": 14,
+          "out": 227,
+          "unresolved": 0,
+          "independentAssignmentUpperBound": "16384"
+        }
+      }
+    },
+    {
+      "source": 78,
+      "target": 79,
+      "wordPositions": 226,
+      "legacyFlaggedWordOccurrences": 23,
+      "overlapWords": 0,
+      "nominalCompatibilityDisagreements": 0,
+      "oldStableClassDisagreements": 0,
+      "selectors": {
+        "same-color": {
+          "must": 0,
+          "optional": 6,
+          "out": 220,
+          "unresolved": 0,
+          "independentAssignmentUpperBound": "64"
+        },
+        "opposite-color": {
+          "must": 0,
+          "optional": 0,
+          "out": 226,
+          "unresolved": 0,
+          "independentAssignmentUpperBound": "1"
+        },
+        "source-only": {
+          "must": 23,
+          "optional": 10,
+          "out": 193,
+          "unresolved": 0,
+          "independentAssignmentUpperBound": "1024"
+        },
+        "target-only": {
+          "must": 42,
+          "optional": 13,
+          "out": 171,
+          "unresolved": 0,
+          "independentAssignmentUpperBound": "8192"
+        }
+      }
+    },
+    {
+      "source": 79,
+      "target": 78,
+      "wordPositions": 199,
+      "legacyFlaggedWordOccurrences": 29,
+      "overlapWords": 0,
+      "nominalCompatibilityDisagreements": 0,
+      "oldStableClassDisagreements": 0,
+      "selectors": {
+        "same-color": {
+          "must": 0,
+          "optional": 2,
+          "out": 197,
+          "unresolved": 0,
+          "independentAssignmentUpperBound": "4"
+        },
+        "opposite-color": {
+          "must": 0,
+          "optional": 0,
+          "out": 199,
+          "unresolved": 0,
+          "independentAssignmentUpperBound": "1"
+        },
+        "source-only": {
+          "must": 17,
+          "optional": 26,
+          "out": 156,
+          "unresolved": 0,
+          "independentAssignmentUpperBound": "67108864"
+        },
+        "target-only": {
+          "must": 35,
+          "optional": 3,
+          "out": 161,
+          "unresolved": 0,
+          "independentAssignmentUpperBound": "8"
+        }
+      }
+    }
+  ],
+  "globalSelectors": {
+    "same-color": {
+      "must": 0,
+      "optional": 27,
+      "out": 935,
+      "unresolved": 0,
+      "independentAssignmentUpperBound": "134217728"
+    },
+    "opposite-color": {
+      "must": 0,
+      "optional": 3,
+      "out": 959,
+      "unresolved": 0,
+      "independentAssignmentUpperBound": "8"
+    },
+    "source-only": {
+      "must": 78,
+      "optional": 59,
+      "out": 825,
+      "unresolved": 0,
+      "independentAssignmentUpperBound": "576460752303423488"
+    },
+    "target-only": {
+      "must": 139,
+      "optional": 39,
+      "out": 784,
+      "unresolved": 0,
+      "independentAssignmentUpperBound": "549755813888"
+    }
+  },
+  "controls": {
+    "passed": true,
+    "independentHalfGridComparisons": 651,
+    "exhaustivePaletteCases": 625,
+    "truthTablePairs": 9,
+    "exactBinaryFloatControl": true,
+    "sourceMetadataControl": true,
+    "targetInputsRead": false,
+    "targetExecution": false,
+    "textConstructed": false,
+    "networkQueries": 0,
+    "keyOrFormatChecks": 0
+  },
+  "activity": {
+    "newImages": 0,
+    "newOCR": 0,
+    "newGeometryFit": 0,
+    "newCipherOutputs": 0,
+    "keyChecks": 0,
+    "derivations": 0,
+    "historyQueries": 0,
+    "walletActions": 0
+  }
+}

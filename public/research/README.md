@@ -10,6 +10,8 @@ The [visual lab and dated frames](VISUAL_GUIDE.md) make the source pages and com
 
 ## Research is continuing
 
+The [two-sided stencil source audit](analysis_outputs/continuation_20261110/g02_joint_color_audit/RESULT.md) maps all 962 target word positions, retaining the 97 variable memberships. Two implementations agree on every ordered metadata field. The four selectors have very different assignment bounds, from eight opposite-color assignments to `2^59` for source-only. No reading or key check ran. The [paragraph eligibility audit](analysis_outputs/continuation_20261110/g05_paragraph_scope_audit/RESULT.md) separately explains the 98/142 displacement coverage and the fixed 136-row theoretical ceiling.
+
 A [bounded source-date follow-up](analysis_outputs/continuation_20261110/t01_saved_reading_review/SOURCE_FOLLOWUP.md) records the official 15 February 2023 livestream date of another surfaced video, outside both fixed windows without clearing its content. The exact derived OP65 publisher route displays a not-found page. Its recording and recording date remain unresolved; tool/index failures are distinguished from primary-page observations.
 
 The [complete T01 saved-text review](analysis_outputs/continuation_20261110/t01_saved_reading_review/RESULT.md) covers all 152 distinct texts / 196 existing labels. Two AI contexts report no actionable second message; input identity, reported coverage and chronology were audited. Reader A’s broader prior-ledger exposure is a disclosed deviation; Reader B reports fresh context. This is subjective nonrecognition, with no new extraction or cryptographic test, and no general exclusion. The dated visual frame preserves the finite result.

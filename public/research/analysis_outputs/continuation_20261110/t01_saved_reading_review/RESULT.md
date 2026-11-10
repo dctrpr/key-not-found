@@ -31,7 +31,7 @@ From the repository’s `public/research` directory, choose a fresh private outp
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 python3 scripts/pack_t01_semantic_readings.py --self-test
-PYTHONDONTWRITEBYTECODE=1 python3 scripts/pack_t01_semantic_readings.py --source analysis_outputs/continuation_20261110/batch20/T01/STREAMS.json --out ../../../t01-reading-packets
+PYTHONDONTWRITEBYTECODE=1 python3 scripts/pack_t01_semantic_readings.py --source analysis_outputs/continuation_20261110/batch20/T01/STREAMS.json --out "$(mktemp -d)/t01-reading-packets"
 ```
 
 The twelve packet files and mapping reproduce exactly. Inventory run timestamps change; original source/code pins, complete texts, ordering, counts and whole-packet digests remain checkable. Semantic judgments require actual reading and are not reproduced by counters. Do not publish unreviewed private outputs.

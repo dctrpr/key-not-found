@@ -350,7 +350,7 @@
       ],
       "reproduce": [
         "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_text.py --run T01 --protocol analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json --registration-commit 8f4fa38bf24db7e432410c4daaa29e9de486156c --out T01-rerun",
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/pack_t01_semantic_readings.py --source analysis_outputs/continuation_20261110/batch20/T01/STREAMS.json --out ../../../t01-reading-packets"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/pack_t01_semantic_readings.py --source analysis_outputs/continuation_20261110/batch20/T01/STREAMS.json --out \"$(mktemp -d)/t01-reading-packets\""
       ],
       "limitations": [
         "The older boustrophedon test used merged transcript lines; this is a corrected-source test.",
@@ -581,23 +581,28 @@
     {
       "id": "batch20-g02",
       "title": "Two-sided printed highlight stencil",
-      "status": "in-progress",
+      "status": "partial",
       "kind": "method-test",
       "independentTheory": false,
       "scope": "G02: exact geometry/image procedure, sources and fixed parameters in GEOMETRY_PROTOCOL.json.",
-      "result": "The original run retained 0 complete readings; 97 word-color uncertainty flags blocked all 40 selector/order scopes. The first/last-word envelopes did not implement the joint source/target color table or retain all matching words. A fixed source-only audit now maps 962 existing word positions without creating readings or validating keys.",
+      "result": "Original G02 retained 0 complete readings. The registered source-only audit now maps all 962 frozen positions, preserving all 97 variable memberships. Two implementations agree across 12,560 partition points, with no unclassified position under the fixed model. Opposite-color has only eight global assignments; source-only has 2^59. No new reading or key check ran.",
       "evidence": [
         "analysis_outputs/continuation_20261110/batch20/G02/RESULT.md",
         "analysis_outputs/continuation_20261110/batch20/G02/RESULT.json",
         "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json",
-        "analysis_outputs/continuation_20261110/g02_joint_color_audit/PROTOCOL.md"
+        "analysis_outputs/continuation_20261110/g02_joint_color_audit/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/g02_joint_color_audit/RESULT.md",
+        "analysis_outputs/continuation_20261110/g02_joint_color_audit/RESULT.json",
+        "analysis_outputs/continuation_20261110/g02_joint_color_audit/INDEPENDENT_VERIFICATION.json"
       ],
       "reproduce": [
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_geometry.py --run G02 --protocol analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json --registration-commit 90ad1d694b0eb236494ae199b87de05db5e3d331 --out G02-rerun"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_geometry.py --run G02 --protocol analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json --registration-commit 90ad1d694b0eb236494ae199b87de05db5e3d331 --out G02-rerun",
+        "Reconstruct the ordered source memberships with the two commands in the joint color audit result."
       ],
       "limitations": [
         "Uses corrected physical pairs and actual printed masks, not old chosen-p76 phrase boxes.",
-        "Ambiguous target geometry/color is preserved and prevents a complete negative for affected readings."
+        "Ambiguous target geometry/color is preserved and prevents a complete negative for affected readings.",
+        "The exact guard-square model overapproximates physical correlations. Source-model completion does not certify scan geometry or exclude the cipher."
       ]
     },
     {
@@ -655,18 +660,22 @@
       "kind": "method-test",
       "independentTheory": false,
       "scope": "G05: exact geometry/image procedure, sources and fixed parameters in GEOMETRY_PROTOCOL.json.",
-      "result": "Obtained 98 of 142 row displacement proxies; 44 rows were unavailable or could not be detrended. No page/global decoding had complete coverage. The registered baseline channel remains inconclusive.",
+      "result": "The saved run retains 98 of 142 displacement proxies. The metadata replay accounts for 38 shared optical failures and six further paragraph exclusions. Even perfect optics could retain at most 136 rows under the frozen paragraph rule. No new measurement or decode was run.",
       "evidence": [
         "analysis_outputs/continuation_20261110/batch20/G05/RESULT.md",
         "analysis_outputs/continuation_20261110/batch20/G05/RESULT.json",
-        "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json"
+        "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/g05_paragraph_scope_audit/RESULT.md",
+        "analysis_outputs/continuation_20261110/g05_paragraph_scope_audit/RESULT.json"
       ],
       "reproduce": [
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_geometry.py --run G05 --protocol analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json --registration-commit 90ad1d694b0eb236494ae199b87de05db5e3d331 --out G05-rerun"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_geometry.py --run G05 --protocol analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json --registration-commit 90ad1d694b0eb236494ae199b87de05db5e3d331 --out G05-rerun",
+        "python3 scripts/g05_paragraph_scope_audit.py --research-root ."
       ],
       "limitations": [
         "The ink-bottom quantile is an optical baseline proxy, not original font metadata or an exact typographic baseline.",
-        "Font/glyph shape, printing and scan noise can create residuals. No general baseline-steganography absence claim."
+        "Font/glyph shape, printing and scan noise can create residuals. No general baseline-steganography absence claim.",
+        "The fixed minimum of three rows per paragraph excludes six rows in four inherently short paragraphs even with complete optics. The proposed bottom-support pilot remains unexecuted."
       ]
     },
     {

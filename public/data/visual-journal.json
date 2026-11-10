@@ -742,6 +742,42 @@
       },
       "sceneNote": "Original Issue 24 scans. The mirror illustrates the source; the review used saved texts and did not rerun extraction.",
       "methodId": "batch20-t01"
+    },
+    {
+      "id": "g02-joint-source-model",
+      "completedAtUTC": "2026-11-10T22:20:31.145Z",
+      "title": "The stencil boundary, mapped.",
+      "summary": "Both sides’ highlight colors were checked throughout each frozen word center’s guard square.",
+      "result": "Two implementations agree. All 97 uncertain words remain explicit alternatives in the fixed model. No reading or key check ran.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Word positions",
+          "value": 962,
+          "pointer": "/counts/targetWordPositions"
+        },
+        {
+          "label": "Boundary flags",
+          "value": 97,
+          "pointer": "/counts/legacyFlaggedWordOccurrences"
+        },
+        {
+          "label": "Unclassified words",
+          "value": 0,
+          "pointer": "/globalSelectors/same-color/unresolved"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/g02_joint_color_audit/RESULT.json",
+        "sha256": "392903951d353d971258a578ac3b967a813e4b95a19e1991cb76d5e84ef7abe4"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/g02_joint_color_audit/RESULT.md",
+      "scene": {
+        "layout": "mirror",
+        "page": 77
+      },
+      "sceneNote": "Actual Issue 24 page 77. The mirror is an inspection aid; the report defines all four two-sided pairs.",
+      "methodId": "batch20-g02"
     }
   ]
 }

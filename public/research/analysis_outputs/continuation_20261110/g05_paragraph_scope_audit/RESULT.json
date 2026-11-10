@@ -1,0 +1,1211 @@
+{
+  "version": 1,
+  "testId": "g05-paragraph-scope-audit",
+  "completedAtUTC": "2026-11-10T22:20:55.181Z",
+  "classification": "saved-eligibility-metadata-replay",
+  "caseStatus": "unsolved",
+  "outcome": "shared-optical-failures-and-fixed-paragraph-limit-accounted-for",
+  "completeNegative": false,
+  "counts": {
+    "canonicalRows": 142,
+    "sharedOpticalFailures": 38,
+    "additionalParagraphExclusions": 6,
+    "retainedRows": 98,
+    "perfectOpticsFixedParagraphUpperBound": 136
+  },
+  "originalG05": {
+    "path": "analysis_outputs/continuation_20261110/batch20/G05/RESULT.json",
+    "sha256": "37009aa54d910646d6b96e70529a2b35b23f978793fb898da24782d5bde7b944",
+    "registrationCommit": "90ad1d694b0eb236494ae199b87de05db5e3d331",
+    "completedAtUTC": "2026-11-10T05:25:29.898Z",
+    "outcome": "inconclusive-source-or-detector-coverage",
+    "retainedRows": 98,
+    "unknownRows": 44,
+    "retainedLabelledDecodes": 0
+  },
+  "replayScript": {
+    "path": "scripts/g05_paragraph_scope_audit.py",
+    "sha256": "4b8ec2fa86c6d52c829714dc85618ce58eb33471e092560d0c9d9875a6bec805"
+  },
+  "publicReplay": {
+    "schemaVersion": 1,
+    "inputPins": {
+      "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+      "analysis_outputs/continuation_20261110/batch20/G04/RESULT.json": "b3f920064b245c74cc0c1855ebd744b2d30f3c88a6ff50d89cc76c70a45185f4",
+      "analysis_outputs/continuation_20261110/g04_guard_trace/RESULT.json": "bacf31de93532e83f044abd62a5d58f6efee407ed2738a52ddc7a299ffe8a01e"
+    },
+    "minimumRowsPerParagraph": 3,
+    "counts": {
+      "canonicalRows": 142,
+      "sharedHelperPassRows": 104,
+      "sharedHelperFailureRows": 38,
+      "currentParagraphRejectedRows": 6,
+      "currentRetainedRows": 98,
+      "canonicalParagraphGroups": 20,
+      "currentOpticallyNonemptyParagraphGroups": 18,
+      "currentRetainedParagraphGroups": 15,
+      "inherentlyShortCanonicalParagraphGroups": 4,
+      "inherentlyShortRows": 6,
+      "currentParagraphRejectsInInherentlyShortGroups": 4,
+      "currentParagraphRejectsCausedByPriorOpticalLoss": 2,
+      "perfectOpticsFixedParagraphMaxRetainedRows": 136
+    },
+    "exactUnknownReasons": {
+      "ink-touches-vertical-region-boundary": 13,
+      "ink-touches-word-region-boundary": 23,
+      "no-robust-ink-columns": 1,
+      "no-robust-ink-rows": 1,
+      "paragraph-too-short-to-detrend": 6
+    },
+    "unknownRows": [
+      {
+        "rowId": "p75r03",
+        "reason": "ink-touches-vertical-region-boundary"
+      },
+      {
+        "rowId": "p75r08",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p75r09",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p75r10",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p75r11",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p75r12",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p75r24",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p76r07",
+        "reason": "ink-touches-vertical-region-boundary"
+      },
+      {
+        "rowId": "p76r08",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p76r16",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p76r24",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p76r26",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p76r31",
+        "reason": "ink-touches-vertical-region-boundary"
+      },
+      {
+        "rowId": "p77r05",
+        "reason": "no-robust-ink-columns"
+      },
+      {
+        "rowId": "p77r06",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p77r07",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p77r11",
+        "reason": "ink-touches-vertical-region-boundary"
+      },
+      {
+        "rowId": "p77r12",
+        "reason": "no-robust-ink-rows"
+      },
+      {
+        "rowId": "p77r15",
+        "reason": "ink-touches-vertical-region-boundary"
+      },
+      {
+        "rowId": "p77r16",
+        "reason": "ink-touches-vertical-region-boundary"
+      },
+      {
+        "rowId": "p77r18",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p77r20",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p77r30",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p77r32",
+        "reason": "ink-touches-vertical-region-boundary"
+      },
+      {
+        "rowId": "p78r02",
+        "reason": "ink-touches-vertical-region-boundary"
+      },
+      {
+        "rowId": "p78r06",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p78r08",
+        "reason": "ink-touches-vertical-region-boundary"
+      },
+      {
+        "rowId": "p78r09",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p78r10",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p79r01",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p79r02",
+        "reason": "ink-touches-vertical-region-boundary"
+      },
+      {
+        "rowId": "p79r03",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p79r05",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p79r06",
+        "reason": "ink-touches-vertical-region-boundary"
+      },
+      {
+        "rowId": "p79r07",
+        "reason": "ink-touches-vertical-region-boundary"
+      },
+      {
+        "rowId": "p79r16",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p79r22",
+        "reason": "ink-touches-vertical-region-boundary"
+      },
+      {
+        "rowId": "p79r24",
+        "reason": "ink-touches-word-region-boundary"
+      },
+      {
+        "rowId": "p75r01",
+        "reason": "paragraph-too-short-to-detrend"
+      },
+      {
+        "rowId": "p75r02",
+        "reason": "paragraph-too-short-to-detrend"
+      },
+      {
+        "rowId": "p79r20",
+        "reason": "paragraph-too-short-to-detrend"
+      },
+      {
+        "rowId": "p79r21",
+        "reason": "paragraph-too-short-to-detrend"
+      },
+      {
+        "rowId": "p79r23",
+        "reason": "paragraph-too-short-to-detrend"
+      },
+      {
+        "rowId": "p79r25",
+        "reason": "paragraph-too-short-to-detrend"
+      }
+    ],
+    "inherentlyShortRowIds": [
+      "p75r01",
+      "p75r02",
+      "p75r03",
+      "p76r31",
+      "p79r20",
+      "p79r21"
+    ],
+    "perPage": [
+      {
+        "page": 75,
+        "canonicalRows": 32,
+        "sharedHelperFailures": 7,
+        "paragraphExclusions": 2,
+        "retainedRows": 23,
+        "unknownRows": 9,
+        "perfectOpticsFixedParagraphUpperBound": 29
+      },
+      {
+        "page": 76,
+        "canonicalRows": 31,
+        "sharedHelperFailures": 6,
+        "paragraphExclusions": 0,
+        "retainedRows": 25,
+        "unknownRows": 6,
+        "perfectOpticsFixedParagraphUpperBound": 30
+      },
+      {
+        "page": 77,
+        "canonicalRows": 32,
+        "sharedHelperFailures": 11,
+        "paragraphExclusions": 0,
+        "retainedRows": 21,
+        "unknownRows": 11,
+        "perfectOpticsFixedParagraphUpperBound": 32
+      },
+      {
+        "page": 78,
+        "canonicalRows": 22,
+        "sharedHelperFailures": 5,
+        "paragraphExclusions": 0,
+        "retainedRows": 17,
+        "unknownRows": 5,
+        "perfectOpticsFixedParagraphUpperBound": 22
+      },
+      {
+        "page": 79,
+        "canonicalRows": 25,
+        "sharedHelperFailures": 9,
+        "paragraphExclusions": 4,
+        "retainedRows": 12,
+        "unknownRows": 13,
+        "perfectOpticsFixedParagraphUpperBound": 23
+      }
+    ],
+    "completePages": [],
+    "globalScopeComplete": false,
+    "paragraphEligibilityTrace": [
+      {
+        "page": 75,
+        "paragraph": 0,
+        "canonicalRowIds": [
+          "p75r01",
+          "p75r02"
+        ],
+        "canonicalCount": 2,
+        "sharedHelperFailures": [],
+        "opticalSurvivorRowIds": [
+          "p75r01",
+          "p75r02"
+        ],
+        "opticalSurvivorCount": 2,
+        "paragraphRejectedRowIds": [
+          "p75r01",
+          "p75r02"
+        ],
+        "retainedRowIds": [],
+        "retainedCount": 0,
+        "wouldRemainShortWithPerfectOptics": true
+      },
+      {
+        "page": 75,
+        "paragraph": 1,
+        "canonicalRowIds": [
+          "p75r03"
+        ],
+        "canonicalCount": 1,
+        "sharedHelperFailures": [
+          {
+            "rowId": "p75r03",
+            "reason": "ink-touches-vertical-region-boundary"
+          }
+        ],
+        "opticalSurvivorRowIds": [],
+        "opticalSurvivorCount": 0,
+        "paragraphRejectedRowIds": [],
+        "retainedRowIds": [],
+        "retainedCount": 0,
+        "wouldRemainShortWithPerfectOptics": true
+      },
+      {
+        "page": 75,
+        "paragraph": 2,
+        "canonicalRowIds": [
+          "p75r04",
+          "p75r05",
+          "p75r06",
+          "p75r07",
+          "p75r08",
+          "p75r09",
+          "p75r10",
+          "p75r11",
+          "p75r12"
+        ],
+        "canonicalCount": 9,
+        "sharedHelperFailures": [
+          {
+            "rowId": "p75r08",
+            "reason": "ink-touches-word-region-boundary"
+          },
+          {
+            "rowId": "p75r09",
+            "reason": "ink-touches-word-region-boundary"
+          },
+          {
+            "rowId": "p75r10",
+            "reason": "ink-touches-word-region-boundary"
+          },
+          {
+            "rowId": "p75r11",
+            "reason": "ink-touches-word-region-boundary"
+          },
+          {
+            "rowId": "p75r12",
+            "reason": "ink-touches-word-region-boundary"
+          }
+        ],
+        "opticalSurvivorRowIds": [
+          "p75r04",
+          "p75r05",
+          "p75r06",
+          "p75r07"
+        ],
+        "opticalSurvivorCount": 4,
+        "paragraphRejectedRowIds": [],
+        "retainedRowIds": [
+          "p75r04",
+          "p75r05",
+          "p75r06",
+          "p75r07"
+        ],
+        "retainedCount": 4,
+        "wouldRemainShortWithPerfectOptics": false
+      },
+      {
+        "page": 75,
+        "paragraph": 3,
+        "canonicalRowIds": [
+          "p75r13",
+          "p75r14",
+          "p75r15",
+          "p75r16",
+          "p75r17",
+          "p75r18",
+          "p75r19",
+          "p75r20",
+          "p75r21",
+          "p75r22",
+          "p75r23",
+          "p75r24",
+          "p75r25",
+          "p75r26",
+          "p75r27",
+          "p75r28",
+          "p75r29",
+          "p75r30",
+          "p75r31",
+          "p75r32"
+        ],
+        "canonicalCount": 20,
+        "sharedHelperFailures": [
+          {
+            "rowId": "p75r24",
+            "reason": "ink-touches-word-region-boundary"
+          }
+        ],
+        "opticalSurvivorRowIds": [
+          "p75r13",
+          "p75r14",
+          "p75r15",
+          "p75r16",
+          "p75r17",
+          "p75r18",
+          "p75r19",
+          "p75r20",
+          "p75r21",
+          "p75r22",
+          "p75r23",
+          "p75r25",
+          "p75r26",
+          "p75r27",
+          "p75r28",
+          "p75r29",
+          "p75r30",
+          "p75r31",
+          "p75r32"
+        ],
+        "opticalSurvivorCount": 19,
+        "paragraphRejectedRowIds": [],
+        "retainedRowIds": [
+          "p75r13",
+          "p75r14",
+          "p75r15",
+          "p75r16",
+          "p75r17",
+          "p75r18",
+          "p75r19",
+          "p75r20",
+          "p75r21",
+          "p75r22",
+          "p75r23",
+          "p75r25",
+          "p75r26",
+          "p75r27",
+          "p75r28",
+          "p75r29",
+          "p75r30",
+          "p75r31",
+          "p75r32"
+        ],
+        "retainedCount": 19,
+        "wouldRemainShortWithPerfectOptics": false
+      },
+      {
+        "page": 76,
+        "paragraph": 0,
+        "canonicalRowIds": [
+          "p76r01",
+          "p76r02",
+          "p76r03",
+          "p76r04",
+          "p76r05",
+          "p76r06"
+        ],
+        "canonicalCount": 6,
+        "sharedHelperFailures": [],
+        "opticalSurvivorRowIds": [
+          "p76r01",
+          "p76r02",
+          "p76r03",
+          "p76r04",
+          "p76r05",
+          "p76r06"
+        ],
+        "opticalSurvivorCount": 6,
+        "paragraphRejectedRowIds": [],
+        "retainedRowIds": [
+          "p76r01",
+          "p76r02",
+          "p76r03",
+          "p76r04",
+          "p76r05",
+          "p76r06"
+        ],
+        "retainedCount": 6,
+        "wouldRemainShortWithPerfectOptics": false
+      },
+      {
+        "page": 76,
+        "paragraph": 1,
+        "canonicalRowIds": [
+          "p76r07",
+          "p76r08",
+          "p76r09",
+          "p76r10",
+          "p76r11",
+          "p76r12",
+          "p76r13",
+          "p76r14",
+          "p76r15",
+          "p76r16",
+          "p76r17"
+        ],
+        "canonicalCount": 11,
+        "sharedHelperFailures": [
+          {
+            "rowId": "p76r07",
+            "reason": "ink-touches-vertical-region-boundary"
+          },
+          {
+            "rowId": "p76r08",
+            "reason": "ink-touches-word-region-boundary"
+          },
+          {
+            "rowId": "p76r16",
+            "reason": "ink-touches-word-region-boundary"
+          }
+        ],
+        "opticalSurvivorRowIds": [
+          "p76r09",
+          "p76r10",
+          "p76r11",
+          "p76r12",
+          "p76r13",
+          "p76r14",
+          "p76r15",
+          "p76r17"
+        ],
+        "opticalSurvivorCount": 8,
+        "paragraphRejectedRowIds": [],
+        "retainedRowIds": [
+          "p76r09",
+          "p76r10",
+          "p76r11",
+          "p76r12",
+          "p76r13",
+          "p76r14",
+          "p76r15",
+          "p76r17"
+        ],
+        "retainedCount": 8,
+        "wouldRemainShortWithPerfectOptics": false
+      },
+      {
+        "page": 76,
+        "paragraph": 2,
+        "canonicalRowIds": [
+          "p76r18",
+          "p76r19",
+          "p76r20",
+          "p76r21",
+          "p76r22",
+          "p76r23",
+          "p76r24",
+          "p76r25",
+          "p76r26",
+          "p76r27",
+          "p76r28",
+          "p76r29",
+          "p76r30"
+        ],
+        "canonicalCount": 13,
+        "sharedHelperFailures": [
+          {
+            "rowId": "p76r24",
+            "reason": "ink-touches-word-region-boundary"
+          },
+          {
+            "rowId": "p76r26",
+            "reason": "ink-touches-word-region-boundary"
+          }
+        ],
+        "opticalSurvivorRowIds": [
+          "p76r18",
+          "p76r19",
+          "p76r20",
+          "p76r21",
+          "p76r22",
+          "p76r23",
+          "p76r25",
+          "p76r27",
+          "p76r28",
+          "p76r29",
+          "p76r30"
+        ],
+        "opticalSurvivorCount": 11,
+        "paragraphRejectedRowIds": [],
+        "retainedRowIds": [
+          "p76r18",
+          "p76r19",
+          "p76r20",
+          "p76r21",
+          "p76r22",
+          "p76r23",
+          "p76r25",
+          "p76r27",
+          "p76r28",
+          "p76r29",
+          "p76r30"
+        ],
+        "retainedCount": 11,
+        "wouldRemainShortWithPerfectOptics": false
+      },
+      {
+        "page": 76,
+        "paragraph": 3,
+        "canonicalRowIds": [
+          "p76r31"
+        ],
+        "canonicalCount": 1,
+        "sharedHelperFailures": [
+          {
+            "rowId": "p76r31",
+            "reason": "ink-touches-vertical-region-boundary"
+          }
+        ],
+        "opticalSurvivorRowIds": [],
+        "opticalSurvivorCount": 0,
+        "paragraphRejectedRowIds": [],
+        "retainedRowIds": [],
+        "retainedCount": 0,
+        "wouldRemainShortWithPerfectOptics": true
+      },
+      {
+        "page": 77,
+        "paragraph": 0,
+        "canonicalRowIds": [
+          "p77r01",
+          "p77r02",
+          "p77r03",
+          "p77r04",
+          "p77r05",
+          "p77r06",
+          "p77r07"
+        ],
+        "canonicalCount": 7,
+        "sharedHelperFailures": [
+          {
+            "rowId": "p77r05",
+            "reason": "no-robust-ink-columns"
+          },
+          {
+            "rowId": "p77r06",
+            "reason": "ink-touches-word-region-boundary"
+          },
+          {
+            "rowId": "p77r07",
+            "reason": "ink-touches-word-region-boundary"
+          }
+        ],
+        "opticalSurvivorRowIds": [
+          "p77r01",
+          "p77r02",
+          "p77r03",
+          "p77r04"
+        ],
+        "opticalSurvivorCount": 4,
+        "paragraphRejectedRowIds": [],
+        "retainedRowIds": [
+          "p77r01",
+          "p77r02",
+          "p77r03",
+          "p77r04"
+        ],
+        "retainedCount": 4,
+        "wouldRemainShortWithPerfectOptics": false
+      },
+      {
+        "page": 77,
+        "paragraph": 1,
+        "canonicalRowIds": [
+          "p77r08",
+          "p77r09",
+          "p77r10",
+          "p77r11",
+          "p77r12",
+          "p77r13",
+          "p77r14",
+          "p77r15",
+          "p77r16"
+        ],
+        "canonicalCount": 9,
+        "sharedHelperFailures": [
+          {
+            "rowId": "p77r11",
+            "reason": "ink-touches-vertical-region-boundary"
+          },
+          {
+            "rowId": "p77r12",
+            "reason": "no-robust-ink-rows"
+          },
+          {
+            "rowId": "p77r15",
+            "reason": "ink-touches-vertical-region-boundary"
+          },
+          {
+            "rowId": "p77r16",
+            "reason": "ink-touches-vertical-region-boundary"
+          }
+        ],
+        "opticalSurvivorRowIds": [
+          "p77r08",
+          "p77r09",
+          "p77r10",
+          "p77r13",
+          "p77r14"
+        ],
+        "opticalSurvivorCount": 5,
+        "paragraphRejectedRowIds": [],
+        "retainedRowIds": [
+          "p77r08",
+          "p77r09",
+          "p77r10",
+          "p77r13",
+          "p77r14"
+        ],
+        "retainedCount": 5,
+        "wouldRemainShortWithPerfectOptics": false
+      },
+      {
+        "page": 77,
+        "paragraph": 2,
+        "canonicalRowIds": [
+          "p77r17",
+          "p77r18",
+          "p77r19",
+          "p77r20",
+          "p77r21"
+        ],
+        "canonicalCount": 5,
+        "sharedHelperFailures": [
+          {
+            "rowId": "p77r18",
+            "reason": "ink-touches-word-region-boundary"
+          },
+          {
+            "rowId": "p77r20",
+            "reason": "ink-touches-word-region-boundary"
+          }
+        ],
+        "opticalSurvivorRowIds": [
+          "p77r17",
+          "p77r19",
+          "p77r21"
+        ],
+        "opticalSurvivorCount": 3,
+        "paragraphRejectedRowIds": [],
+        "retainedRowIds": [
+          "p77r17",
+          "p77r19",
+          "p77r21"
+        ],
+        "retainedCount": 3,
+        "wouldRemainShortWithPerfectOptics": false
+      },
+      {
+        "page": 77,
+        "paragraph": 3,
+        "canonicalRowIds": [
+          "p77r22",
+          "p77r23",
+          "p77r24",
+          "p77r25",
+          "p77r26",
+          "p77r27",
+          "p77r28",
+          "p77r29",
+          "p77r30",
+          "p77r31",
+          "p77r32"
+        ],
+        "canonicalCount": 11,
+        "sharedHelperFailures": [
+          {
+            "rowId": "p77r30",
+            "reason": "ink-touches-word-region-boundary"
+          },
+          {
+            "rowId": "p77r32",
+            "reason": "ink-touches-vertical-region-boundary"
+          }
+        ],
+        "opticalSurvivorRowIds": [
+          "p77r22",
+          "p77r23",
+          "p77r24",
+          "p77r25",
+          "p77r26",
+          "p77r27",
+          "p77r28",
+          "p77r29",
+          "p77r31"
+        ],
+        "opticalSurvivorCount": 9,
+        "paragraphRejectedRowIds": [],
+        "retainedRowIds": [
+          "p77r22",
+          "p77r23",
+          "p77r24",
+          "p77r25",
+          "p77r26",
+          "p77r27",
+          "p77r28",
+          "p77r29",
+          "p77r31"
+        ],
+        "retainedCount": 9,
+        "wouldRemainShortWithPerfectOptics": false
+      },
+      {
+        "page": 78,
+        "paragraph": 0,
+        "canonicalRowIds": [
+          "p78r01",
+          "p78r02",
+          "p78r03",
+          "p78r04",
+          "p78r05"
+        ],
+        "canonicalCount": 5,
+        "sharedHelperFailures": [
+          {
+            "rowId": "p78r02",
+            "reason": "ink-touches-vertical-region-boundary"
+          }
+        ],
+        "opticalSurvivorRowIds": [
+          "p78r01",
+          "p78r03",
+          "p78r04",
+          "p78r05"
+        ],
+        "opticalSurvivorCount": 4,
+        "paragraphRejectedRowIds": [],
+        "retainedRowIds": [
+          "p78r01",
+          "p78r03",
+          "p78r04",
+          "p78r05"
+        ],
+        "retainedCount": 4,
+        "wouldRemainShortWithPerfectOptics": false
+      },
+      {
+        "page": 78,
+        "paragraph": 1,
+        "canonicalRowIds": [
+          "p78r06",
+          "p78r07",
+          "p78r08",
+          "p78r09",
+          "p78r10",
+          "p78r11",
+          "p78r12",
+          "p78r13",
+          "p78r14"
+        ],
+        "canonicalCount": 9,
+        "sharedHelperFailures": [
+          {
+            "rowId": "p78r06",
+            "reason": "ink-touches-word-region-boundary"
+          },
+          {
+            "rowId": "p78r08",
+            "reason": "ink-touches-vertical-region-boundary"
+          },
+          {
+            "rowId": "p78r09",
+            "reason": "ink-touches-word-region-boundary"
+          },
+          {
+            "rowId": "p78r10",
+            "reason": "ink-touches-word-region-boundary"
+          }
+        ],
+        "opticalSurvivorRowIds": [
+          "p78r07",
+          "p78r11",
+          "p78r12",
+          "p78r13",
+          "p78r14"
+        ],
+        "opticalSurvivorCount": 5,
+        "paragraphRejectedRowIds": [],
+        "retainedRowIds": [
+          "p78r07",
+          "p78r11",
+          "p78r12",
+          "p78r13",
+          "p78r14"
+        ],
+        "retainedCount": 5,
+        "wouldRemainShortWithPerfectOptics": false
+      },
+      {
+        "page": 78,
+        "paragraph": 2,
+        "canonicalRowIds": [
+          "p78r15",
+          "p78r16",
+          "p78r17",
+          "p78r18"
+        ],
+        "canonicalCount": 4,
+        "sharedHelperFailures": [],
+        "opticalSurvivorRowIds": [
+          "p78r15",
+          "p78r16",
+          "p78r17",
+          "p78r18"
+        ],
+        "opticalSurvivorCount": 4,
+        "paragraphRejectedRowIds": [],
+        "retainedRowIds": [
+          "p78r15",
+          "p78r16",
+          "p78r17",
+          "p78r18"
+        ],
+        "retainedCount": 4,
+        "wouldRemainShortWithPerfectOptics": false
+      },
+      {
+        "page": 78,
+        "paragraph": 3,
+        "canonicalRowIds": [
+          "p78r19",
+          "p78r20",
+          "p78r21",
+          "p78r22"
+        ],
+        "canonicalCount": 4,
+        "sharedHelperFailures": [],
+        "opticalSurvivorRowIds": [
+          "p78r19",
+          "p78r20",
+          "p78r21",
+          "p78r22"
+        ],
+        "opticalSurvivorCount": 4,
+        "paragraphRejectedRowIds": [],
+        "retainedRowIds": [
+          "p78r19",
+          "p78r20",
+          "p78r21",
+          "p78r22"
+        ],
+        "retainedCount": 4,
+        "wouldRemainShortWithPerfectOptics": false
+      },
+      {
+        "page": 79,
+        "paragraph": 0,
+        "canonicalRowIds": [
+          "p79r01",
+          "p79r02",
+          "p79r03",
+          "p79r04",
+          "p79r05",
+          "p79r06",
+          "p79r07",
+          "p79r08",
+          "p79r09",
+          "p79r10",
+          "p79r11",
+          "p79r12",
+          "p79r13",
+          "p79r14",
+          "p79r15",
+          "p79r16"
+        ],
+        "canonicalCount": 16,
+        "sharedHelperFailures": [
+          {
+            "rowId": "p79r01",
+            "reason": "ink-touches-word-region-boundary"
+          },
+          {
+            "rowId": "p79r02",
+            "reason": "ink-touches-vertical-region-boundary"
+          },
+          {
+            "rowId": "p79r03",
+            "reason": "ink-touches-word-region-boundary"
+          },
+          {
+            "rowId": "p79r05",
+            "reason": "ink-touches-word-region-boundary"
+          },
+          {
+            "rowId": "p79r06",
+            "reason": "ink-touches-vertical-region-boundary"
+          },
+          {
+            "rowId": "p79r07",
+            "reason": "ink-touches-vertical-region-boundary"
+          },
+          {
+            "rowId": "p79r16",
+            "reason": "ink-touches-word-region-boundary"
+          }
+        ],
+        "opticalSurvivorRowIds": [
+          "p79r04",
+          "p79r08",
+          "p79r09",
+          "p79r10",
+          "p79r11",
+          "p79r12",
+          "p79r13",
+          "p79r14",
+          "p79r15"
+        ],
+        "opticalSurvivorCount": 9,
+        "paragraphRejectedRowIds": [],
+        "retainedRowIds": [
+          "p79r04",
+          "p79r08",
+          "p79r09",
+          "p79r10",
+          "p79r11",
+          "p79r12",
+          "p79r13",
+          "p79r14",
+          "p79r15"
+        ],
+        "retainedCount": 9,
+        "wouldRemainShortWithPerfectOptics": false
+      },
+      {
+        "page": 79,
+        "paragraph": 1,
+        "canonicalRowIds": [
+          "p79r17",
+          "p79r18",
+          "p79r19"
+        ],
+        "canonicalCount": 3,
+        "sharedHelperFailures": [],
+        "opticalSurvivorRowIds": [
+          "p79r17",
+          "p79r18",
+          "p79r19"
+        ],
+        "opticalSurvivorCount": 3,
+        "paragraphRejectedRowIds": [],
+        "retainedRowIds": [
+          "p79r17",
+          "p79r18",
+          "p79r19"
+        ],
+        "retainedCount": 3,
+        "wouldRemainShortWithPerfectOptics": false
+      },
+      {
+        "page": 79,
+        "paragraph": 2,
+        "canonicalRowIds": [
+          "p79r20",
+          "p79r21"
+        ],
+        "canonicalCount": 2,
+        "sharedHelperFailures": [],
+        "opticalSurvivorRowIds": [
+          "p79r20",
+          "p79r21"
+        ],
+        "opticalSurvivorCount": 2,
+        "paragraphRejectedRowIds": [
+          "p79r20",
+          "p79r21"
+        ],
+        "retainedRowIds": [],
+        "retainedCount": 0,
+        "wouldRemainShortWithPerfectOptics": true
+      },
+      {
+        "page": 79,
+        "paragraph": 3,
+        "canonicalRowIds": [
+          "p79r22",
+          "p79r23",
+          "p79r24",
+          "p79r25"
+        ],
+        "canonicalCount": 4,
+        "sharedHelperFailures": [
+          {
+            "rowId": "p79r22",
+            "reason": "ink-touches-vertical-region-boundary"
+          },
+          {
+            "rowId": "p79r24",
+            "reason": "ink-touches-word-region-boundary"
+          }
+        ],
+        "opticalSurvivorRowIds": [
+          "p79r23",
+          "p79r25"
+        ],
+        "opticalSurvivorCount": 2,
+        "paragraphRejectedRowIds": [
+          "p79r23",
+          "p79r25"
+        ],
+        "retainedRowIds": [],
+        "retainedCount": 0,
+        "wouldRemainShortWithPerfectOptics": false
+      }
+    ]
+  },
+  "independentPublicMetadataCrossCheck": {
+    "scope": "Separate calculation from the same three public inputs and fixed paragraph gate.",
+    "canonicalRows": 142,
+    "paragraphGroups": 20,
+    "sharedFailures": 38,
+    "paragraphExclusions": 6,
+    "retainedRows": 98,
+    "perfectOpticsFixedParagraphUpperBound": 136,
+    "perPageCountsAgree": true
+  },
+  "earlierAvailabilityComparison": {
+    "auditCompletedAtUTC": "2026-11-10T22:06:26.270431+00:00",
+    "originalWholeArtifactSha256": "01cb6c85c0705cfe1bd74a3a2bc3aabba98511063ae2a15c897aefa896e9279b",
+    "scope": "The earlier read-only audit compared the exact saved row availability and unknown reasons with the G04 first failures and frozen paragraph labels.",
+    "retainedRowIdsCompared": 98,
+    "unknownRowIdsAndReasonsCompared": 44,
+    "orderedUnknownsAndParagraphMembershipAgreeWithPublicReplay": true,
+    "originalAvailabilityArtifactRequiredToRepeatThisComparison": true,
+    "historicalAvailabilityArtifactIncludedInPublicReplay": false
+  },
+  "bottomSupportPilot": {
+    "status": "proposed-unexecuted",
+    "rowIds": [
+      "p77r30",
+      "p78r09",
+      "p78r10"
+    ],
+    "canonicalTokens": 34,
+    "inverseFields": 4,
+    "annotatedContactSides": {
+      "top": 12,
+      "left": 1,
+      "bottom": 0
+    },
+    "question": "Can lower ink contours and the eligibility of every contributing column be independently certified on these three rows?",
+    "sourceLimit": "Existing annotation records visible margins, field residue and unresolved ownership. The source pilot remains below measurement readiness."
+  },
+  "sourceReferences": [
+    {
+      "path": "analysis_outputs/continuation_20261110/batch20/G05/RESULT.json",
+      "sha256": "37009aa54d910646d6b96e70529a2b35b23f978793fb898da24782d5bde7b944"
+    },
+    {
+      "path": "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json",
+      "sha256": "e69215cd826a8fd63c588d5fe9295a71a1807278fd499b9a77cff119c48d4f53"
+    },
+    {
+      "path": "scripts/batch20_geometry.py",
+      "sha256": "e7786acc472fa3f7a294fe6391e74bd6f8840017e30d9f54941544019dbafb9a"
+    },
+    {
+      "path": "analysis_outputs/continuation_20261110/g04_source_support/RESULT.json",
+      "sha256": "4bbc7c885d59c07254cc977cffc673fad09d2bdce043282df5620e57eef97d48"
+    },
+    {
+      "path": "analysis_outputs/continuation_20261110/g04_source_support/aperture/APERTURES.json",
+      "sha256": "2140d714cb2a7a6c9ae6a910503a9df0a613c814c35e271c2f39de4dba56718d"
+    },
+    {
+      "path": "analysis_outputs/continuation_20261110/g04_source_support/aperture/VISUAL_REVIEW.json",
+      "sha256": "342e18f53cf5c30b56d6b8253c498bb70556fb28e58705fd0014faadf7a3eac1"
+    }
+  ],
+  "scopeLimits": {
+    "measuredCoverageImproved": false,
+    "fixedParagraphBoundIsConditional": true,
+    "originalFontBaselineCertified": false,
+    "generalLineShiftExclusion": false,
+    "newImageExtractionPerformed": false,
+    "originalParagraphLabelsPreserved": true
+  },
+  "activity": {
+    "newImageMeasurements": 0,
+    "newOCRCalls": 0,
+    "newResiduals": 0,
+    "newBits": 0,
+    "decoderCalls": 0,
+    "keyChecks": 0,
+    "derivations": 0,
+    "networkQueries": 0
+  }
+}

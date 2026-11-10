@@ -37,6 +37,30 @@ for (const entry of data.entries) {
     } else assert.equal(metric.operation, undefined);
     assert.equal(value, metric.value, 'Visual metric differs from its frozen result');
   }
+  if (entry.id === 'g02-joint-source-model') {
+    assert.equal(entry.diagram, 'funnel');
+    assert.equal(entry.methodId, 'batch20-g02');
+    assert.deepEqual(entry.scene, { layout: 'mirror', page: 77 });
+    assert.equal(result.testId, 'g02-joint-color-source-audit');
+    assert.equal(result.caseStatus, 'unsolved');
+    assert.equal(result.sourceModelComplete, true);
+    assert.equal(result.negativeResultClaimed, false);
+    assert.equal(result.newCipherOutputsGenerated, false);
+    assert.ok(Object.values(result.activity).every(n => n === 0));
+    const base = path.dirname(path.join(root, 'public/research', entry.source.path));
+    const inventory = fs.readFileSync(path.join(base, 'MEMBERSHIP.json'));
+    assert.equal(crypto.createHash('sha256').update(inventory).digest('hex'), result.inventory.sha256);
+    assert.equal(JSON.parse(inventory).wordRecords.length, 962);
+    const review = JSON.parse(fs.readFileSync(path.join(base, 'INDEPENDENT_VERIFICATION.json')));
+    assert.equal(review.verificationPassed, true);
+    assert.equal(review.allOrderedMetadataFieldsMatch, true);
+    assert.equal(review.primaryResultSha256, entry.source.sha256);
+    assert.equal(review.primaryInventorySha256, result.inventory.sha256);
+    assert.deepEqual(review.counts, result.counts);
+    assert.deepEqual(review.globalSelectors, result.globalSelectors);
+    assert.equal(result.globalSelectors['opposite-color'].independentAssignmentUpperBound, '8');
+    assert.equal(result.globalSelectors['source-only'].independentAssignmentUpperBound, '576460752303423488');
+  }
   if (entry.id === 't01-saved-reading-review-result') {
     assert.equal(entry.diagram, 'funnel');
     assert.equal(entry.methodId, 'batch20-t01');
