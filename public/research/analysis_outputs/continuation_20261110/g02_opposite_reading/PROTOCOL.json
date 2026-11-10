@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "testId": "g02-opposite-color-reading-review",
+  "frozenAtUTC": "2026-11-10T22:49:38.802Z",
+  "sourceHashes": {
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "sources/word-geometry-20261110.json": "e3348d0d60d3097b05d0afdb0a1fccf66409274408af9ae7a9369c37fe596e9f",
+    "analysis_outputs/continuation_20261110/g02_joint_color_audit/RESULT.json": "392903951d353d971258a578ac3b967a813e4b95a19e1991cb76d5e84ef7abe4",
+    "analysis_outputs/continuation_20261110/g02_joint_color_audit/MEMBERSHIP.json": "2c10b715873e50cb0911765d8e096cbc38094a43d8cb0aff6c9a7ea8caacca91",
+    "analysis_outputs/continuation_20261110/g02_joint_color_audit/INDEPENDENT_VERIFICATION.json": "59f3522d9525547dd83de6a48055922ec618e3ca6430e82eac980ca3f603e325",
+    "analysis_outputs/continuation_20261110/g02_joint_color_audit/REGISTRATION.json": "f703e4d79b8c675d532e5ae740bbcba4a448c26dbd3096f3c07859e453496024"
+  },
+  "scriptHashes": {
+    "scripts/g02_reading_model.py": "af127f668c8638c302af101abf4aa7ec7106f8e77d39126e59cf12e55e08ef95",
+    "scripts/verify_g02_opposite_readings.py": "62c1b512c65ea5589f378aa64850e86e8b12065181aa21efb8ae18618577f78d"
+  },
+  "scope": {
+    "selector": "opposite-color",
+    "scope": "global",
+    "pairs": [
+      [
+        76,
+        77
+      ],
+      [
+        77,
+        76
+      ],
+      [
+        78,
+        79
+      ],
+      [
+        79,
+        78
+      ]
+    ],
+    "must": 0,
+    "optional": 3,
+    "assignments": 8,
+    "optionalWordIdsInOrder": [
+      "p77r14w07",
+      "p76r14w01",
+      "p76r14w02"
+    ],
+    "orders": [
+      "forward",
+      "reverse"
+    ],
+    "modes": [
+      "words-spaced",
+      "words-joined",
+      "initials",
+      "finals"
+    ],
+    "labeledReadings": 64,
+    "deduplication": "exact UTF-8 bytes, retain all aliases"
+  },
+  "judgment": {
+    "criterion": "An exact reading supplies a coherent second message or a determinate puzzle operation grounded in its words.",
+    "reviewers": 2,
+    "reviewerContext": "Both know the puzzle and the stencil scope. Separate judgments before sharing conclusions.",
+    "surface": "Read each distinct complete output once, retaining empty and nonword outputs. Preserve exact case, punctuation and spacing.",
+    "limits": "Subjective recognition within this declared language."
+  },
+  "outcomeScope": "Whole-reading semantic review. Geometry correlations and other selectors or encodings remain open."
+}
