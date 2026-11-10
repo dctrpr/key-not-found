@@ -1,0 +1,576 @@
+{
+  "schemaVersion": 1,
+  "batchId": "keiser-global-mirror-envelope-20261110",
+  "testId": "mirror-global-envelope",
+  "title": "Global mirror boundary language audit",
+  "startedAtUTC": "2026-11-10T07:18:12.148Z",
+  "registrationCommit": "115f477f29fe7d57785276529026e92b8c9e49cb",
+  "scopeComplete": true,
+  "completeNegative": false,
+  "privateReviewRequired": true,
+  "candidateAssessment": "complete-for-saved-candidate-set",
+  "networkQueries": 0,
+  "transactions": 0,
+  "sourceHashes": {
+    "analysis_outputs/continuation_20261110/mirror_boundary_review/SOURCE_MODEL.json": "8b378d6c88f4f132af9697482ef9e49024694791bccae87d4437c367091273e6",
+    "sources/word-geometry-20261110.json": "e3348d0d60d3097b05d0afdb0a1fccf66409274408af9ae7a9369c37fe596e9f",
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "analysis_outputs/3d_article_map/article_3d_map_data.json": "22c2285a6cd53f6bdda7bdd284d556c52ff55dea0a55cd1b549acbb81443eac3",
+    "analysis_outputs/continuation_20261109/inverted_duplex/inverted_duplex.json": "4d6d029bf5f7e90acfa1d456bc94e790913c7865b923c9367212c219867742f3",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b"
+  },
+  "scriptHashes": {
+    "scripts/global_mirror_envelope.py": "61538c617f74b9ab1dde922cd263e88436eb9ccc430b2072dcc003c49a50d712",
+    "scripts/global_mirror_dag.py": "8134260ef4811830e5653a9d5294acec9b154eb9df3d11c9b558e50fe20ca12d",
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d"
+  },
+  "protocolSha256": "9c0edd8e5882ccf474c2cb59c82faeb43fa468e5ec8518e1bfe8ed2e66ebdd8e",
+  "parameters": {
+    "pairOrder": [
+      [
+        76,
+        77
+      ],
+      [
+        77,
+        76
+      ],
+      [
+        78,
+        79
+      ],
+      [
+        79,
+        78
+      ]
+    ],
+    "sameColorAndEdgeAcrossPairs": true,
+    "maskClasses": [
+      "orange",
+      "black"
+    ],
+    "wordEdges": [
+      "leftmost",
+      "rightmost"
+    ],
+    "rowOrders": [
+      "forward",
+      "reverse-entire-concatenated-row-sequence"
+    ],
+    "projections": [
+      "words-spaced",
+      "words-joined",
+      "initials"
+    ],
+    "forms": [
+      "exact",
+      "whitespace-only-compacted"
+    ],
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39"
+    ],
+    "sourceModel": "Exact frozen row word/omission choices in SOURCE_MODEL.json; no new geometry fit.",
+    "sourceModelChecks": "All 16 pair/color/edge scopes, printed row order, canonical word IDs, membership states and first/last options verified; masks retained as pinned provenance.",
+    "sourceTokenInvariant": "Every possible selected token must be a nonempty string, have an alphanumeric code point, and contain no Unicode whitespace; violation is inconclusive.",
+    "formLanguageReduction": "Compacted spaced equals joined; joined and initials contain no whitespace. Thus 24 language descriptors cover the exact/compact union. They need not be disjoint.",
+    "globalFamilies": 4,
+    "languageDescriptors": 24,
+    "globalSelectionPaths": 43347744,
+    "theoreticalLabeledReadings": 260086464,
+    "fullReadingExpansionPerformed": false,
+    "candidateSemantics": "Set union of reachable shaped records across all modeled paths/languages. No occurrence counts, unique-text counts or unique-form counts are claimed.",
+    "wifShape": "Embedded [5KL] plus Base58 characters, total 51/52.",
+    "minikeyShape": "Embedded S plus Base58 characters, total 22/30.",
+    "hexShape": "Exactly 64hex code points with realizable nonhex/start and nonhex/EOF boundaries.",
+    "bip39Tokenization": "Lowercase unfiltered ASCII lexical tokens matching [A-Za-z0-9]+ with internal straight/curly apostrophe joins; ordinary punctuation boundaries; invalid decoded group \u241e is a hard region boundary.",
+    "bip39Windows": [
+      12,
+      15,
+      18,
+      21,
+      24
+    ],
+    "maximumProductPrefixStateVisits": 2000000,
+    "maximumUniqueCandidateInsertions": 1000000,
+    "capPolicy": "Any cap exceedance makes scope incomplete and result inconclusive; partial candidates remain private and are separately assessed.",
+    "rawAsciiScalars": false,
+    "proseHashWrappers": false,
+    "networkQueries": 0,
+    "transactions": 0
+  },
+  "controls": {
+    "passed": true,
+    "dag": {
+      "passed": true,
+      "syntheticGraphCases": 846,
+      "targetInputsRead": false,
+      "targetShapeChecks": 0,
+      "targetChecksumChecks": 0,
+      "networkQueries": 0
+    },
+    "shared": {
+      "passed": true,
+      "controls": [
+        "official2048wordlist",
+        "BIP39valid-invalid",
+        "BIP39-invalid-group-barrier",
+        "BIP32-all5SLIP132-private-versions",
+        "invalid-root-parent-child-marker-scalar",
+        "BIP38-all6-structural-flag-combinations",
+        "BIP38-reserved-flags-checksum",
+        "Base58Check",
+        "Bech32-v0",
+        "Bech32m-v1",
+        "cross-checksum-version-and-invalid-padding",
+        "SEC-oncurve",
+        "WIF",
+        "minikey22and30-embedded",
+        "invalid-checksum-scalar-case-point",
+        "safe-domain-separated-output"
+      ],
+      "targetInputRead": false,
+      "targetChecks": 0,
+      "networkQueries": 0
+    },
+    "sourceOptionStructureControls": 3,
+    "targetInputsRead": false,
+    "targetShapeChecks": 0,
+    "targetChecksumChecks": 0,
+    "networkQueries": 0
+  },
+  "sourceCounts": {
+    "globalFamilies": 4,
+    "globalSelectionPaths": 43347744,
+    "theoreticalLabeledReadings": 260086464,
+    "languageDescriptors": 24,
+    "expandedFullReadings": 0,
+    "scopeCounts": [
+      {
+        "id": "orange:leftmost",
+        "color": "orange",
+        "edge": "leftmost",
+        "selectionPaths": 27095040,
+        "rowCount": 110,
+        "selectedWordsMin": 10,
+        "selectedWordsMax": 18
+      },
+      {
+        "id": "orange:rightmost",
+        "color": "orange",
+        "edge": "rightmost",
+        "selectionPaths": 15482880,
+        "rowCount": 110,
+        "selectedWordsMin": 10,
+        "selectedWordsMax": 18
+      },
+      {
+        "id": "black:leftmost",
+        "color": "black",
+        "edge": "leftmost",
+        "selectionPaths": 139968,
+        "rowCount": 110,
+        "selectedWordsMin": 8,
+        "selectedWordsMax": 15
+      },
+      {
+        "id": "black:rightmost",
+        "color": "black",
+        "edge": "rightmost",
+        "selectionPaths": 629856,
+        "rowCount": 110,
+        "selectedWordsMin": 8,
+        "selectedWordsMax": 15
+      }
+    ],
+    "sourceTokenInvariantVerified": true,
+    "candidateCountPolicy": "Unique shaped value sets only; no occurrence or unique-text/form cardinalities."
+  },
+  "negativeCriterion": "A complete zero-valid-record result excludes only the four declared literal formats from the exact registered global modeled language union at the pinned bytes. It does not calibrate scan errors, establish a creator-selected stencil, or exhaust mirror/first-word ciphers.",
+  "limitations": [
+    "The frozen source guard squares and rectangle masks are heuristic investigator conventions, not calibrated physical error bounds or creator instructions.",
+    "Independent memberships admit physically inconsistent choices. This enlarges the tested set; a weak checksum match has no implied intentionality or likelihood.",
+    "Results count unique shaped values and validated records, not expanded full readings, unique strings, occurrences or independent theories.",
+    "Other page orders, masks, selection conventions, projections, encodings and wallet interpretations remain outside this exact test."
+  ],
+  "languageChecks": [
+    {
+      "family": "orange:leftmost",
+      "rowOrder": "forward",
+      "projection": "words-spaced",
+      "complete": true,
+      "graphNodes": 368,
+      "productPrefixStateVisits": 835,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "orange:leftmost",
+      "rowOrder": "forward",
+      "projection": "words-joined",
+      "complete": true,
+      "graphNodes": 313,
+      "productPrefixStateVisits": 458,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "orange:leftmost",
+      "rowOrder": "forward",
+      "projection": "initials",
+      "complete": true,
+      "graphNodes": 57,
+      "productPrefixStateVisits": 201,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "orange:leftmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "words-spaced",
+      "complete": true,
+      "graphNodes": 432,
+      "productPrefixStateVisits": 817,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "orange:leftmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "words-joined",
+      "complete": true,
+      "graphNodes": 380,
+      "productPrefixStateVisits": 612,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "orange:leftmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "initials",
+      "complete": true,
+      "graphNodes": 71,
+      "productPrefixStateVisits": 754,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "orange:rightmost",
+      "rowOrder": "forward",
+      "projection": "words-spaced",
+      "complete": true,
+      "graphNodes": 348,
+      "productPrefixStateVisits": 1039,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "orange:rightmost",
+      "rowOrder": "forward",
+      "projection": "words-joined",
+      "complete": true,
+      "graphNodes": 296,
+      "productPrefixStateVisits": 479,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "orange:rightmost",
+      "rowOrder": "forward",
+      "projection": "initials",
+      "complete": true,
+      "graphNodes": 54,
+      "productPrefixStateVisits": 136,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "orange:rightmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "words-spaced",
+      "complete": true,
+      "graphNodes": 396,
+      "productPrefixStateVisits": 761,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "orange:rightmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "words-joined",
+      "complete": true,
+      "graphNodes": 347,
+      "productPrefixStateVisits": 571,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "orange:rightmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "initials",
+      "complete": true,
+      "graphNodes": 63,
+      "productPrefixStateVisits": 412,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "black:leftmost",
+      "rowOrder": "forward",
+      "projection": "words-spaced",
+      "complete": true,
+      "graphNodes": 258,
+      "productPrefixStateVisits": 991,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "black:leftmost",
+      "rowOrder": "forward",
+      "projection": "words-joined",
+      "complete": true,
+      "graphNodes": 225,
+      "productPrefixStateVisits": 3475,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "black:leftmost",
+      "rowOrder": "forward",
+      "projection": "initials",
+      "complete": true,
+      "graphNodes": 45,
+      "productPrefixStateVisits": 5650,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "black:leftmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "words-spaced",
+      "complete": true,
+      "graphNodes": 250,
+      "productPrefixStateVisits": 1361,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "black:leftmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "words-joined",
+      "complete": true,
+      "graphNodes": 210,
+      "productPrefixStateVisits": 2705,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 300,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "black:leftmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "initials",
+      "complete": true,
+      "graphNodes": 42,
+      "productPrefixStateVisits": 25045,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "black:rightmost",
+      "rowOrder": "forward",
+      "projection": "words-spaced",
+      "complete": true,
+      "graphNodes": 272,
+      "productPrefixStateVisits": 772,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "black:rightmost",
+      "rowOrder": "forward",
+      "projection": "words-joined",
+      "complete": true,
+      "graphNodes": 236,
+      "productPrefixStateVisits": 583,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 6,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "black:rightmost",
+      "rowOrder": "forward",
+      "projection": "initials",
+      "complete": true,
+      "graphNodes": 49,
+      "productPrefixStateVisits": 174,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "black:rightmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "words-spaced",
+      "complete": true,
+      "graphNodes": 262,
+      "productPrefixStateVisits": 691,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "black:rightmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "words-joined",
+      "complete": true,
+      "graphNodes": 219,
+      "productPrefixStateVisits": 966,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 76,
+        "hex64": 0,
+        "bip39": 0
+      }
+    },
+    {
+      "family": "black:rightmost",
+      "rowOrder": "reverse-entire-sequence",
+      "projection": "initials",
+      "complete": true,
+      "graphNodes": 45,
+      "productPrefixStateVisits": 12327,
+      "newUniqueShapes": {
+        "wif": 0,
+        "minikey": 0,
+        "hex64": 0,
+        "bip39": 0
+      }
+    }
+  ],
+  "resourceCounts": {
+    "productPrefixStateVisits": 61815,
+    "uniqueCandidateInsertions": 382,
+    "maximumProductPrefixStateVisits": 2000000,
+    "maximumUniqueCandidateInsertions": 1000000
+  },
+  "evaluation": {
+    "uniqueShapeCounts": {
+      "wif": 0,
+      "minikey": 382,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "validatorCalls": 382,
+    "validCounts": {
+      "wif": 0,
+      "minikey": 1,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "hits": [
+      {
+        "format": "minikey",
+        "fingerprint": "8e402211e9f5aac9587c39f4a38ad620c797d042f76ed75bd24dca426b1cb09a"
+      }
+    ],
+    "fingerprintRule": {
+      "algorithm": "SHA-256",
+      "domainText": "KEY404/batch20/record-fingerprint/v1",
+      "separatorHex": "00",
+      "rule": "SHA256(domain || 0x00 || ASCII(format) || 0x00 || canonical record bytes)"
+    },
+    "privateReviewRequired": true,
+    "countPolicy": "Unique candidate sets. No occurrences, expanded readings, unique texts or unique forms counted.",
+    "networkQueries": 0,
+    "rawAsciiScalarInterpretations": 0
+  },
+  "outcome": "finding-private-review-required",
+  "completedAtUTC": "2026-11-10T07:18:12.995Z"
+}

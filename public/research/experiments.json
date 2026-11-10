@@ -781,23 +781,28 @@
     {
       "id": "mirror-global-envelope",
       "title": "Global mirror boundary envelope",
-      "status": "in-progress",
+      "status": "partial",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "Registered exact candidate union across 24 graph languages representing the frozen four-pair global combinations. Four declared literal formats; fixed 2M state/1M candidate caps.",
-      "result": "Implementation and independent synthetic review complete. Protocol registered before target extraction; no target outcome yet.",
+      "scope": "Complete candidate-set union across all 24 registered global graph languages representing 43,347,744 modeled selection paths. Four declared literal formats; full readings were not expanded.",
+      "result": "382 distinct minikey-shaped strings yielded one 30-character 8-bit checksum pass. No other declared format candidate. This is a weak lead under private review, not an authenticated solution or prize; no address/history query or transaction has run.",
       "evidence": [
-        "analysis_outputs/continuation_20261110/mirror_global_envelope/PLAN.md",
+        "analysis_outputs/continuation_20261110/mirror_global_envelope/RESULT.md",
+        "analysis_outputs/continuation_20261110/mirror_global_envelope/RESULT.json",
         "analysis_outputs/continuation_20261110/mirror_global_envelope/PROTOCOL.md",
-        "analysis_outputs/continuation_20261110/mirror_global_envelope/PROTOCOL.json"
+        "analysis_outputs/continuation_20261110/mirror_global_envelope/PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/mirror_global_envelope/SOURCE_WITNESS_REVIEW.json",
+        "analysis_outputs/continuation_20261110/global_minikey_history/PROTOCOL.md"
       ],
       "reproduce": [
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/global_mirror_envelope.py --self-test"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/global_mirror_envelope.py --self-test",
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/global_mirror_envelope.py --run --protocol analysis_outputs/continuation_20261110/mirror_global_envelope/PROTOCOL.json --registration-commit 115f477f29fe7d57785276529026e92b8c9e49cb --out global-mirror-rerun"
       ],
       "limitations": [
-        "Guard bounds and center/rectangle conventions are heuristic investigator assumptions.",
-        "Global path counts are modeled combinations, not independent theories or completed key checks.",
-        "The new exact language search must pass controls and completeness caps before any exclusion."
+        "An 8-bit minikey checksum is weak evidence; a rough random-checksum benchmark expects about 1.49 passes among 382 shaped strings.",
+        "Guard bounds, rectangle masks and center conventions are heuristic investigator assumptions; independent memberships may admit physically inconsistent paths.",
+        "No address/history query has run. Prize funding, ownership, creator intent remain unverified; the reconstructed modeled witness requires uncertain boundary choices.",
+        "Modeled path counts and graph-language descriptors are not expanded full-reading checks or independent theories."
       ]
     }
   ],

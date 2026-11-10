@@ -1,6 +1,6 @@
 # KEY NOT FOUND — research corpus
 
-**Status: unsolved as of 10 November 2026.** No reproducible source-to-key extraction or authenticated prize address has been established. Max Keiser's20 BTC statement is a creator claim, not verified funding.
+**Status: unsolved as of 10 November 2026.** No authenticated prize key or prize address has been established. One weak minikey-checksum candidate is under review. Max Keiser’s 20 BTC statement remains a creator claim, not verified funding.
 
 This is a curated public copy of the Max Keiser / Bitcoin Magazine investigation. It contains the relevant source scans, public creator-post evidence, the exact 142-line body transcript, code, candidate data and bounded results. Contributor identities, private account context, local paths, private discussions and annotations have been removed. Original artwork and public creator credits remain as printed.
 
@@ -8,9 +8,13 @@ Start with [the method catalog](experiments.json), [creator clues](sources/creat
 
 ## Research is continuing
 
-The [pair-local mirror boundary envelope](analysis_outputs/continuation_20261110/mirror_boundary_review/RESULT.md) tested every registered modeled alternative: 222 distinct shaped strings, zero valid minikeys. Global concatenations remain outside that result. A new [Issue 26 first-word source branch](sources/issue26/SOURCE_REGISTER.md) has 114 visually reviewed leading-word objects and a matching publisher contents entry. The [registered first-word result](analysis_outputs/continuation_20261110/issue26_firstwords/RESULT.md) rejected all 12 distinct format-shaped strings across 1,746 distinct forms. Unreadable full-line ends remain unknown. A global mirror-envelope search is now in preparation.
+The [global mirror-envelope result](analysis_outputs/continuation_20261110/mirror_global_envelope/RESULT.md) is a weak lead: all 24 registered language checks completed, and one of 382 distinct minikey-shaped strings passed the 30-character format’s 8-bit checksum. The value stays private during review. No authenticated solution or prize is established. The next step is a read-only history check under its own preregistered protocol, alongside source-witness review. No address/history queries or transactions have run at this checkpoint.
 
-## Latest executed research
+The earlier [pair-local mirror boundary envelope](analysis_outputs/continuation_20261110/mirror_boundary_review/RESULT.md) tested every registered pair-local alternative: 222 distinct shaped strings, zero valid minikeys. Global concatenations were outside that specific result and are covered by the separate global test above.
+
+The [Issue 26 source branch](sources/issue26/SOURCE_REGISTER.md) has 114 visually reviewed leading-word objects and a matching publisher contents entry. Its [registered first-word result](analysis_outputs/continuation_20261110/issue26_firstwords/RESULT.md) rejected all 12 distinct format-shaped strings across 1,746 distinct forms. Unreadable full-line ends remain unknown.
+
+## Earlier twenty-procedure batch
 
 [Twenty registered procedures](analysis_outputs/continuation_20261110/batch20/SUMMARY.md): fifteen scoped literal/code negatives, one failed alignment screen and four inconclusive procedures. Exact completion times, frozen protocols, source hashes, outputs, code and reproduction commands are public. Mirror-first word selection remains open because source-mask boundaries are uncertain. These are procedures, not independent theories or whole families exhausted.
 
@@ -31,7 +35,7 @@ Variant, candidate, checksum and address counts are different quantities. Correl
 - Eight upright source-page web previews at `sources/pages/73.jpg` through `80.jpg`.
 - Two metadata-clean scan PDFs at the legacy filenames used by the scripts. Their image pixels are preserved; PDF wrappers and OCR metadata are deliberately rebuilt/removed.
 - Relevant historical code and text/JSON reports under their original relative paths.
-- New reproduction artifacts under `analysis_outputs/continuation_20261109/`.
+- Reproduction artifacts under `analysis_outputs/continuation_20261109/` and `analysis_outputs/continuation_20261110/`.
 - A complete 142-line numerical source ledger and timestamped read-only activity responses.
 
 Web previews are recompressed for size. Use the PDF image streams or preserved runtime page aliases for exact pixel comparisons. Old byte-level hash locks refer to original PDFs; the disclosed derivative mapping is in source provenance.

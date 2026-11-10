@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "createdAtUTC": "2026-11-10T07:37:37.598Z",
+  "status": "PASS",
+  "scriptFile": "check_global_minikey_lead.cjs",
+  "scriptSha256": "3d2948bfdeb01acbf9133cb3387da6e0972974d16cc8b32e37bdb99c4cfdb8b3",
+  "classifierChecks": 19,
+  "publicSummaryAndFingerprintChecks": 6,
+  "mockErrorChecks": 5,
+  "syntheticRequestCalls": 10,
+  "syntheticMaximumConcurrency": 2,
+  "retriesInErrorMocks": 0,
+  "selfTest": {
+    "passed": true,
+    "independentPythonChecks": 32,
+    "controlAddressSets": 2,
+    "targetInputRead": false,
+    "addressQueries": 0
+  },
+  "staticReview": {
+    "protocol": "Validates fixed test/fingerprint/type/provider scope, 10 maximum requests, 2 concurrency maximum, zero retries, exact three scripts plus global result and lockfile, expected dependency versions, byte hashes and Git registration-object equality",
+    "targetSelection": "Private-mode input, private new output directory, exactly one deduplicated fingerprint match, exact 30-character valid minikey before derivation",
+    "implementationAgreement": "Python and Node ordered type/address arrays require exact equality before constructing requests",
+    "requests": "Exactly two registered providers for each of five formats; pinned audit.mapTwo has maximum two workers; no retry path",
+    "classification": "Any valid positive transaction evidence requires private review; errors, malformed stats, wrong providers, duplicate providers, missing scope, and inconsistent flags cannot become zero",
+    "publicOutput": "Explicit query/statistic allowlists, no addresses; summary rejects candidate, bare SHA256(candidate), and every derived address before persistence; CLI emits safe counts/outcome only"
+  },
+  "fixes": [
+    "Required exact registered provider pair and independently revalidated numeric statistics before zero classification",
+    "Derived activity from validated statistics; missing/inconsistent flags cannot yield zero",
+    "Explicit public statistics, type, provider, timestamp, and HTTP status allowlists",
+    "Required concurrencyMaximum=2 and exact before/after 10-request accounting"
+  ],
+  "limitations": [
+    "No protocol file exists yet, so registration validation was reviewed statically only; no Git command or target mode was run",
+    "Mock requests do not validate live provider availability or returned blockchain data",
+    "Only the requested checker script was modified publicly"
+  ],
+  "targetInputRead": false,
+  "targetDerivations": 0,
+  "liveAddressQueries": 0,
+  "walletActions": 0,
+  "gitCommands": 0
+}

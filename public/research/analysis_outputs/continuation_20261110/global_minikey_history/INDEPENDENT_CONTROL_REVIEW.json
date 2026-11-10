@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "createdAtUTC": "2026-11-10T07:31:05.380734+00:00",
+  "status": "PASS",
+  "implementationFile": "independent_address_math.py",
+  "implementationSha256": "fe61a053bb5f3622a47c7de3631a7f774b630b04b7a6af3c369d4a4c82fc25fc",
+  "referenceScriptSha256": "189c6f359a057021adbc060ddeaa8caa29e6f58c40a6976daeda62025d2182f0",
+  "controlMaterial": "published-30-character-minikey-example-and-synthetic-scalar-one-only",
+  "controlSets": 2,
+  "addressFormatsPerControl": 5,
+  "independentAddressMatches": 10,
+  "frozenPublicControlAddressMapSha256": "87f5a6071133b0dd8b2917bad185c3e35a826a97eb89829954e7147aeb229ab2",
+  "pythonSelfTest": {
+    "status": "PASS",
+    "checksPassed": 32,
+    "controlSets": 2,
+    "addressFormatsPerControl": 5,
+    "addressVectorsMatched": 10,
+    "targetInputRead": false,
+    "addressQueries": 0
+  },
+  "guardValidation": {
+    "schemaChecks": 7,
+    "argumentGuardChecks": 5,
+    "publicPathGuards": 1,
+    "status": "PASS"
+  },
+  "versions": {
+    "node": "v24.19.0",
+    "bitcoinjs": "7.0.0",
+    "tinySecp": "2.2.4",
+    "python": "3.9.6"
+  },
+  "implementation": {
+    "dependencies": "Python standard library only; hashlib SHA-256 and RIPEMD-160",
+    "curve": "secp256k1 affine modular arithmetic; byte-wise double/add, independent of tiny-secp256k1",
+    "base58": "own mainnet Base58Check encoder; double-SHA256 checksum",
+    "segwit": "own BIP173 Bech32 for v0 and BIP350 Bech32m for v1",
+    "taproot": "even-Y lift of x-only internal public key; BIP341 tagged TapTweak; no script-tree root; reject out-of-range tweak and infinity",
+    "secretHandling": "Transient digest in memory only; never serialize or print private scalar/minikey; mutable digest buffer cleared best-effort"
+  },
+  "coverage": [
+    "22/30-character shape gates",
+    "published positive 30-character minikey checksum",
+    "invalid prefix/alphabet/length/checksum rejection",
+    "curve identity/inverse/order controls",
+    "private scalar zero/order/length rejection",
+    "scalar-one generator and known P2PKH addresses",
+    "Taproot odd/even-Y normalization equivalence from the scalar-one public point",
+    "10 address comparisons against Node reference",
+    "SegWit checksum-domain verification",
+    "CLI self-test output and argument/schema/private-path guards"
+  ],
+  "limitations": [
+    "No positive 22-character minikey control was derived because only the registered 30-character example and scalar-one controls were authorized",
+    "Not a complete cryptographic implementation audit or exhaustive generic address decoder test",
+    "Python affine arithmetic is variable-time; Python/OpenSSL do not guarantee complete memory zeroization",
+    "Private target input/output CLI branch deliberately not exercised before root preregistration",
+    "Rare TapTweak out-of-range/infinity rejection branches are implemented but no forced fault-injection tests were run"
+  ],
+  "targetInputRead": false,
+  "targetDerivations": 0,
+  "addressQueries": 0,
+  "walletActions": 0,
+  "networkActionsByHelper": 0,
+  "specificationReferences": [
+    "https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki",
+    "https://github.com/bitcoin/bips/blob/master/bip-0350.mediawiki",
+    "https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki",
+    "https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki",
+    "https://github.com/bitcoin/bips/blob/master/bip-0086.mediawiki"
+  ]
+}
