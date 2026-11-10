@@ -212,6 +212,26 @@ function App() {
         ? researchPath(path)
         : path;
 
+  // A fresh #film URL can arrive before React has inserted the section.
+  // Wait for the page's type to settle, then land below the sticky header.
+  useEffect(() => {
+    if (window.location.hash !== "#film") return;
+    let cancelled = false;
+    void document.fonts.ready.then(() => {
+      if (cancelled || window.location.hash !== "#film") return;
+      const target = document.getElementById("film");
+      if (!target) return;
+      const headerHeight = document.querySelector("header")?.getBoundingClientRect().height ?? 0;
+      window.scrollTo({
+        top: window.scrollY + target.getBoundingClientRect().top - headerHeight,
+        behavior: "instant",
+      });
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   useEffect(() => {
     if (!toast) return;
     const timeout = setTimeout(() => setToast(""), 3200);
