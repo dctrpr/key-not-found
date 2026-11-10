@@ -809,6 +809,28 @@
         "Guard bounds and source memberships are investigator assumptions. The matching modeled witness requires uncertain boundary choices and does not authenticate creator intent.",
         "No authenticated prize address or solution has been established."
       ]
+    },
+    {
+      "id": "issue27-frozen-stream-coverage",
+      "title": "Issue 27 saved-reading validator coverage",
+      "status": "in-progress",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "The exact 1,940 previously saved Orange Party readings and their pre-existing character reversals; four literal formats, fixed source/code pins and resource bounds.",
+      "result": "Registered replay is being prepared before target checks. The old checker omitted embedded minikey and BIP39 coverage for this corpus; no new target result is claimed.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/issue27_stream_coverage/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/issue27_stream_coverage/PROTOCOL.json",
+        "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/SOURCE_REGISTER.md"
+      ],
+      "reproduce": [
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/issue27_stream_coverage.py --self-test"
+      ],
+      "limitations": [
+        "A validator-coverage replay of existing correlated readings, not a new cipher theory.",
+        "Frozen OCR and printed-line conventions are not repaired or independently authenticated by this replay.",
+        "A zero applies only to four literal formats in the registered readings; a format-valid value requires private review."
+      ]
     }
   ],
   "countingPolicy": "This is a curated set of method families/source audits, not a total count of independent theories. Historical administrative gates and correlated variants are not counted as independent experiments. Falsified means only the concrete stated candidate/address scope.",

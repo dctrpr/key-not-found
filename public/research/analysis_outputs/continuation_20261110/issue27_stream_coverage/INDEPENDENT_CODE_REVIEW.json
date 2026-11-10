@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "passed": true,
+  "reviewedCodeSha256": "97cace8ee5f9b2707cc1344c08e46e068db327edc504a8625fb825481261422b",
+  "scope": "Static and synthetic controls only; no target verification, reading extraction or target checksum search.",
+  "semanticIndependence": {
+    "importsPrimaryScanner": false,
+    "base58": "independent positional decoder",
+    "bip39": "integer packed checksum versus primary bit-string implementation",
+    "lexer": "manual ASCII/apostrophe lexer versus primary regex",
+    "hex": "maximal run scanner versus primary boundary regex"
+  },
+  "checks": {
+    "selfTest": {
+      "status": "PASS",
+      "controlFamilies": [
+        "published-minikey30",
+        "bounded-synthetic-minikey22",
+        "published-scalar-one-WIF-compressed-uncompressed",
+        "WIF-invalid-version-marker-checksum-scalars",
+        "hex-boundaries-and-scalar-range",
+        "BIP39-all-five-lengths",
+        "BIP39-unfiltered-five-barriers",
+        "independent-positive-fingerprints",
+        "deterministic-counts",
+        "safe-output"
+      ],
+      "validControlRecords": 10,
+      "formats": [
+        "wif",
+        "minikey",
+        "hex64",
+        "bip39"
+      ],
+      "syntheticSourceComparisonRecords": 3880,
+      "lexicalOracleCases": 5,
+      "targetInputsRead": false,
+      "targetShapeScans": 0,
+      "targetChecksumValidations": 0,
+      "networkQueries": 0
+    },
+    "syntheticFullEvaluationComparisons": 200,
+    "syntheticShapeCounterComparisons": 2556,
+    "randomLexicalOracleComparisons": 1500,
+    "unicodeWhitespaceEquivalenceCodepoints": 1114112,
+    "syntheticSourceEqualityRecords": 3880,
+    "savedRecordMutationsRejected": 8,
+    "scalarAndWifBoundaryComparisons": 28,
+    "positiveOutputPrivacy": true
+  },
+  "findings": [],
+  "notes": [
+    "Exact saved-record equality rejects omission, added fields, reordering and metadata drift.",
+    "Full evaluation equality includes counts, positive/negative outcomes, canonical fingerprints, metadata and scope flags.",
+    "The verifier checks the pinned primary bytes directly; protocol/Git registration gates remain enforced by the primary adapter and root registration procedure.",
+    "Portability change selects adjacent hash-pinned support files before the original private staging fallback."
+  ],
+  "targetTextReads": 0,
+  "targetShapeScans": 0,
+  "targetChecksumValidations": 0,
+  "networkQueries": 0,
+  "audit": {
+    "targetOpens": 0,
+    "networkEvents": 0,
+    "subprocessEvents": 0
+  },
+  "sourceFilesModified": false,
+  "completedAtUTC": "2026-11-10T09:12:24.027790Z"
+}

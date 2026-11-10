@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "controlFamilies": [
+    "published-minikey30",
+    "bounded-synthetic-minikey22",
+    "published-scalar-one-WIF-compressed-uncompressed",
+    "WIF-invalid-version-marker-checksum-scalars",
+    "hex-boundaries-and-scalar-range",
+    "BIP39-all-five-lengths",
+    "BIP39-unfiltered-five-barriers",
+    "independent-positive-fingerprints",
+    "deterministic-counts",
+    "safe-output"
+  ],
+  "validControlRecords": 10,
+  "formats": [
+    "wif",
+    "minikey",
+    "hex64",
+    "bip39"
+  ],
+  "syntheticSourceComparisonRecords": 3880,
+  "lexicalOracleCases": 5,
+  "targetInputsRead": false,
+  "targetShapeScans": 0,
+  "targetChecksumValidations": 0,
+  "networkQueries": 0,
+  "verifierSha256": "97cace8ee5f9b2707cc1344c08e46e068db327edc504a8625fb825481261422b",
+  "previousVerifierSha256": "eb4434d2868d1133855007f7b90b1dbf71025ac90609bfba2d9aa260ba744c32",
+  "createdAtUTC": "2026-11-10T09:09:45.982529+00:00",
+  "supportLocationControls": {
+    "privateFallback": "PASS",
+    "publicSiblingLayoutPrivateFixture": "PASS"
+  }
+}

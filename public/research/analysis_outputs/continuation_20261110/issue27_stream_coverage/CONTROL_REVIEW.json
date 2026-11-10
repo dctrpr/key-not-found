@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "adapterSha256": "7e045510592b19bc1399ca896cd19d601f3a9fc6fee8e8306a1d4115cf812e61",
+  "controls": {
+    "passed": true,
+    "controls": [
+      "shared-format-controls",
+      "exact-and-codepoint-reversal",
+      "empty-palindrome-Unicode-whitespace-deduplication",
+      "BIP39-unknown-numeric-apostrophe-missing-group-barriers",
+      "BIP39-case-and-punctuation",
+      "safe-result-allowlist",
+      "protocol-byte-registration-guards-with-synthetic-mocks"
+    ],
+    "shared": {
+      "passed": true,
+      "controls": [
+        "official2048wordlist",
+        "BIP39valid-invalid",
+        "BIP39-invalid-group-barrier",
+        "BIP32-all5SLIP132-private-versions",
+        "invalid-root-parent-child-marker-scalar",
+        "BIP38-all6-structural-flag-combinations",
+        "BIP38-reserved-flags-checksum",
+        "Base58Check",
+        "Bech32-v0",
+        "Bech32m-v1",
+        "cross-checksum-version-and-invalid-padding",
+        "SEC-oncurve",
+        "WIF",
+        "minikey22and30-embedded",
+        "invalid-checksum-scalar-case-point",
+        "safe-domain-separated-output"
+      ],
+      "targetInputRead": false,
+      "targetChecks": 0,
+      "networkQueries": 0
+    },
+    "syntheticSubmittedRecords": 6,
+    "syntheticUniqueForms": 6,
+    "mnemonicBarrierCases": 4,
+    "syntheticProtocolGuards": 5,
+    "targetInputsRead": false,
+    "targetRecordChecks": 0,
+    "networkQueries": 0,
+    "transactions": 0
+  },
+  "runtimeMonitor": {
+    "targetOpenAttempts": 0,
+    "subprocessAttempts": 0,
+    "networkAttempts": 0
+  },
+  "targetRunInvocations": 0,
+  "sourceFilesModified": false,
+  "scope": "Monitored import/list/self-test; target inputs, subprocesses and network prohibited."
+}
