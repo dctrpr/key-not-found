@@ -51,5 +51,18 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "key404-casefile.vercel.app"
+        }
+      ],
+      "destination": "https://keynotfound.com/:path*",
+      "permanent": true
+    }
   ]
 }

@@ -20,6 +20,7 @@ import {
   Search,
   X,
 } from "lucide-react";
+import ExplainerFilm from "./components/ExplainerFilm";
 import PublicChat from "./components/PublicChat";
 import ResearchMapView from "./components/ResearchMap";
 import RepositoryActivity from "./components/RepositoryActivity";
@@ -510,6 +511,8 @@ function App() {
             </a>
           </div>
         </section>
+
+        <ExplainerFilm />
 
         <section className="roles" id="roles" aria-labelledby="roles-title">
           <div className="roles-head">

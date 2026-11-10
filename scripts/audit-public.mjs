@@ -15,7 +15,7 @@ const excluded = new Set([
   "playwright-report",
 ]);
 const textExtensions =
-  /\.(md|txt|json|jsonl|js|mjs|cjs|ts|tsx|jsx|css|html|py|swift|yml|yaml|csv|tsv|xml|svg)$/i;
+  /\.(md|txt|json|jsonl|js|mjs|cjs|ts|tsx|jsx|css|html|py|swift|yml|yaml|csv|tsv|xml|svg|vtt)$/i;
 const checks = [
   ["personal home directory", /(?:\/Users\/|\/home\/)[^\s/"'<>]+\//g],
   ["Windows personal directory", /[A-Z]:\\Users\\[^\\\s]+\\/gi],

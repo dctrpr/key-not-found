@@ -56,3 +56,9 @@ The marked-copy identity keeps the fluorescent marker and original magazine imag
 ## 10 November 2026 — An independent investigation
 
 The site, sharing metadata and launch description now use the founder’s first-person voice. The files, tests and updates are public, and help is optional. Leads, corrections and independent tests remain welcome. Funding copy states who runs the research and who makes the recovered-prize buyback commitment. No research result, token status or allocation changed.
+
+## 10 November 2026 — A film by Fable
+
+Fable 5.2 Max directly authored a 62-second film, its procedural score, the Swift renderer, captions, transcript and site player. The article’s actual printed characters become a flock, return to the scans and illustrate recorded readings before the public-work and planned-funding explanation. The player is opt-in, with a download and written alternative. Source and reproduction instructions are in `scripts/explainer/`. The film is a 10 November snapshot; the ledger remains the current record. No research result, token status or buyback allocation changed.
+
+The project’s primary domain is now https://keynotfound.com. The www name and original Vercel address redirect to it. The launch-kit website link and sharing metadata use the new domain.

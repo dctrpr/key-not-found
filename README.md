@@ -6,6 +6,7 @@ My independent investigation into the Bitcoin Magazine puzzle Max Keiser describ
 
 ## Start here
 
+- [The film](https://keynotfound.com/#film): a 62-second explanation, with [reproducible source](scripts/explainer/README.md), captions and a transcript.
 - [Research corpus](public/research/README.md): scans, public clues, source register, historical reports, code, and exact test outputs.
 - [Research map and live update flow](RESEARCH_MAP.md): four branches, linked notes, and the contribution-to-publication path.
 - [Experiment register](public/research/experiments.json): scoped results and open leads.
@@ -46,7 +47,7 @@ For the historical research environment, follow `public/research/REPRODUCE.md` f
 
 ## Publish an update
 
-Production: https://key404-casefile.vercel.app
+Production: https://keynotfound.com
 
 The initial release uses the authenticated Vercel CLI. Automatic Git deployments are not configured: the Vercel account first needs its GitHub login connection linked by the account owner. After that connection is configured, connect this repository to the `key404-casefile` project with `main` as its production branch.
 
