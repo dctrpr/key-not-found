@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "reviewKind": "Third independent blinded source-pixel gutter recheck",
+  "scope": "Printed page 81 / source page 4, col1_top first four physical rows only. No frozen source text or another review manifest was opened before or after this read.",
+  "sourcePath": "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_04.jpg",
+  "sourceSha256": "60da7f7ed64764e8c9bb347bce163eb2f8dc4c4ad20abbd00182bced3ad3343a",
+  "blindedToFrozenRows": true,
+  "otherManifestsRead": false,
+  "frozenComparisonPerformed": false,
+  "countPolicy": "Word counts were counted manually from visible physical word separations as explicitly requested, without automated tokenization, stride extraction or key-format checks.",
+  "rows": [
+    {
+      "physicalRow": 1,
+      "status": "readable",
+      "printedText": "El Salvador’s gang violence problem",
+      "visualWordCount": 5,
+      "wordCountCertain": true,
+      "pixelReadableText": "El Salvador’s gang violence problem",
+      "contextCandidateText": null,
+      "uncertainSpans": [],
+      "assessment": "The initial El is low contrast and soft, but the E bars and following l remain identifiable. The remainder is clear. There is no printed period after problem."
+    },
+    {
+      "physicalRow": 2,
+      "status": "uncertain",
+      "printedText": null,
+      "visualWordCount": 8,
+      "wordCountCertain": true,
+      "pixelReadableTemplate": "[uncertain initial]ill be dead soon. It’ll shock folks at",
+      "contextCandidateText": "will be dead soon. It’ll shock folks at",
+      "uncertainSpans": [
+        {
+          "location": "first word, initial w-shaped glyph",
+          "contextCandidate": "w",
+          "pixelObservation": "The initial dark mass and width support will as a lexical reading, but the individual w strokes are merged by gutter softness; they are not secure enough to certify an exact character independently. The following ill and the word boundary are distinguishable.",
+          "promotedToExactText": false
+        }
+      ],
+      "assessment": "The rest of the row is readable, including the apostrophe in It’ll. Eight separate visual words are certain; no frozen text was consulted."
+    },
+    {
+      "physicalRow": 3,
+      "status": "uncertain",
+      "printedText": null,
+      "visualWordCount": 7,
+      "wordCountCertain": true,
+      "pixelReadableTemplate": "[uncertain initial prefix]e New York Times rooting for the",
+      "contextCandidateText": "the New York Times rooting for the",
+      "uncertainSpans": [
+        {
+          "location": "first word, initial th prefix",
+          "contextCandidate": "th",
+          "pixelObservation": "The first word is visibly present and ends in e. Its initial strokes are strongly softened/merged. The natural lexical reading is the, but I cannot independently certify both t and h from the retained pixels.",
+          "promotedToExactText": false
+        }
+      ],
+      "assessment": "New York Times rooting for the is clear. Seven separate visual words are certain."
+    },
+    {
+      "physicalRow": 4,
+      "status": "uncertain",
+      "printedText": null,
+      "visualWordCount": 4,
+      "wordCountCertain": true,
+      "pixelReadableTemplate": "[uncertain initial prefix]rrorists. Already, deadly violence",
+      "contextCandidateText": "terrorists. Already, deadly violence",
+      "uncertainSpans": [
+        {
+          "location": "first word, initial te prefix",
+          "contextCandidate": "te",
+          "pixelObservation": "The beginning of the word is gutter-softened. The suffix rrorists. is readable, and terrorists is the natural lexical reading; the first one or two letters are not individually secure enough for exact transcription.",
+          "promotedToExactText": false
+        }
+      ],
+      "assessment": "Already, deadly violence is clear. Four separate visual words are certain."
+    }
+  ],
+  "summary": {
+    "fullyReadableRows": 1,
+    "uncertainExactPrefixRows": 3,
+    "visualWordCounts": [
+      5,
+      8,
+      7,
+      4
+    ],
+    "visualWordCountsCertain": true,
+    "contextCandidatesPromoted": false,
+    "missingPhysicalRowsObserved": 0,
+    "mergedPhysicalRowsObserved": 0
+  },
+  "conclusion": "The scan supports the four word counts and plausible lexical readings, but it does not provide sufficiently distinct initial glyphs for this reviewer to certify exact bytes for the first words of rows 2–4. Preserve these uncertainties unless an independently clearer source resolves them.",
+  "automatedTokenization": false,
+  "strideExtraction": false,
+  "keyFormatChecks": 0,
+  "derivations": 0,
+  "networkQueries": 0,
+  "completedAtUTC": "2026-11-10T09:49:56.859075Z"
+}

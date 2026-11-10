@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "verifierSha256": "1f482648945fe1508a211628ba7ec826c23cdbeed317bbf05426595b5be1ebae",
+  "syntaxParsed": true,
+  "stdlibImportsOnly": true,
+  "importsPrimaryOrSharedScanner": false,
+  "pinnedIndependentEvaluatorSha256": "97cace8ee5f9b2707cc1344c08e46e068db327edc504a8625fb825481261422b",
+  "bodySha256": "783cc6676edf9b135d1eeff04d8bf8636088c1334f9e983f0d9f07dc579bff27",
+  "policySha256": "5c6d4a7b406f99515b1bb16c7f7874df6444c64c3be2e6a32c0798ac08e0d1e5",
+  "expectedSourceHashes": {
+    "analysis_outputs/continuation_20261110/issue27_body_source/BODY_ROWS.json": "783cc6676edf9b135d1eeff04d8bf8636088c1334f9e983f0d9f07dc579bff27",
+    "analysis_outputs/continuation_20261110/issue27_stride12/POLICY_PROPOSAL.json": "5c6d4a7b406f99515b1bb16c7f7874df6444c64c3be2e6a32c0798ac08e0d1e5",
+    "analysis_outputs/continuation_20261109/george_sand_issue27/printed_lines_and_streams.json": "f5f441345ebe411ee769cdcb624c0717a2b4f790b7eadc50d10dc12d37da07bb",
+    "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_01.jpg": "d4cca9f4326ba21a959551e8537596846bccdea42efe37f463506cd2d423fb8c",
+    "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_02.jpg": "e18e02e521444c9ea760c6e1d80a39bbee08d65a7839e970629ab81b4fd83610",
+    "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_03.jpg": "b7f120860b1a76aa6ba97c836bb56388477ee8878665d75414098f9b8a38a1b5",
+    "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_04.jpg": "60da7f7ed64764e8c9bb347bce163eb2f8dc4c4ad20abbd00182bced3ad3343a",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b"
+  },
+  "requiredScriptPinPaths": [
+    "scripts/issue27_stride12.py",
+    "scripts/batch20_common.py",
+    "scripts/verify_issue27_stride12.py",
+    "scripts/verify_issue27_saved.py"
+  ],
+  "contract": {
+    "tokenFields": [
+      "tokenIndex0",
+      "rowId",
+      "withinRowIndex0",
+      "text",
+      "uncertainForProjections"
+    ],
+    "readingsFields": [
+      "id",
+      "direction",
+      "phase",
+      "projection",
+      "selectedTokenCount",
+      "sourceCompleteForProjection",
+      "uncertainSelectedTokens",
+      "text"
+    ],
+    "recordOrder": "forward then reverse; phases1..12; words/initials/finals",
+    "phaseMeaning": "zero-based offset is phase minus1; reverse entire global token array before phase selection",
+    "sourceExpectations": {
+      "bodyRows": 312,
+      "bodyTokenCount": 2018,
+      "uncertainTokens": 3
+    }
+  },
+  "caps": {
+    "tokens": 5000,
+    "readings": 72,
+    "forms": 144,
+    "submittedAndUniqueFormCodePoints": 250000
+  },
+  "argumentGuards": 4,
+  "resourceGuards": 2,
+  "controlMonitor": {
+    "targetOpenAttempts": 0,
+    "prohibitedImportAttempts": 0,
+    "subprocessAttempts": 0,
+    "networkAttempts": 0
+  },
+  "targetVerificationInvocations": 0,
+  "targetTokenizations": 0,
+  "targetStrideSelections": 0,
+  "targetChecksumChecks": 0,
+  "gitCommands": 0,
+  "publicWrites": 0,
+  "networkQueries": 0
+}

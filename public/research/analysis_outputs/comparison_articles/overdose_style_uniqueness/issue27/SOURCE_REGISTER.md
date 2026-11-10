@@ -28,3 +28,8 @@ No OCR, retranscription, cipher scan, key check, derivation or network query was
 ## Rights
 
 Article: **Max Keiser**. Printed issue: **Bitcoin Magazine**. Existing printed credits and source pixels are preserved. Third-party text, illustrations, layout and photographs retain their copyrights. Redistribution permission is unverified; this packet grants no reuse rights. See the existing [rights policy](../../../../DATA_LICENSE.md).
+
+
+## Subsequent body review
+
+A [separate full body-row model](../../../continuation_20261110/issue27_body_source/SOURCE.md) now records 312 inspected rows, 68 row corrections including typography, two punctuation uncertainties and three uncertain word prefixes. The original frozen artifacts and their hashes above remain unchanged. The reviewed source is a new input with its own hash and limitations; this does not retroactively widen the earlier replay’s coverage.

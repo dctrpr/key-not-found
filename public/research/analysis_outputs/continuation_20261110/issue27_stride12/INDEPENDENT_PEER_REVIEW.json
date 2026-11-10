@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "scope": "Static review and synthetic cross-implementation controls only; primary author reviewed independent contract, not target outputs.",
+  "codeHashes": {
+    "primary": "84a061444a73fbedc14f8068f8d3cce1fb7ef990b4bef65181e78f234dcbfd01",
+    "independent": "1f482648945fe1508a211628ba7ec826c23cdbeed317bbf05426595b5be1ebae"
+  },
+  "independentSelfTest": {
+    "status": "PASS",
+    "controls": [
+      "literal-18-wrapper-policy",
+      "ASCII-whitespace-only",
+      "no-join-no-dedup-case-preservation",
+      "full-reversal-before-phase",
+      "phase1-to12",
+      "no-row-page-resets",
+      "projection-specific-source-uncertainty",
+      "whole-reading-strict-subset",
+      "72-empty-and-duplicate-records",
+      "actual-positive-independent-validation",
+      "exact-JSON-types-and-order"
+    ],
+    "independentEvaluatorControls": {
+      "status": "PASS",
+      "controlFamilies": [
+        "published-minikey30",
+        "bounded-synthetic-minikey22",
+        "published-scalar-one-WIF-compressed-uncompressed",
+        "WIF-invalid-version-marker-checksum-scalars",
+        "hex-boundaries-and-scalar-range",
+        "BIP39-all-five-lengths",
+        "BIP39-unfiltered-five-barriers",
+        "independent-positive-fingerprints",
+        "deterministic-counts",
+        "safe-output"
+      ],
+      "validControlRecords": 10,
+      "formats": [
+        "wif",
+        "minikey",
+        "hex64",
+        "bip39"
+      ],
+      "syntheticSourceComparisonRecords": 3880,
+      "lexicalOracleCases": 5,
+      "targetInputsRead": false,
+      "targetShapeScans": 0,
+      "targetChecksumValidations": 0,
+      "networkQueries": 0
+    },
+    "syntheticReadings": 72,
+    "targetInputsRead": false,
+    "targetTokenizations": 0,
+    "targetStrideSelections": 0,
+    "targetChecksumChecks": 0,
+    "networkQueries": 0
+  },
+  "syntheticLiteralChunkComparisons": 1000,
+  "syntheticFullTokenReadingComparisons": 200,
+  "findings": [],
+  "notes": [
+    "Manual splitter/wrapper walk and explicit index loop are semantically independent of primary regex/strip/slice implementation.",
+    "Exact JSON-type equality rejects booleans substituted for ordinals and compares complete saved tokens/readings, both evaluations and completion flags.",
+    "No target source, token, reading or result files were opened."
+  ],
+  "audit": {
+    "targetOpens": 0,
+    "subprocessEvents": 0,
+    "networkEvents": 0
+  },
+  "networkQueries": 0,
+  "completedAtUTC": "2026-11-10T10:12:39.816233Z"
+}

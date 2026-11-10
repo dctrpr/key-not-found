@@ -1,0 +1,290 @@
+{
+  "version": 1,
+  "batchId": "keiser-issue27-body-stride12-20261110",
+  "test": {
+    "id": "issue27-body-stride12",
+    "title": "Issue27 repaired body model: every twelfth literal chunk",
+    "family": "fixed-stride-source-model",
+    "branchId": "text-lines",
+    "inputPaths": [
+      "analysis_outputs/continuation_20261110/issue27_body_source/BODY_ROWS.json",
+      "analysis_outputs/continuation_20261109/george_sand_issue27/printed_lines_and_streams.json",
+      "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_01.jpg",
+      "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_02.jpg",
+      "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_03.jpg",
+      "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_04.jpg",
+      "scripts/batch20_support/english.txt",
+      "scripts/batch20_support/controls.json",
+      "analysis_outputs/continuation_20261110/issue27_stride12/POLICY_PROPOSAL.json"
+    ],
+    "implementationPaths": [
+      "scripts/issue27_stride12.py",
+      "scripts/batch20_common.py",
+      "scripts/verify_issue27_stride12.py",
+      "scripts/verify_issue27_saved.py"
+    ],
+    "policySha256": "5c6d4a7b406f99515b1bb16c7f7874df6444c64c3be2e6a32c0798ac08e0d1e5",
+    "policy": {
+      "modelId": "issue27-physical-chunks-stride12-v1",
+      "tokenization": {
+        "rowTraversal": "Existing conventional source order, page then frozen region then physical row; no row, region, page or paragraph reset.",
+        "splitRegex": "[ \\t\\r\\n\\f\\v]+",
+        "keepChunkPredicate": "Contains at least one ASCII A-Z, a-z or 0-9, tested before wrapper stripping.",
+        "outerWrapperCharacters": [
+          "!",
+          "\"",
+          "'",
+          "(",
+          ")",
+          ",",
+          ".",
+          ":",
+          ";",
+          "?",
+          "[",
+          "]",
+          "{",
+          "}",
+          "\u2018",
+          "\u2019",
+          "\u201c",
+          "\u201d"
+        ],
+        "outerWrapperCodepoints": [
+          "U+0021",
+          "U+0022",
+          "U+0027",
+          "U+0028",
+          "U+0029",
+          "U+002C",
+          "U+002E",
+          "U+003A",
+          "U+003B",
+          "U+003F",
+          "U+005B",
+          "U+005D",
+          "U+007B",
+          "U+007D",
+          "U+2018",
+          "U+2019",
+          "U+201C",
+          "U+201D"
+        ],
+        "stripRule": "Repeatedly remove only members of outerWrapperCharacters from the beginning and end. Do not remove any interior character. Retain the remaining chunk exactly.",
+        "literalRetentions": [
+          "Internal periods and apostrophes",
+          "All hyphens, including physical row-ending hyphens",
+          "All censor asterisks",
+          "All slash characters, including a row-ending slash",
+          "Currency symbols, including a leading dollar sign"
+        ],
+        "forbidden": [
+          "Hard-wrap joining",
+          "Unicode normalization",
+          "Case conversion",
+          "BIP39 word filtering",
+          "Letter-only filtering",
+          "Punctuation deletion beyond the registered outer-wrapper rule",
+          "Reversing characters inside tokens",
+          "Guessed letters or wildcard expansion"
+        ]
+      },
+      "selection": {
+        "directions": [
+          "forward",
+          "reverse-token-order"
+        ],
+        "phasesZeroBased": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "stride": 12,
+        "rule": "For the direction-specific token sequence T, select T[p], T[p+12], T[p+24], ... while in range. Reverse means reverse the entire token sequence before applying this rule. No other reset or reversal."
+      },
+      "projections": {
+        "words": "Join selected cleaned chunks in order with exactly one U+0020 ASCII space.",
+        "initials": "Concatenate the first remaining Unicode character of every selected cleaned chunk.",
+        "finals": "Concatenate the last remaining Unicode character of every selected cleaned chunk."
+      },
+      "projectionTerminology": "Initials/finals are literal first/last core glyphs, not inferred linguistic word letters. Thus final hyphens, censor stars and slash characters remain possible. This is one declared model, not a test of all linguistic letter policies.",
+      "sourceUncertainty": {
+        "executionModel": "Execute the single frozen repaired-OCR model, retaining the unchanged prior strings in the three uncertain leading-word spans. No branch over alternative spellings.",
+        "uncertainTokens": [
+          {
+            "sourcePage": 4,
+            "printedPage": 81,
+            "region": "col1_top",
+            "line": 2,
+            "physicalChunk": "First chunk containing ASCII alphanumeric characters in that row",
+            "uncertainty": "Leading glyph/prefix not source-certified; word boundary/count and terminal glyph are source-certified by the independent third review.",
+            "unknownForProjections": [
+              "words",
+              "initials"
+            ],
+            "knownForProjections": [
+              "finals"
+            ]
+          },
+          {
+            "sourcePage": 4,
+            "printedPage": 81,
+            "region": "col1_top",
+            "line": 3,
+            "physicalChunk": "First chunk containing ASCII alphanumeric characters in that row",
+            "uncertainty": "Leading glyph/prefix not source-certified; word boundary/count and terminal glyph are source-certified by the independent third review.",
+            "unknownForProjections": [
+              "words",
+              "initials"
+            ],
+            "knownForProjections": [
+              "finals"
+            ]
+          },
+          {
+            "sourcePage": 4,
+            "printedPage": 81,
+            "region": "col1_top",
+            "line": 4,
+            "physicalChunk": "First chunk containing ASCII alphanumeric characters in that row",
+            "uncertainty": "Leading glyph/prefix not source-certified; word boundary/count and terminal glyph are source-certified by the independent third review.",
+            "unknownForProjections": [
+              "words",
+              "initials"
+            ],
+            "knownForProjections": [
+              "finals"
+            ]
+          }
+        ],
+        "perReadingMetadata": [
+          "executionModelComplete",
+          "selectedUncertainTokenCount",
+          "physicalSourceComplete",
+          "sourceUncertaintyAffected"
+        ],
+        "executionModelComplete": "True after all finite declared readings are evaluated against the pinned model, regardless of source uncertainty.",
+        "physicalSourceComplete": "For words and initials, true only if selected token positions avoid all three uncertain-prefix tokens. For finals, true because all relevant final glyphs, including l/e/s for these three tokens, are source-certified. Record the projection-specific rule without guessing the unknown prefixes.",
+        "negativeLanguage": "No strict-format lead in the 72 readings of this frozen repaired-OCR model. Separately report how many readings used no uncertain token; source-affected readings cannot exclude the corresponding physical-source reading.",
+        "hitLanguage": "Any words/initials lead involving an uncertain-prefix token depends on the provisional OCR spelling and needs source confirmation before significance is assigned. A finals reading uses only source-certified terminal glyphs; this certifies its input glyphs, not the cryptographic hypothesis.",
+        "punctuationOnlyUncertainty": "The p79 leading elision quote before til is removed regardless of its curly orientation because both U+2018 and U+2019 are in the fixed wrapper set. A standalone en/em dash after day has no ASCII alphanumeric and is not a counted token in this declared model. Neither requires a model branch.",
+        "finalGlyphEvidence": "Root reports an independent blinded third source review visibly certifying the final glyphs l/e/s of the three affected words. This proposal accepts that explicit source receipt; the earlier page81 review conservatively left row3 final-glyph evidence unresolved."
+      }
+    },
+    "parameters": {
+      "expectedBodyRows": 312,
+      "expectedUncertainTokens": 3,
+      "maximumTokens": 5000,
+      "expectedSubmittedRecords": 72,
+      "maximumSubmittedRecords": 72,
+      "maximumUniqueForms": 144,
+      "maximumInputBytes": 2000000,
+      "maximumRegisteredBlobBytes": 2000000,
+      "maximumSubmittedCodePoints": 250000,
+      "maximumUniqueFormCodePoints": 250000,
+      "maximumSourceCodePoints": 250000,
+      "stride": 12,
+      "directions": [
+        "forward",
+        "reverse"
+      ],
+      "phaseLabelsOneBased": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "phaseMeaning": "Offset phase-1 into the direction-specific full token array, then every twelfth token. Reverse means reverse all tokens before selection.",
+      "projections": [
+        "words",
+        "initials",
+        "finals"
+      ],
+      "forms": [
+        "exact",
+        "whitespace-only-compacted"
+      ],
+      "formats": [
+        "wif",
+        "minikey",
+        "hex64",
+        "bip39"
+      ],
+      "strictKnownSubset": "Filter whole readings whose selected tokens are source-complete for their projection; never omit selected tokens or join across omitted tokens.",
+      "uncertainty": "Only first kept chunk in p4:col1_top:2/3/4 is uncertain for words and initials; its finals l/e/s are source-certified.",
+      "rawArtifacts": [
+        "TOKENS.private.json",
+        "READINGS.private.jsonl"
+      ],
+      "perStreamHashes": false,
+      "networkQueries": 0,
+      "deriveSeeds": false,
+      "deriveAddresses": false,
+      "transactions": 0
+    },
+    "fingerprintRule": {
+      "algorithm": "SHA-256",
+      "domainText": "KEY404/batch20/record-fingerprint/v1",
+      "separatorHex": "00",
+      "rule": "SHA256(domain || 0x00 || ASCII(format) || 0x00 || canonical record bytes)"
+    },
+    "controls": [
+      "shared-format-controls",
+      "literal-wrappers-censor-hyphen-slash-currency-internal-apostrophes",
+      "all-directions-phases-projections-no-resets",
+      "every-twelfth-published-minikey-and-BIP39",
+      "whole-reading-projection-uncertainty-filter",
+      "source-alignment-schema-and-uncertainty-guards",
+      "nominal-72-empty-and-duplicate-records",
+      "safe-evaluation-allowlist",
+      "protocol-and-registration-byte-drift-rejections"
+    ],
+    "negativeCriterion": "A complete zero result excludes only four literal formats in the 72 declared readings of the single frozen repaired-OCR model. Separately report the whole-reading subset with source-complete projection inputs. Never call the whole physical-source hypothesis negative.",
+    "limitations": [
+      "Stride12 is exploratory, motivated by the duplicated printed 12-step passage; no creator instruction is authenticated.",
+      "Conventional body-row order, whitespace chunks and the exact wrapper set are declared model assumptions.",
+      "Three unchanged low-confidence leading words remain provisional for words and initials; no alternative spelling is tried. Finals use source-certified terminal glyphs.",
+      "No hard-wrap joins, linguistic letter policy, case variants, page resets, other populations, arbitrary encodings or downstream key use are tested.",
+      "Minikey checksum evidence is weak and hex64 scalar range has no checksum. Any positive is private review only."
+    ]
+  },
+  "sourceHashes": {
+    "analysis_outputs/continuation_20261110/issue27_body_source/BODY_ROWS.json": "783cc6676edf9b135d1eeff04d8bf8636088c1334f9e983f0d9f07dc579bff27",
+    "analysis_outputs/continuation_20261109/george_sand_issue27/printed_lines_and_streams.json": "f5f441345ebe411ee769cdcb624c0717a2b4f790b7eadc50d10dc12d37da07bb",
+    "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_01.jpg": "d4cca9f4326ba21a959551e8537596846bccdea42efe37f463506cd2d423fb8c",
+    "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_02.jpg": "e18e02e521444c9ea760c6e1d80a39bbee08d65a7839e970629ab81b4fd83610",
+    "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_03.jpg": "b7f120860b1a76aa6ba97c836bb56388477ee8878665d75414098f9b8a38a1b5",
+    "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_04.jpg": "60da7f7ed64764e8c9bb347bce163eb2f8dc4c4ad20abbd00182bced3ad3343a",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b",
+    "analysis_outputs/continuation_20261110/issue27_stride12/POLICY_PROPOSAL.json": "5c6d4a7b406f99515b1bb16c7f7874df6444c64c3be2e6a32c0798ac08e0d1e5"
+  },
+  "scriptHashes": {
+    "scripts/issue27_stride12.py": "84a061444a73fbedc14f8068f8d3cce1fb7ef990b4bef65181e78f234dcbfd01",
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d",
+    "scripts/verify_issue27_stride12.py": "1f482648945fe1508a211628ba7ec826c23cdbeed317bbf05426595b5be1ebae",
+    "scripts/verify_issue27_saved.py": "97cace8ee5f9b2707cc1344c08e46e068db327edc504a8625fb825481261422b"
+  },
+  "sourceExpectations": {
+    "bodyRows": 312,
+    "bodyTokenCount": 2018,
+    "uncertainTokens": 3
+  }
+}

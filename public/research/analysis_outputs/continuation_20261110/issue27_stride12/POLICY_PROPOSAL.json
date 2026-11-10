@@ -1,0 +1,236 @@
+{
+  "status": "source-only proposal; no target tokenization or selection performed",
+  "modelId": "issue27-physical-chunks-stride12-v1",
+  "population": "All 312 reviewed body physical rows only, in frozen existing source order. Final repaired row manifest and its SHA256 must be pinned by root before execution.",
+  "tokenization": {
+    "rowTraversal": "Existing conventional source order, page then frozen region then physical row; no row, region, page or paragraph reset.",
+    "splitRegex": "[ \\t\\r\\n\\f\\v]+",
+    "keepChunkPredicate": "Contains at least one ASCII A-Z, a-z or 0-9, tested before wrapper stripping.",
+    "outerWrapperCharacters": [
+      "!",
+      "\"",
+      "'",
+      "(",
+      ")",
+      ",",
+      ".",
+      ":",
+      ";",
+      "?",
+      "[",
+      "]",
+      "{",
+      "}",
+      "‘",
+      "’",
+      "“",
+      "”"
+    ],
+    "outerWrapperCodepoints": [
+      "U+0021",
+      "U+0022",
+      "U+0027",
+      "U+0028",
+      "U+0029",
+      "U+002C",
+      "U+002E",
+      "U+003A",
+      "U+003B",
+      "U+003F",
+      "U+005B",
+      "U+005D",
+      "U+007B",
+      "U+007D",
+      "U+2018",
+      "U+2019",
+      "U+201C",
+      "U+201D"
+    ],
+    "stripRule": "Repeatedly remove only members of outerWrapperCharacters from the beginning and end. Do not remove any interior character. Retain the remaining chunk exactly.",
+    "literalRetentions": [
+      "Internal periods and apostrophes",
+      "All hyphens, including physical row-ending hyphens",
+      "All censor asterisks",
+      "All slash characters, including a row-ending slash",
+      "Currency symbols, including a leading dollar sign"
+    ],
+    "forbidden": [
+      "Hard-wrap joining",
+      "Unicode normalization",
+      "Case conversion",
+      "BIP39 word filtering",
+      "Letter-only filtering",
+      "Punctuation deletion beyond the registered outer-wrapper rule",
+      "Reversing characters inside tokens",
+      "Guessed letters or wildcard expansion"
+    ]
+  },
+  "selection": {
+    "directions": [
+      "forward",
+      "reverse-token-order"
+    ],
+    "phasesZeroBased": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "stride": 12,
+    "rule": "For the direction-specific token sequence T, select T[p], T[p+12], T[p+24], ... while in range. Reverse means reverse the entire token sequence before applying this rule. No other reset or reversal."
+  },
+  "projections": {
+    "words": "Join selected cleaned chunks in order with exactly one U+0020 ASCII space.",
+    "initials": "Concatenate the first remaining Unicode character of every selected cleaned chunk.",
+    "finals": "Concatenate the last remaining Unicode character of every selected cleaned chunk."
+  },
+  "projectionTerminology": "Initials/finals are literal first/last core glyphs, not inferred linguistic word letters. Thus final hyphens, censor stars and slash characters remain possible. This is one declared model, not a test of all linguistic letter policies.",
+  "nominalStreamCount": 72,
+  "streamCountRule": "Emit all 2 x 12 x 3 records, even if a reading is empty or duplicates another. Report nominal count, unique count and actual evaluation counts separately; do not call duplicates extra hypotheses.",
+  "formatEvaluation": "Use the separately frozen four-format evaluator and its preregistered exact/whitespace-only-compacted forms, without any additional punctuation deletion or source filtering. Format leads remain private pending source review; no network checks are authorized by this proposal.",
+  "sourceUncertainty": {
+    "executionModel": "Execute the single frozen repaired-OCR model, retaining the unchanged prior strings in the three uncertain leading-word spans. No branch over alternative spellings.",
+    "uncertainTokens": [
+      {
+        "sourcePage": 4,
+        "printedPage": 81,
+        "region": "col1_top",
+        "line": 2,
+        "physicalChunk": "First chunk containing ASCII alphanumeric characters in that row",
+        "uncertainty": "Leading glyph/prefix not source-certified; word boundary/count and terminal glyph are source-certified by the independent third review.",
+        "unknownForProjections": [
+          "words",
+          "initials"
+        ],
+        "knownForProjections": [
+          "finals"
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "printedPage": 81,
+        "region": "col1_top",
+        "line": 3,
+        "physicalChunk": "First chunk containing ASCII alphanumeric characters in that row",
+        "uncertainty": "Leading glyph/prefix not source-certified; word boundary/count and terminal glyph are source-certified by the independent third review.",
+        "unknownForProjections": [
+          "words",
+          "initials"
+        ],
+        "knownForProjections": [
+          "finals"
+        ]
+      },
+      {
+        "sourcePage": 4,
+        "printedPage": 81,
+        "region": "col1_top",
+        "line": 4,
+        "physicalChunk": "First chunk containing ASCII alphanumeric characters in that row",
+        "uncertainty": "Leading glyph/prefix not source-certified; word boundary/count and terminal glyph are source-certified by the independent third review.",
+        "unknownForProjections": [
+          "words",
+          "initials"
+        ],
+        "knownForProjections": [
+          "finals"
+        ]
+      }
+    ],
+    "perReadingMetadata": [
+      "executionModelComplete",
+      "selectedUncertainTokenCount",
+      "physicalSourceComplete",
+      "sourceUncertaintyAffected"
+    ],
+    "executionModelComplete": "True after all finite declared readings are evaluated against the pinned model, regardless of source uncertainty.",
+    "physicalSourceComplete": "For words and initials, true only if selected token positions avoid all three uncertain-prefix tokens. For finals, true because all relevant final glyphs, including l/e/s for these three tokens, are source-certified. Record the projection-specific rule without guessing the unknown prefixes.",
+    "negativeLanguage": "No strict-format lead in the 72 readings of this frozen repaired-OCR model. Separately report how many readings used no uncertain token; source-affected readings cannot exclude the corresponding physical-source reading.",
+    "hitLanguage": "Any words/initials lead involving an uncertain-prefix token depends on the provisional OCR spelling and needs source confirmation before significance is assigned. A finals reading uses only source-certified terminal glyphs; this certifies its input glyphs, not the cryptographic hypothesis.",
+    "punctuationOnlyUncertainty": "The p79 leading elision quote before til is removed regardless of its curly orientation because both U+2018 and U+2019 are in the fixed wrapper set. A standalone en/em dash after day has no ASCII alphanumeric and is not a counted token in this declared model. Neither requires a model branch.",
+    "finalGlyphEvidence": "Root reports an independent blinded third source review visibly certifying the final glyphs l/e/s of the three affected words. This proposal accepts that explicit source receipt; the earlier page81 review conservatively left row3 final-glyph evidence unresolved."
+  },
+  "syntheticControlDesign": [
+    {
+      "id": "literal-boundaries",
+      "inputRows": [
+        "“c****.” U.S. exponen-",
+        "tial. and/",
+        "or $400 can’t",
+        "day — ‘til 12-step"
+      ],
+      "expectedCleanedChunks": [
+        "c****",
+        "U.S",
+        "exponen-",
+        "tial",
+        "and/",
+        "or",
+        "$400",
+        "can’t",
+        "day",
+        "til",
+        "12-step"
+      ],
+      "expectedCount": 11,
+      "expectedInitialProjection": "cUetao$cdt1",
+      "expectedFinalProjection": "*S-l/r0tylp",
+      "purpose": "Checks censor stars, abbreviation periods, no wrap join, slash, currency retention, internal apostrophe and punctuation-only exclusion."
+    },
+    {
+      "id": "quote-orientation",
+      "inputVariants": [
+        "'til",
+        "‘til",
+        "’til",
+        "“til”"
+      ],
+      "expectedEach": "til",
+      "purpose": "All three possible leading elision-quote glyphs produce the same declared core; this does not add guessed letters."
+    },
+    {
+      "id": "phase-direction",
+      "inputDesign": "Twenty-four toy cleaned chunks a00 through a23, in that order.",
+      "zeroBasedPhase": 5,
+      "expectedForwardWords": "a05 a17",
+      "expectedReverseWords": "a18 a06",
+      "expectedForwardInitials": "aa",
+      "expectedForwardFinals": "57",
+      "expectedReverseInitials": "aa",
+      "expectedReverseFinals": "86",
+      "purpose": "Detects phase off-by-one and reversing selected output rather than reversing the full input before selection."
+    },
+    {
+      "id": "no-resets",
+      "inputDesign": "The same 24 toy chunks spread over two rows and two pages at nonmultiples of 12.",
+      "expected": "Exactly the same phase-direction outputs as the one-row fixture.",
+      "purpose": "Rejects undocumented row/page resets."
+    },
+    {
+      "id": "uncertainty-propagation",
+      "inputDesign": "Mark only the leading glyph/prefix of toy token a05 uncertain, with final glyph 5 source-certified; all other toy tokens source-certified.",
+      "expected": "Forward phase5 words and initials are source-affected; its finals reading remains physicalSourceComplete. Forward phase6 is physicalSourceComplete for all three projections. All emitted readings remain executionModelComplete after evaluation.",
+      "purpose": "Separates completion of a fixed model from physical-source exclusion."
+    },
+    {
+      "id": "record-count-and-dedup",
+      "inputDesign": "A short or deliberately repetitive toy population.",
+      "expected": "Always 72 nominal records; empty or identical readings have separately reported unique/evaluated counts and do not inflate hypothesis counts.",
+      "purpose": "Controls finite-count reporting without changing the extraction."
+    }
+  ],
+  "negativeCriterion": "Complete the fixed 72 nominal readings and declared evaluator scope. A model-negative requires zero format-valid private leads and no execution errors. Report source-complete and source-affected subsets separately; any error is inconclusive, never negative.",
+  "limitations": [
+    "Source support is the printed duplicated 12-step passage and routine/recursion language; it motivates this single exploratory interval but does not establish an instruction to stride12.",
+    "The conventional frozen body-row order and ASCII-alphanumeric-containing chunk definition are explicit model assumptions.",
+    "A negative does not exclude hard-wrap joining, linguistic last-letter policies, alternate readings of uncertain prefixes, other article populations or arbitrary encodings."
+  ]
+}

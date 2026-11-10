@@ -15,3 +15,8 @@ Both copies of the recovery paragraph are visibly printed and must be retained. 
 After source preparation and separate registration: retain both paragraph copies, traverse the frozen body-token list forward and backward, and predeclare all twelve phases. For each selected list emit words, initials and final letters: **2 directions × 12 phases × 3 projections = 72 correlated streams in one exploratory experiment**. No wordlist filtering, deletion of inconvenient words, extra page order, salt or prose hash. Apply only the existing four fixed literal formats. Keep raw positive material out of new reports.
 
 Controls must plant public minikey/BIP39 examples at known stride positions, verify forward/backward indices and preserve compound/hard-wrap boundaries. Register all pins, caps and failure conditions before running. Zero valid records would exclude only those declared readings of the exact token model; it would not rule out all twelve-step methods or the puzzle. No target stride, new token list, checksum or address check has been executed for this proposal.
+
+
+## Source preparation update
+
+The [full body review](../issue27_body_source/SOURCE.md) now covers all 312 rows, rather than the earlier bounded sample. It retains two punctuation uncertainties and three softened word prefixes, with independently confirmed terminal glyphs. A single 2,018-literal-chunk model has a [separate stride registration](../issue27_stride12/PROTOCOL.md); its explicit chunk/core-glyph convention supersedes the preliminary regex sketch above. No outcome is implied by this source update.

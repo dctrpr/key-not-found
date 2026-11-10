@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "scriptSha256": "84a061444a73fbedc14f8068f8d3cce1fb7ef990b4bef65181e78f234dcbfd01",
+  "scope": "Synthetic lifecycle only; registration/source loaders were explicitly mocked, no target source data or readings used.",
+  "cases": [
+    {
+      "case": "zero",
+      "computationalModelComplete": true,
+      "completeModelNegative": true,
+      "strictKnownSubsetNegative": true,
+      "privateReviewRequired": false,
+      "outputModesPrivate": true
+    },
+    {
+      "case": "positive-source-affected",
+      "computationalModelComplete": true,
+      "completeModelNegative": false,
+      "strictKnownSubsetNegative": true,
+      "privateReviewRequired": true,
+      "outputModesPrivate": true
+    },
+    {
+      "case": "controls-error",
+      "computationalModelComplete": false,
+      "completeModelNegative": false,
+      "strictKnownSubsetNegative": false,
+      "privateReviewRequired": false,
+      "outputModesPrivate": true
+    },
+    {
+      "case": "registration-error",
+      "computationalModelComplete": false,
+      "completeModelNegative": false,
+      "strictKnownSubsetNegative": false,
+      "privateReviewRequired": false,
+      "outputModesPrivate": true
+    },
+    {
+      "case": "source-error",
+      "computationalModelComplete": false,
+      "completeModelNegative": false,
+      "strictKnownSubsetNegative": false,
+      "privateReviewRequired": false,
+      "outputModesPrivate": true
+    },
+    {
+      "case": "token-count-error",
+      "computationalModelComplete": false,
+      "completeModelNegative": false,
+      "strictKnownSubsetNegative": false,
+      "privateReviewRequired": false,
+      "outputModesPrivate": true
+    },
+    {
+      "case": "all-evaluation-error",
+      "computationalModelComplete": false,
+      "completeModelNegative": false,
+      "strictKnownSubsetNegative": false,
+      "privateReviewRequired": false,
+      "outputModesPrivate": true
+    },
+    {
+      "case": "strict-evaluation-error",
+      "computationalModelComplete": false,
+      "completeModelNegative": false,
+      "strictKnownSubsetNegative": false,
+      "privateReviewRequired": false,
+      "outputModesPrivate": true
+    }
+  ],
+  "audit": {
+    "targetOpens": 0,
+    "subprocessEvents": 0,
+    "networkEvents": 0
+  },
+  "targetTokenizations": 0,
+  "targetStrideSelections": 0,
+  "targetFormatChecks": 0,
+  "networkQueries": 0,
+  "completedAtUTC": "2026-11-10T10:10:30.283624Z"
+}

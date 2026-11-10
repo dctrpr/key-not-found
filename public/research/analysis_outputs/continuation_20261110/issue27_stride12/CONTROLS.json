@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "scriptSha256": "84a061444a73fbedc14f8068f8d3cce1fb7ef990b4bef65181e78f234dcbfd01",
+  "controls": {
+    "passed": true,
+    "controls": [
+      "shared-format-controls",
+      "literal-wrappers-censor-hyphen-slash-currency-internal-apostrophes",
+      "all-directions-phases-projections-no-resets",
+      "every-twelfth-published-minikey-and-BIP39",
+      "whole-reading-projection-uncertainty-filter",
+      "source-alignment-schema-and-uncertainty-guards",
+      "nominal-72-empty-and-duplicate-records",
+      "safe-evaluation-allowlist",
+      "protocol-and-registration-byte-drift-rejections"
+    ],
+    "shared": {
+      "passed": true,
+      "controls": [
+        "official2048wordlist",
+        "BIP39valid-invalid",
+        "BIP39-invalid-group-barrier",
+        "BIP32-all5SLIP132-private-versions",
+        "invalid-root-parent-child-marker-scalar",
+        "BIP38-all6-structural-flag-combinations",
+        "BIP38-reserved-flags-checksum",
+        "Base58Check",
+        "Bech32-v0",
+        "Bech32m-v1",
+        "cross-checksum-version-and-invalid-padding",
+        "SEC-oncurve",
+        "WIF",
+        "minikey22and30-embedded",
+        "invalid-checksum-scalar-case-point",
+        "safe-domain-separated-output"
+      ],
+      "targetInputRead": false,
+      "targetChecks": 0,
+      "networkQueries": 0
+    },
+    "syntheticNominalReadings": 72,
+    "syntheticSelectionComparisons": 72,
+    "syntheticUncertaintyAffected": 4,
+    "syntheticStrictKnownReadings": 68,
+    "syntheticPositiveFormatControls": [
+      "published-minikey30-every12",
+      "BIP39-every12"
+    ],
+    "syntheticProtocolRejections": 6,
+    "syntheticSourceGuardRejections": 12,
+    "syntheticSourceBodyRows": 312,
+    "syntheticTokenCapRejections": 1,
+    "targetInputsRead": false,
+    "targetTokenizations": 0,
+    "targetStrideSelections": 0,
+    "targetRecordChecks": 0,
+    "networkQueries": 0,
+    "transactions": 0
+  },
+  "listScopeCounts": {
+    "sourcePins": 9,
+    "scriptPins": 4
+  },
+  "invalidCliCasesRejected": 4,
+  "audit": {
+    "targetOpens": 0,
+    "subprocessEvents": 0,
+    "networkEvents": 0
+  },
+  "targetTokenizations": 0,
+  "targetStrideSelections": 0,
+  "targetFormatChecks": 0,
+  "networkQueries": 0,
+  "completedAtUTC": "2026-11-10T10:09:45.891626Z"
+}

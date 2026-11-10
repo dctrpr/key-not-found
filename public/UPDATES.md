@@ -99,3 +99,10 @@ The Issue 27 validator-coverage replay completed at 09:13:14.337 UTC. Its exact 
 
 
 The separately registered follow-up completed at 09:23:54.318 UTC: five Python/Node-agreed address constructions, ten successful two-provider responses, and all chain/mempool statistics zero. This supplies no funding evidence for the weak lead in the declared scope; it does not rule out the puzzle. A second Orange Party frame records the actual history-check outcome beside its extraction frame.
+
+
+## 10 November 2026 — Reviewed source before the twelve-step test
+
+The complete 312-row historical Orange Party body population was visually inspected. A separate source file preserves original ordinals/text alongside reviewed model text and source boxes; 68 rows changed, including typography. Two punctuation glyphs and three gutter-softened word prefixes retain explicit uncertainty. A blinded additional review confirms the affected terminal glyphs without guessing prefixes.
+
+The next registered procedure uses one 2,018-literal-chunk model and 72 direction/phase/projection readings. It retains both printed recovery paragraphs, all hard-wrap fragments, censor stars and internal punctuation. Primary and independent controls passed before target extraction. Model-level completion will be distinguished from physical-source completeness; no target result is implied by preparation.

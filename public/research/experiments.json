@@ -842,6 +842,30 @@
         "The minikey remains format-valid; zero explorer history applies only to five registered constructions at the recorded times.",
         "Public frozen readings are reproducible. New summaries omit selected values, private scalars, source locators and derived-address associations."
       ]
+    },
+    {
+      "id": "issue27-body-stride12",
+      "title": "Orange Party: every twelfth literal chunk",
+      "status": "in-progress",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "One frozen repaired-OCR body model: 312 rows, 2,018 literal chunks, both token directions, 12 phases and words/initials/finals; exactly 72 correlated readings. Three uncertain prefixes propagate by projection.",
+      "result": "The full body source has been reviewed and the fixed-model protocol is prepared. Primary and independent controls pass; target extraction begins only after public registration. No stride result is claimed.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/issue27_stride12/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/issue27_stride12/PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/issue27_body_source/SOURCE.md"
+      ],
+      "reproduce": [
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/issue27_stride12.py --self-test",
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/verify_issue27_stride12.py --self-test"
+      ],
+      "limitations": [
+        "The printed 12-step phrase motivates one exploratory interval; it is not an authenticated extraction instruction.",
+        "Body classification, region order and literal-chunk rules are investigator assumptions. No hard-wrap joining or alternate word counting is included.",
+        "Three prefixes remain source-uncertain for word/initial readings; fixed-model completion cannot exclude the whole physical-source hypothesis.",
+        "Orange Party is relevant to the broad December plural-key claim, not authenticated as the March 20-BTC target."
+      ]
     }
   ],
   "countingPolicy": "This is a curated set of method families/source audits, not a total count of independent theories. Historical administrative gates and correlated variants are not counted as independent experiments. Falsified means only the concrete stated candidate/address scope.",
