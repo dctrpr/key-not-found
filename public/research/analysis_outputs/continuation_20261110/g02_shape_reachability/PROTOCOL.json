@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "testId": "g02-stencil-literal-shape-reachability",
+  "frozenAtUTC": "2026-11-10T22:54:24.228Z",
+  "sourceHashes": {
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "sources/word-geometry-20261110.json": "e3348d0d60d3097b05d0afdb0a1fccf66409274408af9ae7a9369c37fe596e9f",
+    "analysis_outputs/continuation_20261110/g02_joint_color_audit/RESULT.json": "392903951d353d971258a578ac3b967a813e4b95a19e1991cb76d5e84ef7abe4",
+    "analysis_outputs/continuation_20261110/g02_joint_color_audit/MEMBERSHIP.json": "2c10b715873e50cb0911765d8e096cbc38094a43d8cb0aff6c9a7ea8caacca91",
+    "analysis_outputs/continuation_20261110/g02_joint_color_audit/INDEPENDENT_VERIFICATION.json": "59f3522d9525547dd83de6a48055922ec618e3ca6430e82eac980ca3f603e325",
+    "analysis_outputs/continuation_20261110/g02_joint_color_audit/REGISTRATION.json": "f703e4d79b8c675d532e5ae740bbcba4a448c26dbd3096f3c07859e453496024",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda"
+  },
+  "scriptHashes": {
+    "scripts/g02_reading_model.py": "af127f668c8638c302af101abf4aa7ec7106f8e77d39126e59cf12e55e08ef95",
+    "scripts/g02_shape_reachability.py": "c2e01adfa9bc740baaf216ebcc8ddc3d16037cf8257dfaa51419837865768fee",
+    "scripts/run_g02_shape_check.py": "c99a7a3afadba136c5f01abcde285eabdbb3a11afc4f732f749ca1ee3b11fcac",
+    "scripts/global_mirror_dag.py": "8134260ef4811830e5653a9d5294acec9b154eb9df3d11c9b558e50fe20ca12d",
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d"
+  },
+  "scopes": [
+    "76-to-77",
+    "77-to-76",
+    "78-to-79",
+    "79-to-78",
+    "global"
+  ],
+  "selectors": [
+    "same-color",
+    "opposite-color",
+    "source-only",
+    "target-only"
+  ],
+  "orders": [
+    "forward",
+    "reverse"
+  ],
+  "modes": [
+    "words-spaced",
+    "words-joined",
+    "initials",
+    "finals"
+  ],
+  "descriptors": 160,
+  "aliases": 240,
+  "maximumWorkUnitsPerDescriptor": 2000000,
+  "maximumFlatAssignmentsPerDescriptor": 256,
+  "resultPolicy": "Record shape presence or absence by descriptor. A metered recognition cap is inconclusive. An unexpected execution failure cannot produce a completed report."
+}
