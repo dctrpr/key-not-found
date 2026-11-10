@@ -818,8 +818,8 @@ function App() {
                     <span className="standing-counts">
                       {openMethods} open / partial ·{" "}
                       {activeMethods
-                        ? `${activeMethods} experiments in progress`
-                        : "No active experiment logged"}
+                        ? `${activeMethods} research tasks in progress`
+                        : "No active research task logged"}
                     </span>
                   )}
                   <a href="#open-leads" className="text-link light">

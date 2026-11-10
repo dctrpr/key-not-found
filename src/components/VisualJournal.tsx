@@ -30,6 +30,20 @@ export function VisualFrame({ entry, number }: { entry: Entry; number: number })
           <text x="48" y={213 + i * 36} fill={paper} fontSize="14">{label}</text>
           {[600, 763].map(x => <g key={x}><circle cx={x - 27} cy={208 + i * 36} r="4" fill={lime}/><text x={x - 13} y={213 + i * 36} fill={lime} fontSize="13">0 history</text></g>)}
         </g>)}
+      </> : entry.diagram === 'source' ? <>
+        <text x="40" y="101" fill={paper} fontSize="26" fontWeight="700">The source, before the test.</text>
+        <text x="40" y="130" fill={muted} fontSize="13">Funky Upheaval · actual scans in the page viewer · issue and date unverified</text>
+        {[107, 108, 109, 110, 111, 112].map((page, i) => <g key={page}>
+          <rect x={40 + i * 103} y="164" width="85" height="116" fill="#191917" stroke={lime}/>
+          <text x={82 + i * 103} y="214" textAnchor="middle" fill={paper} fontSize="24">{page}</text>
+          <text x={82 + i * 103} y="248" textAnchor="middle" fill={muted} fontSize="10">{i === 0 ? 'OPENER' : i === 5 ? 'ARTWORK' : 'TEXT'}</text>
+        </g>)}
+        <line x1="679" x2="679" y1="164" y2="280" stroke="#45453c" strokeDasharray="4 4"/>
+        <text x="772" y="203" textAnchor="middle" fill={muted} fontSize="13">2 adjacent ads</text>
+        <text x="772" y="230" textAnchor="middle" fill={paper} fontSize="12">Kept separately.</text>
+        <text x="772" y="252" textAnchor="middle" fill={muted} fontSize="11">Outside this page view.</text>
+        {entry.metrics.map((metric, i) => <text key={metric.label} x={40 + i * 288} y="335" fill={paper} fontSize="15">{formatNumber(metric.value)} <tspan fill={muted}>{metric.label}</tspan></text>)}
+        <text x="40" y="367" fill={muted} fontSize="12">Source curation only. No new decoding or cryptographic check in this frame.</text>
       </> : <>
         <text x="40" y="101" fill={paper} fontSize="26" fontWeight="700">{entry.title}</text>
         <text x="40" y="130" fill={muted} fontSize="13">Registered input → format checks → recorded outcome</text>
@@ -74,7 +88,7 @@ export default function VisualJournal({ onOpenView }: { onOpenView: (view: Visua
     window.history.replaceState(null, '', '#visual-' + journal.entries[i].id);
   };
   return <section className="visual-journal" id="visual-updates" aria-labelledby="visual-journal-title">
-    <div className="vj-heading"><div><span className="vj-eyebrow">THE VISUAL LOG</span><h2 id="visual-journal-title">The work, frame by frame.</h2></div><p>Dated views of what was tested and what happened. Each frame links to the evidence.</p></div>
+    <div className="vj-heading"><div><span className="vj-eyebrow">THE VISUAL LOG</span><h2 id="visual-journal-title">The work, frame by frame.</h2></div><p>Dated views of sources, tests and results. Each frame links to the evidence.</p></div>
     <div className="vj-layout">
       <div className="vj-player">
         <VisualFrame entry={entry} number={index + 1}/>
@@ -84,7 +98,7 @@ export default function VisualJournal({ onOpenView }: { onOpenView: (view: Visua
         <time dateTime={entry.completedAtUTC}>{date(entry.completedAtUTC)} · {clock(entry.completedAtUTC)} UTC</time>
         <dl className="vj-mobile-metrics">{entry.metrics.map(m => <div key={m.label}><dt>{m.label}</dt><dd>{formatNumber(m.value)}</dd></div>)}</dl>
         <h3>{entry.title}</h3><p>{entry.summary}</p><p className="vj-result">{entry.result}</p>
-        <div className="vj-links"><a href={entry.evidence} target="_blank" rel="noreferrer">Read the test <ArrowUpRight size={15}/></a><button type="button" onClick={() => onOpenView(entry.scene as VisualLabView)}><Box size={15}/> Explore the pages</button><a href={`/research/visuals/${entry.id}.svg`} target="_blank" rel="noreferrer">Enlarge frame <ArrowUpRight size={15}/></a></div>
+        <div className="vj-links"><a href={entry.evidence} target="_blank" rel="noreferrer">Read the evidence <ArrowUpRight size={15}/></a><button type="button" onClick={() => onOpenView(entry.scene as VisualLabView)}><Box size={15}/> Explore the pages</button><a href={`/research/visuals/${entry.id}.svg`} target="_blank" rel="noreferrer">Enlarge frame <ArrowUpRight size={15}/></a></div>
         <small>{entry.sceneNote}</small>
       </div>
     </div>

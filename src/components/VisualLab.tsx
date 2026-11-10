@@ -5,7 +5,7 @@ import "./VisualLab.css";
 
 const VisualScene = lazy(() => import("./VisualScene"));
 export const VISUAL_PAGES = [75, 76, 77, 78, 79, 80] as const;
-export type VisualLabView = { layout: "spread" | "stack" | "mirror"; page: number; source?: "issue27" };
+export type VisualLabView = { layout: "spread" | "stack" | "mirror"; page: number; source?: "issue27" | "funky" };
 export const VISUAL_SOURCES = {
   issue24: {
     label: "2023 puzzle", name: "Bitcoin Magazine Issue 24", pages: VISUAL_PAGES,
@@ -16,11 +16,18 @@ export const VISUAL_SOURCES = {
     width: 2040, height: 2805,
     provenance: "/research/analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/SOURCE_REGISTER.md",
   },
+  funky: {
+    label: "Funky Upheaval", name: "Bitcoin and the Funky Upheaval", pages: [107, 108, 109, 110, 111, 112],
+    width: 2040, height: 2805,
+    provenance: "/research/sources/funky-upheaval/SOURCE_REGISTER.md",
+  },
 } as const;
 export const visualSource = (source?: VisualLabView["source"]) => VISUAL_SOURCES[source || "issue24"];
-export const visualPageUrl = (page: number, source?: VisualLabView["source"]) => source === "issue27"
-  ? `/research/analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_${String(page - 77).padStart(2, "0")}.jpg`
-  : `/research/sources/pages/${page}.jpg`;
+export const visualPageUrl = (page: number, source?: VisualLabView["source"]) => source === "funky"
+  ? `/research/sources/funky-upheaval/pages/${page}.jpg`
+  : source === "issue27"
+    ? `/research/analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_${String(page - 77).padStart(2, "0")}.jpg`
+    : `/research/sources/pages/${page}.jpg`;
 export const visualPairPages = (view: VisualLabView): [number, number] => {
   const pages: readonly number[] = visualSource(view.source).pages;
   const index = Math.max(0, pages.indexOf(view.page));
@@ -43,7 +50,7 @@ const MODES = [
   { id: "mirror", label: "Mirror", Icon: Box },
 ] as const;
 const checkedView = (view?: VisualLabView): VisualLabView => {
-  const source = view?.source === "issue27" ? "issue27" : undefined;
+  const source = view?.source === "issue27" || view?.source === "funky" ? view.source : undefined;
   const pages: readonly number[] = visualSource(source).pages;
   return {
     ...(source ? { source } : {}),
@@ -154,7 +161,7 @@ export default function VisualLab({ view, onViewChange, openRequest }: VisualLab
           {Object.entries(VISUAL_SOURCES).map(([id, option]) => (
             <button key={id} type="button" aria-pressed={sourceId === id} onClick={() => {
               if (sourceId === id) return;
-              selectView({ layout: current.layout, page: option.pages[0], ...(id === "issue27" ? { source: "issue27" } : {}) });
+              selectView({ layout: current.layout, page: option.pages[0], ...(id === "issue27" || id === "funky" ? { source: id } : {}) });
             }}>{option.label}</button>
           ))}
         </div>
@@ -176,15 +183,15 @@ export default function VisualLab({ view, onViewChange, openRequest }: VisualLab
           {!is3D && (
             <div key={sourceId} className={"visual-preview is-" + current.layout + (unavailable ? " is-fallback" : "")}>
               {!unavailable && current.layout !== "mirror" && (
-                <div className="visual-paper is-companion">
+                <div className="visual-paper is-companion" style={{ aspectRatio: source.width / source.height }}>
                   <img src={visualPageUrl(companion, current.source)} alt="" loading="lazy" decoding="async" width={source.width} height={source.height} />
                 </div>
               )}
-              <div className="visual-paper is-main">
+              <div className="visual-paper is-main" style={{ aspectRatio: source.width / source.height }}>
                 <img src={visualPageUrl(current.page, current.source)} alt={`Retained source scan of printed page ${current.page}, ${source.name}`} loading="lazy" decoding="async" width={source.width} height={source.height} />
               </div>
               {!unavailable && current.layout === "mirror" && (
-                <div className="visual-paper is-reflection">
+                <div className="visual-paper is-reflection" style={{ aspectRatio: source.width / source.height }}>
                   <img src={visualPageUrl(current.page, current.source)} alt="" loading="lazy" decoding="async" width={source.width} height={source.height} />
                 </div>
               )}
@@ -250,6 +257,7 @@ export default function VisualLab({ view, onViewChange, openRequest }: VisualLab
             : current.layout === "mirror" ? "A source page and its horizontal reflection. An investigator hypothesis; no extraction is applied."
             : current.layout === "stack" ? `${source.pages.length === 4 ? "Four" : "Six"} source scans separated for inspection. The spacing is a viewing aid.`
               : "Source pages in printed sequence. The display arrangement adds no research conclusion."}
+          {current.source === "funky" && " Issue and publication date unverified."}
         </p>
         <div>
           <a href={visualPageUrl(current.page, current.source)} target="_blank" rel="noreferrer">Open scan {current.page}<ArrowUpRight size={14} /></a>
