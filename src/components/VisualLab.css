@@ -238,6 +238,11 @@
   .visual-loading { bottom: 70px; }
   .visual-keyboard-help { font-size: 9px; }
 }
+@media (max-width: 540px) {
+  .visual-source-control { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
+  .visual-source-control > span { grid-column: 1 / -1; }
+  .visual-source-control button { min-width: 0; }
+}
 @media (max-width: 370px) {
   .visual-mode-control button svg { display: none; }
   .visual-mode-control button { font-size: 10.5px; }
