@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "status": "PASS",
+  "completedAtUTC": "2026-11-10T18:01:19.951044+00:00",
+  "codeSha256": "a4bf930523eb29c0da942439eb6005514fc60d0dfb4f6deede2171380bd4389c",
+  "result": {
+    "syntheticCohorts": 7,
+    "syntheticLabeledRecords": 2594,
+    "syntheticPerCohortFormsSum": 2576,
+    "sharedFormatPositiveControls": 4,
+    "rejectionControls": 40,
+    "targetInputsOpened": 0,
+    "targetShapeChecks": 0,
+    "networkQueries": 0,
+    "primaryRunnerImports": 0,
+    "status": "PASS",
+    "allSevenCohortMockRun": true,
+    "mini26MockCohortsEnumerated": 6,
+    "G03Mini26MockEnumerations": 0,
+    "canonicalAliasControls": [
+      "Bech32-case",
+      "SEC-encoding"
+    ],
+    "scalarDerivations": 0,
+    "addressDerivations": 0
+  },
+  "monitored": {
+    "targetOpens": 0,
+    "primaryImportsOrOpens": 0,
+    "subprocessCalls": 0,
+    "networkCalls": 0,
+    "oldMinikeyCalls": 0,
+    "bareMinikeyHashes": 0
+  },
+  "registrationObjectTypeControls": {
+    "mockCommitAccepted": true,
+    "mockNoncommitOrFailedGitRejected": 5
+  },
+  "scope": "Source-free controls under target/primary/subprocess/network/old-minikey/bare-minikey-hash denial; Git type controls mocked."
+}

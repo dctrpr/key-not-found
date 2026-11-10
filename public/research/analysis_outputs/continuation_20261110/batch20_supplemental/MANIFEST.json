@@ -1,0 +1,501 @@
+{
+  "version": 1,
+  "completedAtUTC": "2026-11-10T17:43:30.463229+00:00",
+  "status": "finite-supplemental-format-coverage-gap-identified",
+  "scope": "Metadata/code-only audit of completed frozenT01\u2013T06 plusG03; bounded identified protocols/results/scripts/known replays only.",
+  "cohorts": [
+    {
+      "testId": "T01",
+      "title": "Alternating direction on the actual printed lines",
+      "family": "faithful-boustrophedon",
+      "recordedRegistrationCommit": "8f4fa38bf24db7e432410c4daaa29e9de486156c",
+      "recordedProtocolSha256": "9a9441d1ad4e6a10c11addd06b31f9d443c0e82faa9caa1438379cc7c58742be",
+      "sourceHashes": {
+        "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+        "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+        "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b"
+      },
+      "labeledStreamCount": 196,
+      "uniqueStreamCountReported": 152,
+      "uniqueFormCountReported": 236,
+      "formCountAuthority": "Original primary evaluation plus saved independent check; no form construction in this audit.",
+      "separateSavedFormArtifact": null,
+      "formPolicy": "Original exact + whitespace-only-compacted forms.",
+      "declaredFormats": [
+        "wif",
+        "minikey",
+        "hex64",
+        "bip39"
+      ],
+      "minikeyLengthsFromPinnedCode": [
+        22,
+        30
+      ],
+      "allDeclaredValidCountsZero": true,
+      "legacyMinikeyShapeOccurrences": 21,
+      "directWholeCohortSupplementalReplayFound": false,
+      "missingDirectRecordedGates": [
+        "minikey26",
+        "extended_private",
+        "bip38",
+        "address",
+        "sec_public"
+      ],
+      "logicalMinikey26ShapeExclusionFromZero22Prefix": false,
+      "publicArtifact": "analysis_outputs/continuation_20261110/batch20/T01/STREAMS.json",
+      "publicArtifactBytes": 134805,
+      "publicArtifactSha256": "2900473b467c74c18ee29f841f0fbb150376ffa42ab8e9862d9d0957fce8b395",
+      "originalPrivateArtifactSha256": "2900473b467c74c18ee29f841f0fbb150376ffa42ab8e9862d9d0957fce8b395",
+      "originalAndPublicArtifactByteIdentical": true,
+      "originalAndPublicRecordOrderAndUtf8Equal": true,
+      "safeResultSha256": "f96c512124f8ab5314db28fe28627f6217d84a166f880c547c017b6f1acf386c",
+      "independentCheckSha256": "c635f12fdf2ae8a22db366748cd38653259e446a59c23359608054ec899ba4e9",
+      "selectorLimitations": [
+        "The older boustrophedon test used merged transcript lines; this is a corrected-source test.",
+        "Direction and parity variants are one procedure, not independent theories."
+      ]
+    },
+    {
+      "testId": "T02",
+      "title": "Fixed interior columns of printed words and characters",
+      "family": "interior-column-null-cipher",
+      "recordedRegistrationCommit": "8f4fa38bf24db7e432410c4daaa29e9de486156c",
+      "recordedProtocolSha256": "9a9441d1ad4e6a10c11addd06b31f9d443c0e82faa9caa1438379cc7c58742be",
+      "sourceHashes": {
+        "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+        "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+        "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b"
+      },
+      "labeledStreamCount": 628,
+      "uniqueStreamCountReported": 628,
+      "uniqueFormCountReported": 1120,
+      "formCountAuthority": "Original primary evaluation plus saved independent check; no form construction in this audit.",
+      "separateSavedFormArtifact": null,
+      "formPolicy": "Original exact + whitespace-only-compacted forms.",
+      "declaredFormats": [
+        "wif",
+        "minikey",
+        "hex64",
+        "bip39"
+      ],
+      "minikeyLengthsFromPinnedCode": [
+        22,
+        30
+      ],
+      "allDeclaredValidCountsZero": true,
+      "legacyMinikeyShapeOccurrences": 38,
+      "directWholeCohortSupplementalReplayFound": false,
+      "missingDirectRecordedGates": [
+        "minikey26",
+        "extended_private",
+        "bip38",
+        "address",
+        "sec_public"
+      ],
+      "logicalMinikey26ShapeExclusionFromZero22Prefix": false,
+      "publicArtifact": "analysis_outputs/continuation_20261110/batch20/T02/STREAMS.json",
+      "publicArtifactBytes": 85721,
+      "publicArtifactSha256": "b417af72e5cbacd69e928f561e811a71fee3e2ce2e68c0d29527a24863301e77",
+      "originalPrivateArtifactSha256": "b417af72e5cbacd69e928f561e811a71fee3e2ce2e68c0d29527a24863301e77",
+      "originalAndPublicArtifactByteIdentical": true,
+      "originalAndPublicRecordOrderAndUtf8Equal": true,
+      "safeResultSha256": "40a4cd340eec86befea09a2636ff9d31a42c726db2933a2a24656c521d0bd93a",
+      "independentCheckSha256": "e72a074973f060255fe9fe549d8bd097a2fe135954d624295d5a3c9b9192967e",
+      "selectorLimitations": [
+        "Interior columns extend the first-word clue but are not creator instructions.",
+        "Character columns are logical indices, not measured scan x coordinates."
+      ]
+    },
+    {
+      "testId": "T03",
+      "title": "Mirror-axis centers of printed lines",
+      "family": "line-mesostics",
+      "recordedRegistrationCommit": "8f4fa38bf24db7e432410c4daaa29e9de486156c",
+      "recordedProtocolSha256": "9a9441d1ad4e6a10c11addd06b31f9d443c0e82faa9caa1438379cc7c58742be",
+      "sourceHashes": {
+        "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+        "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+        "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b"
+      },
+      "labeledStreamCount": 120,
+      "uniqueStreamCountReported": 120,
+      "uniqueFormCountReported": 168,
+      "formCountAuthority": "Original primary evaluation plus saved independent check; no form construction in this audit.",
+      "separateSavedFormArtifact": null,
+      "formPolicy": "Original exact + whitespace-only-compacted forms.",
+      "declaredFormats": [
+        "wif",
+        "minikey",
+        "hex64",
+        "bip39"
+      ],
+      "minikeyLengthsFromPinnedCode": [
+        22,
+        30
+      ],
+      "allDeclaredValidCountsZero": true,
+      "legacyMinikeyShapeOccurrences": 16,
+      "directWholeCohortSupplementalReplayFound": false,
+      "missingDirectRecordedGates": [
+        "minikey26",
+        "extended_private",
+        "bip38",
+        "address",
+        "sec_public"
+      ],
+      "logicalMinikey26ShapeExclusionFromZero22Prefix": false,
+      "publicArtifact": "analysis_outputs/continuation_20261110/batch20/T03/STREAMS.json",
+      "publicArtifactBytes": 22569,
+      "publicArtifactSha256": "8977b65a1f14ddb36b97e05e58df145519f36f56ad18bf30957b328ec8d6c90f",
+      "originalPrivateArtifactSha256": "8977b65a1f14ddb36b97e05e58df145519f36f56ad18bf30957b328ec8d6c90f",
+      "originalAndPublicArtifactByteIdentical": true,
+      "originalAndPublicRecordOrderAndUtf8Equal": true,
+      "safeResultSha256": "7322a06a7ee5218d6d49de9a4b840633d98fa3589bf004ca9d81401e94575ab6",
+      "independentCheckSha256": "4ef1781f09a6d8eec238250409994e5cb467e0ddf41867aff7a60e35d8f8d35b",
+      "selectorLimitations": [
+        "The center selector is an exploratory mirror hypothesis.",
+        "Logical centers are not physical page-fold intersections."
+      ]
+    },
+    {
+      "testId": "T04",
+      "title": "Paragraph-boundary readings",
+      "family": "paragraph-edge-null-cipher",
+      "recordedRegistrationCommit": "8f4fa38bf24db7e432410c4daaa29e9de486156c",
+      "recordedProtocolSha256": "9a9441d1ad4e6a10c11addd06b31f9d443c0e82faa9caa1438379cc7c58742be",
+      "sourceHashes": {
+        "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+        "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+        "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b"
+      },
+      "labeledStreamCount": 252,
+      "uniqueStreamCountReported": 244,
+      "uniqueFormCountReported": 316,
+      "formCountAuthority": "Original primary evaluation plus saved independent check; no form construction in this audit.",
+      "separateSavedFormArtifact": null,
+      "formPolicy": "Original exact + whitespace-only-compacted forms.",
+      "declaredFormats": [
+        "wif",
+        "minikey",
+        "hex64",
+        "bip39"
+      ],
+      "minikeyLengthsFromPinnedCode": [
+        22,
+        30
+      ],
+      "allDeclaredValidCountsZero": true,
+      "legacyMinikeyShapeOccurrences": 1,
+      "directWholeCohortSupplementalReplayFound": false,
+      "missingDirectRecordedGates": [
+        "minikey26",
+        "extended_private",
+        "bip38",
+        "address",
+        "sec_public"
+      ],
+      "logicalMinikey26ShapeExclusionFromZero22Prefix": false,
+      "publicArtifact": "analysis_outputs/continuation_20261110/batch20/T04/STREAMS.json",
+      "publicArtifactBytes": 21875,
+      "publicArtifactSha256": "9cb31c843434c66b640f7b31c96e308f10fe97f885880a115aac8b0eb7918958",
+      "originalPrivateArtifactSha256": "9cb31c843434c66b640f7b31c96e308f10fe97f885880a115aac8b0eb7918958",
+      "originalAndPublicArtifactByteIdentical": true,
+      "originalAndPublicRecordOrderAndUtf8Equal": true,
+      "safeResultSha256": "6884aeef447a581678172251db0f8db91bc6128339553b37e43409930d31dfcd",
+      "independentCheckSha256": "e008d8d3f7d588a4da4c00dad1cd0d3e94fd2c65fcfa4e9325af3d0e620f4f46",
+      "selectorLimitations": [
+        "Paragraph IDs were visually reconstructed, not supplied by an authoritative manuscript.",
+        "The previous paragraph reset selected alternating lines rather than one word per paragraph."
+      ]
+    },
+    {
+      "testId": "T05",
+      "title": "Sentence-boundary readings from the faithful body",
+      "family": "sentence-edge-null-cipher",
+      "recordedRegistrationCommit": "8f4fa38bf24db7e432410c4daaa29e9de486156c",
+      "recordedProtocolSha256": "9a9441d1ad4e6a10c11addd06b31f9d443c0e82faa9caa1438379cc7c58742be",
+      "sourceHashes": {
+        "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+        "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+        "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b"
+      },
+      "labeledStreamCount": 42,
+      "uniqueStreamCountReported": 42,
+      "uniqueFormCountReported": 54,
+      "formCountAuthority": "Original primary evaluation plus saved independent check; no form construction in this audit.",
+      "separateSavedFormArtifact": null,
+      "formPolicy": "Original exact + whitespace-only-compacted forms.",
+      "declaredFormats": [
+        "wif",
+        "minikey",
+        "hex64",
+        "bip39"
+      ],
+      "minikeyLengthsFromPinnedCode": [
+        22,
+        30
+      ],
+      "allDeclaredValidCountsZero": true,
+      "legacyMinikeyShapeOccurrences": 6,
+      "directWholeCohortSupplementalReplayFound": false,
+      "missingDirectRecordedGates": [
+        "minikey26",
+        "extended_private",
+        "bip38",
+        "address",
+        "sec_public"
+      ],
+      "logicalMinikey26ShapeExclusionFromZero22Prefix": false,
+      "publicArtifact": "analysis_outputs/continuation_20261110/batch20/T05/STREAMS.json",
+      "publicArtifactBytes": 9451,
+      "publicArtifactSha256": "5039524f203d542fa4d072185cd299e4703f5e3b559a1da322cfbf1fa3e86fad",
+      "originalPrivateArtifactSha256": "5039524f203d542fa4d072185cd299e4703f5e3b559a1da322cfbf1fa3e86fad",
+      "originalAndPublicArtifactByteIdentical": true,
+      "originalAndPublicRecordOrderAndUtf8Equal": true,
+      "safeResultSha256": "dbe4ca0d3b0fcfe1d35dd0a7480828b9764f6e91da3c78235bcf69891d95346d",
+      "independentCheckSha256": "d131b5081e559bdfe5073888159d9ebba8d0e7167017137b3b8aa21383edbccc",
+      "selectorLimitations": [
+        "Sentence segmentation is a declared inference; alternate segmentation is outside this test.",
+        "Older sentence audits only checked local instruction terms and did not validate full-body literal records."
+      ]
+    },
+    {
+      "testId": "T06",
+      "title": "Visible capitalization as a data carrier",
+      "family": "capitalization-carrier",
+      "recordedRegistrationCommit": "8f4fa38bf24db7e432410c4daaa29e9de486156c",
+      "recordedProtocolSha256": "9a9441d1ad4e6a10c11addd06b31f9d443c0e82faa9caa1438379cc7c58742be",
+      "sourceHashes": {
+        "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+        "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+        "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b"
+      },
+      "labeledStreamCount": 60,
+      "uniqueStreamCountReported": 58,
+      "uniqueFormCountReported": 66,
+      "formCountAuthority": "Original primary evaluation plus saved independent check; no form construction in this audit.",
+      "separateSavedFormArtifact": null,
+      "formPolicy": "Original exact + whitespace-only-compacted forms.",
+      "declaredFormats": [
+        "wif",
+        "minikey",
+        "hex64",
+        "bip39"
+      ],
+      "minikeyLengthsFromPinnedCode": [
+        22,
+        30
+      ],
+      "allDeclaredValidCountsZero": true,
+      "legacyMinikeyShapeOccurrences": 12,
+      "directWholeCohortSupplementalReplayFound": false,
+      "missingDirectRecordedGates": [
+        "minikey26",
+        "extended_private",
+        "bip38",
+        "address",
+        "sec_public"
+      ],
+      "logicalMinikey26ShapeExclusionFromZero22Prefix": false,
+      "publicArtifact": "analysis_outputs/continuation_20261110/batch20/T06/STREAMS.json",
+      "publicArtifactBytes": 10658,
+      "publicArtifactSha256": "5f377eef671eac7a3211c4581fd74c68dbb9695e77113db9153b176059f965cf",
+      "originalPrivateArtifactSha256": "5f377eef671eac7a3211c4581fd74c68dbb9695e77113db9153b176059f965cf",
+      "originalAndPublicArtifactByteIdentical": true,
+      "originalAndPublicRecordOrderAndUtf8Equal": true,
+      "safeResultSha256": "46c2a6391d344bfbbd6f049d212a5d882a303f2b1b65c390960cee51d046e07e",
+      "independentCheckSha256": "635798d6590d9deef9cec7a4f43f9a11e88ba6b49c99391100277e3dd0dd0561",
+      "selectorLimitations": [
+        "Grammar, ordinary capitalization and the all-caps paragraph are strong null explanations.",
+        "This uses visible case, not unreliable DOCM bold labels.",
+        "A positive requires source-crop verification of the precise case choices."
+      ]
+    },
+    {
+      "testId": "G03",
+      "title": "Orange/black two-alphabet channel",
+      "family": "printed-highlight-state",
+      "recordedRegistrationCommit": "90ad1d694b0eb236494ae199b87de05db5e3d331",
+      "recordedProtocolSha256": "e69215cd826a8fd63c588d5fe9295a71a1807278fd499b9a77cff119c48d4f53",
+      "sourceHashes": {
+        "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+        "analysis_outputs/continuation_20261109/george_sand/highlight_physical_lines.json": "cc3b71163cd186c19337462639551f6ab97c407268e5e478ee5f101d716763f9",
+        "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+        "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b"
+      },
+      "labeledStreamCount": 1296,
+      "uniqueStreamCountReported": 615,
+      "uniqueFormCountReported": 616,
+      "formCountAuthority": "Original primary evaluation plus saved independent check; no form construction in this audit.",
+      "separateSavedFormArtifact": null,
+      "formPolicy": "Original exact + whitespace-only-compacted forms.",
+      "declaredFormats": [
+        "wif",
+        "minikey",
+        "hex64",
+        "bip39"
+      ],
+      "minikeyLengthsFromPinnedCode": [
+        22,
+        30
+      ],
+      "allDeclaredValidCountsZero": true,
+      "legacyMinikeyShapeOccurrences": 0,
+      "directWholeCohortSupplementalReplayFound": false,
+      "missingDirectRecordedGates": [
+        "minikey26",
+        "extended_private",
+        "bip38",
+        "address",
+        "sec_public"
+      ],
+      "logicalMinikey26ShapeExclusionFromZero22Prefix": true,
+      "publicArtifact": "analysis_outputs/continuation_20261110/batch20/G03/STREAMS.json",
+      "publicArtifactBytes": 328018,
+      "publicArtifactSha256": "d2880ebef4d78bcc95d9d6d143ef29a1b9d1a4ac3540cafae821d7ddbb942211",
+      "originalPrivateArtifactSha256": "d2880ebef4d78bcc95d9d6d143ef29a1b9d1a4ac3540cafae821d7ddbb942211",
+      "originalAndPublicArtifactByteIdentical": true,
+      "originalAndPublicRecordOrderAndUtf8Equal": true,
+      "safeResultSha256": "1dd11d9068514514d1812b34925d4da2fa005872f19d01edae55a4a1069385a2",
+      "independentCheckSha256": "acfbdd79451b6a2443e325f1f35a0d78223adf62f1e9bbce1bae13ae9bd9422d",
+      "selectorLimitations": [
+        "Color encoding was not specified by the creator; no DOCM/manual partial-bold state is used.",
+        "Readable-looking fragments or a weak checksum do not establish intentional encoding."
+      ]
+    }
+  ],
+  "totals": {
+    "T01toT06LabeledRecords": 1298,
+    "T01toT06PerMethodUniqueFormsSum": 1960,
+    "includingG03LabeledRecords": 2594,
+    "includingG03PerMethodUniqueFormsSum": 2576,
+    "sevenArtifactBytes": 613097,
+    "crossCohortUniqueUnionComputed": false
+  },
+  "knownReplayScopes": [
+    {
+      "name": "Original saved independent checks",
+      "scope": "Use each RESULT evaluation.formats; all audited cohorts retain4formats. The verifier minikey lengths are22/30.",
+      "owners": [
+        "scripts/verify_batch20_text.py"
+      ]
+    },
+    {
+      "name": "Batch20T07\u2013T10",
+      "scope": "Each consumes frozen-clean42forms from old1651a33d Sandsource, not these7STREAMS artifacts. Adds extended_private/BIP38/address/SEC to that42-form cohort only.",
+      "owners": [
+        "analysis_outputs/continuation_20261110/batch20/T07/RESULT.json",
+        "analysis_outputs/continuation_20261110/batch20/T08/RESULT.json",
+        "analysis_outputs/continuation_20261110/batch20/T09/RESULT.json",
+        "analysis_outputs/continuation_20261110/batch20/T10/RESULT.json",
+        "scripts/batch20_text.py"
+      ]
+    },
+    {
+      "name": "26compatibility",
+      "scope": "Unchanged Node builder22streams/42forms and4global families/24DAGlanguages only; no auditedSTREAMS artifact input.",
+      "owners": [
+        "analysis_outputs/continuation_20261110/minikey26_compatibility/PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/minikey26_compatibility/RESULT.json",
+        "scripts/minikey26_compatibility.py"
+      ]
+    },
+    {
+      "name": "Column151",
+      "scope": "All7sharedformats plusown22/26/30minikey gates on3fixed151/76/75readings/6forms; distinct source/selector. Printed-lines source is a witness, not a replay ofT01\u2013T06/G03.",
+      "owners": [
+        "analysis_outputs/continuation_20261110/column151_sand/PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/column151_sand/EXECUTION.json",
+        "scripts/column151_sand_probe.py"
+      ]
+    },
+    {
+      "name": "Issue27stream andstride replays",
+      "scope": "DifferentIssue27source files/populations; no auditedbatch20STREAMS artifact input, and originally shared4format engine.",
+      "owners": [
+        "analysis_outputs/continuation_20261110/issue27_stream_coverage/PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/issue27_stride12/PROTOCOL.json"
+      ]
+    },
+    {
+      "name": "Mirrorboundary/global",
+      "scope": "Own modeled source families/pair paths/24languages; not an attested whole-cohort replay of these exact7frozen artifacts; no seven-format broadening evidenced.",
+      "owners": [
+        "analysis_outputs/continuation_20261110/mirror_boundary_review/PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/mirror_global_envelope/PROTOCOL.json"
+      ]
+    }
+  ],
+  "owningCodeAndProtocolPins": {
+    "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json": "e69215cd826a8fd63c588d5fe9295a71a1807278fd499b9a77cff119c48d4f53",
+    "analysis_outputs/continuation_20261110/batch20/T07/RESULT.json": "e9d588a0b1edf7b6fd8765008176a86e742d0ed970941a1b3675064bcf335bfe",
+    "analysis_outputs/continuation_20261110/batch20/T08/RESULT.json": "5f048395cb554074e4dd1a3f440a559aaa818f87cc1057eb837d8ce79ae05490",
+    "analysis_outputs/continuation_20261110/batch20/T09/RESULT.json": "340eac37ca3dfa14f7c203f6c59603baabb1fa5cace4c0c80e11210e97575357",
+    "analysis_outputs/continuation_20261110/batch20/T10/RESULT.json": "03aad09009baac884a4c874c2c5d22aa3381482a9729bd1001851e0c28ba688b",
+    "analysis_outputs/continuation_20261110/batch20/TEXT_PROTOCOL.json": "9a9441d1ad4e6a10c11addd06b31f9d443c0e82faa9caa1438379cc7c58742be",
+    "analysis_outputs/continuation_20261110/column151_sand/EXECUTION.json": "af5081ba4384d56f3fa15bea1c43250fda00379a06ceec62cad80daf5abf1a2c",
+    "analysis_outputs/continuation_20261110/column151_sand/PROTOCOL.json": "8e3cc1ed368e4bcb5c402f295e915b83d30d8ec62cd571ee968351e59a8b42ac",
+    "analysis_outputs/continuation_20261110/issue27_stream_coverage/PROTOCOL.json": "0f4699ac1bddbc661c7b583fc638f0adbcfc98e7372d604bfed81b770a9a0343",
+    "analysis_outputs/continuation_20261110/issue27_stride12/PROTOCOL.json": "6e5a4bf93303c29e4447c0e18c22f3e844509c30b9c6e3ee4202df2aa6c3ca69",
+    "analysis_outputs/continuation_20261110/minikey26_compatibility/PROTOCOL.json": "89b702e72d08aa4ea4ccd423f66409257d377a894e96bce0c791ff5fb11bb174",
+    "analysis_outputs/continuation_20261110/minikey26_compatibility/RESULT.json": "8eb395f125c9c8eb953ad0c6db8a2d662b517099fdc5763e5e69503918d2e30e",
+    "analysis_outputs/continuation_20261110/mirror_boundary_review/PROTOCOL.json": "53c34fd6899bddd3ca763a7025a5c03ca53341e70b702dca15a15f0116605b6c",
+    "analysis_outputs/continuation_20261110/mirror_global_envelope/PROTOCOL.json": "9c0edd8e5882ccf474c2cb59c82faeb43fa468e5ec8518e1bfe8ed2e66ebdd8e",
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d",
+    "scripts/batch20_geometry.py": "e7786acc472fa3f7a294fe6391e74bd6f8840017e30d9f54941544019dbafb9a",
+    "scripts/batch20_text.py": "dedd23de8dc8cd58d9dfd9916f1ecfabb1149d96b4c0b21c42ad47aae9b8f747",
+    "scripts/column151_sand_probe.py": "c08c194e39dffdc5b8f6de2b7000824169225ab992963aebc1b7d34cb98b14b6",
+    "scripts/minikey26_compatibility.py": "b76da0999516f068d0c97689b873d860b3735f33cb9a2060a1099b8c1d9673a5",
+    "scripts/verify_batch20_text.py": "aac51bdc331c6473f8c33b98afb98c55622004006795f590cd072497ff6fdeb9"
+  },
+  "prefixImplication": {
+    "appliesTo": "G03sameexact/compacted frozen forms only",
+    "premise": "Saved G03 shapeCounts.minikey==0, where pinned generator enumerates both22and30embeddedshapes.",
+    "code": "scripts/batch20_common.py:225\u2013235; minikeyrules22/30; lookaheadS+21Base58hasnoouterboundary; scan_streams:281\u2013286 increments shape count before checksum.",
+    "inference": "Every26-characterS/Base58shape contains a22-characterS/Base58prefix at the same start. Therefore a26shape would contradict the recordedzero22shape count. This establishes no26shape and no possible26checksum positive in the unchanged G03 forms without new enumeration.",
+    "direct26ReplayClaimed": false,
+    "otherNewFormatsRuledOutByThisArgument": false
+  },
+  "finiteGap": {
+    "T01toT06SupplementalGates": [
+      "minikey26",
+      "extended_private",
+      "bip38",
+      "address",
+      "sec_public"
+    ],
+    "G03DirectUnattestedGates": [
+      "minikey26",
+      "extended_private",
+      "bip38",
+      "address",
+      "sec_public"
+    ],
+    "G03Mini26LogicallyClosedForFrozenForms": true,
+    "G03RemainingEffectiveSupplementalGates": [
+      "extended_private",
+      "bip38",
+      "address",
+      "sec_public"
+    ],
+    "notAClaimShapesOrPositivesExist": true,
+    "noAllCorpusHistoricalAbsenceClaim": "No owning later complete replay found within the identified current registered corpus/known replays; unlogged or hypothetical overlaps are not asserted absent."
+  },
+  "selectorBoundary": [
+    "Consume the exact7saved byte-pinned artifacts if a separately authorized compatibility replay is pursued; do not regenerate selectors.",
+    "Do not add151source units, change paragraph/sentence/case/highlight models, alter invalid-group barriers or update optical fields under the label of a format recheck.",
+    "T01uses a paper-named orientation procedure but its source/phase/reset choices remain declared; T02/T03/T06/G03carry explicit exploratory or non-creator-instruction limits. T04/T05segmentation is declared inference.",
+    "Any incidental overlap with old42forms, DAGlanguages or new151readings has not been computed and is not whole-cohort coverage evidence."
+  ],
+  "activity": {
+    "sourceArtifactIntegrityAndRecordIdentityOnly": true,
+    "newFormsOrReadingsConstructed": 0,
+    "newShapeEnumerations": 0,
+    "validatorOrChecksumCalls": 0,
+    "scalarOrAddressDerivations": 0,
+    "networkRequests": 0,
+    "publicEdits": 0,
+    "gitOperations": 0,
+    "executionPermissionGrantedByThisAudit": false
+  }
+}

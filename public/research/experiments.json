@@ -1104,6 +1104,34 @@
         "Both semantic readers had prior source/procedure exposure; no calibrated message-exclusion claim.",
         "Seven generic validators share pinned code; reconstruction and minikey enumeration are independent."
       ]
+    },
+    {
+      "id": "batch20-supplemental-formats",
+      "title": "Supplemental formats on saved batch20 readings",
+      "status": "in-progress",
+      "kind": "validation-audit",
+      "independentTheory": false,
+      "scope": "Exact saved T01–T06 and G03 artifacts: 2,594 labelled readings across seven cohorts. Four additional record formats on all seven; 26-character minikey checks on T01–T06.",
+      "result": "Both frozen implementations passed source-free controls and technical review. The exact protocol is being published before target execution; no supplemental target result yet.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/batch20_supplemental/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20_supplemental/PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/batch20_supplemental/MANIFEST.json",
+        "analysis_outputs/continuation_20261110/batch20_supplemental/COVERAGE.md",
+        "analysis_outputs/continuation_20261110/batch20_supplemental/CODE_REVIEW.json",
+        "analysis_outputs/continuation_20261110/batch20_supplemental/CONTROLS_RECEIPT.json",
+        "analysis_outputs/continuation_20261110/batch20_supplemental/INDEPENDENT_CONTROL_RECEIPT.json"
+      ],
+      "reproduce": [
+        "python3 scripts/batch20_supplemental_formats.py --self-test",
+        "python3 scripts/verify_batch20_supplemental.py --self-test"
+      ],
+      "limitations": [
+        "This is compatibility coverage on existing outputs, not a new cipher mechanism.",
+        "The four added record validators share pinned code; form construction and minikey enumeration are independently implemented.",
+        "Historical source, OCR, geometry and selector limitations remain. A scoped negative cannot exclude other encodings or the puzzle.",
+        "G03 minikey26 absence follows from its old zero embedded22 shapes; no new G03 minikey scan is included."
+      ]
     }
   ],
   "countingPolicy": "This is a curated set of method families/source audits, not a total count of independent theories. Historical administrative gates and correlated variants are not counted as independent experiments. Falsified means only the concrete stated candidate/address scope.",

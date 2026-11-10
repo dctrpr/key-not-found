@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "testId": "batch20-supplemental-fixed-formats",
+  "batchId": "keiser-batch20-supplemental-fixed-formats-20261110",
+  "cohortOrder": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T06",
+    "G03"
+  ],
+  "cohortExpectations": [
+    {
+      "testId": "T01",
+      "streamCount": 196,
+      "uniqueStreamCount": 152,
+      "uniqueFormCount": 236,
+      "legacyMinikeyShapeOccurrences": 21
+    },
+    {
+      "testId": "T02",
+      "streamCount": 628,
+      "uniqueStreamCount": 628,
+      "uniqueFormCount": 1120,
+      "legacyMinikeyShapeOccurrences": 38
+    },
+    {
+      "testId": "T03",
+      "streamCount": 120,
+      "uniqueStreamCount": 120,
+      "uniqueFormCount": 168,
+      "legacyMinikeyShapeOccurrences": 16
+    },
+    {
+      "testId": "T04",
+      "streamCount": 252,
+      "uniqueStreamCount": 244,
+      "uniqueFormCount": 316,
+      "legacyMinikeyShapeOccurrences": 1
+    },
+    {
+      "testId": "T05",
+      "streamCount": 42,
+      "uniqueStreamCount": 42,
+      "uniqueFormCount": 54,
+      "legacyMinikeyShapeOccurrences": 6
+    },
+    {
+      "testId": "T06",
+      "streamCount": 60,
+      "uniqueStreamCount": 58,
+      "uniqueFormCount": 66,
+      "legacyMinikeyShapeOccurrences": 12
+    },
+    {
+      "testId": "G03",
+      "streamCount": 1296,
+      "uniqueStreamCount": 615,
+      "uniqueFormCount": 616,
+      "legacyMinikeyShapeOccurrences": 0
+    }
+  ],
+  "manifestPath": "analysis_outputs/continuation_20261110/batch20_supplemental/MANIFEST.json",
+  "manifestSha256": "18c24b63f78a135f0cb43b380451184532fe443af4c118f2e71d2c638efc5b35",
+  "protocolPath": "analysis_outputs/continuation_20261110/batch20_supplemental/PROTOCOL.json",
+  "sourcePins": {
+    "analysis_outputs/continuation_20261110/batch20/T01/STREAMS.json": "2900473b467c74c18ee29f841f0fbb150376ffa42ab8e9862d9d0957fce8b395",
+    "analysis_outputs/continuation_20261110/batch20/T01/RESULT.json": "f96c512124f8ab5314db28fe28627f6217d84a166f880c547c017b6f1acf386c",
+    "analysis_outputs/continuation_20261110/batch20/T01/INDEPENDENT_CHECK.json": "c635f12fdf2ae8a22db366748cd38653259e446a59c23359608054ec899ba4e9",
+    "analysis_outputs/continuation_20261110/batch20/T02/STREAMS.json": "b417af72e5cbacd69e928f561e811a71fee3e2ce2e68c0d29527a24863301e77",
+    "analysis_outputs/continuation_20261110/batch20/T02/RESULT.json": "40a4cd340eec86befea09a2636ff9d31a42c726db2933a2a24656c521d0bd93a",
+    "analysis_outputs/continuation_20261110/batch20/T02/INDEPENDENT_CHECK.json": "e72a074973f060255fe9fe549d8bd097a2fe135954d624295d5a3c9b9192967e",
+    "analysis_outputs/continuation_20261110/batch20/T03/STREAMS.json": "8977b65a1f14ddb36b97e05e58df145519f36f56ad18bf30957b328ec8d6c90f",
+    "analysis_outputs/continuation_20261110/batch20/T03/RESULT.json": "7322a06a7ee5218d6d49de9a4b840633d98fa3589bf004ca9d81401e94575ab6",
+    "analysis_outputs/continuation_20261110/batch20/T03/INDEPENDENT_CHECK.json": "4ef1781f09a6d8eec238250409994e5cb467e0ddf41867aff7a60e35d8f8d35b",
+    "analysis_outputs/continuation_20261110/batch20/T04/STREAMS.json": "9cb31c843434c66b640f7b31c96e308f10fe97f885880a115aac8b0eb7918958",
+    "analysis_outputs/continuation_20261110/batch20/T04/RESULT.json": "6884aeef447a581678172251db0f8db91bc6128339553b37e43409930d31dfcd",
+    "analysis_outputs/continuation_20261110/batch20/T04/INDEPENDENT_CHECK.json": "e008d8d3f7d588a4da4c00dad1cd0d3e94fd2c65fcfa4e9325af3d0e620f4f46",
+    "analysis_outputs/continuation_20261110/batch20/T05/STREAMS.json": "5039524f203d542fa4d072185cd299e4703f5e3b559a1da322cfbf1fa3e86fad",
+    "analysis_outputs/continuation_20261110/batch20/T05/RESULT.json": "dbe4ca0d3b0fcfe1d35dd0a7480828b9764f6e91da3c78235bcf69891d95346d",
+    "analysis_outputs/continuation_20261110/batch20/T05/INDEPENDENT_CHECK.json": "d131b5081e559bdfe5073888159d9ebba8d0e7167017137b3b8aa21383edbccc",
+    "analysis_outputs/continuation_20261110/batch20/T06/STREAMS.json": "5f377eef671eac7a3211c4581fd74c68dbb9695e77113db9153b176059f965cf",
+    "analysis_outputs/continuation_20261110/batch20/T06/RESULT.json": "46c2a6391d344bfbbd6f049d212a5d882a303f2b1b65c390960cee51d046e07e",
+    "analysis_outputs/continuation_20261110/batch20/T06/INDEPENDENT_CHECK.json": "635798d6590d9deef9cec7a4f43f9a11e88ba6b49c99391100277e3dd0dd0561",
+    "analysis_outputs/continuation_20261110/batch20/G03/STREAMS.json": "d2880ebef4d78bcc95d9d6d143ef29a1b9d1a4ac3540cafae821d7ddbb942211",
+    "analysis_outputs/continuation_20261110/batch20/G03/RESULT.json": "1dd11d9068514514d1812b34925d4da2fa005872f19d01edae55a4a1069385a2",
+    "analysis_outputs/continuation_20261110/batch20/G03/INDEPENDENT_CHECK.json": "acfbdd79451b6a2443e325f1f35a0d78223adf62f1e9bbce1bae13ae9bd9422d",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "analysis_outputs/continuation_20261110/batch20_supplemental/MANIFEST.json": "18c24b63f78a135f0cb43b380451184532fe443af4c118f2e71d2c638efc5b35"
+  },
+  "scripts": [
+    "scripts/batch20_supplemental_formats.py",
+    "scripts/verify_batch20_supplemental.py",
+    "scripts/batch20_common.py"
+  ],
+  "commonSha256": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d",
+  "commonFormats": [
+    "extended_private",
+    "bip38",
+    "address",
+    "sec_public"
+  ],
+  "caps": {
+    "sourceJsonBytes": 2000000,
+    "registeredBlobBytes": 20000000,
+    "protocolBytes": 1000000,
+    "privateArtifactBytes": 20000000,
+    "streamCodepoints": 100000,
+    "totalSourceCodepoints": 2000000,
+    "totalFormCodepoints": 4000000,
+    "shapeOccurrencesPerCohort": 1000000,
+    "uniqueShapesPerCohort": 500000
+  },
+  "formsPolicy": "Per cohort: unique exact text union Unicode-whitespace-only compaction via re.sub(r\"\\s\", \"\", text), deduplicated/sorted by Python string order. Empty strings retained. No cross-cohort dedup.",
+  "privateForms": {
+    "file": "FORMS.private.json",
+    "topKeys": [
+      "schemaVersion",
+      "testId",
+      "manifestSha256",
+      "cohorts"
+    ],
+    "cohortKeys": [
+      "testId",
+      "sourceArtifactSha256",
+      "streams",
+      "forms"
+    ],
+    "streams": "Complete original stream objects, order/IDs/text unchanged; T01..T06 extract dict.streams; G03 list. All source optional fields preserved.",
+    "forms": "Sorted unique list of strings."
+  },
+  "privateValidation": {
+    "file": "VALIDATION.private.json",
+    "topKeys": [
+      "schemaVersion",
+      "testId",
+      "manifestSha256",
+      "cohorts"
+    ],
+    "cohortKeys": [
+      "testId",
+      "common4",
+      "rawShapeValues",
+      "rawPositives",
+      "minikey26",
+      "minikey26Shapes",
+      "minikey26Positives"
+    ],
+    "common4Keys": [
+      "formats",
+      "shapeCounts",
+      "uniqueShapeCounts",
+      "validationCalls",
+      "validCounts",
+      "privateReviewRequired",
+      "fingerprintRule"
+    ],
+    "rawShapeValues": "Dict format->sorted distinct raw strings; occurrence counts before dedup. validate_record exactly once per distinct raw string.",
+    "rawPositives": "List in format order then raw value lexical order. Each object {format,value,fingerprint,metadata}; metadata exact unchanged common return. validCounts counts distinct canonical fingerprints per format, not raw aliases.",
+    "minikey26Keys": [
+      "status",
+      "enumerated",
+      "length",
+      "shapeOccurrences",
+      "uniqueShapeCount",
+      "checksumCalls",
+      "validCount",
+      "privateReviewRequired",
+      "fingerprintRule",
+      "proof"
+    ],
+    "minikey26Checked": {
+      "status": "checked",
+      "enumerated": true,
+      "length": 26,
+      "proof": null
+    },
+    "minikey26Shapes": "Sorted distinct exact26 S/Base58 strings; every overlapping occurrence counted before dedup, no boundaries. Questionmark checksum once per unique string; no bare minikey SHA.",
+    "minikey26Positives": "List sorted by value; each {format:\"minikey\",length:26,checkBits:8,private:true,fingerprint,value}. Fingerprint common.fingerprint(\"minikey\",value.encode(\"ascii\")); never bare value hash.",
+    "G03": {
+      "status": "inferred-no-shapes-from-zero-legacy22",
+      "enumerated": false,
+      "length": 26,
+      "shapeOccurrences": 0,
+      "uniqueShapeCount": 0,
+      "checksumCalls": 0,
+      "validCount": 0,
+      "privateReviewRequired": false,
+      "proof": {
+        "legacyMinikeyShapeOccurrences": 0,
+        "legacyCheckPassed": true,
+        "legacyCheckValidRecords": 0,
+        "prefixLength": 22,
+        "extendedLength": 26,
+        "outerBoundaryRequired": false,
+        "sameFrozenForms": true
+      },
+      "shapes": [],
+      "positives": []
+    }
+  },
+  "legacyWitnessGate": {
+    "result": "testId, evaluation.{streamCount,uniqueStreamCount,uniqueFormCount,formats,shapeCounts,validCounts}; counts match manifest; formats [wif,minikey,hex64,bip39], all validCounts0; legacy minikey occurrences match manifest.",
+    "check": "testId,passed is true,streamCount,uniqueFormCount,shapeCounts,validRecords==0,networkQueries==0; counts/shapeCounts equal old RESULT.",
+    "G03": "Require manifest logicalMinikey26ShapeExclusionFromZero22Prefix true, legacy minikey count0, current same-form population. No old shape/validator calls."
+  },
+  "safeResultKeys": [
+    "version",
+    "testId",
+    "batchId",
+    "status",
+    "startedAtUTC",
+    "completedAtUTC",
+    "registrationCommit",
+    "protocolSha256",
+    "sourceHashes",
+    "scriptHashes",
+    "manifestSha256",
+    "scopeComplete",
+    "supplementalGatesComplete",
+    "selectorRegenerated",
+    "semanticReviewPerformed",
+    "privateReviewRequired",
+    "cohorts",
+    "totals",
+    "privateArtifactIntegrity",
+    "activity",
+    "limitations"
+  ],
+  "safeStatus": "supplemental-fixed-artifact-scope-complete",
+  "safeCohortKeys": [
+    "testId",
+    "streamCount",
+    "uniqueStreamCount",
+    "uniqueFormCount",
+    "common4",
+    "minikey26"
+  ],
+  "safeCommon4Keys": [
+    "formats",
+    "shapeCounts",
+    "uniqueShapeCounts",
+    "validationCalls",
+    "validCounts"
+  ],
+  "safeMini26Keys": [
+    "status",
+    "enumerated",
+    "shapeOccurrences",
+    "uniqueShapeCount",
+    "checksumCalls",
+    "validCount"
+  ],
+  "safeTotalsKeys": [
+    "cohorts",
+    "labeledStreams",
+    "sumPerCohortUniqueForms",
+    "commonShapeCounts",
+    "commonUniqueShapeCountsSum",
+    "commonValidationCalls",
+    "commonValidCountsSum",
+    "minikey26ShapeOccurrences",
+    "minikey26UniqueShapesSum",
+    "minikey26ChecksumCalls",
+    "minikey26ValidCountSum"
+  ],
+  "privateArtifactIntegrity": "Dict filename->whole-file SHA256, two exact private filenames above; not per stream/value hashes.",
+  "activity": {
+    "selectorRegenerations": 0,
+    "newTransformsBeyondExistingForms": 0,
+    "oldSharedMinikeyCalls": 0,
+    "G03Minikey26Enumerations": 0,
+    "G03Minikey26ChecksumCalls": 0,
+    "minikeyScalarHashes": 0,
+    "proseToKeyHashes": 0,
+    "scalarDerivations": 0,
+    "addressDerivations": 0,
+    "seedDerivations": 0,
+    "childKeyDerivations": 0,
+    "networkQueries": 0,
+    "transactions": 0
+  },
+  "cli": "--definition | --self-test | --run --protocol FIXED_PUBLIC_PATH --registration-commit 40HEX --out FRESH_PRIVATE_DIR. --run public script only; actual Git registration object required; all24+3 current/registered bytes gated before target JSON parse. Output outside entire site checkout; parent0700/fresh dir0700/files0600.",
+  "functionContract": {
+    "make_forms": "make_forms(streams:list[dict]) -> sorted list[str]",
+    "scan_minikey26_forms": "scan_minikey26_forms(forms,common) -> (summary,sortedShapeStrings,positiveRecords)",
+    "evaluate_common4": "evaluate_common4(forms,common) -> (summary,rawShapeValues,rawPositives)",
+    "validate_saved_source": "validate_saved_source(cohortId,raw,oldResult,oldCheck,manifestCohort) -> original streams",
+    "evaluate_cohort": "evaluate_cohort(cohortId,streams,manifestCohort,common) -> (privateFormsCohort,privateValidationCohort)"
+  }
+}
