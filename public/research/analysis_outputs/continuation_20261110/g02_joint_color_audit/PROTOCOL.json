@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "preparedAtUTC": "2026-11-10T22:19:32.436Z",
+  "definition": {
+    "id": "g02-joint-color-source-audit",
+    "pairs": [
+      [
+        76,
+        77
+      ],
+      [
+        77,
+        76
+      ],
+      [
+        78,
+        79
+      ],
+      [
+        79,
+        78
+      ]
+    ],
+    "selectors": [
+      "same-color",
+      "opposite-color",
+      "source-only",
+      "target-only"
+    ],
+    "sourcePopulation": "All original G02 target lexical word objects, preserving row/token order and IDs.",
+    "geometry": "Owning load_geometry and point_rotate helpers; no OCR, image operation, fitting or repair.",
+    "guard": "max(12, frozen centerUncertaintyPx)",
+    "numericDomain": "Freeze owning finite float centers/guards/mask coordinates as exact binary rationals. Evaluate the closed square without clipping, rounding or added tolerance.",
+    "sourcePredicate": "a <= 2544-x < c and b <= y < d in original source rectangles.",
+    "targetPredicate": "a <= x < c and b <= y < d in original target rectangles.",
+    "coupling": "Source and target colors are evaluated at the same displaced point.",
+    "partition": "All rectangle edge coordinates, reflected source x edges, square endpoints, and one midpoint of every open interval; all Cartesian endpoint/interior cells.",
+    "overlap": "Any cell with both colors on either side makes the whole word unresolved. No color or zero state is guessed.",
+    "compatibility": "Compare nominal exact-rational colors with original float predicates; compare every original guard-unambiguous class with the full new class set. Any disagreement leaves the word unresolved.",
+    "membership": "must if every classifiable cell selects the word; optional if some do; out if none do; unresolved if any overlap or compatibility disagreement occurs.",
+    "pathCounts": "2^optional per selector is only an independent-word assignment upper bound; null for any unresolved word. No strings or paths are generated.",
+    "maximumCanonicalRows": 142,
+    "canonicalTokens": 1258,
+    "canonicalLexicalWords": 1243,
+    "targetWordPositionsByPair": [
+      263,
+      274,
+      226,
+      199
+    ],
+    "maximumTotalPartitionPoints": 200000,
+    "newCipherOutputs": 0,
+    "keyChecks": 0,
+    "derivations": 0,
+    "historyQueries": 0,
+    "walletActions": 0,
+    "negativeResultClaimed": false
+  },
+  "sourceHashes": {
+    "sources/printed-lines.json": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "sources/word-geometry-20261110.json": "e3348d0d60d3097b05d0afdb0a1fccf66409274408af9ae7a9369c37fe596e9f",
+    "analysis_outputs/3d_article_map/article_3d_map_data.json": "22c2285a6cd53f6bdda7bdd284d556c52ff55dea0a55cd1b549acbb81443eac3",
+    "analysis_outputs/continuation_20261109/inverted_duplex/inverted_duplex.json": "4d6d029bf5f7e90acfa1d456bc94e790913c7865b923c9367212c219867742f3",
+    "analysis_outputs/continuation_20261110/batch20/G02/RESULT.json": "4f596f955299fe1a5cc19c48ba36454efc9cd719c8f0570963eac1b98bbf3fd6",
+    "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json": "e69215cd826a8fd63c588d5fe9295a71a1807278fd499b9a77cff119c48d4f53"
+  },
+  "scriptHashes": {
+    "scripts/g02_joint_source_audit.py": "e6202356d52fd382189bc736b56df2552122c530d75196363921d37aaa7e619f",
+    "scripts/verify_g02_joint_source_audit.py": "764993caf6f2aeda13b6aec31abdaac3a68136a0b4a7603ba353b17471bb9fb1",
+    "scripts/batch20_geometry.py": "e7786acc472fa3f7a294fe6391e74bd6f8840017e30d9f54941544019dbafb9a"
+  },
+  "preflightSha256": "20dd1e820f41d35e7c8bfe94d9d00c4be206536ef6ae4310aeea91d38dd078b7",
+  "publicationGate": "The maintainer verifies the exact remote commit and each current registered input/code/protocol blob before the offline target classification. A separate implementation reconstructs the full ordered metadata inventory."
+}

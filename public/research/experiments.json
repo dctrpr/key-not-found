@@ -581,15 +581,16 @@
     {
       "id": "batch20-g02",
       "title": "Two-sided printed highlight stencil",
-      "status": "partial",
+      "status": "in-progress",
       "kind": "method-test",
       "independentTheory": false,
       "scope": "G02: exact geometry/image procedure, sources and fixed parameters in GEOMETRY_PROTOCOL.json.",
-      "result": "0 complete readings; all 40 selection scopes contained uncertain boundary words. No complete stencil decoding was justified. The hypothesis remains open.",
+      "result": "The original run retained 0 complete readings; 97 word-color uncertainty flags blocked all 40 selector/order scopes. The first/last-word envelopes did not implement the joint source/target color table or retain all matching words. A fixed source-only audit now maps 962 existing word positions without creating readings or validating keys.",
       "evidence": [
         "analysis_outputs/continuation_20261110/batch20/G02/RESULT.md",
         "analysis_outputs/continuation_20261110/batch20/G02/RESULT.json",
-        "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json"
+        "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/g02_joint_color_audit/PROTOCOL.md"
       ],
       "reproduce": [
         "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_geometry.py --run G02 --protocol analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json --registration-commit 90ad1d694b0eb236494ae199b87de05db5e3d331 --out G02-rerun"

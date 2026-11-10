@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "sourceInventory": {
+    "version": 1,
+    "recordedAtUTC": "2026-11-10T22:15:31.067871+00:00",
+    "sourcePreparationOnly": true,
+    "originalG02ResultSha256": "4f596f955299fe1a5cc19c48ba36454efc9cd719c8f0570963eac1b98bbf3fd6",
+    "canonicalRows": 142,
+    "canonicalTokens": 1258,
+    "canonicalLexicalWords": 1243,
+    "geometryStatusCounts": {
+      "complete": 142
+    },
+    "directedPairOrder": [
+      [
+        76,
+        77
+      ],
+      [
+        77,
+        76
+      ],
+      [
+        78,
+        79
+      ],
+      [
+        79,
+        78
+      ]
+    ],
+    "targetWordPositionsByPair": [
+      263,
+      274,
+      226,
+      199
+    ],
+    "savedLegacyFlaggedWordOccurrencesByPair": [
+      20,
+      25,
+      23,
+      29
+    ],
+    "oldCompleteReadings": 0,
+    "oldInconclusiveScopes": 40,
+    "identityChecks": "Four existing source metadata artifacts and the owning geometry script match the original G02 result hashes. Source inventory read token identities and counts only. Saved legacy uncertainty was counted from existing records.",
+    "activity": {
+      "newJointMembershipClassifications": 0,
+      "newCipherOutputs": 0,
+      "keyChecks": 0,
+      "newImages": 0,
+      "newOCR": 0,
+      "derivations": 0,
+      "historyQueries": 0
+    }
+  },
+  "syntheticControls": {
+    "g02_joint_source_audit": {
+      "passed": true,
+      "truthTableCases": 9,
+      "endpointUnionOverlapEmptyAndCouplingControls": 9,
+      "sameClassDifferentNominalColorsControl": true,
+      "unsafeOutputPathControlsRejected": 3,
+      "safePrivatePathControlAccepted": true,
+      "invalidCoordinatesRejected": 4,
+      "targetInputsRead": false,
+      "newCipherOutputs": 0,
+      "keyChecks": 0,
+      "networkRequests": 0
+    },
+    "verify_g02_joint_source_audit": {
+      "exactBinaryFloatControl": true,
+      "exhaustivePaletteCases": 625,
+      "independentHalfGridComparisons": 651,
+      "keyOrFormatChecks": 0,
+      "networkQueries": 0,
+      "passed": true,
+      "sourceMetadataControl": true,
+      "targetExecution": false,
+      "targetInputsRead": false,
+      "textConstructed": false,
+      "truthTablePairs": 9
+    }
+  },
+  "staticCodeReview": {
+    "primarySha256": "e6202356d52fd382189bc736b56df2552122c530d75196363921d37aaa7e619f",
+    "independentVerifierSha256": "764993caf6f2aeda13b6aec31abdaac3a68136a0b4a7603ba353b17471bb9fb1",
+    "bothPassed": true
+  },
+  "newTargetJointMembershipsComputed": 0,
+  "newCipherOutputs": 0,
+  "keyChecks": 0
+}
