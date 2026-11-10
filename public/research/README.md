@@ -10,6 +10,8 @@ The [visual lab and dated frames](VISUAL_GUIDE.md) make the source pages and com
 
 ## Research is continuing
 
+The [supplemental format replay](analysis_outputs/continuation_20261110/batch20_supplemental/RESULT.md) closes a recorded compatibility gap across seven frozen batches / 2,594 saved readings. All 156 address validations and 30 minikey26 checks failed; the other added formats had no shapes. Both implementations matched full forms and validation records. The 2,576 form count is a sum of per-cohort unique forms, not a global union. This adds no selector or whole-puzzle exclusion.
+
 The [complete saved-mirror reading review](analysis_outputs/continuation_20261110/mirror_saved_reading_review/RESULT.md) covers all 40 historical forward orange-mask texts, including eight physical-pair texts and 32 controls. Two AI contexts recognized no coherent second message or determinate puzzle action. This is subjective nonrecognition, with prior source exposure and inherited geometry limits; no new cipher run or family exclusion. The source-model hash difference is privacy metadata/formatting only, with unchanged effective geometry and text.
 
 The [declared-column opener correction](analysis_outputs/continuation_20261110/column151_sand/RESULT.md) is complete: 151 source units, three literal readings, six fixed forms and zero valid format records. Independent reconstruction agreed. Two AI contexts read every output without recognizing a coherent second message; their prior exposure and subjective limits are disclosed. The two opener lines were outside the earlier 149-unit frame. This is a small coverage correction, not a new cipher family. The actual opener pages now join the article in the 3D viewer.

@@ -18,4 +18,6 @@ The declared-column reading frame opens the actual 73/74 opener board. The viewe
 
 The saved-mirror review frame records 40 existing texts, two AI readers and zero recognized instructions. Recognition is subjective and nonblind; its zero is not a cryptographic test result. Eight physical-pair texts and 32 other-pair controls remain separate in the evidence. No new geometry or cipher output was generated.
 
+The supplemental-format frame records seven frozen cohorts, 186 cohort-level validations and zero valid extra records. The check reused the existing outputs and added only the declared missing gates. Counts are tied to the execution and independent full-output verification; they are not a count of independent theories or globally unique candidate values.
+
 The puzzle remains unsolved. The 3D display and visual log do not verify the prize funding.

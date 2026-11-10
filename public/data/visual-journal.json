@@ -559,6 +559,42 @@
       },
       "sceneNote": "Actual source scans. The stack is a viewing aid; it does not apply the historical selector. The evidence separates physical-pair readings from other-pair controls.",
       "methodId": "corrected-orange"
+    },
+    {
+      "id": "batch20-supplemental-formats",
+      "completedAtUTC": "2026-11-10T18:12:51.106Z",
+      "title": "Extra formats. No valid record.",
+      "summary": "The registered compatibility replay covered seven frozen cohorts containing 2,594 saved readings. Both implementations agreed on all forms and validation results.",
+      "result": "All 186 cohort-level validations failed. Other added formats had no shapes. This closes the stated format gap on existing outputs; it does not exclude other readings or the puzzle.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Frozen cohorts",
+          "value": 7,
+          "pointer": "/counts/cohorts"
+        },
+        {
+          "label": "Validation calls",
+          "value": 186,
+          "pointer": "/counts/supplementalValidationCalls"
+        },
+        {
+          "label": "Valid extra records",
+          "value": 0,
+          "pointer": "/counts/validSupplementalRecords"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/batch20_supplemental/RESULT.json",
+        "sha256": "f657ac95fc76700bde2c52f301730ccb2dbbd7ffc81a7889b6d059d6ffb99c67"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/batch20_supplemental/RESULT.md",
+      "scene": {
+        "layout": "spread",
+        "page": 75
+      },
+      "sceneNote": "Actual source scans behind the historical outputs. This viewer illustrates the source; the replay used the frozen artifacts and did not rebuild geometry.",
+      "methodId": "batch20-supplemental-formats"
     }
   ]
 }

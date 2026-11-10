@@ -1108,23 +1108,26 @@
     {
       "id": "batch20-supplemental-formats",
       "title": "Supplemental formats on saved batch20 readings",
-      "status": "in-progress",
+      "status": "tested",
       "kind": "validation-audit",
       "independentTheory": false,
       "scope": "Exact saved T01–T06 and G03 artifacts: 2,594 labelled readings across seven cohorts. Four additional record formats on all seven; 26-character minikey checks on T01–T06.",
-      "result": "Both frozen implementations passed source-free controls and technical review. The exact protocol is being published before target execution; no supplemental target result yet.",
+      "result": "The registered supplemental replay completed all seven cohorts. All 156 address validations and 30 minikey26 checksum checks failed; the other added formats had no shapes. Independent replay matched full forms and validation records. This closes only the declared format gap on these exact saved outputs.",
       "evidence": [
-        "analysis_outputs/continuation_20261110/batch20_supplemental/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/batch20_supplemental/RESULT.md",
+        "analysis_outputs/continuation_20261110/batch20_supplemental/RESULT.json",
+        "analysis_outputs/continuation_20261110/batch20_supplemental/EXECUTION.json",
+        "analysis_outputs/continuation_20261110/batch20_supplemental/INDEPENDENT_VERIFICATION.json",
+        "analysis_outputs/continuation_20261110/batch20_supplemental/POST_RUN_REVIEW.json",
+        "analysis_outputs/continuation_20261110/batch20_supplemental/REGISTRATION.json",
         "analysis_outputs/continuation_20261110/batch20_supplemental/PROTOCOL.json",
-        "analysis_outputs/continuation_20261110/batch20_supplemental/MANIFEST.json",
-        "analysis_outputs/continuation_20261110/batch20_supplemental/COVERAGE.md",
         "analysis_outputs/continuation_20261110/batch20_supplemental/CODE_REVIEW.json",
-        "analysis_outputs/continuation_20261110/batch20_supplemental/CONTROLS_RECEIPT.json",
-        "analysis_outputs/continuation_20261110/batch20_supplemental/INDEPENDENT_CONTROL_RECEIPT.json"
+        "analysis_outputs/continuation_20261110/batch20_supplemental/MANIFEST.json"
       ],
       "reproduce": [
         "python3 scripts/batch20_supplemental_formats.py --self-test",
-        "python3 scripts/verify_batch20_supplemental.py --self-test"
+        "python3 scripts/verify_batch20_supplemental.py --self-test",
+        "Follow RESULT.md with published registration commit d025f95b5e8cabda35e2cc316ac44acd97e23a95 and fresh private output directories."
       ],
       "limitations": [
         "This is compatibility coverage on existing outputs, not a new cipher mechanism.",

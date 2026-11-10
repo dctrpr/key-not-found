@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "status": "PASS",
+  "kind": "after-run-safe-receipt-integrity-and-scope-audit",
+  "completedAtUTC": "2026-11-10T18:10:52.356013+00:00",
+  "registrationCommit": "d025f95b5e8cabda35e2cc316ac44acd97e23a95",
+  "reportedTimeOrder": {
+    "remoteMainVerifiedAtUTC": "2026-11-10T18:08:26.794246+00:00",
+    "primaryStartedAtUTC": "2026-11-10T18:08:26.864Z",
+    "primaryCompletedAtUTC": "2026-11-10T18:08:27.459Z",
+    "independentVerifierCompletedAtUTC": "2026-11-10T18:08:39.725770+00:00"
+  },
+  "checks": {
+    "registrationMatchesAcrossReceipts": true,
+    "recordedRemoteConfirmationPrecedesPrimaryStart": true,
+    "primaryThenVerifierTimeOrder": true,
+    "verifierPassed": true,
+    "primaryResultHashMatchesVerifier": true,
+    "protocolAndManifestAgree": true,
+    "privateArtifactPinSetsAgree": true,
+    "allPrivateArtifactBytesMatch": true,
+    "current24SourceAnd3CodePinsMatch": true,
+    "currentProtocolPinMatches": true,
+    "all7CohortsAndCountsMatch": true,
+    "allNewValidCountsZero": true,
+    "G03InferenceOnly": true,
+    "all6TextCohorts26EnumerationComplete": true,
+    "reportedNoUnexpectedActivity": true,
+    "privateFileAndDirectoryModesExact": true
+  },
+  "fileModes": [
+    {
+      "role": "run-parent",
+      "mode": "0o700",
+      "expected": "0o700",
+      "matches": true
+    },
+    {
+      "role": "primary",
+      "mode": "0o700",
+      "expected": "0o700",
+      "matches": true
+    },
+    {
+      "role": "independent",
+      "mode": "0o700",
+      "expected": "0o700",
+      "matches": true
+    },
+    {
+      "role": "REGISTRATION.json",
+      "mode": "0o600",
+      "expected": "0o600",
+      "matches": true
+    },
+    {
+      "role": "primary/RESULT.json",
+      "mode": "0o600",
+      "expected": "0o600",
+      "matches": true
+    },
+    {
+      "role": "independent/VERIFICATION.json",
+      "mode": "0o600",
+      "expected": "0o600",
+      "matches": true
+    },
+    {
+      "role": "primary/FORMS.private.json",
+      "mode": "0o600",
+      "expected": "0o600",
+      "matches": true
+    },
+    {
+      "role": "primary/VALIDATION.private.json",
+      "mode": "0o600",
+      "expected": "0o600",
+      "matches": true
+    }
+  ],
+  "pins": {
+    "registrationReceiptSha256": "c56607681ec17b5af70b5a74b7b907da3d7400779bd433163749826c67920b4e",
+    "primaryResultSha256": "84f9a249f5a2d4464b139bae921ca324da359a5475425ac32687f3e3a93afea2",
+    "independentVerificationSha256": "9f48c83a683da612d67f378d3eaaeba48c1f4016b362abb35206928b9d386bca",
+    "protocolSha256": "5d24ffed7de1b465874a7c64f0e522e922cca9151fb6995e4afbaec7be893669",
+    "manifestSha256": "18c24b63f78a135f0cb43b380451184532fe443af4c118f2e71d2c638efc5b35",
+    "sourceWitnessCount": 24,
+    "codeWitnessCount": 3,
+    "currentPinMismatches": [],
+    "privateArtifactIntegrity": {
+      "FORMS.private.json": "42bad47f2a6761514e4600070c28c58c3aa0fcd25b29ebbeabe72ee48254e249",
+      "VALIDATION.private.json": "570ea93ec0118043e38e459b268afd64be3366ed75b042ca9402748b45973fca"
+    }
+  },
+  "counts": {
+    "cohorts": 7,
+    "labeledSavedStreams": 2594,
+    "sumPerCohortUniqueForms": 2576,
+    "sharedFourValidationCalls": 156,
+    "sharedFourValidCountsSum": {
+      "extended_private": 0,
+      "bip38": 0,
+      "address": 0,
+      "sec_public": 0
+    },
+    "mini26Occurrences": 47,
+    "sumPerCohortDistinctMini26Checks": 30,
+    "mini26ValidCountsSum": 0,
+    "G03Mini26DirectEnumeration": false
+  },
+  "scopeLimits": [
+    "The four new shape/validation routines deliberately share the same pinned common engine; this is independent form/minikey reconstruction and saved-output agreement, not four independently implemented crypto engines.",
+    "Per-cohort distinct-count sums are not a newly computed global candidate union or counts of independent theories.",
+    "G03 minikey26absence is an inherited zero22prefix implication on identical forms, not a new direct26 scan.",
+    "Zero declared valid records applies only to the seven exact saved artifacts and fixed supplemental formats. It is not a whole-puzzle, semantic, source-selector, geometry, prize or funding negative.",
+    "The registrationreceipt targetNotYetExecuted field is a historical pre-run checkpoint, not the current execution state.",
+    "This review checked saved receipts/current file pins/modes and recorded time order. It did not rerun validators, reconstruct forms, inspect raw strings/positives, monitor the original process/network independently, or requery Git/remote state."
+  ],
+  "activity": {
+    "newTargetEvaluations": 0,
+    "newFormsOrReadings": 0,
+    "candidateFormatOrChecksumChecks": 0,
+    "semanticReviews": 0,
+    "scalarOrAddressDerivations": 0,
+    "networkRequests": 0,
+    "gitOperations": 0,
+    "publicEdits": 0,
+    "rawPrivateArtifactsParsed": false,
+    "privateArtifactsReadForIntegrityHashOnly": true
+  }
+}

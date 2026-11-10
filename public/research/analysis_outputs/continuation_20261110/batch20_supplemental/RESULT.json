@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "testId": "batch20-supplemental-fixed-formats",
+  "completedAtUTC": "2026-11-10T18:12:51.106Z",
+  "caseStatus": "unsolved",
+  "outcome": "no-valid-supplemental-record-in-fixed-artifacts",
+  "registrationCommit": "d025f95b5e8cabda35e2cc316ac44acd97e23a95",
+  "execution": {
+    "path": "analysis_outputs/continuation_20261110/batch20_supplemental/EXECUTION.json",
+    "sha256": "84f9a249f5a2d4464b139bae921ca324da359a5475425ac32687f3e3a93afea2"
+  },
+  "independentCheck": {
+    "path": "analysis_outputs/continuation_20261110/batch20_supplemental/INDEPENDENT_VERIFICATION.json",
+    "sha256": "9f48c83a683da612d67f378d3eaaeba48c1f4016b362abb35206928b9d386bca"
+  },
+  "registration": {
+    "path": "analysis_outputs/continuation_20261110/batch20_supplemental/REGISTRATION.json",
+    "sha256": "c56607681ec17b5af70b5a74b7b907da3d7400779bd433163749826c67920b4e"
+  },
+  "counts": {
+    "cohorts": 7,
+    "labeledStreams": 2594,
+    "sumPerCohortUniqueForms": 2576,
+    "supplementalValidationCalls": 186,
+    "validSupplementalRecords": 0,
+    "addressShapeOccurrences": 329,
+    "addressDistinctShapeCountSum": 156,
+    "minikey26ShapeOccurrences": 47,
+    "minikey26DistinctShapeCountSum": 30
+  },
+  "fullIndependentOutputAgreement": true,
+  "sharedFormatEngines": 4,
+  "semanticReviewPerformed": false,
+  "formalMessageExclusion": false,
+  "selectorRegenerated": false,
+  "G03Minikey26Status": "inferred-no-shapes-from-zero-legacy22",
+  "G03Minikey26NewEnumerationOrChecksumCalls": 0,
+  "activity": {
+    "selectorRegenerations": 0,
+    "newTransformsBeyondExistingForms": 0,
+    "oldSharedMinikeyCalls": 0,
+    "G03Minikey26Enumerations": 0,
+    "G03Minikey26ChecksumCalls": 0,
+    "minikeyScalarHashes": 0,
+    "proseToKeyHashes": 0,
+    "scalarDerivations": 0,
+    "addressDerivations": 0,
+    "seedDerivations": 0,
+    "childKeyDerivations": 0,
+    "networkQueries": 0,
+    "transactions": 0
+  },
+  "limitations": [
+    "This supplements record-format gates on seven exact saved artifacts; it does not regenerate, extend or validate their source selectors.",
+    "The four shared validators are unchanged; shape and validation logic for those four formats is shared, not an independent implementation.",
+    "SEC on-curve matches and weak8bit minikey checks are leads only; BIP38 is structure/checksum validation, not decryption.",
+    "No semantic recognition, physical geometry conclusion, prize authentication, funding check or whole-puzzle exclusion is computed.",
+    "G03 minikey26 coverage is a recorded zero22-shape prefix implication on identical forms, not a new26 enumeration."
+  ],
+  "postRunReview": {
+    "path": "analysis_outputs/continuation_20261110/batch20_supplemental/POST_RUN_REVIEW.json",
+    "sha256": "ac4f72e2e04a8ec02ae2d77e61d661e53b3e069719d8e352ced92c6fad12575e"
+  }
+}

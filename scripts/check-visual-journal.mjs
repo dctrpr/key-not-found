@@ -37,6 +37,38 @@ for (const entry of data.entries) {
     } else assert.equal(metric.operation, undefined);
     assert.equal(value, metric.value, 'Visual metric differs from its frozen result');
   }
+  if (entry.id === 'batch20-supplemental-formats') {
+    assert.equal(entry.diagram, 'funnel');
+    assert.equal(result.caseStatus, 'unsolved');
+    assert.equal(result.formalMessageExclusion, false);
+    assert.equal(result.semanticReviewPerformed, false);
+    assert.equal(result.selectorRegenerated, false);
+    assert.equal(result.fullIndependentOutputAgreement, true);
+    const readPinned = (reference) => {
+      const bytes = fs.readFileSync(path.join(root, 'public/research', reference.path));
+      assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), reference.sha256);
+      return JSON.parse(bytes);
+    };
+    const execution = readPinned(result.execution);
+    assert.equal(execution.scopeComplete, true);
+    assert.equal(execution.privateReviewRequired, false);
+    assert.equal(execution.totals.cohorts, 7);
+    assert.equal(execution.totals.labeledStreams, 2594);
+    assert.equal(execution.totals.sumPerCohortUniqueForms, 2576);
+    assert.equal(execution.totals.commonValidationCalls + execution.totals.minikey26ChecksumCalls, result.counts.supplementalValidationCalls);
+    assert.equal(Object.values(execution.totals.commonValidCountsSum).reduce((a, b) => a + b, 0) + execution.totals.minikey26ValidCountSum, result.counts.validSupplementalRecords);
+    assert.equal(execution.cohorts.at(-1).testId, 'G03');
+    assert.equal(execution.cohorts.at(-1).minikey26.enumerated, false);
+    assert.equal(execution.cohorts.at(-1).minikey26.checksumCalls, 0);
+    assert.ok(Object.values(execution.activity).every(value => value === 0));
+    const independent = readPinned(result.independentCheck);
+    assert.equal(independent.passed, true);
+    assert.equal(independent.primaryResultSha256, result.execution.sha256);
+    assert.equal(independent.comparisons.savedLabeledRecords, 2594);
+    assert.equal(independent.comparisons.perCohortFormsSum, 2576);
+    assert.equal(independent.comparisons.completeFormsAndUTF8, true);
+    readPinned(result.postRunReview);
+  }
   if (entry.diagram === 'review') {
     assert.equal(result.caseStatus, 'unsolved');
     assert.equal(result.formalMessageExclusion, false);
