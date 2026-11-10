@@ -1,0 +1,1725 @@
+{
+  "version": 1,
+  "testId": "g02-perimeter-visibility",
+  "registrationCommit": "9a8b2bbcde2b16f64791dd45df0d710653a01e0b",
+  "protocolSha256": "225a87d541d4e1ade2a51fe2fd8461379d0b7b5c0a93167d71e6ebe3eb9a3410",
+  "registrationReceiptSha256": "4f42c8ae7e61a7d5af0b8c4725a14733dea0543c537f8cd6ac41070ad9284556",
+  "sourcePdfSha256": "dcd13efd0e46c49927dc8ec2e38a96fffc20d92fde7434151250fd6b9c62e6f4",
+  "packetManifestSha256": "d6671aa0e3fe7402b4b3672033f3656b9418cafad2e95d9f392f761f05551588",
+  "readerHashes": {
+    "A": "ceb30762a7ca62fa97a3fa8c21724827a9e6652c266cc2c0f329986019bf661d",
+    "B": "9d94311fa5d84ecaefe8e8b7989b3a7eea97c1f2148c7725c3f408b21a055352"
+  },
+  "windowIds": [
+    "p76-NW",
+    "p76-N",
+    "p76-NE",
+    "p76-E",
+    "p76-SE",
+    "p76-S",
+    "p76-SW",
+    "p76-W",
+    "p77-NW",
+    "p77-N",
+    "p77-NE",
+    "p77-E",
+    "p77-SE",
+    "p77-S",
+    "p77-SW",
+    "p77-W",
+    "p78-NW",
+    "p78-N",
+    "p78-NE",
+    "p78-E",
+    "p78-SE",
+    "p78-S",
+    "p78-SW",
+    "p78-W",
+    "p79-NW",
+    "p79-N",
+    "p79-NE",
+    "p79-E",
+    "p79-SE",
+    "p79-S",
+    "p79-SW",
+    "p79-W"
+  ],
+  "crossings": [
+    {
+      "id": "p76-top-510",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "image-crop",
+          "interval": null
+        },
+        {
+          "label": "image-crop",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p76-top-1020",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "image-crop",
+          "interval": null
+        },
+        {
+          "label": "image-crop",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p76-top-1530",
+      "status": "accepted",
+      "interval": [
+        1,
+        3
+      ],
+      "readers": [
+        {
+          "label": "head",
+          "interval": [
+            1,
+            3
+          ]
+        },
+        {
+          "label": "head",
+          "interval": [
+            1,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p76-right-701",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "image-crop",
+          "interval": null
+        },
+        {
+          "label": "image-crop",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p76-right-1402",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "image-crop",
+          "interval": null
+        },
+        {
+          "label": "image-crop",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p76-right-2103",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "image-crop",
+          "interval": null
+        },
+        {
+          "label": "image-crop",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p76-bottom-510",
+      "status": "accepted",
+      "interval": [
+        2599,
+        2602
+      ],
+      "readers": [
+        {
+          "label": "foot",
+          "interval": [
+            2599,
+            2602
+          ]
+        },
+        {
+          "label": "foot",
+          "interval": [
+            2599,
+            2602
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p76-bottom-1020",
+      "status": "accepted",
+      "interval": [
+        2600,
+        2603
+      ],
+      "readers": [
+        {
+          "label": "foot",
+          "interval": [
+            2600,
+            2603
+          ]
+        },
+        {
+          "label": "foot",
+          "interval": [
+            2600,
+            2603
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p76-bottom-1530",
+      "status": "accepted",
+      "interval": [
+        2601,
+        2603
+      ],
+      "readers": [
+        {
+          "label": "foot",
+          "interval": [
+            2601,
+            2603
+          ]
+        },
+        {
+          "label": "foot",
+          "interval": [
+            2601,
+            2603
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p76-left-701",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "binding",
+          "interval": null
+        },
+        {
+          "label": "binding",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p76-left-1402",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "binding",
+          "interval": null
+        },
+        {
+          "label": "binding",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p76-left-2103",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "binding",
+          "interval": null
+        },
+        {
+          "label": "binding",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p77-top-510",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "image-crop",
+          "interval": null
+        },
+        {
+          "label": "image-crop",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p77-top-1020",
+      "status": "accepted",
+      "interval": [
+        9,
+        12
+      ],
+      "readers": [
+        {
+          "label": "head",
+          "interval": [
+            9,
+            11
+          ]
+        },
+        {
+          "label": "head",
+          "interval": [
+            9,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p77-top-1530",
+      "status": "unresolved",
+      "interval": null,
+      "readers": [
+        {
+          "label": "head",
+          "interval": [
+            17,
+            21
+          ]
+        },
+        {
+          "label": "ambiguous",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p77-right-701",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "binding",
+          "interval": null
+        },
+        {
+          "label": "binding",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p77-right-1402",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "binding",
+          "interval": null
+        },
+        {
+          "label": "binding",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p77-right-2103",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "binding",
+          "interval": null
+        },
+        {
+          "label": "binding",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p77-bottom-510",
+      "status": "accepted",
+      "interval": [
+        2692,
+        2697
+      ],
+      "readers": [
+        {
+          "label": "foot",
+          "interval": [
+            2693,
+            2696
+          ]
+        },
+        {
+          "label": "foot",
+          "interval": [
+            2692,
+            2697
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p77-bottom-1020",
+      "status": "accepted",
+      "interval": [
+        2662,
+        2667
+      ],
+      "readers": [
+        {
+          "label": "foot",
+          "interval": [
+            2663,
+            2666
+          ]
+        },
+        {
+          "label": "foot",
+          "interval": [
+            2662,
+            2667
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p77-bottom-1530",
+      "status": "accepted",
+      "interval": [
+        2638,
+        2643
+      ],
+      "readers": [
+        {
+          "label": "foot",
+          "interval": [
+            2638,
+            2642
+          ]
+        },
+        {
+          "label": "foot",
+          "interval": [
+            2639,
+            2643
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p77-left-701",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "image-crop",
+          "interval": null
+        },
+        {
+          "label": "image-crop",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p77-left-1402",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "image-crop",
+          "interval": null
+        },
+        {
+          "label": "image-crop",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p77-left-2103",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "image-crop",
+          "interval": null
+        },
+        {
+          "label": "image-crop",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p78-top-510",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "image-crop",
+          "interval": null
+        },
+        {
+          "label": "image-crop",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p78-top-1020",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "image-crop",
+          "interval": null
+        },
+        {
+          "label": "image-crop",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p78-top-1530",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "image-crop",
+          "interval": null
+        },
+        {
+          "label": "image-crop",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p78-right-701",
+      "status": "accepted",
+      "interval": [
+        1979,
+        1983
+      ],
+      "readers": [
+        {
+          "label": "fore-edge",
+          "interval": [
+            1980,
+            1983
+          ]
+        },
+        {
+          "label": "fore-edge",
+          "interval": [
+            1979,
+            1983
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p78-right-1402",
+      "status": "accepted",
+      "interval": [
+        1978,
+        1982
+      ],
+      "readers": [
+        {
+          "label": "fore-edge",
+          "interval": [
+            1979,
+            1982
+          ]
+        },
+        {
+          "label": "fore-edge",
+          "interval": [
+            1978,
+            1982
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p78-right-2103",
+      "status": "accepted",
+      "interval": [
+        1977,
+        1981
+      ],
+      "readers": [
+        {
+          "label": "fore-edge",
+          "interval": [
+            1977,
+            1980
+          ]
+        },
+        {
+          "label": "fore-edge",
+          "interval": [
+            1977,
+            1981
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p78-bottom-510",
+      "status": "accepted",
+      "interval": [
+        2601,
+        2605
+      ],
+      "readers": [
+        {
+          "label": "foot",
+          "interval": [
+            2602,
+            2605
+          ]
+        },
+        {
+          "label": "foot",
+          "interval": [
+            2601,
+            2605
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p78-bottom-1020",
+      "status": "accepted",
+      "interval": [
+        2605,
+        2609
+      ],
+      "readers": [
+        {
+          "label": "foot",
+          "interval": [
+            2606,
+            2609
+          ]
+        },
+        {
+          "label": "foot",
+          "interval": [
+            2605,
+            2609
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p78-bottom-1530",
+      "status": "accepted",
+      "interval": [
+        2608,
+        2612
+      ],
+      "readers": [
+        {
+          "label": "foot",
+          "interval": [
+            2608,
+            2612
+          ]
+        },
+        {
+          "label": "foot",
+          "interval": [
+            2608,
+            2612
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p78-left-701",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "binding",
+          "interval": null
+        },
+        {
+          "label": "binding",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p78-left-1402",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "binding",
+          "interval": null
+        },
+        {
+          "label": "binding",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p78-left-2103",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "binding",
+          "interval": null
+        },
+        {
+          "label": "binding",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p79-top-510",
+      "status": "accepted",
+      "interval": [
+        24,
+        27
+      ],
+      "readers": [
+        {
+          "label": "head",
+          "interval": [
+            24,
+            27
+          ]
+        },
+        {
+          "label": "head",
+          "interval": [
+            24,
+            27
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p79-top-1020",
+      "status": "accepted",
+      "interval": [
+        8,
+        11
+      ],
+      "readers": [
+        {
+          "label": "head",
+          "interval": [
+            8,
+            11
+          ]
+        },
+        {
+          "label": "head",
+          "interval": [
+            8,
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p79-top-1530",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "image-crop",
+          "interval": null
+        },
+        {
+          "label": "image-crop",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p79-right-701",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "binding",
+          "interval": null
+        },
+        {
+          "label": "binding",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p79-right-1402",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "binding",
+          "interval": null
+        },
+        {
+          "label": "binding",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p79-right-2103",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "binding",
+          "interval": null
+        },
+        {
+          "label": "binding",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p79-bottom-510",
+      "status": "accepted",
+      "interval": [
+        2620,
+        2624
+      ],
+      "readers": [
+        {
+          "label": "foot",
+          "interval": [
+            2620,
+            2624
+          ]
+        },
+        {
+          "label": "foot",
+          "interval": [
+            2621,
+            2624
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p79-bottom-1020",
+      "status": "accepted",
+      "interval": [
+        2608,
+        2611
+      ],
+      "readers": [
+        {
+          "label": "foot",
+          "interval": [
+            2608,
+            2611
+          ]
+        },
+        {
+          "label": "foot",
+          "interval": [
+            2608,
+            2611
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p79-bottom-1530",
+      "status": "accepted",
+      "interval": [
+        2594,
+        2598
+      ],
+      "readers": [
+        {
+          "label": "foot",
+          "interval": [
+            2595,
+            2598
+          ]
+        },
+        {
+          "label": "foot",
+          "interval": [
+            2594,
+            2597
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p79-left-701",
+      "status": "no-trim-agreement",
+      "interval": null,
+      "readers": [
+        {
+          "label": "image-crop",
+          "interval": null
+        },
+        {
+          "label": "image-crop",
+          "interval": null
+        }
+      ]
+    },
+    {
+      "id": "p79-left-1402",
+      "status": "accepted",
+      "interval": [
+        36,
+        43
+      ],
+      "readers": [
+        {
+          "label": "fore-edge",
+          "interval": [
+            37,
+            42
+          ]
+        },
+        {
+          "label": "fore-edge",
+          "interval": [
+            36,
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p79-left-2103",
+      "status": "accepted",
+      "interval": [
+        41,
+        49
+      ],
+      "readers": [
+        {
+          "label": "fore-edge",
+          "interval": [
+            43,
+            48
+          ]
+        },
+        {
+          "label": "fore-edge",
+          "interval": [
+            41,
+            49
+          ]
+        }
+      ]
+    }
+  ],
+  "corners": [
+    {
+      "id": "p76-NW",
+      "status": "no-trim-agreement",
+      "box": null,
+      "readers": [
+        {
+          "label": "binding",
+          "box": null
+        },
+        {
+          "label": "binding",
+          "box": null
+        }
+      ]
+    },
+    {
+      "id": "p76-NE",
+      "status": "no-trim-agreement",
+      "box": null,
+      "readers": [
+        {
+          "label": "image-crop",
+          "box": null
+        },
+        {
+          "label": "image-crop",
+          "box": null
+        }
+      ]
+    },
+    {
+      "id": "p76-SE",
+      "status": "no-trim-agreement",
+      "box": null,
+      "readers": [
+        {
+          "label": "image-crop",
+          "box": null
+        },
+        {
+          "label": "image-crop",
+          "box": null
+        }
+      ]
+    },
+    {
+      "id": "p76-SW",
+      "status": "no-trim-agreement",
+      "box": null,
+      "readers": [
+        {
+          "label": "binding",
+          "box": null
+        },
+        {
+          "label": "binding",
+          "box": null
+        }
+      ]
+    },
+    {
+      "id": "p77-NW",
+      "status": "no-trim-agreement",
+      "box": null,
+      "readers": [
+        {
+          "label": "image-crop",
+          "box": null
+        },
+        {
+          "label": "image-crop",
+          "box": null
+        }
+      ]
+    },
+    {
+      "id": "p77-NE",
+      "status": "no-trim-agreement",
+      "box": null,
+      "readers": [
+        {
+          "label": "binding",
+          "box": null
+        },
+        {
+          "label": "binding",
+          "box": null
+        }
+      ]
+    },
+    {
+      "id": "p77-SE",
+      "status": "no-trim-agreement",
+      "box": null,
+      "readers": [
+        {
+          "label": "binding",
+          "box": null
+        },
+        {
+          "label": "binding",
+          "box": null
+        }
+      ]
+    },
+    {
+      "id": "p77-SW",
+      "status": "unresolved",
+      "box": null,
+      "readers": [
+        {
+          "label": "ambiguous",
+          "box": null
+        },
+        {
+          "label": "ambiguous",
+          "box": null
+        }
+      ]
+    },
+    {
+      "id": "p78-NW",
+      "status": "no-trim-agreement",
+      "box": null,
+      "readers": [
+        {
+          "label": "binding",
+          "box": null
+        },
+        {
+          "label": "binding",
+          "box": null
+        }
+      ]
+    },
+    {
+      "id": "p78-NE",
+      "status": "no-trim-agreement",
+      "box": null,
+      "readers": [
+        {
+          "label": "image-crop",
+          "box": null
+        },
+        {
+          "label": "image-crop",
+          "box": null
+        }
+      ]
+    },
+    {
+      "id": "p78-SE",
+      "status": "accepted",
+      "box": [
+        1974,
+        2607,
+        1979,
+        2615
+      ],
+      "readers": [
+        {
+          "label": "visible-trim-corner",
+          "box": [
+            1974,
+            2608,
+            1978,
+            2613
+          ]
+        },
+        {
+          "label": "visible-trim-corner",
+          "box": [
+            1974,
+            2607,
+            1979,
+            2615
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p78-SW",
+      "status": "no-trim-agreement",
+      "box": null,
+      "readers": [
+        {
+          "label": "binding",
+          "box": null
+        },
+        {
+          "label": "binding",
+          "box": null
+        }
+      ]
+    },
+    {
+      "id": "p79-NW",
+      "status": "no-trim-agreement",
+      "box": null,
+      "readers": [
+        {
+          "label": "image-crop",
+          "box": null
+        },
+        {
+          "label": "image-crop",
+          "box": null
+        }
+      ]
+    },
+    {
+      "id": "p79-NE",
+      "status": "no-trim-agreement",
+      "box": null,
+      "readers": [
+        {
+          "label": "binding",
+          "box": null
+        },
+        {
+          "label": "binding",
+          "box": null
+        }
+      ]
+    },
+    {
+      "id": "p79-SE",
+      "status": "no-trim-agreement",
+      "box": null,
+      "readers": [
+        {
+          "label": "binding",
+          "box": null
+        },
+        {
+          "label": "binding",
+          "box": null
+        }
+      ]
+    },
+    {
+      "id": "p79-SW",
+      "status": "accepted",
+      "box": [
+        55,
+        2629,
+        64,
+        2634
+      ],
+      "readers": [
+        {
+          "label": "visible-trim-corner",
+          "box": [
+            57,
+            2630,
+            62,
+            2634
+          ]
+        },
+        {
+          "label": "visible-trim-corner",
+          "box": [
+            55,
+            2629,
+            64,
+            2634
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "page": 76,
+      "windowsReviewedPerReader": 8,
+      "edges": [
+        {
+          "id": "p76-top",
+          "trimLabel": "head",
+          "crossingCounts": {
+            "accepted": 1,
+            "unresolved": 0,
+            "no-trim-agreement": 2
+          },
+          "readers": [
+            {
+              "runs": [
+                [
+                  1310,
+                  2022
+                ]
+              ],
+              "curvature": "straight-looking"
+            },
+            {
+              "runs": [
+                [
+                  1420,
+                  2021
+                ]
+              ],
+              "curvature": "straight-looking"
+            }
+          ]
+        },
+        {
+          "id": "p76-right",
+          "trimLabel": "fore-edge",
+          "crossingCounts": {
+            "accepted": 0,
+            "unresolved": 0,
+            "no-trim-agreement": 3
+          },
+          "readers": [
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            },
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            }
+          ]
+        },
+        {
+          "id": "p76-bottom",
+          "trimLabel": "foot",
+          "crossingCounts": {
+            "accepted": 3,
+            "unresolved": 0,
+            "no-trim-agreement": 0
+          },
+          "readers": [
+            {
+              "runs": [
+                [
+                  235,
+                  2039
+                ]
+              ],
+              "curvature": "straight-looking"
+            },
+            {
+              "runs": [
+                [
+                  180,
+                  2039
+                ]
+              ],
+              "curvature": "straight-looking"
+            }
+          ]
+        },
+        {
+          "id": "p76-left",
+          "trimLabel": null,
+          "crossingCounts": {
+            "accepted": 0,
+            "unresolved": 0,
+            "no-trim-agreement": 3
+          },
+          "readers": [
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            },
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            }
+          ]
+        }
+      ],
+      "acceptedCorners": 0,
+      "unresolvedCorners": 0
+    },
+    {
+      "page": 77,
+      "windowsReviewedPerReader": 8,
+      "edges": [
+        {
+          "id": "p77-top",
+          "trimLabel": "head",
+          "crossingCounts": {
+            "accepted": 1,
+            "unresolved": 1,
+            "no-trim-agreement": 1
+          },
+          "readers": [
+            {
+              "runs": [
+                [
+                  550,
+                  1640
+                ]
+              ],
+              "curvature": "straight-looking"
+            },
+            {
+              "runs": [
+                [
+                  580,
+                  1490
+                ]
+              ],
+              "curvature": "straight-looking"
+            }
+          ]
+        },
+        {
+          "id": "p77-right",
+          "trimLabel": null,
+          "crossingCounts": {
+            "accepted": 0,
+            "unresolved": 0,
+            "no-trim-agreement": 3
+          },
+          "readers": [
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            },
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            }
+          ]
+        },
+        {
+          "id": "p77-bottom",
+          "trimLabel": "foot",
+          "crossingCounts": {
+            "accepted": 3,
+            "unresolved": 0,
+            "no-trim-agreement": 0
+          },
+          "readers": [
+            {
+              "runs": [
+                [
+                  157,
+                  1775
+                ]
+              ],
+              "curvature": "curved"
+            },
+            {
+              "runs": [
+                [
+                  155,
+                  1795
+                ]
+              ],
+              "curvature": "curved"
+            }
+          ]
+        },
+        {
+          "id": "p77-left",
+          "trimLabel": "fore-edge",
+          "crossingCounts": {
+            "accepted": 0,
+            "unresolved": 0,
+            "no-trim-agreement": 3
+          },
+          "readers": [
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            },
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            }
+          ]
+        }
+      ],
+      "acceptedCorners": 0,
+      "unresolvedCorners": 1
+    },
+    {
+      "page": 78,
+      "windowsReviewedPerReader": 8,
+      "edges": [
+        {
+          "id": "p78-top",
+          "trimLabel": "head",
+          "crossingCounts": {
+            "accepted": 0,
+            "unresolved": 0,
+            "no-trim-agreement": 3
+          },
+          "readers": [
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            },
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            }
+          ]
+        },
+        {
+          "id": "p78-right",
+          "trimLabel": "fore-edge",
+          "crossingCounts": {
+            "accepted": 3,
+            "unresolved": 0,
+            "no-trim-agreement": 0
+          },
+          "readers": [
+            {
+              "runs": [
+                [
+                  0,
+                  2610
+                ]
+              ],
+              "curvature": "curved"
+            },
+            {
+              "runs": [
+                [
+                  0,
+                  2610
+                ]
+              ],
+              "curvature": "curved"
+            }
+          ]
+        },
+        {
+          "id": "p78-bottom",
+          "trimLabel": "foot",
+          "crossingCounts": {
+            "accepted": 3,
+            "unresolved": 0,
+            "no-trim-agreement": 0
+          },
+          "readers": [
+            {
+              "runs": [
+                [
+                  210,
+                  1976
+                ]
+              ],
+              "curvature": "straight-looking"
+            },
+            {
+              "runs": [
+                [
+                  155,
+                  1976
+                ]
+              ],
+              "curvature": "straight-looking"
+            }
+          ]
+        },
+        {
+          "id": "p78-left",
+          "trimLabel": null,
+          "crossingCounts": {
+            "accepted": 0,
+            "unresolved": 0,
+            "no-trim-agreement": 3
+          },
+          "readers": [
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            },
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            }
+          ]
+        }
+      ],
+      "acceptedCorners": 1,
+      "unresolvedCorners": 0
+    },
+    {
+      "page": 79,
+      "windowsReviewedPerReader": 8,
+      "edges": [
+        {
+          "id": "p79-top",
+          "trimLabel": "head",
+          "crossingCounts": {
+            "accepted": 2,
+            "unresolved": 0,
+            "no-trim-agreement": 1
+          },
+          "readers": [
+            {
+              "runs": [
+                [
+                  0,
+                  1250
+                ]
+              ],
+              "curvature": "straight-looking"
+            },
+            {
+              "runs": [
+                [
+                  0,
+                  1278
+                ]
+              ],
+              "curvature": "straight-looking"
+            }
+          ]
+        },
+        {
+          "id": "p79-right",
+          "trimLabel": null,
+          "crossingCounts": {
+            "accepted": 0,
+            "unresolved": 0,
+            "no-trim-agreement": 3
+          },
+          "readers": [
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            },
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            }
+          ]
+        },
+        {
+          "id": "p79-bottom",
+          "trimLabel": "foot",
+          "crossingCounts": {
+            "accepted": 3,
+            "unresolved": 0,
+            "no-trim-agreement": 0
+          },
+          "readers": [
+            {
+              "runs": [
+                [
+                  59,
+                  1930
+                ]
+              ],
+              "curvature": "straight-looking"
+            },
+            {
+              "runs": [
+                [
+                  60,
+                  1920
+                ]
+              ],
+              "curvature": "straight-looking"
+            }
+          ]
+        },
+        {
+          "id": "p79-left",
+          "trimLabel": "fore-edge",
+          "crossingCounts": {
+            "accepted": 2,
+            "unresolved": 0,
+            "no-trim-agreement": 1
+          },
+          "readers": [
+            {
+              "runs": [
+                [
+                  1280,
+                  1827
+                ],
+                [
+                  1833,
+                  1876
+                ],
+                [
+                  1881,
+                  1894
+                ],
+                [
+                  1900,
+                  1936
+                ],
+                [
+                  1968,
+                  2631
+                ]
+              ],
+              "curvature": "curved"
+            },
+            {
+              "runs": [
+                [
+                  1282,
+                  1826
+                ],
+                [
+                  1834,
+                  1875
+                ],
+                [
+                  1882,
+                  1893
+                ],
+                [
+                  1900,
+                  1934
+                ],
+                [
+                  1972,
+                  2631
+                ]
+              ],
+              "curvature": "curved"
+            }
+          ]
+        }
+      ],
+      "acceptedCorners": 1,
+      "unresolvedCorners": 0
+    }
+  ],
+  "leaves": [
+    {
+      "pages": [
+        76,
+        77
+      ],
+      "sharedHorizontalEdges": [
+        "foot"
+      ],
+      "foreEdgeAcceptedCrossings": [
+        0,
+        0
+      ],
+      "twoAxisEdgeEvidence": false,
+      "separateTransferStudyAdmitted": false
+    },
+    {
+      "pages": [
+        78,
+        79
+      ],
+      "sharedHorizontalEdges": [
+        "foot"
+      ],
+      "foreEdgeAcceptedCrossings": [
+        3,
+        2
+      ],
+      "twoAxisEdgeEvidence": true,
+      "separateTransferStudyAdmitted": true
+    }
+  ]
+}

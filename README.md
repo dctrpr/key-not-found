@@ -4,7 +4,7 @@ The key is missing. The work is public.
 
 My independent investigation into the Bitcoin Magazine puzzle Max Keiser described in 2023. The files, tests and updates are public; help is optional. The puzzle is **unsolved**. The claimed 20 BTC has not been independently authenticated. This project is not affiliated with Max Keiser, Bitcoin Magazine, or Pump.fun.
 
-Sharing a query offset per page pair removed three of eight one-sided syntax matches. The surviving five are grammar matches within the frozen model. [Latest research](public/research/analysis_outputs/continuation_20261110/g02_shared_query/RESULT.md)
+The retained photographs show enough of both edges to study the alignment of pages 78/79. The outer edges of pages 76/77 remain unresolved. [Latest research](public/research/analysis_outputs/continuation_20261110/g02_edge_screen/RESULT.md)
 
 ## Start here
 

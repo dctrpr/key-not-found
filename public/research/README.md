@@ -10,6 +10,8 @@ The [visual lab and dated frames](VISUAL_GUIDE.md) make the source pages and com
 
 ## Research is continuing
 
+An independent review of the lower-resolution photographs found agreed foot and fore-edge crossings on both 78/79 faces. The 76/77 faces have agreed foot evidence and unresolved fore-edges. A calibrated link into the higher-resolution scans comes next. [Paper edge screen](analysis_outputs/continuation_20261110/g02_edge_screen/RESULT.md)
+
 The shared query follow-up removed three of eight one-sided syntax-positive reading languages and every 30-character minikey-like shape. The scan provenance review reproduced the digital placement and found partial paper edges in the lower-resolution photographs. The physical alignment range remains unresolved. [Shared query result](analysis_outputs/continuation_20261110/g02_shared_query/RESULT.md) · [Scan provenance](analysis_outputs/continuation_20261110/g02_shared_query/PHYSICAL_SOURCE.md)
 
 The [literal shape check](analysis_outputs/continuation_20261110/g02_shape_reachability/RESULT.md) ruled out the registered formats for the same-color and opposite-color stencil selections. Eight one-sided reading languages admit Base58 syntax in the broad choice model. The [opposite-color review](analysis_outputs/continuation_20261110/g02_opposite_reading/RESULT.md) found no coherent second message recognized by either AI reader. The next source test is whether a common displacement can realize any of the one-sided shape matches.

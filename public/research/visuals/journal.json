@@ -850,6 +850,58 @@
       },
       "sceneNote": "Actual Issue 24 page 77 in mirror view. The modeled offsets apply to leaves 76/77 and 78/79.",
       "methodId": "batch20-g02"
+    },
+    {
+      "id": "g02-paper-edge-visibility",
+      "completedAtUTC": "2026-11-10T23:34:48.813Z",
+      "title": "Pages 78/79 show trim on both axes.",
+      "summary": "Two readers independently marked the same fixed sampling lines in the retained photographs.",
+      "result": "Both faces of 78/79 show agreed bottom and outer edges. Pages 76/77 show the bottom edge on both faces. Their outer edges remain unresolved. A separate calibration study is needed.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Agreed trim crossings",
+          "value": 21,
+          "pointer": "/counts/acceptedCrossings"
+        },
+        {
+          "label": "Disagreed crossings",
+          "value": 1,
+          "pointer": "/counts/unresolvedCrossings"
+        },
+        {
+          "label": "Agreed corners",
+          "value": 2,
+          "pointer": "/counts/acceptedCorners"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/g02_edge_screen/RESULT.json",
+        "sha256": "0c3ead316d98f0cbb891fa56328fa2aadcd603390224b135d22abeaf0fe78f8a"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/g02_edge_screen/RESULT.md",
+      "scene": {
+        "layout": "mirror",
+        "page": 78
+      },
+      "sceneNote": "The 3D viewer uses the higher-resolution page 78 scan. The guides below use the lower-resolution photographs tested here.",
+      "methodId": "batch20-g02",
+      "exhibits": [
+        {
+          "path": "/research/analysis_outputs/continuation_20261110/g02_edge_screen/exhibits/guide-p76-right.png",
+          "sha256": "c2bbfef7968ce45f712aed2b0f957c899fd9c3414130b41d5d47798253ba4cc9",
+          "label": "Page 76 · outer-edge sampling",
+          "width": 1020,
+          "height": 113
+        },
+        {
+          "path": "/research/analysis_outputs/continuation_20261110/g02_edge_screen/exhibits/guide-p78-right.png",
+          "sha256": "cdd54b75c21f4ad2584b8cc9f00a63c20b1aae2b4d39377ed4a34a92f0694415",
+          "label": "Page 78 · outer-edge sampling",
+          "width": 1020,
+          "height": 113
+        }
+      ]
     }
   ]
 }

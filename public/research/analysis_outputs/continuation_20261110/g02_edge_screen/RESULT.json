@@ -1,0 +1,527 @@
+{
+  "version": 1,
+  "testId": "g02-perimeter-visibility",
+  "registrationCommit": "9a8b2bbcde2b16f64791dd45df0d710653a01e0b",
+  "protocolSha256": "225a87d541d4e1ade2a51fe2fd8461379d0b7b5c0a93167d71e6ebe3eb9a3410",
+  "registrationReceiptSha256": "4f42c8ae7e61a7d5af0b8c4725a14733dea0543c537f8cd6ac41070ad9284556",
+  "sourcePdfSha256": "dcd13efd0e46c49927dc8ec2e38a96fffc20d92fde7434151250fd6b9c62e6f4",
+  "packetManifestSha256": "d6671aa0e3fe7402b4b3672033f3656b9418cafad2e95d9f392f761f05551588",
+  "readerHashes": {
+    "A": "ceb30762a7ca62fa97a3fa8c21724827a9e6652c266cc2c0f329986019bf661d",
+    "B": "9d94311fa5d84ecaefe8e8b7989b3a7eea97c1f2148c7725c3f408b21a055352"
+  },
+  "startedAtUTC": "2026-11-10T23:34:48.803Z",
+  "completedAtUTC": "2026-11-10T23:34:48.813Z",
+  "scopeComplete": true,
+  "counts": {
+    "readers": 2,
+    "windowsPerReader": 32,
+    "crossingsPerReader": 48,
+    "edgesPerReader": 16,
+    "cornersPerReader": 16,
+    "packetAssetHashesVerified": 52,
+    "acceptedCrossings": 21,
+    "unresolvedCrossings": 1,
+    "acceptedCorners": 2
+  },
+  "pages": [
+    {
+      "page": 76,
+      "windowsReviewedPerReader": 8,
+      "edges": [
+        {
+          "id": "p76-top",
+          "trimLabel": "head",
+          "crossingCounts": {
+            "accepted": 1,
+            "unresolved": 0,
+            "no-trim-agreement": 2
+          },
+          "readers": [
+            {
+              "runs": [
+                [
+                  1310,
+                  2022
+                ]
+              ],
+              "curvature": "straight-looking"
+            },
+            {
+              "runs": [
+                [
+                  1420,
+                  2021
+                ]
+              ],
+              "curvature": "straight-looking"
+            }
+          ]
+        },
+        {
+          "id": "p76-right",
+          "trimLabel": "fore-edge",
+          "crossingCounts": {
+            "accepted": 0,
+            "unresolved": 0,
+            "no-trim-agreement": 3
+          },
+          "readers": [
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            },
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            }
+          ]
+        },
+        {
+          "id": "p76-bottom",
+          "trimLabel": "foot",
+          "crossingCounts": {
+            "accepted": 3,
+            "unresolved": 0,
+            "no-trim-agreement": 0
+          },
+          "readers": [
+            {
+              "runs": [
+                [
+                  235,
+                  2039
+                ]
+              ],
+              "curvature": "straight-looking"
+            },
+            {
+              "runs": [
+                [
+                  180,
+                  2039
+                ]
+              ],
+              "curvature": "straight-looking"
+            }
+          ]
+        },
+        {
+          "id": "p76-left",
+          "trimLabel": null,
+          "crossingCounts": {
+            "accepted": 0,
+            "unresolved": 0,
+            "no-trim-agreement": 3
+          },
+          "readers": [
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            },
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            }
+          ]
+        }
+      ],
+      "acceptedCorners": 0,
+      "unresolvedCorners": 0
+    },
+    {
+      "page": 77,
+      "windowsReviewedPerReader": 8,
+      "edges": [
+        {
+          "id": "p77-top",
+          "trimLabel": "head",
+          "crossingCounts": {
+            "accepted": 1,
+            "unresolved": 1,
+            "no-trim-agreement": 1
+          },
+          "readers": [
+            {
+              "runs": [
+                [
+                  550,
+                  1640
+                ]
+              ],
+              "curvature": "straight-looking"
+            },
+            {
+              "runs": [
+                [
+                  580,
+                  1490
+                ]
+              ],
+              "curvature": "straight-looking"
+            }
+          ]
+        },
+        {
+          "id": "p77-right",
+          "trimLabel": null,
+          "crossingCounts": {
+            "accepted": 0,
+            "unresolved": 0,
+            "no-trim-agreement": 3
+          },
+          "readers": [
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            },
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            }
+          ]
+        },
+        {
+          "id": "p77-bottom",
+          "trimLabel": "foot",
+          "crossingCounts": {
+            "accepted": 3,
+            "unresolved": 0,
+            "no-trim-agreement": 0
+          },
+          "readers": [
+            {
+              "runs": [
+                [
+                  157,
+                  1775
+                ]
+              ],
+              "curvature": "curved"
+            },
+            {
+              "runs": [
+                [
+                  155,
+                  1795
+                ]
+              ],
+              "curvature": "curved"
+            }
+          ]
+        },
+        {
+          "id": "p77-left",
+          "trimLabel": "fore-edge",
+          "crossingCounts": {
+            "accepted": 0,
+            "unresolved": 0,
+            "no-trim-agreement": 3
+          },
+          "readers": [
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            },
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            }
+          ]
+        }
+      ],
+      "acceptedCorners": 0,
+      "unresolvedCorners": 1
+    },
+    {
+      "page": 78,
+      "windowsReviewedPerReader": 8,
+      "edges": [
+        {
+          "id": "p78-top",
+          "trimLabel": "head",
+          "crossingCounts": {
+            "accepted": 0,
+            "unresolved": 0,
+            "no-trim-agreement": 3
+          },
+          "readers": [
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            },
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            }
+          ]
+        },
+        {
+          "id": "p78-right",
+          "trimLabel": "fore-edge",
+          "crossingCounts": {
+            "accepted": 3,
+            "unresolved": 0,
+            "no-trim-agreement": 0
+          },
+          "readers": [
+            {
+              "runs": [
+                [
+                  0,
+                  2610
+                ]
+              ],
+              "curvature": "curved"
+            },
+            {
+              "runs": [
+                [
+                  0,
+                  2610
+                ]
+              ],
+              "curvature": "curved"
+            }
+          ]
+        },
+        {
+          "id": "p78-bottom",
+          "trimLabel": "foot",
+          "crossingCounts": {
+            "accepted": 3,
+            "unresolved": 0,
+            "no-trim-agreement": 0
+          },
+          "readers": [
+            {
+              "runs": [
+                [
+                  210,
+                  1976
+                ]
+              ],
+              "curvature": "straight-looking"
+            },
+            {
+              "runs": [
+                [
+                  155,
+                  1976
+                ]
+              ],
+              "curvature": "straight-looking"
+            }
+          ]
+        },
+        {
+          "id": "p78-left",
+          "trimLabel": null,
+          "crossingCounts": {
+            "accepted": 0,
+            "unresolved": 0,
+            "no-trim-agreement": 3
+          },
+          "readers": [
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            },
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            }
+          ]
+        }
+      ],
+      "acceptedCorners": 1,
+      "unresolvedCorners": 0
+    },
+    {
+      "page": 79,
+      "windowsReviewedPerReader": 8,
+      "edges": [
+        {
+          "id": "p79-top",
+          "trimLabel": "head",
+          "crossingCounts": {
+            "accepted": 2,
+            "unresolved": 0,
+            "no-trim-agreement": 1
+          },
+          "readers": [
+            {
+              "runs": [
+                [
+                  0,
+                  1250
+                ]
+              ],
+              "curvature": "straight-looking"
+            },
+            {
+              "runs": [
+                [
+                  0,
+                  1278
+                ]
+              ],
+              "curvature": "straight-looking"
+            }
+          ]
+        },
+        {
+          "id": "p79-right",
+          "trimLabel": null,
+          "crossingCounts": {
+            "accepted": 0,
+            "unresolved": 0,
+            "no-trim-agreement": 3
+          },
+          "readers": [
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            },
+            {
+              "runs": [],
+              "curvature": "insufficient"
+            }
+          ]
+        },
+        {
+          "id": "p79-bottom",
+          "trimLabel": "foot",
+          "crossingCounts": {
+            "accepted": 3,
+            "unresolved": 0,
+            "no-trim-agreement": 0
+          },
+          "readers": [
+            {
+              "runs": [
+                [
+                  59,
+                  1930
+                ]
+              ],
+              "curvature": "straight-looking"
+            },
+            {
+              "runs": [
+                [
+                  60,
+                  1920
+                ]
+              ],
+              "curvature": "straight-looking"
+            }
+          ]
+        },
+        {
+          "id": "p79-left",
+          "trimLabel": "fore-edge",
+          "crossingCounts": {
+            "accepted": 2,
+            "unresolved": 0,
+            "no-trim-agreement": 1
+          },
+          "readers": [
+            {
+              "runs": [
+                [
+                  1280,
+                  1827
+                ],
+                [
+                  1833,
+                  1876
+                ],
+                [
+                  1881,
+                  1894
+                ],
+                [
+                  1900,
+                  1936
+                ],
+                [
+                  1968,
+                  2631
+                ]
+              ],
+              "curvature": "curved"
+            },
+            {
+              "runs": [
+                [
+                  1282,
+                  1826
+                ],
+                [
+                  1834,
+                  1875
+                ],
+                [
+                  1882,
+                  1893
+                ],
+                [
+                  1900,
+                  1934
+                ],
+                [
+                  1972,
+                  2631
+                ]
+              ],
+              "curvature": "curved"
+            }
+          ]
+        }
+      ],
+      "acceptedCorners": 1,
+      "unresolvedCorners": 0
+    }
+  ],
+  "leaves": [
+    {
+      "pages": [
+        76,
+        77
+      ],
+      "sharedHorizontalEdges": [
+        "foot"
+      ],
+      "foreEdgeAcceptedCrossings": [
+        0,
+        0
+      ],
+      "twoAxisEdgeEvidence": false,
+      "separateTransferStudyAdmitted": false
+    },
+    {
+      "pages": [
+        78,
+        79
+      ],
+      "sharedHorizontalEdges": [
+        "foot"
+      ],
+      "foreEdgeAcceptedCrossings": [
+        3,
+        2
+      ],
+      "twoAxisEdgeEvidence": true,
+      "separateTransferStudyAdmitted": true
+    }
+  ],
+  "physicalRange": null,
+  "activity": {
+    "pixelDecodes": 0,
+    "transformFits": 0,
+    "stencilReadings": 0,
+    "keyChecks": 0
+  },
+  "mergedArtifactSha256": "c05cfc139a3a1adc5efce8308e0e5527e04c9905cd48f98b1da0992ce9452114"
+}

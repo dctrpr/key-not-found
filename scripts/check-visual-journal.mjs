@@ -37,6 +37,39 @@ for (const entry of data.entries) {
     } else assert.equal(metric.operation, undefined);
     assert.equal(value, metric.value, 'Visual metric differs from its frozen result');
   }
+  if (entry.id === 'g02-paper-edge-visibility') {
+    assert.equal(entry.diagram, 'funnel');
+    assert.equal(entry.methodId, 'batch20-g02');
+    assert.deepEqual(entry.scene, { layout: 'mirror', page: 78 });
+    assert.equal(result.testId, 'g02-perimeter-visibility');
+    assert.equal(result.scopeComplete, true);
+    assert.equal(result.physicalRange, null);
+    assert.deepEqual(result.activity, { pixelDecodes: 0, transformFits: 0, stencilReadings: 0, keyChecks: 0 });
+    const base = path.dirname(path.join(root, 'public/research', entry.source.path));
+    const packet = fs.readFileSync(path.join(base, 'PACKET_MANIFEST.json'));
+    assert.equal(crypto.createHash('sha256').update(packet).digest('hex'), result.packetManifestSha256);
+    const manifest = JSON.parse(packet);
+    assert.equal(manifest.windows.length, 32);
+    assert.equal(manifest.guides.length, 16);
+    assert.equal(manifest.overview.length, 4);
+    const merged = fs.readFileSync(path.join(base, 'MERGED.json'));
+    assert.equal(crypto.createHash('sha256').update(merged).digest('hex'), result.mergedArtifactSha256);
+    const marks = JSON.parse(merged);
+    assert.equal(marks.crossings.filter(mark => mark.status === 'accepted').length, result.counts.acceptedCrossings);
+    assert.equal(marks.crossings.filter(mark => mark.status === 'unresolved').length, result.counts.unresolvedCrossings);
+    assert.equal(marks.corners.filter(mark => mark.status === 'accepted').length, result.counts.acceptedCorners);
+    assert.deepEqual(marks.leaves, result.leaves);
+    assert.equal(entry.exhibits.length, 2);
+    for (const exhibit of entry.exhibits) {
+      const file = path.join(root, 'public', exhibit.path);
+      const guide = manifest.guides.find(item => item.path === path.basename(file));
+      const bytes = fs.readFileSync(file);
+      assert.equal(guide.sha256, exhibit.sha256);
+      assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), exhibit.sha256);
+      assert.equal(bytes.readUInt32BE(16), exhibit.width);
+      assert.equal(bytes.readUInt32BE(20), exhibit.height);
+    }
+  }
   if (entry.id === 'g02-joint-source-model') {
     assert.equal(entry.diagram, 'funnel');
     assert.equal(entry.methodId, 'batch20-g02');
