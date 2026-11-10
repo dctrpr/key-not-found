@@ -15,7 +15,9 @@ for (const entry of data.entries) {
   assert.ok(!ids.has(entry.id)); ids.add(entry.id);
   assert.ok(['funnel', 'history'].includes(entry.diagram));
   assert.ok(['spread', 'stack', 'mirror'].includes(entry.scene.layout));
-  assert.ok(Number.isInteger(entry.scene.page) && entry.scene.page >= 75 && entry.scene.page <= 80);
+  assert.ok(entry.scene.source === undefined || entry.scene.source === 'issue27');
+  const pages = entry.scene.source === 'issue27' ? [78, 79, 80, 81] : [75, 76, 77, 78, 79, 80];
+  assert.ok(pages.includes(entry.scene.page));
   assert.ok(entry.source.path.startsWith('analysis_outputs/') && !entry.source.path.includes('..'));
   const raw = fs.readFileSync(path.join(root, 'public/research', entry.source.path));
   assert.equal(crypto.createHash('sha256').update(raw).digest('hex'), entry.source.sha256);

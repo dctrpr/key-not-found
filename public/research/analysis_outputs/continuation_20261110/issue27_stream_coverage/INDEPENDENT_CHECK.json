@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "passed": true,
+  "scopeComplete": true,
+  "testId": "issue27-frozen-stream-coverage",
+  "registrationCommit": "070f8b712d9fd5b6b6fa3f5355d612fcbaa7f192",
+  "protocolSha256": "0f4699ac1bddbc661c7b583fc638f0adbcfc98e7372d604bfed81b770a9a0343",
+  "primarySha256": "f5f441345ebe411ee769cdcb624c0717a2b4f790b7eadc50d10dc12d37da07bb",
+  "savedReadingsExactlyMatchPrimary": true,
+  "verifiedSubmittedRecords": 3880,
+  "evaluation": {
+    "streamCount": 3880,
+    "uniqueStreamCount": 2133,
+    "uniqueFormCount": 3709,
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39"
+    ],
+    "shapeCounts": {
+      "wif": 57,
+      "minikey": 1016,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "uniqueShapeCounts": {
+      "wif": 15,
+      "minikey": 205,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "executionCount": 220,
+    "validCounts": {
+      "wif": 0,
+      "minikey": 1,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "hits": [
+      {
+        "format": "minikey",
+        "fingerprint": "d0ad21f0839baa35c7789a8a1de80408bd9eba6e8a0102a2a055bf4af8100203",
+        "length": 22,
+        "checkBits": 8,
+        "private": true
+      }
+    ],
+    "privateReviewRequired": true,
+    "fingerprintRule": {
+      "algorithm": "SHA-256",
+      "domainText": "KEY404/batch20/record-fingerprint/v1",
+      "separatorHex": "00",
+      "rule": "SHA256(domain || 0x00 || ASCII(format) || 0x00 || canonical record bytes)"
+    },
+    "networkQueries": 0,
+    "rawAsciiScalarInterpretations": 0
+  },
+  "controls": {
+    "status": "PASS",
+    "controlFamilies": [
+      "published-minikey30",
+      "bounded-synthetic-minikey22",
+      "published-scalar-one-WIF-compressed-uncompressed",
+      "WIF-invalid-version-marker-checksum-scalars",
+      "hex-boundaries-and-scalar-range",
+      "BIP39-all-five-lengths",
+      "BIP39-unfiltered-five-barriers",
+      "independent-positive-fingerprints",
+      "deterministic-counts",
+      "safe-output"
+    ],
+    "validControlRecords": 10,
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39"
+    ],
+    "syntheticSourceComparisonRecords": 3880,
+    "lexicalOracleCases": 5,
+    "targetInputsRead": false,
+    "targetShapeScans": 0,
+    "targetChecksumValidations": 0,
+    "networkQueries": 0
+  },
+  "networkQueries": 0,
+  "scope": "Independent saved-reading source equality, forms, actual positive/negative validation and domain-separated fingerprints; no new readings or downstream key/address use",
+  "completedAtUTC": "2026-11-10T09:13:24.086607+00:00"
+}

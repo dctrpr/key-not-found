@@ -1,10 +1,10 @@
 # The visual investigation
 
-[Open the visual lab](https://keynotfound.com/#visual-lab) to inspect six source scans in a page board, a separated layer stack, or a page-and-reflection comparison. Drag to orbit and use the zoom/reset controls. The full scan remains available as a normal image. The model loads on request and falls back to the scan if 3D is unavailable.
+[Open the visual lab](https://keynotfound.com/#visual-lab) to inspect the original 2023-puzzle scans or the four retained Orange Party column pages in a page board, a separated layer stack, or a page-and-reflection comparison. Choose the source set before comparing pages. Drag to orbit and use the zoom/reset controls. The full scan remains available as a normal image. The model loads on request and falls back to the scan if 3D is unavailable.
 
 Page spacing, camera positions and the reflection view are viewing tools and investigator hypotheses. They do not establish the creator's intended mechanism or add a new decoding result. The [archived 3D model](https://keynotfound.com/lab/index.html) exposes the earlier OCR and experimental layers separately; its hypotheses are off by default. Its old labels and geometry are navigation aids rather than current source authority.
 
-The [visual log](https://keynotfound.com/#visual-updates) gives completed tests a dated frame. Each frame links to its report, carries the actual UTC completion time, and uses counts checked against a hash-pinned safe result. The initial three frames cover the pair-local mirror envelope, the global checksum lead, and its five-construction history check. They are three steps on one research day, not three days of progress.
+The [visual log](https://keynotfound.com/#visual-updates) gives completed tests a dated frame. Each frame links to its report, carries the actual UTC completion time, and uses counts checked against a hash-pinned safe result. The frames preserve completed research in sequence, including the mirror checks and Orange Party saved-reading replay. Multiple frames on one date are separate steps on that day; their number is not a count of research days. A frame’s page-view link selects its actual source set.
 
 Save a frame as a standalone SVG, or download the [scene data](https://keynotfound.com/data/visual-journal.json). The same recorded view, numbers and evidence can be reused for a later film. The SVG is a schematic explanation; the linked protocol defines the exact experiment. A recap plays only when selected.
 

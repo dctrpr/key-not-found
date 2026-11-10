@@ -90,3 +90,9 @@ The registered pair-local boundary envelope completed all 17,108 modeled paths a
 ## 10 November 2026 — Issue 26 first-word result; globals remain open
 
 The preregistered Issue 26 procedure completed 39,744 correlated first-word readings and 1,746 distinct forms. All two WIF-shaped and ten minikey-shaped distinct strings failed checksums; no other declared format candidate was present. An independent audit agreed. Its 23 obscured full-line endings remain outside scope. Work continues on an exact candidate-union search over the modeled global mirror combinations; no target global result is claimed yet.
+
+## 10 November 2026 — Source-linked visual updates and Issue 27 replay
+
+The visual lab now offers both the original 2023 puzzle scans and the four retained Orange Party pages. Page-board pairs, stack size, image proportions and provenance follow the chosen source. The new replay frame opens the Orange Party scans directly. Dated, downloadable SVG frames and their JSON scene records preserve actual completed work for later recap films; the visual arrangement is not a decoding instruction.
+
+The Issue 27 validator-coverage replay completed at 09:13:14.337 UTC. Its exact saved readings produced 3,709 distinct forms and one weak 22-character minikey checksum pass among 205 shaped strings. All 15 shaped WIFs failed; no hex or BIP39 shapes appeared. A separate implementation agreed on every saved reading and evaluation field. The raw lead stays private and its separately registered history check is next. This is a checksum lead compatible with chance; the puzzle remains unsolved.

@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "batchId": "keiser-issue27-stream-coverage-20261110",
+  "testId": "issue27-frozen-stream-coverage",
+  "startedAtUTC": "2026-11-10T09:13:13.854Z",
+  "registrationCommit": "070f8b712d9fd5b6b6fa3f5355d612fcbaa7f192",
+  "scopeComplete": true,
+  "completeNegative": false,
+  "privateReviewRequired": true,
+  "networkQueries": 0,
+  "transactions": 0,
+  "protocolSha256": "0f4699ac1bddbc661c7b583fc638f0adbcfc98e7372d604bfed81b770a9a0343",
+  "sourceHashes": {
+    "analysis_outputs/continuation_20261109/george_sand_issue27/printed_lines_and_streams.json": "f5f441345ebe411ee769cdcb624c0717a2b4f790b7eadc50d10dc12d37da07bb",
+    "analysis_outputs/continuation_20261109/george_sand_issue27/analyze_printed_lines.py": "78108c23acf33596985b674cc89a033efe19ba7599b8fde521f7ea5efe837184",
+    "analysis_outputs/continuation_20261109/george_sand_issue27/REPORT.md": "76c23544624cd5e81d18deadf83113135c9ce425c181fd43e60d11a677abb74f",
+    "analysis_outputs/continuation_20261109/george_sand_issue27/regions.json": "faabd124ade630330beee9ed99c376af65512172f0a3eeed551f865d769efce9",
+    "analysis_outputs/continuation_20261109/george_sand_issue27/vision_raw.json": "c6cdf7de5fa6c34e33c0eba25b6727057a32f953ae55d428d3b77292265c0df3",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b"
+  },
+  "scriptHashes": {
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d",
+    "scripts/issue27_stream_coverage.py": "7e045510592b19bc1399ca896cd19d601f3a9fc6fee8e8306a1d4115cf812e61"
+  },
+  "parameters": {
+    "primaryPath": "analysis_outputs/continuation_20261109/george_sand_issue27/printed_lines_and_streams.json",
+    "primarySha256": "f5f441345ebe411ee769cdcb624c0717a2b4f790b7eadc50d10dc12d37da07bb",
+    "primaryBytes": 946620,
+    "sourcePages": {
+      "2": 79,
+      "3": 80,
+      "4": 81
+    },
+    "sourceSummary": {
+      "rawObservations": 357,
+      "physicalLines": 356,
+      "regions": 14,
+      "streams": 1940,
+      "corrections": 26,
+      "directEncodingHits": 0
+    },
+    "expectedRows": 356,
+    "expectedRegions": 14,
+    "expectedScopeUnits": 18,
+    "expectedFrozenStreams": 1940,
+    "expectedPrimaryCodePoints": 664764,
+    "expectedMinimumStreamCodePoints": 1,
+    "expectedMaximumStreamCodePoints": 13698,
+    "labelDimensions": [
+      [
+        "p2_wide_quote",
+        "p2_wide_intro",
+        "p2_col1",
+        "p2_col2",
+        "p2_col3",
+        "p3_wide_intro",
+        "p3_col1",
+        "p3_col2",
+        "p3_col3",
+        "p4_wide_intro",
+        "p4_col1_top",
+        "p4_col2_top",
+        "p4_facts_wide",
+        "p4_col3",
+        "p2_all_regions",
+        "p3_all_regions",
+        "p4_all_regions",
+        "article_all_regions"
+      ],
+      [
+        "all",
+        "body",
+        "body_intro",
+        "emphasis"
+      ],
+      [
+        "all",
+        "odd",
+        "even"
+      ],
+      [
+        "forward",
+        "reverse_lines"
+      ],
+      [
+        "firstwords",
+        "initials",
+        "lastwords",
+        "terminals",
+        "whole_lines"
+      ]
+    ],
+    "characterOrders": [
+      "exact",
+      "reversed-codepoints"
+    ],
+    "operationOrder": "Sort frozen labels; emit exact text and text[::-1]; shared exact/whitespace-only-compacted forms; shared deduplication and validators.",
+    "expectedSubmittedRecords": 3880,
+    "maximumSubmittedRecords": 3880,
+    "maximumUniqueForms": 7760,
+    "maximumInputBytes": 2000000,
+    "maximumRegisteredBlobBytes": 2000000,
+    "maximumSubmittedCodePoints": 2000000,
+    "maximumUniqueFormCodePoints": 4000000,
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39"
+    ],
+    "forms": [
+      "exact",
+      "whitespace-only-compacted"
+    ],
+    "bip39Tokenization": "Pinned shared unfiltered ASCII lexical tokens; lowercase case; retain digits and internal apostrophes as unknown-word barriers; ordinary punctuation bounds words; missing-group character \u241e is a hard region boundary.",
+    "minikeyMatching": "Overlapping S-prefixed Base58 windows of exactly 22 or 30 characters, including inside longer Base58 runs; validate SHA256(value+question-mark) first byte zero.",
+    "wifMatching": "Embedded 51/52-character mainnet Base58Check WIF; compression marker and scalar range required.",
+    "hexMatching": "Exactly 64 hexadecimal characters with non-hex boundaries; scalar range required; no checksum claim.",
+    "newReadings": false,
+    "transcriptRepairs": false,
+    "newOCR": false,
+    "otherCorpora": false,
+    "proseHashWrappers": false,
+    "rawAsciiScalars": false,
+    "deriveSeeds": false,
+    "deriveAddresses": false,
+    "passphraseGuesses": false,
+    "networkQueries": 0,
+    "transactions": 0,
+    "rawArtifacts": [
+      "READINGS.private.jsonl"
+    ],
+    "perStreamHashes": false
+  },
+  "controls": {
+    "passed": true,
+    "controls": [
+      "shared-format-controls",
+      "exact-and-codepoint-reversal",
+      "empty-palindrome-Unicode-whitespace-deduplication",
+      "BIP39-unknown-numeric-apostrophe-missing-group-barriers",
+      "BIP39-case-and-punctuation",
+      "safe-result-allowlist",
+      "protocol-byte-registration-guards-with-synthetic-mocks"
+    ],
+    "shared": {
+      "passed": true,
+      "controls": [
+        "official2048wordlist",
+        "BIP39valid-invalid",
+        "BIP39-invalid-group-barrier",
+        "BIP32-all5SLIP132-private-versions",
+        "invalid-root-parent-child-marker-scalar",
+        "BIP38-all6-structural-flag-combinations",
+        "BIP38-reserved-flags-checksum",
+        "Base58Check",
+        "Bech32-v0",
+        "Bech32m-v1",
+        "cross-checksum-version-and-invalid-padding",
+        "SEC-oncurve",
+        "WIF",
+        "minikey22and30-embedded",
+        "invalid-checksum-scalar-case-point",
+        "safe-domain-separated-output"
+      ],
+      "targetInputRead": false,
+      "targetChecks": 0,
+      "networkQueries": 0
+    },
+    "syntheticSubmittedRecords": 6,
+    "syntheticUniqueForms": 6,
+    "mnemonicBarrierCases": 4,
+    "syntheticProtocolGuards": 5,
+    "targetInputsRead": false,
+    "targetRecordChecks": 0,
+    "networkQueries": 0,
+    "transactions": 0
+  },
+  "procedureCounts": {
+    "sourceRows": 356,
+    "sourceRegions": 14,
+    "sourceStreams": 1940,
+    "submittedRecords": 3880,
+    "submittedCodePoints": 1329528,
+    "uniqueFormsMaximum": 7760,
+    "perStreamHashes": false
+  },
+  "evaluation": {
+    "streamCount": 3880,
+    "uniqueStreamCount": 2133,
+    "uniqueFormCount": 3709,
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39"
+    ],
+    "shapeCounts": {
+      "wif": 57,
+      "minikey": 1016,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "uniqueShapeCounts": {
+      "wif": 15,
+      "minikey": 205,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "executionCount": 220,
+    "validCounts": {
+      "wif": 0,
+      "minikey": 1,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "hits": [
+      {
+        "format": "minikey",
+        "fingerprint": "d0ad21f0839baa35c7789a8a1de80408bd9eba6e8a0102a2a055bf4af8100203",
+        "length": 22,
+        "checkBits": 8,
+        "private": true
+      }
+    ],
+    "privateReviewRequired": true,
+    "fingerprintRule": {
+      "algorithm": "SHA-256",
+      "domainText": "KEY404/batch20/record-fingerprint/v1",
+      "separatorHex": "00",
+      "rule": "SHA256(domain || 0x00 || ASCII(format) || 0x00 || canonical record bytes)"
+    },
+    "networkQueries": 0,
+    "rawAsciiScalarInterpretations": 0
+  },
+  "outcome": "finding-private-review-required",
+  "negativeCriterion": "A complete zero result excludes only the four declared literal formats in the exact 1940 frozen Issue27 readings, their already used character reversals and registered whitespace treatment at the pinned bytes.",
+  "limitations": [
+    "Source identification as Issue27/Fall2022 is inherited from the historical report; recovered title/pages alone do not independently establish issue number/date.",
+    "First words were historically visually reviewed; line interiors and last edges retain stated OCR limits. No transcript is rebuilt or repaired here.",
+    "Already frozen scopes, typography selections, parity choices and mirror counterparts are correlated conventions, not evidence of author intent.",
+    "Eight-bit minikey checks are weak under many trials, and valid-range hex64 has no checksum. Any valid record requires private review.",
+    "Extended private keys, BIP38, addresses, SEC points, other articles/issues, arbitrary encodings and new readings are outside this four-format replay.",
+    "No address/history check, seed derivation, wallet action or transaction follows automatically."
+  ],
+  "privateArtifacts": [
+    "READINGS.private.jsonl"
+  ],
+  "completedAtUTC": "2026-11-10T09:13:14.337Z"
+}

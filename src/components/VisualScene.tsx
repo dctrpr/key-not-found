@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import { visualPageUrl, visualPairPages, visualSource } from "./VisualLab";
 import type { VisualLabView, VisualZoomRequest } from "./VisualLab";
 
 type SceneProps = {
@@ -15,9 +16,7 @@ type SceneProps = {
 };
 type SceneAPI = { setView: (view: VisualLabView) => void; zoom: (amount: number) => void };
 type Card = { group: THREE.Group; face: THREE.MeshBasicMaterial; edge: THREE.MeshBasicMaterial };
-const PAGES = [75, 76, 77, 78, 79, 80];
 const WIDTH = 2.4;
-const HEIGHT = WIDTH * 3264 / 2544;
 
 /** Static source cards, rendered only on interaction, resize or texture arrival. */
 export default function VisualScene({ view, resetToken, zoomRequest, descriptionId, onProgress, onReady, onFailure, onExit }: SceneProps) {
@@ -38,10 +37,14 @@ export default function VisualScene({ view, resetToken, zoomRequest, description
     let frame = 0;
     let visible = true;
     let current = initialView.current;
+    const source = visualSource(current.source);
+    const pages: readonly number[] = source.pages;
+    const height = WIDTH * source.height / source.width;
+    const pageKey = (page: number) => visualPageUrl(page, initialView.current.source);
     let loadGeneration = 0;
     const abort = new AbortController();
-    const textures = new Map<number, THREE.Texture>();
-    const pending = new Map<number, Promise<void>>();
+    const textures = new Map<string, THREE.Texture>();
+    const pending = new Map<string, Promise<void>>();
     let activeLoads = 0;
     const loadWaiters: Array<() => void> = [];
     const cleanups: Array<() => void> = [];
@@ -82,12 +85,12 @@ export default function VisualScene({ view, resetToken, zoomRequest, description
 
     const board = new THREE.Group();
     scene.add(board);
-    const plane = new THREE.PlaneGeometry(WIDTH, HEIGHT);
+    const plane = new THREE.PlaneGeometry(WIDTH, height);
     const reflectedPlane = plane.clone();
     const uv = reflectedPlane.getAttribute("uv");
     for (let i = 0; i < uv.count; i++) uv.setX(i, 1 - uv.getX(i));
     uv.needsUpdate = true;
-    const edgeGeometry = new THREE.BoxGeometry(WIDTH + .045, HEIGHT + .045, .034);
+    const edgeGeometry = new THREE.BoxGeometry(WIDTH + .045, height + .045, .034);
     geometries.push(plane, reflectedPlane, edgeGeometry);
     const makeCard = (mirrored = false): Card => {
       const group = new THREE.Group();
@@ -101,7 +104,7 @@ export default function VisualScene({ view, resetToken, zoomRequest, description
       board.add(group);
       return { group, face, edge };
     };
-    const cards = new Map(PAGES.map((page) => [page, makeCard()]));
+    const cards = new Map(pages.map((page) => [page, makeCard()]));
     const reflection = makeCard(true);
     const grid = new THREE.GridHelper(35, 70, 0x343c24, 0x20251a);
     grid.rotation.x = Math.PI / 2;
@@ -137,8 +140,9 @@ export default function VisualScene({ view, resetToken, zoomRequest, description
     // in the accessible HTML. Only needed pages are fetched, with two loaders.
     const maximumEdge = window.matchMedia("(max-width: 720px)").matches ? 900 : 1400;
     const loadTexture = async (page: number) => {
-      if (textures.has(page)) return;
-      if (pending.has(page)) return pending.get(page);
+      const url = pageKey(page);
+      if (textures.has(url)) return;
+      if (pending.has(url)) return pending.get(url);
       const promise = (async () => {
         await new Promise<void>((resolve) => {
           const enter = () => { activeLoads++; resolve(); };
@@ -147,11 +151,10 @@ export default function VisualScene({ view, resetToken, zoomRequest, description
         });
         try {
         if (disposed) return;
-        const url = `/research/sources/pages/${page}.jpg`;
         const response = await fetch(url, { signal: abort.signal });
         if (!response.ok) throw new Error("Source scan unavailable");
         const blob = await response.blob();
-        const width = Math.round(maximumEdge * 2544 / 3264);
+        const width = Math.round(maximumEdge * source.width / source.height);
         const canvas = document.createElement("canvas");
         canvas.width = width;
         canvas.height = maximumEdge;
@@ -180,7 +183,7 @@ export default function VisualScene({ view, resetToken, zoomRequest, description
         const texture = new THREE.CanvasTexture(canvas);
         texture.colorSpace = THREE.SRGBColorSpace;
         texture.anisotropy = Math.min(4, renderer.capabilities.getMaxAnisotropy());
-        textures.set(page, texture);
+        textures.set(url, texture);
         const card = cards.get(page)!;
         card.face.map = texture;
         card.face.color.set(0xffffff);
@@ -196,26 +199,25 @@ export default function VisualScene({ view, resetToken, zoomRequest, description
           loadWaiters.shift()?.();
         }
       })();
-      pending.set(page, promise);
+      pending.set(url, promise);
       return promise;
     };
     const neededPages = (next: VisualLabView) => {
-      if (next.layout === "stack") return PAGES;
+      if (next.layout === "stack") return pages;
       if (next.layout === "mirror") return [next.page];
-      const start = next.page % 2 ? next.page : next.page - 1;
-      return [start, start + 1];
+      return visualPairPages(next);
     };
     const ensurePages = async (next: VisualLabView) => {
       const generation = ++loadGeneration;
       const needed = neededPages(next);
       const update = () => {
         if (disposed || generation !== loadGeneration) return;
-        const loaded = needed.filter((page) => textures.has(page)).length;
+        const loaded = needed.filter((page) => textures.has(pageKey(page))).length;
         onProgress(loaded, needed.length);
         if (loaded === needed.length) onReady();
       };
       update();
-      const queue = needed.filter((page) => !textures.has(page));
+      const queue = needed.filter((page) => !textures.has(pageKey(page)));
       const worker = async () => {
         while (queue.length && !disposed) {
           const page = queue.shift()!;
@@ -238,15 +240,14 @@ export default function VisualScene({ view, resetToken, zoomRequest, description
       });
       reflection.group.visible = false;
       if (next.layout === "spread") {
-        const start = next.page % 2 ? next.page : next.page - 1;
-        [start, start + 1].forEach((page, i) => {
+        visualPairPages(next).forEach((page, i) => {
           const card = cards.get(page)!;
           card.group.visible = true;
           card.group.position.x = (i ? 1 : -1) * 1.25;
           card.group.rotation.y = i ? -.045 : .045;
         });
       } else if (next.layout === "stack") {
-        PAGES.forEach((page, i) => {
+        pages.forEach((page, i) => {
           const card = cards.get(page)!;
           card.group.visible = true;
           card.group.position.set(-1.75 + i * .48, .22 + i * .09, -1.7 + i * .24);
@@ -267,11 +268,11 @@ export default function VisualScene({ view, resetToken, zoomRequest, description
         reflection.group.position.set(1.25, 0, 0);
         reflection.group.rotation.set(0, -.045, 0);
         reflection.edge.color.set(0x8c9870);
-        reflection.face.map = textures.get(next.page) || null;
+        reflection.face.map = textures.get(pageKey(next.page)) || null;
         reflection.face.color.set(reflection.face.map ? 0xffffff : 0x363a2a);
         reflection.face.needsUpdate = true;
       }
-      renderer.domElement.setAttribute("aria-label", `Interactive source scan view. ${next.layout === "mirror" ? "Page " + next.page + " and its reflected copy, an investigator hypothesis." : next.layout === "stack" ? "Six page cards; page " + next.page + " selected." : "Page " + next.page + " selected in a two-page board."}`);
+      renderer.domElement.setAttribute("aria-label", `Interactive ${source.name} source scan view. ${next.layout === "mirror" ? "Page " + next.page + " and its reflected copy, an investigator hypothesis." : next.layout === "stack" ? pages.length + " page cards; page " + next.page + " selected." : "Page " + next.page + " selected in a two-page board."}`);
       fitCamera();
       void ensurePages(next);
     };
@@ -335,7 +336,7 @@ export default function VisualScene({ view, resetToken, zoomRequest, description
     };
   }, [descriptionId, onProgress, onReady, onFailure, onExit]);
 
-  useEffect(() => { api.current?.setView(view); }, [view.layout, view.page, resetToken]);
+  useEffect(() => { api.current?.setView(view); }, [view.layout, view.page, view.source, resetToken]);
   useEffect(() => { if (zoomRequest.serial) api.current?.zoom(zoomRequest.amount); }, [zoomRequest.serial, zoomRequest.amount]);
   return <div className="visual-scene" ref={host} />;
 }

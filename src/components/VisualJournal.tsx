@@ -32,14 +32,14 @@ export function VisualFrame({ entry, number }: { entry: Entry; number: number })
         </g>)}
       </> : <>
         <text x="40" y="101" fill={paper} fontSize="26" fontWeight="700">{entry.title}</text>
-        <text x="40" y="130" fill={muted} fontSize="13">Registered scope → shaped strings → checksum validation</text>
+        <text x="40" y="130" fill={muted} fontSize="13">Registered input → format checks → recorded outcome</text>
         {entry.metrics.map((metric, i) => <g key={metric.label}>
           <rect x={40 + i * 288} y="190" width="244" height="132" rx="1" fill={i === 2 ? lime : '#191917'} stroke={i === 2 ? lime : '#45453c'}/>
           <text x={61 + i * 288} y="251" fill={i === 2 ? '#0e0e0d' : paper} fontSize="49" fontWeight="700" letterSpacing="-2">{formatNumber(metric.value)}</text>
           <text x={62 + i * 288} y="288" fill={i === 2 ? '#30341e' : muted} fontSize="13">{metric.label}</text>
           {i < 2 && <path d={`M ${294 + i * 288} 256 h 18 m -5 -5 l 5 5 -5 5`} stroke={muted} fill="none"/>}
         </g>)}
-        <text x="40" y="356" fill={muted} fontSize="12">{entry.id === 'global-check' ? 'One 8-bit pass is compatible with chance. Follow the lead to the next frame.' : 'A scoped negative. Other page rules and global combinations remain separate questions.'}</text>
+        <text x="40" y="356" fill={muted} fontSize="12">{'Each count is tied to the frozen result. Read the test for its exact scope and limits.'}</text>
       </>}
       <line x1="35" x2="865" y1="397" y2="397" stroke="#34342e"/>
       <text x="40" y="420" fill={muted} fontSize="10">SOURCE {entry.source.sha256.slice(0, 16)} · {entry.completedAtUTC} · SCHEMATIC</text>

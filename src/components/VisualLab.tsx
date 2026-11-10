@@ -5,7 +5,28 @@ import "./VisualLab.css";
 
 const VisualScene = lazy(() => import("./VisualScene"));
 export const VISUAL_PAGES = [75, 76, 77, 78, 79, 80] as const;
-export type VisualLabView = { layout: "spread" | "stack" | "mirror"; page: number };
+export type VisualLabView = { layout: "spread" | "stack" | "mirror"; page: number; source?: "issue27" };
+export const VISUAL_SOURCES = {
+  issue24: {
+    label: "2023 puzzle", name: "Bitcoin Magazine Issue 24", pages: VISUAL_PAGES,
+    width: 2544, height: 3264, provenance: "/research/sources/provenance.json",
+  },
+  issue27: {
+    label: "Orange Party column", name: "Bitcoin Magazine Orange Party column", pages: [78, 79, 80, 81],
+    width: 2040, height: 2805,
+    provenance: "/research/analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/SOURCE_REGISTER.md",
+  },
+} as const;
+export const visualSource = (source?: VisualLabView["source"]) => VISUAL_SOURCES[source || "issue24"];
+export const visualPageUrl = (page: number, source?: VisualLabView["source"]) => source === "issue27"
+  ? `/research/analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_${String(page - 77).padStart(2, "0")}.jpg`
+  : `/research/sources/pages/${page}.jpg`;
+export const visualPairPages = (view: VisualLabView): [number, number] => {
+  const pages: readonly number[] = visualSource(view.source).pages;
+  const index = Math.max(0, pages.indexOf(view.page));
+  const start = Math.floor(index / 2) * 2;
+  return [pages[start], pages[start + 1]];
+};
 export type VisualZoomRequest = { serial: number; amount: number };
 type VisualLabProps = {
   /** An external scene request. Local controls remain usable with or without a callback. */
@@ -21,11 +42,15 @@ const MODES = [
   { id: "stack", label: "Layer stack", Icon: Layers3 },
   { id: "mirror", label: "Mirror", Icon: Box },
 ] as const;
-export const visualPageUrl = (page: number) => `/research/sources/pages/${page}.jpg`;
-const checkedView = (view?: VisualLabView): VisualLabView => ({
-  layout: view && ["spread", "stack", "mirror"].includes(view.layout) ? view.layout : "spread",
-  page: view && VISUAL_PAGES.some((page) => page === view.page) ? view.page : 75,
-});
+const checkedView = (view?: VisualLabView): VisualLabView => {
+  const source = view?.source === "issue27" ? "issue27" : undefined;
+  const pages: readonly number[] = visualSource(source).pages;
+  return {
+    ...(source ? { source } : {}),
+    layout: view && ["spread", "stack", "mirror"].includes(view.layout) ? view.layout : "spread",
+    page: view && pages.includes(view.page) ? view.page : pages[0],
+  };
+};
 
 class SceneBoundary extends Component<
   { children: ReactNode; onFailure: () => void },
@@ -55,8 +80,8 @@ export default function VisualLab({ view, onViewChange, openRequest }: VisualLab
   useEffect(() => {
     if (!view) return;
     const next = checkedView(view);
-    setCurrent((before) => before.layout === next.layout && before.page === next.page ? before : next);
-  }, [view?.layout, view?.page]);
+    setCurrent((before) => before.layout === next.layout && before.page === next.page && before.source === next.source ? before : next);
+  }, [view?.layout, view?.page, view?.source]);
 
   useEffect(() => {
     if (!openRequest) return;
@@ -105,14 +130,16 @@ export default function VisualLab({ view, onViewChange, openRequest }: VisualLab
     setStarted(true);
   };
   const changeZoom = (amount: number) => setZoom((before) => ({ serial: before.serial + 1, amount }));
-  const pairStart = current.page % 2 === 1 ? current.page : current.page - 1;
-  const companion = current.page === pairStart ? pairStart + 1 : pairStart;
+  const sourceId = current.source || "issue24";
+  const source = visualSource(current.source);
+  const [pairStart, pairEnd] = visualPairPages(current);
+  const companion = current.page === pairStart ? pairEnd : pairStart;
   const is3D = started && !unavailable;
   const modeLabel = unavailable ? "2D source scan" : MODES.find((mode) => mode.id === current.layout)!.label;
-  const stageLabel = !unavailable && current.layout === "spread" ? `Pages ${pairStart}–${pairStart + 1}` : `Page ${current.page}`;
+  const stageLabel = !unavailable && current.layout === "spread" ? `Pages ${pairStart}–${pairEnd}` : `Page ${current.page}`;
 
   return (
-    <section className="visual-lab" id="visual-lab" aria-labelledby="visual-lab-title">
+    <section className="visual-lab" id="visual-lab" aria-labelledby="visual-lab-title" data-source={sourceId}>
       <div className="visual-lab-heading">
         <div>
           <span className="visual-eyebrow">THE VISUAL LAB</span>
@@ -122,6 +149,15 @@ export default function VisualLab({ view, onViewChange, openRequest }: VisualLab
       </div>
 
       <div className="visual-console">
+        <div className="visual-source-control" role="group" aria-label="Choose a source set">
+          <span className="visual-page-label">SOURCE SET</span>
+          {Object.entries(VISUAL_SOURCES).map(([id, option]) => (
+            <button key={id} type="button" aria-pressed={sourceId === id} onClick={() => {
+              if (sourceId === id) return;
+              selectView({ layout: current.layout, page: option.pages[0], ...(id === "issue27" ? { source: "issue27" } : {}) });
+            }}>{option.label}</button>
+          ))}
+        </div>
         <div className="visual-toolbar">
           <div className="visual-mode-control" role="group" aria-label="Choose a visual layout">
             {MODES.map(({ id, label, Icon }) => (
@@ -138,18 +174,18 @@ export default function VisualLab({ view, onViewChange, openRequest }: VisualLab
 
         <div className={"visual-stage" + (is3D ? " is-live" : "") + (ready && is3D ? " is-ready" : "")} ref={stage}>
           {!is3D && (
-            <div className={"visual-preview is-" + current.layout + (unavailable ? " is-fallback" : "")}>
+            <div key={sourceId} className={"visual-preview is-" + current.layout + (unavailable ? " is-fallback" : "")}>
               {!unavailable && current.layout !== "mirror" && (
                 <div className="visual-paper is-companion">
-                  <img src={visualPageUrl(companion)} alt="" loading="lazy" decoding="async" width={2544} height={3264} />
+                  <img src={visualPageUrl(companion, current.source)} alt="" loading="lazy" decoding="async" width={source.width} height={source.height} />
                 </div>
               )}
               <div className="visual-paper is-main">
-                <img src={visualPageUrl(current.page)} alt={`Source scan of printed page ${current.page}, Bitcoin Magazine Issue 24`} loading="lazy" decoding="async" width={2544} height={3264} />
+                <img src={visualPageUrl(current.page, current.source)} alt={`Retained source scan of printed page ${current.page}, ${source.name}`} loading="lazy" decoding="async" width={source.width} height={source.height} />
               </div>
               {!unavailable && current.layout === "mirror" && (
                 <div className="visual-paper is-reflection">
-                  <img src={visualPageUrl(current.page)} alt="" loading="lazy" decoding="async" width={2544} height={3264} />
+                  <img src={visualPageUrl(current.page, current.source)} alt="" loading="lazy" decoding="async" width={source.width} height={source.height} />
                 </div>
               )}
             </div>
@@ -158,7 +194,7 @@ export default function VisualLab({ view, onViewChange, openRequest }: VisualLab
           {is3D && (
             <SceneBoundary key={attempt} onFailure={handleFailure}>
               <Suspense fallback={<div className="visual-module-loading" role="status">Preparing the 3D view…</div>}>
-                <VisualScene view={current} resetToken={reset} zoomRequest={zoom}
+                <VisualScene key={sourceId} view={current} resetToken={reset} zoomRequest={zoom}
                   descriptionId={instructionsId} onProgress={handleProgress} onReady={handleReady}
                   onFailure={handleFailure} onExit={stop} />
               </Suspense>
@@ -199,7 +235,7 @@ export default function VisualLab({ view, onViewChange, openRequest }: VisualLab
         <div className="visual-page-strip">
           <span className="visual-page-label">PRINTED PAGE</span>
           <div className="visual-page-buttons" role="group" aria-label="Choose a printed source page">
-            {VISUAL_PAGES.map((page) => (
+            {source.pages.map((page) => (
               <button type="button" key={page} aria-pressed={current.page === page}
                 aria-label={`Inspect printed page ${page}`} onClick={() => selectView({ ...current, page })}>{page}</button>
             ))}
@@ -212,13 +248,13 @@ export default function VisualLab({ view, onViewChange, openRequest }: VisualLab
         <p>
           {unavailable ? `Source scan of page ${current.page}. The full scan remains available through the link.`
             : current.layout === "mirror" ? "A source page and its horizontal reflection. An investigator hypothesis; no extraction is applied."
-            : current.layout === "stack" ? "Six source scans separated for inspection. The spacing is a viewing aid."
+            : current.layout === "stack" ? `${source.pages.length === 4 ? "Four" : "Six"} source scans separated for inspection. The spacing is a viewing aid.`
               : "Source pages in printed sequence. The display arrangement adds no research conclusion."}
         </p>
         <div>
-          <a href={visualPageUrl(current.page)} target="_blank" rel="noreferrer">Open scan {current.page}<ArrowUpRight size={14} /></a>
-          <a href="/research/sources/provenance.json">Source provenance<ArrowUpRight size={14} /></a>
-          <a href="/lab/index.html" target="_blank" rel="noreferrer">Archived 3D layers<ArrowUpRight size={14} /></a>
+          <a href={visualPageUrl(current.page, current.source)} target="_blank" rel="noreferrer">Open scan {current.page}<ArrowUpRight size={14} /></a>
+          <a href={source.provenance}>Source provenance<ArrowUpRight size={14} /></a>
+          {!current.source && <a href="/lab/index.html" target="_blank" rel="noreferrer">Archived 3D layers<ArrowUpRight size={14} /></a>}
         </div>
       </div>
       <p className="visual-keyboard-help" id={instructionsId}>

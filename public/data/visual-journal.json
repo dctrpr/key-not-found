@@ -112,6 +112,43 @@
       },
       "sceneNote": "Illustrative page view. The evidence link contains the exact tested rule and scope.",
       "methodId": "mirror-global-envelope"
+    },
+    {
+      "id": "issue27-coverage",
+      "completedAtUTC": "2026-11-10T09:13:14.337Z",
+      "title": "A checker gap. One weak lead.",
+      "summary": "The old Orange Party readings were replayed through the missing format checks. Two implementations agreed.",
+      "result": "One 22-character minikey passed an eight-bit check. It is compatible with chance; history checking is next.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Distinct forms",
+          "value": 3709,
+          "pointer": "/evaluation/uniqueFormCount"
+        },
+        {
+          "label": "Shaped minikeys",
+          "value": 205,
+          "pointer": "/evaluation/uniqueShapeCounts/minikey"
+        },
+        {
+          "label": "8-bit checksum pass",
+          "value": 1,
+          "pointer": "/evaluation/validCounts/minikey"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/issue27_stream_coverage/RESULT.json",
+        "sha256": "6cbe0570fc7e03e05eb1369ed98e5456d193c2c8527b7c47fbf83fbf69b059ba"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/issue27_stream_coverage/RESULT.md",
+      "scene": {
+        "source": "issue27",
+        "layout": "spread",
+        "page": 79
+      },
+      "sceneNote": "Actual retained Orange Party scans. The 3D arrangement is a viewing aid; the evidence fixes the tested readings.",
+      "methodId": "issue27-frozen-stream-coverage"
     }
   ]
 }

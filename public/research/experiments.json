@@ -816,15 +816,22 @@
       "status": "in-progress",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "The exact 1,940 previously saved Orange Party readings and their pre-existing character reversals; four literal formats, fixed source/code pins and resource bounds.",
-      "result": "Registered replay is being prepared before target checks. The old checker omitted embedded minikey and BIP39 coverage for this corpus; no new target result is claimed.",
+      "scope": "The exact 1,940 previously saved Orange Party readings and their pre-existing character reversals; four literal formats, fixed source/code pins and resource bounds. The single checksum lead has a separately registered five-construction, two-provider history follow-up.",
+      "result": "The 3,880 frozen records produced 3,709 distinct forms. All 15 shaped WIFs failed; one of 205 shaped minikeys passed its weak eight-bit check (22 characters). No 64-hex or BIP39 shapes. Independent saved-source/evaluation verification agreed exactly. A bounded history follow-up is being registered; no prize key is authenticated.",
       "evidence": [
+        "analysis_outputs/continuation_20261110/issue27_stream_coverage/RESULT.md",
+        "analysis_outputs/continuation_20261110/issue27_stream_coverage/RESULT.json",
+        "analysis_outputs/continuation_20261110/issue27_stream_coverage/INDEPENDENT_CHECK.json",
         "analysis_outputs/continuation_20261110/issue27_stream_coverage/PROTOCOL.md",
         "analysis_outputs/continuation_20261110/issue27_stream_coverage/PROTOCOL.json",
-        "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/SOURCE_REGISTER.md"
+        "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/SOURCE_REGISTER.md",
+        "analysis_outputs/continuation_20261110/issue27_minikey_history/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/issue27_minikey_history/PROTOCOL.json"
       ],
       "reproduce": [
-        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/issue27_stream_coverage.py --self-test"
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/issue27_stream_coverage.py --self-test",
+        "PYTHONDONTWRITEBYTECODE=1 python3 scripts/verify_issue27_saved.py --self-test",
+        "node scripts/check_issue27_minikey_lead.cjs --self-test"
       ],
       "limitations": [
         "A validator-coverage replay of existing correlated readings, not a new cipher theory.",
