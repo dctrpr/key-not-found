@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "passed": true,
+  "networkQueries": 0,
+  "completePhysicalHypothesisNegative": false,
+  "testId": "issue27-body-stride12",
+  "registrationCommit": "0b9e14000539bb74af541a8b658b34fa3a3fa912",
+  "protocolSha256": "6e5a4bf93303c29e4447c0e18c22f3e844509c30b9c6e3ee4202df2aa6c3ca69",
+  "verifierSha256": "1f482648945fe1508a211628ba7ec826c23cdbeed317bbf05426595b5be1ebae",
+  "evaluatorSha256": "97cace8ee5f9b2707cc1344c08e46e068db327edc504a8625fb825481261422b",
+  "bodySha256": "783cc6676edf9b135d1eeff04d8bf8636088c1334f9e983f0d9f07dc579bff27",
+  "policySha256": "5c6d4a7b406f99515b1bb16c7f7874df6444c64c3be2e6a32c0798ac08e0d1e5",
+  "tokenRecordsExactlyEqual": true,
+  "readingRecordsExactlyEqual": true,
+  "bodyRows": 312,
+  "tokenCount": 2018,
+  "nominalReadings": 72,
+  "strictKnownReadings": 60,
+  "sourceAffectedReadings": 12,
+  "sourceAffectedByProjection": {
+    "words": 6,
+    "initials": 6,
+    "finals": 0
+  },
+  "evaluationAll": {
+    "streamCount": 72,
+    "uniqueStreamCount": 72,
+    "uniqueFormCount": 96,
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39"
+    ],
+    "shapeCounts": {
+      "wif": 0,
+      "minikey": 93,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "uniqueShapeCounts": {
+      "wif": 0,
+      "minikey": 93,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "executionCount": 93,
+    "validCounts": {
+      "wif": 0,
+      "minikey": 0,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "hits": [],
+    "privateReviewRequired": false,
+    "fingerprintRule": {
+      "algorithm": "SHA-256",
+      "domainText": "KEY404/batch20/record-fingerprint/v1",
+      "separatorHex": "00",
+      "rule": "SHA256(domain || 0x00 || ASCII(format) || 0x00 || canonical record bytes)"
+    },
+    "networkQueries": 0,
+    "rawAsciiScalarInterpretations": 0
+  },
+  "evaluationStrictKnown": {
+    "streamCount": 60,
+    "uniqueStreamCount": 60,
+    "uniqueFormCount": 78,
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39"
+    ],
+    "shapeCounts": {
+      "wif": 0,
+      "minikey": 51,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "uniqueShapeCounts": {
+      "wif": 0,
+      "minikey": 51,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "executionCount": 51,
+    "validCounts": {
+      "wif": 0,
+      "minikey": 0,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "hits": [],
+    "privateReviewRequired": false,
+    "fingerprintRule": {
+      "algorithm": "SHA-256",
+      "domainText": "KEY404/batch20/record-fingerprint/v1",
+      "separatorHex": "00",
+      "rule": "SHA256(domain || 0x00 || ASCII(format) || 0x00 || canonical record bytes)"
+    },
+    "networkQueries": 0,
+    "rawAsciiScalarInterpretations": 0
+  },
+  "procedureCounts": {
+    "bodyRows": 312,
+    "bodyTokens": 2018,
+    "uncertainTokens": 3,
+    "nominalReadings": 72,
+    "strictKnownReadings": 60,
+    "sourceAffectedReadings": 12,
+    "readingsByProjection": {
+      "words": 24,
+      "initials": 24,
+      "finals": 24
+    },
+    "strictKnownReadingsByProjection": {
+      "words": 18,
+      "initials": 18,
+      "finals": 24
+    },
+    "submittedCodePoints": 32038,
+    "perStreamHashes": false
+  },
+  "controls": {
+    "status": "PASS",
+    "controls": [
+      "literal-18-wrapper-policy",
+      "ASCII-whitespace-only",
+      "no-join-no-dedup-case-preservation",
+      "full-reversal-before-phase",
+      "phase1-to12",
+      "no-row-page-resets",
+      "projection-specific-source-uncertainty",
+      "whole-reading-strict-subset",
+      "72-empty-and-duplicate-records",
+      "actual-positive-independent-validation",
+      "exact-JSON-types-and-order"
+    ],
+    "independentEvaluatorControls": {
+      "status": "PASS",
+      "controlFamilies": [
+        "published-minikey30",
+        "bounded-synthetic-minikey22",
+        "published-scalar-one-WIF-compressed-uncompressed",
+        "WIF-invalid-version-marker-checksum-scalars",
+        "hex-boundaries-and-scalar-range",
+        "BIP39-all-five-lengths",
+        "BIP39-unfiltered-five-barriers",
+        "independent-positive-fingerprints",
+        "deterministic-counts",
+        "safe-output"
+      ],
+      "validControlRecords": 10,
+      "formats": [
+        "wif",
+        "minikey",
+        "hex64",
+        "bip39"
+      ],
+      "syntheticSourceComparisonRecords": 3880,
+      "lexicalOracleCases": 5,
+      "targetInputsRead": false,
+      "targetShapeScans": 0,
+      "targetChecksumValidations": 0,
+      "networkQueries": 0
+    },
+    "syntheticReadings": 72,
+    "targetInputsRead": false,
+    "targetTokenizations": 0,
+    "targetStrideSelections": 0,
+    "targetChecksumChecks": 0,
+    "networkQueries": 0
+  },
+  "scopeComplete": true,
+  "computationalModelComplete": true,
+  "physicalSourceComplete": false,
+  "completeNegative": false,
+  "privateReviewRequired": false,
+  "completeModelNegative": true,
+  "strictKnownSubsetComplete": true,
+  "strictKnownSubsetNegative": true,
+  "scope": "Independent exact saved token/reading replay and four-format validation; complete fixed model and strict-known reading subset only. No complete physical hypothesis exclusion.",
+  "completedAtUTC": "2026-11-10T10:14:59.043465+00:00"
+}

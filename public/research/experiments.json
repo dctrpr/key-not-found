@@ -846,12 +846,15 @@
     {
       "id": "issue27-body-stride12",
       "title": "Orange Party: every twelfth literal chunk",
-      "status": "in-progress",
+      "status": "tested",
       "kind": "method-test",
       "independentTheory": false,
       "scope": "One frozen repaired-OCR body model: 312 rows, 2,018 literal chunks, both token directions, 12 phases and words/initials/finals; exactly 72 correlated readings. Three uncertain prefixes propagate by projection.",
-      "result": "The full body source has been reviewed and the fixed-model protocol is prepared. Primary and independent controls pass; target extraction begins only after public registration. No stride result is claimed.",
+      "result": "All 72 fixed-model readings completed: 96 distinct forms, 93 distinct minikey-shaped strings all failed checks, and no WIF/hex/BIP39 shapes. Independent token/reading/evaluation replay agreed. The source-confirmed subset has 60 readings, 78 forms and 51 rejected minikey shapes; 12 readings retain prefix uncertainty. This closes only the registered literal-chunk model, not the full physical-source hypothesis or puzzle.",
       "evidence": [
+        "analysis_outputs/continuation_20261110/issue27_stride12/RESULT.md",
+        "analysis_outputs/continuation_20261110/issue27_stride12/RESULT.json",
+        "analysis_outputs/continuation_20261110/issue27_stride12/INDEPENDENT_CHECK.json",
         "analysis_outputs/continuation_20261110/issue27_stride12/PROTOCOL.md",
         "analysis_outputs/continuation_20261110/issue27_stride12/PROTOCOL.json",
         "analysis_outputs/continuation_20261110/issue27_body_source/SOURCE.md"

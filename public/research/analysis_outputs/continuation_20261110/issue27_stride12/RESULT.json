@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "batchId": "keiser-issue27-body-stride12-20261110",
+  "testId": "issue27-body-stride12",
+  "startedAtUTC": "2026-11-10T10:14:47.896Z",
+  "registrationCommit": "0b9e14000539bb74af541a8b658b34fa3a3fa912",
+  "policySha256": "5c6d4a7b406f99515b1bb16c7f7874df6444c64c3be2e6a32c0798ac08e0d1e5",
+  "scopeComplete": true,
+  "computationalModelComplete": true,
+  "physicalSourceComplete": false,
+  "completeNegative": false,
+  "completeModelNegative": true,
+  "strictKnownSubsetComplete": true,
+  "strictKnownSubsetNegative": true,
+  "completePhysicalHypothesisNegative": false,
+  "privateReviewRequired": false,
+  "networkQueries": 0,
+  "transactions": 0,
+  "protocolSha256": "6e5a4bf93303c29e4447c0e18c22f3e844509c30b9c6e3ee4202df2aa6c3ca69",
+  "sourceHashes": {
+    "analysis_outputs/continuation_20261110/issue27_body_source/BODY_ROWS.json": "783cc6676edf9b135d1eeff04d8bf8636088c1334f9e983f0d9f07dc579bff27",
+    "analysis_outputs/continuation_20261109/george_sand_issue27/printed_lines_and_streams.json": "f5f441345ebe411ee769cdcb624c0717a2b4f790b7eadc50d10dc12d37da07bb",
+    "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_01.jpg": "d4cca9f4326ba21a959551e8537596846bccdea42efe37f463506cd2d423fb8c",
+    "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_02.jpg": "e18e02e521444c9ea760c6e1d80a39bbee08d65a7839e970629ab81b4fd83610",
+    "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_03.jpg": "b7f120860b1a76aa6ba97c836bb56388477ee8878665d75414098f9b8a38a1b5",
+    "analysis_outputs/comparison_articles/overdose_style_uniqueness/issue27/page_04.jpg": "60da7f7ed64764e8c9bb347bce163eb2f8dc4c4ad20abbd00182bced3ad3343a",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b",
+    "analysis_outputs/continuation_20261110/issue27_stride12/POLICY_PROPOSAL.json": "5c6d4a7b406f99515b1bb16c7f7874df6444c64c3be2e6a32c0798ac08e0d1e5"
+  },
+  "scriptHashes": {
+    "scripts/issue27_stride12.py": "84a061444a73fbedc14f8068f8d3cce1fb7ef990b4bef65181e78f234dcbfd01",
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d",
+    "scripts/verify_issue27_stride12.py": "1f482648945fe1508a211628ba7ec826c23cdbeed317bbf05426595b5be1ebae",
+    "scripts/verify_issue27_saved.py": "97cace8ee5f9b2707cc1344c08e46e068db327edc504a8625fb825481261422b"
+  },
+  "sourceExpectations": {
+    "bodyRows": 312,
+    "bodyTokenCount": 2018,
+    "uncertainTokens": 3
+  },
+  "parameters": {
+    "expectedBodyRows": 312,
+    "expectedUncertainTokens": 3,
+    "maximumTokens": 5000,
+    "expectedSubmittedRecords": 72,
+    "maximumSubmittedRecords": 72,
+    "maximumUniqueForms": 144,
+    "maximumInputBytes": 2000000,
+    "maximumRegisteredBlobBytes": 2000000,
+    "maximumSubmittedCodePoints": 250000,
+    "maximumUniqueFormCodePoints": 250000,
+    "maximumSourceCodePoints": 250000,
+    "stride": 12,
+    "directions": [
+      "forward",
+      "reverse"
+    ],
+    "phaseLabelsOneBased": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "phaseMeaning": "Offset phase-1 into the direction-specific full token array, then every twelfth token. Reverse means reverse all tokens before selection.",
+    "projections": [
+      "words",
+      "initials",
+      "finals"
+    ],
+    "forms": [
+      "exact",
+      "whitespace-only-compacted"
+    ],
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39"
+    ],
+    "strictKnownSubset": "Filter whole readings whose selected tokens are source-complete for their projection; never omit selected tokens or join across omitted tokens.",
+    "uncertainty": "Only first kept chunk in p4:col1_top:2/3/4 is uncertain for words and initials; its finals l/e/s are source-certified.",
+    "rawArtifacts": [
+      "TOKENS.private.json",
+      "READINGS.private.jsonl"
+    ],
+    "perStreamHashes": false,
+    "networkQueries": 0,
+    "deriveSeeds": false,
+    "deriveAddresses": false,
+    "transactions": 0
+  },
+  "controls": {
+    "passed": true,
+    "controls": [
+      "shared-format-controls",
+      "literal-wrappers-censor-hyphen-slash-currency-internal-apostrophes",
+      "all-directions-phases-projections-no-resets",
+      "every-twelfth-published-minikey-and-BIP39",
+      "whole-reading-projection-uncertainty-filter",
+      "source-alignment-schema-and-uncertainty-guards",
+      "nominal-72-empty-and-duplicate-records",
+      "safe-evaluation-allowlist",
+      "protocol-and-registration-byte-drift-rejections"
+    ],
+    "shared": {
+      "passed": true,
+      "controls": [
+        "official2048wordlist",
+        "BIP39valid-invalid",
+        "BIP39-invalid-group-barrier",
+        "BIP32-all5SLIP132-private-versions",
+        "invalid-root-parent-child-marker-scalar",
+        "BIP38-all6-structural-flag-combinations",
+        "BIP38-reserved-flags-checksum",
+        "Base58Check",
+        "Bech32-v0",
+        "Bech32m-v1",
+        "cross-checksum-version-and-invalid-padding",
+        "SEC-oncurve",
+        "WIF",
+        "minikey22and30-embedded",
+        "invalid-checksum-scalar-case-point",
+        "safe-domain-separated-output"
+      ],
+      "targetInputRead": false,
+      "targetChecks": 0,
+      "networkQueries": 0
+    },
+    "syntheticNominalReadings": 72,
+    "syntheticSelectionComparisons": 72,
+    "syntheticUncertaintyAffected": 4,
+    "syntheticStrictKnownReadings": 68,
+    "syntheticPositiveFormatControls": [
+      "published-minikey30-every12",
+      "BIP39-every12"
+    ],
+    "syntheticProtocolRejections": 6,
+    "syntheticSourceGuardRejections": 12,
+    "syntheticSourceBodyRows": 312,
+    "syntheticTokenCapRejections": 1,
+    "targetInputsRead": false,
+    "targetTokenizations": 0,
+    "targetStrideSelections": 0,
+    "targetRecordChecks": 0,
+    "networkQueries": 0,
+    "transactions": 0
+  },
+  "evaluationAll": {
+    "streamCount": 72,
+    "uniqueStreamCount": 72,
+    "uniqueFormCount": 96,
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39"
+    ],
+    "shapeCounts": {
+      "wif": 0,
+      "minikey": 93,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "uniqueShapeCounts": {
+      "wif": 0,
+      "minikey": 93,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "executionCount": 93,
+    "validCounts": {
+      "wif": 0,
+      "minikey": 0,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "hits": [],
+    "privateReviewRequired": false,
+    "fingerprintRule": {
+      "algorithm": "SHA-256",
+      "domainText": "KEY404/batch20/record-fingerprint/v1",
+      "separatorHex": "00",
+      "rule": "SHA256(domain || 0x00 || ASCII(format) || 0x00 || canonical record bytes)"
+    },
+    "networkQueries": 0,
+    "rawAsciiScalarInterpretations": 0
+  },
+  "evaluationStrictKnown": {
+    "streamCount": 60,
+    "uniqueStreamCount": 60,
+    "uniqueFormCount": 78,
+    "formats": [
+      "wif",
+      "minikey",
+      "hex64",
+      "bip39"
+    ],
+    "shapeCounts": {
+      "wif": 0,
+      "minikey": 51,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "uniqueShapeCounts": {
+      "wif": 0,
+      "minikey": 51,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "executionCount": 51,
+    "validCounts": {
+      "wif": 0,
+      "minikey": 0,
+      "hex64": 0,
+      "bip39": 0
+    },
+    "hits": [],
+    "privateReviewRequired": false,
+    "fingerprintRule": {
+      "algorithm": "SHA-256",
+      "domainText": "KEY404/batch20/record-fingerprint/v1",
+      "separatorHex": "00",
+      "rule": "SHA256(domain || 0x00 || ASCII(format) || 0x00 || canonical record bytes)"
+    },
+    "networkQueries": 0,
+    "rawAsciiScalarInterpretations": 0
+  },
+  "procedureCounts": {
+    "bodyRows": 312,
+    "bodyTokens": 2018,
+    "uncertainTokens": 3,
+    "nominalReadings": 72,
+    "strictKnownReadings": 60,
+    "sourceAffectedReadings": 12,
+    "readingsByProjection": {
+      "words": 24,
+      "initials": 24,
+      "finals": 24
+    },
+    "strictKnownReadingsByProjection": {
+      "words": 18,
+      "initials": 18,
+      "finals": 24
+    },
+    "submittedCodePoints": 32038,
+    "perStreamHashes": false
+  },
+  "outcome": "no-valid-record-in-fixed-model",
+  "negativeCriterion": "A complete zero result excludes only four literal formats in the 72 declared readings of the single frozen repaired-OCR model. Separately report the whole-reading subset with source-complete projection inputs. Never call the whole physical-source hypothesis negative.",
+  "limitations": [
+    "Stride12 is exploratory, motivated by the duplicated printed 12-step passage; no creator instruction is authenticated.",
+    "Conventional body-row order, whitespace chunks and the exact wrapper set are declared model assumptions.",
+    "Three unchanged low-confidence leading words remain provisional for words and initials; no alternative spelling is tried. Finals use source-certified terminal glyphs.",
+    "No hard-wrap joins, linguistic letter policy, case variants, page resets, other populations, arbitrary encodings or downstream key use are tested.",
+    "Minikey checksum evidence is weak and hex64 scalar range has no checksum. Any positive is private review only."
+  ],
+  "privateArtifacts": [
+    "TOKENS.private.json",
+    "READINGS.private.jsonl"
+  ],
+  "completedAtUTC": "2026-11-10T10:14:48.170Z"
+}
