@@ -291,7 +291,7 @@
       ],
       "reproduce": [
         "node scripts/minikey_window_audit.cjs --self-test",
-        "node scripts/minikey_window_audit.cjs --scan --check --out analysis_outputs/continuation_20261110/minikey_windows/RESULT.json",
+        "node scripts/minikey_window_audit.cjs --scan --registration-commit 6010d9310f678a0380939fe98f2820f41c6a3f68 --out minikey-rerun.json",
         "python3 scripts/verify_minikey_window_audit.py minikey-independent-rerun.json"
       ],
       "limitations": [
