@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "status": "PASS",
+  "startedAtUTC": "2026-11-10T19:01:34.555018+00:00",
+  "completedAtUTC": "2026-11-10T19:01:34.690460+00:00",
+  "codePins": {
+    "g07_supplemental_formats.py": "ce94823f90628017ea9a19d3b6e3200b16d2fbd53d880e465c2aeee3ae374006",
+    "verify_g07_supplemental.py": "994f1374f0d93a5eeb9ee2c0f9dcf7dde642de2688a5b3721649a9b3ff3d85fb",
+    "batch20_supplemental_formats.py": "385524773ef0c20a2af1858bbf1d1f15cb45fd47fdf08627b0b97d2dda2754ac",
+    "verify_batch20_supplemental.py": "a4bf930523eb29c0da942439eb6005514fc60d0dfb4f6deede2171380bd4389c",
+    "batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d",
+    "PROTOCOL_DRAFT.json": "9d14337811a1679014ee06193511fe196861bf3a8f8e1adb0ce69d09fb8ed161"
+  },
+  "primaryControls": {
+    "version": 1,
+    "testId": "g07-supplemental-fixed-formats",
+    "status": "PASS",
+    "selfTestChecks": 69,
+    "targetArtifactsOpened": false,
+    "targetFormsConstructed": false,
+    "bareMinikeyHashes": 0,
+    "oldSharedMinikeyCalls": 0,
+    "nonSupplementalSharedCalls": 0,
+    "wholeCoreSelfTests": 0,
+    "ocrReruns": 0,
+    "sourceSelectorRegenerations": 0,
+    "scalarDerivations": 0,
+    "addressDerivations": 0,
+    "networkQueries": 0
+  },
+  "independentControls": {
+    "version": 1,
+    "status": "PASS",
+    "syntheticCompleteSavedRecords": 1038,
+    "syntheticUniqueStreams": 833,
+    "syntheticUniqueForms": 1464,
+    "syntheticEmptyStringsRetained": 14,
+    "rejectionControls": 26,
+    "sharedFormatPositiveControls": 4,
+    "independentCoreSha256": "a4bf930523eb29c0da942439eb6005514fc60d0dfb4f6deede2171380bd4389c",
+    "directVerifiedByteCompilation": true,
+    "legacyCommonLoaderCalls": 0,
+    "targetInputsOpened": 0,
+    "targetFormsOrShapesConstructed": 0,
+    "primaryRunnerImports": 0,
+    "scalarDerivations": 0,
+    "addressDerivations": 0,
+    "networkQueries": 0
+  },
+  "peerChecks": {
+    "normativeDefinitionAndEightSourceFiveScriptSets": true,
+    "completeSyntheticSourceRecords": 1038,
+    "uniqueSyntheticTexts": 833,
+    "uniqueSyntheticForms": 1464,
+    "emptySyntheticRecords": 14,
+    "fullFormsAndRawValidationAgreement": true,
+    "noncommitGateBeforeProtocolReadRejections": 4,
+    "positiveCommitGateOrdering": true,
+    "symlinkIntoSiteRejections": 2,
+    "privateDirectory0700File0600": true,
+    "directVerifiedByteCompilation": true
+  },
+  "monitor": {
+    "targetOpens": 0,
+    "subprocessCalls": 0,
+    "networkEvents": 0,
+    "frozenPycOpens": 0,
+    "bareMinikeyHashes": 0,
+    "oldSharedFormatCalls": 0
+  },
+  "controlScratchEvents": {
+    "relativeFreshDirectoryCleanupOpens": 2
+  },
+  "harnessNote": "An initial monitor-only attempt falsely resolved shutil dir_fd-relative fresh cleanup against cwd; fixed by the exact fresh scratch-name exemption. This was not a frozen-adapter defect or a target file open.",
+  "scope": "Synthetic and published support controls only; no G07 target bytes, strings, forms, shape or validation outputs opened."
+}

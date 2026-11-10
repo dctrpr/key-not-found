@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "status": "PASS",
+  "materialBlockers": [],
+  "completedAtUTC": "2026-11-10T19:02:54.698Z",
+  "frozenFiles": {
+    "g07_supplemental_formats.py": "ce94823f90628017ea9a19d3b6e3200b16d2fbd53d880e465c2aeee3ae374006",
+    "verify_g07_supplemental.py": "994f1374f0d93a5eeb9ee2c0f9dcf7dde642de2688a5b3721649a9b3ff3d85fb",
+    "PROTOCOL_DRAFT.json": "9d14337811a1679014ee06193511fe196861bf3a8f8e1adb0ce69d09fb8ed161",
+    "CONTRACT.metadata.json": "6e62062cfb5a7daa09f027c16107cc5265ef50938cf135099bebba37bb1c3cbb",
+    "CODE_DEFINITION.metadata.json": "861cfd64c3666002affb4ef007b34ff9c9c687e7c24dec8e75731edc747a923a"
+  },
+  "checks": [
+    {
+      "area": "source/code/definition identity",
+      "outcome": "PASS",
+      "evidence": "Exact8 source and5 script sets match both adapters and draft; normative test passes both exact definition and canonical-hash checks. Five code and draft bytes checked against declared frozen hashes; actual G07 source bytes not opened."
+    },
+    {
+      "area": "registration before target parsing",
+      "outcome": "PASS",
+      "evidence": "Primary validates executing/fixed protocol path, full40hex actualcommit, protocol registered-byte identity, each registered/current pin, and executing bytes before load_json of target/witness buffers. Verifier validates installed/fixed paths, commit object, normative test, exact pin sets and every current/registered blob before target read_json."
+    },
+    {
+      "area": "cache/compilation",
+      "outcome": "PASS",
+      "evidence": "Adapters compile only directly read SHA-pinned core/common source bytes into ModuleType; no SourceFileLoader or cached pyc path. Own external monitor observed0 frozen pyc opens."
+    },
+    {
+      "area": "source/forms/rules",
+      "outcome": "PASS",
+      "evidence": "Fixed1038 records/833 unique texts/1464 forms,14 empty texts,1748 max and42110 source codepoints; no source selector/OCR rerun. Exact plus Unicode-whitespace-only compaction, sorted/deduplicated with per-record boundaries retained. Added4 formats and embedded exact26 only; no old minikey/scalar/network."
+    },
+    {
+      "area": "independent completeness",
+      "outcome": "PASS",
+      "evidence": "Verifier reconstructs forms through separate frozen core and compares full source objects/order/forms/raw shape sets/raw positives/private metadata and safe aggregate result. Complete1038/833/1464 synthetic cohort gave exact full-form/raw-validation agreement. Shared4 engine deliberately remains shared; no independent validator mathematics claim."
+    },
+    {
+      "area": "private output and positive privacy",
+      "outcome": "PASS",
+      "evidence": "Primary fresh output must resolve outside entire Site and any public path component; parent0700, created directory0700, exclusive files0600. Verifier uses pinned helper private guards. Both reject a synthetic private alias symlink resolving into Site. Safe result copies only allowlisted aggregates, provenance and whole-artifact integrity, no raw/fingerprint/address/SEC or locator fields; synthetic positives exercised filtering."
+    },
+    {
+      "area": "failure/caps",
+      "outcome": "PASS",
+      "evidence": "Fixed input/protocol/source/form/shape/private-artifact caps are declared and checked. Missing/changed source/protocol/code, count/format or execution errors stay inconclusive; success receipts are emitted only after complete processing. Actual network/process calls remained denied in controls."
+    }
+  ],
+  "sourceFreeControls": {
+    "primaryChecks": 69,
+    "independentRejections": 26,
+    "completeSyntheticRecords": 1038,
+    "syntheticUniqueTexts": 833,
+    "syntheticUniqueForms": 1464,
+    "emptySyntheticTexts": 14,
+    "noncommitRegistrationRejectionsBeforeProtocolRead": 4,
+    "positiveCommitGateOrdering": true,
+    "symlinkIntoSiteRejections": 2,
+    "fullSyntheticFormsAndRawValidationAgreement": true,
+    "monitor": {
+      "targetOpens": 0,
+      "subprocessCalls": 0,
+      "networkEvents": 0,
+      "frozenPycOpens": 0,
+      "bareMinikeyHashes": 0,
+      "oldSharedFormatCalls": 0
+    }
+  },
+  "syntheticReceiptSHA256": "c6ba7dafab8ebfe86c2e3fbe5ff3c319500ef3e7a13846e58f5b6a17f0574454",
+  "syntheticHarnessSHA256": "e84923c4f0aa310d3419e9ca574e19ebef86a1a14074e7e3dcacdbfed7be3a64",
+  "limits": [
+    "Static/synthetic peer review only; no actual G07 STREAMS/RESULT/CHECK file or raw target form/shape/validation was opened.",
+    "No actual Git registration or remote-publication claim was executed by this reviewer; commit-type behavior used mocked Git responses. Root must still publish/verify registration before target execution.",
+    "Core/common source support controls were allowed; unchanged common4 format mathematics is shared.",
+    "An initial control-monitor false positive on shutil dir_fd-relative scratch cleanup was corrected in the private harness only; frozen adapters unchanged."
+  ],
+  "activity": {
+    "targetReads": 0,
+    "targetFormsOrShapeChecks": 0,
+    "network": 0,
+    "subprocess": 0,
+    "publicEdits": 0,
+    "gitActions": 0,
+    "frozenCodeEdits": 0
+  }
+}

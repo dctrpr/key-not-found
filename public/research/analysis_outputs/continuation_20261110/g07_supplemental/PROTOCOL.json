@@ -1,0 +1,155 @@
+{
+  "version": 1,
+  "batchId": "keiser-g07-supplemental-fixed-formats-20261110",
+  "test": {
+    "id": "g07-supplemental-fixed-formats",
+    "title": "Supplemental literal formats on unchanged saved G07 OCR streams",
+    "family": "fixed-artifact-format-compatibility",
+    "branchId": "text-lines",
+    "inputPaths": [
+      "analysis_outputs/continuation_20261110/batch20/G07/STREAMS.json",
+      "analysis_outputs/continuation_20261110/batch20/G07/RESULT.json",
+      "analysis_outputs/continuation_20261110/batch20/G07/INDEPENDENT_CHECK.json",
+      "scripts/batch20_support/vision-datamatrix-control.png",
+      "scripts/batch20_support/vision-datamatrix-control.txt",
+      "scripts/batch20_support/english.txt",
+      "scripts/batch20_support/controls.json",
+      "scripts/batch20_common.py"
+    ],
+    "implementationPaths": [
+      "scripts/g07_supplemental_formats.py",
+      "scripts/verify_g07_supplemental.py",
+      "scripts/batch20_supplemental_formats.py",
+      "scripts/verify_batch20_supplemental.py",
+      "scripts/batch20_common.py"
+    ],
+    "protocolPath": "analysis_outputs/continuation_20261110/g07_supplemental/PROTOCOL.json",
+    "sourceModel": {
+      "id": "batch20-G07-frozen-saved-streams",
+      "sourcePath": "analysis_outputs/continuation_20261110/batch20/G07/STREAMS.json",
+      "expectations": {
+        "labeledStreams": 1038,
+        "uniqueStreams": 833,
+        "uniqueForms": 1464,
+        "emptyTexts": 14,
+        "maxTextCodepoints": 1748,
+        "totalTextCodepoints": 42110,
+        "legacyMinikeyShapeOccurrences": 4,
+        "legacyMinikeyUniqueShapes": 3
+      },
+      "fixedWitnessHashes": {
+        "analysis_outputs/continuation_20261110/batch20/G07/STREAMS.json": "e934e778c07cba19c00c6e4fb7cb8f858042f904d320f0d919a59fa1e4c3e7da",
+        "analysis_outputs/continuation_20261110/batch20/G07/RESULT.json": "fc3ab1acf7e97b6061341065d3e9c9a64626b37ee985a86db9147aa412742513",
+        "analysis_outputs/continuation_20261110/batch20/G07/INDEPENDENT_CHECK.json": "f57582748af54a9ba5bec0a1db67f74ca69471f57b7859217a2de7bd432c1d4a",
+        "scripts/batch20_support/vision-datamatrix-control.png": "4f395fb1356cfa598ef08f3aaa07d372e1b836c6bc7bc08a6820a4584db2facc",
+        "scripts/batch20_support/vision-datamatrix-control.txt": "84d89877f0d4041efb6bf91a16f0248f2fd573e6af05c19f96bedb9f882f7882",
+        "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+        "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b",
+        "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d"
+      },
+      "encoding": "Exact saved UTF-8 strings and record order; original OCR source model unchanged.",
+      "ocrRerun": false,
+      "sourceSelectorRegenerated": false
+    },
+    "forms": {
+      "rule": "Unchanged per-artifact exact strings and Unicode-whitespace-only compaction, deduplicated and Python-string sorted; empty retained; no other transforms or joins.",
+      "maximumForms": 1464,
+      "otherTransforms": false
+    },
+    "literalValidation": {
+      "commonFormats": [
+        "extended_private",
+        "bip38",
+        "address",
+        "sec_public"
+      ],
+      "minikeyLengths": [
+        26
+      ],
+      "minikeyShape": "Overlapping embedded exact26 S-prefixed Base58 windows, no outer boundary.",
+      "minikeyChecksum": "SHA256(ASCII(value + question mark))[0]==0; weak8bit only.",
+      "minikeyScalarHash": false,
+      "fingerprint": "Existing batch20 domain-separated record fingerprint; private only.",
+      "rawAliasesPreservedCanonicalFingerprintsDeduplicated": true
+    },
+    "implementationDependencies": {
+      "fixedCodePins": {
+        "scripts/batch20_supplemental_formats.py": "385524773ef0c20a2af1858bbf1d1f15cb45fd47fdf08627b0b97d2dda2754ac",
+        "scripts/verify_batch20_supplemental.py": "a4bf930523eb29c0da942439eb6005514fc60d0dfb4f6deede2171380bd4389c",
+        "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d"
+      },
+      "primaryReuse": [
+        "make_forms",
+        "evaluate_common4",
+        "scan_minikey26_forms"
+      ],
+      "independentReuse": [
+        "reconstruct_forms",
+        "evaluate_common4",
+        "independent_mini26"
+      ],
+      "sharedFourFormatEngine": "Unchanged batch20_common.py; both implementations share its four shape/validation routines. Independent forms/26 core is structurally separate; no claim of independent shared4 validator mathematics."
+    },
+    "registrationGate": "Fixed public script/protocol paths; full40hex actual local Git commit; all8source/5code/protocol current bytes equal registered blobs before target JSON parsing. Remote publication separately established by operator.",
+    "caps": {
+      "sourceJsonBytes": 2000000,
+      "registeredBlobBytes": 20000000,
+      "protocolBytes": 1000000,
+      "privateArtifactBytes": 20000000,
+      "totalSourceCodepoints": 50000,
+      "totalFormCodepoints": 100000,
+      "streamCodepoints": 2000,
+      "shapeOccurrencesPerCohort": 1000000,
+      "uniqueShapesPerCohort": 500000
+    },
+    "outputPolicy": {
+      "rawArtifacts": [
+        "FORMS.private.json",
+        "VALIDATION.private.json"
+      ],
+      "rawOutsideEntireSiteCheckout": true,
+      "directoryMode": "0700",
+      "fileMode": "0600",
+      "publicReceipt": "Aggregate counts, scope and whole-artifact integrity only; no raw values, fingerprints, addresses, SEC text or hit locators.",
+      "semanticConclusionComputed": false
+    },
+    "activityBoundary": {
+      "ocrReruns": 0,
+      "sourceSelectorRegenerations": 0,
+      "newTransformsBeyondExistingForms": 0,
+      "newJoinsOrRepairs": 0,
+      "oldSharedMinikeyCalls": 0,
+      "minikeyScalarHashes": 0,
+      "proseToKeyHashes": 0,
+      "scalarDerivations": 0,
+      "addressDerivations": 0,
+      "seedDerivations": 0,
+      "childKeyDerivations": 0,
+      "networkQueries": 0,
+      "transactions": 0
+    },
+    "limitations": [
+      "Compatibility replay of the exact saved G07 OCR outputs, not a new extraction theory or source-selection test.",
+      "OCR misses, unusual/damaged text, and the quality of original112detector views remain outside added-format coverage.",
+      "Four shared validators are unchanged and shared; a weak8bit minikey or on-curve SEC is only a review lead, not ownership/funding/prize proof.",
+      "No semantic recognition, source geometry conclusion or whole-puzzle exclusion is computed."
+    ]
+  },
+  "sourceHashes": {
+    "analysis_outputs/continuation_20261110/batch20/G07/STREAMS.json": "e934e778c07cba19c00c6e4fb7cb8f858042f904d320f0d919a59fa1e4c3e7da",
+    "analysis_outputs/continuation_20261110/batch20/G07/RESULT.json": "fc3ab1acf7e97b6061341065d3e9c9a64626b37ee985a86db9147aa412742513",
+    "analysis_outputs/continuation_20261110/batch20/G07/INDEPENDENT_CHECK.json": "f57582748af54a9ba5bec0a1db67f74ca69471f57b7859217a2de7bd432c1d4a",
+    "scripts/batch20_support/vision-datamatrix-control.png": "4f395fb1356cfa598ef08f3aaa07d372e1b836c6bc7bc08a6820a4584db2facc",
+    "scripts/batch20_support/vision-datamatrix-control.txt": "84d89877f0d4041efb6bf91a16f0248f2fd573e6af05c19f96bedb9f882f7882",
+    "scripts/batch20_support/english.txt": "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+    "scripts/batch20_support/controls.json": "d37bf54e78d408453939259dc7ef1a60f54e32bedadd0cd5de903f8d41fb334b",
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d"
+  },
+  "scriptHashes": {
+    "scripts/g07_supplemental_formats.py": "ce94823f90628017ea9a19d3b6e3200b16d2fbd53d880e465c2aeee3ae374006",
+    "scripts/verify_g07_supplemental.py": "994f1374f0d93a5eeb9ee2c0f9dcf7dde642de2688a5b3721649a9b3ff3d85fb",
+    "scripts/batch20_supplemental_formats.py": "385524773ef0c20a2af1858bbf1d1f15cb45fd47fdf08627b0b97d2dda2754ac",
+    "scripts/verify_batch20_supplemental.py": "a4bf930523eb29c0da942439eb6005514fc60d0dfb4f6deede2171380bd4389c",
+    "scripts/batch20_common.py": "48328a24ae0f2b136a1aa18f273c1a507efaf90153277a6b3ab1bc8ff97e590d"
+  }
+}

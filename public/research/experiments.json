@@ -691,14 +691,16 @@
       "evidence": [
         "analysis_outputs/continuation_20261110/batch20/G07/RESULT.md",
         "analysis_outputs/continuation_20261110/batch20/G07/RESULT.json",
-        "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json"
+        "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json",
+        "analysis_outputs/continuation_20261110/g07_supplemental/PROTOCOL.md"
       ],
       "reproduce": [
         "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_geometry.py --run G07 --protocol analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json --registration-commit 90ad1d694b0eb236494ae199b87de05db5e3d331 --out G07-rerun"
       ],
       "limitations": [
         "No posthoc contrast/threshold/character substitution. OCR errors can hide genuine text.",
-        "This is full-source extraction coverage; earlier RGB registration gates were p76 statistical diagnostics."
+        "This is full-source extraction coverage; earlier RGB registration gates were p76 statistical diagnostics.",
+        "The historical result covers its original four formats. A separate fixed saved-output replay is being registered for the added four formats and 26-character minikeys; no target result is claimed at this checkpoint."
       ]
     },
     {
