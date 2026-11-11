@@ -38,4 +38,6 @@ The [scan transfer frame](https://keynotfound.com/#visual-issue24-heading-scan-t
 
 The [initial comparison frame](https://keynotfound.com/#visual-issue24-p77-initial-transfer) opens page 77 and compares three enlarged native crops. The disputed sharper-scan glyph falls on the lowercase side of the ink metric. The second-scan case controls and near-target optical model fell short of validation. [Initial comparison report](analysis_outputs/continuation_20261111/p77_initial_transfer/RESULT.md)
 
+The [archived boundary frame](https://keynotfound.com/#visual-sand-terminal-echo) opens Issue 24 page 78 and links its rewrapped pull quote. A second excerpt shows Issue 26’s separate nine-line opener. Neither source supplies a printed counterpart to the first-eight marks and terminal echo in the archived Sand example. [Boundary report](analysis_outputs/continuation_20261111/sand_terminal_echo/RESULT.md)
+
 The puzzle remains unsolved. The 3D display and visual log do not verify the prize funding.

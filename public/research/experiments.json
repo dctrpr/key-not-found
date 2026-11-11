@@ -144,7 +144,7 @@
       "kind": "method-test",
       "independentTheory": false,
       "scope": "142 visually reconstructed body lines; declared parity, edge and reversal variants. Independent visual line-edge inventories in the second scan and a bounded cross-scan adjudication.",
-      "result": "No checksum-valid WIF, literal 64-hex key or contiguous BIP39 phrase in the recorded streams. Its minikey check covered complete compact strings only; embedded windows are audited separately. Two AI readers found no coherent instruction in the two saved whole-body right-edge readings. A later source audit aligned all 142 body baselines, including three manually checked short rows, without a changed lexical edge. One damaged initial retains a cross-scan case disagreement. A same-row ink comparison favors the lowercase shape in the sharper crop. The lower-resolution control separation and near-target optical transfer fail their declared checks.",
+      "result": "No checksum-valid WIF, literal 64-hex key or contiguous BIP39 phrase in the recorded streams. Its minikey check covered complete compact strings only; embedded windows are audited separately. Two AI readers found no coherent instruction in the two saved whole-body right-edge readings. A later source audit aligned all 142 body baselines, including three manually checked short rows, without a changed lexical edge. One damaged initial retains a cross-scan case disagreement. A same-row ink comparison favors the lowercase shape in the sharper crop. The lower-resolution control separation and near-target optical transfer fail their declared checks. The archived Sand example’s unmarked ninth row is a repeated lead-in. No Issue 24 nine-row body paragraph matches the first-eight color pattern.",
       "evidence": [
         "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.md",
         "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.json",
@@ -157,7 +157,8 @@
         "analysis_outputs/continuation_20261111/line_start_audit/RESULT.json",
         "analysis_outputs/continuation_20261111/p77_initial_transfer/RESULT.md",
         "analysis_outputs/continuation_20261111/p77_initial_transfer/DIRECT_MEASUREMENTS.json",
-        "analysis_outputs/continuation_20261111/p77_initial_transfer/MEASUREMENTS.json"
+        "analysis_outputs/continuation_20261111/p77_initial_transfer/MEASUREMENTS.json",
+        "analysis_outputs/continuation_20261111/sand_terminal_echo/RESULT.md"
       ],
       "reproduce": [
         "node analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.js",
@@ -847,7 +848,7 @@
       "kind": "method-test",
       "independentTheory": false,
       "scope": "113 text rows plus STOP; 39,744 correlated readings; 1,746 distinct forms; eight declared record formats. Full-line OCR excluded. A later registered replay adds the missing 26-character minikey length on the same 1,746 forms.",
-      "result": "Two WIF-shaped and ten minikey-shaped distinct strings all failed checksums. No other declared format candidate. Independent saved-output audit agreed; this is a scoped first-word negative. All four distinct minikey26 shapes also failed. The public gzip reproduced the original JSONL exactly, and the exact-text/compacted form sets were proved equal; independent replay agreed.",
+      "result": "Two WIF-shaped and ten minikey-shaped distinct strings all failed checksums. No other declared format candidate. Independent saved-output audit agreed; this is a scoped first-word negative. All four distinct minikey26 shapes also failed. The public gzip reproduced the original JSONL exactly, and the exact-text/compacted form sets were proved equal; independent replay agreed. In a separate literal comparison, two AI readers found no complete instruction in the eight-row prefix or nine-row opener.",
       "evidence": [
         "analysis_outputs/continuation_20261110/issue26_firstwords/RESULT.md",
         "analysis_outputs/continuation_20261110/issue26_firstwords/RESULT.json",
@@ -857,7 +858,8 @@
         "analysis_outputs/continuation_20261110/columns_compatibility/RESULT.md",
         "analysis_outputs/continuation_20261110/columns_compatibility/RESULT.json",
         "analysis_outputs/continuation_20261110/columns_compatibility/PROTOCOL.json",
-        "analysis_outputs/continuation_20261110/columns_compatibility/INDEPENDENT_VERIFICATION.json"
+        "analysis_outputs/continuation_20261110/columns_compatibility/INDEPENDENT_VERIFICATION.json",
+        "analysis_outputs/continuation_20261111/sand_terminal_echo/RESULT.md"
       ],
       "reproduce": [
         "PYTHONDONTWRITEBYTECODE=1 python3 scripts/issue26_firstword_probe.py --run --protocol analysis_outputs/continuation_20261110/issue26_firstwords/PROTOCOL.json --registration-commit 1af6d1f0cf07e6ca87d620db65c27d3b63949a12 --out issue26-firstwords-rerun",

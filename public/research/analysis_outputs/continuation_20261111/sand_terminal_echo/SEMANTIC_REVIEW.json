@@ -1,0 +1,108 @@
+{
+  "completedAtUTC": "2026-11-11T03:45:26.129Z",
+  "rubric": "Does the literal text specify both a complete concrete action and the unit or object it applies to? Preserve case and punctuation, use each string once, and do not rearrange, supply missing words, reinterpret as initials, or assume outside context. A coherent observation or fragment does not pass. Use instruction, no-instruction, or uncertain, with one brief reason.",
+  "readerContext": "Fresh independent AI contexts, with no project or source labels supplied. Packet order differed. The overlapping target strings were visible in both packets.",
+  "readers": [
+    {
+      "reader": "A",
+      "packet": [
+        {
+          "label": "Q7",
+          "literalText": "the old paper sits beside a printed magazine"
+        },
+        {
+          "label": "N4",
+          "literalText": "I to meets nasty present,how taxpayer-funded These venal"
+        },
+        {
+          "label": "F2",
+          "literalText": "read the first words of every second line"
+        },
+        {
+          "label": "J9",
+          "literalText": "I to meets nasty present,how taxpayer-funded These venal overthrown"
+        }
+      ],
+      "returned": [
+        {
+          "label": "Q7",
+          "judgment": "no-instruction",
+          "reason": "It describes where the paper sits."
+        },
+        {
+          "label": "N4",
+          "judgment": "no-instruction",
+          "reason": "The fragment specifies no complete action."
+        },
+        {
+          "label": "F2",
+          "judgment": "instruction",
+          "reason": "It directs the reader to read the first words of every second line."
+        },
+        {
+          "label": "J9",
+          "judgment": "no-instruction",
+          "reason": "The fragment specifies no complete action."
+        }
+      ],
+      "assignmentAfterReview": {
+        "Q7": "negativeControl",
+        "N4": "prefixEight",
+        "F2": "positiveControl",
+        "J9": "wholeNine"
+      },
+      "qualified": true
+    },
+    {
+      "reader": "B",
+      "packet": [
+        {
+          "label": "W3",
+          "literalText": "I to meets nasty present,how taxpayer-funded These venal overthrown"
+        },
+        {
+          "label": "D8",
+          "literalText": "read the first words of every second line"
+        },
+        {
+          "label": "T4",
+          "literalText": "the old paper sits beside a printed magazine"
+        },
+        {
+          "label": "H6",
+          "literalText": "I to meets nasty present,how taxpayer-funded These venal"
+        }
+      ],
+      "returned": [
+        {
+          "label": "W3",
+          "judgment": "no-instruction",
+          "reason": "The fragment gives no complete action with an identifiable object."
+        },
+        {
+          "label": "D8",
+          "judgment": "instruction",
+          "reason": "It directs the reader to read the first words of every second line."
+        },
+        {
+          "label": "T4",
+          "judgment": "no-instruction",
+          "reason": "It describes where the old paper sits."
+        },
+        {
+          "label": "H6",
+          "judgment": "no-instruction",
+          "reason": "The fragment gives no complete action with an identifiable object."
+        }
+      ],
+      "assignmentAfterReview": {
+        "W3": "wholeNine",
+        "D8": "positiveControl",
+        "T4": "negativeControl",
+        "H6": "prefixEight"
+      },
+      "qualified": true
+    }
+  ],
+  "literalInstructions": 0
+}

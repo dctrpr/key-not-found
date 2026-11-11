@@ -1266,6 +1266,58 @@
           "height": 1326
         }
       ]
+    },
+    {
+      "id": "sand-terminal-echo",
+      "completedAtUTC": "2026-11-11T03:45:26.129Z",
+      "title": "The archived clue leaves out a repeated line.",
+      "summary": "Check whether the archived first-word example’s excluded row has a counterpart in the printed sources.",
+      "result": "Issue 24 has a rewrapped editorial quotation and no matching first-eight color pattern. The Issue 26 literal comparison yielded no instruction.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Issue 24 nine-line paragraphs",
+          "value": 3,
+          "pointer": "/metrics/issue24NineRowParagraphs"
+        },
+        {
+          "label": "First-eight color matches",
+          "value": 0,
+          "pointer": "/metrics/issue24FirstEightColorMatches"
+        },
+        {
+          "label": "Issue 26 literal instructions",
+          "value": 0,
+          "pointer": "/metrics/issue26LiteralInstructions"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261111/sand_terminal_echo/RESULT.json",
+        "sha256": "8c9489b9b9ef6f27e5bf092fa09ce72aa8130ef74371293af241dd35f0da5f27"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261111/sand_terminal_echo/RESULT.md",
+      "scene": {
+        "layout": "spread",
+        "page": 78
+      },
+      "sceneNote": "The viewer opens Issue 24 page 78. The separate Issue 26 excerpt shows the nine prose lines above STOP.",
+      "methodId": "faithful-lines",
+      "exhibits": [
+        {
+          "path": "/research/sources/issue24-column151/native-contexts/p78-display-quote.png",
+          "sha256": "a1b079acd1dc52aa52f2b574693f6499fa02e616672d2cd39d18ea4bdbaf3019",
+          "label": "Issue 24 · the rewrapped pull quote",
+          "width": 950,
+          "height": 610
+        },
+        {
+          "path": "/research/sources/issue26/firstword-review/p102-01-12.png",
+          "sha256": "e4496dbca823d4f9bbb77e432752fadf35dd9479d96e495775c03601e4c0bb49",
+          "label": "Issue 26 · nine opener lines before the callout",
+          "width": 1800,
+          "height": 1080
+        }
+      ]
     }
   ]
 }
