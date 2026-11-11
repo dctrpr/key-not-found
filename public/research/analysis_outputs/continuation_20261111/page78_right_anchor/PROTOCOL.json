@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "targetBlock": "p78-final",
+  "canonicalRows": {
+    "path": "sources/printed-lines.json",
+    "sha256": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe"
+  },
+  "lowReaderReceipts": [
+    {
+      "path": "analysis_outputs/continuation_20261111/line_start_audit/READER_A.json",
+      "sha256": "6c5a6e1521a865aa5a57a7f6486e80a93bfde418f7fbab0073f88a2d1473f760"
+    },
+    {
+      "path": "analysis_outputs/continuation_20261111/line_start_audit/READER_B.json",
+      "sha256": "2335a55307c636fb5c1b59fe846ead02d4fa52c3b3eb5f27d9aafbe88bdad0a6"
+    }
+  ],
+  "sources": [
+    {
+      "id": "high",
+      "path": "magazine.pdf",
+      "sha256": "a30c61f8c49674afb7bccc6680d6477f6e919175386a2422de0a944db4e76c13",
+      "size": [
+        2544,
+        3264
+      ],
+      "rotation": 180,
+      "pdfIndexes": {
+        "77": 4,
+        "78": 5,
+        "79": 6
+      },
+      "embeddedJpegSha256": {
+        "77": "e7aa5974278bc65142ecf11cf11bcef9c21ee85ca717585d553ce7de6e37347b",
+        "78": "81066fc47ebee1654826f1957391bed19271189d817d45ec672c9f11a92ce29a",
+        "79": "984a7baaf2bebef86c7ad83fdb758e66fa7ab201c5e0e4f797e27927708c784b"
+      }
+    },
+    {
+      "id": "low",
+      "path": "keyser bitcoin .pdf",
+      "sha256": "dcd13efd0e46c49927dc8ec2e38a96fffc20d92fde7434151250fd6b9c62e6f4",
+      "size": [
+        2040,
+        2805
+      ],
+      "rotation": 0,
+      "pdfIndexes": {
+        "77": 4,
+        "78": 5,
+        "79": 6
+      },
+      "embeddedJpegSha256": {
+        "77": "eeaf8a1d9ba8f13873725a0c00d224a8c90bfd2c2610cd2766bf29a922d44c8f",
+        "78": "356a99c43703ffa467e34e2aaf7fc91f2a23dbe5170f89c60dd0282b78bd1830",
+        "79": "961a53e248be9a672ed4a90f63b40f0c9066bbf1e47ad9903123043c2cbde247"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "id": "p78-final",
+      "page": 78,
+      "rowIds": [
+        "p78r19",
+        "p78r20",
+        "p78r21",
+        "p78r22"
+      ],
+      "polarity": "dark-on-light",
+      "laneXFraction": [
+        0.13,
+        0.9
+      ]
+    },
+    {
+      "id": "p78-opener",
+      "page": 78,
+      "rowIds": [
+        "p78r01",
+        "p78r02",
+        "p78r03",
+        "p78r04",
+        "p78r05"
+      ],
+      "polarity": "dark-on-light",
+      "laneXFraction": [
+        0.13,
+        0.9
+      ]
+    },
+    {
+      "id": "p78-indented",
+      "page": 78,
+      "rowIds": [
+        "p78r06",
+        "p78r07",
+        "p78r08",
+        "p78r09",
+        "p78r10",
+        "p78r11",
+        "p78r12",
+        "p78r13",
+        "p78r14"
+      ],
+      "polarity": "dark-on-light",
+      "laneXFraction": [
+        0.13,
+        0.9
+      ]
+    },
+    {
+      "id": "p78-preceding",
+      "page": 78,
+      "rowIds": [
+        "p78r15",
+        "p78r16",
+        "p78r17",
+        "p78r18"
+      ],
+      "polarity": "dark-on-light",
+      "laneXFraction": [
+        0.13,
+        0.9
+      ]
+    },
+    {
+      "id": "p77-right-control",
+      "page": 77,
+      "rowIds": [
+        "p77r08",
+        "p77r09",
+        "p77r10",
+        "p77r11",
+        "p77r12",
+        "p77r13",
+        "p77r14",
+        "p77r15",
+        "p77r16"
+      ],
+      "polarity": "light-on-dark",
+      "laneXFraction": [
+        0.3,
+        0.92
+      ]
+    },
+    {
+      "id": "p77-center-control",
+      "page": 77,
+      "rowIds": [
+        "p77r17",
+        "p77r18",
+        "p77r19",
+        "p77r20",
+        "p77r21"
+      ],
+      "polarity": "light-on-dark",
+      "laneXFraction": [
+        0.3,
+        0.92
+      ]
+    },
+    {
+      "id": "p79-right-control",
+      "page": 79,
+      "rowIds": [
+        "p79r22",
+        "p79r23",
+        "p79r24",
+        "p79r25"
+      ],
+      "polarity": "dark-on-light",
+      "laneXFraction": [
+        0.27,
+        0.9
+      ]
+    }
+  ],
+  "settings": {
+    "highVerticalPadding": 8,
+    "lowBaselineStrip": [
+      28,
+      9
+    ],
+    "shadeThresholds": [
+      96,
+      120,
+      144
+    ],
+    "edgeQuantile": 0.005,
+    "minimumInkPixels": 40,
+    "tightEdgeFraction": 0.012,
+    "raggedEdgeFraction": 0.045,
+    "minimumRaggedToTightRatio": 4
+  }
+}
