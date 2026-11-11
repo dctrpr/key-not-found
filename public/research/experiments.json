@@ -1349,6 +1349,29 @@
       "limitations": [
         "The visual controls were selected from the same article. Raster endpoints do not establish the original print geometry, acquisition independence or a reading direction."
       ]
+    },
+    {
+      "id": "issue24-page75-word-fit",
+      "title": "Page 75 first-line word fit",
+      "status": "partial",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Measure the first two printed rows and three spacing references at fixed contrast levels in two scans.",
+      "result": "The candidate’s minimum endpoint is 8.4 pixels beyond the sharper scan’s full visible row-2 extent and overlaps it in the lower-resolution scan. Neither scan certifies a fit or measures the original text frame.",
+      "evidence": [
+        "analysis_outputs/continuation_20261111/page75_word_fit/RESULT.md",
+        "analysis_outputs/continuation_20261111/page75_word_fit/MEASUREMENTS.json",
+        "analysis_outputs/continuation_20261111/page75_word_fit/PROTOCOL.md",
+        "analysis_outputs/continuation_20261111/page75_word_fit/WORD_FIT_COMPARISON.png",
+        "scripts/measure_page75_word_fit.py",
+        "scripts/render_page75_word_fit.py"
+      ],
+      "reproduce": [
+        "Replay the pinned PDFs, saved baselines and fixed word windows. Compare all nine conditions against MEASUREMENTS.json."
+      ],
+      "limitations": [
+        "Ink extents and observed gap examples cannot establish exact type bearings, the composition method or frame width."
+      ]
     }
   ],
   "countingPolicy": "This is a curated set of method families/source audits, not a total count of independent theories. Historical administrative gates and correlated variants are not counted as independent experiments. Falsified means only the concrete stated candidate/address scope.",

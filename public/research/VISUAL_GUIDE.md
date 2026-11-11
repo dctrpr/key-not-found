@@ -42,4 +42,6 @@ The [archived boundary frame](https://keynotfound.com/#visual-sand-terminal-echo
 
 The [right-edge comparison frame](https://keynotfound.com/#visual-issue24-page78-right-anchor) opens page 78 in the spread viewer. Its chart plots the measured text spans of all three right-aligned paragraphs in both scans. [Alignment report](analysis_outputs/continuation_20261111/page78_right_anchor/RESULT.md)
 
+The [page 75 line-break frame](https://keynotfound.com/#visual-issue24-page75-word-fit) opens the first article page. The chart shows the proposed word’s endpoint and the ink boundary in each scan. The original text frame’s edge remains unknown. [Line-break report](analysis_outputs/continuation_20261111/page75_word_fit/RESULT.md)
+
 The puzzle remains unsolved. The 3D display and visual log do not verify the prize funding.

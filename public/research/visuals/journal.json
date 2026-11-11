@@ -1363,6 +1363,51 @@
           "height": 1370
         }
       ]
+    },
+    {
+      "id": "issue24-page75-word-fit",
+      "completedAtUTC": "2026-11-11T04:31:26.396Z",
+      "title": "Could the next word fit?",
+      "summary": "Compare the estimated endpoint of “to” against the visible ink of the next line in both scans.",
+      "result": "The estimate goes past the sharper scan’s visible line extent. The lower-resolution estimate overlaps it. The original frame width remains unknown.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Scans compared",
+          "value": 2,
+          "pointer": "/metrics/scansCompared"
+        },
+        {
+          "label": "Spacing examples",
+          "value": 3,
+          "pointer": "/metrics/spacingReferences"
+        },
+        {
+          "label": "Scans certifying a fit",
+          "value": 0,
+          "pointer": "/metrics/scansCertifyingFit"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261111/page75_word_fit/RESULT.json",
+        "sha256": "b62b7a5a89f409dc0d1616cfd71479c4f7c15c9a5cabd1f8bb7f823376a25a16"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261111/page75_word_fit/RESULT.md",
+      "scene": {
+        "layout": "spread",
+        "page": 75
+      },
+      "sceneNote": "Open the printed page in the spread viewer. The chart shows measured bounds from both scans.",
+      "methodId": "issue24-page75-word-fit",
+      "exhibits": [
+        {
+          "path": "/research/analysis_outputs/continuation_20261111/page75_word_fit/WORD_FIT_COMPARISON.png",
+          "sha256": "1bc8e8497978d21205a0b3d116af214dea60e1806e58bdd78a3b3a8798a6c44c",
+          "label": "Estimated endpoint of the next word versus visible ink in both scans",
+          "width": 1280,
+          "height": 1000
+        }
+      ]
     }
   ]
 }
