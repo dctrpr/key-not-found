@@ -10,6 +10,8 @@ The [visual lab and dated frames](VISUAL_GUIDE.md) make the source pages and com
 
 ## Research is continuing
 
+The registered mirror-view comparison found no reported reading instruction. The sole disagreement concerns an upside-down banknote fragment. The box audit found 83 ordinary-view detector boxes outside the reviewed regions. The 78/79 transfer check also found blank foot windows. [Mirror glyph review](analysis_outputs/continuation_20261110/g07_glyph_review/RESULT.md) · [Transfer feasibility](analysis_outputs/continuation_20261110/g02_transfer_feasibility/RESULT.md)
+
 An independent review of the lower-resolution photographs found agreed foot and fore-edge crossings on both 78/79 faces. The 76/77 faces have agreed foot evidence and unresolved fore-edges. A calibrated link into the higher-resolution scans comes next. [Paper edge screen](analysis_outputs/continuation_20261110/g02_edge_screen/RESULT.md)
 
 The shared query follow-up removed three of eight one-sided syntax-positive reading languages and every 30-character minikey-like shape. The scan provenance review reproduced the digital placement and found partial paper edges in the lower-resolution photographs. The physical alignment range remains unresolved. [Shared query result](analysis_outputs/continuation_20261110/g02_shared_query/RESULT.md) · [Scan provenance](analysis_outputs/continuation_20261110/g02_shared_query/PHYSICAL_SOURCE.md)

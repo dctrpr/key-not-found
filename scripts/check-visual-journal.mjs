@@ -37,6 +37,55 @@ for (const entry of data.entries) {
     } else assert.equal(metric.operation, undefined);
     assert.equal(value, metric.value, 'Visual metric differs from its frozen result');
   }
+  if (entry.id === 'g07-mirror-glyph-orientation') {
+    assert.equal(entry.diagram, 'funnel');
+    assert.equal(entry.methodId, 'g07-glyph-orientation');
+    assert.deepEqual(entry.scene, { layout: 'mirror', page: 73 });
+    assert.equal(result.testId, 'g07-mirror-glyph-orientation');
+    assert.equal(result.scopeComplete, true);
+    assert.equal(result.counts.regionsPerReader, 114);
+    assert.equal(result.counts.agreedRegions + result.counts.unresolvedRegions, 114);
+    assert.deepEqual(result.activity, { pixelDecodes: 0, newOCRCalls: 0, glyphAdjudications: 0, keyChecks: 0 });
+    const base = path.dirname(path.join(root, 'public/research', entry.source.path));
+    const readPinned = (name, digest) => {
+      const bytes = fs.readFileSync(path.join(base, name));
+      assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), digest);
+      return JSON.parse(bytes);
+    };
+    const manifest = readPinned('PACKET_MANIFEST.json', result.packetManifestSha256);
+    assert.equal(manifest.targets.length, 114);
+    assert.equal(manifest.assets.length, 263);
+    assert.equal(manifest.sheets.length, 32);
+    const merged = readPinned('MERGED.json', result.mergedArtifactSha256);
+    assert.equal(merged.regions.length, 114);
+    assert.equal(merged.regions.filter(region => region.agreed).length, result.counts.agreedRegions);
+    assert.equal(merged.regions.filter(region => region.candidate).length, result.counts.candidateRegions);
+    assert.equal(merged.regions.filter(region => region.reverseFlag).length, result.counts.reverseFlagRegions);
+    for (const label of ['A', 'B']) {
+      const review = readPinned('READER_' + label + '.json', result.readerHashes[label]);
+      assert.equal(review.rows.length, 114);
+      assert.equal(review.peerMarksSeen, false);
+      assert.equal(review.priorTargetMarksSeen, false);
+    }
+    assert.equal(entry.exhibits.length, 2);
+    const diagnostic = JSON.parse(fs.readFileSync(path.join(base, 'ORIENTATION_DIAGNOSTIC.json')));
+    assert.equal(diagnostic.region, 'p73-04');
+    assert.equal(diagnostic.originalReviewOutcomeChanged, false);
+    for (const [name, digest] of Object.entries(diagnostic.rawCrops)) {
+      assert.equal(manifest.assets.find(item => item.path === name).sha256, digest);
+    }
+    for (const exhibit of entry.exhibits) {
+      const file = path.join(root, 'public', exhibit.path);
+      const source = path.basename(file) === 'p73-04-turned.png'
+        ? diagnostic.figure
+        : manifest.assets.find(item => item.path === path.basename(file));
+      const bytes = fs.readFileSync(file);
+      assert.equal(source.sha256, exhibit.sha256);
+      assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), exhibit.sha256);
+      assert.equal(bytes.readUInt32BE(16), exhibit.width);
+      assert.equal(bytes.readUInt32BE(20), exhibit.height);
+    }
+  }
   if (entry.id === 'g02-paper-edge-visibility') {
     assert.equal(entry.diagram, 'funnel');
     assert.equal(entry.methodId, 'batch20-g02');

@@ -5,7 +5,7 @@ The [interactive investigation map](https://key404-casefile.vercel.app/#investig
 | Branch | Starting point | What remains useful |
 | --- | --- | --- |
 | Text & lines | Printed words, line edges, highlights and the George Sand clue | A source-motivated reading that differs meaningfully from a recorded test |
-| Mirrors & layout | Physical leaves, reading direction and reflected marks | Test 78/79 trim transfer into the higher-resolution scans and inspect saved mirror-view regions |
+| Mirrors & layout | Physical leaves, reading direction and reflected marks | Inspect uncovered printed regions for actual reversed lettering and seek defensible foot-edge calibration |
 | Numbers & typography | Printed numbers and letterforms | Evidence for the selection rule, followed by a falsifiable extraction |
 | Sources & provenance | Creator posts, article identity and authoritative originals | Public source evidence, provenance or a correction |
 

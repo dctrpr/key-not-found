@@ -902,6 +902,58 @@
           "height": 113
         }
       ]
+    },
+    {
+      "id": "g07-mirror-glyph-orientation",
+      "completedAtUTC": "2026-11-10T23:54:46.329Z",
+      "title": "One disputed crop shows an upside-down banknote.",
+      "summary": "Two readers compared the original ink and its reflection at the saved G07 locations.",
+      "result": "Neither reader recognized a reading instruction. A lossless turn clarified the one disputed banknote crop. The original disagreement remains in the review.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Crop pairs reviewed",
+          "value": 114,
+          "pointer": "/counts/regionsPerReader"
+        },
+        {
+          "label": "Agreed crop pairs",
+          "value": 113,
+          "pointer": "/counts/agreedRegions"
+        },
+        {
+          "label": "Instruction reports",
+          "value": 0,
+          "pointer": "/counts/candidateRegions"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261110/g07_glyph_review/RESULT.json",
+        "sha256": "133a5377c4fdc936af123564ca2878d8249f8a2ffdfabcb011cab7247613bbc7"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261110/g07_glyph_review/RESULT.md",
+      "scene": {
+        "layout": "mirror",
+        "page": 73
+      },
+      "sceneNote": "The viewer opens the original Issue 24 opener. The paired examples and exact turned crop appear below.",
+      "methodId": "g07-glyph-orientation",
+      "exhibits": [
+        {
+          "path": "/research/analysis_outputs/continuation_20261110/g07_glyph_review/exhibits/sheet-p73-01.png",
+          "sha256": "65ab1aa010a5b70ed89f0386992e1d9362937521d3e02a109d764e1f0a5fcb1e",
+          "label": "Page 73 · original ink and reflection",
+          "width": 1574,
+          "height": 640
+        },
+        {
+          "path": "/research/analysis_outputs/continuation_20261110/g07_glyph_review/exhibits/p73-04-turned.png",
+          "sha256": "1e0d73be3cdc02078887a19ff6430475c88782ce1305087f2ae2d709b673fbb0",
+          "label": "Disputed banknote crop · exact 180° turn",
+          "width": 620,
+          "height": 422
+        }
+      ]
     }
   ]
 }

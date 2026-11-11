@@ -585,7 +585,7 @@
       "kind": "method-test",
       "independentTheory": false,
       "scope": "G02: exact geometry/image procedure, sources and fixed parameters in GEOMETRY_PROTOCOL.json.",
-      "result": "The shared query model removed three of eight one-sided syntax matches. A separate edge screen found agreed foot and fore-edge evidence on both 78/79 faces. The 76/77 faces lack agreed fore-edges. A physical alignment remains unmeasured.",
+      "result": "The shared query model removed three of eight one-sided syntax matches. A separate edge screen found agreed foot and fore-edge evidence on both 78/79 faces. The 76/77 faces lack agreed fore-edges. A physical alignment remains unmeasured. A fixed-window feasibility check found no nearby foot landmarks on pages 78/79.",
       "evidence": [
         "analysis_outputs/continuation_20261110/batch20/G02/RESULT.md",
         "analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json",
@@ -600,8 +600,8 @@
         "analysis_outputs/continuation_20261110/g02_edge_screen/PROTOCOL.md",
         "analysis_outputs/continuation_20261110/g02_edge_screen/REGISTRATION.json",
         "analysis_outputs/continuation_20261110/g02_edge_screen/MERGED.json",
-        "analysis_outputs/continuation_20261110/g02_edge_screen/READER_A.json",
-        "analysis_outputs/continuation_20261110/g02_edge_screen/READER_B.json"
+        "analysis_outputs/continuation_20261110/g02_transfer_feasibility/RESULT.md",
+        "analysis_outputs/continuation_20261110/g02_transfer_feasibility/RESULT.json"
       ],
       "reproduce": [
         "PYTHONDONTWRITEBYTECODE=1 python3 scripts/batch20_geometry.py --run G02 --protocol analysis_outputs/continuation_20261110/batch20/GEOMETRY_PROTOCOL.json --registration-commit 90ad1d694b0eb236494ae199b87de05db5e3d331 --out G02-rerun",
@@ -1225,6 +1225,34 @@
         "Source-known means the fixed model/projection flags, not fresh pixel proof or full physical-source certainty.",
         "The follow-up is limited to five mainnet constructions, both fixed providers and recorded times.",
         "No wallet import, signing or transaction is authorized by this protocol."
+      ]
+    },
+    {
+      "id": "g07-glyph-orientation",
+      "title": "Printed mirror glyphs in saved G07 regions",
+      "status": "partial",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Compare original ink and exact horizontal reflection at the 114 saved mirrored-baseline detector regions on printed pages 73–80.",
+      "result": "Neither reader recognized a reading instruction. A lossless turn clarified the one disputed banknote crop. The original disagreement remains in the review. A box-coverage audit found 83 normal-view boxes wholly outside these windows.",
+      "evidence": [
+        "analysis_outputs/continuation_20261110/g07_glyph_review/PROTOCOL.md",
+        "analysis_outputs/continuation_20261110/g07_glyph_review/SOURCE.md",
+        "analysis_outputs/continuation_20261110/g07_glyph_review/RESULT.md",
+        "analysis_outputs/continuation_20261110/g07_glyph_review/RESULT.json",
+        "analysis_outputs/continuation_20261110/g07_glyph_review/MERGED.json",
+        "analysis_outputs/continuation_20261110/g07_glyph_review/BASELINE_BOXES.json",
+        "analysis_outputs/continuation_20261110/g07_glyph_review/COVERAGE.json",
+        "analysis_outputs/continuation_20261110/g07_glyph_review/ORIENTATION_DIAGNOSTIC.json",
+        "analysis_outputs/continuation_20261110/g07_glyph_review/READER_B_ROTATION_NOTE.md"
+      ],
+      "reproduce": [
+        "Regenerate the packet from the pinned PDF and saved coordinates using the protocol, then replay both reader receipts.",
+        "Run the saved box-coverage and exact turn diagnostics from the result."
+      ],
+      "limitations": [
+        "AI visual judgments apply to registered detector windows. The crop coverage check leaves other source areas open.",
+        "Reader B used temporary diagnostic rotations for seven crops. The original disagreement stays in the frozen outcome."
       ]
     }
   ],
