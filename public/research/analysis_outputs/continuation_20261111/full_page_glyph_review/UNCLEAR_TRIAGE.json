@@ -1,0 +1,903 @@
+{
+  "version": 1,
+  "status": "PASS",
+  "completedAtUTC": "2026-11-11T00:24:00.152Z",
+  "scope": "Saved full-page reader receipts and merged coordinates",
+  "artifactPins": {
+    "READER_A.json": "89ca9af911e476e2314456ddb262acf9103b5d640f154e4888af45ef26145c86",
+    "READER_B.json": "596c4dde7f8b1417aafdcf8f5980320a2a26aa04d063bb4ec60ff1cca7ededdf",
+    "packet/PACKET_MANIFEST.json": "fadcbbb244ccaa7c7b07c733182bb4f018fe0a728595129e223aedaada8e8172",
+    "merge-original/MERGED.json": "c93f3c85f0038a1c91d03c6b18effdf082e7da162b6ce08d89511ea902a561e2",
+    "merge-original/RESULT.json": "6fd25f17f72f6fa62b57134e556b593657daee848a5f38b59ea707f379f680d9",
+    "merge-replay/MERGED.json": "c93f3c85f0038a1c91d03c6b18effdf082e7da162b6ce08d89511ea902a561e2"
+  },
+  "coordinateConvention": "Half-open boxes with a top-left origin in the upright 2544 by 3264 page raster. Page bounds equal tile bounds translated by the registered tile origin.",
+  "checks": {
+    "originalAndReplayMergeByteIdentical": true,
+    "allReaderHashesMatch": true,
+    "eachReaderCovered32TileIds": true,
+    "all69FindingFieldsAndTranslationsMatch": true,
+    "all17UnclearMarksRetainedSeparately": true
+  },
+  "counts": {
+    "findingsVerified": 69,
+    "unclearMarks": 17,
+    "rotatedOrdinaryMarks": 52,
+    "instructionReports": 0,
+    "reversedMarks": 0,
+    "possibleReversalMarks": 0,
+    "unclearByReader": {
+      "A": 10,
+      "B": 7
+    },
+    "unclearByPage": {
+      "73": 8,
+      "74": 5,
+      "77": 2,
+      "78": 2
+    },
+    "reportedCauseMarkCounts": {
+      "possible-show-through": 9,
+      "small-cropped-banknote-print": 2,
+      "unresolved-pin-mark": 2,
+      "merged-paint-strokes": 2,
+      "paint-obscured-lettering": 2
+    },
+    "positiveAreaIntersections": 21,
+    "sameTileIntersections": 7,
+    "crossTileIntersections": 14,
+    "sameReaderIntersections": 8,
+    "crossReaderIntersections": 13
+  },
+  "reportedFeatures": [
+    {
+      "id": "p73-faint-upper-bands",
+      "reportedCause": "possible-show-through",
+      "summary": "Pale horizontal traces along the upper inner strip. Both readers report a possible show-through appearance. The print layer remains unresolved.",
+      "markIds": [
+        "A/p73-NW/2",
+        "A/p73-NE/2",
+        "B/p73-NW/1",
+        "B/p73-NE/2"
+      ]
+    },
+    {
+      "id": "p73-faint-lower-bands",
+      "reportedCause": "possible-show-through",
+      "summary": "Diffuse low-contrast rows along the lower inner strip. Both readers describe faint traces across the tile seam. The print layer remains unresolved.",
+      "markIds": [
+        "A/p73-SW/2",
+        "A/p73-SE/2",
+        "B/p73-SW/1",
+        "B/p73-SE/2"
+      ]
+    },
+    {
+      "id": "p74-faint-heading",
+      "reportedCause": "possible-show-through",
+      "summary": "Faint heading-like forms and rows in the sky artwork. Reader A reports a resemblance to the page 75 heading and possible show-through.",
+      "markIds": [
+        "A/p74-NE/2"
+      ]
+    },
+    {
+      "id": "p74-curled-banknotes",
+      "reportedCause": "small-cropped-banknote-print",
+      "summary": "Small lettering on the curled banknotes by the illustrated hand remains difficult to resolve.",
+      "markIds": [
+        "A/p74-NW/2"
+      ]
+    },
+    {
+      "id": "p74-partial-banknote",
+      "reportedCause": "small-cropped-banknote-print",
+      "summary": "Clipped and curled small lettering on a different partial banknote near the tile seam.",
+      "markIds": [
+        "A/p74-SW/2"
+      ]
+    },
+    {
+      "id": "p74-lapel-pin",
+      "reportedCause": "unresolved-pin-mark",
+      "summary": "Tiny dark form on the circular lapel pin. Both readers leave the glyph identity unresolved.",
+      "markIds": [
+        "A/p74-NW/3",
+        "B/p74-NW/3"
+      ]
+    },
+    {
+      "id": "p77-white-painted-form",
+      "reportedCause": "merged-paint-strokes",
+      "summary": "White painted letter-like forms with merged central strokes. Both readers leave the central lettering unresolved.",
+      "markIds": [
+        "A/p77-SW/2",
+        "B/p77-SW/1"
+      ]
+    },
+    {
+      "id": "p78-quote-underpainting",
+      "reportedCause": "paint-obscured-lettering",
+      "summary": "Overlapping paint and handwritten forms around the pull quote obscure part of the lettering.",
+      "markIds": [
+        "A/p78-SW/1",
+        "B/p78-SW/1"
+      ]
+    }
+  ],
+  "unclearMarks": [
+    {
+      "readerId": "A",
+      "tileId": "p73-NW",
+      "findingOrdinal": 2,
+      "page": 73,
+      "kind": "unclear",
+      "tileBox": [
+        995,
+        605,
+        1320,
+        1680
+      ],
+      "pageBox": [
+        995,
+        605,
+        1320,
+        1680
+      ],
+      "turnDegrees": 0,
+      "glyphCount": 0,
+      "instructionReported": false,
+      "markId": "A/p73-NW/2",
+      "reportedFeatureGroup": "p73-faint-upper-bands"
+    },
+    {
+      "readerId": "A",
+      "tileId": "p73-NE",
+      "findingOrdinal": 2,
+      "page": 73,
+      "kind": "unclear",
+      "tileBox": [
+        0,
+        610,
+        205,
+        1110
+      ],
+      "pageBox": [
+        1224,
+        610,
+        1429,
+        1110
+      ],
+      "turnDegrees": 0,
+      "glyphCount": 0,
+      "instructionReported": false,
+      "markId": "A/p73-NE/2",
+      "reportedFeatureGroup": "p73-faint-upper-bands"
+    },
+    {
+      "readerId": "A",
+      "tileId": "p73-SW",
+      "findingOrdinal": 2,
+      "page": 73,
+      "kind": "unclear",
+      "tileBox": [
+        785,
+        425,
+        1320,
+        1095
+      ],
+      "pageBox": [
+        785,
+        2009,
+        1320,
+        2679
+      ],
+      "turnDegrees": 0,
+      "glyphCount": 0,
+      "instructionReported": false,
+      "markId": "A/p73-SW/2",
+      "reportedFeatureGroup": "p73-faint-lower-bands"
+    },
+    {
+      "readerId": "A",
+      "tileId": "p73-SE",
+      "findingOrdinal": 2,
+      "page": 73,
+      "kind": "unclear",
+      "tileBox": [
+        0,
+        330,
+        190,
+        1140
+      ],
+      "pageBox": [
+        1224,
+        1914,
+        1414,
+        2724
+      ],
+      "turnDegrees": 0,
+      "glyphCount": 0,
+      "instructionReported": false,
+      "markId": "A/p73-SE/2",
+      "reportedFeatureGroup": "p73-faint-lower-bands"
+    },
+    {
+      "readerId": "A",
+      "tileId": "p74-NW",
+      "findingOrdinal": 2,
+      "page": 74,
+      "kind": "unclear",
+      "tileBox": [
+        790,
+        1010,
+        1110,
+        1405
+      ],
+      "pageBox": [
+        790,
+        1010,
+        1110,
+        1405
+      ],
+      "turnDegrees": 270,
+      "glyphCount": 0,
+      "instructionReported": false,
+      "markId": "A/p74-NW/2",
+      "reportedFeatureGroup": "p74-curled-banknotes"
+    },
+    {
+      "readerId": "A",
+      "tileId": "p74-NW",
+      "findingOrdinal": 3,
+      "page": 74,
+      "kind": "unclear",
+      "tileBox": [
+        580,
+        1260,
+        674,
+        1340
+      ],
+      "pageBox": [
+        580,
+        1260,
+        674,
+        1340
+      ],
+      "turnDegrees": 0,
+      "glyphCount": 0,
+      "instructionReported": false,
+      "markId": "A/p74-NW/3",
+      "reportedFeatureGroup": "p74-lapel-pin"
+    },
+    {
+      "readerId": "A",
+      "tileId": "p74-NE",
+      "findingOrdinal": 2,
+      "page": 74,
+      "kind": "unclear",
+      "tileBox": [
+        0,
+        300,
+        1180,
+        1100
+      ],
+      "pageBox": [
+        1224,
+        300,
+        2404,
+        1100
+      ],
+      "turnDegrees": 0,
+      "glyphCount": 0,
+      "instructionReported": false,
+      "markId": "A/p74-NE/2",
+      "reportedFeatureGroup": "p74-faint-heading"
+    },
+    {
+      "readerId": "A",
+      "tileId": "p74-SW",
+      "findingOrdinal": 2,
+      "page": 74,
+      "kind": "unclear",
+      "tileBox": [
+        95,
+        0,
+        430,
+        145
+      ],
+      "pageBox": [
+        95,
+        1584,
+        430,
+        1729
+      ],
+      "turnDegrees": 90,
+      "glyphCount": 0,
+      "instructionReported": false,
+      "markId": "A/p74-SW/2",
+      "reportedFeatureGroup": "p74-partial-banknote"
+    },
+    {
+      "readerId": "A",
+      "tileId": "p77-SW",
+      "findingOrdinal": 2,
+      "page": 77,
+      "kind": "unclear",
+      "tileBox": [
+        35,
+        345,
+        715,
+        1050
+      ],
+      "pageBox": [
+        35,
+        1929,
+        715,
+        2634
+      ],
+      "turnDegrees": 180,
+      "glyphCount": 1,
+      "instructionReported": false,
+      "markId": "A/p77-SW/2",
+      "reportedFeatureGroup": "p77-white-painted-form"
+    },
+    {
+      "readerId": "A",
+      "tileId": "p78-SW",
+      "findingOrdinal": 1,
+      "page": 78,
+      "kind": "unclear",
+      "tileBox": [
+        285,
+        795,
+        1318,
+        1375
+      ],
+      "pageBox": [
+        285,
+        2379,
+        1318,
+        2959
+      ],
+      "turnDegrees": 180,
+      "glyphCount": 2,
+      "instructionReported": false,
+      "markId": "A/p78-SW/1",
+      "reportedFeatureGroup": "p78-quote-underpainting"
+    },
+    {
+      "readerId": "B",
+      "tileId": "p73-NW",
+      "findingOrdinal": 1,
+      "page": 73,
+      "kind": "unclear",
+      "tileBox": [
+        970,
+        685,
+        1320,
+        1680
+      ],
+      "pageBox": [
+        970,
+        685,
+        1320,
+        1680
+      ],
+      "turnDegrees": 0,
+      "glyphCount": 0,
+      "instructionReported": false,
+      "markId": "B/p73-NW/1",
+      "reportedFeatureGroup": "p73-faint-upper-bands"
+    },
+    {
+      "readerId": "B",
+      "tileId": "p73-NE",
+      "findingOrdinal": 2,
+      "page": 73,
+      "kind": "unclear",
+      "tileBox": [
+        0,
+        690,
+        205,
+        1680
+      ],
+      "pageBox": [
+        1224,
+        690,
+        1429,
+        1680
+      ],
+      "turnDegrees": 0,
+      "glyphCount": 0,
+      "instructionReported": false,
+      "markId": "B/p73-NE/2",
+      "reportedFeatureGroup": "p73-faint-upper-bands"
+    },
+    {
+      "readerId": "B",
+      "tileId": "p73-SW",
+      "findingOrdinal": 1,
+      "page": 73,
+      "kind": "unclear",
+      "tileBox": [
+        790,
+        55,
+        1320,
+        1140
+      ],
+      "pageBox": [
+        790,
+        1639,
+        1320,
+        2724
+      ],
+      "turnDegrees": 0,
+      "glyphCount": 0,
+      "instructionReported": false,
+      "markId": "B/p73-SW/1",
+      "reportedFeatureGroup": "p73-faint-lower-bands"
+    },
+    {
+      "readerId": "B",
+      "tileId": "p73-SE",
+      "findingOrdinal": 2,
+      "page": 73,
+      "kind": "unclear",
+      "tileBox": [
+        0,
+        0,
+        205,
+        1120
+      ],
+      "pageBox": [
+        1224,
+        1584,
+        1429,
+        2704
+      ],
+      "turnDegrees": 0,
+      "glyphCount": 0,
+      "instructionReported": false,
+      "markId": "B/p73-SE/2",
+      "reportedFeatureGroup": "p73-faint-lower-bands"
+    },
+    {
+      "readerId": "B",
+      "tileId": "p74-NW",
+      "findingOrdinal": 3,
+      "page": 74,
+      "kind": "unclear",
+      "tileBox": [
+        601,
+        1270,
+        655,
+        1320
+      ],
+      "pageBox": [
+        601,
+        1270,
+        655,
+        1320
+      ],
+      "turnDegrees": 0,
+      "glyphCount": 0,
+      "instructionReported": false,
+      "markId": "B/p74-NW/3",
+      "reportedFeatureGroup": "p74-lapel-pin"
+    },
+    {
+      "readerId": "B",
+      "tileId": "p77-SW",
+      "findingOrdinal": 1,
+      "page": 77,
+      "kind": "unclear",
+      "tileBox": [
+        25,
+        335,
+        730,
+        1050
+      ],
+      "pageBox": [
+        25,
+        1919,
+        730,
+        2634
+      ],
+      "turnDegrees": 180,
+      "glyphCount": 1,
+      "instructionReported": false,
+      "markId": "B/p77-SW/1",
+      "reportedFeatureGroup": "p77-white-painted-form"
+    },
+    {
+      "readerId": "B",
+      "tileId": "p78-SW",
+      "findingOrdinal": 1,
+      "page": 78,
+      "kind": "unclear",
+      "tileBox": [
+        335,
+        910,
+        1085,
+        1315
+      ],
+      "pageBox": [
+        335,
+        2494,
+        1085,
+        2899
+      ],
+      "turnDegrees": 180,
+      "glyphCount": 0,
+      "instructionReported": false,
+      "markId": "B/p78-SW/1",
+      "reportedFeatureGroup": "p78-quote-underpainting"
+    }
+  ],
+  "positiveAreaIntersections": [
+    {
+      "markIds": [
+        "A/p73-NW/2",
+        "A/p73-NE/2"
+      ],
+      "page": 73,
+      "intersectionBox": [
+        1224,
+        610,
+        1320,
+        1110
+      ],
+      "intersectionAreaPx": 48000,
+      "sameReader": true,
+      "sameTile": false,
+      "sameReportedFeatureGroup": true
+    },
+    {
+      "markIds": [
+        "A/p73-NW/2",
+        "B/p73-NW/1"
+      ],
+      "page": 73,
+      "intersectionBox": [
+        995,
+        685,
+        1320,
+        1680
+      ],
+      "intersectionAreaPx": 323375,
+      "sameReader": false,
+      "sameTile": true,
+      "sameReportedFeatureGroup": true
+    },
+    {
+      "markIds": [
+        "A/p73-NW/2",
+        "B/p73-NE/2"
+      ],
+      "page": 73,
+      "intersectionBox": [
+        1224,
+        690,
+        1320,
+        1680
+      ],
+      "intersectionAreaPx": 95040,
+      "sameReader": false,
+      "sameTile": false,
+      "sameReportedFeatureGroup": true
+    },
+    {
+      "markIds": [
+        "A/p73-NW/2",
+        "B/p73-SW/1"
+      ],
+      "page": 73,
+      "intersectionBox": [
+        995,
+        1639,
+        1320,
+        1680
+      ],
+      "intersectionAreaPx": 13325,
+      "sameReader": false,
+      "sameTile": false,
+      "sameReportedFeatureGroup": false
+    },
+    {
+      "markIds": [
+        "A/p73-NW/2",
+        "B/p73-SE/2"
+      ],
+      "page": 73,
+      "intersectionBox": [
+        1224,
+        1584,
+        1320,
+        1680
+      ],
+      "intersectionAreaPx": 9216,
+      "sameReader": false,
+      "sameTile": false,
+      "sameReportedFeatureGroup": false
+    },
+    {
+      "markIds": [
+        "A/p73-NE/2",
+        "B/p73-NW/1"
+      ],
+      "page": 73,
+      "intersectionBox": [
+        1224,
+        685,
+        1320,
+        1110
+      ],
+      "intersectionAreaPx": 40800,
+      "sameReader": false,
+      "sameTile": false,
+      "sameReportedFeatureGroup": true
+    },
+    {
+      "markIds": [
+        "A/p73-NE/2",
+        "B/p73-NE/2"
+      ],
+      "page": 73,
+      "intersectionBox": [
+        1224,
+        690,
+        1429,
+        1110
+      ],
+      "intersectionAreaPx": 86100,
+      "sameReader": false,
+      "sameTile": true,
+      "sameReportedFeatureGroup": true
+    },
+    {
+      "markIds": [
+        "A/p73-SW/2",
+        "A/p73-SE/2"
+      ],
+      "page": 73,
+      "intersectionBox": [
+        1224,
+        2009,
+        1320,
+        2679
+      ],
+      "intersectionAreaPx": 64320,
+      "sameReader": true,
+      "sameTile": false,
+      "sameReportedFeatureGroup": true
+    },
+    {
+      "markIds": [
+        "A/p73-SW/2",
+        "B/p73-SW/1"
+      ],
+      "page": 73,
+      "intersectionBox": [
+        790,
+        2009,
+        1320,
+        2679
+      ],
+      "intersectionAreaPx": 355100,
+      "sameReader": false,
+      "sameTile": true,
+      "sameReportedFeatureGroup": true
+    },
+    {
+      "markIds": [
+        "A/p73-SW/2",
+        "B/p73-SE/2"
+      ],
+      "page": 73,
+      "intersectionBox": [
+        1224,
+        2009,
+        1320,
+        2679
+      ],
+      "intersectionAreaPx": 64320,
+      "sameReader": false,
+      "sameTile": false,
+      "sameReportedFeatureGroup": true
+    },
+    {
+      "markIds": [
+        "A/p73-SE/2",
+        "B/p73-SW/1"
+      ],
+      "page": 73,
+      "intersectionBox": [
+        1224,
+        1914,
+        1320,
+        2724
+      ],
+      "intersectionAreaPx": 77760,
+      "sameReader": false,
+      "sameTile": false,
+      "sameReportedFeatureGroup": true
+    },
+    {
+      "markIds": [
+        "A/p73-SE/2",
+        "B/p73-SE/2"
+      ],
+      "page": 73,
+      "intersectionBox": [
+        1224,
+        1914,
+        1414,
+        2704
+      ],
+      "intersectionAreaPx": 150100,
+      "sameReader": false,
+      "sameTile": true,
+      "sameReportedFeatureGroup": true
+    },
+    {
+      "markIds": [
+        "A/p74-NW/3",
+        "B/p74-NW/3"
+      ],
+      "page": 74,
+      "intersectionBox": [
+        601,
+        1270,
+        655,
+        1320
+      ],
+      "intersectionAreaPx": 2700,
+      "sameReader": false,
+      "sameTile": true,
+      "sameReportedFeatureGroup": true
+    },
+    {
+      "markIds": [
+        "A/p77-SW/2",
+        "B/p77-SW/1"
+      ],
+      "page": 77,
+      "intersectionBox": [
+        35,
+        1929,
+        715,
+        2634
+      ],
+      "intersectionAreaPx": 479400,
+      "sameReader": false,
+      "sameTile": true,
+      "sameReportedFeatureGroup": true
+    },
+    {
+      "markIds": [
+        "A/p78-SW/1",
+        "B/p78-SW/1"
+      ],
+      "page": 78,
+      "intersectionBox": [
+        335,
+        2494,
+        1085,
+        2899
+      ],
+      "intersectionAreaPx": 303750,
+      "sameReader": false,
+      "sameTile": true,
+      "sameReportedFeatureGroup": true
+    },
+    {
+      "markIds": [
+        "B/p73-NW/1",
+        "B/p73-NE/2"
+      ],
+      "page": 73,
+      "intersectionBox": [
+        1224,
+        690,
+        1320,
+        1680
+      ],
+      "intersectionAreaPx": 95040,
+      "sameReader": true,
+      "sameTile": false,
+      "sameReportedFeatureGroup": true
+    },
+    {
+      "markIds": [
+        "B/p73-NW/1",
+        "B/p73-SW/1"
+      ],
+      "page": 73,
+      "intersectionBox": [
+        970,
+        1639,
+        1320,
+        1680
+      ],
+      "intersectionAreaPx": 14350,
+      "sameReader": true,
+      "sameTile": false,
+      "sameReportedFeatureGroup": false
+    },
+    {
+      "markIds": [
+        "B/p73-NW/1",
+        "B/p73-SE/2"
+      ],
+      "page": 73,
+      "intersectionBox": [
+        1224,
+        1584,
+        1320,
+        1680
+      ],
+      "intersectionAreaPx": 9216,
+      "sameReader": true,
+      "sameTile": false,
+      "sameReportedFeatureGroup": false
+    },
+    {
+      "markIds": [
+        "B/p73-NE/2",
+        "B/p73-SW/1"
+      ],
+      "page": 73,
+      "intersectionBox": [
+        1224,
+        1639,
+        1320,
+        1680
+      ],
+      "intersectionAreaPx": 3936,
+      "sameReader": true,
+      "sameTile": false,
+      "sameReportedFeatureGroup": false
+    },
+    {
+      "markIds": [
+        "B/p73-NE/2",
+        "B/p73-SE/2"
+      ],
+      "page": 73,
+      "intersectionBox": [
+        1224,
+        1584,
+        1429,
+        1680
+      ],
+      "intersectionAreaPx": 19680,
+      "sameReader": true,
+      "sameTile": false,
+      "sameReportedFeatureGroup": false
+    },
+    {
+      "markIds": [
+        "B/p73-SW/1",
+        "B/p73-SE/2"
+      ],
+      "page": 73,
+      "intersectionBox": [
+        1224,
+        1639,
+        1320,
+        2704
+      ],
+      "intersectionAreaPx": 102240,
+      "sameReader": true,
+      "sameTile": false,
+      "sameReportedFeatureGroup": true
+    }
+  ],
+  "interpretation": "Feature descriptions are paraphrases of saved reader notes. Overlaps record exact geometric intersections, including across tile seams. Each original mark remains a separate observation. Source uncertainty remains.",
+  "activity": {
+    "pixelsOpened": 0,
+    "glyphJudgmentsChanged": 0,
+    "newReadingStreams": 0,
+    "publicEdits": 0
+  }
+}

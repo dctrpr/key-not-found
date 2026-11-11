@@ -4,7 +4,7 @@ The key is missing. The work is public.
 
 My independent investigation into the Bitcoin Magazine puzzle Max Keiser described in 2023. The files, tests and updates are public; help is optional. The puzzle is **unsolved**. The claimed 20 BTC has not been independently authenticated. This project is not affiliated with Max Keiser, Bitcoin Magazine, or Pump.fun.
 
-The mirror-view comparison yielded no recognized reading instruction. An exact turn clarified the disputed banknote fragment. [Latest research](public/research/analysis_outputs/continuation_20261110/g07_glyph_review/RESULT.md)
+Two readers inspected all eight Issue 24 scans and reported no reading instruction. A faint reflected heading on page 74 resembles the printing on page 75. The two saved whole-body right-edge readings also yielded no recognized instruction. [Full-page review](public/research/analysis_outputs/continuation_20261111/full_page_glyph_review/RESULT.md) · [Right-edge review](public/research/analysis_outputs/continuation_20261111/right_edge_reading_review/RESULT.md)
 
 ## Start here
 

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedOn": "2026-11-10",
+  "updatedOn": "2026-11-11",
   "caseStatus": "unsolved",
   "description": "Dated, evidence-linked frames for the public site and future research films. Source-derived counts; no private keys or derived addresses.",
   "entries": [
@@ -952,6 +952,58 @@
           "label": "Disputed banknote crop · exact 180° turn",
           "width": 620,
           "height": 422
+        }
+      ]
+    },
+    {
+      "id": "issue24-full-page-glyph-review",
+      "completedAtUTC": "2026-11-11T00:20:57.677Z",
+      "title": "A faint title resembles the next page.",
+      "summary": "Two AI readers inspected all eight scanned pages. A faint mark on page 74 sent us back to the page 75 heading.",
+      "result": "Seventeen reports remain unclear. The heading resemblance is consistent with show-through. The comparison leaves physical alignment unmeasured.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Tiles per reader",
+          "value": 32,
+          "pointer": "/counts/tilesPerReader"
+        },
+        {
+          "label": "Unclear reports",
+          "value": 17,
+          "pointer": "/unresolvedFindings"
+        },
+        {
+          "label": "Instruction reports",
+          "value": 0,
+          "pointer": "/instructionReports"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261111/full_page_glyph_review/RESULT.json",
+        "sha256": "6fd25f17f72f6fa62b57134e556b593657daee848a5f38b59ea707f379f680d9"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261111/full_page_glyph_review/RESULT.md",
+      "scene": {
+        "layout": "mirror",
+        "page": 74
+      },
+      "sceneNote": "Explore the original page 74 scan in the mirror viewer. The source excerpts below use matching nominal coordinates and a horizontal flip of page 74.",
+      "methodId": "g07-glyph-orientation",
+      "exhibits": [
+        {
+          "path": "/research/analysis_outputs/continuation_20261111/full_page_glyph_review/exhibits/p74-faint-heading-reflected.png",
+          "sha256": "0d1bb6246cb5f7f2b68d3c8e74352cc703928768b34f069b87488ac6a7e8167a",
+          "label": "Page 74 · faint trace, reflected",
+          "width": 1180,
+          "height": 800
+        },
+        {
+          "path": "/research/analysis_outputs/continuation_20261111/full_page_glyph_review/exhibits/p75-heading-upright.png",
+          "sha256": "65b66b50882267ac52089b7184d840d0227504b2601db0d56d8628d65f19ae3d",
+          "label": "Page 75 · printed heading, upright",
+          "width": 1180,
+          "height": 800
         }
       ]
     }

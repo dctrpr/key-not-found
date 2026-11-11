@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedOn": "2026-11-10",
+  "updatedOn": "2026-11-11",
   "caseStatus": "unsolved",
   "methods": [
     {
@@ -144,20 +144,25 @@
       "kind": "method-test",
       "independentTheory": false,
       "scope": "142 visually reconstructed body lines; declared parity, edge and reversal variants.",
-      "result": "No checksum-valid WIF, literal 64-hex key or contiguous BIP39 phrase in the recorded streams. Its minikey check covered complete compact strings only; embedded windows are audited separately.",
+      "result": "No checksum-valid WIF, literal 64-hex key or contiguous BIP39 phrase in the recorded streams. Its minikey check covered complete compact strings only; embedded windows are audited separately. Two AI readers found no coherent instruction in the two saved whole-body right-edge readings.",
       "evidence": [
         "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.md",
         "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.json",
         "analysis_outputs/continuation_20261110/issue24_readable_review/REVIEW.md",
-        "analysis_outputs/continuation_20261110/issue24_readable_review/REVIEW.json"
+        "analysis_outputs/continuation_20261110/issue24_readable_review/REVIEW.json",
+        "analysis_outputs/continuation_20261111/right_edge_reading_review/PROTOCOL.md",
+        "analysis_outputs/continuation_20261111/right_edge_reading_review/RESULT.md",
+        "analysis_outputs/continuation_20261111/right_edge_reading_review/RESULT.json"
       ],
       "reproduce": [
-        "node analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.js"
+        "node analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.js",
+        "Rebuild the two exact saved right-edge texts with the pinned protocol and compare the independent reader receipts."
       ],
       "limitations": [
         "Variant counts are correlated formulations, not independent theories.",
         "The original minikey validator did not scan inside longer streams. See minikey-window-audit for the separate coverage correction.",
-        "Two AI reviewers read the exact22 saved body-only outputs without recognizing an actionable intermediate instruction. This unblinded subjective review does not exclude hidden messages."
+        "Two AI reviewers read the exact22 saved body-only outputs without recognizing an actionable intermediate instruction. This unblinded subjective review does not exclude hidden messages.",
+        "The right-edge reading review applies to the two saved lexical streams and uses subjective recognition."
       ]
     },
     {
@@ -1229,12 +1234,12 @@
     },
     {
       "id": "g07-glyph-orientation",
-      "title": "Printed mirror glyphs in saved G07 regions",
+      "title": "Printed mirror glyphs across Issue 24",
       "status": "partial",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "Compare original ink and exact horizontal reflection at the 114 saved mirrored-baseline detector regions on printed pages 73–80.",
-      "result": "Neither reader recognized a reading instruction. A lossless turn clarified the one disputed banknote crop. The original disagreement remains in the review. A box-coverage audit found 83 normal-view boxes wholly outside these windows.",
+      "scope": "Compare original ink and exact horizontal reflection in the 114 saved G07 regions, then inspect the full scans of printed pages 73–80 in 32 overlapping native tiles.",
+      "result": "Neither reader recognized a reading instruction. A lossless turn clarified the one disputed banknote crop. The original disagreement remains in the review. A box-coverage audit found 83 normal-view boxes wholly outside these windows. The full-page review reported no reversed letters or reading instruction and left 17 reports unclear. The reflected page 74 heading resembles ordinary printing on page 75.",
       "evidence": [
         "analysis_outputs/continuation_20261110/g07_glyph_review/PROTOCOL.md",
         "analysis_outputs/continuation_20261110/g07_glyph_review/SOURCE.md",
@@ -1244,15 +1249,22 @@
         "analysis_outputs/continuation_20261110/g07_glyph_review/BASELINE_BOXES.json",
         "analysis_outputs/continuation_20261110/g07_glyph_review/COVERAGE.json",
         "analysis_outputs/continuation_20261110/g07_glyph_review/ORIENTATION_DIAGNOSTIC.json",
-        "analysis_outputs/continuation_20261110/g07_glyph_review/READER_B_ROTATION_NOTE.md"
+        "analysis_outputs/continuation_20261110/g07_glyph_review/READER_B_ROTATION_NOTE.md",
+        "analysis_outputs/continuation_20261111/full_page_glyph_review/PROTOCOL.md",
+        "analysis_outputs/continuation_20261111/full_page_glyph_review/RESULT.md",
+        "analysis_outputs/continuation_20261111/full_page_glyph_review/RESULT.json",
+        "analysis_outputs/continuation_20261111/full_page_glyph_review/NATIVE_TILE_COVERAGE.md",
+        "analysis_outputs/continuation_20261111/full_page_glyph_review/SOURCE_CHECK.md"
       ],
       "reproduce": [
         "Regenerate the packet from the pinned PDF and saved coordinates using the protocol, then replay both reader receipts.",
-        "Run the saved box-coverage and exact turn diagnostics from the result."
+        "Run the saved box-coverage and exact turn diagnostics from the result.",
+        "Regenerate the 32 full-page tiles and controls from the pinned scan. Replay both reader receipts and generate the two heading exhibits using the full-page protocol."
       ],
       "limitations": [
-        "AI visual judgments apply to registered detector windows. The crop coverage check leaves other source areas open.",
-        "Reader B used temporary diagnostic rotations for seven crops. The original disagreement stays in the frozen outcome."
+        "The initial AI visual judgments apply to registered detector windows. The full-page follow-up covers the saved scan pixels, with faint, clipped and obscured marks still unresolved.",
+        "Reader B used temporary diagnostic rotations for seven crops. The original disagreement stays in the frozen outcome.",
+        "The two headings show a qualitative resemblance. Physical alignment and the optical mechanism remain unmeasured."
       ]
     }
   ],

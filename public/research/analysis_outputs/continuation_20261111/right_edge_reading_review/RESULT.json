@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "testId": "issue24-saved-right-edge-reading-review",
+  "completedAtUTC": "2026-11-11T00:19:46.642Z",
+  "registrationCommit": "dd64244dccd1c9011495a240518280523fcae9f5",
+  "protocolSha256": "e36bf75f409b57dc7c8d11687002d64b88542344e218134ea6a6ad12670e7241",
+  "packetSha256": "358e152675c4aa1d180eccf9c511e023384bb14185d996e8b736299e786b590d",
+  "readerHashes": {
+    "A": "82912004d77092da2c86d251df4be9b6ad550bafd1c99bdd4d93561903c13d24",
+    "B": "d6e9d196447bda04102b8591b65eaf0583e388b16e08d0d8f081e9e7e3df4a98"
+  },
+  "readerSummaries": [
+    {
+      "reviewerId": "A",
+      "priorExposure": "Aware of the clue, the broader case and selection metadata. No deliberate reading of either exact string before packet preparation.",
+      "readingsRead": 2,
+      "instructionReports": 0,
+      "completedAtUTC": "2026-11-11T00:19:46.642Z"
+    },
+    {
+      "reviewerId": "B",
+      "priorExposure": "fresh",
+      "readingsRead": 2,
+      "instructionReports": 0,
+      "completedAtUTC": "2026-11-11T00:19:35Z"
+    }
+  ],
+  "outcome": "no-instruction-recognized-in-two-saved-readings",
+  "counts": {
+    "readers": 2,
+    "distinctReadings": 2,
+    "sourceRowsPerReading": 142,
+    "instructionReports": 0
+  },
+  "reproducedPacketByteIdentical": true,
+  "activity": {
+    "newTransforms": 0,
+    "keyChecks": 0
+  }
+}

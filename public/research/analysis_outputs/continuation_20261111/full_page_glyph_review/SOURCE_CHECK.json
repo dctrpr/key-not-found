@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "testId": "issue24-full-page-glyph-review",
+  "completedAtUTC": "2026-11-11T00:23:32.676Z",
+  "registrationCommit": "90188fb126ffa8434f0ae73dcddde30f344a95f8",
+  "sourcePdf": {
+    "path": "../../../magazine.pdf",
+    "sha256": "a30c61f8c49674afb7bccc6680d6477f6e919175386a2422de0a944db4e76c13",
+    "uprightDimensions": [
+      2544,
+      3264
+    ],
+    "orientation": "Embedded JPEG decoded to RGB and transposed 180 degrees by pixel indexing."
+  },
+  "coordinateConvention": "Half-open XYXY in the native upright source raster with a top-left origin. Orientation describes the exhibit after cropping.",
+  "exhibits": [
+    {
+      "path": "exhibits/p74-faint-heading-reflected.png",
+      "sha256": "0d1bb6246cb5f7f2b68d3c8e74352cc703928768b34f069b87488ac6a7e8167a",
+      "width": 1180,
+      "height": 800,
+      "page": 74,
+      "sourceBoxXYXY": [
+        1224,
+        300,
+        2404,
+        1100
+      ],
+      "orientation": "horizontal-mirror"
+    },
+    {
+      "path": "exhibits/p75-heading-upright.png",
+      "sha256": "65b66b50882267ac52089b7184d840d0227504b2601db0d56d8628d65f19ae3d",
+      "width": 1180,
+      "height": 800,
+      "page": 75,
+      "sourceBoxXYXY": [
+        140,
+        300,
+        1320,
+        1100
+      ],
+      "orientation": "upright"
+    }
+  ],
+  "observation": "The pale reflected page 74 heading resembles the page 75 heading in spacing, size and slope. Fainter rows below are too weak for a dependable independent reading. The resemblance is consistent with show-through. The optical mechanism and physical displacement remain unresolved.",
+  "qualitativeOnly": true,
+  "independentViewers": 1,
+  "distinctInstructionRecognized": false,
+  "fittedTransform": false,
+  "contrastAdjustment": false,
+  "interpolation": false,
+  "frozenReviewMarksChanged": false,
+  "reproduction": {
+    "script": "../../../scripts/make_issue24_heading_exhibits.py",
+    "command": "python3 public/research/scripts/make_issue24_heading_exhibits.py --packet \"$PRIVATE_PACKET\" --out \"$PRIVATE_HEADING_EXHIBITS\"",
+    "savedExhibitsByteReproduced": 2
+  }
+}

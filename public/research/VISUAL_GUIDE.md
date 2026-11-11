@@ -26,4 +26,6 @@ The G07 saved-OCR frame records 1,038 saved readings, 1,464 fixed forms and zero
 
 The four-population compatibility frame records 43,699 correlated saved records, 5,557 forms summed across populations and one weak 26-character checksum pass. The pass requires registered whitespace compaction and is not contiguous in an unchanged reading. It opens the Orange Party pages; the other source sets remain selectable. The source-known subset is nested, not an extra discovery. See the [exact result](analysis_outputs/continuation_20261110/columns_compatibility/RESULT.md).
 
+The [full-page review frame](https://keynotfound.com/#visual-issue24-full-page-glyph-review) opens the actual page 74 scan in the 3D mirror viewer. Two excerpts show the reflected page 74 trace beside the upright page 75 heading. The comparison uses native pixels and matching nominal coordinates. Its physical alignment remains unmeasured. [Source comparison](analysis_outputs/continuation_20261111/full_page_glyph_review/SOURCE_CHECK.md)
+
 The puzzle remains unsolved. The 3D display and visual log do not verify the prize funding.

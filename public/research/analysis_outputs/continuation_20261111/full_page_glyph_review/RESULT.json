@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "testId": "issue24-full-page-glyph-review",
+  "registrationCommit": "90188fb126ffa8434f0ae73dcddde30f344a95f8",
+  "protocolSha256": "8d176a4e5d28f36c59a4f8e0ee79fd9645cae0f0e98495aac626702d87132e71",
+  "registrationReceiptSha256": "17d116cc00f2660468ce872812309062cb0e53f40e7b8bee5569de7fcf9c1b59",
+  "packetManifestSha256": "fadcbbb244ccaa7c7b07c733182bb4f018fe0a728595129e223aedaada8e8172",
+  "sourcePdfSha256": "a30c61f8c49674afb7bccc6680d6477f6e919175386a2422de0a944db4e76c13",
+  "readerHashes": {
+    "A": "89ca9af911e476e2314456ddb262acf9103b5d640f154e4888af45ef26145c86",
+    "B": "596c4dde7f8b1417aafdcf8f5980320a2a26aa04d063bb4ec60ff1cca7ededdf"
+  },
+  "readerExposureDeclarationsVerified": true,
+  "outcome": "needs-source-adjudication",
+  "controlsPassed": true,
+  "findingCounts": {
+    "reversed": 0,
+    "possible-reversal": 0,
+    "rotated-ordinary": 52,
+    "unclear": 17
+  },
+  "unresolvedFindings": 17,
+  "instructionReports": 0,
+  "readerSummary": {
+    "A": {
+      "controls": {
+        "passed": true,
+        "observed": {
+          "c01": "ordinary",
+          "c02": "reversed",
+          "c03": "symmetric-only",
+          "c04": "rotated-ordinary"
+        },
+        "failedControlIds": []
+      },
+      "startedAtUTC": "2026-11-11T00:15:15Z",
+      "completedAtUTC": "2026-11-11T00:19:16Z"
+    },
+    "B": {
+      "controls": {
+        "passed": true,
+        "observed": {
+          "c01": "ordinary",
+          "c02": "reversed",
+          "c03": "symmetric-only",
+          "c04": "rotated-ordinary"
+        },
+        "failedControlIds": []
+      },
+      "startedAtUTC": "2026-11-11T00:15:21.240Z",
+      "completedAtUTC": "2026-11-11T00:20:18.171Z"
+    }
+  },
+  "startedAtUTC": "2026-11-11T00:20:57.618Z",
+  "completedAtUTC": "2026-11-11T00:20:57.677Z",
+  "reviewCoverageComplete": true,
+  "counts": {
+    "readers": 2,
+    "tilesPerReader": 32,
+    "tileReviews": 64,
+    "packetAssetHashesVerified": 68,
+    "readerFindings": 69
+  },
+  "interpretation": "Independent reader marks on the 32 tiles, with source uncertainty retained.",
+  "activity": {
+    "pixelDecodes": 0,
+    "newOCRCalls": 0,
+    "glyphAdjudications": 0,
+    "keyChecks": 0
+  },
+  "mergedArtifactSha256": "c93f3c85f0038a1c91d03c6b18effdf082e7da162b6ce08d89511ea902a561e2"
+}

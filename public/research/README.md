@@ -1,6 +1,6 @@
 # KEY NOT FOUND — research corpus
 
-**Status: unsolved as of 10 November 2026.** No authenticated prize key or prize address has been established. The earlier weak checksum leads that reached a history check had zero reported history within their respective five-construction scopes. Max Keiser’s 20 BTC statement remains a creator claim, not verified funding.
+**Status: unsolved as of 11 November 2026.** No authenticated prize key or prize address has been established. The earlier weak checksum leads that reached a history check had zero reported history within their respective five-construction scopes. Max Keiser’s 20 BTC statement remains a creator claim, not verified funding.
 
 This is a curated public copy of the Max Keiser / Bitcoin Magazine investigation. It contains the relevant source scans, public creator-post evidence, the exact 142-line body transcript, code, candidate data and bounded results. Contributor identities, private account context, local paths, private discussions and annotations have been removed. Original artwork and public creator credits remain as printed.
 
@@ -9,6 +9,10 @@ Start with [the method catalog](experiments.json), [creator clues](sources/creat
 The [visual lab and dated frames](VISUAL_GUIDE.md) make the source pages and completed tests inspectable on the site. Saved SVGs and scene data are included under `visuals/` for reuse in later research films.
 
 ## Research is continuing
+
+Two readers reviewed 32 overlapping native tiles each across all eight Issue 24 scans. They reported zero reversed letters and zero reading instructions, with 17 unclear reports. A reflected trace on page 74 resembles the page 75 heading. Compare the source excerpts and open page 74 in the 3D mirror viewer. [Full-page review](analysis_outputs/continuation_20261111/full_page_glyph_review/RESULT.md) · [Visual frame](https://keynotfound.com/#visual-issue24-full-page-glyph-review)
+
+Two AI readers also found no coherent instruction in the two exact saved whole-body right-edge readings, covering the same 142 body rows in opposite orders. [Right-edge review](analysis_outputs/continuation_20261111/right_edge_reading_review/RESULT.md)
 
 The registered mirror-view comparison found no reported reading instruction. The sole disagreement concerns an upside-down banknote fragment. The box audit found 83 ordinary-view detector boxes outside the reviewed regions. The 78/79 transfer check also found blank foot windows. [Mirror glyph review](analysis_outputs/continuation_20261110/g07_glyph_review/RESULT.md) · [Transfer feasibility](analysis_outputs/continuation_20261110/g02_transfer_feasibility/RESULT.md)
 

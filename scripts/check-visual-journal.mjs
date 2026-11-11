@@ -37,6 +37,53 @@ for (const entry of data.entries) {
     } else assert.equal(metric.operation, undefined);
     assert.equal(value, metric.value, 'Visual metric differs from its frozen result');
   }
+  if (entry.id === 'issue24-full-page-glyph-review') {
+    assert.equal(entry.diagram, 'funnel');
+    assert.equal(entry.methodId, 'g07-glyph-orientation');
+    assert.deepEqual(entry.scene, { layout: 'mirror', page: 74 });
+    assert.equal(result.testId, entry.id);
+    assert.equal(result.outcome, 'needs-source-adjudication');
+    assert.equal(result.controlsPassed, true);
+    assert.equal(result.reviewCoverageComplete, true);
+    assert.deepEqual(result.findingCounts, { reversed: 0, 'possible-reversal': 0, 'rotated-ordinary': 52, unclear: 17 });
+    assert.deepEqual(result.activity, { pixelDecodes: 0, newOCRCalls: 0, glyphAdjudications: 0, keyChecks: 0 });
+    const base = path.dirname(path.join(root, 'public/research', entry.source.path));
+    const digest = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
+    const manifestBytes = fs.readFileSync(path.join(base, 'PACKET_MANIFEST.json'));
+    const mergedBytes = fs.readFileSync(path.join(base, 'MERGED.json'));
+    assert.equal(digest(manifestBytes), result.packetManifestSha256);
+    assert.equal(digest(mergedBytes), result.mergedArtifactSha256);
+    assert.equal(JSON.parse(manifestBytes).tiles.length, result.counts.tilesPerReader);
+    assert.equal(JSON.parse(mergedBytes).findings.length, result.counts.readerFindings);
+    const replay = JSON.parse(fs.readFileSync(path.join(base, 'PACKET_REPLAY.json')));
+    assert.equal(replay.assetsByteReproduced, result.counts.packetAssetHashesVerified);
+    assert.equal(replay.originalPacketManifestSha256, result.packetManifestSha256);
+    assert.equal(replay.reconstructedPageRGBHashesMatched, 8);
+    assert.equal(replay.allOverlappingPixelCopiesIdentical, true);
+    for (const [label, hash] of Object.entries(result.readerHashes)) {
+      const receipt = fs.readFileSync(path.join(base, 'READER_' + label + '.json'));
+      assert.equal(digest(receipt), hash);
+      assert.equal(JSON.parse(receipt).tiles.length, result.counts.tilesPerReader);
+    }
+    const sourceCheck = JSON.parse(fs.readFileSync(path.join(base, 'SOURCE_CHECK.json')));
+    assert.equal(sourceCheck.qualitativeOnly, true);
+    assert.equal(sourceCheck.fittedTransform, false);
+    assert.equal(sourceCheck.frozenReviewMarksChanged, false);
+    assert.deepEqual(sourceCheck.exhibits.map(exhibit => exhibit.page), [74, 75]);
+    assert.equal(entry.exhibits.length, 2);
+    for (const [index, exhibit] of entry.exhibits.entries()) {
+      const record = sourceCheck.exhibits[index];
+      const file = path.join(base, record.path);
+      const bytes = fs.readFileSync(file);
+      assert.equal(file, path.join(root, 'public', exhibit.path));
+      assert.equal(digest(bytes), record.sha256);
+      assert.equal(exhibit.sha256, record.sha256);
+      assert.equal(bytes.readUInt32BE(16), record.width);
+      assert.equal(bytes.readUInt32BE(20), record.height);
+      assert.equal(exhibit.width, record.width);
+      assert.equal(exhibit.height, record.height);
+    }
+  }
   if (entry.id === 'g07-mirror-glyph-orientation') {
     assert.equal(entry.diagram, 'funnel');
     assert.equal(entry.methodId, 'g07-glyph-orientation');
