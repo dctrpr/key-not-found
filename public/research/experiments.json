@@ -1273,6 +1273,27 @@
         "The two headings show a qualitative resemblance. Physical alignment and the optical mechanism remain unmeasured.",
         "The second scan has insufficient readable detail in the faint band. Its acquisition history is unknown."
       ]
+    },
+    {
+      "id": "issue24-heading-pixel-match",
+      "title": "Opposite-face heading pixel match",
+      "status": "partial",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Compare seven native page 75 templates against reflected page 74 with equally searched controls in two retained rasters.",
+      "result": "The sharper raster supports a heading shift of −44, −1 pixels, shared by four of five body holdouts. The lower-resolution heading offsets disagree vertically by 18 pixels and no body holdout passes its local gate.",
+      "evidence": [
+        "analysis_outputs/continuation_20261111/heading_pixel_match/RESULT.md",
+        "analysis_outputs/continuation_20261111/heading_pixel_match/SCORES.json",
+        "analysis_outputs/continuation_20261111/heading_pixel_match/PROTOCOL.md",
+        "scripts/measure_issue24_heading_pixels.py"
+      ],
+      "reproduce": [
+        "Run the controlled heading-pixel comparison from the pinned protocol. Compare all offsets, runner-up peaks and controls against the exact score receipt."
+      ],
+      "limitations": [
+        "The translation is local to one raster. The scans cannot determine the physical source of the faint marks or a global registration."
+      ]
     }
   ],
   "countingPolicy": "This is a curated set of method families/source audits, not a total count of independent theories. Historical administrative gates and correlated variants are not counted as independent experiments. Falsified means only the concrete stated candidate/address scope.",

@@ -1,0 +1,33 @@
+{
+  "testId": "issue24-heading-pixel-match",
+  "completedAtUTC": "2026-11-11T03:00:21Z",
+  "registrationCommit": "785b45c6254449a798b45d2ea54f85b035e03b90",
+  "registrationVerifiedAtUTC": "2026-11-11T03:00:17Z",
+  "protocolSha256": "ff8dee543a616c546e1446bcacd30e86b29bfc2368c5b020eaec2b2ce9f71d92",
+  "scriptSha256": "e2d14ed97bfc21836eaefed91716d50fe3679150ab78700b5822a26de234dbda",
+  "scoresSha256": "e67fb54eeda347ae604db7928b020983621b3b50b50ed392a0ee42a929a4d885",
+  "replaySha256": "e67fb54eeda347ae604db7928b020983621b3b50b50ed392a0ee42a929a4d885",
+  "dependencies": {
+    "PyMuPDF": "1.26.5",
+    "Pillow": "11.3.0",
+    "NumPy": "2.0.2"
+  },
+  "metrics": {
+    "highHeadingHalves": 2,
+    "highBodyHoldouts": 4,
+    "lowBodyHoldouts": 0,
+    "lowHeadingOffsetDisagreement": 18,
+    "recoveredSyntheticInjections": 14
+  },
+  "high": {
+    "status": "local-translation-supported",
+    "shiftXY": [
+      -44,
+      -1
+    ]
+  },
+  "low": {
+    "status": "isolated-local-match",
+    "shiftXY": null
+  }
+}

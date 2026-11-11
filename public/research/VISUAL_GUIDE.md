@@ -32,4 +32,6 @@ The [second-scan frame](https://keynotfound.com/#visual-issue24-second-scan-head
 
 The [line-start audit frame](https://keynotfound.com/#visual-issue24-line-start-audit) opens page 77 in the mirror viewer and shows exact excerpts from both scans. Its counts cover 142 mapped body lines, three manual short-row matches and one unsettled initial-letter case. The source report preserves paragraph and display-role uncertainty. [Line audit](analysis_outputs/continuation_20261111/line_start_audit/RESULT.md)
 
+The [heading pixel comparison](https://keynotfound.com/#visual-issue24-heading-pixel-match) opens page 74 in the mirror viewer. The report records the fixed shift from the sharper scan’s heading, four passing body holdouts and the lower-resolution disagreement. The viewer shows the source and its reflection. The exact offsets and control scores are in the report. [Pixel comparison](analysis_outputs/continuation_20261111/heading_pixel_match/RESULT.md)
+
 The puzzle remains unsolved. The 3D display and visual log do not verify the prize funding.

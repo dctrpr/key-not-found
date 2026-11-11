@@ -21,6 +21,7 @@ export function VisualFrame({ entry, number }: { entry: Entry; number: number })
   const isFullPageGlyphReview = entry.id === 'issue24-full-page-glyph-review';
   const isSecondScanHeadingReview = entry.id === 'issue24-second-scan-heading-review';
   const isLineStartAudit = entry.id === 'issue24-line-start-audit';
+  const isHeadingPixelMatch = entry.id === 'issue24-heading-pixel-match';
   return <svg viewBox="0 0 900 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="visual-frame-title visual-frame-description">
     <title id="visual-frame-title">{entry.title}</title>
     <desc id="visual-frame-description">{entry.metrics.map(m => `${formatNumber(m.value)} ${m.label}`).join('; ')}. {entry.result}</desc>
@@ -96,15 +97,18 @@ export function VisualFrame({ entry, number }: { entry: Entry; number: number })
         <text x="40" y="367" fill={muted} fontSize="12">Source curation only. No new decoding or cryptographic check in this frame.</text>
       </> : <>
         <text x="40" y="101" fill={paper} fontSize="26" fontWeight="700">{entry.title}</text>
-        <text x="40" y="130" fill={muted} fontSize="13">{isLineStartAudit ? 'Printed lines → independent readings → source comparison' : isSecondScanHeadingReview ? 'Native crops → locked page 74 readings → page 75 reference' : isFullPageGlyphReview ? 'Native scan tiles → independent visual marks → source comparison' : isMirrorGlyphReview ? 'Upright ink and its reflection → independent visual marks' : isPaperEdgeScreen ? 'Native photographs → independent marks → agreed crossings' : isSharedQueryCheck ? 'One offset per leaf → paired direction choices → pattern check' : isStencilShapeCheck ? 'Registered stencil word choices → literal format patterns' : isStencilSourceModel ? 'Frozen word centers → joint colors → membership bounds' : isSavedReadingReview ? 'Saved texts → two AI contexts → reported nonrecognition' : 'Registered input → format checks → recorded outcome'}</text>
+        <text x="40" y="130" fill={muted} fontSize="13">{isHeadingPixelMatch ? 'Native pixels · same search for each control · held-out body regions' : isLineStartAudit ? 'Printed lines → independent readings → source comparison' : isSecondScanHeadingReview ? 'Native crops → locked page 74 readings → page 75 reference' : isFullPageGlyphReview ? 'Native scan tiles → independent visual marks → source comparison' : isMirrorGlyphReview ? 'Upright ink and its reflection → independent visual marks' : isPaperEdgeScreen ? 'Native photographs → independent marks → agreed crossings' : isSharedQueryCheck ? 'One offset per leaf → paired direction choices → pattern check' : isStencilShapeCheck ? 'Registered stencil word choices → literal format patterns' : isStencilSourceModel ? 'Frozen word centers → joint colors → membership bounds' : isSavedReadingReview ? 'Saved texts → two AI contexts → reported nonrecognition' : 'Registered input → format checks → recorded outcome'}</text>
         {entry.metrics.map((metric, i) => <g key={metric.label}>
           <rect x={40 + i * 288} y="190" width="244" height="132" rx="1" fill={i === 2 ? lime : '#191917'} stroke={i === 2 ? lime : '#45453c'}/>
           <text x={61 + i * 288} y="251" fill={i === 2 ? '#0e0e0d' : paper} fontSize="49" fontWeight="700" letterSpacing="-2">{formatNumber(metric.value)}</text>
           <text x={62 + i * 288} y="288" fill={i === 2 ? '#30341e' : muted} fontSize="13">{metric.label}</text>
           {isSharedQueryCheck && i === 1 ? <text x="590" y="262" textAnchor="middle" fill={muted} fontSize="18">+</text> :
-            i < 2 && <path d={`M ${294 + i * 288} 256 h 18 m -5 -5 l 5 5 -5 5`} stroke={muted} fill="none"/>}
+            i < 2 && !(isHeadingPixelMatch && i === 1) && <path d={`M ${294 + i * 288} 256 h 18 m -5 -5 l 5 5 -5 5`} stroke={muted} fill="none"/>}
         </g>)}
-        {isLineStartAudit ? <>
+        {isHeadingPixelMatch ? <>
+          <text x="40" y="350" fill={paper} fontSize="14">A shared shift holds locally in the sharper scan.</text>
+          <text x="40" y="375" fill={muted} fontSize="12">The source of the faint marks remains unresolved.</text>
+        </> : isLineStartAudit ? <>
           <text x="40" y="350" fill={paper} fontSize="14">A line break can change the words a first-word rule reads.</text>
           <text x="40" y="375" fill={muted} fontSize="12">The report preserves the matching criteria and unresolved rows.</text>
         </> : isSecondScanHeadingReview ? <>
