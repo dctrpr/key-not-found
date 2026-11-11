@@ -10,6 +10,8 @@ The [visual lab and dated frames](VISUAL_GUIDE.md) make the source pages and com
 
 ## Research is continuing
 
+Two readers independently inventoried 142 body lines from the second scan. Interior cues align 139 rows with the existing model, and source inspection confirms the three short rows. No changed lexical edge or physical line break was found. One initial-letter case remains unsettled across the source views. [Line-start audit](analysis_outputs/continuation_20261111/line_start_audit/RESULT.md) · [Visual frame](https://keynotfound.com/#visual-issue24-line-start-audit)
+
 In the second scan, both readers marked the same faint page 74 band before seeing page 75. They could not read a word in the band, and both read the upright page 75 heading. The proposed match remains inconclusive. The next text-source check compares the 142 body line starts across the two scans. [Second-scan review](analysis_outputs/continuation_20261111/second_scan_heading_review/RESULT.md) · [Visual frame](https://keynotfound.com/#visual-issue24-second-scan-heading-review)
 
 Two readers reviewed 32 overlapping native tiles each across all eight Issue 24 scans. They reported zero reversed letters and zero reading instructions, with 17 unclear reports. A reflected trace on page 74 resembles the page 75 heading. Compare the source excerpts and open page 74 in the 3D mirror viewer. [Full-page review](analysis_outputs/continuation_20261111/full_page_glyph_review/RESULT.md) · [Visual frame](https://keynotfound.com/#visual-issue24-full-page-glyph-review)

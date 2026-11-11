@@ -1,0 +1,190 @@
+{
+  "utcStart": "2026-11-11T01:06:46Z",
+  "sourceManifestSha256": "15b255e9283fb2927c645c69675bfad40f170bf9544d6fd781ffd39c1762f1bb",
+  "scope": "Source-only adjudication of the center physical text row in five supplied high-resolution context crops.",
+  "method": "Viewed the five PNGs at original pixel resolution and read the supplied coordinate metadata. First-letter judgments compare visible glyph shapes in the same crop.",
+  "coordinateConvention": "XYXY estimates on the native upright source page. Crop offsets come from MANIFEST.json.",
+  "observations": [
+    {
+      "id": "p75r03",
+      "sourceBoxXYXY": [
+        302,
+        680,
+        2298,
+        816
+      ],
+      "centerRowBoundsXYXY": [
+        370,
+        720,
+        951,
+        781
+      ],
+      "baselineGroup": "Really? and Yes. share one near-level display baseline with a large horizontal gap.",
+      "slope": "near-level, slightly down-right",
+      "firstWhitespaceChunk": "Really?",
+      "lastWhitespaceChunk": "Yes.",
+      "observedText": "Really?    Yes.",
+      "uncertainty": "The gap shown in observedText is illustrative. No exact whitespace count is asserted.",
+      "confidence": "high",
+      "asset": "high-short-case/p75r03.png",
+      "assetSha256": "65376ab48befc7ef3f2095af04f9b119b4e67ff95cf8c83c9defe931aba544c8"
+    },
+    {
+      "id": "p75r25",
+      "sourceBoxXYXY": [
+        302,
+        2369,
+        2298,
+        2504
+      ],
+      "centerRowBoundsXYXY": [
+        450,
+        2414,
+        928,
+        2466
+      ],
+      "baselineGroup": "Keep your dignity. is a single orange-highlighted row, physically distinct from the partially visible black-highlighted row above and the enlarged row below.",
+      "slope": "near-level, slightly down-right",
+      "firstWhitespaceChunk": "Keep",
+      "lastWhitespaceChunk": "dignity.",
+      "observedText": "Keep your dignity.",
+      "uncertainty": null,
+      "confidence": "high",
+      "asset": "high-short-case/p75r25.png",
+      "assetSha256": "06046949509c00f914bd5cf0963e491600115b9a9d97e7033fe6d587e531b925"
+    },
+    {
+      "id": "p76r18",
+      "sourceBoxXYXY": [
+        372,
+        1917,
+        2048,
+        2042
+      ],
+      "centerRowBoundsXYXY": [
+        429,
+        1961,
+        844,
+        1998
+      ],
+      "baselineGroup": "Don't believe me? is a single short body row. The fragment at the crop bottom belongs to a distinct following baseline.",
+      "slope": "near-level",
+      "firstWhitespaceChunk": "Don't",
+      "lastWhitespaceChunk": "me?",
+      "observedText": "Don't believe me?",
+      "uncertainty": null,
+      "confidence": "high",
+      "asset": "high-short-case/p76r18.png",
+      "assetSha256": "7441e60bd5bb77185b3d99273502d3cb36d98facb1f998dcc12ce3130d41ee19"
+    },
+    {
+      "id": "p77r09",
+      "sourceBoxXYXY": [
+        332,
+        965,
+        2308,
+        1100
+      ],
+      "centerRowBoundsXYXY": [
+        872,
+        1010,
+        2233,
+        1054
+      ],
+      "baselineGroup": "The center white-on-dark row begins Big and ends Block. The clipped white fragments at the crop top and bottom occupy distinct neighboring baselines.",
+      "slope": "near-level",
+      "firstWhitespaceChunk": "Big",
+      "lastWhitespaceChunk": "Block",
+      "initialLetterCase": "uppercase B",
+      "caseEvidence": [
+        {
+          "boundsXYXY": [
+            873,
+            1011,
+            908,
+            1049
+          ],
+          "literal": "B",
+          "role": "target initial",
+          "shape": "Upper right lobe and lower right lobe are both visible, with the divider around the middle of the stem. Distress interrupts portions of the white contour."
+        },
+        {
+          "boundsXYXY": [
+            2098,
+            1010,
+            2132,
+            1049
+          ],
+          "literal": "B",
+          "role": "capital comparator in Block on the same baseline",
+          "shape": "The two-lobe capital structure matches the target initial."
+        },
+        {
+          "boundsXYXY": [
+            971,
+            1010,
+            1004,
+            1049
+          ],
+          "literal": "b",
+          "role": "lowercase comparator in blockers on the same baseline",
+          "shape": "Tall left ascender above a lower right bowl, visibly different from the target's upper lobe."
+        }
+      ],
+      "uncertainty": "The target initial is distressed. The two-bowl structure and both same-row comparators support uppercase despite missing ink. Coordinates are visual estimates.",
+      "confidence": "high",
+      "asset": "high-short-case/p77r09.png",
+      "assetSha256": "8c491f47c22eac9e78661a9f3c38806fad06a3cbf3935b1fc74d26093a9a2b9d"
+    },
+    {
+      "id": "p77r24",
+      "sourceBoxXYXY": [
+        802,
+        2295,
+        2308,
+        2423
+      ],
+      "centerRowBoundsXYXY": [
+        856,
+        2335,
+        2232,
+        2377
+      ],
+      "baselineGroup": "The center white-on-dark row begins bitcoin and ends world's. The clipped white fragments above and below sit on distinct neighboring baselines.",
+      "slope": "near-level, very slightly down-right",
+      "firstWhitespaceChunk": "bitcoin",
+      "lastWhitespaceChunk": "world's",
+      "initialLetterCase": "lowercase b",
+      "caseEvidence": [
+        {
+          "boundsXYXY": [
+            856,
+            2335,
+            887,
+            2377
+          ],
+          "literal": "b",
+          "role": "target initial",
+          "shape": "A narrow left ascender projects above the lower bowl. The upper-right region remains open instead of carrying a second capital bowl."
+        },
+        {
+          "boundsXYXY": [
+            1467,
+            2342,
+            1499,
+            2377
+          ],
+          "literal": "b",
+          "role": "lowercase comparator in be on the same baseline",
+          "shape": "Matching left ascender and lower right bowl."
+        }
+      ],
+      "uncertainty": "The top of the target ascender has damaged or broken white strokes. The visible bowl placement supports lowercase. No complete uppercase B comparator is visible in this crop, so the comparison is limited to the lower-case form.",
+      "confidence": "moderate-high",
+      "asset": "high-short-case/p77r24.png",
+      "assetSha256": "b104769053ffc33c98164119f8eea07d605408252d95ef1f6956b4c9ae9b0de2"
+    }
+  ],
+  "limits": "The review covers these five center rows. The punctuation is represented with ordinary apostrophe characters where visible. A raster establishes printed glyph appearance but does not establish a Unicode code point.",
+  "utcCompletion": "2026-11-11T01:08:20Z"
+}

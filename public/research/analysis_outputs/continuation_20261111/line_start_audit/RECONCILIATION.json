@@ -1,0 +1,8305 @@
+{
+  "version": 1,
+  "testId": "issue24-line-start-audit",
+  "status": "metadata-reconciliation-complete-adjudication-pending",
+  "complete": true,
+  "adjudicationPending": true,
+  "confirmedSourceDeltas": [],
+  "startedAtUTC": "2026-11-11T01:04:23.606Z",
+  "completedAtUTC": "2026-11-11T01:04:23.621Z",
+  "registrationCommit": "3537ccede4ddbb252ca9fe70fd58fce241a8bbec",
+  "protocolSha256": "e74c44268c1e89595a86470bff2865b0d32bc6780254cf766f0d9af7fa23a39a",
+  "registrationReceiptSha256": "90c34bf7ee930d9a0df8097282157b621a7beb8f3f4f345ea5b671b458b79924",
+  "packetManifestSha256": "68c16722d2a3c80362ce67e164e98683f75be726993179fa087d9f1fe6ea20cc",
+  "receiptLockSha256": "c6257d6f2df28c6d02aabf925295903cc9317172316ab7239deb12d1f951dc00",
+  "readerReceiptHashes": {
+    "A": "6c5a6e1521a865aa5a57a7f6486e80a93bfde418f7fbab0073f88a2d1473f760",
+    "B": "2335a55307c636fb5c1b59fe846ead02d4fa52c3b3eb5f27d9aafbe88bdad0a6"
+  },
+  "canonicalSha256": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+  "counts": {
+    "lowA": 142,
+    "lowB": 142,
+    "canonical": 142,
+    "lowOptimalPairs": 142,
+    "lowForcedPairs": 142,
+    "highOptimalPairs": 139,
+    "highForcedPairs": 139,
+    "tentativeEdges": 0,
+    "ambiguities": 97,
+    "readers": 2,
+    "assetsPerReader": 10,
+    "pages": 5,
+    "confirmedSourceDeltas": 0,
+    "shortRowCandidates": 3
+  },
+  "tentativeCases": [],
+  "ambiguities": [
+    {
+      "page": 75,
+      "stage": "low-vs-canonical",
+      "side": "left",
+      "rowId": {
+        "A": "p75-l03",
+        "B": "p75-l03"
+      },
+      "possibleOptimalPartners": [],
+      "reason": "no-optimal-pair"
+    },
+    {
+      "page": 75,
+      "stage": "low-vs-canonical",
+      "side": "left",
+      "rowId": {
+        "A": "p75-l25",
+        "B": "p75-l25"
+      },
+      "possibleOptimalPartners": [],
+      "reason": "no-optimal-pair"
+    },
+    {
+      "page": 75,
+      "stage": "low-vs-canonical",
+      "side": "right",
+      "rowId": "p75r03",
+      "possibleOptimalPartners": [],
+      "reason": "no-optimal-pair"
+    },
+    {
+      "page": 75,
+      "stage": "low-vs-canonical",
+      "side": "right",
+      "rowId": "p75r25",
+      "possibleOptimalPartners": [],
+      "reason": "no-optimal-pair"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l10",
+        "B": "p75-l10"
+      },
+      "canonicalRow": "p75r10",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l10",
+        "B": "p75-l10"
+      },
+      "canonicalRow": "p75r10",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l17",
+        "B": "p75-l17"
+      },
+      "canonicalRow": "p75r17",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l17",
+        "B": "p75-l17"
+      },
+      "canonicalRow": "p75r17",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l17",
+        "B": "p75-l17"
+      },
+      "canonicalRow": "p75r17",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l18",
+        "B": "p75-l18"
+      },
+      "canonicalRow": "p75r18",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l18",
+        "B": "p75-l18"
+      },
+      "canonicalRow": "p75r18",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l18",
+        "B": "p75-l18"
+      },
+      "canonicalRow": "p75r18",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l20",
+        "B": "p75-l20"
+      },
+      "canonicalRow": "p75r20",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l20",
+        "B": "p75-l20"
+      },
+      "canonicalRow": "p75r20",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l20",
+        "B": "p75-l20"
+      },
+      "canonicalRow": "p75r20",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l22",
+        "B": "p75-l22"
+      },
+      "canonicalRow": "p75r22",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l22",
+        "B": "p75-l22"
+      },
+      "canonicalRow": "p75r22",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l22",
+        "B": "p75-l22"
+      },
+      "canonicalRow": "p75r22",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l23",
+        "B": "p75-l23"
+      },
+      "canonicalRow": "p75r23",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l24",
+        "B": "p75-l24"
+      },
+      "canonicalRow": "p75r24",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l24",
+        "B": "p75-l24"
+      },
+      "canonicalRow": "p75r24",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l24",
+        "B": "p75-l24"
+      },
+      "canonicalRow": "p75r24",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l26",
+        "B": "p75-l26"
+      },
+      "canonicalRow": "p75r26",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 75,
+      "lowRows": {
+        "A": "p75-l28",
+        "B": "p75-l28"
+      },
+      "canonicalRow": "p75r28",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 76,
+      "stage": "low-vs-canonical",
+      "side": "left",
+      "rowId": {
+        "A": "p76-l18",
+        "B": "p76-l18"
+      },
+      "possibleOptimalPartners": [],
+      "reason": "no-optimal-pair"
+    },
+    {
+      "page": 76,
+      "stage": "low-vs-canonical",
+      "side": "right",
+      "rowId": "p76r18",
+      "possibleOptimalPartners": [],
+      "reason": "no-optimal-pair"
+    },
+    {
+      "page": 76,
+      "lowRows": {
+        "A": "p76-l03",
+        "B": "p76-l03"
+      },
+      "canonicalRow": "p76r03",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 76,
+      "lowRows": {
+        "A": "p76-l04",
+        "B": "p76-l04"
+      },
+      "canonicalRow": "p76r04",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 76,
+      "lowRows": {
+        "A": "p76-l04",
+        "B": "p76-l04"
+      },
+      "canonicalRow": "p76r04",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 76,
+      "lowRows": {
+        "A": "p76-l08",
+        "B": "p76-l08"
+      },
+      "canonicalRow": "p76r08",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 76,
+      "lowRows": {
+        "A": "p76-l08",
+        "B": "p76-l08"
+      },
+      "canonicalRow": "p76r08",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 76,
+      "lowRows": {
+        "A": "p76-l11",
+        "B": "p76-l11"
+      },
+      "canonicalRow": "p76r11",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 76,
+      "lowRows": {
+        "A": "p76-l11",
+        "B": "p76-l11"
+      },
+      "canonicalRow": "p76r11",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 76,
+      "lowRows": {
+        "A": "p76-l11",
+        "B": "p76-l11"
+      },
+      "canonicalRow": "p76r11",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 76,
+      "lowRows": {
+        "A": "p76-l13",
+        "B": "p76-l13"
+      },
+      "canonicalRow": "p76r13",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 76,
+      "lowRows": {
+        "A": "p76-l14",
+        "B": "p76-l14"
+      },
+      "canonicalRow": "p76r14",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 76,
+      "lowRows": {
+        "A": "p76-l14",
+        "B": "p76-l14"
+      },
+      "canonicalRow": "p76r14",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 76,
+      "lowRows": {
+        "A": "p76-l17",
+        "B": "p76-l17"
+      },
+      "canonicalRow": "p76r17",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 76,
+      "lowRows": {
+        "A": "p76-l19",
+        "B": "p76-l19"
+      },
+      "canonicalRow": "p76r19",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 76,
+      "lowRows": {
+        "A": "p76-l21",
+        "B": "p76-l21"
+      },
+      "canonicalRow": "p76r21",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 76,
+      "lowRows": {
+        "A": "p76-l22",
+        "B": "p76-l22"
+      },
+      "canonicalRow": "p76r22",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l03",
+        "B": "p77-l03"
+      },
+      "canonicalRow": "p77r03",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l06",
+        "B": "p77-l06"
+      },
+      "canonicalRow": "p77r06",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l06",
+        "B": "p77-l06"
+      },
+      "canonicalRow": "p77r06",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l06",
+        "B": "p77-l06"
+      },
+      "canonicalRow": "p77r06",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l07",
+        "B": "p77-l07"
+      },
+      "canonicalRow": "p77r07",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l07",
+        "B": "p77-l07"
+      },
+      "canonicalRow": "p77r07",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l09",
+        "B": "p77-l09"
+      },
+      "canonicalRow": "p77r09",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l09",
+        "B": "p77-l09"
+      },
+      "canonicalRow": "p77r09",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l09",
+        "B": "p77-l09"
+      },
+      "canonicalRow": "p77r09",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l11",
+        "B": "p77-l11"
+      },
+      "canonicalRow": "p77r11",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l16",
+        "B": "p77-l16"
+      },
+      "canonicalRow": "p77r16",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l16",
+        "B": "p77-l16"
+      },
+      "canonicalRow": "p77r16",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l16",
+        "B": "p77-l16"
+      },
+      "canonicalRow": "p77r16",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l17",
+        "B": "p77-l17"
+      },
+      "canonicalRow": "p77r17",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l17",
+        "B": "p77-l17"
+      },
+      "canonicalRow": "p77r17",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l18",
+        "B": "p77-l18"
+      },
+      "canonicalRow": "p77r18",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l18",
+        "B": "p77-l18"
+      },
+      "canonicalRow": "p77r18",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l19",
+        "B": "p77-l19"
+      },
+      "canonicalRow": "p77r19",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l19",
+        "B": "p77-l19"
+      },
+      "canonicalRow": "p77r19",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l20",
+        "B": "p77-l20"
+      },
+      "canonicalRow": "p77r20",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l20",
+        "B": "p77-l20"
+      },
+      "canonicalRow": "p77r20",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l21",
+        "B": "p77-l21"
+      },
+      "canonicalRow": "p77r21",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l21",
+        "B": "p77-l21"
+      },
+      "canonicalRow": "p77r21",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l24",
+        "B": "p77-l24"
+      },
+      "canonicalRow": "p77r24",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l24",
+        "B": "p77-l24"
+      },
+      "canonicalRow": "p77r24",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 77,
+      "lowRows": {
+        "A": "p77-l28",
+        "B": "p77-l28"
+      },
+      "canonicalRow": "p77r28",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 78,
+      "lowRows": {
+        "A": "p78-l03",
+        "B": "p78-l03"
+      },
+      "canonicalRow": "p78r03",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 78,
+      "lowRows": {
+        "A": "p78-l07",
+        "B": "p78-l07"
+      },
+      "canonicalRow": "p78r07",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 78,
+      "lowRows": {
+        "A": "p78-l07",
+        "B": "p78-l07"
+      },
+      "canonicalRow": "p78r07",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 78,
+      "lowRows": {
+        "A": "p78-l09",
+        "B": "p78-l09"
+      },
+      "canonicalRow": "p78r09",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 78,
+      "lowRows": {
+        "A": "p78-l17",
+        "B": "p78-l17"
+      },
+      "canonicalRow": "p78r17",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 78,
+      "lowRows": {
+        "A": "p78-l18",
+        "B": "p78-l18"
+      },
+      "canonicalRow": "p78r18",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 78,
+      "lowRows": {
+        "A": "p78-l20",
+        "B": "p78-l20"
+      },
+      "canonicalRow": "p78r20",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 78,
+      "lowRows": {
+        "A": "p78-l20",
+        "B": "p78-l20"
+      },
+      "canonicalRow": "p78r20",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 78,
+      "lowRows": {
+        "A": "p78-l20",
+        "B": "p78-l20"
+      },
+      "canonicalRow": "p78r20",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l03",
+        "B": "p79-l03"
+      },
+      "canonicalRow": "p79r03",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l03",
+        "B": "p79-l03"
+      },
+      "canonicalRow": "p79r03",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l05",
+        "B": "p79-l05"
+      },
+      "canonicalRow": "p79r05",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l05",
+        "B": "p79-l05"
+      },
+      "canonicalRow": "p79r05",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l09",
+        "B": "p79-l09"
+      },
+      "canonicalRow": "p79r09",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l09",
+        "B": "p79-l09"
+      },
+      "canonicalRow": "p79r09",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l10",
+        "B": "p79-l10"
+      },
+      "canonicalRow": "p79r10",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l10",
+        "B": "p79-l10"
+      },
+      "canonicalRow": "p79r10",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l11",
+        "B": "p79-l11"
+      },
+      "canonicalRow": "p79r11",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l11",
+        "B": "p79-l11"
+      },
+      "canonicalRow": "p79r11",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l16",
+        "B": "p79-l16"
+      },
+      "canonicalRow": "p79r16",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l16",
+        "B": "p79-l16"
+      },
+      "canonicalRow": "p79r16",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l18",
+        "B": "p79-l18"
+      },
+      "canonicalRow": "p79r18",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l18",
+        "B": "p79-l18"
+      },
+      "canonicalRow": "p79r18",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l20",
+        "B": "p79-l20"
+      },
+      "canonicalRow": "p79r20",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l20",
+        "B": "p79-l20"
+      },
+      "canonicalRow": "p79r20",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l21",
+        "B": "p79-l21"
+      },
+      "canonicalRow": "p79r21",
+      "stage": "matched-row",
+      "reason": "paragraph-disagreement"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l21",
+        "B": "p79-l21"
+      },
+      "canonicalRow": "p79r21",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l21",
+        "B": "p79-l21"
+      },
+      "canonicalRow": "p79r21",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l24",
+        "B": "p79-l24"
+      },
+      "canonicalRow": "p79r24",
+      "stage": "matched-row",
+      "edge": "first",
+      "reason": "edge-disagreement-or-uncertainty"
+    },
+    {
+      "page": 79,
+      "lowRows": {
+        "A": "p79-l24",
+        "B": "p79-l24"
+      },
+      "canonicalRow": "p79r24",
+      "stage": "matched-row",
+      "edge": "last",
+      "reason": "edge-disagreement-or-uncertainty"
+    }
+  ],
+  "pages": [
+    {
+      "page": 75,
+      "counts": {
+        "lowA": 32,
+        "lowB": 32,
+        "canonical": 32,
+        "lowOptimalPairs": 32,
+        "lowForcedPairs": 32,
+        "highOptimalPairs": 30,
+        "highForcedPairs": 30,
+        "tentativeEdges": 0,
+        "ambiguities": 24
+      },
+      "lowForcedPairs": [
+        {
+          "A": "p75-l01",
+          "B": "p75-l01"
+        },
+        {
+          "A": "p75-l02",
+          "B": "p75-l02"
+        },
+        {
+          "A": "p75-l03",
+          "B": "p75-l03"
+        },
+        {
+          "A": "p75-l04",
+          "B": "p75-l04"
+        },
+        {
+          "A": "p75-l05",
+          "B": "p75-l05"
+        },
+        {
+          "A": "p75-l06",
+          "B": "p75-l06"
+        },
+        {
+          "A": "p75-l07",
+          "B": "p75-l07"
+        },
+        {
+          "A": "p75-l08",
+          "B": "p75-l08"
+        },
+        {
+          "A": "p75-l09",
+          "B": "p75-l09"
+        },
+        {
+          "A": "p75-l10",
+          "B": "p75-l10"
+        },
+        {
+          "A": "p75-l11",
+          "B": "p75-l11"
+        },
+        {
+          "A": "p75-l12",
+          "B": "p75-l12"
+        },
+        {
+          "A": "p75-l13",
+          "B": "p75-l13"
+        },
+        {
+          "A": "p75-l14",
+          "B": "p75-l14"
+        },
+        {
+          "A": "p75-l15",
+          "B": "p75-l15"
+        },
+        {
+          "A": "p75-l16",
+          "B": "p75-l16"
+        },
+        {
+          "A": "p75-l17",
+          "B": "p75-l17"
+        },
+        {
+          "A": "p75-l18",
+          "B": "p75-l18"
+        },
+        {
+          "A": "p75-l19",
+          "B": "p75-l19"
+        },
+        {
+          "A": "p75-l20",
+          "B": "p75-l20"
+        },
+        {
+          "A": "p75-l21",
+          "B": "p75-l21"
+        },
+        {
+          "A": "p75-l22",
+          "B": "p75-l22"
+        },
+        {
+          "A": "p75-l23",
+          "B": "p75-l23"
+        },
+        {
+          "A": "p75-l24",
+          "B": "p75-l24"
+        },
+        {
+          "A": "p75-l25",
+          "B": "p75-l25"
+        },
+        {
+          "A": "p75-l26",
+          "B": "p75-l26"
+        },
+        {
+          "A": "p75-l27",
+          "B": "p75-l27"
+        },
+        {
+          "A": "p75-l28",
+          "B": "p75-l28"
+        },
+        {
+          "A": "p75-l29",
+          "B": "p75-l29"
+        },
+        {
+          "A": "p75-l30",
+          "B": "p75-l30"
+        },
+        {
+          "A": "p75-l31",
+          "B": "p75-l31"
+        },
+        {
+          "A": "p75-l32",
+          "B": "p75-l32"
+        }
+      ],
+      "matchedRows": [
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l01",
+            "B": "p75-l01"
+          },
+          "canonicalRow": "p75r01",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                254,
+                428,
+                1298,
+                468
+              ],
+              "baseline": [
+                [
+                  260,
+                  457
+                ],
+                [
+                  1292,
+                  461
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                255,
+                421,
+                1295,
+                474
+              ],
+              "baseline": [
+                [
+                  261,
+                  458
+                ],
+                [
+                  1289,
+                  461
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l02",
+            "B": "p75-l02"
+          },
+          "canonicalRow": "p75r02",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                254,
+                487,
+                1337,
+                526
+              ],
+              "baseline": [
+                [
+                  260,
+                  516
+                ],
+                [
+                  1331,
+                  519
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                255,
+                480,
+                1331,
+                533
+              ],
+              "baseline": [
+                [
+                  261,
+                  517
+                ],
+                [
+                  1325,
+                  520
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l04",
+            "B": "p75-l04"
+          },
+          "canonicalRow": "p75r04",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                254,
+                662,
+                1420,
+                703
+              ],
+              "baseline": [
+                [
+                  260,
+                  690
+                ],
+                [
+                  1414,
+                  694
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                255,
+                654,
+                1414,
+                707
+              ],
+              "baseline": [
+                [
+                  261,
+                  691
+                ],
+                [
+                  1408,
+                  694
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l05",
+            "B": "p75-l05"
+          },
+          "canonicalRow": "p75r05",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                254,
+                720,
+                1561,
+                760
+              ],
+              "baseline": [
+                [
+                  260,
+                  748
+                ],
+                [
+                  1555,
+                  751
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                256,
+                711,
+                1555,
+                765
+              ],
+              "baseline": [
+                [
+                  262,
+                  748
+                ],
+                [
+                  1549,
+                  752
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l06",
+            "B": "p75-l06"
+          },
+          "canonicalRow": "p75r06",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                254,
+                779,
+                1624,
+                821
+              ],
+              "baseline": [
+                [
+                  260,
+                  806
+                ],
+                [
+                  1618,
+                  809
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                256,
+                770,
+                1622,
+                824
+              ],
+              "baseline": [
+                [
+                  262,
+                  807
+                ],
+                [
+                  1616,
+                  811
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l07",
+            "B": "p75-l07"
+          },
+          "canonicalRow": "p75r07",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                254,
+                836,
+                1574,
+                880
+              ],
+              "baseline": [
+                [
+                  260,
+                  866
+                ],
+                [
+                  1568,
+                  869
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                256,
+                830,
+                1568,
+                882
+              ],
+              "baseline": [
+                [
+                  262,
+                  867
+                ],
+                [
+                  1562,
+                  869
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l08",
+            "B": "p75-l08"
+          },
+          "canonicalRow": "p75r08",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                254,
+                894,
+                1523,
+                937
+              ],
+              "baseline": [
+                [
+                  260,
+                  923
+                ],
+                [
+                  1517,
+                  926
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                257,
+                886,
+                1518,
+                938
+              ],
+              "baseline": [
+                [
+                  263,
+                  923
+                ],
+                [
+                  1512,
+                  925
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l09",
+            "B": "p75-l09"
+          },
+          "canonicalRow": "p75r09",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                254,
+                952,
+                1472,
+                997
+              ],
+              "baseline": [
+                [
+                  260,
+                  981
+                ],
+                [
+                  1466,
+                  984
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                257,
+                944,
+                1459,
+                998
+              ],
+              "baseline": [
+                [
+                  263,
+                  981
+                ],
+                [
+                  1453,
+                  985
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l10",
+            "B": "p75-l10"
+          },
+          "canonicalRow": "p75r10",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                254,
+                1009,
+                1584,
+                1056
+              ],
+              "baseline": [
+                [
+                  260,
+                  1040
+                ],
+                [
+                  1578,
+                  1042
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                257,
+                1003,
+                1581,
+                1055
+              ],
+              "baseline": [
+                [
+                  263,
+                  1040
+                ],
+                [
+                  1575,
+                  1042
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l11",
+            "B": "p75-l11"
+          },
+          "canonicalRow": "p75r11",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                254,
+                1068,
+                1610,
+                1112
+              ],
+              "baseline": [
+                [
+                  260,
+                  1097
+                ],
+                [
+                  1604,
+                  1100
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                257,
+                1061,
+                1606,
+                1114
+              ],
+              "baseline": [
+                [
+                  263,
+                  1098
+                ],
+                [
+                  1600,
+                  1101
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l12",
+            "B": "p75-l12"
+          },
+          "canonicalRow": "p75r12",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                254,
+                1126,
+                1333,
+                1169
+              ],
+              "baseline": [
+                [
+                  260,
+                  1156
+                ],
+                [
+                  1327,
+                  1158
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                257,
+                1119,
+                1329,
+                1172
+              ],
+              "baseline": [
+                [
+                  263,
+                  1156
+                ],
+                [
+                  1323,
+                  1159
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l13",
+            "B": "p75-l13"
+          },
+          "canonicalRow": "p75r13",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                329,
+                1223,
+                1575,
+                1266
+              ],
+              "baseline": [
+                [
+                  335,
+                  1252
+                ],
+                [
+                  1569,
+                  1255
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                333,
+                1216,
+                1569,
+                1269
+              ],
+              "baseline": [
+                [
+                  339,
+                  1253
+                ],
+                [
+                  1563,
+                  1256
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l14",
+            "B": "p75-l14"
+          },
+          "canonicalRow": "p75r14",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                329,
+                1281,
+                1573,
+                1324
+              ],
+              "baseline": [
+                [
+                  335,
+                  1311
+                ],
+                [
+                  1567,
+                  1314
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                333,
+                1274,
+                1569,
+                1327
+              ],
+              "baseline": [
+                [
+                  339,
+                  1311
+                ],
+                [
+                  1563,
+                  1314
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l15",
+            "B": "p75-l15"
+          },
+          "canonicalRow": "p75r15",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                329,
+                1339,
+                1583,
+                1379
+              ],
+              "baseline": [
+                [
+                  335,
+                  1369
+                ],
+                [
+                  1577,
+                  1372
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                333,
+                1332,
+                1579,
+                1385
+              ],
+              "baseline": [
+                [
+                  339,
+                  1369
+                ],
+                [
+                  1573,
+                  1372
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l16",
+            "B": "p75-l16"
+          },
+          "canonicalRow": "p75r16",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                329,
+                1398,
+                1480,
+                1441
+              ],
+              "baseline": [
+                [
+                  335,
+                  1427
+                ],
+                [
+                  1474,
+                  1430
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                333,
+                1390,
+                1475,
+                1443
+              ],
+              "baseline": [
+                [
+                  339,
+                  1427
+                ],
+                [
+                  1469,
+                  1430
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l17",
+            "B": "p75-l17"
+          },
+          "canonicalRow": "p75r17",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                329,
+                1456,
+                1149,
+                1500
+              ],
+              "baseline": [
+                [
+                  335,
+                  1485
+                ],
+                [
+                  1143,
+                  1488
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                333,
+                1448,
+                1145,
+                1501
+              ],
+              "baseline": [
+                [
+                  339,
+                  1485
+                ],
+                [
+                  1139,
+                  1488
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l18",
+            "B": "p75-l18"
+          },
+          "canonicalRow": "p75r18",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                332,
+                1514,
+                1323,
+                1557
+              ],
+              "baseline": [
+                [
+                  338,
+                  1544
+                ],
+                [
+                  1317,
+                  1548
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                333,
+                1506,
+                1311,
+                1560
+              ],
+              "baseline": [
+                [
+                  339,
+                  1543
+                ],
+                [
+                  1305,
+                  1547
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l19",
+            "B": "p75-l19"
+          },
+          "canonicalRow": "p75r19",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                496,
+                1572,
+                1344,
+                1616
+              ],
+              "baseline": [
+                [
+                  502,
+                  1602
+                ],
+                [
+                  1338,
+                  1606
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                498,
+                1564,
+                1332,
+                1618
+              ],
+              "baseline": [
+                [
+                  504,
+                  1601
+                ],
+                [
+                  1326,
+                  1605
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l20",
+            "B": "p75-l20"
+          },
+          "canonicalRow": "p75r20",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                330,
+                1630,
+                1491,
+                1673
+              ],
+              "baseline": [
+                [
+                  336,
+                  1659
+                ],
+                [
+                  1485,
+                  1663
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                333,
+                1623,
+                1488,
+                1677
+              ],
+              "baseline": [
+                [
+                  339,
+                  1660
+                ],
+                [
+                  1482,
+                  1664
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l21",
+            "B": "p75-l21"
+          },
+          "canonicalRow": "p75r21",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                330,
+                1689,
+                1528,
+                1731
+              ],
+              "baseline": [
+                [
+                  336,
+                  1717
+                ],
+                [
+                  1522,
+                  1720
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                333,
+                1681,
+                1524,
+                1734
+              ],
+              "baseline": [
+                [
+                  339,
+                  1718
+                ],
+                [
+                  1518,
+                  1721
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l22",
+            "B": "p75-l22"
+          },
+          "canonicalRow": "p75r22",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                331,
+                1747,
+                1423,
+                1791
+              ],
+              "baseline": [
+                [
+                  337,
+                  1777
+                ],
+                [
+                  1417,
+                  1779
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                334,
+                1739,
+                1416,
+                1792
+              ],
+              "baseline": [
+                [
+                  340,
+                  1776
+                ],
+                [
+                  1410,
+                  1779
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l23",
+            "B": "p75-l23"
+          },
+          "canonicalRow": "p75r23",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                331,
+                1805,
+                1385,
+                1846
+              ],
+              "baseline": [
+                [
+                  337,
+                  1833
+                ],
+                [
+                  1379,
+                  1837
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                334,
+                1797,
+                1380,
+                1849
+              ],
+              "baseline": [
+                [
+                  340,
+                  1834
+                ],
+                [
+                  1374,
+                  1836
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l24",
+            "B": "p75-l24"
+          },
+          "canonicalRow": "p75r24",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                333,
+                1863,
+                896,
+                1906
+              ],
+              "baseline": [
+                [
+                  339,
+                  1892
+                ],
+                [
+                  890,
+                  1894
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                334,
+                1855,
+                885,
+                1909
+              ],
+              "baseline": [
+                [
+                  340,
+                  1892
+                ],
+                [
+                  879,
+                  1896
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l26",
+            "B": "p75-l26"
+          },
+          "canonicalRow": "p75r26",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                332,
+                1974,
+                1018,
+                2020
+              ],
+              "baseline": [
+                [
+                  338,
+                  2009
+                ],
+                [
+                  1012,
+                  2012
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                334,
+                1971,
+                1012,
+                2024
+              ],
+              "baseline": [
+                [
+                  340,
+                  2008
+                ],
+                [
+                  1006,
+                  2011
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l27",
+            "B": "p75-l27"
+          },
+          "canonicalRow": "p75r27",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                332,
+                2031,
+                1194,
+                2077
+              ],
+              "baseline": [
+                [
+                  338,
+                  2060
+                ],
+                [
+                  1188,
+                  2069
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                334,
+                2025,
+                1190,
+                2082
+              ],
+              "baseline": [
+                [
+                  340,
+                  2062
+                ],
+                [
+                  1184,
+                  2069
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l28",
+            "B": "p75-l28"
+          },
+          "canonicalRow": "p75r28",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                333,
+                2092,
+                1315,
+                2138
+              ],
+              "baseline": [
+                [
+                  339,
+                  2123
+                ],
+                [
+                  1309,
+                  2128
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                336,
+                2086,
+                1310,
+                2141
+              ],
+              "baseline": [
+                [
+                  342,
+                  2123
+                ],
+                [
+                  1304,
+                  2128
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l29",
+            "B": "p75-l29"
+          },
+          "canonicalRow": "p75r29",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                332,
+                2151,
+                1355,
+                2194
+              ],
+              "baseline": [
+                [
+                  338,
+                  2181
+                ],
+                [
+                  1349,
+                  2185
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                336,
+                2145,
+                1350,
+                2197
+              ],
+              "baseline": [
+                [
+                  342,
+                  2182
+                ],
+                [
+                  1344,
+                  2184
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l30",
+            "B": "p75-l30"
+          },
+          "canonicalRow": "p75r30",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                332,
+                2209,
+                1418,
+                2252
+              ],
+              "baseline": [
+                [
+                  338,
+                  2238
+                ],
+                [
+                  1412,
+                  2243
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                336,
+                2203,
+                1413,
+                2257
+              ],
+              "baseline": [
+                [
+                  342,
+                  2240
+                ],
+                [
+                  1407,
+                  2244
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l31",
+            "B": "p75-l31"
+          },
+          "canonicalRow": "p75r31",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                332,
+                2268,
+                1358,
+                2309
+              ],
+              "baseline": [
+                [
+                  338,
+                  2298
+                ],
+                [
+                  1352,
+                  2301
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                336,
+                2262,
+                1352,
+                2314
+              ],
+              "baseline": [
+                [
+                  342,
+                  2299
+                ],
+                [
+                  1346,
+                  2301
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l32",
+            "B": "p75-l32"
+          },
+          "canonicalRow": "p75r32",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                332,
+                2328,
+                1260,
+                2370
+              ],
+              "baseline": [
+                [
+                  338,
+                  2355
+                ],
+                [
+                  1254,
+                  2360
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                336,
+                2319,
+                1255,
+                2373
+              ],
+              "baseline": [
+                [
+                  342,
+                  2356
+                ],
+                [
+                  1249,
+                  2360
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        }
+      ],
+      "shortRowCandidates": [
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l03",
+            "B": "p75-l03"
+          },
+          "possibleCanonicalRows": [
+            "p75r03"
+          ]
+        },
+        {
+          "page": 75,
+          "lowRows": {
+            "A": "p75-l25",
+            "B": "p75-l25"
+          },
+          "possibleCanonicalRows": [
+            "p75r25"
+          ]
+        }
+      ]
+    },
+    {
+      "page": 76,
+      "counts": {
+        "lowA": 31,
+        "lowB": 31,
+        "canonical": 31,
+        "lowOptimalPairs": 31,
+        "lowForcedPairs": 31,
+        "highOptimalPairs": 30,
+        "highForcedPairs": 30,
+        "tentativeEdges": 0,
+        "ambiguities": 17
+      },
+      "lowForcedPairs": [
+        {
+          "A": "p76-l01",
+          "B": "p76-l01"
+        },
+        {
+          "A": "p76-l02",
+          "B": "p76-l02"
+        },
+        {
+          "A": "p76-l03",
+          "B": "p76-l03"
+        },
+        {
+          "A": "p76-l04",
+          "B": "p76-l04"
+        },
+        {
+          "A": "p76-l05",
+          "B": "p76-l05"
+        },
+        {
+          "A": "p76-l06",
+          "B": "p76-l06"
+        },
+        {
+          "A": "p76-l07",
+          "B": "p76-l07"
+        },
+        {
+          "A": "p76-l08",
+          "B": "p76-l08"
+        },
+        {
+          "A": "p76-l09",
+          "B": "p76-l09"
+        },
+        {
+          "A": "p76-l10",
+          "B": "p76-l10"
+        },
+        {
+          "A": "p76-l11",
+          "B": "p76-l11"
+        },
+        {
+          "A": "p76-l12",
+          "B": "p76-l12"
+        },
+        {
+          "A": "p76-l13",
+          "B": "p76-l13"
+        },
+        {
+          "A": "p76-l14",
+          "B": "p76-l14"
+        },
+        {
+          "A": "p76-l15",
+          "B": "p76-l15"
+        },
+        {
+          "A": "p76-l16",
+          "B": "p76-l16"
+        },
+        {
+          "A": "p76-l17",
+          "B": "p76-l17"
+        },
+        {
+          "A": "p76-l18",
+          "B": "p76-l18"
+        },
+        {
+          "A": "p76-l19",
+          "B": "p76-l19"
+        },
+        {
+          "A": "p76-l20",
+          "B": "p76-l20"
+        },
+        {
+          "A": "p76-l21",
+          "B": "p76-l21"
+        },
+        {
+          "A": "p76-l22",
+          "B": "p76-l22"
+        },
+        {
+          "A": "p76-l23",
+          "B": "p76-l23"
+        },
+        {
+          "A": "p76-l24",
+          "B": "p76-l24"
+        },
+        {
+          "A": "p76-l25",
+          "B": "p76-l25"
+        },
+        {
+          "A": "p76-l26",
+          "B": "p76-l26"
+        },
+        {
+          "A": "p76-l27",
+          "B": "p76-l27"
+        },
+        {
+          "A": "p76-l28",
+          "B": "p76-l28"
+        },
+        {
+          "A": "p76-l29",
+          "B": "p76-l29"
+        },
+        {
+          "A": "p76-l30",
+          "B": "p76-l30"
+        },
+        {
+          "A": "p76-l31",
+          "B": "p76-l31"
+        }
+      ],
+      "matchedRows": [
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l01",
+            "B": "p76-l01"
+          },
+          "canonicalRow": "p76r01",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                631,
+                275,
+                1767,
+                324
+              ],
+              "baseline": [
+                [
+                  637,
+                  310
+                ],
+                [
+                  1761,
+                  305
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                635,
+                266,
+                1762,
+                322
+              ],
+              "baseline": [
+                [
+                  641,
+                  309
+                ],
+                [
+                  1756,
+                  303
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l02",
+            "B": "p76-l02"
+          },
+          "canonicalRow": "p76r02",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                635,
+                332,
+                1764,
+                381
+              ],
+              "baseline": [
+                [
+                  641,
+                  369
+                ],
+                [
+                  1758,
+                  362
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                638,
+                325,
+                1761,
+                381
+              ],
+              "baseline": [
+                [
+                  644,
+                  368
+                ],
+                [
+                  1755,
+                  362
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l03",
+            "B": "p76-l03"
+          },
+          "canonicalRow": "p76r03",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                625,
+                392,
+                1769,
+                435
+              ],
+              "baseline": [
+                [
+                  631,
+                  426
+                ],
+                [
+                  1763,
+                  420
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                630,
+                382,
+                1763,
+                439
+              ],
+              "baseline": [
+                [
+                  636,
+                  426
+                ],
+                [
+                  1757,
+                  419
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l04",
+            "B": "p76-l04"
+          },
+          "canonicalRow": "p76r04",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                567,
+                450,
+                1771,
+                491
+              ],
+              "baseline": [
+                [
+                  573,
+                  483
+                ],
+                [
+                  1765,
+                  480
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                570,
+                442,
+                1767,
+                496
+              ],
+              "baseline": [
+                [
+                  576,
+                  483
+                ],
+                [
+                  1761,
+                  479
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l05",
+            "B": "p76-l05"
+          },
+          "canonicalRow": "p76r05",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                511,
+                509,
+                1776,
+                550
+              ],
+              "baseline": [
+                [
+                  517,
+                  539
+                ],
+                [
+                  1770,
+                  540
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                515,
+                501,
+                1773,
+                552
+              ],
+              "baseline": [
+                [
+                  521,
+                  538
+                ],
+                [
+                  1767,
+                  539
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l06",
+            "B": "p76-l06"
+          },
+          "canonicalRow": "p76r06",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                685,
+                567,
+                1776,
+                609
+              ],
+              "baseline": [
+                [
+                  691,
+                  597
+                ],
+                [
+                  1770,
+                  598
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                687,
+                560,
+                1772,
+                610
+              ],
+              "baseline": [
+                [
+                  693,
+                  597
+                ],
+                [
+                  1766,
+                  597
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l07",
+            "B": "p76-l07"
+          },
+          "canonicalRow": "p76r07",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                556,
+                644,
+                1777,
+                690
+              ],
+              "baseline": [
+                [
+                  562,
+                  675
+                ],
+                [
+                  1771,
+                  675
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                560,
+                637,
+                1771,
+                688
+              ],
+              "baseline": [
+                [
+                  566,
+                  674
+                ],
+                [
+                  1765,
+                  675
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l08",
+            "B": "p76-l08"
+          },
+          "canonicalRow": "p76r08",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                455,
+                701,
+                1778,
+                748
+              ],
+              "baseline": [
+                [
+                  461,
+                  733
+                ],
+                [
+                  1772,
+                  733
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                458,
+                694,
+                1772,
+                745
+              ],
+              "baseline": [
+                [
+                  464,
+                  731
+                ],
+                [
+                  1766,
+                  732
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l09",
+            "B": "p76-l09"
+          },
+          "canonicalRow": "p76r09",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                472,
+                759,
+                1777,
+                803
+              ],
+              "baseline": [
+                [
+                  478,
+                  790
+                ],
+                [
+                  1771,
+                  791
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                476,
+                753,
+                1775,
+                804
+              ],
+              "baseline": [
+                [
+                  482,
+                  790
+                ],
+                [
+                  1769,
+                  791
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l10",
+            "B": "p76-l10"
+          },
+          "canonicalRow": "p76r10",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                855,
+                818,
+                1776,
+                859
+              ],
+              "baseline": [
+                [
+                  861,
+                  850
+                ],
+                [
+                  1770,
+                  850
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                860,
+                811,
+                1774,
+                863
+              ],
+              "baseline": [
+                [
+                  866,
+                  848
+                ],
+                [
+                  1768,
+                  850
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l11",
+            "B": "p76-l11"
+          },
+          "canonicalRow": "p76r11",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                416,
+                877,
+                1494,
+                918
+              ],
+              "baseline": [
+                [
+                  422,
+                  906
+                ],
+                [
+                  1488,
+                  909
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                419,
+                869,
+                1490,
+                921
+              ],
+              "baseline": [
+                [
+                  425,
+                  906
+                ],
+                [
+                  1484,
+                  908
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l12",
+            "B": "p76-l12"
+          },
+          "canonicalRow": "p76r12",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                532,
+                936,
+                1494,
+                976
+              ],
+              "baseline": [
+                [
+                  538,
+                  965
+                ],
+                [
+                  1488,
+                  967
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                538,
+                928,
+                1490,
+                979
+              ],
+              "baseline": [
+                [
+                  544,
+                  965
+                ],
+                [
+                  1484,
+                  966
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l13",
+            "B": "p76-l13"
+          },
+          "canonicalRow": "p76r13",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                380,
+                993,
+                1493,
+                1035
+              ],
+              "baseline": [
+                [
+                  386,
+                  1022
+                ],
+                [
+                  1487,
+                  1026
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                383,
+                985,
+                1489,
+                1037
+              ],
+              "baseline": [
+                [
+                  389,
+                  1022
+                ],
+                [
+                  1483,
+                  1024
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l14",
+            "B": "p76-l14"
+          },
+          "canonicalRow": "p76r14",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                340,
+                1049,
+                1494,
+                1097
+              ],
+              "baseline": [
+                [
+                  346,
+                  1082
+                ],
+                [
+                  1488,
+                  1084
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                345,
+                1043,
+                1490,
+                1096
+              ],
+              "baseline": [
+                [
+                  351,
+                  1080
+                ],
+                [
+                  1484,
+                  1083
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l15",
+            "B": "p76-l15"
+          },
+          "canonicalRow": "p76r15",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                459,
+                1110,
+                1494,
+                1152
+              ],
+              "baseline": [
+                [
+                  465,
+                  1139
+                ],
+                [
+                  1488,
+                  1141
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                464,
+                1102,
+                1489,
+                1154
+              ],
+              "baseline": [
+                [
+                  470,
+                  1139
+                ],
+                [
+                  1483,
+                  1141
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l16",
+            "B": "p76-l16"
+          },
+          "canonicalRow": "p76r16",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                436,
+                1168,
+                1493,
+                1213
+              ],
+              "baseline": [
+                [
+                  442,
+                  1197
+                ],
+                [
+                  1487,
+                  1200
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                440,
+                1161,
+                1490,
+                1213
+              ],
+              "baseline": [
+                [
+                  446,
+                  1198
+                ],
+                [
+                  1484,
+                  1200
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l17",
+            "B": "p76-l17"
+          },
+          "canonicalRow": "p76r17",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                581,
+                1227,
+                1493,
+                1269
+              ],
+              "baseline": [
+                [
+                  587,
+                  1256
+                ],
+                [
+                  1487,
+                  1258
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                586,
+                1219,
+                1490,
+                1271
+              ],
+              "baseline": [
+                [
+                  592,
+                  1256
+                ],
+                [
+                  1484,
+                  1258
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l19",
+            "B": "p76-l19"
+          },
+          "canonicalRow": "p76r19",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                342,
+                1593,
+                1173,
+                1633
+              ],
+              "baseline": [
+                [
+                  348,
+                  1623
+                ],
+                [
+                  1167,
+                  1625
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                346,
+                1586,
+                1172,
+                1638
+              ],
+              "baseline": [
+                [
+                  352,
+                  1623
+                ],
+                [
+                  1166,
+                  1625
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l20",
+            "B": "p76-l20"
+          },
+          "canonicalRow": "p76r20",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                341,
+                1651,
+                1466,
+                1693
+              ],
+              "baseline": [
+                [
+                  347,
+                  1682
+                ],
+                [
+                  1460,
+                  1684
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                345,
+                1644,
+                1464,
+                1696
+              ],
+              "baseline": [
+                [
+                  351,
+                  1681
+                ],
+                [
+                  1458,
+                  1683
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l21",
+            "B": "p76-l21"
+          },
+          "canonicalRow": "p76r21",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                342,
+                1710,
+                1447,
+                1756
+              ],
+              "baseline": [
+                [
+                  348,
+                  1739
+                ],
+                [
+                  1441,
+                  1742
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                347,
+                1702,
+                1445,
+                1754
+              ],
+              "baseline": [
+                [
+                  353,
+                  1739
+                ],
+                [
+                  1439,
+                  1741
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l22",
+            "B": "p76-l22"
+          },
+          "canonicalRow": "p76r22",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                342,
+                1767,
+                1390,
+                1810
+              ],
+              "baseline": [
+                [
+                  348,
+                  1798
+                ],
+                [
+                  1384,
+                  1800
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                347,
+                1760,
+                1387,
+                1813
+              ],
+              "baseline": [
+                [
+                  353,
+                  1797
+                ],
+                [
+                  1381,
+                  1800
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l23",
+            "B": "p76-l23"
+          },
+          "canonicalRow": "p76r23",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                342,
+                1826,
+                1299,
+                1868
+              ],
+              "baseline": [
+                [
+                  348,
+                  1855
+                ],
+                [
+                  1293,
+                  1857
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                346,
+                1818,
+                1297,
+                1870
+              ],
+              "baseline": [
+                [
+                  352,
+                  1855
+                ],
+                [
+                  1291,
+                  1857
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l24",
+            "B": "p76-l24"
+          },
+          "canonicalRow": "p76r24",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                342,
+                1883,
+                1179,
+                1929
+              ],
+              "baseline": [
+                [
+                  348,
+                  1915
+                ],
+                [
+                  1173,
+                  1917
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                347,
+                1877,
+                1177,
+                1928
+              ],
+              "baseline": [
+                [
+                  353,
+                  1914
+                ],
+                [
+                  1171,
+                  1915
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l25",
+            "B": "p76-l25"
+          },
+          "canonicalRow": "p76r25",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                342,
+                1942,
+                1148,
+                1985
+              ],
+              "baseline": [
+                [
+                  348,
+                  1972
+                ],
+                [
+                  1142,
+                  1974
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                346,
+                1935,
+                1146,
+                1987
+              ],
+              "baseline": [
+                [
+                  352,
+                  1972
+                ],
+                [
+                  1140,
+                  1974
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l26",
+            "B": "p76-l26"
+          },
+          "canonicalRow": "p76r26",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                342,
+                2000,
+                1324,
+                2047
+              ],
+              "baseline": [
+                [
+                  348,
+                  2030
+                ],
+                [
+                  1318,
+                  2032
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                345,
+                1994,
+                1322,
+                2045
+              ],
+              "baseline": [
+                [
+                  351,
+                  2031
+                ],
+                [
+                  1316,
+                  2032
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l27",
+            "B": "p76-l27"
+          },
+          "canonicalRow": "p76r27",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                342,
+                2058,
+                1269,
+                2100
+              ],
+              "baseline": [
+                [
+                  348,
+                  2088
+                ],
+                [
+                  1263,
+                  2090
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                346,
+                2051,
+                1266,
+                2104
+              ],
+              "baseline": [
+                [
+                  352,
+                  2088
+                ],
+                [
+                  1260,
+                  2091
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l28",
+            "B": "p76-l28"
+          },
+          "canonicalRow": "p76r28",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                342,
+                2115,
+                1260,
+                2157
+              ],
+              "baseline": [
+                [
+                  348,
+                  2145
+                ],
+                [
+                  1254,
+                  2148
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                347,
+                2109,
+                1258,
+                2161
+              ],
+              "baseline": [
+                [
+                  353,
+                  2146
+                ],
+                [
+                  1252,
+                  2148
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l29",
+            "B": "p76-l29"
+          },
+          "canonicalRow": "p76r29",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                342,
+                2173,
+                1297,
+                2215
+              ],
+              "baseline": [
+                [
+                  348,
+                  2203
+                ],
+                [
+                  1291,
+                  2206
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                347,
+                2167,
+                1295,
+                2219
+              ],
+              "baseline": [
+                [
+                  353,
+                  2204
+                ],
+                [
+                  1289,
+                  2206
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l30",
+            "B": "p76-l30"
+          },
+          "canonicalRow": "p76r30",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                343,
+                2232,
+                1288,
+                2275
+              ],
+              "baseline": [
+                [
+                  349,
+                  2262
+                ],
+                [
+                  1282,
+                  2265
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                347,
+                2225,
+                1286,
+                2277
+              ],
+              "baseline": [
+                [
+                  353,
+                  2262
+                ],
+                [
+                  1280,
+                  2264
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l31",
+            "B": "p76-l31"
+          },
+          "canonicalRow": "p76r31",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                343,
+                2303,
+                1336,
+                2356
+              ],
+              "baseline": [
+                [
+                  349,
+                  2339
+                ],
+                [
+                  1330,
+                  2342
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                348,
+                2303,
+                1333,
+                2356
+              ],
+              "baseline": [
+                [
+                  354,
+                  2340
+                ],
+                [
+                  1327,
+                  2343
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        }
+      ],
+      "shortRowCandidates": [
+        {
+          "page": 76,
+          "lowRows": {
+            "A": "p76-l18",
+            "B": "p76-l18"
+          },
+          "possibleCanonicalRows": [
+            "p76r18"
+          ]
+        }
+      ]
+    },
+    {
+      "page": 77,
+      "counts": {
+        "lowA": 32,
+        "lowB": 32,
+        "canonical": 32,
+        "lowOptimalPairs": 32,
+        "lowForcedPairs": 32,
+        "highOptimalPairs": 32,
+        "highForcedPairs": 32,
+        "tentativeEdges": 0,
+        "ambiguities": 26
+      },
+      "lowForcedPairs": [
+        {
+          "A": "p77-l01",
+          "B": "p77-l01"
+        },
+        {
+          "A": "p77-l02",
+          "B": "p77-l02"
+        },
+        {
+          "A": "p77-l03",
+          "B": "p77-l03"
+        },
+        {
+          "A": "p77-l04",
+          "B": "p77-l04"
+        },
+        {
+          "A": "p77-l05",
+          "B": "p77-l05"
+        },
+        {
+          "A": "p77-l06",
+          "B": "p77-l06"
+        },
+        {
+          "A": "p77-l07",
+          "B": "p77-l07"
+        },
+        {
+          "A": "p77-l08",
+          "B": "p77-l08"
+        },
+        {
+          "A": "p77-l09",
+          "B": "p77-l09"
+        },
+        {
+          "A": "p77-l10",
+          "B": "p77-l10"
+        },
+        {
+          "A": "p77-l11",
+          "B": "p77-l11"
+        },
+        {
+          "A": "p77-l12",
+          "B": "p77-l12"
+        },
+        {
+          "A": "p77-l13",
+          "B": "p77-l13"
+        },
+        {
+          "A": "p77-l14",
+          "B": "p77-l14"
+        },
+        {
+          "A": "p77-l15",
+          "B": "p77-l15"
+        },
+        {
+          "A": "p77-l16",
+          "B": "p77-l16"
+        },
+        {
+          "A": "p77-l17",
+          "B": "p77-l17"
+        },
+        {
+          "A": "p77-l18",
+          "B": "p77-l18"
+        },
+        {
+          "A": "p77-l19",
+          "B": "p77-l19"
+        },
+        {
+          "A": "p77-l20",
+          "B": "p77-l20"
+        },
+        {
+          "A": "p77-l21",
+          "B": "p77-l21"
+        },
+        {
+          "A": "p77-l22",
+          "B": "p77-l22"
+        },
+        {
+          "A": "p77-l23",
+          "B": "p77-l23"
+        },
+        {
+          "A": "p77-l24",
+          "B": "p77-l24"
+        },
+        {
+          "A": "p77-l25",
+          "B": "p77-l25"
+        },
+        {
+          "A": "p77-l26",
+          "B": "p77-l26"
+        },
+        {
+          "A": "p77-l27",
+          "B": "p77-l27"
+        },
+        {
+          "A": "p77-l28",
+          "B": "p77-l28"
+        },
+        {
+          "A": "p77-l29",
+          "B": "p77-l29"
+        },
+        {
+          "A": "p77-l30",
+          "B": "p77-l30"
+        },
+        {
+          "A": "p77-l31",
+          "B": "p77-l31"
+        },
+        {
+          "A": "p77-l32",
+          "B": "p77-l32"
+        }
+      ],
+      "matchedRows": [
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l01",
+            "B": "p77-l01"
+          },
+          "canonicalRow": "p77r01",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                279,
+                273,
+                1259,
+                340
+              ],
+              "baseline": [
+                [
+                  285,
+                  304
+                ],
+                [
+                  1253,
+                  328
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                281,
+                266,
+                1254,
+                343
+              ],
+              "baseline": [
+                [
+                  287,
+                  303
+                ],
+                [
+                  1248,
+                  330
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l02",
+            "B": "p77-l02"
+          },
+          "canonicalRow": "p77r02",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                277,
+                331,
+                1230,
+                395
+              ],
+              "baseline": [
+                [
+                  283,
+                  360
+                ],
+                [
+                  1224,
+                  386
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                282,
+                324,
+                1224,
+                399
+              ],
+              "baseline": [
+                [
+                  288,
+                  361
+                ],
+                [
+                  1218,
+                  386
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l03",
+            "B": "p77-l03"
+          },
+          "canonicalRow": "p77r03",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                277,
+                389,
+                1425,
+                459
+              ],
+              "baseline": [
+                [
+                  283,
+                  420
+                ],
+                [
+                  1419,
+                  449
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                280,
+                381,
+                1419,
+                462
+              ],
+              "baseline": [
+                [
+                  286,
+                  418
+                ],
+                [
+                  1413,
+                  449
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l04",
+            "B": "p77-l04"
+          },
+          "canonicalRow": "p77r04",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                274,
+                448,
+                1586,
+                520
+              ],
+              "baseline": [
+                [
+                  280,
+                  478
+                ],
+                [
+                  1580,
+                  512
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                278,
+                439,
+                1582,
+                523
+              ],
+              "baseline": [
+                [
+                  284,
+                  476
+                ],
+                [
+                  1576,
+                  510
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l05",
+            "B": "p77-l05"
+          },
+          "canonicalRow": "p77r05",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                273,
+                506,
+                1542,
+                583
+              ],
+              "baseline": [
+                [
+                  279,
+                  536
+                ],
+                [
+                  1536,
+                  569
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                278,
+                496,
+                1530,
+                581
+              ],
+              "baseline": [
+                [
+                  284,
+                  533
+                ],
+                [
+                  1524,
+                  568
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l06",
+            "B": "p77-l06"
+          },
+          "canonicalRow": "p77r06",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                271,
+                563,
+                1448,
+                639
+              ],
+              "baseline": [
+                [
+                  277,
+                  596
+                ],
+                [
+                  1442,
+                  627
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                275,
+                561,
+                1436,
+                638
+              ],
+              "baseline": [
+                [
+                  281,
+                  598
+                ],
+                [
+                  1430,
+                  625
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l07",
+            "B": "p77-l07"
+          },
+          "canonicalRow": "p77r07",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                271,
+                622,
+                1431,
+                696
+              ],
+              "baseline": [
+                [
+                  277,
+                  651
+                ],
+                [
+                  1425,
+                  683
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                275,
+                613,
+                1429,
+                693
+              ],
+              "baseline": [
+                [
+                  281,
+                  650
+                ],
+                [
+                  1423,
+                  680
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l08",
+            "B": "p77-l08"
+          },
+          "canonicalRow": "p77r08",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                966,
+                746,
+                1754,
+                807
+              ],
+              "baseline": [
+                [
+                  972,
+                  776
+                ],
+                [
+                  1748,
+                  796
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                969,
+                739,
+                1751,
+                807
+              ],
+              "baseline": [
+                [
+                  975,
+                  776
+                ],
+                [
+                  1745,
+                  794
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l09",
+            "B": "p77-l09"
+          },
+          "canonicalRow": "p77r09",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                658,
+                794,
+                1753,
+                860
+              ],
+              "baseline": [
+                [
+                  664,
+                  825
+                ],
+                [
+                  1747,
+                  852
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                661,
+                788,
+                1751,
+                865
+              ],
+              "baseline": [
+                [
+                  667,
+                  825
+                ],
+                [
+                  1745,
+                  852
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l10",
+            "B": "p77-l10"
+          },
+          "canonicalRow": "p77r10",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                664,
+                850,
+                1753,
+                918
+              ],
+              "baseline": [
+                [
+                  670,
+                  882
+                ],
+                [
+                  1747,
+                  909
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                668,
+                845,
+                1749,
+                920
+              ],
+              "baseline": [
+                [
+                  674,
+                  882
+                ],
+                [
+                  1743,
+                  907
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l11",
+            "B": "p77-l11"
+          },
+          "canonicalRow": "p77r11",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                658,
+                908,
+                1753,
+                977
+              ],
+              "baseline": [
+                [
+                  664,
+                  939
+                ],
+                [
+                  1747,
+                  967
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                661,
+                901,
+                1748,
+                977
+              ],
+              "baseline": [
+                [
+                  667,
+                  938
+                ],
+                [
+                  1742,
+                  964
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l12",
+            "B": "p77-l12"
+          },
+          "canonicalRow": "p77r12",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                643,
+                965,
+                1750,
+                1036
+              ],
+              "baseline": [
+                [
+                  649,
+                  995
+                ],
+                [
+                  1744,
+                  1024
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                647,
+                959,
+                1746,
+                1034
+              ],
+              "baseline": [
+                [
+                  653,
+                  996
+                ],
+                [
+                  1740,
+                  1021
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l13",
+            "B": "p77-l13"
+          },
+          "canonicalRow": "p77r13",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                648,
+                1021,
+                1748,
+                1088
+              ],
+              "baseline": [
+                [
+                  654,
+                  1054
+                ],
+                [
+                  1742,
+                  1080
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                651,
+                1014,
+                1745,
+                1092
+              ],
+              "baseline": [
+                [
+                  657,
+                  1051
+                ],
+                [
+                  1739,
+                  1079
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l14",
+            "B": "p77-l14"
+          },
+          "canonicalRow": "p77r14",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                667,
+                1077,
+                1748,
+                1150
+              ],
+              "baseline": [
+                [
+                  673,
+                  1109
+                ],
+                [
+                  1742,
+                  1138
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                673,
+                1071,
+                1744,
+                1148
+              ],
+              "baseline": [
+                [
+                  679,
+                  1108
+                ],
+                [
+                  1738,
+                  1135
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l15",
+            "B": "p77-l15"
+          },
+          "canonicalRow": "p77r15",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                787,
+                1138,
+                1748,
+                1201
+              ],
+              "baseline": [
+                [
+                  793,
+                  1171
+                ],
+                [
+                  1742,
+                  1193
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                791,
+                1134,
+                1742,
+                1206
+              ],
+              "baseline": [
+                [
+                  797,
+                  1171
+                ],
+                [
+                  1736,
+                  1193
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l16",
+            "B": "p77-l16"
+          },
+          "canonicalRow": "p77r16",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                825,
+                1197,
+                1745,
+                1266
+              ],
+              "baseline": [
+                [
+                  831,
+                  1229
+                ],
+                [
+                  1739,
+                  1255
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                829,
+                1177,
+                1741,
+                1265
+              ],
+              "baseline": [
+                [
+                  835,
+                  1228
+                ],
+                [
+                  1735,
+                  1252
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l17",
+            "B": "p77-l17"
+          },
+          "canonicalRow": "p77r17",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                932,
+                1354,
+                1440,
+                1408
+              ],
+              "baseline": [
+                [
+                  938,
+                  1388
+                ],
+                [
+                  1434,
+                  1400
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                937,
+                1350,
+                1437,
+                1413
+              ],
+              "baseline": [
+                [
+                  943,
+                  1387
+                ],
+                [
+                  1431,
+                  1400
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l18",
+            "B": "p77-l18"
+          },
+          "canonicalRow": "p77r18",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                665,
+                1404,
+                1706,
+                1473
+              ],
+              "baseline": [
+                [
+                  671,
+                  1437
+                ],
+                [
+                  1700,
+                  1462
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                668,
+                1402,
+                1703,
+                1475
+              ],
+              "baseline": [
+                [
+                  674,
+                  1439
+                ],
+                [
+                  1697,
+                  1462
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l19",
+            "B": "p77-l19"
+          },
+          "canonicalRow": "p77r19",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                664,
+                1463,
+                1706,
+                1530
+              ],
+              "baseline": [
+                [
+                  670,
+                  1497
+                ],
+                [
+                  1700,
+                  1521
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                667,
+                1458,
+                1703,
+                1533
+              ],
+              "baseline": [
+                [
+                  673,
+                  1495
+                ],
+                [
+                  1697,
+                  1520
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l20",
+            "B": "p77-l20"
+          },
+          "canonicalRow": "p77r20",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                641,
+                1520,
+                1727,
+                1591
+              ],
+              "baseline": [
+                [
+                  647,
+                  1555
+                ],
+                [
+                  1721,
+                  1580
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                646,
+                1517,
+                1720,
+                1593
+              ],
+              "baseline": [
+                [
+                  652,
+                  1554
+                ],
+                [
+                  1714,
+                  1580
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l21",
+            "B": "p77-l21"
+          },
+          "canonicalRow": "p77r21",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                680,
+                1579,
+                1687,
+                1649
+              ],
+              "baseline": [
+                [
+                  686,
+                  1612
+                ],
+                [
+                  1681,
+                  1638
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                685,
+                1576,
+                1680,
+                1649
+              ],
+              "baseline": [
+                [
+                  691,
+                  1613
+                ],
+                [
+                  1674,
+                  1636
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l22",
+            "B": "p77-l22"
+          },
+          "canonicalRow": "p77r22",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                625,
+                1736,
+                1735,
+                1803
+              ],
+              "baseline": [
+                [
+                  631,
+                  1767
+                ],
+                [
+                  1729,
+                  1796
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                627,
+                1729,
+                1729,
+                1807
+              ],
+              "baseline": [
+                [
+                  633,
+                  1766
+                ],
+                [
+                  1723,
+                  1794
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l23",
+            "B": "p77-l23"
+          },
+          "canonicalRow": "p77r23",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                622,
+                1793,
+                1733,
+                1862
+              ],
+              "baseline": [
+                [
+                  628,
+                  1825
+                ],
+                [
+                  1727,
+                  1853
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                626,
+                1787,
+                1728,
+                1865
+              ],
+              "baseline": [
+                [
+                  632,
+                  1824
+                ],
+                [
+                  1722,
+                  1852
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l24",
+            "B": "p77-l24"
+          },
+          "canonicalRow": "p77r24",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                622,
+                1847,
+                1730,
+                1919
+              ],
+              "baseline": [
+                [
+                  628,
+                  1883
+                ],
+                [
+                  1724,
+                  1910
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                626,
+                1845,
+                1727,
+                1922
+              ],
+              "baseline": [
+                [
+                  632,
+                  1882
+                ],
+                [
+                  1721,
+                  1909
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l25",
+            "B": "p77-l25"
+          },
+          "canonicalRow": "p77r25",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                620,
+                1914,
+                1730,
+                1978
+              ],
+              "baseline": [
+                [
+                  626,
+                  1941
+                ],
+                [
+                  1724,
+                  1968
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                624,
+                1905,
+                1726,
+                1981
+              ],
+              "baseline": [
+                [
+                  630,
+                  1942
+                ],
+                [
+                  1720,
+                  1968
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l26",
+            "B": "p77-l26"
+          },
+          "canonicalRow": "p77r26",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                620,
+                1970,
+                1730,
+                2037
+              ],
+              "baseline": [
+                [
+                  626,
+                  2000
+                ],
+                [
+                  1724,
+                  2028
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                623,
+                1962,
+                1725,
+                2039
+              ],
+              "baseline": [
+                [
+                  629,
+                  1999
+                ],
+                [
+                  1719,
+                  2026
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l27",
+            "B": "p77-l27"
+          },
+          "canonicalRow": "p77r27",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                617,
+                2025,
+                1728,
+                2097
+              ],
+              "baseline": [
+                [
+                  623,
+                  2058
+                ],
+                [
+                  1722,
+                  2084
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                621,
+                2020,
+                1724,
+                2097
+              ],
+              "baseline": [
+                [
+                  627,
+                  2057
+                ],
+                [
+                  1718,
+                  2084
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l28",
+            "B": "p77-l28"
+          },
+          "canonicalRow": "p77r28",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                618,
+                2087,
+                1727,
+                2153
+              ],
+              "baseline": [
+                [
+                  624,
+                  2116
+                ],
+                [
+                  1721,
+                  2142
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                621,
+                2079,
+                1723,
+                2156
+              ],
+              "baseline": [
+                [
+                  627,
+                  2116
+                ],
+                [
+                  1717,
+                  2143
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l29",
+            "B": "p77-l29"
+          },
+          "canonicalRow": "p77r29",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                615,
+                2143,
+                1725,
+                2211
+              ],
+              "baseline": [
+                [
+                  621,
+                  2175
+                ],
+                [
+                  1719,
+                  2201
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                619,
+                2135,
+                1722,
+                2214
+              ],
+              "baseline": [
+                [
+                  625,
+                  2172
+                ],
+                [
+                  1716,
+                  2201
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l30",
+            "B": "p77-l30"
+          },
+          "canonicalRow": "p77r30",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                615,
+                2202,
+                1725,
+                2268
+              ],
+              "baseline": [
+                [
+                  621,
+                  2233
+                ],
+                [
+                  1719,
+                  2259
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                619,
+                2195,
+                1721,
+                2273
+              ],
+              "baseline": [
+                [
+                  625,
+                  2232
+                ],
+                [
+                  1715,
+                  2260
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l31",
+            "B": "p77-l31"
+          },
+          "canonicalRow": "p77r31",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                614,
+                2261,
+                1723,
+                2326
+              ],
+              "baseline": [
+                [
+                  620,
+                  2292
+                ],
+                [
+                  1717,
+                  2314
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                617,
+                2253,
+                1720,
+                2331
+              ],
+              "baseline": [
+                [
+                  623,
+                  2290
+                ],
+                [
+                  1714,
+                  2318
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 77,
+          "lowRows": {
+            "A": "p77-l32",
+            "B": "p77-l32"
+          },
+          "canonicalRow": "p77r32",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                611,
+                2316,
+                1119,
+                2372
+              ],
+              "baseline": [
+                [
+                  617,
+                  2348
+                ],
+                [
+                  1113,
+                  2363
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                616,
+                2314,
+                1115,
+                2376
+              ],
+              "baseline": [
+                [
+                  622,
+                  2351
+                ],
+                [
+                  1109,
+                  2363
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        }
+      ],
+      "shortRowCandidates": []
+    },
+    {
+      "page": 78,
+      "counts": {
+        "lowA": 22,
+        "lowB": 22,
+        "canonical": 22,
+        "lowOptimalPairs": 22,
+        "lowForcedPairs": 22,
+        "highOptimalPairs": 22,
+        "highForcedPairs": 22,
+        "tentativeEdges": 0,
+        "ambiguities": 9
+      },
+      "lowForcedPairs": [
+        {
+          "A": "p78-l01",
+          "B": "p78-l01"
+        },
+        {
+          "A": "p78-l02",
+          "B": "p78-l02"
+        },
+        {
+          "A": "p78-l03",
+          "B": "p78-l03"
+        },
+        {
+          "A": "p78-l04",
+          "B": "p78-l04"
+        },
+        {
+          "A": "p78-l05",
+          "B": "p78-l05"
+        },
+        {
+          "A": "p78-l06",
+          "B": "p78-l06"
+        },
+        {
+          "A": "p78-l07",
+          "B": "p78-l07"
+        },
+        {
+          "A": "p78-l08",
+          "B": "p78-l08"
+        },
+        {
+          "A": "p78-l09",
+          "B": "p78-l09"
+        },
+        {
+          "A": "p78-l10",
+          "B": "p78-l10"
+        },
+        {
+          "A": "p78-l11",
+          "B": "p78-l11"
+        },
+        {
+          "A": "p78-l12",
+          "B": "p78-l12"
+        },
+        {
+          "A": "p78-l13",
+          "B": "p78-l13"
+        },
+        {
+          "A": "p78-l14",
+          "B": "p78-l14"
+        },
+        {
+          "A": "p78-l15",
+          "B": "p78-l15"
+        },
+        {
+          "A": "p78-l16",
+          "B": "p78-l16"
+        },
+        {
+          "A": "p78-l17",
+          "B": "p78-l17"
+        },
+        {
+          "A": "p78-l18",
+          "B": "p78-l18"
+        },
+        {
+          "A": "p78-l19",
+          "B": "p78-l19"
+        },
+        {
+          "A": "p78-l20",
+          "B": "p78-l20"
+        },
+        {
+          "A": "p78-l21",
+          "B": "p78-l21"
+        },
+        {
+          "A": "p78-l22",
+          "B": "p78-l22"
+        }
+      ],
+      "matchedRows": [
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l01",
+            "B": "p78-l01"
+          },
+          "canonicalRow": "p78r01",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                298,
+                278,
+                1047,
+                325
+              ],
+              "baseline": [
+                [
+                  304,
+                  308
+                ],
+                [
+                  1041,
+                  316
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                302,
+                270,
+                1045,
+                327
+              ],
+              "baseline": [
+                [
+                  308,
+                  307
+                ],
+                [
+                  1039,
+                  314
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l02",
+            "B": "p78-l02"
+          },
+          "canonicalRow": "p78r02",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                298,
+                336,
+                1128,
+                383
+              ],
+              "baseline": [
+                [
+                  304,
+                  365
+                ],
+                [
+                  1122,
+                  374
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                301,
+                328,
+                1124,
+                387
+              ],
+              "baseline": [
+                [
+                  307,
+                  365
+                ],
+                [
+                  1118,
+                  374
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l03",
+            "B": "p78-l03"
+          },
+          "canonicalRow": "p78r03",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                297,
+                394,
+                1157,
+                441
+              ],
+              "baseline": [
+                [
+                  303,
+                  423
+                ],
+                [
+                  1151,
+                  433
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                300,
+                385,
+                1154,
+                446
+              ],
+              "baseline": [
+                [
+                  306,
+                  422
+                ],
+                [
+                  1148,
+                  433
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l04",
+            "B": "p78-l04"
+          },
+          "canonicalRow": "p78r04",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                296,
+                453,
+                1140,
+                499
+              ],
+              "baseline": [
+                [
+                  302,
+                  482
+                ],
+                [
+                  1134,
+                  492
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                300,
+                443,
+                1137,
+                504
+              ],
+              "baseline": [
+                [
+                  306,
+                  480
+                ],
+                [
+                  1131,
+                  491
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l05",
+            "B": "p78-l05"
+          },
+          "canonicalRow": "p78r05",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                295,
+                510,
+                1256,
+                557
+              ],
+              "baseline": [
+                [
+                  301,
+                  540
+                ],
+                [
+                  1250,
+                  551
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                299,
+                502,
+                1251,
+                563
+              ],
+              "baseline": [
+                [
+                  305,
+                  539
+                ],
+                [
+                  1245,
+                  550
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l06",
+            "B": "p78-l06"
+          },
+          "canonicalRow": "p78r06",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                529,
+                627,
+                1653,
+                675
+              ],
+              "baseline": [
+                [
+                  535,
+                  659
+                ],
+                [
+                  1647,
+                  666
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                533,
+                619,
+                1651,
+                677
+              ],
+              "baseline": [
+                [
+                  539,
+                  656
+                ],
+                [
+                  1645,
+                  664
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l07",
+            "B": "p78-l07"
+          },
+          "canonicalRow": "p78r07",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                290,
+                683,
+                1653,
+                733
+              ],
+              "baseline": [
+                [
+                  296,
+                  713
+                ],
+                [
+                  1647,
+                  723
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                294,
+                675,
+                1650,
+                734
+              ],
+              "baseline": [
+                [
+                  300,
+                  712
+                ],
+                [
+                  1644,
+                  721
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l08",
+            "B": "p78-l08"
+          },
+          "canonicalRow": "p78r08",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                290,
+                742,
+                1319,
+                792
+              ],
+              "baseline": [
+                [
+                  296,
+                  771
+                ],
+                [
+                  1313,
+                  779
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                293,
+                734,
+                1317,
+                790
+              ],
+              "baseline": [
+                [
+                  299,
+                  771
+                ],
+                [
+                  1311,
+                  777
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l09",
+            "B": "p78-l09"
+          },
+          "canonicalRow": "p78r09",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                290,
+                799,
+                1670,
+                854
+              ],
+              "baseline": [
+                [
+                  296,
+                  829
+                ],
+                [
+                  1664,
+                  837
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                294,
+                792,
+                1651,
+                850
+              ],
+              "baseline": [
+                [
+                  300,
+                  829
+                ],
+                [
+                  1645,
+                  837
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l10",
+            "B": "p78-l10"
+          },
+          "canonicalRow": "p78r10",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                290,
+                857,
+                1653,
+                910
+              ],
+              "baseline": [
+                [
+                  296,
+                  888
+                ],
+                [
+                  1647,
+                  896
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                293,
+                849,
+                1651,
+                908
+              ],
+              "baseline": [
+                [
+                  299,
+                  886
+                ],
+                [
+                  1645,
+                  895
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l11",
+            "B": "p78-l11"
+          },
+          "canonicalRow": "p78r11",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                289,
+                916,
+                1651,
+                965
+              ],
+              "baseline": [
+                [
+                  295,
+                  945
+                ],
+                [
+                  1645,
+                  954
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                293,
+                909,
+                1650,
+                968
+              ],
+              "baseline": [
+                [
+                  299,
+                  946
+                ],
+                [
+                  1644,
+                  955
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l12",
+            "B": "p78-l12"
+          },
+          "canonicalRow": "p78r12",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                289,
+                974,
+                1687,
+                1027
+              ],
+              "baseline": [
+                [
+                  295,
+                  1004
+                ],
+                [
+                  1681,
+                  1011
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                293,
+                966,
+                1647,
+                1024
+              ],
+              "baseline": [
+                [
+                  299,
+                  1003
+                ],
+                [
+                  1641,
+                  1011
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l13",
+            "B": "p78-l13"
+          },
+          "canonicalRow": "p78r13",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                289,
+                1031,
+                1651,
+                1083
+              ],
+              "baseline": [
+                [
+                  295,
+                  1062
+                ],
+                [
+                  1645,
+                  1071
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                293,
+                1023,
+                1650,
+                1083
+              ],
+              "baseline": [
+                [
+                  299,
+                  1060
+                ],
+                [
+                  1644,
+                  1070
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l14",
+            "B": "p78-l14"
+          },
+          "canonicalRow": "p78r14",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                289,
+                1089,
+                1398,
+                1142
+              ],
+              "baseline": [
+                [
+                  295,
+                  1120
+                ],
+                [
+                  1392,
+                  1128
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                292,
+                1082,
+                1397,
+                1142
+              ],
+              "baseline": [
+                [
+                  298,
+                  1119
+                ],
+                [
+                  1391,
+                  1129
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l15",
+            "B": "p78-l15"
+          },
+          "canonicalRow": "p78r15",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                288,
+                1205,
+                1283,
+                1253
+              ],
+              "baseline": [
+                [
+                  294,
+                  1236
+                ],
+                [
+                  1277,
+                  1243
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                293,
+                1200,
+                1279,
+                1256
+              ],
+              "baseline": [
+                [
+                  299,
+                  1237
+                ],
+                [
+                  1273,
+                  1243
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l16",
+            "B": "p78-l16"
+          },
+          "canonicalRow": "p78r16",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                289,
+                1265,
+                1529,
+                1311
+              ],
+              "baseline": [
+                [
+                  295,
+                  1296
+                ],
+                [
+                  1523,
+                  1303
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                292,
+                1258,
+                1525,
+                1316
+              ],
+              "baseline": [
+                [
+                  298,
+                  1295
+                ],
+                [
+                  1519,
+                  1303
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l17",
+            "B": "p78-l17"
+          },
+          "canonicalRow": "p78r17",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                288,
+                1324,
+                1442,
+                1369
+              ],
+              "baseline": [
+                [
+                  294,
+                  1353
+                ],
+                [
+                  1436,
+                  1360
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                292,
+                1316,
+                1439,
+                1374
+              ],
+              "baseline": [
+                [
+                  298,
+                  1353
+                ],
+                [
+                  1433,
+                  1361
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l18",
+            "B": "p78-l18"
+          },
+          "canonicalRow": "p78r18",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                289,
+                1382,
+                1725,
+                1430
+              ],
+              "baseline": [
+                [
+                  295,
+                  1411
+                ],
+                [
+                  1719,
+                  1420
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                292,
+                1374,
+                1722,
+                1433
+              ],
+              "baseline": [
+                [
+                  298,
+                  1411
+                ],
+                [
+                  1716,
+                  1420
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l19",
+            "B": "p78-l19"
+          },
+          "canonicalRow": "p78r19",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                431,
+                1506,
+                1725,
+                1564
+              ],
+              "baseline": [
+                [
+                  437,
+                  1546
+                ],
+                [
+                  1719,
+                  1554
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                435,
+                1496,
+                1722,
+                1567
+              ],
+              "baseline": [
+                [
+                  441,
+                  1547
+                ],
+                [
+                  1716,
+                  1554
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l20",
+            "B": "p78-l20"
+          },
+          "canonicalRow": "p78r20",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                325,
+                1568,
+                1726,
+                1630
+              ],
+              "baseline": [
+                [
+                  331,
+                  1606
+                ],
+                [
+                  1720,
+                  1612
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                330,
+                1554,
+                1722,
+                1625
+              ],
+              "baseline": [
+                [
+                  336,
+                  1605
+                ],
+                [
+                  1716,
+                  1612
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l21",
+            "B": "p78-l21"
+          },
+          "canonicalRow": "p78r21",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                968,
+                1638,
+                1726,
+                1682
+              ],
+              "baseline": [
+                [
+                  974,
+                  1668
+                ],
+                [
+                  1720,
+                  1671
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                971,
+                1630,
+                1722,
+                1683
+              ],
+              "baseline": [
+                [
+                  977,
+                  1667
+                ],
+                [
+                  1716,
+                  1670
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 78,
+          "lowRows": {
+            "A": "p78-l22",
+            "B": "p78-l22"
+          },
+          "canonicalRow": "p78r22",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                1094,
+                1696,
+                1726,
+                1740
+              ],
+              "baseline": [
+                [
+                  1100,
+                  1726
+                ],
+                [
+                  1720,
+                  1728
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                1096,
+                1689,
+                1722,
+                1741
+              ],
+              "baseline": [
+                [
+                  1102,
+                  1726
+                ],
+                [
+                  1716,
+                  1728
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        }
+      ],
+      "shortRowCandidates": []
+    },
+    {
+      "page": 79,
+      "counts": {
+        "lowA": 25,
+        "lowB": 25,
+        "canonical": 25,
+        "lowOptimalPairs": 25,
+        "lowForcedPairs": 25,
+        "highOptimalPairs": 25,
+        "highForcedPairs": 25,
+        "tentativeEdges": 0,
+        "ambiguities": 21
+      },
+      "lowForcedPairs": [
+        {
+          "A": "p79-l01",
+          "B": "p79-l01"
+        },
+        {
+          "A": "p79-l02",
+          "B": "p79-l02"
+        },
+        {
+          "A": "p79-l03",
+          "B": "p79-l03"
+        },
+        {
+          "A": "p79-l04",
+          "B": "p79-l04"
+        },
+        {
+          "A": "p79-l05",
+          "B": "p79-l05"
+        },
+        {
+          "A": "p79-l06",
+          "B": "p79-l06"
+        },
+        {
+          "A": "p79-l07",
+          "B": "p79-l07"
+        },
+        {
+          "A": "p79-l08",
+          "B": "p79-l08"
+        },
+        {
+          "A": "p79-l09",
+          "B": "p79-l09"
+        },
+        {
+          "A": "p79-l10",
+          "B": "p79-l10"
+        },
+        {
+          "A": "p79-l11",
+          "B": "p79-l11"
+        },
+        {
+          "A": "p79-l12",
+          "B": "p79-l12"
+        },
+        {
+          "A": "p79-l13",
+          "B": "p79-l13"
+        },
+        {
+          "A": "p79-l14",
+          "B": "p79-l14"
+        },
+        {
+          "A": "p79-l15",
+          "B": "p79-l15"
+        },
+        {
+          "A": "p79-l16",
+          "B": "p79-l16"
+        },
+        {
+          "A": "p79-l17",
+          "B": "p79-l17"
+        },
+        {
+          "A": "p79-l18",
+          "B": "p79-l18"
+        },
+        {
+          "A": "p79-l19",
+          "B": "p79-l19"
+        },
+        {
+          "A": "p79-l20",
+          "B": "p79-l20"
+        },
+        {
+          "A": "p79-l21",
+          "B": "p79-l21"
+        },
+        {
+          "A": "p79-l22",
+          "B": "p79-l22"
+        },
+        {
+          "A": "p79-l23",
+          "B": "p79-l23"
+        },
+        {
+          "A": "p79-l24",
+          "B": "p79-l24"
+        },
+        {
+          "A": "p79-l25",
+          "B": "p79-l25"
+        }
+      ],
+      "matchedRows": [
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l01",
+            "B": "p79-l01"
+          },
+          "canonicalRow": "p79r01",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                427,
+                314,
+                1447,
+                377
+              ],
+              "baseline": [
+                [
+                  433,
+                  345
+                ],
+                [
+                  1441,
+                  365
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                428,
+                306,
+                1436,
+                375
+              ],
+              "baseline": [
+                [
+                  434,
+                  343
+                ],
+                [
+                  1430,
+                  362
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l02",
+            "B": "p79-l02"
+          },
+          "canonicalRow": "p79r02",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                408,
+                371,
+                1435,
+                427
+              ],
+              "baseline": [
+                [
+                  414,
+                  401
+                ],
+                [
+                  1429,
+                  419
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                410,
+                363,
+                1431,
+                431
+              ],
+              "baseline": [
+                [
+                  416,
+                  400
+                ],
+                [
+                  1425,
+                  418
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l03",
+            "B": "p79-l03"
+          },
+          "canonicalRow": "p79r03",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                387,
+                428,
+                1446,
+                491
+              ],
+              "baseline": [
+                [
+                  393,
+                  456
+                ],
+                [
+                  1440,
+                  478
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                389,
+                418,
+                1431,
+                488
+              ],
+              "baseline": [
+                [
+                  395,
+                  455
+                ],
+                [
+                  1425,
+                  475
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l04",
+            "B": "p79-l04"
+          },
+          "canonicalRow": "p79r04",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                367,
+                482,
+                1446,
+                549
+              ],
+              "baseline": [
+                [
+                  373,
+                  514
+                ],
+                [
+                  1440,
+                  535
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                372,
+                475,
+                1434,
+                547
+              ],
+              "baseline": [
+                [
+                  378,
+                  512
+                ],
+                [
+                  1428,
+                  534
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l05",
+            "B": "p79-l05"
+          },
+          "canonicalRow": "p79r05",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                402,
+                543,
+                1436,
+                600
+              ],
+              "baseline": [
+                [
+                  408,
+                  575
+                ],
+                [
+                  1430,
+                  592
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                405,
+                535,
+                1431,
+                606
+              ],
+              "baseline": [
+                [
+                  411,
+                  572
+                ],
+                [
+                  1425,
+                  593
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l06",
+            "B": "p79-l06"
+          },
+          "canonicalRow": "p79r06",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                412,
+                600,
+                1433,
+                658
+              ],
+              "baseline": [
+                [
+                  418,
+                  631
+                ],
+                [
+                  1427,
+                  650
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                416,
+                593,
+                1429,
+                661
+              ],
+              "baseline": [
+                [
+                  422,
+                  630
+                ],
+                [
+                  1423,
+                  648
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l07",
+            "B": "p79-l07"
+          },
+          "canonicalRow": "p79r07",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                381,
+                656,
+                1440,
+                718
+              ],
+              "baseline": [
+                [
+                  387,
+                  686
+                ],
+                [
+                  1434,
+                  705
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                384,
+                649,
+                1426,
+                716
+              ],
+              "baseline": [
+                [
+                  390,
+                  686
+                ],
+                [
+                  1420,
+                  703
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l08",
+            "B": "p79-l08"
+          },
+          "canonicalRow": "p79r08",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                378,
+                710,
+                1416,
+                768
+              ],
+              "baseline": [
+                [
+                  384,
+                  740
+                ],
+                [
+                  1410,
+                  760
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                383,
+                704,
+                1413,
+                773
+              ],
+              "baseline": [
+                [
+                  389,
+                  741
+                ],
+                [
+                  1407,
+                  760
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l09",
+            "B": "p79-l09"
+          },
+          "canonicalRow": "p79r09",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                296,
+                760,
+                1420,
+                816
+              ],
+              "baseline": [
+                [
+                  302,
+                  783
+                ],
+                [
+                  1414,
+                  810
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                299,
+                746,
+                1414,
+                823
+              ],
+              "baseline": [
+                [
+                  305,
+                  783
+                ],
+                [
+                  1408,
+                  810
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l10",
+            "B": "p79-l10"
+          },
+          "canonicalRow": "p79r10",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                377,
+                807,
+                1430,
+                868
+              ],
+              "baseline": [
+                [
+                  383,
+                  832
+                ],
+                [
+                  1424,
+                  862
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                380,
+                795,
+                1422,
+                877
+              ],
+              "baseline": [
+                [
+                  386,
+                  832
+                ],
+                [
+                  1416,
+                  864
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l11",
+            "B": "p79-l11"
+          },
+          "canonicalRow": "p79r11",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                365,
+                846,
+                1427,
+                929
+              ],
+              "baseline": [
+                [
+                  371,
+                  873
+                ],
+                [
+                  1421,
+                  921
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                368,
+                836,
+                1422,
+                935
+              ],
+              "baseline": [
+                [
+                  374,
+                  873
+                ],
+                [
+                  1416,
+                  922
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l12",
+            "B": "p79-l12"
+          },
+          "canonicalRow": "p79r12",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                359,
+                902,
+                1423,
+                987
+              ],
+              "baseline": [
+                [
+                  365,
+                  936
+                ],
+                [
+                  1417,
+                  979
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                364,
+                899,
+                1421,
+                994
+              ],
+              "baseline": [
+                [
+                  370,
+                  936
+                ],
+                [
+                  1415,
+                  981
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l13",
+            "B": "p79-l13"
+          },
+          "canonicalRow": "p79r13",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                366,
+                964,
+                1421,
+                1044
+              ],
+              "baseline": [
+                [
+                  372,
+                  996
+                ],
+                [
+                  1415,
+                  1036
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                372,
+                958,
+                1418,
+                1051
+              ],
+              "baseline": [
+                [
+                  378,
+                  995
+                ],
+                [
+                  1412,
+                  1038
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l14",
+            "B": "p79-l14"
+          },
+          "canonicalRow": "p79r14",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                373,
+                1024,
+                1422,
+                1101
+              ],
+              "baseline": [
+                [
+                  379,
+                  1052
+                ],
+                [
+                  1416,
+                  1094
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                376,
+                1017,
+                1418,
+                1107
+              ],
+              "baseline": [
+                [
+                  382,
+                  1054
+                ],
+                [
+                  1412,
+                  1094
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l15",
+            "B": "p79-l15"
+          },
+          "canonicalRow": "p79r15",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                291,
+                1080,
+                1421,
+                1160
+              ],
+              "baseline": [
+                [
+                  297,
+                  1113
+                ],
+                [
+                  1415,
+                  1153
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                293,
+                1074,
+                1417,
+                1164
+              ],
+              "baseline": [
+                [
+                  299,
+                  1111
+                ],
+                [
+                  1411,
+                  1151
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l16",
+            "B": "p79-l16"
+          },
+          "canonicalRow": "p79r16",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                414,
+                1144,
+                1448,
+                1230
+              ],
+              "baseline": [
+                [
+                  420,
+                  1177
+                ],
+                [
+                  1442,
+                  1218
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                418,
+                1140,
+                1445,
+                1229
+              ],
+              "baseline": [
+                [
+                  424,
+                  1177
+                ],
+                [
+                  1439,
+                  1216
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l17",
+            "B": "p79-l17"
+          },
+          "canonicalRow": "p79r17",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                506,
+                1400,
+                1401,
+                1463
+              ],
+              "baseline": [
+                [
+                  512,
+                  1452
+                ],
+                [
+                  1395,
+                  1433
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                507,
+                1393,
+                1398,
+                1464
+              ],
+              "baseline": [
+                [
+                  513,
+                  1451
+                ],
+                [
+                  1392,
+                  1430
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l18",
+            "B": "p79-l18"
+          },
+          "canonicalRow": "p79r18",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                503,
+                1458,
+                1344,
+                1517
+              ],
+              "baseline": [
+                [
+                  509,
+                  1509
+                ],
+                [
+                  1338,
+                  1488
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                505,
+                1450,
+                1340,
+                1523
+              ],
+              "baseline": [
+                [
+                  511,
+                  1510
+                ],
+                [
+                  1334,
+                  1487
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l19",
+            "B": "p79-l19"
+          },
+          "canonicalRow": "p79r19",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                504,
+                1524,
+                997,
+                1579
+              ],
+              "baseline": [
+                [
+                  510,
+                  1567
+                ],
+                [
+                  991,
+                  1555
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                508,
+                1520,
+                997,
+                1581
+              ],
+              "baseline": [
+                [
+                  514,
+                  1568
+                ],
+                [
+                  991,
+                  1557
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l20",
+            "B": "p79-l20"
+          },
+          "canonicalRow": "p79r20",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                505,
+                1586,
+                1639,
+                1660
+              ],
+              "baseline": [
+                [
+                  511,
+                  1646
+                ],
+                [
+                  1633,
+                  1617
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                508,
+                1579,
+                1627,
+                1657
+              ],
+              "baseline": [
+                [
+                  514,
+                  1644
+                ],
+                [
+                  1621,
+                  1616
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l21",
+            "B": "p79-l21"
+          },
+          "canonicalRow": "p79r21",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                507,
+                1652,
+                1352,
+                1719
+              ],
+              "baseline": [
+                [
+                  513,
+                  1704
+                ],
+                [
+                  1346,
+                  1682
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                510,
+                1644,
+                1350,
+                1716
+              ],
+              "baseline": [
+                [
+                  516,
+                  1703
+                ],
+                [
+                  1344,
+                  1681
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": false
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l22",
+            "B": "p79-l22"
+          },
+          "canonicalRow": "p79r22",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                576,
+                1732,
+                1739,
+                1806
+              ],
+              "baseline": [
+                [
+                  582,
+                  1798
+                ],
+                [
+                  1733,
+                  1769
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                581,
+                1732,
+                1737,
+                1810
+              ],
+              "baseline": [
+                [
+                  587,
+                  1797
+                ],
+                [
+                  1731,
+                  1769
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l23",
+            "B": "p79-l23"
+          },
+          "canonicalRow": "p79r23",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                657,
+                1796,
+                1738,
+                1861
+              ],
+              "baseline": [
+                [
+                  663,
+                  1852
+                ],
+                [
+                  1732,
+                  1827
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                662,
+                1792,
+                1735,
+                1865
+              ],
+              "baseline": [
+                [
+                  668,
+                  1852
+                ],
+                [
+                  1729,
+                  1829
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l24",
+            "B": "p79-l24"
+          },
+          "canonicalRow": "p79r24",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                718,
+                1853,
+                1740,
+                1919
+              ],
+              "baseline": [
+                [
+                  724,
+                  1909
+                ],
+                [
+                  1734,
+                  1883
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                721,
+                1848,
+                1736,
+                1922
+              ],
+              "baseline": [
+                [
+                  727,
+                  1909
+                ],
+                [
+                  1730,
+                  1885
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        },
+        {
+          "page": 79,
+          "lowRows": {
+            "A": "p79-l25",
+            "B": "p79-l25"
+          },
+          "canonicalRow": "p79r25",
+          "lowGeometry": {
+            "A": {
+              "boxXYXY": [
+                803,
+                1911,
+                1742,
+                1974
+              ],
+              "baseline": [
+                [
+                  809,
+                  1965
+                ],
+                [
+                  1736,
+                  1942
+                ]
+              ]
+            },
+            "B": {
+              "boxXYXY": [
+                807,
+                1905,
+                1739,
+                1978
+              ],
+              "baseline": [
+                [
+                  813,
+                  1965
+                ],
+                [
+                  1733,
+                  1942
+                ]
+              ]
+            }
+          },
+          "paragraphStartAgreement": true
+        }
+      ],
+      "shortRowCandidates": []
+    }
+  ],
+  "activity": {
+    "sourcePixelsOpened": 0,
+    "newReadingStreams": 0,
+    "keyChecks": 0
+  }
+}

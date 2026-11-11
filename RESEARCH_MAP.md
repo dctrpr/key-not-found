@@ -4,7 +4,7 @@ The [interactive investigation map](https://key404-casefile.vercel.app/#investig
 
 | Branch | Starting point | What remains useful |
 | --- | --- | --- |
-| Text & lines | Printed words, line edges, highlights and the George Sand clue | Audit the 142 printed body line starts against the second scan |
+| Text & lines | Printed words, line edges, highlights and the George Sand clue | Evaluate a distinct creator-clue interpretation using the cross-checked 142 body baselines |
 | Mirrors & layout | Physical leaves, reading direction and reflected marks | Seek readable source evidence for the faint traces and local foot-edge calibration |
 | Numbers & typography | Printed numbers and letterforms | Evidence for the selection rule, followed by a falsifiable extraction |
 | Sources & provenance | Creator posts, article identity and authoritative originals | Public source evidence, provenance or a correction |

@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "testId": "issue24-line-start-audit",
+  "completedAtUTC": "2026-11-11T01:12:28.343Z",
+  "scope": "Source-only adjudication of the three cue-free rows, the leading dash and the disputed first-letter case.",
+  "rootPriorExposure": "Scope-aware. Root saw the canonical model and locked low-reader observations before inspecting the ten short/case contexts.",
+  "manualShortRowMatches": [
+    {
+      "canonicalRow": "p75r03",
+      "lowA": "p75-l03",
+      "lowB": "p75-l03",
+      "highContext": "exhibits/high-p75r03.png",
+      "lowContext": "exhibits/low-p75r03.png",
+      "decision": "Same physical baseline and matching literal edge chunks in both source views."
+    },
+    {
+      "canonicalRow": "p75r25",
+      "lowA": "p75-l25",
+      "lowB": "p75-l25",
+      "highContext": "exhibits/high-p75r25.png",
+      "lowContext": "exhibits/low-p75r25.png",
+      "decision": "Same physical baseline and matching literal edge chunks in both source views."
+    },
+    {
+      "canonicalRow": "p76r18",
+      "lowA": "p76-l18",
+      "lowB": "p76-l18",
+      "highContext": "exhibits/high-p76r18.png",
+      "lowContext": "exhibits/low-p76r18.png",
+      "decision": "Same physical baseline and matching literal edge chunks in both source views."
+    }
+  ],
+  "leadingSeparator": {
+    "canonicalRow": "p79r24",
+    "decision": "Both readers and high-source review show a freestanding leading dash. The existing canonical first_word is already the following lexical word."
+  },
+  "letterCase": {
+    "canonicalRow": "p77r09",
+    "initialA": "lowercase",
+    "initialB": "uppercase",
+    "followupLowA": "lowercase",
+    "followupLowB": "lowercase",
+    "followupHigh": "uppercase",
+    "decision": "Unresolved across source views. Word identity agrees. Preserve both original receipts and case projections."
+  },
+  "paragraphStartDisagreements": 27,
+  "sourceRoleLimit": "The five-line centered p77 passage and repeated p78 artwork quotation retain the readers' disclosed role choices.",
+  "counts": {
+    "canonical": 142,
+    "independentlyRecordedLowRows": 142,
+    "forcedCanonicalCueMatches": 139,
+    "manualShortRowsConfirmed": 3,
+    "linesMappedAcrossScans": 142,
+    "confirmedLexicalChanges": 0,
+    "unresolvedCaseRows": 1,
+    "paragraphStartDisagreements": 27
+  },
+  "sourceEvidenceHashes": {
+    "HIGH_LAYOUT_REVIEW.json": "edfdd6aa0c73d9217693b05eefbf9b389105d4e937341a8c3f7d20d4b83bce36",
+    "HIGH_SHORT_CASE_REVIEW.json": "37ef749dcaa2c024c9265b2eae85ed3bbf3bd6f7439668c7c8eb65bfea8dbb52",
+    "HIGH_LAYOUT_MANIFEST.json": "dcdcbb362a3f260cd690575a5003d8cc833d79a161a03e833d959aec34e6fbdb",
+    "HIGH_CONTEXT_MANIFEST.json": "15b255e9283fb2927c645c69675bfad40f170bf9544d6fd781ffd39c1762f1bb",
+    "LOW_CONTEXT_MANIFEST.json": "3fe0a38eb842e8aaadb424737ac9cd9484f2064d519bb4e0a2352f289256c8c3",
+    "LOW_INITIAL_CASE_A.json": "aba25117bbdec01897943fb7432406110681563895281c9c73e53a66f53ff8a6",
+    "LOW_INITIAL_CASE_B.json": "63a987fae9410c0d7b475a618ff7a1cdf3611f1ac3dba0936fe0888ed0804d7a"
+  },
+  "newSourceModelPublished": false
+}

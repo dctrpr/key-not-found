@@ -39,6 +39,45 @@ for (const entry of data.entries) {
     } else assert.equal(metric.operation, undefined);
     assert.equal(value, metric.value, 'Visual metric differs from its frozen result');
   }
+  if (entry.id === 'issue24-line-start-audit') {
+    assert.equal(entry.methodId, 'faithful-lines');
+    assert.equal(entry.scene.layout, 'mirror');
+    assert.ok(entry.scene.page >= 75 && entry.scene.page <= 79);
+    assert.equal(result.testId, entry.id);
+    const base = path.dirname(path.join(root, 'public/research', entry.source.path));
+    const digest = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
+    const readPinned = (name, hash) => {
+      const bytes = fs.readFileSync(path.join(base, name));
+      assert.equal(digest(bytes), hash);
+      return JSON.parse(bytes);
+    };
+    const protocol = readPinned('PROTOCOL.json', result.protocolSha256);
+    const packet = readPinned('PACKET_MANIFEST.json', result.packetManifestSha256);
+    const lock = readPinned('RECEIPT_LOCK.json', result.receiptLockSha256);
+    const comparison = readPinned('RECONCILIATION.json', result.reconciliationSha256);
+    const adjudication = readPinned('ADJUDICATION.json', result.adjudicationSha256);
+    readPinned('MATCHING_REPLAY.json', result.matchingReplaySha256);
+    assert.equal(packet.assets.length, 10);
+    assert.equal(lock.packetManifestSha256, result.packetManifestSha256);
+    assert.equal(comparison.canonicalSha256, protocol.canonical.sha256);
+    assert.equal(result.counts.canonical, 142);
+    assert.deepEqual(result.counts, adjudication.counts);
+    assert.deepEqual(result.activity, { newOCRCalls: 0, fittedTransforms: 0, newReadingStreams: 0, keyChecks: 0 });
+    assert.equal(result.counts.linesMappedAcrossScans, comparison.counts.highForcedPairs + result.counts.manualShortRowsConfirmed);
+    for (const [name, hash] of Object.entries(adjudication.sourceEvidenceHashes)) readPinned(name, hash);
+    for (const label of ['A', 'B']) {
+      const receipt = readPinned('READER_' + label + '.json', result.readerReceiptHashes[label]);
+      assert.equal(lock.receiptHashes[label], result.readerReceiptHashes[label]);
+      assert.deepEqual([...receipt.inspectedAssets].sort(), packet.assets.map(asset => asset.path).sort());
+    }
+    assert.deepEqual(entry.exhibits, result.exhibits);
+    for (const exhibit of entry.exhibits) {
+      const bytes = fs.readFileSync(path.join(root, 'public', exhibit.path));
+      assert.equal(digest(bytes), exhibit.sha256);
+      assert.equal(bytes.readUInt32BE(16), exhibit.width);
+      assert.equal(bytes.readUInt32BE(20), exhibit.height);
+    }
+  }
   if (entry.id === 'issue24-second-scan-heading-review') {
     assert.equal(entry.methodId, 'g07-glyph-orientation');
     assert.deepEqual(entry.scene, { layout: 'mirror', page: 74 });

@@ -30,4 +30,6 @@ The [full-page review frame](https://keynotfound.com/#visual-issue24-full-page-g
 
 The [second-scan frame](https://keynotfound.com/#visual-issue24-second-scan-heading-review) adds the exact lower-resolution crops. Readers locked their page 74 observations before seeing the page 75 reference. The faint band yielded zero agreed words and zero matched glyph anchors. The 3D viewer opens the higher-resolution page 74 scan. [Second-scan review](analysis_outputs/continuation_20261111/second_scan_heading_review/RESULT.md)
 
+The [line-start audit frame](https://keynotfound.com/#visual-issue24-line-start-audit) opens page 77 in the mirror viewer and shows exact excerpts from both scans. Its counts cover 142 mapped body lines, three manual short-row matches and one unsettled initial-letter case. The source report preserves paragraph and display-role uncertainty. [Line audit](analysis_outputs/continuation_20261111/line_start_audit/RESULT.md)
+
 The puzzle remains unsolved. The 3D display and visual log do not verify the prize funding.
