@@ -1,0 +1,283 @@
+{
+  "id": "issue24-p77-initial-transfer",
+  "sources": [
+    {
+      "id": "high",
+      "path": "analysis_outputs/continuation_20261111/line_start_audit/exhibits/high-p77r09.png",
+      "sha256": "8c491f47c22eac9e78661a9f3c38806fad06a3cbf3935b1fc74d26093a9a2b9d",
+      "size": [
+        1976,
+        135
+      ]
+    },
+    {
+      "id": "low",
+      "path": "analysis_outputs/continuation_20261111/line_start_audit/exhibits/low-p77r09.png",
+      "sha256": "63b224327798cdffeae0c32d3cdf7df639812f6687ff1fcce897be354879262c",
+      "size": [
+        1143,
+        146
+      ]
+    }
+  ],
+  "ordinaryPairs": [
+    {
+      "id": "F01",
+      "description": "lock in blockers",
+      "role": "fit",
+      "high": [
+        667,
+        44,
+        770,
+        85
+      ],
+      "low": [
+        130,
+        45,
+        212,
+        81
+      ]
+    },
+    {
+      "id": "H01",
+      "description": "ers in blockers",
+      "role": "holdout",
+      "high": [
+        770,
+        50,
+        846,
+        85
+      ],
+      "low": [
+        212,
+        54,
+        273,
+        83
+      ]
+    },
+    {
+      "id": "F02",
+      "description": "got",
+      "role": "fit",
+      "high": [
+        856,
+        45,
+        937,
+        93
+      ],
+      "low": [
+        280,
+        51,
+        345,
+        90
+      ]
+    },
+    {
+      "id": "F03",
+      "description": "their",
+      "role": "fit",
+      "high": [
+        944,
+        43,
+        1078,
+        85
+      ],
+      "low": [
+        350,
+        51,
+        457,
+        87
+      ]
+    },
+    {
+      "id": "H02",
+      "description": "heads",
+      "role": "holdout",
+      "high": [
+        1086,
+        43,
+        1229,
+        85
+      ],
+      "low": [
+        463,
+        54,
+        577,
+        91
+      ]
+    },
+    {
+      "id": "F04",
+      "description": "ripped",
+      "role": "fit",
+      "high": [
+        1238,
+        42,
+        1395,
+        93
+      ],
+      "low": [
+        584,
+        57,
+        711,
+        99
+      ]
+    },
+    {
+      "id": "H03",
+      "description": "off",
+      "role": "holdout",
+      "high": [
+        1404,
+        42,
+        1485,
+        85
+      ],
+      "low": [
+        716,
+        59,
+        781,
+        95
+      ]
+    },
+    {
+      "id": "F05",
+      "description": "during",
+      "role": "fit",
+      "high": [
+        1493,
+        43,
+        1659,
+        93
+      ],
+      "low": [
+        785,
+        61,
+        921,
+        105
+      ]
+    },
+    {
+      "id": "H04",
+      "description": "the",
+      "role": "holdout",
+      "high": [
+        1666,
+        42,
+        1752,
+        85
+      ],
+      "low": [
+        926,
+        65,
+        993,
+        101
+      ]
+    },
+    {
+      "id": "H05",
+      "description": "lock in Block",
+      "role": "holdout",
+      "high": [
+        1796,
+        41,
+        1902,
+        85
+      ],
+      "low": [
+        1029,
+        66,
+        1114,
+        103
+      ]
+    },
+    {
+      "id": "IG",
+      "description": "following letters i and g, used for nearby validation and target projection only",
+      "role": "holdout",
+      "high": [
+        574,
+        45,
+        622,
+        89
+      ],
+      "low": [
+        55,
+        43,
+        94,
+        79
+      ]
+    }
+  ],
+  "caseControls": {
+    "b": {
+      "high": [
+        635,
+        44,
+        667,
+        85
+      ],
+      "low": [
+        104,
+        45,
+        130,
+        79
+      ]
+    },
+    "B": {
+      "high": [
+        1762,
+        41,
+        1796,
+        84
+      ],
+      "low": [
+        1000,
+        65,
+        1029,
+        101
+      ]
+    }
+  },
+  "requiredNearTargetHoldout": "IG",
+  "targetHighBox": [
+    541,
+    46,
+    573,
+    84
+  ],
+  "settings": {
+    "sigmaGrid": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1,
+      1.25,
+      1.5,
+      2
+    ],
+    "translationLimit": 2,
+    "comparisonRim": 4,
+    "blurPadding": 8,
+    "minimumForegroundSpan": 40,
+    "holdoutMaxNormalizedMae": 0.16,
+    "holdoutMinCorrelation": 0.6,
+    "minimumOrdinaryHoldouts": 4,
+    "lobeX": [
+      0.48,
+      0.95
+    ],
+    "upperLobeY": [
+      0.1,
+      0.43
+    ],
+    "lowerLobeY": [
+      0.54,
+      0.86
+    ],
+    "minimumLowerInk": 12,
+    "minimumCaseControlGap": 0.2,
+    "ambiguityMargin": 0.1
+  }
+}
