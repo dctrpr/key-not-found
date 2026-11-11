@@ -1,0 +1,263 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "high",
+      "path": "magazine.pdf",
+      "sha256": "a30c61f8c49674afb7bccc6680d6477f6e919175386a2422de0a944db4e76c13",
+      "size": [
+        2544,
+        3264
+      ],
+      "rotation": 180,
+      "pdfIndexes": {
+        "75": 2,
+        "78": 5
+      },
+      "embeddedJpegSha256": {
+        "75": "92a6c183c765c33339e401e2f2528d5f52f8019cda2d4fb36c49af49876fe880",
+        "78": "81066fc47ebee1654826f1957391bed19271189d817d45ec672c9f11a92ce29a"
+      }
+    },
+    {
+      "id": "low",
+      "path": "keyser bitcoin .pdf",
+      "sha256": "dcd13efd0e46c49927dc8ec2e38a96fffc20d92fde7434151250fd6b9c62e6f4",
+      "size": [
+        2040,
+        2805
+      ],
+      "rotation": 0,
+      "pdfIndexes": {
+        "75": 2,
+        "78": 5
+      },
+      "embeddedJpegSha256": {
+        "75": "14b61ce3980ee0af4f23df87f19b4d0ffcce2ece2f25fa6bc2b02bf6d7336b72",
+        "78": "356a99c43703ffa467e34e2aaf7fc91f2a23dbe5170f89c60dd0282b78bd1830"
+      }
+    }
+  ],
+  "readerReceipts": {
+    "readerA": {
+      "path": "analysis_outputs/continuation_20261111/line_start_audit/READER_A.json",
+      "sha256": "6c5a6e1521a865aa5a57a7f6486e80a93bfde418f7fbab0073f88a2d1473f760"
+    },
+    "readerB": {
+      "path": "analysis_outputs/continuation_20261111/line_start_audit/READER_B.json",
+      "sha256": "2335a55307c636fb5c1b59fe846ead02d4fa52c3b3eb5f27d9aafbe88bdad0a6"
+    }
+  },
+  "windows": {
+    "high": {
+      "p75r01": {
+        "window": [
+          325,
+          2265,
+          529,
+          589
+        ],
+        "segments": {
+          "row1": [
+            325,
+            2265
+          ]
+        }
+      },
+      "p75r02": {
+        "window": [
+          325,
+          2265,
+          601,
+          663
+        ],
+        "segments": {
+          "row2": [
+            325,
+            2265
+          ],
+          "row2BeforePeriod": [
+            325,
+            1700
+          ],
+          "openerTo": [
+            361,
+            430
+          ],
+          "period": [
+            1700,
+            1730
+          ]
+        }
+      },
+      "p75r04": {
+        "window": [
+          1375,
+          1700,
+          829,
+          882
+        ],
+        "segments": {
+          "started": [
+            1405,
+            1594
+          ],
+          "startedTo": [
+            1597,
+            1660
+          ]
+        }
+      },
+      "p75r30": {
+        "window": [
+          1435,
+          1650,
+          2774,
+          2830
+        ],
+        "segments": {
+          "hard": [
+            1452,
+            1573
+          ],
+          "hardTo": [
+            1577,
+            1639
+          ]
+        }
+      },
+      "p78r06": {
+        "window": [
+          735,
+          995,
+          797,
+          860
+        ],
+        "segments": {
+          "listen": [
+            756,
+            924
+          ],
+          "listenTo": [
+            924,
+            985
+          ]
+        }
+      }
+    },
+    "low": {
+      "p75r01": {
+        "window": [
+          230,
+          1370,
+          417,
+          480
+        ],
+        "segments": {
+          "row1": [
+            230,
+            1370
+          ]
+        }
+      },
+      "p75r02": {
+        "window": [
+          230,
+          1370,
+          480,
+          535
+        ],
+        "segments": {
+          "row2": [
+            230,
+            1370
+          ],
+          "row2BeforePeriod": [
+            230,
+            1317
+          ],
+          "openerTo": [
+            248,
+            303
+          ],
+          "period": [
+            1317,
+            1345
+          ]
+        }
+      },
+      "p75r04": {
+        "window": [
+          1035,
+          1320,
+          650,
+          710
+        ],
+        "segments": {
+          "started": [
+            1082,
+            1236
+          ],
+          "startedTo": [
+            1238,
+            1285
+          ]
+        }
+      },
+      "p75r30": {
+        "window": [
+          1125,
+          1300,
+          2198,
+          2260
+        ],
+        "segments": {
+          "hard": [
+            1135,
+            1233
+          ],
+          "hardTo": [
+            1236,
+            1285
+          ]
+        }
+      },
+      "p78r06": {
+        "window": [
+          545,
+          760,
+          620,
+          680
+        ],
+        "segments": {
+          "listen": [
+            559,
+            691
+          ],
+          "listenTo": [
+            691,
+            741
+          ]
+        }
+      }
+    }
+  },
+  "settings": {
+    "baselineStrip": [
+      33,
+      10
+    ],
+    "shadeThresholds": [
+      112,
+      136,
+      160
+    ],
+    "quantile": 0.002,
+    "minInkPixels": 20,
+    "minPeriodPixels": 4,
+    "locatorClearancePx": 1,
+    "guardPx": 4,
+    "maxStartSeparationPx": 12,
+    "maxToWidthRatio": 1.25
+  }
+}
