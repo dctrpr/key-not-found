@@ -39,6 +39,35 @@ for (const entry of data.entries) {
     } else assert.equal(metric.operation, undefined);
     assert.equal(value, metric.value, 'Visual metric differs from its frozen result');
   }
+  if (entry.id === 'issue24-page78-right-anchor') {
+    const digest = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
+    const base = path.dirname(path.join(root, 'public/research', entry.source.path));
+    assert.equal(result.testId, entry.id);
+    assert.equal(entry.methodId, result.testId);
+    assert.deepEqual(entry.scene, { layout: 'spread', page: 78 });
+    assert.equal(digest(fs.readFileSync(path.join(base, 'PROTOCOL.json'))), result.protocolSha256);
+    const scripts = path.join(root, 'public/research/scripts');
+    assert.equal(digest(fs.readFileSync(path.join(scripts, 'measure_page78_right_anchor.py'))), result.scriptSha256);
+    assert.equal(digest(fs.readFileSync(path.join(scripts, 'render_page78_right_anchor.py'))), result.rendererSha256);
+    const measured = fs.readFileSync(path.join(base, 'MEASUREMENTS.json'));
+    assert.equal(digest(measured), result.measurementsSha256);
+    assert.equal(result.replaySha256, result.measurementsSha256);
+    const { scans, targetRightAlignedInBoth, rightAlignedInBoth, otherRightAlignedInBoth } = JSON.parse(measured);
+    assert.equal(targetRightAlignedInBoth, true);
+    for (const scan of Object.values(scans)) {
+      assert.equal(scan.blocks.length, result.metrics.blocksCompared);
+      assert.deepEqual(scan.blocks.filter(block => block.classification === 'right').map(block => block.id), rightAlignedInBoth);
+    }
+    assert.equal(result.metrics.rightAlignedInBoth, rightAlignedInBoth.length);
+    assert.equal(result.metrics.otherRightAlignedInBoth, otherRightAlignedInBoth.length);
+    assert.deepEqual(entry.exhibits, result.exhibits);
+    assert.equal(entry.exhibits.length, 1);
+    const [exhibit] = entry.exhibits;
+    const png = fs.readFileSync(path.join(root, 'public', exhibit.path));
+    assert.equal(digest(png), exhibit.sha256);
+    assert.equal(png.readUInt32BE(16), exhibit.width);
+    assert.equal(png.readUInt32BE(20), exhibit.height);
+  }
   if (entry.id === 'issue24-line-start-audit') {
     assert.equal(entry.methodId, 'faithful-lines');
     assert.equal(entry.scene.layout, 'mirror');

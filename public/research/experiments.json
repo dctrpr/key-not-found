@@ -1326,6 +1326,29 @@
       "limitations": [
         "The translation is local to one raster. The scans cannot determine the physical source of the faint marks or a global registration."
       ]
+    },
+    {
+      "id": "issue24-page78-right-anchor",
+      "title": "Right-edge alignment across pages 77–79",
+      "status": "partial",
+      "kind": "method-test",
+      "independentTheory": false,
+      "scope": "Measure projected contrast-support edges across seven neighboring text blocks at three fixed thresholds in both retained scans.",
+      "result": "The page 78 target and the two right-aligned comparators on pages 77 and 79 pass in both scans. Two same-page left-aligned paragraphs and the centered display quote also classify consistently. The indented paragraph remains mixed under the block-level rule.",
+      "evidence": [
+        "analysis_outputs/continuation_20261111/page78_right_anchor/RESULT.md",
+        "analysis_outputs/continuation_20261111/page78_right_anchor/MEASUREMENTS.json",
+        "analysis_outputs/continuation_20261111/page78_right_anchor/PROTOCOL.md",
+        "analysis_outputs/continuation_20261111/page78_right_anchor/ALIGNMENT_COMPARISON.png",
+        "scripts/measure_page78_right_anchor.py",
+        "scripts/render_page78_right_anchor.py"
+      ],
+      "reproduce": [
+        "Replay the pinned PDF and baseline inputs with the registered measurement script. Compare all row and threshold values against MEASUREMENTS.json, then generate the visual comparison."
+      ],
+      "limitations": [
+        "The visual controls were selected from the same article. Raster endpoints do not establish the original print geometry, acquisition independence or a reading direction."
+      ]
     }
   ],
   "countingPolicy": "This is a curated set of method families/source audits, not a total count of independent theories. Historical administrative gates and correlated variants are not counted as independent experiments. Falsified means only the concrete stated candidate/address scope.",

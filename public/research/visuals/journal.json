@@ -1318,6 +1318,51 @@
           "height": 1080
         }
       ]
+    },
+    {
+      "id": "issue24-page78-right-anchor",
+      "completedAtUTC": "2026-11-11T04:19:32.738Z",
+      "title": "Right alignment repeats.",
+      "summary": "Compare the last four lines on page 78 with six nearby text blocks in both retained scans.",
+      "result": "The same right-alignment test passes on pages 77, 78 and 79. The page 78 margin alone gives no unique starting point.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Blocks compared",
+          "value": 7,
+          "pointer": "/metrics/blocksCompared"
+        },
+        {
+          "label": "Right-aligned in both scans",
+          "value": 3,
+          "pointer": "/metrics/rightAlignedInBoth"
+        },
+        {
+          "label": "Neighboring right-aligned blocks",
+          "value": 2,
+          "pointer": "/metrics/otherRightAlignedInBoth"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261111/page78_right_anchor/RESULT.json",
+        "sha256": "cb476279d04077804af59d7ae77ad78b56a70dc68f6b5eac30d4de724d312905"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261111/page78_right_anchor/RESULT.md",
+      "scene": {
+        "layout": "spread",
+        "page": 78
+      },
+      "sceneNote": "The viewer opens page 78. The chart below shows the measured edge positions for all three right-aligned blocks.",
+      "methodId": "issue24-page78-right-anchor",
+      "exhibits": [
+        {
+          "path": "/research/analysis_outputs/continuation_20261111/page78_right_anchor/ALIGNMENT_COMPARISON.png",
+          "sha256": "75e5c2227646514bd31096d7e054211fdbdb55f19dcf84f47026ed0ea2106c35",
+          "label": "Measured text spans on pages 77–79 in both scans",
+          "width": 1280,
+          "height": 1370
+        }
+      ]
     }
   ]
 }
