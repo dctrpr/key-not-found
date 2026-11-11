@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "testId": "issue24-saved-right-edge-reading-review",
+  "selector": {
+    "frame": "body",
+    "subset": "all",
+    "parityBase": "all_printed_rows",
+    "reset": "global",
+    "phase": "all",
+    "projection": "last_words",
+    "textDirection": "normal"
+  },
+  "members": [
+    {
+      "id": "right-edge-down",
+      "candidateIndex": 4,
+      "variantIndex": 0,
+      "direction": "down",
+      "sha256": "8e240128fa4018c16a2716621ca8ccc09524110b87f6c3e9034e8a65376bb995",
+      "utf8Bytes": 972,
+      "codepoints": 972,
+      "selectedRows": 142,
+      "aliasCount": 6
+    },
+    {
+      "id": "right-edge-up",
+      "candidateIndex": 830,
+      "variantIndex": 0,
+      "direction": "up",
+      "sha256": "d6ad5dbbb8bbed97ed7711ec609f7c905c2c62b6ba5aa8756baa863c6d3a368c",
+      "utf8Bytes": 972,
+      "codepoints": 972,
+      "selectedRows": 142,
+      "aliasCount": 6
+    }
+  ],
+  "frozenAtUTC": "2026-11-11T00:18:39.854Z",
+  "sourceHashes": {
+    "analysis_outputs/continuation_20261109/fresh_cryptanalysis/george_sand_printed_probe.json": "1651a33dab46babf36f56439ddb409058cfa36712d96ead7d4200962b80817b9"
+  },
+  "scriptHashes": {
+    "scripts/pack_right_edge_saved_readings.py": "2b06dcb299c65ef0925ec721c0ab2f96f62d811a7f69d4e8274d611bd7b5d7ac"
+  },
+  "reviewers": 2,
+  "criterion": "Recognize a coherent next action and its source unit or order in a complete unchanged text."
+}
