@@ -1,0 +1,144 @@
+{
+  "protocolSha256": "595be45bb57f65cce65aa66c1161918d272ee4b3a1ee42afeb554906a2921424",
+  "scriptSha256": "c9aa635b1618fcdc434012c4672265686f6ed5ecda6750ea3da32b19570c9ca8",
+  "model": {
+    "sigma": 1,
+    "translationXY": [
+      0,
+      0
+    ],
+    "gain": 0.5326240880331169,
+    "offset": 73.89212081040785,
+    "fitRmseGrayLevels": 23.351390204909062
+  },
+  "bestZeroAddedBlurModel": {
+    "sigma": 0,
+    "translationXY": [
+      0,
+      0
+    ],
+    "gain": 0.37175172906705584,
+    "offset": 83.41238351931455,
+    "fitRmseGrayLevels": 25.81739885917412
+  },
+  "foregroundSpan": 120.0,
+  "backgroundGrayLevels": [
+    4.0,
+    78.0
+  ],
+  "ordinaryHoldouts": [
+    {
+      "id": "H01",
+      "maeGrayLevels": 21.847686448563604,
+      "normalizedMae": 0.18206405373803003,
+      "correlation": 0.7789650411982053,
+      "pass": false
+    },
+    {
+      "id": "H02",
+      "maeGrayLevels": 16.683784840666533,
+      "normalizedMae": 0.1390315403388878,
+      "correlation": 0.8003039275950806,
+      "pass": true
+    },
+    {
+      "id": "H03",
+      "maeGrayLevels": 15.605165685350011,
+      "normalizedMae": 0.13004304737791675,
+      "correlation": 0.8524356733582565,
+      "pass": true
+    },
+    {
+      "id": "H04",
+      "maeGrayLevels": 14.047274974743777,
+      "normalizedMae": 0.11706062478953147,
+      "correlation": 0.8721616531450523,
+      "pass": true
+    },
+    {
+      "id": "H05",
+      "maeGrayLevels": 14.458182206373346,
+      "normalizedMae": 0.12048485171977788,
+      "correlation": 0.9055544899355575,
+      "pass": true
+    },
+    {
+      "id": "IG",
+      "maeGrayLevels": 23.103499776089755,
+      "normalizedMae": 0.19252916480074797,
+      "correlation": 0.5631510353398931,
+      "pass": false
+    }
+  ],
+  "caseControls": {
+    "b": {
+      "high": {
+        "upperMeanInk": 15.652380952380952,
+        "lowerMeanInk": 80.26153846153846,
+        "upperToLowerRatio": 0.1950172056555035
+      },
+      "predictedLow": {
+        "upperMeanInk": 6.897638374101033,
+        "lowerMeanInk": 37.87044157398768,
+        "upperToLowerRatio": 0.18213778576162312
+      },
+      "observedLow": {
+        "upperMeanInk": 6.538461538461538,
+        "lowerMeanInk": 39.41958041958042,
+        "upperToLowerRatio": 0.16586836970019514
+      },
+      "maeGrayLevels": 10.941279152905427,
+      "normalizedMae": 0.09117732627421189,
+      "correlation": 0.9317675387504634
+    },
+    "B": {
+      "high": {
+        "upperMeanInk": 68.75446428571429,
+        "lowerMeanInk": 118.37946428571429,
+        "upperToLowerRatio": 0.5807972244220689
+      },
+      "predictedLow": {
+        "upperMeanInk": 35.707500689870464,
+        "lowerMeanInk": 58.94466761280445,
+        "upperToLowerRatio": 0.6057799990395363
+      },
+      "observedLow": {
+        "upperMeanInk": 32.746753246753244,
+        "lowerMeanInk": 64.82142857142857,
+        "upperToLowerRatio": 0.5051840721262209
+      },
+      "maeGrayLevels": 20.716554163016024,
+      "normalizedMae": 0.17263795135846688,
+      "correlation": 0.8737538484876318
+    }
+  },
+  "caseControlGaps": {
+    "high": 0.3857800187665654,
+    "predictedLow": 0.4236422132779132,
+    "observedLow": 0.3393157024260257
+  },
+  "caseThresholds": {
+    "high": 0.3879072150387862,
+    "predictedLow": 0.3939588924005797,
+    "observedLow": 0.335526220913208
+  },
+  "ordinaryGatePass": false,
+  "caseSeparationGatePass": true,
+  "targetBoxes": {
+    "high": [
+      541,
+      46,
+      573,
+      84
+    ],
+    "low": [
+      28,
+      44,
+      54,
+      75
+    ]
+  },
+  "caseTransferGatePass": false,
+  "targetScored": false,
+  "outcome": "controls-insufficient"
+}

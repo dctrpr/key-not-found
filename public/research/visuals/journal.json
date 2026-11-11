@@ -1214,6 +1214,58 @@
           "height": 985
         }
       ]
+    },
+    {
+      "id": "issue24-p77-initial-transfer",
+      "completedAtUTC": "2026-11-11T03:31:23Z",
+      "title": "The sharper scan favors a lowercase initial.",
+      "summary": "Compare the surviving first-letter ink against known B and b on the same printed row.",
+      "result": "The sharper initial falls with the lowercase shape. The second scan’s controls leave its target unscored.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Ordinary transfer holdouts passed",
+          "value": 4,
+          "pointer": "/metrics/ordinaryOpticalHoldoutsPassed"
+        },
+        {
+          "label": "Sharper-scan conditions scored",
+          "value": 27,
+          "pointer": "/metrics/sharperTargetConditions"
+        },
+        {
+          "label": "Second-scan conditions scored",
+          "value": 0,
+          "pointer": "/metrics/lowerResolutionTargetConditions"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261111/p77_initial_transfer/RESULT.json",
+        "sha256": "2892f1f26a8dc105c31904b58fe2a3834872f9cdba3cea2b43ed16d42a87ee1f"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261111/p77_initial_transfer/RESULT.md",
+      "scene": {
+        "layout": "mirror",
+        "page": 77
+      },
+      "sceneNote": "The 3D view opens the sharper page 77 scan. The letter crops are exact native excerpts enlarged for inspection.",
+      "methodId": "faithful-lines",
+      "exhibits": [
+        {
+          "path": "/research/analysis_outputs/continuation_20261111/p77_initial_transfer/CASE_COMPARISON.png",
+          "sha256": "cfa39942250559f1c3a1f176edac3ff355625e84b82adfc951269ef4a931d9dc",
+          "label": "Native sharper-scan initial and case controls",
+          "width": 1056,
+          "height": 460
+        },
+        {
+          "path": "/research/analysis_outputs/continuation_20261111/p77_initial_transfer/CONTROL_EXHIBIT.png",
+          "sha256": "bd3a33d788c659655b86622727f0c9bb60757f1980a9a326a88e747cf72a6994",
+          "label": "Ordinary and case control patches from both scans",
+          "width": 540,
+          "height": 1326
+        }
+      ]
     }
   ]
 }

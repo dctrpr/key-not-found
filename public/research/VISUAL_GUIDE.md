@@ -36,4 +36,6 @@ The [heading pixel comparison](https://keynotfound.com/#visual-issue24-heading-p
 
 The [scan transfer frame](https://keynotfound.com/#visual-issue24-heading-scan-transfer) links the ordinary printed landmarks used to check geometry between scans. Page 75 passes. Page 74 fails the held-out check and the heading lacks adequate landmark coverage, so the faint target has no transfer score. [Transfer report](analysis_outputs/continuation_20261111/heading_scan_transfer/RESULT.md)
 
+The [initial comparison frame](https://keynotfound.com/#visual-issue24-p77-initial-transfer) opens page 77 and compares three enlarged native crops. The disputed sharper-scan glyph falls on the lowercase side of the ink metric. The second-scan case controls and near-target optical model fell short of validation. [Initial comparison report](analysis_outputs/continuation_20261111/p77_initial_transfer/RESULT.md)
+
 The puzzle remains unsolved. The 3D display and visual log do not verify the prize funding.
