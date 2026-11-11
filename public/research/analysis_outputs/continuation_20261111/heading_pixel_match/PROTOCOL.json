@@ -1,0 +1,51 @@
+{
+  "id": "issue24-heading-pixel-match",
+  "scope": "Compare printed page 75 against the horizontally reflected embedded raster of its opposite face, page 74. Test translation only, with per-raster calibration and held-out body regions. The known qualitative resemblance informed selection. Scores and body holdouts were unmeasured when this protocol was written.",
+  "sources": [
+    {
+      "name": "higher-resolution",
+      "path": "magazine.pdf",
+      "sha256": "a30c61f8c49674afb7bccc6680d6477f6e919175386a2422de0a944db4e76c13",
+      "dimensions": [2544, 3264],
+      "rotation": 180,
+      "features": [
+        {"id": "heading-left", "role": "calibration", "box": [220, 326, 675, 438]},
+        {"id": "heading-right", "role": "calibration", "box": [685, 309, 1352, 420]},
+        {"id": "body-a", "role": "holdout", "box": [365, 520, 930, 584]},
+        {"id": "body-b", "role": "holdout", "box": [1010, 592, 1728, 659]},
+        {"id": "body-c", "role": "holdout", "box": [366, 704, 965, 774]},
+        {"id": "body-d", "role": "holdout", "box": [370, 811, 1000, 885]},
+        {"id": "body-e", "role": "holdout", "box": [1070, 1103, 1930, 1175]}
+      ]
+    },
+    {
+      "name": "lower-resolution",
+      "path": "keyser bitcoin .pdf",
+      "sha256": "dcd13efd0e46c49927dc8ec2e38a96fffc20d92fde7434151250fd6b9c62e6f4",
+      "dimensions": [2040, 2805],
+      "rotation": 0,
+      "features": [
+        {"id": "heading-left", "role": "calibration", "box": [136, 268, 502, 352]},
+        {"id": "heading-right", "role": "calibration", "box": [512, 254, 1038, 333]},
+        {"id": "body-a", "role": "holdout", "box": [249, 415, 709, 466]},
+        {"id": "body-b", "role": "holdout", "box": [765, 477, 1305, 527]},
+        {"id": "body-c", "role": "holdout", "box": [246, 566, 706, 620]},
+        {"id": "body-d", "role": "holdout", "box": [250, 652, 735, 705]},
+        {"id": "body-e", "role": "holdout", "box": [810, 870, 1468, 927]}
+      ]
+    }
+  ],
+  "settings": {
+    "searchXY": [100, 65],
+    "runnerGuard": 12,
+    "clip": 18,
+    "wrongFaces": [76, 78],
+    "displacedControls": [[0, -160], [0, 160]],
+    "syntheticOffsetXY": [19, -11],
+    "syntheticScale": 0.18,
+    "gate": {"minimumScore": 0.27, "minimumRunnerGap": 0.025, "minimumControlGap": 0.05},
+    "calibrationTolerance": 8,
+    "holdoutTolerance": 12,
+    "holdoutVerticalSeparation": 100
+  }
+}
