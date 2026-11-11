@@ -1,0 +1,439 @@
+{
+  "id": "issue24-heading-scan-transfer",
+  "previousProtocol": {
+    "path": "analysis_outputs/continuation_20261111/heading_pixel_match/PROTOCOL.json",
+    "sha256": "ff8dee543a616c546e1446bcacd30e86b29bfc2368c5b020eaec2b2ce9f71d92"
+  },
+  "previousResult": {
+    "path": "analysis_outputs/continuation_20261111/heading_pixel_match/RESULT.json",
+    "sha256": "954a00f3d2d4cd1d1f2893d34e128c1c76c54e8db918a114571ceabe65a266e0"
+  },
+  "p75LandmarkRefinementSha256": "fbd5b4fc1c953039ebb361bef1a1cf3807e70a93f8d583ebc8ecad0cbf339828",
+  "settings": {
+    "maxCondition": 12,
+    "maxHoldoutRmsLowPixels": 7,
+    "maxHoldoutLowPixels": 12,
+    "maxReverseHoldoutHighPixels": 16,
+    "holdoutProximityHighPixels": 500,
+    "minimumCoverageFraction": 0.75,
+    "minimumScore": 0.27,
+    "minimumGap": 0.05,
+    "syntheticScale": 0.18,
+    "minimumBodySeparationHighPixels": 100
+  },
+  "landmarks": {
+    "74": [
+      {
+        "id": "label-o",
+        "role": "calibration",
+        "highXY": [
+          2204,
+          143
+        ],
+        "lowXY": [
+          1729,
+          136
+        ]
+      },
+      {
+        "id": "label-e",
+        "role": "calibration",
+        "highXY": [
+          2363,
+          132
+        ],
+        "lowXY": [
+          1855,
+          131
+        ]
+      },
+      {
+        "id": "crest-shoulder",
+        "role": "calibration",
+        "highXY": [
+          395,
+          689
+        ],
+        "lowXY": [
+          293,
+          521
+        ]
+      },
+      {
+        "id": "road-hook",
+        "role": "holdout",
+        "highXY": [
+          366,
+          747
+        ],
+        "lowXY": [
+          278,
+          567
+        ]
+      },
+      {
+        "id": "left-pupil",
+        "role": "calibration",
+        "highXY": [
+          669,
+          1026
+        ],
+        "lowXY": [
+          501,
+          798
+        ]
+      },
+      {
+        "id": "hand-note-lip",
+        "role": "holdout",
+        "highXY": [
+          898,
+          1029
+        ],
+        "lowXY": [
+          683,
+          814
+        ]
+      },
+      {
+        "id": "central-note-left",
+        "role": "calibration",
+        "highXY": [
+          1320,
+          1232
+        ],
+        "lowXY": [
+          1011,
+          988
+        ]
+      },
+      {
+        "id": "central-note-right",
+        "role": "holdout",
+        "highXY": [
+          1571,
+          1167
+        ],
+        "lowXY": [
+          1213,
+          945
+        ]
+      },
+      {
+        "id": "right-note-tip",
+        "role": "calibration",
+        "highXY": [
+          2019,
+          1180
+        ],
+        "lowXY": [
+          1566,
+          973
+        ]
+      },
+      {
+        "id": "fence-post-cap",
+        "role": "holdout",
+        "highXY": [
+          2187,
+          1352
+        ],
+        "lowXY": [
+          1697,
+          1112
+        ]
+      },
+      {
+        "id": "right-mast-cap",
+        "role": "calibration",
+        "highXY": [
+          2473,
+          1241
+        ],
+        "lowXY": [
+          1929,
+          1028
+        ]
+      },
+      {
+        "id": "foreground-note-apex",
+        "role": "calibration",
+        "highXY": [
+          451,
+          1329
+        ],
+        "lowXY": [
+          313,
+          1034
+        ]
+      }
+    ],
+    "75": [
+      {
+        "id": "overdose-header",
+        "role": "calibration",
+        "highXY": [
+          311.5,
+          145.5
+        ],
+        "lowXY": [
+          208,
+          119.5
+        ]
+      },
+      {
+        "id": "reaction",
+        "role": "calibration",
+        "highXY": [
+          1608,
+          560
+        ],
+        "lowXY": [
+          1243,
+          447
+        ]
+      },
+      {
+        "id": "crash",
+        "role": "holdout",
+        "highXY": [
+          1734.5,
+          849
+        ],
+        "lowXY": [
+          1346.5,
+          676.5
+        ]
+      },
+      {
+        "id": "markets-are",
+        "role": "holdout",
+        "highXY": [
+          1916,
+          925
+        ],
+        "lowXY": [
+          1491.5,
+          736
+        ]
+      },
+      {
+        "id": "sum-of",
+        "role": "calibration",
+        "highXY": [
+          1997,
+          1004
+        ],
+        "lowXY": [
+          1557,
+          798
+        ]
+      },
+      {
+        "id": "banking",
+        "role": "calibration",
+        "highXY": [
+          1805,
+          1226
+        ],
+        "lowXY": [
+          1406,
+          976
+        ]
+      },
+      {
+        "id": "wall-street",
+        "role": "calibration",
+        "highXY": [
+          1942,
+          1296.5
+        ],
+        "lowXY": [
+          1515.5,
+          1031.5
+        ]
+      },
+      {
+        "id": "black-hole",
+        "role": "calibration",
+        "highXY": [
+          1962.5,
+          1369.5
+        ],
+        "lowXY": [
+          1532.5,
+          1089.5
+        ]
+      },
+      {
+        "id": "bitcoin-margin",
+        "role": "calibration",
+        "highXY": [
+          119.5,
+          1444
+        ],
+        "lowXY": [
+          65,
+          1153.5
+        ]
+      },
+      {
+        "id": "magazine-margin",
+        "role": "holdout",
+        "highXY": [
+          117.5,
+          1587.5
+        ],
+        "lowXY": [
+          64.5,
+          1267
+        ]
+      },
+      {
+        "id": "in-fact",
+        "role": "holdout",
+        "highXY": [
+          503.5,
+          1554.5
+        ],
+        "lowXY": [
+          371.5,
+          1240.5
+        ]
+      },
+      {
+        "id": "caused-by",
+        "role": "calibration",
+        "highXY": [
+          1916.5,
+          1561.5
+        ],
+        "lowXY": [
+          1497.5,
+          1242.5
+        ]
+      },
+      {
+        "id": "bitcoin-was",
+        "role": "holdout",
+        "highXY": [
+          1189.5,
+          554.5
+        ],
+        "lowXY": [
+          909.5,
+          444
+        ]
+      },
+      {
+        "id": "global-financial",
+        "role": "calibration",
+        "highXY": [
+          679.5,
+          630.5
+        ],
+        "lowXY": [
+          504.5,
+          506
+        ]
+      },
+      {
+        "id": "coming",
+        "role": "holdout",
+        "highXY": [
+          1239.5,
+          850.5
+        ],
+        "lowXY": [
+          952.5,
+          679.5
+        ]
+      },
+      {
+        "id": "markets-left",
+        "role": "holdout",
+        "highXY": [
+          441.5,
+          922.5
+        ],
+        "lowXY": [
+          317,
+          738
+        ]
+      },
+      {
+        "id": "discount-stuff",
+        "role": "holdout",
+        "highXY": [
+          1251.5,
+          927.5
+        ],
+        "lowXY": [
+          962.5,
+          740.5
+        ]
+      },
+      {
+        "id": "neuroses",
+        "role": "calibration",
+        "highXY": [
+          684.5,
+          1069.5
+        ],
+        "lowXY": [
+          511.5,
+          854.5
+        ]
+      },
+      {
+        "id": "global-unconscious",
+        "role": "holdout",
+        "highXY": [
+          860.5,
+          1218.5
+        ],
+        "lowXY": [
+          653.5,
+          973
+        ]
+      },
+      {
+        "id": "jamie-dimon",
+        "role": "holdout",
+        "highXY": [
+          612.5,
+          1363
+        ],
+        "lowXY": [
+          456.5,
+          1088
+        ]
+      },
+      {
+        "id": "it-had",
+        "role": "holdout",
+        "highXY": [
+          991,
+          1438.5
+        ],
+        "lowXY": [
+          759,
+          1147.5
+        ]
+      },
+      {
+        "id": "the-chaos",
+        "role": "calibration",
+        "highXY": [
+          861,
+          1557
+        ],
+        "lowXY": [
+          656.5,
+          1242
+        ]
+      }
+    ]
+  },
+  "p74LandmarkSurveySha256": "5a2d0bc936ddd3e96e97cf039ad2a28c52efe28542a6449551dc2850cbd3bbb2"
+}

@@ -1,0 +1,1007 @@
+{
+  "version": 1,
+  "completedAtUTC": "2026-11-11T03:14:41.640Z",
+  "scope": "Candidate same-face page 74 landmark positions in the two pinned upright rasters",
+  "sources": {
+    "high": {
+      "printedPage": 74,
+      "pdfIndex": 1,
+      "pdf": "magazine.pdf",
+      "pdfSha256": "a30c61f8c49674afb7bccc6680d6477f6e919175386a2422de0a944db4e76c13",
+      "embeddedJpegSha256": "c8ae2c76bc6489ded0561d73015c30f369bf6ba812f1c240700a0748200f8667",
+      "uprightRGBSha256": "be1653f2e2d783d86a7c5d2e0021a7db9e44b63e2d71ab3601f0562cc48d1fdc",
+      "size": [
+        2544,
+        3264
+      ],
+      "sourceRotation": 180,
+      "png": "high-p74-native.png",
+      "pngSha256": "a3b2f497097a99b196c8d1fff97c16f18e2cb6fe704be8f22ceb97a83584b7bf"
+    },
+    "low": {
+      "printedPage": 74,
+      "pdfIndex": 1,
+      "pdf": "keyser bitcoin .pdf",
+      "pdfSha256": "dcd13efd0e46c49927dc8ec2e38a96fffc20d92fde7434151250fd6b9c62e6f4",
+      "embeddedJpegSha256": "f678e9c2e6865cc82bce3eff8e8febcc9db8da0b14618a84b86af973d7cefa69",
+      "uprightRGBSha256": "09f303f48bd62ad6da5a8db41966f66e40a9eb65e20f630db2977926254ae800",
+      "size": [
+        2040,
+        2805
+      ],
+      "sourceRotation": 0,
+      "png": "low-p74-native.png",
+      "pngSha256": "e9809ab979e5a1fc8194a38fa411e37737266c833e4ec30ee79511bce5b7fa4b"
+    }
+  },
+  "coordinateConvention": "Native upright top-left XY pixels; candidate boxes are half-open XYXY. Hull corners use continuous box edges.",
+  "markingMethod": "One viewer identified the same ordinary printed feature in both native views and read approximate centers from 1:1 crops with external XY rulers. Boxes describe manual localization uncertainty. Diffuse features have wider boxes. Cluster IDs identify points on the same printed object.",
+  "landmarks": [
+    {
+      "id": "label-o",
+      "cluster": "orange-label",
+      "identification": "Center of the white aperture of the first orange O in OVERDOSE.",
+      "visibility": "sharp",
+      "high": {
+        "pointXY": [
+          2204,
+          143
+        ],
+        "candidateBoxXYXY": [
+          2200,
+          139,
+          2209,
+          148
+        ],
+        "visualRadiusPx": 4
+      },
+      "low": {
+        "pointXY": [
+          1729,
+          136
+        ],
+        "candidateBoxXYXY": [
+          1724,
+          131,
+          1735,
+          142
+        ],
+        "visualRadiusPx": 5
+      }
+    },
+    {
+      "id": "label-e",
+      "cluster": "orange-label",
+      "identification": "Upper-right terminal of the top stroke of the final orange E.",
+      "visibility": "sharp",
+      "high": {
+        "pointXY": [
+          2363,
+          132
+        ],
+        "candidateBoxXYXY": [
+          2358,
+          127,
+          2369,
+          138
+        ],
+        "visualRadiusPx": 5
+      },
+      "low": {
+        "pointXY": [
+          1855,
+          131
+        ],
+        "candidateBoxXYXY": [
+          1849,
+          125,
+          1862,
+          138
+        ],
+        "visualRadiusPx": 6
+      }
+    },
+    {
+      "id": "crest-shoulder",
+      "cluster": "hill",
+      "identification": "Right break of the dark hill plateau, where the crest turns into the descending diagonal.",
+      "visibility": "diffuse",
+      "high": {
+        "pointXY": [
+          395,
+          689
+        ],
+        "candidateBoxXYXY": [
+          382,
+          676,
+          409,
+          703
+        ],
+        "visualRadiusPx": 13
+      },
+      "low": {
+        "pointXY": [
+          293,
+          521
+        ],
+        "candidateBoxXYXY": [
+          276,
+          504,
+          311,
+          539
+        ],
+        "visualRadiusPx": 17
+      }
+    },
+    {
+      "id": "road-hook",
+      "cluster": "hill",
+      "identification": "Center of the pale upper hook of the zigzag path immediately below the hill plateau.",
+      "visibility": "diffuse",
+      "high": {
+        "pointXY": [
+          366,
+          747
+        ],
+        "candidateBoxXYXY": [
+          354,
+          735,
+          379,
+          760
+        ],
+        "visualRadiusPx": 12
+      },
+      "low": {
+        "pointXY": [
+          278,
+          567
+        ],
+        "candidateBoxXYXY": [
+          262,
+          551,
+          295,
+          584
+        ],
+        "visualRadiusPx": 16
+      }
+    },
+    {
+      "id": "left-pupil",
+      "cluster": "face",
+      "identification": "Center of the dark pupil in the eye at viewer left.",
+      "visibility": "sharp",
+      "high": {
+        "pointXY": [
+          669,
+          1026
+        ],
+        "candidateBoxXYXY": [
+          664,
+          1021,
+          675,
+          1032
+        ],
+        "visualRadiusPx": 5
+      },
+      "low": {
+        "pointXY": [
+          501,
+          798
+        ],
+        "candidateBoxXYXY": [
+          495,
+          792,
+          508,
+          805
+        ],
+        "visualRadiusPx": 6
+      }
+    },
+    {
+      "id": "hand-note-lip",
+      "cluster": "raised-note",
+      "identification": "Outer upper-left corner of the raised note above the hand, where its top lip turns down.",
+      "visibility": "sharp",
+      "high": {
+        "pointXY": [
+          898,
+          1029
+        ],
+        "candidateBoxXYXY": [
+          892,
+          1023,
+          905,
+          1036
+        ],
+        "visualRadiusPx": 6
+      },
+      "low": {
+        "pointXY": [
+          683,
+          814
+        ],
+        "candidateBoxXYXY": [
+          675,
+          806,
+          692,
+          823
+        ],
+        "visualRadiusPx": 8
+      }
+    },
+    {
+      "id": "central-note-left",
+      "cluster": "central-note",
+      "identification": "Outer lower-left corner of the vertically hanging center banknote.",
+      "visibility": "sharp",
+      "high": {
+        "pointXY": [
+          1320,
+          1232
+        ],
+        "candidateBoxXYXY": [
+          1314,
+          1226,
+          1327,
+          1239
+        ],
+        "visualRadiusPx": 6
+      },
+      "low": {
+        "pointXY": [
+          1011,
+          988
+        ],
+        "candidateBoxXYXY": [
+          1003,
+          980,
+          1020,
+          997
+        ],
+        "visualRadiusPx": 8
+      }
+    },
+    {
+      "id": "central-note-right",
+      "cluster": "central-note",
+      "identification": "Outer lower-right corner of the same center note at the end of its sloping lower border.",
+      "visibility": "sharp",
+      "high": {
+        "pointXY": [
+          1571,
+          1167
+        ],
+        "candidateBoxXYXY": [
+          1565,
+          1161,
+          1578,
+          1174
+        ],
+        "visualRadiusPx": 6
+      },
+      "low": {
+        "pointXY": [
+          1213,
+          945
+        ],
+        "candidateBoxXYXY": [
+          1205,
+          937,
+          1222,
+          954
+        ],
+        "visualRadiusPx": 8
+      }
+    },
+    {
+      "id": "right-note-tip",
+      "cluster": "right-note",
+      "identification": "Outer upper-right tip of the large foreground note at viewer right, where the upper diagonal edge turns down.",
+      "visibility": "sharp",
+      "high": {
+        "pointXY": [
+          2019,
+          1180
+        ],
+        "candidateBoxXYXY": [
+          2013,
+          1174,
+          2026,
+          1187
+        ],
+        "visualRadiusPx": 6
+      },
+      "low": {
+        "pointXY": [
+          1566,
+          973
+        ],
+        "candidateBoxXYXY": [
+          1558,
+          965,
+          1575,
+          982
+        ],
+        "visualRadiusPx": 8
+      }
+    },
+    {
+      "id": "fence-post-cap",
+      "cluster": "fence",
+      "identification": "Top center of the isolated dark upright to the left of the small horizontal fence rails.",
+      "visibility": "sharp",
+      "high": {
+        "pointXY": [
+          2187,
+          1352
+        ],
+        "candidateBoxXYXY": [
+          2181,
+          1346,
+          2194,
+          1359
+        ],
+        "visualRadiusPx": 6
+      },
+      "low": {
+        "pointXY": [
+          1697,
+          1112
+        ],
+        "candidateBoxXYXY": [
+          1689,
+          1104,
+          1706,
+          1121
+        ],
+        "visualRadiusPx": 8
+      }
+    },
+    {
+      "id": "right-mast-cap",
+      "cluster": "far-right-mast",
+      "identification": "First visible cap of the thin pale upright emerging at the far-right skyline.",
+      "visibility": "diffuse",
+      "high": {
+        "pointXY": [
+          2473,
+          1241
+        ],
+        "candidateBoxXYXY": [
+          2457,
+          1225,
+          2490,
+          1258
+        ],
+        "visualRadiusPx": 16
+      },
+      "low": {
+        "pointXY": [
+          1929,
+          1028
+        ],
+        "candidateBoxXYXY": [
+          1911,
+          1010,
+          1948,
+          1047
+        ],
+        "visualRadiusPx": 18
+      }
+    },
+    {
+      "id": "foreground-note-apex",
+      "cluster": "left-foreground-note",
+      "identification": "Point of the dark inner-border wedge at the rightward apex of the large foreground note entering from viewer left.",
+      "visibility": "diffuse",
+      "high": {
+        "pointXY": [
+          451,
+          1329
+        ],
+        "candidateBoxXYXY": [
+          441,
+          1319,
+          462,
+          1340
+        ],
+        "visualRadiusPx": 10
+      },
+      "low": {
+        "pointXY": [
+          313,
+          1034
+        ],
+        "candidateBoxXYXY": [
+          298,
+          1019,
+          329,
+          1050
+        ],
+        "visualRadiusPx": 15
+      }
+    }
+  ],
+  "candidateHullGeometry": {
+    "high": {
+      "targetBoxXYXY": [
+        1224,
+        300,
+        2404,
+        1100
+      ],
+      "targetBoxProvenance": "high qualitative exhibit source-check box",
+      "candidatePointHullXY": [
+        [
+          366,
+          747
+        ],
+        [
+          395,
+          689
+        ],
+        [
+          2204,
+          143
+        ],
+        [
+          2363,
+          132
+        ],
+        [
+          2473,
+          1241
+        ],
+        [
+          2187,
+          1352
+        ],
+        [
+          451,
+          1329
+        ]
+      ],
+      "sharpOnlyPointHullXY": [
+        [
+          669,
+          1026
+        ],
+        [
+          2204,
+          143
+        ],
+        [
+          2363,
+          132
+        ],
+        [
+          2187,
+          1352
+        ],
+        [
+          1320,
+          1232
+        ]
+      ],
+      "optimisticCandidateBoxHullXY": [
+        [
+          354,
+          735
+        ],
+        [
+          382,
+          676
+        ],
+        [
+          2200,
+          139
+        ],
+        [
+          2358,
+          127
+        ],
+        [
+          2369,
+          127
+        ],
+        [
+          2490,
+          1225
+        ],
+        [
+          2490,
+          1258
+        ],
+        [
+          2194,
+          1359
+        ],
+        [
+          2181,
+          1359
+        ],
+        [
+          441,
+          1340
+        ],
+        [
+          354,
+          760
+        ]
+      ],
+      "targetCorners": [
+        {
+          "pointXY": [
+            1224,
+            300
+          ],
+          "insideCandidatePointHull": false,
+          "insideSharpPointHull": false,
+          "insideOptimisticBoxHull": false
+        },
+        {
+          "pointXY": [
+            2404,
+            300
+          ],
+          "insideCandidatePointHull": false,
+          "insideSharpPointHull": false,
+          "insideOptimisticBoxHull": false
+        },
+        {
+          "pointXY": [
+            2404,
+            1100
+          ],
+          "insideCandidatePointHull": true,
+          "insideSharpPointHull": false,
+          "insideOptimisticBoxHull": true
+        },
+        {
+          "pointXY": [
+            1224,
+            1100
+          ],
+          "insideCandidatePointHull": true,
+          "insideSharpPointHull": true,
+          "insideOptimisticBoxHull": true
+        }
+      ],
+      "candidatePointHullXIntervalAtY": [
+        {
+          "y": 300,
+          "xInterval": [
+            1683.83,
+            2379.66
+          ]
+        },
+        {
+          "y": 400,
+          "xInterval": [
+            1352.51,
+            2389.58
+          ]
+        },
+        {
+          "y": 500,
+          "xInterval": [
+            1021.19,
+            2399.5
+          ]
+        },
+        {
+          "y": 600,
+          "xInterval": [
+            689.87,
+            2409.42
+          ]
+        },
+        {
+          "y": 700,
+          "xInterval": [
+            389.5,
+            2419.34
+          ]
+        },
+        {
+          "y": 800,
+          "xInterval": [
+            373.74,
+            2429.26
+          ]
+        },
+        {
+          "y": 900,
+          "xInterval": [
+            388.35,
+            2439.18
+          ]
+        },
+        {
+          "y": 1000,
+          "xInterval": [
+            402.95,
+            2449.1
+          ]
+        },
+        {
+          "y": 1100,
+          "xInterval": [
+            417.55,
+            2459.01
+          ]
+        }
+      ],
+      "candidatePointHullYIntervalAtX": [
+        {
+          "x": 1224,
+          "yInterval": [
+            438.79,
+            1339.24
+          ]
+        },
+        {
+          "x": 1400,
+          "yInterval": [
+            385.67,
+            1341.57
+          ]
+        },
+        {
+          "x": 1600,
+          "yInterval": [
+            325.3,
+            1344.22
+          ]
+        },
+        {
+          "x": 1800,
+          "yInterval": [
+            264.94,
+            1346.87
+          ]
+        },
+        {
+          "x": 2000,
+          "yInterval": [
+            204.57,
+            1349.52
+          ]
+        },
+        {
+          "x": 2200,
+          "yInterval": [
+            144.21,
+            1346.95
+          ]
+        },
+        {
+          "x": 2404,
+          "yInterval": [
+            545.35,
+            1267.78
+          ]
+        }
+      ]
+    },
+    "low": {
+      "targetBoxXYXY": [
+        1000,
+        260,
+        1510,
+        355
+      ],
+      "targetBoxProvenance": "locked low scan two-reader intersection",
+      "candidatePointHullXY": [
+        [
+          278,
+          567
+        ],
+        [
+          293,
+          521
+        ],
+        [
+          1729,
+          136
+        ],
+        [
+          1855,
+          131
+        ],
+        [
+          1929,
+          1028
+        ],
+        [
+          1697,
+          1112
+        ],
+        [
+          313,
+          1034
+        ]
+      ],
+      "sharpOnlyPointHullXY": [
+        [
+          501,
+          798
+        ],
+        [
+          1729,
+          136
+        ],
+        [
+          1855,
+          131
+        ],
+        [
+          1697,
+          1112
+        ],
+        [
+          1011,
+          988
+        ]
+      ],
+      "optimisticCandidateBoxHullXY": [
+        [
+          262,
+          551
+        ],
+        [
+          276,
+          504
+        ],
+        [
+          1724,
+          131
+        ],
+        [
+          1849,
+          125
+        ],
+        [
+          1862,
+          125
+        ],
+        [
+          1948,
+          1010
+        ],
+        [
+          1948,
+          1047
+        ],
+        [
+          1706,
+          1121
+        ],
+        [
+          1689,
+          1121
+        ],
+        [
+          298,
+          1050
+        ],
+        [
+          262,
+          584
+        ]
+      ],
+      "targetCorners": [
+        {
+          "pointXY": [
+            1000,
+            260
+          ],
+          "insideCandidatePointHull": false,
+          "insideSharpPointHull": false,
+          "insideOptimisticBoxHull": false
+        },
+        {
+          "pointXY": [
+            1510,
+            260
+          ],
+          "insideCandidatePointHull": true,
+          "insideSharpPointHull": true,
+          "insideOptimisticBoxHull": true
+        },
+        {
+          "pointXY": [
+            1510,
+            355
+          ],
+          "insideCandidatePointHull": true,
+          "insideSharpPointHull": true,
+          "insideOptimisticBoxHull": true
+        },
+        {
+          "pointXY": [
+            1000,
+            355
+          ],
+          "insideCandidatePointHull": true,
+          "insideSharpPointHull": false,
+          "insideOptimisticBoxHull": true
+        }
+      ],
+      "candidatePointHullXIntervalAtY": [
+        {
+          "y": 260,
+          "xInterval": [
+            1266.5,
+            1865.64
+          ]
+        },
+        {
+          "y": 300,
+          "xInterval": [
+            1117.3,
+            1868.94
+          ]
+        },
+        {
+          "y": 355,
+          "xInterval": [
+            912.16,
+            1873.48
+          ]
+        },
+        {
+          "y": 400,
+          "xInterval": [
+            744.31,
+            1877.19
+          ]
+        },
+        {
+          "y": 500,
+          "xInterval": [
+            371.33,
+            1885.44
+          ]
+        },
+        {
+          "y": 600,
+          "xInterval": [
+            280.47,
+            1893.69
+          ]
+        },
+        {
+          "y": 700,
+          "xInterval": [
+            287.97,
+            1901.94
+          ]
+        },
+        {
+          "y": 800,
+          "xInterval": [
+            295.46,
+            1910.19
+          ]
+        },
+        {
+          "y": 900,
+          "xInterval": [
+            302.96,
+            1918.44
+          ]
+        },
+        {
+          "y": 1000,
+          "xInterval": [
+            310.45,
+            1926.69
+          ]
+        }
+      ],
+      "candidatePointHullYIntervalAtX": [
+        {
+          "x": 1000,
+          "yInterval": [
+            331.45,
+            1072.72
+          ]
+        },
+        {
+          "x": 1100,
+          "yInterval": [
+            304.64,
+            1078.35
+          ]
+        },
+        {
+          "x": 1200,
+          "yInterval": [
+            277.83,
+            1083.99
+          ]
+        },
+        {
+          "x": 1300,
+          "yInterval": [
+            251.02,
+            1089.63
+          ]
+        },
+        {
+          "x": 1400,
+          "yInterval": [
+            224.21,
+            1095.26
+          ]
+        },
+        {
+          "x": 1510,
+          "yInterval": [
+            194.72,
+            1101.46
+          ]
+        }
+      ]
+    }
+  },
+  "edgeObservations": [
+    {
+      "id": "upper-photo-left-segment",
+      "highInspectionBoxXYXY": [
+        210,
+        244,
+        535,
+        294
+      ],
+      "lowInspectionBoxXYXY": [
+        224,
+        154,
+        539,
+        245
+      ],
+      "observation": "The pale photo/header boundary is visible, but the continuous edge gives no unique shared point along it. The low scan shadow obscures the left endpoint.",
+      "usedInHull": false
+    },
+    {
+      "id": "upper-photo-right-segment",
+      "highInspectionBoxXYXY": [
+        2180,
+        231,
+        2505,
+        290
+      ],
+      "lowInspectionBoxXYXY": [
+        1725,
+        197,
+        2020,
+        258
+      ],
+      "observation": "The upper photo boundary remains visible. The low scan includes bent outer paper and page-stack edges. The high image meets its raster boundary, so the same outer printed corner cannot be established.",
+      "usedInHull": false
+    }
+  ],
+  "inspectionExhibits": [
+    {
+      "path": "LANDMARK_CONTEXTS.png",
+      "sha256": "32754b3e121d2f6bd9708eacfb46d8ca3f2977481200f7d976c5d76c1cc484ea"
+    },
+    {
+      "path": "LANDMARK_EXTRA_CONTEXTS.png",
+      "sha256": "ce4dce6ae7fe0878e0767f9710efb2ff118cf87c3e229df340e0a5d66da9525b"
+    }
+  ],
+  "limitations": [
+    "Single-reviewer approximate landmarks require repeatability checks. Candidate-point hulls describe geometric support only.",
+    "The top label points share one printed object and do not provide distributed upper landmarks.",
+    "The full target boxes extend outside even the optimistic candidate-box hulls. Future holdout boxes need their own complete containment check."
+  ],
+  "activity": {
+    "fitTransforms": 0,
+    "ghostMatches": 0,
+    "targetScores": 0,
+    "glyphDecodes": 0,
+    "publicEdits": 0
+  }
+}
