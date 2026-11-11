@@ -1,0 +1,130 @@
+{
+  "protocolSha256": "aa5b9c86a9534d34ec27ebdec28c44bf6aeec42f84fcc22d657e88cd152270e6",
+  "scriptSha256": "efdabf99608375b0afa13d27fc4b5349e72fa3f5f821aabf01c903a7305e1a1d",
+  "cases": {
+    "cutout-to-seal": {
+      "mapping": {
+        "scale": 0.945,
+        "xOffset": 0,
+        "yOffset": 285,
+        "insideGrid": true
+      },
+      "calibrationMean": 0.9567930064641853,
+      "calibrationScores": {
+        "glasses": 0.9771022842955873,
+        "heading": 0.9373178460055697,
+        "beard": 0.955958889091399
+      },
+      "holdouts": {
+        "jacket": {
+          "score": 0.9284728278440276,
+          "displacedScores": [
+            0.0380950761889024,
+            0.26700673136404196,
+            0.07961701915957146,
+            0.3145522147739752
+          ],
+          "displacedGap": 0.6139206130700524,
+          "passed": true
+        },
+        "page-art": {
+          "score": 0.9812864674802153,
+          "displacedScores": [
+            0.3216737958554042,
+            0.29364345054966473,
+            0.26595095705833127,
+            0.21634231969756723
+          ],
+          "displacedGap": 0.6596126716248112,
+          "passed": true
+        },
+        "trousers": {
+          "score": -0.22953286558717836,
+          "displacedScores": [
+            -0.513958505188994,
+            -0.10106577040403897,
+            -0.5382800639535997,
+            -0.22599300818512538
+          ],
+          "displacedGap": -0.1284670951831394,
+          "passed": false
+        },
+        "sleeve": {
+          "score": 0.9845245810640371,
+          "displacedScores": [
+            -0.09300694329363425,
+            0.47447477352864437,
+            0.8320633242472669,
+            0.8731282423047044
+          ],
+          "displacedGap": 0.11139633875933264,
+          "passed": true
+        }
+      },
+      "holdoutsPassing": 3,
+      "supported": true
+    },
+    "cover-reply-to-2022-news": {
+      "mapping": {
+        "scale": 6.4,
+        "xOffset": 0,
+        "yOffset": 0,
+        "insideGrid": true
+      },
+      "calibrationMean": 0.9646070071570901,
+      "calibrationScores": {
+        "face": 0.9823281314326592,
+        "magazine": 0.9387448908945808,
+        "flag": 0.9727479991440305
+      },
+      "holdouts": {
+        "hand": {
+          "score": 0.9843266883754128,
+          "displacedScores": [
+            0.20276516878992687,
+            0.40975009644026983,
+            0.4599670542190602,
+            0.23300577026222327
+          ],
+          "displacedGap": 0.5243596341563526,
+          "passed": true
+        },
+        "seal": {
+          "score": 0.9687931838138245,
+          "displacedScores": [
+            0.2915824699415588,
+            0.24523623838338665,
+            0.07126059510746688,
+            0.14949908866020709
+          ],
+          "displacedGap": 0.6772107138722657,
+          "passed": true
+        },
+        "right-chair": {
+          "score": 0.9534513365123697,
+          "displacedScores": [
+            0.5034078660770266,
+            0.5294747226815729,
+            -0.294202973482896,
+            -0.057925603260219866
+          ],
+          "displacedGap": 0.42397661383079677,
+          "passed": true
+        },
+        "hoodie": {
+          "score": 0.9461369002154069,
+          "displacedScores": [
+            -0.1163308531650577,
+            0.5520277434673568,
+            0.5259553082954048,
+            0.4767364797859657
+          ],
+          "displacedGap": 0.39410915674805,
+          "passed": true
+        }
+      },
+      "holdoutsPassing": 4,
+      "supported": true
+    }
+  }
+}

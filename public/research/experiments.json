@@ -1372,6 +1372,29 @@
       "limitations": [
         "Ink extents and observed gap examples cannot establish exact type bearings, the composition method or frame width."
       ]
+    },
+    {
+      "id": "march-announcement-photo-lineage",
+      "title": "March announcement photo provenance",
+      "status": "tested",
+      "kind": "source-audit",
+      "independentTheory": false,
+      "scope": "Compare four pinned public photos with two fixed scale and translation fits and verify the five March reply relationships.",
+      "result": "Three of four held-out crops support the shared open-spread foreground. Four of four support the cover reply’s match to a February 2022 news photo. Four later posts reply directly to the announcement, and one replies to the first open-spread reply. The car reply borrows from the desert convertible scene in Fear and Loathing in Las Vegas. The exact film frame remains unverified.",
+      "evidence": [
+        "analysis_outputs/continuation_20261111/announcement_photo_lineage/RESULT.md",
+        "analysis_outputs/continuation_20261111/announcement_photo_lineage/RESULT.json",
+        "analysis_outputs/continuation_20261111/announcement_photo_lineage/MEASUREMENTS.json",
+        "analysis_outputs/continuation_20261111/announcement_photo_lineage/SOURCE_POSTS.json",
+        "analysis_outputs/continuation_20261111/announcement_photo_lineage/PROTOCOL.json",
+        "scripts/check_announcement_photo_lineage.py"
+      ],
+      "reproduce": [
+        "Fetch the four public photos at their pinned URLs. Run the comparison and check the exact crop and control scores."
+      ],
+      "limitations": [
+        "The first pair’s trousers crop failed. The matched upper scene cannot independently date the opening-spread exposure. Reuse does not establish creator intent."
+      ]
     }
   ],
   "countingPolicy": "This is a curated set of method families/source audits, not a total count of independent theories. Historical administrative gates and correlated variants are not counted as independent experiments. Falsified means only the concrete stated candidate/address scope.",

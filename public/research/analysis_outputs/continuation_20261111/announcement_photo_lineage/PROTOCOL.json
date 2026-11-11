@@ -1,0 +1,291 @@
+{
+  "version": 1,
+  "assets": {
+    "announcement": {
+      "file": "march-FqZGAb7aYAEdnKL.jpg",
+      "url": "https://pbs.twimg.com/media/FqZGAb7aYAEdnKL.jpg",
+      "sha256": "6cee65380ce986fe9b2ca2532db9ddcf7f159eac3ce5a851bdf323a329e81609",
+      "size": [
+        828,
+        967
+      ]
+    },
+    "sealReply": {
+      "file": "march-FqZGH-oaAAcL8y5.jpg",
+      "url": "https://pbs.twimg.com/media/FqZGH-oaAAcL8y5.jpg",
+      "sha256": "815722cef9efd8d26749e762a4b71bde11178723652503bbe6e1316692ddb32a",
+      "size": [
+        782,
+        1200
+      ]
+    },
+    "coverReply": {
+      "file": "march-FqaB47TagAEbd2r.jpg",
+      "url": "https://pbs.twimg.com/media/FqaB47TagAEbd2r.jpg",
+      "sha256": "45a9a2a8ec9358f3fbb954a8dc9262a6dcd3e8279691eec3dd6b2ee3883d9e59",
+      "size": [
+        300,
+        168
+      ]
+    },
+    "diarioHero": {
+      "file": "diario-hero.jpg",
+      "url": "https://i0.wp.com/diarioelsalvador.com/wp-content/uploads/2022/02/FLSnFQuXMBYVjQ2-e1644557552875.jpeg?w=1920&quality=85",
+      "sha256": "7328d3f29f8d7f1d185a666e9cf42e3344c915d3091c6fe1bfa5369277727746",
+      "size": [
+        1920,
+        1074
+      ]
+    }
+  },
+  "comparisons": {
+    "cutout-to-seal": {
+      "target": "announcement",
+      "reference": "sealReply",
+      "calibration": {
+        "glasses": [
+          237,
+          81,
+          327,
+          122
+        ],
+        "heading": [
+          173,
+          263,
+          280,
+          288
+        ],
+        "beard": [
+          518,
+          123,
+          588,
+          190
+        ]
+      },
+      "holdouts": {
+        "jacket": [
+          72,
+          222,
+          143,
+          270
+        ],
+        "page-art": [
+          286,
+          296,
+          396,
+          384
+        ],
+        "trousers": [
+          83,
+          671,
+          193,
+          765
+        ],
+        "sleeve": [
+          703,
+          260,
+          763,
+          332
+        ]
+      },
+      "scales": [
+        0.941,
+        0.942,
+        0.943,
+        0.944,
+        0.945,
+        0.946,
+        0.947,
+        0.948,
+        0.949,
+        0.95,
+        0.951,
+        0.952,
+        0.953,
+        0.954,
+        0.955,
+        0.956,
+        0.957,
+        0.958,
+        0.959,
+        0.96,
+        0.961,
+        0.962,
+        0.963
+      ],
+      "xOffsets": [
+        -9,
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "yOffsets": [
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296
+      ],
+      "controlShiftTargetPx": 19
+    },
+    "cover-reply-to-2022-news": {
+      "target": "coverReply",
+      "reference": "diarioHero",
+      "calibration": {
+        "face": [
+          100,
+          22,
+          143,
+          63
+        ],
+        "magazine": [
+          119,
+          102,
+          149,
+          145
+        ],
+        "flag": [
+          31,
+          40,
+          66,
+          101
+        ]
+      },
+      "holdouts": {
+        "hand": [
+          65,
+          72,
+          89,
+          98
+        ],
+        "seal": [
+          150,
+          11,
+          211,
+          60
+        ],
+        "right-chair": [
+          226,
+          127,
+          279,
+          151
+        ],
+        "hoodie": [
+          178,
+          77,
+          205,
+          116
+        ]
+      },
+      "scales": [
+        6.25,
+        6.275,
+        6.3,
+        6.325,
+        6.35,
+        6.375,
+        6.4,
+        6.425,
+        6.45,
+        6.475,
+        6.5,
+        6.525,
+        6.55
+      ],
+      "xOffsets": [
+        -20,
+        -18,
+        -16,
+        -14,
+        -12,
+        -10,
+        -8,
+        -6,
+        -4,
+        -2,
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "yOffsets": [
+        -24,
+        -22,
+        -20,
+        -18,
+        -16,
+        -14,
+        -12,
+        -10,
+        -8,
+        -6,
+        -4,
+        -2,
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24
+      ],
+      "controlShiftTargetPx": 8
+    }
+  },
+  "gates": {
+    "minimumCalibrationMean": 0.91,
+    "minimumHoldoutScore": 0.88,
+    "minimumDisplacedGap": 0.08,
+    "minimumHoldouts": 3
+  }
+}
