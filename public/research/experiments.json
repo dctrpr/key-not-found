@@ -1281,15 +1281,19 @@
       "kind": "method-test",
       "independentTheory": false,
       "scope": "Compare seven native page 75 templates against reflected page 74 with equally searched controls in two retained rasters.",
-      "result": "The sharper raster supports a heading shift of −44, −1 pixels, shared by four of five body holdouts. The lower-resolution heading offsets disagree vertically by 18 pixels and no body holdout passes its local gate.",
+      "result": "The sharper raster supports a heading shift of −44, −1 pixels, shared by four of five body holdouts. The lower-resolution heading offsets disagree vertically by 18 pixels and no body holdout passes its local gate. In a follow-up, the same-face map passed for page 75 and failed for page 74. No second-scan window had both validated geometry and sufficient coverage.",
       "evidence": [
         "analysis_outputs/continuation_20261111/heading_pixel_match/RESULT.md",
         "analysis_outputs/continuation_20261111/heading_pixel_match/SCORES.json",
         "analysis_outputs/continuation_20261111/heading_pixel_match/PROTOCOL.md",
-        "scripts/measure_issue24_heading_pixels.py"
+        "scripts/measure_issue24_heading_pixels.py",
+        "analysis_outputs/continuation_20261111/heading_scan_transfer/RESULT.md",
+        "analysis_outputs/continuation_20261111/heading_scan_transfer/MEASUREMENTS.json",
+        "analysis_outputs/continuation_20261111/heading_scan_transfer/PROTOCOL.md"
       ],
       "reproduce": [
-        "Run the controlled heading-pixel comparison from the pinned protocol. Compare all offsets, runner-up peaks and controls against the exact score receipt."
+        "Run the controlled heading-pixel comparison from the pinned protocol. Compare all offsets, runner-up peaks and controls against the exact score receipt.",
+        "Replay the same-face calibration and held-out landmark checks. The saved outcome has no eligible target pixel window."
       ],
       "limitations": [
         "The translation is local to one raster. The scans cannot determine the physical source of the faint marks or a global registration."

@@ -34,4 +34,6 @@ The [line-start audit frame](https://keynotfound.com/#visual-issue24-line-start-
 
 The [heading pixel comparison](https://keynotfound.com/#visual-issue24-heading-pixel-match) opens page 74 in the mirror viewer. The report records the fixed shift from the sharper scan’s heading, four passing body holdouts and the lower-resolution disagreement. The viewer shows the source and its reflection. The exact offsets and control scores are in the report. [Pixel comparison](analysis_outputs/continuation_20261111/heading_pixel_match/RESULT.md)
 
+The [scan transfer frame](https://keynotfound.com/#visual-issue24-heading-scan-transfer) links the ordinary printed landmarks used to check geometry between scans. Page 75 passes. Page 74 fails the held-out check and the heading lacks adequate landmark coverage, so the faint target has no transfer score. [Transfer report](analysis_outputs/continuation_20261111/heading_scan_transfer/RESULT.md)
+
 The puzzle remains unsolved. The 3D display and visual log do not verify the prize funding.

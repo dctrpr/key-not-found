@@ -1162,6 +1162,58 @@
           "height": 800
         }
       ]
+    },
+    {
+      "id": "issue24-heading-scan-transfer",
+      "completedAtUTC": "2026-11-11T03:17:49Z",
+      "title": "Page 74’s geometry falls short.",
+      "summary": "Use ordinary printed landmarks to predict how each face moves between scans.",
+      "result": "Page 75 passes. Page 74’s held-out errors and coverage leave the faint target unscored.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Held-out landmarks",
+          "value": 15,
+          "pointer": "/metrics/heldOutLandmarks"
+        },
+        {
+          "label": "Faces with validated geometry",
+          "value": 1,
+          "pointer": "/metrics/facesPassingGeometry"
+        },
+        {
+          "label": "Faint windows scored",
+          "value": 0,
+          "pointer": "/metrics/targetWindowsScored"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261111/heading_scan_transfer/RESULT.json",
+        "sha256": "861fdc5fc956aee3766342f34b081234b3b5640e63dee4f9c7a9b0dda99af51e"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261111/heading_scan_transfer/RESULT.md",
+      "scene": {
+        "layout": "mirror",
+        "page": 74
+      },
+      "sceneNote": "The 3D viewer shows page 74 and its reflection. The excerpts show ordinary same-face landmarks from both scans.",
+      "methodId": "issue24-heading-pixel-match",
+      "exhibits": [
+        {
+          "path": "/research/analysis_outputs/continuation_20261111/heading_scan_transfer/LANDMARK_CONTEXTS.png",
+          "sha256": "32754b3e121d2f6bd9708eacfb46d8ca3f2977481200f7d976c5d76c1cc484ea",
+          "label": "Same-face landmarks · sharp label and artwork",
+          "width": 740,
+          "height": 1261
+        },
+        {
+          "path": "/research/analysis_outputs/continuation_20261111/heading_scan_transfer/LANDMARK_EXTRA_CONTEXTS.png",
+          "sha256": "ce4dce6ae7fe0878e0767f9710efb2ff118cf87c3e229df340e0a5d66da9525b",
+          "label": "Additional landmarks and the upper print edge",
+          "width": 830,
+          "height": 985
+        }
+      ]
     }
   ]
 }

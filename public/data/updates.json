@@ -2,6 +2,20 @@
   "updatedOn": "2026-11-11",
   "updates": [
     {
+      "id": "issue24-heading-scan-transfer-result",
+      "date": "2026-11-11",
+      "completedAtUTC": "2026-11-11T03:17:49Z",
+      "category": "SOURCE RESULT",
+      "title": "Page 74’s geometry falls short.",
+      "body": "Ordinary print on page 75 transferred within 1.04 pixels at worst. Page 74’s worst held-out error was 15.02 pixels, above the 12-pixel limit. Neither heading half met the landmark coverage requirement. No faint-target window qualified for scoring.",
+      "evidence": "/research/analysis_outputs/continuation_20261111/heading_scan_transfer/RESULT.md",
+      "kind": "research",
+      "methodIds": [
+        "issue24-heading-pixel-match"
+      ],
+      "branchId": "mirror-layout"
+    },
+    {
       "id": "issue24-heading-pixel-match-result",
       "date": "2026-11-11",
       "completedAtUTC": "2026-11-11T03:00:21Z",

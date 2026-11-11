@@ -1,20 +1,24 @@
 #!/usr/bin/env python3
 """Predict a second-scan correspondence from independent same-face landmarks."""
 import argparse
+from hashlib import sha256
 import json
 from pathlib import Path
 
 import numpy as np
 
-from measure_issue24_heading_pixels import ROOT, box_blur, digest, load_pages
-
-
+ROOT = Path(__file__).resolve().parents[1]
 DIRECTORY = ROOT / "analysis_outputs/continuation_20261111/heading_scan_transfer"
 
 
+def digest(raw):
+    return sha256(raw).hexdigest()
+
+
 def apply(matrix, points):
-    points = np.asarray(points, dtype=float)
-    return points @ matrix[:2, :2].T + matrix[:2, 2]
+    x, y = np.asarray(points, dtype=float).T
+    return np.column_stack((matrix[0, 0] * x + matrix[0, 1] * y + matrix[0, 2],
+                            matrix[1, 0] * x + matrix[1, 1] * y + matrix[1, 2]))
 
 
 def reflect(points, width):
@@ -32,7 +36,7 @@ def affine(source, target):
         raise ValueError("Calibration landmarks do not determine an affine map")
     linear = coeff[:2].T / scale
     translation = coeff[2] - linear @ center
-    matrix = np.row_stack((np.column_stack((linear, translation)), [0, 0, 1]))
+    matrix = np.vstack((np.column_stack((linear, translation)), [0, 0, 1]))
     return matrix, float(np.linalg.cond(design))
 
 
@@ -196,6 +200,8 @@ def analyze(spec):
     targets = [(feature, mask) for feature, mask in supported if feature["targetEligible"]]
     hashes = {}
     if targets:
+        from measure_issue24_heading_pixels import box_blur, load_pages
+
         images, hashes = load_pages(sources[1], [74, 75, 76, 78])
         filters = {}
         for page, image in images.items():
