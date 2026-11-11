@@ -1,0 +1,60 @@
+{
+  "id": "sand-terminal-echo",
+  "archives": [
+    {
+      "capture": "2021-01-26T16:34:51Z",
+      "sha256": "c8222a1debad6e62f451090ee978d021f04bd0cbc78d5e3891c3879b58c415ef",
+      "priorReceipt": {
+        "path": "analysis_outputs/continuation_20261111/sand_archive_context/EARLIER_COMPARISON.json",
+        "sha256": "26b9b434f15aae7aaf7e5d1c43355e68d7e14637f2f7526ee2cb58b4000d070e"
+      }
+    },
+    {
+      "capture": "2022-12-26T15:16:50Z",
+      "sha256": "fc27e630115adf842a53d51fea2ad288b7f7d2df96ffe72fa4260559d3e5cca7",
+      "priorReceipt": {
+        "path": "analysis_outputs/continuation_20261111/sand_archive_context/SAME_DAY_COMPARISON.json",
+        "sha256": "975f4a06839af6926c6f1c50e7455afbfce931aa83c6bf84fbd0d1ba6b5f1a43"
+      }
+    }
+  ],
+  "issue24": {
+    "path": "sources/issue24-column151/SOURCE.json",
+    "sha256": "24242d3a31469a7bff5765a756fa51f6f8cfbd40f4a51737d852a172cd117c02",
+    "units": 151,
+    "pullQuoteBodyRowIds": ["p78r04", "p78r05"]
+  },
+  "issue24Body": {
+    "path": "sources/printed-lines.json",
+    "sha256": "c3b03304e932e52cebeea665dc52c9e78f40badf42a43d661140e2c4647b1ebe",
+    "rows": 142
+  },
+  "issue26": {
+    "path": "sources/issue26/issue26-source.json",
+    "sha256": "1ff7a0a26c1e91fb2bfef9817693419979fdf39381d4124c2c9e5e7739f73c67",
+    "flowBlock": "p102-intro",
+    "rowIds": ["p102r01", "p102r02", "p102r03", "p102r04", "p102r05", "p102r06", "p102r07", "p102r08", "p102r09"],
+    "nextRowId": "p102r10"
+  },
+  "issue26Assets": [
+    {
+      "path": "sources/issue26/page_03.jpg",
+      "sha256": "bd88ecc69fe5215aaf370a97520cb7668d9b67c43395f4d36544cd3b5a6081f7"
+    },
+    {
+      "path": "sources/issue26/firstword-review/p102-01-12.png",
+      "sha256": "e4496dbca823d4f9bbb77e432752fadf35dd9479d96e495775c03601e4c0bb49"
+    }
+  ],
+  "issue26SavedReadings": {
+    "path": "analysis_outputs/continuation_20261110/issue26_firstwords/READINGS.jsonl.gz",
+    "sha256": "83fe1bbf4fbe7e4f93a82b136445d314225816943e41e6c027ded89939e7e98a",
+    "records": 39744
+  },
+  "semanticReview": {
+    "positiveControl": "read the first words of every second line",
+    "negativeControl": "the old paper sits beside a printed magazine",
+    "rubric": "Does the literal text specify both a complete concrete action and the unit or object it applies to? Preserve case and punctuation, use each string once, and do not rearrange, supply missing words, reinterpret as initials, or assume outside context. A coherent observation or fragment does not pass. Use instruction, no-instruction, or uncertain, with one brief reason.",
+    "acceptance": "Two fresh AI contexts. Both must recognize the positive and reject the negative for target responses to qualify. Keep raw judgments, including disagreements."
+  }
+}
