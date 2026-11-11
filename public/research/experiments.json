@@ -304,6 +304,28 @@
       ]
     },
     {
+      "id": "march-bitcoin-beach-interview",
+      "title": "March Bitcoin Beach interview caption review",
+      "status": "tested",
+      "kind": "source-audit",
+      "independentTheory": false,
+      "scope": "Review every displayed caption from the March 2023 Keiser interview for an article-linked puzzle claim or reading instruction.",
+      "result": "The 719 cues cover causal-chaos rhetoric and a metaphor about Bitcoin reflecting character. No direct magazine puzzle reference, prize or reading instruction was recognized by either reader in their assigned range.",
+      "evidence": [
+        "analysis_outputs/continuation_20261111/bitcoin_beach_interview/RESULT.md",
+        "analysis_outputs/continuation_20261111/bitcoin_beach_interview/SOURCE.json",
+        "analysis_outputs/continuation_20261111/bitcoin_beach_interview/MEASUREMENTS.json",
+        "analysis_outputs/continuation_20261111/bitcoin_beach_interview/READER_RECEIPT.json",
+        "scripts/scan_bitcoin_beach_interview.py"
+      ],
+      "reproduce": [
+        "Capture the exact public transcript through Show transcript and run the linked cue scanner against the recorded snapshot hash."
+      ],
+      "limitations": [
+        "Two AI readers split the captions into complementary ranges. Captions have redactions and no speaker labels. Audio, visuals and recording date remain unverified."
+      ]
+    },
+    {
       "id": "author-manuscript",
       "title": "Independent author-controlled manuscript",
       "status": "untested",
