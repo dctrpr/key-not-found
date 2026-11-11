@@ -28,4 +28,6 @@ The four-population compatibility frame records 43,699 correlated saved records,
 
 The [full-page review frame](https://keynotfound.com/#visual-issue24-full-page-glyph-review) opens the actual page 74 scan in the 3D mirror viewer. Two excerpts show the reflected page 74 trace beside the upright page 75 heading. The comparison uses native pixels and matching nominal coordinates. Its physical alignment remains unmeasured. [Source comparison](analysis_outputs/continuation_20261111/full_page_glyph_review/SOURCE_CHECK.md)
 
+The [second-scan frame](https://keynotfound.com/#visual-issue24-second-scan-heading-review) adds the exact lower-resolution crops. Readers locked their page 74 observations before seeing the page 75 reference. The faint band yielded zero agreed words and zero matched glyph anchors. The 3D viewer opens the higher-resolution page 74 scan. [Second-scan review](analysis_outputs/continuation_20261111/second_scan_heading_review/RESULT.md)
+
 The puzzle remains unsolved. The 3D display and visual log do not verify the prize funding.

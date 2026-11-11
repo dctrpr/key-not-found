@@ -60,8 +60,9 @@ function date(value: unknown): string {
 function timestamp(value: unknown): string {
   const result = text(value, 24);
   const parsed = Date.parse(result);
-  if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/.test(result) || !Number.isFinite(parsed) ||
-      new Date(parsed).toISOString() !== result) {
+  const canonical = result.length === 20 ? result.replace('Z', '.000Z') : result;
+  if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?Z$/.test(result) || !Number.isFinite(parsed) ||
+      new Date(parsed).toISOString() !== canonical) {
     throw new Error('Invalid visual journal completion time');
   }
   return result;
@@ -130,7 +131,7 @@ function parseJournal(value: unknown): VisualJournal {
   }
   const entries = item.entries.map(entry);
   const updatedOn = date(item.updatedOn);
-  if (new Set(entries.map(frame => frame.id)).size !== entries.length || entries.some((frame, i) => i > 0 && frame.completedAtUTC < entries[i - 1].completedAtUTC) ||
+  if (new Set(entries.map(frame => frame.id)).size !== entries.length || entries.some((frame, i) => i > 0 && Date.parse(frame.completedAtUTC) < Date.parse(entries[i - 1].completedAtUTC)) ||
       updatedOn !== entries[entries.length - 1].completedAtUTC.slice(0, 10)) throw new Error('Inconsistent visual journal history');
   return { version: 1, updatedOn, caseStatus: 'unsolved', description: text(item.description, 700), entries };
 }

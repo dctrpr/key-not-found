@@ -1238,8 +1238,8 @@
       "status": "partial",
       "kind": "method-test",
       "independentTheory": false,
-      "scope": "Compare original ink and exact horizontal reflection in the 114 saved G07 regions, then inspect the full scans of printed pages 73–80 in 32 overlapping native tiles.",
-      "result": "Neither reader recognized a reading instruction. A lossless turn clarified the one disputed banknote crop. The original disagreement remains in the review. A box-coverage audit found 83 normal-view boxes wholly outside these windows. The full-page review reported no reversed letters or reading instruction and left 17 reports unclear. The reflected page 74 heading resembles ordinary printing on page 75.",
+      "scope": "Compare original ink and exact horizontal reflection in the 114 saved G07 regions, then inspect the full scans of printed pages 73–80 in 32 overlapping native tiles. Inspect the same faint heading feature in the second retained scan before showing the readers the page 75 reference.",
+      "result": "Neither reader recognized a reading instruction. A lossless turn clarified the one disputed banknote crop. The original disagreement remains in the review. A box-coverage audit found 83 normal-view boxes wholly outside these windows. The full-page review reported no reversed letters or reading instruction and left 17 reports unclear. The reflected page 74 heading resembles ordinary printing on page 75. In the lower-resolution scan, both readers marked the same faint band with zero agreed words. They both read page 75, leaving the association inconclusive under the declared rule.",
       "evidence": [
         "analysis_outputs/continuation_20261110/g07_glyph_review/PROTOCOL.md",
         "analysis_outputs/continuation_20261110/g07_glyph_review/SOURCE.md",
@@ -1254,7 +1254,8 @@
         "analysis_outputs/continuation_20261111/full_page_glyph_review/RESULT.md",
         "analysis_outputs/continuation_20261111/full_page_glyph_review/RESULT.json",
         "analysis_outputs/continuation_20261111/full_page_glyph_review/NATIVE_TILE_COVERAGE.md",
-        "analysis_outputs/continuation_20261111/full_page_glyph_review/SOURCE_CHECK.md"
+        "analysis_outputs/continuation_20261111/full_page_glyph_review/SOURCE_CHECK.md",
+        "analysis_outputs/continuation_20261111/second_scan_heading_review/RESULT.md"
       ],
       "reproduce": [
         "Regenerate the packet from the pinned PDF and saved coordinates using the protocol, then replay both reader receipts.",
@@ -1264,7 +1265,8 @@
       "limitations": [
         "The initial AI visual judgments apply to registered detector windows. The full-page follow-up covers the saved scan pixels, with faint, clipped and obscured marks still unresolved.",
         "Reader B used temporary diagnostic rotations for seven crops. The original disagreement stays in the frozen outcome.",
-        "The two headings show a qualitative resemblance. Physical alignment and the optical mechanism remain unmeasured."
+        "The two headings show a qualitative resemblance. Physical alignment and the optical mechanism remain unmeasured.",
+        "The second scan has insufficient readable detail in the faint band. Its acquisition history is unknown."
       ]
     }
   ],

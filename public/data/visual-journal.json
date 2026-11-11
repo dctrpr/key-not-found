@@ -1006,6 +1006,58 @@
           "height": 800
         }
       ]
+    },
+    {
+      "id": "issue24-second-scan-heading-review",
+      "completedAtUTC": "2026-11-11T00:42:59Z",
+      "title": "The trace is too faint to read.",
+      "summary": "Two readers marked the same faint band in the second scan. They recorded page 74 before seeing the page 75 heading.",
+      "result": "Neither reader could confidently read a word in the page 74 band. The match remains inconclusive.",
+      "diagram": "funnel",
+      "metrics": [
+        {
+          "label": "Independent readers",
+          "value": 2,
+          "pointer": "/counts/readers"
+        },
+        {
+          "label": "Agreed page 74 words",
+          "value": 0,
+          "pointer": "/counts/agreedPage74Words"
+        },
+        {
+          "label": "Matched glyph anchors",
+          "value": 0,
+          "pointer": "/counts/corroboratedGlyphAnchors"
+        }
+      ],
+      "source": {
+        "path": "analysis_outputs/continuation_20261111/second_scan_heading_review/RESULT.json",
+        "sha256": "c9f74a31e39d8d09e85c6b4f3228da6f99972832dc99b8dcba65823b48f31910"
+      },
+      "evidence": "/research/analysis_outputs/continuation_20261111/second_scan_heading_review/RESULT.md",
+      "scene": {
+        "layout": "mirror",
+        "page": 74
+      },
+      "sceneNote": "The 3D viewer opens page 74 in the higher-resolution scan. Both excerpts below come from the second retained scan.",
+      "methodId": "g07-glyph-orientation",
+      "exhibits": [
+        {
+          "path": "/research/analysis_outputs/continuation_20261111/second_scan_heading_review/exhibits/p74-second-scan-reflected.png",
+          "sha256": "d4492fc234aef6cd1e2edc77948265852b6aeed92db26d2f6af30e1ee6e1dd52",
+          "label": "Page 74 · faint trace, reflected",
+          "width": 2040,
+          "height": 1683
+        },
+        {
+          "path": "/research/analysis_outputs/continuation_20261111/second_scan_heading_review/exhibits/p75-second-scan-upright.png",
+          "sha256": "f50b0691f70cf985dbedd1cbf2aab9cf87b91fac1926f95eeb470843e299f1c1",
+          "label": "Page 75 · printed heading, upright",
+          "width": 2040,
+          "height": 1683
+        }
+      ]
     }
   ]
 }

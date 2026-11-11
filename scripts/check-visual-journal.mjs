@@ -9,7 +9,7 @@ assert.equal(data.version, 1);
 assert.equal(data.caseStatus, 'unsolved');
 assert.ok(data.entries.length > 0);
 const ids = new Set();
-let previous = '';
+let previous = -Infinity;
 for (const entry of data.entries) {
   assert.match(entry.id, /^[a-z0-9-]+$/);
   assert.ok(!ids.has(entry.id)); ids.add(entry.id);
@@ -23,7 +23,9 @@ for (const entry of data.entries) {
   assert.equal(crypto.createHash('sha256').update(raw).digest('hex'), entry.source.sha256);
   const result = JSON.parse(raw);
   assert.equal(entry.completedAtUTC, result.completedAtUTC);
-  assert.ok(entry.completedAtUTC >= previous); previous = entry.completedAtUTC;
+  const completed = Date.parse(entry.completedAtUTC);
+  assert.ok(completed >= previous);
+  previous = completed;
   assert.equal(entry.evidence, '/research/' + entry.source.path.replace(/\.json$/, '.md'));
   assert.ok(fs.existsSync(path.join(root, 'public', entry.evidence)));
   assert.equal(entry.metrics.length, 3);
@@ -36,6 +38,48 @@ for (const entry of data.entries) {
       value = value.filter(q => q.activity).length;
     } else assert.equal(metric.operation, undefined);
     assert.equal(value, metric.value, 'Visual metric differs from its frozen result');
+  }
+  if (entry.id === 'issue24-second-scan-heading-review') {
+    assert.equal(entry.methodId, 'g07-glyph-orientation');
+    assert.deepEqual(entry.scene, { layout: 'mirror', page: 74 });
+    assert.equal(result.testId, entry.id);
+    assert.ok(['corroborated', 'contradicted-at-observed-feature', 'inconclusive'].includes(result.outcome));
+    assert.deepEqual(result.activity, { newOCRCalls: 0, fittedTransforms: 0, keyChecks: 0 });
+    const base = path.dirname(path.join(root, 'public/research', entry.source.path));
+    const digest = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
+    const readPinned = (name, hash) => {
+      const bytes = fs.readFileSync(path.join(base, name));
+      assert.equal(digest(bytes), hash);
+      return JSON.parse(bytes);
+    };
+    const packet = readPinned('PACKET_MANIFEST.json', result.packetManifestSha256);
+    const lock = readPinned('STAGE1_LOCK.json', result.stage1LockSha256);
+    readPinned('PROTOCOL.json', result.protocolSha256);
+    assert.equal(lock.packetManifestSha256, result.packetManifestSha256);
+    assert.equal(result.counts.stageReceipts, 4);
+    for (const label of ['A', 'B']) {
+      const hashes = result.readerReceiptHashes[label];
+      const stage1 = readPinned('READER_' + label + '_STAGE1.json', hashes.stage1);
+      const stage2 = readPinned('READER_' + label + '_STAGE2.json', hashes.stage2);
+      assert.equal(lock.receiptHashes[label], hashes.stage1);
+      assert.equal(stage2.stage1ReceiptSha256, hashes.stage1);
+      assert.equal(stage1.page75ReferenceSeen, false);
+      assert.equal(stage2.page75ReferenceSeen, true);
+    }
+    const stages = [packet.stages.stage1, packet.stages.stage2];
+    const sourceAssets = [stages[0].assets.find(asset => asset.orientation === 'horizontal-mirror'),
+      stages[1].assets.find(asset => asset.orientation === 'upright')];
+    assert.equal(entry.exhibits.length, sourceAssets.length);
+    for (const [index, exhibit] of entry.exhibits.entries()) {
+      const asset = sourceAssets[index];
+      const bytes = fs.readFileSync(path.join(root, 'public', exhibit.path));
+      assert.equal(digest(bytes), asset.sha256);
+      assert.equal(exhibit.sha256, asset.sha256);
+      assert.equal(bytes.readUInt32BE(16), asset.width);
+      assert.equal(bytes.readUInt32BE(20), asset.height);
+      assert.equal(exhibit.width, asset.width);
+      assert.equal(exhibit.height, asset.height);
+    }
   }
   if (entry.id === 'issue24-full-page-glyph-review') {
     assert.equal(entry.diagram, 'funnel');
