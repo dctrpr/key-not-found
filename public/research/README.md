@@ -10,6 +10,8 @@ The [visual lab and dated frames](VISUAL_GUIDE.md) make the source pages and com
 
 ## Research is continuing
 
+The archived George Sand page captured 67 minutes after Keiser's post has 22 lines in the opening letter. The later edit adds an odd line for its last word. The two first-word examples are unchanged across both archived captures and the current page. [Archived clue comparison](analysis_outputs/continuation_20261111/sand_archive_context/RESULT.md)
+
 Two readers independently inventoried 142 body lines from the second scan. Interior cues align 139 rows with the existing model, and source inspection confirms the three short rows. No changed lexical edge or physical line break was found. One initial-letter case remains unsettled across the source views. [Line-start audit](analysis_outputs/continuation_20261111/line_start_audit/RESULT.md) · [Visual frame](https://keynotfound.com/#visual-issue24-line-start-audit)
 
 In the second scan, both readers marked the same faint page 74 band before seeing page 75. They could not read a word in the band, and both read the upright page 75 heading. The proposed match remains inconclusive. The next text-source check compares the 142 body line starts across the two scans. [Second-scan review](analysis_outputs/continuation_20261111/second_scan_heading_review/RESULT.md) · [Visual frame](https://keynotfound.com/#visual-issue24-second-scan-heading-review)

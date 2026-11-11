@@ -6,6 +6,8 @@ My independent investigation into the Bitcoin Magazine puzzle Max Keiser describ
 
 Two independent line inventories support all 142 body baselines across the retained scans. No changed lexical edge was found. One damaged initial retains conflicting case readings. [Line-start audit](public/research/analysis_outputs/continuation_20261111/line_start_audit/RESULT.md)
 
+The same-day archive of Keiser's George Sand link preserves the opening letter before its final-word line break changed. Both first-word examples match the current page. [Archived clue comparison](public/research/analysis_outputs/continuation_20261111/sand_archive_context/RESULT.md)
+
 ## Start here
 
 - [The film](https://keynotfound.com/#film): a 62-second explanation, with [reproducible source](scripts/explainer/README.md), captions and a transcript.

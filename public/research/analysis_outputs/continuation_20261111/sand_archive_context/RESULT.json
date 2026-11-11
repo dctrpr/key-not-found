@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "testId": "sand-archive-context",
+  "completedAtUTC": "2026-11-11T01:39:56.748Z",
+  "creatorPost": {
+    "url": "https://x.com/maxkeiser/status/1607378060172460032",
+    "postedAtUTC": "2022-12-26T14:09:27Z"
+  },
+  "counts": {
+    "archivedCaptures": 2,
+    "comparedDocuments": 3,
+    "quotationBlocksPerDocument": 3,
+    "openingLetterArchivedLines": 22,
+    "openingLetterCurrentLines": 23,
+    "matchingOpeningPrefixLines": 21,
+    "unchangedQuotationBlocks": 2,
+    "sameDayCaptureLagSeconds": 4043
+  },
+  "documents": {
+    "sameDayCapture": {
+      "url": "https://web.archive.org/web/20221226151650/https://ciphermysteries.com/2010/05/16/george-sands-cryptography",
+      "capturedAtUTC": "2022-12-26T15:16:50Z",
+      "rawSha256": "fc27e630115adf842a53d51fea2ad288b7f7d2df96ffe72fa4260559d3e5cca7",
+      "quoteBlocks": [
+        {
+          "visibleLines": 22,
+          "markedLineNumbers": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            17,
+            19,
+            21
+          ],
+          "visibleMarkupSha256": "d8049c53e1ecc547c40c0d2f9942d3208b792099e812e73fb911af236d1d869f"
+        },
+        {
+          "visibleLines": 9,
+          "markedLineNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "visibleMarkupSha256": "393d3d910983d610c3b8f95c2e36a213b7f73de48c911a27c073c80ead4fad69"
+        },
+        {
+          "visibleLines": 2,
+          "markedLineNumbers": [
+            1,
+            2
+          ],
+          "visibleMarkupSha256": "516324b90333ae689ffcc9f651ba4cf5521c0f6c50d1a309fcd5228477354d9a"
+        }
+      ]
+    },
+    "earlierCapture": {
+      "url": "https://web.archive.org/web/20210126163451/http://ciphermysteries.com/2010/05/16/george-sands-cryptography",
+      "capturedAtUTC": "2021-01-26T16:34:51Z",
+      "rawSha256": "c8222a1debad6e62f451090ee978d021f04bd0cbc78d5e3891c3879b58c415ef",
+      "quoteBlocks": [
+        {
+          "visibleLines": 22,
+          "markedLineNumbers": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            17,
+            19,
+            21
+          ],
+          "visibleMarkupSha256": "d8049c53e1ecc547c40c0d2f9942d3208b792099e812e73fb911af236d1d869f"
+        },
+        {
+          "visibleLines": 9,
+          "markedLineNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "visibleMarkupSha256": "393d3d910983d610c3b8f95c2e36a213b7f73de48c911a27c073c80ead4fad69"
+        },
+        {
+          "visibleLines": 2,
+          "markedLineNumbers": [
+            1,
+            2
+          ],
+          "visibleMarkupSha256": "516324b90333ae689ffcc9f651ba4cf5521c0f6c50d1a309fcd5228477354d9a"
+        }
+      ]
+    },
+    "currentPage": {
+      "url": "https://ciphermysteries.com/2010/05/16/george-sands-cryptography",
+      "retrievedOn": "2026-11-11",
+      "rawSha256": "d18d779c29ed60250a5b583c0ad1999f89f798cb4dd8e1f151c6367688b113b3",
+      "quoteBlocks": [
+        {
+          "visibleLines": 23,
+          "markedLineNumbers": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            17,
+            19,
+            21,
+            23
+          ],
+          "visibleMarkupSha256": "fad148d69c032ea26f50a6d315d1c08543ad09f8ab6eedbdf74cec09bffef9fa"
+        },
+        {
+          "visibleLines": 9,
+          "markedLineNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "visibleMarkupSha256": "393d3d910983d610c3b8f95c2e36a213b7f73de48c911a27c073c80ead4fad69"
+        },
+        {
+          "visibleLines": 2,
+          "markedLineNumbers": [
+            1,
+            2
+          ],
+          "visibleMarkupSha256": "516324b90333ae689ffcc9f651ba4cf5521c0f6c50d1a309fcd5228477354d9a"
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "archivedCapturesAgreeOnNormalizedQuotes": true,
+    "openingLetterFinalRowSplit": true,
+    "archivedFinalLine": {
+      "line": 22,
+      "marked": false
+    },
+    "currentFinalWordLine": {
+      "line": 23,
+      "marked": true
+    },
+    "secondAndThirdQuoteBlocksIdentical": true,
+    "editorConfirmation": {
+      "url": "https://ciphermysteries.com/2010/05/16/george-sands-cryptography#comment-480459",
+      "timestampUTC": "2022-12-28T12:50:37Z"
+    }
+  },
+  "method": "Parse the three blockquotes, split at explicit br tags and collapse whitespace in full and marked text. The digest is SHA-256 of compact UTF-8 JSON pairs of full and bold text for each nonempty row. Marked text comes from strong or b elements.",
+  "reproduction": {
+    "parserPath": "../../../scripts/audit_sand_quote_markup.py",
+    "parserSha256": "088577c001eb320e51e0cc7f59eff192a1d539c5986b333966fc1c1e5f513860",
+    "receipts": [
+      {
+        "path": "SAME_DAY_COMPARISON.json",
+        "sha256": "975f4a06839af6926c6f1c50e7455afbfce931aa83c6bf84fbd0d1ba6b5f1a43",
+        "byteIdenticalReplay": true
+      },
+      {
+        "path": "EARLIER_COMPARISON.json",
+        "sha256": "26b9b434f15aae7aaf7e5d1c43355e68d7e14637f2f7526ee2cb58b4000d070e",
+        "byteIdenticalReplay": true
+      }
+    ]
+  },
+  "historicalAnalysis": "../../continuation_20261109/george_sand_research.md",
+  "limits": [
+    "The same-day capture is after the creator post. Exact CMS state at posting, the creator visit and viewport wrapping remain unknown.",
+    "The HTML examples supply context for the December 2022 clue. Their application to the later Issue 24 claim remains unresolved.",
+    "Fresh responses may have different raw HTML bytes. The normalized digests bind only the explicit quotation rows and their bold text."
+  ],
+  "activity": {
+    "savedComparisonsReproduced": 2,
+    "newKeyChecks": 0
+  }
+}
